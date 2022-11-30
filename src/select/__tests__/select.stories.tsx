@@ -185,62 +185,6 @@ const CustomIcon = ({isOpen, ...props}: SelectButtonIcon) =>
     <IconFilledKeyboardArrowDown {...props} />
   );
 
-export const StorySelectIconOverrides = () => (
-  <>
-    <StorybookHeading>Select Icon Override</StorybookHeading>
-    <Container>
-      <Stack flow="vertical-left" spaceInline="space040">
-        <Block>
-          <Label htmlFor="id-1" size="small">
-            Custom icon component
-          </Label>
-          <Select
-            aria-describedby="id-1-at"
-            id="id-1"
-            size="small"
-            overrides={{
-              button: {
-                indicatorIcon: CustomIcon,
-              },
-            }}
-          >
-            {items.map(item => (
-              <SelectOption key={item} value={item}>
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-        </Block>
-        <Block>
-          <Label htmlFor="id-1" size="small">
-            New inline override
-          </Label>
-          <Select
-            aria-describedby="id-1-at"
-            id="id-1"
-            size="small"
-            overrides={{
-              button: {
-                indicatorIcon: {
-                  size: 'iconSize010',
-                  stylePreset: 'inkPositive',
-                },
-              },
-            }}
-          >
-            {items.map(item => (
-              <SelectOption key={item} value={item}>
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-        </Block>
-      </Stack>
-    </Container>
-  </>
-);
-StorySelectIconOverrides.storyName = 'Select Icon overrides';
-
 export const StorySelectSize = () => (
   <>
     <StorybookHeading>Select sizes</StorybookHeading>
@@ -1209,6 +1153,60 @@ export const StoryOutlineOverride = () => (
   </>
 );
 StoryOutlineOverride.storyName = 'Select Outline override';
+
+export const StorySelectIconOverrides = () => (
+  <>
+    <StorybookHeading>Select Icon Override</StorybookHeading>
+    <Container>
+      <Stack flow="vertical-left" spaceInline="space040">
+        <Block>
+          <Label htmlFor="id-icon-overrides-1" size="small">
+            Custom icon override
+          </Label>
+          <Select
+            id="id-icon-overrides-1"
+            size="small"
+            overrides={{
+              button: {
+                indicatorIcon: CustomIcon,
+              },
+            }}
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+        </Block>
+        <Block>
+          <Label htmlFor="id-icon-overrides-2" size="small">
+            Inline icon override
+          </Label>
+          <Select
+            id="id-icon-overrides-2"
+            size="small"
+            overrides={{
+              button: {
+                indicatorIcon: {
+                  size: 'iconSize010',
+                  stylePreset: 'inkPositive',
+                },
+              },
+            }}
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+        </Block>
+      </Stack>
+    </Container>
+  </>
+);
+StorySelectIconOverrides.storyName = 'Select Icon overrides';
 
 export const StorySelectWithOverflowScroll = () => (
   <div style={{height: '90vh', width: '100%', overflow: 'hidden'}}>
