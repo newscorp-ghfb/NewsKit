@@ -2343,6 +2343,9 @@ Object {
           "spaceInline": "space020",
         },
         "iconSize": "iconSize020",
+        "indicatorIcon": Object {
+          "size": "iconSize020",
+        },
         "loadingIndicator": Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
@@ -2377,6 +2380,9 @@ Object {
           "spaceInline": "space020",
         },
         "iconSize": "iconSize020",
+        "indicatorIcon": Object {
+          "size": "iconSize020",
+        },
         "loadingIndicator": Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
@@ -2411,6 +2417,9 @@ Object {
           "spaceInline": "space020",
         },
         "iconSize": "iconSize020",
+        "indicatorIcon": Object {
+          "size": "iconSize020",
+        },
         "loadingIndicator": Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },

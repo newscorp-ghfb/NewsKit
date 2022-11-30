@@ -41,7 +41,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       virtualized = 50,
       eventContext = {},
       eventOriginator = 'select',
-      onOpen,
+      onOpenChange,
       ...restProps
     } = props;
 
@@ -138,6 +138,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onSelectedItemChange: onInputChange,
       itemToString,
       onHighlightedIndexChange,
+      onIsOpenChange: event => {
+        if (onOpenChange) {
+          onOpenChange(event.isOpen);
+        }
+      },
       stateReducer: (_, actionAndChanges) => {
         const {type, changes} = actionAndChanges;
         // Does not close panel in the case we are rendering panel inside a modal
@@ -265,12 +270,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         }
       };
     }, [isOpen, onOverflowScroll]);
-
-    useEffect(() => {
-      if (onOpen) {
-        onOpen(isOpen);
-      }
-    }, [isOpen, onOpen]);
 
     return (
       <>

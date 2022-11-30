@@ -568,6 +568,23 @@ describe('Select', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('calls onOpenChange', async () => {
+    const onOpenChange = jest.fn();
+    const props: SelectProps = {
+      onOpenChange,
+      children: defaultSelectOptions,
+    };
+
+    const {getByTestId} = renderWithTheme(Select, props);
+
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    expect(onOpenChange).toHaveBeenCalledTimes(1);
+    expect(onOpenChange).toHaveBeenCalledWith(true);
+  });
+
   describe('in Modal', () => {
     afterEach(() => {
       cleanup();
