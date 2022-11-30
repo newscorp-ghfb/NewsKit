@@ -136,7 +136,7 @@ const commonOverridesRows = [
 const CharacterCountComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Character Count',
+      title: 'Character count',
       description:
         'Character count lets users know how much text they can enter in an input container as they type.',
     }}
