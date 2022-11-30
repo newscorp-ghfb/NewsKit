@@ -10,6 +10,7 @@ import {
   ContentPrimary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
+import {isLinkExternal} from '../../../src/link/utils';
 
 const Roadmap = ({
   content,
@@ -35,9 +36,7 @@ const Roadmap = ({
           <LinkStandalone
             overrides={{typographyPreset: 'editorialParagraph020'}}
             href={href!}
-            external={
-              href?.startsWith('http') && !href?.includes('/newskit.co.uk')
-            }
+            external={isLinkExternal(href!)}
           >
             {children}
           </LinkStandalone>
