@@ -23,7 +23,7 @@ const allowedPackageProperties = [
 const dependenciesNotToBeIncluded = [
   'jszip',
   'file-saver',
-  'dompurify',
+  'isomorphic-dompurify',
   '@storybook/react',
   '@babel/runtime-corejs3',
   'semver',
