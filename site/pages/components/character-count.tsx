@@ -143,14 +143,14 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Feedback & Status',
-      name: 'Character Count',
+      name: 'Character count',
       hero: {
-        illustration: 'components/character-count/hero.tsx',
+        illustration: 'components/character-count/hero',
       },
       introduction:
         'Character count lets users know how much text they can enter in an input container as they type.',
     }}
-    componentDefaultsKey="Character Count"
+    componentDefaultsKey="Character count"
     meta={{
       status: MetaStatus.Beta,
       introduced: 'v6.3.0',

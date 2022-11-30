@@ -480,7 +480,7 @@ export const routes = [
             illustration: 'components/tooltip/hero',
           },
           {
-            title: 'Character Count',
+            title: 'Character count',
             page: true,
             id: '/components/character-count',
             description:
