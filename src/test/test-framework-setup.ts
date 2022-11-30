@@ -1,5 +1,11 @@
 import {matchers, createSerializer} from '@emotion/jest';
 import failOnConsole from 'jest-fail-on-console';
+import {TextEncoder, TextDecoder} from 'util';
+
+// @ts-ignore
+global.TextEncoder = TextEncoder;
+// @ts-ignore
+global.TextDecoder = TextDecoder;
 
 failOnConsole({
   silenceMessage: errorMessage => {
