@@ -416,6 +416,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -844,6 +845,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -1272,6 +1274,7 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -1699,6 +1702,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -2127,6 +2131,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -2555,6 +2560,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -2983,6 +2989,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -3411,6 +3418,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -3839,6 +3847,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span

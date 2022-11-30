@@ -868,6 +868,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-41 {
@@ -2187,6 +2188,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-37 {
@@ -3546,6 +3548,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <section
@@ -4486,6 +4489,7 @@ exports[`Audio Player live player renders as expected 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-31 {
@@ -6170,6 +6174,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-42 {
@@ -7742,6 +7747,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-41 {
@@ -9182,6 +9188,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-41 {
@@ -10624,6 +10631,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-41 {
@@ -11983,6 +11991,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-41 {
