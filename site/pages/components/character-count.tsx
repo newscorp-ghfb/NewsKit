@@ -136,21 +136,21 @@ const commonOverridesRows = [
 const CharacterCountComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Character count',
+      title: 'Character Count',
       description:
         'Character count lets users know how much text they can enter in an input container as they type.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Feedback & Status',
-      name: 'Character count',
+      name: 'Character Count',
       hero: {
         illustration: 'components/character-count/hero',
       },
       introduction:
         'Character count lets users know how much text they can enter in an input container as they type.',
     }}
-    componentDefaultsKey="Character count"
+    componentDefaultsKey="Character Count"
     meta={{
       status: MetaStatus.Beta,
       introduced: 'v6.3.0',
