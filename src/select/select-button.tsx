@@ -134,7 +134,7 @@ export const SelectButton = React.forwardRef<
     isOpen,
     overrides: {
       ...indicatorIconDefaults,
-      size: iconSize,
+      size: iconSize || indicatorIconDefaults.size,
       ...overrides?.indicatorIcon,
     },
   };
@@ -188,7 +188,6 @@ export const SelectButton = React.forwardRef<
                   <IndicatorIcon
                     {...(indicatorIconProps as SelectButtonIcon)}
                   />
-                  {/* <IconFilledKeyboardArrowDown overrides={{size: iconSize}} /> */}
                 </StyledIconBox>
               </StyledDropdownIconButton>
             )}
