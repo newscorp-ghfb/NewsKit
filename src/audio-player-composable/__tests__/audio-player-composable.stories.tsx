@@ -40,7 +40,6 @@ import {styled} from '../../utils';
 import {Button} from '../../button';
 import {AudioPlayerComposableProps} from '../types';
 import {
-  DISABLE_ANIMATIONS_SCRIPT,
   useAllPlayersCanPlayCheck,
   VisualTestAudioPlayer,
 } from '../../utils/audio-tests';
@@ -560,9 +559,6 @@ export const StoryAudioPlayer = () => {
 };
 StoryAudioPlayer.storyName = 'audio-player';
 StoryAudioPlayer.parameters = {
-  eyes: {
-    waitBeforeCapture: '#storyAudioPlayerReady',
-  },
   percy: {
     waitForSelector: '#storyAudioPlayerReady',
   },
@@ -696,7 +692,6 @@ export const StoryAudioSubComponents = () => {
 };
 StoryAudioSubComponents.storyName = 'audio-player-sub-components';
 StoryAudioSubComponents.parameters = {
-  eyes: {waitBeforeCapture: '#storyAudioSubComponentsReady'},
   percy: {waitForSelector: '#storyAudioSubComponentsReady'},
 };
 
@@ -765,7 +760,6 @@ export const StoryAudioPlayerWithInitialProps = () => {
 };
 StoryAudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
 StoryAudioPlayerWithInitialProps.parameters = {
-  eyes: {waitBeforeCapture: '#storyAudioPlayerWithInitialPropsReady'},
   percy: {waitForSelector: '#storyAudioPlayerWithInitialPropsReady'},
 };
 export const StoryAudioPlayerOverrides = () => {
@@ -1092,7 +1086,6 @@ export const StoryAudioPlayerOverrides = () => {
 };
 StoryAudioPlayerOverrides.storyName = 'audio-player-overrides';
 StoryAudioPlayerOverrides.parameters = {
-  eyes: {waitBeforeCapture: '#storyAudioPlayerOverridesReady'},
   percy: {waitForSelector: '#storyAudioPlayerOverridesReady'},
 };
 
@@ -1104,7 +1097,6 @@ export const StoryAudioPlayerAutoplay = () => (
 );
 StoryAudioPlayerAutoplay.storyName = 'audio-player-play-autoplay';
 StoryAudioPlayerAutoplay.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -1148,9 +1140,6 @@ export const StoryAudioPlayerPlaybackSpeedTriggerButton = () => {
 StoryAudioPlayerPlaybackSpeedTriggerButton.storyName =
   'audio-player-playback-speed-trigger-button';
 StoryAudioPlayerPlaybackSpeedTriggerButton.parameters = {
-  eyes: {
-    waitBeforeCapture: '#storyAudioPlayerPlaybackSpeedTriggerButtonReady',
-  },
   percy: {
     waitForSelector: '#storyAudioPlayerPlaybackSpeedTriggerButtonReady',
   },
@@ -1355,7 +1344,6 @@ export const StoryAudioPlayerKeyboard = () => (
 );
 StoryAudioPlayerKeyboard.storyName = 'audio-player-keyboard-shortcuts';
 StoryAudioPlayerKeyboard.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -1408,7 +1396,6 @@ export const StoryAudioPlayerVolumeControlLayout = () => {
 StoryAudioPlayerVolumeControlLayout.storyName =
   'audio-player-volume-control-layout';
 StoryAudioPlayerVolumeControlLayout.parameters = {
-  eyes: {waitBeforeCapture: '#storyAudioPlayerVolumeControlLayoutReady'},
   percy: {waitForSelector: '#storyAudioPlayerVolumeControlLayoutReady'},
 };
 
@@ -1420,10 +1407,3 @@ export const StoryAudioPlayerLoadingState = () => (
 );
 
 StoryAudioPlayerLoadingState.storyName = 'audio-player-loading-state';
-StoryAudioPlayerLoadingState.parameters = {
-  eyes: {
-    scriptHooks: {
-      beforeCaptureScreenshot: DISABLE_ANIMATIONS_SCRIPT,
-    },
-  },
-};

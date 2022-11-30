@@ -25,4 +25,4 @@ export const StoryE2eTest = () => (
   </ImageContainer>
 );
 StoryE2eTest.storyName = 'e2e-test';
-StoryE2eTest.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryE2eTest.parameters = {percy: {skip: true}};

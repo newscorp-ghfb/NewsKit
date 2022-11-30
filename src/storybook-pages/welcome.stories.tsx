@@ -14,9 +14,6 @@ Welcome.parameters = {
       hidden: true,
     },
   },
-  eyes: {
-    ignoreRegions: [{selector: BADGE}],
-  },
   percy: {
     percyCSS: `${BADGE} { display: none; }`,
   },
