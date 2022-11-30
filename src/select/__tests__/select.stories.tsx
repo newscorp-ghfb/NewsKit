@@ -178,13 +178,6 @@ const selectCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-const CustomIcon = ({isOpen, ...props}: SelectButtonIcon) =>
-  isOpen ? (
-    <IconFilledKeyboardArrowUp {...props} />
-  ) : (
-    <IconFilledKeyboardArrowDown {...props} />
-  );
-
 export const StorySelectSize = () => (
   <>
     <StorybookHeading>Select sizes</StorybookHeading>
@@ -1153,6 +1146,13 @@ export const StoryOutlineOverride = () => (
   </>
 );
 StoryOutlineOverride.storyName = 'Select Outline override';
+
+const CustomIcon = ({isOpen, ...props}: SelectButtonIcon) =>
+  isOpen ? (
+    <IconFilledKeyboardArrowUp {...props} />
+  ) : (
+    <IconFilledKeyboardArrowDown {...props} />
+  );
 
 export const StorySelectIconOverrides = () => (
   <>
