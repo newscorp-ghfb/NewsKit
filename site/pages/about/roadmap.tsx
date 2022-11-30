@@ -1,68 +1,196 @@
 import React from 'react';
-import {InlineMessage} from 'newskit';
+import {UnorderedList, LinkStandalone} from 'newskit';
+import ReactMarkdown, {ReactMarkdownOptions} from 'react-markdown';
+import {getSheets, ContentProps} from '../../utils/google-sheet';
+import {getValueFromCMS, formatSheetData} from '../../utils/google-sheet/utils';
 import {AboutPageTemplate} from '../../templates/about-page-template';
 import {LayoutProps} from '../../components/layout';
-import {Link} from '../../components/link';
 import {
   ContentSection,
   ContentPrimary,
-  ContentSecondary,
-  ContentColSpan,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 
-const pageName = 'Roadmap';
-const pageDescription =
-  'NewsKit’s Design System team is busy building and planning to help you build better products faster.';
+const Roadmap = ({
+  content,
+  cmsData,
+  ...layoutProps
+}: LayoutProps & ContentProps & {cmsData: string[][]}) => {
+  const pageName = getValueFromCMS(content, 'intro_name', 'fallback title.');
+  const pageDescription = getValueFromCMS(
+    content,
+    'intro_description',
+    'fallback description',
+  );
 
-const Roadmap = (layoutProps: LayoutProps) => (
-  <AboutPageTemplate
-    headTags={{
-      title: pageName,
-      description: pageDescription,
-    }}
-    layoutProps={layoutProps}
-    pageIntroduction={{
-      type: 'About',
-      name: pageName,
-      introduction: pageDescription,
-      hero: {
-        illustration: 'components/hero-roadmap-illustration',
-        illustrationProps: {viewBox: '0 0 1344 759'},
-      },
-      showSeparator: true,
-    }}
-  >
-    <ComponentPageCell>
-      <ContentSection sectionName="roadmap">
-        <ContentPrimary
-          headline="NewsKit Roadmap"
-          description="Here is the team’s focus over the coming months. This is updated regularly as our priorities change over time."
-        >
-          <iframe
-            title="airtable roadmap"
-            className="airtable-embed"
-            src="https://airtable.com/embed/shrbFPJXN4tVA0Yye?backgroundColor=blue"
-            frameBorder="0"
-            width="100%"
-            height="533"
-            style={{
-              background: 'transparent',
-              border: '1px solid #ccc',
-            }}
-          />
-        </ContentPrimary>
+  const introSecondary =
+    cmsData.find(data => data[0] === 'intro_secondary') &&
+    getValueFromCMS(content, 'intro_secondary', '');
 
-        <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
-          <InlineMessage>
-            If you’d like to influence the roadmap,see the{' '}
-            <Link href="/about/contribute">contribution page</Link> for further
-            details.
-          </InlineMessage>
-        </ContentSecondary>
-      </ContentSection>
-    </ComponentPageCell>
-  </AboutPageTemplate>
-);
+  const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
+    /* eslint-disable @typescript-eslint/no-shadow */
+    <ReactMarkdown
+      components={{
+        a: ({href, children}) => (
+          <LinkStandalone
+            overrides={{typographyPreset: 'editorialParagraph020'}}
+            href={href!}
+            external={
+              href?.startsWith('http') && !href?.includes('/newskit.co.uk')
+            }
+          >
+            {children}
+          </LinkStandalone>
+        ),
+        p: ({children}) => <>{children}</>,
+      }}
+    >
+      {children}
+    </ReactMarkdown>
+    /* eslint-enable @typescript-eslint/no-shadow */
+  );
+
+  return (
+    <AboutPageTemplate
+      headTags={{
+        title: pageName,
+        description: pageDescription,
+      }}
+      featureCard={{
+        title: 'Contribute',
+        stylePrefix: 'contributeCard',
+        description: 'Join the community and help grow NewsKit for everyone.',
+        href: 'about/contributing',
+      }}
+      layoutProps={layoutProps}
+      pageIntroduction={{
+        type: 'About',
+        name: pageName,
+        introduction: pageDescription,
+        hero: {
+          illustration: getValueFromCMS(
+            content,
+            'intro_hero_illustration',
+            'components/hero-roadmap-illustration',
+          ),
+          illustrationProps: {viewBox: '0 0 1344 759'},
+        },
+        showSeparator: false,
+      }}
+    >
+      <ComponentPageCell>
+        {introSecondary && (
+          <ContentPrimary description={<>{introSecondary}</>} />
+        )}
+
+        <ContentSection sectionName="Current">
+          <ContentPrimary
+            id="overview"
+            toc={getValueFromCMS(
+              content,
+              'current_headline',
+              'Current quarter',
+            )}
+            headline={getValueFromCMS(
+              content,
+              'current_headline',
+              'Current quarter',
+            )}
+            description={getValueFromCMS(
+              content,
+              'current_description',
+              'What we are working on:',
+            )}
+            showSeparator
+          >
+            <UnorderedList
+              overrides={{
+                content: {
+                  typographyPreset: 'editorialParagraph020',
+                  stylePreset: 'inkBase',
+                },
+              }}
+            >
+              {cmsData
+                .filter(data => data[0].startsWith('current_li'))
+                .map(entry => (
+                  <FormatMarkdown>{entry[1]}</FormatMarkdown>
+                ))}
+            </UnorderedList>
+          </ContentPrimary>
+        </ContentSection>
+        <ContentSection sectionName="Coming up">
+          <ContentPrimary
+            id="overview"
+            toc={getValueFromCMS(content, 'comingup_headline', 'Coming Up')}
+            headline={getValueFromCMS(
+              content,
+              'comingup_headline',
+              'Coming Up',
+            )}
+            description={getValueFromCMS(
+              content,
+              'comingup_description',
+              'The focus for the next quarter:',
+            )}
+            showSeparator
+          >
+            <UnorderedList
+              overrides={{
+                content: {
+                  typographyPreset: 'editorialParagraph020',
+                  stylePreset: 'inkBase',
+                },
+              }}
+            >
+              {cmsData
+                .filter(data => data[0].startsWith('comingup_li'))
+                .map(entry => (
+                  <FormatMarkdown>{entry[1]}</FormatMarkdown>
+                ))}
+            </UnorderedList>
+          </ContentPrimary>
+        </ContentSection>
+        <ContentSection sectionName="Future">
+          <ContentPrimary
+            id="overview"
+            toc={getValueFromCMS(content, 'future_headline', 'Future')}
+            headline={getValueFromCMS(content, 'future_headline', 'Future')}
+            description={getValueFromCMS(
+              content,
+              'future_description',
+              'Ideas we plan to look at:',
+            )}
+            showSeparator
+          >
+            <UnorderedList
+              overrides={{
+                content: {
+                  typographyPreset: 'editorialParagraph020',
+                  stylePreset: 'inkBase',
+                },
+              }}
+            >
+              {cmsData
+                .filter(cells => cells[0].startsWith('future_li'))
+                .map(entry => (
+                  <FormatMarkdown>{entry[1]}</FormatMarkdown>
+                ))}
+            </UnorderedList>
+          </ContentPrimary>
+        </ContentSection>
+      </ComponentPageCell>
+    </AboutPageTemplate>
+  );
+};
 
 export default Roadmap;
+
+// This function is called at build time and the response is passed to the page
+// component as props.
+export async function getStaticProps() {
+  const [cmsData] = await Promise.all([getSheets('Roadmap')]);
+
+  const content = formatSheetData(cmsData);
+  return {props: {content, cmsData}};
+}

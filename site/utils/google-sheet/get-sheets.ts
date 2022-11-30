@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 import {google} from 'googleapis';
 
+require('dotenv').config();
+
 // Define the required scopes. In our case we only need read access.
 const SCOPE = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
 
