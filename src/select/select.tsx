@@ -139,7 +139,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onHighlightedIndexChange,
       onIsOpenChange: event => {
         if (onOpenChange) {
-          onOpenChange(event.isOpen);
+          onOpenChange(event.isOpen || false);
         }
       },
       stateReducer: (_, actionAndChanges) => {
