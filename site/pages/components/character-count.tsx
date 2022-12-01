@@ -156,6 +156,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
       introduced: 'v6.3.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/character-count',
+      storybookId: 'components-character-count--character-count-default',
     }}
     anatomy={{
       introduction:
