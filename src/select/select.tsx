@@ -7,7 +7,6 @@ import React, {
 } from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
-import {debounce} from 'debounce';
 import {getOverflowAncestors} from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
@@ -235,14 +234,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     }, [isOpen, panelRef]);
 
     /* istanbul ignore next */
-    const onOverflowScroll = useCallback(
-      debounce(() => {
-        if (selectRef.current) {
-          setSelectRect(selectRef.current.getBoundingClientRect());
-        }
-      }, 8),
-      [setSelectRect, selectRef],
-    );
+    const onOverflowScroll = useCallback(() => {
+      if (selectRef.current) {
+        setSelectRect(selectRef.current.getBoundingClientRect());
+      }
+    }, [setSelectRect, selectRef]);
 
     const parentOverflowNode = useRef<HTMLElement>();
 
