@@ -31,9 +31,6 @@ export const ThemeControls = ({
 
       baseSvgCodeGroup.forEach(svg => {
         let svgCopy = svg.figmaSvg;
-        // Setting ids for "mask", "filter", and "clip" attributes
-        // svgCopy = setIds(svgCopy);
-
         Object.entries(hexesObj).forEach(hex => {
           const docsThemeColorsObj = getColorCssFromTheme(
             '',
