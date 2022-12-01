@@ -60,7 +60,7 @@ export interface SelectProps extends CommonInputProps, EventData {
   useModal?: MQ<boolean>;
   overrides?: SelectPropsOverrides;
   virtualized?: number;
-  onOpenChange?: (value?: boolean) => void;
+  onOpenChange?: (value: boolean) => void;
 }
 
 export interface SelectOptionProps {
