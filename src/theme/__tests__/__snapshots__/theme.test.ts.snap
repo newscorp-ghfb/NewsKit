@@ -1519,6 +1519,46 @@ Object {
       "stylePreset": "bannerInformative",
     },
   },
+  "breadcrumbItem": Object {
+    "large": Object {
+      "paddingInline": "space000",
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton030",
+    },
+    "medium": Object {
+      "paddingInline": "space000",
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton020",
+    },
+    "small": Object {
+      "paddingInline": "space000",
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton010",
+    },
+  },
+  "breadcrumbs": Object {
+    "large": Object {
+      "separator": Object {
+        "paddingInline": "space020",
+        "size": "iconSize030",
+        "stylePreset": "breadcrumbSeparator",
+      },
+    },
+    "medium": Object {
+      "separator": Object {
+        "paddingInline": "space020",
+        "size": "iconSize020",
+        "stylePreset": "breadcrumbSeparator",
+      },
+    },
+    "small": Object {
+      "separator": Object {
+        "paddingInline": "space020",
+        "size": "iconSize010",
+        "stylePreset": "breadcrumbSeparator",
+      },
+    },
+  },
   "button": Object {
     "large": Object {
       "iconSize": "iconSize030",
@@ -3254,6 +3294,32 @@ Object {
     "base": Object {
       "backgroundColor": "{{colors.interfaceNotice010}}",
       "iconColor": "{{colors.inkInverse}}",
+    },
+  },
+  "breadcrumbItem": Object {
+    "active": Object {
+      "color": "{{colors.interactiveLink030}}",
+      "textDecoration": "underline",
+    },
+    "base": Object {
+      "color": "{{colors.interactiveLink010}}",
+    },
+    "hover": Object {
+      "color": "{{colors.interactiveLink020}}",
+      "textDecoration": "underline",
+    },
+    "selected": Object {
+      "color": "{{colors.inkBase}}",
+      "textDecoration": "none",
+    },
+    "selected:hover": Object {
+      "color": "{{colors.inkBase}}",
+      "textDecoration": "none",
+    },
+  },
+  "breadcrumbSeparator": Object {
+    "base": Object {
+      "color": "{{colors.inkSubtle}}",
     },
   },
   "buttonMinimalInverse": Object {

@@ -5,6 +5,7 @@ export * from './audio-player';
 export * from './audio-player-composable';
 export * from './banner';
 export * from './block';
+export * from './breadcrumbs';
 export * from './button';
 export * from './byline';
 export * from './caption';

@@ -1,0 +1,2815 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: auto;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: text;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`BreadcrumbItem renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: auto;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`BreadcrumbItem renders with overrides 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px;
+  width: auto;
+  min-width: 10px;
+  min-height: 11px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 11px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders in large size 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px 24px;
+  width: auto;
+  min-width: 120px;
+  min-height: 64px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 64px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 32px;
+  height: 32px;
+  color: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+    href="http://"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders in medium size 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: auto;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  color: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+    href="http://"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders in small size 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 12px;
+  width: auto;
+  min-width: 64px;
+  min-height: 32px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 16px;
+  height: 16px;
+  color: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+    href="http://"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: auto;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  color: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders with logical prop overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-block: 20px;
+  padding-inline: 30px;
+}
+
+.emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: auto;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  color: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: auto;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  color: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M22 12l-4-4v3H3v2h15v3l4-4z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M22 12l-4-4v3H3v2h15v3l4-4z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders with separator overrides with TextBlock component 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: auto;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  margin: 0;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <p
+          class="emotion-6"
+        >
+          /
+        </p>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <p
+          class="emotion-6"
+        >
+          /
+        </p>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: auto;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #3358CC;
+  cursor: pointer;
+  color: #3358CC;
+  cursor: pointer;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-6.emotion-6 {
+  width: 24px;
+  height: 24px;
+  color: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-6.emotion-6 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="breadcrumb-container"
+  >
+    <ol
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          class="emotion-3"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-4"
+          >
+            Breadcrumb Item
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="emotion-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-6 emotion-7"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+          />
+        </svg>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
