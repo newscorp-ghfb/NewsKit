@@ -169,6 +169,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -1570,6 +1571,7 @@ Object {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -2190,8 +2192,8 @@ Object {
   padding-top: 8px;
   padding-bottom: 8px;
   width: 0px;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   display: none;
   background-color: #F0F1F3;
   border-radius: 4px;
@@ -2390,6 +2392,7 @@ Object {
           data-testid="select-panel"
           id="downshift-0-menu"
           role="listbox"
+          style="transform: translate3d(0px, 0px, 0);"
           tabindex="-1"
         />
       </div>
@@ -2562,6 +2565,7 @@ Object {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -3571,6 +3575,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
