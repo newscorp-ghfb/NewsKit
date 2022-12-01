@@ -1214,7 +1214,7 @@ PLEASE IGNORE THIS STORY
 ITS JUST FOR TESTING AND WILL BE REMOVED BEFORE MERGE
  */
 
-function useLocalStorage(key, initialValue) {
+function useLocalStorage(key: string, initialValue: string) {
   // State to store our value
   // Pass initial state function to useState so logic is only executed once
   const [storedValue, setStoredValue] = React.useState(() => {
@@ -1234,6 +1234,7 @@ function useLocalStorage(key, initialValue) {
   });
   // Return a wrapped version of useState's setter function that ...
   // ... persists the new value to localStorage.
+  // @ts-ignore
   const setValue = value => {
     try {
       // Allow value to be a function so we have same API as useState
