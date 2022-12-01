@@ -139,7 +139,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onHighlightedIndexChange,
       onIsOpenChange: event => {
         if (onOpenChange) {
-          onOpenChange(event.isOpen || false);
+          onOpenChange(Boolean(event.isOpen));
         }
       },
       stateReducer: (_, actionAndChanges) => {
@@ -233,7 +233,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [isOpen, panelRef]);
 
-    /* istanbul ignore next */
     const onOverflowScroll = useCallback(() => {
       if (selectRef.current) {
         setSelectRect(selectRef.current.getBoundingClientRect());
