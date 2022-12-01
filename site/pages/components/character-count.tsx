@@ -161,9 +161,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
     anatomy={{
       introduction:
         'The character count contains one required element and no optional elements.',
-      media: getIllustrationComponent(
-        'components/character-count/anatomy01.tsx',
-      ),
+      media: getIllustrationComponent('components/character-count/anatomy01'),
       rows: [
         {
           name: 'Character count',
@@ -202,7 +200,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/character-count/option/character-limit01.tsx',
+            'components/character-count/option/character-limit',
           ),
         },
       ],
@@ -216,7 +214,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           description:
             'The character count has a base state. This is the base style of the input before the input has been interacted with by a user.',
           media: getIllustrationComponent(
-            'components/character-count/states/base01.tsx',
+            'components/character-count/states/base',
           ),
         },
         {
@@ -239,7 +237,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/character-count/states/invalid01.tsx',
+            'components/character-count/states/invalid',
           ),
         },
         {
@@ -262,7 +260,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/character-count/states/valid01.tsx',
+            'components/character-count/states/valid',
           ),
         },
         {
@@ -270,7 +268,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           description:
             'The character count in a disabled state shows that an input exists, but is not available to the user in that scenario. When a user’s cursor hovers over an input in a disabled state the cursor shows as not-allowed, and the character count state changes.',
           media: getIllustrationComponent(
-            'components/character-count/states/disabled01.tsx',
+            'components/character-count/states/disabled',
           ),
         },
       ],
