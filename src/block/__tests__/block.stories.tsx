@@ -141,7 +141,7 @@ export const StoryTransitions = () => (
 );
 StoryTransitions.storyName = 'Transitions';
 
-export const StoryOverrides = () => (
+export const StoryStylingOverrides = () => (
   <StorybookPage columns={blockGridCols}>
     <StorybookCase title="Style">
       <Block stylePreset="blockWrapper">
@@ -158,6 +158,12 @@ export const StoryOverrides = () => (
         </Block>
       </Block>
     </StorybookCase>
+  </StorybookPage>
+);
+StoryStylingOverrides.storyName = 'Styling overrides';
+
+export const StoryOverrides = () => (
+  <StorybookPage columns={blockGridCols}>
     <StorybookCase title="Logical props">
       <Block stylePreset="blockWrapper">
         <Block
@@ -186,11 +192,15 @@ export default {
     },
   },
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           blockCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />

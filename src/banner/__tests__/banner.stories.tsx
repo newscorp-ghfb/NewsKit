@@ -313,9 +313,9 @@ export const StoryLogicalProps = () => (
 );
 StoryLogicalProps.storyName = 'Logical props';
 
-export const StoryOverrides = () => (
+export const StoryStylingOverrides = () => (
   <StorybookPage columns={BANNER_GRID_COLS}>
-    <StorybookCase title="Overrides">
+    <StorybookCase title="Style">
       <div style={{maxWidth: 400}}>
         <StoryBanner
           aria-label="Banner with overrides"
@@ -373,7 +373,7 @@ export const StoryOverrides = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryOverrides.storyName = 'Overrides';
+StoryStylingOverrides.storyName = 'Styling overrides';
 
 export default {
   title: 'Components/Banner',
@@ -387,11 +387,15 @@ export default {
     },
   },
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           bannerCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
