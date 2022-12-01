@@ -9,6 +9,5 @@ export default {
 
 export const ThemeChecker = () => <ThemeCheckerComponent />;
 ThemeChecker.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };

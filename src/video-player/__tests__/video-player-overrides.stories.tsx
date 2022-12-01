@@ -10,6 +10,8 @@ import {
   PLAYLISTS_VIDEO_PLAYER_CONFIG,
 } from './config';
 
+const waitForSelector = 'div.vjs-poster:not(.vjs-hidden)';
+
 const myCustomTheme = compileTheme(
   createTheme({
     name: 'video-player-theme',
@@ -120,15 +122,7 @@ export const StoryVideoPlayerPlayButtonOverrides = () => (
   </ThemeProvider>
 );
 StoryVideoPlayerPlayButtonOverrides.storyName = 'play-button-overrides';
-StoryVideoPlayerPlayButtonOverrides.parameters = {
-  // todo: remove arbitrary wait
-  eyes: {
-    waitBeforeCapture: 5000,
-  },
-  percy: {
-    waitForTimeout: 5000,
-  },
-};
+StoryVideoPlayerPlayButtonOverrides.parameters = {percy: {waitForSelector}};
 
 export const StoryVideoPlayerSeekBarOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
@@ -166,7 +160,6 @@ export const StoryVideoPlayerSeekBarOverrides = () => (
 );
 StoryVideoPlayerSeekBarOverrides.storyName = 'seek-bar-overrides';
 StoryVideoPlayerSeekBarOverrides.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -217,7 +210,6 @@ export const StoryVideoPlayerControlBarOverrides = () => (
 );
 StoryVideoPlayerControlBarOverrides.storyName = 'control-bar-overrides';
 StoryVideoPlayerControlBarOverrides.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -254,15 +246,7 @@ export const StoryVideoPlayerDockTextOverrides = () => (
   </ThemeProvider>
 );
 StoryVideoPlayerDockTextOverrides.storyName = 'doc-text-overrides';
-StoryVideoPlayerPlayButtonOverrides.parameters = {
-  // todo: remove arbitrary wait
-  eyes: {
-    waitBeforeCapture: 5000,
-  },
-  percy: {
-    waitForTimeout: 5000,
-  },
-};
+StoryVideoPlayerDockTextOverrides.parameters = {percy: {waitForSelector}};
 
 export const StoryVideoPlayerMiniCardOverlayOverrides = () => (
   <ThemeProvider theme={myCustomTheme}>
@@ -294,7 +278,6 @@ export const StoryVideoPlayerMiniCardOverlayOverrides = () => (
 StoryVideoPlayerMiniCardOverlayOverrides.storyName =
   'minicard-overlay-overrides';
 StoryVideoPlayerMiniCardOverlayOverrides.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -317,6 +300,5 @@ export const StoryVideoPlayerLogicalPropsOverrides = () => (
 );
 StoryVideoPlayerLogicalPropsOverrides.storyName = 'logical-props-overlay';
 StoryVideoPlayerLogicalPropsOverrides.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };

@@ -11,9 +11,6 @@ type Component =
   | ComponentType<AudioPlayerProps>
   | ComponentType<AudioPlayerComposableProps>;
 
-export const DISABLE_ANIMATIONS_SCRIPT =
-  'document.getElementsByTagName("circle")[0].style.animation = "none";';
-
 // We need a way to make sure all Audio Players are no longer in loading state
 // before taking the snaphot. One way is to conditionally show / hide an invisible
 // element on the page based on loading state, and pass this to the waitBeforeCapture

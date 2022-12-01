@@ -69,7 +69,6 @@ export const StoryUseMediaQuery = () => {
 };
 StoryUseMediaQuery.storyName = 'useMediaQuery';
 StoryUseMediaQuery.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 

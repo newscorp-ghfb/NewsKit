@@ -6,14 +6,14 @@ import {
   ScrollSnapAlignment,
   GridLayout,
 } from 'newskit';
-import dompurify from 'dompurify';
+import dompurify from 'isomorphic-dompurify';
 import {themeList, ThemeNames} from './colors-theme-list';
 import {StyledButtonsContainer, StyledSingleSvgWrapper} from './styled';
 import {DownloadControls} from './controls/download-controls';
 import {ThemeControls} from './controls/theme-controls';
 
 export const SvgPreviewer: React.FC = () => {
-  const sanitizer = dompurify.sanitize;
+  const {sanitize} = dompurify;
 
   // The name of the theme being currently used, the initial value will decide the default theme.
   const [currentThemeName, setCurrentThemeName] = useState<ThemeNames>(
@@ -172,7 +172,7 @@ export const SvgPreviewer: React.FC = () => {
                 <StyledSingleSvgWrapper>
                   <P>{baseSvgCodeGroup[index].name}</P>
                   {/* eslint-disable-next-line react/no-danger */}
-                  <div dangerouslySetInnerHTML={{__html: sanitizer(svgCode)}} />
+                  <div dangerouslySetInnerHTML={{__html: sanitize(svgCode)}} />
                 </StyledSingleSvgWrapper>
               </ScrollSnapAlignment>
             ))}
