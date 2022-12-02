@@ -1297,6 +1297,10 @@ export const StoryCardLogicalOverrides = () => (
   </>
 );
 StoryCardLogicalOverrides.storyName = 'card-logical-overrides';
+StoryCardLogicalOverrides.parameters = {
+  // make sure the images have loaded before taking the snapshot
+  percy: {waitForSelector: 'picture img:nth-child(1)'},
+};
 
 export const StoryCardSlices = () => (
   <>
