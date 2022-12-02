@@ -327,7 +327,6 @@ export const StoryCardSmallWithoutInset = () => renderCard();
 StoryCardSmallWithoutInset.storyName = 'card-small-without-inset';
 StoryCardSmallWithoutInset.parameters = {
   viewport: {defaultViewport: 'iphone5'},
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -335,7 +334,6 @@ export const StoryCardMediumWithoutInset = () => renderCard();
 StoryCardMediumWithoutInset.storyName = 'card-medium-without-inset';
 StoryCardMediumWithoutInset.parameters = {
   viewport: {defaultViewport: 'ipad'},
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -343,7 +341,6 @@ export const StoryCardLargeWithoutInset = () => renderCard();
 StoryCardLargeWithoutInset.storyName = 'card-large-without-inset';
 StoryCardLargeWithoutInset.parameters = {
   viewport: {defaultViewport: 'ipad12p'},
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -351,7 +348,6 @@ export const StoryCardSmallWithInset = () => renderCardInset();
 StoryCardSmallWithInset.storyName = 'card-small-with-inset';
 StoryCardSmallWithInset.parameters = {
   viewport: {defaultViewport: 'iphone5'},
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -359,7 +355,6 @@ export const StoryCardMediumWithInset = () => renderCardInset();
 StoryCardMediumWithInset.storyName = 'card-medium-with-inset';
 StoryCardMediumWithInset.parameters = {
   viewport: {defaultViewport: 'ipad'},
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -367,7 +362,6 @@ export const StoryCardLargeWithInset = () => renderCardInset();
 StoryCardLargeWithInset.storyName = 'card-large-with-inset';
 StoryCardLargeWithInset.parameters = {
   viewport: {defaultViewport: 'ipad12p'},
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -694,7 +688,6 @@ export const StoryCardWithoutInsetLinkContainersAndHeadlineOverrides = () => (
 StoryCardWithoutInsetLinkContainersAndHeadlineOverrides.storyName =
   'card-without-inset-link-containers-and-headline-overrides';
 StoryCardWithoutInsetLinkContainersAndHeadlineOverrides.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -756,7 +749,6 @@ export const StoryCardWithInsetLinkContainersAndHeadlineOverrides = () => (
 StoryCardWithInsetLinkContainersAndHeadlineOverrides.storyName =
   'card-with-inset-link-containers-and-headline-overrides';
 StoryCardWithInsetLinkContainersAndHeadlineOverrides.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -965,7 +957,6 @@ export const StoryCardHorizontalWithoutInsetLinkContainersAndHeadlineOverrides =
 StoryCardHorizontalWithoutInsetLinkContainersAndHeadlineOverrides.storyName =
   'card-horizontal-without-inset-link-containers-and-headline-overrides';
 StoryCardHorizontalWithoutInsetLinkContainersAndHeadlineOverrides.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -1030,7 +1021,6 @@ export const StoryCardHorizontalReverseWithInsetLinkContainersAndHeadlineOverrid
 StoryCardHorizontalReverseWithInsetLinkContainersAndHeadlineOverrides.storyName =
   'card-horizontal-reverse-with-inset-link-containers-and-headline-overrides';
 StoryCardHorizontalReverseWithInsetLinkContainersAndHeadlineOverrides.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -1307,6 +1297,10 @@ export const StoryCardLogicalOverrides = () => (
   </>
 );
 StoryCardLogicalOverrides.storyName = 'card-logical-overrides';
+StoryCardLogicalOverrides.parameters = {
+  // make sure the images have loaded before taking the snapshot
+  percy: {waitForSelector: 'picture img:nth-child(1)'},
+};
 
 export const StoryCardSlices = () => (
   <>
@@ -1697,7 +1691,7 @@ export const StoryCardSlices = () => (
   </>
 );
 StoryCardSlices.storyName = 'card-slices';
-StoryCardSlices.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryCardSlices.parameters = {percy: {skip: true}};
 
 export default {
   title: 'Components/card',

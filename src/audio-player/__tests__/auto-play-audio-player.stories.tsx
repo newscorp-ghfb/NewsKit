@@ -27,6 +27,5 @@ export const StoryAutoPlayAudioPlayer = () => (
 );
 StoryAutoPlayAudioPlayer.storyName = 'auto-play-audio-player';
 StoryAutoPlayAudioPlayer.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };

@@ -81,7 +81,7 @@ const stackDistributionSet: any = () => {
           wrapType === 'wrap' ? ', wrap' : ''
         }`,
 
-        parameters: {eyes: {include: wrapType !== 'wrap'}}, // TODO: Include all test when snapshots limit increases.
+        parameters: {percy: {skip: wrapType === 'wrap'}}, // TODO: Include all test when snapshots limit increases.
         storyFn: () => (
           <MainContainer>
             <StorybookHeading>
@@ -891,4 +891,4 @@ StoryStackWithArgs.argTypes = {
 // @ts-ignore
 StoryStackWithArgs.storyName = 'stack-with-args';
 // @ts-ignore
-StoryStackWithArgs.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryStackWithArgs.parameters = {percy: {skip: true}};

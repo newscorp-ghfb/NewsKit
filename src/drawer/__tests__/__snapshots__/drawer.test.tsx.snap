@@ -3943,6 +3943,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <div

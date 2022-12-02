@@ -1,6 +1,14 @@
-import React, {ChangeEvent, useEffect, useRef, useState} from 'react';
+import React, {
+  ChangeEvent,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
+import {debounce} from 'debounce';
+import {getOverflowAncestors} from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
@@ -219,6 +227,43 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         setTimeout(callback, 0);
       }
     }, [isOpen, panelRef]);
+
+    /* istanbul ignore next */
+    const onOverflowScroll = useCallback(
+      debounce(() => {
+        if (selectRef.current) {
+          setSelectRect(selectRef.current.getBoundingClientRect());
+        }
+      }, 8),
+      [setSelectRect, selectRef],
+    );
+
+    const parentOverflowNode = useRef<HTMLElement>();
+
+    // In some cases the parent scroll element is not body/html in that case we need to
+    // adjust the position of the panel according to that parent.
+    // We use getOverflowAncestors from get nearest scollable parent and attach scroll event listener
+    // so that we know when it moves and we re-take the panel position on evert scroll move.
+    useEffect(() => {
+      if (localInputRef.current && isOpen) {
+        const [nearest] = getOverflowAncestors(localInputRef.current);
+        if (nearest instanceof window.HTMLElement) {
+          parentOverflowNode.current = nearest;
+          parentOverflowNode.current.addEventListener(
+            'scroll',
+            onOverflowScroll,
+          );
+        }
+      }
+      return () => {
+        if (parentOverflowNode.current) {
+          parentOverflowNode.current.removeEventListener(
+            'scroll',
+            onOverflowScroll,
+          );
+        }
+      };
+    }, [isOpen, onOverflowScroll]);
 
     return (
       <>

@@ -86,7 +86,7 @@ export const StoryModalDefault = () =>
     );
   });
 StoryModalDefault.storyName = 'default';
-StoryModalDefault.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryModalDefault.parameters = {percy: {skip: true}};
 
 export const StoryOpenOnPageLoad = () =>
   React.createElement(() => {
@@ -127,7 +127,7 @@ export const StoryOpenOnPageLoad = () =>
     );
   });
 StoryOpenOnPageLoad.storyName = 'open on page load';
-StoryOpenOnPageLoad.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryOpenOnPageLoad.parameters = {percy: {skip: true}};
 
 const items = [
   'Neptunium',
@@ -180,7 +180,6 @@ export const StoryWithAriaAttributes = () =>
   });
 StoryWithAriaAttributes.storyName = 'with aria attributes';
 StoryWithAriaAttributes.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -225,7 +224,6 @@ export const StoryWithCustomAutofocus = () =>
   });
 StoryWithCustomAutofocus.storyName = 'with custom autofocus';
 StoryWithCustomAutofocus.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -271,7 +269,6 @@ export const StoryWithCustomRestoreFocus = () =>
   });
 StoryWithCustomRestoreFocus.storyName = 'with custom restore focus';
 StoryWithCustomRestoreFocus.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -309,7 +306,6 @@ export const StoryWithHiddenOverlay = () =>
   });
 StoryWithHiddenOverlay.storyName = 'hidden overlay';
 StoryWithHiddenOverlay.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -347,7 +343,6 @@ export const StoryWithDisabledFocusTrap = () =>
   });
 StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
 StoryWithDisabledFocusTrap.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -385,7 +380,7 @@ export const StoryModelessModal = () =>
     );
   });
 StoryModelessModal.storyName = 'modelss';
-StoryModelessModal.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryModelessModal.parameters = {percy: {skip: true}};
 
 const ModalWrapper = styled.div`
   margin: 20px 0 20px 350px;
@@ -443,7 +438,6 @@ export const StoryModelessInlineModal = () =>
   });
 StoryModelessInlineModal.storyName = 'modelss-inline';
 StoryModelessInlineModal.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -489,7 +483,6 @@ export const StoryOptionalHeaderClose = () =>
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
 StoryOptionalHeaderClose.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
@@ -576,4 +569,4 @@ export const StoryNestedModals = () =>
     );
   });
 StoryNestedModals.storyName = 'nested-modals';
-StoryNestedModals.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryNestedModals.parameters = {percy: {skip: true}};

@@ -4081,6 +4081,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-12 {
@@ -5539,6 +5540,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-12 {
@@ -7210,6 +7212,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {

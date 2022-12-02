@@ -173,7 +173,6 @@ export const StoryInvalidImg = () => (
   </Container>
 );
 StoryInvalidImg.storyName = 'invalid-img';
-StoryInvalidImg.parameters = {...parameters};
 
 export const StoryInvalidImgWithPlaceholderIcon = () => (
   <Container>
@@ -190,7 +189,6 @@ export const StoryInvalidImgWithPlaceholderIcon = () => (
 );
 StoryInvalidImgWithPlaceholderIcon.storyName =
   'invalid-img-with-placeholder-icon';
-StoryInvalidImgWithPlaceholderIcon.parameters = {...parameters};
 
 export const StoryInvalidImgWithCustomPlaceholderIconDefaultSize = () => (
   <Container>
@@ -211,9 +209,6 @@ export const StoryInvalidImgWithCustomPlaceholderIconDefaultSize = () => (
 );
 StoryInvalidImgWithCustomPlaceholderIconDefaultSize.storyName =
   'invalid-img-with-custom-placeholder-icon-default-size';
-StoryInvalidImgWithCustomPlaceholderIconDefaultSize.parameters = {
-  ...parameters,
-};
 
 export const StoryInvalidImgWithCustomPlaceholderIconOverrideSize = () => (
   <Container>
@@ -236,9 +231,6 @@ export const StoryInvalidImgWithCustomPlaceholderIconOverrideSize = () => (
 );
 StoryInvalidImgWithCustomPlaceholderIconOverrideSize.storyName =
   'invalid-img-with-custom-placeholder-icon-override-size';
-StoryInvalidImgWithCustomPlaceholderIconOverrideSize.parameters = {
-  ...parameters,
-};
 
 export const StoryLazyLoading = () => {
   const getImages = (num: number) => {
@@ -264,7 +256,7 @@ export const StoryLazyLoading = () => {
   return <div>{getImages(30)}</div>;
 };
 StoryLazyLoading.storyName = 'lazy-loading';
-StoryLazyLoading.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryLazyLoading.parameters = {percy: {skip: true}};
 
 export const StoryImageWithSources = () => {
   const sources = [
@@ -281,7 +273,9 @@ export const StoryImageWithSources = () => {
   );
 };
 StoryImageWithSources.storyName = 'image-with-sources-using-mq';
-StoryImageWithSources.parameters = {...parameters};
+StoryImageWithSources.parameters = {
+  percy: {waitForSelector: 'picture img:nth-child(4)'},
+};
 
 export const StoryImageWithSourcesNoXS = () => {
   const sources = [
@@ -297,7 +291,9 @@ export const StoryImageWithSourcesNoXS = () => {
   );
 };
 StoryImageWithSourcesNoXS.storyName = 'image-with-sources-using-mq-no-xs';
-StoryImageWithSourcesNoXS.parameters = {...parameters};
+StoryImageWithSourcesNoXS.parameters = {
+  percy: {waitForSelector: 'picture img:nth-child(3)'},
+};
 
 export const StoryImageWithSourcesAndMedia = () => {
   // Source order matters
@@ -326,7 +322,9 @@ export const StoryImageWithSourcesAndMedia = () => {
 };
 StoryImageWithSourcesAndMedia.storyName =
   'image-with-sources-using-media-query';
-StoryImageWithSourcesAndMedia.parameters = {...parameters};
+StoryImageWithSourcesAndMedia.parameters = {
+  percy: {waitForSelector: 'picture img:nth-child(3)'},
+};
 
 export const StoryImageWithLogicalProps = () => (
   <>

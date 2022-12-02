@@ -10,6 +10,7 @@ exports[`Step renders with props 1`] = `
     class="emotion-0"
   >
     <svg
+      opacity="1"
       viewBox="0 0 1345 759"
       width="100%"
     >
