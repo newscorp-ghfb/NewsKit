@@ -26,7 +26,8 @@ export async function getSheets(range: string) {
     });
     return response.data.values;
   } catch (err) {
-    console.log('>> ERROR: Cannot fetch data from googlesheet api');
+    console.error('>> ERROR: Cannot fetch data from googlesheet api');
+    console.log('Have you added the .env file for local builds?');
     console.error(err);
   }
 

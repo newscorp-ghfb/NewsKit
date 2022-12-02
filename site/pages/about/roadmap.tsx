@@ -1,5 +1,5 @@
 import React from 'react';
-import {UnorderedList, LinkStandalone} from 'newskit';
+import {UnorderedList, LinkStandalone as LinkInline} from 'newskit';
 import ReactMarkdown, {ReactMarkdownOptions} from 'react-markdown';
 import {getSheets, ContentProps} from '../../utils/google-sheet';
 import {getValueFromCMS, formatSheetData} from '../../utils/google-sheet/utils';
@@ -12,42 +12,51 @@ import {
 import {ComponentPageCell} from '../../components/layout-cells';
 import {isLinkExternal} from '../../../src/link/utils';
 
+const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
+  /* eslint-disable @typescript-eslint/no-shadow */
+  <ReactMarkdown
+    components={{
+      a: ({href, children}) => (
+        <LinkInline
+          overrides={{typographyPreset: 'editorialParagraph020'}}
+          href={href!}
+          external={isLinkExternal(href!)}
+        >
+          {children}
+        </LinkInline>
+      ),
+      p: ({children}) => <>{children}</>,
+    }}
+  >
+    {children}
+  </ReactMarkdown>
+  /* eslint-enable @typescript-eslint/no-shadow */
+);
+
+const getCMSList = (cmsData: string[][], listKey: string) =>
+  cmsData
+    .filter(data => data[0].startsWith(listKey))
+    .map(entry => <FormatMarkdown>{entry[1]}</FormatMarkdown>);
+
 const Roadmap = ({
   content,
   cmsData,
   ...layoutProps
 }: LayoutProps & ContentProps & {cmsData: string[][]}) => {
-  const pageName = getValueFromCMS(content, 'intro_name', 'fallback title.');
+  const pageName = getValueFromCMS(content, 'intro_name', 'Roadmap');
   const pageDescription = getValueFromCMS(
     content,
     'intro_description',
-    'fallback description',
+    'NewsKit’s Design System team is busy building and planning to help you build better products faster.',
   );
 
   const introSecondary =
     cmsData.find(data => data[0] === 'intro_secondary') &&
-    getValueFromCMS(content, 'intro_secondary', '');
-
-  const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
-    /* eslint-disable @typescript-eslint/no-shadow */
-    <ReactMarkdown
-      components={{
-        a: ({href, children}) => (
-          <LinkStandalone
-            overrides={{typographyPreset: 'editorialParagraph020'}}
-            href={href!}
-            external={isLinkExternal(href!)}
-          >
-            {children}
-          </LinkStandalone>
-        ),
-        p: ({children}) => <>{children}</>,
-      }}
-    >
-      {children}
-    </ReactMarkdown>
-    /* eslint-enable @typescript-eslint/no-shadow */
-  );
+    getValueFromCMS(
+      content,
+      'intro_secondary',
+      'The roadmap is a living document, and it is likely that priorities will change. See our Trello board for more details on the roadmap.',
+    );
 
   return (
     <AboutPageTemplate
@@ -110,11 +119,7 @@ const Roadmap = ({
                 },
               }}
             >
-              {cmsData
-                .filter(data => data[0].startsWith('current_li'))
-                .map(entry => (
-                  <FormatMarkdown>{entry[1]}</FormatMarkdown>
-                ))}
+              {getCMSList(cmsData, 'current_li')}
             </UnorderedList>
           </ContentPrimary>
         </ContentSection>
@@ -142,11 +147,7 @@ const Roadmap = ({
                 },
               }}
             >
-              {cmsData
-                .filter(data => data[0].startsWith('comingup_li'))
-                .map(entry => (
-                  <FormatMarkdown>{entry[1]}</FormatMarkdown>
-                ))}
+              {getCMSList(cmsData, 'comingup_li')}
             </UnorderedList>
           </ContentPrimary>
         </ContentSection>
@@ -170,11 +171,7 @@ const Roadmap = ({
                 },
               }}
             >
-              {cmsData
-                .filter(cells => cells[0].startsWith('future_li'))
-                .map(entry => (
-                  <FormatMarkdown>{entry[1]}</FormatMarkdown>
-                ))}
+              {getCMSList(cmsData, 'future_li')}
             </UnorderedList>
           </ContentPrimary>
         </ContentSection>
@@ -188,8 +185,7 @@ export default Roadmap;
 // This function is called at build time and the response is passed to the page
 // component as props.
 export async function getStaticProps() {
-  const [cmsData] = await Promise.all([getSheets('Roadmap')]);
-
+  const cmsData = await getSheets('Roadmap');
   const content = formatSheetData(cmsData);
   return {props: {content, cmsData}};
 }

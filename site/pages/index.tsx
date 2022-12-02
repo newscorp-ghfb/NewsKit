@@ -52,10 +52,10 @@ const Index = ({
           }}
         >
           <FeatureCard
-            title={getValueFromCMS(content, 'HeroCardTitle', 'Latest blog')}
+            title={getValueFromCMS(content, 'hero_card_title', 'Latest blog')}
             description={getValueFromCMS(
               content,
-              'HeroCardDescription',
+              'hero_card_description',
               "How an audio player component tells the story of NewsKit Design System's changing strategy",
             )}
             stylePrefix="worldDesignSystemsWeekCard"
@@ -67,12 +67,12 @@ const Index = ({
             buttonIcon={<IconFilledLaunch />}
             buttonLabel={getValueFromCMS(
               content,
-              'HeroCardLinkText',
+              'hero_card_link_text',
               'Read on Medium',
             )}
             buttonHref={getValueFromCMS(
               content,
-              'HeroCardLink',
+              'hero_card_link',
               'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
             )}
             buttonOverrides={{
