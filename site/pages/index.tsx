@@ -52,12 +52,11 @@ const Index = ({
           }}
         >
           <FeatureCard
-            title={getValueFromCMS(content, 'hero_card_title', 'Latest blog')}
-            description={getValueFromCMS(
-              content,
-              'hero_card_description',
-              "How an audio player component tells the story of NewsKit Design System's changing strategy",
-            )}
+            title={getValueFromCMS(content, 'hero_card_title') || 'Latest blog'}
+            description={
+              getValueFromCMS(content, 'hero_card_description') ||
+              "How an audio player component tells the story of NewsKit Design System's changing strategy"
+            }
             stylePrefix="worldDesignSystemsWeekCard"
             layout="horizontal"
             overrides={{
@@ -65,16 +64,14 @@ const Index = ({
               description: {typographyPreset: 'editorialSubheadline010'},
             }}
             buttonIcon={<IconFilledLaunch />}
-            buttonLabel={getValueFromCMS(
-              content,
-              'hero_card_link_text',
-              'Read on Medium',
-            )}
-            buttonHref={getValueFromCMS(
-              content,
-              'hero_card_link',
-              'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
-            )}
+            buttonLabel={
+              getValueFromCMS(content, 'hero_card_link_text') ||
+              'Read on Medium'
+            }
+            buttonHref={
+              getValueFromCMS(content, 'hero_card_link') ||
+              'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67'
+            }
             buttonOverrides={{
               paddingInline: 'space000',
               typographyPreset: 'utilityButton020',
