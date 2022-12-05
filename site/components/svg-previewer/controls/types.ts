@@ -5,7 +5,6 @@ import {ThemeNames} from '../colors-theme-list';
 export interface ThemeControlsProps {
   hexesObj: object;
   getThemeFromList: (themeName: ThemeNames, version: 'light' | 'dark') => Theme;
-  setIds: (figmaSvg: string) => string;
   svgCodeGroup?: [string];
   setSvgCodeGroup: Dispatch<SetStateAction<[string] | undefined>>;
   baseSvgCodeGroup?: [{figmaSvg: string; name: string}];
