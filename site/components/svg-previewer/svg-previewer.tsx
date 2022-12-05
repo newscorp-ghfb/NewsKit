@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import {getColorCssFromTheme, getSSRId, P} from 'newskit';
+import {
+  getColorCssFromTheme,
+  Scroll,
+  P,
+  ScrollSnapAlignment,
+  GridLayout,
+} from 'newskit';
 import dompurify from 'isomorphic-dompurify';
 import {themeList, ThemeNames} from './colors-theme-list';
-import {
-  StyledButtonsContainer,
-  StyledSingleSvgWrapper,
-  StyledSvgGroupContainer,
-  StyledSvgPreviewerContainer,
-} from './styled';
+import {StyledButtonsContainer, StyledSingleSvgWrapper} from './styled';
 import {DownloadControls} from './controls/download-controls';
 import {ThemeControls} from './controls/theme-controls';
 
@@ -30,53 +31,10 @@ export const SvgPreviewer: React.FC = () => {
   // Hexes obj sent by figma, used for switch theme logic.
   const [hexesObj, setHexesObj] = useState<Object>({});
 
-  const setIds = (figmaSvg: string) => {
-    const regexList = [/mask\d{1,}/g, /filter\d{1,}/g, /clip\d{1,}/g];
-    let figmaSvgCopy = figmaSvg;
-
-    regexList.forEach(regex => {
-      const matchList = figmaSvgCopy.match(regex);
-
-      matchList?.forEach(match => {
-        figmaSvgCopy = figmaSvgCopy.replace(
-          new RegExp(match, 'g'),
-          `${getSSRId()}`,
-        );
-      });
-    });
-    return figmaSvgCopy;
-  };
-
   const testSvgCodeIsString = (data: Array<{code: string; name: string}>) => {
     data.forEach(svg => {
       if (typeof svg.code !== 'string') throw new Error();
     });
-  };
-
-  // This function simplify the IDs set by figma for clips, filters and masks.
-  // It makes simpler the SVG manipulation especially when building the react component.
-  // ** To be removed if Figma brings back short IDs (E.G: clip0 than clip0_12:1464). **
-  const svgIdsShortener = (figmaSvg: string) => {
-    let figmaSvgCopy = figmaSvg;
-    const regexList = [
-      /mask\d+_\d+_\d+/g,
-      /filter\d+_d_\d+_\d+/g,
-      /clip\d+_\d+_\d+/g,
-    ];
-
-    regexList.forEach(regex => {
-      const matchList = figmaSvg.match(regex);
-
-      matchList?.forEach(match => {
-        const firstUnderscoreIndex = match.indexOf('_');
-
-        figmaSvgCopy = figmaSvgCopy.replace(
-          new RegExp(match, 'g'),
-          match.substring(0, firstUnderscoreIndex),
-        );
-      });
-    });
-    return figmaSvgCopy;
   };
 
   const getThemeFromList = (
@@ -109,11 +67,11 @@ export const SvgPreviewer: React.FC = () => {
       // @ts-ignore
       const content = event.data.pluginMessage.data.svgdata.map(svg => {
         let figmaSvg: string = svg.code;
-        figmaSvg = svgIdsShortener(figmaSvg);
+        // figmaSvg = svgIdsShortener(figmaSvg);
         baseFigmaSvg.push({figmaSvg, name: svg.name});
 
         // Setting ids for "mask", "filter", and "clip" attributes
-        figmaSvg = setIds(figmaSvg);
+        // figmaSvg = setIds(figmaSvg);
 
         // ** REPLACING RANDOM FIGMA COLORS
         Object.entries(event.data.pluginMessage.data.hexes).forEach(hex => {
@@ -154,37 +112,73 @@ export const SvgPreviewer: React.FC = () => {
   }, [onmessage]);
 
   return (
-    <StyledSvgPreviewerContainer>
-      <StyledButtonsContainer>
-        <ThemeControls
-          setSvgCodeGroup={setSvgCodeGroup}
-          hexesObj={hexesObj}
-          baseSvgCodeGroup={baseSvgCodeGroup}
-          svgCodeGroup={svgCodeGroup}
-          getThemeFromList={getThemeFromList}
-          setIds={setIds}
-          currentThemeName={currentThemeName}
-          setCurrentThemeName={setCurrentThemeName}
-        />
-
-        <DownloadControls
-          hexesObj={hexesObj}
-          baseSvgCodeGroup={baseSvgCodeGroup}
-          svgCodeGroup={svgCodeGroup}
-        />
+    <GridLayout>
+      <StyledButtonsContainer
+        rows={{xs: 'sizing080'}}
+        alignItems="center"
+        justifyContent="sapce-between"
+        columns="1fr 1fr"
+        overrides={{
+          paddingInline: '10%',
+          paddingBlock: '8px',
+          minWidth: '100%',
+        }}
+      >
+        <GridLayout
+          columns="1fr 1fr"
+          alignItems="center"
+          rows={{xs: 'sizing080'}}
+        >
+          <ThemeControls
+            setSvgCodeGroup={setSvgCodeGroup}
+            hexesObj={hexesObj}
+            baseSvgCodeGroup={baseSvgCodeGroup}
+            svgCodeGroup={svgCodeGroup}
+            getThemeFromList={getThemeFromList}
+            currentThemeName={currentThemeName}
+            setCurrentThemeName={setCurrentThemeName}
+          />
+        </GridLayout>
+        <GridLayout
+          columns="1fr 1fr 1fr"
+          alignItems="baseline"
+          rows={{xs: 'sizing080'}}
+        >
+          <DownloadControls
+            hexesObj={hexesObj}
+            baseSvgCodeGroup={baseSvgCodeGroup}
+            svgCodeGroup={svgCodeGroup}
+          />
+        </GridLayout>
       </StyledButtonsContainer>
 
       {svgCodeGroup && baseSvgCodeGroup && (
-        <StyledSvgGroupContainer>
-          {svgCodeGroup.map((svgCode, index) => (
-            <StyledSingleSvgWrapper key={baseSvgCodeGroup[index].name}>
-              <P>{baseSvgCodeGroup[index].name}</P>
-              {/* eslint-disable-next-line react/no-danger */}
-              <div dangerouslySetInnerHTML={{__html: sanitize(svgCode)}} />
-            </StyledSingleSvgWrapper>
-          ))}
-        </StyledSvgGroupContainer>
+        <Scroll
+          id="scroll"
+          snapAlign="center"
+          controls="static"
+          stepDistance={window.innerWidth}
+        >
+          <GridLayout
+            autoRows="1fr"
+            autoFlow="column dense"
+            overrides={{
+              marginBlock: '10vh',
+              maxHeight: '80vh',
+            }}
+          >
+            {svgCodeGroup.map((svgCode, index) => (
+              <ScrollSnapAlignment key={baseSvgCodeGroup[index].name}>
+                <StyledSingleSvgWrapper>
+                  <P>{baseSvgCodeGroup[index].name}</P>
+                  {/* eslint-disable-next-line react/no-danger */}
+                  <div dangerouslySetInnerHTML={{__html: sanitize(svgCode)}} />
+                </StyledSingleSvgWrapper>
+              </ScrollSnapAlignment>
+            ))}
+          </GridLayout>
+        </Scroll>
       )}
-    </StyledSvgPreviewerContainer>
+    </GridLayout>
   );
 };
