@@ -7,7 +7,6 @@ import React, {
 } from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
-import {debounce} from 'debounce';
 import {getOverflowAncestors} from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
@@ -41,6 +40,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       virtualized = 50,
       eventContext = {},
       eventOriginator = 'select',
+      onOpenChange,
       ...restProps
     } = props;
 
@@ -137,6 +137,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onSelectedItemChange: onInputChange,
       itemToString,
       onHighlightedIndexChange,
+      onIsOpenChange: event => {
+        if (onOpenChange) {
+          onOpenChange(Boolean(event.isOpen));
+        }
+      },
       stateReducer: (_, actionAndChanges) => {
         const {type, changes} = actionAndChanges;
         // Does not close panel in the case we are rendering panel inside a modal
@@ -228,15 +233,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [isOpen, panelRef]);
 
-    /* istanbul ignore next */
-    const onOverflowScroll = useCallback(
-      debounce(() => {
-        if (selectRef.current) {
-          setSelectRect(selectRef.current.getBoundingClientRect());
-        }
-      }, 8),
-      [setSelectRect, selectRef],
-    );
+    const onOverflowScroll = useCallback(() => {
+      if (selectRef.current) {
+        setSelectRect(selectRef.current.getBoundingClientRect());
+      }
+    }, [setSelectRect, selectRef]);
 
     const parentOverflowNode = useRef<HTMLElement>();
 
@@ -286,6 +287,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           ref={composeRefs(localInputRef, downshiftButtonPropsRef, inputRef)}
           selectRef={selectRef}
           value={buttonValue}
+          isOpen={isOpen}
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
