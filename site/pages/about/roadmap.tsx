@@ -1,7 +1,7 @@
 import React from 'react';
 import {UnorderedList, LinkStandalone as LinkInline} from 'newskit';
 import ReactMarkdown, {ReactMarkdownOptions} from 'react-markdown';
-import {getSheets, ContentProps} from '../../utils/google-sheet';
+import {getSheets, ContentProps, CMSDataProps} from '../../utils/google-sheet';
 import {getValueFromCMS, formatSheetData} from '../../utils/google-sheet/utils';
 import {AboutPageTemplate} from '../../templates/about-page-template';
 import {LayoutProps} from '../../components/layout';
@@ -33,16 +33,12 @@ const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
   /* eslint-enable @typescript-eslint/no-shadow */
 );
 
-const getCMSList = (cmsData: string[][], listKey: string) =>
-  cmsData
-    .filter(data => data[0].startsWith(listKey))
+const getCMSList = (content: CMSDataProps, listKey: string) =>
+  Object.entries(content)
+    .filter(entry => entry[0].startsWith(listKey))
     .map(entry => <FormatMarkdown>{entry[1]}</FormatMarkdown>);
 
-const Roadmap = ({
-  content,
-  cmsData,
-  ...layoutProps
-}: LayoutProps & ContentProps & {cmsData: string[][]}) => {
+const Roadmap = ({content, ...layoutProps}: LayoutProps & ContentProps) => {
   const pageName = getValueFromCMS(content, 'intro_name', 'Roadmap');
   const pageDescription = getValueFromCMS(
     content,
@@ -51,7 +47,7 @@ const Roadmap = ({
   );
 
   const introSecondary =
-    cmsData.find(data => data[0] === 'intro_secondary') &&
+    content.intro_secondary &&
     getValueFromCMS(
       content,
       'intro_secondary',
@@ -119,7 +115,7 @@ const Roadmap = ({
                 },
               }}
             >
-              {getCMSList(cmsData, 'current_li')}
+              {getCMSList(content, 'current_li')}
             </UnorderedList>
           </ContentPrimary>
         </ContentSection>
@@ -147,7 +143,7 @@ const Roadmap = ({
                 },
               }}
             >
-              {getCMSList(cmsData, 'comingup_li')}
+              {getCMSList(content, 'comingup_li')}
             </UnorderedList>
           </ContentPrimary>
         </ContentSection>
@@ -171,7 +167,7 @@ const Roadmap = ({
                 },
               }}
             >
-              {getCMSList(cmsData, 'future_li')}
+              {getCMSList(content, 'future_li')}
             </UnorderedList>
           </ContentPrimary>
         </ContentSection>
@@ -187,5 +183,5 @@ export default Roadmap;
 export async function getStaticProps() {
   const cmsData = await getSheets('Roadmap');
   const content = formatSheetData(cmsData);
-  return {props: {content, cmsData}};
+  return {props: {content}};
 }
