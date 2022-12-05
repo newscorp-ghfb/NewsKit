@@ -20,6 +20,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
@@ -695,7 +696,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'menu.spaceInline',
+              attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space020',
               description: `Overrides the space between menu items`,
@@ -726,37 +727,37 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'menuGroup.title.typographyPreset',
+              attribute: 'title.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityHeading030',
               description: `Overrides the typographyPreset of the title`,
             },
             {
-              attribute: 'menuGroup.title.stylePreset',
+              attribute: 'title.stylePreset',
               type: 'MQ<string>',
               default: 'inkSubtle',
               description: `Overrides the stylePreset of the title`,
             },
             {
-              attribute: 'menuGroup.title.spaceInline',
+              attribute: 'title.spaceInline',
               type: 'MQ<string>',
               default: 'space050',
               description: `Overrides the space between the title and the first menu item`,
             },
             {
-              attribute: 'menuGroup.title.spaceInset',
+              attribute: 'title.spaceInset',
               type: 'MQ<string>',
               default: 'space050',
               description: `Overrides the indentation of the title`,
             },
             {
-              attribute: 'menuGroup.spaceInline',
+              attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space050',
               description: `Defines the space between each menuGroup`,
             },
             {
-              attribute: 'menuGroup.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               description: `Overrides the stylePreset of the menuGroup`,
             },
@@ -812,43 +813,28 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'menuItem.vertical.minHeight',
+              attribute: 'minHeight',
               type: 'MQ<string>',
               default: 'sizing080',
               description: `Overrides the minHeight of the menu item`,
             },
             {
-              attribute: 'menuItem.horizontal.minHeight',
-              type: 'MQ<string>',
-              default: 'sizing080',
-              description: `Overrides the minHeight of the menu item`,
-            },
-            {
-              attribute: 'menuItemIcon.vertical.iconSize',
+              attribute: 'iconSize',
               type: 'MQ<string>',
               default: 'iconSize020',
               description: `Overrides the iconSize of the menu item`,
             },
             {
-              attribute: 'menuItemIcon.horizontal.iconSize',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
-              default: 'iconSize020',
-              description: `Overrides the iconSize of the menu item`,
-            },
-            {
-              attribute: 'menuItem.vertical.stylePreset',
-              type: 'MQ<string>',
-              default: 'menuItemVertical',
+              default: [
+                'horizontal: menuItemHorizontal',
+                'vertical: menuItemVertical',
+              ],
               description: `Overrides the stylePreset of the icon, label and background of the menu item`,
             },
             {
-              attribute: 'menuItem.horizontal.stylePreset',
-              type: 'MQ<string>',
-              default: 'menuItemHorizontal',
-              description: `Overrides the stylePreset of the icon, label and background of the menu item`,
-            },
-            {
-              attribute: 'menuItem.vertical.transitionPreset',
+              attribute: 'transitionPreset',
               type: 'TransitionToken | TransitionToken[]',
               default: [
                 'backgroundColorChange',
@@ -858,35 +844,14 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               description: `Overrides the transitionPreset of the menu item`,
             },
             {
-              attribute: 'menuItem.horizontal.transitionPreset',
-              type: 'TransitionToken | TransitionToken[]',
-              default: [
-                'backgroundColorChange',
-                'borderColorChange',
-                'fontColorChange',
-              ],
-              description: `Overrides the transitionPreset of the menu item`,
-            },
-            {
-              attribute: 'menuItem.vertical.spaceInline',
+              attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space020',
               description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
             },
+
             {
-              attribute: 'menuItem.horizontal.spaceInline',
-              type: 'MQ<string>',
-              default: 'space020',
-              description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
-            },
-            {
-              attribute: 'menuItem.vertical.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInsetSquish030',
-              description: `Overrides the spaceInset of the Menu Item`,
-            },
-            {
-              attribute: 'menuItem.horizontal.spaceInset',
+              attribute: 'spaceInset',
               type: 'MQ<string>',
               default: 'spaceInsetSquish030',
               description: `Overrides the spaceInset of the Menu Item`,
@@ -980,8 +945,33 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'stylePreset',
               type: 'MQ<string>',
-              default: 'menuItemHorizontal | menuItemVertical',
+              default: [
+                'horizontal: menuSubItemHorizontal',
+                'vertical: menuSubItemVertical',
+              ],
               description: `If provided, this overrides the MenuSub styling.`,
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'TransitionToken | TransitionToken[]',
+              default: [
+                'backgroundColorChange',
+                'borderColorChange',
+                'fontColorChange',
+              ],
+              description: `Overrides the transitionPreset of the menu item`,
+            },
+            {
+              attribute: 'spaceInline',
+              type: 'MQ<string>',
+              default: 'space020',
+              description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
+            },
+            {
+              attribute: 'spaceInset',
+              type: 'MQ<string>',
+              default: 'space000',
+              description: `Overrides the spaceInset of the Menu Item`,
             },
             {
               attribute: 'indicatorIcon',
@@ -1000,8 +990,17 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               description: `If provided, this overrides the indicatorIcon styling.`,
             },
-            ...logicalMarginOverrideProps,
-            ...logicalPaddingOverrideProps,
+            {
+              attribute: 'list.stylePreset',
+              type: 'MQ<string>',
+              default: 'menuSub',
+              description: `If provided, this overrides the MenuSub list styling.`,
+            },
+            ...getLogicalPropsTable(undefined, 'list'),
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingBlock: 'space030',
+              paddingInline: 'space040',
+            }),
           ],
         },
       ],

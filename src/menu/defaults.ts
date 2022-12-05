@@ -37,9 +37,6 @@ export default {
       paddingInline: 'space040',
       list: {
         stylePreset: 'menuSub',
-        // TODO: just example
-        // paddingBlock: '20px',
-        // paddingInline: '20px',
       },
     },
     vertical: {
