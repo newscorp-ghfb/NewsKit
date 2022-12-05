@@ -1736,6 +1736,7 @@ const createNestedMenu = (
       </MenuItem>
     );
   });
+
 const expandMyParent = (menuItem: MenuNestedElement) => {
   if (menuItem) {
     menuItem.expanded = true;
