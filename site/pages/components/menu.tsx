@@ -879,11 +879,17 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           title: 'Sub menu',
           propsRows: [
             {
-              name: 'Children',
+              name: 'children',
               type: "Exclude<React.ReactNode, 'undefined'>",
               required: true,
               description: `	
               A collection (array, component, JSX element) of menu group, menu items, menu group divider, and sub menu components.`,
+            },
+            {
+              name: 'href',
+              type: 'string',
+              required: true,
+              description: `If provided, renders the menu item as a link`,
             },
             {
               name: 'title',
@@ -924,14 +930,6 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               >
                 Please refer to the menu item for details of the props and other
                 overrides.
-              </InlineMessage>
-              <InlineMessage
-                role="region"
-                aria-label="props sub menu note"
-                icon={infoIcon}
-              >
-                The sub menu doesn’t have the ability to specify a href, as it
-                is not a link.
               </InlineMessage>
             </>
           ),
