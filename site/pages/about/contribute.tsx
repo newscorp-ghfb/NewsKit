@@ -1,9 +1,7 @@
 import React from 'react';
-import {getSizingCssFromTheme, styled} from 'newskit';
-import Layout, {LayoutProps} from '../../components/layout';
-import {PageIntroduction} from '../../components/page-introduction';
+import {AboutPageTemplate} from '../../templates/about-page-template';
+import {LayoutProps} from '../../components/layout';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {HeadNextSeo} from '../../components/head-next-seo';
 import {Link} from '../../components/link';
 import {
   ContentSection,
@@ -12,37 +10,28 @@ import {
   ContentColSpan,
 } from '../../components/content-structure';
 
-const PageIntroductionContainer = styled.div`
-  ${getSizingCssFromTheme('marginTop', 'sizing100')};
-  ${getSizingCssFromTheme('marginBottom', 'sizing090')}
-`;
+const pageName = 'Contribute';
+const pageDescription =
+  'There are a lot of ways to contribute to the NewsKit community and Design System; from submitting a proposal to designing a new feature for other users to benefit from.';
 
-const Contribute = (
-  {path, ...props}: LayoutProps, //  TODO: remove path hack after all docs pages are done - https://nidigitalsolutions.jira.com/browse/PPDSE-312
-) => (
-  <Layout {...props} path={`${path}-new`}>
-    <HeadNextSeo
-      title="Contribute"
-      description="There are a lot of ways to contribute to the NewsKit community and Design System; from submitting a proposal to designing a new feature for other users to benefit from."
-      image={{
-        url: 'social/about.png',
-        alt: 'Contribute',
-      }}
-    />
-
-    <PageIntroductionContainer>
-      <PageIntroduction
-        type="About"
-        name="Contribute"
-        introduction="There are a lot of ways to contribute to the NewsKit community and Design System; from submitting a proposal to designing a new feature for other users to benefit from."
-        hero={{
-          illustration: 'about/hero-contribute-illustration',
-          illustrationProps: {viewBox: '0 0 1345 759'},
-        }}
-        showSeparator
-      />
-    </PageIntroductionContainer>
-
+const Contribute = (layoutProps: LayoutProps) => (
+  <AboutPageTemplate
+    headTags={{
+      title: pageName,
+      description: pageDescription,
+    }}
+    layoutProps={layoutProps}
+    pageIntroduction={{
+      type: 'About',
+      name: pageName,
+      introduction: pageDescription,
+      hero: {
+        illustration: 'about/hero-contribute-illustration',
+        illustrationProps: {viewBox: '0 0 1345 759'},
+      },
+      showSeparator: true,
+    }}
+  >
     <ComponentPageCell>
       <ContentSection sectionName="feedback">
         <ContentPrimary
@@ -195,7 +184,7 @@ const Contribute = (
         />
       </ContentSection>
     </ComponentPageCell>
-  </Layout>
+  </AboutPageTemplate>
 );
 
 export default Contribute;

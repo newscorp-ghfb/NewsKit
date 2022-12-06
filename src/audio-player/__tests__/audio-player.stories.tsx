@@ -9,7 +9,6 @@ import {
 } from '../../test/storybook-comps';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {
-  DISABLE_ANIMATIONS_SCRIPT,
   useAllPlayersCanPlayCheck,
   VisualTestAudioPlayer,
 } from '../../utils/audio-tests';
@@ -255,9 +254,6 @@ export const StoryAudioPlayer = () => {
 };
 StoryAudioPlayer.storyName = 'audio-player';
 StoryAudioPlayer.parameters = {
-  eyes: {
-    waitBeforeCapture: '#storyAudioPlayerReady',
-  },
   percy: {
     waitForSelector: '#storyAudioPlayerReady',
   },
@@ -287,9 +283,6 @@ export const StoryAudioPlayerLogicalOverrides = () => {
 };
 StoryAudioPlayerLogicalOverrides.storyName = 'audio-player-logical-overrides';
 StoryAudioPlayerLogicalOverrides.parameters = {
-  eyes: {
-    waitBeforeCapture: '#storyAudioPlayerLogicalOverridesReady',
-  },
   percy: {
     waitForSelector: '#storyAudioPlayerLogicalOverridesReady',
   },
@@ -308,13 +301,6 @@ export const StoryAudioPlayerLoadingState = () => (
   </>
 );
 StoryAudioPlayerLoadingState.storyName = 'audio-player-loading-state';
-StoryAudioPlayerLoadingState.parameters = {
-  eyes: {
-    scriptHooks: {
-      beforeCaptureScreenshot: DISABLE_ANIMATIONS_SCRIPT,
-    },
-  },
-};
 
 export const StoryAudioPlayerWithControls = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(3);
@@ -358,9 +344,6 @@ export const StoryAudioPlayerWithControls = () => {
 };
 StoryAudioPlayerWithControls.storyName = 'audio-player-with-controls';
 StoryAudioPlayerWithControls.parameters = {
-  eyes: {
-    waitBeforeCapture: '#storyAudioPlayerWithControlsReady',
-  },
   percy: {
     waitForSelector: '#storyAudioPlayerWithControlsReady',
   },
@@ -425,9 +408,6 @@ export const StoryAudioPlayerWithHiddenControls = () => {
 StoryAudioPlayerWithHiddenControls.storyName =
   'audio-player-with-hidden-controls';
 StoryAudioPlayerWithHiddenControls.parameters = {
-  eyes: {
-    waitBeforeCapture: '#storyAudioPlayerWithHiddenControlsReady',
-  },
   percy: {
     waitForSelector: '#storyAudioPlayerWithHiddenControlsReady',
   },

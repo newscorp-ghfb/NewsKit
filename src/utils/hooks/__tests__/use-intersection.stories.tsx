@@ -59,7 +59,6 @@ export const StoryUseIntersection = () => {
 };
 StoryUseIntersection.storyName = 'useIntersection';
 StoryUseIntersection.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 
