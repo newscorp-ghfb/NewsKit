@@ -1,6 +1,20 @@
-import {CMSDataProps} from '../../../utils/google-sheet';
+interface RoadmapContent {
+  intro_name: string;
+  intro_secondary: string;
+  intro_description: string;
+  intro_hero_illustration: string;
+  current_headline: string;
+  current_description: string;
+  comingup_headline: string;
+  comingup_description: string;
+  future_headline: string;
+  future_description: string;
+  [current_li_keys: `current_li_${string}`]: string;
+  [comingup_li_keys: `comingup_li_${string}`]: string;
+  [future_li_keys: `future_li_${string}`]: string;
+}
 
-export const roadmapFallbackContent: CMSDataProps = {
+export const roadmapFallbackContent: RoadmapContent = {
   intro_name: 'Roadmap - fallback',
   intro_description:
     'Fallback - NewsKit’s Design System team is busy building and planning to help you build better products faster.',
