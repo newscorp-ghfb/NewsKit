@@ -47,7 +47,7 @@ async function checkIfBaselineUpdatesRequired(headRefName, project) {
     `Checking if baselines for ${project} need to be updated after ${branchName} was merged`,
   );
 
-  const build = await getPercyBuildForBranch(`${branchName}`, project);
+  const build = await getPercyBuildForBranch(branchName, project);
   const reviewState = build.attributes['review-state'];
   const nbDiffs = build.attributes['total-comparisons-diff'];
 
