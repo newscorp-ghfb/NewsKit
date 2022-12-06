@@ -117,6 +117,8 @@ export const StyledSelectPanel = styled.div<{
   box-sizing: border-box;
   outline: none;
   z-index: 1;
+  top: 0;
+  left: 0;
 
   // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
@@ -134,8 +136,6 @@ export const StyledSelectPanel = styled.div<{
   ${({$size}) => logicalProps(`select.${$size}.panel`)};
 
   ${({$width}) => `width: ${$width}px;`}
-  top: 0;
-  left: 0;
 
   ${({$isOpen}) => `display: ${$isOpen ? 'block' : 'none'};`}
 
