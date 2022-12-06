@@ -59,8 +59,8 @@ async function checkIfBaselineUpdatesRequired(headRefName, project) {
 }
 
 // this script fails if updates are required
-const sha = process.argv[2];
+const headRefName = process.argv[2];
 const project = process.argv[3];
-checkIfBaselineUpdatesRequired(sha, project)
+checkIfBaselineUpdatesRequired(headRefName, project)
   .then(() => process.exit(1))
   .catch(() => process.exit(0));
