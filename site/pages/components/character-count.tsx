@@ -152,15 +152,14 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="Character Count"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v6.3.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/character-count',
       storybookId: 'components-character-count--character-count-default',
     }}
     anatomy={{
-      introduction:
-        'The character count contains one required element and no optional elements.',
+      introduction: 'The character count contains one required element.',
       media: getIllustrationComponent('components/character-count/anatomy01'),
       rows: [
         {
@@ -308,7 +307,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           ),
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
-            'components/character-count/usage/dont-01',
+            'components/character-count/usage/dont-1',
           ),
         },
         {
@@ -327,10 +326,10 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           The character count has the following accessibility considerations:
           <br />
           <br />
-          Use //aria-live=POLITENESS_SETTING// to set the priority with which
-          the screen reader should treat updates to live regions, allowing for
-          the voiceover to read out loud the remaining characters as the user
-          types.
+          Use <InlineCode>aria-live=POLITENESS_SETTING</InlineCode> to set the
+          priority with which the screen reader should treat updates to live
+          regions, allowing for the voiceover to read out loud the remaining
+          characters as the user types.
         </>
       ),
       aria: {
@@ -347,26 +346,20 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
         ],
       },
     }}
-    codeExamples={{
-      example: [
-        {
-          title: 'Code example',
-          description: (
-            <>
-              you have enter up to 200 chracters &rArr; hidden
-              <br />
-              <br />
-              This is read out on voiceover first before the user begins to
-              type. Then as the user types, the remaining character count is
-              read out.
-            </>
-          ),
-        },
-      ],
-    }}
     componentAPI={{
-      introduction:
-        'The FormInput character count has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit form component.',
+      introduction: (
+        <>
+          The FormInput character count has a range of props that can be used to
+          define an appropriate experience for different use cases. Use this
+          component within{' '}
+          <Link
+            href="https://www.newskit.co.uk/components/form/"
+            target="_blank"
+          >
+            the NewsKit form component.
+          </Link>
+        </>
+      ),
       components: [
         {
           title: 'FormInput character count',
@@ -392,8 +385,6 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           title: 'Character count',
           summary:
             'The character count has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.',
-          propsSummary:
-            'The Character count has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.',
           propsRows: [
             {
               name: 'name',
@@ -406,6 +397,9 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           overridesRows: commonOverridesRows,
         },
       ],
+    }}
+    related={{
+      related: ['Flag', 'Progress Indicator', 'Tooltip'],
     }}
   />
 );
