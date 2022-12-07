@@ -568,6 +568,94 @@ describe('Select', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('calls onOpenChange', async () => {
+    const onOpenChange = jest.fn();
+    const props: SelectProps = {
+      onOpenChange,
+      children: defaultSelectOptions,
+    };
+
+    const {getByTestId} = renderWithTheme(Select, props);
+
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    expect(onOpenChange).toHaveBeenCalledTimes(1);
+    expect(onOpenChange).toHaveBeenCalledWith(true);
+  });
+
+  test('icon size overrides', () => {
+    const props: SelectProps = {
+      overrides: {
+        button: {
+          indicatorIcon: {
+            size: 'iconSize050',
+          },
+        },
+      },
+      children: [
+        <SelectOption value="1" key="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentWithTheme(Select, props) as any;
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('icon component overrides', () => {
+    const props: SelectProps = {
+      overrides: {
+        button: {
+          indicatorIcon: () => <>icon</>,
+        },
+      },
+      children: [
+        <SelectOption value="1" key="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentWithTheme(Select, props) as any;
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('icon theme size overrides', () => {
+    const props: SelectProps = {
+      children: [
+        <SelectOption value="1" key="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+    const selectTheme = createTheme({
+      name: 'selectTheme',
+      overrides: {
+        componentDefaults: {
+          select: {
+            medium: {
+              button: {
+                iconSize: undefined,
+                indicatorIcon: {
+                  size: 'iconSize040',
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+    const fragment = renderToFragmentWithTheme(
+      Select,
+      props,
+      selectTheme,
+    ) as any;
+    expect(fragment).toMatchSnapshot();
+  });
+
   describe('in Modal', () => {
     afterEach(() => {
       cleanup();
