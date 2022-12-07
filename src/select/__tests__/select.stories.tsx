@@ -1355,9 +1355,9 @@ export const SelectVirtualizationNotFixedSize = () => {
   );
 };
 
-/*
+/**
   PLEASE IGNORE THIS STORY
-ITS JUST FOR TESTING AND WILL BE REMOVED BEFORE MERGE
+  ITS JUST FOR TESTING AND WILL BE REMOVED BEFORE MERGE
  */
 
 const temp = Array.from(Array(200).keys()).map(v => String(v));
