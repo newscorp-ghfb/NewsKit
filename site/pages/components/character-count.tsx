@@ -241,7 +241,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Invalid',
+          title: 'Valid',
           description: (
             <>
               The character count in a valid state changes style when the
