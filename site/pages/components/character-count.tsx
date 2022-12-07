@@ -1,5 +1,5 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon} from 'newskit';
+import {InlineMessage, toNewsKitIcon, Block} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -8,6 +8,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
+import {ContentText} from '../../components/text-section';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -330,6 +331,14 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           priority with which the screen reader should treat updates to live
           regions, allowing for the voiceover to read out loud the remaining
           characters as the user types.
+          <Block spaceStack="space100" />
+          <ContentText title="Code example">
+            This is read out on voiceover first before the user begins to type.
+            Then as the user types, the remaining character count is read out.
+            <br />
+            <br />
+            you have enter up to 200 chracters &rArr; hidden
+          </ContentText>
         </>
       ),
       aria: {
