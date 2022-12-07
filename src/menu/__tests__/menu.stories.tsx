@@ -1385,11 +1385,12 @@ export const StorySubMenuVertical = () => {
             id="vertical-guides"
             expanded={guidesExpanded}
             onClick={() => setGuidesExpanded(!guidesExpanded)}
+            selected
           >
             <MenuItem href={href} id="vertical-getting-started">
               Getting started
             </MenuItem>
-            <MenuItem href={href} id="vertical-design-overview">
+            <MenuItem selected href={href} id="vertical-design-overview">
               Design overview
             </MenuItem>
             <MenuSub
@@ -1490,6 +1491,10 @@ const items: MenuElement[] = [
   },
 ];
 
+const HorizontalContainerLarge = styled.div`
+  min-height: 300px;
+`;
+
 export const StoryMenuMultipleAuto = () => {
   const splitNumber = useMediaQueryObject({
     xs: 2,
@@ -1502,7 +1507,7 @@ export const StoryMenuMultipleAuto = () => {
   const {visible, invisible} = splitMenuItems(items, splitNumber || 1000);
 
   return (
-    <HorizontalContainer>
+    <HorizontalContainerLarge>
       <InlineMessage
         icon={
           <IconFilledInfo
@@ -1521,7 +1526,7 @@ export const StoryMenuMultipleAuto = () => {
           <MenuMore>{createMoreMenu(invisible)}</MenuMore>
         )}
       </Menu>
-    </HorizontalContainer>
+    </HorizontalContainerLarge>
   );
 };
 StoryMenuMultipleAuto.storyName = 'sub-menu-auto';
@@ -1555,6 +1560,8 @@ export const StoryMenuSubOverrides = () => {
           }}
           overrides={{
             ...menuItemOverrides,
+            minHeight: '56px',
+            list: {},
           }}
         >
           <MenuItem href={href}>Menu item 3.1</MenuItem>
@@ -1567,6 +1574,10 @@ export const StoryMenuSubOverrides = () => {
 StoryMenuSubOverrides.storyName = 'sub-menu-overrides';
 
 const routes = [
+  {
+    title: 'Home',
+    id: '/home',
+  },
   {
     title: 'About',
     id: '/about',
