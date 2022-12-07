@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 
-import {Select, SelectOption} from '..';
+import {Select, SelectOption, SelectButtonIcon} from '..';
 import {styled} from '../../utils/style';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
@@ -19,6 +19,8 @@ import {
   IconFilledCheckCircle,
   IconFilledAccountBalance,
   IconFilledClose,
+  IconFilledKeyboardArrowUp,
+  IconFilledKeyboardArrowDown,
 } from '../../icons';
 import {Modal, ModalProps} from '../../modal';
 import {Button} from '../../button/button';
@@ -1145,35 +1147,152 @@ export const StoryOutlineOverride = () => (
 );
 StoryOutlineOverride.storyName = 'Select Outline override';
 
-export const StorySelectWithOverflowScroll = () => (
-  <div style={{height: '90vh', width: '100%', overflow: 'hidden'}}>
-    <div
-      style={{
-        height: '90vh',
-        position: 'relative',
-        overflow: 'auto',
-        border: '3px solid blue',
-        boxSizing: 'border-box',
-      }}
-    >
+const CustomIcon = ({isOpen, ...props}: SelectButtonIcon) =>
+  isOpen ? (
+    <IconFilledKeyboardArrowUp {...props} />
+  ) : (
+    <IconFilledKeyboardArrowDown {...props} />
+  );
+
+export const StorySelectIconOverrides = () => (
+  <>
+    <StorybookHeading>Select Icon Override</StorybookHeading>
+    <Container>
+      <Stack flow="vertical-left" spaceInline="space040">
+        <Block>
+          <Label htmlFor="id-icon-overrides-1" size="small">
+            Custom icon override
+          </Label>
+          <Select
+            id="id-icon-overrides-1"
+            size="small"
+            overrides={{
+              button: {
+                indicatorIcon: CustomIcon,
+              },
+            }}
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+        </Block>
+        <Block>
+          <Label htmlFor="id-icon-overrides-2" size="small">
+            Inline icon override
+          </Label>
+          <Select
+            id="id-icon-overrides-2"
+            size="small"
+            overrides={{
+              button: {
+                indicatorIcon: {
+                  size: 'iconSize010',
+                  stylePreset: 'inkPositive',
+                },
+              },
+            }}
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+        </Block>
+      </Stack>
+    </Container>
+  </>
+);
+StorySelectIconOverrides.storyName = 'Select Icon overrides';
+
+/**
+
+PLEASE IGNORE THIS STORY
+ITS JUST FOR TESTING AND WILL BE REMOVED BEFORE MERGE
+ */
+
+function useLocalStorage(key: string, initialValue: string) {
+  // State to store our value
+  // Pass initial state function to useState so logic is only executed once
+  const [storedValue, setStoredValue] = React.useState(() => {
+    if (typeof window === 'undefined') {
+      return initialValue;
+    }
+    try {
+      // Get from local storage by key
+      const item = window.localStorage.getItem(key);
+      // Parse stored json or if none return initialValue
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      // If error also return initialValue
+      console.log(error);
+      return initialValue;
+    }
+  });
+  // Return a wrapped version of useState's setter function that ...
+  // ... persists the new value to localStorage.
+  // @ts-ignore
+  const setValue = value => {
+    try {
+      // Allow value to be a function so we have same API as useState
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
+      // Save state
+      setStoredValue(valueToStore);
+      // Save to local storage
+      if (typeof window !== 'undefined') {
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      }
+    } catch (error) {
+      // A more advanced implementation would handle the error case
+      console.log(error);
+    }
+  };
+  return [storedValue, setValue];
+}
+
+const temp = Array.from(Array(200).keys()).map(v => String(v));
+
+export const StorySelectWithOverflowScroll = () => {
+  const [selected, setSelected] = useLocalStorage('zone', '');
+
+  return (
+    <div style={{height: '90vh', width: '100%', overflow: 'hidden'}}>
       <div
         style={{
-          padding: '75vh 0',
+          height: '90vh',
           position: 'relative',
-          border: '3px solid red',
+          overflow: 'auto',
+          border: '3px solid blue',
           boxSizing: 'border-box',
         }}
       >
-        <Select>
-          <SelectOption value="A"> Pikachu </SelectOption>
-          <SelectOption value="B"> Charmander </SelectOption>
-          <SelectOption value="C"> Pikachu </SelectOption>
-          <SelectOption value="D"> Pikachu </SelectOption>
-        </Select>
+        <div
+          style={{
+            padding: '75vh 0',
+            position: 'relative',
+            border: '3px solid red',
+            boxSizing: 'border-box',
+          }}
+        >
+          <Select
+            onChange={e => setSelected(e.target.value)}
+            virtualized={10000}
+          >
+            {temp.map(v => (
+              <SelectOption key={v} value={v} selected={v === selected}>
+                {v}
+              </SelectOption>
+            ))}
+          </Select>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default {
   title: 'Components/select',
