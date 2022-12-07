@@ -76,6 +76,7 @@ export const StoryButtonPrimary = () => {
               </StorybookCase>
               <StorybookCase title="Loading">
                 <Button
+                  aria-label="Loading"
                   overrides={{
                     stylePreset,
                     loadingIndicator: {
@@ -131,6 +132,7 @@ export const StoryButtonSecondary = () => {
               </StorybookCase>
               <StorybookCase title="Loading">
                 <Button
+                  aria-label="Loading"
                   overrides={{
                     stylePreset,
                     loadingIndicator: {
@@ -186,6 +188,7 @@ export const StoryButtonNegative = () => {
               </StorybookCase>
               <StorybookCase title="Loading">
                 <Button
+                  aria-label="Loading"
                   overrides={{
                     stylePreset,
                     loadingIndicator: {
@@ -241,6 +244,7 @@ export const StoryButtonPositive = () => {
               </StorybookCase>
               <StorybookCase title="Loading">
                 <Button
+                  aria-label="Loading"
                   overrides={{
                     stylePreset,
                     loadingIndicator: {
@@ -304,6 +308,7 @@ export const StoryButtonInverse = () => {
                 </StorybookCase>
                 <StorybookCase inverse title="Loading">
                   <Button
+                    aria-label="Loading"
                     overrides={{
                       stylePreset,
                       loadingIndicator: {
