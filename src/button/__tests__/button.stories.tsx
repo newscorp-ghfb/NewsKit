@@ -437,7 +437,7 @@ StoryButtonTransitions.storyName = 'Transitions';
 
 export const StoryButtonStylingOverrides = () => (
   <StorybookPage>
-    <StorybookCase title="Style">
+    <StorybookCase>
       <Button overrides={{stylePreset: 'stylingOverrides'}}>Button</Button>
     </StorybookCase>
   </StorybookPage>
