@@ -1,0 +1,393 @@
+{
+  "editorialDisplay010": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize140}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialDisplay020": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize150}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialDisplay030": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize160}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialHeadline010": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize040}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialHeadline020": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize050}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialHeadline030": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize070}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialHeadline040": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize080}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialHeadline050": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize090}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialHeadline060": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize100}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialHeadline070": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize110}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialHeadline080": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize130}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialSubheadline010": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize035}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialSubheadline020": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize050}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialSubheadline030": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize060}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialSubheadline040": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize080}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialSubheadline050": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize090}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "semi-condensed"
+  },
+  "editorialParagraph010": {
+    "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize020}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "editorialParagraph020": {
+    "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize030}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "editorialParagraph030": {
+    "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize040}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "editorialQuote010": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize070}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "editorialQuote020": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight040}}",
+    "fontSize": "{{fonts.fontSize090}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "editorialCaption010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight005}}",
+    "fontSize": "{{fonts.fontSize010}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "editorialLabel010": {
+    "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize015}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing060}}",
+    "fontStretch": "semi-condensed",
+    "text-transform": "uppercase"
+
+  },
+  "editorialLabel020": {
+    "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize040}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing060}}",
+    "fontStretch": "semi-condensed",
+    "text-transform": "uppercase"
+
+  },
+  "editorialLabel030": {
+    "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize080}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing060}}",
+    "fontStretch": "semi-condensed",
+    "text-transform": "uppercase"
+
+  },
+  "utilityHeading010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize030}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityHeading020": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize040}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityHeading030": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize050}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityHeading040": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize070}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityHeading050": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize080}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilitySubheading010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize020}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "undefined"
+  },
+  "utilitySubheading020": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize030}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "undefined"
+  },
+  "utilitySubheading030": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize040}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "undefined"
+  },
+  "utilitySubheading040": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize050}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "undefined"
+  },
+  "utilitySubheading050": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize070}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "undefined"
+  },
+  "utilityBody010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight005}}",
+    "fontSize": "{{fonts.fontSize020}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityBody020": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight005}}",
+    "fontSize": "{{fonts.fontSize030}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityBody030": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight005}}",
+    "fontSize": "{{fonts.fontSize040}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityLabel010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize010}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityLabel015": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight005}}",
+    "fontSize": "{{fonts.fontSize010}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityLabel020": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize020}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityLabel030": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize030}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityButton010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize010}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityButton015": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight005}}",
+    "fontSize": "{{fonts.fontSize010}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityButton020": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize020}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityButton030": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.fontSize030}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityMeta010": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight005}}",
+    "fontSize": "{{fonts.fontSize010}}",
+    "lineHeight": "{{fonts.fontLineHeight020}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal"
+  },
+  "utilityMeta020": {
+    "fontFamily": "{{fonts.fontFamily020.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize020}}",
+    "lineHeight": "{{fonts.fontLineHeight040}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing030}}",
+    "fontStretch": "normal",
+    "fontStyle": "italic"
+  }
+}
