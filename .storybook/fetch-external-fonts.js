@@ -6,7 +6,9 @@ const fetch = require("node-fetch");
 
 const fontCdnTheSun = "https://www.thesun.co.uk/assets/fonts/the-sun"
 const fontCdnTheTimes = "https://www.thetimes.co.uk/d/fonts";
+const fontCdnWSJ = "https://www.wsj.com/fonts";
 const fontDir = `${process.cwd()}/.storybook/private-fonts`;
+
 
 const fonts = [
   {
@@ -15,7 +17,6 @@ const fonts = [
     fontFamily: "TheSun-HeavyNarrow",
     sources: [
       `${fontCdnTheSun}/TheSun-HeavyNarrow.woff2`,
-      `${fontCdnTheSun}/TheSun-HeavyNarrow.woff`,
       `${fontCdnTheSun}/TheSun-HeavyNarrow.ttf`
     ]
   },
@@ -25,7 +26,6 @@ const fonts = [
     fontFamily: "TheSun-Bold",
     sources: [
       `${fontCdnTheSun}/TheSun-Bold.woff2`,
-      `${fontCdnTheSun}/TheSun-Bold.woff`,
       `${fontCdnTheSun}/TheSun-Bold.ttf`
     ]
   },
@@ -35,7 +35,6 @@ const fonts = [
     fontFamily: "TheSun-Medium",
     sources: [
       `${fontCdnTheSun}/TheSun-Medium.woff2`,
-      `${fontCdnTheSun}/TheSun-Medium.woff`,
       `${fontCdnTheSun}/TheSun-Medium.ttf`
     ]
   },
@@ -45,7 +44,6 @@ const fonts = [
     fontFamily: "TheSun-Regular",
     sources: [
       `${fontCdnTheSun}/TheSun-Regular.woff2`,
-      `${fontCdnTheSun}/TheSun-Regular.woff`,
       `${fontCdnTheSun}/TheSun-Regular.ttf`
     ]
   },
@@ -55,7 +53,6 @@ const fonts = [
     fontFamily: "TimesModern-Bold",
     sources: [
       `${fontCdnTheTimes}/TimesModern/TimesModern-Bold-62eb027e67.woff2`,
-      `${fontCdnTheTimes}/TimesModern/TimesModern-Bold-828aec4ccd.woff`,
       `${fontCdnTheTimes}/TimesModern/TimesModern-Bold-e960fb2b2c.ttf`
     ]
   },
@@ -65,7 +62,6 @@ const fonts = [
     fontFamily: "TimesModern-Regular",
     sources: [
       `${fontCdnTheTimes}/TimesModern/TimesModern-Regular-f3419df85d.woff2`,
-      `${fontCdnTheTimes}/TimesModern/TimesModern-Regular-39c619f4ef.woff`,
       `${fontCdnTheTimes}/TimesModern/TimesModern-Regular-e47b8c277b.ttf`
     ]
   },
@@ -75,7 +71,6 @@ const fonts = [
     fontFamily: "TimesDigitalW04-Regular",
     sources: [
       `${fontCdnTheTimes}/TimesDigital/TimesDigitalW04-Regular-dca82eac02.woff2`,
-      `${fontCdnTheTimes}/TimesDigital/TimesDigitalW04-Regular-c93f4e13dd.woff`,
       `${fontCdnTheTimes}/TimesDigital/TimesDigitalW04-Regular-bf4b850ffb.ttf`
     ]
   },
@@ -85,8 +80,183 @@ const fonts = [
     fontFamily: "GillSansMTStd-Medium",
     sources: [
       `${fontCdnTheTimes}/GillSans/GillSansMTStd-Medium-ff809aff43.woff2`,
-      `${fontCdnTheTimes}/GillSans/GillSansMTStd-Medium-f147e4bbf2.woff`,
       `${fontCdnTheTimes}/GillSans/GillSansMTStd-Medium-45ad758029.ttf`
+    ]
+  },
+  {
+    fontName: "Retina-Book",
+    fileName: "Retina-Book",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/Retina-Book.woff2`,
+    ]
+  },
+  {
+    fontName: "Retina-BookItalic",
+    fileName: "Retina-BookItalic",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/Retina-BookItalic.woff2`,
+    ]
+  },
+  {
+    fontName: "Retina-Light",
+    fileName: "Retina-Light",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/Retina-Light.woff2`,
+    ]
+  },
+  {
+    fontName: "Retina-LightItalic",
+    fileName: "Retina-LightItalic",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/Retina-LightItalic.woff2`,
+    ]
+  },
+  {
+    fontName: "Retina-Medium",
+    fileName: "Retina-Medium",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/Retina-Medium.woff2`,
+    ]
+  },
+  {
+    fontName: "Retina-MediumItalic",
+    fileName: "Retina-MediumItalic",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/Retina-MediumItalic.woff2`,
+    ]
+  },
+  {
+    fontName: "RetinaNarr-Light",
+    fileName: "RetinaNarr-Light",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/RetinaNarr-Light.woff2`,
+    ]
+  },
+  {
+    fontName: "RetinaNarr-LightItalic",
+    fileName: "RetinaNarr-LightItalic",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/RetinaNarr-LightItalic.woff2`,
+    ]
+  },
+  {
+    fontName: "RetinaNarr-Book",
+    fileName: "RetinaNarr-Book",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/RetinaNarr-Book.woff2`,
+    ]
+  },
+  {
+    fontName: "RetinaNarr-BookItalic",
+    fileName: "RetinaNarr-BookItalic",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/RetinaNarr-BookItalic.woff2`,
+    ]
+  },
+  {
+    fontName: "RetinaNarr-Medium",
+    fileName: "RetinaNarr-Medium",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/RetinaNarr-Medium.woff2`,
+    ]
+  },
+  {
+    fontName: "RetinaNarr-MediumItalic",
+    fileName: "RetinaNarr-MediumItalic",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/RetinaNarr-MediumItalic.woff2`,
+    ]
+  },
+  {
+    fontName: "RetinaNarr-Bold",
+    fileName: "RetinaNarr-Bold",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/RetinaNarr-Bold.woff2`,
+    ]
+  },
+  {
+    fontName: "RetinaNarr-BoldItalic",
+    fileName: "RetinaNarr-BoldItalic",
+    fontFamily: "Retina",
+    sources: [
+      `${fontCdnWSJ}/woffs/retina/RetinaNarr-BoldItalic.woff2`,
+    ]
+  },
+  {
+    fontName: "Escrow+Display+Condensed+Bold",
+    fileName: "Escrow+Display+Condensed+Bold",
+    fontFamily: "Escrow Condensed",
+    sources: [
+      `${fontCdnWSJ}/escrow/Escrow+Display+Condensed+Bold.woff2`,
+    ]
+  },
+  {
+    fontName: "Escrow+Display+Condensed+Bold+Italic",
+    fileName: "Escrow+Display+Condensed+Bold+Italic",
+    fontFamily: "Escrow Condensed",
+    sources: [
+      `${fontCdnWSJ}/escrow/Escrow+Display+Condensed+Bold+Italic.woff2`,
+    ]
+  },
+  {
+    fontName: "Escrow+Display+Condensed+Roman",
+    fileName: "Escrow+Display+Condensed+Roman",
+    fontFamily: "Escrow Condensed",
+    sources: [
+      `${fontCdnWSJ}/escrow/Escrow+Display+Condensed+Roman.woff2`,
+    ]
+  },
+  {
+    fontName: "Escrow+Display+Condensed+Italic",
+    fileName: "Escrow+Display+Condensed+Italic",
+    fontFamily: "Escrow Condensed",
+    sources: [
+      `${fontCdnWSJ}/escrow/Escrow+Display+Condensed+Italic.woff2`,
+    ]
+  },
+  {
+    fontName: "Exchange-Book",
+    fileName: "Exchange-Book",
+    fontFamily: "Exchange",
+    sources: [
+      `${fontCdnWSJ}/exchange/Exchange-Book.woff2`,
+    ]
+  },
+  {
+    fontName: "Exchange-BookItalic",
+    fileName: "Exchange-BookItalic",
+    fontFamily: "Exchange",
+    sources: [
+      `${fontCdnWSJ}/exchange/Exchange-BookItalic.woff2`,
+    ]
+  },
+  {
+    fontName: "Exchange-Medium",
+    fileName: "Exchange-Medium",
+    fontFamily: "Exchange",
+    sources: [
+      `${fontCdnWSJ}/exchange/Exchange-Medium.woff2`,
+    ]
+  },
+  {
+    fontName: "Exchange-MediumItalic",
+    fileName: "Exchange-MediumItalic",
+    fontFamily: "Exchange",
+    sources: [
+      `${fontCdnWSJ}/exchange/Exchange-MediumItalic.woff2`,
     ]
   },
 ];

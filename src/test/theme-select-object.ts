@@ -10,6 +10,8 @@ import {virginTheme} from '../theme-checker/themes/virgin-theme/virgin-theme';
 import {sunTheme} from '../theme-checker/themes/sun-theme/sun-theme';
 import {storybookNewskitLightTheme} from '../theme-checker/themes/storybook-newskit-light/storybook-newskit-light-theme';
 import {storybookNewskitDarkTheme} from '../theme-checker/themes/storybook-newskit-dark/storybook-newskit-dark-theme';
+import {marketWatchTheme} from '../theme-checker/themes/market-watch-theme/market-watch-theme';
+import {wsjTheme} from '../theme-checker/themes/wsj-theme/wsj-theme';
 
 const STYLING_OVERRIDES = 'Styling overrides';
 const THEME_KEYS = {
@@ -21,6 +23,8 @@ const THEME_KEYS = {
   sun: '#eb1801',
   virgin: '#e10a0a',
   tnl: '#006699',
+  marketWatch: '#367F2E',
+  wsj: '#0274B6',
 };
 
 export const themeObject = {
@@ -32,6 +36,8 @@ export const themeObject = {
   [THEME_KEYS.sun]: sunTheme,
   [THEME_KEYS.virgin]: virginTheme,
   [THEME_KEYS.tnl]: tnlTheme,
+  [THEME_KEYS.marketWatch]: marketWatchTheme,
+  [THEME_KEYS.wsj]: wsjTheme,
 };
 
 const isLightTheme = (key: string) => key === THEME_KEYS.newskitLight;
