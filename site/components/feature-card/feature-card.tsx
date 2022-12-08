@@ -8,6 +8,7 @@ import {
   Button,
   useTheme,
   toNewsKitIcon,
+  LinkStandalone,
 } from 'newskit';
 import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
 import {getToken} from '../../../src/utils/get-token';
@@ -15,6 +16,7 @@ import {
   FeatureCardProps,
   OptionalLinkWrapperProps,
   OptionalButtonLinkWrapperProps,
+  ArrowLinkProps,
 } from './types';
 import {
   StyledCardHorizontalInset,
@@ -23,7 +25,6 @@ import {
   StyledFeatureCardVerticalMedia,
   StyledCardLink,
 } from './styled';
-import {LineTruncation} from '../line-truncation';
 import {Link} from '../link';
 
 const IconFilledChevronRight = toNewsKitIcon(FilledChevronRight);
@@ -68,6 +69,36 @@ const OptionalButtonLinkWrapper: React.FC<OptionalButtonLinkWrapperProps> = ({
   }
   return <>{children}</>;
 };
+
+const ArrowLink: React.FC<ArrowLinkProps> = ({
+  dataTestId = 'arrowLink',
+  href,
+  label,
+  icon,
+  overrides = {stylePreset: 'linkStandaloneInverse'},
+}) => (
+  <div data-testid={dataTestId}>
+    {href && (
+      <LinkStandalone href={href as string} overrides={overrides}>
+        <TextBlock typographyPreset="utilityButton020" as="div">
+          <Stack flow="horizontal-top" spaceInline="space020">
+            <span>{label}</span>
+            <span>
+              {icon || (
+                <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+              )}
+            </span>
+          </Stack>
+        </TextBlock>
+      </LinkStandalone>
+    )}
+    {!href && (
+      <TextBlock typographyPreset="utilityButton020" {...overrides} as="div">
+        {label}
+      </TextBlock>
+    )}
+  </div>
+);
 
 const FeatureCardHorizontal = React.forwardRef<
   HTMLDivElement,
@@ -151,23 +182,13 @@ const FeatureCardHorizontal = React.forwardRef<
             )}
             {buttonLabel && (
               <Block spaceStack="space020">
-                <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
-                  <Button
-                    size="small"
-                    overrides={{
-                      stylePreset: `${stylePrefix}Button`,
-                      typographyPreset: 'utilityButton010',
-                      ...buttonOverrides,
-                    }}
-                  >
-                    {buttonLabel}
-                    {buttonIcon || (
-                      <IconFilledChevronRight
-                        overrides={{size: 'iconSize020'}}
-                      />
-                    )}
-                  </Button>
-                </OptionalButtonLinkWrapper>
+                <ArrowLink
+                  dataTestId="arrowLinkSmall"
+                  href={buttonHref}
+                  label={buttonLabel}
+                  icon={buttonIcon}
+                  overrides={buttonOverrides}
+                />
               </Block>
             )}
           </StyledCardHorizontalInset>
@@ -212,28 +233,17 @@ const FeatureCardHorizontal = React.forwardRef<
                     stylePreset="inkWhiteSubtle"
                     typographyPreset={descriptionTypographyPreset}
                   >
-                    <LineTruncation lines="2">{description}</LineTruncation>
+                    {description}
                   </TextBlock>
                 </Block>
               )}
               {buttonLabel && (
-                <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
-                  <Button
-                    size="small"
-                    overrides={{
-                      stylePreset: `${stylePrefix}Button`,
-                      typographyPreset: 'utilityButton010',
-                      ...buttonOverrides,
-                    }}
-                  >
-                    {buttonLabel}
-                    {buttonIcon || (
-                      <IconFilledChevronRight
-                        overrides={{size: 'iconSize020'}}
-                      />
-                    )}
-                  </Button>
-                </OptionalButtonLinkWrapper>
+                <ArrowLink
+                  dataTestId="arrowLinkLarge"
+                  href={buttonHref}
+                  label={buttonLabel}
+                  icon={buttonIcon}
+                />
               )}
             </Stack>
           </StyledCardHorizontalInset>

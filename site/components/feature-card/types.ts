@@ -20,6 +20,14 @@ export interface FeatureCardProps
   };
 }
 
+export interface ArrowLinkProps {
+  dataTestId?: string;
+  icon?: React.ReactNode;
+  href?: string;
+  label?: string;
+  overrides?: ButtonProps['overrides'];
+}
+
 export type OptionalLinkWrapperProps = Pick<CardProps, 'href' | 'children'>;
 
 export type OptionalButtonLinkWrapperProps = Pick<
