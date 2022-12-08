@@ -1333,11 +1333,11 @@ export const SelectVirtualizationNotFixedSize = () => {
     <>
       <Container>
         <Block spaceStack="space050">
-          <Label htmlFor="simple-data" size="medium">
-            Simple data
+          <Label htmlFor="simple-virt" size="medium">
+            Countries
           </Label>
           <Select
-            aria-describedby="simple-data-at"
+            aria-describedby="simple-virt-at"
             id="simple-data"
             size="medium"
             useModal={{xs: true}}
@@ -1346,9 +1346,6 @@ export const SelectVirtualizationNotFixedSize = () => {
           >
             {selectOptionsSimple}
           </Select>
-          <AssistiveText id="simple-data-at" size="small">
-            Assistive Text
-          </AssistiveText>
         </Block>
       </Container>
     </>
