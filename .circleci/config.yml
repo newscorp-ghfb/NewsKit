@@ -639,7 +639,9 @@ jobs:
           name: 'Check if updates required'
           command: |
             {
-                node scripts/check-baseline-updates.js $CIRCLE_SHA1 "comps" &&
+                export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName') &&
+                echo "Found branch name: ${PR_BRANCH_NAME}" &&
+                node scripts/check-baseline-updates.js $PR_BRANCH_NAME "comps" &&
                 echo "No baseline updates required; finishing job." &&
                 circleci-agent step halt
             } || {
