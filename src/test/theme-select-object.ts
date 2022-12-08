@@ -3,13 +3,12 @@ import {
   UncompiledTheme,
   createTheme,
   CreateThemeArgs,
-  newskitDarkTheme,
 } from '..';
 import {tnlTheme} from '../theme-checker/themes/tnl-theme/tnl-theme';
 import {virginTheme} from '../theme-checker/themes/virgin-theme/virgin-theme';
 import {sunTheme} from '../theme-checker/themes/sun-theme/sun-theme';
 import {storybookNewskitLightTheme} from '../theme-checker/themes/storybook-newskit-light/storybook-newskit-light-theme';
-import {storybookNewskitDarkTheme} from '../theme-checker/themes/storybook-newskit-dark/storybook-newskit-dark-theme';
+import {nkDarkThemeFromPublisher} from '../theme-checker/themes/storybook-newskit-dark/storybook-newskit-dark-theme';
 
 const STYLING_OVERRIDES = 'Styling overrides';
 const THEME_KEYS = {
@@ -26,9 +25,9 @@ const THEME_KEYS = {
 export const themeObject = {
   [THEME_KEYS.transparent]: newskitLightTheme,
   [THEME_KEYS.storybookLight]: storybookNewskitLightTheme,
-  [THEME_KEYS.storybookDark]: storybookNewskitDarkTheme,
+  [THEME_KEYS.storybookDark]: nkDarkThemeFromPublisher,
   [THEME_KEYS.newskitLight]: newskitLightTheme,
-  [THEME_KEYS.newskitDark]: newskitDarkTheme,
+  [THEME_KEYS.newskitDark]: nkDarkThemeFromPublisher,
   [THEME_KEYS.sun]: sunTheme,
   [THEME_KEYS.virgin]: virginTheme,
   [THEME_KEYS.tnl]: tnlTheme,

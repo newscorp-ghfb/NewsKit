@@ -2329,6 +2329,11 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@newskit-themes/newskit@0.0.0-e19a973a3":
+  version "0.0.0-e19a973a3"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/newskit/-/newskit-0.0.0-e19a973a3.tgz#b32a838d1b96a04bed3e7cae47a331c86a93a475"
+  integrity sha512-hQzdFHZMywcNru2zrx7sTlR5AXzl/1SjnDXpu+0zwxXutciDcaOYkWRfMDRZ8ghLUK1goPn5QHyEQ7fFzdc0QA==
+
 "@next/env@12.1.5":
   version "12.1.5"
   resolved "https://registry.npmjs.org/@next/env/-/env-12.1.5.tgz"
