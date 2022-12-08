@@ -41,7 +41,7 @@ export const StoryAssistiveTextDefault = () => (
 );
 StoryAssistiveTextDefault.storyName = 'Default';
 
-export const StoryAssistiveTextSizes = () => (
+export const StoryAssistiveTextSize = () => (
   <StorybookPage>
     <StorybookCase title="Small">
       <AssistiveText size="small">
@@ -60,7 +60,7 @@ export const StoryAssistiveTextSizes = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryAssistiveTextSizes.storyName = 'Sizes';
+StoryAssistiveTextSize.storyName = 'Size';
 
 export const StoryAssistiveTextStates = () => (
   <StorybookPage>
