@@ -1338,7 +1338,7 @@ export const SelectVirtualizationNotFixedSize = () => {
           </Label>
           <Select
             aria-describedby="simple-virt-at"
-            id="simple-data"
+            id="simple-virt"
             size="medium"
             useModal={{xs: true}}
             overrides={{button: {maxWidth: '150px'}}}
