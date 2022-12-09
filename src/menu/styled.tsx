@@ -174,14 +174,4 @@ export const StyledUl = styled.ul<
           left: '0',
           width: '100%',
         }};
-
-  li:first-of-type {
-    ${({vertical}) =>
-      getResponsiveSpace(
-        space => (vertical ? {marginTop: space} : {}),
-        `menu`,
-        '',
-        'spaceInline',
-      )}
-  }
 `;
