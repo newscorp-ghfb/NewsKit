@@ -86,14 +86,9 @@ StoryAssistiveTextStates.storyName = 'States';
 export const StoryAssistiveTextVariations = () => (
   <StorybookPage columns="1fr">
     <GridLayout
-      columnGap={{
-        xs: 'space020',
-        md: 'space100',
-      }}
+      columns={{xs: 'min-content', md: 'repeat(3, fit-content(100%))'}}
+      columnGap={{xs: 'space020', md: 'space100'}}
       rowGap="space060"
-      columns={{
-        md: '150px 120px 160px',
-      }}
     >
       <StorybookCase title="Start">
         <AssistiveText startEnhancer={ENHANCER}>Assistive Text</AssistiveText>
