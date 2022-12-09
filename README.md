@@ -55,7 +55,7 @@ We use the following libraries for our automated tests:
 
 For detailed information on how to run the automated tests, please visit [Testing](./docs/testing.md)
 
-## 👉 What’s next
+## 👉 What’s next?
 
 * To start engineering with NewsKit, follow the steps in the [quickstart guide](https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2354218083).
 * Have a question? [Contact the NewsKit team via the contact form](https://newskit.co.uk/about/contact-us/).
