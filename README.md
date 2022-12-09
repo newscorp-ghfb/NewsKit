@@ -67,4 +67,3 @@ For detailed information on how to run the automated tests, please visit [Testin
 * [Github repository](https://github.com/newscorp-ghfb/newskit)
 * [Medium](https://medium.com/newskit-design-system)
 * [Storybook](https://storybook.newskit.co.uk/)
-
