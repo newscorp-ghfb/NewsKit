@@ -161,7 +161,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction: 'The character count contains one required element.',
-      media: getIllustrationComponent('components/character-count/anatomy.svg'),
+      media: getIllustrationComponent('components/character-count/anatomy'),
       rows: [
         {
           name: 'Character count',
