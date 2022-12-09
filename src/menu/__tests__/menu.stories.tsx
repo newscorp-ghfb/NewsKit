@@ -1798,6 +1798,46 @@ export const StoryMenuFullDemo = () => {
 };
 StoryMenuFullDemo.storyName = 'sub-menu-full-demo';
 
+const SubMenuNestedUncontrolledContainer = styled.div`
+  min-height: 400px;
+`;
+export const StorySubMenuNestedUncontrolled = () => (
+  <SubMenuNestedUncontrolledContainer>
+    <StorybookSubHeading>Sub menu - horizontal</StorybookSubHeading>
+    <Menu aria-label="menu-horizontal">
+      <MenuSub title="1" id="nu-1">
+        <MenuItem href={href} id="nu-1.1">
+          1.1
+        </MenuItem>
+        <MenuItem href={href} id="nu-1.2">
+          1.2
+        </MenuItem>
+        <MenuSub title="1.3" id="nu-1.3">
+          <MenuItem href={href} id="nu-1.3.1">
+            1.3.1
+          </MenuItem>
+          <MenuSub title="1.3.2" id="nu-1.3.2">
+            <MenuItem href={href} id="nu-1.3.2.1">
+              1.3.2.1
+            </MenuItem>
+          </MenuSub>
+        </MenuSub>
+        <MenuSub title="1.4" id="nu-1.4">
+          <MenuItem href={href} id="nu-1.4.1">
+            1.4.1
+          </MenuItem>
+          <MenuSub title="1.4.2" id="nu-1.4.2">
+            <MenuItem href={href} id="nu-1.4.2.1">
+              1.4.2.1
+            </MenuItem>
+          </MenuSub>
+        </MenuSub>
+      </MenuSub>
+    </Menu>
+  </SubMenuNestedUncontrolledContainer>
+);
+StorySubMenuNestedUncontrolled.storyName = 'sub-menu-nested-uncontrolled';
+
 export default {
   title: 'Components/menu',
   component: () => 'None',

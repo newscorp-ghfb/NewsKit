@@ -5,6 +5,7 @@ import {StyledMenu} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
+import {getParentId} from './utils';
 
 const getAlign = (align: MenuItemAlign | undefined, vertical: boolean) => {
   if (!align) {
@@ -27,13 +28,15 @@ const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
   ) => {
     const align = getAlign(passedAlign, vertical);
 
-    const [callbacks, setCallbacks] = useState<OnExpandedChangeFn[]>([]);
-    const registerExpandedStateChangeCallback = React.useCallback(
-      (fn: OnExpandedChangeFn) => setCallbacks(prevState => [...prevState, fn]),
-      [setCallbacks],
+    const [expandedMenuSubId, setExpandedMenuSubId] = useState<string | null>(
+      null,
     );
-    const updateExpandedState: OnExpandedChangeFn = (position, isExpanded) => {
-      callbacks.forEach(fn => fn(position, isExpanded));
+    const updateExpandedMenuSubId: OnExpandedChangeFn = (id, isExpanded) => {
+      if (isExpanded) {
+        setExpandedMenuSubId(id);
+      } else {
+        setExpandedMenuSubId(getParentId(id));
+      }
     };
 
     return (
@@ -43,8 +46,8 @@ const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
           size,
           align,
           overrides,
-          updateExpandedState,
-          registerExpandedStateChangeCallback,
+          updateExpandedMenuSubId,
+          expandedMenuSubId,
         }}
       >
         <StyledMenu

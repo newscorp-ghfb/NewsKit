@@ -1,9 +1,8 @@
 import React, {useEffect, useId} from 'react';
 import {
+  MenuSubContextProvider,
   useMenuContext,
   useMenuSubContext,
-  MenuSubContextProvider,
-  OnExpandedChangeFn,
 } from './context';
 import {MenuSubIconProps, MenuSubProps} from './types';
 import {StyledButton, StyledMenuItem, StyledUl} from './styled';
@@ -14,6 +13,7 @@ import {useControlled} from '../utils/hooks';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {IconFilledExpandLess, IconFilledExpandMore} from '../icons';
 import {getComponentOverrides} from '../utils/overrides';
+import {buildNestedId, isDescendant} from './utils';
 
 const DefaultIcon = ({expanded, overrides}: MenuSubIconProps) =>
   expanded ? (
@@ -31,23 +31,6 @@ const DefaultIcon = ({expanded, overrides}: MenuSubIconProps) =>
       }}
     />
   );
-
-const isMatch = (
-  position: string[],
-  matchPosition: string[],
-): boolean =>
-  JSON.stringify(matchPosition) === JSON.stringify(position);
-
-const isDescendant = (
-  position: string[],
-  descendantPosition: string[],
-): boolean =>
-  JSON.stringify(descendantPosition.slice(0, position.length)) !==
-  JSON.stringify(position);
-
-const isAncestor = (position: string[], ancestorPosition: string[]): boolean =>
-  JSON.stringify(position.slice(0, ancestorPosition.length)) ===
-  JSON.stringify(ancestorPosition);
 
 export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
   (
@@ -69,37 +52,20 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
     });
 
     const id = useId();
-    const {ancestry} = useMenuSubContext();
-    const position = [...ancestry, id];
-    const {
-      updateExpandedState,
-      registerExpandedStateChangeCallback,
-    } = useMenuContext();
+    const {parentId} = useMenuSubContext();
+    const nestedId = buildNestedId(id, parentId);
+    const {updateExpandedMenuSubId, expandedMenuSubId} = useMenuContext();
 
-    // Check if this MenuSub needs to be expanded / collapsed whenever a MenuSub elsewhere in the tree is expanded / collapsed.
-    const onExpandedStateChange = React.useCallback<OnExpandedChangeFn>(
-      (smPosition, smIsExpanded) => {
-        if (isMatch(position, smPosition)) {
-          return;
-        }
-        if (smIsExpanded && isDescendant(position, smPosition)) {
-          setIsExpanded(false);
-        } else if (!smIsExpanded && isAncestor(position, smPosition)) {
-          setIsExpanded(false);
-        }
-      },
-      [JSON.stringify(position), setIsExpanded],
-    );
-
-    // Register the callback above to be triggered whenever state changes elsewhere in the tree.
     useEffect(() => {
-      registerExpandedStateChangeCallback(onExpandedStateChange);
-    }, [onExpandedStateChange, registerExpandedStateChangeCallback]);
-
-    // Notify up the tree whenever this MenuSub is expanded / collapsed.
-    useEffect(() => {
-      updateExpandedState(position, !!isExpanded);
-    }, [JSON.stringify(position), !!isExpanded]);
+      if (
+        expandedMenuSubId === nestedId ||
+        (expandedMenuSubId && isDescendant(nestedId, expandedMenuSubId))
+      ) {
+        setIsExpanded(true);
+      } else {
+        setIsExpanded(false);
+      }
+    }, [nestedId, expandedMenuSubId, setIsExpanded]);
 
     const [IndicatorIcon, indicatorIconProps] = getComponentOverrides(
       overrides?.indicatorIcon,
@@ -110,8 +76,8 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
     );
 
     const handleClick = React.useCallback(() => {
-      setIsExpanded(!isExpanded);
-    }, [isExpanded, setIsExpanded]);
+      updateExpandedMenuSubId(nestedId, !isExpanded);
+    }, [isExpanded, nestedId, updateExpandedMenuSubId]);
 
     const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
 
@@ -131,7 +97,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
     };
 
     return (
-      <MenuSubContextProvider value={{ancestry: [...position]}}>
+      <MenuSubContextProvider value={{parentId: nestedId}}>
         <StyledMenuItem
           className="nk-menu-item"
           vertical={vertical}

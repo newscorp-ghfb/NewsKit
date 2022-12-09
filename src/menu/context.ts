@@ -2,20 +2,20 @@ import {createContext, useContext} from 'react';
 import {MenuProps} from './types';
 
 export type OnExpandedChangeFn = (
-  position: string[],
+  nestedId: string,
   isExpanded: boolean,
 ) => void;
 
 export const MenuContext = createContext<
   Pick<MenuProps, 'vertical' | 'size' | 'align' | 'overrides'> & {
-    // MenuSub components can call this function to inform the parent menu that they have been expanded / collapsed
-    updateExpandedState: OnExpandedChangeFn;
-    // MenuSub components can use this to register callbacks to be called when any SubMenu in the tree is expanded / collapsed
-    registerExpandedStateChangeCallback: (fn: OnExpandedChangeFn) => void;
+    // MenuSub components can call this function when they are clicked
+    updateExpandedMenuSubId: OnExpandedChangeFn;
+    // MenuSub components access this state to know if they are expanded / collapsed
+    expandedMenuSubId: string | null;
   }
 >({
-  updateExpandedState: () => {},
-  registerExpandedStateChangeCallback: () => {},
+  updateExpandedMenuSubId: () => {},
+  expandedMenuSubId: null,
 });
 export const MenuContextProvider = MenuContext.Provider;
 
@@ -36,9 +36,9 @@ export const useMenuContext = () => {
   return context;
 };
 
-export const MenuSubContext = createContext<{ancestry: string[]}>({
+export const MenuSubContext = createContext<{parentId: string | null}>({
   // This is an array of MenuSub ids that is passed down the tree.
-  ancestry: [],
+  parentId: null,
 });
 export const MenuSubContextProvider = MenuSubContext.Provider;
 
