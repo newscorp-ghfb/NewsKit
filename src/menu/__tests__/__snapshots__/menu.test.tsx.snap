@@ -10493,6 +10493,10 @@ exports[`MenuSub renders expanded when vertical 1`] = `
   background-color: #F1F1F1;
 }
 
+.emotion-5 li:first-of-type {
+  margin-top: 8px;
+}
+
 .emotion-7 {
   margin: 0;
   padding: 0;
