@@ -64,7 +64,7 @@ describe('SvgPreviewer', () => {
 
     expect(FileSaver.saveAs).toHaveBeenCalledWith(
       {content: [fileSvgMock], options: {type: 'text/plain;charset=utf-8;'}},
-      'card-no-crop.tsx',
+      'card-no-crop.svg',
     );
   });
 
