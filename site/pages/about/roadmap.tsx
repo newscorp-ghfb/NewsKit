@@ -5,8 +5,8 @@ import {
   InlineMessage,
 } from 'newskit';
 import ReactMarkdown, {ReactMarkdownOptions} from 'react-markdown';
-import {getSheets, ContentProps, CMSDataProps} from '../../utils/google-sheet';
-import {getValueFromCMS, formatSheetData} from '../../utils/google-sheet/utils';
+import {getSheets} from '../../utils/google-sheet';
+import {formatSheetData} from '../../utils/google-sheet/utils';
 import {AboutPageTemplate} from '../../templates/about-page-template';
 import {LayoutProps} from '../../components/layout';
 import {
@@ -27,9 +27,9 @@ interface RoadmapContent {
   comingup_description: string;
   future_headline: string;
   future_description: string;
-  [current_li_keys: `current_li_${string}`]: string;
-  [comingup_li_keys: `comingup_li_${string}`]: string;
-  [future_li_keys: `future_li_${string}`]: string;
+  [current_li_keys: `current_li${string}`]: string;
+  [comingup_li_keys: `comingup_li${string}`]: string;
+  [future_li_keys: `future_li${string}`]: string;
 }
 
 const roadmapFallbackContent: RoadmapContent = {
@@ -68,7 +68,9 @@ const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
   /* eslint-enable @typescript-eslint/no-shadow */
 );
 
-const getCMSList = (content: CMSDataProps, listKey: string) =>
+// TODO: Types for keyof starting with...
+
+const getCMSList = (content: RoadmapContent, listKey: keyof RoadmapContent) =>
   Object.entries(content)
     .filter(entry => entry[0].startsWith(listKey))
     .map(entry => <FormatMarkdown>{entry[1]}</FormatMarkdown>);
@@ -76,14 +78,17 @@ const getCMSList = (content: CMSDataProps, listKey: string) =>
 const Roadmap = ({
   content,
   ...layoutProps
-}: LayoutProps & ContentProps & CMSDataProps) => {
-  const pageName = getValueFromCMS(content, 'intro_name');
-  const pageDescription = getValueFromCMS(content, 'intro_description');
+}: LayoutProps & {content: RoadmapContent}) => {
+  const pageName = content.intro_name; // getValueFromCMS(content, 'intro_name');
+  const pageDescription = content.intro_description;
 
-  const introSecondary =
-    content.intro_secondary && getValueFromCMS(content, 'intro_secondary');
+  const introSecondary = content.intro_secondary;
 
-  if (Object.entries(content).length) {
+  const currentList = getCMSList(content, 'current_li');
+  const comingupList = getCMSList(content, 'comingup_li');
+  const futureList = getCMSList(content, 'future_li');
+
+  if (currentList && comingupList && futureList) {
     return (
       <AboutPageTemplate
         headTags={{
@@ -102,7 +107,7 @@ const Roadmap = ({
           name: pageName,
           introduction: pageDescription,
           hero: {
-            illustration: getValueFromCMS(content, 'intro_hero_illustration'),
+            illustration: content.intro_hero_illustration,
             illustrationProps: {viewBox: '0 0 1344 759'},
           },
           showSeparator: false,
@@ -116,9 +121,9 @@ const Roadmap = ({
           <ContentSection sectionName="Current">
             <ContentPrimary
               id="overview"
-              toc={getValueFromCMS(content, 'current_headline')}
-              headline={getValueFromCMS(content, 'current_headline')}
-              description={getValueFromCMS(content, 'current_description')}
+              toc={content.current_headline}
+              headline={content.current_headline}
+              description={content.current_description}
               showSeparator
             >
               <UnorderedList
@@ -129,16 +134,16 @@ const Roadmap = ({
                   },
                 }}
               >
-                {getCMSList(content, 'current_li')}
+                {currentList}
               </UnorderedList>
             </ContentPrimary>
           </ContentSection>
           <ContentSection sectionName="Coming up">
             <ContentPrimary
               id="overview"
-              toc={getValueFromCMS(content, 'comingup_headline')}
-              headline={getValueFromCMS(content, 'comingup_headline')}
-              description={getValueFromCMS(content, 'comingup_description')}
+              toc={content.comingup_headline}
+              headline={content.comingup_headline}
+              description={content.comingup_description}
               showSeparator
             >
               <UnorderedList
@@ -149,16 +154,16 @@ const Roadmap = ({
                   },
                 }}
               >
-                {getCMSList(content, 'comingup_li')}
+                {comingupList}
               </UnorderedList>
             </ContentPrimary>
           </ContentSection>
           <ContentSection sectionName="Future">
             <ContentPrimary
               id="overview"
-              toc={getValueFromCMS(content, 'future_headline')}
-              headline={getValueFromCMS(content, 'future_headline')}
-              description={getValueFromCMS(content, 'future_description')}
+              toc={content.future_headline}
+              headline={content.future_headline}
+              description={content.future_description}
               showSeparator
             >
               <UnorderedList
@@ -169,7 +174,7 @@ const Roadmap = ({
                   },
                 }}
               >
-                {getCMSList(content, 'future_li')}
+                {futureList}
               </UnorderedList>
             </ContentPrimary>
           </ContentSection>
@@ -199,9 +204,7 @@ const Roadmap = ({
           </InlineMessage>
         ),
         hero: {
-          illustration:
-            getValueFromCMS(content, 'intro_hero_illustration') ||
-            'components/hero-roadmap-illustration',
+          illustration: content.intro_hero_illustration,
           illustrationProps: {viewBox: '0 0 1344 759'},
         },
         showSeparator: false,
