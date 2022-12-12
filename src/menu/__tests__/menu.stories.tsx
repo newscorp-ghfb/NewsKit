@@ -1803,7 +1803,9 @@ const SubMenuNestedUncontrolledContainer = styled.div`
 `;
 export const StorySubMenuNestedUncontrolled = () => (
   <SubMenuNestedUncontrolledContainer>
-    <StorybookSubHeading>Sub menu - horizontal</StorybookSubHeading>
+    <StorybookSubHeading>
+      Sub menu - uncontrolled behaviour example
+    </StorybookSubHeading>
     <Menu aria-label="menu-nested-uncontrolled">
       <MenuSub title="1" id="nu-1">
         <MenuItem href={href} id="nu-1.1">
@@ -1837,6 +1839,9 @@ export const StorySubMenuNestedUncontrolled = () => (
   </SubMenuNestedUncontrolledContainer>
 );
 StorySubMenuNestedUncontrolled.storyName = 'sub-menu-nested-uncontrolled';
+StorySubMenuNestedUncontrolled.parameters = {
+  percy: {skip: true},
+};
 
 export default {
   title: 'Components/menu',
