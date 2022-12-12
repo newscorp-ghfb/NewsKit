@@ -213,9 +213,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           title: 'Base',
           description:
             'The character count has a base state. This is the base style of the input before the input has been interacted with by a user.',
-          media: getIllustrationComponent(
-            'components/character-count/base.svg',
-          ),
+          media: getIllustrationComponent('components/character-count/base'),
         },
         {
           title: 'Invalid',
@@ -264,7 +262,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           description:
             'The character count in a disabled state shows that an input exists, but is not available to the user in that scenario. When a user’s cursor hovers over an input in a disabled state the cursor shows as not-allowed, and the character count state changes.',
           media: getIllustrationComponent(
-            'components/character-count/disabled',
+            'components/character-count/disabled.svg',
           ),
         },
       ],
