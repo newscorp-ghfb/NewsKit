@@ -9093,10 +9093,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
 }
 
 .emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -9144,7 +9141,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
-          aria-expanded="true"
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
@@ -9162,7 +9159,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
               fill="none"
             />
             <path
-              d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
             />
           </svg>
         </button>
@@ -10261,6 +10258,7 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
@@ -10560,6 +10558,7 @@ exports[`MenuSub renders with default props 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
@@ -10952,6 +10951,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
@@ -11347,6 +11347,7 @@ exports[`MenuSub renders with overrides 1`] = `
         class="nk-menu-item emotion-1"
       >
         <a
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           href="http://"
@@ -11792,6 +11793,7 @@ exports[`MenuSub renders with title 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
