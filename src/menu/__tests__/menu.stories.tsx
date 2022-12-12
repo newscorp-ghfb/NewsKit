@@ -1804,7 +1804,7 @@ const SubMenuNestedUncontrolledContainer = styled.div`
 export const StorySubMenuNestedUncontrolled = () => (
   <SubMenuNestedUncontrolledContainer>
     <StorybookSubHeading>Sub menu - horizontal</StorybookSubHeading>
-    <Menu aria-label="menu-horizontal">
+    <Menu aria-label="menu-nested-uncontrolled">
       <MenuSub title="1" id="nu-1">
         <MenuItem href={href} id="nu-1.1">
           1.1
