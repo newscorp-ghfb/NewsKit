@@ -591,17 +591,20 @@ describe('MenuSub', () => {
 
 describe('Uncontrolled nested menu', () => {
   const TestMenu = (props: Omit<MenuProps, 'children'>) => (
-    <Menu {...props}>
-      <MenuSub title="menuSub1">
-        <MenuItem href={href}>Item 1</MenuItem>
-      </MenuSub>
-      <MenuSub title="menuSub2">
-        <MenuItem href={href}>Item 2</MenuItem>
-        <MenuSub title="menuSub3">
-          <MenuItem href={href}>Item 3</MenuItem>
+    <>
+      <Menu {...props}>
+        <MenuSub title="menuSub1">
+          <MenuItem href={href}>Item 1</MenuItem>
         </MenuSub>
-      </MenuSub>
-    </Menu>
+        <MenuSub title="menuSub2">
+          <MenuItem href={href}>Item 2</MenuItem>
+          <MenuSub title="menuSub3">
+            <MenuItem href={href}>Item 3</MenuItem>
+          </MenuSub>
+        </MenuSub>
+      </Menu>
+      <div data-testid="outside-element" />
+    </>
   );
 
   describe('horizontal', () => {
@@ -641,6 +644,19 @@ describe('Uncontrolled nested menu', () => {
       expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'false');
       expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'false');
     });
+
+    it('collapses all sub menus on click outside', () => {
+      const {getByText, getByTestId} = renderWithTheme(TestMenu);
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      fireEvent.click(menuSub2);
+      fireEvent.click(menuSub3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+      fireEvent.click(getByTestId('outside-element'));
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'false');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'false');
+    });
   });
 
   describe('vertical', () => {
@@ -654,6 +670,19 @@ describe('Uncontrolled nested menu', () => {
       fireEvent.click(menuSub2);
       expect(menuSub1.parentNode).toHaveAttribute('aria-expanded', 'true');
       expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+    });
+
+    it('does not collapse all sub menus on click outside', () => {
+      const {getByText, getByTestId} = renderWithTheme(TestMenu);
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      fireEvent.click(menuSub2);
+      fireEvent.click(menuSub3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+      fireEvent.click(getByTestId('outside-element'));
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
     });
   });
 });
