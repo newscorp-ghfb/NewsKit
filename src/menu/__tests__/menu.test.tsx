@@ -673,7 +673,9 @@ describe('Uncontrolled nested menu', () => {
     });
 
     it('does not collapse all sub menus on click outside', () => {
-      const {getByText, getByTestId} = renderWithTheme(TestMenu);
+      const {getByText, getByTestId} = renderWithTheme(TestMenu, {
+        vertical: true,
+      });
       const menuSub2 = getByText('menuSub2');
       const menuSub3 = getByText('menuSub3');
       fireEvent.click(menuSub2);
