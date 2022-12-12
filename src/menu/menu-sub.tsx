@@ -40,7 +40,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       title,
       selected,
       expanded: expandedProp,
-      defaultExpanded,
+      defaultExpanded = false,
       onClick,
       ...rest
     },
@@ -56,16 +56,23 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
     const nestedId = buildNestedId(id, parentId);
     const {updateExpandedMenuSubId, expandedMenuSubId} = useMenuContext();
 
+    const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
+
     useEffect(() => {
-      if (
+      if (!expandedMenuSubId) {
+        // all sub menus have been collapsed
+        setIsExpanded(false);
+      } else if (
         expandedMenuSubId === nestedId ||
-        (expandedMenuSubId && isDescendant(nestedId, expandedMenuSubId))
+        isDescendant(nestedId, expandedMenuSubId)
       ) {
+        // this sub menu or one of its descendants has been expanded
         setIsExpanded(true);
-      } else {
+      } else if (!vertical) {
+        // another sub menu elsewhere in the tree has been expanded
         setIsExpanded(false);
       }
-    }, [nestedId, expandedMenuSubId, setIsExpanded]);
+    }, [vertical, nestedId, expandedMenuSubId, setIsExpanded]);
 
     const [IndicatorIcon, indicatorIconProps] = getComponentOverrides(
       overrides?.indicatorIcon,
@@ -78,8 +85,6 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
     const handleClick = React.useCallback(() => {
       updateExpandedMenuSubId(nestedId, !isExpanded);
     }, [isExpanded, nestedId, updateExpandedMenuSubId]);
-
-    const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
 
     const theme = useTheme();
     const menuItemOverrides: MenuSubProps['overrides'] = {

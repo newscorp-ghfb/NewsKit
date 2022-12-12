@@ -1,6 +1,6 @@
 import React from 'react';
 import {fireEvent} from '@testing-library/react';
-import {Menu, MenuDivider, MenuGroup, MenuItem, MenuSub} from '..';
+import {Menu, MenuDivider, MenuGroup, MenuItem, MenuProps, MenuSub} from '..';
 import {
   renderToFragmentWithTheme,
   renderWithImplementation,
@@ -179,7 +179,7 @@ describe('MenuItem', () => {
     );
     expect(fragment).toMatchSnapshot();
   });
-  test('fire tracking event', async () => {
+  test('fire tracking event', () => {
     const mockFireEvent = jest.fn();
     const props = {
       children: menuItemContent,
@@ -586,5 +586,74 @@ describe('MenuSub', () => {
       myCustomTheme,
     );
     expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('Uncontrolled nested menu', () => {
+  const TestMenu = (props: Omit<MenuProps, 'children'>) => (
+    <Menu {...props}>
+      <MenuSub title="menuSub1">
+        <MenuItem href={href}>Item 1</MenuItem>
+      </MenuSub>
+      <MenuSub title="menuSub2">
+        <MenuItem href={href}>Item 2</MenuItem>
+        <MenuSub title="menuSub3">
+          <MenuItem href={href}>Item 3</MenuItem>
+        </MenuSub>
+      </MenuSub>
+    </Menu>
+  );
+
+  describe('horizontal', () => {
+    it('collapses expanded sub menus when new sub menu expanded', () => {
+      const {getByText} = renderWithTheme(TestMenu);
+      const menuSub1 = getByText('menuSub1');
+      const menuSub2 = getByText('menuSub2');
+      fireEvent.click(menuSub1);
+      expect(menuSub1.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'false');
+      fireEvent.click(menuSub2);
+      expect(menuSub1.parentNode).toHaveAttribute('aria-expanded', 'false');
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+    });
+
+    it('does not collapse expanded sub menus when descendant sub menu expanded', () => {
+      const {getByText} = renderWithTheme(TestMenu);
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      fireEvent.click(menuSub2);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'false');
+      fireEvent.click(menuSub3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+    });
+
+    it('collapses sub menu when ancestor is collapsed', () => {
+      const {getByText} = renderWithTheme(TestMenu);
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      fireEvent.click(menuSub2);
+      fireEvent.click(menuSub3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+      fireEvent.click(menuSub2);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'false');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'false');
+    });
+  });
+
+  describe('vertical', () => {
+    it('does not collapse expanded sub menus when new sub menu expanded', () => {
+      const {getByText} = renderWithTheme(TestMenu, {vertical: true});
+      const menuSub1 = getByText('menuSub1');
+      const menuSub2 = getByText('menuSub2');
+      fireEvent.click(menuSub1);
+      expect(menuSub1.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'false');
+      fireEvent.click(menuSub2);
+      expect(menuSub1.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+    });
   });
 });
