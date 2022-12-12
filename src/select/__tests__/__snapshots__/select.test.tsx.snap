@@ -8596,66 +8596,42 @@ exports[`Select virtualize long list 1`] = `
         tabindex="-1"
       >
         <div
-          style="height: 0px;"
+          style="height: 12450px;"
         />
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-0-item-120"
+          id="downshift-0-item-0"
           role="option"
           style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-          value="Latvia"
+          value="Afghanistan"
         >
           <div>
-            Latvia
+            Afghanistan
           </div>
         </div>
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-0-item-121"
+          id="downshift-0-item-1"
           role="option"
-          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-          value="Lebanon"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(100px);"
+          value="Åland Islands"
         >
           <div>
-            Lebanon
+            Åland Islands
           </div>
         </div>
         <div
           aria-selected="false"
           class="emotion-2"
-          id="downshift-0-item-122"
+          id="downshift-0-item-2"
           role="option"
-          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-          value="Lesotho"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(200px);"
+          value="Albania"
         >
           <div>
-            Lesotho
-          </div>
-        </div>
-        <div
-          aria-selected="false"
-          class="emotion-2"
-          id="downshift-0-item-123"
-          role="option"
-          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-          value="Liberia"
-        >
-          <div>
-            Liberia
-          </div>
-        </div>
-        <div
-          aria-selected="false"
-          class="emotion-2"
-          id="downshift-0-item-124"
-          role="option"
-          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-          value="Libya"
-        >
-          <div>
-            Libya
+            Albania
           </div>
         </div>
       </div>
