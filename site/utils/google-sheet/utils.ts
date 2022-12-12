@@ -1,11 +1,3 @@
-import {CMSDataProps} from './types';
-
-export const getValueFromCMS = (obj: CMSDataProps, key: string) => {
-  const newKey = key.toLowerCase();
-
-  return obj[newKey];
-};
-
 export const formatSheetData = (data: string[][] | undefined | null) => {
   if (data === undefined || data === null || data.length === 0) {
     return {};
