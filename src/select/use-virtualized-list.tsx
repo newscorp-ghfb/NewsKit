@@ -1,5 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {Ref} from 'react';
 import {useVirtual} from 'react-virtual';
+import composeRefs from '@seznam/compose-react-refs';
+
 import {get} from '../utils/get';
 import {ButtonSelectSize, SelectOptionProps} from './types';
 import {StyledOptionWithPrivateProps} from './select-panel';
@@ -26,27 +28,11 @@ export const useVirtualizedList = ({
   children: React.ReactNode;
   scrollToIndex: Function;
 } => {
-  const [itemSize, setItemSize] = useState(0);
-
   const rowVirtualizer = useVirtual({
     size: items.length,
     parentRef: listRef,
-    estimateSize: React.useCallback(() => itemSize, [itemSize]),
     overscan: 2,
   });
-
-  useEffect(() => {
-    if (!isOpen || !listRef.current) return;
-
-    // measure the size of the first item, assuming all items are the same size\
-    const element = listRef.current.querySelector('[role="option"]');
-
-    // istanbul ignore if
-    if (!(element instanceof HTMLElement)) return;
-
-    const height = element.offsetHeight;
-    setItemSize(height || 0);
-  }, [listRef, isOpen]);
 
   const useVirtualization = items.length > limit;
 
@@ -54,6 +40,7 @@ export const useVirtualizedList = ({
     props: object,
     child: React.ReactElement<SelectOptionProps>,
     index: number,
+    ref?: Ref<HTMLDivElement>,
   ) => {
     const combinedProps = {
       ...props,
@@ -72,6 +59,10 @@ export const useVirtualizedList = ({
         $selected={isSelected}
         $size={size}
         {...combinedProps}
+        ref={
+          // @ts-ignore
+          composeRefs(combinedProps.ref as Ref<HTMLDivElement>, ref)
+        }
       />
     );
   };
@@ -80,6 +71,7 @@ export const useVirtualizedList = ({
     index: number;
     size: number;
     start: number;
+    measureRef: Ref<HTMLDivElement>;
   }) => {
     const itemProps = getItemProps({
       index: virtualRow.index,
@@ -93,10 +85,10 @@ export const useVirtualizedList = ({
       },
     });
 
-    const {index} = virtualRow;
+    const {index, measureRef} = virtualRow;
     const child = items[index];
 
-    return renderSelectOption(itemProps, child, index);
+    return renderSelectOption(itemProps, child, index, measureRef);
   };
 
   const mapNonVirtualized = (
