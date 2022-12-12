@@ -3,6 +3,7 @@ import {
   UnorderedList,
   LinkStandalone as LinkInline,
   InlineMessage,
+  TextBlock,
 } from 'newskit';
 import ReactMarkdown, {ReactMarkdownOptions} from 'react-markdown';
 import {getSheets} from '../../utils/google-sheet';
@@ -12,6 +13,7 @@ import {LayoutProps} from '../../components/layout';
 import {
   ContentSection,
   ContentPrimary,
+  ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {isLinkExternal} from '../../../src/link/utils';
@@ -21,6 +23,7 @@ interface RoadmapContent {
   intro_secondary: string;
   intro_description: string;
   intro_hero_illustration: string;
+  intro_date: string;
   current_headline: string;
   current_description: string;
   comingup_headline: string;
@@ -39,6 +42,7 @@ const roadmapFallbackContent: RoadmapContent = {
   intro_hero_illustration: 'components/hero-roadmap-illustration',
   intro_secondary:
     'The roadmap is a living document, and it is likely that priorities will change. See our Trello board for more details on the roadmap.',
+  intro_date: 'Last Updated 12 December 2022',
   current_headline: 'Current Quarter',
   current_description: 'What we are working on:',
   comingup_headline: 'Coming Up',
@@ -68,8 +72,6 @@ const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
   /* eslint-enable @typescript-eslint/no-shadow */
 );
 
-// TODO: Types for keyof starting with...
-
 const getCMSList = (content: RoadmapContent, listKey: keyof RoadmapContent) =>
   Object.entries(content)
     .filter(entry => entry[0].startsWith(listKey))
@@ -79,7 +81,7 @@ const Roadmap = ({
   content,
   ...layoutProps
 }: LayoutProps & {content: RoadmapContent}) => {
-  const pageName = content.intro_name; // getValueFromCMS(content, 'intro_name');
+  const pageName = content.intro_name;
   const pageDescription = content.intro_description;
 
   const introSecondary = content.intro_secondary;
@@ -118,18 +120,27 @@ const Roadmap = ({
             <ContentPrimary description={<>{introSecondary}</>} />
           )}
 
+          <ContentSecondary showSeparator>
+            <TextBlock
+              typographyPreset="editorialParagraph020"
+              stylePreset="inkBase"
+            >
+              {content.intro_date}
+            </TextBlock>
+          </ContentSecondary>
+
           <ContentSection sectionName="Current">
             <ContentPrimary
               id="overview"
               toc={content.current_headline}
               headline={content.current_headline}
               description={content.current_description}
-              showSeparator
+              showSeparator={false}
             >
               <UnorderedList
                 overrides={{
                   content: {
-                    typographyPreset: 'editorialParagraph020',
+                    typographyPreset: 'editorialParagraph030',
                     stylePreset: 'inkBase',
                   },
                 }}
@@ -144,12 +155,12 @@ const Roadmap = ({
               toc={content.comingup_headline}
               headline={content.comingup_headline}
               description={content.comingup_description}
-              showSeparator
+              showSeparator={false}
             >
               <UnorderedList
                 overrides={{
                   content: {
-                    typographyPreset: 'editorialParagraph020',
+                    typographyPreset: 'editorialParagraph030',
                     stylePreset: 'inkBase',
                   },
                 }}
@@ -164,12 +175,12 @@ const Roadmap = ({
               toc={content.future_headline}
               headline={content.future_headline}
               description={content.future_description}
-              showSeparator
+              showSeparator={false}
             >
               <UnorderedList
                 overrides={{
                   content: {
-                    typographyPreset: 'editorialParagraph020',
+                    typographyPreset: 'editorialParagraph030',
                     stylePreset: 'inkBase',
                   },
                 }}
