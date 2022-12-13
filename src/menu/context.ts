@@ -6,6 +6,12 @@ export type OnExpandedChangeFn = (
   isExpanded: boolean,
 ) => void;
 
+/* istanbul ignore next */
+const defaultMenuContextArgs = {
+  updateExpandedMenuSubId: () => {},
+  expandedMenuSubId: null,
+};
+
 export const MenuContext = createContext<
   Pick<MenuProps, 'vertical' | 'size' | 'align' | 'overrides'> & {
     // MenuSub components can call this function when they are clicked
@@ -13,10 +19,7 @@ export const MenuContext = createContext<
     // MenuSub components access this state to know if they are expanded / collapsed
     expandedMenuSubId: string | null;
   }
->({
-  updateExpandedMenuSubId: () => {},
-  expandedMenuSubId: null,
-});
+>(defaultMenuContextArgs);
 export const MenuContextProvider = MenuContext.Provider;
 
 export const useMenuContext = () => {
