@@ -534,14 +534,14 @@ const ModalComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the style preset applied to the Overlay.',
             },
             {
-              attribute: 'modal.panel.stylePreset',
+              attribute: 'panel.stylePreset',
               type: 'MQ<string>',
               default: 'modalPanel',
               description:
                 'If provided, this overrides the style preset applied to the Modal panel.',
             },
             {
-              attribute: 'modal.panel.topOffset',
+              attribute: 'panel.topOffset',
               type: 'MQ<string>',
               default: '20vh',
               description: (
@@ -557,7 +557,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'modal.panel.width',
+              attribute: 'panel.width',
               type: 'MQ<string>',
               default: [
                 'xs = 90%',
@@ -570,71 +570,71 @@ const ModalComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the width property of the Modal panel.',
             },
             {
-              attribute: 'modal.panel.maxWidth',
+              attribute: 'panel.maxWidth',
               type: 'MQ<string>',
               default: '',
               description:
                 'If provided, this overrides the maxWidth property of the Modal panel.',
             },
             {
-              attribute: 'modal.panel.minWidth',
+              attribute: 'panel.minWidth',
               type: 'MQ<string>',
               default: '',
               description:
                 'If provided, this overrides the minWidth property of the Modal panel.',
             },
             {
-              attribute: 'modal.panel.height',
+              attribute: 'panel.height',
               type: 'MQ<string>',
               default: "all: '80%'",
               description:
                 'If provided, this overrides the height property of the Modal panel.',
             },
             {
-              attribute: 'modal.panel.minHeight',
+              attribute: 'panel.minHeight',
               type: 'MQ<string>',
               default: "all: '15%'",
               description:
                 'If provided, this overrides the minHeight property of the Modal panel.',
             },
             {
-              attribute: 'modal.panel.maxHeight',
+              attribute: 'panel.maxHeight',
               type: 'MQ<string>',
               default: ['xs>: 95%', 'md>: 80%'],
               description:
                 'If provided, this overrides the maxHeight property of the Modal panel.',
             },
-            ...prefixLogicalProps(logicalPaddingOverrideProps, 'modal.panel'),
+            ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
             {
-              attribute: 'modal.header.stylePreset',
+              attribute: 'header.stylePreset',
               type: 'MQ<string>',
               default: 'spaceInsetSquish040',
               description:
                 'If provided, this overrides the padding space set in Modal header content container.',
             },
             {
-              attribute: 'modal.content.spaceInset',
+              attribute: 'content.spaceInset',
               type: 'MQ<string>',
               default: 'spaceInset050',
               description:
                 'If provided, this overrides the padding space set in Modal content container.',
             },
             {
-              attribute: 'modal.closeButton.stylePreset',
+              attribute: 'closeButton.stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonMinimalSecondary',
               description:
                 'If provided, this overrides the style preset applied to the Modal close Icon Button.',
             },
             {
-              attribute: 'modal.closeButton.spaceInset',
+              attribute: 'closeButton.spaceInset',
               type: 'MQ<string>',
               default: 'spaceInset020',
               description:
                 'If provided, this overrides the padding space set in the Modal close Icon Button.',
             },
             {
-              attribute: 'modal.zIndex',
+              attribute: 'zIndex',
               type: 'number',
               default: '80',
               description:
