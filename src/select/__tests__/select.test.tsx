@@ -457,6 +457,18 @@ describe('Select', () => {
   });
 
   test('virtualize long list', async () => {
+    // MOCK offsetHeight since react-virtualize needs it in order to measure the elment height
+    // if its not present ( set to 0 ) test will not work.
+    const originalOffsetHeight = Object.getOwnPropertyDescriptor(
+      HTMLElement.prototype,
+      'offsetHeight',
+    );
+
+    Object.defineProperty(HTMLElement.prototype, 'offsetHeight', {
+      configurable: true,
+      value: 100,
+    });
+
     const selectOptions = countries.map(({name}) => (
       <SelectOption key={name} value={name}>
         {name}
@@ -481,6 +493,14 @@ describe('Select', () => {
     expect(getAllByRole('option').length).not.toBe(countries.length);
 
     expect(asFragment()).toMatchSnapshot();
+
+    // Cleanup mocked offsetHeight
+    Object.defineProperty(
+      HTMLElement.prototype,
+      'offsetHeight',
+      // @ts-ignore
+      originalOffsetHeight,
+    );
   });
 
   test('fire tracking event ', async () => {
