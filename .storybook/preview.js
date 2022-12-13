@@ -96,6 +96,14 @@ export const parameters = {
         name: 'Virgin',
         value: '#e10a0a',
       },
+      {
+        name: 'The Wall Street Journal',
+        value: '#0274B6',
+      },
+      {
+        name: 'MarketWatch',
+        value: '#367F2E',
+      },
     ],
   },
   docs: {
