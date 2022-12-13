@@ -128,7 +128,7 @@ export const StoryAccordionUncontrolled = () => (
       </AccordionGroup>
     </StorybookCase>
     <StorybookCase title="Can expand single">
-      <AccordionGroup defaultExpanded={[0]}>
+      <AccordionGroup expandSingle defaultExpanded={[0]}>
         <Accordion header="Header">{CONTENT}</Accordion>
         <Accordion header="Header">{CONTENT}</Accordion>
       </AccordionGroup>
