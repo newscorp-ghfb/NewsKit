@@ -199,7 +199,9 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
               </Link>
             </>
           ),
-          media: getIllustrationComponent('components/character-count/hero'),
+          media: getIllustrationComponent(
+            'components/character-count/character-limit',
+          ),
         },
       ],
     }}
