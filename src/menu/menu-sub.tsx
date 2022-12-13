@@ -42,6 +42,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       expanded: expandedProp,
       defaultExpanded = false,
       onClick,
+      align: menuSubAlign,
       ...rest
     },
     ref,
@@ -52,11 +53,17 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
     });
 
     const id = useId();
-    const {parentId} = useMenuSubContext();
+    const {parentId, align: parentMenuSubAlign} = useMenuSubContext();
     const nestedId = buildNestedId(id, parentId);
     const {updateExpandedMenuSubId, expandedMenuSubId} = useMenuContext();
 
-    const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
+    const {
+      vertical,
+      size,
+      align: menuAlign,
+      overrides: menuOverrides,
+    } = useMenuContext();
+    const align = menuSubAlign || parentMenuSubAlign || menuAlign;
 
     useEffect(() => {
       if (!expandedMenuSubId) {
@@ -68,6 +75,9 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       ) {
         // this sub menu or one of its descendants has been expanded
         setIsExpanded(true);
+      } else if (isDescendant(expandedMenuSubId, nestedId)) {
+        // this sub menu's ancestor is expanded
+        setIsExpanded(false);
       } else if (!vertical) {
         // another sub menu elsewhere in the tree has been expanded
         setIsExpanded(false);
@@ -110,7 +120,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
     };
 
     return (
-      <MenuSubContextProvider value={{parentId: nestedId}}>
+      <MenuSubContextProvider value={{parentId: nestedId, align}}>
         <StyledMenuItem
           className="nk-menu-item"
           vertical={vertical}

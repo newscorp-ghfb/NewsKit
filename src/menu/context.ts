@@ -1,5 +1,5 @@
 import {createContext, useContext} from 'react';
-import {MenuProps} from './types';
+import {MenuItemAlign, MenuProps} from './types';
 
 export type OnExpandedChangeFn = (
   nestedId: string,
@@ -39,8 +39,10 @@ export const useMenuContext = () => {
   return context;
 };
 
-export const MenuSubContext = createContext<{parentId: string | null}>({
-  // This is an array of MenuSub ids that is passed down the tree.
+export const MenuSubContext = createContext<{
+  parentId: string | null;
+  align?: MenuItemAlign;
+}>({
   parentId: null,
 });
 export const MenuSubContextProvider = MenuSubContext.Provider;

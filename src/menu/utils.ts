@@ -2,19 +2,17 @@
 // so that useEffect hooks do not repeatedly fire when ref changes but value
 // remains the same.
 
-export const DELIMITER = '|';
-
 export const buildNestedId = (id: string, parentId: string | null): string =>
-  parentId ? `${parentId}${DELIMITER}${id}` : id;
+  parentId ? `${parentId}|${id}` : id;
 
 export const getIdDepth = (id: string): number =>
-  id.length - id.replace(DELIMITER, '').length + 1;
+  id.length - id.replace(/\|/g, '').length + 1;
 
 export const isDescendant = (id: string, descendantId: string): boolean =>
-  id === descendantId.split(DELIMITER).slice(0, getIdDepth(id)).join(DELIMITER);
+  id === descendantId.split('|').slice(0, getIdDepth(id)).join('|');
 
 export const getParentId = (id: string): string | null =>
   id
-    .split(DELIMITER)
+    .split('|')
     .slice(0, getIdDepth(id) - 1)
-    .join(DELIMITER) || null;
+    .join('|') || null;

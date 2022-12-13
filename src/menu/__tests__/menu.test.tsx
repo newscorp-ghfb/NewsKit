@@ -590,15 +590,15 @@ describe('MenuSub', () => {
 });
 
 describe('Uncontrolled nested menu', () => {
-  const TestMenu = (props: Omit<MenuProps, 'children'>) => (
+  const TestMenu = (props: Omit<MenuProps, 'children' | 'align'>) => (
     <>
-      <Menu {...props}>
+      <Menu {...props} align="start">
         <MenuSub title="menuSub1">
           <MenuItem href={href}>Item 1</MenuItem>
         </MenuSub>
-        <MenuSub title="menuSub2">
+        <MenuSub title="menuSub2" align="center">
           <MenuItem href={href}>Item 2</MenuItem>
-          <MenuSub title="menuSub3">
+          <MenuSub title="menuSub3" align="end">
             <MenuItem href={href}>Item 3</MenuItem>
           </MenuSub>
         </MenuSub>
@@ -657,6 +657,28 @@ describe('Uncontrolled nested menu', () => {
       expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'false');
       expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'false');
     });
+
+    it('collapses single tier on click if expanded', () => {
+      const {getByText} = renderWithTheme(TestMenu);
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      fireEvent.click(menuSub2);
+      fireEvent.click(menuSub3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+      fireEvent.click(menuSub3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'false');
+    });
+
+    it('sets alignment for each sub menu', () => {
+      const {getByText, asFragment} = renderWithTheme(TestMenu);
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      fireEvent.click(menuSub2);
+      fireEvent.click(menuSub3);
+      expect(asFragment()).toMatchSnapshot();
+    });
   });
 
   describe('vertical', () => {
@@ -685,6 +707,17 @@ describe('Uncontrolled nested menu', () => {
       fireEvent.click(getByTestId('outside-element'));
       expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
       expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+    });
+
+    it('sets alignment for each sub menu', () => {
+      const {getByText, asFragment} = renderWithTheme(TestMenu, {
+        vertical: true,
+      });
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      fireEvent.click(menuSub2);
+      fireEvent.click(menuSub3);
+      expect(asFragment()).toMatchSnapshot();
     });
   });
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useMenuContext} from './context';
+import {useMenuContext, useMenuSubContext} from './context';
 import {MenuItemProps} from './types';
 import {StyledButton, StyledMenuItem} from './styled';
 
@@ -19,7 +19,14 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
     },
     ref,
   ) => {
-    const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
+    const {
+      vertical,
+      size,
+      align: menuAlign,
+      overrides: menuOverrides,
+    } = useMenuContext();
+    const {align: menuSubAlign} = useMenuSubContext();
+    const align = menuSubAlign || menuAlign;
 
     const theme = useTheme();
     const menuItemOverrides: MenuItemProps['overrides'] = {

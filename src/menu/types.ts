@@ -54,6 +54,7 @@ export type MenuSubProps = Omit<
   title?: React.ReactNode;
   expanded?: boolean;
   defaultExpanded?: boolean;
+  align?: MenuItemAlign;
   overrides?: {
     indicatorIcon?: Override<MenuSubIconProps>;
   } & MenuItemProps['overrides'] &
