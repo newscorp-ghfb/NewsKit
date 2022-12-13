@@ -408,67 +408,67 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'accordion.header.transitionPreset',
+              attribute: 'header.transitionPreset',
               type: 'MQ<string>',
               default: 'backgroundColorChange',
               description:
                 'If provided, overrides the transitionPreset of the accordion header',
             },
             {
-              attribute: 'accordion.header.minWidth',
+              attribute: 'header.minWidth',
               type: 'MQ<string>',
               description:
                 'If provided, overrides the minWidth property of the accordion panel',
             },
             {
-              attribute: 'accordion.header.minHeight',
+              attribute: 'header.minHeight',
               type: 'MQ<string>',
               description:
                 'If provided, overrides the minHeight property of the accordion panel',
             },
 
             {
-              attribute: 'accordion.header.stylePreset',
+              attribute: 'header.stylePreset',
               type: 'MQ<string>',
               default: 'accordionHeader',
               description:
                 'If provided, overrides the stylePreset of the accordion header',
             },
             {
-              attribute: 'accordion.header.typographyPreset',
+              attribute: 'header.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityButton030',
               description:
                 'If provided, overrides the typographyPreset of the accordion header',
             },
             {
-              attribute: 'accordion.header.spaceInline',
+              attribute: 'header.spaceInline',
               type: 'MQ<string>',
               default: 'space020',
               description:
                 'If provided, overrides the inline space of the accordion header',
             },
             {
-              attribute: 'accordion.header.indicatorIcon',
+              attribute: 'header.indicatorIcon',
               type: 'Override<AccordionIconProps>',
               description: 'If provided, overrides the icon',
             },
             {
-              attribute: 'accordion.header.indicatorIcon.stylePreset',
+              attribute: 'header.indicatorIcon.stylePreset',
               type: 'MQ<string>',
               default: 'iconDefault',
               description:
                 'If provided, overrides the stylePreset of the indicator icon',
             },
             {
-              attribute: 'accordion.header.indicatorIcon.size',
+              attribute: 'header.indicatorIcon.size',
               type: 'MQ<string>',
               default: 'iconSize020',
               description:
                 'If provided, overrides the size of the indicator icon',
             },
             {
-              attribute: 'accordion.header.label.typographyPreset',
+              attribute: 'header.label.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityButton030',
               description:
@@ -476,20 +476,20 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
             },
 
             {
-              attribute: 'accordion.panel.stylePreset',
+              attribute: 'panel.stylePreset',
               type: 'MQ<string>',
               default: 'accordionPanel',
               description:
                 'If provided, overrides the stylePreset of the accordion panel',
             },
             {
-              attribute: 'accordion.panel.paddingBlock',
+              attribute: 'panel.paddingBlock',
               type: 'MQ<string>',
               default: 'spaceInset030',
               description: '',
             },
             {
-              attribute: 'accordion.panel.paddingInline',
+              attribute: 'panel.paddingInline',
               type: 'MQ<string>',
               default: 'spaceInset030',
               description: '',
