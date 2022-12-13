@@ -620,8 +620,10 @@ describe('FormInput', () => {
       ...props,
       children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
     });
-    fireEvent.blur(getByTestId('text-field-email'), {
-      target: {value: 'test@news.co.uk'},
+    act(() => {
+      fireEvent.blur(getByTestId('text-field-email'), {
+        target: {value: 'test@news.co.uk'},
+      });
     });
     expect(asFragment()).toMatchSnapshot();
   });
@@ -633,7 +635,9 @@ describe('FormInput', () => {
     };
 
     const {getByTestId} = renderWithTheme(FormInput, prop);
-    fireEvent.blur(getByTestId('text-field-email'));
+    act(() => {
+      fireEvent.blur(getByTestId('text-field-email'));
+    });
 
     expect(onBlur).toHaveBeenCalledTimes(0);
   });
@@ -644,8 +648,10 @@ describe('FormInput', () => {
 
       children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
     });
-    fireEvent.change(getByTestId('text-field-email'), {
-      target: {value: 'test@news.co.uk'},
+    act(() => {
+      fireEvent.change(getByTestId('text-field-email'), {
+        target: {value: 'test@news.co.uk'},
+      });
     });
     expect(asFragment()).toMatchSnapshot();
   });

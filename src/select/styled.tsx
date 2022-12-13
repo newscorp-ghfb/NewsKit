@@ -116,8 +116,6 @@ export const StyledSelectPanel = styled.div<{
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
 
   // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
