@@ -5123,7 +5123,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       data-testid="select-panel"
       id="downshift-5-menu"
       role="listbox"
-      style="position: absolute;"
+      style="position: absolute; width: 0px; top: 0px; left: 0px;"
       tabindex="-1"
     />
     <div
@@ -6609,7 +6609,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       data-testid="select-panel"
       id="downshift-16-menu"
       role="listbox"
-      style="position: absolute;"
+      style="position: absolute; width: 0px; top: 0px; left: 0px;"
       tabindex="-1"
     />
     <div

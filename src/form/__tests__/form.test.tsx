@@ -4,6 +4,7 @@ import {useForm} from 'react-hook-form';
 import userEvent from '@testing-library/user-event';
 import {Form, FormInputCharacterCount, FormRef} from '..';
 import {
+  applyAsyncStyling,
   generateString,
   renderToFragmentWithTheme,
   renderWithImplementation,
@@ -590,7 +591,7 @@ describe('FormInput', () => {
     (useForm as jest.Mock).mockImplementation(actualRHF.useForm);
   });
 
-  test('renders FormInput Correctly', () => {
+  test('renders FormInput Correctly', async () => {
     const prop: FormInputProps = {
       id: 'email',
       name: 'email',
@@ -607,6 +608,8 @@ describe('FormInput', () => {
       children: (formInputBody as unknown) as Array<React.ReactElement>,
     };
     const fragment = renderToFragmentWithTheme(FormInput, prop);
+
+    await applyAsyncStyling();
     expect(fragment).toMatchSnapshot();
   });
 
@@ -615,48 +618,44 @@ describe('FormInput', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('fireEvent with onBlur valid state', () => {
+  test('fireEvent with onBlur valid state', async () => {
     const {getByTestId, asFragment} = renderWithImplementation(Form, {
       ...props,
       children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
     });
-    act(() => {
-      fireEvent.blur(getByTestId('text-field-email'), {
-        target: {value: 'test@news.co.uk'},
-      });
+    fireEvent.blur(getByTestId('text-field-email'), {
+      target: {value: 'test@news.co.uk'},
     });
+    await applyAsyncStyling();
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('does not call onBlur ', () => {
+  test('does not call onBlur ', async () => {
     const onBlur = jest.fn();
     const prop: FormInputProps = {
       children: formInputBody,
     };
 
     const {getByTestId} = renderWithTheme(FormInput, prop);
-    act(() => {
-      fireEvent.blur(getByTestId('text-field-email'));
-    });
-
+    fireEvent.blur(getByTestId('text-field-email'));
+    await applyAsyncStyling();
     expect(onBlur).toHaveBeenCalledTimes(0);
   });
 
-  test('fireEvent with onChange when value is invalid', () => {
+  test('fireEvent with onChange when value is invalid', async () => {
     const {getByTestId, asFragment} = renderWithImplementation(Form, {
       ...props,
 
       children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
     });
-    act(() => {
-      fireEvent.change(getByTestId('text-field-email'), {
-        target: {value: 'test@news.co.uk'},
-      });
+    fireEvent.change(getByTestId('text-field-email'), {
+      target: {value: 'test@news.co.uk'},
     });
+    await applyAsyncStyling();
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('does not call onChange ', () => {
+  test('does not call onChange ', async () => {
     const onChange = jest.fn();
     const prop: FormInputProps = {
       children: formInputBody,
@@ -667,6 +666,7 @@ describe('FormInput', () => {
       target: {value: 'teews.co.uk'},
     });
 
+    await applyAsyncStyling();
     expect(onChange).toHaveBeenCalledTimes(0);
   });
 
