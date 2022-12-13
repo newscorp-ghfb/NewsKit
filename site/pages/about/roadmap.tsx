@@ -90,7 +90,7 @@ const Roadmap = ({
   const comingupList = getCMSList(content, 'comingup_li');
   const futureList = getCMSList(content, 'future_li');
 
-  if (currentList && comingupList && futureList) {
+  if (currentList.length && comingupList.length && futureList.length) {
     return (
       <AboutPageTemplate
         headTags={{
