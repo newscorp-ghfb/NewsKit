@@ -476,6 +476,7 @@ export default {
         'Accordions show and hide related CONTENT. Use them to break up long pages into segmented, prioritised sections.',
     },
   },
+  disabledRules: ['landmark-unique'],
   decorators: [
     (
       Story: StoryType,
