@@ -1,1 +1,62 @@
-{"GridLayout":[{"name":"GridLayoutProps","type":[null,null]}]}
+{
+  "Button": [
+    {"name": "children", "isOptional": true, "type": "ReactNode"},
+    {"name": "disabled", "isOptional": true, "type": "boolean"},
+    {"name": "eventContext", "isOptional": true, "type": "object"},
+    {"name": "eventOriginator", "isOptional": true, "type": "string"},
+    {"name": "loading", "isOptional": true, "type": "boolean"},
+    {"name": "size", "isOptional": true, "type": ["small", "medium", "large"]}
+  ],
+  "Flag": [
+    {"name": "children", "isOptional": true, "type": "ReactNode"},
+    {"name": "disabled", "isOptional": true, "type": "boolean"},
+    {"name": "size", "isOptional": true, "type": ["small", "medium", "large"]}
+  ],
+  "GridLayout": {
+    "name": "GridLayoutProps",
+    "type": [
+      {"name": "alignContent", "isOptional": true, "type": "string"},
+      {"name": "alignItems", "isOptional": true, "type": "string"},
+      {"name": "areas", "isOptional": true, "type": "string"},
+      {"name": "autoColumns", "isOptional": true, "type": "string"},
+      {"name": "autoFlow", "isOptional": true, "type": "string"},
+      {"name": "autoRows", "isOptional": true, "type": "string"},
+      {"name": "children", "isOptional": true, "type": [null, null]},
+      {"name": "columnGap", "isOptional": true, "type": "string"},
+      {"name": "columns", "isOptional": true, "type": "string"},
+      {"name": "inline", "isOptional": true, "type": "boolean"},
+      {"name": "justifyContent", "isOptional": true, "type": "string"},
+      {"name": "justifyItems", "isOptional": true, "type": "string"},
+      {"name": "rowGap", "isOptional": true, "type": "string"},
+      {"name": "rows", "isOptional": true, "type": "string"}
+    ]
+  },
+  "GridLayoutItem": {
+    "name": "GridLayoutItemProps",
+    "type": [
+      {"name": "marginBlock", "isOptional": true, "type": "string"},
+      {"name": "marginBlockEnd", "isOptional": true, "type": "string"},
+      {"name": "marginBlockStart", "isOptional": true, "type": "string"},
+      {"name": "marginInline", "isOptional": true, "type": "string"},
+      {"name": "marginInlineEnd", "isOptional": true, "type": "string"},
+      {"name": "marginInlineStart", "isOptional": true, "type": "string"},
+      {"name": "paddingBlock", "isOptional": true, "type": "string"},
+      {"name": "paddingBlockEnd", "isOptional": true, "type": "string"},
+      {"name": "paddingBlockStart", "isOptional": true, "type": "string"},
+      {"name": "paddingInline", "isOptional": true, "type": "string"},
+      {"name": "paddingInlineEnd", "isOptional": true, "type": "string"},
+      {"name": "paddingInlineStart", "isOptional": true, "type": "string"},
+      {"name": "spaceInline", "isOptional": true, "type": "string"},
+      {"name": "spaceInset", "isOptional": true, "type": "string"},
+      {"name": "spaceStack", "isOptional": true, "type": "string"},
+      {"name": "stylePreset", "isOptional": true, "type": "string"},
+      {"name": "transitionPreset", "isOptional": true, "type": [null, null]},
+      {"name": "alignSelf", "isOptional": true, "type": "string"},
+      {"name": "area", "isOptional": true, "type": "string"},
+      {"name": "column", "isOptional": true, "type": "string"},
+      {"name": "justifySelf", "isOptional": true, "type": "string"},
+      {"name": "order", "isOptional": true, "type": "number"},
+      {"name": "row", "isOptional": true, "type": "string"}
+    ]
+  }
+}
