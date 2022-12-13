@@ -13,7 +13,6 @@ import {LayoutProps} from '../../components/layout';
 import {
   ContentSection,
   ContentPrimary,
-  ContentSecondary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {isLinkExternal} from '../../../src/link/utils';
@@ -116,18 +115,14 @@ const Roadmap = ({
         }}
       >
         <ComponentPageCell>
-          {introSecondary && (
-            <ContentPrimary description={<>{introSecondary}</>} />
-          )}
-
-          <ContentSecondary showSeparator>
+          <ContentPrimary description={<>{introSecondary}</>} showSeparator>
             <TextBlock
               typographyPreset="editorialParagraph020"
               stylePreset="inkBase"
             >
               {content.intro_date}
             </TextBlock>
-          </ContentSecondary>
+          </ContentPrimary>
 
           <ContentSection sectionName="Current">
             <ContentPrimary
@@ -140,7 +135,10 @@ const Roadmap = ({
               <UnorderedList
                 overrides={{
                   content: {
-                    typographyPreset: 'editorialParagraph030',
+                    typographyPreset: {
+                      xs: 'editorialParagraph020',
+                      sm: 'editorialParagraph030',
+                    },
                     stylePreset: 'inkBase',
                   },
                 }}
@@ -160,7 +158,10 @@ const Roadmap = ({
               <UnorderedList
                 overrides={{
                   content: {
-                    typographyPreset: 'editorialParagraph030',
+                    typographyPreset: {
+                      xs: 'editorialParagraph020',
+                      sm: 'editorialParagraph030',
+                    },
                     stylePreset: 'inkBase',
                   },
                 }}
@@ -175,12 +176,15 @@ const Roadmap = ({
               toc={content.future_headline}
               headline={content.future_headline}
               description={content.future_description}
-              showSeparator={false}
+              showSeparator
             >
               <UnorderedList
                 overrides={{
                   content: {
-                    typographyPreset: 'editorialParagraph030',
+                    typographyPreset: {
+                      xs: 'editorialParagraph020',
+                      sm: 'editorialParagraph030',
+                    },
                     stylePreset: 'inkBase',
                   },
                 }}
