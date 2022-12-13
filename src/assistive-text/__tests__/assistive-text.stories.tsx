@@ -1,165 +1,170 @@
 import * as React from 'react';
-
+import {Story as StoryType} from '@storybook/react';
 import {AssistiveText} from '..';
-import {styled, getSizingCssFromTheme} from '../../utils/style';
-import {Stack} from '../../stack';
 import {Block} from '../../block';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {IconOutlinedInfo} from '../../icons';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
+import {GridLayout} from '../../grid-layout';
 
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
-import {IconFilledAccountBalance} from '../../icons';
+const LONG_TEXT = `NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development.`;
 
-const Container = styled.div`
-  ${getSizingCssFromTheme('margin', {
-    xs: 'sizing000',
-    md: 'sizing100',
-  })};
-`;
+const ENHANCER = (
+  <IconOutlinedInfo
+    overrides={{stylePreset: 'inkBrand010', size: 'iconSize020'}}
+  />
+);
 
-const StyledDiv = styled.div`
-  border: 1px red dotted;
-`;
-
-export default {
-  title: 'Components/assistive-text',
-  component: () => 'None',
+const myCustomTheme: CreateThemeArgs = {
+  name: 'my-custom-byline-theme',
+  overrides: {
+    stylePresets: {
+      assistiveTextBorderWrapper: {
+        base: {
+          backgroundColor: 'transparent',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'dashed',
+          borderColor: '{{colors.red060}}',
+        },
+      },
+    },
+  },
 };
 
-export const AssistiveTextSizes = () => (
-  <>
-    <StorybookHeading>Assistive Text Sizes</StorybookHeading>
-    <Container>
-      <Stack stackDistribution="space-between" flow="horizontal-center">
-        <Block>
-          <StorybookSubHeading>Small</StorybookSubHeading>
-          <AssistiveText size="small">Test</AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Medium</StorybookSubHeading>
-          <AssistiveText size="medium">Test</AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Large</StorybookSubHeading>
-          <AssistiveText size="large">Test</AssistiveText>
-        </Block>
-      </Stack>
-    </Container>
-  </>
+export const StoryAssistiveTextDefault = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <AssistiveText>Please enter your email address</AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
 );
-AssistiveTextSizes.storyName = 'assistive-text-size';
+StoryAssistiveTextDefault.storyName = 'Default';
 
-export const AssistiveTextVariants = () => (
-  <>
-    <StorybookHeading>Assistive Text Variations</StorybookHeading>
-    <Container>
-      <Stack wrap spaceInline="space020">
-        <Block>
-          <StorybookSubHeading>Valid</StorybookSubHeading>
-          <AssistiveText state="valid">Test</AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Invalid</StorybookSubHeading>
-          <AssistiveText state="invalid">Test</AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Disabled</StorybookSubHeading>
-          <AssistiveText state="disabled">Test</AssistiveText>
-        </Block>
-      </Stack>
-    </Container>
-  </>
-);
-AssistiveTextVariants.storyName = 'assistive-text-variations';
-
-const enhancer = <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />;
-
-export const AssistiveTextEnhancers = () => (
-  <>
-    <StorybookHeading>Assistive Text Enhancers</StorybookHeading>
-    <Container>
-      <Stack wrap spaceInline="space020">
-        <Block>
-          <StorybookSubHeading>Start</StorybookSubHeading>
-          <AssistiveText startEnhancer={enhancer}>Test</AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>End</StorybookSubHeading>
-          <AssistiveText endEnhancer={enhancer}>Test</AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Start and End</StorybookSubHeading>
-          <AssistiveText startEnhancer={enhancer} endEnhancer={enhancer}>
-            Test
-          </AssistiveText>
-        </Block>
-      </Stack>
-      <Stack wrap spaceInline="space020">
-        <Block>
-          <StorybookSubHeading>Long long text</StorybookSubHeading>
-          <AssistiveText startEnhancer={enhancer}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>End</StorybookSubHeading>
-          <AssistiveText endEnhancer={enhancer}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </AssistiveText>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Start and End</StorybookSubHeading>
-          <AssistiveText startEnhancer={enhancer} endEnhancer={enhancer}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </AssistiveText>
-        </Block>
-      </Stack>
-    </Container>
-  </>
-);
-AssistiveTextEnhancers.storyName = 'assistive-text-enhancers';
-
-export const AssistiveTextWithLogicalPropsOverrides = () => (
-  <>
-    <StorybookSubHeading>
-      Assistive Text With Logical Paddings and Margins
-    </StorybookSubHeading>
-    <StyledDiv>
-      <AssistiveText
-        overrides={{paddingBlock: 'space050', marginBlock: 'space050'}}
-      >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industrys standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+export const StoryAssistiveTextSize = () => (
+  <StorybookPage>
+    <StorybookCase title="Small">
+      <AssistiveText size="small">
+        Please enter your email address
       </AssistiveText>
-    </StyledDiv>
-    <StorybookSubHeading>
-      Assistive Text With Logical Paddings, Margins and Enhancers
-    </StorybookSubHeading>
-    <StyledDiv>
-      <AssistiveText
-        startEnhancer={enhancer}
-        endEnhancer={enhancer}
-        overrides={{paddingBlock: 'space050', marginBlock: 'space050'}}
-      >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industrys standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+    </StorybookCase>
+    <StorybookCase title="Medium">
+      <AssistiveText size="medium">
+        Please enter your email address
       </AssistiveText>
-    </StyledDiv>
-  </>
+    </StorybookCase>
+    <StorybookCase title="Large">
+      <AssistiveText size="large">
+        Please enter your email address
+      </AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
 );
-AssistiveTextWithLogicalPropsOverrides.storyName =
-  'assistive-text-enhancers-with-logical-props-overrides';
+StoryAssistiveTextSize.storyName = 'Size';
+
+export const StoryAssistiveTextStates = () => (
+  <StorybookPage>
+    <StorybookCase title="Base">
+      <AssistiveText state="valid">
+        Please enter your email address
+      </AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Invalid">
+      <AssistiveText state="invalid">
+        Please enter your email address
+      </AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Disabled">
+      <AssistiveText state="disabled">
+        Please enter your email address
+      </AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryAssistiveTextStates.storyName = 'States';
+
+export const StoryAssistiveTextVariations = () => (
+  <StorybookPage columns="1fr">
+    <GridLayout
+      columns={{xs: 'min-content', md: 'repeat(3, fit-content(100%))'}}
+      columnGap={{xs: 'space020', md: 'space100'}}
+      rowGap="space060"
+    >
+      <StorybookCase title="Start">
+        <AssistiveText startEnhancer={ENHANCER}>Assistive Text</AssistiveText>
+      </StorybookCase>
+      <StorybookCase title="End">
+        <AssistiveText endEnhancer={ENHANCER}>Assistive Text</AssistiveText>
+      </StorybookCase>
+      <StorybookCase title="Start and end">
+        <AssistiveText startEnhancer={ENHANCER} endEnhancer={ENHANCER}>
+          Assistive Text
+        </AssistiveText>
+      </StorybookCase>
+    </GridLayout>
+    <StorybookCase title="Long text start">
+      <AssistiveText startEnhancer={ENHANCER}>{LONG_TEXT}</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Long text end">
+      <AssistiveText endEnhancer={ENHANCER}>{LONG_TEXT}</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Long text start and end">
+      <AssistiveText startEnhancer={ENHANCER} endEnhancer={ENHANCER}>
+        {LONG_TEXT}
+      </AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryAssistiveTextVariations.storyName = 'Variations';
+
+export const StoryAssistiveTextLogicalProps = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase title="Logical paddings and margins">
+      <Block stylePreset="assistiveTextBorderWrapper" marginBlockEnd="space070">
+        <AssistiveText overrides={{paddingBlock: 'space080'}}>
+          {LONG_TEXT}
+        </AssistiveText>
+      </Block>
+    </StorybookCase>
+    <StorybookCase title="Logical paddings, margins and enhancers">
+      <Block stylePreset="assistiveTextBorderWrapper" marginBlockEnd="space070">
+        <AssistiveText
+          startEnhancer={ENHANCER}
+          endEnhancer={ENHANCER}
+          overrides={{paddingBlock: 'space080'}}
+        >
+          {LONG_TEXT}
+        </AssistiveText>
+      </Block>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryAssistiveTextLogicalProps.storyName = 'Logical props';
+
+export default {
+  title: 'Components/Assistive text',
+  component: AssistiveText,
+  parameters: {
+    nkDocs: {
+      title: 'Assistive text',
+      description:
+        'Assistive text is used to communicate information relating to instructions on completing an input or requirements.',
+    },
+  },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          myCustomTheme,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

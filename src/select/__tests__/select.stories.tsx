@@ -1208,91 +1208,187 @@ export const StorySelectIconOverrides = () => (
 );
 StorySelectIconOverrides.storyName = 'Select Icon overrides';
 
+const SelectOptionInside = styled.div`
+  white-space: normal;
+`;
+
+export const SelectVirtualizationNotFixedSize = () => {
+  const timezones = [
+    '(UTC-12:00) International Date Line West',
+    '(UTC-11:00) Coordinated Universal Time-11',
+    '(UTC-10:00) Hawaii',
+    '(UTC-09:00) Alaska',
+    '(UTC-08:00) Baja California',
+    '(UTC-07:00) Pacific Daylight Time (US & Canada)',
+    '(UTC-08:00) Pacific Standard Time (US & Canada)',
+    '(UTC-07:00) Arizona',
+    '(UTC-07:00) Chihuahua, La Paz, Mazatlan',
+    '(UTC-07:00) Mountain Time (US & Canada)',
+    '(UTC-06:00) Central America',
+    '(UTC-06:00) Central Time (US & Canada)',
+    '(UTC-06:00) Guadalajara, Mexico City, Monterrey',
+    '(UTC-06:00) Saskatchewan',
+    '(UTC-05:00) Bogota, Lima, Quito',
+    '(UTC-05:00) Eastern Time (US & Canada)',
+    '(UTC-04:00) Eastern Daylight Time (US & Canada)',
+    '(UTC-05:00) Indiana (East)',
+    '(UTC-04:30) Caracas',
+    '(UTC-04:00) Asuncion',
+    '(UTC-04:00) Atlantic Time (Canada)',
+    '(UTC-04:00) Cuiaba',
+    '(UTC-04:00) Georgetown, La Paz, Manaus, San Juan',
+    '(UTC-04:00) Santiago',
+    '(UTC-03:30) Newfoundland',
+    '(UTC-03:00) Brasilia',
+    '(UTC-03:00) Buenos Aires',
+    '(UTC-03:00) Cayenne, Fortaleza',
+    '(UTC-03:00) Greenland',
+    '(UTC-03:00) Montevideo',
+    '(UTC-03:00) Salvador',
+    '(UTC-02:00) Coordinated Universal Time-02',
+    '(UTC-02:00) Mid-Atlantic - Old',
+    '(UTC-01:00) Azores',
+    '(UTC-01:00) Cape Verde Is.',
+    '(UTC) Casablanca',
+    '(UTC) Coordinated Universal Time',
+    '(UTC) Edinburgh, London',
+    '(UTC+01:00) Edinburgh, London',
+    '(UTC) Dublin, Lisbon',
+    '(UTC) Monrovia, Reykjavik',
+    '(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna',
+    '(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague',
+    '(UTC+01:00) Brussels, Copenhagen, Madrid, Paris',
+    '(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb',
+    '(UTC+01:00) West Central Africa',
+    '(UTC+01:00) Windhoek',
+    '(UTC+02:00) Athens, Bucharest',
+    '(UTC+02:00) Beirut',
+    '(UTC+02:00) Cairo',
+    '(UTC+02:00) Damascus',
+    '(UTC+02:00) E. Europe',
+    '(UTC+02:00) Harare, Pretoria',
+    '(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius',
+    '(UTC+03:00) Istanbul',
+    '(UTC+02:00) Jerusalem',
+    '(UTC+02:00) Tripoli',
+    '(UTC+03:00) Amman',
+    '(UTC+03:00) Baghdad',
+    '(UTC+02:00) Kaliningrad',
+    '(UTC+03:00) Kuwait, Riyadh',
+    '(UTC+03:00) Nairobi',
+    '(UTC+03:00) Moscow, St. Petersburg, Volgograd, Minsk',
+    '(UTC+04:00) Samara, Ulyanovsk, Saratov',
+    '(UTC+03:30) Tehran',
+    '(UTC+04:00) Abu Dhabi, Muscat',
+    '(UTC+04:00) Baku',
+    '(UTC+04:00) Port Louis',
+    '(UTC+04:00) Tbilisi',
+    '(UTC+04:00) Yerevan',
+    '(UTC+04:30) Kabul',
+    '(UTC+05:00) Ashgabat, Tashkent',
+    '(UTC+05:00) Yekaterinburg',
+    '(UTC+05:00) Islamabad, Karachi',
+    '(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi',
+    '(UTC+05:30) Sri Jayawardenepura',
+    '(UTC+05:45) Kathmandu',
+    '(UTC+06:00) Nur-Sultan (Astana)',
+    '(UTC+06:00) Dhaka',
+    '(UTC+06:30) Yangon (Rangoon)',
+    '(UTC+07:00) Bangkok, Hanoi, Jakarta',
+    '(UTC+07:00) Novosibirsk',
+    '(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi',
+    '(UTC+08:00) Krasnoyarsk',
+    '(UTC+08:00) Kuala Lumpur, Singapore',
+    '(UTC+08:00) Perth',
+    '(UTC+08:00) Taipei',
+    '(UTC+08:00) Ulaanbaatar',
+    '(UTC+08:00) Irkutsk',
+    '(UTC+09:00) Osaka, Sapporo, Tokyo',
+    '(UTC+09:00) Seoul',
+    '(UTC+09:30) Adelaide',
+    '(UTC+09:30) Darwin',
+    '(UTC+10:00) Brisbane',
+    '(UTC+10:00) Canberra, Melbourne, Sydney',
+    '(UTC+10:00) Guam, Port Moresby',
+    '(UTC+10:00) Hobart',
+    '(UTC+09:00) Yakutsk',
+    '(UTC+11:00) Solomon Is., New Caledonia',
+    '(UTC+11:00) Vladivostok',
+    '(UTC+12:00) Auckland, Wellington',
+    '(UTC+12:00) Coordinated Universal Time+12',
+    '(UTC+12:00) Fiji',
+    '(UTC+12:00) Magadan',
+    '(UTC+12:00) Petropavlovsk-Kamchatsky - Old',
+    "(UTC+13:00) Nuku'alofa",
+    '(UTC+13:00) Samoa',
+  ];
+
+  const selectOptionsSimple = timezones.map(name => (
+    <SelectOption key={name} value={name}>
+      <SelectOptionInside>{name}</SelectOptionInside>
+    </SelectOption>
+  ));
+
+  return (
+    <>
+      <Container>
+        <Block spaceStack="space050">
+          <Label htmlFor="simple-virt" size="medium">
+            Countries
+          </Label>
+          <Select
+            aria-describedby="simple-virt-at"
+            id="simple-virt"
+            size="medium"
+            useModal={{xs: true}}
+            overrides={{button: {maxWidth: '150px'}}}
+            virtualized={50}
+          >
+            {selectOptionsSimple}
+          </Select>
+        </Block>
+      </Container>
+    </>
+  );
+};
+
 /**
-
-PLEASE IGNORE THIS STORY
-ITS JUST FOR TESTING AND WILL BE REMOVED BEFORE MERGE
+  PLEASE IGNORE THIS STORY
+  ITS JUST FOR TESTING AND WILL BE REMOVED BEFORE MERGE
  */
-
-function useLocalStorage(key: string, initialValue: string) {
-  // State to store our value
-  // Pass initial state function to useState so logic is only executed once
-  const [storedValue, setStoredValue] = React.useState(() => {
-    if (typeof window === 'undefined') {
-      return initialValue;
-    }
-    try {
-      // Get from local storage by key
-      const item = window.localStorage.getItem(key);
-      // Parse stored json or if none return initialValue
-      return item ? JSON.parse(item) : initialValue;
-    } catch (error) {
-      // If error also return initialValue
-      console.log(error);
-      return initialValue;
-    }
-  });
-  // Return a wrapped version of useState's setter function that ...
-  // ... persists the new value to localStorage.
-  // @ts-ignore
-  const setValue = value => {
-    try {
-      // Allow value to be a function so we have same API as useState
-      const valueToStore =
-        value instanceof Function ? value(storedValue) : value;
-      // Save state
-      setStoredValue(valueToStore);
-      // Save to local storage
-      if (typeof window !== 'undefined') {
-        window.localStorage.setItem(key, JSON.stringify(valueToStore));
-      }
-    } catch (error) {
-      // A more advanced implementation would handle the error case
-      console.log(error);
-    }
-  };
-  return [storedValue, setValue];
-}
 
 const temp = Array.from(Array(200).keys()).map(v => String(v));
 
-export const StorySelectWithOverflowScroll = () => {
-  const [selected, setSelected] = useLocalStorage('zone', '');
-
-  return (
-    <div style={{height: '90vh', width: '100%', overflow: 'hidden'}}>
+export const StorySelectWithOverflowScroll = () => (
+  <div style={{height: '90vh', width: '100%', overflow: 'hidden'}}>
+    <div
+      style={{
+        height: '90vh',
+        position: 'relative',
+        overflow: 'auto',
+        border: '3px solid blue',
+        boxSizing: 'border-box',
+      }}
+    >
       <div
         style={{
-          height: '90vh',
+          padding: '75vh 0',
           position: 'relative',
-          overflow: 'auto',
-          border: '3px solid blue',
+          border: '3px solid red',
           boxSizing: 'border-box',
         }}
       >
-        <div
-          style={{
-            padding: '75vh 0',
-            position: 'relative',
-            border: '3px solid red',
-            boxSizing: 'border-box',
-          }}
-        >
-          <Select
-            onChange={e => setSelected(e.target.value)}
-            virtualized={10000}
-          >
-            {temp.map(v => (
-              <SelectOption key={v} value={v} selected={v === selected}>
-                {v}
-              </SelectOption>
-            ))}
-          </Select>
-        </div>
+        <Select virtualized={10000}>
+          {temp.map(v => (
+            <SelectOption key={v} value={v}>
+              {v}
+            </SelectOption>
+          ))}
+        </Select>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default {
   title: 'Components/select',
