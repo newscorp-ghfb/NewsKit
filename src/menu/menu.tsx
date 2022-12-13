@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
 import {MenuContextProvider, OnExpandedChangeFn} from './context';
 import {MenuItemAlign, MenuProps} from './types';
@@ -41,15 +41,17 @@ const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
     };
 
     const menuRef = useRef<HTMLDivElement>(null);
-    document.addEventListener(`click`, ({target}: MouseEvent) => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(target as Node) &&
-        !vertical
-      ) {
-        setExpandedMenuSubId(null);
-      }
-    });
+    useEffect(() => {
+      document.addEventListener(`click`, ({target}: MouseEvent) => {
+        if (
+          menuRef.current &&
+          !menuRef.current.contains(target as Node) &&
+          !vertical
+        ) {
+          setExpandedMenuSubId(null);
+        }
+      });
+    }, [vertical]);
 
     return (
       <MenuContextProvider
