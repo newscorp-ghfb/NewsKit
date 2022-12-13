@@ -106,7 +106,6 @@ export const StyledDropdownIconButton = styled.button`
 
 export const StyledSelectPanel = styled.div<{
   $size: ButtonSelectSize;
-  $width?: number;
   $isOpen: boolean;
   overrides?: SelectPanelOverrides;
 }>`
@@ -134,8 +133,6 @@ export const StyledSelectPanel = styled.div<{
     )}
 
   ${({$size}) => logicalProps(`select.${$size}.panel`)};
-
-  ${({$width}) => `width: ${$width}px;`}
 
   ${({$isOpen}) => `display: ${$isOpen ? 'block' : 'none'};`}
 

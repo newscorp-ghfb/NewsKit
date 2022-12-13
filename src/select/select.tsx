@@ -1,13 +1,14 @@
-import React, {
-  ChangeEvent,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, {ChangeEvent, useEffect, useRef} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
-import {getOverflowAncestors} from '@floating-ui/react-dom-interactions';
+import {
+  useFloating,
+  autoUpdate,
+  flip,
+  shift,
+  offset,
+  size as floatingSize,
+} from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
@@ -17,7 +18,6 @@ import {withOwnTheme} from '../utils/with-own-theme';
 import {checkBreakpointProp} from '../utils/check-breakpoint-prop';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
-import {Layer} from '../layer';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {get} from '../utils/get';
 
@@ -188,6 +188,24 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [allowBlur, onBlur],
     );
 
+    const {x, y, reference, strategy, refs} = useFloating({
+      open: isOpen,
+      placement: 'bottom-start',
+      middleware: [
+        offset(0),
+        shift(),
+        flip(),
+        floatingSize({
+          apply({rects, elements}) {
+            Object.assign(elements.floating.style, {
+              width: `${rects.reference.width}px`,
+            });
+          },
+        }),
+      ],
+      whileElementsMounted: autoUpdate,
+    });
+
     const {
       ref: downshiftButtonPropsRef,
       ...downshiftButtonPropsExceptRef
@@ -197,22 +215,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const {
       ref: downshiftMenuPropsRef,
       ...downshiftMenuPropsExceptRef
-    } = getMenuProps();
+    } = getMenuProps({ref: refs.floating});
 
-    const [{width, top, height, left}, setSelectRect] = useState({
-      width: 0,
-      top: 0,
-      height: 0,
-      left: 0,
-    });
-
-    useEffect(() => {
-      if (isOpen && selectRef.current) {
-        // getting width, height, left, top of the select
-        setSelectRect(selectRef.current.getBoundingClientRect());
-      }
-    }, [isOpen, selectRef]);
-
+    // TODO: Do we need this code anymore, maybe only on modal
     // Chrome does not focus the panel until its in view port,
     // that's why we need to use scrollIntoView and focus after that.
     // This does not seems to be a problem in FF and Safari
@@ -233,39 +238,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [isOpen, panelRef]);
 
-    const onOverflowScroll = useCallback(() => {
-      if (selectRef.current) {
-        setSelectRect(selectRef.current.getBoundingClientRect());
-      }
-    }, [setSelectRect, selectRef]);
-
-    const parentOverflowNode = useRef<HTMLElement>();
-
-    // In some cases the parent scroll element is not body/html in that case we need to
-    // adjust the position of the panel according to that parent.
-    // We use getOverflowAncestors from get nearest scollable parent and attach scroll event listener
-    // so that we know when it moves and we re-take the panel position on evert scroll move.
-    useEffect(() => {
-      if (localInputRef.current && isOpen) {
-        const [nearest] = getOverflowAncestors(localInputRef.current);
-        if (nearest instanceof window.HTMLElement) {
-          parentOverflowNode.current = nearest;
-          parentOverflowNode.current.addEventListener(
-            'scroll',
-            onOverflowScroll,
-          );
-        }
-      }
-      return () => {
-        if (parentOverflowNode.current) {
-          parentOverflowNode.current.removeEventListener(
-            'scroll',
-            onOverflowScroll,
-          );
-        }
-      };
-    }, [isOpen, onOverflowScroll]);
-
     return (
       <>
         <SelectButton
@@ -285,30 +257,30 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           openMenu={openMenu}
           itemToString={itemToString}
           ref={composeRefs(localInputRef, downshiftButtonPropsRef, inputRef)}
-          selectRef={selectRef}
+          selectRef={composeRefs(selectRef, reference)}
           value={buttonValue}
           isOpen={isOpen}
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
-        <Layer>
-          <SelectPanel
-            isOpen={isOpen}
-            overrides={overrides}
-            width={width}
-            height={height}
-            top={top}
-            left={left}
-            size={size}
-            buttonRef={localInputRef}
-            renderInModal={renderInModal}
-            closeMenu={closeMenu}
-            {...downshiftMenuPropsExceptRef}
-            ref={composeRefs(panelRef, downshiftMenuPropsRef)}
-          >
-            {optionsAsChildren}
-          </SelectPanel>
-        </Layer>
+
+        {/* <Layer> */}
+        <SelectPanel
+          isOpen={isOpen}
+          overrides={overrides}
+          top={y}
+          left={x}
+          size={size}
+          buttonRef={localInputRef}
+          renderInModal={renderInModal}
+          closeMenu={closeMenu}
+          {...downshiftMenuPropsExceptRef}
+          ref={composeRefs(panelRef, downshiftMenuPropsRef)}
+          strategy={strategy}
+        >
+          {optionsAsChildren}
+        </SelectPanel>
+        {/* </Layer> */}
       </>
     );
   },

@@ -1372,13 +1372,13 @@ export const StorySelectWithOverflowScroll = () => (
     >
       <div
         style={{
-          padding: '75vh 0',
+          padding: '75vh 0 0 0',
           position: 'relative',
           border: '3px solid red',
           boxSizing: 'border-box',
         }}
       >
-        <Select virtualized={10000}>
+        <Select virtualized={10000} overrides={{button: {width: '400px'}}}>
           {temp.map(v => (
             <SelectOption key={v} value={v}>
               {v}
