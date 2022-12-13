@@ -56,7 +56,12 @@ const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
     components={{
       a: ({href, children}) => (
         <LinkInline
-          overrides={{typographyPreset: 'editorialParagraph020'}}
+          overrides={{
+            typographyPreset: {
+              xs: 'editorialParagraph020',
+              md: 'editorialParagraph030',
+            },
+          }}
           href={href!}
           external={isLinkExternal(href!)}
         >
