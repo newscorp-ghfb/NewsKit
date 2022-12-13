@@ -235,8 +235,6 @@ exports[`Select icon component overrides 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -539,8 +537,6 @@ exports[`Select icon size overrides 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -843,8 +839,6 @@ exports[`Select icon theme size overrides 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -3676,8 +3670,6 @@ exports[`Select open and scroll 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -4192,8 +4184,6 @@ exports[`Select renders Select with logical props 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -4384,8 +4374,6 @@ exports[`Select renders Select with overrides 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -4732,8 +4720,6 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -5200,8 +5186,6 @@ exports[`Select renders SelectOption with logical props 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -5376,8 +5360,6 @@ exports[`Select renders disabled select 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -5688,8 +5670,6 @@ exports[`Select renders large Select 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -5987,8 +5967,6 @@ exports[`Select renders loading select 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -6285,8 +6263,6 @@ exports[`Select renders medium Select 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -6618,8 +6594,6 @@ exports[`Select renders select with a pre selected option 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -6961,8 +6935,6 @@ exports[`Select renders select with a selected option 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -7299,8 +7271,6 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -7671,8 +7641,6 @@ exports[`Select renders select with non-string options 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -7992,8 +7960,6 @@ exports[`Select renders small Select 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -8301,8 +8267,6 @@ exports[`Select should render custom placeholder 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -8610,8 +8574,6 @@ exports[`Select virtualize long list 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;

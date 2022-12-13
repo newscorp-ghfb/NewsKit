@@ -4146,8 +4146,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -5634,8 +5632,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -7441,8 +7437,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;

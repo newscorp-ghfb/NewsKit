@@ -272,6 +272,24 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-13 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #F0F1F3;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -283,7 +301,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   cursor: pointer;
 }
 
-.emotion-14 {
+.emotion-15 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -297,11 +315,11 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   margin-right: 12px;
 }
 
-.emotion-14 * {
+.emotion-15 * {
   box-sizing: border-box;
 }
 
-.emotion-15 {
+.emotion-16 {
   position: absolute;
   top: 50%;
   left: calc(100% - (24px / 2) - 4px);
@@ -316,36 +334,36 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-15:disabled {
+.emotion-16:disabled {
   opacity: 0;
 }
 
-.emotion-15:hover:active:not(:disabled) {
+.emotion-16:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-15:valid:hover:not(:disabled) {
+.emotion-16:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-15:valid:hover:active:not(:disabled) {
+.emotion-16:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-15:invalid:hover:not(:disabled) {
+.emotion-16:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-15:invalid:hover:active:not(:disabled) {
+.emotion-16:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
+  .emotion-16 {
     transition-property: inset,opacity;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
@@ -353,14 +371,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
+  .emotion-16 {
     transition-property: inset,opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-16 {
+.emotion-17 {
   position: absolute;
   top: 0;
   left: 0;
@@ -383,7 +401,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   padding-inline: 4px;
 }
 
-.emotion-16:focus-visible:not(:disabled) {
+.emotion-17:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -393,13 +411,13 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-16:focus-visible:not(:disabled) {
+    .emotion-17:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-17 {
+.emotion-18 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -408,7 +426,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   place-items: center;
 }
 
-.emotion-18 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -420,22 +438,22 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   justify-content: start;
 }
 
-.emotion-18 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-18:disabled svg {
+.emotion-19:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-18 svg {
+.emotion-19 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
   max-height: 32px;
 }
 
-.emotion-19 {
+.emotion-20 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -445,7 +463,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-19 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -453,14 +471,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-19 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-21 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -472,22 +490,22 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   justify-content: end;
 }
 
-.emotion-21 svg {
+.emotion-22 svg {
   fill: #FFFFFF;
 }
 
-.emotion-21:disabled svg {
+.emotion-22:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-21 svg {
+.emotion-22 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
   max-height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 24px;
@@ -501,12 +519,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   place-items: center;
 }
 
-.emotion-24 svg {
+.emotion-25 svg {
   fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: inset;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -514,14 +532,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: inset;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 }
 
-.emotion-25 {
+.emotion-26 {
   position: absolute;
   top: 0;
   left: 0;
@@ -531,7 +549,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   cursor: inherit;
 }
 
-.emotion-26 {
+.emotion-27 {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -540,11 +558,11 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   letter-spacing: 0;
 }
 
-.emotion-26:disabled {
+.emotion-27:disabled {
   color: #C0C7CC;
 }
 
-.emotion-27 {
+.emotion-28 {
   margin: 0;
   padding: 0;
   display: grid;
@@ -556,12 +574,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen {
-  .emotion-27 {
+  .emotion-28 {
     grid-template-rows: 48px;
   }
 }
 
-.emotion-28 {
+.emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -587,11 +605,11 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   text-overflow: ellipsis;
 }
 
-.emotion-28 svg {
+.emotion-29 svg {
   fill: #2E3F54;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-29:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -601,22 +619,22 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-29:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-28:hover:not(:disabled) {
+.emotion-29:hover:not(:disabled) {
   background-color: #F0F1F3;
 }
 
-.emotion-28:valid:hover:not(:disabled) {
+.emotion-29:valid:hover:not(:disabled) {
   border-color: #007B22;
   background-color: #F0F1F3;
 }
 
-.emotion-28:valid:focus:not(:disabled) {
+.emotion-29:valid:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -626,22 +644,22 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:valid:focus:not(:disabled) {
+    .emotion-29:valid:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-28:disabled {
+.emotion-29:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-28:disabled svg {
+.emotion-29:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-28:invalid:focus:not(:disabled) {
+.emotion-29:invalid:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -651,18 +669,18 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:invalid:focus:not(:disabled) {
+    .emotion-29:invalid:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-28:invalid:hover:not(:disabled) {
+.emotion-29:invalid:hover:not(:disabled) {
   border-color: #D60000;
   background-color: #F0F1F3;
 }
 
-.emotion-38 {
+.emotion-40 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -703,32 +721,32 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   margin-right: 20px;
 }
 
-.emotion-38 svg {
+.emotion-40 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-38 svg {
+.emotion-40 svg {
   fill: #3358CC;
 }
 
-.emotion-38:hover:not(:disabled) {
+.emotion-40:hover:not(:disabled) {
   background-color: #ECF1FF;
 }
 
-.emotion-38:active:not(:disabled) {
+.emotion-40:active:not(:disabled) {
   background-color: #D5E0FC;
 }
 
-.emotion-38:disabled {
+.emotion-40:disabled {
   color: #C0C7CC;
 }
 
-.emotion-38:disabled svg {
+.emotion-40:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-38:focus-visible:not(:disabled) {
+.emotion-40:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -737,14 +755,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-38:focus-visible:not(:disabled) {
+    .emotion-40:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-38 {
+  .emotion-40 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -752,14 +770,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-38 {
+  .emotion-40 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-39 {
+.emotion-41 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -770,19 +788,19 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   display: inline-block;
 }
 
-.emotion-39::before {
+.emotion-41::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-39::after {
+.emotion-41::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-40 {
+.emotion-42 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -822,33 +840,33 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   cursor: pointer;
 }
 
-.emotion-40 svg {
+.emotion-42 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-40 svg {
+.emotion-42 svg {
   fill: #FFFFFF;
 }
 
-.emotion-40:hover:not(:disabled) {
+.emotion-42:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-40:active:not(:disabled) {
+.emotion-42:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-40:disabled {
+.emotion-42:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-40:disabled svg {
+.emotion-42:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-40:focus-visible:not(:disabled) {
+.emotion-42:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -857,14 +875,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus-visible:not(:disabled) {
+    .emotion-42:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-40 {
+  .emotion-42 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -872,21 +890,21 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-40 {
+  .emotion-42 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-42 {
+.emotion-44 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-43 {
+.emotion-45 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
@@ -895,16 +913,16 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   scroll-snap-type: x mandatory;
 }
 
-.emotion-43::-webkit-scrollbar {
+.emotion-45::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-43 {
+.emotion-45 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.emotion-44 {
+.emotion-46 {
   margin: 0;
   padding: 0;
   display: grid;
@@ -914,20 +932,20 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   margin-block: 10vh;
 }
 
-.emotion-45 {
+.emotion-47 {
   scroll-snap-align: center;
 }
 
-.emotion-46 {
+.emotion-48 {
   padding: 0 10vw;
 }
 
-.emotion-46 svg {
+.emotion-48 svg {
   max-width: 80vw;
   max-height: 80vh;
 }
 
-.emotion-47 {
+.emotion-49 {
   margin: 0;
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
@@ -937,7 +955,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   letter-spacing: 0;
 }
 
-.emotion-47 svg {
+.emotion-49 svg {
   fill: #2E3F54;
 }
 
@@ -961,7 +979,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-22-toggle-button"
+            id="downshift-27-toggle-button"
             type="button"
             value="Patterns Theme"
           >
@@ -1008,29 +1026,38 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             </div>
           </div>
         </div>
-        <label
+        <div
+          aria-labelledby="downshift-27-label"
           class="emotion-13"
+          data-testid="select-panel"
+          id="downshift-27-menu"
+          role="listbox"
+          style="position: absolute; width: 0px; top: 0px; left: 0px;"
+          tabindex="-1"
+        />
+        <label
+          class="emotion-14"
         >
           <div
-            class="emotion-14"
+            class="emotion-15"
             role="presentation"
           >
             <div
-              class="emotion-15"
+              class="emotion-16"
               data-testid="checkbox-feedback"
             />
             <div
-              class="emotion-16"
+              class="emotion-17"
             >
               <div
-                class="emotion-17"
+                class="emotion-18"
               >
                 <div
-                  class="emotion-18"
+                  class="emotion-19"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-19 emotion-12"
+                    class="emotion-20 emotion-12"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1047,11 +1074,11 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                   </svg>
                 </div>
                 <div
-                  class="emotion-21"
+                  class="emotion-22"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-19 emotion-12"
+                    class="emotion-20 emotion-12"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -1068,12 +1095,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                   </svg>
                 </div>
                 <div
-                  class="emotion-24"
+                  class="emotion-25"
                 />
               </div>
               <input
                 checked=""
-                class="emotion-25"
+                class="emotion-26"
                 data-testid="checkbox-input"
                 role="switch"
                 tabindex="-1"
@@ -1082,17 +1109,17 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             </div>
           </div>
           <span
-            class="emotion-26"
+            class="emotion-27"
           >
             Toggle Theme
           </span>
         </label>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-28"
       >
         <div
-          class="emotion-28"
+          class="emotion-29"
         >
           <span
             class="emotion-4"
@@ -1102,7 +1129,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-27-toggle-button"
+            id="downshift-33-toggle-button"
             type="button"
             value="0"
           >
@@ -1149,24 +1176,33 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             </div>
           </div>
         </div>
+        <div
+          aria-labelledby="downshift-33-label"
+          class="emotion-13"
+          data-testid="select-panel"
+          id="downshift-33-menu"
+          role="listbox"
+          style="position: absolute; width: 0px; top: 0px; left: 0px;"
+          tabindex="-1"
+        />
         <button
-          class="emotion-38"
+          class="emotion-40"
           data-testid="single-svg-button"
           type="button"
         >
           <span
-            class="emotion-39"
+            class="emotion-41"
           >
             Download .svg
           </span>
         </button>
         <button
-          class="emotion-40"
+          class="emotion-42"
           data-testid="button"
           type="button"
         >
           <span
-            class="emotion-39"
+            class="emotion-41"
           >
             Download all .zip
           </span>
@@ -1174,25 +1210,25 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
       </div>
     </div>
     <div
-      class="emotion-42"
+      class="emotion-44"
     >
       <div
-        class="emotion-43"
+        class="emotion-45"
         data-testid="scroll-container"
         id="scroll"
         tabindex="0"
       >
         <div
-          class="emotion-44"
+          class="emotion-46"
         >
           <div
-            class="emotion-45"
+            class="emotion-47"
           >
             <div
-              class="emotion-46"
+              class="emotion-48"
             >
               <p
-                class="emotion-47"
+                class="emotion-49"
               >
                 SvgName
               </p>
@@ -1674,6 +1710,24 @@ Object {
 }
 
 .emotion-13 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #F0F1F3;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1685,7 +1739,7 @@ Object {
   cursor: pointer;
 }
 
-.emotion-14 {
+.emotion-15 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -1699,11 +1753,11 @@ Object {
   margin-right: 12px;
 }
 
-.emotion-14 * {
+.emotion-15 * {
   box-sizing: border-box;
 }
 
-.emotion-15 {
+.emotion-16 {
   position: absolute;
   top: 50%;
   left: calc(100% - (24px / 2) - 4px);
@@ -1718,36 +1772,36 @@ Object {
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-15:disabled {
+.emotion-16:disabled {
   opacity: 0;
 }
 
-.emotion-15:hover:active:not(:disabled) {
+.emotion-16:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-15:valid:hover:not(:disabled) {
+.emotion-16:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-15:valid:hover:active:not(:disabled) {
+.emotion-16:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-15:invalid:hover:not(:disabled) {
+.emotion-16:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-15:invalid:hover:active:not(:disabled) {
+.emotion-16:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
+  .emotion-16 {
     transition-property: inset,opacity;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
@@ -1755,14 +1809,14 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
+  .emotion-16 {
     transition-property: inset,opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-16 {
+.emotion-17 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1785,7 +1839,7 @@ Object {
   padding-inline: 4px;
 }
 
-.emotion-16:focus-visible:not(:disabled) {
+.emotion-17:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -1795,13 +1849,13 @@ Object {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-16:focus-visible:not(:disabled) {
+    .emotion-17:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-17 {
+.emotion-18 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1810,7 +1864,7 @@ Object {
   place-items: center;
 }
 
-.emotion-18 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1822,22 +1876,22 @@ Object {
   justify-content: start;
 }
 
-.emotion-18 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-18:disabled svg {
+.emotion-19:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-18 svg {
+.emotion-19 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
   max-height: 32px;
 }
 
-.emotion-19 {
+.emotion-20 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1847,7 +1901,7 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-19 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1855,14 +1909,14 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-19 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-21 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1874,22 +1928,22 @@ Object {
   justify-content: end;
 }
 
-.emotion-21 svg {
+.emotion-22 svg {
   fill: #FFFFFF;
 }
 
-.emotion-21:disabled svg {
+.emotion-22:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-21 svg {
+.emotion-22 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
   max-height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 24px;
@@ -1903,12 +1957,12 @@ Object {
   place-items: center;
 }
 
-.emotion-24 svg {
+.emotion-25 svg {
   fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: inset;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -1916,14 +1970,14 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: inset;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 }
 
-.emotion-25 {
+.emotion-26 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1933,7 +1987,7 @@ Object {
   cursor: inherit;
 }
 
-.emotion-26 {
+.emotion-27 {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -1942,11 +1996,11 @@ Object {
   letter-spacing: 0;
 }
 
-.emotion-26:disabled {
+.emotion-27:disabled {
   color: #C0C7CC;
 }
 
-.emotion-27 {
+.emotion-28 {
   margin: 0;
   padding: 0;
   display: grid;
@@ -1958,12 +2012,12 @@ Object {
 }
 
 @media screen {
-  .emotion-27 {
+  .emotion-28 {
     grid-template-rows: 48px;
   }
 }
 
-.emotion-28 {
+.emotion-29 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -2004,32 +2058,32 @@ Object {
   margin-right: 20px;
 }
 
-.emotion-28 svg {
+.emotion-29 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-28 svg {
+.emotion-29 svg {
   fill: #3358CC;
 }
 
-.emotion-28:hover:not(:disabled) {
+.emotion-29:hover:not(:disabled) {
   background-color: #ECF1FF;
 }
 
-.emotion-28:active:not(:disabled) {
+.emotion-29:active:not(:disabled) {
   background-color: #D5E0FC;
 }
 
-.emotion-28:disabled {
+.emotion-29:disabled {
   color: #C0C7CC;
 }
 
-.emotion-28:disabled svg {
+.emotion-29:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-28:focus-visible:not(:disabled) {
+.emotion-29:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2038,14 +2092,14 @@ Object {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus-visible:not(:disabled) {
+    .emotion-29:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-28 {
+  .emotion-29 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2053,14 +2107,14 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-28 {
+  .emotion-29 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-29 {
+.emotion-30 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2071,19 +2125,19 @@ Object {
   display: inline-block;
 }
 
-.emotion-29::before {
+.emotion-30::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-29::after {
+.emotion-30::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-30 {
+.emotion-31 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -2123,33 +2177,33 @@ Object {
   cursor: pointer;
 }
 
-.emotion-30 svg {
+.emotion-31 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-30 svg {
+.emotion-31 svg {
   fill: #FFFFFF;
 }
 
-.emotion-30:hover:not(:disabled) {
+.emotion-31:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-30:active:not(:disabled) {
+.emotion-31:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-30:disabled {
+.emotion-31:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-30:disabled svg {
+.emotion-31:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-30:focus-visible:not(:disabled) {
+.emotion-31:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2158,14 +2212,14 @@ Object {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-30:focus-visible:not(:disabled) {
+    .emotion-31:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-30 {
+  .emotion-31 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2173,32 +2227,11 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-30 {
+  .emotion-31 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-32 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 0px;
-  display: none;
-  background-color: #F0F1F3;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
 }
 
 <body>
@@ -2271,29 +2304,38 @@ Object {
                 </div>
               </div>
             </div>
-            <label
+            <div
+              aria-labelledby="downshift-0-label"
               class="emotion-13"
+              data-testid="select-panel"
+              id="downshift-0-menu"
+              role="listbox"
+              style="position: absolute;"
+              tabindex="-1"
+            />
+            <label
+              class="emotion-14"
             >
               <div
-                class="emotion-14"
+                class="emotion-15"
                 role="presentation"
               >
                 <div
-                  class="emotion-15"
+                  class="emotion-16"
                   data-testid="checkbox-feedback"
                 />
                 <div
-                  class="emotion-16"
+                  class="emotion-17"
                 >
                   <div
-                    class="emotion-17"
+                    class="emotion-18"
                   >
                     <div
-                      class="emotion-18"
+                      class="emotion-19"
                     >
                       <svg
                         aria-hidden="true"
-                        class="emotion-19 emotion-12"
+                        class="emotion-20 emotion-12"
                         fill="currentColor"
                         focusable="false"
                         viewBox="0 0 24 24"
@@ -2310,11 +2352,11 @@ Object {
                       </svg>
                     </div>
                     <div
-                      class="emotion-21"
+                      class="emotion-22"
                     >
                       <svg
                         aria-hidden="true"
-                        class="emotion-19 emotion-12"
+                        class="emotion-20 emotion-12"
                         fill="currentColor"
                         focusable="false"
                         viewBox="0 0 24 24"
@@ -2331,12 +2373,12 @@ Object {
                       </svg>
                     </div>
                     <div
-                      class="emotion-24"
+                      class="emotion-25"
                     />
                   </div>
                   <input
                     checked=""
-                    class="emotion-25"
+                    class="emotion-26"
                     data-testid="checkbox-input"
                     role="switch"
                     tabindex="-1"
@@ -2345,33 +2387,33 @@ Object {
                 </div>
               </div>
               <span
-                class="emotion-26"
+                class="emotion-27"
               >
                 Toggle Theme
               </span>
             </label>
           </div>
           <div
-            class="emotion-27"
+            class="emotion-28"
           >
             <button
-              class="emotion-28"
+              class="emotion-29"
               data-testid="single-svg-button"
               type="button"
             >
               <span
-                class="emotion-29"
+                class="emotion-30"
               >
                 Download .svg
               </span>
             </button>
             <button
-              class="emotion-30"
+              class="emotion-31"
               data-testid="button"
               type="button"
             >
               <span
-                class="emotion-29"
+                class="emotion-30"
               >
                 Download all .zip
               </span>
@@ -2382,21 +2424,7 @@ Object {
     </div>
     <div
       class="nk-layer-organizer"
-    >
-      <div
-        class="nk-layer"
-      >
-        <div
-          aria-labelledby="downshift-0-label"
-          class="emotion-32"
-          data-testid="select-panel"
-          id="downshift-0-menu"
-          role="listbox"
-          style="transform: translate3d(0px, 0px, 0);"
-          tabindex="-1"
-        />
-      </div>
-    </div>
+    />
   </body>,
   "container": .emotion-0 {
   margin: 0;
@@ -2668,6 +2696,24 @@ Object {
 }
 
 .emotion-13 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #F0F1F3;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2679,7 +2725,7 @@ Object {
   cursor: pointer;
 }
 
-.emotion-14 {
+.emotion-15 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -2693,11 +2739,11 @@ Object {
   margin-right: 12px;
 }
 
-.emotion-14 * {
+.emotion-15 * {
   box-sizing: border-box;
 }
 
-.emotion-15 {
+.emotion-16 {
   position: absolute;
   top: 50%;
   left: calc(100% - (24px / 2) - 4px);
@@ -2712,36 +2758,36 @@ Object {
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-15:disabled {
+.emotion-16:disabled {
   opacity: 0;
 }
 
-.emotion-15:hover:active:not(:disabled) {
+.emotion-16:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-15:valid:hover:not(:disabled) {
+.emotion-16:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-15:valid:hover:active:not(:disabled) {
+.emotion-16:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-15:invalid:hover:not(:disabled) {
+.emotion-16:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-15:invalid:hover:active:not(:disabled) {
+.emotion-16:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
+  .emotion-16 {
     transition-property: inset,opacity;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
@@ -2749,14 +2795,14 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
+  .emotion-16 {
     transition-property: inset,opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-16 {
+.emotion-17 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2779,7 +2825,7 @@ Object {
   padding-inline: 4px;
 }
 
-.emotion-16:focus-visible:not(:disabled) {
+.emotion-17:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2789,13 +2835,13 @@ Object {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-16:focus-visible:not(:disabled) {
+    .emotion-17:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-17 {
+.emotion-18 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -2804,7 +2850,7 @@ Object {
   place-items: center;
 }
 
-.emotion-18 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2816,22 +2862,22 @@ Object {
   justify-content: start;
 }
 
-.emotion-18 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-18:disabled svg {
+.emotion-19:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-18 svg {
+.emotion-19 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
   max-height: 32px;
 }
 
-.emotion-19 {
+.emotion-20 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2841,7 +2887,7 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-19 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2849,14 +2895,14 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-19 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-21 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2868,22 +2914,22 @@ Object {
   justify-content: end;
 }
 
-.emotion-21 svg {
+.emotion-22 svg {
   fill: #FFFFFF;
 }
 
-.emotion-21:disabled svg {
+.emotion-22:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-21 svg {
+.emotion-22 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
   max-height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 24px;
@@ -2897,12 +2943,12 @@ Object {
   place-items: center;
 }
 
-.emotion-24 svg {
+.emotion-25 svg {
   fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: inset;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -2910,14 +2956,14 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: inset;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 }
 
-.emotion-25 {
+.emotion-26 {
   position: absolute;
   top: 0;
   left: 0;
@@ -2927,7 +2973,7 @@ Object {
   cursor: inherit;
 }
 
-.emotion-26 {
+.emotion-27 {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -2936,11 +2982,11 @@ Object {
   letter-spacing: 0;
 }
 
-.emotion-26:disabled {
+.emotion-27:disabled {
   color: #C0C7CC;
 }
 
-.emotion-27 {
+.emotion-28 {
   margin: 0;
   padding: 0;
   display: grid;
@@ -2952,12 +2998,12 @@ Object {
 }
 
 @media screen {
-  .emotion-27 {
+  .emotion-28 {
     grid-template-rows: 48px;
   }
 }
 
-.emotion-28 {
+.emotion-29 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -2998,32 +3044,32 @@ Object {
   margin-right: 20px;
 }
 
-.emotion-28 svg {
+.emotion-29 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-28 svg {
+.emotion-29 svg {
   fill: #3358CC;
 }
 
-.emotion-28:hover:not(:disabled) {
+.emotion-29:hover:not(:disabled) {
   background-color: #ECF1FF;
 }
 
-.emotion-28:active:not(:disabled) {
+.emotion-29:active:not(:disabled) {
   background-color: #D5E0FC;
 }
 
-.emotion-28:disabled {
+.emotion-29:disabled {
   color: #C0C7CC;
 }
 
-.emotion-28:disabled svg {
+.emotion-29:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-28:focus-visible:not(:disabled) {
+.emotion-29:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3032,14 +3078,14 @@ Object {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus-visible:not(:disabled) {
+    .emotion-29:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-28 {
+  .emotion-29 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3047,14 +3093,14 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-28 {
+  .emotion-29 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-29 {
+.emotion-30 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3065,19 +3111,19 @@ Object {
   display: inline-block;
 }
 
-.emotion-29::before {
+.emotion-30::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-29::after {
+.emotion-30::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-30 {
+.emotion-31 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -3117,33 +3163,33 @@ Object {
   cursor: pointer;
 }
 
-.emotion-30 svg {
+.emotion-31 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-30 svg {
+.emotion-31 svg {
   fill: #FFFFFF;
 }
 
-.emotion-30:hover:not(:disabled) {
+.emotion-31:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-30:active:not(:disabled) {
+.emotion-31:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-30:disabled {
+.emotion-31:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-30:disabled svg {
+.emotion-31:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-30:focus-visible:not(:disabled) {
+.emotion-31:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3152,14 +3198,14 @@ Object {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-30:focus-visible:not(:disabled) {
+    .emotion-31:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-30 {
+  .emotion-31 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3167,7 +3213,7 @@ Object {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-30 {
+  .emotion-31 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3243,29 +3289,38 @@ Object {
               </div>
             </div>
           </div>
-          <label
+          <div
+            aria-labelledby="downshift-0-label"
             class="emotion-13"
+            data-testid="select-panel"
+            id="downshift-0-menu"
+            role="listbox"
+            style="position: absolute;"
+            tabindex="-1"
+          />
+          <label
+            class="emotion-14"
           >
             <div
-              class="emotion-14"
+              class="emotion-15"
               role="presentation"
             >
               <div
-                class="emotion-15"
+                class="emotion-16"
                 data-testid="checkbox-feedback"
               />
               <div
-                class="emotion-16"
+                class="emotion-17"
               >
                 <div
-                  class="emotion-17"
+                  class="emotion-18"
                 >
                   <div
-                    class="emotion-18"
+                    class="emotion-19"
                   >
                     <svg
                       aria-hidden="true"
-                      class="emotion-19 emotion-12"
+                      class="emotion-20 emotion-12"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -3282,11 +3337,11 @@ Object {
                     </svg>
                   </div>
                   <div
-                    class="emotion-21"
+                    class="emotion-22"
                   >
                     <svg
                       aria-hidden="true"
-                      class="emotion-19 emotion-12"
+                      class="emotion-20 emotion-12"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -3303,12 +3358,12 @@ Object {
                     </svg>
                   </div>
                   <div
-                    class="emotion-24"
+                    class="emotion-25"
                   />
                 </div>
                 <input
                   checked=""
-                  class="emotion-25"
+                  class="emotion-26"
                   data-testid="checkbox-input"
                   role="switch"
                   tabindex="-1"
@@ -3317,33 +3372,33 @@ Object {
               </div>
             </div>
             <span
-              class="emotion-26"
+              class="emotion-27"
             >
               Toggle Theme
             </span>
           </label>
         </div>
         <div
-          class="emotion-27"
+          class="emotion-28"
         >
           <button
-            class="emotion-28"
+            class="emotion-29"
             data-testid="single-svg-button"
             type="button"
           >
             <span
-              class="emotion-29"
+              class="emotion-30"
             >
               Download .svg
             </span>
           </button>
           <button
-            class="emotion-30"
+            class="emotion-31"
             data-testid="button"
             type="button"
           >
             <span
-              class="emotion-29"
+              class="emotion-30"
             >
               Download all .zip
             </span>
@@ -3678,6 +3733,24 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-13 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #F0F1F3;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3689,7 +3762,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   cursor: pointer;
 }
 
-.emotion-14 {
+.emotion-15 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -3703,11 +3776,11 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-right: 12px;
 }
 
-.emotion-14 * {
+.emotion-15 * {
   box-sizing: border-box;
 }
 
-.emotion-15 {
+.emotion-16 {
   position: absolute;
   top: 50%;
   left: calc(100% - (24px / 2) - 4px);
@@ -3722,36 +3795,36 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
 }
 
-.emotion-15:disabled {
+.emotion-16:disabled {
   opacity: 0;
 }
 
-.emotion-15:hover:active:not(:disabled) {
+.emotion-16:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-15:valid:hover:not(:disabled) {
+.emotion-16:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-15:valid:hover:active:not(:disabled) {
+.emotion-16:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-15:invalid:hover:not(:disabled) {
+.emotion-16:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-15:invalid:hover:active:not(:disabled) {
+.emotion-16:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
+  .emotion-16 {
     transition-property: inset,opacity;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
@@ -3759,14 +3832,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
+  .emotion-16 {
     transition-property: inset,opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-16 {
+.emotion-17 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3789,7 +3862,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   padding-inline: 4px;
 }
 
-.emotion-16:focus-visible:not(:disabled) {
+.emotion-17:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3799,13 +3872,13 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-16:focus-visible:not(:disabled) {
+    .emotion-17:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-17 {
+.emotion-18 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -3814,7 +3887,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   place-items: center;
 }
 
-.emotion-18 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3826,22 +3899,22 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   justify-content: start;
 }
 
-.emotion-18 svg {
+.emotion-19 svg {
   fill: #FFFFFF;
 }
 
-.emotion-18:disabled svg {
+.emotion-19:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-18 svg {
+.emotion-19 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
   max-height: 32px;
 }
 
-.emotion-19 {
+.emotion-20 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3851,7 +3924,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-19 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3859,14 +3932,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-19 {
+  .emotion-20 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-21 {
+.emotion-22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3878,22 +3951,22 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   justify-content: end;
 }
 
-.emotion-21 svg {
+.emotion-22 svg {
   fill: #FFFFFF;
 }
 
-.emotion-21:disabled svg {
+.emotion-22:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-21 svg {
+.emotion-22 svg {
   height: 100%;
   width: 100%;
   max-width: 24px;
   max-height: 32px;
 }
 
-.emotion-24 {
+.emotion-25 {
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 24px;
@@ -3907,12 +3980,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   place-items: center;
 }
 
-.emotion-24 svg {
+.emotion-25 svg {
   fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: inset;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -3920,14 +3993,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
+  .emotion-25 {
     transition-property: inset;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 }
 
-.emotion-25 {
+.emotion-26 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3937,7 +4010,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   cursor: inherit;
 }
 
-.emotion-26 {
+.emotion-27 {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -3946,11 +4019,11 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   letter-spacing: 0;
 }
 
-.emotion-26:disabled {
+.emotion-27:disabled {
   color: #C0C7CC;
 }
 
-.emotion-27 {
+.emotion-28 {
   margin: 0;
   padding: 0;
   display: grid;
@@ -3962,12 +4035,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen {
-  .emotion-27 {
+  .emotion-28 {
     grid-template-rows: 48px;
   }
 }
 
-.emotion-28 {
+.emotion-29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3993,11 +4066,11 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   text-overflow: ellipsis;
 }
 
-.emotion-28 svg {
+.emotion-29 svg {
   fill: #2E3F54;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-29:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4007,22 +4080,22 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-29:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-28:hover:not(:disabled) {
+.emotion-29:hover:not(:disabled) {
   background-color: #F0F1F3;
 }
 
-.emotion-28:valid:hover:not(:disabled) {
+.emotion-29:valid:hover:not(:disabled) {
   border-color: #007B22;
   background-color: #F0F1F3;
 }
 
-.emotion-28:valid:focus:not(:disabled) {
+.emotion-29:valid:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4032,22 +4105,22 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:valid:focus:not(:disabled) {
+    .emotion-29:valid:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-28:disabled {
+.emotion-29:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-28:disabled svg {
+.emotion-29:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-28:invalid:focus:not(:disabled) {
+.emotion-29:invalid:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4057,18 +4130,18 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:invalid:focus:not(:disabled) {
+    .emotion-29:invalid:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-28:invalid:hover:not(:disabled) {
+.emotion-29:invalid:hover:not(:disabled) {
   border-color: #D60000;
   background-color: #F0F1F3;
 }
 
-.emotion-38 {
+.emotion-40 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -4109,32 +4182,32 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-right: 20px;
 }
 
-.emotion-38 svg {
+.emotion-40 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-38 svg {
+.emotion-40 svg {
   fill: #3358CC;
 }
 
-.emotion-38:hover:not(:disabled) {
+.emotion-40:hover:not(:disabled) {
   background-color: #ECF1FF;
 }
 
-.emotion-38:active:not(:disabled) {
+.emotion-40:active:not(:disabled) {
   background-color: #D5E0FC;
 }
 
-.emotion-38:disabled {
+.emotion-40:disabled {
   color: #C0C7CC;
 }
 
-.emotion-38:disabled svg {
+.emotion-40:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-38:focus-visible:not(:disabled) {
+.emotion-40:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4143,14 +4216,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-38:focus-visible:not(:disabled) {
+    .emotion-40:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-38 {
+  .emotion-40 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4158,14 +4231,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-38 {
+  .emotion-40 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-39 {
+.emotion-41 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -4176,19 +4249,19 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   display: inline-block;
 }
 
-.emotion-39::before {
+.emotion-41::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-39::after {
+.emotion-41::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-40 {
+.emotion-42 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -4228,33 +4301,33 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   cursor: pointer;
 }
 
-.emotion-40 svg {
+.emotion-42 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-40 svg {
+.emotion-42 svg {
   fill: #FFFFFF;
 }
 
-.emotion-40:hover:not(:disabled) {
+.emotion-42:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-40:active:not(:disabled) {
+.emotion-42:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-40:disabled {
+.emotion-42:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-40:disabled svg {
+.emotion-42:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-40:focus-visible:not(:disabled) {
+.emotion-42:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4263,14 +4336,14 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus-visible:not(:disabled) {
+    .emotion-42:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-40 {
+  .emotion-42 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4278,21 +4351,21 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-40 {
+  .emotion-42 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-42 {
+.emotion-44 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   height: 100%;
 }
 
-.emotion-43 {
+.emotion-45 {
   box-sizing: border-box;
   height: 100%;
   overflow-x: auto;
@@ -4301,16 +4374,16 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   scroll-snap-type: x mandatory;
 }
 
-.emotion-43::-webkit-scrollbar {
+.emotion-45::-webkit-scrollbar {
   display: none;
 }
 
-.emotion-43 {
+.emotion-45 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.emotion-44 {
+.emotion-46 {
   margin: 0;
   padding: 0;
   display: grid;
@@ -4320,20 +4393,20 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-block: 10vh;
 }
 
-.emotion-45 {
+.emotion-47 {
   scroll-snap-align: center;
 }
 
-.emotion-46 {
+.emotion-48 {
   padding: 0 10vw;
 }
 
-.emotion-46 svg {
+.emotion-48 svg {
   max-width: 80vw;
   max-height: 80vh;
 }
 
-.emotion-47 {
+.emotion-49 {
   margin: 0;
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
@@ -4343,7 +4416,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   letter-spacing: 0;
 }
 
-.emotion-47 svg {
+.emotion-49 svg {
   fill: #2E3F54;
 }
 
@@ -4367,7 +4440,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-4-toggle-button"
+            id="downshift-5-toggle-button"
             type="button"
             value="Docs Theme"
           >
@@ -4414,29 +4487,38 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             </div>
           </div>
         </div>
-        <label
+        <div
+          aria-labelledby="downshift-5-label"
           class="emotion-13"
+          data-testid="select-panel"
+          id="downshift-5-menu"
+          role="listbox"
+          style="position: absolute; width: 0px; top: 0px; left: 0px;"
+          tabindex="-1"
+        />
+        <label
+          class="emotion-14"
         >
           <div
-            class="emotion-14"
+            class="emotion-15"
             role="presentation"
           >
             <div
-              class="emotion-15"
+              class="emotion-16"
               data-testid="checkbox-feedback"
             />
             <div
-              class="emotion-16"
+              class="emotion-17"
             >
               <div
-                class="emotion-17"
+                class="emotion-18"
               >
                 <div
-                  class="emotion-18"
+                  class="emotion-19"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-19 emotion-12"
+                    class="emotion-20 emotion-12"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -4453,11 +4535,11 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
                   </svg>
                 </div>
                 <div
-                  class="emotion-21"
+                  class="emotion-22"
                 >
                   <svg
                     aria-hidden="true"
-                    class="emotion-19 emotion-12"
+                    class="emotion-20 emotion-12"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -4474,12 +4556,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
                   </svg>
                 </div>
                 <div
-                  class="emotion-24"
+                  class="emotion-25"
                 />
               </div>
               <input
                 checked=""
-                class="emotion-25"
+                class="emotion-26"
                 data-testid="checkbox-input"
                 role="switch"
                 tabindex="-1"
@@ -4488,17 +4570,17 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             </div>
           </div>
           <span
-            class="emotion-26"
+            class="emotion-27"
           >
             Toggle Theme
           </span>
         </label>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-28"
       >
         <div
-          class="emotion-28"
+          class="emotion-29"
         >
           <span
             class="emotion-4"
@@ -4508,7 +4590,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-9-toggle-button"
+            id="downshift-11-toggle-button"
             type="button"
             value="0"
           >
@@ -4555,24 +4637,33 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             </div>
           </div>
         </div>
+        <div
+          aria-labelledby="downshift-11-label"
+          class="emotion-13"
+          data-testid="select-panel"
+          id="downshift-11-menu"
+          role="listbox"
+          style="position: absolute; width: 0px; top: 0px; left: 0px;"
+          tabindex="-1"
+        />
         <button
-          class="emotion-38"
+          class="emotion-40"
           data-testid="single-svg-button"
           type="button"
         >
           <span
-            class="emotion-39"
+            class="emotion-41"
           >
             Download .svg
           </span>
         </button>
         <button
-          class="emotion-40"
+          class="emotion-42"
           data-testid="button"
           type="button"
         >
           <span
-            class="emotion-39"
+            class="emotion-41"
           >
             Download all .zip
           </span>
@@ -4580,25 +4671,25 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
       </div>
     </div>
     <div
-      class="emotion-42"
+      class="emotion-44"
     >
       <div
-        class="emotion-43"
+        class="emotion-45"
         data-testid="scroll-container"
         id="scroll"
         tabindex="0"
       >
         <div
-          class="emotion-44"
+          class="emotion-46"
         >
           <div
-            class="emotion-45"
+            class="emotion-47"
           >
             <div
-              class="emotion-46"
+              class="emotion-48"
             >
               <p
-                class="emotion-47"
+                class="emotion-49"
               >
                 SvgName
               </p>
