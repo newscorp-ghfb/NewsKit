@@ -7,7 +7,7 @@ import {
 } from 'newskit';
 import ReactMarkdown, {ReactMarkdownOptions} from 'react-markdown';
 import {getSheets} from '../../utils/google-sheet';
-import {formatSheetData} from '../../utils/google-sheet/utils';
+import {formatSheetData, getCMSList} from '../../utils/google-sheet/utils';
 import {AboutPageTemplate} from '../../templates/about-page-template';
 import {LayoutProps} from '../../components/layout';
 import {
@@ -76,11 +76,6 @@ const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
   /* eslint-enable @typescript-eslint/no-shadow */
 );
 
-const getCMSList = (content: RoadmapContent, listKey: keyof RoadmapContent) =>
-  Object.entries(content)
-    .filter(entry => entry[0].startsWith(listKey))
-    .map(entry => <FormatMarkdown>{entry[1]}</FormatMarkdown>);
-
 const Roadmap = ({
   content,
   ...layoutProps
@@ -90,9 +85,15 @@ const Roadmap = ({
 
   const introSecondary = content.intro_secondary;
 
-  const currentList = getCMSList(content, 'current_li');
-  const comingupList = getCMSList(content, 'comingup_li');
-  const futureList = getCMSList(content, 'future_li');
+  const currentList = getCMSList(content, 'current_li').map(entry => (
+    <FormatMarkdown>{entry[1]}</FormatMarkdown>
+  ));
+  const comingupList = getCMSList(content, 'comingup_li').map(entry => (
+    <FormatMarkdown>{entry[1]}</FormatMarkdown>
+  ));
+  const futureList = getCMSList(content, 'future_li').map(entry => (
+    <FormatMarkdown>{entry[1]}</FormatMarkdown>
+  ));
 
   if (currentList.length && comingupList.length && futureList.length) {
     return (
