@@ -200,7 +200,7 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/character-count/character-limit',
+            'components/character-count/options/character-limit',
           ),
         },
       ],
@@ -213,7 +213,9 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           title: 'Base',
           description:
             'The character count has a base state. This is the base style of the input before the input has been interacted with by a user.',
-          media: getIllustrationComponent('components/character-count/base'),
+          media: getIllustrationComponent(
+            'components/character-count/states/base',
+          ),
         },
         {
           title: 'Invalid',
@@ -234,7 +236,9 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
               component is used to define this validation behaviour.
             </>
           ),
-          media: getIllustrationComponent('components/character-count/invalid'),
+          media: getIllustrationComponent(
+            'components/character-count/states/invalid',
+          ),
         },
         {
           title: 'Valid',
@@ -255,14 +259,16 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
               component is used to define this validation behaviour.
             </>
           ),
-          media: getIllustrationComponent('components/character-count/valid'),
+          media: getIllustrationComponent(
+            'components/character-count/states/valid',
+          ),
         },
         {
           title: 'Disabled',
           description:
             'The character count in a disabled state shows that an input exists, but is not available to the user in that scenario. When a user’s cursor hovers over an input in a disabled state the cursor shows as not-allowed, and the character count state changes.',
           media: getIllustrationComponent(
-            'components/character-count/disabled',
+            'components/character-count/states/disabled',
           ),
         },
       ],
@@ -276,7 +282,9 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           description:
             'If a user tries to submit a form with an exceeded character count, an error message should display prompting them to reduce the number of characters.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/character-count/do-01'),
+          media: getIllustrationComponent(
+            'components/character-count/usage/do-01',
+          ),
         },
         {
           description: (
@@ -299,13 +307,17 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/character-count/dont-1'),
+          media: getIllustrationComponent(
+            'components/character-count/usage/dont-1',
+          ),
         },
         {
           description:
             'In some cases, it may be more helpful to show a word count. For example, if your question requires a longer answer, you can set data-maxwords in the component markup. E.g.//data-maxwords="100"//.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/character-count/do-2'),
+          media: getIllustrationComponent(
+            'components/character-count/usage/do-2',
+          ),
         },
       ],
     }}
