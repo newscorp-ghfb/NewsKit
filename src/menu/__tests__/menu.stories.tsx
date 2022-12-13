@@ -1818,7 +1818,7 @@ export const StorySubMenuNestedUncontrolled = () => (
           <MenuItem href={href} id="nu-1.3.1">
             1.3.1
           </MenuItem>
-          <MenuSub title="1.3.2" id="nu-1.3.2">
+          <MenuSub title="1.3.2" id="nu-1.3.2" defaultExpanded>
             <MenuItem href={href} id="nu-1.3.2.1">
               1.3.2.1
             </MenuItem>
