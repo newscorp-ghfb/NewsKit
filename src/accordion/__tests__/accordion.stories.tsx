@@ -13,7 +13,9 @@ import {AccordionGroup} from '../accordion-group';
 
 const COLS = '1fr';
 const CONTENT = (
-  <TextBlock typographyPreset="editorialParagraph010">Panel content</TextBlock>
+  <TextBlock typographyPreset="editorialParagraph010" stylePreset="inkContrast">
+    Panel content
+  </TextBlock>
 );
 
 const IconContainer = styled(Block)`
@@ -87,7 +89,7 @@ export const StoryAccordionVariations = () => (
         header={
           <IconContainer>
             <Image
-              src="/placeholder-3x2.png"
+              src="/1x1-placeholder.png"
               alt="Example Image"
               overrides={{
                 height: '30px',
@@ -316,7 +318,7 @@ export const StoryAccordionTransitionOverrides = () => {
     header: {
       transitionPreset: {
         extend: 'backgroundColorChange',
-        base: {transitionDuration: '500ms'},
+        base: {transitionDuration: '1000ms'},
       },
     },
     panel: {
@@ -324,13 +326,13 @@ export const StoryAccordionTransitionOverrides = () => {
         {
           extend: 'maxHeightChange',
           base: {transitionProperty: 'max-height'},
-          enterActive: {transitionDuration: '500ms'},
-          exitActive: {transitionDuration: '500ms'},
+          enterActive: {transitionDuration: '1500ms'},
+          exitActive: {transitionDuration: '1500ms'},
         },
         {
           extend: 'slideLeft',
-          enterActive: {transitionDuration: '500ms'},
-          exitActive: {transitionDuration: '500ms'},
+          enterActive: {transitionDuration: '1500ms'},
+          exitActive: {transitionDuration: '1500ms'},
         },
       ],
     },
@@ -473,7 +475,7 @@ export default {
       title: 'Accordion',
       url: 'https://newskit.co.uk/components/accordion',
       description:
-        'Accordions show and hide related CONTENT. Use them to break up long pages into segmented, prioritised sections.',
+        'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
     },
   },
   disabledRules: ['landmark-unique'],
