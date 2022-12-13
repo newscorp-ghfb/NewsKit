@@ -137,7 +137,7 @@ const Roadmap = ({
                   content: {
                     typographyPreset: {
                       xs: 'editorialParagraph020',
-                      sm: 'editorialParagraph030',
+                      md: 'editorialParagraph030',
                     },
                     stylePreset: 'inkBase',
                   },
@@ -160,7 +160,7 @@ const Roadmap = ({
                   content: {
                     typographyPreset: {
                       xs: 'editorialParagraph020',
-                      sm: 'editorialParagraph030',
+                      md: 'editorialParagraph030',
                     },
                     stylePreset: 'inkBase',
                   },
@@ -183,7 +183,7 @@ const Roadmap = ({
                   content: {
                     typographyPreset: {
                       xs: 'editorialParagraph020',
-                      sm: 'editorialParagraph030',
+                      md: 'editorialParagraph030',
                     },
                     stylePreset: 'inkBase',
                   },
