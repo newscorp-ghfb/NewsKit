@@ -263,7 +263,7 @@ const Colours = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Colours',
       description:
-        'Colours help express brand identity and convey meaning to users.',
+        'Colours express brand identity and convey meaning to users.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{

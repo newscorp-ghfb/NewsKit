@@ -77,7 +77,7 @@ const Index = ({
             )}
             buttonOverrides={{
               paddingInline: 'space000',
-              typographyPreset: 'utilityButton020',
+              stylePreset: 'linkStandaloneInversePersistent',
             }}
           />
         </GridLayout>
@@ -117,8 +117,7 @@ const Index = ({
             buttonHref="/about/contribute"
             buttonOverrides={{
               paddingInline: 'space000',
-              typographyPreset: 'utilityButton020',
-              stylePreset: 'linkStandaloneInverse',
+              stylePreset: 'linkStandaloneInversePersistent',
             }}
           />
         </GridLayout>

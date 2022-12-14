@@ -18,7 +18,10 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
       stylePrefix="latestReleaseCard"
       layout="horizontal"
       overrides={{
-        title: {typographyPreset: 'editorialHeadline060'},
+        title: {
+          typographyPreset: 'editorialHeadline060',
+          stylePreset: 'inkContrast',
+        },
         description: {
           typographyPreset: 'editorialSubheadline010',
           stylePreset: 'inkBase',

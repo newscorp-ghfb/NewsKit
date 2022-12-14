@@ -14,6 +14,7 @@ export interface FeatureCardProps
   overrides?: {
     title?: {
       typographyPreset?: MQ<string>;
+      stylePreset?: MQ<string>;
     };
     description?: {
       typographyPreset?: MQ<string>;

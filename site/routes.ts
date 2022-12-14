@@ -175,8 +175,7 @@ export const routes = [
             page: true,
             id: '/theme/foundation/colours',
             illustration: 'theme/colours/hero',
-            description:
-              'Colours help express brand identity and convey meaning.',
+            description: 'Colours express brand identity and convey meaning.',
             buttonLabel: 'Learn more about colours',
           },
           {
@@ -184,7 +183,8 @@ export const routes = [
             page: true,
             id: '/theme/foundation/design-tokens',
             illustration: 'theme/design-tokens/hero',
-            description: `Design tokens are used in the place of hard-coded values to allow a scalable and cohesive system.`,
+            description:
+              'Design tokens are used in the place of hard-coded values to allow a scalable and cohesive system.',
             buttonLabel: 'Learn more about design tokens',
           },
           {
@@ -287,7 +287,7 @@ export const routes = [
             illustration: 'theme/style-presets/hero',
             description:
               'A collection of foundational design tokens combined into a preset.',
-            buttonLabel: 'Learn more about ',
+            buttonLabel: 'Learn more about style presets',
           },
           {
             title: 'Transition Presets',
@@ -344,6 +344,7 @@ export const routes = [
               'A preselected option that is applied to a component to define its appearance or behaviour.',
             page: true,
             id: '/theme/theming/component-defaults',
+            buttonLabel: 'Learn more about component defaults',
           },
         ],
       },
@@ -906,6 +907,7 @@ export const routes = [
             id: '/patterns/forms/overview',
             description: 'Forms are used to collect customer’s data.',
             illustration: 'patterns/forms/overview/hero',
+            buttonLabel: 'Learn more about forms',
           },
           {
             title: 'Best practice',

@@ -66,16 +66,8 @@ const ArrowLink: React.FC<ArrowLinkProps> = ({
           href={buttonHref as string}
           overrides={combinedOverrides}
         >
-          <TextBlock typographyPreset="utilityButton020" as="div">
-            <Stack flow="horizontal-top" spaceInline="space020">
-              <span>{label}</span>
-              <span>
-                {icon || (
-                  <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
-                )}
-              </span>
-            </Stack>
-          </TextBlock>
+          {label}
+          {icon || <IconFilledChevronRight overrides={{size: 'iconSize020'}} />}
         </LinkStandalone>
       )}
       {href && (
@@ -84,13 +76,13 @@ const ArrowLink: React.FC<ArrowLinkProps> = ({
           stylePreset={combinedOverrides?.stylePreset}
           as="div"
         >
-          <Stack flow="horizontal-top" spaceInline="space020">
-            <span>{label}</span>
-            <span>
-              {icon || (
-                <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
-              )}
-            </span>
+          <Stack flow="horizontal-center" as="span">
+            <TextBlock typographyPreset="utilityButton020" as="span">
+              {label}
+            </TextBlock>
+            {icon || (
+              <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+            )}
           </Stack>
         </TextBlock>
       )}
@@ -125,13 +117,12 @@ const FeatureCardHorizontal = React.forwardRef<
       'title',
       'typographyPreset',
     );
-    const titleStyle = stylePrefix
-      ? {
-          stylePreset: `${stylePrefix}Container${
-            href ? 'Interactive' : 'NonInteractive'
-          }`,
-        }
-      : {stylePreset: 'inkWhiteContrast'};
+    /* const titleStylePreset = stylePrefix
+      ? {stylePreset: `${stylePrefix}ContainerNonInteractive`}
+      : {stylePreset: 'inkWhiteContrast'}; */
+    const titleStylePreset =
+      getToken({theme, overrides}, '', 'title', 'stylePreset') ||
+      'inkWhiteContrast';
     const descriptionTypographyPreset = getToken(
       {theme, overrides},
       '',
@@ -171,7 +162,7 @@ const FeatureCardHorizontal = React.forwardRef<
                   size="small"
                   overrides={{stylePreset: 'flagSolidInformative'}}
                 >
-                  {flagLabel}?
+                  {flagLabel}
                 </Flag>
               </Block>
             )}
@@ -180,7 +171,7 @@ const FeatureCardHorizontal = React.forwardRef<
                 <Headline
                   overrides={{
                     typographyPreset: titleTypographyPreset,
-                    heading: titleStyle,
+                    heading: titleStylePreset,
                   }}
                 >
                   {title}
@@ -246,7 +237,7 @@ const FeatureCardHorizontal = React.forwardRef<
                   <Headline
                     overrides={{
                       typographyPreset: titleTypographyPreset,
-                      heading: titleStyle,
+                      heading: titleStylePreset,
                     }}
                   >
                     {title}
@@ -306,13 +297,9 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       'title',
       'typographyPreset',
     );
-    const titleStyle = stylePrefix
-      ? {
-          stylePreset: `${stylePrefix}Container${
-            href ? 'Interactive' : 'NonInteractive'
-          }`,
-        }
-      : {stylePreset: 'inkWhiteContrast'};
+    const titleStylePreset =
+      getToken({theme, overrides}, '', 'title', 'stylePreset') ||
+      'inkWhiteContrast';
     const descriptionTypographyPreset = getToken(
       {theme, overrides},
       '',
@@ -356,7 +343,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
                 overrides={{
                   typographyPreset: titleTypographyPreset,
 
-                  heading: titleStyle,
+                  heading: titleStylePreset,
                 }}
               >
                 {title}
@@ -398,6 +385,12 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       'title',
       'typographyPreset',
     );
+    const titleStylePreset = getToken(
+      {theme, overrides},
+      'featureCard.title',
+      'title',
+      'stylePreset',
+    );
     const descriptionTypographyPreset = getToken(
       {theme, overrides},
       'featureCard.description',
@@ -416,6 +409,7 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
         overrides={{
           title: {
             typographyPreset: titleTypographyPreset,
+            stylePreset: titleStylePreset,
           },
           description: {
             typographyPreset: descriptionTypographyPreset,
@@ -430,6 +424,7 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
         overrides={{
           title: {
             typographyPreset: titleTypographyPreset,
+            stylePreset: titleStylePreset,
           },
           description: {
             typographyPreset: descriptionTypographyPreset,
