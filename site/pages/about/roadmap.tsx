@@ -1,9 +1,10 @@
 import React from 'react';
 import {
-  UnorderedList,
-  LinkStandalone as LinkInline,
-  InlineMessage,
+  LinkInline,
   TextBlock,
+  UnorderedList,
+  getSSRId,
+  InlineMessage,
 } from 'newskit';
 import ReactMarkdown, {ReactMarkdownOptions} from 'react-markdown';
 import {getSheets} from '../../utils/google-sheet';
@@ -15,7 +16,6 @@ import {
   ContentPrimary,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {isLinkExternal} from '../../../src/link/utils';
 
 interface RoadmapContent {
   intro_name: string;
@@ -41,7 +41,7 @@ const roadmapFallbackContent: RoadmapContent = {
   intro_hero_illustration: 'components/hero-roadmap-illustration',
   intro_secondary:
     'The roadmap is a living document, and it is likely that priorities will change. See our Trello board for more details on the roadmap.',
-  intro_date: 'Last Updated 12 December 2022',
+  intro_date: 'Last Updated: 6 December 2022',
   current_headline: 'Current Quarter',
   current_description: 'What we are working on:',
   comingup_headline: 'Coming Up',
@@ -56,6 +56,7 @@ const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
     components={{
       a: ({href, children}) => (
         <LinkInline
+          key={getSSRId()}
           overrides={{
             typographyPreset: {
               xs: 'editorialParagraph020',
@@ -63,7 +64,6 @@ const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
             },
           }}
           href={href!}
-          external={isLinkExternal(href!)}
         >
           {children}
         </LinkInline>
@@ -86,13 +86,14 @@ const Roadmap = ({
   const introSecondary = content.intro_secondary;
 
   const currentList = getCMSList(content, 'current_li').map(entry => (
-    <FormatMarkdown>{entry[1]}</FormatMarkdown>
+    <FormatMarkdown key={entry[0]}>{entry[1]}</FormatMarkdown>
   ));
+
   const comingupList = getCMSList(content, 'comingup_li').map(entry => (
-    <FormatMarkdown>{entry[1]}</FormatMarkdown>
+    <FormatMarkdown key={entry[0]}>{entry[1]}</FormatMarkdown>
   ));
   const futureList = getCMSList(content, 'future_li').map(entry => (
-    <FormatMarkdown>{entry[1]}</FormatMarkdown>
+    <FormatMarkdown key={entry[0]}>{entry[1]}</FormatMarkdown>
   ));
 
   if (currentList.length && comingupList.length && futureList.length) {
@@ -106,7 +107,7 @@ const Roadmap = ({
           title: 'Contribute',
           stylePrefix: 'contributeCard',
           description: 'Join the community and help grow NewsKit for everyone.',
-          href: 'about/contributing',
+          href: '/about/contribute',
         }}
         layoutProps={layoutProps}
         pageIntroduction={{
@@ -121,18 +122,35 @@ const Roadmap = ({
         }}
       >
         <ComponentPageCell>
-          <ContentPrimary description={<>{introSecondary}</>} showSeparator>
-            <TextBlock
-              typographyPreset="editorialParagraph020"
-              stylePreset="inkBase"
-            >
-              {content.intro_date}
-            </TextBlock>
-          </ContentPrimary>
+          <ContentPrimary
+            id="introduction"
+            description={
+              <>
+                <TextBlock
+                  typographyPreset={{
+                    xs: 'editorialParagraph020',
+                    md: 'editorialParagraph030',
+                  }}
+                  key="intro_secondary"
+                >
+                  {introSecondary}
+                </TextBlock>
+                <TextBlock
+                  key="last_updated"
+                  typographyPreset="editorialParagraph020"
+                  stylePreset="inkBase"
+                  marginBlockStart={{xs: 'space070', md: 'space080'}}
+                >
+                  {content.intro_date}
+                </TextBlock>
+              </>
+            }
+            showSeparator
+          />
 
           <ContentSection sectionName="Current">
             <ContentPrimary
-              id="overview"
+              id="current"
               toc={content.current_headline}
               headline={content.current_headline}
               description={content.current_description}
@@ -155,7 +173,7 @@ const Roadmap = ({
           </ContentSection>
           <ContentSection sectionName="Coming up">
             <ContentPrimary
-              id="overview"
+              id="coming_up"
               toc={content.comingup_headline}
               headline={content.comingup_headline}
               description={content.comingup_description}
@@ -178,7 +196,7 @@ const Roadmap = ({
           </ContentSection>
           <ContentSection sectionName="Future">
             <ContentPrimary
-              id="overview"
+              id="future"
               toc={content.future_headline}
               headline={content.future_headline}
               description={content.future_description}
@@ -213,12 +231,12 @@ const Roadmap = ({
         title: 'Contribute',
         stylePrefix: 'contributeCard',
         description: 'Join the community and help grow NewsKit for everyone.',
-        href: 'about/contributing',
+        href: '/about/contribute',
       }}
       layoutProps={layoutProps}
       pageIntroduction={{
         type: 'About',
-        name: pageName,
+        name: 'Roadmap',
         introduction: (
           <InlineMessage overrides={{stylePreset: 'inlineMessageNegative'}}>
             The roadmap is unavailable at this time, please check back later
@@ -235,7 +253,6 @@ const Roadmap = ({
     </AboutPageTemplate>
   );
 };
-
 export default Roadmap;
 
 // This function is called at build time and the response is passed to the page
