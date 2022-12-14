@@ -6,7 +6,7 @@ import {StyledMenu} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {getParentId} from './utils';
+import {getParentId, isDescendant} from './utils';
 
 const getAlign = (align: MenuItemAlign | undefined, vertical: boolean) => {
   if (!align) {
@@ -32,11 +32,21 @@ const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
     const [expandedMenuSubId, setExpandedMenuSubId] = useState<string | null>(
       null,
     );
-    const updateExpandedMenuSubId: OnExpandedChangeFn = (id, isExpanded) => {
-      if (isExpanded) {
+    const updateExpandedMenuSubId: OnExpandedChangeFn = id => {
+      if (!id) {
+        setExpandedMenuSubId(null);
+      } else if (!expandedMenuSubId) {
+        // no sub menu currently expanded
         setExpandedMenuSubId(id);
-      } else {
+      } else if (isDescendant(id, expandedMenuSubId)) {
+        // the parent of the currently expanded sub menu has been clicked
         setExpandedMenuSubId(getParentId(id));
+      } else if (expandedMenuSubId === id) {
+        // the currently expanded sub menu has been clicked
+        setExpandedMenuSubId(getParentId(id));
+      } else {
+        // any other sub menu has been clicked
+        setExpandedMenuSubId(id);
       }
     };
 

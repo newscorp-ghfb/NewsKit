@@ -94,13 +94,13 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
 
     // Inform the parent context that this sub menu has been clicked.
     const handleClick = React.useCallback(() => {
-      updateExpandedMenuSubId(nestedId, !isExpanded);
-    }, [isExpanded, nestedId, updateExpandedMenuSubId]);
+      updateExpandedMenuSubId(nestedId);
+    }, [nestedId, updateExpandedMenuSubId]);
 
     // Set the initial expanded state of this sub menu in the parent context.
     useEffect(() => {
       if (defaultExpanded) {
-        updateExpandedMenuSubId(nestedId, true);
+        updateExpandedMenuSubId(nestedId);
       }
     }, []);
 

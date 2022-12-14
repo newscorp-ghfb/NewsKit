@@ -1,10 +1,7 @@
 import {createContext, useContext} from 'react';
 import {MenuItemAlign, MenuProps} from './types';
 
-export type OnExpandedChangeFn = (
-  nestedId: string,
-  isExpanded: boolean,
-) => void;
+export type OnExpandedChangeFn = (nestedId: string | null) => void;
 
 /* istanbul ignore next */
 const defaultMenuContextArgs = {

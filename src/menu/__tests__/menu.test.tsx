@@ -658,6 +658,20 @@ describe('Uncontrolled nested menu', () => {
       expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'false');
     });
 
+    it('collapses all sub menus on menu item click', () => {
+      const {getByText} = renderWithTheme(TestMenu);
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      const menuItem3 = getByText('Item 3');
+      fireEvent.click(menuSub2);
+      fireEvent.click(menuSub3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+      fireEvent.click(menuItem3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'false');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'false');
+    });
+
     it('collapses single tier on click if expanded', () => {
       const {getByText} = renderWithTheme(TestMenu);
       const menuSub2 = getByText('menuSub2');
@@ -705,6 +719,22 @@ describe('Uncontrolled nested menu', () => {
       expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
       expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
       fireEvent.click(getByTestId('outside-element'));
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+    });
+
+    it('does not collapse all sub menus on menu item click', () => {
+      const {getByText} = renderWithTheme(TestMenu, {
+        vertical: true,
+      });
+      const menuSub2 = getByText('menuSub2');
+      const menuSub3 = getByText('menuSub3');
+      const menuItem3 = getByText('Item 3');
+      fireEvent.click(menuSub2);
+      fireEvent.click(menuSub3);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
+      fireEvent.click(menuItem3);
       expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
       expect(menuSub3.parentNode).toHaveAttribute('aria-expanded', 'true');
     });
