@@ -72,6 +72,7 @@ const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
           overrides,
           updateExpandedMenuSubId,
           expandedMenuSubId,
+          parentSubMenuId: null,
         }}
       >
         <StyledMenu

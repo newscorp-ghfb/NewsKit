@@ -1,5 +1,5 @@
 import {createContext, useContext} from 'react';
-import {MenuItemAlign, MenuProps} from './types';
+import {MenuProps} from './types';
 
 export type OnExpandedChangeFn = (nestedId: string | null) => void;
 
@@ -7,6 +7,7 @@ export type OnExpandedChangeFn = (nestedId: string | null) => void;
 const defaultMenuContextArgs = {
   updateExpandedMenuSubId: () => {},
   expandedMenuSubId: null,
+  parentSubMenuId: null,
 };
 
 export const MenuContext = createContext<
@@ -16,6 +17,7 @@ export const MenuContext = createContext<
     // MenuSub components access this state to know if they are expanded / collapsed
     expandedMenuSubId: string | null;
     isSubMenu?: boolean;
+    parentSubMenuId: string | null;
   }
 >(defaultMenuContextArgs);
 export const MenuContextProvider = MenuContext.Provider;
@@ -34,18 +36,5 @@ export const useMenuContext = () => {
     );
   }
 
-  return context;
-};
-
-export const MenuSubContext = createContext<{
-  parentId: string | null;
-  align?: MenuItemAlign;
-}>({
-  parentId: null,
-});
-export const MenuSubContextProvider = MenuSubContext.Provider;
-
-export const useMenuSubContext = () => {
-  const context = useContext(MenuSubContext);
   return context;
 };

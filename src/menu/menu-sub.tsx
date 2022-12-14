@@ -1,10 +1,5 @@
 import React, {useEffect, useId} from 'react';
-import {
-  MenuContextProvider,
-  MenuSubContextProvider,
-  useMenuContext,
-  useMenuSubContext,
-} from './context';
+import {MenuContextProvider, useMenuContext} from './context';
 import {MenuSubIconProps, MenuSubProps} from './types';
 import {StyledButton, StyledMenuItem, StyledUl} from './styled';
 import {useTheme} from '../theme';
@@ -53,11 +48,6 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       defaultValue: defaultExpanded,
     });
 
-    const id = useId();
-    const {parentId, align: parentMenuSubAlign} = useMenuSubContext();
-    const nestedId = buildNestedId(id, parentId);
-    const {updateExpandedMenuSubId, expandedMenuSubId} = useMenuContext();
-
     const menuContext = useMenuContext();
     const {
       vertical,
@@ -65,8 +55,14 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       align: menuAlign,
       overrides: menuOverrides,
       isSubMenu,
+      parentSubMenuId,
+      updateExpandedMenuSubId,
+      expandedMenuSubId,
     } = menuContext;
-    const align = menuSubAlign || parentMenuSubAlign || menuAlign;
+    const align = menuSubAlign || menuAlign;
+
+    const id = useId();
+    const nestedId = buildNestedId(id, parentSubMenuId);
 
     useEffect(() => {
       if (!expandedMenuSubId) {
@@ -125,40 +121,45 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
     };
 
     return (
-      <MenuSubContextProvider value={{parentId: nestedId, align}}>
-        <StyledMenuItem
-          className="nk-menu-item"
-          vertical={vertical}
-          overrides={menuOverrides}
-          ref={ref}
-        >
-          {/*
+      <StyledMenuItem
+        className="nk-menu-item"
+        vertical={vertical}
+        overrides={menuOverrides}
+        ref={ref}
+      >
+        {/*
         @ts-ignore href is not required for this Button  */}
-          <StyledButton
-            {...buttonProps}
-            align={align}
-            selected={selected}
-            onClick={composeEventHandlers([handleClick, onClick])}
-            aria-expanded={isExpanded}
-            data-testid="menu-sub-button"
-            overrides={{
-              ...menuItemOverrides,
-            }}
+        <StyledButton
+          {...buttonProps}
+          align={align}
+          selected={selected}
+          onClick={composeEventHandlers([handleClick, onClick])}
+          aria-expanded={isExpanded}
+          data-testid="menu-sub-button"
+          overrides={{
+            ...menuItemOverrides,
+          }}
+        >
+          {title}
+          <IndicatorIcon {...(indicatorIconProps as MenuSubIconProps)} />
+        </StyledButton>
+        <MenuContextProvider
+          value={{
+            ...menuContext,
+            isSubMenu: true,
+            parentSubMenuId: nestedId,
+            align,
+          }}
+        >
+          <StyledUl
+            expanded={isExpanded}
+            vertical={vertical}
+            overrides={overrides}
           >
-            {title}
-            <IndicatorIcon {...(indicatorIconProps as MenuSubIconProps)} />
-          </StyledButton>
-          <MenuContextProvider value={{...menuContext, isSubMenu: true}}>
-            <StyledUl
-              expanded={isExpanded}
-              vertical={vertical}
-              overrides={overrides}
-            >
-              {children}
-            </StyledUl>
-          </MenuContextProvider>
-        </StyledMenuItem>
-      </MenuSubContextProvider>
+            {children}
+          </StyledUl>
+        </MenuContextProvider>
+      </StyledMenuItem>
     );
   },
 );
