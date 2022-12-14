@@ -1,1 +1,40 @@
-<svg id="components-divider-illustration" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0"><rect style="fill:var(--color-illustrationBackground020)" width="1490" height="838"></rect><ellipse style="fill:var(--color-illustrationShadow010)" cx="744.5" cy="649.5" rx="124.5" ry="9.5"></ellipse><path style="fill:var(--color-illustrationPalette030)" d="M946.499 446.5C946.229 557.002 856.343 646.5 745.5 646.5C634.657 646.5 544.771 557.002 544.501 446.5H946.499Z" stroke="#87A4FC"></path><path d="M375 413H1115" stroke="#BBC3C9" stroke-width="8" stroke-linecap="round" stroke-dasharray="4 20"></path><path style="fill:var(--color-illustrationPalette050)" d="M544.501 379.5C544.771 268.998 634.657 179.5 745.5 179.5C856.343 179.5 946.229 268.998 946.499 379.5L544.501 379.5Z" stroke="#446BE4"></path></svg>
+<svg
+  id="nksvg"
+  style="width: 100%; height: 100%"
+  width="1490"
+  height="838"
+  viewBox="0 0 1490 838"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="css-0"
+>
+  <rect
+    style="fill: var(--color-illustrationBackground020)"
+    width="1490"
+    height="838"
+  ></rect>
+  <ellipse
+    style="fill: var(--color-illustrationShadow010)"
+    cx="744.5"
+    cy="649.5"
+    rx="124.5"
+    ry="9.5"
+  ></ellipse>
+  <path
+    style="fill: var(--color-illustrationPalette030)"
+    d="M946.499 446.5C946.229 557.002 856.343 646.5 745.5 646.5C634.657 646.5 544.771 557.002 544.501 446.5H946.499Z"
+    stroke="#87A4FC"
+  ></path>
+  <path
+    d="M375 413H1115"
+    stroke="#BBC3C9"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-dasharray="4 20"
+  ></path>
+  <path
+    style="fill: var(--color-illustrationPalette050)"
+    d="M544.501 379.5C544.771 268.998 634.657 179.5 745.5 179.5C856.343 179.5 946.229 268.998 946.499 379.5L544.501 379.5Z"
+    stroke="#446BE4"
+  ></path>
+</svg>

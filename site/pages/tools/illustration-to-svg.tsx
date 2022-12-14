@@ -3,7 +3,6 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import {Block, P, ThemeProvider} from 'newskit';
 import Layout, {LayoutProps} from '../../components/layout';
-import {pathToID} from '../../components/illustrations/utils';
 import {docsThemeLight} from '../../theme/doc-theme';
 
 const RUN = true;
@@ -60,7 +59,7 @@ if (typeof window === 'undefined' && RUN) {
         console.log(`no default for:${importPaths[indx]}`);
       }
 
-      const id = pathToID(importPaths[indx]);
+      const id = 'nksvg';
 
       // render to string
       const svg = ReactDOMServer.renderToStaticMarkup(
