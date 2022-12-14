@@ -71,6 +71,20 @@ export const StoryCaptionLogicalProps = () => (
 );
 StoryCaptionLogicalProps.storyName = 'Logical props';
 
+export const StoryCaptionOverrides = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <Caption
+        overrides={{credit: {stylePreset: 'inkSubtle'}}}
+        creditText={CREDIT_TEXT}
+      >
+        {CAPTION_TEXT}
+      </Caption>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryCaptionOverrides.storyName = 'Overrides';
+
 export default {
   title: 'Components/Caption',
   component: Caption,
