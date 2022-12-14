@@ -311,6 +311,26 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Character count',
+          description: (
+            <>
+              Text Fields can use{' '}
+              <Link
+                href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2470-character-count-documentation/components/character-count/"
+                target="_blank"
+              >
+                the character count component
+              </Link>{' '}
+              which lets users know how much text they can enter, displaying the
+              number of characters available as a user types. The character
+              limit is configurable.
+            </>
+          ),
+          media: getIllustrationComponent(
+            'components/text-field/options/character-count',
+          ),
+        },
+        {
           title: 'Placeholder text',
           description: (
             <>
