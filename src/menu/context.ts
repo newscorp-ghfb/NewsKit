@@ -15,6 +15,7 @@ export const MenuContext = createContext<
     updateExpandedMenuSubId: OnExpandedChangeFn;
     // MenuSub components access this state to know if they are expanded / collapsed
     expandedMenuSubId: string | null;
+    isSubMenu?: boolean;
   }
 >(defaultMenuContextArgs);
 export const MenuContextProvider = MenuContext.Provider;

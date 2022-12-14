@@ -26,6 +26,7 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
       align: menuAlign,
       overrides: menuOverrides,
       updateExpandedMenuSubId,
+      isSubMenu,
     } = useMenuContext();
     const {align: menuSubAlign} = useMenuSubContext();
     const align = menuSubAlign || menuAlign;
@@ -43,7 +44,9 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
     const menuItemOverrides: MenuItemProps['overrides'] = {
       ...get(
         theme.componentDefaults,
-        `menuItem.${vertical ? 'vertical' : 'horizontal'}`,
+        `${isSubMenu ? 'menuSubItem' : 'menuItem'}.${
+          vertical ? 'vertical' : 'horizontal'
+        }`,
       ),
       ...filterOutFalsyProperties(overrides),
     };

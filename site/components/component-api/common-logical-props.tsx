@@ -133,3 +133,19 @@ export const prefixLogicalProps = (
     ...rest,
     attribute: `${prefix}.${attribute}`,
   }));
+
+export const getLogicalPropsTable = (
+  logicalPropsOverrides: OverridesRowsProps[] = [
+    ...logicalPaddingOverrideProps,
+    ...logicalMarginOverrideProps,
+  ],
+  prefix: string = '',
+  defaults: {
+    [key in string]: string | string[];
+  } = {},
+) =>
+  logicalPropsOverrides.map(({attribute, ...rest}) => ({
+    ...rest,
+    attribute: `${prefix ? `${prefix}.` : ''}${attribute}`,
+    default: defaults[attribute],
+  }));

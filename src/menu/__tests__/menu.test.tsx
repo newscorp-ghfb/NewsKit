@@ -537,10 +537,12 @@ describe('MenuSub', () => {
     const props = {
       children: menuItems,
       overrides: {
-        paddingInline: 'space020',
-        paddingBlock: 'space040',
-        marginBlock: 'space060',
-        marginInline: 'space080',
+        list: {
+          paddingInline: 'space020',
+          paddingBlock: 'space040',
+          marginBlock: 'space060',
+          marginInline: 'space080',
+        },
       },
     };
     const fragment = renderToFragmentWithTheme(MenuWithMenuSub, props);
@@ -585,6 +587,13 @@ describe('MenuSub', () => {
       props,
       myCustomTheme,
     );
+    expect(fragment).toMatchSnapshot();
+  });
+  it('render nested submenus', () => {
+    const props = {
+      children: <MenuSub>{menuItems}</MenuSub>,
+    };
+    const fragment = renderToFragmentWithTheme(MenuWithMenuSub, props);
     expect(fragment).toMatchSnapshot();
   });
 });

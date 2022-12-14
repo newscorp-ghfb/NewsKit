@@ -52,13 +52,16 @@ export type MenuSubProps = Omit<
   'title' | 'overrides' | 'href'
 > & {
   title?: React.ReactNode;
+  href?: string;
   expanded?: boolean;
   defaultExpanded?: boolean;
   align?: MenuItemAlign;
   overrides?: {
     indicatorIcon?: Override<MenuSubIconProps>;
-  } & MenuItemProps['overrides'] &
-    LogicalProps;
+    list?: {
+      stylePreset?: MQ<string>;
+    } & LogicalProps;
+  } & MenuItemProps['overrides'];
 };
 
 export interface MenuDividerProps {
