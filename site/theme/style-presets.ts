@@ -431,6 +431,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
     hover: {
       boxShadow: '{{shadows.shadow040}}',
@@ -440,6 +441,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
   contributeCardMedia: {
@@ -488,6 +490,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
     hover: {
       boxShadow: '{{shadows.shadow040}}',
@@ -497,6 +500,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
   roadmapCardButton: {
@@ -537,6 +541,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand060}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
     hover: {
       boxShadow: '{{shadows.shadow040}}',
@@ -546,6 +551,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand060}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
   patternsCardMedia: {
@@ -595,12 +601,14 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
   principleCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand050}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
 
@@ -663,6 +671,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand040}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
     hover: {
       boxShadow: '{{shadows.shadow040}}',
@@ -672,6 +681,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand040}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
   worldDesignSystemsWeekCardButton: {
@@ -691,10 +701,12 @@ export const stylePresets = {
       backgroundPosition: 'center',
     },
   },
+
   needHelpCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
     hover: {
       boxShadow: '{{shadows.shadow040}}',
@@ -704,6 +716,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
   needHelpCardButton: {
@@ -743,10 +756,65 @@ export const stylePresets = {
     },
   },
 
+  latestReleaseCardContainerInteractive: {
+    base: {
+      backgroundColor: '{{colors.interactivePrimary010}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkContrast}}',
+    },
+    hover: {
+      boxShadow: '{{shadows.shadow040}}',
+    },
+  },
+  latestReleaseCardContainerNonInteractive: {
+    base: {
+      backgroundColor: '{{colors.interactivePrimary010}}',
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkContrast}}',
+    },
+  },
+  latestReleaseCardButton: {
+    base: {
+      backgroundColor: '{{colors.interactivePrimary010}}',
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      color: '{{colors.inkContrast}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    hover: {
+      backgroundColor: '{{colors.interactivePrimary020}}',
+      color: '{{colors.inkContrast}}',
+      iconColor: '{{colors.inkContrast}}',
+    },
+    active: {
+      backgroundColor: '{{colors.interactivePrimary050}}',
+      color: '{{colors.inkBrand020}}',
+      iconColor: '{{colors.inkBrand020}}',
+    },
+    disabled: {
+      backgroundColor: '{{colors.interactivePrimary020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+    loading: {
+      backgroundColor: '{{colors.interactivePrimary020}}',
+      color: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.inkBrand010}}',
+    },
+  },
+  latestReleaseCardMedia: {
+    base: {
+      backgroundImage: 'url(static/feature-card-release.svg)',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center left',
+    },
+  },
+
   foundationFeatureCardContainerInteractive: {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
     hover: {
       boxShadow: '{{shadows.shadow040}}',
@@ -756,6 +824,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
   foundationFeatureCardButton: {
@@ -960,6 +1029,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
     hover: {
       boxShadow: '{{shadows.shadow040}}',
@@ -969,6 +1039,7 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceBrand030}}',
       borderRadius: '{{borders.borderRadiusRounded020}}',
+      color: '{{colors.inkWhiteContrast}}',
     },
   },
   patternFeatureCardButton: {

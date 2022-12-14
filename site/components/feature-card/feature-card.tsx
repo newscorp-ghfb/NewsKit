@@ -5,17 +5,16 @@ import {
   Stack,
   Headline,
   TextBlock,
-  Button,
   useTheme,
   toNewsKitIcon,
   LinkStandalone,
+  Flag,
 } from 'newskit';
 import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
 import {getToken} from '../../../src/utils/get-token';
 import {
   FeatureCardProps,
   OptionalLinkWrapperProps,
-  OptionalButtonLinkWrapperProps,
   ArrowLinkProps,
 } from './types';
 import {
@@ -25,7 +24,6 @@ import {
   StyledFeatureCardVerticalMedia,
   StyledCardLink,
 } from './styled';
-import {Link} from '../link';
 
 const IconFilledChevronRight = toNewsKitIcon(FilledChevronRight);
 
@@ -49,38 +47,43 @@ const OptionalLinkWrapper: React.FC<OptionalLinkWrapperProps> = ({
   return <>{children}</>;
 };
 
-const OptionalButtonLinkWrapper: React.FC<OptionalButtonLinkWrapperProps> = ({
-  href,
-  buttonHref,
-  children,
-}) => {
-  if (!href && buttonHref) {
-    return (
-      <Link
-        href={buttonHref}
-        external={false}
-        overrides={{
-          stylePreset: 'linkNoUnderline',
-        }}
-      >
-        {children}
-      </Link>
-    );
-  }
-  return <>{children}</>;
-};
-
 const ArrowLink: React.FC<ArrowLinkProps> = ({
   dataTestId = 'arrowLink',
   href,
+  buttonHref,
   label,
   icon,
-  overrides = {stylePreset: 'linkStandaloneInverse'},
-}) => (
-  <div data-testid={dataTestId}>
-    {href && (
-      <LinkStandalone href={href as string} overrides={overrides}>
-        <TextBlock typographyPreset="utilityButton020" as="div">
+  overrides,
+}) => {
+  const combinedOverrides = {
+    stylePreset: 'linkStandaloneInverse',
+    ...overrides,
+  };
+  return (
+    <div data-testid={dataTestId}>
+      {!href && (
+        <LinkStandalone
+          href={buttonHref as string}
+          overrides={combinedOverrides}
+        >
+          <TextBlock typographyPreset="utilityButton020" as="div">
+            <Stack flow="horizontal-top" spaceInline="space020">
+              <span>{label}</span>
+              <span>
+                {icon || (
+                  <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+                )}
+              </span>
+            </Stack>
+          </TextBlock>
+        </LinkStandalone>
+      )}
+      {href && (
+        <TextBlock
+          typographyPreset="utilityButton020"
+          stylePreset={combinedOverrides?.stylePreset}
+          as="div"
+        >
           <Stack flow="horizontal-top" spaceInline="space020">
             <span>{label}</span>
             <span>
@@ -90,15 +93,10 @@ const ArrowLink: React.FC<ArrowLinkProps> = ({
             </span>
           </Stack>
         </TextBlock>
-      </LinkStandalone>
-    )}
-    {!href && (
-      <TextBlock typographyPreset="utilityButton020" {...overrides} as="div">
-        {label}
-      </TextBlock>
-    )}
-  </div>
-);
+      )}
+    </div>
+  );
+};
 
 const FeatureCardHorizontal = React.forwardRef<
   HTMLDivElement,
@@ -106,6 +104,7 @@ const FeatureCardHorizontal = React.forwardRef<
 >(
   (
     {
+      flagLabel,
       title,
       description,
       href,
@@ -126,12 +125,22 @@ const FeatureCardHorizontal = React.forwardRef<
       'title',
       'typographyPreset',
     );
+    const titleStyle = stylePrefix
+      ? {
+          stylePreset: `${stylePrefix}Container${
+            href ? 'Interactive' : 'NonInteractive'
+          }`,
+        }
+      : {stylePreset: 'inkWhiteContrast'};
     const descriptionTypographyPreset = getToken(
       {theme, overrides},
       '',
       'description',
       'typographyPreset',
     );
+    const descriptionStylePreset =
+      getToken({theme, overrides}, '', 'description', 'stylePreset') ||
+      'inkWhiteSubtle';
 
     return (
       <OptionalLinkWrapper href={href}>
@@ -156,14 +165,22 @@ const FeatureCardHorizontal = React.forwardRef<
               },
             }}
           >
+            {flagLabel && (
+              <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
+                <Flag
+                  size="small"
+                  overrides={{stylePreset: 'flagSolidInformative'}}
+                >
+                  {flagLabel}?
+                </Flag>
+              </Block>
+            )}
             {title && (
               <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
                 <Headline
                   overrides={{
                     typographyPreset: titleTypographyPreset,
-                    heading: {
-                      stylePreset: 'inkWhiteContrast',
-                    },
+                    heading: titleStyle,
                   }}
                 >
                   {title}
@@ -173,7 +190,7 @@ const FeatureCardHorizontal = React.forwardRef<
             {description && (
               <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
                 <TextBlock
-                  stylePreset="inkWhiteSubtle"
+                  stylePreset={descriptionStylePreset}
                   typographyPreset={descriptionTypographyPreset}
                 >
                   {description}
@@ -184,10 +201,11 @@ const FeatureCardHorizontal = React.forwardRef<
               <Block spaceStack="space020">
                 <ArrowLink
                   dataTestId="arrowLinkSmall"
-                  href={buttonHref}
+                  href={href as string}
+                  buttonHref={buttonHref}
+                  overrides={buttonOverrides}
                   label={buttonLabel}
                   icon={buttonIcon}
-                  overrides={buttonOverrides}
                 />
               </Block>
             )}
@@ -213,14 +231,22 @@ const FeatureCardHorizontal = React.forwardRef<
             }}
           >
             <Stack stackDistribution="center">
+              {flagLabel && (
+                <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
+                  <Flag
+                    size="small"
+                    overrides={{stylePreset: 'flagSolidInformative'}}
+                  >
+                    {flagLabel}
+                  </Flag>
+                </Block>
+              )}
               {title && (
                 <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
                   <Headline
                     overrides={{
                       typographyPreset: titleTypographyPreset,
-                      heading: {
-                        stylePreset: 'inkWhiteContrast',
-                      },
+                      heading: titleStyle,
                     }}
                   >
                     {title}
@@ -230,7 +256,7 @@ const FeatureCardHorizontal = React.forwardRef<
               {description && (
                 <Block spaceStack="space050">
                   <TextBlock
-                    stylePreset="inkWhiteSubtle"
+                    stylePreset={descriptionStylePreset}
                     typographyPreset={descriptionTypographyPreset}
                   >
                     {description}
@@ -240,7 +266,9 @@ const FeatureCardHorizontal = React.forwardRef<
               {buttonLabel && (
                 <ArrowLink
                   dataTestId="arrowLinkLarge"
-                  href={buttonHref}
+                  href={href as string}
+                  buttonHref={buttonHref}
+                  overrides={buttonOverrides}
                   label={buttonLabel}
                   icon={buttonIcon}
                 />
@@ -256,6 +284,7 @@ const FeatureCardHorizontal = React.forwardRef<
 const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
   (
     {
+      flagLabel,
       title,
       description,
       href,
@@ -277,12 +306,23 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       'title',
       'typographyPreset',
     );
+    const titleStyle = stylePrefix
+      ? {
+          stylePreset: `${stylePrefix}Container${
+            href ? 'Interactive' : 'NonInteractive'
+          }`,
+        }
+      : {stylePreset: 'inkWhiteContrast'};
     const descriptionTypographyPreset = getToken(
       {theme, overrides},
       '',
       'description',
       'typographyPreset',
     );
+    const descriptionStylePreset =
+      getToken({theme, overrides}, '', 'description', 'stylePreset') ||
+      'inkWhiteSubtle';
+
     return (
       <OptionalLinkWrapper href={href}>
         <StyledCardVerticalInset
@@ -299,6 +339,16 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
             },
           }}
         >
+          {flagLabel && (
+            <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
+              <Flag
+                size="small"
+                overrides={{stylePreset: 'flagSolidInformative'}}
+              >
+                {flagLabel}
+              </Flag>
+            </Block>
+          )}
           {title && (
             <Block spaceStack={{xs: 'space045', lg: 'space050'}}>
               <Headline
@@ -306,9 +356,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
                 overrides={{
                   typographyPreset: titleTypographyPreset,
 
-                  heading: {
-                    stylePreset: 'inkWhiteContrast',
-                  },
+                  heading: titleStyle,
                 }}
               >
                 {title}
@@ -318,7 +366,7 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
           {description && (
             <Block spaceStack={{xs: 'space050', lg: 'space060'}}>
               <TextBlock
-                stylePreset="inkWhiteSubtle"
+                stylePreset={descriptionStylePreset}
                 typographyPreset={descriptionTypographyPreset}
               >
                 {description}
@@ -326,23 +374,14 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
             </Block>
           )}
           {buttonLabel && (
-            <Block spaceStack="space020">
-              <OptionalButtonLinkWrapper href={href} buttonHref={buttonHref}>
-                <Button
-                  size="small"
-                  overrides={{
-                    stylePreset: `${stylePrefix}Button`,
-                    typographyPreset: 'utilityButton010',
-                    ...buttonOverrides,
-                  }}
-                >
-                  {buttonLabel}
-                  {buttonIcon || (
-                    <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
-                  )}
-                </Button>
-              </OptionalButtonLinkWrapper>
-            </Block>
+            <ArrowLink
+              dataTestId="arrowLinkLarge"
+              href={href as string}
+              buttonHref={buttonHref}
+              overrides={buttonOverrides}
+              label={buttonLabel}
+              icon={buttonIcon}
+            />
           )}
         </StyledCardVerticalInset>
       </OptionalLinkWrapper>
@@ -365,6 +404,12 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       'description',
       'typographyPreset',
     );
+    const descriptionStylePreset = getToken(
+      {theme, overrides},
+      'featureCard.description',
+      'description',
+      'stylePreset',
+    );
     return layout === 'horizontal' ? (
       <FeatureCardHorizontal
         ref={ref}
@@ -374,6 +419,7 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
           },
           description: {
             typographyPreset: descriptionTypographyPreset,
+            stylePreset: descriptionStylePreset,
           },
         }}
         {...rest}
@@ -387,6 +433,7 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
           },
           description: {
             typographyPreset: descriptionTypographyPreset,
+            stylePreset: descriptionStylePreset,
           },
         }}
         {...rest}

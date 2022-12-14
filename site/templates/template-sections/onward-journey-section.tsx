@@ -27,6 +27,7 @@ export const OnwardJourneySection: React.FC<OnwardJourneySectionProps> = ({
       stylePrefix={stylePrefix}
       layout={layout}
       href={href}
+      buttonHref={href}
     />
   </ComponentPageCell>
 );

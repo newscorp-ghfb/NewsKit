@@ -89,6 +89,12 @@ const Index = ({
             ...GRID_SECTION_OVERRIDES,
             marginBlockEnd: {xs: 'space080', md: 'space000'},
           }}
+        />
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
         >
           <WhatsNew releases={releases} />
         </GridLayout>
@@ -112,6 +118,7 @@ const Index = ({
             buttonOverrides={{
               paddingInline: 'space000',
               typographyPreset: 'utilityButton020',
+              stylePreset: 'linkStandaloneInverse',
             }}
           />
         </GridLayout>

@@ -302,6 +302,7 @@ export const routes = [
             title: 'Typography Presets',
             page: true,
             id: '/theme/presets/typography-presets',
+            nextId: '/theme/theming/component-defaults',
             illustration: 'components/hero-typography-illustration',
             description:
               'A collection of foundational font design tokens combined into a preset to define reusable typography.',
@@ -990,6 +991,7 @@ export const routes = [
             title: 'Input components',
             page: true,
             id: '/patterns/forms/input-components',
+            nextId: '/patterns/forms/overview',
             description: `Use the right component for the type of data you’re collecting.`,
             illustration: 'patterns/forms/input-components/hero',
             buttonLabel: 'Choose the right input component',

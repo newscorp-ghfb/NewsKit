@@ -272,7 +272,7 @@ const Colours = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'theme/colours/hero',
       },
-      introduction: `Colours help express brand identity and convey meaning to users.`,
+      introduction: `Colours express brand identity and convey meaning to users.`,
     }}
   >
     <ComponentPageCell>

@@ -12,6 +12,7 @@ export const NeedHelpSection = () => (
       stylePrefix="needHelpCard"
       layout="horizontal"
       href="/about/contact-us/"
+      buttonHref="/about/contact-us/"
     />
   </ComponentPageCell>
 );
