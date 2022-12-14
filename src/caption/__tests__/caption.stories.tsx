@@ -1,121 +1,85 @@
 import * as React from 'react';
 import {Caption} from '../caption';
 import {CaptionInset} from '../caption-inset';
-import {StorybookHeading} from '../../test/storybook-comps';
-import {styled, getSizingFromTheme} from '../../utils/style';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {styled, getColorCssFromTheme} from '../../utils/style';
+import {Block} from '../../block';
+import {Image} from '../../image';
 
-const Container = styled.div`
-  margin: ${getSizingFromTheme('sizing050')};
+const MarginOverridesWrapper = styled.div`
+  border: 1px dashed;
+  ${getColorCssFromTheme('borderColor', 'red060')}
 `;
 
-const StyledDiv = styled.div`
-  border: 1px solid black;
-`;
+const CAPTION_TEXT = 'Hathersage Moor in the Peak District';
+const CREDIT_TEXT = 'Credit by Matthew Taylor/Alamy';
+
+export const StoryCaptionDefault = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <Caption creditText={CREDIT_TEXT}>{CAPTION_TEXT}</Caption>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryCaptionDefault.storyName = 'Default';
+
+export const StoryCaptionVariations = () => (
+  <StorybookPage>
+    <StorybookCase title="Caption and credit text">
+      <Caption creditText={CREDIT_TEXT}>{CAPTION_TEXT}</Caption>
+    </StorybookCase>
+    <StorybookCase title="Only caption text">
+      <Caption>{CAPTION_TEXT}</Caption>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryCaptionVariations.storyName = 'Variations';
+
+export const StoryInsetCaption = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <Block>
+        <Image
+          src="/placeholder-3x2.png"
+          alt="Example Image"
+          overrides={{
+            width: '300px',
+            height: '200px',
+          }}
+          placeholderIcon
+        />
+        <CaptionInset creditText={CREDIT_TEXT}>{CAPTION_TEXT}</CaptionInset>
+      </Block>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryInsetCaption.storyName = 'Inset caption';
+
+export const StoryCaptionLogicalProps = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <MarginOverridesWrapper>
+        <Caption
+          overrides={{paddingBlock: 'space070', paddingInline: 'space060'}}
+          creditText={CREDIT_TEXT}
+        >
+          {CAPTION_TEXT}
+        </Caption>
+      </MarginOverridesWrapper>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryCaptionLogicalProps.storyName = 'Logical props';
 
 export default {
-  title: 'Components/caption',
-  component: () => 'None',
+  title: 'Components/Caption',
+  component: Caption,
+  parameters: {
+    nkDocs: {
+      title: 'Caption',
+      url: 'https://newskit.co.uk/components/caption',
+      description:
+        'A caption is a sentence often added to an image or video to describe or explain what the image or video is showing. Sometimes a credit to the owner of the source is added. The caption has two main elements, the caption text and an optional credit text.',
+    },
+  },
 };
-
-export const StoryCaption = () => (
-  <Container>
-    <StorybookHeading>Caption</StorybookHeading>
-    <StyledDiv>
-      <Caption creditText="credit">
-        Caption component with both caption and credit text
-      </Caption>
-    </StyledDiv>
-    <br />
-    <br />
-    <StyledDiv>
-      <Caption>Caption component with only caption text</Caption>
-    </StyledDiv>
-    <br />
-    <br />
-    <StyledDiv>
-      <Caption
-        overrides={{
-          typographyPreset: 'editorialParagraph030',
-          stylePreset: 'inkContrast',
-          spaceStack: 'space090',
-          credit: {
-            typographyPreset: 'utilityMeta030',
-            stylePreset: 'uppercaseInkContrast',
-          },
-        }}
-        creditText="Credit text with overrides"
-      >
-        Caption and credit text with overrides on both
-      </Caption>
-    </StyledDiv>
-  </Container>
-);
-StoryCaption.storyName = 'caption';
-
-export const StoryCaptionInset = () => (
-  <Container>
-    <StorybookHeading>CaptionInset component</StorybookHeading>
-    <StyledDiv>
-      <CaptionInset creditText="Credit text">
-        CaptionInset with both caption and credit text
-      </CaptionInset>
-    </StyledDiv>
-
-    <StyledDiv>
-      <CaptionInset>CaptionInset with only caption text</CaptionInset>
-    </StyledDiv>
-
-    <StyledDiv>
-      <CaptionInset
-        overrides={{
-          typographyPreset: 'editorialParagraph030',
-          stylePreset: 'inkBrand010',
-          spaceStack: 'space090',
-          spaceInset: {
-            xs: 'spaceInset060',
-            md: 'spaceInset070',
-          },
-          credit: {
-            typographyPreset: 'utilityMeta030',
-            stylePreset: 'uppercaseInkBrand010',
-          },
-        }}
-        creditText="Credit text"
-      >
-        CaptionInset with overrides and both caption and credit text
-      </CaptionInset>
-    </StyledDiv>
-  </Container>
-);
-StoryCaptionInset.storyName = 'caption-inset';
-
-export const StoryCaptionLogicalOverrides = () => (
-  <Container>
-    <StorybookHeading>Caption with logical overrides</StorybookHeading>
-    <StyledDiv>
-      <Caption
-        creditText="Credit text"
-        overrides={{
-          marginBlockEnd: 'space050',
-        }}
-      >
-        Caption with both caption and credit text
-      </Caption>
-    </StyledDiv>
-    <StyledDiv>
-      <Caption
-        overrides={{
-          marginBlockEnd: 'space050',
-          spaceStack: 'space030',
-          spaceInset: {
-            xs: 'spaceInset060',
-          },
-        }}
-        creditText="Credit text"
-      >
-        CaptionInset with overrides and both caption and credit text
-      </Caption>
-    </StyledDiv>
-  </Container>
-);
-StoryCaptionLogicalOverrides.storyName = 'caption-logical-overrides';
