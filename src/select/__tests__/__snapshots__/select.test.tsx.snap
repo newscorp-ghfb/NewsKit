@@ -227,33 +227,6 @@ exports[`Select icon component overrides 1`] = `
       </div>
     </div>
   </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    aria-labelledby="downshift-0-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-0-menu"
-    role="listbox"
-    style="position: absolute;"
-    tabindex="-1"
-  />
 </DocumentFragment>
 `;
 
@@ -529,33 +502,6 @@ exports[`Select icon size overrides 1`] = `
       </div>
     </div>
   </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    aria-labelledby="downshift-0-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-0-menu"
-    role="listbox"
-    style="position: absolute;"
-    tabindex="-1"
-  />
 </DocumentFragment>
 `;
 
@@ -831,33 +777,6 @@ exports[`Select icon theme size overrides 1`] = `
       </div>
     </div>
   </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    aria-labelledby="downshift-0-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-0-menu"
-    role="listbox"
-    style="position: absolute;"
-    tabindex="-1"
-  />
 </DocumentFragment>
 `;
 
@@ -1654,114 +1573,118 @@ exports[`Select in Modal render Select 1`] = `
     <div
       class="nk-layer"
     >
-      <div>
-        <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
-          data-focus-lock-disabled="false"
-        >
+      <div
+        class="nk-layer"
+      >
+        <div>
           <div
-            class="emotion-1"
+            class="emotion-0 nk-overlay-enter-done"
+            data-testid="overlay"
+          />
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="1"
+          />
+          <div
+            data-focus-lock-disabled="false"
           >
             <div
-              aria-modal="true"
-              class="nk-modal-enter-done emotion-2"
-              data-testid="modal"
-              role="dialog"
+              class="emotion-1"
             >
               <div
-                class="emotion-3"
-              />
-              <div
-                class="emotion-4"
-                data-testid="dialog-content"
+                aria-modal="true"
+                class="nk-modal-enter-done emotion-2"
+                data-testid="modal"
+                role="dialog"
               >
-                <span
-                  class="emotion-5"
-                  id="mock-nk-1"
-                >
-                  Press down arrow key to navigate to the first item
-                </span>
                 <div
-                  aria-describedby="mock-nk-1"
-                  aria-labelledby="downshift-0-label"
-                  class="emotion-6"
-                  data-testid="select-panel"
-                  id="downshift-0-menu"
-                  role="listbox"
-                  tabindex="-1"
+                  class="emotion-3"
+                />
+                <div
+                  class="emotion-4"
+                  data-testid="dialog-content"
                 >
-                  <div
-                    aria-selected="false"
-                    class="emotion-7"
-                    id="downshift-0-item-0"
-                    role="option"
-                    value="option 1"
+                  <span
+                    class="emotion-5"
+                    id="mock-nk-1"
                   >
-                    <div>
-                      option 1
+                    Press down arrow key to navigate to the first item
+                  </span>
+                  <div
+                    aria-describedby="mock-nk-1"
+                    aria-labelledby="downshift-0-label"
+                    class="modal-panel emotion-6"
+                    data-testid="select-panel"
+                    id="downshift-0-menu"
+                    role="listbox"
+                    tabindex="-1"
+                  >
+                    <div
+                      aria-selected="false"
+                      class="emotion-7"
+                      id="downshift-0-item-0"
+                      role="option"
+                      value="option 1"
+                    >
+                      <div>
+                        option 1
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    aria-selected="false"
-                    class="emotion-7"
-                    id="downshift-0-item-1"
-                    role="option"
-                    value="option 2"
-                  >
-                    <div>
-                      option 2
+                    <div
+                      aria-selected="false"
+                      class="emotion-7"
+                      id="downshift-0-item-1"
+                      role="option"
+                      value="option 2"
+                    >
+                      <div>
+                        option 2
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="emotion-9"
-              >
-                <button
-                  aria-label="close"
-                  class="emotion-10"
-                  data-testid="button"
-                  type="button"
+                <div
+                  class="emotion-9"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    aria-label="close"
+                    class="emotion-10"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </button>
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
         </div>
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="0"
-        />
       </div>
     </div>
   </div>
@@ -2448,92 +2371,96 @@ exports[`Select in Modal render Select with overrides props 1`] = `
     <div
       class="nk-layer"
     >
-      <div>
-        <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
-          data-focus-lock-disabled="false"
-        >
+      <div
+        class="nk-layer"
+      >
+        <div>
           <div
-            class="emotion-1"
+            class="emotion-0 nk-overlay-enter-done"
+            data-testid="overlay"
+          />
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="1"
+          />
+          <div
+            data-focus-lock-disabled="false"
           >
             <div
-              aria-modal="true"
-              class="nk-modal-enter-done emotion-2"
-              data-testid="modal"
-              role="dialog"
+              class="emotion-1"
             >
               <div
-                class="emotion-3"
-              />
-              <div
-                class="emotion-4"
+                aria-modal="true"
+                class="nk-modal-enter-done emotion-2"
+                data-testid="modal"
+                role="dialog"
               >
-                make your selection
-              </div>
-              <div
-                class="emotion-5"
-                data-testid="dialog-content"
-              >
-                <span
-                  class="emotion-6"
-                  id="mock-nk-1"
-                >
-                  Press down arrow key to navigate to the first item
-                </span>
                 <div
-                  aria-describedby="mock-nk-1"
-                  aria-labelledby="downshift-0-label"
-                  class="emotion-7"
-                  data-testid="select-panel"
-                  id="downshift-0-menu"
-                  role="listbox"
-                  tabindex="-1"
+                  class="emotion-3"
+                />
+                <div
+                  class="emotion-4"
                 >
-                  <div
-                    aria-selected="false"
-                    class="emotion-8"
-                    id="downshift-0-item-0"
-                    role="option"
-                    value="option 1"
+                  make your selection
+                </div>
+                <div
+                  class="emotion-5"
+                  data-testid="dialog-content"
+                >
+                  <span
+                    class="emotion-6"
+                    id="mock-nk-1"
                   >
-                    <div>
-                      option 1
+                    Press down arrow key to navigate to the first item
+                  </span>
+                  <div
+                    aria-describedby="mock-nk-1"
+                    aria-labelledby="downshift-0-label"
+                    class="modal-panel emotion-7"
+                    data-testid="select-panel"
+                    id="downshift-0-menu"
+                    role="listbox"
+                    tabindex="-1"
+                  >
+                    <div
+                      aria-selected="false"
+                      class="emotion-8"
+                      id="downshift-0-item-0"
+                      role="option"
+                      value="option 1"
+                    >
+                      <div>
+                        option 1
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    aria-selected="false"
-                    class="emotion-8"
-                    id="downshift-0-item-1"
-                    role="option"
-                    value="option 2"
-                  >
-                    <div>
-                      option 2
+                    <div
+                      aria-selected="false"
+                      class="emotion-8"
+                      id="downshift-0-item-1"
+                      role="option"
+                      value="option 2"
+                    >
+                      <div>
+                        option 2
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
         </div>
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="0"
-        />
       </div>
     </div>
   </div>
@@ -3323,114 +3250,118 @@ exports[`Select in Modal render Select with overrides style 1`] = `
     <div
       class="nk-layer"
     >
-      <div>
-        <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
-          data-focus-lock-disabled="false"
-        >
+      <div
+        class="nk-layer"
+      >
+        <div>
           <div
-            class="emotion-1"
+            class="emotion-0 nk-overlay-enter-done"
+            data-testid="overlay"
+          />
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="1"
+          />
+          <div
+            data-focus-lock-disabled="false"
           >
             <div
-              aria-modal="true"
-              class="nk-modal-enter-done emotion-2"
-              data-testid="modal"
-              role="dialog"
+              class="emotion-1"
             >
               <div
-                class="emotion-3"
-              />
-              <div
-                class="emotion-4"
-                data-testid="dialog-content"
+                aria-modal="true"
+                class="nk-modal-enter-done emotion-2"
+                data-testid="modal"
+                role="dialog"
               >
-                <span
-                  class="emotion-5"
-                  id="mock-nk-1"
-                >
-                  Press down arrow key to navigate to the first item
-                </span>
                 <div
-                  aria-describedby="mock-nk-1"
-                  aria-labelledby="downshift-0-label"
-                  class="emotion-6"
-                  data-testid="select-panel"
-                  id="downshift-0-menu"
-                  role="listbox"
-                  tabindex="-1"
+                  class="emotion-3"
+                />
+                <div
+                  class="emotion-4"
+                  data-testid="dialog-content"
                 >
-                  <div
-                    aria-selected="false"
-                    class="emotion-7"
-                    id="downshift-0-item-0"
-                    role="option"
-                    value="option 1"
+                  <span
+                    class="emotion-5"
+                    id="mock-nk-1"
                   >
-                    <div>
-                      option 1
+                    Press down arrow key to navigate to the first item
+                  </span>
+                  <div
+                    aria-describedby="mock-nk-1"
+                    aria-labelledby="downshift-0-label"
+                    class="modal-panel emotion-6"
+                    data-testid="select-panel"
+                    id="downshift-0-menu"
+                    role="listbox"
+                    tabindex="-1"
+                  >
+                    <div
+                      aria-selected="false"
+                      class="emotion-7"
+                      id="downshift-0-item-0"
+                      role="option"
+                      value="option 1"
+                    >
+                      <div>
+                        option 1
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    aria-selected="false"
-                    class="emotion-7"
-                    id="downshift-0-item-1"
-                    role="option"
-                    value="option 2"
-                  >
-                    <div>
-                      option 2
+                    <div
+                      aria-selected="false"
+                      class="emotion-7"
+                      id="downshift-0-item-1"
+                      role="option"
+                      value="option 2"
+                    >
+                      <div>
+                        option 2
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="emotion-9"
-              >
-                <button
-                  aria-label="close"
-                  class="emotion-10"
-                  data-testid="button"
-                  type="button"
+                <div
+                  class="emotion-9"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    aria-label="close"
+                    class="emotion-10"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </button>
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+          <div
+            data-focus-guard="true"
+            style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
+            tabindex="0"
+          />
         </div>
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="0"
-        />
       </div>
     </div>
   </div>
@@ -3662,104 +3593,6 @@ exports[`Select open and scroll 1`] = `
   height: 24px;
 }
 
-.emotion-13 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: block;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-.emotion-14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  background-color: transparent;
-  color: #3B3B3B;
-  text-overflow: ellipsis;
-  border-radius: 0;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
-}
-
-.emotion-14 * {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.emotion-14:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-14:focus:not(:disabled) {
-  background-color: #F1F1F1;
-  border-color: #3358CC;
-}
-
-.emotion-14:active:not(:disabled) {
-  background-color: #ECF1FF;
-}
-
-.emotion-14:disabled {
-  color: #ABABAB;
-}
-
-.emotion-14:selected:hover:not(:disabled) {
-  background-color: #ECF1FF;
-  color: #111111;
-}
-
-.emotion-14:selected:focus:not(:disabled) {
-  background-color: #ECF1FF;
-  border-color: #3358CC;
-}
-
-.emotion-14:selected:active:not(:disabled) {
-  background-color: #ECF1FF;
-}
-
-.emotion-14:selected:focus:active:not(:disabled) {
-  background-color: #ECF1FF;
-}
-
-.emotion-14:selected:focus:hover:not(:disabled) {
-  background-color: #ECF1FF;
-  color: #111111;
-}
-
 <div
     class="emotion-0"
   >
@@ -3821,45 +3654,6 @@ exports[`Select open and scroll 1`] = `
                 </svg>
               </div>
             </button>
-          </div>
-        </div>
-      </div>
-      <span
-        class="emotion-3"
-        id="mock-nk-1"
-      >
-        Press down arrow key to navigate to the first item
-      </span>
-      <div
-        aria-describedby="mock-nk-1"
-        aria-labelledby="downshift-0-label"
-        class="emotion-13"
-        data-testid="select-panel"
-        id="downshift-0-menu"
-        role="listbox"
-        style="position: absolute;"
-        tabindex="-1"
-      >
-        <div
-          aria-selected="false"
-          class="emotion-14"
-          id="downshift-0-item-0"
-          role="option"
-          value="option 1"
-        >
-          <div>
-            option 1
-          </div>
-        </div>
-        <div
-          aria-selected="false"
-          class="emotion-14"
-          id="downshift-0-item-1"
-          role="option"
-          value="option 2"
-        >
-          <div>
-            option 2
           </div>
         </div>
       </div>
@@ -4176,35 +3970,6 @@ exports[`Select renders Select with logical props 1`] = `
       </div>
     </div>
   </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-block: 30px;
-  padding-inline: 30px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    aria-labelledby="downshift-0-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-0-menu"
-    role="listbox"
-    style="position: absolute;"
-    tabindex="-1"
-  />
 </DocumentFragment>
 `;
 
@@ -4366,24 +4131,6 @@ exports[`Select renders Select with overrides 1`] = `
   height: 24px;
 }
 
-.emotion-11 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -4452,19 +4199,42 @@ exports[`Select renders Select with overrides 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-11"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -4713,24 +4483,6 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
 }
 
 .emotion-11 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4748,11 +4500,11 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   color: #6A6A6A;
 }
 
-.emotion-12:disabled {
+.emotion-11:disabled {
   color: #ABABAB;
 }
 
-.emotion-13 {
+.emotion-12 {
   margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4766,17 +4518,17 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-13:disabled {
+.emotion-12:disabled {
   color: #ABABAB;
 }
 
-.emotion-13::before {
+.emotion-12::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-13::after {
+.emotion-12::after {
   content: '';
   margin-top: -0.409em;
   display: block;
@@ -4846,27 +4598,50 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="downshift-0-label"
       class="emotion-11"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
-    <div
-      class="emotion-12"
     >
       <p
-        class="emotion-13"
+        class="emotion-12"
       >
         AssistiveText
       </p>
     </div>
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -5178,33 +4953,6 @@ exports[`Select renders SelectOption with logical props 1`] = `
       </div>
     </div>
   </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    aria-labelledby="downshift-0-label"
-    class="emotion-0"
-    data-testid="select-panel"
-    id="downshift-0-menu"
-    role="listbox"
-    style="position: absolute;"
-    tabindex="-1"
-  />
 </DocumentFragment>
 `;
 
@@ -5352,24 +5100,6 @@ exports[`Select renders disabled select 1`] = `
   height: 24px;
 }
 
-.emotion-10 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -5431,19 +5161,42 @@ exports[`Select renders disabled select 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-10"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -5662,24 +5415,6 @@ exports[`Select renders large Select 1`] = `
   height: 24px;
 }
 
-.emotion-10 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 360px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -5738,19 +5473,42 @@ exports[`Select renders large Select 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-10"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 360px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -5959,24 +5717,6 @@ exports[`Select renders loading select 1`] = `
   animation: rotate 1s linear infinite;
 }
 
-.emotion-8 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -6024,19 +5764,42 @@ exports[`Select renders loading select 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-8"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -6255,24 +6018,6 @@ exports[`Select renders medium Select 1`] = `
   height: 24px;
 }
 
-.emotion-10 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -6331,19 +6076,42 @@ exports[`Select renders medium Select 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-10"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -6586,24 +6354,6 @@ exports[`Select renders select with a pre selected option 1`] = `
   height: 24px;
 }
 
-.emotion-11 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -6672,19 +6422,42 @@ exports[`Select renders select with a pre selected option 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-11"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -6927,24 +6700,6 @@ exports[`Select renders select with a selected option 1`] = `
   height: 24px;
 }
 
-.emotion-11 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -7013,19 +6768,42 @@ exports[`Select renders select with a selected option 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-11"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -7263,24 +7041,6 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   margin-right: 8px;
 }
 
-.emotion-16 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -7378,19 +7138,42 @@ exports[`Select renders select with leading and trailing icon 1`] = `
         </svg>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-16"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -7633,24 +7416,6 @@ exports[`Select renders select with non-string options 1`] = `
   height: 24px;
 }
 
-.emotion-11 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -7721,19 +7486,42 @@ exports[`Select renders select with non-string options 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-11"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -7952,24 +7740,6 @@ exports[`Select renders small Select 1`] = `
   height: 24px;
 }
 
-.emotion-10 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 184px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -8028,19 +7798,42 @@ exports[`Select renders small Select 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-10"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 184px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -8259,24 +8052,6 @@ exports[`Select should render custom placeholder 1`] = `
   height: 24px;
 }
 
-.emotion-10 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -8335,19 +8110,42 @@ exports[`Select should render custom placeholder 1`] = `
         </div>
       </div>
     </div>
-    <div
-      aria-labelledby="downshift-0-label"
-      class="emotion-10"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
-    />
   </div>
-  <div
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
     class="nk-layer-organizer"
-  />
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
 
@@ -8566,104 +8364,6 @@ exports[`Select virtualize long list 1`] = `
   height: 24px;
 }
 
-.emotion-11 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  z-index: 1;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: block;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-.emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  background-color: transparent;
-  color: #3B3B3B;
-  text-overflow: ellipsis;
-  border-radius: 0;
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
-}
-
-.emotion-12 * {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.emotion-12:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-12:focus:not(:disabled) {
-  background-color: #F1F1F1;
-  border-color: #3358CC;
-}
-
-.emotion-12:active:not(:disabled) {
-  background-color: #ECF1FF;
-}
-
-.emotion-12:disabled {
-  color: #ABABAB;
-}
-
-.emotion-12:selected:hover:not(:disabled) {
-  background-color: #ECF1FF;
-  color: #111111;
-}
-
-.emotion-12:selected:focus:not(:disabled) {
-  background-color: #ECF1FF;
-  border-color: #3358CC;
-}
-
-.emotion-12:selected:active:not(:disabled) {
-  background-color: #ECF1FF;
-}
-
-.emotion-12:selected:focus:active:not(:disabled) {
-  background-color: #ECF1FF;
-}
-
-.emotion-12:selected:focus:hover:not(:disabled) {
-  background-color: #ECF1FF;
-  color: #111111;
-}
-
 <div>
     <div
       class="emotion-0"
@@ -8722,65 +8422,181 @@ exports[`Select virtualize long list 1`] = `
         </div>
       </div>
     </div>
-    <span
-      class="emotion-1"
-      id="mock-nk-1"
-    >
-      Press down arrow key to navigate to the first item
-    </span>
+  </div>
+  .emotion-0 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  margin: -1px;
+}
+
+.emotion-1 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 1;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  background-color: transparent;
+  color: #3B3B3B;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 8px;
+  min-height: 48px;
+}
+
+.emotion-2 * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-2:focus:not(:disabled) {
+  background-color: #F1F1F1;
+  border-color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #111111;
+}
+
+.emotion-2:selected:focus:not(:disabled) {
+  background-color: #ECF1FF;
+  border-color: #3358CC;
+}
+
+.emotion-2:selected:active:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:selected:focus:active:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:selected:focus:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #111111;
+}
+
+<div
+    class="nk-layer-organizer"
+  >
     <div
-      aria-describedby="mock-nk-1"
-      aria-labelledby="downshift-0-label"
-      class="emotion-11"
-      data-testid="select-panel"
-      id="downshift-0-menu"
-      role="listbox"
-      style="position: absolute;"
-      tabindex="-1"
+      class="nk-layer"
     >
-      <div
-        style="height: 12450px;"
-      />
-      <div
-        aria-selected="false"
-        class="emotion-12"
-        id="downshift-0-item-0"
-        role="option"
-        style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
-        value="Afghanistan"
+      <span
+        class="emotion-0"
+        id="mock-nk-1"
       >
-        <div>
-          Afghanistan
+        Press down arrow key to navigate to the first item
+      </span>
+      <div
+        aria-describedby="mock-nk-1"
+        aria-labelledby="downshift-0-label"
+        class="emotion-1"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      >
+        <div
+          style="height: 12400px;"
+        />
+        <div
+          aria-selected="false"
+          class="emotion-2"
+          id="downshift-0-item-0"
+          role="option"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(0px);"
+          value="Afghanistan"
+        >
+          <div>
+            Afghanistan
+          </div>
         </div>
-      </div>
-      <div
-        aria-selected="false"
-        class="emotion-12"
-        id="downshift-0-item-1"
-        role="option"
-        style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(100px);"
-        value="Åland Islands"
-      >
-        <div>
-          Åland Islands
+        <div
+          aria-selected="false"
+          class="emotion-2"
+          id="downshift-0-item-1"
+          role="option"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(100px);"
+          value="Åland Islands"
+        >
+          <div>
+            Åland Islands
+          </div>
         </div>
-      </div>
-      <div
-        aria-selected="false"
-        class="emotion-12"
-        id="downshift-0-item-2"
-        role="option"
-        style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(200px);"
-        value="Albania"
-      >
-        <div>
-          Albania
+        <div
+          aria-selected="false"
+          class="emotion-2"
+          id="downshift-0-item-2"
+          role="option"
+          style="position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(200px);"
+          value="Albania"
+        >
+          <div>
+            Albania
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div
-    class="nk-layer-organizer"
-  />
 </DocumentFragment>
 `;

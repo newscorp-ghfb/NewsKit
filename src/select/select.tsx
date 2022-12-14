@@ -225,7 +225,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
     // eslint-disable-next-line consistent-return
     React.useLayoutEffect(() => {
-      if (isOpen) {
+      if (isOpen && refs.reference.current && refs.floating.current) {
         return autoUpdate(
           refs.reference.current,
           refs.floating.current,
