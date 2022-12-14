@@ -1,5 +1,5 @@
 import React from 'react';
-import {useMenuContext} from './context';
+import {MenuContextProvider, useMenuContext} from './context';
 import {MenuSubIconProps, MenuSubProps} from './types';
 import {StyledButton, StyledMenuItem, StyledUl} from './styled';
 import {useTheme} from '../theme';
@@ -58,13 +58,22 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
       setIsExpanded(!isExpanded);
     }, [isExpanded, setIsExpanded]);
 
-    const {vertical, size, align, overrides: menuOverrides} = useMenuContext();
+    const menuContext = useMenuContext();
+    const {
+      vertical,
+      size,
+      align,
+      overrides: menuOverrides,
+      isSubMenu,
+    } = menuContext;
 
     const theme = useTheme();
     const menuItemOverrides: MenuSubProps['overrides'] = {
       ...get(
         theme.componentDefaults,
-        `menuItem.${vertical ? 'vertical' : 'horizontal'}`,
+        `${isSubMenu ? 'menuSubItem' : 'menuItem'}.${
+          vertical ? 'vertical' : 'horizontal'
+        }`,
       ),
       ...filterOutFalsyProperties(overrides),
     };
@@ -83,7 +92,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
         ref={ref}
       >
         {/*
-        @ts-ignore */}
+        @ts-ignore href is not required for this Button  */}
         <StyledButton
           {...buttonProps}
           align={align}
@@ -98,13 +107,15 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
           {title}
           <IndicatorIcon {...(indicatorIconProps as MenuSubIconProps)} />
         </StyledButton>
-        <StyledUl
-          expanded={isExpanded}
-          vertical={vertical}
-          overrides={overrides}
-        >
-          {children}
-        </StyledUl>
+        <MenuContextProvider value={{...menuContext, isSubMenu: true}}>
+          <StyledUl
+            expanded={isExpanded}
+            vertical={vertical}
+            overrides={overrides}
+          >
+            {children}
+          </StyledUl>
+        </MenuContextProvider>
       </StyledMenuItem>
     );
   },
