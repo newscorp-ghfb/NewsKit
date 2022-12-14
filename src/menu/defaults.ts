@@ -27,4 +27,28 @@ export default {
       spaceInset: 'spaceInsetSquish030',
     },
   },
+  menuSubItem: {
+    horizontal: {
+      minHeight: 'sizing080',
+      stylePreset: 'menuSubItemHorizontal',
+      spaceInline: 'space020',
+      spaceInset: 'space000',
+      paddingBlock: 'space030',
+      paddingInline: 'space040',
+      list: {
+        stylePreset: 'menuSub',
+      },
+    },
+    vertical: {
+      minHeight: 'sizing080',
+      stylePreset: 'menuSubItemVertical',
+      spaceInline: 'space020',
+      spaceInset: 'space000',
+      paddingBlock: 'space030',
+      paddingInline: 'space040',
+      list: {
+        stylePreset: 'menuSub',
+      },
+    },
+  },
 };
