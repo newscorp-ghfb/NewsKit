@@ -38,11 +38,11 @@ const ThemelessMenu = React.forwardRef<HTMLElement, MenuProps>(
       } else if (!expandedMenuSubId) {
         // no sub menu currently expanded
         setExpandedMenuSubId(id);
-      } else if (isDescendant(id, expandedMenuSubId)) {
-        // the parent of the currently expanded sub menu has been clicked
-        setExpandedMenuSubId(getParentId(id));
       } else if (expandedMenuSubId === id) {
         // the currently expanded sub menu has been clicked
+        setExpandedMenuSubId(getParentId(id));
+      } else if (isDescendant(id, expandedMenuSubId)) {
+        // the parent of the currently expanded sub menu has been clicked
         setExpandedMenuSubId(getParentId(id));
       } else {
         // any other sub menu has been clicked

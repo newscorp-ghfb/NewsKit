@@ -126,6 +126,17 @@ describe('MenuItem', () => {
     const fragment = renderToFragmentWithTheme(MenuWithItem, props);
     expect(fragment).toMatchSnapshot();
   });
+  it('calls menu item on click', () => {
+    const onClick = jest.fn();
+    const props = {
+      children: [<IconFilledAddCircleOutline key="i" />, menuItemContent],
+      href,
+      onClick,
+    };
+    const {getByText} = renderWithTheme(MenuWithItem, props);
+    fireEvent.click(getByText('Menu item'));
+    expect(onClick).toHaveBeenCalled();
+  });
   it('renders menu item with anchor attributes', () => {
     const props = {
       children: menuItemContent,
@@ -627,6 +638,17 @@ describe('Uncontrolled nested menu', () => {
       fireEvent.click(menuSub2);
       expect(menuSub1.parentNode).toHaveAttribute('aria-expanded', 'false');
       expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+    });
+
+    it('collapses expanded sub menus when clicked', () => {
+      const {getByText} = renderWithTheme(TestMenu);
+      const menuSub1 = getByText('menuSub1');
+      const menuSub2 = getByText('menuSub2');
+      fireEvent.click(menuSub1);
+      fireEvent.click(menuSub2);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'true');
+      fireEvent.click(menuSub2);
+      expect(menuSub2.parentNode).toHaveAttribute('aria-expanded', 'false');
     });
 
     it('does not collapse expanded sub menus when descendant sub menu expanded', () => {
