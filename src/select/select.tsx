@@ -4,10 +4,10 @@ import composeRefs from '@seznam/compose-react-refs';
 import {
   useFloating,
   autoUpdate,
-  flip,
   shift,
   offset,
   size as floatingSize,
+  autoPlacement,
 } from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
@@ -20,6 +20,7 @@ import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {get} from '../utils/get';
+import {Layer} from '../layer';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -188,22 +189,27 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [allowBlur, onBlur],
     );
 
-    const {x, y, reference, strategy, refs} = useFloating({
+    const {x, y, reference, strategy, update, refs} = useFloating({
+      strategy: 'absolute',
       open: isOpen,
       placement: 'bottom-start',
       middleware: [
         offset(0),
         shift(),
-        flip(),
+        autoPlacement({
+          allowedPlacements: ['top-start', 'bottom-start'],
+        }),
         floatingSize({
           apply({rects, elements}) {
             Object.assign(elements.floating.style, {
-              width: `${rects.reference.width}px`,
+              // when the panel is inside a modal we want to be 100%
+              width: elements.floating.classList.contains('modal-panel')
+                ? '100%'
+                : `${rects.reference.width}px`,
             });
           },
         }),
       ],
-      whileElementsMounted: autoUpdate,
     });
 
     const {
@@ -215,7 +221,18 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const {
       ref: downshiftMenuPropsRef,
       ...downshiftMenuPropsExceptRef
-    } = getMenuProps({ref: refs.floating});
+    } = getMenuProps({ref: composeRefs(refs.floating, panelRef)});
+
+    // eslint-disable-next-line consistent-return
+    React.useLayoutEffect(() => {
+      if (isOpen) {
+        return autoUpdate(
+          refs.reference.current,
+          refs.floating.current,
+          update,
+        );
+      }
+    }, [isOpen, update, refs.floating, refs.reference]);
 
     return (
       <>
@@ -242,21 +259,23 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
-        <SelectPanel
-          isOpen={isOpen}
-          overrides={overrides}
-          top={y}
-          left={x}
-          size={size}
-          buttonRef={localInputRef}
-          renderInModal={renderInModal}
-          closeMenu={closeMenu}
-          {...downshiftMenuPropsExceptRef}
-          ref={composeRefs(panelRef, downshiftMenuPropsRef)}
-          strategy={strategy}
-        >
-          {optionsAsChildren}
-        </SelectPanel>
+        <Layer>
+          <SelectPanel
+            isOpen={isOpen}
+            overrides={overrides}
+            top={y}
+            left={x}
+            size={size}
+            buttonRef={localInputRef}
+            renderInModal={renderInModal}
+            closeMenu={closeMenu}
+            {...downshiftMenuPropsExceptRef}
+            ref={downshiftMenuPropsRef}
+            strategy={strategy}
+          >
+            {optionsAsChildren}
+          </SelectPanel>
+        </Layer>
       </>
     );
   },

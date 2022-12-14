@@ -131,6 +131,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           {screenReaderOnlyMessage}
           <StyledModalPanel
             data-testid="select-panel"
+            className="modal-panel"
             aria-describedby={listDescriptionId}
             ref={panelRef}
             {...restProps}
@@ -160,8 +161,8 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           style={{
             // inline styles are faster since emotion does not have to create a new css class
             // and apply it to the element on every scroll change
-            top,
-            left,
+            top: Math.round(top),
+            left: Math.round(left),
             position: strategy,
           }}
         >
