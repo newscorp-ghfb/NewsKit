@@ -204,7 +204,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
             Object.assign(elements.floating.style, {
               // when the panel is inside a modal we want to be 100%
               width: elements.floating.classList.contains('modal-panel')
-                ? '100%'
+                ? /* istanbul ignore next */
+                  '100%'
                 : `${rects.reference.width}px`,
             });
           },
@@ -225,6 +226,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
     // eslint-disable-next-line consistent-return
     React.useLayoutEffect(() => {
+      /* istanbul ignore next */
       if (isOpen && refs.reference.current && refs.floating.current) {
         return autoUpdate(
           refs.reference.current,
