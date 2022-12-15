@@ -5,6 +5,7 @@ build
 *.log
 dist
 stats.html
+.env
 storybook-static
 .storybook/private-fonts
 coverage

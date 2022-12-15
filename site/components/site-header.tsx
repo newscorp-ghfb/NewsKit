@@ -26,6 +26,7 @@ import {routes} from '../routes';
 import {Link} from './link';
 import {Search} from './search';
 import {IconFilledGitHub} from './icons';
+import VocalNavigator from './vocal-navigator/vocal-navigator';
 
 const IconFilledMenu = toNewsKitIcon(FilledMenu);
 const IconFilledClose = toNewsKitIcon(FilledClose);
@@ -90,7 +91,7 @@ type NavItemProps = {
 
 const navItems = routes.map(({title, subNav}) => ({title, id: subNav[0].id}));
 const siteheaderAreas = `
-logo menu search github theme
+logo menu vocalsearch search github theme
  `;
 const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
   ({handleSidebarClick, toggleTheme, themeMode, path, sidebarOpen}, ref) => {
@@ -168,8 +169,8 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
           <GridLayout
             data-testid="nav-container"
             columns={{
-              lg: 'auto 1fr auto auto 80px',
-              xl: '276px 1fr auto auto 80px',
+              lg: 'auto 1fr auto auto auto 80px',
+              xl: '276px 1fr auto auto auto 80px',
             }}
             columnGap="20px"
             alignItems="center"
@@ -192,6 +193,9 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
                     </Menu>
                   </InstrumentationProvider>
                 </Areas.Menu>
+                <Areas.Vocalsearch>
+                  <VocalNavigator />
+                </Areas.Vocalsearch>
                 <Areas.Search>
                   <Search />
                 </Areas.Search>

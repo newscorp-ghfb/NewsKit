@@ -127,6 +127,7 @@
     "@types/react-helmet": "^5.0.15",
     "@types/react-input-mask": "^2.0.1",
     "@types/react-is": "17.0.3",
+    "@types/react-speech-recognition": "^3.9.0",
     "@types/react-syntax-highlighter": "^11.0.4",
     "@types/react-transition-group": "^4.4.1",
     "@types/react-virtualized": "^9.21.2",
@@ -190,6 +191,7 @@
     "react-phone-number-input": "^3.1.23",
     "react-syntax-highlighter": "^13.0.0",
     "react-test-renderer": "18",
+    "regenerator-runtime": "^0.13.11",
     "start-server-and-test": "^1.14.0",
     "storybook-addon-performance": "^0.16.1",
     "tar": "^4.4.8",
@@ -228,6 +230,7 @@
     "react-hook-form": "^7.5.3",
     "react-hot-toast": "^1.0.2",
     "react-range": "^1.8.12",
+    "react-speech-recognition": "^3.10.0",
     "react-transition-group": "^4.4.1",
     "react-virtual": "^2.10.4",
     "semver": "^7.3.7"

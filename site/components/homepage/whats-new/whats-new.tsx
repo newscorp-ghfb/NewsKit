@@ -16,12 +16,11 @@ interface WhatsNewProps {
   releases: Release[];
 }
 
-export const WhatsNew = ({releases}: WhatsNewProps) => {
-  const [latestRelease, ...restReleases] = releases;
+export const WhatsNew = ({releases}: WhatsNewProps) => (
+  // const [latestRelease, ...restReleases] = releases;
 
-  return (
-    <ContentPrimary headline="Latest releases" hideBottomSpacing>
-      <GridLayout
+  <ContentPrimary headline="Latest releases" hideBottomSpacing>
+    {/* <GridLayout
         columns={{xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)'}}
         rowGap="space040"
         columnGap="space100"
@@ -97,7 +96,6 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
             </div>
           ))}
         </Block>
-      </GridLayout>
-    </ContentPrimary>
-  );
-};
+      </GridLayout> */}
+  </ContentPrimary>
+);
