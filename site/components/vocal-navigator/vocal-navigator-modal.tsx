@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import {useSpeechSynthesis, useSpeechRecognition} from 'react-speech-kit';
+import { Divider } from '../../../src/divider';
 import {Modal} from '../../../src/modal';
+import { TextBlock } from '../../../src/text-block';
 import {routes} from '../../routes';
 
-// TODO MAKE IT AN inferface
 const VocalNavigatorModal: React.FC<{isOpen: boolean, setIsOpen: Function}> = ({isOpen, setIsOpen}) => {
   const [transcript, setTranscript] = useState<string>();
   const [displayConfirmationButtons, setDisplayConfirmationButton] = useState<boolean>();
@@ -48,6 +49,12 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean, setIsOpen: Function}> = ({
   return (
     <>
       <Modal open={isOpen} onDismiss={() => {setIsOpen(!isOpen)}} header="Vocal Search">
+        <Divider/>
+        <TextBlock stylePreset='inkContrast'>How to guide</TextBlock>
+        <TextBlock stylePreset='inkContrast'>Hold the button and tell me the name of the component you want to read about, or one of our guides:</TextBlock>
+        <TextBlock stylePreset='inkContrast'>Eg: "Button" or.. "Style Presets"</TextBlock>
+        <Divider/>
+
         <p style={{color: 'white'}}>
           {' '}
           Microphone: {listening ? 'on' : 'off'}{' '}
