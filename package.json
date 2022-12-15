@@ -230,6 +230,7 @@
     "react-hook-form": "^7.5.3",
     "react-hot-toast": "^1.0.2",
     "react-range": "^1.8.12",
+    "react-speech-kit": "^3.0.1",
     "react-speech-recognition": "^3.10.0",
     "react-transition-group": "^4.4.1",
     "react-virtual": "^2.10.4",

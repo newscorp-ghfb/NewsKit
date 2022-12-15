@@ -15457,6 +15457,11 @@ react-sizeme@^3.0.1:
     shallowequal "^1.1.0"
     throttle-debounce "^3.0.1"
 
+react-speech-kit@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-speech-kit/-/react-speech-kit-3.0.1.tgz#8bd936adfe064be1c5a07e2992dfdfd772e80d14"
+  integrity sha512-MXNOciISanhmnxpHJkBOev3M3NPDpW1T7nTc/eGw5pO9cXpoUccRxZkmr/IlpTPbPEneDNeTmbwri/YweyctZg==
+
 react-speech-recognition@^3.10.0:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/react-speech-recognition/-/react-speech-recognition-3.10.0.tgz#7aa43bb28d78b92671864dabba3a70489ccad27b"
