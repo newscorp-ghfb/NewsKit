@@ -47,13 +47,11 @@ const EditorPage = layoutProps => {
     console.log('TODO');
   });
 
-  console.log({componentProps, componentTree});
+  const onRemove = () => {};
 
   const currentInspectedItem = componentProps[currentInspectedComponentId];
 
   const onSubmit = formData => {
-    console.log({formData});
-
     setComponentProps(
       prev => {
         const props = _.omitBy(formData, v => v === '');
@@ -84,9 +82,6 @@ const EditorPage = layoutProps => {
         >
           <SideBar />
 
-          {/* <div>
-            <Component {...componentProps} />
-          </div> */}
           <MainEditor
             onAdd={onAdd}
             onSelected={onSelected}
