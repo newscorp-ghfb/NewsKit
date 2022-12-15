@@ -13,16 +13,28 @@ const Main = styled.div`
 
 const defaultProps = {
   Button: {
-    children: 'Label',
+    children: 'Button',
   },
   Flag: {
-    children: 'Label',
+    children: 'Flag',
   },
   Label: {
     children: 'Label',
   },
   Image: {
     src: 'https://picsum.photos/120/120',
+  },
+  Paragraph: {
+    children: 'Paragraph',
+  },
+  Headline: {
+    children: 'Headline',
+  },
+  TitleBar: {
+    children: 'TitleBar',
+  },
+  Tag: {
+    children: 'Tag',
   },
 };
 

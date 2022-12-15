@@ -30,8 +30,9 @@ export const InspectorForm = ({
     flatOverrides(overrides[0].type, 'overrides', overridesList);
   }
 
+  // TOOD: reset the form on component
   return (
-    <Form onSubmit={onSubmit} name={name}>
+    <Form onSubmit={onSubmit} key={name}>
       <Tabs>
         <Tab label="Props">
           <FormTab rows={props} values={values} />
