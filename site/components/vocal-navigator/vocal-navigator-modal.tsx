@@ -49,6 +49,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean, setIsOpen: Function}> = ({
   return (
     <>
       <Modal open={isOpen} onDismiss={() => {setIsOpen(!isOpen)}} header="Vocal Search">
+        
         <Divider/>
         <TextBlock stylePreset='inkContrast'>How to guide</TextBlock>
         <TextBlock stylePreset='inkContrast'>Hold the button and tell me the name of the component you want to read about, or one of our guides:</TextBlock>
