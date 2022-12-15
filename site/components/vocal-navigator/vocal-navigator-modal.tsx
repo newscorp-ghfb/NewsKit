@@ -1,41 +1,54 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useSpeechSynthesis, useSpeechRecognition} from 'react-speech-kit';
+import {Block} from '../../../src/block';
+import {Button} from '../../../src/button';
 import { Divider } from '../../../src/divider';
 import {Modal} from '../../../src/modal';
-import { TextBlock } from '../../../src/text-block';
+import {TextBlock} from '../../../src/text-block';
 import {routes} from '../../routes';
 
-const VocalNavigatorModal: React.FC<{isOpen: boolean, setIsOpen: Function}> = ({isOpen, setIsOpen}) => {
+const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
+  isOpen,
+  setIsOpen,
+}) => {
+
   const [transcript, setTranscript] = useState<string>();
-  const [displayConfirmationButtons, setDisplayConfirmationButton] = useState<boolean>();
-  
+  const [displayConfirmationButtons, setDisplayConfirmationButton,] = useState<boolean>();
   const {speak, voices, onEnd} = useSpeechSynthesis();
+  const test = 'Hello I am Newskit';
+
+  useEffect(() => {
+    if (isOpen) {
+      speak({text: test});
+    }
+  }, [isOpen]);
+
+  const askUserConfirmation = () => {
+    speak({text: `Did you say ${transcript}?`, voice: voices[1]});
+  };
+
   const {listen, listening, stop} = useSpeechRecognition({
     onResult: (result: string) => {
       setTranscript(result);
     },
     onEnd: () => {
-      askUserConfirmation()
-      setDisplayConfirmationButton(true)
-    }
+      askUserConfirmation();
+      setDisplayConfirmationButton(true);
+    },
   });
-  
+
   const startListening = () => {
-    listen()
+    listen();
   };
 
   const handleStopListening = () => {
-    stop()
-  }
+    stop();
+  };
 
-  const askUserConfirmation = () => {
-    speak({text: `Did you say ${transcript}?`,  voice: voices[1]})
-  }
-
-  const handleNoButton = () => { 
-    speak({text: `I am sorry, please try again`,  voice: voices[1]})
-    setTranscript('')
-  }
+  const handleNoButton = () => {
+    speak({text: `I am sorry, please try again`, voice: voices[1]});
+    setTranscript('');
+  };
 
   const searchAndTakeUserToPage = () => {
     // @ts-ignore
@@ -48,21 +61,39 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean, setIsOpen: Function}> = ({
 
   return (
     <>
-      <Modal open={isOpen} onDismiss={() => {setIsOpen(!isOpen)}} header="Vocal Search">
+      <Modal
+        open={isOpen}
+        onDismiss={() => {
+          setIsOpen(!isOpen);
+        }}
+        header="Vocal Search"
+      > 
         
-        <Divider/>
-        <TextBlock stylePreset='inkContrast'>How to guide</TextBlock>
-        <TextBlock stylePreset='inkContrast'>Hold the button and tell me the name of the component you want to read about, or one of our guides:</TextBlock>
-        <TextBlock stylePreset='inkContrast'>Eg: "Button" or.. "Style Presets"</TextBlock>
-        <Divider/>
+        <img src='https://cdn-icons-png.flaticon.com/512/2814/2814666.png' width='200px' height='200px'></img>
 
-        <p style={{color: 'white'}}>
-          {' '}
-          Microphone: {listening ? 'on' : 'off'}{' '}
-        </p>
+        <Divider/>
+        <TextBlock typographyPreset="utilityButton010" stylePreset='inkContrast'  paddingBlockStart="space020"  paddingBlockEnd="space020">
+          How to guide
+          <br/>
+          Hold the button and tell me the name of the component you want to read about, or one of our guides:
+          Eg: "Button" or.. "Style Presets"
+        </TextBlock>
+        <Divider />
 
-        <button
-          type="button"
+        <TextBlock
+          stylePreset="inkContrast"
+          paddingBlockEnd="space030"
+          paddingBlockStart="space030"
+          typographyPreset="utilityButton010"
+        >
+          {' '} Microphone: {listening ? 'on' : 'off'}{' '}
+        </TextBlock>
+
+        <Button
+          overrides={{
+            paddingBlockEnd: 'space020',
+          }}
+          size="small"
           onTouchStart={startListening}
           onMouseDown={startListening}
           onKeyDown={startListening}
@@ -71,15 +102,39 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean, setIsOpen: Function}> = ({
           onKeyUp={handleStopListening}
         >
           Hold to talk
-        </button>
-        <p style={{color: 'white'}}>You said: {transcript}</p>
+        </Button>
+        <TextBlock
+          paddingBlock="space030"
+          stylePreset="inkContrast"
+          typographyPreset="utilityButton010"
+        >
+          You said: {transcript}
+        </TextBlock>
 
-        {displayConfirmationButtons &&
-          <div>
-            <button onClick={() => {searchAndTakeUserToPage()}}>yes</button>
-            <button onClick={() => {handleNoButton()}}>no</button>
+        {displayConfirmationButtons && (
+          <div style={{display: 'inline-flex'}}>
+            <Button
+              overrides={{
+                paddingBlock: 'space020',
+              }}
+              size="small"
+              onClick={() => {
+                searchAndTakeUserToPage();
+              }}
+            >
+              yes
+            </Button>
+            <Block paddingInlineStart="space010" />
+            <Button
+              overrides={{
+                paddingBlockEnd: 'space010',
+              }}
+              size="small"
+              onClick={() => {
+                handleNoButton();
+              }}> no</Button>
           </div>
-        }
+        )}
       </Modal>
     </>
   );
