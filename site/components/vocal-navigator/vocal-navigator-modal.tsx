@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {useSpeechSynthesis, useSpeechRecognition} from 'react-speech-kit';
 import {Block} from '../../../src/block';
 import {Button} from '../../../src/button';
-import { Divider } from '../../../src/divider';
+import {Divider} from '../../../src/divider';
+import {Image} from '../../../src/image';
 import {Modal} from '../../../src/modal';
 import {TextBlock} from '../../../src/text-block';
 import {routes} from '../../routes';
@@ -11,9 +12,11 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   isOpen,
   setIsOpen,
 }) => {
-
   const [transcript, setTranscript] = useState<string>();
-  const [displayConfirmationButtons, setDisplayConfirmationButton,] = useState<boolean>();
+  const [
+    displayConfirmationButtons,
+    setDisplayConfirmationButton,
+  ] = useState<boolean>();
   const {speak, voices, onEnd} = useSpeechSynthesis();
 
   useEffect(() => {
@@ -47,7 +50,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   };
 
   const handleNoButton = () => {
-    speak({text: `I am sorry, please try again`, voice: voices[1]});
+    speak({text: `I am sorry, I am still learning, please try again`, voice: voices[1]});
     setTranscript('');
     setDisplayConfirmationButton(false)
   };
@@ -71,13 +74,13 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
       }
     });
 
-     // @ts-ignore Presets Presets
+    // @ts-ignore Presets Presets
     routes[2].subNav[2].subNav.forEach((nav: {title: string}) => {
       if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
         window.location.href = `${nav.id}`;
       }
     });
-  }
+  };
 
   return (
     <>
@@ -88,16 +91,25 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           setIsOpen(!isOpen);
         }}
         header="Vocal Search"
-      > 
-        
-        <img src='https://cdn-icons-png.flaticon.com/512/2814/2814666.png' width='200px' height='200px'></img>
+      >
+        <Image
+          src="https://cdn-icons-png.flaticon.com/512/2814/2814666.png"
+          overrides={{width: '200px', height: '200px'}}
+        />
 
-        <Divider/>
-        <TextBlock typographyPreset="utilityButton010" stylePreset='inkContrast'  paddingBlockStart="space020"  paddingBlockEnd="space020">
+        <Divider />
+        <TextBlock
+          typographyPreset="utilityButton020"
+          stylePreset="inkContrast"
+          paddingBlockStart="space020"
+          paddingBlockEnd="space020"
+        >
           How to guide
-          <br/>
-          Hold the button and tell me the name of a component, foundations or presets you want to read about:
-          Eg: "Button" or "Style Presets" or "Borders"
+          <br />
+          Hold the button and tell me the name of a component, foundations or
+          presets you want to read about:
+          <br /> Eg: &quot;Button&quot; or &quot;Style Presets&quot; or
+          &quot;Borders&quot;
         </TextBlock>
         <Divider />
 
@@ -107,7 +119,8 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           paddingBlockStart="space030"
           typographyPreset="utilityButton010"
         >
-          {' '} Microphone: {listening ? 'on' : 'off'}{' '}
+          {' '}
+          Microphone: {listening ? 'on' : 'off'}{' '}
         </TextBlock>
 
         <Button
@@ -148,7 +161,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
                 paddingBlockEnd: 'space010',
               }}
               size="small"
-              onClick={handleNoButton}> no</Button>
+              onClick={handleNoButton}>no</Button>
           </div>
         )}
       </Modal>
