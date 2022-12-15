@@ -14,9 +14,11 @@ exports[`OnwardJourneySection renders section as expected 1`] = `
   >
     <div>
       FeatureCard Component with props:{
-  "buttonOverrides": {
-    "paddingInline": "space000",
-    "stylePreset": "linkStandaloneInversePersistent"
+  "overrides": {
+    "button": {
+      "paddingInline": "space000",
+      "stylePreset": "linkStandaloneInversePersistent"
+    }
   }
 }
     </div>

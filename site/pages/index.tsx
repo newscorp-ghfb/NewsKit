@@ -63,6 +63,10 @@ const Index = ({
             overrides={{
               title: {typographyPreset: 'editorialHeadline060'},
               description: {typographyPreset: 'editorialSubheadline010'},
+              button: {
+                paddingInline: 'space000',
+                stylePreset: 'linkStandaloneInversePersistent',
+              },
             }}
             buttonIcon={<IconFilledLaunch />}
             buttonLabel={getValueFromCMS(
@@ -75,10 +79,6 @@ const Index = ({
               'HeroCardLink',
               'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
             )}
-            buttonOverrides={{
-              paddingInline: 'space000',
-              stylePreset: 'linkStandaloneInversePersistent',
-            }}
           />
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
@@ -112,13 +112,13 @@ const Index = ({
             overrides={{
               title: {typographyPreset: 'editorialHeadline060'},
               description: {typographyPreset: 'editorialSubheadline010'},
+              button: {
+                paddingInline: 'space000',
+                stylePreset: 'linkStandaloneInversePersistent',
+              },
             }}
             buttonLabel="Start contributing"
             buttonHref="/about/contribute"
-            buttonOverrides={{
-              paddingInline: 'space000',
-              stylePreset: 'linkStandaloneInversePersistent',
-            }}
           />
         </GridLayout>
         <GridLayout

@@ -26,9 +26,11 @@ export const OnwardJourneySection: React.FC<OnwardJourneySectionProps> = ({
       buttonLabel={buttonLabel}
       stylePrefix={stylePrefix}
       layout={layout}
-      buttonOverrides={{
-        paddingInline: 'space000',
-        stylePreset: 'linkStandaloneInversePersistent',
+      overrides={{
+        button: {
+          paddingInline: 'space000',
+          stylePreset: 'linkStandaloneInversePersistent',
+        },
       }}
       href={href}
       buttonHref={href}

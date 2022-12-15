@@ -26,10 +26,10 @@ export const WhatsNew = ({releases}: WhatsNewProps) => {
           typographyPreset: 'editorialSubheadline010',
           stylePreset: 'inkBase',
         },
-      }}
-      buttonOverrides={{
-        paddingInline: 'space000',
-        stylePreset: 'linkStandalone',
+        button: {
+          paddingInline: 'space000',
+          stylePreset: 'linkStandalone',
+        },
       }}
       buttonHref="/about/release-notes/"
     />

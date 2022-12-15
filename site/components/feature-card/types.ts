@@ -10,7 +10,6 @@ export interface FeatureCardProps
   buttonIcon?: React.ReactNode;
   buttonHref?: string;
   buttonLabel?: string;
-  buttonOverrides?: ButtonProps['overrides'];
   overrides?: {
     title?: {
       typographyPreset?: MQ<string>;
@@ -20,6 +19,7 @@ export interface FeatureCardProps
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
     };
+    button?: ButtonProps['overrides'];
   };
 }
 

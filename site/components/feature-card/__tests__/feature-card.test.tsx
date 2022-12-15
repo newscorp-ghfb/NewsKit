@@ -68,7 +68,11 @@ describe('FeatureCard', () => {
       layout: 'horizontal',
       buttonLabel: 'Read more',
       buttonHref: 'buttonHref',
-      buttonOverrides: {stylePreset: 'linkStandalone'},
+      overrides: {
+        button: {
+          stylePreset: 'linkStandalone',
+        },
+      },
     };
     const fragment = renderToFragmentWithTheme(FeatureCard, props);
     expect(fragment).toMatchSnapshot();

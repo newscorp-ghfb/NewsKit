@@ -104,12 +104,12 @@ const FeatureCardHorizontal = React.forwardRef<
       buttonIcon,
       buttonLabel,
       buttonHref,
-      buttonOverrides,
       overrides,
       ...props
     },
     ref,
   ) => {
+    const buttonOverrides = overrides?.button;
     const theme = useTheme();
     const titleTypographyPreset = getToken(
       {theme, overrides},
@@ -285,11 +285,11 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
       buttonHref,
       media,
       overrides,
-      buttonOverrides,
       ...props
     },
     ref,
   ) => {
+    const buttonOverrides = overrides?.button;
     const theme = useTheme();
     const titleTypographyPreset = getToken(
       {theme, overrides},
@@ -415,6 +415,7 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
             typographyPreset: descriptionTypographyPreset,
             stylePreset: descriptionStylePreset,
           },
+          button: overrides?.button,
         }}
         {...rest}
       />
@@ -430,6 +431,7 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
             typographyPreset: descriptionTypographyPreset,
             stylePreset: descriptionStylePreset,
           },
+          button: overrides?.button,
         }}
         {...rest}
       />
