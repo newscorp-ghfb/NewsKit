@@ -18,7 +18,9 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
 
   useEffect(() => {
     if (isOpen) {
-      speak({text: 'Hi, what can I find for you?', voice: voices[1]});
+      setTimeout(() => {
+        speak({text: 'Welcome, what can I find for you?', voice: voices[1]});
+      }, 500)
     }
   }, [isOpen]);
 
@@ -47,7 +49,12 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   const handleNoButton = () => {
     speak({text: `I am sorry, please try again`, voice: voices[1]});
     setTranscript('');
+    setDisplayConfirmationButton(false)
   };
+
+  const handleYesButton = () => {
+    searchAndTakeUserToPage()
+  }
 
   const searchAndTakeUserToPage = () => {
     // @ts-ignore SEARCHING COMPONENTS DOCS
@@ -77,6 +84,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
       <Modal
         open={isOpen}
         onDismiss={() => {
+          speak({text: 'Thank you, goodbye', voice: voices[1]});
           setIsOpen(!isOpen);
         }}
         header="Vocal Search"
@@ -131,10 +139,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
                 paddingBlock: 'space020',
               }}
               size="small"
-              onClick={() => {
-                searchAndTakeUserToPage();
-              }}
-            >
+              onClick={handleYesButton}>
               yes
             </Button>
             <Block paddingInlineStart="space010" />
@@ -143,9 +148,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
                 paddingBlockEnd: 'space010',
               }}
               size="small"
-              onClick={() => {
-                handleNoButton();
-              }}> no</Button>
+              onClick={handleNoButton}> no</Button>
           </div>
         )}
       </Modal>
