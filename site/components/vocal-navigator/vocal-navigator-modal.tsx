@@ -15,11 +15,10 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   const [transcript, setTranscript] = useState<string>();
   const [displayConfirmationButtons, setDisplayConfirmationButton,] = useState<boolean>();
   const {speak, voices, onEnd} = useSpeechSynthesis();
-  const test = 'Hello I am Newskit';
 
   useEffect(() => {
     if (isOpen) {
-      speak({text: test});
+      speak({text: 'Hi, what can I find for you?', voice: voices[1]});
     }
   }, [isOpen]);
 
@@ -51,13 +50,27 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   };
 
   const searchAndTakeUserToPage = () => {
-    // @ts-ignore
+    // @ts-ignore SEARCHING COMPONENTS DOCS
     routes[3].subNav[1].subNav.forEach((nav: {title: string}) => {
       if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
         window.location.href = `${nav.id}`;
       }
     });
-  };
+
+    // @ts-ignore Foundations
+    routes[2].subNav[1].subNav.forEach((nav: {title: string}) => {
+      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
+        window.location.href = `${nav.id}`;
+      }
+    });
+
+     // @ts-ignore Presets Presets
+    routes[2].subNav[2].subNav.forEach((nav: {title: string}) => {
+      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
+        window.location.href = `${nav.id}`;
+      }
+    });
+  }
 
   return (
     <>
@@ -75,8 +88,8 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
         <TextBlock typographyPreset="utilityButton010" stylePreset='inkContrast'  paddingBlockStart="space020"  paddingBlockEnd="space020">
           How to guide
           <br/>
-          Hold the button and tell me the name of the component you want to read about, or one of our guides:
-          Eg: "Button" or.. "Style Presets"
+          Hold the button and tell me the name of a component, foundations or presets you want to read about:
+          Eg: "Button" or "Style Presets" or "Borders"
         </TextBlock>
         <Divider />
 
