@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {useSpeechSynthesis, useSpeechRecognition} from 'react-speech-kit';
+import {Block} from '../../../src/block';
+import {Button} from '../../../src/button';
 import {Modal} from '../../../src/modal';
+import {TextBlock} from '../../../src/text-block';
 import {routes} from '../../routes';
 
 // TODO MAKE IT AN inferface
@@ -67,10 +70,20 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
         }}
         header="Vocal Search"
       >
-        <p style={{color: 'white'}}> Microphone: {listening ? 'on' : 'off'} </p>
+        <TextBlock
+          stylePreset="inkContrast"
+          paddingBlockEnd="space020"
+          typographyPreset="utilityButton010"
+        >
+          {' '}
+          Microphone: {listening ? 'on' : 'off'}{' '}
+        </TextBlock>
 
-        <button
-          type="button"
+        <Button
+          overrides={{
+            paddingBlockEnd: 'space020',
+          }}
+          size="small"
           onTouchStart={startListening}
           onMouseDown={startListening}
           onKeyDown={startListening}
@@ -79,25 +92,40 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           onKeyUp={handleStopListening}
         >
           Hold to talk
-        </button>
-        <p style={{color: 'white'}}>You said: {transcript}</p>
+        </Button>
+        <TextBlock
+          paddingBlock="space030"
+          stylePreset="inkContrast"
+          typographyPreset="utilityButton010"
+        >
+          You said: {transcript}
+        </TextBlock>
 
         {displayConfirmationButtons && (
-          <div>
-            <button
+          <div style={{display: 'inline-flex'}}>
+            <Button
+              overrides={{
+                paddingBlock: 'space020',
+              }}
+              size="small"
               onClick={() => {
                 searchAndTakeUserToPage();
               }}
             >
               yes
-            </button>
-            <button
+            </Button>
+            <Block paddingInlineStart="space010" />
+            <Button
+              overrides={{
+                paddingBlockEnd: 'space010',
+              }}
+              size="small"
               onClick={() => {
                 handleNoButton();
               }}
             >
               no
-            </button>
+            </Button>
           </div>
         )}
       </Modal>
