@@ -1,58 +1,52 @@
 import React, {useState} from 'react';
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from 'react-speech-recognition';
-import {useSpeechSynthesis} from 'react-speech-kit';
+import {useSpeechSynthesis, useSpeechRecognition} from 'react-speech-kit';
 import {Modal} from '../../../src/modal';
 import {routes} from '../../routes';
 
 // TODO MAKE IT AN inferface
-const VocalNavigatorModal: React.FC<{isOpen: boolean}> = ({isOpen}) => {
-  const {transcript, listening, resetTranscript} = useSpeechRecognition();
+const VocalNavigatorModal: React.FC<{isOpen: boolean, setIsOpen: Function}> = ({isOpen, setIsOpen}) => {
+  const [transcript, setTranscript] = useState<string>();
+  const [displayConfirmationButtons, setDisplayConfirmationButton] = useState<boolean>();
+  
+  const {listen, listening, stop} = useSpeechRecognition({
+    onResult: (result: string) => {
+      setTranscript(result);
+    },
+    onEnd: () => {
+      askUserConfirmation()
+      setDisplayConfirmationButton(true)
+    }
+  });
 
-  const [value, setValue] = useState('Welcome to Newskit how may I help?');
-  const {speak, cancel} = useSpeechSynthesis();
+  console.log(isOpen, 'isOpen modal')
+
+  const {speak} = useSpeechSynthesis();
 
   const startListening = () => {
-    resetTranscript();
-    SpeechRecognition.startListening({continuous: true, language: 'en-GB'});
+    listen()
   };
+
+  const handleStopListening = () => {
+    stop()
+  }
+
+  const askUserConfirmation = () => {
+    speak({text: `Did you say ${transcript}?`})
+  }
+
   const searchAndTakeUserToPage = () => {
     // @ts-ignore
     routes[3].subNav[1].subNav.forEach((nav: {title: string}) => {
-      console.log(nav.title.toLowerCase());
-      if (nav.title.toLowerCase() === transcript) {
+      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
         window.location.href = `${nav.id}`;
       }
     });
   };
 
-  const stopListening = () => {
-    SpeechRecognition.stopListening();
-    searchAndTakeUserToPage();
-  };
   return (
     <>
-      {/* TODO onDismisss */}
-      <Modal
-        open
-        onDismiss={() => {
-          console.log('TODO');
-        }}
-        header="Vocal Search"
-        onChange={event =>
-          setValue((event.target as HTMLTextAreaElement).value)
-        }
-      >
-        {/* TODO fix styling and remove p tag */}
-        {/* <TextBlock>Microphone: {listening ? 'on' : 'off'}</TextBlock> */}
-
-        {/* here */}
-        <p
-          style={{color: 'white'}}
-          onMouseEnter={() => speak({text: value})}
-          onMouseLeave={() => cancel}
-        >
+      <Modal open={isOpen} onDismiss={() => {setIsOpen(!isOpen)}} header="Vocal Search">
+        <p style={{color: 'white'}}>
           {' '}
           Microphone: {listening ? 'on' : 'off'}{' '}
         </p>
@@ -62,13 +56,20 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean}> = ({isOpen}) => {
           onTouchStart={startListening}
           onMouseDown={startListening}
           onKeyDown={startListening}
-          onTouchEnd={stopListening}
-          onMouseUp={stopListening}
-          onKeyUp={stopListening}
+          onTouchEnd={handleStopListening}
+          onMouseUp={handleStopListening}
+          onKeyUp={handleStopListening}
         >
           Hold to talk
         </button>
         <p style={{color: 'white'}}>You said: {transcript}</p>
+
+        {displayConfirmationButtons &&
+          <div>
+            <button onClick={() => {searchAndTakeUserToPage()}}>yes</button>
+            <button>no</button>
+          </div>
+        }
       </Modal>
     </>
   );

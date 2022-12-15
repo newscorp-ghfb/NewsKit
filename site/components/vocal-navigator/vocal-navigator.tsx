@@ -5,16 +5,15 @@ import VocalNavigatorModal from './vocal-navigator-modal';
 const VocalNavigator: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleVocalNavigatorButtorClick = () => {
-    console.log('hi');
+  const handleVocalNavigatorButtonClick = () => {
     setIsOpen(prevState => !prevState);
   };
-
+  
   return (
     <>
       {/* TODO fix onClick, not working, onClick is undefined down there */}
-      <VocalNavigatorButton onClick={handleVocalNavigatorButtorClick} />
-      <VocalNavigatorModal isOpen />
+      <VocalNavigatorButton onClick={handleVocalNavigatorButtonClick} />
+      <VocalNavigatorModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };

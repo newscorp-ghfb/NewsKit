@@ -8,8 +8,7 @@ export const IconFilledRecordVoiceOver = toNewsKitIcon(RecordVoiceOver);
 const VocalNavigatorButton: React.FC<{
   onClick: MouseEventHandler<HTMLButtonElement>;
 }> = ({onClick}) => {
-  console.log(onClick, 'onClick');
-
+  
   return (
     <>
       <IconButton
