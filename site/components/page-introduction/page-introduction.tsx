@@ -1,5 +1,18 @@
 import React from 'react';
-import {Block, TextBlock, Image, ImageProps} from 'newskit';
+import {
+  Block,
+  TextBlock,
+  Image,
+  ImageProps,
+  AudioPlayerComposable,
+  GridLayout,
+  AudioPlayerVolumeControl,
+  AudioPlayerPlayPauseButton,
+  AudioPlayerTimeDisplay,
+  AudioPlayerSeekBar,
+  AudioPlayerPlaybackSpeedControl,
+  calculateTime,
+} from 'newskit';
 import {Separator} from '../separator';
 import {Illustration} from '../illustrations/illustration-loader';
 import {PageIntroductionProps} from './types';
@@ -9,12 +22,51 @@ const heroIsImage = (hero: PageIntroductionProps['hero']): hero is ImageProps =>
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   Boolean(hero && (hero as any).src);
 
+const NarrationAudioPlayer = (props: {url: string}) => {
+  const {url} = props;
+  const breakpointKey = 'xs';
+  return (
+    <AudioPlayerComposable src={url} {...props}>
+      <TextBlock
+        stylePreset="inkContrast"
+        typographyPreset={{
+          xs: 'editorialLabel010',
+          md: 'editorialLabel030',
+        }}
+        marginBlockStart="space060"
+        marginBlockEnd="space040"
+      >
+        Listen to this article
+      </TextBlock>
+      <GridLayout
+        columns="auto auto 40px 1fr auto auto"
+        columnGap="space040"
+        alignItems="center"
+      >
+        <AudioPlayerVolumeControl
+          layout={breakpointKey === 'xs' ? 'collapsed' : 'horizontal'}
+        />
+        <AudioPlayerPlayPauseButton size="small" />
+        <AudioPlayerTimeDisplay
+          format={({currentTime}) => calculateTime(currentTime)}
+        />
+        <AudioPlayerSeekBar />
+        <AudioPlayerTimeDisplay
+          format={({duration}) => calculateTime(duration)}
+        />
+        <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
+      </GridLayout>
+    </AudioPlayerComposable>
+  );
+};
+
 export const PageIntroduction: React.FC<PageIntroductionProps> = ({
   type,
   name,
   introduction,
   hero,
   showSeparator,
+  narrationUrl,
 }) => (
   <>
     <ComponentPageCell>
@@ -72,6 +124,9 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
           )
         )}
       </Block>
+      {narrationUrl && (
+        <NarrationAudioPlayer key="narrationUrl" url={narrationUrl} />
+      )}
       {showSeparator && <Separator />}
     </ComponentPageCell>
   </>

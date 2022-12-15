@@ -35,6 +35,8 @@ const InputComponents = (layoutProps: LayoutProps) => (
     pageIntroduction={{
       type: 'Forms',
       name: 'Input components',
+      narrationUrl:
+        'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/narration/input-components.mp3',
       hero: {
         illustration: 'patterns/forms/input-components/hero',
       },

@@ -1,0 +1,12 @@
+{
+  "name": "text-to-speech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "download": "node index.js"
+  },
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^4.0.4"
+  }
+}
