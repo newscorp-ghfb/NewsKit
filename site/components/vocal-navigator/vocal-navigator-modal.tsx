@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {useSpeechSynthesis, useSpeechRecognition} from 'react-speech-kit';
 import {Block} from '../../../src/block';
 import {Button} from '../../../src/button';
-import { Divider } from '../../../src/divider';
+import {Divider} from '../../../src/divider';
+import {Image} from '../../../src/image';
 import {Modal} from '../../../src/modal';
 import {TextBlock} from '../../../src/text-block';
 import {routes} from '../../routes';
@@ -11,15 +12,17 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   isOpen,
   setIsOpen,
 }) => {
-
   const [transcript, setTranscript] = useState<string>();
-  const [displayConfirmationButtons, setDisplayConfirmationButton,] = useState<boolean>();
+  const [
+    displayConfirmationButtons,
+    setDisplayConfirmationButton,
+  ] = useState<boolean>();
   const {speak, voices, onEnd} = useSpeechSynthesis();
   const test = 'Hello I am Newskit';
 
   useEffect(() => {
     if (isOpen) {
-      speak({text: test});
+      speak({text: test, voice: voices[1]});
     }
   }, [isOpen]);
 
@@ -67,16 +70,24 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           setIsOpen(!isOpen);
         }}
         header="Vocal Search"
-      > 
-        
-        <img src='https://cdn-icons-png.flaticon.com/512/2814/2814666.png' width='200px' height='200px'></img>
+      >
+        <Image
+          src="https://cdn-icons-png.flaticon.com/512/2814/2814666.png"
+          overrides={{width: '200px', height: '200px'}}
+        />
 
-        <Divider/>
-        <TextBlock typographyPreset="utilityButton010" stylePreset='inkContrast'  paddingBlockStart="space020"  paddingBlockEnd="space020">
+        <Divider />
+        <TextBlock
+          typographyPreset="utilityButton020"
+          stylePreset="inkContrast"
+          paddingBlockStart="space020"
+          paddingBlockEnd="space020"
+        >
           How to guide
-          <br/>
-          Hold the button and tell me the name of the component you want to read about, or one of our guides:
-          Eg: "Button" or.. "Style Presets"
+          <br />
+          Hold the button and tell me the name of the component you want to read
+          about, or one of our guides: <br /> Eg: &quot;Button&quot; or
+          &quot;Style Presets&quot;
         </TextBlock>
         <Divider />
 
@@ -86,7 +97,8 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           paddingBlockStart="space030"
           typographyPreset="utilityButton010"
         >
-          {' '} Microphone: {listening ? 'on' : 'off'}{' '}
+          {' '}
+          Microphone: {listening ? 'on' : 'off'}{' '}
         </TextBlock>
 
         <Button
@@ -132,7 +144,11 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
               size="small"
               onClick={() => {
                 handleNoButton();
-              }}> no</Button>
+              }}
+            >
+              {' '}
+              no
+            </Button>
           </div>
         )}
       </Modal>
