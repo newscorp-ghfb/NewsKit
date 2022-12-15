@@ -2628,6 +2628,21 @@
   resolved "https://registry.npmjs.org/@reach/observe-rect/-/observe-rect-1.2.0.tgz"
   integrity sha512-Ba7HmkFgfQxZqqaeIWWkNK0rEhpxVQHIoVyW1YDSkGsGIXzcaW4deC8B0pZrNSSyLTdIk7y+5olKt5+g0GmFIQ==
 
+"@react-dnd/asap@^5.0.1":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@react-dnd/asap/-/asap-5.0.2.tgz#1f81f124c1cd6f39511c11a881cfb0f715343488"
+  integrity sha512-WLyfoHvxhs0V9U+GTsGilGgf2QsPl6ZZ44fnv0/b8T3nQyvzxidxsg/ZltbWssbsRDlYW8UKSQMTGotuTotZ6A==
+
+"@react-dnd/invariant@^4.0.1":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@react-dnd/invariant/-/invariant-4.0.2.tgz#b92edffca10a26466643349fac7cdfb8799769df"
+  integrity sha512-xKCTqAK/FFauOM9Ta2pswIyT3D8AQlfrYdOi/toTPEhqCuAs1v5tcJ3Y08Izh1cJ5Jchwy9SeAXmMg6zrKs2iw==
+
+"@react-dnd/shallowequal@^4.0.1":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@react-dnd/shallowequal/-/shallowequal-4.0.2.tgz#d1b4befa423f692fa4abf1c79209702e7d8ae4b4"
+  integrity sha512-/RVXdLvJxLg4QKvMoM5WlwNR9ViO9z8B/qPcc+C0Sa/teJY7QG7kJ441DwzOjMYEY7GmU4dj5EcGHIkKZiQZCA==
+
 "@rushstack/eslint-patch@^1.0.8":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz"
@@ -7673,6 +7688,15 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+dnd-core@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-16.0.1.tgz#a1c213ed08961f6bd1959a28bb76f1a868360d19"
+  integrity sha512-HK294sl7tbw6F6IeuK16YSBUoorvHpY8RHO+9yFfaJyCDVb6n7PRcezrOEOa2SBCqiYpemh5Jx20ZcjKdFAVng==
+  dependencies:
+    "@react-dnd/asap" "^5.0.1"
+    "@react-dnd/invariant" "^4.0.1"
+    redux "^4.2.0"
+
 doctrine@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/doctrine/-/doctrine-2.1.0.tgz"
@@ -10253,7 +10277,7 @@ hmac-drbg@^1.0.1:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.1:
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -15362,6 +15386,24 @@ react-codesandboxer@^3.1.1:
     lodash.pick "^4.4.0"
     react-node-resolver "^1.0.1"
 
+react-dnd-html5-backend@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-16.0.1.tgz#87faef15845d512a23b3c08d29ecfd34871688b6"
+  integrity sha512-Wu3dw5aDJmOGw8WjH1I1/yTH+vlXEL4vmjk5p+MHxP8HuHJS1lAGeIdG/hze1AvNeXWo/JgULV87LyQOr+r5jw==
+  dependencies:
+    dnd-core "^16.0.1"
+
+react-dnd@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/react-dnd/-/react-dnd-16.0.1.tgz#2442a3ec67892c60d40a1559eef45498ba26fa37"
+  integrity sha512-QeoM/i73HHu2XF9aKksIUuamHPDvRglEwdHL4jsp784BgUuWcg6mzfxT0QDdQz8Wj0qyRKx2eMg8iZtWvU4E2Q==
+  dependencies:
+    "@react-dnd/invariant" "^4.0.1"
+    "@react-dnd/shallowequal" "^4.0.1"
+    dnd-core "^16.0.1"
+    fast-deep-equal "^3.1.3"
+    hoist-non-react-statics "^3.3.2"
+
 react-docgen-typescript@^2.1.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-2.2.2.tgz#4611055e569edc071204aadb20e1c93e1ab1659c"
@@ -15777,6 +15819,13 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.0.tgz#46f10d6e29b6666df758780437651eeb2b969f13"
+  integrity sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
 
 refractor@^2.3.0:
   version "2.10.1"

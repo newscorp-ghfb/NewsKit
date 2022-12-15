@@ -1,2 +1,2 @@
 export * from './headline';
-export type {HeadlineProps} from './types';
+export type {HeadlineProps, HeadlineOverrides} from './types';

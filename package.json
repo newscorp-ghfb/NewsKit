@@ -225,6 +225,8 @@
     "isomorphic-dompurify": "^0.24.0",
     "jszip": "^3.7.1",
     "next-seo": "^4.28.1",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-focus-lock": "^2.5.0",
     "react-hook-form": "^7.5.3",
     "react-hot-toast": "^1.0.2",

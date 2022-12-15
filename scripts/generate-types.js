@@ -8,11 +8,46 @@ const typesMap = {
   Flag: 'FlagProps',
   GridLayout: 'GridLayoutProps',
   GridLayoutItem: 'GridLayoutItemProps',
+  Block: 'BlockProps',
+  Breadcrumbs: 'BreadcrumbsProps',
+  BreadcrumbItem: 'BreadcrumbItemProps',
+  Divider: 'DividerProps',
+  Headline: 'HeadlineProps',
+  IconButton: 'ButtonProps', //'IconButtonProps',
+  Image: 'ImageProps', // TODO: some attributes are not correct
+  // InlineMessage: 'InlineMessageProps', // TODO: does not work at all
+  Label: 'LabelProps',
+  Menu: 'MenuProps',
+  MenuItem: 'MenuItemProps',
+  MenuDivider: 'MenuDividerProps',
+  MenuGroup: 'MenuGroupProps',
+  MenuSub: 'MenuSubProps',
+  OrderedList: 'OrderedListProps',
+  Scroll: 'ScrollProps',
+  Tabs: 'TabsProps', // TODO: Tabs children type
+  Tab: 'TabProps',
+  Tag: 'TagProps',
+  TitleBar: 'TitleBarProps', // TODO: props actionItem, hideActionItemOn
+  Paragraph: 'ParagraphProps',
+  // Heading1: 'HeadingOverrides', // not correct types
+  // Heading2: 'HeadingOverrides',
+  // Heading3: 'HeadingOverrides',
+  UnorderedList: 'UnorderedListProps',
 };
 
 const typeReferences = {};
 const okTypes = {};
-const filterOutProps = ['overrides', 'as'];
+const filterOutProps = [
+  'as',
+  'onClick',
+  'sources',
+  'onChange',
+  'transitionPreset',
+  'hideActionItemOn',
+  'actionItem',
+  'eventContext',
+  'eventOriginator',
+];
 
 types.children.forEach(t => {
   typeReferences[t.name] = t;
@@ -35,7 +70,8 @@ function getPropsList(referenceName) {
     return parseChildren(typeObject);
   }
   if (typeObject.type) {
-    return getProp(typeObject);
+    const t = getProp(typeObject);
+    return _.get(t, 'type');
   }
   return ['none'];
 }
@@ -70,19 +106,41 @@ function getType(type) {
     return type.name;
   }
   if (type.type === 'reference') {
-    if (['ReactNode'].includes(type.name)) {
-      return type.name;
+    if (['ReactNode', 'React.ReactNode'].includes(type.name)) {
+      return 'ReactNode';
     }
     if (type.name === 'MQ') {
       return type.typeArguments[0].name;
+    }
+    if (type.package === 'csstype') {
+      return 'string';
+    }
+    if (type.package === 'typescript') {
+      if (type.name === 'Omit') {
+        const [mainType, ...omits] = type.typeArguments;
+        const omitKeys = omits.map(o => o.value);
+        const referenceType = getTypeReference(mainType.name);
+
+        if (referenceType && referenceType.type) {
+          return getType(referenceType.type);
+        } else if (referenceType && referenceType.children) {
+          const a = parseChildren(referenceType);
+          return a.filter(v => !omitKeys.includes(v.name));
+        }
+      }
     }
 
     // console.log(parseChildren(getTypeReference(type.name)));
     // return getPropsList(type.name);
 
     const referenceType = getTypeReference(type.name);
+    console.log({referenceName: type.name, referenceType});
     if (referenceType && referenceType.type) {
       return getType(referenceType.type);
+    } else if (referenceType && referenceType.children) {
+      const a = parseChildren(referenceType);
+      console.log({parsered: a});
+      return a;
     }
   }
   if (type.type === 'union') {
@@ -93,7 +151,8 @@ function getType(type) {
     const int = type.types
       .map(t => {
         if (t.declaration) {
-          return parseChildren(t.declaration);
+          const c = parseChildren(t.declaration);
+          return c;
         }
         if (t.name && t.id) {
           return getPropsList(t.name);
@@ -109,11 +168,16 @@ function getType(type) {
 
     return intersection(int);
   }
+  if (type.type === 'reflection') {
+    if (type.declaration) {
+      return parseChildren(type.declaration);
+    }
+  }
 
   return type;
 }
 
-fs.writeFileSync('./ok-types.json', JSON.stringify(okTypes));
+fs.writeFileSync('./ok-types.json', JSON.stringify(okTypes, null, '\t')); // Indented with tab));
 
 function omit(object, ...keys) {
   return _.omit(object, keys);
