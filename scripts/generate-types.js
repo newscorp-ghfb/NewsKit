@@ -13,7 +13,7 @@ const typesMap = {
   BreadcrumbItem: 'BreadcrumbItemProps',
   Divider: 'DividerProps',
   Headline: 'HeadlineProps',
-  IconButton: 'ButtonProps', //'IconButtonProps',
+  IconButton: 'ButtonProps', // 'IconButtonProps',
   Image: 'ImageProps', // TODO: some attributes are not correct
   // InlineMessage: 'InlineMessageProps', // TODO: does not work at all
   Label: 'LabelProps',
@@ -29,6 +29,7 @@ const typesMap = {
   Tag: 'TagProps',
   TitleBar: 'TitleBarProps', // TODO: props actionItem, hideActionItemOn
   Paragraph: 'ParagraphProps',
+  TextBlock: 'TextBlockProps',
   // Heading1: 'HeadingOverrides', // not correct types
   // Heading2: 'HeadingOverrides',
   // Heading3: 'HeadingOverrides',
@@ -123,7 +124,8 @@ function getType(type) {
 
         if (referenceType && referenceType.type) {
           return getType(referenceType.type);
-        } else if (referenceType && referenceType.children) {
+        }
+        if (referenceType && referenceType.children) {
           const a = parseChildren(referenceType);
           return a.filter(v => !omitKeys.includes(v.name));
         }
@@ -137,7 +139,8 @@ function getType(type) {
     console.log({referenceName: type.name, referenceType});
     if (referenceType && referenceType.type) {
       return getType(referenceType.type);
-    } else if (referenceType && referenceType.children) {
+    }
+    if (referenceType && referenceType.children) {
       const a = parseChildren(referenceType);
       console.log({parsered: a});
       return a;

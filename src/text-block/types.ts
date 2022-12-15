@@ -5,6 +5,7 @@ import {MQ} from '../utils/style';
 export interface TextBlockProps
   extends React.HTMLAttributes<HTMLElement>,
     LogicalProps {
+  children?: React.ReactNode;
   typographyPreset?: MQ<string>;
   stylePreset?: MQ<string>;
   noCrop?: boolean;

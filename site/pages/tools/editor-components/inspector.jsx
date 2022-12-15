@@ -63,25 +63,23 @@ const FormTab = ({rows, values}) => (
   </GridLayout>
 );
 
-const FormRow = ({name, isOptional, type, value}) => {
-  return (
-    <GridLayoutItem>
-      <FormInput name={name} size="small">
-        <FormInputLabel>
-          {name} {!isOptional && '( * )'}
-        </FormInputLabel>
-        {getInput({type, name, value})}
-      </FormInput>
-    </GridLayoutItem>
-  );
-};
+const FormRow = ({name, isOptional, type, value}) => (
+  <GridLayoutItem>
+    <FormInput name={name} size="small">
+      <FormInputLabel>
+        {name} {!isOptional && '( * )'}
+      </FormInputLabel>
+      {getInput({type, name, value})}
+    </FormInput>
+  </GridLayoutItem>
+);
 
 const getInput = ({type, name, value}) => {
   if (type === 'ReactNode') return makeTextInput({value});
   if (type === 'string') return makeTextInput({value});
   if (type === 'boolean') return makeCheckbox({value});
   if (Array.isArray(type) && typeof type[0] === 'string')
-    return makeSelect({options: type});
+    return makeSelect({options: type, value});
 
   if (name === 'overrides') {
     const overridesList = [];
@@ -95,21 +93,21 @@ const getInput = ({type, name, value}) => {
 const makeSelect = ({options, value}) => (
   <FormInputSelect>
     {options.map(v => (
-      <SelectOption value={v} defaultSelected={value === v}>
+      <SelectOption value={v} selected={value === v}>
         {v}
       </SelectOption>
     ))}
   </FormInputSelect>
 );
 
-const makeTextInput = ({value}) => <FormInputTextField defaultValue={value} />;
+const makeTextInput = ({value}) => <FormInputTextField value={value} />;
 
-const makeCheckbox = ({value}) => <FormInputCheckbox defaultChecked={value} />;
+const makeCheckbox = ({value}) => <FormInputCheckbox checked={value} />;
 
 const flatOverrides = (type = [], prefix = 'overrides', list = []) => {
   type.forEach(l => {
-    const name = prefix + '.' + l.name;
-    const isOptional = l.isOptional;
+    const name = `${prefix}.${l.name}`;
+    const {isOptional} = l;
 
     if (Array.isArray(l.type)) {
       flatOverrides(l.type, name, list);

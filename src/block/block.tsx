@@ -28,6 +28,7 @@ export interface BlockProps
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlockEnd` instead.
    */
   spaceStack?: MQ<string>;
+  children?: React.ReactNode;
 }
 
 const StyledDiv = styled.div<BlockProps>`

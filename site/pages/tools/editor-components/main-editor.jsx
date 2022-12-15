@@ -24,6 +24,9 @@ const defaultProps = {
   Image: {
     src: 'https://picsum.photos/120/120',
   },
+  TextBlock: {
+    children: 'TextBlock',
+  },
   Paragraph: {
     children: 'Paragraph',
   },

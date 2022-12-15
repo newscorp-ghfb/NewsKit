@@ -2,12 +2,12 @@ import React from 'react';
 import {GridLayout} from 'newskit';
 import {DndProvider} from 'react-dnd';
 import {HTML5Backend} from 'react-dnd-html5-backend';
+import _ from 'lodash';
 import Layout from '../../components/layout';
 import componentTypes from '../../../ok-types.json';
 import {InspectorForm} from './editor-components/inspector';
 import {SideBar} from './editor-components/sidebar';
 import {MainEditor} from './editor-components/main-editor';
-import _ from 'lodash';
 
 const EditorPage = layoutProps => {
   const [
@@ -22,15 +22,11 @@ const EditorPage = layoutProps => {
 
   const onAdd = React.useCallback(
     item => {
-      setComponentTree(prev => {
-        return [...prev, {id: item.id, children: []}];
-      });
-      setComponentProps(prev => {
-        return {
-          ...prev,
-          [item.id]: item,
-        };
-      });
+      setComponentTree(prev => [...prev, {id: item.id, children: []}]);
+      setComponentProps(prev => ({
+        ...prev,
+        [item.id]: item,
+      }));
     },
     [setComponentTree],
   );
@@ -48,6 +44,8 @@ const EditorPage = layoutProps => {
   });
 
   const onRemove = () => {};
+
+  console.log({componentProps, componentTree});
 
   const currentInspectedItem = componentProps[currentInspectedComponentId];
 

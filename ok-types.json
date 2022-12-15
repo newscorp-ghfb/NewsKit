@@ -417,6 +417,11 @@
 	],
 	"GridLayoutItem": [
 		{
+			"name": "children",
+			"isOptional": true,
+			"type": "ReactNode"
+		},
+		{
 			"name": "marginBlock",
 			"isOptional": true,
 			"type": "string"
@@ -528,6 +533,11 @@
 		}
 	],
 	"Block": [
+		{
+			"name": "children",
+			"isOptional": true,
+			"type": "ReactNode"
+		},
 		{
 			"name": "marginBlock",
 			"isOptional": true,
@@ -2247,6 +2257,88 @@
 					"type": "string"
 				}
 			]
+		}
+	],
+	"TextBlock": [
+		{
+			"name": "children",
+			"isOptional": true,
+			"type": "ReactNode"
+		},
+		{
+			"name": "marginBlock",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "marginBlockEnd",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "marginBlockStart",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "marginInline",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "marginInlineEnd",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "marginInlineStart",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "noCrop",
+			"isOptional": true,
+			"type": "boolean"
+		},
+		{
+			"name": "paddingBlock",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "paddingBlockEnd",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "paddingBlockStart",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "paddingInline",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "paddingInlineEnd",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "paddingInlineStart",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "stylePreset",
+			"isOptional": true,
+			"type": "string"
+		},
+		{
+			"name": "typographyPreset",
+			"isOptional": true,
+			"type": "string"
 		}
 	],
 	"UnorderedList": [
