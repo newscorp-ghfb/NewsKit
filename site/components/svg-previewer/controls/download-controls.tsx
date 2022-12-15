@@ -86,6 +86,9 @@ export const DownloadControls = ({
 
       const svgFileName = buildSvgFileName(baseSvgCodeGroup[selectedSvg].name);
 
+      // TODO:
+      // svgCode.replace('<svg ', '<svg id="nksvg" ');
+
       const fileBlob = new Blob([svgCode], {
         type: 'text/plain;charset=utf-8;',
       });
