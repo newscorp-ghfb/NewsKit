@@ -3,7 +3,7 @@ import SpeechRecognition, {
   useSpeechRecognition,
 } from 'react-speech-recognition';
 import {Modal} from '../../../src/modal';
-// import routes from '../../routes';
+import {routes} from '../../routes';
 
 // TODO MAKE IT AN inferface
 const VocalNavigatorModal: React.FC<{isOpen: boolean}> = ({isOpen}) => {
@@ -15,19 +15,19 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean}> = ({isOpen}) => {
   };
 
   const stopListening = () => {
-    SpeechRecognition.stopListening;
-    setTimeout(() => {
-      window.location.href = `https://www.newskit.co.uk/components/${transcript}`;
-    }, 1000);
+    SpeechRecognition.stopListening();
+    searchAndTakeUserToPage()
   };
 
-  // const takeUserToChosenComponent = () => {
-  //   routes[2].subnav.forEach((nav: {title: string}) => {
-  //     if (nav.title.includes(transcript)) {
-  //       window.location.href = `https://www.newskit.co.uk/${nav.title}`
-  //     }
-  //   })
-  // }
+  const searchAndTakeUserToPage = () => {
+    // @ts-ignore
+    routes[3].subNav[1].subNav.forEach((nav: {title: string}) => {
+      console.log(nav.title.toLowerCase())
+      if (nav.title.toLowerCase() === transcript) {
+        window.location.href = `${nav.id}`
+      }
+    })
+  }
 
   return (
     <>
