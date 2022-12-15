@@ -17,18 +17,22 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
     displayConfirmationButtons,
     setDisplayConfirmationButton,
   ] = useState<boolean>();
-  const {speak, voices, onEnd} = useSpeechSynthesis();
+  const {speak, voices} = useSpeechSynthesis();
+
+  const speakEnhanced = (text: string) => {
+    speak({text, voice: voices[39], pitch: 1.6, rate: 1});
+  }
 
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => {
-        speak({text: 'Welcome, what can I find for you?', voice: voices[1]});
+        speakEnhanced('Welcome, what can I find for you?')
       }, 500)
     }
   }, [isOpen]);
 
   const askUserConfirmation = () => {
-    speak({text: `Did you say ${transcript}?`, voice: voices[1]});
+    speakEnhanced(`Did you say ${transcript}?`)
   };
 
   const {listen, listening, stop} = useSpeechRecognition({
@@ -50,7 +54,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   };
 
   const handleNoButton = () => {
-    speak({text: `I am sorry, I am still learning, please try again`, voice: voices[1]});
+    speakEnhanced(`I am sorry, I am still learning, please try again`)
     setTranscript('');
     setDisplayConfirmationButton(false)
   };
@@ -87,7 +91,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
       <Modal
         open={isOpen}
         onDismiss={() => {
-          speak({text: 'Thank you, goodbye', voice: voices[1]});
+          speakEnhanced('Thank you, goodbye')
           setIsOpen(!isOpen);
         }}
         header="Vocal Search"
