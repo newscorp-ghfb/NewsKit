@@ -13,8 +13,8 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
-import {ContentProps, getSheets} from '../utils/google-sheet';
-import {formatSheetData, getValueFromCMS} from '../utils/google-sheet/utils';
+import {getSheets} from '../utils/google-sheet';
+import {formatSheetData} from '../utils/google-sheet/utils';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -28,11 +28,25 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
+interface HeroCardContent {
+  hero_card_title: string;
+  hero_card_description: string;
+  hero_card_link_text: string;
+  hero_card_link: string;
+}
+// Content if the CMS fails - default to this
+const heroCardFallbackContent: HeroCardContent = {
+  hero_card_title: `Latest blog`,
+  hero_card_description: `How an audio player component tells the story of NewsKit Design System's changing strategy.`,
+  hero_card_link_text: `Read on Medium`,
+  hero_card_link: `https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67`,
+};
+
 const Index = ({
   releases,
   content,
   ...layoutProps
-}: LayoutProps & ReleasesPageProps & ContentProps) => {
+}: LayoutProps & ReleasesPageProps & {content: HeroCardContent}) => {
   const {themeMode, toggleTheme} = layoutProps;
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
@@ -52,12 +66,8 @@ const Index = ({
           }}
         >
           <FeatureCard
-            title={getValueFromCMS(content, 'HeroCardTitle', 'Latest blog')}
-            description={getValueFromCMS(
-              content,
-              'HeroCardDescription',
-              "How an audio player component tells the story of NewsKit Design System's changing strategy",
-            )}
+            title={content.hero_card_title}
+            description={content.hero_card_description}
             stylePrefix="worldDesignSystemsWeekCard"
             layout="horizontal"
             overrides={{
@@ -65,16 +75,8 @@ const Index = ({
               description: {typographyPreset: 'editorialSubheadline010'},
             }}
             buttonIcon={<IconFilledLaunch />}
-            buttonLabel={getValueFromCMS(
-              content,
-              'HeroCardLinkText',
-              'Read on Medium',
-            )}
-            buttonHref={getValueFromCMS(
-              content,
-              'HeroCardLink',
-              'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
-            )}
+            buttonLabel={content.hero_card_link_text}
+            buttonHref={content.hero_card_link}
             buttonOverrides={{
               paddingInline: 'space000',
               typographyPreset: 'utilityButton020',
@@ -141,6 +143,6 @@ export async function getStaticProps() {
     getSheets('Homepage'),
   ]);
 
-  const content = formatSheetData(data);
+  const content = {...heroCardFallbackContent, ...formatSheetData(data)};
   return {props: {releases, content}};
 }

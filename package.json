@@ -216,6 +216,7 @@
     "date-fns": "^2.6.0",
     "debounce": "^1.2.0",
     "dequal": "^1.0.0",
+    "dotenv": "^16.0.3",
     "downshift": "^6.1.7",
     "file-saver": "^2.0.5",
     "glob": "^8.0.3",
