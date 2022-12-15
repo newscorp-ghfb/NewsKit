@@ -11,7 +11,6 @@ const VocalNavigator: React.FC = () => {
   
   return (
     <>
-      {/* TODO fix onClick, not working, onClick is undefined down there */}
       <VocalNavigatorButton onClick={handleVocalNavigatorButtonClick} />
       <VocalNavigatorModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </>

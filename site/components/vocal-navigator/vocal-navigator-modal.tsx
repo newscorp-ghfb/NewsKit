@@ -13,7 +13,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
     displayConfirmationButtons,
     setDisplayConfirmationButton,
   ] = useState<boolean>();
-  const {speak} = useSpeechSynthesis();
+  const {speak, voices, onEnd} = useSpeechSynthesis();
   const test = 'Hello I am Newskit';
   useEffect(() => {
     if (isOpen) {
@@ -24,8 +24,9 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   }, [isOpen]);
 
   const askUserConfirmation = () => {
-    speak({text: `Did you say ${transcript}?`});
+    speak({text: `Did you say ${transcript}?`, voice: voices[1]});
   };
+
   const {listen, listening, stop} = useSpeechRecognition({
     onResult: (result: string) => {
       setTranscript(result);
@@ -35,13 +36,17 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
       setDisplayConfirmationButton(true);
     },
   });
-
   const startListening = () => {
     listen();
   };
 
   const handleStopListening = () => {
     stop();
+  };
+
+  const handleNoButton = () => {
+    speak({text: `I am sorry, please try again`, voice: voices[1]});
+    setTranscript('');
   };
 
   const searchAndTakeUserToPage = () => {
@@ -86,7 +91,13 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
             >
               yes
             </button>
-            <button>no</button>
+            <button
+              onClick={() => {
+                handleNoButton();
+              }}
+            >
+              no
+            </button>
           </div>
         )}
       </Modal>
