@@ -13,21 +13,20 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean}> = ({isOpen}) => {
     resetTranscript();
     SpeechRecognition.startListening({continuous: true, language: 'en-GB'});
   };
-
-  const stopListening = () => {
-    SpeechRecognition.stopListening();
-    searchAndTakeUserToPage()
-  };
-
   const searchAndTakeUserToPage = () => {
     // @ts-ignore
     routes[3].subNav[1].subNav.forEach((nav: {title: string}) => {
-      console.log(nav.title.toLowerCase())
+      console.log(nav.title.toLowerCase());
       if (nav.title.toLowerCase() === transcript) {
-        window.location.href = `${nav.id}`
+        window.location.href = `${nav.id}`;
       }
-    })
-  }
+    });
+  };
+
+  const stopListening = () => {
+    SpeechRecognition.stopListening();
+    searchAndTakeUserToPage();
+  };
 
   return (
     <>
