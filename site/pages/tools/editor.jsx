@@ -1,5 +1,5 @@
 import React from 'react';
-import {GridLayout, useTheme} from 'newskit';
+import {GridLayout} from 'newskit';
 import {DndProvider} from 'react-dnd';
 import {HTML5Backend} from 'react-dnd-html5-backend';
 import _ from 'lodash';
@@ -122,20 +122,6 @@ const EditorPage = layoutProps => {
             tree={componentTree}
             data={componentProps}
           />
-          {/* <Accordion
-            header="Children"
-            max-height="100%"
-            expanded={expanded}
-            onClick={() => toggleExpanded(!expanded)}
-          >
-            <ElementsList
-              elements={componentTree}
-              moveItem={onMove}
-              onSelect={onSelected}
-              onHover={onHoverChild}
-              onUnhover={onUnhoverChild}
-            />
-          </Accordion> */}
           {inspectorRows && (
             <InspectorForm
               name={currentInspectedItem.id + currentInspectedItem.component}
