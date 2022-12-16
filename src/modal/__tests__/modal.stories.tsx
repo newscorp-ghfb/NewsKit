@@ -54,7 +54,7 @@ export default {
 };
 
 export const StoryModalDefault = () =>
-  React.createElement() => {
+  React.createElement(() => {
     const [isActive, open, close] = useActiveState();
 
     return (

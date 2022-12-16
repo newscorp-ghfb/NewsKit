@@ -44,7 +44,8 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
     },
     onEnd: () => {
       askUserConfirmation();
-      if (transcript !== undefined) setDisplayConfirmationButton(true);
+      console.log(transcript)
+      if (transcript !== undefined && transcript !== '' ) setDisplayConfirmationButton(true);
     },
   });
 
@@ -123,6 +124,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
       speakEnhanced(
         `I did not find anything about ${transcript}, try again`,
       );
+      setDisplayConfirmationButton(false)
     } else {
       speakEnhanced(`Thank you, I am taking you there`);
       window.location.href = result;
