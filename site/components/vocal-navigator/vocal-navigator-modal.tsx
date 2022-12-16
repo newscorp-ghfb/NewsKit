@@ -47,7 +47,11 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   }, [isOpen]);
 
   const askUserConfirmation = () => {
-    speakEnhanced(`Did you say ${transcript}?`);
+    if (transcript === undefined || transcript === '') {
+      speakEnhanced('I am sorry, I did not catch what you said');
+    } else {
+      speakEnhanced(`Did you say ${transcript}?`);
+    }
   };
 
   const {listen, listening, stop} = useSpeechRecognition({
@@ -56,7 +60,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
     },
     onEnd: () => {
       askUserConfirmation();
-      setDisplayConfirmationButton(true);
+      if (transcript !== undefined) setDisplayConfirmationButton(true);
     },
   });
 
@@ -68,6 +72,37 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
     stop();
   };
 
+  // eslint-disable-next-line consistent-return
+  const searchPage = () => {
+    let resultComponent;
+    // @ts-ignore Components
+    routes[3].subNav[1].subNav.forEach((nav: {title: string}) => {
+      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
+        resultComponent = nav.id;
+      }
+    });
+    if (resultComponent) return resultComponent;
+
+    let resultFoundation;
+    // @ts-ignore Foundations
+    routes[2].subNav[1].subNav.forEach((nav: {title: string}) => {
+      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
+        resultFoundation = nav.id;
+      }
+    });
+    if (resultFoundation) return resultFoundation;
+
+    let resultPreset;
+    // @ts-ignore Presets Presets
+    routes[2].subNav[2].subNav.forEach((nav: {title: string}) => {
+      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
+        resultPreset = nav.id;
+      }
+    });
+    if (resultPreset) return resultPreset;
+  };
+  const [expanded, toggleExpanded] = React.useState(false);
+
   const handleNoButton = () => {
     speakEnhanced(`I am sorry, I am still learning, please try again`);
     setTranscript('');
@@ -75,32 +110,17 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   };
 
   const handleYesButton = () => {
-    searchAndTakeUserToPage();
+    const result = searchPage();
+    if (result === undefined) {
+      speakEnhanced(
+        `I am sorry, I did not find anything about ${transcript}, try searching something else`,
+      );
+    } else {
+      speakEnhanced(`Thank you, I am taking you there`);
+      window.location.href = result;
+    }
   };
 
-  const searchAndTakeUserToPage = () => {
-    // @ts-ignore SEARCHING COMPONENTS DOCS
-    routes[3].subNav[1].subNav.forEach((nav: {title: string}) => {
-      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
-        window.location.href = `${nav.id}`;
-      }
-    });
-
-    // @ts-ignore Foundations
-    routes[2].subNav[1].subNav.forEach((nav: {title: string}) => {
-      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
-        window.location.href = `${nav.id}`;
-      }
-    });
-
-    // @ts-ignore Presets Presets
-    routes[2].subNav[2].subNav.forEach((nav: {title: string}) => {
-      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
-        window.location.href = `${nav.id}`;
-      }
-    });
-  };
-  const [expanded, toggleExpanded] = React.useState(false);
   return (
     <>
       <Modal
