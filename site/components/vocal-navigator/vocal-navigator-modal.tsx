@@ -5,8 +5,23 @@ import {Button} from '../../../src/button';
 import {Divider} from '../../../src/divider';
 import {Image} from '../../../src/image';
 import {Modal} from '../../../src/modal';
+import {Accordion} from '../../../src/accordion';
 import {TextBlock} from '../../../src/text-block';
 import {routes} from '../../routes';
+
+const content = (
+  <TextBlock
+    typographyPreset="editorialParagraph010"
+    stylePreset="inkContrast"
+    paddingBlockEnd="space010"
+  >
+    <br />
+    Hold the button and tell me the name of a component, foundations or presets
+    you want to read about:
+    <br /> Eg: &quot;Button&quot; or &quot;Style Presets&quot; or
+    &quot;Borders&quot;
+  </TextBlock>
+);
 
 const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   isOpen,
@@ -21,18 +36,18 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
 
   const speakEnhanced = (text: string) => {
     speak({text, voice: voices[39], pitch: 1.6, rate: 1});
-  }
+  };
 
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => {
-        speakEnhanced('Welcome, what can I find for you?')
-      }, 500)
+        speakEnhanced('Welcome, what can I find for you?');
+      }, 500);
     }
   }, [isOpen]);
 
   const askUserConfirmation = () => {
-    speakEnhanced(`Did you say ${transcript}?`)
+    speakEnhanced(`Did you say ${transcript}?`);
   };
 
   const {listen, listening, stop} = useSpeechRecognition({
@@ -54,14 +69,14 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   };
 
   const handleNoButton = () => {
-    speakEnhanced(`I am sorry, I am still learning, please try again`)
+    speakEnhanced(`I am sorry, I am still learning, please try again`);
     setTranscript('');
-    setDisplayConfirmationButton(false)
+    setDisplayConfirmationButton(false);
   };
 
   const handleYesButton = () => {
-    searchAndTakeUserToPage()
-  }
+    searchAndTakeUserToPage();
+  };
 
   const searchAndTakeUserToPage = () => {
     // @ts-ignore SEARCHING COMPONENTS DOCS
@@ -85,13 +100,13 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
       }
     });
   };
-
+  const [expanded, toggleExpanded] = React.useState(false);
   return (
     <>
       <Modal
         open={isOpen}
         onDismiss={() => {
-          speakEnhanced('Thank you, goodbye')
+          speakEnhanced('Thank you, goodbye');
           setIsOpen(!isOpen);
         }}
         header="Vocal Search"
@@ -101,20 +116,18 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           overrides={{width: '200px', height: '200px'}}
         />
 
-        <Divider />
-        <TextBlock
-          typographyPreset="utilityButton020"
-          stylePreset="inkContrast"
-          paddingBlockStart="space020"
-          paddingBlockEnd="space020"
+        <Accordion
+          header="How to guide"
+          expanded={expanded}
+          onClick={() => toggleExpanded(!expanded)}
+          overrides={{
+            header: {
+              typographyPreset: 'utilityButton010',
+            },
+          }}
         >
-          How to guide
-          <br />
-          Hold the button and tell me the name of a component, foundations or
-          presets you want to read about:
-          <br /> Eg: &quot;Button&quot; or &quot;Style Presets&quot; or
-          &quot;Borders&quot;
-        </TextBlock>
+          {content}
+        </Accordion>
         <Divider />
 
         <TextBlock
@@ -156,7 +169,8 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
                 paddingBlock: 'space020',
               }}
               size="small"
-              onClick={handleYesButton}>
+              onClick={handleYesButton}
+            >
               yes
             </Button>
             <Block paddingInlineStart="space010" />
@@ -165,7 +179,10 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
                 paddingBlockEnd: 'space010',
               }}
               size="small"
-              onClick={handleNoButton}>no</Button>
+              onClick={handleNoButton}
+            >
+              no
+            </Button>
           </div>
         )}
       </Modal>
