@@ -9,7 +9,7 @@ import {Accordion} from '../../../src/accordion';
 import {TextBlock} from '../../../src/text-block';
 import {routes} from '../../routes';
 
-const content = (
+const howToGuideContent = (
   <TextBlock
     typographyPreset="editorialParagraph010"
     stylePreset="inkContrast"
@@ -27,32 +27,16 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   isOpen,
   setIsOpen,
 }) => {
+
   const [transcript, setTranscript] = useState<string>();
   const [
     displayConfirmationButtons,
     setDisplayConfirmationButton,
   ] = useState<boolean>();
+
+  const [expanded, toggleExpanded] = React.useState(false);
+
   const {speak, voices} = useSpeechSynthesis();
-
-  const speakEnhanced = (text: string) => {
-    speak({text, voice: voices[39], pitch: 1.6, rate: 1});
-  };
-
-  useEffect(() => {
-    if (isOpen) {
-      setTimeout(() => {
-        speakEnhanced('Welcome, what can I find for you?');
-      }, 500);
-    }
-  }, [isOpen]);
-
-  const askUserConfirmation = () => {
-    if (transcript === undefined || transcript === '') {
-      speakEnhanced('I am sorry, I did not catch what you said');
-    } else {
-      speakEnhanced(`Did you say ${transcript}?`);
-    }
-  };
 
   const {listen, listening, stop} = useSpeechRecognition({
     onResult: (result: string) => {
@@ -63,6 +47,26 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
       if (transcript !== undefined) setDisplayConfirmationButton(true);
     },
   });
+
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => {
+        speakEnhanced('Welcome');
+      }, 500);
+    }
+  }, [isOpen]);
+
+  const speakEnhanced = (text: string) => {
+    speak({text, voice: voices[39], pitch: 1.6, rate: 1});
+  };
+
+  const askUserConfirmation = () => {
+    if (transcript === undefined || transcript === '') {
+      speakEnhanced('I did not catch what you said');
+    } else {
+      speakEnhanced(`Did you say ${transcript}?`);
+    }
+  };
 
   const startListening = () => {
     listen();
@@ -76,16 +80,21 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   const searchPage = () => {
     let resultComponent;
     // @ts-ignore Components
-    routes[3].subNav[1].subNav.forEach((nav: {title: string}) => {
-      if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
-        resultComponent = nav.id;
+    routes[3].subNav.forEach((componentSubNav: {subNav: []}) => {
+      if (componentSubNav.subNav) {
+        componentSubNav.subNav.forEach((nav: {title: string, id: string}) => {
+          if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
+             resultComponent = nav.id;
+           }
+        })  
       }
-    });
+    })
+
     if (resultComponent) return resultComponent;
 
     let resultFoundation;
     // @ts-ignore Foundations
-    routes[2].subNav[1].subNav.forEach((nav: {title: string}) => {
+    routes[2].subNav[1].subNav.forEach((nav: {title: string, id: string}) => {
       if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
         resultFoundation = nav.id;
       }
@@ -94,17 +103,16 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
 
     let resultPreset;
     // @ts-ignore Presets Presets
-    routes[2].subNav[2].subNav.forEach((nav: {title: string}) => {
+    routes[2].subNav[2].subNav.forEach((nav: {title: string, id: string}) => {
       if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
         resultPreset = nav.id;
       }
     });
     if (resultPreset) return resultPreset;
   };
-  const [expanded, toggleExpanded] = React.useState(false);
 
   const handleNoButton = () => {
-    speakEnhanced(`I am sorry, I am still learning, please try again`);
+    speakEnhanced(`Please try again`);
     setTranscript('');
     setDisplayConfirmationButton(false);
   };
@@ -113,7 +121,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
     const result = searchPage();
     if (result === undefined) {
       speakEnhanced(
-        `I am sorry, I did not find anything about ${transcript}, try searching something else`,
+        `I did not find anything about ${transcript}, try again`,
       );
     } else {
       speakEnhanced(`Thank you, I am taking you there`);
@@ -127,6 +135,8 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
         open={isOpen}
         onDismiss={() => {
           speakEnhanced('Thank you, goodbye');
+          setDisplayConfirmationButton(false)
+          setTranscript('')
           setIsOpen(!isOpen);
         }}
         header="Vocal Search"
@@ -146,7 +156,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
             },
           }}
         >
-          {content}
+          {howToGuideContent}
         </Accordion>
         <Divider />
 
@@ -167,7 +177,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           size="small"
           onTouchStart={startListening}
           onMouseDown={startListening}
-          onKeyDown={startListening}
+          onKeyDown={(e) => {if (e.key !== 'Tab') startListening()}}
           onTouchEnd={handleStopListening}
           onMouseUp={handleStopListening}
           onKeyUp={handleStopListening}
