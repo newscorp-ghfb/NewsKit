@@ -5,7 +5,40 @@ import {useDrop} from 'react-dnd';
 import _ from 'lodash';
 import composeRefs from '@seznam/compose-react-refs';
 
-const {GridLayout, TextBlock, styled} = newskit;
+const {GridLayout, GridLayoutItem, Menu, Block, Scroll, styled} = newskit;
+
+const componetns = {
+  ...newskit,
+};
+
+componetns['GridLayout'] = styled(GridLayout)`
+  &:hover {
+    outline: 2px dotted #ccc;
+  }
+`;
+componetns['GridLayoutItem'] = styled(GridLayoutItem)`
+  min-height: 10px;
+  &:hover {
+    outline: 2px dotted lightgreen;
+  }
+`;
+componetns['Block'] = styled(Block)`
+  min-height: 10px;
+  &:hover {
+    outline: 2px dotted #ccc;
+  }
+`;
+componetns['Menu'] = styled(Menu)`
+  &:hover {
+    outline: 2px dotted #ccc;
+  }
+`;
+componetns['Scroll'] = styled(Scroll)`
+  min-height: 10px;
+  &:hover {
+    outline: 2px dotted #ccc;
+  }
+`;
 
 const Main = styled.div`
   width: 100%;
@@ -45,26 +78,10 @@ const defaultProps = {
     overrides: {
       minHeight: '42px',
     },
-    className: 'active-element',
   },
-  Block: {
-    className: 'active-element',
-    style: {
-      minHeight: '10px',
-    },
-  },
-  Scroll: {
-    className: 'active-element',
-    style: {
-      minHeight: '10px',
-    },
-  },
-  Menu: {
-    className: 'active-element',
-    style: {
-      minHeight: '10px',
-    },
-  },
+  Block: {},
+  Scroll: {},
+  Menu: {},
   MenuItem: {
     children: 'Menu Label',
   },
@@ -93,8 +110,11 @@ export const MainEditor = ({onAdd, onSelected, onMove, data, tree}) => {
   );
 };
 
-const mapItems = ({data, onSelected, items, onAdd}) =>
-  items.map(({id, children}) => {
+const mapItems = ({data, onSelected, items, onAdd}) => {
+  if (!items) {
+    return null;
+  }
+  return items.map(({id, children}) => {
     const item = data[id];
 
     if (withChildrenComponents.includes(item.component)) {
@@ -109,11 +129,12 @@ const mapItems = ({data, onSelected, items, onAdd}) =>
       );
     }
 
-    return <ComponentPreview {...item} onSelected={onSelected} />;
+    return <ComponentPreview onAdd={onAdd} {...item} onSelected={onSelected} />;
   });
+};
 
 const ComponentPreview = ({component, props, onSelected, id}) => {
-  const Component = newskit[component];
+  const Component = componetns[component];
 
   const onClickHandler = React.useCallback(
     e => {
@@ -162,9 +183,9 @@ const ComponentPreviewWithChildren = ({
     handler: onClickHandler,
   });
 
-  const Component = newskit[component];
+  const Component = componetns[component];
 
-  const elementChildren = mapItems({data, onSelected, items: children});
+  const elementChildren = mapItems({data, onSelected, items: children, onAdd});
 
   return (
     <Component {...props} ref={composeRefs(drop, ref)}>

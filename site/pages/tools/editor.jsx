@@ -26,20 +26,19 @@ const EditorPage = layoutProps => {
     item => {
       console.log('on add', item);
 
+      const elementItem = {
+        id: item.id,
+        children: [],
+        type: item.name,
+        parentID: item.parentID || undefined,
+      };
       if (item.parentID) {
         setComponentTree(prev => {
-          console.log('add to parent');
-          console.log({prev});
-          const updatedTree = insertItemInPlace(item, prev);
-          console.log({updatedTree});
-
+          insertItemInPlace(elementItem, prev);
           return prev;
         });
       } else {
-        setComponentTree(prev => [
-          ...prev,
-          {id: item.id, children: [], type: item.name},
-        ]);
+        setComponentTree(prev => [...prev, elementItem]);
       }
 
       setComponentProps(prev => ({
