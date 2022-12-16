@@ -78,7 +78,7 @@ export const InspectorForm = ({
             </Button>
           </Accordion>
 
-          <Accordion header="Children">
+          <Accordion header="Elements">
             <ElementsList
               elements={elements}
               moveItem={moveItem}

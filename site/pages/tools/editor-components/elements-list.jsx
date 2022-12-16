@@ -1,10 +1,9 @@
 import React from 'react';
-import {styled} from 'newskit';
+import {Block, TextBlock, IconButton, Stack, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import ElementListItemDraggable from './element-list-draggable';
 
-const StyledDiv = styled.div`
-  height: 100%;
-`;
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
 export const ElementsList = ({
   elements,
@@ -13,7 +12,7 @@ export const ElementsList = ({
   onHover,
   onUnhover,
 }) => (
-  <StyledDiv>
+  <>
     {elements.map((element, index) =>
       element.children.length === 0 ? (
         <ElementListItemDraggable
@@ -28,20 +27,38 @@ export const ElementsList = ({
           name={element.componentName}
         />
       ) : (
-        element.children.map((child, childIndex) => (
-          <ElementListItemDraggable
-            key={child.id}
-            type={child.type}
-            index={childIndex}
-            moveItem={moveItem}
-            id={child.id}
-            onSelect={onSelect}
-            onHover={onHover}
-            onUnhover={onUnhover}
-            name={element.componentName}
-          />
-        ))
+        <>
+          <Stack
+            key={element.id}
+            stackDistribution="space-between"
+            flow="horizontal-center"
+          >
+            <TextBlock width="100%">{element.type}</TextBlock>
+            <IconButton
+              onClick={() => {
+                onSelect(element.id);
+              }}
+            >
+              <IconFilledInfo overrides={{size: 'iconSize010'}} />
+            </IconButton>
+          </Stack>
+          {element.children.map((child, childIndex) => (
+            <Block marginInlineStart="space030">
+              <ElementListItemDraggable
+                key={child.id}
+                type={child.type}
+                index={childIndex}
+                moveItem={moveItem}
+                id={child.id}
+                onSelect={onSelect}
+                onHover={onHover}
+                onUnhover={onUnhover}
+                name={element.componentName}
+              />
+            </Block>
+          ))}
+        </>
       ),
     )}
-  </StyledDiv>
+  </>
 );
