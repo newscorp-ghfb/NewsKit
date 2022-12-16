@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+// @ts-ignore
 import {useSpeechSynthesis, useSpeechRecognition} from 'react-speech-kit';
 import {Block} from '../../../src/block';
 import {Button} from '../../../src/button';
