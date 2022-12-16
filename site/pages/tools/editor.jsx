@@ -8,7 +8,7 @@ import Layout from '../../components/layout';
 import componentTypes from '../../../ok-types.json';
 import {InspectorForm} from './editor-components/inspector';
 import {SideBar} from './editor-components/sidebar';
-import {MainEditor} from './editor-components/main-editor';
+import {MainEditor, getId} from './editor-components/main-editor';
 import {DataLists} from './editor-components/datalits';
 
 const EditorPage = layoutProps => {
@@ -114,8 +114,18 @@ const EditorPage = layoutProps => {
     [setComponentTree, setComponentProps],
   );
 
-  const onClone = React.useCallback(() => {
+  const onClone = React.useCallback(id => {
     console.log('clone ', id);
+    const newId = getId();
+    setComponentProps(prev => ({
+      ...prev,
+      [newId]: {...prev[id]},
+    }));
+    setComponentTree(prev => {
+      //console.log('new t', cloneItemInPlace(id, prev, newId));
+
+      return cloneItemInPlace(id, prev, newId);
+    });
   });
 
   const inspectorRows =
@@ -186,3 +196,19 @@ const deleteItemInPlace = (id, list) => {
     return item.id !== id;
   });
 };
+
+const cloneItemInPlace = (id, list, newId) =>
+  list.reduce((prev, item) => {
+    const children = cloneItemInPlace(id, item.children, newId);
+
+    const itemTransformed = {
+      ...item,
+      children,
+    };
+
+    if (itemTransformed.id === id) {
+      const newItem = {...itemTransformed, id: newId};
+      return [...prev, itemTransformed, newItem];
+    }
+    return [...prev, itemTransformed];
+  }, []);

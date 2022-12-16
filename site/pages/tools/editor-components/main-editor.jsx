@@ -5,7 +5,15 @@ import {useDrop} from 'react-dnd';
 import _ from 'lodash';
 import composeRefs from '@seznam/compose-react-refs';
 
-const {GridLayout, GridLayoutItem, Menu, Block, Scroll, styled} = newskit;
+const {
+  GridLayout,
+  GridLayoutItem,
+  Menu,
+  Block,
+  Scroll,
+  Breadcrumbs,
+  styled,
+} = newskit;
 
 const componetns = {
   ...newskit,
@@ -30,6 +38,10 @@ componetns['Menu'] = styled(Menu)`
   outline: 2px dotted violet;
 `;
 componetns['Scroll'] = styled(Scroll)`
+  min-height: 10px;
+  outline: 2px dotted orange;
+`;
+componetns['Breadcrumbs'] = styled(Breadcrumbs)`
   min-height: 10px;
   outline: 2px dotted orange;
 `;
@@ -82,7 +94,7 @@ const defaultProps = {
 };
 
 let uniqID = 1;
-const getId = () => ++uniqID;
+export const getId = () => ++uniqID;
 
 const withChildrenComponents = [
   'Block',
