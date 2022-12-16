@@ -462,6 +462,7 @@ export const stylePresets = {
       textDecoration: 'underline',
     },
   },
+
   linkFooter: {
     base: {
       color: '{{colors.interactivePrimary030}}',
@@ -635,12 +636,6 @@ export const stylePresets = {
     },
   },
 
-  /*   whatsnewCardContainerNonInteractive: {
-    base: {
-      backgroundColor: '{{colors.interfaceBrand060}}',
-      borderRadius: '{{borders.borderRadiusRounded020}}',
-    },
-  }, */
   whatsnewCardButton: {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
@@ -769,7 +764,7 @@ export const stylePresets = {
   latestReleaseCardContainerNonInteractive: {
     base: {
       backgroundColor: '{{colors.interactivePrimary010}}',
-      borderRadius: '{{borders.borderRadiusRounded020}}',
+      borderRadius: '{{borders.borderRadiusRounded030}}',
       color: '{{colors.inkContrast}}',
     },
   },

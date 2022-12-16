@@ -32,7 +32,6 @@ export const OnwardJourneySection: React.FC<OnwardJourneySectionProps> = ({
           stylePreset: 'linkStandaloneInversePersistent',
         },
       }}
-      href={href}
       buttonHref={href}
     />
   </ComponentPageCell>

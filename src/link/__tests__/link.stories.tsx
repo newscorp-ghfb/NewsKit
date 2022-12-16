@@ -346,6 +346,12 @@ export const StoryLinkInverse = () => (
     <LinkStandalone href="/" overrides={{stylePreset: 'linkStandaloneInverse'}}>
       Standalone link
     </LinkStandalone>
+    <LinkStandalone
+      href="/"
+      overrides={{stylePreset: 'linkStandaloneInversePersistent'}}
+    >
+      Standalone link that stays white after switching to dark mode
+    </LinkStandalone>
     <br />
     <br />
     <LinkStandalone

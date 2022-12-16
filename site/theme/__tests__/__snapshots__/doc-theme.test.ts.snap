@@ -1407,7 +1407,7 @@ Object {
     "latestReleaseCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
         "color": "{{colors.inkContrast}}",
       },
     },
@@ -4115,7 +4115,7 @@ Object {
     "latestReleaseCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
         "color": "{{colors.inkContrast}}",
       },
     },
@@ -6826,7 +6826,7 @@ Object {
     "latestReleaseCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
         "color": "{{colors.inkContrast}}",
       },
     },
@@ -9534,7 +9534,7 @@ Object {
     "latestReleaseCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
         "color": "{{colors.inkContrast}}",
       },
     },
@@ -12245,7 +12245,7 @@ Object {
     "latestReleaseCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
         "color": "{{colors.inkContrast}}",
       },
     },
@@ -14953,7 +14953,7 @@ Object {
     "latestReleaseCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
         "color": "{{colors.inkContrast}}",
       },
     },
@@ -17664,7 +17664,7 @@ Object {
     "latestReleaseCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
         "color": "{{colors.inkContrast}}",
       },
     },
@@ -20372,7 +20372,7 @@ Object {
     "latestReleaseCardContainerNonInteractive": Object {
       "base": Object {
         "backgroundColor": "{{colors.interactivePrimary010}}",
-        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "borderRadius": "{{borders.borderRadiusRounded030}}",
         "color": "{{colors.inkContrast}}",
       },
     },
