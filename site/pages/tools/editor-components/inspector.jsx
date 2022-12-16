@@ -96,8 +96,8 @@ const FormRow = ({name, isOptional, type, value}) => (
 );
 
 const getInput = ({type, name, value}) => {
-  if (type === 'ReactNode') return makeTextInput({value});
-  if (type === 'string') return makeTextInput({value});
+  if (type === 'ReactNode') return makeTextInput({value, name});
+  if (type === 'string') return makeTextInput({value, name});
   if (type === 'boolean') return makeCheckbox({value});
   if (Array.isArray(type) && typeof type[0] === 'string')
     return makeSelect({options: type, value});
@@ -121,7 +121,10 @@ const makeSelect = ({options, value}) => (
   </FormInputSelect>
 );
 
-const makeTextInput = ({value}) => <FormInputTextField defaultValue={value} />;
+const makeTextInput = ({value, name}) => {
+  const datalist = getDataList(name);
+  return <FormInputTextField defaultValue={value} list={datalist} />;
+};
 
 const makeCheckbox = ({value}) => <FormInputCheckbox checked={value} />;
 
@@ -140,4 +143,28 @@ const flatOverrides = (type = [], prefix = 'overrides', list = []) => {
       });
     }
   });
+};
+
+const getDataList = name => {
+  if (
+    name.includes('height') ||
+    name.includes('width') ||
+    name.includes('iconSize')
+  ) {
+    return 'list-sizing';
+  }
+  if (name.includes('stylePreset')) {
+    return 'list-stylePresets';
+  }
+  if (name.includes('typographyPreset')) {
+    return 'list-typographyPresets';
+  }
+  if (
+    name.includes('spaceInset') ||
+    name.includes('margin') ||
+    name.includes('padding')
+  ) {
+    return 'list-spacePresets';
+  }
+  return null;
 };
