@@ -713,12 +713,6 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/text-area/usage/dont-02'),
         },
-        // {
-        //   description:
-        //     'Swap assistive text with error text, or character count as required. Once the input is valid then the assistive text or character count is then shown again.',
-        //   kind: UsageKind.DO,
-        //   media: getIllustrationComponent('components/text-area/usage/do-03'),
-        // },
         {
           title: 'Do provide a label for context',
           description: (
