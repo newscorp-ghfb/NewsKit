@@ -24,11 +24,11 @@ const kindMap: Record<string, KindConfig> = {
 
 export const UsageCard: React.FC<UsageCardProps> = ({
   kind = UsageKind.DO,
+  title,
   description,
   media,
 }) => {
   const {
-    title,
     iconComponent: Icon,
     heading,
     dividerStylePreset,

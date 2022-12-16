@@ -1,7 +1,6 @@
 import {CardProps} from 'newskit';
 
 export interface KindConfig {
-  title?: string;
   heading: string;
   iconComponent: React.ComponentType;
   dividerStylePreset: string;
@@ -9,6 +8,7 @@ export interface KindConfig {
 }
 
 export interface UsageCardProps extends Omit<CardProps, 'children'> {
+  title?: string;
   description?: string | React.ReactElement;
   kind?: UsageKind;
 }
