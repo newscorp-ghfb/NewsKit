@@ -8,7 +8,6 @@ import componentTypes from '../../../ok-types.json';
 import {InspectorForm} from './editor-components/inspector';
 import {SideBar} from './editor-components/sidebar';
 import {MainEditor} from './editor-components/main-editor';
-import {ElementsList} from './editor-components/elements-list';
 
 const EditorPage = layoutProps => {
   const [
@@ -25,10 +24,24 @@ const EditorPage = layoutProps => {
 
   const onAdd = React.useCallback(
     item => {
-      setComponentTree(prev => [
-        ...prev,
-        {id: item.id, children: [], type: item.name},
-      ]);
+      console.log('on add', item);
+
+      if (item.parentID) {
+        setComponentTree(prev => {
+          console.log('add to parent');
+          console.log({prev});
+          const updatedTree = insertItemInPlace(item, prev);
+          console.log({updatedTree});
+
+          return prev;
+        });
+      } else {
+        setComponentTree(prev => [
+          ...prev,
+          {id: item.id, children: [], type: item.name},
+        ]);
+      }
+
       setComponentProps(prev => ({
         ...prev,
         [item.id]: item,
@@ -91,13 +104,13 @@ const EditorPage = layoutProps => {
     currentInspectedItem.component &&
     componentTypes[currentInspectedItem.component];
 
-  const [expanded, toggleExpanded] = React.useState(false);
+  console.log('render', {componentTree, componentProps});
 
   return (
     <DndProvider backend={HTML5Backend}>
       <Layout {...layoutProps} newPage hideSidebar>
         <GridLayout
-          columns="150px auto 250px 250px"
+          columns="150px auto  250px"
           overrides={{paddingInline: '30px'}}
           columnGap="20px"
         >
@@ -109,7 +122,7 @@ const EditorPage = layoutProps => {
             tree={componentTree}
             data={componentProps}
           />
-          <Accordion
+          {/* <Accordion
             header="Children"
             max-height="100%"
             expanded={expanded}
@@ -122,13 +135,18 @@ const EditorPage = layoutProps => {
               onHover={onHoverChild}
               onUnhover={onUnhoverChild}
             />
-          </Accordion>
+          </Accordion> */}
           {inspectorRows && (
             <InspectorForm
               name={currentInspectedItem.id + currentInspectedItem.component}
               rows={inspectorRows}
               values={currentInspectedItem.props}
               onSubmit={onSubmit}
+              elements={componentTree}
+              moveItem={onMove}
+              onSelect={onSelected}
+              onHover={onHoverChild}
+              onUnhover={onUnhoverChild}
             />
           )}
         </GridLayout>
@@ -138,3 +156,17 @@ const EditorPage = layoutProps => {
 };
 
 export default EditorPage;
+
+const insertItemInPlace = (placeItem, list = []) => {
+  for (let index = 0; index < list.length; index++) {
+    if (list[index].id === placeItem.parentID) {
+      console.log('add now');
+      list[index].children.push(placeItem);
+      return list;
+    }
+    if (list[index].children) {
+      insertItemInPlace(placeItem, list[index].children);
+    }
+  }
+  return list;
+};

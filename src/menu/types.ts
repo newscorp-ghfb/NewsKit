@@ -34,7 +34,7 @@ export interface MenuGroupProps extends React.AriaAttributes {
   };
 }
 
-type MenuItemOverrides = Omit<BaseFlagOverrides, 'width' | 'height'>;
+export type MenuItemOverrides = Omit<BaseFlagOverrides, 'width' | 'height'>;
 export interface MenuItemProps
   extends Omit<BaseFlagProps<MenuItemOverrides>, 'loading'>,
     React.AnchorHTMLAttributes<HTMLAnchorElement>,

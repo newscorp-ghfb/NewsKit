@@ -267,6 +267,12 @@ export default class MyDocument extends Document {
                 font-weight: 500;
                 font-display: swap;
               }
+              .active-element {
+                outline: 1px dotted #cccccc4f;
+              }
+              .active-element:hover {
+                outline: 1px solid #ccc;
+              }
             `}
           />
           {isSiteEnvProduction && (

@@ -1106,6 +1106,11 @@
 			"name": "renderOnServer",
 			"isOptional": true,
 			"type": "boolean"
+		},
+		{
+			"name": "src",
+			"isOptional": true,
+			"type": "string"
 		}
 	],
 	"Label": [
@@ -1277,10 +1282,123 @@
 		{
 			"name": "overrides",
 			"isOptional": true,
-			"type": {
-				"type": "reference",
-				"name": "MenuItemOverrides"
-			}
+			"type": [
+				{
+					"name": "height",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "iconSize",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "marginBlock",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "marginBlockEnd",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "marginBlockStart",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "marginInline",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "marginInlineEnd",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "marginInlineStart",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "maxHeight",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "maxWidth",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "minHeight",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "minWidth",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "paddingBlock",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "paddingBlockEnd",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "paddingBlockStart",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "paddingInline",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "paddingInlineEnd",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "paddingInlineStart",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "spaceInline",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "spaceInset",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "stylePreset",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "typographyPreset",
+					"isOptional": true,
+					"type": "string"
+				},
+				{
+					"name": "width",
+					"isOptional": true,
+					"type": "string"
+				}
+			]
 		},
 		{
 			"name": "selected",
@@ -1683,7 +1801,7 @@
 					"typeArguments": [
 						{
 							"type": "reference",
-							"id": 12388,
+							"id": 12389,
 							"name": "TabProps"
 						},
 						{
@@ -1765,7 +1883,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 8913,
+								"id": 8914,
 								"name": "ScrollProps"
 							}
 						],

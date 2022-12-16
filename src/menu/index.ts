@@ -11,4 +11,5 @@ export type {
   MenuGroupProps,
   MenuItemProps,
   MenuSubProps,
+  MenuItemOverrides,
 } from './types';

@@ -11,16 +11,22 @@ import {
   Form,
   SelectOption,
   Button,
-  Tabs,
-  Tab,
   Scroll,
+  Accordion,
+  AccordionGroup,
 } from 'newskit';
+import {ElementsList} from './elements-list';
 
 export const InspectorForm = ({
   rows = [],
   name = '',
   values = {},
   onSubmit,
+  elements,
+  moveItem,
+  onSelect,
+  onHover,
+  onUnhover,
 }) => {
   const props = rows.filter(f => f.name !== 'overrides');
   const overrides = rows.filter(f => f.name === 'overrides');
@@ -31,21 +37,36 @@ export const InspectorForm = ({
   }
 
   // TOOD: reset the form on component
-  return (
-    <Form onSubmit={onSubmit} key={name}>
-      <Tabs>
-        <Tab label="Props">
-          <FormTab rows={props} values={values} />
-        </Tab>
-        <Tab label="Overrides">
-          <FormTab rows={overridesList} values={values} />
-        </Tab>
-      </Tabs>
 
-      <Button type="submit" overrides={{marginBlock: 'space050'}}>
-        Update
-      </Button>
-    </Form>
+  return (
+    <div>
+      <Form onSubmit={onSubmit} key={name}>
+        <AccordionGroup defaultExpanded={[0]} expandSingle>
+          <Accordion header="Props" defaultExpanded>
+            <FormTab rows={props} values={values} />
+            <Button type="submit" overrides={{marginBlock: 'space050'}}>
+              Update
+            </Button>
+          </Accordion>
+          <Accordion header="Overrides">
+            <FormTab rows={overridesList} values={values} />
+            <Button type="submit" overrides={{marginBlock: 'space050'}}>
+              Update
+            </Button>
+          </Accordion>
+
+          <Accordion header="Children">
+            <ElementsList
+              elements={elements}
+              moveItem={moveItem}
+              onSelect={onSelect}
+              onHover={onHover}
+              onUnhover={onUnhover}
+            />
+          </Accordion>
+        </AccordionGroup>
+      </Form>
+    </div>
   );
 };
 
@@ -53,11 +74,11 @@ const FormTab = ({rows, values}) => (
   <GridLayout
     columns="auto"
     rowGap="10px"
-    overrides={{height: 'calc(100vh - 300px)'}}
+    overrides={{height: 'calc(100vh - 400px)'}}
   >
     <Scroll vertical>
       {rows.map(item => (
-        <FormRow {...item} value={values[item.name]} />
+        <FormRow {...item} value={_.get(values, item.name)} />
       ))}
     </Scroll>
   </GridLayout>
@@ -100,7 +121,7 @@ const makeSelect = ({options, value}) => (
   </FormInputSelect>
 );
 
-const makeTextInput = ({value}) => <FormInputTextField value={value} />;
+const makeTextInput = ({value}) => <FormInputTextField defaultValue={value} />;
 
 const makeCheckbox = ({value}) => <FormInputCheckbox checked={value} />;
 
