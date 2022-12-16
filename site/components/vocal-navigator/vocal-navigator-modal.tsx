@@ -28,7 +28,6 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   isOpen,
   setIsOpen,
 }) => {
-
   const [transcript, setTranscript] = useState<string>();
   const [
     displayConfirmationButtons,
@@ -38,25 +37,6 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   const [expanded, toggleExpanded] = React.useState(false);
 
   const {speak, voices} = useSpeechSynthesis();
-
-  const {listen, listening, stop} = useSpeechRecognition({
-    onResult: (result: string) => {
-      setTranscript(result);
-    },
-    onEnd: () => {
-      askUserConfirmation();
-      console.log(transcript)
-      if (transcript !== undefined && transcript !== '' ) setDisplayConfirmationButton(true);
-    },
-  });
-
-  useEffect(() => {
-    if (isOpen) {
-      setTimeout(() => {
-        speakEnhanced('Welcome');
-      }, 500);
-    }
-  }, [isOpen]);
 
   const speakEnhanced = (text: string) => {
     speak({text, voice: voices[39], pitch: 1.6, rate: 1});
@@ -69,6 +49,26 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
       speakEnhanced(`Did you say ${transcript}?`);
     }
   };
+
+  const {listen, listening, stop} = useSpeechRecognition({
+    onResult: (result: string) => {
+      setTranscript(result);
+    },
+    onEnd: () => {
+      askUserConfirmation();
+      console.log(transcript);
+      if (transcript !== undefined && transcript !== '')
+        setDisplayConfirmationButton(true);
+    },
+  });
+
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => {
+        speakEnhanced('Welcome');
+      }, 500);
+    }
+  }, [isOpen]);
 
   const startListening = () => {
     listen();
@@ -84,19 +84,19 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
     // @ts-ignore Components
     routes[3].subNav.forEach((componentSubNav: {subNav: []}) => {
       if (componentSubNav.subNav) {
-        componentSubNav.subNav.forEach((nav: {title: string, id: string}) => {
+        componentSubNav.subNav.forEach((nav: {title: string; id: string}) => {
           if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
-             resultComponent = nav.id;
-           }
-        })  
+            resultComponent = nav.id;
+          }
+        });
       }
-    })
+    });
 
     if (resultComponent) return resultComponent;
 
     let resultFoundation;
     // @ts-ignore Foundations
-    routes[2].subNav[1].subNav.forEach((nav: {title: string, id: string}) => {
+    routes[2].subNav[1].subNav.forEach((nav: {title: string; id: string}) => {
       if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
         resultFoundation = nav.id;
       }
@@ -105,7 +105,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
 
     let resultPreset;
     // @ts-ignore Presets Presets
-    routes[2].subNav[2].subNav.forEach((nav: {title: string, id: string}) => {
+    routes[2].subNav[2].subNav.forEach((nav: {title: string; id: string}) => {
       if (nav.title.toLowerCase() === transcript?.toLowerCase()) {
         resultPreset = nav.id;
       }
@@ -122,10 +122,8 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
   const handleYesButton = () => {
     const result = searchPage();
     if (result === undefined) {
-      speakEnhanced(
-        `I did not find anything about ${transcript}, try again`,
-      );
-      setDisplayConfirmationButton(false)
+      speakEnhanced(`I did not find anything about ${transcript}, try again`);
+      setDisplayConfirmationButton(false);
     } else {
       speakEnhanced(`Thank you, I am taking you there`);
       window.location.href = result;
@@ -138,8 +136,8 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
         open={isOpen}
         onDismiss={() => {
           speakEnhanced('Thank you, goodbye');
-          setDisplayConfirmationButton(false)
-          setTranscript('')
+          setDisplayConfirmationButton(false);
+          setTranscript('');
           setIsOpen(!isOpen);
         }}
         header="Vocal Search"
@@ -180,7 +178,10 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           size="small"
           onTouchStart={startListening}
           onMouseDown={startListening}
-          onKeyDown={(e: any) => {if (e.key !== 'Tab') startListening()}}
+          // @ts-ignore
+          onKeyDown={e => {
+            if (e.key !== 'Tab') startListening();
+          }}
           onTouchEnd={handleStopListening}
           onMouseUp={handleStopListening}
           onKeyUp={handleStopListening}

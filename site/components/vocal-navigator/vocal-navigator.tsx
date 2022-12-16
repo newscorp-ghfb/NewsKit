@@ -8,7 +8,7 @@ const VocalNavigator: React.FC = () => {
   const handleVocalNavigatorButtonClick = () => {
     setIsOpen(prevState => !prevState);
   };
-  
+
   return (
     <>
       <VocalNavigatorButton onClick={handleVocalNavigatorButtonClick} />
