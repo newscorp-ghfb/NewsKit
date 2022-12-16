@@ -180,7 +180,7 @@ const VocalNavigatorModal: React.FC<{isOpen: boolean; setIsOpen: Function}> = ({
           size="small"
           onTouchStart={startListening}
           onMouseDown={startListening}
-          onKeyDown={(e) => {if (e.key !== 'Tab') startListening()}}
+          onKeyDown={(e: any) => {if (e.key !== 'Tab') startListening()}}
           onTouchEnd={handleStopListening}
           onMouseUp={handleStopListening}
           onKeyUp={handleStopListening}
