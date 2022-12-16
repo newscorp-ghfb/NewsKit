@@ -2076,7 +2076,9 @@ exports[`Media List renders with usage cards 1`] = `
   width: 100%;
 }
 
-.emotion-15 {
+.emotion-16 {
+  margin: 0;
+  color: #09111C;
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   line-height: 22.5px;
@@ -2085,27 +2087,20 @@ exports[`Media List renders with usage cards 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-15::before {
+.emotion-16 svg {
+  fill: #09111C;
+}
+
+.emotion-16::before {
   content: '';
   margin-bottom: -0.2155em;
   display: block;
 }
 
-.emotion-15::after {
+.emotion-16::after {
   content: '';
   margin-top: -0.2125em;
   display: block;
-}
-
-.emotion-16 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #007B22;
-}
-
-.emotion-16 svg {
-  fill: #007B22;
 }
 
 .emotion-18 {
@@ -2243,17 +2238,6 @@ exports[`Media List renders with usage cards 1`] = `
   width: 100%;
 }
 
-.emotion-32 {
-  display: inline;
-  font: inherit;
-  margin: 0;
-  color: #D60000;
-}
-
-.emotion-32 svg {
-  fill: #D60000;
-}
-
 <div
     class="emotion-0"
   >
@@ -2314,15 +2298,15 @@ exports[`Media List renders with usage cards 1`] = `
                     <div
                       class="emotion-12"
                     />
-                    <section
-                      class="emotion-15"
+                    <div
+                      class="emotion-12"
                     >
-                      <h1
-                        class="nk-headline-heading emotion-16"
+                      <p
+                        class="emotion-16"
                       >
                         Do
-                      </h1>
-                    </section>
+                      </p>
+                    </div>
                   </div>
                   <div
                     class="emotion-12"
@@ -2389,15 +2373,15 @@ exports[`Media List renders with usage cards 1`] = `
                     <div
                       class="emotion-12"
                     />
-                    <section
-                      class="emotion-15"
+                    <div
+                      class="emotion-12"
                     >
-                      <h1
-                        class="nk-headline-heading emotion-32"
+                      <p
+                        class="emotion-16"
                       >
-                        Don’t
-                      </h1>
-                    </section>
+                        Dont
+                      </p>
+                    </div>
                   </div>
                   <div
                     class="emotion-12"
