@@ -1,5 +1,5 @@
 import React from 'react';
-import {GridLayout, Accordion} from 'newskit';
+import {GridLayout, useTheme} from 'newskit';
 import {DndProvider} from 'react-dnd';
 import {HTML5Backend} from 'react-dnd-html5-backend';
 import _ from 'lodash';
@@ -8,6 +8,7 @@ import componentTypes from '../../../ok-types.json';
 import {InspectorForm} from './editor-components/inspector';
 import {SideBar} from './editor-components/sidebar';
 import {MainEditor} from './editor-components/main-editor';
+import {DataLists} from './editor-components/datalits';
 
 const EditorPage = layoutProps => {
   const [
@@ -149,6 +150,7 @@ const EditorPage = layoutProps => {
             />
           )}
         </GridLayout>
+        <DataLists />
       </Layout>
     </DndProvider>
   );
