@@ -27,6 +27,9 @@ export const InspectorForm = ({
   onSelect,
   onHover,
   onUnhover,
+  onRemove,
+  onClone,
+  inspectId,
 }) => {
   const props = rows.filter(f => f.name !== 'overrides');
   const overrides = rows.filter(f => f.name === 'overrides');
@@ -40,6 +43,26 @@ export const InspectorForm = ({
 
   return (
     <div>
+      <GridLayout
+        columnGap="space030"
+        columns="auto auto"
+        overrides={{marginBlockEnd: 'space030'}}
+      >
+        <Button
+          size="small"
+          overrides={{stylePreset: 'buttonOutlinedNegative'}}
+          onClick={() => onRemove(inspectId)}
+        >
+          Remove
+        </Button>
+        <Button
+          size="small"
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+          onClick={() => onClone(inspectId)}
+        >
+          Clone
+        </Button>
+      </GridLayout>
       <Form onSubmit={onSubmit} key={name}>
         <AccordionGroup defaultExpanded={[0]} expandSingle>
           <Accordion header="Props" defaultExpanded>
@@ -161,6 +184,7 @@ const getDataList = name => {
   }
   if (
     name.includes('spaceInset') ||
+    name.includes('spaceInline') ||
     name.includes('margin') ||
     name.includes('padding')
   ) {

@@ -12,32 +12,26 @@ const componetns = {
 };
 
 componetns['GridLayout'] = styled(GridLayout)`
-  &:hover {
-    outline: 2px dotted #ccc;
-  }
+  outline: 2px dotted #ccc;
 `;
 componetns['GridLayoutItem'] = styled(GridLayoutItem)`
   min-height: 10px;
-  &:hover {
-    outline: 2px dotted lightgreen;
-  }
+
+  outline: 2px dotted pink;
 `;
 componetns['Block'] = styled(Block)`
   min-height: 10px;
-  &:hover {
-    outline: 2px dotted #ccc;
-  }
+
+  outline: 2px dotted blue;
 `;
 componetns['Menu'] = styled(Menu)`
-  &:hover {
-    outline: 2px dotted #ccc;
-  }
+  min-height: 10px;
+
+  outline: 2px dotted violet;
 `;
 componetns['Scroll'] = styled(Scroll)`
   min-height: 10px;
-  &:hover {
-    outline: 2px dotted #ccc;
-  }
+  outline: 2px dotted orange;
 `;
 
 const Main = styled.div`

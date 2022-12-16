@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
 import React from 'react';
 import {GridLayout} from 'newskit';
 import {DndProvider} from 'react-dnd';
@@ -99,6 +100,24 @@ const EditorPage = layoutProps => {
     );
   };
 
+  const onRemove = React.useCallback(
+    id => {
+      console.log('remove ', id);
+
+      setComponentTree(prev => deleteItemInPlace(id, prev));
+
+      setComponentProps(prev => {
+        delete prev[id];
+        return {...prev};
+      });
+    },
+    [setComponentTree, setComponentProps],
+  );
+
+  const onClone = React.useCallback(() => {
+    console.log('clone ', id);
+  });
+
   const inspectorRows =
     currentInspectedItem &&
     currentInspectedItem.component &&
@@ -133,6 +152,9 @@ const EditorPage = layoutProps => {
               onSelect={onSelected}
               onHover={onHoverChild}
               onUnhover={onUnhoverChild}
+              onRemove={onRemove}
+              onClone={onClone}
+              inspectId={currentInspectedComponentId}
             />
           )}
         </GridLayout>
@@ -156,4 +178,11 @@ const insertItemInPlace = (placeItem, list = []) => {
     }
   }
   return list;
+};
+
+const deleteItemInPlace = (id, list) => {
+  return list.filter(item => {
+    item.children = deleteItemInPlace(id, item.children);
+    return item.id !== id;
+  });
 };
