@@ -12,6 +12,11 @@ import {
   AudioPlayerSeekBar,
   AudioPlayerPlaybackSpeedControl,
   calculateTime,
+  AudioPlayerForwardButton,
+  AudioPlayerReplayButton,
+  useBreakpointKey,
+  Hidden,
+  Visible,
 } from 'newskit';
 import {Separator} from '../separator';
 import {Illustration} from '../illustrations/illustration-loader';
@@ -24,7 +29,7 @@ const heroIsImage = (hero: PageIntroductionProps['hero']): hero is ImageProps =>
 
 const NarrationAudioPlayer = (props: {url: string}) => {
   const {url} = props;
-  const breakpointKey = 'xs';
+  const breakpointKey = useBreakpointKey();
   return (
     <AudioPlayerComposable src={url} {...props}>
       <TextBlock
@@ -39,21 +44,52 @@ const NarrationAudioPlayer = (props: {url: string}) => {
         Listen to this article
       </TextBlock>
       <GridLayout
-        columns="auto auto 40px 1fr auto auto"
+        columns={{
+          xs: 'auto auto auto auto 1fr auto',
+          sm: 'auto auto auto auto auto 1fr auto auto',
+        }}
         columnGap="space040"
         alignItems="center"
       >
-        <AudioPlayerVolumeControl
-          layout={breakpointKey === 'xs' ? 'collapsed' : 'horizontal'}
-        />
         <AudioPlayerPlayPauseButton size="small" />
-        <AudioPlayerTimeDisplay
-          format={({currentTime}) => calculateTime(currentTime)}
-        />
-        <AudioPlayerSeekBar />
-        <AudioPlayerTimeDisplay
-          format={({duration}) => calculateTime(duration)}
-        />
+        <div>
+          <Visible xs>
+            <AudioPlayerVolumeControl
+              layout="collapsed"
+              muteButtonSize="small"
+            />
+          </Visible>
+          <Hidden xs>
+            <AudioPlayerVolumeControl
+              layout="horizontal"
+              muteButtonSize="small"
+            />
+          </Hidden>
+        </div>
+        <AudioPlayerReplayButton size="small" />
+        <AudioPlayerForwardButton size="small" />
+        <div>
+          <Hidden xs>
+            <AudioPlayerTimeDisplay
+              format={({currentTime}) => calculateTime(currentTime)}
+            />
+          </Hidden>
+          <Visible xs>
+            <AudioPlayerTimeDisplay
+              format={({currentTime, duration}) =>
+                `${calculateTime(currentTime)}/${calculateTime(duration)}`
+              }
+            />
+          </Visible>
+        </div>
+        <Hidden xs>
+          <AudioPlayerSeekBar />
+        </Hidden>
+        <Hidden xs>
+          <AudioPlayerTimeDisplay
+            format={({duration}) => calculateTime(duration)}
+          />
+        </Hidden>
         <AudioPlayerPlaybackSpeedControl useModal={{xs: true, md: true}} />
       </GridLayout>
     </AudioPlayerComposable>
@@ -125,7 +161,9 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
         )}
       </Block>
       {narrationUrl && (
-        <NarrationAudioPlayer key="narrationUrl" url={narrationUrl} />
+        <Block>
+          <NarrationAudioPlayer key="narrationUrl" url={narrationUrl} />
+        </Block>
       )}
       {showSeparator && <Separator />}
     </ComponentPageCell>

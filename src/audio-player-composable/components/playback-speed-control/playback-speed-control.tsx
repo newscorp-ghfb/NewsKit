@@ -1,4 +1,4 @@
-import React, {useCallback, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {IconButton} from '../../../icon-button';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
@@ -29,8 +29,8 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
   } = getPlaybackSpeedControlProps!(props);
 
   const [isOpen, setIsOpen] = useState(false);
-
   const renderInModal = checkBreakpointProp(useModal, useBreakpointKey());
+
   const selectedOptionRef = useRef<HTMLButtonElement>(null);
 
   const playbackSpeedList = (
@@ -54,7 +54,7 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
   }, []);
 
   return (
-    <>
+    <div>
       <Popover
         ref={ref}
         open={isOpen && !renderInModal}
@@ -91,16 +91,15 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
         )}
       </Popover>
 
-      {renderInModal && (
-        <Modal
-          open={isOpen}
-          onDismiss={dismissHandler}
-          overrides={modalOverrides(theme, overrides)}
-        >
-          {playbackSpeedList}
-        </Modal>
-      )}
-    </>
+      {/* If we don't render modal regardless we get a hydration error in Next */}
+      <Modal
+        open={renderInModal && isOpen}
+        onDismiss={dismissHandler}
+        overrides={modalOverrides(theme, overrides)}
+      >
+        {playbackSpeedList}
+      </Modal>
+    </div>
   );
 });
 
