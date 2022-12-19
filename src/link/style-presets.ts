@@ -38,24 +38,7 @@ export default {
     },
     'focus-visible': defaultFocusVisible,
   },
-  linkStandaloneInversePersistent: {
-    base: {
-      color: '{{colors.inkLight010}}',
-      iconColor: '{{colors.inkLight010}}',
-      textDecoration: 'none',
-    },
-    hover: {
-      color: '{{colors.inkLight010}}',
-      iconColor: '{{colors.inkLight010}}',
-      textDecoration: 'underline',
-    },
-    active: {
-      color: '{{colors.inkLight010}}',
-      iconColor: '{{colors.inkLight010}}',
-      textDecoration: 'underline',
-    },
-    'focus-visible': defaultFocusVisible,
-  },
+
   linkInline: {
     base: {
       color: '{{colors.interactivePrimary030}}',

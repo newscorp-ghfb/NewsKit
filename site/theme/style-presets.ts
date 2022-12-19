@@ -1,3 +1,5 @@
+import {defaultFocusVisible} from '../../src/utils/default-focus-visible';
+
 export const stylePresets = {
   buttonOutlinedSecondary: {
     base: {
@@ -88,6 +90,24 @@ export const stylePresets = {
       color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
     },
+  },
+  linkStandaloneInversePersistent: {
+    base: {
+      color: '{{colors.inkLight010}}',
+      iconColor: '{{colors.inkLight010}}',
+      textDecoration: 'none',
+    },
+    hover: {
+      color: '{{colors.inkLight010}}',
+      iconColor: '{{colors.inkLight010}}',
+      textDecoration: 'underline',
+    },
+    active: {
+      color: '{{colors.inkLight010}}',
+      iconColor: '{{colors.inkLight010}}',
+      textDecoration: 'underline',
+    },
+    'focus-visible': defaultFocusVisible,
   },
   tableHeader: {
     base: {
