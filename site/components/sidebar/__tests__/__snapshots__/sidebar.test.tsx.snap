@@ -3887,8 +3887,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-425 svg {
@@ -3914,8 +3914,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-426 svg {
@@ -10402,8 +10402,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-425 svg {
@@ -10429,8 +10429,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-426 svg {
