@@ -143,7 +143,7 @@ export const StorybookCase = ({
 );
 
 export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
-  const autoTitle = get(context, 'title').split('/').at(-1);
+  const autoTitle = context.title && context.title.split('/')[-1];
   const title = get(context, 'parameters.nkDocs.title') || autoTitle;
   const description = get(context, 'parameters.nkDocs.description');
   const url = get(context, 'parameters.nkDocs.url');
