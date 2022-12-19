@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 import {google} from 'googleapis';
 
+require('dotenv').config();
+
 // Define the required scopes. In our case we only need read access.
 const SCOPE = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
 
@@ -24,7 +26,8 @@ export async function getSheets(range: string) {
     });
     return response.data.values;
   } catch (err) {
-    console.log('>> ERROR: Cannot fetch data from googlesheet api');
+    console.error('>> ERROR: Cannot fetch data from googlesheet api');
+    console.log('Have you added the .env file for local builds?');
     console.error(err);
   }
 
