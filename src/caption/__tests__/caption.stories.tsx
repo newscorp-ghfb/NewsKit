@@ -1,10 +1,7 @@
 import * as React from 'react';
 import {Caption} from '../caption';
-import {CaptionInset} from '../caption-inset';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {styled, getColorCssFromTheme} from '../../utils/style';
-import {Block} from '../../block';
-import {Image} from '../../image';
 
 const MarginOverridesWrapper = styled.div`
   border: 1px dashed;
@@ -34,26 +31,6 @@ export const StoryCaptionVariations = () => (
   </StorybookPage>
 );
 StoryCaptionVariations.storyName = 'Variations';
-
-export const StoryInsetCaption = () => (
-  <StorybookPage>
-    <StorybookCase>
-      <Block>
-        <Image
-          src="/placeholder-3x2.png"
-          alt="Example Image"
-          overrides={{
-            width: '300px',
-            height: '200px',
-          }}
-          placeholderIcon
-        />
-        <CaptionInset creditText={CREDIT_TEXT}>{CAPTION_TEXT}</CaptionInset>
-      </Block>
-    </StorybookCase>
-  </StorybookPage>
-);
-StoryInsetCaption.storyName = 'Inset caption';
 
 export const StoryCaptionLogicalProps = () => (
   <StorybookPage columns="1fr">
