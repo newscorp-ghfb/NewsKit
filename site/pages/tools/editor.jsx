@@ -1,3 +1,7 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import React from 'react';
 import {GridLayout} from 'newskit';
@@ -121,11 +125,7 @@ const EditorPage = layoutProps => {
       ...prev,
       [newId]: {...prev[id]},
     }));
-    setComponentTree(prev => {
-      //console.log('new t', cloneItemInPlace(id, prev, newId));
-
-      return cloneItemInPlace(id, prev, newId);
-    });
+    setComponentTree(prev => cloneItemInPlace(id, prev, newId));
   });
 
   const inspectorRows =
@@ -190,12 +190,11 @@ const insertItemInPlace = (placeItem, list = []) => {
   return list;
 };
 
-const deleteItemInPlace = (id, list) => {
-  return list.filter(item => {
+const deleteItemInPlace = (id, list) =>
+  list.filter(item => {
     item.children = deleteItemInPlace(id, item.children);
     return item.id !== id;
   });
-};
 
 const cloneItemInPlace = (id, list, newId) =>
   list.reduce((prev, item) => {

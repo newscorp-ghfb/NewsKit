@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import React, {useRef} from 'react';
 import {useDrop, useDrag} from 'react-dnd';
 import {ElementListItem} from './element-list-item';

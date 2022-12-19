@@ -1,8 +1,11 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable react/no-children-prop */
+/* eslint-disable @typescript-eslint/dot-notation */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import React from 'react';
 import * as newskit from 'newskit';
 import {useDrop} from 'react-dnd';
-import _ from 'lodash';
 import composeRefs from '@seznam/compose-react-refs';
 
 const {
@@ -105,7 +108,7 @@ const withChildrenComponents = [
   'Tabs',
 ];
 
-export const MainEditor = ({onAdd, onSelected, onMove, data, tree}) => {
+export const MainEditor = ({onAdd, onSelected, data, tree}) => {
   const {drop} = useDropComponent(item => {
     console.log('Drop to main');
     onAdd({...item, id: getId(), props: defaultProps[item.component] || {}});
@@ -219,7 +222,7 @@ const useInteraction = ({event, handler}) => {
 };
 
 const useDropComponent = onDrop => {
-  const [nonsense, drop] = useDrop(() => ({
+  const [, drop] = useDrop(() => ({
     accept: 'component',
     collect: monitor => ({
       isOver: monitor.isOver({shallow: true}) && monitor.canDrop(),

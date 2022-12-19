@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React, {forwardRef} from 'react';
 import {TextBlock, IconButton, Stack, toNewsKitIcon, styled} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';

@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable @typescript-eslint/no-use-before-define */
 import {useTheme} from 'newskit';
 import React from 'react';
 
@@ -18,7 +20,7 @@ export const DataLists = () => {
 const DataList = ({list, id}) => (
   <datalist id={id}>
     {list.map(value => (
-      <option value={value} />
+      <option value={value}>{value}</option>
     ))}
   </datalist>
 );

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import {GridLayout, TextBlock} from 'newskit';
 import {useDrag} from 'react-dnd';
