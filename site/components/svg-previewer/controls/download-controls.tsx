@@ -107,6 +107,9 @@ export const DownloadControls = ({
       figmaSvgCopy = replaceFigmaIdWithVariable(figmaSvgCopy);
       figmaSvgCopy = replaceColorHashWithToken(figmaSvgCopy);
 
+      // add id to svg content
+      figmaSvgCopy = figmaSvgCopy.replace('<svg ', '<svg id="nksvg" ');
+
       const svgFileName = buildSvgFileName(svg.name);
       zip.file(`${svgFileName}.svg`, figmaSvgCopy);
     });
