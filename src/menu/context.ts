@@ -2,7 +2,9 @@ import {createContext, useContext} from 'react';
 import {MenuProps} from './types';
 
 export const MenuContext = createContext<
-  Pick<MenuProps, 'vertical' | 'size' | 'align' | 'overrides'>
+  Pick<MenuProps, 'vertical' | 'size' | 'align' | 'overrides'> & {
+    isSubMenu?: boolean;
+  }
 >({});
 export const MenuContextProvider = MenuContext.Provider;
 

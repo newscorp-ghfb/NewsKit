@@ -495,6 +495,14 @@ export const routes = [
               'A Tooltip is a feedback component that displays a short, informational message when a user hovers over or focuses on a UI element. ',
             illustration: 'components/tooltip/hero',
           },
+          {
+            title: 'Character Count',
+            page: true,
+            id: '/components/character-count',
+            description:
+              'Character count lets users know how much text they can enter in an input container as they type.',
+            illustration: 'components/character-count/hero',
+          },
         ],
       },
       {
