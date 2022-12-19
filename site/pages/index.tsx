@@ -79,16 +79,8 @@ const Index = ({
               },
             }}
             buttonIcon={<IconFilledLaunch />}
-            buttonLabel={getValueFromCMS(
-              content,
-              'HeroCardLinkText',
-              'Read on Medium',
-            )}
-            buttonHref={getValueFromCMS(
-              content,
-              'HeroCardLink',
-              'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
-            )}
+            buttonLabel={content.hero_card_link_text}
+            buttonHref={content.hero_card_link}
           />
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
