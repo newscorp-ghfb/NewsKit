@@ -117,9 +117,6 @@ const FeatureCardHorizontal = React.forwardRef<
       'title',
       'typographyPreset',
     );
-    /* const titleStylePreset = stylePrefix
-      ? {stylePreset: `${stylePrefix}ContainerNonInteractive`}
-      : {stylePreset: 'inkWhiteContrast'}; */
     const titleStylePreset =
       getToken({theme, overrides}, '', 'title', 'stylePreset') ||
       'inkWhiteContrast';
