@@ -39,19 +39,46 @@ export const useGetFeatureCard = () => {
   const path = useRouter()?.pathname || '';
   const currentRoute: string[] = path.match(/\/[A-z\d-]*/g) || [];
   const {currentIndex, matchedRoute} = findIndex(path, currentRoute, routes, 0);
-  let feature =
+  const currentFeature: undefined | RouteObject = (currentIndex &&
     currentIndex !== -1 &&
     matchedRoute &&
     matchedRoute.subNav &&
-    matchedRoute.subNav[currentIndex ? currentIndex + 1 : 1];
+    matchedRoute.subNav[currentIndex]) as undefined | RouteObject;
+
+  let feature;
+  if (currentIndex !== -1 && matchedRoute && matchedRoute.subNav) {
+    if (currentFeature?.nextId) {
+      feature = matchedRoute.subNav.find(
+        subNav => subNav.id === currentFeature?.nextId,
+      );
+    } else {
+      feature = matchedRoute.subNav[currentIndex ? currentIndex + 1 : 1];
+    }
+  }
   if (!feature) {
-    feature =
-      subNavRoute &&
-      subNavRoute.subNav &&
-      subNavRoute.subNav[subNavIndex ? subNavIndex + 1 : 1];
+    if (subNavRoute && subNavRoute.subNav) {
+      if (currentFeature?.nextId) {
+        feature = subNavRoute.subNav.find(
+          subNav =>
+            subNav.id === currentFeature?.nextId ||
+            (subNav.subNav &&
+              subNav.subNav.find(
+                subSubNav => subSubNav.id === currentFeature?.nextId,
+              )),
+        );
+      } else {
+        feature = subNavRoute.subNav[subNavIndex ? subNavIndex + 1 : 1];
+      }
+    }
   }
   if (feature && feature.subNav) {
-    feature = feature && feature.subNav[0];
+    let index = 0;
+    if (currentFeature?.nextId) {
+      index = feature.subNav.findIndex(
+        subSubNav => subSubNav.id === currentFeature?.nextId,
+      );
+    }
+    feature = feature && feature.subNav[Math.max(index, 0)];
   }
   const featureCard = {
     ...(feature || initialRoute),

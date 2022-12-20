@@ -3,6 +3,7 @@ import {routes} from '../routes';
 export interface RouteObject {
   title: string;
   id: string;
+  nextId?: string;
   page?: boolean;
   subNav?: RouteObject[];
   media?: string;

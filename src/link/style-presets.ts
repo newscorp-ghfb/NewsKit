@@ -38,6 +38,7 @@ export default {
     },
     'focus-visible': defaultFocusVisible,
   },
+
   linkInline: {
     base: {
       color: '{{colors.interactivePrimary030}}',
