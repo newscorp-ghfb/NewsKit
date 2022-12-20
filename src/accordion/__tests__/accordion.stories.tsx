@@ -1,23 +1,377 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {Accordion} from '../accordion';
 import {Block} from '../../block';
 import {TextBlock} from '../../text-block';
 import {Image} from '../../image';
-import {
-  IconFilledAccountBalance,
-  IconFilledCancel,
-  IconFilledStarOutline,
-} from '../../icons';
+import {IconFilledAddCircle, IconOutlinedStarOutline} from '../../icons';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled} from '../../utils/style';
-import {AccordionIconProps} from '../types';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {AccordionGroup} from '../accordion-group';
+
+const COLS = '1fr';
+const CONTENT = (
+  <TextBlock typographyPreset="editorialParagraph010" stylePreset="inkContrast">
+    Panel content
+  </TextBlock>
+);
+
+const IconContainer = styled(Block)`
+  display: flex;
+  align-items: center;
+`;
+
+export const StoryAccordionDefault = () => {
+  const [expandedSingle, toggleExpandedSingle] = React.useState(false);
+  const [expandedGroup, toggleExpandedGroup] = React.useState<number[]>([]);
+  return (
+    <StorybookPage columns={COLS}>
+      <StorybookCase title="Single">
+        <Accordion
+          header="Header"
+          expanded={expandedSingle}
+          onClick={() => toggleExpandedSingle(!expandedSingle)}
+        >
+          {CONTENT}
+        </Accordion>
+      </StorybookCase>
+      <StorybookCase title="Group">
+        <AccordionGroup expanded={expandedGroup} onChange={toggleExpandedGroup}>
+          <Accordion header="Header">{CONTENT}</Accordion>
+          <Accordion header="Header">{CONTENT}</Accordion>
+          <Accordion header="Header">{CONTENT}</Accordion>
+        </AccordionGroup>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryAccordionDefault.storyName = 'Default';
+
+export const StoryAccordionStates = () => {
+  const [expandedSingle, toggleExpandedSingle] = React.useState(false);
+  return (
+    <StorybookPage columns={COLS}>
+      <StorybookCase title="Disabled">
+        <Accordion
+          disabled
+          header="Header"
+          expanded={expandedSingle}
+          onClick={() => toggleExpandedSingle(!expandedSingle)}
+        >
+          {CONTENT}
+        </Accordion>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryAccordionStates.storyName = 'States';
+
+export const StoryAccordionVariations = () => (
+  <StorybookPage columns={COLS}>
+    <StorybookCase title="Leading icon">
+      <Accordion
+        header={
+          <IconContainer>
+            <IconOutlinedStarOutline
+              overrides={{size: 'iconSize020', marginInlineEnd: 'space030'}}
+            />
+            Header
+          </IconContainer>
+        }
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+    <StorybookCase title="Leading image">
+      <Accordion
+        header={
+          <IconContainer>
+            <Image
+              src="/1x1-placeholder.png"
+              alt="Example Image"
+              overrides={{
+                height: '30px',
+                width: '30px',
+                marginInlineEnd: '8px',
+              }}
+            />
+            Header
+          </IconContainer>
+        }
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+
+    <StorybookCase title="Show label">
+      <Accordion header="Header" label="Show">
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+    <StorybookCase title="Hide label">
+      <Accordion header="Header" label="Hide" expanded>
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryAccordionVariations.storyName = 'Variations';
+
+export const StoryAccordionUncontrolled = () => (
+  <StorybookPage columns={COLS}>
+    <StorybookCase title="None expanded on load">
+      <AccordionGroup>
+        <Accordion header="Header">{CONTENT}</Accordion>
+        <Accordion header="Header">{CONTENT}</Accordion>
+      </AccordionGroup>
+    </StorybookCase>
+    <StorybookCase title="Can expand single">
+      <AccordionGroup expandSingle defaultExpanded={[0]}>
+        <Accordion header="Header">{CONTENT}</Accordion>
+        <Accordion header="Header">{CONTENT}</Accordion>
+      </AccordionGroup>
+    </StorybookCase>
+    <StorybookCase title="Can expand multiple">
+      <AccordionGroup defaultExpanded={[0, 1]}>
+        <Accordion header="Header">{CONTENT}</Accordion>
+        <Accordion header="Header">{CONTENT}</Accordion>
+      </AccordionGroup>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryAccordionUncontrolled.storyName = 'Uncontrolled';
+
+export const StoryAccordionControlled = () => {
+  const [expandedSingle, setExpandedSingle] = React.useState([0]);
+  const [expandedMultiple, setExpandedMultiple] = React.useState([0, 1]);
+
+  return (
+    <StorybookPage columns={COLS}>
+      <StorybookCase title="Can expand single">
+        <AccordionGroup
+          expanded={expandedSingle}
+          onChange={setExpandedSingle}
+          expandSingle
+        >
+          <Accordion header="Header">{CONTENT}</Accordion>
+          <Accordion header="Header">{CONTENT}</Accordion>
+        </AccordionGroup>
+      </StorybookCase>
+      <StorybookCase title="Can expand multiple">
+        <AccordionGroup
+          expanded={expandedMultiple}
+          onChange={setExpandedMultiple}
+        >
+          <Accordion header="Header">{CONTENT}</Accordion>
+          <Accordion header="Header">{CONTENT}</Accordion>
+        </AccordionGroup>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryAccordionControlled.storyName = 'Controlled';
+
+export const StoryAccordionStylingOverrides = () => (
+  <StorybookPage columns={COLS}>
+    <StorybookCase title="Disabled">
+      <Accordion
+        header={
+          <IconContainer>
+            <IconOutlinedStarOutline
+              overrides={{
+                size: 'iconSize020',
+                marginInlineEnd: '8px',
+              }}
+            />
+            Header
+          </IconContainer>
+        }
+        label="Show"
+        overrides={{
+          header: {stylePreset: 'accordionHeaderCustom'},
+        }}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryAccordionStylingOverrides.storyName = 'Styling overrides';
+
+export const StoryAccordionOverrides = () => (
+  <StorybookPage columns={COLS}>
+    <StorybookCase title="Indicator icon prop">
+      <Accordion
+        header="Header"
+        label="Show"
+        overrides={{
+          header: {
+            indicatorIcon: {
+              props: {
+                overrides: {
+                  stylePreset: 'indicatorIconProp',
+                  size: 'iconSize020',
+                },
+              },
+            },
+          },
+        }}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+
+    <StorybookCase title="Indicator icon">
+      <Accordion
+        header="Header"
+        label="Show"
+        overrides={{
+          header: {
+            indicatorIcon: {
+              stylePreset: 'indicatorIconProp',
+              size: 'iconSize030',
+            },
+          },
+        }}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+
+    <StorybookCase title="Indicator icon component">
+      <Accordion
+        header="Header"
+        label="Hide"
+        expanded
+        overrides={{
+          header: {
+            indicatorIcon: () => (
+              <IconFilledAddCircle
+                overrides={{
+                  size: 'iconSize020',
+                  stylePreset: 'customIconFilledAddCircle',
+                }}
+              />
+            ),
+          },
+        }}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryAccordionOverrides.storyName = 'Overrides';
+
+export const StoryAccordionOutlineOverrides = () => (
+  <StorybookPage columns={COLS}>
+    <StorybookCase title="Custom colour">
+      <Accordion
+        label="Show"
+        header="Header"
+        overrides={{header: {stylePreset: 'customOutlineColor'}}}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+    <StorybookCase title="Custom style">
+      <Accordion
+        label="Show"
+        header="Header"
+        overrides={{header: {stylePreset: 'customOutlineStyle'}}}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+    <StorybookCase title="Custom width">
+      <Accordion
+        label="Show"
+        header="Header"
+        overrides={{header: {stylePreset: 'customOutlineWidth'}}}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+    <StorybookCase title="Custom offset">
+      <Accordion
+        label="Show"
+        header="Header"
+        overrides={{header: {stylePreset: 'customOutlineOffset'}}}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+  </StorybookPage>
+);
+
+StoryAccordionOutlineOverrides.storyName = 'Outline overrides';
+
+export const StoryAccordionTransitionOverrides = () => {
+  const noTransitions = {
+    header: {transitionPreset: []},
+    panel: {transitionPreset: []},
+  };
+
+  const slowTransitions = {
+    header: {
+      transitionPreset: {
+        extend: 'backgroundColorChange',
+        base: {transitionDuration: '1000ms'},
+      },
+    },
+    panel: {
+      transitionPreset: [
+        {
+          extend: 'maxHeightChange',
+          base: {transitionProperty: 'max-height'},
+          enterActive: {transitionDuration: '1500ms'},
+          exitActive: {transitionDuration: '1500ms'},
+        },
+        {
+          extend: 'slideLeft',
+          enterActive: {transitionDuration: '1500ms'},
+          exitActive: {transitionDuration: '1500ms'},
+        },
+      ],
+    },
+  };
+  return (
+    <StorybookPage columns={COLS}>
+      <StorybookCase title="No transition">
+        <AccordionGroup>
+          <Accordion header="Header" overrides={noTransitions}>
+            {CONTENT}
+          </Accordion>
+          <Accordion header="Header" overrides={noTransitions}>
+            {CONTENT}
+          </Accordion>
+          <Accordion header="Header" overrides={noTransitions}>
+            {CONTENT}
+          </Accordion>
+        </AccordionGroup>
+      </StorybookCase>
+      <StorybookCase title="Transition">
+        <AccordionGroup>
+          <Accordion header="Header" overrides={slowTransitions}>
+            {CONTENT}
+          </Accordion>
+          <Accordion header="Header" overrides={slowTransitions}>
+            {CONTENT}
+          </Accordion>
+          <Accordion header="Header" overrides={slowTransitions}>
+            {CONTENT}
+          </Accordion>
+        </AccordionGroup>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryAccordionTransitionOverrides.storyName = 'Transition overrides';
+StoryAccordionTransitionOverrides.parameters = {
+  percy: {skip: true},
+};
 
 const accordionCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-accordion-theme',
@@ -25,15 +379,16 @@ const accordionCustomThemeObject: CreateThemeArgs = {
     stylePresets: {
       accordionHeaderCustom: {
         base: {
-          backgroundColor: '#7FFFD4',
-          color: 'black',
+          backgroundColor: '{{colors.interfaceInformative020}}',
           borderStyle: 'none none solid none',
-          borderColor: '#6a040f',
-          borderWidth: '{{borders.borderWidth020}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          color: '{{colors.inkContrast}}',
+          iconColor: '{{colors.inkContrast}}',
         },
         hover: {
-          backgroundColor: '#f08080',
-          color: '#FFD23F',
+          backgroundColor: '{{colors.interfaceInformative010}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
         },
         'focus-visible': {
           outlineColor: '{{outlines.outlineColorDefault}}',
@@ -42,18 +397,11 @@ const accordionCustomThemeObject: CreateThemeArgs = {
           safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
         },
       },
-      accordionPanelCustom: {
-        base: {
-          borderStyle: 'none none solid none',
-          borderColor: '#fb8500',
-          borderWidth: '{{borders.borderWidth020}}',
-        },
+      customIconFilledAddCircle: {
+        base: {iconColor: '{{colors.amber050}}'},
       },
-      customIconFilledCancel: {
-        base: {
-          backgroundColor: '{{colors.interfaceInformative010}}',
-          iconColor: '{{colors.inkInverse}}',
-        },
+      indicatorIconProp: {
+        base: {iconColor: '{{colors.amber050}}'},
       },
       customOutlineColor: {
         base: {
@@ -111,490 +459,36 @@ const accordionCustomThemeObject: CreateThemeArgs = {
         'focus-visible': {
           outlineColor: 'red',
           outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '5px',
+          outlineWidth: '3px',
+          outlineOffset: '15px',
         },
       },
     },
   },
 };
 
-const StyledBlock = styled(Block)`
-  display: flex;
-  align-items: center;
-`;
-
-const content = (
-  <TextBlock stylePreset="inkContrast">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-    malesuada lacus ex, sit amet blandit leo lobortis eget.
-  </TextBlock>
-);
-
-const CustomIndicator = ({expanded}: AccordionIconProps) =>
-  expanded ? (
-    <IconFilledStarOutline overrides={{size: 'iconSize020'}} />
-  ) : (
-    <IconFilledCancel
-      overrides={{size: 'iconSize020', stylePreset: 'customIconFilledCancel'}}
-    />
-  );
-
-const Spacer = styled.div`
-  margin-bottom: 30px;
-`;
-
-export const StoryAccordionDefault = () => {
-  const [expanded, toggleExpanded] = React.useState(false);
-  return (
-    <>
-      <StorybookSubHeading>Expanded/Collapsed</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header="Header 1"
-          expanded={expanded}
-          onClick={() => toggleExpanded(!expanded)}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>Disabled</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header="Header 2"
-          disabled
-          expanded={false}
-          overrides={{
-            header: {
-              indicatorIcon: {
-                stylePreset: 'inkNonEssential',
-              },
-            },
-          }}
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>With leading icon</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <IconFilledAccountBalance
-                overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-              />
-              Header 3
-            </StyledBlock>
-          }
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>With leading image</StorybookSubHeading>
-      <Spacer>
-        <Accordion
-          header={
-            <StyledBlock>
-              <Image
-                src="/placeholder-3x2.png"
-                alt="Example Image"
-                overrides={{
-                  height: '30px',
-                  width: '30px',
-                  marginInlineEnd: '8px',
-                }}
-              />
-              Header 3
-            </StyledBlock>
-          }
-        >
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>With show label</StorybookSubHeading>
-      <Spacer>
-        <Accordion header="Header 4" label="Show">
-          {content}
-        </Accordion>
-      </Spacer>
-      <StorybookSubHeading>With hide label</StorybookSubHeading>
-      <Spacer>
-        <Accordion header="Header 5" label="Hide" expanded>
-          {content}
-        </Accordion>
-      </Spacer>
-    </>
-  );
-};
-StoryAccordionDefault.storyName = 'accordion';
-
-export const StoryAccordionOverrides = () => (
-  <>
-    <StorybookSubHeading>Style Overrides</StorybookSubHeading>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Header 6
-          </StyledBlock>
-        }
-        label="Hide"
-        expanded
-        overrides={{
-          header: {
-            minWidth: 'sizing090',
-            minHeight: 'sizing090',
-            stylePreset: 'accordionHeaderCustom',
-            typographyPreset: 'utilityButton020',
-            spaceInline: 'space030',
-            paddingBlock: 'spaceInset040',
-            paddingInline: 'spaceInset040',
-            label: {
-              typographyPreset: 'utilityButton020',
-            },
-          },
-          panel: {
-            stylePreset: 'accordionPanelCustom',
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-    <StorybookSubHeading>Indicator Icon Prop Overrides</StorybookSubHeading>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Header 7
-          </StyledBlock>
-        }
-        label="Show"
-        overrides={{
-          header: {
-            indicatorIcon: {
-              props: {
-                overrides: {
-                  stylePreset: 'inkNegative',
-                  size: 'iconSize010',
-                },
-              },
-            },
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-    <StorybookSubHeading>Indicator Icon Override</StorybookSubHeading>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Header 8
-          </StyledBlock>
-        }
-        label="Show"
-        overrides={{
-          header: {
-            indicatorIcon: {
-              stylePreset: 'inkPositive',
-              size: 'iconSize030',
-            },
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-    <StorybookSubHeading>
-      Indicator Icon Component Overrides
-    </StorybookSubHeading>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Header 9
-          </StyledBlock>
-        }
-        label="Hide"
-        expanded
-        overrides={{
-          header: {
-            indicatorIcon: CustomIndicator,
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Header 10
-          </StyledBlock>
-        }
-        label="Show"
-        overrides={{
-          header: {
-            indicatorIcon: CustomIndicator,
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-  </>
-);
-
-StoryAccordionOverrides.storyName = 'accordion-with-overrides';
-
-export const StoryAccordionGroupUnControlled = () => (
-  <>
-    <StorybookHeading>Accordion Group UnControlled</StorybookHeading>
-    <StorybookSubHeading>No expanded</StorybookSubHeading>
-    <AccordionGroup>
-      <Accordion header="Header 21">{content}</Accordion>
-      <Accordion header="Header 22">{content}</Accordion>
-      <Accordion header="Header 23">{content}</Accordion>
-    </AccordionGroup>
-    <StorybookSubHeading>Multiply</StorybookSubHeading>
-    <AccordionGroup defaultExpanded={[1]}>
-      <Accordion header="Header 31">{content}</Accordion>
-      <Accordion header="Header 32">{content}</Accordion>
-      <Accordion header="Header 33">{content}</Accordion>
-    </AccordionGroup>
-    <StorybookSubHeading>Single</StorybookSubHeading>
-    <AccordionGroup defaultExpanded={[1, 2]} expandSingle>
-      <Accordion header="Header 41">{content}</Accordion>
-      <Accordion header="Header 42">{content}</Accordion>
-      <Accordion header="Header 43">{content}</Accordion>
-    </AccordionGroup>
-  </>
-);
-StoryAccordionGroupUnControlled.storyName = 'accordion-group-uncontrolled';
-
-export const StoryAccordionGroupControlled = () => {
-  const [expanded1, setExpanded1] = React.useState([1]);
-  const [expanded2, setExpanded2] = React.useState([1]);
-
-  return (
-    <>
-      <StorybookHeading>Accordion Group Controlled</StorybookHeading>
-      <StorybookSubHeading>Multiply</StorybookSubHeading>
-      <AccordionGroup expanded={expanded1} onChange={setExpanded1}>
-        <Accordion header="Header 51">{content}</Accordion>
-        <Accordion header="Header 52">{content}</Accordion>
-        <Accordion header="Header 53">{content}</Accordion>
-      </AccordionGroup>
-      <StorybookSubHeading>Single</StorybookSubHeading>
-      <AccordionGroup expanded={expanded2} onChange={setExpanded2} expandSingle>
-        <Accordion header="Header 61">{content}</Accordion>
-        <Accordion header="Header 62">{content}</Accordion>
-        <Accordion header="Header 63">{content}</Accordion>
-      </AccordionGroup>
-    </>
-  );
-};
-StoryAccordionGroupControlled.storyName = 'accordion-group-controlled';
-
-export const StoryAccordionOutlineOverrides = () => (
-  <>
-    <StorybookSubHeading>Accordion Outline Overrides</StorybookSubHeading>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Custom Color
-          </StyledBlock>
-        }
-        label="Hide"
-        expanded
-        overrides={{
-          header: {
-            stylePreset: 'customOutlineColor',
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Custom Style
-          </StyledBlock>
-        }
-        label="Hide"
-        expanded
-        overrides={{
-          header: {
-            stylePreset: 'customOutlineStyle',
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Custom Width
-          </StyledBlock>
-        }
-        label="Hide"
-        expanded
-        overrides={{
-          header: {
-            stylePreset: 'customOutlineWidth',
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-    <Spacer>
-      <Accordion
-        header={
-          <StyledBlock>
-            <IconFilledAccountBalance
-              overrides={{size: 'iconSize020', marginInlineEnd: '8px'}}
-            />
-            Custom Offset
-          </StyledBlock>
-        }
-        label="Hide"
-        expanded
-        overrides={{
-          header: {
-            stylePreset: 'customOutlineOffset',
-          },
-        }}
-      >
-        {content}
-      </Accordion>
-    </Spacer>
-  </>
-);
-
-StoryAccordionOutlineOverrides.storyName = 'accordion-with-outline-overrides';
-
-export const StoryAccordionGroupTransitionOverrides = () => {
-  const noTransitions = {
-    header: {
-      transitionPreset: [],
-    },
-    panel: {
-      transitionPreset: [],
-    },
-  };
-
-  const slowTransitions = {
-    header: {
-      transitionPreset: {
-        extend: 'backgroundColorChange',
-        base: {
-          transitionDuration: '1000ms',
-        },
-      },
-    },
-    panel: {
-      transitionPreset: [
-        {
-          extend: 'maxHeightChange',
-          base: {
-            transitionProperty: 'max-height',
-          },
-          enterActive: {
-            transitionDuration: '2000ms',
-          },
-          exitActive: {
-            transitionDuration: '2000ms',
-          },
-        },
-        {
-          extend: 'slideLeft',
-          enterActive: {
-            transitionDuration: '2000ms',
-          },
-          exitActive: {
-            transitionDuration: '2000ms',
-          },
-        },
-      ],
-    },
-  };
-
-  return (
-    <>
-      <StorybookHeading>Accordion Group Transition Overrides</StorybookHeading>
-      <StorybookSubHeading>No transitions</StorybookSubHeading>
-      <AccordionGroup>
-        <Accordion header="Header 64" overrides={noTransitions}>
-          {content}
-        </Accordion>
-        <Accordion header="Header 65" overrides={noTransitions}>
-          {content}
-        </Accordion>
-        <Accordion header="Header 66" overrides={noTransitions}>
-          {content}
-        </Accordion>
-      </AccordionGroup>
-      <StorybookSubHeading>Multiple slow transitions</StorybookSubHeading>
-      <AccordionGroup>
-        <Accordion header="Header 67" overrides={slowTransitions}>
-          {content}
-        </Accordion>
-        <Accordion header="Header 68" overrides={slowTransitions}>
-          {content}
-        </Accordion>
-        <Accordion header="Header 69" overrides={slowTransitions}>
-          {content}
-        </Accordion>
-      </AccordionGroup>
-    </>
-  );
-};
-StoryAccordionGroupTransitionOverrides.storyName =
-  'accordion-group-transition-overrides';
-StoryAccordionGroupTransitionOverrides.parameters = {
-  percy: {skip: true},
-};
-
 export default {
-  title: 'Components/accordion',
-  component: () => 'None',
+  title: 'Components/Accordion',
+  component: Accordion,
+  parameters: {
+    nkDocs: {
+      title: 'Accordion',
+      url: 'https://newskit.co.uk/components/accordion',
+      description:
+        'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
+    },
+  },
+  disabledRules: ['landmark-unique'],
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           accordionCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
