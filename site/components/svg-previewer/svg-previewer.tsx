@@ -116,7 +116,7 @@ export const SvgPreviewer: React.FC = () => {
       <StyledButtonsContainer
         rows={{xs: 'sizing080'}}
         alignItems="center"
-        justifyContent="sapce-between"
+        justifyContent="space-between"
         columns="1fr 1fr"
         overrides={{
           paddingInline: '10%',
