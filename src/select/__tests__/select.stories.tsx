@@ -1455,6 +1455,7 @@ function App() {
           height: '100px',
           width: '100vh',
           backgroundColor: 'Grey',
+          zIndex: 30,
         }}
       >
         Header Component
@@ -1473,6 +1474,9 @@ function App() {
       <Select
         overrides={{
           button: {width: '50%'},
+          panel: {
+            zIndex: '20',
+          },
         }}
       >
         {temp2.map(v => (

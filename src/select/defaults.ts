@@ -31,6 +31,7 @@ export default {
         stylePreset: 'selectPanel',
         maxHeight: '184px',
         spaceInset: 'spaceInset020',
+        zIndex: 'layer',
       },
       modal: {
         panel: {
@@ -69,6 +70,7 @@ export default {
         stylePreset: 'selectPanel',
         maxHeight: '272px',
         spaceInset: 'spaceInset020',
+        zIndex: 'layer',
       },
       modal: {
         panel: {
@@ -107,6 +109,7 @@ export default {
         stylePreset: 'selectPanel',
         maxHeight: '360px',
         spaceInset: 'spaceInset020',
+        zIndex: 'layer',
       },
       modal: {
         panel: {

@@ -108,6 +108,7 @@ export const StyledSelectPanel = styled.div<{
   $size: ButtonSelectSize;
   $isOpen: boolean;
   overrides?: SelectPanelOverrides;
+  zIndex: string;
 }>`
   position: absolute;
   height: auto;
@@ -115,7 +116,7 @@ export const StyledSelectPanel = styled.div<{
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
+  ${({zIndex}) => (zIndex !== 'layer' ? {zIndex} : '')};
 
   // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
