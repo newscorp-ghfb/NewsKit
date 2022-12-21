@@ -48,12 +48,23 @@ export const getValueFromTheme = <ThemeToken extends string>(
   return '';
 };
 
+const formatCssVar = (themeKey: string, tokenName: string): string => {
+  if (themeKey === 'colors') return `var(--color-${tokenName})`;
+  return `var(--${tokenName})`;
+};
+
+const presetsKeys = ['typographyPresets', 'stylePresets', 'transitionPresets'];
+
 export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
 ) => <Props extends ThemeProp>(
   defaultToken?: MQ<ThemeToken>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => ({theme, ...props}: Props) => {
+  // TODO:
+  // const { useCSSVars } = theme.flags;
+  const useCSSVars = true;
+
   const section = theme[themeKey] as Record<ThemeToken, unknown>;
   const propKeys = (customProp && props[customProp]) || defaultToken;
   const {breakpoints} = theme;
@@ -64,7 +75,8 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
     v.every((token: ThemeToken) => section[token as ThemeToken]);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mapTokensArray = (v: any): string[] =>
-    v.map((token: ThemeToken) => section[token as ThemeToken]).join(' ');
+    v.map((token: ThemeToken) => formatCssVar(themeKey, token)).join(' ');
+
   if (isResponsive(propKeys, breakpoints)) {
     // We have a breakpoints object...
     // Convert breakpoints to array and order them
@@ -94,13 +106,22 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
           typeof presetKey === 'string' && (presetKey as string).split(' ');
         if (themeKey === 'spacePresets' && isMQTokenArray(MQtokens)) {
           preset = mapTokensArray(MQtokens);
-        } else {
-          preset =
-            section[presetKey] ||
-            (canHaveNonThemeValue &&
-              isValidUnit(themeKey, presetKey) &&
-              presetKey);
+        } else if (
+          useCSSVars &&
+          !presetsKeys.includes(themeKey) &&
+          section[presetKey]
+        ) {
+          preset = formatCssVar(themeKey, presetKey);
+        } else if (!useCSSVars || presetsKeys.includes(themeKey)) {
+          preset = section[presetKey as ThemeToken];
+        } else if (
+          canHaveNonThemeValue &&
+          isValidUnit(themeKey, presetKey) &&
+          presetKey
+        ) {
+          preset = presetKey;
         }
+
         // Get next key to set the max. This stops styles overlapping when they
         // shouldn't by explicitly setting them for the range they need to apply on.
         const nextKey = arr[index + 1] ? arr[index + 1][0] : undefined;
@@ -125,7 +146,20 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
     return mapTokensArray(noMQtokens);
   }
 
-  if (propKeys && section[propKeys as ThemeToken]) {
+  if (
+    useCSSVars &&
+    !presetsKeys.includes(themeKey) &&
+    propKeys &&
+    section[propKeys as ThemeToken]
+  ) {
+    return formatCssVar(themeKey, propKeys as ThemeToken);
+  }
+  if (
+    !useCSSVars ||
+    (presetsKeys.includes(themeKey) &&
+      section &&
+      section[propKeys as ThemeToken])
+  ) {
     return section[propKeys as ThemeToken];
   }
   if (canHaveNonThemeValue && propKeys && isValidUnit(themeKey, propKeys)) {

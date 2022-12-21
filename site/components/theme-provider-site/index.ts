@@ -1,1 +1,1 @@
-export {ThemeProviderSite} from './theme-provider-site';
+export {ThemeProviderSite, ThemeSwitcher} from './theme-provider-site';

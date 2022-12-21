@@ -42,7 +42,7 @@ describe('getXFromTheme', () => {
 
   test('getXFromTheme with non MQ value', () => {
     const result = getXFromTheme('sizing')('width', 'sizing050')({theme});
-    expect(result).toEqual({width: '24px'});
+    expect(result).toEqual({width: 'var(--sizing050)'});
   });
   test('getXFromTheme with MQ value', () => {
     const result = getXFromTheme('sizing')('width', {
@@ -51,18 +51,21 @@ describe('getXFromTheme', () => {
       md: 'sizing030',
     })({theme});
     expect(result).toEqual({
-      '@media screen and (max-width: 479px)': {width: '4px'},
+      '@media screen and (max-width: 479px)': {width: 'var(--sizing010)'},
       '@media screen and (min-width: 480px) and (max-width: 767px)': {
-        width: '8px',
+        width: 'var(--sizing020)',
       },
-      '@media screen and (min-width: 768px)': {width: '12px'},
+      '@media screen and (min-width: 768px)': {width: 'var(--sizing030)'},
     });
   });
 
   test('getXFromTheme with non MQ and callback', () => {
     const cb = (value: string) => ({padding: `${value} 0`, width: value});
     const result = getXFromTheme('sizing')(cb, 'sizing050')({theme});
-    expect(result).toEqual({width: '24px', padding: '24px 0'});
+    expect(result).toEqual({
+      width: 'var(--sizing050)',
+      padding: 'var(--sizing050) 0',
+    });
   });
   test('getXFromTheme with MQ and callback', () => {
     const cb = (value: string) => ({padding: `${value} 0`, width: value});
@@ -74,16 +77,16 @@ describe('getXFromTheme', () => {
     const result = getXFromTheme('sizing')(cb, mq)({theme});
     expect(result).toEqual({
       '@media screen and (max-width: 479px)': {
-        width: '4px',
-        padding: '4px 0',
+        width: 'var(--sizing010)',
+        padding: 'var(--sizing010) 0',
       },
       '@media screen and (min-width: 480px) and (max-width: 767px)': {
-        width: '8px',
-        padding: '8px 0',
+        width: 'var(--sizing020)',
+        padding: 'var(--sizing020) 0',
       },
       '@media screen and (min-width: 768px)': {
-        width: '12px',
-        padding: '12px 0',
+        width: 'var(--sizing030)',
+        padding: 'var(--sizing030) 0',
       },
     });
   });
@@ -99,7 +102,7 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({width: '24px'});
+    expect(result).toEqual({width: 'var(--sizing050)'});
   });
 
   test('getSizingCssFromTheme with MQ', () => {
@@ -111,11 +114,11 @@ describe('getXFromTheme', () => {
       theme,
     });
     expect(result).toEqual({
-      '@media screen and (max-width: 479px)': {width: '4px'},
+      '@media screen and (max-width: 479px)': {width: 'var(--sizing010)'},
       '@media screen and (min-width: 480px) and (max-width: 767px)': {
-        width: '8px',
+        width: 'var(--sizing020)',
       },
-      '@media screen and (min-width: 768px)': {width: '12px'},
+      '@media screen and (min-width: 768px)': {width: 'var(--sizing030)'},
     });
   });
   test('getSizingCssFromTheme non MQ and callback', () => {
@@ -126,7 +129,7 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({width: '24px'});
+    expect(result).toEqual({width: 'var(--sizing050)'});
   });
 
   test('getSizingCssFromTheme with MQ and callback', () => {
@@ -139,11 +142,11 @@ describe('getXFromTheme', () => {
       theme,
     });
     expect(result).toEqual({
-      '@media screen and (max-width: 479px)': {width: '4px'},
+      '@media screen and (max-width: 479px)': {width: 'var(--sizing010)'},
       '@media screen and (min-width: 480px) and (max-width: 767px)': {
-        width: '8px',
+        width: 'var(--sizing020)',
       },
-      '@media screen and (min-width: 768px)': {width: '12px'},
+      '@media screen and (min-width: 768px)': {width: 'var(--sizing030)'},
     });
   });
 
@@ -168,7 +171,7 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({minWidth: '4px'});
+    expect(result).toEqual({minWidth: 'var(--sizing010)'});
   });
 
   test('getResponsiveSize non MQ with token value and callback', () => {
@@ -181,7 +184,7 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({minWidth: '4px'});
+    expect(result).toEqual({minWidth: 'var(--sizing010)'});
   });
 
   test('getResponsiveSize with MQ', () => {
@@ -195,13 +198,13 @@ describe('getXFromTheme', () => {
     });
     expect(result).toEqual({
       '@media screen and (max-width: 479px)': {
-        minWidth: '4px',
+        minWidth: 'var(--sizing010)',
       },
       '@media screen and (min-width: 480px) and (max-width: 767px)': {
-        minWidth: '8px',
+        minWidth: 'var(--sizing020)',
       },
       '@media screen and (min-width: 768px)': {
-        minWidth: '12px',
+        minWidth: 'var(--sizing030)',
       },
     });
   });
@@ -218,13 +221,13 @@ describe('getXFromTheme', () => {
     });
     expect(result).toEqual({
       '@media screen and (max-width: 479px)': {
-        minWidth: '4px',
+        minWidth: 'var(--sizing010)',
       },
       '@media screen and (min-width: 480px) and (max-width: 767px)': {
-        minWidth: '8px',
+        minWidth: 'var(--sizing020)',
       },
       '@media screen and (min-width: 768px)': {
-        minWidth: '12px',
+        minWidth: 'var(--sizing030)',
       },
     });
   });
@@ -239,13 +242,15 @@ describe('getXFromTheme', () => {
     });
     expect(result).toEqual({
       '@media screen and (max-width: 479px)': {
-        padding: '4px',
+        padding: 'var(--space010)',
       },
       '@media screen and (min-width: 480px) and (max-width: 767px)': {
-        padding: '8px 8px 8px 8px',
+        padding:
+          'var(--space020) var(--space020) var(--space020) var(--space020)',
       },
       '@media screen and (min-width: 768px)': {
-        padding: '12px 12px 12px 12px',
+        padding:
+          'var(--space030) var(--space030) var(--space030) var(--space030)',
       },
     });
   });
@@ -279,7 +284,10 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({padding: '4px 4px 4px 4px'});
+    expect(result).toEqual({
+      padding:
+        'var(--space010) var(--space010) var(--space010) var(--space010)',
+    });
   });
   test('getResponsiveSpace with single space tokens', () => {
     const result = getResponsiveSpace(
@@ -290,7 +298,7 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({padding: '4px'});
+    expect(result).toEqual({padding: 'var(--space010)'});
   });
   test('getResponsiveSpace with calc as token', () => {
     const result = getResponsiveSpace(
@@ -312,7 +320,7 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({minWidth: '4px'});
+    expect(result).toEqual({minWidth: 'var(--space010)'});
   });
 
   test('getResponsiveBorder', () => {
@@ -324,7 +332,7 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({border: '2px'});
+    expect(result).toEqual({border: 'var(--borderWidth020)'});
   });
 
   test('getResponsiveMotion', () => {
@@ -336,7 +344,7 @@ describe('getXFromTheme', () => {
     )({
       theme,
     });
-    expect(result).toEqual({transitionTime: '300ms'});
+    expect(result).toEqual({transitionTime: 'var(--motionDuration030)'});
   });
 
   test('getResponsiveSpace with auto values', () => {

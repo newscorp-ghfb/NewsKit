@@ -30,6 +30,8 @@ export interface ThemeBase {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   componentDefaults: Record<string, any>;
   icons: Record<string, React.ComponentType>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  flags?: Record<string, any>;
 }
 
 export type ThemeOverrides = DeepPartial<ThemeBase>;

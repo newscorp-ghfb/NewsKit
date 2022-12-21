@@ -87,6 +87,29 @@ describe('Style helpers', () => {
     expect(font).toBe('font100_font');
   });
 
+  test('getTypographyPresetFromTheme with MQ values', () => {
+    const props = {
+      theme: {
+        typographyPresets: {
+          font100: 'font100_font',
+          font200: 'font200_font',
+        },
+        breakpoints: {
+          xs: 0,
+          sm: 480,
+        },
+      },
+    };
+    const font = getTypographyPresetFromTheme<{font?: string; theme: any}>({
+      xs: 'font100',
+      sm: 'font200',
+    })(props);
+    expect(font).toEqual({
+      '@media screen and (max-width: 479px)': 'font100_font',
+      '@media screen and (min-width: 480px)': 'font200_font',
+    });
+  });
+
   test('getSizingFromTheme()({theme}) returns ""', () => {
     const props = {
       theme: {},
