@@ -14,8 +14,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: justify;
-  -webkit-justify-content: sapce-between;
-  justify-content: sapce-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1416,8 +1416,8 @@ Object {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: justify;
-  -webkit-justify-content: sapce-between;
-  justify-content: sapce-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2407,8 +2407,8 @@ Object {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: justify;
-  -webkit-justify-content: sapce-between;
-  justify-content: sapce-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3417,8 +3417,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: justify;
-  -webkit-justify-content: sapce-between;
-  justify-content: sapce-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;

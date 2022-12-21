@@ -1,9 +1,26 @@
+import {screen} from '@testing-library/react';
 import {renderToFragmentWithTheme} from 'newskit/test/test-utils';
 import {FeatureCard} from '../feature-card';
 import {FeatureCardProps} from '../types';
 
 describe('FeatureCard', () => {
-  test('Renders interactive horizontal card with button', () => {
+  test('Renders interactive horizontal card without link or link text', async () => {
+    const props: FeatureCardProps = {
+      title: 'Interactive Horizontal Card',
+      description: 'I am interactive',
+      stylePrefix: 'patternsCard',
+      layout: 'horizontal',
+      href: 'href',
+    };
+    const fragment = renderToFragmentWithTheme(FeatureCard, props);
+
+    const arrowLinkLarge = await screen.queryAllByTestId('arrowLinkLarge');
+    expect(arrowLinkLarge.length).toBeFalsy();
+
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('Renders interactive horizontal card with text when no buttonHref', async () => {
     const props: FeatureCardProps = {
       title: 'Interactive Horizontal Card',
       description: 'I am interactive',
@@ -13,29 +30,49 @@ describe('FeatureCard', () => {
       href: 'href',
     };
     const fragment = renderToFragmentWithTheme(FeatureCard, props);
+
+    await screen.findByTestId('arrowLinkSmall');
+    const arrowLinkLarge = await screen.findByTestId('arrowLinkLarge');
+    const link = arrowLinkLarge.getElementsByTagName('a')[0];
+    expect(link).toBeUndefined();
+    expect(arrowLinkLarge.textContent).toEqual('Read more');
+
     expect(fragment).toMatchSnapshot();
   });
 
-  test('Renders horizontal card with clickable button only', () => {
+  test('Renders horizontal card with clickable button only', async () => {
     const props: FeatureCardProps = {
       title: 'Interactive Horizontal Card',
       description: 'I am interactive',
       stylePrefix: 'patternsCard',
       layout: 'horizontal',
       buttonLabel: 'Read more',
-      buttonHref: 'href',
+      buttonHref: 'buttonHref',
     };
     const fragment = renderToFragmentWithTheme(FeatureCard, props);
+
+    await screen.findByTestId('arrowLinkSmall');
+    const arrowLinkLarge = await screen.findByTestId('arrowLinkLarge');
+    const link = arrowLinkLarge.getElementsByTagName('a')[0];
+    expect(link.textContent).toEqual('Read more');
+    expect(link.href).toEqual('http://localhost/buttonHref');
+
     expect(fragment).toMatchSnapshot();
   });
 
-  test('Renders interactive horizontal card without button', () => {
+  test('Renders horizontal card with clickable button and style override', () => {
     const props: FeatureCardProps = {
       title: 'Interactive Horizontal Card',
       description: 'I am interactive',
       stylePrefix: 'patternsCard',
       layout: 'horizontal',
-      href: 'href',
+      buttonLabel: 'Read more',
+      buttonHref: 'buttonHref',
+      overrides: {
+        button: {
+          stylePreset: 'linkStandalone',
+        },
+      },
     };
     const fragment = renderToFragmentWithTheme(FeatureCard, props);
     expect(fragment).toMatchSnapshot();
@@ -72,7 +109,7 @@ describe('FeatureCard', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('Renders interactive vertical card with button', () => {
+  test('Renders interactive vertical card with link', () => {
     const props: FeatureCardProps = {
       title: 'Interactive Horizontal Card',
       description: 'I am interactive',
@@ -85,7 +122,7 @@ describe('FeatureCard', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('Renders interactive vertical card without button', () => {
+  test('Renders interactive vertical card without link', () => {
     const props: FeatureCardProps = {
       title: 'Interactive Horizontal Card',
       description: 'I am interactive',
