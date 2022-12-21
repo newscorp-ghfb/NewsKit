@@ -1,1 +1,86 @@
-<svg id="components-accordion-options-icon" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0"><g clip-path="url(#nk-844)"><path style="fill:var(--color-illustrationBackground020)" d="M0 0H1490V838H0V0Z"></path><g filter="url(#nk-846)"><g clip-path="url(#nk-845)"><rect style="fill:var(--color-illustrationInterface010)" x="-27" y="232" width="1277" height="373" rx="22.4336"></rect><path style="fill:var(--color-illustrationHighlight010)" d="M1107.35 386.858L1064.13 429.987L1020.9 386.858L1007.62 400.136L1064.13 456.636L1120.63 400.136L1107.35 386.858Z"></path><path style="fill:var(--color-illustrationInterface020)" d="M-56 418.5C-56 403.864 -45.0929 392 -31.6384 392H843.638C857.093 392 868 403.864 868 418.5C868 433.136 857.093 445 843.638 445H-31.6384C-45.093 445 -56 433.136 -56 418.5Z"></path></g></g></g><defs><filter id="nk-846" x="-43" y="224" width="1309" height="405" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="8"></feOffset><feGaussianBlur stdDeviation="8"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1795_58544"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1795_58544" result="shape"></feBlend></filter><clipPath id="nk-844"><rect style="fill:var(--color-white)" width="1490" height="838"></rect></clipPath><clipPath id="nk-845"><rect style="fill:var(--color-white)" x="-27" y="232" width="1277" height="373" rx="22.4336"></rect></clipPath></defs></svg>
+<svg
+  id="nksvg"
+  style="width: 100%; height: 100%"
+  width="1490"
+  height="838"
+  viewBox="0 0 1490 838"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="css-0"
+>
+  <g clip-path="url(#nk-844)">
+    <path
+      style="fill: var(--color-illustrationBackground020)"
+      d="M0 0H1490V838H0V0Z"
+    ></path>
+    <g filter="url(#nk-846)">
+      <g clip-path="url(#nk-845)">
+        <rect
+          style="fill: var(--color-illustrationInterface010)"
+          x="-27"
+          y="232"
+          width="1277"
+          height="373"
+          rx="22.4336"
+        ></rect>
+        <path
+          style="fill: var(--color-illustrationHighlight010)"
+          d="M1107.35 386.858L1064.13 429.987L1020.9 386.858L1007.62 400.136L1064.13 456.636L1120.63 400.136L1107.35 386.858Z"
+        ></path>
+        <path
+          style="fill: var(--color-illustrationInterface020)"
+          d="M-56 418.5C-56 403.864 -45.0929 392 -31.6384 392H843.638C857.093 392 868 403.864 868 418.5C868 433.136 857.093 445 843.638 445H-31.6384C-45.093 445 -56 433.136 -56 418.5Z"
+        ></path>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <filter
+      id="nk-846"
+      x="-43"
+      y="224"
+      width="1309"
+      height="405"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      ></feColorMatrix>
+      <feOffset dy="8"></feOffset>
+      <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"
+      ></feColorMatrix>
+      <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow_1795_58544"
+      ></feBlend>
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_1795_58544"
+        result="shape"
+      ></feBlend>
+    </filter>
+    <clipPath id="nk-844">
+      <rect style="fill: var(--color-white)" width="1490" height="838"></rect>
+    </clipPath>
+    <clipPath id="nk-845">
+      <rect
+        style="fill: var(--color-white)"
+        x="-27"
+        y="232"
+        width="1277"
+        height="373"
+        rx="22.4336"
+      ></rect>
+    </clipPath>
+  </defs>
+</svg>

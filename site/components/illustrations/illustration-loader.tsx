@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {isNotSafari, isSafari, pathToID} from './utils';
+import {isNotSafari, isSafari} from './utils';
 
 /**
  * Only for Safari. It reads the svg file as raw string and returns it as an inline SVG.
@@ -31,8 +31,6 @@ export const getIllustrationComponent = (
   path: string,
   props?: React.SVGProps<SVGSVGElement>,
 ) => {
-  const id = pathToID(path);
-
   const Component = () => {
     const [safariSVG, setSafariSVG] = useState<JSX.Element | null>(null);
     const [opacity, setOpacity] = useState(0);
@@ -58,7 +56,7 @@ export const getIllustrationComponent = (
 
     const nonSafariSVG = (
       <svg viewBox="0 0 1490 838" width="100%" opacity={opacity} {...props}>
-        <use href={`static/illustrations/${path}.svg#${id}`} />
+        <use href={`static/illustrations/${path}.svg#nksvg`} />
       </svg>
     );
 
