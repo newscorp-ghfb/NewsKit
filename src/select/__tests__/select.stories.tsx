@@ -28,7 +28,6 @@ import {InlineMessage} from '../../inline-message';
 import {GridLayout} from '../../grid-layout';
 import {countries} from './phone-countries';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {H1} from '../../typography';
 
 const items = [
   'Neptunium',
@@ -1353,37 +1352,6 @@ export const SelectVirtualizationNotFixedSize = () => {
   );
 };
 
-/**
-  PLEASE IGNORE THIS STORY
-  ITS JUST FOR TESTING AND WILL BE REMOVED BEFORE MERGE
- */
-
-const temp = Array.from(Array(200).keys()).map(v => String(v));
-
-export const StorySelectWithOverflowScroll = () => (
-  <div>
-    <div
-      style={{
-        padding: '75vh 0',
-        // position: 'relative',
-        border: '3px solid red',
-        boxSizing: 'border-box',
-      }}
-    >
-      <Select virtualized={10000} overrides={{button: {width: '100%'}}}>
-        {temp.map(v => (
-          <SelectOption key={v} value={v}>
-            {v}
-          </SelectOption>
-        ))}
-      </Select>
-    </div>
-  </div>
-);
-
-// eslint-disable-next-line @typescript-eslint/no-use-before-define
-export const StorySelectWithApp = () => <App />;
-
 export default {
   title: 'Components/select',
   component: () => 'None',
@@ -1400,126 +1368,3 @@ export default {
     ),
   ],
 };
-// TODO: Remove this story before merge
-
-const ContainerB = styled.div`
-  display: flex;
-  height: 100vh;
-  max-height: 100vh;
-  flex-direction: column;
-  margin: 0;
-  width: 100vw;
-  overflow: hidden auto;
-  border: 1px solid red;
-`;
-
-function App() {
-  const temp2 = [
-    '(GMT-12:00) Eniwetok, Kwajaleinere',
-    '(GMT-11:00) Midway Island, Samoa',
-    '(GMT-10:00) Hawaii',
-    '(GMT-09:00) Alaska',
-    '(GMT-08:00) Pacific Time (US and Canada); Tijuana',
-    '(GMT-08:00) Tijuana, Baja California',
-    '(GMT-07:00) Arizona',
-    '(GMT-07:00) Mountain Time (US and Canada)',
-    '(GMT-06:00) Central America',
-    '(GMT-06:00) Central Time (US and Canada)',
-    '(GMT-12:00) Eniwetok, Kwajaleinere',
-    '(GMT-11:00) Midway Island, Samoa',
-    '(GMT-10:00) Hawaii',
-    '(GMT-09:00) Alaska',
-    '(GMT-08:00) Pacific Time (US and Canada); Tijuana',
-    '(GMT-08:00) Tijuana, Baja California',
-    '(GMT-07:00) Arizona',
-    '(GMT-07:00) Mountain Time (US and Canada)',
-    '(GMT-06:00) Central America',
-    '(GMT-06:00) Central Time (US and Canada)',
-    '(GMT-12:00) Eniwetok, Kwajaleinere',
-    '(GMT-11:00) Midway Island, Samoa',
-    '(GMT-10:00) Hawaii',
-    '(GMT-09:00) Alaska',
-    '(GMT-08:00) Pacific Time (US and Canada); Tijuana',
-    '(GMT-08:00) Tijuana, Baja California',
-    '(GMT-07:00) Arizona',
-    '(GMT-07:00) Mountain Time (US and Canada)',
-    '(GMT-06:00) Central America',
-    '(GMT-06:00) Central Time (US and Canada)',
-  ];
-
-  return (
-    <ContainerB>
-      <div
-        style={{
-          position: 'fixed',
-          height: '100px',
-          width: '100vh',
-          backgroundColor: 'Grey',
-        }}
-      >
-        Header Component
-      </div>
-      <H1>
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        <br />
-      </H1>
-      <Select
-        overrides={{
-          button: {width: '50%'},
-        }}
-      >
-        {temp2.map(v => (
-          <SelectOption
-            key={v}
-            value={v}
-            overrides={{
-              minHeight: 'unset',
-              paddingBlock: 'space010',
-              stylePreset: 'selectOptionDefault',
-            }}
-          >
-            {v}
-          </SelectOption>
-        ))}
-      </Select>
-      <H1>
-        <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-        Test Lines <br />
-      </H1>
-    </ContainerB>
-  );
-}
