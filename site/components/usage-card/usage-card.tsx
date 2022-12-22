@@ -24,6 +24,7 @@ const kindMap: Record<string, KindConfig> = {
 
 export const UsageCard: React.FC<UsageCardProps> = ({
   kind = UsageKind.DO,
+  title,
   description,
   media,
 }) => {
@@ -49,21 +50,37 @@ export const UsageCard: React.FC<UsageCardProps> = ({
           },
         }}
       >
-        <Block spaceStack="space040">
-          <Divider overrides={{stylePreset: dividerStylePreset}} />
-          <Block spaceStack="space040" />
-
-          <Headline
-            overrides={{
-              typographyPreset: 'editorialHeadline030',
-              heading: {
-                stylePreset: headingStylePreset,
-              },
-            }}
-          >
-            {heading}
-          </Headline>
-        </Block>
+        {title ? (
+          <Block spaceStack="space040">
+            <Divider overrides={{stylePreset: dividerStylePreset}} />
+            <Block spaceStack="space040" />
+            <Block spaceStack="space040">
+              <UnpackContent
+                textBlockProps={{
+                  stylePreset: 'inkContrast',
+                  typographyPreset: 'editorialHeadline020',
+                }}
+              >
+                {title}
+              </UnpackContent>
+            </Block>
+          </Block>
+        ) : (
+          <Block spaceStack="space040">
+            <Divider overrides={{stylePreset: dividerStylePreset}} />
+            <Block spaceStack="space040" />
+            <Headline
+              overrides={{
+                typographyPreset: 'editorialHeadline020',
+                heading: {
+                  stylePreset: headingStylePreset,
+                },
+              }}
+            >
+              {heading}
+            </Headline>
+          </Block>
+        )}
         <Block spaceStack="space040">
           <UnpackContent
             textBlockProps={{
