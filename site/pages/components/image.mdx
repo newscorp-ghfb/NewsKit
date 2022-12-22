@@ -33,6 +33,10 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
     of the image. This is also used to determine the height or width of the
     image if only one dimension is provided.
   </Prop>
+  <Prop name="width" type="number | string | undefined"></Prop>
+    The intrinsic width of the image in pixels.
+  <Prop name="height" type="number | string | undefined"></Prop>
+    The intrinsic width of the image in pixels.
   <Prop name="placeholderIcon" type="boolean" default={false}>
     Show the placeholder icon whilst the image is loading.
   </Prop>
@@ -46,22 +50,41 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
     works check out{' '}
     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">
       MDN
-    </a>.
-    ImageSource extends <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSourceElement">
+    </a>
+    . ImageSource extends{' '}
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSourceElement">
       Image Source element
-    </a>, the only difference is that you can use breakpoint key  <InlineCode>(xs | sm | md | lg | xl)</InlineCode>  as <InlineCode>media</InlineCode> instead
-    of passing media query.
+    </a>
+    , the only difference is that you can use breakpoint key{' '}
+    <InlineCode>(xs | sm | md | lg | xl)</InlineCode> as{' '}
+    <InlineCode>media</InlineCode> instead of passing media query.
   </Prop>
   <Prop name="loading" type="'lazy' | 'eager'">
-    Specifies how the image will load: eager will load as soon as possible, Lazy will wait till the browser estimates it will be needed. See <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/loading"> MDN </a> for more information on this property.
+    Specifies how the image will load: eager will load as soon as possible, Lazy
+    will wait till the browser estimates it will be needed. See{' '}
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/loading">
+      {' '}
+      MDN{' '}
+    </a>{' '}
+    for more information on this property.
   </Prop>
   <Prop name="fit" type="ObjectPositionProperty<string>">
-    Specifies how the image will be resized to fit the container. See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"> MDN </a> for more information on this property.
+    Specifies how the image will be resized to fit the container. See{' '}
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">
+      {' '}
+      MDN{' '}
+    </a>{' '}
+    for more information on this property.
   </Prop>
   <Prop name="position" type="ObjectFitProperty">
-    Specifies the position of the image within it's box. See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position"> MDN </a> for more information on this property.
+    Specifies the position of the image within it's box. See{' '}
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position">
+      {' '}
+      MDN{' '}
+    </a>{' '}
+    for more information on this property.
   </Prop>
-  
+
   <Prop name="overrides" type="object">
     If provided, overrides the respective presets for the component and provided
     elements.
@@ -72,15 +95,15 @@ The image component provides a `<picture>` and an `<img>` element inside it to p
       Used in combination with `height` to calculate the aspect ratio for the
       image. Generally supply the width px value if known, if not supply
       horizontal aspect ratio. Both width and aspectRatio should be supplied in
-      a consistent manner.
-      It is not recommended to have both height and width values expressed as percentages.
+      a consistent manner. It is not recommended to have both height and width
+      values expressed as percentages.
     </Prop>
     <Prop name="height" type="MQ<string>" default="auto">
       Used in combination with `width` to calculate the aspect ratio for the
       image. Generally supply the height px value if known, if not supply
       vertical aspect ratio. Both width and aspectRatio should be supplied in a
-      consistent manner.
-      It is not recommended both height and width values to be expressed as percentages.
+      consistent manner. It is not recommended both height and width values to
+      be expressed as percentages.
     </Prop>
     <Prop name="maxWidth" type="MQ<string>">
       This property sets the maximum width of the image. It prevents the used

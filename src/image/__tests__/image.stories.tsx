@@ -42,23 +42,7 @@ StoryFixedHeightAndWidthAsPropsInPx.storyName =
   'fixed-height-and-width-in-px-via-props';
 StoryFixedHeightAndWidthAsPropsInPx.parameters = {...parameters};
 
-export const StoryFixedHeightAndWidthAsPropsInPercentage = () => (
-  <ContainerWithHeight>
-    <StorybookHeading>100% by 30%</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      alt="Example Image"
-      width="100%"
-      height="30%"
-      placeholderIcon
-    />
-  </ContainerWithHeight>
-);
-StoryFixedHeightAndWidthAsPropsInPercentage.storyName =
-  'fixed-height-and-width-in-%-via-props';
-StoryFixedHeightAndWidthAsPropsInPercentage.parameters = {...parameters};
-
-export const StoryFixedHeightAndWidthInPx = () => (
+export const StoryFixedHeightAndWidthAsOverridesInPx = () => (
   <Container>
     <StorybookHeading>300px by 200px</StorybookHeading>
     <Image
@@ -69,11 +53,11 @@ export const StoryFixedHeightAndWidthInPx = () => (
     />
   </Container>
 );
-StoryFixedHeightAndWidthInPx.storyName =
+StoryFixedHeightAndWidthAsOverridesInPx.storyName =
   'fixed-height-and-width-in-px-via-overrides';
-StoryFixedHeightAndWidthInPx.parameters = {...parameters};
+StoryFixedHeightAndWidthAsOverridesInPx.parameters = {...parameters};
 
-export const StoryFixedHeightAndWidthIn = () => (
+export const StoryFixedHeightAndWidthAsOverridesInPercentage = () => (
   <ContainerWithHeight>
     <StorybookHeading>100% by 30%</StorybookHeading>
     <Image
@@ -84,8 +68,9 @@ export const StoryFixedHeightAndWidthIn = () => (
     />
   </ContainerWithHeight>
 );
-StoryFixedHeightAndWidthIn.storyName = 'fixed-height-and-width-in-%-via-props';
-StoryFixedHeightAndWidthIn.parameters = {...parameters};
+StoryFixedHeightAndWidthAsOverridesInPercentage.storyName =
+  'fixed-height-and-width-in-%-via-overrides';
+StoryFixedHeightAndWidthAsOverridesInPercentage.parameters = {...parameters};
 
 export const StoryFixedWidthAndAspectRatio = () => (
   <Container>
