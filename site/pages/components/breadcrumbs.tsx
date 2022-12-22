@@ -52,7 +52,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
       type: 'Navigation',
       name: 'Breadcrumbs',
       hero: {
-        illustration: 'components/breadcrumbs/hero/hero',
+        illustration: 'components/breadcrumbs/hero',
       },
       introduction: `Breadcrumbs are used for secondary navigation.`,
     }}
@@ -128,7 +128,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
           component: ['Icon'],
         },
       ],
-      media: getIllustrationComponent('components/breadcrumbs/anatomy/anatomy'),
+      media: getIllustrationComponent('components/breadcrumbs/anatomy'),
     }}
     options={{
       introduction:
@@ -221,7 +221,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           media: getIllustrationComponent(
-            'components/breadcrumbs/behaviours-selected-breadcrumb-item',
+            'components/breadcrumbs/behaviours/selected-breadcrumb-item',
           ),
         },
       ],
@@ -594,8 +594,10 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
                 <Link
                   href="https://storybook.newskit.co.uk/?path=/docs/components-button--story-button-default"
                   target="_blank"
-                />{' '}
-                button component for details of the props and other overrides.
+                >
+                  button component
+                </Link>{' '}
+                for details of the props and other overrides.
               </InlineMessage>
               <InlineMessage
                 icon={infoIcon}
@@ -610,8 +612,9 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
                 <Link
                   href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden"
                   target="_blank"
-                />
-                hidden.
+                >
+                  hidden.
+                </Link>
               </InlineMessage>
             </>
           ),
