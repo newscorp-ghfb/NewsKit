@@ -281,7 +281,7 @@ export const StoryPopoverDefault = () => (
               <div
                 style={{
                   display: 'flex',
-                  justifyContent: 'end',
+                  justifyContent: 'flex-end',
                   paddingTop: '30px',
                 }}
               >
