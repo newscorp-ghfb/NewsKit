@@ -26,6 +26,38 @@ export default {
   component: () => 'None',
 };
 
+export const StoryFixedHeightAndWidthAsPropsInPx = () => (
+  <Container>
+    <StorybookHeading>300px by 200px</StorybookHeading>
+    <Image
+      src="/placeholder-3x2.png"
+      alt="Example Image"
+      width="300px"
+      height="200px"
+      placeholderIcon
+    />
+  </Container>
+);
+StoryFixedHeightAndWidthAsPropsInPx.storyName =
+  'fixed-height-and-width-in-px-via-props';
+StoryFixedHeightAndWidthAsPropsInPx.parameters = {...parameters};
+
+export const StoryFixedHeightAndWidthAsPropsInPercentage = () => (
+  <ContainerWithHeight>
+    <StorybookHeading>100% by 30%</StorybookHeading>
+    <Image
+      src="/placeholder-3x2.png"
+      alt="Example Image"
+      width="100%"
+      height="30%"
+      placeholderIcon
+    />
+  </ContainerWithHeight>
+);
+StoryFixedHeightAndWidthAsPropsInPercentage.storyName =
+  'fixed-height-and-width-in-%-via-props';
+StoryFixedHeightAndWidthAsPropsInPercentage.parameters = {...parameters};
+
 export const StoryFixedHeightAndWidthInPx = () => (
   <Container>
     <StorybookHeading>300px by 200px</StorybookHeading>
@@ -37,7 +69,8 @@ export const StoryFixedHeightAndWidthInPx = () => (
     />
   </Container>
 );
-StoryFixedHeightAndWidthInPx.storyName = 'fixed height and width in px';
+StoryFixedHeightAndWidthInPx.storyName =
+  'fixed-height-and-width-in-px-via-overrides';
 StoryFixedHeightAndWidthInPx.parameters = {...parameters};
 
 export const StoryFixedHeightAndWidthIn = () => (
@@ -51,7 +84,7 @@ export const StoryFixedHeightAndWidthIn = () => (
     />
   </ContainerWithHeight>
 );
-StoryFixedHeightAndWidthIn.storyName = 'fixed height and width in %';
+StoryFixedHeightAndWidthIn.storyName = 'fixed-height-and-width-in-%-via-props';
 StoryFixedHeightAndWidthIn.parameters = {...parameters};
 
 export const StoryFixedWidthAndAspectRatio = () => (
@@ -234,7 +267,7 @@ StoryInvalidImgWithCustomPlaceholderIconOverrideSize.storyName =
 
 export const StoryLazyLoading = () => {
   const getImages = (num: number) => {
-    const images = [];
+    const images: React.ReactNode[] = [];
     for (let i = 1; i <= num; i++) {
       const width = 400 + i;
       images.push(

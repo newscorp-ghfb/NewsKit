@@ -7,17 +7,20 @@ import {handleResponsiveProp} from '../utils/style/getters';
 import {ImageCommonProps} from './types';
 
 export const getResponsiveAspectRatioFromProps = (
-  {overrides, ...props}: ImageCommonProps & ThemeProp,
+  {
+    width: propWidth,
+    height: propHeight,
+    overrides,
+    ...props
+  }: ImageCommonProps & ThemeProp,
   handler: (values: {
     width: string;
     height: string;
     paddingTop: string;
   }) => string | CSSObject,
 ): string | CSSObject => {
-  /* istanbul ignore next */
-  const overridesWidth = overrides?.width;
-  /* istanbul ignore next */
-  const overridesHeight = overrides?.height;
+  const imgWidth = propWidth || overrides?.width;
+  const imgHeight = propHeight || overrides?.height;
 
   return handleResponsiveProp(
     {
@@ -43,8 +46,8 @@ export const getResponsiveAspectRatioFromProps = (
       return handler(responsiveProps);
     },
   )({
-    width: overridesWidth,
-    height: overridesHeight,
+    width: imgWidth,
+    height: imgHeight,
     ...props,
   } as ThemeProp);
 };
