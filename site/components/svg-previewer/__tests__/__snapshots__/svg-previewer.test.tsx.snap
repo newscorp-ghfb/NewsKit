@@ -2187,10 +2187,6 @@ Object {
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-<<<<<<< HEAD
-=======
-  z-index: 1;
->>>>>>> main
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
