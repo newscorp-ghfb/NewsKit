@@ -34,7 +34,7 @@ const SwitchTrackContents = (props: BaseSwitchIconProps) => {
         state={state}
         size={size}
         overrides={overrides}
-        justifyContent="start"
+        justifyContent="flex-start"
       >
         {OnIcon && <OnIcon />}
       </StyledTrackIcon>
@@ -42,7 +42,7 @@ const SwitchTrackContents = (props: BaseSwitchIconProps) => {
         state={state}
         size={size}
         overrides={overrides}
-        justifyContent="end"
+        justifyContent="flex-end"
       >
         {OffIcon && <OffIcon />}
       </StyledTrackIcon>
