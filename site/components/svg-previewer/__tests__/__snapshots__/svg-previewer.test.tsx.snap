@@ -961,7 +961,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-22-toggle-button"
+            id="downshift-27-toggle-button"
             type="button"
             value="Patterns Theme"
           >
@@ -1102,7 +1102,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-27-toggle-button"
+            id="downshift-33-toggle-button"
             type="button"
             value="0"
           >
@@ -2188,12 +2188,9 @@ Object {
   box-sizing: border-box;
   outline: none;
   z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #F0F1F3;
   border-radius: 4px;
@@ -2392,7 +2389,7 @@ Object {
           data-testid="select-panel"
           id="downshift-0-menu"
           role="listbox"
-          style="transform: translate3d(0px, 0px, 0);"
+          style="top: 0px; left: 0px; position: absolute;"
           tabindex="-1"
         />
       </div>
@@ -4367,7 +4364,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-4-toggle-button"
+            id="downshift-5-toggle-button"
             type="button"
             value="Docs Theme"
           >
@@ -4508,7 +4505,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-9-toggle-button"
+            id="downshift-11-toggle-button"
             type="button"
             value="0"
           >
