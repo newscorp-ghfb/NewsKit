@@ -366,8 +366,20 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Character count',
-          description:
-            'Text Areas can use the character count component which lets users know how much text they can enter, displaying the number of characters available as a user types. The character limit is configurable.',
+          description: (
+            <>
+              Text Areas can use{' '}
+              <Link
+                href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2470-character-count-documentation/components/character-count/"
+                target="_blank"
+              >
+                the character count component
+              </Link>{' '}
+              which lets users know how much text they can enter, displaying the
+              number of characters available as a user types. The character
+              limit is configurable.
+            </>
+          ),
           media: getIllustrationComponent(
             'components/text-area/options/character-count',
           ),
@@ -671,10 +683,10 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the text area component.',
+      introduction: 'Here’s how and when to use the text area:',
       cards: [
         {
+          title: 'Do use propotional heights',
           description: (
             <>
               The height of the text area input container should be proportional
@@ -686,6 +698,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/text-area/usage/do-01'),
         },
         {
+          title: "Don't use text areas for single line inputs",
           description: (
             <>
               Avoid using text areas if you need to let users enter shorter
@@ -698,30 +711,22 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/text-area/usage/dont-01'),
         },
         {
+          title: 'Do allow users to copy and paste text',
           description:
-            'Users should have the ability to copy and paste information into the text area input container.',
+            'Allow users to copy and paste text into the text area input container.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/text-area/usage/do-02'),
         },
         {
+          title:
+            "Don't use text areas to capture multiple pieces of information",
           description:
             'Avoid using text areas to capture multiple pieces of information from users, as this increases cognitive load. Instead, consider using multiple text areas, or text fields.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/text-area/usage/dont-02'),
         },
         {
-          description:
-            'Swap assistive text with error text, or character count as required. Once the input is valid then the assistive text or character count is then shown again.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-area/usage/do-03'),
-        },
-        {
-          description:
-            'Avoid limiting the number of characters users can enter unless there is a specific requirement for doing so.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-area/usage/dont-03'),
-        },
-        {
+          title: 'Do provide a label for context',
           description: (
             <>
               Text areas should have a{' '}
@@ -730,7 +735,14 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-area/usage/do-04'),
+          media: getIllustrationComponent('components/text-area/usage/do-03'),
+        },
+        {
+          title: "Don't block a user from entering information",
+          description:
+            'Avoid limiting the number of characters users can enter unless there is a specific requirement for doing so.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/text-area/usage/dont-03'),
         },
       ],
     }}

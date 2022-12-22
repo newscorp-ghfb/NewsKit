@@ -86,6 +86,9 @@ export const DownloadControls = ({
 
       const svgFileName = buildSvgFileName(baseSvgCodeGroup[selectedSvg].name);
 
+      // add id to svg content
+      svgCode = svgCode.replace('<svg ', '<svg id="nksvg" ');
+
       const fileBlob = new Blob([svgCode], {
         type: 'text/plain;charset=utf-8;',
       });
@@ -103,6 +106,9 @@ export const DownloadControls = ({
       let figmaSvgCopy = svg.figmaSvg;
       figmaSvgCopy = replaceFigmaIdWithVariable(figmaSvgCopy);
       figmaSvgCopy = replaceColorHashWithToken(figmaSvgCopy);
+
+      // add id to svg content
+      figmaSvgCopy = figmaSvgCopy.replace('<svg ', '<svg id="nksvg" ');
 
       const svgFileName = buildSvgFileName(svg.name);
       zip.file(`${svgFileName}.svg`, figmaSvgCopy);

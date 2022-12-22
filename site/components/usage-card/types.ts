@@ -8,6 +8,7 @@ export interface KindConfig {
 }
 
 export interface UsageCardProps extends Omit<CardProps, 'children'> {
+  title?: string;
   description?: string | React.ReactElement;
   kind?: UsageKind;
 }

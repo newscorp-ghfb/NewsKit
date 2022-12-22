@@ -153,7 +153,18 @@ export const StyledUl = styled.ul<
   list-style-type: none;
   margin: 0;
   padding: 0;
-  ${logicalProps()}
+
+  ${({vertical}) =>
+    getStylePreset(
+      `menuSubItem.${vertical ? 'vertical' : 'horizontal'}.list`,
+      'list',
+    )};
+
+  ${({vertical}) =>
+    logicalProps(
+      `menuSubItem.${vertical ? 'vertical' : 'horizontal'}.list`,
+      'list',
+    )};
 
   ${({vertical}) =>
     vertical

@@ -24,6 +24,7 @@ const dependenciesNotToBeIncluded = [
   'jszip',
   'file-saver',
   'isomorphic-dompurify',
+  'dotenv',
   '@storybook/react',
   '@babel/runtime-corejs3',
   'semver',
