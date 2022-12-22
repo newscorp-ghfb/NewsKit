@@ -73,19 +73,25 @@ const Index = ({
             overrides={{
               title: {typographyPreset: 'editorialHeadline060'},
               description: {typographyPreset: 'editorialSubheadline010'},
+              button: {
+                paddingInline: 'space000',
+                stylePreset: 'linkStandaloneInversePersistent',
+              },
             }}
             buttonIcon={<IconFilledLaunch />}
             buttonLabel={content.hero_card_link_text}
             buttonHref={content.hero_card_link}
-            buttonOverrides={{
-              paddingInline: 'space000',
-              typographyPreset: 'utilityButton020',
-            }}
           />
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />
         </GridLayout>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        />
         <GridLayout
           overrides={{
             ...GRID_SECTION_OVERRIDES,
@@ -108,13 +114,13 @@ const Index = ({
             overrides={{
               title: {typographyPreset: 'editorialHeadline060'},
               description: {typographyPreset: 'editorialSubheadline010'},
+              button: {
+                paddingInline: 'space000',
+                stylePreset: 'linkStandaloneInversePersistent',
+              },
             }}
             buttonLabel="Start contributing"
             buttonHref="/about/contribute"
-            buttonOverrides={{
-              paddingInline: 'space000',
-              typographyPreset: 'utilityButton020',
-            }}
           />
         </GridLayout>
         <GridLayout

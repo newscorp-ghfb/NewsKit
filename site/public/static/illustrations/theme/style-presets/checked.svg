@@ -1,1 +1,26 @@
-<svg id="theme-style-presets-checked" style="width: 100%; height: 100%" width="1000" height="1001" viewBox="0 0 1000 1001" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0"><rect style="fill:var(--color-illustrationBackground020)" y="0.34375" width="1000" height="1000" rx="22"></rect><path style="fill:var(--color-interactiveInput040)" d="M215 295C215 250.817 250.817 215 295 215H704.186C748.368 215 784.186 250.817 784.186 295V704.186C784.186 748.368 748.368 784.186 704.186 784.186H295C250.817 784.186 215 748.368 215 704.186V295Z"></path><path style="fill:var(--color-white)" d="M428.375 598.364L329.511 499.5L295.845 532.929L428.375 665.459L712.875 380.959L679.446 347.53L428.375 598.364Z"></path></svg>
+<svg
+  id="nksvg"
+  style="width: 100%; height: 100%"
+  width="1000"
+  height="1001"
+  viewBox="0 0 1000 1001"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="css-0"
+>
+  <rect
+    style="fill: var(--color-illustrationBackground020)"
+    y="0.34375"
+    width="1000"
+    height="1000"
+    rx="22"
+  ></rect>
+  <path
+    style="fill: var(--color-interactiveInput040)"
+    d="M215 295C215 250.817 250.817 215 295 215H704.186C748.368 215 784.186 250.817 784.186 295V704.186C784.186 748.368 748.368 784.186 704.186 784.186H295C250.817 784.186 215 748.368 215 704.186V295Z"
+  ></path>
+  <path
+    style="fill: var(--color-white)"
+    d="M428.375 598.364L329.511 499.5L295.845 532.929L428.375 665.459L712.875 380.959L679.446 347.53L428.375 598.364Z"
+  ></path>
+</svg>
