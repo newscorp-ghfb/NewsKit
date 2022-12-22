@@ -21,6 +21,7 @@ const DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)';
 const STORAGE_KEY_NAME = 'newskit-docs-theme';
 const docsLightThemeCompiled = compileTheme(docsThemeLight);
 const docsDarkThemeCompiled = compileTheme(docsThemeDark);
+
 interface Props {
   Component: React.ReactNode;
   pageProps: unknown;

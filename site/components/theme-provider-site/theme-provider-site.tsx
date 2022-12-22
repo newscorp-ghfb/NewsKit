@@ -16,7 +16,6 @@ type FoundationKey = keyof Omit<
   | 'transitionPresets'
   | 'componentDefaults'
   | 'icons'
-  | 'fonts'
 >;
 
 const StyledCSSTheme = styled.div`
@@ -29,6 +28,7 @@ const StyledCSSTheme = styled.div`
       'shadows',
       'sizing',
       'spacePresets',
+      'fonts',
     ] as FoundationKey[];
 
     const cssValue = foundationsList
