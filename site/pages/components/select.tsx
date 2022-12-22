@@ -199,7 +199,7 @@ const commonOverridesRows = [
     type: 'layer | string',
     default: 'layer',
     description:
-      'If provided, this overrides the zIndex of the Modal. When set to "layer" the panel renders in LayerOrganizer ',
+      'If provided, this overrides the zIndex of the select panel. When set to "layer" the panel renders in LayerOrganizer.',
   },
   {
     attribute: 'modal.panel.width',
