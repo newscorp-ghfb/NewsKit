@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {GridLayout} from 'newskit';
-import {ReleasesPageProps} from '../utils/release-notes/types';
+import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
   Hero,
@@ -144,10 +144,20 @@ export default Index;
 // This function is called at build time and the response is passed to the page
 // component as props.
 export async function getStaticProps() {
-  const [releases, data] = await Promise.all([
-    fetchGitHubReleases(4),
+  let releases: Release[] = [];
+  const [releasesOrError, data] = await Promise.all([
+    fetchGitHubReleases(1),
     getSheets('Homepage'),
   ]);
+  // Can return a rate limiting error object from github immediately after a load test
+  if (!releasesOrError.length) {
+    console.error(
+      'Unexpected response from github',
+      JSON.stringify(releasesOrError),
+    );
+  } else {
+    releases = [];
+  }
 
   const content = {...heroCardFallbackContent, ...formatSheetData(data)};
   return {props: {releases, content}};

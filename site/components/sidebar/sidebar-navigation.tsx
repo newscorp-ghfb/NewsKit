@@ -6,7 +6,7 @@ import {
   MenuDivider,
   MenuItem,
 } from 'newskit';
-import LinkNext from 'next/link';
+import NextLink from 'next/link';
 import {useRouter} from 'next/router';
 import {routes} from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
@@ -29,7 +29,7 @@ const MenuTitleLinks: React.FC<PageLinkProps> = ({
   });
 
   return (
-    <LinkNext href={href} passHref>
+    <NextLink legacyBehavior href={href} passHref>
       <MenuItem
         href={href}
         data-testid={page}
@@ -45,7 +45,7 @@ const MenuTitleLinks: React.FC<PageLinkProps> = ({
       >
         {children} <span ref={ref} />
       </MenuItem>
-    </LinkNext>
+    </NextLink>
   );
 };
 export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
