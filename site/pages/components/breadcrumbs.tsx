@@ -216,7 +216,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               By default, the current page breadcrumb item is displayed as
-              non-interactive and is set via the
+              non-interactive and is set via the{' '}
               <InlineCode>selected</InlineCode> prop.
             </>
           ),
@@ -585,7 +585,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="LinkStandalone info"
+                aria-label="breadcrumbspropsinfo"
                 overrides={{
                   marginBlockStart: 'space030',
                 }}
@@ -602,7 +602,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 icon={infoIcon}
                 role="region"
-                aria-label="LinkStandalone info"
+                aria-label="breadcrumbiteminfo"
                 overrides={{
                   marginBlockStart: 'space030',
                 }}
