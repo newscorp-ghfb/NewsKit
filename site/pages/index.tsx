@@ -156,7 +156,7 @@ export async function getStaticProps() {
       JSON.stringify(releasesOrError),
     );
   } else {
-    releases = [];
+    releases = releasesOrError;
   }
 
   const content = {...heroCardFallbackContent, ...formatSheetData(data)};
