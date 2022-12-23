@@ -56,10 +56,7 @@ describe('Documentation Site - playground', () => {
   });
 
   it('Flag playground should update the content', () => {
-    cy.get('input[name="Content"]')
-      .debug()
-      .clear({force: true})
-      .type('Chelsea');
+    cy.get('input[name="Content"]').clear({force: true}).type('Chelsea');
     cy.get(`${playgroundElement} [data-testid="flag"]`).contains('Chelsea');
   });
 });
