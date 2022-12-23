@@ -12,10 +12,7 @@ import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
 import {PageLoadInstrumentation} from '../components/page-load-instrumentation';
 import {ThemeMode} from '../context';
 import {docsThemeLight, docsThemeDark} from '../theme/doc-theme';
-import {
-  ThemeProviderSite,
-  ThemeSwitcher,
-} from '../components/theme-provider-site';
+import {ThemeSwitcher} from '../components/theme-provider-site';
 
 const DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)';
 const STORAGE_KEY_NAME = 'newskit-docs-theme';
@@ -116,12 +113,22 @@ export default class MyApp extends App<Props, State> {
     document.body.style.backgroundColor = theme.colors.interfaceBackground;
   };
 
+  // eslint-disable-next-line class-methods-use-this
   toggleTheme() {
-    const currentMode = (this.state as State).themeMode;
-    if (currentMode === 'light') {
-      this.setTheme('dark');
+    // const currentMode = (this.state as State).themeMode;
+    // if (currentMode === 'light') {
+    //   this.setTheme('dark');
+    // } else {
+    //   this.setTheme('light');
+    // }
+
+    const $themeSelectorEl = document.querySelector('#theme-switcher');
+    if ($themeSelectorEl?.classList.contains('docs-theme-light')) {
+      $themeSelectorEl?.classList.remove('docs-theme-light');
+      $themeSelectorEl?.classList.add('docs-theme-dark');
     } else {
-      this.setTheme('light');
+      $themeSelectorEl?.classList.remove('docs-theme-dark');
+      $themeSelectorEl?.classList.add('docs-theme-light');
     }
   }
 
@@ -158,21 +165,21 @@ export default class MyApp extends App<Props, State> {
         >
           <ThemeMode.Provider value={themeMode}>
             <PageLoadInstrumentation />
-            <ThemeProviderSite theme={theme}>
+            <ThemeSwitcher
+              id="theme-switcher"
+              className="docs-theme-light"
+              themes={[docsDarkThemeCompiled, docsLightThemeCompiled]}
+            >
               <Component
                 {...pageProps}
                 path={path}
                 toggleTheme={this.toggleTheme}
                 themeMode={themeMode}
               />
-            </ThemeProviderSite>
+            </ThemeSwitcher>
           </ThemeMode.Provider>
-          <ThemeSwitcher
-            id="theme-switcher"
-            themes={[docsDarkThemeCompiled, docsLightThemeCompiled]}
-          >
-            <Button>Hello themed button</Button>
-          </ThemeSwitcher>
+
+          <Button>Hello themed button</Button>
         </NewsKitProvider>
       </>
     );

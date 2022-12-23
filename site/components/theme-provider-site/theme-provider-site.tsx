@@ -18,37 +18,6 @@ type FoundationKey = keyof Omit<
   | 'icons'
 >;
 
-const StyledCSSTheme = styled.div`
-  ${({theme}) => {
-    const foundationsList = [
-      'borders',
-      'colors',
-      'overlays',
-      'motions',
-      'shadows',
-      'sizing',
-      'spacePresets',
-      'fonts',
-    ] as FoundationKey[];
-
-    const cssValue = foundationsList
-      .map(themeKey => {
-        const tokensObject = theme[themeKey];
-        const tokensNames = Object.keys(tokensObject);
-        const prefix = themeKey === 'colors' ? 'color-' : '';
-        return tokensNames
-          .map(
-            tokenName => `--${prefix}${tokenName}: ${tokensObject[tokenName]};`,
-          )
-          .join('');
-      })
-      .join('');
-    return css`
-      ${cssValue}
-    `;
-  }}
-`;
-
 export const generateCSSVars = (theme: Theme) => {
   const foundationsList = [
     'borders',
@@ -58,6 +27,7 @@ export const generateCSSVars = (theme: Theme) => {
     'shadows',
     'sizing',
     'spacePresets',
+    'fonts',
   ] as FoundationKey[];
 
   const cssValue = foundationsList
@@ -66,9 +36,12 @@ export const generateCSSVars = (theme: Theme) => {
       const tokensNames = Object.keys(tokensObject);
       const prefix = themeKey === 'colors' ? 'color-' : '';
       return tokensNames
-        .map(
-          tokenName => `--${prefix}${tokenName}: ${tokensObject[tokenName]};`,
-        )
+        .map(tokenName => {
+          if (tokenName.startsWith('fontFamily')) {
+            return `--${prefix}${tokenName}: ${tokensObject[tokenName].fontFamily};`;
+          }
+          return `--${prefix}${tokenName}: ${tokensObject[tokenName]};`;
+        })
         .join('');
     })
     .join('');
@@ -77,6 +50,10 @@ export const generateCSSVars = (theme: Theme) => {
     ${cssValue}
   `;
 };
+
+const StyledCSSTheme = styled.div`
+  ${({theme}) => generateCSSVars(theme)}
+`;
 
 export const ThemeProviderSite = ({children, ...rest}: ThemeProviderProps) => (
   <ThemeProvider {...rest}>

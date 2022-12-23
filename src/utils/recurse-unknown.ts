@@ -35,7 +35,7 @@ const parseAndGet = (
   const tokens = parseTokens(value);
   if (tokens.length) {
     return tokens.reduce((result: any, tokenPath) => {
-      let tokenValue = get(theme, tokenPath);
+      const tokenValue = get(theme, tokenPath);
       if (typeof tokenValue === 'undefined') {
         errorLogger(
           `Theme token "${tokenPath}" was not found when compiling theme!`,
@@ -43,15 +43,21 @@ const parseAndGet = (
       } else {
         // We recurse down with that token value to support things like colors
         // e.g. (border color = interactiveNegative010 = red010 = #ff0000).
-        tokenValue = parseAndGet(theme, tokenValue, errorLogger, [
-          tokenPath,
-          ...stack,
-        ]);
+        // tokenValue = parseAndGet(theme, tokenValue, errorLogger, [
+        //   tokenPath,
+        //   ...stack,
+        // ]);
       }
+
+      const [tokenType, tokenName] = tokenPath.split('.');
+      const cssVarName =
+        tokenType === 'colors' ? `color-${tokenName}` : tokenName;
+      const cssVar = `var(--${cssVarName})`;
+
       return tokens.length > 1
-        ? result.replace(`{{${tokenPath}}}`, tokenValue as string)
+        ? result.replace(`{{${tokenPath}}}`, cssVar)
         : // eslint-disable-next-line @typescript-eslint/no-use-before-define
-          recurseUnknown(theme, tokenValue, errorLogger);
+          recurseUnknown(theme, cssVar, errorLogger);
     }, value as string);
   }
 

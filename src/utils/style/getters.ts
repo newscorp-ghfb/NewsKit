@@ -34,6 +34,12 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 
     const {fontSize, lineHeight, fontFamily, fontWeight} = typographyPreset;
 
+    // can't apply crop when using css vars;
+    // TODO: this shoud use flags.
+    if (fontFamily.includes('var(')) {
+      return typographyPreset;
+    }
+
     //* * Following code to be removed once only Font Metrics will be supported by newsKit
     const [fontStackPeek] = fontFamily.split(',');
     const fontFamilyObject: FontConfig | undefined = Object.values(

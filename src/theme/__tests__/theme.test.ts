@@ -6,6 +6,42 @@ import {StylePreset} from '../presets/types';
 import {requireContext} from '../../test/require-context';
 
 describe('NewsKit Light theme', () => {
+  it.only('test css vars', () => {
+    const theme = {
+      name: 'unit-test',
+      colors: {
+        amber010: '#FFEDE1',
+        primary: '{{colors.amber010}}',
+      },
+      stylePresets: {
+        preset: {
+          base: {
+            color: '{{colors.primary}}',
+          },
+        },
+      },
+    };
+
+    // @ts-ignore
+    const compiled = compileTheme(theme);
+    expect(compiled).toEqual({
+      name: 'unit-test',
+      colors: {
+        amber010: '#FFEDE1',
+        primary: 'var(--color-amber010)',
+      },
+      compiled: true,
+      icons: {},
+      stylePresets: {
+        preset: {
+          base: {
+            color: 'var(--color-primary)',
+          },
+        },
+      },
+    });
+  });
+
   it('should compile without errors', () => {
     const errorLogger = jest.fn();
 
