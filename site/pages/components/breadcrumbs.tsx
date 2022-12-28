@@ -51,7 +51,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
     componentDefaultsKey="breadcrumbs"
     meta={{
       status: MetaStatus.Supported,
-      introduced: 'v6.5.2',
+      introduced: 'v6.6.0',
       introducedLink: false,
       storybookId: 'components-breadcrumbs--story-default',
       codeUrl:
@@ -99,12 +99,12 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Breadcrumbs',
           description: 'Combines a number of ‘breadcrumb items’ and separators',
-          component: ['Ordered list'],
+          component: 'Ordered List',
         },
         {
           name: 'Breadcrumb item',
           description: 'Includes a label and an icon',
-          component: ['Button (as a link)'],
+          component: 'Button',
         },
         {
           name: 'Separator',
@@ -472,13 +472,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
               description: (
                 <>
                   If provided, shows the last trailing separator in a breadcrumb
-                  group. e.g.{' '}
-                  <Link
-                    href="https://baseweb.design/components/breadcrumbs/#breadcrumbs-with-pseudo-separators"
-                    target="_blank"
-                  >
-                    https://baseweb.design/components/breadcrumbs/#breadcrumbs-with-pseudo-separators
-                  </Link>
+                  group.
                 </>
               ),
             },
