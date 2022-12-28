@@ -4,10 +4,9 @@ import {
   InlineMessage,
   toNewsKitIcon,
   Breadcrumbs,
-  styled,
-  BreadcrumbItem,
   BreadcrumbsProps,
 } from 'newskit';
+
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {LayoutProps} from '../../components/layout';
@@ -23,13 +22,6 @@ import {
   commonLogicalProps,
 } from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
-
-const PlaygroundContainer = styled.div`
-  display: flex;
-  & > nav {
-    width: 500px;
-  }
-`;
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -70,21 +62,8 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the breadcrumbs component variations, and configuration options.',
       playground: {
         componentName: 'Breadcrumbs',
-        component: (props: BreadcrumbsProps) => (
-          <PlaygroundContainer>
-            <Breadcrumbs {...props}>
-              <BreadcrumbItem href="http://newskit.co.uk">
-                Breadcrumb item
-              </BreadcrumbItem>
-              <BreadcrumbItem href="http://newskit.co.uk">
-                Breadcrumb item
-              </BreadcrumbItem>
-              <BreadcrumbItem href="http://newskit.co.uk">
-                Breadcrumb item{' '}
-              </BreadcrumbItem>
-            </Breadcrumbs>
-          </PlaygroundContainer>
-        ),
+        component: (props: BreadcrumbsProps) => <Breadcrumbs {...props} />,
+
         knobs: [
           {
             name: 'Size',
@@ -104,6 +83,11 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
                 value: 'large',
               },
             ],
+          },
+          {
+            name: 'Breadcrumbs Items',
+            propName: 'BreadcrumbItem',
+            value: ['Home', 'Sport', 'Football'],
           },
         ],
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
