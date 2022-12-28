@@ -6,8 +6,8 @@ interface WhatsNewProps {
   releases: Release[];
 }
 
-export const WhatsNew = ({releases}: WhatsNewProps) => {
-  const [latestRelease] = releases;
+export const WhatsNew = ({releases = []}: WhatsNewProps) => {
+  const [latestRelease = {tag_name: ''}] = releases;
 
   return (
     <FeatureCard

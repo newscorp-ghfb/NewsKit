@@ -1,15 +1,21 @@
+/* eslint-disable global-require */
+import {useRouter} from 'next/router';
+import mockRouter from 'next-router-mock';
+import {renderHook} from '@testing-library/react-hooks';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
 } from '../../../utils/test-utils';
 import {SidebarNav} from '..';
 
-const useRouter = jest.spyOn(require('next/router'), 'useRouter');
-
 const scrollIntoViewMock = jest.fn();
 Element.prototype.scrollIntoView = scrollIntoViewMock;
 
-jest.mock('next/link', () => ({children}: any) => children);
+// Converted from jest.mock to next-router-mock to avoid "Error: NextRouter was not mounted"
+// This is needed for mocking useRouter under Next 13
+jest.mock('next/router', () => require('next-router-mock'));
+// This is needed for mocking 'next/link' reliably under Next 13
+jest.mock('next/dist/client/router', () => require('next-router-mock'));
 jest.mock('../../../routes', () => ({
   routes: [
     {
@@ -66,25 +72,27 @@ jest.mock('../../../routes', () => ({
 
 describe('Sidebar navigation', () => {
   test('should match snapshot with no active link', () => {
-    useRouter.mockImplementationOnce(() => ({pathname: '/'}));
-
+    mockRouter.setCurrentUrl('/');
     expect(renderToFragmentWithTheme(SidebarNav)).toMatchSnapshot();
   });
 
   test('should render only routes under current section', () => {
-    useRouter.mockImplementationOnce(() => ({pathname: '/group1'}));
-
+    mockRouter.setCurrentUrl('/group1');
+    const {result} = renderHook(() => useRouter());
+    expect(result.current).toMatchObject({asPath: '/group1'});
     expect(renderToFragmentWithTheme(SidebarNav)).toMatchSnapshot();
   });
 
   test('should match snapshot with active link', () => {
-    useRouter.mockImplementationOnce(() => ({pathname: '/group1/page1'}));
+    mockRouter.setCurrentUrl('/group1/page1');
+    const {result} = renderHook(() => useRouter());
+    expect(result.current).toMatchObject({asPath: '/group1/page1'});
     expect(renderToFragmentWithTheme(SidebarNav)).toMatchSnapshot();
   });
 
   test('should not invoke scrollIntoView when link is inactive', () => {
     jest.clearAllMocks();
-    useRouter.mockImplementationOnce(() => ({pathname: '/'}));
+    mockRouter.setCurrentUrl('/');
     renderWithTheme(SidebarNav);
     expect(scrollIntoViewMock).toHaveBeenCalledTimes(0);
   });

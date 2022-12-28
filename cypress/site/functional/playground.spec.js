@@ -5,6 +5,8 @@ const playgroundElement = '[data-testid="playground-element"]';
 describe('Documentation Site - playground', () => {
   before(() => {
     cy.mockConsentAndVisit('/components/tag');
+    // Hack for Next 13 - this could be removed AFTER upgrading Cypress to v.12
+    cy.get('section[id="interactive-demo"]').should('be.visible');
   });
 
   it('Tag playground should update the content', () => {
@@ -22,6 +24,8 @@ describe('Documentation Site - playground', () => {
 describe('Documentation Site - playground - Unordered List', () => {
   before(() => {
     cy.mockConsentAndVisit('/components/unordered-list');
+    // Hack for Next 13 - this could be removed AFTER upgrading Cypress to v.12
+    cy.get('section[id="interactive-demo"]').should('be.visible');
   });
 
   const ulArrayKnob = '[data-testid="array-knob-list-data"]';
@@ -47,6 +51,8 @@ describe('Documentation Site - playground - Unordered List', () => {
 describe('Documentation Site - playground', () => {
   before(() => {
     cy.mockConsentAndVisit('/components/flag');
+    // Hack for Next 13 - this could be removed AFTER upgrading Cypress to v.12
+    cy.get('section[id="interactive-demo"]').should('be.visible');
   });
 
   it('Flag playground should update the content', () => {

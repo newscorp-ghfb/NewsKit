@@ -18,7 +18,7 @@ import {
 } from 'newskit';
 import {Menu as FilledMenu} from '@emotion-icons/material/Menu';
 import {Close as FilledClose} from '@emotion-icons/material/Close';
-import LinkNext from 'next/link';
+import NextLink from 'next/link';
 import {NewsKitLogo} from './logo';
 import {ThemeSwitch} from './theme-switch';
 import {handleEnterKeyPress} from '../helpers/a11y';
@@ -122,7 +122,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
     const renderNavItems = (items: NavItemProps[], currentRoute: string) =>
       items.map(({title, id}) => (
         <React.Fragment key={id}>
-          <LinkNext href={id} passHref>
+          <NextLink legacyBehavior href={id} passHref>
             <MenuItem
               data-testid="styled-indicator"
               key={id}
@@ -139,7 +139,7 @@ const SiteHeader = React.forwardRef<HeaderRef, HeaderProps>(
             >
               {title}
             </MenuItem>
-          </LinkNext>
+          </NextLink>
         </React.Fragment>
       ));
 
