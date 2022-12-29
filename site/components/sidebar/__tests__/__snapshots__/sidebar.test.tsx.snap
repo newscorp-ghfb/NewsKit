@@ -3981,13 +3981,26 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-429:disabled {
   color: #C0C7CC;
+}
+
+.emotion-429::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-429::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <div
@@ -10496,13 +10509,26 @@ exports[`Sidebar renders correctly when open 1`] = `
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-429:disabled {
   color: #C0C7CC;
+}
+
+.emotion-429::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-429::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <div

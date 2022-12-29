@@ -1937,13 +1937,26 @@ Object {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
   color: #C0C7CC;
+}
+
+.emotion-26::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-26::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-27 {
@@ -2928,13 +2941,26 @@ Object {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
   color: #C0C7CC;
+}
+
+.emotion-26::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-26::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-27 {
@@ -3938,13 +3964,26 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
   color: #C0C7CC;
+}
+
+.emotion-26::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-26::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-27 {
