@@ -294,14 +294,14 @@ export const StoryRadioButtonOverrides = () => {
     spaceStack: 'space060',
     input: {
       stylePreset: 'customRadioInput',
-      size: '68px',
+      // size: '68px',
     },
     feedback: {
       size: '90px',
       stylePreset: 'customRadioFeedback',
     },
     label: {
-      typographyPreset: 'utilityHeading010',
+      typographyPreset: 'editorialHeadline080',
       stylePreset: 'inkSubtle',
     },
     icon: {
