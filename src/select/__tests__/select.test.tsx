@@ -456,6 +456,24 @@ describe('Select', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders Select with zIndex overrides', async () => {
+    const props = {
+      overrides: {
+        panel: {
+          zIndex: '20',
+        },
+      },
+      children: [
+        <SelectOption defaultSelected value="option 1" key="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentInBody(Select, props) as any;
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('virtualize long list', async () => {
     // MOCK offsetHeight since react-virtualize needs it in order to measure the elment height
     // if its not present ( set to 0 ) test will not work.

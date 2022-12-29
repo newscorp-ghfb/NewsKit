@@ -195,6 +195,13 @@ const commonOverridesRows = [
       'This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the end margin.',
   },
   {
+    attribute: 'panel.zIndex',
+    type: 'layer | string',
+    default: 'layer',
+    description:
+      'If provided, this overrides the zIndex of the select panel. When set to "layer" the panel renders in LayerOrganizer.',
+  },
+  {
     attribute: 'modal.panel.width',
     type: 'MQ<string>',
     default: '60vw',
