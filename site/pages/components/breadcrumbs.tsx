@@ -54,7 +54,6 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v6.6.0',
-      introducedLink: false,
       storybookId: 'components-breadcrumbs--story-default',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/breadcrumbs',
@@ -123,11 +122,11 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
             options: [
               {
                 label: 'true',
-                value: undefined,
+                value: 'showTrailingSeparator',
               },
               {
                 label: 'false',
-                value: 'showTrailingSeparator',
+                value: undefined,
                 isDefault: true,
               },
             ],
@@ -181,7 +180,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
               <br />
               <br />
               The last trailing separator can be set to be visible via the{' '}
-              <InlineCode>showTrailingSeparator prop.</InlineCode>
+              <InlineCode>showTrailingSeparator</InlineCode> prop.
             </>
           ),
           media: getIllustrationComponent(
