@@ -9,7 +9,11 @@ describe('404 page', () => {
   });
   it('should return to homepage when back link is clicked', () => {
     cy.visit('/abcde', {failOnStatusCode: false});
-    cy.get('[data-testid="back-link"]').click();
+    cy.get('[data-testid="back-link"]')
+      .should('have.attr', 'href', '/')
+      .should('have.text', 'Go back to the homepage');
+    cy.get('[data-testid="back-link"]').click({force: true});
+    // Go back to the homepage
     cy.url().should('eq', 'http://localhost:8081/');
   });
 });
