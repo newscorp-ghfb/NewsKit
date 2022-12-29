@@ -5,6 +5,7 @@ import {
   toNewsKitIcon,
   Breadcrumbs,
   BreadcrumbsProps,
+  BreadcrumbItem,
 } from 'newskit';
 
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
@@ -22,6 +23,7 @@ import {
   commonLogicalProps,
 } from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
+import {IconFilledStarOutline} from '../../../src/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -62,7 +64,19 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the breadcrumbs component variations, and configuration options.',
       playground: {
         componentName: 'Breadcrumbs',
-        component: (props: BreadcrumbsProps) => <Breadcrumbs {...props} />,
+        component: (props: BreadcrumbsProps) => (
+          <Breadcrumbs {...props}>
+            <BreadcrumbItem href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2538-breadcrumbs-documentation/">
+              Home{' '}
+            </BreadcrumbItem>
+            <BreadcrumbItem href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2538-breadcrumbs-documentation/">
+              Sport{' '}
+            </BreadcrumbItem>
+            <BreadcrumbItem href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2538-breadcrumbs-documentation/">
+              Football{' '}
+            </BreadcrumbItem>
+          </Breadcrumbs>
+        ),
 
         knobs: [
           {
@@ -85,9 +99,38 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
             ],
           },
           {
-            name: 'Breadcrumbs Items',
-            propName: 'BreadcrumbItem',
-            value: ['Home', 'Sport', 'Football'],
+            name: 'Separator',
+            propName: 'overrides',
+            options: [
+              {
+                label: 'Default',
+                value: {
+                  separator: undefined,
+                },
+                isDefault: true,
+              },
+              {
+                label: 'Icon',
+                value: {
+                  separator: IconFilledStarOutline,
+                },
+              },
+            ],
+          },
+          {
+            name: 'showTrailingSeparator',
+            propName: 'showTrailingSeparator',
+            options: [
+              {
+                label: 'true',
+                value: undefined,
+              },
+              {
+                label: 'false',
+                value: 'showTrailingSeparator',
+                isDefault: true,
+              },
+            ],
           },
         ],
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
