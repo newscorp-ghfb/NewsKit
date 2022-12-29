@@ -21,6 +21,8 @@ import {useVirtualizedList} from './use-virtualized-list';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {get} from '../utils/get';
 import {Layer} from '../layer';
+import {getToken} from '../utils/get-token';
+import {useTheme} from '../theme';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -236,6 +238,18 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       }
     }, [isOpen, update, refs.floating, refs.reference]);
 
+    const theme = useTheme();
+    const zIndex = getToken(
+      {theme, overrides},
+      `select.${size}.panel.zIndex`,
+      'panel.zIndex',
+      'sizing',
+    );
+
+    // by default the select panel renders in layer,
+    // however users can provider zIndex value so that change and adjust according to their use-case
+    const LayerElement = zIndex === 'layer' ? Layer : React.Fragment;
+
     return (
       <>
         <SelectButton
@@ -261,7 +275,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
-        <Layer>
+        <LayerElement>
           <SelectPanel
             isOpen={isOpen}
             overrides={overrides}
@@ -274,10 +288,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
             {...downshiftMenuPropsExceptRef}
             ref={downshiftMenuPropsRef}
             strategy={strategy}
+            zIndex={zIndex}
           >
             {optionsAsChildren}
           </SelectPanel>
-        </Layer>
+        </LayerElement>
       </>
     );
   },
