@@ -1,9 +1,9 @@
 import React from 'react';
 import {
+  Resolver,
   SubmitErrorHandler,
   SubmitHandler,
   UseFormReturn,
-  UseFormProps,
 } from 'react-hook-form';
 import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
@@ -25,7 +25,7 @@ export interface FormProps
   validationMode?: 'onBlur' | 'onSubmit';
   reValidationMode?: 'onBlur' | 'onSubmit';
   defaultValues?: Record<string, string>;
-  resolver?: UseFormProps['resolver'];
+  resolver?: Resolver;
 }
 
 export interface FormRef {
