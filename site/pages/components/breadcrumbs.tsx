@@ -65,13 +65,13 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
         componentName: 'Breadcrumbs',
         component: (props: BreadcrumbsProps) => (
           <Breadcrumbs {...props}>
-            <BreadcrumbItem href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2538-breadcrumbs-documentation/">
+            <BreadcrumbItem href="https://www.newskit.co.uk/">
               Home{' '}
             </BreadcrumbItem>
-            <BreadcrumbItem href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2538-breadcrumbs-documentation/">
+            <BreadcrumbItem href="https://www.newskit.co.uk/">
               Sport{' '}
             </BreadcrumbItem>
-            <BreadcrumbItem href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2538-breadcrumbs-documentation/">
+            <BreadcrumbItem href="https://www.newskit.co.uk/">
               Football{' '}
             </BreadcrumbItem>
           </Breadcrumbs>
@@ -396,21 +396,21 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
         tableRows: [
           {
             element: 'nav',
-            attribute: 'arialabel',
+            attribute: 'aria-label',
             value: 'breadcrumb',
             description:
               'Provides a label that describes the type of navigation provided in the nav element.',
           },
           {
             element: 'separator',
-            attribute: 'arialabel',
+            attribute: 'area-hidden',
             value: 'true',
             description:
               'Hides the separators between breadcrumb items so they are not announced by a screen reader or any other assistive technology.',
           },
           {
             element: 'breadcrumbs',
-            attribute: 'arialabel',
+            attribute: 'aria-current',
             value: 'page',
             description: (
               <>
@@ -529,12 +529,6 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
                 'If provided, overrides the stylePreset of the breadcrumbs.',
             },
             {
-              attribute: 'separator.stylePreset',
-              type: 'MQ<string>',
-              description:
-                'If provided, overrides the stylePreset of the breadcrumb separators.',
-            },
-            {
               attribute: 'separator',
               type: 'Override<NewskitIconProps>',
               default: 'chevron right',
@@ -542,9 +536,15 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the breadcrumb separator icons.',
             },
             {
+              attribute: 'separator.stylePreset',
+              type: 'MQ<string>',
+              description:
+                'If provided, overrides the stylePreset of the breadcrumb separators.',
+            },
+            {
               attribute: 'separator.paddingInline',
               type: 'MQ<string>',
-              default: 'paddingInline: space020',
+              default: 'space020',
               description:
                 'If provided, this overrides the space between the breadcrumb items and separators.',
             },
@@ -650,9 +650,9 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
               attribute: 'typographyPreset',
               type: 'MQ<string>',
               default: [
-                'small - iconSize010',
-                'medium - iconSize020',
-                'large - iconSize030',
+                'small - utilityButton010',
+                'medium - utilityButton020',
+                'large - utilityButton030',
               ],
               description:
                 'If provided, this overrides the breadcrumb item typography preset.',
