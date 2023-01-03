@@ -15,6 +15,7 @@ const OVERRIDES = {
   utils: null,
   visibility: 'grid/visibility.tsx',
   'audio-player': 'audio-player-composable/audio-player-composable.tsx',
+  link: 'link/internal-link.tsx',
 };
 
 // Search component page files for the MetaStatus enum.
