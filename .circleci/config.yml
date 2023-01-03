@@ -528,6 +528,9 @@ jobs:
           command: make unit_test_docs
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - run:
+          name: Check component statuses match code tags
+          command: yarn test:comp-statuses
       - store_test_results:
           path: ./reports/junit/
       - store_artifacts:
