@@ -136,6 +136,56 @@ export const routes = [
           },
         ],
       },
+      {
+        title: 'Accessibility',
+        id: '/getting-started/accessibility',
+        subNav: [
+          {
+            title: 'Getting started',
+            page: true,
+            id: '/getting-started',
+            description: 'Equal access for everyone.',
+            illustration: 'guides/engineering-overview/hero',
+            cardTitle: 'Engineering overview',
+          },
+          {
+            title: 'Design',
+            page: true,
+            id: '/getting-started/code/engineering-quickstart',
+            description:
+              'Guides to start building web applications with NewsKit.',
+            illustration: 'guides/engineering-quickstart/hero',
+            cardTitle: 'Engineering quickstart',
+          },
+          {
+            title: 'Code',
+            page: true,
+            id: '/getting-started/code/grid-layout-step-by-step',
+            description:
+              'The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to react props.',
+            illustration: 'guides/grid-layout-guide/hero',
+            cardTitle: 'Grid Layout step-by-step',
+          },
+          {
+            title: 'Write',
+            page: true,
+            id: '/getting-started/code/form-step-by-step',
+            description:
+              'Step-by-step guide for engineers to build a form using the form subcomponents.',
+            illustration: 'guides/form-guide/hero',
+            cardTitle: 'Form step-by-step',
+          },
+          {
+            title: 'Test',
+            page: true,
+            id: '/getting-started/code/testing',
+            description:
+              'NewsKit uses Jest and React Testing Library for unit testing.',
+            illustration: 'guides/overview/testing',
+            cardTitle: 'Testing',
+          },
+        ],
+      },
     ],
   },
   {
