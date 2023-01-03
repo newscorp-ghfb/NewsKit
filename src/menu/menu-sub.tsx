@@ -1,4 +1,5 @@
-import React, {useEffect, useId} from 'react';
+import React, {useEffect} from 'react';
+import {useId} from '@floating-ui/react-dom-interactions';
 import {MenuContextProvider, useMenuContext} from './context';
 import {MenuSubIconProps, MenuSubProps} from './types';
 import {StyledButton, StyledMenuItem, StyledUl} from './styled';
