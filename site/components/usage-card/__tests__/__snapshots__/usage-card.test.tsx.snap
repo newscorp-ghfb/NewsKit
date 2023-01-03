@@ -154,8 +154,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 .emotion-11 {
   font-family: "Poppins",sans-serif;
-  font-size: 24px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 22.5px;
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;
@@ -439,8 +439,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 
 .emotion-11 {
   font-family: "Poppins",sans-serif;
-  font-size: 24px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 22.5px;
   font-weight: 700;
   letter-spacing: 0;
   padding: 0.5px 0px;

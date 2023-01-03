@@ -13,7 +13,7 @@ const Link = ({
   href,
   ...props
 }: NextLinkProps & {children: React.ReactNode; href: string}) => (
-  <NextLink href={href} as={as} passHref>
+  <NextLink legacyBehavior href={href} as={as} passHref>
     <StyledLink href={href} {...props} />
   </NextLink>
 );

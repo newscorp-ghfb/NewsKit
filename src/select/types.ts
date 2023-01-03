@@ -45,6 +45,7 @@ export interface SelectPanelOverrides extends LogicalProps {
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
    */
   spaceStack?: MQ<string>;
+  zIndex?: 'layer' | string;
 }
 
 export type SelectPropsOverrides = {

@@ -12,7 +12,11 @@ describe('Documentation Site - search component', () => {
     it('should open search', () => {
       cy.get('.DocSearch-Container').should('not.exist');
       cy.get(`${DESKTOP_NAV} ${SEARCH_BTN_ICON}`).should('not.be.visible');
-      cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
+      cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).should('be.visible');
+      // Hack for Next 13 - this could be removed AFTER upgrading Cypress to v.12
+      // Now failing with "cy.click() failed because this element is detached from the DOM"
+      // cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
+      cy.contains('Search').click({force: true});
       cy.get('.DocSearch-Container').should('exist');
     });
   });
@@ -23,14 +27,18 @@ describe('Documentation Site - search component', () => {
     it('should open search', () => {
       cy.get('.DocSearch-Container').should('not.exist');
       cy.get(`${MOBILE_NAV} ${SEARCH_BTN}`).should('not.be.visible');
-      cy.get(`${MOBILE_NAV} ${SEARCH_BTN_ICON}`).click();
+      cy.get(`${MOBILE_NAV} ${SEARCH_BTN_ICON}`).should('be.visible');
+      cy.get(`${MOBILE_NAV} ${SEARCH_BTN_ICON}`).click({force: true});
       cy.get('.DocSearch-Container').should('exist');
     });
   });
 
   describe('NewStartScreen', () => {
     it('should hide when the user inputs a search term and display when the search term is deleted', () => {
-      cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
+      cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).should('be.visible');
+      // Hack for Next 13 - this could be removed AFTER upgrading Cypress to v.12
+      // cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
+      cy.contains('Search').click({force: true});
       cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').and('be.visible');
       cy.get('#docsearch-input').type('Search term');
       cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').should(
@@ -41,10 +49,15 @@ describe('Documentation Site - search component', () => {
     });
 
     it('should show when the modal is closed and reopens and should not be duplicated', () => {
-      cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
+      cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).should('be.visible');
+      // Hack for Next 13 - this could be removed AFTER upgrading Cypress to v.12
+      // cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
+      cy.contains('Search').click({force: true});
       cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').and('be.visible');
       cy.get('#docsearch-input').type('{esc}');
-      cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
+      // Hack for Next 13 - this could be removed AFTER upgrading Cypress to v.12
+      // cy.get(`${DESKTOP_NAV} ${SEARCH_BTN}`).click();
+      cy.contains('Search').click({force: true});
       cy.get('.DocSearch-Modal .DocSearch-NewStartScreen').should(
         'have.length',
         1,
