@@ -88,7 +88,11 @@ const Custom404 = ({path, ...layoutProps}: LayoutProps) => (
               We can&apos;t seem to find what you&apos;re looking for. If you
               typed in the website address, please check it and try again.
             </TextBlock>
-            <Button overrides={{marginBlockStart: 'space080'}} href="/">
+            <Button
+              overrides={{marginBlockStart: 'space080'}}
+              href="/"
+              data-testid="back-link"
+            >
               <IconFilledKeyboardArrowLeft /> Back to the homepage
             </Button>
           </GridLayoutItem>
