@@ -62,6 +62,7 @@ export interface SelectProps extends CommonInputProps, EventData {
   overrides?: SelectPropsOverrides;
   virtualized?: number;
   onOpenChange?: (value: boolean) => void;
+  controlled?: boolean;
 }
 
 export interface SelectOptionProps {
