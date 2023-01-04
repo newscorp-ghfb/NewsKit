@@ -34,6 +34,7 @@ export const StoryFixedHeightAndWidthAsPropsInPx = () => (
       alt="Example Image"
       width="300"
       height="200"
+      placeholderIcon
     />
   </Container>
 );
@@ -43,13 +44,14 @@ StoryFixedHeightAndWidthAsPropsInPx.parameters = {...parameters};
 
 export const StoryFixedHeightAndWidthAsPropsAndOverrides = () => (
   <Container>
-    <StorybookHeading>100% by auto</StorybookHeading>
+    <StorybookHeading>500px by 400px</StorybookHeading>
     <Image
       src="/placeholder-3x2.png"
       alt="Example Image"
       width="300"
       height="200"
-      overrides={{width: '100%', height: 'auto'}}
+      placeholderIcon
+      overrides={{width: '500', height: '400'}}
     />
   </Container>
 );
