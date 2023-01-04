@@ -1816,8 +1816,9 @@ exports[`Image width & height as props renders with default dimentions 1`] = `
   position: relative;
   width: 100%;
   display: block;
-  width: 300px;
-  height: 200px;
+  padding-top: 0;
+  height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #F1F1F1;
 }
@@ -1850,8 +1851,6 @@ exports[`Image width & height as props renders with default dimentions 1`] = `
   opacity: 0;
   display: block;
   border-radius: inherit;
-  height: 200px;
-  width: 300px;
   top: 0;
   left: 0;
   position: absolute;
@@ -1859,8 +1858,6 @@ exports[`Image width & height as props renders with default dimentions 1`] = `
 
 <picture
     class="emotion-0"
-    height="200px"
-    width="300px"
   >
     <div
       class="emotion-1"
@@ -1882,8 +1879,9 @@ exports[`Image width & height as props renders with number dimentions 1`] = `
   position: relative;
   width: 100%;
   display: block;
-  width: 300px;
-  height: 200px;
+  padding-top: 0;
+  height: 0;
+  width: 100%;
   border-radius: 0;
   background-color: #F1F1F1;
 }
@@ -1916,8 +1914,6 @@ exports[`Image width & height as props renders with number dimentions 1`] = `
   opacity: 0;
   display: block;
   border-radius: inherit;
-  height: 200px;
-  width: 300px;
   top: 0;
   left: 0;
   position: absolute;
@@ -1925,8 +1921,6 @@ exports[`Image width & height as props renders with number dimentions 1`] = `
 
 <picture
     class="emotion-0"
-    height="200"
-    width="300"
   >
     <div
       class="emotion-1"
@@ -1948,8 +1942,8 @@ exports[`Image width & height as props renders with width & height as overrides 
   position: relative;
   width: 100%;
   display: block;
-  width: 300px;
-  height: 200px;
+  width: 250px;
+  height: 500px;
   border-radius: 0;
   background-color: #F1F1F1;
 }
@@ -1982,8 +1976,8 @@ exports[`Image width & height as props renders with width & height as overrides 
   opacity: 0;
   display: block;
   border-radius: inherit;
-  height: 200px;
-  width: 300px;
+  height: 500px;
+  width: 250px;
   top: 0;
   left: 0;
   position: absolute;
@@ -1991,8 +1985,6 @@ exports[`Image width & height as props renders with width & height as overrides 
 
 <picture
     class="emotion-0"
-    height="200px"
-    width="300px"
   >
     <div
       class="emotion-1"

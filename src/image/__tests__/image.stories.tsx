@@ -34,13 +34,28 @@ export const StoryFixedHeightAndWidthAsPropsInPx = () => (
       alt="Example Image"
       width="300"
       height="200"
-      overrides={{width: '100%', height: 'auto'}}
     />
   </Container>
 );
 StoryFixedHeightAndWidthAsPropsInPx.storyName =
   'fixed-height-and-width-in-px-via-props';
 StoryFixedHeightAndWidthAsPropsInPx.parameters = {...parameters};
+
+export const StoryFixedHeightAndWidthAsPropsAndOverrides = () => (
+  <Container>
+    <StorybookHeading>100% by auto</StorybookHeading>
+    <Image
+      src="/placeholder-3x2.png"
+      alt="Example Image"
+      width="300"
+      height="200"
+      overrides={{width: '100%', height: 'auto'}}
+    />
+  </Container>
+);
+StoryFixedHeightAndWidthAsPropsAndOverrides.storyName =
+  'fixed-height-and-width-in-px-via-props-and-overrides';
+StoryFixedHeightAndWidthAsPropsAndOverrides.parameters = {...parameters};
 
 export const StoryFixedHeightAndWidthAsOverridesInPx = () => (
   <Container>
