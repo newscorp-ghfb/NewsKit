@@ -55,6 +55,7 @@ export type MenuSubProps = Omit<
   href?: string;
   expanded?: boolean;
   defaultExpanded?: boolean;
+  align?: MenuItemAlign;
   overrides?: {
     indicatorIcon?: Override<MenuSubIconProps>;
     list?: {

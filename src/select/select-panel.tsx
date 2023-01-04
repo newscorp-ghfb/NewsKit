@@ -35,6 +35,7 @@ interface SelectPanelProps {
   buttonRef: React.RefObject<HTMLButtonElement>;
   closeMenu: Function;
   strategy: 'fixed' | 'absolute';
+  zIndex: string; // layer or zIndex as string
 }
 
 const DefaultModal = Modal;
@@ -90,6 +91,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       closeMenu,
       overrides,
       strategy,
+      zIndex,
       ...restProps
     } = props;
 
@@ -157,6 +159,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           $size={size}
           ref={panelRef}
           overrides={overrides?.panel}
+          zIndex={zIndex}
           {...restProps}
           style={{
             // inline styles are faster since emotion does not have to create a new css class

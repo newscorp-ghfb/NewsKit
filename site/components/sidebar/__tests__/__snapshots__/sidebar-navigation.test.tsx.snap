@@ -850,6 +850,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-color: transparent transparent transparent #3358CC;
+  border-width: 4px;
+  border-style: solid;
+  color: #3358CC;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -930,7 +936,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
           class="nk-menu-item emotion-2"
         >
           <a
-            aria-current="false"
+            aria-current="page"
             class="emotion-3"
             href="/group1/page1"
           >

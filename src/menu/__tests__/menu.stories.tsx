@@ -1810,6 +1810,60 @@ export const StoryMenuFullDemo = () => {
 };
 StoryMenuFullDemo.storyName = 'sub-menu-full-demo';
 
+const SubMenuNestedUncontrolledContainer = styled.div`
+  min-height: 300px;
+`;
+export const StorySubMenuNestedUncontrolled = () => (
+  <SubMenuNestedUncontrolledContainer>
+    <StorybookSubHeading>
+      Sub menu - uncontrolled behaviour example
+    </StorybookSubHeading>
+    <Menu aria-label="menu-nested-uncontrolled" align="start">
+      <MenuSub title="Item 1">
+        <MenuItem href={href}>Item 1.1</MenuItem>
+        <MenuItem href={href}>Item 1.2</MenuItem>
+        <MenuSub title="Item 1.3">
+          <MenuItem href={href}>Item 1.3.1</MenuItem>
+          <MenuSub title="Item 1.3.2" defaultExpanded>
+            <MenuItem href={href}>Item 1.3.2.1</MenuItem>
+          </MenuSub>
+        </MenuSub>
+        <MenuSub title="Item 1.4">
+          <MenuItem href={href}>Item 1.4.1</MenuItem>
+          <MenuSub title="Item 1.4.2">
+            <MenuItem href={href}>Item 1.4.2.1</MenuItem>
+          </MenuSub>
+        </MenuSub>
+      </MenuSub>
+    </Menu>
+  </SubMenuNestedUncontrolledContainer>
+);
+StorySubMenuNestedUncontrolled.storyName = 'sub-menu-nested-uncontrolled';
+StorySubMenuNestedUncontrolled.parameters = {
+  percy: {skip: true},
+};
+
+const AlignmentExampleContainer = styled.div`
+  min-height: 400px;
+`;
+export const StorySubMenuAlignmentExample = () => (
+  <AlignmentExampleContainer>
+    <StorybookSubHeading>Sub menu alignment example</StorybookSubHeading>
+    <Menu aria-label="menu-alignment-example" align="start" vertical>
+      <MenuSub title="Start-aligned sub menu">
+        <MenuItem href={href}>Start-aligned menu item</MenuItem>
+        <MenuSub title="Center-aligned sub menu" align="center">
+          <MenuItem href={href}>Center-aligned menu item</MenuItem>
+          <MenuSub title="End-aligned sub menu" defaultExpanded align="end">
+            <MenuItem href={href}>End-aligned menu item</MenuItem>
+          </MenuSub>
+        </MenuSub>
+      </MenuSub>
+    </Menu>
+  </AlignmentExampleContainer>
+);
+StorySubMenuAlignmentExample.storyName = 'sub-menu-alignment-example';
+
 export default {
   title: 'Components/menu',
   component: () => 'None',

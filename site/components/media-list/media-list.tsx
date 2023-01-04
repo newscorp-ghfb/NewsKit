@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyledComponent} from '@emotion/styled';
 import {Cell, Grid, Block, Visible, BreakpointKeys, styled} from 'newskit';
-import LinkNext from 'next/link';
+import NextLink from 'next/link';
 import {UsageCard, UsageCardProps} from '../usage-card';
 import {BaseCard, BaseCardProps} from '../base-card';
 import {MediaListProps} from './types';
@@ -64,12 +64,13 @@ export const MediaList: React.FC<MediaListProps> = ({
         return (
           // eslint-disable-next-line react/no-array-index-key
           <Cell {...cellColumnList} key={`index-${index}`}>
-            {cardProps.href && (
-              <LinkNext href={cardProps.href} passHref>
+            {cardProps.href ? (
+              <NextLink legacyBehavior href={cardProps.href} passHref>
                 {styledCardComponentWithProps}
-              </LinkNext>
+              </NextLink>
+            ) : (
+              styledCardComponentWithProps
             )}
-            {!cardProps.href && styledCardComponentWithProps}
           </Cell>
         );
       }),

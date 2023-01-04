@@ -2435,6 +2435,7 @@ Object {
         "spaceInset": "spaceInset020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
+        "zIndex": "layer",
       },
     },
     "medium": Object {
@@ -2472,6 +2473,7 @@ Object {
         "spaceInset": "spaceInset020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
+        "zIndex": "layer",
       },
     },
     "small": Object {
@@ -2509,6 +2511,7 @@ Object {
         "spaceInset": "spaceInset020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
+        "zIndex": "layer",
       },
     },
   },

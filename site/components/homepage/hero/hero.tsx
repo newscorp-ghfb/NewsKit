@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {GridLayoutItem, TextBlock, GridLayout, Visible, Button} from 'newskit';
-import LinkNext from 'next/link';
+import NextLink from 'next/link';
 import {Illustration} from '../../illustrations/illustration-loader';
 import {HeroProps} from './types';
 import {HeroContainer} from './styled';
@@ -77,7 +77,11 @@ export const Hero = ({
             }}
           >
             <GridLayoutItem>
-              <LinkNext href="/getting-started/design/design-overview" passHref>
+              <NextLink
+                legacyBehavior
+                href="/getting-started/design/design-overview"
+                passHref
+              >
                 <>
                   <Visible xs sm>
                     <Button {...DESIGN_BUTTON_PROPS}>Designing</Button>
@@ -86,10 +90,11 @@ export const Hero = ({
                     <Button {...DESIGN_BUTTON_PROPS}>Start designing</Button>
                   </Visible>
                 </>
-              </LinkNext>
+              </NextLink>
             </GridLayoutItem>
             <GridLayoutItem>
-              <LinkNext
+              <NextLink
+                legacyBehavior
                 href="/getting-started/code/engineering-quickstart"
                 passHref
               >
@@ -103,7 +108,7 @@ export const Hero = ({
                     </Button>
                   </Visible>
                 </>
-              </LinkNext>
+              </NextLink>
             </GridLayoutItem>
           </GridLayout>
         </GridLayoutItem>
