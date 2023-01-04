@@ -439,36 +439,42 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the button:',
       cards: [
         {
+          title: 'Do allow a sufficient hit area',
           description:
-            'When placing two or more buttons inline, keep at least an 8px gap between them.',
+            'When placing two or more buttons inline, make sure they are a sufficient size or have spacing between them to avoid users accidentally hitting the wrong button.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/button/usage/do1'),
         },
         {
+          title: 'Don’t use full width-buttons in wide containers',
           description:
-            'Full-width buttons are generally appropriate for small devices or contained components.',
+            'Full-width buttons are more appropriate for small devices or contained components.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont1'),
         },
         {
+          title: 'Do consider button width',
           description:
             'When deciding between a fixed or full width button, consider how it will respond and react to the containers around it.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/button/usage/do2'),
         },
         {
+          title: 'Don’t separate related buttons',
           description:
-            'Place related buttons next to each other so associated actions are relative, and to reduce cognitive load.',
+            'Place related buttons next to each other so associated actions are relative, and to reduce cognitive load..',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont2'),
         },
         {
+          title: 'Don’t stack buttons unnecessarily',
           description:
             'Avoid stacking buttons when there’s enough space to place them side by side.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont4'),
         },
         {
+          title: 'Don’t have more than one primary button',
           description:
             'Avoid having more than one primary (high emphasis) button on a screen to help guide the user to the primary action.',
           kind: UsageKind.DONT,
