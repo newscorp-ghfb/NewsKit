@@ -13,6 +13,15 @@ import {P} from '../../../../src/typography';
 import {MediaList} from '../../../components/media-list';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
 
+const linkOverrides = {
+  typographyPreset: 'editorialParagraph030',
+};
+
+const paragraphHeadlineOverrides = {
+  typographyPreset: 'editorialHeadline020',
+  stylePreset: 'inkContrast',
+};
+
 const whatNextCards = [
   {
     media: getIllustrationComponent('guides/accessibility-design/hero'),
@@ -50,8 +59,17 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="why"
           toc="Why?"
-          headline="Why build products with NewsKit?"
-          description="Systems thinking is at the core of digital product design. NewsKit improves design consistency and developer efficiency across teams with considered, reusable solutions, and shared best practices. The result is more robust products and more time for innovation."
+          headline="What is accessibility?"
+          description={
+            <>
+              Accessibility is making sure that all our colleagues and customers
+              have equal access to our digital products and services. This is
+              achieved by designing and building to industry standards which
+              maintains quality and supports assistive technologies. <br />{' '}
+              <br /> This guide links out to resources to help you design,
+              build, write and test for accessibility.
+            </>
+          }
         />
         <ContentSecondary
           headline="An introduction"
@@ -82,12 +100,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           headline="Which standards do we follow?"
           showSeparator
         >
-          <P
-            overrides={{
-              typographyPreset: 'editorialHeadline020',
-              stylePreset: 'inkContrast',
-            }}
-          >
+          <P overrides={paragraphHeadlineOverrides}>
             Web Content Accessibility Guidelines (WCAG)
           </P>
           <br />
@@ -97,7 +110,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
             Newskit core components are tested to a WCAG 2.1 Level AA standard.
           </P>
           <LinkStandalone
-            overrides={{typographyPreset: 'editorialParagraph030'}}
+            overrides={linkOverrides}
             href="https://www.w3.org/TR/WCAG21/"
             external={false}
           >
@@ -106,14 +119,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           <br />
           <br />
           <br />
-          <P
-            overrides={{
-              typographyPreset: 'editorialHeadline020',
-              stylePreset: 'inkContrast',
-            }}
-          >
-            WAI ARIA
-          </P>
+          <P overrides={paragraphHeadlineOverrides}>WAI ARIA</P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             ARIA is a set of attributes you can add to HTML elements to make web
@@ -121,7 +127,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
             technologies. WAI ARIA.
           </P>
           <LinkStandalone
-            overrides={{typographyPreset: 'editorialParagraph030'}}
+            overrides={linkOverrides}
             href="https://www.w3.org/TR/wai-aria/"
             external={false}
           >
@@ -130,17 +136,10 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           <br />
           <br />
           <br />
-          <P
-            overrides={{
-              typographyPreset: 'editorialHeadline020',
-              stylePreset: 'inkContrast',
-            }}
-          >
-            News UK Polices
-          </P>
+          <P overrides={paragraphHeadlineOverrides}>News UK Polices</P>
           <br />
           <LinkStandalone
-            overrides={{typographyPreset: 'editorialParagraph030'}}
+            overrides={linkOverrides}
             href="https://sites.google.com/news.co.uk/wearenewspoliciesandprocedures/home-page?authuser=0&pli=1"
             external={false}
           >
@@ -151,14 +150,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           headline="Which laws must we comply with?"
           showSeparator
         >
-          <P
-            overrides={{
-              typographyPreset: 'editorialHeadline020',
-              stylePreset: 'inkContrast',
-            }}
-          >
-            In the UK
-          </P>
+          <P overrides={paragraphHeadlineOverrides}>In the UK</P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             UK Equality Act protects people from discrimination in the workplace
@@ -167,7 +159,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           </P>
           <br />
           <LinkStandalone
-            overrides={{typographyPreset: 'editorialParagraph030'}}
+            overrides={linkOverrides}
             href="https://www.legislation.gov.uk/ukpga/2010/15/section/29"
             external={false}
           >
@@ -176,14 +168,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           <br />
           <br />
           <br />
-          <P
-            overrides={{
-              typographyPreset: 'editorialHeadline020',
-              stylePreset: 'inkContrast',
-            }}
-          >
-            In the US
-          </P>
+          <P overrides={paragraphHeadlineOverrides}>In the US</P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             The Americans with Disabilities Act (ADA) is a federal civil rights
@@ -192,7 +177,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           </P>
           <br />
           <LinkStandalone
-            overrides={{typographyPreset: 'editorialParagraph030'}}
+            overrides={linkOverrides}
             href="https://www.ada.gov/topics/intro-to-ada/"
             external={false}
           >

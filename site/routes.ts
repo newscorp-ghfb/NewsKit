@@ -145,8 +145,8 @@ export const routes = [
             page: true,
             id: '/getting-started/accessibility/accessibility-getting-started',
             description: 'Equal access for everyone.',
-            illustration: 'guides/engineering-overview/hero',
-            cardTitle: 'Engineering overview',
+            illustration: 'guides/accessibility-getting-started/hero',
+            cardTitle: 'Getting started',
           },
           {
             title: 'Design',
