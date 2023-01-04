@@ -653,6 +653,13 @@ export const routes = [
             illustration: 'components/accordion/hero',
           },
           {
+            title: 'Breadcrumbs',
+            page: true,
+            id: '/components/breadcrumbs',
+            description: 'Breadcrumbs are used for secondary navigation.',
+            illustration: 'components/breadcrumbs/hero/hero',
+          },
+          {
             title: 'Link',
             page: true,
             id: '/components/link',
