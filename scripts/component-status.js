@@ -8,6 +8,9 @@ const path = require('path');
 const componentPages = path.join(__dirname, '../site/pages/components');
 const componentSrc = path.join(__dirname, '../src');
 
+const getComponentName = s =>
+  s.replace(/\b./g, x => x.toUpperCase()).replace(/-/g, '');
+
 // This object handles non-src component files and instances where site file names
 // do not match src file paths exactly.
 const OVERRIDES = {
@@ -29,13 +32,23 @@ const getSiteStatus = componentName => {
   return matches.groups.status.toLowerCase();
 };
 
-// Check if the component src file contains a @deprecated or @beta flag. If not,
-// assume it is @supported.
-const getSrcStatus = componentPath => {
-  const data = fs.readFileSync(path.join(componentSrc, componentPath), {
+// Check if the component src file contains either:
+//  /**
+//  * @deprecated ComponentName is deprecated and will be removed in the next major release.
+//  */
+// Or:
+//  /**
+//  * @beta ComponentName is in beta.
+//  */
+// Otherwise, assume the component is supported.
+const getSrcStatus = (filePath, componentName) => {
+  const data = fs.readFileSync(path.join(componentSrc, filePath), {
     encoding: 'utf-8',
   });
-  const regEx = /@(?<status>deprecated|beta)/;
+  // Be careful to avoid accidentally detecting deprecated props.
+  const regEx = new RegExp(
+    `\\/\\*\\*.*\\n.*@(?<status>deprecated|beta).*\\b${componentName}\\b.*\\n.*\\*\\/`,
+  );
   const matches = regEx.exec(data);
   if (matches) {
     return matches.groups.status;
@@ -47,20 +60,21 @@ fs.readdir(componentPages, (err, files) => {
   const mismatches = files
     .filter(file => !file.includes('.mdx'))
     .map(file => file.replace('.tsx', ''))
-    .reduce((prev, componentPageName) => {
+    .reduce((prev, fileName) => {
       // eslint-disable-next-line no-prototype-builtins
-      const srcComponentFileName = OVERRIDES.hasOwnProperty(componentPageName)
-        ? OVERRIDES[componentPageName]
-        : `${componentPageName}/${componentPageName}.tsx`;
-      if (!srcComponentFileName) {
+      const srcFilePath = OVERRIDES.hasOwnProperty(fileName)
+        ? OVERRIDES[fileName]
+        : `${fileName}/${fileName}.tsx`;
+      if (!srcFilePath) {
         return prev;
       }
-      const srcStatus = getSrcStatus(srcComponentFileName);
-      const siteStatus = getSiteStatus(componentPageName);
+      const componentName = getComponentName(fileName);
+      const srcStatus = getSrcStatus(srcFilePath, componentName);
+      const siteStatus = getSiteStatus(fileName);
       if (srcStatus === siteStatus) {
         return prev;
       }
-      return [...prev, {componentPageName, srcStatus, siteStatus}];
+      return [...prev, {componentPageName: fileName, srcStatus, siteStatus}];
     }, []);
   if (mismatches.length) {
     throw Error(

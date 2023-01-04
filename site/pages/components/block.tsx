@@ -36,7 +36,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="Block"
     meta={{
-      status: MetaStatus.Deprecated,
+      status: MetaStatus.Supported,
       introduced: 'v0.1.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/blob/main/src/block/block.tsx',
