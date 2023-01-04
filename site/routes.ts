@@ -143,7 +143,7 @@ export const routes = [
           {
             title: 'Getting started',
             page: true,
-            id: '/getting-started',
+            id: '/getting-started/accessibility/accessibility-getting-started',
             description: 'Equal access for everyone.',
             illustration: 'guides/engineering-overview/hero',
             cardTitle: 'Engineering overview',
@@ -151,7 +151,7 @@ export const routes = [
           {
             title: 'Design',
             page: true,
-            id: '/getting-started/code/engineering-quickstart',
+            id: '/getting-started/accessibility/design',
             description:
               'Guides to start building web applications with NewsKit.',
             illustration: 'guides/engineering-quickstart/hero',
