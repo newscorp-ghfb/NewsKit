@@ -93,8 +93,6 @@ const ImageComponent = React.forwardRef<HTMLImageElement, ImageProps>(
     return (
       <StyledPicture
         isLoading={showLoading()}
-        width={width}
-        height={height}
         loadingAspectRatio={loadingAspectRatio}
         overrides={overrides}
         ref={setRef}

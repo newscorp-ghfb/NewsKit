@@ -19,8 +19,8 @@ export const getResponsiveAspectRatioFromProps = (
     paddingTop: string;
   }) => string | CSSObject,
 ): string | CSSObject => {
-  const imgWidth = propWidth || (overrides && overrides.width);
-  const imgHeight = propHeight || (overrides && overrides.height);
+  const imgWidth = overrides && overrides.width;
+  const imgHeight = overrides && overrides.height;
 
   return handleResponsiveProp(
     {
@@ -39,10 +39,11 @@ export const getResponsiveAspectRatioFromProps = (
         width,
       });
       const responsiveProps = {
-        height: aspectHeight || 'auto',
-        width: aspectWidth || '100%',
+        height: aspectHeight || (!propHeight && 'auto'),
+        width: aspectWidth || (!propWidth && '100%'),
         paddingTop: paddingTop || '0',
       };
+      // @ts-ignore
       return handler(responsiveProps);
     },
   )({

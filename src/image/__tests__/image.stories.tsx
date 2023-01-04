@@ -32,9 +32,9 @@ export const StoryFixedHeightAndWidthAsPropsInPx = () => (
     <Image
       src="/placeholder-3x2.png"
       alt="Example Image"
-      width="300px"
-      height="200px"
-      placeholderIcon
+      width="300"
+      height="200"
+      overrides={{width: '100%', height: 'auto'}}
     />
   </Container>
 );
