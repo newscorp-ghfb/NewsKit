@@ -160,7 +160,7 @@ export const routes = [
           {
             title: 'Code',
             page: true,
-            id: '/getting-started/code/grid-layout-step-by-step',
+            id: '/getting-started/accessibility/code',
             description:
               'The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to react props.',
             illustration: 'guides/grid-layout-guide/hero',
@@ -169,7 +169,7 @@ export const routes = [
           {
             title: 'Write',
             page: true,
-            id: '/getting-started/code/form-step-by-step',
+            id: '/getting-started/accessibility/write',
             description:
               'Step-by-step guide for engineers to build a form using the form subcomponents.',
             illustration: 'guides/form-guide/hero',
@@ -178,7 +178,7 @@ export const routes = [
           {
             title: 'Test',
             page: true,
-            id: '/getting-started/code/testing',
+            id: '/getting-started/accessibility/test',
             description:
               'NewsKit uses Jest and React Testing Library for unit testing.',
             illustration: 'guides/overview/testing',

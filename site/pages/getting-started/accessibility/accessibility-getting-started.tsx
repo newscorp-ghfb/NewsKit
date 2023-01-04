@@ -46,7 +46,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Guides',
+      type: 'Accessibility',
       name: 'Getting started with accessibility',
       hero: {
         illustration: 'guides/accessibility-getting-started/hero',

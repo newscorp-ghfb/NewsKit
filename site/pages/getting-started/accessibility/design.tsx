@@ -16,11 +16,8 @@ import {getIllustrationComponent} from '../../../components/illustrations/illust
 const listData = [
   `Do all elements meet colour contrast to an AA standard?`,
   `Does content have a clear order and hierarchy.`,
-  `
-  Are interactive elements easy to identify?
-`,
-  `Are navigation options clear and consistent?
-`,
+  `Are interactive elements easy to identify?`,
+  `Are navigation options clear and consistent?`,
   `Are layouts responsive to different viewports?`,
 ];
 
@@ -48,7 +45,7 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Guides',
+      type: 'Accessibility',
       name: 'Design for accessibility',
       hero: {
         illustration: '/guides/accessibility-design/hero',
