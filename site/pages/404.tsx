@@ -93,7 +93,8 @@ const Custom404 = ({path, ...layoutProps}: LayoutProps) => (
               href="/"
               data-testid="back-link"
             >
-              <IconFilledKeyboardArrowLeft /> Back to the homepage
+              <IconFilledKeyboardArrowLeft />
+              Back to the homepage
             </Button>
           </GridLayoutItem>
           <Hidden xs sm md>
