@@ -15,6 +15,7 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
       selected,
       eventContext = {},
       eventOriginator = 'menu-item',
+      onClick: onClickProp,
       ...rest
     },
     ref,
@@ -24,8 +25,18 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
       size,
       align,
       overrides: menuOverrides,
+      updateExpandedMenuSubId,
       isSubMenu,
     } = useMenuContext();
+
+    const onClick: MenuItemProps['onClick'] = e => {
+      if (!vertical) {
+        updateExpandedMenuSubId(null);
+      }
+      if (onClickProp) {
+        onClickProp(e);
+      }
+    };
 
     const theme = useTheme();
     const menuItemOverrides: MenuItemProps['overrides'] = {
@@ -60,6 +71,7 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
             ...menuItemOverrides,
           }}
           aria-current={selected && 'page'}
+          onClick={onClick}
         >
           {children}
         </StyledButton>

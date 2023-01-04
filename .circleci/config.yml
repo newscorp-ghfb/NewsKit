@@ -638,6 +638,7 @@ jobs:
     executor: node-large
     steps:
       - checkout_and_attach_workspace
+      - github-cli/setup
       - run:
           name: 'Check if updates required'
           command: |
@@ -658,11 +659,14 @@ jobs:
     executor: cypress
     steps:
       - checkout_and_attach_workspace
+      - github-cli/setup
       - run:
           name: 'Check if updates required'
           command: |
             {
-                node scripts/check-baseline-updates.js $CIRCLE_SHA1 "docsite" &&
+                export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName') &&
+                echo "Found branch name: ${PR_BRANCH_NAME}" &&
+                node scripts/check-baseline-updates.js $PR_BRANCH_NAME "docsite" &&
                 echo "No baseline updates required; finishing job." &&
                 circleci-agent step halt
             } || {
