@@ -134,7 +134,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
         />
 
         <ContentPrimary
-          id="code-design"
+          id="test-code"
           toc="Test your code"
           headline="Test your code"
           description={
@@ -214,7 +214,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
         />
 
         <ContentPrimary
-          id="screenreader-design"
+          id="test-with-screenreaders"
           headline="Test with screenreaders"
           toc="Test with screen readers"
           description={
@@ -300,7 +300,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
 
         <ContentPrimary
           showSeparator
-          id="screenreader-design"
+          id="test-writing"
           headline="Test your writing"
           toc="Test your writing"
           description={
@@ -336,7 +336,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
 
         <ContentPrimary
           showSeparator
-          id="screenreader-design"
+          id="checklist"
           toc="Checklists"
           headline="Checklists"
           description={
