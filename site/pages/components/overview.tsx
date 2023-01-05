@@ -8,7 +8,6 @@ import {
   StructuredListCell,
   StructuredListItem,
   TextBlock,
-  useBreakpointKey,
 } from 'newskit';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {Separator} from '../../components/separator';
@@ -40,161 +39,145 @@ const deprecated = componentsSubNav?.find(e => e.id === '/deprecated');
 
 const pageDescription = `Components are key building blocks of the NewsKit design system.`;
 
-const OverviewComponent = (layoutProps: LayoutProps) => {
-  const breakpoint = useBreakpointKey();
-
-  return (
-    <Layout {...layoutProps} newPage>
-      <HeadNextSeo
-        title="Components overview"
-        description={pageDescription}
-        image={{
-          url: 'social/components.png',
-          alt: 'Components overview',
-        }}
-      />
-      <HeaderIndex title="Components" media={HeaderImage}>
-        {pageDescription}
-      </HeaderIndex>
-      <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-        {componentCategories.map(
-          ({title, description, subNav}: any, i: number) => (
-            <React.Fragment key={title}>
-              {i === 0 ? (
-                <Cell xs={12}>
-                  <SectionIntroduction
-                    title={title}
-                    cellProps={{lg: 8, mdOffset: i === 0 ? 1 : undefined}}
-                    subHeadingSpaceStack="space000"
+const OverviewComponent = (layoutProps: LayoutProps) => (
+  <Layout {...layoutProps} newPage>
+    <HeadNextSeo
+      title="Components overview"
+      description={pageDescription}
+      image={{
+        url: 'social/components.png',
+        alt: 'Components overview',
+      }}
+    />
+    <HeaderIndex title="Components" media={HeaderImage}>
+      {pageDescription}
+    </HeaderIndex>
+    <Grid lgMargin="sizing000" xsRowGutter="sizing000">
+      {componentCategories.map(
+        ({title, description, subNav}: any, i: number) => (
+          <React.Fragment key={title}>
+            {i === 0 ? (
+              <Cell xs={12}>
+                <SectionIntroduction
+                  title={title}
+                  cellProps={{lg: 8, mdOffset: i === 0 ? 1 : undefined}}
+                  subHeadingSpaceStack="space000"
+                >
+                  {description}
+                </SectionIntroduction>
+              </Cell>
+            ) : (
+              <Cell xs={12}>
+                <SectionIntroduction
+                  subHeadingSpaceStack="space080"
+                  title={title}
+                  cellProps={{lg: 8}}
+                >
+                  {description}
+                </SectionIntroduction>
+              </Cell>
+            )}
+            <ComponentPageCell>
+              <MediaList
+                cards={subNav.map((comp: any) => ({
+                  media: comp.illustration
+                    ? getIllustrationComponent(comp.illustration)
+                    : {
+                        src: comp.media,
+                        alt: '',
+                      },
+                  title: comp.title,
+                  href: comp.id,
+                  description: comp.description,
+                }))}
+                gridProps={{xsRowGutter: 'space050'}}
+              />
+            </ComponentPageCell>
+            <ComponentPageCell>
+              <Separator />
+            </ComponentPageCell>
+          </React.Fragment>
+        ),
+      )}
+      <Cell xs={12}>
+        <SectionIntroduction
+          subHeadingSpaceStack="space080"
+          title={utilities.title}
+          cellProps={{lg: 8}}
+        >
+          {utilities.description}
+        </SectionIntroduction>
+        <ComponentPageCell>
+          <Block stylePreset="componentsUtilitiesStructuredList">
+            <StructuredList divider>
+              {utilities?.subNav?.map(
+                (util: {
+                  title: string;
+                  page: boolean;
+                  id: string;
+                  description: string;
+                }) => (
+                  <StructuredListItem
+                    key={util.id}
+                    href={util.id}
+                    ariaLabel={util.title}
                   >
-                    {description}
-                  </SectionIntroduction>
-                </Cell>
-              ) : (
-                <Cell xs={12}>
-                  <SectionIntroduction
-                    subHeadingSpaceStack="space080"
-                    title={title}
-                    cellProps={{lg: 8}}
-                  >
-                    {description}
-                  </SectionIntroduction>
-                </Cell>
+                    <StructuredListCell>
+                      <TextBlock
+                        stylePreset="inkContrast"
+                        typographyPreset="utilityHeading010"
+                      >
+                        {util.title}
+                      </TextBlock>
+                      <TextBlock
+                        marginBlockStart="space030"
+                        stylePreset="inkContrast"
+                        typographyPreset="utilityBody020"
+                      >
+                        {util.description}
+                      </TextBlock>
+                    </StructuredListCell>
+                  </StructuredListItem>
+                ),
               )}
-              <ComponentPageCell>
-                <MediaList
-                  cards={subNav.map((comp: any) => ({
-                    media: comp.illustration
-                      ? getIllustrationComponent(comp.illustration)
-                      : {
-                          src: comp.media,
-                          alt: '',
-                        },
-                    title: comp.title,
-                    href: comp.id,
-                    description: comp.description,
-                  }))}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ComponentPageCell>
-              <ComponentPageCell>
-                <Separator />
-              </ComponentPageCell>
-            </React.Fragment>
-          ),
-        )}
+            </StructuredList>
+          </Block>
+        </ComponentPageCell>
+      </Cell>
+      <ComponentPageCell>
+        <Separator />
+      </ComponentPageCell>
+      <React.Fragment key={deprecated.title}>
         <Cell xs={12}>
           <SectionIntroduction
             subHeadingSpaceStack="space080"
-            title={utilities.title}
+            title={deprecated.title}
             cellProps={{lg: 8}}
           >
-            {utilities.description}
+            {deprecated.description}
           </SectionIntroduction>
-          <ComponentPageCell>
-            <Block stylePreset="componentsUtilitiesStructuredList">
-              <StructuredList divider>
-                {utilities?.subNav?.map(
-                  (util: {
-                    title: string;
-                    page: boolean;
-                    id: string;
-                    description: string;
-                  }) => (
-                    <StructuredListItem
-                      key={util.id}
-                      href={util.id}
-                      ariaLabel={util.title}
-                    >
-                      <StructuredListCell>
-                        <TextBlock
-                          stylePreset="inkContrast"
-                          typographyPreset="utilityHeading010"
-                        >
-                          {util.title}
-                        </TextBlock>
-                        {breakpoint !== 'xs' && breakpoint !== 'sm' && (
-                          <TextBlock
-                            marginBlockStart="space030"
-                            stylePreset="inkContrast"
-                            typographyPreset="utilityBody020"
-                          >
-                            {util.description}
-                          </TextBlock>
-                        )}
-                      </StructuredListCell>
-                      {(breakpoint === 'xs' || breakpoint === 'sm') && (
-                        <StructuredListCell>
-                          <TextBlock
-                            stylePreset="inkContrast"
-                            typographyPreset="utilityBody020"
-                          >
-                            {util.description}
-                          </TextBlock>
-                        </StructuredListCell>
-                      )}
-                    </StructuredListItem>
-                  ),
-                )}
-              </StructuredList>
-            </Block>
-          </ComponentPageCell>
         </Cell>
         <ComponentPageCell>
-          <Separator />
+          <MediaList
+            cards={deprecated?.subNav?.map((comp: any) => ({
+              media: comp.illustration
+                ? getIllustrationComponent(comp.illustration)
+                : {
+                    src: comp.media,
+                    alt: '',
+                  },
+              title: comp.title,
+              href: comp.id,
+              description: comp.description,
+            }))}
+            gridProps={{xsRowGutter: 'space050'}}
+          />
         </ComponentPageCell>
-        <React.Fragment key={deprecated.title}>
-          <Cell xs={12}>
-            <SectionIntroduction
-              subHeadingSpaceStack="space080"
-              title={deprecated.title}
-              cellProps={{lg: 8}}
-            >
-              {deprecated.description}
-            </SectionIntroduction>
-          </Cell>
-          <ComponentPageCell>
-            <MediaList
-              cards={deprecated?.subNav?.map((comp: any) => ({
-                media: comp.illustration
-                  ? getIllustrationComponent(comp.illustration)
-                  : {
-                      src: comp.media,
-                      alt: '',
-                    },
-                title: comp.title,
-                href: comp.id,
-                description: comp.description,
-              }))}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ComponentPageCell>
-        </React.Fragment>
-      </Grid>
+      </React.Fragment>
+    </Grid>
 
-      <Block spaceStack="space070" />
-    </Layout>
-  );
-};
+    <Block spaceStack="space070" />
+  </Layout>
+);
 
 export default OverviewComponent;

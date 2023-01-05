@@ -154,7 +154,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="textArea"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v6.1.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/blob/main/src/text-area/text-area.tsx',

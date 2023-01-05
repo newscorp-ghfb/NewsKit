@@ -5,13 +5,13 @@ describe('404 page', () => {
       .should('equal', 404);
     cy.request({url: '/abcde', failOnStatusCode: false})
       .its('body')
-      .should('include', 'Go back to the homepage');
+      .should('include', 'Back to the homepage');
   });
   it('should return to homepage when back link is clicked', () => {
     cy.visit('/abcde', {failOnStatusCode: false});
     cy.get('[data-testid="back-link"]')
       .should('have.attr', 'href', '/')
-      .should('have.text', 'Go back to the homepage');
+      .should('have.text', 'Back to the homepage');
     cy.get('[data-testid="back-link"]').click({force: true});
     // Go back to the homepage
     cy.url().should('eq', 'http://localhost:8081/');
