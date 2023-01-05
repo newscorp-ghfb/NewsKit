@@ -50,7 +50,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
       type: 'Accessibility',
       name: 'Code for accessibility',
       hero: {
-        illustration: '/guides/accessibility-test/hero',
+        illustration: 'guides/accessibility-test/hero',
       },
       introduction: `Tools and checkers to help you test against accessibility guidelines.`,
     }}

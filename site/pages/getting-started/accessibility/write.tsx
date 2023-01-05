@@ -50,7 +50,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
       type: 'Accessibility',
       name: 'Write for accessibility',
       hero: {
-        illustration: '/guides/accessibility-write/hero',
+        illustration: 'guides/accessibility-write/hero',
       },
       introduction: `Clear copy in plain language benefits everyone.`,
     }}

@@ -48,7 +48,7 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
       type: 'Accessibility',
       name: 'Design for accessibility',
       hero: {
-        illustration: '/guides/accessibility-design/hero',
+        illustration: 'guides/accessibility-design/hero',
       },
       introduction: `Design provides the foundations for accessibility.`,
     }}

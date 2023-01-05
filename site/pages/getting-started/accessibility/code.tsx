@@ -52,7 +52,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
       type: 'Accessibility',
       name: 'Code for accessibility',
       hero: {
-        illustration: '/guides/accessibility-code/hero',
+        illustration: 'guides/accessibility-code/hero',
       },
       introduction: `Building to WCAG standards maintains quality and supports assistive technologies.`,
     }}
