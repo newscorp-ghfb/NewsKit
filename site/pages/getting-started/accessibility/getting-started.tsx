@@ -58,7 +58,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="why?">
         <ContentPrimary
           id="why"
-          toc="Why?"
+          toc=" What is accessibility?"
           headline="What is accessibility?"
           description={
             <>
@@ -125,7 +125,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             ARIA is a set of attributes you can add to HTML elements to make web
             content accessible to users with disabilities who use assistive
-            technologies. WAI ARIA.
+            technologies.
           </P>
           <Link
             overrides={linkOverrides}

@@ -1,5 +1,6 @@
 import React from 'react';
 import {LayoutProps} from '../../../components/layout';
+import {InlineCode} from '../../../components/markdown-elements';
 import {
   ContentSection,
   ContentPrimary,
@@ -16,7 +17,9 @@ import {getIllustrationComponent} from '../../../components/illustrations/illust
 const listData = [
   `Does mark-up convey meaning and structure?`,
   `Are all interactive elements keyboard accessible?`,
-  `Do images have //alt// tags?`,
+  <>
+    Do images have <InlineCode>alt</InlineCode> tags?
+  </>,
   `Is there clear feedback after submitting a form?`,
   `Do videos have captions?`,
   `Can animations/transitions be turned off?`,
@@ -103,7 +106,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
         <ContentSecondary headline="Need answers fast?">
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
-              href="https://www.w3.org/WAI/tips/designing/"
+              href="https://www.w3.org/WAI/tips/developing/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
@@ -119,7 +122,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
-              How to meet WCAG(quick reference)
+              How to meet WCAG (quick reference)
             </Link>{' '}
             - search and filter WCAG criteria.
           </P>
@@ -166,9 +169,8 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             >
               Making audio and video accessible
             </Link>{' '}
-            -how to make media accessible.
+            - how to make media accessible.
           </P>
-          <br />
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
@@ -178,7 +180,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             >
               MDN web docs accessibility guide
             </Link>{' '}
-            -learning modules and resources from Mozilla.
+            - learning modules and resources from Mozilla.
           </P>
         </ContentSecondary>
       </ContentSection>

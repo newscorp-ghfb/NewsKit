@@ -142,7 +142,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
             >
               How to write in plain English
             </Link>{' '}
-            -from the Plain English Campaign.
+            - from the Plain English Campaign.
           </P>
           <br />
 

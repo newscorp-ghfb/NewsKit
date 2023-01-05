@@ -152,8 +152,7 @@ export const routes = [
             title: 'Design',
             page: true,
             id: '/getting-started/accessibility/design',
-            description:
-              'Guides to start building web applications with NewsKit.',
+            description: 'Design provides the foundations for accessibility.',
             illustration: 'guides/accessibility-design/hero',
             cardTitle: 'Design',
           },
@@ -179,7 +178,7 @@ export const routes = [
             page: true,
             id: '/getting-started/accessibility/testing',
             description:
-              'NewsKit uses Jest and React Testing Library for unit testing.',
+              'Tools and checkers to help you test against accessibility guidelines.',
             illustration: 'guides/accessibility-test/hero',
             cardTitle: 'Test',
           },

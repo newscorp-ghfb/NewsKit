@@ -25,7 +25,7 @@ const infoIcon = (
 const whatNextCards = [
   {
     media: getIllustrationComponent('guides/accessibility-code/hero'),
-    title: 'Code for accessibility',
+    title: 'Test for accessibility',
     description:
       'Building to WCAG standards maintains quality and supports assistive technologies.',
     href: '/getting-started/accessibility/code',
@@ -43,7 +43,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Test for accessibility',
       description:
-        'Tools and checkers to help you test against accessibilty guidelines.',
+        'Tools and checkers to help you test against accessibility guidelines.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -60,6 +60,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="test-design"
           headline="Test your design"
+          toc="Test your design"
           description={
             <>
               <br />
@@ -84,7 +85,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                   >
                     WebAim contrast checker
                   </Link>{' '}
-                  - check colour contrast of text and graphics.
+                  - check colour contrast of text and graphics
                 </>
                 <>
                   <Link
@@ -92,9 +93,9 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
-                    Color Oracle
+                    Color Oracle{' '}
                   </Link>
-                  - colour vision deficiency simulator.
+                  - colour vision deficiency simulator
                 </>
                 <>
                   <Link
@@ -104,7 +105,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                   >
                     Stark
                   </Link>
-                  - Figma accessibility plugin.
+                  - Figma accessibility plugin
                 </>
                 <>
                   <Link
@@ -114,8 +115,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                   >
                     The A11y Project
                   </Link>
-                  - a comprehensive list of design and user experience
-                  resources.
+                  - a comprehensive list of design and user experience resources
                 </>
                 <>
                   <Link
@@ -125,7 +125,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                   >
                     Accessible Prototypes Playground
                   </Link>
-                  - accessible Figma prototypes for screenreaders.
+                  - accessible Figma prototypes for screenreaders
                 </>
               </UnorderedList>
               <br />
@@ -216,6 +216,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="screenreader-design"
           headline="Test with screenreaders"
+          toc="Test with screen readers"
           description={
             <UnorderedList
               markerAlign="start"
@@ -301,6 +302,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
           showSeparator
           id="screenreader-design"
           headline="Test your writing"
+          toc="Test your writing"
           description={
             <>
               <br />
@@ -335,6 +337,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
         <ContentPrimary
           showSeparator
           id="screenreader-design"
+          toc="Checklists"
           headline="Checklists"
           description={
             <>

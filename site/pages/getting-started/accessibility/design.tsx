@@ -15,7 +15,7 @@ import {getIllustrationComponent} from '../../../components/illustrations/illust
 
 const listData = [
   `Do all elements meet colour contrast to an AA standard?`,
-  `Does content have a clear order and hierarchy.`,
+  `Does content have a clear order and hierarchy?`,
   `Are interactive elements easy to identify?`,
   `Are navigation options clear and consistent?`,
   `Are layouts responsive to different viewports?`,
