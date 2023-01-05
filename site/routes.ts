@@ -180,7 +180,7 @@ export const routes = [
             id: '/getting-started/accessibility/test',
             description:
               'NewsKit uses Jest and React Testing Library for unit testing.',
-            illustration: 'guides/overview/testing',
+            illustration: 'guides/accessibility-test/hero',
             cardTitle: 'Test',
           },
         ],
