@@ -370,7 +370,7 @@ jobs:
             - node_modules/*
             - .storybook/private-fonts
             - src/version-number.json
-            - ./project/.cache
+            - cypress/*
       - slack/notify:
           <<: *slack_notify
 
@@ -395,6 +395,7 @@ jobs:
           root: ~/project
           paths:
             - .cache
+            - cypress/*
       - slack/notify:
           <<: *slack_notify
 
