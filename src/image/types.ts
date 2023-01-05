@@ -16,24 +16,22 @@ import {LogicalMarginProps} from '../utils/logical-properties';
 
 type LoadingType = 'lazy' | 'eager';
 
-interface HTMLImageElementWithNoSizes
-  extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'height' | 'width'> {}
-
-export type ImageCommonProps = {
+export interface ImageCommonProps
+  extends React.ImgHTMLAttributes<HTMLImageElement> {
   isLoading?: boolean;
   loadingAspectRatio?: MQ<string>;
   overrides?: {
     height?: MQ<HeightProperty<string>>;
     width?: MQ<WidthProperty<string>>;
   } & LogicalMarginProps;
-};
+}
 
 interface ImageAlignmentProps {
   fit?: ObjectFitProperty;
   position?: ObjectPositionProperty<string>;
 }
 export interface StyledImageProps
-  extends HTMLImageElementWithNoSizes,
+  extends React.ImgHTMLAttributes<HTMLImageElement>,
     ImageAlignmentProps,
     ImageCommonProps {
   loading?: LoadingType;
@@ -48,7 +46,7 @@ export interface StyledPictureProps extends ImageCommonProps {
   } & ImageCommonProps['overrides'];
 }
 export interface ImageProps
-  extends HTMLImageElementWithNoSizes,
+  extends React.ImgHTMLAttributes<HTMLImageElement>,
     ImageAlignmentProps {
   placeholderIcon?: boolean;
   loadingAspectRatio?: MQ<string>;

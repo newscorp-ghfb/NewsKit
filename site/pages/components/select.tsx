@@ -332,7 +332,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="select"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v4.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/select',
       figmaUrl:
