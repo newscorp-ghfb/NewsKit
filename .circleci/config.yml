@@ -370,7 +370,7 @@ jobs:
             - node_modules/*
             - .storybook/private-fonts
             - src/version-number.json
-            - .cache/Cypress
+            - cypress/*
       - slack/notify:
           <<: *slack_notify
 
