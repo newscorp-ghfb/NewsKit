@@ -66,7 +66,7 @@ const commonPropsRows = [
     name: 'controlled',
     type: 'boolean',
     description: `Force Select component to controlled`,
-    default: false,
+    default: 'false',
   },
 ];
 
