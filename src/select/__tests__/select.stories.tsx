@@ -1366,7 +1366,7 @@ const months = [
   'November',
   'December',
 ];
-const days = Array.from(new Array(30)).map((_, index) => index);
+const days = Array.from(new Array(30)).map((_, index) => String(index));
 
 export const SelectDayAndMnth = () => {
   const [month, setMonth] = React.useState('');
@@ -1398,8 +1398,8 @@ export const SelectDayAndMnth = () => {
         onChange={v => setDay(v.target.value)}
       >
         {days.map(i => (
-          <SelectOption selected={i + 1 === day} value={`${i + 1}`}>
-            {i + 1}
+          <SelectOption selected={i === day} value={i}>
+            {i}
           </SelectOption>
         ))}
       </Select>
