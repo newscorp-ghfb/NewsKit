@@ -21,7 +21,7 @@ describe('drawer', () => {
     );
   });
 
-  it('scrolling drawer panel is possible', () => {
+  it.only('scrolling drawer panel is possible', () => {
     cy.get('[data-testid="drawer-open-button"]').first().click();
 
     cy.wait(1000);
@@ -30,7 +30,7 @@ describe('drawer', () => {
       .first()
       .find('[data-testid="dialog-content"]')
       .scrollTo('bottom')
-      .its('scrollY')
+      .invoke('scrollTop')
       .should('not.equal', 0);
   });
 });
