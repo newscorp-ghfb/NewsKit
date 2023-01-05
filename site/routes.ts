@@ -177,7 +177,7 @@ export const routes = [
           {
             title: 'Test',
             page: true,
-            id: '/getting-started/accessibility/test',
+            id: '/getting-started/accessibility/testing',
             description:
               'NewsKit uses Jest and React Testing Library for unit testing.',
             illustration: 'guides/accessibility-test/hero',
