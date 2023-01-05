@@ -250,12 +250,12 @@ describe('Image', () => {
       height: '200px',
     };
 
-    test('renders with default dimentions', () => {
+    test('renders with default dimensions', () => {
       const fragment = renderToFragmentWithTheme(Image, props);
       expect(fragment).toMatchSnapshot();
     });
 
-    test('renders with number dimentions', () => {
+    test('renders with number dimensions', () => {
       const fragment = renderToFragmentWithTheme(Image, {
         src: '/placeholder-3x2.png',
         alt: 'Example Image',
@@ -265,7 +265,7 @@ describe('Image', () => {
       expect(fragment).toMatchSnapshot();
     });
 
-    test('renders with width & height as overrides at the same time', () => {
+    test('overrides should take priority when render with width & height as props & overrides', () => {
       const fragment = renderToFragmentWithTheme(Image, {
         ...props,
         overrides: {
