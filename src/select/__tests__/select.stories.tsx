@@ -1369,8 +1369,8 @@ const months = [
 const days = Array.from(new Array(30)).map((_, index) => index);
 
 export const SelectDayAndMnth = () => {
-  const [month, setMonth] = React.useState(null);
-  const [day, setDay] = React.useState(null);
+  const [month, setMonth] = React.useState('');
+  const [day, setDay] = React.useState('');
 
   return (
     <>
@@ -1382,7 +1382,7 @@ export const SelectDayAndMnth = () => {
         placeholder="Select month"
         onChange={v => {
           setMonth(v.target.value);
-          setDay(null);
+          setDay('');
         }}
         controlled
       >
