@@ -41,7 +41,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="Audio Player"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v5.3.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/audio-player-composable',

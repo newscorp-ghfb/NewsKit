@@ -1076,6 +1076,14 @@ Object {
         "opacity": "{{overlays.opacity040}}",
       },
     },
+    "flagBeta": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -1162,6 +1170,14 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interface020}}",
+      },
+    },
+    "flagSupported": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -3808,6 +3824,14 @@ Object {
         "opacity": "{{overlays.opacity040}}",
       },
     },
+    "flagBeta": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -3894,6 +3918,14 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interface020}}",
+      },
+    },
+    "flagSupported": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -6543,6 +6575,14 @@ Object {
         "opacity": "{{overlays.opacity040}}",
       },
     },
+    "flagBeta": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -6629,6 +6669,14 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interface020}}",
+      },
+    },
+    "flagSupported": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -9275,6 +9323,14 @@ Object {
         "opacity": "{{overlays.opacity040}}",
       },
     },
+    "flagBeta": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -9361,6 +9417,14 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interface020}}",
+      },
+    },
+    "flagSupported": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -12010,6 +12074,14 @@ Object {
         "opacity": "{{overlays.opacity040}}",
       },
     },
+    "flagBeta": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -12096,6 +12168,14 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interface020}}",
+      },
+    },
+    "flagSupported": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -14742,6 +14822,14 @@ Object {
         "opacity": "{{overlays.opacity040}}",
       },
     },
+    "flagBeta": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -14828,6 +14916,14 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interface020}}",
+      },
+    },
+    "flagSupported": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -17477,6 +17573,14 @@ Object {
         "opacity": "{{overlays.opacity040}}",
       },
     },
+    "flagBeta": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -17563,6 +17667,14 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interface020}}",
+      },
+    },
+    "flagSupported": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "foundationFeatureCardButton": Object {
@@ -20209,6 +20321,14 @@ Object {
         "opacity": "{{overlays.opacity040}}",
       },
     },
+    "flagBeta": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface020}}",
+        "borderColor": "{{colors.interfaceNeutral020}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkContrast}}",
+      },
+    },
     "flagBrand": Object {
       "base": Object {
         "backgroundColor": "{{colors.interfaceBrand030}}",
@@ -20295,6 +20415,14 @@ Object {
       },
       "hover": Object {
         "backgroundColor": "{{colors.interface020}}",
+      },
+    },
+    "flagSupported": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusDefault}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "foundationFeatureCardButton": Object {
