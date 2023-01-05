@@ -143,7 +143,7 @@ export const routes = [
           {
             title: 'Getting started',
             page: true,
-            id: '/getting-started/accessibility/accessibility-getting-started',
+            id: '/getting-started/accessibility/getting-started',
             description: 'Equal access for everyone.',
             illustration: 'guides/accessibility-getting-started/hero',
             cardTitle: 'Getting started',

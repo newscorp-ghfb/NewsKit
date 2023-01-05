@@ -8,7 +8,7 @@ import {
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {UnorderedList} from '../../../../src/unordered-list';
-import {LinkInline} from '../../../../src/link';
+import {Link} from '../../../components/link';
 import {P} from '../../../../src/typography';
 import {MediaList} from '../../../components/media-list';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
@@ -86,12 +86,12 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
                 Considerations will vary depending on what you are writing.
                 <br />
                 See the{' '}
-                <LinkInline
+                <Link
                   href="https://www.a11yproject.com/checklist/"
                   external={false}
                 >
                   a11y project checklist
-                </LinkInline>{' '}
+                </Link>{' '}
                 for a complete list of content considerations.
               </P>
             </>
@@ -100,60 +100,60 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
 
         <ContentSecondary headline="Need answers fast?">
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/tips/writing/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Writing clear and understandable content
-            </LinkInline>{' '}
+            </Link>{' '}
             - the top 7 things to consider with examples and links to WCAG
             guidelines.
           </P>
         </ContentSecondary>
         <ContentSecondary headline="Have time?" showSeparator>
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/WCAG2/supplemental/objectives/o3-clear-content/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Writing clear and understandable content
-            </LinkInline>{' '}
+            </Link>{' '}
             - W3C example patterns and user personas.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.gov.uk/guidance/guidance-and-tools-for-digital-accessibility#designing-accessible-content"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Designing accessible content
-            </LinkInline>{' '}
+            </Link>{' '}
             - from the Government Digital Service.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="http://www.plainenglish.co.uk/free-guides.html"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               How to write in plain English
-            </LinkInline>{' '}
+            </Link>{' '}
             -from the Plain English Campaign.
           </P>
           <br />
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://sites.google.com/news.co.uk/d-and-i/inclusive-terminology?authuser=0"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               The common sense guide to inclusion terminology
-            </LinkInline>{' '}
+            </Link>{' '}
             (internal)
           </P>
         </ContentSecondary>

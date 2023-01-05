@@ -8,8 +8,8 @@ import {
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {UnorderedList} from '../../../../src/unordered-list';
-import {LinkInline} from '../../../../src/link';
 import {P} from '../../../../src/typography';
+import {Link} from '../../../components/link';
 import {MediaList} from '../../../components/media-list';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
 
@@ -84,12 +84,12 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
                 Considerations will vary depending on what you are designing.
                 <br />
                 See the{' '}
-                <LinkInline
+                <Link
                   href="https://www.a11yproject.com/checklist/"
                   external={false}
                 >
                   a11y project checklist
-                </LinkInline>{' '}
+                </Link>{' '}
                 for a complete list of design considerations.
               </P>
             </>
@@ -98,49 +98,49 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
 
         <ContentSecondary headline="Need answers fast?">
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/tips/designing/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Designing for web accessibility
-            </LinkInline>{' '}
+            </Link>{' '}
             - the top 10 things to consider with examples and links to WCAG
             guidelines.
           </P>
         </ContentSecondary>
         <ContentSecondary headline="Have time?" showSeparator>
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.accessibility.uxdesign.cc/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Giving a damn about accessibility
-            </LinkInline>{' '}
+            </Link>{' '}
             - a comprehensive handbook on designing for accessibility and
             dealing with stakeholders.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/WCAG21/Understanding/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Understanding WCAG 2.1
-            </LinkInline>{' '}
+            </Link>{' '}
             - understanding WCAG criteria with visual examples.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/ARIA/apg/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               ARIA authoring practices guides
-            </LinkInline>{' '}
+            </Link>{' '}
             - how to use the accessibility semantics defined by ARIA.
           </P>
           <br />

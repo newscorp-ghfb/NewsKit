@@ -5,10 +5,10 @@ import {
   ContentPrimary,
   ContentSecondary,
 } from '../../../components/content-structure';
+import {Link} from '../../../components/link';
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {UnorderedList} from '../../../../src/unordered-list';
-import {LinkStandalone} from '../../../../src/link';
 import {P} from '../../../../src/typography';
 import {MediaList} from '../../../components/media-list';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
@@ -88,18 +88,19 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
               },
             }}
           >
-            <LinkStandalone href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">
+            <Link href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">
               Introduction to web accessibility
-            </LinkStandalone>
-            <LinkStandalone href="https://www.w3.org/WAI/people-use-web/">
+            </Link>
+            <Link href="https://www.w3.org/WAI/people-use-web/">
               How people with disabilities use the web
-            </LinkStandalone>
+            </Link>
           </UnorderedList>
         </ContentSecondary>
         <ContentSecondary
           headline="Which standards do we follow?"
           showSeparator
         >
+          <br />
           <P overrides={paragraphHeadlineOverrides}>
             Web Content Accessibility Guidelines (WCAG)
           </P>
@@ -109,13 +110,13 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
             WCAG is the international shared standard for web accessibility.
             Newskit core components are tested to a WCAG 2.1 Level AA standard.
           </P>
-          <LinkStandalone
+          <Link
             overrides={linkOverrides}
             href="https://www.w3.org/TR/WCAG21/"
             external={false}
           >
             WCAG 2.1
-          </LinkStandalone>
+          </Link>
           <br />
           <br />
           <br />
@@ -126,25 +127,25 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
             content accessible to users with disabilities who use assistive
             technologies. WAI ARIA.
           </P>
-          <LinkStandalone
+          <Link
             overrides={linkOverrides}
             href="https://www.w3.org/TR/wai-aria/"
             external={false}
           >
             WAI ARIA
-          </LinkStandalone>
+          </Link>
           <br />
           <br />
           <br />
           <P overrides={paragraphHeadlineOverrides}>News UK Polices</P>
           <br />
-          <LinkStandalone
+          <Link
             overrides={linkOverrides}
             href="https://sites.google.com/news.co.uk/wearenewspoliciesandprocedures/home-page?authuser=0&pli=1"
             external={false}
           >
             Policies and guidelines (internal link)
-          </LinkStandalone>
+          </Link>
         </ContentSecondary>
         <ContentSecondary
           headline="Which laws must we comply with?"
@@ -158,13 +159,13 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
             and therefore accessibility.
           </P>
           <br />
-          <LinkStandalone
+          <Link
             overrides={linkOverrides}
             href="https://www.legislation.gov.uk/ukpga/2010/15/section/29"
             external={false}
           >
             UK Equality Act on provision of services
-          </LinkStandalone>
+          </Link>
           <br />
           <br />
           <br />
@@ -176,13 +177,13 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
             in everyday activities.
           </P>
           <br />
-          <LinkStandalone
+          <Link
             overrides={linkOverrides}
             href="https://www.ada.gov/topics/intro-to-ada/"
             external={false}
           >
             The Americans with Disabilities Act
-          </LinkStandalone>
+          </Link>
         </ContentSecondary>
       </ContentSection>
       <ContentSection sectionName="what’s next?">

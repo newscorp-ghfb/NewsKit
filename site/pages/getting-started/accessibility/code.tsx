@@ -8,7 +8,7 @@ import {
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {GuidePageTemplate} from '../../../templates/guide-page-template/guide-page-template';
 import {UnorderedList} from '../../../../src/unordered-list';
-import {LinkInline} from '../../../../src/link';
+import {Link} from '../../../components/link';
 import {P} from '../../../../src/typography';
 import {MediaList} from '../../../components/media-list';
 import {getIllustrationComponent} from '../../../components/illustrations/illustration-loader';
@@ -88,12 +88,12 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
                 Considerations will vary depending on what you are building.
                 <br />
                 See the{' '}
-                <LinkInline
+                <Link
                   href="https://www.a11yproject.com/checklist/"
                   external={false}
                 >
                   a11y project checklist
-                </LinkInline>{' '}
+                </Link>{' '}
                 for a complete list of code considerations.
               </P>
             </>
@@ -102,82 +102,82 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
 
         <ContentSecondary headline="Need answers fast?">
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/tips/designing/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Developing for web accessibility
-            </LinkInline>{' '}
+            </Link>{' '}
             - the top 10 things to consider with examples and links to WCAG
             guidelines.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/WCAG21/quickref/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               How to meet WCAG(quick reference)
-            </LinkInline>{' '}
+            </Link>{' '}
             - search and filter WCAG criteria.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://w3c.github.io/aria-practices/examples/landmarks/index.html"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               ARIA landmarks examples
-            </LinkInline>{' '}
+            </Link>{' '}
             - show and hide landmark examples.
           </P>
         </ContentSecondary>
         <ContentSecondary headline="Have time?" showSeparator>
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/WCAG21/Understanding/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Understanding WCAG 2.1
-            </LinkInline>{' '}
+            </Link>{' '}
             - understanding WCAG criteria with visual examples.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/ARIA/apg/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               ARIA authoring practices guide
-            </LinkInline>{' '}
+            </Link>{' '}
             - how to use the accessibility semantics defined by ARIA.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://www.w3.org/WAI/media/av/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               Making audio and video accessible
-            </LinkInline>{' '}
+            </Link>{' '}
             -how to make media accessible.
           </P>
           <br />
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <LinkInline
+            <Link
               href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility"
               overrides={{typographyPreset: 'editorialParagraph030'}}
               external={false}
             >
               MDN web docs accessibility guide
-            </LinkInline>{' '}
+            </Link>{' '}
             -learning modules and resources from Mozilla.
           </P>
         </ContentSecondary>
