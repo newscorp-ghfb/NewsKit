@@ -21,7 +21,7 @@ describe('drawer', () => {
     );
   });
 
-  it.only('scrolling drawer panel is possible', () => {
+  it('scrolling drawer panel is possible', () => {
     cy.get('[data-testid="drawer-open-button"]').first().click();
 
     cy.wait(1000);
