@@ -4,7 +4,8 @@ import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 
 export const isLinkExternal = (href: string) => {
-  const hostName = href.match(/^https?:\/\/(?:www\.)?([^/?#]+)(?:[/?#]|$)/i);
+  const hostName =
+    href && href.match(/^https?:\/\/(?:www\.)?([^/?#]+)(?:[/?#]|$)/i);
 
   if (hostName && typeof window !== 'undefined') {
     const hostLocation = window.location.host;
