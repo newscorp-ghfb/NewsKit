@@ -44,6 +44,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       eventContext = {},
       eventOriginator = 'select',
       onOpenChange,
+      // force select in controlled mode
       controlled = false,
       ...restProps
     } = props;
