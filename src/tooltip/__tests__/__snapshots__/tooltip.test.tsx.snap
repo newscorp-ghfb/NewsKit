@@ -116,23 +116,27 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -253,23 +257,27 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -390,23 +398,27 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -527,23 +539,27 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -649,19 +665,23 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -782,23 +802,27 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -919,23 +943,27 @@ exports[`Tooltip pointer padding should be applied with token distance override 
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1056,23 +1084,27 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1193,23 +1225,27 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1315,19 +1351,23 @@ exports[`Tooltip should render correct styles: default 1`] = `
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1435,19 +1475,23 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1568,23 +1612,27 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1705,23 +1753,27 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1842,23 +1894,27 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -1979,23 +2035,27 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
 }
 
 <div
-    aria-hidden="true"
-    class="Tooltip nk-tooltip-enter-done emotion-0"
-    id="floating-MOCK-ID"
-    role="tooltip"
-    tabindex="-1"
+    class="nk-tooltip-enter-done"
   >
-    <p
-      class="emotion-1"
-      data-testid="floating-element-panel"
+    <div
+      aria-hidden="true"
+      class="Tooltip nk-tooltip-enter-done emotion-0"
+      id="floating-MOCK-ID"
+      role="tooltip"
       tabindex="-1"
     >
-      hello
-    </p>
-    <div
-      class="emotion-2"
-      id="floating-MOCK-ID-pointer"
-    />
+      <p
+        class="emotion-1"
+        data-testid="floating-element-panel"
+        tabindex="-1"
+      >
+        hello
+      </p>
+      <div
+        class="emotion-2"
+        id="floating-MOCK-ID-pointer"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

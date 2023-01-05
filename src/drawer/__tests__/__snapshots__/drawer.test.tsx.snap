@@ -445,9 +445,13 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -462,60 +466,64 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                Drawer header content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-4"
-              >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-7"
-            >
-              <button
-                aria-label="close"
-                class="emotion-8"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-4"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer header content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
+                >
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-8"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-9 emotion-10"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -963,9 +971,13 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 <div>
     <div>
       <div
-        class="emotion-0 nk-overlay-enter-done"
-        data-testid="overlay"
-      />
+        class="nk-overlay-appear-done nk-overlay-enter-done"
+      >
+        <div
+          class="emotion-0"
+          data-testid="overlay"
+        />
+      </div>
       <div
         data-focus-guard="true"
         style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -980,60 +992,64 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
         data-focus-lock-disabled="false"
       >
         <div
-          aria-hidden="false"
-          aria-modal="true"
-          class="nk-drawer-enter-done emotion-1"
-          data-testid="inlineDrawer"
-          role="dialog"
+          class="nk-drawer-appear-done nk-drawer-enter-done"
         >
           <div
-            class="emotion-2"
-          />
-          <div
-            class="emotion-3"
+            aria-hidden="false"
+            aria-modal="true"
+            class="nk-drawer-enter-done emotion-1"
+            data-testid="inlineDrawer"
+            role="dialog"
           >
-            <p
-              class="emotion-4"
+            <div
+              class="emotion-2"
+            />
+            <div
+              class="emotion-3"
             >
-              Drawer header content
-            </p>
-          </div>
-          <div
-            class="emotion-5"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-4"
-            >
-              Drawer body content
-            </p>
-          </div>
-          <div
-            class="emotion-7"
-          >
-            <button
-              aria-label="close"
-              class="emotion-8"
-              data-testid="button"
-              type="button"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-9 emotion-10"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <p
+                class="emotion-4"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
+                Drawer header content
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="dialog-content"
+            >
+              <p
+                class="emotion-4"
+              >
+                Drawer body content
+              </p>
+            </div>
+            <div
+              class="emotion-7"
+            >
+              <button
+                aria-label="close"
+                class="emotion-8"
+                data-testid="button"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1487,9 +1503,13 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 <div>
     <div>
       <div
-        class="emotion-0 nk-overlay-enter-done"
-        data-testid="overlay"
-      />
+        class="nk-overlay-appear-done nk-overlay-enter-done"
+      >
+        <div
+          class="emotion-0"
+          data-testid="overlay"
+        />
+      </div>
       <div
         data-focus-guard="true"
         style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -1504,60 +1524,64 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
         data-focus-lock-disabled="false"
       >
         <div
-          aria-hidden="false"
-          aria-modal="true"
-          class="nk-drawer-enter-done emotion-1"
-          data-testid="inlineDrawer"
-          role="dialog"
+          class="nk-drawer-appear-done nk-drawer-enter-done"
         >
           <div
-            class="emotion-2"
-          />
-          <div
-            class="emotion-3"
+            aria-hidden="false"
+            aria-modal="true"
+            class="nk-drawer-enter-done emotion-1"
+            data-testid="inlineDrawer"
+            role="dialog"
           >
-            <p
-              class="emotion-4"
+            <div
+              class="emotion-2"
+            />
+            <div
+              class="emotion-3"
             >
-              Drawer header content
-            </p>
-          </div>
-          <div
-            class="emotion-5"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-4"
-            >
-              Drawer body content
-            </p>
-          </div>
-          <div
-            class="emotion-7"
-          >
-            <button
-              aria-label="close"
-              class="emotion-8"
-              data-testid="button"
-              type="button"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-9 emotion-10"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <p
+                class="emotion-4"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
+                Drawer header content
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="dialog-content"
+            >
+              <p
+                class="emotion-4"
+              >
+                Drawer body content
+              </p>
+            </div>
+            <div
+              class="emotion-7"
+            >
+              <button
+                aria-label="close"
+                class="emotion-8"
+                data-testid="button"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -2009,9 +2033,13 @@ exports[`Drawer render inline-drawer 1`] = `
 <div>
     <div>
       <div
-        class="emotion-0 nk-overlay-enter-done"
-        data-testid="overlay"
-      />
+        class="nk-overlay-appear-done nk-overlay-enter-done"
+      >
+        <div
+          class="emotion-0"
+          data-testid="overlay"
+        />
+      </div>
       <div
         data-focus-guard="true"
         style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -2026,60 +2054,64 @@ exports[`Drawer render inline-drawer 1`] = `
         data-focus-lock-disabled="false"
       >
         <div
-          aria-hidden="false"
-          aria-modal="true"
-          class="nk-drawer-enter-done emotion-1"
-          data-testid="inlineDrawer"
-          role="dialog"
+          class="nk-drawer-appear-done nk-drawer-enter-done"
         >
           <div
-            class="emotion-2"
-          />
-          <div
-            class="emotion-3"
+            aria-hidden="false"
+            aria-modal="true"
+            class="nk-drawer-enter-done emotion-1"
+            data-testid="inlineDrawer"
+            role="dialog"
           >
-            <p
-              class="emotion-4"
+            <div
+              class="emotion-2"
+            />
+            <div
+              class="emotion-3"
             >
-              Drawer header content
-            </p>
-          </div>
-          <div
-            class="emotion-5"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-4"
-            >
-              Drawer body content
-            </p>
-          </div>
-          <div
-            class="emotion-7"
-          >
-            <button
-              aria-label="close"
-              class="emotion-8"
-              data-testid="button"
-              type="button"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-9 emotion-10"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <p
+                class="emotion-4"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
+                Drawer header content
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+              data-testid="dialog-content"
+            >
+              <p
+                class="emotion-4"
+              >
+                Drawer body content
+              </p>
+            </div>
+            <div
+              class="emotion-7"
+            >
+              <button
+                aria-label="close"
+                class="emotion-8"
+                data-testid="button"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="emotion-9 emotion-10"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -2450,53 +2482,55 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
         <div
           data-focus-lock-disabled="disabled"
         >
-          <div
-            aria-hidden="true"
-            aria-modal="true"
-            class="nk-drawer-exit-done emotion-0"
-            data-testid="drawer"
-            role="dialog"
-          >
+          <div>
             <div
-              class="emotion-1"
-            />
-            <div
-              class="emotion-2"
-              data-testid="dialog-content"
+              aria-hidden="true"
+              aria-modal="true"
+              class="nk-drawer-exit-done emotion-0"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-3"
+              <div
+                class="emotion-1"
+              />
+              <div
+                class="emotion-2"
+                data-testid="dialog-content"
               >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <button
-                aria-label="close"
-                class="emotion-5"
-                data-testid="button"
-                tabindex="-1"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-3"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-5"
+                  data-testid="button"
+                  tabindex="-1"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-6 emotion-7"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -2955,9 +2989,13 @@ exports[`Drawer renders default 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -2972,60 +3010,64 @@ exports[`Drawer renders default 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                Drawer header content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-4"
-              >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-7"
-            >
-              <button
-                aria-label="close"
-                class="emotion-8"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-4"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer header content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
+                >
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-8"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-9 emotion-10"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -3410,9 +3452,13 @@ exports[`Drawer renders drawer with overrides 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -3427,51 +3473,55 @@ exports[`Drawer renders drawer with overrides 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
-              data-testid="dialog-content"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
+                data-testid="dialog-content"
               >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-            >
-              <button
-                aria-label="close"
-                class="emotion-6"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-4"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-6"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-7 emotion-8"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -3956,9 +4006,13 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -3973,72 +4027,76 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
           data-focus-lock-disabled="disabled"
         >
           <div
-            aria-hidden="false"
-            aria-modal="false"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-              data-autofocus-inside="true"
+              aria-hidden="false"
+              aria-modal="false"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
               <div
-                class="emotion-3"
-              />
-              <div
-                class="emotion-4"
+                class="emotion-2"
+                data-autofocus-inside="true"
               >
-                <p
-                  class="emotion-5"
+                <div
+                  class="emotion-3"
+                />
+                <div
+                  class="emotion-4"
                 >
-                  Drawer header content
-                </p>
-              </div>
-              <div
-                class="emotion-6"
-                data-testid="dialog-content"
-              >
-                <p
-                  class="emotion-5"
-                >
-                  Drawer body content
-                </p>
-              </div>
-              <div
-                class="emotion-8"
-              >
-                <button
-                  aria-describedby="mock-nk-1"
-                  aria-label="close"
-                  class="emotion-9"
-                  data-testid="button"
-                  type="button"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-10 emotion-11"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <p
+                    class="emotion-5"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </button>
+                    Drawer header content
+                  </p>
+                </div>
+                <div
+                  class="emotion-6"
+                  data-testid="dialog-content"
+                >
+                  <p
+                    class="emotion-5"
+                  >
+                    Drawer body content
+                  </p>
+                </div>
+                <div
+                  class="emotion-8"
+                >
+                  <button
+                    aria-describedby="mock-nk-1"
+                    aria-label="close"
+                    class="emotion-9"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-10 emotion-11"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span
+                  class="emotion-12"
+                  id="mock-nk-1"
+                >
+                  With the next tab you will be leaving the dialog window.
+                </span>
               </div>
-              <span
-                class="emotion-12"
-                id="mock-nk-1"
-              >
-                With the next tab you will be leaving the dialog window.
-              </span>
             </div>
           </div>
         </div>
@@ -4493,9 +4551,13 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -4510,55 +4572,59 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-labelledby="headerLabel"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
+              aria-hidden="false"
+              aria-labelledby="headerLabel"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
               <div
-                id="headerLabel"
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                Overridden dialog header
-              </div>
-            </div>
-            <div
-              class="emotion-4"
-              data-testid="dialog-content"
-            />
-            <div
-              class="emotion-5"
-            >
-              <button
-                aria-label="close"
-                class="emotion-6"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  id="headerLabel"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Overridden dialog header
+                </div>
+              </div>
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
+              />
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-6"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-7 emotion-8"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -4992,9 +5058,13 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -5009,57 +5079,61 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-describedby="description purpose"
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
-              data-testid="dialog-content"
+              aria-describedby="description purpose"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
               <div
-                id="description"
-              >
-                Overridden dialog components
-              </div>
+                class="emotion-2"
+              />
               <div
-                id="purpose"
+                class="emotion-3"
+                data-testid="dialog-content"
               >
-                Showing different styles
-              </div>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <button
-                aria-label="close"
-                class="emotion-5"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  id="description"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Overridden dialog components
+                </div>
+                <div
+                  id="purpose"
+                >
+                  Showing different styles
+                </div>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-5"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-6 emotion-7"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -5518,9 +5592,13 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -5535,60 +5613,64 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                Drawer header content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-4"
-              >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-7"
-            >
-              <button
-                aria-label="close"
-                class="emotion-8"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-4"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer header content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
+                >
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-8"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-9 emotion-10"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -6047,9 +6129,13 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -6064,60 +6150,64 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                Drawer header content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-4"
-              >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-7"
-            >
-              <button
-                aria-label="close"
-                class="emotion-8"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-4"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer header content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
+                >
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-8"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-9 emotion-10"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -6576,9 +6666,13 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -6593,60 +6687,64 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                Drawer header content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-4"
-              >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-7"
-            >
-              <button
-                aria-label="close"
-                class="emotion-8"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-4"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer header content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
+                >
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-8"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-9 emotion-10"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -7105,9 +7203,13 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -7122,60 +7224,64 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                Drawer header content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-4"
-              >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-7"
-            >
-              <button
-                aria-label="close"
-                class="emotion-8"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-9 emotion-10"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-4"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer header content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
+                >
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-8"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-9 emotion-10"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -7500,9 +7606,13 @@ exports[`Drawer renders without close button 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -7517,33 +7627,37 @@ exports[`Drawer renders without close button 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                Drawer header content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-4"
+                <p
+                  class="emotion-4"
+                >
+                  Drawer header content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
               >
-                Drawer body content
-              </p>
+                <p
+                  class="emotion-4"
+                >
+                  Drawer body content
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -7981,9 +8095,13 @@ exports[`Drawer renders without header 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -7998,51 +8116,55 @@ exports[`Drawer renders without header 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
-              data-testid="dialog-content"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-4"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
+                data-testid="dialog-content"
               >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-5"
-            >
-              <button
-                aria-label="close"
-                class="emotion-6"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-4"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-6"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-7 emotion-8"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -8339,9 +8461,13 @@ exports[`Drawer renders without header and close 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -8356,21 +8482,25 @@ exports[`Drawer renders without header and close 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-              data-testid="dialog-content"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-3"
+              <div
+                class="emotion-2"
+                data-testid="dialog-content"
               >
-                Drawer body content
-              </p>
+                <p
+                  class="emotion-3"
+                >
+                  Drawer body content
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -8763,60 +8893,64 @@ exports[`Drawer renders without overlay 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-0"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-1"
-            />
-            <div
-              class="emotion-2"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-0"
+              data-testid="drawer"
+              role="dialog"
             >
-              <p
-                class="emotion-3"
+              <div
+                class="emotion-1"
+              />
+              <div
+                class="emotion-2"
               >
-                Drawer header content
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-              data-testid="dialog-content"
-            >
-              <p
-                class="emotion-3"
-              >
-                Drawer body content
-              </p>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <button
-                aria-label="close"
-                class="emotion-7"
-                data-testid="button"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-8 emotion-9"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="emotion-3"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  Drawer header content
+                </p>
+              </div>
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-3"
+                >
+                  Drawer body content
+                </p>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-7"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-8 emotion-9"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -9256,9 +9390,13 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
-          data-testid="overlay"
-        />
+          class="nk-overlay-appear-done nk-overlay-enter-done"
+        >
+          <div
+            class="emotion-0"
+            data-testid="overlay"
+          />
+        </div>
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -9273,47 +9411,51 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
           data-focus-lock-disabled="false"
         >
           <div
-            aria-hidden="false"
-            aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done"
           >
             <div
-              class="emotion-2"
-            />
-            <div
-              class="emotion-3"
-              data-testid="dialog-content"
+              aria-hidden="false"
+              aria-modal="true"
+              class="nk-drawer-enter-done emotion-1"
+              data-testid="drawer"
+              role="dialog"
             >
-              Dialog content
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <button
-                aria-label="close"
-                class="emotion-5"
-                data-testid="button"
-                type="button"
+              <div
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
+                data-testid="dialog-content"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-6 emotion-7"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                Dialog content
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-5"
+                  data-testid="button"
+                  type="button"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-6 emotion-7"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -9683,48 +9825,52 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
           data-focus-lock-disabled="disabled"
         >
           <div
-            aria-hidden="true"
-            aria-modal="true"
-            class="nk-drawer-exit-done emotion-0"
-            data-testid="drawer"
-            role="dialog"
+            class="nk-drawer-appear-done nk-drawer-enter-done nk-drawer-exit-done"
           >
             <div
-              class="emotion-1"
-            />
-            <div
-              class="emotion-2"
-              data-testid="dialog-content"
+              aria-hidden="true"
+              aria-modal="true"
+              class="nk-drawer-exit-done emotion-0"
+              data-testid="drawer"
+              role="dialog"
             >
-              Dialog content
-            </div>
-            <div
-              class="emotion-3"
-            >
-              <button
-                aria-label="close"
-                class="emotion-4"
-                data-testid="button"
-                tabindex="-1"
-                type="button"
+              <div
+                class="emotion-1"
+              />
+              <div
+                class="emotion-2"
+                data-testid="dialog-content"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-5 emotion-6"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                Dialog content
+              </div>
+              <div
+                class="emotion-3"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-4"
+                  data-testid="button"
+                  tabindex="-1"
+                  type="button"
                 >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-5 emotion-6"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
