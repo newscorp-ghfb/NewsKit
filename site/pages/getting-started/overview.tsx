@@ -25,6 +25,10 @@ const designRouteList: Item[] =
 const codeRouteList: Item[] =
   guidesRouteList.filter(route => route.title === 'Code')[0].subNav || [];
 
+const accessibilityRouteList: Item[] =
+  guidesRouteList.filter(route => route.title === 'Accessibility')[0].subNav ||
+  [];
+
 const getCardList = (routeList: Item[]) =>
   routeList
     .filter(route => route.page && route?.illustration)
@@ -37,6 +41,7 @@ const getCardList = (routeList: Item[]) =>
 
 const designRouteListCards = getCardList(designRouteList);
 const codeRouteListCards = getCardList(codeRouteList);
+const accessibilityListCards = getCardList(accessibilityRouteList);
 
 const HeaderImage = () => (
   <Illustration path="guides/overview/header-image" viewBox="0 0 1572 997" />
@@ -75,6 +80,17 @@ const Overview = (layoutProps: LayoutProps) => (
           >
             <MediaList
               cards={codeRouteListCards}
+              gridProps={{xsRowGutter: 'space050'}}
+            />
+          </ContentPrimary>
+        </ContentSection>
+        <ContentSection sectionName="getting started accessibility">
+          <ContentPrimary
+            headline="Getting started - accessibility"
+            description="Essential reading for accessibility."
+          >
+            <MediaList
+              cards={accessibilityListCards}
               gridProps={{xsRowGutter: 'space050'}}
             />
           </ContentPrimary>

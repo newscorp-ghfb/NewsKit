@@ -56,12 +56,12 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="write accessible websites">
+      <ContentSection sectionName="write accessible content">
         <ContentPrimary
           showSeparator
-          id="write-accessible-websites"
-          toc="write accessible websites"
-          headline="Write accessible code"
+          id="write-accessible-content"
+          toc="Write accessible content"
+          headline="Write accessible content"
           description={
             <>
               When writing for the web, consider:
@@ -145,7 +145,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
             -from the Plain English Campaign.
           </P>
           <br />
-          <br />
+
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="https://sites.google.com/news.co.uk/d-and-i/inclusive-terminology?authuser=0"

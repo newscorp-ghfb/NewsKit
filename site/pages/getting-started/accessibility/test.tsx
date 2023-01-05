@@ -134,6 +134,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
         </ContentPrimary>
         <ContentPrimary
           id="code-design"
+          toc="Test your code"
           headline="Test your code"
           description=""
         >

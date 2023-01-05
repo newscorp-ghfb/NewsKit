@@ -58,11 +58,11 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
     }}
   >
     <ComponentPageCell>
-      <ContentSection sectionName="design accessible websites">
+      <ContentSection sectionName="Build accessible code">
         <ContentPrimary
           showSeparator
-          id="design-accessible-websites"
-          toc="design accessible websites"
+          id="build-accessible-websites"
+          toc="Build accessible code"
           headline="Build accessible code"
           description={
             <>
