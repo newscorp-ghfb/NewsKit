@@ -36,7 +36,7 @@ const whatNextCards = [
     title: 'Test for accessibility',
     description:
       'Tools and checkers to help you test against accessibilty guidelines.',
-    href: '/getting-started/accessibility/test',
+    href: '/getting-started/accessibility/testing',
   },
 ];
 

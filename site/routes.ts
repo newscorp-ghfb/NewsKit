@@ -154,7 +154,7 @@ export const routes = [
             id: '/getting-started/accessibility/design',
             description:
               'Guides to start building web applications with NewsKit.',
-            illustration: '/guides/accessibility-design/hero',
+            illustration: 'guides/accessibility-design/hero',
             cardTitle: 'Design',
           },
           {
@@ -163,7 +163,7 @@ export const routes = [
             id: '/getting-started/accessibility/code',
             description:
               'Building to WCAG standards maintains quality and supports assistive technologies.',
-            illustration: '/guides/accessibility-code/hero',
+            illustration: 'guides/accessibility-code/hero',
             cardTitle: 'Code',
           },
           {
@@ -171,7 +171,7 @@ export const routes = [
             page: true,
             id: '/getting-started/accessibility/write',
             description: 'Clear copy in plain language benefits everyone.',
-            illustration: '/guides/accessibility-write/hero',
+            illustration: 'guides/accessibility-write/hero',
             cardTitle: 'Write',
           },
           {

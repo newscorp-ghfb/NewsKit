@@ -1041,7 +1041,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           aria-current="false"
                           class="emotion-13"
                           data-testid="buttonLink"
-                          href="/getting-started/accessibility/test"
+                          href="/getting-started/accessibility/testing"
                         >
                           <span
                             class="emotion-14"
@@ -4612,7 +4612,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                                 aria-current="false"
                                 class="emotion-11"
                                 data-testid="buttonLink"
-                                href="/getting-started/accessibility/test"
+                                href="/getting-started/accessibility/testing"
                                 tabindex="-1"
                               >
                                 <span
@@ -7804,7 +7804,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                           aria-current="false"
                           class="emotion-13"
                           data-testid="buttonLink"
-                          href="/getting-started/accessibility/test"
+                          href="/getting-started/accessibility/testing"
                         >
                           <span
                             class="emotion-14"
@@ -11356,7 +11356,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                                 aria-current="false"
                                 class="emotion-11"
                                 data-testid="buttonLink"
-                                href="/getting-started/accessibility/test"
+                                href="/getting-started/accessibility/testing"
                               >
                                 <span
                                   class="emotion-12"
