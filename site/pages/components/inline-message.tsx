@@ -200,46 +200,42 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use an inline message component.',
+      introduction: 'Here’s how and when to use the inline message:',
       cards: [
         {
+          title: 'Do use inline messages to give context',
           description:
-            'Use an inline message to provide additional context or supporting information to a particular UI element or function e.g. delivery terms, within a delivery address form.',
+            'Use an inline message to provide additional context or supporting information to a particular UI element or function (e.g. delivery terms within a delivery address form).',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
-            'components/inline-message/inline-message-do-1-illustration',
+            'components/inline-message/usage/do-01',
           ),
         },
         {
+          title: 'Don’t use for critical messages',
           description:
-            'Use an inline message for critical system-level messages such as errors e.g. loss of functionality. Something that partially or fully interrupts a user experience is more appropriate e.g. a Banner or Modal.',
+            'Avoid using inline messages for critical system-level messages such as errors (e.g. loss of functionality). For critical messages, a component that partially or fully interrupts the user experience is more appropriate (e.g. banner or modal).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
-            'components/inline-message/inline-message-dont-1-illustration',
+            'components/inline-message/usage/dont-01',
           ),
         },
         {
+          title: 'Don’t use to add context to a single input',
           description:
-            'Carefully consider if you need to use more than one inline message per screen, as this could increase a users cognitive load and become less effective in drawing attention to content.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/inline-message/inline-message-do-2-illustration',
-          ),
-        },
-        {
-          description:
-            'Use an inline message to add context to a single input such as a Text input. Assistive text within an input is more appropriate.',
+            'Avoid using inline messages to add context to a single input (e.g. text input). Use assistive text instead.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
-            'components/inline-message/inline-message-dont-2-illustration',
+            'components/inline-message/usage/dont-03',
           ),
         },
         {
-          description: 'Use multiple inline messages in close proximately.',
+          title: "Don't use multiple inline messages on a screen",
+          description:
+            'Think carefully before including more than one inline message per screen, as they can increase a user’s cognitive load and become less effective in drawing attention to content.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
-            'components/inline-message/inline-message-dont-3-illustration',
+            'components/inline-message/usage/dont-02',
           ),
         },
       ],
