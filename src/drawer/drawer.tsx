@@ -36,6 +36,7 @@ const ThemelessDrawer = React.forwardRef<HTMLDivElement, DrawerProps>(
     ref,
   ) => {
     const theme = useTheme();
+    const cssTransitionNodeRef = React.useRef(null);
     const drawerRef = useRef<HTMLDivElement>(null);
     const drawerPath = inline ? 'inlineDrawer' : 'drawer';
 
@@ -74,6 +75,7 @@ const ThemelessDrawer = React.forwardRef<HTMLDivElement, DrawerProps>(
         >
           {handleCloseButtonClick => (
             <CSSTransition
+              nodeRef={cssTransitionNodeRef}
               in={open}
               timeout={getTransitionDuration(
                 `${drawerPath}.panel.${placement}`,
@@ -83,23 +85,25 @@ const ThemelessDrawer = React.forwardRef<HTMLDivElement, DrawerProps>(
               appear
             >
               {state => (
-                <StyledDrawer
-                  aria-hidden={!open}
-                  ref={composeRefs(drawerRef, ref)}
-                  className={getTransitionClassName('nk-drawer', state)}
-                  open={open}
-                  disableFocusTrap={disableFocusTrap}
-                  handleCloseButtonClick={handleCloseButtonClick}
-                  path={drawerPath}
-                  data-testid={drawerPath}
-                  placement={placement}
-                  closePosition={closePosition}
-                  overrides={overrides}
-                  inline={inline}
-                  {...props}
-                >
-                  {children}
-                </StyledDrawer>
+                <div ref={cssTransitionNodeRef}>
+                  <StyledDrawer
+                    aria-hidden={!open}
+                    ref={composeRefs(drawerRef, ref)}
+                    className={getTransitionClassName('nk-drawer', state)}
+                    open={open}
+                    disableFocusTrap={disableFocusTrap}
+                    handleCloseButtonClick={handleCloseButtonClick}
+                    path={drawerPath}
+                    data-testid={drawerPath}
+                    placement={placement}
+                    closePosition={closePosition}
+                    overrides={overrides}
+                    inline={inline}
+                    {...props}
+                  >
+                    {children}
+                  </StyledDrawer>
+                </div>
               )}
             </CSSTransition>
           )}

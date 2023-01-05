@@ -51,6 +51,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
   }, [unMutedVolume, volume]);
 
   const theme = useTheme();
+  const cssTransitionNodeRef = React.useRef(null);
 
   const buttonOverrides = {
     ...deepMerge(
@@ -182,6 +183,7 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
       {useSliderContainer && (
         <GridLayoutItem area="slider">
           <CSSTransition
+            nodeRef={cssTransitionNodeRef}
             in={open}
             timeout={getTransitionDuration(
               `audioPlayerVolumeControl`,
@@ -193,15 +195,17 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
             onExited={() => setIsVisibleHandler(false)}
           >
             {(state: string) => (
-              <StyledVolumeSliderContainer
-                className={getTransitionClassName('nk-vc', state)}
-                layout={layout}
-                overrides={overrides}
-                open={open}
-                visible={isVisible}
-              >
-                {sliderComponent}
-              </StyledVolumeSliderContainer>
+              <div ref={cssTransitionNodeRef}>
+                <StyledVolumeSliderContainer
+                  className={getTransitionClassName('nk-vc', state)}
+                  layout={layout}
+                  overrides={overrides}
+                  open={open}
+                  visible={isVisible}
+                >
+                  {sliderComponent}
+                </StyledVolumeSliderContainer>
+              </div>
             )}
           </CSSTransition>
           <ScreenReaderOnly id={volumeSliderInstructionId} aria-hidden="true">

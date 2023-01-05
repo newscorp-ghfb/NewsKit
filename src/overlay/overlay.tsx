@@ -44,9 +44,12 @@ const ThemlessOverlay: React.FC<OverlayProps> = ({
   ...props
 }) => {
   const theme = useTheme();
+  // To learn more about why this is needed: https://github.com/reactjs/react-transition-group/issues/668#issuecomment-695162879
+  const cssTransitionNodeRef = React.useRef(null);
 
   return (
     <CSSTransition
+      nodeRef={cssTransitionNodeRef}
       in={open}
       timeout={getTransitionDuration('overlay', '')({theme, overrides})}
       classNames="nk-overlay"
@@ -54,7 +57,9 @@ const ThemlessOverlay: React.FC<OverlayProps> = ({
       unmountOnExit
       appear
     >
-      <BaseOverlay {...props} overrides={overrides} />
+      <div ref={cssTransitionNodeRef}>
+        <BaseOverlay {...props} overrides={overrides} />
+      </div>
     </CSSTransition>
   );
 };
