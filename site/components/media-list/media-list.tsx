@@ -64,12 +64,13 @@ export const MediaList: React.FC<MediaListProps> = ({
         return (
           // eslint-disable-next-line react/no-array-index-key
           <Cell {...cellColumnList} key={`index-${index}`}>
-            {cardProps.href && (
+            {cardProps.href ? (
               <NextLink legacyBehavior href={cardProps.href} passHref>
                 {styledCardComponentWithProps}
               </NextLink>
+            ) : (
+              styledCardComponentWithProps
             )}
-            {!cardProps.href && styledCardComponentWithProps}
           </Cell>
         );
       }),
