@@ -54,7 +54,8 @@ export default class MyDocument extends Document {
               `
               p div,
               p p,
-              p ul {
+              p ul,
+              a a {
                     outline: 7px solid red;
                     outline-offset: 7px;
               }`}

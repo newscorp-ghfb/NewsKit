@@ -5,6 +5,8 @@ import {
   getSizingFromTheme,
   getColorFromTheme,
   getSSRId,
+  useInstrumentation,
+  EventTrigger,
 } from 'newskit';
 import {KnobContainer} from './common';
 
@@ -73,6 +75,9 @@ export const InputKnob: React.FC<InputKnobProps> = ({
   );
   const inputType = typeof value === 'number' ? 'number' : 'text';
   const v = inputType === 'text' && !value ? '' : value;
+
+  const {fireEvent} = useInstrumentation();
+
   return (
     <KnobContainer>
       {LabelForInput}
@@ -82,6 +87,16 @@ export const InputKnob: React.FC<InputKnobProps> = ({
         name={label}
         value={v}
         data-testid={`${TEST_ID_PREFIX}-${lowercaseLabel}`}
+        onBlur={({target}) => {
+          fireEvent({
+            trigger: EventTrigger.Change,
+            originator: 'input-knob',
+            context: {
+              prop: label,
+              value: target.value,
+            },
+          });
+        }}
         onChange={({target}) => {
           onChange(inputType === 'number' ? +target.value : target.value);
         }}
