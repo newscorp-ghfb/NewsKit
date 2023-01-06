@@ -171,32 +171,25 @@ const BlockComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Block.',
+      introduction: 'Here’s how and when to use the block:',
       cards: [
         {
+          title: 'Do use the block to apply spacing and style presets',
           description:
-            'Use the Block as a container to easily apply spacing and style presets around other elements.',
+            'Use the block as a container to easily apply spacing and style presets around other elements.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/block/do-01'),
+          media: getIllustrationComponent('components/block/usage/do-01'),
         },
         {
+          title: 'Don’t use for equal spacing on multiple elements',
           description: (
             <>
-              Avoid using the Block component when equal spacing needs to be
-              applied to multiple elements. In this case, the{' '}
-              <Link href="https://www.newskit.co.uk/components/stack/">
-                Stack
-              </Link>
-              component, or the{' '}
-              <Link href="https://www.newskit.co.uk/components/grid/">
-                Grid{' '}
-              </Link>
-              component should be used.
+              Avoid using the block when you need to apply equal spacing to
+              multiple elements.
             </>
           ),
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/block/dont-01'),
+          media: getIllustrationComponent('components/block/usage/dont-01'),
         },
       ],
     }}

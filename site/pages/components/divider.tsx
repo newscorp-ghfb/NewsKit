@@ -123,24 +123,18 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Divider component.',
+      introduction: 'Here’s how and when to use the divider:',
       cards: [
         {
+          title: 'Do use as a semantic divider element',
           description: (
             <>
-              Dividers should be used when there is a requirement for a semantic
-              divider element.
-              <br />
-              <br />
-              Where there is need for a decorative border using a border on a
-              StylePreset may be more appropriate.
+              Use dividers when you need a semantic divider element. If you need
+              a decorative border, consider a border on a stylePreset instead.
             </>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/divider/do-1-illustration',
-          ),
+          media: getIllustrationComponent('components/divider/do-01'),
         },
       ],
     }}

@@ -236,23 +236,24 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Popover component.',
+      introduction: 'Here’s how and when to use the popover:',
       cards: [
         {
+          title: 'Do use popovers for non-critical information',
           description:
-            'Popovers are intended for displaying non-critical information related to an element. Content passed to a Popover should match the Aria-label and description.',
+            'Popovers are intended for displaying non-critical information related to an element. Content passed to a popover should match the aria-label and description.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do1'),
         },
         {
+          title: 'Don’t use overlays with popovers',
           description: (
             <>
-              Avoid using an overlay with a Popover, as they are intended to
-              display non-critical information, and shouldn’t prevent a user
-              from performing other tasks on the screen. In these cases,
-              consider using a <Link href="/components/modal/">Modal</Link>{' '}
-              instead.
+              Avoid using an overlay with a popover, as they’re intended for
+              non-critical information and shouldn’t prevent a user from
+              performing other tasks on the screen. If you’re displaying
+              critical information, consider a{' '}
+              <Link href="/components/modal/">Modal</Link> instead.
             </>
           ),
           kind: UsageKind.DONT,
@@ -260,33 +261,38 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         },
 
         {
+          title: 'Do make popovers clear and concise',
           description:
-            'Ensure information presented in a Popover is concise. Users who are on a small screen or with high zoom will need to move around the screen to read the content, potentially losing their place or resulting in cognitive overload.',
+            'Avoid large chunks of text in popovers. Too much text can cause cognitive overload, and users with smaller screens or who are zoomed in can lose their place.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do2'),
         },
         {
+          title: 'Don’t use rich text formatting',
           description:
-            'Avoid using large chunks of text in Popovers as this may result in cognitive overload for some users.',
+            'Rich text formatting (e.g. bold, italics, icons) won’t be conveyed to screen reader users.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont2'),
         },
 
         {
+          title: 'Do keep popovers in view until dismissed',
           description:
-            'Popovers should remain in view until a user dismisses them.',
+            'Popovers should remain in view until the user dismisses them.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do3'),
         },
         {
+          title: 'Don’t cover the attributed element',
           description:
-            'Avoid rich content. Formatting will not be conveyed to screen reader users eg. bold, italicised text, or icons)',
+            'Avoid covering the element that the popover is attributed to, as it will lose its context.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont3'),
         },
         {
+          title: 'Don’t hide elements required across breakpoints',
           description:
-            'Avoid covering the element that the Popover is attributed to, as it will lose its context.',
+            'Have equivalent functionality for all breakpoints (e.g. a drawer for top-level navigation items on xs or sm breakpoints where space is limited).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont4'),
         },

@@ -298,36 +298,39 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Drawer component.',
+      introduction: 'Here’s how and when to use the drawer:',
       cards: [
         {
+          title: 'Do use for revealing additional content',
           description:
-            'Drawers are appropriate for navigation, for filtering content, or for use in checkout flows.',
+            'Drawers are appropriate for navigation, for filtering content, or in checkout flows.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/drawer/drawer-do-1-illustration',
           ),
         },
         {
+          title: 'Don’t use for top-level navigation on larger screens',
           description:
-            'Avoid using Drawers for top-level navigation items when there is space for them to be exposed on larger screens.',
+            'Avoid using drawers for top-level navigation items when there’s space to expose them on larger screens.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/drawer/drawer-dont-1-illustration',
           ),
         },
         {
+          title: 'Do keep drawers close to related content',
           description:
-            'Drawers should be in close proximity to the content it’s attributed to.',
+            'A drawer should be in close proximity to the content it relates to.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/drawer/drawer-do-2-illustration',
           ),
         },
         {
+          title: 'Don’t nest tiered drawers',
           description:
-            'Avoid nesting tiered Drawers to prevent usability issues. Consider using an alternative component such as an Accordion or rethink the page structure.',
+            'Avoid nesting tiered drawers as this can cause usability issues. Consider an alternative component (e.g. accordion) or rethink the page structure.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/drawer/drawer-dont-2-illustration',

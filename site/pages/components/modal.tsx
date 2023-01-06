@@ -328,10 +328,10 @@ const ModalComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Modal component.',
+      introduction: 'Here’s how and when to use the modal:',
       cards: [
         {
+          title: 'Do use modals for critical information',
           description: (
             <>
               Modals are appropriate for notifications that provide the user
@@ -343,19 +343,21 @@ const ModalComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/modal/do01'),
+          media: getIllustrationComponent('components/modal/usage/do-01'),
         },
         {
+          title: 'Don’t use modals for marketing',
           description:
-            'Avoid using Modals for marketing or advertising purposes, as they are intended for critical information or requests for user input.',
+            'Avoid using modals for marketing or advertising purposes. They’re intended for critical information or requests for user input.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/modal/dont01'),
+          media: getIllustrationComponent('components/modal/usage/dont-01'),
         },
         {
+          title: 'Do keep modals close to related content',
           description:
-            'Modals should be in close proximity to the content it’s attributed to.',
+            'A modal should be in close proximity to the content it relates to.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/modal/do02'),
+          media: getIllustrationComponent('components/modal/usage/do-02'),
         },
       ],
     }}
