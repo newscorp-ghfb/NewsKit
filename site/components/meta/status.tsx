@@ -1,8 +1,8 @@
 import React from 'react';
 import {Block, Flag, Headline, Stack, TextBlock} from 'newskit';
-import {MetaFlagStylePresets} from './types';
+import {MetaFlagStylePresets, MetaStatus} from './types';
 
-export const Status: React.FC<{status?: string}> = ({status}) =>
+export const Status: React.FC<{status?: MetaStatus}> = ({status}) =>
   status ? (
     <Stack flow="vertical-left" spaceInline="space040">
       <Headline overrides={{typographyPreset: 'utilityLabel020'}}>
@@ -11,7 +11,7 @@ export const Status: React.FC<{status?: string}> = ({status}) =>
       <Flag
         size="small"
         overrides={{
-          stylePreset: MetaFlagStylePresets.Supported,
+          stylePreset: MetaFlagStylePresets[status],
         }}
       >
         <Block spaceInset="space010">
