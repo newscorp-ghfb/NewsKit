@@ -6,7 +6,6 @@ import {
   css,
   getColorFromTheme,
   MQ,
-  getSSRId,
   EventTrigger,
   useInstrumentation,
 } from 'newskit';
@@ -122,17 +121,17 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
       <LegacyBlock display="inline" position="relative">
         <StyledFieldset>
           <StyledLegend>{name}</StyledLegend>
-          {options.map(({value, label}) => {
+          {options.map(({value, label}, index) => {
             const checked = setChecked(selectedValue, value);
 
-            const id = `multichoice-knob-${getSSRId()}-${label}-${value}`;
+            const id = `multichoice-knob-${index}-${label}-${value}`;
             return (
               <React.Fragment key={id}>
                 <StyledInput
                   type="radio"
                   id={id}
                   data-testid={value}
-                  name={getSSRId() + name}
+                  name={index + name}
                   defaultChecked={checked}
                   onClick={() => {
                     if (onChange) onChange(value);
