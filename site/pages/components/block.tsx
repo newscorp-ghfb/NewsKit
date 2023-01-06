@@ -156,7 +156,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Style',
-          // todo: link to /theme/presets/style-presets/
+          // todo_content: link to /theme/presets/style-presets/
           description: 'Apply styling to the block with style presets.',
           media: getIllustrationComponent('components/block/style'),
         },
