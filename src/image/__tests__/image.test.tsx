@@ -242,6 +242,41 @@ describe('Image', () => {
     });
   });
 
+  describe('width & height as props', () => {
+    const props = {
+      src: '/placeholder-3x2.png',
+      alt: 'Example Image',
+      width: '300px',
+      height: '200px',
+    };
+
+    test('renders with default dimensions', () => {
+      const fragment = renderToFragmentWithTheme(Image, props);
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('renders with number dimensions', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        src: '/placeholder-3x2.png',
+        alt: 'Example Image',
+        width: '300',
+        height: '200',
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    test('overrides should take priority when render with width & height as props & overrides', () => {
+      const fragment = renderToFragmentWithTheme(Image, {
+        ...props,
+        overrides: {
+          width: '250px',
+          height: '500px',
+        },
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+  });
+
   describe('client side hook', () => {
     test('manually call onload handler if rendered on server side', () => {
       const imageRef = {

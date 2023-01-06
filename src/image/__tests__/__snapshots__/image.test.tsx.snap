@@ -1809,3 +1809,193 @@ exports[`Image stylePreset with renderOnServer & loading=lazy 1`] = `
   </picture>
 </DocumentFragment>
 `;
+
+exports[`Image width & height as props overrides should take priority when render with width & height as props & overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: relative;
+  width: 100%;
+  display: block;
+  width: 250px;
+  height: 500px;
+  border-radius: 0;
+  background-color: #F1F1F1;
+}
+
+.emotion-0 svg {
+  fill: #ABABAB;
+}
+
+.emotion-1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-2 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  height: 500px;
+  width: 250px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+<picture
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      height="200px"
+      src="/placeholder-3x2.png"
+      width="300px"
+    />
+  </picture>
+</DocumentFragment>
+`;
+
+exports[`Image width & height as props renders with default dimensions 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-top: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 0;
+  background-color: #F1F1F1;
+}
+
+.emotion-0 svg {
+  fill: #ABABAB;
+}
+
+.emotion-1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-2 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+<picture
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      height="200px"
+      src="/placeholder-3x2.png"
+      width="300px"
+    />
+  </picture>
+</DocumentFragment>
+`;
+
+exports[`Image width & height as props renders with number dimensions 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-top: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 0;
+  background-color: #F1F1F1;
+}
+
+.emotion-0 svg {
+  fill: #ABABAB;
+}
+
+.emotion-1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-2 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+<picture
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    />
+    <img
+      alt="Example Image"
+      class="emotion-2"
+      height="200"
+      src="/placeholder-3x2.png"
+      width="300"
+    />
+  </picture>
+</DocumentFragment>
+`;
