@@ -91,8 +91,8 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     href="https://colororacle.org/"
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
-                    Color Oracle{' '}
-                  </Link>
+                    Color Oracle
+                  </Link>{' '}
                   - colour vision deficiency simulator
                 </>
                 <>
