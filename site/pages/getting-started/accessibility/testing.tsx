@@ -101,7 +101,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Stark
-                  </Link>
+                  </Link>{' '}
                   - Figma accessibility plugin
                 </>
                 <>
@@ -110,7 +110,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     The A11y Project
-                  </Link>
+                  </Link>{' '}
                   - a comprehensive list of design and user experience resources
                 </>
                 <>
@@ -119,7 +119,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Accessible Prototypes Playground
-                  </Link>
+                  </Link>{' '}
                   - accessible Figma prototypes for screenreaders
                 </>
               </UnorderedList>
@@ -155,7 +155,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                   >
                     Eslint-plugin-jsx-a11y linting plugin
                   </Link>{' '}
-                  - find accessibility issues in React apps.
+                  - find accessibility issues in React apps
                 </>
                 <>
                   <Link
@@ -163,9 +163,9 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Cypress axe
-                  </Link>
+                  </Link>{' '}
                   - commands for Cypress to run accessibilty checks with
-                  axe-core.
+                  axe-core
                 </>
                 <>
                   <Link
@@ -173,9 +173,9 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     WebAim’s keyboard accessibility guide
-                  </Link>
+                  </Link>{' '}
                   - check all interactive elements are keyboard accessible and
-                  focus feedback is visible.
+                  focus feedback is visible
                 </>
                 <>
                   <Link
@@ -183,10 +183,10 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     ChromeLens dev tools extension
-                  </Link>
+                  </Link>{' '}
                   - check the tab order is logical using the ‘trace tab path’
                   function or use the ‘show tabbing order’ function in Chrome or
-                  Firefox.
+                  Firefox
                 </>
                 <>
                   <Link
@@ -194,9 +194,9 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Tiny Helpers
-                  </Link>
+                  </Link>{' '}
                   - A collection of free single-purpose online tools for web
-                  developers.
+                  developers
                 </>
               </UnorderedList>
             </>
@@ -308,9 +308,9 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Readable
-                  </Link>
+                  </Link>{' '}
                   - get a readability score to measure whether content is likely
-                  to be understood by the intended reader.
+                  to be understood by the intended reader
                 </>
               </UnorderedList>
             </>
@@ -355,7 +355,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     WebAIM
-                  </Link>
+                  </Link>{' '}
                   - comprehensive checklists in plain English.
                 </>
                 <>
@@ -364,7 +364,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     WebAim web accessibility evaluation guide
-                  </Link>
+                  </Link>{' '}
                   - accessibility checks by content type.
                 </>
                 <>
@@ -373,7 +373,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Accessibility checklist
-                  </Link>
+                  </Link>{' '}
                   - Figma checklist of key considerations.
                 </>
               </UnorderedList>
