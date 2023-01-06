@@ -1026,7 +1026,7 @@ jobs:
             echo "Adding nedded files into the NextJs app"
 
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
-            cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
+            cp ./scripts/templates-integration-test/cypress.config.js ./newskit-integration-test/
             cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
             mkdir -p ./newskit-integration-test/cypress/integration
             cp ./scripts/templates-integration-test/theme-checker.cy.js ./newskit-integration-test/cypress/integration
