@@ -1023,13 +1023,13 @@ jobs:
       - run:
           name: Prepare the NextJs app
           command: |
-            echo "Adding nedded files into the NextJs app"
+            echo "Adding needed files into the NextJs app"
 
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.config.js ./newskit-integration-test/
             cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
-            mkdir -p ./newskit-integration-test/cypress/integration
-            cp ./scripts/templates-integration-test/theme-checker.cy.js ./newskit-integration-test/cypress/integration
+            mkdir -p ./newskit-integration-test/cypress/e2e
+            cp -R ./scripts/templates-integration-test/cypress ./newskit-integration-test
 
 
             echo "Installing needed packages into the NextJS app"
