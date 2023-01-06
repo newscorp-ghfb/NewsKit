@@ -86,10 +86,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
                 Considerations will vary depending on what you are writing.
                 <br />
                 See the{' '}
-                <Link
-                  href="https://www.a11yproject.com/checklist/"
-                  external={false}
-                >
+                <Link href="https://www.a11yproject.com/checklist/">
                   a11y project checklist
                 </Link>{' '}
                 for a complete list of content considerations.
@@ -103,7 +100,6 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/tips/writing/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Writing clear and understandable content
             </Link>{' '}
@@ -116,7 +112,6 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/WCAG2/supplemental/objectives/o3-clear-content/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Writing clear and understandable content
             </Link>{' '}
@@ -127,7 +122,6 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.gov.uk/guidance/guidance-and-tools-for-digital-accessibility#designing-accessible-content"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Designing accessible content
             </Link>{' '}
@@ -138,7 +132,6 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
             <Link
               href="http://www.plainenglish.co.uk/free-guides.html"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               How to write in plain English
             </Link>{' '}

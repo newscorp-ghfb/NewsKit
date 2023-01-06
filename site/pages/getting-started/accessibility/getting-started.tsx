@@ -110,11 +110,7 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
             WCAG is the international shared standard for web accessibility.
             Newskit core components are tested to a WCAG 2.1 Level AA standard.
           </P>
-          <Link
-            overrides={linkOverrides}
-            href="https://www.w3.org/TR/WCAG21/"
-            external={false}
-          >
+          <Link overrides={linkOverrides} href="https://www.w3.org/TR/WCAG21/">
             WCAG 2.1
           </Link>
           <br />
@@ -130,7 +126,6 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           <Link
             overrides={linkOverrides}
             href="https://www.w3.org/TR/wai-aria/"
-            external={false}
           >
             WAI ARIA
           </Link>
@@ -162,7 +157,6 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           <Link
             overrides={linkOverrides}
             href="https://www.legislation.gov.uk/ukpga/2010/15/section/29"
-            external={false}
           >
             UK Equality Act on provision of services
           </Link>
@@ -180,7 +174,6 @@ const AccessibilityGettingStarted = (layoutProps: LayoutProps) => (
           <Link
             overrides={linkOverrides}
             href="https://www.ada.gov/topics/intro-to-ada/"
-            external={false}
           >
             The Americans with Disabilities Act
           </Link>

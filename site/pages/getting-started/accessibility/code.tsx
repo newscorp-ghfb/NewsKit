@@ -91,10 +91,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
                 Considerations will vary depending on what you are building.
                 <br />
                 See the{' '}
-                <Link
-                  href="https://www.a11yproject.com/checklist/"
-                  external={false}
-                >
+                <Link href="https://www.a11yproject.com/checklist/">
                   a11y project checklist
                 </Link>{' '}
                 for a complete list of code considerations.
@@ -108,7 +105,6 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/tips/developing/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Developing for web accessibility
             </Link>{' '}
@@ -120,7 +116,6 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/WCAG21/quickref/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               How to meet WCAG (quick reference)
             </Link>{' '}
@@ -131,7 +126,6 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             <Link
               href="https://w3c.github.io/aria-practices/examples/landmarks/index.html"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               ARIA landmarks examples
             </Link>{' '}
@@ -143,7 +137,6 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/WCAG21/Understanding/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Understanding WCAG 2.1
             </Link>{' '}
@@ -154,7 +147,6 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/ARIA/apg/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               ARIA authoring practices guide
             </Link>{' '}
@@ -165,7 +157,6 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/media/av/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Making audio and video accessible
             </Link>{' '}
@@ -176,7 +167,6 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
             <Link
               href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               MDN web docs accessibility guide
             </Link>{' '}

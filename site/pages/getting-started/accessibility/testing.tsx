@@ -80,7 +80,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://webaim.org/resources/contrastchecker/"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     WebAim contrast checker
@@ -90,7 +89,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://colororacle.org/"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Color Oracle{' '}
@@ -100,7 +98,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://www.figma.com/community/plugin/732603254453395948/Stark"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Stark
@@ -110,7 +107,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://www.a11yproject.com/resources/#design-and-user-experience"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     The A11y Project
@@ -120,7 +116,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://www.figma.com/community/file/1167124335986833540"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Accessible Prototypes Playground
@@ -156,7 +151,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://www.npmjs.com/package/eslint-plugin-jsx-a11y"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Eslint-plugin-jsx-a11y linting plugin
@@ -166,7 +160,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://github.com/component-driven/cypress-axe"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Cypress axe
@@ -177,7 +170,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://webaim.org/techniques/keyboard/"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     WebAim’s keyboard accessibility guide
@@ -188,7 +180,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://chromelens.github.io/chromelens/"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     ChromeLens dev tools extension
@@ -200,7 +191,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://tiny-helpers.dev/accessibility/"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Tiny Helpers
@@ -235,7 +225,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <br />
                 <Link
                   href="https://www.youtube.com/watch?v=5R-6WvAihms"
-                  external={false}
                   overrides={{typographyPreset: 'editorialParagraph030'}}
                 >
                   Watch A11ycasts Voiceover basics
@@ -243,7 +232,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <br />
                 <Link
                   href="https://webaim.org/articles/voiceover/"
-                  external={false}
                   overrides={{
                     typographyPreset: 'editorialParagraph030',
                   }}
@@ -259,7 +247,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <br />
                 <Link
                   href="https://www.youtube.com/watch?v=0Zpzl4EKCco"
-                  external={false}
                   overrides={{typographyPreset: 'editorialParagraph030'}}
                 >
                   Watch A11ycasts Talkback basics
@@ -267,7 +254,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <br />
                 <Link
                   href="https://webaim.org/articles/talkback/"
-                  external={false}
                   overrides={{typographyPreset: 'editorialParagraph030'}}
                 >
                   Read WebAim’s Talkback guide
@@ -280,7 +266,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <br />
                 <Link
                   href="https://www.youtube.com/watch?v=Jao3s_CwdRU"
-                  external={false}
                   overrides={{typographyPreset: 'editorialParagraph030'}}
                 >
                   Watch A11ycasts NVDA basics
@@ -288,7 +273,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <br />
                 <Link
                   href="https://webaim.org/articles/nvda/"
-                  external={false}
                   overrides={{typographyPreset: 'editorialParagraph030'}}
                 >
                   Read WebAim’s NVDA guide
@@ -321,7 +305,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://app.readable.com/text/"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Readable
@@ -342,8 +325,8 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
           description={
             <>
               <InlineMessage icon={infoIcon}>
-                Use checklists for guidance. Checklists dont cover off all or
-                replaces testing.
+                Use checklists for guidance. Checklists don&apos;t cover off all
+                scenarios or replace testing.
               </InlineMessage>
               <br />
               <br />
@@ -362,7 +345,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://www.a11yproject.com/checklist/"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     A11y Project
@@ -370,7 +352,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                   and{' '}
                   <Link
                     href="https://webaim.org/standards/wcag/checklist"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     WebAIM
@@ -380,7 +361,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://webaim.org/articles/evaluationguide/"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     WebAim web accessibility evaluation guide
@@ -390,7 +370,6 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
                 <>
                   <Link
                     href="https://www.figma.com/proto/V7YQVtYIHS5gWKalbTvubq/%F0%9F%9F%A2-Handoff-Documentation?page-id=163%3A66379&node-id=163%3A66926&viewport=496%2C49%2C0.15&scaling=scale-down-width&hide-ui=1"
-                    external={false}
                     overrides={{typographyPreset: 'editorialParagraph030'}}
                   >
                     Accessibility checklist

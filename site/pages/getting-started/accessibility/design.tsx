@@ -84,10 +84,7 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
                 Considerations will vary depending on what you are designing.
                 <br />
                 See the{' '}
-                <Link
-                  href="https://www.a11yproject.com/checklist/"
-                  external={false}
-                >
+                <Link href="https://www.a11yproject.com/checklist/">
                   a11y project checklist
                 </Link>{' '}
                 for a complete list of design considerations.
@@ -101,7 +98,6 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/tips/designing/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Designing for web accessibility
             </Link>{' '}
@@ -114,7 +110,6 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.accessibility.uxdesign.cc/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Giving a damn about accessibility
             </Link>{' '}
@@ -126,7 +121,6 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/WCAG21/Understanding/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               Understanding WCAG 2.1
             </Link>{' '}
@@ -137,7 +131,6 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
             <Link
               href="https://www.w3.org/WAI/ARIA/apg/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
-              external={false}
             >
               ARIA authoring practices guides
             </Link>{' '}
