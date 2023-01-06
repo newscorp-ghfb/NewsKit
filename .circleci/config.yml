@@ -1028,9 +1028,7 @@ jobs:
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
             cp ./scripts/templates-integration-test/cypress.config.js ./newskit-integration-test/
             cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
-            mkdir -p ./newskit-integration-test/cypress/e2e
             cp -R ./scripts/templates-integration-test/cypress ./newskit-integration-test
-
 
             echo "Installing needed packages into the NextJS app"
 
