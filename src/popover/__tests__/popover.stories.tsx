@@ -402,6 +402,23 @@ StoryPopoverBehaviours.parameters = {
   percy: {enableJavaScript: true},
 };
 
+export const StoryPopoverOtherBehaviours = () => (
+  <StyledPage>
+    <StorybookSubHeading>
+      Popover - disabled focus managmant
+    </StorybookSubHeading>
+    <BoundedPopover disableFocusManagement />
+    <hr />
+    <StorybookSubHeading>Popover - dismiss on blur</StorybookSubHeading>
+    <BoundedPopover dismissOnBlur />
+    <button type="button">button after popover</button>
+  </StyledPage>
+);
+StoryPopoverOtherBehaviours.storyName = 'popover-others';
+StoryPopoverOtherBehaviours.parameters = {
+  percy: {enableJavaScript: true},
+};
+
 export default {
   title: 'Components/popover',
   component: () => 'None',

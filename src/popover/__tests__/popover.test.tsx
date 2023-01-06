@@ -385,6 +385,34 @@ describe('Popover', () => {
       await applyAsyncStyling();
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
+
+    test.only('does close on focus outside', async () => {
+      const Component = () => (
+        <>
+          <Popover {...defaultProps} dismissOnBlur />
+          <a href="/" data-testid="outside">
+            outside element
+          </a>
+        </>
+      );
+      const {getByTestId, getByRole, queryByRole} = renderWithTheme(Component);
+      const button = getByRole('button');
+      fireEvent.click(button);
+      await applyAsyncStyling();
+      expect(queryByRole('dialog')).toBeInTheDocument();
+
+      act(() => {
+        // first tab is focusing X button inside the popover
+        userEvent.tab();
+        // second tab is focusing outside link
+        userEvent.tab();
+      });
+
+      expect(getByTestId('outside')).toHaveFocus();
+
+      await applyAsyncStyling();
+      expect(queryByRole('dialog')).not.toBeInTheDocument();
+    });
   });
 
   describe('controlled case', () => {
