@@ -48,7 +48,7 @@ const AccessibilityTest = (layoutProps: LayoutProps) => (
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Accessibility',
-      name: 'Code for accessibility',
+      name: 'Test for accessibility',
       hero: {
         illustration: 'guides/accessibility-test/hero',
       },

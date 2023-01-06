@@ -113,7 +113,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
               href="https://www.w3.org/WAI/WCAG2/supplemental/objectives/o3-clear-content/"
               overrides={{typographyPreset: 'editorialParagraph030'}}
             >
-              Writing clear and understandable content
+              Writing for web accessibility
             </Link>{' '}
             - W3C example patterns and user personas.
           </P>
