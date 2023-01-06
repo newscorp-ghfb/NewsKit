@@ -2,9 +2,17 @@
 const path = require('path');
 const {resolve} = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
+const createStyledComponentsTransformer = require('typescript-plugin-styled-components')
+  .default;
 
 // remove @next/mdx when doc pages are all tranformed to tsx
 const withMDX = require('./mdx');
+
+
+const styledComponentsTransformer = createStyledComponentsTransformer({
+  displayName: true,
+  componentIdPrefix: 'NewsKit_',
+});
 
 module.exports = withMDX({
   reactStrictMode: true,
@@ -27,6 +35,16 @@ module.exports = withMDX({
       __dirname,
       'components/page-title.tsx',
     );
+    process.env.NODE_ENV === 'development' &&
+      config.module.rules.push({
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        options: {
+          getCustomTransformers: () => ({
+            before: [styledComponentsTransformer],
+          }),
+        },
+      });
 
     config.plugins = config.plugins || [];
     config.plugins = [
