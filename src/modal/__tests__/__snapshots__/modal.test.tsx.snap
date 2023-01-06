@@ -480,13 +480,9 @@ exports[`Modal renders default 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -504,63 +500,59 @@ exports[`Modal renders default 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
-                <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal header content
-                  </p>
-                </div>
-                <div
-                  class="emotion-6"
-                  data-testid="dialog-content"
+                  Modal header content
+                </p>
+              </div>
+              <div
+                class="emotion-6"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal body content
-                  </p>
-                </div>
-                <div
-                  class="emotion-8"
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-9"
+                  data-testid="button"
+                  type="button"
                 >
-                  <button
-                    aria-label="close"
-                    class="emotion-9"
-                    data-testid="button"
-                    type="button"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-10 emotion-11"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-10 emotion-11"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -1045,13 +1037,9 @@ exports[`Modal renders inline 1`] = `
 <div>
     <div>
       <div
-        class="nk-overlay-appear-done nk-overlay-enter-done"
-      >
-        <div
-          class="emotion-0"
-          data-testid="overlay"
-        />
-      </div>
+        class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+        data-testid="overlay"
+      />
       <div
         data-focus-guard="true"
         style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -1069,63 +1057,59 @@ exports[`Modal renders inline 1`] = `
           class="emotion-1"
         >
           <div
-            class="nk-modal-appear-done nk-modal-enter-done"
+            aria-modal="true"
+            class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+            data-testid="modal"
+            role="dialog"
           >
             <div
-              aria-modal="true"
-              class="nk-modal-enter-done emotion-2"
-              data-testid="modal"
-              role="dialog"
+              class="emotion-3"
+            />
+            <div
+              class="emotion-4"
             >
-              <div
-                class="emotion-3"
-              />
-              <div
-                class="emotion-4"
+              <p
+                class="emotion-5"
               >
-                <p
-                  class="emotion-5"
-                >
-                  Modal header content
-                </p>
-              </div>
-              <div
-                class="emotion-6"
-                data-testid="dialog-content"
+                Modal header content
+              </p>
+            </div>
+            <div
+              class="emotion-6"
+              data-testid="dialog-content"
+            >
+              <p
+                class="emotion-5"
               >
-                <p
-                  class="emotion-5"
-                >
-                  Modal body content
-                </p>
-              </div>
-              <div
-                class="emotion-8"
+                Modal body content
+              </p>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <button
+                aria-label="close"
+                class="emotion-9"
+                data-testid="button"
+                type="button"
               >
-                <button
-                  aria-label="close"
-                  class="emotion-9"
-                  data-testid="button"
-                  type="button"
+                <svg
+                  aria-hidden="true"
+                  class="emotion-10 emotion-11"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-10 emotion-11"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </button>
-              </div>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -1554,13 +1538,9 @@ exports[`Modal renders modal with overrides 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -1578,54 +1558,50 @@ exports[`Modal renders modal with overrides 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
               >
-                <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
-                  data-testid="dialog-content"
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal body content
-                  </p>
-                </div>
-                <div
-                  class="emotion-6"
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-7"
+                  data-testid="button"
+                  type="button"
                 >
-                  <button
-                    aria-label="close"
-                    class="emotion-7"
-                    data-testid="button"
-                    type="button"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-8 emotion-9"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-8 emotion-9"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -2185,13 +2161,9 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -2209,75 +2181,71 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="false"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="false"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+                data-autofocus-inside="true"
               >
                 <div
-                  class="emotion-3"
-                  data-autofocus-inside="true"
+                  class="emotion-4"
+                />
+                <div
+                  class="emotion-5"
                 >
-                  <div
-                    class="emotion-4"
-                  />
-                  <div
-                    class="emotion-5"
+                  <p
+                    class="emotion-6"
                   >
-                    <p
-                      class="emotion-6"
-                    >
-                      Modal header content
-                    </p>
-                  </div>
-                  <div
-                    class="emotion-7"
-                    data-testid="dialog-content"
-                  >
-                    <p
-                      class="emotion-6"
-                    >
-                      Modal body content
-                    </p>
-                  </div>
-                  <div
-                    class="emotion-9"
-                  >
-                    <button
-                      aria-describedby="mock-nk-1"
-                      aria-label="close"
-                      class="emotion-10"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-11 emotion-12"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <span
-                    class="emotion-13"
-                    id="mock-nk-1"
-                  >
-                    With the next tab you will be leaving the dialog window.
-                  </span>
+                    Modal header content
+                  </p>
                 </div>
+                <div
+                  class="emotion-7"
+                  data-testid="dialog-content"
+                >
+                  <p
+                    class="emotion-6"
+                  >
+                    Modal body content
+                  </p>
+                </div>
+                <div
+                  class="emotion-9"
+                >
+                  <button
+                    aria-describedby="mock-nk-1"
+                    aria-label="close"
+                    class="emotion-10"
+                    data-testid="button"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="emotion-11 emotion-12"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <span
+                  class="emotion-13"
+                  id="mock-nk-1"
+                >
+                  With the next tab you will be leaving the dialog window.
+                </span>
               </div>
             </div>
           </div>
@@ -2769,13 +2737,9 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -2793,58 +2757,54 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-labelledby="headerLabel"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-labelledby="headerLabel"
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
                 <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
+                  id="headerLabel"
                 >
-                  <div
-                    id="headerLabel"
-                  >
-                    Overridden dialog header
-                  </div>
+                  Overridden dialog header
                 </div>
-                <div
-                  class="emotion-5"
-                  data-testid="dialog-content"
-                />
-                <div
-                  class="emotion-6"
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              />
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-7"
+                  data-testid="button"
+                  type="button"
                 >
-                  <button
-                    aria-label="close"
-                    class="emotion-7"
-                    data-testid="button"
-                    type="button"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-8 emotion-9"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-8 emotion-9"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -3315,13 +3275,9 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -3339,60 +3295,56 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-describedby="description purpose"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-describedby="description purpose"
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
               >
                 <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
-                  data-testid="dialog-content"
+                  id="description"
                 >
-                  <div
-                    id="description"
-                  >
-                    Overridden dialog components
-                  </div>
-                  <div
-                    id="purpose"
-                  >
-                    Showing different styles
-                  </div>
+                  Overridden dialog components
                 </div>
                 <div
-                  class="emotion-5"
+                  id="purpose"
                 >
-                  <button
-                    aria-label="close"
-                    class="emotion-6"
-                    data-testid="button"
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-7 emotion-8"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
+                  Showing different styles
                 </div>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-6"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-7 emotion-8"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -3888,13 +3840,9 @@ exports[`Modal renders with different closePosition 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -3912,63 +3860,59 @@ exports[`Modal renders with different closePosition 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
-                <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal header content
-                  </p>
-                </div>
-                <div
-                  class="emotion-6"
-                  data-testid="dialog-content"
+                  Modal header content
+                </p>
+              </div>
+              <div
+                class="emotion-6"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal body content
-                  </p>
-                </div>
-                <div
-                  class="emotion-8"
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-9"
+                  data-testid="button"
+                  type="button"
                 >
-                  <button
-                    aria-label="close"
-                    class="emotion-9"
-                    data-testid="button"
-                    type="button"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-10 emotion-11"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-10 emotion-11"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -4466,13 +4410,9 @@ exports[`Modal renders with logical padding props 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -4490,63 +4430,59 @@ exports[`Modal renders with logical padding props 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
-                <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal header content
-                  </p>
-                </div>
-                <div
-                  class="emotion-6"
-                  data-testid="dialog-content"
+                  Modal header content
+                </p>
+              </div>
+              <div
+                class="emotion-6"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal body content
-                  </p>
-                </div>
-                <div
-                  class="emotion-8"
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-9"
+                  data-testid="button"
+                  type="button"
                 >
-                  <button
-                    aria-label="close"
-                    class="emotion-9"
-                    data-testid="button"
-                    type="button"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-10 emotion-11"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-10 emotion-11"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -4908,13 +4844,9 @@ exports[`Modal renders without close button 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -4932,36 +4864,32 @@ exports[`Modal renders without close button 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
               >
-                <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal header content
-                  </p>
-                </div>
-                <div
-                  class="emotion-6"
-                  data-testid="dialog-content"
+                  Modal header content
+                </p>
+              </div>
+              <div
+                class="emotion-6"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal body content
-                  </p>
-                </div>
+                  Modal body content
+                </p>
               </div>
             </div>
           </div>
@@ -5436,13 +5364,9 @@ exports[`Modal renders without header 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -5460,54 +5384,50 @@ exports[`Modal renders without header 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
               >
-                <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
-                  data-testid="dialog-content"
+                <p
+                  class="emotion-5"
                 >
-                  <p
-                    class="emotion-5"
-                  >
-                    Modal body content
-                  </p>
-                </div>
-                <div
-                  class="emotion-6"
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-7"
+                  data-testid="button"
+                  type="button"
                 >
-                  <button
-                    aria-label="close"
-                    class="emotion-7"
-                    data-testid="button"
-                    type="button"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-8 emotion-9"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-8 emotion-9"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -5841,13 +5761,9 @@ exports[`Modal renders without header and close 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -5865,24 +5781,20 @@ exports[`Modal renders without header and close 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+                data-testid="dialog-content"
               >
-                <div
-                  class="emotion-3"
-                  data-testid="dialog-content"
+                <p
+                  class="emotion-4"
                 >
-                  <p
-                    class="emotion-4"
-                  >
-                    Modal body content
-                  </p>
-                </div>
+                  Modal body content
+                </p>
               </div>
             </div>
           </div>
@@ -6309,63 +6221,59 @@ exports[`Modal renders without overlay 1`] = `
             class="emotion-0"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-1 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-1"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-2"
+              />
+              <div
+                class="emotion-3"
               >
-                <div
-                  class="emotion-2"
-                />
-                <div
-                  class="emotion-3"
+                <p
+                  class="emotion-4"
                 >
-                  <p
-                    class="emotion-4"
-                  >
-                    Modal header content
-                  </p>
-                </div>
-                <div
-                  class="emotion-5"
-                  data-testid="dialog-content"
+                  Modal header content
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+                data-testid="dialog-content"
+              >
+                <p
+                  class="emotion-4"
                 >
-                  <p
-                    class="emotion-4"
-                  >
-                    Modal body content
-                  </p>
-                </div>
-                <div
-                  class="emotion-7"
+                  Modal body content
+                </p>
+              </div>
+              <div
+                class="emotion-7"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-8"
+                  data-testid="button"
+                  type="button"
                 >
-                  <button
-                    aria-label="close"
-                    class="emotion-8"
-                    data-testid="button"
-                    type="button"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-9 emotion-10"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-9 emotion-10"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -6842,13 +6750,9 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
     >
       <div>
         <div
-          class="nk-overlay-appear-done nk-overlay-enter-done"
-        >
-          <div
-            class="emotion-0"
-            data-testid="overlay"
-          />
-        </div>
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
+          data-testid="overlay"
+        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -6866,50 +6770,46 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
             class="emotion-1"
           >
             <div
-              class="nk-modal-appear-done nk-modal-enter-done"
+              aria-modal="true"
+              class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
+              data-testid="modal"
+              role="dialog"
             >
               <div
-                aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
-                data-testid="modal"
-                role="dialog"
+                class="emotion-3"
+              />
+              <div
+                class="emotion-4"
+                data-testid="dialog-content"
               >
-                <div
-                  class="emotion-3"
-                />
-                <div
-                  class="emotion-4"
-                  data-testid="dialog-content"
+                Dialog content
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <button
+                  aria-label="close"
+                  class="emotion-6"
+                  data-testid="button"
+                  type="button"
                 >
-                  Dialog content
-                </div>
-                <div
-                  class="emotion-5"
-                >
-                  <button
-                    aria-label="close"
-                    class="emotion-6"
-                    data-testid="button"
-                    type="button"
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-7 emotion-8"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-7 emotion-8"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>

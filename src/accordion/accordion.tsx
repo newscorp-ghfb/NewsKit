@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
+import composeRefs from '@seznam/compose-react-refs';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {
   StyledAccordionButton,
@@ -24,14 +25,12 @@ import {getRefScrollHeight} from './utils';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 // Based on https://www.w3schools.com/howto/howto_js_accordion.asp
-const MaxHeightTransitionPanel = ({
-  expanded,
-  children,
-  overrides,
-  className,
-}: Pick<AccordionProps, 'expanded' | 'children' | 'overrides'> & {
-  className: string;
-}) => {
+const MaxHeightTransitionPanel = React.forwardRef<
+  HTMLDivElement,
+  Pick<AccordionProps, 'expanded' | 'children' | 'overrides'> & {
+    className: string;
+  }
+>(({expanded, children, overrides, className}, transitionRef) => {
   const ref = useRef<HTMLDivElement>(null);
   const [width] = useResizeObserver(ref);
   useEffect(() => {
@@ -44,7 +43,7 @@ const MaxHeightTransitionPanel = ({
   return (
     <StyledPanelTransitionContainer
       data-testid="panel-transition-container"
-      ref={ref}
+      ref={composeRefs(transitionRef, ref)}
       expanded={expanded}
       overrides={overrides}
       className={className}
@@ -52,7 +51,7 @@ const MaxHeightTransitionPanel = ({
       {children}
     </StyledPanelTransitionContainer>
   );
-};
+});
 
 const DefaultIcon = ({expanded, overrides}: AccordionIconProps) =>
   expanded ? (
@@ -151,24 +150,23 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
           classNames="nk-accordion"
         >
           {(state: string) => (
-            <div ref={cssTransitionNodeRef}>
-              <MaxHeightTransitionPanel
-                className={getTransitionClassName('nk-accordion', state)}
+            <MaxHeightTransitionPanel
+              className={getTransitionClassName('nk-accordion', state)}
+              expanded={expanded}
+              overrides={overrides}
+              ref={cssTransitionNodeRef}
+            >
+              <StyledPanel
+                aria-labelledby={ariaLabelledById}
+                id={ariaControlsId}
+                data-testid="accordion-content"
+                role="region"
                 expanded={expanded}
                 overrides={overrides}
               >
-                <StyledPanel
-                  aria-labelledby={ariaLabelledById}
-                  id={ariaControlsId}
-                  data-testid="accordion-content"
-                  role="region"
-                  expanded={expanded}
-                  overrides={overrides}
-                >
-                  {children}
-                </StyledPanel>
-              </MaxHeightTransitionPanel>
-            </div>
+                {children}
+              </StyledPanel>
+            </MaxHeightTransitionPanel>
           )}
         </CSSTransition>
       </div>

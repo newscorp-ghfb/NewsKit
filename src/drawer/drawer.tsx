@@ -85,25 +85,23 @@ const ThemelessDrawer = React.forwardRef<HTMLDivElement, DrawerProps>(
               appear
             >
               {state => (
-                <div ref={cssTransitionNodeRef}>
-                  <StyledDrawer
-                    aria-hidden={!open}
-                    ref={composeRefs(drawerRef, ref)}
-                    className={getTransitionClassName('nk-drawer', state)}
-                    open={open}
-                    disableFocusTrap={disableFocusTrap}
-                    handleCloseButtonClick={handleCloseButtonClick}
-                    path={drawerPath}
-                    data-testid={drawerPath}
-                    placement={placement}
-                    closePosition={closePosition}
-                    overrides={overrides}
-                    inline={inline}
-                    {...props}
-                  >
-                    {children}
-                  </StyledDrawer>
-                </div>
+                <StyledDrawer
+                  aria-hidden={!open}
+                  ref={composeRefs(cssTransitionNodeRef, drawerRef, ref)}
+                  className={getTransitionClassName('nk-drawer', state)}
+                  open={open}
+                  disableFocusTrap={disableFocusTrap}
+                  handleCloseButtonClick={handleCloseButtonClick}
+                  path={drawerPath}
+                  data-testid={drawerPath}
+                  placement={placement}
+                  closePosition={closePosition}
+                  overrides={overrides}
+                  inline={inline}
+                  {...props}
+                >
+                  {children}
+                </StyledDrawer>
               )}
             </CSSTransition>
           )}

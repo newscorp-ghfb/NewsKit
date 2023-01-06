@@ -195,17 +195,16 @@ const ThemelessAudioPlayerVolumeControl = React.forwardRef<
             onExited={() => setIsVisibleHandler(false)}
           >
             {(state: string) => (
-              <div ref={cssTransitionNodeRef}>
-                <StyledVolumeSliderContainer
-                  className={getTransitionClassName('nk-vc', state)}
-                  layout={layout}
-                  overrides={overrides}
-                  open={open}
-                  visible={isVisible}
-                >
-                  {sliderComponent}
-                </StyledVolumeSliderContainer>
-              </div>
+              <StyledVolumeSliderContainer
+                ref={cssTransitionNodeRef}
+                className={getTransitionClassName('nk-vc', state)}
+                layout={layout}
+                overrides={overrides}
+                open={open}
+                visible={isVisible}
+              >
+                {sliderComponent}
+              </StyledVolumeSliderContainer>
             )}
           </CSSTransition>
           <ScreenReaderOnly id={volumeSliderInstructionId} aria-hidden="true">

@@ -273,62 +273,58 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -581,62 +577,58 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-describedby="header-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-describedby="header-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="header-text"
+          id="header-MOCK-ID"
         >
-          <div
-            class="emotion-3"
-            data-testid="header-text"
-            id="header-MOCK-ID"
+          header value
+        </div>
+        <div
+          class="emotion-4"
+        >
+          hello
+        </div>
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="close-button"
+            type="button"
           >
-            header value
-          </div>
-          <div
-            class="emotion-4"
-          >
-            hello
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <button
-              aria-label="close"
-              class="emotion-6"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-7 emotion-8"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -902,55 +894,51 @@ exports[`Popover close button should show left-aligned 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -1216,55 +1204,51 @@ exports[`Popover close button should show right-aligned 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -1545,62 +1529,58 @@ exports[`Popover content applies logical prop overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -1886,62 +1866,58 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-describedby="header-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-describedby="header-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="header-text"
+          id="header-MOCK-ID"
         >
-          <div
-            class="emotion-3"
-            data-testid="header-text"
-            id="header-MOCK-ID"
+          header value
+        </div>
+        <div
+          class="emotion-4"
+        >
+          hello
+        </div>
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="close-button"
+            type="button"
           >
-            header value
-          </div>
-          <div
-            class="emotion-4"
-          >
-            hello
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <button
-              aria-label="close"
-              class="emotion-6"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-7 emotion-8"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -2222,62 +2198,58 @@ exports[`Popover content applies typography preset overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -2577,69 +2549,65 @@ exports[`Popover header applies logical prop overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-describedby="header-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-describedby="header-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="header-text"
+          id="header-MOCK-ID"
         >
-          <div
-            class="emotion-3"
-            data-testid="header-text"
-            id="header-MOCK-ID"
+          header value
+        </div>
+        <div
+          class="emotion-4"
+        >
+          hello
+        </div>
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="close-button"
+            type="button"
           >
-            header value
-          </div>
-          <div
-            class="emotion-4"
-          >
-            hello
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <button
-              aria-label="close"
-              class="emotion-6"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-7 emotion-8"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-9"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-9"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -2924,62 +2892,58 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-describedby="header-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-describedby="header-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="header-text"
+          id="header-MOCK-ID"
         >
-          <div
-            class="emotion-3"
-            data-testid="header-text"
-            id="header-MOCK-ID"
+          header value
+        </div>
+        <div
+          class="emotion-4"
+        >
+          hello
+        </div>
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="close-button"
+            type="button"
           >
-            header value
-          </div>
-          <div
-            class="emotion-4"
-          >
-            hello
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <button
-              aria-label="close"
-              class="emotion-6"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-7 emotion-8"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -3282,69 +3246,65 @@ exports[`Popover header applies typography preset overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-describedby="header-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-describedby="header-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
+          data-testid="header-text"
+          id="header-MOCK-ID"
         >
-          <div
-            class="emotion-3"
-            data-testid="header-text"
-            id="header-MOCK-ID"
+          header value
+        </div>
+        <div
+          class="emotion-4"
+        >
+          hello
+        </div>
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-label="close"
+            class="emotion-6"
+            data-testid="close-button"
+            type="button"
           >
-            header value
-          </div>
-          <div
-            class="emotion-4"
-          >
-            hello
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <button
-              aria-label="close"
-              class="emotion-6"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-7 emotion-8"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-7 emotion-8"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-9"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-9"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -3622,62 +3582,58 @@ exports[`Popover offset should be applied with pointer and px distance override 
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -3955,62 +3911,58 @@ exports[`Popover offset should be applied with pointer and token distance overri
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -4288,62 +4240,58 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -4621,62 +4569,58 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -4939,55 +4883,51 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -5268,62 +5208,58 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -5601,62 +5537,58 @@ exports[`Popover pointer padding should be applied with token distance override 
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -5934,62 +5866,58 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -6267,62 +6195,58 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -6585,55 +6509,51 @@ exports[`Popover should render correct styles: default 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -6910,55 +6830,51 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -7239,62 +7155,58 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -7572,62 +7484,58 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -7905,62 +7813,58 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;
@@ -8238,62 +8142,58 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 }
 
 <div
-    class="nk-popover-enter-done"
+    aria-labelledby="ref-MOCK-ID"
+    class=" nk-popover-enter-done emotion-0"
+    id="floating-MOCK-ID"
+    role="dialog"
+    tabindex="-1"
   >
     <div
-      aria-labelledby="ref-MOCK-ID"
-      class=" nk-popover-enter-done emotion-0"
-      id="floating-MOCK-ID"
-      role="dialog"
+      class="emotion-1 nk-popover-enter-done"
+      data-testid="floating-element-panel"
       tabindex="-1"
     >
       <div
-        class="emotion-1"
-        data-testid="floating-element-panel"
-        tabindex="-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
+          class="emotion-3"
         >
-          <div
-            class="emotion-3"
+          hello
+        </div>
+        <div
+          class="emotion-4"
+        >
+          <button
+            aria-label="close"
+            class="emotion-5"
+            data-testid="close-button"
+            type="button"
           >
-            hello
-          </div>
-          <div
-            class="emotion-4"
-          >
-            <button
-              aria-label="close"
-              class="emotion-5"
-              data-testid="close-button"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="emotion-6 emotion-7"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-6 emotion-7"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
-      <div
-        class="emotion-8"
-        id="floating-MOCK-ID-pointer"
-      />
     </div>
+    <div
+      class="emotion-8"
+      id="floating-MOCK-ID-pointer"
+    />
   </div>
 </DocumentFragment>
 `;

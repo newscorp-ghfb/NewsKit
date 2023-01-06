@@ -87,21 +87,20 @@ const ThemelessModal = React.forwardRef<HTMLDivElement, ModalProps>(
                 onExited={() => setShowWrapper(false)}
               >
                 {state => (
-                  <div ref={cssTransitionNodeRef}>
-                    <StyledModal
-                      open={open}
-                      className={getTransitionClassName('nk-modal', state)}
-                      disableFocusTrap={disableFocusTrap}
-                      handleCloseButtonClick={handleCloseButtonClick}
-                      path="modal"
-                      data-testid="modal"
-                      closePosition={closePosition}
-                      overrides={overrides}
-                      {...props}
-                    >
-                      {children}
-                    </StyledModal>
-                  </div>
+                  <StyledModal
+                    ref={cssTransitionNodeRef}
+                    open={open}
+                    className={getTransitionClassName('nk-modal', state)}
+                    disableFocusTrap={disableFocusTrap}
+                    handleCloseButtonClick={handleCloseButtonClick}
+                    path="modal"
+                    data-testid="modal"
+                    closePosition={closePosition}
+                    overrides={overrides}
+                    {...props}
+                  >
+                    {children}
+                  </StyledModal>
                 )}
               </CSSTransition>
             </StyledModalWrapper>

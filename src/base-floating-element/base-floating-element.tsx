@@ -202,53 +202,51 @@ export const BaseFloatingElement = React.forwardRef<
           appear
         >
           {state => (
-            <div ref={cssTransitionNodeRef}>
-              <StyledFloatingElement
-                ref={ref}
-                {...getFloatingProps({
-                  ref: floating,
-                  id: floatingId,
-                })}
-                className={`${className || ''} ${getTransitionClassName(
-                  baseTransitionClassname,
-                  state,
-                )}`}
-                baseTransitionClassname={baseTransitionClassname}
-                strategy={strategy}
-                $x={x}
-                $y={y}
-                placement={statefulPlacement}
+            <StyledFloatingElement
+              ref={composeRefs(cssTransitionNodeRef, ref)}
+              {...getFloatingProps({
+                ref: floating,
+                id: floatingId,
+              })}
+              className={`${className || ''} ${getTransitionClassName(
+                baseTransitionClassname,
+                state,
+              )}`}
+              baseTransitionClassname={baseTransitionClassname}
+              strategy={strategy}
+              $x={x}
+              $y={y}
+              placement={statefulPlacement}
+              overrides={overrides}
+              hidePointer={hidePointer}
+              role={role}
+              {...floatingElAriaAttributes}
+              path={path}
+            >
+              <StyledPanel
+                tabIndex={-1}
+                data-testid="floating-element-panel"
+                as={contentIsString ? 'p' : 'div'}
                 overrides={overrides}
-                hidePointer={hidePointer}
-                role={role}
-                {...floatingElAriaAttributes}
                 path={path}
+                ref={composeRefs(cssTransitionNodeRef, panelRef)}
               >
-                <StyledPanel
-                  tabIndex={-1}
-                  data-testid="floating-element-panel"
-                  as={contentIsString ? 'p' : 'div'}
-                  overrides={overrides}
+                {typeof content === 'function'
+                  ? content(referenceProps)
+                  : content}
+              </StyledPanel>
+              {!hidePointer && (
+                <StyledPointer
                   path={path}
-                  ref={panelRef}
-                >
-                  {typeof content === 'function'
-                    ? content(referenceProps)
-                    : content}
-                </StyledPanel>
-                {!hidePointer && (
-                  <StyledPointer
-                    path={path}
-                    id={`${floatingId}-pointer`}
-                    ref={pointerRef}
-                    placement={statefulPlacement}
-                    $x={pointerX}
-                    $y={pointerY}
-                    overrides={overrides}
-                  />
-                )}
-              </StyledFloatingElement>
-            </div>
+                  id={`${floatingId}-pointer`}
+                  ref={pointerRef}
+                  placement={statefulPlacement}
+                  $x={pointerX}
+                  $y={pointerY}
+                  overrides={overrides}
+                />
+              )}
+            </StyledFloatingElement>
           )}
         </CSSTransition>
       </>

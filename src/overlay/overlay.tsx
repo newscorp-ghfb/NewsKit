@@ -32,11 +32,14 @@ const StyledOverlay = styled.div<Pick<OverlayProps, 'overrides'>>`
   ${getTransitionPreset('overlay', '', 'nk-overlay')};
 `;
 
-const BaseOverlay: React.FC<Omit<OverlayProps, 'open'>> = props => {
+const BaseOverlay = React.forwardRef<
+  HTMLDivElement,
+  Omit<OverlayProps, 'open'>
+>((props, transitionRef) => {
   useLockBodyScroll();
 
-  return <StyledOverlay data-testid="overlay" {...props} />;
-};
+  return <StyledOverlay data-testid="overlay" ref={transitionRef} {...props} />;
+});
 
 const ThemlessOverlay: React.FC<OverlayProps> = ({
   open,
@@ -57,9 +60,11 @@ const ThemlessOverlay: React.FC<OverlayProps> = ({
       unmountOnExit
       appear
     >
-      <div ref={cssTransitionNodeRef}>
-        <BaseOverlay {...props} overrides={overrides} />
-      </div>
+      <BaseOverlay
+        {...props}
+        ref={cssTransitionNodeRef}
+        overrides={overrides}
+      />
     </CSSTransition>
   );
 };
