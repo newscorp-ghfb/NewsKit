@@ -1029,7 +1029,7 @@ jobs:
             cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
             cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
             mkdir -p ./newskit-integration-test/cypress/integration
-            cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
+            cp ./scripts/templates-integration-test/theme-checker.cy.js ./newskit-integration-test/cypress/integration
 
 
             echo "Installing needed packages into the NextJS app"
