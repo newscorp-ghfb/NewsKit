@@ -220,7 +220,9 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction: 'The ordered list contains two required elements.',
-      media: getIllustrationComponent('components/ordered-list/anatomy-01'),
+      media: getIllustrationComponent(
+        'components/orderedlist/anatomy/anatomy-01.tsx',
+      ),
       rows: [
         {
           name: 'Content',
@@ -249,25 +251,22 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the ordered list component.',
+      introduction: 'Here’s how and when to use the ordered list:',
       layout: '2-span',
       cards: [
         {
+          title: 'Do use for numerically ordered lists',
           description:
             'Ordered list items are numbered, so use them in instances where items need to appear in numerical order.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/ordered-list/usage/do-01',
-          ),
+          media: getIllustrationComponent('components/orderedlist/usage/do-01'),
         },
         {
+          title: 'Do use to break up sequential information',
           description:
             'Use ordered lists to break up blocks of sequential information into manageable numbered items.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/ordered-list/usage/do-02',
-          ),
+          media: getIllustrationComponent('components/orderedlist/usage/do-01'),
         },
       ],
     }}

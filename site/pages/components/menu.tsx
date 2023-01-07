@@ -468,62 +468,32 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the menu:',
       cards: [
         {
+          title: 'Do use sentence case for labels',
           description:
             'Write menu item labels in sentence case to help with scannability and legibility.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/menu/menu-do-03-illustration',
-          ),
-        },
-
-        {
-          description:
-            'Avoid long menu item labels. Keep them short, clear and fully visible.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/menu/menu-dont-03-illustration',
-          ),
+          media: getIllustrationComponent('components/menu/usage/do-01'),
         },
         {
+          title: 'Do use for top-level sections and subsections',
           description:
             'Use a menu for navigating to different top-level sections or subsections.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/menu/menu-do-01-illustration',
-          ),
+          media: getIllustrationComponent('components/menu/usage/do-02'),
         },
         {
-          description:
-            'Avoid using a menu to open content panes within a page. Menus are intended for navigation, and not supplementary content.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/menu/menu-dont-01-illustration',
-          ),
-        },
-        {
+          title: 'Do limit the number of items in a menu',
           description:
             'Think carefully about the number of items in a menu. Too many items can hurt readability and increase the user’s cognitive load.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/menu/menu-do-02-illustration',
-          ),
+          media: getIllustrationComponent('components/menu/usage/do-03'),
         },
         {
-          description: (
-            <>
-              Use a sub menu to display multiple levels of navigational items of
-              a website&apos;s sub-page hierarchy in a semantic way, using ul
-              and li, meeting the latest{' '}
-              <Link
-                href="https://www.w3.org/WAI/tutorials/menus/flyout/"
-                target="_blank"
-              >
-                WAI-ARIA standards.
-              </Link>
-            </>
-          ),
+          title: 'Do use sub menus for multi-level navigation',
+          description:
+            'Use a sub menu to display multiple levels of navigation items.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/menu/do-01'),
+          media: getIllustrationComponent('components/menu/usage/do-04'),
         },
       ],
     }}
