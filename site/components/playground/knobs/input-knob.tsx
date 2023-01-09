@@ -65,7 +65,7 @@ export const InputKnob: React.FC<InputKnobProps> = ({
   value,
   onChange = () => {},
 }) => {
-  const id = label;
+  const id = label + value;
   const lowercaseLabel = label.toLowerCase().replace(' ', '-');
   const LabelForInput = labelVisible ? (
     <StyledLabel htmlFor={id}>{label}</StyledLabel>
