@@ -201,7 +201,7 @@ const Iconography = (layoutProps: LayoutProps) => (
         <ContentPrimary
           toc="Usage"
           id="usage"
-          headline="How to use icons"
+          headline="Here’s how and when to use icons:"
           showSeparator
         >
           <MediaList
@@ -210,60 +210,73 @@ const Iconography = (layoutProps: LayoutProps) => (
             layout="2-span"
             cards={[
               {
+                title: 'Do keep icons within the live area',
                 description:
                   'Place icons within the 20px live area. Keep the 2px border of padding around the live area clear.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-01', {
-                  viewBox: '0 0 1344 759',
-                }),
+                media: getIllustrationComponent(
+                  'theme/iconography/usage/do-01',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
               {
+                title: "Don't pixelate icons",
                 description:
                   'Position icons ‘on pixel’ so they’re clear and not pixelated, blurred or distorted.',
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-01', {
-                  viewBox: '0 0 1344 759',
-                }),
+                media: getIllustrationComponent(
+                  'theme/iconography/usage/dont-01',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
               {
+                title: 'Do use icons purposefully',
                 description:
                   'Use icons to reduce cognitive load and provide context.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-02', {
-                  viewBox: '0 0 1344 759',
-                }),
+                media: getIllustrationComponent(
+                  'theme/iconography/usage/do-02',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
               {
+                title: 'Don’t forget labels (if there’s space)',
                 description: (
                   <>
-                    Avoid using icons as your only way of communicating, if
-                    there’s space to include a label or supporting text.
+                    Include a label or supporting text alongside the icon if
+                    there is space. Dont rely on the icon to convey meaning.
                     Alternatively, use a{' '}
                     <Link href="/components/tooltip">tooltip</Link> to provide
                     additional context on hover.
                   </>
                 ),
                 kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-02', {
-                  viewBox: '0 0 1344 759',
-                }),
+                media: getIllustrationComponent(
+                  'theme/iconography/usage/dont-02',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
               {
+                title: 'Do align icons properly',
                 description: 'Vertically centre-align icons when next to text.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-03', {
-                  viewBox: '0 0 1344 759',
-                }),
+                media: getIllustrationComponent(
+                  'theme/iconography/usage/do-03',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
               {
-                description:
-                  'Don’t use icons that are noticeably larger or smaller than the text they’re paired with, or the interface may feel unbalanced.',
-                kind: UsageKind.DONT,
-                media: getIllustrationComponent('theme/iconography/dont-03', {
-                  viewBox: '0 0 1344 759',
-                }),
-              },
-              {
+                title: 'Do make sure contrast is accessible',
                 description: (
                   <>
                     Use a 3:1 minimum colour contrast ratio between icon and
@@ -276,17 +289,36 @@ const Iconography = (layoutProps: LayoutProps) => (
                   </>
                 ),
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-04', {
-                  viewBox: '0 0 1344 759',
-                }),
+                media: getIllustrationComponent(
+                  'theme/iconography/usage/do-04',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
               {
+                title: 'Do name icons logically',
                 description:
                   'Use names that describe what the icon represents. Keep them simple and logical.',
                 kind: UsageKind.DO,
-                media: getIllustrationComponent('theme/iconography/do-05', {
-                  viewBox: '0 0 1344 759',
-                }),
+                media: getIllustrationComponent(
+                  'theme/iconography/usage/do-05',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
+              },
+              {
+                title: 'Do balance icon and text size',
+                description:
+                  'Use icons that are proportional to the text they are paired with or the interface may feel unbalanced.',
+                kind: UsageKind.DO,
+                media: getIllustrationComponent(
+                  'theme/iconography/usage/do-06',
+                  {
+                    viewBox: '0 0 1344 759',
+                  },
+                ),
               },
             ]}
           />
