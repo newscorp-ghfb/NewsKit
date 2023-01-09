@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
-import {Block, InlineMessage, toNewsKitIcon} from 'newskit';
-import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {Block, InlineMessage} from 'newskit';
 import {CodeFromFile} from '../../components/code';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
@@ -26,15 +25,6 @@ import {Mono} from '../../components/flags';
 
 const CellWrapper = ({children}: {children: any}) => (
   <ComponentPageCellCompact>{children}</ComponentPageCellCompact>
-);
-
-const IconFilledInfo = toNewsKitIcon(FilledInfo);
-const infoIcon = (
-  <IconFilledInfo
-    overrides={{
-      size: 'iconSize020',
-    }}
-  />
 );
 
 const componentsCardoverrides = {
@@ -182,21 +172,10 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
             Apply an aria-labelledby or aria-describedby attribute to the
             element you want to be described. Then pass the &apos;id&apos; for
             the aria attribute value to screen reader only.
-            <InlineMessage
-              icon={infoIcon}
-              role="region"
-              aria-label="breakpoints"
-              title="Note"
-              overrides={{
-                marginBlockStart: 'space050',
-              }}
-            >
-              Test all breakpoints carefully when using hidden or visible.
-            </InlineMessage>
           </>
         ),
       }}
-      infoNoticeAria="Be careful to test at all breakpoints when using ‘Hidden’ or ‘Visible’."
+      infoNoticeAria="Test all breakpoints carefully when using hidden or visible."
     />
     <SEOSection
       title="SEO Considerations"
