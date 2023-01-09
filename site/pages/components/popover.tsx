@@ -25,7 +25,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Popover',
       description:
-        'A Popover (also known as a Popper) is a layout component that displays non-critical information when a user clicks or taps on a UI element. ',
+        'Popovers (also known as poppers) display non-critical information when a user clicks or taps on a UI element.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -35,7 +35,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         illustration: 'components/popover/hero',
       },
       introduction:
-        'A Popover (also known as a Popper) is a layout component that displays non-critical information when a user clicks or taps on a UI element. ',
+        'Popovers (also known as poppers) display non-critical information when a user clicks or taps on a UI element.',
     }}
     componentDefaultsKey="Popover"
     meta={{
@@ -59,7 +59,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Header',
           description:
-            'An area to display content at the top of a panel e.g. a title',
+            'An area to display content at the top of a panel (e.g. title)',
           component: 'Text Block',
           optional: true,
         },
@@ -71,7 +71,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Content',
-          description: 'An area to display any content e.g. text, or controls',
+          description: 'An area to display any content (e.g. text or controls)',
           component: 'Children',
           optional: true,
         },
@@ -85,19 +85,17 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     options={{
-      introduction:
-        'The Popover has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The popover has options for different use cases:',
       cards: [
         {
           title: 'Size',
           description:
-            'The size of the Popover is dictated by the content passed to the panel, with the ability to set a maxWidth, and minWidth. Height is dictated by the content.',
+            'Set a maxWidth and minWidth for the popover. Height is set automatically based on the content.',
           media: getIllustrationComponent('components/popover/options/size'),
         },
         {
           title: 'Placement',
-          description:
-            'The Popover has 12 different placements to choose from, with the optional pointer to denote the direction of the context it is attributed.',
+          description: 'Choose from 12 different tooltip placements.',
           media: getIllustrationComponent(
             'components/popover/options/placement',
           ),
@@ -106,31 +104,20 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           title: 'Pointer',
           description: (
             <>
-              The pointer is used to indicate to the user the reference element
-              to which the Popover is attributed. It can be set to be visible or
-              hidden.
+              Add a pointer to indicate the element to which the popover is
+              attributed. Set it to ‘visible’ or ‘hidden’ as required.
               <br />
               <br />
-              The pointer position changes depending on the placement of the
-              Popover.
+              The pointer changes position depending on the placement of the
+              popover.
             </>
           ),
           media: getIllustrationComponent('components/popover/options/pointer'),
         },
         {
           title: 'Distance',
-          description: (
-            <>
-              The space between the Popover and the reference element can be
-              changed with spacing tokens. By default, there is 8px of space
-              between the popover and the element to which it is attributed,
-              which is measured from the tip of the pointer.
-              <br />
-              <br />
-              If no pointer is visible, then the distance can still be set via
-              overrides.
-            </>
-          ),
+          description:
+            'Change the space between the popover and the element with spacing tokens via overrides. By default, there’s 8px of space between the popover and the element, measured from the tip of the pointer or the near edge of the popover if no pointer is visible.',
           media: getIllustrationComponent(
             'components/popover/options/distance',
           ),
@@ -139,8 +126,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           title: 'Close position',
           description: (
             <>
-              The position of the close icon button in the Popover is set to the
-              right as default, with the option to set the position to the left.
+              Position the close button to the right (default) or left.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
@@ -150,13 +136,13 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space050',
                 }}
               >
-                The close icon button is optional. However, it‘s recommended
-                that a close button is used to adhere to{' '}
+                The close button is optional. However, you should include it to
+                adhere to{' '}
                 <Link
                   target="_blank"
                   href="https://www.w3.org/WAI/ARIA/apg/#keyboard-interaction-7"
                 >
-                  aria-principles.
+                  ARIA principles.
                 </Link>
               </InlineMessage>
             </>
@@ -168,12 +154,12 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction: 'The following guidance describes how a Popover behaves.',
+      introduction: 'Here’s how the popover behaves:',
       cards: [
         {
           title: 'Triggering and closing the Popover',
           description:
-            'The Popover is triggered by clicking and/or tapping on the UI element to which it is attributed. Clicking or tapping on the UI element again will dismiss the Popover.',
+            'The popover is triggered when the user clicks and/or taps on the UI element to which it is attributed. Clicking or tapping on the UI element again dismisses the popover.',
           media: getIllustrationComponent(
             'components/popover/behaviours/triggering-and-closing',
           ),
@@ -181,7 +167,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Focus',
           description:
-            'Upon focus of the Popover, the first interactive element in the specified order will receive focus ie. if there are interactive elements passed to the header area, then this will be the first focusable element.',
+            'Upon focus of the popover, the first interactive element in the specified order will receive focus (i.e. if there are interactive elements passed to the header area, this will be the first focussable element).',
           media: getIllustrationComponent(
             'components/popover/behaviours/focus',
           ),
@@ -190,13 +176,13 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           title: 'Shift',
           description: (
             <>
-              The Popover shifts in order to remain in view of the visible area,
-              with the pointer maintaining the context that the Popover is
+              The popover shifts in order to remain in view of the visible area,
+              with the pointer maintaining the context that the popover is
               attributed to.
               <br />
               <br />
               <Link target="_blank" href="https://floating-ui.com/docs/shift">
-                For more information, refer to the Floating UI library.
+                Learn more about shift at the Floating UI library.
               </Link>
             </>
           ),
@@ -208,14 +194,14 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           title: 'Flip',
           description: (
             <>
-              The Popover flips to the opposite side once it’s about to overflow
+              The popover flips to the opposite side once it’s about to overflow
               the visible area, with the pointer maintaining the context that
-              the Popover is attributed to. Once enough space is detected on its
-              preferred side, it will flip back to its original position.
+              the popover is attributed to. Once enough space is detected on its
+              preferred side, it flips back to its original position.
               <br />
               <br />
               <Link target="_blank" href="https://floating-ui.com/docs/flip">
-                For more information, refer to the Floating UI library.
+                Learn more about flip at the Floating UI library.
               </Link>
             </>
           ),
@@ -225,8 +211,8 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           title: 'Transition',
           description: (
             <>
-              The Popover transitions using the <InlineCode>fade</InlineCode>{' '}
-              transition preset when it is triggered.
+              When triggered, the popover transitions using the{' '}
+              <InlineCode>fade</InlineCode> transition preset.
             </>
           ),
           media: getIllustrationComponent(
@@ -236,23 +222,24 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Popover component.',
+      introduction: 'Here’s how and when to use the popover:',
       cards: [
         {
+          title: 'Use popovers for non-critical information',
           description:
             'Popovers are intended for displaying non-critical information related to an element. Content passed to a Popover should match the Aria-label and description.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do1'),
         },
         {
+          title: 'Don’t use overlays with popovers',
           description: (
             <>
-              Avoid using an overlay with a Popover, as they are intended to
-              display non-critical information, and shouldn’t prevent a user
-              from performing other tasks on the screen. In these cases,
-              consider using a <Link href="/components/modal/">Modal</Link>{' '}
-              instead.
+              Avoid using an overlay with a popover, as they’re intended for
+              non-critical information and shouldn’t prevent a user from
+              performing other tasks on the screen. If you’re displaying
+              critical information, consider a
+              <Link href="/components/modal/">Modal</Link> instead.
             </>
           ),
           kind: UsageKind.DONT,
@@ -260,33 +247,30 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         },
 
         {
+          title: 'Make popovers clear and concise',
           description:
-            'Ensure information presented in a Popover is concise. Users who are on a small screen or with high zoom will need to move around the screen to read the content, potentially losing their place or resulting in cognitive overload.',
+            'Avoid large chunks of text in popovers. Too much text can cause cognitive overload, and users with smaller screens or who are zoomed in can lose their place.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do2'),
         },
         {
+          title: 'Keep popovers in view until dismissed',
           description:
-            'Avoid using large chunks of text in Popovers as this may result in cognitive overload for some users.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/popover/usage/dont2'),
-        },
-
-        {
-          description:
-            'Popovers should remain in view until a user dismisses them.',
+            'Popovers should remain in view until the user dismisses them.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do3'),
         },
         {
+          title: 'Don’t use rich text formatting',
           description:
-            'Avoid rich content. Formatting will not be conveyed to screen reader users eg. bold, italicised text, or icons)',
+            'Rich text formatting (e.g. bold, italics, icons) won’t be conveyed to screen reader users.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont3'),
         },
         {
+          title: 'Don’t cover the attributed element',
           description:
-            'Avoid covering the element that the Popover is attributed to, as it will lose its context.',
+            'Avoid covering the element that the popover is attributed to, as it will lose its context.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont4'),
         },
@@ -308,18 +292,18 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             }}
           >
             <>
-              Popovers must be discoverable and readable with a mouse, other
-              pointer devices, keyboard, screen reader, zoom software, and any
-              other assistive technology.
+              Popovers must be discoverable and readable with a mouse or other
+              pointer device, keyboard, screen reader, zoom software and any
+              other assistive technology
             </>
             <>
-              They should provide relevant information that may be helpful with
-              learning the UI, but is not required to operate it.
+              Popovers should provide information that’s helpful for learning
+              the UI, but isn’t required to operate it
             </>
             <>
-              When open, Popovers should not block a user from performing any
-              other task on the screen, this should be tested across all
-              breakpoints.
+              When open, popovers shouldn’t block the user from performing any
+              other task on the screen. You should test this across all
+              breakpoints
             </>
           </UnorderedList>
         </>
@@ -331,26 +315,25 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             order: 1,
             element: 'header',
             role:
-              'Focusses to the content (children) passed to the header area, focusing on any interactive elements (if provided).',
+              'Focusses to the content (children) passed to the header area, focussing on any interactive elements (if provided)',
           },
           {
             order: 2,
             element: 'content',
             role:
-              'Focusses to the content (children) passed to the content area, focusing on any interactive elements (if provided).',
+              'Focusses to the content (children) passed to the content area, focussing on any interactive elements (if provided)',
           },
           {
             order: 3,
             element: 'closeButton',
-            role:
-              'Focusses to the close Icon Button in the header (if provided).',
+            role: 'Focusses to the close button in the header (if provided)',
           },
         ],
       },
       infoNoticeFocus: [
-        'There is no focus trapping available for the Popover.',
-        'Upon focus of the Popover, the first interactive element in the specified order will receive focus ie. if there are interactive elements passed to the header area, then this will be the first focusable element.',
-        'If you want to change the element that gets focus then add a data-autofocus attribute to the HTML element you want to be focused on.',
+        'Focus trapping is not available for the popover.',
+        'Upon focus of the popover, the first interactive element in the specified order will receive focus (i.e. if there are interactive elements passed to the header, this will be the first focussable element).',
+        'You can change the element that gets focus by adding a data-autofocus attribute to another HTML element.',
       ],
       interaction: {
         title: 'Keyboard Interactions',
@@ -358,7 +341,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Space or Enter'],
             description:
-              'Toggle the Popover when the interactive element it is attributed to is focused',
+              'Toggle the popover when the interactive element it’s attributed to is focussed',
           },
           {
             command: ['Tab'],
@@ -391,13 +374,13 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-expanded (state)',
             value: 'boolean',
             description:
-              'Set to true if the Popover is visible; false if the Popover is hidden',
+              'Set to ‘true’ if the popover is visible; ‘false’ if the popover is hidden',
           },
           {
             element: 'Popover',
             attribute: 'aria-hidden',
             value: 'boolean',
-            description: 'If true, hides the Popover',
+            description: 'If ‘true’, hides the popover',
           },
           {
             element: 'Popover',
@@ -410,16 +393,16 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       },
       infoNoticeAria: [
         <>
-          By default, the Popover only describes its child element. The content
-          of the Popover acts as an accessible description and{' '}
-          <InlineCode>aria-describedby</InlineCode> will be added to the
-          Popover&apos;s child elements.
+          By default, the popover only describes its child element. The content
+          of the popover acts as an accessible description and{' '}
+          <InlineCode>aria-describedby</InlineCode> is added to the
+          popover&apos;s child elements.
           <br />
           <br />
-          Note that if the Popover provides the only visual label, eg an icon
-          button, then you should use Popover to label its child elements.
-          Otherwise, the children would have no accessible name and the Popover
-          would violate{' '}
+          If the popover provides the only visual label (e.g. an icon button)
+          then you should use the popover to label its child elements.
+          Otherwise, the children will have no accessible name and the popover
+          will violate{' '}
           <Link
             target="_blank"
             href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html"
@@ -429,10 +412,10 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           <br />
           <br />
           You can pass the <InlineCode>asLabel</InlineCode> prop to make the
-          Popover act as a label. In this case,{' '}
-          <InlineCode>role=popover</InlineCode> will be removed, and if Popover
-          content is a string, <InlineCode>aria-label</InlineCode> will be added
-          to child elements. Otherwise, <InlineCode>aria-labelledby</InlineCode>{' '}
+          popover act as a label. In this case,{' '}
+          <InlineCode>role=popover</InlineCode> will be removed, and if popover
+          content is a string, <InlineCode>aria-label</InlineCode> is added to
+          child elements. Otherwise, <InlineCode>aria-labelledby</InlineCode>{' '}
           will be added.
         </>,
       ],
@@ -452,8 +435,8 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             }}
           >
             <>
-              Ensure all text, icons, and images are visible in the Popover so
-              that information can be crawled and indexed.
+              Ensure all text, icons and images are visible in the popover so
+              that information can be crawled and indexed
             </>
             <>
               The Popover component and its content are rendered to the DOM, but
@@ -468,34 +451,34 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Popover',
           propsSummary:
-            'The Popover has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The popover has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define its appearance.',
           overridesSummary:
-            'The Popover has a range of predefined elements and attributes that can be overridden to define their appearance.',
+            'The popover has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define its appearance.',
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactElement & { ref?: React.Ref<unknown>; };',
-              description: 'Popover reference element.',
+              description: 'Popover reference element',
               required: true,
             },
             {
               name: 'content',
               type: 'React.ReactNode',
-              description: 'Default content value.',
+              description: 'Default content value',
               required: true,
             },
             {
               name: 'open',
               type: 'boolean',
               default: 'false',
-              description: 'If true, determines if the Popover is open.',
+              description: 'If ‘true’, determines if the popover is open',
               required: undefined,
             },
             {
               name: 'onDismiss',
               type: 'function',
               description:
-                'A callback which is invoked on dismissing the Popover through either clicking on the element that opened it, the close Icon Button, area surrounding the Popover on the page, or by pressing the Esc key.',
+                'A callback invoked when the user dismisses the popover by clicking on the element that opened it, the close button or area surrounding the popover on the page, or by pressing the Esc key',
               required: undefined,
             },
             {
@@ -570,7 +553,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               ],
               default: 'top',
               description:
-                'Defines the placement of the Popover, with the optional pointer to denote the direction of the context it is attributed.',
+                'Defines the placement of the popover, with the optional pointer to denote the direction of the context to which it is attributed',
               required: undefined,
             },
             {
@@ -584,7 +567,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               name: 'restoreFocusTo',
               type: 'HTMLElement',
               description:
-                'If provided, returns focus to the focused element prior to the Popover opening.',
+                'If provided, returns focus to the element focussed prior to the popover opening',
               required: undefined,
             },
             {
@@ -592,7 +575,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               type: 'boolean',
               default: 'false',
               description:
-                'If true, the Popover can be closed by clicking outside of the popover or by pressing the Esc key.',
+                'If ‘true’, the popover can be closed by clicking outside of the popover or by pressing the Esc key',
               required: undefined,
             },
           ],
@@ -600,12 +583,12 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'maxWidth',
               type: 'MQ<string>',
-              description: 'Overrides the maxWidth property of the Popover.',
+              description: 'Overrides the maxWidth of the popover',
             },
             {
               attribute: 'minWidth',
               type: 'MQ<string>',
-              description: 'Overrides the minWidth property of the Popover.',
+              description: 'Overrides the minWidth of the popover',
             },
             {
               attribute: 'zIndex',
@@ -618,7 +601,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'space050',
               description:
-                'Overrides the distance between the Popover and the item it is attributed to.',
+                'Overrides the distance between the popover and the item it’s attributed to',
             },
             {
               attribute: 'stylePreset',
@@ -630,7 +613,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               attribute: 'transitionPreset',
               type: 'MQ<string>',
               default: 'fade',
-              description: 'Overrides the transitionPrese of the Popover.',
+              description: 'Overrides the transitionPreset of the popover',
             },
             {
               attribute: 'panel.stylePreset',
