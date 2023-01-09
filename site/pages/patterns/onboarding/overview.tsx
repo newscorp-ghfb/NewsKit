@@ -32,7 +32,7 @@ const Overview = (layoutProps: LayoutProps) => (
       type: 'Patterns',
       name: 'Overview',
       hero: {
-        illustration: 'patterns/forms/overview/hero',
+        illustration: 'patterns/onboarding/overview/hero',
       },
       introduction: `Onboarding is the first impression a user has of a product or feature. It’s crucial to make it count.`,
     }}
