@@ -54,7 +54,7 @@ module.exports = withMDX({
     emotion: {
       sourceMap: true,
       autoLabel: 'dev-only',
-      labelFormat: '[filename]_[local]',
+      labelFormat: '[local]',
       importMap: {
         newskit: {
           styled: {
