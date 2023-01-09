@@ -29,7 +29,7 @@ const Overview = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Patterns',
+      type: 'Onboarding',
       name: 'Overview',
       hero: {
         illustration: 'patterns/onboarding/overview/hero',
