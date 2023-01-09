@@ -59,6 +59,7 @@ const Index = ({
           themeMode={themeMode}
           toggleTheme={toggleTheme}
         />
+        <div>GITHUB_TOKEN={process.env.GITHUB_TOKEN}</div>
         <GridLayout
           overrides={{
             ...GRID_SECTION_OVERRIDES,
