@@ -50,7 +50,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             },
           }}
         >
-          <SidebarNav />
+          <SidebarNav handleClick={handleSidebarClick} />
           <Block marginInline="space060" marginBlock="space050">
             <GitHubLaunch />
           </Block>
