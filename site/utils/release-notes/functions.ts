@@ -3,7 +3,9 @@ import {FullRelease, Release} from './types';
 import {GITHUB_API_URL, GITHUB_URL, JIRA_URL, REPO} from './constants';
 
 export async function fetchGitHubReleases(per_page: number = 10) {
+  console.log('process', process.env);
   const ACCESS_TOKEN = process.env.GITHUB_TOKEN;
+  console.log('ACCESS_TOKEN', ACCESS_TOKEN);
   const res = await fetch(
     `${GITHUB_API_URL}/repos/${REPO}/releases?per_page=${per_page}`,
     ACCESS_TOKEN
