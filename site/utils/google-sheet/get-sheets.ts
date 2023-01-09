@@ -24,6 +24,7 @@ export async function getSheets(range: string) {
   ) {
     // Fail fast without a stacktrace
     handleError('Have you added the .env file for local builds?');
+    handleError(`failed to fetch spreadsheet: ${SPREADSHEET_ID}`);
     return [];
   }
 
