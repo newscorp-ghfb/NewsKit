@@ -147,6 +147,7 @@ export const BaseFloatingElement = React.forwardRef<
         } else if (restoreFocusTo) {
           restoreFocusTo.focus();
           // focus should not return to reference element when dismissOnBlur is set to true
+          // instead it should go with the tab flow like next active element
         } else if (!dismissOnBlur) {
           /* istanbul ignore next */
           refs.reference?.current?.focus();
