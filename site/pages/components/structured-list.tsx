@@ -36,7 +36,8 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Structured List',
-      description: '',
+      description:
+        'Structured lists group similar or related content together.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -46,7 +47,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         illustration: 'components/structured-list/hero',
       },
       introduction:
-        'The Structured List is a layout component that groups similar or related content.',
+        'Structured lists group similar or related content together.',
     }}
     componentDefaultsKey="structuredList"
     meta={{
@@ -57,7 +58,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Structured List component, its variations, and configuration options.',
+        'This demo lets you preview the structured list component, its variations and configuration options.',
       playground: {
         componentName: 'StructuredList',
         component: state => (
@@ -163,7 +164,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Cell',
           description:
-            'Content within the cells. Any component can be parsed to each cell (ReactNode)',
+            'Content within the cells. Any component can be passed to each cell (ReactNode)',
           component: ['Grid', 'Block'],
           optional: undefined,
         },
@@ -176,16 +177,15 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     options={{
-      introduction:
-        'The Structured List has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The structured list has options for different use cases:',
       cards: [
         {
           title: 'List item and cell layouts',
           description: (
             <>
-              The Structured List Cell can be configured to achieve multiple
-              layouts by using nested grids and the{' '}
-              <InlineCode>pullRight</InlineCode> prop.
+              Achieve multiple layouts by configuring the structured list cell
+              using nested grids and the <InlineCode>pullRight</InlineCode>{' '}
+              prop.
             </>
           ),
           media: getIllustrationComponent(
@@ -196,11 +196,11 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           title: 'List item dividers',
           description: (
             <>
+              Visually separate list items by applying{' '}
               <Link target="_blank" href="/components/divider">
-                Dividers
+                dividers
               </Link>{' '}
-              can applied to the bottom of List items to provide visual
-              separation, set via the <InlineCode>divider</InlineCode> prop.
+              to the bottom of a list item, via the divider prop.
             </>
           ),
           media: getIllustrationComponent(
@@ -211,8 +211,8 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           title: 'Interactive items',
           description: (
             <>
-              Structured List items can be set to be interactive by supplying a
-              link for an item.
+              Make structured list items interactive by supplying a link for an
+              item.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
@@ -221,10 +221,10 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space050',
                 }}
               >
-                If a HREF is passed to the component then a chevron is rendered
-                in the last cell and the item becomes interactive (to indicate
-                that the item is interactive the stylePreset and cursor is set
-                to pointer).
+                If you pass a href to the component, it renders a chevron in the
+                last cell and the item becomes interactive. To show that the
+                item is interactive, the stylePreset and cursor are set to
+                ‘pointer’.
               </InlineMessage>
             </>
           ),
@@ -235,14 +235,13 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction:
-        'When a Structured List is interactive, it has states including, base, hover, active, disabled, and focus.',
+      introduction: 'The structured list has the following states:',
       layout: '3-span',
       cards: [
         {
           title: 'Base',
           description:
-            'The Structured List has a base state. This is the base style of the list item before it has been interacted with by a user.',
+            'The default style before the user interacts with the list item.',
           media: getIllustrationComponent(
             'components/structured-list/states/base',
           ),
@@ -250,7 +249,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Hover',
           description:
-            'The Structured List has a hover state. The style of the list item changes to visually communicate and provide feedback to the user that the list item is an interactive element.',
+            'The list item changes style to let the user know it’s interactive.',
           media: getIllustrationComponent(
             'components/structured-list/states/hover',
           ),
@@ -258,15 +257,24 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Active',
           description:
-            'The Structured List has an active state. The style of the list item changes to visually communicate and provide feedback to the user that the Tab item has been interacted with.',
+            'The list item changes style to let the user know they’ve interacted with it.',
           media: getIllustrationComponent(
             'components/structured-list/states/active',
           ),
         },
         {
           title: 'Disabled',
-          description:
-            'The Structured List in a disabled state communicates that a list item exists, but is not available to the user in that scenario. When the user’s cursor hovers over a list item in a disabled state, the cursor shows as not-allowed. Disabled list items are often used to maintain layout consistency and communicate that a list item may become available if another condition has been met.',
+          description: (
+            <>
+              Communicates that a list item exists, but isn’t available in that
+              scenario. When the user hovers over a list item in a disabled
+              state, the cursor shows as ‘not allowed’.
+              <br />
+              <br />
+              Disabled list items maintain layout consistency and communicate
+              that a list item may become available if another condition is met.
+            </>
+          ),
           media: getIllustrationComponent(
             'components/structured-list/states/disabled',
           ),
@@ -274,7 +282,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Focus',
           description:
-            'Structured List in a focus state communicates that a user has highlighted a list item, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted a list item (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/structured-list/states/focus',
           ),
@@ -282,20 +290,19 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction:
-        'The following guidance describes how a Structured List behaves.',
+      introduction: 'Here’s how the structured list behaves:',
       cards: [
         {
           title: 'Alignment',
           description: (
             <>
-              On XS&gt; breakpoints, the content of the third cell align to the
-              vertical center, and the content of the second cell moves below
-              the first cell.
+              On xs and sm breakpoints, the content of the third cell aligns to
+              the vertical centre, and the content of the second cell moves
+              below the first cell.
               <br />
               <br />
-              On MD&gt; breakpoints, the content of the third cell align to the
-              top.
+              On md and above breakpoints, the content of the third cell aligns
+              to the top.
             </>
           ),
           media: getIllustrationComponent(
@@ -306,14 +313,14 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction:
-        'The Structured List has the following accessibility considerations:',
+        'The structured list has the following accessibility considerations:',
       focusOrder: {
         title: 'Focus order',
         tableRows: [
           {
             order: 1,
             element: 'List item',
-            role: 'Focusses on the first List item in the Structured List.',
+            role: 'Focusses to the first list item in the structured list',
           },
         ],
       },
@@ -331,11 +338,11 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           },
           {
             command: ['Up arrow'],
-            description: 'Focuses the previous List item.',
+            description: 'Focusses to the previous list item',
           },
           {
             command: ['Down arrow'],
-            description: 'Focuses the next List item.',
+            description: 'Focusses to the next list item',
           },
         ],
       },
@@ -346,16 +353,14 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
             element: 'StructuredList',
             attribute: 'arialabel',
             value: '',
-            description:
-              'Aria-label attribute is used to define the name of the Structured List',
+            description: 'Defines the name of the structured list',
             userSupplied: true,
           },
           {
             element: 'StructuredListItem',
             attribute: 'arialabel',
             value: '',
-            description:
-              'Aria-label attribute is used to define the name of the List item',
+            description: 'Defines the name of the list item',
             userSupplied: true,
           },
         ],
@@ -366,9 +371,9 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Structured List',
           propsSummary:
-            'The Structured List has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The structured list has a range of props for different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
           overridesSummary:
-            'The Structured List has a range of predefined elements and attributes that can be overridden to define their appearance.',
+            'The structured list has a range of props for different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
           propsRows: [
             {
               name: 'children',
@@ -388,9 +393,9 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               default: 'false',
               description: (
                 <>
-                  If true, renders a{' '}
-                  <Link href="/components/divider">Divider</Link> component
-                  between structured list items in a Structured List
+                  If ‘true’, renders a{' '}
+                  <Link href="/components/divider">Divider</Link> between
+                  structured list items in a structured list
                 </>
               ),
               required: true,
@@ -403,10 +408,9 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               default: 'divider',
               description: (
                 <>
-                  If provided, this overrides the divider styling.{' '}
-                  <Link href="/components/divider">
-                    Refer to the Divider component for full documentation.
-                  </Link>
+                  If provided, overrides the divider styling. See the{' '}
+                  <Link href="/components/divider">divider</Link> styling. See
+                  the divider page for more
                 </>
               ),
             },
@@ -414,7 +418,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               attribute: 'width',
               type: 'MQ<string>',
               default: '100%',
-              description: 'Overrides width of the Structured List.',
+              description: 'Overrides the width of the structured list',
             },
             ...logicalMarginOverrideProps,
             ...logicalPaddingOverrideProps,
@@ -423,9 +427,9 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Structured List Item',
           propsSummary:
-            'The Structured List Item has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The structured list Item has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
           overridesSummary:
-            'The Structured List Item has a range of predefined elements and attributes that can be overridden to define their appearance.',
+            'The structured list Item has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
           propsRows: [
             {
               name: 'children',
@@ -438,7 +442,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               type: 'string',
               required: false,
               description:
-                'If supplied, ensures the list item is interactive linking to the href, sets a chevron icon to last cell in the list item and applies the listitem.stylePreset.',
+                'If supplied, makes the list item into a link, adds a chevron icon into the last cell, and applies the listitem.stylePreset',
             },
             {
               name: 'ariaLabel',
@@ -458,7 +462,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               type: `'start' | 'center' | 'end'`,
               default: 'start',
               description:
-                'Vertically align the Icon when the StructuredListItem is Link',
+                'Vertically aligns the icon when the structuredListItem is a link',
             },
             {
               name: 'hideIcon',
@@ -473,21 +477,19 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'structuredListItem',
-              description: `If provided, this overrides the stylePreset applied to the StructuredListItem's outer container. Can be used to override the background color of the StructuredListItem`,
+              description: `If provided, overrides the stylePreset applied to the structuredListItem's outer container. Can be used to override the background colour of the structuredListItem`,
             },
             {
               attribute: 'Label',
               type: 'MQ<string>',
               default: 'sizing100',
-              description: `If provided, this overrides the minHeight applied to the StructuredListItem's most
-              outer container.`,
+              description: `If provided, overrides the minHeight applied to the structuredListItem's outermost container`,
             },
             {
               attribute: 'Label',
               type: 'MQ<string>',
               default: 'spaceInsetStretch040',
-              description: `If provided, this overrides the spaceInset applied to the StructuredListItem's most
-              outer container`,
+              description: `If provided, overrides the spaceInset applied to the structuredListItem's outermost container`,
             },
             {
               attribute: 'Label',
@@ -506,7 +508,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Structured List Cell',
           summary:
-            'The Structured List Cell has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The structured list cell has a range of props to define the experience in different use cases.',
           propsRows: [
             {
               name: 'children',
@@ -517,15 +519,14 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
             {
               name: 'pullRight',
               type: 'boolean',
-              description:
-                'If true, the cell with pullRight prop will be pulled to the right',
+              description: 'If true, pulls the cell to the right',
               default: 'false',
             },
             {
               name: 'align',
               type: `'start' | 'center' | 'end'`,
               default: 'start',
-              description: 'Vertically align the content',
+              description: 'Vertically aligns the content',
             },
           ],
         },
