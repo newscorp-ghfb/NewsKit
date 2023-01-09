@@ -121,17 +121,17 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
       <LegacyBlock display="inline" position="relative">
         <StyledFieldset>
           <StyledLegend>{name}</StyledLegend>
-          {options.map(({value, label}, index) => {
+          {options.map(({value, label}) => {
             const checked = setChecked(selectedValue, value);
 
-            const id = `multichoice-knob-${index}-${label}-${value}`;
+            const id = `multichoice-knob-${name}-${label}-${value}`;
             return (
               <React.Fragment key={id}>
                 <StyledInput
                   type="radio"
                   id={id}
                   data-testid={value}
-                  name={index + name}
+                  name={label + name}
                   defaultChecked={checked}
                   onClick={() => {
                     if (onChange) onChange(value);
