@@ -2,12 +2,16 @@
 
 import {defineConfig} from 'cypress';
 
+const {readAllFilesInDir} = require('./cypress/plugins/files');
+
 export default defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      // eslint-disable-next-line global-require
-      return require(// eslint-disable-next-line import/extensions
-      './cypress/plugins/index.js')(on, config);
+    setupNodeEvents(on) {
+      on('task', {
+        readAllFilesInDir(dir) {
+          return readAllFilesInDir(dir);
+        },
+      });
     },
     baseUrl: 'http://localhost:8081',
     specPattern: 'cypress/site/functional/**/*.cy.{js,jsx,ts,tsx}',
