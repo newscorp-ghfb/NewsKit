@@ -659,7 +659,6 @@ export const routes = [
             description: 'Breadcrumbs are used for secondary navigation.',
 
             illustration: 'components/breadcrumbs/hero',
-
           },
           {
             title: 'Link',
