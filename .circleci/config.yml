@@ -1546,14 +1546,16 @@ workflows:
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_dev
           context: ncu-newskit-site-dev
+          environment: dev
           requires:
             - eks_flux_deploy_dev
 
       - build_docs:
-          name: build_docs_prod_link
+          name: build_docs_prod_link_test
           context: ncu-newskit-site-prod
+          environment: pr
           requires:
-            - eks_kubectl_deploy_dev
+            - build_icons
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
@@ -1564,7 +1566,6 @@ workflows:
       - eks_flux_deploy:
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
-          environment: pr
           requires:
             - build_push_docker_ecr_prod
       - eks_kubectl_deploy:
