@@ -39,10 +39,4 @@ async function readAllFilesInDir(dir) {
   return results;
 }
 
-module.exports = on => {
-  on('task', {
-    readAllFilesInDir(dir) {
-      return readAllFilesInDir(dir);
-    },
-  });
-};
+module.exports = {readAllFilesInDir};

@@ -394,6 +394,7 @@ jobs:
           root: ~/project
           paths:
             - .cache
+            - cypress/*
       - slack/notify:
           <<: *slack_notify
 
@@ -1022,14 +1023,12 @@ jobs:
       - run:
           name: Prepare the NextJs app
           command: |
-            echo "Adding nedded files into the NextJs app"
+            echo "Adding needed files into the NextJs app"
 
             cp ./scripts/templates-integration-test/index.txt ./newskit-integration-test/pages/index.js
-            cp ./scripts/templates-integration-test/cypress.json ./newskit-integration-test/
+            cp ./scripts/templates-integration-test/cypress.config.js ./newskit-integration-test/
             cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
-            mkdir -p ./newskit-integration-test/cypress/integration
-            cp ./scripts/templates-integration-test/theme-checker.spec.js ./newskit-integration-test/cypress/integration
-
+            cp -R ./scripts/templates-integration-test/cypress ./newskit-integration-test
 
             echo "Installing needed packages into the NextJS app"
 
@@ -1040,7 +1039,7 @@ jobs:
             yarn add react-dom@18.2
             yarn add @emotion/react
             yarn add @emotion/styled
-            yarn add -D cypress@9.1.0
+            yarn add -D cypress@12.3.0
       - run:
           name: Serve and test app with Cypress
           command: |
