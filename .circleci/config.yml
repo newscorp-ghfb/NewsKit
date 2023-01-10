@@ -1559,7 +1559,7 @@ workflows:
           name: build_docs_prod_link
           context: ncu-newskit-site-prod
           requires:
-            - build_icons
+            - eks_kubectl_deploy_dev
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
