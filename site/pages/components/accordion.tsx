@@ -33,7 +33,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="Accordion"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v5.6.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/accordion',

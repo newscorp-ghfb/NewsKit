@@ -46,7 +46,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="inlineMessage"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v3.3.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/inline-message',

@@ -20,6 +20,8 @@ import {withOwnTheme} from '../utils/with-own-theme';
 const ImageComponent = React.forwardRef<HTMLImageElement, ImageProps>(
   (
     {
+      width,
+      height,
       loadingAspectRatio,
       placeholderIcon = false,
       overrides = {},
@@ -109,6 +111,8 @@ const ImageComponent = React.forwardRef<HTMLImageElement, ImageProps>(
         <Sources sources={sources} />
         <StyledImage
           {...props}
+          width={width}
+          height={height}
           onLoad={onLoad}
           onError={onError}
           isLoading={showLoading()}

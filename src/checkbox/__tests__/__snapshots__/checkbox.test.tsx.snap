@@ -1101,13 +1101,26 @@ exports[`Checkbox hover on feedback shows it: with hover 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -1605,13 +1618,26 @@ exports[`Checkbox hover on feedback shows it: without hover 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -1767,9 +1793,22 @@ exports[`Checkbox hover on feedback when disabled does not show it: with hover 1
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -1926,9 +1965,22 @@ exports[`Checkbox hover on feedback when disabled does not show it: without hove
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -2091,13 +2143,26 @@ exports[`Checkbox hover on label trigger checkbox hover styles: with hover 1`] =
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -2595,13 +2660,26 @@ exports[`Checkbox hover on label trigger checkbox hover styles: without hover 1`
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -2757,9 +2835,22 @@ exports[`Checkbox hover on label with disabled do not change hover state: with h
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -2916,9 +3007,22 @@ exports[`Checkbox hover on label with disabled do not change hover state: withou
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -3417,13 +3521,26 @@ exports[`Checkbox label attributes 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -3477,13 +3594,26 @@ exports[`Checkbox label position start 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-1:disabled {
   color: #ABABAB;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-2 {
@@ -6043,13 +6173,26 @@ exports[`Checkbox render with size: large & label 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -7298,13 +7441,26 @@ exports[`Checkbox render with size: medium & label 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -8553,13 +8709,26 @@ exports[`Checkbox render with size: small & label 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label

@@ -228,7 +228,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               optional: true,
             },
           ],
-          media: getIllustrationComponent('components/menu/anatomy', {
+          media: getIllustrationComponent('components/menu/sub-menu-anatomy', {
             viewBox: '0 0 1600 900',
           }),
         },

@@ -117,13 +117,17 @@ const MenuDesktop = ({path}: {path: string}) => {
   );
 };
 
-export const SidebarNav = () => {
+export const SidebarNav = ({handleClick}: {handleClick?: () => void}) => {
   const path = useRouter().pathname;
 
   return (
     <>
       <Visible xs sm md>
-        <MenuMobileCollapsible path={path} menu={routes} />
+        <MenuMobileCollapsible
+          path={path}
+          menu={routes}
+          handleClick={handleClick}
+        />
       </Visible>
       <Visible lg xl>
         <MenuDesktop path={path} />

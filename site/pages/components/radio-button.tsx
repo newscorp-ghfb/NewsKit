@@ -181,7 +181,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="radioButton"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v5.3.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/radio-button',

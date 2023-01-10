@@ -111,7 +111,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="gridLayout"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v5.1.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/grid-layout',

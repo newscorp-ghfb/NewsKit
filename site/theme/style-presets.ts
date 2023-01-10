@@ -307,6 +307,22 @@ export const stylePresets = {
       whiteSpace: 'nowrap',
     },
   },
+  flagSupported: {
+    base: {
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      borderColor: '{{colors.interfaceInformative010}}',
+      color: '{{colors.inkInverse}}',
+      backgroundColor: '{{colors.interfaceInformative010}}',
+    },
+  },
+  flagBeta: {
+    base: {
+      borderRadius: '{{borders.borderRadiusDefault}}',
+      borderColor: '{{colors.interfaceNeutral020}}',
+      color: '{{colors.inkContrast}}',
+      backgroundColor: '{{colors.interface020}}',
+    },
+  },
   flagSolidMinor: {
     base: {
       borderRadius: '{{borders.borderRadiusPill}}',
