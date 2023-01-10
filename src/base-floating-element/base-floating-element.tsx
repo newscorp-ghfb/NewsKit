@@ -72,6 +72,7 @@ export const BaseFloatingElement = React.forwardRef<
       showOverridePxWarnings(pointerPadding, 'pointer.edgeOffset');
     }, [distance, pointerPadding]);
 
+    const cssTransitionNodeRef = React.useRef(null);
     const panelRef = useRef<HTMLDivElement>(null);
     const pointerRef = useRef(null);
     const {
@@ -192,6 +193,7 @@ export const BaseFloatingElement = React.forwardRef<
             children.props.onPointerDown || referenceProps.onPointerDown,
         })}
         <CSSTransition
+          nodeRef={cssTransitionNodeRef}
           in={open}
           timeout={getTransitionDuration(path, '')({theme, overrides})}
           classNames={baseTransitionClassname}
@@ -201,7 +203,7 @@ export const BaseFloatingElement = React.forwardRef<
         >
           {state => (
             <StyledFloatingElement
-              ref={ref}
+              ref={composeRefs(cssTransitionNodeRef, ref)}
               {...getFloatingProps({
                 ref: floating,
                 id: floatingId,
@@ -227,7 +229,7 @@ export const BaseFloatingElement = React.forwardRef<
                 as={contentIsString ? 'p' : 'div'}
                 overrides={overrides}
                 path={path}
-                ref={panelRef}
+                ref={composeRefs(cssTransitionNodeRef, panelRef)}
               >
                 {typeof content === 'function'
                   ? content(referenceProps)

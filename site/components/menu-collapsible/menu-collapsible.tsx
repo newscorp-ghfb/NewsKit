@@ -70,9 +70,11 @@ type SubNavItemProps = NavProps & SubNavProps;
 export const MenuMobileCollapsible = ({
   path,
   menu,
+  handleClick,
 }: {
   path: string;
   menu: SubNavItemProps[];
+  handleClick?: () => void;
 }) => {
   const [openPanelIds, setOpenPanelIds] = useState<Array<number>>([]);
   useEffect(() => {
@@ -91,6 +93,7 @@ export const MenuMobileCollapsible = ({
                   href={id}
                   selected={path.includes(id)}
                   eventContext={{value: title}}
+                  onClick={handleClick}
                   overrides={{
                     minHeight: '40px',
                     stylePreset: 'sideBarNavigation',
