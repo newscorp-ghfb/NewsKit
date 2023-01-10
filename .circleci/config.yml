@@ -1551,7 +1551,7 @@ workflows:
             - eks_flux_deploy_dev
 
       - build_docs:
-          name: build_docs_prod_link_test
+          name: build_docs_prod_link
           context: ncu-newskit-site-prod
           requires:
             - build_icons
@@ -1565,12 +1565,14 @@ workflows:
       - eks_flux_deploy:
           name: eks_flux_deploy_staging
           context: ncu-newskit-site-stage
+          deployment_type: prod
+          environment: staging
           requires:
             - build_push_docker_ecr_prod
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_staging
           context: ncu-newskit-site-stage
-          environment: pr
+          environment: staging
           requires:
             - eks_flux_deploy_staging
 
