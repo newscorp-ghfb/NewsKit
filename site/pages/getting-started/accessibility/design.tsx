@@ -95,10 +95,7 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
 
         <ContentSecondary headline="Need answers fast?">
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <Link
-              href="https://www.w3.org/WAI/tips/designing/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
-            >
+            <Link href="https://www.w3.org/WAI/tips/designing/" type="inline">
               Designing for web accessibility
             </Link>{' '}
             - the top 10 things to consider with examples and links to WCAG
@@ -107,10 +104,7 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
         </ContentSecondary>
         <ContentSecondary headline="Have time?" showSeparator>
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <Link
-              href="https://www.accessibility.uxdesign.cc/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
-            >
+            <Link href="https://www.accessibility.uxdesign.cc/" type="inline">
               Giving a damn about accessibility
             </Link>{' '}
             - a comprehensive handbook on designing for accessibility and
@@ -120,7 +114,7 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="https://www.w3.org/WAI/WCAG21/Understanding/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
+              type="inline"
             >
               Understanding WCAG 2.1
             </Link>{' '}
@@ -128,10 +122,7 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <Link
-              href="https://www.w3.org/WAI/ARIA/apg/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
-            >
+            <Link href="https://www.w3.org/WAI/ARIA/apg/" type="inline">
               ARIA authoring practices guides
             </Link>{' '}
             - how to use the accessibility semantics defined by ARIA.

@@ -67,45 +67,39 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
           id="build-accessible-websites"
           toc="Build accessible code"
           headline="Build accessible code"
-          description={
-            <>
-              When building for the web, consider:
+          description=" When building for the web, consider:"
+        >
+          <>
+            <UnorderedList
+              markerAlign="center"
+              overrides={{
+                spaceStack: 'space040',
+                content: {
+                  typographyPreset: 'editorialParagraph030',
+                },
+                marker: {
+                  spaceInline: 'space020',
+                },
+              }}
+            >
+              {listData}
+            </UnorderedList>
+            <br />
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              Considerations will vary depending on what you are building.
               <br />
-              <br />
-              <UnorderedList
-                markerAlign="center"
-                overrides={{
-                  spaceStack: 'space040',
-                  content: {
-                    typographyPreset: 'editorialParagraph030',
-                  },
-                  marker: {
-                    spaceInline: 'space020',
-                  },
-                }}
-              >
-                {listData}
-              </UnorderedList>
-              <br />
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                Considerations will vary depending on what you are building.
-                <br />
-                See the{' '}
-                <Link href="https://www.a11yproject.com/checklist/">
-                  a11y project checklist
-                </Link>{' '}
-                for a complete list of code considerations.
-              </P>
-            </>
-          }
-        />
+              See the{' '}
+              <Link href="https://www.a11yproject.com/checklist/">
+                a11y project checklist
+              </Link>{' '}
+              for a complete list of code considerations.
+            </P>
+          </>
+        </ContentPrimary>
 
         <ContentSecondary headline="Need answers fast?">
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <Link
-              href="https://www.w3.org/WAI/tips/developing/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
-            >
+            <Link href="https://www.w3.org/WAI/tips/developing/" type="inline">
               Developing for web accessibility
             </Link>{' '}
             - the top 10 things to consider with examples and links to WCAG
@@ -113,10 +107,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <Link
-              href="https://www.w3.org/WAI/WCAG21/quickref/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
-            >
+            <Link href="https://www.w3.org/WAI/WCAG21/quickref/" type="inline">
               How to meet WCAG (quick reference)
             </Link>{' '}
             - search and filter WCAG criteria.
@@ -125,7 +116,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="https://w3c.github.io/aria-practices/examples/landmarks/index.html"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
+              type="inline"
             >
               ARIA landmarks examples
             </Link>{' '}
@@ -136,7 +127,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="https://www.w3.org/WAI/WCAG21/Understanding/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
+              type="inline"
             >
               Understanding WCAG 2.1
             </Link>{' '}
@@ -144,20 +135,14 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <Link
-              href="https://www.w3.org/WAI/ARIA/apg/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
-            >
+            <Link href="https://www.w3.org/WAI/ARIA/apg/" type="inline">
               ARIA authoring practices guide
             </Link>{' '}
             - how to use the accessibility semantics defined by ARIA.
           </P>
           <br />
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <Link
-              href="https://www.w3.org/WAI/media/av/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
-            >
+            <Link href="https://www.w3.org/WAI/media/av/" type="inline">
               Making audio and video accessible
             </Link>{' '}
             - how to make media accessible.
@@ -166,7 +151,7 @@ const AccessibilityCode = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
+              type="inline"
             >
               MDN web docs accessibility guide
             </Link>{' '}

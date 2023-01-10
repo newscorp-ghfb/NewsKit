@@ -62,45 +62,39 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
           id="write-accessible-content"
           toc="Write accessible content"
           headline="Write accessible content"
-          description={
-            <>
-              When writing for the web, consider:
+          description="When writing for the web, consider:"
+        >
+          <>
+            <UnorderedList
+              markerAlign="center"
+              overrides={{
+                spaceStack: 'space040',
+                content: {
+                  typographyPreset: 'editorialParagraph030',
+                },
+                marker: {
+                  spaceInline: 'space020',
+                },
+              }}
+            >
+              {listData}
+            </UnorderedList>
+            <br />
+            <P overrides={{typographyPreset: 'editorialParagraph030'}}>
+              Considerations will vary depending on what you are writing.
               <br />
-              <br />
-              <UnorderedList
-                markerAlign="center"
-                overrides={{
-                  spaceStack: 'space040',
-                  content: {
-                    typographyPreset: 'editorialParagraph030',
-                  },
-                  marker: {
-                    spaceInline: 'space020',
-                  },
-                }}
-              >
-                {listData}
-              </UnorderedList>
-              <br />
-              <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-                Considerations will vary depending on what you are writing.
-                <br />
-                See the{' '}
-                <Link href="https://www.a11yproject.com/checklist/">
-                  a11y project checklist
-                </Link>{' '}
-                for a complete list of content considerations.
-              </P>
-            </>
-          }
-        />
+              See the{' '}
+              <Link href="https://www.a11yproject.com/checklist/" type="inline">
+                a11y project checklist
+              </Link>{' '}
+              for a complete list of content considerations.
+            </P>
+          </>
+        </ContentPrimary>
 
         <ContentSecondary headline="Need answers fast?">
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
-            <Link
-              href="https://www.w3.org/WAI/tips/writing/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
-            >
+            <Link href="https://www.w3.org/WAI/tips/writing/" type="inline">
               Writing for web accessibility
             </Link>{' '}
             - the top 7 things to consider with examples and links to WCAG
@@ -111,7 +105,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="https://www.w3.org/WAI/WCAG2/supplemental/objectives/o3-clear-content/"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
+              type="inline"
             >
               Writing clear and understandable content Writing for web
               accessibility
@@ -122,7 +116,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="https://www.gov.uk/guidance/guidance-and-tools-for-digital-accessibility#designing-accessible-content"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
+              type="inline"
             >
               Designing accessible content
             </Link>{' '}
@@ -132,7 +126,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="http://www.plainenglish.co.uk/free-guides.html"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
+              type="inline"
             >
               How to write in plain English
             </Link>{' '}
@@ -143,7 +137,7 @@ const AccessibilityWrite = (layoutProps: LayoutProps) => (
           <P overrides={{typographyPreset: 'editorialParagraph030'}}>
             <Link
               href="https://sites.google.com/news.co.uk/d-and-i/inclusive-terminology?authuser=0"
-              overrides={{typographyPreset: 'editorialParagraph030'}}
+              type="inline"
               external={false}
             >
               The common sense guide to inclusion terminology
