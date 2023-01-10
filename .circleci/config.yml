@@ -1361,6 +1361,11 @@ workflows:
           context: ncu-newskit-site-pr
           requires:
             - build_icons
+      - build_docs:
+          name: build_docs_prod_test
+          context: ncu-newskit-site-prod
+          requires:
+            - build_icons
       - push_s3:
           name: deploy_to_s3
           context: ncu-product-platforms-context
