@@ -98,7 +98,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
       type: 'Text',
       name: 'Ordered List',
       hero: {
-        illustration: 'components/ordered-list-illustration',
+        illustration: 'components/orderedlist/hero',
       },
       introduction:
         'Ordered lists make blocks of text easier to read, structuring sequential information into manageable, numbered items.',
@@ -221,7 +221,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
     anatomy={{
       introduction: 'The ordered list contains two required elements.',
       media: getIllustrationComponent(
-        'components/orderedlist/anatomy/anatomy-01.tsx',
+        'components/orderedlist/anatomy/anatomy-01',
       ),
       rows: [
         {
@@ -245,7 +245,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
           description:
             'The counter applied to the content of the ordered list can be overridden to use any typography preset.',
           media: getIllustrationComponent(
-            'components/ordered-list/options/counter',
+            'components/orderedlist/options/counter',
           ),
         },
       ],

@@ -192,7 +192,7 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
       type: 'Text',
       name: 'Unordered List',
       hero: {
-        illustration: 'components/unordered-list-illustration',
+        illustration: 'components/unordered-list/hero',
       },
       introduction:
         'Unordered lists make blocks of related text easier to read, structuring information of equal value into manageable bulleted items.',

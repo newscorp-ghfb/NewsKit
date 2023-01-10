@@ -302,7 +302,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                   'Use names that describe what the icon represents. Keep them simple and logical.',
                 kind: UsageKind.DO,
                 media: getIllustrationComponent(
-                  'theme/iconography/usage/do-05',
+                  'theme/iconography/usage/do-06',
                   {
                     viewBox: '0 0 1344 759',
                   },
@@ -314,7 +314,7 @@ const Iconography = (layoutProps: LayoutProps) => (
                   'Use icons that are proportional to the text they are paired with or the interface may feel unbalanced.',
                 kind: UsageKind.DO,
                 media: getIllustrationComponent(
-                  'theme/iconography/usage/do-06',
+                  'theme/iconography/usage/do-05',
                   {
                     viewBox: '0 0 1344 759',
                   },
