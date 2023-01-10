@@ -123,7 +123,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -260,7 +260,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -397,7 +397,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -534,7 +534,7 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -656,7 +656,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -789,7 +789,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -926,7 +926,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1063,7 +1063,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1200,7 +1200,7 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1322,7 +1322,7 @@ exports[`Tooltip should render correct styles: default 1`] = `
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1442,7 +1442,7 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1575,7 +1575,7 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1712,7 +1712,7 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1849,7 +1849,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1986,7 +1986,7 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
     tabindex="-1"
   >
     <p
-      class="emotion-1"
+      class="emotion-1 nk-tooltip-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
