@@ -1572,6 +1572,7 @@ workflows:
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_staging
           context: ncu-newskit-site-stage
+          environment: dev
           requires:
             - eks_flux_deploy_staging
 
