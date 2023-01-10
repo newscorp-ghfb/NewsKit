@@ -174,3 +174,12 @@ stylePresets.selectOptionItemIcon = {
     iconColor: '{{colors.interactiveInput040}}',
   },
 };
+
+stylePresets.cardComposable = {
+  base: {
+    backgroundColor: '#f4f4f4',
+  },
+  hover: {
+    backgroundColor: '#ededed',
+  },
+};
