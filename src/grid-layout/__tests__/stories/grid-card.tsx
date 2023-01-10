@@ -5,9 +5,10 @@ import {Block} from '../../../block';
 import {styled} from '../../../utils/style';
 import {Button} from '../../../button';
 import {Image} from '../../../image';
-import {Flag, getMediaQueryFromTheme} from '../../..';
+import {Flag, getMediaQueryFromTheme, Paragraph, Tag} from '../../..';
 import {IconFilledEmail} from '../../../icons';
-import {GridLayout} from '../../grid-layout';
+import {GridLayout, GridLayoutItem} from '../../grid-layout';
+import {GridLayoutItemProps, GridLayoutProps} from '../../types';
 
 const StyledAdvancedCard = styled(GridLayout)`
   border: 1px solid gray;
@@ -174,3 +175,63 @@ export const GridTeaser = ({
     </StyledAdvancedCard>
   );
 };
+
+const StyledCard = styled(GridLayout)`
+  position: relative;
+`;
+
+const Card = (props: GridLayoutProps) => <StyledCard {...props} />;
+
+const CardMedia = ({src}) => (
+  <img src={src} alt="" style={{maxWidth: '100%'}} />
+);
+
+const CardContent = (props: GridLayoutItemProps) => (
+  <GridLayoutItem {...props} />
+);
+
+const CardActions = (props: GridLayoutItemProps) => (
+  <GridLayoutItem {...props} />
+);
+
+const StyledGridActionArea = styled(GridLayoutItem)`
+  ${({full}) =>
+    full &&
+    `
+    &:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  
+  `}
+`;
+
+const CardActionArea = ({
+  href,
+  full = false,
+  row,
+  column,
+  ...props
+}: GridLayoutItemProps & {href?: string; full?: boolean}) => (
+  <StyledGridActionArea as="a" href={href} full={full} {...props} />
+);
+
+export const CardComposableExample = () => (
+  <>
+    <Card overrides={{maxWidth: '320px'}}>
+      <CardMedia src="/placeholder-3x2.png" />
+      <CardContent>
+        <CardActionArea href="/news">
+          <Headline kickerText="KICKER">Title of the card</Headline>
+        </CardActionArea>
+        <Paragraph>Some kind of intro</Paragraph>
+      </CardContent>
+      <CardActions>
+        <Tag href="/">News</Tag>
+        <Tag href="/">Music</Tag>
+        <Tag href="/">Festivals</Tag>
+      </CardActions>
+    </Card>
+  </>
+);

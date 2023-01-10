@@ -3,7 +3,7 @@ import {styled} from '../../../utils';
 import {Block} from '../../../block';
 import {Divider} from '../../../divider';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
-import {GridCard, GridTeaser} from './grid-card';
+import {GridCard, GridTeaser, CardComposableExample} from './grid-card';
 import {GridBox} from './common';
 import {Grid, Cell} from '../../../grid';
 import {Label} from '../../..';
@@ -414,21 +414,9 @@ StoryWithLogicalPropsOverrides.storyName = 'with-logical-props';
 
 export const StoryCardWithGrid = () => (
   <>
+    <CardComposableExample />
+    <hr />
     <StorybookHeading>Card with grid</StorybookHeading>
-    <GridCard
-      href="#"
-      image="/placeholder-3x2.png"
-      title="title of the card describing the main content"
-      teaser="this is the teaser"
-    />
-    <Block spaceStack="100px" />
-    <Divider />
-    <Block spaceStack="100px" />
-    <GridTeaser
-      image="/placeholder-3x2.png"
-      title="title of the card describing the main content"
-      teaser="this is the teaser"
-    />
   </>
 );
 StoryCardWithGrid.storyName = 'card-with-grid';
