@@ -386,7 +386,7 @@ describe('Popover', () => {
       expect(queryByRole('dialog')).not.toBeInTheDocument();
     });
 
-    test('does close on focus outside', async () => {
+    test('does close on focus outside when dismissOnBlur is true', async () => {
       const Component = () => (
         <>
           <Popover {...defaultProps} dismissOnBlur />
