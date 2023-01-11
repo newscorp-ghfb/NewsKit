@@ -62,7 +62,7 @@ For detailed information on how to run the automated tests, please visit [Testin
 
 ## 🔗 Key Links
 
-* [NewsKit Documentati](https://www.newskit.co.uk/)
+* [NewsKit Documentat](https://www.newskit.co.uk/)
 * [View NewsKit Design System npm package](https://www.npmjs.com/package/newskit)
 * [Github repository](https://github.com/newscorp-ghfb/newskit)
 * [Medium](https://medium.com/newskit-design-system)
