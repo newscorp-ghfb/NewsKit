@@ -4,7 +4,7 @@ import {ContentPrimary} from '../../content-structure';
 import {Illustration} from '../../illustrations/illustration-loader';
 
 const BrandIllustration = ({path}: {path: string}) => (
-  <Illustration path={path} viewBox="0 0 1344 759" width="100%" height="auto" />
+  <Illustration path={path} viewBox="0 0 1344 759" width="100%" />
 );
 
 const SUPPORTED_BRANDS = [
