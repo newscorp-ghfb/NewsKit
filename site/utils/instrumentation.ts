@@ -1,7 +1,7 @@
 import {InstrumentationEvent} from 'newskit';
 
 /*
-We need to re-map some of the object values as request by Data team and previous configuration
+We need to re-map some of the object values as requested by the Data team and the previous configuration
   area -> component
   value -> object
 */
