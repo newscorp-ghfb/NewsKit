@@ -47,26 +47,26 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The Popover contains one required element and four optional elements.',
+        'The popover contains one required element and four optional elements.',
       media: getIllustrationComponent('components/popover/anatomy'),
       rows: [
         {
           name: 'Panel',
-          description: 'Contains the Panel Header and Panel Content',
-          component: 'Auto Height',
+          description: 'Contains the panel header and panel content',
+          component: 'Auto height',
           optional: undefined,
         },
         {
           name: 'Header',
           description:
             'An area to display content at the top of a panel (e.g. title)',
-          component: 'Text Block',
+          component: 'Text block',
           optional: true,
         },
         {
           name: 'Close button',
-          description: 'Icon Button for closing the Popover',
-          component: 'Icon Button',
+          description: 'Icon button for closing the popover',
+          component: 'Icon button',
           optional: true,
         },
         {
@@ -78,7 +78,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Pointer',
           description:
-            'Used to indicate the direction of context that the Popover is attributed to',
+            'Used to indicate the direction of context that the popover is attributed to',
           component: 'Div',
           optional: true,
         },
@@ -157,7 +157,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how the popover behaves:',
       cards: [
         {
-          title: 'Triggering and closing the Popover',
+          title: 'Triggering and closing the popover',
           description:
             'The popover is triggered when the user clicks and/or taps on the UI element to which it is attributed. Clicking or tapping on the UI element again dismisses the popover.',
           media: getIllustrationComponent(
@@ -227,7 +227,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Use popovers for non-critical information',
           description:
-            'Popovers are intended for displaying non-critical information related to an element. Content passed to a Popover should match the Aria-label and description.',
+            'Popovers are intended for displaying non-critical information related to an element. Content passed to a popover should match the Aria-label and description.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do1'),
         },
@@ -238,8 +238,8 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               Avoid using an overlay with a popover, as they’re intended for
               non-critical information and shouldn’t prevent a user from
               performing other tasks on the screen. If you’re displaying
-              critical information, consider a
-              <Link href="/components/modal/">Modal</Link> instead.
+              critical information, consider a{' '}
+              <Link href="/components/modal/">modal</Link> instead.
             </>
           ),
           kind: UsageKind.DONT,
@@ -279,7 +279,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
     accessibility={{
       introduction: (
         <>
-          The Popover has the following accessibility considerations:
+          The popover has the following accessibility considerations:
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
@@ -350,12 +350,12 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Shift', 'Tab'],
             description:
-              'Focuses the previous link or action in the Popover (if provided)',
+              'Focuses the previous link or action in the popover (if provided)',
           },
           {
             command: ['Esc'],
             description:
-              'Closes the Popover if the closeOnEsc prop is provided',
+              'Closes the popover if the closeOnEsc prop is provided',
           },
         ],
       },
@@ -387,7 +387,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-controls',
             value: '',
             description:
-              'Set to the HTML id of the region toggled by Popover trigger (optional)',
+              'Set to the HTML id of the region toggled by popover trigger (optional)',
           },
         ],
       },
@@ -439,8 +439,8 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               that information can be crawled and indexed
             </>
             <>
-              The Popover component and its content are rendered to the DOM, but
-              only visible to the user when the Popover is open.
+              The popover component and its content are rendered to the DOM, but
+              only visible to the user when the popover is open.
             </>
           </UnorderedList>
         </>
@@ -487,7 +487,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               default: `'flip', 'shift'`,
               description: (
                 <>
-                  Behaviour the Popover should follow for fallback.
+                  Behaviour the popover should follow for fallback.
                   <br />
                   <br />
                   <Link
@@ -525,7 +525,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             {
               name: 'header',
               type: 'React.ReactNode',
-              description: 'Defines the content of the Popover header.',
+              description: 'Defines the content of the popover header.',
               required: undefined,
             },
             {
@@ -594,7 +594,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               attribute: 'zIndex',
               type: 'number',
               default: '80',
-              description: 'Overrides the zIndex of the Popover.',
+              description: 'Overrides the zIndex of the popover.',
             },
             {
               attribute: 'distance',
@@ -620,21 +620,21 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'popoverPanel',
               description:
-                'Overrides the stylePreset applied to the Popover panel.',
+                'Overrides the stylePreset applied to the popover panel.',
             },
             {
               attribute: 'header.stylePreset',
               type: 'MQ<string>',
               default: 'popoverHeader',
               description:
-                'Overrides the stylePreset applied to the Popover header.',
+                'Overrides the stylePreset applied to the popover header.',
             },
             {
               attribute: 'header.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityLabel030',
               description:
-                'Overrides the typographyPreset applied to the Popover header.',
+                'Overrides the typographyPreset applied to the popover header.',
             },
             {
               attribute: 'header.paddingBlock',
@@ -713,7 +713,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'iconButtonMinimalSecondary',
               description:
-                'Overrides the stylePreset applied to the Popover close Icon Button.',
+                'Overrides the stylePreset applied to the popover close Icon Button.',
             },
             {
               attribute: 'closeButtonContainer.stylePreset',
@@ -757,21 +757,21 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               attribute: 'pointer.size',
               type: 'MQ<string>',
               default: 'sizing040',
-              description: 'Overrides the size of the Popover indicator.',
+              description: 'Overrides the size of the popover indicator.',
             },
             {
               attribute: 'pointer.stylePreset',
               type: 'MQ<string>',
               default: 'popoverPointer',
               description:
-                'Overrides the stylePreset of the Popover indicator.',
+                'Overrides the stylePreset of the popover indicator.',
             },
             {
               attribute: 'pointer.edgeOffset',
               type: 'MQ<string>',
               default: 'space030',
               description:
-                'Overrides the edgeOffset of the Popover indicator. The edgeOffset is the padding between the indicator and the edges of the popover container.',
+                'Overrides the edgeOffset of the popover indicator. The edgeOffset is the padding between the indicator and the edges of the popover container.',
             },
           ],
           propsFooter: (
@@ -785,7 +785,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space070',
                 }}
               >
-                If the Popover is wrapping a functional component, ensure that
+                If the popover is wrapping a functional component, ensure that
                 the functional component accepts a ref using{' '}
                 <Link
                   href="https://reactjs.org/docs/forwarding-refs.html"

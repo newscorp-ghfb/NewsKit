@@ -45,7 +45,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The Fieldset contains two required elements and one optional element.',
+        'The fieldset contains two required elements and one optional element.',
       media: getIllustrationComponent('components/fieldset/anatomy'),
       rows: [
         {
@@ -103,7 +103,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction: 'The Fieldset has the following states:',
+      introduction: 'The fieldset has the following states:',
       layout: '2-span',
       cards: [
         {
@@ -131,7 +131,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     accessibility={{
       introduction: (
         <>
-          The Fieldset has the following accessibility considerations:
+          The fieldset has the following accessibility considerations:
           <Block spaceStack="space100" />
           <ContentText title="Legend" titleAs="span">
             The legend is a caption for a group of form controls. Use it to
@@ -157,7 +157,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
             order: 1,
             element: 'Children',
             role:
-              'Focusses on the children passed to in the Fieldset in the order they appear.',
+              'Focusses on the children passed to in the fieldset in the order they appear.',
           },
         ],
       },
@@ -204,13 +204,13 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
             {
               name: 'size',
               type: ['small', 'medium', 'large'],
-              description: 'Defines the size of the Fieldset Legend.',
+              description: 'Defines the size of the fieldset Legend.',
             },
             {
               name: 'disabled',
               type: 'state',
               default: 'false',
-              description: 'If true, renders the Fieldset in a disabled state.',
+              description: 'If true, renders the fieldset in a disabled state.',
             },
           ],
           overridesRows: [

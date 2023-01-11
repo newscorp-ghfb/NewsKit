@@ -144,7 +144,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Panel',
-          description: 'Contains the Panel Header and Panel Content',
+          description: 'Contains the panel header and panel content',
           component: 'Block',
           optional: undefined,
         },
@@ -157,7 +157,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Close button',
-          description: 'Icon Button for closing the Modal',
+          description: 'Icon button for closing the modal',
           component: 'Icon button',
           optional: true,
         },
@@ -177,7 +177,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
           title: 'Placement',
           description: (
             <>
-              The Modal appears as follows across different breakpoints:
+              The modal appears as follows across different breakpoints:
               <Block spaceStack="space050" />
               <UnorderedList
                 markerAlign="start"
@@ -292,7 +292,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Content overflow',
           description:
-            'When the content is too long to fit, content overflows and Scroll is applied. The header becomes fixed and the content can then independently scroll to bring overflowed content into view.',
+            'When the content is too long to fit, content overflows and scroll is applied. The header becomes fixed and the content can then independently scroll to bring overflowed content into view.',
           media: getIllustrationComponent('components/modal/content-overflow'),
         },
         {
@@ -449,14 +449,14 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               type: "Exclude<React.ReactNode, 'undefined'>",
               required: true,
               description:
-                'Displays supplied content in the Modal panel content area.',
+                'Displays supplied content in the modal panel content area.',
             },
             {
               name: 'open',
               type: 'boolean',
               default: 'false',
               required: true,
-              description: 'Determines if the Modal is open.',
+              description: 'Determines if the modal is open.',
             },
             {
               name: 'onDismiss',

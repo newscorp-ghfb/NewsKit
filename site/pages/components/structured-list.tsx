@@ -35,14 +35,14 @@ const infoIcon = (
 const StructuredListComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Structured List',
+      title: 'Structured list',
       description:
         'Structured lists group similar or related content together.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Layout',
-      name: 'Structured List',
+      name: 'Structured list',
       hero: {
         illustration: 'components/structured-list/hero',
       },
@@ -146,7 +146,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The Structured List contains three required elements and one optional element.',
+        'The Structured list contains three required elements and one optional element.',
       media: getIllustrationComponent('components/structured-list/anatomy'),
       rows: [
         {
@@ -156,7 +156,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           optional: undefined,
         },
         {
-          name: 'List Item',
+          name: 'List item',
           description: 'Includes cells',
           component: ['Grid', 'Block'],
           optional: undefined,
@@ -330,7 +330,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Tab'],
             description:
-              'When focus is outside of the Structured List, it moves focus to the first List item (if it’s interactive). If focus is on a List item, it moves focus to the next element on the page.',
+              'When focus is outside of the structured list, it moves focus to the first List item (if it’s interactive). If focus is on a List item, it moves focus to the next element on the page.',
           },
           {
             command: ['Rtn'],
@@ -369,7 +369,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
-          title: 'Structured List',
+          title: 'Structured list',
           propsSummary:
             'The structured list has a range of props for different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
           overridesSummary:
@@ -378,14 +378,14 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
             {
               name: 'children',
               type: 'React.ReactElement',
-              description: 'An array of Structured List Item components',
+              description: 'An array of structured list item components',
               required: true,
             },
             {
               name: 'ariaLabel',
               type: 'string',
               description:
-                'Defines the aria-label attribute of the Structured List	',
+                'Defines the aria-label attribute of the structured list	',
             },
             {
               name: 'divider',
@@ -425,11 +425,11 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'Structured List Item',
+          title: 'Structured list item',
           propsSummary:
-            'The structured list Item has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
+            'The structured list item has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
           overridesSummary:
-            'The structured list Item has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
+            'The structured list item has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
           propsRows: [
             {
               name: 'children',
@@ -506,14 +506,14 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'Structured List Cell',
+          title: 'Structured list cell',
           summary:
             'The structured list cell has a range of props to define the experience in different use cases.',
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactNode',
-              description: 'Content rendered inside the Structured List Cell',
+              description: 'Content rendered inside the structured list cell',
               required: true,
             },
             {

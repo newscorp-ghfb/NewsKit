@@ -156,8 +156,15 @@ const BlockComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Style',
-          // todo_content: link to /theme/presets/style-presets/
-          description: 'Apply styling to the block with style presets.',
+          description: (
+            <>
+              Apply styling to the block with{' '}
+              <Link href="https://www.newskit.co.uk/theme/presets/style-presets/">
+                style presets
+              </Link>{' '}
+              .
+            </>
+          ),
           media: getIllustrationComponent('components/block/style'),
         },
         {
@@ -174,7 +181,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Use the block to apply spacing and style presets',
           description:
-            'Use the Block as a container to easily apply spacing and style presets around other elements.',
+            'Use the block as a container to easily apply spacing and style presets around other elements.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/block/do-01'),
         },
@@ -212,7 +219,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: 'There are no SEO considerations for the block.',
     }}
     componentAPI={{
@@ -257,7 +264,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
           ],
           propsFooter: (
             <InlineMessage>
-              The Block can utilise any valid{' '}
+              The block can utilise any valid{' '}
               <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">
                 HTML attribute.
               </Link>

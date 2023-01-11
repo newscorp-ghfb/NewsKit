@@ -162,7 +162,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Panel',
-          description: 'Contains the Panel Header and Panel Content',
+          description: 'Contains the panel header and panel content',
           component: ['Block'],
           optional: undefined,
         },
@@ -174,9 +174,9 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           optional: true,
         },
         {
-          name: 'Close Button',
-          description: 'Icon Button for closing the Drawer',
-          component: ['Icon Button'],
+          name: 'Close button',
+          description: 'Icon Button for closing the drawer',
+          component: ['Icon button'],
           optional: true,
         },
         {
@@ -202,7 +202,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Close Position',
+          title: 'Close position',
           description: (
             <>
               When appearing from the left or right of the screen, the close
@@ -265,7 +265,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Triggering & Closing the Drawer',
+          title: 'Triggering & closing the drawer',
           description:
             'Control visibility via the open prop (the drawer is hidden by default). To close the drawer, the user can click the close icon button or overlay, or press the Esc key. Any of these actions will trigger the onDismiss callback.',
           media: getIllustrationComponent(
@@ -283,7 +283,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Disable page scrolling when launched',
           description:
-            'When a Drawer is present the content behind is not scrollable (scroll-locked).',
+            'When a drawer is present the content behind is not scrollable (scroll-locked).',
           media: getIllustrationComponent(
             'components/drawer/drawer-behaviours-disable-page-scrolling-illustration',
           ),
@@ -333,7 +333,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction:
-        'The Drawer has the following accessibility considerations:',
+        'The drawer has the following accessibility considerations:',
       focusOrder: {
         title: 'Focus order',
         tableRows: [
@@ -376,7 +376,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           },
           {
             command: ['Esc'],
-            description: 'Closes the Drawer and overlay.',
+            description: 'Closes the drawer and overlay.',
           },
         ],
       },
@@ -395,7 +395,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
             element: 'drawer',
             attribute: 'ariaDescribedby',
             value: 'string',
-            description: 'Describes the purpose of the Drawer',
+            description: 'Describes the purpose of the drawer',
             userSupplied: true,
           },
         ],
@@ -425,20 +425,20 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       components: [
         {
           title: 'Drawer',
-          summary: `The Drawer has a range of props that can be used to define an appropriate experience for different use cases.`,
+          summary: `The drawer has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactNode',
               required: true,
-              description: `Content to be rendered inside the Drawer panel content area.`,
+              description: `Content to be rendered inside the drawer panel content area.`,
             },
             {
               name: 'open',
               type: 'boolean',
               default: 'false',
               required: true,
-              description: 'Defines if the Drawer is open.',
+              description: 'Defines if the drawer is open.',
             },
             {
               name: 'onDismiss',
@@ -451,7 +451,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               name: 'header',
               type: 'React.ReactNode',
               description:
-                'If provided, sets the content of the Drawer header.',
+                'If provided, sets the content of the drawer header.',
             },
             {
               name: 'placement',

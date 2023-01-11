@@ -6,6 +6,7 @@ import {ComponentPageTemplate} from '../../templates/component-page-template/com
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {Link} from '../../components/link';
 
 const DividerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -102,9 +103,16 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       cards: [
         {
           title: 'Use as a semantic divider element',
-          // todo_content: link to /theme/presets/style-presets/
-          description:
-            'Use dividers when you need a semantic divider element. If you need a decorative border, consider a border on a stylePreset instead.',
+          description: (
+            <>
+              Use dividers when you need a semantic divider element. If you need
+              a decorative border, consider a border on a{' '}
+              <Link href="https://www.newskit.co.uk/theme/presets/style-presets/">
+                stylePreset
+              </Link>{' '}
+              instead.
+            </>
+          ),
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/divider/do-1-illustration',
@@ -126,7 +134,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<boolean>',
               required: undefined,
               description:
-                'If provided, changes the flow of the Divider to vertical.',
+                'If provided, changes the flow of the divider to vertical.',
             },
           ],
           overridesRows: [

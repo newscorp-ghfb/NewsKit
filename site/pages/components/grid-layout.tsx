@@ -85,14 +85,14 @@ const spaceControl = [
 const GridLayoutComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Grid Layout',
+      title: 'Grid layout',
       description:
         'This component is a beta so this page is a work in progress. Grid layout is used to construct a visual grid for responsive page layout. A proxy for CSS grid.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Layout',
-      name: 'Grid Layout',
+      name: 'Grid layout',
       hero: {
         illustration: 'components/grid-layout-illustration',
       },
@@ -405,14 +405,14 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
         'Learn how to use the grid layout component effectively using the tutorials below.',
       cards: [
         {
-          title: 'Grid Layout tutorial',
+          title: 'Grid layout tutorial',
           description:
             'Step-by-step guide for engineers to build a layout using the grid layout component.',
           media: getIllustrationComponent('guides/grid-layout-guide/hero'),
           href: '/getting-started/code/grid-layout-step-by-step/',
         },
         {
-          title: 'How to build a Section using Grid Layouts',
+          title: 'How to build a Section using grid layouts',
           description:
             'Guide in Figma for designers to use the grid layout component (internal only).',
           media: getIllustrationComponent(
@@ -438,10 +438,10 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     componentAPI={{
-      introduction: `Below are the properties for the Grid Layout component:`,
+      introduction: `Below are the properties for the grid layout component:`,
       components: [
         {
-          title: 'Grid Layout',
+          title: 'Grid layout',
           summary:
             'Grid layout has a range of props to define the experience in different use cases.',
           propsRows: [
@@ -636,7 +636,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
               name: 'area',
               type: 'string',
               description:
-                'Assigns a name to an item so it can be referenced by a template created with the Grid layout areas property',
+                'Assigns a name to an item so it can be referenced by a template created with the grid layout areas property',
               required: null,
             },
             {
