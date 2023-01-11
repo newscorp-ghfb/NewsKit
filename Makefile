@@ -27,7 +27,7 @@ install_headless_chrome:
 
 # When changing the version, make sure it matches the one used in the `test_newskit_in_nextjs_app` CircleCI's job.
 install_cypress:
-	yarn add -D cypress@9.1.0;
+	yarn add -D cypress@12.3.0;
 
 build_icons:
 	yarn build:icons

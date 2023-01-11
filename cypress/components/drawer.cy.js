@@ -30,7 +30,7 @@ describe('drawer', () => {
       .first()
       .find('[data-testid="dialog-content"]')
       .scrollTo('bottom')
-      .its('scrollY')
+      .invoke('scrollTop')
       .should('not.equal', 0);
   });
 });
