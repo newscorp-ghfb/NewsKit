@@ -209,7 +209,7 @@ const Card = ({
   href,
   ...props
 }: GridLayoutProps & {href?: string}) => {
-  //const hasTouchLinkInChildren = href && hasTouchLink(children, href);
+  // const hasTouchLinkInChildren = href && hasTouchLink(children, href);
 
   return (
     // @ts-ignore
@@ -228,16 +228,16 @@ const Card = ({
   );
 };
 
-const CardMedia = ({src}) => (
-  <img src={src} alt="" style={{maxWidth: '100%'}} />
+const CardMedia = ({src, style}) => (
+  <img src={src} alt="" style={{maxWidth: '100%', ...style}} />
 );
 
 const CardContent = (props: GridLayoutProps) => <GridLayout {...props} />;
 
 // Card Actions has larger z-index than Cover link so goes over it
 const StyledCardActions = styled(GridLayout)`
-  z-index: 2;
   position: relative;
+  z-index: 2;
 `;
 
 const CardActions = (props: GridLayoutProps) => (
@@ -246,18 +246,18 @@ const CardActions = (props: GridLayoutProps) => (
 
 const StyledCardTouchArea = styled(GridLayout)`
   ${props =>
-    props.full &&
-    `&:before {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    inset: 0;
-  }`}
+    props.expand &&
+    `
+    &:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    `}
 `;
 
-const CardTouchArea = (
-  props: GridLayoutProps & {href: string; full: boolean},
-) => (
+const CardLink = (props: GridLayoutProps & {href: string; expand: boolean}) => (
   // @ts-ignore
   <StyledCardTouchArea as="a" {...props} />
 );
@@ -269,10 +269,17 @@ const StyledCardCoverLink = styled(GridLayoutItem)`
   inset: 0;
 `;
 
-const CardCoverLink = (props: GridLayoutItemProps & {href: string}) => (
-  // @ts-ignore
-  <StyledCardCoverLink as="a" {...props} />
-);
+// const CardCoverLink = (props: GridLayoutItemProps & {href: string}) => (
+//   // @ts-ignore
+//   <StyledCardCoverLink as="a" {...props} />
+// );
+
+/*
+
+Maybe having interactive prop on every Card* element?
+
+
+*/
 
 const cardHref = '/card-link';
 
@@ -280,16 +287,18 @@ export const CardComposableExample = () => (
   <Card
     overrides={{maxWidth: '320px', stylePreset: 'cardComposable'}}
     rowGap="space040"
+    // columns="auto 1fr"
     // href={cardHref}
   >
-    <CardMedia src="/placeholder-3x2.png" />
-
     <CardContent rowGap="space040">
-      <CardTouchArea href={cardHref} full>
+      <CardLink href={cardHref} expand>
         <Headline kickerText="KICKER">Title of the card</Headline>
-      </CardTouchArea>
+      </CardLink>
+
       <Paragraph>Some kind of intro</Paragraph>
     </CardContent>
+
+    <CardMedia src="/placeholder-3x2.png" style={{order: '-1'}} />
 
     {/* contains actions like links or buttons, they are placed above CardCoverLink when present */}
     <CardActions
