@@ -4,7 +4,6 @@ import {
   getTypographyPresetFromTheme,
   getSizingFromTheme,
   getColorFromTheme,
-  getSSRId,
   useInstrumentation,
   EventTrigger,
 } from 'newskit';
@@ -66,7 +65,7 @@ export const InputKnob: React.FC<InputKnobProps> = ({
   value,
   onChange = () => {},
 }) => {
-  const id = `${getSSRId()}-${label}`;
+  const id = label + value;
   const lowercaseLabel = label.toLowerCase().replace(' ', '-');
   const LabelForInput = labelVisible ? (
     <StyledLabel htmlFor={id}>{label}</StyledLabel>
