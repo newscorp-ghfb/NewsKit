@@ -5,7 +5,10 @@ const gridSize = 4;
 
 // TODO: PPDSE-32 - remove this once we move the text crop calculation to the typography preset
 export const getFontSizing = (fontSize: string, lineHeight: number) => {
-  const fontSizePx = parseInt(fontSize, 10);
+  const fontSizePx = fontSize.endsWith('rem')
+    ? parseInt(fontSize, 10) * 16
+    : parseInt(fontSize, 10);
+
   // If line-height in pixels does not align to the grid, we round it up or down to nearest grid line (4px),
   // then convert back to a line-height number.
   const adjustedLineHeight =

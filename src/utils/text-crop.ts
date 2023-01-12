@@ -57,12 +57,17 @@ export type TextCropProps = {
   };
 };
 
+export const parseFontSize = (fontSize: string, remValue: number = 16) =>
+  fontSize.endsWith('rem')
+    ? parseFloat(fontSize) * remValue
+    : parseInt(fontSize, 10);
+
 export const textCrop = ({
   lineHeight,
   fontSize,
   fontMetrics,
 }: TextCropProps) => {
-  const fontSizeAsNumber = parseInt(fontSize, 10);
+  const fontSizeAsNumber = parseFloat(fontSize);
   const leading = lineHeight * fontSizeAsNumber;
 
   const capsizeStyles = createStyleObject({
@@ -72,10 +77,15 @@ export const textCrop = ({
   });
 
   // Changing cropping approach to block
-  capsizeStyles['::after'].display = 'block';
-  capsizeStyles['::before'].display = 'block';
+  // capsizeStyles['::after'].display = 'table';
+  // capsizeStyles['::before'].display = 'table';
   // @ts-ignore
-  capsizeStyles.padding = '0.5px 0px';
-
+  // capsizeStyles.padding = '0.5px 0px';
+  capsizeStyles.fontSize = fontSize;
+  capsizeStyles.lineHeight = lineHeight.toString();
+  capsizeStyles['::after'].width = '100%';
+  capsizeStyles['::before'].width = '100%';
+  capsizeStyles['::after'].outline = '1px solid hotpink';
+  capsizeStyles['::before'].outline = '1px solid hotpink';
   return capsizeStyles;
 };

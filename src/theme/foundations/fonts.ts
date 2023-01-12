@@ -1,20 +1,20 @@
 export const fonts = {
-  fontSize010: '12px', // 0.75rem
-  fontSize020: '14px', // 0.875rem
-  fontSize030: '16px', // 1rem (base)
-  fontSize040: '18px', // 1.125rem
-  fontSize050: '20px', // 1.25rem
-  fontSize060: '22px', // 1.375rem
-  fontSize070: '24px', // 1.5rem
-  fontSize080: '28px', // 1.75rem
-  fontSize090: '32px', // 2rem
-  fontSize100: '36px', // 2.25rem
-  fontSize110: '40px', // 2.5rem
-  fontSize120: '44px', // 2.75rem
-  fontSize130: '48px', // 3rem
-  fontSize140: '56px', // 3.5rem
-  fontSize150: '64px', // 4rem
-  fontSize160: '80px', // 5rem
+  fontSize010: '0.75rem',
+  fontSize020: '0.875rem',
+  fontSize030: '1rem',
+  fontSize040: '1.125rem',
+  fontSize050: '1.25rem',
+  fontSize060: '1.375rem',
+  fontSize070: '1.5rem',
+  fontSize080: '1.75rem',
+  fontSize090: '2rem',
+  fontSize100: '2.25rem',
+  fontSize110: '2.5rem',
+  fontSize120: '2.75rem',
+  fontSize130: '3rem',
+  fontSize140: '3.5rem',
+  fontSize150: '4rem',
+  fontSize160: '5rem',
 
   fontLineHeight010: 1,
   fontLineHeight020: 1.125,
