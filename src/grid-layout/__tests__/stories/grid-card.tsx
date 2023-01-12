@@ -272,43 +272,47 @@ const StyledCardLink = styled(GridLayout)`
     `}
 `;
 
-const CardLink = (props: GridLayoutProps & {href: string; expand: boolean}) => (
-  <StyledCardLink as="a" {...props} />
-);
+const CardLink = (
+  props: GridLayoutProps & {href: string; expand?: boolean},
+) => <StyledCardLink as="a" {...props} />;
 
 const cardHref = '/card-link';
 
 export const CardComposableExample = () => (
   <Card
     overrides={{
-      maxWidth: {xl: '600px', md: '320px'},
+      maxWidth: {xl: '600px', md: '420px'},
       stylePreset: 'cardComposable',
     }}
     rowGap="space040"
-    // columns={{xs: '200px 1fr', md: '1fr'}}
-    // areas={{
-    //   xs: `
-    //     media content
-    //     media actions
-    //   `,
-    //   md: `
-    //     media
-    //     content
-    //     actions
-    //   `,
-    // }}
+    columns={{xs: '200px 1fr', md: '1fr'}}
+    areas={{
+      xs: `
+        media content
+        media actions
+      `,
+      md: `
+        media
+        content
+        actions
+      `,
+    }}
   >
-    <CardMedia src="/placeholder-3x2.png" />
-
-    <CardContent rowGap="space040">
-      <CardLink href={cardHref}>
+    <CardContent
+      rowGap="space040"
+      overrides={{paddingInline: 'space040', paddingBlockStart: 'space040'}}
+    >
+      <CardLink href={cardHref} expand>
         <Headline kickerText="KICKER">Title of the card</Headline>
       </CardLink>
-
       <Paragraph>Some kind of intro</Paragraph>
     </CardContent>
 
-    <CardActions>
+    <CardMedia src="/placeholder-3x2.png" />
+
+    <CardActions
+      overrides={{paddingInline: 'space040', paddingBlockEnd: 'space040'}}
+    >
       <Tag href="/news">News</Tag>
     </CardActions>
   </Card>
