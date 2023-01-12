@@ -2,7 +2,7 @@ import * as React from 'react';
 import {Headline} from '../../../headline';
 import {TextBlock} from '../../../text-block';
 import {Block} from '../../../block';
-import {styled} from '../../../utils/style';
+import {styled, getStylePreset} from '../../../utils/style';
 import {Button} from '../../../button';
 import {Image} from '../../../image';
 import {Flag, getMediaQueryFromTheme, Paragraph, Tag} from '../../..';
@@ -10,7 +10,6 @@ import {IconFilledEmail} from '../../../icons';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {GridLayoutItemProps, GridLayoutProps} from '../../types';
 import {getDisplayName} from '../../../utils/component';
-import {getStylePreset} from '../../../utils/style';
 
 const StyledAdvancedCard = styled(GridLayout)`
   border: 1px solid gray;
@@ -178,6 +177,24 @@ export const GridTeaser = ({
   );
 };
 
+// const hasTouchLink = (children: any, href: string): boolean =>
+//   React.Children.toArray(children).some(child => {
+//     const componentName = getDisplayName(child);
+
+//     if (componentName === 'CardTouchArea' && child.props.href === href) {
+//       return true;
+//     }
+
+//     if (typeof child.type === 'function' && child.props.children) {
+//       return hasTouchLink(child.props.children, href);
+//     }
+
+//     return false;
+//   });
+
+const CardContext = React.createContext({useAreas: false});
+const useCardContext = () => React.useContext(CardContext);
+
 const StyledCard = styled(GridLayout)`
   position: relative;
   ${props => {
@@ -187,36 +204,15 @@ const StyledCard = styled(GridLayout)`
   }}
 `;
 
-const hasTouchLink = (children: any, href: string): boolean => {
-  return React.Children.toArray(children).some(child => {
-    const componentName = getDisplayName(child);
-    console.log(componentName, child);
-
-    if (componentName === 'CardTouchArea' && child.props.href === href) {
-      return true;
-    }
-
-    if (typeof child.type === 'function' && child.props.children) {
-      return hasTouchLink(child.props.children, href);
-    }
-
-    return false;
-  });
-};
-
-const Card = ({
-  children,
-  href,
-  ...props
-}: GridLayoutProps & {href?: string}) => {
-  // const hasTouchLinkInChildren = href && hasTouchLink(children, href);
+const Card = ({children, ...props}: GridLayoutProps) => {
+  const {areas} = props;
 
   return (
-    // @ts-ignore
-    <StyledCard {...props}>
-      {children}
+    <CardContext.Provider value={{useAreas: Boolean(areas)}}>
+      <StyledCard {...props}>
+        {children}
 
-      {/* {href && (
+        {/* {href && (
         // Cover link is not tabbable or read by screen-reader
         <CardCoverLink
           href={href}
@@ -224,27 +220,46 @@ const Card = ({
           aria-hidden={hasTouchLinkInChildren ? 'true' : undefined}
         />
       )} */}
-    </StyledCard>
+      </StyledCard>
+    </CardContext.Provider>
   );
 };
 
-const CardMedia = ({src, style}) => (
-  <img src={src} alt="" style={{maxWidth: '100%', ...style}} />
-);
-
-const CardContent = (props: GridLayoutProps) => <GridLayout {...props} />;
-
-// Card Actions has larger z-index than Cover link so goes over it
-const StyledCardActions = styled(GridLayout)`
-  position: relative;
-  z-index: 2;
+const StyledCardMedia = styled(GridLayout)`
+  ${prop => prop.useAreas && `grid-area: media;`}
 `;
 
-const CardActions = (props: GridLayoutProps) => (
-  <StyledCardActions {...props} />
-);
+const CardMedia = ({src, ...props}) => {
+  const {useAreas} = useCardContext();
+  return (
+    <StyledCardMedia {...props} useAreas={useAreas}>
+      <img src={src} alt="" style={{maxWidth: '100%'}} />
+    </StyledCardMedia>
+  );
+};
 
-const StyledCardTouchArea = styled(GridLayout)`
+const StyledCardContent = styled(GridLayout)`
+  ${prop => prop.useAreas && `grid-area: content;`}
+`;
+
+const CardContent = (props: GridLayoutProps) => {
+  const {useAreas} = useCardContext();
+  return <StyledCardContent {...props} useAreas={useAreas} />;
+};
+
+// Card Actions has larger z-index than Cover link so goes over it
+const StyledCardActions = styled(Block)`
+  position: relative;
+  z-index: 2;
+  ${prop => prop.useAreas && `grid-area: actions;`}
+`;
+
+const CardActions = (props: GridLayoutProps) => {
+  const {useAreas} = useCardContext();
+  return <StyledCardActions {...props} useAreas={useAreas} />;
+};
+
+const StyledCardLink = styled(GridLayout)`
   ${props =>
     props.expand &&
     `
@@ -258,57 +273,43 @@ const StyledCardTouchArea = styled(GridLayout)`
 `;
 
 const CardLink = (props: GridLayoutProps & {href: string; expand: boolean}) => (
-  // @ts-ignore
-  <StyledCardTouchArea as="a" {...props} />
+  <StyledCardLink as="a" {...props} />
 );
-
-// Cover link uses absolute position to position itself over all elements
-const StyledCardCoverLink = styled(GridLayoutItem)`
-  z-index: 1;
-  position: absolute;
-  inset: 0;
-`;
-
-// const CardCoverLink = (props: GridLayoutItemProps & {href: string}) => (
-//   // @ts-ignore
-//   <StyledCardCoverLink as="a" {...props} />
-// );
-
-/*
-
-Maybe having interactive prop on every Card* element?
-
-
-*/
 
 const cardHref = '/card-link';
 
 export const CardComposableExample = () => (
   <Card
-    overrides={{maxWidth: '320px', stylePreset: 'cardComposable'}}
+    overrides={{
+      maxWidth: {xl: '600px', md: '320px'},
+      stylePreset: 'cardComposable',
+    }}
     rowGap="space040"
-    // columns="auto 1fr"
-    // href={cardHref}
+    // columns={{xs: '200px 1fr', md: '1fr'}}
+    // areas={{
+    //   xs: `
+    //     media content
+    //     media actions
+    //   `,
+    //   md: `
+    //     media
+    //     content
+    //     actions
+    //   `,
+    // }}
   >
+    <CardMedia src="/placeholder-3x2.png" />
+
     <CardContent rowGap="space040">
-      <CardLink href={cardHref} expand>
+      <CardLink href={cardHref}>
         <Headline kickerText="KICKER">Title of the card</Headline>
       </CardLink>
 
       <Paragraph>Some kind of intro</Paragraph>
     </CardContent>
 
-    <CardMedia src="/placeholder-3x2.png" style={{order: '-1'}} />
-
-    {/* contains actions like links or buttons, they are placed above CardCoverLink when present */}
-    <CardActions
-      columnGap="space030"
-      autoColumns="min-content"
-      autoFlow="column"
-    >
+    <CardActions>
       <Tag href="/news">News</Tag>
-      <Tag href="/music">Music</Tag>
-      <Tag href="/festivals">Festivals</Tag>
     </CardActions>
   </Card>
 );

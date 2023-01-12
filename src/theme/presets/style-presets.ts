@@ -177,9 +177,12 @@ stylePresets.selectOptionItemIcon = {
 
 stylePresets.cardComposable = {
   base: {
-    backgroundColor: '#f4f4f4',
+    boxShadow: '{{shadows.shadow020}}',
+    borderRadius: '{{borders.borderRadiusRounded020}}',
+    backgroundColor: '{{colors.interface010}}',
   },
   hover: {
-    backgroundColor: '#ededed',
+    boxShadow: '{{shadows.shadow050}}',
+    backgroundColor: '{{colors.interface020}}',
   },
 };
