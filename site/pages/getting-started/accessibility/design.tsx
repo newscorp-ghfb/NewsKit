@@ -84,7 +84,10 @@ const AccessibilityDesign = (layoutProps: LayoutProps) => (
                 Considerations will vary depending on what you are designing.
                 <br />
                 See the{' '}
-                <Link href="https://www.a11yproject.com/checklist/">
+                <Link
+                  href="https://www.a11yproject.com/checklist/"
+                  type="inline"
+                >
                   a11y project checklist
                 </Link>{' '}
                 for a complete list of design considerations.
