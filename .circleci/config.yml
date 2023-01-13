@@ -551,6 +551,42 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  lint_dev:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Lint
+          command: make lint
+      - slack/notify:
+          <<: *slack_notify
+
+  lint_stage:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Lint
+          command: make lint
+      - slack/notify:
+          <<: *slack_notify
+
+  lint_prod:
+    executor: node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Lint
+          command: make lint
+      - slack/notify:
+          <<: *slack_notify
+
   test_broken_links_docs:
     executor: node
     steps:
