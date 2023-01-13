@@ -1267,6 +1267,15 @@ workflows:
       - lint:
           requires:
             - build_icons
+      - lint_dev:
+          requires:
+            - build_icons
+      - lint_stage:
+          requires:
+            - build_icons
+      - lint_prod:
+          requires:
+            - build_icons
       - test_unit_comps:
           requires:
             - build_icons
