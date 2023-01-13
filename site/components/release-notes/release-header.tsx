@@ -12,7 +12,10 @@ const ReleaseHeader = ({
 }: Pick<FullRelease, 'tag_name' | 'published_at' | 'change_level'>) => (
   <div>
     <Block as="span">
-      <LinkStandalone href={`${GITHUB_URL}/${REPO}/releases/tag/${tag_name}`}>
+      <LinkStandalone
+        overrides={{typographyPreset: 'utilityBody030'}}
+        href={`${GITHUB_URL}/${REPO}/releases/tag/${tag_name}`}
+      >
         {tag_name}
       </LinkStandalone>
     </Block>

@@ -11,6 +11,7 @@ import {ComponentPageCell} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
 import {
   ContentPrimary,
+  ContentSecondary,
   ContentSection,
 } from '../../components/content-structure';
 import ReleaseHeader from '../../components/release-notes/release-header';
@@ -77,7 +78,7 @@ const ReleaseNotesPage = ({
           <ContentPrimary headline="Previous releases" showSeparator>
             <StructuredList divider>
               {previousReleases.map(
-                ({body, tag_name, published_at, change_level}) => (
+                ({tag_name, published_at, change_level}) => (
                   <StructuredListItem key={tag_name}>
                     <StructuredListCell>
                       <ReleaseHeader
@@ -85,7 +86,6 @@ const ReleaseNotesPage = ({
                         change_level={change_level}
                         tag_name={tag_name}
                       />
-                      {change_level === 'major' && <ReleaseNotes body={body} />}
                     </StructuredListCell>
                   </StructuredListItem>
                 ),
@@ -105,6 +105,17 @@ const ReleaseNotesPage = ({
               </Button>
             </Block>
           </ContentPrimary>
+        </ContentSection>
+        <ContentSection id="release-cadence" toc="Release cadence">
+          <ContentPrimary
+            headline="Release cadence"
+            description="We typically release patch and minor releases fortnightly and major releases every 3-6 months, though we may release more frequently as needed. As the project has matured the frequency of major releases (breaking changes) has slowed."
+          />
+          <ContentSecondary
+            headline="Support policy"
+            description="The NewsKit team will actively support the latest major release."
+            showSeparator
+          />
         </ContentSection>
       </ComponentPageCell>
     </AboutPageTemplate>
