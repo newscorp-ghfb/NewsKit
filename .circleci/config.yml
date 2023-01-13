@@ -1686,6 +1686,21 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_icons
+      - lint_dev:
+          <<: *only_on_version_tag
+          context: ncu-newskit-site-dev
+          requires:
+            - build_icons
+      - lint_stage:
+          <<: *only_on_version_tag
+          context: ncu-newskit-site-stage
+          requires:
+            - build_icons
+      - lint_prod:
+          <<: *only_on_version_tag
+          context: ncu-newskit-site-prod
+          requires:
+            - build_icons
       - test_unit_comps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
