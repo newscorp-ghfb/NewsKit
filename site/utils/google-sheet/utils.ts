@@ -1,7 +1,13 @@
-export const formatSheetData = (data: string[][] | undefined | null) => {
-  if (data === undefined || data === null || data.length === 0) {
-    return {};
+import {CMSData, CMSProps, CMSResponse} from './types';
+
+export class CMSError extends Error {
+  constructor(msg: string) {
+    super(msg);
+    this.name = 'CMSError';
   }
+}
+
+export const formatSheetData = <T extends CMSProps>(data: CMSData): T => {
   const transformedArray = data.map(([key, value]) => [
     key.toLowerCase(),
     value,
@@ -11,7 +17,46 @@ export const formatSheetData = (data: string[][] | undefined | null) => {
   return JSON.parse(JSON.stringify(Object.fromEntries(transformedArray)));
 };
 
-export const getCMSList = <T extends object>(
-  content: T,
-  listKey: keyof T & string,
-) => Object.entries(content).filter(entry => entry[0].startsWith(listKey));
+export const parseCMSResponse = <T extends CMSProps>(
+  cmsResponse: CMSResponse,
+  {
+    required,
+    optional = {},
+    dynamic = {},
+  }: {
+    required: Record<string, string>;
+    optional?: Record<string, string>;
+    dynamic?: Record<string, string>;
+  },
+): T => {
+  if (!cmsResponse) {
+    throw new CMSError('No CMS data found');
+  }
+  const content = formatSheetData<T>(cmsResponse);
+
+  const missingKeys = Object.keys(required).filter(key => !content[key]);
+  const invalidKeys = Object.keys(content).filter(key => {
+    if (required[key] || optional[key]) {
+      return false;
+    }
+    const prefixMatch = Object.keys(dynamic).find(k =>
+      key.match(`${k}\\d+\\b`),
+    );
+    return !prefixMatch;
+  });
+
+  if (invalidKeys.length || missingKeys.length) {
+    throw new CMSError(
+      `MISSING_KEYS: ${missingKeys.join(
+        ', ',
+      )}. INVALID_KEYS: ${invalidKeys.join(', ')}.`,
+    );
+  }
+
+  return content;
+};
+
+export const getCMSPropsWithPrefix = <T extends Record<string, string>>(
+  content: CMSProps,
+  prefix: keyof T & string,
+) => Object.entries(content).filter(([k]) => k.startsWith(prefix));

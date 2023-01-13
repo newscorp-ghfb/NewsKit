@@ -1,54 +1,51 @@
 import React from 'react';
 import {
+  getSSRId,
+  InlineMessage,
   LinkInline,
   TextBlock,
   UnorderedList,
-  getSSRId,
-  InlineMessage,
 } from 'newskit';
 import ReactMarkdown, {ReactMarkdownOptions} from 'react-markdown';
-import {getSheets} from '../../utils/google-sheet';
-import {formatSheetData, getCMSList} from '../../utils/google-sheet/utils';
+import {
+  getSheets,
+  PageCMSPrefixedProps,
+  PageCMSRequiredProps,
+} from '../../utils/google-sheet';
+import {
+  getCMSPropsWithPrefix,
+  parseCMSResponse,
+} from '../../utils/google-sheet/utils';
 import {AboutPageTemplate} from '../../templates/about-page-template';
 import {LayoutProps} from '../../components/layout';
 import {
-  ContentSection,
   ContentPrimary,
+  ContentSection,
 } from '../../components/content-structure';
 import {ComponentPageCell} from '../../components/layout-cells';
 
-interface RoadmapContent {
-  intro_name: string;
-  intro_secondary: string;
-  intro_description: string;
-  intro_hero_illustration: string;
-  intro_date: string;
-  current_headline: string;
-  current_description: string;
-  comingup_headline: string;
-  comingup_description: string;
-  future_headline: string;
-  future_description: string;
-  [current_li_keys: `current_li${string}`]: string;
-  [comingup_li_keys: `comingup_li${string}`]: string;
-  [future_li_keys: `future_li${string}`]: string;
+enum RequiredKeys {
+  intro_name = 'intro_name',
+  intro_secondary = 'intro_secondary',
+  intro_description = 'intro_description',
+  intro_hero_illustration = 'intro_hero_illustration',
+  intro_date = 'intro_date',
+  current_headline = 'current_headline',
+  current_description = 'current_description',
+  comingup_headline = 'comingup_headline',
+  comingup_description = 'comingup_description',
+  future_headline = 'future_headline',
+  future_description = 'future_description',
 }
 
-const roadmapFallbackContent: RoadmapContent = {
-  intro_name: 'Roadmap - fallback',
-  intro_description:
-    'Fallback - NewsKit’s Design System team is busy building and planning to help you build better products faster.',
-  intro_hero_illustration: 'components/hero-roadmap-illustration',
-  intro_secondary:
-    'The roadmap is a living document, and it is likely that priorities will change. See our Trello board for more details on the roadmap.',
-  intro_date: 'Last Updated: 6 December 2022',
-  current_headline: 'Current Quarter',
-  current_description: 'What we are working on:',
-  comingup_headline: 'Coming Up',
-  comingup_description: 'The focus for the next quarter:',
-  future_headline: 'Future',
-  future_description: 'Ideas we plan to look at:',
-};
+enum DynamicKeyPrefixes {
+  current_li_ = 'current_li_',
+  comingup_li_ = 'comingup_li_',
+  future_li_ = 'future_li_',
+}
+
+type RoadmapContent = PageCMSRequiredProps<RequiredKeys> &
+  PageCMSPrefixedProps<DynamicKeyPrefixes>;
 
 const FormatMarkdown: React.FC<ReactMarkdownOptions> = ({children}) => (
   /* eslint-disable @typescript-eslint/no-shadow */
@@ -85,16 +82,20 @@ const Roadmap = ({
 
   const introSecondary = content.intro_secondary;
 
-  const currentList = getCMSList(content, 'current_li').map(entry => (
-    <FormatMarkdown key={entry[0]}>{entry[1]}</FormatMarkdown>
-  ));
+  const currentList = getCMSPropsWithPrefix<typeof DynamicKeyPrefixes>(
+    content,
+    'current_li_',
+  ).map(([k, v]) => <FormatMarkdown key={k}>{v}</FormatMarkdown>);
 
-  const comingupList = getCMSList(content, 'comingup_li').map(entry => (
-    <FormatMarkdown key={entry[0]}>{entry[1]}</FormatMarkdown>
-  ));
-  const futureList = getCMSList(content, 'future_li').map(entry => (
-    <FormatMarkdown key={entry[0]}>{entry[1]}</FormatMarkdown>
-  ));
+  const comingupList = getCMSPropsWithPrefix<typeof DynamicKeyPrefixes>(
+    content,
+    'comingup_li_',
+  ).map(([k, v]) => <FormatMarkdown key={k}>{v}</FormatMarkdown>);
+
+  const futureList = getCMSPropsWithPrefix<typeof DynamicKeyPrefixes>(
+    content,
+    'future_li_',
+  ).map(([k, v]) => <FormatMarkdown key={k}>{v}</FormatMarkdown>);
 
   if (currentList.length && comingupList.length && futureList.length) {
     return (
@@ -255,10 +256,11 @@ const Roadmap = ({
 };
 export default Roadmap;
 
-// This function is called at build time and the response is passed to the page
-// component as props.
 export async function getStaticProps() {
   const cmsData = await getSheets('Roadmap');
-  const content = {...roadmapFallbackContent, ...formatSheetData(cmsData)};
+  const content = parseCMSResponse(cmsData, {
+    required: RequiredKeys,
+    dynamic: DynamicKeyPrefixes,
+  });
   return {props: {content}};
 }
