@@ -45,12 +45,16 @@ export const parseCMSResponse = <T extends CMSProps>(
     return !prefixMatch;
   });
 
-  if (invalidKeys.length || missingKeys.length) {
-    throw new CMSError(
-      `MISSING_KEYS: ${missingKeys.join(
-        ', ',
-      )}. INVALID_KEYS: ${invalidKeys.join(', ')}.`,
-    );
+  let err = ``;
+  if (missingKeys.length) {
+    err = `MISSING_KEYS: ${missingKeys.join(', ')}. `;
+  }
+  if (invalidKeys.length) {
+    err = `${err}INVALID_KEYS: ${invalidKeys.join(', ')}. `;
+  }
+
+  if (err.length) {
+    throw new CMSError(err);
   }
 
   return content;
