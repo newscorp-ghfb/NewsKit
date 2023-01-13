@@ -96,10 +96,10 @@ exports[`ReleaseHeader renders correctly 1`] = `
 
 .emotion-4 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -108,13 +108,13 @@ exports[`ReleaseHeader renders correctly 1`] = `
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
