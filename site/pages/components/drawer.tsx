@@ -402,7 +402,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <OrderedList
           overrides={{

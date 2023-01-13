@@ -87,7 +87,6 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
                 icon={infoIcon}
                 role="region"
                 aria-label="Size"
-                title="Note"
                 overrides={{
                   marginBlockStart: 'space050',
                 }}
@@ -137,14 +136,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
             The legend is a caption for a group of form controls. Use it to
             explain the function or purpose of the form controls.
           </ContentText>
-          <InlineMessage
-            icon={infoIcon}
-            role="region"
-            aria-label="Fieldset"
-            overrides={{
-              marginBlockStart: 'space100',
-            }}
-          >
+          <InlineMessage icon={infoIcon} role="region" aria-label="Fieldset">
             Legends are important for users with screen readers. Screen readers
             will repeat the legend for each form control within a fieldset.
           </InlineMessage>

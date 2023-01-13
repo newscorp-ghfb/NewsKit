@@ -178,7 +178,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       infoNoticeAria="Test all breakpoints carefully when using hidden or visible."
     />
     <SEOSection
-      title="SEO Considerations"
+      title="SEO considerations"
       introduction="Use visible or hidden where SEO is a consideration, to avoid layout shift."
     />
     <ComponentAPISection

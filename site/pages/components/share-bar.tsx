@@ -231,7 +231,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: 'Ensure icons have Alt Text applied.',
     }}
     componentAPI={{

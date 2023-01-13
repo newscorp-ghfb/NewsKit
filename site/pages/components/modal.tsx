@@ -219,7 +219,6 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 role="region"
                 aria-label="Close position"
-                title="Note"
                 overrides={{
                   marginBlockStart: 'space030',
                 }}
@@ -406,7 +405,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <>
           <UnorderedList

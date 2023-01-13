@@ -421,7 +421,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <>
           <UnorderedList
@@ -780,7 +780,6 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
                 icon={infoIcon}
                 role="region"
                 aria-label="ForwardRef"
-                title="Note"
                 overrides={{
                   marginBlockStart: 'space070',
                 }}
