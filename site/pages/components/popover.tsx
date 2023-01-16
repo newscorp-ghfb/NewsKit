@@ -595,6 +595,22 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
                 'If true, the Popover can be closed by clicking outside of the popover or by pressing the Esc key.',
               required: undefined,
             },
+            {
+              name: 'dismissOnBlur',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'If true, the Popover can be closed by focusing outside of the popover.',
+              required: undefined,
+            },
+            {
+              name: 'disableFocusManagement',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'If true, the Popover will not manage focus for you which means when open will not move the focus to the popover and back to the trigger when closed',
+              required: undefined,
+            },
           ],
           overridesRows: [
             {
