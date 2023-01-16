@@ -1273,7 +1273,6 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs
       - eks_flux_deploy:
           name: eks_flux_deploy_dev
           environment: pr
