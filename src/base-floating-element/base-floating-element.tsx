@@ -43,6 +43,7 @@ export const BaseFloatingElement = React.forwardRef<
       /* istanbul ignore next */
       fallbackBehaviour = ['flip', 'shift'],
       disableFocusManagement = false,
+      dismissOnBlur = false,
       boundary,
     },
     ref,
@@ -146,7 +147,9 @@ export const BaseFloatingElement = React.forwardRef<
           }
         } else if (restoreFocusTo) {
           restoreFocusTo.focus();
-        } else {
+          // focus should not return to reference element when dismissOnBlur is set to true
+          // instead it should go with the tab flow like next active element
+        } else if (!dismissOnBlur) {
           /* istanbul ignore next */
           refs.reference?.current?.focus();
         }
@@ -160,6 +163,7 @@ export const BaseFloatingElement = React.forwardRef<
       openProp,
       restoreFocusTo,
       disableFocusManagement,
+      dismissOnBlur,
     ]);
 
     if (!content) {
@@ -232,7 +236,7 @@ export const BaseFloatingElement = React.forwardRef<
                 ref={composeRefs(cssTransitionNodeRef, panelRef)}
               >
                 {typeof content === 'function'
-                  ? content(referenceProps)
+                  ? content(referenceProps, context)
                   : content}
               </StyledPanel>
               {!hidePointer && (
