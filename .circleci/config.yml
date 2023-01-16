@@ -986,20 +986,30 @@ jobs:
             git config --global user.name "Product Platforms Service"
             echo "I am cloning into flux"
             git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
-            echo "I am now going to export "
+            echo "I am now going to export EKS_IAM_ROLE_DEV"
             export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
+            echo "I am now going to export EKS_AWS_ACCESS_KEY_ID"
             export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
+            echo "I am now going to export EKS_AWS_SECRET_ACCESS_KEY"
             export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+            echo "I am now going to export AWS_DEFAULT_REGION"
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+            echo "I am now going to export CLUSTER_NAME=ceng-eks"
             export CLUSTER_NAME=ceng-eks-<< parameters.environment >>
+            echo "I am now going to export package.json version"
             export VERSION=$(jq -r .version package.json)
+            echo "I am now going to export $BASH_ENV"
             echo "export VERSION=${VERSION}" >> $BASH_ENV
-
+            echo "I am now running  nukubectl | grep "export AWS_" > auth.env"
             nukubectl | grep "export AWS_" > auth.env
+            echo "I am now running $(egrep -v '^#' auth.env | xargs)"
             export $(egrep -v '^#' auth.env | xargs)
+            echo "I am now running   rm auth.env"
             rm auth.env
-
+            
+            echo "I am now cd-ing into flux"
             cd flux/<< parameters.environment >>/eks
+            echo "I am now running the last command kubectl apply -f .
             kubectl apply -f .
       - slack/notify:
           <<: *slack_notify
