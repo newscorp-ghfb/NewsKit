@@ -984,7 +984,9 @@ jobs:
             export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
             git config --global user.email "ncu-product-platforms@news.co.uk"
             git config --global user.name "Product Platforms Service"
+            echo "I am cloning into flux"
             git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
+            echo "I am now going to export "
             export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
             export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
             export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
@@ -1262,6 +1264,27 @@ workflows:
             - build_docs_pr_with_no_base_url
             - install_cypress
             - build_storybook
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_dev
+          context: ncu-product-platforms-context
+          requires:
+            - build_storybook
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs
+      - eks_flux_deploy:
+          name: eks_flux_deploy_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_push_docker_ecr_dev
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - eks_flux_deploy_dev
+      
       - no_visual_changes:
           type: approval
           requires:
@@ -1359,11 +1382,6 @@ workflows:
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
-          requires:
-            - build_icons
-      - build_docs:
-          name: build_docs_prod_test
-          context: ncu-newskit-site-prod
           requires:
             - build_icons
       - push_s3:
