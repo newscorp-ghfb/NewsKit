@@ -276,13 +276,13 @@ exports[`ReleaseNotes renders correctly 1`] = `
 .emotion-10 {
   margin: 0;
   font-family: "DM Sans",sans-serif;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
-  padding-block-end: 4px;
+  margin-block-end: 16px;
 }
 
 .emotion-10::before {

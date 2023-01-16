@@ -96,10 +96,10 @@ exports[`ReleaseHeader renders correctly 1`] = `
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  font-family: "Poppins",sans-serif;
+  font-size: 18px;
+  line-height: 20.25px;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -108,13 +108,13 @@ exports[`ReleaseHeader renders correctly 1`] = `
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.2155em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.2125em;
   display: block;
 }
 
@@ -150,37 +150,62 @@ exports[`ReleaseHeader renders correctly 1`] = `
 
 .emotion-8 {
   margin: 0;
-  color: #6A6A6A;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
+  color: #3B3B3B;
   display: inline-block;
   -webkit-margin-start: 8px;
   margin-inline-start: 8px;
+  -webkit-margin-end: 16px;
+  margin-inline-end: 16px;
 }
 
 .emotion-8 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
-.emotion-8::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
+@media screen and (max-width: 479px) {
+  .emotion-8 {
+    font-family: "DM Sans",sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-8::before {
+    content: '';
+    margin-bottom: -0.391em;
+    display: block;
+  }
+
+  .emotion-8::after {
+    content: '';
+    margin-top: -0.409em;
+    display: block;
+  }
 }
 
-.emotion-8::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
+@media screen and (min-width: 480px) {
+  .emotion-8 {
+    font-family: "DM Sans",sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
 
-.emotion-9 {
-  -webkit-margin-start: 16px;
-  margin-inline-start: 16px;
+  .emotion-8::before {
+    content: '';
+    margin-bottom: -0.391em;
+    display: block;
+  }
+
+  .emotion-8::after {
+    content: '';
+    margin-top: -0.409em;
+    display: block;
+  }
 }
 
 .emotion-10 {
@@ -207,12 +232,12 @@ exports[`ReleaseHeader renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
-  min-height: 32px;
+  padding: 4px 8px;
+  min-height: 24px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 32px;
+  min-height: 24px;
   cursor: default;
   overflow: hidden;
   border: none;
@@ -302,7 +327,7 @@ exports[`ReleaseHeader renders correctly 1`] = `
       Mock Date
     </span>
     <span
-      class="emotion-9"
+      class="emotion-0"
     >
       <span
         class="emotion-10"

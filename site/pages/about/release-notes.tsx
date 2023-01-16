@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Block,
-  Button,
+  LinkStandalone,
   StructuredList,
   StructuredListCell,
   StructuredListItem,
@@ -23,7 +23,6 @@ import {
 } from '../../utils/release-notes/functions';
 import {ReleasesPageProps} from '../../utils/release-notes/types';
 import {GITHUB_URL, REPO} from '../../utils/release-notes/constants';
-import {IconFilledGitHub} from '../../components/icons/icon-filled-github';
 
 const pageName = 'Release notes';
 const pageDescription =
@@ -79,7 +78,13 @@ const ReleaseNotesPage = ({
             <StructuredList divider>
               {previousReleases.map(
                 ({tag_name, published_at, change_level}) => (
-                  <StructuredListItem key={tag_name}>
+                  <StructuredListItem
+                    overrides={{
+                      spaceInset: 'space050 space000',
+                      minHeight: 'sizing050',
+                    }}
+                    key={tag_name}
+                  >
                     <StructuredListCell>
                       <ReleaseHeader
                         published_at={published_at}
@@ -92,17 +97,17 @@ const ReleaseNotesPage = ({
               )}
             </StructuredList>
             <Block paddingBlockStart="space090">
-              <Button
-                size="small"
+              <LinkStandalone
                 overrides={{
-                  typographyPreset: 'utilityButton010',
-                  stylePreset: 'buttonOutlinedSecondary',
+                  typographyPreset: 'utilityButton030',
+                  paddingInlineStart: {xs: 'space020', lg: 'space030'},
                 }}
                 href={`${GITHUB_URL}/${REPO}/releases`}
                 target="_blank"
+                external
               >
-                <IconFilledGitHub /> View all previous releases
-              </Button>
+                View all previous releases
+              </LinkStandalone>
             </Block>
           </ContentPrimary>
         </ContentSection>

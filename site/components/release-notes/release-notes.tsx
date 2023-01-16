@@ -62,8 +62,8 @@ const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
           li: ({children}) => (
             <TextBlock
               as="span"
-              typographyPreset="editorialParagraph030"
-              paddingBlockEnd="space010"
+              typographyPreset="editorialParagraph020"
+              marginBlockEnd="space040"
             >
               {children}
             </TextBlock>
