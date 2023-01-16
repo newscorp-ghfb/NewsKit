@@ -1276,6 +1276,7 @@ workflows:
             - test_e2e_docs
       - eks_flux_deploy:
           name: eks_flux_deploy_dev
+          environment: pr
           context: ncu-newskit-site-dev
           requires:
             - build_push_docker_ecr_dev
