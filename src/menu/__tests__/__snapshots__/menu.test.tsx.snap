@@ -9104,9 +9104,135 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
   position: absolute;
   left: 0;
   width: 100%;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-7:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-7:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-7:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-7:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-7:disabled {
+  color: #ABABAB;
+}
+
+.emotion-7:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -9173,7 +9299,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9188,7 +9314,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9203,7 +9329,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9218,7 +9344,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9228,6 +9354,486 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
                 Menu item
               </span>
             </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`MenuSub render nested submenus 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-2 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3.emotion-3 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 {
+  display: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-7:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-7:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-7:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-7:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-7:disabled {
+  color: #ABABAB;
+}
+
+.emotion-7:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-13 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-13::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-13::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <button
+          aria-expanded="false"
+          class="emotion-2"
+          data-testid="menu-sub-button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-3 emotion-4"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </button>
+        <ul
+          class="emotion-5"
+        >
+          <li
+            class="nk-menu-item emotion-1"
+          >
+            <button
+              aria-expanded="false"
+              class="emotion-7"
+              data-testid="menu-sub-button"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-3 emotion-4"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </svg>
+            </button>
+            <ul
+              class="emotion-5"
+            >
+              <li
+                class="nk-menu-item emotion-1"
+              >
+                <a
+                  class="emotion-7"
+                  data-testid="buttonLink"
+                  href="http://"
+                >
+                  <span
+                    class="emotion-13"
+                  >
+                    Menu item
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item emotion-1"
+              >
+                <a
+                  class="emotion-7"
+                  data-testid="buttonLink"
+                  href="http://"
+                >
+                  <span
+                    class="emotion-13"
+                  >
+                    Menu item
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item emotion-1"
+              >
+                <a
+                  class="emotion-7"
+                  data-testid="buttonLink"
+                  href="http://"
+                >
+                  <span
+                    class="emotion-13"
+                  >
+                    Menu item
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item emotion-1"
+              >
+                <a
+                  class="emotion-7"
+                  data-testid="buttonLink"
+                  href="http://"
+                >
+                  <span
+                    class="emotion-13"
+                  >
+                    Menu item
+                  </span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
@@ -9430,9 +10036,135 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
   position: absolute;
   left: 0;
   width: 100%;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-7:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-7:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-7:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-7:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-7:disabled {
+  color: #ABABAB;
+}
+
+.emotion-7:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -9499,7 +10231,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9514,7 +10246,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9529,7 +10261,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9544,7 +10276,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9760,6 +10492,133 @@ exports[`MenuSub renders expanded when vertical 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-7 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-7 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-7:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-7:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-7:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-7:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-7:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-7:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-7:disabled {
+  color: #ABABAB;
+}
+
+.emotion-7:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
 }
 
 .emotion-8 {
@@ -9826,7 +10685,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9841,7 +10700,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9856,7 +10715,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9871,7 +10730,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-2"
+              class="emotion-7"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10098,6 +10957,7 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
   position: absolute;
   left: 0;
   width: 100%;
@@ -10122,9 +10982,11 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10261,6 +11123,7 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
@@ -10543,6 +11406,7 @@ exports[`MenuSub renders with default props 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
   position: absolute;
   left: 0;
   width: 100%;
@@ -10560,6 +11424,7 @@ exports[`MenuSub renders with default props 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
@@ -10641,10 +11506,6 @@ exports[`MenuSub renders with logical props overrides 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
-  margin-inline: 48px;
-  margin-block: 32px;
-  padding-inline: 8px;
-  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10785,6 +11646,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
   margin-inline: 48px;
   margin-block: 32px;
   padding-inline: 8px;
@@ -10813,9 +11675,11 @@ exports[`MenuSub renders with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10952,6 +11816,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
@@ -11184,6 +12049,7 @@ exports[`MenuSub renders with overrides 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
   position: absolute;
   left: 0;
   width: 100%;
@@ -11208,9 +12074,11 @@ exports[`MenuSub renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -11347,6 +12215,7 @@ exports[`MenuSub renders with overrides 1`] = `
         class="nk-menu-item emotion-1"
       >
         <a
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           href="http://"
@@ -11652,6 +12521,7 @@ exports[`MenuSub renders with title 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #F1F1F1;
   position: absolute;
   left: 0;
   width: 100%;
@@ -11676,9 +12546,11 @@ exports[`MenuSub renders with title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -11792,6 +12664,7 @@ exports[`MenuSub renders with title 1`] = `
         class="nk-menu-item emotion-1"
       >
         <button
+          aria-expanded="false"
           class="emotion-2"
           data-testid="menu-sub-button"
           type="button"
@@ -11885,5 +12758,2068 @@ exports[`MenuSub renders with title 1`] = `
       </li>
     </ul>
   </nav>
+</DocumentFragment>
+`;
+
+exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-2 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 {
+  display: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.emotion-8 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-8:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-8:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-8:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-8:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-8:disabled {
+  color: #ABABAB;
+}
+
+.emotion-8:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-8:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-8:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-11 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-11 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-11:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-11:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-11:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-11:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-11:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-11:disabled {
+  color: #ABABAB;
+}
+
+.emotion-11:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-11:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.emotion-17 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-17 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-17 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-17:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-17:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-17:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-17:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-17:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-17:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-17:disabled {
+  color: #ABABAB;
+}
+
+.emotion-17:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-17:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-17:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-17 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-17 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-20 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.emotion-20 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-20 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-20:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-20:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-20:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-20:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-20:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-20:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-20:disabled {
+  color: #ABABAB;
+}
+
+.emotion-20:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-20:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-20:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-26 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.emotion-26 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-26 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-26:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-26:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-26:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-26:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-26:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-26:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-26:disabled {
+  color: #ABABAB;
+}
+
+.emotion-26:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-26:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-26:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-26 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-26 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <button
+          aria-expanded="false"
+          class="emotion-2"
+          data-testid="menu-sub-button"
+          type="button"
+        >
+          <span
+            class="emotion-3"
+          >
+            menuSub1
+          </span>
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </button>
+        <ul
+          class="emotion-6"
+        >
+          <li
+            class="nk-menu-item emotion-1"
+          >
+            <a
+              class="emotion-8"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-3"
+              >
+                Item 1
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <button
+          aria-expanded="true"
+          class="emotion-11"
+          data-testid="menu-sub-button"
+          type="button"
+        >
+          <span
+            class="emotion-3"
+          >
+            menuSub2
+          </span>
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+            />
+          </svg>
+        </button>
+        <ul
+          class="emotion-15"
+        >
+          <li
+            class="nk-menu-item emotion-1"
+          >
+            <a
+              class="emotion-17"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-3"
+              >
+                Item 2
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-1"
+          >
+            <button
+              aria-expanded="true"
+              class="emotion-20"
+              data-testid="menu-sub-button"
+              type="button"
+            >
+              <span
+                class="emotion-3"
+              >
+                menuSub3
+              </span>
+              <svg
+                aria-hidden="true"
+                class="emotion-4 emotion-5"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                />
+              </svg>
+            </button>
+            <ul
+              class="emotion-15"
+            >
+              <li
+                class="nk-menu-item emotion-1"
+              >
+                <a
+                  class="emotion-26"
+                  data-testid="buttonLink"
+                  href="http://"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Item 3
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div
+    data-testid="outside-element"
+  />
+</DocumentFragment>
+`;
+
+exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-2 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4.emotion-4 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-6 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+}
+
+.emotion-8 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-8 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-8 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-8:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-8:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-8:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-8:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-8:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-8:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-8:disabled {
+  color: #ABABAB;
+}
+
+.emotion-8:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-8:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-8:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-11 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-11 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-11:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-11:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-11:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-11:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-11:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-11:disabled {
+  color: #ABABAB;
+}
+
+.emotion-11:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-11:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F1F1;
+}
+
+.emotion-17 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-17 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-17 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-17:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-17:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-17:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-17:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-17:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-17:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-17:disabled {
+  color: #ABABAB;
+}
+
+.emotion-17:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-17:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-17:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-17 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-17 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-20 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.emotion-20 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-20 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-20:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-20:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-20:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-20:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-20:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-20:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-20:disabled {
+  color: #ABABAB;
+}
+
+.emotion-20:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-20:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-20:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-26 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.emotion-26 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-26 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-26:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-26:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-26:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-26:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-26:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-26:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-26:disabled {
+  color: #ABABAB;
+}
+
+.emotion-26:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-26:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-26:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-26 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-26 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <button
+          aria-expanded="false"
+          class="emotion-2"
+          data-testid="menu-sub-button"
+          type="button"
+        >
+          <span
+            class="emotion-3"
+          >
+            menuSub1
+          </span>
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </button>
+        <ul
+          class="emotion-6"
+        >
+          <li
+            class="nk-menu-item emotion-1"
+          >
+            <a
+              class="emotion-8"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-3"
+              >
+                Item 1
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <button
+          aria-expanded="true"
+          class="emotion-11"
+          data-testid="menu-sub-button"
+          type="button"
+        >
+          <span
+            class="emotion-3"
+          >
+            menuSub2
+          </span>
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+            />
+          </svg>
+        </button>
+        <ul
+          class="emotion-15"
+        >
+          <li
+            class="nk-menu-item emotion-1"
+          >
+            <a
+              class="emotion-17"
+              data-testid="buttonLink"
+              href="http://"
+            >
+              <span
+                class="emotion-3"
+              >
+                Item 2
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item emotion-1"
+          >
+            <button
+              aria-expanded="true"
+              class="emotion-20"
+              data-testid="menu-sub-button"
+              type="button"
+            >
+              <span
+                class="emotion-3"
+              >
+                menuSub3
+              </span>
+              <svg
+                aria-hidden="true"
+                class="emotion-4 emotion-5"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                />
+              </svg>
+            </button>
+            <ul
+              class="emotion-15"
+            >
+              <li
+                class="nk-menu-item emotion-1"
+              >
+                <a
+                  class="emotion-26"
+                  data-testid="buttonLink"
+                  href="http://"
+                >
+                  <span
+                    class="emotion-3"
+                  >
+                    Item 3
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div
+    data-testid="outside-element"
+  />
 </DocumentFragment>
 `;

@@ -12,7 +12,7 @@ import {
 } from '../../test/test-utils';
 import {AssistiveText} from '../../assistive-text';
 import {Label} from '../../label';
-import {createTheme, EventTrigger} from '../..';
+import {createTheme, EventTrigger, styled} from '../..';
 import {IconFilledSearch} from '../../icons';
 import {countries} from './phone-countries';
 
@@ -456,7 +456,37 @@ describe('Select', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders Select with zIndex overrides', async () => {
+    const props = {
+      overrides: {
+        panel: {
+          zIndex: '20',
+        },
+      },
+      children: [
+        <SelectOption defaultSelected value="option 1" key="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentInBody(Select, props) as any;
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('virtualize long list', async () => {
+    // MOCK offsetHeight since react-virtualize needs it in order to measure the elment height
+    // if its not present ( set to 0 ) test will not work.
+    const originalOffsetHeight = Object.getOwnPropertyDescriptor(
+      HTMLElement.prototype,
+      'offsetHeight',
+    );
+
+    Object.defineProperty(HTMLElement.prototype, 'offsetHeight', {
+      configurable: true,
+      value: 100,
+    });
+
     const selectOptions = countries.map(({name}) => (
       <SelectOption key={name} value={name}>
         {name}
@@ -481,6 +511,14 @@ describe('Select', () => {
     expect(getAllByRole('option').length).not.toBe(countries.length);
 
     expect(asFragment()).toMatchSnapshot();
+
+    // Cleanup mocked offsetHeight
+    Object.defineProperty(
+      HTMLElement.prototype,
+      'offsetHeight',
+      // @ts-ignore
+      originalOffsetHeight,
+    );
   });
 
   test('fire tracking event ', async () => {
@@ -525,6 +563,135 @@ describe('Select', () => {
         value: 'option 2',
       },
     });
+  });
+
+  test('open and scroll', async () => {
+    const Body = styled.div`
+      height: 500px;
+      overflow: scroll;
+    `;
+    const Scroller = styled.div`
+      height: 2000px;
+      padding-top: 400px;
+    `;
+
+    const props = {
+      children: (
+        <Scroller id="scroller">
+          <Select>
+            <SelectOption key="1" value="option 1">
+              option 1
+            </SelectOption>
+            <SelectOption key="2" value="option 2">
+              option 2
+            </SelectOption>
+          </Select>
+        </Scroller>
+      ),
+    };
+
+    const {getByTestId, container, asFragment} = renderWithTheme(Body, props);
+
+    // open select
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    const scrollContainer = container.querySelector('#scroller')?.parentNode;
+
+    // scroll container
+    // @ts-ignore
+    fireEvent.scroll(scrollContainer, {target: {scrollY: 100}});
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('calls onOpenChange', async () => {
+    const onOpenChange = jest.fn();
+    const props: SelectProps = {
+      onOpenChange,
+      children: defaultSelectOptions,
+    };
+
+    const {getByTestId} = renderWithTheme(Select, props);
+
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    expect(onOpenChange).toHaveBeenCalledTimes(1);
+    expect(onOpenChange).toHaveBeenCalledWith(true);
+  });
+
+  test('icon size overrides', () => {
+    const props: SelectProps = {
+      overrides: {
+        button: {
+          indicatorIcon: {
+            size: 'iconSize050',
+          },
+        },
+      },
+      children: [
+        <SelectOption value="1" key="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentWithTheme(Select, props) as any;
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('icon component overrides', () => {
+    const props: SelectProps = {
+      overrides: {
+        button: {
+          indicatorIcon: () => <>icon</>,
+        },
+      },
+      children: [
+        <SelectOption value="1" key="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentWithTheme(Select, props) as any;
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('icon theme size overrides', () => {
+    const props: SelectProps = {
+      children: [
+        <SelectOption value="1" key="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+    const selectTheme = createTheme({
+      name: 'selectTheme',
+      overrides: {
+        componentDefaults: {
+          select: {
+            medium: {
+              button: {
+                iconSize: undefined,
+                indicatorIcon: {
+                  size: 'iconSize040',
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+    const fragment = renderToFragmentWithTheme(
+      Select,
+      props,
+      selectTheme,
+    ) as any;
+    expect(fragment).toMatchSnapshot();
   });
 
   describe('in Modal', () => {

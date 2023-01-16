@@ -675,6 +675,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-6 {
@@ -1406,6 +1407,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-8 {
@@ -1661,7 +1663,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         tabindex="-1"
       >
         <div
-          class="emotion-4"
+          class="emotion-4 nk-popover-enter-done"
           data-testid="floating-element-panel"
           tabindex="-1"
         >
@@ -1880,6 +1882,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -2118,7 +2121,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
         tabindex="-1"
       >
         <div
-          class="emotion-1"
+          class="emotion-1 nk-popover-enter-done"
           data-testid="floating-element-panel"
           tabindex="-1"
         >
@@ -2422,6 +2425,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-8 {
@@ -2677,7 +2681,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         tabindex="-1"
       >
         <div
-          class="emotion-4"
+          class="emotion-4 nk-popover-enter-done"
           data-testid="floating-element-panel"
           tabindex="-1"
         >
@@ -3106,6 +3110,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <section
@@ -3570,6 +3575,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <section
@@ -4033,6 +4039,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <section
@@ -4498,6 +4505,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <section
@@ -4962,6 +4970,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <section
@@ -5425,6 +5434,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <section
@@ -5962,6 +5972,7 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <section
@@ -6555,6 +6566,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -7565,6 +7577,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -8300,6 +8313,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -8634,6 +8648,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {
@@ -9531,6 +9546,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-5 {

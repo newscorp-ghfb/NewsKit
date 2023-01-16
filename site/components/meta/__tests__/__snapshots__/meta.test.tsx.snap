@@ -175,19 +175,15 @@ exports[`Meta renders with mandatory props 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  color: #FFFFFF;
-  background-color: #3358CC;
   border-radius: 8px;
-  white-space: nowrap;
+  border-color: #017582;
+  color: #FFFFFF;
+  background-color: #017582;
 }
 
 .emotion-9 svg {
   width: 16px;
   height: 16px;
-}
-
-.emotion-9 svg {
-  fill: #FFFFFF;
 }
 
 .emotion-10 {
@@ -1361,19 +1357,15 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  color: #FFFFFF;
-  background-color: #3358CC;
   border-radius: 8px;
-  white-space: nowrap;
+  border-color: #017582;
+  color: #FFFFFF;
+  background-color: #017582;
 }
 
 .emotion-9 svg {
   width: 16px;
   height: 16px;
-}
-
-.emotion-9 svg {
-  fill: #FFFFFF;
 }
 
 .emotion-10 {
@@ -2669,19 +2661,15 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  color: #FFFFFF;
-  background-color: #3358CC;
   border-radius: 8px;
-  white-space: nowrap;
+  border-color: #017582;
+  color: #FFFFFF;
+  background-color: #017582;
 }
 
 .emotion-9 svg {
   width: 16px;
   height: 16px;
-}
-
-.emotion-9 svg {
-  fill: #FFFFFF;
 }
 
 .emotion-10 {

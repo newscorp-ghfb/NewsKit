@@ -1,5 +1,5 @@
 import React from 'react';
-import {SvgPreviewer} from '../../components/tools/svg-previewer';
+import {SvgPreviewer} from '../../components/svg-previewer/svg-previewer';
 import Layout, {LayoutProps} from '../../components/layout';
 
 const PreviewIllustrationExport = (layoutProps: LayoutProps) => (

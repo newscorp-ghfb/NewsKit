@@ -50,7 +50,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="structuredList"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v3.5.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/structured-list',

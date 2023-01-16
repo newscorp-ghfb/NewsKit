@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {useRef} from 'react';
-
+import {useRef, useState} from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {CharacterCount, CharacterCountProps} from '..';
 import {
   Form,
@@ -15,17 +15,29 @@ import {TextArea, TextAreaProps} from '../../text-area';
 import {Label} from '../../label';
 import {TextField, TextFieldSize} from '../../text-field';
 import {FormInputState} from '../../form/types';
-import {createTheme, newskitLightTheme, ThemeProvider} from '../../theme';
+import {CreateThemeArgs, newskitLightTheme, ThemeProvider} from '../../theme';
 import {deepMerge} from '../../utils';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-export default {
-  title: 'Components/Character count',
-  parameters: {
-    nkDocs: {
-      title: 'Character count',
-      description:
-        'The Character count lets users know how much text they can enter in an input field as they type.',
+const myCustomTheme: CreateThemeArgs = {
+  name: 'my-custom-theme',
+  overrides: {
+    stylePresets: {
+      characterCountCustom: {
+        base: {
+          color: '{{colors.inkBrand010}}',
+        },
+      },
+      textAreaCustom: deepMerge(newskitLightTheme.stylePresets.inputField, {
+        base: {
+          borderWidth: '{{borders.borderWidth020}}',
+          borderRadius: '{{borders.borderRadiusRounded030}}',
+          borderColor: '{{colors.teal060}}',
+          placeholderColor: '{{colors.teal060}}',
+          color: '{{colors.teal060}}',
+        },
+      }),
     },
   },
 };
@@ -142,6 +154,36 @@ export const CharacterCountMaxLength = () => {
 };
 CharacterCountMaxLength.storyName = 'Max length';
 
+export const CharacterCountExceedMaxLength = () => {
+  const ref = useRef<HTMLTextAreaElement>(null);
+  const [textareavalue, setValue] = useState('');
+  const maxLength = 200;
+  function validationLimit() {
+    return textareavalue.length > maxLength ? 'invalid' : 'valid';
+  }
+  return (
+    <StorybookPage>
+      <StorybookCase title="Text area">
+        <Label htmlFor="textArea-overlimit">Label</Label>
+        <TextArea
+          placeholder="Placeholder"
+          ref={ref}
+          state={validationLimit()}
+          value={textareavalue}
+          onChange={({target: {value}}) => setValue(value)}
+        />
+        <CharacterCount
+          inputRef={ref}
+          maxLength={maxLength}
+          state={validationLimit()}
+        />
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+
+CharacterCountExceedMaxLength.storyName = 'Max length over limit';
+
 export const CharacterCountMinLength = () => {
   const textArea = useRef<HTMLTextAreaElement>(null);
   const textField = useRef<HTMLInputElement>(null);
@@ -199,7 +241,6 @@ export const CharacterCountMinAndMaxLength = () => {
         />
         <CharacterCount inputRef={textField} />
       </StorybookCase>
-      <StorybookCase title="default" />
     </StorybookPage>
   );
 };
@@ -258,93 +299,106 @@ export const CharacterCountForm = () => (
 );
 CharacterCountForm.storyName = 'Form with submit validation';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-theme',
-  overrides: {
-    stylePresets: {
-      characterCountCustom: {
-        base: {
-          color: '{{colors.teal060}}',
-        },
-      },
-      textAreaCustom: deepMerge(newskitLightTheme.stylePresets.inputField, {
-        base: {
-          borderWidth: '{{borders.borderWidth020}}',
-          borderRadius: '{{borders.borderRadiusRounded030}}',
-          borderColor: '{{colors.teal060}}',
-          placeholderColor: '{{colors.teal060}}',
-          color: '{{colors.teal060}}',
-        },
-      }),
-    },
-  },
-});
+export const CharacterCountStylingOverrides = () => {
+  const styleRef = useRef<HTMLTextAreaElement>(null);
+  return (
+    <StorybookPage>
+      <StorybookCase title="Style">
+        <Label htmlFor="style" overrides={{stylePreset: 'inkBrand010'}}>
+          Label
+        </Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="style"
+          ref={styleRef}
+          maxLength={200}
+          overrides={{stylePreset: 'textAreaCustom'}}
+        />
+        <CharacterCount
+          inputRef={styleRef}
+          overrides={{stylePreset: 'characterCountCustom'}}
+        />
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+CharacterCountStylingOverrides.storyName = 'Styling overrides';
 
 export const CharacterCountOverrides = () => {
-  const styleRef = useRef<HTMLTextAreaElement>(null);
   const logicalPropsRef = useRef<HTMLTextAreaElement>(null);
   const minHeightRef = useRef<HTMLTextAreaElement>(null);
   const formatRef = useRef<HTMLTextAreaElement>(null);
   return (
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookPage>
-        <StorybookCase title="Style">
-          <Label htmlFor="style">Label</Label>
-          <TextArea
-            placeholder="Placeholder"
-            id="style"
-            ref={styleRef}
-            maxLength={200}
-            overrides={{stylePreset: 'textAreaCustom'}}
-          />
-          <CharacterCount
-            inputRef={styleRef}
-            overrides={{stylePreset: 'characterCountCustom'}}
-          />
-        </StorybookCase>
-        <StorybookCase title="Logical props">
-          <Label htmlFor="logicalProps">Label</Label>
-          <TextArea
-            placeholder="Placeholder"
-            id="logicalProps"
-            ref={logicalPropsRef}
-            maxLength={20}
-          />
-          <CharacterCount
-            inputRef={logicalPropsRef}
-            overrides={{marginBlock: 'space040', paddingInline: 'space060'}}
-          />
-        </StorybookCase>
-        <StorybookCase title="Min height">
-          <Label htmlFor="minHeight">Label</Label>
-          <TextArea
-            placeholder="Placeholder"
-            id="minHeight"
-            ref={minHeightRef}
-            maxLength={200}
-          />
-          <CharacterCount
-            inputRef={minHeightRef}
-            overrides={{minHeight: '80px'}}
-          />
-        </StorybookCase>
-        <StorybookCase title="Custom format">
-          <Label htmlFor="format">Label</Label>
-          <TextArea
-            placeholder="Placeholder"
-            id="format"
-            ref={formatRef}
-            minLength={20}
-          />
-          <CharacterCount
-            inputRef={formatRef}
-            format={({minLength, currentLength}) =>
-              `You need to input at least ${minLength} characters but so far you've only entered ${currentLength}!`
-            }
-          />
-        </StorybookCase>
-      </StorybookPage>
-    </ThemeProvider>
+    <StorybookPage>
+      <StorybookCase title="Logical props">
+        <Label htmlFor="logicalProps">Label</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="logicalProps"
+          ref={logicalPropsRef}
+          maxLength={20}
+        />
+        <CharacterCount
+          inputRef={logicalPropsRef}
+          overrides={{marginBlock: 'space040', paddingInline: 'space060'}}
+        />
+      </StorybookCase>
+      <StorybookCase title="Min height">
+        <Label htmlFor="minHeight">Label</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="minHeight"
+          ref={minHeightRef}
+          maxLength={200}
+        />
+        <CharacterCount
+          inputRef={minHeightRef}
+          overrides={{minHeight: '80px'}}
+        />
+      </StorybookCase>
+      <StorybookCase title="Custom format">
+        <Label htmlFor="format">Label</Label>
+        <TextArea
+          placeholder="Placeholder"
+          id="format"
+          ref={formatRef}
+          minLength={20}
+        />
+        <CharacterCount
+          inputRef={formatRef}
+          format={({minLength, currentLength}) =>
+            `You need to input at least ${minLength} characters but so far you've only entered ${currentLength}!`
+          }
+        />
+      </StorybookCase>
+    </StorybookPage>
   );
 };
 CharacterCountOverrides.storyName = 'Overrides';
+
+export default {
+  title: 'Components/Character count',
+  parameters: {
+    nkDocs: {
+      title: 'Character count',
+      description:
+        'The Character count lets users know how much text they can enter in an input field as they type.',
+    },
+  },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          myCustomTheme,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

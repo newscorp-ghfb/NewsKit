@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {GridLayout} from 'newskit';
-import {ReleasesPageProps} from '../utils/release-notes/types';
+import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
   Hero,
@@ -13,8 +13,8 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
-import {ContentProps, getSheets} from '../utils/google-sheet';
-import {formatSheetData, getValueFromCMS} from '../utils/google-sheet/utils';
+import {getSheets} from '../utils/google-sheet';
+import {formatSheetData} from '../utils/google-sheet/utils';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -28,11 +28,25 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
+interface HeroCardContent {
+  hero_card_title: string;
+  hero_card_description: string;
+  hero_card_link_text: string;
+  hero_card_link: string;
+}
+// Content if the CMS fails - default to this
+const heroCardFallbackContent: HeroCardContent = {
+  hero_card_title: `Latest blog`,
+  hero_card_description: `How an audio player component tells the story of NewsKit Design System's changing strategy.`,
+  hero_card_link_text: `Read on Medium`,
+  hero_card_link: `https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67`,
+};
+
 const Index = ({
   releases,
   content,
   ...layoutProps
-}: LayoutProps & ReleasesPageProps & ContentProps) => {
+}: LayoutProps & ReleasesPageProps & {content: HeroCardContent}) => {
   const {themeMode, toggleTheme} = layoutProps;
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
@@ -52,38 +66,32 @@ const Index = ({
           }}
         >
           <FeatureCard
-            title={getValueFromCMS(content, 'HeroCardTitle', 'Latest blog')}
-            description={getValueFromCMS(
-              content,
-              'HeroCardDescription',
-              "How an audio player component tells the story of NewsKit Design System's changing strategy",
-            )}
+            title={content.hero_card_title}
+            description={content.hero_card_description}
             stylePrefix="worldDesignSystemsWeekCard"
             layout="horizontal"
             overrides={{
               title: {typographyPreset: 'editorialHeadline060'},
               description: {typographyPreset: 'editorialSubheadline010'},
+              button: {
+                paddingInline: 'space000',
+                stylePreset: 'linkStandaloneInversePersistent',
+              },
             }}
             buttonIcon={<IconFilledLaunch />}
-            buttonLabel={getValueFromCMS(
-              content,
-              'HeroCardLinkText',
-              'Read on Medium',
-            )}
-            buttonHref={getValueFromCMS(
-              content,
-              'HeroCardLink',
-              'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
-            )}
-            buttonOverrides={{
-              paddingInline: 'space000',
-              typographyPreset: 'utilityButton020',
-            }}
+            buttonLabel={content.hero_card_link_text}
+            buttonHref={content.hero_card_link}
           />
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />
         </GridLayout>
+        <GridLayout
+          overrides={{
+            ...GRID_SECTION_OVERRIDES,
+            marginBlockEnd: {xs: 'space080', md: 'space000'},
+          }}
+        />
         <GridLayout
           overrides={{
             ...GRID_SECTION_OVERRIDES,
@@ -106,13 +114,13 @@ const Index = ({
             overrides={{
               title: {typographyPreset: 'editorialHeadline060'},
               description: {typographyPreset: 'editorialSubheadline010'},
+              button: {
+                paddingInline: 'space000',
+                stylePreset: 'linkStandaloneInversePersistent',
+              },
             }}
             buttonLabel="Start contributing"
             buttonHref="/about/contribute"
-            buttonOverrides={{
-              paddingInline: 'space000',
-              typographyPreset: 'utilityButton020',
-            }}
           />
         </GridLayout>
         <GridLayout
@@ -136,11 +144,21 @@ export default Index;
 // This function is called at build time and the response is passed to the page
 // component as props.
 export async function getStaticProps() {
-  const [releases, data] = await Promise.all([
-    fetchGitHubReleases(4),
+  let releases: Release[] = [];
+  const [releasesOrError, data] = await Promise.all([
+    fetchGitHubReleases(1),
     getSheets('Homepage'),
   ]);
+  // Can return a rate limiting error object from github immediately after a load test
+  if (!releasesOrError.length) {
+    console.error(
+      'Unexpected response from github',
+      JSON.stringify(releasesOrError),
+    );
+  } else {
+    releases = releasesOrError;
+  }
 
-  const content = formatSheetData(data);
+  const content = {...heroCardFallbackContent, ...formatSheetData(data)};
   return {props: {releases, content}};
 }

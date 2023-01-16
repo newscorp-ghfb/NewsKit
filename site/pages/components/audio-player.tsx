@@ -41,7 +41,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="Audio Player"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v5.3.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/audio-player-composable',
@@ -1085,7 +1085,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'audioPlayer.PlayPauseButton.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonSolidPrimary',
               description:
@@ -1121,13 +1121,13 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'audioPlayerTimeDisplay.typographyPreset',
+              attribute: 'typographyPreset',
               type: 'MQ<string>',
               default: 'utilityButton030',
               description: 'Overrides the typographyPreset of the time display',
             },
             {
-              attribute: 'audioPlayerTimeDisplay.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'timeDisplay',
               description: 'Overrides the stylePreset of the time display',
@@ -1140,7 +1140,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             'The seek bar has the following overrides that can be used to define an appropriate experience for different use cases.',
           overridesRows: [
             {
-              attribute: 'audioPlayerSeekBar.slider',
+              attribute: 'slider',
               type: 'sliderSliderOverrideProps',
               description: (
                 <>
@@ -1157,7 +1157,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'audioPlayerSeekBar.slider.track.stylePreset',
+              attribute: 'slider.track.stylePreset',
               type: 'MQ<string>',
               default: 'seekBarTrack',
               description:
@@ -1165,38 +1165,38 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             },
 
             {
-              attribute: 'audioPlayerSeekBar.slider.track.size',
+              attribute: 'slider.track.size',
               type: 'MQ<string>',
               default: 'sizing020',
               description: 'Overrides the size of the seek bar slider. ',
             },
             {
-              attribute: 'audioPlayerSeekBar.slider.indicator.stylePreset',
+              attribute: 'slider.indicator.stylePreset',
               type: 'MQ<string>',
               default: 'seekBarIndicator',
               description: 'Overrides the stylePreset of the seek bar slider. ',
             },
             {
-              attribute: 'audioPlayerSeekBar.slider.thumb.stylePreset',
+              attribute: 'slider.thumb.stylePreset',
               type: 'MQ<string>',
               default: 'seekBarThumb',
               description:
                 'Overrides the stylePreset of the seek bar slider thumb. ',
             },
             {
-              attribute: 'audioPlayerSeekBar.slider.thumb.size',
+              attribute: 'slider.thumb.size',
               type: 'MQ<string>',
               default: 'sizing040',
               description: 'Overrides the size of the seek bar slider thumb. ',
             },
             {
-              attribute: 'audioPlayerSeekBar.slider.feedback.size',
+              attribute: 'slider.feedback.size',
               type: 'MQ<string>',
               default: 'sizing060',
               description: 'Overrides the size of the feedback element.',
             },
             {
-              attribute: 'audioPlayerSeekBar.buffering.stylePreset',
+              attribute: 'buffering.stylePreset',
               type: 'MQ<string>',
               default: 'seekBarBuffering',
               description:
@@ -1223,7 +1223,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             'The skip next button has the following overrides that can be used to define an appropriate experience for different use cases.',
           overridesRows: [
             {
-              attribute: 'audioPlayerSkipNextButton.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonMinimalPrimary',
               description: 'Overrides the stylePreset of the skip next button',
@@ -1250,7 +1250,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             'The skip previous button has the following overrides that can be used to define an appropriate experience for different use cases.',
           overridesRows: [
             {
-              attribute: 'audioPlayerSkipPreviousButton.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonMinimalPrimary',
               description:
@@ -1287,7 +1287,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'audioPlayerForwardButton.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonMinimalPrimary',
               description: 'Overrides the stylePreset of the forward button',
@@ -1323,7 +1323,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'audioPlayerReplayButton.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonMinimalPrimary',
               description: 'Overrides the stylePreset of the replay button',
@@ -1384,27 +1384,27 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'audioPlayerVolumeControl',
+              attribute: 'VolumeControl',
               type: '',
               description:
                 'If provided, this overrides the volume control defaults.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.size',
+              attribute: 'size',
               type: 'string',
               default: '100%',
               description:
                 'If provided, this overrides the size of volume control.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.spaceBetween',
+              attribute: 'spaceBetween',
               type: 'MQ<string>',
               default: 'space030',
               description:
                 'If provided, this overrides the space applied between the mute volume icon button, and the volume slider.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.button.stylePreset',
+              attribute: 'button.stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonMinimalPrimary',
               description: (
@@ -1421,27 +1421,27 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'audioPlayerVolumeControl.button.iconSize',
+              attribute: 'button.iconSize',
               type: 'string',
               default: 'iconSize020',
               description:
                 'If provided, this overrides the icon size for the mute volume icon button.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.button.iconDefault',
+              attribute: 'button.iconDefault',
               type: 'MQ<string>',
               default: 'iconFilledVolumeUp',
               description: 'If provided, this overrides the mute volume icon.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.button.iconMuted',
+              attribute: 'button.iconMuted',
               type: 'MQ<string>',
               default: 'iconFilledVolumeOff',
               description:
                 'If provided, this overrides the mute volume icon, when audio is muted.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.slider.track.stylePreset',
+              attribute: 'slider.track.stylePreset',
               type: 'MQ<string>',
               default: 'audioPlayerVolumeControlTrack',
               description: (
@@ -1457,74 +1457,70 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'audioPlayerVolumeControl.slider.track.size',
+              attribute: 'slider.track.size',
               type: 'string',
               default: 'sizing010',
               description:
                 'If provided, this overrides the size of the volume slider track.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.slider.track.length',
+              attribute: 'slider.track.length',
               type: 'string',
               default: '130px',
               description:
                 'If provided, this overrides the length of the volume slider track.',
             },
             {
-              attribute:
-                'audioPlayerVolumeControl.slider.indicator.stylePreset',
+              attribute: 'slider.indicator.stylePreset',
               type: 'MQ<string>',
               default: 'audioPlayerVolumeControlIndicator',
               description:
                 'If provided, this overrides the appearance of the volume slider indicator.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.slider.thumb.stylePreset',
+              attribute: 'slider.thumb.stylePreset',
               type: 'MQ<string>',
               default: 'audioPlayerVolumeControlThumb',
               description:
                 'If provided, this overrides the appearance of the volume slider thumb.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.slider.thumb.track.size',
+              attribute: 'slider.thumb.track.size',
               type: 'string',
               default: 'sizing040',
               description:
                 'If provided, this overrides the size of the volume slider thumb.',
             },
             {
-              attribute:
-                'audioPlayerVolumeControl.slider.thumbLabel.stylePreset',
+              attribute: 'slider.thumbLabel.stylePreset',
               type: 'MQ<string>',
               default: 'audioPlayerVolumeControlThumbLabel',
               description:
                 'If provided, this overrides the appearance of the volume slider thumb label.',
             },
             {
-              attribute:
-                'audioPlayerVolumeControl.slider.thumbLabel.typographyPreset',
+              attribute: 'slider.thumbLabel.typographyPreset',
               type: 'MQ<string>',
               default: 'audioPlayerVolumeControlThumb',
               description:
                 'If provided, this overrides the typographyPreset of the volume slider thumb label.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.slider.thumbLabel.space',
+              attribute: 'slider.thumbLabel.space',
               type: 'MQ<string>',
               default: '',
               description:
                 'If provided, this overrides the space of the volume slider thumb label.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.slider.labels.stylePreset',
+              attribute: 'slider.labels.stylePreset',
               type: 'MQ<string>',
               default: 'audioPlayerVolumeControlLabels',
               description:
                 'If provided, this overrides the appearance of the volume slider labels.',
             },
             {
-              attribute:
-                'audioPlayerVolumeControl.slider.labels.typographyPreset',
+              attribute: 'slider.labels.typographyPreset',
               type: 'MQ<string>',
               default: '',
               description:
@@ -1532,36 +1528,34 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
             },
 
             {
-              attribute: 'audioPlayerVolumeControl.slider.labels.space',
+              attribute: 'slider.labels.space',
               type: 'MQ<string>',
               default: '',
               description:
                 'If provided, this overrides the space of the volume slider labels.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.transitionPreset',
+              attribute: 'transitionPreset',
               type: 'MQ<string>',
               default: 'widthChange',
               description:
                 'If provided, this overrides the transitionPreset applied to the slider element of the volume control in a horizontal orientation.',
             },
             {
-              attribute: 'audioPlayerVolumeControl.popover.stylePreset',
+              attribute: 'popover.stylePreset',
               type: 'MQ<string>',
               default: 'audioPlayerVolumeControlPopover',
               description:
                 'If provided, this overrides the appearance of the Popover.',
             },
             {
-              attribute:
-                'audioPlayerVolumeControl.popover.content.paddingBlock',
+              attribute: 'popover.content.paddingBlock',
               type: 'MQ<string>',
               default: 'space030',
               description: '',
             },
             {
-              attribute:
-                'audioPlayerVolumeControl.popover.content.paddingInline',
+              attribute: 'popover.content.paddingInline',
               type: 'MQ<string>',
               default: 'space030',
               description: '',
@@ -1601,29 +1595,28 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'audioPlayerPlaybackSpeedControl.iconButton.size',
+              attribute: 'iconButton.size',
               type: 'MQ<string>',
               default: 'small',
               description:
                 'If provided, this overrides the size of the PlaybackSpeedControl icon button.',
             },
             {
-              attribute:
-                'audioPlayerPlaybackSpeedControl.iconButton.stylePreset',
+              attribute: 'iconButton.stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonMinimalPrimary',
               description:
                 'If provided, this overrides the stylePreset of the PlaybackSpeedControl icon button.',
             },
             {
-              attribute: 'audioPlayerPlaybackSpeedControl.iconButton.icon',
+              attribute: 'iconButton.icon',
               type: 'MQ<string>',
               default: 'iconFilledSlowMotionVideo',
               description:
                 'If provided, this overrides the icon in the PlaybackSpeedControl icon button.',
             },
             {
-              attribute: 'audioPlayerPlaybackSpeedControl.iconButton.iconSize',
+              attribute: 'iconButton.iconSize',
               type: 'MQ<string>',
               default: 'iconSize020',
               description:

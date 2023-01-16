@@ -6,7 +6,7 @@ import {
   MenuDivider,
   MenuItem,
 } from 'newskit';
-import LinkNext from 'next/link';
+import NextLink from 'next/link';
 import {useRouter} from 'next/router';
 import {routes} from '../../routes';
 import {Visible} from '../../../src/grid/visibility';
@@ -29,7 +29,7 @@ const MenuTitleLinks: React.FC<PageLinkProps> = ({
   });
 
   return (
-    <LinkNext href={href} passHref>
+    <NextLink legacyBehavior href={href} passHref>
       <MenuItem
         href={href}
         data-testid={page}
@@ -45,7 +45,7 @@ const MenuTitleLinks: React.FC<PageLinkProps> = ({
       >
         {children} <span ref={ref} />
       </MenuItem>
-    </LinkNext>
+    </NextLink>
   );
 };
 export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
@@ -69,7 +69,8 @@ export const SiteMenuItem: React.FC<SiteMenuItemProps> = ({menuItemList}) => {
                 {title === 'Foundations' ||
                 title === 'Actions & Inputs' ||
                 title === 'Design' ||
-                title === 'Forms' ? (
+                title === 'Forms' ||
+                title === 'About' ? (
                   <Block spaceStack="space060" />
                 ) : (
                   <DesktopNavigationDivider>
@@ -116,13 +117,17 @@ const MenuDesktop = ({path}: {path: string}) => {
   );
 };
 
-export const SidebarNav = () => {
+export const SidebarNav = ({handleClick}: {handleClick?: () => void}) => {
   const path = useRouter().pathname;
 
   return (
     <>
       <Visible xs sm md>
-        <MenuMobileCollapsible path={path} menu={routes} />
+        <MenuMobileCollapsible
+          path={path}
+          menu={routes}
+          handleClick={handleClick}
+        />
       </Visible>
       <Visible lg xl>
         <MenuDesktop path={path} />

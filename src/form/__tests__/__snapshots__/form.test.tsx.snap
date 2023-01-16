@@ -4081,6 +4081,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-12 {
@@ -4600,13 +4601,26 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-27:disabled {
   color: #ABABAB;
+}
+
+.emotion-27::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-27::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-33 {
@@ -5539,6 +5553,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-12 {
@@ -6058,13 +6073,26 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-27:disabled {
   color: #ABABAB;
+}
+
+.emotion-27::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-27::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-33 {
@@ -7210,6 +7238,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 .emotion-2 {
@@ -7897,13 +7926,26 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -8444,13 +8486,26 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-5:disabled {
   color: #ABABAB;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <div>

@@ -109,13 +109,12 @@ export const StyledButton = styled(Button)<{
   width: 100%;
   ${({selected}) =>
     selected && getStylePreset('menuItem', '', {isSelected: selected})}
-
   ${({align}) =>
     align &&
     menuItemFlexAlign[align] && {
       justifyContent: menuItemFlexAlign[align],
     }}
-  
+
   text-align: ${({align}) => align && getTextAlign(align)}
 `;
 
@@ -154,7 +153,18 @@ export const StyledUl = styled.ul<
   list-style-type: none;
   margin: 0;
   padding: 0;
-  ${logicalProps()}
+
+  ${({vertical}) =>
+    getStylePreset(
+      `menuSubItem.${vertical ? 'vertical' : 'horizontal'}.list`,
+      'list',
+    )};
+
+  ${({vertical}) =>
+    logicalProps(
+      `menuSubItem.${vertical ? 'vertical' : 'horizontal'}.list`,
+      'list',
+    )};
 
   ${({vertical}) =>
     vertical

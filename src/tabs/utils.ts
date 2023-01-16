@@ -144,7 +144,7 @@ export const getTabsBarIndicatorStyle = (
     transition:
       keyUpdated && keyUpdated > 1
         ? `all ${motionDuration} ${motionTiming}`
-        : '',
+        : undefined,
   };
 };
 

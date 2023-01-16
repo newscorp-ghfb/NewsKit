@@ -193,5 +193,8 @@ export const StyledLabel = styled.span<
       isInvalid: state === 'invalid',
       isValid: state === 'valid',
     })}
-  ${({size, path}) => getTypographyPreset(`${path}.${size}.label`, 'label')}
+  ${({size, path}) =>
+    getTypographyPreset(`${path}.${size}.label`, 'label', {
+      withCrop: true,
+    })}
 `;

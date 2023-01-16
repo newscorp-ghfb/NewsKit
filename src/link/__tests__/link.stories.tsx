@@ -10,6 +10,7 @@ import {
 import {IconFilledEmail} from '../../icons';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {TextBlock} from '../../text-block';
 
 const linkCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-link-theme',
@@ -249,6 +250,24 @@ export const StoryLink = () => (
     >
       Link Standalone external with type and style Preset overrides
     </LinkStandalone>
+
+    <StorybookHeading>Link with `textOnly`</StorybookHeading>
+    <TextBlock>
+      This is a long description with this and this and this and this and this
+      and{' '}
+      <LinkInline textOnly href="/">
+        long textOnly inline link inside{' '}
+      </LinkInline>{' '}
+      and this and that.
+    </TextBlock>
+    <br />
+    <TextBlock>
+      This is a great article about this and this and this and that and this and{' '}
+      <LinkInline textOnly href="http://newskit.staging-news.co.uk/">
+        external textOnly link with external icon
+      </LinkInline>{' '}
+      this and this and this and that.
+    </TextBlock>
   </Container>
 );
 StoryLink.storyName = 'link';

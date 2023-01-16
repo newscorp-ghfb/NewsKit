@@ -53,6 +53,7 @@ export interface LayoutProps {
   toggleTheme: () => void;
   themeMode: string;
   hideSidebar?: boolean;
+  hideFooter?: boolean;
   children: React.ReactNode | ((props: {themeMode: string}) => React.ReactNode);
 }
 interface LayoutState {
@@ -168,6 +169,7 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
     const {sidebarOpen, debugDropdownVisible} = this.state;
     const {
       hideSidebar,
+      hideFooter,
       path,
       newPage,
       toggleTheme,
@@ -227,16 +229,20 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
                 )}
               </BodyWrapper>
             </InstrumentationProvider>
-            {path === '/index' ? (
-              <SiteFooter
-                cellProps={{
-                  xs: 12,
-                  xl: 10,
-                  xlOffset: 1,
-                }}
-              />
-            ) : (
-              <SiteFooter />
+            {!hideFooter && (
+              <>
+                {path === '/index' ? (
+                  <SiteFooter
+                    cellProps={{
+                      xs: 12,
+                      xl: 10,
+                      xlOffset: 1,
+                    }}
+                  />
+                ) : (
+                  <SiteFooter />
+                )}
+              </>
             )}
           </Container>
         </ThemeModeContext.Provider>

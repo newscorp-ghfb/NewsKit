@@ -3,6 +3,8 @@ import {getMediaQueryFromTheme, styled, Block} from 'newskit';
 export const HeroContainer = styled(Block)`
   background-size: cover;
   background-repeat: no-repeat;
+  margin-block-start: -12px;
+  min-height: calc(100% + 12px);
 
   ${getMediaQueryFromTheme('md')} {
     ${({theme}) => {

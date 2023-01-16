@@ -1,1 +1,56 @@
-<svg id="components-grid-layout-usage-do-01" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0"><rect style="fill:var(--color-illustrationBackground010)" width="1490" height="838"></rect><rect style="fill:var(--color-illustrationInterface020)" x="479" y="443" width="240" height="240" rx="20"></rect><rect style="fill:var(--color-illustrationInterface020)" x="479" y="155" width="240" height="240" rx="20"></rect><rect style="fill:var(--color-illustrationInterface020)" x="767" y="155" width="240" height="240" rx="20"></rect><line x1="482" y1="94" x2="481" y2="744" stroke="#577FFB" stroke-width="6"></line><line x1="1070" y1="158" x2="420" y2="157" stroke="#577FFB" stroke-width="6"></line></svg>
+<svg
+  id="nksvg"
+  style="width: 100%; height: 100%"
+  width="1490"
+  height="838"
+  viewBox="0 0 1490 838"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="css-0"
+>
+  <rect
+    style="fill: var(--color-illustrationBackground010)"
+    width="1490"
+    height="838"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationInterface020)"
+    x="479"
+    y="443"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationInterface020)"
+    x="479"
+    y="155"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationInterface020)"
+    x="767"
+    y="155"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <line
+    x1="482"
+    y1="94"
+    x2="481"
+    y2="744"
+    stroke="#577FFB"
+    stroke-width="6"
+  ></line>
+  <line
+    x1="1070"
+    y1="158"
+    x2="420"
+    y2="157"
+    stroke="#577FFB"
+    stroke-width="6"
+  ></line>
+</svg>

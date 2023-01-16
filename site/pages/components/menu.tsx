@@ -8,7 +8,10 @@ import {
   MenuGroup,
   MenuDivider,
   UnorderedList,
+  toNewsKitIcon,
+  MenuSub,
 } from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
@@ -17,6 +20,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
@@ -27,6 +31,16 @@ const PlaygroundContainer = styled.div`
     width: 500px;
   }
 `;
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 const MenuComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -51,6 +65,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       introduced: 'v3.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/menu',
       storybookId: 'components-menu--story-menu-items-horizontal',
+      figmaUrl:
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2984%3A966&t=eurTjmEaa1UxGH2d-0',
     }}
     interactiveDemo={{
       introduction:
@@ -65,7 +81,11 @@ const MenuComponent = (layoutProps: LayoutProps) => (
                 <MenuGroup title="Group 1">
                   <MenuItem href={href}>Group 1-item 1</MenuItem>
                   <MenuItem href={href}>Group 1-item 2</MenuItem>
-                  <MenuItem href={href}>Group 1-item 3</MenuItem>
+                  <MenuSub title="Group item 3">
+                    <MenuItem href={href}>Group item 3.1</MenuItem>
+                    <MenuItem href={href}>Group item 3.2</MenuItem>
+                    <MenuItem href={href}>Group item 3.3</MenuItem>
+                  </MenuSub>
                 </MenuGroup>
                 <MenuDivider />
 
@@ -134,8 +154,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
                 isDefault: true,
               },
               {
-                label: 'space020',
-                value: {spaceInline: 'space020'},
+                label: 'space050',
+                value: {spaceInline: 'space050'},
               },
             ],
           },
@@ -143,41 +163,77 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       } as any,
     }}
     anatomy={{
-      introduction:
-        'The menu contains one required element and three optional elements.',
-
-      rows: [
+      components: [
         {
-          name: 'Menu item group',
-          description:
-            'Combines a number of ‘menu items’ and adds an optional title and divider at the bottom',
-          component: ['Text Block', 'Icon'],
-          optional: true,
+          title: 'Menu',
+          summary:
+            'The menu contains one required element and three optional elements.',
+          rows: [
+            {
+              name: 'Menu item group',
+              description:
+                'Combines a number of ‘menu items’ and adds an optional title and divider at the bottom',
+              component: ['Text Block', 'Icon'],
+              optional: true,
+            },
+            {
+              name: 'Title',
+              description: 'Title of the menu item group',
+              component: ['Text Block', 'Icon'],
+              optional: true,
+            },
+            {
+              name: 'Menu item',
+              description: 'Includes a label and an icon',
+              component: ['Text Block', 'Icon', 'Block', 'Link'],
+              optional: undefined,
+            },
+            {
+              name: 'Menu divider',
+              description:
+                'Add as the last element, between a menu group or between menu items',
+              component: ['Divider'],
+              optional: true,
+            },
+          ],
+          media: getIllustrationComponent(
+            'components/menu/menu-anatomy-illustration',
+            {viewBox: '0 0 1600 900'},
+          ),
         },
         {
-          name: 'Title',
-          description: 'Title of the menu item group.',
-          component: ['Text Block', 'Icon'],
-          optional: true,
-        },
-        {
-          name: 'Menu item',
-          description: 'Includes a label and an icon.',
-          component: ['Text Block', 'Icon', 'Block', 'Link'],
-          optional: undefined,
-        },
-        {
-          name: 'Menu divider',
-          description:
-            'Add as the last element, between a menu group or between menu items',
-          component: ['Divider'],
-          optional: true,
+          title: 'Sub menu',
+          summary:
+            'The sub menu contains three required elements and one optional element.',
+          rows: [
+            {
+              name: 'Primary menu',
+              description: 'Top-level menu',
+              component: ['Menu'],
+            },
+            {
+              name: 'Secondary menu',
+              description: 'Sub-menu',
+              component: ['Unordered list'],
+            },
+            {
+              name: 'Sub menu Item',
+              description: 'Label of the sub menu item',
+              component: ['Text Block', 'Icon', 'Block', 'Link'],
+            },
+            {
+              name: 'Indicator icon',
+              description: 'Trailing icon of the sub menu item',
+              component: ['Icon'],
+              optional: true,
+            },
+          ],
+          media: getIllustrationComponent('components/menu/sub-menu-anatomy', {
+            viewBox: '0 0 1600 900',
+          }),
         },
       ],
-      media: getIllustrationComponent(
-        'components/menu/menu-anatomy-illustration',
-        {viewBox: '0 0 1600 900'},
-      ),
+      rows: [],
     }}
     options={{
       introduction: 'The menu has options for different use cases:',
@@ -185,7 +241,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Orientation',
           description: `
-              Display the menu horizontally or vertically.
+          Display the menu and sub menu horizontally or vertically.
             `,
           media: getIllustrationComponent(
             'components/menu/menu-options-orientation-illustration',
@@ -214,7 +270,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icons (leading & trailing)',
           description:
-            'Add an icon to a menu item or menu item group title. Icons can be positioned either before (leading) or after (trailing) the label.',
+            'Add an icon to a menu item, sub menu item, or menu item group title. Icons can be positioned either before (leading) or after (trailing) the label.',
           media: getIllustrationComponent(
             'components/menu/menu-options-icons-illustration',
           ),
@@ -225,21 +281,22 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             <>
               <UnorderedList markerAlign="start">
                 <>
-                  <Mono>Center</Mono>: Centres the menu item label and icons
+                  <Mono>Center</Mono>: Centres the menu item and sub menu item
+                  label and icon
                 </>
                 <>
-                  <Mono>Start</Mono>: Aligns the Menu item label and icons to
-                  the left
+                  <Mono>Start</Mono>: Aligns the menu item and sub menu item
+                  label and icons to the left
                 </>
                 <>
-                  <Mono>End</Mono>: Aligns the Menu item label and icons to the
-                  right
+                  <Mono>End</Mono>: Aligns the menu item and sub menu item label
+                  and icons to the right
                 </>
               </UnorderedList>
               <InlineMessage role="region" aria-label="note">
-                Default value depends on the <Mono>vertical</Mono> prop. When
-                set to ‘true’, the value is set to MenuItemAlign.Start. When set
-                to ‘false’, the value is set to MenuAlign.Center.
+                Default value depends on the vertical prop. When set to ‘true’,
+                the value is set to MenuItemAlign.Start. When set to ‘false’,
+                the value is set to MenuAlign.Center.
               </InlineMessage>
             </>
           ) as any,
@@ -250,7 +307,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Size',
           description:
-            'Menu items come in small, medium and large. Menu item labels, icons and the menu container change size. The menu matches the heights of the three button sizes, so they align when used together.',
+            'Menu items and sub menu itms come in small, medium and large. Labels, icons and the menu container change size. The menu matches the heights of the three button sizes, so they align when used together.',
           media: getIllustrationComponent(
             'components/menu/menu-options-size-illustration',
           ),
@@ -285,11 +342,18 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             'components/menu/menu-options-styles-illustration',
           ),
         },
+        {
+          title: 'Sub menu trigger',
+          description:
+            'A sub menu can be triggered to be open or closed via click.',
+          media: getIllustrationComponent('components/menu/sub-menu-trigger'),
+        },
       ],
     }}
     states={{
       introduction:
         'The menu has the following states. By default, a menu has one menu item in a selected state.',
+      layout: '3-span',
       cards: [
         {
           title: 'Base',
@@ -364,7 +428,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Transitions',
           description:
-            'When the user hovers over a menu item, the style transitions from one state to another.hen the user hovers over a Menu item, the style transitions from one state to another.',
+            'When the user hovers over a menu item, the style transitions from one state to another.',
           media: getIllustrationComponent(
             'components/menu/menu-behaviours-transitions-illustration',
           ),
@@ -384,11 +448,42 @@ const MenuComponent = (layoutProps: LayoutProps) => (
             'components/menu/menu-behaviours-overflow-illustration',
           ),
         },
+        {
+          title: 'Sub menu item toggle',
+          description: (
+            <>
+              Menu items with a sub menu attributed to them toggle the sub menu
+              open or closed.
+              <br />
+              <br />
+              The sub menu is opened by a script when the user activates the
+              top-level item and closed when the focus leaves the sub menu.
+            </>
+          ),
+          media: getIllustrationComponent('components/menu/toggle-sub-menu'),
+        },
       ],
     }}
     usage={{
       introduction: 'Here’s how and when to use the menu:',
       cards: [
+        {
+          description:
+            'Write menu item labels in sentence case to help with scannability and legibility.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent(
+            'components/menu/menu-do-03-illustration',
+          ),
+        },
+
+        {
+          description:
+            'Avoid long menu item labels. Keep them short, clear and fully visible.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent(
+            'components/menu/menu-dont-03-illustration',
+          ),
+        },
         {
           description:
             'Use a menu for navigating to different top-level sections or subsections.',
@@ -398,7 +493,8 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          description: 'Use a menu to open content panes within a page.',
+          description:
+            'Avoid using a menu to open content panes within a page. Menus are intended for navigation, and not supplementary content.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/menu/menu-dont-01-illustration',
@@ -413,27 +509,21 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          description:
-            'Keep all menu items the same size (e.g. small, medium or large). This helps ensure they have equal importance.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/menu/menu-dont-02-illustration',
+          description: (
+            <>
+              Use a sub menu to display multiple levels of navigational items of
+              a website&apos;s sub-page hierarchy in a semantic way, using ul
+              and li, meeting the latest{' '}
+              <Link
+                href="https://www.w3.org/WAI/tutorials/menus/flyout/"
+                target="_blank"
+              >
+                WAI-ARIA standards.
+              </Link>
+            </>
           ),
-        },
-        {
-          description:
-            'Write menu item labels in sentence case to help with scannability and legibility.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/menu/menu-do-03-illustration',
-          ),
-        },
-        {
-          description: 'Keep menu item labels short, clear and fully visible.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/menu/menu-dont-03-illustration',
-          ),
+          media: getIllustrationComponent('components/menu/do-01'),
         },
       ],
     }}
@@ -441,10 +531,13 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       introduction: (
         <>
           The menu implements the latest{' '}
-          <Link href="https://www.w3.org/WAI/tutorials/menus/">
+          <Link href="https://www.w3.org/WAI/tutorials/menus/" target="_blank">
             WAI-ARIA Menu specifications.
           </Link>
-          .
+          <br />
+          <br />
+          Indicate navigation menu items with sub menus visually and using
+          markup.
         </>
       ),
       focusOrder: {
@@ -452,14 +545,15 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         tableRows: [
           {
             order: 1,
-            element: 'Menu item',
-            role: 'Focusses to the first menu item in the menu',
+            element: 'Menu item or sub menu item',
+            role:
+              'Focusses to the first menu item or sub menu item in the menu',
           },
           {
             order: 2,
-            element: 'Menu item',
+            element: 'Menu item or sub menu item',
             role:
-              'Focusses to the next menu item (if vertical orientation - item below. If horizontal orientation - item to the right)',
+              'Focusses to the next menu item or sub menu item (if vertical orientation - item below and if horizontal orientation - item to the right)',
           },
         ],
       },
@@ -469,16 +563,16 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Tab'],
             description:
-              'When focus is outside the menu, moves focus to the first menu item. If focus is on a menu item, moves focus to the next menu item',
+              'When focus is outside the menu, moves focus to the first menu item or sub menu item. If focus is on a menu item or sub menu item, moves focus to the next item',
           },
           {
             command: ['Shift', 'Tab'],
-            description: 'Moves focus to previous menu item',
+            description: 'Moves focus to previous menu item, or sub menu item',
           },
           {
             command: ['Return or Space'],
             description:
-              'Activates the menu item if it was not already selected',
+              'Activates the menu item, or sub menu item (if not already selected)',
           },
         ],
       },
@@ -554,7 +648,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
         'The rendered menu is built using a native HTML nav element so information can be crawled and indexed by search engines. Give navigational items clear, descriptive titles to allow crawlers to correctly identify content.',
     }}
     componentAPI={{
-      introduction: `There are props on the four components that combine to form the menu component (menu, menu item group, menu item, menu divider).`,
+      introduction: `There are props on the four components that combine to form the menu component (menu item group, sub menu, menu item, and menu divider).`,
       components: [
         {
           title: 'Menu',
@@ -583,10 +677,26 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               default: 'start',
               description: `Defines the alignment of the menu items`,
             },
+            {
+              name: 'align',
+              type: "'start' | 'end' | 'center'| 'spaceBetween'",
+              default: 'start',
+              description: (
+                <>
+                  Defines the alignment of the menu items.
+                  <br />
+                  <br />
+                  spaceBetween set space between the text and indicatorIcon.
+                  <br />
+                  <br />
+                  When spaceBetween is applied, text-align will default to left.
+                </>
+              ),
+            },
           ],
           overridesRows: [
             {
-              attribute: 'menu.spaceInline',
+              attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space020',
               description: `Overrides the space between menu items`,
@@ -617,37 +727,37 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'menuGroup.title.typographyPreset',
+              attribute: 'title.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityHeading030',
               description: `Overrides the typographyPreset of the title`,
             },
             {
-              attribute: 'menuGroup.title.stylePreset',
+              attribute: 'title.stylePreset',
               type: 'MQ<string>',
               default: 'inkSubtle',
               description: `Overrides the stylePreset of the title`,
             },
             {
-              attribute: 'menuGroup.title.spaceInline',
+              attribute: 'title.spaceInline',
               type: 'MQ<string>',
               default: 'space050',
               description: `Overrides the space between the title and the first menu item`,
             },
             {
-              attribute: 'menuGroup.title.spaceInset',
+              attribute: 'title.spaceInset',
               type: 'MQ<string>',
               default: 'space050',
               description: `Overrides the indentation of the title`,
             },
             {
-              attribute: 'menuGroup.spaceInline',
+              attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space050',
               description: `Defines the space between each menuGroup`,
             },
             {
-              attribute: 'menuGroup.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               description: `Overrides the stylePreset of the menuGroup`,
             },
@@ -703,43 +813,28 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'menuItem.vertical.minHeight',
+              attribute: 'minHeight',
               type: 'MQ<string>',
               default: 'sizing080',
               description: `Overrides the minHeight of the menu item`,
             },
             {
-              attribute: 'menuItem.horizontal.minHeight',
-              type: 'MQ<string>',
-              default: 'sizing080',
-              description: `Overrides the minHeight of the menu item`,
-            },
-            {
-              attribute: 'menuItemIcon.vertical.iconSize',
+              attribute: 'iconSize',
               type: 'MQ<string>',
               default: 'iconSize020',
               description: `Overrides the iconSize of the menu item`,
             },
             {
-              attribute: 'menuItemIcon.horizontal.iconSize',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
-              default: 'iconSize020',
-              description: `Overrides the iconSize of the menu item`,
-            },
-            {
-              attribute: 'menuItem.vertical.stylePreset',
-              type: 'MQ<string>',
-              default: 'menuItemVertical',
+              default: [
+                'horizontal: menuItemHorizontal',
+                'vertical: menuItemVertical',
+              ],
               description: `Overrides the stylePreset of the icon, label and background of the menu item`,
             },
             {
-              attribute: 'menuItem.horizontal.stylePreset',
-              type: 'MQ<string>',
-              default: 'menuItemHorizontal',
-              description: `Overrides the stylePreset of the icon, label and background of the menu item`,
-            },
-            {
-              attribute: 'menuItem.vertical.transitionPreset',
+              attribute: 'transitionPreset',
               type: 'TransitionToken | TransitionToken[]',
               default: [
                 'backgroundColorChange',
@@ -749,35 +844,14 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               description: `Overrides the transitionPreset of the menu item`,
             },
             {
-              attribute: 'menuItem.horizontal.transitionPreset',
-              type: 'TransitionToken | TransitionToken[]',
-              default: [
-                'backgroundColorChange',
-                'borderColorChange',
-                'fontColorChange',
-              ],
-              description: `Overrides the transitionPreset of the menu item`,
-            },
-            {
-              attribute: 'menuItem.vertical.spaceInline',
+              attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space020',
               description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
             },
+
             {
-              attribute: 'menuItem.horizontal.spaceInline',
-              type: 'MQ<string>',
-              default: 'space020',
-              description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
-            },
-            {
-              attribute: 'menuItem.vertical.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInsetSquish030',
-              description: `Overrides the spaceInset of the Menu Item`,
-            },
-            {
-              attribute: 'menuItem.horizontal.spaceInset',
+              attribute: 'spaceInset',
               type: 'MQ<string>',
               default: 'spaceInsetSquish030',
               description: `Overrides the spaceInset of the Menu Item`,
@@ -799,6 +873,132 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               default: 'divider',
               description: `Overrides the style preset of the menu divider`,
             },
+          ],
+        },
+        {
+          title: 'Sub menu',
+          propsRows: [
+            {
+              name: 'children',
+              type: "Exclude<React.ReactNode, 'undefined'>",
+              required: true,
+              description: `	
+              A collection (array, component, JSX element) of menu group, menu items, menu group divider, and sub menu components.`,
+            },
+            {
+              name: 'href',
+              type: 'string',
+              required: true,
+              description: `If provided, renders the menu item as a link`,
+            },
+            {
+              name: 'title',
+              type: 'React.ReactNode',
+              description: 'Content of the menuSub',
+            },
+            {
+              name: 'defaultExpanded',
+              type: 'string',
+              description:
+                'Determines if the sub menu is opened or closed (uncontrolled). If true, the sub menu is visible.',
+            },
+            {
+              name: 'expanded',
+              type: 'boolean',
+              required: false,
+              description:
+                'Determines if the sub menu is opened or closed (controlled). If true, the sub menu is visible.',
+            },
+            {
+              name: 'onClick',
+              type: '(expanded: boolean) => void',
+              description: 'Toggle sub menus opened or closed.',
+            },
+            {
+              name: 'selected',
+              type: 'boolean',
+              description: 'Set the menu sub to the selected state',
+            },
+          ],
+          propsFooter: (
+            <>
+              <InlineMessage
+                role="region"
+                aria-label="props menu note"
+                icon={infoIcon}
+                overrides={{marginBlockEnd: 'space050'}}
+              >
+                Please refer to the menu item for details of the props and other
+                overrides.
+              </InlineMessage>
+            </>
+          ),
+          overridesRows: [
+            {
+              attribute: 'minHeight',
+              type: 'MQ<string>',
+              default: 'sizing080',
+              description: `If provided, this overrides the minHeight of the MenuSub.`,
+            },
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              default: [
+                'horizontal: menuSubItemHorizontal',
+                'vertical: menuSubItemVertical',
+              ],
+              description: `If provided, this overrides the MenuSub styling.`,
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'TransitionToken | TransitionToken[]',
+              default: [
+                'backgroundColorChange',
+                'borderColorChange',
+                'fontColorChange',
+              ],
+              description: `Overrides the transitionPreset of the menu item`,
+            },
+            {
+              attribute: 'spaceInline',
+              type: 'MQ<string>',
+              default: 'space020',
+              description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
+            },
+            {
+              attribute: 'spaceInset',
+              type: 'MQ<string>',
+              default: 'space000',
+              description: `Overrides the spaceInset of the Menu Item`,
+            },
+            {
+              attribute: 'indicatorIcon',
+              type: 'Override<MenuSubIconProps>',
+              description: `	
+              If provided, this overrides the indicatorIcon.`,
+            },
+            {
+              attribute: 'indicatorIcon.size',
+              type: 'MQ<string>',
+              default: 'iconSize020',
+              description: `If provided, this overrides the iconSize of the indicatorIcon.`,
+            },
+            {
+              attribute: 'indicatorIcon.stylePreset',
+              type: 'MQ<string>',
+              description: `If provided, this overrides the indicatorIcon styling.`,
+            },
+            {
+              attribute: 'list.stylePreset',
+              type: 'MQ<string>',
+              default: 'menuSub',
+              description: `If provided, this overrides the MenuSub list styling.`,
+            },
+            ...getLogicalPropsTable(undefined, 'list'),
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingBlock: 'space030',
+              paddingInline: 'space040',
+            }),
           ],
         },
       ],
