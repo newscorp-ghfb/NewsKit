@@ -5,6 +5,8 @@ import {
   UncompiledTheme,
   NewsKitProvider,
   compileTheme,
+  composeInstrumentationMiddleware,
+  InstrumentationEvent,
 } from 'newskit';
 import App, {AppContext} from 'next/app';
 import {HeadNextSeo} from '../components/head-next-seo/head-next-seo';
@@ -12,6 +14,7 @@ import {PageLoadInstrumentation} from '../components/page-load-instrumentation';
 import {ThemeMode} from '../context';
 import {docsThemeLight, docsThemeDark} from '../theme/doc-theme';
 import {ThemeProviderSite} from '../components/theme-provider-site';
+import {transformEventObject} from '../utils/instrumentation';
 
 const DARK_MEDIA_QUERY = '(prefers-color-scheme: dark)';
 const STORAGE_KEY_NAME = 'newskit-docs-theme';
@@ -27,6 +30,21 @@ interface State {
   themeMode: string;
   theme: UncompiledTheme;
 }
+
+const tealiumHandler = composeInstrumentationMiddleware(
+  instrumentationHandlers.createTealiumHandler(),
+  (events: InstrumentationEvent[]) => events.map(transformEventObject),
+);
+const tealiumTrackHandler = composeInstrumentationMiddleware(
+  instrumentationHandlers.createTealiumTrackHandler(),
+  (events: InstrumentationEvent[]) => events.map(transformEventObject),
+);
+
+const handlers = [
+  instrumentationHandlers.createConsoleHandler(),
+  tealiumHandler,
+  tealiumTrackHandler,
+];
 
 export default class MyApp extends App<Props, State> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -124,12 +142,6 @@ export default class MyApp extends App<Props, State> {
     const {Component, pageProps, path} = this.props;
     const {theme, themeMode} = this.state as State;
     const pathTokens = path.split('/').filter(Boolean);
-
-    const handlers = [
-      instrumentationHandlers.createConsoleHandler(),
-      instrumentationHandlers.createTealiumHandler(),
-      instrumentationHandlers.createTealiumTrackHandler(),
-    ];
 
     return (
       <>

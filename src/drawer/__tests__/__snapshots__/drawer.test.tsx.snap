@@ -445,7 +445,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -464,7 +464,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -963,7 +963,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 <div>
     <div>
       <div
-        class="emotion-0 nk-overlay-enter-done"
+        class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
         data-testid="overlay"
       />
       <div
@@ -982,7 +982,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
         <div
           aria-hidden="false"
           aria-modal="true"
-          class="nk-drawer-enter-done emotion-1"
+          class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
           data-testid="inlineDrawer"
           role="dialog"
         >
@@ -1487,7 +1487,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 <div>
     <div>
       <div
-        class="emotion-0 nk-overlay-enter-done"
+        class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
         data-testid="overlay"
       />
       <div
@@ -1506,7 +1506,7 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
         <div
           aria-hidden="false"
           aria-modal="true"
-          class="nk-drawer-enter-done emotion-1"
+          class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
           data-testid="inlineDrawer"
           role="dialog"
         >
@@ -2009,7 +2009,7 @@ exports[`Drawer render inline-drawer 1`] = `
 <div>
     <div>
       <div
-        class="emotion-0 nk-overlay-enter-done"
+        class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
         data-testid="overlay"
       />
       <div
@@ -2028,7 +2028,7 @@ exports[`Drawer render inline-drawer 1`] = `
         <div
           aria-hidden="false"
           aria-modal="true"
-          class="nk-drawer-enter-done emotion-1"
+          class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
           data-testid="inlineDrawer"
           role="dialog"
         >
@@ -2955,7 +2955,7 @@ exports[`Drawer renders default 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -2974,7 +2974,7 @@ exports[`Drawer renders default 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -3410,7 +3410,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -3429,7 +3429,7 @@ exports[`Drawer renders drawer with overrides 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -3956,7 +3956,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -3975,7 +3975,7 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
           <div
             aria-hidden="false"
             aria-modal="false"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -4493,7 +4493,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -4513,7 +4513,7 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
             aria-hidden="false"
             aria-labelledby="headerLabel"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -4992,7 +4992,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -5012,7 +5012,7 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
             aria-describedby="description purpose"
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -5518,7 +5518,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -5537,7 +5537,7 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -6047,7 +6047,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -6066,7 +6066,7 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -6576,7 +6576,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -6595,7 +6595,7 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -7105,7 +7105,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -7124,7 +7124,7 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -7500,7 +7500,7 @@ exports[`Drawer renders without close button 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -7519,7 +7519,7 @@ exports[`Drawer renders without close button 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -7981,7 +7981,7 @@ exports[`Drawer renders without header 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -8000,7 +8000,7 @@ exports[`Drawer renders without header 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -8339,7 +8339,7 @@ exports[`Drawer renders without header and close 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -8358,7 +8358,7 @@ exports[`Drawer renders without header and close 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -8765,7 +8765,7 @@ exports[`Drawer renders without overlay 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-0"
+            class="nk-drawer-enter-done emotion-0 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >
@@ -9256,7 +9256,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
     >
       <div>
         <div
-          class="emotion-0 nk-overlay-enter-done"
+          class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
           data-testid="overlay"
         />
         <div
@@ -9275,7 +9275,7 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
           <div
             aria-hidden="false"
             aria-modal="true"
-            class="nk-drawer-enter-done emotion-1"
+            class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
             data-testid="drawer"
             role="dialog"
           >

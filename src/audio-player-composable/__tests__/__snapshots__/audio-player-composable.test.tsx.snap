@@ -1663,7 +1663,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
         tabindex="-1"
       >
         <div
-          class="emotion-4"
+          class="emotion-4 nk-popover-enter-done"
           data-testid="floating-element-panel"
           tabindex="-1"
         >
@@ -2121,7 +2121,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
         tabindex="-1"
       >
         <div
-          class="emotion-1"
+          class="emotion-1 nk-popover-enter-done"
           data-testid="floating-element-panel"
           tabindex="-1"
         >
@@ -2681,7 +2681,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
         tabindex="-1"
       >
         <div
-          class="emotion-4"
+          class="emotion-4 nk-popover-enter-done"
           data-testid="floating-element-panel"
           tabindex="-1"
         >
