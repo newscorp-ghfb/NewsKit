@@ -266,7 +266,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
           description:
             'Use ordered lists to break up blocks of sequential information into manageable numbered items.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/orderedlist/usage/do-01'),
+          media: getIllustrationComponent('components/orderedlist/usage/do-02'),
         },
       ],
     }}

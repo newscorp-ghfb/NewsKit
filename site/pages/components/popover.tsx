@@ -253,11 +253,11 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               non-critical information and shouldn’t prevent a user from
               performing other tasks on the screen. If you’re displaying
               critical information, consider a{' '}
-              <Link href="/components/modal/">Modal</Link> instead.
+              <Link href="/components/modal/">modal</Link> instead.
             </>
           ),
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/popover/usage/dont1'),
+          media: getIllustrationComponent('components/popover/usage/dont-01'),
         },
 
         {
@@ -272,7 +272,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           description:
             'Rich text formatting (e.g. bold, italics, icons) won’t be conveyed to screen reader users.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/popover/usage/dont2'),
+          media: getIllustrationComponent('components/popover/usage/dont-03'),
         },
 
         {
@@ -287,14 +287,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           description:
             'Avoid covering the element that the popover is attributed to, as it will lose its context.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/popover/usage/dont3'),
-        },
-        {
-          title: 'Don’t hide elements required across breakpoints',
-          description:
-            'Have equivalent functionality for all breakpoints (e.g. a drawer for top-level navigation items on xs or sm breakpoints where space is limited).',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/popover/usage/dont4'),
+          media: getIllustrationComponent('components/popover/usage/dont-02'),
         },
       ],
     }}

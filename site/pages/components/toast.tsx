@@ -297,54 +297,42 @@ const ToastComponent = (layoutProps: LayoutProps) => (
           description:
             'Use a toast to communicate confirmation of an action or a low-priority message that doesn’t need to completely interrupt the user’s experience.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/toast/toast-do-1-illustration',
-          ),
+          media: getIllustrationComponent('components/toast/usage/do-01'),
         },
         {
           title: 'Don’t place a toast over navigation',
           description:
             'Avoid placing a toast over navigation as this may block user interaction.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/toast/toast-dont-1-illustration',
-          ),
+          media: getIllustrationComponent('components/toast/usage/dont-01'),
         },
         {
           title: 'Do avoid clashes with other components',
           description:
             'Consider the placement of a toast in relation to other user feedback components (e.g. banners) to avoid clashes.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/toast/toast-do-2-illustration',
-          ),
+          media: getIllustrationComponent('components/toast/usage/do-02'),
         },
         {
           title: 'Don’t use toasts for multiple actions',
           description:
             'Avoid displaying more than one action in a toast. Having more than one action to choose from can make it difficult for the user to decide to do next.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/toast/toast-dont-2-illustration',
-          ),
+          media: getIllustrationComponent('components/toast/usage/dont-02'),
         },
         {
           title: 'Do offset from the edge of the screen',
           description:
             'Always have offset (space) from the edge of the screen to the toast.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/toast/toast-do-3-illustration',
-          ),
+          media: getIllustrationComponent('components/toast/usage/do-03'),
         },
         {
           title: 'Don’t show multiple toasts',
           description:
             'Avoid displaying more than one toast where possible. Where applicable, update the content of the current toast instead (e.g. “Article saved. ‘Undo’” to “Article removed”).',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/toast/toast-dont-3-illustration',
-          ),
+          media: getIllustrationComponent('components/toast/usage/dont-03'),
         },
       ],
     }}

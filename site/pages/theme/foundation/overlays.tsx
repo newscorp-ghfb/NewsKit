@@ -94,14 +94,14 @@ const DO_AND_DONT = [
     ),
 
     kind: UsageKind.DO,
-    media: getIllustrationComponent('theme/overlays/do'),
+    media: getIllustrationComponent('theme/overlays/usage/do-01'),
   },
   {
     title: 'Don’t obscure important UI elements',
     description:
       'Overlays shouldn’t obscure the legibility of important UI elements, like text and icons.',
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('theme/overlays/dont'),
+    media: getIllustrationComponent('theme/overlays/usage/dont-01'),
   },
 ];
 

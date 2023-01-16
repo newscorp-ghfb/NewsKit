@@ -744,13 +744,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Do consider text field width',
           description: (
             <>
-              The width of the Text Field should be proportional to the expected
-              user input. For example, when capturing date of birth, the format
-              should be split up into day/month/year i.e DD - MM - YYYY using
-              multiple Text Fields, as this allows users to focus on inputting a
-              specific value, reducing cognitive load. Using identical input
-              widths for all Text Inputs in your forms will make them visually
-              pleasing, but will be harder for a user to complete.
+              The width of the text field should be proportional to the expected
+              user input.
             </>
           ),
           kind: UsageKind.DO,
@@ -770,7 +765,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           description:
             'Use the appropriate input field to help users enter information in the right format and avoid mistakes (e.g. use a password input field for users to input their password).',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do-02'),
+          media: getIllustrationComponent('components/text-field/usage/do-03'),
         },
         {
           title: 'Don’t truncate or wrap input label text',
@@ -786,7 +781,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           description:
             'Text fields should have a label associated to give users context of what the text area represents.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do-03'),
+          media: getIllustrationComponent('components/text-field/usage/do-02'),
         },
         {
           title: 'Don’t validate prematurely',

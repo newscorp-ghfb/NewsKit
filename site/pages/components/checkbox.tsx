@@ -603,7 +603,7 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Do put labels on the right of grouped checkboxes',
           description:
-            'When grouping multiple checkboxes, put the label on the right (end) so that, when used together in forms, checkbox inputs align vertically. This makes them easier to find, especially for users of screen magnifiers.',
+            'Align checkbox inputs vertically. This makes them easier to find, especially for users of screen magnifiers.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-4'),
         },

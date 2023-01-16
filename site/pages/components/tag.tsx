@@ -461,13 +461,6 @@ const TagComponent = (layoutProps: LayoutProps) => (
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tag/usage/dont-02'),
         },
-        {
-          title: 'Do make sure gap bettween each tags should be 8px',
-          description:
-            'When tags are to be placed inline, they should maintain at least an 8px gap between the two (or more) tags to allow for sufficient clearance around each tag.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/tag/usage/do-03'),
-        },
       ],
     }}
     accessibility={{

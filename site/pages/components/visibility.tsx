@@ -142,15 +142,6 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       introduction="Here’s how and when to use visible, hidden, and ScreenReaderOnly."
       cards={[
         {
-          title: 'Do use visible or hidden',
-          description:
-            'Use ‘Visible’ or ‘Hidden’ where SEO is a consideration, to avoid layout shift.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/visibility/usage/do-01', {
-            viewBox: '0 0 1490 839',
-          }),
-        },
-        {
           title: 'Don’t hide elements required across breakpoints',
           description:
             'Have equivalent functionality for all breakpoints (e.g. a drawer for top-level navigation items on xs or sm breakpoints where space is limited).',

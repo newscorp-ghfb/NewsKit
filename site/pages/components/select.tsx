@@ -737,7 +737,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Don’t have an empty select on page load',
           description:
-            'If a default option isn’t appropriate, use a placeholder (e.g. ‘select an option’)..',
+            'If a default option isn’t appropriate, use a placeholder (e.g. ‘select an option’).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/select/usage/dont-3'),
         },

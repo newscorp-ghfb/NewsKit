@@ -443,7 +443,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
           description:
             'When placing two or more buttons inline, make sure they are a sufficient size or have spacing between them to avoid users accidentally hitting the wrong button.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/button/usage/do1'),
+          media: getIllustrationComponent('components/button/usage/do-01'),
         },
         {
           title: 'Don’t use full width-buttons in wide containers',
@@ -462,7 +462,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Don’t separate related buttons',
           description:
-            'Place related buttons next to each other so associated actions are relative, and to reduce cognitive load..',
+            'Place related buttons next to each other so associated actions are relative, and to reduce cognitive load.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont2'),
         },

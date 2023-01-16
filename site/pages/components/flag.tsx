@@ -238,7 +238,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
         {
           title: "Don't make flags interactive",
           description: 'Use flags as a non-interactive status indicator.',
-          kind: UsageKind.DO,
+          kind: UsageKind.DONT,
           media: getIllustrationComponent('components/flag/usage/do-02'),
         },
       ],
