@@ -1288,8 +1288,6 @@ workflows:
           name: eks_kubectl_deploy_dev
           environment: pr
           context: ncu-newskit-site-dev
-          requires:
-            - eks_flux_deploy_dev
       - no_visual_changes:
           type: approval
           requires:
