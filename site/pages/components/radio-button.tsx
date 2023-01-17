@@ -268,8 +268,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
                 aria-label="Radio label position"
               >
                 You can add a label on the left (start) of a radio button using
-                the
-                <InlineCode>labelPosition</InlineCode> prop.
+                the <InlineCode>labelPosition</InlineCode> prop.
               </InlineMessage>
             </>
           ),
@@ -293,15 +292,6 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
               <Link href="/components/fieldset/">fieldset</Link>, along with
               labels and assistive text. Add a title to the grouped elements
               using the legend.
-              <br />
-              <br />
-              The Fieldset can also support other selection controls (inputs)
-              such as the{' '}
-              <Link href="/components/radio-button/">FormInput</Link>, FormInput
-              Switch, and FormInput TextField.
-              <br />
-              <br />
-              For more information, please refer to the Fieldset component.
             </>
           ),
           media: getIllustrationComponent(
@@ -747,8 +737,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
             description: (
               <>
                 If the radio button with focus isn’t checked, changes the state
-                to checked. Otherwise, does nothing
-                <InlineCode>checked</InlineCode>, otherwise, does nothing.
+                to <InlineCode>checked</InlineCode>, Otherwise, does nothing.
                 <Block spaceStack="space030" />
                 <InlineMessage
                   icon={infoIcon}
@@ -816,7 +805,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         //   overridesRows: commonOverridesRows,
         // },
         {
-          title: 'RadioButton',
+          title: 'FormInput Radio Button',
           summary: `The Radio Button has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.`,
           propsRows: [
             {
