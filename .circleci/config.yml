@@ -991,7 +991,7 @@ jobs:
             echo "I am now going to export EKS_AWS_ACCESS_KEY_ID"
             export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
             echo "I am now going to export EKS_AWS_SECRET_ACCESS_KEY"
-            export $EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+            export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
             echo "I am now going to export AWS_DEFAULT_REGION"
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             echo "I am now going to export CLUSTER_NAME=ceng-eks"
@@ -1008,9 +1008,8 @@ jobs:
             echo "I am now running  nukubectl...will this"
             (nukubectl || true) | ((export || true) || grep AWS_ > auth.env)
             echo "end of test" 
-            grep declare auth.env | sed -e 's/-x//g'
             echo "I am now running-egrep $(egrep -v '^#' auth.env | xargs)"
-            export $(grep declare auth.env | sed -e 's/-x//g') $(egrep -v '^#' auth.env | xargs)
+            export  $(egrep -v '^#' auth.env | xargs)
             echo "I am now running rm auth.env"
             rm auth.env
             echo "I am now cd-ing into flux"
