@@ -1002,12 +1002,12 @@ jobs:
             echo "export VERSION=${VERSION}" >> $BASH_ENV
             echo "i am now running kubectl config view "
             kubectl config view 
-            echo "I am now running  nukubectl | grep "export AWS_" > auth2.env"
-            nukubectl | grep "export AWS_" > auth2.env
-            echo "I am now running $(egrep -v '^#' auth2.env | xargs)"
-            export $(egrep -v '^#' auth2.env | xargs)
-            echo "I am now running   rm auth2.env"
-            rm auth2.env
+            echo "I am now running  nukubectl | grep "export AWS_" > auth.env"
+            nukubectl | grep "export AWS_" > auth.env
+            echo "I am now running $(egrep -v '^#' auth.env | xargs)"
+            export $(egrep -v '^#' auth.env | xargs)
+            echo "I am now running   rm auth.env"
+            rm auth.env
             
             echo "I am now cd-ing into flux"
             cd flux/<< parameters.environment >>/eks
