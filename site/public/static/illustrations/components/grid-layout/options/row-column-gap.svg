@@ -1,1 +1,109 @@
-<svg id="components-grid-layout-options-row-column-gap" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0"><rect style="fill:var(--color-illustrationBackground020)" width="1490" height="838"></rect><rect style="fill:var(--color-illustrationPalette040)" x="337" y="487" width="240" height="240" rx="20"></rect><rect style="fill:var(--color-illustrationPalette040)" x="337" y="199" width="240" height="240" rx="20"></rect><rect style="fill:var(--color-illustrationPalette040)" x="625" y="486" width="240" height="240" rx="20"></rect><rect style="fill:var(--color-illustrationPalette040)" x="913" y="486" width="240" height="240" rx="20"></rect><rect style="fill:var(--color-illustrationPalette040)" x="625" y="199" width="240" height="240" rx="20"></rect><rect style="fill:var(--color-illustrationPalette040)" x="913" y="199" width="240" height="240" rx="20"></rect><path style="fill:var(--color-green030)" opacity="0.6" d="M337 477L337 449L1153 449L1153 477L337 477Z"></path><path style="fill:var(--color-red020)" opacity="0.6" d="M587 199H615V439H587V199Z"></path><path style="fill:var(--color-red020)" opacity="0.6" d="M875 199H903V439H875V199Z"></path><path style="fill:var(--color-red020)" opacity="0.6" d="M587 487H615V727H587V487Z"></path><path style="fill:var(--color-red020)" opacity="0.6" d="M875 487H903V727H875V487Z"></path><path d="M625 179V155C625 143.954 616.046 135 605 135H597C585.954 135 577 143.954 577 155V179" stroke="#577FFB" stroke-width="3"></path><path d="M317 439L293 439C281.954 439 273 447.954 273 459L273 467C273 478.046 281.954 487 293 487L317 487" stroke="#577FFB" stroke-width="3"></path><path d="M889 135V111C889 99.9543 880.046 91 869 91H620C608.954 91 600 99.9543 600 111V135" stroke="#577FFB" stroke-width="3"></path><path d="M913 179V155C913 143.954 904.046 135 893 135H885C873.954 135 865 143.954 865 155V179" stroke="#577FFB" stroke-width="3"></path></svg>
+<svg
+  id="nksvg"
+  style="width: 100%; height: 100%"
+  width="1490"
+  height="838"
+  viewBox="0 0 1490 838"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="css-0"
+>
+  <rect
+    style="fill: var(--color-illustrationBackground020)"
+    width="1490"
+    height="838"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette040)"
+    x="337"
+    y="487"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette040)"
+    x="337"
+    y="199"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette040)"
+    x="625"
+    y="486"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette040)"
+    x="913"
+    y="486"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette040)"
+    x="625"
+    y="199"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette040)"
+    x="913"
+    y="199"
+    width="240"
+    height="240"
+    rx="20"
+  ></rect>
+  <path
+    style="fill: var(--color-green030)"
+    opacity="0.6"
+    d="M337 477L337 449L1153 449L1153 477L337 477Z"
+  ></path>
+  <path
+    style="fill: var(--color-red020)"
+    opacity="0.6"
+    d="M587 199H615V439H587V199Z"
+  ></path>
+  <path
+    style="fill: var(--color-red020)"
+    opacity="0.6"
+    d="M875 199H903V439H875V199Z"
+  ></path>
+  <path
+    style="fill: var(--color-red020)"
+    opacity="0.6"
+    d="M587 487H615V727H587V487Z"
+  ></path>
+  <path
+    style="fill: var(--color-red020)"
+    opacity="0.6"
+    d="M875 487H903V727H875V487Z"
+  ></path>
+  <path
+    d="M625 179V155C625 143.954 616.046 135 605 135H597C585.954 135 577 143.954 577 155V179"
+    stroke="#577FFB"
+    stroke-width="3"
+  ></path>
+  <path
+    d="M317 439L293 439C281.954 439 273 447.954 273 459L273 467C273 478.046 281.954 487 293 487L317 487"
+    stroke="#577FFB"
+    stroke-width="3"
+  ></path>
+  <path
+    d="M889 135V111C889 99.9543 880.046 91 869 91H620C608.954 91 600 99.9543 600 111V135"
+    stroke="#577FFB"
+    stroke-width="3"
+  ></path>
+  <path
+    d="M913 179V155C913 143.954 904.046 135 893 135H885C873.954 135 865 143.954 865 155V179"
+    stroke="#577FFB"
+    stroke-width="3"
+  ></path>
+</svg>

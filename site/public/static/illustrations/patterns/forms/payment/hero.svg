@@ -1,1 +1,119 @@
-<svg id="patterns-forms-payment-hero" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0"><g clip-path="url(#nk-683)"><rect style="fill:var(--color-illustrationBackground020)" width="1490" height="838"></rect><rect style="fill:var(--color-illustrationInterface040)" x="550.945" y="207" width="497.056" height="281.438" rx="22.6966"></rect><path style="fill:var(--color-illustrationInterface060)" d="M550.945 229.697C550.945 217.162 561.107 207 573.642 207H1025.3C1037.84 207 1048 217.162 1048 229.697V286.438H550.945V229.697Z"></path><g filter="url(#nk-684)"><rect style="fill:var(--color-illustrationInterface010)" x="442" y="347.719" width="497.056" height="281.438" rx="22.6966"></rect><rect style="fill:var(--color-illustrationInterface050)" x="501.012" y="453.258" width="133.91" height="70.3596" rx="11.3483"></rect><rect style="fill:var(--color-illustrationInterface050)" x="501.012" y="557.663" width="76.0337" height="19.2921" rx="9.64607"></rect><rect style="fill:var(--color-illustrationInterface050)" x="602.012" y="557.663" width="76.0337" height="19.2921" rx="9.64607"></rect><rect style="fill:var(--color-illustrationInterface050)" x="703.012" y="557.663" width="76.0337" height="19.2921" rx="9.64607"></rect><rect style="fill:var(--color-illustrationInterface050)" x="804.012" y="557.663" width="76.0337" height="19.2921" rx="9.64607"></rect></g></g><defs><filter id="nk-684" x="423.843" y="338.64" width="533.369" height="317.753" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="9.07865"></feOffset><feGaussianBlur stdDeviation="9.07865"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1437_29361"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1437_29361" result="shape"></feBlend></filter><clipPath id="nk-683"><rect style="fill:var(--color-white)" width="1490" height="838"></rect></clipPath></defs></svg>
+<svg
+  id="nksvg"
+  style="width: 100%; height: 100%"
+  width="1490"
+  height="838"
+  viewBox="0 0 1490 838"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="css-0"
+>
+  <g clip-path="url(#nk-683)">
+    <rect
+      style="fill: var(--color-illustrationBackground020)"
+      width="1490"
+      height="838"
+    ></rect>
+    <rect
+      style="fill: var(--color-illustrationInterface040)"
+      x="550.945"
+      y="207"
+      width="497.056"
+      height="281.438"
+      rx="22.6966"
+    ></rect>
+    <path
+      style="fill: var(--color-illustrationInterface060)"
+      d="M550.945 229.697C550.945 217.162 561.107 207 573.642 207H1025.3C1037.84 207 1048 217.162 1048 229.697V286.438H550.945V229.697Z"
+    ></path>
+    <g filter="url(#nk-684)">
+      <rect
+        style="fill: var(--color-illustrationInterface010)"
+        x="442"
+        y="347.719"
+        width="497.056"
+        height="281.438"
+        rx="22.6966"
+      ></rect>
+      <rect
+        style="fill: var(--color-illustrationInterface050)"
+        x="501.012"
+        y="453.258"
+        width="133.91"
+        height="70.3596"
+        rx="11.3483"
+      ></rect>
+      <rect
+        style="fill: var(--color-illustrationInterface050)"
+        x="501.012"
+        y="557.663"
+        width="76.0337"
+        height="19.2921"
+        rx="9.64607"
+      ></rect>
+      <rect
+        style="fill: var(--color-illustrationInterface050)"
+        x="602.012"
+        y="557.663"
+        width="76.0337"
+        height="19.2921"
+        rx="9.64607"
+      ></rect>
+      <rect
+        style="fill: var(--color-illustrationInterface050)"
+        x="703.012"
+        y="557.663"
+        width="76.0337"
+        height="19.2921"
+        rx="9.64607"
+      ></rect>
+      <rect
+        style="fill: var(--color-illustrationInterface050)"
+        x="804.012"
+        y="557.663"
+        width="76.0337"
+        height="19.2921"
+        rx="9.64607"
+      ></rect>
+    </g>
+  </g>
+  <defs>
+    <filter
+      id="nk-684"
+      x="423.843"
+      y="338.64"
+      width="533.369"
+      height="317.753"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      ></feColorMatrix>
+      <feOffset dy="9.07865"></feOffset>
+      <feGaussianBlur stdDeviation="9.07865"></feGaussianBlur>
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"
+      ></feColorMatrix>
+      <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow_1437_29361"
+      ></feBlend>
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_1437_29361"
+        result="shape"
+      ></feBlend>
+    </filter>
+    <clipPath id="nk-683">
+      <rect style="fill: var(--color-white)" width="1490" height="838"></rect>
+    </clipPath>
+  </defs>
+</svg>

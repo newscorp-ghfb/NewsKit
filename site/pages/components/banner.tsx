@@ -59,7 +59,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="banner"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
@@ -428,7 +428,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: 'There are no SEO considerations for this component.',
     }}
     componentAPI={{

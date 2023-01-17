@@ -23,8 +23,6 @@ import {getModalOverrides} from './utils';
 
 interface SelectPanelProps {
   isOpen: boolean;
-  width: number;
-  height: number;
   top: number;
   left: number;
   size: ButtonSelectSize;
@@ -36,6 +34,8 @@ interface SelectPanelProps {
   renderInModal: boolean;
   buttonRef: React.RefObject<HTMLButtonElement>;
   closeMenu: Function;
+  strategy: 'fixed' | 'absolute';
+  zIndex: string; // layer or zIndex as string
 }
 
 const DefaultModal = Modal;
@@ -82,8 +82,6 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
   (props, panelRef) => {
     const {
       isOpen,
-      width,
-      height,
       top,
       left,
       size,
@@ -92,6 +90,8 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       renderInModal,
       closeMenu,
       overrides,
+      strategy,
+      zIndex,
       ...restProps
     } = props;
 
@@ -133,6 +133,7 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           {screenReaderOnlyMessage}
           <StyledModalPanel
             data-testid="select-panel"
+            className="modal-panel"
             aria-describedby={listDescriptionId}
             ref={panelRef}
             {...restProps}
@@ -148,9 +149,6 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
       );
     }
 
-    const x = Math.floor(left);
-    const y = Math.floor((top || 0) + (height || 0));
-
     return (
       <>
         {screenReaderOnlyMessage}
@@ -158,15 +156,17 @@ export const SelectPanel = React.forwardRef<HTMLDivElement, SelectPanelProps>(
           $isOpen={isOpen}
           data-testid="select-panel"
           aria-describedby={isOpen ? listDescriptionId : undefined}
-          $width={width}
           $size={size}
           ref={panelRef}
           overrides={overrides?.panel}
+          zIndex={zIndex}
           {...restProps}
           style={{
             // inline styles are faster since emotion does not have to create a new css class
             // and apply it to the element on every scroll change
-            transform: `translate3d(${x}px, ${y}px, 0)`,
+            top: Math.round(top),
+            left: Math.round(left),
+            position: strategy,
           }}
         >
           {optionsAsChildren}

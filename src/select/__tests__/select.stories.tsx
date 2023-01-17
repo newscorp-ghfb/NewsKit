@@ -1352,44 +1352,6 @@ export const SelectVirtualizationNotFixedSize = () => {
   );
 };
 
-/**
-  PLEASE IGNORE THIS STORY
-  ITS JUST FOR TESTING AND WILL BE REMOVED BEFORE MERGE
- */
-
-const temp = Array.from(Array(200).keys()).map(v => String(v));
-
-export const StorySelectWithOverflowScroll = () => (
-  <div style={{height: '90vh', width: '100%', overflow: 'hidden'}}>
-    <div
-      style={{
-        height: '90vh',
-        position: 'relative',
-        overflow: 'auto',
-        border: '3px solid blue',
-        boxSizing: 'border-box',
-      }}
-    >
-      <div
-        style={{
-          padding: '75vh 0',
-          position: 'relative',
-          border: '3px solid red',
-          boxSizing: 'border-box',
-        }}
-      >
-        <Select virtualized={10000}>
-          {temp.map(v => (
-            <SelectOption key={v} value={v}>
-              {v}
-            </SelectOption>
-          ))}
-        </Select>
-      </div>
-    </div>
-  </div>
-);
-
 export default {
   title: 'Components/select',
   component: () => 'None',

@@ -20,7 +20,7 @@ export const StyledSwitchContainer = styled.div<
 
 export const StyledTrackIcon = styled.div<
   Pick<SwitchProps, 'size' | 'checked' | 'overrides' | 'state'> & {
-    justifyContent: 'start' | 'end';
+    justifyContent: 'flex-start' | 'flex-end';
   }
 >`
   display: flex;

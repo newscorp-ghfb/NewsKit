@@ -136,7 +136,7 @@ const latestCards = [
       src: 'static/about/latest-news-and-articles/news-ds-podcast-nick.png',
       alt: 'Card illustration',
     },
-    href:
+    buttonHref:
       'https://www.designsystemspodcast.com/episodes/episode/79799c42/47-nick-dorman-and-ellis-capon-from-news-uk-bridging-old-and-new-media-with-news-uks-design-system-newskit',
     description: (
       <LatestCard
@@ -154,7 +154,7 @@ const latestCards = [
         'static/about/latest-news-and-articles/news-zeroheight-podcast-geri.png',
       alt: 'Card illustration',
     },
-    href:
+    buttonHref:
       'https://open.spotify.com/episode/3mcQ3P2KEhTrDW8BjvNf2o?si=6fD_ElQERAmNaPlcR-7ouQ&nd=1',
     description: (
       <LatestCard
@@ -171,7 +171,7 @@ const latestCards = [
       src: 'static/about/latest-news-and-articles/news-dslondon-xin.png',
       alt: 'Card illustration',
     },
-    href: 'https://www.youtube.com/watch?v=Uz_n9B2rL0g&t=2387s',
+    buttonHref: 'https://www.youtube.com/watch?v=Uz_n9B2rL0g&t=2387s',
     description: (
       <LatestCard
         title="Video"
@@ -187,7 +187,7 @@ const latestCards = [
       src: 'static/about/latest-news-and-articles/news-wdc-geri.png',
       alt: 'Card illustration',
     },
-    href: 'https://www.youtube.com/watch?v=xYoNxYirdOY',
+    buttonHref: 'https://www.youtube.com/watch?v=xYoNxYirdOY',
     description: (
       <LatestCard
         title="Video"
@@ -203,7 +203,7 @@ const latestCards = [
       src: 'static/about/latest-news-and-articles/news-audioplayer-nick.png',
       alt: 'Card illustration',
     },
-    href:
+    buttonHref:
       'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
     description: (
       <LatestCard
@@ -220,7 +220,7 @@ const latestCards = [
       src: 'static/about/latest-news-and-articles/news-dslondon-luke-marco.png',
       alt: 'Card illustration',
     },
-    href: 'https://www.youtube.com/watch?v=fqh3dSsrmdI',
+    buttonHref: 'https://www.youtube.com/watch?v=fqh3dSsrmdI',
     description: (
       <LatestCard
         title="Video"

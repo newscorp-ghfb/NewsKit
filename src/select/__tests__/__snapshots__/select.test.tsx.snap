@@ -1578,7 +1578,7 @@ exports[`Select in Modal render Select 1`] = `
       >
         <div>
           <div
-            class="emotion-0 nk-overlay-enter-done"
+            class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
             data-testid="overlay"
           />
           <div
@@ -1599,7 +1599,7 @@ exports[`Select in Modal render Select 1`] = `
             >
               <div
                 aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
+                class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
                 data-testid="modal"
                 role="dialog"
               >
@@ -1619,7 +1619,7 @@ exports[`Select in Modal render Select 1`] = `
                   <div
                     aria-describedby="mock-nk-1"
                     aria-labelledby="downshift-0-label"
-                    class="emotion-6"
+                    class="modal-panel emotion-6"
                     data-testid="select-panel"
                     id="downshift-0-menu"
                     role="listbox"
@@ -2376,7 +2376,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
       >
         <div>
           <div
-            class="emotion-0 nk-overlay-enter-done"
+            class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
             data-testid="overlay"
           />
           <div
@@ -2397,7 +2397,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
             >
               <div
                 aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
+                class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
                 data-testid="modal"
                 role="dialog"
               >
@@ -2422,7 +2422,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
                   <div
                     aria-describedby="mock-nk-1"
                     aria-labelledby="downshift-0-label"
-                    class="emotion-7"
+                    class="modal-panel emotion-7"
                     data-testid="select-panel"
                     id="downshift-0-menu"
                     role="listbox"
@@ -3255,7 +3255,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
       >
         <div>
           <div
-            class="emotion-0 nk-overlay-enter-done"
+            class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
             data-testid="overlay"
           />
           <div
@@ -3276,7 +3276,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
             >
               <div
                 aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
+                class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
                 data-testid="modal"
                 role="dialog"
               >
@@ -3296,7 +3296,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                   <div
                     aria-describedby="mock-nk-1"
                     aria-labelledby="downshift-0-label"
-                    class="emotion-6"
+                    class="modal-panel emotion-6"
                     data-testid="select-panel"
                     id="downshift-0-menu"
                     role="listbox"
@@ -4207,13 +4207,9 @@ exports[`Select renders Select with overrides 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4233,11 +4229,352 @@ exports[`Select renders Select with overrides 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
   </div>
+</DocumentFragment>
+`;
+
+exports[`Select renders Select with zIndex overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #919191;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #3B3B3B;
+  text-overflow: ellipsis;
+}
+
+.emotion-0 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-0:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #007B22;
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:disabled {
+  border-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #D60000;
+  background-color: #F1F1F1;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  margin: -1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #3B3B3B;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-4 * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-7 {
+  all: unset;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-9 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-9 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-9 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-9.emotion-9 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-11 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  z-index: 20;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div>
+    <div
+      class="emotion-0"
+    >
+      <span
+        class="emotion-1"
+      >
+        option 1
+      </span>
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-0-toggle-button"
+        type="button"
+        value="option 1"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+            value="option 1"
+          >
+            <span>
+              option 1
+            </span>
+          </div>
+        </div>
+      </button>
+      <div
+        class="emotion-5"
+      >
+        <div
+          class="emotion-6"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-7"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-8"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-9 emotion-10"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby="downshift-0-label"
+      class="emotion-11"
+      data-testid="select-panel"
+      id="downshift-0-menu"
+      role="listbox"
+      style="top: 0px; left: 0px; position: absolute;"
+      tabindex="-1"
+    />
+  </div>
+  <div
+    class="nk-layer-organizer"
+  />
 </DocumentFragment>
 `;
 
@@ -4617,13 +4954,9 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4643,7 +4976,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -5175,13 +5508,9 @@ exports[`Select renders disabled select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5201,7 +5530,7 @@ exports[`Select renders disabled select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -5490,13 +5819,9 @@ exports[`Select renders large Select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5516,7 +5841,7 @@ exports[`Select renders large Select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -5784,13 +6109,9 @@ exports[`Select renders loading select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5810,7 +6131,7 @@ exports[`Select renders loading select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -6099,13 +6420,9 @@ exports[`Select renders medium Select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6125,7 +6442,7 @@ exports[`Select renders medium Select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -6448,13 +6765,9 @@ exports[`Select renders select with a pre selected option 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6474,7 +6787,7 @@ exports[`Select renders select with a pre selected option 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -6797,13 +7110,9 @@ exports[`Select renders select with a selected option 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6823,7 +7132,7 @@ exports[`Select renders select with a selected option 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -7170,13 +7479,9 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7196,7 +7501,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -7521,13 +7826,9 @@ exports[`Select renders select with non-string options 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7547,7 +7848,7 @@ exports[`Select renders select with non-string options 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -7836,13 +8137,9 @@ exports[`Select renders small Select 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7862,7 +8159,7 @@ exports[`Select renders small Select 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -8151,13 +8448,9 @@ exports[`Select should render custom placeholder 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -8177,7 +8470,7 @@ exports[`Select should render custom placeholder 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       />
     </div>
@@ -8479,13 +8772,9 @@ exports[`Select virtualize long list 1`] = `
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: block;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -8592,11 +8881,11 @@ exports[`Select virtualize long list 1`] = `
         data-testid="select-panel"
         id="downshift-0-menu"
         role="listbox"
-        style="transform: translate3d(0px, 0px, 0);"
+        style="top: 0px; left: 0px; position: absolute;"
         tabindex="-1"
       >
         <div
-          style="height: 12450px;"
+          style="height: 12400px;"
         />
         <div
           aria-selected="false"

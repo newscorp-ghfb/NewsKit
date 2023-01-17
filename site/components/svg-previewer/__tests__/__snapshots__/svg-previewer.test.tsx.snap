@@ -14,8 +14,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: justify;
-  -webkit-justify-content: sapce-between;
-  justify-content: sapce-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -416,8 +416,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-18 svg {
@@ -468,8 +468,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-21 svg {
@@ -535,13 +535,26 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
   color: #C0C7CC;
+}
+
+.emotion-26::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-26::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-27 {
@@ -961,7 +974,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-22-toggle-button"
+            id="downshift-27-toggle-button"
             type="button"
             value="Patterns Theme"
           >
@@ -1102,7 +1115,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-27-toggle-button"
+            id="downshift-33-toggle-button"
             type="button"
             value="0"
           >
@@ -1416,8 +1429,8 @@ Object {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: justify;
-  -webkit-justify-content: sapce-between;
-  justify-content: sapce-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1818,8 +1831,8 @@ Object {
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-18 svg {
@@ -1870,8 +1883,8 @@ Object {
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-21 svg {
@@ -1937,13 +1950,26 @@ Object {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
   color: #C0C7CC;
+}
+
+.emotion-26::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-26::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-27 {
@@ -2187,13 +2213,9 @@ Object {
   overflow-y: auto;
   box-sizing: border-box;
   outline: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
   margin-top: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
-  width: 0px;
   display: none;
   background-color: #F0F1F3;
   border-radius: 4px;
@@ -2392,7 +2414,7 @@ Object {
           data-testid="select-panel"
           id="downshift-0-menu"
           role="listbox"
-          style="transform: translate3d(0px, 0px, 0);"
+          style="top: 0px; left: 0px; position: absolute;"
           tabindex="-1"
         />
       </div>
@@ -2410,8 +2432,8 @@ Object {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: justify;
-  -webkit-justify-content: sapce-between;
-  justify-content: sapce-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2812,8 +2834,8 @@ Object {
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-18 svg {
@@ -2864,8 +2886,8 @@ Object {
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-21 svg {
@@ -2931,13 +2953,26 @@ Object {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
   color: #C0C7CC;
+}
+
+.emotion-26::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-26::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-27 {
@@ -3420,8 +3455,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: justify;
-  -webkit-justify-content: sapce-between;
-  justify-content: sapce-between;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3822,8 +3857,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-18 svg {
@@ -3874,8 +3909,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-21 svg {
@@ -3941,13 +3976,26 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
   color: #C0C7CC;
+}
+
+.emotion-26::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-26::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-27 {
@@ -4367,7 +4415,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-4-toggle-button"
+            id="downshift-5-toggle-button"
             type="button"
             value="Docs Theme"
           >
@@ -4508,7 +4556,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-9-toggle-button"
+            id="downshift-11-toggle-button"
             type="button"
             value="0"
           >

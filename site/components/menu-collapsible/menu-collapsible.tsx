@@ -13,7 +13,7 @@ import {
   TextBlock,
   toNewsKitIcon,
 } from 'newskit';
-import LinkNext from 'next/link';
+import NextLink from 'next/link';
 import {Launch as OutlinedLaunch} from '@emotion-icons/material-outlined/Launch';
 import {IconExpandLess, IconExpandMore} from '../icons';
 import {MenuCollapsible, MobileNavigationDivider, StyledAnchor} from './styled';
@@ -70,9 +70,11 @@ type SubNavItemProps = NavProps & SubNavProps;
 export const MenuMobileCollapsible = ({
   path,
   menu,
+  handleClick,
 }: {
   path: string;
   menu: SubNavItemProps[];
+  handleClick?: () => void;
 }) => {
   const [openPanelIds, setOpenPanelIds] = useState<Array<number>>([]);
   useEffect(() => {
@@ -86,11 +88,12 @@ export const MenuMobileCollapsible = ({
         list.map(({title, id, subNav, page}) => (
           <React.Fragment key={id}>
             {page ? (
-              <LinkNext href={id} passHref>
+              <NextLink legacyBehavior href={id} passHref>
                 <MenuItem
                   href={id}
                   selected={path.includes(id)}
                   eventContext={{value: title}}
+                  onClick={handleClick}
                   overrides={{
                     minHeight: '40px',
                     stylePreset: 'sideBarNavigation',
@@ -108,7 +111,7 @@ export const MenuMobileCollapsible = ({
                 >
                   {title}
                 </MenuItem>
-              </LinkNext>
+              </NextLink>
             ) : (
               <>
                 <MenuGroup

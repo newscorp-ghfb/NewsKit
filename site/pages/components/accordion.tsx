@@ -33,7 +33,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="Accordion"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v5.6.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/accordion',
@@ -313,7 +313,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <UnorderedList
           markerAlign="start"

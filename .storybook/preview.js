@@ -17,6 +17,7 @@ import {
 } from '../src/instrumentation';
 
 const unlimitedScenarios = [
+  'Accordion',
   'grid',
   'stack',
   'card',

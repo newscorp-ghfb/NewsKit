@@ -11,6 +11,7 @@
     ".eslintrc.js",
     "percy.config.js",
     "commitlint.config.js",
-    "webpack.e2e.config.js"
+    "webpack.e2e.config.js",
+    "cypress.*.config.ts",
   ]
 }

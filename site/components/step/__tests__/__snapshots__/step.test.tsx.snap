@@ -15,7 +15,7 @@ exports[`Step renders with props 1`] = `
       width="100%"
     >
       <use
-        href="static/illustrations/guides/design-quickstart/step1/hero.svg#guides-design-quickstart-step1-hero"
+        href="static/illustrations/guides/design-quickstart/step1/hero.svg#nksvg"
       />
     </svg>
   </div>

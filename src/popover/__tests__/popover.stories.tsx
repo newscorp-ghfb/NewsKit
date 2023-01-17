@@ -281,7 +281,7 @@ export const StoryPopoverDefault = () => (
               <div
                 style={{
                   display: 'flex',
-                  justifyContent: 'end',
+                  justifyContent: 'flex-end',
                   paddingTop: '30px',
                 }}
               >
@@ -399,6 +399,23 @@ export const StoryPopoverBehaviours = () =>
   );
 StoryPopoverBehaviours.storyName = 'popover-behaviours';
 StoryPopoverBehaviours.parameters = {
+  percy: {enableJavaScript: true},
+};
+
+export const StoryPopoverOtherBehaviours = () => (
+  <StyledPage>
+    <StorybookSubHeading>
+      Popover - disabled focus managmant
+    </StorybookSubHeading>
+    <BoundedPopover disableFocusManagement />
+    <hr />
+    <StorybookSubHeading>Popover - dismiss on blur</StorybookSubHeading>
+    <BoundedPopover dismissOnBlur />
+    <button type="button">button after popover</button>
+  </StyledPage>
+);
+StoryPopoverOtherBehaviours.storyName = 'popover-others';
+StoryPopoverOtherBehaviours.parameters = {
   percy: {enableJavaScript: true},
 };
 
