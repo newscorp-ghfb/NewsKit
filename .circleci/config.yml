@@ -1002,6 +1002,10 @@ jobs:
             echo "export VERSION=${VERSION}" >> $BASH_ENV
             echo "i am now running kubectl config view "
             kubectl config view 
+            echo "what is showing here?"
+            FILENAME=auth.env
+            FILESIZE=$(stat -c%s "$FILENAME")
+            echo "Size of $FILENAME = $FILESIZE bytes."
             echo "I am now running  nukubectl | grep "export AWS_" > auth.env"
             nukubectl | grep "export AWS_" > auth.env
             echo "I am now running $(egrep -v '^#' auth.env | xargs)"
