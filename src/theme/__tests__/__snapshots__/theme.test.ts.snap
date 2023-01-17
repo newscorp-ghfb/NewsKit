@@ -1521,16 +1521,19 @@ Object {
   },
   "breadcrumbItem": Object {
     "large": Object {
+      "paddingBlock": "space000",
       "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
+      "paddingBlock": "space000",
       "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
+      "paddingBlock": "space000",
       "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton010",
