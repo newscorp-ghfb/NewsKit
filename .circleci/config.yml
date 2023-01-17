@@ -1010,7 +1010,7 @@ jobs:
             echo "end of test" 
             grep 'declare' auth.env | sed -e 's/-x//g'
             echo "I am now running $(egrep -v '^#' auth.env | xargs)"
-            export $ (grep 'declare' auth.env | sed -e 's/-x//g') $(egrep -v '^#' auth.env | xargs)
+            export $(grep 'declare' auth.env | sed -e 's/-x//g') $(egrep -v '^#' auth.env | xargs)
             echo "I am now running   rm auth.env"
             rm auth.env
             echo "I am now cd-ing into flux"
