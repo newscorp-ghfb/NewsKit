@@ -26,7 +26,7 @@ const commonPropsRows = (type?: string) => [
   {
     name: 'state',
     type: ['valid', 'invalid', 'disabled'],
-    description: `If true, renders the ${type} radio button in a valid, invalid or disabled state. Can be submitted within a form.`,
+    description: `If true, renders the ${type}  radio button in a valid, invalid or disabled state. Can be submitted within a form.`,
   },
   {
     name: 'size',
@@ -53,7 +53,7 @@ const commonOverridesRows = [
     attribute: 'spaceStack(deprecated)',
     type: 'MQ<string>',
     default: 'space000',
-    description: `This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the stack space applied to the radio button.`,
+    description: `This property is deprecated. Use marginBlockEnd instead. If provided, overrides the stack space applied to the radio button.`,
   },
   {
     attribute: 'input.stylePreset',
@@ -86,15 +86,14 @@ const commonOverridesRows = [
     attribute: 'feedback.size',
     type: 'MQ<string>',
     default: ['small = sizing070', 'medium = sizing080', 'large = sizing090'],
-    description:
-      'If provided, this overrides the size of the feedback element.',
+    description: 'If provided, overrides the size of the feedback element.',
   },
   {
     attribute: 'feedback.stylePreset',
     type: 'MQ<string>',
     default: 'radioButtonFeedback',
     description:
-      'If provided, this overrides the stylePreset of the feedback element.',
+      'If provided, overrides the stylePreset of the feedback element.',
   },
   // THIS IS NOT IMPLEMENTED YET, UNCOMMENT WHEN THIS FUNCTIONALITY IS ADDED
   // {
@@ -128,7 +127,7 @@ const commonOverridesRows = [
       'medium = iconSize020',
       'large = iconSize030',
     ],
-    description: 'If provided, overrides the size of the radio button icon',
+    description: 'If provided, overrides the size of the radio button icon.',
   },
   ...(commonLogicalProps() as OverridesRowsProps[]),
 ];
@@ -650,7 +649,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       cards: [
         {
           description:
-            'Use Radio Buttons when a user can select only one option from a list.',
+            'Use radio buttons when a user can select only one option from a list.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/radio-button/usage/do-1'),
         },
@@ -791,22 +790,13 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         </>
       ),
       components: [
-        // {
-        //   title: 'FormInput Radio Button',
-        //   summary: (
-        //     <>
-        //       The FormInput Radio Button has a range of props that can be used
-        //       to define an appropriate experience for different use cases. Use
-        //       this component within the{' '}
-        //       <Link href="/components/form/">NewsKit Form component</Link>.
-        //     </>
-        //   ),
-        //   propsRows: commonPropsRows('FormInput'),
-        //   overridesRows: commonOverridesRows,
-        // },
         {
-          title: 'FormInput Radio Button',
-          summary: `The Radio Button has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.`,
+          title: 'Form input radio button',
+          propsRows: commonPropsRows('FormInput'),
+          overridesRows: commonOverridesRows,
+        },
+        {
+          title: 'RadioButton',
           propsRows: [
             {
               name: 'name',
@@ -825,7 +815,6 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'RadioGroup',
-          summary: `The Radio Group has a range of props that can be used to define an appropriate experience for different use cases. Use this component to group Radio Buttons together.`,
           propsRows: radioButtonPropsRows,
         },
       ],

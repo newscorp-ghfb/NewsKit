@@ -6,7 +6,7 @@ export const logicalMarginOverrideProps: OverridesRowsProps[] = [
   {
     attribute: 'marginInline',
     type: 'MQ<string>',
-    description: `Takes one space token to specify the logical inline start and end margin of the container. Can be used on breakpoints`,
+    description: `Takes one space token to specify the logical inline start and end margin of the container. Can be used on breakpoints.`,
   },
   {
     attribute: 'marginInlineStart',
