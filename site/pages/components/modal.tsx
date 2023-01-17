@@ -306,7 +306,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the modal:',
       cards: [
         {
-           title: 'Use modals for critical information',
+          title: 'Use modals for critical information',
           description:
             'Modals are appropriate for notifications that give the user critical information related to a task. For non-critical information, consider a toast or inline notification instead.',
           kind: UsageKind.DO,
@@ -320,8 +320,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/modal/usage/dont-01'),
         },
         {
-             title: 'Keep modals close to related content',
-
+          title: 'Keep modals close to related content',
           description:
             'A modal should be in close proximity to the content it relates to.',
           kind: UsageKind.DO,

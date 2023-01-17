@@ -291,7 +291,6 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-
       introduction: "Here's how and when to use the drawer:",
       cards: [
         {
@@ -322,9 +321,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-
           title: "Don't nest tiered drawers",
-
           description:
             'Avoid nesting tiered drawers as this can cause usability issues. Consider an alternative component (e.g. accordion) or rethink the page structure.',
           kind: UsageKind.DONT,

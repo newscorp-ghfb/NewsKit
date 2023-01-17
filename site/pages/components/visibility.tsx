@@ -139,7 +139,6 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       </CellWrapper>
     </CommonSection>
     <UsageSection
-
       introduction="Here’s how and when to use visible, hidden and screen reader only:"
       cards={[
         {

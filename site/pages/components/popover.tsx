@@ -225,7 +225,6 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the popover:',
       cards: [
         {
-
           title: 'Use popovers for non-critical information',
           description:
             'Popovers are intended for displaying non-critical information related to an element. Content passed to a popover should match the Aria-label and description.',
@@ -246,7 +245,6 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont-01'),
         },
-
         {
           title: 'Make popovers clear and concise',
           description:
@@ -255,24 +253,19 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/popover/usage/do2'),
         },
         {
-
           title: 'Don’t use rich text formatting',
           description:
             'Rich text formatting (e.g. bold, italics, icons) won’t be conveyed to screen reader users.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/popover/usage/dont-03'),
         },
-
         {
-
           title: 'Keep popovers in view until dismissed',
           description:
-
             'Popovers should remain in view until the user dismisses them.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do3'),
         },
-       
         {
           title: 'Don’t cover the attributed element',
           description:
