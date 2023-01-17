@@ -1009,7 +1009,7 @@ jobs:
             nukubectl | "export" | grep "AWS_" > auth.env
             echo "end of test"
             echo "I am now running  nukubectl | grep "export AWS_" > auth.env"
-            (nukubectl | (export | grep AWS_ > auth.env)) || true
+            nukubectl | export | grep AWS_ > auth.env 
             echo "I am now running $(egrep -v '^#' auth.env | xargs)"
             export $(egrep -v '^#' auth.env | xargs)
             echo "I am now running   rm auth.env"
