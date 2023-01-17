@@ -26,7 +26,7 @@ const commonPropsRows = (type?: string) => [
   {
     name: 'state',
     type: ['valid', 'invalid', 'disabled'],
-    description: `If true, renders the ${type}  radio button in a valid, invalid or disabled state. Can be submitted within a form.`,
+    description: `If true, renders the ${type} radio button in a valid, invalid or disabled state. Can be submitted within a form.`,
   },
   {
     name: 'size',
