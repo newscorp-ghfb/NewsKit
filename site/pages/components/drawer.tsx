@@ -51,7 +51,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Drawer',
       description:
-        'A Drawer is a layout panel that slides out the side of the screen revealing content like navigation or filters.',
+        'Drawers are layout panels that slide out from the side of the screen to reveal content like navigation or filters.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -61,7 +61,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         illustration: 'components/drawer/drawer-illustration',
       },
       introduction:
-        'A Drawer is a layout panel that slides out the side of the screen revealing content like navigation or filters.',
+        'Drawers are layout panels that slide out from the side of the screen to reveal content like navigation or filters.',
     }}
     componentDefaultsKey="drawer"
     meta={{
@@ -74,7 +74,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Drawer component, its variations, and configuration options.',
+        'This demo lets you preview the drawer component, its variations and configuration options.',
       playground: {
         componentName: 'Drawer',
         // @ts-ignore
@@ -152,7 +152,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The Drawer contains four required elements and one optional element.',
+        'The drawer contains two required elements and three optional elements.',
       rows: [
         {
           name: 'Overlay',
@@ -162,26 +162,26 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Panel',
-          description: 'Contains the Panel Header and Panel Content',
+          description: 'Contains the panel header and panel content',
           component: ['Block'],
           optional: undefined,
         },
         {
           name: 'Header',
           description:
-            'An area to display content at the top of a panel eg a title',
+            'An area to display content at the top of a panel (e.g. title)',
           component: ['Block'],
           optional: true,
         },
         {
-          name: 'Close Button',
-          description: 'Icon Button for closing the Drawer',
-          component: ['Icon Button'],
+          name: 'Close button',
+          description: 'Icon Button for closing the drawer',
+          component: ['Icon button'],
           optional: true,
         },
         {
           name: 'Content',
-          description: 'An area to display any content eg a menu',
+          description: 'An area to display any content (e.g. menu)',
           component: ['Block'],
           optional: undefined,
         },
@@ -192,31 +192,25 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     options={{
-      introduction:
-        'The Drawer has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The drawer has options for different use cases:',
       cards: [
         {
           title: 'Placement',
-          description: `The Drawer can appear from the left (default), right, top, or
-              bottom of the screen. When appearing from the left or right of
-              the screen, the close Icon Button is positioned on the same side
-              where the Drawer originates from. When appearing from the top or
-              bottom of the screen, the close Icon Button is positioned on the
-              right as default.`,
-
+          description: `The drawer can appear from the left (default), right, top, or bottom of the screen.`,
           media: getIllustrationComponent(
             'components/drawer/drawer-options-placement-illustration',
           ),
         },
         {
-          title: 'Close Position',
+          title: 'Close position',
           description: (
             <>
-              The position of the close button in the Drawer header is set to
-              left as default for left placement, and right for right placement.
-              For top and bottom placement, it is set to the right. Users have
-              the option to set the close button position to either left or
-              right for all four placements.
+              When appearing from the left or right of the screen, the close
+              icon button is positioned on the side the drawer originates from.
+              When appearing from the top or bottom of the screen, the close
+              icon button is positioned on the right as default. You can change
+              the close button position to either left or right for all four
+              placements.
               <InlineMessage
                 role="region"
                 aria-label="Close position"
@@ -225,13 +219,13 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space050',
                 }}
               >
-                The header and close button are optional. However it&lsquo;s
-                recommended that a close button is always used to adhere to{' '}
+                The header and close button are optional. However, you should
+                always include a close button to adhere to{' '}
                 <LinkInline
                   target="_blank"
                   href="https://www.w3.org/TR/wai-aria-practices-1.2/#keyboard-interaction-7"
                 >
-                  aria-principles
+                  ARIA principles
                 </LinkInline>
                 .
               </InlineMessage>
@@ -244,7 +238,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Width',
           description:
-            'When the placement of the Drawer is set to either left or right, the width of a Drawer can be customised appropriately, with the height being 100%.',
+            'Customise the width of a drawer placed on either the left or right (height is 100%).',
           media: getIllustrationComponent(
             'components/drawer/drawer-options-width-illustration',
           ),
@@ -252,7 +246,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Height',
           description:
-            'When the placement of the Drawer is set to either top or bottom, the height of a Drawer can be customised appropriately, with the width being 100%.',
+            'Customise the height of a drawer placed on either the top or bottom (width is 100%).',
           media: getIllustrationComponent(
             'components/drawer/drawer-options-height-illustration',
           ),
@@ -260,21 +254,20 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction:
-        'The following guidance describes how the Drawer component behaves.',
+      introduction: "Here's how the drawer behaves:",
       cards: [
         {
           title: 'Animation',
           description:
-            'When the Drawer is launched, the overlay fades in from 0% to 100% opacity (transitions) and the Drawer panel slides in from the edge of the screen (transforms:translate the x or y axis). When the Drawer is dismissed, the same animation in reverse occurs.',
+            'When the user launches the drawer, the overlay fades in from 0% to 100% opacity (transitions) and the drawer panel slides in from the edge of the screen (transforms:translate the x or y axis). When the user dismisses the drawer, the same animation occurs in reverse.',
           media: getIllustrationComponent(
             'components/drawer/drawer-behaviours-animation-illustration',
           ),
         },
         {
-          title: 'Triggering & Closing the Drawer',
+          title: 'Triggering & closing the drawer',
           description:
-            'The Drawer visibility is controlled via the open prop on the component, hidden by default. To handle closing the Drawer the user will need to supply and handle via the onDismiss callback. This will be triggered when the user clicks on the close Icon Button, the overlay, or by pressing the Esc keyboard key.',
+            'Control visibility via the open prop (the drawer is hidden by default). To close the drawer, the user can click the close icon button or overlay, or press the Esc key. Any of these actions will trigger the onDismiss callback.',
           media: getIllustrationComponent(
             'components/drawer/drawer-behaviours-triggering-closing-illustration',
           ),
@@ -290,7 +283,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Disable page scrolling when launched',
           description:
-            'When a Drawer is present the content behind is not scrollable (scroll-locked).',
+            'When a drawer is present the content behind is not scrollable (scroll-locked).',
           media: getIllustrationComponent(
             'components/drawer/drawer-behaviours-disable-page-scrolling-illustration',
           ),
@@ -298,10 +291,11 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction: 'Here’s how and when to use the drawer:',
+
+      introduction: "Here's how and when to use the drawer:",
       cards: [
         {
-          title: 'Do use for revealing additional content',
+          title: 'Use for navigation, filtering and checkout',
           description:
             'Drawers are appropriate for navigation, for filtering content, or in checkout flows.',
           kind: UsageKind.DO,
@@ -310,16 +304,16 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Don’t use for top-level navigation on larger screens',
+          title: "Don't use for top-level navigation on larger screens",
           description:
-            'Avoid using drawers for top-level navigation items when there’s space to expose them on larger screens.',
+            "Avoid using drawers for top-level navigation items when there's space to expose them on larger screens.",
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/drawer/drawer-dont-1-illustration',
           ),
         },
         {
-          title: 'Do keep drawers close to related content',
+          title: 'Keep drawers close to related content',
           description:
             'A drawer should be in close proximity to the content it relates to.',
           kind: UsageKind.DO,
@@ -328,7 +322,9 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Don’t nest tiered drawers',
+
+          title: "Don't nest tiered drawers",
+
           description:
             'Avoid nesting tiered drawers as this can cause usability issues. Consider an alternative component (e.g. accordion) or rethink the page structure.',
           kind: UsageKind.DONT,
@@ -340,7 +336,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction:
-        'The Drawer has the following accessibility considerations:',
+        'The drawer has the following accessibility considerations:',
       focusOrder: {
         title: 'Focus order',
         tableRows: [
@@ -348,24 +344,24 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
             order: 1,
             element: 'header',
             role:
-              'Focusses to the content (children) passed to the header area, focusing on any interactive elements.',
+              'Focusses to the content (children) passed to the header area, focussing on any interactive elements',
           },
           {
             order: 2,
             element: 'content',
             role:
-              'Focusses to the content (children) passed to the content area, focusing on any interactive elements.',
+              'Focusses to the content (children) passed to the content area, focussing on any interactive elements',
           },
           {
             order: 3,
             element: 'closeButton',
-            role: 'Focusses to the close Icon Button in the header.',
+            role: 'Focusses to the close icon button in the header',
           },
         ],
       },
       infoNoticeFocus: [
-        'Upon opening, focus will be transferred to the first interactive element in the specified order ie if there are interactive elements passed to the header, then this will be the first focusable element.',
-        'If you want to change the element that gets focus then add a data-autofocus attribute to the HTML element you want to be focused on.',
+        'Upon opening, focus transfers to the first interactive element in the specified order (i.e. if there are interactive elements passed to the header, this will be the first focussable element).',
+        'You can change the element that gets focus by adding a data-autofocus attribute to another HTML element.',
       ],
 
       interaction: {
@@ -374,16 +370,16 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Tab'],
             description:
-              'When the Drawer is active it will maintain focus trapping. The user will only be able to tab through it and its children.',
+              'Moves focus to the next link or action in the drawer. When the drawer is active, it will maintain focus trapping. The user will only be able to tab through the drawer and its children',
           },
           {
             command: ['Shift', 'Tab'],
             description:
-              'When the Drawer is active it will maintain focus trapping. The user will only be able to tab through it and its children.',
+              'Moves focus to the previous link or action in the drawer. When the drawer is active, it will maintain focus trapping. The user will only be able to shift-tab through the drawer and its children',
           },
           {
             command: ['Esc'],
-            description: 'Closes the Drawer and overlay.',
+            description: 'Closes the drawer and overlay.',
           },
         ],
       },
@@ -395,21 +391,21 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
             element: 'drawer',
             attribute: 'ariaLabelledby',
             value: 'string',
-            description: 'Defines the Aria-label of the Drawer',
+            description: 'Defines the aria-label of the drawer',
             userSupplied: true,
           },
           {
             element: 'drawer',
             attribute: 'ariaDescribedby',
             value: 'string',
-            description: 'Describes the purpose of the Drawer',
+            description: 'Describes the purpose of the drawer',
             userSupplied: true,
           },
         ],
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <OrderedList
           overrides={{
@@ -420,65 +416,65 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
           }}
         >
           {[
-            'Ensure all text, icons, and images are visible in the Drawer so that information can be crawled and indexed.',
-            'The Drawer component and its content are rendered to the DOM, but only visible to the user when the Drawer is open.',
+            'Ensure all text, icons and images are visible in the drawer so that information can be crawled and indexed.',
+            'The drawer and its content are rendered to the DOM, but only visible to the user when the drawer is open.',
           ]}
         </OrderedList>
       ),
     }}
     componentAPI={{
       introduction:
-        'The Drawer has a range of props that can be used to define an appropriate experience for different use cases.',
+        'The drawer has a range of props to define the experience in different use cases.',
       components: [
         {
           title: 'Drawer',
-          summary: `The Drawer has a range of props that can be used to define an appropriate experience for different use cases.`,
+          summary: `The drawer has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactNode',
               required: true,
-              description: `Content to be rendered inside the Drawer panel content area.`,
+              description: `Content to be rendered inside the drawer panel content area.`,
             },
             {
               name: 'open',
               type: 'boolean',
               default: 'false',
               required: true,
-              description: 'Defines if the Drawer is open.',
+              description: 'Defines if the drawer is open.',
             },
             {
               name: 'onDismiss',
               type: 'function',
               required: true,
               description:
-                'If provided, a callback which is invoked on dismissing the Drawer through either clicking the close Icon Button, overlay, or pressing the Esc key.',
+                'If provided, invokes a callback on dismissing the drawer by clicking the close icon button or overlay, or pressing the Esc key',
             },
             {
               name: 'header',
               type: 'React.ReactNode',
               description:
-                'If provided, sets the content of the Drawer header.',
+                'If provided, sets the content of the drawer header.',
             },
             {
               name: 'placement',
               type: ['left', 'right', 'top', 'bottom'],
               default: 'left',
               description:
-                'Defines the edge of the screen from which the Drawer enters and exits from.',
+                'Defines the edge of the screen from which the drawer enters and exits',
             },
             {
               name: 'closePosition',
               type: ['left', 'right', 'none'],
               default: 'left',
               description:
-                'closePosition is set to left as default for left placement, and right for right placement. For top and bottom placement, it is set to the right. If provided, users can set the position of the close icon button.',
+                'Set to left as default for left placement and right for right placement. For top and bottom placement, set to the right. If provided, users can set the position of the close icon button',
             },
             {
               name: 'restoreFocusTo',
               type: 'HTMLElement',
               description:
-                'If provided, returns focus to the specified element after the Drawer is closed. If not provided, focus will return to the focused element prior to the Drawer opening.',
+                'If provided, returns focus to the specified element after the drawer is closed. If not provided, focus will return to the focussed element prior to the drawer opening',
             },
             {
               name: 'hideOverlay',
@@ -490,13 +486,13 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               name: 'disableFocusTrap',
               type: 'boolean',
               description:
-                'If true, focus can leave the drawer window through tabbing or direct click on the main content.',
+                'If true, focus can leave the drawer window through tabbing or clicking directly on the main content',
             },
             {
               name: 'inline',
               type: 'boolean',
               description:
-                'If true,the drawer will display inline using position absolute ( instead of fixed ) and will take the size of its container',
+                'If true, the drawer will display inline using position absolute (instead of fixed) and take the size of its container',
             },
           ],
           overridesRows: [
@@ -505,35 +501,34 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'overlay',
               description:
-                'If provided, this overrides the style preset applied to the Overlay.',
+                'If provided, overrides the style preset applied to the overlay',
             },
             {
               attribute: 'overlay.zIndex',
               type: 'number',
               default: '70',
-              description:
-                'If provided, this overrides the zIndex of the Overlay.',
+              description: 'If provided, overrides the zIndex of the overlay',
             },
             {
               attribute: 'overlay.transitionPreset',
               type: 'string | string[]',
               default: 'fade',
               description:
-                'If provided, this overrides the motions applied to the Overlay.',
+                'If provided, overrides the motions applied to the overlay',
             },
             {
               attribute: 'panel.stylePreset',
               type: 'MQ<string>',
               default: 'drawerPanel',
               description:
-                'If provided, this overrides the style preset applied to the Drawer panel.',
+                'If provided, overrides the style preset applied to the drawer panel',
             },
             {
               attribute: 'panel.transitionPreset',
               type: 'string | string[]',
               default: "['fade', 'slideLeft']",
               description:
-                'If provided, this overrides the motions applied to the Drawer.',
+                'If provided, overrides the motions applied to the drawer',
             },
             {
               attribute: 'panel.size',
@@ -546,28 +541,28 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
                 'xl =354px',
               ],
               description:
-                'If provided, this overrides the size of the Drawer panel when placed to the left or right. Can accept variable height or variable width depending on the orientation. (size = width for left/right Drawer | size=height for top/bottom Drawer).',
+                'If provided, overrides the size of the drawer panel when placed to the left or right. Can accept variable height or variable width depending on the orientation (size = width for left/right drawer | size=height for top/bottom drawer)',
             },
             {
               attribute: 'panel.maxSize',
               type: 'MQ<string>',
               default: '100%',
               description:
-                'If provided, this overrides the max-size property of the Drawer panel. Can accept variable height or variable width depending on the orientation.',
+                'If provided, overrides the max-size property of the drawer panel. Can accept variable height or variable width depending on the orientation',
             },
             {
               attribute: 'panel.minSize',
               type: 'MQ<string>',
               default: '20px',
               description:
-                'If provided, this overrides the min-size property of the Drawer panel. Can accept variable height or variable width depending on the orientation.',
+                'If provided, overrides the min-size property of the drawer panel. Can accept variable height or variable width depending on the orientation',
             },
             {
               attribute: 'panel.zIndex',
               type: 'number',
               default: '80',
               description:
-                'If provided, this overrides the zIndex of the Drawer panel.',
+                'If provided, overrides the zIndex of the drawer panel',
             },
             ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
             ...prefixLogicalProps(logicalMarginOverrideProps, 'panel'),
@@ -576,35 +571,35 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: '',
               description:
-                'If provided, this overrides the style preset applied to the Drawer header.',
+                'If provided, overrides the style preset applied to the drawer header',
             },
             {
               attribute: 'header.spaceInset',
               type: 'MQ<string>',
               default: 'spaceInsetSquish040',
               description:
-                'If provided, this overrides the padding space set in Drawer header content container.',
+                'If provided, overrides the padding space set in the drawer header content container',
             },
             {
               attribute: 'content.spaceInset',
               type: 'MQ<string>',
               default: 'spaceInset050',
               description:
-                'If provided, this overrides the padding space set in the Drawer content container.',
+                'If provided, overrides the padding space set in the drawer content container',
             },
             {
               attribute: 'closeButton.stylePreset',
               type: 'MQ<string>',
               default: 'iconButtonMinimalSecondary',
               description:
-                'If provided, this overrides the style preset applied to the Drawer close Icon Button.',
+                'If provided, overrides the style preset applied to the drawer close icon button',
             },
             {
               attribute: 'closeButton.spaceInset',
               type: 'MQ<string>',
               default: 'spaceInset020',
               description:
-                'If provided, this overrides the padding space set in the Drawer close Icon Button.',
+                'If provided, overrides the padding space set in the drawer close icon button',
             },
           ],
         },

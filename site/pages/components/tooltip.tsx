@@ -370,7 +370,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <>
           <UnorderedList

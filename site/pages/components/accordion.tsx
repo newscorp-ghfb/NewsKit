@@ -317,7 +317,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <UnorderedList
           markerAlign="start"
