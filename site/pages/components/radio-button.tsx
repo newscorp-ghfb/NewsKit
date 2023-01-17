@@ -26,25 +26,25 @@ const commonPropsRows = (type?: string) => [
   {
     name: 'state',
     type: ['valid', 'invalid', 'disabled'],
-    description: `If true, renders the ${type} Radio Button in a valid, invalid, or disabled state. It can be submitted within a form.`,
+    description: `If true, renders the ${type}  radio button in a valid, invalid or disabled state. Can be submitted within a form.`,
   },
   {
     name: 'size',
     type: ['small', 'medium', 'large'],
     default: 'medium',
-    description: `Defines the size of the ${type} Radio Button.`,
+    description: `Defines the size of the ${type} radio button.`,
   },
   {
     name: 'labelPosition',
     type: ['start', 'end'],
     default: 'end',
-    description: 'Defines the position of the Label.',
+    description: 'Defines the position of the label.',
   },
   {
     name: 'labelAttributes',
     type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
     default: '',
-    description: 'Used to pass HTML attributes to the Label.',
+    description: 'Passes HTML attributes to the label.',
   },
 ];
 
@@ -53,35 +53,34 @@ const commonOverridesRows = [
     attribute: 'spaceStack(deprecated)',
     type: 'MQ<string>',
     default: 'space000',
-    description: `This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the stack space applied to the Radio Button.`,
+    description: `This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the stack space applied to the radio button.`,
   },
   {
     attribute: 'input.stylePreset',
     type: 'MQ<string>',
     default: 'radioButtonInput',
     description:
-      'If provided, overrides the stylePreset of the Radio Button input.',
+      'If provided, overrides the stylePreset of the radio button input.',
   },
   {
     attribute: 'input.size',
     type: 'MQ<string>',
     default: ['small = sizing050', 'medium = sizing060', 'large = sizing070'],
-    description:
-      'If provided, this overrides the size of the Radio Button input.',
+    description: 'If provided, overrides the size of the radio button input.',
   },
   {
     attribute: 'input.spaceInline',
     type: 'MQ<string>',
     default: ['small = space030', 'medium = space030', 'large = space040'],
     description:
-      'If provided, this overrides the inline space between the Radio Button input and Label.',
+      'If provided, overrides the inline space between the radio button input and label.',
   },
   {
     attribute: 'input.transitionPreset',
     type: 'MQ<string>',
     default: ['backgroundColorChange', 'borderColorChange'],
     description:
-      'If provided, overrides the transitionPreset of the Radio Button input.',
+      'If provided, overrides the transitionPreset of the radio button input.',
   },
   {
     attribute: 'feedback.size',
@@ -109,7 +108,7 @@ const commonOverridesRows = [
     attribute: 'label.stylePreset',
     type: 'MQ<string>',
     default: 'controlLabel',
-    description: 'If provided, this overrides the stylePreset of the Label.',
+    description: 'If provided, overrides the stylePreset of the label.',
   },
   {
     attribute: 'label.typographyPreset',
@@ -119,8 +118,7 @@ const commonOverridesRows = [
       'medium = utilityBody020',
       'large = utilityBody030',
     ],
-    description:
-      'If provided, this overrides the typographyPreset of the Label.',
+    description: 'If provided, overrides the typographyPreset of the label.',
   },
   {
     attribute: 'icon.size',
@@ -130,7 +128,7 @@ const commonOverridesRows = [
       'medium = iconSize020',
       'large = iconSize030',
     ],
-    description: 'If provided, overrides the size of the Radio Button icon.',
+    description: 'If provided, overrides the size of the radio button icon',
   },
   ...(commonLogicalProps() as OverridesRowsProps[]),
 ];
@@ -140,26 +138,26 @@ const radioButtonPropsRows = [
     name: 'name',
     type: 'string',
     default: '',
-    description: 'Defines the name of the RadioButton.',
+    description: 'Defines the name of the radio button.',
   },
   {
     name: 'defaultValue',
     type: 'string',
     default: '',
     description:
-      'Defines the value of the initially checked RadioButton (uncontrolled).',
+      'Defines the value of the initially checked radio button (uncontrolled).',
   },
   {
     name: 'value',
     type: 'string',
     default: '',
-    description: 'Defines the value of the checked RadioButton (controlled).',
+    description: 'Defines the value of the checked radio button (controlled).',
   },
   {
     name: 'onChange',
     type: 'string',
     default: '(event: ChangeEvent) => void',
-    description: 'Callback fired when RadioButton changes.',
+    description: 'Fires callback when radio button changes.',
   },
 ];
 
@@ -168,7 +166,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Radio Button',
       description:
-        'Radio Buttons are selection controls that are typically used in forms.',
+        'Radio buttons let users make a single selection from multiple options in a radio group.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -177,7 +175,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/radio-button/hero',
       },
-      introduction: `Radio Buttons are selection controls that are typically used in forms. They are used for exclusive selection - allowing users to select one of multiple options in a Radio Group.`,
+      introduction: `Radio buttons let users make a single selection from multiple options in a radio group. They typically appear in forms.`,
     }}
     componentDefaultsKey="radioButton"
     meta={{
@@ -190,20 +188,20 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The Radio Button contains one required element and three optional elements.',
+        'The radio button component contains one required element and three optional elements.',
       media: getIllustrationComponent('components/radio-button/anatomy'),
       rows: [
         {
           name: 'Radio Input (unchecked)',
           description:
-            'Selection control (input) that is the unselected state of the Radio Button input',
+            'Selection control (input) that is the unselected state of the radio button input',
           component: ['Block'],
           optional: undefined,
         },
         {
           name: 'Radio Input  (checked)',
           description:
-            'The Icon that appears within the Radio Button input when in a checked state',
+            'The icon that appears within the radio button input when in a checked state',
           component: 'Icon',
           optional: true,
         },
@@ -216,27 +214,25 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Label',
-          description:
-            'The Label is the text attributed to the Radio Button that provides context',
+          description: 'Text attributed to the radio button to provide context',
           component: 'Text Block',
           optional: true,
         },
       ],
     }}
     options={{
-      introduction:
-        'The Radio Button has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The radio button has options for different use cases:',
       cards: [
         {
           title: 'Size',
           description: (
             <>
-              There are three sizes of the Radio Button input and the feedback
-              element; small, medium (default), and large.
+              The radio button input and feedback element both come in small,
+              medium (default) and large.
               <br />
               <br />
-              The icon that appears within the Radio Button input changes at all
-              three sizes of Radio Button but can be overridden.
+              The icon that appears within the radio button input changes at all
+              three sizes of radio button but can be overridden.
             </>
           ),
           media: getIllustrationComponent(
@@ -246,7 +242,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icon',
           description:
-            'The icon that appears within the Radio Button input can be overridden across different states.',
+            'Override the icon within the radio button input for different states.',
           media: getIllustrationComponent(
             'components/radio-button/options/icon',
           ),
@@ -254,7 +250,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Feedback',
           description:
-            'The feedback element is non-interactive and appears in the background behind the Radio Button input for visual feedback on hover.',
+            'The feedback element is non-interactive and appears in the background behind the radio button input on hover.',
           media: getIllustrationComponent(
             'components/radio-button/options/feedback',
           ),
@@ -263,16 +259,16 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Label',
           description: (
             <>
-              The Radio Button has a label that appears to the right (end) of a
-              Radio Button, for context.
+              Add a label to the right (end) of the radio button to provide
+              context.
               <InlineMessage
                 overrides={{marginBlockStart: 'space030'}}
                 icon={infoIcon}
                 role="region"
                 aria-label="Radio label position"
               >
-                In the case of needing a label on the left (start) of a Radio
-                Button, this can be set via the
+                You can add a label on the left (start) of a radio button using
+                the
                 <InlineCode>labelPosition</InlineCode> prop.
               </InlineMessage>
             </>
@@ -283,8 +279,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Radio Group',
-          description:
-            'The Radio Group component is used to group Radio Buttons together.',
+          description: 'Use the radio group to group radio buttons.',
           media: getIllustrationComponent(
             'components/radio-button/options/radio-group',
           ),
@@ -293,12 +288,11 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Fieldset',
           description: (
             <>
-              Selection controls (inputs), such as the FormInput, Radio Button,
-              and <Link href="/components/checkbox/">Checkbox</Link>, can be
-              grouped together with other selection controls, Labels, and
-              Assistive Text together in a Fieldset. The Fieldset has a caption
-              that gives a title attributed to the elements that appear in the
-              Fieldset, called a Legend.
+              Group selection controls (e.g. form input, radio button and
+              checkbox) together in a{' '}
+              <Link href="/components/fieldset/">fieldset</Link>, along with
+              labels and assistive text. Add a title to the grouped elements
+              using the legend.
               <br />
               <br />
               The Fieldset can also support other selection controls (inputs)
@@ -323,7 +317,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Base',
           description:
-            'The Radio Button has a base (default) state. This is the base style of the Radio Button before it has been interacted with by a user.',
+            'The default style before the user interacts with the radio button.',
           media: getIllustrationComponent(
             'components/radio-button/states/base',
           ),
@@ -331,7 +325,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Hover',
           description:
-            'The Radio Button has a hover state. The style of the Radio Button changes to visually communicate and provide feedback to the user that the Radio Button is an interactive element. The style of the label remains the same. The label can also be interacted with (hovered) to check the Radio Button.',
+            'The radio button changes style to let the user know it’s interactive. The style of the label remains the same. Users can interact with (hover) the label to check the radio button.',
           media: getIllustrationComponent(
             'components/radio-button/states/hover',
           ),
@@ -339,7 +333,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Focus',
           description:
-            'The Radio Button in a focus state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted a radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/focus',
           ),
@@ -347,7 +341,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Focus Hover',
           description:
-            'The Radio Button in a focus hover state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted and hovered over a radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/focus-hover',
           ),
@@ -355,7 +349,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked',
           description:
-            'The Radio Button has a checked state. The style of the Radio Button input changes to visually communicate and provide feedback to the user that the Radio Button has been checked. The style of the label remains the same.',
+            'The radio box input changes style to let the user know the radio box is checked. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/radio-button/states/checked',
           ),
@@ -363,7 +357,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Hover',
           description:
-            'The Radio Button has a checked hover state. The style of the Radio Button input changes to visually communicate and provide feedback to the user that the Radio Button has been checked and hovered over. The style of the label remains the same.',
+            'The radio box input changes style to let the user know the radio box is checked and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-hover',
           ),
@@ -371,7 +365,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Focus',
           description:
-            'The Radio Button in a checked focus state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted a radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-focus',
           ),
@@ -379,7 +373,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Focus Hover',
           description:
-            'The Radio Button in a checked focus hover state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted and hovered over a radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-focus-hover',
           ),
@@ -388,12 +382,11 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Invalid',
           description: (
             <>
-              The Radio Button in an invalid state changes style when the Radio
-              Button selection doesn’t conform to a specific format eg.
-              attempting to proceed without selecting a required Radio Group in
-              a <Link href="/components/form/">Form</Link>. The Form component
-              is used to apply validation behaviour. The style of the label
-              remains the same.
+              The radio button changes style when radio button selection doesn’t
+              conform to a specific format (e.g. attempting to proceed without
+              selecting a required radio button in a form). Use the form
+              component to validate behaviour. The style of the label remains
+              the same.
             </>
           ),
           media: getIllustrationComponent(
@@ -403,7 +396,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid Focus',
           description:
-            'The Radio Button in an invalid focus state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted an invalid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/invalid-focus',
           ),
@@ -411,7 +404,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid Hover',
           description:
-            'The Radio Button has an invalid hover state. The style of the Radio Button input changes to visually communicate and provide feedback to the user that the Radio Button is in an invalid state and hovered over. The style of the label remains the same.',
+            'The radio button changes style to let the user know the radio button is in an invalid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/radio-button/states/invalid-hover',
           ),
@@ -419,7 +412,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid Focus Hover',
           description:
-            'The Radio Button in an invalid focus hover state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted and hovered over an invalid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/invalid-focus-hover',
           ),
@@ -427,7 +420,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Invalid',
           description:
-            'The Radio Button has a checked invalid state. The style of the Radio Button input changes to visually communicate and provide feedback to the user that the Radio Button has been checked and is in an invalid state. The style of the label remains the same.',
+            'The radio button input changes style to let the user know the radio button is checked and in an invalid state. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-invalid',
           ),
@@ -435,7 +428,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Invalid Focus',
           description:
-            'The Radio Button in a checked invalid focus state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted a checked, invalid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-invalid-focus',
           ),
@@ -443,7 +436,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Invalid Hover',
           description:
-            'The Radio Button has a checked invalid hover state. The style of the Radio Button input changes to visually communicate and provide feedback to the user that the Radio Button has been checked and is in an invalid state, and hovered over. The style of the label remains the same.',
+            'The radio button input changes style to let the user know the radio button is checked, in an invalid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-invalid-hover',
           ),
@@ -451,7 +444,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Invalid Focus Hover',
           description:
-            'The Radio Button in a checked invalid focus hover state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted and hovered over a checked, invalid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-invalid-focus-hover',
           ),
@@ -460,11 +453,10 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Valid',
           description: (
             <>
-              The Radio Button in a valid state changes style when the Radio
-              Button selection conforms to a specific format eg. updating
-              preferences in a <Link href="/components/form/">Form</Link>. The
-              Form component is used to apply validation behaviour. The style of
-              the label remains the same.
+              The radio button changes style when radio button selection
+              conforms to a specific format (e.g. updating preferences in a
+              form). Use the form to validate behaviour. The style of the label
+              remains the same.
             </>
           ),
           media: getIllustrationComponent(
@@ -475,10 +467,8 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Valid Focus',
           description: (
             <>
-              The Radio Button in a valid focus state communicates that a user
-              has highlighted a{' '}
-              <Link href="/components/checkbox/">Checkbox</Link>, using an input
-              method such as a keyboard or voice.
+              Communicates that a user has highlighted a valid radio button
+              (e.g. via keyboard or voice).
             </>
           ),
           media: getIllustrationComponent(
@@ -488,7 +478,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Valid Hover',
           description:
-            'The Radio Button has a valid hover state. The style of the Radio Button input changes to visually communicate and provide feedback to the user that the Radio Button is in a valid state and hovered over. The style of the label remains the same.',
+            'The radio button input changes style to let the user know the radio button is in a valid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/radio-button/states/valid-hover',
           ),
@@ -496,7 +486,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Valid Focus Hover',
           description:
-            'The Radio Button in a valid focus hover state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted and hovered over a valid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/valid-focus-hover',
           ),
@@ -504,7 +494,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Valid',
           description:
-            'The Radio Button has a checked valid state. The style of the Radio Button input changes to visually communicate and provide feedback to the user that the Radio Button has been checked and is in a valid state. The style of the label remains the same.',
+            'The radio button input changes style to let the user know the radio button is checked and in a valid state. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-valid',
           ),
@@ -512,7 +502,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Valid Focus',
           description:
-            'The Radio Button in a checked valid focus state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted a checked, valid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-valid-focus',
           ),
@@ -520,7 +510,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Valid Hover',
           description:
-            'The Radio Button has a checked valid hover state. The style of the Radio Button input changes to visually communicate and provide feedback to the user that the Radio Button has been checked and is in a valid state, and hovered over. The style of the label remains the same.',
+            'The radio button input changes style to let the user know the radio button is checked, in a valid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-valid-hover',
           ),
@@ -528,7 +518,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked Valid Focus Hover',
           description:
-            'The Radio Button in a checked valid focus hover state communicates that a user has highlighted a Radio Button, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted and hovered over a valid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/states/checked-valid-focus-hover',
           ),
@@ -537,17 +527,15 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Disabled',
           description: (
             <>
-              The Radio Button in a disabled state communicates that a Radio
-              Button exists, but is not available to the user in that scenario.
-              When the user&apos;s cursor hovers over a Radio Button in a
-              disabled state, the cursor shows as not allowed.
+              Communicates that a radio button exists, but isn’t available in
+              that scenario. When the user hovers over a radio button in a
+              disabled state, the cursor shows as ‘not allowed’.
               <br />
               <br />
-              Disabled Radio Buttons are often used to maintain layout
-              consistency and communicate that a Radio Button may become
-              available if another condition has been met. The style of the
-              label (colour) also changes to indicate that the Radio Button is
-              disabled.
+              Disabled radio buttons maintain layout consistency and communicate
+              that a radio button may become available if another condition is
+              met. The style of the label (colour) changes to indicate that the
+              radio button is disabled.
             </>
           ),
           media: getIllustrationComponent(
@@ -558,17 +546,15 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Checked Disabled',
           description: (
             <>
-              The Radio Button in a checked disabled state communicates that a
-              Radio Button exists, but is not available to the user in that
-              scenario. When the user&apos;s cursor hovers over a Radio Button
-              in a checked disabled state, the cursor shows as not allowed.
+              Communicates that a radio button exists, but isn’t available in
+              that scenario. When the user hovers over a radio button in a
+              checked disabled state, the cursor shows as ‘not allowed’.
               <br />
               <br />
-              Disabled checked Radio Buttons are often used to maintain layout
-              consistency and communicate that a Radio Button may become
-              available if another condition has been met. The style of the
-              label (colour) also changes to indicate that the Radio Button is
-              checked and disabled.
+              Disabled checked radio buttons maintain layout consistency and
+              communicate that a radio button may become available if another
+              condition is met. The style of the label (colour) changes to
+              indicate that the radio button is checked and disabled.
             </>
           ),
           media: getIllustrationComponent(
@@ -577,16 +563,15 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         },
       ],
       notice:
-        'The Feedback element becomes visible (configurable) on state change, eg hover.',
+        'The feedback element becomes visible (configurable) on state change (e.g. hover).',
     }}
     behaviors={{
-      introduction:
-        'The following guidance describes how the Radio Button component behaves.',
+      introduction: 'Here’s how the radio button behaves:',
       cards: [
         {
           title: 'Label overflow wrap',
           description:
-            'When a Label is too long for the available horizontal space, it wraps to form another line.',
+            'When a label is too long for the available horizontal space, it wraps to form another line.',
           media: getIllustrationComponent(
             'components/radio-button/behaviours/label-overflow-wrap',
           ),
@@ -594,7 +579,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Clickable area',
           description:
-            'The Radio Button feedback element indicates the minimum clickable area for the Radio Button input (also known as hit area, or touch target area). The size of the clickable area changes according to the size of the Radio Button. The associated Label is also clickable next to the Radio Button.',
+            'The radio button feedback element indicates the minimum clickable area for the radio button input (also known as hit area or touch target area). The size of the clickable area changes according to the size of the radio button. The associated label is also clickable.',
           media: getIllustrationComponent(
             'components/radio-button/behaviours/clickable-area',
           ),
@@ -602,7 +587,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Focusable area',
           description:
-            'Both the Radio Button input and Label are interactive, and a user can hover over either, but only the Radio Button input itself is focusable by using an input method such as a keyboard or voice.',
+            'The radio button input and label are both interactive, and a user can hover over either, but only the radio button input is focusable (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/radio-button/behaviours/focusable-area',
           ),
@@ -611,15 +596,11 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Validation',
           description: (
             <>
-              The Radio Button validation rules can be defined for onSubmit or
-              onBlur, for both the initial validation and re-validation using
-              the Form.
+              Use the form to choose whether the radio button validates onSubmit
+              or onBlur, for both the initial validation and re-validation. See
+              the form page for more.
               <br />
               <br />
-              <Link href="/components/form/">
-                For more information, please refer to the Form component
-              </Link>
-              .
               <InlineMessage
                 icon={infoIcon}
                 role="region"
@@ -627,8 +608,8 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
                 title="Note"
                 overrides={{marginBlockStart: 'space050'}}
               >
-                Validation only works if the FormInput Radio Button uses the
-                Form component.
+                Validation only works if the form input radio button uses the
+                form component.
               </InlineMessage>
             </>
           ),
@@ -639,7 +620,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Exclusive selection',
           description:
-            'Checking a Radio Button in a Radio Group will uncheck all other Radio Buttons in that group.',
+            'Checking a radio button in a radio group will uncheck all other radio buttons in that group.',
           media: getIllustrationComponent(
             'components/radio-button/behaviours/autofocus',
           ),
@@ -647,7 +628,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Autofocus',
           description:
-            'The Radio Button can be set to be auto-focused on page load (when mounted).',
+            'You can auto-focus on the radio button on page load (when mounted).',
           media: getIllustrationComponent(
             'components/radio-button/behaviours/autofocus',
           ),
@@ -660,12 +641,12 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
               unchecked by default (controlled or uncontrolled).
               <br />
               <br />
-              Adding <InlineCode>checked</InlineCode> to the native HTML element
-              will set the Radio Button as selected by default.
+              Add checked to the native HTML element to select the radio button
+              by default.
               <br />
               <br />
-              Voiceover will read out the Radio Button to the user and let them
-              know it is selected.
+              Screen readers will read the radio button aloud to the user and
+              let them know it’s selected.
             </>
           ),
           media: getIllustrationComponent(
@@ -675,8 +656,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Radio Button component.',
+      introduction: 'Here’s how and when to use the radio button:',
       cards: [
         {
           description:
@@ -723,20 +703,16 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
     accessibility={{
       introduction: (
         <>
-          The Radio Button has the following accessibility considerations:
           <Block spaceStack="space100" />
           <ContentText title="Grouping Radio Buttons" titleAs="span">
-            It is recommended to{' '}
-            <Link
-              target="_blank"
-              href="https://www.w3.org/TR/wai-aria-1.2/#group"
-            >
-              group
-            </Link>{' '}
-            Radio Buttons together in a RadioGroup. Other related elements such
-            as Labels and Assistive Text should be grouped together using the
-            Fieldset component, with a title attributed to the elements that
-            appear in the Fieldset, called a Legend.
+            Group radio buttons and related elements (such as labels and
+            assistive text) together using the fieldset component with a title
+            attributed to the elements called a legend.
+            <br />
+            <br />A fieldset groups related form controls, making them easier to
+            understand. It can also allow users to focus on smaller and more
+            manageable chunks, rather than trying to grasp the entire form at
+            once.
           </ContentText>
         </>
       ),
@@ -746,7 +722,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           {
             order: 1,
             element: 'Radio Button input',
-            role: 'Focusses to the Radio Button input',
+            role: 'Focusses on the radio button input',
           },
         ],
       },
@@ -756,22 +732,23 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Tab', 'Shift'],
             description:
-              'Move focus into and out of the Radio Group. When focus moves into a Radio Group. If a Radio Button is checked, focus is set on the checked Radio Button. If none of the Radio Buttons are checked, focus is set on the first Radio Rutton in the group.',
+              'Moves focus into and out of the radio group. If a radio button is checked, focus is set on the checked radio button. If none of the radio buttons are checked, focus is set on the first radio button in the group.',
           },
           {
             command: ['Right arrow', 'Down arrow'],
-            description: 'To go forward and select next Radio Button.',
+            description: 'Go forward and select next radio button.',
           },
           {
             command: ['Left arrow', 'Up arrow'],
-            description: 'To go back and select previous Radio Button.',
+            description: 'Go back and select previous radio button.',
           },
           {
             command: ['Space'],
             description: (
               <>
-                If the Radio Button with focus is not checked, changes the state
-                to <InlineCode>checked</InlineCode>, otherwise, does nothing.
+                If the radio button with focus isn’t checked, changes the state
+                to checked. Otherwise, does nothing
+                <InlineCode>checked</InlineCode>, otherwise, does nothing.
                 <Block spaceStack="space030" />
                 <InlineMessage
                   icon={infoIcon}
@@ -779,7 +756,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
                   aria-label="Space"
                   title="Note"
                 >
-                  The state where a Radio Button is not checked only occurs on
+                  The state where a radio button is not checked only occurs on
                   page load.
                 </InlineMessage>
               </>
@@ -796,7 +773,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Radio Button.',
+              'Defines a string that labels the action that will be performed when the user interacts with the radio button.',
             userSupplied: true,
           },
           {
@@ -804,7 +781,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-required',
             value: 'object',
             description:
-              'This attribute informs the user that an element is required. When set to true, screen readers notify users that the element is required.',
+              'Informs the user that an element is required. When set to ‘true’, screen readers notify users that the element is required.',
             userSupplied: true,
           },
         ],
@@ -813,31 +790,31 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       introduction: (
         <>
-          The Radio Button has a range of props that can be used to define an
-          appropriate experience for different use cases.{' '}
-          <InlineMessage overrides={{marginBlockStart: 'space080'}}>
-            There are three components exported from the package; one for use
-            within the{' '}
-            <Link href="/components/form/">NewsKit Form component</Link>, one
-            for use as a controlled component, and the RadioGroup component that
-            is used to group Radio Buttons together.
-          </InlineMessage>
+          This package exports three components: a form input radio button for
+          use within the <Link href="/components/form/">form component</Link> a
+          radio button for use as a controlled component (e.g. where you have a
+          custom validation mechanism) and the radio group for grouping radio
+          buttons together.
+          <br />
+          <br />
+          All have a range of props to define the experience in different use
+          cases.
         </>
       ),
       components: [
-        {
-          title: 'FormInput Radio Button',
-          summary: (
-            <>
-              The FormInput Radio Button has a range of props that can be used
-              to define an appropriate experience for different use cases. Use
-              this component within the{' '}
-              <Link href="/components/form/">NewsKit Form component</Link>.
-            </>
-          ),
-          propsRows: commonPropsRows('FormInput'),
-          overridesRows: commonOverridesRows,
-        },
+        // {
+        //   title: 'FormInput Radio Button',
+        //   summary: (
+        //     <>
+        //       The FormInput Radio Button has a range of props that can be used
+        //       to define an appropriate experience for different use cases. Use
+        //       this component within the{' '}
+        //       <Link href="/components/form/">NewsKit Form component</Link>.
+        //     </>
+        //   ),
+        //   propsRows: commonPropsRows('FormInput'),
+        //   overridesRows: commonOverridesRows,
+        // },
         {
           title: 'RadioButton',
           summary: `The Radio Button has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.`,
@@ -847,7 +824,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
               type: 'string',
               description: (
                 <>
-                  If provided, defines name of the input element, used when
+                  If provided, defines name of the input element. Use when
                   submitting an{' '}
                   <Link href="/components/radio-button/">HTML form</Link>.
                 </>
