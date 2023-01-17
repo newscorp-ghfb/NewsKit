@@ -85,7 +85,7 @@ executors:
 
   kubectl-deploy:
     docker:
-      - image: nukengprodservice/kubectl:0.1.51
+      - image: nukengprodservice/kubectl:0.1.152
 
   terraform:
     docker:
