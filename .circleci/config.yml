@@ -1005,8 +1005,8 @@ jobs:
             FILENAME=auth.env
             FILESIZE=$(stat -c%s "$FILENAME")
             echo "Size of $FILENAME = $FILESIZE bytes."
-            echo "I am now running  nukubectl..."
-            (nukubectl || true) | ((export || true) || grep AWS_ > auth.env)
+            echo "I am now running  nukubectl...will this work?"
+            (kubectl || true) | ((export || true) || grep AWS_ > auth.env)
             echo "end of test"
             echo "I am now running $(egrep -v '^#' auth.env | xargs)"
             export $(egrep -v '^#' auth.env | xargs)
