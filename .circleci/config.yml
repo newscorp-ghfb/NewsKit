@@ -1000,12 +1000,14 @@ jobs:
             export VERSION=$(jq -r .version package.json)
             echo "I am now going to export $BASH_ENV"
             echo "export VERSION=${VERSION}" >> $BASH_ENV
-            echo "i am now running kubectl config view "
-            kubectl config view 
-            echo "what is showing here?"
+            echo "Creating auth.env file"
+            export | grep AWS_ > auth.env
             FILENAME=auth.env
             FILESIZE=$(stat -c%s "$FILENAME")
             echo "Size of $FILENAME = $FILESIZE bytes."
+            echo "I am now running  nukubectl..."
+            nukubectl | auth.env
+            echo "end of test"
             echo "I am now running  nukubectl | grep "export AWS_" > auth.env"
             nukubectl export | grep AWS_ > auth.env 
             echo "I am now running $(egrep -v '^#' auth.env | xargs)"
