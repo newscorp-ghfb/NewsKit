@@ -1006,7 +1006,7 @@ jobs:
             FILESIZE=$(stat -c%s "$FILENAME")
             echo "Size of $FILENAME = $FILESIZE bytes."
             echo "I am now running  nukubectl..."
-            nukubectl | export | grep AWS_ > auth.env
+            nukubectl | "export" | grep "AWS_" > auth.env
             echo "end of test"
             echo "I am now running  nukubectl | grep "export AWS_" > auth.env"
             nukubectl export | grep AWS_ > auth.env 
