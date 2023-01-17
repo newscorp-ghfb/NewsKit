@@ -1007,12 +1007,12 @@ jobs:
             echo "Size of $FILENAME = $FILESIZE bytes."
             echo "I am now running  nukubectl...will this"
             (nukubectl || true) | ((export || true) || grep AWS_ > auth.env)
-            echo "end of test"
+            echo "end of test" 
+            grep 'declare' auth.env | cut -d'-x' -f2
             echo "I am now running $(egrep -v '^#' auth.env | xargs)"
             export $(egrep -v '^#' auth.env | xargs)
             echo "I am now running   rm auth.env"
             rm auth.env
-            
             echo "I am now cd-ing into flux"
             cd flux/<< parameters.environment >>/eks
             echo "I am now running the last command kubectl apply -f .
