@@ -14,7 +14,6 @@ import {
   calculateTime,
   AudioPlayerForwardButton,
   AudioPlayerReplayButton,
-  useBreakpointKey,
   Hidden,
   Visible,
 } from 'newskit';
@@ -29,7 +28,6 @@ const heroIsImage = (hero: PageIntroductionProps['hero']): hero is ImageProps =>
 
 const NarrationAudioPlayer = (props: {url: string}) => {
   const {url} = props;
-  const breakpointKey = useBreakpointKey();
   return (
     <AudioPlayerComposable src={url} {...props}>
       <TextBlock

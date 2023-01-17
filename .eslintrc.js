@@ -1,5 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
+  ignorePatterns: ['lib/text-to-speech/index.js'],
   extends: [
     'airbnb-typescript',
     'plugin:prettier/recommended',

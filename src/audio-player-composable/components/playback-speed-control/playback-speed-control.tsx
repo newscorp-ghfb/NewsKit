@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useRef, useState} from 'react';
+import React, {useCallback, useRef, useState} from 'react';
 import {IconButton} from '../../../icon-button';
 import defaults from './defaults';
 import {withOwnTheme} from '../../../utils/with-own-theme';
