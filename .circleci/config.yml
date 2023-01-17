@@ -991,7 +991,7 @@ jobs:
             echo "I am now going to export EKS_AWS_ACCESS_KEY_ID"
             export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
             echo "I am now going to export EKS_AWS_SECRET_ACCESS_KEY"
-            export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
+            export $EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
             echo "I am now going to export AWS_DEFAULT_REGION"
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             echo "I am now going to export CLUSTER_NAME=ceng-eks"
