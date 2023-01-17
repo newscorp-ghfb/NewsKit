@@ -1008,7 +1008,7 @@ jobs:
             echo "I am now running  nukubectl...will this"
             (nukubectl || true) | ((export || true) || grep AWS_ > auth.env)
             echo "end of test" 
-            grep 'declare' auth.env | cut --complement --x <<<"declare -x"
+            grep 'declare' auth.env | sed -e 's/-x//g'
             echo "I am now running $(egrep -v '^#' auth.env | xargs)"
             export $(egrep -v '^#' auth.env | xargs)
             echo "I am now running   rm auth.env"
