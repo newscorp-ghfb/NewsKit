@@ -6,6 +6,8 @@ const CopyPlugin = require('copy-webpack-plugin');
 // remove @next/mdx when doc pages are all tranformed to tsx
 const withMDX = require('./mdx');
 
+const isSiteEnvProduction = process.env.SITE_ENV === 'production';
+
 module.exports = withMDX({
   reactStrictMode: true,
   eslint: {
@@ -53,7 +55,7 @@ module.exports = withMDX({
   compiler: {
     emotion: {
       sourceMap: true,
-      autoLabel: 'always',
+      autoLabel: isSiteEnvProduction ? 'never' : 'always',
       labelFormat: '[local]',
       importMap: {
         newskit: {
