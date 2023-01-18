@@ -12,19 +12,23 @@ const ReleaseHeader = ({
 }: Pick<FullRelease, 'tag_name' | 'published_at' | 'change_level'>) => (
   <div>
     <Block as="span">
-      <LinkStandalone href={`${GITHUB_URL}/${REPO}/releases/tag/${tag_name}`}>
+      <LinkStandalone
+        overrides={{typographyPreset: 'utilitySubheading030'}}
+        href={`${GITHUB_URL}/${REPO}/releases/tag/${tag_name}`}
+      >
         {tag_name}
       </LinkStandalone>
     </Block>
     <TextBlock
       marginInlineStart="space020"
+      marginInlineEnd="space040"
       as="span"
-      stylePreset="inkSubtle"
-      typographyPreset="utilityBody030"
+      stylePreset="inkBase"
+      typographyPreset={{xs: 'utilityBody010', sm: 'utilityBody020'}}
     >
       {format(new Date(published_at), 'MMM d y')}
     </TextBlock>
-    <Block as="span" marginInlineStart="space040">
+    <Block as="span">
       <ReleaseBadges change_level={change_level} />
     </Block>
   </div>
