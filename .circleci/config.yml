@@ -1362,7 +1362,7 @@ workflows:
           environment: prod
           deployment_type: prod
           requires:
-            - eks_kubectl_deploy_staging
+            - eks_kubectl_deploy_dev
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
