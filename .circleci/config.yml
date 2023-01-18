@@ -1271,7 +1271,6 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - build_push_docker_ecr_dev
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_dev
           environment: pr
