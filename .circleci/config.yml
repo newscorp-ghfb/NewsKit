@@ -1261,7 +1261,7 @@ workflows:
             - build_docs_pr_with_no_base_url
             - install_cypress
             - build_storybook
-        - build_push_docker_ecr:
+      - build_push_docker_ecr:
           name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
           docker_version: pr
