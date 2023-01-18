@@ -221,9 +221,17 @@ export const StoryLogicalProps = () => (
         overrides={{paddingBlock: 'space050'}}
         aria-label="padding-overrides"
       >
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-        <BreadcrumbItem selected href={href}>
+        <BreadcrumbItem href={href} overrides={{paddingInline: 'space020'}}>
+          Breadcrumb item
+        </BreadcrumbItem>
+        <BreadcrumbItem href={href} overrides={{paddingInline: 'space020'}}>
+          Breadcrumb item
+        </BreadcrumbItem>
+        <BreadcrumbItem
+          selected
+          href={href}
+          overrides={{paddingInline: 'space020'}}
+        >
           Breadcrumb item
         </BreadcrumbItem>
       </Breadcrumbs>
@@ -233,9 +241,17 @@ export const StoryLogicalProps = () => (
         overrides={{marginBlock: 'space050'}}
         aria-label="margin-overrides"
       >
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-        <BreadcrumbItem href={href}>Breadcrumb item</BreadcrumbItem>
-        <BreadcrumbItem selected href={href}>
+        <BreadcrumbItem href={href} overrides={{marginInline: 'space020'}}>
+          Breadcrumb item
+        </BreadcrumbItem>
+        <BreadcrumbItem href={href} overrides={{marginInline: 'space020'}}>
+          Breadcrumb item
+        </BreadcrumbItem>
+        <BreadcrumbItem
+          selected
+          href={href}
+          overrides={{marginInline: 'space020'}}
+        >
           Breadcrumb item
         </BreadcrumbItem>
       </Breadcrumbs>
