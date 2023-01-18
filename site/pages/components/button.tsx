@@ -446,9 +446,9 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/button/usage/do-01'),
         },
         {
-          title: 'Don’t use full width-buttons in wide containers',
+          title: 'Don’t use full width buttons in wide containers',
           description:
-            'Full-width buttons are more appropriate for small devices or contained components.',
+            'Full width buttons are more appropriate for small devices or contained components.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/button/usage/dont1'),
         },
