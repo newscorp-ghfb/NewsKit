@@ -1212,7 +1212,7 @@ workflows:
         # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
         pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*'
         value: << pipeline.git.branch >>
-     jobs:
+    jobs:
       - init_aws:
           context: ncu-product-platforms-context
       - deploy_terraform:
