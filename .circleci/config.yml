@@ -1261,6 +1261,33 @@ workflows:
             - build_docs_pr_with_no_base_url
             - install_cypress
             - build_storybook
+      - eks_flux_deploy:
+          name: eks_flux_deploy_dev
+          environment: pr
+          context: ncu-newskit-site-dev
+          requires:
+            - build_storybook
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_dev
+          environment: pr
+          context: ncu-newskit-site-dev  
+      - eks_flux_deploy:
+          name: eks_flux_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          deployment_type: prod
+          requires:
+            - eks_kubectl_deploy_dev
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          requires:
+            - eks_flux_deploy_prod
       - no_visual_changes:
           type: approval
           requires:
