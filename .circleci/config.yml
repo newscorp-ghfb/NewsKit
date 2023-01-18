@@ -1261,21 +1261,16 @@ workflows:
             - build_docs_pr_with_no_base_url
             - install_cypress
             - build_storybook
-      - build_push_docker_ecr:
-          name: build_push_docker_ecr_dev
-          context: ncu-product-platforms-context
-          docker_version: pr
+      - eks_flux_deploy:
+          name: eks_flux_deploy_dev
+          environment: pr
+          context: ncu-newskit-site-dev
           requires:
             - build_storybook
             - lint
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-      - eks_flux_deploy:
-          name: eks_flux_deploy_dev
-          environment: pr
-          context: ncu-newskit-site-dev
-          requires:
             - build_push_docker_ecr_dev
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_dev
@@ -1286,14 +1281,14 @@ workflows:
       - eks_flux_deploy:
           name: eks_flux_deploy_prod
           context: ncu-newskit-site-prod
-          environment: prod
+          environment: pr
           deployment_type: prod
           requires:
             - eks_kubectl_deploy_dev
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
-          environment: prod
+          environment: pr
           requires:
             - eks_flux_deploy_prod
       - no_visual_changes:
