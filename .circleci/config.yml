@@ -1312,23 +1312,18 @@ workflows:
             - approve_publish_npm_dev
         # end
 
-      - build_push_docker_ecr:
-          name: build_push_docker_ecr_dev
-          context: ncu-product-platforms-context
-          docker_version: dev
-          requires:
-            - build_storybook
-            - lint
-            - test_unit_comps
-            - test_unit_docs
-            - test_e2e_comps
+
       - eks_flux_deploy:
           name: eks_flux_deploy_dev
           context: ncu-newskit-site-dev
           environment: dev
           deployment_type: dev
           requires:
-            - build_push_docker_ecr_dev
+            - build_storybook
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_dev
           context: ncu-newskit-site-dev
