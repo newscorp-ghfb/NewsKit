@@ -1568,13 +1568,13 @@ workflows:
           name: eks_flux_deploy_dev
           context: ncu-newskit-site-dev
           environment: dev
-          deployment_type: dev
+          deployment_type: pr
           requires:
             - build_push_docker_ecr_dev
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_dev
           context: ncu-newskit-site-dev
-          environment: dev
+          environment: pr
           requires:
             - eks_flux_deploy_dev
 
