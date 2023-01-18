@@ -1212,102 +1212,98 @@ workflows:
         # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
         pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*'
         value: << pipeline.git.branch >>
-    jobs:
-      - install_deps
-      - install_cypress
-      - download_headless_chrome
+     jobs:
+      - init_aws:
+          context: ncu-product-platforms-context
+      - deploy_terraform:
+          name: deploy_terraform_dns_dev
+          package: dns
+          context: ncu-product-platforms-context
+          environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_ecr_dev
+          package: ecr
+          context: ncu-product-platforms-context
+          tf_env: false
+          requires:
+            - init_aws
+      - install_deps:
+          context: ncu-product-platforms-context
+      - download_headless_chrome:
+          context: ncu-product-platforms-context
+      - install_cypress:
+          context: ncu-product-platforms-context
       - build_icons:
+          context: ncu-product-platforms-context
           requires:
             - install_deps
       - build_components:
+          context: ncu-product-platforms-context
           requires:
             - build_icons
       - build_storybook:
+          context: ncu-product-platforms-context
           requires:
             - build_icons
       - build_test_e2e:
+          context: ncu-product-platforms-context
           requires:
             - build_icons
       - lint:
+          context: ncu-product-platforms-context
           requires:
             - build_icons
       - test_unit_comps:
+          context: ncu-product-platforms-context
           requires:
             - build_icons
       - test_unit_docs:
+          context: ncu-product-platforms-context
           requires:
             - build_icons
-      - test_newskit_in_nextjs_app:
-          requires:
-            - build_components
       - test_e2e_comps:
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
             - install_cypress
-      - build_docs_pr_with_no_base_url:
-          context: ncu-product-platforms-context
+      - build_docs:
+          name: build_docs_dev
+          context: ncu-newskit-site-dev
           requires:
             - build_icons
       - test_broken_links_docs:
-          name: test_broken_links_docs_pr
+          name: test_broken_links_docs_dev
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr_with_no_base_url
+            - build_docs_dev
       - test_e2e_docs:
-          name: test_e2e_docs_pr
+          name: test_e2e_docs_dev
+          context: ncu-newskit-site-dev
+          requires:
+            - build_docs_dev
+            - install_cypress
+            - build_storybook
+      - test_newskit_in_nextjs_app:
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr_with_no_base_url
-            - install_cypress
+            - build_components
+
+      # Jobs for updating Percy baselines after PRs are merged
+      - comps_tests_conditional_run_to_update_baselines:
+          context: ncu-product-platforms-context
+          requires:
+            - download_headless_chrome
             - build_storybook
-      - eks_flux_deploy:
-          name: eks_flux_deploy_dev
-          environment: pr
-          context: ncu-newskit-site-dev
+      - docsite_tests_conditional_run_to_update_baselines:
+          context: ncu-product-platforms-context
           requires:
-            - build_storybook
-            - lint
-            - test_unit_comps
-            - test_unit_docs
-            - test_e2e_comps
-      - eks_kubectl_deploy:
-          name: eks_kubectl_deploy_dev
-          environment: pr
-          context: ncu-newskit-site-dev
-          requires:
-            - eks_flux_deploy_dev
-      - eks_flux_deploy:
-          name: eks_flux_deploy_prod
-          context: ncu-newskit-site-prod
-          environment: pr
-          deployment_type: prod
-          requires:
-            - eks_kubectl_deploy_dev
-      - eks_kubectl_deploy:
-          name: eks_kubectl_deploy_prod
-          context: ncu-newskit-site-prod
-          environment: pr
-          requires:
-            - eks_flux_deploy_prod
-      - no_visual_changes:
-          type: approval
-          requires:
-            - build_storybook
-            - install_cypress
-      - docs_and_comps_visual_changes:
-          type: approval
-          requires:
-            - build_storybook
-            - install_cypress
-      - docs_visual_changes:
-          type: approval
-          requires:
-            - build_storybook
+            - build_docs_dev
             - install_cypress
 
-      # Jobs for realising unstable NPM version
-      - approve_publish_npm_pr:
+      # Jobs for deploying unstable NewsKit version
+      - approve_publish_npm_dev:
           type: approval
           requires:
             - test_newskit_in_nextjs_app
@@ -1315,92 +1311,80 @@ workflows:
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs_pr
+            - test_e2e_docs_dev
       - publish_npm:
-          name: publish_npm_pr
+          name: publish_npm_dev
           context: ncu-product-platforms-context
           publish_dev: true
           requires:
-            - approve_publish_npm_pr
-      # End jobs for releasing unstable NPM version
+            - approve_publish_npm_dev
+        # end
 
-      - skip_percy_comps_check:
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_dev
           context: ncu-product-platforms-context
+          docker_version: dev
           requires:
-            - no_visual_changes
-            - download_headless_chrome
-      - skip_percy_docsite_check:
-          context: ncu-product-platforms-context
-          requires:
-            - no_visual_changes
-      - test_visual_comps_percy:
-          context: ncu-product-platforms-context
-          requires:
-            - docs_and_comps_visual_changes
-            - download_headless_chrome
-      - test_visual_docs_percy:
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs_pr_with_no_base_url
-            - install_cypress
-            - test_visual_comps_percy
-      - test_visual_docs_percy_2:
-          context: ncu-product-platforms-context
-          requires:
-            - build_docs_pr_with_no_base_url
-            - install_cypress
-            - docs_visual_changes
-      - skip_percy_comps_check_2:
-          context: ncu-product-platforms-context
-          requires:
-            - docs_visual_changes
-            - download_headless_chrome
-      - can_i_merge_checker:
-          context: ncu-product-platforms-context
-          requires:
-            - test_newskit_in_nextjs_app
+            - build_storybook
             - lint
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
-            - test_e2e_docs_pr
-            - test_broken_links_docs_pr
-      - init_aws:
-          context: ncu-product-platforms-context
-      - deploy_terraform:
-          name: deploy_terraform_ecr_pr
-          package: ecr
-          context: ncu-product-platforms-context
-          apply: false
-          tf_env: false
+            - test_e2e_docs_dev
+      - eks_flux_deploy:
+          name: eks_flux_deploy_dev
+          context: ncu-newskit-site-dev
+          environment: pr
+          deployment_type: dev
           requires:
-            - init_aws
-      - deploy_terraform:
-          name: deploy_terraform_s3_pr
-          package: s3
-          context: ncu-product-platforms-context
-          apply: false
-          tf_env: false
+            - build_push_docker_ecr_dev
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_dev
+          context: ncu-newskit-site-dev
           environment: pr
           requires:
-            - init_aws
+            - eks_flux_deploy_dev
+
       - build_docs:
-          name: build_docs_pr
-          context: ncu-newskit-site-pr
+          name: build_docs_prod_link
+          context: ncu-newskit-site-prod
           requires:
-            - build_icons
-      - push_s3:
-          name: deploy_to_s3
+            - eks_kubectl_deploy_dev
+      - build_push_docker_ecr:
+          name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
+          docker_version: prod
           requires:
-            - deploy_terraform_s3_pr
-            - build_docs_pr
-            - build_storybook
-      - post_pr_env_url_to_github_pr:
-          name: pr_enviroment_link
-          context: ncu-product-platforms-context
+            - build_docs_prod_link
+
+      - eks_flux_deploy:
+          name: eks_flux_deploy_staging
+          context: ncu-newskit-site-stage
+          deployment_type: prod
+          environment: staging
           requires:
-            - deploy_to_s3
+            - build_push_docker_ecr_prod
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_staging
+          context: ncu-newskit-site-stage
+          environment: staging
+          requires:
+            - eks_flux_deploy_staging
+
+      - eks_flux_deploy:
+          name: eks_flux_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          deployment_type: prod
+          requires:
+            - eks_kubectl_deploy_staging
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_prod
+          context: ncu-newskit-site-prod
+          environment: prod
+          requires:
+            - eks_flux_deploy_prod
+      # end
 
   pull_request_codemod:
     when:
