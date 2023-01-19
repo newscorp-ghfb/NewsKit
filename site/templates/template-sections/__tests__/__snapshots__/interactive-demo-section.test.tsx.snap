@@ -155,7 +155,7 @@ exports[`InteractiveDemoSection renders section as expected 1`] = `
   >
     <section
       class="emotion-0"
-      data-toc-indexed="Interactive Demo"
+      data-toc-indexed="Interactive demo"
       id="interactive-demo"
     >
       <div
@@ -192,7 +192,7 @@ exports[`InteractiveDemoSection renders section as expected 1`] = `
                   <h2
                     class="nk-headline-heading emotion-5"
                   >
-                    Interactive Demo
+                    Interactive demo
                   </h2>
                 </section>
               </div>
