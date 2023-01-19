@@ -1,33 +1,18 @@
-import React, {useState} from 'react';
-import {Slider, SliderProps, UnorderedList} from 'newskit';
+import React from 'react';
+import {Slider, StatefulSlider, UnorderedList, styled, Heading1} from 'newskit';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {LayoutProps} from '../../components/layout';
 import {MetaStatus} from '../../components/meta/types';
 import {IconFilledCircle} from '../../components/icons';
 import {
-  logicalPaddingOverrideProps,
   logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
-
-const DemoSlider = () => {
-  const [stateValues, setValues] = useState<number[]>([50]);
-  const onChange: SliderProps['onChange'] = newValues => {
-    setValues(newValues);
-  };
-  return (
-    <Slider
-      max={100}
-      min={0}
-      values={stateValues}
-      onChange={onChange}
-      thumbLabel
-    />
-  );
-};
+import {withProps} from '../../components/playground';
 
 const SliderComponent = (layoutProps: LayoutProps) => (
-  <ComponentPageTemplate
+  <ComponentPageTemplate<typeof Slider>
     headTags={{
       title: 'Slider',
       description:
@@ -57,8 +42,140 @@ const SliderComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the slider component, its variations, and configuration options.',
       playground: {
         componentName: 'slider',
-        component: DemoSlider,
-        knobs: [],
+        component: props => <StatefulSlider {...props} />,
+        knobs: [
+          {
+            name: 'Min',
+            propName: 'min',
+            value: 0,
+          },
+          {
+            name: 'Max',
+            propName: 'max',
+            value: 100,
+          },
+          {
+            name: 'Values',
+            propName: 'values',
+            value: [50],
+          },
+          {
+            name: 'Step',
+            propName: 'step',
+            value: 1,
+          },
+          {
+            name: 'Disabled',
+            propName: 'disabled',
+            value: false,
+          },
+          {
+            name: 'Min Label',
+            propName: 'minLabel',
+            options: [
+              {
+                label: 'Unset',
+                isDefault: true,
+                value: undefined,
+              },
+              {
+                label: 'Text',
+                value: '0%',
+              },
+              {
+                label: 'Component',
+                value: withProps(
+                  IconFilledCircle,
+                  {overrides: {size: 'sizing040'}},
+                  'MyLabelIcon',
+                ),
+              },
+            ],
+          },
+          {
+            name: 'Max Label',
+            propName: 'maxLabel',
+            options: [
+              {
+                label: 'Unset',
+                isDefault: true,
+                value: undefined,
+              },
+              {
+                label: 'Text',
+                value: '100%',
+              },
+              {
+                label: 'Component',
+                value: withProps(
+                  IconFilledCircle,
+                  {overrides: {size: 'sizing040'}},
+                  'MyLabelIcon',
+                ),
+              },
+            ],
+          },
+          {
+            name: 'Label Position',
+            propName: 'labelPosition',
+            options: [
+              {
+                label: 'Default (inline)',
+                isDefault: true,
+                value: 'inline',
+              },
+              {
+                label: 'before',
+                value: 'before',
+              },
+              {
+                label: 'after',
+                value: 'after',
+              },
+            ],
+          },
+          {
+            name: 'Thumb Label',
+            propName: 'thumbLabel',
+            options: [
+              {
+                label: 'Unset',
+                isDefault: true,
+                value: undefined,
+              },
+              {
+                label: 'true',
+                value: true,
+              },
+              {
+                label: 'Component',
+                value: withProps(
+                  styled(Heading1)`
+                    position: relative;
+                    top: 42px;
+                  `,
+                  {},
+                  'MyThumbLabel',
+                ),
+              },
+            ],
+          },
+          {
+            name: 'Vertical',
+            propName: 'vertical',
+            options: [
+              {
+                label: 'Unset',
+                isDefault: true,
+                value: undefined,
+              },
+              {
+                label: 'true',
+                value: true,
+              },
+            ],
+          },
+        ],
       },
     }}
     anatomy={{

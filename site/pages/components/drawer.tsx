@@ -26,7 +26,7 @@ const DrawerWrapper = styled.div`
   height: 300px;
 `;
 
-const Playground = ({open, ...state}: {open: boolean}) => {
+const Playground = ({open, ...state}: {open: boolean} & DrawerProps) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   React.useEffect(() => {
@@ -35,11 +35,7 @@ const Playground = ({open, ...state}: {open: boolean}) => {
 
   return (
     <DrawerWrapper>
-      <Drawer
-        {...(state as DrawerProps)}
-        open={isOpen}
-        onDismiss={() => setIsOpen(false)}
-      >
+      <Drawer {...state} open={isOpen} onDismiss={() => setIsOpen(false)}>
         Content
       </Drawer>
     </DrawerWrapper>
