@@ -23,6 +23,7 @@ const ReleaseBadges = ({change_level}: Pick<FullRelease, 'change_level'>) => {
       {badges.map(badge => (
         <Block key={badge} as="span" marginInlineEnd="space020">
           <Flag
+            size="small"
             overrides={{
               stylePreset: releaseBadgePresets[badge],
               typographyPreset: 'utilityLabel010',
