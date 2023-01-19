@@ -654,6 +654,14 @@ export const routes = [
               'A pair of components which can be used to show and hide content at different breakpoints.',
             illustration: 'components/visibility-illustration',
           },
+          {
+            title: 'Layer',
+            page: true,
+            id: '/components/layer',
+            description:
+              'Layers allow for the stacking of components and other elements, giving control over how they interact together and appear to users.',
+            illustration: 'components/layer-illustration',
+          },
         ],
       },
       {
