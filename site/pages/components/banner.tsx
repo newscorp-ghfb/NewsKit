@@ -428,7 +428,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: 'There are no SEO considerations for this component.',
     }}
     componentAPI={{

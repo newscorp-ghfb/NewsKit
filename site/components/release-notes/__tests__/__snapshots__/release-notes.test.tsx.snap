@@ -14,6 +14,7 @@ exports[`ReleaseNotes renders code snippets correctly 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  margin-block-start: 64px;
 }
 
 .emotion-1::before {
@@ -29,6 +30,33 @@ exports[`ReleaseNotes renders code snippets correctly 1`] = `
 }
 
 .emotion-2 {
+  margin: 0;
+  color: #111111;
+  font-family: "Bitter",serif;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-2 svg {
+  fill: #111111;
+}
+
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.2055em;
+  display: block;
+}
+
+.emotion-2::after {
+  content: '';
+  margin-top: -0.2275em;
+  display: block;
+}
+
+.emotion-3 {
   background-color: rgba(27, 31, 35, 0.05);
   color: #6A6A6A;
   border-radius: 3px;
@@ -44,27 +72,29 @@ exports[`ReleaseNotes renders code snippets correctly 1`] = `
     <div
       class="emotion-1"
     >
-      <h3>
+      <p
+        class="emotion-2"
+      >
         Emotion packages as peer dependencies\\r\\nStarting from version 6, newskit does not include 
         <code
-          class="emotion-2"
+          class="emotion-3"
         >
           @emotion/styled
         </code>
          & 
         <code
-          class="emotion-2"
+          class="emotion-3"
         >
           @emotion/react
         </code>
          libraries, which means you need to install these separately:\\r\\n
         <code
-          class="emotion-2"
+          class="emotion-3"
         >
           \\r\\n// npm\\r\\nnpm install newskit@6.0.0 @emotion/react @emotion/styled\\r\\n// or yarn\\r\\nyarn add newskit@6.0.0 @emotion/react @emotion/styled\\r\\n
         </code>
         \\r\\n---\\r\\n
-      </h3>
+      </p>
     </div>
   </div>
 </DocumentFragment>
@@ -84,6 +114,7 @@ exports[`ReleaseNotes renders correctly 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  margin-block-start: 64px;
 }
 
 .emotion-1::before {
@@ -99,118 +130,70 @@ exports[`ReleaseNotes renders correctly 1`] = `
 }
 
 .emotion-2 {
-  display: inline-block;
-  color: #3358CC;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-2 {
-    transition-property: color,fill;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-2 {
-    transition-property: color,fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
-  }
+  margin: 0;
+  color: #111111;
+  font-family: "Bitter",serif;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-2 svg {
-  fill: #3358CC;
+  fill: #111111;
 }
 
-.emotion-2:hover:not(:disabled) {
-  color: #254CAC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+.emotion-2::before {
+  content: '';
+  margin-bottom: -0.2055em;
+  display: block;
 }
 
-.emotion-2:hover:not(:disabled) svg {
-  fill: #254CAC;
-}
-
-.emotion-2:active:not(:disabled) {
-  color: #14328D;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2:active:not(:disabled) svg {
-  fill: #14328D;
-}
-
-.emotion-2:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
+.emotion-2::after {
+  content: '';
+  margin-top: -0.2275em;
+  display: block;
 }
 
 .emotion-3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-block-start: 24px;
+  margin-block-end: 48px;
+}
+
+.emotion-4:last-child+div {
+  margin: 0;
+}
+
+.emotion-5 {
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(-4px/2);
-  margin-right: calc(-4px/2);
 }
 
-.emotion-4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(4px/2);
-  margin-right: calc(4px/2);
+.emotion-6 {
+  margin-right: 8px;
+  color: #3B3B3B;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
 }
 
-.emotion-5 {
-  margin: 0;
-  font-family: "DM Sans",sans-serif;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-  display: block;
+.emotion-6 svg {
+  fill: #3B3B3B;
 }
 
-.emotion-5::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-5::after {
-  content: '';
-  margin-top: -0.409em;
+.emotion-6 svg,
+.emotion-6 img {
   display: block;
 }
 
@@ -218,6 +201,7 @@ exports[`ReleaseNotes renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  color: #3B3B3B;
   fill: #3B3B3B;
   vertical-align: unset;
   display: inline-block;
@@ -240,6 +224,221 @@ exports[`ReleaseNotes renders correctly 1`] = `
 }
 
 .emotion-7.emotion-7 {
+  width: 8px;
+  height: 8px;
+  color: #3B3B3B;
+  fill: #3B3B3B;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-7.emotion-7 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-7.emotion-7 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-9 {
+  margin: 0;
+  color: #3B3B3B;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-10 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  margin-block-end: 16px;
+}
+
+.emotion-10::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-10::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-11 {
+  display: inline-block;
+  color: #3358CC;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: color,fill;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: color,fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 svg {
+  fill: #3358CC;
+}
+
+.emotion-11:hover:not(:disabled) {
+  color: #254CAC;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-11:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-11:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #14328D;
+}
+
+.emotion-11:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(-4px/2);
+  margin-right: calc(-4px/2);
+}
+
+.emotion-13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: calc(4px/2);
+  margin-right: calc(4px/2);
+}
+
+.emotion-14 {
+  margin: 0;
+  font-family: "DM Sans",sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  display: block;
+}
+
+.emotion-14::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-14::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-16 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-16 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-16 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-16.emotion-16 {
   width: 16px;
   height: 16px;
 }
@@ -250,144 +449,180 @@ exports[`ReleaseNotes renders correctly 1`] = `
     <div
       class="emotion-1"
     >
-      <h3>
+      <p
+        class="emotion-2"
+      >
         New Features 🎉
-      </h3>
+      </p>
       
 
-      <ul>
-        
-
-        <li>
-          feat(
-          <a
-            class="emotion-2"
-            href="https://nidigitalsolutions.jira.com/browse/PPDSC-2151"
+      <ul
+        class="emotion-3"
+        role="list"
+      >
+        <li
+          class="emotion-4"
+        >
+          <div
+            class="emotion-5"
           >
-            <span
-              class="emotion-3"
+            <div
+              aria-hidden="true"
+              class="emotion-6"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-7 emotion-8"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+                />
+              </svg>
+            </div>
+            <p
+              class="emotion-9"
             >
               <span
-                class="emotion-4"
+                class="emotion-10"
               >
-                <span
-                  class="emotion-5"
+                feat(
+                <a
+                  class="emotion-11"
+                  href="https://nidigitalsolutions.jira.com/browse/PPDSC-2151"
                 >
-                  PPDSC-2151
-                </span>
-              </span>
-              <span
-                class="emotion-4"
-              >
-                <svg
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                  <span
+                    class="emotion-12"
+                  >
+                    <span
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-14"
+                      >
+                        PPDSC-2151
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      <svg
+                        class="emotion-16 emotion-8"
+                        fill="currentColor"
+                        focusable="false"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          External link
+                        </title>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+                ): Add Outline Style Presets by 
+                <a
+                  class="emotion-11"
+                  href="https://github.com/tbradbury"
                 >
-                  <title>
-                    External link
-                  </title>
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                  />
-                </svg>
-              </span>
-            </span>
-          </a>
-          ): Add Outline Style Presets by 
-          <a
-            class="emotion-2"
-            href="https://github.com/tbradbury"
-          >
-            <span
-              class="emotion-3"
-            >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
+                  <span
+                    class="emotion-12"
+                  >
+                    <span
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-14"
+                      >
+                        @tbradbury
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      <svg
+                        class="emotion-16 emotion-8"
+                        fill="currentColor"
+                        focusable="false"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          External link
+                        </title>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+                 in 
+                <a
+                  class="emotion-11"
+                  href="https://github.com/newscorp-ghfb/newskit/pull/214"
                 >
-                  @tbradbury
-                </span>
+                  <span
+                    class="emotion-12"
+                  >
+                    <span
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-14"
+                      >
+                        #214
+                      </span>
+                    </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      <svg
+                        class="emotion-16 emotion-8"
+                        fill="currentColor"
+                        focusable="false"
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <title>
+                          External link
+                        </title>
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </a>
               </span>
-              <span
-                class="emotion-4"
-              >
-                <svg
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    External link
-                  </title>
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                  />
-                </svg>
-              </span>
-            </span>
-          </a>
-           in 
-          <a
-            class="emotion-2"
-            href="https://github.com/newscorp-ghfb/newskit/pull/214"
-          >
-            <span
-              class="emotion-3"
-            >
-              <span
-                class="emotion-4"
-              >
-                <span
-                  class="emotion-5"
-                >
-                  #214
-                </span>
-              </span>
-              <span
-                class="emotion-4"
-              >
-                <svg
-                  class="emotion-7 emotion-8"
-                  fill="currentColor"
-                  focusable="false"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>
-                    External link
-                  </title>
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                  />
-                </svg>
-              </span>
-            </span>
-          </a>
+            </p>
+          </div>
         </li>
-        
-
       </ul>
     </div>
   </div>
