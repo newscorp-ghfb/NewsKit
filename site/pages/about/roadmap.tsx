@@ -127,6 +127,7 @@ const Roadmap = ({
             description={
               <>
                 <TextBlock
+                  stylePreset="inkBase"
                   typographyPreset={{
                     xs: 'editorialParagraph020',
                     md: 'editorialParagraph030',

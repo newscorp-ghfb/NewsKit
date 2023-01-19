@@ -136,6 +136,54 @@ export const routes = [
           },
         ],
       },
+      {
+        title: 'Accessibility',
+        id: '/getting-started/accessibility',
+        subNav: [
+          {
+            title: 'Getting started',
+            page: true,
+            id: '/getting-started/accessibility/getting-started',
+            description: 'Equal access for everyone.',
+            illustration: 'guides/accessibility-getting-started/hero',
+            cardTitle: 'Getting started',
+          },
+          {
+            title: 'Design',
+            page: true,
+            id: '/getting-started/accessibility/design',
+            description: 'Design provides the foundations for accessibility.',
+            illustration: 'guides/accessibility-design/hero',
+            cardTitle: 'Design',
+          },
+          {
+            title: 'Code',
+            page: true,
+            id: '/getting-started/accessibility/code',
+            description:
+              'Building to WCAG standards maintains quality and supports assistive technologies.',
+            illustration: 'guides/accessibility-code/hero',
+            cardTitle: 'Code',
+          },
+          {
+            title: 'Write',
+            page: true,
+            id: '/getting-started/accessibility/write',
+            description: 'Clear copy in plain language benefits everyone.',
+            illustration: 'guides/accessibility-write/hero',
+            cardTitle: 'Write',
+          },
+          {
+            title: 'Test',
+            page: true,
+            id: '/getting-started/accessibility/testing',
+            description:
+              'Tools and checkers to help you test against accessibility guidelines.',
+            illustration: 'guides/accessibility-test/hero',
+            cardTitle: 'Test',
+          },
+        ],
+      },
     ],
   },
   {
