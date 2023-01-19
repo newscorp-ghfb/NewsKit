@@ -361,14 +361,6 @@ const BannerComponent = (layoutProps: LayoutProps) => (
             'components/banner/banner-dont-5-illustration',
           ),
         },
-        // {
-        //   description:
-        //     "Keep a Banner's message clear and concise, describing what's happening, and what the user needs to know and do. ",
-        //   kind: UsageKind.DO,
-        //   media: getIllustrationComponent(
-        //     'components/banner/banner-do-6-illustration',
-        //   ),
-        // },
       ],
     }}
     accessibility={{
