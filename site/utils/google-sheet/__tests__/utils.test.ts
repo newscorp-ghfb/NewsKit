@@ -88,7 +88,6 @@ describe('parseCMSResponse', () => {
   it('should return the parsed content if all keys are valid', () => {
     const response = [
       ['required_key', 'required_value'],
-      ['optional_key', 'optional_value'],
       ['dynamic_key_0', 'dynamic_value_0'],
       ['dynamic_key_1', 'dynamic_value_1'],
     ];
@@ -96,16 +95,12 @@ describe('parseCMSResponse', () => {
       required: {
         required_key: 'required_key',
       },
-      optional: {
-        optional_key: 'optional_key',
-      },
       dynamic: {
         dynamic_key_: 'dynamic_key_',
       },
     });
     expect(parsed).toEqual({
       required_key: 'required_value',
-      optional_key: 'optional_value',
       dynamic_key_0: 'dynamic_value_0',
       dynamic_key_1: 'dynamic_value_1',
     });

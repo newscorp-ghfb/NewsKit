@@ -21,11 +21,9 @@ export const parseCMSResponse = <T extends CMSProps>(
   cmsResponse: CMSResponse,
   {
     required,
-    optional = {},
     dynamic = {},
   }: {
     required: Record<string, string>;
-    optional?: Record<string, string>;
     dynamic?: Record<string, string>;
   },
 ): T => {
@@ -36,7 +34,7 @@ export const parseCMSResponse = <T extends CMSProps>(
 
   const missingKeys = Object.keys(required).filter(key => !content[key]);
   const invalidKeys = Object.keys(content).filter(key => {
-    if (required[key] || optional[key]) {
+    if (required[key]) {
       return false;
     }
     const prefixMatch = Object.keys(dynamic).find(k =>
