@@ -53,6 +53,7 @@ export interface ImageProps
   renderOnServer?: boolean;
   loading?: LoadingType;
   sources?: ImageSource[];
+  hidePlaceholderOnError?: boolean;
   overrides?: {
     maxHeight?: MQ<MaxHeightProperty<string>>;
     maxWidth?: MQ<MaxWidthProperty<string>>;

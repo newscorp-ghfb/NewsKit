@@ -949,6 +949,39 @@ exports[`Image render with incorect path 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Image render with incorect path and hidePlaceholderOnError 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-top: 0;
+  height: auto;
+  width: 100%;
+  border-radius: 0;
+}
+
+.emotion-1 {
+  opacity: 1;
+  display: block;
+  border-radius: inherit;
+  height: auto;
+  width: 100%;
+  -webkit-animation: fadeIn 300ms;
+  animation: fadeIn 300ms;
+}
+
+<picture
+    class="emotion-0"
+  >
+    <img
+      class="emotion-1"
+      src="incorrect-path"
+    />
+  </picture>
+</DocumentFragment>
+`;
+
 exports[`Image render with multiple sources 1`] = `
 <DocumentFragment>
   .emotion-0 {

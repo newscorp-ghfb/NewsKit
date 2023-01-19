@@ -29,6 +29,7 @@ const ImageComponent = React.forwardRef<HTMLImageElement, ImageProps>(
       loading,
       src,
       sources = [],
+      hidePlaceholderOnError = false,
       ...props
     },
     ref,
@@ -40,7 +41,12 @@ const ImageComponent = React.forwardRef<HTMLImageElement, ImageProps>(
       isLoading,
       setIsLoading,
     ]);
-    const onError = useCallback(() => setError(true), [setError]);
+    const onError = useCallback(() => {
+      setIsLoading(false);
+      if (!hidePlaceholderOnError) {
+        setError(true);
+      }
+    }, [setError, setIsLoading, hidePlaceholderOnError]);
 
     useClientSide(onLoad, imageRef);
 
@@ -79,6 +85,8 @@ const ImageComponent = React.forwardRef<HTMLImageElement, ImageProps>(
       if (!renderOnServer && isLoading) return true;
       return false;
     }, [hasError, renderOnServer, isLoading, currentSrc]);
+
+    console.log({showLoading: showLoading(), hasError, isLoading});
 
     const [PlaceholderComponent, placeholderProps] = getComponentOverrides(
       /* istanbul ignore next  */

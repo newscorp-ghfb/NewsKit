@@ -88,6 +88,16 @@ describe('Image', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('render with incorect path and hidePlaceholderOnError', () => {
+    const {getByRole, asFragment} = renderWithTheme(Image, {
+      src: 'incorrect-path',
+      hidePlaceholderOnError: true,
+    });
+    const image = getByRole('img');
+    fireEvent.error(image);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   test('render with multiple sources', () => {
     const {asFragment} = renderWithTheme(Image, {
       src: 'image.jpg',
