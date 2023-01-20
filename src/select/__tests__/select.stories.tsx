@@ -1352,61 +1352,6 @@ export const SelectVirtualizationNotFixedSize = () => {
   );
 };
 
-const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-];
-const days = Array.from(new Array(30)).map((_, index) => String(index));
-
-export const SelectDayAndMnth = () => {
-  const [month, setMonth] = React.useState('');
-  const [day, setDay] = React.useState('');
-
-  return (
-    <>
-      <p>
-        selected month: {month}, selected day: {day}
-      </p>
-
-      <Select
-        placeholder="Select month"
-        onChange={v => {
-          setMonth(v.target.value);
-          setDay('');
-        }}
-        controlled
-      >
-        {months.map(m => (
-          <SelectOption selected={m === month} value={m}>
-            {m}
-          </SelectOption>
-        ))}
-      </Select>
-      <Select
-        placeholder="Select day"
-        controlled
-        onChange={v => setDay(v.target.value)}
-      >
-        {days.map(i => (
-          <SelectOption selected={i === day} value={i}>
-            {i}
-          </SelectOption>
-        ))}
-      </Select>
-    </>
-  );
-};
-
 export default {
   title: 'Components/select',
   component: () => 'None',
