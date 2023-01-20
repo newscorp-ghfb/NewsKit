@@ -430,25 +430,27 @@ const GridCellComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the grid.',
+      introduction: 'Here’s how and when to use the grid:',
       layout: '2-span',
       cards: [
         {
+          title: 'Do align content',
           description:
-            'Align your content. Whenever possible, make sure page elements are lined up both horizontally and/or vertically.',
+            'Whenever possible, make sure page elements are lined up both horizontally and/or vertically.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/grid-cell/usage/do-01'),
         },
         {
+          title: 'Avoid aligning everything to the grid',
           description:
-            'Avoid aligning everything to the grid. Individual elements within the cells should align with each other rather than with the grid columns.',
+            'Individual elements within the cells should align with each other rather than with the grid columns.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/grid-cell/usage/dont-01'),
         },
         {
+          title: 'Avoid making gutters too wide',
           description:
-            'Avoid making gutters too wide. They should be balanced against the column width to ensure page elements relate to each other.',
+            'They should be balanced against the column width to ensure page elements relate to each other.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/grid-cell/usage/dont-02'),
         },

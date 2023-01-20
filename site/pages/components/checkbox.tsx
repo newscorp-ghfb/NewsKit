@@ -580,64 +580,53 @@ const CheckboxComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the checkbox:',
       cards: [
         {
+          title: 'Do use checkboxes for up to 7 options',
           description:
-            'When medium or large checkboxes are too visually prominent, use small checkboxes instead (e.g. in a form, to show more options at a glance).',
+            'If you have more than 7 checkboxes in a group, use a select.',
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/checkbox/usage/do-1'),
+        },
+        {
+          title: 'Do use checkboxes for selecting multiple options',
+          description:
+            'Use checkboxes either for selecting multiple options from a list, or to check or uncheck a control. If users can only select a single option, use the radio button instead.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-2'),
         },
         {
+          title: 'Do give checkboxes a label',
           description:
-            'Use checkboxes either for selecting multiple options from a list, or to check or uncheck a single option. If users can only select a single option, use the radio button instead.',
+            'Checkboxes should have an associated label to give users context.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-3'),
         },
         {
+          title: 'Do put labels on the right of grouped checkboxes',
           description:
-            'Checkboxes should have an associated label to give users context.',
+            'Align checkbox inputs vertically. This makes them easier to find, especially for users of screen magnifiers.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-4'),
         },
         {
+          title: 'Do display checkboxes vertically',
           description:
-            'When grouping multiple checkboxes, put the label on the right (end) so that, when used together in forms, checkbox inputs align vertically. This makes them easier to find, especially for users of screen magnifiers.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/checkbox/usage/dont-2'),
-        },
-        {
-          description:
-            'Checkboxes should be displayed vertically, and stacked for consistent alignment, positioning and legibility across different breakpoints.',
+            'Align checkbox inputs vertically. This makes them easier to find, especially for users of screen magnifiers.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/checkbox/usage/do-5'),
         },
         {
+          title: "Don't check options by default",
           description:
-            'Avoid using Checkboxes in a horizontal orientation to avoid issues with alignment and legibility when there are multiple Checkboxes grouped together.',
+            'Avoid default checked options. Users might not realise they’ve missed a question and submit an unintended answer.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/checkbox/usage/dont-3'),
+          media: getIllustrationComponent('components/checkbox/usage/dont-1'),
         },
         {
-          description:
-            'Assistive text, if needed, should hint at the required user action (e.g. ‘select all that apply’).',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/checkbox/usage/do-6'),
-        },
-        {
-          description:
-            'Avoid default checked options as they make it more likely that users won’t realise they’ve missed a question, or submit an unintended answer.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/checkbox/usage/dont-4'),
-        },
-        {
-          description:
-            'If the checkbox is invalid, swap assistive text with error text. Once the checkbox is valid, show the assistive text again.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/checkbox/usage/do-7'),
-        },
-        {
+          title: 'Do make error text clear and simple',
           description:
             'Error text should be clear, concise and written in complete sentences - and it should tell the user how to resolve the issue.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/checkbox/usage/do-8'),
+          media: getIllustrationComponent('components/checkbox/usage/do-6'),
         },
       ],
     }}
