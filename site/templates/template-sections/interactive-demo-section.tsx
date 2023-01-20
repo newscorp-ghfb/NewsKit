@@ -15,7 +15,7 @@ export const InteractiveDemoSection: React.FC<InteractiveDemoSectionProps> = ({
   playground,
 }) => (
   <CommonSection
-    title="Interactive Demo"
+    title="Interactive demo"
     id="interactive-demo"
     introduction={introduction}
   >

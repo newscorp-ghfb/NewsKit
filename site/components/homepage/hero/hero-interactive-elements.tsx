@@ -158,7 +158,7 @@ const HeroInteractiveElements = ({
       <InteractiveElementContainer top={426} left={50} zIndex={0}>
         <Tooltip
           overrides={{
-            pointer: {size: 'sizing020', edgeOffset: 'sizing020'},
+            pointer: {size: 'sizing020', edgeOffset: 'space020'},
             distance: 'space030',
             transitionPreset: 'fade',
           }}

@@ -46,9 +46,14 @@ const fragmentToOutput = (
     }
   });
 
-  return output.map(child => {
+  return output.map((child, index) => {
     if (child.type === 'text') {
-      return <TextBlock {...textBlockProps}>{child.children}</TextBlock>;
+      return (
+        // eslint-disable-next-line react/no-array-index-key
+        <TextBlock key={index} {...textBlockProps}>
+          {child.children}
+        </TextBlock>
+      );
     }
     return child.children;
   });
@@ -59,10 +64,10 @@ const fragmentToOutput = (
 UnpackComponent checks its children and wraps text, text-based components and text-based html tags inside a TextBlock.
 Also, sibling texts are wrapped in single TextBlock
 
-Why we need this: 
-We have few cases, like `description` prop in `ContentBase` component, 
+Why we need this:
+We have few cases, like `description` prop in `ContentBase` component,
 which initially thought is going to be used with text only but later we start adding other content as InlineMessage and UnorderedList.
-Adding non text based content leads to having non semantic HTML and validateDOMNesting errors  
+Adding non text based content leads to having non semantic HTML and validateDOMNesting errors
 since `description` prop uses TextBlock which is html Paragraphs and it can't contain div ( InlineMessage ) or ul ( UnorderedList ) elements.
 
 Example:

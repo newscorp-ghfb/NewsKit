@@ -280,7 +280,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -584,7 +584,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -901,7 +901,7 @@ exports[`Popover close button should show left-aligned 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1211,7 +1211,7 @@ exports[`Popover close button should show right-aligned 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1536,7 +1536,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -1873,7 +1873,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -2205,7 +2205,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -2556,7 +2556,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -2899,7 +2899,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -3253,7 +3253,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -3589,7 +3589,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -3918,7 +3918,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -4247,7 +4247,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -4576,7 +4576,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -4890,7 +4890,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -5215,7 +5215,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -5544,7 +5544,7 @@ exports[`Popover pointer padding should be applied with token distance override 
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -5873,7 +5873,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -6202,7 +6202,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -6516,7 +6516,7 @@ exports[`Popover should render correct styles: default 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -6837,7 +6837,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -7162,7 +7162,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -7491,7 +7491,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -7820,7 +7820,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
@@ -8149,7 +8149,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
     tabindex="-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-1 nk-popover-enter-done"
       data-testid="floating-element-panel"
       tabindex="-1"
     >
