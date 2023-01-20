@@ -12,3 +12,14 @@
         display: none !important
     }
 </style>
+
+<script>
+  window.onload = () => {
+    console.log('manager', window.location.search)
+    const urlParams = new URLSearchParams(window.location.search);
+    const embedded = urlParams.get('embedded') === 'true';
+    if (embedded) {
+      document.head.insertAdjacentHTML("beforeend", `<style>div.os-padding{display: none}</style>`)  
+    }
+  }
+</script>

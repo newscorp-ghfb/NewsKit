@@ -40,13 +40,20 @@ const StyledDiv = styled.div`
   border: 1px purple dotted;
 `;
 
-export const StoryTextBlockDefault = () => (
+export const StoryTextBlockDefault = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => (
   <>
     <StorybookHeading>TextBlock default</StorybookHeading>
-    <TextBlock stylePreset="inkContrast">{bodyString}</TextBlock>
+    <TextBlock stylePreset="inkContrast">{children}</TextBlock>
   </>
 );
 StoryTextBlockDefault.storyName = 'default';
+StoryTextBlockDefault.args = {
+  children: 'Telling the stories that matter',
+};
 
 export const StoryAsDifferentHtmlTag = () => (
   <>

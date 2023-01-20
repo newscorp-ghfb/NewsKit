@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
 import {withPerformance} from 'storybook-addon-performance';
 import {DocsContext} from '@storybook/addon-docs';
@@ -52,9 +52,13 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const Background = ({children}) => (
-  <BackgroundColor>{children}</BackgroundColor>
-);
+const Background = ({children}) => {
+  // tried adding here but need to wait for loading state
+  // and css added not being picked up
+  return (
+    <BackgroundColor>{children}</BackgroundColor>
+  )
+};
 const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
 
 const NoDecorator = ({children}) => <>{children}</>;
@@ -142,7 +146,7 @@ export const decorators = [
   },
   (Story, context) => {
     const handlers = [instrumentationHandlers.createConsoleHandler()];
-
+    console.log(context);
     return (
       <NewsKitProvider
         theme={getThemeObject(context?.globals?.backgrounds?.value)}
