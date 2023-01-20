@@ -802,14 +802,12 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       components: [
         {
           title: 'Form input text field',
-          summary: '',
           propsRows: commonPropsRows,
           propsFooter: formInputPropsFooter,
           overridesRows: commonOverridesRows,
         },
         {
           title: 'Text field',
-          summary: ``,
           propsRows: [
             {
               name: 'name',
