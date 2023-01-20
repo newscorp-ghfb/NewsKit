@@ -8,6 +8,7 @@ import {
   ContentSecondary,
 } from '../../../components/content-structure';
 import {ComponentPageCell} from '../../../components/layout-cells';
+import {Link} from '../../../components/link';
 import {StyledHeading} from '../../../utils/styled';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
 import {Table} from '../../../components/table';
@@ -137,8 +138,16 @@ const HowTo = (layoutProps: LayoutProps) => (
               <br />
               Designers should collaborate with other teams to choose methods,
               considering different business perspectives. Teams can work
-              together using our interactive method-picking tool to find the
-              best method for each scenario.
+              together using our interactive{' '}
+              <Link
+                href="https://www.figma.com/community/file/1154730991789332817"
+                external={false}
+                type="standalone"
+                overrides={{typographyPreset: 'editorialParagraph030'}}
+              >
+                method-picking tool
+              </Link>{' '}
+              to find the best method for each scenario.
             </>
           }
         />

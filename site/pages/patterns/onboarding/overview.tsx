@@ -50,13 +50,13 @@ const Overview = (layoutProps: LayoutProps) => (
           description={
             <>
               Onboarding quickly demonstrates the value of a product or service,
-              increasing the likelihood of user success. It’s more than just a
-              flashy introduction, pointing out features, or even teaching new
-              users how to use a product.
+              increasing the likelihood of user success.
               <br />
               <br />
-              It’s about helping users meet their unique goals and creating
-              value. Onboarding guides users towards their ‘Aha! Moments’.
+              It’s more than just a flashy introduction, pointing out features,
+              or even teaching new users how to use a product. It’s about
+              helping users meet their unique goals and creating value.
+              Onboarding guides users towards their ‘Aha! Moments’.
               <br />
               <br />
               <InlineMessage icon={icon} aria-label="first impressions">
@@ -96,6 +96,8 @@ const Overview = (layoutProps: LayoutProps) => (
               <Link
                 href="https://newskit.co.uk/patterns/onboarding/best-practice/"
                 external={false}
+                type="standalone"
+                overrides={{typographyPreset: 'editorialParagraph030'}}
               >
                 best practices
               </Link>{' '}
@@ -103,15 +105,23 @@ const Overview = (layoutProps: LayoutProps) => (
               <Link
                 href="https://newskit.co.uk/patterns/onboarding/how-to/"
                 external={false}
+                type="standalone"
+                overrides={{typographyPreset: 'editorialParagraph030'}}
               >
                 how best to onboard users.
               </Link>{' '}
               Use the{' '}
-              <Link href="https://www.figma.com/community/file/1154728777780695374">
+              <Link
+                href="https://www.figma.com/community/file/1154728777780695374"
+                external={false}
+              >
                 workshop template
               </Link>{' '}
               to define onboarding scenarios and the{' '}
-              <Link href="https://www.figma.com/community/file/1154730991789332817">
+              <Link
+                href="https://www.figma.com/community/file/1154730991789332817"
+                external={false}
+              >
                 method-picking tool
               </Link>{' '}
               to help determine the most effective onboarding method.

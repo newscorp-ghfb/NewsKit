@@ -59,6 +59,28 @@ const BestPractice = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
+      <ContentSection sectionName="context is key">
+        <ContentPrimary
+          id="context-is-key"
+          toc="Context is key"
+          headline={
+            <>
+              <StyledHeading>Context is key</StyledHeading>
+            </>
+          }
+          description="It can be tempting to show users everything right away. But it's important to let them explore and discover features naturally."
+        />
+        <ContentSecondary
+          headline="Let users discover things in context"
+          description="Stagger features, so they're prompted/discovered in context."
+        />
+        <ContentSecondary
+          headline="Don't be overly intrusive"
+          description="Avoid over-using intrusive methods like modals and banners. Users are less likely to engage with content if it's presented out of context or obstructs their journey."
+          showSeparator
+        />
+      </ContentSection>
+
       <ContentSection sectionName="simplify and guide">
         <ContentPrimary
           id="simplify-and-guide"
