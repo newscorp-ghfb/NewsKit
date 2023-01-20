@@ -199,32 +199,35 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Tooltip component.',
+      introduction: 'Here’s how and when to use the tooltip:',
       cards: [
         {
+          title: 'Do use tooltips for supplemental information',
           description:
             'Tooltips are intended for displaying supplemental information related to an element on hover or focus.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/tooltip/usage/do1'),
         },
         {
+          title: 'Don’t use tooltips for essential information',
           description:
-            'Do not put essential information in Tooltips, as the content passed will not be announced by screen readers. Content passed to the Tooltip should match the Aria-label and description.',
+            'Avoid putting essential information in tooltips, as the content won’t be announced by screen readers. Content passed to the tooltip should match the aria-label and description.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tooltip/usage/dont1'),
         },
         {
+          title: 'Do make tooltips clear and concise',
           description:
-            'Avoid using large chunks of text in Tooltips as this may result in cognitive overload for some users.',
+            'Avoid putting large chunks of text in tooltips as this can result in cognitive overload for some users.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/tooltip/usage/do2'),
         },
         {
+          title: 'Don’t put interactive context within tooltips',
           description: (
             <>
-              Any interactive content such as links or buttons should not be
-              placed within a Tooltip. In these cases, consider using a{' '}
+              Avoid placing interactive content (e.g. links or buttons) within a
+              tooltip. Consider using a{' '}
               <Link href="/components/popover">Popover</Link> instead.
             </>
           ),
@@ -232,31 +235,36 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/tooltip/usage/dont2'),
         },
         {
+          title: 'Do keep tooltips in view until the user focuses away',
           description:
-            'Allow the mouse to easily move over the Tooltip without dismissing it. Tooltips should remain in view until a user hovers or focuses away from them.',
+            'Allow the mouse to easily move over the tooltip without dismissing it. Tooltips should remain in view until a user hovers or focusses away from them.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/tooltip/usage/do3'),
         },
         {
+          title: 'Don’t use rich text formatting',
           description:
-            'Avoid rich text. Formatting will not be conveyed to screen reader users eg. bold, italicised text, or icons).',
+            'Rich text formatting (e.g. bold, italics, icons) won’t be conveyed to screen reader users.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tooltip/usage/dont3'),
         },
         {
+          title: 'Do add to icon buttons and standalone links for context',
           description:
-            'The Tooltip can be applied to the Icon Button or standalone Link in order to provide additional context relating to the intended action or destination for users.',
+            'You can apply the tooltip to the icon button or standalone link to provide extra context on the intended action or destination.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/tooltip/usage/do4'),
         },
         {
-          description: 'Avoid using a timeout to hide the Tooltip.',
+          title: 'Don’t let tooltips time out',
+          description: 'Avoid using a timeout to hide the tooltip.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tooltip/usage/dont4'),
         },
         {
+          title: 'Don’t cover the attributed element',
           description:
-            'Avoid covering the element that the Tooltip is attributed to, as it will lose its context.',
+            'Avoid covering the element that the tooltip is attributed to, as it will lose its context.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tooltip/usage/dont5'),
         },
@@ -362,7 +370,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <>
           <UnorderedList

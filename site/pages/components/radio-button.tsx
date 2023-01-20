@@ -648,44 +648,52 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the radio button:',
       cards: [
         {
+          title: 'Do use radio buttons for selecting one option',
           description:
             'Use radio buttons when a user can select only one option from a list.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/radio-button/usage/do-1'),
         },
         {
+          title: "Don't use radio buttons for selecting multiple options",
           description:
-            'Don’t use Radio Buttons when a user can select multiple options from a list. In this case, use a group of Checkboxes.',
+            'If users can select multiple options from a list, use checkboxes instead.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/radio-button/usage/dont-1',
           ),
         },
         {
+          title: 'Do give radio buttons a label',
           description:
-            'Radio Buttons should always have an associated Label to give users context of what the Radio Button represents.',
+            'Radio buttons should have an associated label to give users context.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/radio-button/usage/do-2'),
         },
         {
+          title: 'Do put labels on the right of the radio buttons',
           description:
-            'Avoid placing Labels to the left (start) of Radio Buttons when there are multiple Radio Buttons grouped together to avoid layout misalignment. Instead place Labels to the right (end) so that when used together in forms, Radio Button inputs align vertically, which makes them easier to find, especially for users of screen magnifiers.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/radio-button/usage/dont-2',
-          ),
-        },
-        {
-          description:
-            'Radio Buttons should be displayed stacked vertically for consistent alignment and positioning across different breakpoints.',
+            'When grouping multiple radio buttons, put the label on the right. This makes them easier to find, especially for users of screen magnifiers.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/radio-button/usage/do-3'),
+          media: getIllustrationComponent('components/radio-button/usage/do-5'),
         },
         {
+          title: 'Do display radio buttons vertically',
           description:
-            'Use Assistive Text to provide context to the Radio Button group. For example, why a selection is required.',
+            'Radio buttons should be displayed vertically, and stacked for consistent alignment and positioning across different breakpoints.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/radio-button/usage/do-4'),
+        },
+        {
+          title: 'Do provide context with assistive text',
+          description: (
+            <>
+              Use assistive text to provide context to the radio button group
+              (e.g. why a selection is required.){' '}
+            </>
+          ),
+          kind: UsageKind.DO,
+          media: getIllustrationComponent('components/radio-button/usage/do-3'),
         },
       ],
     }}

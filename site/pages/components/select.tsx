@@ -665,57 +665,48 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Select component.',
+      introduction: 'Here’s how and when to use the select:',
       cards: [
         {
+          title: 'Do use a select for multiple options',
           description:
-            'Use a Select to present multiple options where only one can be selected.',
+            'Use a select to present multiple options where only one can be selected. If the user can select more than one option, use the checkbox instead.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/select/usage/do-1'),
         },
         {
+          title: "Don't use a select for few options",
           description: (
             <>
-              Don&apos;t use a Select when you have only a few options and
-              enough space; use a radio.
-              <br />
-              <br />A select can cause usability issues due to the number of
-              interactions it takes to select an option.This can increase the
-              likelihood of abandonment of a user task.
+              Don&apos;t use a select when you have only a few options and
+              enough space. Use a radio button instead. Selects can cause
+              usability issues due to the number of interactions required. This
+              can increase the likelihood of the user abandoning the task.
             </>
           ),
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/select/usage/dont-1'),
         },
         {
+          title: 'Do use selects for four or more options',
           description:
-            'Use a Select when there are four or more options for a user to choose from.',
+            'Use a select when there are four or more options, and the user can only choose one.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/select/usage/do-2'),
         },
         {
+          title: 'Don’t have an empty select on page load',
           description:
-            'Don’t use a Select when a user can select more than one option, use a checkbox.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/select/usage/dont-2'),
-        },
-        {
-          description: 'Where possible, define a default option.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/select/usage/do-3'),
-        },
-        {
-          description:
-            'Have an empty Select upon page load. If a default option isn’t appropriate, define a placeholder such as “Select an option”.',
+            'If a default option isn’t appropriate, use a placeholder (e.g. ‘select an option’).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/select/usage/dont-3'),
         },
         {
+          title: 'Don’t use selects for adding or removing options',
           description:
-            'Don’t use a Select when a users can add and remove options, consider a Text Field with Tags or a Combobox.',
+            'If you want the user to be able to add and remove options, use a text field with tags or a combobox instead.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/select/usage/dont-4'),
+          media: getIllustrationComponent('components/select/usage/dont-2'),
         },
       ],
     }}

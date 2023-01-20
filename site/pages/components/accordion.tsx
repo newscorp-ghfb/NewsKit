@@ -182,22 +182,26 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the accordion:',
       cards: [
         {
+          title: 'Do use for supporting information',
           description: 'Use accordions to provide supporting information.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/accordion/usage/do01'),
         },
         {
+          title: 'Don’t use for important information',
           description: 'Avoid concealing crucial information in an accordion.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/accordion/usage/dont01'),
         },
         {
+          title: 'Do make headlines short and clear',
           description:
             'Give accordions short, meaningful headings that tell users what’s inside the panel. Group together related topics.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/accordion/usage/do02'),
         },
         {
+          title: 'Don’t nest accordions',
           description: 'Avoid nesting accordions within themselves.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/accordion/usage/dont02'),
@@ -313,7 +317,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <UnorderedList
           markerAlign="start"
