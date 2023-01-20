@@ -114,7 +114,7 @@ const commonOverridesRows = [
       'medium = utilityBody020',
       'large = utilityBody030',
     ],
-    description: 'If provided, overrides the input and placeholder text.',
+    description: 'If provided, overrides the input & placeholder text.',
   },
   {
     attribute: 'spaceInset(deprecated)',
@@ -226,13 +226,13 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       media: getIllustrationComponent('components/text-field/anatomy'),
       rows: [
         {
-          name: 'Input Container',
+          name: 'Input container',
           description: 'Interactable input area',
           component: ['HTML Input', 'Block'],
           optional: undefined,
         },
         {
-          name: 'Start Enhancer',
+          name: 'Start enhancer',
           description:
             'Adds a component to the start of the input container (e.g. icon or button)',
           component: 'React.ReactNode',
@@ -246,7 +246,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           optional: undefined,
         },
         {
-          name: 'Input & Placeholder Text',
+          name: 'Input & Placeholder text',
           description: (
             <>
               Input text - a value the user has entered into an input
@@ -270,7 +270,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           optional: undefined,
         },
         {
-          name: 'End Enhancer',
+          name: 'End enhancer',
           description:
             'Adds a component to the end of the input container (e.g. icon or button)',
           component: 'React.ReactNode',
@@ -493,7 +493,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Selected (Focus)',
+          title: 'Selected (focus)',
           description:
             'The text field changes style, and a caret element in the input is also visible, to let the user know the text field has been selected and they can input content.',
           media: getIllustrationComponent(
@@ -679,11 +679,23 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the text field:',
       cards: [
         {
-          title: 'Do consider text field width',
+          title: 'Do think carefully about text field width',
           description: (
             <>
               The width of the text field should be proportional to the expected
-              user input.
+              user input. For example, when capturing date of birth, the format
+              should be split up into day/month/year (DD - MM - YYYY) using
+              multiple text fields.
+              <br />
+              <br />
+              This lets users focus on inputting a specific value and reduces
+              cognitive load. Using identical input widths for all text inputs
+              makes forms visually pleasing but harder for a user to complete.
+              <br />
+              <br />
+              Avoid using the text field if you need to let users enter longer
+              answers that might span multiple lines. Consider an alternative,
+              such as text area.
             </>
           ),
           kind: UsageKind.DO,
@@ -692,7 +704,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Don’t capture multiple pieces of information in one field',
           description:
-            'Avoid using a single text field to capture multiple pieces of information from users, as this increases cognitive load. Use an individual text field for each input.',
+            'Avoid using a single text field to capture multiple pieces of information from users, as this increases cognitive load. Use an individual text field for each.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/text-field/usage/dont-01',

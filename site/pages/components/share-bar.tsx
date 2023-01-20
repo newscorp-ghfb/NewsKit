@@ -176,18 +176,17 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the share bar component:',
       cards: [
         {
-          title: 'Don’t use a share bar for more than five items',
-          description:
-            'The maximum number of items in a share bar should be kept to a minimum. It is not recommended to have more than 5 items.',
+          title: 'Don’t have more than five items',
+          description: 'Keep the number of items in a share bar to a minimum.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/share-bar/share-options-overflow-illustration',
           ),
         },
         {
-          title: "Don't add actions that are not relevant",
+          title: 'Don’t add irrelevant actions',
           description:
-            'Do not add actions that are not relevant to social sharing in a share bar (saving, commenting etc).',
+            'Only include relevant links to social media channels. Other actions, like saving or commenting, should not be added to the share bar.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/share-bar/share-dont-1-illustration',

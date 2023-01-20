@@ -1,12 +1,11 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
+import {InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {IconFilledCircle} from '../../components/icons';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -156,7 +155,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space050',
                 }}
               >
-                You can add a label on the left (start) of a switch using the
+                You can add a label on the left (start) of a switch using the{' '}
                 <InlineCode>labelPosition</InlineCode> prop.
               </InlineMessage>
             </>
@@ -325,8 +324,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               Avoid using switches for communicating selection (e.g. multiple
-              table rows). In these cases, use a{' '}
-              <Link href="/components/checkbox/">checkbox.</Link> instead.
+              table rows). In these cases, use a checkbox instead.
             </>
           ),
           kind: UsageKind.DONT,
@@ -350,21 +348,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction: (
-        <>
-          The switch has the following accessibility considerations:
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={{
-              content: {
-                typographyPreset: 'editorialParagraph030',
-              },
-              marginBlockStart: 'space050',
-            }}
-          >
-            <></>
-          </UnorderedList>
-        </>
+        <>The switch has the following accessibility considerations:</>
       ),
       focusOrder: {
         title: 'Focus order',
