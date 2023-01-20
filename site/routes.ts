@@ -971,7 +971,7 @@ export const routes = [
             description:
               'Onboarding is the first impression a user has of a product or feature. It’s crucial to make it count.',
             illustration: 'patterns/onboarding/overview/hero',
-            buttonLabel: 'Learn more about forms',
+            buttonLabel: 'Learn more about onboarding',
           },
           {
             title: 'Best practice',
@@ -980,7 +980,7 @@ export const routes = [
             description:
               'Create compelling onboarding experiences by following these industry best practices.',
             illustration: 'patterns/onboarding/best-practice/hero',
-            buttonLabel: 'Learn more about forms best practice',
+            buttonLabel: 'Learn more about onboarding best practice',
           },
           {
             title: 'How to',
@@ -989,7 +989,7 @@ export const routes = [
             description:
               'This framework shows you how to onboard users with a simple three-step process.',
             illustration: 'patterns/onboarding/how-to/hero',
-            buttonLabel: 'Learn more about address data capture',
+            buttonLabel: 'Learn more about onboarding',
           },
         ],
       },
