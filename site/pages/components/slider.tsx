@@ -33,7 +33,7 @@ const SliderComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.19.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/slider',
-      storybookId: 'components-slider--story-slider',
+      storybookId: 'components-slider--story-slider-1-and-2-thumbs',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=324%3A4',
     }}
