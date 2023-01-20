@@ -626,7 +626,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Default checked',
           description: (
             <>
-              The Radio Button&apos;s initial state can be set to be checked or
+              The Radio Button&apos;s initial state can be set to checked or
               unchecked by default (controlled or uncontrolled).
               <br />
               <br />
@@ -673,7 +673,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Do put labels on the right of the radio buttons',
           description:
-            'When grouping multiple radio buttons, put the label on the right. This makes them easier to find, especially for users of screen magnifiers.',
+            'When grouping multiple radio buttons, put the label on the right (end) so that, when used together in forms, radio button inputs align vertically. This makes them easier to find, especially for users of screen magnifiers.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/radio-button/usage/do-5'),
         },
@@ -689,7 +689,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               Use assistive text to provide context to the radio button group
-              (e.g. why a selection is required.){' '}
+              (e.g. why a selection is required).{' '}
             </>
           ),
           kind: UsageKind.DO,
@@ -701,7 +701,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       introduction: (
         <>
           <Block spaceStack="space100" />
-          <ContentText title="Grouping Radio Buttons" titleAs="span">
+          <ContentText title="Group radio buttons" titleAs="span">
             Group radio buttons and related elements (such as labels and
             assistive text) together using the fieldset component with a title
             attributed to the elements called a legend.
@@ -718,13 +718,13 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         tableRows: [
           {
             order: 1,
-            element: 'Radio Button input',
+            element: 'Radio button input',
             role: 'Focusses on the radio button input',
           },
         ],
       },
       interaction: {
-        title: 'Keyboard Interactions',
+        title: 'Keyboard interactions',
         tableRows: [
           {
             command: ['Tab', 'Shift'],
@@ -804,7 +804,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           overridesRows: commonOverridesRows,
         },
         {
-          title: 'RadioButton',
+          title: 'Radio button',
           propsRows: [
             {
               name: 'name',

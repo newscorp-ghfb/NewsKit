@@ -209,15 +209,13 @@ const selectOptionOverrides = [
     attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'selectOptionItem',
-    description:
-      'If provided, this overrides the stylePreset of the Select option.',
+    description: 'If provided, overrides the stylePreset of the select option.',
   },
   {
     attribute: 'minHeight',
     type: 'MQ<string>',
     default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
-    description:
-      'If provided, this overrides the minHeight of the Select option.',
+    description: 'If provided, overrides the minHeight of the select option.',
   },
   {
     attribute: 'typographyPreset',
@@ -228,7 +226,7 @@ const selectOptionOverrides = [
       'large = utilityBody030',
     ],
     description:
-      'If provided, this overrides the typographyPreset of the Select option.',
+      'f provided, overrides the typographyPreset of the select option.',
   },
   {
     attribute: 'spaceInset(deprecated)',
@@ -245,7 +243,7 @@ const selectOptionOverrides = [
     type: 'MQ<string>',
     default: 'space020',
     description:
-      'If provided, this overrides the inline space of the Select option.',
+      'If provided, overrides the inline space of the select option.',
   },
   ...logicalMarginOverrideProps,
   ...logicalPaddingOverrideProps,
@@ -296,7 +294,7 @@ const selectOptionProps = [
 const selectOverridesFooter = (
   <InlineMessage>
     Check out the <Link href="/components/modal">modal</Link> for all props and
-    overrides
+    overrides.
   </InlineMessage>
 );
 
@@ -331,20 +329,20 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       media: getIllustrationComponent('components/select/anatomy'),
       rows: [
         {
-          name: 'Input Container',
+          name: 'Input container',
           description: 'Interactable input area',
           component: ['HTML Input', 'Block'],
           optional: undefined,
         },
         {
-          name: 'Start Enhancer',
+          name: 'Start enhancer',
           description:
             'Adds a component to the start of the input container (e.g. icon or button)',
           component: 'React.ReactNode',
           optional: true,
         },
         {
-          name: 'Input & Placeholder Text',
+          name: 'Input & Placeholder text',
           description: (
             <>
               Input text - a value the user has entered into an input.
@@ -675,13 +673,21 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/select/usage/do-1'),
         },
         {
-          title: "Don't use a select for few options",
+          title: 'Limited options + enough space = radio button',
           description: (
             <>
               Don&apos;t use a select when you have only a few options and
-              enough space. Use a radio button instead. Selects can cause
-              usability issues due to the number of interactions required. This
-              can increase the likelihood of the user abandoning the task.
+              enough space. Use a radio button instead
+              <InlineMessage
+                role="region"
+                aria-label="Select validation"
+                title="Note"
+                overrides={{marginBlockStart: 'space050'}}
+              >
+                Selects can cause usability issues due to the number of
+                interactions required. This can increase the likelihood of the
+                user abandoning the task.
+              </InlineMessage>
             </>
           ),
           kind: UsageKind.DONT,
@@ -693,6 +699,12 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             'Use a select when there are four or more options, and the user can only choose one.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/select/usage/do-2'),
+        },
+        {
+          title: 'Do give a default option',
+          description: 'Where possible, selects should have a default option.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/select/usage/dont-3'),
         },
         {
           title: 'Don’t have an empty select on page load',
@@ -715,7 +727,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         <>
           The Select component has the following accessibility considerations:
           <Block spaceStack="space100" />
-          <ContentText title="Grouping Selects" titleAs="span">
+          <ContentText title="Group selects" titleAs="span">
             Group selects and related elements (e.g. labels and assistive text)
             together using the fieldset component with a title attributed to the
             elements called a legend.
@@ -825,7 +837,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       ),
       components: [
         {
-          title: 'FormInputSelect',
+          title: 'Form input select',
           summary: `The form input select has a range of props to define the experience in different use cases. Use within the form.`,
           propsRows: commonPropsRows,
           overridesRows: commonOverridesRows,
