@@ -83,40 +83,38 @@ const LayerOrganizerPlayground = ({
   }, [green]);
 
   return (
-    <Box>
-      <LayerOrganizer>
-        {isRedOpen && (
-          <StyledLayer
-            width="300px"
-            color="red050"
-            position="fixed"
-            offset="40%"
+    <LayerOrganizer>
+      {isRedOpen && (
+        <StyledLayer
+          width="300px"
+          color="interfaceNegative020"
+          position="fixed"
+          offset="40%"
+        >
+          <TextBlock
+            stylePreset="inkContrast"
+            typographyPreset="utilityBody010"
           >
-            <TextBlock
-              stylePreset="inkInverse"
-              typographyPreset="utilityBody010"
-            >
-              This will be rendered into a new layer organizer
-            </TextBlock>
-          </StyledLayer>
-        )}
-        {isGreenOpen && (
-          <StyledLayer
-            width="300px"
-            color="green050"
-            position="fixed"
-            offset="50%"
+            This will be rendered into a new layer organizer
+          </TextBlock>
+        </StyledLayer>
+      )}
+      {isGreenOpen && (
+        <StyledLayer
+          width="300px"
+          color="interfacePositive020"
+          position="fixed"
+          offset="50%"
+        >
+          <TextBlock
+            stylePreset="inkContrast"
+            typographyPreset="utilityBody010"
           >
-            <TextBlock
-              stylePreset="inkInverse"
-              typographyPreset="utilityBody010"
-            >
-              This will be rendered into a new layer organizer
-            </TextBlock>
-          </StyledLayer>
-        )}
-      </LayerOrganizer>
-    </Box>
+            This will be rendered into a new layer organizer
+          </TextBlock>
+        </StyledLayer>
+      )}
+    </LayerOrganizer>
   );
 };
 const LayerPlayground = ({blue, orange}: {blue: boolean; orange: boolean}) => {
@@ -135,15 +133,21 @@ const LayerPlayground = ({blue, orange}: {blue: boolean; orange: boolean}) => {
   return (
     <Box ref={ref}>
       {isBlueOpen && (
-        <StyledLayer color="blue050" appendToRef={ref}>
-          <TextBlock stylePreset="inkInverse" typographyPreset="utilityBody010">
+        <StyledLayer color="blue010" appendToRef={ref}>
+          <TextBlock
+            stylePreset="layerPlaygroundText"
+            typographyPreset="utilityBody010"
+          >
             This will be rendered into a new layer
           </TextBlock>
         </StyledLayer>
       )}
       {isOrangeOpen && (
-        <StyledLayer color="amber050" offset="20%" appendToRef={ref}>
-          <TextBlock stylePreset="inkInverse" typographyPreset="utilityBody010">
+        <StyledLayer color="amber010" offset="20%" appendToRef={ref}>
+          <TextBlock
+            stylePreset="layerPlaygroundText"
+            typographyPreset="utilityBody010"
+          >
             This will be rendered into a new layer
           </TextBlock>
         </StyledLayer>
@@ -161,7 +165,7 @@ const LayerComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Components',
+      type: 'Layout',
       name: 'Layer',
       hero: {
         illustration: 'components/layer/layer-illustration',
@@ -196,7 +200,7 @@ const LayerComponent = (layoutProps: LayoutProps) => (
           it afforded.
           <br />
           <br />
-          Our solution allows for greater user control via the
+          Our solution allows for greater user control via the{' '}
           <InlineCode>LayerOrganizer</InlineCode> and{' '}
           <InlineCode>Layer</InlineCode> components which rely on the{' '}
           <Link
@@ -210,65 +214,67 @@ const LayerComponent = (layoutProps: LayoutProps) => (
         </>
       }
     />
-    <Block marginBlockEnd="space100">
-      <CommonSection
-        id="layerOrganizer"
-        toc="Layer organizer"
-        title="Layer organizer"
-        introduction={
-          <>
-            The layer organizer is a provider-type component that needs to be
-            added at the root level of your application. It creates a new
-            stacking context and adds an extra <InlineCode>div</InlineCode>{' '}
-            element to your application which will be used to host rendered
-            layers. For example, the NewsKit{' '}
-            <Link
-              href="https://www.newskit.co.uk/components/modal/"
-              target="_blank"
-            >
-              Modal
-            </Link>{' '}
-            ,{' '}
-            <Link
-              href="https://www.newskit.co.uk/components/drawer/"
-              target="_blank"
-            >
-              Drawer
-            </Link>{' '}
-            , or{' '}
-            <Link
-              href="https://www.newskit.co.uk/components/select/"
-              target="_blank"
-            >
-              Select
-            </Link>{' '}
-            components will render inside that div element.
-            <br />
-            <br />
-            You can nest multiple Layer organizers to create a new stacking
-            context. Be aware that the Layer component will always render in the
-            parent one.
-            <br />
-            <br />
-            <InlineMessage
-              icon={infoIcon}
-              role="region"
-              aria-label="layerOrganizerInfo"
-              overrides={{
-                marginBlockStart: 'space030',
-              }}
-            >
-              If you use <InlineCode>NewsKitProvider</InlineCode> you do not
-              need to add a <InlineCode>LayerOrganizer</InlineCode> since it is
-              already part of the <InlineCode>NewsKitProvider</InlineCode>.
-            </InlineMessage>
-          </>
-        }
-        hideSeparator
-      />
-    </Block>
     <CommonSection
-      title="Interactive Demo LayerOrganizer"
+      id="layerOrganizer"
+      toc="Layer organizer"
+      title="Layer organizer"
+      introduction={
+        <>
+          The layer organizer is a provider-type component that needs to be
+          added at the root level of your application. It creates a new stacking
+          context and adds an extra <InlineCode>div</InlineCode> element to your
+          application which will be used to host rendered layers. For example,
+          the NewsKit{' '}
+          <Link
+            href="https://www.newskit.co.uk/components/modal/"
+            target="_blank"
+          >
+            Modal
+          </Link>{' '}
+          ,{' '}
+          <Link
+            href="https://www.newskit.co.uk/components/drawer/"
+            target="_blank"
+          >
+            Drawer
+          </Link>{' '}
+          , or{' '}
+          <Link
+            href="https://www.newskit.co.uk/components/select/"
+            target="_blank"
+          >
+            Select
+          </Link>{' '}
+          components will render inside that div element.
+          <br />
+          <br />
+          You can nest multiple Layer organizers to create a new stacking
+          context. Be aware that the Layer component will always render in the
+          parent one.
+          <br />
+          <br />
+          <InlineMessage
+            icon={infoIcon}
+            role="region"
+            aria-label="layerOrganizerInfo"
+            overrides={{
+              marginBlockStart: 'space030',
+            }}
+          >
+            If you use <InlineCode>NewsKitProvider</InlineCode> you do not need
+            to add a <InlineCode>LayerOrganizer</InlineCode> since it is already
+            part of the <InlineCode>NewsKitProvider</InlineCode>.
+          </InlineMessage>
+          <br />
+          <br />
+          <br />
+          <br />
+        </>
+      }
+      hideSeparator
+    />
+    <CommonSection
+      title="Layer organizer interactive demo"
       id="interactive-demo-layer-organizer"
       introduction="This demo lets you preview the layer organizer component, its variations and configuration options."
     >
@@ -294,34 +300,36 @@ const LayerComponent = (layoutProps: LayoutProps) => (
         </Block>
       </ComponentPageCell>
     </CommonSection>
-    <Block marginBlockEnd="space100">
-      <CommonSection
-        id="layer"
-        toc="Layer"
-        title="Layer"
-        introduction={
-          <>
-            The layer component renders its children inside a host using
-            <InlineCode>createPortal</InlineCode>. The host is the parent
-            <InlineCode>LayerOrganizer</InlineCode>.
-            <br />
-            <br />
-            With layers, there is no need for the{' '}
-            <Link
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index"
-              target="_blank"
-            >
-              z-index CSS property
-            </Link>{' '}
-            as layers completely rely on the stacking order within a
-            <InlineCode>LayerOrganizer</InlineCode>.
-          </>
-        }
-        hideSeparator
-      />
-    </Block>
     <CommonSection
-      title="Interactive Demo Layer"
+      id="layer"
+      toc="Layer"
+      title="Layer"
+      introduction={
+        <>
+          The layer component renders its children inside a host using{' '}
+          <InlineCode>createPortal</InlineCode>. The host is the parent{' '}
+          <InlineCode>LayerOrganizer</InlineCode>.
+          <br />
+          <br />
+          With layers, there is no need for the{' '}
+          <Link
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index"
+            target="_blank"
+          >
+            z-index CSS property
+          </Link>{' '}
+          as layers completely rely on the stacking order within a{' '}
+          <InlineCode>LayerOrganizer</InlineCode>.
+          <br />
+          <br />
+          <br />
+          <br />
+        </>
+      }
+      hideSeparator
+    />
+    <CommonSection
+      title="Layer interactive demo"
       id="interactive-demo-layer"
       introduction="This demo lets you preview the layer component, its variations and configuration options."
     >
@@ -373,11 +381,11 @@ const LayerComponent = (layoutProps: LayoutProps) => (
               </Link>{' '}
             </>
             <>
-              In order to support applications that have stacking contexts with
+              In order to support applications that have stacking contexts with{' '}
               <InlineCode>z-index</InlineCode> set to a value other than auto,{' '}
-              <InlineCode>LayerOrganizer</InlineCode> and
+              <InlineCode>LayerOrganizer</InlineCode> and{' '}
               <InlineCode>NewsKitProvider</InlineCode> accept a{' '}
-              <InlineCode>z-index</InlineCode> number. When a
+              <InlineCode>z-index</InlineCode> number. When a{' '}
               <InlineCode>z-index</InlineCode> value is passed, it will set it
               as a <InlineCode>z-index</InlineCode> value for all the layers
               within its context.
@@ -390,8 +398,8 @@ const LayerComponent = (layoutProps: LayoutProps) => (
               default <InlineCode>z-index</InlineCode> value equal to or greater
               than the highest <InlineCode>z-index</InlineCode> value of all
               top-level stacking contexts in your application (note this may be
-              not the highest <InlineCode>z-index</InlineCode>
-              value across your application).
+              not the highest <InlineCode>z-index</InlineCode> value across your
+              application).
             </>
           </UnorderedList>
           <InlineMessage icon={infoIcon} role="region" aria-label="usageInfo">
@@ -437,7 +445,7 @@ const LayerComponent = (layoutProps: LayoutProps) => (
               type: 'React.RefObject<HTMLElement | null>',
               description: (
                 <>
-                  Allows <InlineCode>Layer</InlineCode>to be appended to other
+                  Allows <InlineCode>Layer</InlineCode> to be appended to other
                   DOM element instead of the default{' '}
                   <InlineCode>LayerOrganizer</InlineCode>
                 </>
@@ -453,7 +461,7 @@ const LayerComponent = (layoutProps: LayoutProps) => (
         },
       ]}
     />
-    <RelatedComponentsSection related={['Modal', 'Drawer', 'Select']} />
+    <RelatedComponentsSection related={['Modal', 'Drawer']} />
   </ComponentPageBasicTemplate>
 );
 
