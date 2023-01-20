@@ -10,11 +10,51 @@ import {
 import {ComponentPageCell} from '../../../components/layout-cells';
 import {StyledHeading} from '../../../utils/styled';
 import {Illustration} from '../../../components/illustrations/illustration-loader';
+import {Table} from '../../../components/table';
+import {IconFilledNullDot} from '../../../components/icons';
 
 const listData = [
   `When should onboarding occur?`,
   `Where should it happen?`,
   `How long should it appear?`,
+];
+
+const TABLE_DATA = [
+  {
+    numbers: 'Component',
+    show: 'Modal',
+    prompt: 'Badge',
+    discover: <IconFilledNullDot />,
+    remind: 'Popover',
+  },
+  {
+    numbers: 'Where',
+    show: 'After edition loads',
+    prompt: 'Tab menu',
+    discover: <IconFilledNullDot />,
+    remind: 'Tab menu',
+  },
+  {
+    numbers: 'When',
+    show: '1st open of app',
+    prompt: 'In 1st session, post modal dismissal',
+    discover: <IconFilledNullDot />,
+    remind: 'On load of app, 5th session',
+  },
+  {
+    numbers: 'Lifespan/rules',
+    show: 'Only see in that session',
+    prompt: 'Persist until ‘saved articles’ tab is visited',
+    discover: <IconFilledNullDot />,
+    remind: 'Only see in that session',
+  },
+  {
+    numbers: 'Notes',
+    show: <IconFilledNullDot />,
+    prompt: <IconFilledNullDot />,
+    discover: <IconFilledNullDot />,
+    remind: 'If already interacted with/visited, do not show',
+  },
 ];
 
 const HowTo = (layoutProps: LayoutProps) => (
@@ -38,7 +78,7 @@ const HowTo = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="Write a scenario">
         <ContentPrimary
           id="write-a-scenario"
-          toc="Write a scenario"
+          toc="Step 1: Write a scenario"
           headline={
             <>
               <StyledHeading>Step 1: Write a scenario</StyledHeading>
@@ -65,7 +105,7 @@ const HowTo = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="choose components">
         <ContentPrimary
           id="choose-components"
-          toc="Choose components"
+          toc="Step 2: Choose components"
           headline={
             <>
               <StyledHeading>Step 2: Choose components</StyledHeading>
@@ -77,7 +117,7 @@ const HowTo = (layoutProps: LayoutProps) => (
         </ContentPrimary>
         <ContentPrimary
           headline="Pick the relevant methods:"
-          description="Pick the relevant methods:"
+          description="Onboarding methods have different intensity levels:"
         />
         <ContentSecondary
           headline="Show:"
@@ -104,7 +144,7 @@ const HowTo = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="keep track">
+      <ContentSection sectionName="select-appropriate-components">
         <ContentPrimary
           id="select-appropriate-components"
           toc="Select appropriate components"
@@ -126,7 +166,7 @@ const HowTo = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="Document rules">
         <ContentPrimary
           id="document-rules"
-          toc="Document rules"
+          toc="Step 3: Document rules"
           headline={
             <>
               <StyledHeading>Step 3: Document rules</StyledHeading>
@@ -152,15 +192,31 @@ const HowTo = (layoutProps: LayoutProps) => (
               >
                 {listData}
               </UnorderedList>
+              <br />
+              <br />
               If a feature is unused in a specified period of time, it may be
               useful to remind the user of the feature. You can do this by
               repeating an onboarding component/technique.
               <br />
               <br />
+              Finally, consider onboarding within the wider user experience,
+              particularly any other feature onboarding. All onboarding should
+              be documented in the same place to reduce the risk of conflict.
+              <br />
+              <br />
+              Below is an example of onboarding the ‘article saving‘ feature in
+              a mobile app:
             </>
           }
           showSeparator
-        />
+        >
+          <Table
+            columns={
+              ['Numbers', 'Show', 'Prompt', 'Discover', 'Remind'] as string[]
+            }
+            rows={TABLE_DATA}
+          />
+        </ContentSecondary>
       </ContentSection>
     </ComponentPageCell>
   </PatternPageTemplate>
