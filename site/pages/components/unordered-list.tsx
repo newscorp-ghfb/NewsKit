@@ -192,7 +192,7 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
       type: 'Text',
       name: 'Unordered List',
       hero: {
-        illustration: 'components/unordered-list-illustration',
+        illustration: 'components/unordered-list/hero',
       },
       introduction:
         'Unordered lists make blocks of related text easier to read, structuring information of equal value into manageable bulleted items.',
@@ -415,11 +415,11 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The unordered list has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'Here’s how and when to use the unordered list:',
       layout: '2-span',
       cards: [
         {
+          title: 'Do use for non-sequential lists',
           description:
             'Unordered list items are not numbered, so use them in instances where ordering is not a factor. Where items are required to appear in numerical order use an ordered list.',
           kind: UsageKind.DO,
@@ -428,6 +428,7 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: "Don't use for numerically ordered lists",
           description:
             'Avoid unordered lists in instances where items are required to appear in numerical order. Instead use an ordered list.',
           kind: UsageKind.DONT,
@@ -436,6 +437,7 @@ const UnorderedListComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Do use for bulleted lists that are easier to read',
           description:
             'Use unordered lists to break up blocks of related content into manageable bulleted items to make the information easier for users to read.',
           kind: UsageKind.DO,

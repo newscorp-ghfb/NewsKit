@@ -569,27 +569,30 @@ const schema = yup.object().shape({
       ),
       cards: [
         {
+          title: 'Do keep forms clear and simple',
           description:
             'Clear, simple forms help prevent users from getting confused and submitting wrong information.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-1'),
         },
         {
-          description:
-            'Ask yourself if each form input is necessary or whether you can get the information in another way, or at a more convenient time.',
+          title: "Don't include questions that aren't essential",
+          description: 'Ask yourself if each FormInput is necessary.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/form/usage/dont-1'),
         },
         {
+          title: 'Do wrap FormInput components that need validation',
           description:
-            'Ensure each form input component that needs validation is wrapped in a form.',
+            'Ensure each FormInput component that needs validation is wrapped in a form.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-2'),
         },
         {
+          title: 'Don’t validate prematurely',
           description: (
             <>
-              Avoid prematurely validating a form input (e.g. avoid setting text
+              Avoid prematurely validating a FormInput (e.g. avoid setting text
               fields to invalid before the user has finished typing).
             </>
           ),
@@ -597,49 +600,57 @@ const schema = yup.object().shape({
           media: getIllustrationComponent('components/form/usage/dont-2'),
         },
         {
+          title: 'Do use onBlur validation',
           description:
-            'Where possible, validate using onBlur (i.e. when the user clicks out of a FormInput, it’s validated). Validating as the user goes along, rather than when they submit the whole form, improves the user experience and helps users complete forms.',
+            'Where possible, validate using onBlur (i.e. when the user clicks out of a FormInput, it’s validated).',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-3'),
         },
         {
+          title: 'Do make error text clear and helpful',
           description:
             'Error text should be clear, concise and written in complete sentences - and it should tell the user how to resolve the issue.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-4'),
         },
         {
+          title: 'Do use sentence case for labels and assistive text',
           description:
             'Write labels and assistive text in sentence case to help with scannability and legibility.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-5'),
         },
         {
+          title: "Don't truncate or wrap labels",
           description: 'Keep labels short, clear and fully visible.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/form/usage/dont-3'),
         },
         {
+          title: 'Do keep labels and assistive text close to FormInput',
           description:
-            'Labels and assistive text should be in close proximity to their form input components to provide context for users.',
+            'Labels and assistive text should be in close proximity to their FormInput components to provide context for users.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-6'),
         },
         {
+          title: 'Do use assistive text for instructions',
           description:
-            'Assistive text is the best way to communicate information relating to instructions on completing an input or requirements.',
+            'Use assistive text for instructions on completing an input or to communicate requirements.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-7'),
         },
         {
+          title: 'Do swap assistive text with error text or character count',
           description:
             'Swap assistive text with error text or character count as required. Once the input is valid, show the assistive text or character count again.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-8'),
         },
         {
+          title: 'Do nest FormInput components',
           description:
-            "Form input components don't need to be direct children of the form component and can be nested inside other elements.",
+            "FormInput components don't need to be direct children of the form component and can be nested inside other elements.",
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/form/usage/do-9'),
         },

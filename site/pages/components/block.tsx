@@ -183,7 +183,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
           description:
             'Use the block as a container to easily apply spacing and style presets around other elements.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/block/do-01'),
+          media: getIllustrationComponent('components/block/usage/do-01'),
         },
         {
           title: 'Don’t use for equal spacing on multiple elements',
@@ -202,7 +202,7 @@ const BlockComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/block/dont-01'),
+          media: getIllustrationComponent('components/block/usage/dont-01'),
         },
       ],
     }}
