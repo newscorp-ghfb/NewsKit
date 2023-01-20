@@ -1,6 +1,0 @@
-{
-  "baseUrl": "http://localhost:8081",
-  "integrationFolder": "cypress/site/functional",
-  "viewportWidth": 1280,
-  "chromeWebSecurity":false
-}

@@ -25,6 +25,10 @@ const designRouteList: Item[] =
 const codeRouteList: Item[] =
   guidesRouteList.filter(route => route.title === 'Code')[0].subNav || [];
 
+const accessibilityRouteList: Item[] =
+  guidesRouteList.filter(route => route.title === 'Accessibility')[0].subNav ||
+  [];
+
 const getCardList = (routeList: Item[]) =>
   routeList
     .filter(route => route.page && route?.illustration)
@@ -37,6 +41,7 @@ const getCardList = (routeList: Item[]) =>
 
 const designRouteListCards = getCardList(designRouteList);
 const codeRouteListCards = getCardList(codeRouteList);
+const accessibilityListCards = getCardList(accessibilityRouteList);
 
 const HeaderImage = () => (
   <Illustration path="guides/overview/header-image" viewBox="0 0 1572 997" />
@@ -60,7 +65,7 @@ const Overview = (layoutProps: LayoutProps) => (
         <ContentSection sectionName="getting started design">
           <ContentPrimary
             headline="Getting started - design"
-            description="Essential reading to kickstart your first NewsKit project in Figma."
+            description="Kickstart your first NewsKit design project."
           >
             <MediaList
               cards={designRouteListCards}
@@ -71,10 +76,21 @@ const Overview = (layoutProps: LayoutProps) => (
         <ContentSection sectionName="getting started code">
           <ContentPrimary
             headline="Getting started - code"
-            description="Essential reading to kickstart using NewsKit in your codebase."
+            description="Start building digital products with NewsKit."
           >
             <MediaList
               cards={codeRouteListCards}
+              gridProps={{xsRowGutter: 'space050'}}
+            />
+          </ContentPrimary>
+        </ContentSection>
+        <ContentSection sectionName="getting started accessibility">
+          <ContentPrimary
+            headline="Getting started - accessibility"
+            description="Use NewsKit to create accessible products."
+          >
+            <MediaList
+              cards={accessibilityListCards}
               gridProps={{xsRowGutter: 'space050'}}
             />
           </ContentPrimary>

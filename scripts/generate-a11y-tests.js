@@ -3,6 +3,7 @@ const parser = require('@babel/parser');
 const fs = require('fs');
 const path = require('path');
 
+const dir = './cypress/config';
 const ignoreScenarios = ['image-e2e', 'use-media-query', 'layer'];
 
 const files = fg.sync('./src/**/**.stories.tsx');
@@ -53,7 +54,11 @@ const testsConfig = files
     }
   });
 
+if (!fs.existsSync(dir)) {
+  fs.mkdirSync(dir);
+}
+
 fs.writeFileSync(
-  './cypress/config/a11y-components.json',
+  `${dir}/a11y-components.json`,
   JSON.stringify(testsConfig, null, '\t'),
 );

@@ -37,7 +37,10 @@ export interface FloatingElementProps
   trigger?: TriggerType | TriggerType[];
   content:
     | React.ReactNode
-    | ((referenceProps: ReferenceProps) => React.ReactNode);
+    | ((
+        referenceProps: ReferenceProps,
+        context: FloatingContext<HTMLElement>,
+      ) => React.ReactNode);
   open?: boolean;
   placement?: Placement;
   overrides?: {
@@ -65,6 +68,7 @@ export interface FloatingElementProps
   restoreFocusTo?: HTMLElement;
   focusElementRef?: React.RefObject<HTMLElement>;
   disableFocusManagement?: boolean;
+  dismissOnBlur?: boolean;
 }
 
 export interface BaseFloatingElementProps extends FloatingElementProps {

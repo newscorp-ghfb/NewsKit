@@ -1827,7 +1827,7 @@ exports[`Select in Modal render Select 1`] = `
       >
         <div>
           <div
-            class="emotion-0 nk-overlay-enter-done"
+            class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
             data-testid="overlay"
           />
           <div
@@ -1848,7 +1848,7 @@ exports[`Select in Modal render Select 1`] = `
             >
               <div
                 aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
+                class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
                 data-testid="modal"
                 role="dialog"
               >
@@ -2625,7 +2625,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
       >
         <div>
           <div
-            class="emotion-0 nk-overlay-enter-done"
+            class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
             data-testid="overlay"
           />
           <div
@@ -2646,7 +2646,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
             >
               <div
                 aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
+                class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
                 data-testid="modal"
                 role="dialog"
               >
@@ -3504,7 +3504,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
       >
         <div>
           <div
-            class="emotion-0 nk-overlay-enter-done"
+            class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
             data-testid="overlay"
           />
           <div
@@ -3525,7 +3525,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
             >
               <div
                 aria-modal="true"
-                class="nk-modal-enter-done emotion-2"
+                class="nk-modal-enter-done emotion-2 nk-modal-appear-done"
                 data-testid="modal"
                 role="dialog"
               >
