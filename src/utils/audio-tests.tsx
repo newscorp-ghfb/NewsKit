@@ -11,6 +11,7 @@ type Component =
   | ComponentType<AudioPlayerProps>
   | ComponentType<AudioPlayerComposableProps>;
 
+// TODO Check if this limitation still applies to Percy:
 // We need a way to make sure all Audio Players are no longer in loading state
 // before taking the snaphot. One way is to conditionally show / hide an invisible
 // element on the page based on loading state, and pass this to the waitBeforeCapture
