@@ -673,7 +673,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Do put labels on the right of the radio buttons',
           description:
-            'When grouping multiple radio buttons, put the label on the right (end) so that, when used together in forms, radio button inputs align vertically. This makes them easier to find, especially for users of screen magnifiers.',
+            'When grouping multiple radio buttons, put the label on the right. This makes them easier to find, especially for users of screen magnifiers.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/radio-button/usage/do-5'),
         },
@@ -689,7 +689,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               Use assistive text to provide context to the radio button group
-              (e.g. why a selection is required).{' '}
+              (e.g. why a selection is required.){' '}
             </>
           ),
           kind: UsageKind.DO,
