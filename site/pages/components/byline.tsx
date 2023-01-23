@@ -57,7 +57,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.18.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/byline',
-      storybookId: 'components-byline',
+      storybookId: 'components-byline--story-byline-default',
     }}
     interactiveDemo={{
       introduction:
