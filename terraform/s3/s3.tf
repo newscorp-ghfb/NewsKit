@@ -45,8 +45,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy" {
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": [
-					"arn:aws:iam::940731442544:user/svc-ncu-product-platforms",
-					"AROAJQX7CD6B563F5XNHO"
+					"arn:aws:iam::940731442544:user/svc-ncu-product-platforms"
 				]
 			},
 			"Action": [
@@ -103,8 +102,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy2" {
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": [
-					"arn:aws:iam::940731442544:user/svc-ncu-product-platforms",
-					"AROAJQX7CD6B563F5XNHO"
+					"arn:aws:iam::940731442544:user/svc-ncu-product-platforms"
 				]
 			},
 			"Action": [
