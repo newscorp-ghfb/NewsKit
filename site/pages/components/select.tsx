@@ -186,13 +186,6 @@ const commonOverridesRows = [
     description:
       'This property is deprecated. Use marginBlockEnd instead. If provided, overrides the end margin.',
   },
-  // {
-  //   attribute: 'panel.zIndex',
-  //   type: 'layer | string',
-  //   default: 'layer',
-  //   description:
-  //     'If provided, this overrides the zIndex of the select panel. When set to "layer" the panel renders in LayerOrganizer.',
-  // },
   {
     attribute: 'modal.panel.width',
     type: 'MQ<string>',
@@ -673,21 +666,13 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/select/usage/do-1'),
         },
         {
-          title: 'Limited options + enough space = radio button',
+          title: 'Don’t use a select for few options',
           description: (
             <>
               Don&apos;t use a select when you have only a few options and
-              enough space. Use a radio button instead
-              <InlineMessage
-                role="region"
-                aria-label="Select validation"
-                title="Note"
-                overrides={{marginBlockStart: 'space050'}}
-              >
-                Selects can cause usability issues due to the number of
-                interactions required. This can increase the likelihood of the
-                user abandoning the task.
-              </InlineMessage>
+              enough space. Use a radio button instead. Selects can cause
+              usability issues due to the number of interactions required. This
+              can increase the likelihood of the user abandoning the task.
             </>
           ),
           kind: UsageKind.DONT,
@@ -699,12 +684,6 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             'Use a select when there are four or more options, and the user can only choose one.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/select/usage/do-2'),
-        },
-        {
-          title: 'Do give a default option',
-          description: 'Where possible, selects should have a default option.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/select/usage/dont-3'),
         },
         {
           title: 'Don’t have an empty select on page load',
