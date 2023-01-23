@@ -324,7 +324,8 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               Avoid using switches for communicating selection (e.g. multiple
-              table rows). In these cases, use a checkbox instead.
+              table rows). In these cases, use a{' '}
+              <Link href="/components/checkbox/">checkbox.</Link> instead.
             </>
           ),
           kind: UsageKind.DONT,
