@@ -650,7 +650,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -947,7 +947,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1244,7 +1244,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1541,7 +1541,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1842,7 +1842,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2664,7 +2664,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

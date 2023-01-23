@@ -57,6 +57,17 @@ const commonPropsRows = [
     description: `When the amount of options is greater than this number, the options list will be virtualized.`,
     default: '50',
   },
+  {
+    name: 'onOpenChange',
+    type: '(value:boolean):void',
+    description: `Callback fired when the select panel opens or close with value of true/false`,
+  },
+  {
+    name: 'controlled',
+    type: 'boolean',
+    description: `Force Select component to be controlled`,
+    default: 'false',
+  },
 ];
 
 const commonOverridesRows = [
