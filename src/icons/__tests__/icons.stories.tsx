@@ -74,8 +74,9 @@ const getSocialIconStylePreset = (iconName: string) =>
     .filter(x => !/Icon|Filled|Outlined /.test(x))
     .join('')}`;
 
-// TODO Check if this limitation still applies to Percy:
-// IndeterminateProgressIndicator was removed from storybook because its visual test was failing on Applitools.
+// IndeterminateProgressIndicator is excluded from Storybook because visual testing of animated
+// components like ProgressIndicator (https://newskit.co.uk/components/progress-indicator/)
+// is always likely to be problematic
 const {IndeterminateProgressIndicator, ...remainingCustomIcons} = customIcons;
 
 const materialIconsSample = {
