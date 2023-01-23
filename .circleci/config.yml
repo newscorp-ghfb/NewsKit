@@ -906,6 +906,8 @@ jobs:
       - run:
           name: Upload non-PR sites to S3 root
           command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
+            export s3Path_docs=<< parameters.s3Path_docs >>
+            export s3Path_storybook=<< parameters.s3Path_storybook >>
             echo $(date) > timestamp.html
             aws s3 cp timestamp.html $s3Path_docs
             echo "Error generating newskit site at $(date)" > 404.html
