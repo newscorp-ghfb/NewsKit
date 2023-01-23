@@ -1,11 +1,28 @@
 import React from 'react';
-import {Stack, Block, Divider, StackChild, Hidden, Cell, Grid} from 'newskit';
+import {Divider, GridLayout} from 'newskit';
 import {MetaProps} from './types';
 import {GitHubButton} from './github-button';
 import {FigmaButton} from './figma-button';
 import {StorybookButton} from './storybook-button';
 import {Status} from './status';
 import {Introduced} from './introduce';
+
+const smallAreas = `
+  intro
+  divider
+  buttons
+  dividerEnd
+`;
+
+const mediumAreas = `
+  intro
+  buttons
+`;
+
+const largeAreas = `
+  intro   buttons
+  divider divider
+`;
 
 export const Meta = ({
   status,
@@ -15,122 +32,55 @@ export const Meta = ({
   figmaUrl,
   storybookId,
 }: MetaProps) => (
-  <>
-    <Block spaceStack={{xs: 'space080', md: 'space050'}}>
-      <Hidden xs sm md>
-        <Stack flow="horizontal-center" stackDistribution="space-between">
-          <Stack flow="horizontal-top">
+  <GridLayout
+    areas={{xs: smallAreas, md: mediumAreas, lg: largeAreas}}
+    columns={{xs: '1fr', lg: '1fr 2fr'}}
+    rowGap="space050"
+    justifyContent="space-between"
+    overrides={{marginBlockEnd: {xs: 'space080', md: 'space060'}}}
+  >
+    {Area => (
+      <>
+        <Area.Intro>
+          <GridLayout
+            columns={{
+              sm: '1fr min-content 1fr',
+              md: 'min-content min-content min-content',
+            }}
+            columnGap="space060"
+            justifyContent="start"
+          >
             <Status status={status} />
-            <StackChild alignSelf="stretch">
-              <Block
-                spaceInline={{
-                  md: 'space060',
-                }}
-              />
-              <Divider vertical />
-              <Block
-                spaceInline={{
-                  md: 'space060',
-                }}
-              />
-            </StackChild>
+            <Divider vertical />
             <Introduced
               introduced={introduced}
               introducedLink={introducedLink}
             />
-          </Stack>
-          <Stack flow="horizontal-center" spaceInline="space040">
-            <StackChild alignSelf="stretch">
-              <GitHubButton href={codeUrl} />
-            </StackChild>
+          </GridLayout>
+        </Area.Intro>
+        <Area.Divider>
+          <Divider />
+        </Area.Divider>
+        <Area.Buttons>
+          <GridLayout
+            columns={{
+              xs: '1fr',
+              md: 'repeat(3, 1fr)',
+              lg: 'repeat(3, fit-content(100%))',
+            }}
+            columnGap={{md: 'space040'}}
+            rowGap={{xs: 'space040'}}
+            justifyContent="end"
+          >
+            <GitHubButton href={codeUrl} />
             <StorybookButton storybookId={storybookId} />
             <FigmaButton href={figmaUrl} />
-          </Stack>
-        </Stack>
-        <Block spaceStack="space050" />
-        <Divider />
-      </Hidden>
-
-      <Hidden xs sm lg xl>
-        <Stack flow="vertical-left" spaceInline="space050">
-          <StackChild alignSelf="stretch">
-            <Stack flow="horizontal-top">
-              <Status status={status} />
-              <StackChild alignSelf="stretch">
-                <Block
-                  spaceInline={{
-                    md: 'space060',
-                  }}
-                />
-                <Divider vertical />
-                <Block
-                  spaceInline={{
-                    md: 'space060',
-                  }}
-                />
-              </StackChild>
-              <Introduced
-                introduced={introduced}
-                introducedLink={introducedLink}
-              />
-            </Stack>
-          </StackChild>
-          <StackChild alignSelf="stretch">
-            <Cell xs={4}>
-              <GitHubButton href={codeUrl} />
-            </Cell>
-            <Cell xs={4}>
-              <StorybookButton storybookId={storybookId} />
-            </Cell>
-            <Cell xs={4}>
-              <FigmaButton href={figmaUrl} />
-            </Cell>
-          </StackChild>
-        </Stack>
-      </Hidden>
-
-      <Hidden md lg xl>
-        <Stack flow="vertical-left" spaceInline="space050">
-          <StackChild alignSelf="stretch">
-            <Cell xs={6}>
-              <Status status={status} />
-            </Cell>
-            <Cell xs={6}>
-              <Stack flow="horizontal-top">
-                <Divider vertical />
-                <Block spaceInline="space060" />
-                <Stack
-                  flow="vertical-left"
-                  spaceInline="space020"
-                  stackDistribution="space-evenly"
-                />
-                <Introduced
-                  introduced={introduced}
-                  introducedLink={introducedLink}
-                />
-              </Stack>
-            </Cell>
-          </StackChild>
-          <StackChild alignSelf="stretch">
-            <Grid xsMargin="space000">
-              <Cell xs={12}>
-                <Divider />
-                <Block spaceStack="space050" />
-                <GitHubButton href={codeUrl} />
-              </Cell>
-              <Cell xs={12}>
-                <StorybookButton storybookId={storybookId} />
-              </Cell>
-              <Cell xs={12}>
-                <FigmaButton href={figmaUrl} />
-                <Block spaceStack="space050" />
-                <Divider />
-              </Cell>
-            </Grid>
-          </StackChild>
-        </Stack>
-      </Hidden>
-    </Block>
-    <Block spaceStack={{xs: 'space000', md: 'space100'}} />
-  </>
+          </GridLayout>
+        </Area.Buttons>
+        <Area.DividerEnd>
+          <Divider />
+        </Area.DividerEnd>
+      </>
+    )}
+  </GridLayout>
 );
