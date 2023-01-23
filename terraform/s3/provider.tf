@@ -13,7 +13,15 @@ terraform {
 
 locals {
   tags = {
-    Name               = "ncu-newskit-s3"
+    Name               = "ncu-newskit-s3${var.tag_name_suffix}"
+    Environment        = var.environment
+    ServiceOwner       = "product-platforms"
+    ServiceName        = "ncu-newskit"
+    ServiceCatalogueId = 331
+  }
+
+  tags = {
+    Name               = "ncu-newskit-s3${var.tag_name_suffix2}"
     Environment        = var.environment
     ServiceOwner       = "product-platforms"
     ServiceName        = "ncu-newskit"
