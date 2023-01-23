@@ -264,8 +264,8 @@ commands:
             if [ -n "$CHANGES" ]; then
               echo "Terraform << parameters.folder >> changed"
             else
-              echo "Skipping as there are no changes to << parameters.folder >>"
-              circleci-agent step halt
+              echo "Skipping as there are no changes to << parameters.folder >>???"
+            #  circleci-agent step halt
             fi
 
   checkout_and_attach_workspace:
@@ -1405,7 +1405,7 @@ workflows:
             - build_icons
       - build_docs:
           name: build_docs_dev
-          context: ncu-newskit-site-pr
+          context: ncu-newskit-site-dev
           requires:
             - build_icons
       - push_s3_pr:
