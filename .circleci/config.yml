@@ -1403,6 +1403,11 @@ workflows:
           context: ncu-newskit-site-pr
           requires:
             - build_icons
+      - build_docs:
+          name: build_docs_dev
+          context: ncu-newskit-site-pr
+          requires:
+            - build_icons
       - push_s3_pr:
           name: deploy_to_s3_pr
           context: ncu-product-platforms-context
@@ -1533,11 +1538,6 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      - build_docs:
-          name: build_docs_dev
-          context: ncu-newskit-site-dev
-          requires:
-            - build_icons
 #      - build_docs:
 #          name: build_docs_staging
 #          context: ncu-newskit-site-stage
