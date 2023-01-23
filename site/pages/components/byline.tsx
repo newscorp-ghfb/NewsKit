@@ -45,7 +45,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Components',
+      type: 'Text',
       name: 'Byline',
       hero: {
         illustration: 'components/byline-illustration',
@@ -131,7 +131,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The byline contains 1 required element and 1 optional element',
+        'The byline contains one required element and one optional element.',
       rows: [
         {
           name: 'Byline',
@@ -231,7 +231,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: '',
             description:
-              'The author’s name does not describe where the link is taking the user. Adding an ariaLabel can provide more contex',
+              'The author’s name does not describe where the link is taking the user. Adding an ariaLabel can provide more context.',
             userSupplied: true,
           },
         ],
