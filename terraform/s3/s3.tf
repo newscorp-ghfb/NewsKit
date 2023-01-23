@@ -1,3 +1,8 @@
+# ARN for aws-digital-dev-ngnweb:
+# "arn:aws:iam::940731442544:user/svc-ncu-product-platforms",
+# ARN for aws-digital-prod-ngnweb account?
+# "AROAJQX7CD6B563F5XNHO", # TODO: this was set manually - find out why.
+
 resource "aws_s3_bucket" "s3_docs" {
   bucket = var.docs_bucket
   acl = "public-read"
@@ -40,10 +45,8 @@ resource "aws_s3_bucket_policy" "s3_docs_policy" {
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": [
-					# ARN for aws-digital-dev-ngnweb
 					"arn:aws:iam::940731442544:user/svc-ncu-product-platforms",
-					# ARN for aws-digital-prod-ngnweb account?
-					"AROAJQX7CD6B563F5XNHO", # TODO: this was set manually - find out why.
+					"AROAJQX7CD6B563F5XNHO"
 				]
 			},
 			"Action": [
@@ -100,10 +103,8 @@ resource "aws_s3_bucket_policy" "s3_docs_policy2" {
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": [
-					# ARN for aws-digital-dev-ngnweb
 					"arn:aws:iam::940731442544:user/svc-ncu-product-platforms",
-					# ARN for aws-digital-prod-ngnweb account?
-					"AROAJQX7CD6B563F5XNHO", # TODO: this was set manually - find out why.
+					"AROAJQX7CD6B563F5XNHO"
 				]
 			},
 			"Action": [
