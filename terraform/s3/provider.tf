@@ -1,9 +1,9 @@
 provider "aws" {
   region = "eu-west-1"
-  required_version = ">= 0.12"
 }
 
 terraform {
+  required_version = ">= 0.12" # eg 0.12.28
   backend "s3" {
     bucket = "nu-sun-terraform-state"
     key    = "product-platforms/newskit/s3/terraform.tfstate"
