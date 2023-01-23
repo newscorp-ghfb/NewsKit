@@ -1422,7 +1422,7 @@ workflows:
             - deploy_to_s3_pr
       - push_s3_general:
           name: deploy_to_s3_dev
-          context: ncu-newskit-site-dev
+          context: ncu-product-platforms-context
           s3Path_docs: s3://ncu-newskit-docs-dev
           s3Path_storybook: s3://ncu-newskit-docs-dev/storybook
           requires:
