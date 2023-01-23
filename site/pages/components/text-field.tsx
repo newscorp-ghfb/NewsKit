@@ -659,23 +659,11 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the text field:',
       cards: [
         {
-          title: 'Do think carefully about text field width',
+          title: 'Do consider text field width',
           description: (
             <>
               The width of the text field should be proportional to the expected
-              user input. For example, when capturing date of birth, the format
-              should be split up into day/month/year (DD - MM - YYYY) using
-              multiple text fields.
-              <br />
-              <br />
-              This lets users focus on inputting a specific value and reduces
-              cognitive load. Using identical input widths for all text inputs
-              makes forms visually pleasing but harder for a user to complete.
-              <br />
-              <br />
-              Avoid using the text field if you need to let users enter longer
-              answers that might span multiple lines. Consider an alternative,
-              such as text area.
+              user input.
             </>
           ),
           kind: UsageKind.DO,
@@ -684,7 +672,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Don’t capture multiple pieces of information in one field',
           description:
-            'Avoid using a single text field to capture multiple pieces of information from users, as this increases cognitive load. Use an individual text field for each.',
+            'Avoid using a single text field to capture multiple pieces of information from users, as this increases cognitive load. Use an individual text field for each input.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/text-field/usage/dont-01',
