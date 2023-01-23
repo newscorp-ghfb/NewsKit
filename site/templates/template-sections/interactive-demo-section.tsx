@@ -18,7 +18,7 @@ export const InteractiveDemoSection = <T extends GenericComponent>({
   playground,
 }: InteractiveDemoSectionProps<T>) => (
   <CommonSection
-    title="Interactive Demo"
+    title="Interactive demo"
     id="interactive-demo"
     introduction={introduction}
   >

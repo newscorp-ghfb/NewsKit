@@ -214,12 +214,12 @@ const TextBlockComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the text block.',
+      introduction: 'Here’s how and when to use the text block:',
       cards: [
         {
+          title: 'Do use for text content',
           description:
-            'Use the text block for any text content, which can apply typography presets and style presets.',
+            'Use the text block for any text content, to which typography presets and style presets can be applied.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/text-block/usage/do-01'),
         },

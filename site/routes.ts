@@ -705,6 +705,7 @@ export const routes = [
             page: true,
             id: '/components/breadcrumbs',
             description: 'Breadcrumbs are used for secondary navigation.',
+
             illustration: 'components/breadcrumbs/hero',
           },
           {
