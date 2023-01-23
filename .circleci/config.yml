@@ -872,7 +872,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  push_s3:
+  push_s3_pr:
     executor: aws-cli/default #TODO: refactor other steps to use this orb it's much cleaner, install and setup can then be moved into the shared aws step
     steps:
       - checkout
@@ -881,7 +881,7 @@ jobs:
       - aws-cli/install
       - aws-cli/setup
       - run:
-          name: Upload to s3
+          name: Upload PR sites to S3 subfolder
           command: |
             export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/')
             aws s3 cp public $s3Path_docs --recursive
@@ -889,6 +889,31 @@ jobs:
             aws s3 cp dist-storybook $s3Path_storybook --recursive
       - slack/notify:
           <<: *slack_notify
+
+  push_s3_general:
+    parameters:
+      s3Path_docs:
+        type: string
+      s3Path_storybook:
+        type: string
+    executor: aws-cli/default
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - aws-cli/install
+      - aws-cli/setup
+      - run:
+          name: Upload non-PR sites to S3 root
+          command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
+            echo $(date) > timestamp.html
+            aws s3 cp timestamp.html $s3Path_docs
+            echo "Error generating newskit site at $(date)" > 404.html
+            aws s3 cp 404.html $s3Path_docs
+            aws s3 cp public $s3Path_docs --recursive
+            aws s3 cp dist-storybook $s3Path_storybook --recursive
+      #- slack/notify:
+      #    <<: *slack_notify
 
   post_pr_env_url_to_github_pr:
     executor: node
@@ -1355,13 +1380,31 @@ workflows:
           environment: pr
           requires:
             - init_aws
+      - deploy_terraform:
+          name: deploy_terraform_s3_dev
+          package: s3
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: true
+          environment: dev
+          requires:
+            - init_aws
+#       - deploy_terraform:
+#           name: deploy_terraform_s3_staging
+#           package: s3
+#           context: ncu-product-platforms-context
+#           apply: false
+#           tf_env: true
+#           environment: staging
+#           requires:
+#             - init_aws
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
           requires:
             - build_icons
-      - push_s3:
-          name: deploy_to_s3
+      - push_s3_pr:
+          name: deploy_to_s3_pr
           context: ncu-product-platforms-context
           requires:
             - deploy_terraform_s3_pr
@@ -1371,7 +1414,25 @@ workflows:
           name: pr_enviroment_link
           context: ncu-product-platforms-context
           requires:
-            - deploy_to_s3
+            - deploy_to_s3_pr
+      - push_s3_general:
+          name: deploy_to_s3_dev
+          context: ncu-product-platforms-context
+          s3Path_docs: s3://ncu-newskit-docs-dev/
+          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook
+          requires:
+            - deploy_terraform_s3_dev
+            - build_docs_dev
+            - build_storybook
+#       - push_s3_general:
+#           name: deploy_to_s3_staging
+#           context: ncu-newskit-site-stage
+#           s3Path_docs: s3://ncu-newskit-docs-staging/
+#           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook
+#           requires:
+#             - deploy_terraform_s3_staging
+#             - build_docs_staging
+#             - build_storybook
 
   pull_request_codemod:
     when:
@@ -1477,6 +1538,11 @@ workflows:
           context: ncu-newskit-site-dev
           requires:
             - build_icons
+#      - build_docs:
+#          name: build_docs_staging
+#          context: ncu-newskit-site-stage
+#          requires:
+#            - build_icons
       - test_broken_links_docs:
           name: test_broken_links_docs_dev
           context: ncu-product-platforms-context
