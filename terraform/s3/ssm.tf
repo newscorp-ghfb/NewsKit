@@ -30,3 +30,36 @@ resource "aws_ssm_parameter" "newskit-docs-bucket-endpoint" {
     environment = var.environment
   }
 }
+
+resource "aws_ssm_parameter" "newskit-docs-bucket2-arn" {
+  name  = "/ncu-newskit/${var.environment}/docs-bucket2/arn"
+  type  = "String"
+  value = "${aws_s3_bucket.s3_docs2.arn}"
+  overwrite = true
+
+  tags = {
+    environment = var.environment2
+  }
+}
+
+resource "aws_ssm_parameter" "newskit-docs-bucket2-name" {
+  name  = "/ncu-newskit/${var.environment}/docs-bucket2/name"
+  type  = "String"
+  value = "${aws_s3_bucket.s3_docs2.bucket}"
+  overwrite = true
+
+  tags = {
+    environment = var.environment2
+  }
+}
+
+resource "aws_ssm_parameter" "newskit-docs-bucket2-endpoint" {
+  name  = "/ncu-newskit/${var.environment}/docs-bucket2/endpoint"
+  type  = "String"
+  value = "${aws_s3_bucket.s3_docs2.website_endpoint}"
+  overwrite = true
+
+  tags = {
+    environment = var.environment2
+  }
+}
