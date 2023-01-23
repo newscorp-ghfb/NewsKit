@@ -421,7 +421,6 @@ const SelectComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 role="region"
                 aria-label="Placeholder accessible"
-                title="Note"
                 overrides={{marginBlockStart: 'space030'}}
               >
                 Placeholder text is not accessible. Use assistive text to give
@@ -630,7 +629,6 @@ const SelectComponent = (layoutProps: LayoutProps) => (
               <InlineMessage
                 role="region"
                 aria-label="Select validation"
-                title="Note"
                 overrides={{marginBlockStart: 'space050'}}
               >
                 Validation only works if the select uses the form component.

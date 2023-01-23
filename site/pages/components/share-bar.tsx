@@ -23,7 +23,7 @@ const PlaygroundContainer = styled.div`
 const ShareBarComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Share Bar',
+      title: 'Share bar',
       description:
         'Share bars lets users share content to social media and other channels. They’re typically embedded within article pages.',
     }}
@@ -99,19 +99,19 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Label',
           description:
-            'Informs users what information belongs in a given share bar',
+            'Informs users what information belongs in a given share bar.',
           component: ['Text Block'],
           optional: true,
         },
         {
-          name: 'Action Item',
+          name: 'Action item',
           description:
             'Actions components can be passed into the list which, when clicked, take the user to the relevant social channel.',
           component: ['Button', 'Icon Button', 'Link'],
           optional: undefined,
         },
         {
-          name: 'Share Bar Container',
+          name: 'Share bar container',
           description: 'Contains the elements of the share bar.',
           component: 'Block',
           optional: undefined,
@@ -238,9 +238,9 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
       introduction: `Here are the properties for the share bar component:`,
       components: [
         {
-          title: 'Share Bar',
+          title: 'Share bar',
           summary:
-            'Share bar has a range of props  to define the experience in different use cases.',
+            'Share bar has a range of props to define the experience in different use cases.',
           propsRows: [
             {
               name: 'label',

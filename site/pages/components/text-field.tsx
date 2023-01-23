@@ -310,7 +310,6 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 icon={infoIcon}
                 role="region"
                 aria-label="Placeholder accessible"
-                title="Note"
                 overrides={{marginBlockStart: 'space030'}}
               >
                 Placeholder text is not accessible. Use assistive text to give
@@ -345,7 +344,9 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               The text field supports native HTML autocomplete functionality
               that provides a visual hint to users if enabled. <br />
               <br />
-              Learn more about HTML autocomplete at MND Web Docs.
+              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">
+                Learn more about HTML autocomplete at MDN Web Docs.
+              </Link>
             </>
           ),
           media: getIllustrationComponent(
@@ -360,7 +361,9 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               that sets a maximum length of the number of characters entered.
               <br />
               <br />
-              Learn more about HTML input attribute types at MND Web Docs.
+              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#maxlength">
+                Learn more about HTML input attribute types at MDN Web Docs.
+              </Link>
             </>
           ),
           media: getIllustrationComponent(
@@ -375,7 +378,9 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               that sets a minimum length of the number of characters entered.
               <br />
               <br />
-              Learn more about HTML input attribute types at MND Web Docs.
+              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#minlength">
+                Learn more about HTML input attribute types at MDN Web Docs.
+              </Link>
             </>
           ),
           media: getIllustrationComponent(
@@ -390,7 +395,9 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               that the value of the input must match to be valid.
               <br />
               <br />
-              Learn more about HTML input attribute types at MND Web Docs.
+              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#pattern">
+                Learn more about HTML input attribute types at MDN Web Docs.
+              </Link>
             </>
           ),
           media: getIllustrationComponent(
@@ -407,7 +414,9 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               &apos;password&apos;, &apos;tel&apos; and &apos;number&apos;.
               <br />
               <br />
-              Learn more about HTML input types at MND Web Docs.
+              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#type">
+                Learn more about HTML input types at MDN Web Docs.
+              </Link>
             </>
           ),
           media: getIllustrationComponent('components/text-field/options/type'),
@@ -423,7 +432,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               &apos;numeric&apos;.
               <br />
               <br />
-              Learn more about HTML input mode attribute types at MND Web Docs.
+              <Link href="https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute">
+                Learn more about HTML input mode attribute types at HTML Living
+                Standard.
+              </Link>
             </>
           ),
           media: getIllustrationComponent(
@@ -629,7 +641,6 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 icon={infoIcon}
                 role="region"
                 aria-label="TextField validation"
-                title="Note"
                 overrides={{marginBlockStart: 'space050'}}
               >
                 Validation only works if the form input text field uses the form

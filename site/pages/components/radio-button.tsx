@@ -276,7 +276,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Radio Group',
+          title: 'Radio group',
           description: 'Use the radio group to group radio buttons.',
           media: getIllustrationComponent(
             'components/radio-button/options/radio-group',
@@ -300,7 +300,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction: 'The Radio Button has the following states:',
+      introduction: 'The radio button has the following states:',
       layout: '3-span',
       cards: [
         {
@@ -328,7 +328,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Focus Hover',
+          title: 'Focus hover',
           description:
             'Communicates that a user has highlighted and hovered over a radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -344,7 +344,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Hover',
+          title: 'Checked hover',
           description:
             'The radio box input changes style to let the user know the radio box is checked and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
@@ -352,7 +352,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Focus',
+          title: 'Checked focus',
           description:
             'Communicates that a user has highlighted a radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -360,7 +360,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Focus Hover',
+          title: 'Checked focus hover',
           description:
             'Communicates that a user has highlighted and hovered over a radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -383,7 +383,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Invalid Focus',
+          title: 'Invalid focus',
           description:
             'Communicates that a user has highlighted an invalid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -391,7 +391,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Invalid Hover',
+          title: 'Invalid hover',
           description:
             'The radio button changes style to let the user know the radio button is in an invalid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
@@ -399,7 +399,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Invalid Focus Hover',
+          title: 'Invalid focus hover',
           description:
             'Communicates that a user has highlighted and hovered over an invalid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -407,7 +407,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Invalid',
+          title: 'Checked invalid',
           description:
             'The radio button input changes style to let the user know the radio button is checked and in an invalid state. The style of the label remains the same.',
           media: getIllustrationComponent(
@@ -415,7 +415,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Invalid Focus',
+          title: 'Checked invalid focus',
           description:
             'Communicates that a user has highlighted a checked, invalid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -423,7 +423,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Invalid Hover',
+          title: 'Checked invalid hover',
           description:
             'The radio button input changes style to let the user know the radio button is checked, in an invalid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
@@ -431,7 +431,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Invalid Focus Hover',
+          title: 'Checked invalid focus hover',
           description:
             'Communicates that a user has highlighted and hovered over a checked, invalid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -453,7 +453,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Valid Focus',
+          title: 'Valid focus',
           description: (
             <>
               Communicates that a user has highlighted a valid radio button
@@ -465,7 +465,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Valid Hover',
+          title: 'Valid hover',
           description:
             'The radio button input changes style to let the user know the radio button is in a valid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
@@ -473,7 +473,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Valid Focus Hover',
+          title: 'Valid focus hover',
           description:
             'Communicates that a user has highlighted and hovered over a valid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -481,7 +481,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Valid',
+          title: 'Checked valid',
           description:
             'The radio button input changes style to let the user know the radio button is checked and in a valid state. The style of the label remains the same.',
           media: getIllustrationComponent(
@@ -489,7 +489,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Valid Focus',
+          title: 'Checked valid focus',
           description:
             'Communicates that a user has highlighted a checked, valid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -497,7 +497,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Valid Hover',
+          title: 'Checked valid hover',
           description:
             'The radio button input changes style to let the user know the radio button is checked, in a valid state and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent(
@@ -505,7 +505,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Valid Focus Hover',
+          title: 'Checked valid focus hover',
           description:
             'Communicates that a user has highlighted and hovered over a valid radio button (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -532,7 +532,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Disabled',
+          title: 'Checked disabled',
           description: (
             <>
               Communicates that a radio button exists, but isn’t available in
@@ -594,7 +594,6 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
                 icon={infoIcon}
                 role="region"
                 aria-label="Radio validation"
-                title="Note"
                 overrides={{marginBlockStart: 'space050'}}
               >
                 Validation only works if the form input radio button uses the
@@ -626,7 +625,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
           title: 'Default checked',
           description: (
             <>
-              The Radio Button&apos;s initial state can be set to checked or
+              The radio button&apos;s initial state can be set to checked or
               unchecked by default (controlled or uncontrolled).
               <br />
               <br />
@@ -746,12 +745,7 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
                 If the radio button with focus isn’t checked, changes the state
                 to <InlineCode>checked</InlineCode>, Otherwise, does nothing.
                 <Block spaceStack="space030" />
-                <InlineMessage
-                  icon={infoIcon}
-                  role="region"
-                  aria-label="Space"
-                  title="Note"
-                >
+                <InlineMessage icon={infoIcon} role="region" aria-label="Space">
                   The state where a radio button is not checked only occurs on
                   page load.
                 </InlineMessage>

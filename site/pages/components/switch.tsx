@@ -187,7 +187,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/switch/states/focus'),
         },
         {
-          title: 'Focus Hover',
+          title: 'Focus hover',
           description:
             'Communicates that the user has highlighted and hovered over a switch (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -201,13 +201,13 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/switch/states/checked'),
         },
         {
-          title: 'Checked Hover',
+          title: 'Checked hover',
           description:
             'The switch input changes style to let the user know the switch is checked and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent('components/switch/states/checked'),
         },
         {
-          title: 'Checked Focus',
+          title: 'Checked focus',
           description:
             'Communicates that a user has highlighted a switch (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -215,7 +215,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Checked Focus Hover',
+          title: 'Checked focus hover',
           description:
             'Communicates that a user has highlighted and hovered over a switch (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
@@ -240,7 +240,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/switch/states/disabled'),
         },
         {
-          title: 'Checked Disabled',
+          title: 'Checked disabled',
           description: (
             <>
               Communicates that a switch exists, but isn&apos;t available in
