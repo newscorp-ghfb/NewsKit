@@ -142,8 +142,6 @@ const HowTo = (layoutProps: LayoutProps) => (
               <Link
                 href="https://www.figma.com/community/file/1154730991789332817"
                 external={false}
-                type="standalone"
-                overrides={{typographyPreset: 'editorialParagraph030'}}
               >
                 method-picking tool
               </Link>{' '}

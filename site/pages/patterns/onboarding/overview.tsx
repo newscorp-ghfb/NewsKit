@@ -23,14 +23,14 @@ const icon = (
 const Overview = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
     headTags={{
-      title: 'Overview',
+      title: 'Onboarding overview',
       description:
         'Onboarding is the first impression a user has of a product or feature. It’s crucial to make it count.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Patterns',
-      name: 'Overview',
+      name: 'Onboarding overview',
       hero: {
         illustration: 'patterns/onboarding/overview/hero',
       },
@@ -84,7 +84,7 @@ const Overview = (layoutProps: LayoutProps) => (
       <ContentSection sectionName="next Steps">
         <ContentPrimary
           id="next Steps"
-          toc="Next Steps"
+          toc="Next steps"
           headline={
             <>
               <StyledHeading>Next Steps</StyledHeading>
@@ -96,8 +96,6 @@ const Overview = (layoutProps: LayoutProps) => (
               <Link
                 href="https://newskit.co.uk/patterns/onboarding/best-practice/"
                 external={false}
-                type="standalone"
-                overrides={{typographyPreset: 'editorialParagraph030'}}
               >
                 best practices
               </Link>{' '}
@@ -105,8 +103,6 @@ const Overview = (layoutProps: LayoutProps) => (
               <Link
                 href="https://newskit.co.uk/patterns/onboarding/how-to/"
                 external={false}
-                type="standalone"
-                overrides={{typographyPreset: 'editorialParagraph030'}}
               >
                 how best to onboard users.
               </Link>{' '}
