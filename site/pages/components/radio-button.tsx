@@ -807,7 +807,10 @@ const RadioButtonComponent = (layoutProps: LayoutProps) => (
                 <>
                   If provided, defines name of the input element. Use when
                   submitting an{' '}
-                  <Link href="/components/radio-button/">HTML form</Link>.
+                  <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">
+                    HTML form
+                  </Link>
+                  .
                 </>
               ),
             },
