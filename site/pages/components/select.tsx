@@ -62,6 +62,12 @@ const commonPropsRows = [
     type: '(value:boolean):void',
     description: `Callback fired when the select panel opens or close with value of true/false`,
   },
+  {
+    name: 'controlled',
+    type: 'boolean',
+    description: `Force Select component to be controlled`,
+    default: 'false',
+  },
 ];
 
 const commonOverridesRows = [
