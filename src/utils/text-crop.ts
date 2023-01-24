@@ -45,7 +45,7 @@ export const legacyTextCrop = ({
   };
 };
 
-type FontUnit = 'px' | 'rem' | 'em';
+type FontUnit = 'px' | 'rem';
 
 export type TextCropProps = {
   fontSize: `${number}${FontUnit}`;
@@ -79,7 +79,7 @@ export const textCrop = ({
   fontSize,
   fontMetrics,
 }: TextCropProps): TextCropResults => {
-  const match = fontSize.match(/(\d+(?:\.\d+)?)(px|rem|em)/);
+  const match = fontSize.match(/(\d+(?:\.\d+)?)(px|rem)/);
   if (!match) {
     throw Error('invalid fontSize');
   }
