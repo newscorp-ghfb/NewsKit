@@ -346,7 +346,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               The text field supports native HTML autocomplete functionality
               that provides a visual hint to users if enabled. <br />
               <br />
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete">
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
+                target="_blank"
+              >
                 Learn more about HTML autocomplete at MDN Web Docs.
               </Link>
             </>
@@ -363,7 +366,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               that sets a maximum length of the number of characters entered.
               <br />
               <br />
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#maxlength">
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#maxlength"
+                target="_blank"
+              >
                 Learn more about HTML input attribute types at MDN Web Docs.
               </Link>
             </>
@@ -380,7 +386,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               that sets a minimum length of the number of characters entered.
               <br />
               <br />
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#minlength">
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#minlength"
+                target="_blank"
+              >
                 Learn more about HTML input attribute types at MDN Web Docs.
               </Link>
             </>
@@ -397,7 +406,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               that the value of the input must match to be valid.
               <br />
               <br />
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#pattern">
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#pattern"
+                target="_blank"
+              >
                 Learn more about HTML input attribute types at MDN Web Docs.
               </Link>
             </>
@@ -416,7 +428,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               &apos;password&apos;, &apos;tel&apos; and &apos;number&apos;.
               <br />
               <br />
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#type">
+              <Link
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#type"
+                target="_blank"
+              >
                 Learn more about HTML input types at MDN Web Docs.
               </Link>
             </>
