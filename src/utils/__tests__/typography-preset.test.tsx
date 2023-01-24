@@ -225,7 +225,7 @@ describe('TypographyPreset', () => {
           editorialParagraph030: {
             fontFamily: 'Font Family Name',
             fontWeight: 500,
-            fontSize: 12,
+            fontSize: '12px',
           },
         },
       } as unknown) as Theme,
@@ -276,7 +276,7 @@ describe('TypographyPreset', () => {
           editorialParagraph030: {
             fontFamily: 'Font Family Name',
             fontWeight: 500,
-            fontSize: 12,
+            fontSize: '12px',
           },
         },
       } as unknown) as Theme,
