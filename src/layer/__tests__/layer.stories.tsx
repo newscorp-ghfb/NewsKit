@@ -1,17 +1,8 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Layer as UnstyledLayer, LayerOrganizer} from '..';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {getColorCssFromTheme, styled} from '../../utils/style';
-
-export default {
-  title: 'Components/layer',
-  component: () => 'None',
-  // this story is only for testing purposes so we can ignore all rules
-  disabledRules: [
-    // colored layers in this story are only for demo purposes that's why this is disabled
-    'color-contrast',
-  ],
-};
 
 const Layer = styled(UnstyledLayer)<{color?: string}>`
   border: 1px dotted;
@@ -242,3 +233,18 @@ export const StoryNestedLayerOrganizerZindex = () => (
   </>
 );
 StoryNestedLayerOrganizerZindex.storyName = 'nested layer organizer zindex';
+
+export default {
+  title: 'Components/Layer',
+  component: Layer,
+  disabledRules: ['color-contrast'],
+  parameters: {
+    nkDocs: {
+      title: 'Layer',
+      url: 'https://newskit.co.uk/components/layer',
+      description:
+        'Layers allow for the stacking of components and other elements, giving control over how they interact together and appear to users.',
+    },
+  },
+  decorators: [(Story: StoryType) => <Story />],
+};
