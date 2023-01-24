@@ -640,8 +640,6 @@ jobs:
     steps:
       - checkout_and_attach_workspace
       - run_test_visual_comps_percy
-      - slack/notify:
-          <<: *slack_notify
 
   comps_tests_conditional_run_to_update_baselines:
     # if there are any visual diffs we need to run the Percy comps tests to update the baselines
@@ -692,23 +690,17 @@ jobs:
     executor: node
     steps:
       - skip_test_visual_comps_percy
-      - slack/notify:
-          <<: *slack_notify
 
   skip_percy_comps_check_2:
     executor: node
     steps:
       - skip_test_visual_comps_percy
-      - slack/notify:
-          <<: *slack_notify
 
   skip_percy_docsite_check:
     <<: *cypress_defaults
     executor: cypress
     steps:
       - skip_test_visual_docs_percy
-      - slack/notify:
-          <<: *slack_notify
 
   test_visual_docs_percy:
     <<: *cypress_defaults
@@ -716,8 +708,6 @@ jobs:
     steps:
       - checkout_and_attach_workspace
       - run_test_visual_docs_percy
-      - slack/notify:
-          <<: *slack_notify
 
   test_visual_docs_percy_2:
     <<: *cypress_defaults
@@ -725,8 +715,6 @@ jobs:
     steps:
       - checkout_and_attach_workspace
       - run_test_visual_docs_percy
-      - slack/notify:
-          <<: *slack_notify
 
   test_e2e_comps:
     <<: *cypress_defaults
