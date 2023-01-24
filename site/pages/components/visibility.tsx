@@ -147,7 +147,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
             'Have equivalent functionality for all breakpoints (e.g. a drawer for top-level navigation items on xs or sm breakpoints where space is limited).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
-            'components/visibility/visibility-dont-01-illustration',
+            'components/visibility/usage/dont-01',
             {viewBox: '0 0 1490 839'},
           ),
         },

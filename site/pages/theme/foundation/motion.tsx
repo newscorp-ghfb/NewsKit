@@ -38,26 +38,30 @@ const TOKENS_DESCRIPTION: {[key in string]: string} = {
 
 const DO_AND_DONT = [
   {
+    title: 'Do use motion for emphasis',
     description: `Motion should highlight important details and key points in a user’s journey.`,
     kind: UsageKind.DO,
-    media: getIllustrationComponent('theme/motion/do-01'),
+    media: getIllustrationComponent('theme/motion/usage/do-01'),
   },
   {
+    title: 'Don’t distract the user',
     description: `Motion shouldn’t distract or block the user from what they’re doing.`,
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('theme/motion/dont-01', {
+    media: getIllustrationComponent('theme/motion/usage/dont-01', {
       viewBox: '0 0 1491 839',
     }),
   },
   {
+    title: 'Don’t make motion too fast',
     description: `Avoid motion that’s too fast for the user to follow.`,
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('theme/motion/dont-02'),
+    media: getIllustrationComponent('theme/motion/usage/dont-02'),
   },
   {
+    title: 'Don’t make motion too slow',
     description: `Avoid motion that’s too slow and prevents a user from advancing.`,
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('theme/motion/dont-03'),
+    media: getIllustrationComponent('theme/motion/usage/dont-03'),
   },
 ];
 

@@ -243,23 +243,25 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the link component.',
+      introduction: 'Here’s how and when to use the link:',
       layout: '2-span',
       cards: [
         {
+          title: 'Do use inline links within paragraphs',
           description:
             'Use inline links within paragraphs or sentences to link to content on the same page or other pages.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/link/usage/do-01'),
         },
         {
+          title: 'Do use standalone links within navigation components',
           description:
             'Use standalone links outside of body content, for example within navigational components such as menus, headers, and footers.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/link/usage/do-02'),
         },
         {
+          title: 'Do use icons for external links',
           description:
             'Use a trailing icon to indicate the link takes the user to an external site.',
           kind: UsageKind.DO,
