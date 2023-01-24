@@ -22,35 +22,35 @@ const listData = [
 
 const TABLE_DATA = [
   {
-    numbers: 'Component',
+    sequence: 'Component',
     show: 'Modal',
     prompt: 'Badge',
     discover: <IconFilledNullDot />,
     remind: 'Popover',
   },
   {
-    numbers: 'Where',
+    sequence: 'Where',
     show: 'After edition loads',
     prompt: 'Tab menu',
     discover: <IconFilledNullDot />,
     remind: 'Tab menu',
   },
   {
-    numbers: 'When',
+    sequence: 'When',
     show: '1st open of app',
     prompt: 'In 1st session, post modal dismissal',
     discover: <IconFilledNullDot />,
     remind: 'On load of app, 5th session',
   },
   {
-    numbers: 'Lifespan/rules',
+    sequence: 'Lifespan/rules',
     show: 'Only see in that session',
     prompt: 'Persist until ‘saved articles’ tab is visited',
     discover: <IconFilledNullDot />,
     remind: 'Only see in that session',
   },
   {
-    numbers: 'Notes',
+    sequence: 'Notes',
     show: <IconFilledNullDot />,
     prompt: <IconFilledNullDot />,
     discover: <IconFilledNullDot />,
@@ -221,7 +221,7 @@ const HowTo = (layoutProps: LayoutProps) => (
         >
           <Table
             columns={
-              ['Numbers', 'Show', 'Prompt', 'Discover', 'Remind'] as string[]
+              ['Sequence', 'Show', 'Prompt', 'Discover', 'Remind'] as string[]
             }
             rows={TABLE_DATA}
           />
