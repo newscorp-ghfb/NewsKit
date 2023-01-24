@@ -1423,6 +1423,11 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
@@ -4157,6 +4162,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -6898,6 +6908,11 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
@@ -9632,6 +9647,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -12373,6 +12393,11 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
@@ -15107,6 +15132,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -17848,6 +17878,11 @@ Object {
         "borderRadius": "{{borders.borderRadiusRounded030}}",
       },
     },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
+      },
+    },
     "linkFooter": Object {
       "active": Object {
         "color": "{{colors.interactivePrimary050}}",
@@ -20582,6 +20617,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
