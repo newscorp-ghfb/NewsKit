@@ -981,11 +981,14 @@ export const StorySelectControlled = () => {
   return (
     <Container>
       <Block>
-        <Label htmlFor="controlled">Controlled</Label>
+        <Label htmlFor="controlled" id="controlled-label">
+          Controlled
+        </Label>
         <Select
           aria-describedby="id-controlled-at"
           id="controlled"
           size="medium"
+          labelId="controlled-label"
           onChange={handleChange}
         >
           {items.map(item => (

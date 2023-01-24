@@ -46,6 +46,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onOpenChange,
       // force select in controlled mode
       controlled = false,
+      labelId,
       ...restProps
     } = props;
 
@@ -238,7 +239,10 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const {
       ref: downshiftMenuPropsRef,
       ...downshiftMenuPropsExceptRef
-    } = getMenuProps({ref: composeRefs(refs.floating, panelRef)});
+    } = getMenuProps({
+      ref: composeRefs(refs.floating, panelRef),
+      'aria-labelledby': labelId,
+    });
 
     // eslint-disable-next-line consistent-return
     React.useLayoutEffect(() => {

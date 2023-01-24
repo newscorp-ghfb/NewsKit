@@ -1,7 +1,11 @@
 import React, {createRef} from 'react';
 import {cleanup, fireEvent, screen, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import {UseSelectGetItemPropsOptions, UseSelectProps} from 'downshift';
+import {
+  UseSelectGetItemPropsOptions,
+  UseSelectProps,
+  UseSelectGetMenuPropsOptions,
+} from 'downshift';
 import {Select, SelectProps, ButtonSelectSize, SelectOption} from '..';
 import {
   renderToFragmentInBody,
@@ -15,6 +19,7 @@ import {Label} from '../../label';
 import {createTheme, EventTrigger, styled} from '../..';
 import {IconFilledSearch} from '../../icons';
 import {countries} from './phone-countries';
+import {filterObject} from '../../utils/filter-object';
 
 // Downshift auto-generates IDs for the select elements, which makes the snapshot
 // tests brittle. Mock out the ID generation functions so the IDs generated are
@@ -39,7 +44,11 @@ function useSelectWithMockIds<T>(props: UseSelectProps<T>) {
   return {
     ...selectProps,
     getToggleButtonProps: () => resetDownshiftIds(getToggleButtonProps()),
-    getMenuProps: () => resetDownshiftIds(getMenuProps()),
+
+    getMenuProps: (options: UseSelectGetMenuPropsOptions) =>
+      resetDownshiftIds(
+        getMenuProps(filterObject(options, ['aria-labelledby'])),
+      ),
     getItemProps: (options: UseSelectGetItemPropsOptions<T>) =>
       resetDownshiftIds(getItemProps(options)),
   };
@@ -729,6 +738,25 @@ describe('Select', () => {
     // this test throw error without controlled prop
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('renders Select with labelId prop', async () => {
+    const props: SelectProps = {
+      labelId: 'label-1',
+      children: [
+        <SelectOption key="1" value="1">
+          option 1
+        </SelectOption>,
+      ],
+    };
+
+    const fragment = renderToFragmentInBody(Select, props);
+
+    await waitFor(() => {
+      fireEvent.click(screen.getByTestId('select-button'));
+    });
+
+    expect(fragment).toMatchSnapshot();
   });
 
   describe('in Modal', () => {
