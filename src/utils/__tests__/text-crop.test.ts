@@ -2,12 +2,6 @@ import {textCrop, TextCropProps, TextCropResults} from '../text-crop';
 
 const round = (value: number) => parseFloat(value.toFixed(4));
 
-const remToPx = (value: string, baseFontSize: number) =>
-  `${round(parseFloat(value) * baseFontSize)}px`;
-
-const pxToRem = (fontSize: number, baseFontSize: number) =>
-  fontSize / baseFontSize;
-
 const fontMetrics = {
   capHeight: 692,
   ascent: 935,
@@ -93,27 +87,36 @@ describe('textCrop', () => {
   });
 
   it('should output rem values consistent with px', () => {
-    const baseFontSizePx = 12;
+    const testBaseFontSize = 12;
+
+    const remToPx = (remValue: `${number}rem`): `${number}px` =>
+      `${round(parseFloat(remValue) * testBaseFontSize)}px`;
+
+    const pxToRem = (pxValue: `${number}px`): `${number}rem` =>
+      `${parseFloat(pxValue) / testBaseFontSize}rem`;
+
     const rest = {
       lineHeight: 1.6,
       fontMetrics,
     };
 
-    [12, 14, 16, 18, 20].forEach(fontSizePx => {
+    [12, 14, 16, 18, 20].forEach(px => {
+      const fontSize: `${number}px` = `${px}px`;
+
       const pxTextCrop = textCrop({
-        fontSize: `${fontSizePx}px`,
+        fontSize,
         ...rest,
       });
 
       const remTextCrop = textCrop({
-        fontSize: `${pxToRem(fontSizePx, baseFontSizePx)}rem`,
+        fontSize: pxToRem(fontSize),
         ...rest,
       });
 
-      expect(remToPx(remTextCrop.fontSize, baseFontSizePx)).toEqual(
+      expect(remToPx(remTextCrop.fontSize as `${number}rem`)).toEqual(
         pxTextCrop.fontSize,
       );
-      expect(remToPx(remTextCrop.lineHeight, baseFontSizePx)).toEqual(
+      expect(remToPx(remTextCrop.lineHeight as `${number}rem`)).toEqual(
         pxTextCrop.lineHeight,
       );
     });
