@@ -114,9 +114,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/divider/do-1-illustration',
-          ),
+          media: getIllustrationComponent('components/divider/do-01'),
         },
       ],
     }}

@@ -542,7 +542,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
                 'If provided, overrides the stylePreset of the breadcrumb separators.',
             },
             {
-              attribute: 'separator.paddingInline',
+              attribute: 'separator.marginInline',
               type: 'MQ<string>',
               default: 'space020',
               description:

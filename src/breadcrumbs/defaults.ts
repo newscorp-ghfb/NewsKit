@@ -24,21 +24,21 @@ export default {
       separator: {
         size: 'iconSize010',
         stylePreset: 'breadcrumbSeparator',
-        paddingInline: 'space020',
+        marginInline: 'space020',
       },
     },
     medium: {
       separator: {
         size: 'iconSize020',
         stylePreset: 'breadcrumbSeparator',
-        paddingInline: 'space020',
+        marginInline: 'space020',
       },
     },
     large: {
       separator: {
         size: 'iconSize030',
         stylePreset: 'breadcrumbSeparator',
-        paddingInline: 'space020',
+        marginInline: 'space020',
       },
     },
   },

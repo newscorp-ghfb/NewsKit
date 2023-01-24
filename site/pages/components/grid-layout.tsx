@@ -381,18 +381,19 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the grid layout component.',
+      introduction: 'Here’s how and when to use the grid layout:',
       cards: [
         {
+          title: 'Do align content',
           description:
-            'Whenever possible, make sure page elements are lined up both horizontally and/ or vertically.',
+            'Whenever possible, make sure page elements are lined up both horizontally and / or vertically.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/grid-layout/usage/do-01'),
         },
         {
+          title: 'Avoid aligning everything to the grid',
           description:
-            'Avoid aligning everything to the grid. Individual elements within the cells should align with each other rather than with the grid columns.',
+            'Individual elements within the cells should align with each other rather than with the grid columns.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/grid-layout/usage/dont-01',

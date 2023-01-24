@@ -326,33 +326,36 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the switch component.',
+      introduction: 'Here’s how and when to use the switch:',
       cards: [
         {
+          title: 'Do communicate activation',
           description:
-            'Use switches for communicating activation e.g. on/off states.',
+            'Use switches for communicating activation (e.g. on/off states).',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/switch/usage/do-1'),
         },
         {
+          title: 'Don’t use to communicate selection',
           description: (
             <>
-              Avoid using switches for communicating selection e.g. multiple
-              table rows. In these cases, use a{' '}
-              <Link href="/components/checkbox/">checkbox.</Link>
+              Avoid using switches for communicating selection (e.g. multiple
+              table rows). In these cases, use a{' '}
+              <Link href="/components/checkbox/">checkbox.</Link> instead.
             </>
           ),
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/switch/usage/dont-1'),
         },
         {
+          title: 'Do give switches a label',
           description:
-            'Switches should always have an associated label to give users context for what the switch represents.',
+            'Switches should have an associated label to give users context.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/switch/usage/do-2'),
         },
         {
+          title: 'Don’t require users to press a button',
           description:
             'Switches shouldn’t require users to press a button to apply settings.',
           kind: UsageKind.DONT,
