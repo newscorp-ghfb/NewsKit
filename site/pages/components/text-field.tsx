@@ -167,9 +167,7 @@ const formInputPropsFooter = (
     >
       The <InlineCode>name</InlineCode> & <InlineCode>rules</InlineCode> props
       are set on the form input level. To add validation rules, or set the name,{' '}
-      <LinkInline href="/components/form">
-        please refer to the Form component
-      </LinkInline>
+      <LinkInline href="/components/form">see the form component</LinkInline>
     </InlineMessage>
     <InlineMessage
       icon={infoIcon}
