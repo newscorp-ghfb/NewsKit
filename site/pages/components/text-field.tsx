@@ -449,8 +449,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
               You can group together selection controls (inputs), such as
               formInput, radio button and checkbox, as well as labels and
               assistive text, in a{' '}
-              <Link href="/components/radio-button/">fieldset</Link>. Add a
-              title caption to the grouped elements using the legend.
+              <Link href="/components/fieldset/">fieldset</Link>. Add a title
+              caption to the grouped elements using the legend.
             </>
           ),
           media: getIllustrationComponent(
