@@ -1373,35 +1373,6 @@ workflows:
           requires:
             - deploy_to_s3
 
-      - approve_deploy_to_prod:
-          context: ncu-product-platforms-context
-          type: approval
-          requires:
-            - build_docs_pr
-            - build_storybook
-
-      - build_push_docker_ecr:
-          name: build_push_docker_ecr_prod
-          context: ncu-product-platforms-context
-          docker_version: prod
-          requires:
-            - approve_deploy_to_prod
-
-      - eks_flux_deploy:
-          name: eks_flux_deploy_prod
-          context: ncu-newskit-site-prod
-          environment: prod
-          deployment_type: prod
-          requires:
-            - build_push_docker_ecr_prod
-
-      - eks_kubectl_deploy:
-          name: eks_kubectl_deploy_prod
-          context: ncu-newskit-site-prod
-          environment: prod
-          requires:
-            - eks_flux_deploy_prod
-
   pull_request_codemod:
     when:
       matches:
