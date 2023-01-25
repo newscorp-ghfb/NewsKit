@@ -81,13 +81,13 @@ const Overview = (layoutProps: LayoutProps) => (
         />
       </ContentSection>
 
-      <ContentSection sectionName="next Steps">
+      <ContentSection sectionName="next steps">
         <ContentPrimary
-          id="next Steps"
+          id="next steps"
           toc="Next steps"
           headline={
             <>
-              <StyledHeading>Next Steps</StyledHeading>
+              <StyledHeading>Next steps</StyledHeading>
             </>
           }
           description={
