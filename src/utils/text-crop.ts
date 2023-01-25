@@ -79,6 +79,10 @@ export const textCrop = ({
   fontSize,
   fontMetrics,
 }: TextCropProps): TextCropResults => {
+  if (typeof lineHeight !== 'number') {
+    throw Error('invalid lineHeight');
+  }
+
   const match = fontSize.match(/(\d+(?:\.\d+)?)(px|rem)/);
   if (!match) {
     throw Error('invalid fontSize');

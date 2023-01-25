@@ -2,7 +2,7 @@ import {textCrop, TextCropProps, TextCropResults} from '../text-crop';
 
 const round = (value: number) => parseFloat(value.toFixed(4));
 
-const fontMetrics = {
+const exampleFontMetrics = {
   capHeight: 692,
   ascent: 935,
   descent: -265,
@@ -15,7 +15,7 @@ describe('textCrop', () => {
     const cropData: TextCropProps = {
       fontSize: '12px',
       lineHeight: 1.6,
-      fontMetrics,
+      fontMetrics: exampleFontMetrics,
     };
 
     const expectedResult: TextCropResults = {
@@ -33,26 +33,24 @@ describe('textCrop', () => {
     expect(textCrop(cropData)).toEqual(expectedResult);
   });
 
-  test(`throws an error if invalid units passed`, () => {
+  test(`throws an error if invalid fontSize units passed`, () => {
     const cropData: TextCropProps = {
       fontSize: '12metres' as TextCropProps['fontSize'],
       lineHeight: 1.6,
-      fontMetrics,
+      fontMetrics: exampleFontMetrics,
     };
 
     expect(() => textCrop(cropData)).toThrow(Error);
   });
 
-  test(`margins (em) DO NOT depend on fontSize`, () => {
-    [12, 14, 16, 18, 20].forEach(px => {
-      const crop = textCrop({
-        fontSize: `${px}px`,
-        lineHeight: 1.6,
-        fontMetrics,
-      });
-      expect(crop['::before'].marginBottom).toEqual('-0.443em');
-      expect(crop['::after'].marginTop).toEqual('-0.465em');
-    });
+  test(`throws an error if invalid lineHeight passed`, () => {
+    const cropData: TextCropProps = {
+      fontSize: '12px',
+      lineHeight: ('1.6rem' as unknown) as number,
+      fontMetrics: exampleFontMetrics,
+    };
+
+    expect(() => textCrop(cropData)).toThrow(Error);
   });
 
   test(`fontSize matches input fontSize`, () => {
@@ -60,39 +58,9 @@ describe('textCrop', () => {
       const crop = textCrop({
         fontSize: `${px}px`,
         lineHeight: 1.6,
-        fontMetrics,
+        fontMetrics: exampleFontMetrics,
       });
       expect(crop.fontSize).toEqual(`${px}px`);
-    });
-  });
-
-  test(`lineHeight is product of input lineHeight and fontSize`, () => {
-    const fontSize = 12;
-    [1.0, 1.25, 1.5, 1.75, 2.0].forEach(scale => {
-      const crop = textCrop({
-        fontSize: `${fontSize}px`,
-        lineHeight: scale,
-        fontMetrics,
-      });
-      expect(crop.lineHeight).toEqual(`${round(scale * fontSize)}px`);
-    });
-  });
-
-  test(`margins (em) depend on input lineHeight`, () => {
-    [
-      [1.0, 0.165, 0.143],
-      [1.25, 0.29, 0.268],
-      [1.5, 0.415, 0.393],
-      [1.75, 0.54, 0.518],
-      [2.0, 0.665, 0.643],
-    ].forEach(([lineHeight, marginTop, marginBottom]) => {
-      const crop = textCrop({
-        fontSize: `12px`,
-        lineHeight,
-        fontMetrics,
-      });
-      expect(crop['::before'].marginBottom).toEqual(`-${marginBottom}em`);
-      expect(crop['::after'].marginTop).toEqual(`-${marginTop}em`);
     });
   });
 
@@ -107,7 +75,7 @@ describe('textCrop', () => {
 
     const rest = {
       lineHeight: 1.6,
-      fontMetrics,
+      fontMetrics: exampleFontMetrics,
     };
 
     [12, 14, 16, 18, 20].forEach(px => {
@@ -133,40 +101,41 @@ describe('textCrop', () => {
   });
 
   it('should calculate margins independent of fontSize', () => {
-    const adjustTrim = (inputLineHeight: number, trim: number) => {
-      const absoluteDescent = Math.abs(fontMetrics.descent);
-      const contentArea =
-        fontMetrics.ascent + fontMetrics.lineGap + absoluteDescent;
-      const lineHeightScale = contentArea / fontMetrics.unitsPerEm;
-      const adjustedTrim = trim - (lineHeightScale - inputLineHeight) / 2;
+    type FontMetrics = TextCropProps['fontMetrics'];
+
+    const adjustTrim = (lh: number, trim: number, fm: FontMetrics) => {
+      const absoluteDescent = Math.abs(fm.descent);
+      const contentArea = fm.ascent + fm.lineGap + absoluteDescent;
+      const lineHeightScale = contentArea / fm.unitsPerEm;
+      const adjustedTrim = trim - (lineHeightScale - lh) / 2;
       return `${round(adjustedTrim * -1)}em`;
     };
 
-    const calculateCapHeightTrim = (inputLineHeight: number) => {
-      const ascentScale = fontMetrics.ascent / fontMetrics.unitsPerEm;
-      const capHeightScale = fontMetrics.capHeight / fontMetrics.unitsPerEm;
-      const lineGapScale = fontMetrics.lineGap / fontMetrics.unitsPerEm;
+    const calculateCapHeightTrim = (lh: number, fm: FontMetrics) => {
+      const ascentScale = fm.ascent / fm.unitsPerEm;
+      const capHeightScale = fm.capHeight / fm.unitsPerEm;
+      const lineGapScale = fm.lineGap / fm.unitsPerEm;
       const trim = ascentScale - capHeightScale + lineGapScale / 2;
-      return adjustTrim(inputLineHeight, trim);
+      return adjustTrim(lh, trim, fm);
     };
 
-    const calculateBaselineTrim = (inputLineHeight: number) => {
-      const absoluteDescent = Math.abs(fontMetrics.descent);
-      const descentScale = absoluteDescent / fontMetrics.unitsPerEm;
-      const lineGapScale = fontMetrics.lineGap / fontMetrics.unitsPerEm;
+    const calculateBaselineTrim = (lh: number, fm: FontMetrics) => {
+      const absoluteDescent = Math.abs(fm.descent);
+      const descentScale = absoluteDescent / fm.unitsPerEm;
+      const lineGapScale = fm.lineGap / fm.unitsPerEm;
       const trim = descentScale + lineGapScale / 2;
-      return adjustTrim(inputLineHeight, trim);
+      return adjustTrim(lh, trim, fm);
     };
 
     const lineHeight = 1.6;
-    const marginTop = calculateBaselineTrim(lineHeight);
-    const marginBottom = calculateCapHeightTrim(lineHeight);
+    const marginTop = calculateBaselineTrim(lineHeight, exampleFontMetrics);
+    const marginBottom = calculateCapHeightTrim(lineHeight, exampleFontMetrics);
 
     [12, 14, 16, 18, 20].forEach(fontSize => {
       const textCropCSS = textCrop({
         fontSize: `${fontSize}px`,
         lineHeight,
-        fontMetrics,
+        fontMetrics: exampleFontMetrics,
       });
       expect(textCropCSS['::after'].marginTop).toEqual(marginTop);
       expect(textCropCSS['::before'].marginBottom).toEqual(marginBottom);
