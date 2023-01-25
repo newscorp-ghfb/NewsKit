@@ -136,6 +136,54 @@ export const routes = [
           },
         ],
       },
+      {
+        title: 'Accessibility',
+        id: '/getting-started/accessibility',
+        subNav: [
+          {
+            title: 'Getting started',
+            page: true,
+            id: '/getting-started/accessibility/getting-started',
+            description: 'Equal access for everyone.',
+            illustration: 'guides/accessibility-getting-started/hero',
+            cardTitle: 'Getting started',
+          },
+          {
+            title: 'Design',
+            page: true,
+            id: '/getting-started/accessibility/design',
+            description: 'Design provides the foundations for accessibility.',
+            illustration: 'guides/accessibility-design/hero',
+            cardTitle: 'Design',
+          },
+          {
+            title: 'Code',
+            page: true,
+            id: '/getting-started/accessibility/code',
+            description:
+              'Building to WCAG standards maintains quality and supports assistive technologies.',
+            illustration: 'guides/accessibility-code/hero',
+            cardTitle: 'Code',
+          },
+          {
+            title: 'Write',
+            page: true,
+            id: '/getting-started/accessibility/write',
+            description: 'Clear copy in plain language benefits everyone.',
+            illustration: 'guides/accessibility-write/hero',
+            cardTitle: 'Write',
+          },
+          {
+            title: 'Test',
+            page: true,
+            id: '/getting-started/accessibility/testing',
+            description:
+              'Tools and checkers to help you test against accessibility guidelines.',
+            illustration: 'guides/accessibility-test/hero',
+            cardTitle: 'Test',
+          },
+        ],
+      },
     ],
   },
   {
@@ -158,7 +206,8 @@ export const routes = [
             id: '/theme/foundation/borders',
             illustration: 'theme/hero-borders-illustration',
             description:
-              'Borders direct attention, identify components, communicate state, and express a brand.',
+              'Borders can help direct attention and communicate state.',
+            buttonLabel: 'Learn more about borders',
           },
           {
             title: 'Breakpoints',
@@ -166,22 +215,25 @@ export const routes = [
             id: '/theme/foundation/breakpoints',
             illustration: 'theme/breakpoints/hero',
             description:
-              'Breakpoints set a visual point on a screen to alter the layout of content (responsive design), ensuring consistency across different screen widths.',
+              'Breakpoints allow content to adapt to different viewports responsively.',
+            buttonLabel: 'Learn more about breakpoints',
           },
           {
             title: 'Colours',
             page: true,
             id: '/theme/foundation/colours',
             illustration: 'theme/colours/hero',
-            description:
-              'Colour is key to expressing brand and identity, but it also plays a vital role in conveying specific meaning to a user.',
+            description: 'Colours express brand identity and convey meaning.',
+            buttonLabel: 'Learn more about colours',
           },
           {
             title: 'Design tokens',
             page: true,
             id: '/theme/foundation/design-tokens',
             illustration: 'theme/design-tokens/hero',
-            description: `Design tokens are the design decisions of the design system. They are used in place of hard-coded values to maintain a scalable and consistent system for UI.`,
+            description:
+              'Design tokens are used in the place of hard-coded values to allow a scalable and cohesive system.',
+            buttonLabel: 'Learn more about design tokens',
           },
           {
             title: 'Fonts',
@@ -189,7 +241,8 @@ export const routes = [
             id: '/theme/foundation/fonts',
             illustration: 'theme/fonts/hero',
             description:
-              'Fonts define the font family, boldness, size, and style of the text. These inform typography rules to convey the appropriate sentiment to guide users through their experience.',
+              'Fonts establish styles for content such as headlines and paragraphs.',
+            buttonLabel: 'Learn more about fonts',
           },
           {
             title: 'Gradients',
@@ -197,7 +250,8 @@ export const routes = [
             id: '/theme/foundation/gradients',
             illustration: 'theme/gradients/hero',
             description:
-              'Gradients is a visual representation of a colour. It is used to convey meaning and communicate a brand.',
+              'Gradients are a gradual blending from one colour to another, used to fade content and overlay images.',
+            buttonLabel: 'Learn more about gradients',
           },
           {
             title: 'Iconography',
@@ -205,15 +259,16 @@ export const routes = [
             id: '/theme/foundation/iconography',
             illustration: 'theme/iconography/hero',
             description:
-              'Icons provide additional context to information, provide a visual cue, or visually reinforce the interaction.',
+              'Icons reinforce interactions and can provide additional context through visual cues.',
+            buttonLabel: 'Learn more about icons',
           },
           {
             title: 'Motion',
             page: true,
             id: '/theme/foundation/motion',
             illustration: 'theme/motion/hero',
-            description:
-              'Motion is used to create movement and narrative within a product. Timely animated interface elements attract attention, provide guidance and enhance user experience.',
+            description: 'Motion creates movement and narrative in a product.',
+            buttonLabel: 'Learn more about motion',
           },
           {
             title: 'Outlines',
@@ -222,14 +277,15 @@ export const routes = [
             illustration: 'theme/hero-outlines-illustration',
             description:
               'Outlines provide visual cues about the focus or active states of elements.',
+            buttonLabel: 'Learn more about outlines',
           },
           {
             title: 'Opacity',
             page: true,
             id: '/theme/foundation/opacity',
             illustration: 'theme/opacity/hero',
-            description:
-              'Opacity is used to create a visual layer between elements.',
+            description: 'Opacity creates translucent interface elements.',
+            buttonLabel: 'Learn more about opacity',
           },
           {
             title: 'Overlays',
@@ -237,7 +293,8 @@ export const routes = [
             id: '/theme/foundation/overlays',
             illustration: 'theme/overlays/hero',
             description:
-              'Overlays are used for styling UI elements. They can be decorative, but often have a functional use like communicating state on images or increasing the contrast backgrounds when a component is layered upon each other, e.g. a modal.',
+              'Overlays can be decorative or have a functional use like increasing the colour contrast of backgrounds.',
+            buttonLabel: 'Learn more about overlays',
           },
           {
             title: 'Shadows',
@@ -245,15 +302,16 @@ export const routes = [
             id: '/theme/foundation/shadows',
             illustration: 'components/hero-shadows-illustration',
             description:
-              'Shadows provide visual cues about the distance between layers. They add levels of depth and realism to the user’s visual experience and improve the UI visual hierarchy.',
+              'Shadows provide visual cues about the distance between layers.',
+            buttonLabel: 'Learn more about shadows',
           },
           {
             title: 'Sizing',
             page: true,
             id: '/theme/foundation/sizing',
             illustration: 'components/hero-sizing-illustration',
-            description:
-              'A simple, standardised approach to size increases consistency and visual rhythm. Appropriate sizing is important for providing an inclusive experience.',
+            description: 'Standardised sizing increases visual consistency.',
+            buttonLabel: 'Learn more about sizing',
           },
           {
             title: 'Spacing',
@@ -261,7 +319,8 @@ export const routes = [
             id: '/theme/foundation/spacing',
             illustration: 'theme/spacing/hero',
             description:
-              'Considered use of space can improve communication: reducing visual clutter, providing hierarchy or helping show a relationship between elements on a screen.',
+              'Space provides content hierarchy, reduces visual clutter and shows relationships between elements.',
+            buttonLabel: 'Learn more about spacing',
           },
         ],
       },
@@ -275,7 +334,8 @@ export const routes = [
             id: '/theme/presets/style-presets',
             illustration: 'theme/style-presets/hero',
             description:
-              'A collection of foundational design tokens combined into a preset to define reusable styles for specific interface elements and their interactive states.',
+              'A collection of foundational design tokens combined into a preset.',
+            buttonLabel: 'Learn more about style presets',
           },
           {
             title: 'Transition Presets',
@@ -283,15 +343,18 @@ export const routes = [
             id: '/theme/presets/transition-presets',
             illustration: 'theme/transition-presets/hero',
             description:
-              'A collection of motion attributes combined into a preset to define reusable motion transition from one state to another.',
+              'A collection of motion attributes combined into a preset to define reusable motion.',
+            buttonLabel: 'Learn more about transition presets',
           },
           {
             title: 'Typography Presets',
             page: true,
             id: '/theme/presets/typography-presets',
+            nextId: '/theme/theming/component-defaults',
             illustration: 'components/hero-typography-illustration',
             description:
-              'A collection of foundational font design tokens combined into a preset to define reusable typography styles for specific text elements.',
+              'A collection of foundational font design tokens combined into a preset to define reusable typography.',
+            buttonLabel: 'Learn more about typography presets',
           },
         ],
       },
@@ -329,6 +392,7 @@ export const routes = [
               'A preselected option that is applied to a component to define its appearance or behaviour.',
             page: true,
             id: '/theme/theming/component-defaults',
+            buttonLabel: 'Learn more about component defaults',
           },
         ],
       },
@@ -479,6 +543,14 @@ export const routes = [
               'A Tooltip is a feedback component that displays a short, informational message when a user hovers over or focuses on a UI element. ',
             illustration: 'components/tooltip/hero',
           },
+          {
+            title: 'Character Count',
+            page: true,
+            id: '/components/character-count',
+            description:
+              'Character count lets users know how much text they can enter in an input container as they type.',
+            illustration: 'components/character-count/hero',
+          },
         ],
       },
       {
@@ -627,6 +699,13 @@ export const routes = [
             description:
               'Accordions show and hide related content. Use them to break up long pages into segmented, prioritised sections.',
             illustration: 'components/accordion/hero',
+          },
+          {
+            title: 'Breadcrumbs',
+            page: true,
+            id: '/components/breadcrumbs',
+            description: 'Breadcrumbs are used for secondary navigation.',
+            illustration: 'components/breadcrumbs/hero',
           },
           {
             title: 'Link',
@@ -891,42 +970,47 @@ export const routes = [
             id: '/patterns/forms/overview',
             description: 'Forms are used to collect customer’s data.',
             illustration: 'patterns/forms/overview/hero',
+            buttonLabel: 'Learn more about forms',
           },
           {
             title: 'Best practice',
             page: true,
             id: '/patterns/forms/best-practice',
-            description:
-              'Help users to fill in forms quickly and accurately by following these industry best practices.',
+            description: 'Help users to fill in forms quickly and accurately.',
             illustration: 'patterns/forms/best-practice/hero',
+            buttonLabel: 'Learn more about forms best practice',
           },
           {
             title: 'Address',
             page: true,
             id: '/patterns/forms/address',
-            description: `Use this type of data entry when there are clear business requirements to collect a user's address. Ask for a user’s physical address for delivery or as part of a billing service.`,
+            description: `Use this pattern to collect a user's address.`,
             illustration: 'patterns/forms/address/hero',
+            buttonLabel: 'Learn more about address data capture',
           },
           {
             title: 'Date of birth',
             page: true,
             id: '/patterns/forms/date-of-birth',
-            description: `Ask for a user’s date of birth when we need to validate the user’s age. This should not be collected unless you have a need for it to validate a user’s age or benefit them in some way.`,
+            description: `Only ask for a user’s date of birth when we need to validate their age.`,
             illustration: 'patterns/forms/date-of-birth/hero',
+            buttonLabel: 'Learn more about date of birth capture',
           },
           {
             title: 'Date picker',
             page: true,
             id: '/patterns/forms/date-picker',
-            description: `Use this data entry type when capturing a date that is in the future such as a delivery date or booking date.`,
+            description: `Use a date picker when capturing a date that is in the future like a delivery or a booking.`,
             illustration: 'patterns/forms/date-picker/hero',
+            buttonLabel: 'Learn more about capturing dates',
           },
           {
             title: 'Email address',
             page: true,
             id: '/patterns/forms/email-address',
-            description: `Ask for a user’s email address to provide a service, to contact them directly, or as a unique way of identifying them.`,
+            description: `Ask for a user’s email address to provide a service or as a unique way of identifying them.`,
             illustration: 'patterns/forms/email-address/hero',
+            buttonLabel: 'Learn more about email data capture',
           },
           {
             title: 'Gender/Sex/Title',
@@ -934,6 +1018,7 @@ export const routes = [
             id: '/patterns/forms/gender',
             description: `Use this component to collect a user’s gender.`,
             illustration: 'patterns/forms/gender/hero',
+            buttonLabel: 'Learn more about gender data capture',
           },
           {
             title: 'Names',
@@ -941,6 +1026,7 @@ export const routes = [
             id: '/patterns/forms/names',
             description: `Ask for a user’s name when it is needed to provide a service.`,
             illustration: 'patterns/forms/names/hero',
+            buttonLabel: 'Learn more about name data capture',
           },
           {
             title: 'Passwords',
@@ -948,6 +1034,7 @@ export const routes = [
             id: '/patterns/forms/passwords',
             description: `Use a password entry field when asking users to create an account or log in.`,
             illustration: 'patterns/forms/passwords/hero',
+            buttonLabel: 'Learn more about password entry fields',
           },
           {
             title: 'Payment/Billing',
@@ -955,6 +1042,7 @@ export const routes = [
             id: '/patterns/forms/payment',
             description: `Use the payment field when the business needs to take payment for a service.`,
             illustration: 'patterns/forms/payment/hero',
+            buttonLabel: 'Learn more about payment fields',
           },
           {
             title: 'Telephone number',
@@ -962,13 +1050,16 @@ export const routes = [
             id: '/patterns/forms/telephone-number',
             description: `Ask for a user’s telephone number when there is a clear business requirement.`,
             illustration: 'patterns/forms/telephone-number/hero',
+            buttonLabel: 'Learn more about telephone number fields',
           },
           {
             title: 'Input components',
             page: true,
             id: '/patterns/forms/input-components',
+            nextId: '/patterns/forms/overview',
             description: `Use the right component for the type of data you’re collecting.`,
             illustration: 'patterns/forms/input-components/hero',
+            buttonLabel: 'Choose the right input component',
           },
         ],
       },

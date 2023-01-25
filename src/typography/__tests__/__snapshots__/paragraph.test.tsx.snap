@@ -250,6 +250,7 @@ exports[`Paragraph renders with drop cap 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -369,6 +370,7 @@ exports[`Paragraph renders with drop cap and complex children 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span
@@ -492,6 +494,7 @@ exports[`Paragraph renders with dropCap logical props 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
+  margin: -1px;
 }
 
 <span

@@ -1,8 +1,13 @@
+/* eslint-disable global-require */
 import React from 'react';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 import {PatternPageTemplate} from '..';
 import {PatternPageTemplateProps} from '../types';
 import {LayoutProps} from '../../../components/layout';
+
+// Added next-router-mock to avoid "Error: NextRouter was not mounted"
+// This is needed for mocking 'next/link' reliably under Next 13
+jest.mock('next/dist/client/router', () => require('next-router-mock'));
 
 jest.mock('../../../components/layout', () => ({children, ...props}: any) => (
   <div data-comp="layout" data-props={JSON.stringify(props)}>

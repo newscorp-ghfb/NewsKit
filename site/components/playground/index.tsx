@@ -1,6 +1,11 @@
 /* eslint-disable react/destructuring-assignment */
 import React, {useState} from 'react';
-import {styled, getColorFromTheme, deepMerge} from 'newskit';
+import {
+  styled,
+  getColorFromTheme,
+  deepMerge,
+  InstrumentationProvider,
+} from 'newskit';
 import {LegacyBlock, LegacyBlockProps} from '../legacy-block';
 import {MultiChoiceKnob} from './knobs/multichoice-knob';
 import {InputKnob} from './knobs/input-knob';
@@ -173,41 +178,43 @@ export const Playground: React.FC<
   );
 
   return (
-    <PlaygroundContainer>
-      <LegacyBlock
-        data-testid="playground-element"
-        {...commonBlockProps}
-        minHeight="280px"
-        backgroundColor="interfaceBackground"
-        padding="sizing070"
-      >
-        <ErrorBoundary key={errorBoundaryKey}>
-          <Component {...state} />
-        </ErrorBoundary>
-      </LegacyBlock>
-      {componentOptions && (
-        <Selector options={componentOptions} onChange={setComponentIndex}>
-          Component
-        </Selector>
-      )}
-      <LegacyBlock
-        {...commonBlockProps}
-        alignItems="left"
-        padding="sizing070"
-        overflow="scroll"
-        maxHeight="450px"
-        borderRadius="0px 0px 0px 0px"
-      >
-        {knobs.map(renderKnob(state, updateState))}
-      </LegacyBlock>
-      <LegacyBlock {...commonBlockProps} borderRadius="0px 0px 12px 12px">
-        <CodeExample
-          componentName={selectedCompName}
-          source={source.code || source.error || ''}
-          error={Boolean(source.error)}
-        />
-      </LegacyBlock>
-    </PlaygroundContainer>
+    <InstrumentationProvider context={{area: 'playground'}}>
+      <PlaygroundContainer>
+        <LegacyBlock
+          data-testid="playground-element"
+          {...commonBlockProps}
+          minHeight="280px"
+          backgroundColor="interfaceBackground"
+          padding="sizing070"
+        >
+          <ErrorBoundary key={errorBoundaryKey}>
+            <Component {...state} />
+          </ErrorBoundary>
+        </LegacyBlock>
+        {componentOptions && (
+          <Selector options={componentOptions} onChange={setComponentIndex}>
+            Component
+          </Selector>
+        )}
+        <LegacyBlock
+          {...commonBlockProps}
+          alignItems="left"
+          padding="sizing070"
+          overflow="scroll"
+          maxHeight="450px"
+          borderRadius="0px 0px 0px 0px"
+        >
+          {knobs.map(renderKnob(state, updateState))}
+        </LegacyBlock>
+        <LegacyBlock {...commonBlockProps} borderRadius="0px 0px 12px 12px">
+          <CodeExample
+            componentName={selectedCompName}
+            source={source.code || source.error || ''}
+            error={Boolean(source.error)}
+          />
+        </LegacyBlock>
+      </PlaygroundContainer>
+    </InstrumentationProvider>
   );
 };
 

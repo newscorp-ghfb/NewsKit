@@ -57,6 +57,11 @@ const commonPropsRows = [
     description: `When the amount of options is greater than this number, the options list will be virtualized.`,
     default: '50',
   },
+  {
+    name: 'onOpenChange',
+    type: '(value:boolean):void',
+    description: `Callback fired when the select panel opens or close with value of true/false`,
+  },
 ];
 
 const commonOverridesRows = [
@@ -116,6 +121,23 @@ const commonOverridesRows = [
       'If provided, this overrides the stylePreset of the Select input container loading indicator.',
   },
   {
+    attribute: 'button.indicatorIcon',
+    type: 'Override<SelectButtonIcon>',
+    description: 'If provided, overrides the icon',
+  },
+  {
+    attribute: 'button.indicatorIcon.stylePreset',
+    type: 'MQ<string>',
+    default: 'iconDefault',
+    description: 'If provided, overrides the stylePreset of the indicator icon',
+  },
+  {
+    attribute: 'button.indicatorIcon.size',
+    type: 'MQ<string>',
+    default: 'iconSize020',
+    description: 'If provided, overrides the size of the indicator icon',
+  },
+  {
     attribute: 'button.startEnhancer.iconSize',
     type: 'MQ<string>',
     default: 'iconSize020',
@@ -171,6 +193,13 @@ const commonOverridesRows = [
     default: 'spaceStack010',
     description:
       'This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the end margin.',
+  },
+  {
+    attribute: 'panel.zIndex',
+    type: 'layer | string',
+    default: 'layer',
+    description:
+      'If provided, this overrides the zIndex of the select panel. When set to "layer" the panel renders in LayerOrganizer.',
   },
   {
     attribute: 'modal.panel.width',
@@ -297,7 +326,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="select"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v4.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/select',
       figmaUrl:

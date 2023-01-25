@@ -39,7 +39,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="Tooltip"
     meta={{
-      status: MetaStatus.Beta,
+      status: MetaStatus.Supported,
       introduced: 'v5.7.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/tooltip',
       figmaUrl:
@@ -362,7 +362,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <>
           <UnorderedList

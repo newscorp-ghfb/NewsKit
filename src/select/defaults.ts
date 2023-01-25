@@ -9,7 +9,11 @@ export default {
         spaceStack: 'space020',
         spaceInline: 'space020',
         typographyPreset: 'utilityBody020',
+        // @deprecated This property is deprecated and will be removed in the next major release. Use `indicatorIcon.size` instead.
         iconSize: 'iconSize020',
+        indicatorIcon: {
+          size: 'iconSize020',
+        },
         loadingIndicator: {
           stylePreset: 'indeterminateProgressIndicatorPrimary',
         },
@@ -27,6 +31,7 @@ export default {
         stylePreset: 'selectPanel',
         maxHeight: '184px',
         spaceInset: 'spaceInset020',
+        zIndex: 'layer',
       },
       modal: {
         panel: {
@@ -43,7 +48,11 @@ export default {
         spaceStack: 'space020',
         spaceInline: 'space020',
         typographyPreset: 'utilityBody020',
+        // @deprecated This property is deprecated and will be removed in the next major release. Use `indicatorIcon.size` instead.
         iconSize: 'iconSize020',
+        indicatorIcon: {
+          size: 'iconSize020',
+        },
         loadingIndicator: {
           stylePreset: 'indeterminateProgressIndicatorPrimary',
         },
@@ -61,6 +70,7 @@ export default {
         stylePreset: 'selectPanel',
         maxHeight: '272px',
         spaceInset: 'spaceInset020',
+        zIndex: 'layer',
       },
       modal: {
         panel: {
@@ -77,7 +87,11 @@ export default {
         spaceStack: 'space020',
         spaceInline: 'space020',
         typographyPreset: 'utilityBody030',
+        // @deprecated This property is deprecated and will be removed in the next major release. Use `indicatorIcon.size` instead.
         iconSize: 'iconSize020',
+        indicatorIcon: {
+          size: 'iconSize020',
+        },
         loadingIndicator: {
           stylePreset: 'indeterminateProgressIndicatorPrimary',
         },
@@ -95,6 +109,7 @@ export default {
         stylePreset: 'selectPanel',
         maxHeight: '360px',
         spaceInset: 'spaceInset020',
+        zIndex: 'layer',
       },
       modal: {
         panel: {

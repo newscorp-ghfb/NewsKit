@@ -127,8 +127,8 @@ exports[`Switch hide feedback 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-4 svg {
@@ -154,8 +154,8 @@ exports[`Switch hide feedback 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-5 svg {
@@ -221,13 +221,26 @@ exports[`Switch hide feedback 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-8:disabled {
   color: #ABABAB;
+}
+
+.emotion-8::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-8::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -434,8 +447,8 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -461,8 +474,8 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -528,13 +541,26 @@ exports[`Switch hover on feedback shows it: with hover 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -767,8 +793,8 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -794,8 +820,8 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -861,13 +887,26 @@ exports[`Switch hover on feedback shows it: without hover 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -1017,8 +1056,8 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -1040,8 +1079,8 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -1103,9 +1142,22 @@ exports[`Switch hover on feedback when disabled does not show it: with hover 1`]
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -1256,8 +1308,8 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -1279,8 +1331,8 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -1342,9 +1394,22 @@ exports[`Switch hover on feedback when disabled does not show it: without hover 
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -1556,8 +1621,8 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -1583,8 +1648,8 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -1650,13 +1715,26 @@ exports[`Switch hover on label trigger Switch hover styles: with hover 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -1889,8 +1967,8 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -1916,8 +1994,8 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -1983,13 +2061,26 @@ exports[`Switch hover on label trigger Switch hover styles: without hover 1`] = 
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -2139,8 +2230,8 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -2162,8 +2253,8 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -2225,9 +2316,22 @@ exports[`Switch hover on label with disabled do not change hover state: with hov
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -2378,8 +2482,8 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -2401,8 +2505,8 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -2464,9 +2568,22 @@ exports[`Switch hover on label with disabled do not change hover state: without 
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -2700,8 +2817,8 @@ exports[`Switch label attributes 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -2727,8 +2844,8 @@ exports[`Switch label attributes 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -2794,13 +2911,26 @@ exports[`Switch label attributes 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -2867,13 +2997,26 @@ exports[`Switch label position start 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-1:disabled {
   color: #ABABAB;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 .emotion-2 {
@@ -3048,8 +3191,8 @@ exports[`Switch label position start 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-6 svg {
@@ -3075,8 +3218,8 @@ exports[`Switch label position start 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-7 svg {
@@ -3368,8 +3511,8 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -3395,8 +3538,8 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -3462,13 +3605,26 @@ exports[`Switch onBlur and onFocus: with blur 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -3658,8 +3814,8 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -3685,8 +3841,8 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -3752,13 +3908,26 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -3952,8 +4121,8 @@ exports[`Switch passes checked prop to custom thumb icon 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -3979,8 +4148,8 @@ exports[`Switch passes checked prop to custom thumb icon 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -4071,13 +4240,26 @@ exports[`Switch passes checked prop to custom thumb icon 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-11:disabled {
   color: #ABABAB;
+}
+
+.emotion-11::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-11::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -4329,8 +4511,8 @@ exports[`Switch passes checked prop to custom thumb icon 2`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -4356,8 +4538,8 @@ exports[`Switch passes checked prop to custom thumb icon 2`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -4448,13 +4630,26 @@ exports[`Switch passes checked prop to custom thumb icon 2`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-11:disabled {
   color: #ABABAB;
+}
+
+.emotion-11::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-11::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -4666,8 +4861,8 @@ exports[`Switch render with size: large & checked 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -4693,8 +4888,8 @@ exports[`Switch render with size: large & checked 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -4760,13 +4955,26 @@ exports[`Switch render with size: large & checked 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -4917,8 +5125,8 @@ exports[`Switch render with size: large & disabled 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -4940,8 +5148,8 @@ exports[`Switch render with size: large & disabled 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -5003,9 +5211,22 @@ exports[`Switch render with size: large & disabled 1`] = `
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -5239,8 +5460,8 @@ exports[`Switch render with size: large 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -5266,8 +5487,8 @@ exports[`Switch render with size: large 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -5333,13 +5554,26 @@ exports[`Switch render with size: large 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -5533,8 +5767,8 @@ exports[`Switch render with size: medium & checked 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -5560,8 +5794,8 @@ exports[`Switch render with size: medium & checked 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -5627,13 +5861,26 @@ exports[`Switch render with size: medium & checked 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -5784,8 +6031,8 @@ exports[`Switch render with size: medium & disabled 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -5807,8 +6054,8 @@ exports[`Switch render with size: medium & disabled 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -5870,9 +6117,22 @@ exports[`Switch render with size: medium & disabled 1`] = `
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -6106,8 +6366,8 @@ exports[`Switch render with size: medium 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -6133,8 +6393,8 @@ exports[`Switch render with size: medium 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -6200,13 +6460,26 @@ exports[`Switch render with size: medium 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -6400,8 +6673,8 @@ exports[`Switch render with size: small & checked 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -6427,8 +6700,8 @@ exports[`Switch render with size: small & checked 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -6494,13 +6767,26 @@ exports[`Switch render with size: small & checked 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -6651,8 +6937,8 @@ exports[`Switch render with size: small & disabled 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -6674,8 +6960,8 @@ exports[`Switch render with size: small & disabled 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -6737,9 +7023,22 @@ exports[`Switch render with size: small & disabled 1`] = `
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -6973,8 +7272,8 @@ exports[`Switch render with size: small 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -7000,8 +7299,8 @@ exports[`Switch render with size: small 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -7067,13 +7366,26 @@ exports[`Switch render with size: small 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -7306,8 +7618,8 @@ exports[`Switch render with state: base 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -7333,8 +7645,8 @@ exports[`Switch render with state: base 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -7400,13 +7712,26 @@ exports[`Switch render with state: base 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -7601,8 +7926,8 @@ exports[`Switch render with state: checked 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -7628,8 +7953,8 @@ exports[`Switch render with state: checked 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -7695,13 +8020,26 @@ exports[`Switch render with state: checked 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -7853,8 +8191,8 @@ exports[`Switch render with state: checked-disabled 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -7876,8 +8214,8 @@ exports[`Switch render with state: checked-disabled 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -7939,9 +8277,22 @@ exports[`Switch render with state: checked-disabled 1`] = `
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -8094,8 +8445,8 @@ exports[`Switch render with state: disabled 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -8117,8 +8468,8 @@ exports[`Switch render with state: disabled 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-6 svg {
@@ -8180,9 +8531,22 @@ exports[`Switch render with state: disabled 1`] = `
   color: #ABABAB;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <label
@@ -8333,8 +8697,8 @@ exports[`Switch with overrides 1`] = `
   width: 100%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  -webkit-justify-content: start;
-  justify-content: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .emotion-5 svg {
@@ -8385,8 +8749,8 @@ exports[`Switch with overrides 1`] = `
   width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  -webkit-justify-content: end;
-  justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .emotion-8 svg {
@@ -8446,13 +8810,26 @@ exports[`Switch with overrides 1`] = `
   color: #6A6A6A;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
-  line-height: 1.125;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-15 svg {
   fill: #6A6A6A;
+}
+
+.emotion-15::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-15::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
 }
 
 <label

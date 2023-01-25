@@ -5,8 +5,11 @@ import {MQ} from '../utils/style';
 import {Override} from '../utils/overrides';
 import {ModalProps} from '../modal';
 import {EventData} from '../instrumentation';
+import {NewsKitIconProps} from '../icons';
 
 export type ButtonSelectSize = 'small' | 'medium' | 'large';
+
+export type SelectButtonIcon = NewsKitIconProps & {isOpen: boolean};
 
 export interface SelectButtonOverrides extends EnhancerOverrides {
   width?: MQ<string>;
@@ -28,6 +31,7 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
   loadingIndicator?: {
     stylePreset?: MQ<string>;
   };
+  indicatorIcon?: Override<SelectButtonIcon>;
 }
 
 export interface SelectPanelOverrides extends LogicalProps {
@@ -41,6 +45,7 @@ export interface SelectPanelOverrides extends LogicalProps {
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
    */
   spaceStack?: MQ<string>;
+  zIndex?: 'layer' | string;
 }
 
 export type SelectPropsOverrides = {
@@ -56,6 +61,7 @@ export interface SelectProps extends CommonInputProps, EventData {
   useModal?: MQ<boolean>;
   overrides?: SelectPropsOverrides;
   virtualized?: number;
+  onOpenChange?: (value: boolean) => void;
 }
 
 export interface SelectOptionProps {

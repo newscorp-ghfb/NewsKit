@@ -4,6 +4,12 @@ import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {IconFilledError} from '../../icons';
 
+// shared Percy config params to ensure image has loaded before snapshot taken
+const parameters = {
+  // the img is the first child of the picture when loaded, otherwise second
+  percy: {waitForSelector: 'picture img:nth-child(1)'},
+};
+
 const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
@@ -20,7 +26,40 @@ export default {
   component: () => 'None',
 };
 
-export const StoryFixedHeightAndWidthInPx = () => (
+export const StoryFixedHeightAndWidthAsPropsInPx = () => (
+  <Container>
+    <StorybookHeading>300px by 200px</StorybookHeading>
+    <Image
+      src="/placeholder-3x2.png"
+      alt="Example Image"
+      width="300"
+      height="200"
+      placeholderIcon
+    />
+  </Container>
+);
+StoryFixedHeightAndWidthAsPropsInPx.storyName =
+  'fixed-height-and-width-in-px-via-props';
+StoryFixedHeightAndWidthAsPropsInPx.parameters = {...parameters};
+
+export const StoryFixedHeightAndWidthAsPropsAndOverrides = () => (
+  <Container>
+    <StorybookHeading>500px by 400px</StorybookHeading>
+    <Image
+      src="/placeholder-3x2.png"
+      alt="Example Image"
+      width="300"
+      height="200"
+      placeholderIcon
+      overrides={{width: '500', height: '400'}}
+    />
+  </Container>
+);
+StoryFixedHeightAndWidthAsPropsAndOverrides.storyName =
+  'fixed-height-and-width-in-px-via-props-and-overrides';
+StoryFixedHeightAndWidthAsPropsAndOverrides.parameters = {...parameters};
+
+export const StoryFixedHeightAndWidthAsOverridesInPx = () => (
   <Container>
     <StorybookHeading>300px by 200px</StorybookHeading>
     <Image
@@ -31,9 +70,11 @@ export const StoryFixedHeightAndWidthInPx = () => (
     />
   </Container>
 );
-StoryFixedHeightAndWidthInPx.storyName = 'fixed height and width in px';
+StoryFixedHeightAndWidthAsOverridesInPx.storyName =
+  'fixed-height-and-width-in-px-via-overrides';
+StoryFixedHeightAndWidthAsOverridesInPx.parameters = {...parameters};
 
-export const StoryFixedHeightAndWidthIn = () => (
+export const StoryFixedHeightAndWidthAsOverridesInPercentage = () => (
   <ContainerWithHeight>
     <StorybookHeading>100% by 30%</StorybookHeading>
     <Image
@@ -44,7 +85,9 @@ export const StoryFixedHeightAndWidthIn = () => (
     />
   </ContainerWithHeight>
 );
-StoryFixedHeightAndWidthIn.storyName = 'fixed height and width in %';
+StoryFixedHeightAndWidthAsOverridesInPercentage.storyName =
+  'fixed-height-and-width-in-%-via-overrides';
+StoryFixedHeightAndWidthAsOverridesInPercentage.parameters = {...parameters};
 
 export const StoryFixedWidthAndAspectRatio = () => (
   <Container>
@@ -59,6 +102,7 @@ export const StoryFixedWidthAndAspectRatio = () => (
   </Container>
 );
 StoryFixedWidthAndAspectRatio.storyName = 'fixed-width-and-aspect-ratio';
+StoryFixedWidthAndAspectRatio.parameters = {...parameters};
 
 export const StoryFixedHeighthAndAspectRatio = () => (
   <Container>
@@ -73,6 +117,7 @@ export const StoryFixedHeighthAndAspectRatio = () => (
   </Container>
 );
 StoryFixedHeighthAndAspectRatio.storyName = 'fixed-height-and-aspect-ratio';
+StoryFixedHeighthAndAspectRatio.parameters = {...parameters};
 
 export const StorySharpBorderRadius = () => (
   <Container>
@@ -86,6 +131,7 @@ export const StorySharpBorderRadius = () => (
   </Container>
 );
 StorySharpBorderRadius.storyName = 'sharp-border-radius';
+StorySharpBorderRadius.parameters = {...parameters};
 
 export const StoryRoundedBorderRadius = () => (
   <Container>
@@ -101,6 +147,7 @@ export const StoryRoundedBorderRadius = () => (
   </Container>
 );
 StoryRoundedBorderRadius.storyName = 'rounded-border-radius';
+StoryRoundedBorderRadius.parameters = {...parameters};
 
 export const StoryRoundedBorderRadiusWithMq = () => (
   <Container>
@@ -119,6 +166,7 @@ export const StoryRoundedBorderRadiusWithMq = () => (
   </Container>
 );
 StoryRoundedBorderRadiusWithMq.storyName = 'rounded-border-radius-with-mq';
+StoryRoundedBorderRadiusWithMq.parameters = {...parameters};
 
 export const StoryCircleBorderRadius = () => (
   <Container>
@@ -134,6 +182,7 @@ export const StoryCircleBorderRadius = () => (
   </Container>
 );
 StoryCircleBorderRadius.storyName = 'circle-border-radius';
+StoryCircleBorderRadius.parameters = {...parameters};
 
 export const StoryValidImg = () => (
   <Container>
@@ -146,6 +195,7 @@ export const StoryValidImg = () => (
   </Container>
 );
 StoryValidImg.storyName = 'valid-img';
+StoryValidImg.parameters = {...parameters};
 
 export const StoryInvalidImg = () => (
   <Container>
@@ -219,7 +269,7 @@ StoryInvalidImgWithCustomPlaceholderIconOverrideSize.storyName =
 
 export const StoryLazyLoading = () => {
   const getImages = (num: number) => {
-    const images = [];
+    const images: React.ReactNode[] = [];
     for (let i = 1; i <= num; i++) {
       const width = 400 + i;
       images.push(
@@ -241,7 +291,7 @@ export const StoryLazyLoading = () => {
   return <div>{getImages(30)}</div>;
 };
 StoryLazyLoading.storyName = 'lazy-loading';
-StoryLazyLoading.parameters = {eyes: {include: false}, percy: {skip: true}};
+StoryLazyLoading.parameters = {percy: {skip: true}};
 
 export const StoryImageWithSources = () => {
   const sources = [
@@ -258,6 +308,9 @@ export const StoryImageWithSources = () => {
   );
 };
 StoryImageWithSources.storyName = 'image-with-sources-using-mq';
+StoryImageWithSources.parameters = {
+  percy: {waitForSelector: 'picture img:nth-child(4)'},
+};
 
 export const StoryImageWithSourcesNoXS = () => {
   const sources = [
@@ -273,6 +326,9 @@ export const StoryImageWithSourcesNoXS = () => {
   );
 };
 StoryImageWithSourcesNoXS.storyName = 'image-with-sources-using-mq-no-xs';
+StoryImageWithSourcesNoXS.parameters = {
+  percy: {waitForSelector: 'picture img:nth-child(3)'},
+};
 
 export const StoryImageWithSourcesAndMedia = () => {
   // Source order matters
@@ -301,6 +357,9 @@ export const StoryImageWithSourcesAndMedia = () => {
 };
 StoryImageWithSourcesAndMedia.storyName =
   'image-with-sources-using-media-query';
+StoryImageWithSourcesAndMedia.parameters = {
+  percy: {waitForSelector: 'picture img:nth-child(3)'},
+};
 
 export const StoryImageWithLogicalProps = () => (
   <>
@@ -322,3 +381,4 @@ export const StoryImageWithLogicalProps = () => (
 );
 
 StoryImageWithLogicalProps.storyName = 'image-with-logical-props';
+StoryImageWithLogicalProps.parameters = {...parameters};

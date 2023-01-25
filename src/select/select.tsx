@@ -1,6 +1,14 @@
-import React, {ChangeEvent, useEffect, useRef, useState} from 'react';
+import React, {ChangeEvent, useEffect, useRef} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
+import {
+  useFloating,
+  autoUpdate,
+  shift,
+  offset,
+  size as floatingSize,
+  autoPlacement,
+} from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
 import {SelectButton} from './select-button';
@@ -10,9 +18,11 @@ import {withOwnTheme} from '../utils/with-own-theme';
 import {checkBreakpointProp} from '../utils/check-breakpoint-prop';
 import {useBreakpointKey} from '../utils/hooks/use-media-query';
 import {useVirtualizedList} from './use-virtualized-list';
-import {Layer} from '../layer';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {get} from '../utils/get';
+import {Layer} from '../layer';
+import {getToken} from '../utils/get-token';
+import {useTheme} from '../theme';
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -33,6 +43,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       virtualized = 50,
       eventContext = {},
       eventOriginator = 'select',
+      onOpenChange,
       ...restProps
     } = props;
 
@@ -129,6 +140,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onSelectedItemChange: onInputChange,
       itemToString,
       onHighlightedIndexChange,
+      onIsOpenChange: event => {
+        if (onOpenChange) {
+          onOpenChange(Boolean(event.isOpen));
+        }
+      },
       stateReducer: (_, actionAndChanges) => {
         const {type, changes} = actionAndChanges;
         // Does not close panel in the case we are rendering panel inside a modal
@@ -175,6 +191,30 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [allowBlur, onBlur],
     );
 
+    const {x, y, reference, strategy, update, refs} = useFloating({
+      strategy: 'absolute',
+      open: isOpen,
+      placement: 'bottom-start',
+      middleware: [
+        offset(0),
+        shift(),
+        autoPlacement({
+          allowedPlacements: ['top-start', 'bottom-start'],
+        }),
+        floatingSize({
+          apply({rects, elements}) {
+            Object.assign(elements.floating.style, {
+              // when the panel is inside a modal we want to be 100%
+              width: elements.floating.classList.contains('modal-panel')
+                ? /* istanbul ignore next */
+                  '100%'
+                : `${rects.reference.width}px`,
+            });
+          },
+        }),
+      ],
+    });
+
     const {
       ref: downshiftButtonPropsRef,
       ...downshiftButtonPropsExceptRef
@@ -184,41 +224,31 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const {
       ref: downshiftMenuPropsRef,
       ...downshiftMenuPropsExceptRef
-    } = getMenuProps();
+    } = getMenuProps({ref: composeRefs(refs.floating, panelRef)});
 
-    const [{width, top, height, left}, setSelectRect] = useState({
-      width: 0,
-      top: 0,
-      height: 0,
-      left: 0,
-    });
-
-    useEffect(() => {
-      if (isOpen && selectRef.current) {
-        // getting width, height, left, top of the select
-        setSelectRect(selectRef.current.getBoundingClientRect());
-      }
-    }, [isOpen, selectRef]);
-
-    // Chrome does not focus the panel until its in view port,
-    // that's why we need to use scrollIntoView and focus after that.
-    // This does not seems to be a problem in FF and Safari
-    // This part can be removed if Chrome fixes that in the future.
-    useEffect(() => {
+    // eslint-disable-next-line consistent-return
+    React.useLayoutEffect(() => {
       /* istanbul ignore next */
-      if (
-        isOpen &&
-        panelRef.current &&
-        'scrollIntoView' in panelRef.current &&
-        'focus' in panelRef.current
-      ) {
-        const callback = () => {
-          panelRef.current?.scrollIntoView();
-          panelRef.current?.focus();
-        };
-        setTimeout(callback, 0);
+      if (isOpen && refs.reference.current && refs.floating.current) {
+        return autoUpdate(
+          refs.reference.current,
+          refs.floating.current,
+          update,
+        );
       }
-    }, [isOpen, panelRef]);
+    }, [isOpen, update, refs.floating, refs.reference]);
+
+    const theme = useTheme();
+    const zIndex = getToken(
+      {theme, overrides},
+      `select.${size}.panel.zIndex`,
+      'panel.zIndex',
+      'sizing',
+    );
+
+    // by default the select panel renders in layer,
+    // however users can provider zIndex value so that change and adjust according to their use-case
+    const LayerElement = zIndex === 'layer' ? Layer : React.Fragment;
 
     return (
       <>
@@ -239,29 +269,30 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           openMenu={openMenu}
           itemToString={itemToString}
           ref={composeRefs(localInputRef, downshiftButtonPropsRef, inputRef)}
-          selectRef={selectRef}
+          selectRef={composeRefs(selectRef, reference)}
           value={buttonValue}
+          isOpen={isOpen}
           {...downshiftButtonPropsExceptRef}
           {...restProps}
         />
-        <Layer>
+        <LayerElement>
           <SelectPanel
             isOpen={isOpen}
             overrides={overrides}
-            width={width}
-            height={height}
-            top={top}
-            left={left}
+            top={y}
+            left={x}
             size={size}
             buttonRef={localInputRef}
             renderInModal={renderInModal}
             closeMenu={closeMenu}
             {...downshiftMenuPropsExceptRef}
-            ref={composeRefs(panelRef, downshiftMenuPropsRef)}
+            ref={downshiftMenuPropsRef}
+            strategy={strategy}
+            zIndex={zIndex}
           >
             {optionsAsChildren}
           </SelectPanel>
-        </Layer>
+        </LayerElement>
       </>
     );
   },

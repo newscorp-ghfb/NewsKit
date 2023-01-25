@@ -12,6 +12,8 @@ import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {LinkStandalone} from '../../link';
 
+const waitForSelector = 'div.vjs-poster:not(.vjs-hidden)';
+
 export default {
   title: 'Components/video-player/default',
   component: () => 'None',
@@ -49,15 +51,7 @@ export const StoryDefaultVideoPlayer = () => {
   );
 };
 StoryDefaultVideoPlayer.storyName = 'video-default';
-StoryDefaultVideoPlayer.parameters = {
-  // todo: remove arbitrary wait
-  eyes: {
-    waitBeforeCapture: 5000,
-  },
-  percy: {
-    waitForTimeout: 5000,
-  },
-};
+StoryDefaultVideoPlayer.parameters = {percy: {waitForSelector}};
 
 export const StoryPlaylistsVideoPlayer = () => {
   const videoRef = React.useRef<HTMLVideoElement>(null);
@@ -86,15 +80,7 @@ export const StoryPlaylistsVideoPlayer = () => {
   );
 };
 StoryPlaylistsVideoPlayer.storyName = 'playlist-video-default';
-StoryPlaylistsVideoPlayer.parameters = {
-  // todo: remove arbitrary wait
-  eyes: {
-    waitBeforeCapture: 5000,
-  },
-  percy: {
-    waitForTimeout: 5000,
-  },
-};
+StoryPlaylistsVideoPlayer.parameters = {percy: {waitForSelector}};
 
 export const StoryCardWithVideo = () => (
   <>
@@ -126,12 +112,4 @@ export const StoryCardWithVideo = () => (
   </>
 );
 StoryCardWithVideo.storyName = 'video-in-card';
-StoryCardWithVideo.parameters = {
-  // todo: remove arbitrary wait
-  eyes: {
-    waitBeforeCapture: 5000,
-  },
-  percy: {
-    waitForTimeout: 5000,
-  },
-};
+StoryCardWithVideo.parameters = {percy: {waitForSelector}};

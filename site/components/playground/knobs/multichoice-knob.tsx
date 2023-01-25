@@ -6,7 +6,8 @@ import {
   css,
   getColorFromTheme,
   MQ,
-  getSSRId,
+  EventTrigger,
+  useInstrumentation,
 } from 'newskit';
 import {LegacyBlock} from '../../legacy-block';
 import {KnobContainer, StyledTitle} from './common';
@@ -113,32 +114,45 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
   options,
   onChange,
   value: selectedValue,
-}) => (
-  <KnobContainer>
-    <LegacyBlock display="inline" position="relative">
-      <StyledFieldset>
-        <StyledLegend>{name}</StyledLegend>
-        {options.map(({value, label}) => {
-          const checked = setChecked(selectedValue, value);
+}) => {
+  const {fireEvent} = useInstrumentation();
+  return (
+    <KnobContainer>
+      <LegacyBlock display="inline" position="relative">
+        <StyledFieldset>
+          <StyledLegend>{name}</StyledLegend>
+          {options.map(({value, label}) => {
+            const checked = setChecked(selectedValue, value);
 
-          const id = `multichoice-knob-${getSSRId()}-${label}-${value}`;
-          return (
-            <React.Fragment key={id}>
-              <StyledInput
-                type="radio"
-                id={id}
-                data-testid={value}
-                name={getSSRId() + name}
-                defaultChecked={checked}
-                onClick={() => onChange && onChange(value)}
-              />
-              <StyledLabel htmlFor={id}>{label}</StyledLabel>
-            </React.Fragment>
-          );
-        })}
-      </StyledFieldset>
-    </LegacyBlock>
-  </KnobContainer>
-);
+            const id = `multichoice-knob-${name}-${label}-${value}`;
+            return (
+              <React.Fragment key={id}>
+                <StyledInput
+                  type="radio"
+                  id={id}
+                  data-testid={value}
+                  name={label + name}
+                  defaultChecked={checked}
+                  onClick={() => {
+                    if (onChange) onChange(value);
+                    fireEvent({
+                      trigger: EventTrigger.Change,
+                      originator: 'multichoice-knob',
+                      context: {
+                        prop: name,
+                        value: label,
+                      },
+                    });
+                  }}
+                />
+                <StyledLabel htmlFor={id}>{label}</StyledLabel>
+              </React.Fragment>
+            );
+          })}
+        </StyledFieldset>
+      </LegacyBlock>
+    </KnobContainer>
+  );
+};
 
 export default MultiChoiceKnob;

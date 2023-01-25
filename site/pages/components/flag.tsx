@@ -242,7 +242,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <UnorderedList
           markerAlign="start"
@@ -304,7 +304,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'flag.spaceInset',
+              attribute: 'spaceInset',
               type: 'MQ<string>',
               default: [
                 'sm: spaceInsetSquish010',
@@ -314,13 +314,13 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               description: 'Overrides the spaceInset of the flag.',
             },
             {
-              attribute: 'flag.stylePreset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'flagDefault',
               description: 'Overrides the spaceInset of the flag.',
             },
             {
-              attribute: 'flag.typographyPreset',
+              attribute: 'typographyPreset',
               type: 'MQ<string>',
               default: [
                 'sm: utilityLabel010',
@@ -330,7 +330,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               description: 'Overrides the typographyPreset of the flag.',
             },
             {
-              attribute: 'flag.spaceInline',
+              attribute: 'spaceInline',
               type: 'MQ<string>',
               default: 'space010',
               description: (
@@ -344,7 +344,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'flag.iconSize',
+              attribute: 'iconSize',
               type: 'MQ<string>',
               default: 'iconSize010',
               description: (
@@ -358,7 +358,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'flag.width',
+              attribute: 'width',
               type: 'MQ<string>',
               default: '',
               description: (
@@ -372,7 +372,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'flag.height',
+              attribute: 'height',
               type: 'MQ<string>',
               default: '',
               description: (
@@ -386,7 +386,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'flag.minHeight',
+              attribute: 'minHeight',
               type: 'MQ<string>',
               default: ['sm: sizing050', 'md: sizing060', 'lg: sizing070'],
               description: (
@@ -400,7 +400,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'flag.maxHeight',
+              attribute: 'maxHeight',
               type: 'MQ<string>',
               default: '',
               description: (
@@ -414,7 +414,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'flag.minWidth',
+              attribute: 'minWidth',
               type: 'MQ<string>',
               default: '',
               description: (
@@ -428,7 +428,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'flag.maxWidth',
+              attribute: 'maxWidth',
               type: 'MQ<string>',
               default: '',
               description: (

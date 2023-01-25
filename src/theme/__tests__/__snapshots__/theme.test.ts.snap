@@ -1519,6 +1519,49 @@ Object {
       "stylePreset": "bannerInformative",
     },
   },
+  "breadcrumbItem": Object {
+    "large": Object {
+      "paddingBlock": "space000",
+      "paddingInline": "space000",
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton030",
+    },
+    "medium": Object {
+      "paddingBlock": "space000",
+      "paddingInline": "space000",
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton020",
+    },
+    "small": Object {
+      "paddingBlock": "space000",
+      "paddingInline": "space000",
+      "stylePreset": "breadcrumbItem",
+      "typographyPreset": "utilityButton010",
+    },
+  },
+  "breadcrumbs": Object {
+    "large": Object {
+      "separator": Object {
+        "paddingInline": "space020",
+        "size": "iconSize030",
+        "stylePreset": "breadcrumbSeparator",
+      },
+    },
+    "medium": Object {
+      "separator": Object {
+        "paddingInline": "space020",
+        "size": "iconSize020",
+        "stylePreset": "breadcrumbSeparator",
+      },
+    },
+    "small": Object {
+      "separator": Object {
+        "paddingInline": "space020",
+        "size": "iconSize010",
+        "stylePreset": "breadcrumbSeparator",
+      },
+    },
+  },
   "button": Object {
     "large": Object {
       "iconSize": "iconSize030",
@@ -2087,6 +2130,30 @@ Object {
       "transitionPreset": "backgroundColorChange",
     },
   },
+  "menuSubItem": Object {
+    "horizontal": Object {
+      "list": Object {
+        "stylePreset": "menuSub",
+      },
+      "minHeight": "sizing080",
+      "paddingBlock": "space030",
+      "paddingInline": "space040",
+      "spaceInline": "space020",
+      "spaceInset": "space000",
+      "stylePreset": "menuSubItemHorizontal",
+    },
+    "vertical": Object {
+      "list": Object {
+        "stylePreset": "menuSub",
+      },
+      "minHeight": "sizing080",
+      "paddingBlock": "space030",
+      "paddingInline": "space040",
+      "spaceInline": "space020",
+      "spaceInset": "space000",
+      "stylePreset": "menuSubItemVertical",
+    },
+  },
   "modal": Object {
     "closeButton": Object {
       "spaceInset": "spaceInset020",
@@ -2343,6 +2410,9 @@ Object {
           "spaceInline": "space020",
         },
         "iconSize": "iconSize020",
+        "indicatorIcon": Object {
+          "size": "iconSize020",
+        },
         "loadingIndicator": Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
@@ -2368,6 +2438,7 @@ Object {
         "spaceInset": "spaceInset020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
+        "zIndex": "layer",
       },
     },
     "medium": Object {
@@ -2377,6 +2448,9 @@ Object {
           "spaceInline": "space020",
         },
         "iconSize": "iconSize020",
+        "indicatorIcon": Object {
+          "size": "iconSize020",
+        },
         "loadingIndicator": Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
@@ -2402,6 +2476,7 @@ Object {
         "spaceInset": "spaceInset020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
+        "zIndex": "layer",
       },
     },
     "small": Object {
@@ -2411,6 +2486,9 @@ Object {
           "spaceInline": "space020",
         },
         "iconSize": "iconSize020",
+        "indicatorIcon": Object {
+          "size": "iconSize020",
+        },
         "loadingIndicator": Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
@@ -2436,6 +2514,7 @@ Object {
         "spaceInset": "spaceInset020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
+        "zIndex": "layer",
       },
     },
   },
@@ -3245,6 +3324,32 @@ Object {
     "base": Object {
       "backgroundColor": "{{colors.interfaceNotice010}}",
       "iconColor": "{{colors.inkInverse}}",
+    },
+  },
+  "breadcrumbItem": Object {
+    "active": Object {
+      "color": "{{colors.interactiveLink030}}",
+      "textDecoration": "underline",
+    },
+    "base": Object {
+      "color": "{{colors.interactiveLink010}}",
+    },
+    "hover": Object {
+      "color": "{{colors.interactiveLink020}}",
+      "textDecoration": "underline",
+    },
+    "selected": Object {
+      "color": "{{colors.inkBase}}",
+      "textDecoration": "none",
+    },
+    "selected:hover": Object {
+      "color": "{{colors.inkBase}}",
+      "textDecoration": "none",
+    },
+  },
+  "breadcrumbSeparator": Object {
+    "base": Object {
+      "color": "{{colors.inkSubtle}}",
     },
   },
   "buttonMinimalInverse": Object {
@@ -5059,6 +5164,94 @@ Object {
     },
   },
   "menuItemVertical": Object {
+    "active": Object {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}",
+    },
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}",
+    },
+    "disabled": Object {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+    },
+    "hover": Object {
+      "backgroundColor": "{{colors.interactivePrimary010}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}",
+    },
+    "selected": Object {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}",
+    },
+    "selected:hover": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}",
+    },
+  },
+  "menuSub": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.interface020}}",
+    },
+  },
+  "menuSubItemHorizontal": Object {
+    "active": Object {
+      "borderColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}",
+    },
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}",
+    },
+    "disabled": Object {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+    },
+    "hover": Object {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
+    },
+    "selected": Object {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
+    },
+    "selected:hover": Object {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
+    },
+  },
+  "menuSubItemVertical": Object {
     "active": Object {
       "backgroundColor": "{{colors.interactivePrimary020}}",
       "color": "{{colors.inkBrand010}}",

@@ -32,6 +32,7 @@ const ThemelessModal = React.forwardRef<HTMLDivElement, ModalProps>(
     ref,
   ) => {
     const theme = useTheme();
+    const cssTransitionNodeRef = React.useRef(null);
 
     const overlayOverrides = {
       ...deepMerge(
@@ -72,6 +73,7 @@ const ThemelessModal = React.forwardRef<HTMLDivElement, ModalProps>(
               overrides={overrides}
             >
               <CSSTransition
+                nodeRef={cssTransitionNodeRef}
                 in={open}
                 timeout={getTransitionDuration(
                   `modal.panel`,
@@ -86,6 +88,7 @@ const ThemelessModal = React.forwardRef<HTMLDivElement, ModalProps>(
               >
                 {state => (
                   <StyledModal
+                    ref={cssTransitionNodeRef}
                     open={open}
                     className={getTransitionClassName('nk-modal', state)}
                     disableFocusTrap={disableFocusTrap}

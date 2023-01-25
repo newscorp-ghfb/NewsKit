@@ -1,17 +1,3 @@
-import {CMSDataProps} from './types';
-
-export const getValueFromCMS = (
-  obj: CMSDataProps,
-  key: string,
-  fallback: string,
-) => {
-  const newKey = key.toLowerCase();
-  if (obj[newKey]) {
-    return obj[newKey];
-  }
-  return fallback;
-};
-
 export const formatSheetData = (data: string[][] | undefined | null) => {
   if (data === undefined || data === null || data.length === 0) {
     return {};
@@ -24,3 +10,8 @@ export const formatSheetData = (data: string[][] | undefined | null) => {
   // >>> Reason: `undefined` cannot be serialized as JSON. Please use `null` or omit this value all together.
   return JSON.parse(JSON.stringify(Object.fromEntries(transformedArray)));
 };
+
+export const getCMSList = <T extends object>(
+  content: T,
+  listKey: keyof T & string,
+) => Object.entries(content).filter(entry => entry[0].startsWith(listKey));

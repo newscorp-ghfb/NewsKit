@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkNext from 'next/link';
+import NextLink from 'next/link';
 import {LinkStandalone, LinkInline} from 'newskit';
 import {LinkProps} from './types';
 import {
@@ -28,7 +28,7 @@ export const Link: React.FC<LinkProps> = ({
   return (
     <>
       {type === 'standalone' && (
-        <LinkNext href={href} passHref>
+        <NextLink legacyBehavior href={href} passHref>
           <LinkStandalone
             href={href}
             eventContext={{value: linkLabel}}
@@ -36,15 +36,15 @@ export const Link: React.FC<LinkProps> = ({
           >
             {children}
           </LinkStandalone>
-        </LinkNext>
+        </NextLink>
       )}
 
       {type === 'inline' && (
-        <LinkNext href={href} passHref>
+        <NextLink legacyBehavior href={href} passHref>
           <LinkInline href={href} eventContext={{value: linkLabel}} {...rest}>
             {children}
           </LinkInline>
-        </LinkNext>
+        </NextLink>
       )}
     </>
   );

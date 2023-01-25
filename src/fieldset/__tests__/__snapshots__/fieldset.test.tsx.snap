@@ -653,13 +653,26 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <fieldset
@@ -1368,13 +1381,26 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <fieldset
@@ -2083,13 +2109,26 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0;
+  padding: 0.5px 0px;
 }
 
 .emotion-9:disabled {
   color: #ABABAB;
+}
+
+.emotion-9::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-9::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
 }
 
 <fieldset

@@ -1,238 +1,178 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Byline} from '..';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
-import {createTheme, ThemeProvider} from '../../theme';
-import {styled} from '../../utils';
+import {Block} from '../../block';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const myCustomTheme = createTheme({
+const BYLINE_COLUMNS = '1fr';
+const BYLINE_DATA = [
+  {
+    author: 'Alex Lowe',
+    href: 'https://www.thetimes.co.uk/profile/alex-lowe',
+    title: 'Deputy Rugby Correspondent',
+  },
+  {
+    author: 'Tom Knowles',
+    href: 'https://www.thetimes.co.uk/profile/tom-knowles',
+    title: 'West Coast Technology Reporter',
+    location: 'London',
+  },
+  {
+    author: 'David Aaronovitch',
+    href: 'https://www.thetimes.co.uk/profile/david-aaronovitch',
+    title: 'Columnist',
+  },
+  {
+    author: 'Catherine Philp',
+    href: 'https://www.thetimes.co.uk/profile/catherine-philp',
+    title: 'Diplomatic Correspondent',
+    location: 'London',
+  },
+];
+
+const myCustomTheme: CreateThemeArgs = {
   name: 'my-custom-byline-theme',
   overrides: {
     stylePresets: {
-      bylineCustom: {
+      bylineBorderWrapper: {
         base: {
-          color: '#D20600',
+          backgroundColor: 'transparent',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderStyle: 'dashed',
+          borderColor: '{{colors.red060}}',
         },
       },
-      bylineLinkCustom: {
+      bylineStylingOverrides: {
         base: {
-          color: '#d82059',
-        },
-      },
-      bylineDividerCustom: {
-        base: {
-          color: '#27a727',
+          color: '{{colors.inkBrand010}}',
         },
       },
     },
   },
-});
-
-const StyledDiv = styled.div`
-  border: 1px black solid;
-`;
-
-export default {
-  title: 'Components/byline',
-  component: () => 'None',
 };
 
-export const StoryByline = () => (
-  <>
-    <StorybookHeading>Byline</StorybookHeading>
-    <StorybookSubHeading>default style variations</StorybookSubHeading>
-    <Byline
-      bylineData={[
-        {
-          author: 'Alex Lowe',
-          href: 'https://www.thetimes.co.uk/profile/alex-lowe',
-          title: 'Deputy Rugby Correspondent',
-        },
-        {
-          author: 'Tom Knowles',
-          href: 'https://www.thetimes.co.uk/profile/tom-knowles',
-          title: 'West Coast Technology Reporter',
-          location: 'London',
-        },
-        {
-          author: 'Oliver Wright',
-          href: 'https://www.thetimes.co.uk/profile/oliver-wright',
-          location: 'London',
-        },
-        {
-          author: 'David Aaronovitch',
-          href: 'https://www.thetimes.co.uk/profile/david-aaronovitch',
-          title: 'Columnist',
-        },
-        {
-          author: 'Catherine Philp',
-          href: 'https://www.thetimes.co.uk/profile/catherine-philp',
-          title: 'Diplomatic Correspondent',
-          location: 'London',
-        },
-      ]}
-    />
-    <br />
-    <br />
-    <Byline
-      bylineData={[
-        {
-          author: 'Richard Lloyd Parry',
-        },
-        {
-          author: 'Callum Jones',
-        },
-      ]}
-    />
-    <br />
-    <br />
-    <Byline
-      bylineData={[
-        {
-          author: 'Richard Lloyd Parry',
-          title: 'Asia Editor',
-        },
-        {
-          author: 'Callum Jones',
-          title: 'Trade Correspondent',
-        },
-        {
-          author: 'Oliver Wright',
-          location: 'London',
-        },
-        {
-          author: 'David Aaronovitch',
-          location: 'London',
-        },
-      ]}
-    />
-    <br />
-    <br />
-    <Byline
-      bylineData={[
-        {
-          author: 'Richard Lloyd Parry',
-          href: 'https://www.thetimes.co.uk/profile/richard-lloyd-parry',
-        },
-        {
-          author: 'Callum Jones',
-          href: 'https://www.thetimes.co.uk/profile/callum-jones?',
-        },
-      ]}
-    />
-    <br />
-    <br />
-    <Byline
-      bylineData={[
-        {
-          author: 'Richard Lloyd Parry',
-          href: '/',
-        },
-        {
-          author: 'Callum Jones',
-          href: '/',
-        },
-      ]}
-    />
-    <br />
-    <br />
-    <Byline
-      bylineData={[
-        {
-          author: 'Richard Lloyd Parry',
-          href: 'https://www.thetimes.co.uk/profile/richard-lloyd-parry',
-        },
-        {
-          author: 'Callum Jones',
-        },
-      ]}
-    />
-    <br />
-    <br />
-    <Byline
-      bylineData={[
-        {
-          author: 'Richard Lloyd Parry',
-          href: '/',
-        },
-        {
-          author: 'Callum Jones',
-        },
-      ]}
-    />
-    <StorybookHeading>with overrides</StorybookHeading>
-    <ThemeProvider theme={myCustomTheme}>
+export const StoryBylineDefault = () => (
+  <StorybookPage columns={BYLINE_COLUMNS}>
+    <StorybookCase>
       <Byline
-        overrides={{
-          stylePreset: 'bylineCustom',
-          typographyPreset: 'utilityLabel010',
-          spaceStack: 'space030',
-          link: {
-            stylePreset: 'bylineLinkCustom',
-            typographyPreset: 'utilityLabel010',
-          },
-          divider: {
-            stylePreset: 'bylineDividerCustom',
-            spaceInline: 'space030',
-          },
-        }}
         bylineData={[
           {
-            author: 'Alex Lowe',
-            href: 'https://www.thetimes.co.uk/profile/alex-lowe',
-            title: 'Deputy Rugby Correspondent',
-          },
-          {
-            author: 'Tom Knowles',
-            href: 'https://www.thetimes.co.uk/profile/tom-knowles',
-            title: 'West Coast Technology Reporter',
-          },
-          {
-            author: 'David Aaronovitch',
-            href: 'https://www.thetimes.co.uk/profile/david-aaronovitch',
-            title: 'Columnist',
-          },
-          {
-            author: 'Catherine Philp',
-            href: 'https://www.thetimes.co.uk/profile/catherine-philp',
-            title: 'Diplomatic Correspondent',
+            author: 'Author',
+            href: 'https://newskit.co.uk/components/byline',
+            title: 'Political Editor, UK',
           },
         ]}
       />
-    </ThemeProvider>
-    <StorybookHeading>with logical overrides</StorybookHeading>
-    <StyledDiv>
-      <Byline
-        overrides={{
-          marginBlock: 'space030',
-          paddingBlock: 'space030',
-        }}
-        bylineData={[
-          {
-            author: 'Alex Lowe',
-            href: 'https://www.thetimes.co.uk/profile/alex-lowe',
-            title: 'Deputy Rugby Correspondent',
-          },
-          {
-            author: 'Tom Knowles',
-            href: 'https://www.thetimes.co.uk/profile/tom-knowles',
-            title: 'West Coast Technology Reporter',
-          },
-          {
-            author: 'David Aaronovitch',
-            href: 'https://www.thetimes.co.uk/profile/david-aaronovitch',
-            title: 'Columnist',
-          },
-          {
-            author: 'Catherine Philp',
-            href: 'https://www.thetimes.co.uk/profile/catherine-philp',
-            title: 'Diplomatic Correspondent',
-          },
-        ]}
-      />
-    </StyledDiv>
-  </>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryByline.storyName = 'byline';
+StoryBylineDefault.storyName = 'Default';
+
+export const StoryBylineVariants = () => (
+  <StorybookPage columns={BYLINE_COLUMNS}>
+    <StorybookCase title="Mix styles">
+      <Byline bylineData={BYLINE_DATA} />
+    </StorybookCase>
+    <StorybookCase title="Read-only">
+      <Byline
+        bylineData={[
+          {
+            author: 'Richard Lloyd Parry',
+          },
+          {
+            author: 'Callum Jones',
+            title: 'Trade Correspondent',
+          },
+          {
+            author: 'Callum Jones',
+            location: 'London',
+          },
+        ]}
+      />
+    </StorybookCase>
+    <StorybookCase title="Link">
+      <Byline
+        bylineData={[
+          {author: 'Alex Lowe', href: '/'},
+          {author: 'Richard Lloyd Parry', href: '/'},
+        ]}
+      />
+    </StorybookCase>
+    <StorybookCase title="External link">
+      <Byline
+        bylineData={[
+          {
+            author: 'Alex Lowe',
+            href: 'https://www.thetimes.co.uk/profile/alex-lowe',
+          },
+          {
+            author: 'Richard Lloyd Parry',
+            href: 'https://www.thetimes.co.uk/profile/richard-lloyd-parry',
+          },
+        ]}
+      />
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryBylineVariants.storyName = 'Variants';
+
+export const StoryBylineLogicalProps = () => (
+  <StorybookPage columns={BYLINE_COLUMNS}>
+    <StorybookCase>
+      <Block stylePreset="bylineBorderWrapper" marginBlockEnd="space070">
+        <Byline
+          overrides={{paddingBlock: 'space070'}}
+          bylineData={BYLINE_DATA}
+        />
+      </Block>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryBylineLogicalProps.storyName = 'Logical props';
+
+export const StoryBylineStylingOverrides = () => (
+  <StorybookPage columns={BYLINE_COLUMNS}>
+    <StorybookCase>
+      <Byline
+        overrides={{
+          stylePreset: 'bylineStylingOverrides',
+          link: {stylePreset: 'bylineStylingOverrides'},
+          divider: {stylePreset: 'bylineStylingOverrides'},
+        }}
+        bylineData={BYLINE_DATA}
+      />
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryBylineStylingOverrides.storyName = 'Styling overrides';
+
+export default {
+  title: 'Components/Byline',
+  component: Byline,
+  parameters: {
+    nkDocs: {
+      title: 'Byline',
+      url: 'https://newskit.co.uk/components/byline',
+      description:
+        'The byline is a small line of text which lists the authors of an article, along with their titles if provided.',
+    },
+  },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          myCustomTheme,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};

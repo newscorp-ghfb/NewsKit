@@ -13,7 +13,14 @@ exports[`OnwardJourneySection renders section as expected 1`] = `
     data-testid="Cell"
   >
     <div>
-      FeatureCard Component with props:{}
+      FeatureCard Component with props:{
+  "overrides": {
+    "button": {
+      "paddingInline": "space000",
+      "stylePreset": "linkStandaloneInversePersistent"
+    }
+  }
+}
     </div>
   </div>
 </DocumentFragment>

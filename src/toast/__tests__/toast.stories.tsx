@@ -451,7 +451,6 @@ export const StoryToastApi = () => {
 };
 StoryToastApi.storyName = 'toast-api';
 StoryToastApi.parameters = {
-  eyes: {include: false},
   percy: {skip: true},
 };
 

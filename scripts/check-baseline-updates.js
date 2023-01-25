@@ -1,13 +1,9 @@
 #!/usr/bin/env node
 const https = require('https');
 
-const GITHUB_URL = 'https://api.github.com';
 const PERCY_URL = 'https://percy.io';
-const GITHUB_HEADERS = {'User-Agent': 'required by GitHub'};
 
-function log(value) {
-  process.stdout.write(`${value}\n`);
-}
+const log = value => process.stdout.write(`${value}\n`);
 
 function apiCall(url, options) {
   return new Promise((resolve, reject) => {
@@ -36,20 +32,6 @@ function percyApiCall(path, project) {
   });
 }
 
-async function getPRForCommit(mergeCommitSha) {
-  log(`looking for PR for merge commit ${mergeCommitSha}`);
-  const url = `${GITHUB_URL}/search/issues?q=${mergeCommitSha}`;
-  const query = await apiCall(url, {headers: GITHUB_HEADERS});
-  const {items} = query;
-  if (!items.length) {
-    log(`no PR found for commit ${mergeCommitSha}`);
-    throw Error();
-  }
-  const prUrl = items[0].pull_request.url;
-  const pr = await apiCall(prUrl, {headers: GITHUB_HEADERS});
-  return pr;
-}
-
 async function getPercyBuildForBranch(branchName, project) {
   log(`looking for Percy ${project} build for branch ${branchName}`);
   const builds = await percyApiCall('/api/v1/builds', project);
@@ -63,12 +45,11 @@ async function getPercyBuildForBranch(branchName, project) {
   throw Error();
 }
 
-async function checkIfBaselineUpdatesRequired(mergeCommitSha, project) {
+async function checkIfBaselineUpdatesRequired(headRefName, project) {
+  const branchName = headRefName.trim();
   log(
-    `checking if ${project} baselines need to be updated after commit ${mergeCommitSha}`,
+    `Checking if baselines for ${project} need to be updated after ${branchName} was merged`,
   );
-  const pr = await getPRForCommit(mergeCommitSha);
-  const branchName = pr.head.ref;
 
   const build = await getPercyBuildForBranch(branchName, project);
   const reviewState = build.attributes['review-state'];
@@ -98,8 +79,8 @@ async function checkIfBaselineUpdatesRequired(mergeCommitSha, project) {
 }
 
 // this script fails if updates are required
-const sha = process.argv[2];
+const headRefName = process.argv[2];
 const project = process.argv[3];
-checkIfBaselineUpdatesRequired(sha, project)
+checkIfBaselineUpdatesRequired(headRefName, project)
   .then(() => process.exit(1))
   .catch(() => process.exit(0));

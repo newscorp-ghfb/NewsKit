@@ -39,7 +39,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
     }}
     componentDefaultsKey="shareBar"
     meta={{
-      status: MetaStatus.Supported,
+      status: MetaStatus.Deprecated,
       introduced: 'v0.20.1',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit',
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
@@ -231,7 +231,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: 'Ensure icons have Alt Text applied.',
     }}
     componentAPI={{

@@ -1,13 +1,14 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
-import {ThemeProvider} from '@emotion/react';
+import {Story as StoryType} from '@storybook/react';
 import {Divider, DividerProps} from '..';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {Stack} from '../../stack';
 import {Block} from '../../block';
 import {StackChild} from '../../stack-child';
 import {getSizingCssFromTheme, getColorCssFromTheme} from '../../utils/style';
-import {compileTheme, createTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Box = styled.div<{isMarginRight?: boolean; transparent?: boolean}>`
   display: inline-block;
@@ -44,22 +45,20 @@ const verticalCols = {
   md: '1fr 1fr',
 };
 
-const myCustomTheme = compileTheme(
-  createTheme({
-    name: 'my-custom-theme',
-    overrides: {
-      stylePresets: {
-        customDivider: {
-          base: {
-            borderStyle: 'solid',
-            borderColor: '{{colors.amber060}}',
-            borderWidth: '{{borders.borderWidth030}}',
-          },
+const myCustomTheme: CreateThemeArgs = {
+  name: 'my-custom-theme',
+  overrides: {
+    stylePresets: {
+      customDivider: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.inkBrand010}}',
+          borderWidth: '{{borders.borderWidth030}}',
         },
       },
     },
-  }),
-);
+  },
+};
 
 export const StoryDividerDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
@@ -158,7 +157,18 @@ export const StoryResponsive = () => (
 );
 StoryResponsive.storyName = 'Breakpoint';
 
-export const StoryLogicalPropsOverrides = () => (
+export const StoryStylingOverrides = () => (
+  <StorybookPage columns={dividerCols}>
+    <StorybookCase title="Style">
+      <Box transparent>
+        <Divider vertical overrides={{stylePreset: 'customDivider'}} />
+      </Box>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryStylingOverrides.storyName = 'Styling overrides';
+
+export const StoryOverrides = () => (
   <StorybookPage columns={dividerCols}>
     <StorybookCase title="Padding overrides">
       <BlockForDivider paddingInline="space030" />
@@ -174,16 +184,9 @@ export const StoryLogicalPropsOverrides = () => (
       />
       <BlockForDivider marginInline="space030" />
     </StorybookCase>
-    <StorybookCase title="Styling">
-      <ThemeProvider theme={myCustomTheme}>
-        <Box transparent>
-          <Divider vertical overrides={{stylePreset: 'customDivider'}} />
-        </Box>
-      </ThemeProvider>
-    </StorybookCase>
   </StorybookPage>
 );
-StoryLogicalPropsOverrides.storyName = 'Overrides';
+StoryOverrides.storyName = 'Overrides';
 
 export default {
   title: 'Components/Divider',
@@ -196,4 +199,20 @@ export default {
         'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
     },
   },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          myCustomTheme,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };

@@ -37,7 +37,7 @@ Scripts should be named using the following naming convention:
 
 * `test:unit:site` -> runs the unit tests on the site folder.
 
-* `test:visual:comps:ci` -> starts the local storybook and runs the applitools storybook tests afterwards.
+* `test:visual:comps:ci:percy` -> starts the local storybook and runs the percy storybook tests afterwards.
 
 * `e2e:build` -> builds the end to end tests.
 
@@ -51,11 +51,9 @@ Scripts should be named using the following naming convention:
 
 * `e2e:docs:ci` -> starts serve:docs and runs the cypress docs tests headlessly.
 
-* `eyes:storybook` -> runs the applitools storybook tests locally. Requires APPLITOOLS_API_KEY to be exported prior to running.
+* `test:visual:comps:local:percy` -> sets required env variables and runs the percy component tests locally.
 
-* `test:visual:comps:local` -> sets required env variables and runs the applitools component tests locally.
-
-* `e2e:visual:docs:local` -> sets required env variables and runs the applitools doc site tests locally.
+* `e2e:visual:docs:local:percy` -> sets required env variables and runs the percy doc site tests locally.
 
 ## Storybook
 
