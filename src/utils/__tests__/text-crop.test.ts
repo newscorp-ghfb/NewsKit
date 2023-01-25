@@ -132,63 +132,44 @@ describe('textCrop', () => {
     });
   });
 
-  it.only('should', () => {
-    const adjustTrim = (
-      inputLineHeight: number,
-      inputFontSize: number,
-      trim: number,
-    ) => {
+  it('should calculate margins independent of fontSize', () => {
+    const adjustTrim = (inputLineHeight: number, trim: number) => {
       const absoluteDescent = Math.abs(fontMetrics.descent);
       const contentArea =
         fontMetrics.ascent + fontMetrics.lineGap + absoluteDescent;
       const lineHeightScale = contentArea / fontMetrics.unitsPerEm;
-      const lineHeightNormal = lineHeightScale * inputFontSize;
-      
-      const lineHeight = inputFontSize * inputLineHeight;
-      const specifiedLineHeightOffset = (lineHeightNormal - lineHeight) / 2;
-
-      const adjustedTrim = trim - specifiedLineHeightOffset / inputFontSize;
-
+      const adjustedTrim = trim - (lineHeightScale - inputLineHeight) / 2;
       return `${round(adjustedTrim * -1)}em`;
     };
 
-    const calculateCapHeightTrim = (
-      inputLineHeight: number,
-      inputFontSize: number,
-    ) => {
+    const calculateCapHeightTrim = (inputLineHeight: number) => {
       const ascentScale = fontMetrics.ascent / fontMetrics.unitsPerEm;
       const capHeightScale = fontMetrics.capHeight / fontMetrics.unitsPerEm;
       const lineGapScale = fontMetrics.lineGap / fontMetrics.unitsPerEm;
       const trim = ascentScale - capHeightScale + lineGapScale / 2;
-      return adjustTrim(inputLineHeight, inputFontSize, trim);
+      return adjustTrim(inputLineHeight, trim);
     };
 
-    const calculateBaselineTrim = (
-      inputLineHeight: number,
-      inputFontSize: number,
-    ) => {
+    const calculateBaselineTrim = (inputLineHeight: number) => {
       const absoluteDescent = Math.abs(fontMetrics.descent);
       const descentScale = absoluteDescent / fontMetrics.unitsPerEm;
       const lineGapScale = fontMetrics.lineGap / fontMetrics.unitsPerEm;
       const trim = descentScale + lineGapScale / 2;
-      return adjustTrim(inputLineHeight, inputFontSize, trim);
+      return adjustTrim(inputLineHeight, trim);
     };
 
-    const fontSize = 12;
     const lineHeight = 1.6;
+    const marginTop = calculateBaselineTrim(lineHeight);
+    const marginBottom = calculateCapHeightTrim(lineHeight);
 
-    const cropData: TextCropProps = {
-      fontSize: `${fontSize}px`,
-      lineHeight,
-      fontMetrics,
-    };
-
-    expect(textCrop(cropData)['::after'].marginTop).toEqual(
-      calculateBaselineTrim(lineHeight, fontSize),
-    );
-
-    expect(textCrop(cropData)['::before'].marginBottom).toEqual(
-      calculateCapHeightTrim(lineHeight, fontSize),
-    );
+    [12, 14, 16, 18, 20].forEach(fontSize => {
+      const textCropCSS = textCrop({
+        fontSize: `${fontSize}px`,
+        lineHeight,
+        fontMetrics,
+      });
+      expect(textCropCSS['::after'].marginTop).toEqual(marginTop);
+      expect(textCropCSS['::before'].marginBottom).toEqual(marginBottom);
+    });
   });
 });
