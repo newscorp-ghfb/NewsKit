@@ -13,14 +13,14 @@ import {StyledHeading} from '../../../utils/styled';
 const BestPractice = (layoutProps: LayoutProps) => (
   <PatternPageTemplate
     headTags={{
-      title: 'Best Practice',
+      title: 'Best practice',
       description:
         'Create compelling onboarding experiences by following these industry best practices.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
       type: 'Onboarding',
-      name: 'Best Practice',
+      name: 'Best practice',
       hero: {
         illustration: 'patterns/onboarding/best-practice/hero',
       },
