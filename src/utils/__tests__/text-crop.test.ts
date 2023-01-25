@@ -33,6 +33,16 @@ describe('textCrop', () => {
     expect(textCrop(cropData)).toEqual(expectedResult);
   });
 
+  test(`throws an error if invalid units passed`, () => {
+    const cropData: TextCropProps = {
+      fontSize: '12metres' as TextCropProps['fontSize'],
+      lineHeight: 1.6,
+      fontMetrics,
+    };
+
+    expect(() => textCrop(cropData)).toThrow(Error);
+  });
+
   test(`margins (em) DO NOT depend on fontSize`, () => {
     [12, 14, 16, 18, 20].forEach(px => {
       const crop = textCrop({
