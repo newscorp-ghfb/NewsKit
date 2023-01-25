@@ -1,4 +1,6 @@
 import React from 'react';
+import {InlineMessage, toNewsKitIcon} from 'newskit';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MediaList, MediaListProps} from '../../components/media-list';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
@@ -14,10 +16,21 @@ export type OptionsSectionProps = MediaListProps &
   IntroductionText &
   OptionsComponentsProps;
 
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
+
 export const OptionsSection: React.FC<OptionsSectionProps> = ({
   title,
   introduction,
   components,
+  notice,
   ...options
 }) => {
   const renderOptionsSection = (
@@ -43,6 +56,20 @@ export const OptionsSection: React.FC<OptionsSectionProps> = ({
             }}
             layout="1-span"
           />
+        )}
+        {notice && (
+          <>
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="overrides info"
+              overrides={{
+                marginBlockStart: 'space050',
+              }}
+            >
+              {notice}
+            </InlineMessage>
+          </>
         )}
       </ComponentPageCell>
     </CommonSection>

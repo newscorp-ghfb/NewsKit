@@ -36,6 +36,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       handleCloseButtonClick,
       enableDismiss = false,
       disableFocusManagement = false,
+      dismissOnBlur = false,
       ...props
     },
     ref,
@@ -81,8 +82,15 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
       <BaseFloatingElement
         ref={ref}
         path="popover"
-        content={({onClick}) => (
-          <StyledPopoverInnerPanel closePosition={closePosition}>
+        content={({onClick}, {onOpenChange}) => (
+          <StyledPopoverInnerPanel
+            closePosition={closePosition}
+            onBlur={() => {
+              if (dismissOnBlur) {
+                onOpenChange(false);
+              }
+            }}
+          >
             {header !== undefined && (
               <StyledPopoverHeader
                 id={headerId}
@@ -125,6 +133,7 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
         role="dialog"
         overrides={overrides}
         disableFocusManagement={disableFocusManagement}
+        dismissOnBlur={dismissOnBlur}
         {...props}
       >
         {children}

@@ -448,10 +448,10 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the audio player component.',
+      introduction: 'Here’s how and when to use the audio player:',
       cards: [
         {
+          title: "Do use a flag for 'live' audio streaming",
           description: (
             <>
               Use a <Link href="/components/flag/">flag</Link> to show users
@@ -464,6 +464,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Do adapt the component for different breakpoints',
           description: (
             <>
               For optimal user experience across breakpoints, it is recommended
@@ -478,6 +479,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Do use the expandable volume control when space is limited',
           description:
             'Use the expandable volume control when space in an audio player is limited.',
           kind: UsageKind.DO,
@@ -486,6 +488,7 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Don’t display on mobile',
           description:
             'Avoid displaying the volume control on mobile devices as users can use their native device controls to increase or decrease the volume of the audio track.',
           kind: UsageKind.DONT,

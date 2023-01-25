@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# this script sets the environment variables required to run Applitools tests locally
+# this script sets the environment variables required to run Percy tests locally
 
 USERNAME=$(git config user.name)
 BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
 COMMIT_SHA=$(git rev-parse HEAD)
 STATUS=$(git status)
 
-# the commit needs to be pushed (so that the Applitools / GitHub integration can retrieve its info)
+# the commit needs to be pushed (so that the Percy / GitHub integration can retrieve its info)
 #if [[ "$STATUS" != *"Your branch is up to date with 'origin/${BRANCH_NAME}'."* ]]; then
-#  echo "Please make sure you are up-to-date with remote before running Applitools tests."
+#  echo "Please make sure you are up-to-date with remote before running Percy visual regression tests."
 #  exit 1
 #fi
 

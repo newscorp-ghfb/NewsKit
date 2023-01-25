@@ -44,6 +44,8 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       eventContext = {},
       eventOriginator = 'select',
       onOpenChange,
+      // force select in controlled mode
+      controlled = false,
       ...restProps
     } = props;
 
@@ -64,10 +66,14 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [onFocus],
     );
 
-    const programmaticallySelectedItem = children.find(
+    const childrenArray = React.Children.toArray(
+      children,
+    ) as React.ReactElement<SelectOptionProps>[];
+
+    const programmaticallySelectedItem = childrenArray.find(
       option => option.props.selected,
     );
-    const defaultSelectedItem = children.find(
+    const defaultSelectedItem = childrenArray.find(
       option => option.props.defaultSelected,
     );
 
@@ -126,6 +132,18 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       item?.props?.['aria-label'] || item?.props?.value;
     /* eslint-enable @typescript-eslint/no-explicit-any */
 
+    const getSelectedItem = () => {
+      if (programmaticallySelectedItem) {
+        return {selectedItem: programmaticallySelectedItem};
+      }
+
+      if (controlled) {
+        return {selectedItem: programmaticallySelectedItem || null};
+      }
+
+      return {};
+    };
+
     const {
       isOpen,
       selectedItem,
@@ -135,7 +153,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       openMenu,
       closeMenu,
     } = useSelect({
-      items: children,
+      items: childrenArray,
       defaultSelectedItem,
       onSelectedItemChange: onInputChange,
       itemToString,
@@ -158,15 +176,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
         return changes;
       },
-      ...(programmaticallySelectedItem
-        ? {selectedItem: programmaticallySelectedItem}
-        : {}),
+      ...getSelectedItem(),
     });
 
     const {children: optionsAsChildren, scrollToIndex} = useVirtualizedList({
-      items: React.Children.toArray(
-        children,
-      ) as React.ReactElement<SelectOptionProps>[],
+      items: childrenArray,
       listRef: panelRef,
       getItemProps,
       limit: virtualized,

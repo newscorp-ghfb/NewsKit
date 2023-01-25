@@ -6,6 +6,8 @@ const CopyPlugin = require('copy-webpack-plugin');
 // remove @next/mdx when doc pages are all tranformed to tsx
 const withMDX = require('./mdx');
 
+const isSiteEnvProduction = process.env.SITE_ENV === 'production';
+
 module.exports = withMDX({
   reactStrictMode: true,
   eslint: {
@@ -27,7 +29,6 @@ module.exports = withMDX({
       __dirname,
       'components/page-title.tsx',
     );
-
     config.plugins = config.plugins || [];
     config.plugins = [
       ...config.plugins,
@@ -50,4 +51,19 @@ module.exports = withMDX({
       : {};
     return basePath;
   })(), // used to build in relative paths when site is located in a sub dir
+
+  compiler: {
+    emotion: {
+      sourceMap: true,
+      autoLabel: isSiteEnvProduction ? 'never' : 'always',
+      labelFormat: '[local]',
+      importMap: {
+        newskit: {
+          styled: {
+            canonicalImport: ['@emotion/styled', 'default'],
+          },
+        },
+      },
+    },
+  },
 });

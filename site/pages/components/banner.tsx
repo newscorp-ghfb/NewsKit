@@ -288,42 +288,45 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Banner component.',
+      introduction: 'Here’s how and when to use the banner:',
       cards: [
         {
+          title: 'Do use banners for essential, system-level information',
           description:
-            'Banners should be reserved only for essential system-level information, such as internet connection issues, expirations of subscriptions, payment failures or major product changes. For confirmations of actions or promotional messaging use another feedback component such as a Toast.',
+            'Examples include internet connection issues, expirations of subscriptions, payment failures or major product changes. For confirmations of actions or promotional messages, use another feedback component (e.g. toast) instead.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/banner/banner-do-1-illustration',
           ),
         },
         {
-          description:
-            'Never show multiple Banners at the same time. When multiple Banners are consecutively or simultaneously triggered, the Banner with more importance should replace an existing Banner of lesser importance until the higher priority one has been resolved.',
+          title: 'Don’t show multiple banners at the same time',
+          description: 'Banners should appear in order of importance.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/banner/banner-dont-1-illustration',
           ),
         },
         {
+          title: 'Do add an action to help users solve the issue',
           description:
-            'Whenever possible, add an action in the Banner for a user to quickly resolve the associated Banner message.',
+            'Whenever possible, add an action in the banner so the user can quickly resolve the issue.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/banner/banner-do-2-illustration',
           ),
         },
         {
+          title: 'Don’t have more than one action in a banner',
           description:
-            'Avoid using more than one action in a Banner. (excluding the dismiss button). Having more than one action to choose from can make it difficult for users to decide what action to do next.',
+            'Having more than one action to choose from can make it difficult for users to decide what to do next. This doesn’t include the close button.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/banner/banner-dont-2-illustration',
           ),
         },
         {
+          title: 'Do position below the navigation header',
           description:
             'Banners should be positioned at the top of a page, below the navigation header.',
           kind: UsageKind.DO,
@@ -332,35 +335,30 @@ const BannerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Don’t let banners time out',
           description:
-            'Never allow Banners to time out. They should only disappear on user interaction (either dismissing or completing a task) or when the information is no longer relevant, e.g. updating failed payment details.',
+            'Banners should only disappear on user interaction (dismissing or completing a task) or when the information is no longer relevant (e.g. updating failed payment details).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/banner/banner-dont-3-illustration',
           ),
         },
         {
+          title: 'Do convey tone with the right intent',
           description:
-            'Use the appropriate intent to convey the tone of the Banner message. If the tone is neutral use the informative intent Banner. ',
+            'Use the appropriate intent to convey the tone of the banner message. If the tone is neutral, use the informative intent banner.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/banner/banner-do-4-illustration',
           ),
         },
         {
+          title: 'Do display again if unresolved',
           description:
-            'If a user dismisses a Banner without resolving the issue, it should be displayed again at the next possible occasion, without overwhelming the user e.g. the next time session.',
+            'If a user dismisses a banner without resolving the issue, display it again at the next possible occasion, without overwhelming the user (e.g. the next time session).',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/banner/banner-dont-5-illustration',
-          ),
-        },
-        {
-          description:
-            "Keep a Banner's message clear and concise, describing what's happening, and what the user needs to know and do. ",
-          kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/banner/banner-do-6-illustration',
           ),
         },
       ],
@@ -428,7 +426,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: 'There are no SEO considerations for this component.',
     }}
     componentAPI={{

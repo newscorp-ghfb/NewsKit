@@ -136,6 +136,54 @@ export const routes = [
           },
         ],
       },
+      {
+        title: 'Accessibility',
+        id: '/getting-started/accessibility',
+        subNav: [
+          {
+            title: 'Getting started',
+            page: true,
+            id: '/getting-started/accessibility/getting-started',
+            description: 'Equal access for everyone.',
+            illustration: 'guides/accessibility-getting-started/hero',
+            cardTitle: 'Getting started',
+          },
+          {
+            title: 'Design',
+            page: true,
+            id: '/getting-started/accessibility/design',
+            description: 'Design provides the foundations for accessibility.',
+            illustration: 'guides/accessibility-design/hero',
+            cardTitle: 'Design',
+          },
+          {
+            title: 'Code',
+            page: true,
+            id: '/getting-started/accessibility/code',
+            description:
+              'Building to WCAG standards maintains quality and supports assistive technologies.',
+            illustration: 'guides/accessibility-code/hero',
+            cardTitle: 'Code',
+          },
+          {
+            title: 'Write',
+            page: true,
+            id: '/getting-started/accessibility/write',
+            description: 'Clear copy in plain language benefits everyone.',
+            illustration: 'guides/accessibility-write/hero',
+            cardTitle: 'Write',
+          },
+          {
+            title: 'Test',
+            page: true,
+            id: '/getting-started/accessibility/testing',
+            description:
+              'Tools and checkers to help you test against accessibility guidelines.',
+            illustration: 'guides/accessibility-test/hero',
+            cardTitle: 'Test',
+          },
+        ],
+      },
     ],
   },
   {
@@ -606,6 +654,14 @@ export const routes = [
               'A pair of components which can be used to show and hide content at different breakpoints.',
             illustration: 'components/visibility-illustration',
           },
+          {
+            title: 'Layer',
+            page: true,
+            id: '/components/layer',
+            description:
+              'Layers allow for the stacking of components and other elements, giving control over how they interact together and appear to users.',
+            illustration: 'components/layer-illustration',
+          },
         ],
       },
       {
@@ -657,6 +713,7 @@ export const routes = [
             page: true,
             id: '/components/breadcrumbs',
             description: 'Breadcrumbs are used for secondary navigation.',
+
             illustration: 'components/breadcrumbs/hero',
           },
           {
@@ -934,6 +991,39 @@ export const routes = [
         indexPage: true,
         description:
           'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
+      },
+      {
+        title: 'Onboarding',
+        id: '/patterns/onboarding',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/patterns/onboarding/overview',
+            description:
+              'Onboarding is the first impression a user has of a product or feature. It’s crucial to make it count.',
+            illustration: 'patterns/onboarding/overview/hero',
+            buttonLabel: 'Learn more about onboarding',
+          },
+          {
+            title: 'Best practice',
+            page: true,
+            id: '/patterns/onboarding/best-practice',
+            description:
+              'Create compelling onboarding experiences by following these industry best practices.',
+            illustration: 'patterns/onboarding/best-practice/hero',
+            buttonLabel: 'Learn more about onboarding best practice',
+          },
+          {
+            title: 'How to',
+            page: true,
+            id: '/patterns/onboarding/how-to',
+            description:
+              'This framework shows you how to onboard users with a simple three-step process.',
+            illustration: 'patterns/onboarding/how-to/hero',
+            buttonLabel: 'Learn more about onboarding',
+          },
+        ],
       },
       {
         title: 'Forms',
