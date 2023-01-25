@@ -348,6 +348,9 @@ jobs:
           root: ./
           paths:
             - vendor/apt/*
+      - slack/notify:
+          <<: *slack_notify
+      
 
   install_deps:
     executor: node-large
@@ -583,6 +586,8 @@ jobs:
           command: sudo pip install awscli
       - aws_assume_role:
           job_type: << parameters.job_type >>
+      - slack/notify:
+          <<: *slack_notify
 
   deploy_terraform:
     parameters:
@@ -627,6 +632,8 @@ jobs:
           steps:
             - terraform_apply:
                 package: << parameters.package >>
+      - slack/notify:
+          <<: *slack_notify
 
   test_visual_comps_percy:
     executor: node-large
@@ -653,6 +660,8 @@ jobs:
                 echo "Baseline updates required; continuing job."
             }
       - run_test_visual_comps_percy
+      - slack/notify:
+          <<: *slack_notify
 
   docsite_tests_conditional_run_to_update_baselines:
     # if there are any visual diffs we need to run the Percy docsite tests to update the baselines
@@ -674,6 +683,8 @@ jobs:
                 echo "Baseline updates required; continuing job."
             }
       - run_test_visual_docs_percy
+      - slack/notify:
+          <<: *slack_notify
 
   skip_percy_comps_check:
     executor: node
@@ -769,6 +780,8 @@ jobs:
       - run:
           name: Delete trigger-release@ tag
           command: make delete_trigger_release_tag VERSION=<< parameters.version >>
+      - slack/notify:
+          <<: *slack_notify
 
   publish_npm:
     parameters:
@@ -1049,7 +1062,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  # ========== CODEMOD TASKS    ==========
+  # ========== CODEMOD RELATED JOBS    ==========
 
   install_deps_codemod:
     executor: node
@@ -1163,6 +1176,8 @@ jobs:
       - run:
           name: Delete trigger-release-codemod@ tag
           command: cd lib/codemod && make delete_trigger_release_tag VERSION=<< parameters.version >>
+      - slack/notify:
+          <<: *slack_notify
 
   merge_checker:
     executor: node
