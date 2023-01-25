@@ -1,38 +1,24 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {TextField, TextFieldSize} from '..';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {TextField} from '..';
 import {Block} from '../../block';
 import {Button} from '../../button';
-import {Cell, Grid} from '../../grid';
 import {IconButton} from '../../icon-button';
 import {
-  IconFilledAccountBalance,
-  IconFilledAccountTree,
+  IconFilledAddCircle,
+  IconFilledCheckCircle,
   IconFilledClose,
-  IconFilledSearch,
+  IconFilledArrowDropDown,
+  IconFilledError,
 } from '../../icons';
-import {Stack} from '../../stack';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-  StorybookParah,
-} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {
-  styled,
-  getSizingCssFromTheme,
-  getColorCssFromTheme,
-} from '../../utils/style';
 import {Label} from '../../label';
 import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {Select, SelectOption} from '../..';
 
-const CustomBlock = styled.div`
-  margin-right: 12px;
-`;
-const Container = styled.div`
-  ${getSizingCssFromTheme('margin', 'sizing080')};
-`;
+const TEXT_FIELD_COLUMNS = {xs: '1fr', md: '1fr 1fr'};
 
 const textFieldCustomThemeObject: CreateThemeArgs = {
   name: 'text-input-custom-theme',
@@ -40,37 +26,23 @@ const textFieldCustomThemeObject: CreateThemeArgs = {
     stylePresets: {
       inputContainerCustom: {
         base: {
+          backgroundColor: '{{colors.transparent}}',
+          placeholderColor: '{{colors.inkBrand010}}',
+          color: '{{colors.inkBrand010}}',
           borderStyle: 'solid',
-          borderColor: '#D20600',
-          placeholderColor: 'blue',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+          borderColor: '{{colors.interactiveInput020}}',
         },
       },
       labelOverrides: {
         base: {
-          color: '#0ed200',
+          color: '{{colors.inkBrand010}}',
         },
       },
       assistiveTextOverrides: {
         base: {
-          color: '#0ed200',
-        },
-      },
-      customOutlineColor: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidthDefault}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBase}}',
-          textOverflow: 'ellipsis',
-          placeholderColor: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-        focus: {
-          outlineColor: 'red',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          color: '{{colors.inkBrand010}}',
         },
       },
       customOutlineStyle: {
@@ -89,42 +61,6 @@ const textFieldCustomThemeObject: CreateThemeArgs = {
           outlineColor: 'red',
           outlineStyle: 'dotted',
           outlineWidth: '{{outlines.outlineWidthDefault}}',
-        },
-      },
-      customOutlineWidth: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidthDefault}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBase}}',
-          textOverflow: 'ellipsis',
-          placeholderColor: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-        focus: {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-        },
-      },
-      customOutlineOffset: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidthDefault}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBase}}',
-          textOverflow: 'ellipsis',
-          placeholderColor: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-        focus: {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
           outlineOffset: '5px',
         },
       },
@@ -132,508 +68,357 @@ const textFieldCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-export const TextFieldSizeExamples = () => (
-  <>
-    <StorybookHeading>Text Field Sizes</StorybookHeading>
-    <Container>
-      <Stack
-        flow="horizontal-center"
-        spaceInline="space070"
-        spaceStack="space050"
-        wrap="wrap"
-      >
-        <Block>
-          {[
-            {id: 'id-29', size: 'small'},
-            {id: 'id-30', size: 'medium'},
-            {id: 'id-31', size: 'large'},
-          ].map(({id, size}) => (
-            <Block>
-              <Grid>
-                <Cell xs={12}>
-                  <StorybookSubHeading>{size}</StorybookSubHeading>
-                  <Label htmlFor={id} size={size as TextFieldSize}>
-                    A Label
-                  </Label>
-                  <TextField
-                    aria-describedby={`${id}-at`}
-                    id={id}
-                    size={size as TextFieldSize}
-                  />
-                  <AssistiveText id={`${id}-at`} size={size as TextFieldSize}>
-                    Assistive Text Goes Here
-                  </AssistiveText>
-                </Cell>
-              </Grid>
-            </Block>
-          ))}
-        </Block>
-      </Stack>
-    </Container>
-  </>
+export const StoryTextFieldDefault = () => (
+  <StorybookPage columns={TEXT_FIELD_COLUMNS}>
+    <StorybookCase>
+      <Label htmlFor="default">Label</Label>
+      <TextField
+        id="default"
+        aria-describedby="default-at"
+        placeholder="Placeholder"
+      />
+      <AssistiveText id="default-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
 );
-export const TextFieldBasics = () => (
-  <>
-    <StorybookHeading>Text field states</StorybookHeading>
+StoryTextFieldDefault.storyName = 'Default';
 
-    <Grid>
-      <Cell xs={4}>
-        <CustomBlock data-state="Default">
-          <StorybookSubHeading>Default</StorybookSubHeading>
-          <Label htmlFor="id-2">Label </Label>
-          <TextField aria-describedby="id-2-at" id="id-2" />
-
-          <AssistiveText id="id-2-at">Assistive Text</AssistiveText>
-        </CustomBlock>
-      </Cell>
-      <Cell xs={4}>
-        <CustomBlock>
-          <StorybookSubHeading>Valid</StorybookSubHeading>
-          <Label htmlFor="id-3">Label </Label>
-          <TextField state="valid" aria-describedby="id-3-at" id="id-3" />
-
-          <AssistiveText state="valid" id="id-3-at">
-            Assistive Text
-          </AssistiveText>
-        </CustomBlock>
-      </Cell>
-
-      <Cell xs={4}>
-        <CustomBlock>
-          <StorybookSubHeading>Invalid</StorybookSubHeading>
-          <Label htmlFor="id-33">Label </Label>
-          <TextField state="invalid" aria-describedby="id-33-at" id="id-33" />
-
-          <AssistiveText state="invalid" id="id-33-at">
-            Assistive Text
-          </AssistiveText>
-        </CustomBlock>
-      </Cell>
-
-      <Cell xs={4}>
-        <CustomBlock>
-          <StorybookSubHeading>Disabled</StorybookSubHeading>
-          <Label state="disabled" htmlFor="id-4">
-            Label
-          </Label>
-          <TextField state="disabled" aria-describedby="id-4-at" id="id-4" />
-          <AssistiveText state="disabled" id="id-4-at">
-            Assistive Text
-          </AssistiveText>
-        </CustomBlock>
-      </Cell>
-      <Cell xs={4}>
-        <CustomBlock data-state="Focus">
-          <StorybookSubHeading>Auto Focus</StorybookSubHeading>
-          <Label htmlFor="id-5">Label</Label>
-          <TextField autoFocus aria-describedby="id-5-at" id="id-5" />
-          <AssistiveText id="id-5-at">Assistive Text</AssistiveText>
-        </CustomBlock>
-      </Cell>
-      <Cell xs={4}>
-        <CustomBlock data-state="Read-Only">
-          <StorybookSubHeading>Read Only</StorybookSubHeading>
-          <Label htmlFor="id-6">Label </Label>
-          <TextField readOnly aria-describedby="id-6-at" id="id-6" />
-          <AssistiveText id="id-6-at">Assistive Text</AssistiveText>
-        </CustomBlock>
-      </Cell>
-    </Grid>
-  </>
+export const StoryTextFieldSize = () => (
+  <StorybookPage columns={TEXT_FIELD_COLUMNS}>
+    <StorybookCase title="Small">
+      <Label htmlFor="small">Label</Label>
+      <TextField
+        id="small"
+        aria-describedby="small-at"
+        size="small"
+        placeholder="Placeholder"
+      />
+      <AssistiveText id="small-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Medium">
+      <Label htmlFor="medium">Label</Label>
+      <TextField
+        id="medium"
+        aria-describedby="medium-at"
+        size="medium"
+        placeholder="Placeholder"
+      />
+      <AssistiveText id="medium-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Large">
+      <Label htmlFor="large">Label</Label>
+      <TextField
+        id="large"
+        aria-describedby="large-at"
+        size="large"
+        placeholder="Placeholder"
+      />
+      <AssistiveText id="large-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
 );
-TextFieldBasics.parameters = {
-  percy: {
-    waitForSelector: 'input:focus',
-  },
+StoryTextFieldSize.storyName = 'Size';
+
+export const StoryTextFieldStates = () => (
+  <StorybookPage columns={TEXT_FIELD_COLUMNS}>
+    <StorybookCase title="Base">
+      <Label htmlFor="base">Label</Label>
+      <TextField
+        id="base"
+        aria-describedby="base-at"
+        placeholder="Placeholder"
+      />
+      <AssistiveText id="base-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Auto Focus">
+      <Label htmlFor="auto-focus">Label</Label>
+      <TextField
+        id="auto-focus"
+        aria-describedby="auto-focus-at"
+        placeholder="Placeholder"
+        autoFocus
+      />
+      <AssistiveText id="auto-focus-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Valid">
+      <Label htmlFor="valid">Label (Optional)</Label>
+      <TextField
+        id="valid"
+        aria-describedby="valid-at"
+        placeholder="Placeholder"
+        state="valid"
+        endEnhancer={
+          <IconFilledCheckCircle
+            overrides={{size: 'iconSize020', stylePreset: 'inkPositive'}}
+          />
+        }
+      />
+      <AssistiveText id="valid-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Invalid">
+      <Label htmlFor="invalid">Label</Label>
+      <TextField
+        id="invalid"
+        aria-describedby="invalid-at"
+        placeholder="Placeholder"
+        state="invalid"
+        endEnhancer={
+          <IconFilledError
+            overrides={{size: 'iconSize020', stylePreset: 'inkNegative'}}
+          />
+        }
+      />
+      <AssistiveText overrides={{stylePreset: 'inkNegative'}} id="invalid-at">
+        Assistive Text
+      </AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Disabled">
+      <Label htmlFor="disabled">Label</Label>
+      <TextField
+        id="disabled"
+        aria-describedby="disabled-at"
+        placeholder="Placeholder"
+        state="disabled"
+      />
+      <AssistiveText id="disabled-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Read only">
+      <Label htmlFor="read-only">Label</Label>
+      <TextField
+        id="read-only"
+        aria-describedby="read-only-at"
+        placeholder="Placeholder"
+        readOnly
+      />
+      <AssistiveText id="read-only-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryTextFieldStates.storyName = 'States';
+
+export const StoryTextFieldAddons = () => {
+  const [searchTextIcon, setSearchTextIcon] = React.useState('');
+  const [searchTextButton, setSearchTextButton] = React.useState('');
+  const [selectedValue, setSelectedValue] = React.useState('UK');
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedValue(e.target.value);
+  };
+  const items = ['BG', 'UK', 'USA', 'DE', 'NL'];
+
+  const Dropdown = () => (
+    <Select
+      size="small"
+      onChange={handleChange}
+      startEnhancer={
+        <IconFilledArrowDropDown overrides={{size: 'iconSize020'}} />
+      }
+      overrides={{
+        button: {
+          marginBlockStart: 'space020',
+          marginInlineStart: 'space000',
+          indicatorIcon: {size: 'iconSize000'},
+        },
+      }}
+    >
+      {items.map(item => (
+        <SelectOption key={item} value={item} selected={item === selectedValue}>
+          {item}
+        </SelectOption>
+      ))}
+    </Select>
+  );
+
+  return (
+    <StorybookPage columns={TEXT_FIELD_COLUMNS}>
+      <StorybookCase title="Dropdown">
+        <Label htmlFor="dropdown">Label</Label>
+        <TextField
+          id="dropdown"
+          aria-describedby="dropdown-at"
+          placeholder="Placeholder"
+          startEnhancer={<Dropdown />}
+        />
+        <AssistiveText id="dropdown-at">Assistive Text</AssistiveText>
+      </StorybookCase>
+      <StorybookCase title="Icon button">
+        <Label htmlFor="icon-button">Label</Label>
+        <TextField
+          id="icon-button"
+          aria-describedby="icon-button-at"
+          placeholder="Placeholder"
+          endEnhancer={
+            <IconButton
+              aria-label="plus-icon"
+              overrides={{stylePreset: 'iconButtonSolidInverse'}}
+            >
+              <IconFilledAddCircle overrides={{size: 'iconSize010'}} />
+            </IconButton>
+          }
+        />
+        <AssistiveText id="icon-button-at">Assistive Text</AssistiveText>
+      </StorybookCase>
+      <StorybookCase title="'Clear' icon button">
+        <Label htmlFor="clear-icon-button">
+          Please type inside the text field
+        </Label>
+        <TextField
+          id="clear-icon-button"
+          aria-describedby="clear-icon-button-at"
+          value={searchTextIcon}
+          onChange={event => setSearchTextIcon(event.target.value)}
+          placeholder="Placeholder"
+          endEnhancer={
+            <IconButton
+              aria-label="clear-icon"
+              onClick={() => setSearchTextIcon('')}
+              overrides={{stylePreset: 'iconButtonSolidInverse'}}
+            >
+              <IconFilledClose overrides={{size: 'iconSize010'}} />
+            </IconButton>
+          }
+        />
+        <AssistiveText id="clear-icon-button-at">Assistive Text</AssistiveText>
+      </StorybookCase>
+      <StorybookCase title="'Clear' button">
+        <Label htmlFor="clear-button">Please type inside the text field</Label>
+        <TextField
+          id="clear-button"
+          aria-describedby="clear-button-at"
+          value={searchTextButton}
+          onChange={event => setSearchTextButton(event.target.value)}
+          placeholder="Placeholder"
+          endEnhancer={
+            <Button
+              size="small"
+              onClick={() => setSearchTextButton('')}
+              overrides={{stylePreset: 'buttonOutlinedSecondary'}}
+            >
+              Clear
+            </Button>
+          }
+        />
+        <AssistiveText id="clear-button-at">Assistive Text</AssistiveText>
+      </StorybookCase>
+    </StorybookPage>
+  );
 };
+StoryTextFieldAddons.storyName = 'Addons';
 
-export const TextFieldWithOverrides = () => (
-  <>
-    <StorybookHeading>Text With Overrides</StorybookHeading>
-    <Container>
+export const StoryTextFieldStylingOverrides = () => (
+  <StorybookPage columns={TEXT_FIELD_COLUMNS}>
+    <StorybookCase>
       <Label
-        htmlFor="id-7"
-        overrides={{
-          stylePreset: 'labelOverrides',
-        }}
+        htmlFor="styling-overrides"
+        overrides={{stylePreset: 'labelOverrides'}}
       >
         Label
       </Label>
       <TextField
-        aria-describedby="id-7-at"
-        id="id-7"
+        id="styling-overrides"
+        aria-describedby="styling-overrides-at"
         placeholder="Placeholder"
         overrides={{
           stylePreset: 'inputContainerCustom',
           typographyPreset: 'utilityBody030',
-          spaceInset: 'spaceInset040',
-          minHeight: 'sizing090',
-          spaceStack: 'space000',
         }}
       />
-      <Block spaceStack="space020" />
       <AssistiveText
-        id="id-7-at"
-        overrides={{
-          stylePreset: 'assistiveTextOverrides',
-        }}
+        id="styling-overrides-at"
+        overrides={{stylePreset: 'assistiveTextOverrides'}}
       >
         Assistive Text
       </AssistiveText>
-    </Container>
-  </>
+    </StorybookCase>
+  </StorybookPage>
 );
+StoryTextFieldStylingOverrides.storyName = 'Styling overrides';
 
-export const TextFieldLogicalProps = () => (
-  <>
-    <StorybookHeading>Text With Logical Props overrides</StorybookHeading>
-    <StorybookSubHeading>
-      Inspect the box for better understanding
-    </StorybookSubHeading>
-    <Container>
-      <Label htmlFor="id-14" overrides={{stylePreset: 'labelOverrides'}}>
-        Label
-      </Label>
+export const StoryTextFieldOverrides = () => (
+  <StorybookPage columns={TEXT_FIELD_COLUMNS}>
+    <StorybookCase title="Logical props">
+      <Label htmlFor="logical-props">Label</Label>
       <TextField
-        aria-describedby="id-14-at"
-        id="id-14"
-        placeholder="marginInline & marginBlock"
+        id="logical-props"
+        aria-describedby="logical-props-at"
+        placeholder="Placeholder"
         overrides={{
-          marginBlock: 'space060',
-          marginInline: 'space080',
+          paddingBlock: 'space050',
+          paddingInline: 'space050',
+          marginBlock: 'space050',
         }}
       />
-      <Block spaceStack="space080" />
-      <Label htmlFor="id-15" overrides={{stylePreset: 'labelOverrides'}}>
-        Label
-      </Label>
+      <AssistiveText id="logical-props-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Custom outline">
+      <Label htmlFor="custom-outline">Label</Label>
       <TextField
-        aria-describedby="id-15-at"
-        id="id-15"
-        placeholder="paddingInline & paddingBlock"
-        overrides={{
-          paddingBlock: 'space060',
-          paddingInline: 'space080',
-        }}
+        id="custom-outline"
+        aria-describedby="custom-outline-at"
+        placeholder="Placeholder"
+        overrides={{stylePreset: 'customOutlineStyle'}}
       />
-      <Block spaceStack="space080" />
-      <Label htmlFor="id-16" overrides={{stylePreset: 'labelOverrides'}}>
-        Label
-      </Label>
+      <AssistiveText id="custom-outline-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Icon placement">
+      <Label htmlFor="icon-placement">Label</Label>
       <TextField
-        aria-describedby="id-16-at"
-        id="id-16"
-        placeholder="marginInline & marginBlock & paddingInline & paddingBlock"
-        overrides={{
-          marginBlock: 'space060',
-          marginInline: 'space080',
-          paddingBlock: 'space060',
-          paddingInline: 'space080',
-        }}
-      />
-    </Container>
-  </>
-);
-
-export const TextFieldIcons = () => (
-  <>
-    <Container>
-      <StorybookSubHeading>
-        With Icons and Icon placement overrides
-      </StorybookSubHeading>
-      <Label htmlFor="id-8"> Icons</Label>
-      <TextField
-        aria-describedby="id-8-at"
-        id="id-8"
+        id="icon-placement"
+        aria-describedby="icon-placement-at"
+        placeholder="Placeholder"
         startEnhancer={
-          <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+          <IconFilledAddCircle overrides={{size: 'iconSize020'}} />
         }
-        endEnhancer={
-          <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-        }
-        overrides={{
-          startEnhancer: {
-            spaceInline: 'space050',
-          },
-          endEnhancer: {
-            spaceInline: 'space050',
-          },
-        }}
+        endEnhancer={<IconFilledAddCircle overrides={{size: 'iconSize020'}} />}
       />
-
-      <AssistiveText id="id-8-at">Assistive Text</AssistiveText>
-    </Container>
-    <Container>
-      <StorybookSubHeading>
-        With Two Icons and IconSize overrides
-      </StorybookSubHeading>
-      <Label htmlFor="id-9">Icons</Label>
+      <AssistiveText id="icon-placement-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Two icons and IconSize">
+      <Label htmlFor="two-icons-and-iconsize">Label</Label>
       <TextField
-        aria-describedby="id-9-at"
-        id="id-9"
+        id="two-icons-and-iconsize"
+        aria-describedby="two-icons-and-iconsize-at"
+        placeholder="Placeholder"
         startEnhancer={
-          <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+          <IconFilledAddCircle overrides={{size: 'iconSize020'}} />
         }
         endEnhancer={
           <>
-            <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-            <Block spaceInline="space020" />
-            <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
+            <IconFilledAddCircle overrides={{size: 'iconSize020'}} />
+            <Block marginInlineEnd="space020" />
+            <IconFilledAddCircle overrides={{size: 'iconSize020'}} />
           </>
         }
       />
-      <AssistiveText id="id-9-at">Assistive Text</AssistiveText>
-    </Container>
-  </>
+      <AssistiveText id="two-icons-and-iconsize-at">
+        Assistive Text
+      </AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
 );
-export const TextFieldAddOn = () => {
-  const [showPassword, setShowPassword] = React.useState(false);
-  const [searchText, setSearchText] = React.useState('');
-
-  const Select = styled.select`
-    border: none;
-    height: 100%;
-    background: none;
-    appearance: none;
-    width: 40px;
-    ${getColorCssFromTheme('color', 'inkBase')};
-  `;
-
-  const DropDown = () => (
-    <Select>
-      <option value="bg">BG</option>
-      <option value="uk">UK</option>
-      <option value="usa">USA</option>
-      <option value="de">DE</option>
-      <option value="de">NL</option>
-    </Select>
-  );
-
-  const MyButton = styled.button`
-    background: none;
-    border: none;
-    padding: 0;
-  `;
-
-  const blockSpaceStack = '42px';
-
-  return (
-    <>
-      <StorybookHeading>Text Field With Addons</StorybookHeading>
-      <Container>
-        <StorybookSubHeading>Text Field with Drop Down</StorybookSubHeading>
-        <Block spaceStack={blockSpaceStack}>
-          <Label htmlFor="id-10">
-            Label
-            <TextField
-              aria-describedby="id-10-at"
-              id="id-10"
-              name="dropdown"
-              startEnhancer={<DropDown />}
-              overrides={{
-                startEnhancer: {
-                  spaceInline: 'space040',
-                },
-                endEnhancer: {
-                  spaceInline: 'space040',
-                },
-              }}
-            />
-          </Label>
-          <AssistiveText
-            id="id-10-at"
-            overrides={{
-              typographyPreset: 'utilityLabel030',
-            }}
-          >
-            Assistive Text Goes Here
-          </AssistiveText>
-        </Block>
-        <StorybookSubHeading>Text Field with Icon Button</StorybookSubHeading>
-        <Block spaceStack={blockSpaceStack}>
-          <Label htmlFor="id-11">Label</Label>
-          <TextField
-            aria-describedby="id-11-at"
-            id="id-11"
-            type={!showPassword ? 'password' : 'text'}
-            endEnhancer={
-              <IconButton
-                aria-label="toggle password"
-                onClick={() => setShowPassword(!showPassword)}
-                size="small"
-                overrides={{stylePreset: 'iconButtonSolidInverse'}}
-              >
-                {showPassword ? (
-                  <IconFilledAccountBalance overrides={{size: 'iconSize020'}} />
-                ) : (
-                  <IconFilledAccountTree overrides={{size: 'iconSize020'}} />
-                )}
-              </IconButton>
-            }
-          />
-        </Block>
-        <Block spaceStack={blockSpaceStack}>
-          <StorybookSubHeading>Text Field with two icons</StorybookSubHeading>
-          <StorybookParah>
-            Please type inside the text field to see second icons
-          </StorybookParah>
-          <Label htmlFor="id-12">Label</Label>
-          <TextField
-            aria-describedby="id-12-at"
-            id="id-12"
-            name="icon"
-            startEnhancer={
-              <IconFilledSearch overrides={{size: 'iconSize020'}} />
-            }
-            value={searchText}
-            onChange={event => setSearchText(event.target.value)}
-            endEnhancer={
-              searchText && (
-                <MyButton onClick={() => setSearchText('')}>
-                  <IconFilledClose overrides={{size: 'iconSize010'}} />
-                </MyButton>
-              )
-            }
-          />
-          <AssistiveText id="id-12-at">Assistive Text Goes Here</AssistiveText>
-        </Block>
-        <Block spaceStack={blockSpaceStack}>
-          <Label htmlFor="id-13">Label</Label>
-
-          <TextField
-            aria-describedby="id-13-at"
-            id="id-13"
-            startEnhancer={
-              <IconFilledSearch overrides={{size: 'iconSize020'}} />
-            }
-            value={searchText}
-            onChange={event => setSearchText(event.target.value)}
-            endEnhancer={
-              searchText && (
-                <Button size="small" onClick={() => setSearchText('')}>
-                  Clear
-                </Button>
-              )
-            }
-          />
-          <AssistiveText id="id-13-at">Assistive Text Goes Here</AssistiveText>
-        </Block>
-      </Container>
-    </>
-  );
-};
-
-export const TextFieldOutlineOverrideExamples = () => (
-  <>
-    <StorybookHeading>Outline override</StorybookHeading>
-    <Container>
-      <Stack
-        flow="horizontal-center"
-        spaceInline="space070"
-        spaceStack="space050"
-        wrap="wrap"
-      >
-        <Block>
-          <Block>
-            <Grid>
-              <Cell xs={12}>
-                <StorybookSubHeading>Custom Color</StorybookSubHeading>
-                <Label htmlFor="id-outline-1" size="small">
-                  A Label
-                </Label>
-                <TextField
-                  aria-describedby="id-outline-1-at"
-                  id="id-outline-1"
-                  size="small"
-                  overrides={{
-                    stylePreset: 'customOutlineColor',
-                  }}
-                />
-                <AssistiveText id="id-outline-1-at" size="small">
-                  Assistive Text Goes Here
-                </AssistiveText>
-              </Cell>
-            </Grid>
-          </Block>
-          <Block>
-            <Grid>
-              <Cell xs={12}>
-                <StorybookSubHeading>Custom Style</StorybookSubHeading>
-                <Label htmlFor="id-outline-2" size="small">
-                  A Label
-                </Label>
-                <TextField
-                  aria-describedby="id-2-at"
-                  id="id-outline-2"
-                  size="small"
-                  overrides={{
-                    stylePreset: 'customOutlineStyle',
-                  }}
-                />
-                <AssistiveText id="id-outline-2-at" size="small">
-                  Assistive Text Goes Here
-                </AssistiveText>
-              </Cell>
-            </Grid>
-          </Block>
-          <Block>
-            <Grid>
-              <Cell xs={12}>
-                <StorybookSubHeading>Custom Width</StorybookSubHeading>
-                <Label htmlFor="id-outline-3" size="small">
-                  A Label
-                </Label>
-                <TextField
-                  aria-describedby="id-outline-3-at"
-                  id="id-outline-3"
-                  size="small"
-                  overrides={{
-                    stylePreset: 'customOutlineWidth',
-                  }}
-                />
-                <AssistiveText id="id-outline-3-at" size="small">
-                  Assistive Text Goes Here
-                </AssistiveText>
-              </Cell>
-            </Grid>
-          </Block>
-          <Block>
-            <Grid>
-              <Cell xs={12}>
-                <StorybookSubHeading>Custom Offset</StorybookSubHeading>
-                <Label htmlFor="id-outline-4" size="small">
-                  A Label
-                </Label>
-                <TextField
-                  aria-describedby="id-outline-4-at"
-                  id="id-outline-4"
-                  size="small"
-                  overrides={{
-                    stylePreset: 'customOutlineOffset',
-                  }}
-                />
-                <AssistiveText id="id-outline-4-at" size="small">
-                  Assistive Text Goes Here
-                </AssistiveText>
-              </Cell>
-            </Grid>
-          </Block>
-        </Block>
-      </Stack>
-    </Container>
-  </>
-);
+StoryTextFieldOverrides.storyName = 'Overrides';
 
 export default {
-  title: 'Components/text-field',
-  component: () => 'None',
+  title: 'Components/Text field',
+  component: TextField,
   disabledRules: ['color-contrast'],
+  parameters: {
+    nkDocs: {
+      title: 'Text field',
+      url: 'https://www.newskit.co.uk/components/text-field',
+      description:
+        'Text fields allow users to enter and edit text content into a UI. They typically appear in forms.',
+    },
+  },
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           textFieldCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
