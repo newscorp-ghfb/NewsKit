@@ -58,7 +58,7 @@ describe('SvgPreviewer', () => {
 
     const button = (getByTestId('single-svg-button') as unknown) as Element;
 
-    act(() => {
+    await act(() => {
       fireEvent.click(button);
     });
 

@@ -1,5 +1,6 @@
 import {google} from 'googleapis';
 import {getSheets} from '../get-sheets';
+import {CMSError} from '../utils';
 
 const homePageContent = [
   ['hero_card_link_text', 'Read on Medium'],
@@ -7,14 +8,18 @@ const homePageContent = [
 ];
 
 // The google.sheets() constructor returns a sheets function instance
-const mockGoogleSheets = (values: string[][]) => () => ({
+const mockGoogleSheets = (values?: string[][]) => () => ({
   spreadsheets: {
     values: {
-      get: jest.fn(() => ({
-        data: {
-          values: Promise.resolve(values),
-        },
-      })),
+      get: jest.fn(() =>
+        values
+          ? Promise.resolve({
+              data: {
+                values,
+              },
+            })
+          : Promise.reject(new Error('Google Sheets error')),
+      ),
     },
   },
 });
@@ -55,22 +60,18 @@ describe('getSheets', () => {
     process.env.GOOGLE_SHEETS_CLIENT_EMAIL = undefined;
     process.env.GOOGLE_SHEETS_PRIVATE_KEY = undefined;
     process.env.SPREADSHEET_ID = undefined;
-    const result = await getSheets('Homepage');
-    expect(googleSheetsSpy).not.toBeCalled();
-    expect(consoleErrorSpy).toBeCalled();
-    expect(result).toEqual([]);
+    await expect(async () => {
+      await getSheets('Homepage');
+    }).rejects.toThrowError(new CMSError('Missing environment variables'));
   });
 
   it('should return empty array on google failure', async () => {
     process.env.GOOGLE_SHEETS_CLIENT_EMAIL = 'test';
     process.env.GOOGLE_SHEETS_PRIVATE_KEY = 'test';
     process.env.SPREADSHEET_ID = 'test';
-    googleSheetsSpy.mockImplementation(() => () =>
-      Promise.reject(new Error('Google error')),
-    );
-    const result = await getSheets('Homepage');
-    expect(googleSheetsSpy).toBeCalled();
-    expect(consoleErrorSpy).toBeCalled();
-    expect(result).toEqual([]);
+    googleSheetsSpy.mockImplementation(mockGoogleSheets());
+    await expect(async () => {
+      await getSheets('Homepage');
+    }).rejects.toThrowError(new CMSError('Google Sheets error'));
   });
 });
