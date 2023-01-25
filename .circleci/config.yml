@@ -651,6 +651,7 @@ jobs:
                 circleci-agent step halt
             } || {
                 echo "Baseline updates required; continuing job."
+                export PERCY_PARTIAL_BUILD=1
             }
       - run_test_visual_comps_percy
 
@@ -672,6 +673,7 @@ jobs:
                 circleci-agent step halt
             } || {
                 echo "Baseline updates required; continuing job."
+                export PERCY_PARTIAL_BUILD=1
             }
       - run_test_visual_docs_percy
 
