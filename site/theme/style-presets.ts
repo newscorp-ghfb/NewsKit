@@ -1210,4 +1210,9 @@ export const stylePresets = {
       borderRadius: '{{borders.borderRadiusRounded010}}',
     },
   },
+  layerPlaygroundText: {
+    base: {
+      color: '{{colors.neutral090}}',
+    },
+  },
 };
