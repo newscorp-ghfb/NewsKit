@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 const https = require('https');
+const fs = require('fs');
 
 const PERCY_URL = 'https://percy.io';
+
+const CONFIG_FILE = 'percy-storybook.config.json';
 
 const log = value => process.stdout.write(`${value}\n`);
 
@@ -66,16 +69,13 @@ async function checkIfBaselineUpdatesRequired(headRefName, project) {
     project,
   );
 
-  const updated = snapshots.data
+  const include = snapshots.data
     .filter(
       ({attributes}) => attributes['review-state-reason'] === 'user_approved',
     )
-    .map(({id, attributes: {name}}) => ({id, name}));
+    .map(({attributes: {name}}) => `^${name}$`);
 
-  log(`${updated.length} baselines need updating:`);
-  updated.forEach(({id, name}) => {
-    log(`-- ${id}: ${name}`);
-  });
+  fs.writeFileSync(`./${CONFIG_FILE}`, JSON.stringify({include}));
 }
 
 // this script fails if updates are required
