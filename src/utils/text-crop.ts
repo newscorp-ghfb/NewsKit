@@ -80,12 +80,12 @@ export const textCrop = ({
   fontMetrics,
 }: TextCropProps): TextCropResults => {
   if (typeof lineHeight !== 'number') {
-    throw Error('invalid lineHeight');
+    throw Error(`invalid lineHeight: ${lineHeight}`);
   }
 
   const match = fontSize.match(/(\d+(?:\.\d+)?)(px|rem)/);
   if (!match) {
-    throw Error('invalid fontSize');
+    throw Error(`invalid fontSize: ${fontSize}`);
   }
   const fontSizeAsNumber = parseFloat(match[1]);
   const fontSizeUnits = match[2] as FontUnit;
