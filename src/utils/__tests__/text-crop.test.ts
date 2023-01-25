@@ -131,4 +131,64 @@ describe('textCrop', () => {
       );
     });
   });
+
+  it.only('should', () => {
+    const adjustTrim = (
+      inputLineHeight: number,
+      inputFontSize: number,
+      trim: number,
+    ) => {
+      const absoluteDescent = Math.abs(fontMetrics.descent);
+      const contentArea =
+        fontMetrics.ascent + fontMetrics.lineGap + absoluteDescent;
+      const lineHeightScale = contentArea / fontMetrics.unitsPerEm;
+      const lineHeightNormal = lineHeightScale * inputFontSize;
+      
+      const lineHeight = inputFontSize * inputLineHeight;
+      const specifiedLineHeightOffset = (lineHeightNormal - lineHeight) / 2;
+
+      const adjustedTrim = trim - specifiedLineHeightOffset / inputFontSize;
+
+      return `${round(adjustedTrim * -1)}em`;
+    };
+
+    const calculateCapHeightTrim = (
+      inputLineHeight: number,
+      inputFontSize: number,
+    ) => {
+      const ascentScale = fontMetrics.ascent / fontMetrics.unitsPerEm;
+      const capHeightScale = fontMetrics.capHeight / fontMetrics.unitsPerEm;
+      const lineGapScale = fontMetrics.lineGap / fontMetrics.unitsPerEm;
+      const trim = ascentScale - capHeightScale + lineGapScale / 2;
+      return adjustTrim(inputLineHeight, inputFontSize, trim);
+    };
+
+    const calculateBaselineTrim = (
+      inputLineHeight: number,
+      inputFontSize: number,
+    ) => {
+      const absoluteDescent = Math.abs(fontMetrics.descent);
+      const descentScale = absoluteDescent / fontMetrics.unitsPerEm;
+      const lineGapScale = fontMetrics.lineGap / fontMetrics.unitsPerEm;
+      const trim = descentScale + lineGapScale / 2;
+      return adjustTrim(inputLineHeight, inputFontSize, trim);
+    };
+
+    const fontSize = 12;
+    const lineHeight = 1.6;
+
+    const cropData: TextCropProps = {
+      fontSize: `${fontSize}px`,
+      lineHeight,
+      fontMetrics,
+    };
+
+    expect(textCrop(cropData)['::after'].marginTop).toEqual(
+      calculateBaselineTrim(lineHeight, fontSize),
+    );
+
+    expect(textCrop(cropData)['::before'].marginBottom).toEqual(
+      calculateCapHeightTrim(lineHeight, fontSize),
+    );
+  });
 });
