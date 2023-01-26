@@ -27,7 +27,7 @@ function apiCall(url, options) {
 function percyApiCall(path, project) {
   const token = process.env[`PERCY_${project.toUpperCase()}_TOKEN`];
   if (!token) {
-    log(`no Percy token found for project ${project}`);
+    log(`No Percy token found for project ${project}`);
     throw Error();
   }
   return apiCall(`${PERCY_URL}${path}`, {
@@ -36,7 +36,7 @@ function percyApiCall(path, project) {
 }
 
 async function getPercyBuildForBranch(branchName, project) {
-  log(`looking for Percy ${project} build for branch ${branchName}`);
+  log(`Looking for Percy ${project} build for branch ${branchName}`);
   const builds = await percyApiCall('/api/v1/builds', project);
   for (let i = 0; i <= builds.data.length; i++) {
     const build = builds.data[i];
@@ -44,7 +44,7 @@ async function getPercyBuildForBranch(branchName, project) {
       return build;
     }
   }
-  log(`no Percy build found for branch ${branchName}`);
+  log(`No Percy build found for branch ${branchName}`);
   throw Error();
 }
 
@@ -58,9 +58,9 @@ async function checkIfBaselineUpdatesRequired(headRefName, project) {
   const reviewState = build.attributes['review-state'];
   const nbDiffs = build.attributes['total-comparisons-diff'];
 
-  log(`build is in state ${reviewState} with ${nbDiffs} diffs`);
+  log(`Build is in state ${reviewState} with ${nbDiffs} diffs`);
   if (reviewState !== 'approved' || !nbDiffs) {
-    log(`no diffs requiring updates`);
+    log(`No diffs requiring updates`);
     throw Error();
   }
 
