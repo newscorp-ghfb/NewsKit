@@ -6,11 +6,6 @@ import {
 } from '../../test/storybook-comps';
 import {styled} from '../../utils';
 
-export default {
-  title: 'Components/date-time',
-  component: () => 'None',
-};
-
 const StyledDiv = styled.div`
   border: 1px red dotted;
 `;
@@ -90,3 +85,16 @@ export const StoryDateTime = () => (
   </>
 );
 StoryDateTime.storyName = 'date-time';
+
+export default {
+  title: 'Components/Date Time',
+  component: DateTime,
+  parameters: {
+    nkDocs: {
+      title: 'Date Time',
+      url: 'https://newskit.co.uk/components/date-time',
+      description:
+        'The date time component is a styled, HTML5 time element for displaying date and time.',
+    },
+  },
+};
