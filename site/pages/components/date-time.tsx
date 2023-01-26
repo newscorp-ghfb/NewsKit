@@ -123,12 +123,6 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
                   typographyPreset: 'utilityMeta010',
                 },
               },
-              {
-                label: 'utilityMeta020',
-                value: {
-                  typographyPreset: 'utilityMeta020',
-                },
-              },
             ],
           },
           {
@@ -183,14 +177,6 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
                   },
                 },
               },
-              {
-                label: 'utilityMeta020',
-                value: {
-                  prefix: {
-                    typographyPreset: 'utilityMeta020',
-                  },
-                },
-              },
             ],
           },
           {
@@ -242,14 +228,6 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
                 value: {
                   suffix: {
                     typographyPreset: 'utilityMeta010',
-                  },
-                },
-              },
-              {
-                label: 'utilityMeta020',
-                value: {
-                  suffix: {
-                    typographyPreset: 'utilityMeta020',
                   },
                 },
               },
