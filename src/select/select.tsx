@@ -67,14 +67,10 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [onFocus],
     );
 
-    const childrenArray = React.Children.toArray(
-      children,
-    ) as React.ReactElement<SelectOptionProps>[];
-
-    const programmaticallySelectedItem = childrenArray.find(
+    const programmaticallySelectedItem = children.find(
       option => option.props.selected,
     );
-    const defaultSelectedItem = childrenArray.find(
+    const defaultSelectedItem = children.find(
       option => option.props.defaultSelected,
     );
 
@@ -154,7 +150,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       openMenu,
       closeMenu,
     } = useSelect({
-      items: childrenArray,
+      items: children,
       defaultSelectedItem,
       onSelectedItemChange: onInputChange,
       itemToString,
@@ -181,7 +177,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     });
 
     const {children: optionsAsChildren, scrollToIndex} = useVirtualizedList({
-      items: childrenArray,
+      items: React.Children.toArray(
+        children,
+      ) as React.ReactElement<SelectOptionProps>[],
       listRef: panelRef,
       getItemProps,
       limit: virtualized,
