@@ -45,7 +45,7 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/date-time',
       storybookId: 'components-date-time--story-date-time',
       figmaUrl:
-        'https://www.figma.com/file/l6heHabCQ3q1pl6nMLwQFh/02---NK-Web---Date-Time?node-id=2203%3A29185&t=gr4r6ptbD7L8hSnq-0',
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2057%3A5&t=iP77Jd8O6cCJYM4p-1',
     }}
     interactiveDemo={{
       introduction:
