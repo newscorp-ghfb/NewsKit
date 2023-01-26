@@ -1,5 +1,5 @@
 import React from 'react';
-import {styled, DateTime, DateTimeProps} from 'newskit';
+import {DateTime} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
@@ -12,16 +12,8 @@ import {
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
 
-const PlaygroundContainer = styled.div`
-  display: flex;
-  width: 100%;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
-`;
-
 const DateTimeComponent = (layoutProps: LayoutProps) => (
-  <ComponentPageTemplate
+  <ComponentPageTemplate<typeof DateTime>
     headTags={{
       title: 'Date Time',
       description:
@@ -52,14 +44,7 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
         'This demo lets you preview the date time component, its variations, and configuration options.',
       playground: {
         componentName: 'DateTime',
-        component: props => {
-          const {date, ...restProps} = props as DateTimeProps;
-          return (
-            <PlaygroundContainer>
-              <DateTime {...restProps} date={date} />
-            </PlaygroundContainer>
-          );
-        },
+        component: props => <DateTime {...props} />,
         knobs: [
           {
             name: 'Date',
