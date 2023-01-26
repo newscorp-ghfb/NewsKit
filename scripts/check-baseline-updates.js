@@ -48,7 +48,7 @@ async function getPercyBuildForBranch(branchName, project) {
   throw Error();
 }
 
-async function checkIfBaselineUpdatesRequired(headRefName, project) {
+async function run(headRefName, project) {
   const branchName = headRefName.trim();
   log(
     `Checking if baselines for ${project} need to be updated after ${branchName} was merged`,
@@ -61,7 +61,7 @@ async function checkIfBaselineUpdatesRequired(headRefName, project) {
   log(`Build is in state ${reviewState} with ${nbDiffs} diffs`);
   if (reviewState !== 'approved' || !nbDiffs) {
     log(`No diffs requiring updates`);
-    throw Error();
+    return false;
   }
 
   const snapshots = await percyApiCall(
@@ -76,11 +76,8 @@ async function checkIfBaselineUpdatesRequired(headRefName, project) {
     .map(({attributes: {name}}) => `^${name}$`);
 
   fs.writeFileSync(`./${CONFIG_FILE}`, JSON.stringify({include}));
+
+  return true;
 }
 
-// this script fails if updates are required
-const headRefName = process.argv[2];
-const project = process.argv[3];
-checkIfBaselineUpdatesRequired(headRefName, project)
-  .then(() => process.exit(1))
-  .catch(() => process.exit(0));
+module.exports = {run};

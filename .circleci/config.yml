@@ -643,16 +643,16 @@ jobs:
       - run:
           name: 'Check if updates required'
           command: |
-            {
-                export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName') &&
-                echo "Found branch name: ${PR_BRANCH_NAME}" &&
-                node scripts/check-baseline-updates.js $PR_BRANCH_NAME "comps" &&
-                echo "No baseline updates required; finishing job." &&
-                circleci-agent step halt
-            } || {
-                echo "Baseline updates required; continuing job."
-                export PERCY_PARTIAL_BUILD=1
-            }
+            export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
+            echo "Found branch name: ${PR_BRANCH_NAME}"
+            export UPDATES_REQUIRED=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME "comps")
+            if [ $UPDATES_REQUIRED = "true" ]; then
+              echo "Baseline updates required; continuing job."
+              export PERCY_PARTIAL_BUILD=1
+            else
+              echo "No baseline updates required; finishing job." &&
+              circleci-agent step halt
+            fi
       - run_test_visual_comps_percy
 
   docsite_tests_conditional_run_to_update_baselines:
@@ -665,16 +665,16 @@ jobs:
       - run:
           name: 'Check if updates required'
           command: |
-            {
-                export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName') &&
-                echo "Found branch name: ${PR_BRANCH_NAME}" &&
-                node scripts/check-baseline-updates.js $PR_BRANCH_NAME "docsite" &&
-                echo "No baseline updates required; finishing job." &&
-                circleci-agent step halt
-            } || {
-                echo "Baseline updates required; continuing job."
-                export PERCY_PARTIAL_BUILD=1
-            }
+            export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
+            echo "Found branch name: ${PR_BRANCH_NAME}"
+            export UPDATES_REQUIRED=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME "docsite")
+            if [ $UPDATES_REQUIRED = "true" ]; then
+              echo "Baseline updates required; continuing job."
+              export PERCY_PARTIAL_BUILD=1
+            else
+              echo "No baseline updates required; finishing job." &&
+              circleci-agent step halt
+            fi
       - run_test_visual_docs_percy
 
   skip_percy_comps_check:
