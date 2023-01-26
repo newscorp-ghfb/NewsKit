@@ -39,7 +39,7 @@ const modalContent = (
   </Stack>
 );
 
-const ModalState = ({open, ...state}: {open: boolean}) => {
+const ModalState = ({open, ...state}: {open: boolean} & ModalProps) => {
   const [isActive, setIsActive] = React.useState(false);
   React.useEffect(() => {
     setIsActive(open);
@@ -48,11 +48,7 @@ const ModalState = ({open, ...state}: {open: boolean}) => {
   return (
     <>
       <P>Use props bellow to open and configure the modal.</P>
-      <Modal
-        {...(state as ModalProps)}
-        open={isActive}
-        onDismiss={() => setIsActive(false)}
-      >
+      <Modal {...state} open={isActive} onDismiss={() => setIsActive(false)}>
         {modalContent}
       </Modal>
     </>
