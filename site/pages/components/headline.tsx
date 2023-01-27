@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Headline,
-  HeadlineProps,
-  LinkInline,
-  styled,
-  TextBlock,
-  UnorderedList,
-} from 'newskit';
+import {Headline, LinkInline, styled, TextBlock, UnorderedList} from 'newskit';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {LayoutProps} from '../../components/layout';
@@ -28,7 +21,7 @@ const PlaygroundContainer = styled.div`
 `;
 
 const HeadlineComponent = (layoutProps: LayoutProps) => (
-  <ComponentPageTemplate
+  <ComponentPageTemplate<typeof Headline>
     headTags={{
       title: 'Headline',
       description:
@@ -57,11 +50,11 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the headline component, its variations, and configuration options.',
       playground: {
         componentName: 'Headline',
-        component: ((props: HeadlineProps) => (
+        component: props => (
           <PlaygroundContainer>
-            <Headline {...(props as HeadlineProps)} />
+            <Headline {...props} />
           </PlaygroundContainer>
-        )) as React.ComponentType,
+        ),
         knobs: [
           {
             name: 'Headline',

@@ -26,7 +26,7 @@ export interface Overrides {
   space?: MQ<string>;
 }
 export interface MultiChoiceKnobOptions {
-  value: string | Overrides | undefined;
+  value?: string | Overrides | boolean | React.ComponentType;
   label: string;
   isDefault?: boolean;
 }
