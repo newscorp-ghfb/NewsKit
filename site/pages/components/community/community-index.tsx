@@ -8,6 +8,7 @@ import {
   Divider,
   GridLayoutItem,
 } from 'newskit';
+import {Link} from '../../../components/link';
 
 import {
   getSheets,
@@ -120,7 +121,7 @@ const CommunityIndex = ({
       }}
     >
       <ComponentPageCell>
-        <ContentPrimary id="introduction" showSeparator>
+        <ContentPrimary id="community-components" showSeparator>
           {listings.map(listing => (
             <Block marginBlockEnd="space090">
               <TextBlock
@@ -240,6 +241,19 @@ const CommunityIndex = ({
               </Block>
             </Block>
           ))}
+        </ContentPrimary>
+        <ContentPrimary
+          id="how-to-contribute"
+          toc="How to contirbute"
+          headline="Contribute"
+          description={
+            <>
+              Read our <Link href="how-to-contribute">guidance</Link> on how to
+              submit a contribution.
+            </>
+          }
+        >
+          <></>
         </ContentPrimary>
       </ComponentPageCell>
     </AboutPageTemplate>
