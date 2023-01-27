@@ -1404,7 +1404,7 @@ workflows:
           context: ncu-newskit-site-pr
           requires:
             - build_icons
-      - build_docs:
+      - build_docs_pr_with_no_base_url:
           name: build_docs_dev
           context: ncu-newskit-site-dev
           requires:
