@@ -5,6 +5,7 @@ import {MetaStatus} from '../../../components/meta/types';
 import {ComponentPageTemplate} from '..';
 import {ComponentPageTemplateProps} from '../types';
 import {LayoutProps} from '../../../components/layout';
+import {GenericComponent} from '../../../components/playground/types';
 
 jest.mock('../../../components/layout', () => ({children, ...props}: any) => (
   <div data-comp="layout" data-props={JSON.stringify(props)}>
@@ -36,7 +37,7 @@ jest.mock('../../template-sections/states-section');
 jest.mock('../../template-sections/usage-section');
 jest.mock('../../template-sections/code-examples-section');
 
-const mandatoryProps: ComponentPageTemplateProps = {
+const mandatoryProps: ComponentPageTemplateProps<GenericComponent> = {
   headTags: {
     title: 'title tag text',
     description: 'description for SEO',

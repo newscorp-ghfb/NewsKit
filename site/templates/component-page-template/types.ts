@@ -19,12 +19,13 @@ import {
   CommonSectionProps,
 } from '../template-sections';
 import {MetaProps} from '../../components/meta';
+import {GenericComponent} from '../../components/playground/types';
 
-export interface ComponentPageTemplateProps
+export interface ComponentPageTemplateProps<T extends GenericComponent>
   extends Omit<TemplateProps, 'featureCard' | 'children' | 'meta'> {
   layoutProps: LayoutProps;
   componentDefaultsKey: string;
-  interactiveDemo?: InteractiveDemoSectionProps;
+  interactiveDemo?: InteractiveDemoSectionProps<T>;
   anatomy?: AnatomySectionProps;
   layoutExamples?: LayoutExamplesSectionProps;
   options?: OptionsSectionProps;

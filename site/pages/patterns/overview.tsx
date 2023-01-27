@@ -24,6 +24,10 @@ const patternsRouteList: Item[] =
 const patternsFormRouteList: Item[] =
   patternsRouteList.filter(route => route.title === 'Forms')[0].subNav || [];
 
+const patternsOnboardingRouteList: Item[] =
+  patternsRouteList.filter(route => route.title === 'Onboarding')[0].subNav ||
+  [];
+
 const getPatternsCardList = (routeList: Item[]) =>
   routeList
     .filter(route => route.page && route?.illustration)
@@ -38,6 +42,9 @@ const getPatternsCardList = (routeList: Item[]) =>
     })) as MediaItem[];
 
 const patternsIndexRouteListCards = getPatternsCardList(patternsFormRouteList);
+const patternsIndexOnboardingRouteListCards = getPatternsCardList(
+  patternsOnboardingRouteList,
+);
 
 const pageDescription = `Design patterns provide a framework for solving a particular user problem in a consistent, considered way.`;
 
@@ -65,6 +72,14 @@ const Overview = (layoutProps: LayoutProps) => (
 
         <Grid lgMargin="sizing000" xsRowGutter="sizing000">
           <ComponentPageCell>
+            <ContentSection sectionName="onboarding">
+              <ContentPrimary headline="Onboarding">
+                <MediaList
+                  cards={patternsIndexOnboardingRouteListCards}
+                  gridProps={{xsRowGutter: 'space050'}}
+                />
+              </ContentPrimary>
+            </ContentSection>
             <ContentSection sectionName="forms">
               <ContentPrimary headline="Forms">
                 <MediaList

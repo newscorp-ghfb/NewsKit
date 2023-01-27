@@ -1,43 +1,44 @@
+import React from 'react';
 import {MultiChoiceKnobOptions} from './knobs/multichoice-knob';
 
-export interface BooleanKnobConfig {
+type StringKeys<P> = Extract<keyof P, string>;
+
+interface GenericKnobConfig<T extends GenericComponent> {
   name: string;
-  propName: string;
+  propName: StringKeys<React.ComponentProps<T>>;
+}
+
+export interface BooleanKnobConfig<T extends GenericComponent>
+  extends GenericKnobConfig<T> {
   value: boolean;
 }
 
-export interface InputKnobConfig {
-  name: string;
-  propName: string;
-  value: string;
+export interface InputKnobConfig<T extends GenericComponent>
+  extends GenericKnobConfig<T> {
+  value: string | number;
 }
 
-export interface NumberKnobConfig {
-  name: string;
-  propName: string;
-  value: number;
-}
-
-export interface ArrayKnobConfig {
-  name: string;
-  propName: string;
+export interface ArrayKnobConfig<T extends GenericComponent>
+  extends GenericKnobConfig<T> {
   value: unknown[];
 }
 
-export interface MultiChoiceKnobConfig {
-  name: string;
-  propName: string;
+export interface MultiChoiceKnobConfig<T extends GenericComponent>
+  extends GenericKnobConfig<T> {
   options: MultiChoiceKnobOptions[];
 }
 
-export type KnobsConfig =
-  | BooleanKnobConfig
-  | InputKnobConfig
-  | ArrayKnobConfig
-  | MultiChoiceKnobConfig;
+export type KnobsConfig<T extends GenericComponent> =
+  | BooleanKnobConfig<T>
+  | InputKnobConfig<T>
+  | ArrayKnobConfig<T>
+  | MultiChoiceKnobConfig<T>;
 
-export interface PlaygroundProps {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type GenericComponent = React.ComponentType<any>;
+
+export interface PlaygroundProps<T extends GenericComponent> {
   componentName: string | string[];
-  component: React.ComponentType | React.ComponentType[];
-  knobs: KnobsConfig[];
+  component: T | T[];
+  knobs: KnobsConfig<T>[];
 }
