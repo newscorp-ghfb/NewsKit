@@ -885,7 +885,7 @@ jobs:
           command: |
             export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/')
             aws s3 cp public $s3Path_docs --recursive
-            export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/' 'storybook')
+            export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/' 'storybook/')
             aws s3 cp dist-storybook $s3Path_storybook --recursive
       - slack/notify:
           <<: *slack_notify
@@ -909,8 +909,8 @@ jobs:
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
             echo $(date) > timestamp.html
-            aws s3 cp timestamp.html $s3Path_docs
             aws s3 cp public $s3Path_docs --recursive
+            aws s3 cp timestamp.html $s3Path_docs
             aws s3 cp dist-storybook $s3Path_storybook --recursive
             aws s3 cp timestamp.html $s3Path_storybook
       #- slack/notify:
