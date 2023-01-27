@@ -358,7 +358,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction: (
-        <>The banner meets the latest WAI-ARIA A banner specifications.</>
+        <>The banner meets the latest WAI-ARIA banner specifications.</>
       ),
       focusOrder: {
         title: 'Focus order',
