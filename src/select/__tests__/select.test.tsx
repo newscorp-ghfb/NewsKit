@@ -759,9 +759,8 @@ describe('Select', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('check if status message is rendered on select item', async () => {
+  test('check if status message is rendered when select option is selected', async () => {
     const props: SelectProps = {
-      labelId: 'label-1',
       children: [
         <SelectOption key="1" value="1">
           option 1
