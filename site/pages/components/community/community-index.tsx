@@ -262,7 +262,7 @@ const CommunityIndex = ({
 export default CommunityIndex;
 
 export async function getStaticProps() {
-  const cmsData = await getSheets('CommunityComponents');
+  const cmsData = await getSheets('Community');
   const content = parseCMSResponse(cmsData, {
     required: RequiredKeys,
     dynamic: DynamicKeyPrefixes,
