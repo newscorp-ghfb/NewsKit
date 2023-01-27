@@ -8,6 +8,7 @@ import {
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
+import {Link} from '../../components/link';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Mono} from '../../components/flags';
 import {UsageKind} from '../../components/usage-card';
@@ -33,7 +34,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Inline Message',
       description:
-        'An inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.',
+        'Inline messages communicate contextual information. They’re positioned inline, close to the element they’re adding context to.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -42,7 +43,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/inline-message/inline-message-illustration',
       },
-      introduction: `An inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.`,
+      introduction: `Inline messages communicate contextual information. They’re positioned inline, close to the element they’re adding context to.`,
     }}
     componentDefaultsKey="inlineMessage"
     meta={{
@@ -54,7 +55,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the inline message component, its variations, and configuration options.',
+        'This demo lets you preview the inline message component, its variations and configuration options.',
       playground: {
         componentName: 'InlineMessage',
         component: state => {
@@ -131,7 +132,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'An inline message contains one required element and two optional elements.',
+        'The inline message component contains one required element and two optional elements.',
       rows: [
         {
           name: 'Icon',
@@ -147,7 +148,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Message',
-          description: 'Communicates what is about to happen or has happened.',
+          description: 'Communicates what’s about to happen or has happened.',
           component: ['Text Block', 'Link'],
         },
       ],
@@ -156,13 +157,12 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     options={{
-      introduction:
-        'An inline message has the following options to provide an appropriate experience for different scenarios.',
+      introduction: 'The inline message has options for different use cases:',
       cards: [
         {
           title: 'Intent',
           description:
-            'An inline message has two intents: informative and negative. Each intent is used to communicate a specific semantic tone to the user.',
+            'An inline message has two intents: informative and negative. Each communicates a specific tone to the user.',
           media: getIllustrationComponent(
             'components/inline-message/inline-message-options-intent-illustration',
           ),
@@ -170,7 +170,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icon',
           description:
-            'An Icon can be displayed to provide the user with a visual cue and to help those with colour blindness discern the message tone.',
+            'Display an icon as a visual cue and help users with colour blindness discern the message tone.',
           media: getIllustrationComponent(
             'components/inline-message/inline-message-options-icon-illustration',
           ),
@@ -178,7 +178,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Title',
           description:
-            'A title can be displayed to provide the user with extra context to the message.',
+            'Give the inline message a title to provide more context.',
           media: getIllustrationComponent(
             'components/inline-message/inline-message-options-title-illustration',
           ),
@@ -186,11 +186,10 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction:
-        'The following guidance describes how an inline message behaves.',
+      introduction: 'Here’s how the inline message behaves:',
       cards: [
         {
-          title: 'Text Overflow Wrap',
+          title: 'Text overflow wrap',
           description:
             'When the title and/or message in the inline message is too long for the available horizontal space, it wraps to form another line.',
           media: getIllustrationComponent(
@@ -242,7 +241,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction:
-        'An inline message implements accessibility best practices.',
+        'The inline message meets accessibility best practices from the W3C guidelines.',
       aria: {
         title: 'WAI-ARIA',
         tableRows: [
@@ -250,33 +249,43 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
             element: 'InlineMessage',
             attribute: 'aria-role',
             value: 'region',
-            description: '',
+            description:
+              'Identifies the role of the InlineMessage within an interface.',
           },
           {
             element: 'InlineMessage',
             attribute: 'aria-label',
             value: 'region',
-            description: 'Defines the Aria-label of the Banner.',
+            description: 'Defines the aria-label of the banner.',
             userSupplied: true,
           },
           {
             element: 'InlineMessage',
             attribute: 'aria-label',
             value: '"polite", "assertive" or "off" (default)',
-            description:
-              'This prop needs to be set when the Banner appears on the screen at runtime. For more information checn the description for aria live at Mozilla docs.',
+            description: (
+              <>
+                Needs to be set when the banner appears on the screen at
+                runtime.{' '}
+                <Link
+                  href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
+                  target="_blank"
+                >
+                  Learn more about aria-live at MDN Web Docs
+                </Link>
+              </>
+            ),
             userSupplied: true,
           },
         ],
       },
     }}
     componentAPI={{
-      introduction: ``,
+      introduction: `The inline message has a range of props and overrides to define the experience in different use cases, and a range of predefined elements and attributes that you can override to define its appearance.`,
       components: [
         {
           title: 'Inline message',
-          summary: `An Inline Message has a range of props that can be used to define an appropriate experience for different use cases and
-                  a range of predefined elements and attributes that can be overridden to define its appearance.`,
+          summary: ``,
           propsRows: [
             {
               name: 'children',
@@ -288,7 +297,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
               name: 'icon',
               type: 'ReactElement<NewsKitIcon>',
               description:
-                'If provided, defines the icon that is displayed in the inline message.',
+                'If provided, defines the icon displayed in the inline message.',
             },
             {
               name: 'title',
@@ -300,7 +309,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
               name: 'ariaLabel',
               type: 'React.ComponentType',
               description:
-                'If provided, defines the Aria-label of the inline message.',
+                'If provided, defines the aria-label of the inline message.',
             },
           ],
           overridesRows: [
@@ -311,7 +320,7 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
               description: (
                 <>
                   Overrides the stylePreset of the inline message that styles
-                  the Icon and the background.
+                  the icon and the background.
                   <Mono>inlineMessageInformative</Mono> |
                   <Mono>inlineMessageNotice</Mono> |
                   <Mono>inlineMessageNegative</Mono>
