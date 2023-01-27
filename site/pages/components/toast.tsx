@@ -346,7 +346,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
           {
             order: 2,
             element: 'Action',
-            role: 'Focusses to the first action (if provided)',
+            role: 'Focusses on the first action (if provided)',
           },
           {
             order: 3,
