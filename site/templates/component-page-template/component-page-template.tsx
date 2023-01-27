@@ -21,6 +21,7 @@ import {
   CommonSection,
 } from '../template-sections';
 import {ComponentPageTemplateProps} from './types';
+import {GenericComponent} from '../../components/playground/types';
 
 const defaultFeatureCard: OnwardJourneySectionProps = {
   title: 'Need Help?',
@@ -36,7 +37,7 @@ const deriveStorybookId = (componentName: string): string => {
   return `components-${kebab}--story-${kebab}-default`;
 };
 
-export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
+export const ComponentPageTemplate = <T extends GenericComponent>({
   layoutProps,
   interactiveDemo,
   anatomy,
@@ -57,7 +58,7 @@ export const ComponentPageTemplate: React.FC<ComponentPageTemplateProps> = ({
   commonSection,
   meta: {storybookId, ...restMeta},
   ...rest
-}: ComponentPageTemplateProps) => (
+}: ComponentPageTemplateProps<T>) => (
   <Layout {...layoutProps} newPage>
     <PageTemplate
       {...rest}

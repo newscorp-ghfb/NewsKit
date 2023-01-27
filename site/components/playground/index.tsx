@@ -16,6 +16,7 @@ import {
   InputKnobConfig,
   BooleanKnobConfig,
   KnobsConfig,
+  GenericComponent,
 } from './types';
 import {CodeExample} from './code-example';
 import {generateSource} from './source-generator';
@@ -31,29 +32,35 @@ const PlaygroundContainer = styled.div`
   background-color: ${getColorFromTheme('interfaceBackground')};
 `;
 
-const isMultiChoiceKnobConfig = (
-  config: unknown,
-): config is MultiChoiceKnobConfig =>
-  Boolean(config && (config as MultiChoiceKnobConfig).options);
+const isMultiChoiceKnobConfig = <T extends GenericComponent>(
+  config: KnobsConfig<T>,
+): config is MultiChoiceKnobConfig<T> =>
+  Boolean(config && (config as MultiChoiceKnobConfig<T>).options);
 
-const isInputKnobConfig = (config: unknown): config is InputKnobConfig =>
+const isInputKnobConfig = <T extends GenericComponent>(
+  config: KnobsConfig<T>,
+): config is InputKnobConfig<T> =>
   !!config &&
-  ['string', 'number'].includes(typeof (config as InputKnobConfig).value);
+  ['string', 'number'].includes(typeof (config as InputKnobConfig<T>).value);
 
-const isBooleanKnobConfig = (config: unknown): config is BooleanKnobConfig =>
-  !!config && typeof (config as BooleanKnobConfig).value === 'boolean';
+const isBooleanKnobConfig = <T extends GenericComponent>(
+  config: KnobsConfig<T>,
+): config is BooleanKnobConfig<T> =>
+  !!config && typeof (config as BooleanKnobConfig<T>).value === 'boolean';
 
-const renderKnob = (
-  state: Record<string, unknown>,
-  updateState: (prop: string) => (value: unknown) => void,
-) => (knobConfig: KnobsConfig) => {
+const renderKnob = <T extends GenericComponent>(
+  state: React.ComponentProps<T>,
+  updateState: (
+    prop: keyof React.ComponentProps<T>,
+  ) => (value: unknown) => void,
+) => (knobConfig: KnobsConfig<T>) => {
   if (isMultiChoiceKnobConfig(knobConfig)) {
     return (
       <MultiChoiceKnob
         key={knobConfig.name}
         label={knobConfig.name}
         options={knobConfig.options}
-        value={state[knobConfig.propName] as string}
+        value={state[knobConfig.propName]}
         onChange={updateState(knobConfig.propName)}
       />
     );
@@ -63,7 +70,7 @@ const renderKnob = (
       <ArrayKnob
         key={knobConfig.name}
         label={knobConfig.name}
-        value={state[knobConfig.propName] as unknown[]}
+        value={state[knobConfig.propName]}
         onChange={updateState(knobConfig.propName)}
       />
     );
@@ -95,14 +102,14 @@ const renderKnob = (
   return null;
 };
 
-export const Playground: React.FC<
-  PlaygroundProps | {componentName: false}
-> = props => {
+export const Playground = <T extends GenericComponent>(
+  props: PlaygroundProps<T> | {componentName: false},
+) => {
   const [componentIndex, setComponentIndex] = useState(0);
 
-  const {knobs = []} = props as PlaygroundProps;
+  const {knobs = []} = props as PlaygroundProps<T>;
 
-  const [state, setState] = useState(() =>
+  const [state, setState] = useState<React.ComponentProps<T>>(() =>
     knobs.reduce((acc, knobConfig) => {
       const defaultOption = isMultiChoiceKnobConfig(knobConfig)
         ? knobConfig.options.find(opt => opt.isDefault)
@@ -116,7 +123,7 @@ export const Playground: React.FC<
             ? deepMerge(acc[knobConfig.propName], defaultOption.value)
             : defaultOption.value),
       };
-    }, {} as Record<string, unknown>),
+    }, {} as React.ComponentProps<T>),
   );
 
   const {componentName} = props;
@@ -125,9 +132,11 @@ export const Playground: React.FC<
     return null;
   }
 
-  const {component} = props as PlaygroundProps;
+  const {component} = props as PlaygroundProps<T>;
 
-  const updateState = (prop: string) => (value: unknown) => {
+  const updateState = (prop: keyof React.ComponentProps<T>) => (
+    value: unknown,
+  ) => {
     let newValue = value;
 
     if (
