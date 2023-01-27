@@ -9,7 +9,7 @@ import {commonLogicalProps} from '../../components/component-api/common-logical-
 import {UsageKind} from '../../components/usage-card';
 
 const CaptionComponent = (layoutProps: LayoutProps) => (
-  <ComponentPageTemplate
+  <ComponentPageTemplate<typeof Caption>
     headTags={{
       title: 'Caption',
       description:
