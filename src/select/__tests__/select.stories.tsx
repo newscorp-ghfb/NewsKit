@@ -974,7 +974,7 @@ export const SelectVirtualization = () => {
 };
 
 export const StorySelectControlled = () => {
-  const [selectedValue, setSelectedValue] = React.useState('Fermium');
+  const [selectedValue, setSelectedValue] = React.useState();
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedValue(e.target.value);
   };
@@ -990,6 +990,7 @@ export const StorySelectControlled = () => {
           size="medium"
           labelId="controlled-label"
           onChange={handleChange}
+          controlled
         >
           {items.map(item => (
             <SelectOption

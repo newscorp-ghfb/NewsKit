@@ -125,8 +125,15 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
     /* eslint-disable @typescript-eslint/no-explicit-any */
     // istanbul ignore next
-    const itemToString = (item: any) =>
-      item?.props?.['aria-label'] || item?.props?.value;
+    const itemToString = (item: any) => {
+      if (item?.props?.['aria-label']) {
+        return item?.props?.['aria-label'];
+      }
+      if (typeof item?.props?.children === 'string') {
+        return item?.props?.children;
+      }
+      return item?.props?.value;
+    };
     /* eslint-enable @typescript-eslint/no-explicit-any */
 
     const getSelectedItem = () => {

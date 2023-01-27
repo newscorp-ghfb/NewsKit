@@ -759,6 +759,32 @@ describe('Select', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('check if status message is rendered on select item', async () => {
+    const props: SelectProps = {
+      labelId: 'label-1',
+      children: [
+        <SelectOption key="1" value="1">
+          option 1
+        </SelectOption>,
+        <SelectOption key="2" value="2">
+          option 2
+        </SelectOption>,
+      ],
+    };
+
+    const {getAllByRole, findByRole} = renderWithThemeInBody(Select, props);
+
+    await waitFor(() => {
+      fireEvent.click(screen.getByTestId('select-button'));
+    });
+    await waitFor(() => {
+      fireEvent.click(getAllByRole('option')[0]);
+    });
+    const msg = 'option 1 has been selected.';
+    const status = await findByRole('status');
+    expect(status).toHaveTextContent(msg);
+  });
+
   describe('in Modal', () => {
     afterEach(() => {
       cleanup();
