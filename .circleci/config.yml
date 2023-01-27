@@ -910,9 +910,9 @@ jobs:
             export s3Path_storybook=<< parameters.s3Path_storybook >>
             echo $(date) > timestamp.html
             aws s3 cp timestamp.html $s3Path_docs
-            aws s3 cp timestamp.html $s3Path_storybook
             aws s3 cp public $s3Path_docs --recursive
             aws s3 cp dist-storybook $s3Path_storybook --recursive
+            aws s3 cp timestamp.html $s3Path_storybook
       #- slack/notify:
       #    <<: *slack_notify
 
