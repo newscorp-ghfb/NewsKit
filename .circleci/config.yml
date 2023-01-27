@@ -1424,8 +1424,8 @@ workflows:
       - push_s3_general:
           name: deploy_to_s3_dev
           context: ncu-product-platforms-context
-          s3Path_docs: s3://ncu-newskit-docs-dev
-          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook
+          s3Path_docs: s3://ncu-newskit-docs-dev/
+          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
           requires:
             - deploy_terraform_s3_dev
             - build_docs_dev
@@ -1434,7 +1434,7 @@ workflows:
 #           name: deploy_to_s3_staging
 #           context: ncu-newskit-site-stage
 #           s3Path_docs: s3://ncu-newskit-docs-staging/
-#           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook
+#           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
 #           requires:
 #             - deploy_terraform_s3_staging
 #             - build_docs_staging
