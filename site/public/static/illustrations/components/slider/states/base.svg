@@ -1,0 +1,6 @@
+<svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground020)"/>
+<rect width="955.332" height="70.1316" rx="35.0658" transform="matrix(1 -0.000573496 0.00120477 0.999999 279.434 383.33)" fill="var(--color-illustrationInterface030)"/>
+<rect width="548.613" height="70.1316" rx="35.0658" transform="matrix(1 -0.000485389 0.00142346 0.999999 255 383.345)" fill="var(--color-illustrationHighlight010)"/>
+<circle cx="744.816" cy="418.816" r="82.7476" transform="rotate(89.9524 744.816 418.816)" fill="var(--color-illustrationPalette060)"/>
+</svg>
