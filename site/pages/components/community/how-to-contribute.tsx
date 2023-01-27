@@ -22,7 +22,7 @@ const CommunityHowToContribute = (layoutProps: LayoutProps) => (
       type: 'Community',
       name: 'How to contribute',
       hero: {
-        illustration: 'components/community/community-index',
+        illustration: 'components/community/how-to-contribute',
       },
       introduction:
         'NewsKit is open source and anyone can contribute to the community index.',
