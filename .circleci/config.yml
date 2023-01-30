@@ -614,6 +614,13 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  aws_assume_oidc_role_executor:
+    executor: aws-cli/default
+    environment:
+      AWS_DEFAULT_REGION: eu-west-1
+      AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
+      TERM: xterm
+
   init_aws_NEW:
     parameters:
       job_type:
@@ -632,13 +639,8 @@ jobs:
       - run:
           name: Install aws cli
           command: sudo pip install awscli
-      - aws_assume_oidc_role:
+      - aws_assume_oidc_role_executor:
           job_type: << parameters.job_type >>
-          executor: aws-cli/default
-          environment:
-            AWS_DEFAULT_REGION: eu-west-1
-            AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
-            TERM: xterm
 
   init_aws:
     parameters:
