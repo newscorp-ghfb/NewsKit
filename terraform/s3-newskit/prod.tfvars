@@ -1,5 +1,4 @@
-tfstate_bucket=newskit-docs-dev-tfstate
-tfstate_key=newskit-docs-prod-terraform-state
+tfstate_bucket=newskit-docs-prod-tfstate
 
 environment = "prod"
 tag_name_suffix = "-prod"
