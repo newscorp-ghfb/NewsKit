@@ -232,7 +232,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         'https://github.com/newscorp-ghfb/newskit/blob/develop/src/text-field/text-field.tsx',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=4897%3A131265',
-      storybookId: 'components-text-field--text-field-size-examples',
+      storybookId: 'components-text-field--story-text-field-default',
     }}
     anatomy={{
       introduction:
