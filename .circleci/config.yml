@@ -1550,7 +1550,7 @@ workflows:
       - init_aws:
           context: ncu-product-platforms-context
       - init_aws_NEW:
-          context: ncu-product-platforms-context-oicd
+          context: ncu-product-platforms-context-oidc
       - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
@@ -1581,7 +1581,7 @@ workflows:
       - deploy_terraform_NEW:
           name: deploy_terraform_s3_dev_NEW
           package: s3-newskit
-          context: ncu-product-platforms-context-oicd
+          context: ncu-product-platforms-context-oidc
           apply: true
           tf_env: true
           environment: dev
