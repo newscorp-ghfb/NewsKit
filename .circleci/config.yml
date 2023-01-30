@@ -4,12 +4,6 @@ orbs:
   slack: circleci/slack@4.10.1
   aws-cli: circleci/aws-cli@3.1
   github-cli: circleci/github-cli@1.0.4
-  
-executors:
-  aws-cli:
-    docker:
-      - image: newsuk/terraform:1.2.1
-
 
 slack_notify: &slack_notify
   event: 'fail'
@@ -100,6 +94,10 @@ executors:
   python:
     docker:
       - image: cimg/python:3.10.2
+
+  aws-cli-and-terraform:
+    docker:
+      - image: newsuk/terraform:1.2.1
 
   node:
     docker:
