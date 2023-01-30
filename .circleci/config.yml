@@ -1545,6 +1545,8 @@ workflows:
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
+      - init_aws_NEW:
+          context: ncu-product-platforms-context
       - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
