@@ -232,7 +232,6 @@ commands:
   aws_assume_oidc_role:
     description: Assume AWS role using OIDC
     steps:
-      - checkout
       - aws-cli/setup:
           profile-name: newskit
           role-arn: ${AWS_ROLE_ARN}
@@ -251,7 +250,42 @@ commands:
             cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
-            cat assume_role_creds_oidc.txt
+            ls -al assume_role_creds_oidc.txt
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - assume_role_creds_oidc.txt
+
+  aws_assume_oidc_role_from_token:
+    description: Assume AWS role using OIDC
+    steps:
+      - run:
+          name: # Interact with AWS
+          command: |
+            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
+            export AWS_DEFAULT_REGION = "eu-west-1"
+            export AWS_ROLE_ARN = "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
+            # use the OpenID Connect token to obtain AWS credentials
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN \<<< \
+              $(aws sts assume-role-with-web-identity \
+               --role-arn ${AWS_ROLE_ARN} \
+               --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}-${CIRCLE_JOB}" \
+               --web-identity-token $CIRCLE_OIDC_TOKEN \
+               --duration-seconds 3600 \
+               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+               --output text)
+            export AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            aws sts get-caller-identity
+            echo "Env to BASH_ENV, T=${AWS_SESSION_TOKEN}"
+            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
+            echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
+            echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
+            source $BASH_ENV
+            echo "BASH_ENV to assume_role_creds_oidc.txt"
+            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
+            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
+            cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
+            ls -al assume_role_creds_oidc.txt
       - persist_to_workspace:
           root: ./
           paths:
@@ -614,14 +648,14 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  aws_assume_oidc_role_executor:
-    executor: aws-cli/default
-    environment:
-      AWS_DEFAULT_REGION: eu-west-1
-      AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
-      TERM: xterm
-    steps:
-      - aws_assume_oidc_role
+  #aws_assume_oidc_role_executor:
+  #  executor: aws-cli/default
+  #  environment:
+  #    AWS_DEFAULT_REGION: eu-west-1
+  #    AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
+  #    TERM: xterm
+  #  steps:
+  #    - aws_assume_oidc_role
 
   init_aws_NEW:
     parameters:
@@ -641,7 +675,7 @@ jobs:
       - run:
           name: Install aws cli
           command: sudo pip install awscli
-      - aws_assume_oidc_role_executor:
+      - aws_assume_oidc_role_token:
           job_type: << parameters.job_type >>
 
   init_aws:
@@ -1398,8 +1432,8 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      - aws_assume_oidc_role_executor:
-          context: ncu-product-platforms-context      
+      #- aws_assume_oidc_role_executor:
+      #    context: ncu-product-platforms-context      
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
