@@ -183,41 +183,6 @@ commands:
             cd terraform/<< parameters.package >>
             terraform apply -auto-approve
 
-  # Assuming that profile-name and role-session-name
-  # should match the last part of the project's github
-  # repo: https://github.com/newscorp-ghfb/newskit
-  aws_assume_oidc_role:
-    description: Assume AWS role using OIDC
-    executor: aws-cli/default
-    environment:
-      AWS_DEFAULT_REGION: eu-west-1
-      AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
-      TERM: xterm
-    steps:
-      - checkout
-      - aws-cli/setup:
-          profile-name: newskit
-          role-arn: ${AWS_ROLE_ARN}
-          role-session-name: newskit
-      - run:
-          name: # Interact with AWS
-          command: |
-            echo "Getting caller id, CIRCLE_OIDC_TOKEN=${CIRCLE_OIDC_TOKEN}"
-            aws sts get-caller-identity
-            echo "Env to BASH_ENV"
-            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
-            echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
-            echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
-            source $BASH_ENV
-            echo "BASH_ENV to assume_role_creds_oidc.txt"
-            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
-            cat assume_role_creds_oidc.txt
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - assume_role_creds_oidc.txt
 
   aws_assume_role:
     description: Assume AWS role
@@ -662,6 +627,42 @@ jobs:
       - aws_assume_role:
           job_type: << parameters.job_type >>
 
+  # Assuming that profile-name and role-session-name
+  # should match the last part of the project's github
+  # repo: https://github.com/newscorp-ghfb/newskit
+  aws_assume_oidc_role:
+    description: Assume AWS role using OIDC
+    executor: aws-cli/default
+    environment:
+      AWS_DEFAULT_REGION: eu-west-1
+      AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
+      TERM: xterm
+    steps:
+      - checkout
+      - aws-cli/setup:
+          profile-name: newskit
+          role-arn: ${AWS_ROLE_ARN}
+          role-session-name: newskit
+      - run:
+          name: # Interact with AWS
+          command: |
+            echo "Getting caller id, CIRCLE_OIDC_TOKEN=${CIRCLE_OIDC_TOKEN}"
+            aws sts get-caller-identity
+            echo "Env to BASH_ENV"
+            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
+            echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
+            echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
+            source $BASH_ENV
+            echo "BASH_ENV to assume_role_creds_oidc.txt"
+            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
+            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
+            cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
+            cat assume_role_creds_oidc.txt
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - assume_role_creds_oidc.txt
+            
   deploy_terraform_NEW:
     parameters:
       package:
