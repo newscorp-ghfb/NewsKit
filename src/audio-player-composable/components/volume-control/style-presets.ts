@@ -32,26 +32,9 @@ export default {
     },
   },
   audioPlayerVolumeControlThumbOld: {
+    __extends: 'audioPlayerVolumeControlThumb',
     base: {
-      boxShadow: '{{shadows.shadow010}}',
-      backgroundColor: '{{colors.interactivePrimary030}}',
-      borderStyle: 'solid',
       borderColor: '{{colors.interactivePrimary010}}',
-      borderWidth: '{{borders.borderWidth010}}',
-      borderRadius: '{{borders.borderRadiusCircle}}',
-      iconColor: '{{colors.inkNonEssential}}',
-    },
-    hover: {
-      backgroundColor: '{{colors.interactivePrimary040}}',
-      iconColor: '{{colors.inkNonEssential}}',
-    },
-    active: {
-      backgroundColor: '{{colors.interactivePrimary050}}',
-      iconColor: '{{colors.inkSubtle}}',
-    },
-    'focus-visible': {
-      ...defaultFocusVisible,
-      safariOutlineOffset: '-7px',
     },
   },
   audioPlayerVolumeControlTrack: {
@@ -68,10 +51,9 @@ export default {
     },
   },
   audioPlayerVolumeControlPopoverOld: {
+    __extends: '{{stylePresets.audioPlayerVolumeControlPopover}}',
     base: {
       boxShadow: '{{shadows.shadow050}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-      backgroundColor: '{{colors.interfaceBackground}}',
     },
   },
 } as Record<string, StylePreset>;
