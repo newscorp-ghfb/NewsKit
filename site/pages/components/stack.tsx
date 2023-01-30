@@ -20,6 +20,7 @@ import {
   StackChild,
 } from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {renderIfReactComponent} from 'newskit/utils/component';
 import {Code} from '../../components/code';
 import {
   A11yTable,
@@ -37,6 +38,8 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageBasicTemplate} from '../../templates/component-page-template/component-page-basic-template';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {PropsRowsProps} from '../../components/component-api';
+import {Table} from '../../components/table';
+import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
 interface StackDemoProps {
   title: string;
@@ -68,7 +71,7 @@ const StackItem = styled.div`
   ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
   ${getTypographyPresetFromTheme('utilityBody020')}
   ${getColorCssFromTheme('color', 'inkInverse')}
-  ${getColorCssFromTheme('background-color', 'blue050')}
+  ${getColorCssFromTheme('backgroundColor', 'blue050')}
 `;
 
 const StackContainer = styled.div<{
@@ -77,7 +80,7 @@ const StackContainer = styled.div<{
   width?: string;
 }>`
   ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
-  ${getColorCssFromTheme('background-color', 'interface020')};
+  ${getColorCssFromTheme('backgroundColor', 'interface020')};
   ${({height}) => height && `height: ${height}`};
   ${({width}) => width && `width: ${width}`};
 `;
@@ -244,7 +247,7 @@ const StackComponent = (layoutProps: LayoutProps) => (
                     'Multiple',
                     'Tags',
                   ].map(item => (
-                    <Tag>{item}</Tag>
+                    <Tag key={item}>{item}</Tag>
                   ))}
                 </Stack>
               </LegacyBlock>
@@ -369,6 +372,36 @@ const StackComponent = (layoutProps: LayoutProps) => (
       </ComponentPageCell>
     </CommonSection>
     <CommonSection
+      title="Anatomy"
+      id="anatomy"
+      introduction="The stack is comprised of one required element and one optional element"
+    >
+      <ComponentPageCell>
+        <Block spaceStack="space050">
+          {renderIfReactComponent(
+            getIllustrationComponent('components/stack/anatomy'),
+          )}
+        </Block>
+        <Block spaceStack="space000">
+          <Table
+            columns={['Item', 'Name', 'Description', 'Component', 'Optional']}
+            rows={[
+              {
+                name: 'Stack',
+                description: 'Defines the layout of child elements.',
+              },
+              {
+                name: 'StackChild',
+                description:
+                  'A container for the elements of the stack which can be used per element for ordering and alignment.',
+                optional: true,
+              },
+            ]}
+          />
+        </Block>
+      </ComponentPageCell>
+    </CommonSection>
+    <CommonSection
       id="stack-overview"
       title="Overview"
       introduction={
@@ -393,7 +426,12 @@ const StackComponent = (layoutProps: LayoutProps) => (
         <>
           Its children can be distributed by using the ‘distribution’ property,
           which is a direct mapping to the flexbox property{' '}
-          <InlineCode>justify-content</InlineCode>
+          <Link
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+            target="_blank"
+          >
+            justify-content
+          </Link>
         </>
       }
     >
@@ -408,6 +446,7 @@ const StackComponent = (layoutProps: LayoutProps) => (
             'space-evenly',
           ].map(distribution => (
             <StackFlowDistDemo
+              key={`stack-${distribution}`}
               title={capitalize(distribution)}
               flow="horizontal-center"
               distribution={distribution as StackDistribution}
@@ -441,6 +480,7 @@ const StackComponent = (layoutProps: LayoutProps) => (
             'vertical-stretch',
           ].map(flow => (
             <StackFlowDistDemo
+              key={`stack-${flow}`}
               height="350px"
               title={capitalize(flow)}
               distribution="center"
@@ -754,7 +794,7 @@ const StackComponent = (layoutProps: LayoutProps) => (
               type: 'boolean',
               default: 'false',
               description:
-                'If true, the stack container will be displayed as inline-flex.',
+                'If true, the stack container will be displayed as inline-flex',
             },
             {
               name: 'flow',
@@ -788,14 +828,32 @@ const StackComponent = (layoutProps: LayoutProps) => (
             {
               name: 'spaceInline',
               type: 'string',
-              description:
-                'If provided, and the stack has a horizontal flow, this property is used to set horizontal spacing between each item. If provided, and the stack has a vertical flow, this property is used to set vertical spacing between each item.',
+              description: (
+                <>
+                  If provided, and the stack has a horizontal flow, this
+                  property is used to set horizontal spacing between each item.
+                  <br />
+                  <br />
+                  If provided, and the stack has a vertical flow, this property
+                  is used to set vertical spacing between each item.
+                </>
+              ),
             },
             {
               name: 'spaceStack',
               type: 'string',
-              description:
-                'If provided, and the stack has a horizontal flow and its items are allowed to wrap, this property is used to set space between the rows. If provided, and the stack has a vertical flow and its items are allowed to wrap, this property is used to set space between the columns.',
+              description: (
+                <>
+                  If provided, and the stack has a horizontal flow and its items
+                  are allowed to wrap, this property is used to set space
+                  between the rows.
+                  <br />
+                  <br />
+                  If provided, and the stack has a vertical flow and its items
+                  are allowed to wrap, this property is used to set space
+                  between the columns.
+                </>
+              ),
             },
             {
               name: 'height',
@@ -860,8 +918,7 @@ const StackComponent = (layoutProps: LayoutProps) => (
             {
               name: 'alignSelf',
               type: 'MQ<string>',
-              description:
-                'Aligns an item inside its containing block on the block axis',
+              description: 'Aligns the item on the cross axis',
             },
             {
               name: 'children',
@@ -874,7 +931,7 @@ const StackComponent = (layoutProps: LayoutProps) => (
       ]}
     />
     <RelatedComponentsSection
-      related={['Grid', 'GridLayout', 'Block', 'Visibility']}
+      related={['Grid', 'Grid Layout', 'Block', 'Visibility']}
     />
   </ComponentPageBasicTemplate>
 );
