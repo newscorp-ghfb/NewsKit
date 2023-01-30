@@ -138,7 +138,7 @@ commands:
           command: |
             source $BASH_ENV
             cd terraform/<< parameters.package >>
-            export TF_LOG="DEBUG"
+            export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
             terraform init << parameters.terraform_arg >>
 
@@ -298,14 +298,14 @@ commands:
             aws sts get-caller-identity
             echo "Env to BASH_ENV, T=${AWS_SESSION_TOKEN}"
             echo "export AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" >> $BASH_ENV
-            # echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
-            # echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
+            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
+            echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
             echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
             source $BASH_ENV
             echo "BASH_ENV to assume_role_creds_oidc.txt"
             cat $BASH_ENV | grep AWS_DEFAULT_REGION >> assume_role_creds_oidc.txt
-            # cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
-            # cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
+            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
+            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
             ls -al assume_role_creds_oidc.txt
       - persist_to_workspace:
