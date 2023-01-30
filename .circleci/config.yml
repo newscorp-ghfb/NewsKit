@@ -281,8 +281,8 @@ commands:
           name: # Interact with AWS
           command: |
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
-            export AWS_DEFAULT_REGION = "eu-west-1"
-            export AWS_ROLE_ARN = "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
+            export AWS_DEFAULT_REGION="eu-west-1"
+            export AWS_ROLE_ARN="arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
             # use the OpenID Connect token to obtain AWS credentials
             read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN \<<< \
               $(aws sts assume-role-with-web-identity \
