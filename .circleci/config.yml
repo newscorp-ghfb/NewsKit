@@ -306,7 +306,7 @@ commands:
             echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
             source $BASH_ENV
             echo "BASH_ENV to assume_role_creds_oidc.txt"
-            rm assume_role_creds_oidc.txt
+            rm -f assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_DEFAULT_REGION >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_ROLE_ARN >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
