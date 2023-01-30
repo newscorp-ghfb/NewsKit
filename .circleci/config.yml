@@ -1,15 +1,15 @@
 version: 2.1
 
+orbs:
+  slack: circleci/slack@4.10.1
+  aws-cli: circleci/aws-cli@3.1
+  github-cli: circleci/github-cli@1.0.4
+  
 executors:
   aws-cli:
     docker:
       - image: newsuk/terraform:1.2.1
 
-
-orbs:
-  slack: circleci/slack@4.10.1
-  aws-cli: circleci/aws-cli@3.1
-  github-cli: circleci/github-cli@1.0.4
 
 slack_notify: &slack_notify
   event: 'fail'
