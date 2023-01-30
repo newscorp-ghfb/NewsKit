@@ -348,7 +348,7 @@ describe('Audio Player Composable', () => {
       mediaElement.volume = val;
     });
     window.open = jest.fn();
-    jest.useFakeTimers('legacy');
+    jest.useFakeTimers();
   });
 
   it('should render with no errors', () => {

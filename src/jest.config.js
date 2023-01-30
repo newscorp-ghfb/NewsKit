@@ -1,7 +1,7 @@
 module.exports = {
   name: 'comps',
   displayName: 'NewsKit Components',
-  bail: true,
+  bail: 1,
   rootDir: './',
   setupFilesAfterEnv: [
     '<rootDir>/test/test-framework-setup.ts',
@@ -10,7 +10,9 @@ module.exports = {
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/', '/dist/', '/src/theme-checker/'],
   testRegex: '(.|-)test\\.tsx?$',
-  testURL: 'http://localhost/',
+  testEnvironmentOptions: {
+    url: 'http://localhost/',
+  },
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
@@ -30,4 +32,15 @@ module.exports = {
       statements: 100,
     },
   },
+  reporters: [
+    [
+      'jest-slow-test-reporter',
+      {numTests: 10, warnOnSlowerThan: 300, color: true},
+    ],
+  ],
+  snapshotFormat: {
+    escapeString: true,
+    printBasicPrototype: true,
+  },
+  workerIdleMemoryLimit: 0.4,
 };

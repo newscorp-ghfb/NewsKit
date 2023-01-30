@@ -243,15 +243,21 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/popover/usage/dont1'),
+          media: getIllustrationComponent('components/popover/usage/dont-01'),
         },
-
         {
           title: 'Make popovers clear and concise',
           description:
             'Avoid large chunks of text in popovers. Too much text can cause cognitive overload, and users with smaller screens or who are zoomed in can lose their place.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/popover/usage/do2'),
+        },
+        {
+          title: 'Don’t use rich text formatting',
+          description:
+            'Rich text formatting (e.g. bold, italics, icons) won’t be conveyed to screen reader users.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/popover/usage/dont-03'),
         },
         {
           title: 'Keep popovers in view until dismissed',
@@ -261,18 +267,11 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/popover/usage/do3'),
         },
         {
-          title: 'Don’t use rich text formatting',
-          description:
-            'Rich text formatting (e.g. bold, italics, icons) won’t be conveyed to screen reader users.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/popover/usage/dont3'),
-        },
-        {
           title: 'Don’t cover the attributed element',
           description:
             'Avoid covering the element that the popover is attributed to, as it will lose its context.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/popover/usage/dont4'),
+          media: getIllustrationComponent('components/popover/usage/dont-02'),
         },
       ],
     }}

@@ -39,7 +39,7 @@ const modalContent = (
   </Stack>
 );
 
-const ModalState = ({open, ...state}: {open: boolean}) => {
+const ModalState = ({open, ...state}: {open: boolean} & ModalProps) => {
   const [isActive, setIsActive] = React.useState(false);
   React.useEffect(() => {
     setIsActive(open);
@@ -48,11 +48,7 @@ const ModalState = ({open, ...state}: {open: boolean}) => {
   return (
     <>
       <P>Use props bellow to open and configure the modal.</P>
-      <Modal
-        {...(state as ModalProps)}
-        open={isActive}
-        onDismiss={() => setIsActive(false)}
-      >
+      <Modal {...state} open={isActive} onDismiss={() => setIsActive(false)}>
         {modalContent}
       </Modal>
     </>
@@ -310,21 +306,21 @@ const ModalComponent = (layoutProps: LayoutProps) => (
           description:
             'Modals are appropriate for notifications that give the user critical information related to a task. For non-critical information, consider a toast or inline notification instead.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/modal/do01'),
+          media: getIllustrationComponent('components/modal/usage/do-01'),
         },
         {
           title: 'Don’t use modals for marketing',
           description:
             'Avoid using modals for marketing or advertising purposes. They’re intended for critical information or requests for user input.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/modal/dont01'),
+          media: getIllustrationComponent('components/modal/usage/dont-01'),
         },
         {
           title: 'Keep modals close to related content',
           description:
             'A modal should be in close proximity to the content it relates to.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/modal/do02'),
+          media: getIllustrationComponent('components/modal/usage/do-02'),
         },
       ],
     }}

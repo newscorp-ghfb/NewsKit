@@ -1,6 +1,6 @@
 // /<reference types="Cypress" />
 
-const STORY_URL = /https:\/\/storybook\.newskit\.co\.uk\/\?path=\/docs\/[-a-zA-Z\\d()@:%_\\+.~#?&/=]+/g;
+const STORY_URL = /https:\/\/storybook\.newskit\.co\.uk\/\?path=\/docs\/[-a-zA-Z\d()@:%_\\+.~#?&/=]+/g;
 
 describe('Storybook links on component pages', () => {
   it('should exist in the Storybook build', () => {
