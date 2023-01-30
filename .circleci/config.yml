@@ -232,10 +232,6 @@ commands:
   aws_assume_oidc_role:
     description: Assume AWS role using OIDC
     executor: aws-cli/default
-    environment:
-      AWS_DEFAULT_REGION: eu-west-1
-      AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
-      TERM: xterm
     steps:
       - checkout
       - aws-cli/setup:
@@ -261,7 +257,7 @@ commands:
           root: ./
           paths:
             - assume_role_creds_oidc.txt
-            
+
   aws_assume_role_file:
     description: Assume AWS role from the workspace file
     parameters:
@@ -639,6 +635,10 @@ jobs:
           command: sudo pip install awscli
       - aws_assume_oidc_role:
           job_type: << parameters.job_type >>
+          environment:
+            AWS_DEFAULT_REGION: eu-west-1
+            AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
+            TERM: xterm
 
   init_aws:
     parameters:
