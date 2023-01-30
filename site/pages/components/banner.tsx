@@ -49,7 +49,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Components',
+      type: 'Feedback & Status',
       name: 'Banner',
       hero: {
         illustration: 'components/banner/banner-illustration',
@@ -409,14 +409,13 @@ const BannerComponent = (layoutProps: LayoutProps) => (
             // TODO: Mozilla docs - link (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions)
             description: (
               <>
-                This prop needs to be set when the Banner appears on the screen
-                at runtime. For more information check the description for aria
-                live at,{' '}
+                Needs to be set when the banner appears on the screen at
+                runtime.{' '}
                 <Link
                   target="_blank"
                   href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions"
                 >
-                  Mozilla docs.
+                  Learn more about aria-live at MDN Web Docs.
                 </Link>
               </>
             ),
