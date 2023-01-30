@@ -267,6 +267,15 @@ commands:
 
   aws_assume_oidc_role_from_token:
     description: Assume AWS role using OIDC
+    parameters:
+      #aws_assume_role_arn:
+      #  description: AWS ARN For Assume Role
+      #  type: string
+      #  default: '${AWS_ASSUME_ROLE_ARN}'
+      job_type:
+        description: The job type to be used
+        type: string
+        default: 'oidc'
     steps:
       - run:
           name: # Interact with AWS
