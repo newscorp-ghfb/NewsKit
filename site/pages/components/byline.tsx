@@ -36,7 +36,7 @@ const BYLINE_DATA = [
   },
 ];
 
-const DividerComponent = (layoutProps: LayoutProps) => (
+const BylineComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Byline',
@@ -52,7 +52,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       },
       introduction: `A byline is a line of text that lists the authors of an article, with options to add author’s title, location and link.`,
     }}
-    componentDefaultsKey="divider"
+    componentDefaultsKey="Byline"
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v0.18.0',
@@ -333,4 +333,4 @@ const DividerComponent = (layoutProps: LayoutProps) => (
   />
 );
 
-export default DividerComponent;
+export default BylineComponent;

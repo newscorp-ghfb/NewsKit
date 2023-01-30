@@ -41,7 +41,7 @@ const SliderComponent = (layoutProps: LayoutProps) => (
       introduction:
         'This demo allows you to preview the slider component, its variations, and configuration options.',
       playground: {
-        componentName: 'slider',
+        componentName: 'Slider',
         component: props => <StatefulSlider {...props} />,
         knobs: [
           {
