@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   slack: circleci/slack@4.10.1
-  aws-cli: circleci/aws-cli@2.0.0
+  aws-cli: circleci/aws-cli@3.1
   github-cli: circleci/github-cli@1.0.4
 
 slack_notify: &slack_notify
@@ -624,7 +624,7 @@ jobs:
     parameters:
       job_type:
         type: string
-        default: 'default'
+        default: 'oidc'
     executor: python
     steps:
       - checkout
@@ -638,6 +638,8 @@ jobs:
       - run:
           name: Install aws cli
           command: sudo pip install awscli
+      - aws_assume_oidc_role:
+          job_type: << parameters.job_type >>
 
   init_aws:
     parameters:
@@ -1520,6 +1522,8 @@ workflows:
           environment: dev
           requires:
             - install_aws_cli
+          #  - aws_assume_oidc_role:
+          #      job_type: << parameters.job_type >>
 #       - deploy_terraform:
 #           name: deploy_terraform_s3_staging
 #           package: s3
