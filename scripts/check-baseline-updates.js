@@ -24,10 +24,10 @@ function apiCall(url, options) {
   });
 }
 
-function percyApiCall(path, project) {
-  const token = process.env[`PERCY_${project.toUpperCase()}_TOKEN`];
+function percyApiCall(path) {
+  const token = process.env.PERCY_TOKEN;
   if (!token) {
-    log(`No Percy token found for project ${project}`);
+    log(`No Percy token found`);
     throw Error();
   }
   return apiCall(`${PERCY_URL}${path}`, {
@@ -35,9 +35,9 @@ function percyApiCall(path, project) {
   });
 }
 
-async function getPercyBuildForBranch(branchName, project) {
-  log(`Looking for Percy ${project} build for branch ${branchName}`);
-  const builds = await percyApiCall('/api/v1/builds', project);
+async function getPercyBuildForBranch(branchName) {
+  log(`Looking for Percy build for branch ${branchName}`);
+  const builds = await percyApiCall('/api/v1/builds');
   for (let i = 0; i <= builds.data.length; i++) {
     const build = builds.data[i];
     if (build.attributes.branch === branchName) {
@@ -48,13 +48,11 @@ async function getPercyBuildForBranch(branchName, project) {
   throw Error();
 }
 
-async function run(headRefName, project) {
+async function run(headRefName) {
   const branchName = headRefName.trim();
-  log(
-    `Checking if baselines for ${project} need to be updated after ${branchName} was merged`,
-  );
+  log(`Checking if baselines to be updated after ${branchName} was merged`);
 
-  const build = await getPercyBuildForBranch(branchName, project);
+  const build = await getPercyBuildForBranch(branchName);
   const reviewState = build.attributes['review-state'];
   const nbDiffs = build.attributes['total-comparisons-diff'];
 
@@ -66,7 +64,6 @@ async function run(headRefName, project) {
 
   const snapshots = await percyApiCall(
     build.relationships.snapshots.links.related,
-    project,
   );
 
   const include = snapshots.data

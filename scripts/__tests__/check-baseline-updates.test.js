@@ -64,13 +64,13 @@ const mockHttp = (url, options, callback) => {
 
 describe('check-baseline-updates', () => {
   beforeEach(() => {
-    process.env.PERCY_COMPS_TOKEN = '__PERCY_COMPS_TOKEN__';
+    process.env.PERCY_TOKEN = '__PERCY_TOKEN__';
     https.get = jest.fn().mockImplementation(mockHttp);
   });
 
   it('should update config file and return true if updates required', async () => {
     fs.writeFileSync = jest.fn();
-    const result = await run('branch/approved-with-diffs', 'comps');
+    const result = await run('branch/approved-with-diffs');
     expect(fs.writeFileSync).toHaveBeenCalledWith(
       './percy-storybook.config.json',
       JSON.stringify({include: ['^snapshot1$', '^snapshot2$']}),
@@ -79,20 +79,21 @@ describe('check-baseline-updates', () => {
   });
 
   it('should return false if no diffs require updates', async () => {
-    const result = await run('branch/approved-no-diffs', 'comps');
+    const result = await run('branch/approved-no-diffs');
     expect(result).toBe(false);
   });
 
   it('should return false if build not approved', async () => {
-    const result = await run('branch/diffs-not-approved', 'comps');
+    const result = await run('branch/diffs-not-approved');
     expect(result).toBe(false);
   });
 
   it('should raise an exception if no token found', async () => {
-    await expect(run('branch', 'docsite')).rejects.toThrowError();
+    delete process.env.PERCY_TOKEN;
+    await expect(run('branch/approved-no-diffs')).rejects.toThrowError();
   });
 
-  it('should raise an exception if build found', async () => {
-    await expect(run('invalid-branch', 'comps')).rejects.toThrowError();
+  it('should raise an exception if build not found', async () => {
+    await expect(run('invalid-branch')).rejects.toThrowError();
   });
 });
