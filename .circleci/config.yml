@@ -1,8 +1,9 @@
 version: 2.1
 executors:
-  aws-cli-and-terraform:
+  aws-cli:
     docker:
       - image: newsuk/terraform:1.2.1
+
 
 orbs:
   slack: circleci/slack@4.10.1
