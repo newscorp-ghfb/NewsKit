@@ -123,7 +123,7 @@ executors:
       - image: cimg/openjdk:8u252-jdk-buster
 
 commands:
-  terraform_init:
+  terraform_init_oidc:
     description: Run Terraform Init
     parameters:
       package:
@@ -134,10 +134,8 @@ commands:
         default: ''
     steps:
       - run:
-          name: Terraform init
+          name: Terraform init OIDC
           command: |
-            #source $BASH_ENV
-            echo "terraform_init"
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
             export AWS_DEFAULT_REGION="eu-west-1"
             export AWS_ROLE_ARN="arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
@@ -151,7 +149,27 @@ commands:
                --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
                --output text)
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
-            aws sts get-caller-identity
+            echo "terraform cd"
+            cd terraform/<< parameters.package >>
+            export TF_LOG="TRACE"
+            export TF_LOG_PATH="./terraform-debug.log"
+            echo "terraform init"
+            terraform init << parameters.terraform_arg >>
+
+  terraform_init:
+    description: Run Terraform Init
+    parameters:
+      package:
+        type: string
+      terraform_arg:
+        description: provide terraform arguments
+        type: string
+        default: ''
+    steps:
+      - run:
+          name: Terraform init
+          command: |
+            source $BASH_ENV
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
@@ -762,14 +780,14 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run_only_on_folder_change:
-          folder: ./terraform/<< parameters.package >>
+      #- run_only_on_folder_change:
+      #    folder: ./terraform/<< parameters.package >>
       - aws_assume_role_file:
           job_type: oidc
       - when:
           condition: << parameters.tf_env >>
           steps:
-            - terraform_init:
+            - terraform_init_oidc:
                 package: << parameters.package >>
                 terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
             - terraform_plan:
