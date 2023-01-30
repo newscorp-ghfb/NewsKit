@@ -1398,6 +1398,8 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
+      - aws_assume_oidc_role_executor:
+          context: ncu-product-platforms-context      
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
