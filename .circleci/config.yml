@@ -620,6 +620,8 @@ jobs:
       AWS_DEFAULT_REGION: eu-west-1
       AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
       TERM: xterm
+    steps:
+      - aws_assume_oidc_role
 
   init_aws_NEW:
     parameters:
