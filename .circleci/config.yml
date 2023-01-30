@@ -136,7 +136,22 @@ commands:
       - run:
           name: Terraform init
           command: |
-            source $BASH_ENV
+            #source $BASH_ENV
+            echo "terraform_init"
+            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
+            export AWS_DEFAULT_REGION="eu-west-1"
+            export AWS_ROLE_ARN="arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
+            # use the OpenID Connect token to obtain AWS credentials
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN \<<< \
+              $(aws sts assume-role-with-web-identity \
+               --role-arn ${AWS_ROLE_ARN} \
+               --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}-${CIRCLE_JOB}" \
+               --web-identity-token $CIRCLE_OIDC_TOKEN \
+               --duration-seconds 3600 \
+               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+               --output text)
+            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            aws sts get-caller-identity
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
@@ -313,8 +328,8 @@ commands:
             cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
             ls -al assume_role_creds_oidc.txt
-            cd terraform/s3-newskit
-            terraform init -backend-config=key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate
+            #cd terraform/s3-newskit
+            #terraform init -backend-config=key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate
       - persist_to_workspace:
           root: ./
           paths:
