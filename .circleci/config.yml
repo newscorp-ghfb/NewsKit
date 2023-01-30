@@ -138,6 +138,8 @@ commands:
           command: |
             source $BASH_ENV
             cd terraform/<< parameters.package >>
+            export TF_LOG="DEBUG"
+            export TF_LOG_PATH="./terraform-debug.log"
             terraform init << parameters.terraform_arg >>
 
   terraform_plan:
@@ -292,16 +294,18 @@ commands:
                --duration-seconds 3600 \
                --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
                --output text)
-            export AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            export AWS_DEFAULT_REGION, AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
             aws sts get-caller-identity
             echo "Env to BASH_ENV, T=${AWS_SESSION_TOKEN}"
-            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
-            echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
+            echo "export AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" >> $BASH_ENV
+            # echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
+            # echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
             echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
             source $BASH_ENV
             echo "BASH_ENV to assume_role_creds_oidc.txt"
-            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
+            cat $BASH_ENV | grep AWS_DEFAULT_REGION >> assume_role_creds_oidc.txt
+            # cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
+            # cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
             ls -al assume_role_creds_oidc.txt
       - persist_to_workspace:
@@ -1545,8 +1549,8 @@ workflows:
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
-      - init_aws_NEW:
-          context: ncu-product-platforms-context
+      - init_aws_NEW
+          # context: ncu-product-platforms-context
       - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
@@ -1577,7 +1581,7 @@ workflows:
       - deploy_terraform_NEW:
           name: deploy_terraform_s3_dev_NEW
           package: s3-newskit
-          context: ncu-newskit-site-dev
+          # context: ncu-newskit-site-dev
           apply: true
           tf_env: true
           environment: dev
@@ -1695,8 +1699,8 @@ workflows:
     jobs:
       - init_aws:
           context: ncu-product-platforms-context
-      - init_aws_NEW:
-          context: ncu-product-platforms-context    
+      - init_aws_NEW
+          # context: ncu-product-platforms-context    
       - deploy_terraform:
           name: deploy_terraform_dns_dev
           package: dns
