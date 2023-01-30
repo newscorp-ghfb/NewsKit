@@ -41,6 +41,9 @@ build_storybook:
 build_docs:
 	SITE_ENV=${SITE_ENV} BASE_URI=${BASE_URI} BASE_PATH=${BASE_PATH} yarn build:docs && yarn postbuild:docs
 
+build_docs_pr_with_no_base_url:
+	SITE_ENV=${SITE_ENV} yarn build:docs && yarn postbuild:docs
+
 build_docs_with_no_base_url:
 	SITE_ENV=${SITE_ENV} yarn build:docs && yarn postbuild:docs
 

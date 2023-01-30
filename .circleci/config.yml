@@ -558,7 +558,7 @@ jobs:
           name: Build
           command: |
             export SITE_ENV=${SITE_ENV}
-            make build_docs_with_no_base_url
+            make build_docs_pr_with_no_base_url
       - persist_to_workspace:
           root: ./
           paths:
@@ -578,7 +578,7 @@ jobs:
             git checkout main
             git pull
             export SITE_ENV=${SITE_ENV}
-            make build_docs_with_no_base_url
+            make build_docs_pr_with_no_base_url
       - persist_to_workspace:
           root: ./
           paths:
