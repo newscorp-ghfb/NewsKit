@@ -312,7 +312,6 @@ commands:
         description: The job type to be used
         type: string
         default: 'oidc'
-    executor: terraform    
     steps:
       - run:
           name: Assume AWS role using OIDC
@@ -354,8 +353,8 @@ commands:
       - run:
           name: Terraform init OIDC
           command: |     
-            cd terraform/s3-newskit
-            terraform init -backend-config="key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate"
+            #cd terraform/s3-newskit
+            #terraform init -backend-config="key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate"
             make tf-plan-s3-newskit
 
   aws_assume_role_file:
