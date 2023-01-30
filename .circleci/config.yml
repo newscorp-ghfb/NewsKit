@@ -250,6 +250,7 @@ commands:
       - run:
           name: # Interact with AWS
           command: |
+            echo "aws_assume_oidc_role"
             echo "Getting caller id, CIRCLE_OIDC_TOKEN=${CIRCLE_OIDC_TOKEN}"
             aws sts get-caller-identity
             echo "Env to BASH_ENV"
@@ -282,6 +283,7 @@ commands:
       - run:
           name: # Interact with AWS
           command: |
+            echo "aws_assume_oidc_role_from_token"
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
             export AWS_DEFAULT_REGION="eu-west-1"
             export AWS_ROLE_ARN="arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
@@ -304,6 +306,7 @@ commands:
             echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
             source $BASH_ENV
             echo "BASH_ENV to assume_role_creds_oidc.txt"
+            rm assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_DEFAULT_REGION >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_ROLE_ARN >> assume_role_creds_oidc.txt
             cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
