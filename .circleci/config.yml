@@ -355,7 +355,7 @@ commands:
           name: Terraform init OIDC
           command: |     
             cd terraform/s3-newskit
-            terraform init -backend-config=key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate
+            terraform init -backend-config="key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate"
             make tf-plan-s3-newskit
 
   aws_assume_role_file:

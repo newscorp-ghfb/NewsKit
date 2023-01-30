@@ -1,3 +1,4 @@
+SHELL := /bin/bash
 DOCKER_REGISTRY_URL ?= ncu-product-platforms
 DOCKER_REPO ?= design-system-site
 DOCKER_TAG ?= latest
@@ -48,6 +49,8 @@ build_docs_with_no_base_url:
 	SITE_ENV=${SITE_ENV} yarn build:docs && yarn postbuild:docs
 
 tf-plan-s3-newskit:
+	cd circleci-user-role && \
+	terraform init -backend-config="key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate"
 
 unit_test_docs:
 	yarn test:unit:ci --projects=site
