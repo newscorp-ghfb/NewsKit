@@ -584,6 +584,27 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  init_aws_NEW:
+    parameters:
+      job_type:
+        type: string
+        default: 'oidc'
+    executor: python
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Install python and pip
+          command: |
+            sudo apt-get update
+            sudo apt-get install python3-pip python-dev
+      - run:
+          name: Install aws cli
+          command: sudo pip install awscli
+      - aws_assume_oidc_role:
+          job_type: << parameters.job_type >>
+
   init_aws:
     parameters:
       job_type:
@@ -605,26 +626,6 @@ jobs:
       - aws_assume_role:
           job_type: << parameters.job_type >>
 
-    init_aws_NEW:
-      parameters:
-        job_type:
-          type: string
-          default: 'oidc'
-      executor: python
-      steps:
-        - checkout
-        - attach_workspace:
-            at: ~/project
-        - run:
-            name: Install python and pip
-            command: |
-              sudo apt-get update
-              sudo apt-get install python3-pip python-dev
-        - run:
-            name: Install aws cli
-            command: sudo pip install awscli
-        - aws_assume_oidc_role:
-            job_type: << parameters.job_type >>
 
   # Assuming that profile-name and role-session-name
   # should match the last part of the project's github
