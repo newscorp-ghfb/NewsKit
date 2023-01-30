@@ -675,7 +675,7 @@ jobs:
       - run:
           name: Install aws cli
           command: sudo pip install awscli
-      - aws_assume_oidc_role_token:
+      - aws_assume_oidc_role_from_token:
           job_type: << parameters.job_type >>
 
   init_aws:
