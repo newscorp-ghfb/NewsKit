@@ -231,7 +231,6 @@ commands:
   # repo: https://github.com/newscorp-ghfb/newskit
   aws_assume_oidc_role:
     description: Assume AWS role using OIDC
-    executor: aws-cli/default
     steps:
       - checkout
       - aws-cli/setup:
@@ -635,6 +634,7 @@ jobs:
           command: sudo pip install awscli
       - aws_assume_oidc_role:
           job_type: << parameters.job_type >>
+          executor: aws-cli/default
           environment:
             AWS_DEFAULT_REGION: eu-west-1
             AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
