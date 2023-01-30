@@ -1,11 +1,11 @@
 variable "tfstate_bucket" {
   description = "Terraform state bucket name"
-  default     = "nu-sun-terraform-state"
+  default     = "newskit-docs-dev-tfstate"
 }
 
 variable "tfstate_key" {
   description = "Terraform state bucket key"
-  default     = "product-platforms/newskit/s3/terraform.tfstate"
+  default     = "newskit-docs-dev-terraform-state"
 }
 
 variable "environment" {
@@ -20,7 +20,7 @@ variable "tag_name_suffix" {
 
 variable "docs_bucket" {
   description = "First bucket name per account for the documentation site"
-  default     = "ncu-newskit-docs"
+  default     = "ncu-newskit-docs-pr"
 }
 
 variable "environment2" {
