@@ -1,5 +1,8 @@
 version: 2.1
-
+executors:
+  aws-cli-and-terraform:
+    docker:
+      - image: newsuk/terraform:1.2.1
 orbs:
   slack: circleci/slack@4.10.1
   aws-cli: circleci/aws-cli@3.1
@@ -728,19 +731,19 @@ jobs:
       job_type:
         type: string
         default: 'oidc'
-    executor: python
+    executor: aws-cli-and-terraform
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run:
-          name: Install python and pip
-          command: |
-            sudo apt-get update
-            sudo apt-get install python3-pip python-dev
-      - run:
-          name: Install aws cli
-          command: sudo pip install awscli
+      #- run:
+      #    name: Install python and pip
+      #    command: |
+      #      sudo apt-get update
+      #      sudo apt-get install python3-pip python-dev
+      #- run:
+      #    name: Install aws cli
+      #    command: sudo pip install awscli
       - aws_assume_oidc_role_from_token:
           job_type: << parameters.job_type >>
 
