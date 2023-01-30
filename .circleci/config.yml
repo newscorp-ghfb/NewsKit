@@ -231,6 +231,15 @@ commands:
   # repo: https://github.com/newscorp-ghfb/newskit
   aws_assume_oidc_role:
     description: Assume AWS role using OIDC
+    parameters:
+      #aws_assume_role_arn:
+      #  description: AWS ARN For Assume Role
+      #  type: string
+      #  default: '${AWS_ASSUME_ROLE_ARN}'
+      job_type:
+        description: The job type to be used
+        type: string
+        default: 'oidc'
     steps:
       - aws-cli/setup:
           profile-name: newskit
