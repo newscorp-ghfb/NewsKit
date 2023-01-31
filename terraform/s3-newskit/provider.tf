@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   required_version = ">= 0.12" # eg 0.12.28
   backend "s3" {
-    bucket = "newskit-services-dev-terraform-state" # newskit-docs-dev-tfstate
+    bucket = "newskit-docs-dev-terraform-state" # newskit-docs-dev-terraform-state
     key    = "product-platforms/newskit/s3-newskit/terraform.tfstate"
     region = "eu-west-1"
   }
