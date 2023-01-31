@@ -6,7 +6,8 @@ const PERCY_URL = 'https://percy.io';
 
 const CONFIG_FILE = 'percy-storybook.config.json';
 
-const log = value => process.stdout.write(`${value}\n`);
+// using stderr prevents logged values being returned
+const log = value => process.stderr.write(`${value}\n`);
 
 function apiCall(url, options) {
   return new Promise((resolve, reject) => {
@@ -72,6 +73,7 @@ async function run(headRefName) {
     )
     .map(({attributes: {name}}) => `^${name}$`);
 
+  log(`Updating ${CONFIG_FILE}`);
   fs.writeFileSync(`./${CONFIG_FILE}`, JSON.stringify({include}));
 
   return true;
