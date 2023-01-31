@@ -130,6 +130,10 @@ commands:
   terraform_init_oidc:
     description: Run Terraform Init
     parameters:
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       terraform_arg:
