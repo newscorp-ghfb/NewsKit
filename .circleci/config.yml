@@ -142,22 +142,23 @@ commands:
         default: ''
     steps:
       - run:
-          name: AWS init OIDC
+          name: AWS init Bash
           command: |
-            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
-            export AWS_DEFAULT_REGION="eu-west-1"
-            export AWS_ROLE_ARN="arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
+            source $BASH_ENV
+            #echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
+            #export AWS_DEFAULT_REGION="eu-west-1"
+            #export AWS_ROLE_ARN="arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
             # use the OpenID Connect token to obtain AWS credentials
-            echo "read"
-            (aws sts assume-role-with-web-identity \
-              --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}-${CIRCLE_JOB}" \
-              --web-identity-token $CIRCLE_OIDC_TOKEN \
-              --duration-seconds 3600 \
-              --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
-              --output text) > assume-role-with-web-identity.txt
-            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-role-with-web-identity.txt
-            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            #echo "read"
+            #(aws sts assume-role-with-web-identity \
+            #  --role-arn << parameters.aws_assume_role_arn >> \
+            #  --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}" \
+            #  --web-identity-token $CIRCLE_OIDC_TOKEN \
+            #  --duration-seconds 3600 \
+            #  --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+            #  --output text) > assume-role-with-web-identity.txt
+            #read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-role-with-web-identity.txt
+            #export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
       - run:
           name: Terraform init
           command: |
@@ -334,7 +335,7 @@ commands:
             # use the OpenID Connect token to obtain AWS credentials
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}-${CIRCLE_JOB}" \
+              --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
@@ -366,7 +367,7 @@ commands:
           command: |     
             #cd terraform/s3-newskit
             #terraform init -backend-config="key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate"
-            make tf-plan-s3-newskit
+            #make tf-plan-s3-newskit
 
   aws_assume_role_file:
     description: Assume AWS role from the workspace file
