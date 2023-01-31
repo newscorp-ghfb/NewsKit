@@ -9,6 +9,8 @@ const CONFIG_FILE = 'percy-storybook.config.json';
 // using stderr prevents logged values being returned
 const log = value => process.stderr.write(`${value}\n`);
 
+const throwError = () => process.exit(1);
+
 function apiCall(url, options) {
   return new Promise((resolve, reject) => {
     https
@@ -29,7 +31,8 @@ function percyApiCall(path) {
   const token = process.env.PERCY_TOKEN;
   if (!token) {
     log(`No Percy token found`);
-    throw Error();
+    throwError();
+    return false;
   }
   return apiCall(`${PERCY_URL}${path}`, {
     headers: {Authorization: `Token ${token}`},
@@ -46,7 +49,8 @@ async function getPercyBuildForBranch(branchName) {
     }
   }
   log(`No Percy build found for branch ${branchName}`);
-  throw Error();
+  throwError();
+  return false;
 }
 
 async function run(headRefName) {
