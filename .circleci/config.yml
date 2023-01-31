@@ -662,6 +662,27 @@ jobs:
               circleci-agent step halt
             fi
 
+  test_job_2:
+    # if there are any visual diffs we need to run the Percy comps tests to update the baselines
+    executor: node-large
+    steps:
+      - checkout_and_attach_workspace
+      - github-cli/setup
+      - run:
+          name: 'Check if updates required'
+          command: |
+            export PR_BRANCH_NAME=docs/PPDSC-2665-date-time-docs
+            echo "Found branch name: ${PR_BRANCH_NAME}"
+            export PERCY_TOKEN=$PERCY_COMPS_TOKEN
+            export UPDATES_REQUIRED=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
+            if [ $UPDATES_REQUIRED = "true" ]; then
+              echo "Baseline updates required; continuing job."
+              export PERCY_PARTIAL_BUILD=1
+            else
+              echo "No baseline updates required; finishing job." &&
+              circleci-agent step halt
+            fi
+
   comps_tests_conditional_run_to_update_baselines:
     # if there are any visual diffs we need to run the Percy comps tests to update the baselines
     executor: node-large
@@ -1257,6 +1278,7 @@ workflows:
       - install_cypress
       - download_headless_chrome
       - test_job
+      - test_job_2
       - build_icons:
           requires:
             - install_deps
