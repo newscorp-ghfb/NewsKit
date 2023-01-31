@@ -157,9 +157,9 @@ commands:
               --output text) > assume-<< parameters.package >>-plan.txt
             read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-plan.txt
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
-      - run:
-          name: Terraform init
-          command: |
+      #- run:
+      #    name: Terraform init
+      #    command: |
             echo "terraform cd"
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
