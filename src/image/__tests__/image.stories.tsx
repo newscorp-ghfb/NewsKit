@@ -134,7 +134,7 @@ export const StoryImageValidAndInvalidImageReference = () => (
         alt="Example Image"
       />
     </StorybookCase>
-    <StorybookCase title="Valid image reference">
+    <StorybookCase title="Invalid image reference">
       <Image
         src="/placeholder-3x2.invalid"
         loadingAspectRatio="3:2"
@@ -148,7 +148,7 @@ StoryImageValidAndInvalidImageReference.storyName =
 
 export const StoryImagePlaceholderIcon = () => (
   <StorybookPage columns="1fr 1fr">
-    <StorybookCase title="Valid image reference">
+    <StorybookCase title="Invalid image with placeholder icon">
       <Image
         placeholderIcon
         src="/placeholder-3x2.invalid"
@@ -167,7 +167,7 @@ export const StoryImagePlaceholderIcon = () => (
         }}
       />
     </StorybookCase>
-    <StorybookCase title="Invalid image with custom placeholder icon">
+    <StorybookCase title="Invalid image with custom placeholder icon size">
       <Image
         placeholderIcon
         src="/placeholder-3x2.invalid"
