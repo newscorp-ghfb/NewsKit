@@ -142,23 +142,21 @@ commands:
         default: ''
     steps:
       - run:
-          name: AWS init Bash
+          name: AWS init OICD
           command: |
-            source $BASH_ENV
-            #echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
-            #export AWS_DEFAULT_REGION="eu-west-1"
-            #export AWS_ROLE_ARN="arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
+            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
+            export AWS_DEFAULT_REGION="eu-west-1"
             # use the OpenID Connect token to obtain AWS credentials
-            #echo "read"
-            #(aws sts assume-role-with-web-identity \
-            #  --role-arn << parameters.aws_assume_role_arn >> \
-            #  --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}" \
-            #  --web-identity-token $CIRCLE_OIDC_TOKEN \
-            #  --duration-seconds 3600 \
-            #  --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
-            #  --output text) > assume-role-with-web-identity.txt
-            #read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-role-with-web-identity.txt
-            #export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            echo "read"
+            (aws sts assume-role-with-web-identity \
+              --role-arn << parameters.aws_assume_role_arn >> \
+              --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}" \
+              --web-identity-token $CIRCLE_OIDC_TOKEN \
+              --duration-seconds 3600 \
+              --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+              --output text) > assume-role-with-web-identity.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-role-with-web-identity.txt
+            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
       - run:
           name: Terraform init
           command: |
