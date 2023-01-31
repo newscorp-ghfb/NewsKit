@@ -6,8 +6,14 @@ const PERCY_URL = 'https://percy.io';
 
 const CONFIG_FILE = 'percy-storybook.config.json';
 
-// using stderr prevents logged values being returned
+// Use stderr to stop logs being returned to parent process
 const log = value => process.stderr.write(`${value}\n`);
+
+const RESPONSES = {
+  ERROR: 'ERROR',
+  UPDATES_REQUIRED: 'UPDATES_REQUIRED',
+  NO_UPDATES_REQUIRED: 'NO_UPDATES_REQUIRED',
+};
 
 function apiCall(url, options) {
   return new Promise((resolve, reject) => {
@@ -49,7 +55,7 @@ async function getPercyBuildForBranch(branchName) {
   throw Error();
 }
 
-async function run(headRefName) {
+async function checkUpdates(headRefName) {
   const branchName = headRefName.trim();
   log(`Checking if baselines to be updated after ${branchName} was merged`);
 
@@ -78,5 +84,12 @@ async function run(headRefName) {
 
   return true;
 }
+
+const run = async headRefName =>
+  checkUpdates(headRefName)
+    .then(res =>
+      res ? RESPONSES.UPDATES_REQUIRED : RESPONSES.NO_UPDATES_REQUIRED,
+    )
+    .catch(() => RESPONSES.ERROR);
 
 module.exports = {run};
