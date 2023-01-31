@@ -328,7 +328,7 @@ commands:
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
             export AWS_DEFAULT_REGION="eu-west-1"
             # use the OpenID Connect token to obtain AWS credentials
-            $(aws sts assume-role-with-web-identity \
+            (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
               --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}-${CIRCLE_JOB}" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
