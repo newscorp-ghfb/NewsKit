@@ -142,7 +142,7 @@ commands:
         default: ''
     steps:
       - run:
-          name: AWS init OICD
+          name: Terraform init OICD
           command: |
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
             export AWS_DEFAULT_REGION="eu-west-1"
@@ -183,6 +183,43 @@ commands:
             export TF_LOG_PATH="./terraform-debug.log"
             terraform init << parameters.terraform_arg >>
 
+  terraform_plan_oidc:
+    description: Run Terraform Plan
+    parameters:
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
+      package:
+        type: string
+      terraform_arg:
+        description: provide terraform arguments
+        type: string
+        default: ''
+    steps:
+      - run:
+          name: Terraform plan OICD
+          command: |
+            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
+            export AWS_DEFAULT_REGION="eu-west-1"
+            # use the OpenID Connect token to obtain AWS credentials
+            echo "read"
+            (aws sts assume-role-with-web-identity \
+              --role-arn << parameters.aws_assume_role_arn >> \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-plan" \
+              --web-identity-token $CIRCLE_OIDC_TOKEN \
+              --duration-seconds 3600 \
+              --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+              --output text) > assume-<< parameters.package >>-plan.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-plan.txt
+            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            echo "terraform cd"
+            cd terraform/<< parameters.package >>
+            export TF_LOG="TRACE"
+            export TF_LOG_PATH="./terraform-debug.log"
+            echo "terraform init"
+            terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
+
   terraform_plan:
     description: Run Terraform Plan
     parameters:
@@ -199,6 +236,43 @@ commands:
             source $BASH_ENV
             cd terraform/<< parameters.package >>
             terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
+
+  terraform_apply_oidc:
+    description: Run Terraform Apply
+    parameters:
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
+      package:
+        type: string
+      terraform_arg:
+        description: provide terraform arguments
+        type: string
+        default: ''
+    steps:
+      - run:
+          name: Terraform apply OICD
+          command: |
+            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
+            export AWS_DEFAULT_REGION="eu-west-1"
+            # use the OpenID Connect token to obtain AWS credentials
+            echo "read"
+            (aws sts assume-role-with-web-identity \
+              --role-arn << parameters.aws_assume_role_arn >> \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-plan" \
+              --web-identity-token $CIRCLE_OIDC_TOKEN \
+              --duration-seconds 3600 \
+              --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+              --output text) > assume-<< parameters.package >>-plan.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-plan.txt
+            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            echo "terraform cd"
+            cd terraform/<< parameters.package >>
+            export TF_LOG="TRACE"
+            export TF_LOG_PATH="./terraform-debug.log"
+            echo "terraform init"
+            terraform apply -lock=false -input=false tfplan
 
   terraform_apply:
     description: Run Terraform Apply
@@ -801,7 +875,7 @@ jobs:
             - terraform_init_oidc:
                 package: << parameters.package >>
                 terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
-            - terraform_plan:
+            - terraform_plan_oidc:
                 package: << parameters.package >>
                 terraform_arg: -var-file=<< parameters.environment >>.tfvars
       - unless:
@@ -810,7 +884,7 @@ jobs:
             - terraform_init_oidc:
                 package: << parameters.package >>
                 terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
-            - terraform_plan:
+            - terraform_plan_oidc:
                 package: << parameters.package >>
       #- when:
       #    condition: << parameters.apply >>
