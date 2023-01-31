@@ -150,7 +150,7 @@ commands:
             echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-plan" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
@@ -333,7 +333,7 @@ commands:
             # use the OpenID Connect token to obtain AWS credentials
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "CircleCI-${CIRCLE_WORKFLOW_ID}" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.job_type >>-init" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
