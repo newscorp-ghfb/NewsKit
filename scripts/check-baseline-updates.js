@@ -6,8 +6,13 @@ const PERCY_URL = 'https://percy.io';
 
 const CONFIG_FILE = 'percy-storybook.config.json';
 
-// using stderr prevents logged values being returned
-const log = value => process.stderr.write(`${value}\n`);
+const log = value => process.stdout.write(`${value}\n`);
+
+const RESPONSES = {
+  ERROR: 'ERROR',
+  UPDATES_REQUIRED: 'UPDATES_REQUIRED',
+  NO_UPDATES_REQUIRED: 'NO_UPDATES_REQUIRED',
+};
 
 function apiCall(url, options) {
   return new Promise((resolve, reject) => {
@@ -81,7 +86,9 @@ async function checkUpdates(headRefName) {
 
 const run = async headRefName =>
   checkUpdates(headRefName)
-    .then(res => res)
-    .catch(() => process.exit(1));
+    .then(res =>
+      res ? RESPONSES.UPDATES_REQUIRED : RESPONSES.NO_UPDATES_REQUIRED,
+    )
+    .catch(() => RESPONSES.ERROR);
 
 module.exports = {run};
