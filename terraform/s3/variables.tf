@@ -25,5 +25,5 @@ variable "tag_name_suffix2" {
 
 variable "docs_bucket2" {
   description = "Second bucket name per account for the documentation site"
-  default     = "ncu-newskit-docs-dev"
+  default     = "ncu-ngn-newskit-docs-dev"
 }
