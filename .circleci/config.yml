@@ -695,6 +695,7 @@ jobs:
             export PR_BRANCH_NAME=docs/PPDSC-2665-date-time-docs
             echo "Found branch name: ${PR_BRANCH_NAME}"
             export UPDATES_REQUIRED=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
+            echo "Result: ${UPDATES_REQUIRED}"
             if [ $UPDATES_REQUIRED = "true" ]; then
               echo "Baseline updates required; continuing job."
               export PERCY_PARTIAL_BUILD=1
