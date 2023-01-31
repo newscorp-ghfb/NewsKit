@@ -141,6 +141,23 @@ export const StoryTransitions = () => (
 );
 StoryTransitions.storyName = 'Transitions';
 
+export const StoryTransitions2 = () => (
+  <StorybookPage columns={blockGridCols}>
+    <Block
+      marginBlockEnd="space030"
+      paddingInline="space030"
+      paddingBlock="space030"
+      stylePreset="blockTransition"
+      transitionPreset="customBackgroundColorChange"
+    >
+      <Text stylePreset="textTransition">
+        Block with backgroundColorChange transition preset applied
+      </Text>
+    </Block>
+  </StorybookPage>
+);
+StoryTransitions2.storyName = 'Transitions-2';
+
 export const StoryStylingOverrides = () => (
   <StorybookPage columns={blockGridCols}>
     <StorybookCase title="Style">
