@@ -49,7 +49,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Components',
+      type: 'Feedback & Status',
       name: 'Banner',
       hero: {
         illustration: 'components/banner/banner-illustration',
@@ -185,7 +185,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
           name: 'Icon',
           description: 'Indicates the status or intent.',
           component: ['Icon'],
-          optional: true,
+          optional: undefined,
         },
         {
           name: 'Title',
@@ -197,7 +197,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
           name: 'Message',
           description: 'Communicates what’s about to happen or has happened.',
           component: ['Text Block', 'Link'],
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Action(s)',
@@ -400,7 +400,14 @@ const BannerComponent = (layoutProps: LayoutProps) => (
             description: (
               <>
                 Needs to be set when the banner appears on the screen at
-                runtime. Learn more about aria-live at MDN Web Docs.
+                runtime.{' '}
+                <Link
+                  href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
+                  target="_blank"
+                >
+                  Learn more about aria-live at MDN Web Docs
+                </Link>
+                .
               </>
             ),
             userSupplied: true,
