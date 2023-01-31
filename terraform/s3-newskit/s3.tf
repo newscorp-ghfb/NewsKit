@@ -40,7 +40,8 @@ resource "aws_s3_bucket_policy" "s3_docs_policy" {
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": [
-					"arn:aws:iam::696065950852:*"
+					"arn:aws:iam::696065950852:*",
+					"arn:aws:iam::005057636819:*"
 				]
 			},
 			"Action": [
@@ -97,6 +98,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy2" {
 			"Effect": "Allow",
 			"Principal": {
 				"AWS": [
+					"arn:aws:iam::696065950852:*",
 					"arn:aws:iam::005057636819:*"
 				]
 			},
@@ -111,3 +113,4 @@ resource "aws_s3_bucket_policy" "s3_docs_policy2" {
 }
 POLICY
 }
+
