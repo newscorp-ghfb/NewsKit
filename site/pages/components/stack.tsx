@@ -207,7 +207,7 @@ const StackComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.7.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/stack',
-      storybookId: 'components-stack--story-stack',
+      storybookId: 'components-stack--story-stack-with-defaults-only',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2057%3A5&t=iP77Jd8O6cCJYM4p-1',
     }}
@@ -793,8 +793,17 @@ const StackComponent = (layoutProps: LayoutProps) => (
               name: 'inline',
               type: 'boolean',
               default: 'false',
-              description:
-                'If true, the stack container will be displayed as inline-flex',
+              description: (
+                <>
+                  If true, the stack container will be displayed as{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+                    target="_blank"
+                  >
+                    inline-flex
+                  </Link>
+                </>
+              ),
             },
             {
               name: 'flow',
@@ -879,15 +888,37 @@ const StackComponent = (layoutProps: LayoutProps) => (
               name: 'flowGrow',
               type: 'boolean | number',
               default: 'false',
-              description:
-                'CSS attribute that defines the flex grow factor of a flex item main size. If true, flexGrow is set to 1.',
+              description: (
+                <>
+                  CSS attribute that defines the flex grow factor of a{' '}
+                  <Link
+                    href="https://www.w3.org/TR/css-flexbox/#main-size"
+                    target="_blank"
+                  >
+                    flex item main size
+                  </Link>
+                  . If true, <InlineCode>flexGrow</InlineCode> is set to 1.
+                </>
+              ),
             },
             {
               name: 'flexShrink',
               type: 'boolean | number',
               default: 'false',
-              description:
-                'CSS attribute that defines the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink. If true, flexShrink is set to 1.',
+              description: (
+                <>
+                  CSS attribute that defines the flex shrink factor of a flex
+                  item. If the size of all flex items is larger than the flex
+                  container, items shrink to fit according to{' '}
+                  <Link
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink"
+                    target="_blank"
+                  >
+                    flexShrink
+                  </Link>
+                  . If true, <InlineCode>flexShrink</InlineCode> is set to 1.
+                </>
+              ),
             },
             {
               name: 'flowReverse',
