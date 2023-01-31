@@ -6,7 +6,8 @@ const PERCY_URL = 'https://percy.io';
 
 const CONFIG_FILE = 'percy-storybook.config.json';
 
-const log = value => process.stdout.write(`${value}\n`);
+// Use stderr to stop logs being returned to parent process
+const log = value => process.stderr.write(`${value}\n`);
 
 const RESPONSES = {
   ERROR: 'ERROR',
