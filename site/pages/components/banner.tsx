@@ -178,7 +178,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The banner component contains one required elements and three optional elements.',
+        'The banner component contains one required element and three optional elements.',
 
       rows: [
         {
