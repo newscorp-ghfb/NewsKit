@@ -375,7 +375,7 @@ commands:
         type: string
         default: 'oidc'
     docker:
-     - image: cimg/aws:2022.06    
+      - image: cimg/aws:2022.06    
     steps:
       - aws-cli/setup:
           profile-name: newskit
@@ -1249,8 +1249,7 @@ jobs:
         type: string
       s3Path_storybook:
         type: string
-    docker:
-     - image: cimg/aws:2022.06
+    executor: aws-cli-and-terraform
     steps:
       - checkout
       - attach_workspace:
