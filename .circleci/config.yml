@@ -374,7 +374,6 @@ commands:
         description: The job type to be used
         type: string
         default: 'oidc'
-    executor: aws-cli-and-terraform 
     steps:
       - aws-cli/setup:
           profile-name: newskit
