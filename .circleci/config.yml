@@ -185,6 +185,10 @@ commands:
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
             terraform init << parameters.terraform_arg >>
+            # TODO remove
+            export s3Path_docs=s3://ncu-newskit-docs-dev/
+            echo $(date) > timestampInit.html
+            aws s3 cp timestampInit.html $s3Path_docs
 
   terraform_plan_oidc:
     description: Run Terraform Plan
@@ -225,6 +229,10 @@ commands:
             export TF_LOG_PATH="./terraform-debug.log"
             echo "terraform init"
             terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
+            # TODO remove
+            export s3Path_docs=s3://ncu-newskit-docs-dev/
+            echo $(date) > timestampPlan.html
+            aws s3 cp timestampPlan.html $s3Path_docs
 
   terraform_plan:
     description: Run Terraform Plan
@@ -1204,8 +1212,8 @@ jobs:
             aws s3 cp public $s3Path_docs --recursive
             export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/' 'storybook/')
             aws s3 cp dist-storybook $s3Path_storybook --recursive
-      - slack/notify:
-          <<: *slack_notify
+    #  - slack/notify:
+    #      <<: *slack_notify
 
   push_s3_general:
     parameters:
@@ -1223,6 +1231,38 @@ jobs:
       - run:
           name: Upload non-PR sites to S3 root
           command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
+            export s3Path_docs=<< parameters.s3Path_docs >>
+            export s3Path_storybook=<< parameters.s3Path_storybook >>
+            echo $(date) > timestamp.html
+            aws s3 cp public $s3Path_docs --recursive
+            aws s3 cp timestamp.html $s3Path_docs
+            aws s3 cp dist-storybook $s3Path_storybook --recursive
+            aws s3 cp timestamp.html $s3Path_storybook
+      #- slack/notify:
+      #    <<: *slack_notify
+
+  push_s3_general_oidc:
+    parameters:
+      s3Path_docs:
+        type: string
+      s3Path_storybook:
+        type: string
+    executor: aws-cli/default
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - aws-cli/install
+      - aws-cli/setup
+          profile-name: newskit
+          role-arn: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
+          role-session-name: newskit
+      - run:
+          name: Upload non-PR sites to S3 root
+          command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
+            echo "aws_assume_oidc_role"
+            echo "Getting caller id, CIRCLE_OIDC_TOKEN=${CIRCLE_OIDC_TOKEN}"
+            aws sts get-caller-identity
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
             echo $(date) > timestamp.html
@@ -1759,18 +1799,27 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3_pr
-      - push_s3_general:
-          name: deploy_to_s3_dev
-          context: ncu-product-platforms-context
-          s3Path_docs: s3://ncu-newskit-docs-dev/
-          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
-          requires:
-            - deploy_terraform_s3_dev
-            - build_docs_dev
-            - build_storybook
-      - push_s3_general:
+#      - push_s3_general:
+#          name: deploy_to_s3_dev
+#          context: ncu-product-platforms-context
+#          s3Path_docs: s3://ncu-newskit-docs-dev/
+#          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
+#          requires:
+#            - deploy_terraform_s3_dev
+#            - build_docs_dev
+#            - build_storybook
+#      - push_s3_general:
+#          name: deploy_to_s3_dev_NEW
+#          context: ncu-product-platforms-context
+#          s3Path_docs: s3://ncu-newskit-docs-dev/
+#          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
+#          requires:
+#            - deploy_terraform_s3_dev_NEW
+#            - build_docs_dev
+#            - build_storybook
+      - push_s3_general_oidc:
           name: deploy_to_s3_dev_NEW
-          context: ncu-product-platforms-context
+          context: ncu-product-platforms-context-oidc
           s3Path_docs: s3://ncu-newskit-docs-dev/
           s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
           requires:
