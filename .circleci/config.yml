@@ -150,12 +150,12 @@ commands:
             echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-plan" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
-              --output text) > assume-<< parameters.package >>-plan.txt
-            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-plan.txt
+              --output text) > assume-<< parameters.package >>-tf.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-tf.txt
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
             echo "terraform cd"
             cd terraform/<< parameters.package >>
@@ -206,12 +206,12 @@ commands:
             echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-plan" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
-              --output text) > assume-<< parameters.package >>-plan.txt
-            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-plan.txt
+              --output text) > assume-<< parameters.package >>-tf.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-tf.txt
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
             echo "terraform cd"
             cd terraform/<< parameters.package >>
@@ -260,12 +260,12 @@ commands:
             echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-plan" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
-              --output text) > assume-<< parameters.package >>-plan.txt
-            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-plan.txt
+              --output text) > assume-<< parameters.package >>-tf.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-<< parameters.package >>-tf.txt
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
             echo "terraform cd"
             cd terraform/<< parameters.package >>
@@ -886,11 +886,11 @@ jobs:
                 terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
             - terraform_plan_oidc:
                 package: << parameters.package >>
-      #- when:
-      #    condition: << parameters.apply >>
-      #    steps:
-      #      - terraform_apply:
-      #          package: << parameters.package >>
+      - when:
+          condition: << parameters.apply >>
+          steps:
+            - terraform_apply_oidc:
+                package: << parameters.package >>
 
   deploy_terraform:
     parameters:
@@ -1705,7 +1705,7 @@ workflows:
 
       - deploy_terraform_NEW:
           name: deploy_terraform_s3_dev_NEW
-          package: s3-newskit
+          package: s3/dev-newskit
           context: ncu-product-platforms-context-oidc
           apply: true
           tf_env: true
