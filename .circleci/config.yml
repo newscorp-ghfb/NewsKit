@@ -374,6 +374,8 @@ commands:
         description: The job type to be used
         type: string
         default: 'oidc'
+    docker:
+     - image: cimg/aws:2022.06    
     steps:
       - aws-cli/setup:
           profile-name: newskit
@@ -1247,16 +1249,18 @@ jobs:
         type: string
       s3Path_storybook:
         type: string
-    executor: aws-cli/default
+    docker:
+     - image: cimg/aws:2022.06
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
-      - aws-cli/install
       - aws-cli/setup
-          profile-name: newskit
-          role-arn: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
-          role-session-name: newskit
+          aws-region: "eu-west-1"
+          session-duration: 1800
+          profile-name: "NEWSKIT-OIDC-PROFILE"
+          role-arn: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
+          role-session-name: "${CIRCLE_WORKFLOW_ID}-s3-push"
       - run:
           name: Upload non-PR sites to S3 root
           command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
