@@ -136,6 +136,9 @@ commands:
         default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
+      subpackage:
+        type: string
+        default: s3
       terraform_arg:
         description: provide terraform arguments
         type: string
@@ -150,7 +153,7 @@ commands:
             echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-tf" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
@@ -192,6 +195,9 @@ commands:
         default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
+      subpackage:
+        type: string
+        default: s3
       terraform_arg:
         description: provide terraform arguments
         type: string
@@ -206,7 +212,7 @@ commands:
             echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-tf" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
@@ -246,6 +252,9 @@ commands:
         default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
+      subpackage:
+        type: string
+        default: s3
       terraform_arg:
         description: provide terraform arguments
         type: string
@@ -260,7 +269,7 @@ commands:
             echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.package >>-tf" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
