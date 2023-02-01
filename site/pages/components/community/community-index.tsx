@@ -5,6 +5,7 @@ import {
   GridLayout,
   Button,
   TextBlock,
+  Divider,
   GridLayoutItem,
 } from 'newskit';
 import {Link} from '../../../components/link';
@@ -109,7 +110,7 @@ const CommunityIndex = ({
       }}
       layoutProps={layoutProps}
       pageIntroduction={{
-        type: 'Community',
+        type: 'About',
         name: pageName,
         introduction: pageDescription,
         hero: {
@@ -121,7 +122,7 @@ const CommunityIndex = ({
     >
       <ComponentPageCell>
         <ContentPrimary id="community-components" showSeparator>
-          {listings.map(listing => (
+          {listings.map((listing, index) => (
             <Block marginBlockEnd="space090">
               <TextBlock
                 stylePreset="inkBase"
@@ -235,6 +236,11 @@ const CommunityIndex = ({
                   )}
                 </GridLayout>
               </GridLayout>
+              {index !== listings.length - 1 && (
+                <Block paddingBlockStart="space070" marginBlockEnd="space070">
+                  <Divider />
+                </Block>
+              )}
             </Block>
           ))}
         </ContentPrimary>
