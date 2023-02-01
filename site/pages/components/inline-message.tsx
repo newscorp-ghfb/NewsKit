@@ -51,7 +51,8 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
       introduced: 'v3.3.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/inline-message',
-      figmaUrl: '',
+      figmaUrl:
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=3826%3A144444&t=ysdLVMGI1BOxtCPo-0',
     }}
     interactiveDemo={{
       introduction:

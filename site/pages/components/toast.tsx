@@ -51,7 +51,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       introduced: 'v3.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/toast',
       figmaUrl:
-        'https://www.figma.com/file/i1jp5qmzkADF5z3XmPrxfp/02---NK-Web---Components---Toast?node-id=0%3A1',
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2289%3A310&t=9INLWlTCXpYsQH6O-0',
     }}
     interactiveDemo={{
       introduction:
