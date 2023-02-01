@@ -374,8 +374,7 @@ commands:
         description: The job type to be used
         type: string
         default: 'oidc'
-    docker:
-      - image: cimg/aws:2022.06    
+    executor: aws-cli-and-terraform 
     steps:
       - aws-cli/setup:
           profile-name: newskit
