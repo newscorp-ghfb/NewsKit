@@ -185,10 +185,6 @@ commands:
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
             terraform init << parameters.terraform_arg >>
-            # TODO remove
-            export s3Path_docs=s3://ncu-newskit-docs-dev/
-            echo $(date) > timestampInit.html
-            aws s3 cp timestampInit.html $s3Path_docs
 
   terraform_plan_oidc:
     description: Run Terraform Plan
@@ -1261,8 +1257,9 @@ jobs:
       - run:
           name: Upload non-PR sites to S3 root
           command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
-            echo "aws_assume_oidc_role"
+            echo "push_s3_general_oidc"
             echo "Getting caller id, CIRCLE_OIDC_TOKEN=${CIRCLE_OIDC_TOKEN}"
+            export AWS_DEFAULT_REGION="eu-west-1"
             aws sts get-caller-identity
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
