@@ -39,10 +39,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy" {
 			"Sid": "ProductPlatformsManage",
 			"Effect": "Allow",
 			"Principal": {
-				"AWS": [
-					"arn:aws:iam::696065950852:*",
-					"arn:aws:iam::005057636819:*"
-				]
+				"AWS": var.s3_write_principals
 			},
 			"Action": [
 				"s3:PutObject"
@@ -97,10 +94,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy2" {
 			"Sid": "ProductPlatformsManage",
 			"Effect": "Allow",
 			"Principal": {
-				"AWS": [
-					"arn:aws:iam::696065950852:*",
-					"arn:aws:iam::005057636819:*"
-				]
+				"AWS": var.s3_write_principals
 			},
 			"Action": [
 				"s3:PutObject"
