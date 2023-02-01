@@ -61,8 +61,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.0',
-      codeUrl:
-        'https://github.com/newscorp-ghfb/ncu-newskit/tree/develop/src/banner',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/banner',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2163%3A45665&t=FbJDxZalohOA9JXM-0',
     }}
