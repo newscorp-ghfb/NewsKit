@@ -1255,11 +1255,11 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - aws-cli/setup
+      - aws-cli/setup:
           aws-region: "eu-west-1"
+          role-arn: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
           session-duration: 1800
           profile-name: "NEWSKIT-OIDC-PROFILE"
-          role-arn: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
           role-session-name: "${CIRCLE_WORKFLOW_ID}-s3-push"
       - run:
           name: Upload non-PR sites to S3 root
