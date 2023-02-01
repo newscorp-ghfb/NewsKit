@@ -25,7 +25,7 @@ const commonPropsRows = [
     name: 'state',
     type: ['valid', 'invalid', 'disabled'],
     description:
-      'If provided, renders the FormInput Select in a valid, invalid, or disabled state. It can be submitted within a form.',
+      'If provided, renders the formInput select in a valid, invalid or disabled state. Can be submitted within a form',
   },
   {
     name: 'useModal',
@@ -33,9 +33,9 @@ const commonPropsRows = [
     type: 'MQ<boolean>',
     description: (
       <>
-        If provided, Select options appear in a{' '}
+        If provided, select options appear in a{' '}
         <Link href="/components/modal" target="_blank">
-          Modal
+          modal
         </Link>{' '}
         (with overlay).
       </>
@@ -75,14 +75,14 @@ const commonOverridesRows = [
     attribute: 'width',
     type: 'MQ<string>',
     default: '100%',
-    description: `If provided, this overrides the minWidth of the Select.`,
+    description: `If provided, overrides the minWidth of the select.`,
   },
   {
     attribute: 'button.stylePreset',
     type: 'MQ<string>',
     default: 'inputField',
     description:
-      'If provided, overrides the stylePreset of the Select input container.',
+      'If provided, overrides the stylePreset of the select input container.',
   },
   {
     attribute: 'button.typographyPreset',
@@ -92,7 +92,7 @@ const commonOverridesRows = [
       'medium = utilityBody020',
       'large = utilityBody030',
     ],
-    description: 'If provided, this overrides the input & placeholder text.',
+    description: 'If provided, overrides the input and placeholder text.',
   },
   {
     attribute: 'button.spaceInset(deprecated)',
@@ -102,21 +102,21 @@ const commonOverridesRows = [
       'medium = spaceInset020',
       'large = spaceInset030',
     ],
-    description: `Use paddingBlock and paddingInline instead. If provided, this overrides the button padding.`,
+    description: `Use paddingBlock and paddingInline instead. If provided, overrides the button padding.`,
   },
   {
     attribute: 'button.spaceStack(deprecated)',
     type: 'MQ<string>',
     default: 'space020',
     description:
-      'This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the end margin.',
+      'This property is deprecated. Use marginBlockEnd instead. If provided, overrides the end margin.',
   },
   {
     attribute: 'button.spaceInline',
     type: 'MQ<string>',
     default: 'space020',
     description:
-      'If provided, this overrides the inline space of the Select input container.',
+      'If provided, overrides the inline space of the select input container.',
   },
 
   {
@@ -124,7 +124,7 @@ const commonOverridesRows = [
     type: 'MQ<string>',
     default: 'indeterminateProgressIndicatorPrimary',
     description:
-      'If provided, this overrides the stylePreset of the Select input container loading indicator.',
+      'If provided, overrides the stylePreset of the select input container loading indicator.',
   },
   {
     attribute: 'button.indicatorIcon',
@@ -148,28 +148,27 @@ const commonOverridesRows = [
     type: 'MQ<string>',
     default: 'iconSize020',
     description:
-      'If provided, this overrides the component passed to the start enhancer.',
+      'If provided, overrides the component passed to the start enhancer.',
   },
   {
     attribute: 'button.startEnhancer.inlineSpace',
     type: 'MQ<string>',
     default: 'space020',
     description:
-      'If provided, this overrides the inline space of the start enhancer.',
+      'If provided, overrides the inline space of the start enhancer.',
   },
   {
     attribute: 'button.endEnhancer.iconSize',
     type: 'MQ<string>',
     default: 'iconSize020',
     description:
-      'If provided, this overrides the component passed to the end enhancer.',
+      'If provided, overrides the component passed to the end enhancer.',
   },
   {
     attribute: 'button.endEnhancer.inlineSpace',
     type: 'MQ<string>',
     default: 'space020',
-    description:
-      'If provided, this overrides the inline space of the end enhancer.',
+    description: 'If provided, overrides the inline space of the end enhancer.',
   },
   ...prefixLogicalProps(logicalPaddingOverrideProps, 'button'),
   ...prefixLogicalProps(logicalMarginOverrideProps, 'button'),
@@ -177,42 +176,33 @@ const commonOverridesRows = [
     attribute: 'panel.stylePreset',
     type: 'MQ<string>',
     default: 'selectPanel',
-    description:
-      'If provided, this overrides the stylePreset of the Select panel.',
+    description: 'If provided, overrides the stylePreset of the select panel.',
   },
   {
     attribute: 'panel.maxHeight',
     type: 'MQ<string>',
     default: ['small = 184px', 'medium = 272px', 'large = 360px'],
-    description:
-      'If provided, this overrides the maxHeight of the Select panel.',
+    description: 'If provided, overrides the maxHeight of the select panel.',
   },
   {
     attribute: 'panel.spaceInset(deprecated)',
     type: 'MQ<string>',
     default: 'spaceInset020',
-    description: `Use paddingBlock and paddingInline instead. If provided, this overrides the panel padding.`,
+    description: `Use paddingBlock and paddingInline instead. If provided, overrides the panel padding.`,
   },
   {
     attribute: 'panel.spaceStack(deprecated)',
     type: 'MQ<string>',
     default: 'spaceStack010',
     description:
-      'This property is deprecated. Use marginBlockEnd instead. If provided, this overrides the end margin.',
-  },
-  {
-    attribute: 'panel.zIndex',
-    type: 'layer | string',
-    default: 'layer',
-    description:
-      'If provided, this overrides the zIndex of the select panel. When set to "layer" the panel renders in LayerOrganizer.',
+      'This property is deprecated. Use marginBlockEnd instead. If provided, overrides the end margin.',
   },
   {
     attribute: 'modal.panel.width',
     type: 'MQ<string>',
     default: '60vw',
     description:
-      'If provided, this overrides the width property of the Modal panel.',
+      'If provided, overrides the width property of the modal panel.',
   },
   ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
   ...prefixLogicalProps(logicalMarginOverrideProps, 'panel'),
@@ -223,15 +213,13 @@ const selectOptionOverrides = [
     attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'selectOptionItem',
-    description:
-      'If provided, this overrides the stylePreset of the Select option.',
+    description: 'If provided, overrides the stylePreset of the select option.',
   },
   {
     attribute: 'minHeight',
     type: 'MQ<string>',
     default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
-    description:
-      'If provided, this overrides the minHeight of the Select option.',
+    description: 'If provided, overrides the minHeight of the select option.',
   },
   {
     attribute: 'typographyPreset',
@@ -242,7 +230,7 @@ const selectOptionOverrides = [
       'large = utilityBody030',
     ],
     description:
-      'If provided, this overrides the typographyPreset of the Select option.',
+      'f provided, overrides the typographyPreset of the select option.',
   },
   {
     attribute: 'spaceInset(deprecated)',
@@ -259,7 +247,7 @@ const selectOptionOverrides = [
     type: 'MQ<string>',
     default: 'space020',
     description:
-      'If provided, this overrides the inline space of the Select option.',
+      'If provided, overrides the inline space of the select option.',
   },
   ...logicalMarginOverrideProps,
   ...logicalPaddingOverrideProps,
@@ -270,47 +258,47 @@ const selectOptionProps = [
     name: 'value',
     type: 'string',
     required: true,
-    description: 'Defines the value of the SelectOption',
+    description: 'Defines the value of the selectOption',
   },
   {
     name: 'children',
     type: 'React.ReactNode',
     required: true,
     default: '',
-    description: 'Label and icon(s) of the SelectOption.',
+    description: 'Label and icon(s) of the selectOption.',
   },
   {
     name: 'selected',
     type: 'boolean',
     default: '',
-    description: 'If provided, renders the SelectOption in a selected state.',
+    description: 'If provided, renders the selectOption in a selected state.',
   },
   {
     name: 'defaultSelected',
     type: 'boolean',
     default: '',
     description:
-      'If provided, renders the SelectOption in a selected state by default.',
+      'If provided, renders the selectOption in a selected state by default.',
   },
   {
     name: 'selectedIcon',
     type: 'React.ReactNode',
     default: '',
-    description: 'Icon rendered inside the SelectOption.',
+    description: 'Icon rendered inside the selectOption.',
   },
   {
     name: 'selectedDisplay',
     type: 'React.ReactNode',
     default: '',
     description:
-      'Display value rendered inside the SelectOption (supports custom display).',
+      'Display value rendered inside the selectOption (supports custom display).',
   },
 ];
 
 const selectOverridesFooter = (
   <InlineMessage>
-    Checkout <Link href="/components/modal">Modal component</Link> for all props
-    and overrides
+    Check out the <Link href="/components/modal">modal</Link> for all props and
+    overrides.
   </InlineMessage>
 );
 
@@ -319,7 +307,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Select',
       description:
-        'Select components allow users to select one option from a list. They typically appear in forms.',
+        'Selects let users select one option from a list. They typically appear in forms.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -328,7 +316,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/select/select-illustration',
       },
-      introduction: `Select components allow users to select one option from a list. They typically appear in forms.`,
+      introduction: `Selects let users select one option from a list. They typically appear in forms.`,
     }}
     componentDefaultsKey="select"
     meta={{
@@ -345,20 +333,20 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       media: getIllustrationComponent('components/select/anatomy'),
       rows: [
         {
-          name: 'Input Container',
-          description: 'Interactive input area',
+          name: 'Input container',
+          description: 'Interactable input area',
           component: ['HTML Input', 'Block'],
           optional: undefined,
         },
         {
-          name: 'Start Enhancer',
+          name: 'Start enhancer',
           description:
-            'Used to add a component to the start of the input container. Eg. an Icon or Button',
+            'Adds a component to the start of the input container (e.g. icon or button)',
           component: 'React.ReactNode',
           optional: true,
         },
         {
-          name: 'Input & Placeholder Text',
+          name: 'Input & Placeholder text',
           description: (
             <>
               Input text - a value the user has entered into an input.
@@ -368,34 +356,31 @@ const SelectComponent = (layoutProps: LayoutProps) => (
               of an input
             </>
           ),
-          component: [
-            'Text Block (input)',
-            'HTML attribute (placeholder text)',
-          ],
+          component: ['Text Block'],
           optional: undefined,
         },
         {
           name: 'Validation icon',
           description:
-            'An icon used to indicate if the input is required and in a valid or invalid state. Validation is set on the Form',
+            'Indicate if the input is required and in a valid or invalid state. Use the form to set validation',
           component: 'Icon',
           optional: undefined,
         },
         {
-          name: 'End Enhancer',
+          name: 'End enhancer',
           description:
-            'Used to add a component to the end of the input container. Eg. an Icon or Button',
+            'Adds a component to the end of the input container (e.g. icon or button)',
           component: 'React.Reactnode',
           optional: true,
         },
         {
           name: 'Panel',
-          description: 'Container that contained a list of option items',
+          description: 'Container with a list of option items',
           component: 'Block',
           optional: undefined,
         },
         {
-          name: 'Option Item',
+          name: 'Option item',
           description: 'Option item that can be selected from multiple options',
           component: 'Div',
           optional: undefined,
@@ -403,23 +388,21 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     options={{
-      introduction:
-        'The Select component has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The select component has options for different use cases:',
       cards: [
         {
           title: 'Size',
           description:
-            'There are three sizes of Select; small, medium, and large. The input container, placeholder/input text, start and end enhancers change size. Selects match the same height as the Button and other inputs such as the Text Field, to align when used together.',
+            'The select component comes in small, medium and large. The input container, placeholder/input text and start/end enhancers change size. Selects should match the height of the button and other inputs (e.g. text field) when used together.',
           media: getIllustrationComponent('components/select/options/size'),
         },
         {
           title: 'Select for mobile',
           description: (
             <>
-              There is an option for Select options to appear in a Modal (with
-              overlay), which is intended for long lists of options eg.
-              presenting a list of countries to select from in a{' '}
-              <Link href="/components/form/">Form.</Link>
+              Select options can appear in a modal (with overlay). This is
+              intended for long lists of options (e.g. presenting a list of
+              countries to select from in a form).
             </>
           ),
           media: getIllustrationComponent('components/select/options/mobile'),
@@ -427,13 +410,13 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Width',
           description:
-            'The width of a Select can be customised appropriately for its context, using full-width or a fixed-width value.',
+            'Customise the width of a select using full-width or a fixed-width value.',
           media: getIllustrationComponent('components/select/options/width'),
         },
         {
           title: 'Min-height',
           description:
-            'The minimum height of a Select input can be customised appropriately for its context. Additionally, the minimum height of the Select panel (containing the option items) can be customised appropriately for its context.',
+            'Customise the minimum height of both a select input and the select panel (containing the option items).',
           media: getIllustrationComponent(
             'components/select/options/min-height',
           ),
@@ -442,22 +425,17 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           title: 'Placeholder text',
           description: (
             <>
-              Placeholder text can be displayed to provide the user with a short
-              hint that describes the content that is expected to be inputted by
-              the user (e.g. a sample value or a short description of the
-              expected format).
-              <br />
-              <br />
-              The short hint is displayed in the input container before the user
-              enters a value.
+              Use placeholder text to give the user a short hint about what to
+              input (e.g. a sample value or short description of the expected
+              format). The short hint is displayed in the input container before
+              the user enters a value.
               <InlineMessage
                 role="region"
                 aria-label="Placeholder accessible"
-                title="Note"
                 overrides={{marginBlockStart: 'space030'}}
               >
-                Placeholder text is not accessible; use assistive text when
-                providing instructions on completing a Select for clarity.
+                Placeholder text is not accessible. Use assistive text to give
+                instructions to the user when they&apos;ve completed a select.
               </InlineMessage>
             </>
           ),
@@ -468,7 +446,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Start enhancer',
           description:
-            'The Select supports start enhancer property that allows for a component to be added to the start or end of the input container, for example, an icon.',
+            'The select supports start enhancer property that allows for a component to be added to the start of the input container (e.g. an icon).',
           media: getIllustrationComponent(
             'components/select/options/start-enhancer',
           ),
@@ -476,7 +454,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'End enhancer',
           description:
-            'The Select supports end enhancer property that allows for a component to be added to the start or end of the input container, for example, an icon.',
+            'Add a component to the end of the input container (e.g. an icon).',
           media: getIllustrationComponent(
             'components/select/options/end-enhancer',
           ),
@@ -484,7 +462,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Pre-selected options',
           description:
-            'A pre-selected option can be set on the Select. When specified, the option is displayed in the Select upon page load.',
+            'Set a pre-selected option on the select. When specified, the option is displayed in the select upon page load.',
           media: getIllustrationComponent(
             'components/select/options/pre-selected-option',
           ),
@@ -492,7 +470,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Custom selected display',
           description:
-            'The Select option item and the Select input can be defined independently. For example, a list of countries may be displayed in a text format in the Select option items and upon user selection, the selected item may display a country flag in the Select input.',
+            'Define the select option item and the select input independently (e.g. you might have a list of countries in text format in the select option items, then, upon user selection, display the selected item as a country flag in the select input).',
           media: getIllustrationComponent(
             'components/select/options/custom-selected-display',
           ),
@@ -500,48 +478,46 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction: 'The Select component has the following states:',
+      introduction: 'The select has the following states:',
       layout: '3-span',
       cards: [
         {
           title: 'Base',
           description:
-            'The select has a base state. This is the base style of the input before it has been interacted with by a user.',
+            'The default style before the user interacts with the select.',
           media: getIllustrationComponent('components/select/states/base'),
-        },
-        {
-          title: 'Focus',
-          description:
-            'The select has a focus state. This is the style of the input when the element is focused via keyboard control.',
-          media: getIllustrationComponent('components/select/states/focus'),
         },
         {
           title: 'Hover',
           description:
-            'The select has a hover state. The style of the input changes to visually communicate and provide feedback to the user that the Select input is an interactive element.',
+            'The select changes style to let the user know it’s interactive.',
           media: getIllustrationComponent('components/select/states/hover'),
+        },
+        {
+          title: 'Focus',
+          description:
+            'The select changes style when the element is focussed (e.g. via keyboard or voice).',
+          media: getIllustrationComponent('components/select/states/focus'),
         },
         {
           title: 'Selected',
           description:
-            'The Select in a selected state changes style when the Select selection conforms to a specific condition eg. the panel appearing. This is the style of the input when the panel element is visible (open).',
+            'The select changes style when the user’s selection conforms to a specific condition. This is the style of the input when the panel element is visible (open).',
           media: getIllustrationComponent('components/select/states/selected'),
         },
         {
           title: 'Valid',
           description: (
             <>
-              The select in a valid state changes style when the selected option
-              conforms to a specific condition eg. updating preferences in a
-              form.
+              The select changes style to let the user know the select is in a
+              valid state.
               <br />
               <br />
-              The input style change and validation icon can appear as soon as a
-              user types a valid entry in the input or on submit.
+              The input style change and validation icon can appear as soon as
+              the user types a valid entry in the input or on submit.
               <br />
               <br />
-              The <Link href="/components/form/">Form</Link> component is used
-              to define this validation behaviour.
+              Use the form to validate behaviour.
             </>
           ),
           media: getIllustrationComponent('components/select/states/valid'),
@@ -550,16 +526,8 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           title: 'Valid focus',
           description: (
             <>
-              The select in a valid state changes style when the selected option
-              conforms to a specific condition eg. updating preferences in a
-              form.
-              <br />
-              <br />
-              The input style change and validation icon can appear as soon as a
-              user types a valid entry in the input or on submit.
-              <br />
-              <br />
-              The Form component is used to define this validation behaviour.
+              The select changes style to communicates that a user has
+              highlighted a valid select.
             </>
           ),
           media: getIllustrationComponent(
@@ -569,7 +537,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Valid hover',
           description:
-            'The select in a valid hover state changes style when the selected option conforms to a specific condition eg. updating preferences in a form, while hovering.',
+            'The select changes style to let the user know the select is in a valid state, and hovered over.',
           media: getIllustrationComponent(
             'components/select/states/valid-focus',
           ),
@@ -578,17 +546,15 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           title: 'Invalid',
           description: (
             <>
-              The select in an invalid state changes style when the selected
-              option doesn’t conform to a specific condition eg. not making a
-              selection in a form.
+              The select changes style to let the user know the select is in an
+              invalid state.
               <br />
               <br />
               The input style change and validation icon can appear as soon as a
               user types a valid entry in the input or on submit.
               <br />
               <br />
-              The <Link href="/components/form/">Form</Link> component is used
-              to define this validation behaviour.
+              Use the form component to validate behaviour.
             </>
           ),
           media: getIllustrationComponent('components/select/states/invalid'),
@@ -596,7 +562,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid focus',
           description:
-            'The select in an invalid focus state changes style when the selected option conforms to a specific condition eg. not making a selection in a form, while focused.',
+            'The select changes style to communicate that a user has highlighted an invalid select.',
           media: getIllustrationComponent(
             'components/select/states/invalid-focus',
           ),
@@ -604,7 +570,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid hover',
           description:
-            'The select in an invalid hover state changes style when the selected option conforms to a specific condition eg. not making a selection in a Form, while hovering',
+            'The select changes style to let the user know the select is in an invalid state, and hovered over.',
           media: getIllustrationComponent(
             'components/select/states/invalid-hover',
           ),
@@ -613,14 +579,13 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           title: 'Disabled',
           description: (
             <>
-              The select in a disabled state communicates to the user that an
-              input exists, but cannot be modified in that scenario.
+              Communicates to the user that an input exists, but cannot be
+              modified in that scenario.
               <br />
               <br />
-              Disabled selects are often used to maintain layout consistency and
-              communicate that an input may become available if another
-              condition has been met, e.g. selecting a previous option in a
-              form.
+              Disabled selects maintain layout consistency and communicate that
+              an input may become available if another condition is met (e.g.
+              selecting a previous option in a form).
             </>
           ),
           media: getIllustrationComponent('components/select/states/disabled'),
@@ -631,13 +596,12 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             <>
               The select in a read-only state communicates to the user that an
               input exists, but cannot be modified in that scenario (however, a
-              user can tab to it, highlight it, and copy the text from it).
+              user can tab to it, highlight it and copy the text from it).
               <br />
               <br />
               Read-only selects are often used to maintain layout consistency
               and communicate that an input may become available if another
-              condition has been met, e.g. selecting a previous option in a
-              form.
+              condition is met (e.g. selecting a previous option in a form).
               <br />
               <br />
               Content and data in a read-only select can be submitted in a form.
@@ -648,14 +612,13 @@ const SelectComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction:
-        'The following guidance describes how the Select component behaves.',
+      introduction: 'Here’s how the select behaves:',
       cards: [
         {
-          title: 'Select Input and Select option item text-overflow truncation',
+          title: 'Select input and select option item text-overflow truncation',
           description: (
             <>
-              When the Select input text or the Select option item text is too
+              When the select input text or the select option item text is too
               long for the available horizontal space, the text truncates.
               <br />
               <br />
@@ -672,22 +635,14 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           title: 'Validation',
           description: (
             <>
-              The Select validation rules can be defined for onSubmit or onBlur,
-              for both the initial validation and re-validation using the Form.
-              <br />
-              <br />
-              <Link href="/components/form/">
-                For more information, please refer to the Form component.
-              </Link>
-              .
+              Use the form to choose whether the select validates on submit or
+              on blur, for both the initial validation and re-validation.
               <InlineMessage
                 role="region"
                 aria-label="Select validation"
-                title="Note"
                 overrides={{marginBlockStart: 'space050'}}
               >
-                Validation only works if the Select component uses the Form
-                component.
+                Validation only works if the select uses the form component.
               </InlineMessage>
             </>
           ),
@@ -699,9 +654,8 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           title: 'Validation icon',
           description: (
             <>
-              An icon is used to indicate if the select is in a valid or invalid
-              state. Validation is set on the{' '}
-              <Link href="/components/form/">Form</Link> component.
+              An icon indicates if the select is in a valid or invalid state.
+              Use the form for validation.
             </>
           ),
           media: getIllustrationComponent(
@@ -721,7 +675,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/select/usage/do-1'),
         },
         {
-          title: "Don't use a select for few options",
+          title: 'Don’t use a select for few options',
           description: (
             <>
               Don&apos;t use a select when you have only a few options and
@@ -761,17 +715,15 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         <>
           The Select component has the following accessibility considerations:
           <Block spaceStack="space100" />
-          <ContentText title="Grouping Selects" titleAs="span">
-            It is recommended to{' '}
-            <Link
-              target="_blank"
-              href="https://www.w3.org/TR/wai-aria-1.2/#group"
-            >
-              group
-            </Link>{' '}
-            selects and other related elements such as Labels and Assistive Text
-            together using the Fieldset component, with a title attributed to
-            the elements that appear in the Fieldset, called a Legend.
+          <ContentText title="Group selects" titleAs="span">
+            Group selects and related elements (e.g. labels and assistive text)
+            together using the fieldset component with a title attributed to the
+            elements called a legend.
+            <br />
+            <br />A fieldset groups related form controls, making them easier to
+            understand. It can also allow users to focus on smaller and more
+            manageable chunks, rather than trying to grasp the entire form at
+            once.
           </ContentText>
         </>
       ),
@@ -782,7 +734,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             order: 1,
             element: 'Start enhancer',
             role:
-              'Focusses to the start enhancer (if provided, and interactive)',
+              'Focusses to the start enhancer (if provided and interactive)',
           },
           {
             order: 2,
@@ -792,8 +744,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           {
             order: 3,
             element: 'End enhancer',
-            role:
-              'Focusses to the end enhancer  (if provided, and interactive)',
+            role: 'Focusses to the end enhancer (if provided and interactive)',
           },
         ],
       },
@@ -803,31 +754,31 @@ const SelectComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Tab'],
             description:
-              'When focus is outside of the Select, it moves focus to the input container. If focus is on the input container it moves focus to the end enhancer (if provided, and interactive)',
+              'When focus is outside the select, moves focus to the input container. If focus is on the input container, moves focus to the end enhancer (if provided, and interactive)',
           },
           {
             command: ['Space'],
-            description: 'Launches/closes the Select panel',
+            description: 'Launches/closes the select panel',
           },
           {
             command: ['Up'],
             description:
-              'When focus is inside the Select panel, it moves focus upwards through the option items in the Select panel',
+              'When focus is inside the select panel, moves focus upwards through the option items in the select panel',
           },
           {
             command: ['Down'],
             description:
-              'When focus is inside the Select panel, it moves focus downwards through the option items in the Select panel',
+              'When focus is inside the select panel, moves focus downwards through the option items in the select panel',
           },
           {
             command: ['Home'],
             description:
-              'When focus is inside the Select panel, it moves to the first available option item in the Select panel',
+              'When focus is inside the select panel, moves to the first available option item in the select panel',
           },
           {
             command: ['End'],
             description:
-              'When focus is inside the Select panel, it moves to the last available option item in the Select panel',
+              'When focus is inside the select panel, moves to the last available option item in the select panel',
           },
         ],
       },
@@ -839,23 +790,23 @@ const SelectComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Select.',
+              'Defines a string that labels the action that will be performed when the user interacts with the select',
             userSupplied: true,
           },
           {
             element: 'Label',
             attribute: 'aria-required',
-            value: 'object',
+            value: 'string',
             description:
-              'This attribute informs the user that a field is required. When set to true, screen readers notify users that the field is required.',
+              'Informs the user that an input is required. When set to ‘true’, screen readers notify users that the element is required',
             userSupplied: true,
           },
           {
             element: 'Label',
-            attribute: 'aria-required',
+            attribute: 'aria-invalid',
             value: 'object',
             description:
-              'This attribute informs the user when there is an error. By default it’s set to false. Values include true, spelling, and grammar. Screen readers will alert users when the field is set to any value other than false',
+              'Informs the user when there’s an error. Set to ‘false’ by default. Values include true, spelling and grammar. Screen readers alert users when the element is set to any value other than ‘false’',
             userSupplied: true,
           },
         ],
@@ -864,33 +815,31 @@ const SelectComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       introduction: (
         <>
-          The Select component is compromised of four key elements, these have a
-          range of props that can be used to define an appropriate experience
-          for different use cases.
+          The select component is composed of three key elements. They have a
+          range of props to define the experience in different use cases.
           <InlineMessage overrides={{marginBlockStart: 'space080'}}>
             There are two components exported from the package, one for use
-            within the NewsKit Form component, and one for use as a controlled
-            component.
+            within the form and one for use as a controlled component.
           </InlineMessage>
         </>
       ),
       components: [
         {
-          title: 'FormInputSelect',
-          summary: `The FormInputSelect has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
+          title: 'Form input select',
+          summary: `The form input select has a range of props to define the experience in different use cases. Use within the form.`,
           propsRows: commonPropsRows,
           overridesRows: commonOverridesRows,
           overridesFooter: selectOverridesFooter,
         },
         {
           title: 'Select',
-          summary: `The Select has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.`,
+          summary: `The select has a range of props to define the experience in different use cases. Use within the form.`,
           propsRows: [
             {
               name: 'name',
               type: 'string',
               description:
-                'If provided, defines name of the input element, used when submitting an HTML form.',
+                'If provided, defines name of the input element. Use when submitting an HTML form.',
             },
             ...commonPropsRows,
           ],
@@ -900,7 +849,7 @@ const SelectComponent = (layoutProps: LayoutProps) => (
         {
           title: 'SelectOption',
           summary:
-            'The SelectOption has a range of props that can be used to define an appropriate experience for different use cases. Use this component within the NewsKit Form component.',
+            'The selectOption has a range of props to define the experience in different use cases. Use within the form.',
           propsRows: selectOptionProps,
           overridesRows: selectOptionOverrides,
         },
