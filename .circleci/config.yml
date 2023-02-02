@@ -133,7 +133,7 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
+        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       subpackage:
@@ -192,7 +192,7 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
+        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       subpackage:
@@ -253,7 +253,7 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
+        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       subpackage:
@@ -402,7 +402,7 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume" # '${AWS_ASSUME_ROLE_ARN}'
+        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
       job_type:
         description: The job type to be used
         type: string
@@ -812,7 +812,7 @@ jobs:
   #  executor: aws-cli/default
   #  environment:
   #    AWS_DEFAULT_REGION: eu-west-1
-  #    AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume
+  #    AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp
   #    TERM: xterm
   #  steps:
   #    - aws_assume_oidc_role
@@ -1250,7 +1250,7 @@ jobs:
           at: ~/project
       - aws-cli/setup:
           #aws-region: "eu-west-1"
-          role-arn: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"
+          role-arn: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp"
           #session-duration: 1800
           profile-name: "NEWSKIT-OIDC-PROFILE"
           role-session-name: "${CIRCLE_WORKFLOW_ID}-s3-push"

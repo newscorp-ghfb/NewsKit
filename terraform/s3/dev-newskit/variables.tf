@@ -2,7 +2,7 @@
 variable "s3_write_principals" {
   type        = list(string)
   description = "Bucket write access for following AWS principals"
-  default     = ["696065950852", "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"]
+  default     = ["696065950852", "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp"]
 }
 
 variable "environment" {
