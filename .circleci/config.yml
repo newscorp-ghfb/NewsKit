@@ -153,7 +153,6 @@ commands:
           command: |
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
-            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN <<EOF
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
               --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.session_context >>-tf" \
