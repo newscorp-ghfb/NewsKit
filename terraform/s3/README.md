@@ -31,6 +31,7 @@ Default region name [eu-west-1]:
 Default output format [None]:
 
 export AWS_SHARED_CREDENTIALS_FILE=~/.aws/credentials
+cat $AWS_SHARED_CREDENTIALS_FILE
 
 aws --profile newscorp ec2 describe-instances
 
@@ -50,5 +51,4 @@ terraform apply backend.plan
 
 ** AUTOMATED TERRAFORM SETUP **
 
-The Terraform in the /dev folder should NOT be run manually but via CircleCI.
-
+The Terraform in the remote-state folders should NOT be run manually but via CircleCI.
