@@ -130,6 +130,10 @@ commands:
   terraform_init_oidc:
     description: Run Terraform Init
     parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
@@ -148,7 +152,7 @@ commands:
           name: Terraform init OICD
           command: |
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
-            export AWS_DEFAULT_REGION="eu-west-1"
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
             echo "read"
             (aws sts assume-role-with-web-identity \
@@ -1332,7 +1336,7 @@ jobs:
     parameters:
       environment:
         type: string
-        description: Deplyoment environment
+        description: Deployment environment
       aws_region:
         description: AWS Region
         type: string

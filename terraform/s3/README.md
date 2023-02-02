@@ -13,7 +13,7 @@ tfenv use 1.2.1
 ```
 saml2aws login
 ```
-Select from the list of accounts:AWS_ACCESS_KEYho
+Select from the list of accounts:
 ```
 Account: nuk-digital-dev-newskit (696065950852) / nct-sysadmin
 ```
@@ -33,7 +33,15 @@ Default output format [None]:
 export AWS_SHARED_CREDENTIALS_FILE=~/.aws/credentials
 cat $AWS_SHARED_CREDENTIALS_FILE
 
+export AWS_ACCESS_KEY=(aws_access_key_id value)
+export AWS_SECRET_ACCESS_KEY=(aws_secret_access_key value)
+export AWS_SESSION_TOKEN=(aws_session_token value)
+
 aws --profile newscorp ec2 describe-instances
+
+{
+    "Reservations": []
+}
 
 ```
 
