@@ -151,10 +151,8 @@ commands:
       - run:
           name: Terraform init OICD
           command: |
-            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
-            echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
               --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
@@ -164,11 +162,9 @@ commands:
               --output text) > assume-tf.txt
             read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-tf.txt
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
-            echo "terraform cd"
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
-            echo "terraform init"
             terraform init << parameters.terraform_arg >>
 
   terraform_init:
@@ -214,10 +210,8 @@ commands:
       - run:
           name: Terraform plan OICD
           command: |
-            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
-            echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
               --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
@@ -227,16 +221,10 @@ commands:
               --output text) > assume-tf.txt
             read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-tf.txt
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
-            echo "terraform cd"
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
-            echo "terraform init"
             terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
-            # TODO remove
-            # export s3Path_docs=s3://ncu-newskit-docs-dev/
-            # echo $(date) > timestampPlan.html
-            # aws s3 cp timestampPlan.html $s3Path_docs
 
   terraform_plan:
     description: Run Terraform Plan
@@ -279,10 +267,8 @@ commands:
       - run:
           name: Terraform apply OICD
           command: |
-            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
-            echo "read"
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
               --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
@@ -292,7 +278,6 @@ commands:
               --output text) > assume-tf.txt
             read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-tf.txt
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
-            echo "terraform cd"
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
@@ -367,99 +352,6 @@ commands:
           root: ./
           paths:
             - assume_role_creds_<< parameters.job_type >>.txt
-
-  # Assuming that profile-name and role-session-name
-  # should match the last part of the project's github
-  # repo: https://github.com/newscorp-ghfb/newskit
-  aws_assume_oidc_role:
-    description: Assume AWS role using OIDC
-    parameters:
-      #aws_assume_role_arn:
-      #  description: AWS ARN For Assume Role
-      #  type: string
-      #  default: '${AWS_ASSUME_ROLE_ARN}'
-      job_type:
-        description: The job type to be used
-        type: string
-        default: 'oidc'
-    steps:
-      - aws-cli/setup:
-          profile-name: newskit
-          role-arn: ${AWS_ROLE_ARN}
-          role-session-name: newskit
-      - run:
-          name: # Interact with AWS
-          command: |
-            echo "aws_assume_oidc_role"
-            echo "Getting caller id, CIRCLE_OIDC_TOKEN=${CIRCLE_OIDC_TOKEN}"
-            aws sts get-caller-identity
-            echo "Env to BASH_ENV"
-            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
-            echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
-            echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
-            source $BASH_ENV
-            echo "BASH_ENV to assume_role_creds_oidc.txt"
-            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
-            ls -al assume_role_creds_oidc.txt
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - assume_role_creds_oidc.txt
-
-  aws_assume_oidc_role_from_token:
-    description: Assume AWS role using OIDC
-    parameters:
-      aws_region:
-        description: AWS Region
-        type: string
-        default: '${AWS_DEFAULT_REGION}'
-      aws_assume_role_arn:
-        description: AWS ARN For Assume Role
-        type: string
-        default: '${S3_AWS_ASSUME_ROLE_ARN}'
-      job_type:
-        description: The job type to be used
-        type: string
-        default: 'oidc'
-    steps:
-      - run:
-          name: Assume AWS role using OIDC
-          command: |
-            echo "aws_assume_oidc_role_from_token"
-            echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
-            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
-            # use the OpenID Connect token to obtain AWS credentials
-            (aws sts assume-role-with-web-identity \
-              --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.job_type >>-init" \
-              --web-identity-token $CIRCLE_OIDC_TOKEN \
-              --duration-seconds 3600 \
-              --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
-              --output text) > assume-role-with-web-identity.txt
-            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-role-with-web-identity.txt
-            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
-            aws sts get-caller-identity
-            echo "Env to BASH_ENV, T=${AWS_SESSION_TOKEN}"
-            echo "export AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION" >> $BASH_ENV
-            echo "export AWS_ROLE_ARN=$AWS_ROLE_ARN" >> $BASH_ENV
-            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
-            echo "export AWS_SECRET_ACCESS_KEY=$AWS_ACCESS_KEY_ID" >> $BASH_ENV
-            echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> $BASH_ENV
-            source $BASH_ENV
-            echo "BASH_ENV to assume_role_creds_oidc.txt"
-            rm -f assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_DEFAULT_REGION >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_ROLE_ARN >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_oidc.txt
-            cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_oidc.txt
-            ls -al assume_role_creds_oidc.txt
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - assume_role_creds_oidc.txt
 
   aws_assume_role_file:
     description: Assume AWS role from the workspace file
@@ -1239,9 +1131,7 @@ jobs:
           role-session-name: "${CIRCLE_WORKFLOW_ID}-s3-push"
       - run:
           name: Upload non-PR sites to S3 root
-          command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
-            echo "push_s3_general_oidc"
-            echo "Getting caller id, CIRCLE_OIDC_TOKEN=${CIRCLE_OIDC_TOKEN}"
+          command: | # output current date time to a HTML file to allow a in-browser that check CDN does not return old files
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             aws sts get-caller-identity
             export s3Path_docs=<< parameters.s3Path_docs >>
@@ -1729,15 +1619,15 @@ workflows:
       #    requires:
       #      - init_aws
       - deploy_terraform_oidc:
-          name: deploy_terraform_s3_dev_oidc
+          name: deploy_terraform_s3_dev
           package: s3/dev-newskit
           context: ncu-newskit-site-dev
           apply: true
           tf_env: true
           environment: dev
 #       - deploy_terraform_oidc:
-#           name: deploy_terraform_s3_staging_oidc
-#           package: s3
+#           name: deploy_terraform_s3_staging
+#           package: s3/prod-newskit
 #           context: ncu-newskit-site-stage
 #           apply: true
 #           tf_env: true
@@ -1765,21 +1655,21 @@ workflows:
           requires:
             - deploy_to_s3_pr
       - push_s3_general_oidc:
-          name: deploy_to_s3_dev_oidc
+          name: deploy_to_s3_dev
           context: ncu-newskit-site-dev
           s3Path_docs: s3://ncu-newskit-docs-dev/
           s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
           requires:
-            - deploy_terraform_s3_dev_oidc
+            - deploy_terraform_s3_dev
             - build_docs_dev
             - build_storybook
 #       - push_s3_general_oidc:
-#           name: deploy_to_s3_staging_oidc
+#           name: deploy_to_s3_staging
 #           context: ncu-newskit-site-stage
 #           s3Path_docs: s3://ncu-newskit-docs-staging/
 #           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
 #           requires:
-#             - deploy_terraform_s3_staging_oidc
+#             - deploy_terraform_s3_staging
 #             - build_docs_staging
 #             - build_storybook
 
