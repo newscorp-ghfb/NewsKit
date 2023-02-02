@@ -1828,9 +1828,7 @@ workflows:
       equal: [main, << pipeline.git.branch >>]
     jobs:
       - init_aws:
-          context: ncu-product-platforms-context
-      - init_aws_oidc
-          # context: ncu-product-platforms-context    
+          context: ncu-product-platforms-context 
       - deploy_terraform:
           name: deploy_terraform_dns_dev
           package: dns
