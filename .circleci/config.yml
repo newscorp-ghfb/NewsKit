@@ -443,13 +443,6 @@ commands:
       - persist_to_workspace:
           root: ./
           paths:
-            - assume_role_creds_oidc.txt
-      - run:
-          name: Terraform init OIDC
-          command: |     
-            #cd terraform/s3-newskit
-            #terraform init -backend-config="key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate"
-            #make tf-plan-s3-newskit
 
   aws_assume_role_file:
     description: Assume AWS role from the workspace file
@@ -887,7 +880,7 @@ jobs:
           steps:
             - terraform_init_oidc:
                 package: << parameters.package >>
-                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
+                terraform_arg: -backend-config="key=newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
             - terraform_plan_oidc:
                 package: << parameters.package >>
                 terraform_arg: -var-file=<< parameters.environment >>.tfvars
@@ -896,7 +889,7 @@ jobs:
           steps:
             - terraform_init_oidc:
                 package: << parameters.package >>
-                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
+                terraform_arg: -backend-config="key=newskit/<< parameters.package >>/terraform.tfstate"
             - terraform_plan_oidc:
                 package: << parameters.package >>
       - when:
@@ -931,7 +924,7 @@ jobs:
           steps:
             - terraform_init:
                 package: << parameters.package >>
-                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
+                terraform_arg: -backend-config="key=newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
             - terraform_plan:
                 package: << parameters.package >>
                 terraform_arg: -var-file=<< parameters.environment >>.tfvars
@@ -940,7 +933,7 @@ jobs:
           steps:
             - terraform_init:
                 package: << parameters.package >>
-                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
+                terraform_arg: -backend-config="key=newskit/<< parameters.package >>/terraform.tfstate"
             - terraform_plan:
                 package: << parameters.package >>
       - when:

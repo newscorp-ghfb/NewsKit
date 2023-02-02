@@ -48,11 +48,6 @@ build_docs_pr_with_no_base_url:
 build_docs_with_no_base_url:
 	SITE_ENV=${SITE_ENV} yarn build:docs && yarn postbuild:docs
 
-tf-plan-s3-newskit:
-	cd terraform && \
-	terraform init -backend-config="key=product-platforms/newskit/s3-newskit/dev/terraform.tfstate"
-
-
 unit_test_docs:
 	yarn test:unit:ci --projects=site
 

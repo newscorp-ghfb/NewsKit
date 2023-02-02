@@ -12,25 +12,36 @@ tfenv use 1.2.1
 
 ```
 saml2aws login
+```
+Select from the list of accounts:AWS_ACCESS_KEYho
+```
+Account: nuk-digital-dev-newskit (696065950852) / nct-sysadmin
+```
+OR
+```
+Account: nuk-digital-prod-newskit (005057636819) / nct-sysadmin
+```
+
+(3)
 aws --profile newscorp configure
 
 AWS Access Key ID [****************D7OP]: 
 AWS Secret Access Key [****************W9wq]: 
 Default region name [eu-west-1]: 
-Default output format [None]: 
+Default output format [None]:
+
+export AWS_SHARED_CREDENTIALS_FILE=~/.aws/credentials
 
 aws --profile newscorp ec2 describe-instances
-saml2aws -a newscorp exec --exec-profile newscorp /bin/zsh
 
-error acquiring credentials for profile: newscorp: ProviderNotExpirer: provider SharedConfigCredentials: /Users/john.parsons/.aws/credentials does not support ExpiresAt()
 ```
 
 (assuming you have followed these installation and setup instructions: _)
 
-(3) Leverage TF module https://github.com/samstav/terraform-aws-backend to create a bucket for storing the TF state, avoiding the chicken and egg issue [_].
+(4) Leverage TF module https://github.com/samstav/terraform-aws-backend to create a bucket for storing the TF state, avoiding the chicken and egg issue [_].
 
 ```
-cd ./remote-state
+cd ./dev-newskit/remote-state OR cd ./prod-newslit/remote-state
 terraform get -update
 terraform init -backend=false
 terraform plan -out=backend.plan
