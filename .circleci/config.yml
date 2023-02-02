@@ -153,14 +153,15 @@ commands:
           command: |
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
-            (aws sts assume-role-with-web-identity \
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN <<EOF
+            $(aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
               --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
-              --output text) > assume-tf.txt
-            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-tf.txt
+              --output text)
+            <<EOF
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
@@ -281,7 +282,6 @@ commands:
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
-            echo "terraform init"
             terraform apply -lock=false -input=false tfplan
 
   terraform_apply:
