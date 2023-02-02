@@ -1752,8 +1752,8 @@ workflows:
           apply: true
           tf_env: true
           environment: dev
-          requires:
-            - init_aws_NEW
+          #requires:
+          #  - init_aws_NEW
           #  - aws_assume_oidc_role:
           #      job_type: << parameters.job_type >>
 #       - deploy_terraform:
