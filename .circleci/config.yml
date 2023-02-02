@@ -875,8 +875,8 @@ jobs:
           at: ~/project
       #- run_only_on_folder_change:
       #    folder: ./terraform/<< parameters.package >>
-      - aws_assume_role_file:
-          job_type: oidc
+      #- aws_assume_role_file:
+      #    job_type: oidc
       - when:
           condition: << parameters.tf_env >>
           steps:
