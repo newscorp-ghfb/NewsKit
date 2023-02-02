@@ -137,7 +137,7 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       subpackage:
@@ -193,10 +193,13 @@ commands:
   terraform_plan_oidc:
     description: Run Terraform Plan
     parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        #default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
         default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
@@ -212,7 +215,7 @@ commands:
           name: Terraform plan OICD
           command: |
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
-            export AWS_DEFAULT_REGION="eu-west-1"
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
             echo "read"
             (aws sts assume-role-with-web-identity \
@@ -255,10 +258,14 @@ commands:
   terraform_apply_oidc:
     description: Run Terraform Apply
     parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       subpackage:
@@ -273,7 +280,7 @@ commands:
           name: Terraform apply OICD
           command: |
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
-            export AWS_DEFAULT_REGION="eu-west-1"
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
             echo "read"
             (aws sts assume-role-with-web-identity \
@@ -404,10 +411,14 @@ commands:
   aws_assume_oidc_role_from_token:
     description: Assume AWS role using OIDC
     parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
       job_type:
         description: The job type to be used
         type: string
@@ -418,7 +429,7 @@ commands:
           command: |
             echo "aws_assume_oidc_role_from_token"
             echo "Getting caller id, C=${CIRCLE_OIDC_TOKEN}"
-            export AWS_DEFAULT_REGION="eu-west-1"
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
@@ -807,36 +818,6 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  #aws_assume_oidc_role_executor:
-  #  executor: aws-cli/default
-  #  environment:
-  #    AWS_DEFAULT_REGION: eu-west-1
-  #    AWS_ROLE_ARN: arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp
-  #    TERM: xterm
-  #  steps:
-  #    - aws_assume_oidc_role
-
-  init_aws_NEW:
-    parameters:
-      job_type:
-        type: string
-        default: 'oidc'
-    executor: aws-cli-and-terraform
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      #- run:
-      #    name: Install python and pip
-      #    command: |
-      #      sudo apt-get update
-      #      sudo apt-get install python3-pip python-dev
-      #- run:
-      #    name: Install aws cli
-      #    command: sudo pip install awscli
-      - aws_assume_oidc_role_from_token:
-          job_type: << parameters.job_type >>
-
   init_aws:
     parameters:
       job_type:
@@ -858,8 +839,7 @@ jobs:
       - aws_assume_role:
           job_type: << parameters.job_type >>
 
-
-  deploy_terraform_NEW:
+  deploy_terraform_oidc:
     parameters:
       package:
         type: string
@@ -879,8 +859,6 @@ jobs:
           at: ~/project
       #- run_only_on_folder_change:
       #    folder: ./terraform/<< parameters.package >>
-      #- aws_assume_role_file:
-      #    job_type: oidc
       - when:
           condition: << parameters.tf_env >>
           steps:
@@ -1238,6 +1216,14 @@ jobs:
 
   push_s3_general_oidc:
     parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
       s3Path_docs:
         type: string
       s3Path_storybook:
@@ -1248,9 +1234,7 @@ jobs:
       - attach_workspace:
           at: ~/project
       - aws-cli/setup:
-          #aws-region: "eu-west-1"
-          role-arn: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp"
-          #session-duration: 1800
+          role-arn: << parameters.aws_assume_role_arn >>
           profile-name: "NEWSKIT-OIDC-PROFILE"
           role-session-name: "${CIRCLE_WORKFLOW_ID}-s3-push"
       - run:
@@ -1258,7 +1242,7 @@ jobs:
           command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
             echo "push_s3_general_oidc"
             echo "Getting caller id, CIRCLE_OIDC_TOKEN=${CIRCLE_OIDC_TOKEN}"
-            export AWS_DEFAULT_REGION="eu-west-1"
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             aws sts get-caller-identity
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
@@ -1624,9 +1608,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
-            - install_cypress
-      #- aws_assume_oidc_role_executor:
-      #    context: ncu-product-platforms-context      
+            - install_cypress    
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
@@ -1720,8 +1702,6 @@ workflows:
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
-      #- init_aws_NEW:
-      #    context: ncu-product-platforms-context-oidc
       - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
@@ -1739,36 +1719,29 @@ workflows:
           environment: pr
           requires:
             - init_aws
-      - deploy_terraform:
-          name: deploy_terraform_s3_dev
-          package: s3
-          context: ncu-newskit-site-dev
-          apply: true
-          tf_env: true
-          environment: dev
-          requires:
-            - init_aws
-
-      - deploy_terraform_NEW:
-          name: deploy_terraform_s3_dev_NEW
+      #- deploy_terraform:
+      #    name: deploy_terraform_s3_dev
+      #    package: s3
+      #    context: ncu-newskit-site-dev
+      #    apply: true
+      #    tf_env: true
+      #    environment: dev
+      #    requires:
+      #      - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_dev_oidc
           package: s3/dev-newskit
           context: ncu-newskit-site-dev
           apply: true
           tf_env: true
           environment: dev
-          #requires:
-          #  - init_aws_NEW
-          #  - aws_assume_oidc_role:
-          #      job_type: << parameters.job_type >>
-#       - deploy_terraform:
-#           name: deploy_terraform_s3_staging
+#       - deploy_terraform_oidc:
+#           name: deploy_terraform_s3_staging_oidc
 #           package: s3
 #           context: ncu-newskit-site-stage
 #           apply: true
 #           tf_env: true
 #           environment: staging
-#           requires:
-#             - install_aws_cli
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
@@ -1779,11 +1752,6 @@ workflows:
           context: ncu-newskit-site-dev
           requires:
             - build_icons
-#      - build_docs_main_with_no_base_url:
-#          name: build_docs_staging
-#          context: ncu-newskit-site-stage
-#          requires:
-#            - build_icons
       - push_s3_pr:
           name: deploy_to_s3_pr
           context: ncu-product-platforms-context
@@ -1796,40 +1764,22 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3_pr
-#      - push_s3_general:
-#          name: deploy_to_s3_dev
-#          context: ncu-product-platforms-context
-#          s3Path_docs: s3://ncu-newskit-docs-dev/
-#          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
-#          requires:
-#            - deploy_terraform_s3_dev
-#            - build_docs_dev
-#            - build_storybook
-#      - push_s3_general:
-#          name: deploy_to_s3_dev_NEW
-#          context: ncu-product-platforms-context
-#          s3Path_docs: s3://ncu-newskit-docs-dev/
-#          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
-#          requires:
-#            - deploy_terraform_s3_dev_NEW
-#            - build_docs_dev
-#            - build_storybook
       - push_s3_general_oidc:
-          name: deploy_to_s3_dev_NEW
-          context: ncu-product-platforms-context-oidc
+          name: deploy_to_s3_dev_oidc
+          context: ncu-newskit-site-dev
           s3Path_docs: s3://ncu-newskit-docs-dev/
           s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
           requires:
-            - deploy_terraform_s3_dev_NEW
+            - deploy_terraform_s3_dev_oidc
             - build_docs_dev
             - build_storybook
-#       - push_s3_general:
-#           name: deploy_to_s3_staging
+#       - push_s3_general_oidc:
+#           name: deploy_to_s3_staging_oidc
 #           context: ncu-newskit-site-stage
 #           s3Path_docs: s3://ncu-newskit-docs-staging/
 #           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
 #           requires:
-#             - deploy_terraform_s3_staging
+#             - deploy_terraform_s3_staging_oidc
 #             - build_docs_staging
 #             - build_storybook
 
@@ -1879,7 +1829,7 @@ workflows:
     jobs:
       - init_aws:
           context: ncu-product-platforms-context
-      - init_aws_NEW
+      - init_aws_oidc
           # context: ncu-product-platforms-context    
       - deploy_terraform:
           name: deploy_terraform_dns_dev
