@@ -443,6 +443,7 @@ commands:
       - persist_to_workspace:
           root: ./
           paths:
+            - assume_role_creds_oidc.txt
 
   aws_assume_role_file:
     description: Assume AWS role from the workspace file
