@@ -192,7 +192,8 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
+        #default: "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp" # '${AWS_ASSUME_ROLE_ARN}'
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       subpackage:
@@ -226,9 +227,9 @@ commands:
             echo "terraform init"
             terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
             # TODO remove
-            export s3Path_docs=s3://ncu-newskit-docs-dev/
-            echo $(date) > timestampPlan.html
-            aws s3 cp timestampPlan.html $s3Path_docs
+            # export s3Path_docs=s3://ncu-newskit-docs-dev/
+            # echo $(date) > timestampPlan.html
+            # aws s3 cp timestampPlan.html $s3Path_docs
 
   terraform_plan:
     description: Run Terraform Plan
@@ -1715,8 +1716,8 @@ workflows:
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
-      - init_aws_NEW:
-          context: ncu-product-platforms-context-oidc
+      #- init_aws_NEW:
+      #    context: ncu-product-platforms-context-oidc
       - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
@@ -1747,7 +1748,7 @@ workflows:
       - deploy_terraform_NEW:
           name: deploy_terraform_s3_dev_NEW
           package: s3/dev-newskit
-          context: ncu-product-platforms-context-oidc
+          context: ncu-newskit-site-dev
           apply: true
           tf_env: true
           environment: dev
