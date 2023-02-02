@@ -140,7 +140,7 @@ commands:
         default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
-      subpackage:
+      session_context:
         type: string
         default: s3
       terraform_arg:
@@ -154,14 +154,14 @@ commands:
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
             read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN <<EOF
-            $(aws sts assume-role-with-web-identity \
+            (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.session_context >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
-              --output text)
-            <<EOF
+              --output text) > assume-tf.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-tf.txt
             export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
@@ -200,7 +200,7 @@ commands:
         default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
-      subpackage:
+      session_context:
         type: string
         default: s3
       terraform_arg:
@@ -215,7 +215,7 @@ commands:
             # use the OpenID Connect token to obtain AWS credentials
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.session_context >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
@@ -257,7 +257,7 @@ commands:
         default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
-      subpackage:
+      session_context:
         type: string
         default: s3
       terraform_arg:
@@ -272,7 +272,7 @@ commands:
             # use the OpenID Connect token to obtain AWS credentials
             (aws sts assume-role-with-web-identity \
               --role-arn << parameters.aws_assume_role_arn >> \
-              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.subpackage >>-tf" \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.session_context >>-tf" \
               --web-identity-token $CIRCLE_OIDC_TOKEN \
               --duration-seconds 3600 \
               --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
@@ -1133,7 +1133,6 @@ jobs:
           name: Upload non-PR sites to S3 root
           command: | # output current date time to a HTML file to allow a in-browser that check CDN does not return old files
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
-            aws sts get-caller-identity
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
             echo $(date) > timestamp.html
