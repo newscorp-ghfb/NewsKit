@@ -12,7 +12,7 @@ terraform {
   }
   backend "s3" {
     bucket = "newskit-docs-dev-terraform-state"
-    key    = "product-platforms/newskit/s3-newskit/terraform.tfstate"
+    key    = "newskit/s3-newskit/terraform.tfstate"
   }
 }
 

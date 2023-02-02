@@ -6,7 +6,7 @@ terraform {
   required_version = ">= 0.12" # eg 0.12.28
   backend "s3" {
     bucket = "newskit-docs-dev-terraform-state" # newskit-docs-dev-terraform-state
-    key    = "product-platforms/newskit/s3-newskit/terraform.tfstate"
+    key    = "newskit/s3-newskit/terraform.tfstate"
     region = "eu-west-1"
   }
 }

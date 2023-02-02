@@ -5,7 +5,7 @@ variable "tfstate_bucket" {
 
 variable "tfstate_key" {
   description = "Terraform state bucket key"
-  default     = "product-platforms/newskit/s3-newskit/terraform.tfstate"
+  default     = "newskit/s3-newskit/terraform.tfstate"
 }
 
 variable "environment" {
