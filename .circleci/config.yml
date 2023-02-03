@@ -1618,7 +1618,7 @@ workflows:
           name: pr_enviroment_link
           context: ncu-product-platforms-context
           requires:
-            - deploy_to_s3
+            - deploy_to_s3_pr
       - push_s3_general_oidc:
           name: deploy_to_s3_dev
           context: ncu-newskit-site-dev
