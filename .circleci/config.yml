@@ -588,6 +588,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  # Deprecated by build_docs_current_with_no_base_url and build_docs_main_with_no_base_url
   build_docs_pr_with_no_base_url:
     executor: node-xlarge
     steps:
@@ -598,7 +599,7 @@ jobs:
           name: Build
           command: |
             export SITE_ENV=${SITE_ENV}
-            make build_docs_pr_with_no_base_url
+            make build_docs_with_no_base_url
       - persist_to_workspace:
           root: ./
           paths:
@@ -606,7 +607,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  build_docs_general_with_no_base_url:
+  build_docs_current_with_no_base_url:
     executor: node-xlarge
     steps:
       - checkout
@@ -616,7 +617,27 @@ jobs:
           name: Build
           command: |
             export SITE_ENV=${SITE_ENV}
-            make build_docs_general_with_no_base_url
+            make build_docs_with_no_base_url
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public/*
+      - slack/notify:
+          <<: *slack_notify
+
+  build_docs_main_with_no_base_url:
+    executor: node-xlarge
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: |
+            git checkout main
+            git pull
+            export SITE_ENV=${SITE_ENV}
+            make build_docs_with_no_base_url
       - persist_to_workspace:
           root: ./
           paths:
@@ -1719,7 +1740,7 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      - build_docs_general_with_no_base_url:
+      - build_docs_current_with_no_base_url:
           name: build_docs_dev
           context: ncu-newskit-site-dev
           requires:
@@ -1740,6 +1761,20 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_components
+      - build_docs_main_with_no_base_url:
+          name: build_docs_dev_main
+          context: ncu-newskit-site-dev
+          requires:
+            - build_icons
+      - push_s3_general_oidc:
+          name: deploy_to_s3_dev
+          context: ncu-newskit-site-dev
+          s3Path_docs: s3://ncu-newskit-docs-dev/
+          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
+          requires:
+            - deploy_terraform_s3_dev
+            - build_docs_dev_main
+            - build_storybook
 
       # Jobs for updating Percy baselines after PRs are merged
       - comps_tests_conditional_run_to_update_baselines:
@@ -1752,15 +1787,6 @@ workflows:
           requires:
             - build_docs_dev
             - install_cypress
-      - push_s3_general_oidc:
-          name: deploy_to_s3_dev
-          context: ncu-newskit-site-dev
-          s3Path_docs: s3://ncu-newskit-docs-dev/
-          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
-          requires:
-            - deploy_terraform_s3_dev
-            - build_docs_dev
-            - build_storybook
 
       # Jobs for deploying unstable NewsKit version
       - approve_publish_npm_dev:
