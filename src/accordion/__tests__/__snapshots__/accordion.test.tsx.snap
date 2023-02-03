@@ -36,14 +36,26 @@ exports[`Accordion renders as a h4 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -403,14 +415,26 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -770,14 +794,26 @@ exports[`Accordion renders with default props 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -1136,6 +1172,10 @@ exports[`Accordion renders with disabled state 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #ABABAB;
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-1 {
     transition-property: background-color;
@@ -1479,14 +1519,26 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -1846,14 +1898,26 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -2209,14 +2273,26 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -2595,14 +2671,26 @@ exports[`Accordion renders with no header 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -2869,14 +2957,26 @@ exports[`Accordion renders with no label 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -3672,14 +3772,26 @@ exports[`Accordion renders without leading icon 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -3948,14 +4060,26 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
@@ -4314,14 +4438,26 @@ exports[`AccordionGroup different type of children 1`] = `
   margin-right: 8px;
 }
 
+.emotion-1 svg {
+  fill: #3B3B3B;
+}
+
 .emotion-1:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
+.emotion-1:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
 .emotion-1:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
+}
+
+.emotion-1:disabled svg {
+  fill: #ABABAB;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
