@@ -1250,7 +1250,10 @@ Object {
       "paddingInline": "spaceInset030",
       "spaceInline": "space020",
       "stylePreset": "accordionHeader",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "fontColorChange",
+        "backgroundColorChange",
+      ],
       "typographyPreset": "utilityButton030",
     },
     "panel": Object {
