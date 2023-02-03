@@ -1619,15 +1619,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3_pr
-      - push_s3_general_oidc:
-          name: deploy_to_s3_dev
-          context: ncu-newskit-site-dev
-          s3Path_docs: s3://ncu-newskit-docs-dev/
-          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
-          requires:
-            - deploy_terraform_s3_dev
-            - build_docs_dev
-            - build_storybook
 
   pull_request_codemod:
     when:
@@ -1761,6 +1752,15 @@ workflows:
           requires:
             - build_docs_dev
             - install_cypress
+      - push_s3_general_oidc:
+          name: deploy_to_s3_dev
+          context: ncu-newskit-site-dev
+          s3Path_docs: s3://ncu-newskit-docs-dev/
+          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
+          requires:
+            - deploy_terraform_s3_dev
+            - build_docs_dev
+            - build_storybook
 
       # Jobs for deploying unstable NewsKit version
       - approve_publish_npm_dev:
