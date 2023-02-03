@@ -1623,6 +1623,8 @@ workflows:
           apply: true
           tf_env: true
           environment: dev
+          requires:
+            - init_aws
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
@@ -1640,6 +1642,21 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3_pr
+      # Uncomment this if needing to test S3 deployments on push rather than on merge      
+      - build_docs_main_with_no_base_url:
+          name: build_docs_dev_main
+          context: ncu-newskit-site-dev
+          requires:
+            - build_icons
+      - push_s3_general_oidc:
+          name: deploy_to_s3_dev
+          context: ncu-newskit-site-dev
+          s3Path_docs: s3://ncu-newskit-docs-dev/
+          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
+          requires:
+            - deploy_terraform_s3_dev
+            - build_docs_dev_main
+            - build_storybook
 
   pull_request_codemod:
     when:
