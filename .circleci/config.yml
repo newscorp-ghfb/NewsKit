@@ -1753,20 +1753,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_components
-      - build_docs_main_with_no_base_url:
-          name: build_docs_dev_main
-          context: ncu-newskit-site-dev
-          requires:
-            - build_icons
-      - push_s3_general_oidc:
-          name: deploy_to_s3_dev
-          context: ncu-newskit-site-dev
-          s3Path_docs: s3://ncu-newskit-docs-dev/
-          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
-          requires:
-            - deploy_terraform_s3_dev
-            - build_docs_dev_main
-            - build_storybook
 
       # Jobs for updating Percy baselines after PRs are merged
       - comps_tests_conditional_run_to_update_baselines:
@@ -1798,36 +1784,26 @@ workflows:
             - approve_publish_npm_dev
         # end
 
-      - build_push_docker_ecr:
-          name: build_push_docker_ecr_dev
-          context: ncu-product-platforms-context
-          docker_version: dev
+      - push_s3_general_oidc:
+          name: deploy_to_s3_dev
+          context: ncu-newskit-site-dev
+          s3Path_docs: s3://ncu-newskit-docs-dev/
+          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
           requires:
+            - deploy_terraform_s3_dev
+            - build_docs_dev
             - build_storybook
             - lint
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_dev
-      - eks_flux_deploy:
-          name: eks_flux_deploy_dev
-          context: ncu-newskit-site-dev
-          environment: dev
-          deployment_type: dev
-          requires:
-            - build_push_docker_ecr_dev
-      - eks_kubectl_deploy:
-          name: eks_kubectl_deploy_dev
-          context: ncu-newskit-site-dev
-          environment: dev
-          requires:
-            - eks_flux_deploy_dev
 
       - build_docs:
           name: build_docs_prod_link
           context: ncu-newskit-site-prod
           requires:
-            - eks_kubectl_deploy_dev
+            - deploy_to_s3_dev
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
