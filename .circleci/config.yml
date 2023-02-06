@@ -7,8 +7,8 @@ orbs:
 
 slack_notify: &slack_notify
   event: 'fail'
-  channel: '#foo'  # FIXME revert
-  mentions: '@foo' # FIXME revert
+  channel: '#nuk-pp-newskit'
+  mentions: '@newskitdevs'
   branch_pattern: 'main'
   # The following tag_pattern allows slack messages to be sent also when workflows are triggered by tags.
   # Such as in the release process. The tags MUST mirror the one used by release workflows filters.
@@ -384,8 +384,7 @@ commands:
               echo "Terraform << parameters.folder >> changed"
             else
               echo "Skipping as there are no changes to << parameters.folder >>"
-              # FIXME revert
-              # circleci-agent step halt
+              circleci-agent step halt
             fi
 
   checkout_and_attach_workspace:
@@ -1622,21 +1621,21 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3_pr
-      # Uncomment these two steps if needing to test S3 deployments on push rather than on merge
-      - build_docs_with_no_base_url:
-          name: build_docs_dev
-          context: ncu-newskit-site-dev
-          requires:
-            - build_icons
-      - push_s3_general_oidc:
-          name: deploy_to_s3_dev
-          context: ncu-newskit-site-dev
-          s3Path_docs: s3://ncu-newskit-docs-dev/
-          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
-          requires:
-            - deploy_terraform_s3_dev
-            - build_docs_dev
-            - build_storybook
+      # Temporarily uncomment these two steps if needing to test S3 deployments on push rather than on merge
+      #- build_docs_with_no_base_url:
+      #    name: build_docs_dev
+      #    context: ncu-newskit-site-dev
+      #    requires:
+      #      - build_icons
+      #- push_s3_general_oidc:
+      #    name: deploy_to_s3_dev
+      #    context: ncu-newskit-site-dev
+      #    s3Path_docs: s3://ncu-newskit-docs-dev/
+      #    s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
+      #    requires:
+      #      - deploy_terraform_s3_dev
+      #      - build_docs_dev
+      #      - build_storybook
 
   pull_request_codemod:
     when:
