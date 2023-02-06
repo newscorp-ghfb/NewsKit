@@ -34,8 +34,7 @@ function apiCall(url, options) {
 function percyApiCall(path) {
   const token = process.env.PERCY_TOKEN;
   if (!token) {
-    log(`No Percy token found`);
-    throw Error();
+    throw Error(`No Percy token found`);
   }
   return apiCall(`${PERCY_URL}${path}`, {
     headers: {Authorization: `Token ${token}`},
@@ -45,14 +44,13 @@ function percyApiCall(path) {
 async function getPercyBuildForBranch(branchName) {
   log(`Looking for Percy build for branch ${branchName}`);
   const builds = await percyApiCall('/api/v1/builds');
-  for (let i = 0; i <= builds.data.length; i++) {
+  for (let i = 0; i < builds.data.length; i++) {
     const build = builds.data[i];
     if (build.attributes.branch === branchName) {
       return build;
     }
   }
-  log(`No Percy build found for branch ${branchName}`);
-  throw Error();
+  throw Error(`No Percy build found for branch ${branchName}`);
 }
 
 async function checkUpdates(headRefName) {
@@ -90,6 +88,9 @@ const run = async headRefName =>
     .then(res =>
       res ? RESPONSES.UPDATES_REQUIRED : RESPONSES.NO_UPDATES_REQUIRED,
     )
-    .catch(() => RESPONSES.ERROR);
+    .catch(err => {
+      log(err);
+      return RESPONSES.ERROR;
+    });
 
 module.exports = {run};
