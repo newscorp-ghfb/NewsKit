@@ -1,5 +1,9 @@
 module.exports = {
-  projects: ['<rootDir>/src/jest.config.js', '<rootDir>/site/jest.config.js'],
+  projects: [
+    '<rootDir>/src/jest.config.js',
+    '<rootDir>/site/jest.config.js',
+    '<rootDir>/scripts/jest.config.js',
+  ],
   coveragePathIgnorePatterns: ['/node_modules/', '<rootDir>/test'],
   coverageReporters: ['lcov', 'text-summary'],
   collectCoverage: true,
