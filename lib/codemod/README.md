@@ -42,7 +42,7 @@ Imports and transform `newskit` icons to `emotion-icons`;
 ```sh
 npx @newskit/codemod v6.0.0/emotion-icons [path]
 // example
-npx @newskit/codemod v6.0.0/emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
+npx @newskit/codemod v6.0.0/emotion-icons 'components/**/*.+(ts|tsx|js|jsx)'
 ```
 
 #### `remove-redundant-marker-ul`
@@ -87,7 +87,7 @@ LinkInline is used within paragraphs or sentences to link to different content o
 
 #### `update-linkstandalone`
 
-Updates deprecated Link component to LinkStandalone. 
+Updates deprecated Link component to LinkStandalone.
 LinkStandalone is used outside of body content, for example within navigational components such as menus, headers and footers.
 
 ```diff
@@ -102,17 +102,37 @@ LinkStandalone is used outside of body content, for example within navigational 
 The following transformers are available when upgrading to v7:
 
 - [`audio-player-default-styles`](#audio-player-default-styles)
+- [`slider-default-styles`](#slider-default-styles)
 - [`all-default-styles`](#all-default-styles)
 
 #### `audio-player-default-styles`
 
-There changes to the default styling of the AudioPlayer component in v7. 
+There changes to the default styling of the AudioPlayer component in v7.
 Run this codemod if you would like to apply manual overrides to keep the old default styling.
 
 ```diff
 - <AudioPlayerPlayPauseButton />
 
 + <AudioPlayerPlayPauseButton size="large" />
+```
+
+#### `slider-default-styles`
+
+There changes to the default styling of the Slider component in v7.
+Run this codemod if you would like to apply manual overrides to keep the old default styling.
+
+```diff
+- <Slider />
+
++ <Slider
++  overrides={{
++    labels: {
++      stylePreset: "sliderLabelsOld"
++    },
++    track: {
++       size: "sizing030"
++    }
++  }}/>
 ```
 
 #### `all-default-styles`

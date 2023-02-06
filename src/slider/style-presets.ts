@@ -63,12 +63,19 @@ export default {
   },
   sliderLabels: {
     base: {
-      color: '{{colors.inkSubtle}}',
-      iconColor: '{{colors.inkSubtle}}',
+      color: '{{colors.inkBase}}',
+      iconColor: '{{colors.inkBase}}',
     },
     disabled: {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
+    },
+  },
+  sliderLabelsOld: {
+    __extends: '{{stylePresets.sliderLabels}}',
+    base: {
+      color: '{{colors.inkSubtle}}',
+      iconColor: '{{colors.inkSubtle}}',
     },
   },
 } as Record<string, StylePreset>;
