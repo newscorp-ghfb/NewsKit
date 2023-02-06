@@ -2599,7 +2599,7 @@ Object {
       "typographyPreset": "utilityLabel030",
     },
     "track": Object {
-      "size": "sizing030",
+      "size": "sizing020",
       "stylePreset": "sliderTrack",
     },
   },
@@ -5670,12 +5670,19 @@ Object {
   },
   "sliderLabels": Object {
     "base": Object {
-      "color": "{{colors.inkSubtle}}",
-      "iconColor": "{{colors.inkSubtle}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
       "iconColor": "{{colors.inkNonEssential}}",
+    },
+  },
+  "sliderLabelsOld": Object {
+    "__extends": "{{stylePresets.sliderLabels}}",
+    "base": Object {
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}",
     },
   },
   "sliderThumb": Object {
