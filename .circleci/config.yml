@@ -290,9 +290,9 @@ commands:
   run_test_visual_comps_percy:
     description: 'Run the Percy tests for comps visual changes'
     steps:
-      - run:
-          name: Install Headless Chrome dependencies
-          command: make install_headless_chrome
+      # - run:
+      #     name: Install Headless Chrome dependencies
+      #     command: make install_headless_chrome
       - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
@@ -306,9 +306,9 @@ commands:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run:
-          name: Install Headless Chrome dependencies
-          command: make install_headless_chrome
+      # - run:
+      #     name: Install Headless Chrome dependencies
+      #     command: make install_headless_chrome
       - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
