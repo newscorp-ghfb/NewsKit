@@ -18,15 +18,15 @@ run to see all codemods and flags
 npx @newskit/codemod --help
 ```
 
-
-
-## Included scripts
-The list includes these transformers
+## v6.0.0
+The following transformers are available when upgrading to v6:
 
 - [`emotion-icons`](#emotion-icons)
 - [`remove-redundant-marker-ul`](#remove-redundant-marker-ul)
 - [`update-list-item-marker-ul-value`](#update-list-item-marker-ul-value)
 - [`enum-to-union`](#enum-to-union)
+- [`update-linkinline`](#update-linkinline)
+- [`update-linkstandalone`](#update-linkstandalone)
 
 
 #### `emotion-icons`
@@ -62,6 +62,7 @@ Unordered List has now a default marker, the script passes `listItemMarker` with
 -   <UnorderedList></UnorderedList>
 +    <UnorderedList listItemMarker={null}></UnorderedList>
 ```
+
 #### `enum-to-union`
 
 Some of NewsKit components support enum as the prop type, the script remove the imports of enum and replace enum type with union type.
@@ -97,7 +98,26 @@ LinkStandalone is used outside of body content, for example within navigational 
 +  <LinkStandalone href={'www.google.com'}>Click on me</LinkStandalone>;
 ```
 
+## v7.0.0
+The following transformers are available when upgrading to v7:
 
+- [`audio-player-default-styles`](#audio-player-default-styles)
+- [`all-default-styles`](#all-default-styles)
+
+#### `audio-player-default-styles`
+
+There changes to the default styling of the AudioPlayer component in v7. 
+Run this codemod if you would like to apply manual overrides to keep the old default styling.
+
+```diff
+- <AudioPlayerPlayPauseButton />
+
++ <AudioPlayerPlayPauseButton size="large" />
+```
+
+#### `all-default-styles`
+
+Run this codemod if you would like to apply manual overrides to the keep the old default styling for all components.
 
 ## Development
 
