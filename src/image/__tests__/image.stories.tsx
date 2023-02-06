@@ -17,6 +17,7 @@ export const StoryImageDefault = () => (
   </StorybookPage>
 );
 StoryImageDefault.storyName = 'Default';
+StoryImageDefault.parameters = {...parameters};
 
 export const StoryImageFixedWidthAndHeightPx = () => (
   <StorybookPage columns="1fr 1fr">
@@ -32,6 +33,7 @@ export const StoryImageFixedWidthAndHeightPx = () => (
   </StorybookPage>
 );
 StoryImageFixedWidthAndHeightPx.storyName = 'Fixed width and height - px';
+StoryImageFixedWidthAndHeightPx.parameters = {...parameters};
 
 export const StoryImageFixedWidthAndHeightPercentage = () => (
   <StorybookPage columns="1fr 1fr">
@@ -48,6 +50,7 @@ export const StoryImageFixedWidthAndHeightPercentage = () => (
 );
 StoryImageFixedWidthAndHeightPercentage.storyName =
   'Fixed width and height - %';
+StoryImageFixedWidthAndHeightPercentage.parameters = {...parameters};
 
 export const StoryImageFixedWidthAndAspectRatio = () => (
   <StorybookPage columns="1fr 1fr">
@@ -63,6 +66,7 @@ export const StoryImageFixedWidthAndAspectRatio = () => (
   </StorybookPage>
 );
 StoryImageFixedWidthAndAspectRatio.storyName = 'Fixed width and aspect ratio';
+StoryImageFixedWidthAndAspectRatio.parameters = {...parameters};
 
 export const StoryImageFixedHeightAndAspectRatio = () => (
   <StorybookPage columns="1fr 1fr">
@@ -78,6 +82,7 @@ export const StoryImageFixedHeightAndAspectRatio = () => (
   </StorybookPage>
 );
 StoryImageFixedHeightAndAspectRatio.storyName = 'Fixed height and aspect ratio';
+StoryImageFixedHeightAndAspectRatio.parameters = {...parameters};
 
 export const StoryImageVariations = () => (
   <StorybookPage columns="1fr 1fr">
@@ -124,6 +129,7 @@ export const StoryImageVariations = () => (
   </StorybookPage>
 );
 StoryImageVariations.storyName = 'Variations';
+StoryImageVariations.parameters = {...parameters};
 
 export const StoryImageValidAndInvalidImageReference = () => (
   <StorybookPage columns="1fr 1fr">
@@ -281,12 +287,12 @@ export const StoryImageLogicalProps = () => (
   </StorybookPage>
 );
 StoryImageLogicalProps.storyName = 'Logical props';
+StoryImageLogicalProps.parameters = {...parameters};
 
 export default {
   title: 'Components/Image',
   component: Image,
   parameters: {
-    ...parameters,
     nkDocs: {
       title: 'Image',
       url: 'https://newskit.co.uk/components/image',
