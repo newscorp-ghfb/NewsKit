@@ -1230,7 +1230,7 @@ workflows:
     jobs:
       - install_deps
       - install_cypress
-      - download_headless_chrome
+      # - download_headless_chrome
       - build_icons:
           requires:
             - install_deps
@@ -1314,7 +1314,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - no_visual_changes
-            - download_headless_chrome
+            # - download_headless_chrome
       - skip_percy_docsite_check:
           context: ncu-product-platforms-context
           requires:
@@ -1323,7 +1323,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - docs_and_comps_visual_changes
-            - download_headless_chrome
+            # - download_headless_chrome
       - test_visual_docs_percy:
           context: ncu-product-platforms-context
           requires:
@@ -1340,7 +1340,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - docs_visual_changes
-            - download_headless_chrome
+            # - download_headless_chrome
       - can_i_merge_checker:
           context: ncu-product-platforms-context
           requires:
@@ -1450,8 +1450,8 @@ workflows:
             - init_aws
       - install_deps:
           context: ncu-product-platforms-context
-      - download_headless_chrome:
-          context: ncu-product-platforms-context
+      # - download_headless_chrome:
+      #     context: ncu-product-platforms-context
       - install_cypress:
           context: ncu-product-platforms-context
       - build_icons:
@@ -1513,7 +1513,7 @@ workflows:
       - comps_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
           requires:
-            - download_headless_chrome
+            # - download_headless_chrome
             - build_storybook
       - docsite_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
