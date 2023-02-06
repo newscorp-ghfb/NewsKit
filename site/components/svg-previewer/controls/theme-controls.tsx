@@ -84,7 +84,7 @@ export const ThemeControls = ({
         data-testid="select-theme-element"
         /* @ts-ignore nexline */
         onChange={handleThemeSelection}
-        disabled={!svgCodeGroup}
+        state={!svgCodeGroup ? 'disabled' : undefined}
         overrides={{button: {maxWidth: '196px', marginBlock: '0px'}}}
         value={currentThemeName}
       >
