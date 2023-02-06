@@ -18,6 +18,7 @@
   "author": "newskit",
   "dependencies": {
     "chalk": "4.1.2",
+    "dedent-js": "^1.0.1",
     "glob": "^8.0.3",
     "jscodeshift": "^0.13.1",
     "jscodeshift-add-imports": "^1.0.10",
