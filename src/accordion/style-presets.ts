@@ -27,6 +27,12 @@ export default {
       safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
+  accordionHeaderOld: {
+    __extends: 'accordionHeader',
+    base: {
+      backgroundColor: '{{colors.interface010}}',
+    },
+  },
   accordionPanel: {
     base: {
       borderStyle: 'none none solid none',
