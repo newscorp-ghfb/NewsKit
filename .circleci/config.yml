@@ -106,18 +106,18 @@ executors:
 
   node:
     docker:
-      - image: cimg/node:16.13.0
+      - image: cimg/node:16.13.2-browsers
 
   node-large:
     docker:
-      - image: cimg/node:16.13.0
+      - image: cimg/node:16.13.2-browsers
     resource_class: large
     environment:
       NODE_OPTIONS: --max_old_space_size=7680
 
   node-xlarge:
     docker:
-      - image: cimg/node:16.13.0
+      - image: cimg/node:16.13.2-browsers
     resource_class: xlarge
     environment:
       NODE_OPTIONS: --max_old_space_size=15872
@@ -410,9 +410,6 @@ commands:
     description: 'Run the Percy tests for comps visual changes'
     steps:
       - run:
-          name: Install Headless Chrome dependencies
-          command: make install_headless_chrome
-      - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
       - run:
@@ -425,9 +422,6 @@ commands:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run:
-          name: Install Headless Chrome dependencies
-          command: make install_headless_chrome
       - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
@@ -455,22 +449,6 @@ jobs:
       - run:
           name: 'Check to make sure all tests have run before merging.'
           command: echo 'passed'
-
-  download_headless_chrome:
-    executor: node-large
-    steps:
-      - checkout
-      - run:
-          name: Download headless Chrome dependencies
-          command: make download_headless_chrome
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - vendor/apt/*
-      - slack/notify:
-          <<: *slack_notify
-      
-
   install_deps:
     executor: node-large
     steps:
@@ -1455,7 +1433,6 @@ workflows:
     jobs:
       - install_deps
       - install_cypress
-      - download_headless_chrome
       - build_icons:
           requires:
             - install_deps
@@ -1539,7 +1516,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - no_visual_changes
-            - download_headless_chrome
       - skip_percy_docsite_check:
           context: ncu-product-platforms-context
           requires:
@@ -1548,7 +1524,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - docs_and_comps_visual_changes
-            - download_headless_chrome
       - test_visual_docs_percy:
           context: ncu-product-platforms-context
           requires:
@@ -1565,7 +1540,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - docs_visual_changes
-            - download_headless_chrome
       - can_i_merge_checker:
           context: ncu-product-platforms-context
           requires:
@@ -1708,8 +1682,6 @@ workflows:
             - init_aws
       - install_deps:
           context: ncu-product-platforms-context
-      - download_headless_chrome:
-          context: ncu-product-platforms-context
       - install_cypress:
           context: ncu-product-platforms-context
       - build_icons:
@@ -1771,7 +1743,6 @@ workflows:
       - comps_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
           requires:
-            - download_headless_chrome
             - build_storybook
       - docsite_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
