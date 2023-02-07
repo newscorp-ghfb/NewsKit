@@ -48,7 +48,7 @@ export default {
         },
       },
       actions: {
-        spaceInline: 'space050',
+        spaceInline: 'space040',
         closeButton: {
           stylePreset: 'buttonOutlinedInverse',
         },
