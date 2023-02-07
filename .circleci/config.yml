@@ -799,7 +799,7 @@ jobs:
           steps:
             - terraform_init:
                 package: << parameters.package >>
-                terraform_arg: -backend-config="key=newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
+                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
             - terraform_plan:
                 package: << parameters.package >>
                 terraform_arg: -var-file=<< parameters.environment >>.tfvars
@@ -808,7 +808,7 @@ jobs:
           steps:
             - terraform_init:
                 package: << parameters.package >>
-                terraform_arg: -backend-config="key=newskit/<< parameters.package >>/terraform.tfstate"
+                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
             - terraform_plan:
                 package: << parameters.package >>
       - when:
@@ -1078,32 +1078,6 @@ jobs:
             aws s3 cp dist-storybook $s3Path_storybook --recursive
     #  - slack/notify:
     #      <<: *slack_notify
-
-  push_s3_general:
-    parameters:
-      s3Path_docs:
-        type: string
-      s3Path_storybook:
-        type: string
-    executor: aws-cli/default
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - aws-cli/install
-      - aws-cli/setup
-      - run:
-          name: Upload non-PR sites to S3 root
-          command: | # output current date time to a HTML file to allow a browser check CDN does not return old files
-            export s3Path_docs=<< parameters.s3Path_docs >>
-            export s3Path_storybook=<< parameters.s3Path_storybook >>
-            echo $(date) > timestamp.html
-            aws s3 cp public $s3Path_docs --recursive
-            aws s3 cp timestamp.html $s3Path_docs
-            aws s3 cp dist-storybook $s3Path_storybook --recursive
-            aws s3 cp timestamp.html $s3Path_storybook
-      #- slack/notify:
-      #    <<: *slack_notify
 
   push_s3_general_oidc:
     parameters:
@@ -1670,6 +1644,26 @@ workflows:
 #             - deploy_terraform_s3_staging
 #             - build_docs_staging
 #             - build_storybook
+
+      - build_docs_main_with_no_base_url:
+          name: build_docs_staging
+          context: ncu-newskit-site-stage
+          requires:
+            - build_icons
+      - build_docs_with_no_base_url:
+          name: build_docs_staging
+          context: ncu-newskit-site-stage
+          requires:
+            - build_icons
+      - push_s3_general_oidc:
+          name: deploy_to_s3_staging
+          context: build_docs_staging
+          s3Path_docs: s3://ncu-newskit-docs-staging/
+          s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
+          requires:
+            - deploy_terraform_s3_staging
+            - build_docs_staging
+            - build_storybook
 
   pull_request_codemod:
     when:
