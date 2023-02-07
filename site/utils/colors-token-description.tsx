@@ -3,11 +3,10 @@ import {Link} from '../components/link';
 
 export const INK_DESCRIPTION = {
   inkBase: 'Body and paragraph text',
-  inkSubtle: 'Subheadlines, labels, secondary copy',
-  inkContrast: 'Headlines',
-  inkNonEssential: 'Text and icons in an inactive (disabled) state',
-  inkInverse:
-    'Text and icons where the recommended contrast against the background cannot be achieved',
+  inkSubtle: 'Subheadlines, labels and supporting copy',
+  inkContrast: 'Headlines or copy where emphasis is needed',
+  inkNonEssential: 'Text elements in their inactive (disabled) state',
+  inkInverse: 'Used when contrast with the background can’t be achieved',
   inkPositive: (
     <>
       Text and icons for success messages
@@ -38,10 +37,10 @@ export const INK_DESCRIPTION = {
 };
 
 export const INTERFACE_DESCRIPTION = {
-  interfaceBackground: 'Page background',
+  interfaceBackground: 'Page backgrounds',
   interface010: (
     <>
-      Component backgrounds (e.g. <Link href="/components/card/">card</Link>)
+      Component backgrounds (e.g <Link href="/components/card/">card</Link>)
     </>
   ),
   interface020: 'Extended scale of component backgrounds',
@@ -51,8 +50,7 @@ export const INTERFACE_DESCRIPTION = {
   interface060: 'Component backgrounds of contrasting colours',
   interfaceInformative010: (
     <>
-      Background (high contrast in a light theme, and low contrast in a dark
-      theme) for informative messages
+      Background for informative messages
       <br />
       <br />
       Feedback notifications (e.g.{' '}
@@ -65,121 +63,24 @@ export const INTERFACE_DESCRIPTION = {
       <Link href="/components/toast/">Toast</Link> component backgrounds
     </>
   ),
-  interfaceInformative020: (
-    <>
-      Background (low contrast in a light theme, and high contrast in a dark
-      theme) for informative messages
-      <br />
-      <br />
-      Feedback notifications (e.g.{' '}
-      <Link href="/components/inline-message/">inline message</Link> component
-      backgrounds)
-    </>
-  ),
-  interfaceNotice010: (
-    <>
-      Background (high contrast in a light theme, and low contrast in a dark
-      theme) for notice or warning messages
-      <br />
-      <br />
-      Feedback notifications (e.g.{' '}
-      <Link href="/components/banner/">banner</Link>,{' '}
-      <Link href="/components/flag/">flag</Link>
-      )
-      <br />
-      <br />
-      <Link href="/components/toast/">Toast</Link> backgrounds
-    </>
-  ),
-  interfaceNotice020: (
-    <>
-      Background (low contrast in a light theme, and high contrast in a dark
-      theme) for notice or warning messages
-      <br />
-      <br />
-      Feedback notifications
-    </>
-  ),
-  interfaceNegative010: (
-    <>
-      Background (high contrast in a light theme, and low contrast in a dark
-      theme) for error messages
-      <br />
-      <br />
-      Feedback notifications (e.g.{' '}
-      <Link href="/components/banner/">banner</Link>,{' '}
-      <Link href="/components/flag/">flag</Link>,{' '}
-      <Link href="/components/inline-message/">inline message</Link>
-      )
-      <br />
-      <br />
-      <Link href="/components/toast/">Toast</Link> component backgrounds
-    </>
-  ),
-  interfaceNegative020: (
-    <>
-      Background (low contrast in a light theme, and high contrast in a dark
-      theme) for error messages
-      <br />
-      <br />
-      Feedback notifications (e.g.{' '}
-      <Link href="/components/inline-message/">inline message</Link> component
-      backgrounds)
-    </>
-  ),
-  interfacePositive010: (
-    <>
-      Background (high contrast in a light theme, and low contrast in a dark
-      theme) for success messages
-      <br />
-      <br />
-      Feedback notifications (e.g.{' '}
-      <Link href="/components/banner/">banner</Link>,{' '}
-      <Link href="/components/flag/">flag</Link>,{' '}
-      <Link href="/components/inline-message/">inline message</Link>
-      )
-      <br />
-      <br />
-      <Link href="/components/toast/">Toast</Link> component backgrounds
-    </>
-  ),
-  interfacePositive020: (
-    <>
-      Background (low contrast in a light theme, and high contrast in a dark
-      theme) for success messages
-      <br />
-      <br />
-      Feedback notifications
-    </>
-  ),
+  interfaceInformative020:
+    'Interface colour complimentary to interfaceInformative010',
+  interfaceNotice010: 'Background for notice or warning messages',
+  interfaceNotice020: 'Interface colour complimentary to interfaceNotice010',
+  interfaceNegative010: 'Background for success messages',
+  interfaceNegative020:
+    'Interface colour complimentary to interfaceNegative010',
+  interfacePositive010: 'Background for error messages',
+  interfacePositive020:
+    'Interface colour complimentary to interfacePositive010',
   interfaceSkeleton010:
-    'Background (high contrast in a light theme, and low contrast in a dark theme) to indicate the skeleton (loading) state of a component',
+    'Background for a skeleton (loading) state of a component',
   interfaceSkeleton020:
-    'Background (low contrast in a light theme, and high contrast in a dark theme) to indicate the skeleton (loading) state of a component',
-  interfaceNeutral010: (
-    <>
-      Background (high contrast in a light theme, and low contrast in a dark
-      theme) for neutral messages, & feedback notifications (e.g.{' '}
-      <Link href="/components/banner/">banner</Link>,{' '}
-      <Link href="/components/flag/">flag</Link>,{' '}
-      <Link href="/components/inline-message/">inline message</Link>
-      )
-      <br />
-      <br />
-      <Link href="/components/toast/">Toast</Link> component backgrounds
-    </>
-  ),
-  interfaceNeutral020: (
-    <>
-      Background (low contrast in a light theme, and high contrast in a dark
-      theme) for neutral messages
-      <br />
-      <br />
-      Feedback notifications
-    </>
-  ),
+    'Interface colour complimentary to interfaceSkeleton010',
+  interfaceNeutral010: 'Background for neutral messages',
+  interfaceNeutral020: 'Interface colour complimentary to interfaceNeutral010',
   interfaceBrand010:
-    'Prominent brand colour applied to backgrounds e.g. a footer, or header',
+    'Prominent brand colour applied to backgrounds, e.g. headers, footers',
   interfaceBrand020: 'Brand colour complimentary to interfaceBrand010',
 };
 
@@ -190,20 +91,8 @@ export const INTERACTIVE_DESCRIPTION = {
       <Link href="/components/button/">button</Link>
     </>
   ),
-  interactivePrimary020: (
-    <>
-      Background colour applied to the loading state of all{' '}
-      <Link href="/components/button/">buttons</Link>, & the active state of the
-      outlined & minimal button
-    </>
-  ),
-  interactivePrimary030: (
-    <>
-      Background colour applied to the base state of the solid{' '}
-      <Link href="/components/button/">button</Link>, & the border colour of the
-      outlined button
-    </>
-  ),
+  interactivePrimary020: 'Visited state',
+  interactivePrimary030: 'Focus tabbing',
   interactivePrimary040: (
     <>
       Background colour applied to the hover state of the solid{' '}

@@ -499,7 +499,7 @@ export const routes = [
             page: true,
             id: '/components/banner',
             description:
-              'Demonstrates the progress of a system action e.g. waiting for a page to load.',
+              'Communicates essential information without blocking an experience.',
             illustration: 'components/banner/banner-illustration',
           },
           {

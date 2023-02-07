@@ -76,8 +76,8 @@ const coloursTable = [
         header: 'Common',
         columnHeader: COLUMN_HEADER,
         rows: themeColorRows('ink', INK_DESCRIPTION, [
-          'inkBase',
           'inkContrast',
+          'inkBase',
           'inkSubtle',
           'inkNonEssential',
           'inkInverse',
@@ -156,14 +156,14 @@ const coloursTable = [
           'interfaceBrand020',
         ]),
         description:
-          '‘Brand‘ Interface tokens are used in areas where expression and brand identity is required. This can include components such as title bars, header and footer navigation.',
+          'Use ‘brand‘ interface tokens to express brand identity. This includes components such as title bars, headers and footer navigation.',
       },
     ],
   },
   {
     title: 'Interactive',
     summary:
-      'Interactive colours are used to indicate and display interactions of certain components such as buttons, links and switches. Each set of interactive colours covers the various states needed. The base state uses the 030, the hover 040 and the active 050. The 010 and 020 are used for loading/progress states.',
+      'Apply interactive colours to indicate and display interactions of components. This includes components such as buttons, links and switches.',
     tabs: [
       {
         header: 'Primary',
@@ -252,7 +252,7 @@ const coloursTable = [
           'interactiveVisited010',
         ]),
         description:
-          '‘Other’ interactive colours are used for focus tabbing, ‘disabled’, & ‘visited states.',
+          'Use ‘common’ interactive tokens to indicate and display interactions of components that are links, or components in disabled, visited, and focus states.',
       },
     ],
   },
@@ -263,7 +263,7 @@ const Colours = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Colours',
       description:
-        'Colours express brand identity and convey meaning to users.',
+        'Colours help express brand identity and convey meaning to users.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -272,7 +272,7 @@ const Colours = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'theme/colours/hero',
       },
-      introduction: `Colours express brand identity and convey meaning to users.`,
+      introduction: `Colours help express brand identity and convey meaning to users.`,
     }}
   >
     <ComponentPageCell>
@@ -345,18 +345,18 @@ const Colours = (layoutProps: LayoutProps) => (
 
         <ContentSecondary childrenColSpan={ContentColSpan.TEXT}>
           <InlineMessage role="region" title="" aria-label="Palettecolours">
-            The WCAG AA standards define normal and large text sizes as: <br />
-            <br />
-            <b>Normal sized text</b>
-            <br />
-            The font size is at least 16px with a regular font weight or
-            heavier.
+            The WCAG AA standards define regular and large text sizes as:
             <br />
             <br />
-            <b>Large sized text</b>
+            <b>Regular</b>
             <br />
-            The font size is at least 18.66px with a bold font weight or 24px
-            with regular font weight.
+            Font size is at least 19px with a regular font weight or heavier.
+            <br />
+            <br />
+            <b>Large</b>
+            <br />
+            Font size is at least 19px with a bold font weight or 24px with
+            regular font weight.
           </InlineMessage>
         </ContentSecondary>
 
