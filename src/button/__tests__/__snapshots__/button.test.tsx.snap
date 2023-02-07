@@ -53,17 +53,17 @@ exports[`Button Loading Button renders Large Button 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -167,17 +167,17 @@ exports[`Button Loading Button renders Small Button 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -313,17 +313,17 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -451,17 +451,17 @@ exports[`Button Loading Button renders a button with fixed for width and height 
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -587,17 +587,17 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -725,17 +725,17 @@ exports[`Button Loading Button renders a button with percentage for width and he
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -861,17 +861,17 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -999,17 +999,17 @@ exports[`Button Loading Button renders a button with token set for width and hei
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1135,17 +1135,17 @@ exports[`Button renders Large Button 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1271,17 +1271,17 @@ exports[`Button renders Small Button 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1407,17 +1407,17 @@ exports[`Button renders button link when href passed 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1510,17 +1510,17 @@ exports[`Button renders button link with disabled link 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1648,17 +1648,17 @@ exports[`Button renders fixed-width Button 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1785,17 +1785,17 @@ exports[`Button renders full-width Button 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1921,17 +1921,17 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2098,17 +2098,17 @@ exports[`Button renders with different spaceInset preset 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2239,17 +2239,17 @@ exports[`Button renders with different style preset 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2375,17 +2375,17 @@ exports[`Button renders with different typography preset 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2511,17 +2511,17 @@ exports[`Button renders with fallback formatting 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2649,17 +2649,17 @@ exports[`Button renders with logical props overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-0 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-0 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 

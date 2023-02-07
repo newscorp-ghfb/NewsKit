@@ -1102,17 +1102,17 @@ exports[`ShareBar renders whatever components are passed to it 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-12 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1512,17 +1512,17 @@ exports[`ShareBar renders with custom label stylePreset 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-12 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1917,17 +1917,17 @@ exports[`ShareBar renders with custom stack spacing 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-12 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2322,17 +2322,17 @@ exports[`ShareBar renders with horizontally with overrides for label spacing 1`]
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-12 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2781,17 +2781,17 @@ exports[`ShareBar renders with overrides for item spacing 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-12 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -3186,17 +3186,17 @@ exports[`ShareBar renders with overrides for label typographyPreset 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-12 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -3591,17 +3591,17 @@ exports[`ShareBar renders with vertically with overrides for label spacing 1`] =
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-12 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-12 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 

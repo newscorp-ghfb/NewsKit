@@ -218,17 +218,17 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -537,17 +537,17 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-6 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-6 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -854,17 +854,17 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1164,17 +1164,17 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1474,17 +1474,17 @@ exports[`Popover content applies logical prop overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1826,17 +1826,17 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-6 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-6 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2143,17 +2143,17 @@ exports[`Popover content applies typography preset overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2494,17 +2494,17 @@ exports[`Popover header applies logical prop overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-6 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-6 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -2852,17 +2852,17 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-6 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-6 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -3191,17 +3191,17 @@ exports[`Popover header applies typography preset overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-6 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-6 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -3527,17 +3527,17 @@ exports[`Popover offset should be applied with pointer and px distance override 
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -3856,17 +3856,17 @@ exports[`Popover offset should be applied with pointer and token distance overri
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -4185,17 +4185,17 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -4514,17 +4514,17 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -4843,17 +4843,17 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -5153,17 +5153,17 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -5482,17 +5482,17 @@ exports[`Popover pointer padding should be applied with token distance override 
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -5811,17 +5811,17 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -6140,17 +6140,17 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -6469,17 +6469,17 @@ exports[`Popover should render correct styles: default 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -6790,17 +6790,17 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -7100,17 +7100,17 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -7429,17 +7429,17 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -7758,17 +7758,17 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -8087,17 +8087,17 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-5 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-5 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 

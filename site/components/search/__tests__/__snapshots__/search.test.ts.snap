@@ -984,17 +984,17 @@ exports[`Search renders correctly 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-1 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-1 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -1185,17 +1185,17 @@ exports[`Search renders correctly 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-1 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-1 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 

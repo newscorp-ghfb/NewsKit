@@ -9221,17 +9221,17 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -9670,17 +9670,17 @@ exports[`MenuSub render nested submenus 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -10153,17 +10153,17 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -10607,17 +10607,17 @@ exports[`MenuSub renders expanded when vertical 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -11074,17 +11074,17 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -11767,17 +11767,17 @@ exports[`MenuSub renders with logical props overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -12166,17 +12166,17 @@ exports[`MenuSub renders with overrides 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-7 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-7 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -12638,17 +12638,17 @@ exports[`MenuSub renders with title 1`] = `
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-8 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-8 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -13092,17 +13092,17 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-8 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-8 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -13358,17 +13358,17 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-17 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-17 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -13483,17 +13483,17 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-20 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-20 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -13608,17 +13608,17 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-26 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-26 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -14124,17 +14124,17 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-8 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-8 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -14389,17 +14389,17 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-17 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-17 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -14515,17 +14515,17 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-20 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-20 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
@@ -14641,17 +14641,17 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .emotion-26 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   .emotion-26 {
-    transition-property: color,background-color;
+    transition-property: background-color;
     transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 

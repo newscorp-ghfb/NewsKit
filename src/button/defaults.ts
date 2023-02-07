@@ -8,7 +8,7 @@ export default {
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
       spaceInline: 'space020',
-      transitionPreset: ['fontColorChange', 'backgroundColorChange'],
+      transitionPreset: 'backgroundColorChange',
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
@@ -21,7 +21,7 @@ export default {
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
       spaceInline: 'space020',
-      transitionPreset: ['fontColorChange', 'backgroundColorChange'],
+      transitionPreset: 'backgroundColorChange',
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
@@ -34,7 +34,7 @@ export default {
       minHeight: 'sizing090',
       iconSize: 'iconSize030',
       spaceInline: 'space020',
-      transitionPreset: ['fontColorChange', 'backgroundColorChange'],
+      transitionPreset: 'backgroundColorChange',
       loadingIndicator: {
         stylePreset: 'indeterminateProgressIndicatorPrimary',
       },
