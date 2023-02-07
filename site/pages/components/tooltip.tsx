@@ -43,7 +43,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       introduced: 'v5.7.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/tooltip',
       figmaUrl:
-        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=1%3A393',
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/(v4)-NK-Web-Components?node-id=7827%3A137510&t=tMmC9eY3t1cyYBbd-0',
     }}
     anatomy={{
       introduction:
