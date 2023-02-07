@@ -55,7 +55,7 @@ const CTABtn = ({
   </Button>
 );
 
-const FullWidthDiv = styled.div`
+const GridDiv = styled.div`
   width: 100%;
 `;
 
@@ -73,18 +73,16 @@ const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
     <Banner
       actions={[
         () => (
-          <>
-            <FullWidthDiv>
-              <Visible xs sm>
-                <CTABtn onClick={action}>CTA button</CTABtn>
-              </Visible>
-            </FullWidthDiv>
+          <GridDiv>
+            <Visible xs sm>
+              <CTABtn onClick={action}>CTA button</CTABtn>
+            </Visible>
             <Visible md lg xl>
               <CTABtn size="small" onClick={action}>
                 CTA button
               </CTABtn>
             </Visible>
-          </>
+          </GridDiv>
         ),
       ]}
       aria-label="Banner Info"
