@@ -609,7 +609,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  build_docs_main_with_no_base_url:
+  build_docs_with_no_base_url:
     executor: node-xlarge
     steps:
       - checkout
@@ -618,8 +618,6 @@ jobs:
       - run:
           name: Build
           command: |
-            git checkout main
-            git pull
             export SITE_ENV=${SITE_ENV}
             make build_docs_pr_with_no_base_url
       - persist_to_workspace:
@@ -1609,7 +1607,7 @@ workflows:
           context: ncu-newskit-site-pr
           requires:
             - build_icons
-      - build_docs_main_with_no_base_url:
+      - build_docs_with_no_base_url:
           name: build_docs_dev
           context: ncu-newskit-site-dev
           requires:
@@ -1645,7 +1643,7 @@ workflows:
 #             - build_docs_staging
 #             - build_storybook
 
-      - build_docs_main_with_no_base_url:
+      - build_docs_with_no_base_url:
           name: build_docs_staging
           context: ncu-newskit-site-stage
           requires:
