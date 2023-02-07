@@ -154,7 +154,7 @@ commands:
         default: ''
     steps:
       - run:
-          name: Terraform init OICD
+          name: Terraform init OIDC
           command: |
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
@@ -212,7 +212,7 @@ commands:
         default: ''
     steps:
       - run:
-          name: Terraform plan OICD
+          name: Terraform plan OIDC
           command: |
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
@@ -270,7 +270,7 @@ commands:
         default: ''
     steps:
       - run:
-          name: Terraform apply OICD
+          name: Terraform apply OIDC
           command: |
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             # use the OpenID Connect token to obtain AWS credentials
