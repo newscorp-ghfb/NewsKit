@@ -3206,6 +3206,12 @@ Object {
       "iconColor": "{{colors.interactiveInput040}}",
     },
   },
+  "accordionHeaderOld": Object {
+    "__extends": "accordionHeader",
+    "base": Object {
+      "backgroundColor": "{{colors.interface010}}",
+    },
+  },
   "accordionPanel": Object {
     "base": Object {
       "borderColor": "{{colors.interface050}}",
