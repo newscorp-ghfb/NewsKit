@@ -1,10 +1,14 @@
 export default {
   titleBar: {
     stylePreset: 'titleBar',
-    spaceInset: {
+    paddingInline: {
       xs: 'space030',
       lg: 'space040',
     },
+    // paddingBlock: {
+    //   xs: 'space030',
+    //   lg: 'space040',
+    // },
     heading: {
       typographyPreset: {
         xs: 'editorialHeadline050',

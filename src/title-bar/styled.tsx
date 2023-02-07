@@ -1,15 +1,11 @@
 import {Block} from '../block';
-import {
-  getResponsiveSpacingInset,
-  getStylePreset,
-  styled,
-} from '../utils/style';
+import {getStylePreset, styled} from '../utils/style';
 import {Stack} from '../stack';
+import {logicalProps} from '../utils/logical-properties';
 import {ContainerProps} from './types';
 
 export const StyledStackContainer = styled(Stack)<ContainerProps>`
-  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
-  ${getResponsiveSpacingInset('titleBar', '')}
+  ${logicalProps('titleBar')}
   ${getStylePreset('titleBar')}
 `;
 
