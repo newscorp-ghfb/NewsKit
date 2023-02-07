@@ -7869,9 +7869,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 </DocumentFragment>
 `;
 
-exports[`Popover should render correct styles: with pointer y coordinate 1`] = `<DocumentFragment />`;
-
-exports[`Popover should render correct styles: with pointer y coordinate 2`] = `
+exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
