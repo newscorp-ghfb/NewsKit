@@ -48,7 +48,7 @@ export interface AccessibilityTablesProps {
 export type AccessibilitySectionProps = AccessibilityTablesProps &
   IntroductionText;
 
-const A11yTable: React.FC<
+export const A11yTable: React.FC<
   {columns: string[]} & (
     | AccessibilitySectionProps['focusOrder']
     | AccessibilitySectionProps['interaction']
