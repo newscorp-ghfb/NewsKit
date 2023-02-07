@@ -5678,13 +5678,6 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
   },
-  "sliderLabelsOld": Object {
-    "__extends": "{{stylePresets.sliderLabels}}",
-    "base": Object {
-      "color": "{{colors.inkSubtle}}",
-      "iconColor": "{{colors.inkSubtle}}",
-    },
-  },
   "sliderThumb": Object {
     "active": Object {
       "backgroundColor": "{{colors.interactivePrimary050}}",
