@@ -189,7 +189,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-6 {
@@ -199,7 +199,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   text-overflow: ellipsis;
   color: #5A6A79;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -1604,7 +1604,7 @@ Object {
   justify-content: space-between;
   overflow: hidden;
   cursor: not-allowed;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-6 {
@@ -1614,7 +1614,7 @@ Object {
   text-overflow: ellipsis;
   color: #5A6A79;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -2607,7 +2607,7 @@ Object {
   justify-content: space-between;
   overflow: hidden;
   cursor: not-allowed;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-6 {
@@ -2617,7 +2617,7 @@ Object {
   text-overflow: ellipsis;
   color: #5A6A79;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -3630,7 +3630,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-6 {
@@ -3640,7 +3640,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   text-overflow: ellipsis;
   color: #5A6A79;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
