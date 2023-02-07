@@ -31,7 +31,7 @@ Account: nuk-digital-prod-newskit (005057636819) / nct-sysadmin
 
 (3) Get the AWS temporary credentials in a place that Terraform can read them from.
 
-You would think this would be enough:
+First, get the credentials and output them to the screen:
 
 ```
 aws --profile newscorp configure
@@ -39,7 +39,7 @@ export AWS_SHARED_CREDENTIALS_FILE=~/.aws/credentials
 cat $AWS_SHARED_CREDENTIALS_FILE
 ```
 
-But, to get it to work, I had to
+Second, copy and paste just these essential values into env vars, like so:
 
 export AWS_ACCESS_KEY=(aws_access_key_id value)
 export AWS_SECRET_ACCESS_KEY=(aws_secret_access_key value)
