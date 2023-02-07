@@ -1431,7 +1431,7 @@ Object {
   },
   "audioPlayerTimeDisplay": Object {
     "stylePreset": "timeDisplay",
-    "typographyPreset": "utilityButton030",
+    "typographyPreset": "utilityLabel020",
   },
   "audioPlayerVolumeControl": Object {
     "button": Object {
@@ -1462,7 +1462,7 @@ Object {
         "stylePreset": "audioPlayerVolumeControlTrack",
       },
     },
-    "spaceBetween": "space030",
+    "spaceBetween": "space010",
     "transitionPreset": "widthChange",
   },
   "banner": Object {
@@ -3270,8 +3270,14 @@ Object {
   },
   "audioPlayerVolumeControlPopover": Object {
     "base": Object {
-      "backgroundColor": "{{colors.interfaceBackground}}",
+      "backgroundColor": "{{colors.interface010}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
+      "boxShadow": "{{shadows.shadow060}}",
+    },
+  },
+  "audioPlayerVolumeControlPopoverOld": Object {
+    "__extends": "{{stylePresets.audioPlayerVolumeControlPopover}}",
+    "base": Object {
       "boxShadow": "{{shadows.shadow050}}",
     },
   },
@@ -3282,7 +3288,7 @@ Object {
     },
     "base": Object {
       "backgroundColor": "{{colors.interactivePrimary030}}",
-      "borderColor": "{{colors.interactivePrimary010}}",
+      "borderColor": "{{colors.interfaceBackground}}",
       "borderRadius": "{{borders.borderRadiusCircle}}",
       "borderStyle": "solid",
       "borderWidth": "{{borders.borderWidth010}}",
@@ -3300,6 +3306,12 @@ Object {
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary040}}",
       "iconColor": "{{colors.inkNonEssential}}",
+    },
+  },
+  "audioPlayerVolumeControlThumbOld": Object {
+    "__extends": "audioPlayerVolumeControlThumb",
+    "base": Object {
+      "borderColor": "{{colors.interactivePrimary010}}",
     },
   },
   "audioPlayerVolumeControlTrack": Object {

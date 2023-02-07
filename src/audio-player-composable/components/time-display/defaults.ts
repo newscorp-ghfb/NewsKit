@@ -1,6 +1,6 @@
 export default {
   audioPlayerTimeDisplay: {
     stylePreset: 'timeDisplay',
-    typographyPreset: 'utilityButton030',
+    typographyPreset: 'utilityLabel020',
   },
 };
