@@ -1595,13 +1595,15 @@ workflows:
           apply: true
           tf_env: true
           environment: dev
-#       - deploy_terraform_oidc:
-#           name: deploy_terraform_s3_staging
-#           package: s3/prod-newskit
-#           context: ncu-newskit-site-stage
-#           apply: true
-#           tf_env: true
-#           environment: staging
+
+       - deploy_terraform_oidc:
+           name: deploy_terraform_s3_staging
+           package: s3/prod-newskit
+           context: ncu-newskit-site-stage
+           apply: true
+           tf_env: true
+           environment: staging
+
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
