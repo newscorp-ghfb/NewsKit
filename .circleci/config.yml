@@ -1650,11 +1650,6 @@ workflows:
           context: ncu-newskit-site-stage
           requires:
             - build_icons
-      - build_docs_with_no_base_url:
-          name: build_docs_staging
-          context: ncu-newskit-site-stage
-          requires:
-            - build_icons
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
           context: build_docs_staging
