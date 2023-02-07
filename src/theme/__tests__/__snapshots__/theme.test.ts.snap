@@ -4070,7 +4070,7 @@ Object {
   },
   "dividerInverse": Object {
     "base": Object {
-      "borderColor": "{{colors.inkInverse}}",
+      "borderColor": "{{colors.interface010}}",
       "borderStyle": "solid",
       "borderWidth": "{{borders.borderWidthDefault}}",
     },
