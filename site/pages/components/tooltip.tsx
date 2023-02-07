@@ -25,7 +25,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Tooltip',
       description:
-        'Tooltips display short, informational messages when a user hovers over or focusses on a UI element.',
+        'A Tooltip is a feedback component that displays a short, informational message when a user hovers over or focuses on a UI element. ',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -35,7 +35,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
         illustration: 'components/tooltip/hero',
       },
       introduction:
-        'Tooltips display short, informational messages when a user hovers over or focusses on a UI element.',
+        'A Tooltip is a feedback component that displays a short, informational message when a user hovers over or focuses on a UI element. ',
     }}
     componentDefaultsKey="Tooltip"
     meta={{
@@ -43,15 +43,15 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       introduced: 'v5.7.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/tooltip',
       figmaUrl:
-        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=7827%3A137510&t=Bim1qMbXQevDEqDf-0',
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=1%3A393',
     }}
     anatomy={{
       introduction:
-        'The tooltip component contains two required elements and one optional element.',
+        'The Tooltip contains two required elements and one optional element.',
       rows: [
         {
           name: 'Panel',
-          description: 'Contains the panel content',
+          description: 'Contains the Panel Content',
           component: ['Div'],
           optional: undefined,
         },
@@ -64,7 +64,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Pointer',
           description:
-            'Indicates the direction of context that the tooltip is attributed to',
+            'Used to indicate the direction of context that the Tooltip is attributed to',
           component: ['Div'],
           optional: true,
         },
@@ -72,17 +72,19 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       media: getIllustrationComponent('components/tooltip/anatomy'),
     }}
     options={{
-      introduction: 'The tooltip has options for different use cases:',
+      introduction:
+        'The Tooltip has options that can be used to provide an appropriate experience for different use cases.',
       cards: [
         {
           title: 'Size',
           description:
-            'Set a maxWidth and minWidth for the tooltip. Height is set automatically based on the content.',
+            'The size of the Tooltip is dictated by the content passed to the panel, with the ability to set a maxWidth, and minWidth. Height is dictated by the content.',
           media: getIllustrationComponent('components/tooltip/options/size'),
         },
         {
           title: 'Placement',
-          description: 'Choose from 12 different tooltip placements.',
+          description:
+            'The Tooltip has 12 different placements to choose from, with the optional pointer to denote the direction of the context it is attributed.',
           media: getIllustrationComponent(
             'components/tooltip/options/placement',
           ),
@@ -91,13 +93,13 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           title: 'Pointer',
           description: (
             <>
-              Add a pointer to indicate the element to which the tooltip is
-              attributed. Set it to &apos;visible&apos; or &apos;hidden&apos; as
-              required.
+              The pointer is used to indicate to the user the reference element
+              to which the Tooltip is attributed. It can be set to be visible or
+              hidden.
               <br />
               <br />
-              The pointer changes position depending on the placement of the
-              tooltip.
+              The pointer position changes depending on the placement of the
+              Tooltip.
             </>
           ),
           media: getIllustrationComponent('components/tooltip/options/pointer'),
@@ -106,13 +108,14 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           title: 'Distance',
           description: (
             <>
-              Change the space between the tooltip and the element with spacing
-              tokens. By default, there&apos;s 8px of space between the tooltip
-              and the element, measured from the tip of the pointer, or from the
-              panel if you’re not using a pointer.
+              The space between the Tooltip and the UI element can be changed
+              with spacing tokens. By default, there is 8px of space between the
+              tooltip and the element to which it is attributed. This is
+              measured from the tip of the pointer, or from the panel if a
+              pointer is not used.
               <br />
               <br />
-              If no pointer is visible, the distance can still be set via
+              If no pointer is visible, then the distance can still be set via
               overrides.
             </>
           ),
@@ -123,12 +126,12 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction: 'Here’s how the tooltip behaves:',
+      introduction: 'The following guidance describes how a Tooltip behaves.',
       cards: [
         {
-          title: 'Triggering and closing the tooltip',
+          title: 'Triggering and closing the Tooltip',
           description:
-            'The tooltip is triggered when the user hovers and/or focusses on the UI element to which it is attributed. Removing focus or hover dismisses the tooltip.',
+            'The Tooltip is triggered by hovering and/or focussing on the UI element to which it is attributed. Removing focus or hover will dismiss the Tooltip.',
           media: getIllustrationComponent(
             'components/tooltip/behaviours/triggering-and-closing',
           ),
@@ -137,11 +140,14 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           title: 'Shift',
           description: (
             <>
-              The tooltip shifts to remain in view while the pointer maintains
-              context to the element it is attributed to.
+              The Tooltip shifts in order to remain in view of the visible area,
+              with the pointer maintaining the context that the Tooltip is
+              attributed to.
               <br />
               <br />
-              Learn more about shift at the Floating UI library.
+              <Link target="_blank" href="https://floating-ui.com/docs/shift">
+                For more information, refer to the Floating UI library.
+              </Link>
             </>
           ),
           media: getIllustrationComponent(
@@ -152,37 +158,36 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           title: 'Flip',
           description: (
             <>
-              The tooltip flips to the opposite side once it&apos;s about to
-              overflow the visible area, with the pointer maintaining the
-              context that the tooltip is attributed to. Once it detects enough
-              space on its preferred side, it flips back to its original
-              position.
+              The Tooltip flips to the opposite side once it’s about to overflow
+              the visible area, with the pointer maintaining the context that
+              the Tooltip is attributed to. Once enough space is detected on its
+              preferred side, it will flip back to its original position.
               <br />
               <br />
-              Learn more about flip at the{' '}
               <Link target="_blank" href="https://floating-ui.com/docs/flip">
-                Floating UI library.
+                For more information, refer to the Floating UI library.
               </Link>
             </>
           ),
           media: getIllustrationComponent('components/tooltip/behaviours/flip'),
         },
         {
-          title: 'Transition and delay',
+          title: 'Transition & delay',
           description: (
             <>
-              When triggered, the tooltip transitions using the{' '}
-              <InlineCode>fade</InlineCode> transition preset.
+              The Tooltip transitions using the <InlineCode>fade</InlineCode>{' '}
+              transition preset when it is triggered.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Transition"
+                title="Note"
                 overrides={{
                   marginBlockStart: 'space050',
                 }}
               >
                 A delay is applied to the first hovered item, after which there
-                is no (or reduced) delay on subsequent tooltips until the user
+                is no (or reduced) delay on subsequent Tooltips until the user
                 has stopped hovering over any relevant components.
               </InlineMessage>
             </>
@@ -264,7 +269,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/tooltip/usage/dont5'),
         },
       ],
-      notice: (
+      infoNotice: (
         <>
           Tooltip is not triggered if an element inside it has a disabled prop.
           If you would like to wrap a disabled component around Tooltip,{' '}
@@ -281,7 +286,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
     accessibility={{
       introduction: (
         <>
-          The tooltip has the following accessibility considerations:
+          The Tooltip has the following accessibility considerations:
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
@@ -294,17 +299,17 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
             }}
           >
             <>
-              Tooltips must be discoverable and readable with a mouse or other
-              pointer device, keyboard, screen reader, zoom software and any
+              Tooltips must be discoverable and readable with a mouse, other
+              pointer devices, keyboard, screen reader, zoom software, and any
               other assistive technology.
             </>
             <>
-              Tooltips should provide information that’s helpful for learning
-              the UI, but isn’t required to operate it.
+              They should provide relevant information that may be helpful for
+              learning the UI, but is not required to operate it.
             </>
             <>
-              When open, tooltips shouldn’t block the user from performing any
-              other task on the screen. You should test this across all
+              When open, Tooltips should not block a user from performing any
+              other task on the screen, this should be tested across all
               breakpoints.
             </>
           </UnorderedList>
@@ -312,15 +317,15 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       ),
       focusOrder: {
         title: 'Focus order',
-        description:
-          'Don’t pass links or other interactive elements to a tooltip. Tooltips are for short, informational messages on hover or focus.',
       },
+      infoNoticeFocus:
+        'It is not recommeded to pass links or other interactive elements to a Tooltip, due to the intent of a Tooltip being intended for short, informational messages on hover or focus.',
       interaction: {
         title: 'Keyboard Interactions',
         tableRows: [
           {
             command: ['Tab'],
-            description: `Toggles the tooltip when the element that triggers it is focussed.`,
+            description: `Toggle the Tooltip when the element that triggers it is focused.`,
           },
         ],
       },
@@ -331,22 +336,22 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
             element: 'Popover',
             attribute: 'aria-hidden',
             value: 'true',
-            description: 'If ‘true’, hides the tooltip',
+            description: 'If true, hides the Tooltip',
           },
         ],
       },
       infoNoticeAria: [
         <>
-          By default, the tooltip only describes its child element. The content
-          of the tooltip acts as an accessible description and{' '}
-          <InlineCode>aria-describedby</InlineCode> is added to the
-          tooltip&apos;s child elements.
+          By default, the Tooltip only describes its child element. The content
+          of the Tooltip acts as an accessible description and{' '}
+          <InlineCode>aria-describedby</InlineCode> will be added to the
+          Tooltip&apos;s child elements.
           <br />
           <br />
-          If the tooltip provides the only visual label (e.g. an icon button)
-          then you should use the tooltip to label its child elements.
-          Otherwise, the children will have no accessible name and the tooltip
-          will violate{' '}
+          Note that if the Tooltip provides the only visual label, eg an icon
+          button, then you should use Tooltip to label its child elements.
+          Otherwise, the children would have no accessible name and the Tooltip
+          would violate{' '}
           <Link
             target="_blank"
             href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html"
@@ -356,11 +361,11 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           <br />
           <br />
           You can pass the <InlineCode>asLabel</InlineCode> prop to make the
-          tooltip act as a label. In this case,{' '}
-          <InlineCode>role=tooltip</InlineCode>is removed, and if tooltip
-          content is a string, <InlineCode>aria-label</InlineCode>is added to
-          child elements. Otherwise, <InlineCode>aria-labelledby</InlineCode> is
-          added.
+          Tooltip act as a label. In this case,{' '}
+          <InlineCode>role=tooltip</InlineCode> will be removed, and if Tooltip
+          content is a string, <InlineCode>aria-label</InlineCode> will be added
+          to child elements. Otherwise, <InlineCode>aria-labelledby</InlineCode>{' '}
+          will be added.
         </>,
       ],
     }}
@@ -368,17 +373,32 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
       title: 'SEO considerations',
       introduction: (
         <>
-          The tooltip and its content are rendered to the DOM, but only visible
-          to the user when the tooltip is open.
+          <UnorderedList
+            markerAlign="start"
+            listItemMarker={IconFilledCircle}
+            overrides={{
+              spaceStack: 'space050',
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+            }}
+          >
+            <>
+              The Tooltip component and its content are rendered to the DOM, but
+              only visible to the user when the Tooltip is open.
+            </>
+          </UnorderedList>
         </>
       ),
     }}
     componentAPI={{
-      introduction:
-        'The tooltip has a range of props to define the experience in different use cases, and a range of predefined elements and attributes that can be overridden to define their appearance.',
       components: [
         {
-          title: '',
+          title: 'Tooltip',
+          propsSummary:
+            'The Tooltip has a range of props that can be used to define an appropriate experience for different use cases.',
+          overridesSummary:
+            'The Tooltip has a range of predefined elements and attributes that can be overridden to define their appearance.',
           propsRows: [
             {
               name: 'children',
@@ -398,12 +418,12 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               default: 'false',
               description: (
                 <>
-                  Set to ‘true’ if the tooltip acts as an accessible label for
-                  the child component.
+                  Set to true if the tooltip acts as an accessible label for the
+                  child component.
                   <br />
                   <br />
-                  By default, the title acts as an accessible description for
-                  the child
+                  By default the title acts as an accessible description for the
+                  child.
                 </>
               ),
               required: undefined,
@@ -412,14 +432,14 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               name: 'trigger',
               type: 'string | string[]',
               default: `['hover', 'focus']`,
-              description: `Defines how the tooltip is triggered`,
+              description: `Defines how the Tooltip is triggered`,
               required: undefined,
             },
             {
               name: 'open',
               type: 'boolean',
               default: 'false',
-              description: 'If ‘true’, the tooltip is shown',
+              description: 'If true, the Tooltip is shown',
               required: undefined,
             },
             {
@@ -428,14 +448,15 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               default: `‘flip', 'shift’`,
               description: (
                 <>
-                  Behaviour the tooltip should follow for fallback.
+                  Behavior the Tooltip should follow for fallback.
                   <br />
                   <br />
                   <Link
                     href="https://floating-ui.com/docs/react-dom-interactions"
                     target="_blank"
                   >
-                    Learn more at the Floating UI library
+                    For more information refer to the documentation from
+                    Floating UI.
                   </Link>
                 </>
               ),
@@ -447,15 +468,16 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               default: `'clippingAncestors'`,
               description: (
                 <>
-                  The edge of the tooltip panel where the overflow content will
-                  be clipped.
+                  Describes the clipping element(s) that overflow will be
+                  checked relative to.
                   <br />
                   <br />
                   <Link
                     href="https://floating-ui.com/docs/react-dom-interactions"
                     target="_blank"
                   >
-                    Learn more at the Floating UI library
+                    For more information refer to the documentation from
+                    Floating UI.
                   </Link>
                 </>
               ),
@@ -479,7 +501,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               ],
               default: `top`,
               description:
-                'Defines the placement of the tooltip, with the optional indicator to denote the direction of the attributed context.',
+                'Defines the placement of the Tooltip, with the optional indicator to denote the direction of the context it is attributed.',
               required: undefined,
             },
             {
@@ -494,105 +516,105 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'maxWidth',
               type: 'MQ<string>',
-              description: 'Overrides the maxWidth of the tooltip.',
+              description: 'Overrides the maxWidth property of the Tooltip.',
             },
             {
               attribute: 'minWidth',
               type: 'MQ<string>',
-              description: 'Overrides the minWidth of the tooltip.',
+              description: 'Overrides the minWidth property of the Tooltip.',
             },
             {
               attribute: 'zIndex',
               type: 'number',
               default: '80',
-              description: 'Overrides the zIndex of the tooltip.',
+              description: 'Overrides the zIndex of the Tooltip.',
             },
             {
               attribute: 'distance',
               type: 'MQ<string>',
               default: 'space020',
               description:
-                'Overrides the distance between the tooltip and the item it is attributed to.',
+                'Overrides the distance between the Tooltip and the item it is attributed to.',
             },
             {
               attribute: 'stylePreset',
               type: 'MQ<string>',
-              description: 'Overrides the stylePreset applied to the tooltip.',
+              description: 'Overrides the stylePreset applied to the Tooltip.',
             },
             {
               attribute: 'transitionPreset',
               type: 'MQ<string>',
               default: 'fade',
-              description: 'Overrides the transitionPreset of the tooltip.',
+              description: 'Overrides the transitionPrese of the Tooltip.',
             },
             {
               attribute: 'panel.paddingBlock',
               type: 'MQ<string>',
               default: 'spaceInset020',
-              description: 'Overrides the inset space of the tooltip panel.',
+              description: 'Overrides the inset space of the Tooltip panel.',
             },
             {
               attribute: 'panel.paddingInline',
               type: 'MQ<string>',
               default: 'spaceInset020',
-              description: 'Overrides the inset space of the tooltip panel.',
+              description: 'Overrides the inset space of the Tooltip panel.',
             },
             {
               attribute: 'panel.stylePreset',
               type: 'MQ<string>',
               default: 'tooltipPanel',
               description:
-                'Overrides the stylePreset applied to the tooltip panel.',
+                'Overrides the stylePreset applied to the Tooltip panel.',
             },
             {
               attribute: 'panel.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityLabel010',
               description:
-                'Overrides the typographyPreset applied to the tooltip panel.',
+                'Overrides the typographyPreset applied to the Tooltip panel.',
             },
             {
               attribute: 'panel.paddingBlockStart',
               type: 'MQ<string>',
               description:
-                'Takes one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints.',
+                'It can take one space token to specify the logical block start padding of the container. This space token can also be used on breakpoints',
             },
             {
               attribute: 'panel.paddingBlockEnd',
               type: 'MQ<string>',
               description:
-                'Takes one space token to specify the logical block end padding of the container. Can also be used on breakpoints.',
+                'It can take one space token to specify the logical block end padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'panel.paddingInlineStart',
               type: 'MQ<string>',
               description:
-                'Takes one space token to specify the logical inline start padding of the container. Can also be used on breakpoints.',
+                'It can take one space token to specify the logical inline start padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'panel.paddingInlineEnd',
               type: 'MQ<string>',
               description:
-                'Takes one space token to specify the logical inline end padding of the container. Can also be used on breakpoints.',
+                'It can take one space token to specify the logical inline end padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'pointer.size',
               type: 'MQ<string>',
               default: 'sizing010',
-              description: 'Overrides the size of the tooltip pointer.',
+              description: 'Overrides the size of the Tooltip pointer.',
             },
             {
               attribute: 'pointer.stylePreset',
               type: 'MQ<string>',
               default: 'tooltipPointer',
-              description: 'Overrides the stylePreset of the tooltip pointer.',
+              description: 'Overrides the stylePreset of the Tooltip pointer.',
             },
             {
               attribute: 'pointer.edgeOffset',
               type: 'MQ<string>',
               default: 'space020',
               description:
-                'Overrides the edgeOffset of the tooltip indicator. The edgeOffset is the padding between the indicator and the edges of the popover container.',
+                'Overrides the edgeOffset of the Tooltip indicator. The edgeOffset is the padding between the indicator and the edges of the popover container.',
             },
           ],
           propsFooter: (
@@ -601,11 +623,12 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
                 icon={infoIcon}
                 role="region"
                 aria-label="ForwardRef"
+                title="Note"
                 overrides={{
                   marginBlockStart: 'space070',
                 }}
               >
-                If the tooltip is wrapping a functional component, ensure that
+                If the Tooltip is wrapping a functional component, ensure that
                 the functional component accepts a ref using{' '}
                 <Link
                   href="https://reactjs.org/docs/forwarding-refs.html"

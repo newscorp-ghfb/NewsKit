@@ -28,6 +28,7 @@ const infoIcon = (
 export const UsageSection: React.FC<UsageSectionProps> = ({
   introduction,
   notice,
+  infoNotice,
   cards,
   ...usage
 }) => (
@@ -46,12 +47,25 @@ export const UsageSection: React.FC<UsageSectionProps> = ({
         <InlineMessage
           icon={infoIcon}
           role="region"
+          title="Note"
           aria-label="usage notice"
           overrides={{
             marginBlockStart: 'space070',
           }}
         >
           {notice}
+        </InlineMessage>
+      )}
+      {infoNotice && (
+        <InlineMessage
+          icon={infoIcon}
+          role="region"
+          aria-label="usage notice"
+          overrides={{
+            marginBlockStart: 'space070',
+          }}
+        >
+          {description}
         </InlineMessage>
       )}
     </ComponentPageCell>

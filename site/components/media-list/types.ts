@@ -18,5 +18,6 @@ export interface MediaListProps {
   gridProps?: GridProps;
   horizontalRatio?: string;
   notice?: string | React.ReactNode;
+  infoNotice?: string | React.ReactNode;
 }
 export type MediaItem = BaseCardProps | UsageCardProps | FeatureCardProps;
