@@ -55,6 +55,10 @@ const CTABtn = ({
   </Button>
 );
 
+const FullWidthDiv = styled.div`
+  width: 100%;
+`;
+
 const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
   const close = () => {
     // eslint-disable-next-line no-console
@@ -70,9 +74,11 @@ const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
       actions={[
         () => (
           <>
-            <Visible xs sm>
-              <CTABtn onClick={action}>CTA button</CTABtn>
-            </Visible>
+            <FullWidthDiv>
+              <Visible xs sm>
+                <CTABtn onClick={action}>CTA button</CTABtn>
+              </Visible>
+            </FullWidthDiv>
             <Visible md lg xl>
               <CTABtn size="small" onClick={action}>
                 CTA button
