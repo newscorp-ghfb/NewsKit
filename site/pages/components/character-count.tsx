@@ -274,19 +274,20 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the character count component.',
+      introduction: 'Here’s how and when to use the character count :',
       layout: '2-span',
       cards: [
         {
+          title: 'Do display an error message when needed',
           description:
-            'If a user tries to submit a form with an exceeded character count, an error message should display prompting them to reduce the number of characters.',
+            'If a user tries to submit a form with an exceeded character count, display an error message prompting them to reduce the number of characters.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/character-count/usage/do-01',
           ),
         },
         {
+          title: 'Don’t restrict users from inputting characters',
           description: (
             <>
               Don’t restrict users from inputting characters or copying and
@@ -312,8 +313,9 @@ const CharacterCountComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Do display a word count when needed',
           description:
-            'In some cases, it may be more helpful to show a word count. For example, if your question requires a longer answer, you can set data-maxwords in the component markup. E.g.//data-maxwords="100"//.',
+            'In some cases, it may be more helpful to show a word count. For example, if your question requires a longer answer, you can set data-maxwords in the component markup. E.g. //data-maxwords="100"//.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/character-count/usage/do-2',

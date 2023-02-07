@@ -1,4 +1,5 @@
 import {act, fireEvent} from '@testing-library/react';
+import '@testing-library/jest-dom';
 import FileSaver from 'file-saver';
 import {renderWithTheme} from '../../../utils/test-utils';
 import {SvgPreviewer} from '../svg-previewer';
@@ -13,14 +14,37 @@ global.Blob = function blob(content: any, options: any) {
 
 describe('SvgPreviewer', () => {
   const delay = (ms: any) => new Promise(res => setTimeout(res, ms));
+  const mockResizeObserver = jest.fn(() => ({
+    observe: jest.fn(),
+    disconnect: jest.fn(),
+  }));
 
-  it('should render correctly when not receiving any data', () => {
-    const fragment = renderWithTheme(SvgPreviewer);
-    expect(fragment).toMatchSnapshot();
+  beforeAll(() => {
+    // @ts-ignore
+    global.ResizeObserver = mockResizeObserver;
+  });
+
+  afterAll(() => {
+    // @ts-ignore
+    global.ResizeObserver = null;
+  });
+
+  it('should render correctly when not receiving any data', async () => {
+    const {asFragment, findByTestId} = renderWithTheme(SvgPreviewer);
+    const data = {};
+
+    await act(() => {
+      window.postMessage(data, '*');
+    });
+
+    const selectButton = await findByTestId('select-theme-element');
+
+    expect(selectButton).toBeDisabled();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render correctly when receiving one svg data', async () => {
-    const {asFragment} = renderWithTheme(SvgPreviewer);
+    const {asFragment, findByTestId} = renderWithTheme(SvgPreviewer);
     const data = {
       pluginMessage: {
         action: 'FilesToUI',
@@ -36,11 +60,13 @@ describe('SvgPreviewer', () => {
       await delay(50);
     });
 
+    const selectButton = await findByTestId('select-theme-element');
+    expect(selectButton).not.toBeDisabled();
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('should compose the SVG download file as expected', async () => {
-    const {getByTestId} = renderWithTheme(SvgPreviewer);
+    const {findByTestId} = renderWithTheme(SvgPreviewer);
     const data = {
       pluginMessage: {
         action: 'FilesToUI',
@@ -56,11 +82,8 @@ describe('SvgPreviewer', () => {
       await delay(50);
     });
 
-    const button = (getByTestId('single-svg-button') as unknown) as Element;
-
-    act(() => {
-      fireEvent.click(button);
-    });
+    const svgButton = await findByTestId('single-svg-button');
+    fireEvent.click(svgButton);
 
     expect(FileSaver.saveAs).toHaveBeenCalledWith(
       {content: [fileSvgMock], options: {type: 'text/plain;charset=utf-8;'}},
@@ -69,7 +92,9 @@ describe('SvgPreviewer', () => {
   });
 
   it('should change theme colors correctly when selecting a different theme from select element', async () => {
-    const {getByTestId, asFragment} = renderWithTheme(SvgPreviewer);
+    const {findByTestId, getAllByRole, asFragment} = renderWithTheme(
+      SvgPreviewer,
+    );
     const data = {
       pluginMessage: {
         action: 'FilesToUI',
@@ -84,12 +109,11 @@ describe('SvgPreviewer', () => {
       window.postMessage({...data}, '*');
       await delay(50);
     });
-
-    const selectThemeElement = (getByTestId(
-      'select-theme-element',
-    ) as unknown) as Element;
-
-    fireEvent.change(selectThemeElement, {target: {value: 'Patterns Theme'}});
+    // open select
+    const selectButton = await findByTestId('select-theme-element');
+    fireEvent.click(selectButton);
+    // select 3rd option
+    fireEvent.click(getAllByRole('option')[2]);
 
     expect(asFragment()).toMatchSnapshot();
   });

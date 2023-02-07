@@ -84,6 +84,7 @@ const overlayTable = [
 
 const DO_AND_DONT = [
   {
+    title: 'Do make overlay contrast clear',
     description: (
       <>
         Overlay contrasts should be distinct and clear. You can use them to
@@ -93,13 +94,14 @@ const DO_AND_DONT = [
     ),
 
     kind: UsageKind.DO,
-    media: getIllustrationComponent('theme/overlays/do'),
+    media: getIllustrationComponent('theme/overlays/usage/do-01'),
   },
   {
+    title: 'Don’t obscure important UI elements',
     description:
       'Overlays shouldn’t obscure the legibility of important UI elements, like text and icons.',
     kind: UsageKind.DONT,
-    media: getIllustrationComponent('theme/overlays/dont'),
+    media: getIllustrationComponent('theme/overlays/usage/dont-01'),
   },
 ];
 
@@ -138,7 +140,7 @@ const Overlays = (layoutProps: LayoutProps) => (
             toc="Usage"
             id="usage"
             headline="How to use overlays"
-            description="The following guidance describes how and when to appropriately use overlays."
+            description="Here’s how and when to use overlays:"
             showSeparator
           >
             <MediaList

@@ -215,16 +215,17 @@ const FlagComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a flag component.',
+      introduction: 'Here’s how and when to use the flag:',
       cards: [
         {
+          title: 'Do use flags to draw attention',
           description:
             'Use flags to draw attention to a new feature, piece of content, or status change that may be of particular interest to a user.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/flag/usage/do-01'),
         },
         {
+          title: "Don't use flags for categorisation",
           description: (
             <>
               Avoid using flags for categorisation other than status. Consider
@@ -235,14 +236,15 @@ const FlagComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/flag/usage/dont-01'),
         },
         {
+          title: "Don't make flags interactive",
           description: 'Use flags as a non-interactive status indicator.',
-          kind: UsageKind.DO,
+          kind: UsageKind.DONT,
           media: getIllustrationComponent('components/flag/usage/do-02'),
         },
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <UnorderedList
           markerAlign="start"

@@ -4,16 +4,16 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {Mono} from '../../components/flags';
 import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {Link} from '../../components/link';
 
 const DividerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Divider',
       description:
-        'A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.',
+        'Dividers visually separate different content and can be used vertically or horizontally.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -22,7 +22,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/divider-illustration',
       },
-      introduction: `A divider is used to provide visual separation of different content. Dividers can be applied vertically or horizontally.`,
+      introduction: `Dividers visually separate different content and can be used vertically or horizontally.`,
     }}
     componentDefaultsKey="divider"
     meta={{
@@ -32,12 +32,11 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
     }}
     anatomy={{
-      introduction: 'The Divider contains one required element.',
+      introduction: 'The divider component contains one required element.',
       rows: [
         {
           name: 'Divider',
-          description:
-            'The divider is an <hr> HTML tag that comprises of a styled border',
+          description: 'An <hr> HTML tag that comprises of a styled border',
           component: [],
           optional: undefined,
         },
@@ -47,13 +46,11 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     options={{
-      introduction:
-        'The Divider has an option that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The divider has an option for different use cases:',
       cards: [
         {
           title: 'Orientation',
-          description:
-            'A Divider can be displayed horizontally or vertically to effectively and appropriately use the space on a screen.',
+          description: 'Display a divider horizontally or vertically.',
           media: getIllustrationComponent(
             'components/divider/orientation-illustration',
           ),
@@ -61,18 +58,16 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     codeExamples={{
-      introduction: 'Below are examples of using the Divider:',
+      introduction: 'Here are some examples of the divider in action:',
       example: [
         {
-          title: 'With Stack',
+          title: 'Divider with stack',
           description: (
             <>
-              In this example, we demonstrate how to use the divider inside a{' '}
-              <Mono>Stack</Mono>. In scenarios where you want equal spacing, we
-              would recommend using this approach over the Block examples below.
-              We use <Mono>flow=horizontal-stretch</Mono> and wrap the{' '}
-              <Mono>Divider</Mono> in a <Mono>StackChild</Mono> to get it to
-              stretch to the height of the container.
+              Use this approach where you want equal spacing between elements.
+              This example shows how to use the divider inside a stack. Use
+              flow=horizontal-stretch and wrap the divider in a stackChild to
+              stretch it to the height of the container.
             </>
           ),
           media: getIllustrationComponent(
@@ -82,65 +77,44 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           codeUrl: 'examples/divider/divider-vertical-in-stack.tsx',
         },
         {
-          title: 'With Block',
+          title: 'Horizontal divider with block',
           description:
-            'This approach should be used where you have irregular spacing between elements.',
-          sections: [
-            {
-              title: 'Horizontal Divider',
-              description: (
-                <>
-                  In this example, we demonstrate the divider as a visual
-                  separator between two block elements. The container{' '}
-                  <Mono>StyledBlock</Mono> is being used to constrain the
-                  divider&apos;s width.
-                </>
-              ),
-              media: getIllustrationComponent(
-                'components/divider/block-horizontal-illustration',
-                {viewBox: '0 0 1490 600'},
-              ),
-              codeUrl: 'examples/divider/divider-horizontal-in-block.tsx',
-            },
-            {
-              title: 'Vertical Divider',
-              description: (
-                <>
-                  In this example, we demonstrate the vertical divider, used as
-                  a visual separator between two inline blocks. We use{' '}
-                  <Mono>InlineDividerContainer</Mono> to constrain the height of
-                  the block.
-                </>
-              ),
-              media: getIllustrationComponent(
-                'components/divider/block-vertical-illustration',
-                {viewBox: '0 0 1490 600'},
-              ),
-              codeUrl: 'examples/divider/divider-vertical-in-block.tsx',
-            },
-          ],
+            "Use this approach where you want irregular spacing between elements. This example shows the divider as a visual separator between two block elements. Use the container styledBlock to constrain the divider's width.",
+          media: getIllustrationComponent(
+            'components/divider/block-horizontal-illustration',
+            {viewBox: '0 0 1490 600'},
+          ),
+          codeUrl: 'examples/divider/divider-horizontal-in-block.tsx',
+        },
+        {
+          title: 'Vertical divider with block',
+          description:
+            'Use this approach where you want irregular spacing between elements. This example shows the vertical divider as a visual separator between two inline blocks. Use the inline divider container to constrain the height of the block.',
+          media: getIllustrationComponent(
+            'components/divider/block-vertical-illustration',
+            {viewBox: '0 0 1490 600'},
+          ),
+          codeUrl: 'examples/divider/divider-vertical-in-block.tsx',
         },
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Divider component.',
+      introduction: 'Here’s how and when to use the divider:',
       cards: [
         {
+          title: 'Use as a semantic divider element',
           description: (
             <>
-              Dividers should be used when there is a requirement for a semantic
-              divider element.
-              <br />
-              <br />
-              Where there is need for a decorative border using a border on a
-              StylePreset may be more appropriate.
+              Use dividers when you need a semantic divider element. If you need
+              a decorative border, consider a border on a{' '}
+              <Link href="https://www.newskit.co.uk/theme/presets/style-presets/">
+                stylePreset
+              </Link>{' '}
+              instead.
             </>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/divider/do-1-illustration',
-          ),
+          media: getIllustrationComponent('components/divider/do-01'),
         },
       ],
     }}
@@ -149,16 +123,16 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Divider',
           propsSummary:
-            'The Divider has a prop that can be used to define an appropriate experience for different use cases.',
+            'The divider has a range of props and overrides to define the experience in different use cases. You can define the divider’s appearance with a single stylePreset.',
           overridesSummary:
-            'The Divider takes a single StylePreset that can be used to define the appearance.',
+            'The divider has a range of props and overrides to define the experience in different use cases. You can define the divider’s appearance with a single stylePreset.',
           propsRows: [
             {
               name: 'Vertical',
               type: 'MQ<boolean>',
               required: undefined,
               description:
-                'If provided, changes the flow of the Divider to vertical.',
+                'If provided, changes the flow of the divider to vertical.',
             },
           ],
           overridesRows: [
@@ -167,7 +141,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<String>',
               default: 'dividerHorizontal',
               description:
-                'If provided, overrides the style preset applied to the Divider. The style preset can modify the borderStyle, borderColor and borderWidth.',
+                'If provided, overrides the stylePreset applied to the divider. The stylePreset can modify the borderStyle, borderColor and borderWidth',
             },
             ...(commonLogicalProps() as OverridesRowsProps[]),
           ],

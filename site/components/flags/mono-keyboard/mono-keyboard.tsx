@@ -8,17 +8,25 @@ export const MonoKeyboard: React.FC<{
   children: string | string[];
 }> = ({children}) => (
   <Stack flow="horizontal-center" spaceInline="space020">
-    {arrayify(children).reduce((acc: React.ReactNode[], v, i, arr) => {
-      acc.push(
-        <Mono key={v}>
-          <KeyboardIcon v={v} />
-          {v}
-        </Mono>,
-      );
-      if (arr.length > 1 && i < arr.length - 1) {
-        acc.push(<AddIcon key={`${v}-${arr[i + 1]}`} />);
-      }
-      return acc;
-    }, [])}
+    {arrayify(children).reduce(
+      (acc: React.ReactNode[], v: string, i, andArr) => [
+        ...acc,
+        ...v.split('|').reduce(
+          (prev: React.ReactNode[], next: string, j, orArr) => [
+            ...prev,
+            <Mono key={next}>
+              <KeyboardIcon v={next} />
+              {next}
+            </Mono>,
+            ...(orArr.length > 1 && j < orArr.length - 1 ? [<>or</>] : []),
+          ],
+          [],
+        ),
+        ...(andArr.length > 1 && i < andArr.length - 1
+          ? [<AddIcon key={`${v}-${andArr[i + 1]}`} />]
+          : []),
+      ],
+      [],
+    )}
   </Stack>
 );

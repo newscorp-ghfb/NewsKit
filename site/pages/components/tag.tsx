@@ -431,38 +431,35 @@ const TagComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the tag component.',
+      introduction: 'Here’s how and when to use tags:',
       cards: [
         {
+          title: 'Do make sure tags relate to the content',
           description:
-            'When adding an action next to a group of tags (e.g. ‘Clear all’), reveal the action only when there is more than one tag displayed.',
+            'Tags should always have a direct relationship to the content they represent.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/tag/usage/do-01'),
         },
         {
+          title: "Don't make tags too wide",
           description:
             'Avoid using full-width tags in wide containers. They are generally appropriate for small devices or contained components.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tag/usage/dont-01'),
         },
         {
+          title: 'Do make sure tags have sufficient clearance',
           description:
-            'Tags should always have a direct relationship to the content they represent.',
+            'Do allow a sufficient hit area when placing two or more tags inline make sure they are a sufficient size or have spacing between them to avoid users accidentally hitting the wrong tag.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/tag/usage/do-02'),
         },
         {
+          title: "Don't have multiple words for labels",
           description:
             'Avoid having multiple words for tag labels. They should be short and clear.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tag/usage/dont-02'),
-        },
-        {
-          description:
-            'When tags are to be placed inline, they should maintain at least an 8px gap between the two (or more) tags to allow for sufficient clearance around each tag.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/tag/usage/do-03'),
         },
       ],
     }}

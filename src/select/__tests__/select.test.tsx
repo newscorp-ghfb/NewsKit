@@ -694,6 +694,43 @@ describe('Select', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  const TestSelectControlledComponent = () => {
+    const [selected, setSelected] = React.useState<string>('');
+
+    return (
+      <Select
+        controlled
+        onChange={v => {
+          setSelected(v.target.value);
+        }}
+      >
+        {['1', '2'].map(v => (
+          <SelectOption key={v} value={v} selected={v === selected}>
+            option {v}
+          </SelectOption>
+        ))}
+      </Select>
+    );
+  };
+
+  test('force select to controlled tate', async () => {
+    const {getByTestId, getAllByRole, asFragment} = renderWithTheme(
+      TestSelectControlledComponent,
+    );
+
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    await waitFor(() => {
+      fireEvent.click(getAllByRole('option')[0]);
+    });
+
+    // this test throw error without controlled prop
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   describe('in Modal', () => {
     afterEach(() => {
       cleanup();

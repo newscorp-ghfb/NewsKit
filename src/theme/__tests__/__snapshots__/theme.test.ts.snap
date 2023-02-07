@@ -1521,16 +1521,19 @@ Object {
   },
   "breadcrumbItem": Object {
     "large": Object {
+      "paddingBlock": "space000",
       "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
+      "paddingBlock": "space000",
       "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
+      "paddingBlock": "space000",
       "paddingInline": "space000",
       "stylePreset": "breadcrumbItem",
       "typographyPreset": "utilityButton010",
@@ -1539,21 +1542,21 @@ Object {
   "breadcrumbs": Object {
     "large": Object {
       "separator": Object {
-        "paddingInline": "space020",
+        "marginInline": "space020",
         "size": "iconSize030",
         "stylePreset": "breadcrumbSeparator",
       },
     },
     "medium": Object {
       "separator": Object {
-        "paddingInline": "space020",
+        "marginInline": "space020",
         "size": "iconSize020",
         "stylePreset": "breadcrumbSeparator",
       },
     },
     "small": Object {
       "separator": Object {
-        "paddingInline": "space020",
+        "marginInline": "space020",
         "size": "iconSize010",
         "stylePreset": "breadcrumbSeparator",
       },

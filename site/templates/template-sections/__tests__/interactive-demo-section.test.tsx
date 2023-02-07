@@ -1,5 +1,6 @@
 import {InteractiveDemoSection, InteractiveDemoSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
+import {GenericComponent} from '../../../components/playground/types';
 
 jest.mock(
   'newskit',
@@ -15,7 +16,7 @@ jest.mock('../../../components/playground');
 
 describe('InteractiveDemoSection', () => {
   test('renders section as expected', () => {
-    const props: InteractiveDemoSectionProps = {
+    const props: InteractiveDemoSectionProps<GenericComponent> = {
       introduction: 'interactive demo introduction text goes here',
       playground: {dummy: 'playground props'} as any,
     };

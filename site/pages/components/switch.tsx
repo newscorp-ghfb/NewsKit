@@ -1,12 +1,11 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon, UnorderedList} from 'newskit';
+import {InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {IconFilledCircle} from '../../components/icons';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
@@ -26,8 +25,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Switch',
-      description:
-        'A switch is a selection control (toggle) that allows users to turn a setting on or off.',
+      description: 'Switches let users turn a setting on or off.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -36,7 +34,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/switch/hero',
       },
-      introduction: `A switch is a selection control (toggle) that allows users to turn a setting on or off.`,
+      introduction: `Switches let users turn a setting on or off.`,
     }}
     componentDefaultsKey="switch"
     meta={{
@@ -48,7 +46,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The switch contains two required elements and five optional elements.',
+        'The switch component contains two required elements and five optional elements.',
       media: getIllustrationComponent('components/switch/anatomy'),
       rows: [
         {
@@ -67,54 +65,45 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Feedback',
           description:
-            'Non-interactive background element for visual feedback on state change e.g. hover',
+            'Non-interactive background element for visual feedback on state change (e.g. hover)',
           component: 'Block',
           optional: true,
         },
         {
           name: 'Label',
-          description:
-            'The label is the text attributed to the switch that provides context',
+          description: 'Text attributed to the switch to provide context',
           component: 'Styled label',
           optional: true,
         },
         {
           name: 'On icon',
           description:
-            'Icon that appears within the track to indicate the switch is ‘on’',
+            'Appears within the track to indicate the switch is ‘on’',
           component: 'Icon',
           optional: true,
         },
         {
           name: 'Off icon',
           description:
-            'Icon that appears within the track to indicate the switch is ‘off’',
+            'Appears within the track to indicate the switch is ‘off’',
           component: 'Icon',
           optional: true,
         },
         {
           name: 'Thumb icon',
-          description: 'Icon that appears within the thumb',
+          description: 'Appears within the thumb',
           component: 'Icon',
           optional: true,
         },
       ],
     }}
     options={{
-      introduction:
-        'The switch has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The switch has options for different use cases:',
       cards: [
         {
           title: 'Size',
           description: (
-            <>
-              There are three sizes of the switch input: small, medium
-              (default), and large.
-              <br />
-              <br />
-              The icons that appear within the switch input track and thumb
-              remain the same size at all three sizes but can be overridden.
-            </>
+            <>The switch comes in small, medium (default) and large.</>
           ),
           media: getIllustrationComponent('components/switch/options/size'),
         },
@@ -122,13 +111,12 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           title: 'Thumb & track (size & icons)',
           description: (
             <>
-              The thumb and track sizes can be changed to achieve a different
-              look to match the platform&apos;s visual style e.g. MUI,{' '}
-              <InlineCode>Android</InlineCode>, iOS.
+              Change the thumb and track sizes to match a platform&apos;s visual
+              style (e.g. Android, iOS).
               <br />
               <br />
-              An icon can also be placed inside the thumb, and two icons can be
-              placed within the track e.g. on icon and off icon.
+              Add an icon inside the thumb, and two icons within the track (e.g.
+              &apos;on&apos; and &apos;off&apos; icons).
               <InlineMessage
                 icon={infoIcon}
                 role="region"
@@ -138,9 +126,9 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                 }}
               >
                 The track icon sizes depend on the size of the track and the
-                thumb (i.e. they cannot be bigger than the thumb or they would
-                not be covered when the thumb slides over them. However, the
-                thumb icon size depends on the size of the thumb.
+                thumb (i.e. they cannot be bigger than the thumb or they won’t
+                be covered when the thumb slides over them). The thumb icon size
+                depends on the size of the thumb.
               </InlineMessage>
             </>
           ),
@@ -158,8 +146,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           title: 'Label',
           description: (
             <>
-              The switch has a label that appears to the right (end) of a
-              switch, for context.
+              Add a label to the right (end) of the switch to provide context.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
@@ -168,8 +155,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                   marginBlockStart: 'space050',
                 }}
               >
-                In the case of needing a label on the left (start) of a switch,
-                this can be set via the
+                You can add a label on the left (start) of a switch using the{' '}
                 <InlineCode>labelPosition</InlineCode> prop.
               </InlineMessage>
             </>
@@ -185,25 +171,25 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Base',
           description:
-            'The switch has a base state. This is the base style of the switch before it has been interacted with by a user.',
+            'The default style before the user interacts with the switch.',
           media: getIllustrationComponent('components/switch/states/base'),
         },
         {
           title: 'Hover',
           description:
-            'The switch has a hover state. The style of the header and the cursor changes to visually communicate that the switch is an interactive element.',
+            'The switch changes style to let the user know it’s interactive.',
           media: getIllustrationComponent('components/switch/states/hover'),
         },
         {
           title: 'Focus',
           description:
-            'The switch has a visual focus state when in focus. The focus state outlines the heading container.',
+            'Communicates that the user has highlighted a switch (e.g. via keyboard or voice).',
           media: getIllustrationComponent('components/switch/states/focus'),
         },
         {
-          title: 'Focus Hover',
+          title: 'Focus hover',
           description:
-            'The switch in a focus hover state communicates that a user has highlighted a switch, using an input method such as a keyboard or voice.',
+            'Communicates that the user has highlighted and hovered over a switch (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/switch/states/focus-hover',
           ),
@@ -211,27 +197,27 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Checked',
           description:
-            'The switch has a checked state. The style of the Switch input changes to visually communicate and provide feedback to the user that the switch has been checked. The style of the label remains the same.',
+            'The switch input changes style to let the user know the switch is checked. The style of the label remains the same.',
           media: getIllustrationComponent('components/switch/states/checked'),
         },
         {
-          title: 'Checked Hover',
+          title: 'Checked hover',
           description:
-            'The switch has a checked hover state. The style of the switch input changes to visually communicate and provide feedback to the user that the switch has been checked and hovered over. The style of the label remains the same.',
+            'The switch input changes style to let the user know the switch is checked and hovered over. The style of the label remains the same.',
           media: getIllustrationComponent('components/switch/states/checked'),
         },
         {
-          title: 'Checked Focus',
+          title: 'Checked focus',
           description:
-            'The switch in a checked focus hover state communicates that a user has highlighted a switch, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted a switch (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/switch/states/checked-focus',
           ),
         },
         {
-          title: 'Checked Focus Hover',
+          title: 'Checked focus hover',
           description:
-            'The switch in a checked focus hover state communicates that a user has highlighted a switch, using an input method such as a keyboard or voice.',
+            'Communicates that a user has highlighted and hovered over a switch (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/switch/states/checked-focus-hover',
           ),
@@ -240,34 +226,32 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
           title: 'Disabled',
           description: (
             <>
-              The switch in a disabled state communicates that a switch exists,
-              but is not available to the user in that scenario. When the
-              user&apos;s cursor hovers over a switch in a disabled state, the
-              cursor shows as not allowed.
+              Communicates that a switch exists, but isn&apos;t available in
+              that scenario. When the user hovers over a switch in a disabled
+              state, the cursor shows as &apos;not allowed&apos;.
               <br />
               <br />
-              Disabled switches are often used to maintain layout consistency
-              and communicate that a switch may become available if another
-              condition is met. The style of the label (colour) also changes to
-              indicate that the switch is disabled.
+              Disabled switches maintain layout consistency and communicate that
+              a switch may become available if another condition is met. The
+              style of the label (colour) changes to indicate that the switch is
+              disabled.
             </>
           ),
           media: getIllustrationComponent('components/switch/states/disabled'),
         },
         {
-          title: 'Checked Disabled',
+          title: 'Checked disabled',
           description: (
             <>
-              The switch in a checked disabled state communicates that a switch
-              exists, but is not available to the user in that scenario. When
-              the user&apos;s cursor hovers over a switch in a checked disabled
-              state, the cursor shows as not allowed.
+              Communicates that a switch exists, but isn&apos;t available in
+              that scenario. When the user hovers over a switch in a checked
+              disabled state, the cursor shows as &apos;not allowed&apos;.
               <br />
               <br />
-              Disabled checked switches are often used to maintain layout
-              consistency and communicate that a switch may become available if
-              another condition is met. The style of the label (colour) also
-              changes to indicate that the switch is checked and disabled.
+              Checked disabled switches maintain layout consistency and
+              communicate that a switch may become available if another
+              condition is met. The style of the label (colour) changes to
+              indicate that the switch is checked and disabled.
             </>
           ),
           media: getIllustrationComponent(
@@ -276,10 +260,10 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         },
       ],
       notice:
-        'The feedback element becomes visible (configurable) on state change e.g. hover.',
+        'The feedback element becomes visible (configurable) on state change (e.g. hover).',
     }}
     behaviors={{
-      introduction: 'The following guidance describes how the switch behaves.',
+      introduction: 'Here’s how the switch behaves:',
       cards: [
         {
           title: 'Checked vs unchecked',
@@ -302,7 +286,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Label overflow wrap',
           description:
-            'When a Label is too long for the available horizontal space, it wraps to form another line.',
+            'When a label is too long for the available horizontal space, it wraps to form another line.',
           media: getIllustrationComponent(
             'components/switch/behaviours/label-overflow-wrap',
           ),
@@ -310,7 +294,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Clickable area',
           description:
-            'The switch feedback element indicates the minimum clickable area for the switch input (also known as hit area, or touch target area). The size of the clickable area changes according to the size of the switch. The associated Label is also clickable next to the switch.',
+            'The switch feedback element indicates the minimum clickable area for the switch input (also known as hit area or touch target area). The size of the clickable area changes according to the size of the switch. The associated label is also clickable.',
           media: getIllustrationComponent(
             'components/switch/behaviours/clickable-area',
           ),
@@ -318,7 +302,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Focusable area',
           description:
-            'Both the switch input and Label are interactive, and a user can hover over either, but only the switch thumb is focusable when using either keyboard or voice input.',
+            'The switch input and label are both interactive, and a user can hover over either, but only the switch thumb is focusable (e.g. via keyboard or voice).',
           media: getIllustrationComponent(
             'components/switch/behaviours/focusable-area',
           ),
@@ -326,33 +310,36 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the switch component.',
+      introduction: 'Here’s how and when to use the switch:',
       cards: [
         {
+          title: 'Do communicate activation',
           description:
-            'Use switches for communicating activation e.g. on/off states.',
+            'Use switches for communicating activation (e.g. on/off states).',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/switch/usage/do-1'),
         },
         {
+          title: 'Don’t use to communicate selection',
           description: (
             <>
-              Avoid using switches for communicating selection e.g. multiple
-              table rows. In these cases, use a{' '}
-              <Link href="/components/checkbox/">checkbox.</Link>
+              Avoid using switches for communicating selection (e.g. multiple
+              table rows). In these cases, use a{' '}
+              <Link href="/components/checkbox/">checkbox.</Link> instead.
             </>
           ),
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/switch/usage/dont-1'),
         },
         {
+          title: 'Do give switches a label',
           description:
-            'Switches should always have an associated label to give users context for what the switch represents.',
+            'Switches should have an associated label to give users context.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/switch/usage/do-2'),
         },
         {
+          title: 'Don’t require users to press a button',
           description:
             'Switches shouldn’t require users to press a button to apply settings.',
           kind: UsageKind.DONT,
@@ -362,24 +349,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction: (
-        <>
-          The switch has the following accessibility considerations:
-          <UnorderedList
-            markerAlign="start"
-            listItemMarker={IconFilledCircle}
-            overrides={{
-              content: {
-                typographyPreset: 'editorialParagraph030',
-              },
-              marginBlockStart: 'space050',
-            }}
-          >
-            <>
-              It’s critical that the switch doesn’t change when its state
-              changes (checked / unchecked).
-            </>
-          </UnorderedList>
-        </>
+        <>The switch has the following accessibility considerations:</>
       ),
       focusOrder: {
         title: 'Focus order',
@@ -411,8 +381,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
             element: 'role',
             attribute: 'ariaRole',
             value: 'switch',
-            description:
-              'Aria-role attribute used to define the role of the switch.',
+            description: 'Defines the role of the switch.',
             userSupplied: true,
           },
           {
@@ -420,7 +389,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the switch.',
+              'Defines a string that labels the action that will be performed when the user interacts with the switch.',
             userSupplied: true,
           },
           {
@@ -428,7 +397,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaRequired',
             value: 'object',
             description:
-              'This attribute informs the user that an element is required. When set to true, screen readers notify users that the element is required.',
+              'Informs the user that an element is required. When set to ‘true’, screen readers notify users that the element is required.',
             userSupplied: true,
           },
         ],
@@ -450,40 +419,40 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Switch',
           summary:
-            'The switch has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The switch has a range of props to define the experience in different use cases.',
           propsRows: [
             {
               name: 'size',
               type: ['small', 'medium', 'large'],
               default: 'medium',
               description:
-                'Defines the size of the Switch, including the thumb and track',
+                'Defines the size of the switch, including the thumb and track',
               required: undefined,
             },
             {
               name: 'label',
               type: 'string',
-              description: 'Defines the Switch Label',
+              description: 'Defines the switch label',
               required: undefined,
             },
             {
               name: 'labelPosition',
               type: ['start', 'end'],
               default: 'end',
-              description: 'Defines the position of the Label',
+              description: 'Defines the position of the label',
               required: undefined,
             },
             {
               name: 'labelAttributes',
               type: 'React.LabelHTMLAttributes<HTMLLabelElement>',
-              description: 'Used to pass HTML attributes to the Label',
+              description: 'Passes HTML attributes to the label',
               required: undefined,
             },
             {
               name: 'state',
               type: 'disabled | undefined',
               default: 'undefined',
-              description: 'If true, renders the Switch in a disabled state',
+              description: 'If ‘true’, renders the switch in a disabled state',
               required: undefined,
             },
           ],
@@ -493,7 +462,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'switchTrack',
               description:
-                'If provided, overrides the stylePreset of the Switch input',
+                'If provided, overrides the stylePreset of the switch input',
             },
             {
               attribute: 'input.blockSize',
@@ -504,27 +473,27 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                 'Large = sizing070',
               ],
               description:
-                'It can take one space token to specify the logical block start and end size of the container. This space token can also be used on breakpoints',
+                'Takes one space token to specify the logical block start and end size of the container. Can be used on breakpoints',
             },
             {
               attribute: 'input.InlineSize',
               type: 'MQ<string>',
               default: ['Small = 44px', 'Medium = 60px', 'Large = 76px'],
               description:
-                'It can take one space token to specify the logical inline start and end size of the container. This space token can also be used on breakpoints',
+                'Takes one space token to specify the logical inline start and end size of the container. Can be used on breakpoints',
             },
             {
               attribute: 'input.paddingInline',
               type: 'MQ<string>',
               default: 'space010',
               description:
-                'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints',
+                'Takes one space token to specify the logical inline start and end margin of the container. Can be used on breakpoints',
             },
             {
               attribute: 'input.margin and padding',
               type: 'MQ<string>',
               description:
-                'It can take one space token to specify the logical inline start and end margin of the container. This space token can also be used on breakpoints',
+                'Takes one space token to specify the logical inline start and end margin of the container. Can be used on breakpoints',
             },
             {
               attribute: 'input.spaceInline',
@@ -535,7 +504,7 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                 'Large = space040',
               ],
               description:
-                'If provided, this overrides the inline space between the Switch input and Label',
+                'If provided, overrides the inline space between the switch input and label',
             },
             {
               attribute: 'thumb.size',
@@ -545,14 +514,14 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                 'Medium = sizing050',
                 'Large = sizing060',
               ],
-              description: 'If provided, this overrides the size of the thumb',
+              description: 'If provided, overrides the size of the thumb',
             },
             {
               attribute: 'thumb.stylePreset',
               type: 'MQ<string>',
               default: 'switchThumb',
               description:
-                'If provided, this overrides the stylePreset of the Switch',
+                'If provided, overrides the stylePreset of the switch',
             },
             {
               attribute: 'thumb.paddingInline',
@@ -571,14 +540,14 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'shiftAbsolute',
               description:
-                'If provided, this overrides the transitionPreset of the thumb',
+                'If provided, overrides the transitionPreset of the thumb',
             },
             {
               attribute: 'trackIcon.stylePreset',
               type: 'MQ<string>',
               default: 'switchTrackIcon',
               description:
-                'If provided, this overrides the stylePreset of the track icon',
+                'If provided, overrides the stylePreset of the track icon',
             },
             {
               attribute: 'feedback.size',
@@ -589,21 +558,21 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                 'Large = sizing090',
               ],
               description:
-                'If provided, this overrides the size of the feedback element',
+                'If provided, overrides the size of the feedback element',
             },
             {
               attribute: 'feedback.stylePreset',
               type: 'MQ<string>',
               default: 'feedback',
               description:
-                'If provided, this overrides the stylePreset of the feedback element',
+                'If provided, overrides the stylePreset of the feedback element',
             },
             {
               attribute: 'feedback.transitionPreset',
               type: 'MQ<string>',
               default: ['shiftAbsolute', 'opacityChange'],
               description:
-                'If provided, overrides the transitionPresets of the feedback element',
+                'If provided, overrides the transitionPreset of the feedback element',
             },
             {
               attribute: 'label.typographyPreset',
@@ -614,31 +583,29 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                 'Large = utilityBody030',
               ],
               description:
-                'If provided, this overrides the typographyPreset of the Label',
+                'If provided, overrides the typographyPreset of the label',
             },
             {
               attribute: 'label.stylePreset',
               type: 'MQ<string>',
               default: 'controlLabel',
               description:
-                'If provided, this overrides the stylePreset of the Label',
+                'If provided, overrides the stylePreset of the label',
             },
             {
               attribute: 'onIcon',
               type: 'Override<BaseSwitchIconProps>',
-              description:
-                'If provided, this overrides the ‘on’ icon in the track',
+              description: 'If provided, overrides the ‘on’ icon in the track',
             },
             {
               attribute: 'offIcon',
               type: 'Override<BaseSwitchIconProps>',
-              description:
-                'If provided, this overrides the ‘off’ icon in the track',
+              description: 'If provided, overrides the ‘off’ icon in the track',
             },
             {
               attribute: 'thumbIcon',
               type: 'Override<BaseSwitchIconProps>',
-              description: 'If provided, this overrides the thumb icon',
+              description: 'If provided, overrides the thumb icon',
             },
             ...(commonLogicalProps() as OverridesRowsProps[]),
           ],

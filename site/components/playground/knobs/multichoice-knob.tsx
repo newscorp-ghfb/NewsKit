@@ -6,7 +6,6 @@ import {
   css,
   getColorFromTheme,
   MQ,
-  getSSRId,
   EventTrigger,
   useInstrumentation,
 } from 'newskit';
@@ -27,7 +26,7 @@ export interface Overrides {
   space?: MQ<string>;
 }
 export interface MultiChoiceKnobOptions {
-  value: string | Overrides | undefined;
+  value?: string | Overrides | boolean | React.ComponentType;
   label: string;
   isDefault?: boolean;
 }
@@ -125,14 +124,14 @@ export const MultiChoiceKnob: React.FC<MultiChoiceKnobProps> = ({
           {options.map(({value, label}) => {
             const checked = setChecked(selectedValue, value);
 
-            const id = `multichoice-knob-${getSSRId()}-${label}-${value}`;
+            const id = `multichoice-knob-${name}-${label}-${value}`;
             return (
               <React.Fragment key={id}>
                 <StyledInput
                   type="radio"
                   id={id}
                   data-testid={value}
-                  name={getSSRId() + name}
+                  name={label + name}
                   defaultChecked={checked}
                   onClick={() => {
                     if (onChange) onChange(value);
