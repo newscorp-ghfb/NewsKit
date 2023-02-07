@@ -46,6 +46,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       onOpenChange,
       // force select in controlled mode
       controlled = false,
+      labelId,
       ...restProps
     } = props;
 
@@ -66,14 +67,10 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [onFocus],
     );
 
-    const childrenArray = React.Children.toArray(
-      children,
-    ) as React.ReactElement<SelectOptionProps>[];
-
-    const programmaticallySelectedItem = childrenArray.find(
+    const programmaticallySelectedItem = children.find(
       option => option.props.selected,
     );
-    const defaultSelectedItem = childrenArray.find(
+    const defaultSelectedItem = children.find(
       option => option.props.defaultSelected,
     );
 
@@ -128,8 +125,15 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
     /* eslint-disable @typescript-eslint/no-explicit-any */
     // istanbul ignore next
-    const itemToString = (item: any) =>
-      item?.props?.['aria-label'] || item?.props?.value;
+    const itemToString = (item: any) => {
+      if (item?.props?.['aria-label']) {
+        return item?.props?.['aria-label'];
+      }
+      if (typeof item?.props?.children === 'string') {
+        return item?.props?.children;
+      }
+      return item?.props?.value;
+    };
     /* eslint-enable @typescript-eslint/no-explicit-any */
 
     const getSelectedItem = () => {
@@ -153,7 +157,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       openMenu,
       closeMenu,
     } = useSelect({
-      items: childrenArray,
+      items: children,
       defaultSelectedItem,
       onSelectedItemChange: onInputChange,
       itemToString,
@@ -180,7 +184,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     });
 
     const {children: optionsAsChildren, scrollToIndex} = useVirtualizedList({
-      items: childrenArray,
+      items: React.Children.toArray(
+        children,
+      ) as React.ReactElement<SelectOptionProps>[],
       listRef: panelRef,
       getItemProps,
       limit: virtualized,
@@ -238,7 +244,10 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const {
       ref: downshiftMenuPropsRef,
       ...downshiftMenuPropsExceptRef
-    } = getMenuProps({ref: composeRefs(refs.floating, panelRef)});
+    } = getMenuProps({
+      ref: composeRefs(refs.floating, panelRef),
+      'aria-labelledby': labelId,
+    });
 
     // eslint-disable-next-line consistent-return
     React.useLayoutEffect(() => {
