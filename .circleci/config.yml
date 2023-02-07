@@ -115,7 +115,7 @@ executors:
 
   cypress:
     docker:
-      - image: cypress/browsers:node16.13.2-chrome95-ff94
+      - image: cypress/browsers:node16.13.2-browsers
     resource_class: large
 
   java:
