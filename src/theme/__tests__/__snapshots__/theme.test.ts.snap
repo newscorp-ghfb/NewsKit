@@ -1250,7 +1250,10 @@ Object {
       "paddingInline": "spaceInset030",
       "spaceInline": "space020",
       "stylePreset": "accordionHeader",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "fontColorChange",
+        "backgroundColorChange",
+      ],
       "typographyPreset": "utilityButton030",
     },
     "panel": Object {
@@ -3179,15 +3182,17 @@ exports[`NewsKit Light theme combine all style presets 1`] = `
 Object {
   "accordionHeader": Object {
     "base": Object {
-      "backgroundColor": "{{colors.interface010}}",
+      "backgroundColor": "{{colors.interfaceBackground}}",
       "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
       "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "backgroundColor": "{{colors.interactiveDisabled010}}",
       "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
       "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -3198,6 +3203,7 @@ Object {
     "hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
       "color": "{{colors.interactiveInput040}}",
+      "iconColor": "{{colors.interactiveInput040}}",
     },
   },
   "accordionPanel": Object {
