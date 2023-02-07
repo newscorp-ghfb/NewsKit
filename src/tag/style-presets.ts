@@ -16,7 +16,7 @@ export default {
       backgroundColor: '{{colors.interactiveSecondary020}}',
     },
     active: {
-      borderWidth: '{{borders.borderWidth010}}',
+      backgroundColor: '{{colors.interface010}}',
     },
     'focus-visible': defaultFocusVisible,
   },
