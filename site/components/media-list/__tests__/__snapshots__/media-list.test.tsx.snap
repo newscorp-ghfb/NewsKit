@@ -212,7 +212,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-11 .nk-headline-heading {
-  color: #2E3F54;
+  color: #09111C;
 }
 
 .emotion-11:hover:not(:disabled) .nk-headline-heading {
@@ -680,7 +680,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-11 .nk-headline-heading {
-  color: #2E3F54;
+  color: #09111C;
 }
 
 .emotion-11:hover:not(:disabled) .nk-headline-heading {
