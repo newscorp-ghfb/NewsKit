@@ -842,6 +842,12 @@ const SelectComponent = (layoutProps: LayoutProps) => (
                 'If provided, defines name of the input element. Use when submitting an HTML form.',
             },
             ...commonPropsRows,
+            {
+              name: 'labelId',
+              type: 'string',
+              description:
+                'If provided, defines aria-labelledby to select panel.',
+            },
           ],
           overridesRows: commonOverridesRows,
           overridesFooter: selectOverridesFooter,

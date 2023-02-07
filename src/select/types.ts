@@ -64,6 +64,7 @@ export interface SelectProps extends CommonInputProps, EventData {
   onOpenChange?: (value: boolean) => void;
   // force select in controlled mode
   controlled?: boolean;
+  labelId?: string;
 }
 
 export interface SelectOptionProps {
