@@ -65,7 +65,7 @@ export const UsageSection: React.FC<UsageSectionProps> = ({
             marginBlockStart: 'space070',
           }}
         >
-          {description}
+          {infoNotice}
         </InlineMessage>
       )}
     </ComponentPageCell>
