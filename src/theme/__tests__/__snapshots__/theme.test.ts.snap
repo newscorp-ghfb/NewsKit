@@ -1576,7 +1576,10 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish040",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "fontColorChange",
+        "backgroundColorChange",
+      ],
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
@@ -1589,7 +1592,10 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "fontColorChange",
+        "backgroundColorChange",
+      ],
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
@@ -1602,7 +1608,10 @@ Object {
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "buttonSolidPrimary",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "fontColorChange",
+        "backgroundColorChange",
+      ],
       "typographyPreset": "utilityButton010",
     },
   },
@@ -3204,12 +3213,6 @@ Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
       "color": "{{colors.interactiveInput040}}",
       "iconColor": "{{colors.interactiveInput040}}",
-    },
-  },
-  "accordionHeaderOld": Object {
-    "__extends": "accordionHeader",
-    "base": Object {
-      "backgroundColor": "{{colors.interface010}}",
     },
   },
   "accordionPanel": Object {
