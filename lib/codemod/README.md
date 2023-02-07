@@ -116,25 +116,6 @@ Run this codemod if you would like to apply manual overrides to keep the old def
 + <AudioPlayerPlayPauseButton size="large" />
 ```
 
-#### `slider-default-styles`
-
-There changes to the default styling of the Slider component in v7.
-Run this codemod if you would like to apply manual overrides to keep the old default styling.
-
-```diff
-- <Slider />
-
-+ <Slider
-+  overrides={{
-+    labels: {
-+      stylePreset: "sliderLabelsOld"
-+    },
-+    track: {
-+       size: "sizing030"
-+    }
-+  }}/>
-```
-
 #### `all-default-styles`
 
 Run this codemod if you would like to apply manual overrides to the keep the old default styling for all components.
