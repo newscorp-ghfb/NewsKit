@@ -1498,7 +1498,7 @@ Object {
         "closeButton": Object {
           "stylePreset": "buttonOutlinedInverse",
         },
-        "spaceInline": "space050",
+        "spaceInline": "space040",
       },
       "content": Object {
         "message": Object {
