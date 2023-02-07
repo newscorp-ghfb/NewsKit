@@ -269,7 +269,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/tooltip/usage/dont5'),
         },
       ],
-      infoNotice: (
+      notice: (
         <>
           Tooltip is not triggered if an element inside it has a disabled prop.
           If you would like to wrap a disabled component around Tooltip,{' '}
