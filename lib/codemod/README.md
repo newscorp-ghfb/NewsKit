@@ -102,7 +102,6 @@ LinkStandalone is used outside of body content, for example within navigational 
 The following transformers are available when upgrading to v7:
 
 - [`audio-player-default-styles`](#audio-player-default-styles)
-- [`slider-default-styles`](#slider-default-styles)
 - [`all-default-styles`](#all-default-styles)
 
 #### `audio-player-default-styles`
