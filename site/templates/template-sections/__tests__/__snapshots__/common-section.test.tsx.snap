@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommonSection renders section as expected 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-top: -24px;
+  padding-top: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-1 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-1 {
+    margin-bottom: 32px;
+  }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0;
+  background-color: transparent;
+}
+
+.emotion-3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-4 {
+    font-family: "Poppins",sans-serif;
+    font-size: 28px;
+    line-height: 31.5px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-4::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-4::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-4 {
+    font-family: "Poppins",sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 0.5px 0px;
+  }
+
+  .emotion-4::before {
+    content: '';
+    margin-bottom: -0.2155em;
+    display: block;
+  }
+
+  .emotion-4::after {
+    content: '';
+    margin-top: -0.2125em;
+    display: block;
+  }
+}
+
+.emotion-5 {
+  display: inline;
+  font: inherit;
+  margin: 0;
+  color: #09111C;
+}
+
+.emotion-5 svg {
+  fill: #09111C;
+}
+
+.emotion-7 {
+  margin: 0;
+  color: #2E3F54;
+  font-family: "Poppins",sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-7 svg {
+  fill: #2E3F54;
+}
+
+.emotion-7::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-7::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-8 {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+<div
+    data-comp="NewsKit Cell"
+    data-props="{
+  \\"xs\\": 12
+}"
+    data-testid="Cell"
+  >
+    <section
+      class="emotion-0"
+      data-toc-indexed="toc"
+      id="id"
+    >
+      <div
+        data-comp="NewsKit Grid"
+        data-props="{
+  \\"xsMargin\\": \\"space000\\",
+  \\"xsRowGutter\\": \\"space000\\"
+}"
+        data-testid="Grid"
+      >
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 8,
+  \\"lg\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+          data-testid="Cell"
+        >
+          <div
+            class="emotion-1"
+          >
+            <div
+              class="emotion-2"
+            >
+              <div
+                class="emotion-3"
+              >
+                <section
+                  class="emotion-4"
+                >
+                  <h2
+                    class="nk-headline-heading emotion-5"
+                  >
+                    title
+                  </h2>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div
+            class="emotion-6"
+          >
+            <p
+              class="emotion-7"
+            >
+              introduction text goes here
+            </p>
+          </div>
+        </div>
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xs\\": 12,
+  \\"mdOffset\\": 1,
+  \\"md\\": 10,
+  \\"xl\\": 8
+}"
+          data-testid="Cell"
+        />
+        <div
+          data-comp="NewsKit Cell"
+          data-props="{
+  \\"xs\\": 12,
+  \\"md\\": 10,
+  \\"xl\\": 8,
+  \\"mdOffset\\": 1
+}"
+          data-testid="Cell"
+        >
+          <div
+            class="emotion-8"
+          >
+            <div
+              data-comp="NewsKit Image"
+              data-props="{
+  \\"src\\": \\"media 1 src\\",
+  \\"alt\\": \\"media 1\\"
+}"
+              data-testid="Image"
+            />
+          </div>
+        </div>
+        description
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;
