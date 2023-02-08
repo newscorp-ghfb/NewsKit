@@ -45,6 +45,14 @@ enum DynamicKeyPrefixes {
   link_text_ = 'link_text_',
 }
 
+const buttonOverrides = {
+  typographyPreset: 'utilityButton010',
+  stylePreset: 'buttonOutlinedSecondary',
+  width: '100%',
+  minWidth: '176px',
+  minHeight: '44px',
+};
+
 type CommunityIndexContent = PageCMSRequiredProps<RequiredKeys> &
   PageCMSPrefixedProps<DynamicKeyPrefixes>;
 
@@ -187,13 +195,7 @@ const CommunityIndex = ({
                   {listing.meta.storybookUrl && (
                     <Button
                       size="small"
-                      overrides={{
-                        typographyPreset: 'utilityButton010',
-                        stylePreset: 'buttonOutlinedSecondary',
-                        minWidth: '176px',
-                        width: '100%',
-                        minHeight: '44px',
-                      }}
+                      overrides={buttonOverrides}
                       href={listing.meta.storybookUrl}
                       target="_blank"
                     >
@@ -204,13 +206,7 @@ const CommunityIndex = ({
                   {listing.meta.figmaUrl && (
                     <Button
                       size="small"
-                      overrides={{
-                        typographyPreset: 'utilityButton010',
-                        stylePreset: 'buttonOutlinedSecondary',
-                        minWidth: '176px',
-                        width: '100%',
-                        minHeight: '44px',
-                      }}
+                      overrides={buttonOverrides}
                       href={listing.meta.figmaUrl}
                       target="_blank"
                     >
@@ -221,13 +217,7 @@ const CommunityIndex = ({
                   {listing.meta.linkUrl && (
                     <Button
                       size="small"
-                      overrides={{
-                        typographyPreset: 'utilityButton010',
-                        stylePreset: 'buttonOutlinedSecondary',
-                        width: '100%',
-                        minWidth: '176px',
-                        minHeight: '44px',
-                      }}
+                      overrides={buttonOverrides}
                       href={listing.meta.linkUrl}
                       target="_blank"
                     >

@@ -9,7 +9,7 @@ import {
 } from '../../../components/content-structure';
 
 import {Link} from '../../../components/link';
-// TODO: Remove table of contents?
+
 const CommunityHowToContribute = (layoutProps: LayoutProps) => (
   <AboutPageTemplate
     headTags={{
