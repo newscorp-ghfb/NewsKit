@@ -75,25 +75,27 @@ describe('check-baseline-updates', () => {
       './percy-storybook.config.json',
       JSON.stringify({include: ['^snapshot1$', '^snapshot2$']}),
     );
-    expect(result).toBe(true);
+    expect(result).toBe('UPDATES_REQUIRED');
   });
 
   it('should return false if no diffs require updates', async () => {
     const result = await run('branch/approved-no-diffs');
-    expect(result).toBe(false);
+    expect(result).toBe('NO_UPDATES_REQUIRED');
   });
 
   it('should return false if build not approved', async () => {
     const result = await run('branch/diffs-not-approved');
-    expect(result).toBe(false);
+    expect(result).toBe('NO_UPDATES_REQUIRED');
   });
 
   it('should raise an exception if no token found', async () => {
     delete process.env.PERCY_TOKEN;
-    await expect(run('branch/approved-no-diffs')).rejects.toThrowError();
+    const result = await run('approved-no-diffs');
+    expect(result).toBe('ERROR');
   });
 
   it('should raise an exception if build not found', async () => {
-    await expect(run('invalid-branch')).rejects.toThrowError();
+    const result = await run('invalid-branch');
+    expect(result).toBe('ERROR');
   });
 });

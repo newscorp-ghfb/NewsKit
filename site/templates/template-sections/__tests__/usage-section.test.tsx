@@ -2,10 +2,14 @@ import {UsageKind} from '../../../components/usage-card/types';
 import {UsageSection, UsageSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 
-jest.mock('../../../components/media-list/media-list');
+jest.mock('../../../components/media-list/media-list.tsx');
 jest.mock(
   'newskit',
-  require('../../../utils/test-utils').mockNewsKitComponents('Grid', 'Cell'),
+  require('../../../utils/test-utils').mockNewsKitComponents(
+    'Grid',
+    'Cell',
+    'InlineMessage',
+  ),
 );
 
 describe('UsageSection', () => {
@@ -30,6 +34,7 @@ describe('UsageSection', () => {
           kind: UsageKind.DONT,
         },
       ],
+      notice: 'Inline Message',
     };
 
     const fragment = renderToFragmentWithTheme(UsageSection, props);

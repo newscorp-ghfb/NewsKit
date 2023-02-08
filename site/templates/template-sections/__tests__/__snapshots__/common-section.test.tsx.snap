@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RelatedComponentsSection renders a RelatedComp with its data coming from routes 1`] = `
+exports[`CommonSection renders section as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin-top: -24px;
@@ -103,18 +103,6 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   fill: #09111C;
 }
 
-@media screen and (max-width: 1023px) {
-  .emotion-6 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-6 {
-    margin-bottom: 80px;
-  }
-}
-
 .emotion-7 {
   margin: 0;
   color: #2E3F54;
@@ -142,6 +130,11 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   display: block;
 }
 
+.emotion-8 {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 <div
     data-comp="NewsKit Cell"
     data-props="{
@@ -151,8 +144,8 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   >
     <section
       class="emotion-0"
-      data-toc-indexed="Related"
-      id="related"
+      data-toc-indexed="toc"
+      id="id"
     >
       <div
         data-comp="NewsKit Grid"
@@ -188,7 +181,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
                   <h2
                     class="nk-headline-heading emotion-5"
                   >
-                    Related components
+                    title
                   </h2>
                 </section>
               </div>
@@ -200,7 +193,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
             <p
               class="emotion-7"
             >
-              introduction
+              introduction text goes here
             </p>
           </div>
         </div>
@@ -224,75 +217,22 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }"
           data-testid="Cell"
         >
-          <div>
-            MediaList Component with props:{
-  "layout": "4-span",
-  "cards": [
-    {
-      "title": "RelatedComp",
-      "description": "Here lies the description for the related component",
-      "href": "/group/page/related"
-    }
-  ]
-}
+          <div
+            class="emotion-8"
+          >
+            <div
+              data-comp="NewsKit Image"
+              data-props="{
+  \\"src\\": \\"media 1 src\\",
+  \\"alt\\": \\"media 1\\"
+}"
+              data-testid="Image"
+            />
           </div>
         </div>
+        description
       </div>
     </section>
-  </div>
-  @media screen and (max-width: 767px) {
-  .emotion-0 {
-    margin-top: 64px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-top: 80px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .emotion-0 {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 80px;
-  }
-}
-
-.emotion-1 {
-  border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-<div
-    data-comp="NewsKit Cell"
-    data-props="{
-  \\"xs\\": 12,
-  \\"md\\": 10,
-  \\"xl\\": 8,
-  \\"mdOffset\\": 1
-}"
-    data-testid="Cell"
-  >
-    <div
-      class="emotion-0"
-    >
-      <hr
-        aria-hidden="true"
-        class="emotion-1"
-        data-testid="divider"
-      />
-    </div>
   </div>
 </DocumentFragment>
 `;
