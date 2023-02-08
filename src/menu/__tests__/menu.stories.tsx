@@ -440,6 +440,8 @@ StoryMenuItemsHorizontalAlignment.storyName =
 export const StoryMenuItemsOverrides = () => {
   const menuItemOverrides = {
     stylePreset: 'menuItemCustom',
+    minHeight: 'sizing090',
+    paddingBlock: 'space040',
   };
   return (
     <>
@@ -1169,7 +1171,8 @@ export const StoryMenuWithCloseButtons = () => {
       maxWidth: '24px',
       minHeight: '24px',
       minWidth: '24px',
-      spaceInset: '12px',
+      paddingBlock: '12px',
+      paddingInline: '24px',
     },
   };
 
@@ -1535,21 +1538,16 @@ export const StoryMenuSubOverrides = () => {
   const [expanded, setExpanded] = useState(false);
   const menuItemOverrides = {
     stylePreset: 'menuItemCustom',
+    minHeight: 'sizing089',
   };
   return (
     <HorizontalContainer>
       <StorybookHeading>Menu sub with overrides</StorybookHeading>
       <Menu size="medium" aria-label="menu-sub-overrides">
-        <MenuItem
-          href={href}
-          overrides={{...menuItemOverrides, minHeight: '56px'}}
-        >
+        <MenuItem href={href} overrides={menuItemOverrides}>
           Menu item 1
         </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{...menuItemOverrides, minHeight: '56px'}}
-        >
+        <MenuItem href={href} overrides={menuItemOverrides}>
           Menu item 2
         </MenuItem>
         <MenuSub
@@ -1560,7 +1558,6 @@ export const StoryMenuSubOverrides = () => {
           }}
           overrides={{
             ...menuItemOverrides,
-            minHeight: '56px',
             list: {},
           }}
         >

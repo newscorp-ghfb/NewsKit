@@ -13,41 +13,93 @@ export default {
   },
   menuItem: {
     horizontal: {
-      minHeight: 'sizing080',
       stylePreset: 'menuItemHorizontal',
       transitionPreset: 'backgroundColorChange',
       spaceInline: 'space020',
-      spaceInset: 'spaceInsetSquish030',
+      spaceInset: 'space000',
+      small: {
+        minHeight: 'sizing070',
+        paddingBlock: 'space020',
+        paddingInline: 'space040',
+      },
+      medium: {
+        minHeight: 'sizing080',
+        paddingBlock: 'space030',
+        paddingInline: 'space040',
+      },
+      large: {
+        minHeight: 'sizing090',
+        paddingBlock: 'space040',
+        paddingInline: 'space050',
+      },
     },
     vertical: {
-      minHeight: 'sizing080',
       stylePreset: 'menuItemVertical',
       transitionPreset: 'backgroundColorChange',
       spaceInline: 'space020',
-      spaceInset: 'spaceInsetSquish030',
+      spaceInset: 'space000',
+      small: {
+        minHeight: 'sizing070',
+        paddingBlock: 'space020',
+        paddingInline: 'space020',
+      },
+      medium: {
+        minHeight: 'sizing080',
+        paddingBlock: 'space030',
+        paddingInline: 'space040',
+      },
+      large: {
+        minHeight: 'sizing090',
+        paddingBlock: 'space040',
+        paddingInline: 'space050',
+      },
     },
   },
   menuSubItem: {
     horizontal: {
-      minHeight: 'sizing080',
       stylePreset: 'menuSubItemHorizontal',
       spaceInline: 'space020',
       spaceInset: 'space000',
-      paddingBlock: 'space030',
-      paddingInline: 'space040',
       list: {
         stylePreset: 'menuSub',
       },
+      small: {
+        minHeight: 'sizing070',
+        paddingBlock: 'space020',
+        paddingInline: 'space040',
+      },
+      medium: {
+        minHeight: 'sizing080',
+        paddingBlock: 'space030',
+        paddingInline: 'space040',
+      },
+      large: {
+        minHeight: 'sizing090',
+        paddingBlock: 'space040',
+        paddingInline: 'space050',
+      },
     },
     vertical: {
-      minHeight: 'sizing080',
       stylePreset: 'menuSubItemVertical',
       spaceInline: 'space020',
       spaceInset: 'space000',
-      paddingBlock: 'space030',
-      paddingInline: 'space040',
       list: {
         stylePreset: 'menuSub',
+      },
+      small: {
+        minHeight: 'sizing070',
+        paddingBlock: 'space020',
+        paddingInline: 'space020',
+      },
+      medium: {
+        minHeight: 'sizing080',
+        paddingBlock: 'space030',
+        paddingInline: 'space040',
+      },
+      large: {
+        minHeight: 'sizing090',
+        paddingBlock: 'space040',
+        paddingInline: 'space050',
       },
     },
   },

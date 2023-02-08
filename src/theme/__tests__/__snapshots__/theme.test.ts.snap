@@ -2116,39 +2116,91 @@ Object {
   },
   "menuItem": Object {
     "horizontal": Object {
-      "minHeight": "sizing080",
+      "large": Object {
+        "minHeight": "sizing090",
+        "paddingBlock": "space040",
+        "paddingInline": "space050",
+      },
+      "medium": Object {
+        "minHeight": "sizing080",
+        "paddingBlock": "space030",
+        "paddingInline": "space040",
+      },
+      "small": Object {
+        "minHeight": "sizing070",
+        "paddingBlock": "space020",
+        "paddingInline": "space040",
+      },
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish030",
+      "spaceInset": "space000",
       "stylePreset": "menuItemHorizontal",
       "transitionPreset": "backgroundColorChange",
     },
     "vertical": Object {
-      "minHeight": "sizing080",
+      "large": Object {
+        "minHeight": "sizing090",
+        "paddingBlock": "space040",
+        "paddingInline": "space050",
+      },
+      "medium": Object {
+        "minHeight": "sizing080",
+        "paddingBlock": "space030",
+        "paddingInline": "space040",
+      },
+      "small": Object {
+        "minHeight": "sizing070",
+        "paddingBlock": "space020",
+        "paddingInline": "space020",
+      },
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish030",
+      "spaceInset": "space000",
       "stylePreset": "menuItemVertical",
       "transitionPreset": "backgroundColorChange",
     },
   },
   "menuSubItem": Object {
     "horizontal": Object {
+      "large": Object {
+        "minHeight": "sizing090",
+        "paddingBlock": "space040",
+        "paddingInline": "space050",
+      },
       "list": Object {
         "stylePreset": "menuSub",
       },
-      "minHeight": "sizing080",
-      "paddingBlock": "space030",
-      "paddingInline": "space040",
+      "medium": Object {
+        "minHeight": "sizing080",
+        "paddingBlock": "space030",
+        "paddingInline": "space040",
+      },
+      "small": Object {
+        "minHeight": "sizing070",
+        "paddingBlock": "space020",
+        "paddingInline": "space040",
+      },
       "spaceInline": "space020",
       "spaceInset": "space000",
       "stylePreset": "menuSubItemHorizontal",
     },
     "vertical": Object {
+      "large": Object {
+        "minHeight": "sizing090",
+        "paddingBlock": "space040",
+        "paddingInline": "space050",
+      },
       "list": Object {
         "stylePreset": "menuSub",
       },
-      "minHeight": "sizing080",
-      "paddingBlock": "space030",
-      "paddingInline": "space040",
+      "medium": Object {
+        "minHeight": "sizing080",
+        "paddingBlock": "space030",
+        "paddingInline": "space040",
+      },
+      "small": Object {
+        "minHeight": "sizing070",
+        "paddingBlock": "space020",
+        "paddingInline": "space020",
+      },
       "spaceInline": "space020",
       "spaceInset": "space000",
       "stylePreset": "menuSubItemVertical",

@@ -48,13 +48,15 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 120px;
-  min-height: 48px;
+  min-height: 64px;
+  padding-inline: 24px;
+  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 64px;
   min-width: 120px;
   cursor: default;
   overflow: hidden;
@@ -299,13 +301,15 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 120px;
-  min-height: 48px;
+  min-height: 64px;
+  padding-inline: 24px;
+  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 64px;
   min-width: 120px;
   cursor: default;
   overflow: hidden;
@@ -548,9 +552,11 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -799,9 +805,11 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1048,9 +1056,11 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1299,9 +1309,11 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1548,9 +1560,11 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1799,9 +1813,11 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2048,9 +2064,11 @@ exports[`Menu alignment renders with menu items aligned at the spaceBetween hori
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2298,9 +2316,11 @@ exports[`Menu alignment renders with menu items aligned at the spaceBetween vert
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2546,9 +2566,11 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2797,9 +2819,11 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3046,13 +3070,15 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 64px;
-  min-height: 48px;
+  min-height: 40px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 40px;
   min-width: 64px;
   cursor: default;
   overflow: hidden;
@@ -3297,13 +3323,15 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 64px;
-  min-height: 48px;
+  min-height: 40px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 40px;
   min-width: 64px;
   cursor: default;
   overflow: hidden;
@@ -3562,9 +3590,11 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3896,9 +3926,11 @@ exports[`Menu renders horizontally with menu group 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4156,9 +4188,11 @@ exports[`Menu renders horizontally with menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4419,9 +4453,11 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4752,9 +4788,11 @@ exports[`Menu renders vertically with menu group 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5016,9 +5054,11 @@ exports[`Menu renders vertically with menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5265,9 +5305,11 @@ exports[`Menu renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5515,9 +5557,11 @@ exports[`Menu renders with logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6041,9 +6085,11 @@ exports[`MenuGroup renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6358,9 +6404,11 @@ exports[`MenuGroup renders with title as a component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6701,9 +6749,11 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7015,9 +7065,11 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7282,9 +7334,11 @@ exports[`MenuItem renders in large size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7485,9 +7539,11 @@ exports[`MenuItem renders in medium size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7688,9 +7744,11 @@ exports[`MenuItem renders in small size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7891,9 +7949,11 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8095,9 +8155,11 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8358,9 +8420,11 @@ exports[`MenuItem renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8561,9 +8625,11 @@ exports[`MenuItem renders with icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8808,6 +8874,8 @@ exports[`MenuItem renders with overrides 1`] = `
   padding: 12px;
   min-width: 10px;
   min-height: 11px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8958,7 +9026,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -9410,7 +9478,7 @@ exports[`MenuSub render nested submenus 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -9559,7 +9627,7 @@ exports[`MenuSub render nested submenus 1`] = `
   width: 100%;
 }
 
-.emotion-7 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -9609,51 +9677,51 @@ exports[`MenuSub render nested submenus 1`] = `
   text-align: center;
 }
 
-.emotion-7 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-7 svg {
+.emotion-12 svg {
   fill: #6A6A6A;
 }
 
-.emotion-7:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   border-color: #3358CC;
   color: #3B3B3B;
 }
 
-.emotion-7:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3B3B3B;
 }
 
-.emotion-7:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   border-color: #254CAC;
   color: #111111;
 }
 
-.emotion-7:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #111111;
 }
 
-.emotion-7:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   border-color: #3358CC;
   color: #3B3B3B;
 }
 
-.emotion-7:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3B3B3B;
 }
 
-.emotion-7:disabled {
+.emotion-12:disabled {
   color: #ABABAB;
 }
 
-.emotion-7:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-7:focus-visible:not(:disabled) {
+.emotion-12:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -9662,14 +9730,14 @@ exports[`MenuSub render nested submenus 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
+    .emotion-12:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9677,7 +9745,7 @@ exports[`MenuSub render nested submenus 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -9749,7 +9817,7 @@ exports[`MenuSub render nested submenus 1`] = `
           >
             <button
               aria-expanded="false"
-              class="emotion-7"
+              class="emotion-2"
               data-testid="menu-sub-button"
               type="button"
             >
@@ -9777,7 +9845,7 @@ exports[`MenuSub render nested submenus 1`] = `
                 class="nk-menu-item emotion-1"
               >
                 <a
-                  class="emotion-7"
+                  class="emotion-12"
                   data-testid="buttonLink"
                   href="http://"
                 >
@@ -9792,7 +9860,7 @@ exports[`MenuSub render nested submenus 1`] = `
                 class="nk-menu-item emotion-1"
               >
                 <a
-                  class="emotion-7"
+                  class="emotion-12"
                   data-testid="buttonLink"
                   href="http://"
                 >
@@ -9807,7 +9875,7 @@ exports[`MenuSub render nested submenus 1`] = `
                 class="nk-menu-item emotion-1"
               >
                 <a
-                  class="emotion-7"
+                  class="emotion-12"
                   data-testid="buttonLink"
                   href="http://"
                 >
@@ -9822,7 +9890,7 @@ exports[`MenuSub render nested submenus 1`] = `
                 class="nk-menu-item emotion-1"
               >
                 <a
-                  class="emotion-7"
+                  class="emotion-12"
                   data-testid="buttonLink"
                   href="http://"
                 >
@@ -9890,7 +9958,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -10345,7 +10413,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -10796,7 +10864,7 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -11263,7 +11331,7 @@ exports[`MenuSub renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -11503,7 +11571,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -12355,7 +12423,7 @@ exports[`MenuSub renders with title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -12809,7 +12877,7 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -13125,7 +13193,7 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -13394,8 +13462,6 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   padding: 0;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -13842,7 +13908,7 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -14157,7 +14223,7 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0;
   min-width: 80px;
   min-height: 48px;
   box-sizing: border-box;
@@ -14425,8 +14491,6 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   padding: 0;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
