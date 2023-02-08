@@ -1294,7 +1294,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 }
 
 .emotion-3 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   min-width: 140px;
@@ -1373,7 +1373,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 
 .emotion-4 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -1769,7 +1769,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 exports[`Audio Player Composable Playback Speed should render correctly with custom trigger 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   min-width: 140px;
@@ -1848,7 +1848,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2312,7 +2312,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 }
 
 .emotion-3 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   min-width: 140px;
@@ -2391,7 +2391,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 
 .emotion-4 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
