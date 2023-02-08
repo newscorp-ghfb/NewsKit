@@ -7,6 +7,8 @@ jest.mock(
   require('../../../utils/test-utils').mockNewsKitComponents('Grid', 'Cell'),
 );
 
+jest.mock('../../../components/media-list/media-list.tsx');
+
 jest.mock('../../../utils/get-route-object.ts', () => ({
   getByTitle: jest.fn(() => ({
     title: 'RelatedComp',
