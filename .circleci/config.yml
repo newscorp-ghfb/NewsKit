@@ -97,11 +97,11 @@ executors:
 
   node:
     docker:
-      - image: cimg/node:16.13.2-browsers
+      - image: cimg/node:16.13.0
 
   node-large:
     docker:
-      - image: cimg/node:16.13.2-browsers
+      - image: cimg/node:16.13.0
     resource_class: large
     environment:
       NODE_OPTIONS: --max_old_space_size=7680
@@ -290,9 +290,9 @@ commands:
   run_test_visual_comps_percy:
     description: 'Run the Percy tests for comps visual changes'
     steps:
-      # - run:
-      #     name: Install Headless Chrome dependencies
-      #     command: make install_headless_chrome
+      - run:
+          name: Install Headless Chrome dependencies
+          command: make install_headless_chrome
       - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
@@ -306,9 +306,9 @@ commands:
       - checkout
       - attach_workspace:
           at: ~/project
-      # - run:
-      #     name: Install Headless Chrome dependencies
-      #     command: make install_headless_chrome
+      - run:
+          name: Install Headless Chrome dependencies
+          command: make install_headless_chrome
       - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
@@ -348,9 +348,6 @@ jobs:
           root: ./
           paths:
             - vendor/apt/*
-      - slack/notify:
-          <<: *slack_notify
-      
 
   install_deps:
     executor: node-large
@@ -586,8 +583,6 @@ jobs:
           command: sudo pip install awscli
       - aws_assume_role:
           job_type: << parameters.job_type >>
-      - slack/notify:
-          <<: *slack_notify
 
   deploy_terraform:
     parameters:
@@ -632,8 +627,6 @@ jobs:
           steps:
             - terraform_apply:
                 package: << parameters.package >>
-      - slack/notify:
-          <<: *slack_notify
 
   test_visual_comps_percy:
     executor: node-large
@@ -660,8 +653,6 @@ jobs:
                 echo "Baseline updates required; continuing job."
             }
       - run_test_visual_comps_percy
-      - slack/notify:
-          <<: *slack_notify
 
   docsite_tests_conditional_run_to_update_baselines:
     # if there are any visual diffs we need to run the Percy docsite tests to update the baselines
@@ -683,8 +674,6 @@ jobs:
                 echo "Baseline updates required; continuing job."
             }
       - run_test_visual_docs_percy
-      - slack/notify:
-          <<: *slack_notify
 
   skip_percy_comps_check:
     executor: node
@@ -780,8 +769,6 @@ jobs:
       - run:
           name: Delete trigger-release@ tag
           command: make delete_trigger_release_tag VERSION=<< parameters.version >>
-      - slack/notify:
-          <<: *slack_notify
 
   publish_npm:
     parameters:
@@ -1062,7 +1049,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  # ========== CODEMOD RELATED JOBS    ==========
+  # ========== CODEMOD TASKS    ==========
 
   install_deps_codemod:
     executor: node
@@ -1176,8 +1163,6 @@ jobs:
       - run:
           name: Delete trigger-release-codemod@ tag
           command: cd lib/codemod && make delete_trigger_release_tag VERSION=<< parameters.version >>
-      - slack/notify:
-          <<: *slack_notify
 
   merge_checker:
     executor: node
@@ -1230,7 +1215,7 @@ workflows:
     jobs:
       - install_deps
       - install_cypress
-      # - download_headless_chrome
+      - download_headless_chrome
       - build_icons:
           requires:
             - install_deps
@@ -1314,7 +1299,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - no_visual_changes
-            # - download_headless_chrome
+            - download_headless_chrome
       - skip_percy_docsite_check:
           context: ncu-product-platforms-context
           requires:
@@ -1323,7 +1308,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - docs_and_comps_visual_changes
-            # - download_headless_chrome
+            - download_headless_chrome
       - test_visual_docs_percy:
           context: ncu-product-platforms-context
           requires:
@@ -1340,7 +1325,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - docs_visual_changes
-            # - download_headless_chrome
+            - download_headless_chrome
       - can_i_merge_checker:
           context: ncu-product-platforms-context
           requires:
@@ -1450,8 +1435,8 @@ workflows:
             - init_aws
       - install_deps:
           context: ncu-product-platforms-context
-      # - download_headless_chrome:
-      #     context: ncu-product-platforms-context
+      - download_headless_chrome:
+          context: ncu-product-platforms-context
       - install_cypress:
           context: ncu-product-platforms-context
       - build_icons:
@@ -1513,7 +1498,7 @@ workflows:
       - comps_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
           requires:
-            # - download_headless_chrome
+            - download_headless_chrome
             - build_storybook
       - docsite_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
@@ -1576,20 +1561,19 @@ workflows:
           requires:
             - build_docs_prod_link
 
-      # - eks_flux_deploy:
-      #     name: eks_flux_deploy_staging
-      #     context: ncu-newskit-site-stage
-      #     deployment_type: prod
-      #     environment: staging
-      #     requires:
-      #       - build_push_docker_ecr_prod
-      #
-      # - eks_kubectl_deploy:
-      #     name: eks_kubectl_deploy_staging
-      #     context: ncu-newskit-site-stage
-      #     environment: staging
-      #     requires:
-      #       - eks_flux_deploy_staging
+      - eks_flux_deploy:
+          name: eks_flux_deploy_staging
+          context: ncu-newskit-site-stage
+          deployment_type: prod
+          environment: staging
+          requires:
+            - build_push_docker_ecr_prod
+      - eks_kubectl_deploy:
+          name: eks_kubectl_deploy_staging
+          context: ncu-newskit-site-stage
+          environment: staging
+          requires:
+            - eks_flux_deploy_staging
 
       - eks_flux_deploy:
           name: eks_flux_deploy_prod
@@ -1597,7 +1581,7 @@ workflows:
           environment: prod
           deployment_type: prod
           requires:
-            - build_push_docker_ecr_prod
+            - eks_kubectl_deploy_staging
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
