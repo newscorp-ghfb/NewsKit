@@ -101,10 +101,10 @@ LinkStandalone is used outside of body content, for example within navigational 
 ## v7.0.0
 The following transformers are available when upgrading to v7:
 
-- [`audio-player-default-styles`](#audio-player-default-styles)
-- [`all-default-styles`](#all-default-styles)
+- [`audio-player-play-pause-button`](#audio-player-play-pause-button)
+- [`all-default`](#all-default)
 
-#### `audio-player-default-styles`
+#### `audio-player-play-pause-button`
 
 There changes to the default styling of the AudioPlayer component in v7.
 Run this codemod if you would like to apply manual overrides to keep the old default styling.
@@ -115,9 +115,9 @@ Run this codemod if you would like to apply manual overrides to keep the old def
 + <AudioPlayerPlayPauseButton size="large" />
 ```
 
-#### `all-default-styles`
+#### `all-default`
 
-Run this codemod if you would like to apply manual overrides to the keep the old default styling for all components.
+Run this codemod if you would like to apply manual overrides to the keep the old default for all components listed above.
 
 ## Development
 
