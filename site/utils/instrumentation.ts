@@ -13,8 +13,9 @@ export const transformEventObject = (event: InstrumentationEvent) => {
 
   const newContext = {
     ...rest,
-    ...(area ? {component: area} : {}),
-    ...(value ? {object: value} : {}),
+    // its requirement to always send component and object
+    component: area || 'global',
+    object: value || 'generic',
   };
 
   return {

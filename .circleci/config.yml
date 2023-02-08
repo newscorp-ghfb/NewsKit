@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   slack: circleci/slack@4.10.1
-  aws-cli: circleci/aws-cli@2.0.0
+  aws-cli: circleci/aws-cli@3.1
   github-cli: circleci/github-cli@1.0.4
 
 slack_notify: &slack_notify
@@ -79,36 +79,45 @@ executors:
     docker:
       - image: cimg/base:latest
 
+  # Having both AWS and Terraform on the same image makes it easier to run commands via OIDC
+  aws-cli-and-terraform:
+    docker:
+      - image: newsuk/terraform:1.2.1
+
+  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
   flux-deploy:
     docker:
       - image: nukengprodservice/flux-k8s:latest
 
+  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
   kubectl-deploy:
     docker:
       - image: nukengprodservice/kubectl:0.1.51
 
+  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
   terraform:
     docker:
       - image: hashicorp/terraform:0.12.28
 
+  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
   python:
     docker:
       - image: cimg/python:3.10.2
 
   node:
     docker:
-      - image: cimg/node:16.13.0
+      - image: cimg/node:16.13.2-browsers
 
   node-large:
     docker:
-      - image: cimg/node:16.13.0
+      - image: cimg/node:16.13.2-browsers
     resource_class: large
     environment:
       NODE_OPTIONS: --max_old_space_size=7680
 
   node-xlarge:
     docker:
-      - image: cimg/node:16.13.0
+      - image: cimg/node:16.13.2-browsers
     resource_class: xlarge
     environment:
       NODE_OPTIONS: --max_old_space_size=15872
@@ -123,6 +132,47 @@ executors:
       - image: cimg/openjdk:8u252-jdk-buster
 
 commands:
+  terraform_init_oidc:
+    description: Run Terraform Init
+    parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
+      package:
+        type: string
+      session_context:
+        type: string
+        default: s3
+      terraform_arg:
+        description: provide terraform arguments
+        type: string
+        default: ''
+    steps:
+      - run:
+          name: Terraform init OIDC
+          command: |
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+            # use the OpenID Connect token to obtain AWS credentials
+            (aws sts assume-role-with-web-identity \
+              --role-arn << parameters.aws_assume_role_arn >> \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.session_context >>-tf" \
+              --web-identity-token $CIRCLE_OIDC_TOKEN \
+              --duration-seconds 3600 \
+              --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+              --output text) > assume-tf.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-tf.txt
+            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            cd terraform/<< parameters.package >>
+            export TF_LOG="TRACE"
+            export TF_LOG_PATH="./terraform-debug.log"
+            terraform init << parameters.terraform_arg >>
+
+  # Deprecated by terraform_init_oidc
   terraform_init:
     description: Run Terraform Init
     parameters:
@@ -140,6 +190,47 @@ commands:
             cd terraform/<< parameters.package >>
             terraform init << parameters.terraform_arg >>
 
+  terraform_plan_oidc:
+    description: Run Terraform Plan
+    parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
+      package:
+        type: string
+      session_context:
+        type: string
+        default: s3
+      terraform_arg:
+        description: provide terraform arguments
+        type: string
+        default: ''
+    steps:
+      - run:
+          name: Terraform plan OIDC
+          command: |
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+            # use the OpenID Connect token to obtain AWS credentials
+            (aws sts assume-role-with-web-identity \
+              --role-arn << parameters.aws_assume_role_arn >> \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.session_context >>-tf" \
+              --web-identity-token $CIRCLE_OIDC_TOKEN \
+              --duration-seconds 3600 \
+              --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+              --output text) > assume-tf.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-tf.txt
+            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            cd terraform/<< parameters.package >>
+            export TF_LOG="TRACE"
+            export TF_LOG_PATH="./terraform-debug.log"
+            terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
+
+  # Deprecated by terraform_plan_oidc
   terraform_plan:
     description: Run Terraform Plan
     parameters:
@@ -157,6 +248,47 @@ commands:
             cd terraform/<< parameters.package >>
             terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
 
+  terraform_apply_oidc:
+    description: Run Terraform Apply
+    parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
+      package:
+        type: string
+      session_context:
+        type: string
+        default: s3
+      terraform_arg:
+        description: provide terraform arguments
+        type: string
+        default: ''
+    steps:
+      - run:
+          name: Terraform apply OIDC
+          command: |
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+            # use the OpenID Connect token to obtain AWS credentials
+            (aws sts assume-role-with-web-identity \
+              --role-arn << parameters.aws_assume_role_arn >> \
+              --role-session-name "${CIRCLE_WORKFLOW_ID}-<< parameters.session_context >>-tf" \
+              --web-identity-token $CIRCLE_OIDC_TOKEN \
+              --duration-seconds 3600 \
+              --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+              --output text) > assume-tf.txt
+            read -r AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN < assume-tf.txt
+            export AWS_DEFAULT_REGION AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN
+            cd terraform/<< parameters.package >>
+            export TF_LOG="TRACE"
+            export TF_LOG_PATH="./terraform-debug.log"
+            terraform apply -lock=false -input=false tfplan
+
+  # Deprecated by terraform_apply_oidc
   terraform_apply:
     description: Run Terraform Apply
     parameters:
@@ -168,20 +300,7 @@ commands:
           command: |
             source $BASH_ENV
             cd terraform/<< parameters.package >>
-            terraform apply -lock=false -input=false tfplan
-
-  terraform_force_apply:
-    description: Run Terraform Apply
-    parameters:
-      package:
-        type: string
-    steps:
-      - run:
-          name: Terraform forced apply
-          command: |
-            source $BASH_ENV
-            cd terraform/<< parameters.package >>
-            terraform apply -auto-approve
+            terraform apply -auto-approve -lock=false -input=false tfplan
 
   aws_assume_role:
     description: Assume AWS role
@@ -291,9 +410,6 @@ commands:
     description: 'Run the Percy tests for comps visual changes'
     steps:
       - run:
-          name: Install Headless Chrome dependencies
-          command: make install_headless_chrome
-      - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
       - run:
@@ -306,9 +422,6 @@ commands:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run:
-          name: Install Headless Chrome dependencies
-          command: make install_headless_chrome
       - run:
           name: Set percy/newskit-comps token
           command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
@@ -336,22 +449,6 @@ jobs:
       - run:
           name: 'Check to make sure all tests have run before merging.'
           command: echo 'passed'
-
-  download_headless_chrome:
-    executor: node-large
-    steps:
-      - checkout
-      - run:
-          name: Download headless Chrome dependencies
-          command: make download_headless_chrome
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - vendor/apt/*
-      - slack/notify:
-          <<: *slack_notify
-      
-
   install_deps:
     executor: node-large
     steps:
@@ -468,6 +565,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  # Deprecated by build_docs_with_no_base_url
   build_docs_pr_with_no_base_url:
     executor: node-xlarge
     steps:
@@ -478,7 +576,25 @@ jobs:
           name: Build
           command: |
             export SITE_ENV=${SITE_ENV}
-            make build_docs_pr_with_no_base_url
+            make build_docs_with_no_base_url
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public/*
+      - slack/notify:
+          <<: *slack_notify
+
+  build_docs_with_no_base_url:
+    executor: node-xlarge
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Build
+          command: |
+            export SITE_ENV=${SITE_ENV}
+            make build_docs_with_no_base_url
       - persist_to_workspace:
           root: ./
           paths:
@@ -589,6 +705,50 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  deploy_terraform_oidc:
+    parameters:
+      package:
+        type: string
+      apply:
+        type: boolean
+        default: true
+      tf_env:
+        type: boolean
+        default: true
+      environment:
+        type: string
+        default: ''
+    executor: aws-cli-and-terraform
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run_only_on_folder_change:
+          folder: ./terraform/<< parameters.package >>
+      - when:
+          condition: << parameters.tf_env >>
+          steps:
+            - terraform_init_oidc:
+                package: << parameters.package >>
+                terraform_arg: -backend-config="key=newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
+            - terraform_plan_oidc:
+                package: << parameters.package >>
+                terraform_arg: -var-file=<< parameters.environment >>.tfvars
+      - unless:
+          condition: << parameters.tf_env >>
+          steps:
+            - terraform_init_oidc:
+                package: << parameters.package >>
+                terraform_arg: -backend-config="key=newskit/<< parameters.package >>/terraform.tfstate"
+            - terraform_plan_oidc:
+                package: << parameters.package >>
+      - when:
+          condition: << parameters.apply >>
+          steps:
+            - terraform_apply_oidc:
+                package: << parameters.package >>
+
+  # Deprecated by deploy_terraform_oidc
   deploy_terraform:
     parameters:
       package:
@@ -653,13 +813,17 @@ jobs:
             export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
             echo "Found branch name: ${PR_BRANCH_NAME}"
             export PERCY_TOKEN=$PERCY_COMPS_TOKEN
-            export UPDATES_REQUIRED=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
-            if [ $UPDATES_REQUIRED = "true" ]; then
+            export CHECK_UPDATES=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
+            echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
+            if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
               echo "Baseline updates required; continuing job."
               export PERCY_PARTIAL_BUILD=1
-            else
-              echo "No baseline updates required; finishing job." &&
+            elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
+              echo "No baseline updates required; finishing job."
               circleci-agent step halt
+            else
+              echo "Error checking PR"
+              exit 1
             fi
       - run_test_visual_comps_percy
       - slack/notify:
@@ -677,14 +841,18 @@ jobs:
           command: |
             export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
             echo "Found branch name: ${PR_BRANCH_NAME}"
-            export PERCY_TOKEN=$PERCY_COMPS_TOKEN
-            export UPDATES_REQUIRED=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
-            if [ $UPDATES_REQUIRED = "true" ]; then
+            export PERCY_TOKEN=$PERCY_DOCSITE_TOKEN
+            export CHECK_UPDATES=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
+            echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
+            if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
               echo "Baseline updates required; continuing job."
               export PERCY_PARTIAL_BUILD=1
-            else
-              echo "No baseline updates required; finishing job." &&
+            elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
+              echo "No baseline updates required; finishing job."
               circleci-agent step halt
+            else
+              echo "Error checking PR"
+              exit 1
             fi
       - run_test_visual_docs_percy
       - slack/notify:
@@ -889,7 +1057,46 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  push_s3:
+  # Paths are passed in, so covers both subfolders for PR env and root for other envs
+  push_s3_general_oidc:
+    parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
+      s3Path_docs:
+        type: string
+      s3Path_storybook:
+        type: string
+    executor: aws-cli-and-terraform
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - aws-cli/setup:
+          role-arn: << parameters.aws_assume_role_arn >>
+          profile-name: "NEWSKIT-OIDC-PROFILE"
+          role-session-name: "${CIRCLE_WORKFLOW_ID}-s3-push"
+      - run:
+          name: Upload sites to given S3 paths
+          command: | # output current date time to a HTML file to allow a in-browser that check CDN does not return old files
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+            export s3Path_docs=<< parameters.s3Path_docs >>
+            export s3Path_storybook=<< parameters.s3Path_storybook >>
+            echo $(date) > timestamp.html
+            aws s3 cp public $s3Path_docs --recursive
+            aws s3 cp timestamp.html $s3Path_docs
+            aws s3 cp dist-storybook $s3Path_storybook --recursive
+            aws s3 cp timestamp.html $s3Path_storybook
+      - slack/notify:
+          <<: *slack_notify
+
+  # Deprecated by push_s3_general_oidc
+  push_s3_pr:
     executor: aws-cli/default #TODO: refactor other steps to use this orb it's much cleaner, install and setup can then be moved into the shared aws step
     steps:
       - checkout
@@ -898,7 +1105,7 @@ jobs:
       - aws-cli/install
       - aws-cli/setup
       - run:
-          name: Upload to s3
+          name: Upload PR sites to S3 subfolders
           command: |
             export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/')
             aws s3 cp public $s3Path_docs --recursive
@@ -973,7 +1180,7 @@ jobs:
     parameters:
       environment:
         type: string
-        description: Deplyoment environment
+        description: Deployment environment
       aws_region:
         description: AWS Region
         type: string
@@ -1234,7 +1441,6 @@ workflows:
     jobs:
       - install_deps
       - install_cypress
-      - download_headless_chrome
       - build_icons:
           requires:
             - install_deps
@@ -1318,7 +1524,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - no_visual_changes
-            - download_headless_chrome
       - skip_percy_docsite_check:
           context: ncu-product-platforms-context
           requires:
@@ -1327,7 +1532,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - docs_and_comps_visual_changes
-            - download_headless_chrome
       - test_visual_docs_percy:
           context: ncu-product-platforms-context
           requires:
@@ -1344,7 +1548,6 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - docs_visual_changes
-            - download_headless_chrome
       - can_i_merge_checker:
           context: ncu-product-platforms-context
           requires:
@@ -1374,13 +1577,22 @@ workflows:
           environment: pr
           requires:
             - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_dev
+          package: s3/dev-newskit
+          context: ncu-newskit-site-dev
+          apply: false # Can set true while doing testing of CircleCI code
+          tf_env: true
+          environment: dev
+          requires:
+            - init_aws
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
           requires:
             - build_icons
-      - push_s3:
-          name: deploy_to_s3
+      - push_s3_pr:
+          name: deploy_to_s3_pr
           context: ncu-product-platforms-context
           requires:
             - deploy_terraform_s3_pr
@@ -1390,7 +1602,22 @@ workflows:
           name: pr_enviroment_link
           context: ncu-product-platforms-context
           requires:
-            - deploy_to_s3
+            - deploy_to_s3_pr
+      # Temporarily uncomment these two steps if needing to test S3 deployments on push rather than on merge
+      #- build_docs_with_no_base_url:
+      #    name: build_docs_dev
+      #    context: ncu-newskit-site-dev
+      #    requires:
+      #      - build_icons
+      #- push_s3_general_oidc:
+      #    name: deploy_to_s3_dev
+      #    context: ncu-newskit-site-dev
+      #    s3Path_docs: s3://ncu-newskit-docs-dev/
+      #    s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
+      #    requires:
+      #      - deploy_terraform_s3_dev
+      #      - build_docs_dev
+      #      - build_storybook
 
   pull_request_codemod:
     when:
@@ -1452,9 +1679,16 @@ workflows:
           tf_env: false
           requires:
             - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_dev
+          package: s3/dev-newskit
+          context: ncu-newskit-site-dev
+          apply: true
+          tf_env: true
+          environment: dev
+          requires:
+            - init_aws
       - install_deps:
-          context: ncu-product-platforms-context
-      - download_headless_chrome:
           context: ncu-product-platforms-context
       - install_cypress:
           context: ncu-product-platforms-context
@@ -1491,7 +1725,7 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      - build_docs:
+      - build_docs_with_no_base_url:
           name: build_docs_dev
           context: ncu-newskit-site-dev
           requires:
@@ -1517,7 +1751,6 @@ workflows:
       - comps_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
           requires:
-            - download_headless_chrome
             - build_storybook
       - docsite_tests_conditional_run_to_update_baselines:
           context: ncu-product-platforms-context
@@ -1543,36 +1776,26 @@ workflows:
             - approve_publish_npm_dev
         # end
 
-      - build_push_docker_ecr:
-          name: build_push_docker_ecr_dev
-          context: ncu-product-platforms-context
-          docker_version: dev
+      - push_s3_general_oidc:
+          name: deploy_to_s3_dev
+          context: ncu-newskit-site-dev
+          s3Path_docs: s3://ncu-newskit-docs-dev/
+          s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
           requires:
+            - deploy_terraform_s3_dev
+            - build_docs_dev
             - build_storybook
             - lint
             - test_unit_comps
             - test_unit_docs
             - test_e2e_comps
             - test_e2e_docs_dev
-      - eks_flux_deploy:
-          name: eks_flux_deploy_dev
-          context: ncu-newskit-site-dev
-          environment: dev
-          deployment_type: dev
-          requires:
-            - build_push_docker_ecr_dev
-      - eks_kubectl_deploy:
-          name: eks_kubectl_deploy_dev
-          context: ncu-newskit-site-dev
-          environment: dev
-          requires:
-            - eks_flux_deploy_dev
 
       - build_docs:
           name: build_docs_prod_link
           context: ncu-newskit-site-prod
           requires:
-            - eks_kubectl_deploy_dev
+            - deploy_to_s3_dev
       - build_push_docker_ecr:
           name: build_push_docker_ecr_prod
           context: ncu-product-platforms-context
