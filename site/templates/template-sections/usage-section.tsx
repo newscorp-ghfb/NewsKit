@@ -46,7 +46,6 @@ export const UsageSection: React.FC<UsageSectionProps> = ({
         <InlineMessage
           icon={infoIcon}
           role="region"
-          title="Note"
           aria-label="usage notice"
           overrides={{
             marginBlockStart: 'space070',
