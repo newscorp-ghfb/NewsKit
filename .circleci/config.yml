@@ -702,6 +702,8 @@ jobs:
           command: sudo pip install awscli
       - aws_assume_role:
           job_type: << parameters.job_type >>
+      - slack/notify:
+          <<: *slack_notify
 
   deploy_terraform_oidc:
     parameters:
@@ -790,6 +792,8 @@ jobs:
           steps:
             - terraform_apply:
                 package: << parameters.package >>
+      - slack/notify:
+          <<: *slack_notify
 
   test_visual_comps_percy:
     executor: node-large
@@ -822,6 +826,8 @@ jobs:
               exit 1
             fi
       - run_test_visual_comps_percy
+      - slack/notify:
+          <<: *slack_notify
 
   docsite_tests_conditional_run_to_update_baselines:
     # if there are any visual diffs we need to run the Percy docsite tests to update the baselines
@@ -849,6 +855,8 @@ jobs:
               exit 1
             fi
       - run_test_visual_docs_percy
+      - slack/notify:
+          <<: *slack_notify
 
   skip_percy_comps_check:
     executor: node
@@ -944,6 +952,8 @@ jobs:
       - run:
           name: Delete trigger-release@ tag
           command: make delete_trigger_release_tag VERSION=<< parameters.version >>
+      - slack/notify:
+          <<: *slack_notify
 
   publish_npm:
     parameters:
@@ -1263,7 +1273,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  # ========== CODEMOD TASKS    ==========
+  # ========== CODEMOD RELATED JOBS    ==========
 
   install_deps_codemod:
     executor: node
@@ -1377,6 +1387,8 @@ jobs:
       - run:
           name: Delete trigger-release-codemod@ tag
           command: cd lib/codemod && make delete_trigger_release_tag VERSION=<< parameters.version >>
+      - slack/notify:
+          <<: *slack_notify
 
   merge_checker:
     executor: node
@@ -1791,19 +1803,20 @@ workflows:
           requires:
             - build_docs_prod_link
 
-      - eks_flux_deploy:
-          name: eks_flux_deploy_staging
-          context: ncu-newskit-site-stage
-          deployment_type: prod
-          environment: staging
-          requires:
-            - build_push_docker_ecr_prod
-      - eks_kubectl_deploy:
-          name: eks_kubectl_deploy_staging
-          context: ncu-newskit-site-stage
-          environment: staging
-          requires:
-            - eks_flux_deploy_staging
+      # - eks_flux_deploy:
+      #     name: eks_flux_deploy_staging
+      #     context: ncu-newskit-site-stage
+      #     deployment_type: prod
+      #     environment: staging
+      #     requires:
+      #       - build_push_docker_ecr_prod
+      #
+      # - eks_kubectl_deploy:
+      #     name: eks_kubectl_deploy_staging
+      #     context: ncu-newskit-site-stage
+      #     environment: staging
+      #     requires:
+      #       - eks_flux_deploy_staging
 
       - eks_flux_deploy:
           name: eks_flux_deploy_prod
@@ -1811,7 +1824,7 @@ workflows:
           environment: prod
           deployment_type: prod
           requires:
-            - eks_kubectl_deploy_staging
+            - build_push_docker_ecr_prod
       - eks_kubectl_deploy:
           name: eks_kubectl_deploy_prod
           context: ncu-newskit-site-prod
