@@ -35,8 +35,21 @@ exports[`UsageSection renders section as expected 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 0;
   background-color: transparent;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-2 {
+    padding-inline: 12px;
+    padding-block: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    padding-inline: 16px;
+    padding-block: 16px;
+  }
 }
 
 .emotion-3 {
