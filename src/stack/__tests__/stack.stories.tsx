@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Flow, Stack, StackDistribution} from '..';
 import {styled, getColorFromTheme} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
@@ -121,11 +122,6 @@ type StoryStackType = {
   storyFn: () => JSX.Element;
 };
 const stackSets = stackDistributionSet().flat(2) as StoryStackType[];
-
-export default {
-  title: 'Components/stack',
-  component: Stack,
-};
 
 export const StoryStackWithDefaultsOnly = () => (
   <MainContainer>
@@ -892,3 +888,17 @@ StoryStackWithArgs.argTypes = {
 StoryStackWithArgs.storyName = 'stack-with-args';
 // @ts-ignore
 StoryStackWithArgs.parameters = {percy: {skip: true}};
+
+export default {
+  title: 'Components/Stack',
+  component: Stack,
+  parameters: {
+    nkDocs: {
+      title: 'Stack',
+      url: 'https://newskit.co.uk/components/stack',
+      description:
+        'A stack is a layout component that abstracts the implementation of flexbox.',
+    },
+  },
+  decorators: [(Story: StoryType) => <Story />],
+};
