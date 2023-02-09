@@ -254,7 +254,6 @@ exports[`UsageSection renders section as expected 1`] = `
           <div
             data-comp="NewsKit InlineMessage"
             data-props="{
-  \\"title\\": \\"Note\\",
   \\"icon\\": {
     \\"type\\": {
       \\"stylePresets\\": {
