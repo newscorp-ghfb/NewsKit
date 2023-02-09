@@ -401,6 +401,24 @@ describe('Menu', () => {
     });
     it(`renders ${
       verticalValue ? 'vertically' : 'horizontally'
+    } with selected menu items`, () => {
+      const props = {
+        children: [
+          <MenuItem key="1" href={href} selected>
+            {menuItemContent}
+          </MenuItem>,
+          <MenuItem key="2" href={href}>
+            {menuItemContent}
+          </MenuItem>,
+        ],
+        vertical: verticalValue,
+      };
+
+      const fragment = renderToFragmentWithTheme(Menu, props);
+      expect(fragment).toMatchSnapshot();
+    });
+    it(`renders ${
+      verticalValue ? 'vertically' : 'horizontally'
     } with menu group`, () => {
       const props = {
         children: menuGroups,

@@ -1,3 +1,24 @@
+const smallCommonDefaults = {
+  spaceInline: 'space020',
+  minHeight: 'sizing070',
+  paddingBlock: 'space020',
+  paddingInline: 'space040',
+};
+
+const mediumCommonDefaults = {
+  spaceInline: 'space020',
+  minHeight: 'sizing080',
+  paddingBlock: 'space020',
+  paddingInline: 'space040',
+};
+
+const largeCommonDefaults = {
+  spaceInline: 'space020',
+  minHeight: 'sizing090',
+  paddingBlock: 'space030',
+  paddingInline: 'space050',
+};
+
 export default {
   menu: {
     spaceInline: 'space020',
@@ -13,93 +34,85 @@ export default {
   },
   menuItem: {
     horizontal: {
-      stylePreset: 'menuItemHorizontal',
-      transitionPreset: 'backgroundColorChange',
-      spaceInline: 'space020',
-      spaceInset: 'space000',
       small: {
-        minHeight: 'sizing070',
-        paddingBlock: 'space020',
-        paddingInline: 'space040',
+        ...smallCommonDefaults,
+        stylePreset: 'menuItemHorizontal',
+        transitionPreset: 'backgroundColorChange',
       },
       medium: {
-        minHeight: 'sizing080',
-        paddingBlock: 'space030',
-        paddingInline: 'space040',
+        ...mediumCommonDefaults,
+        stylePreset: 'menuItemHorizontal',
+        transitionPreset: 'backgroundColorChange',
       },
       large: {
-        minHeight: 'sizing090',
-        paddingBlock: 'space040',
-        paddingInline: 'space050',
+        ...largeCommonDefaults,
+        stylePreset: 'menuItemHorizontal',
+        transitionPreset: 'backgroundColorChange',
       },
     },
     vertical: {
-      stylePreset: 'menuItemVertical',
-      transitionPreset: 'backgroundColorChange',
-      spaceInline: 'space020',
-      spaceInset: 'space000',
       small: {
-        minHeight: 'sizing070',
-        paddingBlock: 'space020',
-        paddingInline: 'space020',
+        ...smallCommonDefaults,
+        stylePreset: 'menuItemVertical',
+        transitionPreset: 'backgroundColorChange',
       },
       medium: {
-        minHeight: 'sizing080',
-        paddingBlock: 'space030',
-        paddingInline: 'space040',
+        ...mediumCommonDefaults,
+        stylePreset: 'menuItemVertical',
+        transitionPreset: 'backgroundColorChange',
       },
       large: {
-        minHeight: 'sizing090',
-        paddingBlock: 'space040',
-        paddingInline: 'space050',
+        ...largeCommonDefaults,
+        stylePreset: 'menuItemVertical',
+        transitionPreset: 'backgroundColorChange',
       },
     },
   },
   menuSubItem: {
     horizontal: {
-      stylePreset: 'menuSubItemHorizontal',
-      spaceInline: 'space020',
-      spaceInset: 'space000',
-      list: {
-        stylePreset: 'menuSub',
-      },
       small: {
-        minHeight: 'sizing070',
-        paddingBlock: 'space020',
-        paddingInline: 'space040',
+        ...smallCommonDefaults,
+        stylePreset: 'menuSubItemHorizontal',
+        list: {
+          stylePreset: 'menuSub',
+        },
       },
       medium: {
-        minHeight: 'sizing080',
-        paddingBlock: 'space030',
-        paddingInline: 'space040',
+        ...mediumCommonDefaults,
+        stylePreset: 'menuSubItemHorizontal',
+        list: {
+          stylePreset: 'menuSub',
+        },
       },
       large: {
-        minHeight: 'sizing090',
-        paddingBlock: 'space040',
-        paddingInline: 'space050',
+        ...largeCommonDefaults,
+        stylePreset: 'menuSubItemHorizontal',
+        list: {
+          stylePreset: 'menuSub',
+        },
       },
     },
     vertical: {
-      stylePreset: 'menuSubItemVertical',
-      spaceInline: 'space020',
-      spaceInset: 'space000',
-      list: {
-        stylePreset: 'menuSub',
-      },
       small: {
-        minHeight: 'sizing070',
-        paddingBlock: 'space020',
-        paddingInline: 'space020',
+        ...smallCommonDefaults,
+        stylePreset: 'menuSubItemVertical',
+        list: {
+          stylePreset: 'menuSub',
+        },
       },
       medium: {
-        minHeight: 'sizing080',
-        paddingBlock: 'space030',
-        paddingInline: 'space040',
+        ...mediumCommonDefaults,
+        stylePreset: 'menuSubItemVertical',
+        list: {
+          stylePreset: 'menuSub',
+        },
       },
       large: {
-        minHeight: 'sizing090',
-        paddingBlock: 'space040',
-        paddingInline: 'space050',
+        ...largeCommonDefaults,
+        stylePreset: 'menuSubItemVertical',
+        list: {
+          stylePreset: 'menuSub',
+        },
       },
     },
   },

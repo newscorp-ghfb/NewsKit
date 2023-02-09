@@ -1015,10 +1015,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1039,6 +1039,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-style: solid;
   cursor: pointer;
   width: 100%;
+  box-sizing: border-box;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1149,10 +1150,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1173,6 +1174,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-style: solid;
   cursor: pointer;
   width: 100%;
+  box-sizing: border-box;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -4072,10 +4074,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4096,6 +4098,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-style: solid;
   cursor: pointer;
   width: 100%;
+  box-sizing: border-box;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4206,10 +4209,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4230,6 +4233,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-style: solid;
   cursor: pointer;
   width: 100%;
+  box-sizing: border-box;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -7129,10 +7133,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7153,6 +7157,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-style: solid;
   cursor: pointer;
   width: 100%;
+  box-sizing: border-box;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;

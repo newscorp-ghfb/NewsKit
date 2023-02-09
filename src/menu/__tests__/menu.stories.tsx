@@ -21,6 +21,15 @@ import {InlineMessage} from '../../inline-message';
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
 
+const Flex = styled.div`
+  display: flex;
+
+  & > div {
+    width: 500px;
+    border: 1px dashed lightgrey;
+  }
+`;
+
 const menuCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-menu-theme',
   overrides: {
@@ -281,6 +290,7 @@ StoryMenuItemsStates.storyName = 'menu items - states';
 export const StoryMenuItemsSizes = () => (
   <>
     <StorybookHeading>Menu items in different sizes</StorybookHeading>
+    <StorybookSubHeading>Horizontal</StorybookSubHeading>
     <StorybookSubHeading>Small menu items</StorybookSubHeading>
     <Menu size="small" aria-label={`Menu ${getSSRId()}`}>
       <MenuItem href={href}>
@@ -341,18 +351,75 @@ export const StoryMenuItemsSizes = () => (
         <IconFilledAddCircleOutline /> Menu item 4
       </MenuItem>
     </Menu>
+    <StorybookSubHeading>Vertical</StorybookSubHeading>
+    <Flex>
+      <div>
+        <StorybookSubHeading>Small menu items</StorybookSubHeading>
+        <Menu size="small" vertical aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 1
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline />
+            Menu item 2
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 3
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 4
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+        </Menu>
+      </div>
+      <div>
+        <StorybookSubHeading>Medium menu items</StorybookSubHeading>
+        <Menu size="medium" vertical aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 1
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline />
+            Menu item 2
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 3
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 4
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+        </Menu>
+      </div>
+      <div>
+        <StorybookSubHeading>Large menu items</StorybookSubHeading>
+        <Menu size="large" vertical aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 1
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline />
+            Menu item 2
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 3
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 4
+          </MenuItem>
+        </Menu>
+      </div>
+    </Flex>
   </>
 );
 StoryMenuItemsSizes.storyName = 'menu items - sizes';
 
-const Flex = styled.div`
-  display: flex;
-
-  & > div {
-    width: 500px;
-    border: 1px dashed lightgrey;
-  }
-`;
 export const StoryMenuItemsAlignment = () => (
   <>
     <StorybookHeading>Menu items with different alignment</StorybookHeading>
@@ -1538,7 +1605,7 @@ export const StoryMenuSubOverrides = () => {
   const [expanded, setExpanded] = useState(false);
   const menuItemOverrides = {
     stylePreset: 'menuItemCustom',
-    minHeight: 'sizing089',
+    minHeight: 'sizing090',
   };
   return (
     <HorizontalContainer>

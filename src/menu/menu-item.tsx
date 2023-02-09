@@ -44,16 +44,6 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
         theme.componentDefaults,
         `${isSubMenu ? 'menuSubItem' : 'menuItem'}.${
           vertical ? 'vertical' : 'horizontal'
-        }`,
-      ),
-      ...filterOutFalsyProperties(overrides),
-    };
-
-    const menuItemButtonOverrides: MenuItemProps['overrides'] = {
-      ...get(
-        theme.componentDefaults,
-        `${isSubMenu ? 'menuSubItem' : 'menuItem'}.${
-          vertical ? 'vertical' : 'horizontal'
         }.${size}`,
       ),
       ...filterOutFalsyProperties(overrides),
@@ -74,12 +64,12 @@ export const MenuItem = React.forwardRef<HTMLLIElement, MenuItemProps>(
       >
         <StyledButton
           {...buttonProps}
+          vertical={vertical}
           align={align}
           eventContext={{href: rest.href, ...eventContext}}
           eventOriginator={eventOriginator}
           overrides={{
             ...menuItemOverrides,
-            ...menuItemButtonOverrides,
           }}
           aria-current={selected && 'page'}
           onClick={onClick}
