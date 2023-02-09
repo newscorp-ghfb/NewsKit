@@ -1,7 +1,7 @@
 import {BehaviorsSection, BehaviorsSectionProps} from '..';
 import {renderToFragmentWithTheme} from '../../../utils/test-utils';
 
-jest.mock('../../../components/media-list/media-list');
+jest.mock('../../../components/media-list/media-list.tsx');
 jest.mock(
   'newskit',
   require('../../../utils/test-utils').mockNewsKitComponents('Grid', 'Cell'),
