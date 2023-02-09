@@ -151,7 +151,7 @@ const CaptionComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the typography preset of the caption',
             },
             {
-              attribute: 'spaceStack',
+              attribute: 'spaceBetween',
               type: 'MQ<string>',
               default: 'space040',
               description:
@@ -172,41 +172,6 @@ const CaptionComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the typography preset of the credit text',
             },
             ...(commonLogicalProps() as OverridesRowsProps[]),
-          ],
-        },
-        {
-          title: 'CaptionInset',
-          summary:
-            'The captionInset has a range of predefined elements and attributes that can be overridden to define its appearance.',
-          overridesRows: [
-            {
-              attribute: 'stylePreset',
-              type: 'MQ<string>',
-              default: 'inkBase',
-              description:
-                'If provided, this overrides the style preset of the captionInset',
-            },
-            {
-              attribute: 'typographyPreset',
-              type: 'MQ<string>',
-              default: 'editorialCaption010',
-              description:
-                'If provided, this overrides the typography preset of the captionInset',
-            },
-            {
-              attribute: 'spaceStack',
-              type: 'MQ<string>',
-              default: 'space040',
-              description:
-                'If provided, this overrides the spacing between the captionInset and the credit',
-            },
-            {
-              attribute: 'spaceInset (deprecated)',
-              type: 'MQ<string>',
-              default: '{xs: spaceInset040, md: spaceInset050}',
-              description:
-                'If provided, this overrides the padding of the captionInset.',
-            },
           ],
         },
       ],

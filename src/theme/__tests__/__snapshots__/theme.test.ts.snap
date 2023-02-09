@@ -1625,19 +1625,6 @@ Object {
     "stylePreset": "inkBase",
     "typographyPreset": "editorialCaption010",
   },
-  "captionInset": Object {
-    "credit": Object {
-      "stylePreset": "uppercaseInkSubtle",
-      "typographyPreset": "utilityMeta010",
-    },
-    "spaceInset": Object {
-      "md": "spaceInset050",
-      "xs": "spaceInset040",
-    },
-    "spaceStack": "space040",
-    "stylePreset": "inkBase",
-    "typographyPreset": "editorialCaption010",
-  },
   "card": Object {
     "actionsContainer": Object {
       "minHeight": "sizing080",
