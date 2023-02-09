@@ -2983,9 +2983,13 @@ Object {
         "xs": "editorialHeadline050",
       },
     },
-    "spaceInset": Object {
-      "lg": "spaceInsetSquish040",
-      "xs": "spaceInsetSquish030",
+    "paddingBlock": Object {
+      "lg": "space040",
+      "xs": "space030",
+    },
+    "paddingInline": Object {
+      "lg": "space040",
+      "xs": "space030",
     },
     "stylePreset": "titleBar",
   },
