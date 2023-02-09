@@ -7,12 +7,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "3.74.0"
+      version = "4.52.0"
     }
   }
   backend "s3" {
-    bucket = "newskit-docs-dev-terraform-state"
-    key    = "newskit/s3-newskit/terraform.tfstate"
+    bucket         = "newskit-docs-prod-terraform-state"
+    dynamodb_table = "newskit-docs-prod-terraform-state-lock"
+    key            = "newskit/s3-newskit/terraform.tfstate"
   }
 }
 
