@@ -1250,7 +1250,10 @@ Object {
       "paddingInline": "spaceInset030",
       "spaceInline": "space020",
       "stylePreset": "accordionHeader",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "fontColorChange",
+        "backgroundColorChange",
+      ],
       "typographyPreset": "utilityButton030",
     },
     "panel": Object {
@@ -1431,7 +1434,7 @@ Object {
   },
   "audioPlayerTimeDisplay": Object {
     "stylePreset": "timeDisplay",
-    "typographyPreset": "utilityButton030",
+    "typographyPreset": "utilityLabel020",
   },
   "audioPlayerVolumeControl": Object {
     "button": Object {
@@ -1462,7 +1465,7 @@ Object {
         "stylePreset": "audioPlayerVolumeControlTrack",
       },
     },
-    "spaceBetween": "space030",
+    "spaceBetween": "space010",
     "transitionPreset": "widthChange",
   },
   "banner": Object {
@@ -2586,7 +2589,7 @@ Object {
       "typographyPreset": "utilityLabel030",
     },
     "track": Object {
-      "size": "sizing030",
+      "size": "sizing020",
       "stylePreset": "sliderTrack",
     },
   },
@@ -3166,15 +3169,17 @@ exports[`NewsKit Light theme combine all style presets 1`] = `
 Object {
   "accordionHeader": Object {
     "base": Object {
-      "backgroundColor": "{{colors.interface010}}",
+      "backgroundColor": "{{colors.interfaceBackground}}",
       "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
       "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "backgroundColor": "{{colors.interactiveDisabled010}}",
       "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
       "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -3185,6 +3190,7 @@ Object {
     "hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
       "color": "{{colors.interactiveInput040}}",
+      "iconColor": "{{colors.interactiveInput040}}",
     },
   },
   "accordionPanel": Object {
@@ -3257,8 +3263,14 @@ Object {
   },
   "audioPlayerVolumeControlPopover": Object {
     "base": Object {
-      "backgroundColor": "{{colors.interfaceBackground}}",
+      "backgroundColor": "{{colors.interface010}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
+      "boxShadow": "{{shadows.shadow060}}",
+    },
+  },
+  "audioPlayerVolumeControlPopoverOld": Object {
+    "__extends": "{{stylePresets.audioPlayerVolumeControlPopover}}",
+    "base": Object {
       "boxShadow": "{{shadows.shadow050}}",
     },
   },
@@ -3269,7 +3281,7 @@ Object {
     },
     "base": Object {
       "backgroundColor": "{{colors.interactivePrimary030}}",
-      "borderColor": "{{colors.interactivePrimary010}}",
+      "borderColor": "{{colors.interfaceBackground}}",
       "borderRadius": "{{borders.borderRadiusCircle}}",
       "borderStyle": "solid",
       "borderWidth": "{{borders.borderWidth010}}",
@@ -3287,6 +3299,12 @@ Object {
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary040}}",
       "iconColor": "{{colors.inkNonEssential}}",
+    },
+  },
+  "audioPlayerVolumeControlThumbOld": Object {
+    "__extends": "audioPlayerVolumeControlThumb",
+    "base": Object {
+      "borderColor": "{{colors.interactivePrimary010}}",
     },
   },
   "audioPlayerVolumeControlTrack": Object {
@@ -4057,7 +4075,7 @@ Object {
   },
   "dividerInverse": Object {
     "base": Object {
-      "borderColor": "{{colors.inkInverse}}",
+      "borderColor": "{{colors.interface010}}",
       "borderStyle": "solid",
       "borderWidth": "{{borders.borderWidthDefault}}",
     },
@@ -4224,7 +4242,7 @@ Object {
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.inkBase}}",
+      "color": "{{colors.inkContrast}}",
     },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
@@ -4955,13 +4973,13 @@ Object {
   },
   "linkInline": Object {
     "active": Object {
-      "color": "{{colors.interactivePrimary050}}",
-      "iconColor": "{{colors.interactivePrimary050}}",
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.interactivePrimary030}}",
-      "iconColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
       "textDecoration": "underline",
     },
     "focus-visible": Object {
@@ -4972,8 +4990,8 @@ Object {
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
-      "color": "{{colors.interactivePrimary040}}",
-      "iconColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
       "textDecoration": "underline",
     },
     "visited": Object {
@@ -5022,13 +5040,13 @@ Object {
   },
   "linkStandalone": Object {
     "active": Object {
-      "color": "{{colors.interactivePrimary050}}",
-      "iconColor": "{{colors.interactivePrimary050}}",
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.interactivePrimary030}}",
-      "iconColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
       "textDecoration": "none",
     },
     "focus-visible": Object {
@@ -5039,8 +5057,8 @@ Object {
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
-      "color": "{{colors.interactivePrimary040}}",
-      "iconColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
       "textDecoration": "underline",
     },
   },
@@ -5645,8 +5663,8 @@ Object {
   },
   "sliderLabels": Object {
     "base": Object {
-      "color": "{{colors.inkSubtle}}",
-      "iconColor": "{{colors.inkSubtle}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
