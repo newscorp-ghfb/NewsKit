@@ -34,7 +34,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Toast',
       description:
-        'A Toast communicates confirmation of an action or a low-priority message that does not need to completely interrupt the user experience.',
+        'Toasts communicate confirmation of an action or a low-priority message.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -43,7 +43,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/toast/toast-illustration',
       },
-      introduction: `A Toast communicates confirmation of an action or a low-priority message that does not need to completely interrupt the user experience.`,
+      introduction: `Toasts communicate confirmation of an action or a low-priority message.`,
     }}
     componentDefaultsKey="toast"
     meta={{
@@ -51,11 +51,11 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       introduced: 'v3.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/toast',
       figmaUrl:
-        'https://www.figma.com/file/i1jp5qmzkADF5z3XmPrxfp/02---NK-Web---Components---Toast?node-id=0%3A1',
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2289%3A310&t=9INLWlTCXpYsQH6O-0',
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Toast component, its variations, and configuration options.',
+        'This demo lets you preview the toast component, its variations and configuration options.',
       playground: {
         componentName: 'Toast',
         component: state => {
@@ -160,7 +160,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'A Toast contains one required element and three optional elements.',
+        'The toast component contains one required element and three optional elements.',
       rows: [
         {
           name: 'Icon',
@@ -176,12 +176,12 @@ const ToastComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Message',
-          description: 'Communicates what is about to happen or has happened.',
+          description: 'Communicates what’s about to happen or has happened.',
           component: ['Text Block', 'Link'],
         },
         {
           name: 'Actions',
-          description: `Enables a user to perform a relevant action such as 'Undo'.`,
+          description: `Lets a user to perform a relevant action (e.g. 'undo').`,
           component: ['Button', 'Icon Button'],
           optional: true,
         },
@@ -192,13 +192,12 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     options={{
-      introduction:
-        'A Toast has the following options to provide an appropriate experience for different scenarios.',
+      introduction: 'The toast has options for different use cases:',
       cards: [
         {
           title: 'Intent',
           description:
-            'A Toast has five intents: neutral, informative, notice and positive and negative. Each intent is used to communicate a specific semantic tone of the Toast to the user.',
+            'The toast has five intents: neutral, informative, notice, positive and negative. Each intent communicates a specific tone to the user.',
           media: getIllustrationComponent(
             'components/toast/toast-options-intent-illustration',
           ),
@@ -206,7 +205,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icon',
           description:
-            'An icon can be displayed in Toast to indicate the status or intent and to help those with colour blindness discern the message tone.',
+            'Add an icon to the toast to indicate status or intent. This also helps users who are colour blind discern the message tone.',
           media: getIllustrationComponent(
             'components/toast/toast-options-icon-illustration',
           ),
@@ -214,7 +213,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Title',
           description:
-            'A title can be displayed in the Toast to provide the user with extra context to the message.',
+            'Add a title to the toast to give the message extra context.',
           media: getIllustrationComponent(
             'components/toast/toast-options-title-illustration',
           ),
@@ -222,16 +221,16 @@ const ToastComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Actionable',
           description:
-            'A CTA button with a contextual label can be added to the Toast to provide the user with the option to perform another action relevant to the one just taken e.g. ‘Undo’.',
+            'Add a call-to-action (CTA) button with a contextual label to the toast to give the user the option to perform another action relevant to the one just taken (e.g. ‘undo’).',
 
           media: getIllustrationComponent(
             'components/toast/toast-options-actionable-illustration',
           ),
         },
         {
-          title: 'Auto-Hide Duration',
+          title: 'Auto-hide duration',
           description:
-            'A Toast’s auto-hide duration can be altered to increase or decrease the amount of time it is displayed before hiding. This is to allow the users more or less time to read the content in the Toast.',
+            'Increase or decrease how long the toast is displayed before automatically hiding, to give the user an appropriate amount of time to read the message.',
 
           media: getIllustrationComponent(
             'components/toast/toast-options-auto-hide-illustration',
@@ -240,11 +239,8 @@ const ToastComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Position',
           description: `
-            A Toast can be positioned to appear and hide from the following
-            positions on the screen:
-            top-left | top-center  |
-            top-right  |  bottom-left  |
-            bottom-center |  bottom-right
+            Position the toast to appear and hide from the following positions on the screen: top-left, top-centre, top-right, bottom-left, bottom-centre and bottom-right.
+
          `,
           media: getIllustrationComponent(
             'components/toast/toast-options-position-illustration',
@@ -253,7 +249,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Offset',
           description:
-            'A Toast can have an offset to create space from the horizontal and/or vertical edge of the screen.',
+            'Give the toast an offset to create space from the horizontal and/or vertical edge of the screen.',
           media: getIllustrationComponent(
             'components/toast/toast-options-offset-illustration',
           ),
@@ -261,28 +257,28 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction: 'The following guidance describes how a Toast behaves.',
+      introduction: 'Here’s how the toast behaves:',
       cards: [
         {
-          title: 'Text Overflow Wrap',
+          title: 'Text overflow wrap',
           description:
-            'When the title and/or the message in the Toast is too long for the available horizontal space, it wraps to form another line.',
+            'When the title and/or the message in the toast is too long for the available horizontal space, it wraps to form another line.',
           media: getIllustrationComponent(
             'components/toast/toast-options-text-overflow-illustration',
           ),
         },
         {
-          title: 'Multi Toast',
+          title: 'Multi toast',
           description:
-            'Multiple Toasts can be displayed at the same time using a queue system (Toast provider).',
+            'Display multiple toasts at the same time using a queue system (toast provider).',
           media: getIllustrationComponent(
             'components/toast/toast-options-multi-toast-illustration',
           ),
         },
         {
-          title: 'Persist on Interaction',
+          title: 'Persist on interaction',
           description:
-            'When the Toast is in a hover or focus state, then it does not auto-hide (pause). After the Toast isn’t in a hover or in a focus state, then the timer starts from where it left off (unpause).',
+            'When the toast is in a hover or focus state, it doesn’t auto-hide (pause). When the toast is no longer in a hover or focus state, the timer starts from where it left off (unpause).',
           media: getIllustrationComponent(
             'components/toast/toast-options-persist-illustration',
           ),
@@ -338,44 +334,44 @@ const ToastComponent = (layoutProps: LayoutProps) => (
     }}
     accessibility={{
       introduction:
-        'A Toast implements the best practice from the W3C guidelines.',
+        'The toast meets accessibility best practices from the W3C guidelines.',
       focusOrder: {
         title: 'Focus order',
         tableRows: [
           {
             order: 1,
             element: 'Link',
-            role: 'Focusses to the link in the message (if provided)',
+            role: 'Focusses on the link in the message (if provided)',
           },
           {
             order: 2,
             element: 'Action',
-            role: 'Focusses to the first action (if provided)',
+            role: 'Focusses on the first action (if provided)',
           },
           {
             order: 3,
             element: 'Action',
-            role: 'Focusses to the next action (if provided)',
+            role: 'Focusses on the next action (if provided)',
           },
         ],
       },
 
       interaction: {
-        title: 'Keyboard Interactions',
+        title: 'Keyboard interactions',
         tableRows: [
           {
             command: ['Tab'],
             description:
-              'When focus is outside of the Toast it moves focus to the first link or action in the Toast. If focus is on the first link or action in the Toast it moves focus to the next link or action in the Toast.',
+              'When focus is outside the toast, moves focus to the first link or action in the toast. If focus is on the first link or action in the toast, moves focus to the next link or action in the toast',
           },
           {
             command: ['Shift', 'Tab'],
             description:
-              'Focuses the previous link or action (if provided) in the Toast.',
+              'Focuses the previous link or action (if provided) in the toast',
           },
           {
             command: ['Rtn'],
-            description: 'Activates the focussed link or action in the Toast.',
+            description: 'Activates the focussed link or action in the toast.',
           },
         ],
       },
@@ -388,7 +384,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
             attribute: 'role',
             value: 'status',
             description:
-              'The aria-role can be used to identify the role of the Toast within an interface. It is set to ‘status’ by deault.',
+              'Identifies the role of the toast within an interface. Set to ‘status’ by default.',
             userSupplied: true,
           },
           {
@@ -396,7 +392,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-live',
             value: 'polite',
             description:
-              'The aria-live attribute makes possible for content within the aria-live region to automatically be read by the screen reader, without having to focus on the place where the text is displayed.',
+              'Makes it possible for content within the aria-live region to be read automatically by a screen reader, without having to focus on the place where the text is displayed.',
           },
         ],
       },
@@ -406,31 +402,31 @@ const ToastComponent = (layoutProps: LayoutProps) => (
       components: [
         {
           title: 'Toast',
-          summary: `A Toast has a range of props that can be used to define an appropriate experience for different use cases.`,
+          summary: `The toast has a range of props to define the experience in different use cases.`,
           propsRows: [
             {
               name: 'children',
               type: `Exclude<React.ReactNode, 'undefined'>`,
               required: true,
-              description: 'Defines the content of the message of the Toast.',
+              description: 'Defines the content of the message of the toast.',
             },
             {
               name: 'icon',
               type: 'ReactElement<NewsKitIcon>',
               description:
-                'If provided, defines the icon that is displayed in the Toast.',
+                'If provided, defines the icon displayed in the toast.',
             },
             {
               name: 'title',
               type: 'string',
               description:
-                'If provided, defines the content of the title in the Toast.',
+                'If provided, defines the content of the title in the toast.',
             },
             {
               name: 'actions',
               type: 'React.ComponentType',
               description:
-                'If provided, defines the action(s) that is/are displayed in the Toast.',
+                'If provided, defines the action displayed in the toast.',
             },
             {
               name: 'role',
@@ -438,13 +434,13 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               type: 'string',
               description: (
                 <>
-                  Defines the aria-role attribute of the Toast within an
+                  Defines the aria-role attribute of the toast within an
                   interface.{' '}
                   <Link
                     href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
                     target="_blank"
                   >
-                    Learn about aria-role.
+                    Learn more about aria-role at MDN Web Docs
                   </Link>
                 </>
               ),
@@ -455,13 +451,13 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               type: 'string',
               description: (
                 <>
-                  Defines the aria-live attribute of the Toast within an
-                  interface. Learn about aria-role.
+                  Defines the aria-live attribute of the toast within an
+                  interface.
                   <Link
                     href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
                     target="_blank"
                   >
-                    Learn about aria-live.
+                    Learn more about aria-live at MDN Web Docs
                   </Link>
                 </>
               ),
@@ -474,8 +470,8 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               default: 'toastNeutral',
               description: (
                 <>
-                  Overrides the style preset of the Toast container. There are
-                  the following style presets for other Toast intents:
+                  Overrides the stylePreset of the toast container. There are
+                  the following style presets for other toast intents:
                   <Mono>toastPositive</Mono> |<Mono>toastNegative</Mono> |
                   <Mono>toastInformative</Mono> |<Mono>toastNotice</Mono>
                 </>
@@ -492,13 +488,13 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               attribute: 'width',
               type: 'MQ<string>',
               default: '',
-              description: 'Overrides width of the Toast container.',
+              description: 'Overrides the width of the toast container.',
             },
             {
               attribute: 'minWidth',
               type: 'MQ<string>',
               default: '',
-              description: 'Overrides the minWidth of the Toast container.',
+              description: 'Overrides the minWidth of the toast container.',
             },
             {
               attribute: 'maxWidth',
@@ -511,39 +507,39 @@ const ToastComponent = (layoutProps: LayoutProps) => (
                 'xl = 31%',
               ],
               description:
-                'Overrides maxWidth of the Toast container. Note - This accepts a sizing token or a standard CSS sizing value.',
+                'Overrides the maxWidth of the toast container. Accepts a sizing token or a standard CSS sizing value.',
             },
             {
               attribute: 'minHeight',
               type: 'MQ<string>',
               default: '',
-              description: 'Overrides the minHeight of the Toast container.',
+              description: 'Overrides the minHeight of the toast container.',
             },
 
             {
               attribute: 'content.message.stylePreset',
               type: 'MQ<string>',
               default: 'inkInverse',
-              description: 'Overrides the stylePreset of the Toast message.',
+              description: 'Overrides the stylePreset of the toast message.',
             },
             {
               attribute: 'content.message.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityBody010',
               description:
-                'Overrides the typographyPreset of the Toast message.',
+                'Overrides the typographyPreset of the toast message.',
             },
             {
               attribute: 'content.title.stylePreset',
               type: 'MQ<string>',
               default: 'inkInverse',
-              description: 'Overrides the stylePreset of the Toast title.',
+              description: 'Overrides the stylePreset of the toast title.',
             },
             {
               attribute: 'content.title.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityHeading010',
-              description: 'Overrides the typographyPreset of the Toast title.',
+              description: 'Overrides the typographyPreset of the toast title.',
             },
             {
               attribute: 'content.title.spaceStack',
@@ -556,14 +552,14 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'space030',
               description:
-                'Overrides the space between the message and the divider and also the divider and actions. Note - it’s only applicable when actions are displayed.',
+                'Overrides the space between the message and the divider and also the divider and actions. Only applicable when actions are displayed.',
             },
             {
               attribute: 'divider.stylePreset',
               type: 'MQ<string>',
               default: 'dividerInverse',
               description:
-                'Overrides the style preset applied to the Toast divider.',
+                'Overrides the stylePreset applied to the toast divider.',
             },
             {
               attribute: 'icon.spaceInline',
@@ -591,41 +587,41 @@ const ToastComponent = (layoutProps: LayoutProps) => (
                 'bottom-right',
               ],
               default: 'bottom-center',
-              description: 'Defines the position of Toast on the screen.',
+              description: 'Defines the position of the toast on the screen.',
             },
             {
               name: 'autoHideDuration',
               type: 'number',
               default: '6000',
               description:
-                'Defines the duration that the Toast displays for before auto-hiding. A digit represents 1 millisecond.',
+                'Defines the duration that the toast displays for before auto-hiding. A digit represents 1 millisecond.',
             },
             {
               name: 'horizontalOffset',
               type: 'MQ<string>',
               default: 'space040',
               description:
-                'Defines the horizontal offset from the left or right hand side of the screen. Note - This accept a space token or a standard CSS space value',
+                'Defines the horizontal offset from the left or right hand side of the screen. Accept a space token or a standard CSS space value.',
             },
             {
               name: 'verticalOffset',
               type: 'MQ<string>',
               default: 'space040',
               description:
-                'Defines the vertical offset from the top or bottom of the screen. Note - This accepts a space token or a standard CSS space value.',
+                'Defines the vertical offset from the top or bottom of the screen. Accepts a space token or a standard CSS space value.',
             },
           ],
         },
         {
           title: 'toast() function',
           summary:
-            'A function that can be invoked to display a toast. Returns a toast ID.',
+            'Invoke this function to display a toast. Returns a toast ID.',
           argsRows: [
             {
               order: 1,
               type: ['function', 'React.ReactNode'],
               default: 'space040',
-              description: 'Defines the Toast component to be toasted.',
+              description: 'Defines the toast component to be displayed.',
               required: true,
             },
             {
@@ -633,7 +629,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               type: '{autoHideDuration: number}',
               default: '',
               description:
-                'Defines the duration that the Toast displays for before auto-hiding. A digit represents 1 millisecond. The default values is provided as prop to <ToastProvider />',
+                'Defines the duration that the toast displays for before auto-hiding. A digit represents 1 millisecond. The default values is provided as prop to <ToastProvider />',
             },
           ],
         },
