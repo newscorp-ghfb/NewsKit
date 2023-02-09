@@ -44,7 +44,6 @@ export const UsageSection: React.FC<UsageSectionProps> = ({
       )}
       {notice && (
         <InlineMessage
-          title="Note"
           icon={infoIcon}
           role="region"
           aria-label="usage notice"
