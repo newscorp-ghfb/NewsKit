@@ -109,7 +109,6 @@ export const StyledButton = styled(Button)<
   }
 >`
   width: 100%;
-  box-sizing: border-box;
   ${({selected, vertical, size}) =>
     selected &&
     getStylePreset(

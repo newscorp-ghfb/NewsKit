@@ -1039,7 +1039,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-style: solid;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1174,7 +1173,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-style: solid;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -4098,7 +4096,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-style: solid;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   color: #3358CC;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4233,7 +4230,6 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-style: solid;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -7157,7 +7153,6 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-style: solid;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;

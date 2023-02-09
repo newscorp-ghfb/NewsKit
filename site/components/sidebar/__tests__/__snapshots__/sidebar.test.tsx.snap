@@ -378,7 +378,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -484,7 +483,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -3570,7 +3568,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -3676,7 +3673,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -7313,7 +7309,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -7419,7 +7414,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -10508,7 +10502,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -10614,7 +10607,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;

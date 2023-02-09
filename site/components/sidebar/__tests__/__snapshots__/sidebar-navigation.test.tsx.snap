@@ -315,7 +315,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-color: transparent transparent transparent #3358CC;
@@ -469,7 +468,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -856,7 +854,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-color: transparent transparent transparent #3358CC;
@@ -1284,7 +1281,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -2026,7 +2022,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
@@ -2479,7 +2474,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   color: #5A6A79;
   cursor: pointer;
   width: 100%;
-  box-sizing: border-box;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
