@@ -165,6 +165,7 @@ commands:
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
+            aws sts get-caller-identity
             terraform init << parameters.terraform_arg >>
 
   terraform_init:
@@ -224,6 +225,7 @@ commands:
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
+            aws sts get-caller-identity
             terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
 
   terraform_plan:
@@ -281,6 +283,7 @@ commands:
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
+            aws sts get-caller-identity
             terraform apply -lock=false -input=false tfplan
 
   terraform_apply:
