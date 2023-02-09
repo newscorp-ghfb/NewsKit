@@ -23,13 +23,15 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -329,13 +331,15 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -635,13 +639,15 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -930,19 +936,11 @@ exports[`TitleBar renders a title bar with logical props overrides 1`] = `
   margin-block: 32px;
   padding-inline: 8px;
   padding-block: 16px;
+  margin-inline: 48px;
+  margin-block: 32px;
+  padding-inline: 8px;
+  padding-block: 16px;
   background-color: transparent;
-}
-
-@media screen and (max-width: 1023px) {
-  .emotion-0 {
-    padding: 12px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    padding: 16px;
-  }
 }
 
 .emotion-1 {
@@ -1075,13 +1073,15 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1215,13 +1215,15 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1373,7 +1375,20 @@ exports[`TitleBar should apply correctly the props and overrides 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 4px 8px;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    padding-inline: 12px;
+    padding-block: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    padding-inline: 16px;
+    padding-block: 16px;
+  }
 }
 
 .emotion-1 {
@@ -1529,13 +1544,15 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1669,13 +1686,15 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1809,13 +1828,15 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1949,13 +1970,15 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2089,13 +2112,15 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2229,13 +2254,15 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2369,13 +2396,15 @@ exports[`TitleBar should display correctly with default styles and given title 1
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2509,13 +2538,15 @@ exports[`TitleBar should render with additional HTML attributes 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    padding: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
