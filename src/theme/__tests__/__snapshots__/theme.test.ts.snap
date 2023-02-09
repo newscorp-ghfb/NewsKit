@@ -4255,7 +4255,7 @@ Object {
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.inkBase}}",
+      "color": "{{colors.inkContrast}}",
     },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
