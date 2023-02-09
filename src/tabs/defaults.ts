@@ -8,6 +8,8 @@ export default {
       iconSize: 'iconSize010',
       spaceInline: 'space020',
       transitionPreset: 'backgroundColorChange',
+      paddingBlock: 'space020',
+      paddingInline: 'space030',
     },
     medium: {
       stylePreset: 'tab',
@@ -17,6 +19,8 @@ export default {
       iconSize: 'iconSize020',
       spaceInline: 'space020',
       transitionPreset: 'backgroundColorChange',
+      paddingBlock: 'space030',
+      paddingInline: 'space040',
     },
     large: {
       stylePreset: 'tab',
@@ -26,6 +30,8 @@ export default {
       iconSize: 'iconSize030',
       spaceInline: 'space020',
       transitionPreset: 'backgroundColorChange',
+      paddingBlock: 'space040',
+      paddingInline: 'space050',
     },
   },
   tabs: {
