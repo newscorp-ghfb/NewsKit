@@ -5,10 +5,10 @@ export default {
       xs: 'space030',
       lg: 'space040',
     },
-    // paddingBlock: {
-    //   xs: 'space030',
-    //   lg: 'space040',
-    // },
+    paddingBlock: {
+      xs: 'space030',
+      lg: 'space040',
+    },
     heading: {
       typographyPreset: {
         xs: 'editorialHeadline050',
