@@ -2,7 +2,6 @@ import {CSSObject} from '@emotion/styled';
 import {getFontSizing} from '../font-sizing';
 import {BreakpointKeys, TypographyPreset} from '../../theme';
 import {isFontConfigObject} from '../guards';
-import {legacyGetFontProps} from '../get-font-props';
 import {ThemeProp} from '../style-types';
 import {MQ, MQPartial} from './types';
 import {
@@ -46,41 +45,40 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 
     if (!fontFamilyObject) return typographyPreset;
 
-    let cropProps;
-    if (Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropConfig')) {
-      cropProps = legacyGetFontProps(
-        fontSize,
-        lineHeight,
-        fontFamily,
-        props.theme.fonts,
+    if (
+      Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropConfig') ||
+      Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropAdjustments')
+    ) {
+      // eslint-disable-next-line no-console
+      console.warn(
+        'cropConfig and cropAdjustments are no longer supported; please use fontMetrics instead',
       );
-    } else {
-      const themeFontsProperties = Object.entries(props.theme.fonts);
-
-      const weightTokenArray = themeFontsProperties.find(element =>
-        element.includes(fontWeight),
-      );
-      const weightToken = weightTokenArray && weightTokenArray[0];
-
-      const fontMetrics =
-        (weightToken && fontFamilyObject.fontMetrics![weightToken!]) ||
-        fontFamilyObject.fontMetrics!.fontWeight010;
-
-      if (!fontMetrics) {
-        // eslint-disable-next-line no-console
-        console.warn(`No default fontMetrics found for '${fontFamily}'.`);
-        return typographyPreset;
-      }
-
-      const cropData = {
-        fontSize,
-        lineHeight,
-        fontMetrics,
-      };
-
-      cropProps = textCrop(cropData);
     }
-    //  **
+
+    const themeFontsProperties = Object.entries(props.theme.fonts);
+
+    const weightTokenArray = themeFontsProperties.find(element =>
+      element.includes(fontWeight),
+    );
+    const weightToken = weightTokenArray && weightTokenArray[0];
+
+    const fontMetrics =
+      (weightToken && fontFamilyObject.fontMetrics![weightToken!]) ||
+      fontFamilyObject.fontMetrics!.fontWeight010;
+
+    if (!fontMetrics) {
+      // eslint-disable-next-line no-console
+      console.warn(`No default fontMetrics found for '${fontFamily}'.`);
+      return typographyPreset;
+    }
+
+    const cropData = {
+      fontSize,
+      lineHeight,
+      fontMetrics,
+    };
+
+    const cropProps = textCrop(cropData);
 
     return {
       ...typographyPreset,
