@@ -106,7 +106,7 @@ The following transformers are available when upgrading to v7:
 
 #### `audio-player-play-pause-button`
 
-There changes to the default styling of the AudioPlayer component in v7.
+There are changes to the default styling of the AudioPlayer component in v7.
 Run this codemod if you would like to apply manual overrides to keep the old default styling.
 
 ```diff
