@@ -22,6 +22,7 @@
     "glob": "^8.0.3",
     "jscodeshift": "^0.13.1",
     "jscodeshift-add-imports": "^1.0.10",
+    "lodash": "^4.17.21",
     "yargs": "^17.5.1"
   },
   "devDependencies": {
