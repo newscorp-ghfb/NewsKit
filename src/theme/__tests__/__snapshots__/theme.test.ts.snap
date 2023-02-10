@@ -5331,19 +5331,19 @@ Object {
   "popover": Object {
     "base": Object {
       "borderRadius": "{{borders.borderRadiusDefault}}",
-      "boxShadow": "{{shadows.shadow050}}",
+      "boxShadow": "{{shadows.shadow060}}",
     },
   },
   "popoverCloseButtonContainer": Object {
     "base": Object {
-      "borderColor": "{{colors.neutral040}}",
+      "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
     },
   },
   "popoverHeader": Object {
     "base": Object {
-      "borderColor": "{{colors.neutral040}}",
+      "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
     },
@@ -5352,7 +5352,7 @@ Object {
     "base": Object {
       "backgroundColor": "{{colors.interface010}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
-      "color": "{{colors.neutral090}}",
+      "color": "{{colors.inkBase}}",
     },
   },
   "popoverPointer": Object {
