@@ -662,7 +662,7 @@ export const StoryLinkOutlineOverride = () => (
 StoryLinkOutlineOverride.storyName = 'link with outline override';
 
 export default {
-  title: 'Components/link',
+  title: 'Components/ LinkInline & LinkStandalone',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
