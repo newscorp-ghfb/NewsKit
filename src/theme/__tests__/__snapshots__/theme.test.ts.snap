@@ -2602,7 +2602,7 @@ Object {
       "typographyPreset": "utilityLabel030",
     },
     "track": Object {
-      "size": "sizing030",
+      "size": "sizing020",
       "stylePreset": "sliderTrack",
     },
   },
@@ -4255,7 +4255,7 @@ Object {
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.inkBase}}",
+      "color": "{{colors.inkContrast}}",
     },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
@@ -4986,13 +4986,13 @@ Object {
   },
   "linkInline": Object {
     "active": Object {
-      "color": "{{colors.interactivePrimary050}}",
-      "iconColor": "{{colors.interactivePrimary050}}",
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.interactivePrimary030}}",
-      "iconColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
       "textDecoration": "underline",
     },
     "focus-visible": Object {
@@ -5003,8 +5003,8 @@ Object {
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
-      "color": "{{colors.interactivePrimary040}}",
-      "iconColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
       "textDecoration": "underline",
     },
     "visited": Object {
@@ -5053,13 +5053,13 @@ Object {
   },
   "linkStandalone": Object {
     "active": Object {
-      "color": "{{colors.interactivePrimary050}}",
-      "iconColor": "{{colors.interactivePrimary050}}",
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.interactivePrimary030}}",
-      "iconColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
       "textDecoration": "none",
     },
     "focus-visible": Object {
@@ -5070,8 +5070,8 @@ Object {
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
-      "color": "{{colors.interactivePrimary040}}",
-      "iconColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
       "textDecoration": "underline",
     },
   },
@@ -5331,19 +5331,19 @@ Object {
   "popover": Object {
     "base": Object {
       "borderRadius": "{{borders.borderRadiusDefault}}",
-      "boxShadow": "{{shadows.shadow050}}",
+      "boxShadow": "{{shadows.shadow060}}",
     },
   },
   "popoverCloseButtonContainer": Object {
     "base": Object {
-      "borderColor": "{{colors.neutral040}}",
+      "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
     },
   },
   "popoverHeader": Object {
     "base": Object {
-      "borderColor": "{{colors.neutral040}}",
+      "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
     },
@@ -5352,7 +5352,7 @@ Object {
     "base": Object {
       "backgroundColor": "{{colors.interface010}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
-      "color": "{{colors.neutral090}}",
+      "color": "{{colors.inkBase}}",
     },
   },
   "popoverPointer": Object {
@@ -5676,8 +5676,8 @@ Object {
   },
   "sliderLabels": Object {
     "base": Object {
-      "color": "{{colors.inkSubtle}}",
-      "iconColor": "{{colors.inkSubtle}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",

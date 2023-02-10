@@ -185,8 +185,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -614,8 +614,8 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -1043,8 +1043,8 @@ exports[`VolumeControl renders horizontal volume control by default 1`] = `
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -1471,9 +1471,9 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2) calc(32px/2 - 12px/2);
+  margin: calc(32px/2) calc(32px/2 - 8px/2);
   height: 100%;
-  width: 12px;
+  width: 8px;
 }
 
 .emotion-6 {
@@ -1900,8 +1900,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -2329,8 +2329,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -2758,8 +2758,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -3187,8 +3187,8 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -3616,8 +3616,8 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
