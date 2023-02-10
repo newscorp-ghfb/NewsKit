@@ -1492,7 +1492,8 @@ Object {
         "spaceInline": "space030",
       },
       "minHeight": "sizing090",
-      "spaceInset": "spaceInset045",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "stylePreset": "bannerInformative",
     },
     "vertical": Object {
@@ -1500,7 +1501,7 @@ Object {
         "closeButton": Object {
           "stylePreset": "buttonOutlinedInverse",
         },
-        "spaceInline": "space050",
+        "spaceInline": "space040",
       },
       "content": Object {
         "message": Object {
@@ -1518,7 +1519,8 @@ Object {
         "spaceInline": "space030",
       },
       "minHeight": "sizing090",
-      "spaceInset": "spaceInset045",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "stylePreset": "bannerInformative",
     },
   },

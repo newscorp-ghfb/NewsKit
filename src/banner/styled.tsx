@@ -17,7 +17,7 @@ export const StyledBannerContainer = styled.div<BannerProps>`
     getResponsiveSpace('padding', `banner.${layout}`, '', 'spaceInset')}
   ${({layout}) =>
     getResponsiveSize('minHeight', `banner.${layout}`, '', 'minHeight')}
-  ${({layout}) => logicalProps(`${layout}`)}
+  ${({layout}) => logicalProps(`banner.${layout}`)}
 `;
 
 export const StyledMaxWidthContainer = styled(Stack)<
