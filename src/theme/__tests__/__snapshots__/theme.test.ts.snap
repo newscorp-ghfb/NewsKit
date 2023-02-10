@@ -2843,6 +2843,8 @@ Object {
         "spaceInline": "space020",
       },
       "minHeight": "sizing090",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "spaceInset": "spaceInset030",
       "spaceStack": "space020",
       "startEnhancer": Object {
@@ -2859,6 +2861,8 @@ Object {
         "spaceInline": "space020",
       },
       "minHeight": "sizing080",
+      "paddingBlock": "space030",
+      "paddingInline": "space030",
       "spaceInset": "spaceInset030",
       "spaceStack": "space020",
       "startEnhancer": Object {
@@ -2866,7 +2870,7 @@ Object {
         "spaceInline": "space020",
       },
       "stylePreset": "inputField",
-      "typographyPreset": "utilityBody020",
+      "typographyPreset": "utilityBody030",
       "width": "100%",
     },
     "small": Object {
@@ -2874,7 +2878,9 @@ Object {
         "iconSize": "iconSize020",
         "spaceInline": "space020",
       },
-      "minHeight": "sizing060",
+      "minHeight": "sizing070",
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
       "spaceInset": "spaceInset020",
       "spaceStack": "space020",
       "startEnhancer": Object {
