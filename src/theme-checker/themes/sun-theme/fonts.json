@@ -1,11 +1,15 @@
 {
   "fontFamily010": {
     "fontFamily": "The Sun",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "fontWeigh010": {
+        "capHeight": 738,
+        "ascent": 1072,
+        "descent": -294,
+        "lineGap": 0,
+        "unitsPerEm": 1000
+      }
+    }
   },
   "fontWeight010": 400,
   "fontWeight020": 500,

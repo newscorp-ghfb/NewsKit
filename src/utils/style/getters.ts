@@ -53,6 +53,7 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
       console.warn(
         'cropConfig and cropAdjustments are no longer supported; please use fontMetrics instead',
       );
+      return typographyPreset;
     }
 
     const themeFontsProperties = Object.entries(props.theme.fonts);

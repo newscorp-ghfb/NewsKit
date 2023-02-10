@@ -532,10 +532,6 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
     },
     "fontLetterSpacing010": "-0.5px",
@@ -3276,10 +3272,6 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
     },
     "fontLetterSpacing010": "-0.5px",
@@ -6017,10 +6009,6 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
     },
     "fontLetterSpacing010": "-0.5px",
@@ -8761,10 +8749,6 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
     },
     "fontLetterSpacing010": "-0.5px",
@@ -11502,10 +11486,6 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
     },
     "fontLetterSpacing010": "-0.5px",
@@ -14246,10 +14226,6 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
     },
     "fontLetterSpacing010": "-0.5px",
@@ -16987,10 +16963,6 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
     },
     "fontLetterSpacing010": "-0.5px",
@@ -19731,10 +19703,6 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
     },
     "fontLetterSpacing010": "-0.5px",
