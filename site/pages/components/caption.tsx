@@ -151,7 +151,7 @@ const CaptionComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the typography preset of the caption',
             },
             {
-              attribute: 'spaceBetween',
+              attribute: 'spaceStack',
               type: 'MQ<string>',
               default: 'space040',
               description:
