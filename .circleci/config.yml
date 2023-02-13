@@ -818,7 +818,7 @@ jobs:
             echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
             if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
               echo "Baseline updates required; continuing job."
-              export PERCY_PARTIAL_BUILD=1
+              echo 'export PERCY_PARTIAL_BUILD=1' >> "$BASH_ENV"
             elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
               echo "No baseline updates required; finishing job."
               circleci-agent step halt
@@ -826,6 +826,9 @@ jobs:
               echo "Error checking PR"
               exit 1
             fi
+      - run:
+          name: 'Confirm partial build'
+          command: echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
       - run_test_visual_comps_percy
       - slack/notify:
           <<: *slack_notify
@@ -847,7 +850,7 @@ jobs:
             echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
             if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
               echo "Baseline updates required; continuing job."
-              export PERCY_PARTIAL_BUILD=1
+              echo 'export PERCY_PARTIAL_BUILD=1' >> "$BASH_ENV"
             elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
               echo "No baseline updates required; finishing job."
               circleci-agent step halt
@@ -855,6 +858,9 @@ jobs:
               echo "Error checking PR"
               exit 1
             fi
+      - run:
+          name: 'Confirm partial build'
+          command: echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
       - run_test_visual_docs_percy
       - slack/notify:
           <<: *slack_notify
