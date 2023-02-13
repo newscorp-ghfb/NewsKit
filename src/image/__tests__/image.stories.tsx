@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {Image} from '..';
-import {styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
-import {IconFilledError} from '../../icons';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {IconFilledAddCircle, IconOutlinedImage} from '../../icons';
 
 // shared Percy config params to ensure image has loaded before snapshot taken
 const parameters = {
@@ -10,277 +9,205 @@ const parameters = {
   percy: {waitForSelector: 'picture img:nth-child(1)'},
 };
 
-const Container = styled.div`
-  max-width: 600px;
-  margin: 0 auto;
-`;
-
-const ContainerWithHeight = styled.div`
-  max-width: 600px;
-  margin: 0 auto;
-  height: 300px;
-`;
-
-export default {
-  title: 'Components/image',
-  component: () => 'None',
-};
-
-export const StoryFixedHeightAndWidthAsPropsInPx = () => (
-  <Container>
-    <StorybookHeading>300px by 200px</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      alt="Example Image"
-      width="300"
-      height="200"
-      placeholderIcon
-    />
-  </Container>
+export const StoryImageDefault = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase>
+      <Image src="/placeholder-3x2.png" alt="Example Image" placeholderIcon />
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryFixedHeightAndWidthAsPropsInPx.storyName =
-  'fixed-height-and-width-in-px-via-props';
-StoryFixedHeightAndWidthAsPropsInPx.parameters = {...parameters};
+StoryImageDefault.storyName = 'Default';
+StoryImageDefault.parameters = {...parameters};
 
-export const StoryFixedHeightAndWidthAsPropsAndOverrides = () => (
-  <Container>
-    <StorybookHeading>500px by 400px</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      alt="Example Image"
-      width="300"
-      height="200"
-      placeholderIcon
-      overrides={{width: '500', height: '400'}}
-    />
-  </Container>
+export const StoryImageFixedWidthAndHeightPx = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title="300px x 200px">
+      <Image
+        src="/placeholder-3x2.png"
+        alt="Example Image"
+        width="300"
+        height="200"
+        placeholderIcon
+      />
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryFixedHeightAndWidthAsPropsAndOverrides.storyName =
-  'fixed-height-and-width-in-px-via-props-and-overrides';
-StoryFixedHeightAndWidthAsPropsAndOverrides.parameters = {...parameters};
+StoryImageFixedWidthAndHeightPx.storyName = 'Fixed width and height - px';
+StoryImageFixedWidthAndHeightPx.parameters = {...parameters};
 
-export const StoryFixedHeightAndWidthAsOverridesInPx = () => (
-  <Container>
-    <StorybookHeading>300px by 200px</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      alt="Example Image"
-      overrides={{width: '300px', height: '200px'}}
-      placeholderIcon
-    />
-  </Container>
+export const StoryImageFixedWidthAndHeightPercentage = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title="100% x 30%">
+      <Image
+        src="/placeholder-3x2.png"
+        alt="Example Image"
+        width="100%"
+        height="30%"
+        placeholderIcon
+      />
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryFixedHeightAndWidthAsOverridesInPx.storyName =
-  'fixed-height-and-width-in-px-via-overrides';
-StoryFixedHeightAndWidthAsOverridesInPx.parameters = {...parameters};
+StoryImageFixedWidthAndHeightPercentage.storyName =
+  'Fixed width and height - %';
+StoryImageFixedWidthAndHeightPercentage.parameters = {...parameters};
 
-export const StoryFixedHeightAndWidthAsOverridesInPercentage = () => (
-  <ContainerWithHeight>
-    <StorybookHeading>100% by 30%</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      alt="Example Image"
-      overrides={{width: '100%', height: '30%'}}
-      placeholderIcon
-    />
-  </ContainerWithHeight>
+export const StoryImageFixedWidthAndAspectRatio = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase>
+      <Image
+        src="/placeholder-3x2.png"
+        alt="Example Image"
+        width="400"
+        loadingAspectRatio="3:2"
+        placeholderIcon
+      />
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryFixedHeightAndWidthAsOverridesInPercentage.storyName =
-  'fixed-height-and-width-in-%-via-overrides';
-StoryFixedHeightAndWidthAsOverridesInPercentage.parameters = {...parameters};
+StoryImageFixedWidthAndAspectRatio.storyName = 'Fixed width and aspect ratio';
+StoryImageFixedWidthAndAspectRatio.parameters = {...parameters};
 
-export const StoryFixedWidthAndAspectRatio = () => (
-  <Container>
-    <StorybookHeading>Fixed width and aspect ratio (h=266.66)</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      alt="Example Image"
-      overrides={{width: '400px'}}
-      loadingAspectRatio="3:2"
-      placeholderIcon
-    />
-  </Container>
+export const StoryImageFixedHeightAndAspectRatio = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title="Fixed width and aspect ratio (h=266.66)">
+      <Image
+        src="/placeholder-3x2.png"
+        alt="Example Image"
+        height="300px"
+        loadingAspectRatio="3:2"
+        placeholderIcon
+      />
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryFixedWidthAndAspectRatio.storyName = 'fixed-width-and-aspect-ratio';
-StoryFixedWidthAndAspectRatio.parameters = {...parameters};
+StoryImageFixedHeightAndAspectRatio.storyName = 'Fixed height and aspect ratio';
+StoryImageFixedHeightAndAspectRatio.parameters = {...parameters};
 
-export const StoryFixedHeighthAndAspectRatio = () => (
-  <Container>
-    <StorybookHeading>Fixed height and aspect-ratio (w=450)</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      alt="Example Image"
-      overrides={{height: '300px'}}
-      loadingAspectRatio="3:2"
-      placeholderIcon
-    />
-  </Container>
+export const StoryImageVariations = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title=" borderRadiusSharp">
+      <Image
+        src="/placeholder-3x2.png"
+        loadingAspectRatio="3:2"
+        alt="Example Image"
+        placeholderIcon
+      />
+    </StorybookCase>
+    <StorybookCase title=" borderRadiusRounded020">
+      <Image
+        src="/placeholder-3x2.png"
+        loadingAspectRatio="3:2"
+        alt="Example Image"
+        overrides={{stylePreset: 'imageRoundedMedium'}}
+      />
+    </StorybookCase>
+    <StorybookCase title=" borderRadiusRounded040 and MQ<string>">
+      <Image
+        src="/placeholder-3x2.png"
+        loadingAspectRatio="3:2"
+        alt="Example Image"
+        overrides={{
+          stylePreset: {
+            xs: 'imageRoundedMedium',
+            lg: 'imageRoundedLarge',
+          },
+        }}
+      />
+    </StorybookCase>
+    <StorybookCase title=" borderRadiusCircle">
+      <Image
+        src="/placeholder-1x1.png"
+        loadingAspectRatio="1:1"
+        width="65%"
+        alt="Example Image"
+        overrides={{
+          stylePreset: 'imageCircle',
+        }}
+      />
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryFixedHeighthAndAspectRatio.storyName = 'fixed-height-and-aspect-ratio';
-StoryFixedHeighthAndAspectRatio.parameters = {...parameters};
+StoryImageVariations.storyName = 'Variations';
+StoryImageVariations.parameters = {...parameters};
 
-export const StorySharpBorderRadius = () => (
-  <Container>
-    <StorybookHeading>Image with sharp border-radius</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      loadingAspectRatio="3:2"
-      alt="Example Image"
-      placeholderIcon
-    />
-  </Container>
+export const StoryImageValidAndInvalidImageReference = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title="Valid image reference">
+      <Image
+        src="/placeholder-3x2.png"
+        loadingAspectRatio="3:2"
+        alt="Example Image"
+      />
+    </StorybookCase>
+    <StorybookCase title="Invalid image reference">
+      <Image
+        src="/placeholder-3x2.invalid"
+        loadingAspectRatio="3:2"
+        alt="Example Image"
+      />
+    </StorybookCase>
+  </StorybookPage>
 );
-StorySharpBorderRadius.storyName = 'sharp-border-radius';
-StorySharpBorderRadius.parameters = {...parameters};
+StoryImageValidAndInvalidImageReference.storyName =
+  'Valid and invalid image reference';
 
-export const StoryRoundedBorderRadius = () => (
-  <Container>
-    <StorybookHeading>Image with rounded border-radius</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      loadingAspectRatio="3:2"
-      alt="Example Image"
-      overrides={{
-        stylePreset: 'imageRoundedMedium',
-      }}
-    />
-  </Container>
+export const StoryImagePlaceholderIcon = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title="Invalid image with placeholder icon">
+      <Image
+        placeholderIcon
+        src="/placeholder-3x2.invalid"
+        loadingAspectRatio="3:2"
+        alt="Example Image"
+      />
+    </StorybookCase>
+    <StorybookCase title="Invalid image with custom placeholder icon">
+      <Image
+        placeholderIcon
+        src="/placeholder-3x2.invalid"
+        loadingAspectRatio="3:2"
+        alt="Example Image"
+        overrides={{
+          placeholderIcon: props => <IconFilledAddCircle {...props} />,
+        }}
+      />
+    </StorybookCase>
+    <StorybookCase title="Invalid image with custom placeholder icon size">
+      <Image
+        placeholderIcon
+        src="/placeholder-3x2.invalid"
+        loadingAspectRatio="3:2"
+        alt="Example Image"
+        overrides={{
+          placeholderIcon: () => (
+            <IconOutlinedImage overrides={{size: 'iconSize050'}} />
+          ),
+        }}
+      />
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryRoundedBorderRadius.storyName = 'rounded-border-radius';
-StoryRoundedBorderRadius.parameters = {...parameters};
+StoryImagePlaceholderIcon.storyName = 'Placeholder icon';
 
-export const StoryRoundedBorderRadiusWithMq = () => (
-  <Container>
-    <StorybookHeading>Image with rounded border-radius and mq</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      loadingAspectRatio="3:2"
-      alt="Example Image"
-      overrides={{
-        stylePreset: {
-          xs: 'imageRoundedMedium',
-          lg: 'imageRoundedLarge',
-        },
-      }}
-    />
-  </Container>
-);
-StoryRoundedBorderRadiusWithMq.storyName = 'rounded-border-radius-with-mq';
-StoryRoundedBorderRadiusWithMq.parameters = {...parameters};
-
-export const StoryCircleBorderRadius = () => (
-  <Container>
-    <StorybookHeading>Image with circle border-radius</StorybookHeading>
-    <Image
-      src="/placeholder-1x1.png"
-      loadingAspectRatio="1:1"
-      alt="Example Image"
-      overrides={{
-        stylePreset: 'imageCircle',
-      }}
-    />
-  </Container>
-);
-StoryCircleBorderRadius.storyName = 'circle-border-radius';
-StoryCircleBorderRadius.parameters = {...parameters};
-
-export const StoryValidImg = () => (
-  <Container>
-    <StorybookHeading>Valid image reference</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.png"
-      loadingAspectRatio="3:2"
-      alt="Example Image"
-    />
-  </Container>
-);
-StoryValidImg.storyName = 'valid-img';
-StoryValidImg.parameters = {...parameters};
-
-export const StoryInvalidImg = () => (
-  <Container>
-    <StorybookHeading>Invalid image reference hiding logo</StorybookHeading>
-    <Image
-      src="/placeholder-3x2.invalid"
-      loadingAspectRatio="3:2"
-      alt="Example Image"
-    />
-  </Container>
-);
-StoryInvalidImg.storyName = 'invalid-img';
-
-export const StoryInvalidImgWithPlaceholderIcon = () => (
-  <Container>
-    <StorybookHeading>
-      Invalid image reference with placeholder Icon
-    </StorybookHeading>
-    <Image
-      placeholderIcon
-      src="/placeholder-3x2.invalid"
-      loadingAspectRatio="3:2"
-      alt="Example Image"
-    />
-  </Container>
-);
-StoryInvalidImgWithPlaceholderIcon.storyName =
-  'invalid-img-with-placeholder-icon';
-
-export const StoryInvalidImgWithCustomPlaceholderIconDefaultSize = () => (
-  <Container>
-    <StorybookHeading>
-      Invalid image reference with custom placeholder Icon (using default icon
-      size)
-    </StorybookHeading>
-    <Image
-      placeholderIcon
-      src="/placeholder-3x2.invalid"
-      loadingAspectRatio="3:2"
-      alt="Example Image"
-      overrides={{
-        placeholderIcon: props => <IconFilledError {...props} />,
-      }}
-    />
-  </Container>
-);
-StoryInvalidImgWithCustomPlaceholderIconDefaultSize.storyName =
-  'invalid-img-with-custom-placeholder-icon-default-size';
-
-export const StoryInvalidImgWithCustomPlaceholderIconOverrideSize = () => (
-  <Container>
-    <StorybookHeading>
-      Invalid image reference with custom placeholder Icon (using override icon
-      size)
-    </StorybookHeading>
-    <Image
-      placeholderIcon
-      src="/placeholder-3x2.invalid"
-      loadingAspectRatio="3:2"
-      alt="Example Image"
-      overrides={{
-        placeholderIcon: () => (
-          <IconFilledError overrides={{size: 'iconSize050'}} />
-        ),
-      }}
-    />
-  </Container>
-);
-StoryInvalidImgWithCustomPlaceholderIconOverrideSize.storyName =
-  'invalid-img-with-custom-placeholder-icon-override-size';
-
-export const StoryLazyLoading = () => {
+export const StoryImageLazyLoading = () => {
   const getImages = (num: number) => {
     const images: React.ReactNode[] = [];
     for (let i = 1; i <= num; i++) {
-      const width = 400 + i;
       images.push(
         <Image
-          key={width}
-          src={`https://placekitten.com/${width}/${width}`}
+          key={i}
+          src={`/placeholders-lazy-load/placeholder-${
+            i < 10 ? `0${i}` : i
+          }.png`}
           // width and height are needed for lazy loading
-          overrides={{width: width.toString(), height: width.toString()}}
-          loadingAspectRatio="1:1"
+          overrides={{
+            width: '400px',
+            height: '226px',
+            marginBlockEnd: 'space060',
+          }}
           loading="lazy"
-          alt={`Cat ${i}`}
+          alt={`Placeholder ${i}`}
           placeholderIcon
         />,
       );
@@ -288,97 +215,88 @@ export const StoryLazyLoading = () => {
     return images;
   };
 
-  return <div>{getImages(30)}</div>;
+  return (
+    <StorybookPage columns="1fr 1fr">
+      <StorybookCase>{getImages(10)}</StorybookCase>
+    </StorybookPage>
+  );
 };
-StoryLazyLoading.storyName = 'lazy-loading';
-StoryLazyLoading.parameters = {percy: {skip: true}};
+StoryImageLazyLoading.storyName = 'Lazy loading';
+StoryImageLazyLoading.parameters = {percy: {skip: true}};
 
-export const StoryImageWithSources = () => {
+export const StoryImageSourceUsingMediaQuery = () => {
   const sources = [
     {media: 'lg', srcSet: '/1200x800-lg-placeholder-image.png'},
     {media: 'md', srcSet: '/800x600-md-placeholder-image.png'},
     {media: 'xs', srcSet: '/300x300-xs-placeholder-image.png'},
   ];
   return (
-    <Image
-      src="/fallback-placeholder-image.png"
-      sources={sources}
-      alt="placeholders"
-    />
+    <StorybookPage columns="1fr">
+      <StorybookCase>
+        <Image
+          src="/fallback-placeholder-image.png"
+          sources={sources}
+          alt="placeholders"
+        />
+      </StorybookCase>
+    </StorybookPage>
   );
 };
-StoryImageWithSources.storyName = 'image-with-sources-using-mq';
-StoryImageWithSources.parameters = {
+StoryImageSourceUsingMediaQuery.storyName = 'Source using media query';
+StoryImageSourceUsingMediaQuery.parameters = {
   percy: {waitForSelector: 'picture img:nth-child(4)'},
 };
 
-export const StoryImageWithSourcesNoXS = () => {
+export const StoryImageSourceUsingMqNoXs = () => {
   const sources = [
     {media: 'lg', srcSet: '/1200x800-lg-placeholder-image.png'},
     {media: 'md', srcSet: '/800x600-md-placeholder-image.png'},
   ];
   return (
-    <Image
-      src="/fallback-placeholder-image.png"
-      sources={sources}
-      alt="placeholders"
-    />
+    <StorybookPage columns="1fr">
+      <StorybookCase>
+        <Image
+          src="/fallback-placeholder-image.png"
+          sources={sources}
+          alt="placeholders"
+        />
+      </StorybookCase>
+    </StorybookPage>
   );
 };
-StoryImageWithSourcesNoXS.storyName = 'image-with-sources-using-mq-no-xs';
-StoryImageWithSourcesNoXS.parameters = {
+StoryImageSourceUsingMqNoXs.storyName = 'Source using mq no xs';
+StoryImageSourceUsingMqNoXs.parameters = {
   percy: {waitForSelector: 'picture img:nth-child(3)'},
 };
 
-export const StoryImageWithSourcesAndMedia = () => {
-  // Source order matters
-  //
-  // Very much like it does when using the sizes algorithm,
-  // the browser goes over the list of sources and picks the first one that matches.
-  // A match can happen based on both media and type attributes.
-  // https://dev.opera.com/articles/native-responsive-images/
-  const sources = [
-    {
-      media: '(min-width: 800px)',
-      srcSet: '/min-width-800px-placeholder-image.png',
-    },
-    {
-      media: '(min-width: 600px)',
-      srcSet: '/min-width-600px-placeholder-image.png',
-    },
-  ];
-  return (
-    <Image
-      src="/fallback-300x-placeholder-image.png"
-      sources={sources}
-      alt="placeholders"
-    />
-  );
-};
-StoryImageWithSourcesAndMedia.storyName =
-  'image-with-sources-using-media-query';
-StoryImageWithSourcesAndMedia.parameters = {
-  percy: {waitForSelector: 'picture img:nth-child(3)'},
-};
-
-export const StoryImageWithLogicalProps = () => (
-  <>
-    <Container>
-      <StorybookHeading>300px by 200px</StorybookHeading>
+export const StoryImageLogicalProps = () => (
+  <StorybookPage>
+    <StorybookCase title="300px x 200px">
       <Image
         src="/placeholder-3x2.png"
         alt="Example Image"
-        overrides={{
-          width: '100px',
-          height: '100px',
-          marginInline: '25px',
-          marginBlock: '50px',
-        }}
         placeholderIcon
+        overrides={{
+          width: '200px',
+          height: '150px',
+          marginInline: '50px',
+          marginBlock: '25px',
+        }}
       />
-    </Container>
-  </>
+    </StorybookCase>
+  </StorybookPage>
 );
+StoryImageLogicalProps.storyName = 'Logical props';
+StoryImageLogicalProps.parameters = {...parameters};
 
-StoryImageWithLogicalProps.storyName = 'image-with-logical-props';
-StoryImageWithLogicalProps.parameters = {...parameters};
+export default {
+  title: 'Components/Image',
+  component: Image,
+  parameters: {
+    nkDocs: {
+      title: 'Image',
+      url: 'https://newskit.co.uk/components/image',
+      description: 'The image is a simple component for adding images.',
+    },
+  },
+};

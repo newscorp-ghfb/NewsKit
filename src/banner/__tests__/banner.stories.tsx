@@ -55,6 +55,10 @@ const CTABtn = ({
   </Button>
 );
 
+const GridDiv = styled.div`
+  width: 100%;
+`;
+
 const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
   const close = () => {
     // eslint-disable-next-line no-console
@@ -69,7 +73,7 @@ const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
     <Banner
       actions={[
         () => (
-          <>
+          <GridDiv>
             <Visible xs sm>
               <CTABtn onClick={action}>CTA button</CTABtn>
             </Visible>
@@ -78,7 +82,7 @@ const StoryBanner: React.FC<BannerProps> = ({children, ...restProps}) => {
                 CTA button
               </CTABtn>
             </Visible>
-          </>
+          </GridDiv>
         ),
       ]}
       aria-label="Banner Info"
