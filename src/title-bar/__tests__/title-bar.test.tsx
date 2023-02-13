@@ -2,7 +2,7 @@ import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {TitleBar, TitleBarProps} from '..';
 import {Button} from '../../button';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 
 describe('TitleBar', () => {
   const TITLE = 'Test title of title bar';
@@ -116,7 +116,7 @@ describe('TitleBar', () => {
       expect(fragment).toMatchSnapshot();
     });
     test('Link', () => {
-      const link = () => <Link href="/">Link</Link>;
+      const link = () => <LinkInline href="/">Link</LinkInline>;
       const fragment = renderToFragmentWithTheme(TitleBar, {
         children: TITLE,
         actionItem: link,

@@ -866,7 +866,6 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 .emotion-7 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 

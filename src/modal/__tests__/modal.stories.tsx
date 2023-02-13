@@ -8,7 +8,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {Button} from '../../button';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {Stack} from '../../stack';
 import {H1, P} from '../../typography';
 import {useHasMounted} from '../../utils/hooks';
@@ -34,7 +34,7 @@ const modalContent = (
     </StorybookParah>
     <Button>Register for a free account</Button>
     <P>Already have an account?</P>
-    <Link href="/">Sign in here</Link>
+    <LinkInline href="/">Sign in here</LinkInline>
   </Stack>
 );
 
@@ -120,7 +120,7 @@ export const StoryOpenOnPageLoad = () =>
             </StorybookParah>
             <Button>Register for a free account</Button>
             <P>Already have an account?</P>
-            <Link href="/">Sign in here</Link>
+            <LinkInline href="/">Sign in here</LinkInline>
           </Stack>
         </Modal>
       </>

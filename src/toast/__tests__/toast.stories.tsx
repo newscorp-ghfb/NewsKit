@@ -13,7 +13,7 @@ import {
   IconFilledCheckCircle,
 } from '../../icons';
 import {toast, ToastProvider, Toast} from '..';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {Button} from '../../button';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
@@ -93,9 +93,9 @@ const ToastNegative = withDefaultProps(Toast, {
 });
 
 const toastLink = (
-  <Link href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
+  <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
     with link
-  </Link>
+  </LinkInline>
 );
 
 export const StoryToastDefault = () => (
