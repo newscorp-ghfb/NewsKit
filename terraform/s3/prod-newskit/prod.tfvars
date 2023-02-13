@@ -1,6 +1,3 @@
 environment = "prod"
 tag_name_suffix = "-prod"
 docs_bucket = "ncu-newskit-docs-prod"
-environment2 = ""
-tag_name_suffix2 = ""
-docs_bucket2 = ""
