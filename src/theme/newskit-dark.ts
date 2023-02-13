@@ -19,8 +19,8 @@ export const newskitDarkThemeOverrides = {
     inkNegative: '{{colors.red050}}',
     inkNotice: '{{colors.neutral040}}',
     inkInformative: '{{colors.teal050}}',
-    inkBrand010: '{{colors.blue030}}',
-    inkBrand020: '{{colors.blue050}}',
+    inkBrand010: '{{colors.blue050}}',
+    inkBrand020: '{{colors.blue030}}',
     interfaceBackground: '{{colors.neutral100}}',
     interface010: '{{colors.neutral090}}',
     interface020: '{{colors.neutral080}}',
@@ -83,6 +83,14 @@ export const newskitDarkThemeOverrides = {
       'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)',
     overlayDarkGradient010:
       'linear-gradient(180deg, rgba(51, 51, 51, 0) 0%, #0A0A0A 100%)',
+    overlayGradientBaseHorizontal:
+      'linear-gradient(-90deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)',
+    overlayGradientBaseVertical:
+      'linear-gradient(180deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)',
+    overlayGradientInverseHorizontal:
+      'linear-gradient(-90deg, rgba(198,198,198,0.00) 0%, rgba(198,198,198,1.00) 100%)',
+    overlayGradientInverseVertical:
+      'linear-gradient(180deg, rgba(198,198,198,0.00) 0%, rgba(198,198,198,1.00) 100%)',
   },
   outline: {
     safariOutlineStyleDefault: 'solid',
