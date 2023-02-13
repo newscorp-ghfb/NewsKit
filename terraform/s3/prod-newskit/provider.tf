@@ -13,7 +13,7 @@ terraform {
   backend "s3" {
     bucket         = "newskit-docs-prod-terraform-state"
     dynamodb_table = "newskit-docs-prod-terraform-state-lock"
-    key            = "newskit/s3-newskit/terraform.tfstate"
+    key            = "newskit/s3/prod-newskit/terraform.tfstate"
   }
 }
 

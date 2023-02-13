@@ -1,4 +1,5 @@
 resource "aws_s3_bucket" "s3_docs" {
+  count = "${var.environment != "" ? 1 : 0}"
   bucket = var.docs_bucket
   acl = "public-read"
   tags = local.tags
@@ -54,6 +55,7 @@ POLICY
 }
 
 resource "aws_s3_bucket" "s3_docs2" {
+  count = "${var.environment2 != "" ? 1 : 0}"
   bucket = var.docs_bucket2
   acl = "public-read"
   tags = local.tags2

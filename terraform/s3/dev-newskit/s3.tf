@@ -39,7 +39,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy" {
 			"Sid": "ProductPlatformsManage",
 			"Effect": "Allow",
 			"Principal": {
-				"AWS": ["696065950852", "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp"]
+				"AWS": ["696065950852", "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"]
 			},
 			"Action": [
 				"s3:PutObject"
@@ -94,7 +94,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy2" {
 			"Sid": "ProductPlatformsManage",
 			"Effect": "Allow",
 			"Principal": {
-				"AWS": ["696065950852", "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp"]
+				"AWS": ["696065950852", "arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume"]
 			},
 			"Action": [
 				"s3:PutObject"
