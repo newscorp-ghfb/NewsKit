@@ -71,7 +71,6 @@ export const StoryTitleBar = () => (
       <TitleBar
         headingAs="h6"
         overrides={{
-          spaceInset: 'spaceInsetSquish010',
           heading: {
             stylePreset: 'titleBarCustom',
           },
