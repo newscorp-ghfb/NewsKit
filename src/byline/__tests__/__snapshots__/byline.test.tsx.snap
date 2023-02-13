@@ -113,13 +113,13 @@ exports[`Byline renders correctly multiple authors with link only 1`] = `
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-4:visited:not(:disabled) {
@@ -500,13 +500,13 @@ exports[`Byline renders correctly with authors and links 1`] = `
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-4:visited:not(:disabled) {
@@ -813,13 +813,13 @@ exports[`Byline renders correctly with authors, location, titles and links 1`] =
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-4:visited:not(:disabled) {
@@ -1094,13 +1094,13 @@ exports[`Byline renders correctly with logical props overrides 1`] = `
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-4:visited:not(:disabled) {
