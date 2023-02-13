@@ -13,10 +13,10 @@ export default {
       borderRadius: '{{borders.borderRadiusSharp}}',
     },
     hover: {
-      backgroundColor: '{{colors.interactiveSecondary020}}',
+      backgroundColor: '{{colors.interactiveSecondary010}}',
     },
     active: {
-      borderWidth: '{{borders.borderWidth010}}',
+      backgroundColor: '{{colors.interactiveSecondary020}}',
     },
     'focus-visible': defaultFocusVisible,
   },

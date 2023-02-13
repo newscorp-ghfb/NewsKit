@@ -1250,7 +1250,10 @@ Object {
       "paddingInline": "spaceInset030",
       "spaceInline": "space020",
       "stylePreset": "accordionHeader",
-      "transitionPreset": "backgroundColorChange",
+      "transitionPreset": Array [
+        "fontColorChange",
+        "backgroundColorChange",
+      ],
       "typographyPreset": "utilityButton030",
     },
     "panel": Object {
@@ -1489,7 +1492,8 @@ Object {
         "spaceInline": "space030",
       },
       "minHeight": "sizing090",
-      "spaceInset": "spaceInset045",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "stylePreset": "bannerInformative",
     },
     "vertical": Object {
@@ -1497,7 +1501,7 @@ Object {
         "closeButton": Object {
           "stylePreset": "buttonOutlinedInverse",
         },
-        "spaceInline": "space050",
+        "spaceInline": "space040",
       },
       "content": Object {
         "message": Object {
@@ -1515,7 +1519,8 @@ Object {
         "spaceInline": "space030",
       },
       "minHeight": "sizing090",
-      "spaceInset": "spaceInset045",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "stylePreset": "bannerInformative",
     },
   },
@@ -2418,7 +2423,7 @@ Object {
         },
         "minHeight": "sizing090",
         "spaceInline": "space020",
-        "spaceInset": "spaceInset030",
+        "spaceInset": "spaceInset040",
         "spaceStack": "space020",
         "startEnhancer": Object {
           "iconSize": "iconSize020",
@@ -2456,14 +2461,14 @@ Object {
         },
         "minHeight": "sizing080",
         "spaceInline": "space020",
-        "spaceInset": "spaceInset020",
+        "spaceInset": "spaceInset030",
         "spaceStack": "space020",
         "startEnhancer": Object {
           "iconSize": "iconSize020",
           "spaceInline": "space020",
         },
         "stylePreset": "inputField",
-        "typographyPreset": "utilityBody020",
+        "typographyPreset": "utilityBody030",
         "width": "100%",
       },
       "modal": Object {
@@ -2492,7 +2497,7 @@ Object {
         "loadingIndicator": Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
-        "minHeight": "sizing060",
+        "minHeight": "sizing070",
         "spaceInline": "space020",
         "spaceInset": "spaceInset020",
         "spaceStack": "space020",
@@ -2524,9 +2529,9 @@ Object {
         "iconSize": "iconSize020",
         "stylePreset": "selectOptionItemIcon",
       },
-      "minHeight": "sizing090",
+      "minHeight": "sizing080",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetStretch030",
+      "spaceInset": "spaceInsetSquish030",
       "stylePreset": "selectOptionItem",
       "typographyPreset": "utilityBody030",
     },
@@ -2535,9 +2540,9 @@ Object {
         "iconSize": "iconSize020",
         "stylePreset": "selectOptionItemIcon",
       },
-      "minHeight": "sizing080",
+      "minHeight": "sizing070",
       "spaceInline": "space020",
-      "spaceInset": "spaceInset020",
+      "spaceInset": "spaceInsetSquish020",
       "stylePreset": "selectOptionItem",
       "typographyPreset": "utilityBody020",
     },
@@ -2599,7 +2604,7 @@ Object {
       "typographyPreset": "utilityLabel030",
     },
     "track": Object {
-      "size": "sizing030",
+      "size": "sizing020",
       "stylePreset": "sliderTrack",
     },
   },
@@ -3185,15 +3190,17 @@ exports[`NewsKit Light theme combine all style presets 1`] = `
 Object {
   "accordionHeader": Object {
     "base": Object {
-      "backgroundColor": "{{colors.interface010}}",
+      "backgroundColor": "{{colors.interfaceBackground}}",
       "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
       "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "backgroundColor": "{{colors.interactiveDisabled010}}",
       "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
       "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -3204,6 +3211,7 @@ Object {
     "hover": Object {
       "backgroundColor": "{{colors.interactiveInput010}}",
       "color": "{{colors.interactiveInput040}}",
+      "iconColor": "{{colors.interactiveInput040}}",
     },
   },
   "accordionPanel": Object {
@@ -4088,7 +4096,7 @@ Object {
   },
   "dividerInverse": Object {
     "base": Object {
-      "borderColor": "{{colors.inkInverse}}",
+      "borderColor": "{{colors.interface010}}",
       "borderStyle": "solid",
       "borderWidth": "{{borders.borderWidthDefault}}",
     },
@@ -4255,7 +4263,7 @@ Object {
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.inkBase}}",
+      "color": "{{colors.inkContrast}}",
     },
     "hover": Object {
       "color": "{{colors.interactivePrimary040}}",
@@ -4986,13 +4994,13 @@ Object {
   },
   "linkInline": Object {
     "active": Object {
-      "color": "{{colors.interactivePrimary050}}",
-      "iconColor": "{{colors.interactivePrimary050}}",
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.interactivePrimary030}}",
-      "iconColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
       "textDecoration": "underline",
     },
     "focus-visible": Object {
@@ -5003,8 +5011,8 @@ Object {
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
-      "color": "{{colors.interactivePrimary040}}",
-      "iconColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
       "textDecoration": "underline",
     },
     "visited": Object {
@@ -5053,13 +5061,13 @@ Object {
   },
   "linkStandalone": Object {
     "active": Object {
-      "color": "{{colors.interactivePrimary050}}",
-      "iconColor": "{{colors.interactivePrimary050}}",
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
       "textDecoration": "underline",
     },
     "base": Object {
-      "color": "{{colors.interactivePrimary030}}",
-      "iconColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
       "textDecoration": "none",
     },
     "focus-visible": Object {
@@ -5070,8 +5078,8 @@ Object {
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
-      "color": "{{colors.interactivePrimary040}}",
-      "iconColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
       "textDecoration": "underline",
     },
   },
@@ -5331,19 +5339,19 @@ Object {
   "popover": Object {
     "base": Object {
       "borderRadius": "{{borders.borderRadiusDefault}}",
-      "boxShadow": "{{shadows.shadow050}}",
+      "boxShadow": "{{shadows.shadow060}}",
     },
   },
   "popoverCloseButtonContainer": Object {
     "base": Object {
-      "borderColor": "{{colors.neutral040}}",
+      "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
     },
   },
   "popoverHeader": Object {
     "base": Object {
-      "borderColor": "{{colors.neutral040}}",
+      "borderColor": "{{colors.interface050}}",
       "borderStyle": "none none solid none",
       "borderWidth": "{{borders.borderWidth010}}",
     },
@@ -5352,7 +5360,7 @@ Object {
     "base": Object {
       "backgroundColor": "{{colors.interface010}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
-      "color": "{{colors.neutral090}}",
+      "color": "{{colors.inkBase}}",
     },
   },
   "popoverPointer": Object {
@@ -5676,8 +5684,8 @@ Object {
   },
   "sliderLabels": Object {
     "base": Object {
-      "color": "{{colors.inkSubtle}}",
-      "iconColor": "{{colors.inkSubtle}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
@@ -5858,7 +5866,7 @@ Object {
   },
   "tagPrimary": Object {
     "active": Object {
-      "borderWidth": "{{borders.borderWidth010}}",
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
     },
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
@@ -5877,7 +5885,7 @@ Object {
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
-      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "backgroundColor": "{{colors.interactiveSecondary010}}",
     },
   },
   "tagPrimaryInverse": Object {

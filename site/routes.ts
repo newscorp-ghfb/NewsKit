@@ -838,6 +838,29 @@ export const routes = [
         ],
       },
       {
+        title: 'Community',
+        description: 'Components that interact with a third-party service.',
+        id: '/components/community',
+        subNav: [
+          {
+            title: 'How to contribute',
+            page: true,
+            id: '/components/community/how-to-contribute',
+            description:
+              'We welcome contributions of code, design and guidance.',
+            illustration: 'components/community/how-to-contribute',
+          },
+          {
+            title: 'Community index',
+            page: true,
+            id: '/components/community/community-index',
+            description:
+              'Contributions are shared and maintained by contributing teams.',
+            illustration: 'components/community/community-index',
+          },
+        ],
+      },
+      {
         title: 'Third Party Integrations',
         description: 'Components that interact with a third-party service.',
         id: '/components/third-party',

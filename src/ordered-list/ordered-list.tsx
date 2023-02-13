@@ -19,6 +19,7 @@ const ListItem = styled.li<OrderedListItemProps>`
   ${getTypographyPreset('orderedList.content', 'content', {
     withCrop: true,
   })}
+  display: flex;
   &::before {
     content: counter(item-counter) '. ';
     ${getStylePreset('orderedList.counter', 'counter')}

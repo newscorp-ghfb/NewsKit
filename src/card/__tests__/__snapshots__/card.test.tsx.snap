@@ -275,11 +275,11 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -644,11 +644,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -1013,11 +1013,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -2681,11 +2681,11 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -4513,7 +4513,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -4670,11 +4670,11 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -5025,7 +5025,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-heading {
@@ -5412,7 +5412,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
@@ -5538,7 +5538,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -5654,7 +5654,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
@@ -5780,7 +5780,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -5890,7 +5890,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -6035,7 +6035,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -6487,11 +6487,11 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-11:focus-visible:not(:disabled) {

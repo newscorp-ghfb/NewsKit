@@ -63,8 +63,8 @@ export default {
   },
   sliderLabels: {
     base: {
-      color: '{{colors.inkSubtle}}',
-      iconColor: '{{colors.inkSubtle}}',
+      color: '{{colors.inkBase}}',
+      iconColor: '{{colors.inkBase}}',
     },
     disabled: {
       color: '{{colors.inkNonEssential}}',

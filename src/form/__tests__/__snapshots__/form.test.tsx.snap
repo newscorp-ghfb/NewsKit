@@ -4206,7 +4206,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-13 {
@@ -4216,7 +4216,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -5783,7 +5783,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-13 {
@@ -5793,7 +5793,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -7472,7 +7472,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -7482,7 +7482,7 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
