@@ -5860,7 +5860,7 @@ Object {
   },
   "tagPrimary": Object {
     "active": Object {
-      "borderWidth": "{{borders.borderWidth010}}",
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
     },
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
@@ -5879,7 +5879,7 @@ Object {
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
     "hover": Object {
-      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "backgroundColor": "{{colors.interactiveSecondary010}}",
     },
   },
   "tagPrimaryInverse": Object {

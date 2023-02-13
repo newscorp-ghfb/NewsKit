@@ -53,11 +53,11 @@ exports[`Tag href renders as an anchor 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -181,11 +181,11 @@ exports[`Tag href renders as an anchor and user can pass anchor attributes 1`] =
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -309,11 +309,11 @@ exports[`Tag href renders in disable state as a div 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -436,11 +436,11 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -562,11 +562,11 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -688,11 +688,11 @@ exports[`Tag renders a tag with an icon 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -860,11 +860,11 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1032,11 +1032,11 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1206,11 +1206,11 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1334,11 +1334,11 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1464,11 +1464,11 @@ exports[`Tag renders a tag with logical props overrides 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1636,11 +1636,11 @@ exports[`Tag renders a tag with no paddings 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1764,11 +1764,11 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1892,11 +1892,11 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2020,11 +2020,11 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2148,11 +2148,11 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2274,11 +2274,11 @@ exports[`Tag renders in disabled state 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2401,11 +2401,11 @@ exports[`Tag renders large Tag 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2527,11 +2527,11 @@ exports[`Tag renders medium Tag 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2653,11 +2653,11 @@ exports[`Tag renders small Tag 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2779,11 +2779,11 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2905,11 +2905,11 @@ exports[`Tag renders with default styles 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
