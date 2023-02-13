@@ -48,13 +48,15 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 16px 24px;
   min-width: 120px;
-  min-height: 48px;
+  min-height: 64px;
+  padding-inline: 24px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 64px;
   min-width: 120px;
   cursor: default;
   overflow: hidden;
@@ -299,13 +301,15 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 16px 24px;
   min-width: 120px;
-  min-height: 48px;
+  min-height: 64px;
+  padding-inline: 24px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 64px;
   min-width: 120px;
   cursor: default;
   overflow: hidden;
@@ -551,6 +555,8 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -802,6 +808,8 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1051,6 +1059,8 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1302,6 +1312,8 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1551,6 +1563,8 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1802,6 +1816,8 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2051,6 +2067,8 @@ exports[`Menu alignment renders with menu items aligned at the spaceBetween hori
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2301,6 +2319,8 @@ exports[`Menu alignment renders with menu items aligned at the spaceBetween vert
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2549,6 +2569,8 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2800,6 +2822,8 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3046,13 +3070,15 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 8px 12px;
   min-width: 64px;
-  min-height: 48px;
+  min-height: 40px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 40px;
   min-width: 64px;
   cursor: default;
   overflow: hidden;
@@ -3297,13 +3323,15 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 8px 12px;
   min-width: 64px;
-  min-height: 48px;
+  min-height: 40px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 40px;
   min-width: 64px;
   cursor: default;
   overflow: hidden;
@@ -3565,6 +3593,8 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3899,6 +3929,8 @@ exports[`Menu renders horizontally with menu group 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4159,6 +4191,8 @@ exports[`Menu renders horizontally with menu items 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4356,6 +4390,370 @@ exports[`Menu renders horizontally with menu items 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Menu renders horizontally with selected menu items 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-right: 8px;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #3358CC;
+  border-width: 0 0 2px 0;
+  color: #3B3B3B;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-2 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-3 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 0 2px 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.emotion-5 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-5:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-5:active:not(:disabled) {
+  border-color: #254CAC;
+  color: #111111;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #111111;
+}
+
+.emotion-5:selected:hover:not(:disabled) {
+  border-color: #3358CC;
+  color: #3B3B3B;
+}
+
+.emotion-5:selected:hover:not(:disabled) svg {
+  fill: #3B3B3B;
+}
+
+.emotion-5:disabled {
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          aria-current="page"
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            Menu item
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-5"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            Menu item
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
 exports[`Menu renders vertically with menu dividers 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -4422,6 +4820,8 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4755,6 +5155,8 @@ exports[`Menu renders vertically with menu group 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5019,6 +5421,8 @@ exports[`Menu renders vertically with menu items 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5217,6 +5621,376 @@ exports[`Menu renders vertically with menu items 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Menu renders vertically with selected menu items 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.emotion-0>ul {
+  box-sizing: border-box;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.emotion-0 li:last-of-type {
+  margin-bottom: 0;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #3358CC;
+  border-width: 0 2px 0 0;
+  color: #3358CC;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-2 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-2 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+}
+
+.emotion-2:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2 svg {
+  fill: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-2:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-3 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-3::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-3::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-5 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 2px 0 0;
+  color: #6A6A6A;
+  cursor: pointer;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.emotion-5 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-5 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-5:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #3358CC;
+}
+
+.emotion-5:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) {
+  background-color: #D5E0FC;
+  color: #3358CC;
+}
+
+.emotion-5:active:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) {
+  background-color: transparent;
+  border-color: #3358CC;
+  color: #3358CC;
+}
+
+.emotion-5:selected:hover:not(:disabled) svg {
+  fill: #3358CC;
+}
+
+.emotion-5:disabled {
+  color: #ABABAB;
+}
+
+.emotion-5:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    class="emotion-0"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          aria-current="page"
+          class="emotion-2"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            Menu item
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item emotion-1"
+      >
+        <a
+          class="emotion-5"
+          data-testid="buttonLink"
+          href="http://"
+        >
+          <span
+            class="emotion-3"
+          >
+            Menu item
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
 exports[`Menu renders with default props 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -5268,6 +6042,8 @@ exports[`Menu renders with default props 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5518,6 +6294,8 @@ exports[`Menu renders with logical prop overrides 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6044,6 +6822,8 @@ exports[`MenuGroup renders with overrides 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6361,6 +7141,8 @@ exports[`MenuGroup renders with title as a component 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6704,6 +7486,8 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7018,6 +7802,8 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7285,6 +8071,8 @@ exports[`MenuItem renders in large size 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7488,6 +8276,8 @@ exports[`MenuItem renders in medium size 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7691,6 +8481,8 @@ exports[`MenuItem renders in small size 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7894,6 +8686,8 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8098,6 +8892,8 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8361,6 +9157,8 @@ exports[`MenuItem renders with default props 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8564,6 +9362,8 @@ exports[`MenuItem renders with icon 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8808,6 +9608,8 @@ exports[`MenuItem renders with overrides 1`] = `
   padding: 12px;
   min-width: 10px;
   min-height: 11px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8961,6 +9763,8 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9110,131 +9914,6 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
   width: 100%;
 }
 
-.emotion-7 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0;
-  min-width: 80px;
-  min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #6A6A6A;
-  cursor: pointer;
-  width: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.emotion-7 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-7 svg {
-  fill: #6A6A6A;
-}
-
-.emotion-7:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-7:active:not(:disabled) {
-  border-color: #254CAC;
-  color: #111111;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #111111;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-7:disabled {
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
 .emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
@@ -9299,7 +9978,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9314,7 +9993,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9329,7 +10008,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9344,7 +10023,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -9413,6 +10092,8 @@ exports[`MenuSub render nested submenus 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9559,131 +10240,6 @@ exports[`MenuSub render nested submenus 1`] = `
   width: 100%;
 }
 
-.emotion-7 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0;
-  min-width: 80px;
-  min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #6A6A6A;
-  cursor: pointer;
-  width: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.emotion-7 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-7 svg {
-  fill: #6A6A6A;
-}
-
-.emotion-7:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-7:active:not(:disabled) {
-  border-color: #254CAC;
-  color: #111111;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #111111;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-7:disabled {
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
 .emotion-13 {
   margin: 0;
   font-family: "Poppins",sans-serif;
@@ -9749,7 +10305,7 @@ exports[`MenuSub render nested submenus 1`] = `
           >
             <button
               aria-expanded="false"
-              class="emotion-7"
+              class="emotion-2"
               data-testid="menu-sub-button"
               type="button"
             >
@@ -9777,7 +10333,7 @@ exports[`MenuSub render nested submenus 1`] = `
                 class="nk-menu-item emotion-1"
               >
                 <a
-                  class="emotion-7"
+                  class="emotion-2"
                   data-testid="buttonLink"
                   href="http://"
                 >
@@ -9792,7 +10348,7 @@ exports[`MenuSub render nested submenus 1`] = `
                 class="nk-menu-item emotion-1"
               >
                 <a
-                  class="emotion-7"
+                  class="emotion-2"
                   data-testid="buttonLink"
                   href="http://"
                 >
@@ -9807,7 +10363,7 @@ exports[`MenuSub render nested submenus 1`] = `
                 class="nk-menu-item emotion-1"
               >
                 <a
-                  class="emotion-7"
+                  class="emotion-2"
                   data-testid="buttonLink"
                   href="http://"
                 >
@@ -9822,7 +10378,7 @@ exports[`MenuSub render nested submenus 1`] = `
                 class="nk-menu-item emotion-1"
               >
                 <a
-                  class="emotion-7"
+                  class="emotion-2"
                   data-testid="buttonLink"
                   href="http://"
                 >
@@ -9893,6 +10449,8 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10042,131 +10600,6 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
   width: 100%;
 }
 
-.emotion-7 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0;
-  min-width: 80px;
-  min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #6A6A6A;
-  cursor: pointer;
-  width: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.emotion-7 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-7 svg {
-  fill: #6A6A6A;
-}
-
-.emotion-7:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-7:active:not(:disabled) {
-  border-color: #254CAC;
-  color: #111111;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #111111;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-7:disabled {
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
 .emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
@@ -10231,7 +10664,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10246,7 +10679,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10261,7 +10694,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10276,7 +10709,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10348,6 +10781,8 @@ exports[`MenuSub renders expanded when vertical 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10495,132 +10930,6 @@ exports[`MenuSub renders expanded when vertical 1`] = `
   background-color: #F1F1F1;
 }
 
-.emotion-7 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0;
-  min-width: 80px;
-  min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 2px 0 0;
-  color: #6A6A6A;
-  cursor: pointer;
-  width: 100%;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.emotion-7 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-7 svg {
-  fill: #6A6A6A;
-}
-
-.emotion-7:hover:not(:disabled) {
-  background-color: #ECF1FF;
-  color: #3358CC;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) {
-  background-color: #D5E0FC;
-  color: #3358CC;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  background-color: transparent;
-  border-color: #3358CC;
-  color: #3358CC;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-7:disabled {
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
 .emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
@@ -10685,7 +10994,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10700,7 +11009,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10715,7 +11024,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10730,7 +11039,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -10799,6 +11108,8 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10982,11 +11293,11 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -11266,6 +11577,8 @@ exports[`MenuSub renders with default props 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -11506,6 +11819,8 @@ exports[`MenuSub renders with logical props overrides 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -11656,131 +11971,6 @@ exports[`MenuSub renders with logical props overrides 1`] = `
   width: 100%;
 }
 
-.emotion-7 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 0;
-  min-width: 80px;
-  min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0 0 2px 0;
-  color: #6A6A6A;
-  cursor: pointer;
-  width: 100%;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.emotion-7 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-7 svg {
-  fill: #6A6A6A;
-}
-
-.emotion-7:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-7:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-7:active:not(:disabled) {
-  border-color: #254CAC;
-  color: #111111;
-}
-
-.emotion-7:active:not(:disabled) svg {
-  fill: #111111;
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  border-color: #3358CC;
-  color: #3B3B3B;
-}
-
-.emotion-7:selected:hover:not(:disabled) svg {
-  fill: #3B3B3B;
-}
-
-.emotion-7:disabled {
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
 .emotion-8 {
   margin: 0;
   font-family: "Poppins",sans-serif;
@@ -11845,7 +12035,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -11860,7 +12050,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -11875,7 +12065,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -11890,7 +12080,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
             class="nk-menu-item emotion-1"
           >
             <a
-              class="emotion-7"
+              class="emotion-2"
               data-testid="buttonLink"
               href="http://"
             >
@@ -11959,6 +12149,8 @@ exports[`MenuSub renders with overrides 1`] = `
   padding: 12px;
   min-width: 10px;
   min-height: 11px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -12074,11 +12266,11 @@ exports[`MenuSub renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -12358,6 +12550,8 @@ exports[`MenuSub renders with title 1`] = `
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -12546,11 +12740,11 @@ exports[`MenuSub renders with title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -12812,6 +13006,8 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -13000,11 +13196,11 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -13128,6 +13324,8 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -13266,11 +13464,11 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -13391,11 +13589,11 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -13516,11 +13714,11 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -13845,6 +14043,8 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -14031,11 +14231,11 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -14160,6 +14360,8 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -14296,11 +14498,11 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -14422,11 +14624,11 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -14548,11 +14750,11 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
+  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
-  padding-block: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

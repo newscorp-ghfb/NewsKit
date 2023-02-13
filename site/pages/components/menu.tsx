@@ -819,12 +819,27 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               default: 'space020',
               description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
             },
-
             {
-              attribute: 'spaceInset',
+              attribute: 'paddingInline',
               type: 'MQ<string>',
-              default: 'spaceInsetSquish030',
-              description: `Overrides the spaceInset of the Menu Item`,
+              default: [
+                'small = space040',
+                'medium = space040',
+                'large = space050',
+              ],
+              description:
+                'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingBlock',
+              type: 'MQ<string>',
+              default: [
+                'small = space020',
+                'medium = space020',
+                'large = space030',
+              ],
+              description:
+                'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
             },
           ],
         },
@@ -936,10 +951,26 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
             },
             {
-              attribute: 'spaceInset',
+              attribute: 'paddingInline',
               type: 'MQ<string>',
-              default: 'space000',
-              description: `Overrides the spaceInset of the Menu Item`,
+              default: [
+                'small = space040',
+                'medium = space040',
+                'large = space050',
+              ],
+              description:
+                'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingBlock',
+              type: 'MQ<string>',
+              default: [
+                'small = space020',
+                'medium = space020',
+                'large = space030',
+              ],
+              description:
+                'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'indicatorIcon',
