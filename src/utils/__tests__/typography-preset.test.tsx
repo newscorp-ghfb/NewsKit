@@ -307,4 +307,39 @@ describe('TypographyPreset', () => {
       "No default fontMetrics found for 'Font Family Name'.",
     );
   });
+
+  test('returns typographyPreset without text crop CSS and logs warning when cropConfig passed', () => {
+    jest.spyOn(console, 'warn').mockImplementation();
+    const typographyPreset = getTypographyPresetFromTheme(
+      'editorialParagraph030',
+      undefined,
+      {withCrop: true},
+    )({
+      theme: ({
+        fonts: {
+          fontWeight020: 500,
+          fontFamily010: {
+            fontFamily: 'Font Family Name',
+            cropConfig: {},
+          },
+        },
+        typographyPresets: {
+          editorialParagraph030: {
+            fontFamily: 'Font Family Name',
+            fontWeight: 500,
+            fontSize: 12,
+          },
+        },
+      } as unknown) as Theme,
+    });
+    expect(typographyPreset).toEqual({
+      fontFamily: 'Font Family Name',
+      fontWeight: 500,
+      fontSize: 12,
+    });
+    // eslint-disable-next-line no-console
+    expect(console.warn).toHaveBeenCalledWith(
+      'cropConfig and cropAdjustments are no longer supported; please use fontMetrics instead',
+    );
+  });
 });
