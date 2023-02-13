@@ -5,7 +5,10 @@ import {StorybookHeading} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const listData = [`alpha`, `bravo`, `charlie`, `delta`, `echo`, `foxtrot`];
+const sentence =
+  'A paragraph is a short part of a text, consisting of at least one sentence and beginning on a new line. It usually deals with a single event and is indicated by a new line, indentation or numbering.';
+const paragraph = `${sentence} ${sentence} ${sentence}`;
+const listData = [`alpha`, `bravo`, `charlie`, `delta`, paragraph, `foxtrot`];
 
 const orderedListCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-ordered-list',

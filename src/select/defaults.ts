@@ -3,7 +3,7 @@ export default {
     small: {
       button: {
         stylePreset: 'inputField',
-        minHeight: 'sizing060',
+        minHeight: 'sizing070',
         width: '100%',
         spaceInset: 'spaceInset020',
         spaceStack: 'space020',
@@ -44,10 +44,10 @@ export default {
         stylePreset: 'inputField',
         minHeight: 'sizing080',
         width: '100%',
-        spaceInset: 'spaceInset020',
+        spaceInset: 'spaceInset030',
         spaceStack: 'space020',
         spaceInline: 'space020',
-        typographyPreset: 'utilityBody020',
+        typographyPreset: 'utilityBody030',
         // @deprecated This property is deprecated and will be removed in the next major release. Use `indicatorIcon.size` instead.
         iconSize: 'iconSize020',
         indicatorIcon: {
@@ -83,7 +83,7 @@ export default {
         stylePreset: 'inputField',
         minHeight: 'sizing090',
         width: '100%',
-        spaceInset: 'spaceInset030',
+        spaceInset: 'spaceInset040',
         spaceStack: 'space020',
         spaceInline: 'space020',
         typographyPreset: 'utilityBody030',
@@ -131,9 +131,9 @@ export default {
       },
     },
     medium: {
-      minHeight: 'sizing080',
+      minHeight: 'sizing070',
       spaceInline: 'space020',
-      spaceInset: 'spaceInset020',
+      spaceInset: 'spaceInsetSquish020',
       stylePreset: 'selectOptionItem',
       typographyPreset: 'utilityBody020',
       icon: {
@@ -142,9 +142,9 @@ export default {
       },
     },
     large: {
-      minHeight: 'sizing090',
+      minHeight: 'sizing080',
       spaceInline: 'space020',
-      spaceInset: 'spaceInsetStretch030',
+      spaceInset: 'spaceInsetSquish030',
       stylePreset: 'selectOptionItem',
       typographyPreset: 'utilityBody030',
       icon: {

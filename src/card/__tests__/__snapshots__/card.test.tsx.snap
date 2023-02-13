@@ -4513,7 +4513,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -5025,7 +5025,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-heading {
@@ -5412,7 +5412,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
@@ -5538,7 +5538,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -5654,7 +5654,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
@@ -5780,7 +5780,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -5890,7 +5890,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -6035,7 +6035,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {

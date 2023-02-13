@@ -2,7 +2,7 @@ export default {
   slider: {
     track: {
       stylePreset: 'sliderTrack',
-      size: 'sizing030',
+      size: 'sizing020',
     },
     indicator: {
       stylePreset: 'sliderIndicator',
