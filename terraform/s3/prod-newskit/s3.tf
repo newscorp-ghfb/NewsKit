@@ -1,5 +1,9 @@
 resource "aws_s3_bucket" "s3_docs" {
-  count = "${var.environment != "" ? 1 : 0}"
+  condition {
+	test     = "ForAnyValue:StringEquals"
+	variable = "var.environment"
+	values   = ["prod"]
+  }
   bucket = var.docs_bucket
   acl = "public-read"
   tags = local.tags
@@ -33,7 +37,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy" {
 				"s3:GetObject"
 			],
 			"Resource": [
-				"arn:aws:s3:::${aws_s3_bucket.s3_docs[count.index].id}/*"
+				"arn:aws:s3:::${aws_s3_bucket.s3_docsassume.id}/*"
 			]
 		},
 		{
@@ -46,7 +50,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy" {
 				"s3:PutObject"
 			],
 			"Resource": [
-				"arn:aws:s3:::${aws_s3_bucket.s3_docs[count.index].id}/*"
+				"arn:aws:s3:::${aws_s3_bucket.s3_docsassume.id}/*"
 			]
 		}
 	]
@@ -55,7 +59,11 @@ POLICY
 }
 
 resource "aws_s3_bucket" "s3_docs2" {
-  count = "${var.environment2 != "" ? 1 : 0}"
+  condition {
+	test     = "ForAnyValue:StringEquals"
+	variable = "var.environment"
+	values   = ["staging"]
+  }
   bucket = var.docs_bucket2
   acl = "public-read"
   tags = local.tags2
@@ -89,7 +97,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy2" {
 				"s3:GetObject"
 			],
 			"Resource": [
-				"arn:aws:s3:::${aws_s3_bucket.s3_docs2[count.index].id}/*"
+				"arn:aws:s3:::${aws_s3_bucket.s3_docs2assume.id}/*"
 			]
 		},
 		{
@@ -102,7 +110,7 @@ resource "aws_s3_bucket_policy" "s3_docs_policy2" {
 				"s3:PutObject"
 			],
 			"Resource": [
-				"arn:aws:s3:::${aws_s3_bucket.s3_docs2[count.index].id}/*"
+				"arn:aws:s3:::${aws_s3_bucket.s3_docs2assume.id}/*"
 			]
 		}
 	]

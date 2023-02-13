@@ -9,15 +9,15 @@ output "environment" {
 }
 
 output "docs_bucket_name" {
-  value = "${aws_s3_bucket.s3_docs[count.index].bucket}"
+  value = "${aws_s3_bucket.s3_docs.bucket}"
 }
 
 output "docs_bucket_arn" {
-  value = "${aws_s3_bucket.s3_docs[count.index].arn}"
+  value = "${aws_s3_bucket.s3_docs.arn}"
 }
 
 output "docs_bucket_website_endpoint" {
-  value = "${aws_s3_bucket.s3_docs[count.index].website_endpoint}"
+  value = "${aws_s3_bucket.s3_docs.website_endpoint}"
 }
 
 output "environment2" {
@@ -25,13 +25,13 @@ output "environment2" {
 }
 
 output "docs_bucket2_name" {
-  value = "${aws_s3_bucket.s3_docs2[count.index].bucket}"
+  value = "${aws_s3_bucket.s3_docs2.bucket}"
 }
 
 output "docs_bucket2_arn" {
-  value = "${aws_s3_bucket.s3_docs2[count.index].arn}"
+  value = "${aws_s3_bucket.s3_docs2.arn}"
 }
 
 output "docs_bucket2_website_endpoint" {
-  value = "${aws_s3_bucket.s3_docs2[count.index].website_endpoint}"
+  value = "${aws_s3_bucket.s3_docs2.website_endpoint}"
 }
