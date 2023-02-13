@@ -1578,13 +1578,13 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-17:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-17:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-17:visited:not(:disabled) {

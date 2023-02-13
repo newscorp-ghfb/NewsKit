@@ -487,13 +487,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
@@ -3542,13 +3542,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
@@ -6597,13 +6597,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-19:focus-visible:not(:disabled) {

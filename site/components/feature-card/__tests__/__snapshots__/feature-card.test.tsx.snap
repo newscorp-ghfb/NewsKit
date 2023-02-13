@@ -267,13 +267,13 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-12:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -767,13 +767,13 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-12:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-12:focus-visible:not(:disabled) {

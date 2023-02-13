@@ -395,7 +395,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -499,7 +499,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-37:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3633,7 +3633,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3737,7 +3737,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-35:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7424,7 +7424,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7528,7 +7528,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-37:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10665,7 +10665,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10769,7 +10769,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-35:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
