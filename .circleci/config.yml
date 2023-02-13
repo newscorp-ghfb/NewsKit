@@ -826,6 +826,9 @@ jobs:
               echo "Error checking PR"
               exit 1
             fi
+      - run:
+          name: 'Confirm partial build'
+          command: echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
       - run_test_visual_comps_percy
       - slack/notify:
           <<: *slack_notify
@@ -855,6 +858,9 @@ jobs:
               echo "Error checking PR"
               exit 1
             fi
+      - run:
+          name: 'Confirm partial build'
+          command: echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
       - run_test_visual_docs_percy
       - slack/notify:
           <<: *slack_notify
