@@ -74,13 +74,16 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   max-width: 196px;
   min-height: 48px;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: #F0F1F3;
   border-style: solid;
-  border-color: #85939C;
+  border-color: transparent;
   border-width: 1px;
   border-radius: 8px;
   color: #2E3F54;
   text-overflow: ellipsis;
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
   margin-block: 0px;
 }
 
@@ -88,75 +91,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   fill: #2E3F54;
 }
 
-.emotion-3:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus:not(:disabled) {
+    .emotion-3 {
       outline-style: auto;
     }
   }
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #F0F1F3;
-}
-
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F0F1F3;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:valid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-3:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:invalid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F0F1F3;
 }
 
 .emotion-4 {
@@ -197,7 +137,1396 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  color: #2E3F54;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-7 * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-8 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-10 {
+  all: unset;
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-12 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E3F54;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12.emotion-12 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-15 {
+  position: relative;
+  display: inline-block;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  block-size: 32px;
+  inline-size: 60px;
+  margin-right: 12px;
+}
+
+.emotion-15 * {
+  box-sizing: border-box;
+}
+
+.emotion-16 {
+  position: absolute;
+  top: 50%;
+  left: calc(100% - (24px / 2) - 4px);
+  background-color: #3358CC;
+  border-radius: 50%;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
+}
+
+.emotion-16:disabled {
+  opacity: 0;
+}
+
+.emotion-16:hover:active:not(:disabled) {
+  opacity: 0.4;
+}
+
+.emotion-16:valid:hover:not(:disabled) {
+  background-color: #00601A;
+  opacity: 0.2;
+}
+
+.emotion-16:valid:hover:active:not(:disabled) {
+  background-color: #00601A;
+  opacity: 0.4;
+}
+
+.emotion-16:invalid:hover:not(:disabled) {
+  background-color: #A90000;
+  opacity: 0.2;
+}
+
+.emotion-16:invalid:hover:active:not(:disabled) {
+  background-color: #A90000;
+  opacity: 0.4;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-16 {
+    transition-property: inset,opacity;
+    transition-duration: 200ms,200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-16 {
+    transition-property: inset,opacity;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-17 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3358CC;
+  border-radius: 20rem;
+  padding-inline: 4px;
+}
+
+.emotion-17:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-17:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-18 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.emotion-19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.emotion-19 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-19:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-19 svg {
+  height: 100%;
+  width: 100%;
+  max-width: 24px;
+  max-height: 32px;
+}
+
+.emotion-20 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #2E3F54;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-20 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-20 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.emotion-22 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-22:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-22 svg {
+  height: 100%;
+  width: 100%;
+  max-width: 24px;
+  max-height: 32px;
+}
+
+.emotion-25 {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  left: calc(100% - 24px);
+  padding-inline: 4px;
+  padding-block: 4px;
+  position: absolute;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+}
+
+.emotion-25 svg {
+  fill: #09111C;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-25 {
+    transition-property: inset;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-25 {
+    transition-property: inset;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+}
+
+.emotion-26 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.emotion-27 {
+  color: #2E3F54;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-27:disabled {
+  color: #C0C7CC;
+}
+
+.emotion-27::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-27::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-28 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@media screen {
+  .emotion-28 {
+    grid-template-rows: 48px;
+  }
+}
+
+.emotion-29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #85939C;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #2E3F54;
+  text-overflow: ellipsis;
+}
+
+.emotion-29 svg {
+  fill: #2E3F54;
+}
+
+.emotion-29:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F0F1F3;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-29:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-29:hover:not(:disabled) {
+  background-color: #F0F1F3;
+}
+
+.emotion-29:valid:hover:not(:disabled) {
+  border-color: #007B22;
+  background-color: #F0F1F3;
+}
+
+.emotion-29:valid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F0F1F3;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-29:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-29:disabled {
+  border-color: #DEE2E5;
+  color: #C0C7CC;
+}
+
+.emotion-29:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-29:invalid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F0F1F3;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-29:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-29:invalid:hover:not(:disabled) {
+  border-color: #D60000;
+  background-color: #F0F1F3;
+}
+
+.emotion-32 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: #5A6A79;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-39 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.emotion-39 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-39 svg {
+  fill: #3358CC;
+}
+
+.emotion-39:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-39:active:not(:disabled) {
+  background-color: #D5E0FC;
+}
+
+.emotion-39:disabled {
+  color: #C0C7CC;
+}
+
+.emotion-39:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-39:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-39:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-39 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-39 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-40 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-40::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-40::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-41 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  min-width: 80px;
+  min-height: 48px;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 48px;
+  min-width: 80px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: #3358CC;
+  border-radius: 8px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.emotion-41 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-41 svg {
+  fill: #FFFFFF;
+}
+
+.emotion-41:hover:not(:disabled) {
+  background-color: #254CAC;
+}
+
+.emotion-41:active:not(:disabled) {
+  background-color: #14328D;
+}
+
+.emotion-41:disabled {
+  background-color: #DEE2E5;
+  color: #C0C7CC;
+}
+
+.emotion-41:disabled svg {
+  fill: #C0C7CC;
+}
+
+.emotion-41:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-41:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-41 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-41 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-43 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emotion-44 {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.emotion-44::-webkit-scrollbar {
+  display: none;
+}
+
+.emotion-44 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.emotion-45 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-auto-rows: 1fr;
+  max-height: 80vh;
+  margin-block: 10vh;
+}
+
+.emotion-46 {
+  scroll-snap-align: center;
+}
+
+.emotion-47 {
+  padding: 0 10vw;
+}
+
+.emotion-47 svg {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.emotion-48 {
+  margin: 0;
+  color: #2E3F54;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-48 svg {
+  fill: #2E3F54;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <span
+            class="emotion-4"
+          >
+            Patterns Theme
+          </span>
+          <button
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            class="emotion-5"
+            data-testid="select-theme-element"
+            id="downshift-27-toggle-button"
+            type="button"
+            value="Patterns Theme"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                class="emotion-7"
+                value="Patterns Theme"
+              >
+                <span>
+                  Patterns Theme
+                </span>
+              </div>
+            </div>
+          </button>
+          <div
+            class="emotion-8"
+          >
+            <div
+              class="emotion-9"
+            >
+              <button
+                aria-hidden="true"
+                class="emotion-10"
+                data-testid="select-chevron-button"
+                tabindex="-1"
+                type="button"
+              >
+                <div
+                  class="emotion-11"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-12 emotion-13"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <label
+          class="emotion-14"
+        >
+          <div
+            class="emotion-15"
+            role="presentation"
+          >
+            <div
+              class="emotion-16"
+              data-testid="checkbox-feedback"
+            />
+            <div
+              class="emotion-17"
+            >
+              <div
+                class="emotion-18"
+              >
+                <div
+                  class="emotion-19"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-20 emotion-13"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      fill="none"
+                      height="24"
+                      width="24"
+                    />
+                    <path
+                      d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-22"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-20 emotion-13"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      fill="none"
+                      height="24"
+                      width="24"
+                    />
+                    <path
+                      d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="emotion-25"
+                />
+              </div>
+              <input
+                checked=""
+                class="emotion-26"
+                data-testid="checkbox-input"
+                role="switch"
+                tabindex="-1"
+                type="checkbox"
+              />
+            </div>
+          </div>
+          <span
+            class="emotion-27"
+          >
+            Toggle Theme
+          </span>
+        </label>
+      </div>
+      <div
+        class="emotion-28"
+      >
+        <div
+          class="emotion-29"
+        >
+          <span
+            class="emotion-4"
+          />
+          <button
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            class="emotion-5"
+            data-testid="select-button"
+            id="downshift-33-toggle-button"
+            type="button"
+            value="0"
+          >
+            <div
+              class="emotion-32"
+            >
+              Select Option
+            </div>
+          </button>
+          <div
+            class="emotion-8"
+          >
+            <div
+              class="emotion-9"
+            >
+              <button
+                aria-hidden="true"
+                class="emotion-10"
+                data-testid="select-chevron-button"
+                tabindex="-1"
+                type="button"
+              >
+                <div
+                  class="emotion-11"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-12 emotion-13"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="emotion-39"
+          data-testid="single-svg-button"
+          type="button"
+        >
+          <span
+            class="emotion-40"
+          >
+            Download .svg
+          </span>
+        </button>
+        <button
+          class="emotion-41"
+          data-testid="button"
+          type="button"
+        >
+          <span
+            class="emotion-40"
+          >
+            Download all .zip
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      class="emotion-43"
+    >
+      <div
+        class="emotion-44"
+        data-testid="scroll-container"
+        id="scroll"
+        tabindex="0"
+      >
+        <div
+          class="emotion-45"
+        >
+          <div
+            class="emotion-46"
+          >
+            <div
+              class="emotion-47"
+            >
+              <p
+                class="emotion-48"
+              >
+                SvgName
+              </p>
+              <div>
+                <svg
+                  fill="none"
+                  height="838"
+                  viewBox="0 0 1490 838"
+                  width="1490"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  
+
+                  <g
+                    clip-path="url(#clip0_3001_77628)"
+                  >
+                    
+
+                    <rect
+                      fill="#F0F1F3"
+                      height="838"
+                      width="1490"
+                    />
+                    
+
+                    <path
+                      d="M685.587 299.513C689.197 307.576 692.723 315.549 695.65 323.674L663.363 323.671C661.691 319.697 660.197 315.723 658.405 311.812L658.139 311.219C652.102 297.754 645.877 283.87 642.905 268.713L641.233 261.187C636.811 242.343 633.556 225.734 638.426 213.64C647.439 191.171 671.949 189.274 686.62 188.138L686.66 188.135L692.879 187.567C711.217 185.537 732.837 181.953 753.686 170.901C807.711 142.291 814.464 47.8493 813 -4H842.5C844.292 59.264 833.695 162.337 767.69 197.28C742.362 210.686 717.337 214.899 696.159 217.259L688.993 217.884C677.222 218.779 668.081 219.858 666.113 224.753C664.506 229.672 668.698 247.544 670.287 254.319L670.295 254.352C671.04 257.607 671.727 260.566 672.175 262.925C674.528 274.899 679.878 286.807 685.536 299.4L685.587 299.513Z"
+                      fill="#5EB8C0"
+                    />
+                    
+
+                    <rect
+                      fill="#C7E7EA"
+                      height="311"
+                      rx="37"
+                      width="729"
+                      x="337"
+                      y="318"
+                    />
+                    
+
+                    <rect
+                      fill="#06808e"
+                      height="311"
+                      rx="20"
+                      width="729"
+                      x="362"
+                      y="293"
+                    />
+                    
+
+                    <path
+                      d="M840.06 365H821.474C817.056 365 813.474 368.582 813.474 373V391.597C813.474 396.015 817.056 399.597 821.474 399.597H840.06C844.478 399.597 848.06 396.015 848.06 391.597V373C848.06 368.582 844.478 365 840.06 365Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M770.881 365H752.295C747.877 365 744.295 368.582 744.295 373V391.597C744.295 396.015 747.877 399.597 752.295 399.597H770.881C775.299 399.597 778.881 396.015 778.881 391.597V373C778.881 368.582 775.299 365 770.881 365Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M813.474 460.798V442.202C813.474 437.783 809.892 434.202 805.474 434.202H786.888C782.47 434.202 778.888 437.783 778.888 442.202V460.798C778.888 465.217 782.47 468.798 786.888 468.798H805.474C809.892 468.798 813.474 465.217 813.474 460.798Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M744.295 460.798V442.202C744.295 437.783 740.713 434.202 736.295 434.202H717.71C713.291 434.202 709.71 437.783 709.71 442.202V460.798C709.71 465.217 713.291 468.798 717.71 468.798H736.295C740.713 468.798 744.295 465.217 744.295 460.798Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M701.702 365H683.116C678.698 365 675.116 368.582 675.116 373V391.597C675.116 396.015 678.698 399.597 683.116 399.597H701.702C706.12 399.597 709.702 396.015 709.702 391.597V373C709.702 368.582 706.12 365 701.702 365Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M563.35 365H544.765C540.346 365 536.765 368.582 536.765 373V391.597C536.765 396.015 540.346 399.597 544.765 399.597H563.35C567.768 399.597 571.35 396.015 571.35 391.597V373C571.35 368.582 567.768 365 563.35 365Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M494.179 365H441C436.582 365 433 368.582 433 373V391.597C433 396.015 436.582 399.597 441 399.597H494.179C498.597 399.597 502.179 396.015 502.179 391.597V373C502.179 368.582 498.597 365 494.179 365Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M528.765 434.202H441C436.582 434.202 433 437.783 433 442.202V460.798C433 465.217 436.582 468.798 441 468.798H528.765C533.183 468.798 536.765 465.217 536.765 460.798V442.202C536.765 437.783 533.183 434.202 528.765 434.202Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M458.216 538H476.801C481.219 538 484.801 534.418 484.801 530V511.403C484.801 506.985 481.219 503.403 476.801 503.403H458.216C453.797 503.403 450.216 506.985 450.216 511.403V530C450.216 534.418 453.797 538 458.216 538Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M527.395 538H545.98C550.398 538 553.98 534.418 553.98 530V511.403C553.98 506.985 550.398 503.403 545.98 503.403H527.395C522.976 503.403 519.395 506.985 519.395 511.403V530C519.395 534.418 522.976 538 527.395 538Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M579.352 468.798H597.942C602.361 468.798 605.943 465.216 605.942 460.797L605.939 442.2C605.938 437.782 602.356 434.202 597.939 434.202H579.352C574.933 434.202 571.352 437.783 571.352 442.202V460.798C571.352 465.217 574.933 468.798 579.352 468.798Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M632.529 365H613.943C609.525 365 605.943 368.582 605.943 373V391.597C605.943 396.015 609.525 399.597 613.943 399.597H632.529C636.947 399.597 640.529 396.015 640.529 391.597V373C640.529 368.582 636.947 365 632.529 365Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M675.116 460.798V442.202C675.116 437.783 671.534 434.202 667.116 434.202H648.531C644.112 434.202 640.531 437.783 640.531 442.202V460.798C640.531 465.217 644.112 468.798 648.531 468.798H667.116C671.534 468.798 675.116 465.217 675.116 460.798Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M596.413 538H857.277C861.695 538 865.277 534.418 865.277 530V511.403C865.277 506.985 861.695 503.403 857.277 503.403H596.413C591.995 503.403 588.413 506.985 588.413 511.403V530C588.413 534.418 591.995 538 596.413 538Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M856.063 468.798H874.648C879.067 468.798 882.648 465.217 882.648 460.798V442.202C882.648 437.783 879.067 434.202 874.648 434.202H856.063C851.644 434.202 848.063 437.783 848.063 442.202V460.798C848.063 465.217 851.644 468.798 856.063 468.798Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M909.234 365H890.648C886.23 365 882.648 368.582 882.648 373V391.597C882.648 396.015 886.23 399.597 890.648 399.597H909.234C913.652 399.597 917.234 396.015 917.234 391.597V373C917.234 368.582 913.652 365 909.234 365Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M907.87 538H926.456C930.874 538 934.456 534.418 934.456 530V511.403C934.456 506.985 930.874 503.403 926.456 503.403H907.87C903.452 503.403 899.87 506.985 899.87 511.403V530C899.87 534.418 903.452 538 907.87 538Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M977.043 538H995.628C1000.05 538 1003.63 534.418 1003.63 530V511.403C1003.63 506.985 1000.05 503.403 995.628 503.403H977.043C972.625 503.403 969.043 506.985 969.043 511.403V530C969.043 534.418 972.625 538 977.043 538Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M925.235 468.798H1013C1017.42 468.798 1021 465.217 1021 460.798V442.202C1021 437.783 1017.42 434.202 1013 434.202H925.235C920.817 434.202 917.235 437.783 917.235 442.202V460.798C917.235 465.217 920.817 468.798 925.235 468.798Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                    <path
+                      d="M959.821 399.597H1013C1017.42 399.597 1021 396.015 1021 391.597V373C1021 368.582 1017.42 365 1013 365H959.821C955.403 365 951.821 368.582 951.821 373V391.597C951.821 396.015 955.403 399.597 959.821 399.597Z"
+                      fill="#E6F4F6"
+                    />
+                    
+
+                  </g>
+                  
+
+                  <defs>
+                    
+
+                    <clippath
+                      id="clip0_3001_77628"
+                    >
+                      
+
+                      <rect
+                        fill="white"
+                        height="838"
+                        width="1490"
+                      />
+                      
+
+                    </clippath>
+                    
+
+                  </defs>
+                  
+
+                </svg>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SvgPreviewer should render correctly when not receiving any data 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 100%;
+  padding-inline: 10%;
+  padding-block: 8px;
+  position: fixed;
+  top: var(--headerSize);
+  margin-top: -12px;
+  background: #F0F1F3;
+  border-bottom-color: #DEE2E5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  z-index: 1000;
+}
+
+@media screen {
+  .emotion-1 {
+    grid-template-rows: 48px;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen {
+  .emotion-2 {
+    grid-template-rows: 48px;
+  }
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 196px;
+  min-height: 48px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #DEE2E5;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #C0C7CC;
+  text-overflow: ellipsis;
+  margin-block: 0px;
+}
+
+.emotion-3 svg {
+  fill: #C0C7CC;
+}
+
+.emotion-4 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  margin: -1px;
+}
+
+.emotion-5 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: not-allowed;
+  padding: 12px;
+}
+
+.emotion-6 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: inherit;
   font-family: "DM Sans",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -227,7 +1556,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   display: flex;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .emotion-9 {
@@ -575,107 +1904,6 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-28 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 48px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #85939C;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E3F54;
-  text-overflow: ellipsis;
-}
-
-.emotion-28 svg {
-  fill: #2E3F54;
-}
-
-.emotion-28:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-28:hover:not(:disabled) {
-  background-color: #F0F1F3;
-}
-
-.emotion-28:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F0F1F3;
-}
-
-.emotion-28:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:valid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-28:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
-}
-
-.emotion-28:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-28:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:invalid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-28:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F0F1F3;
-}
-
-.emotion-38 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -716,32 +1944,32 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   margin-right: 20px;
 }
 
-.emotion-38 svg {
+.emotion-28 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-38 svg {
+.emotion-28 svg {
   fill: #3358CC;
 }
 
-.emotion-38:hover:not(:disabled) {
+.emotion-28:hover:not(:disabled) {
   background-color: #ECF1FF;
 }
 
-.emotion-38:active:not(:disabled) {
+.emotion-28:active:not(:disabled) {
   background-color: #D5E0FC;
 }
 
-.emotion-38:disabled {
+.emotion-28:disabled {
   color: #C0C7CC;
 }
 
-.emotion-38:disabled svg {
+.emotion-28:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-38:focus-visible:not(:disabled) {
+.emotion-28:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -750,14 +1978,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-38:focus-visible:not(:disabled) {
+    .emotion-28:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-38 {
+  .emotion-28 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -765,14 +1993,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-38 {
+  .emotion-28 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-39 {
+.emotion-29 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -783,19 +2011,19 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   display: inline-block;
 }
 
-.emotion-39::before {
+.emotion-29::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-39::after {
+.emotion-29::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-40 {
+.emotion-30 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -835,33 +2063,33 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   cursor: pointer;
 }
 
-.emotion-40 svg {
+.emotion-30 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-40 svg {
+.emotion-30 svg {
   fill: #FFFFFF;
 }
 
-.emotion-40:hover:not(:disabled) {
+.emotion-30:hover:not(:disabled) {
   background-color: #254CAC;
 }
 
-.emotion-40:active:not(:disabled) {
+.emotion-30:active:not(:disabled) {
   background-color: #14328D;
 }
 
-.emotion-40:disabled {
+.emotion-30:disabled {
   background-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-40:disabled svg {
+.emotion-30:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-40:focus-visible:not(:disabled) {
+.emotion-30:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -870,14 +2098,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-40:focus-visible:not(:disabled) {
+    .emotion-30:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-40 {
+  .emotion-30 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -885,73 +2113,11 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-40 {
+  .emotion-30 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-42 {
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
-.emotion-43 {
-  box-sizing: border-box;
-  height: 100%;
-  overflow-x: auto;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-.emotion-43::-webkit-scrollbar {
-  display: none;
-}
-
-.emotion-43 {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.emotion-44 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-auto-flow: column dense;
-  grid-auto-rows: 1fr;
-  max-height: 80vh;
-  margin-block: 10vh;
-}
-
-.emotion-45 {
-  scroll-snap-align: center;
-}
-
-.emotion-46 {
-  padding: 0 10vw;
-}
-
-.emotion-46 svg {
-  max-width: 80vw;
-  max-height: 80vh;
-}
-
-.emotion-47 {
-  margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-47 svg {
-  fill: #2E3F54;
 }
 
 <div
@@ -974,12 +2140,14 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-27-toggle-button"
+            disabled=""
+            id="downshift-0-toggle-button"
             type="button"
-            value="Patterns Theme"
+            value="Docs Theme"
           >
             <div
               class="emotion-6"
+              disabled=""
             >
               Select Option
             </div>
@@ -994,6 +2162,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                 aria-hidden="true"
                 class="emotion-9"
                 data-testid="select-chevron-button"
+                disabled=""
                 tabindex="-1"
                 type="button"
               >
@@ -1104,2341 +2273,32 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
       <div
         class="emotion-27"
       >
-        <div
-          class="emotion-28"
-        >
-          <span
-            class="emotion-4"
-          />
-          <button
-            aria-expanded="false"
-            aria-haspopup="listbox"
-            class="emotion-5"
-            data-testid="select-button"
-            id="downshift-33-toggle-button"
-            type="button"
-            value="0"
-          >
-            <div
-              class="emotion-6"
-            >
-              Select Option
-            </div>
-          </button>
-          <div
-            class="emotion-7"
-          >
-            <div
-              class="emotion-8"
-            >
-              <button
-                aria-hidden="true"
-                class="emotion-9"
-                data-testid="select-chevron-button"
-                tabindex="-1"
-                type="button"
-              >
-                <div
-                  class="emotion-10"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-11 emotion-12"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0V0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-                    />
-                  </svg>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
         <button
-          class="emotion-38"
+          class="emotion-28"
           data-testid="single-svg-button"
           type="button"
         >
           <span
-            class="emotion-39"
+            class="emotion-29"
           >
             Download .svg
           </span>
         </button>
         <button
-          class="emotion-40"
+          class="emotion-30"
           data-testid="button"
           type="button"
         >
           <span
-            class="emotion-39"
+            class="emotion-29"
           >
             Download all .zip
           </span>
         </button>
       </div>
     </div>
-    <div
-      class="emotion-42"
-    >
-      <div
-        class="emotion-43"
-        data-testid="scroll-container"
-        id="scroll"
-        tabindex="0"
-      >
-        <div
-          class="emotion-44"
-        >
-          <div
-            class="emotion-45"
-          >
-            <div
-              class="emotion-46"
-            >
-              <p
-                class="emotion-47"
-              >
-                SvgName
-              </p>
-              <div>
-                <svg
-                  fill="none"
-                  height="838"
-                  viewBox="0 0 1490 838"
-                  width="1490"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  
-
-                  <g
-                    clip-path="url(#clip0_3001_77628)"
-                  >
-                    
-
-                    <rect
-                      fill="#F0F1F3"
-                      height="838"
-                      width="1490"
-                    />
-                    
-
-                    <path
-                      d="M685.587 299.513C689.197 307.576 692.723 315.549 695.65 323.674L663.363 323.671C661.691 319.697 660.197 315.723 658.405 311.812L658.139 311.219C652.102 297.754 645.877 283.87 642.905 268.713L641.233 261.187C636.811 242.343 633.556 225.734 638.426 213.64C647.439 191.171 671.949 189.274 686.62 188.138L686.66 188.135L692.879 187.567C711.217 185.537 732.837 181.953 753.686 170.901C807.711 142.291 814.464 47.8493 813 -4H842.5C844.292 59.264 833.695 162.337 767.69 197.28C742.362 210.686 717.337 214.899 696.159 217.259L688.993 217.884C677.222 218.779 668.081 219.858 666.113 224.753C664.506 229.672 668.698 247.544 670.287 254.319L670.295 254.352C671.04 257.607 671.727 260.566 672.175 262.925C674.528 274.899 679.878 286.807 685.536 299.4L685.587 299.513Z"
-                      fill="#577FFB"
-                    />
-                    
-
-                    <rect
-                      fill="#AEBFFF"
-                      height="311"
-                      rx="37"
-                      width="729"
-                      x="337"
-                      y="318"
-                    />
-                    
-
-                    <rect
-                      fill="#3358CC"
-                      height="311"
-                      rx="20"
-                      width="729"
-                      x="362"
-                      y="293"
-                    />
-                    
-
-                    <path
-                      d="M840.06 365H821.474C817.056 365 813.474 368.582 813.474 373V391.597C813.474 396.015 817.056 399.597 821.474 399.597H840.06C844.478 399.597 848.06 396.015 848.06 391.597V373C848.06 368.582 844.478 365 840.06 365Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M770.881 365H752.295C747.877 365 744.295 368.582 744.295 373V391.597C744.295 396.015 747.877 399.597 752.295 399.597H770.881C775.299 399.597 778.881 396.015 778.881 391.597V373C778.881 368.582 775.299 365 770.881 365Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M813.474 460.798V442.202C813.474 437.783 809.892 434.202 805.474 434.202H786.888C782.47 434.202 778.888 437.783 778.888 442.202V460.798C778.888 465.217 782.47 468.798 786.888 468.798H805.474C809.892 468.798 813.474 465.217 813.474 460.798Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M744.295 460.798V442.202C744.295 437.783 740.713 434.202 736.295 434.202H717.71C713.291 434.202 709.71 437.783 709.71 442.202V460.798C709.71 465.217 713.291 468.798 717.71 468.798H736.295C740.713 468.798 744.295 465.217 744.295 460.798Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M701.702 365H683.116C678.698 365 675.116 368.582 675.116 373V391.597C675.116 396.015 678.698 399.597 683.116 399.597H701.702C706.12 399.597 709.702 396.015 709.702 391.597V373C709.702 368.582 706.12 365 701.702 365Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M563.35 365H544.765C540.346 365 536.765 368.582 536.765 373V391.597C536.765 396.015 540.346 399.597 544.765 399.597H563.35C567.768 399.597 571.35 396.015 571.35 391.597V373C571.35 368.582 567.768 365 563.35 365Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M494.179 365H441C436.582 365 433 368.582 433 373V391.597C433 396.015 436.582 399.597 441 399.597H494.179C498.597 399.597 502.179 396.015 502.179 391.597V373C502.179 368.582 498.597 365 494.179 365Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M528.765 434.202H441C436.582 434.202 433 437.783 433 442.202V460.798C433 465.217 436.582 468.798 441 468.798H528.765C533.183 468.798 536.765 465.217 536.765 460.798V442.202C536.765 437.783 533.183 434.202 528.765 434.202Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M458.216 538H476.801C481.219 538 484.801 534.418 484.801 530V511.403C484.801 506.985 481.219 503.403 476.801 503.403H458.216C453.797 503.403 450.216 506.985 450.216 511.403V530C450.216 534.418 453.797 538 458.216 538Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M527.395 538H545.98C550.398 538 553.98 534.418 553.98 530V511.403C553.98 506.985 550.398 503.403 545.98 503.403H527.395C522.976 503.403 519.395 506.985 519.395 511.403V530C519.395 534.418 522.976 538 527.395 538Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M579.352 468.798H597.942C602.361 468.798 605.943 465.216 605.942 460.797L605.939 442.2C605.938 437.782 602.356 434.202 597.939 434.202H579.352C574.933 434.202 571.352 437.783 571.352 442.202V460.798C571.352 465.217 574.933 468.798 579.352 468.798Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M632.529 365H613.943C609.525 365 605.943 368.582 605.943 373V391.597C605.943 396.015 609.525 399.597 613.943 399.597H632.529C636.947 399.597 640.529 396.015 640.529 391.597V373C640.529 368.582 636.947 365 632.529 365Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M675.116 460.798V442.202C675.116 437.783 671.534 434.202 667.116 434.202H648.531C644.112 434.202 640.531 437.783 640.531 442.202V460.798C640.531 465.217 644.112 468.798 648.531 468.798H667.116C671.534 468.798 675.116 465.217 675.116 460.798Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M596.413 538H857.277C861.695 538 865.277 534.418 865.277 530V511.403C865.277 506.985 861.695 503.403 857.277 503.403H596.413C591.995 503.403 588.413 506.985 588.413 511.403V530C588.413 534.418 591.995 538 596.413 538Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M856.063 468.798H874.648C879.067 468.798 882.648 465.217 882.648 460.798V442.202C882.648 437.783 879.067 434.202 874.648 434.202H856.063C851.644 434.202 848.063 437.783 848.063 442.202V460.798C848.063 465.217 851.644 468.798 856.063 468.798Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M909.234 365H890.648C886.23 365 882.648 368.582 882.648 373V391.597C882.648 396.015 886.23 399.597 890.648 399.597H909.234C913.652 399.597 917.234 396.015 917.234 391.597V373C917.234 368.582 913.652 365 909.234 365Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M907.87 538H926.456C930.874 538 934.456 534.418 934.456 530V511.403C934.456 506.985 930.874 503.403 926.456 503.403H907.87C903.452 503.403 899.87 506.985 899.87 511.403V530C899.87 534.418 903.452 538 907.87 538Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M977.043 538H995.628C1000.05 538 1003.63 534.418 1003.63 530V511.403C1003.63 506.985 1000.05 503.403 995.628 503.403H977.043C972.625 503.403 969.043 506.985 969.043 511.403V530C969.043 534.418 972.625 538 977.043 538Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M925.235 468.798H1013C1017.42 468.798 1021 465.217 1021 460.798V442.202C1021 437.783 1017.42 434.202 1013 434.202H925.235C920.817 434.202 917.235 437.783 917.235 442.202V460.798C917.235 465.217 920.817 468.798 925.235 468.798Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                    <path
-                      d="M959.821 399.597H1013C1017.42 399.597 1021 396.015 1021 391.597V373C1021 368.582 1017.42 365 1013 365H959.821C955.403 365 951.821 368.582 951.821 373V391.597C951.821 396.015 955.403 399.597 959.821 399.597Z"
-                      fill="#ECF1FF"
-                    />
-                    
-
-                  </g>
-                  
-
-                  <defs>
-                    
-
-                    <clippath
-                      id="clip0_3001_77628"
-                    >
-                      
-
-                      <rect
-                        fill="white"
-                        height="838"
-                        width="1490"
-                      />
-                      
-
-                    </clippath>
-                    
-
-                  </defs>
-                  
-
-                </svg>
-                
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </DocumentFragment>
-`;
-
-exports[`SvgPreviewer should render correctly when not receiving any data 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": .emotion-0 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-}
-
-.emotion-1 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-width: 100%;
-  padding-inline: 10%;
-  padding-block: 8px;
-  position: fixed;
-  top: var(--headerSize);
-  margin-top: -12px;
-  background: #F0F1F3;
-  border-bottom-color: #DEE2E5;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  z-index: 1000;
-}
-
-@media screen {
-  .emotion-1 {
-    grid-template-rows: 48px;
-  }
-}
-
-.emotion-2 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media screen {
-  .emotion-2 {
-    grid-template-rows: 48px;
-  }
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  max-width: 196px;
-  min-height: 48px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #85939C;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E3F54;
-  text-overflow: ellipsis;
-  margin-block: 0px;
-}
-
-.emotion-3 svg {
-  fill: #2E3F54;
-}
-
-.emotion-3:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #F0F1F3;
-}
-
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F0F1F3;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:valid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-3:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:invalid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F0F1F3;
-}
-
-.emotion-4 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  margin: -1px;
-}
-
-.emotion-5 {
-  all: unset;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  overflow: hidden;
-  cursor: not-allowed;
-  padding: 12px;
-}
-
-.emotion-6 {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: #5A6A79;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 8px;
-}
-
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  cursor: pointer;
-}
-
-.emotion-9 {
-  all: unset;
-}
-
-.emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-11 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2E3F54;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-11.emotion-11 {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.emotion-14 {
-  position: relative;
-  display: inline-block;
-  -webkit-align-self: start;
-  -ms-flex-item-align: start;
-  align-self: start;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  block-size: 32px;
-  inline-size: 60px;
-  margin-right: 12px;
-}
-
-.emotion-14 * {
-  box-sizing: border-box;
-}
-
-.emotion-15 {
-  position: absolute;
-  top: 50%;
-  left: calc(100% - (24px / 2) - 4px);
-  background-color: #3358CC;
-  border-radius: 50%;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-15:disabled {
-  opacity: 0;
-}
-
-.emotion-15:hover:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.emotion-15:valid:hover:not(:disabled) {
-  background-color: #00601A;
-  opacity: 0.2;
-}
-
-.emotion-15:valid:hover:active:not(:disabled) {
-  background-color: #00601A;
-  opacity: 0.4;
-}
-
-.emotion-15:invalid:hover:not(:disabled) {
-  background-color: #A90000;
-  opacity: 0.2;
-}
-
-.emotion-15:invalid:hover:active:not(:disabled) {
-  background-color: #A90000;
-  opacity: 0.4;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
-    transition-property: inset,opacity;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
-    transition-property: inset,opacity;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-16 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #3358CC;
-  border-radius: 20rem;
-  padding-inline: 4px;
-}
-
-.emotion-16:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  background-color: #3358CC;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-16:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-17 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-}
-
-.emotion-18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-18 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-18:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-18 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 24px;
-  max-height: 32px;
-}
-
-.emotion-19 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2E3F54;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-19 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-19 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-}
-
-.emotion-21 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-21:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-21 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 24px;
-  max-height: 32px;
-}
-
-.emotion-24 {
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  left: calc(100% - 24px);
-  padding-inline: 4px;
-  padding-block: 4px;
-  position: absolute;
-  aspect-ratio: 1/1;
-  display: grid;
-  place-items: center;
-}
-
-.emotion-24 svg {
-  fill: #09111C;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
-    transition-property: inset;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
-    transition-property: inset;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
-  }
-}
-
-.emotion-25 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: inherit;
-}
-
-.emotion-26 {
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-}
-
-.emotion-26:disabled {
-  color: #C0C7CC;
-}
-
-.emotion-26::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-26::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-27 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-@media screen {
-  .emotion-27 {
-    grid-template-rows: 48px;
-  }
-}
-
-.emotion-28 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 12px 16px;
-  min-width: 80px;
-  min-height: 48px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 8px;
-  color: #3358CC;
-  cursor: pointer;
-  margin-right: 20px;
-}
-
-.emotion-28 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-28 svg {
-  fill: #3358CC;
-}
-
-.emotion-28:hover:not(:disabled) {
-  background-color: #ECF1FF;
-}
-
-.emotion-28:active:not(:disabled) {
-  background-color: #D5E0FC;
-}
-
-.emotion-28:disabled {
-  color: #C0C7CC;
-}
-
-.emotion-28:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-28:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-28 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-28 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-29 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-29::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-29::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-30 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 12px 16px;
-  min-width: 80px;
-  min-height: 48px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
-.emotion-30 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-30 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-30:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-30:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-30:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
-}
-
-.emotion-30:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-30:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-30:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-30 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-30 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-32 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #F0F1F3;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<body>
-    <div>
-      <div
-        class="emotion-0"
-      >
-        <div
-          class="emotion-1"
-        >
-          <div
-            class="emotion-2"
-          >
-            <div
-              class="emotion-3"
-            >
-              <span
-                class="emotion-4"
-              />
-              <button
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                class="emotion-5"
-                data-testid="select-theme-element"
-                disabled=""
-                id="downshift-0-toggle-button"
-                type="button"
-                value="Docs Theme"
-              >
-                <div
-                  class="emotion-6"
-                >
-                  Select Option
-                </div>
-              </button>
-              <div
-                class="emotion-7"
-              >
-                <div
-                  class="emotion-8"
-                >
-                  <button
-                    aria-hidden="true"
-                    class="emotion-9"
-                    data-testid="select-chevron-button"
-                    tabindex="-1"
-                    type="button"
-                  >
-                    <div
-                      class="emotion-10"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-11 emotion-12"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0V0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <label
-              class="emotion-13"
-            >
-              <div
-                class="emotion-14"
-                role="presentation"
-              >
-                <div
-                  class="emotion-15"
-                  data-testid="checkbox-feedback"
-                />
-                <div
-                  class="emotion-16"
-                >
-                  <div
-                    class="emotion-17"
-                  >
-                    <div
-                      class="emotion-18"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-19 emotion-12"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          fill="none"
-                          height="24"
-                          width="24"
-                        />
-                        <path
-                          d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      class="emotion-21"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="emotion-19 emotion-12"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          fill="none"
-                          height="24"
-                          width="24"
-                        />
-                        <path
-                          d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      class="emotion-24"
-                    />
-                  </div>
-                  <input
-                    checked=""
-                    class="emotion-25"
-                    data-testid="checkbox-input"
-                    role="switch"
-                    tabindex="-1"
-                    type="checkbox"
-                  />
-                </div>
-              </div>
-              <span
-                class="emotion-26"
-              >
-                Toggle Theme
-              </span>
-            </label>
-          </div>
-          <div
-            class="emotion-27"
-          >
-            <button
-              class="emotion-28"
-              data-testid="single-svg-button"
-              type="button"
-            >
-              <span
-                class="emotion-29"
-              >
-                Download .svg
-              </span>
-            </button>
-            <button
-              class="emotion-30"
-              data-testid="button"
-              type="button"
-            >
-              <span
-                class="emotion-29"
-              >
-                Download all .zip
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="nk-layer-organizer"
-    >
-      <div
-        class="nk-layer"
-      >
-        <div
-          aria-labelledby="downshift-0-label"
-          class="emotion-32"
-          data-testid="select-panel"
-          id="downshift-0-menu"
-          role="listbox"
-          style="top: 0px; left: 0px; position: absolute;"
-          tabindex="-1"
-        />
-      </div>
-    </div>
-  </body>,
-  "container": .emotion-0 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-}
-
-.emotion-1 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-width: 100%;
-  padding-inline: 10%;
-  padding-block: 8px;
-  position: fixed;
-  top: var(--headerSize);
-  margin-top: -12px;
-  background: #F0F1F3;
-  border-bottom-color: #DEE2E5;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  z-index: 1000;
-}
-
-@media screen {
-  .emotion-1 {
-    grid-template-rows: 48px;
-  }
-}
-
-.emotion-2 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media screen {
-  .emotion-2 {
-    grid-template-rows: 48px;
-  }
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  max-width: 196px;
-  min-height: 48px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #85939C;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #2E3F54;
-  text-overflow: ellipsis;
-  margin-block: 0px;
-}
-
-.emotion-3 svg {
-  fill: #2E3F54;
-}
-
-.emotion-3:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #F0F1F3;
-}
-
-.emotion-3:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F0F1F3;
-}
-
-.emotion-3:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:valid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-3:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
-}
-
-.emotion-3:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-3:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F0F1F3;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:invalid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-3:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F0F1F3;
-}
-
-.emotion-4 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  margin: -1px;
-}
-
-.emotion-5 {
-  all: unset;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  overflow: hidden;
-  cursor: not-allowed;
-  padding: 12px;
-}
-
-.emotion-6 {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: #5A6A79;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-7 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 8px;
-}
-
-.emotion-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  cursor: pointer;
-}
-
-.emotion-9 {
-  all: unset;
-}
-
-.emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-11 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2E3F54;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-11.emotion-11 {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.emotion-14 {
-  position: relative;
-  display: inline-block;
-  -webkit-align-self: start;
-  -ms-flex-item-align: start;
-  align-self: start;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  block-size: 32px;
-  inline-size: 60px;
-  margin-right: 12px;
-}
-
-.emotion-14 * {
-  box-sizing: border-box;
-}
-
-.emotion-15 {
-  position: absolute;
-  top: 50%;
-  left: calc(100% - (24px / 2) - 4px);
-  background-color: #3358CC;
-  border-radius: 50%;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-  -webkit-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -moz-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  -ms-transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-  transform: translate3d(calc(48px / -2), calc(48px / -2), 0);
-}
-
-.emotion-15:disabled {
-  opacity: 0;
-}
-
-.emotion-15:hover:active:not(:disabled) {
-  opacity: 0.4;
-}
-
-.emotion-15:valid:hover:not(:disabled) {
-  background-color: #00601A;
-  opacity: 0.2;
-}
-
-.emotion-15:valid:hover:active:not(:disabled) {
-  background-color: #00601A;
-  opacity: 0.4;
-}
-
-.emotion-15:invalid:hover:not(:disabled) {
-  background-color: #A90000;
-  opacity: 0.2;
-}
-
-.emotion-15:invalid:hover:active:not(:disabled) {
-  background-color: #A90000;
-  opacity: 0.4;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-15 {
-    transition-property: inset,opacity;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-15 {
-    transition-property: inset,opacity;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-16 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #3358CC;
-  border-radius: 20rem;
-  padding-inline: 4px;
-}
-
-.emotion-16:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  background-color: #3358CC;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-16:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-17 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-}
-
-.emotion-18 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-.emotion-18 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-18:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-18 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 24px;
-  max-height: 32px;
-}
-
-.emotion-19 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #2E3F54;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-19 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-19 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-}
-
-.emotion-21 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-21:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-21 svg {
-  height: 100%;
-  width: 100%;
-  max-width: 24px;
-  max-height: 32px;
-}
-
-.emotion-24 {
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  left: calc(100% - 24px);
-  padding-inline: 4px;
-  padding-block: 4px;
-  position: absolute;
-  aspect-ratio: 1/1;
-  display: grid;
-  place-items: center;
-}
-
-.emotion-24 svg {
-  fill: #09111C;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
-    transition-property: inset;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
-    transition-property: inset;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
-  }
-}
-
-.emotion-25 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
-  cursor: inherit;
-}
-
-.emotion-26 {
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-}
-
-.emotion-26:disabled {
-  color: #C0C7CC;
-}
-
-.emotion-26::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-26::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
-.emotion-27 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-@media screen {
-  .emotion-27 {
-    grid-template-rows: 48px;
-  }
-}
-
-.emotion-28 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 12px 16px;
-  min-width: 80px;
-  min-height: 48px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 8px;
-  color: #3358CC;
-  cursor: pointer;
-  margin-right: 20px;
-}
-
-.emotion-28 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-28 svg {
-  fill: #3358CC;
-}
-
-.emotion-28:hover:not(:disabled) {
-  background-color: #ECF1FF;
-}
-
-.emotion-28:active:not(:disabled) {
-  background-color: #D5E0FC;
-}
-
-.emotion-28:disabled {
-  color: #C0C7CC;
-}
-
-.emotion-28:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-28:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-28 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-28 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-29 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 600;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-29::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-29::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-30 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 12px 16px;
-  min-width: 80px;
-  min-height: 48px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 48px;
-  min-width: 80px;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: #3358CC;
-  border-radius: 8px;
-  color: #FFFFFF;
-  cursor: pointer;
-}
-
-.emotion-30 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-30 svg {
-  fill: #FFFFFF;
-}
-
-.emotion-30:hover:not(:disabled) {
-  background-color: #254CAC;
-}
-
-.emotion-30:active:not(:disabled) {
-  background-color: #14328D;
-}
-
-.emotion-30:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
-}
-
-.emotion-30:disabled svg {
-  fill: #C0C7CC;
-}
-
-.emotion-30:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-30:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-30 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-30 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-<div>
-    <div
-      class="emotion-0"
-    >
-      <div
-        class="emotion-1"
-      >
-        <div
-          class="emotion-2"
-        >
-          <div
-            class="emotion-3"
-          >
-            <span
-              class="emotion-4"
-            />
-            <button
-              aria-expanded="false"
-              aria-haspopup="listbox"
-              class="emotion-5"
-              data-testid="select-theme-element"
-              disabled=""
-              id="downshift-0-toggle-button"
-              type="button"
-              value="Docs Theme"
-            >
-              <div
-                class="emotion-6"
-              >
-                Select Option
-              </div>
-            </button>
-            <div
-              class="emotion-7"
-            >
-              <div
-                class="emotion-8"
-              >
-                <button
-                  aria-hidden="true"
-                  class="emotion-9"
-                  data-testid="select-chevron-button"
-                  tabindex="-1"
-                  type="button"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-11 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0V0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-                      />
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <label
-            class="emotion-13"
-          >
-            <div
-              class="emotion-14"
-              role="presentation"
-            >
-              <div
-                class="emotion-15"
-                data-testid="checkbox-feedback"
-              />
-              <div
-                class="emotion-16"
-              >
-                <div
-                  class="emotion-17"
-                >
-                  <div
-                    class="emotion-18"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-19 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        fill="none"
-                        height="24"
-                        width="24"
-                      />
-                      <path
-                        d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    class="emotion-21"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="emotion-19 emotion-12"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        fill="none"
-                        height="24"
-                        width="24"
-                      />
-                      <path
-                        d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    class="emotion-24"
-                  />
-                </div>
-                <input
-                  checked=""
-                  class="emotion-25"
-                  data-testid="checkbox-input"
-                  role="switch"
-                  tabindex="-1"
-                  type="checkbox"
-                />
-              </div>
-            </div>
-            <span
-              class="emotion-26"
-            >
-              Toggle Theme
-            </span>
-          </label>
-        </div>
-        <div
-          class="emotion-27"
-        >
-          <button
-            class="emotion-28"
-            data-testid="single-svg-button"
-            type="button"
-          >
-            <span
-              class="emotion-29"
-            >
-              Download .svg
-            </span>
-          </button>
-          <button
-            class="emotion-30"
-            data-testid="button"
-            type="button"
-          >
-            <span
-              class="emotion-29"
-            >
-              Download all .zip
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
 `;
 
 exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = `
