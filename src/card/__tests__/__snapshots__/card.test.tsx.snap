@@ -275,11 +275,11 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -644,11 +644,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -1013,11 +1013,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -2681,11 +2681,11 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -4670,11 +4670,11 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -6487,11 +6487,11 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-11:focus-visible:not(:disabled) {

@@ -73,7 +73,7 @@ exports[`Select force select to controlled tate 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -83,7 +83,7 @@ exports[`Select force select to controlled tate 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -382,7 +382,7 @@ exports[`Select icon component overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -392,7 +392,7 @@ exports[`Select icon component overrides 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -612,7 +612,7 @@ exports[`Select icon size overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -622,7 +622,7 @@ exports[`Select icon size overrides 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -887,7 +887,7 @@ exports[`Select icon theme size overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -897,7 +897,7 @@ exports[`Select icon theme size overrides 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -1162,7 +1162,7 @@ exports[`Select in Modal render Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -1172,7 +1172,7 @@ exports[`Select in Modal render Select 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -1632,8 +1632,8 @@ exports[`Select in Modal render Select 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
+  padding: 8px 12px;
+  min-height: 40px;
 }
 
 .emotion-7 * {
@@ -1867,7 +1867,6 @@ exports[`Select in Modal render Select 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-0-label"
                     class="modal-panel emotion-6"
                     data-testid="select-panel"
                     id="downshift-0-menu"
@@ -2073,7 +2072,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -2083,7 +2082,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -2564,8 +2563,8 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
+  padding: 8px 12px;
+  min-height: 40px;
 }
 
 .emotion-8 * {
@@ -2670,7 +2669,6 @@ exports[`Select in Modal render Select with overrides props 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-0-label"
                     class="modal-panel emotion-7"
                     data-testid="select-panel"
                     id="downshift-0-menu"
@@ -2849,7 +2847,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -2859,7 +2857,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -3309,8 +3307,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
+  padding: 8px 12px;
+  min-height: 40px;
 }
 
 .emotion-7 * {
@@ -3544,7 +3542,6 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                   </span>
                   <div
                     aria-describedby="mock-nk-1"
-                    aria-labelledby="downshift-0-label"
                     class="modal-panel emotion-6"
                     data-testid="select-panel"
                     id="downshift-0-menu"
@@ -3760,7 +3757,7 @@ exports[`Select open and scroll 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-5 {
@@ -3770,7 +3767,7 @@ exports[`Select open and scroll 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -3911,6 +3908,317 @@ exports[`Select open and scroll 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Select renders Select with labelId prop 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #919191;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #3B3B3B;
+  text-overflow: ellipsis;
+}
+
+.emotion-0 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-0:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #007B22;
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:disabled {
+  border-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #D60000;
+  background-color: #F1F1F1;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  margin: -1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #6A6A6A;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div>
+    <div
+      class="emotion-0"
+    >
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-0-toggle-button"
+        type="button"
+      >
+        <div
+          class="emotion-3"
+        >
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-7"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        aria-labelledby="label-1"
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Select renders Select with logical props 1`] = `
 <DocumentFragment>
   .emotion-0 {
@@ -4045,7 +4353,7 @@ exports[`Select renders Select with logical props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
   padding-block: 20px;
 }
 
@@ -4056,7 +4364,7 @@ exports[`Select renders Select with logical props 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -4274,7 +4582,7 @@ exports[`Select renders Select with overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -4283,7 +4591,7 @@ exports[`Select renders Select with overrides 1`] = `
   white-space: nowrap;
   text-overflow: ellipsis;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -4473,7 +4781,6 @@ exports[`Select renders Select with overrides 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -4619,7 +4926,7 @@ exports[`Select renders Select with zIndex overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -4629,7 +4936,7 @@ exports[`Select renders Select with zIndex overrides 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -4812,7 +5119,6 @@ exports[`Select renders Select with zIndex overrides 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="downshift-0-label"
       class="emotion-11"
       data-testid="select-panel"
       id="downshift-0-menu"
@@ -4989,7 +5295,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-4 {
@@ -4999,7 +5305,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -5220,7 +5526,6 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -5366,7 +5671,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -5376,7 +5681,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -5606,7 +5911,7 @@ exports[`Select renders disabled select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: not-allowed;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -5616,7 +5921,7 @@ exports[`Select renders disabled select 1`] = `
   text-overflow: ellipsis;
   color: inherit;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -5774,7 +6079,6 @@ exports[`Select renders disabled select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -5805,6 +6109,605 @@ exports[`Select renders large Select 1`] = `
   align-items: center;
   width: 100%;
   min-height: 64px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #919191;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #3B3B3B;
+  text-overflow: ellipsis;
+}
+
+.emotion-0 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-0:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #007B22;
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:disabled {
+  border-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #D60000;
+  background-color: #F1F1F1;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  margin: -1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #6A6A6A;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+.emotion-6 {
+  all: unset;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-8 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-8.emotion-8 {
+  width: 24px;
+  height: 24px;
+}
+
+<div>
+    <div
+      class="emotion-0"
+    >
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        id="downshift-0-toggle-button"
+        type="button"
+      >
+        <div
+          class="emotion-3"
+        >
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <button
+            aria-hidden="true"
+            class="emotion-6"
+            data-testid="select-chevron-button"
+            tabindex="-1"
+            type="button"
+          >
+            <div
+              class="emotion-7"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 360px;
+}
+
+<div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Select renders loading select 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #919191;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #3B3B3B;
+  text-overflow: ellipsis;
+}
+
+.emotion-0 svg {
+  fill: #3B3B3B;
+}
+
+.emotion-0:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:hover:not(:disabled) {
+  border-color: #007B22;
+  background-color: #F1F1F1;
+}
+
+.emotion-0:valid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:valid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:disabled {
+  border-color: #E2E2E2;
+  color: #ABABAB;
+}
+
+.emotion-0:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-0:invalid:focus:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  border-color: transparent;
+  background-color: #F1F1F1;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-0:invalid:focus:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-0:invalid:hover:not(:disabled) {
+  border-color: #D60000;
+  background-color: #F1F1F1;
+}
+
+.emotion-1 {
+  display: block;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  margin: -1px;
+}
+
+.emotion-2 {
+  all: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: wait;
+  padding: 12px;
+}
+
+.emotion-3 {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #6A6A6A;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.emotion-4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  cursor: wait;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-7 {
+  width: 24px;
+  height: 24px;
+  stroke: #3358CC;
+}
+
+.emotion-7 circle {
+  r: calc(50% - 2px);
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 360;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  transform-origin: 50% 50%;
+  will-change: stroke-dasharray;
+  will-change: stroke-dashoffset;
+  will-change: transform;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+<div>
+    <div
+      class="emotion-0"
+    >
+      <span
+        class="emotion-1"
+      />
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        class="emotion-2"
+        data-testid="select-button"
+        disabled=""
+        id="downshift-0-toggle-button"
+        type="button"
+      >
+        <div
+          class="emotion-3"
+        >
+          Select Option
+        </div>
+      </button>
+      <div
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        >
+          <div
+            class="emotion-6"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-7"
+              fill="currentColor"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="50%"
+                cy="50%"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  .emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+<div
+    class="nk-layer-organizer"
+  >
+    <div
+      class="nk-layer"
+    >
+      <div
+        class="emotion-0"
+        data-testid="select-panel"
+        id="downshift-0-menu"
+        role="listbox"
+        style="top: 0px; left: 0px; position: absolute;"
+        tabindex="-1"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Select renders medium Select 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -6075,296 +6978,6 @@ exports[`Select renders large Select 1`] = `
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 360px;
-}
-
-<div
-    class="nk-layer-organizer"
-  >
-    <div
-      class="nk-layer"
-    >
-      <div
-        aria-labelledby="downshift-0-label"
-        class="emotion-0"
-        data-testid="select-panel"
-        id="downshift-0-menu"
-        role="listbox"
-        style="top: 0px; left: 0px; position: absolute;"
-        tabindex="-1"
-      />
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Select renders loading select 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 48px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #919191;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #3B3B3B;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-0:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-0:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F1F1F1;
-}
-
-.emotion-0:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:valid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-0:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-0:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:invalid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-0:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F1F1F1;
-}
-
-.emotion-1 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  margin: -1px;
-}
-
-.emotion-2 {
-  all: unset;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  overflow: hidden;
-  cursor: wait;
-  padding: 8px;
-}
-
-.emotion-3 {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: #6A6A6A;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-4 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 8px;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  cursor: wait;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-7 {
-  width: 24px;
-  height: 24px;
-  stroke: #3358CC;
-}
-
-.emotion-7 circle {
-  r: calc(50% - 2px);
-  fill: transparent;
-  stroke-width: 2px;
-  stroke-dasharray: 502;
-  stroke-dashoffset: 360;
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  transform-origin: 50% 50%;
-  will-change: stroke-dasharray;
-  will-change: stroke-dashoffset;
-  will-change: transform;
-  -webkit-animation: rotate 1s linear infinite;
-  animation: rotate 1s linear infinite;
-}
-
-<div>
-    <div
-      class="emotion-0"
-    >
-      <span
-        class="emotion-1"
-      />
-      <button
-        aria-expanded="false"
-        aria-haspopup="listbox"
-        class="emotion-2"
-        data-testid="select-button"
-        disabled=""
-        id="downshift-0-toggle-button"
-        type="button"
-      >
-        <div
-          class="emotion-3"
-        >
-          Select Option
-        </div>
-      </button>
-      <div
-        class="emotion-4"
-      >
-        <div
-          class="emotion-5"
-        >
-          <div
-            class="emotion-6"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-7"
-              fill="currentColor"
-              viewBox="0 0 64 64"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="50%"
-                cy="50%"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
   max-height: 272px;
 }
 
@@ -6375,318 +6988,6 @@ exports[`Select renders loading select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
-        class="emotion-0"
-        data-testid="select-panel"
-        id="downshift-0-menu"
-        role="listbox"
-        style="top: 0px; left: 0px; position: absolute;"
-        tabindex="-1"
-      />
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Select renders medium Select 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 48px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #919191;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #3B3B3B;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-0:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-0:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-0:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F1F1F1;
-}
-
-.emotion-0:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:valid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-0:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-0:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-0:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:invalid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-0:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F1F1F1;
-}
-
-.emotion-1 {
-  display: block;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  margin: -1px;
-}
-
-.emotion-2 {
-  all: unset;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  overflow: hidden;
-  cursor: pointer;
-  padding: 8px;
-}
-
-.emotion-3 {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: #6A6A6A;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.emotion-4 {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 8px;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  cursor: pointer;
-}
-
-.emotion-6 {
-  all: unset;
-}
-
-.emotion-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-8 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #3B3B3B;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-8.emotion-8 {
-  width: 24px;
-  height: 24px;
-}
-
-<div>
-    <div
-      class="emotion-0"
-    >
-      <span
-        class="emotion-1"
-      />
-      <button
-        aria-expanded="false"
-        aria-haspopup="listbox"
-        class="emotion-2"
-        data-testid="select-button"
-        id="downshift-0-toggle-button"
-        type="button"
-      >
-        <div
-          class="emotion-3"
-        >
-          Select Option
-        </div>
-      </button>
-      <div
-        class="emotion-4"
-      >
-        <div
-          class="emotion-5"
-        >
-          <button
-            aria-hidden="true"
-            class="emotion-6"
-            data-testid="select-chevron-button"
-            tabindex="-1"
-            type="button"
-          >
-            <div
-              class="emotion-7"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-8 emotion-9"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path
-                  d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  .emotion-0 {
-  position: absolute;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  outline: none;
-  margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: none;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
-  max-height: 272px;
-}
-
-<div
-    class="nk-layer-organizer"
-  >
-    <div
-      class="nk-layer"
-    >
-      <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -6832,7 +7133,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -6842,7 +7143,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -7031,7 +7332,6 @@ exports[`Select renders select with a pre selected option 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -7177,7 +7477,7 @@ exports[`Select renders select with a selected option 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -7187,7 +7487,7 @@ exports[`Select renders select with a selected option 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -7376,7 +7676,6 @@ exports[`Select renders select with a selected option 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -7567,7 +7866,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-6 {
@@ -7577,7 +7876,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -7745,7 +8044,6 @@ exports[`Select renders select with leading and trailing icon 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -7891,7 +8189,7 @@ exports[`Select renders select with non-string options 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -7901,7 +8199,7 @@ exports[`Select renders select with non-string options 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -8092,7 +8390,6 @@ exports[`Select renders select with non-string options 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -8122,7 +8419,7 @@ exports[`Select renders small Select 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  min-height: 32px;
+  min-height: 40px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -8403,7 +8700,6 @@ exports[`Select renders small Select 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -8549,7 +8845,7 @@ exports[`Select should render custom placeholder 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -8559,7 +8855,7 @@ exports[`Select should render custom placeholder 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -8714,7 +9010,6 @@ exports[`Select should render custom placeholder 1`] = `
       class="nk-layer"
     >
       <div
-        aria-labelledby="downshift-0-label"
         class="emotion-0"
         data-testid="select-panel"
         id="downshift-0-menu"
@@ -8860,7 +9155,7 @@ exports[`Select virtualize long list 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
 }
 
 .emotion-3 {
@@ -8870,7 +9165,7 @@ exports[`Select virtualize long list 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -9061,8 +9356,8 @@ exports[`Select virtualize long list 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
+  padding: 8px 12px;
+  min-height: 40px;
 }
 
 .emotion-2 * {
@@ -9125,7 +9420,6 @@ exports[`Select virtualize long list 1`] = `
       </span>
       <div
         aria-describedby="mock-nk-1"
-        aria-labelledby="downshift-0-label"
         class="emotion-1"
         data-testid="select-panel"
         id="downshift-0-menu"

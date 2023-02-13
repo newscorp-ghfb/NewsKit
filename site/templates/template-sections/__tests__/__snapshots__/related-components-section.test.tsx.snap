@@ -145,157 +145,6 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
   display: block;
 }
 
-.emotion-9 {
-  box-sizing: border-box;
-  overflow: hidden;
-  border-style: solid;
-  border-radius: 12px;
-  border-width: 1px;
-  border-color: #DEE2E5;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  transition-property: box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  height: 100%;
-}
-
-.emotion-9:hover:not(:disabled) {
-  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
-}
-
-.emotion-9 svg {
-  display: block;
-}
-
-.emotion-10 {
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
-
-.emotion-10 svg {
-  border-radius: 4px;
-}
-
-.emotion-11 {
-  box-sizing: border-box;
-}
-
-.emotion-12 {
-  box-sizing: border-box;
-  padding: 24px;
-}
-
-.emotion-12 a:not(.nk-card-link) {
-  z-index: 2;
-  position: relative;
-}
-
-.emotion-13 {
-  margin-bottom: 20px;
-}
-
-.emotion-14 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: none;
-}
-
-.emotion-14 .nk-headline-kicker {
-  color: #3358CC;
-}
-
-.emotion-14:hover:not(:disabled) .nk-headline-kicker {
-  color: #254CAC;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-14:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-14:visited:not(:disabled) .nk-headline-kicker {
-  color: #6454E3;
-}
-
-.emotion-14 .nk-headline-heading {
-  color: #09111C;
-}
-
-.emotion-14 .nk-headline-heading svg {
-  fill: #09111C;
-}
-
-.emotion-14:before {
-  content: '';
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-}
-
-.emotion-15 {
-  font-family: "Poppins",sans-serif;
-  font-size: 20px;
-  line-height: 22.5px;
-  font-weight: 700;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-}
-
-.emotion-15::before {
-  content: '';
-  margin-bottom: -0.2155em;
-  display: block;
-}
-
-.emotion-15::after {
-  content: '';
-  margin-top: -0.2125em;
-  display: block;
-}
-
-.emotion-17 {
-  margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-}
-
-.emotion-17 svg {
-  fill: #2E3F54;
-}
-
-.emotion-17::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-17::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
-}
-
 <div
     data-comp="NewsKit Cell"
     data-props="{
@@ -378,70 +227,17 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 }"
           data-testid="Cell"
         >
-          <div
-            class="emotion-8"
-          >
-            <div
-              data-comp="NewsKit Grid"
-              data-props="{
-  \\"xsRowGutter\\": \\"space080\\",
-  \\"xsMargin\\": \\"space000\\"
-}"
-              data-testid="Grid"
-            >
-              <div
-                data-comp="NewsKit Cell"
-                data-props="{
-  \\"xs\\": 12,
-  \\"md\\": 6,
-  \\"xl\\": 3
-}"
-                data-testid="Cell"
-              >
-                <div
-                  class="emotion-9"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <div>
-                      Mock
-                    </div>
-                  </div>
-                  <div
-                    class="emotion-11"
-                  >
-                    <div
-                      class="emotion-12"
-                    >
-                      <div
-                        class="emotion-13"
-                      >
-                        <a
-                          class="nk-card-link emotion-14"
-                          href="/group/page/related"
-                        >
-                          <section
-                            class="emotion-15"
-                          >
-                            <h3
-                              class="nk-headline-heading emotion-5"
-                            >
-                              RelatedComp
-                            </h3>
-                          </section>
-                        </a>
-                      </div>
-                      <p
-                        class="emotion-17"
-                      >
-                        Here lies the description for the related component
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div>
+            MediaList Component with props:{
+  "layout": "4-span",
+  "cards": [
+    {
+      "title": "RelatedComp",
+      "description": "Here lies the description for the related component",
+      "href": "/group/page/related"
+    }
+  ]
+}
           </div>
         </div>
       </div>

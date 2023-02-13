@@ -24,6 +24,24 @@ import {Cell, Grid} from '../grid';
 import {childrenIsString} from '../utils/react-children-utilities';
 import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
 
+const gridOverrides = [
+  'xsColumnGutter',
+  'smColumnGutter',
+  'mdColumnGutter',
+  'lgColumnGutter',
+  'xlColumnGutter',
+  'xsRowGutter',
+  'smRowGutter',
+  'mdRowGutter',
+  'lgRowGutter',
+  'xlRowGutter',
+  'xsMargin',
+  'smMargin',
+  'mdMargin',
+  'lgMargin',
+  'xlMargin',
+];
+
 export const BannerInternal = React.forwardRef<
   HTMLDivElement,
   BannerInternalProps
@@ -71,7 +89,16 @@ export const BannerInternal = React.forwardRef<
         layout={layout}
         {...restProps}
       >
-        <Grid {...overrides?.grid?.props}>
+        <Grid
+          {...gridOverrides.reduce(
+            (prev, next) => ({
+              ...prev,
+              [next]: 'space000',
+            }),
+            {},
+          )}
+          {...overrides?.grid?.props}
+        >
           <Cell xs={12} {...overrides?.cell?.props}>
             <StyledMaxWidthContainer
               flow={

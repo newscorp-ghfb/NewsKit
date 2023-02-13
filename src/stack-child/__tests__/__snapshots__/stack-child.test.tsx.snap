@@ -83,11 +83,11 @@ exports[`StackChild renders within a Stack with custom order 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -300,11 +300,11 @@ exports[`StackChild renders within a Stack with logical props 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -495,11 +495,11 @@ exports[`StackChild renders within a Stack, when Stack is a list 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
@@ -710,11 +710,11 @@ exports[`StackChild renders within a Stack, with align self property 1`] = `
 }
 
 .emotion-2:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-2:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-2:focus-visible:not(:disabled) {
