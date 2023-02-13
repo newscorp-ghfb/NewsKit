@@ -83,6 +83,7 @@ executors:
   aws-cli-and-terraform:
     docker:
       - image: newsuk/terraform:1.2.1
+    resource_class: large
 
   # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
   flux-deploy:
