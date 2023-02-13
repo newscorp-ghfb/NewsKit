@@ -350,10 +350,10 @@ export const StoryStylingOverrides = () => (
               },
             },
             icon: {
-              paddingBlock: 'space060',
+              spaceInline: 'space060',
             },
             content: {
-              paddingBlock: 'space050',
+              spaceInline: 'space050',
               title: {
                 stylePreset: 'inkInverse',
                 typographyPreset: 'utilityHeading030',

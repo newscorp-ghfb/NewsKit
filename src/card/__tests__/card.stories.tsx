@@ -199,7 +199,8 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
     <Block spaceStack={cardLabel}>
       <Flag
         overrides={{
-          spaceInset: 'spaceInsetSquish000',
+          paddingBlock: 'space000',
+          paddingInline: 'space000',
           stylePreset: 'cardLabel',
           typographyPreset: cardTypographyPresets[`cardLabel${cardSize}`],
           minHeight: 'sizing000',
@@ -518,7 +519,8 @@ export const StoryCardWithLinkAndNoHeadline = () => (
             <Block spaceStack={cardLabel}>
               <Flag
                 overrides={{
-                  spaceInset: 'spaceInsetSquish000',
+                  paddingBlock: 'space000',
+                  paddingInline: 'space000',
                   stylePreset: 'cardLabel',
                   typographyPreset: cardTypographyPresets.cardLabelSmall,
                   minHeight: 'sizing000',
@@ -563,7 +565,8 @@ export const StoryCardWithLinkHeadlineAndNestedLinksInCardBody = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1112,7 +1115,8 @@ export const StoryCardWithCroppingText = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1365,7 +1369,8 @@ export const StoryCardSlices = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1412,7 +1417,8 @@ export const StoryCardSlices = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1446,7 +1452,8 @@ export const StoryCardSlices = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1478,7 +1485,8 @@ export const StoryCardSlices = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1512,7 +1520,8 @@ export const StoryCardSlices = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1545,7 +1554,8 @@ export const StoryCardSlices = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
