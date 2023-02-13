@@ -23,7 +23,7 @@ const unlimitedScenarios = [
   'card',
   'drawer',
   'modal',
-  'image',
+  'Image',
   'image-e2e',
   'grid-layout',
   'popover',
