@@ -6,6 +6,10 @@ export const INK_DESCRIPTION = {
   inkSubtle: 'Subheadlines, labels and supporting copy',
   inkContrast: 'Headlines or copy where emphasis is needed',
   inkNonEssential: 'Text elements in their inactive (disabled) state',
+  inkLight010:
+    'Used when the same light colour value is required for all colour themes',
+  inkDark010:
+    'Used when the same dark colour value is required for all colour themes',
   inkInverse: 'Used when contrast with the background can’t be achieved',
   inkPositive: (
     <>

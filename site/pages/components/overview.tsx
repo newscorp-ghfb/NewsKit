@@ -63,7 +63,9 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
                   cellProps={{lg: 8, mdOffset: i === 0 ? 1 : undefined}}
                   subHeadingSpaceStack="space000"
                 >
-                  {description}
+                  <TextBlock typographyPreset="editorialParagraph030">
+                    {description}
+                  </TextBlock>
                 </SectionIntroduction>
               </Cell>
             ) : (
@@ -73,7 +75,9 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
                   title={title}
                   cellProps={{lg: 8}}
                 >
-                  {description}
+                  <TextBlock typographyPreset="editorialParagraph030">
+                    {description}
+                  </TextBlock>
                 </SectionIntroduction>
               </Cell>
             )}
@@ -105,7 +109,9 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
           title={utilities.title}
           cellProps={{lg: 8}}
         >
-          {utilities.description}
+          <TextBlock typographyPreset="editorialParagraph030">
+            {utilities.description}
+          </TextBlock>
         </SectionIntroduction>
         <ComponentPageCell>
           <Block stylePreset="componentsUtilitiesStructuredList">
@@ -154,7 +160,9 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
             title={deprecated.title}
             cellProps={{lg: 8}}
           >
-            {deprecated.description}
+            <TextBlock typographyPreset="editorialParagraph030">
+              {deprecated.description}
+            </TextBlock>
           </SectionIntroduction>
         </Cell>
         <ComponentPageCell>

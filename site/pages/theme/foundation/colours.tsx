@@ -80,6 +80,8 @@ const coloursTable = [
           'inkBase',
           'inkSubtle',
           'inkNonEssential',
+          'inkLight010',
+          'inkDark010',
           'inkInverse',
         ]),
         description:
