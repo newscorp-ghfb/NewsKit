@@ -13,7 +13,10 @@ terraform {
   backend "s3" {
     bucket         = "newskit-docs-dev-terraform-state"
     dynamodb_table = "newskit-docs-dev-terraform-state-lock"
-    key            = "newskit/s3-newskit/terraform.tfstate"
+    # Gets changed to "newskit/s3/dev-newskit/pr/terraform.tfstate"
+    # or "newskit/s3/dev-newskit/dev/terraform.tfstate"
+    # by the Circle step called deploy_terraform_oidc
+    key            = "newskit/s3/dev-newskit/terraform.tfstate"
   }
 }
 
