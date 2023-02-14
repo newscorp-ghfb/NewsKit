@@ -34,7 +34,7 @@ export default {
     },
     large: {
       stylePreset: 'inputField',
-      spaceInset: 'spaceInset030',
+      spaceInset: 'spaceInset040',
       minHeight: 'sizing090',
       width: '100%',
       typographyPreset: 'utilityBody030',
