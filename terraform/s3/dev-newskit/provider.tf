@@ -28,12 +28,4 @@ locals {
     ServiceName        = "ncu-newskit"
     ServiceCatalogueId = 331
   }
-
-  tags2 = {
-    Name               = "ncu-newskit-s3${var.tag_name_suffix2}"
-    Environment        = var.environment
-    ServiceOwner       = "product-platforms"
-    ServiceName        = "ncu-newskit"
-    ServiceCatalogueId = 331
-  }
 }
