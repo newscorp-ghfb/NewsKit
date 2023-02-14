@@ -1140,6 +1140,14 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  validate_terraform:
+    executor: node
+    steps:
+      - run:
+          name: Terraform is valid
+          command: |
+            echo "If you see this message, it means all the Terraform is valid"
+
   eks_flux_deploy:
     # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
     parameters:

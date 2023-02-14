@@ -1400,6 +1400,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 </DocumentFragment>
 `;
 
+exports[`SvgPreviewer should compose the SVG download file as expected 1`] = `<DocumentFragment />`;
+
 exports[`SvgPreviewer should render correctly when not receiving any data 1`] = `
 <DocumentFragment>
   .emotion-0 {
