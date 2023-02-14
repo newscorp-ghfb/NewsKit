@@ -13,6 +13,8 @@ terraform {
   backend "s3" {
     bucket         = "newskit-docs-dev-terraform-state"
     dynamodb_table = "newskit-docs-dev-terraform-state-lock"
+    # Gets changed to "newskit/s3/dev-newskit/pr/terraform.tfstate"
+    # or "newskit/s3/dev-newskit/dev/terraform.tfstate" by the Circle step
     key            = "newskit/s3/dev-newskit/terraform.tfstate"
   }
 }
@@ -20,14 +22,6 @@ terraform {
 locals {
   tags = {
     Name               = "ncu-newskit-s3${var.tag_name_suffix}"
-    Environment        = var.environment
-    ServiceOwner       = "product-platforms"
-    ServiceName        = "ncu-newskit"
-    ServiceCatalogueId = 331
-  }
-
-  tags2 = {
-    Name               = "ncu-newskit-s3${var.tag_name_suffix2}"
     Environment        = var.environment
     ServiceOwner       = "product-platforms"
     ServiceName        = "ncu-newskit"
