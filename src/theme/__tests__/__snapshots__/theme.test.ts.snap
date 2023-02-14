@@ -2817,6 +2817,8 @@ Object {
     "large": Object {
       "iconSize": "iconSize030",
       "minHeight": "sizing090",
+      "paddingBlock": "space040",
+      "paddingInline": "space050",
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "tab",
@@ -2826,6 +2828,8 @@ Object {
     "medium": Object {
       "iconSize": "iconSize020",
       "minHeight": "sizing080",
+      "paddingBlock": "space030",
+      "paddingInline": "space040",
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish030",
       "stylePreset": "tab",
@@ -2835,6 +2839,8 @@ Object {
     "small": Object {
       "iconSize": "iconSize010",
       "minHeight": "sizing060",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "spaceInline": "space020",
       "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tab",
