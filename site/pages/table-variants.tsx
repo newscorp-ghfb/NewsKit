@@ -1,8 +1,9 @@
-import {Block, Cell, Grid, H3, Link, newskitLightTheme} from 'newskit';
+import {Block, Cell, Grid, H3, newskitLightTheme} from 'newskit';
 import React from 'react';
 import Layout from '../components/layout';
 import {Table} from '../components/table';
 import {Mono} from '../components/flags';
+import {Link} from '../components/link';
 import {getTokenType} from '../utils/get-token-type';
 import {INK_DESCRIPTION} from '../utils/colors-token-description';
 

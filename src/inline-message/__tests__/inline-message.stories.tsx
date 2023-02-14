@@ -7,7 +7,7 @@ import {
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {IconFilledInfo} from '../../icons';
 import {InlineMessage} from '..';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const inlineMessageCustomThemeObject: CreateThemeArgs = {
@@ -28,7 +28,7 @@ const inlineMessageCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-const link = <Link href="/">link</Link>;
+const link = <LinkInline href="/">link</LinkInline>;
 const icon = (
   <IconFilledInfo
     overrides={{

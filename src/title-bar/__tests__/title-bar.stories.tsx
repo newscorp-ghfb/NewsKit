@@ -2,7 +2,7 @@ import * as React from 'react';
 import {createTheme, ThemeProvider} from '../../theme';
 import {TitleBar} from '..';
 import {Button} from '../../button';
-import {Link} from '../../link';
+import {LinkStandalone} from '../../link';
 import {Divider} from '../../divider';
 import {Stack} from '../../stack';
 
@@ -33,7 +33,7 @@ const myCustomTheme = createTheme({
   },
 });
 
-const link = () => <Link href="/">Link</Link>;
+const link = () => <LinkStandalone href="/">Link</LinkStandalone>;
 const button = () => <Button>Default button</Button>;
 const HeadlineContainer = styled.span`
   min-width: fit-content;
