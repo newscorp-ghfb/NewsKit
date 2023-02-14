@@ -1623,21 +1623,8 @@ Object {
   },
   "caption": Object {
     "credit": Object {
-      "stylePreset": "uppercaseInkSubtle",
+      "stylePreset": "inkSubtle",
       "typographyPreset": "utilityMeta010",
-    },
-    "spaceStack": "space040",
-    "stylePreset": "inkBase",
-    "typographyPreset": "editorialCaption010",
-  },
-  "captionInset": Object {
-    "credit": Object {
-      "stylePreset": "uppercaseInkSubtle",
-      "typographyPreset": "utilityMeta010",
-    },
-    "spaceInset": Object {
-      "md": "spaceInset050",
-      "xs": "spaceInset040",
     },
     "spaceStack": "space040",
     "stylePreset": "inkBase",
