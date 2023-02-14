@@ -5,7 +5,7 @@ export default {
     spaceStack: 'space040',
     credit: {
       typographyPreset: 'utilityMeta010',
-      stylePreset: 'uppercaseInkSubtle',
+      stylePreset: 'inkSubtle',
     },
   },
 };

@@ -39,7 +39,6 @@ exports[`Caption renders correctly with default props and caption and credit tex
 .emotion-2 {
   margin: 0;
   color: #6A6A6A;
-  text-transform: uppercase;
   font-family: "DM Sans",sans-serif;
   font-size: 12px;
   line-height: 18px;

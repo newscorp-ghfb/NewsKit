@@ -1623,7 +1623,7 @@ Object {
   },
   "caption": Object {
     "credit": Object {
-      "stylePreset": "uppercaseInkSubtle",
+      "stylePreset": "inkSubtle",
       "typographyPreset": "utilityMeta010",
     },
     "spaceStack": "space040",
