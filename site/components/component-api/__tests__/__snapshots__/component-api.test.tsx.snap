@@ -1057,6 +1057,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   width: 100%;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1158,6 +1160,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   width: 100%;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
