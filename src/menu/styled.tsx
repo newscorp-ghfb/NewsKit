@@ -64,13 +64,7 @@ export const StyledMenuGroupTitle = styled.div<
     'title',
     'spaceInline',
   )}
-
-  ${getResponsiveSpace(
-    space => ({paddingLeft: space, paddingRight: space}),
-    'menuGroup.title',
-    'title',
-    'spaceInset',
-  )}
+  ${logicalProps('menuGroup.title', 'title')}
 `;
 
 export const StyledMenuItem = styled.li<

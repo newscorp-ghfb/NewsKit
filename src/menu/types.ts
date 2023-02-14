@@ -3,7 +3,7 @@ import {BaseFlagOverrides, BaseFlagProps} from '../flag';
 import {EventData} from '../instrumentation';
 import {NewsKitIconProps} from '../icons';
 import {MQ} from '../utils';
-import {LogicalProps} from '../utils/logical-properties';
+import {LogicalPaddingProps, LogicalProps} from '../utils/logical-properties';
 import {Override} from '../utils/overrides';
 
 export type MenuItemSize = 'small' | 'medium' | 'large';
@@ -29,8 +29,7 @@ export interface MenuGroupProps extends React.AriaAttributes {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
       spaceInline?: MQ<string>;
-      spaceInset?: MQ<string>;
-    };
+    } & LogicalPaddingProps;
   };
 }
 

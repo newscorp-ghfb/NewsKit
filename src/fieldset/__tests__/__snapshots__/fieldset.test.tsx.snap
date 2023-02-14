@@ -2594,7 +2594,8 @@ exports[`Fieldset should render with overrides 1`] = `
   border-color: #6454E3;
   border-width: 1px;
   border-style: solid;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
 }
 
 .emotion-1 {

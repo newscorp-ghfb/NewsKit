@@ -200,7 +200,7 @@ const LoremIpsum: React.FC<{textNumber: number; text?: Array<string>}> = ({
   textNumber = 1,
   text = LoremIpsumText,
 }) => (
-  <Block spaceInset="spaceInset040">
+  <Block paddingBlock="space040" paddingInline="space040">
     <TextBlock stylePreset="inkContrast" typographyPreset="utilityBody020">
       {text[textNumber - 1]}
     </TextBlock>
@@ -302,11 +302,11 @@ export const StoryControlledTabs = () => {
   return (
     <>
       <StorybookHeading>Controlled Tabs Index selection</StorybookHeading>
-      <Block spaceInset="spaceInset040">
+      <Block paddingBlock="space040" paddingInline="space040">
         <Button onClick={() => setSelected(state => Math.min(2, state + 1))}>
           +
         </Button>
-        <Block spaceInset="spaceInset040" />
+        <Block paddingBlock="space040" paddingInline="space040" />
         <Button onClick={() => setSelected(state => Math.max(0, state - 1))}>
           -
         </Button>

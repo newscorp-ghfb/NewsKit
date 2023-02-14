@@ -88,7 +88,8 @@ const cardBody = ({inset}: {inset: boolean}) => (
     <Block spaceStack="space040">
       <Flag
         overrides={{
-          spaceInset: 'spaceInsetSquish010',
+          paddingBlock: 'space010',
+          paddingInline: 'space020',
           typographyPreset: 'utilityLabel010',
           minHeight: 'sizing000',
         }}

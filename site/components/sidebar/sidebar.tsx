@@ -66,7 +66,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             data-testid="sidebar"
             role="complementary"
           >
-            <Block spaceInset="space010" />
+            <Block paddingBlock="space010" paddingInline="space010" />
 
             <SidebarNav />
           </StyledSidebarDesktop>

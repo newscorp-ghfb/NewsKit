@@ -119,13 +119,6 @@ export const StyledCardContainerTeaser = styled.div<
   }))}
   ${({hasHref, ...props}) =>
     filterInteractiveStates('teaserContainer', hasHref)(props)}
-  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
-  ${getResponsiveSpace(
-    'padding',
-    'card.teaserContainer',
-    'teaserContainer',
-    'spaceInset',
-  )}
   ${logicalPaddingProps('card.teaserContainer', 'teaserContainer')};
 
   a:not(.nk-card-link) {
@@ -163,13 +156,6 @@ export const StyledCardContainerActions = styled(Stack)<
 >`
   height: auto;
   box-sizing: border-box;
-  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
-  ${getResponsiveSpace(
-    'padding',
-    'card.actionsContainer',
-    'actionsContainer',
-    'spaceInset',
-  )}
   ${logicalPaddingProps('card.actionsContainer', 'actionsContainer')};
   ${({hasHref, ...props}) =>
     filterInteractiveStates('actionsContainer', hasHref)(props)}
