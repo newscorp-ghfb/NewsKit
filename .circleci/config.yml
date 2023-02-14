@@ -1655,7 +1655,7 @@ workflows:
             - build_icons
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
-          context: build_docs_staging
+          context: ncu-newskit-site-stage
           s3Path_docs: s3://ncu-newskit-docs-staging/
           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
@@ -1852,7 +1852,7 @@ workflows:
             - deploy_to_s3_dev
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
-          context: build_docs_staging
+          context: ncu-newskit-site-stage
           s3Path_docs: s3://ncu-newskit-docs-staging/
           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
@@ -2066,7 +2066,7 @@ workflows:
             - build_push_docker_ecr_release
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
-          context: build_docs_staging
+          context: ncu-newskit-site-stage
           s3Path_docs: s3://ncu-newskit-docs-staging/
           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
