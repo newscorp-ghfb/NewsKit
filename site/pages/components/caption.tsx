@@ -86,8 +86,7 @@ const CaptionComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Inset spacing',
-          description:
-            'The caption can be inset with increased spacing. There are two sizes of inset: XS and MD.',
+          description: 'The caption can be inset with increased spacing.',
           media: getIllustrationComponent(
             'components/caption/options/inset-spacing',
           ),
