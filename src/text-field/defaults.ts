@@ -5,8 +5,8 @@ export default {
       spaceInset: 'spaceInset020',
       minHeight: 'sizing070',
       width: '100%',
-      typographyPreset: 'utilityBody020',
       spaceStack: 'space020',
+      typographyPreset: 'utilityBody020',
       startEnhancer: {
         iconSize: 'iconSize020',
         spaceInline: 'space020',
