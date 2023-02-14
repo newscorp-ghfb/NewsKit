@@ -1095,7 +1095,7 @@ jobs:
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
-            echo $(date) > timestamp.html
+            echo "${SITE_ENV} $(date)" > timestamp.html
             aws s3 cp public $s3Path_docs --recursive
             aws s3 cp timestamp.html $s3Path_docs
             aws s3 cp dist-storybook $s3Path_storybook --recursive
@@ -1639,6 +1639,7 @@ workflows:
           context: ncu-newskit-site-dev
           requires:
             - build_icons
+            - deploy_to_s3_pr
       - push_s3_general_oidc:
           name: deploy_to_s3_dev
           context: ncu-newskit-site-dev
@@ -1653,6 +1654,7 @@ workflows:
           context: ncu-newskit-site-stage
           requires:
             - build_icons
+            - deploy_to_s3_dev
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
           context: ncu-newskit-site-stage
