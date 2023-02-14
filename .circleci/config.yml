@@ -1607,6 +1607,14 @@ workflows:
           tf_env: true
           environment: staging
 
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_prod
+          package: s3/prod-newskit
+          context: ncu-newskit-site-prod
+          apply: true
+          tf_env: true
+          environment: prod
+          
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
@@ -1661,6 +1669,21 @@ workflows:
           requires:
             - deploy_terraform_s3_staging
             - build_docs_staging
+            - build_storybook
+
+      - build_docs_with_no_base_url:
+          name: build_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_icons
+      - push_s3_general_oidc:
+          name: deploy_to_s3_prod
+          context: build_docs_prod
+          s3Path_docs: s3://ncu-newskit-docs-prod/
+          s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
+          requires:
+            - deploy_terraform_s3_prod
+            - build_docs_prod
             - build_storybook
 
   pull_request_codemod:
