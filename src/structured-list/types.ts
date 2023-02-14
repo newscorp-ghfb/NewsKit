@@ -32,13 +32,12 @@ export interface StructuredListItemProps
   linkIconAlign?: StructuredListCellAlign;
   overrides?: {
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
     minHeight?: MQ<string>;
     icon?: {
       stylePreset?: MQ<string>;
       size?: string;
     };
-  };
+  } & LogicalProps;
 }
 
 export interface StructuredListCellProps extends CellProps {
