@@ -1,5 +1,5 @@
 import Layout from '../../../components/layout';
-import { Link } from 'newskit'
+import {Link} from '../../../components/link';
 
 export default Layout;
 
@@ -7,9 +7,9 @@ export default Layout;
 
 ## Unit Testing
 
-NewsKit uses Jest and React Testing Library for unit testing. 
+NewsKit uses Jest and React Testing Library for unit testing.
 
-There is an existing memory leak issue with Jest. See <Link href="https://github.com/facebook/jest/issues/7874">Memory Leak in Jest</Link>. If your tests are running slow using Jest, 
+There is an existing memory leak issue with Jest. See <Link href="https://github.com/facebook/jest/issues/7874">Memory Leak in Jest</Link>. If your tests are running slow using Jest,
 we recommended that you try the following arguments:
 
 `--expose-gc`

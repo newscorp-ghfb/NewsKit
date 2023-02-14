@@ -1,73 +1,56 @@
 import React from 'react';
 import {CaptionProps} from './types';
-import {Block} from '../block';
 import {getToken} from '../utils/get-token';
-import {useTheme} from '../theme';
+import {Theme, useTheme} from '../theme';
 import {TextBlock} from '../text-block';
 import {withOwnTheme} from '../utils/with-own-theme';
 import defaults from './defaults';
 import {extractLogicalPropsFromOverrides} from '../utils/logical-properties';
+import {GridLayout} from '../grid-layout';
+
+const getComponentProps = (
+  defaultsPath: string,
+  overridesPath: string,
+  themeProps: {overrides: CaptionProps['overrides']; theme: Theme},
+): {stylePreset: string; typographyPreset: string} => {
+  const presets = ['stylePreset', 'typographyPreset'];
+  return presets.reduce(
+    (props, presetKey) => {
+      // eslint-disable-next-line no-param-reassign
+      props[presetKey as 'stylePreset' | 'typographyPreset'] = getToken(
+        themeProps,
+        defaultsPath,
+        overridesPath,
+        presetKey,
+      );
+      return props;
+    },
+    {stylePreset: '', typographyPreset: ''},
+  );
+};
 
 const ThemelessCaption = React.forwardRef<HTMLDivElement, CaptionProps>(
   ({overrides, children, creditText, ...rest}, ref) => {
     const theme = useTheme();
-    const captionGap =
-      creditText && getToken({theme, overrides}, 'caption', '', 'spaceStack');
 
-    const captionStylePreset = getToken(
-      {theme, overrides},
-      'caption',
-      '',
-      'stylePreset',
-    );
+    const themeProps = {theme, overrides};
 
-    const captionTypographyPreset = getToken(
-      {theme, overrides},
-      'caption',
-      '',
-      'typographyPreset',
-    );
+    const captionGap = getToken(themeProps, 'caption', '', 'spaceStack');
 
-    const creditTypographyPreset = getToken(
-      {theme, overrides},
+    const captionProps = getComponentProps('caption', '', themeProps);
+    const creditProps = getComponentProps(
       'caption.credit',
       'credit',
-      'typographyPreset',
-    );
-    const creditStylePreset = getToken(
-      {theme, overrides},
-      'caption.credit',
-      'credit',
-      'stylePreset',
-    );
-
-    const captionInset = getToken(
-      {theme, overrides},
-      'caption',
-      '',
-      'spaceInset',
+      themeProps,
     );
 
     const logicalProps = extractLogicalPropsFromOverrides(overrides);
 
     return (
-      <Block spaceInset={captionInset} ref={ref} {...logicalProps} {...rest}>
-        <TextBlock
-          stylePreset={captionStylePreset}
-          typographyPreset={captionTypographyPreset}
-          marginBlockEnd={captionGap}
-        >
-          {children}
-        </TextBlock>
-        {creditText && (
-          <TextBlock
-            stylePreset={creditStylePreset}
-            typographyPreset={creditTypographyPreset}
-          >
-            {creditText}
-          </TextBlock>
-        )}
-      </Block>
+      <GridLayout rowGap={captionGap} ref={ref} {...logicalProps} {...rest}>
+        <TextBlock {...captionProps}>{children}</TextBlock>
+        {creditText && <TextBlock {...creditProps}>{creditText}</TextBlock>}
+      </GridLayout>
     );
   },
 );

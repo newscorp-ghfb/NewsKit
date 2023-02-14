@@ -264,7 +264,6 @@ exports[`UnorderedList renders different types of children 1`] = `
 
 .emotion-22 {
   margin: 0;
-  display: inline-block;
   display: block;
 }
 

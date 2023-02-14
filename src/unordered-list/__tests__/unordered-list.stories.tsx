@@ -5,7 +5,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {IconFilledTwitter, IconFilledMood} from '../../icons';
-import {Link} from '../../link';
+import {LinkStandalone} from '../../link';
 
 const listData = [
   `alpha`,
@@ -16,9 +16,9 @@ const listData = [
   />,
   2,
   `Lorem ipsum dolor sit amet...`,
-  <Link key="uniqueLinkKey" href="http://localhost:6006">
+  <LinkStandalone key="uniqueLinkKey" href="http://localhost:6006">
     Click me!
-  </Link>,
+  </LinkStandalone>,
 ];
 
 export default {
