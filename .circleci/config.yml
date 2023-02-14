@@ -360,6 +360,8 @@ commands:
             cat assume_role_creds_<< parameters.job_type >>.txt >> $BASH_ENV
             source $BASH_ENV
 
+  # Best to remove "circleci-agent step halt" line while doing testing of CircleCI code
+  # to ensure that Terraform is validated at the pull_request stage
   run_only_on_folder_change:
     description: checks whether there is change on the folder in last two commits.
     parameters:
@@ -385,7 +387,6 @@ commands:
               echo "Terraform << parameters.folder >> changed"
             else
               echo "Skipping as there are no changes to << parameters.folder >>"
-              circleci-agent step halt
             fi
 
   checkout_and_attach_workspace:
@@ -1648,6 +1649,20 @@ workflows:
       #      - validate_terraform
       #      - build_docs_dev
       #      - build_storybook
+      - build_docs_with_no_base_url:
+          name: build_docs_staging
+          context: ncu-newskit-site-stage
+          requires:
+            - build_icons
+      - push_s3_general_oidc:
+          name: deploy_to_s3_staging
+          context: build_docs_staging
+          s3Path_docs: s3://ncu-newskit-docs-staging/
+          s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
+          requires:
+            - validate_terraform
+            - build_docs_staging
+            - build_storybook
 
   pull_request_codemod:
     when:
