@@ -2928,7 +2928,7 @@ Object {
         "spaceInline": "space020",
       },
       "minHeight": "sizing090",
-      "spaceInset": "spaceInset030",
+      "spaceInset": "spaceInset040",
       "spaceStack": "space020",
       "startEnhancer": Object {
         "iconSize": "iconSize020",

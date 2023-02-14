@@ -159,7 +159,7 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding: 16px;
 }
 
 .emotion-3::before {
