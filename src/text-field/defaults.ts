@@ -7,8 +7,6 @@ export default {
       width: '100%',
       typographyPreset: 'utilityBody020',
       spaceStack: 'space020',
-      paddingBlock: 'space020',
-      paddingInline: 'space020',
       startEnhancer: {
         iconSize: 'iconSize020',
         spaceInline: 'space020',
@@ -25,8 +23,6 @@ export default {
       width: '100%',
       typographyPreset: 'utilityBody030',
       spaceStack: 'space020',
-      paddingBlock: 'space030',
-      paddingInline: 'space030',
       startEnhancer: {
         iconSize: 'iconSize020',
         spaceInline: 'space020',
@@ -43,8 +39,6 @@ export default {
       width: '100%',
       typographyPreset: 'utilityBody030',
       spaceStack: 'space020',
-      paddingBlock: 'space040',
-      paddingInline: 'space040',
       startEnhancer: {
         iconSize: 'iconSize020',
         spaceInline: 'space020',
