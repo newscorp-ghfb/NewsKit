@@ -65,8 +65,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 16px;
-  padding-block: 16px;
 }
 
 .emotion-2 svg {
@@ -162,8 +160,6 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 16px;
-  padding-block: 16px;
 }
 
 .emotion-3::before {
@@ -797,8 +793,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-2 svg {
@@ -894,8 +888,6 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -1529,8 +1521,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 8px;
-  padding-block: 8px;
 }
 
 .emotion-2 svg {
@@ -1626,8 +1616,6 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 8px;
-  padding-inline: 8px;
-  padding-block: 8px;
 }
 
 .emotion-3::before {

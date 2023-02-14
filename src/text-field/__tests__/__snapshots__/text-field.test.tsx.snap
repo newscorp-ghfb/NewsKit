@@ -65,8 +65,6 @@ exports[`TextField renders TextField Correctly 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -162,8 +160,6 @@ exports[`TextField renders TextField Correctly 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -235,8 +231,6 @@ Object {
   text-overflow: ellipsis;
   margin-inline: 48px;
   margin-block: 32px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -537,8 +531,6 @@ Object {
   text-overflow: ellipsis;
   margin-inline: 48px;
   margin-block: 32px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -882,8 +874,6 @@ exports[`TextField renders TextField with overrides 1`] = `
   min-height: 64px;
   margin-bottom: 16px;
   border-color: #D20600;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -964,8 +954,6 @@ exports[`TextField renders TextField with overrides 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-4::before {
@@ -1154,8 +1142,6 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1251,8 +1237,6 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -1383,8 +1367,6 @@ exports[`TextField renders disabled text field 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1525,8 +1507,6 @@ exports[`TextField renders disabled text field 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-4::before {
@@ -1682,8 +1662,6 @@ exports[`TextField renders large TextField 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 16px;
-  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -1779,8 +1757,6 @@ exports[`TextField renders large TextField 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 16px;
-  padding-block: 16px;
 }
 
 .emotion-1::before {
@@ -1849,8 +1825,6 @@ exports[`TextField renders medium TextField 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1946,8 +1920,6 @@ exports[`TextField renders medium TextField 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -2016,8 +1988,6 @@ exports[`TextField renders small TextField 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 8px;
-  padding-block: 8px;
 }
 
 .emotion-0 svg {
@@ -2113,8 +2083,6 @@ exports[`TextField renders small TextField 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 8px;
-  padding-inline: 8px;
-  padding-block: 8px;
 }
 
 .emotion-1::before {
@@ -2183,8 +2151,6 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -2325,8 +2291,6 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-4::before {
@@ -2481,8 +2445,6 @@ exports[`TextField should render custom placeholder 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -2623,8 +2585,6 @@ exports[`TextField should render custom placeholder 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-4::before {

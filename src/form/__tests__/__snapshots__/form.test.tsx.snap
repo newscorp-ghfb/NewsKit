@@ -3849,8 +3849,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-2 svg {
@@ -3946,8 +3944,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -4073,107 +4069,6 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
-}
-
-.emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 48px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #919191;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #3B3B3B;
-  text-overflow: ellipsis;
-}
-
-.emotion-10 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-10:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-10:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F1F1F1;
-}
-
-.emotion-10:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:valid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-10:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:invalid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-10:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F1F1F1;
 }
 
 .emotion-11 {
@@ -5156,7 +5051,7 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
       Pizza topping
     </label>
     <div
-      class="emotion-10"
+      class="emotion-2"
     >
       <span
         class="emotion-11"
@@ -5426,8 +5321,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-2 svg {
@@ -5523,8 +5416,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -5650,107 +5541,6 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   content: '';
   margin-top: -0.409em;
   display: block;
-}
-
-.emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 48px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  border-style: solid;
-  border-color: #919191;
-  border-width: 1px;
-  border-radius: 8px;
-  color: #3B3B3B;
-  text-overflow: ellipsis;
-}
-
-.emotion-10 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-10:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-10:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-10:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F1F1F1;
-}
-
-.emotion-10:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:valid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-10:disabled {
-  border-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-10:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-10:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  border-color: transparent;
-  background-color: #F1F1F1;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-10:invalid:focus:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-10:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F1F1F1;
 }
 
 .emotion-11 {
@@ -6733,7 +6523,7 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
       Pizza topping
     </label>
     <div
-      class="emotion-10"
+      class="emotion-2"
     >
       <span
         class="emotion-11"
@@ -7010,8 +6800,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -7107,8 +6895,6 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -8881,8 +8667,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-2 svg {
@@ -8915,8 +8699,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -9111,8 +8893,6 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-13 svg {
@@ -9496,8 +9276,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -9593,8 +9371,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -9851,8 +9627,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -9948,8 +9722,6 @@ exports[`FormInput renders with nested inputs 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   padding: 12px;
-  padding-inline: 12px;
-  padding-block: 12px;
 }
 
 .emotion-1::before {
