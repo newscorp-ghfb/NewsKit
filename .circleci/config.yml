@@ -1633,7 +1633,7 @@ workflows:
           requires:
             - validate_deploy_terraform_s3_dev
             - validate_deploy_terraform_s3_staging
-      # Temporarily uncomment these two steps if needing to test S3 deployments on push rather than on merge
+      # Temporarily uncomment these steps if needing to test S3 deployments on push rather than on merge
       - build_docs_with_no_base_url:
           name: build_docs_dev
           context: ncu-newskit-site-dev
@@ -1649,12 +1649,6 @@ workflows:
             - validate_terraform
             - build_docs_dev
             - build_storybook
-      - build_docs_with_no_base_url:
-          name: build_docs_staging
-          context: ncu-newskit-site-stage
-          requires:
-            - build_icons
-            - deploy_to_s3_dev
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
           context: ncu-newskit-site-stage
@@ -1662,7 +1656,7 @@ workflows:
           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
             - validate_terraform
-            - build_docs_staging
+            - build_docs_dev # removed build_docs_staging from this workflow to save 5 mins (docs site behaviour unaffected)
             - build_storybook
 
   pull_request_codemod:
@@ -1846,12 +1840,6 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_dev
 
-      - build_docs_with_no_base_url:
-          name: build_docs_staging
-          context: ncu-newskit-site-stage
-          requires:
-            - build_icons
-            - deploy_to_s3_dev
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
           context: ncu-newskit-site-stage
@@ -1859,7 +1847,7 @@ workflows:
           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
             - deploy_terraform_s3_staging
-            - build_docs_staging
+            - build_docs_dev # removed build_docs_staging from this workflow to save 5 mins (docs site behaviour unaffected)
             - build_storybook
 
       - build_docs:
