@@ -63,7 +63,13 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
                   cellProps={{lg: 8, mdOffset: i === 0 ? 1 : undefined}}
                   subHeadingSpaceStack="space000"
                 >
-                  <TextBlock typographyPreset="editorialParagraph030">
+                  <TextBlock
+                    typographyPreset={{
+                      xs: 'editorialParagraph020',
+                      md: 'editorialParagraph030',
+                    }}
+                    stylePreset="inkBase"
+                  >
                     {description}
                   </TextBlock>
                 </SectionIntroduction>
@@ -75,7 +81,13 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
                   title={title}
                   cellProps={{lg: 8}}
                 >
-                  <TextBlock typographyPreset="editorialParagraph030">
+                  <TextBlock
+                    typographyPreset={{
+                      xs: 'editorialParagraph020',
+                      md: 'editorialParagraph030',
+                    }}
+                    stylePreset="inkBase"
+                  >
                     {description}
                   </TextBlock>
                 </SectionIntroduction>
@@ -109,7 +121,13 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
           title={utilities.title}
           cellProps={{lg: 8}}
         >
-          <TextBlock typographyPreset="editorialParagraph030">
+          <TextBlock
+            typographyPreset={{
+              xs: 'editorialParagraph020',
+              md: 'editorialParagraph030',
+            }}
+            stylePreset="inkBase"
+          >
             {utilities.description}
           </TextBlock>
         </SectionIntroduction>
@@ -160,7 +178,13 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
             title={deprecated.title}
             cellProps={{lg: 8}}
           >
-            <TextBlock typographyPreset="editorialParagraph030">
+            <TextBlock
+              typographyPreset={{
+                xs: 'editorialParagraph020',
+                md: 'editorialParagraph030',
+              }}
+              stylePreset="inkBase"
+            >
               {deprecated.description}
             </TextBlock>
           </SectionIntroduction>
