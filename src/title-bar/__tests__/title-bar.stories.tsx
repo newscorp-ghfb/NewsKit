@@ -76,7 +76,7 @@ export const StoryTitleBar = () => (
           },
         }}
       >
-        H6 with overwritten style preset and space inset
+        H6 with overwritten style preset
       </TitleBar>
     </ThemeProvider>
     <br />

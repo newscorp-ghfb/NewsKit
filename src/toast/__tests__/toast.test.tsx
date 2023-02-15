@@ -125,7 +125,8 @@ describe('Toast', () => {
         title,
         actions,
         overrides: {
-          spaceInset: '20px',
+          paddingInline: '20px',
+          paddingBlock: '20px',
           stylePreset: 'toastWithOverrides',
           icon: {
             spaceInline: 'space040',

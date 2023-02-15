@@ -4258,6 +4258,7 @@ exports[`Select renders Select with logical props 1`] = `
   border-radius: 8px;
   color: #3B3B3B;
   text-overflow: ellipsis;
+  margin-inline: 40px;
 }
 
 .emotion-0 svg {
