@@ -33,7 +33,6 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
 
     const {fontSize, lineHeight, fontFamily, fontWeight} = typographyPreset;
 
-    //* * Following code to be removed once only Font Metrics will be supported by newsKit
     const [fontStackPeek] = fontFamily.split(',');
     const fontFamilyObject: FontConfig | undefined = Object.values(
       props.theme.fonts,
