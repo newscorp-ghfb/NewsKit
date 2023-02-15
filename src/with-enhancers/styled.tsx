@@ -8,6 +8,7 @@ import {
   styled,
 } from '../utils/style';
 import {TextFieldSize} from '../text-field/types';
+import {logicalMarginProps} from '../utils/logical-properties';
 
 const getMarginDirection = ({
   marginPosition,
@@ -71,4 +72,5 @@ export const StyledInputContainer = styled.div<
       isDisabled: state === 'disabled',
       isValid: state === 'valid',
     })};
+  ${({componentDefaultsPath}) => logicalMarginProps(componentDefaultsPath)};
 `;
