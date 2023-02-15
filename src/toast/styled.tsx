@@ -96,7 +96,7 @@ export const StyledToastContainer = styled.div<ToastProps>`
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
-  ${logicalProps()}
+  ${logicalProps('toast')}
 `;
 
 export const StyledToastInnerContainer = styled.div`

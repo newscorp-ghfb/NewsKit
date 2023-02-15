@@ -336,7 +336,6 @@ exports[`Assistive Text should render logical props overrides 1`] = `
   min-height: 12px;
   color: #6A6A6A;
   margin-block: 30px;
-  padding-block: 30px;
 }
 
 .emotion-0:disabled {

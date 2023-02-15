@@ -90,7 +90,8 @@ export const StoryOverrides = () => (
       aria-label="overrides"
       overrides={{
         stylePreset: 'customInlineMessage',
-        spaceInset: 'spaceInset050',
+        paddingBlock: 'space050',
+        paddingInline: 'space050',
         icon: {
           spaceInline: 'space050',
         },

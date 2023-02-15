@@ -824,10 +824,10 @@ const selectWithModalVariants = [
       overrides: {
         button: {width: '100%'},
         modal: {
-          header: {spaceInset: 'space000'},
+          header: {paddingInline: 'space000', paddingBlock: 'space000'},
           panel: {maxHeight: '50vh', maxWidth: '280px'},
-          content: {spaceInset: 'space010'},
-          closeButton: {spaceInset: 'space000'},
+          content: {paddingInline: 'space010', paddingBlock: 'space010'},
+          closeButton: {paddingInline: 'space000', paddingBlock: 'space000'},
         },
       },
     },

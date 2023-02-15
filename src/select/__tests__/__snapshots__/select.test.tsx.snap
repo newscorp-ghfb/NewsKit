@@ -1584,7 +1584,8 @@ exports[`Select in Modal render Select 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -1694,7 +1695,8 @@ exports[`Select in Modal render Select 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -1721,8 +1723,8 @@ exports[`Select in Modal render Select 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2505,20 +2507,22 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-6 {
@@ -3264,7 +3268,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -3374,7 +3379,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -3401,8 +3407,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

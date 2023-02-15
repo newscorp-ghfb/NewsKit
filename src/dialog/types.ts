@@ -1,5 +1,6 @@
 import React, {HTMLAttributes} from 'react';
 import {TransitionToken} from '../theme';
+import {LogicalPaddingProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 export interface BaseDialogOverridesProps {
@@ -15,15 +16,11 @@ export interface BaseDialogOverridesProps {
   };
   header?: {
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
-  };
-  content?: {
-    spaceInset?: MQ<string>;
-  };
+  } & LogicalPaddingProps;
+  content?: LogicalPaddingProps;
   closeButton?: {
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
-  };
+  } & LogicalPaddingProps;
 }
 
 export interface BaseDialogViewProps extends HTMLAttributes<HTMLDivElement> {

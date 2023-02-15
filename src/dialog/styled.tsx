@@ -1,8 +1,8 @@
 import {MoveFocusInside} from 'react-focus-lock';
+import {logicalPaddingProps} from '../utils/logical-properties';
 import {
   styled,
   getStylePreset,
-  getResponsiveSpace,
   getSizingCssFromTheme,
   getTypographyPreset,
   css,
@@ -75,18 +75,17 @@ export const StyledDialogHeader = styled.div<BaseDialogViewOverridesAndPathProps
   display: flex;
   grid-area: header;
   align-items: center;
-  ${({path}) =>
-    getResponsiveSpace('padding', `${path}.header`, 'header', 'spaceInset')}
+
   ${({path}) => getStylePreset(`${path}.header`, 'header')};
   ${({path}) => getTypographyPreset(`${path}.header`, 'header')};
+  ${({path}) => logicalPaddingProps(`${path}.header`, 'header')}
 `;
 
 export const StyledDialogContent = styled.div<BaseDialogViewOverridesAndPathProps>`
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  ${({path}) =>
-    getResponsiveSpace('padding', `${path}.content`, 'content', 'spaceInset')}
+  ${({path}) => logicalPaddingProps(`${path}.content`, 'content')}
 `;
 
 export const StyledCloseButtonContainer = styled.div<
@@ -97,13 +96,7 @@ export const StyledCloseButtonContainer = styled.div<
   box-sizing: border-box;
   align-self: center;
 
-  ${({path}) =>
-    getResponsiveSpace(
-      'padding',
-      `${path}.closeButton`,
-      'closeButton',
-      'spaceInset',
-    )};
+  ${({path}) => logicalPaddingProps(`${path}.closeButton`, 'closeButton')}
   ${({closePosition}) =>
     closePosition === 'left' ? `padding-right: 0;` : `padding-left: 0;`}
 `;

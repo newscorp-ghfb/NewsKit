@@ -245,8 +245,8 @@ describe('Accordion', () => {
             stylePreset: 'accordionHeaderCustom',
             typographyPreset: 'utilityButton020',
             spaceInline: 'space030',
-            paddingBlock: 'spaceInset040',
-            paddingInline: 'spaceInset040',
+            paddingBlock: 'space040',
+            paddingInline: 'space040',
             label: {
               typographyPreset: 'utilityButton020',
             },

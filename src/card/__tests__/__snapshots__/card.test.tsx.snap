@@ -247,8 +247,9 @@ exports[`Card renders actions section with given component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -619,8 +620,9 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -991,8 +993,9 @@ exports[`Card renders actions section with overrides for padding 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2669,8 +2672,9 @@ exports[`Card renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4669,8 +4673,9 @@ exports[`Card with href renders correctly with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6505,8 +6510,9 @@ exports[`CardInset renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

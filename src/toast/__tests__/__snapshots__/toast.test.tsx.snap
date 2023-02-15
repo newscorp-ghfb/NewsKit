@@ -1074,7 +1074,6 @@ exports[`Toast Component renders with actions 1`] = `
   .emotion-0 {
   background-color: #3B3B3B;
   border-radius: 8px;
-  padding: 12px;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1084,6 +1083,8 @@ exports[`Toast Component renders with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1208,9 +1209,10 @@ exports[`Toast Component renders with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1361,7 +1363,6 @@ exports[`Toast Component renders with content as react element 1`] = `
   .emotion-0 {
   background-color: #3B3B3B;
   border-radius: 8px;
-  padding: 12px;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1371,6 +1372,8 @@ exports[`Toast Component renders with content as react element 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1487,7 +1490,6 @@ exports[`Toast Component renders with content as string and link 1`] = `
   .emotion-0 {
   background-color: #3B3B3B;
   border-radius: 8px;
-  padding: 12px;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1497,6 +1499,8 @@ exports[`Toast Component renders with content as string and link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1726,7 +1730,6 @@ exports[`Toast Component renders with default props 1`] = `
   .emotion-0 {
   background-color: #3B3B3B;
   border-radius: 8px;
-  padding: 12px;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1736,6 +1739,8 @@ exports[`Toast Component renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1844,7 +1849,6 @@ exports[`Toast Component renders with icon 1`] = `
   .emotion-0 {
   background-color: #3B3B3B;
   border-radius: 8px;
-  padding: 12px;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1854,6 +1858,8 @@ exports[`Toast Component renders with icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -2021,7 +2027,6 @@ exports[`Toast Component renders with logical props 1`] = `
   .emotion-0 {
   background-color: #3B3B3B;
   border-radius: 8px;
-  padding: 12px;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2033,6 +2038,7 @@ exports[`Toast Component renders with logical props 1`] = `
   align-items: center;
   margin-block: 50px;
   padding-inline: 30px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -2141,7 +2147,6 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   .emotion-0 {
   background-color: #fdda9b;
   border-radius: 2px;
-  padding: 20px;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2151,6 +2156,8 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-inline: 20px;
+  padding-block: 20px;
 }
 
 .emotion-0 svg {
@@ -2331,9 +2338,10 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2510,7 +2518,6 @@ exports[`Toast Component renders with title 1`] = `
   .emotion-0 {
   background-color: #3B3B3B;
   border-radius: 8px;
-  padding: 12px;
   box-sizing: border-box;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2520,6 +2527,8 @@ exports[`Toast Component renders with title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
