@@ -97,11 +97,7 @@ const commonOverridesRows = [
   {
     attribute: 'button.spaceInset(deprecated)',
     type: 'MQ<string>',
-    default: [
-      'small = spaceInset020',
-      'medium = spaceInset020',
-      'large = spaceInset030',
-    ],
+    default: ['small = space020', 'medium = space020', 'large = space030'],
     description: `Use paddingBlock and paddingInline instead. If provided, overrides the button padding.`,
   },
   {
@@ -187,7 +183,7 @@ const commonOverridesRows = [
   {
     attribute: 'panel.spaceInset(deprecated)',
     type: 'MQ<string>',
-    default: 'spaceInset020',
+    default: 'space020',
     description: `Use paddingBlock and paddingInline instead. If provided, overrides the panel padding.`,
   },
   {
@@ -237,7 +233,7 @@ const selectOptionOverrides = [
     type: 'MQ<string>',
     default: [
       'small = spaceInsetSquish010',
-      'medium = spaceInset020',
+      'medium = space020',
       'large = spaceInsetStretch030',
     ],
     description: `Use paddingBlock and paddingInline instead.`,

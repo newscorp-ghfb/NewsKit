@@ -41,7 +41,8 @@ const Sidebar: React.FC<SidebarProps> = ({
           hideOverlay
           overrides={{
             content: {
-              spaceInset: 'spaceInset000',
+              paddingInline: 'space000',
+              paddingBlock: 'space000',
             },
             panel: {
               stylePreset: 'sidebar',

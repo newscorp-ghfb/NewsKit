@@ -466,7 +466,7 @@ const ScrollComponent = (layoutProps: LayoutProps) => (
               type: 'ButtonOverrides',
               default: [
                 'stylePreset: iconButtonSolidPrimary',
-                'spaceInset: spaceInset000',
+                'spaceInset: space000',
               ],
               description: (
                 <>

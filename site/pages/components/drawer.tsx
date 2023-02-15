@@ -576,7 +576,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'content.spaceInset',
               type: 'MQ<string>',
-              default: 'spaceInset050',
+              default: 'space050',
               description:
                 'If provided, overrides the padding space set in the drawer content container',
             },
@@ -590,7 +590,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'closeButton.spaceInset',
               type: 'MQ<string>',
-              default: 'spaceInset020',
+              default: 'space020',
               description:
                 'If provided, overrides the padding space set in the drawer close icon button',
             },

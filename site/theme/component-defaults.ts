@@ -172,16 +172,18 @@ export const componentDefaults = {
     medium: {
       typographyPreset: 'utilityButton020',
       stylePreset: 'flagBrand',
-      spaceInset: 'spaceInsetSquish010',
+      paddingInline: 'space020',
+      paddingBlock: 'space010',
     },
     large: {
       typographyPreset: 'utilityButton030',
       stylePreset: 'flagBrand',
-      spaceInset: 'spaceInsetSquish010',
+      paddingInline: 'space020',
+      paddingBlock: 'space010',
     },
   },
   inlineMessage: {
-    spaceInset: 'spaceInset040',
+    spaceInset: 'space040',
     width: '100%',
     content: {
       message: {

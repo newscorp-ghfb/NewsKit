@@ -480,7 +480,7 @@ const ToastComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'spaceInset(deprecated)',
               type: 'MQ<string>',
-              default: 'spaceInset030',
+              default: 'space030',
               description:
                 'This property is deprecated. Use paddingInline and paddingBlock instead.',
             },

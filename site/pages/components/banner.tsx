@@ -487,7 +487,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'spaceInset(deprecated)',
               type: 'MQ<string>',
-              default: 'spaceInset045',
+              default: 'space045',
               description:
                 'Use paddingInline and paddingBlock instead. Overrides the space inset applied to the banner container. It can take four space tokens to specify the padding for each side of the banner. These four space tokens can be used on breakpoints.',
             },

@@ -119,11 +119,7 @@ const commonOverridesRows = [
   {
     attribute: 'spaceInset(deprecated)',
     type: 'MQ<string>',
-    default: [
-      'small = spaceInset020',
-      'medium = spaceInset030',
-      'large = spaceInset030',
-    ],
+    default: ['small = space020', 'medium = space030', 'large = space030'],
     description: `This property is deprecated. Use paddingInline and paddingBlock instead.`,
   },
   {

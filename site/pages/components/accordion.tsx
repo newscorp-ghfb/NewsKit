@@ -489,13 +489,13 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'panel.paddingBlock',
               type: 'MQ<string>',
-              default: 'spaceInset030',
+              default: 'space030',
               description: '',
             },
             {
               attribute: 'panel.paddingInline',
               type: 'MQ<string>',
-              default: 'spaceInset030',
+              default: 'space030',
               description: '',
             },
           ],

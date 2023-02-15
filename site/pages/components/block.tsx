@@ -102,21 +102,6 @@ const BlockComponent = (layoutProps: LayoutProps) => (
             ],
           },
           {
-            name: 'spaceInset',
-            propName: 'spaceInset',
-            options: [
-              {
-                label: 'Default',
-                value: undefined,
-                isDefault: true,
-              },
-              {
-                label: 'spaceInset030',
-                value: 'spaceInset030',
-              },
-            ],
-          },
-          {
             name: 'stylePreset',
             propName: 'stylePreset',
             options: [

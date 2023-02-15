@@ -26,7 +26,8 @@ export const Step = ({media, stepText, timerText}: StepProps) => (
         overrides={{
           stylePreset: 'stepFlag',
           typographyPreset: 'utilityLabel020',
-          spaceInset: 'spaceInsetSquish020',
+          paddingInline: 'space030',
+          paddingBlock: 'space020',
         }}
       >
         {stepText}
@@ -36,7 +37,8 @@ export const Step = ({media, stepText, timerText}: StepProps) => (
         overrides={{
           stylePreset: 'timerFlag',
           typographyPreset: 'utilityLabel020',
-          spaceInset: 'spaceInsetSquish020',
+          paddingInline: 'space030',
+          paddingBlock: 'space020',
         }}
       >
         <IconFilledTimer /> {timerText}

@@ -528,13 +528,13 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'panel.paddingBlock',
               type: 'MQ<string>',
-              default: 'spaceInset020',
+              default: 'space020',
               description: 'Overrides the inset space of the tooltip panel.',
             },
             {
               attribute: 'panel.paddingInline',
               type: 'MQ<string>',
-              default: 'spaceInset020',
+              default: 'space020',
               description: 'Overrides the inset space of the tooltip panel.',
             },
             {
