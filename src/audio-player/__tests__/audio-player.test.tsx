@@ -86,7 +86,7 @@ describe('Audio Player', () => {
       mediaElement[k] = jest.fn();
     });
     window.open = jest.fn();
-    jest.useFakeTimers(); // FIXME 'legacy');
+    jest.useFakeTimers();
     setTimeoutSpy = jest.spyOn(global, 'setTimeout');
     clearTimeoutSpy = jest.spyOn(global, 'clearTimeout');
   });
