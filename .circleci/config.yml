@@ -1064,11 +1064,12 @@ jobs:
           at: ~/project
       - aws-cli/setup:
           role-arn: << parameters.aws_assume_role_arn >>
-          profile-name: "NEWSKIT-OIDC-PROFILE"
-          role-session-name: "${CIRCLE_WORKFLOW_ID}-s3-push"
+          profile-name: 'NEWSKIT-OIDC-PROFILE'
+          role-session-name: '${CIRCLE_WORKFLOW_ID}-s3-push'
       - run:
           name: Upload sites to given S3 paths
-          command: | # output current date time to a HTML file to allow a in-browser that check CDN does not return old files
+          command:
+            | # output current date time to a HTML file to allow a in-browser that check CDN does not return old files
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
@@ -1433,7 +1434,7 @@ workflows:
         value: << pipeline.git.branch >>
     jobs:
       - install_deps
-      - cypress/install
+      - cypress/install:
           yarn: true
       - build_icons:
           requires:
