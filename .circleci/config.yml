@@ -86,16 +86,6 @@ executors:
     resource_class: large
 
   # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
-  flux-deploy:
-    docker:
-      - image: nukengprodservice/flux-k8s:latest
-
-  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
-  kubectl-deploy:
-    docker:
-      - image: nukengprodservice/kubectl:0.1.51
-
-  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
   terraform:
     docker:
       - image: hashicorp/terraform:0.12.28
@@ -1150,100 +1140,6 @@ jobs:
           command: |
             echo "If you see this message, it means all the Terraform is valid"
 
-  eks_flux_deploy:
-    # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
-    parameters:
-      environment:
-        type: string
-      substitution_dir:
-        type: string
-        default: 'eks/manifests'
-      flux_repo_url:
-        type: string
-        default: 'git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git'
-      flux_repo_name:
-        type: string
-        default: 'ncu-flux-newskit-site'
-      deployment_type:
-        type: string
-        default: dev
-    executor: flux-deploy
-    steps:
-      - setup_remote_docker:
-          version: 20.10.7
-      - checkout
-      - run:
-          name: Push config to flux repo
-          command: |
-            apk add --update npm
-            if [ << parameters.deployment_type >> = release ]; then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-release
-            elif [ << parameters.deployment_type >> = prod ]; then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-prod-$CIRCLE_SHA1
-            else
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-dev-$CIRCLE_SHA1
-            fi
-            config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
-            out_dir=product-platforms-<< parameters.environment >>
-            flux_repo_target=<< parameters.environment >>/eks
-            git config --global user.email "ncu-product-platforms@news.co.uk"
-            git config --global user.name "Product Platforms Service"
-            flux-generate "${CIRCLE_SHA1}" $config_values << parameters.substitution_dir >> $out_dir
-            flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d $out_dir -t $flux_repo_target -m "${CIRCLE_SHA1}_$out_dir"
-      - slack/notify:
-          <<: *slack_notify
-
-  eks_kubectl_deploy:
-    parameters:
-      environment:
-        type: string
-        description: Deployment environment
-      aws_region:
-        description: AWS Region
-        type: string
-        default: '${AWS_DEFAULT_REGION}'
-      aws_access_key_id:
-        description: AWS Access Key Id
-        type: string
-        default: '${AWS_ACCESS_KEY_ID}'
-      aws_secret_key:
-        description: AWS Secret Key
-        type: string
-        default: '${AWS_SECRET_ACCESS_KEY}'
-      aws_assume_role_arn:
-        description: AWS ARN For Assume Role
-        type: string
-        default: '${AWS_ASSUME_ROLE_ARN}'
-    executor: kubectl-deploy
-    steps:
-      - checkout
-      - setup_remote_docker:
-          version: 20.10.7
-      - run:
-          name: Deploy to EKS
-          command: |
-            apk --no-cache add openssh git bash
-            export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
-            git config --global user.email "ncu-product-platforms@news.co.uk"
-            git config --global user.name "Product Platforms Service"
-            git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
-            export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
-            export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
-            export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
-            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
-            export CLUSTER_NAME=ceng-eks-<< parameters.environment >>
-            export VERSION=$(jq -r .version package.json)
-            echo "export VERSION=${VERSION}" >> $BASH_ENV
-
-            nukubectl | grep "export AWS_" > auth.env
-            export $(egrep -v '^#' auth.env | xargs)
-            rm auth.env
-
-            cd flux/<< parameters.environment >>/eks
-            kubectl apply -f .
-      - slack/notify:
-          <<: *slack_notify
-
   test_newskit_in_nextjs_app:
     executor: cypress
     steps:
@@ -1616,7 +1512,7 @@ workflows:
           name: validate_deploy_terraform_s3_prod
           package: s3/prod-newskit
           context: ncu-newskit-site-stage
-          apply: true # FIXME Can set true while doing testing of CircleCI code
+          apply: false # Can set true while doing testing of CircleCI code
           tf_env: true
           environment: prod
           requires:
@@ -1660,29 +1556,6 @@ workflows:
       #      - validate_terraform
       #      - build_docs_dev
       #      - build_storybook
-      #- push_s3_general_oidc:
-      #    name: deploy_to_s3_staging
-      #    context: ncu-newskit-site-stage
-      #    s3Path_docs: s3://ncu-newskit-docs-staging/
-      #    s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
-      #    requires:
-      #      - validate_terraform
-      #      - build_docs_dev # removed build_docs_staging from this workflow to save 5 mins (docs site behaviour unaffected)
-      #      - build_storybook
-      - build_docs_with_no_base_url:
-          name: build_docs_prod_temp
-          context: ncu-newskit-site-prod
-          requires:
-            - build_icons
-            - validate_terraform
-      - push_s3_general_oidc:
-          name: deploy_to_s3_prod
-          context: ncu-newskit-site-prod
-          s3Path_docs: s3://ncu-newskit-docs-prod/
-          s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
-          requires:
-            - build_docs_prod_temp
-            - build_storybook
 
   pull_request_codemod:
     when:
