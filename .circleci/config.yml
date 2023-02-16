@@ -4,6 +4,7 @@ orbs:
   slack: circleci/slack@4.10.1
   aws-cli: circleci/aws-cli@3.1
   github-cli: circleci/github-cli@1.0.4
+  cypress: cypress-io/cypress@2.2.0
 
 slack_notify: &slack_notify
   event: 'fail'
@@ -473,31 +474,6 @@ jobs:
             - node_modules/*
             - .storybook/private-fonts
             - src/version-number.json
-      - slack/notify:
-          <<: *slack_notify
-
-  install_cypress:
-    <<: *cypress_defaults
-    executor: cypress
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-cypress-{{ checksum "yarn.lock" }}
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: install cypress
-          command: make install_cypress
-      - save_cache:
-          key: v1-cypress-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache
-      - persist_to_workspace:
-          root: ~/project
-          paths:
-            - .cache
-            - cypress/*
       - slack/notify:
           <<: *slack_notify
 
@@ -1457,7 +1433,8 @@ workflows:
         value: << pipeline.git.branch >>
     jobs:
       - install_deps
-      - install_cypress
+      - cypress/install
+          yarn: true
       - build_icons:
           requires:
             - install_deps
@@ -1486,7 +1463,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
-            - install_cypress
+            - cypress/install
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
@@ -1501,23 +1478,23 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_docs_pr_with_no_base_url
-            - install_cypress
+            - cypress/install
             - build_storybook
       - no_visual_changes:
           type: approval
           requires:
             - build_storybook
-            - install_cypress
+            - cypress/install
       - docs_and_comps_visual_changes:
           type: approval
           requires:
             - build_storybook
-            - install_cypress
+            - cypress/install
       - docs_visual_changes:
           type: approval
           requires:
             - build_storybook
-            - install_cypress
+            - cypress/install
 
       # Jobs for realising unstable NPM version
       - approve_publish_npm_pr:
@@ -1553,13 +1530,13 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_docs_pr_with_no_base_url
-            - install_cypress
+            - cypress/install
             - test_visual_comps_percy
       - test_visual_docs_percy_2:
           context: ncu-product-platforms-context
           requires:
             - build_docs_pr_with_no_base_url
-            - install_cypress
+            - cypress/install
             - docs_visual_changes
       - skip_percy_comps_check_2:
           context: ncu-product-platforms-context
@@ -1740,8 +1717,6 @@ workflows:
             - init_aws
       - install_deps:
           context: ncu-product-platforms-context
-      - install_cypress:
-          context: ncu-product-platforms-context
       - build_icons:
           context: ncu-product-platforms-context
           requires:
@@ -1774,7 +1749,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
-            - install_cypress
+            - cypress/install
       - build_docs_with_no_base_url:
           name: build_docs_dev
           context: ncu-newskit-site-dev
@@ -1790,7 +1765,7 @@ workflows:
           context: ncu-newskit-site-dev
           requires:
             - build_docs_dev
-            - install_cypress
+            - cypress/install
             - build_storybook
       - test_newskit_in_nextjs_app:
           context: ncu-product-platforms-context
@@ -1806,7 +1781,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_docs_dev
-            - install_cypress
+            - cypress/install
 
       # Jobs for deploying unstable NewsKit version
       - approve_publish_npm_dev:
@@ -1953,9 +1928,9 @@ workflows:
       - install_deps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
-      - install_cypress:
+      - cypress/install:
+          yarn: true
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
       - build_icons:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -2016,7 +1991,7 @@ workflows:
           context: ncu-newskit-site-prod
           requires:
             - build_docs_prod
-            - install_cypress
+            - cypress/install
             - build_storybook
       - build_push_docker_ecr:
           <<: *only_on_version_tag
