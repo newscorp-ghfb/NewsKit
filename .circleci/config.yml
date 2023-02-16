@@ -1972,7 +1972,7 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - build_test_e2e
-            - install_cypress
+            - cypress/install
       - build_docs:
           <<: *only_on_version_tag
           name: build_docs_prod
