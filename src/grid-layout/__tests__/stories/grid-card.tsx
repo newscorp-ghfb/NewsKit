@@ -200,7 +200,12 @@ const StyledCard = styled(GridLayout)`
   ${props => getStylePreset('', '')(props)}
 `;
 
-export const Card = ({children, ...props}: GridLayoutProps) => {
+export const Card = ({
+  children,
+  ...props
+}: Omit<GridLayoutProps, 'overrides'> & {
+  overrides: GridLayoutProps['overrides'] & {stylePreset: string};
+}) => {
   const {areas} = props;
 
   return (
