@@ -3309,7 +3309,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Popover offset should be applied with pointer and px distance override 1`] = `
+exports[`Popover offset should be applied with pointer and px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -3638,7 +3638,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
 </DocumentFragment>
 `;
 
-exports[`Popover offset should be applied with pointer and token distance override 1`] = `
+exports[`Popover offset should be applied with pointer and token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -3967,7 +3967,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
 </DocumentFragment>
 `;
 
-exports[`Popover offset should not be applied with pointer and invalid token distance override 1`] = `
+exports[`Popover offset should not be applied with pointer and invalid token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -4296,7 +4296,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 </DocumentFragment>
 `;
 
-exports[`Popover offset should not be applied with pointer and non-px distance override 1`] = `
+exports[`Popover offset should not be applied with pointer and non-px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -4935,7 +4935,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Popover pointer padding should be applied with px distance override 1`] = `
+exports[`Popover pointer padding should be applied with px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -5264,7 +5264,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 </DocumentFragment>
 `;
 
-exports[`Popover pointer padding should be applied with token distance override 1`] = `
+exports[`Popover pointer padding should be applied with token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -5593,7 +5593,7 @@ exports[`Popover pointer padding should be applied with token distance override 
 </DocumentFragment>
 `;
 
-exports[`Popover pointer padding should not be applied with invalid token distance override 1`] = `
+exports[`Popover pointer padding should not be applied with invalid token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -5922,7 +5922,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 </DocumentFragment>
 `;
 
-exports[`Popover pointer padding should not be applied with non-px distance override 1`] = `
+exports[`Popover pointer padding should not be applied with non-px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"

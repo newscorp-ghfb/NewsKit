@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip offset should be applied with pointer and px distance override 1`] = `
+exports[`Tooltip offset should be applied with pointer and px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-describedby="floating-MOCK-ID"
@@ -137,7 +137,7 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
 </DocumentFragment>
 `;
 
-exports[`Tooltip offset should be applied with pointer and token distance override 1`] = `
+exports[`Tooltip offset should be applied with pointer and token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-describedby="floating-MOCK-ID"
@@ -274,7 +274,7 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
 </DocumentFragment>
 `;
 
-exports[`Tooltip offset should not be applied with pointer and invalid token distance override 1`] = `
+exports[`Tooltip offset should not be applied with pointer and invalid token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-describedby="floating-MOCK-ID"
@@ -411,7 +411,7 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
 </DocumentFragment>
 `;
 
-exports[`Tooltip offset should not be applied with pointer and non-px distance override 1`] = `
+exports[`Tooltip offset should not be applied with pointer and non-px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-describedby="floating-MOCK-ID"
@@ -666,7 +666,7 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Tooltip pointer padding should be applied with px distance override 1`] = `
+exports[`Tooltip pointer padding should be applied with px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-describedby="floating-MOCK-ID"
@@ -803,7 +803,7 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
 </DocumentFragment>
 `;
 
-exports[`Tooltip pointer padding should be applied with token distance override 1`] = `
+exports[`Tooltip pointer padding should be applied with token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-describedby="floating-MOCK-ID"
@@ -940,7 +940,7 @@ exports[`Tooltip pointer padding should be applied with token distance override 
 </DocumentFragment>
 `;
 
-exports[`Tooltip pointer padding should not be applied with invalid token distance override 1`] = `
+exports[`Tooltip pointer padding should not be applied with invalid token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-describedby="floating-MOCK-ID"
@@ -1077,7 +1077,7 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
 </DocumentFragment>
 `;
 
-exports[`Tooltip pointer padding should not be applied with non-px distance override 1`] = `
+exports[`Tooltip pointer padding should not be applied with non-px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-describedby="floating-MOCK-ID"
