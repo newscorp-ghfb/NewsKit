@@ -234,7 +234,12 @@ export const CardMedia = ({src}: {src: string}) => {
   const {useAreas} = useCardContext();
   return (
     <StyledCardMedia useAreas={useAreas}>
-      <img src={src} alt="" style={{maxWidth: '100%'}} />
+      <Image
+        loadingAspectRatio="3:2"
+        src={src}
+        alt=""
+        style={{maxWidth: '100%'}}
+      />
     </StyledCardMedia>
   );
 };
