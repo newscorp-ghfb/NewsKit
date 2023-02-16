@@ -1612,6 +1612,15 @@ workflows:
           environment: staging
           requires:
             - init_aws
+      - deploy_terraform_oidc:
+          name: validate_deploy_terraform_s3_prod
+          package: s3/prod-newskit
+          context: ncu-newskit-site-stage
+          apply: true # FIXME Can set true while doing testing of CircleCI code
+          tf_env: true
+          environment: prod
+          requires:
+            - init_aws
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
@@ -1634,6 +1643,7 @@ workflows:
           requires:
             - validate_deploy_terraform_s3_dev
             - validate_deploy_terraform_s3_staging
+            - validate_deploy_terraform_s3_prod
       # Temporarily uncomment these steps if needing to test S3 deployments on push rather than on merge
       #- build_docs_with_no_base_url:
       #    name: build_docs_dev
@@ -1659,6 +1669,20 @@ workflows:
       #      - validate_terraform
       #      - build_docs_dev # removed build_docs_staging from this workflow to save 5 mins (docs site behaviour unaffected)
       #      - build_storybook
+      - build_docs_with_no_base_url:
+          name: build_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_icons
+            - validate_terraform
+      - push_s3_general_oidc:
+          name: deploy_to_s3_prod
+          context: ncu-newskit-site-prod
+          s3Path_docs: s3://ncu-newskit-docs-prod/
+          s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
+          requires:
+            - build_docs_prod
+            - build_storybook
 
   pull_request_codemod:
     when:
@@ -1736,6 +1760,15 @@ workflows:
           apply: true
           tf_env: true
           environment: staging
+          requires:
+            - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_prod
+          package: s3/prod-newskit
+          context: ncu-newskit-site-prod
+          apply: true
+          tf_env: true
+          environment: prod
           requires:
             - init_aws
       - install_deps:
@@ -1851,30 +1884,20 @@ workflows:
             - build_docs_dev # removed build_docs_staging from this workflow to save 5 mins (docs site behaviour unaffected)
             - build_storybook
 
-      - build_docs:
-          name: build_docs_prod_link
+      - build_docs_with_no_base_url:
+          name: build_docs_prod
           context: ncu-newskit-site-prod
           requires:
             - deploy_to_s3_staging
-      - build_push_docker_ecr:
-          name: build_push_docker_ecr_prod
-          context: ncu-product-platforms-context
-          docker_version: prod
+      - push_s3_general_oidc:
+          name: deploy_to_s3_prod
+          context: ncu-newskit-site-stage
+          s3Path_docs: s3://ncu-newskit-docs-prod/
+          s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
           requires:
-            - build_docs_prod_link
-      - eks_flux_deploy:
-          name: eks_flux_deploy_prod
-          context: ncu-newskit-site-prod
-          environment: prod
-          deployment_type: prod
-          requires:
-            - build_push_docker_ecr_prod
-      - eks_kubectl_deploy:
-          name: eks_kubectl_deploy_prod
-          context: ncu-newskit-site-prod
-          environment: prod
-          requires:
-            - eks_flux_deploy_prod
+            - deploy_terraform_s3_prod
+            - build_docs_prod
+            - build_storybook
       # end
 
   main_codemod:
@@ -1950,6 +1973,15 @@ workflows:
           environment: staging
           requires:
             - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_prod
+          package: s3/prod-newskit
+          context: ncu-newskit-site-prod
+          apply: true
+          tf_env: true
+          environment: prod
+          requires:
+            - init_aws
       - install_deps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -1997,7 +2029,7 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      - build_docs:
+      - build_docs_with_no_base_url:
           <<: *only_on_version_tag
           name: build_docs_prod
           context: ncu-newskit-site-prod
@@ -2065,21 +2097,21 @@ workflows:
             - build_docs_staging
             - build_storybook
 
-      - eks_flux_deploy:
-          <<: *only_on_version_tag
-          name: eks_flux_deploy_prod
+      - build_docs_with_no_base_url:
+          name: build_docs_prod
           context: ncu-newskit-site-prod
-          environment: prod
-          deployment_type: release
           requires:
+            - build_icons
             - deploy_to_s3_staging
-      - eks_kubectl_deploy:
-          <<: *only_on_version_tag
-          name: eks_kubectl_deploy_prod
+      - push_s3_general_oidc:
+          name: deploy_to_s3_prod
           context: ncu-newskit-site-prod
-          environment: prod
+          s3Path_docs: s3://ncu-newskit-docs-prod/
+          s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
           requires:
-            - eks_flux_deploy_prod
+            - deploy_terraform_s3_prod
+            - build_docs_prod
+            - build_storybook
 
   on_release_version_tag_codemod:
     # Workflow's jobs triggered by the bump_version_codemod make script, which creates and pushes a new version tag e.g: "codemod-v5.0.1".
