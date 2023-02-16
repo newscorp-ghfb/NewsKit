@@ -1436,6 +1436,7 @@ workflows:
       - install_deps
       - cypress/install:
           yarn: true
+          executor: node
       - build_icons:
           requires:
             - install_deps
@@ -1931,6 +1932,7 @@ workflows:
           context: ncu-product-platforms-context
       - cypress/install:
           yarn: true
+          executor: node
           <<: *only_on_version_tag
       - build_icons:
           <<: *only_on_version_tag
