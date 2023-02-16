@@ -2047,7 +2047,7 @@ workflows:
           name: test_e2e_docs_prod
           context: ncu-newskit-site-prod
           requires:
-            - build_docs_prod
+            - build_docs_versioned
             - install_cypress
             - build_storybook
       - build_push_docker_ecr:
