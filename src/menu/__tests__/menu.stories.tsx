@@ -213,6 +213,11 @@ const menuCustomThemeObject: CreateThemeArgs = {
           outlineOffset: '5px',
         },
       },
+      menuSubCustom: {
+        base: {
+          backgroundColor: '{{colors.amber030}}',
+        },
+      },
     },
   },
 };
@@ -1643,7 +1648,11 @@ export const StoryMenuSubOverrides = () => {
           }}
           overrides={{
             ...menuItemOverrides,
-            list: {},
+            list: {
+              stylePreset: 'menuSubCustom',
+              paddingBlock: 'space020',
+              paddingInline: 'space020',
+            },
           }}
         >
           <MenuItem href={href}>Menu item 3.1</MenuItem>
