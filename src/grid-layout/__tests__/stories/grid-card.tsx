@@ -2,14 +2,14 @@ import * as React from 'react';
 import {Headline} from '../../../headline';
 import {TextBlock} from '../../../text-block';
 import {Block} from '../../../block';
-import {styled, getStylePreset} from '../../../utils/style';
+import {getStylePreset, styled} from '../../../utils/style';
 import {Button} from '../../../button';
 import {Image} from '../../../image';
 import {Flag, getMediaQueryFromTheme, Paragraph, Tag} from '../../..';
 import {IconFilledEmail} from '../../../icons';
-import {GridLayout, GridLayoutItem} from '../../grid-layout';
-import {GridLayoutItemProps, GridLayoutProps} from '../../types';
-import {getDisplayName} from '../../../utils/component';
+import {GridLayout} from '../../grid-layout';
+import {GridLayoutProps} from '../../types';
+import {logicalProps, LogicalProps} from '../../../utils/logical-properties';
 
 const StyledAdvancedCard = styled(GridLayout)`
   border: 1px solid gray;
@@ -197,14 +197,10 @@ const useCardContext = () => React.useContext(CardContext);
 
 const StyledCard = styled(GridLayout)`
   position: relative;
-  ${props => {
-    const a = getStylePreset('', '')(props);
-    console.log(props, a);
-    return a;
-  }}
+  ${props => getStylePreset('', '')(props)}
 `;
 
-const Card = ({children, ...props}: GridLayoutProps) => {
+export const Card = ({children, ...props}: GridLayoutProps) => {
   const {areas} = props;
 
   return (
@@ -225,41 +221,49 @@ const Card = ({children, ...props}: GridLayoutProps) => {
   );
 };
 
-const StyledCardMedia = styled(GridLayout)`
+const StyledCardMedia = styled(GridLayout)<{useAreas: boolean}>`
   ${prop => prop.useAreas && `grid-area: media;`}
 `;
 
-const CardMedia = ({src, ...props}) => {
+export const CardMedia = ({src}: {src: string}) => {
   const {useAreas} = useCardContext();
   return (
-    <StyledCardMedia {...props} useAreas={useAreas}>
+    <StyledCardMedia useAreas={useAreas}>
       <img src={src} alt="" style={{maxWidth: '100%'}} />
     </StyledCardMedia>
   );
 };
 
-const StyledCardContent = styled(GridLayout)`
+const StyledCardContent = styled(GridLayout)<{useAreas: boolean}>`
   ${prop => prop.useAreas && `grid-area: content;`}
 `;
 
-const CardContent = (props: GridLayoutProps) => {
+export const CardContent = (props: GridLayoutProps) => {
   const {useAreas} = useCardContext();
   return <StyledCardContent {...props} useAreas={useAreas} />;
 };
 
 // Card Actions has larger z-index than Cover link so goes over it
-const StyledCardActions = styled(Block)`
+const StyledCardActions = styled(Block)<{useAreas: boolean} & LogicalProps>`
   position: relative;
   z-index: 2;
   ${prop => prop.useAreas && `grid-area: actions;`}
+  ${logicalProps()}
 `;
 
-const CardActions = (props: GridLayoutProps) => {
+export const CardActions = ({
+  children,
+  ...rest
+}: {children: React.ReactNode} & LogicalProps) => {
   const {useAreas} = useCardContext();
-  return <StyledCardActions {...props} useAreas={useAreas} />;
+  return (
+    <StyledCardActions useAreas={useAreas} {...rest}>
+      {children}
+    </StyledCardActions>
+  );
 };
 
-const StyledCardLink = styled(GridLayout)`
+const StyledCardLink = styled(GridLayout)<{expand?: boolean}>`
   ${props =>
     props.expand &&
     `
@@ -272,7 +276,7 @@ const StyledCardLink = styled(GridLayout)`
     `}
 `;
 
-const CardLink = (
+export const CardLink = (
   props: GridLayoutProps & {href: string; expand?: boolean},
 ) => <StyledCardLink as="a" {...props} />;
 
@@ -310,9 +314,7 @@ export const CardComposableExample = () => (
 
     <CardMedia src="/placeholder-3x2.png" />
 
-    <CardActions
-      overrides={{paddingInline: 'space040', paddingBlockEnd: 'space040'}}
-    >
+    <CardActions>
       <Tag href="/news">News</Tag>
     </CardActions>
   </Card>
