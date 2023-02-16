@@ -4296,9 +4296,7 @@ exports[`Popover offset should not be applied with pointer and invalid token off
 </DocumentFragment>
 `;
 
-exports[`Popover offset should not be applied with pointer and non-px offset override 1`] = `<DocumentFragment />`;
-
-exports[`Popover offset should not be applied with pointer and non-px offset override 2`] = `
+exports[`Popover offset should not be applied with pointer and non-px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
