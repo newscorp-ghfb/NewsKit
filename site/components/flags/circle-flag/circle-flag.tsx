@@ -5,7 +5,8 @@ export const CircleFlag: React.FC<FlagProps> = props => (
   <Flag
     {...props}
     overrides={{
-      spaceInset: 'space000',
+      paddingBlock: 'space000',
+      paddingInline: 'space000',
       width: 'sizing050',
       height: 'sizing050',
     }}
