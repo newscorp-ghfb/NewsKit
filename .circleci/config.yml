@@ -1670,7 +1670,7 @@ workflows:
       #      - build_docs_dev # removed build_docs_staging from this workflow to save 5 mins (docs site behaviour unaffected)
       #      - build_storybook
       - build_docs_with_no_base_url:
-          name: build_docs_prod
+          name: build_docs_prod_temp
           context: ncu-newskit-site-prod
           requires:
             - build_icons
@@ -1681,7 +1681,7 @@ workflows:
           s3Path_docs: s3://ncu-newskit-docs-prod/
           s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
           requires:
-            - build_docs_prod
+            - build_docs_prod_temp
             - build_storybook
 
   pull_request_codemod:
@@ -2031,7 +2031,7 @@ workflows:
             - install_cypress
       - build_docs_with_no_base_url:
           <<: *only_on_version_tag
-          name: build_docs_prod
+          name: build_docs_versioned
           context: ncu-newskit-site-prod
           requires:
             - build_icons
@@ -2041,7 +2041,7 @@ workflows:
           name: test_broken_links_docs_prod
           context: ncu-product-platforms-context
           requires:
-            - build_docs_prod
+            - build_docs_versioned
       - test_e2e_docs:
           <<: *only_on_version_tag
           name: test_e2e_docs_prod
