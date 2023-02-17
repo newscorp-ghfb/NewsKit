@@ -38,11 +38,11 @@ type VideoPlayerOverrides = {
     currentDuration?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
-    } & LogicalPaddingProps;
+    } & LogicalProps;
     seekPosition?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
-    } & LogicalPaddingProps;
+    } & LogicalProps;
   };
   controlBar?: {
     stylePreset?: MQ<string>;
@@ -83,7 +83,7 @@ type VideoPlayerOverrides = {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
     };
-  } & LogicalPaddingProps;
+  } & LogicalProps;
   miniCardOverlay?: {
     stylePreset?: MQ<string>;
     countdown?: {
@@ -96,7 +96,7 @@ type VideoPlayerOverrides = {
       stylePreset?: MQ<string>;
     };
     closeButton?: LogicalPaddingProps;
-  } & LogicalPaddingProps;
+  } & LogicalProps;
 } & LogicalProps;
 
 export interface VideoPlayerProps {

@@ -9,6 +9,7 @@ import {
 } from 'newskit';
 
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
   prefixLogicalProps,
@@ -566,20 +567,14 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the style preset applied to the drawer header',
             },
-            {
-              attribute: 'header.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInsetSquish040',
-              description:
-                'If provided, overrides the padding space set in the drawer header content container',
-            },
-            {
-              attribute: 'content.spaceInset',
-              type: 'MQ<string>',
-              default: 'space050',
-              description:
-                'If provided, overrides the padding space set in the drawer content container',
-            },
+            ...getLogicalPropsTable(undefined, 'header', {
+              paddingInline: 'space050',
+              paddingBlock: 'space040',
+            }),
+            ...getLogicalPropsTable(undefined, 'content', {
+              paddingInline: 'space050',
+              paddingBlock: 'space050',
+            }),
             {
               attribute: 'closeButton.stylePreset',
               type: 'MQ<string>',
@@ -587,13 +582,10 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the style preset applied to the drawer close icon button',
             },
-            {
-              attribute: 'closeButton.spaceInset',
-              type: 'MQ<string>',
-              default: 'space020',
-              description:
-                'If provided, overrides the padding space set in the drawer close icon button',
-            },
+            ...getLogicalPropsTable(undefined, 'closeButton', {
+              paddingInline: 'space020',
+              paddingBlock: 'space020',
+            }),
           ],
         },
       ],

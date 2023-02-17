@@ -329,13 +329,6 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'spaceInset(deprecated)',
-              type: 'MQ<string>',
-              default: 'space030',
-              description:
-                'This property is deprecated. Use paddingInline and paddingBlock instead.',
-            },
-            {
               attribute: 'content.title.stylePreset',
               type: 'MQ<string>',
               default: 'inkContrast',

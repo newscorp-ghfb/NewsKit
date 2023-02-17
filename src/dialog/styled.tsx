@@ -1,5 +1,5 @@
 import {MoveFocusInside} from 'react-focus-lock';
-import {logicalPaddingProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 import {
   styled,
   getStylePreset,
@@ -78,14 +78,14 @@ export const StyledDialogHeader = styled.div<BaseDialogViewOverridesAndPathProps
 
   ${({path}) => getStylePreset(`${path}.header`, 'header')};
   ${({path}) => getTypographyPreset(`${path}.header`, 'header')};
-  ${({path}) => logicalPaddingProps(`${path}.header`, 'header')}
+  ${({path}) => logicalProps(`${path}.header`, 'header')}
 `;
 
 export const StyledDialogContent = styled.div<BaseDialogViewOverridesAndPathProps>`
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  ${({path}) => logicalPaddingProps(`${path}.content`, 'content')}
+  ${({path}) => logicalProps(`${path}.content`, 'content')}
 `;
 
 export const StyledCloseButtonContainer = styled.div<
@@ -96,7 +96,7 @@ export const StyledCloseButtonContainer = styled.div<
   box-sizing: border-box;
   align-self: center;
 
-  ${({path}) => logicalPaddingProps(`${path}.closeButton`, 'closeButton')}
+  ${({path}) => logicalProps(`${path}.closeButton`, 'closeButton')}
   ${({closePosition}) =>
     closePosition === 'left' ? `padding-right: 0;` : `padding-left: 0;`}
 `;

@@ -9,6 +9,7 @@ import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
   prefixLogicalProps,
@@ -94,12 +95,10 @@ const commonOverridesRows = [
     ],
     description: 'If provided, overrides the input and placeholder text.',
   },
-  {
-    attribute: 'button.spaceInset(deprecated)',
-    type: 'MQ<string>',
-    default: ['small = space020', 'medium = space020', 'large = space030'],
-    description: `Use paddingBlock and paddingInline instead. If provided, overrides the button padding.`,
-  },
+  ...getLogicalPropsTable(undefined, 'button', {
+    paddingBlock: 'space020',
+    paddingInline: 'space020',
+  }),
   {
     attribute: 'button.spaceStack(deprecated)',
     type: 'MQ<string>',
@@ -114,7 +113,6 @@ const commonOverridesRows = [
     description:
       'If provided, overrides the inline space of the select input container.',
   },
-
   {
     attribute: 'button.loadingIndicator.stylePreset',
     type: 'MQ<string>',
@@ -181,12 +179,6 @@ const commonOverridesRows = [
     description: 'If provided, overrides the maxHeight of the select panel.',
   },
   {
-    attribute: 'panel.spaceInset(deprecated)',
-    type: 'MQ<string>',
-    default: 'space020',
-    description: `Use paddingBlock and paddingInline instead. If provided, overrides the panel padding.`,
-  },
-  {
     attribute: 'panel.spaceStack(deprecated)',
     type: 'MQ<string>',
     default: 'spaceStack010',
@@ -194,14 +186,15 @@ const commonOverridesRows = [
       'This property is deprecated. Use marginBlockEnd instead. If provided, overrides the end margin.',
   },
   {
-    attribute: 'modal.panel.width',
+    attribute: 'panel.width',
     type: 'MQ<string>',
     default: '60vw',
     description:
       'If provided, overrides the width property of the modal panel.',
   },
-  ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
-  ...prefixLogicalProps(logicalMarginOverrideProps, 'panel'),
+  ...getLogicalPropsTable(undefined, 'panel', {
+    paddingBlock: 'space020',
+  }),
 ];
 
 const selectOptionOverrides = [
@@ -229,24 +222,16 @@ const selectOptionOverrides = [
       'f provided, overrides the typographyPreset of the select option.',
   },
   {
-    attribute: 'spaceInset(deprecated)',
-    type: 'MQ<string>',
-    default: [
-      'small = spaceInsetSquish010',
-      'medium = space020',
-      'large = spaceInsetStretch030',
-    ],
-    description: `Use paddingBlock and paddingInline instead.`,
-  },
-  {
     attribute: 'spaceInline',
     type: 'MQ<string>',
     default: 'space020',
     description:
       'If provided, overrides the inline space of the select option.',
   },
-  ...logicalMarginOverrideProps,
-  ...logicalPaddingOverrideProps,
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space010', 'medium: space020', 'large: space030'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space040'],
+  }),
 ];
 
 const selectOptionProps = [

@@ -9,6 +9,7 @@ import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
@@ -477,13 +478,10 @@ const ToastComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
-            {
-              attribute: 'spaceInset(deprecated)',
-              type: 'MQ<string>',
-              default: 'space030',
-              description:
-                'This property is deprecated. Use paddingInline and paddingBlock instead.',
-            },
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingInline: 'space030',
+              paddingBlock: 'space030',
+            }),
             {
               attribute: 'width',
               type: 'MQ<string>',

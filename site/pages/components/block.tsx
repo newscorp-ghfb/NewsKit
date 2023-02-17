@@ -235,11 +235,6 @@ const BlockComponent = (layoutProps: LayoutProps) => (
               description: `Use marginBlockEnd instead. This is a spacing preset token which is applied as a margin on the bottom of the block. Use to space stack content down the page`,
             },
             {
-              name: 'spaceInset(deprecated)',
-              type: 'MQ<string>',
-              description: `Use paddingBlock and paddingInline instead. Apply spaceInset to the block`,
-            },
-            {
               name: 'transitionPreset',
               type: 'TransitionToken | TransitionToken[]',
               default: 'backgroundColorChange',

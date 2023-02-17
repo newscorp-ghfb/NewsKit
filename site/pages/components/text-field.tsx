@@ -9,6 +9,7 @@ import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
@@ -116,12 +117,10 @@ const commonOverridesRows = [
     ],
     description: 'If provided, overrides the input & placeholder text.',
   },
-  {
-    attribute: 'spaceInset(deprecated)',
-    type: 'MQ<string>',
-    default: ['small = space020', 'medium = space030', 'large = space030'],
-    description: `This property is deprecated. Use paddingInline and paddingBlock instead.`,
-  },
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space020', 'medium: space030', 'large: space040'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space040'],
+  }),
   {
     attribute: 'startEnhancer.iconSize',
     type: 'MQ<string>',
