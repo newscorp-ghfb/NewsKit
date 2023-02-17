@@ -49,7 +49,7 @@ type FontUnit = 'px' | 'rem';
 
 export type TextCropProps = {
   fontSize: `${number}${FontUnit}`;
-  lineHeight: number;
+  lineHeight: number | string;
   fontMetrics: {
     capHeight: number;
     ascent: number;
@@ -79,8 +79,15 @@ export const textCrop = ({
   fontSize,
   fontMetrics,
 }: TextCropProps): TextCropResults => {
-  if (typeof lineHeight !== 'number') {
-    throw Error(`invalid lineHeight: ${lineHeight}`);
+  let parsedLineHeight: number;
+  if (typeof lineHeight === 'string') {
+    const match = lineHeight.match(/^\d+(\.\d+)*$/);
+    if (!match) {
+      throw Error(`invalid lineHeight: ${lineHeight}`);
+    }
+    parsedLineHeight = parseFloat(lineHeight);
+  } else {
+    parsedLineHeight = lineHeight;
   }
 
   const match = fontSize.match(/(\d+(?:\.\d+)?)(px|rem)/);
@@ -89,7 +96,7 @@ export const textCrop = ({
   }
   const fontSizeAsNumber = parseFloat(match[1]);
   const fontSizeUnits = match[2] as FontUnit;
-  const leading = lineHeight * fontSizeAsNumber;
+  const leading = parsedLineHeight * fontSizeAsNumber;
 
   const capsizeStyles = createStyleObject({
     fontSize: fontSizeAsNumber,

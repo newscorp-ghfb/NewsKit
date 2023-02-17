@@ -88,6 +88,16 @@ export const StoryDefault = () =>
     </>
   ));
 StoryDefault.storyName = 'default';
+StoryDefault.parameters = {
+  previewTabs: {
+    'storybook/canvas/panel': {index: -1},
+    'storybook/docs/panel': {hidden: true},
+  },
+  viewMode: 'story',
+  docs: {
+    page: null,
+  },
+};
 
 export const StoryWithCloseButtonOnTheLeft = () =>
   React.createElement(() => (
@@ -109,6 +119,7 @@ export const StoryWithCloseButtonOnTheLeft = () =>
     </>
   ));
 StoryWithCloseButtonOnTheLeft.storyName = 'with close button on the left';
+StoryWithCloseButtonOnTheLeft.parameters = StoryDefault.parameters;
 
 export const StoryNoHeaderContent = () =>
   React.createElement(() => (
@@ -125,6 +136,7 @@ export const StoryNoHeaderContent = () =>
     </>
   ));
 StoryNoHeaderContent.storyName = 'no header content';
+StoryNoHeaderContent.parameters = StoryDefault.parameters;
 
 export const StoryNoClose = () =>
   React.createElement(() => (
@@ -142,6 +154,7 @@ export const StoryNoClose = () =>
     </>
   ));
 StoryNoClose.storyName = 'no close button';
+StoryNoClose.parameters = StoryDefault.parameters;
 
 export const StoryNoHeader = () =>
   React.createElement(() => (
@@ -158,6 +171,7 @@ export const StoryNoHeader = () =>
     </>
   ));
 StoryNoHeader.storyName = 'no header & close button';
+StoryNoHeader.parameters = StoryDefault.parameters;
 
 export const StoryWithOverrides = () =>
   React.createElement(() => (
@@ -209,6 +223,7 @@ export const StoryWithOverrides = () =>
     </>
   ));
 StoryWithOverrides.storyName = 'with overrides';
+StoryWithOverrides.parameters = StoryDefault.parameters;
 
 const items = [
   'Neptunium',
@@ -268,3 +283,4 @@ export const StoryWithSelect = () =>
     </>
   ));
 StoryWithSelect.storyName = 'with select';
+StoryWithSelect.parameters = StoryDefault.parameters;
