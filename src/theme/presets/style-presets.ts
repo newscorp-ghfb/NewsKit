@@ -183,7 +183,7 @@ stylePresets.cardComposable = {
 };
 
 stylePresets.cardComposableLink = {
-  __extends: '{{stylePresets.cardContainer}}',
+  __extends: '{{stylePresets.cardComposable}}',
   hover: {
     backgroundColor: '{{colors.interface020}}',
   },
