@@ -46,7 +46,7 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{from: 'static'}],
+      patterns: [{from: 'static', to: ''}],
     }),
   ],
 };
