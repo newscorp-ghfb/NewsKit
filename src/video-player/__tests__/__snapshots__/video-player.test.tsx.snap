@@ -76,8 +76,12 @@ exports[`Video Player renders video player with logical props 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
 }
 
 .emotion-0 .video-js .vjs-progress-control .vjs-mouse-display {
@@ -189,15 +193,23 @@ exports[`Video Player renders video player with logical props 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-0 .video-js .vjs-dock-text {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-0 .video-js .vjs-dock-text {
-    padding-inline: 24px;
-    padding-block: 24px;
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
   }
 }
 
@@ -267,8 +279,12 @@ exports[`Video Player renders video player with logical props 1`] = `
 
 .emotion-0 .video-js .vjs-next-overlay-banner {
   background-color: #262626;
-  padding-inline: 12px;
-  padding-block: 8px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
 }
 
 .emotion-0 .video-js .vjs-next-overlay-countdown {
@@ -299,8 +315,12 @@ exports[`Video Player renders video player with logical props 1`] = `
 }
 
 .emotion-0 .video-js .vjs-next-overlay .vjs-close-button {
-  padding-inline: 4px;
-  padding-block: 4px;
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
+  padding-block-start: 4px;
+  padding-block-end: 4px;
 }
 
 <div
@@ -363,7 +383,13 @@ exports[`Video Player renders video player with logical props component defauts 
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
   padding-inline: 16px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   padding-block: 12px;
 }
 
@@ -476,14 +502,26 @@ exports[`Video Player renders video player with logical props component defauts 
 
 @media screen and (max-width: 767px) {
   .emotion-0 .video-js .vjs-dock-text {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
     padding-inline: 12px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
     padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-0 .video-js .vjs-dock-text {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 16px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 16px;
   }
 }
@@ -554,7 +592,13 @@ exports[`Video Player renders video player with logical props component defauts 
 
 .emotion-0 .video-js .vjs-next-overlay-banner {
   background-color: #262626;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
   padding-inline: 16px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   padding-block: 12px;
 }
 
@@ -586,7 +630,13 @@ exports[`Video Player renders video player with logical props component defauts 
 }
 
 .emotion-0 .video-js .vjs-next-overlay .vjs-close-button {
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
   padding-inline: 8px;
+  padding-block-start: 4px;
+  padding-block-end: 4px;
   padding-block: 8px;
 }
 
@@ -650,8 +700,12 @@ exports[`Video Player renders video player with overriden play button style 1`] 
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
 }
 
 .emotion-0 .video-js .vjs-progress-control .vjs-mouse-display {
@@ -763,15 +817,23 @@ exports[`Video Player renders video player with overriden play button style 1`] 
 
 @media screen and (max-width: 767px) {
   .emotion-0 .video-js .vjs-dock-text {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-0 .video-js .vjs-dock-text {
-    padding-inline: 24px;
-    padding-block: 24px;
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
   }
 }
 
@@ -841,8 +903,12 @@ exports[`Video Player renders video player with overriden play button style 1`] 
 
 .emotion-0 .video-js .vjs-next-overlay-banner {
   background-color: #262626;
-  padding-inline: 12px;
-  padding-block: 8px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
 }
 
 .emotion-0 .video-js .vjs-next-overlay-countdown {
@@ -873,8 +939,12 @@ exports[`Video Player renders video player with overriden play button style 1`] 
 }
 
 .emotion-0 .video-js .vjs-next-overlay .vjs-close-button {
-  padding-inline: 4px;
-  padding-block: 4px;
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
+  padding-block-start: 4px;
+  padding-block-end: 4px;
 }
 
 <div

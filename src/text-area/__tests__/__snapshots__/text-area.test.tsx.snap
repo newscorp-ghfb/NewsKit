@@ -23,8 +23,12 @@ exports[`TextArea FormInputTextArea render invalid form 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-1 svg {
@@ -117,8 +121,12 @@ exports[`TextArea FormInputTextArea render valid form 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-1 svg {
@@ -212,8 +220,12 @@ exports[`TextArea render default 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -339,8 +351,12 @@ exports[`TextArea render resize: both 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -466,8 +482,12 @@ exports[`TextArea render resize: horizontal 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -593,8 +613,12 @@ exports[`TextArea render resize: none 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -720,8 +744,12 @@ exports[`TextArea render resize: vertical 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -847,8 +875,12 @@ exports[`TextArea render size: large 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -974,8 +1006,12 @@ exports[`TextArea render size: medium 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -1101,8 +1137,12 @@ exports[`TextArea render size: small 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
 }
 
 .emotion-0 svg {
@@ -1228,8 +1268,12 @@ exports[`TextArea render state: disabled 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -1295,8 +1339,12 @@ exports[`TextArea render state: invalid 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -1382,8 +1430,12 @@ exports[`TextArea render state: valid 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {

@@ -2,8 +2,10 @@ export default {
   textField: {
     small: {
       stylePreset: 'inputField',
-      paddingInline: 'space020',
-      paddingBlock: 'space020',
+      paddingInlineStart: 'space020',
+      paddingInlineEnd: 'space020',
+      paddingBlockStart: 'space020',
+      paddingBlockEnd: 'space020',
       minHeight: 'sizing070',
       width: '100%',
       typographyPreset: 'utilityBody020',
@@ -19,8 +21,10 @@ export default {
     },
     medium: {
       stylePreset: 'inputField',
-      paddingInline: 'space030',
-      paddingBlock: 'space030',
+      paddingInlineStart: 'space030',
+      paddingInlineEnd: 'space030',
+      paddingBlockStart: 'space030',
+      paddingBlockEnd: 'space030',
       minHeight: 'sizing080',
       width: '100%',
       typographyPreset: 'utilityBody030',
@@ -36,8 +40,10 @@ export default {
     },
     large: {
       stylePreset: 'inputField',
-      paddingInline: 'space040',
-      paddingBlock: 'space040',
+      paddingInlineStart: 'space040',
+      paddingInlineEnd: 'space040',
+      paddingBlockStart: 'space040',
+      paddingBlockEnd: 'space040',
       minHeight: 'sizing090',
       width: '100%',
       typographyPreset: 'utilityBody030',

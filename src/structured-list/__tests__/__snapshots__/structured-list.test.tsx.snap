@@ -105,8 +105,12 @@ exports[`StructuredList with href renders one cell with disabled link and hidden
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -350,8 +354,12 @@ exports[`StructuredList with href renders one cell with external link and hidden
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -591,8 +599,12 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -1003,8 +1015,12 @@ exports[`StructuredList with href renders one cell with internal link and hidden
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -1244,8 +1260,12 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -1658,8 +1678,12 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -2182,8 +2206,12 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -2752,8 +2780,12 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -3324,8 +3356,12 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -3665,8 +3701,12 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -4240,8 +4280,12 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -4815,8 +4859,12 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -5390,8 +5438,12 @@ exports[`StructuredList with href renders with disabled link 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -5802,8 +5854,12 @@ exports[`StructuredList without-href renders with default style 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -6302,8 +6358,12 @@ exports[`StructuredList without-href renders with logical prop overrides 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -6505,8 +6565,12 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -6720,7 +6784,13 @@ exports[`StructuredList without-href renders with overrides 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
   padding-inline: 32px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   padding-block: 32px;
   min-height: 64px;
 }
@@ -7215,8 +7285,12 @@ exports[`StructuredList without-href renders with texts only and no cells 1`] = 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -7373,8 +7447,12 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 
@@ -7688,8 +7766,12 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-inline: 16px;
-  padding-block: 24px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
   min-height: 80px;
 }
 

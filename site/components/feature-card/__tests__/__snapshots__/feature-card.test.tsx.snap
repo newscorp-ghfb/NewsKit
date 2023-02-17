@@ -95,6 +95,50 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
   padding-block: 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .emotion-5 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-5 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
 .emotion-5 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
@@ -566,28 +610,48 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 32px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
@@ -1069,6 +1133,50 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
   padding-block: 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .emotion-5 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-5 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
 .emotion-5 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
@@ -1540,28 +1648,48 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 32px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
@@ -2088,6 +2216,50 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
   padding-block: 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .emotion-7 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-7 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-7 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-7 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
 .emotion-7 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
@@ -2439,28 +2611,48 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
 
 @media screen and (max-width: 479px) {
   .emotion-24 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-24 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-24 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-24 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 32px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
@@ -2809,6 +3001,50 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
   padding-block: 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .emotion-7 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-7 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-7 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-7 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
 .emotion-7 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
@@ -3039,28 +3275,48 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
 
 @media screen and (max-width: 479px) {
   .emotion-18 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-18 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-18 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-18 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 32px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
@@ -3271,6 +3527,50 @@ exports[`FeatureCard Renders interactive vertical card with link 1`] = `
   box-sizing: border-box;
   padding-inline: 24px;
   padding-block: 24px;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-4 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-4 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-4 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
 }
 
 .emotion-4 a:not(.nk-card-link) {
@@ -3674,6 +3974,50 @@ exports[`FeatureCard Renders interactive vertical card without link 1`] = `
   padding-block: 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .emotion-4 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-4 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-4 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
 .emotion-4 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
@@ -3944,6 +4288,50 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
   box-sizing: border-box;
   padding-inline: 24px;
   padding-block: 24px;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-5 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-5 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
 }
 
 .emotion-5 a:not(.nk-card-link) {
@@ -4221,28 +4609,48 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 32px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
@@ -4468,6 +4876,50 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
   box-sizing: border-box;
   padding-inline: 24px;
   padding-block: 24px;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-2 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-2 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -4778,6 +5230,50 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
   padding-block: 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .emotion-7 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-7 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-7 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-7 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
 .emotion-7 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
@@ -4955,28 +5451,48 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-18 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-18 {
-    padding-inline: 16px;
-    padding-block: 16px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-18 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-18 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
     padding-inline: 32px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
@@ -5142,6 +5658,50 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
   box-sizing: border-box;
   padding-inline: 24px;
   padding-block: 24px;
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-2 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-2 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-2 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    -webkit-padding-start: 24px;
+    padding-inline-start: 24px;
+    -webkit-padding-end: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+  }
 }
 
 .emotion-2 a:not(.nk-card-link) {

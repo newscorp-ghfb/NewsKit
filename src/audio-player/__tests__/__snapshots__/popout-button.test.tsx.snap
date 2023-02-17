@@ -25,8 +25,12 @@ exports[`PopoutButton renders correctly with default props 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

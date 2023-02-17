@@ -2,8 +2,10 @@ export default {
   banner: {
     horizontal: {
       stylePreset: 'bannerInformative',
-      paddingBlock: 'space040',
-      paddingInline: 'space040',
+      paddingBlockStart: 'space040',
+      paddingBlockEnd: 'space040',
+      paddingInlineStart: 'space040',
+      paddingInlineEnd: 'space040',
       minHeight: 'sizing090',
       icon: {
         spaceInline: 'space030',
@@ -29,8 +31,10 @@ export default {
     },
     vertical: {
       stylePreset: 'bannerInformative',
-      paddingBlock: 'space040',
-      paddingInline: 'space040',
+      paddingBlockStart: 'space040',
+      paddingBlockEnd: 'space040',
+      paddingInlineStart: 'space040',
+      paddingInlineEnd: 'space040',
       minHeight: 'sizing090',
       icon: {
         spaceInline: 'space030',

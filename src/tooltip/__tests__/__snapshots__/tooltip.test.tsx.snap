@@ -95,8 +95,12 @@ exports[`Tooltip offset should be applied with pointer and px distance override 
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -232,8 +236,12 @@ exports[`Tooltip offset should be applied with pointer and token distance overri
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -369,8 +377,12 @@ exports[`Tooltip offset should not be applied with pointer and invalid token dis
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -506,8 +518,12 @@ exports[`Tooltip offset should not be applied with pointer and non-px distance o
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -643,8 +659,12 @@ exports[`Tooltip offset should not be applied with with no pointer 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -761,8 +781,12 @@ exports[`Tooltip pointer padding should be applied with px distance override 1`]
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -898,8 +922,12 @@ exports[`Tooltip pointer padding should be applied with token distance override 
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -1035,8 +1063,12 @@ exports[`Tooltip pointer padding should not be applied with invalid token distan
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -1172,8 +1204,12 @@ exports[`Tooltip pointer padding should not be applied with non-px distance over
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -1309,8 +1345,12 @@ exports[`Tooltip should render correct styles: default 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -1429,7 +1469,13 @@ exports[`Tooltip should render correct styles: with overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
   padding-inline: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   padding-block: 16px;
   overflow: hidden;
 }
@@ -1547,8 +1593,12 @@ exports[`Tooltip should render correct styles: with pointer 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -1684,8 +1734,12 @@ exports[`Tooltip should render correct styles: with pointer size overrides 1`] =
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -1821,8 +1875,12 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 
@@ -1958,8 +2016,12 @@ exports[`Tooltip should render correct styles: with pointer y coordinate 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   overflow: hidden;
 }
 

@@ -4,8 +4,10 @@ export default {
       controls: {
         button: {
           stylePreset: 'iconButtonSolidPrimary',
-          paddingInline: 'space000',
-          paddingBlock: 'space000',
+          paddingInlineStart: 'space000',
+          paddingInlineEnd: 'space000',
+          paddingBlockStart: 'space000',
+          paddingBlockEnd: 'space000',
         },
         offset: 'space040',
       },
@@ -18,8 +20,10 @@ export default {
       controls: {
         button: {
           stylePreset: 'iconButtonSolidPrimary',
-          paddingInline: 'space000',
-          paddingBlock: 'space000',
+          paddingInlineStart: 'space000',
+          paddingInlineEnd: 'space000',
+          paddingBlockStart: 'space000',
+          paddingBlockEnd: 'space000',
         },
         offset: 'space040',
       },

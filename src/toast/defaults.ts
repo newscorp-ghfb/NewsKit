@@ -1,8 +1,10 @@
 export default {
   toast: {
     stylePreset: 'toastNeutral',
-    paddingInline: 'space030',
-    paddingBlock: 'space030',
+    paddingInlineStart: 'space030',
+    paddingInlineEnd: 'space030',
+    paddingBlockStart: 'space030',
+    paddingBlockEnd: 'space030',
     maxWidth: {
       xs: '90%',
       sm: '60%',

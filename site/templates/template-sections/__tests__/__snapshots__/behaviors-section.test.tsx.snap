@@ -35,11 +35,47 @@ exports[`BehaviorsSection renders section as expected 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding-inline: 0;
-  padding-block: 0;
-  padding-inline: 0;
-  padding-block: 0;
   background-color: transparent;
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-2 {
+    padding-inline: 0;
+    padding-block: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    padding-inline: 0;
+    padding-block: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .emotion-2 {
+    -webkit-padding-start: 12px;
+    padding-inline-start: 12px;
+    -webkit-padding-end: 12px;
+    padding-inline-end: 12px;
+    padding-inline: 0;
+    padding-block-start: 12px;
+    padding-block-end: 12px;
+    padding-block: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-2 {
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    -webkit-padding-end: 16px;
+    padding-inline-end: 16px;
+    padding-inline: 0;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding-block: 0;
+  }
 }
 
 .emotion-3 {

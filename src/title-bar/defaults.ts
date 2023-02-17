@@ -1,11 +1,19 @@
 export default {
   titleBar: {
     stylePreset: 'titleBar',
-    paddingInline: {
+    paddingInlineStart: {
       xs: 'space030',
       lg: 'space040',
     },
-    paddingBlock: {
+    paddingInlineEnd: {
+      xs: 'space030',
+      lg: 'space040',
+    },
+    paddingBlockStart: {
+      xs: 'space030',
+      lg: 'space040',
+    },
+    paddingBlockEnd: {
       xs: 'space030',
       lg: 'space040',
     },

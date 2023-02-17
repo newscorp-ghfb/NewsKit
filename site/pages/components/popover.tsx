@@ -456,7 +456,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           propsRows: [
             {
               name: 'children',
-              type: 'React.ReactElement & { ref?: React.Ref<unknown>; };',
+              type: 'React.ReactNode',
               description: 'Popover reference element',
               required: true,
             },
@@ -471,14 +471,12 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               type: 'boolean',
               default: 'false',
               description: 'If ‘true’, determines if the popover is open',
-              required: undefined,
             },
             {
               name: 'onDismiss',
               type: 'function',
               description:
                 'A callback invoked when the user dismisses the popover by clicking on the element that opened it, the close button or area surrounding the popover on the page, or by pressing the Esc key',
-              required: undefined,
             },
             {
               name: 'fallbackBehaviours',
@@ -486,9 +484,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               default: `'flip', 'shift'`,
               description: (
                 <>
-                  Behaviour the popover should follow for fallback.
-                  <br />
-                  <br />
+                  Behaviour the popover should follow for fallback.{' '}
                   <Link
                     href="https://floating-ui.com/docs/react-dom-interactions"
                     target="_blank"
@@ -498,12 +494,10 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
                   </Link>
                 </>
               ),
-              required: undefined,
             },
             {
               name: 'boundary',
-              type: `'clippingAncestors' | Element | Array<Element>;`,
-              default: `'clippingAncestors'`,
+              type: 'Boundary',
               description: (
                 <>
                   Describes the clipping element(s) that overflow will be
@@ -519,7 +513,6 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
                   </Link>
                 </>
               ),
-              required: undefined,
             },
             {
               name: 'header',

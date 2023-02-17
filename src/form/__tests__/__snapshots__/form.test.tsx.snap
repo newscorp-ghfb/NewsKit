@@ -154,8 +154,12 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -530,8 +534,12 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -958,8 +966,12 @@ exports[`Form renders with error and with submit validation and revalidation mod
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1494,8 +1506,12 @@ exports[`Form renders with error on blur 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1917,8 +1933,12 @@ exports[`Form renders with error on submit 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2453,8 +2473,12 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3255,8 +3279,12 @@ exports[`Form renders with nested inputs 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3606,8 +3634,12 @@ exports[`Form renders with onBlur validation 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3951,8 +3983,12 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3::before {
@@ -4110,8 +4146,12 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-13 {
@@ -5425,8 +5465,12 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3::before {
@@ -5584,8 +5628,12 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-13 {
@@ -6906,8 +6954,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-1::before {
@@ -7271,8 +7323,12 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -8712,8 +8768,12 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3::before {
@@ -8956,8 +9016,12 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9386,8 +9450,12 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-1::before {
@@ -9738,8 +9806,12 @@ exports[`FormInput renders with nested inputs 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-1::before {
@@ -9867,8 +9939,12 @@ exports[`FormInput renders with nested inputs 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

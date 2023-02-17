@@ -25,7 +25,13 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-padding-end: 0;
+  padding-inline-end: 0;
   padding-inline: 4px;
+  padding-block-start: 0;
+  padding-block-end: 0;
   padding-block: 8px;
 }
 
@@ -175,7 +181,13 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-padding-end: 0;
+  padding-inline-end: 0;
   padding-inline: 24px;
+  padding-block-start: 0;
+  padding-block-end: 0;
   padding-block: 24px;
 }
 
@@ -368,7 +380,13 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-padding-end: 0;
+  padding-inline-end: 0;
   padding-inline: 4px;
+  padding-block-start: 0;
+  padding-block-end: 0;
   padding-block: 8px;
 }
 
@@ -505,7 +523,13 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  -webkit-padding-end: 0;
+  padding-inline-end: 0;
   padding-inline: 24px;
+  padding-block-start: 0;
+  padding-block-end: 0;
   padding-block: 24px;
 }
 

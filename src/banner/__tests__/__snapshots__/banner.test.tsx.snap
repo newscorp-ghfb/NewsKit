@@ -36,8 +36,12 @@ exports[`Banner renders with content as react element 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -293,8 +297,12 @@ exports[`Banner renders with content as react element 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -552,8 +560,12 @@ exports[`Banner renders with content as string and link 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -922,8 +934,12 @@ exports[`Banner renders with content as string and link 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -1294,8 +1310,12 @@ exports[`Banner renders with default props 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -1543,8 +1563,12 @@ exports[`Banner renders with default props 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -1794,8 +1818,12 @@ exports[`Banner renders with icon 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -2120,8 +2148,12 @@ exports[`Banner renders with icon 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -2418,8 +2450,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -2644,8 +2680,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2822,8 +2862,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -3051,8 +3095,12 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3229,8 +3277,12 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -3459,8 +3511,12 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3622,8 +3678,12 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -3855,8 +3915,12 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4048,8 +4112,12 @@ exports[`Banner renders with title 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -4331,8 +4399,12 @@ exports[`Banner renders with title 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -4586,8 +4658,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -4816,8 +4892,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4948,8 +5028,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   min-width: 64px;
   height: 32px;
   min-height: 32px;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5140,8 +5224,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -5374,8 +5462,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   width: 100%;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5500,8 +5592,12 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5655,8 +5751,12 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -5884,8 +5984,12 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   min-width: 64px;
   height: 32px;
   min-height: 32px;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6061,8 +6165,12 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-0 svg {
@@ -6295,8 +6403,12 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   width: 100%;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6493,8 +6605,12 @@ exports[`renders grid and cell overrides on banner 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -6736,8 +6852,12 @@ exports[`renders grid and cell overrides on banner 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6943,8 +7063,12 @@ exports[`renders grid and cell overrides on banner 1`] = `
   box-sizing: border-box;
   background-color: #017582;
   min-height: 64px;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-1 svg {
@@ -7183,8 +7307,12 @@ exports[`renders grid and cell overrides on banner 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7396,7 +7524,12 @@ exports[`renders with logical props overrides 1`] = `
   background-color: #017582;
   min-height: 64px;
   margin-block: 30px;
-  padding-inline: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
   padding-block: 30px;
 }
 
@@ -7646,7 +7779,12 @@ exports[`renders with logical props overrides 1`] = `
   background-color: #017582;
   min-height: 64px;
   margin-block: 30px;
-  padding-inline: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
   padding-block: 30px;
 }
 

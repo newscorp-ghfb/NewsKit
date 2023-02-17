@@ -129,8 +129,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-6 {
@@ -269,7 +273,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 .emotion-16 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (24px / 2) - 4px);
+  left: calc(100% - (24px / 2) - 0px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
@@ -345,7 +349,10 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   align-items: center;
   background-color: #3358CC;
   border-radius: 20rem;
-  padding-inline: 4px;
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
 }
 
 .emotion-17:focus-visible:not(:disabled) {
@@ -458,8 +465,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   width: 24px;
   height: 24px;
   left: calc(100% - 24px);
-  padding-inline: 4px;
-  padding-block: 4px;
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
+  padding-block-start: 4px;
+  padding-block-end: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -674,8 +685,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -795,8 +810,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1521,8 +1540,12 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   justify-content: space-between;
   overflow: hidden;
   cursor: not-allowed;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-6 {
@@ -1637,7 +1660,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 .emotion-15 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (24px / 2) - 4px);
+  left: calc(100% - (24px / 2) - 0px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
@@ -1713,7 +1736,10 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   align-items: center;
   background-color: #3358CC;
   border-radius: 20rem;
-  padding-inline: 4px;
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
@@ -1826,8 +1852,12 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   width: 24px;
   height: 24px;
   left: calc(100% - 24px);
-  padding-inline: 4px;
-  padding-block: 4px;
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
+  padding-block-start: 4px;
+  padding-block-end: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -1928,8 +1958,12 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2049,8 +2083,12 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2496,8 +2534,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-6 {
@@ -2612,7 +2654,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 .emotion-15 {
   position: absolute;
   top: 50%;
-  left: calc(100% - (24px / 2) - 4px);
+  left: calc(100% - (24px / 2) - 0px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
@@ -2688,7 +2730,10 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   align-items: center;
   background-color: #3358CC;
   border-radius: 20rem;
-  padding-inline: 4px;
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
@@ -2801,8 +2846,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   width: 24px;
   height: 24px;
   left: calc(100% - 24px);
-  padding-inline: 4px;
-  padding-block: 4px;
+  -webkit-padding-start: 4px;
+  padding-inline-start: 4px;
+  -webkit-padding-end: 4px;
+  padding-inline-end: 4px;
+  padding-block-start: 4px;
+  padding-block-end: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -3004,8 +3053,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3125,8 +3178,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  padding-inline: 16px;
-  padding-block: 12px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

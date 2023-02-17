@@ -17,14 +17,18 @@ export default {
       },
       currentDuration: {
         stylePreset: 'videoPlayerCurrentDuration',
-        paddingInline: 'space020',
-        paddingBlock: 'space020',
+        paddingInlineStart: 'space020',
+        paddingInlineEnd: 'space020',
+        paddingBlockStart: 'space020',
+        paddingBlockEnd: 'space020',
         typographyPreset: 'utilityMeta010',
       },
       seekPosition: {
         stylePreset: 'videoPlayerSeekPosition',
-        paddingInline: 'space020',
-        paddingBlock: 'space020',
+        paddingInlineStart: 'space020',
+        paddingInlineEnd: 'space020',
+        paddingBlockStart: 'space020',
+        paddingBlockEnd: 'space020',
         typographyPreset: 'utilityMeta010',
       },
     },
@@ -62,11 +66,19 @@ export default {
     },
     dockText: {
       stylePreset: 'videoPlayerDockText',
-      paddingInline: {
+      paddingInlineStart: {
         xs: 'space040',
         md: 'space050',
       },
-      paddingBlock: {
+      paddingInlineEnd: {
+        xs: 'space040',
+        md: 'space050',
+      },
+      paddingBlockStart: {
+        xs: 'space040',
+        md: 'space050',
+      },
+      paddingBlockEnd: {
         xs: 'space040',
         md: 'space050',
       },
@@ -91,8 +103,10 @@ export default {
     },
     miniCardOverlay: {
       stylePreset: 'videoPlayerMiniCardOverlay',
-      paddingInline: 'space030',
-      paddingBlock: 'space020',
+      paddingInlineStart: 'space030',
+      paddingInlineEnd: 'space030',
+      paddingBlockStart: 'space020',
+      paddingBlockEnd: 'space020',
       countdown: {
         typographyPreset: 'utilityMeta010',
         stylePreset: 'inkInverse',
@@ -103,8 +117,10 @@ export default {
         stylePreset: 'inkInverse',
       },
       closeButton: {
-        paddingInline: 'space010',
-        paddingBlock: 'space010',
+        paddingInlineStart: 'space010',
+        paddingInlineEnd: 'space010',
+        paddingBlockStart: 'space010',
+        paddingBlockEnd: 'space010',
       },
     },
   },

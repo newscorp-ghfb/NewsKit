@@ -1,8 +1,10 @@
 export default {
   inlineMessage: {
     stylePreset: 'inlineMessageInformative',
-    paddingInline: 'space030',
-    paddingBlock: 'space030',
+    paddingInlineStart: 'space030',
+    paddingInlineEnd: 'space030',
+    paddingBlockStart: 'space030',
+    paddingBlockEnd: 'space030',
     icon: {
       spaceInline: 'space030',
     },

@@ -26,8 +26,10 @@ export default {
       distance: 'space030',
       stylePreset: 'audioPlayerVolumeControlPopover',
       content: {
-        paddingBlock: 'space030',
-        paddingInline: 'space030',
+        paddingBlockStart: 'space030',
+        paddingBlockEnd: 'space030',
+        paddingInlineStart: 'space030',
+        paddingInlineEnd: 'space030',
       },
     },
   },

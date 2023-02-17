@@ -73,8 +73,12 @@ exports[`Select force select to controlled tate 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -383,8 +387,12 @@ exports[`Select icon component overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -614,8 +622,12 @@ exports[`Select icon size overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -890,8 +902,12 @@ exports[`Select icon theme size overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -1166,8 +1182,12 @@ exports[`Select in Modal render Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -1584,8 +1604,12 @@ exports[`Select in Modal render Select 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding-inline: 24px;
-  padding-block: 24px;
+  -webkit-padding-start: 24px;
+  padding-inline-start: 24px;
+  -webkit-padding-end: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
 }
 
 .emotion-5 {
@@ -1638,8 +1662,12 @@ exports[`Select in Modal render Select 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding-inline: 12px;
-  padding-block: 8px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   min-height: 40px;
 }
 
@@ -1695,8 +1723,12 @@ exports[`Select in Modal render Select 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   padding-left: 0;
 }
 
@@ -1723,8 +1755,12 @@ exports[`Select in Modal render Select 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2081,8 +2117,12 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -2513,16 +2553,24 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 24px;
-  padding-block: 16px;
+  -webkit-padding-start: 24px;
+  padding-inline-start: 24px;
+  -webkit-padding-end: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-5 {
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding-inline: 24px;
-  padding-block: 24px;
+  -webkit-padding-start: 24px;
+  padding-inline-start: 24px;
+  -webkit-padding-end: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
 }
 
 .emotion-6 {
@@ -2575,8 +2623,12 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding-inline: 12px;
-  padding-block: 8px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   min-height: 40px;
 }
 
@@ -2860,8 +2912,12 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -3268,8 +3324,12 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding-inline: 24px;
-  padding-block: 24px;
+  -webkit-padding-start: 24px;
+  padding-inline-start: 24px;
+  -webkit-padding-end: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
 }
 
 .emotion-5 {
@@ -3322,8 +3382,12 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding-inline: 12px;
-  padding-block: 8px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   min-height: 40px;
 }
 
@@ -3379,8 +3443,12 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   padding-left: 0;
 }
 
@@ -3407,8 +3475,12 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3775,8 +3847,12 @@ exports[`Select open and scroll 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-5 {
@@ -4060,8 +4136,12 @@ exports[`Select renders Select with labelId prop 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -4210,7 +4290,8 @@ exports[`Select renders Select with labelId prop 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4372,7 +4453,12 @@ exports[`Select renders Select with logical props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   padding-block: 20px;
 }
 
@@ -4601,8 +4687,12 @@ exports[`Select renders Select with overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -4786,7 +4876,8 @@ exports[`Select renders Select with overrides 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4946,8 +5037,12 @@ exports[`Select renders Select with zIndex overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -5062,7 +5157,8 @@ exports[`Select renders Select with zIndex overrides 1`] = `
   outline: none;
   z-index: 20;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5315,8 +5411,12 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-4 {
@@ -5531,7 +5631,8 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5691,8 +5792,12 @@ exports[`Select renders SelectOption with logical props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -5932,8 +6037,12 @@ exports[`Select renders disabled select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: not-allowed;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -6085,7 +6194,8 @@ exports[`Select renders disabled select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6245,8 +6355,12 @@ exports[`Select renders large Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 16px;
-  padding-block: 16px;
+  -webkit-padding-start: 16px;
+  padding-inline-start: 16px;
+  -webkit-padding-end: 16px;
+  padding-inline-end: 16px;
+  padding-block-start: 16px;
+  padding-block-end: 16px;
 }
 
 .emotion-3 {
@@ -6395,7 +6509,8 @@ exports[`Select renders large Select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6555,8 +6670,12 @@ exports[`Select renders loading select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: wait;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -6684,7 +6803,8 @@ exports[`Select renders loading select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6844,8 +6964,12 @@ exports[`Select renders medium Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -6994,7 +7118,8 @@ exports[`Select renders medium Select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7154,8 +7279,12 @@ exports[`Select renders select with a pre selected option 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -7338,7 +7467,8 @@ exports[`Select renders select with a pre selected option 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7498,8 +7628,12 @@ exports[`Select renders select with a selected option 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -7682,7 +7816,8 @@ exports[`Select renders select with a selected option 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7887,8 +8022,12 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-6 {
@@ -8050,7 +8189,8 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -8210,8 +8350,12 @@ exports[`Select renders select with non-string options 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -8396,7 +8540,8 @@ exports[`Select renders select with non-string options 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -8556,8 +8701,12 @@ exports[`Select renders small Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 8px;
-  padding-block: 8px;
+  -webkit-padding-start: 8px;
+  padding-inline-start: 8px;
+  -webkit-padding-end: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
 }
 
 .emotion-3 {
@@ -8706,7 +8855,8 @@ exports[`Select renders small Select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -8866,8 +9016,12 @@ exports[`Select should render custom placeholder 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -9016,7 +9170,8 @@ exports[`Select should render custom placeholder 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -9176,8 +9331,12 @@ exports[`Select virtualize long list 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-3 {
@@ -9339,7 +9498,8 @@ exports[`Select virtualize long list 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-block: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   display: block;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -9377,8 +9537,12 @@ exports[`Select virtualize long list 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding-inline: 12px;
-  padding-block: 8px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   min-height: 40px;
 }
 

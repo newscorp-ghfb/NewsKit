@@ -15,21 +15,27 @@ export default {
     header: {
       stylePreset: 'popoverHeader',
       typographyPreset: 'utilityLabel030',
-      paddingBlock: 'space040',
-      paddingInline: 'space050',
+      paddingBlockStart: 'space040',
+      paddingBlockEnd: 'space040',
+      paddingInlineStart: 'space050',
+      paddingInlineEnd: 'space050',
     },
     content: {
       typographyPreset: 'editorialParagraph010',
-      paddingBlock: 'space050',
-      paddingInline: 'space050',
+      paddingBlockStart: 'space050',
+      paddingBlockEnd: 'space050',
+      paddingInlineStart: 'space050',
+      paddingInlineEnd: 'space050',
     },
     closeButton: {
       stylePreset: 'iconButtonMinimalSecondary',
     },
     closeButtonContainer: {
       stylePreset: 'popoverCloseButtonContainer',
-      paddingBlock: 'space020',
-      paddingInline: 'space020',
+      paddingBlockStart: 'space020',
+      paddingBlockEnd: 'space020',
+      paddingInlineStart: 'space020',
+      paddingInlineEnd: 'space020',
     },
   },
 };

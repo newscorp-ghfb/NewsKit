@@ -193,7 +193,13 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   width: 32px;
   height: 32px;
   min-height: 32px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
   padding-inline: 0;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
@@ -404,7 +410,13 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   width: 32px;
   height: 32px;
   min-height: 32px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
   padding-inline: 0;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
   padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;

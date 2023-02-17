@@ -6,20 +6,26 @@ export default {
     popover: {
       minWidth: '140px',
       content: {
-        paddingBlock: 'space000',
-        paddingInline: 'space000',
+        paddingBlockStart: 'space000',
+        paddingBlockEnd: 'space000',
+        paddingInlineStart: 'space000',
+        paddingInlineEnd: 'space000',
       },
     },
     selectionList: {
-      paddingBlock: 'space010',
+      paddingBlockStart: 'space010',
+      paddingBlockEnd: 'space010',
     },
     selectionListOption: {
-      paddingInline: 'space030',
+      paddingInlineStart: 'space030',
+      paddingInlineEnd: 'space030',
     },
     modal: {
       content: {
-        paddingInline: 'space000',
-        paddingBlock: 'space000',
+        paddingInlineStart: 'space000',
+        paddingInlineEnd: 'space000',
+        paddingBlockStart: 'space000',
+        paddingBlockEnd: 'space000',
       },
     },
   },

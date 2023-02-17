@@ -23,8 +23,12 @@ exports[`CharacterCount applies overrides 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -186,8 +190,12 @@ exports[`CharacterCount displays no message if no max or min specified 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -342,8 +350,12 @@ exports[`CharacterCount displays state passed 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -501,8 +513,12 @@ exports[`CharacterCount with maxLength displays starting number of characters re
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
@@ -660,8 +676,12 @@ exports[`CharacterCount with minLength displays starting number of characters re
   letter-spacing: 0;
   padding: 0.5px 0px;
   margin-block-end: 8px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+  -webkit-padding-end: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .emotion-0 svg {
