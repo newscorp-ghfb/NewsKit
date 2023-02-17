@@ -40,15 +40,13 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader',
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
   plugins: [
-    new CopyPlugin([
-      {
-        from: 'static',
-      },
-    ]),
+    new CopyPlugin({
+      patterns: [{from: 'static'}],
+    }),
   ],
 };
