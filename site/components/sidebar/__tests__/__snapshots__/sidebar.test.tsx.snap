@@ -92,7 +92,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-3 {
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
 }
 
 .emotion-5 {
@@ -203,11 +204,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -353,7 +355,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -457,7 +458,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -535,8 +535,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-40 {
   box-sizing: border-box;
   margin-bottom: 12px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-inline: 48px;
+  padding-block: 48px;
 }
 
 .emotion-41 {
@@ -3302,7 +3302,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 @media screen {
@@ -3443,11 +3444,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3593,7 +3595,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -3697,7 +3698,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -3775,8 +3775,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-38 {
   box-sizing: border-box;
   margin-bottom: 12px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-inline: 48px;
+  padding-block: 48px;
 }
 
 .emotion-39 {
@@ -7125,7 +7125,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-3 {
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
 }
 
 .emotion-5 {
@@ -7236,11 +7237,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7386,7 +7388,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -7490,7 +7491,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -7568,8 +7568,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-40 {
   box-sizing: border-box;
   margin-bottom: 12px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-inline: 48px;
+  padding-block: 48px;
 }
 
 .emotion-41 {
@@ -10338,7 +10338,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 @media screen {
@@ -10479,11 +10480,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10629,7 +10631,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -10733,7 +10734,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -10811,8 +10811,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-38 {
   box-sizing: border-box;
   margin-bottom: 12px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-inline: 48px;
+  padding-block: 48px;
 }
 
 .emotion-39 {

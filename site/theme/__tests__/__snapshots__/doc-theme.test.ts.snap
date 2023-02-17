@@ -415,12 +415,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -473,7 +475,7 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "spaceInset": "space040",
       "width": "100%",
     },
     "tab": Object {
@@ -3159,12 +3161,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -3217,7 +3221,7 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "spaceInset": "space040",
       "width": "100%",
     },
     "tab": Object {
@@ -5900,12 +5904,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -5958,7 +5964,7 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "spaceInset": "space040",
       "width": "100%",
     },
     "tab": Object {
@@ -8644,12 +8650,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -8702,7 +8710,7 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "spaceInset": "space040",
       "width": "100%",
     },
     "tab": Object {
@@ -11385,12 +11393,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -11443,7 +11453,7 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "spaceInset": "space040",
       "width": "100%",
     },
     "tab": Object {
@@ -14129,12 +14139,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -14187,7 +14199,7 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "spaceInset": "space040",
       "width": "100%",
     },
     "tab": Object {
@@ -16870,12 +16882,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -16928,7 +16942,7 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "spaceInset": "space040",
       "width": "100%",
     },
     "tab": Object {
@@ -19614,12 +19628,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -19672,7 +19688,7 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "spaceInset": "space040",
       "width": "100%",
     },
     "tab": Object {

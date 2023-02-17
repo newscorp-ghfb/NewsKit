@@ -140,11 +140,12 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -290,7 +291,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -396,8 +396,8 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 .emotion-18 {
   box-sizing: border-box;
   margin-bottom: 12px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-inline: 48px;
+  padding-block: 48px;
 }
 
 .emotion-19 {
@@ -443,7 +443,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -827,7 +826,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   -webkit-padding-start: 32px;
@@ -1106,11 +1104,12 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1256,7 +1255,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -1356,8 +1354,8 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 .emotion-18 {
   box-sizing: border-box;
   margin-bottom: 12px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-inline: 48px;
+  padding-block: 48px;
 }
 
 .emotion-19 {
@@ -1847,11 +1845,12 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1997,7 +1996,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -2097,8 +2095,8 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 .emotion-18 {
   box-sizing: border-box;
   margin-bottom: 12px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-inline: 48px;
+  padding-block: 48px;
 }
 
 .emotion-19 {
@@ -2447,7 +2445,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   -webkit-padding-start: 32px;

@@ -32,7 +32,6 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   width: 32px;
   height: 32px;
   min-height: 32px;
@@ -320,7 +319,6 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   width: 32px;
   height: 32px;
   min-height: 32px;

@@ -3954,7 +3954,7 @@ exports[`Modal renders with different closePosition 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Modal renders with logical padding props 1`] = `
+exports[`Modal renders with logical props 1`] = `
 <DocumentFragment>
   <div
     aria-hidden="true"
@@ -4079,8 +4079,8 @@ exports[`Modal renders with logical padding props 1`] = `
   background-color: #FFFFFF;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
+  margin-block: 30px;
   padding-inline: 15px;
-  padding-block: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -4278,7 +4278,7 @@ exports[`Modal renders with logical padding props 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  padding-inline: 24px;
+  padding-inline: 10px;
   padding-block: 16px;
 }
 
@@ -4290,7 +4290,7 @@ exports[`Modal renders with logical padding props 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding-inline: 24px;
+  padding-inline: 10px;
   padding-block: 24px;
 }
 
@@ -4300,7 +4300,7 @@ exports[`Modal renders with logical padding props 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding-inline: 8px;
+  padding-inline: 10px;
   padding-block: 8px;
   padding-left: 0;
 }
@@ -4328,7 +4328,7 @@ exports[`Modal renders with logical padding props 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  padding-inline: 8px;
+  padding-inline: 10px;
   padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
