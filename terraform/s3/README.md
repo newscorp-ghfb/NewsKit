@@ -1,4 +1,15 @@
-There are various buckets and they should be created/deprecated in this order:
+There are various buckets and they will be created/deprecated (over time) in this order.
+
+Task 1 (below) must be done once at the start of the migration by any developer with admin access to the newskit AWS accounts.
+ie
+Account: nuk-digital-dev-newskit (696065950852) / nct-sysadmin
+Account: nuk-digital-prod-newskit (005057636819) / nct-sysadmin
+
+Task 2 is ensuring that automated pipeline is running. It depends on task 1 as the pipeline stores the generated Terraform state in the new bucket that task1 creates.
+
+Task 3 should done only at the end of the migration any developer with admin access to th newskit AWS accounts.
+ie When the PR docs bucket has been fully replaced by the equivalent PR docs bucket in the newskit AWS accounts AND the new PR docs buckets have been automatically populated by new CircleCI steps.
+
 
 ## 1. (New) MANUAL TERRAFORM SETUP FOR NEWSKIT TF STATE BUCKETS
 
@@ -78,3 +89,10 @@ The Terraform directly under the s3 folders should NOT be run manually but via C
 It is just used to create and populate the NGN S3 docs buckets that
 is full of PR folders. These root-level files will be removed in a future release
 as the Newskit dev account has a bucket reserved for PRs.
+
+A developer will need to do:
+```
+terraform destroy
+```
+
+directly under /s3 folder to remove the legacy NGN S3 buckets originally created for PR docs.
