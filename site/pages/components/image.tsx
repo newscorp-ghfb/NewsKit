@@ -159,7 +159,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
           optional: true,
         },
       ],
-      media: getIllustrationComponent('components/Image/anatomy'),
+      media: getIllustrationComponent('components/image/anatomy'),
     }}
     options={{
       introduction: 'The image has options for different use cases:',
@@ -169,7 +169,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
           description:
             'The width and height dimensions of an image can be set to fixed sizes or percentages.',
           media: getIllustrationComponent(
-            'components/Image/options/image-dimensions',
+            'components/image/options/imagedimensions',
           ),
         },
         {
@@ -177,7 +177,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
           description:
             'The image has a placeholder icon that can be used to display a custom icon e.g. brand logo.',
           media: getIllustrationComponent(
-            'components/Image/options/placeholdericon',
+            'components/image/options/placeholdericon',
           ),
         },
         {
@@ -192,7 +192,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
               image source.
             </>
           ),
-          media: getIllustrationComponent('components/Image/options/caption'),
+          media: getIllustrationComponent('components/image/options/caption'),
         },
       ],
     }}
@@ -203,7 +203,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Base',
           description: 'The default style of the image when loaded.',
-          media: getIllustrationComponent('components/Image/states/base'),
+          media: getIllustrationComponent('components/image/states/base'),
         },
         {
           title: 'Loading',
@@ -214,7 +214,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
               skipped when the renderOnServer prop is set to &#39;true&#39;.{' '}
             </>
           ),
-          media: getIllustrationComponent('components/Image/states/loading'),
+          media: getIllustrationComponent('components/image/states/loading'),
         },
       ],
     }}
@@ -226,7 +226,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
           description:
             "When in a loading state, the loading container of the image can determine the height or width of the image if only one dimension is provided. Image loading can be set to 'lazy' which will wait  until the browser estimates it will be needed. Or 'eager' which will load the image as soon as possible.",
           media: getIllustrationComponent(
-            'components/Image/behaviours/loading',
+            'components/image/behaviours/loading',
           ),
         },
       ],
@@ -239,7 +239,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
           description:
             'Avoid including text in images, as screen readers will not be able to read the words.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/Image/usage/dont-01'),
+          media: getIllustrationComponent('components/image/usage/dont-01'),
         },
       ],
     }}
