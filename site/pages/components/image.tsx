@@ -7,9 +7,9 @@ import {LayoutProps} from '../../components/layout';
 import {MetaStatus} from '../../components/meta/types';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
-import {TextBlock} from '../../../src/text-block';
 import {IconFilledCircle} from '../../components/icons';
 import {InlineCode} from '../../components/markdown-elements';
+import {ContentText} from '../../components/text-section/content-text';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -185,7 +185,10 @@ const ImageComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               A{' '}
-              <Link href="https://www.newskit.co.uk/components/caption/">
+              <Link
+                target="_self"
+                href="https://www.newskit.co.uk/components/caption/"
+              >
                 caption
               </Link>{' '}
               component can be added to an image with an optional credit to the
@@ -246,13 +249,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
     accessibility={{
       introduction: (
         <>
-          <TextBlock
-            typographyPreset={{
-              xl: 'editorialHeadline030',
-            }}
-          >
-            Image alt text
-          </TextBlock>
+          <ContentText title="Image alt text" />
           <UnorderedList
             markerAlign="start"
             listItemMarker={IconFilledCircle}
@@ -266,14 +263,27 @@ const ImageComponent = (layoutProps: LayoutProps) => (
             }}
           >
             <>
-              Always provide an alternative text description that describes the
-              information or function the image represents via the alt prop.
-              This will allow screen readers and any other assistive technology
-              to understand the image.
+              Always provide an{' '}
+              <Link
+                target="_blank"
+                href="https://www.w3.org/WAI/tutorials/images/"
+              >
+                alternative text description
+              </Link>{' '}
+              that describes the information or function the image represents
+              via the alt prop. This will allow screen readers and any other
+              assistive technology to understand the image.
             </>
             <>
-              This alt-decision tree is helpful for determining whether and how
-              to provide alternative text.
+              This{' '}
+              <Link
+                href="https://www.w3.org/WAI/tutorials/images/decision-tree/"
+                target="_blank"
+              >
+                alt-decision
+              </Link>{' '}
+              tree is helpful for determining whether and how to provide
+              alternative text.
             </>
             <>
               Alt-text is not usually visible but is read out by screen readers
@@ -360,7 +370,10 @@ const ImageComponent = (layoutProps: LayoutProps) => (
                   <br />
                   <br />
                   For more detailed information how it works refer to the{' '}
-                  <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">
+                  <Link
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
+                  >
                     picture element documentation from MDN.
                   </Link>
                 </>
@@ -383,7 +396,10 @@ const ImageComponent = (layoutProps: LayoutProps) => (
                   <br />
                   <br />
                   For more detailed information on this property refer to the{' '}
-                  <Link href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/loading">
+                  <Link
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/loading"
+                  >
                     HTMLImageElement documentation from MDN.
                   </Link>
                 </>
@@ -398,7 +414,10 @@ const ImageComponent = (layoutProps: LayoutProps) => (
                   <br />
                   <br />
                   For more detailed information on this property refer to the{' '}
-                  <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">
+                  <Link
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"
+                  >
                     object-fit documentation from MDN.
                   </Link>
                 </>
@@ -413,7 +432,10 @@ const ImageComponent = (layoutProps: LayoutProps) => (
                   <br />
                   <br />
                   For more detailed information on this property refer to the{' '}
-                  <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position">
+                  <Link
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-position"
+                  >
                     object-position documentation from MDN.
                   </Link>
                 </>
