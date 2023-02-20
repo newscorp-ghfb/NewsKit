@@ -806,17 +806,13 @@ jobs:
             export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
             echo "Found branch name: ${PR_BRANCH_NAME}"
             export PERCY_TOKEN=$PERCY_COMPS_TOKEN
-            export CHECK_UPDATES=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
-            echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
-            if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
+            export UPDATES_REQUIRED=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
+            if [ $UPDATES_REQUIRED = "true" ]; then
               echo "Baseline updates required; continuing job."
               export PERCY_PARTIAL_BUILD=1
-            elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
-              echo "No baseline updates required; finishing job."
-              circleci-agent step halt
             else
-              echo "Error checking PR"
-              exit 1
+              echo "No baseline updates required; finishing job." &&
+              circleci-agent step halt
             fi
       - run_test_visual_comps_percy
       - slack/notify:
@@ -834,18 +830,14 @@ jobs:
           command: |
             export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
             echo "Found branch name: ${PR_BRANCH_NAME}"
-            export PERCY_TOKEN=$PERCY_DOCSITE_TOKEN
-            export CHECK_UPDATES=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
-            echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
-            if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
+            export PERCY_TOKEN=$PERCY_COMPS_TOKEN
+            export UPDATES_REQUIRED=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
+            if [ $UPDATES_REQUIRED = "true" ]; then
               echo "Baseline updates required; continuing job."
               export PERCY_PARTIAL_BUILD=1
-            elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
-              echo "No baseline updates required; finishing job."
-              circleci-agent step halt
             else
-              echo "Error checking PR"
-              exit 1
+              echo "No baseline updates required; finishing job." &&
+              circleci-agent step halt
             fi
       - run_test_visual_docs_percy
       - slack/notify:

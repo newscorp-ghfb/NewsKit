@@ -6,14 +6,7 @@ const PERCY_URL = 'https://percy.io';
 
 const CONFIG_FILE = 'percy-storybook.config.json';
 
-// Use stderr to stop logs being returned to parent process
-const log = value => process.stderr.write(`${value}\n`);
-
-const RESPONSES = {
-  ERROR: 'ERROR',
-  UPDATES_REQUIRED: 'UPDATES_REQUIRED',
-  NO_UPDATES_REQUIRED: 'NO_UPDATES_REQUIRED',
-};
+const log = value => process.stdout.write(`${value}\n`);
 
 function apiCall(url, options) {
   return new Promise((resolve, reject) => {
@@ -34,7 +27,8 @@ function apiCall(url, options) {
 function percyApiCall(path) {
   const token = process.env.PERCY_TOKEN;
   if (!token) {
-    throw Error(`No Percy token found`);
+    log(`No Percy token found`);
+    throw Error();
   }
   return apiCall(`${PERCY_URL}${path}`, {
     headers: {Authorization: `Token ${token}`},
@@ -44,16 +38,17 @@ function percyApiCall(path) {
 async function getPercyBuildForBranch(branchName) {
   log(`Looking for Percy build for branch ${branchName}`);
   const builds = await percyApiCall('/api/v1/builds');
-  for (let i = 0; i < builds.data.length; i++) {
+  for (let i = 0; i <= builds.data.length; i++) {
     const build = builds.data[i];
     if (build.attributes.branch === branchName) {
       return build;
     }
   }
-  throw Error(`No Percy build found for branch ${branchName}`);
+  log(`No Percy build found for branch ${branchName}`);
+  throw Error();
 }
 
-async function checkUpdates(headRefName) {
+async function run(headRefName) {
   const branchName = headRefName.trim();
   log(`Checking if baselines to be updated after ${branchName} was merged`);
 
@@ -77,20 +72,9 @@ async function checkUpdates(headRefName) {
     )
     .map(({attributes: {name}}) => `^${name}$`);
 
-  log(`Updating ${CONFIG_FILE}`);
   fs.writeFileSync(`./${CONFIG_FILE}`, JSON.stringify({include}));
 
   return true;
 }
-
-const run = async headRefName =>
-  checkUpdates(headRefName)
-    .then(res =>
-      res ? RESPONSES.UPDATES_REQUIRED : RESPONSES.NO_UPDATES_REQUIRED,
-    )
-    .catch(err => {
-      log(err);
-      return RESPONSES.ERROR;
-    });
 
 module.exports = {run};
