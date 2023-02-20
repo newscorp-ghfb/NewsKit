@@ -406,7 +406,9 @@ commands:
     steps:
       - run:
           name: Set percy/newskit-comps token
-          command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
+          command: |
+            echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
+            echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
       - run:
           name: Run Percy Storybook Component Tests
           command: make comps_visual_test_percy
@@ -419,7 +421,9 @@ commands:
           at: ~/project
       - run:
           name: Set percy/newskit-comps token
-          command: echo "export PERCY_TOKEN=${PERCY_COMPS_TOKEN}" >> $BASH_ENV
+          command: |
+            echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
+            echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
       - run:
           name: 'Skip the required Percy check for the newskit-comps project'
           command: yarn test:visual:comps:ci:percy:skip
@@ -432,7 +436,9 @@ commands:
           at: ~/project
       - run:
           name: Set percy/newskit-docsite token
-          command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
+          command: |
+            echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
+            echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
       - run:
           name: 'Skip the required Percy check for the newskit-docsite project'
           command: yarn e2e:visual:docs:ci:percy:skip
