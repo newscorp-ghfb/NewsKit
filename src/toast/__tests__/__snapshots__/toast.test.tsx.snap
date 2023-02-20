@@ -1083,12 +1083,8 @@ exports[`Toast Component renders with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1215,12 +1211,8 @@ exports[`Toast Component renders with actions 1`] = `
   align-items: center;
   min-width: 64px;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1380,12 +1372,8 @@ exports[`Toast Component renders with content as react element 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1511,12 +1499,8 @@ exports[`Toast Component renders with content as string and link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1755,12 +1739,8 @@ exports[`Toast Component renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -1878,12 +1858,8 @@ exports[`Toast Component renders with icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -2061,13 +2037,8 @@ exports[`Toast Component renders with logical props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin-block: 50px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
   padding-inline: 30px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -2185,13 +2156,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
   padding-inline: 20px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
   padding-block: 20px;
 }
 
@@ -2375,12 +2340,8 @@ exports[`Toast Component renders with overrides and all props 1`] = `
   align-items: center;
   min-width: 64px;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2566,12 +2527,8 @@ exports[`Toast Component renders with title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {

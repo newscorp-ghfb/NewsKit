@@ -51,12 +51,8 @@ exports[`Card renders MQ layout 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 @media screen and (max-width: 479px) {
@@ -145,12 +141,8 @@ exports[`Card renders actions section with given component 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -210,12 +202,8 @@ exports[`Card renders actions section with given component 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -260,12 +248,8 @@ exports[`Card renders actions section with given component 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -377,12 +361,8 @@ exports[`Card renders actions section with given component 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -534,12 +514,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -599,12 +575,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
   min-height: 64px;
   position: relative;
   z-index: 2;
@@ -649,12 +621,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -766,12 +734,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -923,12 +887,8 @@ exports[`Card renders actions section with overrides for padding 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -988,13 +948,7 @@ exports[`Card renders actions section with overrides for padding 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
   padding-inline: 16px;
-  padding-block-start: 0;
-  padding-block-end: 0;
   padding-block: 12px;
   min-height: 48px;
   position: relative;
@@ -1040,12 +994,8 @@ exports[`Card renders actions section with overrides for padding 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1157,12 +1107,8 @@ exports[`Card renders actions section with overrides for padding 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1316,13 +1262,8 @@ exports[`Card renders card with logical props overrides 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
   padding-inline: 30px;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -1405,13 +1346,7 @@ exports[`Card renders card with overrides 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   background-color: #FDDCC6;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
   padding-inline: 8px;
-  padding-block-start: 0;
-  padding-block-end: 0;
   padding-block: 4px;
 }
 
@@ -1493,12 +1428,8 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -1744,12 +1675,8 @@ exports[`Card renders media section if the media data is provided 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -1926,12 +1853,8 @@ exports[`Card renders media section with a custom component 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2108,12 +2031,8 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 
 .emotion-6 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2290,12 +2209,8 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 
 .emotion-6 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2473,12 +2388,8 @@ exports[`Card renders media section with overrides 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2655,12 +2566,8 @@ exports[`Card renders with card items 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2720,12 +2627,8 @@ exports[`Card renders with card items 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -2770,12 +2673,8 @@ exports[`Card renders with card items 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2887,12 +2786,8 @@ exports[`Card renders with card items 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3140,12 +3035,8 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3369,12 +3260,8 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3560,12 +3447,8 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3757,12 +3640,8 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3954,12 +3833,8 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -4151,12 +4026,8 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -4348,12 +4219,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -4545,12 +4412,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -4647,12 +4510,8 @@ exports[`Card with href renders correctly with actions 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -4769,12 +4628,8 @@ exports[`Card with href renders correctly with actions 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -4819,12 +4674,8 @@ exports[`Card with href renders correctly with actions 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4936,12 +4787,8 @@ exports[`Card with href renders correctly with actions 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5179,12 +5026,8 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 
 .emotion-6 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -5343,12 +5186,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -5572,12 +5411,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -5819,12 +5654,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -6064,12 +5895,8 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -6214,12 +6041,8 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 
 .emotion-2 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -6368,52 +6191,28 @@ exports[`CardInset renders card with overrides 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-2 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
     padding-inline: 24px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-2 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
     padding-inline: 24px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
     padding-inline: 32px;
-    padding-block-start: 24px;
-    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
     padding-inline: 32px;
-    padding-block-start: 24px;
-    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
@@ -6557,45 +6356,29 @@ exports[`CardInset renders with card items 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-6 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-6 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-6 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
-    padding-block-start: 24px;
-    padding-block-end: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-6 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
-    padding-block-start: 24px;
-    padding-block-end: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
@@ -6663,45 +6446,29 @@ exports[`CardInset renders with card items 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-9 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 16px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-9 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 16px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-9 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 24px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-9 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 24px;
+    padding-block: 16px;
   }
 }
 
@@ -6744,12 +6511,8 @@ exports[`CardInset renders with card items 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6861,12 +6624,8 @@ exports[`CardInset renders with card items 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

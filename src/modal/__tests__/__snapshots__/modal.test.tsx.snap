@@ -322,12 +322,8 @@ exports[`Modal renders default 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -338,12 +334,8 @@ exports[`Modal renders default 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -352,12 +344,8 @@ exports[`Modal renders default 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -384,12 +372,8 @@ exports[`Modal renders default 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -906,12 +890,8 @@ exports[`Modal renders inline 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -922,12 +902,8 @@ exports[`Modal renders inline 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -936,12 +912,8 @@ exports[`Modal renders inline 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -968,12 +940,8 @@ exports[`Modal renders inline 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1453,13 +1421,7 @@ exports[`Modal renders modal with overrides 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
   padding-inline: 32px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
   padding-block: 32px;
 }
 
@@ -1473,12 +1435,8 @@ exports[`Modal renders modal with overrides 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -1505,12 +1463,8 @@ exports[`Modal renders modal with overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2047,12 +2001,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-6 {
@@ -2063,12 +2013,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-9 {
@@ -2077,12 +2023,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -2109,12 +2051,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2660,24 +2598,16 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-6 {
@@ -2686,12 +2616,8 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -2718,12 +2644,8 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3225,12 +3147,8 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -3239,12 +3157,8 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -3271,12 +3185,8 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3794,12 +3704,8 @@ exports[`Modal renders with different closePosition 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -3810,12 +3716,8 @@ exports[`Modal renders with different closePosition 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -3824,12 +3726,8 @@ exports[`Modal renders with different closePosition 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -3856,12 +3754,8 @@ exports[`Modal renders with different closePosition 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4384,13 +4278,8 @@ exports[`Modal renders with logical props 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
   padding-inline: 10px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -4401,13 +4290,8 @@ exports[`Modal renders with logical props 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
   padding-inline: 10px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -4416,13 +4300,8 @@ exports[`Modal renders with logical props 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
   padding-inline: 10px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -4449,13 +4328,8 @@ exports[`Modal renders with logical props 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
   padding-inline: 10px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4976,12 +4850,8 @@ exports[`Modal renders without close button 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -4992,12 +4862,8 @@ exports[`Modal renders without close button 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 <div
@@ -5379,12 +5245,8 @@ exports[`Modal renders without header 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -5397,12 +5259,8 @@ exports[`Modal renders without header 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -5429,12 +5287,8 @@ exports[`Modal renders without header 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5925,12 +5779,8 @@ exports[`Modal renders without header and close 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -6233,12 +6083,8 @@ exports[`Modal renders without overlay 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -6249,12 +6095,8 @@ exports[`Modal renders without overlay 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -6263,12 +6105,8 @@ exports[`Modal renders without overlay 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6295,12 +6133,8 @@ exports[`Modal renders without overlay 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6809,12 +6643,8 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -6823,12 +6653,8 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6855,12 +6681,8 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

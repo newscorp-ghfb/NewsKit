@@ -16,10 +16,8 @@ export default {
     panel: {
       stylePreset: 'tooltipPanel',
       typographyPreset: 'utilityLabel010',
-      paddingBlockStart: 'space020',
-      paddingBlockEnd: 'space020',
-      paddingInlineStart: 'space020',
-      paddingInlineEnd: 'space020',
+      paddingBlock: 'space020',
+      paddingInline: 'space020',
     },
   },
 };

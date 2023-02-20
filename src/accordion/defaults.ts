@@ -5,10 +5,8 @@ export default {
       stylePreset: 'accordionHeader',
       typographyPreset: 'utilityButton030',
       spaceInline: 'space020',
-      paddingBlockStart: 'space030',
-      paddingBlockEnd: 'space030',
-      paddingInlineStart: 'space030',
-      paddingInlineEnd: 'space030',
+      paddingBlock: 'space030',
+      paddingInline: 'space030',
       label: {
         typographyPreset: 'utilityButton030',
       },
@@ -16,10 +14,8 @@ export default {
     panel: {
       transitionPreset: 'maxHeightChange',
       stylePreset: 'accordionPanel',
-      paddingBlockStart: 'space030',
-      paddingBlockEnd: 'space030',
-      paddingInlineStart: 'space030',
-      paddingInlineEnd: 'space030',
+      paddingBlock: 'space030',
+      paddingInline: 'space030',
     },
   },
 };

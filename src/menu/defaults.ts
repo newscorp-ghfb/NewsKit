@@ -1,28 +1,22 @@
 const smallCommonDefaults = {
   spaceInline: 'space020',
   minHeight: 'sizing070',
-  paddingBlockStart: 'space020',
-  paddingBlockEnd: 'space020',
-  paddingInlineStart: 'space040',
-  paddingInlineEnd: 'space040',
+  paddingBlock: 'space020',
+  paddingInline: 'space040',
 };
 
 const mediumCommonDefaults = {
   spaceInline: 'space020',
   minHeight: 'sizing080',
-  paddingBlockStart: 'space020',
-  paddingBlockEnd: 'space020',
-  paddingInlineStart: 'space040',
-  paddingInlineEnd: 'space040',
+  paddingBlock: 'space020',
+  paddingInline: 'space040',
 };
 
 const largeCommonDefaults = {
   spaceInline: 'space020',
   minHeight: 'sizing090',
-  paddingBlockStart: 'space030',
-  paddingBlockEnd: 'space030',
-  paddingInlineStart: 'space050',
-  paddingInlineEnd: 'space050',
+  paddingBlock: 'space030',
+  paddingInline: 'space050',
 };
 
 export default {

@@ -28,12 +28,8 @@ exports[`Accordion renders as a h4 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -268,12 +264,8 @@ exports[`Accordion renders as a h4 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -415,12 +407,8 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -655,12 +643,8 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -802,12 +786,8 @@ exports[`Accordion renders with default props 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -1042,12 +1022,8 @@ exports[`Accordion renders with default props 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -1188,12 +1164,8 @@ exports[`Accordion renders with disabled state 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -1396,12 +1368,8 @@ exports[`Accordion renders with disabled state 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -1543,12 +1511,8 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -1783,12 +1747,8 @@ exports[`Accordion renders with expanded state and icon 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -1930,12 +1890,8 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -2170,12 +2126,8 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -2313,12 +2265,8 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -2572,12 +2520,8 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -2719,12 +2663,8 @@ exports[`Accordion renders with no header 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -2914,12 +2854,8 @@ exports[`Accordion renders with no header 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -3013,12 +2949,8 @@ exports[`Accordion renders with no label 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -3245,12 +3177,8 @@ exports[`Accordion renders with no label 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -3388,13 +3316,7 @@ exports[`Accordion renders with style overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
   padding-inline: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
   padding-block: 16px;
 }
 
@@ -3699,12 +3621,8 @@ exports[`Accordion renders with style overrides 1`] = `
   border-style: none none dotted none;
   border-color: #fb8500;
   border-width: 4px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -3846,12 +3764,8 @@ exports[`Accordion renders without leading icon 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -4041,12 +3955,8 @@ exports[`Accordion renders without leading icon 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -4142,12 +4052,8 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -4382,12 +4288,8 @@ exports[`Accordion should render with custom ariaControls and id 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>
@@ -4528,12 +4430,8 @@ exports[`AccordionGroup different type of children 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1>:not(:last-of-type) {
@@ -4715,12 +4613,8 @@ exports[`AccordionGroup different type of children 1`] = `
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 <div>

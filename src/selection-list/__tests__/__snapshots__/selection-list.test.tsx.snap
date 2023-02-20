@@ -54,12 +54,8 @@ exports[`SelectionList render should render SelectionList with a selected option
   min-height: 48px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -176,12 +172,8 @@ exports[`SelectionList render should render SelectionList with a selected option
   min-height: 48px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-4:hover:not(:disabled) {
@@ -322,12 +314,8 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
   min-height: 48px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -454,12 +442,8 @@ exports[`SelectionList render should render SelectionList with non-string option
   min-height: 48px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -531,12 +515,8 @@ exports[`SelectionList render should render SelectionList with non-string option
   min-height: 48px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-2:hover:not(:disabled) {
@@ -720,12 +700,8 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
   min-height: 48px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -856,13 +832,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
   column-gap: 8px;
   margin-inline: 12px;
   margin-block: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
   padding-inline: 24px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
   padding-block: 16px;
 }
 
@@ -982,13 +952,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
   column-gap: 8px;
   margin-inline: 12px;
   margin-block: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
   padding-inline: 24px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
   padding-block: 16px;
 }
 
@@ -1126,12 +1090,8 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
   min-height: 64px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-1:hover:not(:disabled) {
@@ -1248,12 +1208,8 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
   min-height: 64px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-4:hover:not(:disabled) {
@@ -1390,12 +1346,8 @@ exports[`SelectionList render should render default SelectionList 1`] = `
   min-height: 48px;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-1:hover:not(:disabled) {

@@ -208,12 +208,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   min-width: 64px;
   height: 32px;
   min-height: 32px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -361,13 +357,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   align-items: center;
   min-width: 64px;
   min-height: 40px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
   padding-inline: 64px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -470,13 +461,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
   padding-inline: 64px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3315,13 +3301,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
   padding-inline: 0;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
   padding-block: 0;
 }
 
@@ -3467,12 +3447,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   min-width: 64px;
   height: 32px;
   min-height: 32px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3620,13 +3596,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   align-items: center;
   min-width: 64px;
   min-height: 40px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
   padding-inline: 64px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3729,13 +3700,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
   padding-inline: 64px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4018,7 +3984,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-467 {
   position: absolute;
   top: 50%;
-  left: calc((16px / 2) + 0px);
+  left: calc((16px / 2) + 4px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
@@ -4094,10 +4060,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   align-items: center;
   background-color: #85939C;
   border-radius: 20rem;
-  -webkit-padding-start: 4px;
-  padding-inline-start: 4px;
-  -webkit-padding-end: 4px;
-  padding-inline-end: 4px;
+  padding-inline: 4px;
 }
 
 .emotion-468:checked:not(:disabled) {
@@ -4224,12 +4187,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 16px;
   height: 16px;
   left: 0;
-  -webkit-padding-start: 4px;
-  padding-inline-start: 4px;
-  -webkit-padding-end: 4px;
-  padding-inline-end: 4px;
-  padding-block-start: 4px;
-  padding-block-end: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;
@@ -7280,12 +7239,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   min-width: 64px;
   height: 32px;
   min-height: 32px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7433,13 +7388,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   align-items: center;
   min-width: 64px;
   min-height: 40px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
   padding-inline: 64px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7542,13 +7492,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
   padding-inline: 64px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10390,13 +10335,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
   padding-inline: 0;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
   padding-block: 0;
 }
 
@@ -10542,12 +10481,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   min-width: 64px;
   height: 32px;
   min-height: 32px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10695,13 +10630,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   align-items: center;
   min-width: 64px;
   min-height: 40px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
   padding-inline: 64px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -10804,13 +10734,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
   padding-inline: 64px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -11093,7 +11018,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-467 {
   position: absolute;
   top: 50%;
-  left: calc((16px / 2) + 0px);
+  left: calc((16px / 2) + 4px);
   background-color: #3358CC;
   border-radius: 50%;
   opacity: 0;
@@ -11169,10 +11094,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   align-items: center;
   background-color: #85939C;
   border-radius: 20rem;
-  -webkit-padding-start: 4px;
-  padding-inline-start: 4px;
-  -webkit-padding-end: 4px;
-  padding-inline-end: 4px;
+  padding-inline: 4px;
 }
 
 .emotion-468:checked:not(:disabled) {
@@ -11299,12 +11221,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 16px;
   height: 16px;
   left: 0;
-  -webkit-padding-start: 4px;
-  padding-inline-start: 4px;
-  -webkit-padding-end: 4px;
-  padding-inline-end: 4px;
-  padding-block-start: 4px;
-  padding-block-end: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
   position: absolute;
   aspect-ratio: 1/1;
   display: grid;

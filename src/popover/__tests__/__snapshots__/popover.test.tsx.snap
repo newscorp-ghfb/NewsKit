@@ -109,12 +109,8 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -132,13 +128,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
   padding-inline: 20px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
   padding-block: 24px;
   padding-left: 0;
 }
@@ -166,12 +156,8 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -464,12 +450,8 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -479,12 +461,8 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -502,12 +480,8 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   border-color: #820000;
   border-style: solid;
   border-width: 2px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -534,12 +508,8 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -777,12 +747,8 @@ exports[`Popover close button should show left-aligned 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -800,12 +766,8 @@ exports[`Popover close button should show left-aligned 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -832,12 +794,8 @@ exports[`Popover close button should show left-aligned 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1100,12 +1058,8 @@ exports[`Popover close button should show right-aligned 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -1123,12 +1077,8 @@ exports[`Popover close button should show right-aligned 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -1155,12 +1105,8 @@ exports[`Popover close button should show right-aligned 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1423,13 +1369,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
   padding-inline: 20px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
   padding-block: 24px;
 }
 
@@ -1448,12 +1388,8 @@ exports[`Popover content applies logical prop overrides 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -1480,12 +1416,8 @@ exports[`Popover content applies logical prop overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1778,12 +1710,8 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -1794,12 +1722,8 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -1817,12 +1741,8 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -1849,12 +1769,8 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2124,12 +2040,8 @@ exports[`Popover content applies typography preset overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -2147,12 +2059,8 @@ exports[`Popover content applies typography preset overrides 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -2179,12 +2087,8 @@ exports[`Popover content applies typography preset overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2477,13 +2381,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
   padding-inline: 20px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
   padding-block: 24px;
 }
 
@@ -2494,12 +2392,8 @@ exports[`Popover header applies logical prop overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -2517,12 +2411,8 @@ exports[`Popover header applies logical prop overrides 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -2549,12 +2439,8 @@ exports[`Popover header applies logical prop overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2854,12 +2740,8 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -2869,12 +2751,8 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -2892,12 +2770,8 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -2924,12 +2798,8 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3210,12 +3080,8 @@ exports[`Popover header applies typography preset overrides 1`] = `
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -3225,12 +3091,8 @@ exports[`Popover header applies typography preset overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -3248,12 +3110,8 @@ exports[`Popover header applies typography preset overrides 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -3280,12 +3138,8 @@ exports[`Popover header applies typography preset overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3574,12 +3428,8 @@ exports[`Popover offset should be applied with pointer and px distance override 
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -3597,12 +3447,8 @@ exports[`Popover offset should be applied with pointer and px distance override 
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -3629,12 +3475,8 @@ exports[`Popover offset should be applied with pointer and px distance override 
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3916,12 +3758,8 @@ exports[`Popover offset should be applied with pointer and token distance overri
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -3939,12 +3777,8 @@ exports[`Popover offset should be applied with pointer and token distance overri
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -3971,12 +3805,8 @@ exports[`Popover offset should be applied with pointer and token distance overri
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4258,12 +4088,8 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -4281,12 +4107,8 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -4313,12 +4135,8 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4600,12 +4418,8 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -4623,12 +4437,8 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -4655,12 +4465,8 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4942,12 +4748,8 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -4965,12 +4767,8 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -4997,12 +4795,8 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5265,12 +5059,8 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -5288,12 +5078,8 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -5320,12 +5106,8 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5607,12 +5389,8 @@ exports[`Popover pointer padding should be applied with token distance override 
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -5630,12 +5408,8 @@ exports[`Popover pointer padding should be applied with token distance override 
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -5662,12 +5436,8 @@ exports[`Popover pointer padding should be applied with token distance override 
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5949,12 +5719,8 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -5972,12 +5738,8 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6004,12 +5766,8 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6291,12 +6049,8 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -6314,12 +6068,8 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6346,12 +6096,8 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6633,12 +6379,8 @@ exports[`Popover should render correct styles: default 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -6656,12 +6398,8 @@ exports[`Popover should render correct styles: default 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6688,12 +6426,8 @@ exports[`Popover should render correct styles: default 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6967,13 +6701,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
   padding-inline: 8px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
   padding-block: 16px;
 }
 
@@ -6992,12 +6720,8 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -7024,12 +6748,8 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7292,12 +7012,8 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -7315,12 +7031,8 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -7347,12 +7059,8 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7634,12 +7342,8 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -7657,12 +7361,8 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -7689,12 +7389,8 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7976,12 +7672,8 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -7999,12 +7691,8 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -8031,12 +7719,8 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8318,12 +8002,8 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  -webkit-padding-start: 24px;
-  padding-inline-start: 24px;
-  -webkit-padding-end: 24px;
-  padding-inline-end: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -8341,12 +8021,8 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   border-color: #ABABAB;
   border-style: none none solid none;
   border-width: 1px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -8373,12 +8049,8 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

@@ -11,17 +11,13 @@ export default {
       },
     },
     teaserContainer: {
-      paddingInlineStart: 'space000',
-      paddingInlineEnd: 'space000',
-      paddingBlockStart: 'space000',
-      paddingBlockEnd: 'space000',
+      paddingInline: 'space000',
+      paddingBlock: 'space000',
     },
     actionsContainer: {
       minHeight: 'sizing080',
-      paddingInlineStart: 'space000',
-      paddingInlineEnd: 'space000',
-      paddingBlockStart: 'space000',
-      paddingBlockEnd: 'space000',
+      paddingInline: 'space000',
+      paddingBlock: 'space000',
     },
     headline: {
       nonInteractive: {
@@ -73,25 +69,13 @@ export default {
       spaceInline: 'space000',
     },
     teaserContainer: {
-      paddingInlineStart: {
+      paddingInline: {
         xs: 'space040',
         sm: 'space040',
         md: 'space050',
         lg: 'space050',
       },
-      paddingInlineEnd: {
-        xs: 'space040',
-        sm: 'space040',
-        md: 'space050',
-        lg: 'space050',
-      },
-      paddingBlockStart: {
-        xs: 'space040',
-        sm: 'space040',
-        md: 'space050',
-        lg: 'space050',
-      },
-      paddingBlockEnd: {
+      paddingBlock: {
         xs: 'space040',
         sm: 'space040',
         md: 'space050',
@@ -100,25 +84,13 @@ export default {
     },
     actionsContainer: {
       minHeight: 'sizing000',
-      paddingInlineStart: {
+      paddingInline: {
         xs: 'space040',
         sm: 'space040',
         md: 'space050',
         lg: 'space050',
       },
-      paddingInlineEnd: {
-        xs: 'space040',
-        sm: 'space040',
-        md: 'space050',
-        lg: 'space050',
-      },
-      paddingBlockStart: {
-        xs: 'space030',
-        sm: 'space030',
-        md: 'space040',
-        lg: 'space040',
-      },
-      paddingBlockEnd: {
+      paddingBlock: {
         xs: 'space030',
         sm: 'space030',
         md: 'space040',

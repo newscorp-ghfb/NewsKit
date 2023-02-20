@@ -177,13 +177,7 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
   padding-inline: 24px;
-  padding-block-start: 0;
-  padding-block-end: 0;
   padding-block: 24px;
 }
 
@@ -335,13 +329,7 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-16 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
   padding-inline: 4px;
-  padding-block-start: 0;
-  padding-block-end: 0;
   padding-block: 8px;
 }
 
@@ -659,13 +647,7 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
   padding-inline: 24px;
-  padding-block-start: 0;
-  padding-block-end: 0;
   padding-block: 24px;
 }
 
@@ -782,13 +764,7 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-16 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
   padding-inline: 4px;
-  padding-block-start: 0;
-  padding-block-end: 0;
   padding-block: 8px;
 }
 
@@ -1164,50 +1140,6 @@ exports[`Media List renders with feature cardscards 1`] = `
   padding-block: 24px;
 }
 
-@media screen and (max-width: 479px) {
-  .emotion-11 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-11 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-11 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
-    padding-block-start: 24px;
-    padding-block-end: 24px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-11 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
-    padding-block-start: 24px;
-    padding-block-end: 24px;
-  }
-}
-
 .emotion-11 a:not(.nk-card-link) {
   z-index: 2;
   position: relative;
@@ -1574,48 +1506,28 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-28 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-28 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-28 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
     padding-inline: 24px;
-    padding-block-start: 24px;
-    padding-block-end: 24px;
     padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-28 {
-    -webkit-padding-start: 24px;
-    padding-inline-start: 24px;
-    -webkit-padding-end: 24px;
-    padding-inline-end: 24px;
     padding-inline: 32px;
-    padding-block-start: 24px;
-    padding-block-end: 24px;
     padding-block: 32px;
   }
 }
@@ -2065,13 +1977,7 @@ exports[`Media List renders with usage cards 1`] = `
   width: 32px;
   height: 32px;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
   padding-inline: 0;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
   padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
@@ -2166,12 +2072,8 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
-  -webkit-padding-start: 0;
-  padding-inline-start: 0;
-  -webkit-padding-end: 0;
-  padding-inline-end: 0;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-11 a:not(.nk-card-link) {
@@ -2270,13 +2172,7 @@ exports[`Media List renders with usage cards 1`] = `
   width: 32px;
   height: 32px;
   min-height: 32px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
   padding-inline: 0;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
   padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;

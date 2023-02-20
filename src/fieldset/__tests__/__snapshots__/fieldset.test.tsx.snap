@@ -159,12 +159,8 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-3::before {
@@ -892,12 +888,8 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -1625,12 +1617,8 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  -webkit-padding-start: 8px;
-  padding-inline-start: 8px;
-  -webkit-padding-end: 8px;
-  padding-inline-end: 8px;
-  padding-block-start: 8px;
-  padding-block-end: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-3::before {

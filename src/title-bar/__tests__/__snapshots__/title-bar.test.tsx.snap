@@ -23,23 +23,15 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -182,12 +174,8 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -344,23 +332,15 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -503,12 +483,8 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
   align-items: center;
   min-width: 80px;
   min-height: 48px;
-  -webkit-padding-start: 16px;
-  padding-inline-start: 16px;
-  -webkit-padding-end: 16px;
-  padding-inline-end: 16px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -665,23 +641,15 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -976,28 +944,6 @@ exports[`TitleBar renders a title bar with logical props overrides 1`] = `
   background-color: transparent;
 }
 
-@media screen and (max-width: 1023px) {
-  .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
-  }
-}
-
 .emotion-1 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1128,23 +1074,15 @@ exports[`TitleBar should apply correctly only stylePreset for the heading 1`] = 
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1278,23 +1216,15 @@ exports[`TitleBar should apply correctly only typographyPreset for the heading 1
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1452,28 +1382,6 @@ exports[`TitleBar should apply correctly the props  + logical props and override
   padding-block: 8px;
 }
 
-@media screen and (max-width: 1023px) {
-  .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
-  }
-}
-
 .emotion-1 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1627,23 +1535,15 @@ exports[`TitleBar should display correctly as renders with h1 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1777,23 +1677,15 @@ exports[`TitleBar should display correctly as renders with h2 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -1927,23 +1819,15 @@ exports[`TitleBar should display correctly as renders with h3 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2077,23 +1961,15 @@ exports[`TitleBar should display correctly as renders with h4 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2227,23 +2103,15 @@ exports[`TitleBar should display correctly as renders with h5 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2377,23 +2245,15 @@ exports[`TitleBar should display correctly as renders with h6 size 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2527,23 +2387,15 @@ exports[`TitleBar should display correctly with default styles and given title 1
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
@@ -2677,23 +2529,15 @@ exports[`TitleBar should render with additional HTML attributes 1`] = `
 
 @media screen and (max-width: 1023px) {
   .emotion-0 {
-    -webkit-padding-start: 12px;
-    padding-inline-start: 12px;
-    -webkit-padding-end: 12px;
-    padding-inline-end: 12px;
-    padding-block-start: 12px;
-    padding-block-end: 12px;
+    padding-inline: 12px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-0 {
-    -webkit-padding-start: 16px;
-    padding-inline-start: 16px;
-    -webkit-padding-end: 16px;
-    padding-inline-end: 16px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 

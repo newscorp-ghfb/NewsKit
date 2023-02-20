@@ -19,12 +19,8 @@ exports[`InlineMessage renders with Title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -150,12 +146,8 @@ exports[`InlineMessage renders with Title and Icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -340,12 +332,8 @@ exports[`InlineMessage renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -439,13 +427,8 @@ exports[`InlineMessage renders with logical prop overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin-inline: 50px;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
   padding-inline: 30px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
+  padding-block: 12px;
 }
 
 .emotion-0 svg {
@@ -629,13 +612,7 @@ exports[`InlineMessage renders with overrides and all props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-padding-start: 12px;
-  padding-inline-start: 12px;
-  -webkit-padding-end: 12px;
-  padding-inline-end: 12px;
   padding-inline: 24px;
-  padding-block-start: 12px;
-  padding-block-end: 12px;
   padding-block: 24px;
 }
 
