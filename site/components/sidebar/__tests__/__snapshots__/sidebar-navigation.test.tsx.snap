@@ -406,7 +406,6 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-inline: 48px;
-  padding-block: 48px;
 }
 
 .emotion-19 {
@@ -1380,7 +1379,6 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-inline: 48px;
-  padding-block: 48px;
 }
 
 .emotion-19 {
@@ -2130,7 +2128,6 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-inline: 48px;
-  padding-block: 48px;
 }
 
 .emotion-19 {

@@ -550,7 +550,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-inline: 48px;
-  padding-block: 48px;
 }
 
 .emotion-41 {
@@ -3810,7 +3809,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-inline: 48px;
-  padding-block: 48px;
 }
 
 .emotion-39 {
@@ -7624,7 +7622,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-inline: 48px;
-  padding-block: 48px;
 }
 
 .emotion-41 {
@@ -10887,7 +10884,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   box-sizing: border-box;
   margin-bottom: 12px;
   padding-inline: 48px;
-  padding-block: 48px;
 }
 
 .emotion-39 {
