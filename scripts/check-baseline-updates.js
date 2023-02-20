@@ -1,10 +1,7 @@
 #!/usr/bin/env node
 const https = require('https');
-const fs = require('fs');
 
-const PERCY_URL = 'https://percy.io';
-
-const CONFIG_FILE = 'percy-storybook.config.json';
+const PERCY_URL = 'https://percy.io/api/v1';
 
 const log = value => process.stdout.write(`${value}\n`);
 
@@ -24,20 +21,16 @@ function apiCall(url, options) {
   });
 }
 
-function percyApiCall(path) {
-  const token = process.env.PERCY_TOKEN;
+async function getPercyBuildForBranch(branchName, project) {
+  log(`Looking for Percy ${project} build for branch ${branchName}`);
+  const token = process.env[`PERCY_${project.toUpperCase()}_TOKEN`];
   if (!token) {
-    log(`No Percy token found`);
+    log(`No Percy token found for project ${project}`);
     throw Error();
   }
-  return apiCall(`${PERCY_URL}${path}`, {
+  const builds = await apiCall(`${PERCY_URL}/builds`, {
     headers: {Authorization: `Token ${token}`},
   });
-}
-
-async function getPercyBuildForBranch(branchName) {
-  log(`Looking for Percy build for branch ${branchName}`);
-  const builds = await percyApiCall('/api/v1/builds');
   for (let i = 0; i <= builds.data.length; i++) {
     const build = builds.data[i];
     if (build.attributes.branch === branchName) {
@@ -48,33 +41,26 @@ async function getPercyBuildForBranch(branchName) {
   throw Error();
 }
 
-async function run(headRefName) {
+async function checkIfBaselineUpdatesRequired(headRefName, project) {
   const branchName = headRefName.trim();
-  log(`Checking if baselines to be updated after ${branchName} was merged`);
+  log(
+    `Checking if baselines for ${project} need to be updated after ${branchName} was merged`,
+  );
 
-  const build = await getPercyBuildForBranch(branchName);
+  const build = await getPercyBuildForBranch(branchName, project);
   const reviewState = build.attributes['review-state'];
   const nbDiffs = build.attributes['total-comparisons-diff'];
 
   log(`Build is in state ${reviewState} with ${nbDiffs} diffs`);
   if (reviewState !== 'approved' || !nbDiffs) {
     log(`No diffs requiring updates`);
-    return false;
+    throw Error();
   }
-
-  const snapshots = await percyApiCall(
-    build.relationships.snapshots.links.related,
-  );
-
-  const include = snapshots.data
-    .filter(
-      ({attributes}) => attributes['review-state-reason'] === 'user_approved',
-    )
-    .map(({attributes: {name}}) => `^${name}$`);
-
-  fs.writeFileSync(`./${CONFIG_FILE}`, JSON.stringify({include}));
-
-  return true;
 }
 
-module.exports = {run};
+// this script fails if updates are required
+const headRefName = process.argv[2];
+const project = process.argv[3];
+checkIfBaselineUpdatesRequired(headRefName, project)
+  .then(() => process.exit(1))
+  .catch(() => process.exit(0));
