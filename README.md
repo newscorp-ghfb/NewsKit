@@ -62,7 +62,7 @@ For detailed information on how to run the automated tests, please visit [Testin
 * To start engineering with NewsKit, follow the steps in the [quickstart guide](https://newskit.co.uk/getting-started/code/engineering-quickstart/).
 * Have a question? [Contact the NewsKit team via the contact form](https://newskit.co.uk/about/contact-us/).
 
-## 🔗 Key Links
+## 🔗 Key Links:
 
 * [NewsKit Documentation](https://www.newskit.co.uk/)
 * [View NewsKit Design System npm package](https://www.npmjs.com/package/newskit)

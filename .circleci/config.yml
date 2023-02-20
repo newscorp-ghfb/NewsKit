@@ -392,7 +392,9 @@ commands:
     steps:
       - run:
           name: Set percy/newskit-docsite token
-          command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
+          command: |
+            echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
+            echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
       - run:
           name: Run Percy Docs Site Visual Tests
           command: make e2e_visual_test_docs_percy
