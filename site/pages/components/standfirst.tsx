@@ -15,6 +15,16 @@ const PlaygroundContainer = styled.div`
   justify-content: center;
 `;
 
+const typographyPresets = {
+  h1: 'editorialSubheadline050',
+  h2: 'editorialSubheadline040',
+  h3: 'editorialSubheadline030',
+  h4: 'editorialSubheadline020',
+  h5: 'editorialSubheadline010',
+  h6: 'editorialParagraph020',
+  span: 'editorialParagraph010',
+};
+
 const StandfirstComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate<typeof Standfirst>
     headTags={{
@@ -24,7 +34,7 @@ const StandfirstComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Component',
+      type: 'Text',
       name: 'Standfirst',
       hero: {
         illustration: 'components/standfirst/01-hero/hero',
@@ -47,7 +57,14 @@ const StandfirstComponent = (layoutProps: LayoutProps) => (
         componentName: 'Standfirst',
         component: props => (
           <PlaygroundContainer>
-            <Standfirst {...props} />
+            <Standfirst
+              {...props}
+              overrides={{
+                styledText: {
+                  typographyPreset: typographyPresets[props.as || 'h1'],
+                },
+              }}
+            />
           </PlaygroundContainer>
         ),
         knobs: [
