@@ -8,12 +8,7 @@ import {
   styled,
 } from 'newskit';
 
-import {
-  getLogicalPropsTable,
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-  prefixLogicalProps,
-} from '../../components/component-api/common-logical-props';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -558,8 +553,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the zIndex of the drawer panel',
             },
-            ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
-            ...prefixLogicalProps(logicalMarginOverrideProps, 'panel'),
+            ...getLogicalPropsTable(undefined, 'panel', {}),
             {
               attribute: 'header.stylePreset',
               type: 'MQ<string>',

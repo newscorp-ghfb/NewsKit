@@ -343,7 +343,26 @@ exports[`Assistive Text should render logical props overrides 1`] = `
 }
 
 .emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+}
+
+.emotion-2 {
   margin: 0;
+  padding-block: 30px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -354,32 +373,61 @@ exports[`Assistive Text should render logical props overrides 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  padding-block: 30px;
 }
 
-.emotion-1:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-1::before {
+.emotion-2::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-1::after {
+.emotion-2::after {
   content: '';
   margin-top: -0.409em;
   display: block;
 }
 
+.emotion-3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+}
+
 <div
     class="emotion-0"
   >
-    <p
+    <div
       class="emotion-1"
+    >
+      start
+    </div>
+    <p
+      class="emotion-2"
     >
       Assistive Text
     </p>
+    <div
+      class="emotion-3"
+    >
+      start
+    </div>
   </div>
 </DocumentFragment>
 `;

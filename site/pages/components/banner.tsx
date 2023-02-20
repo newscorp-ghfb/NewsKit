@@ -15,8 +15,7 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {commonLogicalProps} from '../../components/component-api/common-logical-props';
-import {OverridesRowsProps} from '../../components/component-api';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {Link} from '../../components/link';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
@@ -576,7 +575,10 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               description:
                 'Overrides the spacing between the action buttons and the close button.',
             },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
+            ...getLogicalPropsTable(undefined, '', {
+              paddingBlock: ['horizontal: space040', 'vertical: space040'],
+              paddingInline: ['horizontal: space040', 'vertical: space040'],
+            }),
           ],
         },
       ],

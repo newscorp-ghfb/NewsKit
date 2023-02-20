@@ -48,6 +48,8 @@ describe('Assistive Text', () => {
   test('should render logical props overrides', () => {
     const props: AssistiveTextProps = {
       children: 'Assistive Text',
+      startEnhancer: 'start',
+      endEnhancer: 'start',
       overrides: {paddingBlock: '30px', marginBlock: '30px'},
     };
 

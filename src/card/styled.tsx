@@ -18,7 +18,7 @@ import {
   isHorizontal,
   isReverse,
 } from './utils';
-import {logicalPaddingProps, logicalProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 
 const DEFAULT_PROPS: {layout: CardLayout} = {
   layout: 'vertical',
@@ -81,7 +81,7 @@ export const StyledCardContainerMedia = styled.div<
       'spaceInline',
     )(props);
   })}
-  ${logicalPaddingProps('card.mediaContainer', 'mediaContainer')};
+  ${logicalProps('card.mediaContainer', 'mediaContainer')};
 
   ${({mediaInteractive}) => (mediaInteractive ? 'z-index: 2;' : null)}
   ${({hasHref, ...props}) =>
@@ -119,7 +119,7 @@ export const StyledCardContainerTeaser = styled.div<
   }))}
   ${({hasHref, ...props}) =>
     filterInteractiveStates('teaserContainer', hasHref)(props)}
-  ${logicalPaddingProps('card.teaserContainer', 'teaserContainer')};
+  ${logicalProps('card.teaserContainer', 'teaserContainer')};
 
   a:not(.nk-card-link) {
     z-index: 2;
@@ -156,7 +156,7 @@ export const StyledCardContainerActions = styled(Stack)<
 >`
   height: auto;
   box-sizing: border-box;
-  ${logicalPaddingProps('card.actionsContainer', 'actionsContainer')};
+  ${logicalProps('card.actionsContainer', 'actionsContainer')};
   ${({hasHref, ...props}) =>
     filterInteractiveStates('actionsContainer', hasHref)(props)}
   ${getResponsiveSize(

@@ -8,11 +8,7 @@ import {Link} from '../../components/link';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Mono} from '../../components/flags';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {
-  getLogicalPropsTable,
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-} from '../../components/component-api/common-logical-props';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -478,10 +474,6 @@ const ToastComponent = (layoutProps: LayoutProps) => (
                 </>
               ),
             },
-            ...getLogicalPropsTable(undefined, undefined, {
-              paddingInline: 'space030',
-              paddingBlock: 'space030',
-            }),
             {
               attribute: 'width',
               type: 'MQ<string>',
@@ -566,8 +558,10 @@ const ToastComponent = (layoutProps: LayoutProps) => (
               description:
                 'Overrides the space between the icon and the content.',
             },
-            ...logicalMarginOverrideProps,
-            ...logicalPaddingOverrideProps,
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingInline: 'space030',
+              paddingBlock: 'space030',
+            }),
           ],
         },
         {

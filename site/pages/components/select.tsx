@@ -8,12 +8,7 @@ import {ContentText} from '../../components/text-section/content-text';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
-import {
-  getLogicalPropsTable,
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-  prefixLogicalProps,
-} from '../../components/component-api/common-logical-props';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const commonPropsRows = [
   {
@@ -164,8 +159,10 @@ const commonOverridesRows = [
     default: 'space020',
     description: 'If provided, overrides the inline space of the end enhancer.',
   },
-  ...prefixLogicalProps(logicalPaddingOverrideProps, 'button'),
-  ...prefixLogicalProps(logicalMarginOverrideProps, 'button'),
+  ...getLogicalPropsTable(undefined, 'button', {
+    paddingBlock: ['small: space020', 'medium: space030', 'large: space040'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space040'],
+  }),
   {
     attribute: 'panel.stylePreset',
     type: 'MQ<string>',

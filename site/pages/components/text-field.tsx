@@ -8,11 +8,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
-import {
-  getLogicalPropsTable,
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-} from '../../components/component-api/common-logical-props';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -117,10 +113,6 @@ const commonOverridesRows = [
     ],
     description: 'If provided, overrides the input & placeholder text.',
   },
-  ...getLogicalPropsTable(undefined, undefined, {
-    paddingBlock: ['small: space020', 'medium: space030', 'large: space040'],
-    paddingInline: ['small: space020', 'medium: space030', 'large: space040'],
-  }),
   {
     attribute: 'startEnhancer.iconSize',
     type: 'MQ<string>',
@@ -148,8 +140,10 @@ const commonOverridesRows = [
     default: 'spaceInline: space020',
     description: 'If provided, overrides the inline space of the end enhancer.',
   },
-  ...logicalMarginOverrideProps,
-  ...logicalPaddingOverrideProps,
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space020', 'medium: space030', 'large: space040'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space040'],
+  }),
 ];
 
 const formInputPropsFooter = (

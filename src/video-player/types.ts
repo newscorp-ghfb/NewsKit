@@ -1,4 +1,4 @@
-import {LogicalPaddingProps, LogicalProps} from '../utils/logical-properties';
+import {LogicalProps} from '../utils/logical-properties';
 import {MQ} from '../utils/style';
 
 declare global {
@@ -95,7 +95,7 @@ type VideoPlayerOverrides = {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
     };
-    closeButton?: LogicalPaddingProps;
+    closeButton?: LogicalProps;
   } & LogicalProps;
 } & LogicalProps;
 
