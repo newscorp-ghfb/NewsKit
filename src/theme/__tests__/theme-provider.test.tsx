@@ -71,6 +71,11 @@ describe('ThemeProvider', () => {
       borders: {
         borderWidth010: '1px',
       },
+      fonts: {
+        fontFamily010: {
+          fontFamily: 'Roboto',
+        },
+      },
     };
 
     const childTheme = {
@@ -80,6 +85,11 @@ describe('ThemeProvider', () => {
       borders: {
         borderWidth010: '2px',
       },
+      fonts: {
+        fontFamily010: {
+          fontFamily: 'Ubuntu',
+        },
+      },
     };
 
     expect(themeDiff(parentTheme, childTheme)).toEqual({
@@ -88,6 +98,11 @@ describe('ThemeProvider', () => {
       },
       borders: {
         borderWidth010: '2px',
+      },
+      fonts: {
+        fontFamily010: {
+          fontFamily: 'Ubuntu',
+        },
       },
     });
   });
@@ -135,7 +150,6 @@ describe('ThemeProvider', () => {
       },
     };
 
-    // @ts-ignore
     expect(themeDiff(parentTheme, childTheme)).toEqual(childTheme);
   });
 });

@@ -714,8 +714,6 @@ exports[`ThemeProvider renders as css variables in nested providers 1`] = `
   --color-interactivePrimary010: #00a;
   --color-interactiveInput030: #00a;
   --fontFamily010: Roboto;
-  --fontFamily020: "Bitter",serif;
-  --fontFamily030: "Poppins",sans-serif;
 }
 
 <div

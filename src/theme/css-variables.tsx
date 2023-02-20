@@ -1,5 +1,6 @@
 import {css} from '@emotion/react';
 import styled from '@emotion/styled';
+import {hasOwnProperty} from '../utils/has-own-property';
 import {Theme, ThemeBase} from './types';
 
 type FoundationKey = keyof Omit<
@@ -10,7 +11,6 @@ type FoundationKey = keyof Omit<
   | 'transitionPresets'
   | 'componentDefaults'
   | 'icons'
-  // | 'fonts'
 >;
 
 const foundationsList: FoundationKey[] = [
@@ -26,6 +26,23 @@ const foundationsList: FoundationKey[] = [
 
 export type ThemeDiff = Partial<Pick<ThemeBase, FoundationKey>>;
 
+type TokenValue = string | number | {fontFamily: string};
+
+const hasSameValue = (
+  tokenName: string,
+  tokenValueA: TokenValue,
+  tokenValueB: TokenValue,
+) => {
+  if (
+    tokenName.startsWith('fontFamily') &&
+    typeof tokenValueA === 'object' &&
+    typeof tokenValueB === 'object'
+  ) {
+    return tokenValueA.fontFamily === tokenValueB.fontFamily;
+  }
+  return tokenValueA === tokenValueB;
+};
+
 export const themeDiff = (
   parentTheme: Partial<Theme>,
   childTheme: Partial<Theme>,
@@ -40,10 +57,10 @@ export const themeDiff = (
       if (
         foundationKey &&
         tokenName &&
-        (!parentFoundation[tokenName] ||
-          parentFoundation[tokenName] !== tokenValue)
+        (!parentFoundation[tokenName] || // does not exist in parent theme, so is new token
+          !hasSameValue(tokenName, parentFoundation[tokenName], tokenValue)) // token value are different
       ) {
-        if (!diff[foundationKey]) {
+        if (!hasOwnProperty(diff, foundationKey)) {
           diff[foundationKey] = {};
         }
 
