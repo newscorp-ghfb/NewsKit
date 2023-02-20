@@ -1,85 +1,105 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {OrderedList} from '../ordered-list';
-import {StorybookHeading} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {getColorCssFromTheme, styled} from '../../utils/style';
 
-const listData = [`alpha`, `bravo`, `charlie`, `delta`, `echo`, `foxtrot`];
+const LIST_DATA = [
+  `First item`,
+  `Second item`,
+  `Third item`,
+  `Fourth item`,
+  `Fifth item`,
+  `Sixth item`,
+];
 
 const orderedListCustomThemeObject: CreateThemeArgs = {
-  name: 'my-custom-ordered-list',
+  name: 'ordered-list-theme',
   overrides: {
     stylePresets: {
       customOrderedListItemCounter: {
-        base: {
-          color: '{{colors.interfaceInformative010}}',
-        },
-      },
-      customOrderedListItemContent: {
-        base: {
-          color: '{{colors.inkNotice}}',
-        },
+        base: {color: '{{colors.inkBrand010}}'},
       },
     },
   },
 };
 
-export const StoryOrderedListDefault = () => (
-  <>
-    <StorybookHeading>Ordered list defaults</StorybookHeading>
-    <OrderedList>{listData}</OrderedList>
-  </>
-);
-StoryOrderedListDefault.storyName = 'ordered-list-default';
+const MarginOverridesWrapper = styled.div`
+  border: 1px dashed;
+  ${getColorCssFromTheme('borderColor', 'red060')}
+`;
 
-export const StoryOrderedListOverrides = () => (
-  <>
-    <StorybookHeading>Ordered list with overrides</StorybookHeading>
-    <OrderedList
-      overrides={{
-        spaceInline: 'space010',
-        content: {
-          stylePreset: 'customOrderedListItemContent',
-          typographyPreset: 'editorialParagraph030',
-        },
-        counter: {
-          stylePreset: 'customOrderedListItemCounter',
-          typographyPreset: 'editorialParagraph020',
-          minWidth: 'sizing030',
-        },
-      }}
-    >
-      {listData}
-    </OrderedList>
-  </>
+export const StoryOrderedListDefault = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <OrderedList>{LIST_DATA}</OrderedList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryOrderedListOverrides.storyName = 'ordered-list-overrides';
+StoryOrderedListDefault.storyName = 'Default';
 
 export const StoryOrderedListLogicalProps = () => (
-  <>
-    <StorybookHeading>Ordered list with logical props</StorybookHeading>
-    <OrderedList
-      overrides={{
-        paddingInline: '30px',
-        marginBlock: '30px',
-      }}
-    >
-      {listData}
-    </OrderedList>
-  </>
+  <StorybookPage>
+    <StorybookCase>
+      <MarginOverridesWrapper>
+        <OrderedList
+          overrides={{
+            paddingInline: 'space050',
+            marginBlock: 'space050',
+          }}
+        >
+          {LIST_DATA.map(item => `${item} with logical props`)}
+        </OrderedList>
+      </MarginOverridesWrapper>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryOrderedListLogicalProps.storyName = 'ordered-list-logical-props';
+StoryOrderedListLogicalProps.storyName = 'Logical props';
+
+export const StoryOrderedListStylingOverrides = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <OrderedList
+        overrides={{
+          content: {
+            typographyPreset: 'editorialParagraph020',
+          },
+          counter: {
+            stylePreset: 'customOrderedListItemCounter',
+            typographyPreset: 'editorialParagraph020',
+          },
+        }}
+      >
+        {LIST_DATA.map(item => `${item} with overrides`)}
+      </OrderedList>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryOrderedListStylingOverrides.storyName = 'Styling overrides';
 
 export default {
-  title: 'Components/ordered-list',
-  component: () => 'None',
+  title: 'Components/Ordered list',
+  component: OrderedList,
+  parameters: {
+    nkDocs: {
+      title: 'Ordered list',
+      url: 'https://newskit.co.uk/components/ordered-list',
+      description:
+        'Ordered lists make blocks of text easier to read, structuring sequential information into manageable, numbered items.',
+    },
+  },
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           orderedListCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
