@@ -45,7 +45,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/image',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/(v4)-NK-Web-Components?node-id=4341%3A145047&t=NntLsFMIL5G5rK8U-0',
-      storybookId: 'components-image--story-fixed-height-and-width-in-px',
+      storybookId: 'components-image--story-image-fixed-width-and-height-px',
     }}
     interactiveDemo={{
       introduction:
