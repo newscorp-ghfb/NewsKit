@@ -51,7 +51,7 @@ Scripts should be named using the following naming convention:
 
 * `e2e:docs:ci` -> starts serve:docs and runs the cypress docs tests headlessly.
 
-Run Percy from main branch if you want to force the baseline images to be updated. The are the two commands to run (through yarn) after you have switched to main branch and done a git pull are shown below:
+Run Percy from main branch if you want to force the baseline images to be updated. The two commands to yarn run, after you have switched to main branch and done a git pull, are shown below:
 
 * `test:visual:comps:local:percy` -> sets required env variables and runs the percy component tests locally.
 
