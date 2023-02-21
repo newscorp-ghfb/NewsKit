@@ -9,6 +9,7 @@ import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {ContentText} from '../../components/text-section';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -118,20 +119,13 @@ const commonOverridesRows = [
       'If provided, this overrides the minHeight of the FormInput character count.',
     default: 'sizing030',
   },
-  {
-    attribute: 'marginBlockEnd',
-    type: 'MQ<string>',
-    description:
-      'It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.',
-    default: ['small = space020', 'medium = space020', 'large = space020'],
-  },
-  {
-    attribute: 'paddingInline',
-    type: 'MQ<string>',
-    description:
-      'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
-    default: ['small = space020', 'medium = space020', 'large = space020'],
-  },
+  ...getLogicalPropsTable(undefined, '', {
+    marginBlockEnd: [
+      'small = space020',
+      'medium = space020',
+      'large = space020',
+    ],
+  }),
 ];
 
 const CharacterCountComponent = (layoutProps: LayoutProps) => (

@@ -90,10 +90,6 @@ const commonOverridesRows = [
     ],
     description: 'If provided, overrides the input and placeholder text.',
   },
-  ...getLogicalPropsTable(undefined, 'button', {
-    paddingBlock: 'space020',
-    paddingInline: 'space020',
-  }),
   {
     attribute: 'button.spaceStack(deprecated)',
     type: 'MQ<string>',
