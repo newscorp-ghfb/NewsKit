@@ -51,11 +51,13 @@ Scripts should be named using the following naming convention:
 
 * `e2e:docs:ci` -> starts serve:docs and runs the cypress docs tests headlessly.
 
-Run Percy from main branch if you want to force the baseline images to be updated. Updating normally happens whenever a PR is merged to main, but occasionally it can get out of sync. NB Do *not* set PERCY_PARTIAL_BUILD=1 on main branch, as that is not supported (only on feature branches). These are the two commands to run (through yarn) after you have switched to main branch and done a git pull:
+Run Percy from main branch if you want to force the baseline images to be updated. The are the two commands to run (through yarn) after you have switched to main branch and done a git pull are shown below:
 
 * `test:visual:comps:local:percy` -> sets required env variables and runs the percy component tests locally.
 
 * `e2e:visual:docs:local:percy` -> sets required env variables and runs the percy doc site tests locally.
+
+Image updating normally happens whenever a PR is merged to main, but occasionally it can get out of sync. NB Do *not* set PERCY_PARTIAL_BUILD=1 on main branch, as that is not supported (only on feature branches). We use it on the pull_request workflow to bypass a full visual regression (just one dummy test is run).
 
 Percy support issues can be raised by emailing support@browserstack.com.
 
