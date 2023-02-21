@@ -1,5 +1,5 @@
 import React from 'react';
-import {TitleBar, styled, Link, LinkInline, Paragraph} from 'newskit';
+import {TitleBar, styled, Link, LinkInline, Paragraph, Button} from 'newskit';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {LayoutProps} from '../../components/layout';
@@ -46,10 +46,7 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
         componentName: 'TitleBar',
         component: props => (
           <PlaygroundContainer>
-            <TitleBar
-              {...props}
-              actionItem={() => <Link href="/">Link</Link>}
-            />
+            <TitleBar {...props} />
           </PlaygroundContainer>
         ),
         knobs: [
@@ -57,6 +54,60 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
             propName: 'children',
             name: 'Children',
             value: 'Heading',
+          },
+          {
+            propName: 'headingAs',
+            name: 'Render heading as',
+            options: [
+              {
+                label: 'h1',
+                value: 'h1',
+              },
+              {
+                label: 'h2',
+                value: 'h2',
+              },
+              {
+                label: 'h3',
+                value: 'h3',
+                isDefault: true,
+              },
+              {
+                label: 'h4',
+                value: 'h4',
+              },
+              {
+                label: 'h5',
+                value: 'h5',
+              },
+              {
+                label: 'h6',
+                value: 'h6',
+              },
+              {
+                label: 'span',
+                value: 'span',
+              },
+            ],
+          },
+          {
+            propName: 'actionItem',
+            name: 'Action item',
+            options: [
+              {
+                label: 'Unset',
+                value: () => null,
+              },
+              {
+                label: 'Link',
+                value: () => <Link href="/">Link</Link>,
+                isDefault: true,
+              },
+              {
+                label: 'Button',
+                value: () => <Button>Button</Button>,
+              },
+            ],
           },
         ],
       },
@@ -116,8 +167,24 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Heading tag',
-          description:
-            "By default, the title is set to h3. The tag can be set to 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span'.",
+          description: (
+            <>
+              <Paragraph
+                overrides={{typographyPreset: 'editorialParagraph030'}}
+              >
+                By default, the{' '}
+                <LinkInline
+                  href="https://newskit.co.uk/components/headline/"
+                  target="_blank"
+                >
+                  title
+                </LinkInline>{' '}
+                is set to h3. The tag can be set to &apos;h1&apos; |
+                &apos;h2&apos; | &apos;h3&apos; | &apos;h4&apos; |
+                &apos;h5&apos; | &apos;h6&apos; | &apos;span&apos;.
+              </Paragraph>
+            </>
+          ),
           media: getIllustrationComponent(
             'components/title-bar/03-options/heading-tag',
           ),
