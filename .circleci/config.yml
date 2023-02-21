@@ -803,24 +803,15 @@ jobs:
       - run:
           name: 'Check if updates required'
           command: |
-            export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
-            echo "Found branch name: ${PR_BRANCH_NAME}"
-            export PERCY_TOKEN=$PERCY_COMPS_TOKEN
-            export CHECK_UPDATES=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
-            echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
-            if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
-              echo "Baseline updates required; continuing job."
-              echo 'export PERCY_PARTIAL_BUILD=1' >> "$BASH_ENV"
-            elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
-              echo "No baseline updates required; finishing job."
-              circleci-agent step halt
-            else
-              echo "Error checking PR"
-              exit 1
-            fi
-      - run:
-          name: 'Confirm partial build'
-          command: echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
+            {
+                export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName') &&
+                echo "Found branch name: ${PR_BRANCH_NAME}" &&
+                node scripts/check-baseline-updates.js $PR_BRANCH_NAME "comps" &&
+                echo "No baseline updates required; finishing job." &&
+                circleci-agent step halt
+            } || {
+                echo "Baseline updates required; continuing job."
+            }
       - run_test_visual_comps_percy
       - slack/notify:
           <<: *slack_notify
@@ -835,24 +826,15 @@ jobs:
       - run:
           name: 'Check if updates required'
           command: |
-            export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
-            echo "Found branch name: ${PR_BRANCH_NAME}"
-            export PERCY_TOKEN=$PERCY_DOCSITE_TOKEN
-            export CHECK_UPDATES=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
-            echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
-            if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
-              echo "Baseline updates required; continuing job."
-              echo 'export PERCY_PARTIAL_BUILD=1' >> "$BASH_ENV"
-            elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
-              echo "No baseline updates required; finishing job."
-              circleci-agent step halt
-            else
-              echo "Error checking PR"
-              exit 1
-            fi
-      - run:
-          name: 'Confirm partial build'
-          command: echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
+            {
+                export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName') &&
+                echo "Found branch name: ${PR_BRANCH_NAME}" &&
+                node scripts/check-baseline-updates.js $PR_BRANCH_NAME "docsite" &&
+                echo "No baseline updates required; finishing job." &&
+                circleci-agent step halt
+            } || {
+                echo "Baseline updates required; continuing job."
+            }
       - run_test_visual_docs_percy
       - slack/notify:
           <<: *slack_notify
