@@ -1,84 +1,68 @@
 import * as React from 'react';
-
 import {Label} from '..';
-import {styled, getSizingCssFromTheme} from '../../utils/style';
-import {Stack} from '../../stack';
-import {Block} from '../../block';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {getColorCssFromTheme, styled} from '../..';
 
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
-import {TextFieldSize} from '../..';
-
-const Container = styled.div`
-  ${getSizingCssFromTheme('margin', {
-    xs: 'sizing000',
-    md: 'sizing100',
-  })};
+const MarginOverridesWrapper = styled.div`
+  border: 1px dashed;
+  ${getColorCssFromTheme('borderColor', 'red060')}
 `;
 
-const StyledDiv = styled.div`
-  border: 1px red dotted;
-`;
+export const StoryLabelDefault = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <Label>Label</Label>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLabelDefault.storyName = 'Default';
+
+export const StoryLabelSize = () => (
+  <StorybookPage columns="1fr 1fr 1fr">
+    <StorybookCase title="Small">
+      <Label size="small">Label</Label>
+    </StorybookCase>
+    <StorybookCase title="Medium">
+      <Label size="medium">Label</Label>
+    </StorybookCase>
+    <StorybookCase title="Large">
+      <Label size="large">Label</Label>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLabelSize.storyName = 'Size';
+
+export const StoryLabelStates = () => (
+  <StorybookPage>
+    <StorybookCase title="Disabled">
+      <Label state="disabled">Please enter your email address</Label>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLabelStates.storyName = 'States';
+
+export const StoryLabelLogicalProps = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <MarginOverridesWrapper>
+        <Label overrides={{marginBlock: 'space070', marginInline: 'space050'}}>
+          Label
+        </Label>
+      </MarginOverridesWrapper>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLabelLogicalProps.storyName = 'Logical props';
 
 export default {
-  title: 'Components/label',
-  component: () => 'None',
+  title: 'Components/Label',
+  component: Label,
+  parameters: {
+    nkDocs: {
+      url: 'https://www.newskit.co.uk/components/form',
+      title: 'Label',
+      description:
+        'Labels provide captions for elements that informs users what information belongs in a given input or action.',
+    },
+  },
 };
-
-export const LabelSizes = () => (
-  <>
-    <StorybookHeading>Label Sizes</StorybookHeading>
-    <Container>
-      <Stack stackDistribution="space-between" flow="horizontal-center">
-        <Block>
-          <StorybookSubHeading>Small</StorybookSubHeading>
-          <Label size={'small' as TextFieldSize}>Label</Label>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Medium</StorybookSubHeading>
-          <Label size={'medium' as TextFieldSize}>Label</Label>
-        </Block>
-        <Block>
-          <StorybookSubHeading>Large</StorybookSubHeading>
-          <Label size={'large' as TextFieldSize}>Label</Label>
-        </Block>
-      </Stack>
-    </Container>
-  </>
-);
-LabelSizes.storyName = 'label-size';
-
-export const LabelVariants = () => (
-  <>
-    <StorybookHeading>Label Variations</StorybookHeading>
-    <Container>
-      <Stack wrap spaceInline="space020">
-        <Block>
-          <StorybookSubHeading>Disabled</StorybookSubHeading>
-          <Label state="disabled">Test</Label>
-        </Block>
-      </Stack>
-    </Container>
-  </>
-);
-LabelVariants.storyName = 'label-variations';
-
-export const LabelWithLogicalPropsOverrides = () => (
-  <>
-    <StorybookSubHeading>With Logical Paddings</StorybookSubHeading>
-    <StyledDiv>
-      <Label overrides={{paddingBlockEnd: 'space030'}}>Test</Label>
-    </StyledDiv>
-    <StorybookSubHeading>With Logical Margins</StorybookSubHeading>
-    <StyledDiv>
-      <Label
-        overrides={{marginBlockEnd: 'space030', marginInlineEnd: 'space030'}}
-      >
-        Test
-      </Label>
-    </StyledDiv>
-  </>
-);
-LabelWithLogicalPropsOverrides.storyName = 'label-with-logical-props-overrides';
