@@ -185,7 +185,7 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
           <Paragraph overrides={{typographyPreset: 'editorialParagraph030'}}>
             Title text should be set at the correct semantic level (e.g.{' '}
             <LinkInline
-              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefpattern"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
               target="_blank"
             >
               {'<h1>'} to {'<h6>'}
