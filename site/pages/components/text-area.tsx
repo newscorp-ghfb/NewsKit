@@ -370,7 +370,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
             <>
               Text Areas can use{' '}
               <Link
-                href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2470-character-count-documentation/components/character-count/"
+                href="https://newskit.co.uk/components/character-count/"
                 target="_blank"
               >
                 the character count component
