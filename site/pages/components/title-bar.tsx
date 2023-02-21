@@ -1,5 +1,5 @@
 import React from 'react';
-import {TitleBar, styled, Link, LinkInline} from 'newskit';
+import {TitleBar, styled, Link, LinkInline, Paragraph} from 'newskit';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {LayoutProps} from '../../components/layout';
@@ -8,11 +8,8 @@ import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 
 const PlaygroundContainer = styled.div`
-  display: flex;
   width: 100%;
   height: 200px;
-  align-items: center;
-  justify-content: center;
 `;
 
 const HeadlineComponent = (layoutProps: LayoutProps) => (
@@ -39,19 +36,19 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/title-bar',
       storybookId: 'components-title-bar--story-title-bar',
+      figmaUrl:
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/(v4)-NK-Web-Components?node-id=4145%3A123621&t=7UUQdJ2TqSKpYWOY-0',
     }}
     interactiveDemo={{
       introduction:
         'This demo lets you preview the title bar component, its variations, and configuration options.',
       playground: {
-        componentName: '',
-        component: ({actionItem, ...props}) => (
+        componentName: 'TitleBar',
+        component: props => (
           <PlaygroundContainer>
             <TitleBar
               {...props}
-              actionItem={() => (
-                <Link href="/">{(actionItem as unknown) as string}</Link>
-              )}
+              actionItem={() => <Link href="/">Link</Link>}
             />
           </PlaygroundContainer>
         ),
@@ -60,11 +57,6 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
             propName: 'children',
             name: 'Children',
             value: 'Heading',
-          },
-          {
-            propName: 'actionItem',
-            name: 'Action item',
-            value: 'Link',
           },
         ],
       },
@@ -190,14 +182,16 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
       title: 'SEO',
       introduction: (
         <>
-          Title text should be set at the correct semantic level (e.g.{' '}
-          <LinkInline
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefpattern"
-            target="_blank"
-          >
-            {'<h1>'} to {'<h6>'}
-          </LinkInline>{' '}
-          ) to enable crawlers to better index the page.
+          <Paragraph overrides={{typographyPreset: 'editorialParagraph030'}}>
+            Title text should be set at the correct semantic level (e.g.{' '}
+            <LinkInline
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefpattern"
+              target="_blank"
+            >
+              {'<h1>'} to {'<h6>'}
+            </LinkInline>{' '}
+            ) to enable crawlers to better index the page.
+          </Paragraph>
         </>
       ),
     }}
