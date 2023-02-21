@@ -115,12 +115,10 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/popover/options/pointer'),
         },
         {
-          title: 'Distance',
+          title: 'Offset',
           description:
             'Change the space between the popover and the element with spacing tokens via overrides. By default, there’s 8px of space between the popover and the element, measured from the tip of the pointer or the near edge of the popover if no pointer is visible.',
-          media: getIllustrationComponent(
-            'components/popover/options/distance',
-          ),
+          media: getIllustrationComponent('components/popover/options/offset'),
         },
         {
           title: 'Close position',
@@ -612,11 +610,11 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               description: 'Overrides the zIndex of the popover.',
             },
             {
-              attribute: 'distance',
+              attribute: 'offset',
               type: 'MQ<string>',
               default: 'space050',
               description:
-                'Overrides the distance between the popover and the item it’s attributed to',
+                'Overrides the offset between the popover and the item it’s attributed to',
             },
             {
               attribute: 'stylePreset',

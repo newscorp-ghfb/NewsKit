@@ -1445,7 +1445,7 @@ Object {
         "paddingBlock": "space030",
         "paddingInline": "space030",
       },
-      "distance": "space030",
+      "offset": "space030",
       "stylePreset": "audioPlayerVolumeControlPopover",
     },
     "slider": Object {
@@ -2350,13 +2350,13 @@ Object {
       "paddingInline": "space050",
       "typographyPreset": "editorialParagraph010",
     },
-    "distance": "space050",
     "header": Object {
       "paddingBlock": "space040",
       "paddingInline": "space050",
       "stylePreset": "popoverHeader",
       "typographyPreset": "utilityLabel030",
     },
+    "offset": "space050",
     "panel": Object {
       "stylePreset": "popoverPanel",
     },
@@ -3097,7 +3097,7 @@ Object {
     "stylePreset": "toastNeutral",
   },
   "tooltip": Object {
-    "distance": "space020",
+    "offset": "space020",
     "panel": Object {
       "paddingBlock": "spaceInset020",
       "paddingInline": "spaceInset020",

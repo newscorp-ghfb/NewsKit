@@ -103,7 +103,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/tooltip/options/pointer'),
         },
         {
-          title: 'Distance',
+          title: 'Offset',
           description: (
             <>
               Change the space between the tooltip and the element with spacing
@@ -112,13 +112,11 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               panel if you’re not using a pointer.
               <br />
               <br />
-              If no pointer is visible, the distance can still be set via
+              If no pointer is visible, the offset can still be set via
               overrides.
             </>
           ),
-          media: getIllustrationComponent(
-            'components/tooltip/options/distance',
-          ),
+          media: getIllustrationComponent('components/tooltip/options/offset'),
         },
       ],
     }}
@@ -508,11 +506,11 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               description: 'Overrides the zIndex of the tooltip.',
             },
             {
-              attribute: 'distance',
+              attribute: 'offset',
               type: 'MQ<string>',
               default: 'space020',
               description:
-                'Overrides the distance between the tooltip and the item it is attributed to.',
+                'Overrides the offset between the tooltip and the item it is attributed to.',
             },
             {
               attribute: 'stylePreset',

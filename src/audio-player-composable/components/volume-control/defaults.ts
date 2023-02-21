@@ -23,7 +23,7 @@ export default {
       stylePreset: 'iconButtonMinimalPrimary',
     },
     popover: {
-      distance: 'space030',
+      offset: 'space030',
       stylePreset: 'audioPlayerVolumeControlPopover',
       content: {
         paddingBlock: 'space030',
