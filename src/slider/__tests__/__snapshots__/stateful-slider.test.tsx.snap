@@ -84,7 +84,7 @@ exports[`StatefulSlider holds the slider values in state 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {

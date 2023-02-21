@@ -58,7 +58,7 @@ exports[`PopoutButton renders correctly with default props 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {

@@ -175,7 +175,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -326,7 +326,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -478,7 +478,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -630,7 +630,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -782,7 +782,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -936,7 +936,7 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -1093,7 +1093,7 @@ exports[`IconButton renders with different style preset 1`] = `
 
 .emotion-0:active:not(:disabled) {
   background-color: #D5E0FC;
-  border-color: #14328D;
+  border-color: #12387A;
 }
 
 .emotion-0:disabled {

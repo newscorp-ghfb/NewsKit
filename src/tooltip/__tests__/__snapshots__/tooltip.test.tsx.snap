@@ -1834,7 +1834,7 @@ exports[`Tooltip should render correct styles: with pointer stylePreset override
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #820000;
+  background-color: #7D0000;
   width: 4px;
   height: 4px;
   left: 8px;

@@ -405,13 +405,13 @@ exports[`Table renders links correctly 1`] = `
 }
 
 .emotion-5:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-5:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-5:focus-visible:not(:disabled) {

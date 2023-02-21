@@ -766,7 +766,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
 }
 
 .emotion-34:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-34:active:not(:disabled) svg {
@@ -2086,7 +2086,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
 }
 
 .emotion-30:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-30:active:not(:disabled) svg {
@@ -3418,7 +3418,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
 }
 
 .emotion-34:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-34:active:not(:disabled) svg {
@@ -4387,7 +4387,7 @@ exports[`Audio Player live player renders as expected 1`] = `
 }
 
 .emotion-24:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-24:active:not(:disabled) svg {
@@ -5055,7 +5055,7 @@ exports[`Audio Player play button loading state is phasing as expected 2`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -5505,7 +5505,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-10:disabled {
@@ -6072,7 +6072,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
 }
 
 .emotion-35:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-35:active:not(:disabled) svg {
@@ -6720,7 +6720,7 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -7645,7 +7645,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
 }
 
 .emotion-34:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-34:active:not(:disabled) svg {
@@ -9086,7 +9086,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
 }
 
 .emotion-34:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-34:active:not(:disabled) svg {
@@ -10529,7 +10529,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
 }
 
 .emotion-34:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-34:active:not(:disabled) svg {
