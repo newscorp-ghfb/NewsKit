@@ -86,16 +86,6 @@ executors:
     resource_class: large
 
   # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
-  flux-deploy:
-    docker:
-      - image: nukengprodservice/flux-k8s:latest
-
-  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
-  kubectl-deploy:
-    docker:
-      - image: nukengprodservice/kubectl:0.1.51
-
-  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
   terraform:
     docker:
       - image: hashicorp/terraform:0.12.28
@@ -360,6 +350,8 @@ commands:
             cat assume_role_creds_<< parameters.job_type >>.txt >> $BASH_ENV
             source $BASH_ENV
 
+  # Best to remove "circleci-agent step halt" line while doing testing of CircleCI code
+  # to ensure that Terraform is validated at the pull_request stage
   run_only_on_folder_change:
     description: checks whether there is change on the folder in last two commits.
     parameters:
@@ -811,24 +803,15 @@ jobs:
       - run:
           name: 'Check if updates required'
           command: |
-            export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
-            echo "Found branch name: ${PR_BRANCH_NAME}"
-            export PERCY_TOKEN=$PERCY_COMPS_TOKEN
-            export CHECK_UPDATES=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
-            echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
-            if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
-              echo "Baseline updates required; continuing job."
-              echo 'export PERCY_PARTIAL_BUILD=1' >> "$BASH_ENV"
-            elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
-              echo "No baseline updates required; finishing job."
-              circleci-agent step halt
-            else
-              echo "Error checking PR"
-              exit 1
-            fi
-      - run:
-          name: 'Confirm partial build'
-          command: echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
+            {
+                export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName') &&
+                echo "Found branch name: ${PR_BRANCH_NAME}" &&
+                node scripts/check-baseline-updates.js $PR_BRANCH_NAME "comps" &&
+                echo "No baseline updates required; finishing job." &&
+                circleci-agent step halt
+            } || {
+                echo "Baseline updates required; continuing job."
+            }
       - run_test_visual_comps_percy
       - slack/notify:
           <<: *slack_notify
@@ -843,24 +826,15 @@ jobs:
       - run:
           name: 'Check if updates required'
           command: |
-            export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName')
-            echo "Found branch name: ${PR_BRANCH_NAME}"
-            export PERCY_TOKEN=$PERCY_DOCSITE_TOKEN
-            export CHECK_UPDATES=$(npx -y run-func scripts/check-baseline-updates.js run $PR_BRANCH_NAME)
-            echo "Result from check-baseline-updates.js: ${CHECK_UPDATES}"
-            if [ $CHECK_UPDATES = "UPDATES_REQUIRED" ]; then
-              echo "Baseline updates required; continuing job."
-              echo 'export PERCY_PARTIAL_BUILD=1' >> "$BASH_ENV"
-            elif [ $CHECK_UPDATES = "NO_UPDATES_REQUIRED" ]; then
-              echo "No baseline updates required; finishing job."
-              circleci-agent step halt
-            else
-              echo "Error checking PR"
-              exit 1
-            fi
-      - run:
-          name: 'Confirm partial build'
-          command: echo "PERCY_PARTIAL_BUILD is set to ${PERCY_PARTIAL_BUILD}"
+            {
+                export PR_BRANCH_NAME=$(gh pr list --search $CIRCLE_SHA1 --state merged --json headRefName --jq '.[].headRefName') &&
+                echo "Found branch name: ${PR_BRANCH_NAME}" &&
+                node scripts/check-baseline-updates.js $PR_BRANCH_NAME "docsite" &&
+                echo "No baseline updates required; finishing job." &&
+                circleci-agent step halt
+            } || {
+                echo "Baseline updates required; continuing job."
+            }
       - run_test_visual_docs_percy
       - slack/notify:
           <<: *slack_notify
@@ -1094,7 +1068,7 @@ jobs:
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
-            echo $(date) > timestamp.html
+            echo "${SITE_ENV} $(date)" > timestamp.html
             aws s3 cp public $s3Path_docs --recursive
             aws s3 cp timestamp.html $s3Path_docs
             aws s3 cp dist-storybook $s3Path_storybook --recursive
@@ -1140,99 +1114,13 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  eks_flux_deploy:
-    # This one does a Flux deployment (writes to a Flux repo), using the flux-k8s tool you can find in https://github.com/newscorp-ghfb/ncu-circle-pipeline
-    parameters:
-      environment:
-        type: string
-      substitution_dir:
-        type: string
-        default: 'eks/manifests'
-      flux_repo_url:
-        type: string
-        default: 'git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git'
-      flux_repo_name:
-        type: string
-        default: 'ncu-flux-newskit-site'
-      deployment_type:
-        type: string
-        default: dev
-    executor: flux-deploy
+  validate_terraform:
+    executor: node
     steps:
-      - setup_remote_docker:
-          version: 20.10.7
-      - checkout
       - run:
-          name: Push config to flux repo
+          name: Terraform is valid
           command: |
-            apk add --update npm
-            if [ << parameters.deployment_type >> = release ]; then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-release
-            elif [ << parameters.deployment_type >> = prod ]; then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-prod-$CIRCLE_SHA1
-            else
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-dev-$CIRCLE_SHA1
-            fi
-            config_values=eks/values/product-platforms-values-<< parameters.environment >>.yaml
-            out_dir=product-platforms-<< parameters.environment >>
-            flux_repo_target=<< parameters.environment >>/eks
-            git config --global user.email "ncu-product-platforms@news.co.uk"
-            git config --global user.name "Product Platforms Service"
-            flux-generate "${CIRCLE_SHA1}" $config_values << parameters.substitution_dir >> $out_dir
-            flux-commit -u << parameters.flux_repo_url >> -n << parameters.flux_repo_name >> -d $out_dir -t $flux_repo_target -m "${CIRCLE_SHA1}_$out_dir"
-      - slack/notify:
-          <<: *slack_notify
-
-  eks_kubectl_deploy:
-    parameters:
-      environment:
-        type: string
-        description: Deployment environment
-      aws_region:
-        description: AWS Region
-        type: string
-        default: '${AWS_DEFAULT_REGION}'
-      aws_access_key_id:
-        description: AWS Access Key Id
-        type: string
-        default: '${AWS_ACCESS_KEY_ID}'
-      aws_secret_key:
-        description: AWS Secret Key
-        type: string
-        default: '${AWS_SECRET_ACCESS_KEY}'
-      aws_assume_role_arn:
-        description: AWS ARN For Assume Role
-        type: string
-        default: '${AWS_ASSUME_ROLE_ARN}'
-    executor: kubectl-deploy
-    steps:
-      - checkout
-      - setup_remote_docker:
-          version: 20.10.7
-      - run:
-          name: Deploy to EKS
-          command: |
-            apk --no-cache add openssh git bash
-            export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
-            git config --global user.email "ncu-product-platforms@news.co.uk"
-            git config --global user.name "Product Platforms Service"
-            git clone git@github.com:newscorp-ghfb/ncu-flux-newskit-site.git flux
-            export EKS_IAM_ROLE_DEV=<< parameters.aws_assume_role_arn >>
-            export EKS_AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
-            export EKS_AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
-            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
-            export CLUSTER_NAME=ceng-eks-<< parameters.environment >>
-            export VERSION=$(jq -r .version package.json)
-            echo "export VERSION=${VERSION}" >> $BASH_ENV
-
-            nukubectl | grep "export AWS_" > auth.env
-            export $(egrep -v '^#' auth.env | xargs)
-            rm auth.env
-
-            cd flux/<< parameters.environment >>/eks
-            kubectl apply -f .
-      - slack/notify:
-          <<: *slack_notify
+            echo "If you see this message, it means all the Terraform is valid"
 
   test_newskit_in_nextjs_app:
     executor: cypress
@@ -1585,12 +1473,30 @@ workflows:
           requires:
             - init_aws
       - deploy_terraform_oidc:
-          name: deploy_terraform_s3_dev
+          name: validate_deploy_terraform_s3_dev
           package: s3/dev-newskit
           context: ncu-newskit-site-dev
           apply: false # Can set true while doing testing of CircleCI code
           tf_env: true
           environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform_oidc:
+          name: validate_deploy_terraform_s3_staging
+          package: s3/prod-newskit
+          context: ncu-newskit-site-stage
+          apply: false # Can set true while doing testing of CircleCI code
+          tf_env: true
+          environment: staging
+          requires:
+            - init_aws
+      - deploy_terraform_oidc:
+          name: validate_deploy_terraform_s3_prod
+          package: s3/prod-newskit
+          context: ncu-newskit-site-stage
+          apply: false # Can set true while doing testing of CircleCI code
+          tf_env: true
+          environment: prod
           requires:
             - init_aws
       - build_docs:
@@ -1610,19 +1516,26 @@ workflows:
           context: ncu-product-platforms-context
           requires:
             - deploy_to_s3_pr
-      # Temporarily uncomment these two steps if needing to test S3 deployments on push rather than on merge
+      - validate_terraform:
+          name: validate_terraform
+          requires:
+            - validate_deploy_terraform_s3_dev
+            - validate_deploy_terraform_s3_staging
+            - validate_deploy_terraform_s3_prod
+      # Temporarily uncomment these steps if needing to test S3 deployments on push rather than on merge
       #- build_docs_with_no_base_url:
       #    name: build_docs_dev
       #    context: ncu-newskit-site-dev
       #    requires:
       #      - build_icons
+      #      - deploy_to_s3_pr
       #- push_s3_general_oidc:
       #    name: deploy_to_s3_dev
       #    context: ncu-newskit-site-dev
       #    s3Path_docs: s3://ncu-newskit-docs-dev/
       #    s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
       #    requires:
-      #      - deploy_terraform_s3_dev
+      #      - validate_terraform
       #      - build_docs_dev
       #      - build_storybook
 
@@ -1693,6 +1606,24 @@ workflows:
           apply: true
           tf_env: true
           environment: dev
+          requires:
+            - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_staging
+          package: s3/prod-newskit
+          context: ncu-newskit-site-stage
+          apply: true
+          tf_env: true
+          environment: staging
+          requires:
+            - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_prod
+          package: s3/prod-newskit
+          context: ncu-newskit-site-prod
+          apply: true
+          tf_env: true
+          environment: prod
           requires:
             - init_aws
       - install_deps:
@@ -1798,46 +1729,30 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_dev
 
-      - build_docs:
-          name: build_docs_prod_link
-          context: ncu-newskit-site-prod
+      - push_s3_general_oidc:
+          name: deploy_to_s3_staging
+          context: ncu-newskit-site-stage
+          s3Path_docs: s3://ncu-newskit-docs-staging/
+          s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
-            - deploy_to_s3_dev
-      - build_push_docker_ecr:
-          name: build_push_docker_ecr_prod
-          context: ncu-product-platforms-context
-          docker_version: prod
-          requires:
-            - build_docs_prod_link
+            - deploy_terraform_s3_staging
+            - build_docs_dev # removed build_docs_staging from this workflow to save 5 mins (docs site behaviour unaffected)
+            - build_storybook
 
-      # - eks_flux_deploy:
-      #     name: eks_flux_deploy_staging
-      #     context: ncu-newskit-site-stage
-      #     deployment_type: prod
-      #     environment: staging
-      #     requires:
-      #       - build_push_docker_ecr_prod
-      #
-      # - eks_kubectl_deploy:
-      #     name: eks_kubectl_deploy_staging
-      #     context: ncu-newskit-site-stage
-      #     environment: staging
-      #     requires:
-      #       - eks_flux_deploy_staging
-
-      - eks_flux_deploy:
-          name: eks_flux_deploy_prod
+      - build_docs_with_no_base_url:
+          name: build_docs_prod
           context: ncu-newskit-site-prod
-          environment: prod
-          deployment_type: prod
           requires:
-            - build_push_docker_ecr_prod
-      - eks_kubectl_deploy:
-          name: eks_kubectl_deploy_prod
-          context: ncu-newskit-site-prod
-          environment: prod
+            - deploy_to_s3_staging
+      - push_s3_general_oidc:
+          name: deploy_to_s3_prod
+          context: ncu-newskit-site-stage
+          s3Path_docs: s3://ncu-newskit-docs-prod/
+          s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
           requires:
-            - eks_flux_deploy_prod
+            - deploy_terraform_s3_prod
+            - build_docs_prod
+            - build_storybook
       # end
 
   main_codemod:
@@ -1904,7 +1819,24 @@ workflows:
           environment: staging
           requires:
             - init_aws
-
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_staging
+          package: s3/prod-newskit
+          context: ncu-newskit-site-stage
+          apply: true
+          tf_env: true
+          environment: staging
+          requires:
+            - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_prod
+          package: s3/prod-newskit
+          context: ncu-newskit-site-prod
+          apply: true
+          tf_env: true
+          environment: prod
+          requires:
+            - init_aws
       - install_deps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -1952,9 +1884,9 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      - build_docs:
+      - build_docs_with_no_base_url:
           <<: *only_on_version_tag
-          name: build_docs_prod
+          name: build_docs_versioned
           context: ncu-newskit-site-prod
           requires:
             - build_icons
@@ -1964,13 +1896,13 @@ workflows:
           name: test_broken_links_docs_prod
           context: ncu-product-platforms-context
           requires:
-            - build_docs_prod
+            - build_docs_versioned
       - test_e2e_docs:
           <<: *only_on_version_tag
           name: test_e2e_docs_prod
           context: ncu-newskit-site-prod
           requires:
-            - build_docs_prod
+            - build_docs_versioned
             - install_cypress
             - build_storybook
       - build_push_docker_ecr:
@@ -2003,37 +1935,38 @@ workflows:
             - test_newskit_in_nextjs_app
 
       # Deploying newskit.co.uk and storybook to Staging then to Prod environment.
-      - eks_flux_deploy:
-          <<: *only_on_version_tag
-          name: eks_flux_deploy_staging
+      - build_docs_with_no_base_url:
+          name: build_docs_staging
           context: ncu-newskit-site-stage
-          deployment_type: release
-          environment: staging
           requires:
+            - build_icons
             - publish_npm
             - build_push_docker_ecr_release
-      - eks_kubectl_deploy:
-          <<: *only_on_version_tag
-          name: eks_kubectl_deploy_staging
+      - push_s3_general_oidc:
+          name: deploy_to_s3_staging
           context: ncu-newskit-site-stage
-          environment: staging
+          s3Path_docs: s3://ncu-newskit-docs-staging/
+          s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
-            - eks_flux_deploy_staging
-      - eks_flux_deploy:
-          <<: *only_on_version_tag
-          name: eks_flux_deploy_prod
+            - deploy_terraform_s3_staging
+            - build_docs_staging
+            - build_storybook
+
+      - build_docs_with_no_base_url:
+          name: build_docs_prod
           context: ncu-newskit-site-prod
-          environment: prod
-          deployment_type: release
           requires:
-            - eks_kubectl_deploy_staging
-      - eks_kubectl_deploy:
-          <<: *only_on_version_tag
-          name: eks_kubectl_deploy_prod
+            - build_icons
+            - deploy_to_s3_staging
+      - push_s3_general_oidc:
+          name: deploy_to_s3_prod
           context: ncu-newskit-site-prod
-          environment: prod
+          s3Path_docs: s3://ncu-newskit-docs-prod/
+          s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
           requires:
-            - eks_flux_deploy_prod
+            - deploy_terraform_s3_prod
+            - build_docs_prod
+            - build_storybook
 
   on_release_version_tag_codemod:
     # Workflow's jobs triggered by the bump_version_codemod make script, which creates and pushes a new version tag e.g: "codemod-v5.0.1".
