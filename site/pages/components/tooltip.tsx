@@ -9,7 +9,10 @@ import {LayoutProps} from '../../components/layout';
 import {IconFilledCircle} from '../../components/icons';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
+import {
+  getLogicalPropsTable,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -559,7 +562,7 @@ const TooltipComponent = (layoutProps: LayoutProps) => (
               description:
                 'Overrides the edgeOffset of the tooltip indicator. The edgeOffset is the padding between the indicator and the edges of the popover container.',
             },
-            ...getLogicalPropsTable(undefined, 'panel', {
+            ...getLogicalPropsTable(logicalPaddingOverrideProps, 'panel', {
               paddingBlock: 'space020',
               paddingInline: 'space020',
             }),

@@ -498,7 +498,7 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               default: 'inkContrast',
               description: `If provided, this overrides the stylePreset applied to the StructuredListItem's default icon`,
             },
-            ...getLogicalPropsTable(undefined, undefined, {
+            ...getLogicalPropsTable(logicalPaddingOverrideProps, undefined, {
               paddingBlock: 'space050',
               paddingInline: 'space040',
             }),

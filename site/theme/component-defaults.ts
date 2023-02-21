@@ -183,7 +183,8 @@ export const componentDefaults = {
     },
   },
   inlineMessage: {
-    spaceInset: 'space040',
+    paddingInline: 'space040',
+    paddingBlock: 'space040',
     width: '100%',
     content: {
       message: {
@@ -207,7 +208,8 @@ export const componentDefaults = {
   },
   tab: {
     small: {
-      spaceInset: 'spaceInsetStretch040',
+      paddingBlock: 'space050',
+      paddingInline: 'space040',
     },
   },
   tabs: {

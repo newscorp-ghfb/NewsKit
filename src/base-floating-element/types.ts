@@ -6,7 +6,7 @@ import {
   useInteractions,
 } from '@floating-ui/react-dom-interactions';
 import {MQ} from '../utils';
-import {LogicalProps} from '../utils/logical-properties';
+import {LogicalPaddingProps} from '../utils/logical-properties';
 import {TransitionToken} from '../theme';
 
 export type TriggerType = 'click' | 'hover' | 'focus';
@@ -52,7 +52,7 @@ export interface FloatingElementProps
     panel?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
-    } & LogicalProps;
+    } & LogicalPaddingProps;
     pointer?: {
       stylePreset?: MQ<string>;
       size?: MQ<string>;

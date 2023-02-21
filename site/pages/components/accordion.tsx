@@ -6,7 +6,10 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
+import {
+  getLogicalPropsTable,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const unorderedListOverrides = {
   spaceStack: 'space040',
@@ -487,7 +490,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the stylePreset of the accordion panel',
             },
-            ...getLogicalPropsTable(undefined, 'panel', {
+            ...getLogicalPropsTable(logicalPaddingOverrideProps, 'panel', {
               paddingBlock: 'space030',
               paddingInline: 'space030',
             }),

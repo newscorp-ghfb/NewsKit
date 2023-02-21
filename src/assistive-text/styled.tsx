@@ -1,8 +1,8 @@
 import {TextBlockProps} from '../text-block/types';
 import {TextBlock} from '../text-block';
-import {logicalProps} from '../utils/logical-properties';
+import {getLogicalPropsAndTypographyPreset} from '../utils/logical-properties';
 
-import {getTypographyPreset, getStylePreset, styled} from '../utils/style';
+import {getStylePreset, styled} from '../utils/style';
 
 import {AssistiveTextProps} from './types';
 
@@ -17,9 +17,6 @@ export const StyledAssistiveText = styled(TextBlock)<
       isDisabled: state === 'disabled',
       isValid: state === 'valid',
     })}
-  ${({size}) =>
-    getTypographyPreset(`assistiveText.${size}`, '', {
-      withCrop: true,
-    })}
-  ${logicalProps()};
+
+  ${({size}) => getLogicalPropsAndTypographyPreset(`assistiveText.${size}`, '')}
 `;

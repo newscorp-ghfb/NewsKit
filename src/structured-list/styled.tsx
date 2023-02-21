@@ -5,7 +5,7 @@ import {
   StructuredListProps,
 } from './types';
 import {getResponsiveSize, getStylePreset, styled} from '../utils';
-import {logicalProps} from '../utils/logical-properties';
+import {logicalProps, logicalPaddingProps} from '../utils/logical-properties';
 
 const getAlign = (align: string) => {
   switch (align) {
@@ -27,7 +27,7 @@ export const StyledGrid = styled(Grid)<
       '',
       props.hasHref ? {} : {omitStates: ['active', 'hover', 'focus']},
     )(props)};
-  ${logicalProps('structuredListItem')}
+  ${logicalPaddingProps('structuredListItem')}
   ${getResponsiveSize('minHeight', 'structuredListItem', '', 'minHeight')}
 `;
 export const StyledWrapper = styled.div<StructuredListCellProps>`

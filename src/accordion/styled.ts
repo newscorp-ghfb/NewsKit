@@ -6,7 +6,7 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils';
-import {logicalProps} from '../utils/logical-properties';
+import {logicalPaddingProps, logicalProps} from '../utils/logical-properties';
 import {AccordionProps} from './types';
 
 export const StyledAccordionButton = styled.button<
@@ -32,7 +32,7 @@ export const StyledAccordionButton = styled.button<
       isDisabled: disabled,
     })};
   ${getTypographyPreset('accordion.header', 'header')}
-  ${logicalProps('accordion.header', 'header')}
+  ${logicalPaddingProps('accordion.header', 'header')}
   ${getTransitionPreset('accordion.header', 'header')}
 `;
 

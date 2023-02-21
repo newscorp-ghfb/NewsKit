@@ -179,7 +179,7 @@ const commonOverridesRows = [
       'This property is deprecated. Use marginBlockEnd instead. If provided, overrides the end margin.',
   },
   {
-    attribute: 'panel.width',
+    attribute: 'modal.panel.width',
     type: 'MQ<string>',
     default: '60vw',
     description:

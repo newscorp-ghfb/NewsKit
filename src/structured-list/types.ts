@@ -3,7 +3,7 @@ import {DividerProps} from '../divider';
 import {CellProps} from '../grid';
 import {EventData} from '../instrumentation';
 import {MQ} from '../utils/style';
-import {LogicalProps} from '../utils/logical-properties';
+import {LogicalPaddingProps, LogicalProps} from '../utils/logical-properties';
 
 export interface StructuredListOverrides extends LogicalProps {
   divider?: DividerProps['overrides'];
@@ -37,7 +37,7 @@ export interface StructuredListItemProps
       stylePreset?: MQ<string>;
       size?: string;
     };
-  } & LogicalProps;
+  } & LogicalPaddingProps;
 }
 
 export interface StructuredListCellProps extends CellProps {

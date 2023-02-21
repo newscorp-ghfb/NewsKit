@@ -17,7 +17,10 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {ModalProps} from '../../../src/modal/types';
-import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
+import {
+  getLogicalPropsTable,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const modalContent = (
   <Stack
@@ -555,7 +558,7 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the maxHeight property of the modal pane',
             },
-            ...getLogicalPropsTable(undefined, 'panel', {}),
+            ...getLogicalPropsTable(logicalPaddingOverrideProps, 'panel', {}),
             ...getLogicalPropsTable(undefined, 'header', {
               paddingInline: 'space050',
               paddingBlock: 'space040',
