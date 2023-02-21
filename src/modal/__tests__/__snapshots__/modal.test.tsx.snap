@@ -4079,7 +4079,6 @@ exports[`Modal renders with logical props 1`] = `
   background-color: #FFFFFF;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
-  margin-block: 30px;
   padding-inline: 15px;
 }
 

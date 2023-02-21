@@ -415,29 +415,16 @@ exports[`Assistive Text should render logical props overrides 1`] = `
   -ms-flex: 1;
   flex: 1;
   color: #6A6A6A;
+  padding-block: 30px;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 0.5px 0px;
-  padding-block: 30px;
 }
 
 .emotion-4:disabled {
   color: #ABABAB;
-}
-
-.emotion-4::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-4::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
 }
 
 .emotion-5 {
