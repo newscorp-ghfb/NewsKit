@@ -103,7 +103,7 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
           description:
             'The container takes the entire width of the specified grid area, for example, 12 columns, six columns etc.',
           media: getIllustrationComponent(
-            'components/title-bar/03-options/border',
+            'components/title-bar/03-options/width',
           ),
         },
         {
@@ -111,7 +111,7 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
           description:
             'A border can be applied to the container to provide visual separation from the preceding or the following content.',
           media: getIllustrationComponent(
-            'components/title-bar/03-options/heading-tag',
+            'components/title-bar/03-options/border',
           ),
         },
         {
@@ -119,7 +119,7 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
           description:
             "By default, the title is set to h3. The tag can be set to 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span'.",
           media: getIllustrationComponent(
-            'components/title-bar/03-options/width',
+            'components/title-bar/03-options/heading-tag',
           ),
         },
       ],
