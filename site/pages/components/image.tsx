@@ -184,15 +184,8 @@ const ImageComponent = (layoutProps: LayoutProps) => (
           title: 'Caption',
           description: (
             <>
-              A{' '}
-              <Link
-                target="_self"
-                href="https://www.newskit.co.uk/components/caption/"
-              >
-                caption
-              </Link>{' '}
-              component can be added to an image with an optional credit to the
-              image source.
+              A <Link href="/components/caption/">caption</Link> component can
+              be added to an image with an optional credit to the image source.
             </>
           ),
           media: getIllustrationComponent('components/image/options/caption'),
