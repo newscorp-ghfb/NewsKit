@@ -94,6 +94,7 @@ Object {
     "inkSubtle": "{{colors.neutral060}}",
     "interactiveDisabled010": "{{colors.neutral020}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.neutral010}}",
     "interactiveInput020": "{{colors.neutral050}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -301,6 +302,7 @@ Object {
   "name": "default-theme",
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
