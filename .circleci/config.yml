@@ -1092,7 +1092,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - node/install
+      - aws-cli/install
       - aws-cli/setup:
           role-arn: << parameters.aws_assume_role_arn >>
           profile-name: 'NEWSKIT-OIDC-PROFILE'
