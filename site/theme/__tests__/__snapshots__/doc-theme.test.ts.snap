@@ -532,11 +532,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -3276,11 +3281,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -6017,11 +6027,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -8761,11 +8776,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -11502,11 +11522,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -14246,11 +14271,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -16987,11 +17017,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -19731,11 +19766,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",

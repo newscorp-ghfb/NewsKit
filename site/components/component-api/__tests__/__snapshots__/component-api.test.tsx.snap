@@ -253,25 +253,21 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   font-family: 'DM Mono',courier;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.4285714285714286;
-  padding: 1px 0px;
+  line-height: 21px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-15::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
 }
 
 .emotion-15::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
 }
 
 .emotion-18 {
@@ -816,25 +812,21 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   font-family: 'DM Mono',courier;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.4285714285714286;
-  padding: 1px 0px;
+  line-height: 21px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-17::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
 }
 
 .emotion-17::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
 }
 
 .emotion-20 {
