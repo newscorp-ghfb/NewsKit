@@ -2712,7 +2712,7 @@
     fast-glob "^3.2.11"
     image-size "^1.0.0"
 
-"@percy/cli@^1.20.0":
+"@percy/cli@^1.10.2":
   version "1.20.0"
   resolved "https://registry.yarnpkg.com/@percy/cli/-/cli-1.20.0.tgz#400bffb290fa91e02e3fe7c263613a8e8f322d62"
   integrity sha512-23dfreXNT1PNBzn1f97hpMzD9l86koKPqdUAaXjFqL+iVrxSnq9Dfvw8W7QbChQOEsIjjhdeRkGOFrb1WZLsPg==
@@ -2843,7 +2843,7 @@
   resolved "https://registry.yarnpkg.com/@percy/sdk-utils/-/sdk-utils-1.11.0.tgz#a1cdb26c3bf579bda18a94045aa731e82732494f"
   integrity sha512-X0c1wgtmZ8/+73rNNdTVVdSeKZgDuq8HBP0TMNvbjyc2wuFjLxNuhV7BAqMjmP9d0mncvSfroYI3jbGaGfIJNA==
 
-"@percy/storybook@^4.3.5":
+"@percy/storybook@^4.3.3":
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/@percy/storybook/-/storybook-4.3.5.tgz#e1cf22afb6bed99f0ebf8f8f3a4a95c1cbbcca0b"
   integrity sha512-b8zZ933R0e+5rTTeAtDDGKpl39vVj57RiMg9QWxJtO07TdXx8AhnEqzIj7lmkKb+5cYD8onQ/UFAAOG8gQ87AA==
