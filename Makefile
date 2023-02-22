@@ -55,12 +55,6 @@ comps_visual_test_percy:
 skip_comps_visual_test_percy:
 	yarn test:visual:comps:ci:percy:skip
 
-e2e_test_comps:
-	yarn e2e:comps:ci;
-
-e2e_test_build:
-	yarn e2e:build;
-
 e2e_test_docs:
 	yarn e2e:docs:ci;
 

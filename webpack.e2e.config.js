@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 
 // This module is used by the visual regression tests to run the demos.
@@ -47,6 +48,9 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [{from: 'static', to: ''}],
+    }),
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
     }),
   ],
 };

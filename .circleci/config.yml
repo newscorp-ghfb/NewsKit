@@ -603,7 +603,7 @@ jobs:
           at: ~/project
       - run:
           name: Build E2E Tests
-          command: make e2e_test_build
+          command: yarn e2e:build
       - persist_to_workspace:
           root: ./
           paths:
@@ -896,7 +896,7 @@ jobs:
           at: ~/project
       - run:
           name: Run Component Tests
-          command: make e2e_test_comps
+          command: yarn e2e:comps:ci
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
