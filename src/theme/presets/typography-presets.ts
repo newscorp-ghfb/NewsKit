@@ -306,6 +306,13 @@ typographyPresets.utilityLabel030 = {
   fontWeight: '{{fonts.fontWeight020}}',
   letterSpacing: '{{fonts.fontLetterSpacing030}}',
 };
+typographyPresets.utilityLabel050 = {
+  fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+  fontSize: '{{fonts.fontSize050}}',
+  lineHeight: '{{fonts.fontLineHeight040}}',
+  fontWeight: '{{fonts.fontWeight020}}',
+  letterSpacing: '{{fonts.fontLetterSpacing030}}',
+};
 // Meta
 typographyPresets.utilityMeta010 = {
   fontFamily: '{{fonts.fontFamily010.fontFamily}}',
@@ -332,6 +339,10 @@ typographyPresets.utilityButton020 = {
 };
 typographyPresets.utilityButton030 = {
   ...typographyPresets.utilityLabel030,
+  fontWeight: '{{fonts.fontWeight020}}',
+};
+typographyPresets.utilityButton050 = {
+  ...typographyPresets.utilityLabel050,
   fontWeight: '{{fonts.fontWeight020}}',
 };
 
