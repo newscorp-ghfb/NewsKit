@@ -390,7 +390,7 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:disabled {
@@ -759,7 +759,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:disabled {
@@ -1128,7 +1128,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:disabled {
@@ -2796,7 +2796,7 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-13:disabled {
@@ -4503,7 +4503,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -4523,7 +4523,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -4785,7 +4785,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-10:disabled {
@@ -5015,7 +5015,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5035,7 +5035,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5178,7 +5178,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5402,7 +5402,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5422,7 +5422,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5548,7 +5548,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5644,7 +5644,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5664,7 +5664,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5790,7 +5790,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5880,7 +5880,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5900,7 +5900,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6025,7 +6025,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6045,7 +6045,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6602,7 +6602,7 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-13:disabled {

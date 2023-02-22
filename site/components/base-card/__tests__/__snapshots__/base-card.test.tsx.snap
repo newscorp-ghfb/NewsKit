@@ -203,7 +203,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -531,7 +531,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

@@ -227,39 +227,6 @@ exports[`TypographyPreset when withCrop is true but such font does not exist ren
 </DocumentFragment>
 `;
 
-exports[`TypographyPreset when withCrop is true cropping functions work with cropConfig 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  font-family: "Custom-FontName2",sans-serif;
-  font-size: 18px;
-  line-height: 1.5555555555555556;
-  font-weight: 400;
-  letter-spacing: -0.5px;
-  padding: 1px 0px;
-}
-
-.emotion-0::before {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4590277777777778em;
-}
-
-.emotion-0::after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.4590277777777778em;
-}
-
-<p
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
 exports[`TypographyPreset when withCrop is true renders cropped text 1`] = `
 <DocumentFragment>
   .emotion-0 {

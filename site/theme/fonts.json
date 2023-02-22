@@ -1,9 +1,14 @@
 {
   "fontFamily040": {
     "fontFamily": "'DM Mono', courier",
-    "cropConfig": {
-      "top": 10,
-      "bottom": 8
+    "fontMetrics": {
+      "fontWeight010": {
+        "capHeight": 700,
+        "ascent": 992,
+        "descent": -310,
+        "lineGap": 0,
+        "unitsPerEm": 1000
+      }
     }
   }
 }

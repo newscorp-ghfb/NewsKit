@@ -3014,7 +3014,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -3479,7 +3479,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -3943,7 +3943,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -4409,7 +4409,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -4874,7 +4874,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -5338,7 +5338,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -6470,7 +6470,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -6625,7 +6625,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-5:disabled {
@@ -6760,7 +6760,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:disabled {
@@ -7004,7 +7004,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-20:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-20:active:not(:disabled) svg {
@@ -7338,7 +7338,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -7936,7 +7936,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -8217,7 +8217,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -8552,7 +8552,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -8809,7 +8809,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-8:disabled {
@@ -9078,7 +9078,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-19:active:not(:disabled) svg {
@@ -9450,7 +9450,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -9707,7 +9707,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-8:disabled {
@@ -9976,7 +9976,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-19:active:not(:disabled) svg {

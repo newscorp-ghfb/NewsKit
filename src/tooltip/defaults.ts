@@ -7,7 +7,7 @@ export default {
       },
     },
     zIndex: 80,
-    distance: 'space020',
+    offset: 'space020',
     pointer: {
       stylePreset: 'tooltipPointer',
       size: 'sizing010',

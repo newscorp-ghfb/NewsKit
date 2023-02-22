@@ -339,7 +339,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -486,7 +486,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-21:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -878,7 +878,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1299,7 +1299,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2040,7 +2040,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-9:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2492,7 +2492,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {

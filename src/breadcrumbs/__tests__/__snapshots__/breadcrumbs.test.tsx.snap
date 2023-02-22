@@ -89,7 +89,7 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -267,7 +267,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -301,7 +301,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -581,7 +581,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -615,7 +615,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -878,7 +878,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -912,7 +912,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1175,7 +1175,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1209,7 +1209,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1472,7 +1472,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1506,7 +1506,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1773,7 +1773,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1807,7 +1807,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2069,7 +2069,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2103,7 +2103,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2365,7 +2365,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2399,7 +2399,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2595,7 +2595,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2629,7 +2629,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

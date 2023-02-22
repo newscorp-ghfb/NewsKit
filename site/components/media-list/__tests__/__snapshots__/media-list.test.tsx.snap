@@ -202,7 +202,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-11:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -222,7 +222,7 @@ exports[`Media List renders with custom layout 1`] = `
 }
 
 .emotion-11:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -670,7 +670,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-11:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -690,7 +690,7 @@ exports[`Media List renders with default layout 1`] = `
 }
 
 .emotion-11:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

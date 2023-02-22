@@ -188,13 +188,13 @@ exports[`UnorderedList renders different types of children 1`] = `
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-19:visited:not(:disabled) {

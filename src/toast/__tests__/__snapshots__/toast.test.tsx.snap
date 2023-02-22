@@ -1243,7 +1243,7 @@ exports[`Toast Component renders with actions 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-7:disabled {
@@ -1615,13 +1615,13 @@ exports[`Toast Component renders with content as string and link 1`] = `
 }
 
 .emotion-4:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-4:visited:not(:disabled) {
@@ -2366,7 +2366,7 @@ exports[`Toast Component renders with overrides and all props 1`] = `
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-11:disabled {

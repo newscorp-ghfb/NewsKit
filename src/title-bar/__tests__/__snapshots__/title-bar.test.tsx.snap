@@ -207,7 +207,7 @@ exports[`TitleBar Should display correctly with action item as: Button 1`] = `
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-5:disabled {
@@ -515,7 +515,7 @@ exports[`TitleBar Should display correctly with action item as: Button hidden in
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-5:disabled {
@@ -807,13 +807,13 @@ exports[`TitleBar Should display correctly with action item as: Link 1`] = `
 }
 
 .emotion-5:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-5:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-5:visited:not(:disabled) {
