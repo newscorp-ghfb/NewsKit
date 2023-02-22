@@ -61,7 +61,7 @@ const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     {({themeMode}) => (
       <ThemeProvider
-        exposeCssVariables
+        exposeCSSVariables
         theme={
           themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
         }

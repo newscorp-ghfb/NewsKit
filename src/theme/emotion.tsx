@@ -17,12 +17,12 @@ export const useTheme = (_useTheme as unknown) as () => Theme;
 export interface ThemeProviderProps {
   theme: UncompiledTheme | Theme | ((outerTheme: Theme) => Theme);
   children: React.ReactNode;
-  exposeCssVariables?: boolean;
+  exposeCSSVariables?: boolean;
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   theme,
-  exposeCssVariables = false,
+  exposeCSSVariables = false,
   children,
   ...props
 }) => {
@@ -30,12 +30,12 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   const localTheme =
     typeof theme === 'function' ? theme(parentTheme) : compileTheme(theme);
 
-  const diff: ThemeDiff = exposeCssVariables
+  const diff: ThemeDiff = exposeCSSVariables
     ? themeDiff(parentTheme, localTheme)
     : {};
 
   const doNotAddCssVariables =
-    !exposeCssVariables || Object.keys(diff).length === 0;
+    !exposeCSSVariables || Object.keys(diff).length === 0;
 
   return (
     <EmotionThemeProvider {...props} theme={localTheme}>

@@ -29,7 +29,7 @@ export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
       {({themeMode}) => (
         <>
           <ThemeProvider
-            exposeCssVariables
+            exposeCSSVariables
             theme={
               themeMode === 'light'
                 ? foundationsThemeLight
