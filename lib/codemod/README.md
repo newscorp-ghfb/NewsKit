@@ -103,7 +103,7 @@ The following transformers are available when upgrading to v7:
 
 - [`audio-player-play-pause-button`](#audio-player-play-pause-button)
 - [`all-default`](#all-default)
-- [`replace-space-inset-overrides`](#replace-space-inset-overrides)
+- [`replace-space-inset-props-and-overrides`](#replace-space-inset-props-and-overrides)
 
 #### `audio-player-play-pause-button`
 
@@ -121,17 +121,24 @@ Run this codemod if you would like to apply manual overrides to keep the old def
 
 Run this codemod if you would like to apply manual overrides to the keep the old default for all components listed above.
 
-#### `replace-space-inset-overrides`
+#### `replace-space-inset-props-and-overrides`
 
 spaceInset prop was marked as deprecated and has now been removed in V7. 
 
-Run this codemod if you would like to apply logical props overrides instead.
+Run this codemod if you would like to apply logical props instead.
 
 ```diff
 - <Flag overrides={{spaceInset: "space060"}}>Flag</Flag>
 
 + <Flag overrides={{paddingBlock: "space060", paddingInline: "space060"}}>Flag</Flag>
 ```
+
+```diff
+- <Block spaceInset="space020" stylePreset="inkContrast">Block</Block>
+
++ <Block stylePreset="inkContrast" paddingBlock="space020" paddingInline="space020">Block</Block>
+```
+
 
 ## Development
 
