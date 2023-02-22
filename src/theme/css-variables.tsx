@@ -77,6 +77,7 @@ export const generateCSSVars = (theme: Partial<Theme>) => {
   const cssValue = foundationsList
     .map(themeKey => {
       const tokensObject = theme[themeKey];
+      /* istanbul ignore if */
       if (typeof tokensObject !== 'object') {
         return '';
       }

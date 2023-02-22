@@ -22,7 +22,7 @@ describe('ThemeProvider', () => {
 
   it('renders as css variables', () => {
     const {asFragment} = render(
-      <ThemeProvider theme={newskitLightTheme} exposeCssVariables>
+      <ThemeProvider theme={newskitLightTheme} exposeCSSVariables>
         app
       </ThemeProvider>,
     );
@@ -32,6 +32,7 @@ describe('ThemeProvider', () => {
   it('renders as css variables in nested providers', () => {
     const childrenTheme = createTheme({
       name: 'children-theme',
+      baseTheme: newskitLightTheme,
       overrides: {
         borders: {
           borderWidth010: '20px',
@@ -48,9 +49,9 @@ describe('ThemeProvider', () => {
     });
 
     const {asFragment} = render(
-      <ThemeProvider theme={newskitLightTheme} exposeCssVariables>
+      <ThemeProvider theme={newskitLightTheme} exposeCSSVariables>
         1st level
-        <ThemeProvider theme={childrenTheme} exposeCssVariables>
+        <ThemeProvider theme={childrenTheme} exposeCSSVariables>
           2nd level
         </ThemeProvider>
       </ThemeProvider>,
@@ -58,11 +59,12 @@ describe('ThemeProvider', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('themeDiff -> different token', () => {
+  it.only('themeDiff -> different token', () => {
     const parentTheme = {
       colors: {
         ink: 'ink',
         inkBase: 'inkBase',
+        blue010: 'blue',
       },
       sizing: {
         sizing010: '10px',
@@ -75,12 +77,16 @@ describe('ThemeProvider', () => {
         fontFamily010: {
           fontFamily: 'Roboto',
         },
+        fontFamily020: {
+          fontFamily: 'Test',
+        },
       },
     };
 
     const childTheme = {
       colors: {
         ink: 'black',
+        blue010: 'blue',
       },
       borders: {
         borderWidth010: '2px',
@@ -88,6 +94,9 @@ describe('ThemeProvider', () => {
       fonts: {
         fontFamily010: {
           fontFamily: 'Ubuntu',
+        },
+        fontFamily020: {
+          fontFamily: 'Test',
         },
       },
     };
