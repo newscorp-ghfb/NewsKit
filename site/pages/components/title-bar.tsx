@@ -12,6 +12,16 @@ const PlaygroundContainer = styled.div`
   height: 200px;
 `;
 
+const typographyPresets = {
+  h1: 'editorialSubheadline050',
+  h2: 'editorialSubheadline040',
+  h3: 'editorialSubheadline030',
+  h4: 'editorialSubheadline020',
+  h5: 'editorialSubheadline010',
+  h6: 'editorialParagraph020',
+  span: 'editorialParagraph010',
+};
+
 const HeadlineComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate<typeof TitleBar>
     headTags={{
@@ -46,7 +56,14 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
         componentName: 'TitleBar',
         component: props => (
           <PlaygroundContainer>
-            <TitleBar {...props} />
+            <TitleBar
+              {...props}
+              overrides={{
+                heading: {
+                  typographyPreset: typographyPresets[props.headingAs || 'h1'],
+                },
+              }}
+            />
           </PlaygroundContainer>
         ),
         knobs: [
