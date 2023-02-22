@@ -5109,7 +5109,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-13:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -5547,7 +5547,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6058,7 +6058,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6481,7 +6481,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;

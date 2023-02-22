@@ -1,5 +1,6 @@
 import {StylePreset} from '../theme/types';
 import {defaultFocusVisible} from '../utils/default-focus-visible';
+import {inverseFocusVisible} from '../utils/inverse-focus-visible';
 
 export default {
   iconButtonSolidPrimary: {
@@ -125,7 +126,7 @@ export default {
       color: '{{colors.inkInverse}}',
       iconColor: '{{colors.inkInverse}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 
   iconButtonOutlinedPrimary: {
@@ -271,7 +272,7 @@ export default {
       backgroundColor: '{{colors.interactiveInverse020}}',
       borderStyle: 'none',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 
   iconButtonMinimalPrimary: {
@@ -386,6 +387,6 @@ export default {
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 } as Record<string, StylePreset>;
