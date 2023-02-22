@@ -1077,34 +1077,34 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  push_s3_pr_oidc:
-    parameters:
-      aws_region:
-        description: AWS Region
-        type: string
-        default: '${AWS_DEFAULT_REGION}'
-      aws_assume_role_arn:
-        description: AWS ARN For Assume Role
-        type: string
-        default: '${S3_AWS_ASSUME_ROLE_ARN}'
-    executor: aws-cli-and-terraform
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - aws-cli/setup:
-          role-arn: << parameters.aws_assume_role_arn >>
-          profile-name: 'NEWSKIT-OIDC-PROFILE'
-          role-session-name: '${CIRCLE_WORKFLOW_ID}-s3-push'
-      - run:
-          name: Upload PR sites to S3 subfolders
-          command: |
-            export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/')
-            aws s3 cp public $s3Path_docs --recursive
-            export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/' 'storybook/')
-            aws s3 cp dist-storybook $s3Path_storybook --recursive
-      - slack/notify:
-          <<: *slack_notify
+  # push_s3_pr_oidc:
+  #   parameters:
+  #     aws_region:
+  #       description: AWS Region
+  #       type: string
+  #       default: '${AWS_DEFAULT_REGION}'
+  #     aws_assume_role_arn:
+  #       description: AWS ARN For Assume Role
+  #       type: string
+  #       default: '${S3_AWS_ASSUME_ROLE_ARN}'
+  #   executor: aws-cli-and-terraform
+  #   steps:
+  #     - checkout
+  #     - attach_workspace:
+  #         at: ~/project
+  #     - aws-cli/setup:
+  #         role-arn: << parameters.aws_assume_role_arn >>
+  #         profile-name: 'NEWSKIT-OIDC-PROFILE'
+  #         role-session-name: '${CIRCLE_WORKFLOW_ID}-s3-push'
+  #     - run:
+  #         name: Upload PR sites to S3 subfolders
+  #         command: |
+  #           export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/')
+  #           aws s3 cp public $s3Path_docs --recursive
+  #           export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/' 'storybook/')
+  #           aws s3 cp dist-storybook $s3Path_storybook --recursive
+  #     - slack/notify:
+  #         <<: *slack_notify
 
   post_pr_env_url_to_github_pr:
     executor: node
@@ -1466,6 +1466,15 @@ workflows:
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
+          steps:
+            - checkout
+            - attach_workspace:
+                at: ~/project
+            - run:
+                name: Upload PR sites to S3 subfolders
+                command: |
+                  export s3Path_docs_pr=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/')
+                  export s3Path_storybook_pr=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/' 'storybook/')
       - deploy_terraform:
           name: deploy_terraform_ecr_pr
           package: ecr
@@ -1515,9 +1524,11 @@ workflows:
           context: ncu-newskit-site-pr
           requires:
             - build_icons
-      - push_s3_pr_oidc:
+      - push_s3_general_oidc:
           name: deploy_to_s3_pr
           context: ncu-newskit-site-pr
+          s3Path_docs: ${s3Path_docs_pr}
+          s3Path_storybook: ${s3Path_storybook_pr}
           requires:
             - validate_deploy_terraform_s3_pr
             - build_docs_pr
