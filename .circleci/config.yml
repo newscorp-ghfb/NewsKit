@@ -1106,9 +1106,11 @@ jobs:
             node --version
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/')
+            echo $s3Path_docs
             aws s3 cp public $s3Path_docs --recursive
             aws s3 cp timestamp.html $s3Path_docs
             export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/' 'storybook/')
+            echo $s3Path_storybook
             aws s3 cp dist-storybook $s3Path_storybook --recursive
             aws s3 cp timestamp.html $s3Path_storybook
       - slack/notify:
