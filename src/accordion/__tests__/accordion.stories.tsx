@@ -265,6 +265,42 @@ export const StoryAccordionOverrides = () => (
 );
 StoryAccordionOverrides.storyName = 'Overrides';
 
+export const StoryAccordionLogicalProps = () => (
+  <StorybookPage columns={COLS}>
+    <StorybookCase title="logical props overrides on Accordion">
+      <Accordion
+        header="Header"
+        label="Show"
+        expanded
+        overrides={{
+          paddingBlock: '12px',
+          marginBlock: '12px',
+          header: {
+            paddingBlock: '12px',
+            marginBlock: '12px',
+          },
+          panel: {
+            paddingBlock: '12px',
+            marginBlock: '12px',
+          },
+        }}
+      >
+        {CONTENT}
+      </Accordion>
+    </StorybookCase>
+    <StorybookCase title="logical props overrides on AccordionGroup">
+      <AccordionGroup
+        expandSingle
+        overrides={{paddingBlock: '12px', marginBlock: '12px'}}
+      >
+        <Accordion header="Header">{CONTENT}</Accordion>
+        <Accordion header="Header">{CONTENT}</Accordion>
+      </AccordionGroup>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryAccordionLogicalProps.storyName = 'Logical props overrides';
+
 export const StoryAccordionOutlineOverrides = () => (
   <StorybookPage columns={COLS}>
     <StorybookCase title="Custom colour">

@@ -348,6 +348,26 @@ describe('Accordion', () => {
       },
     });
   });
+  test('should render with logical props overrides', () => {
+    const props = {
+      ...defaultProps,
+      expanded: true,
+      overrides: {
+        paddingBlock: '12px',
+        marginBlock: '12px',
+        header: {
+          paddingBlock: '12px',
+          marginBlock: '12px',
+        },
+        panel: {
+          paddingBlock: '12px',
+          marginBlock: '12px',
+        },
+      },
+    };
+    const fragment = renderToFragmentWithTheme(Accordion, props);
+    expect(fragment).toMatchSnapshot();
+  });
 });
 
 describe('AccordionGroup', () => {
@@ -500,6 +520,18 @@ describe('AccordionGroup', () => {
       expanded: 'all',
     });
 
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('should render with logical props overrides', () => {
+    const {asFragment} = renderWithTheme(AccordionGroup, {
+      ...defaultGroupProps,
+      defaultExpanded: [0],
+      expandSingle: true,
+      overrides: {
+        paddingBlock: '12px',
+        marginBlock: '12px',
+      },
+    });
     expect(asFragment()).toMatchSnapshot();
   });
 });

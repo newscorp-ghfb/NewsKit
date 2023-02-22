@@ -6,8 +6,8 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils';
-import {logicalPaddingProps, logicalProps} from '../utils/logical-properties';
-import {AccordionProps} from './types';
+import {logicalProps} from '../utils/logical-properties';
+import {AccordionGroupProps, AccordionProps} from './types';
 
 export const StyledAccordionButton = styled.button<
   Pick<AccordionProps, 'overrides' | 'disabled'>
@@ -32,7 +32,7 @@ export const StyledAccordionButton = styled.button<
       isDisabled: disabled,
     })};
   ${getTypographyPreset('accordion.header', 'header')}
-  ${logicalPaddingProps('accordion.header', 'header')}
+  ${logicalProps('accordion.header', 'header')}
   ${getTransitionPreset('accordion.header', 'header')}
 `;
 
@@ -62,4 +62,16 @@ export const StyledPanel = styled.div<
 >`
   ${getStylePreset('accordion.panel', 'panel')};
   ${logicalProps('accordion.panel', 'panel')}
+`;
+
+export const StyledAccordionWrapper = styled.div<
+  Pick<AccordionProps, 'overrides' | 'expanded'>
+>`
+  ${logicalProps('')}
+`;
+
+export const StyledAccordionGroupWrapper = styled.div<
+  Pick<AccordionGroupProps, 'overrides'>
+>`
+  ${logicalProps('')}
 `;

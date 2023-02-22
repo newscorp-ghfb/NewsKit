@@ -7,9 +7,10 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {
+  commonLogicalProps,
   getLogicalPropsTable,
-  logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const unorderedListOverrides = {
   spaceStack: 'space040',
@@ -482,7 +483,10 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the typographyPreset of the indicator label',
             },
-
+            ...getLogicalPropsTable(undefined, 'header', {
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }),
             {
               attribute: 'panel.stylePreset',
               type: 'MQ<string>',
@@ -490,10 +494,11 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the stylePreset of the accordion panel',
             },
-            ...getLogicalPropsTable(logicalPaddingOverrideProps, 'panel', {
+            ...getLogicalPropsTable(undefined, 'panel', {
               paddingBlock: 'space030',
               paddingInline: 'space030',
             }),
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
         {
@@ -529,6 +534,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               description: `Callback fired when expanded accordions change`,
             },
           ],
+          overridesRows: [...(commonLogicalProps() as OverridesRowsProps[])],
         },
       ],
     }}
