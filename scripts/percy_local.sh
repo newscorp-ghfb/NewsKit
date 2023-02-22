@@ -27,9 +27,9 @@ read -p "Enter the API key for the 'newskit-$1' project (you can find this in th
 export PERCY_TOKEN=$apiKey
 
 if [[ "$1" == "comps" ]]; then
-   echo "Running component tests..."
-   yarn test:visual:comps:ci:percy
+  echo "Running component tests..."
+  yarn test:visual:comps:ci:percy
 else
-   echo "Running doc site tests..."
-   yarn e2e:visual:docs:ci:percy
+  echo "Running doc site tests..."
+  yarn e2e:visual:docs:ci:percy
 fi
