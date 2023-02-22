@@ -288,15 +288,6 @@ export const StoryAccordionLogicalProps = () => (
         {CONTENT}
       </Accordion>
     </StorybookCase>
-    <StorybookCase title="logical props overrides on AccordionGroup">
-      <AccordionGroup
-        expandSingle
-        overrides={{paddingBlock: '12px', marginBlock: '12px'}}
-      >
-        <Accordion header="Header">{CONTENT}</Accordion>
-        <Accordion header="Header">{CONTENT}</Accordion>
-      </AccordionGroup>
-    </StorybookCase>
   </StorybookPage>
 );
 StoryAccordionLogicalProps.storyName = 'Logical props overrides';

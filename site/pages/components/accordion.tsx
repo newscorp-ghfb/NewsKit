@@ -534,7 +534,6 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               description: `Callback fired when expanded accordions change`,
             },
           ],
-          overridesRows: [...(commonLogicalProps() as OverridesRowsProps[])],
         },
       ],
     }}

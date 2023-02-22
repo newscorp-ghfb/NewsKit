@@ -522,16 +522,4 @@ describe('AccordionGroup', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
-  test('should render with logical props overrides', () => {
-    const {asFragment} = renderWithTheme(AccordionGroup, {
-      ...defaultGroupProps,
-      defaultExpanded: [0],
-      expandSingle: true,
-      overrides: {
-        paddingBlock: '12px',
-        marginBlock: '12px',
-      },
-    });
-    expect(asFragment()).toMatchSnapshot();
-  });
 });

@@ -4816,11 +4816,11 @@ exports[`Accordion should render with logical props overrides 1`] = `
 
 exports[`AccordionGroup different type of children 1`] = `
 <DocumentFragment>
-  .emotion-2 {
+  .emotion-1 {
   margin: 0;
 }
 
-.emotion-3 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4846,33 +4846,33 @@ exports[`AccordionGroup different type of children 1`] = `
   padding-block: 12px;
 }
 
-.emotion-3>:not(:last-of-type) {
+.emotion-2>:not(:last-of-type) {
   margin-right: 8px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3B3B3B;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   background-color: #F1F1F1;
   color: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4880,14 +4880,14 @@ exports[`AccordionGroup different type of children 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: color,background-color;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -4895,21 +4895,21 @@ exports[`AccordionGroup different type of children 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: color,background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 {
+.emotion-3 {
   text-align: start;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4919,7 +4919,7 @@ exports[`AccordionGroup different type of children 1`] = `
   align-self: center;
 }
 
-.emotion-6 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -4929,7 +4929,7 @@ exports[`AccordionGroup different type of children 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4937,91 +4937,91 @@ exports[`AccordionGroup different type of children 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-6.emotion-6 {
+.emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-8 {
+.emotion-7 {
   overflow: hidden;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
+  .emotion-7 {
     transition-property: max-height;
   }
 
-  .emotion-8.nk-accordion-enter {
+  .emotion-7.nk-accordion-enter {
     max-height: 0;
   }
 
-  .emotion-8.nk-accordion-enter-active {
+  .emotion-7.nk-accordion-enter-active {
     max-height: unset;
     transition-property: max-height;
     transition-duration: 200ms;
   }
 
-  .emotion-8.nk-accordion-enter-done {
+  .emotion-7.nk-accordion-enter-done {
     max-height: unset;
   }
 
-  .emotion-8.nk-accordion-exit {
+  .emotion-7.nk-accordion-exit {
     max-height: unset;
   }
 
-  .emotion-8.nk-accordion-exit-active {
+  .emotion-7.nk-accordion-exit-active {
     max-height: 0;
     transition-property: max-height;
     transition-duration: 200ms;
   }
 
-  .emotion-8.nk-accordion-exit-done {
+  .emotion-7.nk-accordion-exit-done {
     max-height: 0;
   }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
+  .emotion-7 {
     transition-property: max-height;
   }
 
-  .emotion-8.nk-accordion-enter {
+  .emotion-7.nk-accordion-enter {
     max-height: 0;
   }
 
-  .emotion-8.nk-accordion-enter-active {
+  .emotion-7.nk-accordion-enter-active {
     max-height: unset;
     transition-property: max-height;
     transition-duration: 0ms;
   }
 
-  .emotion-8.nk-accordion-enter-done {
+  .emotion-7.nk-accordion-enter-done {
     max-height: unset;
   }
 
-  .emotion-8.nk-accordion-exit {
+  .emotion-7.nk-accordion-exit {
     max-height: unset;
   }
 
-  .emotion-8.nk-accordion-exit-active {
+  .emotion-7.nk-accordion-exit-active {
     max-height: 0;
     transition-property: max-height;
     transition-duration: 0ms;
   }
 
-  .emotion-8.nk-accordion-exit-done {
+  .emotion-7.nk-accordion-exit-done {
     max-height: 0;
   }
 }
 
-.emotion-9 {
+.emotion-8 {
   border-style: none none solid none;
   border-color: #ABABAB;
   border-width: 1px;
@@ -5029,33 +5029,31 @@ exports[`AccordionGroup different type of children 1`] = `
   padding-block: 12px;
 }
 
-<div
-    class="emotion-0"
-  >
+<div>
     <div
       class="emotion-0"
     >
       <h3
-        class="emotion-2"
+        class="emotion-1"
       >
         <button
           aria-controls="mock-nk-1-content"
           aria-expanded="true"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="accordion-control"
           id="mock-nk-1-control"
         >
           <div
-            class="emotion-4"
+            class="emotion-3"
           >
             Accordion 1
           </div>
           <div
-            class="emotion-5"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-6 emotion-7"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -5073,13 +5071,13 @@ exports[`AccordionGroup different type of children 1`] = `
         </button>
       </h3>
       <div
-        class="nk-accordion-enter-done emotion-8"
+        class="nk-accordion-enter-done emotion-7"
         data-testid="panel-transition-container"
         style="max-height: 0px;"
       >
         <div
           aria-labelledby="mock-nk-1-control"
-          class="emotion-9"
+          class="emotion-8"
           data-testid="accordion-content"
           id="mock-nk-1-content"
           role="region"
@@ -5092,26 +5090,26 @@ exports[`AccordionGroup different type of children 1`] = `
       class="emotion-0"
     >
       <h3
-        class="emotion-2"
+        class="emotion-1"
       >
         <button
           aria-controls="mock-nk-1-content"
           aria-expanded="true"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="accordion-control"
           id="mock-nk-1-control"
         >
           <div
-            class="emotion-4"
+            class="emotion-3"
           >
             Accordion 2
           </div>
           <div
-            class="emotion-5"
+            class="emotion-4"
           >
             <svg
               aria-hidden="true"
-              class="emotion-6 emotion-7"
+              class="emotion-5 emotion-6"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -5129,13 +5127,13 @@ exports[`AccordionGroup different type of children 1`] = `
         </button>
       </h3>
       <div
-        class="nk-accordion-enter-done emotion-8"
+        class="nk-accordion-enter-done emotion-7"
         data-testid="panel-transition-container"
         style="max-height: 0px;"
       >
         <div
           aria-labelledby="mock-nk-1-control"
-          class="emotion-9"
+          class="emotion-8"
           data-testid="accordion-content"
           id="mock-nk-1-content"
           role="region"
@@ -5145,345 +5143,6 @@ exports[`AccordionGroup different type of children 1`] = `
       </div>
     </div>
     <hr />
-  </div>
-</DocumentFragment>
-`;
-
-exports[`AccordionGroup should render with logical props overrides 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  margin-block: 12px;
-  padding-block: 12px;
-}
-
-.emotion-2 {
-  margin: 0;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  box-sizing: border-box;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #3B3B3B;
-  border-style: none none solid none;
-  border-color: #ABABAB;
-  border-width: 1px;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding-inline: 12px;
-  padding-block: 12px;
-}
-
-.emotion-3>:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.emotion-3 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-3:hover:not(:disabled) {
-  background-color: #F1F1F1;
-  color: #3358CC;
-}
-
-.emotion-3:hover:not(:disabled) svg {
-  fill: #3358CC;
-}
-
-.emotion-3:disabled {
-  background-color: #E2E2E2;
-  color: #ABABAB;
-}
-
-.emotion-3:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-3:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
-    transition-property: color,background-color;
-    transition-duration: 200ms,200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
-    transition-property: color,background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-4 {
-  text-align: start;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.emotion-5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-6 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #3B3B3B;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-6 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-6 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-6.emotion-6 {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-8 {
-  overflow: hidden;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
-    transition-property: max-height;
-  }
-
-  .emotion-8.nk-accordion-enter {
-    max-height: 0;
-  }
-
-  .emotion-8.nk-accordion-enter-active {
-    max-height: unset;
-    transition-property: max-height;
-    transition-duration: 200ms;
-  }
-
-  .emotion-8.nk-accordion-enter-done {
-    max-height: unset;
-  }
-
-  .emotion-8.nk-accordion-exit {
-    max-height: unset;
-  }
-
-  .emotion-8.nk-accordion-exit-active {
-    max-height: 0;
-    transition-property: max-height;
-    transition-duration: 200ms;
-  }
-
-  .emotion-8.nk-accordion-exit-done {
-    max-height: 0;
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
-    transition-property: max-height;
-  }
-
-  .emotion-8.nk-accordion-enter {
-    max-height: 0;
-  }
-
-  .emotion-8.nk-accordion-enter-active {
-    max-height: unset;
-    transition-property: max-height;
-    transition-duration: 0ms;
-  }
-
-  .emotion-8.nk-accordion-enter-done {
-    max-height: unset;
-  }
-
-  .emotion-8.nk-accordion-exit {
-    max-height: unset;
-  }
-
-  .emotion-8.nk-accordion-exit-active {
-    max-height: 0;
-    transition-property: max-height;
-    transition-duration: 0ms;
-  }
-
-  .emotion-8.nk-accordion-exit-done {
-    max-height: 0;
-  }
-}
-
-.emotion-9 {
-  border-style: none none solid none;
-  border-color: #ABABAB;
-  border-width: 1px;
-  padding-inline: 12px;
-  padding-block: 12px;
-}
-
-<div
-    class="emotion-0"
-  >
-    <div
-      class="emotion-1"
-    >
-      <h3
-        class="emotion-2"
-      >
-        <button
-          aria-controls="mock-nk-1-content"
-          aria-expanded="true"
-          class="emotion-3"
-          data-testid="accordion-control"
-          id="mock-nk-1-control"
-        >
-          <div
-            class="emotion-4"
-          >
-            Accordion 1
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-6 emotion-7"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-              />
-            </svg>
-          </div>
-        </button>
-      </h3>
-      <div
-        class="nk-accordion-enter-done emotion-8"
-        data-testid="panel-transition-container"
-        style="max-height: 0px;"
-      >
-        <div
-          aria-labelledby="mock-nk-1-control"
-          class="emotion-9"
-          data-testid="accordion-content"
-          id="mock-nk-1-content"
-          role="region"
-        >
-          Content 1
-        </div>
-      </div>
-    </div>
-    <div
-      class="emotion-1"
-    >
-      <h3
-        class="emotion-2"
-      >
-        <button
-          aria-controls="mock-nk-1-content"
-          aria-expanded="false"
-          class="emotion-3"
-          data-testid="accordion-control"
-          id="mock-nk-1-control"
-        >
-          <div
-            class="emotion-4"
-          >
-            Accordion 2
-          </div>
-          <div
-            class="emotion-5"
-          >
-            <svg
-              aria-hidden="true"
-              class="emotion-6 emotion-7"
-              fill="currentColor"
-              focusable="false"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-              />
-            </svg>
-          </div>
-        </button>
-      </h3>
-      <div
-        class="nk-accordion-exit-done emotion-8"
-        data-testid="panel-transition-container"
-        style="max-height: 0px;"
-      >
-        <div
-          aria-labelledby="mock-nk-1-control"
-          class="emotion-9"
-          data-testid="accordion-content"
-          id="mock-nk-1-content"
-          role="region"
-        >
-          Content 2
-        </div>
-      </div>
-    </div>
   </div>
 </DocumentFragment>
 `;

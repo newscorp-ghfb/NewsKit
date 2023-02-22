@@ -7,7 +7,7 @@ import {
   styled,
 } from '../utils';
 import {logicalProps} from '../utils/logical-properties';
-import {AccordionGroupProps, AccordionProps} from './types';
+import {AccordionProps} from './types';
 
 export const StyledAccordionButton = styled.button<
   Pick<AccordionProps, 'overrides' | 'disabled'>
@@ -67,11 +67,5 @@ export const StyledPanel = styled.div<
 export const StyledAccordionWrapper = styled.div<
   Pick<AccordionProps, 'overrides' | 'expanded'>
 >`
-  ${logicalProps('')}
-`;
-
-export const StyledAccordionGroupWrapper = styled.div<
-  Pick<AccordionGroupProps, 'overrides'>
->`
-  ${logicalProps('')}
+  ${logicalProps('accordion')}
 `;

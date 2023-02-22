@@ -52,5 +52,4 @@ export type AccordionGroupProps = {
   onChange?: (expanded: number[]) => void;
   expandSingle?: boolean;
   children: React.ReactNode;
-  overrides?: LogicalProps;
 } & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'>;

@@ -3,7 +3,6 @@ import {useControlled} from '../utils/hooks';
 import {AccordionGroupProps, AccordionProps} from './types';
 import {hasMatchingDisplayNameWith} from '../utils/component';
 import {Accordion} from './accordion';
-import {StyledAccordionGroupWrapper} from './styled';
 
 const expandedPropToArray = (
   expandedProp: number | number[] | 'all' | undefined,
@@ -48,7 +47,6 @@ export const AccordionGroup = React.forwardRef<
       onChange,
       expanded,
       expandSingle,
-      overrides,
       ...restProps
     },
     ref,
@@ -104,11 +102,7 @@ export const AccordionGroup = React.forwardRef<
     );
 
     return (
-      <StyledAccordionGroupWrapper
-        ref={ref}
-        overrides={overrides}
-        {...restProps}
-      >
+      <div ref={ref} {...restProps}>
         {childrenArray.map((child, index: number) => {
           if (hasMatchingDisplayNameWith(child, Accordion)) {
             return React.cloneElement(
@@ -121,7 +115,7 @@ export const AccordionGroup = React.forwardRef<
           }
           return child;
         })}
-      </StyledAccordionGroupWrapper>
+      </div>
     );
   },
 );
