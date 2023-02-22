@@ -44,7 +44,7 @@ cd newskit
 yarn && yarn dev
 ```
 
-> A few pages on the site use Google Sheets as a simple CMS, if you are contributing to the product you can request these variables from the team. 
+> A few pages on the site use Google Sheets as a simple CMS, if you are contributing to the product you can request these variables from the team.
 
 ## Testing
 
