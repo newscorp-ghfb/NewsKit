@@ -4,6 +4,7 @@ orbs:
   slack: circleci/slack@4.10.1
   aws-cli: circleci/aws-cli@3.1
   github-cli: circleci/github-cli@1.0.4
+  node: circleci/node@5.1.0
 
 slack_notify: &slack_notify
   event: 'fail'
@@ -1092,14 +1093,17 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - aws-cli/install
       - aws-cli/setup:
           role-arn: << parameters.aws_assume_role_arn >>
           profile-name: 'NEWSKIT-OIDC-PROFILE'
           role-session-name: '${CIRCLE_WORKFLOW_ID}-s3-push'
+      - node/install:
+          install-yarn: true
+          node-version: '16.13'
       - run:
           name: Upload PR sites to S3 subfolders
           command: |
+            node --version
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/')
             aws s3 cp public $s3Path_docs --recursive
