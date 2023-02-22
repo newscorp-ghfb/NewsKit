@@ -1,6 +1,5 @@
 module.exports = {
-  name: 'comps',
-  displayName: 'NewsKit Components',
+  displayName: 'Components',
   bail: 1,
   rootDir: './',
   setupFilesAfterEnv: [

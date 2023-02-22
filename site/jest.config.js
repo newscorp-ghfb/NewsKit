@@ -6,7 +6,6 @@ const paths = pathsToModuleNameMapper(compilerOptions.paths, {
 });
 
 module.exports = {
-  name: 'site',
   displayName: 'Site',
   bail: 1,
   rootDir: './',
