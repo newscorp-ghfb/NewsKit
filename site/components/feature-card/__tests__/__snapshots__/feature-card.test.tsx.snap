@@ -1246,7 +1246,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 }
 
 .emotion-12:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1746,7 +1746,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 }
 
 .emotion-12:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -2250,7 +2250,7 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
 }
 
 .emotion-14:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -3421,7 +3421,7 @@ exports[`FeatureCard Renders interactive vertical card with link 1`] = `
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -5289,7 +5289,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 .emotion-8:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
