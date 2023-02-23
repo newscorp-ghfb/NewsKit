@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {Flow, Stack, StackDistribution, StackProps} from '..';
-import {styled, getColorFromTheme} from '../../utils/style';
+import {Stack, StackProps} from '..';
+import {getColorFromTheme, styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
@@ -66,15 +66,6 @@ const Container = ({
     <ContainerInner {...rest}>{children}</ContainerInner>
   </ContainerOuter>
 );
-
-const VariationContainer = styled.div<{
-  hasWidth?: boolean;
-}>`
-  height: 200px;
-  ${({hasWidth}) =>
-    hasWidth ? {maxWidth: '400px', width: '100%'} : {maxWidth: 'auto'}};
-  overflow: hidden;
-`;
 
 const Tag = styled.div`
   box-sizing: border-box;
@@ -615,99 +606,6 @@ export const StoryNestedStacksBothAsListWithSpace = () => (
 StoryNestedStacksBothAsListWithSpace.storyName =
   'Nested stacks both as list with space';
 
-const renderChildren = (wrap: 'wrap' | 'nowrap') => {
-  const children = [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>];
-
-  if (wrap === 'wrap') {
-    return [
-      ...children,
-      <Tag>child 4</Tag>,
-      <Tag>child 5</Tag>,
-      <Tag>child 6</Tag>,
-      <Tag>child 7</Tag>,
-      <Tag>child 8</Tag>,
-      <Tag>child 9</Tag>,
-    ];
-  }
-
-  return children;
-};
-const FlowTypes = [
-  'vertical-left',
-  'vertical-center',
-  'vertical-right',
-  'vertical-stretch',
-  'horizontal-top',
-  'horizontal-center',
-  'horizontal-bottom',
-  'horizontal-stretch',
-];
-
-const StackDistributionTypes = [
-  'flex-start',
-  'flex-end',
-  'center',
-  'space-around',
-  'space-between',
-  'space-evenly',
-];
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const stackDistributionSet: any = () => {
-  const sets = Object.values(['nowrap', 'wrap']).map(wrapType =>
-    FlowTypes.map(flowKey =>
-      StackDistributionTypes.map(stackDistributionKey => ({
-        storyName: `stack distribution set ${stackDistributionKey}, ${flowKey}${
-          wrapType === 'wrap' ? ', wrap' : ''
-        }`,
-
-        parameters: {percy: {skip: wrapType === 'wrap'}}, // TODO: Include all test when snapshots limit increases.
-        storyFn: () => (
-          <>
-            <StorybookHeading>
-              Stack distribution set to {stackDistributionKey} when {flowKey}
-              {wrapType === 'wrap' ? ', wrap' : ''}
-            </StorybookHeading>
-            <Container>
-              <VariationContainer
-                hasWidth={
-                  wrapType === 'wrap' &&
-                  [
-                    'horizontal-top',
-                    'horizontal-center',
-                    'horizontal-bottom',
-                  ].includes(flowKey as string)
-                }
-              >
-                <Stack
-                  flow={flowKey as Flow}
-                  stackDistribution={stackDistributionKey as StackDistribution}
-                  wrap={wrapType as 'wrap' | 'nowrap'}
-                >
-                  {renderChildren(wrapType as 'wrap' | 'nowrap')}
-                </Stack>
-              </VariationContainer>
-            </Container>
-          </>
-        ),
-      })),
-    ),
-  );
-  return sets;
-};
-
-type StoryStackType = {
-  storyName: string;
-  parameters: object;
-  storyFn: () => JSX.Element;
-};
-const stackSets = stackDistributionSet().flat(2) as StoryStackType[];
-
-// From GitHub, why dynamic creating stories is not possible anymore
-// It's very important for us that CSF be statically analyzable, so we're not planning on adding a dynamic story API
-export const StoryAllInOne = () => <>{stackSets.map(c => c.storyFn())}</>;
-StoryAllInOne.storyName = 'Variations';
-
 export const StoryResponsive = () => (
   <Container>
     <Stack
@@ -756,11 +654,26 @@ export const StoryStackWithLogicalProps = () => (
 );
 StoryStackWithLogicalProps.storyName = 'Stack with logical props';
 
-export const StoryStackWithArgs = ({wrap, ...args}: StackProps) => (
-  <Stack {...args} wrap={wrap}>
-    {renderChildren(wrap as 'wrap' | 'nowrap')}
-  </Stack>
-);
+export const StoryStackWithArgs = ({wrap, ...args}: StackProps) => {
+  const children = [<Tag>child 1</Tag>, <Tag>child 2</Tag>, <Tag>child 3</Tag>];
+  return (
+    <Stack {...args} wrap={wrap}>
+      {wrap === 'wrap' ? (
+        [
+          ...children,
+          <Tag>child 4</Tag>,
+          <Tag>child 5</Tag>,
+          <Tag>child 6</Tag>,
+          <Tag>child 7</Tag>,
+          <Tag>child 8</Tag>,
+          <Tag>child 9</Tag>,
+        ]
+      ) : (
+        <>{children}</>
+      )}
+    </Stack>
+  );
+};
 StoryStackWithArgs.storyName = 'Stack with args';
 
 StoryStackWithArgs.args = {
