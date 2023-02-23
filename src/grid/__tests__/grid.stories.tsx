@@ -1,21 +1,37 @@
 import * as React from 'react';
-import {styled} from '../../utils/style';
+import {
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+  styled,
+} from '../../utils/style';
 import {Grid, Cell} from '..';
+import {GridLayout} from '../../grid-layout';
 
 const BorderedBox = styled.div`
-  border: solid 1px red;
+  border: solid 1px;
+  ${getColorCssFromTheme('borderColor', 'interfaceBrand010')};
 `;
 
-const Content = styled.div`
-  background: silver;
+const StyledGridLayout = styled(GridLayout)`
   text-align: center;
-  padding: 20px 10px;
   box-sizing: border-box;
-  border: solid 1px black;
+  ${getColorCssFromTheme('background', 'blue010')};
+  ${getColorCssFromTheme('color', 'inkBase')};
+  ${getTypographyPresetFromTheme('utilityLabel030')};
 `;
+
+// GridLayout is used only for centering the content verticaly
+const Content = ({children}: {children: React.ReactNode}) => (
+  <StyledGridLayout
+    overrides={{height: '100px', paddingBlock: '5px'}}
+    alignItems="center"
+  >
+    {children}
+  </StyledGridLayout>
+);
 
 export default {
-  title: 'Components/grid',
+  title: 'Components/Grid',
   component: () => 'None',
 };
 
@@ -64,82 +80,44 @@ export const StoryGridDefault = () => (
     <BorderedBox>
       <Grid>
         <Cell smHidden md={2}>
-          <Content>
-            1, 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </Content>
+          <Content>1, 2</Content>
         </Cell>
         <Cell sm={4} md={1}>
-          <Content>3 - Lorem ipsum dolor sit amet.</Content>
+          <Content>3 </Content>
         </Cell>
         <Cell sm={2} md={3}>
-          <Content>
-            4, 5, 6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </Content>
+          <Content>4, 5, 6</Content>
         </Cell>
         <Cell sm={2} md={3}>
-          <Content>
-            7, 8, 9 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </Content>
+          <Content>7, 8, 9</Content>
         </Cell>
         <Cell sm={4} md={1}>
-          <Content>10 - Lorem ipsum dolor sit amet.</Content>
+          <Content>10</Content>
         </Cell>
         <Cell smHidden md={2}>
-          <Content>
-            11, 12 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </Content>
+          <Content>11, 12</Content>
         </Cell>
       </Grid>
     </BorderedBox>
     <BorderedBox>
       <Grid>
         <Cell xs={12} sm={6} md={3} lg={2}>
-          <Content>
-            1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>1</Content>
         </Cell>
         <Cell xs={12} sm={6} md={3} lg={2}>
-          <Content>
-            2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>2</Content>
         </Cell>
         <Cell xs={12} sm={6} md={3} lg={2}>
-          <Content>
-            3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>3</Content>
         </Cell>
         <Cell xs={12} sm={6} md={3} lg={2}>
-          <Content>
-            4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>4</Content>
         </Cell>
         <Cell xs={12} sm={6} md={3} lg={2}>
-          <Content>
-            5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>5</Content>
         </Cell>
         <Cell xs={12} sm={6} md={3} lg={2}>
-          <Content>
-            6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>6</Content>
         </Cell>
       </Grid>
     </BorderedBox>
@@ -152,28 +130,13 @@ export const StoryGridDefault = () => (
         lgColumnGutter="space020"
       >
         <Cell xs={4}>
-          <Content>
-            1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>1</Content>
         </Cell>
         <Cell xs={4}>
-          <Content>
-            1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>2</Content>
         </Cell>
         <Cell xs={4}>
-          <Content>
-            1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc nisl, lobortis ac volutpat vitae, tempus nec diam. Morbi
-            ornare, magna a dignissim dignissim, lectus lacus hendrerit lectus,
-            quis accumsan est nulla eget lacus.
-          </Content>
+          <Content>3</Content>
         </Cell>
       </Grid>
     </BorderedBox>
@@ -218,7 +181,7 @@ export const StoryGridDefault = () => (
         </Cell>
         <Cell xs={4}>
           <Content>
-            <Grid xsColumnGutter="space030">
+            <Grid xsColumnGutter="space020">
               <Cell xs={3}>
                 <BorderedBox>inner 1</BorderedBox>
               </Cell>
@@ -240,16 +203,16 @@ export const StoryGridDefault = () => (
     <BorderedBox>
       <Grid>
         <Cell xs={3} xsOrder={4} smOrder={3} mdOrder={2} lgOrder={1}>
-          <Content>1 1 1 1 1 1 1 1 1 1</Content>
+          <Content>1</Content>
         </Cell>
         <Cell xs={3} xsOrder={1} smOrder={4} mdOrder={3} lgOrder={2}>
-          <Content>2 2 2 2 2 2 2 2 2 2</Content>
+          <Content>2</Content>
         </Cell>
         <Cell xs={3} xsOrder={2} smOrder={1} mdOrder={4} lgOrder={3}>
-          <Content>3 3 3 3 3 3 3 3 3 3</Content>
+          <Content>3</Content>
         </Cell>
         <Cell xs={3} xsOrder={3} smOrder={2} mdOrder={1} lgOrder={4}>
-          <Content>4 4 4 4 4 4 4 4 4 4</Content>
+          <Content>4</Content>
         </Cell>
       </Grid>
     </BorderedBox>
@@ -329,4 +292,14 @@ export const StoryGridDefault = () => (
     </BorderedBox>
   </>
 );
-StoryGridDefault.storyName = 'grid';
+StoryGridDefault.storyName = 'Default';
+StoryGridDefault.parameters = {
+  previewTabs: {
+    'storybook/canvas/panel': {index: -1},
+    'storybook/docs/panel': {hidden: true},
+  },
+  viewMode: 'story',
+  docs: {
+    page: null,
+  },
+};
