@@ -83,7 +83,12 @@ StoryTextBlockStylingOverrides.storyName = 'Styling overrides';
 export const StoryTextBlockOverrides = () => (
   <StorybookPage columns={TEXT_BLOCK_COLUMNS}>
     <StorybookCase title="Typography preset override">
-      <TextBlock typographyPreset="editorialParagraph020">{BODY}</TextBlock>
+      <TextBlock
+        stylePreset="inkContrast"
+        typographyPreset="editorialParagraph020"
+      >
+        {BODY}
+      </TextBlock>
     </StorybookCase>
   </StorybookPage>
 );
