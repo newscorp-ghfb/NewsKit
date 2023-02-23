@@ -2,7 +2,7 @@ import * as React from 'react';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
-import {Form, FormInput, FormInputCheckbox, FormRef} from '..';
+import {Form, FormInput, FormInputCheckbox} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -284,7 +284,6 @@ StoryFormSizes.storyName = 'form-sizes';
 
 export const StoryFormWithPhoneInput = () => {
   const FormWithPhoneInput: React.FC = () => {
-    const formRef = React.useRef<FormRef>(null);
     const [value, setValue] = React.useState();
     return (
       <Block>
@@ -293,7 +292,7 @@ export const StoryFormWithPhoneInput = () => {
           stackDistribution="space-between"
           spaceInline="space030"
         >
-          <Form ref={formRef} onSubmit={onSubmit} validationMode="onBlur">
+          <Form onSubmit={onSubmit} validationMode="onBlur">
             <Block spaceStack="space050">
               <TextInput
                 size="small"
@@ -311,14 +310,12 @@ export const StoryFormWithPhoneInput = () => {
               />
             </Block>
             <Block>
-              {}
               <StorybookLabel htmlFor="phone-number">
                 Phone number
               </StorybookLabel>
               <PhoneInputWithCountry
                 placeholder="Enter phone number"
                 name="phonenumber"
-                control={formRef.current?.control}
                 value={value}
                 onChange={setValue}
                 id="phone-number"
