@@ -125,7 +125,12 @@ export const StoryDrawerDefault = () =>
         <Button onClick={open} data-testid="drawer-open-button">
           Open Drawer
         </Button>
-        <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+        <Block
+          as="span"
+          paddingInline="space030"
+          paddingBlock="space030"
+          onChange={onChangeValue}
+        >
           <StorybookLabel htmlFor="drawer_top">
             top:
             <input type="radio" value="top" id="drawer_top" name="placement" />
@@ -189,7 +194,12 @@ export const StoryInline = () =>
         <Button onClick={toggle} data-testid="drawer-open-button">
           Open Drawer
         </Button>
-        <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+        <Block
+          as="span"
+          paddingInline="space030"
+          paddingBlock="space030"
+          onChange={onChangeValue}
+        >
           <StorybookLabel htmlFor="drawer-inline_top">
             top:
             <input
@@ -733,7 +743,12 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
         <Button onClick={open} data-testid="drawer-open-button">
           Open Drawer
         </Button>
-        <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+        <Block
+          as="span"
+          paddingInline="space030"
+          paddingBlock="space030"
+          onChange={onChangeValue}
+        >
           <StorybookLabel htmlFor="drawer_top_logical">
             top:
             <input

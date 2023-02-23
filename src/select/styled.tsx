@@ -1,4 +1,4 @@
-import {logicalPaddingProps, logicalProps} from '../utils/logical-properties';
+import {logicalProps} from '../utils/logical-properties';
 import {Theme} from '../theme';
 
 import {
@@ -72,14 +72,10 @@ export const StyledSelectButton = styled.button<{
     return 'pointer';
   }};
 
-  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
-  ${({$size}) =>
-    getResponsiveSpace(`padding`, `select.${$size}.button`, '', 'spaceInset')}
-
   ${({$size}) =>
     getResponsiveSize(`minWidth`, `select.${$size}.button`, '', 'minWidth')}
 
-  ${({$size}) => logicalPaddingProps(`select.${$size}.button`)};
+  ${({$size}) => logicalProps(`select.${$size}.button`)};
 `;
 
 export const StyledButtonContents = styled.div<{
@@ -121,15 +117,6 @@ export const StyledSelectPanel = styled.div<{
   // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
   ${({$size}) =>
     getResponsiveSpace(`marginTop`, `select.${$size}.panel`, '', 'spaceStack')}
-
-  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
-  ${({$size}) =>
-    getResponsiveSpace(
-      space => ({paddingTop: space, paddingBottom: space}),
-      `select.${$size}.panel`,
-      '',
-      'spaceInset',
-    )}
 
   ${({$size}) => logicalProps(`select.${$size}.panel`)};
 
@@ -180,11 +167,7 @@ export const StyledOption = styled.div<{
 
   ${({$size}) => getTypographyPreset(`selectOption.${$size}`, '')}
 
-  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
-  ${({$size}) =>
-    getResponsiveSpace(`padding`, `selectOption.${$size}`, '', 'spaceInset')}
-
-  ${logicalProps()};
+  ${({$size}) => logicalProps(`selectOption.${$size}`)};
 
   ${({$size}) =>
     getResponsiveSize('minHeight', `selectOption.${$size}`, '', 'minHeight')}

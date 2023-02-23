@@ -159,7 +159,8 @@ exports[`Fieldset renders fieldset with large form inputs 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-3::before {
@@ -882,12 +883,13 @@ exports[`Fieldset renders fieldset with medium form inputs 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -1512,7 +1514,7 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  min-height: 32px;
+  min-height: 40px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -1615,7 +1617,8 @@ exports[`Fieldset renders fieldset with small form inputs 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-3::before {
@@ -2594,7 +2597,8 @@ exports[`Fieldset should render with overrides 1`] = `
   border-color: #6454E3;
   border-width: 1px;
   border-style: solid;
-  padding: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
 }
 
 .emotion-1 {

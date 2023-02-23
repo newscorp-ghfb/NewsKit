@@ -342,7 +342,9 @@ export const StoryNoHeaderContent = () =>
         aria-label="drawer with no header"
         open
         onDismiss={() => {}}
-        overrides={{header: {spaceInset: 'space000'}}}
+        overrides={{
+          header: {paddingBlock: 'space000', paddingInline: 'space000'},
+        }}
       >
         <StorybookH3>List title</StorybookH3>
         <StorybookParah>List description goes here</StorybookParah>
@@ -411,15 +413,18 @@ export const StoryWithOverrides = () =>
             minSize: '200px',
           },
           header: {
-            spaceInset: 'spaceInset000',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
             stylePreset: 'drawerHeaderCustom',
           },
           content: {
-            spaceInset: 'spaceInset000',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
           },
           closeButton: {
             stylePreset: 'drawerCloseButtonCustom',
-            spaceInset: 'spaceInset000',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
           },
         }}
       >
@@ -451,15 +456,18 @@ export const StoryDrawerLogicalPropsOverrides = () =>
             paddingInline: 'space050',
           },
           header: {
-            spaceInset: 'spaceInset050',
+            paddingInline: 'space050',
+            paddingBlock: 'space050',
             stylePreset: 'drawerHeaderCustom',
           },
           content: {
-            spaceInset: 'spaceInset050',
+            paddingInline: 'space050',
+            paddingBlock: 'space050',
           },
           closeButton: {
             stylePreset: 'drawerCloseButtonCustom',
-            spaceInset: 'spaceInset020',
+            paddingInline: 'space020',
+            paddingBlock: 'space020',
           },
         }}
       >

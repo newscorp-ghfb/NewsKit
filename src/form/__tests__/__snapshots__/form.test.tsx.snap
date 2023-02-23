@@ -152,9 +152,10 @@ exports[`Form exposes the expected functions from useForm hook 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -527,9 +528,10 @@ exports[`Form keeps validation when revalidation mode is onBlur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -954,9 +956,10 @@ exports[`Form renders with error and with submit validation and revalidation mod
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1489,9 +1492,10 @@ exports[`Form renders with error on blur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1911,9 +1915,10 @@ exports[`Form renders with error on submit 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2446,9 +2451,10 @@ exports[`Form renders with error with 2 onBlur 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3247,9 +3253,10 @@ exports[`Form renders with nested inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3597,9 +3604,10 @@ exports[`Form renders with onBlur validation 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3938,12 +3946,13 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -4101,7 +4110,8 @@ exports[`FormInput fireEvent with onBlur valid state 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-13 {
@@ -5410,12 +5420,13 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -5573,7 +5584,8 @@ exports[`FormInput fireEvent with onChange when value is invalid 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-13 {
@@ -6889,12 +6901,13 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -7258,7 +7271,8 @@ exports[`FormInput renders FormInput Correctly 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -8693,12 +8707,13 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3::before {
@@ -8939,9 +8954,10 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9365,12 +9381,13 @@ exports[`FormInput renders with nested inputs 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -9716,12 +9733,13 @@ exports[`FormInput renders with nested inputs 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -9847,9 +9865,10 @@ exports[`FormInput renders with nested inputs 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

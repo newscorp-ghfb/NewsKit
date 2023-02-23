@@ -1,7 +1,9 @@
+import React from 'react';
 import {AssistiveText} from '../assistive-text';
 import {AssistiveTextProps} from '..';
 import {TextFieldSize} from '../../text-field';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
+import {IconOutlinedInfo} from '../../icons';
 
 describe('Assistive Text', () => {
   ['small', 'medium', 'large'].forEach(size => {
@@ -46,9 +48,26 @@ describe('Assistive Text', () => {
     expect(fragment).toMatchSnapshot();
   });
   test('should render logical props overrides', () => {
+    const ENHANCER = (
+      <IconOutlinedInfo
+        overrides={{stylePreset: 'inkBrand010', size: 'iconSize020'}}
+      />
+    );
+
     const props: AssistiveTextProps = {
       children: 'Assistive Text',
-      overrides: {paddingBlock: '30px', marginBlock: '30px'},
+      startEnhancer: ENHANCER,
+      endEnhancer: ENHANCER,
+      overrides: {
+        paddingBlock: '30px',
+        marginBlock: '30px',
+        startEnhancer: {
+          spaceInline: 'space0040',
+        },
+        endEnhancer: {
+          spaceInline: 'space040',
+        },
+      },
     };
 
     const fragment = renderToFragmentWithTheme(AssistiveText, props);

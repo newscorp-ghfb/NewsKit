@@ -998,7 +998,8 @@ export const scenarios: Array<ComponentData> = [
             </Button>
             <Block
               as="span"
-              spaceInset="space030"
+              paddingBlock="space030"
+              paddingInline="space030"
               onChange={onChangeValue}
               stylePreset="inkSubtle"
             >

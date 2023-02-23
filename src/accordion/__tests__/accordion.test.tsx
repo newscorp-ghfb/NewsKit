@@ -245,8 +245,8 @@ describe('Accordion', () => {
             stylePreset: 'accordionHeaderCustom',
             typographyPreset: 'utilityButton020',
             spaceInline: 'space030',
-            paddingBlock: 'spaceInset040',
-            paddingInline: 'spaceInset040',
+            paddingBlock: 'space040',
+            paddingInline: 'space040',
             label: {
               typographyPreset: 'utilityButton020',
             },
@@ -347,6 +347,26 @@ describe('Accordion', () => {
         event: 'other event data',
       },
     });
+  });
+  test('should render with logical props overrides', () => {
+    const props = {
+      ...defaultProps,
+      expanded: true,
+      overrides: {
+        paddingBlock: '12px',
+        marginBlock: '12px',
+        header: {
+          paddingBlock: '12px',
+          marginBlock: '12px',
+        },
+        panel: {
+          paddingBlock: '12px',
+          marginBlock: '12px',
+        },
+      },
+    };
+    const fragment = renderToFragmentWithTheme(Accordion, props);
+    expect(fragment).toMatchSnapshot();
   });
 });
 

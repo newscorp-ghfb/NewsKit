@@ -55,7 +55,6 @@ const ThemelessCaption = React.forwardRef<HTMLDivElement, CaptionProps>(
   },
 );
 
-// Caption will be rebuilt in https://nidigitalsolutions.jira.com/browse/PPDSC-2091
 export const Caption = withOwnTheme(ThemelessCaption)({
   defaults,
 });

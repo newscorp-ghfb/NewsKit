@@ -17,7 +17,6 @@ const ThemelessIconButton = React.forwardRef<
     ...theme.componentDefaults.iconButton[size],
     ...filterOutFalsyProperties(overrides),
   };
-
   return (
     <Button {...props} size={size} ref={ref} overrides={iconButtonSettings} />
   );
