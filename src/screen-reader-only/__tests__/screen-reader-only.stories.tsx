@@ -10,10 +10,10 @@ export const StorySreenReaderOnlyDefault = () => (
   <StorybookPage>
     <StorybookCase>
       <LinkStandalone href="https://google.com" aria-describedby={srOnly}>
-        Google
+        NewsKit
       </LinkStandalone>
       <ScreenReaderOnly id={srOnly}>
-        The best known search engine
+        An open source design system built by News UK, for everyone
       </ScreenReaderOnly>
     </StorybookCase>
   </StorybookPage>
