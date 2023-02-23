@@ -1098,8 +1098,8 @@ jobs:
           profile-name: 'NEWSKIT-OIDC-PROFILE'
           role-session-name: '${CIRCLE_WORKFLOW_ID}-s3-push'
       - node/install:
-        install-yarn: false
-        node-version: '16.13'
+          install-yarn: false
+          node-version: '16.13'
       - run:
           name: Upload PR sites to S3 subfolders
           command: |
