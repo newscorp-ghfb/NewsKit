@@ -1093,13 +1093,13 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - node/install:
+        install-yarn: true
+        node-version: '16.13'
       - aws-cli/setup:
           role-arn: << parameters.aws_assume_role_arn >>
           profile-name: 'NEWSKIT-OIDC-PROFILE'
           role-session-name: '${CIRCLE_WORKFLOW_ID}-s3-push'
-      - node/install:
-          install-yarn: true
-          node-version: '16.13'
       - run:
           name: Upload PR sites to S3 subfolders
           command: |
@@ -1485,11 +1485,11 @@ workflows:
           requires:
             - init_aws
       - deploy_terraform_oidc:
-          name: validate_deploy_terraform_s3_pr
+          name: deploy_terraform_s3_pr
           package: s3/dev-newskit
           context: ncu-newskit-site-pr
           apply: true
-          tf_env: true
+          tf_env: false
           environment: pr
           requires:
             - init_aws
@@ -1529,7 +1529,7 @@ workflows:
           name: deploy_to_s3_pr
           context: ncu-newskit-site-pr
           requires:
-            - validate_deploy_terraform_s3_pr
+            - deploy_terraform_s3_pr
             - build_docs_pr
             - build_storybook
       - post_pr_env_url_to_github_pr:
@@ -1540,7 +1540,7 @@ workflows:
       - validate_terraform:
           name: validate_terraform
           requires:
-            - validate_deploy_terraform_s3_pr
+            - deploy_terraform_s3_pr
             - validate_deploy_terraform_s3_dev
             - validate_deploy_terraform_s3_staging
             - validate_deploy_terraform_s3_prod
