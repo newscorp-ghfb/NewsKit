@@ -15,7 +15,7 @@ const BorderedBox = styled.div`
 const StyledGridLayout = styled(GridLayout)`
   text-align: center;
   box-sizing: border-box;
-  ${getColorCssFromTheme('background', 'blue010')};
+  ${getColorCssFromTheme('background', 'interactivePrimary010')};
   ${getColorCssFromTheme('color', 'inkBase')};
   ${getTypographyPresetFromTheme('utilityLabel030')};
 `;
