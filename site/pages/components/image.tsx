@@ -10,6 +10,10 @@ import {UsageKind} from '../../components/usage-card';
 import {IconFilledCircle} from '../../components/icons';
 import {InlineCode} from '../../components/markdown-elements';
 import {ContentText} from '../../components/text-section/content-text';
+import {
+  logicalMarginOverrideProps,
+  logicalPaddingOverrideProps,
+} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -22,7 +26,7 @@ const infoIcon = (
 );
 
 const ImageComponent = (layoutProps: LayoutProps) => (
-  <ComponentPageTemplate
+  <ComponentPageTemplate<typeof Image>
     headTags={{
       title: 'Image',
       description:
@@ -74,16 +78,16 @@ const ImageComponent = (layoutProps: LayoutProps) => (
             propName: 'height',
             value: '200',
           },
-          {
-            name: 'max height',
-            propName: 'maxHeight',
-            value: '200',
-          },
-          {
-            name: 'max width',
-            propName: 'maxWidth',
-            value: '200',
-          },
+          // {
+          //   name: 'max height',
+          //   propName: 'maxHeight',
+          //   value: '200',
+          // },
+          // {
+          //   name: 'max width',
+          //   propName: 'maxWidth',
+          //   value: '200',
+          // },
           {
             name: 'Loading Aspect Ratio',
             propName: 'loadingAspectRatio',
@@ -129,8 +133,7 @@ const ImageComponent = (layoutProps: LayoutProps) => (
               },
             ],
           },
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ] as any,
+        ],
       },
     }}
     anatomy={{
@@ -496,12 +499,8 @@ const ImageComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the default placeholder icon.',
             },
-            {
-              attribute: 'logicalProps',
-              type: 'MQ<string>',
-              description:
-                'Can take one space token to specify the logical inline start and end padding of the container. Can be used on breakpoints.',
-            },
+            ...logicalPaddingOverrideProps,
+            ...logicalMarginOverrideProps,
           ],
           overridesFooter: (
             <>
