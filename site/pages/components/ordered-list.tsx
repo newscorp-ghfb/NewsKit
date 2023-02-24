@@ -300,7 +300,7 @@ const OrderedListComponent = (layoutProps: LayoutProps) => (
               Ordered lists are not keyboard operable unless the list items
               themselves are operable e.g. with{' '}
               <Link
-                href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2298-newskit-homepage-update-whats-new-section/components/link/"
+                href="https://newskit.co.uk/components/link/"
                 target="_blank"
               >
                 links
