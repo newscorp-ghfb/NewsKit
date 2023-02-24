@@ -118,7 +118,7 @@ StoryScrollNoGradient.storyName = 'No gradient';
 export const StoryScrollControls = () => (
   <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
     <StorybookCase title="Horizontal">
-      <Container>
+      <Container data-testid="horizontal-scroll-component">
         <Scroll controls="static">
           <GridLayout autoFlow="column" columns="auto">
             {tags}
@@ -127,7 +127,7 @@ export const StoryScrollControls = () => (
       </Container>
     </StorybookCase>
     <StorybookCase title="Vertical">
-      <Container>
+      <Container data-testid="vertical-scroll-component">
         <Scroll vertical controls="static">
           <GridLayout autoFlow="row" justifyContent="start">
             {tags}
