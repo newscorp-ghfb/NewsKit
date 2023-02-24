@@ -1,132 +1,69 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {P, Sub, Sup} from '../index';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {getColorCssFromTheme, styled} from '../../utils/style';
 
 const paragraphCustomThemeObject: CreateThemeArgs = {
-  name: 'my-custom-paragraph-theme',
+  name: 'custom-paragraph-theme',
   overrides: {
     stylePresets: {
-      paragraphCustom: {
-        base: {
-          color: '{{colors.blue060}}',
-        },
-      },
-      dropCapCustom: {
-        base: {
-          color: '{{colors.blue060}}',
-        },
-      },
+      paragraphCustom: {base: {color: '{{colors.inkBrand010}}'}},
+      dropCapCustom: {base: {color: '{{colors.inkBrand010}}'}},
     },
   },
 };
 
-const bodyString =
-  'Telling the stories that matter, seeding ideas and stirring emotion. Capturing moments, meaning and magic. Making sense of the world. On the shoulders of giants, in the thick of it, behind the scenes and fighting the good fight. Long form and rapid-fire, pragmatic and poetic, comical and critical.';
+const BODY =
+  'NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development.';
 
-export const StoryParagraph = () => (
-  <>
-    <StorybookHeading>Paragraph</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <P>{bodyString}</P>
-    <br />
-    <StorybookSubHeading>with drop cap</StorybookSubHeading>
-    <P dropCap>
-      This being Black History Month, last week was Politicians In Search Of An
-      Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn
-      had their own announcement, each seemingly benign and right-on, each
-      actually destructive and wrong-headed. This being Black History Month,
-      last week was Politicians In Search Of An Eye-Catching Race-Related Policy
-      Week.
-    </P>
-    <br />
-    <StorybookSubHeading>
-      with drop cap and multiple children
-    </StorybookSubHeading>
-    <P dropCap>
-      This being <strong>Black History Month</strong>, last week was Politicians
-      In Search Of An Eye-Catching Race-Related Policy Week. Both Theresa May
-      and <strong>Jeremy Corbyn</strong> had their own announcement, each
-      seemingly benign and right-on, each actually destructive and wrong-headed.
-      This being Black History Month, last week was
-      <i>Politicians In Search Of An Eye-Catching Race-Related Policy Week</i>.
-    </P>
-    <br />
-    <StorybookSubHeading>
-      with logical props applied to drop cap (overrides)
-    </StorybookSubHeading>
-    <P
-      overrides={{
-        dropCap: {
-          marginBlock: 'space030',
-          marginInline: 'space030',
-          paddingBlock: 'space030',
-          paddingInline: 'space030',
-        },
-      }}
-      dropCap
-    >
-      This being Black History Month, last week was Politicians In Search Of An
-      Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn
-      had their own announcement, each seemingly benign and right-on, each
-      actually destructive and wrong-headed. This being Black History Month,
-      last week was Politicians In Search Of An Eye-Catching Race-Related Policy
-      Week.
-    </P>
-    <br />
-    <br />
-    <StorybookSubHeading>with Sup and Sub elements</StorybookSubHeading>
-    <P>
-      Paragraph component containing a <Sub>subscript element</Sub> and a{' '}
-      <Sup>superscript element</Sup>
-    </P>
-  </>
+const MarginOverridesWrapper = styled.div`
+  border: 1px dashed;
+  ${getColorCssFromTheme('borderColor', 'red060')}
+`;
+
+export const StoryParagraphDefault = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <P>{BODY}</P>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryParagraph.storyName = 'paragraph';
+StoryParagraphDefault.storyName = 'Default';
 
-export const StoryParagraphWithOverrides = () => (
-  <>
-    <StorybookHeading>Paragraph with overrides</StorybookHeading>
-    <StorybookSubHeading>on paragraph</StorybookSubHeading>
-    <br />
-    <P
-      overrides={{
-        stylePreset: 'paragraphCustom',
-        typographyPreset: 'editorialHeadline020',
-      }}
-    >
-      This being Black History Month, last week was Politicians In Search Of An
-      Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn
-      had their own announcement, each seemingly benign and right-on, each
-      actually destructive and wrong-headed.
-    </P>
-    <StorybookSubHeading>on drop cap</StorybookSubHeading>
-    <br />
-    <P
-      dropCap
-      overrides={{
-        dropCap: {
-          stylePreset: 'dropCapCustom',
-          typographyPreset: 'editorialHeadline070',
-          space: 'space030',
-        },
-      }}
-    >
-      This being Black History Month, last week was Politicians In Search Of An
-      Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy Corbyn
-      had their own announcement, each seemingly benign and right-on, each
-      actually destructive and wrong-headed.
-    </P>
-  </>
+export const StoryParagraphDropCap = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase title="Drop cap">
+      <P dropCap>{BODY}</P>
+    </StorybookCase>
+    <StorybookCase title="Drop cap and multiple children">
+      <P dropCap>
+        NewsKit provides <strong>components, guidelines and standards</strong>{' '}
+        to enable digital product teams to create high-quality, consistent
+        products quickly. NewsKit is built on modular design principles and
+        backed by{' '}
+        <strong>best practice guidance for design and development</strong>.
+      </P>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryParagraphWithOverrides.storyName = 'paragraph-with-overrides';
+StoryParagraphDropCap.storyName = 'Drop cap';
 
-export const StoryParagraphWithLogicalProps = () => {
+export const StoryParagraphSubScriptAndSuperScript = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase title="Sub and sup elements">
+      <P>
+        NewsKit provides <Sub>components,</Sub> guidelines{' '}
+        <Sup>and standards.</Sup>
+      </P>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryParagraphSubScriptAndSuperScript.storyName = 'Subscript and superscript';
+
+export const StoryParagraphLogicalProps = () => {
   const logicalPropsOverrides = {
     marginBlock: 'space060',
     marginInline: 'space080',
@@ -135,44 +72,59 @@ export const StoryParagraphWithLogicalProps = () => {
   };
 
   return (
-    <>
-      <StorybookHeading>Paragraph with logical props</StorybookHeading>
-      <StorybookSubHeading>on paragraph</StorybookSubHeading>
-      <br />
-      <P overrides={logicalPropsOverrides}>
-        This being Black History Month, last week was Politicians In Search Of
-        An Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy
-        Corbyn had their own announcement, each seemingly benign and right-on,
-        each actually destructive and wrong-headed.
-      </P>
-      <StorybookSubHeading>on drop cap</StorybookSubHeading>
-      <br />
-      <P dropCap overrides={logicalPropsOverrides}>
-        This being Black History Month, last week was Politicians In Search Of
-        An Eye-Catching Race-Related Policy Week. Both Theresa May and Jeremy
-        Corbyn had their own announcement, each seemingly benign and right-on,
-        each actually destructive and wrong-headed.
-      </P>
-      <StorybookSubHeading>on Sub and Sup elements</StorybookSubHeading>
-      <br />
-      <P overrides={logicalPropsOverrides}>
-        Paragraph component containing a <Sub>subscript element</Sub> and a{' '}
-        <Sup>superscript element</Sup>
-      </P>
-    </>
+    <StorybookPage columns="1fr">
+      <StorybookCase title="Logical props on paragraph">
+        <MarginOverridesWrapper>
+          <P overrides={logicalPropsOverrides}>{BODY}</P>
+        </MarginOverridesWrapper>
+      </StorybookCase>
+      <StorybookCase title="Logical props drop cap">
+        <MarginOverridesWrapper>
+          <P dropCap overrides={logicalPropsOverrides}>
+            {BODY}
+          </P>
+        </MarginOverridesWrapper>
+      </StorybookCase>
+      <StorybookCase title="Drop cap and multiple children">
+        <MarginOverridesWrapper>
+          <P overrides={logicalPropsOverrides}>
+            NewsKit provides <Sub>components,</Sub> guidelines{' '}
+            <Sup>and standards.</Sup>
+          </P>
+        </MarginOverridesWrapper>
+      </StorybookCase>
+    </StorybookPage>
   );
 };
-StoryParagraphWithLogicalProps.storyName = 'paragraph-with-logical-props';
+StoryParagraphLogicalProps.storyName = 'Logical props';
+
+export const StoryParagraphStylingOverrides = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase title="Styling overrides on paragraph">
+      <P overrides={{stylePreset: 'paragraphCustom'}}>{BODY}</P>
+    </StorybookCase>
+    <StorybookCase title="Styling overrides on drop cap">
+      <P dropCap overrides={{dropCap: {stylePreset: 'dropCapCustom'}}}>
+        {BODY}
+      </P>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryParagraphStylingOverrides.storyName = 'Styling overrides';
 
 export default {
-  title: 'Components/typography/paragraph',
-  component: () => 'None',
+  title: 'Components/Paragraph',
+  component: () => P,
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           paragraphCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
