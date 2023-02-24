@@ -78,16 +78,6 @@ const ImageComponent = (layoutProps: LayoutProps) => (
             propName: 'height',
             value: '200',
           },
-          // {
-          //   name: 'max height',
-          //   propName: 'maxHeight',
-          //   value: '200',
-          // },
-          // {
-          //   name: 'max width',
-          //   propName: 'maxWidth',
-          //   value: '200',
-          // },
           {
             name: 'Loading Aspect Ratio',
             propName: 'loadingAspectRatio',
