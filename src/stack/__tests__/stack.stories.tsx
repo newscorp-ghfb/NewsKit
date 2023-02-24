@@ -71,6 +71,10 @@ const Container = ({
   </ContainerOuter>
 );
 
+const Text = styled.div`
+  ${getColorCssFromTheme('color', 'inkBase')};
+`;
+
 const Tag = styled.div`
   box-sizing: border-box;
   min-height: ${TagHeight}px;
@@ -161,14 +165,14 @@ export const StoryStackVerticalWithSiblings = () => (
         paddingBlock="space020"
         paddingInline="space020"
       >
-        Sibling 1
+        <Text>Sibling 1</Text>
       </TextBlock>
       <TextBlock
         typographyPreset="utilityLabel020"
         paddingBlock="space020"
         paddingInline="space020"
       >
-        Sibling 2
+        <Text>Sibling 2</Text>
       </TextBlock>
     </Block>
     <Stack flow="vertical-left" stackDistribution="space-between" height="auto">
