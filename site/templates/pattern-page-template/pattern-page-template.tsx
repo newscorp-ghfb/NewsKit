@@ -26,7 +26,7 @@ export const PatternPageTemplate: React.FC<PatternPageTemplateProps> = ({
       {({themeMode}) => (
         <>
           <ThemeProvider
-            exposeCSSVariables
+            exposeCssVariables
             theme={
               themeMode === 'light' ? patternsThemeLight : patternsThemeDark
             }

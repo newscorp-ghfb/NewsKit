@@ -55,7 +55,7 @@ const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     {({themeMode}) => (
       <ThemeProvider
-        exposeCSSVariables
+        exposeCssVariables
         theme={themeMode === 'light' ? patternsThemeLight : patternsThemeDark}
       >
         <HeadNextSeo

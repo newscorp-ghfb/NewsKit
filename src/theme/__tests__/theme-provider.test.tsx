@@ -22,7 +22,7 @@ describe('ThemeProvider', () => {
 
   it('renders as css variables', () => {
     const {asFragment} = render(
-      <ThemeProvider theme={newskitLightTheme} exposeCSSVariables>
+      <ThemeProvider theme={newskitLightTheme} exposeCssVariables>
         app
       </ThemeProvider>,
     );
@@ -49,9 +49,9 @@ describe('ThemeProvider', () => {
     });
 
     const {asFragment} = render(
-      <ThemeProvider theme={newskitLightTheme} exposeCSSVariables>
+      <ThemeProvider theme={newskitLightTheme} exposeCssVariables>
         1st level
-        <ThemeProvider theme={childrenTheme} exposeCSSVariables>
+        <ThemeProvider theme={childrenTheme} exposeCssVariables>
           2nd level
         </ThemeProvider>
       </ThemeProvider>,

@@ -14,7 +14,7 @@ describe('NewsKitProvider', () => {
     const {asFragment} = render(
       <NewsKitProvider
         theme={newskitLightTheme}
-        themeOptions={{exposeCSSVariables: true}}
+        themeOptions={{exposeCssVariables: true}}
       >
         app
       </NewsKitProvider>,

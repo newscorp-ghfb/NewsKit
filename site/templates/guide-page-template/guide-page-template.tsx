@@ -24,7 +24,7 @@ export const GuidePageTemplate: React.FC<GuidePageTemplateProps> = ({
     {({themeMode}) => (
       <>
         <ThemeProvider
-          exposeCSSVariables
+          exposeCssVariables
           theme={themeMode === 'light' ? guidesThemeLight : guidesThemeDark}
         >
           <PageTemplate
