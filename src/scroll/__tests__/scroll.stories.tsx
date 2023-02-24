@@ -1,288 +1,257 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Scroll, ScrollSnapAlignment} from '..';
-import {styled, getColorCssFromTheme} from '../../utils/style';
-import {StorybookSubHeading} from '../../test/storybook-comps';
-import {Stack} from '../../stack/stack';
+import {
+  styled,
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+} from '../../utils/style';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {Block} from '../../block';
 import {Image} from '../../image';
-import {createTheme, ThemeProvider} from '../../theme';
-import {getSSRId} from '../../utils';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {Button} from '../../button';
-
-const myCustomTheme = createTheme({
-  name: 'my-custom-scroll-theme',
-  overrides: {
-    stylePresets: {
-      scrollArrowsCustom: {
-        base: {
-          backgroundColor: '{{colors.amber010}}',
-          color: '{{colors.purple050}}',
-          iconColor: '{{colors.purple050}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.amber020}}',
-        },
-        active: {
-          backgroundColor: '{{colors.amber060}}',
-        },
-        disabled: {
-          color: '{{colors.inkNonEssential}}',
-          iconColor: '{{colors.inkNonEssential}}',
-        },
-      },
-      overlaysCustom: {
-        base: {
-          backgroundImage: '{{overlays.overlayGradientInverseHorizontal}}',
-        },
-      },
-    },
-  },
-});
-
-const MainContainer = styled.div`
-  max-height: 768px;
-  max-width: 1024px;
-  margin: 0 auto;
-`;
+import {GridLayout} from '../../grid-layout';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Container = styled(Block)<{width?: string; height?: string}>`
-  ${getColorCssFromTheme('backgroundColor', 'neutral020')};
+  border: 1px solid;
+  ${getColorCssFromTheme('backgroundColor', 'interfaceSkeleton010')};
+  ${getColorCssFromTheme('borderColor', 'interfaceBrand010')};
   width: ${({width}) => width || '300px'};
   height: ${({height}) => height || '150px'};
-`;
-
-const Flex = styled.div`
-  display: flex;
 `;
 
 const Tag = styled.div`
   box-sizing: border-box;
   min-height: 32px;
   padding: 5px 12px;
-  border: 1px solid #535353;
-  color: #2e2e2e;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid;
+  ${getColorCssFromTheme('borderColor', 'interactiveSecondary030')};
+  ${getColorCssFromTheme('color', 'inkBase')};
+  ${getTypographyPresetFromTheme('utilityLabel020')};
 `;
 
-const Box = styled.div`
-  box-sizing: border-box;
-  flex: none;
-  width: 100px;
-  height: 100px;
-  background: salmon;
-  border: 1px solid red;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100px;
-`;
-
-const tags = [
+const tagsWords = [
   'This',
   'Is',
   'A',
-  'Stack',
+  'Scroll',
   'Example',
-  'showing',
-  'multiple',
-  'tags',
-].map(item => <Tag key={getSSRId()}>{item}</Tag>);
+  'Showing',
+  'Multiple',
+  'Tags',
+];
 
-export default {
-  title: 'Components/scroll',
-  component: () => 'None',
-};
+const tags = tagsWords.map(item => <Tag key={item}>{item}</Tag>);
 
 export const StoryScrollDefault = () => (
-  <MainContainer>
-    <StorybookSubHeading>Scroll horizontal</StorybookSubHeading>
-    <Container>
-      <Scroll>
-        <Stack flow="horizontal-top">{tags}</Stack>
-      </Scroll>
-    </Container>
-
-    <StorybookSubHeading>Scroll vertical</StorybookSubHeading>
-    <Container>
-      <Scroll vertical>
-        <Stack flow="vertical-left" spaceInline="space040">
-          {tags}
-        </Stack>
-      </Scroll>
-    </Container>
-
-    <StorybookSubHeading>Scroll with image</StorybookSubHeading>
-    <Container>
-      <Scroll>
-        <Image
-          src="/placeholder-3x2.png"
-          alt="Example Image"
-          overrides={{width: '400px', height: '200px'}}
-        />
-      </Scroll>
-    </Container>
-  </MainContainer>
+  <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
+    <StorybookCase title="Horizontal">
+      <Container>
+        <Scroll>
+          <GridLayout autoFlow="column" columns="auto">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Vertical">
+      <Container>
+        <Scroll vertical>
+          <GridLayout autoFlow="row" justifyContent="start">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Image">
+      <Container>
+        <Scroll>
+          <Image
+            src="/placeholder-3x2.png"
+            alt="Example Image"
+            overrides={{width: '400px', height: '200px'}}
+          />
+        </Scroll>
+      </Container>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryScrollDefault.storyName = 'default';
+StoryScrollDefault.storyName = 'Default';
+
+export const StoryScrollNoGradient = () => (
+  <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
+    <StorybookCase title="Horizontal">
+      <Container>
+        <Scroll overrides={{overlays: {size: 'size000'}}}>
+          <GridLayout autoFlow="column" columns="auto">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Vertical">
+      <Container>
+        <Scroll vertical overrides={{overlays: {size: 'size000'}}}>
+          <GridLayout autoFlow="row" justifyContent="start">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Image">
+      <Container>
+        <Scroll overrides={{overlays: {size: 'size000'}}}>
+          <Image
+            src="/placeholder-3x2.png"
+            alt="Example Image"
+            overrides={{width: '400px', height: '200px'}}
+          />
+        </Scroll>
+      </Container>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryScrollNoGradient.storyName = 'No gradient';
 
 export const StoryScrollControls = () => (
-  <MainContainer>
-    <StorybookSubHeading>Scroll horizontal</StorybookSubHeading>
-    <Container data-testid="horizontal-scroll-component">
-      <Scroll controls="static">
-        <Stack flow="horizontal-center" spaceInline="space040">
-          {tags}
-        </Stack>
-      </Scroll>
-    </Container>
-
-    <StorybookSubHeading>Scroll vertical</StorybookSubHeading>
-    <Container data-testid="vertical-scroll-component">
-      <Scroll vertical controls="static">
-        <Stack flow="vertical-left" spaceInline="space040">
-          {tags}
-        </Stack>
-      </Scroll>
-    </Container>
-
-    <StorybookSubHeading>Scroll controls with overrides</StorybookSubHeading>
-    <Container>
-      <ThemeProvider theme={myCustomTheme}>
-        <Scroll
-          controls="hover"
-          overrides={{
-            controls: {
-              button: {
-                stylePreset: 'scrollArrowsCustom',
-              },
-              offset: '10px',
-            },
-            overlays: {
-              stylePreset: 'overlaysCustom',
-            },
-          }}
-        >
-          <Stack flow="horizontal-top">{tags}</Stack>
+  <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
+    <StorybookCase title="Horizontal">
+      <Container>
+        <Scroll controls="static">
+          <GridLayout autoFlow="column" columns="auto">
+            {tags}
+          </GridLayout>
         </Scroll>
-      </ThemeProvider>
-    </Container>
-  </MainContainer>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Vertical">
+      <Container>
+        <Scroll vertical controls="static">
+          <GridLayout autoFlow="row" justifyContent="start">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Scroll inside container using tab key">
+      <Container>
+        <Scroll controls="static" scrollBar>
+          <GridLayout autoFlow="column" columns="auto">
+            {tagsWords.map(item => (
+              <Tag tabIndex={0} key={item}>
+                {item}
+              </Tag>
+            ))}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryScrollControls.storyName = 'scroll-controls';
+StoryScrollControls.storyName = 'Controls';
 
 export const StoryScrollSnap = () => (
-  <MainContainer>
-    <StorybookSubHeading>Scroll snap - start</StorybookSubHeading>
-    <Container width="250px" height="100px">
-      <Scroll snapAlign="start">
-        <Flex>
-          {Array.from({length: 10}, (_, i) => (
-            <ScrollSnapAlignment key={getSSRId()}>
-              <Box>{`Item ${i + 1}`}</Box>
-            </ScrollSnapAlignment>
-          ))}
-        </Flex>
-      </Scroll>
-    </Container>
-    <br />
-
-    <StorybookSubHeading>Scroll snap with controls</StorybookSubHeading>
-    <Container width="250px" height="100px">
-      <Scroll snapAlign="start" controls="static" stepDistance={60}>
-        <Flex>
-          {Array.from({length: 10}, (_, i) => (
-            <ScrollSnapAlignment key={getSSRId()}>
-              <Box>{`Item ${i + 1}`}</Box>
-            </ScrollSnapAlignment>
-          ))}
-        </Flex>
-      </Scroll>
-    </Container>
-    <br />
-
-    <StorybookSubHeading>Change snap position</StorybookSubHeading>
-    <Container width="250px" height="100px">
-      <Scroll snapAlign="center" controls="static">
-        <Flex>
-          {Array.from({length: 5}, (_, i) => (
-            <ScrollSnapAlignment key={getSSRId()}>
-              <Box>{`Item ${i + 1}`}</Box>
-            </ScrollSnapAlignment>
-          ))}
-          <ScrollSnapAlignment snapAlign="start">
-            <Box>Item 6 end</Box>
-          </ScrollSnapAlignment>
-          {Array.from({length: 5}, (_, i) => (
-            <ScrollSnapAlignment key={getSSRId()}>
-              <Box>{`Item ${i + 7}`}</Box>
-            </ScrollSnapAlignment>
-          ))}
-        </Flex>
-      </Scroll>
-    </Container>
-    <br />
-
-    <StorybookSubHeading>with stack vertical</StorybookSubHeading>
-    <Container>
-      <Scroll vertical snapAlign="center" controls="static">
-        <Stack flow="vertical-left">
-          {[...tags, ...tags].map(tag => (
-            <ScrollSnapAlignment key={getSSRId()}>{tag}</ScrollSnapAlignment>
-          ))}
-        </Stack>
-      </Scroll>
-    </Container>
-    <br />
-  </MainContainer>
+  <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
+    <StorybookCase title="Scroll Snap">
+      <Container>
+        <Scroll>
+          <GridLayout autoFlow="column" columns="auto">
+            {tagsWords.map(item => (
+              <ScrollSnapAlignment key={item}>
+                <Tag>{item}</Tag>
+              </ScrollSnapAlignment>
+            ))}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Controls">
+      <Container>
+        <Scroll controls="static" stepDistance={60}>
+          <GridLayout autoFlow="column" justifyContent="start">
+            {tagsWords.map(item => (
+              <ScrollSnapAlignment key={item}>
+                <Tag>{item}</Tag>
+              </ScrollSnapAlignment>
+            ))}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Change snap position">
+      <Container>
+        <Scroll controls="static" stepDistance={60} snapAlign="center">
+          <GridLayout autoFlow="column" justifyContent="start">
+            {tagsWords.map(item => (
+              <ScrollSnapAlignment key={item}>
+                <Tag>{item}</Tag>
+              </ScrollSnapAlignment>
+            ))}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Scroll Snap - vertical">
+      <Container>
+        <Scroll controls="static" vertical>
+          <GridLayout autoFlow="row" columns="auto">
+            {tagsWords.map(item => (
+              <ScrollSnapAlignment key={item}>
+                <Tag>{item}</Tag>
+              </ScrollSnapAlignment>
+            ))}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryScrollSnap.storyName = 'scroll-snap';
+StoryScrollSnap.storyName = 'Snap';
 StoryScrollSnap.parameters = {percy: {skip: true}};
 
 export const StoryScrollBar = () => (
-  <MainContainer>
-    <StorybookSubHeading>Scroll horizontal with scroll-bar</StorybookSubHeading>
-    <Container>
-      <Scroll scrollBar>
-        <Stack flow="horizontal-top">{tags}</Stack>
-      </Scroll>
-    </Container>
-
-    <StorybookSubHeading>Scroll vertical with scroll-bar</StorybookSubHeading>
-    <Container>
-      <Scroll vertical scrollBar>
-        <Stack flow="vertical-left" spaceInline="space040">
-          {tags}
-        </Stack>
-      </Scroll>
-    </Container>
-    <StorybookSubHeading>
-      Scroll horizontal with arrows and scroll-bar
-    </StorybookSubHeading>
-    <Container width="250px" height="100px">
-      <Scroll scrollBar controls="static">
-        <Flex>
-          {Array.from({length: 10}, (_, i) => (
-            <Box key={getSSRId()}>{`Item ${i + 1}`}</Box>
-          ))}
-        </Flex>
-      </Scroll>
-    </Container>
-    <StorybookSubHeading>
-      Scroll vertical with controls and scroll-bar
-    </StorybookSubHeading>
-    <Container>
-      <Scroll scrollBar vertical controls="static">
-        <Stack flow="vertical-left">
-          {[...tags, ...tags].map(tag => (
-            <React.Fragment key={getSSRId()}>{tag}</React.Fragment>
-          ))}
-        </Stack>
-      </Scroll>
-    </Container>
-  </MainContainer>
+  <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
+    <StorybookCase title="Scrollbar - horizontal">
+      <Container>
+        <Scroll scrollBar>
+          <GridLayout autoFlow="column" columns="auto">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Scrollbar - vertical">
+      <Container>
+        <Scroll vertical scrollBar>
+          <GridLayout autoFlow="row" justifyContent="start">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Arrows and scrollbar - horizontal">
+      <Container>
+        <Scroll scrollBar controls="static">
+          <GridLayout autoFlow="column" columns="auto">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Arrows and scrollbar - vertical">
+      <Container>
+        <Scroll vertical scrollBar controls="static">
+          <GridLayout autoFlow="row" justifyContent="start">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryScrollBar.storyName = 'scroll-bar';
+StoryScrollBar.storyName = 'Scrollbar';
 
 export const StoryResetScrollPosition = () => {
   const scrollRef = React.useRef<HTMLDivElement>(null);
@@ -309,57 +278,135 @@ export const StoryResetScrollPosition = () => {
   };
 
   return (
-    <MainContainer>
-      <StorybookSubHeading>Reset scroll position with ref</StorybookSubHeading>
-      <Container>
-        <Scroll scrollBar ref={scrollRef}>
-          <Stack flow="horizontal-top">{tags}</Stack>
-        </Scroll>
-      </Container>
-      <Button onClick={() => scrollToStart()}>Start</Button>
-      <Button onClick={() => scrollToMiddle()}>Middle</Button>
-      <Button onClick={() => scrollToEnd()}>End</Button>
-    </MainContainer>
+    <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
+      <StorybookCase title="Reset scroll position with ref">
+        <Container>
+          <Scroll scrollBar ref={scrollRef}>
+            <GridLayout autoFlow="column" columns="auto">
+              {tags}
+            </GridLayout>
+          </Scroll>
+        </Container>
+        <GridLayout
+          overrides={{marginBlockStart: 'space030', maxWidth: '300px'}}
+          alignItems="space-around"
+          columns="auto auto auto"
+          columnGap="space040"
+        >
+          <Button
+            overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+            onClick={() => scrollToStart()}
+            size="small"
+          >
+            Start
+          </Button>
+          <Button
+            overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+            onClick={() => scrollToMiddle()}
+            size="small"
+          >
+            Middle
+          </Button>
+          <Button
+            overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+            onClick={() => scrollToEnd()}
+            size="small"
+          >
+            End
+          </Button>
+        </GridLayout>
+      </StorybookCase>
+    </StorybookPage>
   );
 };
-StoryResetScrollPosition.storyName = 'reset-scroll-position';
+StoryResetScrollPosition.storyName = 'Reset scroll position';
+
+const themeOverrides: CreateThemeArgs = {
+  name: 'custom-theme',
+  overrides: {
+    stylePresets: {
+      scrollButtons: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.interactivePrimary040}}',
+        },
+      },
+    },
+  },
+};
+
+export const StoryScrollOverrides = () => (
+  <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
+    <StorybookCase title="">
+      <Container>
+        <Scroll
+          controls="static"
+          overrides={{controls: {button: {stylePreset: 'scrollButtons'}}}}
+        >
+          <GridLayout autoFlow="column" columns="auto">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryScrollOverrides.storyName = 'Styling overrides';
 
 export const StoryLogicalProps = () => (
-  <MainContainer>
-    <StorybookSubHeading>Padding</StorybookSubHeading>
-    <Container>
-      <Scroll overrides={{paddingInline: '30px', paddingBlock: '15px'}}>
-        <Stack flow="horizontal-top">{tags}</Stack>
-      </Scroll>
-    </Container>
-
-    <StorybookSubHeading>Margin</StorybookSubHeading>
-    <Container>
-      <Scroll overrides={{marginInline: '30px', marginBlock: '15px'}}>
-        <Stack flow="horizontal-top">{tags}</Stack>
-      </Scroll>
-    </Container>
-  </MainContainer>
+  <StorybookPage columns="repeat(auto-fill, minmax(300px, 1fr))">
+    <StorybookCase title="Padding">
+      <Container>
+        <Scroll
+          overrides={{paddingInline: 'space040', paddingBlock: 'space030'}}
+        >
+          <GridLayout autoFlow="column" columns="auto">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+    <StorybookCase title="Margin">
+      <Container>
+        <Scroll overrides={{marginInline: 'space040'}}>
+          <GridLayout autoFlow="column" columns="auto">
+            {tags}
+          </GridLayout>
+        </Scroll>
+      </Container>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryLogicalProps.storyName = 'logical-props';
+StoryLogicalProps.storyName = 'Logical props';
 
-export const StoryScrollInsideTheContainer = () => (
-  <MainContainer>
-    <StorybookSubHeading>
-      Scroll elements inside the container using tab key
-    </StorybookSubHeading>
-    <Container width="250px" height="100px">
-      <Scroll scrollBar controls="static" tabIndex={-1}>
-        <Flex>
-          {Array.from({length: 10}, (_, i) => (
-            <Button key={getSSRId()} tabIndex={0} size="small">{`Item ${
-              i + 1
-            }`}</Button>
-          ))}
-        </Flex>
-      </Scroll>
-    </Container>
-  </MainContainer>
-);
-StoryScrollInsideTheContainer.storyName =
-  'scroll-inside-the-container-with-tab-key';
+export default {
+  title: 'Components/Scroll',
+  component: () => Scroll,
+  parameters: {
+    nkDocs: {
+      title: 'Scroll',
+      url: 'https://newskit.co.uk/components/scroll',
+      description:
+        'The scroll component adds scroll behaviour to overflowed content.',
+    },
+  },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          themeOverrides,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};
