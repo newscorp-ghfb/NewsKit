@@ -1,7 +1,11 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Stack, StackProps} from '..';
-import {getColorFromTheme, styled} from '../../utils/style';
+import {
+  getColorFromTheme,
+  styled,
+  getColorCssFromTheme,
+} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
@@ -53,7 +57,7 @@ const ContainerInner = styled.div<ContainerProps>`
 
 const ContainerOuter = styled(ContainerInner)`
   overflow: hidden;
-  background-color: ${getColorFromTheme('blue010')};
+  background-color: ${getColorFromTheme('interactivePrimary010')};
 }`;
 
 const Container = ({
@@ -72,8 +76,9 @@ const Tag = styled.div`
   min-height: ${TagHeight}px;
   min-width: ${TagWidth}px;
   padding: 5px 12px;
-  border: ${TagBorderWidth}px solid #3358cc;
-  color: #2e2e2e;
+  border: ${TagBorderWidth}px solid;
+  ${getColorCssFromTheme('borderColor', 'interfaceBrand010')};
+  ${getColorCssFromTheme('color', 'inkBase')};
   font-family: 'Noto Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
