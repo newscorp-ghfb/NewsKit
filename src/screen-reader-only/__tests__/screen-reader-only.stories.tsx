@@ -9,7 +9,10 @@ const srOnly = getSSRId();
 export const StorySreenReaderOnlyDefault = () => (
   <StorybookPage>
     <StorybookCase>
-      <LinkStandalone href="https://google.com" aria-describedby={srOnly}>
+      <LinkStandalone
+        href="https://www.newskit.co.uk/"
+        aria-describedby={srOnly}
+      >
         NewsKit
       </LinkStandalone>
       <ScreenReaderOnly id={srOnly}>
