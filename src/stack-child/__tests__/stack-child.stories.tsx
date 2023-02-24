@@ -1,14 +1,10 @@
 import * as React from 'react';
 import {Stack} from '../../stack';
-import {Story as StoryType} from '@storybook/react';
 import {getColorCssFromTheme, styled} from '../../utils/style';
-import {
-  StorybookCase,
-  StorybookHeading,
-  StorybookPage,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {Tag} from '../../tag/tag';
 import {StackChild} from '..';
+import {LinkInline} from '../../link';
 
 const MainContainer = styled.div`
   margin: 0 auto;
@@ -30,15 +26,30 @@ const Container = styled.div<{
 `;
 
 export default {
-  title: 'Components/Stack-Child',
+  title: 'Components/Stack child',
   component: StackChild,
-  parameters: {},
-  decorators: [(Story: StoryType) => <Story />],
+  parameters: {
+    nkDocs: {
+      title: 'Stack child',
+      url: 'https://newskit.co.uk/components/stack',
+      description: (
+        <>
+          A stack is a layout component that abstracts the implementation of{' '}
+          <LinkInline
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+            target="_blank"
+          >
+            flexbox.
+          </LinkInline>
+        </>
+      ),
+    },
+  },
 };
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Default">
+    <StorybookCase>
       <Container hasBackgroundColor>
         <Stack spaceInline="space050" flow="horizontal-top">
           <StackChild order={3}>
@@ -59,7 +70,7 @@ StoryDefault.storyName = 'Default';
 
 export const StoryStackChildCustomOrder = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Custom order">
+    <StorybookCase>
       <Container hasBackgroundColor>
         <Stack spaceInline="space050" flow="horizontal-top">
           <StackChild order={3}>
@@ -80,7 +91,7 @@ StoryStackChildCustomOrder.storyName = 'Custom order';
 
 export const StoryStackChildWithStackList = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Stack list">
+    <StorybookCase>
       <Container hasBackgroundColor>
         <Stack spaceInline="space050" flow="horizontal-top" list>
           <StackChild order={3}>
@@ -101,7 +112,6 @@ StoryStackChildWithStackList.storyName = 'Stack list';
 
 export const StoryStackChildWithLogicalProps = () => (
   <MainContainer>
-    <StorybookHeading>StackChild with logical props</StorybookHeading>
     <Container hasBorder>
       <Stack spaceInline="space050" flow="horizontal-top">
         <StackChild order={1} paddingInline="30px" paddingBlock="20px">
