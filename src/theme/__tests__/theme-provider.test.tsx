@@ -59,7 +59,7 @@ describe('ThemeProvider', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.only('themeDiff -> different token', () => {
+  it('themeDiff -> different token', () => {
     const parentTheme = {
       colors: {
         ink: 'ink',
