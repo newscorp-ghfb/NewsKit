@@ -121,14 +121,8 @@ export const StoryGridDefault = () => (
         </Cell>
       </Grid>
     </BorderedBox>
-
     <BorderedBox>
-      <Grid
-        xsColumnGutter="space000"
-        smColumnGutter="space010"
-        mdColumnGutter="space010"
-        lgColumnGutter="space020"
-      >
+      <Grid>
         <Cell xs={4}>
           <Content>1</Content>
         </Cell>
@@ -142,7 +136,7 @@ export const StoryGridDefault = () => (
     </BorderedBox>
 
     <BorderedBox>
-      <Grid xsColumnGutter="space080">
+      <Grid>
         <Cell xs={4}>
           <Content>
             <Grid xsColumnGutter="space000" xsMargin="space000">
