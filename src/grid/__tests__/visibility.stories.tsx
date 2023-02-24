@@ -1,58 +1,83 @@
 import * as React from 'react';
 import {Visible, Hidden} from '..';
-import {StorybookHeading} from '../../test/storybook-comps';
-import {styled} from '../../utils/style';
+import {
+  styled,
+  getColorCssFromTheme,
+  getTypographyPresetFromTheme,
+} from '../../utils/style';
 
-const Container = styled.span<{color: string}>`
-  display: inline-block;
-  padding: 40px;
-  font-size: 48px;
-  background: ${({color}) => color};
-  border: solid 1px black;
+const Container = styled.span<{highlight?: boolean}>`
+  width: 114.64px;
+  height: 64px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ${getTypographyPresetFromTheme('utilityLabel030')}
+  ${getColorCssFromTheme('background-color', 'interactivePrimary010')};
+  ${getColorCssFromTheme('borderColor', 'interfaceBrand010')};
+  ${getColorCssFromTheme('color', 'inkBase')};
+  ${({highlight}) => {
+    if (!highlight) {
+      return {};
+    }
+    return {
+      'border-width': '2px',
+      'border-style': 'solid',
+    };
+  }}
 `;
 
 export default {
-  title: 'Components/visibility',
+  title: 'Components/Visibility',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Visibility',
+      url: 'https://newskit.co.uk/components/visibility',
+      description:
+        'The collection of these three components can be used to show and hide content at different breakpoints.',
+    },
+  },
 };
 
 export const StoryVisibilityComponent = () => (
   <>
-    <StorybookHeading>Visibility component</StorybookHeading>
     <Visible display="inline-block" xs>
-      <Container color="green">xs</Container>
+      <Container highlight>xs</Container>
     </Visible>
     <Hidden display="inline-block" xs>
-      <Container color="silver">xs</Container>
+      <Container>xs</Container>
     </Hidden>
 
     <Visible display="inline-block" sm>
-      <Container color="green">sm</Container>
+      <Container highlight>sm</Container>
     </Visible>
     <Hidden display="inline-block" sm>
-      <Container color="silver">sm</Container>
+      <Container>sm</Container>
     </Hidden>
 
     <Visible display="inline-block" md>
-      <Container color="green">md</Container>
+      <Container highlight>md</Container>
     </Visible>
     <Hidden display="inline-block" md>
-      <Container color="silver">md</Container>
+      <Container>md</Container>
     </Hidden>
 
     <Visible display="inline-block" lg>
-      <Container color="green">lg</Container>
+      <Container highlight>lg</Container>
     </Visible>
     <Hidden display="inline-block" lg>
-      <Container color="silver">lg</Container>
+      <Container>lg</Container>
     </Hidden>
 
     <Visible display="inline-block" xl>
-      <Container color="green">xl</Container>
+      <Container highlight>xl</Container>
     </Visible>
     <Hidden display="inline-block" xl>
-      <Container color="silver">xl</Container>
+      <Container>xl</Container>
     </Hidden>
   </>
 );
-StoryVisibilityComponent.storyName = 'visibility-component';
+StoryVisibilityComponent.storyName = 'Default';
