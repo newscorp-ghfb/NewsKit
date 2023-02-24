@@ -190,19 +190,6 @@ export const StoryOverrides = () => (
         <IconFilledAddCircle overrides={{size: 'iconSize030'}} />
       </Flag>
     </StorybookCase>
-    <StorybookCase title="Long text and overflow">
-      <Flag overrides={{width: 'sizing120', height: 'sizing070'}}>
-        Text goes here and it has overflow and long text
-      </Flag>
-    </StorybookCase>
-    <StorybookCase title="Typography preset">
-      <Flag
-        size="large"
-        overrides={{typographyPreset: 'editorialSubheadline030'}}
-      >
-        Flag
-      </Flag>
-    </StorybookCase>
   </StorybookPage>
 );
 StoryOverrides.storyName = 'Overrides';
