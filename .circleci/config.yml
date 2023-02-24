@@ -1103,7 +1103,6 @@ jobs:
       - run:
           name: Upload PR sites to S3 subfolders
           command: |
-            node --version
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/')
             echo "${SITE_ENV} $(date)" > timestamp.html
