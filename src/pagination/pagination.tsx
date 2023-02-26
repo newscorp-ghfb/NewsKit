@@ -4,7 +4,6 @@ import {StyledNav, StyledUnorderedList} from './styled';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {PaginationProps} from './types';
-import {useTheme} from '../theme';
 import {PaginationProvider} from './context';
 import {PaginationNextItemProps} from './components/next-item';
 import {IconButtonProps} from '../icon-button/types';
@@ -16,7 +15,6 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
   (
     {
       children,
-      overrides,
       size = 'medium',
       pageSize = 10,
       currentPage = 1,
@@ -27,15 +25,15 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     },
     ref,
   ) => {
-    //const theme = useTheme();
     const [changedPage, setChangedPage] = useState(currentPage);
     const lastPage = Math.ceil(totalItems / pageSize);
 
     const changePage = useCallback(
       (page: number) => {
-        // console.log('changePage', page);
         setChangedPage(page);
-        onPageChange! && onPageChange(page);
+        if (onPageChange) {
+          onPageChange(page);
+        }
       },
       [currentPage, changedPage],
     );
@@ -43,11 +41,9 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     const getFirstItemProps = useCallback(
       ({...getterProps}: PaginationFirstItemProps): IconButtonProps =>
         ({
-          // 'aria-label': 'first',
-          // disabled: typeof getterProps.onClick !== 'function',
           disabled: changedPage < 2,
           ...getterProps,
-          onClick: (event: React.MouseEvent<any>) => {
+          onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
             changePage(1);
             if (getterProps.onClick) {
               getterProps.onClick!(event);
@@ -60,11 +56,9 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     const getPrevItemProps = useCallback(
       ({...getterProps}: PaginationPrevItemProps): IconButtonProps =>
         ({
-          // 'aria-label': 'prev',
-          // disabled: typeof getterProps.onClick !== 'function',
           disabled: changedPage < 2,
           ...getterProps,
-          onClick: (event: React.MouseEvent<any>) => {
+          onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
             changePage(changedPage - 1);
             if (getterProps.onClick) {
               getterProps.onClick!(event);
@@ -77,11 +71,9 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     const getNextItemProps = useCallback(
       ({...getterProps}: PaginationNextItemProps): IconButtonProps =>
         ({
-          // 'aria-label': 'next',
-          // disabled: typeof getterProps.onClick !== 'function',
           disabled: changedPage >= lastPage,
           ...getterProps,
-          onClick: (event: React.MouseEvent<any>) => {
+          onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
             changePage(changedPage + 1);
             if (getterProps.onClick) {
               getterProps.onClick!(event);
@@ -94,11 +86,9 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     const getLastItemProps = useCallback(
       ({...getterProps}: PaginationLastItemProps): IconButtonProps =>
         ({
-          // 'aria-label': 'last',
-          // disabled: typeof getterProps.onClick !== 'function',
           disabled: changedPage >= lastPage,
           ...getterProps,
-          onClick: (event: React.MouseEvent<any>) => {
+          onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
             changePage(lastPage);
             if (getterProps.onClick) {
               getterProps.onClick!(event);
@@ -146,10 +136,9 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
           aria-label="pagination"
           data-testid="pagination-container"
           ref={ref}
-          overrides={overrides}
           {...rest}
         >
-          <StyledUnorderedList size={size}>{children}</StyledUnorderedList>
+          <StyledUnorderedList>{children}</StyledUnorderedList>
         </StyledNav>
       </PaginationProvider>
     );

@@ -5,25 +5,36 @@ import {usePaginationContext} from '../../context';
 import {StyledListItem} from '../../styled';
 import {PaginationItem} from '../item/pagination-item';
 import {PaginationNextItemProps} from './types';
-import { filterOutFalsyProperties } from '../../../utils/filter-object';
-import { getComponentOverrides, Override } from '../../../utils/overrides';
+import {filterOutFalsyProperties} from '../../../utils/filter-object';
+import {getComponentOverrides, Override} from '../../../utils/overrides';
+import {PaginationItemType} from '../../types';
 
-// const defaultKeyboardShortcuts = ['shift + n'];
+const itemType = PaginationItemType.paginationItemNext as const;
+
+const DefaultIcon = (props: NewsKitIconProps) => (
+  <IconFilledChevronRight {...props} />
+);
 
 export const PaginationNextItem = React.forwardRef<
   HTMLButtonElement,
   PaginationNextItemProps
->(({children, overrides, ...props}, ref) => {
+>(({children, overrides, eventContext, ...props}, ref) => {
   const theme = useTheme();
-  const {getNextItemProps, size = 'medium', buildHref, changedPage = 1, lastPage = 1} = usePaginationContext();
+  const {
+    getNextItemProps,
+    size = 'medium',
+    buildHref,
+    changedPage = 1,
+    lastPage = 1,
+  } = usePaginationContext();
 
-  const [PaginationIcon, paginationIconProps] = getComponentOverrides(
-    overrides?.navigationIcon as Override<NewsKitIconProps>,
-    IconFilledChevronRight,
+  const [PaginationIcon] = getComponentOverrides(
+    overrides as Override<NewsKitIconProps>,
+    DefaultIcon,
     {
       overrides: {
-        ...theme.componentDefaults.paginationItemPrev[size]?.navigationIcon,
-        ...filterOutFalsyProperties(overrides?.navigationIcon),
+        ...theme.componentDefaults.paginationItemNext[size],
+        ...filterOutFalsyProperties(overrides),
       },
     },
   );
@@ -35,15 +46,19 @@ export const PaginationNextItem = React.forwardRef<
   return (
     <StyledListItem key="next">
       <PaginationItem
-        overrides={overrides}
+        // @ts-ignore
+        itemType={itemType}
+        data-testid="pagination-next-item"
+        eventOriginator="pagination-next-item"
+        eventContext={eventContext}
         {...propsFromContext}
+        overrides={overrides}
         ref={ref}
         href={href}
         size={size}
-        data-testid="pagination-next-item"
-        itemType="paginationItemNext"
       >
-        {children}<PaginationIcon />
+        {children}
+        <PaginationIcon />
       </PaginationItem>
     </StyledListItem>
   );

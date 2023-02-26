@@ -1,13 +1,13 @@
 export default {
   pagination: {
     small: {
-      paddingInline: 'space040'
+      paddingInline: 'space040', // 'space040'
     },
     medium: {
-      paddingInline: 'space040',
+      paddingInline: 'space010',
     },
     large: {
-      paddingInline: 'space040',
+      paddingInline: 'space010',
     },
   },
   paginationItem: {
@@ -15,129 +15,209 @@ export default {
       typographyPreset: 'utilityButton010',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
-      //minHeight: 'sizing000',
       height: 'sizing050',
-      width: 'sizing050',
+      minWidth: 'sizing050',
       color: 'interactiveLink010',
-      boundary: {
-        size: 'iconSize010',
-        stylePreset: 'paginationBoundary',
+      /* icon: {
+        iconSize: 'iconSize010',
+        stylePreset: 'paginationTruncation',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
     medium: {
       typographyPreset: 'utilityButton020',
-      stylePreset: 'buttonMinimalPrimary',
+      stylePreset: 'paginationItem',
       paddingInline: 'space020',
-      //minHeight: 'sizing000',
       height: 'sizing060',
-      width: 'sizing060',
+      minWidth: 'sizing060',
       color: 'interactiveLink010',
-      boundary: {
-        size: 'iconSize020',
-        stylePreset: 'paginationBoundary',
+      /* icon: {
+        iconSize: 'iconSize020',
+        stylePreset: 'paginationTruncation',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
     large: {
       typographyPreset: 'utilityButton050',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
-      //paddingTop: 'space000',
-      //minHeight: 'sizing000',
-      //fontSize: 'fontSize050',
-      //fontSizeToken: 'fontSize050',
-      height: 'sizing080',
-      width: 'sizing080',
+      height: 'sizing070',
+      minWidth: 'sizing070',
       color: 'interactiveLink010',
-      boundary: {
-        size: 'iconSize030',
-        stylePreset: 'paginationBoundary',
+      /* icon: {
+        iconSize: 'iconSize030',
+        stylePreset: 'paginationTruncation',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
   },
   paginationItemFirst: {
     small: {
       iconSize: 'iconSize010',
+      stylePreset: 'paginationItem',
+      // marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing050',
     },
     medium: {
       iconSize: 'iconSize020',
+      stylePreset: 'paginationItem',
+      // marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing060',
     },
     large: {
       iconSize: 'iconSize030',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing070',
     },
   },
   paginationItemPrev: {
     small: {
-      //iconSize: 'iconSize010',
-      navigationIcon: {
-        size: 'iconSize010',
-        stylePreset: 'paginationNavigationIcon',
+      iconSize: 'iconSize010',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing050',
+      /* icon: {
+        iconSize: 'iconSize010',
+        stylePreset: 'paginationicon',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
     medium: {
-      //iconSize: 'iconSize020',
-      navigationIcon: {
-        size: 'iconSize020',
-        stylePreset: 'paginationNavigationIcon',
+      iconSize: 'iconSize020',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing060',
+      /* icon: {
+        iconSize: 'iconSize020',
+        stylePreset: 'paginationicon',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
     large: {
-      //iconSize: 'iconSize030',
-      navigationIcon: {
-        size: 'iconSize030',
-        stylePreset: 'paginationNavigationIcon',
+      iconSize: 'iconSize030',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing070',
+      /* icon: {
+        iconSize: 'iconSize030',
+        stylePreset: 'paginationicon',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
   },
   paginationItemNext: {
     small: {
-      //iconSize: 'iconSize010',
-      navigationIcon: {
-        size: 'iconSize010',
-        stylePreset: 'paginationNavigationIcon',
+      // iconSize: 'iconSize010',
+      iconSize: 'iconSize010',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing050',
+      /* icon: {
+        iconSize: 'iconSize010',
+        stylePreset: 'paginationicon',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
     medium: {
-      //iconSize: 'iconSize020',
-      navigationIcon: {
-        size: 'iconSize020',
-        stylePreset: 'paginationNavigationIcon',
+      // iconSize: 'iconSize020',
+      iconSize: 'iconSize020',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing060',
+      /* icon: {
+        iconSize: 'iconSize020',
+        stylePreset: 'paginationicon',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
     large: {
-      //iconSize: 'iconSize030',
-      navigationIcon: {
-        size: 'iconSize030',
-        stylePreset: 'paginationNavigationIcon',
+      // iconSize: 'iconSize030',
+      iconSize: 'iconSize030',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing070',
+      /* icon: {
+        iconSize: 'iconSize030',
+        stylePreset: 'paginationicon',
         marginInline: 'space020',
         color: 'inkNonEssential',
-      },
+      }, */
     },
   },
   paginationItemLast: {
     small: {
+      // icon: {
       iconSize: 'iconSize010',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing050',
+      // },
     },
     medium: {
+      // icon: {
       iconSize: 'iconSize020',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing060',
+      // },
     },
     large: {
+      // icon: {
       iconSize: 'iconSize030',
+      stylePreset: 'paginationItem',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing070',
+      // },
+    },
+  },
+  paginationItemTruncation: {
+    small: {
+      // icon: {
+      iconSize: 'iconSize010',
+      stylePreset: 'paginationItemTruncation',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing050',
+      // },
+    },
+    medium: {
+      // icon: {
+      iconSize: 'iconSize020',
+      stylePreset: 'paginationItemTruncation',
+      marginInline: 'space000',
+      color: 'inkNonEssential',
+      width: 'sizing060',
+      // },
+    },
+    large: {
+      // icon: {
+      iconSize: 'iconSize030',
+      stylePreset: 'paginationItemTruncation',
+      marginInline: 'space020',
+      color: 'inkNonEssential',
+      width: 'sizing070',
+      // },
     },
   },
 };

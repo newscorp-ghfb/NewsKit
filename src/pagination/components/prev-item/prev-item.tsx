@@ -5,47 +5,59 @@ import {usePaginationContext} from '../../context';
 import {StyledListItem} from '../../styled';
 import {PaginationItem} from '../item/pagination-item';
 import {PaginationPrevItemProps} from './types';
-import { filterOutFalsyProperties } from '../../../utils/filter-object';
-import { getComponentOverrides, Override } from '../../../utils/overrides';
+import {filterOutFalsyProperties} from '../../../utils/filter-object';
+import {getComponentOverrides, Override} from '../../../utils/overrides';
+import {PaginationItemType} from '../../types';
 
-// const defaultKeyboardShortcuts = ['shift + p'];
+const itemType = PaginationItemType.paginationItemPrev as const;
+
+const DefaultIcon = (props: NewsKitIconProps) => (
+  <IconFilledChevronLeft {...props} />
+);
 
 export const PaginationPrevItem = React.forwardRef<
   HTMLButtonElement,
   PaginationPrevItemProps
->(({children, overrides, ...props}, ref) => {
+>(({children, overrides, eventContext, ...props}, ref) => {
   const theme = useTheme();
-  const {getPrevItemProps, size = 'medium', buildHref, changedPage = 1} = usePaginationContext();
+  const {
+    getPrevItemProps,
+    size = 'medium',
+    buildHref,
+    changedPage = 1,
+  } = usePaginationContext();
 
-  console.log('theme.componentDefaults', theme.componentDefaults);
-  const [PaginationIcon, paginationIconProps] = getComponentOverrides(
-    overrides?.navigationIcon as Override<NewsKitIconProps>,
-    IconFilledChevronLeft,
+  const [PaginationIcon] = getComponentOverrides(
+    overrides as Override<NewsKitIconProps>,
+    DefaultIcon,
     {
       overrides: {
-        ...theme.componentDefaults.paginationItemPrev[size]?.navigationIcon,
-        ...filterOutFalsyProperties(overrides?.navigationIcon),
+        ...theme.componentDefaults.paginationItemPrev[size],
+        ...filterOutFalsyProperties(overrides),
       },
     },
   );
 
   const propsFromContext = getPrevItemProps! && getPrevItemProps(props);
-  console.log('PaginationPrevItem props', props);
-  console.log('PaginationPrevItem propsFromContext', propsFromContext);
 
   const page = Math.max(changedPage - 1, 1);
   const href = buildHref! && buildHref(page);
   return (
     <StyledListItem key="prev">
       <PaginationItem
+        // @ts-ignore
+        itemType={itemType}
+        data-testid="pagination-prev-item"
+        eventOriginator="pagination-prev-item"
+        eventContext={eventContext}
         {...propsFromContext}
+        overrides={overrides}
         ref={ref}
         href={href}
         size={size}
-        data-testid="pagination-prev-item"
-        itemType="paginationItemPrev"
       >
-        <PaginationIcon />{children}
+        <PaginationIcon />
+        {children}
       </PaginationItem>
     </StyledListItem>
   );

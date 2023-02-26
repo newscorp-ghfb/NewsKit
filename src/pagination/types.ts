@@ -13,17 +13,39 @@ import {PaginationNextItemProps} from './components/next-item/types';
 import {PaginationPrevItemProps} from './components/prev-item/types';
 
 export type PaginationSize = 'small' | 'medium' | 'large';
-// TODO
-export type PaginationItemType = 'paginationItem' | 'todo';
+
+export enum PaginationItemType {
+  paginationItem = 'paginationItem',
+  paginationItemTruncation = 'paginationItemTruncation',
+  paginationItemFirst = 'paginationItemFirst',
+  paginationItemPrev = 'paginationItemPrev',
+  paginationItemNext = 'paginationItemNext',
+  paginationItemLast = 'paginationItemLast',
+}
 
 export type PaginationLayoutItem = number | '-';
+
+export interface PaginationItemsLayoutInput {
+  currentPage: number;
+  lastPage: number;
+  truncation: boolean;
+  siblings: number;
+  boundaries: number;
+}
+
+export interface PaginationItemAriaInput {
+  itemType?: PaginationItemType;
+  pageNumber?: number;
+  selected?: boolean;
+  disabled?: boolean;
+}
 
 export interface PaginationProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   size?: PaginationSize;
-  pageSize?: number; // FIXME mand
-  currentPage?: number; // FIXME mand
-  totalItems?: number; // FIXME mand
+  pageSize: number;
+  currentPage: number;
+  totalItems: number;
   buildHref?: (pageNumber: number) => string;
   onPageChange?: (pageNumber: number) => void;
   overrides?: {
@@ -43,7 +65,7 @@ export interface PaginationProps extends React.AriaAttributes {
   } & LogicalProps;
 }
 
-export interface PaginationItemsProps extends React.AriaAttributes {
+export interface PaginationItemsProps extends ButtonProps, EventData {
   children?: Exclude<React.ReactNode, 'undefined'>;
   truncation?: boolean;
   siblings?: number;
@@ -51,7 +73,9 @@ export interface PaginationItemsProps extends React.AriaAttributes {
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
-    boundary?: Override<NewsKitIconProps>; // FIXME rename to truncationIcon
+    icon?: Override<NewsKitIconProps>;
+    minWidth?: MQ<string>;
+    height?: MQ<string>;
     marginInline?: MQ<string>;
     marginInlineStart?: MQ<string>;
     marginInlineEnd?: MQ<string>;
@@ -69,13 +93,16 @@ export interface PaginationItemsProps extends React.AriaAttributes {
 
 export interface PaginationItemProps extends ButtonProps, EventData {
   children: Exclude<React.ReactNode, 'undefined'>;
+  itemType?: PaginationItemType;
   selected?: boolean;
   pageNumber?: number;
   href?: string;
-  // FIXME remove
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
+    icon?: Override<NewsKitIconProps>;
+    minWidth?: MQ<string>;
+    height?: MQ<string>;
     marginInline?: MQ<string>;
     marginInlineStart?: MQ<string>;
     marginInlineEnd?: MQ<string>;
@@ -92,11 +119,10 @@ export interface PaginationItemProps extends ButtonProps, EventData {
 }
 
 export interface PaginationProviderContext {
-  id: string; // FIXME use?
   size: PaginationSize;
-  pageSize: number; // FIXME mand
-  currentPage: number; // FIXME mand
-  totalItems: number; // FIXME mand
+  pageSize: number;
+  currentPage: number;
+  totalItems: number;
   buildHref?: (page: number) => string;
   changePage: (page: number) => void;
   changedPage: number;

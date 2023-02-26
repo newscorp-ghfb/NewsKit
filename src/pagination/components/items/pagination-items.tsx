@@ -1,118 +1,106 @@
 import React from 'react';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
-import {PaginationItemProps, PaginationItemsProps} from '../../types';
+import {
+  PaginationItemProps,
+  PaginationItemsProps,
+  PaginationItemType,
+  PaginationLayoutItem,
+} from '../../types';
 import {useTheme} from '../../../theme';
-import {IconFilledChevronRight, NewsKitIconProps} from '../../../icons';
+import {IconFilledMoreHoriz, NewsKitIconProps} from '../../../icons';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
 import {StyledListItem} from '../../styled';
 import {PaginationItem} from '../item/pagination-item';
 import {usePaginationContext} from '../../context';
+import {getItemsLayout} from '../../utils';
+
+const paginationItemTruncation = PaginationItemType.paginationItemTruncation as const;
 
 const DefaultIcon = (props: NewsKitIconProps) => (
-  <IconFilledChevronRight {...props} />
+  <IconFilledMoreHoriz {...props} />
 );
 
-export const PaginationItems = React.forwardRef<
-  HTMLButtonElement,
-  PaginationItemsProps
->(({children, overrides, ...rest}, ref) => {
-  // TODO get from context
+export const PaginationItems = ({
+  overrides,
+  truncation = true,
+  siblings = 3,
+  boundaries = 1,
+  eventContext,
+}: PaginationItemsProps) => {
   const theme = useTheme();
-  const {size = 'medium', buildHref, changePage = () => {}, changedPage} = usePaginationContext();
+  const {
+    size = 'medium',
+    buildHref,
+    changePage = () => {},
+    changedPage,
+    lastPage,
+  } = usePaginationContext();
 
   const [PaginationIcon, paginationIconProps] = getComponentOverrides(
-    overrides?.boundary as Override<NewsKitIconProps>,
+    overrides?.icon as Override<NewsKitIconProps>,
     DefaultIcon,
     {
       overrides: {
-        // TypeError: Cannot read properties of undefined (reading 'medium')
-        ...theme.componentDefaults.pagination[size]?.boundary, // FIXME
-        ...filterOutFalsyProperties(overrides?.boundary),
+        ...theme.componentDefaults.paginationItemTruncation[size],
+        ...filterOutFalsyProperties(overrides?.icon),
       },
     },
   );
 
-  const getPaginationBoundary = (
-    index: number,
-    arr: React.ReactElement<
-      PaginationItemProps,
-      string | React.JSXElementConstructor<unknown>
-    >[],
-  ) => index < arr.length - 1;
-
-  // const href = 'http://test';
-  /* const paginationElements = (
-    <>
-      <StyledListItem key="1">
-        <PaginationItem href={href} size={size} overrides={overrides}>
-          1
-        </PaginationItem>
-      </StyledListItem>
-      <StyledListItem key="2">
-        <PaginationItem href={href} size={size} overrides={overrides}>
-          2
-        </PaginationItem>
-      </StyledListItem>
-      <StyledListItem key="3">
-        <PaginationItem selected href={href} size={size} overrides={overrides}>
-          3
-        </PaginationItem>
-      </StyledListItem>
-    </>
-  );
-  */
-
-  /* const paginationChildren = React.Children.toArray(
-    children,
-  ) as React.ReactElement<PaginationItemProps>[];
   const paginationElements = [] as React.ReactElement<PaginationItemProps>[];
+  if (changedPage && lastPage) {
+    const layout: [PaginationLayoutItem?] = getItemsLayout({
+      currentPage: changedPage,
+      lastPage,
+      truncation,
+      siblings,
+      boundaries,
+    });
 
-  paginationChildren.forEach(
-    (element: React.ReactElement<PaginationItemProps>, index: number) => {
-      // add pagination element to the list
-      paginationElements.push(
-        <StyledListItem key={element.key}>
-          {React.cloneElement(element, {
-            size,
-          })}
-        </StyledListItem>,
-      );
-
-      // add pagination boundary to the list
-      if (getPaginationBoundary(index, paginationChildren)) {
-        paginationElements.push(
-          <StyledListItem key={`${element.key}-boundary`} aria-hidden="true">
-            <PaginationIcon {...(paginationIconProps as NewsKitIconProps)} />
-          </StyledListItem>,
-        );
+    let truncationCount = 0;
+    layout.forEach((element: PaginationLayoutItem = 0) => {
+      switch (element) {
+        case '-':
+          truncationCount += 1;
+          paginationElements.push(
+            <StyledListItem key={`trunc${truncationCount}`} aria-hidden="true">
+              <PaginationItem
+                itemType={paginationItemTruncation}
+                datatest-id={`pagination-item-truncation${truncationCount}`}
+                size={size}
+                disabled
+                overrides={overrides}
+              >
+                <PaginationIcon
+                  {...(paginationIconProps as NewsKitIconProps)}
+                />
+              </PaginationItem>
+            </StyledListItem>,
+          );
+          break;
+        default:
+          {
+            const page: number = element;
+            const href = buildHref! && buildHref(page);
+            paginationElements.push(
+              <StyledListItem key={`page${page}`}>
+                <PaginationItem
+                  href={href}
+                  onClick={() => changePage(page)}
+                  selected={page === changedPage}
+                  eventContext={eventContext}
+                  size={size}
+                  overrides={overrides}
+                >
+                  {page}
+                </PaginationItem>
+              </StyledListItem>,
+            );
+          }
+          break;
       }
-    },
-  );
-  */
-
-  const paginationElements = [] as React.ReactElement<PaginationItemProps>[];
-  for (let page = 1; page < 9; page++) {
-    const href = buildHref! && buildHref(page);
-    paginationElements.push(
-      <StyledListItem key={`${page}`}>
-        <PaginationItem
-          href={href}
-          onClick={() => changePage(page)}
-          selected={page === changedPage}
-          size={size}
-          overrides={overrides}
-        >
-          {page}
-        </PaginationItem>
-      </StyledListItem>,
-    );
+    });
   }
-  // FIXME
-  /*paginationElements.push(
-    <StyledListItem key={`element.key-boundary`} aria-hidden="true">
-      <PaginationIcon {...(paginationIconProps as NewsKitIconProps)} />
-    </StyledListItem>,
-  );
-*/
+
   return <>{paginationElements}</>;
-});
+};

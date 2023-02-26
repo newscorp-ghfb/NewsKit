@@ -1,67 +1,64 @@
 import React from 'react';
-import {IconButton} from '../../../icon-button';
-import { IconFilledLastPage } from '../../../icons';
-import {withOwnTheme} from '../../../utils/with-own-theme';
+import {useTheme} from '@emotion/react';
+import {IconFilledLastPage, NewsKitIconProps} from '../../../icons';
 import {usePaginationContext} from '../../context';
-import { StyledListItem } from '../../styled';
-import {useButtonOverrides} from '../../utils';
-import { PaginationItem } from '../item/pagination-item';
-import defaults from './defaults';
+import {StyledListItem} from '../../styled';
+import {PaginationItem} from '../item/pagination-item';
 import {PaginationLastItemProps} from './types';
+import {filterOutFalsyProperties} from '../../../utils/filter-object';
+import {getComponentOverrides, Override} from '../../../utils/overrides';
+import {PaginationItemType} from '../../types';
 
-// const defaultKeyboardShortcuts = ['shift + l'];
+const itemType = PaginationItemType.paginationItemLast as const;
+
+const DefaultIcon = (props: NewsKitIconProps) => (
+  <IconFilledLastPage {...props} />
+);
 
 export const PaginationLastItem = React.forwardRef<
   HTMLButtonElement,
   PaginationLastItemProps
->(({children, ...props}, ref) => {
-  //const theme = useTheme();
-  const {getLastItemProps, size, buildHref, lastPage} = usePaginationContext();
-  //const overrides = useButtonOverrides(props, 'paginationLastItem');
+>(({children, overrides, eventContext, ...props}, ref) => {
+  const theme = useTheme();
+  const {
+    getLastItemProps,
+    size = 'medium',
+    buildHref,
+    lastPage = 1,
+  } = usePaginationContext();
+
+  const [PaginationIcon] = getComponentOverrides(
+    overrides as Override<NewsKitIconProps>,
+    DefaultIcon,
+    {
+      overrides: {
+        ...theme.componentDefaults.paginationItemLast[size],
+        ...filterOutFalsyProperties(overrides),
+      },
+    },
+  );
 
   const propsFromContext = getLastItemProps! && getLastItemProps(props);
-  //console.log('PaginationLastItem props', props);
-  //console.log('PaginationLastItem propsFromContext', propsFromContext);
 
-  /* useKeyboardShortcutsOnButton({
-    props: propsFromContext as PaginationLastItemProps,
-    defaults: defaultKeyboardShortcuts,
-  });
-*/
-
-/*      
-  return (
-    <IconButton
-      ref={ref}
-      data-testid="pagination-last-item"
-      size={size}
-      overrides={overrides}
-      {...propsFromContext}
-    >
-      L
-    </IconButton>
-  );
-*/
   const page = lastPage;
   const href = buildHref! && buildHref(page);
   return (
     <StyledListItem key="last">
       <PaginationItem
+        // @ts-ignore
+        itemType={itemType}
+        data-testid="pagination-last-item"
+        eventOriginator="pagination-last-item"
+        eventContext={eventContext}
         {...propsFromContext}
+        overrides={overrides}
         ref={ref}
         href={href}
         size={size}
-        data-testid="pagination-last-item"
-        itemType="paginationItemLast"
       >
-        {children || <IconFilledLastPage />}
+        <PaginationIcon />
+        {children}
       </PaginationItem>
     </StyledListItem>
   );
 });
-
-/*
-export const PaginationLastItem = withOwnTheme(ThemelessPaginationLastItem)({
-  defaults,
-});
-*/

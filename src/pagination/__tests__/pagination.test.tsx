@@ -1,0 +1,434 @@
+import React from 'react';
+import {fireEvent} from '@testing-library/react';
+import {
+  renderToFragmentWithTheme,
+  renderWithImplementation,
+} from '../../test/test-utils';
+import {
+  PaginationItemProps,
+  PaginationItemsProps,
+  PaginationSize,
+} from '../types';
+import {Pagination} from '../pagination';
+import {PaginationFirstItem} from '../components/first-item';
+import {PaginationLastItem} from '../components/last-item';
+import {PaginationPrevItem} from '../components/prev-item';
+import {PaginationNextItem} from '../components/next-item';
+// TODO remove
+import {PaginationItem} from '../components/item/pagination-item';
+import {PaginationItems} from '../components/items/pagination-items';
+import {
+  IconFilledAddCircleOutline,
+  IconOutlinedTrendingFlat,
+} from '../../icons';
+import {TextBlock} from '../../text-block';
+import {EventTrigger} from '../../instrumentation';
+import {compileTheme, createTheme} from '../../theme';
+
+const paginationItemContent = 'Pagination Item';
+const textBlock = '/';
+const selected = false;
+const pageNumber = 3;
+const href = 'https://paginationitem.test';
+const pageItemProps = {
+  selected,
+  pageNumber,
+  href,
+};
+const buildHref = jest.fn((page: number) => `${href}/${page}`);
+const onClick = jest.fn();
+const onPageChange = jest.fn((page: number) => page);
+
+const defaultProps = {
+  totalItems: 232,
+  pageSize: 10,
+  currentPage: 4,
+  buildHref,
+  onPageChange,
+};
+// defaults to truncation: true, siblings: 3, boundaries: 1
+const defaultItemsProps = {truncation: false, siblings: 3, boundaries: 1};
+
+// TODO remove
+/*
+
+
+// TODO remove
+const paginationWithItem = [
+  <PaginationItem key="1" {...pageItemProps}>
+    {paginationItemContent}
+  </PaginationItem>,
+  <PaginationItem key="2" {...pageItemProps}>
+    {paginationItemContent}
+  </PaginationItem>,
+  <PaginationItem key="3" {...pageItemProps}>
+    {paginationItemContent}
+  </PaginationItem>,
+];
+*/
+
+const PaginationWithItems = (props: PaginationItemsProps) => (
+  <Pagination {...defaultProps}>
+    <PaginationFirstItem key="1" {...props} onClick={onClick} />
+    <PaginationPrevItem key="2" {...props} onClick={onClick} />
+    <PaginationItems key="3" {...props} />
+    <PaginationNextItem key="4" {...props} onClick={onClick} />
+    <PaginationLastItem key="5" {...props} onClick={onClick} />
+  </Pagination>
+);
+
+const PaginationWithItem = (props: PaginationItemProps) => (
+  <Pagination {...defaultProps}>
+    <PaginationItem size="small" key="1" {...props} />
+  </Pagination>
+);
+
+const defaultPaginationItems = [
+  <PaginationItems key="3" {...defaultItemsProps} />,
+];
+
+const defaultPaginationIconsAndItems = [
+  <PaginationFirstItem key="1" />,
+  <PaginationPrevItem key="2" />,
+  <PaginationItems key="3" {...defaultItemsProps} />,
+  <PaginationNextItem key="4" />,
+  <PaginationLastItem key="5" />,
+];
+
+/*
+const customPaginationIconsAndItems = (itemsProps: PaginationItemsProps): [ReactNode] => {
+  return [
+    <PaginationFirstItem key="1" />,
+    <PaginationPrevItem key="2" />,
+    <PaginationItems key="3" {...itemsProps} />,
+    <PaginationNextItem key="4" />,
+    <PaginationLastItem key="5" />,
+  ]
+};
+*/
+
+/*
+const defaultPaginationItems = customPaginationItems(defaultItemsProps);
+
+const customPaginationIconsAndItems = (itemsProps: PaginationItemsProps) => (
+  <>
+    <PaginationFirstItem key="1" />,
+    <PaginationPrevItem key="2" />,
+    <PaginationItems key="3" {...itemsProps} />,
+    <PaginationNextItem key="4" />,
+    <PaginationLastItem key="5" />,
+  </>
+);
+*/
+
+// const defaultPaginationIconsAndItems = customPaginationIconsAndItems(defaultItemsProps);
+
+const PaginationSizeArray = ['small', 'medium', 'large'];
+
+describe('Pagination and PaginationItems only', () => {
+  test.each(PaginationSizeArray)('renders in %s pageSize', currentSize => {
+    const props = {
+      ...defaultProps,
+      children: defaultPaginationItems,
+      href,
+    };
+    const fragment = renderToFragmentWithTheme(Pagination, {
+      ...props,
+      size: (currentSize as 'small' | 'medium' | 'large') as PaginationSize,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it(`renders with mandatory props set`, () => {
+    const props = {
+      ...defaultProps,
+      children: defaultPaginationItems,
+    };
+    const fragment = renderToFragmentWithTheme(Pagination, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it(`renders with logical prop overrides`, () => {
+    const props = {
+      ...defaultProps,
+      children: defaultPaginationItems,
+      overrides: {
+        paddingInline: '30px',
+        marginBlock: '20px',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(Pagination, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it(`renders with truncation icon as overrides`, () => {
+    const itemsProps = {
+      ...defaultItemsProps,
+      overrides: {
+        icon: () => (
+          <IconOutlinedTrendingFlat
+            overrides={{
+              size: 'iconSize020',
+              paddingInline: 'space020',
+              stylePreset: 'paginationBoundary',
+            }}
+          />
+        ),
+      },
+    };
+    const props = {
+      ...defaultProps,
+      children: [<PaginationItems key="3" {...itemsProps} />],
+    };
+    const fragment = renderToFragmentWithTheme(Pagination, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it(`renders with truncation overrides with TextBlock component`, () => {
+    const itemsProps = {
+      ...defaultItemsProps,
+      overrides: {
+        icon: () => <TextBlock>{textBlock}</TextBlock>,
+      },
+    };
+    const props = {
+      ...defaultProps,
+      children: [<PaginationItems key="3" {...itemsProps} />],
+    };
+    const fragment = renderToFragmentWithTheme(Pagination, props);
+    expect(fragment).toMatchSnapshot();
+  });
+});
+
+describe('Pagination, navigation icons and PaginationItems', () => {
+  it('renders with default props', () => {
+    const props = {
+      ...defaultProps,
+      children: defaultPaginationIconsAndItems,
+    };
+    const fragment = renderToFragmentWithTheme(Pagination, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  /* test('fire tracking event on normal item', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      children: paginationItemContent,
+      key: '1',
+      ...pageItemProps,
+      eventOriginator: 'pagination-item',
+      eventContext: {
+        event: 'event data',
+      },
+    };
+
+    const {getByTestId} = renderWithImplementation(
+      PaginationWithItems,
+      props,
+      mockFireEvent,
+    );
+    const paginationItemButton = getByTestId('pagination-item');
+    fireEvent.click(paginationItemButton);
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'pagination-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'https://paginationitem.test',
+        event: 'event data',
+      },
+    });
+  });
+*/
+
+  test('fire tracking event on First item', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      eventContext: {
+        event: 'event data',
+      },
+    };
+    const {getByTestId} = renderWithImplementation(
+      PaginationWithItems,
+      props,
+      mockFireEvent,
+    );
+    const paginationItemButton = getByTestId('pagination-first-item');
+    fireEvent.click(paginationItemButton);
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'pagination-first-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'https://paginationitem.test/1',
+        event: 'event data',
+      },
+    });
+    expect(onClick).toHaveBeenCalled();
+    expect(onPageChange).toHaveBeenCalled();
+  });
+
+  test('fire tracking event on Prev item', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      eventContext: {
+        event: 'event data',
+      },
+    };
+    const {getByTestId} = renderWithImplementation(
+      PaginationWithItems,
+      props,
+      mockFireEvent,
+    );
+    const paginationItemButton = getByTestId('pagination-prev-item');
+    fireEvent.click(paginationItemButton);
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'pagination-prev-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'https://paginationitem.test/3',
+        event: 'event data',
+      },
+    });
+    expect(onClick).toHaveBeenCalled();
+    expect(onPageChange).toHaveBeenCalled();
+  });
+
+  test('fire tracking event on Next item', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      eventContext: {
+        event: 'event data',
+      },
+    };
+    const {getByTestId} = renderWithImplementation(
+      PaginationWithItems,
+      props,
+      mockFireEvent,
+    );
+    const paginationItemButton = getByTestId('pagination-next-item');
+    fireEvent.click(paginationItemButton);
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'pagination-next-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'https://paginationitem.test/5',
+        event: 'event data',
+      },
+    });
+    expect(onClick).toHaveBeenCalled();
+    expect(onPageChange).toHaveBeenCalled();
+  });
+
+  test('fire tracking event on Last item', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      eventContext: {
+        event: 'event data',
+      },
+    };
+    const {getByTestId} = renderWithImplementation(
+      PaginationWithItems,
+      props,
+      mockFireEvent,
+    );
+    const paginationItemButton = getByTestId('pagination-last-item');
+    fireEvent.click(paginationItemButton);
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'pagination-last-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'https://paginationitem.test/24',
+        event: 'event data',
+      },
+    });
+    expect(onClick).toHaveBeenCalled();
+    expect(onPageChange).toHaveBeenCalled();
+  });
+});
+
+describe('PaginationItem', () => {
+  it('renders with default props', () => {
+    const props = {
+      size: 'medium' as PaginationSize,
+      children: paginationItemContent,
+      ...pageItemProps,
+    } as PaginationItemProps;
+    const fragment = renderToFragmentWithTheme(PaginationWithItem, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('fire tracking event', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      children: paginationItemContent,
+      key: '1',
+      ...pageItemProps,
+      eventOriginator: 'pagination-item',
+      eventContext: {
+        event: 'event data',
+      },
+    };
+
+    const {getByTestId} = renderWithImplementation(
+      PaginationWithItem,
+      props,
+      mockFireEvent,
+    );
+    const paginationItemButton = getByTestId('pagination-item');
+    fireEvent.click(paginationItemButton);
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'pagination-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'https://paginationitem.test',
+        event: 'event data',
+      },
+    });
+  });
+
+  it('renders selected pagination item with aria attributes', () => {
+    const props = {
+      children: [<IconFilledAddCircleOutline key="i" />],
+      ...pageItemProps,
+      selected: true,
+    };
+    const fragment = renderToFragmentWithTheme(PaginationWithItem, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it('renders with overrides', () => {
+    const myCustomTheme = compileTheme(
+      createTheme({
+        name: 'pagination-item-theme',
+        overrides: {
+          stylePresets: {
+            paginationItemCustom: {
+              base: {
+                backgroundColor: 'pink',
+                color: 'red',
+              },
+            },
+          },
+        },
+      }),
+    );
+    const props = {
+      children: paginationItemContent,
+      ...pageItemProps,
+      key: '1',
+      overrides: {
+        stylePreset: ' paginationItemCustom',
+        typographyPreset: 'utilityButton030',
+        minWidth: '27px',
+        spaceInline: 'space030',
+        spaceInset: 'space030',
+        iconSize: 'iconSize030',
+      },
+    };
+    const fragment = renderToFragmentWithTheme(
+      PaginationWithItem,
+      props,
+      myCustomTheme,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+});

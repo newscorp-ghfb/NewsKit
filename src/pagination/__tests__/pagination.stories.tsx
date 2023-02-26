@@ -16,8 +16,9 @@ import {TextBlock} from '../../text-block';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {PaginationItem} from '../components/item/pagination-item';
+import stylePresets from '../style-presets';
 
-const href = 'page';
+const href = '/page';
 
 const blockGridCols = '1fr 1fr 1fr 1fr auto';
 
@@ -27,10 +28,31 @@ const paginationItemStaticThemeObject: CreateThemeArgs = {
   overrides: {
     stylePresets: {
       paginationDefault: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          color: '{{colors.interactiveLink010}}',
+        base: stylePresets.paginationItem.base,
+      },
+      paginationSelected: {
+        selected: {
+          ...stylePresets.paginationItem.base,
+          ...stylePresets.paginationItem.selected,
         },
+      },
+      paginationHover: {
+        base: {
+          ...stylePresets.paginationItem.base,
+          ...stylePresets.paginationItem.hover,
+        },
+        hover: stylePresets.paginationItem.hover,
+      },
+      paginationActive: {
+        base: {
+          ...stylePresets.paginationItem.base,
+          ...stylePresets.paginationItem.active,
+        },
+      },
+      paginationDisabled: {
+        base:
+          // @ts-ignore
+          stylePresets.paginationItem.disabled,
       },
       paginationInformative: {
         base: {
@@ -38,49 +60,18 @@ const paginationItemStaticThemeObject: CreateThemeArgs = {
           color: '{{colors.interfaceInformative010}}',
         },
       },
-      paginationSelected: {
-        selected: {
-          color: '{{colors.interactiveLink030}}',
-          textDecoration: 'none',
-          backgroundColor: '{{colors.interactivePrimary020}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-        },
-      },
-      paginationHover: {
-        base: {
-          color: '{{colors.interactiveLink020}}',
-          textDecoration: 'underline',
-        },
-        hover: {
-          color: '{{colors.interactiveLink020}}',
-          textDecoration: 'underline',
-        },
-      },
-      paginationActive: {
-        base: {
-          color: '{{colors.interactiveLink030}}',
-          textDecoration: 'underline',
-        },
-      },
-      paginationDisabled: {
-        base: {
-          backgroundColor: "{{colors.transparent}}",
-          color: '{{colors.inkNonEssential}}',
-          iconColor: '{{colors.inkNonEssential}}',
-        },
-      },
     },
   },
 };
 
 const defaultProps = {
-  totalItems: 80, //232,
+  totalItems: 80, // 232,
   pageSize: 10,
   currentPage: 4,
   onPageChange: (page: number) => console.log(`Page changed to ${page}`), // FIXME SB log
 };
 // defaults to truncation: true, siblings: 3, boundaries: 1
-const defaultItemsProps = { truncation: false, siblings: 0, boundaries: 0 };
+const defaultItemsProps = {truncation: false, siblings: 0, boundaries: 0};
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}}>
@@ -134,7 +125,7 @@ export const StorySize = () => (
       <Pagination {...defaultProps} size="large" aria-label="large">
         <PaginationFirstItem />
         <PaginationPrevItem />
-        <PaginationItems {...defaultItemsProps} overrides={{fontSize: 'fontSize050'}} />
+        <PaginationItems {...defaultItemsProps} />
         <PaginationNextItem />
         <PaginationLastItem />
       </Pagination>
@@ -161,7 +152,7 @@ export const StoryStates = () => (
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Selected" aria-label="selected">
-      <Pagination>
+      <Pagination totalItems={232} pageSize={10} currentPage={2}>
         <PaginationItem
           overrides={{stylePreset: 'paginationSelected'}}
           selected
@@ -220,7 +211,7 @@ export const StoryStates = () => (
 );
 StoryStates.storyName = 'States';
 
-export const StoryVariations = () => (
+export const StoryVariationsInNavigation = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Numbers only">
       <Pagination {...defaultProps} aria-label="numbers only">
@@ -233,66 +224,110 @@ export const StoryVariations = () => (
         <PaginationNextItem />
       </Pagination>
     </StorybookCase>
-    <StorybookCase title="Labels">
-      <Pagination {...defaultProps} aria-label="labels">
-        <PaginationPrevItem>Previous</PaginationPrevItem>
+    <StorybookCase title="Next and previous labels">
+      <Pagination {...defaultProps} aria-label="next and previous labels">
+        <PaginationPrevItem overrides={{width: 'auto'}}>
+          Previous
+        </PaginationPrevItem>
         <PaginationItems {...defaultItemsProps} />
-        <PaginationNextItem>Next</PaginationNextItem>
+        <PaginationNextItem overrides={{width: 'auto'}}>
+          Next
+        </PaginationNextItem>
+      </Pagination>
+    </StorybookCase>
+    <StorybookCase title="First and last labels">
+      <Pagination {...defaultProps} aria-label="first and last labels">
+        <PaginationFirstItem overrides={{width: 'auto'}}>
+          First
+        </PaginationFirstItem>
+        <PaginationItems {...defaultItemsProps} />
+        <PaginationLastItem overrides={{width: 'auto'}}>
+          Last
+        </PaginationLastItem>
       </Pagination>
     </StorybookCase>
   </StorybookPage>
 );
-StoryVariations.storyName = 'Variations';
+StoryVariationsInNavigation.storyName = 'Variations in navigation';
+
+export const StoryVariationsInTruncation = () => (
+  <StorybookPage columns={{md: 'auto'}}>
+    <StorybookCase title="No truncation of a long list">
+      <Pagination
+        totalItems={232}
+        pageSize={10}
+        currentPage={9}
+        aria-label="base"
+      >
+        <PaginationItems truncation={false} />
+      </Pagination>
+    </StorybookCase>
+    <StorybookCase title="Siblings 3, boundaries 1 (default)">
+      <Pagination
+        totalItems={232}
+        pageSize={10}
+        currentPage={9}
+        aria-label="base"
+      >
+        <PaginationItems />
+      </Pagination>
+    </StorybookCase>
+    <StorybookCase title="Siblings 3, boundaries 0 (just using First and Last buttons instead of boundary butttons)">
+      <Pagination
+        totalItems={232}
+        pageSize={10}
+        currentPage={9}
+        aria-label="base"
+      >
+        <PaginationFirstItem />
+        <PaginationItems siblings={3} boundaries={0} />
+        <PaginationLastItem />
+      </Pagination>
+    </StorybookCase>
+    <StorybookCase title="Siblings 2, boundaries 2">
+      <Pagination
+        totalItems={232}
+        pageSize={10}
+        currentPage={9}
+        aria-label="base"
+      >
+        <PaginationItems siblings={2} boundaries={2} />
+      </Pagination>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryVariationsInTruncation.storyName = 'Variations in truncation';
 
 export const StoryLogicalProps = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Custom button size">
       <Pagination {...defaultProps} aria-label="custom button size">
-        <PaginationFirstItem />
         <PaginationPrevItem />
-        <PaginationItems {...defaultItemsProps} overrides={{ width: '24px', height: '24px' }} />
+        <PaginationItems
+          {...defaultItemsProps}
+          overrides={{minWidth: '27px', height: '27px'}}
+        />
         <PaginationNextItem />
-        <PaginationLastItem />
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Logical props- padding">
-      <Pagination
-        overrides={{paddingBlock: 'space050'}}
-        aria-label="padding-overrides"
-      >
-        <PaginationItem href={href} overrides={{paddingInline: 'space020'}}>
-          1
-        </PaginationItem>
-        <PaginationItem href={href} overrides={{paddingInline: 'space020'}}>
-          2
-        </PaginationItem>
-        <PaginationItem
-          selected
-          href={href}
+      <Pagination {...defaultProps} aria-label="padding-overrides">
+        <PaginationPrevItem />
+        <PaginationItems
+          {...defaultItemsProps}
           overrides={{paddingInline: 'space020'}}
-        >
-          3
-        </PaginationItem>
+        />
+        <PaginationNextItem />
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Logical props- margin">
-      <Pagination
-        overrides={{marginBlock: 'space050'}}
-        aria-label="margin-overrides"
-      >
-        <PaginationItem href={href} overrides={{marginInline: 'space020'}}>
-          1
-        </PaginationItem>
-        <PaginationItem href={href} overrides={{marginInline: 'space020'}}>
-          2
-        </PaginationItem>
-        <PaginationItem
-          selected
-          href={href}
+      <Pagination {...defaultProps} aria-label="margin-overrides">
+        <PaginationPrevItem />
+        <PaginationItems
+          {...defaultItemsProps}
           overrides={{marginInline: 'space020'}}
-        >
-          3
-        </PaginationItem>
+        />
+        <PaginationNextItem />
       </Pagination>
     </StorybookCase>
   </StorybookPage>
@@ -303,7 +338,7 @@ const textBlock = '/';
 export const StoryOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Custom colour">
-      <Pagination aria-label="custom colour">
+      <Pagination {...defaultProps} aria-label="custom colour">
         <PaginationItems
           {...defaultItemsProps}
           overrides={{
@@ -313,82 +348,84 @@ export const StoryOverrides = () => (
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Custom style">
-      <Pagination aria-label="custom style">
+      <Pagination {...defaultProps} aria-label="custom style">
         <PaginationItems
           {...defaultItemsProps}
-          overrides={{boundary: {
-            stylePreset: 'paginationInformative',
-          },
-          typographyPreset: 'editorialParagraph020'}}
+          overrides={{
+            icon: {
+              stylePreset: 'paginationInformative',
+            },
+            typographyPreset: 'editorialParagraph020',
+          }}
         />
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Custom previous and next icons">
-      <Pagination aria-label="custom previous and next icons">
+      <Pagination {...defaultProps} aria-label="custom previous and next icons">
         <PaginationPrevItem
           overrides={{
-            navigationIcon: () => (
+            icon: () => (
               <IconOutlinedTrendingFlat
                 overrides={{
                   size: 'iconSize020',
                   paddingInline: 'space020',
-                  stylePreset: 'paginationNavigationIcon',
+                  stylePreset: 'paginationicon',
                 }}
               />
-            )}}/>
+            ),
+          }}
+        />
         <PaginationItems {...defaultItemsProps} />
         <PaginationNextItem
           overrides={{
-            navigationIcon: () => (
+            icon: () => (
               <IconOutlinedTrendingFlat
                 overrides={{
                   size: 'iconSize020',
                   paddingInline: 'space020',
-                  stylePreset: 'paginationNavigationIcon',
+                  stylePreset: 'paginationicon',
                 }}
               />
-            )}}/>
+            ),
+          }}
+        />
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Custom truncation icon">
-      <Pagination
-        aria-label="truncation with icon">
+      <Pagination {...defaultProps} aria-label="truncation with icon">
         <PaginationItems
           {...defaultItemsProps}
           overrides={{
-            boundary: () => (
+            icon: () => (
               <IconOutlinedTrendingFlat
                 overrides={{
                   size: 'iconSize020',
                   paddingInline: 'space020',
-                  stylePreset: 'paginationBoundary',
+                  stylePreset: 'paginationTruncation',
                 }}
               />
-            )}}
+            ),
+          }}
         />
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Custom truncation with TextBlock">
-      <Pagination
-        aria-label="truncation with textblock"
-        overrides={{
-          boundary: () => (
-            <TextBlock paddingInline="space020" stylePreset="inkSubtle">
-              {textBlock}
-            </TextBlock>
-          ),
-        }}
-      >
-        <PaginationItem href={href}>1</PaginationItem>
-        <PaginationItem href={href}>2</PaginationItem>
-        <PaginationItem selected href={href}>
-          3
-        </PaginationItem>
+      <Pagination {...defaultProps} aria-label="truncation with textblock">
+        <PaginationItems
+          {...defaultItemsProps}
+          overrides={{
+            icon: () => (
+              <TextBlock paddingInline="space020" stylePreset="inkSubtle">
+                {textBlock}
+              </TextBlock>
+            ),
+          }}
+        />
       </Pagination>
     </StorybookCase>
 
     <StorybookCase title="Leading icon">
-      <Pagination aria-label="leading icon">
+      <Pagination {...defaultProps} aria-label="leading icon">
         <PaginationItem href={href}>1</PaginationItem>
         <PaginationItem href={href}>2</PaginationItem>
         <PaginationItem selected href={href}>
@@ -397,7 +434,7 @@ export const StoryOverrides = () => (
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Trailing icon">
-      <Pagination aria-label="trailing icon">
+      <Pagination {...defaultProps} aria-label="trailing icon">
         <PaginationItem href={href}>1</PaginationItem>
         <PaginationItem href={href}>2</PaginationItem>
         <PaginationItem selected href={href}>
@@ -407,7 +444,7 @@ export const StoryOverrides = () => (
       </Pagination>
     </StorybookCase>
     <StorybookCase title="Both">
-      <Pagination aria-label="both icon">
+      <Pagination {...defaultProps} aria-label="both icon">
         <PaginationItem href={href}>1</PaginationItem>
         <PaginationItem href={href}>2</PaginationItem>
         <PaginationItem selected href={href}>
@@ -418,7 +455,7 @@ export const StoryOverrides = () => (
       </Pagination>
     </StorybookCase>
     <StorybookCase title="'Home' icon for the first pagination item">
-      <Pagination aria-label="home icon">
+      <Pagination {...defaultProps} aria-label="home icon">
         <PaginationItem
           aria-label="just home icon"
           overrides={{stylePreset: 'paginationDefault'}}

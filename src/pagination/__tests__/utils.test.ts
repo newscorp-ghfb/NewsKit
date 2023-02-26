@@ -1,0 +1,272 @@
+import {PaginationItemType} from '../types';
+import {getItemsLayout, getItemAria} from '../utils';
+
+describe('getItemsLayout', () => {
+  it('should return empty array if no pages', () => {
+    const values = {
+      currentPage: 0,
+      lastPage: 0,
+      truncation: false,
+      siblings: 3,
+      boundaries: 1,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout).toEqual([]);
+  });
+
+  it('should return empty array if truncation and no siblings', () => {
+    const values = {
+      currentPage: 1,
+      lastPage: 20,
+      truncation: true,
+      siblings: 0,
+      boundaries: 1,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout).toEqual([]);
+  });
+
+  it('should return empty array if currentPage or lastPage < 1', () => {
+    const values = {
+      currentPage: 0,
+      lastPage: 0,
+      truncation: true,
+      siblings: 3,
+      boundaries: 1,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout).toEqual([]);
+  });
+
+  it('should return all pages when no truncation', () => {
+    const values = {
+      currentPage: 10,
+      lastPage: 20,
+      truncation: false,
+      siblings: 3,
+      boundaries: 1,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual(
+      '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20',
+    );
+  });
+
+  it('should return 3 consecutive pages when 1 sibling', () => {
+    const values = {
+      currentPage: 10,
+      lastPage: 20,
+      truncation: true,
+      siblings: 1,
+      boundaries: 0,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('9 10 11');
+  });
+
+  it('should return 5 consecutive pages when 2 siblings', () => {
+    const values = {
+      currentPage: 10,
+      lastPage: 20,
+      truncation: true,
+      siblings: 2,
+      boundaries: 0,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('8 9 10 11 12');
+  });
+
+  it('should return 7 consecutive pages when 3 siblings', () => {
+    const values = {
+      currentPage: 10,
+      lastPage: 20,
+      truncation: true,
+      siblings: 3,
+      boundaries: 0,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('7 8 9 10 11 12 13');
+  });
+
+  it('should return 1 boundary, a truncation, siblings, a truncation and 1 boundary', () => {
+    const values = {
+      currentPage: 10,
+      lastPage: 20,
+      truncation: true,
+      siblings: 1,
+      boundaries: 1,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 - 9 10 11 - 20');
+  });
+
+  it('should return 2 boundaries, a truncation, siblings, a truncation and 2 boundaries', () => {
+    const values = {
+      currentPage: 10,
+      lastPage: 20,
+      truncation: true,
+      siblings: 1,
+      boundaries: 2,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 2 - 9 10 11 - 19 20');
+  });
+
+  it('should return 3 boundaries, a truncation, siblings, a truncation and 3 boundaries', () => {
+    const values = {
+      currentPage: 10,
+      lastPage: 20,
+      truncation: true,
+      siblings: 1,
+      boundaries: 3,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 2 3 - 9 10 11 - 18 19 20');
+  });
+
+  it('should return 2 boundaries, a truncation, siblings, a truncation and 3 boundaries when there is overlap with siblings', () => {
+    const values = {
+      currentPage: 5,
+      lastPage: 10,
+      truncation: true,
+      siblings: 2,
+      boundaries: 3,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 2 - 3 4 5 6 7 - 8 9 10');
+  });
+
+  it('should return no boundary or truncation, siblings, a truncation and 1 boundary when there is more overlap with siblings', () => {
+    const values = {
+      currentPage: 5,
+      lastPage: 10,
+      truncation: true,
+      siblings: 4,
+      boundaries: 3,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 - 10');
+  });
+
+  it('should return no boundary or truncation, siblings, no truncation or boundary when there is total overlap with siblings', () => {
+    const values = {
+      currentPage: 5,
+      lastPage: 10,
+      truncation: true,
+      siblings: 5,
+      boundaries: 3,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 10');
+  });
+});
+
+describe('getItemAria', () => {
+  it('should return properties for normal item', () => {
+    const values = {
+      itemType: 'paginationItem' as PaginationItemType,
+      pageNumber: 2,
+      selected: false,
+      disabled: false,
+    };
+    const ariaProps = getItemAria(values);
+    expect(ariaProps).toEqual({
+      'aria-current': false,
+      'aria-label': 'go to page 2',
+    });
+  });
+
+  it('should return properties for normal item that is selected', () => {
+    const values = {
+      itemType: 'paginationItem' as PaginationItemType,
+      pageNumber: 2,
+      selected: true,
+      disabled: false,
+    };
+    const ariaProps = getItemAria(values);
+    expect(ariaProps).toEqual({
+      'aria-current': 'page',
+      'aria-label': 'current page, page 2',
+    });
+  });
+
+  it('should return properties for normal item that is disabled', () => {
+    const values = {
+      itemType: 'paginationItem' as PaginationItemType,
+      pageNumber: 2,
+      selected: false,
+      disabled: true,
+    };
+    const ariaProps = getItemAria(values);
+    expect(ariaProps).toEqual({
+      'aria-current': false,
+      'aria-disabled': 'true',
+      'aria-label': 'go to page 2',
+    });
+  });
+
+  it('should return properties for truncation icon item', () => {
+    const values = {
+      itemType: 'paginationItemTruncation' as PaginationItemType,
+      pageNumber: undefined,
+      selected: false,
+      disabled: false,
+    };
+    const ariaProps = getItemAria(values);
+    expect(ariaProps).toEqual({
+      'aria-label': 'dots',
+    });
+  });
+
+  it('should return properties for first icon item', () => {
+    const values = {
+      itemType: 'paginationItemFirst' as PaginationItemType,
+      pageNumber: 2,
+      selected: false,
+      disabled: false,
+    };
+    const ariaProps = getItemAria(values);
+    expect(ariaProps).toEqual({
+      'aria-label': 'go to first page',
+    });
+  });
+
+  it('should return properties for last icon item', () => {
+    const values = {
+      itemType: 'paginationItemLast' as PaginationItemType,
+      pageNumber: 2,
+      selected: false,
+      disabled: false,
+    };
+    const ariaProps = getItemAria(values);
+    expect(ariaProps).toEqual({
+      'aria-label': 'go to last page',
+    });
+  });
+
+  it('should return properties for previous icon item', () => {
+    const values = {
+      itemType: 'paginationItemPrev' as PaginationItemType,
+      pageNumber: 2,
+      selected: false,
+      disabled: false,
+    };
+    const ariaProps = getItemAria(values);
+    expect(ariaProps).toEqual({
+      'aria-label': 'go to previous page',
+    });
+  });
+
+  it('should return properties for next icon item', () => {
+    const values = {
+      itemType: 'paginationItemNext' as PaginationItemType,
+      pageNumber: 2,
+      selected: false,
+      disabled: false,
+    };
+    const ariaProps = getItemAria(values);
+    expect(ariaProps).toEqual({
+      'aria-label': 'go to next page',
+    });
+  });
+});

@@ -1,6 +1,6 @@
-import { NewsKitIconProps } from '../../../icons';
-import { MQ } from '../../../utils';
-import { Override } from '../../../utils/overrides';
+import {NewsKitIconProps} from '../../../icons';
+import {MQ} from '../../../utils';
+import {Override} from '../../../utils/overrides';
 import {PaginationIconButtonWithShortcuts} from '../types';
 
 export type PaginationPrevItemProps = PaginationIconButtonWithShortcuts & {
@@ -8,6 +8,6 @@ export type PaginationPrevItemProps = PaginationIconButtonWithShortcuts & {
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
-    navigationIcon?: Override<NewsKitIconProps>;
-  }
+    icon?: Override<NewsKitIconProps>;
+  };
 };
