@@ -4,6 +4,7 @@ orbs:
   slack: circleci/slack@4.10.1
   aws-cli: circleci/aws-cli@3.1
   github-cli: circleci/github-cli@1.0.4
+  node: circleci/node@5.1.0
 
 slack_notify: &slack_notify
   event: 'fail'
@@ -1060,11 +1061,12 @@ jobs:
           at: ~/project
       - aws-cli/setup:
           role-arn: << parameters.aws_assume_role_arn >>
-          profile-name: "NEWSKIT-OIDC-PROFILE"
-          role-session-name: "${CIRCLE_WORKFLOW_ID}-s3-push"
+          profile-name: 'NEWSKIT-OIDC-PROFILE'
+          role-session-name: '${CIRCLE_WORKFLOW_ID}-s3-push'
       - run:
           name: Upload sites to given S3 paths
-          command: | # output current date time to a HTML file to allow a in-browser that check CDN does not return old files
+          command:
+            | # output current date time to a HTML file to allow a in-browser that check CDN does not return old files
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
@@ -1076,22 +1078,40 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  # Deprecated by push_s3_general_oidc
-  push_s3_pr:
-    executor: aws-cli/default #TODO: refactor other steps to use this orb it's much cleaner, install and setup can then be moved into the shared aws step
+  push_s3_pr_oidc:
+    parameters:
+      aws_region:
+        description: AWS Region
+        type: string
+        default: '${AWS_DEFAULT_REGION}'
+      aws_assume_role_arn:
+        description: AWS ARN For Assume Role
+        type: string
+        default: '${S3_AWS_ASSUME_ROLE_ARN}'
+    executor: aws-cli-and-terraform
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
-      - aws-cli/install
-      - aws-cli/setup
+      - aws-cli/setup:
+          role-arn: << parameters.aws_assume_role_arn >>
+          profile-name: 'NEWSKIT-OIDC-PROFILE'
+          role-session-name: '${CIRCLE_WORKFLOW_ID}-s3-push'
+      - node/install:
+          install-yarn: false
+          node-version: '16.13'
       - run:
           name: Upload PR sites to S3 subfolders
           command: |
-            export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/')
+            export AWS_DEFAULT_REGION=<< parameters.aws_region >>
+            export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/')
+            echo "${SITE_ENV} $(date)" > timestamp.html
             aws s3 cp public $s3Path_docs --recursive
-            export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs/' 'storybook')
+            aws s3 cp timestamp.html $s3Path_docs
+            export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/' 'storybook/')
+            echo $s3Path_storybook
             aws s3 cp dist-storybook $s3Path_storybook --recursive
+            aws s3 cp timestamp.html $s3Path_storybook
       - slack/notify:
           <<: *slack_notify
 
@@ -1108,8 +1128,8 @@ jobs:
               circleci-agent step halt
             else
               gh pr comment --body "You can preview these changes on:
-              Documentation Site: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'docs')
-              Storybook: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/' 'storybook')"
+              Documentation Site: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs-pr.s3-website-eu-west-1.amazonaws.com/' 'docs')
+              Storybook: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs-pr.s3-website-eu-west-1.amazonaws.com/' 'storybook')"
             fi
       - slack/notify:
           <<: *slack_notify
@@ -1463,11 +1483,11 @@ workflows:
           tf_env: false
           requires:
             - init_aws
-      - deploy_terraform:
+      - deploy_terraform_oidc:
           name: deploy_terraform_s3_pr
-          package: s3
-          context: ncu-product-platforms-context
-          apply: false
+          package: s3/dev-newskit
+          context: ncu-newskit-site-pr
+          apply: true
           tf_env: false
           environment: pr
           requires:
@@ -1504,9 +1524,9 @@ workflows:
           context: ncu-newskit-site-pr
           requires:
             - build_icons
-      - push_s3_pr:
+      - push_s3_pr_oidc:
           name: deploy_to_s3_pr
-          context: ncu-product-platforms-context
+          context: ncu-newskit-site-pr
           requires:
             - deploy_terraform_s3_pr
             - build_docs_pr
@@ -1519,6 +1539,7 @@ workflows:
       - validate_terraform:
           name: validate_terraform
           requires:
+            - deploy_terraform_s3_pr
             - validate_deploy_terraform_s3_dev
             - validate_deploy_terraform_s3_staging
             - validate_deploy_terraform_s3_prod
