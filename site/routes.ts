@@ -689,7 +689,8 @@ export const routes = [
             title: 'Image',
             page: true,
             id: '/components/image',
-            description: 'An element of media.',
+            description:
+              'Images are a type of visual media. They can appear at fixed sizes, percentages, and aspect ratios.',
             illustration: 'components/image-illustration',
           },
           {
