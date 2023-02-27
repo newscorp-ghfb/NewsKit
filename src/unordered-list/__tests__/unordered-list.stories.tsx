@@ -1,99 +1,147 @@
 import * as React from 'react';
 import {UnorderedList} from '..';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
-import {IconFilledTwitter, IconFilledMood} from '../../icons';
-import {Link} from '../../link';
+  IconFilledChevronRight,
+  IconOutlinedStarOutline,
+  IconFilledStar,
+} from '../../icons';
+import {LinkStandalone} from '../../link';
+import {getColorCssFromTheme, styled} from '../../utils';
 
-const listData = [
-  `alpha`,
-  <IconFilledTwitter
-    key="uniqueIconKey"
-    title="twitter logo"
-    overrides={{size: 'iconSize010'}}
-  />,
-  2,
-  `Lorem ipsum dolor sit amet...`,
-  <Link key="uniqueLinkKey" href="http://localhost:6006">
-    Click me!
-  </Link>,
+const LIST_DATA = [
+  `Actions & Inputs`,
+  `Feedback & Status`,
+  `Layout`,
+  `Media`,
+  `Navigation`,
+  'Text',
 ];
 
-export default {
-  title: 'Components/unordered-list',
-  component: () => 'None',
-};
+const MarginOverridesWrapper = styled.div`
+  border: 1px dashed;
+  ${getColorCssFromTheme('borderColor', 'red060')}
+`;
 
 export const StoryUnorderedListDefault = () => (
-  <>
-    <StorybookHeading>Unordered list defaults</StorybookHeading>
-    <UnorderedList>{listData}</UnorderedList>
-  </>
+  <StorybookPage>
+    <StorybookCase>
+      <UnorderedList>{LIST_DATA}</UnorderedList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryUnorderedListDefault.storyName = 'unordered-list-default';
+StoryUnorderedListDefault.storyName = 'Default';
+
+export const StoryUnorderedListVariations = () => (
+  <StorybookPage columns={{xs: '1fr', md: '1fr 1fr'}}>
+    <StorybookCase title="Text default">
+      <UnorderedList>{['Actions & Inputs', 'Actions & Inputs']}</UnorderedList>
+    </StorybookCase>
+    <StorybookCase title="Icons">
+      <UnorderedList>
+        {[
+          <IconFilledStar overrides={{size: 'iconSize010'}} />,
+          <IconOutlinedStarOutline overrides={{size: 'iconSize010'}} />,
+        ]}
+      </UnorderedList>
+    </StorybookCase>
+    <StorybookCase title="Link">
+      <UnorderedList>
+        {[
+          <LinkStandalone href="/">
+            Click here
+            <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+          </LinkStandalone>,
+          <LinkStandalone href="/">
+            Click here
+            <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+          </LinkStandalone>,
+        ]}
+      </UnorderedList>
+    </StorybookCase>
+    <StorybookCase title="External link">
+      <UnorderedList>
+        {[
+          <LinkStandalone href="https://newskit.co.uk/">
+            Click here
+          </LinkStandalone>,
+          <LinkStandalone href="https://newskit.co.uk/">
+            Click here
+          </LinkStandalone>,
+        ]}
+      </UnorderedList>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryUnorderedListVariations.storyName = 'Variations';
 
 export const StoryUnorderedListWithMarker = () => (
-  <>
-    <StorybookHeading>Unordered list</StorybookHeading>
-    <StorybookSubHeading>with markers overridden marker</StorybookSubHeading>
-    <UnorderedList listItemMarker={IconFilledMood}>{listData}</UnorderedList>
-    <br />
-    <StorybookSubHeading>
-      with markers and overridden marker iconSize
-    </StorybookSubHeading>
-    <UnorderedList
-      overrides={{marker: {size: 'iconSize020'}}}
-      listItemMarker={IconFilledMood}
-    >
-      {listData}
-    </UnorderedList>
-  </>
+  <StorybookPage>
+    <StorybookCase title="Markers overridden marker">
+      <UnorderedList listItemMarker={IconFilledStar}>{LIST_DATA}</UnorderedList>
+    </StorybookCase>
+    <StorybookCase title="Markers overridden marker iconSize">
+      <UnorderedList
+        overrides={{marker: {size: 'iconSize020'}}}
+        listItemMarker={IconFilledStar}
+      >
+        {LIST_DATA}
+      </UnorderedList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryUnorderedListWithMarker.storyName = 'unordered-list-with-marker';
+StoryUnorderedListWithMarker.storyName = 'Unordered list with marker';
 
-export const StoryUnorderedListWithMarkerAlignment = () => {
+export const StoryUnorderedListAlignment = () => {
   const multiLineListData = [
-    `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-    `It has survived not only five centuries, but also the leap into electronic typesetting,
-    remaining essentially unchanged. It was popularised in the 1960s with the release of
-    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+    `Unordered list items are not numbered, so use them in instances where ordering is not a factor. Where items are required to appear in numerical order use an ordered list.`,
+    `Use unordered lists to break up blocks of related content into manageable bulleted items to make the information easier for users to read.`,
   ];
   return (
-    <>
-      <StorybookHeading>Unordered list</StorybookHeading>
-      <StorybookSubHeading>
-        with marker in the center (default)
-      </StorybookSubHeading>
-      <UnorderedList>{multiLineListData}</UnorderedList>
-      <StorybookSubHeading>with marker at the start</StorybookSubHeading>
-      <UnorderedList markerAlign="start">{multiLineListData}</UnorderedList>
-      <StorybookSubHeading>with marker at the end</StorybookSubHeading>
-      <UnorderedList markerAlign="end">{multiLineListData}</UnorderedList>
-    </>
+    <StorybookPage columns="1fr">
+      <StorybookCase title="Marker in the center (default)">
+        <UnorderedList>{multiLineListData}</UnorderedList>
+      </StorybookCase>
+      <StorybookCase title="Marker at the start">
+        <UnorderedList markerAlign="start">{multiLineListData}</UnorderedList>
+      </StorybookCase>
+      <StorybookCase title="Marker at the end">
+        <UnorderedList markerAlign="end">{multiLineListData}</UnorderedList>
+      </StorybookCase>
+    </StorybookPage>
   );
 };
-StoryUnorderedListWithMarkerAlignment.storyName =
-  'unordered-list-with-marker-alignment';
+StoryUnorderedListAlignment.storyName = 'Alignment';
 
-export const StoryUnorderedListWithLogicalProps = () => (
-  <>
-    <StorybookHeading>Unordered list</StorybookHeading>
-    <StorybookSubHeading>with logical props</StorybookSubHeading>
-    <UnorderedList
-      overrides={{
-        paddingInline: 'space020',
-        paddingBlock: 'space040',
-        marginBlock: 'space060',
-        marginInline: 'space080',
-      }}
-    >
-      {listData}
-    </UnorderedList>
-  </>
+export const StoryUnorderedListLogicalProps = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <MarginOverridesWrapper>
+        <UnorderedList
+          overrides={{
+            paddingBlock: 'space050',
+            marginBlock: 'space050',
+            paddingInline: 'space050',
+            marginInline: 'space050',
+          }}
+        >
+          {LIST_DATA}
+        </UnorderedList>
+      </MarginOverridesWrapper>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryUnorderedListWithLogicalProps.storyName =
-  'unordered-list-with-logical-props';
+StoryUnorderedListLogicalProps.storyName = 'Logical props';
+
+export default {
+  title: 'Components/Unordered list',
+  component: UnorderedList,
+  parameters: {
+    nkDocs: {
+      title: 'Unordered list',
+      url: 'https://newskit.co.uk/components/unordered-list',
+      description:
+        'Unordered lists make blocks of related text easier to read, structuring information of equal value into manageable bulleted items.',
+    },
+  },
+};
