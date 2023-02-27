@@ -25,17 +25,11 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: [
-          {loader: 'cache-loader'},
-          {loader: 'thread-loader'},
-          {
-            loader: 'ts-loader',
-            options: {
-              configFile: 'e2e/tsconfig.json',
-              transpileOnly: true,
-            },
-          },
-        ],
+        loader: 'ts-loader',
+        options: {
+          configFile: 'e2e/tsconfig.json',
+          transpileOnly: true,
+        },
         exclude: [
           /src\/icons\/(filled|outlined)\/(material|material-outlined)\/\.*/,
         ],
