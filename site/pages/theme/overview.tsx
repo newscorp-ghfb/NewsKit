@@ -27,16 +27,7 @@ const HeaderImage = () => (
 
 const themeRouteList: Item[] =
   routes.filter(route => route.title === 'Theme')[0].subNav || [];
-
-const themeFoundationRouteList: Item[] =
-  themeRouteList.filter(route => route.title === 'Foundations')[0].subNav || [];
-
-const themePresetsRouteList: Item[] =
-  themeRouteList.filter(route => route.title === 'Presets')[0].subNav || [];
-
-const themeThemingRouteList: Item[] =
-  themeRouteList.filter(route => route.title === 'Creating and using themes')[0]
-    .subNav || [];
+const themeCategories = themeRouteList?.slice(1);
 
 const getCardList = (routeList: Item[]) =>
   routeList
@@ -50,10 +41,6 @@ const getCardList = (routeList: Item[]) =>
       href: id,
       description,
     })) as MediaItem[];
-
-const themeFoundationRouteListCards = getCardList(themeFoundationRouteList);
-const themePresetsRouteListCards = getCardList(themePresetsRouteList);
-const themeThemingRouteListCards = getCardList(themeThemingRouteList);
 
 const pageDescription = `NewsKit offers a robust and flexible theming system,
 enabling brands to retain a unique identity while building consistent, accessible products.`;
@@ -80,42 +67,19 @@ const Overview = (layoutProps: LayoutProps) => (
         </HeaderIndex>
         <Grid lgMargin="sizing000" xsRowGutter="sizing000">
           <ComponentPageCell>
-            <ContentSection sectionName="Foundations">
-              <ContentPrimary
-                headline="Foundations"
-                description="NewsKit foundations define the look and feel of digital products. Foundations include borders,
-                  breakpoints, colours, fonts, motion, shadows, sizing and space."
-              >
-                <MediaList
-                  cards={themeFoundationRouteListCards}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ContentPrimary>
-            </ContentSection>
-            <ContentSection sectionName="Presets">
-              <ContentPrimary
-                headline="Presets"
-                description="A collection of related foundational design tokens combined into a preset to define
-                  reusable styles, typography or transitions. There are three categories of presets:"
-              >
-                <MediaList
-                  cards={themePresetsRouteListCards}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ContentPrimary>
-            </ContentSection>
-            <ContentSection sectionName="Creating and using themes">
-              <ContentPrimary
-                headline="Creating and using themes"
-                description="Learn how to create NewsKit themes in Figma and code, and unlock the power
-                  of presets and component defaults to further customise NewsKit components."
-              >
-                <MediaList
-                  cards={themeThemingRouteListCards}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ContentPrimary>
-            </ContentSection>
+            {themeCategories.map(({title, description, subNav = []}) => (
+              <ContentSection sectionName={title as string}>
+                <ContentPrimary
+                  headline={title as string}
+                  description={description}
+                >
+                  <MediaList
+                    cards={getCardList(subNav)}
+                    gridProps={{xsRowGutter: 'space050'}}
+                  />
+                </ContentPrimary>
+              </ContentSection>
+            ))}
           </ComponentPageCell>
         </Grid>
       </ThemeProviderSite>

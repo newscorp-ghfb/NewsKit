@@ -199,6 +199,8 @@ export const routes = [
       {
         title: 'Foundations',
         id: '/theme/foundation',
+        description:
+          'NewsKit foundations define the look and feel of digital products. Foundations include borders, breakpoints, colours, fonts, motion, shadows, sizing and space.',
         subNav: [
           {
             title: 'Borders',
@@ -327,6 +329,8 @@ export const routes = [
       {
         title: 'Presets',
         id: '/theme/presets',
+        description:
+          'A collection of related foundational design tokens combined into a preset to define reusable styles, typography or transitions. There are three categories of presets:',
         subNav: [
           {
             title: 'Style Presets',
@@ -361,6 +365,8 @@ export const routes = [
       {
         title: 'Creating and using themes',
         id: '/theme/theming',
+        description:
+          'Learn how to create NewsKit themes in Figma and code, and unlock the power of presets and component defaults to further customise NewsKit components.',
         subNav: [
           {
             title: 'Overview',
