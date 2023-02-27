@@ -41,13 +41,13 @@ Scripts should be named using the following naming convention:
 
 * `e2e:build` -> builds the end to end tests.
 
-* `e2e:serve` -> runs the end to end tests on port 8080.
+* `e2e:serve` -> serves the end to end component build on port 8080.
 
-* `e2e:comps` -> opens the cypress test runner in interactive mode and loads the tests found on cypress/components folder (e2e:serve needs to be running prior to this).
+* `e2e:comps:open` -> opens the cypress test runner in interactive mode and loads the tests found on cypress/components folder (e2e:serve needs to be running prior to this).
 
 * `e2e:comps:ci` -> starts e2e:serve and runs the cypress components tests headlessly.
 
-* `e2e:docs` -> opens the cypress test runner and loads the tests found on cypress/site folder.
+* `e2e:docs:open` -> opens the cypress test runner and loads the tests found on cypress/site folder.
 
 * `e2e:docs:ci` -> starts serve:docs and runs the cypress docs tests headlessly.
 
