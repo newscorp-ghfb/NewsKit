@@ -417,6 +417,8 @@ export const routes = [
       {
         title: 'Actions & Inputs',
         id: '/components/action-and-inputs',
+        description:
+          'Components that allow users to take action on a feature or enable users to input data.',
         subNav: [
           {
             title: 'Button',
@@ -495,6 +497,8 @@ export const routes = [
       {
         title: 'Feedback & Status',
         id: '/components/feedback-and-status',
+        description:
+          'Components that provide users with system or user feedback & status.',
         subNav: [
           {
             title: 'Banner',
@@ -558,6 +562,8 @@ export const routes = [
       {
         title: 'Layout',
         id: '/components/layout',
+        description:
+          'Components that help to define the fundamental spacial structure of a feature or page.',
         subNav: [
           {
             title: 'Block',
@@ -667,6 +673,7 @@ export const routes = [
       {
         title: 'Media',
         id: '/components/media',
+        description: 'Components that provide or control rich media.',
         subNav: [
           {
             title: 'Audio Player',
@@ -696,6 +703,8 @@ export const routes = [
       {
         title: 'Navigation',
         id: '/components/navigation',
+        description:
+          'Components that enable users to move between pages or content.',
         subNav: [
           {
             title: 'Accordion',
@@ -766,6 +775,7 @@ export const routes = [
       {
         title: 'Text',
         id: '/components/text',
+        description: 'Components that display specific written content.',
         subNav: [
           {
             title: 'Byline',
@@ -836,6 +846,7 @@ export const routes = [
       {
         title: 'Third Party Integrations',
         id: '/components/third-party',
+        description: 'Components that interact with a third-party service.',
         subNav: [
           {
             title: 'Consent',
@@ -874,6 +885,8 @@ export const routes = [
       {
         title: 'Utilities',
         id: '/utils',
+        description:
+          'Utilities that allow for modification of a single trait, typically a single CSS property.',
         subNav: [
           {
             title: 'Emotion',
@@ -915,6 +928,7 @@ export const routes = [
       {
         title: 'Deprecated',
         id: '/deprecated',
+        description: 'These components are no longer supported.',
         subNav: [
           {
             title: 'Aspect Ratio',

@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Block,
-  Grid,
-  StructuredList,
-  StructuredListCell,
-  StructuredListItem,
-  TextBlock,
-} from 'newskit';
+import {Grid} from 'newskit';
 import {
   ContentPrimary,
   ContentSection,
@@ -30,42 +23,7 @@ const HeaderImage = () => (
 const componentsRouteList: Item[] =
   routes.filter(route => route.title === 'Components')[0].subNav || [];
 
-const componentsActionsAndInputsRouteList: Item[] =
-  componentsRouteList.filter(route => route.title === 'Actions & Inputs')[0]
-    .subNav || [];
-
-const componentsFeedbackAndStatusRouteList: Item[] =
-  componentsRouteList.filter(route => route.title === 'Feedback & Status')[0]
-    .subNav || [];
-
-const componentsLayoutRouteList: Item[] =
-  componentsRouteList.filter(route => route.title === 'Layout')[0].subNav || [];
-
-const componentsMediaRouteList: Item[] =
-  componentsRouteList.filter(route => route.title === 'Media')[0].subNav || [];
-
-const componentsNavigationRouteList: Item[] =
-  componentsRouteList.filter(route => route.title === 'Navigation')[0].subNav ||
-  [];
-
-const componentsTextRouteList: Item[] =
-  componentsRouteList.filter(route => route.title === 'Text')[0].subNav || [];
-
-const componentsThirdPartyIntegrationsRouteList: Item[] =
-  componentsRouteList.filter(
-    route => route.title === 'Third Party Integrations',
-  )[0].subNav || [];
-
-const componentUtilitiesRouteList: Item[] =
-  componentsRouteList?.filter(route => route.id === '/utils')[0].subNav || [];
-
-console.log(componentUtilitiesRouteList, 'test');
-
-console.log(componentsThirdPartyIntegrationsRouteList, 'test');
-
-const componentDeprecatedRouteList: Item[] =
-  componentsRouteList.filter(route => route.title === 'Deprecated')[0].subNav ||
-  [];
+const componentCategories = componentsRouteList?.slice(1);
 
 const getCardList = (routeList: Item[]) =>
   routeList
@@ -79,25 +37,6 @@ const getCardList = (routeList: Item[]) =>
       href: id,
       description,
     })) as MediaItem[];
-
-const componentsActionsAndInputsRouteListCards = getCardList(
-  componentsActionsAndInputsRouteList,
-);
-const componentsFeedbackAndStatusRouteListCards = getCardList(
-  componentsFeedbackAndStatusRouteList,
-);
-const componentsLayoutRouteListCards = getCardList(componentsLayoutRouteList);
-const componentsMediaRouteListCards = getCardList(componentsMediaRouteList);
-const ccomponentsNavigationRouteListCards = getCardList(
-  componentsNavigationRouteList,
-);
-const componentsTextRouteListCards = getCardList(componentsTextRouteList);
-const componentsThirdPartyIntegrationsRouteListCards = getCardList(
-  componentsThirdPartyIntegrationsRouteList,
-);
-const componentDeprecatedRouteListCards = getCardList(
-  componentDeprecatedRouteList,
-);
 
 const pageDescription = `Components are key building blocks of the NewsKit design system.`;
 
@@ -117,135 +56,19 @@ const Overview = (layoutProps: LayoutProps) => (
     </HeaderIndex>
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
       <ComponentPageCell>
-        <ContentSection sectionName="Foundations">
-          <ContentPrimary
-            headline="Actions & Inputs"
-            description="Components that allow users to take action on a feature or enable users to input data."
-          >
-            <MediaList
-              cards={componentsActionsAndInputsRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="Feedback & Status">
-          <ContentPrimary
-            headline="Feedback & Status"
-            description="Components that provide users with system or user feedback & status."
-          >
-            <MediaList
-              cards={componentsFeedbackAndStatusRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="Layout">
-          <ContentPrimary
-            headline="Layout"
-            description="Components that help to define the fundamental spacial structure of a feature or page."
-          >
-            <MediaList
-              cards={componentsLayoutRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="Media">
-          <ContentPrimary
-            headline="Media"
-            description="Components that provide or control rich media."
-          >
-            <MediaList
-              cards={componentsMediaRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="Navigation">
-          <ContentPrimary
-            headline="Navigation"
-            description="Components that enable users to move between pages or content."
-          >
-            <MediaList
-              cards={ccomponentsNavigationRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="Text">
-          <ContentPrimary
-            headline="Text"
-            description="Components that display specific written content."
-          >
-            <MediaList
-              cards={componentsTextRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="Third Party Integrations">
-          <ContentPrimary
-            headline="Third Party Integrations"
-            description="Components that interact with a third-party service."
-          >
-            <MediaList
-              cards={componentsThirdPartyIntegrationsRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="Utilities">
-          <ContentPrimary
-            headline="Utilities"
-            description="Utilities that allow for modification of a single trait, typically a single CSS property."
-          >
-            <Block stylePreset="componentsUtilitiesStructuredList">
-              <StructuredList divider>
-                {componentUtilitiesRouteList?.subNav?.map(
-                  (util: {
-                    title: string;
-                    page: boolean;
-                    id: string;
-                    description: string;
-                  }) => (
-                    <StructuredListItem
-                      key={util.id}
-                      href={util.id}
-                      ariaLabel={util.title}
-                    >
-                      <StructuredListCell>
-                        <TextBlock
-                          stylePreset="inkContrast"
-                          typographyPreset="utilityHeading010"
-                        >
-                          {util.title}
-                        </TextBlock>
-                        <TextBlock
-                          marginBlockStart="space030"
-                          stylePreset="inkContrast"
-                          typographyPreset="utilityBody020"
-                        >
-                          {util.description}
-                        </TextBlock>
-                      </StructuredListCell>
-                    </StructuredListItem>
-                  ),
-                )}
-              </StructuredList>
-            </Block>
-          </ContentPrimary>
-        </ContentSection>
-        <ContentSection sectionName="Deprecated">
-          <ContentPrimary
-            headline="Deprecated"
-            description="These components are no longer supported."
-          >
-            <MediaList
-              cards={componentDeprecatedRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
-          </ContentPrimary>
-        </ContentSection>
+        {componentCategories.map(({title, description, subNav = []}) => (
+          <ContentSection sectionName={title as string}>
+            <ContentPrimary
+              headline={title as string}
+              description={description}
+            >
+              <MediaList
+                cards={getCardList(subNav)}
+                gridProps={{xsRowGutter: 'space050'}}
+              />
+            </ContentPrimary>
+          </ContentSection>
+        ))}
       </ComponentPageCell>
     </Grid>
   </Layout>
