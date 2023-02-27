@@ -210,6 +210,7 @@ exports[`Foundation Page Template renders with feature card 1`] = `
   --color-interactiveDisabled010: #DEE2E5;
   --color-interactiveVisited010: #6454E3;
   --color-interactiveFocus010: #3768FB;
+  --color-interactiveFocus020: #FFFFFF;
   --color-inkWhiteSubtle: rgba(255,255,255,0.8);
   --color-inkWhiteContrast: #FFFFFF;
   --color-inkBrand030: #017582;
@@ -689,6 +690,7 @@ exports[`Foundation Page Template renders with mandatory props only 1`] = `
   --color-interactiveDisabled010: #DEE2E5;
   --color-interactiveVisited010: #6454E3;
   --color-interactiveFocus010: #3768FB;
+  --color-interactiveFocus020: #FFFFFF;
   --color-inkWhiteSubtle: rgba(255,255,255,0.8);
   --color-inkWhiteContrast: #FFFFFF;
   --color-inkBrand030: #017582;

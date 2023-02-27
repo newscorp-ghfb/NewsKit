@@ -1,5 +1,6 @@
 import {StylePreset} from '../theme/types';
 import {defaultFocusVisible} from '../utils/default-focus-visible';
+import {inverseFocusVisible} from '../utils/inverse-focus-visible';
 
 export default {
   tagPrimary: {
@@ -36,6 +37,6 @@ export default {
     active: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 } as Record<string, StylePreset>;

@@ -33,6 +33,28 @@ describe('textCrop', () => {
     expect(textCrop(cropData)).toEqual(expectedResult);
   });
 
+  test(`handles lineHeight number as string to support legacy theme json`, () => {
+    const cropData: TextCropProps = {
+      fontSize: '12px',
+      lineHeight: '1.6',
+      fontMetrics: exampleFontMetrics,
+    };
+
+    const expectedResult: TextCropResults = {
+      '::after': {content: "''", display: 'block', marginTop: '-0.465em'},
+      '::before': {
+        content: "''",
+        display: 'block',
+        marginBottom: '-0.443em',
+      },
+      fontSize: '12px',
+      lineHeight: '19.2px',
+      padding: '0.5px 0px',
+    };
+
+    expect(textCrop(cropData)).toEqual(expectedResult);
+  });
+
   test(`throws an error if invalid fontSize units passed`, () => {
     const cropData: TextCropProps = {
       fontSize: '12metres' as TextCropProps['fontSize'],

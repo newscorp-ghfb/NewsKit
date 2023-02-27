@@ -94,6 +94,7 @@ Object {
     "inkSubtle": "#6A6A6A",
     "interactiveDisabled010": "#E2E2E2",
     "interactiveFocus010": "#3768FB",
+    "interactiveFocus020": "#FFFFFF",
     "interactiveInput010": "#F1F1F1",
     "interactiveInput020": "#919191",
     "interactiveInput030": "#ECF1FF",
@@ -302,6 +303,7 @@ Object {
   "name": "my theme",
   "outlines": Object {
     "outlineColorDefault": "#3768FB",
+    "outlineColorInverse": "#FFFFFF",
     "outlineOffsetDefault": "2px",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "2px",

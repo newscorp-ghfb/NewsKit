@@ -214,7 +214,7 @@ const FlagComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               Avoid using flags for categorisation other than status. Consider
-              using a <Link href="/components/tag/">tag</Link> instead.
+              using a <Link href="/components/tag/">tag</Link> instead
             </>
           ),
           kind: UsageKind.DONT,

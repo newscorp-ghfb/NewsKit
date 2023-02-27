@@ -1,5 +1,6 @@
 import {StylePreset} from '../theme/types';
 import {defaultFocusVisible} from '../utils/default-focus-visible';
+import {inverseFocusVisible} from '../utils/inverse-focus-visible';
 
 export default {
   linkStandalone: {
@@ -36,7 +37,7 @@ export default {
       iconColor: '{{colors.interactiveInverse030}}',
       textDecoration: 'underline',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 
   linkInline: {
@@ -92,6 +93,6 @@ export default {
       color: '{{colors.interactiveInverse040}}',
       iconColor: '{{colors.interactiveInverse040}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 } as Record<string, StylePreset>;

@@ -7,26 +7,22 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "3.74.0"
+      version = "4.52.0"
     }
   }
   backend "s3" {
-    bucket = "newskit-docs-dev-terraform-state"
-    key    = "newskit/s3-newskit/terraform.tfstate"
+    bucket         = "newskit-docs-prod-terraform-state"
+    dynamodb_table = "newskit-docs-prod-terraform-state-lock"
+    # Gets changed to "newskit/s3/prod-newskit/staging/terraform.tfstate"
+    # or "newskit/s3/prod-newskit/prod/terraform.tfstate"
+    # by the Circle step called deploy_terraform_oidc
+    key            = "newskit/s3/prod-newskit/terraform.tfstate"
   }
 }
 
 locals {
   tags = {
     Name               = "ncu-newskit-s3${var.tag_name_suffix}"
-    Environment        = var.environment
-    ServiceOwner       = "product-platforms"
-    ServiceName        = "ncu-newskit"
-    ServiceCatalogueId = 331
-  }
-
-  tags2 = {
-    Name               = "ncu-newskit-s3${var.tag_name_suffix2}"
     Environment        = var.environment
     ServiceOwner       = "product-platforms"
     ServiceName        = "ncu-newskit"

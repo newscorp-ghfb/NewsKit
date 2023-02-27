@@ -94,6 +94,7 @@ Object {
     "inkSubtle": "{{colors.neutral040}}",
     "interactiveDisabled010": "{{colors.neutral080}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.blackTint090}}",
     "interactiveInput010": "{{colors.neutral090}}",
     "interactiveInput020": "{{colors.neutral060}}",
     "interactiveInput030": "{{colors.blue090}}",
@@ -304,6 +305,7 @@ Object {
   },
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -3516,7 +3518,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -3661,7 +3663,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -3832,7 +3834,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -4428,7 +4430,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -4576,7 +4578,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -4747,7 +4749,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -5161,7 +5163,7 @@ Object {
       "textDecoration": "underline",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -5218,7 +5220,7 @@ Object {
       "textDecoration": "none",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -5290,7 +5292,7 @@ Object {
       "iconColor": "{{colors.interactiveInverse020}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -6025,7 +6027,7 @@ Object {
       "iconColor": "{{colors.inkInverse}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",

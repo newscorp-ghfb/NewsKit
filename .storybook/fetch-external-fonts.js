@@ -75,15 +75,6 @@ const fonts = [
     ]
   },
   {
-    fontName: "GillSansMTStd-Medium",
-    fileName: "GillSansMTStd-Medium",
-    fontFamily: "GillSansMTStd-Medium",
-    sources: [
-      `${fontCdnTheTimes}/GillSans/GillSansMTStd-Medium-ff809aff43.woff2`,
-      `${fontCdnTheTimes}/GillSans/GillSansMTStd-Medium-45ad758029.ttf`
-    ]
-  },
-  {
     fontName: "Retina-Book",
     fileName: "Retina-Book",
     fontFamily: "Retina",

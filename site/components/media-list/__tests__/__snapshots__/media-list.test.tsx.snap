@@ -1323,7 +1323,7 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-18:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
