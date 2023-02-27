@@ -196,7 +196,7 @@
     "react-dom": "18",
     "react-helmet": "^5.2.1",
     "react-markdown": "^6.0.0",
-    "react-phone-number-input": "^3.1.23",
+    "react-phone-number-input": "^3.2.19",
     "react-syntax-highlighter": "^13.0.0",
     "react-test-renderer": "18",
     "start-server-and-test": "^1.14.0",

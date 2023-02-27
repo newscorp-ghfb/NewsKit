@@ -2,7 +2,8 @@ import * as React from 'react';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
-import {Form, FormInput, FormInputCheckbox} from '..';
+import {UseFormReturn} from 'react-hook-form';
+import {Form, FormInput, FormInputCheckbox, FormRef} from '..';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -51,7 +52,7 @@ export const StoryFormWithSubmitValidation = () => (
     <Block>
       <StorybookSubHeading>Input validation mode: onSubmit</StorybookSubHeading>
       <Form onSubmit={onSubmit}>
-        <Block spaceStack="space050">
+        <Block marginBlockEnd="space050">
           <TextInput
             label="Email"
             name="email"
@@ -65,7 +66,7 @@ export const StoryFormWithSubmitValidation = () => (
             }}
           />
         </Block>
-        <Block spaceStack="space050">
+        <Block marginBlockEnd="space050">
           <TextInput
             label="Username"
             name="username"
@@ -93,10 +94,10 @@ export const StoryFormWithResolver = () => (
       <Block>
         <StorybookSubHeading>Yup Schema Validation</StorybookSubHeading>
         <Form onSubmit={onSubmit} resolver={yupResolver(schema)}>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput label="Email" name="email" data-testid="email-input" />
           </Block>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput
               label="Username"
               name="username"
@@ -121,7 +122,7 @@ export const StoryFormWithSubmitValidationAndAssistiveText = () => (
         onSubmit validation and assistive text
       </StorybookSubHeading>
       <Form onSubmit={onSubmit}>
-        <Block spaceStack="space050">
+        <Block marginBlockEnd="space050">
           <TextInput
             label="Email"
             name="email"
@@ -136,7 +137,7 @@ export const StoryFormWithSubmitValidationAndAssistiveText = () => (
             }}
           />
         </Block>
-        <Block spaceStack="space050">
+        <Block marginBlockEnd="space050">
           <TextInput
             label="Username"
             name="username"
@@ -170,7 +171,7 @@ export const StoryFormSizes = () => (
       >
         <Form onSubmit={onSubmit} validationMode="onBlur">
           <StorybookSubHeading>large text input</StorybookSubHeading>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput
               size="large"
               label="Email"
@@ -186,7 +187,7 @@ export const StoryFormSizes = () => (
               }}
             />
           </Block>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput
               size="large"
               label="Username"
@@ -206,7 +207,7 @@ export const StoryFormSizes = () => (
         </Form>
         <Form onSubmit={onSubmit} validationMode="onBlur">
           <StorybookSubHeading>medium text input</StorybookSubHeading>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput
               size="medium"
               label="Email"
@@ -222,7 +223,7 @@ export const StoryFormSizes = () => (
               }}
             />
           </Block>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput
               size="medium"
               label="Username"
@@ -242,7 +243,7 @@ export const StoryFormSizes = () => (
         </Form>
         <Form onSubmit={onSubmit} validationMode="onBlur">
           <StorybookSubHeading>small text input</StorybookSubHeading>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput
               size="small"
               label="Email"
@@ -258,7 +259,7 @@ export const StoryFormSizes = () => (
               }}
             />
           </Block>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput
               size="small"
               label="Username"
@@ -284,7 +285,17 @@ StoryFormSizes.storyName = 'form-sizes';
 
 export const StoryFormWithPhoneInput = () => {
   const FormWithPhoneInput: React.FC = () => {
-    const [value, setValue] = React.useState();
+    const [phoneInputValue, setPhoneInputValue] = React.useState();
+    const [formControl, setFormControl] = React.useState<
+      UseFormReturn['control'] | null
+    >();
+
+    const formControlRefHandler = (formRef: FormRef | null) => {
+      if (formRef && formRef.control) {
+        setFormControl(formRef.control);
+      }
+    };
+
     return (
       <Block>
         <Stack
@@ -292,8 +303,12 @@ export const StoryFormWithPhoneInput = () => {
           stackDistribution="space-between"
           spaceInline="space030"
         >
-          <Form onSubmit={onSubmit} validationMode="onBlur">
-            <Block spaceStack="space050">
+          <Form
+            ref={newRef => formControlRefHandler(newRef)}
+            onSubmit={onSubmit}
+            validationMode="onBlur"
+          >
+            <Block marginBlockEnd="space050">
               <TextInput
                 size="small"
                 label="Username"
@@ -313,13 +328,16 @@ export const StoryFormWithPhoneInput = () => {
               <StorybookLabel htmlFor="phone-number">
                 Phone number
               </StorybookLabel>
-              <PhoneInputWithCountry
-                placeholder="Enter phone number"
-                name="phonenumber"
-                value={value}
-                onChange={setValue}
-                id="phone-number"
-              />
+              {formControl && (
+                <PhoneInputWithCountry
+                  placeholder="Enter phone number"
+                  name="phonenumber"
+                  value={phoneInputValue}
+                  control={formControl}
+                  onChange={setPhoneInputValue}
+                  id="phone-number"
+                />
+              )}
             </Block>
             <Button type="submit">Submit</Button>
           </Form>
@@ -350,7 +368,7 @@ export const StoryFormWithCustomStyles = () => {
       <StorybookHeading>Form with custom styles</StorybookHeading>
       <Block>
         <StyledForm onSubmit={onSubmit}>
-          <Block spaceStack="space050">
+          <Block marginBlockEnd="space050">
             <TextInput
               label="Email"
               name="email"
@@ -375,9 +393,9 @@ StoryFormWithCustomStyles.storyName = 'form-with-custom-styles';
 export const StoryFormWithTextInputAndFormInput = () => (
   <>
     <StorybookHeading>Use Tab to move through the inputs</StorybookHeading>
-    <Block spaceStack="space050" />
+    <Block marginBlockEnd="space050" />
     <Form onSubmit={onSubmit} validationMode="onBlur" reValidationMode="onBlur">
-      <Block spaceStack="space050">
+      <Block marginBlockEnd="space050">
         <TextInput
           label="Username"
           name="username"
@@ -387,7 +405,7 @@ export const StoryFormWithTextInputAndFormInput = () => (
           }}
         />
       </Block>
-      <Block spaceStack="space050">
+      <Block marginBlockEnd="space050">
         <TextInput label="FAQ" name="faq" data-testid="faq-input" />
       </Block>
       <FormInput
@@ -421,7 +439,7 @@ export const StoryFormWithLogicalProps = () => (
         paddingBlock="space050"
         paddingInline="space030"
       >
-        <Block spaceStack="space050">
+        <Block marginBlockEnd="space050">
           <TextInput
             label="Email"
             name="email"
@@ -441,7 +459,7 @@ export const StoryFormWithLogicalProps = () => (
     <StorybookSubHeading>Logical margin </StorybookSubHeading>
     <StyledDiv>
       <Form onSubmit={onSubmit} marginBlock="space050" marginInline="space030">
-        <Block spaceStack="space050">
+        <Block marginBlockEnd="space050">
           <TextInput
             label="Email"
             name="email"
