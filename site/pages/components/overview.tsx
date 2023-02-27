@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import {
   Block,
@@ -58,13 +57,11 @@ const componentsThirdPartyIntegrationsRouteList: Item[] =
   )[0].subNav || [];
 
 const componentUtilitiesRouteList: Item[] =
-  componentsRouteList.filter(route => route.title === 'Utilities')[0].subNav ||
-  [];
+  componentsRouteList?.filter(route => route.id === '/utils')[0].subNav || [];
 
-const componentsSubNav: any[] | undefined = routes.find(
-  r => r.title === 'Components',
-)?.subNav;
-const utilities = componentsSubNav?.find(e => e.id === '/utils');
+console.log(componentUtilitiesRouteList, 'test');
+
+console.log(componentsThirdPartyIntegrationsRouteList, 'test');
 
 const componentDeprecatedRouteList: Item[] =
   componentsRouteList.filter(route => route.title === 'Deprecated')[0].subNav ||
@@ -97,9 +94,6 @@ const ccomponentsNavigationRouteListCards = getCardList(
 const componentsTextRouteListCards = getCardList(componentsTextRouteList);
 const componentsThirdPartyIntegrationsRouteListCards = getCardList(
   componentsThirdPartyIntegrationsRouteList,
-);
-const componentUtilitiesRouteListCards = getCardList(
-  componentUtilitiesRouteList,
 );
 const componentDeprecatedRouteListCards = getCardList(
   componentDeprecatedRouteList,
@@ -205,13 +199,9 @@ const Overview = (layoutProps: LayoutProps) => (
             headline="Utilities"
             description="Utilities that allow for modification of a single trait, typically a single CSS property."
           >
-            <MediaList
-              cards={componentUtilitiesRouteListCards}
-              gridProps={{xsRowGutter: 'space050'}}
-            />
             <Block stylePreset="componentsUtilitiesStructuredList">
               <StructuredList divider>
-                {utilities?.subNav?.map(
+                {componentUtilitiesRouteList?.subNav?.map(
                   (util: {
                     title: string;
                     page: boolean;
