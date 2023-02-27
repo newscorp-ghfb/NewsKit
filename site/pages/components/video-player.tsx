@@ -71,10 +71,7 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
             Brightcove player
           </Link>{' '}
           that can be themed, by using{' '}
-          <Link
-            href="https://www.newskit.co.uk/theme/foundation/design-tokens/"
-            target="_blank"
-          >
+          <Link href="/theme/foundation/design-tokens/">
             NewsKit design tokens
           </Link>
           .
@@ -92,9 +89,11 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
             href="https://player.support.brightcove.com/getting-started/index.html"
             target="_blank"
           >
-            Brightcove’s video player
+            Brightcove’s video player.
           </Link>
-          . The subcomponents listed below can be enabled in the{' '}
+          <br />
+          <br />
+          The subcomponents listed below can be enabled in the{' '}
           <Link
             target="_blank"
             href="https://player.support.brightcove.com/general/player-configuration-guide.html"
