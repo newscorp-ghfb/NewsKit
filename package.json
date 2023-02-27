@@ -25,7 +25,7 @@
     "lint:code:fix": "yarn lint:code --fix",
     "lint:markdown": "markdownlint -c ./.markdownlint.json *.md **/*.md",
     "lint:next": "next lint site",
-    "lint": "yarn lint:code && yarn lint:markdown && yarn lint:next",
+    "lint": "concurrently --names \"code,markdown,next\" \"yarn lint:code\" \"yarn lint:markdown\" \"yarn lint:next\"",
     "test": "yarn lint && yarn test:unit:dev",
     "test:unit:run:local": "yarn test:unit:run --maxWorkers=50%",
     "test:unit:run": "node --max-old-space-size=8192 --expose-gc ./node_modules/.bin/jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
