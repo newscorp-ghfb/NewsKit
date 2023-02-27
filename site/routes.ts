@@ -692,6 +692,14 @@ export const routes = [
             description: 'An element of media.',
             illustration: 'components/image-illustration',
           },
+          {
+            title: 'Video Player',
+            page: true,
+            id: '/components/video-player',
+            description:
+              'The video player component allows a user to play and control video content.',
+            illustration: 'components/video-player/hero',
+          },
         ],
       },
       {
