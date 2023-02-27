@@ -24,14 +24,14 @@
     }
   },
   "fontFamily030": {
-    "fontFamily": "GillSansMTStd-Medium",
+    "fontFamily": "Roboto-Medium",
     "fontMetrics": {
       "fontWeight010": {
-        "capHeight": 682,
-        "ascent": 682,
-        "descent": -318,
-        "lineGap": 200,
-        "unitsPerEm": 1000
+        "capHeight": 1456,
+        "ascent": 1900,
+        "descent": -500,
+        "lineGap": 0,
+        "unitsPerEm": 2048
       }
     }
   },

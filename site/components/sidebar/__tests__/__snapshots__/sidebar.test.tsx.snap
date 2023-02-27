@@ -561,7 +561,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-444 {
+.emotion-453 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -569,7 +569,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-445 {
+.emotion-454 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -579,7 +579,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   width: 100%;
 }
 
-.emotion-448 {
+.emotion-457 {
   margin-bottom: 32px;
 }
 
@@ -2446,6 +2446,56 @@ exports[`Sidebar renders correctly when closed 1`] = `
                         class="emotion-41"
                         id="mock-nk-1"
                       >
+                        Community
+                      </h2>
+                    </div>
+                    <ul
+                      aria-labelledby="mock-nk-1"
+                    >
+                      <li
+                        class="nk-menu-item emotion-12"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-13"
+                          data-testid="buttonLink"
+                          href="/components/community/how-to-contribute"
+                        >
+                          <span
+                            class="emotion-14"
+                          >
+                            How to contribute
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-12"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-13"
+                          data-testid="buttonLink"
+                          href="/components/community/community-index"
+                        >
+                          <span
+                            class="emotion-14"
+                          >
+                            Community index
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="nk-menu-group emotion-39"
+                  >
+                    <div
+                      class="emotion-40"
+                    >
+                      <h2
+                        class="emotion-41"
+                        id="mock-nk-1"
+                      >
                         Third Party Integrations
                       </h2>
                     </div>
@@ -3036,11 +3086,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </div>
               </ul>
               <div
-                class="emotion-444"
+                class="emotion-453"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-445"
+                  class="emotion-454"
                   data-testid="divider"
                 />
               </div>
@@ -3061,7 +3111,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
             />
           </nav>
           <div
-            class="emotion-448"
+            class="emotion-457"
           />
         </div>
       </div>
@@ -3749,7 +3799,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   display: block;
 }
 
-.emotion-442 {
+.emotion-451 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -3757,7 +3807,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-443 {
+.emotion-452 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -3768,57 +3818,57 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen {
-  .emotion-444 {
+  .emotion-453 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-444 {
+  .emotion-453 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-444 {
+  .emotion-453 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-444 {
+  .emotion-453 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-444 {
+  .emotion-453 {
     display: block;
   }
 }
 
-.emotion-446 {
+.emotion-455 {
   margin-bottom: 32px;
 }
 
-.emotion-447 {
+.emotion-456 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-448 {
+.emotion-457 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-449 {
+.emotion-458 {
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-450 {
+.emotion-459 {
   margin: 0;
   color: #2E3F54;
   font-family: "Poppins",sans-serif;
@@ -3828,11 +3878,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-450 svg {
+.emotion-459 svg {
   fill: #2E3F54;
 }
 
-.emotion-451 {
+.emotion-460 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -3842,7 +3892,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-451 {
+  .emotion-460 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3850,26 +3900,26 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-451 {
+  .emotion-460 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-451.emotion-451 {
+.emotion-460.emotion-460 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-454 {
+.emotion-463 {
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 44px;
 }
 
-.emotion-455 {
+.emotion-464 {
   display: block;
   color: #2E3F54;
   font-family: "Poppins",sans-serif;
@@ -3883,23 +3933,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
   padding-block-start: 8px;
 }
 
-.emotion-455 svg {
+.emotion-464 svg {
   fill: #2E3F54;
 }
 
-.emotion-455::before {
+.emotion-464::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-455::after {
+.emotion-464::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-456 {
+.emotion-465 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3911,7 +3961,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   cursor: pointer;
 }
 
-.emotion-457 {
+.emotion-466 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -3925,11 +3975,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin-right: 12px;
 }
 
-.emotion-457 * {
+.emotion-466 * {
   box-sizing: border-box;
 }
 
-.emotion-458 {
+.emotion-467 {
   position: absolute;
   top: 50%;
   left: calc((16px / 2) + 4px);
@@ -3944,36 +3994,36 @@ exports[`Sidebar renders correctly when closed 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-458:disabled {
+.emotion-467:disabled {
   opacity: 0;
 }
 
-.emotion-458:hover:active:not(:disabled) {
+.emotion-467:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-458:valid:hover:not(:disabled) {
+.emotion-467:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-458:valid:hover:active:not(:disabled) {
+.emotion-467:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-458:invalid:hover:not(:disabled) {
+.emotion-467:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-458:invalid:hover:active:not(:disabled) {
+.emotion-467:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-458 {
+  .emotion-467 {
     transition-property: inset,opacity;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
@@ -3981,14 +4031,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-458 {
+  .emotion-467 {
     transition-property: inset,opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-459 {
+.emotion-468 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4011,15 +4061,15 @@ exports[`Sidebar renders correctly when closed 1`] = `
   padding-inline: 4px;
 }
 
-.emotion-459:checked:not(:disabled) {
+.emotion-468:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
-.emotion-459:disabled {
+.emotion-468:disabled {
   background-color: #DEE2E5;
 }
 
-.emotion-459:focus-visible:not(:disabled) {
+.emotion-468:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4028,29 +4078,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-459:focus-visible:not(:disabled) {
+    .emotion-468:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-459:checked:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  background-color: #3358CC;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-459:checked:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-459:checked:focus-visible:hover:not(:disabled) {
+.emotion-468:checked:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -4060,13 +4094,29 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-459:checked:focus-visible:hover:not(:disabled) {
+    .emotion-468:checked:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-460 {
+.emotion-468:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-468:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-469 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -4075,7 +4125,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   place-items: center;
 }
 
-.emotion-461 {
+.emotion-470 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4087,22 +4137,22 @@ exports[`Sidebar renders correctly when closed 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-461 svg {
+.emotion-470 svg {
   fill: #FFFFFF;
 }
 
-.emotion-461:disabled svg {
+.emotion-470:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-461 svg {
+.emotion-470 svg {
   height: 100%;
   width: 100%;
   max-width: 16px;
   max-height: 24px;
 }
 
-.emotion-462 {
+.emotion-471 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4114,22 +4164,22 @@ exports[`Sidebar renders correctly when closed 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-462 svg {
+.emotion-471 svg {
   fill: #FFFFFF;
 }
 
-.emotion-462:disabled svg {
+.emotion-471:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-462 svg {
+.emotion-471 svg {
   height: 100%;
   width: 100%;
   max-width: 16px;
   max-height: 24px;
 }
 
-.emotion-463 {
+.emotion-472 {
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 16px;
@@ -4143,12 +4193,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
   place-items: center;
 }
 
-.emotion-463 svg {
+.emotion-472 svg {
   fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-463 {
+  .emotion-472 {
     transition-property: inset;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -4156,14 +4206,14 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-463 {
+  .emotion-472 {
     transition-property: inset;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 }
 
-.emotion-464 {
+.emotion-473 {
   position: absolute;
   top: 0;
   left: 0;
@@ -4173,7 +4223,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   cursor: inherit;
 }
 
-.emotion-465 {
+.emotion-474 {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -4183,17 +4233,17 @@ exports[`Sidebar renders correctly when closed 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-465:disabled {
+.emotion-474:disabled {
   color: #C0C7CC;
 }
 
-.emotion-465::before {
+.emotion-474::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-465::after {
+.emotion-474::after {
   content: '';
   margin-top: -0.409em;
   display: block;
@@ -6173,6 +6223,58 @@ exports[`Sidebar renders correctly when closed 1`] = `
                               class="emotion-39"
                               id="mock-nk-1"
                             >
+                              Community
+                            </h2>
+                          </div>
+                          <ul
+                            aria-labelledby="mock-nk-1"
+                          >
+                            <li
+                              class="nk-menu-item emotion-10"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-11"
+                                data-testid="buttonLink"
+                                href="/components/community/how-to-contribute"
+                                tabindex="-1"
+                              >
+                                <span
+                                  class="emotion-12"
+                                >
+                                  How to contribute
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-10"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-11"
+                                data-testid="buttonLink"
+                                href="/components/community/community-index"
+                                tabindex="-1"
+                              >
+                                <span
+                                  class="emotion-12"
+                                >
+                                  Community index
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li
+                          class="nk-menu-group emotion-37"
+                        >
+                          <div
+                            class="emotion-38"
+                          >
+                            <h2
+                              class="emotion-39"
+                              id="mock-nk-1"
+                            >
                               Third Party Integrations
                             </h2>
                           </div>
@@ -6793,11 +6895,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
                       </div>
                     </ul>
                     <div
-                      class="emotion-442"
+                      class="emotion-451"
                     >
                       <hr
                         aria-hidden="true"
-                        class="emotion-443"
+                        class="emotion-452"
                         data-testid="divider"
                       />
                     </div>
@@ -6805,7 +6907,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </nav>
               </div>
               <div
-                class="emotion-444"
+                class="emotion-453"
               >
                 <nav
                   aria-label="menu-sidebar"
@@ -6818,28 +6920,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
                   />
                 </nav>
                 <div
-                  class="emotion-446"
+                  class="emotion-455"
                 />
               </div>
               <div
-                class="emotion-447"
+                class="emotion-456"
               >
                 <a
-                  class="emotion-448"
+                  class="emotion-457"
                   href="https://github.com/newscorp-ghfb/newskit"
                   tabindex="-1"
                 >
                   <div
-                    class="emotion-449"
+                    class="emotion-458"
                   >
                     <p
-                      class="emotion-450"
+                      class="emotion-459"
                     >
                       Github
                     </p>
                     <svg
                       aria-hidden="true"
-                      class="emotion-451 emotion-452"
+                      class="emotion-460 emotion-461"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -6857,46 +6959,46 @@ exports[`Sidebar renders correctly when closed 1`] = `
                 </a>
               </div>
               <div
-                class="emotion-447"
+                class="emotion-456"
               >
                 <div
-                  class="emotion-454"
+                  class="emotion-463"
                 >
                   <label
-                    class="emotion-455"
+                    class="emotion-464"
                     for="dark-theme-switch"
                   >
                     Dark theme
                   </label>
                   <label
-                    class="emotion-456"
+                    class="emotion-465"
                   >
                     <div
-                      class="emotion-457"
+                      class="emotion-466"
                       role="presentation"
                     >
                       <div
-                        class="emotion-458"
+                        class="emotion-467"
                         data-testid="checkbox-feedback"
                       />
                       <div
-                        class="emotion-459"
+                        class="emotion-468"
                       >
                         <div
-                          class="emotion-460"
+                          class="emotion-469"
                         >
                           <div
-                            class="emotion-461"
+                            class="emotion-470"
                           />
                           <div
-                            class="emotion-462"
+                            class="emotion-471"
                           />
                           <div
-                            class="emotion-463"
+                            class="emotion-472"
                           />
                         </div>
                         <input
-                          class="emotion-464"
+                          class="emotion-473"
                           data-testid="checkbox-input"
                           id="dark-theme-switch"
                           role="switch"
@@ -6906,7 +7008,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
                       </div>
                     </div>
                     <span
-                      class="emotion-465"
+                      class="emotion-474"
                     >
                        
                     </span>
@@ -7488,7 +7590,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-444 {
+.emotion-453 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -7496,7 +7598,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-445 {
+.emotion-454 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -7506,7 +7608,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   width: 100%;
 }
 
-.emotion-448 {
+.emotion-457 {
   margin-bottom: 32px;
 }
 
@@ -9377,6 +9479,56 @@ exports[`Sidebar renders correctly when open 1`] = `
                         class="emotion-41"
                         id="mock-nk-1"
                       >
+                        Community
+                      </h2>
+                    </div>
+                    <ul
+                      aria-labelledby="mock-nk-1"
+                    >
+                      <li
+                        class="nk-menu-item emotion-12"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-13"
+                          data-testid="buttonLink"
+                          href="/components/community/how-to-contribute"
+                        >
+                          <span
+                            class="emotion-14"
+                          >
+                            How to contribute
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item emotion-12"
+                      >
+                        <a
+                          aria-current="false"
+                          class="emotion-13"
+                          data-testid="buttonLink"
+                          href="/components/community/community-index"
+                        >
+                          <span
+                            class="emotion-14"
+                          >
+                            Community index
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="nk-menu-group emotion-39"
+                  >
+                    <div
+                      class="emotion-40"
+                    >
+                      <h2
+                        class="emotion-41"
+                        id="mock-nk-1"
+                      >
                         Third Party Integrations
                       </h2>
                     </div>
@@ -9967,11 +10119,11 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </div>
               </ul>
               <div
-                class="emotion-444"
+                class="emotion-453"
               >
                 <hr
                   aria-hidden="true"
-                  class="emotion-445"
+                  class="emotion-454"
                   data-testid="divider"
                 />
               </div>
@@ -9992,7 +10144,7 @@ exports[`Sidebar renders correctly when open 1`] = `
             />
           </nav>
           <div
-            class="emotion-448"
+            class="emotion-457"
           />
         </div>
       </div>
@@ -10679,7 +10831,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   display: block;
 }
 
-.emotion-442 {
+.emotion-451 {
   width: 100%;
   position: relative;
   left: calc(-50vw + 50%);
@@ -10687,7 +10839,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-bottom: 8px;
 }
 
-.emotion-443 {
+.emotion-452 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -10698,57 +10850,57 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen {
-  .emotion-444 {
+  .emotion-453 {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .emotion-444 {
+  .emotion-453 {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-444 {
+  .emotion-453 {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-444 {
+  .emotion-453 {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .emotion-444 {
+  .emotion-453 {
     display: block;
   }
 }
 
-.emotion-446 {
+.emotion-455 {
   margin-bottom: 32px;
 }
 
-.emotion-447 {
+.emotion-456 {
   margin-inline: 32px;
   margin-block: 24px;
 }
 
-.emotion-448 {
+.emotion-457 {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-449 {
+.emotion-458 {
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 24px;
 }
 
-.emotion-450 {
+.emotion-459 {
   margin: 0;
   color: #2E3F54;
   font-family: "Poppins",sans-serif;
@@ -10758,11 +10910,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   letter-spacing: 0;
 }
 
-.emotion-450 svg {
+.emotion-459 svg {
   fill: #2E3F54;
 }
 
-.emotion-451 {
+.emotion-460 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -10772,7 +10924,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-451 {
+  .emotion-460 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -10780,26 +10932,26 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-451 {
+  .emotion-460 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-451.emotion-451 {
+.emotion-460.emotion-460 {
   width: 24px;
   height: 24px;
 }
 
-.emotion-454 {
+.emotion-463 {
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 44px;
 }
 
-.emotion-455 {
+.emotion-464 {
   display: block;
   color: #2E3F54;
   font-family: "Poppins",sans-serif;
@@ -10813,23 +10965,23 @@ exports[`Sidebar renders correctly when open 1`] = `
   padding-block-start: 8px;
 }
 
-.emotion-455 svg {
+.emotion-464 svg {
   fill: #2E3F54;
 }
 
-.emotion-455::before {
+.emotion-464::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-455::after {
+.emotion-464::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-456 {
+.emotion-465 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10841,7 +10993,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   cursor: pointer;
 }
 
-.emotion-457 {
+.emotion-466 {
   position: relative;
   display: inline-block;
   -webkit-align-self: start;
@@ -10855,11 +11007,11 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin-right: 12px;
 }
 
-.emotion-457 * {
+.emotion-466 * {
   box-sizing: border-box;
 }
 
-.emotion-458 {
+.emotion-467 {
   position: absolute;
   top: 50%;
   left: calc((16px / 2) + 4px);
@@ -10874,36 +11026,36 @@ exports[`Sidebar renders correctly when open 1`] = `
   transform: translate3d(calc(40px / -2), calc(40px / -2), 0);
 }
 
-.emotion-458:disabled {
+.emotion-467:disabled {
   opacity: 0;
 }
 
-.emotion-458:hover:active:not(:disabled) {
+.emotion-467:hover:active:not(:disabled) {
   opacity: 0.4;
 }
 
-.emotion-458:valid:hover:not(:disabled) {
+.emotion-467:valid:hover:not(:disabled) {
   background-color: #00601A;
   opacity: 0.2;
 }
 
-.emotion-458:valid:hover:active:not(:disabled) {
+.emotion-467:valid:hover:active:not(:disabled) {
   background-color: #00601A;
   opacity: 0.4;
 }
 
-.emotion-458:invalid:hover:not(:disabled) {
+.emotion-467:invalid:hover:not(:disabled) {
   background-color: #A90000;
   opacity: 0.2;
 }
 
-.emotion-458:invalid:hover:active:not(:disabled) {
+.emotion-467:invalid:hover:active:not(:disabled) {
   background-color: #A90000;
   opacity: 0.4;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-458 {
+  .emotion-467 {
     transition-property: inset,opacity;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
@@ -10911,14 +11063,14 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-458 {
+  .emotion-467 {
     transition-property: inset,opacity;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-459 {
+.emotion-468 {
   position: absolute;
   top: 0;
   left: 0;
@@ -10941,15 +11093,15 @@ exports[`Sidebar renders correctly when open 1`] = `
   padding-inline: 4px;
 }
 
-.emotion-459:checked:not(:disabled) {
+.emotion-468:checked:not(:disabled) {
   background-color: #3358CC;
 }
 
-.emotion-459:disabled {
+.emotion-468:disabled {
   background-color: #DEE2E5;
 }
 
-.emotion-459:focus-visible:not(:disabled) {
+.emotion-468:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -10958,29 +11110,13 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-459:focus-visible:not(:disabled) {
+    .emotion-468:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-459:checked:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-  background-color: #3358CC;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-459:checked:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-459:checked:focus-visible:hover:not(:disabled) {
+.emotion-468:checked:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -10990,13 +11126,29 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-459:checked:focus-visible:hover:not(:disabled) {
+    .emotion-468:checked:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-460 {
+.emotion-468:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-468:checked:focus-visible:hover:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-469 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -11005,7 +11157,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   place-items: center;
 }
 
-.emotion-461 {
+.emotion-470 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11017,22 +11169,22 @@ exports[`Sidebar renders correctly when open 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-461 svg {
+.emotion-470 svg {
   fill: #FFFFFF;
 }
 
-.emotion-461:disabled svg {
+.emotion-470:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-461 svg {
+.emotion-470 svg {
   height: 100%;
   width: 100%;
   max-width: 16px;
   max-height: 24px;
 }
 
-.emotion-462 {
+.emotion-471 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11044,22 +11196,22 @@ exports[`Sidebar renders correctly when open 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-462 svg {
+.emotion-471 svg {
   fill: #FFFFFF;
 }
 
-.emotion-462:disabled svg {
+.emotion-471:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-462 svg {
+.emotion-471 svg {
   height: 100%;
   width: 100%;
   max-width: 16px;
   max-height: 24px;
 }
 
-.emotion-463 {
+.emotion-472 {
   background-color: #FFFFFF;
   border-radius: 50%;
   width: 16px;
@@ -11073,12 +11225,12 @@ exports[`Sidebar renders correctly when open 1`] = `
   place-items: center;
 }
 
-.emotion-463 svg {
+.emotion-472 svg {
   fill: #09111C;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-463 {
+  .emotion-472 {
     transition-property: inset;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -11086,14 +11238,14 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-463 {
+  .emotion-472 {
     transition-property: inset;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(.5, 0, 1, 1);
   }
 }
 
-.emotion-464 {
+.emotion-473 {
   position: absolute;
   top: 0;
   left: 0;
@@ -11103,7 +11255,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   cursor: inherit;
 }
 
-.emotion-465 {
+.emotion-474 {
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
@@ -11113,17 +11265,17 @@ exports[`Sidebar renders correctly when open 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-465:disabled {
+.emotion-474:disabled {
   color: #C0C7CC;
 }
 
-.emotion-465::before {
+.emotion-474::before {
   content: '';
   margin-bottom: -0.391em;
   display: block;
 }
 
-.emotion-465::after {
+.emotion-474::after {
   content: '';
   margin-top: -0.409em;
   display: block;
@@ -13011,6 +13163,56 @@ exports[`Sidebar renders correctly when open 1`] = `
                               class="emotion-39"
                               id="mock-nk-1"
                             >
+                              Community
+                            </h2>
+                          </div>
+                          <ul
+                            aria-labelledby="mock-nk-1"
+                          >
+                            <li
+                              class="nk-menu-item emotion-10"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-11"
+                                data-testid="buttonLink"
+                                href="/components/community/how-to-contribute"
+                              >
+                                <span
+                                  class="emotion-12"
+                                >
+                                  How to contribute
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="nk-menu-item emotion-10"
+                            >
+                              <a
+                                aria-current="false"
+                                class="emotion-11"
+                                data-testid="buttonLink"
+                                href="/components/community/community-index"
+                              >
+                                <span
+                                  class="emotion-12"
+                                >
+                                  Community index
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li
+                          class="nk-menu-group emotion-37"
+                        >
+                          <div
+                            class="emotion-38"
+                          >
+                            <h2
+                              class="emotion-39"
+                              id="mock-nk-1"
+                            >
                               Third Party Integrations
                             </h2>
                           </div>
@@ -13601,11 +13803,11 @@ exports[`Sidebar renders correctly when open 1`] = `
                       </div>
                     </ul>
                     <div
-                      class="emotion-442"
+                      class="emotion-451"
                     >
                       <hr
                         aria-hidden="true"
-                        class="emotion-443"
+                        class="emotion-452"
                         data-testid="divider"
                       />
                     </div>
@@ -13613,7 +13815,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </nav>
               </div>
               <div
-                class="emotion-444"
+                class="emotion-453"
               >
                 <nav
                   aria-label="menu-sidebar"
@@ -13626,27 +13828,27 @@ exports[`Sidebar renders correctly when open 1`] = `
                   />
                 </nav>
                 <div
-                  class="emotion-446"
+                  class="emotion-455"
                 />
               </div>
               <div
-                class="emotion-447"
+                class="emotion-456"
               >
                 <a
-                  class="emotion-448"
+                  class="emotion-457"
                   href="https://github.com/newscorp-ghfb/newskit"
                 >
                   <div
-                    class="emotion-449"
+                    class="emotion-458"
                   >
                     <p
-                      class="emotion-450"
+                      class="emotion-459"
                     >
                       Github
                     </p>
                     <svg
                       aria-hidden="true"
-                      class="emotion-451 emotion-452"
+                      class="emotion-460 emotion-461"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -13664,46 +13866,46 @@ exports[`Sidebar renders correctly when open 1`] = `
                 </a>
               </div>
               <div
-                class="emotion-447"
+                class="emotion-456"
               >
                 <div
-                  class="emotion-454"
+                  class="emotion-463"
                 >
                   <label
-                    class="emotion-455"
+                    class="emotion-464"
                     for="dark-theme-switch"
                   >
                     Dark theme
                   </label>
                   <label
-                    class="emotion-456"
+                    class="emotion-465"
                   >
                     <div
-                      class="emotion-457"
+                      class="emotion-466"
                       role="presentation"
                     >
                       <div
-                        class="emotion-458"
+                        class="emotion-467"
                         data-testid="checkbox-feedback"
                       />
                       <div
-                        class="emotion-459"
+                        class="emotion-468"
                       >
                         <div
-                          class="emotion-460"
+                          class="emotion-469"
                         >
                           <div
-                            class="emotion-461"
+                            class="emotion-470"
                           />
                           <div
-                            class="emotion-462"
+                            class="emotion-471"
                           />
                           <div
-                            class="emotion-463"
+                            class="emotion-472"
                           />
                         </div>
                         <input
-                          class="emotion-464"
+                          class="emotion-473"
                           data-testid="checkbox-input"
                           id="dark-theme-switch"
                           role="switch"
@@ -13712,7 +13914,7 @@ exports[`Sidebar renders correctly when open 1`] = `
                       </div>
                     </div>
                     <span
-                      class="emotion-465"
+                      class="emotion-474"
                     >
                        
                     </span>
