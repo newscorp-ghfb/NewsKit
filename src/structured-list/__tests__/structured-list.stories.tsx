@@ -89,7 +89,7 @@ export const StoryStructuredListDefault = () => (
     <StorybookCase>
       <StructuredList ariaLabel="list">
         {[1, 2, 3].map(item => (
-          <StructuredListItem key={item} ariaLabel="list item">
+          <StructuredListItem key={item} ariaLabel={`list item - ${item}`}>
             <StructuredListCell>
               <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
             </StructuredListCell>
@@ -110,7 +110,7 @@ export const StoryStructuredListDivider = () => (
     <StorybookCase>
       <StructuredList divider ariaLabel="list">
         {[1, 2, 3].map(item => (
-          <StructuredListItem key={item} ariaLabel="list item">
+          <StructuredListItem key={item} ariaLabel={`list item - ${item}`}>
             <StructuredListCell>
               <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
             </StructuredListCell>
@@ -131,7 +131,7 @@ export const StoryStructuredListTwoCells = () => (
     <StorybookCase>
       <StructuredList divider ariaLabel="list">
         {[1, 2, 3].map(item => (
-          <StructuredListItem key={item} ariaLabel="list item">
+          <StructuredListItem key={item} ariaLabel={`list item - ${item}`}>
             <StructuredListCell>
               <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
             </StructuredListCell>
@@ -151,7 +151,7 @@ export const StoryStructuredListPullRight = () => (
     <StorybookCase>
       <StructuredList divider ariaLabel="list">
         {[1, 2, 3].map(item => (
-          <StructuredListItem key={item} ariaLabel="list item">
+          <StructuredListItem key={item} ariaLabel={`list item - ${item}`}>
             <StructuredListCell>
               <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
             </StructuredListCell>
@@ -171,7 +171,7 @@ export const StoryStructuredListOneCell = () => (
     <StorybookCase>
       <StructuredList divider ariaLabel="list">
         {[1, 2, 3].map(item => (
-          <StructuredListItem key={item} ariaLabel="list item">
+          <StructuredListItem key={item} ariaLabel={`list item - ${item}`}>
             <StructuredListCell>
               <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
             </StructuredListCell>
@@ -312,7 +312,7 @@ export const StoryStructuredListCustomIcon = () => (
           </StructuredListCell>
           <StructuredListCell>{arrowIcon}</StructuredListCell>
         </StructuredListItem>
-        <StructuredListItem href="/" target="_blank" ariaLabel="list item">
+        <StructuredListItem href="/" target="_blank" ariaLabel="list item - 1">
           <StructuredListCell>
             <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
           </StructuredListCell>
@@ -321,7 +321,7 @@ export const StoryStructuredListCustomIcon = () => (
           </StructuredListCell>
           <StructuredListCell pullRight>{addCircleIcon}</StructuredListCell>
         </StructuredListItem>
-        <StructuredListItem ariaLabel="list item">
+        <StructuredListItem ariaLabel="list item - 2">
           <StructuredListCell>
             <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
           </StructuredListCell>
@@ -380,7 +380,7 @@ export const StoryStructuredListLogicalProps = () => (
       >
         <MarginOverridesWrapper>
           {[1, 2, 3].map(item => (
-            <StructuredListItem key={item} ariaLabel="list item">
+            <StructuredListItem key={item} ariaLabel={`list item - ${item}`}>
               <StructuredListCell>
                 <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
               </StructuredListCell>
@@ -404,7 +404,7 @@ export const StoryStructuredListLogicalProps = () => (
       >
         <MarginOverridesWrapper>
           {[1, 2, 3].map(item => (
-            <StructuredListItem key={item} ariaLabel="list item">
+            <StructuredListItem key={item} ariaLabel={`list item - ${item}`}>
               <StructuredListCell>
                 <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
               </StructuredListCell>
@@ -430,7 +430,7 @@ export const StoryStructuredListStylingOverrides = () => (
         overrides={{divider: {stylePreset: 'dividerCustomPreset'}}}
       >
         <StructuredListItem
-          ariaLabel="list item"
+          ariaLabel="list item - 1"
           overrides={{
             stylePreset: 'structuredListItemCustom',
             spaceInset: 'spaceInset060',
@@ -458,7 +458,7 @@ export const StoryStructuredListStylingOverrides = () => (
           </StructuredListCell>
         </StructuredListItem>
         <StructuredListItem
-          ariaLabel="list item"
+          ariaLabel="list item - 2"
           overrides={{
             stylePreset: 'structuredListItemCustom',
             spaceInset: 'spaceInset060',
