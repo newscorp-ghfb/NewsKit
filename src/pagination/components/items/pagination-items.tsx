@@ -20,7 +20,11 @@ const DefaultIcon = (props: NewsKitIconProps) => (
   <IconFilledMoreHoriz {...props} />
 );
 
+/* This has deliberately been designed as a stateless component that gets all the props passed in
+   for ease of overriding. This component is not meant to be used by a developer, just by
+   PaginationItems, as that has access to all the state that needs passing in */
 export const PaginationItems = ({
+  children,
   overrides,
   truncation = true,
   siblings = 3,
@@ -34,6 +38,8 @@ export const PaginationItems = ({
     changePage = () => {},
     changedPage,
     lastPage,
+    pageSize,
+    totalItems,
   } = usePaginationContext();
 
   const [PaginationIcon, paginationIconProps] = getComponentOverrides(
@@ -57,6 +63,16 @@ export const PaginationItems = ({
       boundaries,
     });
 
+    // These are passed through to the PaginationItem in case overrides.itemButton is set,
+    // as custom components will need the full context
+    const staticProps = {
+      lastPage,
+      pageSize,
+      totalItems,
+      buildHref,
+      changePage,
+    };
+
     let truncationCount = 0;
     layout.forEach((element: PaginationLayoutItem = 0) => {
       switch (element) {
@@ -65,11 +81,13 @@ export const PaginationItems = ({
           paginationElements.push(
             <StyledListItem key={`trunc${truncationCount}`} aria-hidden="true">
               <PaginationItem
+                href=""
                 itemType={paginationItemTruncation}
                 datatest-id={`pagination-item-truncation${truncationCount}`}
                 size={size}
                 disabled
                 overrides={overrides}
+                {...staticProps}
               >
                 <PaginationIcon
                   {...(paginationIconProps as NewsKitIconProps)}
@@ -91,8 +109,10 @@ export const PaginationItems = ({
                   eventContext={eventContext}
                   size={size}
                   overrides={overrides}
+                  pageNumber={page}
+                  {...staticProps}
                 >
-                  {page}
+                  {children || page}
                 </PaginationItem>
               </StyledListItem>,
             );

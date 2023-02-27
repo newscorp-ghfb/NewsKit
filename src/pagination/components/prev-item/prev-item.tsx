@@ -28,7 +28,7 @@ export const PaginationPrevItem = React.forwardRef<
   } = usePaginationContext();
 
   const [PaginationIcon] = getComponentOverrides(
-    overrides as Override<NewsKitIconProps>,
+    overrides?.icon as Override<NewsKitIconProps>,
     DefaultIcon,
     {
       overrides: {

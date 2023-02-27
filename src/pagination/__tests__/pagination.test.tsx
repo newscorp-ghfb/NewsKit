@@ -14,19 +14,20 @@ import {PaginationFirstItem} from '../components/first-item';
 import {PaginationLastItem} from '../components/last-item';
 import {PaginationPrevItem} from '../components/prev-item';
 import {PaginationNextItem} from '../components/next-item';
-// TODO remove
 import {PaginationItem} from '../components/item/pagination-item';
 import {PaginationItems} from '../components/items/pagination-items';
 import {
   IconFilledAddCircleOutline,
+  IconFilledCircle,
   IconOutlinedTrendingFlat,
+  NewsKitIconProps,
 } from '../../icons';
 import {TextBlock} from '../../text-block';
 import {EventTrigger} from '../../instrumentation';
 import {compileTheme, createTheme} from '../../theme';
 
 const paginationItemContent = 'Pagination Item';
-const textBlock = '/';
+const textBlock = '...';
 const selected = false;
 const pageNumber = 3;
 const href = 'https://paginationitem.test';
@@ -38,7 +39,7 @@ const pageItemProps = {
 const buildHref = jest.fn((page: number) => `${href}/${page}`);
 const onClick = jest.fn();
 const onPageChange = jest.fn((page: number) => page);
-
+const lastPage = 24;
 const defaultProps = {
   totalItems: 232,
   pageSize: 10,
@@ -48,24 +49,6 @@ const defaultProps = {
 };
 // defaults to truncation: true, siblings: 3, boundaries: 1
 const defaultItemsProps = {truncation: false, siblings: 3, boundaries: 1};
-
-// TODO remove
-/*
-
-
-// TODO remove
-const paginationWithItem = [
-  <PaginationItem key="1" {...pageItemProps}>
-    {paginationItemContent}
-  </PaginationItem>,
-  <PaginationItem key="2" {...pageItemProps}>
-    {paginationItemContent}
-  </PaginationItem>,
-  <PaginationItem key="3" {...pageItemProps}>
-    {paginationItemContent}
-  </PaginationItem>,
-];
-*/
 
 const PaginationWithItems = (props: PaginationItemsProps) => (
   <Pagination {...defaultProps}>
@@ -94,34 +77,6 @@ const defaultPaginationIconsAndItems = [
   <PaginationNextItem key="4" />,
   <PaginationLastItem key="5" />,
 ];
-
-/*
-const customPaginationIconsAndItems = (itemsProps: PaginationItemsProps): [ReactNode] => {
-  return [
-    <PaginationFirstItem key="1" />,
-    <PaginationPrevItem key="2" />,
-    <PaginationItems key="3" {...itemsProps} />,
-    <PaginationNextItem key="4" />,
-    <PaginationLastItem key="5" />,
-  ]
-};
-*/
-
-/*
-const defaultPaginationItems = customPaginationItems(defaultItemsProps);
-
-const customPaginationIconsAndItems = (itemsProps: PaginationItemsProps) => (
-  <>
-    <PaginationFirstItem key="1" />,
-    <PaginationPrevItem key="2" />,
-    <PaginationItems key="3" {...itemsProps} />,
-    <PaginationNextItem key="4" />,
-    <PaginationLastItem key="5" />,
-  </>
-);
-*/
-
-// const defaultPaginationIconsAndItems = customPaginationIconsAndItems(defaultItemsProps);
 
 const PaginationSizeArray = ['small', 'medium', 'large'];
 
@@ -210,35 +165,59 @@ describe('Pagination, navigation icons and PaginationItems', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  /* test('fire tracking event on normal item', async () => {
+  test('fire tracking event on normal item near the start', async () => {
     const mockFireEvent = jest.fn();
     const props = {
-      children: paginationItemContent,
-      key: '1',
-      ...pageItemProps,
-      eventOriginator: 'pagination-item',
       eventContext: {
         event: 'event data',
       },
     };
-
-    const {getByTestId} = renderWithImplementation(
+    const {getAllByTestId} = renderWithImplementation(
       PaginationWithItems,
       props,
       mockFireEvent,
     );
-    const paginationItemButton = getByTestId('pagination-item');
-    fireEvent.click(paginationItemButton);
+
+    const paginationItems = getAllByTestId('pagination-item');
+    expect(paginationItems).toHaveLength(9);
+
+    fireEvent.click(paginationItems[1]);
     expect(mockFireEvent).toHaveBeenCalledWith({
       originator: 'pagination-item',
       trigger: EventTrigger.Click,
       context: {
-        href: 'https://paginationitem.test',
+        href: 'https://paginationitem.test/2',
         event: 'event data',
       },
     });
   });
-*/
+
+  test('fire tracking event on normal item near the end', async () => {
+    const mockFireEvent = jest.fn();
+    const props = {
+      eventContext: {
+        event: 'event data',
+      },
+    };
+    const {getAllByTestId} = renderWithImplementation(
+      PaginationWithItems,
+      props,
+      mockFireEvent,
+    );
+
+    const paginationItems = getAllByTestId('pagination-item');
+    expect(paginationItems).toHaveLength(9);
+
+    fireEvent.click(paginationItems[6]);
+    expect(mockFireEvent).toHaveBeenCalledWith({
+      originator: 'pagination-item',
+      trigger: EventTrigger.Click,
+      context: {
+        href: 'https://paginationitem.test/7',
+        event: 'event data',
+      },
+    });
+  });
 
   test('fire tracking event on First item', async () => {
     const mockFireEvent = jest.fn();
@@ -356,12 +335,35 @@ describe('PaginationItem', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('fire tracking event', async () => {
+  it('renders with overrides.itemButton', () => {
+    const props = {
+      size: 'medium' as PaginationSize,
+      children: paginationItemContent,
+      ...pageItemProps,
+      overrides: {
+        itemButton: itemButtonProps => (
+          <IconFilledCircle
+            {...(itemButtonProps as NewsKitIconProps)}
+            overrides={{
+              size: 'iconSize020',
+              paddingInline: 'space020',
+              stylePreset: 'paginationItem',
+            }}
+          />
+        ),
+      },
+    } as PaginationItemProps;
+    const fragment = renderToFragmentWithTheme(PaginationWithItem, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  test('fire tracking event on normal item', async () => {
     const mockFireEvent = jest.fn();
     const props = {
+      ...pageItemProps,
+      lastPage,
       children: paginationItemContent,
       key: '1',
-      ...pageItemProps,
       eventOriginator: 'pagination-item',
       eventContext: {
         event: 'event data',
@@ -387,8 +389,9 @@ describe('PaginationItem', () => {
 
   it('renders selected pagination item with aria attributes', () => {
     const props = {
-      children: [<IconFilledAddCircleOutline key="i" />],
       ...pageItemProps,
+      lastPage,
+      children: [<IconFilledAddCircleOutline key="i" />],
       selected: true,
     };
     const fragment = renderToFragmentWithTheme(PaginationWithItem, props);
@@ -412,8 +415,9 @@ describe('PaginationItem', () => {
       }),
     );
     const props = {
-      children: paginationItemContent,
       ...pageItemProps,
+      lastPage,
+      children: paginationItemContent,
       key: '1',
       overrides: {
         stylePreset: ' paginationItemCustom',

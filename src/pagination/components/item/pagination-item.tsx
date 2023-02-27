@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {ComponentType} from 'react';
 import {StyledButton} from '../../styled';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {PaginationItemProps} from '../../types';
 import {useTheme} from '../../../theme';
 import {getItemAria} from '../../utils';
 import {get} from '../../../utils/get';
+import {getComponentOverrides, Override} from '../../../utils/overrides';
 
 export const PaginationItem = React.forwardRef<
   HTMLButtonElement,
@@ -30,8 +31,11 @@ export const PaginationItem = React.forwardRef<
     const buttonProps = {
       ...rest,
       'data-testid': get(rest, 'data-testid') || 'pagination-item',
+      pageNumber,
       selected,
       size,
+      href,
+      onClick,
     };
     const theme = useTheme();
 
@@ -53,26 +57,31 @@ export const PaginationItem = React.forwardRef<
       disabled: buttonProps.disabled,
     });
 
-    const navigationProps = {href, onClick};
+    const combinedProps = {
+      ...buttonProps,
+      ...ariaProps,
+      eventContext: {href, ...eventContext},
+      eventOriginator,
+      overrides: buttonSettings,
+      ref,
+    };
 
-    const trackingProps = buttonProps.disabled
-      ? {}
-      : {
-          eventContext: {href, ...eventContext},
-          eventOriginator,
-        };
+    if (overrides?.itemButton) {
+      const [ItemButton, itemButtonProps] = getComponentOverrides(
+        overrides.itemButton as Override<PaginationItemProps>,
+        StyledButton as ComponentType<PaginationItemProps>,
+        {
+          ...rest,
+          ...combinedProps,
+        },
+      );
+      return (
+        <ItemButton href={href} {...rest} {...itemButtonProps}>
+          {children}
+        </ItemButton>
+      );
+    }
 
-    return (
-      <StyledButton
-        {...buttonProps}
-        {...navigationProps}
-        {...trackingProps}
-        overrides={buttonSettings}
-        {...ariaProps}
-        ref={ref}
-      >
-        {children}
-      </StyledButton>
-    );
+    return <StyledButton {...combinedProps}>{children}</StyledButton>;
   },
 );

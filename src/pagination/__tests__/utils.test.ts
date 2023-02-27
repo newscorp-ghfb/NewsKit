@@ -14,18 +14,6 @@ describe('getItemsLayout', () => {
     expect(layout).toEqual([]);
   });
 
-  it('should return empty array if truncation and no siblings', () => {
-    const values = {
-      currentPage: 1,
-      lastPage: 20,
-      truncation: true,
-      siblings: 0,
-      boundaries: 1,
-    };
-    const layout = getItemsLayout(values);
-    expect(layout).toEqual([]);
-  });
-
   it('should return empty array if currentPage or lastPage < 1', () => {
     const values = {
       currentPage: 0,
@@ -36,6 +24,42 @@ describe('getItemsLayout', () => {
     };
     const layout = getItemsLayout(values);
     expect(layout).toEqual([]);
+  });
+
+  it('should return empty array if truncation and less than zero siblings', () => {
+    const values = {
+      currentPage: 2,
+      lastPage: 20,
+      truncation: true,
+      siblings: -1,
+      boundaries: 1,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout).toEqual([]);
+  });
+
+  it('should return array containing only current page when zero siblings', () => {
+    const values = {
+      currentPage: 2,
+      lastPage: 20,
+      truncation: true,
+      siblings: 0,
+      boundaries: 0,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout).toEqual([2]);
+  });
+
+  it('should return array containing first and last items when zero siblings and 1 boundary', () => {
+    const values = {
+      currentPage: 2,
+      lastPage: 20,
+      truncation: true,
+      siblings: 0,
+      boundaries: 1,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 - 2 - 20');
   });
 
   it('should return all pages when no truncation', () => {

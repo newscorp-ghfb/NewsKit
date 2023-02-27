@@ -4,7 +4,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {EventData} from '../instrumentation';
 import {Override} from '../utils/overrides';
 import {NewsKitIconProps} from '../icons';
-import {ButtonProps} from '../button/types';
+import {ButtonOrButtonLinkProps, ButtonProps} from '../button/types';
 
 import {IconButtonProps} from '../icon-button/types';
 import {PaginationFirstItemProps} from './components/first-item/types';
@@ -74,6 +74,7 @@ export interface PaginationItemsProps extends ButtonProps, EventData {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
     icon?: Override<NewsKitIconProps>;
+    itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
     minWidth?: MQ<string>;
     height?: MQ<string>;
     marginInline?: MQ<string>;
@@ -92,15 +93,19 @@ export interface PaginationItemsProps extends ButtonProps, EventData {
 }
 
 export interface PaginationItemProps extends ButtonProps, EventData {
-  children: Exclude<React.ReactNode, 'undefined'>;
+  children?: Exclude<React.ReactNode, 'undefined'>;
   itemType?: PaginationItemType;
   selected?: boolean;
+  lastPage: number;
   pageNumber?: number;
-  href?: string;
+  pageSize?: number;
+  totalItems?: number;
+  href: string;
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
     icon?: Override<NewsKitIconProps>;
+    itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
     minWidth?: MQ<string>;
     height?: MQ<string>;
     marginInline?: MQ<string>;

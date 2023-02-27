@@ -58,7 +58,7 @@ export const getItemsLayout = ({
     return layout;
   }
   if (truncation) {
-    if (siblings) {
+    if (siblings >= 0) {
       const fromSibling = Math.max(1, currentPage - siblings);
       const toSibling = Math.min(currentPage + siblings, lastPage);
 

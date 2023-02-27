@@ -343,6 +343,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 1"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
@@ -359,6 +360,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 2"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
@@ -375,6 +377,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 3"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
@@ -391,6 +394,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="page"
+          aria-label="current page, page 4"
           class="emotion-12"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
@@ -407,6 +411,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 5"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
@@ -423,6 +428,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 6"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
@@ -439,6 +445,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 7"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
@@ -455,6 +462,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 8"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
@@ -471,6 +479,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 9"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
@@ -487,6 +496,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 10"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
@@ -503,6 +513,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 11"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
@@ -519,6 +530,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 12"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
@@ -535,6 +547,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 13"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
@@ -551,6 +564,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 14"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
@@ -567,6 +581,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 15"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
@@ -583,6 +598,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 16"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
@@ -599,6 +615,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 17"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
@@ -615,6 +632,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 18"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
@@ -631,6 +649,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 19"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
@@ -647,6 +666,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 20"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
@@ -663,6 +683,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 21"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
@@ -679,6 +700,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 22"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
@@ -695,6 +717,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 23"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
@@ -711,6 +734,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 24"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
@@ -1070,6 +1094,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 1"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
@@ -1086,6 +1111,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 2"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
@@ -1102,6 +1128,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 3"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
@@ -1118,6 +1145,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="page"
+          aria-label="current page, page 4"
           class="emotion-12"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
@@ -1134,6 +1162,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 5"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
@@ -1150,6 +1179,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 6"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
@@ -1166,6 +1196,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 7"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
@@ -1182,6 +1213,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 8"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
@@ -1198,6 +1230,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 9"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
@@ -1214,6 +1247,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 10"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
@@ -1230,6 +1264,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 11"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
@@ -1246,6 +1281,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 12"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
@@ -1262,6 +1298,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 13"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
@@ -1278,6 +1315,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 14"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
@@ -1294,6 +1332,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 15"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
@@ -1310,6 +1349,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 16"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
@@ -1326,6 +1366,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 17"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
@@ -1342,6 +1383,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 18"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
@@ -1358,6 +1400,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 19"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
@@ -1374,6 +1417,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 20"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
@@ -1390,6 +1434,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 21"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
@@ -1406,6 +1451,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 22"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
@@ -1422,6 +1468,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 23"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
@@ -1438,6 +1485,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 24"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
@@ -1797,6 +1845,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 1"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
@@ -1813,6 +1862,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 2"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
@@ -1829,6 +1879,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 3"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
@@ -1845,6 +1896,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="page"
+          aria-label="current page, page 4"
           class="emotion-12"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
@@ -1861,6 +1913,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 5"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
@@ -1877,6 +1930,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 6"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
@@ -1893,6 +1947,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 7"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
@@ -1909,6 +1964,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 8"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
@@ -1925,6 +1981,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 9"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
@@ -1941,6 +1998,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 10"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
@@ -1957,6 +2015,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 11"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
@@ -1973,6 +2032,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 12"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
@@ -1989,6 +2049,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 13"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
@@ -2005,6 +2066,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 14"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
@@ -2021,6 +2083,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 15"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
@@ -2037,6 +2100,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 16"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
@@ -2053,6 +2117,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 17"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
@@ -2069,6 +2134,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 18"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
@@ -2085,6 +2151,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 19"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
@@ -2101,6 +2168,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 20"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
@@ -2117,6 +2185,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 21"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
@@ -2133,6 +2202,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 22"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
@@ -2149,6 +2219,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 23"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
@@ -2165,6 +2236,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
       >
         <a
           aria-current="false"
+          aria-label="go to page 24"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
@@ -2528,6 +2600,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 1"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
@@ -2544,6 +2617,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 2"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
@@ -2560,6 +2634,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 3"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
@@ -2576,6 +2651,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="page"
+          aria-label="current page, page 4"
           class="emotion-12"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
@@ -2592,6 +2668,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 5"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
@@ -2608,6 +2685,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 6"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
@@ -2624,6 +2702,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 7"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
@@ -2640,6 +2719,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 8"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
@@ -2656,6 +2736,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 9"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
@@ -2672,6 +2753,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 10"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
@@ -2688,6 +2770,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 11"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
@@ -2704,6 +2787,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 12"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
@@ -2720,6 +2804,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 13"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
@@ -2736,6 +2821,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 14"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
@@ -2752,6 +2838,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 15"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
@@ -2768,6 +2855,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 16"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
@@ -2784,6 +2872,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 17"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
@@ -2800,6 +2889,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 18"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
@@ -2816,6 +2906,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 19"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
@@ -2832,6 +2923,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 20"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
@@ -2848,6 +2940,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 21"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
@@ -2864,6 +2957,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 22"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
@@ -2880,6 +2974,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 23"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
@@ -2896,6 +2991,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
       >
         <a
           aria-current="false"
+          aria-label="go to page 24"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
@@ -3254,6 +3350,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 1"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
@@ -3270,6 +3367,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 2"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
@@ -3286,6 +3384,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 3"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
@@ -3302,6 +3401,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="page"
+          aria-label="current page, page 4"
           class="emotion-12"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
@@ -3318,6 +3418,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 5"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
@@ -3334,6 +3435,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 6"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
@@ -3350,6 +3452,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 7"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
@@ -3366,6 +3469,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 8"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
@@ -3382,6 +3486,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 9"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
@@ -3398,6 +3503,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 10"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
@@ -3414,6 +3520,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 11"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
@@ -3430,6 +3537,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 12"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
@@ -3446,6 +3554,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 13"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
@@ -3462,6 +3571,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 14"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
@@ -3478,6 +3588,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 15"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
@@ -3494,6 +3605,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 16"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
@@ -3510,6 +3622,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 17"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
@@ -3526,6 +3639,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 18"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
@@ -3542,6 +3656,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 19"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
@@ -3558,6 +3673,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 20"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
@@ -3574,6 +3690,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 21"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
@@ -3590,6 +3707,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 22"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
@@ -3606,6 +3724,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 23"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
@@ -3622,6 +3741,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
       >
         <a
           aria-current="false"
+          aria-label="go to page 24"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
@@ -3980,6 +4100,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 1"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
@@ -3996,6 +4117,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 2"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
@@ -4012,6 +4134,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 3"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
@@ -4028,6 +4151,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="page"
+          aria-label="current page, page 4"
           class="emotion-12"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
@@ -4044,6 +4168,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 5"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
@@ -4060,6 +4185,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 6"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
@@ -4076,6 +4202,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 7"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
@@ -4092,6 +4219,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 8"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
@@ -4108,6 +4236,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 9"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
@@ -4124,6 +4253,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 10"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
@@ -4140,6 +4270,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 11"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
@@ -4156,6 +4287,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 12"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
@@ -4172,6 +4304,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 13"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
@@ -4188,6 +4321,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 14"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
@@ -4204,6 +4338,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 15"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
@@ -4220,6 +4355,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 16"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
@@ -4236,6 +4372,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 17"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
@@ -4252,6 +4389,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 18"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
@@ -4268,6 +4406,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 19"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
@@ -4284,6 +4423,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 20"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
@@ -4300,6 +4440,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 21"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
@@ -4316,6 +4457,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 22"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
@@ -4332,6 +4474,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 23"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
@@ -4348,6 +4491,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
       >
         <a
           aria-current="false"
+          aria-label="go to page 24"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
@@ -4706,6 +4850,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 1"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
@@ -4722,6 +4867,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 2"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
@@ -4738,6 +4884,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 3"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
@@ -4754,6 +4901,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="page"
+          aria-label="current page, page 4"
           class="emotion-12"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
@@ -4770,6 +4918,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 5"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
@@ -4786,6 +4935,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 6"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
@@ -4802,6 +4952,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 7"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
@@ -4818,6 +4969,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 8"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
@@ -4834,6 +4986,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 9"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
@@ -4850,6 +5003,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 10"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
@@ -4866,6 +5020,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 11"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
@@ -4882,6 +5037,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 12"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
@@ -4898,6 +5054,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 13"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
@@ -4914,6 +5071,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 14"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
@@ -4930,6 +5088,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 15"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
@@ -4946,6 +5105,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 16"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
@@ -4962,6 +5122,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 17"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
@@ -4978,6 +5139,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 18"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
@@ -4994,6 +5156,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 19"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
@@ -5010,6 +5173,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 20"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
@@ -5026,6 +5190,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 21"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
@@ -5042,6 +5207,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 22"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
@@ -5058,6 +5224,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 23"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
@@ -5074,6 +5241,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
       >
         <a
           aria-current="false"
+          aria-label="go to page 24"
           class="emotion-3"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
@@ -5824,6 +5992,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 1"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
@@ -5840,6 +6009,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 2"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
@@ -5856,6 +6026,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 3"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
@@ -5872,6 +6043,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="page"
+          aria-label="current page, page 4"
           class="emotion-20"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
@@ -5888,6 +6060,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 5"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
@@ -5904,6 +6077,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 6"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
@@ -5920,6 +6094,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 7"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
@@ -5936,6 +6111,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 8"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
@@ -5952,6 +6128,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 9"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
@@ -5968,6 +6145,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 10"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
@@ -5984,6 +6162,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 11"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
@@ -6000,6 +6179,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 12"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
@@ -6016,6 +6196,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 13"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
@@ -6032,6 +6213,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 14"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
@@ -6048,6 +6230,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 15"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
@@ -6064,6 +6247,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 16"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
@@ -6080,6 +6264,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 17"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
@@ -6096,6 +6281,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 18"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
@@ -6112,6 +6298,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 19"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
@@ -6128,6 +6315,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 20"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
@@ -6144,6 +6332,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 21"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
@@ -6160,6 +6349,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 22"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
@@ -6176,6 +6366,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 23"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
@@ -6192,6 +6383,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with default p
       >
         <a
           aria-current="false"
+          aria-label="go to page 24"
           class="emotion-11"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
@@ -6796,6 +6988,182 @@ exports[`PaginationItem renders with overrides 1`] = `
           Pagination Item
         </span>
       </a>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`PaginationItem renders with overrides.itemButton 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  margin-inline: space000;
+  fill: #3358CC;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:disabled {
+  color: #ABABAB;
+  fill: #ABABAB;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-2:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  margin-inline: space000;
+  fill: #3358CC;
+}
+
+.emotion-2.emotion-2:hover:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-2.emotion-2:active:not(:disabled) {
+  color: #14328D;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2.emotion-2:disabled {
+  color: #ABABAB;
+  fill: #ABABAB;
+}
+
+.emotion-2.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2.emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-2.emotion-2:selected:hover:not(:disabled) {
+  color: #3B3B3B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2.emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2.emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+    role="navigation"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <svg
+        aria-current="false"
+        aria-hidden="true"
+        aria-label="go to page 3"
+        class="emotion-2 emotion-3"
+        data-testid="pagination-item"
+        fill="currentColor"
+        focusable="false"
+        height="medium"
+        href="https://paginationitem.test"
+        viewBox="0 0 24 24"
+        width="medium"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+        />
+      </svg>
     </ul>
   </nav>
 </DocumentFragment>
