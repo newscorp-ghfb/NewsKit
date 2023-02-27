@@ -671,7 +671,7 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
-  init:
+  init_project:
     parameters:
       job_type:
         type: string
@@ -1386,7 +1386,7 @@ workflows:
             - test_e2e_comps
             - test_e2e_docs_pr
             - test_broken_links_docs_pr
-      - init:
+      - init_project:
           context: ncu-product-platforms-context
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_pr
@@ -1396,7 +1396,7 @@ workflows:
           tf_env: false
           environment: pr
           requires:
-            - init
+            - init_project
       - deploy_terraform_oidc:
           name: validate_deploy_terraform_s3_dev
           package: s3/dev-newskit
@@ -1405,7 +1405,7 @@ workflows:
           tf_env: true
           environment: dev
           requires:
-            - init
+            - init_project
       - deploy_terraform_oidc:
           name: validate_deploy_terraform_s3_staging
           package: s3/prod-newskit
@@ -1414,7 +1414,7 @@ workflows:
           tf_env: true
           environment: staging
           requires:
-            - init
+            - init_project
       - deploy_terraform_oidc:
           name: validate_deploy_terraform_s3_prod
           package: s3/prod-newskit
@@ -1423,7 +1423,7 @@ workflows:
           tf_env: true
           environment: prod
           requires:
-            - init
+            - init_project
       - build_docs:
           name: build_docs_pr
           context: ncu-newskit-site-pr
@@ -1509,7 +1509,7 @@ workflows:
     when:
       equal: [main, << pipeline.git.branch >>]
     jobs:
-      - init:
+      - init_project:
           context: ncu-product-platforms-context
       - deploy_terraform:
           name: deploy_terraform_dns_dev
@@ -1517,7 +1517,7 @@ workflows:
           context: ncu-product-platforms-context
           environment: dev
           requires:
-            - init
+            - init_project
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_dev
           package: s3/dev-newskit
@@ -1526,7 +1526,7 @@ workflows:
           tf_env: true
           environment: dev
           requires:
-            - init
+            - init_project
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_staging
           package: s3/prod-newskit
@@ -1535,7 +1535,7 @@ workflows:
           tf_env: true
           environment: staging
           requires:
-            - init
+            - init_project
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_prod
           package: s3/prod-newskit
@@ -1544,7 +1544,7 @@ workflows:
           tf_env: true
           environment: prod
           requires:
-            - init
+            - init_project
       - install_deps:
           context: ncu-product-platforms-context
       - install_cypress:
@@ -1727,7 +1727,7 @@ workflows:
           context: ncu-product-platforms-context
           version: $(echo << pipeline.git.tag >> | cut -f2 -d "v")
 
-      - init:
+      - init_project:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
       - deploy_terraform:
@@ -1737,7 +1737,7 @@ workflows:
           context: ncu-product-platforms-context
           environment: staging
           requires:
-            - init
+            - init_project
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_staging
           package: s3/prod-newskit
@@ -1746,7 +1746,7 @@ workflows:
           tf_env: true
           environment: staging
           requires:
-            - init
+            - init_project
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_prod
           package: s3/prod-newskit
@@ -1755,7 +1755,7 @@ workflows:
           tf_env: true
           environment: prod
           requires:
-            - init
+            - init_project
       - install_deps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
