@@ -1,8 +1,14 @@
+/*
+This module is used by the visual regression tests to run the demos.
+
+Type checking is disabled by default for speed, it's 5x slower!
+If type checking is desired for debugging remove both cache-loader and thread-loader and set transpileOnly to false',
+*/
+
 const path = require('path');
 const webpack = require('webpack');
 const CopyPlugin = require('copy-webpack-plugin');
 
-// This module is used by the visual regression tests to run the demos.
 module.exports = {
   entry: './e2e/index',
   context: path.resolve(__dirname),
@@ -19,10 +25,17 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'ts-loader',
-        options: {
-          configFile: 'e2e/tsconfig.json',
-        },
+        use: [
+          {loader: 'cache-loader'},
+          {loader: 'thread-loader'},
+          {
+            loader: 'ts-loader',
+            options: {
+              configFile: 'e2e/tsconfig.json',
+              transpileOnly: true,
+            },
+          },
+        ],
         exclude: [
           /src\/icons\/(filled|outlined)\/(material|material-outlined)\/\.*/,
         ],
