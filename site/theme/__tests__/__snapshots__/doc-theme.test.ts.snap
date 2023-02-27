@@ -841,6 +841,18 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "boxShadow": "{{shadows.shadow020}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "__extends": "{{stylePresets.cardComposable}}",
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "cardContainer": Object {
       "base": Object {
         "borderRadius": false,
@@ -3587,6 +3599,18 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "boxShadow": "{{shadows.shadow020}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "__extends": "{{stylePresets.cardComposable}}",
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "cardContainer": Object {
@@ -6340,6 +6364,18 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "boxShadow": "{{shadows.shadow020}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "__extends": "{{stylePresets.cardComposable}}",
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "cardContainer": Object {
       "base": Object {
         "borderRadius": false,
@@ -9086,6 +9122,18 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "boxShadow": "{{shadows.shadow020}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "__extends": "{{stylePresets.cardComposable}}",
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "cardContainer": Object {
@@ -11839,6 +11887,18 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "boxShadow": "{{shadows.shadow020}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "__extends": "{{stylePresets.cardComposable}}",
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "cardContainer": Object {
       "base": Object {
         "borderRadius": false,
@@ -14585,6 +14645,18 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "boxShadow": "{{shadows.shadow020}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "__extends": "{{stylePresets.cardComposable}}",
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "cardContainer": Object {
@@ -17338,6 +17410,18 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "boxShadow": "{{shadows.shadow020}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "__extends": "{{stylePresets.cardComposable}}",
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "cardContainer": Object {
       "base": Object {
         "borderRadius": false,
@@ -20084,6 +20168,18 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "boxShadow": "{{shadows.shadow020}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "__extends": "{{stylePresets.cardComposable}}",
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "cardContainer": Object {

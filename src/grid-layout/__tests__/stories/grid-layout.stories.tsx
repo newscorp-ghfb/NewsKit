@@ -236,7 +236,7 @@ StoryCardWithButtonInActionContainer.storyName =
   'with-button-in-action-container';
 
 export default {
-  title: 'Components/composable-card',
+  title: 'Components/grid-layout',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

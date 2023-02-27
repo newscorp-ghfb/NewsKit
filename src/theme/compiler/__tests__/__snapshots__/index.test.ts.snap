@@ -411,6 +411,21 @@ Object {
     "spaceInsetStretch060": "48px 32px",
   },
   "stylePresets": Object {
+    "cardComposable": Object {
+      "base": Object {
+        "backgroundColor": "#FFFFFF",
+        "boxShadow": "0 2px 4px 0 rgba(10,10,10,0.08)",
+      },
+    },
+    "cardComposableLink": Object {
+      "base": Object {
+        "backgroundColor": "#FFFFFF",
+        "boxShadow": "0 2px 4px 0 rgba(10,10,10,0.08)",
+      },
+      "hover": Object {
+        "backgroundColor": "#F1F1F1",
+      },
+    },
     "controlLabel": Object {
       "base": Object {
         "color": "#3B3B3B",
