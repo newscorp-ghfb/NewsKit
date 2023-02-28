@@ -1,17 +1,4 @@
-interface Route {
-  title: string;
-  id: string;
-  description?: string;
-  page?: boolean;
-  illustration?: string;
-  indexPage?: boolean;
-  cardTitle?: string;
-  buttonLabel?: string;
-  nextId?: string;
-  subNav?: Array<Route>;
-}
-
-export const routes: Route[] = [
+export const routes = [
   {
     title: 'About',
     id: '/about',
