@@ -34,6 +34,31 @@ const componentCategories = componentsRouteList?.slice(1);
 const UtilityCategories =
   componentsRouteList.filter(route => route.id === '/utils')[0].subNav || [];
 
+const UtilitiesList = () => (
+  <Block stylePreset="componentsUtilitiesStructuredList">
+    <StructuredList divider>
+      {UtilityCategories.map(({title, id, description}) => (
+        <StructuredListItem key={id} href={id} ariaLabel={title}>
+          <StructuredListCell>
+            <TextBlock
+              stylePreset="inkContrast"
+              typographyPreset="utilityHeading010"
+            >
+              {title}
+            </TextBlock>
+            <TextBlock
+              marginBlockStart="space030"
+              stylePreset="inkContrast"
+              typographyPreset="utilityBody020"
+            >
+              {description}
+            </TextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      ))}
+    </StructuredList>
+  </Block>
+);
 const getCardList = (routeList: Item[]) =>
   routeList
     .filter(route => route.page && route?.illustration)
@@ -71,31 +96,7 @@ const Overview = (layoutProps: LayoutProps) => (
               headline={title as string}
               description={description}
             >
-              {(title === 'Utilities' && (
-                <Block stylePreset="componentsUtilitiesStructuredList">
-                  <StructuredList divider>
-                    {UtilityCategories.map(({id}) => (
-                      <StructuredListItem key={id} href={id}>
-                        <StructuredListCell>
-                          <TextBlock
-                            stylePreset="inkContrast"
-                            typographyPreset="utilityHeading010"
-                          >
-                            {title}
-                          </TextBlock>
-                          <TextBlock
-                            marginBlockStart="space030"
-                            stylePreset="inkContrast"
-                            typographyPreset="utilityBody020"
-                          >
-                            {description}
-                          </TextBlock>
-                        </StructuredListCell>
-                      </StructuredListItem>
-                    ))}
-                  </StructuredList>
-                </Block>
-              )) || (
+              {(title === 'Utilities' && <UtilitiesList />) || (
                 <MediaList
                   cards={getCardList(subNav)}
                   gridProps={{xsRowGutter: 'space050'}}
