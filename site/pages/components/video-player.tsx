@@ -5,11 +5,12 @@ import {renderIfReactComponent} from 'newskit/utils/component';
 import {LayoutProps} from '../../components/layout';
 import {MetaStatus} from '../../components/meta';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {Table} from '../../components/table';
 import {InlineCode} from '../../components/markdown-elements';
 import {ContentText} from '../../components/text-section';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {
+  AccessibilitySection,
+  AnatomySection,
   CommonSection,
   ComponentAPISection,
   RelatedComponentsSection,
@@ -78,9 +79,7 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
         </InlineMessage>
       </Block>
     </ComponentPageCell>
-    <CommonSection
-      title="Anatomy"
-      id="anatomy"
+    <AnatomySection
       introduction={
         <>
           In order to allow NewsKit consumers to display video content, the
@@ -103,76 +102,62 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
           passed to the video player component:
         </>
       }
-    >
-      <ComponentPageCell>
-        <Block spaceStack="space050">
-          {renderIfReactComponent(
-            getIllustrationComponent('components/video-player/anatomy'),
-          )}
-        </Block>
-        <Block spaceStack="space000">
-          <Table
-            columns={['Item', 'Name', 'Description', 'Component', 'Optional']}
-            rows={[
-              {
-                name: 'Play button',
-                description: 'Toggle button for playing or pausing the video',
-                optional: true,
-              },
-              {
-                name: 'Seek bar',
-                description: (
-                  <>
-                    Displays duration and buffering, and indicates and controls
-                    track position. It includes:{' '}
-                    <InlineCode>playProgressBar</InlineCode>,{' '}
-                    <InlineCode>seekHandle</InlineCode>,{' '}
-                    <InlineCode>currentDuration</InlineCode>, and{' '}
-                    <InlineCode>seekPosition</InlineCode>.
-                  </>
-                ),
-                optional: true,
-              },
-              {
-                name: 'Control bar',
-                description: (
-                  <>
-                    Displays video player actions in a bar pinned to the bottom
-                    of the video. It includes:{' '}
-                    <InlineCode>timeDisplay</InlineCode>, and{' '}
-                    <InlineCode>volumeControl</InlineCode>.
-                  </>
-                ),
-                optional: true,
-              },
-              {
-                name: 'Dock text',
-                description: (
-                  <>
-                    Displays video details on hover when video is paused. It
-                    includes: <InlineCode>title</InlineCode>, and{' '}
-                    <InlineCode>description</InlineCode>.
-                  </>
-                ),
-                optional: true,
-              },
-              {
-                name: 'Mini card overlay',
-                description: (
-                  <>
-                    Displays the upcoming video details in a mini card overlay.
-                    It includes: <InlineCode>countdown</InlineCode>,{' '}
-                    <InlineCode>name</InlineCode>, and{' '}
-                    <InlineCode>closeButton</InlineCode>.
-                  </>
-                ),
-                optional: true,
-              },
-            ]}
-          />
-        </Block>
-      </ComponentPageCell>
-    </CommonSection>
+      media={getIllustrationComponent('components/video-player/anatomy')}
+      rows={[
+        {
+          name: 'Play button',
+          description: 'Toggle button for playing or pausing the video',
+          optional: true,
+        },
+        {
+          name: 'Seek bar',
+          description: (
+            <>
+              Displays duration and buffering, and indicates and controls track
+              position. It includes: <InlineCode>playProgressBar</InlineCode>,{' '}
+              <InlineCode>seekHandle</InlineCode>,{' '}
+              <InlineCode>currentDuration</InlineCode>, and{' '}
+              <InlineCode>seekPosition</InlineCode>.
+            </>
+          ),
+          optional: true,
+        },
+        {
+          name: 'Control bar',
+          description: (
+            <>
+              Displays video player actions in a bar pinned to the bottom of the
+              video. It includes: <InlineCode>timeDisplay</InlineCode>, and{' '}
+              <InlineCode>volumeControl</InlineCode>.
+            </>
+          ),
+          optional: true,
+        },
+        {
+          name: 'Dock text',
+          description: (
+            <>
+              Displays video details on hover when video is paused. It includes:{' '}
+              <InlineCode>title</InlineCode>, and{' '}
+              <InlineCode>description</InlineCode>.
+            </>
+          ),
+          optional: true,
+        },
+        {
+          name: 'Mini card overlay',
+          description: (
+            <>
+              Displays the upcoming video details in a mini card overlay. It
+              includes: <InlineCode>countdown</InlineCode>,{' '}
+              <InlineCode>name</InlineCode>, and{' '}
+              <InlineCode>closeButton</InlineCode>.
+            </>
+          ),
+          optional: true,
+        },
+      ]}
+    />
     <CommonSection
       title="Layout examples"
       id="layoutexamples"
@@ -278,9 +263,7 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
         </Block>
       </ComponentPageCell>
     </CommonSection>
-    <CommonSection
-      title="Accessibility considerations"
-      id="accessibility"
+    <AccessibilitySection
       introduction={
         <>
           The video player component meets the standards set out in the{' '}
