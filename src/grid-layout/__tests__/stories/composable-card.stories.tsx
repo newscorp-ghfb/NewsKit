@@ -184,9 +184,11 @@ const cardCustomThemeObject: CreateThemeArgs = {
     },
   },
 };
+const storyAreasDesktop = `story1 story2
+                           story3  story4`;
 
 export const StoryDefault = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
     <StorybookCase title="Basic">
       <Card
         overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
@@ -255,7 +257,7 @@ export const StoryDefault = () => (
 StoryDefault.storyName = 'Default';
 
 export const StoryCardAreas = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
     <StorybookCase title="Card Content">
       <Card
         overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
@@ -336,7 +338,7 @@ export const StoryCardAreas = () => (
 StoryCardAreas.storyName = 'Card areas';
 
 export const StoryVariations = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
     <StorybookCase title="CardLink and CardMedia">
       <Card
         overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
@@ -359,7 +361,10 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="Whole card as a link by applying the 'expand' prop">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardContentSeparateColor'}}
+        overrides={{
+          maxWidth: '372px',
+          stylePreset: 'cardContentSeparateColor',
+        }}
         areas={`
           media
           content
