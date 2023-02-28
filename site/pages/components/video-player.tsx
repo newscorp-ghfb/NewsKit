@@ -72,10 +72,7 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
             Brightcove player
           </Link>{' '}
           that can be themed, by using{' '}
-          <Link
-            href="https://www.newskit.co.uk/theme/foundation/design-tokens/"
-            target="_blank"
-          >
+          <Link href="/theme/foundation/design-tokens/">
             NewsKit design tokens
           </Link>
           .
@@ -248,10 +245,10 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
           >
             NewsKit allows users to customise the styling of the subcomponents
             of the Brightcove player, using{' '}
-            <Link href="/foundation/design-tokens/" target="_blank">
+            <Link href="/theme/foundation/design-tokens/">
+              {' '}
               NewsKit design tokens
             </Link>
-            .
             <br />
             <br />
             Refer to the{' '}
