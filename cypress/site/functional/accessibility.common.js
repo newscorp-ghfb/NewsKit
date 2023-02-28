@@ -18,15 +18,13 @@ const flatRoutes = routes =>
     );
   }, []);
 
-const pages = flatRoutes(routes, 'id');
-
 export const routesFor = id => {
   const filteredRoutes = siteRoutes.filter(sr => sr.id === id);
   return flatRoutes(filteredRoutes);
 };
 
 export function runA11yTestForPath(path) {
-  describe('Page accessibility', () => {
+  describe(`Page accessibility for ${path} section`, () => {
     routesFor(path).forEach(route => {
       it(`should pass basic a11y test for ${Cypress.config(
         'baseUrl',
@@ -69,11 +67,3 @@ export function runA11yTestForPath(path) {
     });
   });
 }
-
-describe('Page accessibility', () => {
-  pages.forEach(path => {
-    it(`should pass basic a11y test for ${Cypress.config(
-      'baseUrl',
-    )}${path}`, () => runA11yTestForPath(path));
-  });
-});
