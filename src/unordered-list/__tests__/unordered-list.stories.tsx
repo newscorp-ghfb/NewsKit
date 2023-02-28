@@ -46,7 +46,7 @@ export const StoryUnorderedListVariations = () => (
       </UnorderedList>
     </StorybookCase>
     <StorybookCase title="Link">
-      <UnorderedList>
+      <UnorderedList overrides={{content: {stylePreset: 'linkStandalone'}}}>
         {[
           <LinkStandalone href="/">
             Click here
@@ -60,7 +60,7 @@ export const StoryUnorderedListVariations = () => (
       </UnorderedList>
     </StorybookCase>
     <StorybookCase title="External link">
-      <UnorderedList>
+      <UnorderedList overrides={{content: {stylePreset: 'linkStandalone'}}}>
         {[
           <LinkStandalone href="https://newskit.co.uk/">
             Click here
