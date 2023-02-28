@@ -994,6 +994,28 @@ export const routes = [
           'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
       },
       {
+        title: 'Solutions',
+        id: '/patterns/solutions',
+        subNav: [
+          {
+            title: 'NewsKit Account',
+            page: true,
+            id: '/patterns/solutions/account',
+            description:
+              'Complete account package with customer information and subscription management.',
+            illustration: 'patterns/solutions/account/01-hero',
+          },
+          {
+            title: 'NewsKit Help Hub',
+            page: true,
+            id: '/patterns/solutions/help-hub',
+            description:
+              'Help module that enables your customers to self-serve support.',
+            illustration: 'patterns/solutions/help-hub/01-hero',
+          },
+        ],
+      },
+      {
         title: 'Onboarding',
         id: '/patterns/onboarding',
         subNav: [
