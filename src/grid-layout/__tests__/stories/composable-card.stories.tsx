@@ -18,6 +18,7 @@ import {LinkStandalone} from '../../../link';
 import {Button} from '../../../button';
 import {Cell} from '../../../grid/cell';
 import {Grid} from '../../../grid';
+import {UnorderedList} from '../../../unordered-list';
 
 const StorybookGridCase = ({title, children}) => (
   <Cell xs={12} sm={6}>
@@ -439,7 +440,51 @@ export const StoryVariations = () => (
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
         <CardActions marginBlock="space020">
-          <Button href="/news">Button</Button>
+          <UnorderedList
+            overrides={{content: {typographyPreset: 'editorialParagraph020'}}}
+            markerAlign="start"
+          >
+            Unordered list item
+          </UnorderedList>
+          <UnorderedList
+            markerAlign="start"
+            overrides={{content: {typographyPreset: 'editorialParagraph020'}}}
+          >
+            Unordered list item
+          </UnorderedList>
+          <UnorderedList
+            markerAlign="start"
+            overrides={{content: {typographyPreset: 'editorialParagraph020'}}}
+          >
+            Unordered list item
+          </UnorderedList>
+        </CardActions>
+      </Card>
+    </StorybookCase>
+    <StorybookCase title="Alternative images aspect ratio">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardMedia src="/placeholder-4x5.png" loadingAspectRatio="4:5" />
+        <CardContent
+          overrides={{
+            paddingBlock: 'space040',
+          }}
+        >
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+
+          <H overrides={{paddingBlockStart: 'space020'}} />
+          <P overrides={{marginBlockStart: 'space020'}} />
+        </CardContent>
+        <CardActions marginBlock="space040">
+          <Tag href="/news">Tag</Tag>
         </CardActions>
       </Card>
     </StorybookCase>
@@ -449,7 +494,37 @@ StoryVariations.storyName = 'Variations';
 
 export const StoryInsetCard = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="TO DO" />
+    <StorybookCase title="Card Inset">
+      <Card
+        overrides={{
+          maxWidth: '372px',
+          stylePreset: 'cardContentSeparateColor',
+        }}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent
+          overrides={{
+            paddingBlock: 'space040',
+            paddingInline: 'space020',
+          }}
+        >
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+
+          <H overrides={{paddingBlockStart: 'space020'}} />
+          <P overrides={{marginBlockStart: 'space020'}} />
+        </CardContent>
+        <CardActions marginBlock="space040" paddingInline="space020">
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
+      </Card>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryInsetCard.storyName = 'Inset card';
@@ -547,7 +622,30 @@ StoryLayout.storyName = 'Layout';
 
 export const StorySpan = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="TO DO" />
+    <StorybookCase title="1:1 horizontal ratio">
+      <Card
+        overrides={{stylePreset: 'cardComposableLink'}}
+        areas={`
+          media content 
+          media content 
+          media actions
+        `}
+      >
+        <CardContent overrides={{paddingInline: 'space040'}}>
+          <H
+            overrides={{
+              paddingBlock: 'space020',
+            }}
+          />
+
+          <P />
+        </CardContent>
+        <CardMedia src="/placeholder-3x2.png" loadingAspectRatio="1:1" />
+        <CardActions marginInline="space040" paddingBlock="space020">
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
+      </Card>
+    </StorybookCase>
   </StorybookPage>
 );
 StorySpan.storyName = 'Span';
