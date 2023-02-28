@@ -1,5 +1,12 @@
 import React from 'react';
-import {Grid} from 'newskit';
+import {
+  Block,
+  Grid,
+  StructuredList,
+  StructuredListCell,
+  StructuredListItem,
+  TextBlock,
+} from 'newskit';
 import {
   ContentPrimary,
   ContentSection,
@@ -24,6 +31,8 @@ const componentsRouteList: Item[] =
   routes.filter(route => route.title === 'Components')[0].subNav || [];
 
 const componentCategories = componentsRouteList?.slice(1);
+const UtilityCategories =
+  componentsRouteList.filter(route => route.id === '/utils')[0].subNav || [];
 
 const getCardList = (routeList: Item[]) =>
   routeList
@@ -62,10 +71,36 @@ const Overview = (layoutProps: LayoutProps) => (
               headline={title as string}
               description={description}
             >
-              <MediaList
-                cards={getCardList(subNav)}
-                gridProps={{xsRowGutter: 'space050'}}
-              />
+              {(title === 'Utilities' && (
+                <Block stylePreset="componentsUtilitiesStructuredList">
+                  <StructuredList divider>
+                    {UtilityCategories.map(({id}) => (
+                      <StructuredListItem key={id} href={id}>
+                        <StructuredListCell>
+                          <TextBlock
+                            stylePreset="inkContrast"
+                            typographyPreset="utilityHeading010"
+                          >
+                            {title}
+                          </TextBlock>
+                          <TextBlock
+                            marginBlockStart="space030"
+                            stylePreset="inkContrast"
+                            typographyPreset="utilityBody020"
+                          >
+                            {description}
+                          </TextBlock>
+                        </StructuredListCell>
+                      </StructuredListItem>
+                    ))}
+                  </StructuredList>
+                </Block>
+              )) || (
+                <MediaList
+                  cards={getCardList(subNav)}
+                  gridProps={{xsRowGutter: 'space050'}}
+                />
+              )}
             </ContentPrimary>
           </ContentSection>
         ))}
