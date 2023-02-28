@@ -14,6 +14,7 @@ const getComponentName = s =>
 // This object handles non-src component files and instances where site file names
 // do not match src file paths exactly.
 const OVERRIDES = {
+  community: null,
   overview: null,
   utils: null,
   visibility: 'grid/visibility.tsx',

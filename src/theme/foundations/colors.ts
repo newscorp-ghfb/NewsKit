@@ -202,4 +202,5 @@ export const colors = {
   interactiveDisabled010: '{{colors.neutral020}}',
   interactiveVisited010: '{{colors.purple060}}',
   interactiveFocus010: '{{colors.focus010}}',
+  interactiveFocus020: '{{colors.white}}',
 };

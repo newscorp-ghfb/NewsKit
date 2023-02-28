@@ -689,7 +689,8 @@ export const routes = [
             title: 'Image',
             page: true,
             id: '/components/image',
-            description: 'An element of media.',
+            description:
+              'Images are a type of visual media. They can appear at fixed sizes, percentages, and aspect ratios.',
             illustration: 'components/image-illustration',
           },
         ],
@@ -834,6 +835,29 @@ export const routes = [
             description:
               'Unordered lists make blocks of related text easier to read, structuring information of equal value into manageable bulleted items.',
             illustration: 'components/unordered-list-illustration',
+          },
+        ],
+      },
+      {
+        title: 'Community',
+        description: 'Components that interact with a third-party service.',
+        id: '/components/community',
+        subNav: [
+          {
+            title: 'How to contribute',
+            page: true,
+            id: '/components/community/how-to-contribute',
+            description:
+              'We welcome contributions of code, design and guidance.',
+            illustration: 'components/community/how-to-contribute',
+          },
+          {
+            title: 'Community index',
+            page: true,
+            id: '/components/community/community-index',
+            description:
+              'Contributions are shared and maintained by contributing teams.',
+            illustration: 'components/community/community-index',
           },
         ],
       },
