@@ -71,6 +71,25 @@ const cardCustomThemeObject: CreateThemeArgs = {
           boxShadow: '{{shadows.shadow050}}',
         },
       },
+      cardContainerWithHover: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.purple020}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          backgroundColor: '{{colors.blue020}}',
+          color: '{{colors.inkContrast}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.amber020}}',
+          boxShadow: '{{shadows.shadow030}}',
+          color: '{{colors.amber070}}',
+        },
+      },
+      titleWithHoverFromParent: {
+        base: {
+          color: 'currentColor',
+        },
+      },
       cardContainerMock2: {
         base: {
           borderStyle: 'solid',
@@ -512,23 +531,24 @@ export const StoryStylingOverrides = () => (
       <Card
         overrides={{
           maxWidth: '250px',
-          stylePreset: 'cardContainerMock',
+          stylePreset: 'cardContainerWithHover',
         }}
-        areas={`
-          media
-          content
-          actions
-        `}
       >
-        <CardContent overrides={{paddingBlock: 'space040'}}>
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent
+          overrides={{paddingBlock: 'space040', paddingInline: 'space040'}}
+          rowGap="space030"
+        >
           <div>
             <Flag>Flag</Flag>
           </div>
-          <H overrides={{marginBlockStart: 'space020'}} />
-          <P overrides={{marginBlockStart: 'space020'}} />
+          {/* unfortunately in NewsKit there is not way parent hover to trigger the children one
+           the easiest way to do that is using css currentColor */}
+          <H overrides={{heading: {stylePreset: 'titleWithHoverFromParent'}}} />
+          <P />
         </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardActions marginBlock="space040">
+        {/* TODO: CardActions might be better to be a Grid instead of Block so all sub-components are consistent  */}
+        <CardActions marginBlock="space040" paddingInline="space040">
           <Tag href="http://example.com" size="medium">
             Tag
           </Tag>
@@ -554,6 +574,8 @@ export const StoryStylingOverrides = () => (
           <H
             overrides={{
               marginBlockStart: 'space020',
+              // this is wrong override, it needs to be
+              //  heading: {stylePreset: 'headlineHeadingInteractiveMock'}
               stylePreset: 'headlineHeadingInteractiveMock',
             }}
           />
