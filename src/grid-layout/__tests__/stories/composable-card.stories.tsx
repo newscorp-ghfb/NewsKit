@@ -9,18 +9,21 @@ import {Block} from '../../../block';
 import {CreateThemeArgs, ThemeProvider} from '../../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
 import {Flag} from '../../../flag';
-import {StorybookCase, StorybookPage} from '../../../test/storybook-comps';
+import {
+  StorybookCase,
+  StorybookPage,
+  StorybookSubHeading,
+} from '../../../test/storybook-comps';
 import {LinkStandalone} from '../../../link';
 import {Button} from '../../../button';
+import {Cell} from '../../../grid/cell';
+import {Grid} from '../../../grid';
 
-const P = ({overrides, ...props}: Omit<ParagraphProps, 'children'>) => (
-  <Paragraph
-    overrides={{typographyPreset: 'editorialParagraph020', ...overrides}}
-    {...props}
-  >
-    Et libero, congue at condimentum. Id lobortis urna consectetur a,
-    scelerisque lorem amet, magnis fringilla.
-  </Paragraph>
+const StorybookGridCase = ({title, children}) => (
+  <Cell xs={12} sm={6}>
+    <StorybookSubHeading>{title}</StorybookSubHeading>
+    {children}
+  </Cell>
 );
 
 const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
@@ -30,6 +33,16 @@ const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
   >
     Arcu risus mauris sodales penatibus sit tincidunt.
   </Headline>
+);
+
+const P = ({overrides, ...props}: Omit<ParagraphProps, 'children'>) => (
+  <Paragraph
+    overrides={{typographyPreset: 'editorialParagraph020', ...overrides}}
+    {...props}
+  >
+    Et libero, congue at condimentum. Id lobortis urna consectetur a,
+    scelerisque lorem amet, magnis fringilla.
+  </Paragraph>
 );
 
 // Style presets (Taken from style-presets.ts;)
@@ -44,9 +57,26 @@ const cardCustomThemeObject: CreateThemeArgs = {
   name: 'card-custom-theme',
   overrides: {
     stylePresets: {
+      flagCustom: {
+        base: {
+          backgroundColor: '{{colors.amber080}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+      },
+      tagCustom: {
+        base: {
+          backgroundColor: '{{colors.socialGoogleYellow}}',
+        },
+      },
       headlineLink: {
         base: {
           color: '{{colors.interactivePrimary030}}',
+        },
+      },
+      headlineWithHoverFromParent: {
+        base: {
+          color: 'currentColor',
         },
       },
       cardLabel: labelDefault,
@@ -82,27 +112,20 @@ const cardCustomThemeObject: CreateThemeArgs = {
           borderStyle: 'solid',
           borderColor: '{{colors.purple020}}',
           borderWidth: '{{borders.borderWidth010}}',
+          backgroundColor: '{{colors.amber020}}',
+          color: '{{colors.amber070}}',
+        },
+        hover: {
+          boxShadow: '{{shadows.shadow030}}',
           backgroundColor: '{{colors.blue020}}',
           color: '{{colors.inkContrast}}',
         },
-        hover: {
+      },
+      cardContainerMockNoHover: {
+        base: {
           backgroundColor: '{{colors.amber020}}',
           boxShadow: '{{shadows.shadow030}}',
           color: '{{colors.amber070}}',
-        },
-      },
-      titleWithHoverFromParent: {
-        base: {
-          color: 'currentColor',
-        },
-      },
-      cardContainerMock2: {
-        base: {
-          borderStyle: 'solid',
-          borderColor: '{{colors.purple020}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          backgroundColor: '{{colors.blue020}}',
-          color: '{{colors.green090}}',
         },
       },
       cardContainerMediaMock: {
@@ -627,168 +650,180 @@ StoryOnClick.storyName = 'On click';
 
 export const StoryLogicalProps = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Margin overrides">
-      <Card
-        overrides={{
-          maxWidth: '250px',
-          stylePreset: 'cardComposable',
-          marginInline: 'space060',
-        }}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent overrides={{paddingBlock: 'space040'}}>
-          <div>
-            <Flag>Flag</Flag>
-          </div>
-          <H overrides={{marginBlockStart: 'space020'}} />
-          <P overrides={{marginBlockStart: 'space020'}} />
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardActions marginBlock="space040">
-          <Tag href="http://example.com" size="medium">
-            Tag
-          </Tag>
-        </CardActions>
-      </Card>
-    </StorybookCase>
-    <StorybookCase title="Padding overrides">
-      <Card
-        overrides={{
-          maxWidth: '250px',
-          stylePreset: 'cardComposable',
-          paddingBlock: 'space060',
-        }}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent overrides={{paddingBlock: 'space020'}}>
-          <div>
-            <Flag>Flag</Flag>
-          </div>
-          <H overrides={{marginBlockStart: 'space020'}} />
-          <P overrides={{marginBlockStart: 'space020'}} />
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardActions marginBlock="space040">
-          <Tag href="http://example.com" size="medium">
-            Tag
-          </Tag>
-        </CardActions>
-      </Card>
-    </StorybookCase>
-    <StorybookCase title="Padding overrides CardContent area">
-      <Card
-        overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent overrides={{paddingBlock: 'space060'}}>
-          <div>
-            <Flag>Flag</Flag>
-          </div>
-          <H overrides={{marginBlockStart: 'space020'}} />
-          <P overrides={{marginBlockStart: 'space020'}} />
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardActions marginBlock="space040">
-          <Tag href="http://example.com" size="medium">
-            Tag
-          </Tag>
-        </CardActions>
-      </Card>
-    </StorybookCase>
+    <Grid>
+      <StorybookGridCase title="Margin overrides">
+        <Card
+          overrides={{
+            maxWidth: '250px',
+            stylePreset: 'cardComposable',
+            marginInline: 'space060',
+          }}
+          areas={`
+            media
+            content
+            actions
+          `}
+        >
+          <CardContent overrides={{paddingBlock: 'space040'}}>
+            <div>
+              <Flag>Flag</Flag>
+            </div>
+            <H overrides={{marginBlockStart: 'space020'}} />
+            <P overrides={{marginBlockStart: 'space020'}} />
+          </CardContent>
+          <CardMedia src="/placeholder-3x2.png" />
+          <CardActions marginBlock="space040">
+            <Tag href="http://example.com" size="medium">
+              Tag
+            </Tag>
+          </CardActions>
+        </Card>
+      </StorybookGridCase>
+      <StorybookGridCase title="Padding overrides">
+        <Card
+          overrides={{
+            maxWidth: '250px',
+            stylePreset: 'cardComposable',
+            paddingBlock: 'space060',
+          }}
+          areas={`
+            media
+            content
+            actions
+          `}
+        >
+          <CardContent overrides={{paddingBlock: 'space020'}}>
+            <div>
+              <Flag>Flag</Flag>
+            </div>
+            <H overrides={{marginBlockStart: 'space020'}} />
+            <P overrides={{marginBlockStart: 'space020'}} />
+          </CardContent>
+          <CardMedia src="/placeholder-3x2.png" />
+          <CardActions marginBlock="space040">
+            <Tag href="http://example.com" size="medium">
+              Tag
+            </Tag>
+          </CardActions>
+        </Card>
+      </StorybookGridCase>
+      <StorybookGridCase title="Padding overrides CardContent area">
+        <Card
+          overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+          areas={`
+            media
+            content
+            actions
+          `}
+        >
+          <CardContent overrides={{paddingBlock: 'space060'}}>
+            <div>
+              <Flag>Flag</Flag>
+            </div>
+            <H overrides={{marginBlockStart: 'space020'}} />
+            <P overrides={{marginBlockStart: 'space020'}} />
+          </CardContent>
+          <CardMedia src="/placeholder-3x2.png" />
+          <CardActions marginBlock="space040">
+            <Tag href="http://example.com" size="medium">
+              Tag
+            </Tag>
+          </CardActions>
+        </Card>
+      </StorybookGridCase>
+    </Grid>
   </StorybookPage>
 );
 StoryLogicalProps.storyName = 'Logical props';
 
 export const StoryStylingOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Override background and hover colours">
-      <Card
-        overrides={{
-          maxWidth: '250px',
-          stylePreset: 'cardContainerWithHover',
-        }}
-      >
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardContent
-          overrides={{paddingBlock: 'space040', paddingInline: 'space040'}}
-          rowGap="space030"
+    <Grid>
+      <StorybookGridCase title="Card and Flag colours">
+        <Card
+          overrides={{
+            maxWidth: '250px',
+            stylePreset: 'cardContainerWithHover',
+          }}
         >
-          <div>
-            <Flag>Flag</Flag>
-          </div>
-          {/* unfortunately in NewsKit there is not way parent hover to trigger the children one
-           the easiest way to do that is using css currentColor */}
-          <H overrides={{heading: {stylePreset: 'titleWithHoverFromParent'}}} />
-          <P />
-        </CardContent>
-        {/* TODO: CardActions might be better to be a Grid instead of Block so all sub-components are consistent  */}
-        <CardActions marginBlock="space040" paddingInline="space040">
-          <Tag href="http://example.com" size="medium">
-            Tag
-          </Tag>
-        </CardActions>
-      </Card>
-    </StorybookCase>
-    <StorybookCase title="TODO Override text, button and background colours">
-      <Card
-        overrides={{
-          maxWidth: '250px',
-          stylePreset: 'cardContainerMock2',
-        }}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent overrides={{paddingBlock: 'space040'}}>
-          <div>
-            <Flag>Flag</Flag>
-          </div>
-          <H
-            overrides={{
-              marginBlockStart: 'space020',
-              // this is wrong override, it needs to be
-              //  heading: {stylePreset: 'headlineHeadingInteractiveMock'}
-              stylePreset: 'headlineHeadingInteractiveMock',
-            }}
-          />
-          <P
-            overrides={{
-              marginBlockStart: 'space020',
-              stylePreset: 'cardContainerMock2',
-            }}
-          />
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardActions
-          marginBlock="space040"
-          stylePreset="cardContainerActionsMock"
+          <CardMedia src="/placeholder-3x2.png" />
+          <CardContent
+            overrides={{paddingBlock: 'space040', paddingInline: 'space040'}}
+            rowGap="space030"
+          >
+            <div>
+              <Flag overrides={{stylePreset: 'flagCustom'}}>Flag</Flag>
+            </div>
+            {/* Unfortunately in NewsKit there is not a way for parent hover to trigger the children one
+            the easiest way to do that is using CSS currentColor */}
+            <H
+              overrides={{
+                heading: {stylePreset: 'headlineWithHoverFromParent'},
+              }}
+            />
+            <P />
+          </CardContent>
+          {/* CardActions might be better to be a Grid instead of Block so all sub-components are consistent? */}
+          <CardActions marginBlock="space040" paddingInline="space040">
+            <Tag href="http://example.com" size="medium">
+              Tag
+            </Tag>
+          </CardActions>
+        </Card>
+      </StorybookGridCase>
+      <StorybookGridCase title="Headline, Paragraph, CardActions and Tag colours">
+        <Card
+          overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+          areas={`
+            media
+            content
+            actions
+          `}
         >
-          <Tag href="http://example.com" size="medium">
-            Tag
-          </Tag>
-        </CardActions>
-      </Card>
-    </StorybookCase>
+          <CardMedia src="/placeholder-3x2.png" />
+          <CardContent
+            overrides={{paddingBlock: 'space040', paddingInline: 'space040'}}
+            rowGap="space030"
+          >
+            <div>
+              <Flag>Flag</Flag>
+            </div>
+            <H
+              overrides={{
+                marginBlockStart: 'space020',
+                // Specialised stylePreset override for Heading
+                heading: {stylePreset: 'headlineHeadingInteractiveMock'},
+              }}
+            />
+            <P
+              overrides={{
+                marginBlockStart: 'space020',
+                stylePreset: 'cardContainerMock',
+              }}
+            />
+          </CardContent>
+          <CardActions
+            marginBlock="space040"
+            paddingInline="space040"
+            stylePreset="cardContainerActionsMock"
+          >
+            <Tag
+              href="http://example.com"
+              size="medium"
+              overrides={{stylePreset: 'tagCustom'}}
+            >
+              Tag
+            </Tag>
+          </CardActions>
+        </Card>
+      </StorybookGridCase>
+    </Grid>
   </StorybookPage>
 );
 StoryStylingOverrides.storyName = 'Styling overrides';
 
 export const StoryOverrides = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage columns="auto">
     <StorybookCase title="Typography preset - headline">
       <Card
         overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
