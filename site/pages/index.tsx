@@ -61,25 +61,23 @@ const Index = ({
             marginBlockEnd: {xs: 'space080', md: 'space000'},
           }}
         >
-          <NextLink legacyBehavior href={content.hero_card_link} passHref>
-            <FeatureCard
-              title={content.hero_card_title}
-              description={content.hero_card_description}
-              stylePrefix="worldDesignSystemsWeekCard"
-              layout="horizontal"
-              overrides={{
-                title: {typographyPreset: 'editorialHeadline060'},
-                description: {typographyPreset: 'editorialSubheadline010'},
-                button: {
-                  paddingInline: 'space000',
-                  stylePreset: 'linkStandaloneInversePersistent',
-                },
-              }}
-              buttonIcon={<IconFilledLaunch />}
-              buttonLabel={content.hero_card_link_text}
-              buttonHref={content.hero_card_link}
-            />
-          </NextLink>
+          <FeatureCard
+            title={content.hero_card_title}
+            description={content.hero_card_description}
+            stylePrefix="worldDesignSystemsWeekCard"
+            layout="horizontal"
+            overrides={{
+              title: {typographyPreset: 'editorialHeadline060'},
+              description: {typographyPreset: 'editorialSubheadline010'},
+              button: {
+                paddingInline: 'space000',
+                stylePreset: 'linkStandaloneInversePersistent',
+              },
+            }}
+            buttonIcon={<IconFilledLaunch />}
+            buttonLabel={content.hero_card_link_text}
+            buttonHref={content.hero_card_link}
+          />
         </GridLayout>
         <GridLayout overrides={GRID_SECTION_OVERRIDES}>
           <Explore />

@@ -10,6 +10,7 @@ import {
   LinkStandalone,
   Flag,
 } from 'newskit';
+import NextLink from 'next/link';
 import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
 import {getToken} from '../../../src/utils/get-token';
 import {
@@ -33,15 +34,17 @@ const OptionalLinkWrapper: React.FC<OptionalLinkWrapperProps> = ({
 }) => {
   if (href) {
     return (
-      <StyledCardLink
-        external={false}
-        overrides={{
-          stylePreset: 'linkNoUnderline',
-        }}
-        href={href as string}
-      >
-        <>{children}</>
-      </StyledCardLink>
+      <NextLink legacyBehavior href={href} passHref>
+        <StyledCardLink
+          external={false}
+          overrides={{
+            stylePreset: 'linkNoUnderline',
+          }}
+          href={href as string}
+        >
+          <>{children}</>
+        </StyledCardLink>
+      </NextLink>
     );
   }
   return <>{children}</>;

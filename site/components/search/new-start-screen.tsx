@@ -1,4 +1,5 @@
 import React from 'react';
+import NextLink from 'next/link';
 import {
   Cell,
   Grid,
@@ -94,14 +95,16 @@ export const NewStartScreen = () => (
             marginBlockEnd="space080"
           >
             {items.map(({name, href}) => (
-              <LinkStandalone
-                key={name}
-                href={href}
-                overrides={{typographyPreset: 'utilityLink020'}}
-              >
-                {name}
-                <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
-              </LinkStandalone>
+              <NextLink legacyBehavior href={href} passHref>
+                <LinkStandalone
+                  key={name}
+                  href={href}
+                  overrides={{typographyPreset: 'utilityLink020'}}
+                >
+                  {name}
+                  <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+                </LinkStandalone>
+              </NextLink>
             ))}
           </Stack>
         </Cell>
