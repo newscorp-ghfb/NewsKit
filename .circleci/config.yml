@@ -86,11 +86,6 @@ executors:
       - image: newsuk/terraform:1.2.1
     resource_class: large
 
-  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
-  terraform:
-    docker:
-      - image: hashicorp/terraform:0.12.28
-
   node:
     docker:
       - image: cimg/node:16.13.2-browsers
@@ -726,53 +721,6 @@ jobs:
           steps:
             - terraform_apply_oidc:
                 package: << parameters.package >>
-
-  # Deprecated by deploy_terraform_oidc
-  deploy_terraform:
-    parameters:
-      package:
-        type: string
-      apply:
-        type: boolean
-        default: true
-      tf_env:
-        type: boolean
-        default: true
-      environment:
-        type: string
-        default: ''
-    executor: terraform
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run_only_on_folder_change:
-          folder: ./terraform/<< parameters.package >>
-      - aws_assume_role_file
-      - when:
-          condition: << parameters.tf_env >>
-          steps:
-            - terraform_init:
-                package: << parameters.package >>
-                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
-            - terraform_plan:
-                package: << parameters.package >>
-                terraform_arg: -var-file=<< parameters.environment >>.tfvars
-      - unless:
-          condition: << parameters.tf_env >>
-          steps:
-            - terraform_init:
-                package: << parameters.package >>
-                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
-            - terraform_plan:
-                package: << parameters.package >>
-      - when:
-          condition: << parameters.apply >>
-          steps:
-            - terraform_apply:
-                package: << parameters.package >>
-      - slack/notify:
-          <<: *slack_notify
 
   test_visual_comps_percy:
     executor: node-large
@@ -1512,13 +1460,6 @@ workflows:
     jobs:
       - init_aws:
           context: ncu-product-platforms-context
-      - deploy_terraform:
-          name: deploy_terraform_dns_dev
-          package: dns
-          context: ncu-product-platforms-context
-          environment: dev
-          requires:
-            - init_aws
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_dev
           package: s3/dev-newskit
@@ -1731,14 +1672,6 @@ workflows:
       - init_aws:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
-      - deploy_terraform:
-          <<: *only_on_version_tag
-          name: deploy_terraform_dns_staging
-          package: dns
-          context: ncu-product-platforms-context
-          environment: staging
-          requires:
-            - init_aws
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_staging
           package: s3/prod-newskit
