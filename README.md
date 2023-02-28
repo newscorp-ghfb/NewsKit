@@ -44,6 +44,8 @@ cd newskit
 yarn && yarn dev
 ```
 
+> A few pages on the site use Google Sheets as a simple CMS, if you are contributing to the product you can request these variables from the team.  
+
 ## Testing
 
 We use the following libraries for our automated tests:
@@ -57,7 +59,7 @@ For detailed information on how to run the automated tests, please visit [Testin
 
 ## 👉 What’s next
 
-* To start engineering with NewsKit, follow the steps in the [quickstart guide](https://nidigitalsolutions.jira.com/wiki/spaces/NPP/pages/2354218083).
+* To start engineering with NewsKit, follow the steps in the [quickstart guide](https://newskit.co.uk/getting-started/code/engineering-quickstart/).
 * Have a question? [Contact the NewsKit team via the contact form](https://newskit.co.uk/about/contact-us/).
 
 ## 🔗 Key Links
