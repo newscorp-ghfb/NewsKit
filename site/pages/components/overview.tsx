@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import {
   Block,
@@ -37,7 +38,7 @@ const UtilityCategories =
 const UtilitiesList = () => (
   <Block stylePreset="componentsUtilitiesStructuredList">
     <StructuredList divider>
-      {UtilityCategories.map(({title, id, description}) => (
+      {UtilityCategories.map(({title, id, description}: any) => (
         <StructuredListItem key={id} href={id} ariaLabel={title}>
           <StructuredListCell>
             <TextBlock
