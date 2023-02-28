@@ -616,41 +616,82 @@ const SplitCard = ({columns}: {columns: string}) => {
 
 export const StoryLayout = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <Container>
-      <SplitCard columns="50% 50%" />
-      <SplitCard columns="40% 60%" />
-      <SplitCard columns="60% 40%" />
-    </Container>
+    <StorybookCase title="Horizontal">
+      <Card
+        overrides={{
+          stylePreset: 'cardComposable',
+          paddingBlock: 'space040',
+        }}
+        areas={`
+        media content
+        media actions
+    
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent
+          overrides={{paddingBlock: 'space040', paddingInline: 'space040'}}
+        >
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+          <H />
+          <Block marginBlock="space020 ">
+            <P overrides={{marginBlockStart: 'space020'}} />
+          </Block>
+        </CardContent>
+        <CardActions marginBlock="space040" paddingInline="space040">
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
+      </Card>
+    </StorybookCase>
+    <StorybookCase title="Horizontal-inverse">
+      <Card
+        overrides={{stylePreset: 'cardComposable', paddingBlock: 'space040'}}
+        areas={`
+        content media
+        actions media
+        
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent
+          overrides={{paddingBlock: 'space040', paddingInline: 'space040'}}
+        >
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+
+          <H />
+
+          <Block marginBlock="space020 ">
+            <P overrides={{marginBlockStart: 'space020'}} />
+          </Block>
+        </CardContent>
+        <CardActions marginBlock="space040" paddingInline="space040">
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
+      </Card>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryLayout.storyName = 'Layout';
 
 export const StorySpan = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="1:1 horizontal ratio">
-      <Card
-        overrides={{stylePreset: 'cardComposableLink'}}
-        areas={`
-          media content 
-          media content 
-          media actions
-        `}
-      >
-        <CardContent overrides={{paddingInline: 'space040'}}>
-          <H
-            overrides={{
-              paddingBlock: 'space020',
-            }}
-          />
-
-          <P />
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" loadingAspectRatio="1:1" />
-        <CardActions marginInline="space040" paddingBlock="space020">
-          <Tag href="/news">Tag</Tag>
-        </CardActions>
-      </Card>
-    </StorybookCase>
+    <StorybookPage columns={{md: 'auto'}}>
+      <Container>
+        <StorybookCase title="1:1 horizontal ratio">
+          <SplitCard columns="50% 50%" />
+        </StorybookCase>
+        <StorybookCase title="1:2 horizontal ratio">
+          <SplitCard columns="40% 60%" />
+        </StorybookCase>
+        <StorybookCase title="1:2 horizontal ratio">
+          <SplitCard columns="60% 40%" />
+        </StorybookCase>
+      </Container>
+    </StorybookPage>
   </StorybookPage>
 );
 StorySpan.storyName = 'Span';
