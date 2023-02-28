@@ -336,7 +336,6 @@ exports[`Assistive Text should render logical props overrides 1`] = `
   min-height: 12px;
   color: #6A6A6A;
   margin-block: 30px;
-  padding-block: 30px;
 }
 
 .emotion-0:disabled {
@@ -344,43 +343,156 @@ exports[`Assistive Text should render logical props overrides 1`] = `
 }
 
 .emotion-1 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #3358CC;
+  fill: #3358CC;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-2.emotion-2 {
+  width: 24px;
+  height: 24px;
+  color: #3358CC;
+  fill: #3358CC;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-2.emotion-2 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-2.emotion-2 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4 {
   margin: 0;
+  padding-block: 30px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   color: #6A6A6A;
+  padding-block: 30px;
   font-family: "DM Sans",sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 0.5px 0px;
 }
 
-.emotion-1:disabled {
+.emotion-4:disabled {
   color: #ABABAB;
 }
 
-.emotion-1::before {
-  content: '';
-  margin-bottom: -0.391em;
-  display: block;
-}
-
-.emotion-1::after {
-  content: '';
-  margin-top: -0.409em;
-  display: block;
+.emotion-5 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 16px;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
 }
 
 <div
     class="emotion-0"
   >
-    <p
+    <div
       class="emotion-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+        />
+      </svg>
+    </div>
+    <p
+      class="emotion-4"
     >
       Assistive Text
     </p>
+    <div
+      class="emotion-5"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+        <path
+          d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+        />
+      </svg>
+    </div>
   </div>
 </DocumentFragment>
 `;

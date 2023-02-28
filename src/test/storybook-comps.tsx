@@ -160,7 +160,8 @@ export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
         headingAs="h1"
         actionItem={link}
         overrides={{
-          spaceInset: 'space000',
+          paddingBlock: 'space000',
+          paddingInline: 'space000',
           heading: {
             typographyPreset: 'utilitySubheading050',
             stylePreset: 'inkBase',

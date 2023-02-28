@@ -3,7 +3,6 @@ import {LegendProps, FieldsetProps} from './types';
 import {
   getTypographyPreset,
   getStylePreset,
-  getResponsiveSpacingInset,
   getResponsiveSpacingStackHorizontal,
   styled,
 } from '../utils/style';
@@ -39,7 +38,5 @@ export const StyledFieldset = styled.fieldset<FieldsetProps>`
   ${fieldsetStyleReset}
 
   ${getStylePreset('fieldset', '')};
-  // LOGICAL_PROPS_TO_DO: remove the below func when logical props are used in defaults
-  ${getResponsiveSpacingInset('fieldset', '')}
   ${logicalProps('fieldset')}
 `;

@@ -15,7 +15,7 @@ import {Block} from '../../block';
 import {IconFilledImage} from '../../icons';
 import {styled} from '../../utils/style';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {Link} from '../../link';
+import {LinkStandalone, LinkInline} from '../../link';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const StyledDiv = styled.div`
@@ -199,7 +199,8 @@ const cardBodyBase = ({inset}: {inset: boolean}) => ({
     <Block spaceStack={cardLabel}>
       <Flag
         overrides={{
-          spaceInset: 'spaceInsetSquish000',
+          paddingBlock: 'space000',
+          paddingInline: 'space000',
           stylePreset: 'cardLabel',
           typographyPreset: cardTypographyPresets[`cardLabel${cardSize}`],
           minHeight: 'sizing000',
@@ -518,7 +519,8 @@ export const StoryCardWithLinkAndNoHeadline = () => (
             <Block spaceStack={cardLabel}>
               <Flag
                 overrides={{
-                  spaceInset: 'spaceInsetSquish000',
+                  paddingBlock: 'space000',
+                  paddingInline: 'space000',
                   stylePreset: 'cardLabel',
                   typographyPreset: cardTypographyPresets.cardLabelSmall,
                   minHeight: 'sizing000',
@@ -563,7 +565,8 @@ export const StoryCardWithLinkHeadlineAndNestedLinksInCardBody = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -586,12 +589,14 @@ export const StoryCardWithLinkHeadlineAndNestedLinksInCardBody = () => (
               typographyPreset={cardTypographyPresets.cardTeaserLeadSmall}
             >
               A short paragraph description of the article, outlining the{' '}
-              <Link href="/test">main story</Link> and focus.
+              <LinkInline href="/test">main story</LinkInline> and focus.
             </TextBlock>
           </Block>
 
           <Block spaceStack={cardTeaserLead}>
-            <Link href="https://google.com">External link</Link>
+            <LinkStandalone href="https://google.com">
+              External link
+            </LinkStandalone>
           </Block>
         </Card>
       </Cell>
@@ -1112,7 +1117,8 @@ export const StoryCardWithCroppingText = () => (
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1320,7 +1326,9 @@ export const StoryCardSlices = () => (
           }}
           overrides={{horizontalRatio: '2:3'}}
           actions={() => (
-            <Link href="https://google.com">Read the full story</Link>
+            <LinkStandalone href="https://google.com">
+              Read the full story
+            </LinkStandalone>
           )}
         >
           <Block spaceStack={cardTeaserHeadline}>
@@ -1359,13 +1367,16 @@ export const StoryCardSlices = () => (
             alt: 'Card Media',
           }}
           actions={() => (
-            <Link href="https://google.com">Read the full story</Link>
+            <LinkStandalone href="https://google.com">
+              Read the full story
+            </LinkStandalone>
           )}
         >
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1406,13 +1417,16 @@ export const StoryCardSlices = () => (
           layout={{xs: 'horizontal', md: 'vertical'}}
           overrides={{horizontalRatio: '1:2'}}
           actions={() => (
-            <Link href="https://google.com">Read the full story</Link>
+            <LinkStandalone href="https://google.com">
+              Read the full story
+            </LinkStandalone>
           )}
         >
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1440,13 +1454,16 @@ export const StoryCardSlices = () => (
           layout={{xs: 'horizontal', md: 'vertical'}}
           overrides={{horizontalRatio: '1:2'}}
           actions={() => (
-            <Link href="https://google.com">Read the full story</Link>
+            <LinkStandalone href="https://google.com">
+              Read the full story
+            </LinkStandalone>
           )}
         >
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1472,13 +1489,16 @@ export const StoryCardSlices = () => (
           layout={{xs: 'horizontal', md: 'vertical'}}
           overrides={{horizontalRatio: '1:2'}}
           actions={() => (
-            <Link href="https://google.com">Read the full story</Link>
+            <LinkStandalone href="https://google.com">
+              Read the full story
+            </LinkStandalone>
           )}
         >
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1506,13 +1526,16 @@ export const StoryCardSlices = () => (
           layout={{xs: 'horizontal', md: 'vertical'}}
           overrides={{horizontalRatio: '1:2'}}
           actions={() => (
-            <Link href="https://google.com">Read the full story</Link>
+            <LinkStandalone href="https://google.com">
+              Read the full story
+            </LinkStandalone>
           )}
         >
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',
@@ -1539,13 +1562,16 @@ export const StoryCardSlices = () => (
           mediaInteractive
           media={() => <VideoElement width="100%" height="300px" />}
           actions={() => (
-            <Link href="https://google.com">Read the full story</Link>
+            <LinkStandalone href="https://google.com">
+              Read the full story
+            </LinkStandalone>
           )}
         >
           <Block spaceStack={cardLabel}>
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: cardTypographyPresets.cardLabelSmall,
                 minHeight: 'sizing000',

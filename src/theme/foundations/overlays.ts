@@ -1,13 +1,13 @@
 export const overlays = {
   overlayGradientInverseVertical:
-    'linear-gradient(0deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%)',
+    'linear-gradient(180deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)',
   overlayGradientBaseVertical:
-    'linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)',
+    'linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)',
 
   overlayGradientInverseHorizontal:
-    'linear-gradient(270deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%)',
+    'linear-gradient(-90deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)',
   overlayGradientBaseHorizontal:
-    'linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)',
+    'linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)',
   overlayGradientFromBottom:
     'linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)',
   overlayGradientFromBottomLeft:

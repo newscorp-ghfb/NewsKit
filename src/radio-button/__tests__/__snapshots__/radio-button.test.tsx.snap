@@ -371,12 +371,12 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 
 .emotion-12:invalid:hover:not(:disabled) {
   background-color: #FEECEC;
-  border-color: #820000;
+  border-color: #7D0000;
 }
 
 .emotion-12:invalid:focus:hover:not(:disabled) {
   background-color: #FEECEC;
-  border-color: #820000;
+  border-color: #7D0000;
 }
 
 .emotion-12:checked:invalid:not(:disabled) {
@@ -398,34 +398,34 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 
 .emotion-12:checked:invalid:hover:not(:disabled) {
   background-color: #FEECEC;
-  border-color: #820000;
+  border-color: #7D0000;
 }
 
 .emotion-12:checked:invalid:hover:not(:disabled) svg {
-  fill: #820000;
+  fill: #7D0000;
 }
 
 .emotion-12:checked:invalid:focus:hover:not(:disabled) {
   background-color: #FEECEC;
-  border-color: #820000;
+  border-color: #7D0000;
 }
 
 .emotion-12:checked:invalid:focus:hover:not(:disabled) svg {
-  fill: #820000;
+  fill: #7D0000;
 }
 
 .emotion-12:valid:focus:not(:disabled) {
-  border-color: #004914;
+  border-color: #004514;
 }
 
 .emotion-12:valid:hover:not(:disabled) {
   background-color: #E5F4EA;
-  border-color: #004914;
+  border-color: #004514;
 }
 
 .emotion-12:valid:focus:hover:not(:disabled) {
   background-color: #E5F4EA;
-  border-color: #004914;
+  border-color: #004514;
 }
 
 .emotion-12:checked:valid:not(:disabled) {
@@ -447,20 +447,20 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
 
 .emotion-12:checked:valid:hover:not(:disabled) {
   background-color: #E5F4EA;
-  border-color: #004914;
+  border-color: #004514;
 }
 
 .emotion-12:checked:valid:hover:not(:disabled) svg {
-  fill: #004914;
+  fill: #004514;
 }
 
 .emotion-12:checked:valid:focus:hover:not(:disabled) {
   background-color: #E5F4EA;
-  border-color: #004914;
+  border-color: #004514;
 }
 
 .emotion-12:checked:valid:focus:hover:not(:disabled) svg {
-  fill: #004914;
+  fill: #004514;
 }
 
 .emotion-12:disabled {
@@ -561,11 +561,11 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
   outline-width: 2px;
   outline-offset: 2px;
   background-color: #E5F4EA;
-  border-color: #004914;
+  border-color: #004514;
 }
 
 .emotion-12:checked:valid:focus-visible:hover:not(:disabled) svg {
-  fill: #004914;
+  fill: #004514;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -603,11 +603,11 @@ exports[`RadioButton passes icon overrides as props to DefaultIcon 1`] = `
   outline-width: 2px;
   outline-offset: 2px;
   background-color: #FEECEC;
-  border-color: #820000;
+  border-color: #7D0000;
 }
 
 .emotion-12:checked:invalid:focus-visible:hover:not(:disabled) svg {
-  fill: #820000;
+  fill: #7D0000;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {

@@ -9,6 +9,7 @@ import {
   StyledIconWrapper,
   StyledHeader,
   StyledPanelTransitionContainer,
+  StyledAccordionWrapper,
 } from './styled';
 import {AccordionIconProps, AccordionProps} from './types';
 import defaults from './defaults';
@@ -121,7 +122,7 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
     const theme = useTheme();
 
     return (
-      <div ref={ref}>
+      <StyledAccordionWrapper ref={ref} overrides={overrides}>
         <TextBlock as={headerAs}>
           <StyledAccordionButton
             overrides={overrides}
@@ -169,7 +170,7 @@ const ThemelessAccordion = React.forwardRef<HTMLDivElement, AccordionProps>(
             </MaxHeightTransitionPanel>
           )}
         </CSSTransition>
-      </div>
+      </StyledAccordionWrapper>
     );
   },
 );

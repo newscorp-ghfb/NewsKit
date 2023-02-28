@@ -181,13 +181,13 @@ exports[`NewStartScreen renders correctly 1`] = `
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-6:focus-visible:not(:disabled) {

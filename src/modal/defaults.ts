@@ -59,16 +59,19 @@ export default {
       },
     },
     header: {
-      spaceInset: 'spaceInsetSquish040',
+      paddingInline: 'space050',
+      paddingBlock: 'space040',
       stylePreset: 'modalHeader',
       typographyPreset: 'utilityLabel030',
     },
     content: {
-      spaceInset: 'spaceInset050',
+      paddingInline: 'space050',
+      paddingBlock: 'space050',
     },
     closeButton: {
       stylePreset: 'iconButtonMinimalSecondary',
-      spaceInset: 'spaceInset020',
+      paddingInline: 'space020',
+      paddingBlock: 'space020',
     },
   },
 };
