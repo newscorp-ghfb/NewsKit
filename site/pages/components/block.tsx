@@ -102,21 +102,6 @@ const BlockComponent = (layoutProps: LayoutProps) => (
             ],
           },
           {
-            name: 'spaceInset',
-            propName: 'spaceInset',
-            options: [
-              {
-                label: 'Default',
-                value: undefined,
-                isDefault: true,
-              },
-              {
-                label: 'spaceInset030',
-                value: 'spaceInset030',
-              },
-            ],
-          },
-          {
             name: 'stylePreset',
             propName: 'stylePreset',
             options: [
@@ -248,11 +233,6 @@ const BlockComponent = (layoutProps: LayoutProps) => (
               name: 'spaceStack(deprecated)',
               type: 'MQ<string>',
               description: `Use marginBlockEnd instead. This is a spacing preset token which is applied as a margin on the bottom of the block. Use to space stack content down the page`,
-            },
-            {
-              name: 'spaceInset(deprecated)',
-              type: 'MQ<string>',
-              description: `Use paddingBlock and paddingInline instead. Apply spaceInset to the block`,
             },
             {
               name: 'transitionPreset',

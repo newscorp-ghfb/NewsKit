@@ -8,7 +8,7 @@ import {
   getTypographyPreset,
   styled,
 } from '../utils/style';
-import {logicalProps} from '../utils/logical-properties';
+import {logicalPaddingProps} from '../utils/logical-properties';
 import {TextBlock} from '../text-block';
 
 export const StyledFloatingElement = styled.div<
@@ -39,7 +39,7 @@ export const StyledPanel = styled(TextBlock)<
 >`
   ${({path}) => getStylePreset(`${path}.panel`, 'panel')};
   ${({path}) => getTypographyPreset(`${path}.panel`, 'panel')};
-  ${({path}) => logicalProps(`${path}.panel`, 'panel')}
+  ${({path}) => logicalPaddingProps(`${path}.panel`, 'panel')}
   overflow: hidden;
 `;
 

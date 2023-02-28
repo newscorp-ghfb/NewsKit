@@ -222,7 +222,8 @@ describe('StructuredList', () => {
         children: StructuredListCellDefault,
         overrides: {
           stylePreset: 'structuredListItemCustom',
-          spaceInset: 'spaceInset060',
+          paddingBlock: 'space060',
+          paddingInline: 'space060',
           minHeight: 'sizing090',
         },
       };

@@ -48,17 +48,15 @@ export const VideoPlayerWrapper = styled.div<
       )}
     }
   }
-  //seekbar - currentDuration & seekPosition typographyPreset & spaceInset
+  //seekbar - currentDuration & seekPosition typographyPreset
   .video-js .vjs-time-tooltip {
     ${getTypographyPreset(
       'videoPlayer.seekBar.currentDuration',
       'seekBar.currentDuration',
     )}
-    ${getResponsiveSpace(
-      'padding',
+    ${logicalProps(
       'videoPlayer.seekBar.currentDuration',
       'seekBar.currentDuration',
-      'spaceInset',
     )}
   }
 
@@ -157,12 +155,7 @@ export const VideoPlayerWrapper = styled.div<
   .video-js .vjs-dock-text {
     background: none;
     ${getStylePreset('videoPlayer.dockText', 'dockText')};
-    ${getResponsiveSpace(
-      'padding',
-      'videoPlayer.dockText',
-      'dockText',
-      'spaceInset',
-    )}
+    ${logicalProps('videoPlayer.dockText', 'dockText')}
   }
 
   // Dock text - title
@@ -192,12 +185,7 @@ export const VideoPlayerWrapper = styled.div<
 
   .video-js .vjs-next-overlay-banner {
     ${getStylePreset('videoPlayer.miniCardOverlay', 'miniCardOverlay')};
-    ${getResponsiveSpace(
-      'padding',
-      'videoPlayer.miniCardOverlay',
-      'miniCardOverlay',
-      'spaceInset',
-    )};
+    ${logicalProps('videoPlayer.miniCardOverlay', 'miniCardOverlay')}
   }
 
   //miniOverlayCard - countdown
@@ -235,11 +223,9 @@ export const VideoPlayerWrapper = styled.div<
   //miniOverlayCard - closeButton
   .video-js .vjs-next-overlay {
     .vjs-close-button {
-      ${getResponsiveSpace(
-        'padding',
+      ${logicalProps(
         'videoPlayer.miniCardOverlay.closeButton',
         'miniCardOverlay.closeButton',
-        'spaceInset',
       )}
     }
   }

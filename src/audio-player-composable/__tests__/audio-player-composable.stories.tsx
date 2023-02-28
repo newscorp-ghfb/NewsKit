@@ -671,7 +671,7 @@ export const StoryAudioSubComponents = () => {
                 layout="vertical"
                 overrides={{
                   popover: {
-                    distance: 'space050',
+                    offset: 'space050',
                     pointer: {
                       size: 'sizing080',
                       stylePreset: 'customPointerStylePreset',
@@ -1061,17 +1061,17 @@ export const StoryAudioPlayerOverrides = () => {
       </ThemeProvider>
       <ThemeProvider theme={volumeTheme}>
         <StorybookSubHeading>
-          Volume control vertical with distance between button and slider
+          Volume control vertical with offset between button and slider
         </StorybookSubHeading>
         <AudioPlayerComposable
           src={AUDIO_SRC}
-          ariaLandmark="audio player distance between iconbutton and slider"
+          ariaLandmark="audio player offset between iconbutton and slider"
         >
           <AudioPlayerVolumeControl
             layout="vertical"
             overrides={{
               popover: {
-                distance: 'space050',
+                offset: 'space050',
                 pointer: {
                   size: 'sizing080',
                   stylePreset: 'customPointerStylePreset',
@@ -1380,7 +1380,7 @@ export const StoryAudioPlayerVolumeControlLayout = () => {
           layout="vertical"
           overrides={{
             popover: {
-              distance: 'space050',
+              offset: 'space050',
               pointer: {
                 size: 'sizing080',
                 stylePreset: 'customPointerStylePreset',

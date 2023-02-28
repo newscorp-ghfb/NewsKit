@@ -375,7 +375,8 @@ export const StoryStructuredListWithOverrides = () => (
           ariaLabel="list item"
           overrides={{
             stylePreset: 'structuredListItemCustom',
-            spaceInset: 'spaceInset060',
+            paddingBlock: 'space060',
+            paddingInline: 'space060',
             minHeight: 'sizing090',
           }}
         >
@@ -404,7 +405,8 @@ export const StoryStructuredListWithOverrides = () => (
           ariaLabel="list item"
           overrides={{
             stylePreset: 'structuredListItemCustom',
-            spaceInset: 'spaceInset060',
+            paddingBlock: 'space060',
+            paddingInline: 'space060',
             minHeight: 'sizing090',
           }}
         >
@@ -436,7 +438,8 @@ export const StoryStructuredListWithOverrides = () => (
           ariaLabel="list item"
           overrides={{
             stylePreset: 'structuredListItemCustom',
-            spaceInset: 'spaceInset060',
+            paddingBlock: 'space060',
+            paddingInline: 'space060',
             minHeight: 'sizing090',
             icon: {
               size: 'iconSize020',

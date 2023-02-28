@@ -17,12 +17,14 @@ export default {
       },
       currentDuration: {
         stylePreset: 'videoPlayerCurrentDuration',
-        spaceInset: 'spaceInset020',
+        paddingInline: 'space020',
+        paddingBlock: 'space020',
         typographyPreset: 'utilityMeta010',
       },
       seekPosition: {
         stylePreset: 'videoPlayerSeekPosition',
-        spaceInset: 'spaceInset020',
+        paddingInline: 'space020',
+        paddingBlock: 'space020',
         typographyPreset: 'utilityMeta010',
       },
     },
@@ -60,9 +62,13 @@ export default {
     },
     dockText: {
       stylePreset: 'videoPlayerDockText',
-      spaceInset: {
-        xs: 'spaceInset040',
-        md: 'spaceInset050',
+      paddingInline: {
+        xs: 'space040',
+        md: 'space050',
+      },
+      paddingBlock: {
+        xs: 'space040',
+        md: 'space050',
       },
       title: {
         stylePreset: 'videoPlayerDockTextTitle',
@@ -85,7 +91,8 @@ export default {
     },
     miniCardOverlay: {
       stylePreset: 'videoPlayerMiniCardOverlay',
-      spaceInset: 'spaceInsetSquish020',
+      paddingInline: 'space030',
+      paddingBlock: 'space020',
       countdown: {
         typographyPreset: 'utilityMeta010',
         stylePreset: 'inkInverse',
@@ -96,7 +103,8 @@ export default {
         stylePreset: 'inkInverse',
       },
       closeButton: {
-        spaceInset: 'spaceInset010',
+        paddingInline: 'space010',
+        paddingBlock: 'space010',
       },
     },
   },

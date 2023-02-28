@@ -189,7 +189,8 @@ export const FieldsetWithOverrides = () => (
         legend="Legend margin reset to 0 when Fieldset has padding"
         overrides={{
           stylePreset: 'fieldsetCustom',
-          spaceInset: 'space040',
+          paddingBlock: 'space040',
+          paddingInline: 'space040',
           legend: {
             stylePreset: 'legendCustom',
             typographyPreset: 'utilityBody030',

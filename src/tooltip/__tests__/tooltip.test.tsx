@@ -181,65 +181,65 @@ describe('Tooltip', () => {
         ...defaultProps,
         hidePointer: true,
         overrides: {
-          distance: 'space040',
+          offset: 'space040',
         },
       });
       fireEvent.mouseEnter(getByRole('button'));
       await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should not be applied with pointer and non-px distance override', async () => {
+    test('should not be applied with pointer and non-px offset override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
       const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
-          distance: '1rem',
+          offset: '1rem',
         },
       });
       fireEvent.mouseEnter(getByRole('button'));
       await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
-        "Invalid component override: please make sure 'distance' is a valid token or px value.",
+        "Invalid component override: please make sure 'offset' is a valid token or px value.",
       );
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should not be applied with pointer and invalid token distance override', async () => {
+    test('should not be applied with pointer and invalid token offset override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
       const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
-          distance: 'invalid token',
+          offset: 'invalid token',
         },
       });
       fireEvent.mouseEnter(getByRole('button'));
       await applyAsyncStyling();
       // eslint-disable-next-line no-console
       expect(console.warn).toHaveBeenCalledWith(
-        "Invalid component override: please make sure 'distance' is a valid token or px value.",
+        "Invalid component override: please make sure 'offset' is a valid token or px value.",
       );
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should be applied with pointer and token distance override', async () => {
+    test('should be applied with pointer and token offset override', async () => {
       const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
-          distance: 'space040',
+          offset: 'space040',
         },
       });
       fireEvent.mouseEnter(getByRole('button'));
       await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should be applied with pointer and px distance override', async () => {
+    test('should be applied with pointer and px offset override', async () => {
       const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
         overrides: {
-          distance: '10px',
+          offset: '10px',
         },
       });
       fireEvent.mouseEnter(getByRole('button'));
@@ -249,7 +249,7 @@ describe('Tooltip', () => {
   });
 
   describe('pointer padding', () => {
-    test('should not be applied with non-px distance override', async () => {
+    test('should not be applied with non-px offset override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
       const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
@@ -268,7 +268,7 @@ describe('Tooltip', () => {
       );
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should not be applied with invalid token distance override', async () => {
+    test('should not be applied with invalid token offset override', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
       const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
@@ -287,7 +287,7 @@ describe('Tooltip', () => {
       );
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should be applied with token distance override', async () => {
+    test('should be applied with token offset override', async () => {
       const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,
@@ -301,7 +301,7 @@ describe('Tooltip', () => {
       await applyAsyncStyling();
       expect(asFragment()).toMatchSnapshot();
     });
-    test('should be applied with px distance override', async () => {
+    test('should be applied with px offset override', async () => {
       const {asFragment, getByRole} = renderWithTheme(Tooltip, {
         ...defaultProps,
         hidePointer: false,

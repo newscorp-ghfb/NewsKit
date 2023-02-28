@@ -21,6 +21,15 @@ import {InlineMessage} from '../../inline-message';
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
 
+const Flex = styled.div`
+  display: flex;
+
+  & > div {
+    width: 500px;
+    border: 1px dashed lightgrey;
+  }
+`;
+
 const menuCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-menu-theme',
   overrides: {
@@ -204,6 +213,11 @@ const menuCustomThemeObject: CreateThemeArgs = {
           outlineOffset: '5px',
         },
       },
+      menuSubCustom: {
+        base: {
+          backgroundColor: '{{colors.amber030}}',
+        },
+      },
     },
   },
 };
@@ -281,6 +295,7 @@ StoryMenuItemsStates.storyName = 'menu items - states';
 export const StoryMenuItemsSizes = () => (
   <>
     <StorybookHeading>Menu items in different sizes</StorybookHeading>
+    <StorybookSubHeading>Horizontal</StorybookSubHeading>
     <StorybookSubHeading>Small menu items</StorybookSubHeading>
     <Menu size="small" aria-label={`Menu ${getSSRId()}`}>
       <MenuItem href={href}>
@@ -341,18 +356,75 @@ export const StoryMenuItemsSizes = () => (
         <IconFilledAddCircleOutline /> Menu item 4
       </MenuItem>
     </Menu>
+    <StorybookSubHeading>Vertical</StorybookSubHeading>
+    <Flex>
+      <div>
+        <StorybookSubHeading>Small menu items</StorybookSubHeading>
+        <Menu size="small" vertical aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 1
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline />
+            Menu item 2
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 3
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 4
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+        </Menu>
+      </div>
+      <div>
+        <StorybookSubHeading>Medium menu items</StorybookSubHeading>
+        <Menu size="medium" vertical aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 1
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline />
+            Menu item 2
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 3
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 4
+            <IconFilledAddCircleOutline />
+          </MenuItem>
+        </Menu>
+      </div>
+      <div>
+        <StorybookSubHeading>Large menu items</StorybookSubHeading>
+        <Menu size="large" vertical aria-label={`Menu ${getSSRId()}`}>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 1
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline />
+            Menu item 2
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 3
+          </MenuItem>
+          <MenuItem href={href}>
+            <IconFilledAddCircleOutline /> Menu item 4
+          </MenuItem>
+        </Menu>
+      </div>
+    </Flex>
   </>
 );
 StoryMenuItemsSizes.storyName = 'menu items - sizes';
 
-const Flex = styled.div`
-  display: flex;
-
-  & > div {
-    width: 500px;
-    border: 1px dashed lightgrey;
-  }
-`;
 export const StoryMenuItemsAlignment = () => (
   <>
     <StorybookHeading>Menu items with different alignment</StorybookHeading>
@@ -440,6 +512,8 @@ StoryMenuItemsHorizontalAlignment.storyName =
 export const StoryMenuItemsOverrides = () => {
   const menuItemOverrides = {
     stylePreset: 'menuItemCustom',
+    minHeight: 'sizing090',
+    paddingBlock: 'space040',
   };
   return (
     <>
@@ -1136,18 +1210,36 @@ export const StoryMenuAlignedTitle = () => (
   <>
     <StorybookHeading>Menu - menu groups only</StorybookHeading>
     <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1" overrides={{title: {spaceInset: 'space040'}}}>
+      <MenuGroup
+        title="Group 1"
+        overrides={{
+          title: {
+            paddingBlock: 'space040',
+            paddingInline: 'space040',
+          },
+        }}
+      >
         <MenuItem href={href}>Group 1-item 1</MenuItem>
         <MenuItem href={href}>Group 1-item 2</MenuItem>
         <MenuItem href={href}>Group 1-item 3</MenuItem>
       </MenuGroup>
       <MenuDivider />
-      <MenuGroup title="Group 2" overrides={{title: {spaceInset: 'space040'}}}>
+      <MenuGroup
+        title="Group 2"
+        overrides={{
+          title: {paddingBlock: 'space040', paddingInline: 'space040'},
+        }}
+      >
         <MenuItem href={href}>Group 2-item 1</MenuItem>
         <MenuItem href={href}>Group 2-item 2</MenuItem>
         <MenuItem href={href}>Group 2-item 3</MenuItem>
       </MenuGroup>
-      <MenuGroup title="Group 3" overrides={{title: {spaceInset: 'space040'}}}>
+      <MenuGroup
+        title="Group 3"
+        overrides={{
+          title: {paddingBlock: 'space040', paddingInline: 'space040'},
+        }}
+      >
         <MenuItem href={href}>Group 3-item 1</MenuItem>
       </MenuGroup>
       <MenuDivider />
@@ -1169,7 +1261,8 @@ export const StoryMenuWithCloseButtons = () => {
       maxWidth: '24px',
       minHeight: '24px',
       minWidth: '24px',
-      spaceInset: '12px',
+      paddingBlock: '12px',
+      paddingInline: '24px',
     },
   };
 
@@ -1535,21 +1628,16 @@ export const StoryMenuSubOverrides = () => {
   const [expanded, setExpanded] = useState(false);
   const menuItemOverrides = {
     stylePreset: 'menuItemCustom',
+    minHeight: 'sizing090',
   };
   return (
     <HorizontalContainer>
       <StorybookHeading>Menu sub with overrides</StorybookHeading>
       <Menu size="medium" aria-label="menu-sub-overrides">
-        <MenuItem
-          href={href}
-          overrides={{...menuItemOverrides, minHeight: '56px'}}
-        >
+        <MenuItem href={href} overrides={menuItemOverrides}>
           Menu item 1
         </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{...menuItemOverrides, minHeight: '56px'}}
-        >
+        <MenuItem href={href} overrides={menuItemOverrides}>
           Menu item 2
         </MenuItem>
         <MenuSub
@@ -1560,8 +1648,11 @@ export const StoryMenuSubOverrides = () => {
           }}
           overrides={{
             ...menuItemOverrides,
-            minHeight: '56px',
-            list: {},
+            list: {
+              stylePreset: 'menuSubCustom',
+              paddingBlock: 'space020',
+              paddingInline: 'space020',
+            },
           }}
         >
           <MenuItem href={href}>Menu item 3.1</MenuItem>

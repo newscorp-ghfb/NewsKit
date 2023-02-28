@@ -6,6 +6,9 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {getColorCssFromTheme, styled} from '../../utils/style';
 
+const sentence =
+  'A paragraph is a short part of a text, consisting of at least one sentence and beginning on a new line. It usually deals with a single event and is indicated by a new line, indentation or numbering.';
+const paragraph = `${sentence} ${sentence} ${sentence}`;
 const LIST_DATA = [
   `First item`,
   `Second item`,
@@ -13,6 +16,7 @@ const LIST_DATA = [
   `Fourth item`,
   `Fifth item`,
   `Sixth item`,
+  paragraph,
 ];
 
 const orderedListCustomThemeObject: CreateThemeArgs = {

@@ -32,10 +32,11 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   width: 32px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -129,7 +130,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 .emotion-7 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -317,10 +319,11 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   width: 32px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -414,7 +417,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 
 .emotion-7 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-7 a:not(.nk-card-link) {
