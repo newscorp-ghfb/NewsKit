@@ -10,6 +10,7 @@ import {
   LinkStandalone,
   Flag,
 } from 'newskit';
+import NextLink from 'next/link';
 import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
 import {getToken} from '../../../src/utils/get-token';
 import {
@@ -62,13 +63,17 @@ const ArrowLink: React.FC<ArrowLinkProps> = ({
   return (
     <div data-testid={dataTestId}>
       {!href && (
-        <LinkStandalone
-          href={buttonHref as string}
-          overrides={combinedOverrides}
-        >
-          {label}
-          {icon || <IconFilledChevronRight overrides={{size: 'iconSize020'}} />}
-        </LinkStandalone>
+        <NextLink legacyBehavior href={buttonHref as string} passHref>
+          <LinkStandalone
+            href={buttonHref as string}
+            overrides={combinedOverrides}
+          >
+            {label}
+            {icon || (
+              <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+            )}
+          </LinkStandalone>
+        </NextLink>
       )}
       {href && (
         <TextBlock
