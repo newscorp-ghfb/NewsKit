@@ -147,4 +147,4 @@ export const StoryStackChildWithLogicalProps = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryStackChildWithLogicalProps.storyName = 'Logical  props';
+StoryStackChildWithLogicalProps.storyName = 'Logical props';
