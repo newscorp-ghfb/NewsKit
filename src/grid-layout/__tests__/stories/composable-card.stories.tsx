@@ -11,6 +11,7 @@ import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-o
 import {Flag} from '../../../flag';
 import {StorybookCase, StorybookPage} from '../../../test/storybook-comps';
 import {LinkStandalone} from '../../../link';
+import {Button} from '../../../button';
 
 const P = ({overrides, ...props}: Omit<ParagraphProps, 'children'>) => (
   <Paragraph
@@ -69,6 +70,11 @@ const cardCustomThemeObject: CreateThemeArgs = {
         active: {
           backgroundColor: '{{colors.blue060}}',
           boxShadow: '{{shadows.shadow050}}',
+        },
+      },
+      cardContentSeparateColor: {
+        base: {
+          backgroundColor: '{{colors.interface020}}',
         },
       },
       cardContainerWithHover: {
@@ -226,14 +232,194 @@ StoryDefault.storyName = 'Default';
 
 export const StoryCardAreas = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="TO DO" />
+    <StorybookCase title="Card Content">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardContent overrides={{paddingBlock: 'space040'}}>
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+          <H overrides={{marginBlockStart: 'space020'}} />
+          <Block marginBlock="space020">
+            <P overrides={{marginBlockStart: 'space020'}} />
+          </Block>
+        </CardContent>
+      </Card>
+    </StorybookCase>
+    <StorybookCase title="CardActions">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardActions marginBlock="space040">
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
+      </Card>
+    </StorybookCase>
+    <StorybookCase title="CardMedia">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+      </Card>
+    </StorybookCase>
+    <StorybookCase title="CardLink applied to headline in CardContent area">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent overrides={{paddingBlock: 'space040'}}>
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+          <CardLink
+            href={window.location.href}
+            overrides={{paddingBlock: 'space020'}}
+          >
+            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
+          </CardLink>
+          <Block marginBlock="space020">
+            <P overrides={{marginBlockStart: 'space020'}} />
+          </Block>
+        </CardContent>
+        <CardActions marginBlock="space040">
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
+      </Card>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryCardAreas.storyName = 'Card areas';
 
 export const StoryVariations = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="TO DO" />
+    <StorybookCase title="CardLink and CardMedia">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent overrides={{paddingBlock: 'space040'}}>
+          <CardLink
+            href={window.location.href}
+            overrides={{paddingBlock: 'space020'}}
+          >
+            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
+          </CardLink>
+        </CardContent>
+      </Card>
+    </StorybookCase>
+    <StorybookCase title="Whole card as a link by applying the 'expand' prop">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardContentSeparateColor'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+        rowGap="space040"
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent
+          overrides={{
+            paddingBlock: 'space040',
+          }}
+        >
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+          <CardLink
+            expand
+            href={window.location.href}
+            overrides={{paddingBlock: 'space020'}}
+          >
+            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
+          </CardLink>
+          <P overrides={{marginBlockStart: 'space020'}} />
+        </CardContent>
+        <CardActions marginBlock="space040">
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
+      </Card>
+    </StorybookCase>
+    <StorybookCase title="Button in CardActions area">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent
+          overrides={{
+            paddingBlock: 'space040',
+          }}
+        >
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+
+          <H overrides={{paddingBlockStart: 'space020'}} />
+          <P overrides={{marginBlockStart: 'space020'}} />
+        </CardContent>
+        <CardActions marginBlock="space020">
+          <Button href="/news">Button</Button>
+        </CardActions>
+      </Card>
+    </StorybookCase>
+    <StorybookCase title="Multiple in CardActions">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+        <CardContent
+          overrides={{
+            paddingBlock: 'space040',
+          }}
+        >
+          <div>
+            <Flag>Flag</Flag>
+          </div>
+
+          <H overrides={{paddingBlockStart: 'space020'}} />
+          <P overrides={{marginBlockStart: 'space020'}} />
+        </CardContent>
+        <CardActions marginBlock="space020">
+          <Button href="/news">Button</Button>
+        </CardActions>
+      </Card>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryVariations.storyName = 'Variations';
