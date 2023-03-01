@@ -95,9 +95,8 @@ export const NewStartScreen = () => (
             marginBlockEnd="space080"
           >
             {items.map(({name, href}) => (
-              <NextLink legacyBehavior href={href} passHref>
+              <NextLink legacyBehavior href={href} passHref key={name}>
                 <LinkStandalone
-                  key={name}
                   href={href}
                   overrides={{typographyPreset: 'utilityLink020'}}
                 >

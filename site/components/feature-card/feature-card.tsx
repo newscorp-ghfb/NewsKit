@@ -1,4 +1,5 @@
 import React from 'react';
+import NextLink from 'next/link';
 import {
   Block,
   Visible,
@@ -10,7 +11,6 @@ import {
   LinkStandalone,
   Flag,
 } from 'newskit';
-import NextLink from 'next/link';
 import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
 import {getToken} from '../../../src/utils/get-token';
 import {
@@ -34,17 +34,15 @@ const OptionalLinkWrapper: React.FC<OptionalLinkWrapperProps> = ({
 }) => {
   if (href) {
     return (
-      <NextLink legacyBehavior href={href} passHref>
-        <StyledCardLink
-          external={false}
-          overrides={{
-            stylePreset: 'linkNoUnderline',
-          }}
-          href={href as string}
-        >
-          <>{children}</>
-        </StyledCardLink>
-      </NextLink>
+      <StyledCardLink
+        external={false}
+        overrides={{
+          stylePreset: 'linkNoUnderline',
+        }}
+        href={href as string}
+      >
+        <>{children}</>
+      </StyledCardLink>
     );
   }
   return <>{children}</>;
@@ -65,13 +63,17 @@ const ArrowLink: React.FC<ArrowLinkProps> = ({
   return (
     <div data-testid={dataTestId}>
       {!href && (
-        <LinkStandalone
-          href={buttonHref as string}
-          overrides={combinedOverrides}
-        >
-          {label}
-          {icon || <IconFilledChevronRight overrides={{size: 'iconSize020'}} />}
-        </LinkStandalone>
+        <NextLink legacyBehavior href={buttonHref as string} passHref>
+          <LinkStandalone
+            href={buttonHref as string}
+            overrides={combinedOverrides}
+          >
+            {label}
+            {icon || (
+              <IconFilledChevronRight overrides={{size: 'iconSize020'}} />
+            )}
+          </LinkStandalone>
+        </NextLink>
       )}
       {href && (
         <TextBlock

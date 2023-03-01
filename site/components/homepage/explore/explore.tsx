@@ -50,9 +50,8 @@ export const Explore = () => (
       columnGap="space050"
     >
       {cardsContent.map(({media, title, href, description}) => (
-        <NextLink legacyBehavior href={href} passHref>
+        <NextLink legacyBehavior href={href} key={href} passHref>
           <Card
-            key={href}
             href={href}
             media={() => media}
             overrides={{
