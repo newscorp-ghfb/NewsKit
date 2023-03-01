@@ -9,10 +9,16 @@ import {
 } from '../instrumentation';
 import {NewsKitInternalContext, useNewsKitContext} from './context';
 
-export type NewsKitProviderProps = ThemeProviderProps & {
+type BaseThemeProviderProps = 'theme' | 'children';
+
+export type NewsKitProviderProps = Pick<
+  ThemeProviderProps,
+  BaseThemeProviderProps
+> & {
   children: React.ReactNode;
   layer?: LayerOrganizerProps;
   instrumentation?: Partial<EventInstrumentation>;
+  themeOptions?: Omit<ThemeProviderProps, BaseThemeProviderProps>;
 };
 
 export const NewsKitProvider = ({
@@ -21,6 +27,7 @@ export const NewsKitProvider = ({
   /* istanbul ignore next */
   layer: layerProps = {},
   instrumentation: instrumentationProps = {},
+  themeOptions = {},
 }: NewsKitProviderProps) => {
   const NKContext = useNewsKitContext();
   /* istanbul ignore if */
@@ -35,7 +42,7 @@ export const NewsKitProvider = ({
 
   return (
     <NewsKitInternalContext.Provider value={{initialized: true}}>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme} {...themeOptions}>
         <InstrumentationProvider {...instrumentationProps}>
           <MediaQueryProvider>
             <LayerOrganizer {...layerProps}>{children}</LayerOrganizer>
