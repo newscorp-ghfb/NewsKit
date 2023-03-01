@@ -336,7 +336,7 @@ Object {
     "overlayGradientFromTopLeft": "linear-gradient(-45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 99.25%)",
     "overlayGradientFromTopRight": "linear-gradient(45deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(198,198,198,0.00) 0%, rgba(198,198,198,1.00) 100%)",
-    "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(198,198,198,0.00) 0%, rgba(198,198,198,1.00) 100%)",
+    "overlayGradientInverseVertical": "linear-gradient(0deg, rgba(198,198,198,0.00) 0%, rgba(198,198,198,1.00) 100%)",
     "overlayLightGradient010": "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)",
     "overlayTintBase010": "{{colors.blackTint020}}",
     "overlayTintBase020": "{{colors.blackTint040}}",

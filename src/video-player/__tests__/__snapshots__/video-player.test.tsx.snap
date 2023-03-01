@@ -184,7 +184,7 @@ exports[`Video Player renders video player with logical props 1`] = `
 
 .emotion-0 .video-js .vjs-dock-text {
   background: none;
-  background-image: linear-gradient(180deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%);
+  background-image: linear-gradient(0deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%);
 }
 
 @media screen and (max-width: 767px) {
@@ -471,7 +471,7 @@ exports[`Video Player renders video player with logical props component defauts 
 
 .emotion-0 .video-js .vjs-dock-text {
   background: none;
-  background-image: linear-gradient(180deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%);
+  background-image: linear-gradient(0deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%);
 }
 
 @media screen and (max-width: 767px) {
@@ -758,7 +758,7 @@ exports[`Video Player renders video player with overriden play button style 1`] 
 
 .emotion-0 .video-js .vjs-dock-text {
   background: none;
-  background-image: linear-gradient(180deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%);
+  background-image: linear-gradient(0deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%);
 }
 
 @media screen and (max-width: 767px) {

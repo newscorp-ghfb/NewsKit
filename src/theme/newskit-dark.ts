@@ -91,7 +91,7 @@ export const newskitDarkThemeOverrides = {
     overlayGradientInverseHorizontal:
       'linear-gradient(-90deg, rgba(198,198,198,0.00) 0%, rgba(198,198,198,1.00) 100%)',
     overlayGradientInverseVertical:
-      'linear-gradient(180deg, rgba(198,198,198,0.00) 0%, rgba(198,198,198,1.00) 100%)',
+      'linear-gradient(0deg, rgba(198,198,198,0.00) 0%, rgba(198,198,198,1.00) 100%)',
   },
   outline: {
     safariOutlineStyleDefault: 'solid',
