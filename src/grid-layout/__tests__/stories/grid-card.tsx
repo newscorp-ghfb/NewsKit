@@ -2,7 +2,11 @@ import * as React from 'react';
 import {Headline} from '../../../headline';
 import {TextBlock} from '../../../text-block';
 import {Block} from '../../../block';
-import {getStylePreset, styled} from '../../../utils/style';
+import {
+  getStylePreset,
+  getTransitionPresetFromTheme,
+  styled,
+} from '../../../utils/style';
 import {Button} from '../../../button';
 import {Image} from '../../../image';
 import {Flag, getMediaQueryFromTheme, Paragraph, Tag} from '../../..';
@@ -198,6 +202,7 @@ const useCardContext = () => React.useContext(CardContext);
 const StyledCard = styled(GridLayout)`
   position: relative;
   ${props => getStylePreset('', '')(props)}
+  ${getTransitionPresetFromTheme('backgroundColorChange')}
 `;
 
 export const Card = ({
@@ -276,6 +281,7 @@ const StyledCardLink = styled(GridLayout)<{expand?: boolean}>`
   ${props =>
     props.expand &&
     `
+    text-decoration: none;
     &:before {
       content: '';
       position: absolute;

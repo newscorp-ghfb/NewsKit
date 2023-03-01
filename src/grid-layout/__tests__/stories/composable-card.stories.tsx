@@ -9,6 +9,7 @@ import {Block} from '../../../block';
 import {CreateThemeArgs, ThemeProvider} from '../../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
 import {Flag} from '../../../flag';
+// import {useThemeMode} from '../../../../../helpers/use-theme-mode';
 import {
   StorybookCase,
   StorybookPage,
@@ -32,7 +33,7 @@ const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
     overrides={{typographyPreset: 'editorialHeadline030', ...overrides}}
     {...props}
   >
-    Arcu risus mauris sodales penatibus sit tincidunt.
+    Short title of the card describing the main content
   </Headline>
 );
 
@@ -41,8 +42,7 @@ const P = ({overrides, ...props}: Omit<ParagraphProps, 'children'>) => (
     overrides={{typographyPreset: 'editorialParagraph020', ...overrides}}
     {...props}
   >
-    Et libero, congue at condimentum. Id lobortis urna consectetur a,
-    scelerisque lorem amet, magnis fringilla.
+    Short paragraph description of the article, outlining main story and focus.
   </Paragraph>
 );
 
@@ -72,7 +72,19 @@ const cardCustomThemeObject: CreateThemeArgs = {
       },
       headlineLink: {
         base: {
-          color: '{{colors.interactivePrimary030}}',
+          color: '{{colors.inkContrast}}',
+          textDecoration: 'none',
+        },
+        hover: {
+          color: '{{colors.interactivePrimary040}}',
+          textDecoration: 'none',
+        },
+        active: {
+          color: '{{colors.interactivePrimary050}}',
+          textDecoration: 'none',
+        },
+        visited: {
+          color: '{{colors.interactiveVisited010}}',
         },
       },
       headlineWithHoverFromParent: {
@@ -104,7 +116,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
         },
       },
       cardContentSeparateColor: {
-        base: {
+        hover: {
           backgroundColor: '{{colors.interface020}}',
         },
       },
@@ -207,7 +219,7 @@ export const StoryDefault = () => (
         <CardMedia src="/placeholder-3x2.png" />
       </Card>
     </StorybookCase>
-    <StorybookCase title="As a link">
+    <StorybookCase title="with link">
       <Card
         overrides={{maxWidth: '250px', stylePreset: 'cardComposableLink'}}
         areas={`
@@ -349,7 +361,9 @@ export const StoryVariations = () => (
         `}
       >
         <CardMedia src="/placeholder-3x2.png" />
-        <CardContent overrides={{paddingBlock: 'space040'}}>
+        <CardContent
+          overrides={{paddingBlock: 'space040', paddingInline: 'space020'}}
+        >
           <CardLink
             href={window.location.href}
             overrides={{paddingBlock: 'space020'}}
@@ -376,6 +390,7 @@ export const StoryVariations = () => (
         <CardContent
           overrides={{
             paddingBlock: 'space040',
+            paddingInline: 'space020',
           }}
         >
           <div>
@@ -390,7 +405,7 @@ export const StoryVariations = () => (
           </CardLink>
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
-        <CardActions marginBlock="space040">
+        <CardActions marginBlock="space040" paddingInline="space020">
           <Tag href="/news">Tag</Tag>
         </CardActions>
       </Card>
@@ -408,6 +423,7 @@ export const StoryVariations = () => (
         <CardContent
           overrides={{
             paddingBlock: 'space040',
+            paddingInline: 'space020',
           }}
         >
           <div>
@@ -417,7 +433,7 @@ export const StoryVariations = () => (
           <H overrides={{paddingBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
-        <CardActions marginBlock="space020">
+        <CardActions marginBlock="space020" paddingInline="space020">
           <Button href="/news">Button</Button>
         </CardActions>
       </Card>
@@ -435,6 +451,7 @@ export const StoryVariations = () => (
         <CardContent
           overrides={{
             paddingBlock: 'space040',
+            paddingInline: 'space020',
           }}
         >
           <div>
@@ -444,7 +461,7 @@ export const StoryVariations = () => (
           <H overrides={{paddingBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
-        <CardActions marginBlock="space020">
+        <CardActions marginBlock="space020" paddingInline="space020">
           <UnorderedList
             overrides={{content: {typographyPreset: 'editorialParagraph020'}}}
             markerAlign="start"
@@ -479,6 +496,7 @@ export const StoryVariations = () => (
         <CardContent
           overrides={{
             paddingBlock: 'space040',
+            paddingInline: 'space020',
           }}
         >
           <div>
@@ -488,7 +506,7 @@ export const StoryVariations = () => (
           <H overrides={{paddingBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
-        <CardActions marginBlock="space040">
+        <CardActions marginBlock="space040" paddingInline="space020">
           <Tag href="/news">Tag</Tag>
         </CardActions>
       </Card>
@@ -544,8 +562,12 @@ const SplitCardContainer = styled.div<{maxWidth: string}>`
   ${({maxWidth}) => ({'max-width': maxWidth})}
 `;
 
-const SplitCardBar = styled.div<{width: string; background: string}>`
-  ${({width, background}) => ({width, background})}
+const SplitCardBar = styled.div<{
+  width: string;
+  background: string;
+}>`
+  ${({width}) => ({width})}
+  ${({background}) => ({background})}
   display: flex;
   align-items: center;
   justify-content: center;
@@ -571,6 +593,7 @@ const SplitBars = ({
           {first}
         </Paragraph>
       </SplitCardBar>
+
       <SplitCardBar width={second} background="#D5E0FC">
         <Paragraph
           overrides={{
@@ -687,7 +710,7 @@ export const StorySpan = () => (
         <StorybookCase title="1:1 horizontal ratio">
           <SplitCard columns="50% 50%" />
         </StorybookCase>
-        <StorybookCase title="1:2 horizontal ratio">
+        <StorybookCase title="2:1 horizontal ratio">
           <SplitCard columns="40% 60%" />
         </StorybookCase>
         <StorybookCase title="1:2 horizontal ratio">
