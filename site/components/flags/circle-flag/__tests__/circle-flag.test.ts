@@ -15,7 +15,8 @@ describe('CircleFlag', () => {
           data-comp="NewsKit Flag"
           data-props="{
         \\"overrides\\": {
-          \\"spaceInset\\": \\"space000\\",
+          \\"paddingBlock\\": \\"space000\\",
+          \\"paddingInline\\": \\"space000\\",
           \\"width\\": \\"sizing050\\",
           \\"height\\": \\"sizing050\\"
         },

@@ -201,7 +201,8 @@ describe('TextField', () => {
     const props: TextFieldProps = {
       overrides: {
         stylePreset: 'textInputContainerCustom',
-        spaceInset: 'spaceInset020',
+        paddingBlock: 'space020',
+        paddingInline: 'space020',
         minHeight: 'sizing090',
         typographyPreset: 'utilityBody030',
         spaceStack: 'space040',

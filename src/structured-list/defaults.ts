@@ -7,7 +7,8 @@ export default {
   },
   structuredListItem: {
     stylePreset: 'structuredListItem',
-    spaceInset: 'spaceInsetStretch040',
+    paddingInline: 'space040',
+    paddingBlock: 'space050',
     minHeight: 'sizing100',
     icon: {
       size: 'iconSize010',

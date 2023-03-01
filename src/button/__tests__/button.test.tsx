@@ -95,10 +95,11 @@ describe('Button', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders with different spaceInset preset', () => {
+  test('renders with different padding', () => {
     const props: ButtonProps = {
       overrides: {
-        spaceInset: 'spaceInsetSquish000',
+        paddingInline: 'space000',
+        paddingBlock: 'space000',
       },
     };
 

@@ -93,11 +93,10 @@ export const StyledToastContainer = styled.div<ToastProps>`
   ${getResponsiveSize('minWidth', 'toast', '', 'minWidth')}
   ${getResponsiveSize('maxWidth', 'toast', '', 'maxWidth')}
   ${getResponsiveSize('minHeight', 'toast', '', 'minHeight')}
-  ${getResponsiveSpace('padding', 'toast', '', 'spaceInset')}
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
-  ${logicalProps()}
+  ${logicalProps('toast')}
 `;
 
 export const StyledToastInnerContainer = styled.div`

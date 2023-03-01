@@ -11,7 +11,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -89,7 +89,7 @@ exports[`Popover close button applies logical prop overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -152,11 +152,12 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -339,7 +340,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -417,7 +418,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -476,7 +477,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   align-items: center;
   box-sizing: border-box;
   height: 100%;
-  border-color: #820000;
+  border-color: #7D0000;
   border-style: solid;
   border-width: 2px;
   padding-inline: 8px;
@@ -503,11 +504,12 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -520,7 +522,7 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #820000;
+  background-color: #7D0000;
   border-radius: 50%;
   color: #FFFFFF;
   cursor: pointer;
@@ -647,7 +649,7 @@ exports[`Popover close button should show left-aligned 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -725,7 +727,7 @@ exports[`Popover close button should show left-aligned 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -788,11 +790,12 @@ exports[`Popover close button should show left-aligned 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -957,7 +960,7 @@ exports[`Popover close button should show right-aligned 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -1035,7 +1038,7 @@ exports[`Popover close button should show right-aligned 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -1098,11 +1101,12 @@ exports[`Popover close button should show right-aligned 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1267,7 +1271,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -1345,7 +1349,7 @@ exports[`Popover content applies logical prop overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -1408,11 +1412,12 @@ exports[`Popover content applies logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1595,7 +1600,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -1673,7 +1678,7 @@ exports[`Popover content applies stylePreset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -1760,11 +1765,12 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1936,7 +1942,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -2014,7 +2020,7 @@ exports[`Popover content applies typography preset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2077,11 +2083,12 @@ exports[`Popover content applies typography preset overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2264,7 +2271,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -2342,7 +2349,7 @@ exports[`Popover header applies logical prop overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2428,11 +2435,12 @@ exports[`Popover header applies logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2622,7 +2630,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -2700,7 +2708,7 @@ exports[`Popover header applies stylePreset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -2786,11 +2794,12 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2961,7 +2970,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -3039,7 +3048,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -3125,11 +3134,12 @@ exports[`Popover header applies typography preset overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3309,7 +3319,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Popover offset should be applied with pointer and px distance override 1`] = `
+exports[`Popover offset should be applied with pointer and px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -3320,7 +3330,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -3398,7 +3408,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -3461,11 +3471,12 @@ exports[`Popover offset should be applied with pointer and px distance override 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3638,7 +3649,7 @@ exports[`Popover offset should be applied with pointer and px distance override 
 </DocumentFragment>
 `;
 
-exports[`Popover offset should be applied with pointer and token distance override 1`] = `
+exports[`Popover offset should be applied with pointer and token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -3649,7 +3660,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -3727,7 +3738,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -3790,11 +3801,12 @@ exports[`Popover offset should be applied with pointer and token distance overri
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3967,7 +3979,7 @@ exports[`Popover offset should be applied with pointer and token distance overri
 </DocumentFragment>
 `;
 
-exports[`Popover offset should not be applied with pointer and invalid token distance override 1`] = `
+exports[`Popover offset should not be applied with pointer and invalid token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -3978,7 +3990,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -4056,7 +4068,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -4119,11 +4131,12 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4296,7 +4309,7 @@ exports[`Popover offset should not be applied with pointer and invalid token dis
 </DocumentFragment>
 `;
 
-exports[`Popover offset should not be applied with pointer and non-px distance override 1`] = `
+exports[`Popover offset should not be applied with pointer and non-px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -4307,7 +4320,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -4385,7 +4398,7 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -4448,11 +4461,12 @@ exports[`Popover offset should not be applied with pointer and non-px distance o
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4636,7 +4650,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -4714,7 +4728,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -4777,11 +4791,12 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4935,7 +4950,7 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Popover pointer padding should be applied with px distance override 1`] = `
+exports[`Popover pointer padding should be applied with px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -4946,7 +4961,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -5024,7 +5039,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -5087,11 +5102,12 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5264,7 +5280,7 @@ exports[`Popover pointer padding should be applied with px distance override 1`]
 </DocumentFragment>
 `;
 
-exports[`Popover pointer padding should be applied with token distance override 1`] = `
+exports[`Popover pointer padding should be applied with token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -5275,7 +5291,7 @@ exports[`Popover pointer padding should be applied with token distance override 
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -5353,7 +5369,7 @@ exports[`Popover pointer padding should be applied with token distance override 
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -5416,11 +5432,12 @@ exports[`Popover pointer padding should be applied with token distance override 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5593,7 +5610,7 @@ exports[`Popover pointer padding should be applied with token distance override 
 </DocumentFragment>
 `;
 
-exports[`Popover pointer padding should not be applied with invalid token distance override 1`] = `
+exports[`Popover pointer padding should not be applied with invalid token offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -5604,7 +5621,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -5682,7 +5699,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -5745,11 +5762,12 @@ exports[`Popover pointer padding should not be applied with invalid token distan
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5922,7 +5940,7 @@ exports[`Popover pointer padding should not be applied with invalid token distan
 </DocumentFragment>
 `;
 
-exports[`Popover pointer padding should not be applied with non-px distance override 1`] = `
+exports[`Popover pointer padding should not be applied with non-px offset override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -5933,7 +5951,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -6011,7 +6029,7 @@ exports[`Popover pointer padding should not be applied with non-px distance over
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -6074,11 +6092,12 @@ exports[`Popover pointer padding should not be applied with non-px distance over
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6262,7 +6281,7 @@ exports[`Popover should render correct styles: default 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -6340,7 +6359,7 @@ exports[`Popover should render correct styles: default 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -6403,11 +6422,12 @@ exports[`Popover should render correct styles: default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6572,7 +6592,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 70;
   max-width: 80px;
@@ -6724,11 +6744,12 @@ exports[`Popover should render correct styles: with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6893,7 +6914,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -6971,7 +6992,7 @@ exports[`Popover should render correct styles: with pointer 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -7034,11 +7055,12 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7222,7 +7244,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -7300,7 +7322,7 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -7363,11 +7385,12 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7551,7 +7574,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -7629,7 +7652,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -7692,11 +7715,12 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7805,7 +7829,7 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   box-sizing: border-box;
-  background-color: #820000;
+  background-color: #7D0000;
   width: 16px;
   height: 16px;
   left: 12px;
@@ -7880,7 +7904,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
     Add
   </button>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   position: absolute;
@@ -7958,7 +7982,7 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -8021,11 +8045,12 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

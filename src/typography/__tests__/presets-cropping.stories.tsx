@@ -1,9 +1,8 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 import {TextBlock} from '../../text-block';
-import {Grid, Cell} from '../../grid';
-import {createTheme, ThemeProvider, useTheme} from '../../theme';
-import {Heading1} from '../heading';
+import {Cell, Grid} from '../../grid';
+import {useTheme} from '../../theme';
 import {
   StorybookHeading,
   StorybookSubHeading,
@@ -17,25 +16,6 @@ export default {
 const StyledTextBlock = styled(TextBlock)`
   background-color: tomato;
 `;
-
-const StyledHeading1 = styled(Heading1)`
-  background-color: tomato;
-`;
-
-const myCustomCropConfigTheme = createTheme({
-  name: 'newskit-font-crop-config',
-  overrides: {
-    fonts: {
-      fontFamily030: {
-        fontFamily: 'Poppins',
-        cropConfig: {
-          top: 5,
-          bottom: 13,
-        },
-      },
-    },
-  },
-});
 
 const renderTextBlockWithPreset = (presetList: Array<string>) =>
   presetList.map((preset: string) => (
@@ -188,18 +168,6 @@ export const UtilityCropping = () => {
           {renderTextBlockWithPreset(utilityMetaPresetList)}
           <br />
           {renderTextBlockWithPreset(utilityButtonPresetList)}
-          {/* Scenarios to be removed once we will support only font metrics */}
-          <br />
-          <ThemeProvider theme={myCustomCropConfigTheme}>
-            <StyledTextBlock typographyPreset="utilityButton030">
-              TutilityButton030 as span with cropConfig (TextBlock)
-            </StyledTextBlock>
-            <br />
-            <StyledHeading1 overrides={{typographyPreset: 'utilityButton030'}}>
-              TutilityButton030 as span with cropConfig (Heading1)
-            </StyledHeading1>
-          </ThemeProvider>
-          {/*  */}
         </Cell>
       </Grid>
     </>
