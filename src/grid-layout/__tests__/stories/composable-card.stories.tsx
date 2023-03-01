@@ -20,6 +20,7 @@ import {Button} from '../../../button';
 import {Cell} from '../../../grid/cell';
 import {Grid} from '../../../grid';
 import {UnorderedList} from '../../../unordered-list';
+import {getStylePresetFromTheme} from '../../../utils';
 
 const StorybookGridCase = ({title, children}) => (
   <Cell xs={12} sm={6}>
@@ -65,6 +66,16 @@ const cardCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkInverse}}',
         },
       },
+      firstSplitBarCustom: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+        },
+      },
+      secondSplitBarCustom: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary010}}',
+        },
+      },
       tagCustom: {
         base: {
           backgroundColor: '{{colors.socialGoogleYellow}}',
@@ -86,6 +97,10 @@ const cardCustomThemeObject: CreateThemeArgs = {
         visited: {
           color: '{{colors.interactiveVisited010}}',
         },
+        // 'focus-visible': {
+        //   ...defaultFocusVisible,
+        //   safariOutlineOffset: '-7px',
+        // },
       },
       headlineWithHoverFromParent: {
         base: {
@@ -116,7 +131,16 @@ const cardCustomThemeObject: CreateThemeArgs = {
         },
       },
       cardContentSeparateColor: {
+        base: {
+          boxShadow: '{{shadows.shadow020}}',
+          backgroundColor: '{{colors.interface010}}',
+        },
         hover: {
+          backgroundColor: '{{colors.interface020}}',
+        },
+      },
+      cardInset: {
+        base: {
           backgroundColor: '{{colors.interface020}}',
         },
       },
@@ -203,7 +227,7 @@ export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
     <StorybookCase title="Basic">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -242,7 +266,7 @@ export const StoryDefault = () => (
     </StorybookCase>
     <StorybookCase title="With link in action container">
       <Card
-        overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '250px'}}
         areas={`
           media
           content
@@ -272,7 +296,7 @@ export const StoryCardAreas = () => (
   <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
     <StorybookCase title="Card Content">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -292,7 +316,7 @@ export const StoryCardAreas = () => (
     </StorybookCase>
     <StorybookCase title="CardMedia">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -304,7 +328,7 @@ export const StoryCardAreas = () => (
     </StorybookCase>
     <StorybookCase title="CardActions">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -318,7 +342,7 @@ export const StoryCardAreas = () => (
     </StorybookCase>
     <StorybookCase title="CardLink applied to headline in CardContent area">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -353,7 +377,7 @@ export const StoryVariations = () => (
   <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
     <StorybookCase title="CardLink and CardMedia">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -412,7 +436,7 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="Button in CardActions area">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -440,7 +464,7 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="Multiple in CardActions">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -485,7 +509,7 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="Alternative images aspect ratio">
       <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '372px'}}
         areas={`
           media
           content
@@ -521,7 +545,7 @@ export const StoryInsetCard = () => (
       <Card
         overrides={{
           maxWidth: '372px',
-          stylePreset: 'cardContentSeparateColor',
+          stylePreset: 'cardInset',
         }}
         areas={`
           media
@@ -564,10 +588,10 @@ const SplitCardContainer = styled.div<{maxWidth: string}>`
 
 const SplitCardBar = styled.div<{
   width: string;
-  background: string;
+  stylePreset: string;
 }>`
   ${({width}) => ({width})}
-  ${({background}) => ({background})}
+  ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -581,9 +605,10 @@ const SplitBars = ({
   maxWidth: string;
 }) => {
   const [first, second] = columns.split(' ');
+
   return (
     <SplitCardContainer maxWidth={maxWidth}>
-      <SplitCardBar width={first} background="#FEECEC">
+      <SplitCardBar width={first} stylePreset="firstSplitBarCustom">
         <Paragraph
           overrides={{
             typographyPreset: 'editorialParagraph020',
@@ -594,7 +619,7 @@ const SplitBars = ({
         </Paragraph>
       </SplitCardBar>
 
-      <SplitCardBar width={second} background="#D5E0FC">
+      <SplitCardBar width={second} stylePreset="secondSplitBarCustom">
         <Paragraph
           overrides={{
             typographyPreset: 'editorialParagraph020',
@@ -617,7 +642,6 @@ const SplitCard = ({columns}: {columns: string}) => {
         overrides={{
           maxWidth,
           marginBlockStart: 'space020',
-          stylePreset: 'cardComposable',
         }}
         columns={columns}
         areas={`
@@ -645,7 +669,6 @@ export const StoryLayout = () => (
     <StorybookCase title="Horizontal">
       <Card
         overrides={{
-          stylePreset: 'cardComposable',
           paddingBlock: 'space040',
         }}
         areas={`
@@ -673,7 +696,7 @@ export const StoryLayout = () => (
     </StorybookCase>
     <StorybookCase title="Horizontal-inverse">
       <Card
-        overrides={{stylePreset: 'cardComposable', paddingBlock: 'space040'}}
+        overrides={{paddingBlock: 'space040'}}
         areas={`
         content media
         actions media
@@ -726,7 +749,7 @@ export const StoryOrder = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="CardContent and heading first">
       <Card
-        overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '250px'}}
         areas={`
           content
           media
@@ -758,7 +781,6 @@ export const StoryResponsiveCard = () => (
       <Card
         overrides={{
           maxWidth: {xl: '600px', md: '372px'},
-          stylePreset: 'cardComposable',
         }}
         rowGap="space040"
         columnGap="space040"
@@ -792,7 +814,7 @@ export const StoryOnClick = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="onClick handler on Tag">
       <Card
-        overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+        overrides={{maxWidth: '250px'}}
         areas={`
           media
           content
@@ -825,7 +847,6 @@ export const StoryLogicalProps = () => (
         <Card
           overrides={{
             maxWidth: '250px',
-            stylePreset: 'cardComposable',
             marginInline: 'space060',
           }}
           areas={`
@@ -853,7 +874,6 @@ export const StoryLogicalProps = () => (
         <Card
           overrides={{
             maxWidth: '250px',
-            stylePreset: 'cardComposable',
             paddingBlock: 'space060',
           }}
           areas={`
@@ -879,7 +899,7 @@ export const StoryLogicalProps = () => (
       </StorybookGridCase>
       <StorybookGridCase title="Padding overrides CardContent area">
         <Card
-          overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+          overrides={{maxWidth: '250px'}}
           areas={`
             media
             content
@@ -943,7 +963,7 @@ export const StoryOverrides = () => (
       </StorybookGridCase>
       <StorybookGridCase title="Style preset - Headline, Paragraph, CardActions and Tag colours">
         <Card
-          overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+          overrides={{maxWidth: '250px'}}
           areas={`
             media
             content
@@ -989,7 +1009,7 @@ export const StoryOverrides = () => (
       </StorybookGridCase>
       <StorybookGridCase title="Typography preset - Headline">
         <Card
-          overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+          overrides={{maxWidth: '250px'}}
           areas={`
             media
             content

@@ -209,7 +209,7 @@ export const Card = ({
   children,
   ...props
 }: Omit<GridLayoutProps, 'overrides'> & {
-  overrides: GridLayoutProps['overrides'] & {stylePreset: string};
+  overrides: GridLayoutProps['overrides'] & {stylePreset?: string};
 }) => {
   const {areas} = props;
 
@@ -278,10 +278,11 @@ export const CardActions = ({
 };
 
 const StyledCardLink = styled(GridLayout)<{expand?: boolean}>`
+  text-decoration: none;
   ${props =>
     props.expand &&
     `
-    text-decoration: none;
+   
     &:before {
       content: '';
       position: absolute;
