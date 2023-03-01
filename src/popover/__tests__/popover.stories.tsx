@@ -237,20 +237,20 @@ export const StoryPopoverDefault = () => (
         </div>
         <div>
           <StorybookSubHeading>
-            Popover - no pointer distance (increased)
+            Popover - no pointer offset (increased)
           </StorybookSubHeading>
           <BoundedPopover
             hidePointer
-            overrides={{distance: 'space080', maxWidth: '300px'}}
+            overrides={{offset: 'space080', maxWidth: '300px'}}
           />
         </div>
         <div>
           <StorybookSubHeading>
-            Popover - no pointer distance (zero)
+            Popover - no pointer offset (zero)
           </StorybookSubHeading>
           <BoundedPopover
             hidePointer
-            overrides={{distance: 'space000', maxWidth: '300px'}}
+            overrides={{offset: 'space000', maxWidth: '300px'}}
           />
         </div>
       </GridLayout>
@@ -294,24 +294,18 @@ export const StoryPopoverDefault = () => (
       </div>
       <GridLayout columns={{xs: 'repeat(3, minmax(0, 1fr))'}}>
         <div>
-          <StorybookSubHeading>
-            Popover - distance (default)
-          </StorybookSubHeading>
+          <StorybookSubHeading>Popover - offset (default)</StorybookSubHeading>
           <BoundedPopover />
         </div>
         <div>
           <StorybookSubHeading>
-            Popover - distance (increased)
+            Popover - offset (increased)
           </StorybookSubHeading>
-          <BoundedPopover
-            overrides={{distance: 'space070', maxWidth: '300px'}}
-          />
+          <BoundedPopover overrides={{offset: 'space070', maxWidth: '300px'}} />
         </div>
         <div>
-          <StorybookSubHeading>Popover - distance (zero)</StorybookSubHeading>
-          <BoundedPopover
-            overrides={{distance: 'space030', maxWidth: '300px'}}
-          />
+          <StorybookSubHeading>Popover - offset (zero)</StorybookSubHeading>
+          <BoundedPopover overrides={{offset: 'space030', maxWidth: '300px'}} />
         </div>
       </GridLayout>
     </GridLayout>

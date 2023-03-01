@@ -190,10 +190,11 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   width: 32px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -400,10 +401,11 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   width: 32px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

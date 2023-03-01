@@ -30,7 +30,7 @@ import {AssistiveText} from '../assistive-text';
 import {Banner} from '../banner';
 import {getSSRId, MQ} from '../utils';
 import {Byline} from '../byline';
-import {Caption, CaptionInset} from '../caption';
+import {Caption} from '../caption';
 import {Block} from '../block';
 import {TextBlock} from '../text-block';
 import {Headline} from '../headline';
@@ -523,9 +523,21 @@ export const scenarios: Array<ComponentData> = [
             overrides={{width: '300px', height: '200px'}}
             placeholderIcon
           />
-          <CaptionInset creditText="Credit text">
+          <Caption
+            creditText="Credit text"
+            overrides={{
+              paddingInline: {
+                xs: 'space040',
+                md: 'space050',
+              },
+              paddingBlock: {
+                xs: 'space040',
+                md: 'space050',
+              },
+            }}
+          >
             Image with Caption Inset
-          </CaptionInset>
+          </Caption>
         </Stack>
       </Stack>
     ),
@@ -986,7 +998,8 @@ export const scenarios: Array<ComponentData> = [
             </Button>
             <Block
               as="span"
-              spaceInset="space030"
+              paddingBlock="space030"
+              paddingInline="space030"
               onChange={onChangeValue}
               stylePreset="inkSubtle"
             >

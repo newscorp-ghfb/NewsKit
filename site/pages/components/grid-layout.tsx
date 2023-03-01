@@ -17,6 +17,8 @@ import {ContentText} from '../../components/text-section/content-text';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -626,6 +628,7 @@ const GridLayoutComponent = (layoutProps: LayoutProps) => (
               default: '',
               description: 'If provided, overrides the maxHeight of the grid',
             },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
         {

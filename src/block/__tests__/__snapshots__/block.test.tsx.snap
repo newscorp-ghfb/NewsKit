@@ -58,18 +58,6 @@ exports[`Block with props renders with spaceInline020 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Block with props renders with spaceInset020 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  padding: 8px;
-}
-
-<div
-    class="emotion-0"
-  />
-</DocumentFragment>
-`;
-
 exports[`Block with props renders with spaceStack010 for xs, spaceStack020 for sm, and spaceStack030 for md breakpoints 1`] = `
 <DocumentFragment>
   @media screen and (max-width: 479px) {

@@ -12,7 +12,8 @@ export const IconFilledCrossCircle: React.FC<{size?: FlagProps['size']}> = ({
     size={size}
     overrides={{
       stylePreset: 'crossIconContainer',
-      spaceInset: 'spaceInset000',
+      paddingBlock: 'space000',
+      paddingInline: 'space000',
       width: size === 'small' ? 'sizing050' : 'sizing060',
       height: size === 'small' ? 'sizing050' : 'sizing060',
     }}

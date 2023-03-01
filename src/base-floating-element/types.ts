@@ -47,7 +47,7 @@ export interface FloatingElementProps
     zIndex?: number;
     maxWidth?: MQ<string>;
     minWidth?: MQ<string>;
-    distance?: string;
+    offset?: string;
     stylePreset?: MQ<string>;
     panel?: {
       stylePreset?: MQ<string>;

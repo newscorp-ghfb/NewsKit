@@ -93,17 +93,4 @@ export interface FontConfig {
       unitsPerEm: number;
     };
   };
-  // cropConfig and cropAdjustments be removed once we will support only font metrics
-  cropConfig?: {
-    top: number;
-    bottom: number;
-    fontSize?: number;
-    lineHeight?: number;
-  };
-  cropAdjustments?: {
-    [fontSize: string]: {
-      top?: number;
-      bottom?: number;
-    };
-  };
 }

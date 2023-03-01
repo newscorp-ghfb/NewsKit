@@ -5,8 +5,7 @@ import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {commonLogicalProps} from '../../components/component-api/common-logical-props';
-import {OverridesRowsProps} from '../../components/component-api';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
@@ -89,7 +88,7 @@ const commonOverridesRows = [
     description: 'If provided, overrides the stylePreset of the button',
   },
   {
-    attribute: 'stylePreset',
+    attribute: 'typographyPreset',
     type: 'MQ<string>',
     default: [
       'small = utilityBody020',
@@ -99,30 +98,20 @@ const commonOverridesRows = [
     description: 'If provided, overrides the typographyPreset of the button',
   },
   {
-    attribute: 'stylePreset',
+    attribute: 'transitionPreset',
     type: 'MQ<string>',
     default: ['backgroundColorChange', 'borderColorChange'],
     description: 'If provided, overrides the transitionPreset of the button',
   },
   {
-    attribute: 'stylePreset',
-    type: 'MQ<string>',
-    default: [
-      'small = spaceInsetSquish020',
-      'medium = spaceInsetSquish030',
-      'large = spaceInsetSquish040',
-    ],
-    description: 'If provided, overrides the inset space of the button',
-  },
-  {
-    attribute: 'stylePreset',
+    attribute: 'spaceInline',
     type: 'MQ<string>',
     default: ['small = space020', 'medium = space020', 'large = space020'],
     description:
       'If provided, overrides the space between multiple children in the underlying stack',
   },
   {
-    attribute: 'stylePreset',
+    attribute: 'iconSize',
     type: 'MQ<string>',
     default: [
       'small = iconSize010',
@@ -138,14 +127,70 @@ const commonOverridesRows = [
       </>
     ),
   },
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space020', 'medium: space030', 'large: space040'],
+    paddingInline: ['small: space030', 'medium: space040', 'large: space050'],
+  }),
   {
-    attribute: 'stylePreset',
+    attribute: 'loadingIndicator.stylePreset',
     type: 'MQ<string>',
     default: 'indeterminateProgressIndicatorPrimary',
     description:
       'If provided, overrides the style preset applied to the underlying indeterminate progress indicator icon. The loading indicator icon is shown only when the loading prop is set to ‘true’',
   },
-  ...(commonLogicalProps() as OverridesRowsProps[]),
+];
+
+const iconButtonOverridesRows = [
+  {
+    attribute: 'width',
+    type: 'MQ<string>',
+    default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
+    description: `If provided, sets a fixed width for the button. Can be a sizing token from the theme, or any CSS length value (e.g. 100% for a full width element)`,
+  },
+  {
+    attribute: 'height',
+    type: 'MQ<string>',
+    default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
+    description: `If provided, sets a fixed height to the button. Can be a sizing token from the theme, or any CSS length value`,
+  },
+  {
+    attribute: 'minWidth',
+    type: 'MQ<string>',
+    description: `If provided, sets a minimum width for the button. Can be a sizing token from the theme, or any CSS length value`,
+  },
+  {
+    attribute: 'minHeight',
+    type: 'MQ<string>',
+    description:
+      'If provided, sets a maximum height for the button. Can be a sizing token from the theme, or any CSS length value',
+  },
+  {
+    attribute: 'stylePreset',
+    type: 'MQ<string>',
+    default: 'iconButtonSolidPrimary',
+    description: 'If provided, overrides the stylePreset of the icon button',
+  },
+  {
+    attribute: 'typographyPreset',
+    type: 'MQ<string>',
+    description: 'If provided, overrides the typographyPreset of the button',
+  },
+  {
+    attribute: 'transitionPreset',
+    type: 'MQ<string>',
+    description: 'If provided, overrides the transitionPreset of the button',
+  },
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space020', 'medium: space030', 'large: space040'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space040'],
+  }),
+  {
+    attribute: 'loadingIndicator.stylePreset',
+    type: 'MQ<string>',
+    default: 'indeterminateProgressIndicatorPrimary',
+    description:
+      'If provided, overrides the style preset applied to the underlying indeterminate progress indicator icon. The loading indicator icon is shown only when the loading prop is set to ‘true’',
+  },
 ];
 
 const ButtonComponent = (layoutProps: LayoutProps) => (
@@ -571,7 +616,7 @@ const ButtonComponent = (layoutProps: LayoutProps) => (
           propsSummary: `The icon button has a range of props that can be used to define an appropriate experience for different use cases.`,
           overridesSummary: `The icon button has a range of props that can be used to define an appropriate experience for different use cases.`,
           propsRows: commonPropsRows(),
-          overridesRows: commonOverridesRows,
+          overridesRows: iconButtonOverridesRows,
         },
       ],
     }}

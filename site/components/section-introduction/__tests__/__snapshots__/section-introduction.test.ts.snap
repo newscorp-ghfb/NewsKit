@@ -80,7 +80,10 @@ exports[`SectionIntroduction renders with all props 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
   background-color: transparent;
 }
 

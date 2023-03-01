@@ -5,7 +5,6 @@ import {
   styled,
   MQ,
   getSpacingFromTheme,
-  getSpacingInsetFromTheme,
   getStylePresetFromTheme,
 } from '../utils/style';
 import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
@@ -16,10 +15,6 @@ export interface BlockProps
   as?: keyof JSX.IntrinsicElements;
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
-  /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
-   */
-  spaceInset?: MQ<string>;
   /**
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginInlineEnd` instead.
    */
@@ -32,7 +27,6 @@ export interface BlockProps
 
 const StyledDiv = styled.div<BlockProps>`
   ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)}
-  ${({spaceInset}) => spaceInset && getSpacingInsetFromTheme(spaceInset)}
   ${({spaceInline}) =>
     spaceInline && getSpacingFromTheme(spaceInline, undefined, 'marginRight')}
   ${({spaceStack}) =>
