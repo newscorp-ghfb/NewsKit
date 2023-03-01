@@ -67,12 +67,12 @@ const cardCustomThemeObject: CreateThemeArgs = {
       },
       firstSplitBarCustom: {
         base: {
-          backgroundColor: '{{colors.interactivePrimary020}}',
+          backgroundColor: '{{colors.interactivePrimary010}}',
         },
       },
       secondSplitBarCustom: {
         base: {
-          backgroundColor: '{{colors.interactivePrimary010}}',
+          backgroundColor: '{{colors.interactivePrimary020}}',
         },
       },
       tagCustom: {
