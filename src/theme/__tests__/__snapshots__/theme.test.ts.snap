@@ -326,7 +326,7 @@ Object {
     "opacity100": "1",
     "overlayDarkGradient010": "linear-gradient(180deg, rgba(51, 51, 51, 0) 0%, #0A0A0A 100%)",
     "overlayGradientBaseHorizontal": "linear-gradient(-90deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(17,17,17,1.00) 0%, rgba(17,17,17,0.00) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)",
     "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
