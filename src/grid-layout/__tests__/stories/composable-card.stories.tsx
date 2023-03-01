@@ -278,6 +278,18 @@ export const StoryCardAreas = () => (
         </CardContent>
       </Card>
     </StorybookCase>
+    <StorybookCase title="CardMedia">
+      <Card
+        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
+        areas={`
+          media
+          content
+          actions
+        `}
+      >
+        <CardMedia src="/placeholder-3x2.png" />
+      </Card>
+    </StorybookCase>
     <StorybookCase title="CardActions">
       <Card
         overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
@@ -290,18 +302,6 @@ export const StoryCardAreas = () => (
         <CardActions marginBlock="space040">
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
-    </StorybookCase>
-    <StorybookCase title="CardMedia">
-      <Card
-        overrides={{maxWidth: '372px', stylePreset: 'cardComposable'}}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardMedia src="/placeholder-3x2.png" />
       </Card>
     </StorybookCase>
     <StorybookCase title="CardLink applied to headline in CardContent area">
@@ -609,6 +609,9 @@ const SplitCard = ({columns}: {columns: string}) => {
           </Block>
         </CardContent>
         <CardMedia src="/placeholder-3x2.png" />
+        <CardActions marginBlock="space020" paddingInline="space030">
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
       </Card>
     </div>
   );
