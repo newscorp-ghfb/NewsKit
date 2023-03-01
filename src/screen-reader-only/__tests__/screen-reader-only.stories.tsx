@@ -2,21 +2,27 @@ import * as React from 'react';
 import {ScreenReaderOnly} from '../screen-reader-only';
 import {getSSRId} from '../../utils/get-ssr-id';
 import {LinkStandalone} from '../../link';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 
 const srOnly = getSSRId();
 
-export const StoryScreenReaderOnly = () => (
-  <>
-    <LinkStandalone href="..." aria-describedby={srOnly}>
-      Google
-    </LinkStandalone>
-    <ScreenReaderOnly id={srOnly}>
-      The best known search engine
-    </ScreenReaderOnly>
-  </>
+export const StorySreenReaderOnlyDefault = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <LinkStandalone
+        href="https://www.newskit.co.uk/"
+        aria-describedby={srOnly}
+      >
+        NewsKit
+      </LinkStandalone>
+      <ScreenReaderOnly id={srOnly}>
+        An open source design system built by News UK, for everyone
+      </ScreenReaderOnly>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryScreenReaderOnly.storyName = 'ScreenReaderOnly';
-StoryScreenReaderOnly.parameters = {
+StorySreenReaderOnlyDefault.storyName = 'Default';
+StorySreenReaderOnlyDefault.parameters = {
   percy: {skip: true},
 };
 
