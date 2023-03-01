@@ -103,11 +103,13 @@ describe('Modal', () => {
             },
           },
           header: {
-            spaceInset: 'spaceInset000',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
             stylePreset: 'modalHeaderCustom',
           },
           content: {
-            spaceInset: 'spaceInset060',
+            paddingInline: 'space060',
+            paddingBlock: 'space060',
           },
           closeButton: {
             stylePreset: 'modalCloseButtonCustom',
@@ -130,16 +132,25 @@ describe('Modal', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('renders with logical padding props', () => {
+  test('renders with logical props', () => {
     const {asFragment} = renderWithThemeInBody(Modal, {
       open: true,
       header: modalHeader,
       children: modalBody,
       onDismiss: () => {},
       overrides: {
+        header: {
+          paddingInline: '10px',
+        },
+        content: {
+          paddingInline: '10px',
+        },
+        closeButton: {
+          paddingInline: '10px',
+        },
         panel: {
           paddingInline: '15px',
-          paddingBlock: '30px',
+          marginBlock: '30px',
         },
       },
     });

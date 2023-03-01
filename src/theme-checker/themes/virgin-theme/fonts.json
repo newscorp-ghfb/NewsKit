@@ -1,9 +1,14 @@
 {
   "fontFamily010": {
     "fontFamily": "Montserrat",
-    "cropConfig": {
-      "top": 8,
-      "bottom": 10
+    "fontMetrics": {
+      "fontWeight010": {
+        "capHeight": 700,
+        "ascent": 968,
+        "descent": -251,
+        "lineGap": 0,
+        "unitsPerEm": 1000
+      }
     }
   },
   "fontWeight010": 400,

@@ -54,7 +54,7 @@ describe('ComponentAPI', () => {
           ],
           overridesRows: [
             {
-              attribute: 'spaceInset',
+              attribute: 'stylePreset',
               type: 'MQ<string>',
               description: 'Description.',
             },

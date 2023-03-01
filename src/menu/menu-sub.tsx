@@ -110,7 +110,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
         theme.componentDefaults,
         `${isSubMenu ? 'menuSubItem' : 'menuItem'}.${
           vertical ? 'vertical' : 'horizontal'
-        }`,
+        }.${size}`,
       ),
       ...filterOutFalsyProperties(overrides),
     };
@@ -132,6 +132,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
         @ts-ignore href is not required for this Button  */}
         <StyledButton
           {...buttonProps}
+          vertical={vertical}
           align={align}
           selected={selected}
           onClick={composeEventHandlers([handleClick, onClick])}
@@ -154,6 +155,7 @@ export const MenuSub = React.forwardRef<HTMLLIElement, MenuSubProps>(
         >
           <StyledUl
             expanded={isExpanded}
+            size={size}
             vertical={vertical}
             overrides={overrides}
           >

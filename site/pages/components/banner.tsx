@@ -15,8 +15,7 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {commonLogicalProps} from '../../components/component-api/common-logical-props';
-import {OverridesRowsProps} from '../../components/component-api';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {Link} from '../../components/link';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
@@ -485,13 +484,6 @@ const BannerComponent = (layoutProps: LayoutProps) => (
                 'Overrides the stylePreset applied to the banner container and the icon colour.',
             },
             {
-              attribute: 'spaceInset(deprecated)',
-              type: 'MQ<string>',
-              default: 'spaceInset045',
-              description:
-                'Use paddingInline and paddingBlock instead. Overrides the space inset applied to the banner container. It can take four space tokens to specify the padding for each side of the banner. These four space tokens can be used on breakpoints.',
-            },
-            {
               attribute: 'minHeight',
               type: 'MQ<string>',
               default: 'sizing090',
@@ -583,7 +575,10 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               description:
                 'Overrides the spacing between the action buttons and the close button.',
             },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
+            ...getLogicalPropsTable(undefined, '', {
+              paddingBlock: ['horizontal: space040', 'vertical: space040'],
+              paddingInline: ['horizontal: space040', 'vertical: space040'],
+            }),
           ],
         },
       ],

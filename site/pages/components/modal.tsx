@@ -18,8 +18,8 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {ModalProps} from '../../../src/modal/types';
 import {
+  getLogicalPropsTable,
   logicalPaddingOverrideProps,
-  prefixLogicalProps,
 } from '../../components/component-api/common-logical-props';
 
 const modalContent = (
@@ -558,21 +558,15 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the maxHeight property of the modal pane',
             },
-            ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
-            {
-              attribute: 'header.stylePreset',
-              type: 'MQ<string>',
-              default: 'spaceInsetSquish040',
-              description:
-                'If provided, overrides the padding space set in the modal header content container',
-            },
-            {
-              attribute: 'content.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInset050',
-              description:
-                'If provided, overrides the padding space set in the modal content container',
-            },
+            ...getLogicalPropsTable(logicalPaddingOverrideProps, 'panel', {}),
+            ...getLogicalPropsTable(undefined, 'header', {
+              paddingInline: 'space050',
+              paddingBlock: 'space040',
+            }),
+            ...getLogicalPropsTable(undefined, 'content', {
+              paddingInline: 'space050',
+              paddingBlock: 'space050',
+            }),
             {
               attribute: 'closeButton.stylePreset',
               type: 'MQ<string>',
@@ -580,13 +574,10 @@ const ModalComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the style preset applied to the modal close button',
             },
-            {
-              attribute: 'closeButton.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInset020',
-              description:
-                'If provided, overrides the padding space set in the modal close button',
-            },
+            ...getLogicalPropsTable(undefined, 'closeButton', {
+              paddingInline: 'space020',
+              paddingBlock: 'space020',
+            }),
             {
               attribute: 'zIndex',
               type: 'number',
