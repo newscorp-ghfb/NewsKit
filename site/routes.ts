@@ -699,6 +699,14 @@ export const routes = [
               'Images are a type of visual media. They can appear at fixed sizes, percentages, and aspect ratios.',
             illustration: 'components/image-illustration',
           },
+          {
+            title: 'Video Player',
+            page: true,
+            id: '/components/video-player',
+            description:
+              'The video player component allows a user to play and control video content.',
+            illustration: 'components/video-player/hero',
+          },
         ],
       },
       {

@@ -172,16 +172,19 @@ export const componentDefaults = {
     medium: {
       typographyPreset: 'utilityButton020',
       stylePreset: 'flagBrand',
-      spaceInset: 'spaceInsetSquish010',
+      paddingInline: 'space020',
+      paddingBlock: 'space010',
     },
     large: {
       typographyPreset: 'utilityButton030',
       stylePreset: 'flagBrand',
-      spaceInset: 'spaceInsetSquish010',
+      paddingInline: 'space020',
+      paddingBlock: 'space010',
     },
   },
   inlineMessage: {
-    spaceInset: 'spaceInset040',
+    paddingInline: 'space040',
+    paddingBlock: 'space040',
     width: '100%',
     content: {
       message: {
@@ -205,7 +208,8 @@ export const componentDefaults = {
   },
   tab: {
     small: {
-      spaceInset: 'spaceInsetStretch040',
+      paddingBlock: 'space050',
+      paddingInline: 'space040',
     },
   },
   tabs: {

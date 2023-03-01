@@ -406,7 +406,7 @@ exports[`slider labels should render horizontal labels 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #6A6A6A;
+  color: #3B3B3B;
   margin-right: 12px;
 }
 
@@ -423,7 +423,7 @@ exports[`slider labels should render horizontal labels 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
 .emotion-1:disabled {
@@ -441,7 +441,7 @@ exports[`slider labels should render horizontal labels 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #6A6A6A;
+  color: #3B3B3B;
   margin-left: 12px;
 }
 
@@ -458,7 +458,7 @@ exports[`slider labels should render horizontal labels 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
@@ -526,7 +526,7 @@ exports[`slider labels should render max label 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #6A6A6A;
+  color: #3B3B3B;
   margin-left: 12px;
 }
 
@@ -543,7 +543,7 @@ exports[`slider labels should render max label 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
 .emotion-1:disabled {
@@ -605,7 +605,7 @@ exports[`slider labels should render min label 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #6A6A6A;
+  color: #3B3B3B;
   margin-right: 12px;
 }
 
@@ -622,7 +622,7 @@ exports[`slider labels should render min label 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
 .emotion-1:disabled {
@@ -683,7 +683,7 @@ exports[`slider labels should render vertical labels 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #6A6A6A;
+  color: #3B3B3B;
   margin-top: 12px;
 }
 
@@ -700,7 +700,7 @@ exports[`slider labels should render vertical labels 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
 .emotion-1:disabled {
@@ -718,7 +718,7 @@ exports[`slider labels should render vertical labels 1`] = `
   font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  color: #6A6A6A;
+  color: #3B3B3B;
   margin-bottom: 12px;
 }
 
@@ -735,7 +735,7 @@ exports[`slider labels should render vertical labels 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #6A6A6A;
+  fill: #3B3B3B;
 }
 
 .emotion-2:disabled {
@@ -805,7 +805,7 @@ exports[`slider react-range Range function props renderThumb should render custo
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -955,7 +955,7 @@ exports[`slider react-range Range function props renderThumb should render custo
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1148,7 +1148,7 @@ exports[`slider react-range Range function props renderThumb should render dragg
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1297,7 +1297,7 @@ exports[`slider react-range Range function props renderThumb should render multi
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1446,7 +1446,7 @@ exports[`slider react-range Range function props renderThumb should render range
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1632,7 +1632,7 @@ exports[`slider react-range Range function props renderThumb should render slide
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1822,7 +1822,7 @@ exports[`slider react-range Range function props renderThumb should render undra
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -1971,7 +1971,7 @@ exports[`slider react-range Range function props renderThumb should render verti
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -2135,8 +2135,8 @@ exports[`slider react-range Range function props renderTrack should render defau
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -2170,8 +2170,8 @@ exports[`slider react-range Range function props renderTrack should render disab
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -2202,8 +2202,8 @@ exports[`slider react-range Range function props renderTrack should render disab
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -2235,8 +2235,8 @@ exports[`slider react-range Range function props renderTrack should render grabb
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -2270,8 +2270,8 @@ exports[`slider react-range Range function props renderTrack should render multi
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2 - 12px/2) calc(32px/2);
-  height: 12px;
+  margin: calc(32px/2 - 8px/2) calc(32px/2);
+  height: 8px;
   width: 100%;
 }
 
@@ -2305,9 +2305,9 @@ exports[`slider react-range Range function props renderTrack should render verti
   align-self: center;
   background-color: #E2E2E2;
   border-radius: 20rem;
-  margin: calc(32px/2) calc(32px/2 - 12px/2);
+  margin: calc(32px/2) calc(32px/2 - 8px/2);
   height: 100%;
-  width: 12px;
+  width: 8px;
 }
 
 .emotion-0:disabled {

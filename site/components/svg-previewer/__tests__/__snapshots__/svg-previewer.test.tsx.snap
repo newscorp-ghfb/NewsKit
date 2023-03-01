@@ -129,7 +129,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-6 {
@@ -139,7 +140,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   text-overflow: ellipsis;
   color: #2E3F54;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -646,7 +647,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   text-overflow: ellipsis;
   color: #5A6A79;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -671,9 +672,10 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -791,9 +793,10 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -826,7 +829,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-41:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-41:disabled {
@@ -1518,7 +1521,8 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   justify-content: space-between;
   overflow: hidden;
   cursor: not-allowed;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-6 {
@@ -1528,7 +1532,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   text-overflow: ellipsis;
   color: inherit;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -1922,9 +1926,10 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2042,9 +2047,10 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2077,7 +2083,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-30:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-30:disabled {
@@ -2490,7 +2496,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-6 {
@@ -2500,7 +2507,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   text-overflow: ellipsis;
   color: #5A6A79;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -2995,9 +3002,10 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3115,9 +3123,10 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3150,7 +3159,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-40:disabled {

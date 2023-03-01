@@ -403,7 +403,7 @@ export const StoryTooltipOverrides = () => (
           minWidth: '50px',
           maxWidth: '150px',
           zIndex: 70,
-          distance: 'space080',
+          offset: 'space080',
           panel: {
             paddingBlock: 'space040',
             paddingInline: 'space080',
@@ -631,26 +631,26 @@ export const StoryTooltipNoPointer = () => (
       </Button>
     </Tooltip>
     <StorybookSubHeading>
-      Tooltip - no pointer distance (increased)
+      Tooltip - no pointer offset (increased)
     </StorybookSubHeading>
     <Tooltip
       content="Tooltip content"
       placement="right"
       hidePointer
-      overrides={{distance: 'space080'}}
+      overrides={{offset: 'space080'}}
     >
       <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button
       </Button>
     </Tooltip>
     <StorybookSubHeading>
-      Tooltip - no pointer distance (zero)
+      Tooltip - no pointer offset (zero)
     </StorybookSubHeading>
     <Tooltip
       content="Tooltip content"
       placement="right"
       hidePointer
-      overrides={{distance: 'space000'}}
+      overrides={{offset: 'space000'}}
     >
       <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
         Button

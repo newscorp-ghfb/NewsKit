@@ -21,11 +21,12 @@ exports[`IconButton renders Icon Button in loading State 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -138,11 +139,12 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -175,7 +177,7 @@ exports[`IconButton renders Icon Button with fallback formatting 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -289,11 +291,12 @@ exports[`IconButton renders Large Icon Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
   width: 64px;
   min-width: 120px;
   height: 64px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -326,7 +329,7 @@ exports[`IconButton renders Large Icon Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -441,11 +444,12 @@ exports[`IconButton renders Medium Icon Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -478,7 +482,7 @@ exports[`IconButton renders Medium Icon Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -593,11 +597,12 @@ exports[`IconButton renders Small Icon Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -630,7 +635,7 @@ exports[`IconButton renders Small Icon Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -745,11 +750,12 @@ exports[`IconButton renders icon button link when href passed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -782,7 +788,7 @@ exports[`IconButton renders icon button link when href passed 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -897,13 +903,13 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
   margin-block: 30px;
-  padding-inline: 20px;
+  padding-inline: 30px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -936,7 +942,7 @@ exports[`IconButton renders icon button with logical prop overrides 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -1051,11 +1057,12 @@ exports[`IconButton renders with different style preset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1093,7 +1100,7 @@ exports[`IconButton renders with different style preset 1`] = `
 
 .emotion-0:active:not(:disabled) {
   background-color: #D5E0FC;
-  border-color: #14328D;
+  border-color: #12387A;
 }
 
 .emotion-0:disabled {

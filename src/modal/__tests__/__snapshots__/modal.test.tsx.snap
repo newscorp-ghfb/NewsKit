@@ -316,13 +316,14 @@ exports[`Modal renders default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -333,7 +334,8 @@ exports[`Modal renders default 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -342,7 +344,8 @@ exports[`Modal renders default 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -365,11 +368,12 @@ exports[`Modal renders default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -880,13 +884,14 @@ exports[`Modal renders inline 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -897,7 +902,8 @@ exports[`Modal renders inline 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -906,7 +912,8 @@ exports[`Modal renders inline 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -929,11 +936,12 @@ exports[`Modal renders inline 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1413,7 +1421,8 @@ exports[`Modal renders modal with overrides 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 32px;
+  padding-inline: 32px;
+  padding-block: 32px;
 }
 
 .emotion-5 {
@@ -1426,7 +1435,8 @@ exports[`Modal renders modal with overrides 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -1449,11 +1459,12 @@ exports[`Modal renders modal with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1984,13 +1995,14 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-6 {
@@ -2001,7 +2013,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-9 {
@@ -2010,7 +2023,8 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -2033,11 +2047,12 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2577,20 +2592,22 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-6 {
@@ -2599,7 +2616,8 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -2622,11 +2640,12 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3128,7 +3147,8 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -3137,7 +3157,8 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -3160,11 +3181,12 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3676,13 +3698,14 @@ exports[`Modal renders with different closePosition 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -3693,7 +3716,8 @@ exports[`Modal renders with different closePosition 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -3702,7 +3726,8 @@ exports[`Modal renders with different closePosition 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -3725,11 +3750,12 @@ exports[`Modal renders with different closePosition 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3928,7 +3954,7 @@ exports[`Modal renders with different closePosition 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Modal renders with logical padding props 1`] = `
+exports[`Modal renders with logical props 1`] = `
 <DocumentFragment>
   <div
     aria-hidden="true"
@@ -4054,7 +4080,6 @@ exports[`Modal renders with logical padding props 1`] = `
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   min-height: 15vh;
   padding-inline: 15px;
-  padding-block: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -4246,13 +4271,14 @@ exports[`Modal renders with logical padding props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 10px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -4263,7 +4289,8 @@ exports[`Modal renders with logical padding props 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 10px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -4272,7 +4299,8 @@ exports[`Modal renders with logical padding props 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 10px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -4295,11 +4323,12 @@ exports[`Modal renders with logical padding props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 10px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4814,13 +4843,14 @@ exports[`Modal renders without close button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -4831,7 +4861,8 @@ exports[`Modal renders without close button 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 <div
@@ -5213,7 +5244,8 @@ exports[`Modal renders without header 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -5226,7 +5258,8 @@ exports[`Modal renders without header 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -5249,11 +5282,12 @@ exports[`Modal renders without header 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5744,7 +5778,8 @@ exports[`Modal renders without header and close 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -6041,13 +6076,14 @@ exports[`Modal renders without overlay 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -6058,7 +6094,8 @@ exports[`Modal renders without overlay 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -6067,7 +6104,8 @@ exports[`Modal renders without overlay 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6090,11 +6128,12 @@ exports[`Modal renders without overlay 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6603,7 +6642,8 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -6612,7 +6652,8 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6635,11 +6676,12 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
