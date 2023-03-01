@@ -252,7 +252,7 @@ exports[`Foundation Page Template renders with feature card 1`] = `
   --color-illustrationAnatomyBorder010: #97D0D6;
   --color-illustrationAnatomyBorder020: #005B65;
   --overlayGradientInverseVertical: linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%);
-  --overlayGradientBaseVertical: linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%);
+  --overlayGradientBaseVertical: linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%);
   --overlayGradientInverseHorizontal: linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%);
   --overlayGradientBaseHorizontal: linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%);
   --overlayGradientFromBottom: linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%);
@@ -732,7 +732,7 @@ exports[`Foundation Page Template renders with mandatory props only 1`] = `
   --color-illustrationAnatomyBorder010: #97D0D6;
   --color-illustrationAnatomyBorder020: #005B65;
   --overlayGradientInverseVertical: linear-gradient(180deg,  rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%);
-  --overlayGradientBaseVertical: linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%);
+  --overlayGradientBaseVertical: linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%);
   --overlayGradientInverseHorizontal: linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%);
   --overlayGradientBaseHorizontal: linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%);
   --overlayGradientFromBottom: linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%);
