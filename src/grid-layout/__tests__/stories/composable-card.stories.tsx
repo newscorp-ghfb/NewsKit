@@ -883,10 +883,10 @@ export const StoryLogicalProps = () => (
 );
 StoryLogicalProps.storyName = 'Logical props';
 
-export const StoryStylingOverrides = () => (
+export const StoryOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <Grid>
-      <StorybookGridCase title="Card and Flag colours">
+      <StorybookGridCase title="Style preset - Card and Flag colours">
         <Card
           overrides={{
             maxWidth: '250px',
@@ -918,7 +918,7 @@ export const StoryStylingOverrides = () => (
           </CardActions>
         </Card>
       </StorybookGridCase>
-      <StorybookGridCase title="Headline, Paragraph, CardActions and Tag colours">
+      <StorybookGridCase title="Style preset - Headline, Paragraph, CardActions and Tag colours">
         <Card
           overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
           areas={`
@@ -964,42 +964,36 @@ export const StoryStylingOverrides = () => (
           </CardActions>
         </Card>
       </StorybookGridCase>
+      <StorybookGridCase title="Typography preset - Headline">
+        <Card
+          overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
+          areas={`
+            media
+            content
+            actions
+          `}
+        >
+          <CardContent overrides={{paddingBlock: 'space040'}}>
+            <div>
+              <Flag>Flag</Flag>
+            </div>
+            <H
+              overrides={{
+                marginBlockStart: 'space020',
+                typographyPreset: 'editorialHeadline070',
+              }}
+            />
+            <P overrides={{marginBlockStart: 'space020'}} />
+          </CardContent>
+          <CardMedia src="/placeholder-3x2.png" />
+          <CardActions marginBlock="space040">
+            <Tag href="http://example.com" size="medium">
+              Tag
+            </Tag>
+          </CardActions>
+        </Card>
+      </StorybookGridCase>
     </Grid>
-  </StorybookPage>
-);
-StoryStylingOverrides.storyName = 'Styling overrides';
-
-export const StoryOverrides = () => (
-  <StorybookPage columns="auto">
-    <StorybookCase title="Typography preset - headline">
-      <Card
-        overrides={{maxWidth: '250px', stylePreset: 'cardComposable'}}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent overrides={{paddingBlock: 'space040'}}>
-          <div>
-            <Flag>Flag</Flag>
-          </div>
-          <H
-            overrides={{
-              marginBlockStart: 'space020',
-              typographyPreset: 'editorialHeadline070',
-            }}
-          />
-          <P overrides={{marginBlockStart: 'space020'}} />
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardActions marginBlock="space040">
-          <Tag href="http://example.com" size="medium">
-            Tag
-          </Tag>
-        </CardActions>
-      </Card>
-    </StorybookCase>
   </StorybookPage>
 );
 StoryOverrides.storyName = 'Overrides';
