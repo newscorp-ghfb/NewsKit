@@ -670,6 +670,7 @@ export const StoryLayout = () => (
       <Card
         overrides={{
           paddingBlock: 'space040',
+          maxWidth: '972px',
         }}
         areas={`
         media content
@@ -696,7 +697,7 @@ export const StoryLayout = () => (
     </StorybookCase>
     <StorybookCase title="Horizontal-inverse">
       <Card
-        overrides={{paddingBlock: 'space040'}}
+        overrides={{paddingBlock: 'space040', maxWidth: '972px'}}
         areas={`
         content media
         actions media
