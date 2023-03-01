@@ -75,6 +75,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
             <FooterMenu>
               <FooterLink>
                 <Link
+                  type="standalone"
                   href="https://www.newscareers.co.uk/"
                   target="_blank"
                   external
@@ -85,6 +86,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
               </FooterLink>
               <FooterLink>
                 <Link
+                  type="standalone"
                   href="https://medium.com/newskit-design-system"
                   target="_blank"
                   external
@@ -105,6 +107,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
               </FooterLink>
               <FooterLink>
                 <Link
+                  type="standalone"
                   href="/help/terms-and-conditions"
                   overrides={linkOverrides}
                 >

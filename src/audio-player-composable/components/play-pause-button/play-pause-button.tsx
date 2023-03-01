@@ -49,7 +49,7 @@ const ThemelessAudioPlayerPlayPauseButton = React.forwardRef<
     <IconButton
       ref={ref}
       data-testid="audio-player-play-pause-button"
-      size="large"
+      size="medium"
       overrides={overrides}
       {...propsFromContext}
     />

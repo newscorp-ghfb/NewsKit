@@ -5,7 +5,10 @@ import {AssistiveTextProps} from './types';
 import defaults from './defaults';
 import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
-import {omitLogicalPropsFromOverrides} from '../utils/logical-properties';
+import {
+  omitLogicalMarginPropsFromOverrides,
+  omitLogicalPaddingPropsFromOverrides,
+} from '../utils/logical-properties';
 
 const ThemelessAssistiveText = React.forwardRef<
   HTMLParagraphElement,
@@ -23,11 +26,13 @@ const ThemelessAssistiveText = React.forwardRef<
     },
     ref,
   ) => {
-    const nonLogicalOverrides = omitLogicalPropsFromOverrides(overrides);
+    const enhancersOverrides = omitLogicalPaddingPropsFromOverrides(overrides);
+    const textBlockOverrides = omitLogicalMarginPropsFromOverrides(overrides);
+
     return (
       <WithEnhancers
         componentDefaultsPath={`assistiveText.${size}`}
-        overrides={overrides}
+        overrides={enhancersOverrides}
         state={state}
         startEnhancer={startEnhancer}
         endEnhancer={endEnhancer}
@@ -39,10 +44,10 @@ const ThemelessAssistiveText = React.forwardRef<
             ref={ref}
             aria-disabled={state === 'disabled' ? true : undefined}
             size={size}
-            overrides={nonLogicalOverrides}
             state={state}
             role={state === 'invalid' ? 'alert' : undefined}
             aria-live={state === 'invalid' ? 'polite' : undefined}
+            {...textBlockOverrides}
             {...props}
           >
             {children}

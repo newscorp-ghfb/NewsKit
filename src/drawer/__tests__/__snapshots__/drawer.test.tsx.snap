@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Drawer focus management when focus trap is disabled render drawer with logical padding overrides 1`] = `
+exports[`Drawer focus management when focus trap is disabled render drawer with logical props overrides 1`] = `
 <DocumentFragment>
   <div
     aria-hidden="true"
@@ -101,6 +101,7 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   border-radius: 0;
   background-color: #FFFFFF;
   box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
+  margin-block: 20px;
   padding-inline: 30px;
 }
 
@@ -281,13 +282,14 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 10px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -298,7 +300,8 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 10px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -307,7 +310,8 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 10px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -330,11 +334,12 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 10px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -806,13 +811,14 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -823,7 +829,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -832,7 +839,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -855,535 +863,12 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: auto;
-  min-width: auto;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 50%;
-  color: #3B3B3B;
-  cursor: pointer;
-}
-
-.emotion-8 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-8 svg {
-  fill: #3B3B3B;
-}
-
-.emotion-8:hover:not(:disabled) {
-  background-color: #F1F1F1;
-}
-
-.emotion-8:active:not(:disabled) {
-  background-color: #E2E2E2;
-}
-
-.emotion-8:disabled {
-  background-color: transparent;
-  color: #ABABAB;
-}
-
-.emotion-8:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-8:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-8:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-8 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-8 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-9 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
-  fill: #3B3B3B;
-  vertical-align: unset;
-  display: inline-block;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-9 {
-    transition-property: fill;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-9 {
-    transition-property: fill;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-<div>
-    <div>
-      <div
-        class="emotion-0 nk-overlay-appear-done nk-overlay-enter-done"
-        data-testid="overlay"
-      />
-      <div
-        data-focus-guard="true"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-        tabindex="0"
-      />
-      <div
-        data-focus-guard="true"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-        tabindex="1"
-      />
-      <div
-        data-focus-lock-disabled="false"
-      >
-        <div
-          aria-hidden="false"
-          aria-modal="true"
-          class="nk-drawer-enter-done emotion-1 nk-drawer-appear-done"
-          data-testid="inlineDrawer"
-          role="dialog"
-        >
-          <div
-            class="emotion-2"
-          />
-          <div
-            class="emotion-3"
-          >
-            <p
-              class="emotion-4"
-            >
-              Drawer header content
-            </p>
-          </div>
-          <div
-            class="emotion-5"
-            data-testid="dialog-content"
-          >
-            <p
-              class="emotion-4"
-            >
-              Drawer body content
-            </p>
-          </div>
-          <div
-            class="emotion-7"
-          >
-            <button
-              aria-label="close"
-              class="emotion-8"
-              data-testid="button"
-              type="button"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-9 emotion-10"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        data-focus-guard="true"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-        tabindex="0"
-      />
-    </div>
-  </div>
-  <div
-    aria-hidden="true"
-    class="nk-layer-organizer"
-    data-aria-hidden="true"
-  />
-</DocumentFragment>
-`;
-
-exports[`Drawer focus management when focus trap is disabled render inline-drawer with logical props overrides 1`] = `
-<DocumentFragment>
-  .emotion-0 {
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  cursor: pointer;
-  background-color: rgba(0,0,0,0.8);
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-0 {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter-active {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 200ms;
-  }
-
-  .emotion-0.nk-overlay-enter-done {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit-active {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 200ms;
-  }
-
-  .emotion-0.nk-overlay-exit-done {
-    opacity: 0;
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-0 {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter {
-    opacity: 0;
-  }
-
-  .emotion-0.nk-overlay-enter-active {
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0ms;
-  }
-
-  .emotion-0.nk-overlay-enter-done {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit {
-    opacity: 1;
-  }
-
-  .emotion-0.nk-overlay-exit-active {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0ms;
-  }
-
-  .emotion-0.nk-overlay-exit-done {
-    opacity: 0;
-  }
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  position: absolute;
-  display: grid;
-  grid-template-areas: 'close header' 'content content';
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  max-width: auto;
-  min-width: 20px;
-  height: 100%;
-  border-radius: 0;
-  background-color: #FFFFFF;
-  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
-  margin-block: 20px;
-  padding-inline: 30px;
-}
-
-@media screen and (max-width: 479px) {
-  .emotion-1 {
-    width: 305px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .emotion-1 {
-    width: 309px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .emotion-1 {
-    width: 310px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .emotion-1 {
-    width: 333px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-1 {
-    width: 354px;
-  }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-1 {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-
-  .emotion-1.nk-drawer-enter {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-
-  .emotion-1.nk-drawer-enter-active {
-    opacity: 1;
-    transition-property: opacity,transform;
-    transition-duration: 200ms,200ms;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
-  }
-
-  .emotion-1.nk-drawer-enter-done {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .emotion-1.nk-drawer-exit {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .emotion-1.nk-drawer-exit-active {
-    opacity: 0;
-    transition-property: opacity,transform;
-    transition-duration: 200ms,200ms;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-1.nk-drawer-exit-done {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-1 {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-
-  .emotion-1.nk-drawer-enter {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-
-  .emotion-1.nk-drawer-enter-active {
-    opacity: 1;
-    transition-property: opacity,transform;
-    transition-duration: 0ms;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
-  }
-
-  .emotion-1.nk-drawer-enter-done {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .emotion-1.nk-drawer-exit {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-
-  .emotion-1.nk-drawer-exit-active {
-    opacity: 0;
-    transition-property: opacity,transform;
-    transition-duration: 0ms;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-
-  .emotion-1.nk-drawer-exit-done {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-.emotion-2 {
-  color: #3B3B3B;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.emotion-3 {
-  box-sizing: border-box;
-  min-height: 48px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: header;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px 24px;
-  color: #3B3B3B;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0;
-}
-
-.emotion-4 {
-  margin: 0;
-}
-
-.emotion-5 {
-  box-sizing: border-box;
-  grid-area: content;
-  overflow: hidden auto;
-  padding: 24px;
-}
-
-.emotion-7 {
-  grid-area: close;
-  box-sizing: border-box;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  padding: 8px;
-  padding-right: 0;
-}
-
-.emotion-8 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 8px;
-  width: 48px;
-  min-width: 80px;
-  height: 48px;
-  min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1852,13 +1337,14 @@ exports[`Drawer render inline-drawer 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -1869,7 +1355,8 @@ exports[`Drawer render inline-drawer 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -1878,7 +1365,8 @@ exports[`Drawer render inline-drawer 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -1901,11 +1389,12 @@ exports[`Drawer render inline-drawer 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2289,7 +1778,8 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-3 {
@@ -2302,7 +1792,8 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -2325,11 +1816,12 @@ exports[`Drawer renders closed drawer visually hidden but remains in the DOM tre
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2791,13 +2283,14 @@ exports[`Drawer renders default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -2808,7 +2301,8 @@ exports[`Drawer renders default 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -2817,7 +2311,8 @@ exports[`Drawer renders default 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -2840,11 +2335,12 @@ exports[`Drawer renders default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3285,7 +2781,8 @@ exports[`Drawer renders drawer with overrides 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 32px;
+  padding-inline: 32px;
+  padding-block: 32px;
 }
 
 .emotion-4 {
@@ -3298,7 +2795,8 @@ exports[`Drawer renders drawer with overrides 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -3321,11 +2819,12 @@ exports[`Drawer renders drawer with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3779,13 +3278,14 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
@@ -3796,7 +3296,8 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-8 {
@@ -3805,7 +3306,8 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -3828,11 +3330,12 @@ exports[`Drawer renders screen reader message when focus trapping disabled 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4333,20 +3836,22 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -4355,7 +3860,8 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -4378,11 +3884,12 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4845,7 +4352,8 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -4854,7 +4362,8 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -4877,11 +4386,12 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5354,13 +4864,14 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -5371,7 +4882,8 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -5380,7 +4892,8 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -5403,11 +4916,12 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5883,13 +5397,14 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -5900,7 +5415,8 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -5909,7 +5425,8 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -5932,11 +5449,12 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6412,13 +5930,14 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -6429,7 +5948,8 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -6438,7 +5958,8 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6461,11 +5982,12 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6941,13 +6463,14 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -6958,7 +6481,8 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -6967,7 +6491,8 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -6990,11 +6515,12 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7470,13 +6996,14 @@ exports[`Drawer renders without close button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -7487,7 +7014,8 @@ exports[`Drawer renders without close button 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 <div
@@ -7830,7 +7358,8 @@ exports[`Drawer renders without header 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -7843,7 +7372,8 @@ exports[`Drawer renders without header 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -7866,11 +7396,12 @@ exports[`Drawer renders without header 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8322,7 +7853,8 @@ exports[`Drawer renders without header and close 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-3 {
@@ -8586,13 +8118,14 @@ exports[`Drawer renders without overlay 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-3 {
@@ -8603,7 +8136,8 @@ exports[`Drawer renders without overlay 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-6 {
@@ -8612,7 +8146,8 @@ exports[`Drawer renders without overlay 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -8635,11 +8170,12 @@ exports[`Drawer renders without overlay 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9109,7 +8645,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 {
@@ -9118,7 +8655,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -9141,11 +8679,12 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9525,7 +9064,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-3 {
@@ -9534,7 +9074,8 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -9557,11 +9098,12 @@ exports[`Drawer toggle aria-hidden to content outside dialog 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

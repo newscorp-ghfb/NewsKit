@@ -11,7 +11,8 @@ export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
           ...overrides,
           stylePreset: 'baseCardInteractive',
           teaserContainer: {
-            spaceInset: 'space050',
+            paddingInline: 'space050',
+            paddingBlock: 'space050',
           },
           mediaContainer: {
             spaceInline: 'space000',
@@ -21,7 +22,8 @@ export const BaseCard = React.forwardRef<HTMLDivElement, BaseCardProps>(
           ...overrides,
           stylePreset: 'baseCardNonInteractive',
           teaserContainer: {
-            spaceInset: 'spaceInsetStretch010',
+            paddingInline: 'space010',
+            paddingBlock: 'space020',
           },
           mediaContainer: {
             spaceInline: 'space040',

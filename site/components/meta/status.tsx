@@ -14,7 +14,7 @@ export const Status: React.FC<{status?: MetaStatus}> = ({status}) =>
           stylePreset: MetaFlagStylePresets[status],
         }}
       >
-        <Block spaceInset="space010">
+        <Block paddingBlock="space010" paddingInline="space010">
           <TextBlock typographyPreset="utilityLabel010">{status}</TextBlock>
         </Block>
       </Flag>

@@ -40,13 +40,13 @@ exports[`Link does not render the external icon even if the href is external 1`]
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -165,13 +165,13 @@ exports[`Link does not render the external icon if the href is internal 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -290,13 +290,13 @@ exports[`Link renders as expected in default state 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -415,13 +415,13 @@ exports[`Link renders as expected in textOnly state 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -508,13 +508,13 @@ exports[`Link renders the external icon even if the href is internal 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -701,13 +701,13 @@ exports[`Link renders the external icon if the href is external 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -828,13 +828,13 @@ exports[`Link renders with logical props overrides 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:visited:not(:disabled) {
@@ -937,7 +937,7 @@ exports[`Link renders with overrides 1`] = `
 }
 
 .emotion-0:visited:not(:disabled) {
-  color: #820000;
+  color: #7D0000;
 }
 
 .emotion-0:hover:not(:disabled) {
@@ -1030,13 +1030,13 @@ exports[`LinkStandalone renders as expected in default state 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1156,13 +1156,13 @@ exports[`LinkStandalone renders with logical props overrides 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-0:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-0:focus-visible:not(:disabled) {

@@ -293,13 +293,14 @@ describe('Card', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('renders actions section with overrides for spaceInset', () => {
+  test('renders actions section with overrides for padding', () => {
     const fragment = renderToFragmentWithTheme(Card, {
       actions: actionsComponent,
       children: cardBody,
       overrides: {
         actionsContainer: {
-          spaceInset: 'spaceInsetSquish030',
+          paddingInline: 'space040',
+          paddingBlock: 'space030',
         },
       },
     });
@@ -324,11 +325,13 @@ describe('Card', () => {
           },
           teaserContainer: {
             stylePreset: 'cardContainerTeaserMock',
-            spaceInset: 'spaceInsetSquish010',
+            paddingBlock: 'space010',
+            paddingInline: 'space020',
           },
           actionsContainer: {
             stylePreset: 'cardContainerActionsMock',
-            spaceInset: 'spaceInsetSquish010',
+            paddingBlock: 'space010',
+            paddingInline: 'space020',
             minHeight: 'sizing090',
           },
         },
@@ -484,20 +487,32 @@ describe('CardInset', () => {
           },
           teaserContainer: {
             stylePreset: 'cardContainerTeaserMock',
-            spaceInset: {
-              xs: 'spaceInset050',
-              sm: 'spaceInset050',
-              md: 'spaceInset060',
-              lg: 'spaceInset060',
+            paddingInline: {
+              xs: 'space050',
+              sm: 'space050',
+              md: 'space060',
+              lg: 'space060',
+            },
+            paddingBlock: {
+              xs: 'space050',
+              sm: 'space050',
+              md: 'space060',
+              lg: 'space060',
             },
           },
           actionsContainer: {
             stylePreset: 'cardContainerActionsMock',
-            spaceInset: {
-              xs: 'spaceInsetSquish040',
-              sm: 'spaceInsetSquish040',
-              md: 'spaceInsetSquish050',
-              lg: 'spaceInsetSquish050',
+            paddingInline: {
+              xs: 'space050',
+              sm: 'space050',
+              md: 'space060',
+              lg: 'space060',
+            },
+            paddingBlock: {
+              xs: 'space040',
+              sm: 'space040',
+              md: 'space050',
+              lg: 'space050',
             },
           },
         },
