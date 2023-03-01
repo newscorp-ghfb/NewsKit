@@ -2,7 +2,6 @@
 
 exports[`index exports all expected functions and components are exported 1`] = `
 Array [
-  "A",
   "Accordion",
   "AccordionGroup",
   "AspectRatio",
@@ -27,7 +26,6 @@ Array [
   "ButtonsContainer",
   "Byline",
   "Caption",
-  "CaptionInset",
   "Card",
   "CardInset",
   "Cell",
@@ -83,7 +81,6 @@ Array [
   "Label",
   "Layer",
   "LayerOrganizer",
-  "Link",
   "LinkInline",
   "LinkStandalone",
   "MediaQueryProvider",

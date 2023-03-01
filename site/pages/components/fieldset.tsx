@@ -207,12 +207,6 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
-              attribute: 'spaceInset',
-              type: 'MQ<string>',
-              description:
-                'If provided, overrides the inset space (padding) applied to the fieldset',
-            },
-            {
               attribute: 'stylePreset',
               type: 'MQ<string>',
               description:

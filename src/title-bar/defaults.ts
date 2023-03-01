@@ -1,9 +1,13 @@
 export default {
   titleBar: {
     stylePreset: 'titleBar',
-    spaceInset: {
-      xs: 'spaceInsetSquish030',
-      lg: 'spaceInsetSquish040',
+    paddingInline: {
+      xs: 'space030',
+      lg: 'space040',
+    },
+    paddingBlock: {
+      xs: 'space030',
+      lg: 'space040',
     },
     heading: {
       typographyPreset: {

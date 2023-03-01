@@ -145,12 +145,14 @@ export const StoryVideoPlayerSeekBarOverrides = () => (
           },
           currentDuration: {
             stylePreset: 'customCurrentDuration',
-            spaceInset: 'spaceInset030',
+            paddingInline: 'space030',
+            paddingBlock: 'space030',
             typographyPreset: 'utilityMeta020',
           },
           seekPosition: {
             stylePreset: 'customSeekPosition',
-            spaceInset: 'spaceInset030',
+            paddingInline: 'space030',
+            paddingBlock: 'space030',
             typographyPreset: 'utilityMeta020',
           },
         },
@@ -222,9 +224,13 @@ export const StoryVideoPlayerDockTextOverrides = () => (
       overrides={{
         dockText: {
           stylePreset: 'customDockText',
-          spaceInset: {
-            xs: 'spaceInset030',
-            md: 'spaceInset040',
+          paddingInline: {
+            xs: 'space030',
+            md: 'space040',
+          },
+          paddingBlock: {
+            xs: 'space030',
+            md: 'space040',
           },
           title: {
             stylePreset: 'inkContrast',
@@ -257,7 +263,8 @@ export const StoryVideoPlayerMiniCardOverlayOverrides = () => (
       overrides={{
         miniCardOverlay: {
           stylePreset: 'customMiniCardOverlay',
-          spaceInset: 'spaceInsetSquish030',
+          paddingBlock: 'space030',
+          paddingInline: 'space040',
           countdown: {
             typographyPreset: 'utilityMeta020',
             stylePreset: 'inkContrast',
@@ -268,7 +275,8 @@ export const StoryVideoPlayerMiniCardOverlayOverrides = () => (
             stylePreset: 'inkContrast',
           },
           closeButton: {
-            spaceInset: 'spaceInset020',
+            paddingBlock: 'space020',
+            paddingInline: 'space020',
           },
         },
       }}

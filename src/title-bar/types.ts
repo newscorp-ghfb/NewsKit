@@ -3,10 +3,6 @@ import {LogicalProps} from '../utils/logical-properties';
 import {MQ, MQPartial} from '../utils/style';
 
 export type TitleBarOverrides = {
-  /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `paddingBlock` and `paddingInline` instead.
-   */
-  spaceInset?: MQ<string>;
   stylePreset?: MQ<string>;
   heading?: {
     stylePreset?: MQ<string>;

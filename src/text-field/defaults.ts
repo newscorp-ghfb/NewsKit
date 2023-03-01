@@ -2,8 +2,9 @@ export default {
   textField: {
     small: {
       stylePreset: 'inputField',
-      spaceInset: 'spaceInset020',
-      minHeight: 'sizing060',
+      paddingInline: 'space020',
+      paddingBlock: 'space020',
+      minHeight: 'sizing070',
       width: '100%',
       typographyPreset: 'utilityBody020',
       spaceStack: 'space020',
@@ -18,10 +19,11 @@ export default {
     },
     medium: {
       stylePreset: 'inputField',
-      spaceInset: 'spaceInset030',
+      paddingInline: 'space030',
+      paddingBlock: 'space030',
       minHeight: 'sizing080',
       width: '100%',
-      typographyPreset: 'utilityBody020',
+      typographyPreset: 'utilityBody030',
       spaceStack: 'space020',
       startEnhancer: {
         iconSize: 'iconSize020',
@@ -34,7 +36,8 @@ export default {
     },
     large: {
       stylePreset: 'inputField',
-      spaceInset: 'spaceInset030',
+      paddingInline: 'space040',
+      paddingBlock: 'space040',
       minHeight: 'sizing090',
       width: '100%',
       typographyPreset: 'utilityBody030',

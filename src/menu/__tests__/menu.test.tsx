@@ -179,7 +179,8 @@ describe('MenuItem', () => {
         minWidth: '10px',
         minHeight: '11px',
         spaceInline: 'space030',
-        spaceInset: 'space030',
+        paddingInline: 'space030',
+        paddingBlock: 'space030',
         iconSize: 'iconSize030',
       },
     };
@@ -347,7 +348,8 @@ describe('MenuGroup', () => {
           typographyPreset: 'utilityHeading020',
           stylePreset: 'inkSubtle',
           spaceInline: 'space060',
-          spaceInset: 'space040',
+          paddingInline: 'space040',
+          paddingBlock: 'space040',
         },
       },
     };
@@ -393,6 +395,24 @@ describe('Menu', () => {
     } with menu items`, () => {
       const props = {
         children: menuItems,
+        vertical: verticalValue,
+      };
+
+      const fragment = renderToFragmentWithTheme(Menu, props);
+      expect(fragment).toMatchSnapshot();
+    });
+    it(`renders ${
+      verticalValue ? 'vertically' : 'horizontally'
+    } with selected menu items`, () => {
+      const props = {
+        children: [
+          <MenuItem key="1" href={href} selected>
+            {menuItemContent}
+          </MenuItem>,
+          <MenuItem key="2" href={href}>
+            {menuItemContent}
+          </MenuItem>,
+        ],
         vertical: verticalValue,
       };
 
@@ -589,7 +609,8 @@ describe('MenuSub', () => {
         minWidth: '10px',
         minHeight: '11px',
         spaceInline: 'space030',
-        spaceInset: 'space030',
+        paddingInline: 'space030',
+        paddingBlock: 'space030',
         iconSize: 'iconSize030',
       },
     };

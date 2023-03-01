@@ -50,7 +50,7 @@ export const StyledSwatchCard = styled.div`
 export const StyledSwatchCardTop = styled.div<ThemeColor>`
   height: ${getSizingFromTheme('sizing100')};
   background: ${({theme, name}) => theme.colors[name]};
-  padding: ${getSpacingFromTheme('spaceInset020')};
+  padding: ${getSpacingFromTheme('space020')};
 `;
 
 export const StyledSwatchCardTopOverlay = styled.div<ThemeColor>`

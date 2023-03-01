@@ -1,3 +1,24 @@
+const smallCommonDefaults = {
+  spaceInline: 'space020',
+  minHeight: 'sizing070',
+  paddingBlock: 'space020',
+  paddingInline: 'space040',
+};
+
+const mediumCommonDefaults = {
+  spaceInline: 'space020',
+  minHeight: 'sizing080',
+  paddingBlock: 'space020',
+  paddingInline: 'space040',
+};
+
+const largeCommonDefaults = {
+  spaceInline: 'space020',
+  minHeight: 'sizing090',
+  paddingBlock: 'space030',
+  paddingInline: 'space050',
+};
+
 export default {
   menu: {
     spaceInline: 'space020',
@@ -13,41 +34,85 @@ export default {
   },
   menuItem: {
     horizontal: {
-      minHeight: 'sizing080',
-      stylePreset: 'menuItemHorizontal',
-      transitionPreset: 'backgroundColorChange',
-      spaceInline: 'space020',
-      spaceInset: 'spaceInsetSquish030',
+      small: {
+        ...smallCommonDefaults,
+        stylePreset: 'menuItemHorizontal',
+        transitionPreset: 'backgroundColorChange',
+      },
+      medium: {
+        ...mediumCommonDefaults,
+        stylePreset: 'menuItemHorizontal',
+        transitionPreset: 'backgroundColorChange',
+      },
+      large: {
+        ...largeCommonDefaults,
+        stylePreset: 'menuItemHorizontal',
+        transitionPreset: 'backgroundColorChange',
+      },
     },
     vertical: {
-      minHeight: 'sizing080',
-      stylePreset: 'menuItemVertical',
-      transitionPreset: 'backgroundColorChange',
-      spaceInline: 'space020',
-      spaceInset: 'spaceInsetSquish030',
+      small: {
+        ...smallCommonDefaults,
+        stylePreset: 'menuItemVertical',
+        transitionPreset: 'backgroundColorChange',
+      },
+      medium: {
+        ...mediumCommonDefaults,
+        stylePreset: 'menuItemVertical',
+        transitionPreset: 'backgroundColorChange',
+      },
+      large: {
+        ...largeCommonDefaults,
+        stylePreset: 'menuItemVertical',
+        transitionPreset: 'backgroundColorChange',
+      },
     },
   },
   menuSubItem: {
     horizontal: {
-      minHeight: 'sizing080',
-      stylePreset: 'menuSubItemHorizontal',
-      spaceInline: 'space020',
-      spaceInset: 'space000',
-      paddingBlock: 'space030',
-      paddingInline: 'space040',
-      list: {
-        stylePreset: 'menuSub',
+      small: {
+        ...smallCommonDefaults,
+        stylePreset: 'menuSubItemHorizontal',
+        list: {
+          stylePreset: 'menuSub',
+        },
+      },
+      medium: {
+        ...mediumCommonDefaults,
+        stylePreset: 'menuSubItemHorizontal',
+        list: {
+          stylePreset: 'menuSub',
+        },
+      },
+      large: {
+        ...largeCommonDefaults,
+        stylePreset: 'menuSubItemHorizontal',
+        list: {
+          stylePreset: 'menuSub',
+        },
       },
     },
     vertical: {
-      minHeight: 'sizing080',
-      stylePreset: 'menuSubItemVertical',
-      spaceInline: 'space020',
-      spaceInset: 'space000',
-      paddingBlock: 'space030',
-      paddingInline: 'space040',
-      list: {
-        stylePreset: 'menuSub',
+      small: {
+        ...smallCommonDefaults,
+        stylePreset: 'menuSubItemVertical',
+        list: {
+          stylePreset: 'menuSub',
+        },
+      },
+      medium: {
+        ...mediumCommonDefaults,
+        stylePreset: 'menuSubItemVertical',
+        list: {
+          stylePreset: 'menuSub',
+        },
+      },
+      large: {
+        ...largeCommonDefaults,
+        stylePreset: 'menuSubItemVertical',
+        list: {
+          stylePreset: 'menuSub',
+        },
       },
     },
   },

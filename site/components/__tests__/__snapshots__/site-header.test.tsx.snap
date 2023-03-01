@@ -99,11 +99,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -487,13 +488,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
@@ -724,10 +725,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -872,8 +874,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -908,25 +911,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   font-family: 'DM Mono',courier;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.4285714285714286;
-  padding: 1px 0px;
+  line-height: 21px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-131::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
 }
 
 .emotion-131::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
 }
 
 .emotion-133 {
@@ -1015,9 +1014,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1148,9 +1147,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1260,10 +1259,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1367,11 +1367,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3154,11 +3155,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3542,13 +3544,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
@@ -3779,10 +3781,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3927,8 +3930,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3963,25 +3967,21 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   font-family: 'DM Mono',courier;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.4285714285714286;
-  padding: 1px 0px;
+  line-height: 21px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-131::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
 }
 
 .emotion-131::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
 }
 
 .emotion-133 {
@@ -4070,9 +4070,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4203,9 +4203,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4315,10 +4315,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4422,11 +4423,12 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6209,11 +6211,12 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6597,13 +6600,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
@@ -6834,10 +6837,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6982,8 +6986,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7018,25 +7023,21 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   font-family: 'DM Mono',courier;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.4285714285714286;
-  padding: 1px 0px;
+  line-height: 21px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-131::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
 }
 
 .emotion-131::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
 }
 
 .emotion-133 {
@@ -7125,9 +7126,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 80px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7260,10 +7261,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7367,11 +7369,12 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
