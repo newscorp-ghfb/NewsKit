@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
+import NextLink from 'next/link';
 import {
   Block,
   Cell,
@@ -117,27 +118,30 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
                   id: string;
                   description: string;
                 }) => (
-                  <StructuredListItem
+                  <NextLink
                     key={util.id}
+                    legacyBehavior
                     href={util.id}
-                    ariaLabel={util.title}
+                    passHref
                   >
-                    <StructuredListCell>
-                      <TextBlock
-                        stylePreset="inkContrast"
-                        typographyPreset="utilityHeading010"
-                      >
-                        {util.title}
-                      </TextBlock>
-                      <TextBlock
-                        marginBlockStart="space030"
-                        stylePreset="inkContrast"
-                        typographyPreset="utilityBody020"
-                      >
-                        {util.description}
-                      </TextBlock>
-                    </StructuredListCell>
-                  </StructuredListItem>
+                    <StructuredListItem href={util.id} ariaLabel={util.title}>
+                      <StructuredListCell>
+                        <TextBlock
+                          stylePreset="inkContrast"
+                          typographyPreset="utilityHeading010"
+                        >
+                          {util.title}
+                        </TextBlock>
+                        <TextBlock
+                          marginBlockStart="space030"
+                          stylePreset="inkContrast"
+                          typographyPreset="utilityBody020"
+                        >
+                          {util.description}
+                        </TextBlock>
+                      </StructuredListCell>
+                    </StructuredListItem>
+                  </NextLink>
                 ),
               )}
             </StructuredList>
