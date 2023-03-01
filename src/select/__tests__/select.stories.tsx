@@ -515,7 +515,7 @@ export const StorySelectOverrides = () => (
             panel: {
               maxHeight: '100px',
               stylePreset: 'selectPanelCustom',
-              spaceInset: 'spaceInset050',
+              paddingBlock: 'space050',
               spaceStack: 'space020',
             },
           }}
@@ -560,7 +560,7 @@ export const StorySelectOverrides = () => (
             panel: {
               maxHeight: '100px',
               stylePreset: 'selectPanelCustom',
-              spaceInset: 'spaceInset050',
+              paddingBlock: 'space050',
               spaceStack: 'space020',
             },
           }}
@@ -570,7 +570,8 @@ export const StorySelectOverrides = () => (
               key={item}
               value={item}
               overrides={{
-                spaceInset: 'space050',
+                paddingBlock: 'space050',
+                paddingInline: 'space050',
                 typographyPreset: 'utilityButton010',
                 stylePreset: 'selectOptionCustom',
               }}
@@ -719,7 +720,8 @@ export const StorySelectOptionsDisplay = () => (
               key={item}
               value={item}
               overrides={{
-                spaceInset: 'space050',
+                paddingBlock: 'space050',
+                paddingInline: 'space050',
               }}
             >
               {item}
@@ -741,7 +743,8 @@ export const StorySelectOptionsDisplay = () => (
               value={item}
               selectedDisplay={item}
               overrides={{
-                spaceInset: 'space050',
+                paddingBlock: 'space050',
+                paddingInline: 'space050',
               }}
             >
               {item}
@@ -821,10 +824,10 @@ const selectWithModalVariants = [
       overrides: {
         button: {width: '100%'},
         modal: {
-          header: {spaceInset: 'space000'},
+          header: {paddingInline: 'space000', paddingBlock: 'space000'},
           panel: {maxHeight: '50vh', maxWidth: '280px'},
-          content: {spaceInset: 'space010'},
-          closeButton: {spaceInset: 'space000'},
+          content: {paddingInline: 'space010', paddingBlock: 'space010'},
+          closeButton: {paddingInline: 'space000', paddingBlock: 'space000'},
         },
       },
     },

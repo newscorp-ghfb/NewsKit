@@ -213,6 +213,11 @@ const menuCustomThemeObject: CreateThemeArgs = {
           outlineOffset: '5px',
         },
       },
+      menuSubCustom: {
+        base: {
+          backgroundColor: '{{colors.amber030}}',
+        },
+      },
     },
   },
 };
@@ -1205,18 +1210,36 @@ export const StoryMenuAlignedTitle = () => (
   <>
     <StorybookHeading>Menu - menu groups only</StorybookHeading>
     <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1" overrides={{title: {spaceInset: 'space040'}}}>
+      <MenuGroup
+        title="Group 1"
+        overrides={{
+          title: {
+            paddingBlock: 'space040',
+            paddingInline: 'space040',
+          },
+        }}
+      >
         <MenuItem href={href}>Group 1-item 1</MenuItem>
         <MenuItem href={href}>Group 1-item 2</MenuItem>
         <MenuItem href={href}>Group 1-item 3</MenuItem>
       </MenuGroup>
       <MenuDivider />
-      <MenuGroup title="Group 2" overrides={{title: {spaceInset: 'space040'}}}>
+      <MenuGroup
+        title="Group 2"
+        overrides={{
+          title: {paddingBlock: 'space040', paddingInline: 'space040'},
+        }}
+      >
         <MenuItem href={href}>Group 2-item 1</MenuItem>
         <MenuItem href={href}>Group 2-item 2</MenuItem>
         <MenuItem href={href}>Group 2-item 3</MenuItem>
       </MenuGroup>
-      <MenuGroup title="Group 3" overrides={{title: {spaceInset: 'space040'}}}>
+      <MenuGroup
+        title="Group 3"
+        overrides={{
+          title: {paddingBlock: 'space040', paddingInline: 'space040'},
+        }}
+      >
         <MenuItem href={href}>Group 3-item 1</MenuItem>
       </MenuGroup>
       <MenuDivider />
@@ -1625,7 +1648,11 @@ export const StoryMenuSubOverrides = () => {
           }}
           overrides={{
             ...menuItemOverrides,
-            list: {},
+            list: {
+              stylePreset: 'menuSubCustom',
+              paddingBlock: 'space020',
+              paddingInline: 'space020',
+            },
           }}
         >
           <MenuItem href={href}>Menu item 3.1</MenuItem>

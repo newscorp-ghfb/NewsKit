@@ -59,7 +59,8 @@ describe('InlineMessage', () => {
       children: message,
       overrides: {
         stylePreset: 'customInlineMessage',
-        spaceInset: 'spaceInset050',
+        paddingInline: 'space050',
+        paddingBlock: 'space050',
         icon: {
           spaceInline: 'space050',
         },

@@ -94,6 +94,7 @@ Object {
     "inkSubtle": "{{colors.neutral040}}",
     "interactiveDisabled010": "{{colors.neutral080}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.blackTint090}}",
     "interactiveInput010": "{{colors.neutral090}}",
     "interactiveInput020": "{{colors.neutral060}}",
     "interactiveInput030": "{{colors.blue090}}",
@@ -304,6 +305,7 @@ Object {
   },
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -1246,8 +1248,8 @@ Object {
       "label": Object {
         "typographyPreset": "utilityButton030",
       },
-      "paddingBlock": "spaceInset030",
-      "paddingInline": "spaceInset030",
+      "paddingBlock": "space030",
+      "paddingInline": "space030",
       "spaceInline": "space020",
       "stylePreset": "accordionHeader",
       "transitionPreset": Array [
@@ -1257,8 +1259,8 @@ Object {
       "typographyPreset": "utilityButton030",
     },
     "panel": Object {
-      "paddingBlock": "spaceInset030",
-      "paddingInline": "spaceInset030",
+      "paddingBlock": "space030",
+      "paddingInline": "space030",
       "stylePreset": "accordionPanel",
       "transitionPreset": "maxHeightChange",
     },
@@ -1385,7 +1387,8 @@ Object {
     },
     "modal": Object {
       "content": Object {
-        "spaceInset": "spaceInset000",
+        "paddingBlock": "space000",
+        "paddingInline": "space000",
       },
     },
     "popover": Object {
@@ -1575,8 +1578,9 @@ Object {
       },
       "minHeight": "sizing090",
       "minWidth": "sizing110",
+      "paddingBlock": "space040",
+      "paddingInline": "space050",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish040",
       "stylePreset": "buttonSolidPrimary",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton030",
@@ -1588,8 +1592,9 @@ Object {
       },
       "minHeight": "sizing080",
       "minWidth": "sizing100",
+      "paddingBlock": "space030",
+      "paddingInline": "space040",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish030",
       "stylePreset": "buttonSolidPrimary",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton020",
@@ -1601,8 +1606,9 @@ Object {
       },
       "minHeight": "sizing060",
       "minWidth": "sizing090",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish020",
       "stylePreset": "buttonSolidPrimary",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton010",
@@ -1633,7 +1639,8 @@ Object {
   "card": Object {
     "actionsContainer": Object {
       "minHeight": "sizing080",
-      "spaceInset": "spaceInsetSquish000",
+      "paddingBlock": "space000",
+      "paddingInline": "space000",
     },
     "headline": Object {
       "interactive": Object {
@@ -1688,17 +1695,24 @@ Object {
     },
     "stylePreset": "cardContainer",
     "teaserContainer": Object {
-      "spaceInset": "spaceInsetSquish000",
+      "paddingBlock": "space000",
+      "paddingInline": "space000",
     },
   },
   "cardInset": Object {
     "actionsContainer": Object {
       "minHeight": "sizing000",
-      "spaceInset": Object {
-        "lg": "spaceInsetSquish040",
-        "md": "spaceInsetSquish040",
-        "sm": "spaceInsetSquish030",
-        "xs": "spaceInsetSquish030",
+      "paddingBlock": Object {
+        "lg": "space040",
+        "md": "space040",
+        "sm": "space030",
+        "xs": "space030",
+      },
+      "paddingInline": Object {
+        "lg": "space050",
+        "md": "space050",
+        "sm": "space040",
+        "xs": "space040",
       },
     },
     "horizontalRatio": "1:1",
@@ -1707,11 +1721,17 @@ Object {
     },
     "stylePreset": "cardContainer",
     "teaserContainer": Object {
-      "spaceInset": Object {
-        "lg": "spaceInset050",
-        "md": "spaceInset050",
-        "sm": "spaceInset040",
-        "xs": "spaceInset040",
+      "paddingBlock": Object {
+        "lg": "space050",
+        "md": "space050",
+        "sm": "space040",
+        "xs": "space040",
+      },
+      "paddingInline": Object {
+        "lg": "space050",
+        "md": "space050",
+        "sm": "space040",
+        "xs": "space040",
       },
     },
   },
@@ -1817,14 +1837,17 @@ Object {
   },
   "drawer": Object {
     "closeButton": Object {
-      "spaceInset": "spaceInset020",
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
       "stylePreset": "iconButtonMinimalSecondary",
     },
     "content": Object {
-      "spaceInset": "spaceInset050",
+      "paddingBlock": "space050",
+      "paddingInline": "space050",
     },
     "header": Object {
-      "spaceInset": "spaceInsetSquish040",
+      "paddingBlock": "space040",
+      "paddingInline": "space050",
       "stylePreset": "drawerHeader",
       "typographyPreset": "utilityLabel030",
     },
@@ -1874,24 +1897,27 @@ Object {
     "large": Object {
       "iconSize": "iconSize010",
       "minHeight": "sizing070",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "spaceInline": "space010",
-      "spaceInset": "spaceInsetSquish020",
       "stylePreset": "flagSolidPrimary",
       "typographyPreset": "utilityLabel030",
     },
     "medium": Object {
       "iconSize": "iconSize010",
       "minHeight": "sizing060",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "spaceInline": "space010",
-      "spaceInset": "spaceInsetSquish020",
       "stylePreset": "flagSolidPrimary",
       "typographyPreset": "utilityLabel020",
     },
     "small": Object {
       "iconSize": "iconSize010",
       "minHeight": "sizing050",
+      "paddingBlock": "space010",
+      "paddingInline": "space020",
       "spaceInline": "space010",
-      "spaceInset": "spaceInsetSquish010",
       "stylePreset": "flagSolidPrimary",
       "typographyPreset": "utilityLabel010",
     },
@@ -1984,7 +2010,8 @@ Object {
       "loadingIndicator": Object {
         "stylePreset": "indeterminateProgressIndicatorPrimary",
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "stylePreset": "iconButtonSolidPrimary",
       "width": "sizing090",
     },
@@ -1993,7 +2020,8 @@ Object {
       "loadingIndicator": Object {
         "stylePreset": "indeterminateProgressIndicatorPrimary",
       },
-      "spaceInset": "spaceInset030",
+      "paddingBlock": "space030",
+      "paddingInline": "space030",
       "stylePreset": "iconButtonSolidPrimary",
       "width": "sizing080",
     },
@@ -2002,7 +2030,8 @@ Object {
       "loadingIndicator": Object {
         "stylePreset": "indeterminateProgressIndicatorPrimary",
       },
-      "spaceInset": "spaceInset020",
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
       "stylePreset": "iconButtonSolidPrimary",
       "width": "sizing060",
     },
@@ -2039,7 +2068,8 @@ Object {
     "icon": Object {
       "spaceInline": "space030",
     },
-    "spaceInset": "spaceInset030",
+    "paddingBlock": "space030",
+    "paddingInline": "space030",
     "stylePreset": "inlineMessageInformative",
   },
   "label": Object {
@@ -2228,14 +2258,17 @@ Object {
   },
   "modal": Object {
     "closeButton": Object {
-      "spaceInset": "spaceInset020",
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
       "stylePreset": "iconButtonMinimalSecondary",
     },
     "content": Object {
-      "spaceInset": "spaceInset050",
+      "paddingBlock": "space050",
+      "paddingInline": "space050",
     },
     "header": Object {
-      "spaceInset": "spaceInsetSquish040",
+      "paddingBlock": "space040",
+      "paddingInline": "space050",
       "stylePreset": "modalHeader",
       "typographyPreset": "utilityLabel030",
     },
@@ -2450,7 +2483,8 @@ Object {
     "horizontal": Object {
       "controls": Object {
         "button": Object {
-          "spaceInset": "spaceInset000",
+          "paddingBlock": "space000",
+          "paddingInline": "space000",
           "stylePreset": "iconButtonSolidPrimary",
         },
         "offset": "space040",
@@ -2463,7 +2497,8 @@ Object {
     "vertical": Object {
       "controls": Object {
         "button": Object {
-          "spaceInset": "spaceInset000",
+          "paddingBlock": "space000",
+          "paddingInline": "space000",
           "stylePreset": "iconButtonSolidPrimary",
         },
         "offset": "space040",
@@ -2489,8 +2524,9 @@ Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
         "minHeight": "sizing090",
+        "paddingBlock": "space040",
+        "paddingInline": "space040",
         "spaceInline": "space020",
-        "spaceInset": "spaceInset040",
         "spaceStack": "space020",
         "startEnhancer": Object {
           "iconSize": "iconSize020",
@@ -2507,7 +2543,7 @@ Object {
       },
       "panel": Object {
         "maxHeight": "360px",
-        "spaceInset": "spaceInset020",
+        "paddingBlock": "space020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
         "zIndex": "layer",
@@ -2527,8 +2563,9 @@ Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
         "minHeight": "sizing080",
+        "paddingBlock": "space030",
+        "paddingInline": "space030",
         "spaceInline": "space020",
-        "spaceInset": "spaceInset030",
         "spaceStack": "space020",
         "startEnhancer": Object {
           "iconSize": "iconSize020",
@@ -2545,7 +2582,7 @@ Object {
       },
       "panel": Object {
         "maxHeight": "272px",
-        "spaceInset": "spaceInset020",
+        "paddingBlock": "space020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
         "zIndex": "layer",
@@ -2565,8 +2602,9 @@ Object {
           "stylePreset": "indeterminateProgressIndicatorPrimary",
         },
         "minHeight": "sizing070",
+        "paddingBlock": "space020",
+        "paddingInline": "space020",
         "spaceInline": "space020",
-        "spaceInset": "spaceInset020",
         "spaceStack": "space020",
         "startEnhancer": Object {
           "iconSize": "iconSize020",
@@ -2583,7 +2621,7 @@ Object {
       },
       "panel": Object {
         "maxHeight": "184px",
-        "spaceInset": "spaceInset020",
+        "paddingBlock": "space020",
         "spaceStack": "space010",
         "stylePreset": "selectPanel",
         "zIndex": "layer",
@@ -2597,8 +2635,9 @@ Object {
         "stylePreset": "selectOptionItemIcon",
       },
       "minHeight": "sizing080",
+      "paddingBlock": "space030",
+      "paddingInline": "space040",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish030",
       "stylePreset": "selectOptionItem",
       "typographyPreset": "utilityBody030",
     },
@@ -2608,8 +2647,9 @@ Object {
         "stylePreset": "selectOptionItemIcon",
       },
       "minHeight": "sizing070",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish020",
       "stylePreset": "selectOptionItem",
       "typographyPreset": "utilityBody020",
     },
@@ -2619,8 +2659,9 @@ Object {
         "stylePreset": "selectOptionItemIcon",
       },
       "minHeight": "sizing060",
+      "paddingBlock": "space010",
+      "paddingInline": "space020",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish010",
       "stylePreset": "selectOptionItem",
       "typographyPreset": "utilityBody020",
     },
@@ -2696,7 +2737,8 @@ Object {
       "stylePreset": "inkContrast",
     },
     "minHeight": "sizing100",
-    "spaceInset": "spaceInsetStretch040",
+    "paddingBlock": "space050",
+    "paddingInline": "space040",
     "stylePreset": "structuredListItem",
   },
   "switch": Object {
@@ -2804,8 +2846,9 @@ Object {
     "large": Object {
       "iconSize": "iconSize030",
       "minHeight": "sizing090",
+      "paddingBlock": "space040",
+      "paddingInline": "space050",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish030",
       "stylePreset": "tab",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton030",
@@ -2813,8 +2856,9 @@ Object {
     "medium": Object {
       "iconSize": "iconSize020",
       "minHeight": "sizing080",
+      "paddingBlock": "space030",
+      "paddingInline": "space040",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish030",
       "stylePreset": "tab",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton020",
@@ -2822,8 +2866,9 @@ Object {
     "small": Object {
       "iconSize": "iconSize010",
       "minHeight": "sizing060",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "spaceInline": "space020",
-      "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tab",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton010",
@@ -2851,8 +2896,9 @@ Object {
     "large": Object {
       "iconSize": "iconSize020",
       "minHeight": "sizing070",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "spaceInline": "space010",
-      "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tagPrimary",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton030",
@@ -2860,8 +2906,9 @@ Object {
     "medium": Object {
       "iconSize": "iconSize010",
       "minHeight": "sizing060",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "spaceInline": "space010",
-      "spaceInset": "spaceInsetSquish020",
       "stylePreset": "tagPrimary",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton020",
@@ -2869,8 +2916,9 @@ Object {
     "small": Object {
       "iconSize": "iconSize010",
       "minHeight": "sizing050",
+      "paddingBlock": "space010",
+      "paddingInline": "space020",
       "spaceInline": "space010",
-      "spaceInset": "spaceInsetSquish010",
       "stylePreset": "tagPrimary",
       "transitionPreset": "backgroundColorChange",
       "typographyPreset": "utilityButton010",
@@ -2915,7 +2963,8 @@ Object {
         "spaceInline": "space020",
       },
       "minHeight": "sizing090",
-      "spaceInset": "spaceInset030",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "spaceStack": "space020",
       "startEnhancer": Object {
         "iconSize": "iconSize020",
@@ -2931,14 +2980,15 @@ Object {
         "spaceInline": "space020",
       },
       "minHeight": "sizing080",
-      "spaceInset": "spaceInset030",
+      "paddingBlock": "space030",
+      "paddingInline": "space030",
       "spaceStack": "space020",
       "startEnhancer": Object {
         "iconSize": "iconSize020",
         "spaceInline": "space020",
       },
       "stylePreset": "inputField",
-      "typographyPreset": "utilityBody020",
+      "typographyPreset": "utilityBody030",
       "width": "100%",
     },
     "small": Object {
@@ -2946,8 +2996,9 @@ Object {
         "iconSize": "iconSize020",
         "spaceInline": "space020",
       },
-      "minHeight": "sizing060",
-      "spaceInset": "spaceInset020",
+      "minHeight": "sizing070",
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
       "spaceStack": "space020",
       "startEnhancer": Object {
         "iconSize": "iconSize020",
@@ -3093,14 +3144,15 @@ Object {
       "xl": "31%",
       "xs": "90%",
     },
-    "spaceInset": "spaceInset030",
+    "paddingBlock": "space030",
+    "paddingInline": "space030",
     "stylePreset": "toastNeutral",
   },
   "tooltip": Object {
     "offset": "space020",
     "panel": Object {
-      "paddingBlock": "spaceInset020",
-      "paddingInline": "spaceInset020",
+      "paddingBlock": "space020",
+      "paddingInline": "space020",
       "stylePreset": "tooltipPanel",
       "typographyPreset": "utilityLabel010",
     },
@@ -3170,9 +3222,13 @@ Object {
           "xs": "utilityBody010",
         },
       },
-      "spaceInset": Object {
-        "md": "spaceInset050",
-        "xs": "spaceInset040",
+      "paddingBlock": Object {
+        "md": "space050",
+        "xs": "space040",
+      },
+      "paddingInline": Object {
+        "md": "space050",
+        "xs": "space040",
       },
       "stylePreset": "videoPlayerDockText",
       "title": Object {
@@ -3189,7 +3245,8 @@ Object {
     },
     "miniCardOverlay": Object {
       "closeButton": Object {
-        "spaceInset": "spaceInset010",
+        "paddingBlock": "space010",
+        "paddingInline": "space010",
       },
       "countdown": Object {
         "spaceStack": "space010",
@@ -3200,7 +3257,8 @@ Object {
         "stylePreset": "inkInverse",
         "typographyPreset": "utilityMeta010",
       },
-      "spaceInset": "spaceInsetSquish020",
+      "paddingBlock": "space020",
+      "paddingInline": "space030",
       "stylePreset": "videoPlayerMiniCardOverlay",
     },
     "playButton": Object {
@@ -3208,7 +3266,8 @@ Object {
     },
     "seekBar": Object {
       "currentDuration": Object {
-        "spaceInset": "spaceInset020",
+        "paddingBlock": "space020",
+        "paddingInline": "space020",
         "stylePreset": "videoPlayerCurrentDuration",
         "typographyPreset": "utilityMeta010",
       },
@@ -3223,7 +3282,8 @@ Object {
         "width": "borderWidth020",
       },
       "seekPosition": Object {
-        "spaceInset": "spaceInset020",
+        "paddingBlock": "space020",
+        "paddingInline": "space020",
         "stylePreset": "videoPlayerSeekPosition",
         "typographyPreset": "utilityMeta010",
       },
@@ -3458,7 +3518,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -3603,7 +3663,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -3774,7 +3834,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -4370,7 +4430,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -4518,7 +4578,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -4689,7 +4749,7 @@ Object {
       "iconColor": "{{colors.inkNonEssential}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -5103,7 +5163,7 @@ Object {
       "textDecoration": "underline",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -5160,7 +5220,7 @@ Object {
       "textDecoration": "none",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -5232,7 +5292,7 @@ Object {
       "iconColor": "{{colors.interactiveInverse020}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
@@ -5967,7 +6027,7 @@ Object {
       "iconColor": "{{colors.inkInverse}}",
     },
     "focus-visible": Object {
-      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineColor": "{{outlines.outlineColorInverse}}",
       "outlineOffset": "{{outlines.outlineOffsetDefault}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",

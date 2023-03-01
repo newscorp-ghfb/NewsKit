@@ -48,7 +48,6 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   min-width: 120px;
   min-height: 64px;
   padding-inline: 24px;
@@ -301,7 +300,6 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   min-width: 120px;
   min-height: 64px;
   padding-inline: 24px;
@@ -552,7 +550,6 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -805,7 +802,6 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -1056,7 +1052,6 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -1309,7 +1304,6 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -1560,7 +1554,6 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -1813,7 +1806,6 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -2064,7 +2056,6 @@ exports[`Menu alignment renders with menu items aligned at the spaceBetween hori
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -2316,7 +2307,6 @@ exports[`Menu alignment renders with menu items aligned at the spaceBetween vert
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -2566,7 +2556,6 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -2819,7 +2808,6 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -3070,7 +3058,6 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 16px;
@@ -3323,7 +3310,6 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 40px;
   padding-inline: 16px;
@@ -3590,7 +3576,6 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -3926,7 +3911,6 @@ exports[`Menu renders horizontally with menu group 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -4188,7 +4172,6 @@ exports[`Menu renders horizontally with menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -4438,7 +4421,6 @@ exports[`Menu renders horizontally with selected menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -4604,7 +4586,6 @@ exports[`Menu renders horizontally with selected menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -4817,7 +4798,6 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -5152,7 +5132,6 @@ exports[`Menu renders vertically with menu group 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -5418,7 +5397,6 @@ exports[`Menu renders vertically with menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -5672,7 +5650,6 @@ exports[`Menu renders vertically with selected menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -5840,7 +5817,6 @@ exports[`Menu renders vertically with selected menu items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -6039,7 +6015,6 @@ exports[`Menu renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -6291,7 +6266,6 @@ exports[`Menu renders with logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -6764,8 +6738,8 @@ exports[`MenuGroup renders with overrides 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   margin-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-3 {
@@ -6819,7 +6793,6 @@ exports[`MenuGroup renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -7138,7 +7111,6 @@ exports[`MenuGroup renders with title as a component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -7483,7 +7455,6 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -7799,7 +7770,6 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -8068,7 +8038,6 @@ exports[`MenuItem renders in large size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -8273,7 +8242,6 @@ exports[`MenuItem renders in medium size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -8478,7 +8446,6 @@ exports[`MenuItem renders in small size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -8683,7 +8650,6 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -8889,7 +8855,6 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -9154,7 +9119,6 @@ exports[`MenuItem renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -9359,7 +9323,6 @@ exports[`MenuItem renders with icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -9605,11 +9568,10 @@ exports[`MenuItem renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   min-width: 10px;
   min-height: 11px;
-  padding-inline: 16px;
-  padding-block: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9760,7 +9722,6 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -10089,7 +10050,6 @@ exports[`MenuSub render nested submenus 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -10446,7 +10406,6 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -10778,7 +10737,6 @@ exports[`MenuSub renders expanded when vertical 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -11105,7 +11063,6 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -11293,7 +11250,6 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -11574,7 +11530,6 @@ exports[`MenuSub renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -11816,7 +11771,6 @@ exports[`MenuSub renders with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -12146,11 +12100,10 @@ exports[`MenuSub renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   min-width: 10px;
   min-height: 11px;
-  padding-inline: 16px;
-  padding-block: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -12266,7 +12219,6 @@ exports[`MenuSub renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -12547,7 +12499,6 @@ exports[`MenuSub renders with title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -12740,7 +12691,6 @@ exports[`MenuSub renders with title 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -13003,7 +12953,6 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -13196,7 +13145,6 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -13321,7 +13269,6 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -13464,7 +13411,6 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -13589,7 +13535,6 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -13714,7 +13659,6 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -14040,7 +13984,6 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -14231,7 +14174,6 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -14357,7 +14299,6 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -14498,7 +14439,6 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -14624,7 +14564,6 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;
@@ -14750,7 +14689,6 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 16px;

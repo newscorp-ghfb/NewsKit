@@ -162,6 +162,16 @@ export const StorySelect = () =>
     </>
   ));
 StorySelect.storyName = 'with select';
+StorySelect.parameters = {
+  previewTabs: {
+    'storybook/canvas/panel': {index: -1},
+    'storybook/docs/panel': {hidden: true},
+  },
+  viewMode: 'story',
+  docs: {
+    page: null,
+  },
+};
 
 export const StoryRightPlacement = () =>
   React.createElement(() => (
@@ -188,6 +198,7 @@ export const StoryRightPlacement = () =>
     </>
   ));
 StoryRightPlacement.storyName = 'right placement';
+StoryRightPlacement.parameters = StorySelect.parameters;
 
 export const StoryLeftPlacement = () =>
   React.createElement(() => {
@@ -253,6 +264,7 @@ export const StoryLeftPlacement = () =>
     );
   });
 StoryLeftPlacement.storyName = 'left placement';
+StoryLeftPlacement.parameters = StorySelect.parameters;
 
 export const StoryTopPlacement = () =>
   React.createElement(() => (
@@ -279,6 +291,7 @@ export const StoryTopPlacement = () =>
     </>
   ));
 StoryTopPlacement.storyName = 'top placement';
+StoryTopPlacement.parameters = StorySelect.parameters;
 
 export const StoryBottomPlacement = () =>
   React.createElement(() => (
@@ -305,6 +318,7 @@ export const StoryBottomPlacement = () =>
     </>
   ));
 StoryBottomPlacement.storyName = 'bottom placement';
+StoryBottomPlacement.parameters = StorySelect.parameters;
 
 export const StoryRightPlacementWithClosepositionSetToLeft = () =>
   React.createElement(() => (
@@ -333,6 +347,8 @@ export const StoryRightPlacementWithClosepositionSetToLeft = () =>
   ));
 StoryRightPlacementWithClosepositionSetToLeft.storyName =
   'right placement with closePosition set to left';
+StoryRightPlacementWithClosepositionSetToLeft.parameters =
+  StorySelect.parameters;
 
 export const StoryNoHeaderContent = () =>
   React.createElement(() => (
@@ -342,7 +358,9 @@ export const StoryNoHeaderContent = () =>
         aria-label="drawer with no header"
         open
         onDismiss={() => {}}
-        overrides={{header: {spaceInset: 'space000'}}}
+        overrides={{
+          header: {paddingBlock: 'space000', paddingInline: 'space000'},
+        }}
       >
         <StorybookH3>List title</StorybookH3>
         <StorybookParah>List description goes here</StorybookParah>
@@ -355,6 +373,7 @@ export const StoryNoHeaderContent = () =>
     </>
   ));
 StoryNoHeaderContent.storyName = 'no header content';
+StoryNoHeaderContent.parameters = StorySelect.parameters;
 
 export const StoryNoClose = () =>
   React.createElement(() => (
@@ -372,6 +391,7 @@ export const StoryNoClose = () =>
     </>
   ));
 StoryNoClose.storyName = 'no close button';
+StoryNoClose.parameters = StorySelect.parameters;
 
 export const StoryNoHeader = () =>
   React.createElement(() => (
@@ -389,6 +409,7 @@ export const StoryNoHeader = () =>
     </>
   ));
 StoryNoHeader.storyName = 'no header';
+StoryNoHeader.parameters = StorySelect.parameters;
 
 export const StoryWithOverrides = () =>
   React.createElement(() => (
@@ -411,15 +432,18 @@ export const StoryWithOverrides = () =>
             minSize: '200px',
           },
           header: {
-            spaceInset: 'spaceInset000',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
             stylePreset: 'drawerHeaderCustom',
           },
           content: {
-            spaceInset: 'spaceInset000',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
           },
           closeButton: {
             stylePreset: 'drawerCloseButtonCustom',
-            spaceInset: 'spaceInset000',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
           },
         }}
       >
@@ -428,6 +452,7 @@ export const StoryWithOverrides = () =>
     </>
   ));
 StoryWithOverrides.storyName = 'with overrides';
+StoryWithOverrides.parameters = StorySelect.parameters;
 
 export const StoryDrawerLogicalPropsOverrides = () =>
   React.createElement(() => (
@@ -451,15 +476,18 @@ export const StoryDrawerLogicalPropsOverrides = () =>
             paddingInline: 'space050',
           },
           header: {
-            spaceInset: 'spaceInset050',
+            paddingInline: 'space050',
+            paddingBlock: 'space050',
             stylePreset: 'drawerHeaderCustom',
           },
           content: {
-            spaceInset: 'spaceInset050',
+            paddingInline: 'space050',
+            paddingBlock: 'space050',
           },
           closeButton: {
             stylePreset: 'drawerCloseButtonCustom',
-            spaceInset: 'spaceInset020',
+            paddingInline: 'space020',
+            paddingBlock: 'space020',
           },
         }}
       >
@@ -468,6 +496,7 @@ export const StoryDrawerLogicalPropsOverrides = () =>
     </div>
   ));
 StoryDrawerLogicalPropsOverrides.storyName = 'drawer-logical-props-overrides';
+StoryDrawerLogicalPropsOverrides.parameters = StorySelect.parameters;
 
 export default {
   title: 'Components/drawer-layouts-only',

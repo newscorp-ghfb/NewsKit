@@ -2642,9 +2642,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3048,9 +3049,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3455,9 +3457,10 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3850,9 +3853,10 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4810,9 +4814,10 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4939,11 +4944,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4989,7 +4995,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-13:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -5365,10 +5371,11 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5419,7 +5426,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -5491,9 +5498,10 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5872,11 +5880,12 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5922,7 +5931,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6283,10 +6292,11 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6337,7 +6347,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6724,9 +6734,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7170,9 +7181,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

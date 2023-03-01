@@ -177,7 +177,8 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-10 a:not(.nk-card-link) {
@@ -328,7 +329,8 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-16 {
   box-sizing: border-box;
-  padding: 8px 4px;
+  padding-inline: 4px;
+  padding-block: 8px;
 }
 
 .emotion-16 a:not(.nk-card-link) {
@@ -645,7 +647,8 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-10 a:not(.nk-card-link) {
@@ -761,7 +764,8 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-16 {
   box-sizing: border-box;
-  padding: 8px 4px;
+  padding-inline: 4px;
+  padding-block: 8px;
 }
 
 .emotion-16 a:not(.nk-card-link) {
@@ -1132,7 +1136,8 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-11 a:not(.nk-card-link) {
@@ -1318,7 +1323,7 @@ exports[`Media List renders with feature cardscards 1`] = `
 }
 
 .emotion-18:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1501,25 +1506,29 @@ exports[`Media List renders with feature cardscards 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-28 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-28 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-28 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-28 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -1965,10 +1974,11 @@ exports[`Media List renders with usage cards 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   width: 32px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2062,7 +2072,8 @@ exports[`Media List renders with usage cards 1`] = `
 
 .emotion-11 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-11 a:not(.nk-card-link) {
@@ -2158,10 +2169,11 @@ exports[`Media List renders with usage cards 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   width: 32px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

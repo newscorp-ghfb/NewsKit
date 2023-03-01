@@ -95,10 +95,11 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   width: 24px;
   height: 24px;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -629,10 +630,11 @@ exports[`Table renders number values automatically if undefined 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   width: 24px;
   height: 24px;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1056,8 +1058,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1319,8 +1322,9 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;

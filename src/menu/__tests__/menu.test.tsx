@@ -179,7 +179,8 @@ describe('MenuItem', () => {
         minWidth: '10px',
         minHeight: '11px',
         spaceInline: 'space030',
-        spaceInset: 'space030',
+        paddingInline: 'space030',
+        paddingBlock: 'space030',
         iconSize: 'iconSize030',
       },
     };
@@ -347,7 +348,8 @@ describe('MenuGroup', () => {
           typographyPreset: 'utilityHeading020',
           stylePreset: 'inkSubtle',
           spaceInline: 'space060',
-          spaceInset: 'space040',
+          paddingInline: 'space040',
+          paddingBlock: 'space040',
         },
       },
     };
@@ -607,7 +609,8 @@ describe('MenuSub', () => {
         minWidth: '10px',
         minHeight: '11px',
         spaceInline: 'space030',
-        spaceInset: 'space030',
+        paddingInline: 'space030',
+        paddingBlock: 'space030',
         iconSize: 'iconSize030',
       },
     };

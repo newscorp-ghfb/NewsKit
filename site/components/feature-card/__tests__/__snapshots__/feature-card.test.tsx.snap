@@ -91,7 +91,8 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 
 .emotion-5 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 a:not(.nk-card-link) {
@@ -565,25 +566,29 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -1060,7 +1065,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 .emotion-5 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 a:not(.nk-card-link) {
@@ -1246,7 +1252,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 }
 
 .emotion-12:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1534,25 +1540,29 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -1746,7 +1756,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 }
 
 .emotion-12:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -2074,7 +2084,8 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
 
 .emotion-7 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -2250,7 +2261,7 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
 }
 
 .emotion-14:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -2428,25 +2439,29 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
 
 @media screen and (max-width: 479px) {
   .emotion-24 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-24 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-24 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-24 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -2790,7 +2805,8 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
 
 .emotion-7 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -3023,25 +3039,29 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
 
 @media screen and (max-width: 479px) {
   .emotion-18 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-18 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-18 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-18 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -3249,7 +3269,8 @@ exports[`FeatureCard Renders interactive vertical card with link 1`] = `
 
 .emotion-4 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 a:not(.nk-card-link) {
@@ -3421,7 +3442,7 @@ exports[`FeatureCard Renders interactive vertical card with link 1`] = `
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -3649,7 +3670,8 @@ exports[`FeatureCard Renders interactive vertical card without link 1`] = `
 
 .emotion-4 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 a:not(.nk-card-link) {
@@ -3920,7 +3942,8 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-5 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 a:not(.nk-card-link) {
@@ -4198,25 +4221,29 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -4439,7 +4466,8 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -4746,7 +4774,8 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 
 .emotion-7 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -4926,25 +4955,29 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-18 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-18 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-18 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-18 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -5107,7 +5140,8 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -5289,7 +5323,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 }
 
 .emotion-8:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;

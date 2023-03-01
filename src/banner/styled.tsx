@@ -14,8 +14,6 @@ export const StyledBannerContainer = styled.div<BannerProps>`
   box-sizing: border-box;
   ${({layout}) => getStylePreset(`banner.${layout}`, '')};
   ${({layout}) =>
-    getResponsiveSpace('padding', `banner.${layout}`, '', 'spaceInset')}
-  ${({layout}) =>
     getResponsiveSize('minHeight', `banner.${layout}`, '', 'minHeight')}
   ${({layout}) => logicalProps(`banner.${layout}`)}
 `;
