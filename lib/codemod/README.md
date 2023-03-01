@@ -139,25 +139,6 @@ Run this codemod if you would like to apply logical props instead.
 + <Block stylePreset="inkContrast" paddingBlock="space020" paddingInline="space020">Block</Block>
 ```
 
-- [`audio-player-play-pause-button`](#audio-player-play-pause-button)
-- [`all-default`](#all-default)
-
-#### `audio-player-play-pause-button`
-
-There are changes to the default styling of the AudioPlayer component in v7.
-
-Run this codemod if you would like to apply manual overrides to keep the old default styling.
-
-```diff
-- <AudioPlayerPlayPauseButton />
-
-+ <AudioPlayerPlayPauseButton size="large" />
-```
-
-#### `all-default`
-
-Run this codemod if you would like to apply manual overrides to the keep the old default for all components listed above.
-
 ## Development
 
 ### Setup

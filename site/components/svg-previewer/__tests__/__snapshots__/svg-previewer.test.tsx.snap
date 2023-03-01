@@ -129,12 +129,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-<<<<<<< HEAD
-  padding: 12px;
-=======
   padding-inline: 12px;
   padding-block: 12px;
->>>>>>> main
 }
 
 .emotion-6 {
@@ -2500,12 +2496,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-<<<<<<< HEAD
-  padding: 12px;
-=======
   padding-inline: 12px;
   padding-block: 12px;
->>>>>>> main
 }
 
 .emotion-6 {

@@ -355,10 +355,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD
-  padding: 8px 12px;
-=======
->>>>>>> main
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -462,10 +458,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD
-  padding: 8px 12px;
-=======
->>>>>>> main
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -3602,10 +3594,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD
-  padding: 8px 12px;
-=======
->>>>>>> main
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -3709,10 +3697,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD
-  padding: 8px 12px;
-=======
->>>>>>> main
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -7402,10 +7386,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD
-  padding: 8px 12px;
-=======
->>>>>>> main
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -7509,10 +7489,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD
-  padding: 8px 12px;
-=======
->>>>>>> main
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
@@ -10652,10 +10628,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD
-  padding: 8px 12px;
-=======
->>>>>>> main
   min-width: 64px;
   min-height: 40px;
   padding-inline: 64px;
@@ -10759,10 +10731,6 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-<<<<<<< HEAD
-  padding: 8px 12px;
-=======
->>>>>>> main
   min-width: 64px;
   min-height: 40px;
   margin-block-end: 12px;
