@@ -2,7 +2,8 @@ export default {
   iconButton: {
     small: {
       stylePreset: 'iconButtonSolidPrimary',
-      spaceInset: 'spaceInset020',
+      paddingBlock: 'space020',
+      paddingInline: 'space020',
       width: 'sizing060',
       height: 'sizing060',
       loadingIndicator: {
@@ -11,7 +12,8 @@ export default {
     },
     medium: {
       stylePreset: 'iconButtonSolidPrimary',
-      spaceInset: 'spaceInset030',
+      paddingBlock: 'space030',
+      paddingInline: 'space030',
       width: 'sizing080',
       height: 'sizing080',
       loadingIndicator: {
@@ -20,7 +22,8 @@ export default {
     },
     large: {
       stylePreset: 'iconButtonSolidPrimary',
-      spaceInset: 'spaceInset040',
+      paddingBlock: 'space040',
+      paddingInline: 'space040',
       width: 'sizing090',
       height: 'sizing090',
       loadingIndicator: {

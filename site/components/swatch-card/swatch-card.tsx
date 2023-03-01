@@ -52,7 +52,7 @@ const StyledSwatchCard = styled.div<{
     newskitTheme.colors[colorToken]};
   ${getSizingCssFromTheme('height', 'sizing100')};
   width: 100px;
-  ${getSpacingCssFromTheme('marginRight', 'spaceInset020')};
+  ${getSpacingCssFromTheme('marginRight', 'space020')};
   ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded020')};
   border: 1px solid;
   ${getColorCssFromTheme('borderColor', 'interface040')};

@@ -80,7 +80,8 @@ const ReleaseNotesPage = ({
                 ({tag_name, published_at, change_level}) => (
                   <StructuredListItem
                     overrides={{
-                      spaceInset: 'space050 space000',
+                      paddingBlock: 'space050',
+                      paddingInline: 'space000',
                       minHeight: 'sizing050',
                     }}
                     key={tag_name}

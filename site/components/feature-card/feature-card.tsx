@@ -149,7 +149,8 @@ const FeatureCardHorizontal = React.forwardRef<
               }`,
 
               teaserContainer: {
-                spaceInset: 'space050',
+                paddingInline: 'space050',
+                paddingBlock: 'space050',
               },
             }}
           >
@@ -214,7 +215,8 @@ const FeatureCardHorizontal = React.forwardRef<
                 href ? 'Interactive' : 'NonInteractive'
               }`,
               teaserContainer: {
-                spaceInset: {md: 'space050', lg: 'space060'},
+                paddingInline: {md: 'space050', lg: 'space060'},
+                paddingBlock: {md: 'space050', lg: 'space060'},
               },
             }}
           >
@@ -319,7 +321,8 @@ const FeatureCardVertical = React.forwardRef<HTMLDivElement, FeatureCardProps>(
             }`,
 
             teaserContainer: {
-              spaceInset: 'space050',
+              paddingInline: 'space050',
+              paddingBlock: 'space050',
             },
           }}
         >

@@ -7,7 +7,7 @@ export default {
       },
     },
     zIndex: 80,
-    distance: 'space020',
+    offset: 'space020',
     pointer: {
       stylePreset: 'tooltipPointer',
       size: 'sizing010',
@@ -16,8 +16,8 @@ export default {
     panel: {
       stylePreset: 'tooltipPanel',
       typographyPreset: 'utilityLabel010',
-      paddingBlock: 'spaceInset020',
-      paddingInline: 'spaceInset020',
+      paddingBlock: 'space020',
+      paddingInline: 'space020',
     },
   },
 };

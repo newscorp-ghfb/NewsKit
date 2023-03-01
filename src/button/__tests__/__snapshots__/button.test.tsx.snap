@@ -21,9 +21,10 @@ exports[`Button Loading Button renders Large Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   min-width: 120px;
   min-height: 64px;
+  padding-inline: 24px;
+  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -135,9 +136,10 @@ exports[`Button Loading Button renders Small Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -249,9 +251,10 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 100px;
   min-height: 100px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -284,7 +287,7 @@ exports[`Button Loading Button renders a button with fixed for minWidth and minH
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -385,11 +388,12 @@ exports[`Button Loading Button renders a button with fixed for width and height 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 100px;
   min-width: 80px;
   height: 100px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -422,7 +426,7 @@ exports[`Button Loading Button renders a button with fixed for width and height 
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -523,9 +527,10 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 100%;
   min-height: 100%;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -558,7 +563,7 @@ exports[`Button Loading Button renders a button with percentage for minWidth and
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -659,11 +664,12 @@ exports[`Button Loading Button renders a button with percentage for width and he
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   height: 100%;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -696,7 +702,7 @@ exports[`Button Loading Button renders a button with percentage for width and he
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -797,9 +803,10 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 160px;
   min-height: 160px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -832,7 +839,7 @@ exports[`Button Loading Button renders a button with token set for minWidth and 
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -933,11 +940,12 @@ exports[`Button Loading Button renders a button with token set for width and hei
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 160px;
   min-width: 80px;
   height: 160px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -970,7 +978,7 @@ exports[`Button Loading Button renders a button with token set for width and hei
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -1071,9 +1079,10 @@ exports[`Button renders Large Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   min-width: 120px;
   min-height: 64px;
+  padding-inline: 24px;
+  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1106,7 +1115,7 @@ exports[`Button renders Large Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -1207,9 +1216,10 @@ exports[`Button renders Small Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 64px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1242,7 +1252,7 @@ exports[`Button renders Small Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -1343,9 +1353,10 @@ exports[`Button renders button link when href passed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1378,7 +1389,7 @@ exports[`Button renders button link when href passed 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -1479,9 +1490,10 @@ exports[`Button renders button link with disabled link 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1583,10 +1595,11 @@ exports[`Button renders fixed-width Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   width: 160px;
   min-width: 120px;
   min-height: 64px;
+  padding-inline: 24px;
+  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1619,7 +1632,7 @@ exports[`Button renders fixed-width Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -1720,10 +1733,11 @@ exports[`Button renders full-width Button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   width: 100%;
   min-width: 120px;
   min-height: 64px;
+  padding-inline: 24px;
+  padding-block: 16px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1756,7 +1770,7 @@ exports[`Button renders full-width Button 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -1857,9 +1871,10 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1892,7 +1907,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -2013,7 +2028,7 @@ exports[`Button renders text and icon button with fallback formatting 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Button renders with different spaceInset preset 1`] = `
+exports[`Button renders with different padding 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
@@ -2034,9 +2049,10 @@ exports[`Button renders with different spaceInset preset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2069,7 +2085,7 @@ exports[`Button renders with different spaceInset preset 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -2170,9 +2186,10 @@ exports[`Button renders with different style preset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2210,7 +2227,7 @@ exports[`Button renders with different style preset 1`] = `
 
 .emotion-0:active:not(:disabled) {
   background-color: #D5E0FC;
-  border-color: #14328D;
+  border-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -2311,9 +2328,10 @@ exports[`Button renders with different typography preset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2346,7 +2364,7 @@ exports[`Button renders with different typography preset 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -2447,9 +2465,10 @@ exports[`Button renders with fallback formatting 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2482,7 +2501,7 @@ exports[`Button renders with fallback formatting 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -2583,10 +2602,10 @@ exports[`Button renders with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
   margin-block: 30px;
+  padding-inline: 16px;
   padding-block: 30px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
@@ -2620,7 +2639,7 @@ exports[`Button renders with logical props overrides 1`] = `
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
