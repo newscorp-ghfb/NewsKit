@@ -50,7 +50,7 @@ export const WithEnhancers = React.forwardRef<
         <Enhancer
           position="startEnhancer"
           componentDefaultsPath={`${componentDefaultsPath}.startEnhancer`}
-          overrides={overrides?.startEnhancer}
+          overrides={overrides && overrides.startEnhancer}
           alignSelf={alignSelf}
           marginPosition={marginPosition}
         >
@@ -62,7 +62,7 @@ export const WithEnhancers = React.forwardRef<
         <Enhancer
           componentDefaultsPath={`${componentDefaultsPath}.endEnhancer`}
           position="endEnhancer"
-          overrides={overrides?.endEnhancer}
+          overrides={overrides && overrides.endEnhancer}
           alignSelf={alignSelf}
           marginPosition={marginPosition}
         >

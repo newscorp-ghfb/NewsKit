@@ -109,7 +109,8 @@ describe('Fieldset', () => {
       ],
       overrides: {
         stylePreset: 'fieldsetCustom',
-        spaceInset: 'space010',
+        paddingBlock: 'space010',
+        paddingInline: 'space010',
         legend: {
           stylePreset: 'legendCustom',
           typographyPreset: 'utilityBody030',

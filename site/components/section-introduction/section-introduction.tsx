@@ -28,7 +28,8 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
             <TitleBar
               headingAs="h2"
               overrides={{
-                spaceInset: 'space000',
+                paddingBlock: 'space000',
+                paddingInline: 'space000',
                 heading: {
                   stylePreset: 'inkContrast',
                   typographyPreset: {
@@ -52,7 +53,8 @@ export const SectionIntroduction: React.FC<SectionIntroductionProps> = ({
           <TitleBar
             headingAs="h2"
             overrides={{
-              spaceInset: 'space000',
+              paddingBlock: 'space000',
+              paddingInline: 'space000',
               heading: {
                 stylePreset: 'inkContrast',
                 typographyPreset: {

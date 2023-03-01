@@ -36,6 +36,10 @@ exports[`OrderedList renders with defaults 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-1 svg {
@@ -112,6 +116,10 @@ exports[`OrderedList renders with invalid nodes 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-1 svg {
@@ -185,6 +193,10 @@ exports[`OrderedList renders with logical props 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-1 svg {
@@ -261,6 +273,10 @@ exports[`OrderedList renders with overrides 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-1::before {

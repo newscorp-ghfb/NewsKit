@@ -18,15 +18,15 @@ run to see all codemods and flags
 npx @newskit/codemod --help
 ```
 
-
-
-## Included scripts
-The list includes these transformers
+## v6.0.0
+The following transformers are available when upgrading to v6:
 
 - [`emotion-icons`](#emotion-icons)
 - [`remove-redundant-marker-ul`](#remove-redundant-marker-ul)
 - [`update-list-item-marker-ul-value`](#update-list-item-marker-ul-value)
 - [`enum-to-union`](#enum-to-union)
+- [`update-linkinline`](#update-linkinline)
+- [`update-linkstandalone`](#update-linkstandalone)
 
 
 #### `emotion-icons`
@@ -42,7 +42,7 @@ Imports and transform `newskit` icons to `emotion-icons`;
 ```sh
 npx @newskit/codemod v6.0.0/emotion-icons [path]
 // example
-npx @newskit/codemod v6.0.0/emotion-icons 'components/**/*.+(ts|tsx|js|jsx)' 
+npx @newskit/codemod v6.0.0/emotion-icons 'components/**/*.+(ts|tsx|js|jsx)'
 ```
 
 #### `remove-redundant-marker-ul`
@@ -62,6 +62,7 @@ Unordered List has now a default marker, the script passes `listItemMarker` with
 -   <UnorderedList></UnorderedList>
 +    <UnorderedList listItemMarker={null}></UnorderedList>
 ```
+
 #### `enum-to-union`
 
 Some of NewsKit components support enum as the prop type, the script remove the imports of enum and replace enum type with union type.
@@ -86,7 +87,7 @@ LinkInline is used within paragraphs or sentences to link to different content o
 
 #### `update-linkstandalone`
 
-Updates deprecated Link component to LinkStandalone. 
+Updates deprecated Link component to LinkStandalone.
 LinkStandalone is used outside of body content, for example within navigational components such as menus, headers and footers.
 
 ```diff
@@ -97,7 +98,46 @@ LinkStandalone is used outside of body content, for example within navigational 
 +  <LinkStandalone href={'www.google.com'}>Click on me</LinkStandalone>;
 ```
 
+## v7.0.0
+The following transformers are available when upgrading to v7:
 
+- [`audio-player-play-pause-button`](#audio-player-play-pause-button)
+- [`all-default`](#all-default)
+- [`replace-space-inset-props-and-overrides`](#replace-space-inset-props-and-overrides)
+
+#### `audio-player-play-pause-button`
+
+There are changes to the default styling of the AudioPlayer component in v7.
+
+Run this codemod if you would like to apply manual overrides to keep the old default styling.
+
+```diff
+- <AudioPlayerPlayPauseButton />
+
++ <AudioPlayerPlayPauseButton size="large" />
+```
+
+#### `all-default`
+
+Run this codemod if you would like to apply manual overrides to the keep the old default for all components listed above.
+
+#### `replace-space-inset-props-and-overrides`
+
+spaceInset prop was marked as deprecated and has now been removed in V7. 
+
+Run this codemod if you would like to apply logical props instead.
+
+```diff
+- <Flag overrides={{spaceInset: "space060"}}>Flag</Flag>
+
++ <Flag overrides={{paddingBlock: "space060", paddingInline: "space060"}}>Flag</Flag>
+```
+
+```diff
+- <Block spaceInset="space020" stylePreset="inkContrast">Block</Block>
+
++ <Block stylePreset="inkContrast" paddingBlock="space020" paddingInline="space020">Block</Block>
+```
 
 ## Development
 

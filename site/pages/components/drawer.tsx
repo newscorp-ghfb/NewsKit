@@ -8,11 +8,7 @@ import {
   styled,
 } from 'newskit';
 
-import {
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-  prefixLogicalProps,
-} from '../../components/component-api/common-logical-props';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
@@ -557,8 +553,7 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the zIndex of the drawer panel',
             },
-            ...prefixLogicalProps(logicalPaddingOverrideProps, 'panel'),
-            ...prefixLogicalProps(logicalMarginOverrideProps, 'panel'),
+            ...getLogicalPropsTable(undefined, 'panel', {}),
             {
               attribute: 'header.stylePreset',
               type: 'MQ<string>',
@@ -566,20 +561,14 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the style preset applied to the drawer header',
             },
-            {
-              attribute: 'header.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInsetSquish040',
-              description:
-                'If provided, overrides the padding space set in the drawer header content container',
-            },
-            {
-              attribute: 'content.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInset050',
-              description:
-                'If provided, overrides the padding space set in the drawer content container',
-            },
+            ...getLogicalPropsTable(undefined, 'header', {
+              paddingInline: 'space050',
+              paddingBlock: 'space040',
+            }),
+            ...getLogicalPropsTable(undefined, 'content', {
+              paddingInline: 'space050',
+              paddingBlock: 'space050',
+            }),
             {
               attribute: 'closeButton.stylePreset',
               type: 'MQ<string>',
@@ -587,13 +576,10 @@ const DrawerComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the style preset applied to the drawer close icon button',
             },
-            {
-              attribute: 'closeButton.spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInset020',
-              description:
-                'If provided, overrides the padding space set in the drawer close icon button',
-            },
+            ...getLogicalPropsTable(undefined, 'closeButton', {
+              paddingInline: 'space020',
+              paddingBlock: 'space020',
+            }),
           ],
         },
       ],

@@ -18,7 +18,8 @@ export default {
     },
     modal: {
       content: {
-        spaceInset: 'spaceInset000',
+        paddingInline: 'space000',
+        paddingBlock: 'space000',
       },
     },
   },
