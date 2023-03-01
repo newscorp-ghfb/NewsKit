@@ -1,69 +1,79 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {StructuredListItem, StructuredListCell, StructuredList} from '..';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {IconOutlinedArrowForwardIos, IconFilledAddCircle} from '../../icons';
 import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
-import {IconFilledError, IconOutlinedArrowForwardIos} from '../../icons';
-import {
-  createTheme,
-  Stack,
+  CreateThemeArgs,
+  getColorCssFromTheme,
+  GridLayout,
+  styled,
   TextBlock,
   ThemeProvider,
   withDefaultProps,
 } from '../..';
-import {Block} from '../../block';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const myCustomTheme = createTheme({
-  name: 'structuredList-theme',
+const structuredListCustomTheme: CreateThemeArgs = {
+  name: 'structured-list-theme',
   overrides: {
     stylePresets: {
+      structuredListTextItemNonInteractive: {
+        base: {color: 'unset', iconColor: 'unset'},
+      },
+      structuredListTextItemInteractive: {
+        base: {color: 'unset', iconColor: 'unset'},
+        hover: {color: 'unset', iconColor: 'unset'},
+      },
       structuredListItemCustom: {
         base: {
-          backgroundColor: '{{colors.amber010}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+          backgroundColor: '{{colors.interfaceInformative020}}',
         },
         hover: {
-          backgroundColor: '{{colors.green010}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+          backgroundColor: '{{colors.interfaceInformative010}}',
         },
-        active: {
-          backgroundColor: '{{colors.teal050}}',
-        },
+        active: {backgroundColor: '{{colors.interfaceInformative020}}'},
       },
       dividerCustomPreset: {
         base: {
           borderStyle: 'solid',
-          borderColor: '{{colors.purple010}}',
+          borderColor: '{{colors.inkBrand010}}',
           borderWidth: '{{borders.borderWidth020}}',
         },
       },
     },
   },
-});
+};
+
+const STRUCTURED_LIST_GRID_COLUMNS = '1fr';
+
+const MarginOverridesWrapper = styled.div`
+  border: 1px dashed;
+  ${getColorCssFromTheme('borderColor', 'red060')}
+`;
 
 const arrowIcon = (
-  <Stack stackDistribution="flex-end" flow="horizontal-center">
+  <GridLayout justifyContent="end">
     <IconOutlinedArrowForwardIos
       overrides={{
         size: 'iconSize010',
         stylePreset: 'inkContrast',
       }}
     />
-  </Stack>
+  </GridLayout>
 );
-const StructuredListWithDivider = withDefaultProps(StructuredList, {
-  divider: true,
-  ariaLabel: 'list',
-});
-const ListItemWithInternalLink = withDefaultProps(StructuredListItem, {
-  href: '/',
-  ariaLabel: 'list item',
-  target: '_blank',
-});
-const ListItemWithExternalLink = withDefaultProps(StructuredListItem, {
-  href: 'http://apple.com',
-  ariaLabel: 'list item',
-  target: '_blank',
-});
+
+const addCircleIcon = (
+  <GridLayout justifyContent="end">
+    <IconFilledAddCircle
+      overrides={{size: 'iconSize020', stylePreset: 'inkContrast'}}
+    />
+  </GridLayout>
+);
 
 const HeadingTextBlock = withDefaultProps(TextBlock, {
   stylePreset: 'inkContrast',
@@ -74,302 +84,350 @@ const BodyTextBlock = withDefaultProps(TextBlock, {
   typographyPreset: 'utilityBody020',
 });
 
-const listItemWithThreeCells = (
-  <StructuredListItem ariaLabel="list item">
-    <StructuredListCell>
-      <HeadingTextBlock>Label</HeadingTextBlock>
-    </StructuredListCell>
-    <StructuredListCell>
-      <BodyTextBlock>A short description of the label</BodyTextBlock>
-    </StructuredListCell>
-    <StructuredListCell>{arrowIcon}</StructuredListCell>
-  </StructuredListItem>
-);
-
-const listItemWithTwoCells = (
-  <StructuredListItem ariaLabel="list item">
-    <StructuredListCell>
-      <HeadingTextBlock>Label</HeadingTextBlock>
-    </StructuredListCell>
-    <StructuredListCell>
-      <BodyTextBlock>A short description of the label</BodyTextBlock>
-    </StructuredListCell>
-  </StructuredListItem>
-);
-
-const listItemWithOneCell = (
-  <StructuredListItem ariaLabel="list item">
-    <StructuredListCell>
-      <HeadingTextBlock>Label</HeadingTextBlock>
-    </StructuredListCell>
-  </StructuredListItem>
-);
-
-export default {
-  title: 'Components/structured-list',
-  component: () => 'None',
-  disabledRules: [],
-};
-
 export const StoryStructuredListDefault = () => (
-  <>
-    <StorybookHeading>StructuredList</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <StructuredList ariaLabel="list">
-      {listItemWithThreeCells}
-      {listItemWithThreeCells}
-      {listItemWithThreeCells}
-    </StructuredList>
-  </>
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase>
+      <StructuredList ariaLabel="list">
+        {[1, 2, 3].map(item => (
+          <StructuredListItem key={item} ariaLabel="list item">
+            <StructuredListCell>
+              <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+            </StructuredListCell>
+            <StructuredListCell>
+              <BodyTextBlock>[Cell 2]</BodyTextBlock>
+            </StructuredListCell>
+            <StructuredListCell>{arrowIcon}</StructuredListCell>
+          </StructuredListItem>
+        ))}
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListDefault.storyName = 'structured-list-default';
+StoryStructuredListDefault.storyName = 'Default';
 
-export const StoryStructuredListWithDivider = () => (
-  <>
-    <StorybookHeading>StructuredList</StorybookHeading>
-    <StorybookSubHeading>with divider</StorybookSubHeading>
-    <StructuredListWithDivider>
-      {listItemWithThreeCells}
-      {listItemWithThreeCells}
-      {listItemWithThreeCells}
-    </StructuredListWithDivider>
-  </>
+export const StoryStructuredListDivider = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase>
+      <StructuredList divider ariaLabel="list">
+        {[1, 2, 3].map(item => (
+          <StructuredListItem key={item} ariaLabel="list item">
+            <StructuredListCell>
+              <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+            </StructuredListCell>
+            <StructuredListCell>
+              <BodyTextBlock>[Cell 2]</BodyTextBlock>
+            </StructuredListCell>
+            <StructuredListCell>{arrowIcon}</StructuredListCell>
+          </StructuredListItem>
+        ))}
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListWithDivider.storyName = 'structured-list-with-divider';
+StoryStructuredListDivider.storyName = 'Divider';
 
-export const StoryStructuredListWithTwoCells = () => (
-  <>
-    <StorybookHeading>StructuredList</StorybookHeading>
-    <StorybookSubHeading>with two cells</StorybookSubHeading>
-    <StructuredListWithDivider>
-      {listItemWithTwoCells}
-      {listItemWithTwoCells}
-      {listItemWithTwoCells}
-    </StructuredListWithDivider>
-  </>
+export const StoryStructuredListTwoCells = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase>
+      <StructuredList divider ariaLabel="list">
+        {[1, 2, 3].map(item => (
+          <StructuredListItem key={item} ariaLabel="list item">
+            <StructuredListCell>
+              <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+            </StructuredListCell>
+            <StructuredListCell>
+              <BodyTextBlock>[Cell 2]</BodyTextBlock>
+            </StructuredListCell>
+          </StructuredListItem>
+        ))}
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListWithTwoCells.storyName = 'structured-list-with-two-cells';
+StoryStructuredListTwoCells.storyName = '2 cells';
 
-export const StoryStructuredListWithTwoCellsAndPullright = () => (
-  <>
-    <StorybookSubHeading>
-      with two cells and pullRight on the 2nd
-    </StorybookSubHeading>
-    <Block spaceStack="space050">
-      <StructuredListWithDivider>
-        <StructuredListItem ariaLabel="list item">
-          <StructuredListCell>
-            <HeadingTextBlock>Label</HeadingTextBlock>
-          </StructuredListCell>
-          <StructuredListCell pullRight>
-            <BodyTextBlock>A short description of the label</BodyTextBlock>
-          </StructuredListCell>
-        </StructuredListItem>
-        <StructuredListItem ariaLabel="list item">
-          <StructuredListCell>
-            <HeadingTextBlock>Label</HeadingTextBlock>
-          </StructuredListCell>
-          <StructuredListCell pullRight>
-            <BodyTextBlock>A short description of the label</BodyTextBlock>
-          </StructuredListCell>
-        </StructuredListItem>
-      </StructuredListWithDivider>
-    </Block>
-  </>
+export const StoryStructuredListPullRight = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase>
+      <StructuredList divider ariaLabel="list">
+        {[1, 2, 3].map(item => (
+          <StructuredListItem key={item} ariaLabel="list item">
+            <StructuredListCell>
+              <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+            </StructuredListCell>
+            <StructuredListCell pullRight>
+              <BodyTextBlock>[Cell 2]</BodyTextBlock>
+            </StructuredListCell>
+          </StructuredListItem>
+        ))}
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListWithTwoCellsAndPullright.storyName =
-  'structured-list-with-two-cells-and-pullRight';
+StoryStructuredListPullRight.storyName = 'Pull right';
 
-export const StoryStructuredListWithOneCell = () => (
-  <>
-    <StorybookHeading>StructuredList</StorybookHeading>
-    <StorybookSubHeading>with one cell</StorybookSubHeading>
-    <Block spaceStack="space050">
-      <StructuredListWithDivider>
-        {listItemWithOneCell}
-        {listItemWithOneCell}
-      </StructuredListWithDivider>
-    </Block>
-  </>
+export const StoryStructuredListOneCell = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase>
+      <StructuredList divider ariaLabel="list">
+        {[1, 2, 3].map(item => (
+          <StructuredListItem key={item} ariaLabel="list item">
+            <StructuredListCell>
+              <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+            </StructuredListCell>
+          </StructuredListItem>
+        ))}
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListWithOneCell.storyName = 'structured-list-with-one-cell';
+StoryStructuredListOneCell.storyName = '1 cell';
 
 export const StoryStructuredListInteractive = () => (
-  <>
-    <StorybookHeading>StructuredList</StorybookHeading>
-    <StorybookSubHeading>with internal link</StorybookSubHeading>
-    <StructuredListWithDivider>
-      <ListItemWithInternalLink ariaLabel="list item">
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </ListItemWithInternalLink>
-      <ListItemWithInternalLink>
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-      </ListItemWithInternalLink>
-    </StructuredListWithDivider>
-
-    <StorybookSubHeading>with external link</StorybookSubHeading>
-    <StructuredListWithDivider>
-      <ListItemWithExternalLink ariaLabel="list item">
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </ListItemWithExternalLink>
-      <ListItemWithExternalLink>
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-      </ListItemWithExternalLink>
-    </StructuredListWithDivider>
-    <StorybookSubHeading>with disabled link</StorybookSubHeading>
-    <StructuredListWithDivider>
-      <StructuredListItem href="/" disabled ariaLabel="list item">
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </StructuredListItem>
-    </StructuredListWithDivider>
-  </>
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase title="Internal link">
+      <StructuredList divider ariaLabel="list">
+        <StructuredListItem href="/" target="_blank" ariaLabel="list item">
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      </StructuredList>
+    </StorybookCase>
+    <StorybookCase title="External link">
+      <StructuredList divider ariaLabel="list">
+        <StructuredListItem
+          href="https://newskit.co.uk/"
+          target="_blank"
+          ariaLabel="list item"
+        >
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      </StructuredList>
+    </StorybookCase>
+    <StorybookCase title="Disabled link">
+      <StructuredList divider ariaLabel="list">
+        <StructuredListItem href="/" disabled ariaLabel="list item">
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListInteractive.storyName = 'structured-list-interactive';
+StoryStructuredListInteractive.storyName = 'Interactive';
 
-export const StoryStructuredListInteractiveHideIcon = () => (
-  <>
-    <StorybookHeading>StructuredList</StorybookHeading>
-    <StorybookSubHeading>with internal link (hide icon)</StorybookSubHeading>
-    <StructuredListWithDivider>
-      <ListItemWithInternalLink hideIcon ariaLabel="list item">
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </ListItemWithInternalLink>
-      <ListItemWithInternalLink hideIcon>
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-      </ListItemWithInternalLink>
-    </StructuredListWithDivider>
+export const StoryStructuredListVariations = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase title="Internal link">
+      <StructuredList divider ariaLabel="list">
+        <StructuredListItem
+          hideIcon
+          href="/"
+          target="_blank"
+          ariaLabel="list item"
+        >
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      </StructuredList>
+    </StorybookCase>
 
-    <StorybookSubHeading>with external link (hide icon)</StorybookSubHeading>
-    <StructuredListWithDivider>
-      <ListItemWithExternalLink hideIcon ariaLabel="list item">
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </ListItemWithExternalLink>
-      <ListItemWithExternalLink hideIcon>
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-      </ListItemWithExternalLink>
-    </StructuredListWithDivider>
-    <StorybookSubHeading>with disabled link (hide icon)</StorybookSubHeading>
-    <StructuredListWithDivider>
-      <StructuredListItem hideIcon href="/" disabled ariaLabel="list item">
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </StructuredListItem>
-    </StructuredListWithDivider>
-  </>
+    <StorybookCase title="Disabled link">
+      <StructuredList divider ariaLabel="list">
+        <StructuredListItem hideIcon href="/" disabled ariaLabel="list item">
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListInteractiveHideIcon.storyName =
-  'structured-list-interactive-hide-icon';
+StoryStructuredListVariations.storyName = 'Variations';
 
 export const StoryStructuredListCombined = () => (
-  <>
-    <StorybookHeading>StructuredList combines</StorybookHeading>
-    <StorybookSubHeading>with internal link</StorybookSubHeading>
-    <StructuredListWithDivider>
-      <StructuredListItem ariaLabel="list item" href="/">
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </StructuredListItem>
-      <StructuredListItem>
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </StructuredListItem>
-      <StructuredListItem>
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-      </StructuredListItem>
-    </StructuredListWithDivider>
-  </>
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase title="Internal link">
+      <StructuredList divider ariaLabel="list">
+        <StructuredListItem ariaLabel="list item" href="/">
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+        <StructuredListItem>
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+        <StructuredListItem>
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListCombined.storyName = 'structured-list-combined';
+StoryStructuredListCombined.storyName = 'Combined';
 
-export const StoryStructuredListInteractiveWithCustomIcon = () => (
-  <>
-    <StorybookHeading>StructuredList</StorybookHeading>
-    <StorybookSubHeading>with custom icon</StorybookSubHeading>
-    <StructuredListWithDivider>
-      <ListItemWithExternalLink>
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>
-          <BodyTextBlock>A short description of the label</BodyTextBlock>
-        </StructuredListCell>
-        <StructuredListCell>{arrowIcon}</StructuredListCell>
-      </ListItemWithExternalLink>
-      <ListItemWithExternalLink>
-        <StructuredListCell>
-          <HeadingTextBlock>Label</HeadingTextBlock>
-        </StructuredListCell>
-        <StructuredListCell pullRight>{arrowIcon}</StructuredListCell>
-      </ListItemWithExternalLink>
-    </StructuredListWithDivider>
-  </>
+export const StoryStructuredListCustomIcon = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase>
+      <StructuredList divider ariaLabel="list">
+        <StructuredListItem href="/" target="_blank" ariaLabel="list item">
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>{arrowIcon}</StructuredListCell>
+        </StructuredListItem>
+        <StructuredListItem href="/" target="_blank" ariaLabel="list item">
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+          <StructuredListCell pullRight>{addCircleIcon}</StructuredListCell>
+        </StructuredListItem>
+        <StructuredListItem ariaLabel="list item">
+          <StructuredListCell>
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListInteractiveWithCustomIcon.storyName =
-  'structured-list-interactive-with-custom-icon';
+StoryStructuredListCustomIcon.storyName = 'Custom icon';
 
-export const StoryStructuredListWithOverrides = () => (
-  <>
-    <StorybookHeading>Non-interactive StructuredList</StorybookHeading>
-    <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
+export const StoryStructuredListAlignment = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase>
+      <StructuredList ariaLabel="list" divider>
+        <StructuredListItem href="/" linkIconAlign="center">
+          <StructuredListCell align="end">
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+        <StructuredListItem href="/" linkIconAlign="center">
+          <StructuredListCell align="center">
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+        <StructuredListItem>
+          <StructuredListCell align="end">
+            <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+          </StructuredListCell>
+          <StructuredListCell>
+            <BodyTextBlock>[Cell 2]</BodyTextBlock>
+          </StructuredListCell>
+          <StructuredListCell align="end">{arrowIcon}</StructuredListCell>
+        </StructuredListItem>
+      </StructuredList>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryStructuredListAlignment.storyName = 'Alignment';
+
+export const StoryStructuredListLogicalProps = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase title="Margin overrides">
+      <MarginOverridesWrapper>
+        <StructuredList
+          ariaLabel="list"
+          overrides={{
+            marginInline: 'space070',
+            marginBlock: 'space050',
+            width: 'unset',
+          }}
+        >
+          {[1, 2, 3].map(item => (
+            <StructuredListItem key={item} ariaLabel="list item">
+              <StructuredListCell>
+                <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <BodyTextBlock>[Cell 2]</BodyTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>{arrowIcon}</StructuredListCell>
+            </StructuredListItem>
+          ))}
+        </StructuredList>
+      </MarginOverridesWrapper>
+    </StorybookCase>
+    <StorybookCase title="Padding overrides">
+      <MarginOverridesWrapper>
+        <StructuredList
+          ariaLabel="list"
+          overrides={{
+            paddingInline: 'space070',
+            paddingBlock: 'space050',
+            width: 'unset',
+          }}
+        >
+          {[1, 2, 3].map(item => (
+            <StructuredListItem key={item} ariaLabel="list item">
+              <StructuredListCell>
+                <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>
+                <BodyTextBlock>[Cell 2]</BodyTextBlock>
+              </StructuredListCell>
+              <StructuredListCell>{arrowIcon}</StructuredListCell>
+            </StructuredListItem>
+          ))}
+        </StructuredList>
+      </MarginOverridesWrapper>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryStructuredListLogicalProps.storyName = 'Logical props';
+
+export const StoryStructuredListStylingOverrides = () => (
+  <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
+    <StorybookCase title="Non-interactive">
       <StructuredList
         ariaLabel="list"
         divider
-        overrides={{
-          divider: {
-            stylePreset: 'dividerCustomPreset',
-          },
-        }}
+        overrides={{divider: {stylePreset: 'dividerCustomPreset'}}}
       >
         <StructuredListItem
           ariaLabel="list item"
@@ -381,24 +439,23 @@ export const StoryStructuredListWithOverrides = () => (
           }}
         >
           <StructuredListCell>
-            <HeadingTextBlock>Lorem ipsum</HeadingTextBlock>
+            <HeadingTextBlock stylePreset="structuredListTextItemNonInteractive">
+              [Cell 1]
+            </HeadingTextBlock>
           </StructuredListCell>
           <StructuredListCell>
-            <BodyTextBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              aliquet lorem massa, et lacinia ipsum tristique id. Phasellus sed
-              posuere lacus.
+            <BodyTextBlock stylePreset="structuredListTextItemNonInteractive">
+              [Cell 2]
             </BodyTextBlock>
           </StructuredListCell>
           <StructuredListCell>
-            <Stack stackDistribution="flex-end" flow="horizontal-center">
-              <IconFilledError
-                overrides={{
-                  size: 'iconSize020',
-                  stylePreset: 'inkSubtle',
-                }}
-              />
-            </Stack>
+            <BodyTextBlock stylePreset="structuredListTextItemNonInteractive">
+              <GridLayout justifyContent="end">
+                <IconFilledAddCircle
+                  overrides={{size: 'iconSize020', stylePreset: 'inkBrand010'}}
+                />
+              </GridLayout>
+            </BodyTextBlock>
           </StructuredListCell>
         </StructuredListItem>
         <StructuredListItem
@@ -411,27 +468,23 @@ export const StoryStructuredListWithOverrides = () => (
           }}
         >
           <StructuredListCell>
-            <HeadingTextBlock>Lorem ipsum</HeadingTextBlock>
+            <HeadingTextBlock stylePreset="structuredListTextItemNonInteractive">
+              [Cell 1]
+            </HeadingTextBlock>
           </StructuredListCell>
           <StructuredListCell>
-            <BodyTextBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              aliquet lorem massa, et lacinia ipsum tristique id. Phasellus sed
-              posuere lacus.
+            <BodyTextBlock stylePreset="structuredListTextItemNonInteractive">
+              [Cell 2]
             </BodyTextBlock>
           </StructuredListCell>
         </StructuredListItem>
       </StructuredList>
-      <StorybookHeading>Interactive StructuredList</StorybookHeading>
-      <StorybookSubHeading>with overrides</StorybookSubHeading>
+    </StorybookCase>
+    <StorybookCase title="Interactive">
       <StructuredList
         ariaLabel="list"
         divider
-        overrides={{
-          divider: {
-            stylePreset: 'dividerCustomPreset',
-          },
-        }}
+        overrides={{divider: {stylePreset: 'dividerCustomPreset'}}}
       >
         <StructuredListItem
           href="/"
@@ -441,77 +494,51 @@ export const StoryStructuredListWithOverrides = () => (
             paddingBlock: 'space060',
             paddingInline: 'space060',
             minHeight: 'sizing090',
-            icon: {
-              size: 'iconSize020',
-              stylePreset: 'inkSubtle',
-            },
+            icon: {size: 'iconSize020', stylePreset: 'inkBrand010'},
           }}
         >
           <StructuredListCell>
-            <HeadingTextBlock>Lorem ipsum</HeadingTextBlock>
+            <HeadingTextBlock stylePreset="structuredListTextItemInteractive">
+              [Cell 1]
+            </HeadingTextBlock>
           </StructuredListCell>
           <StructuredListCell>
-            <BodyTextBlock>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              aliquet lorem massa, et lacinia ipsum tristique id. Phasellus sed
-              posuere lacus.
+            <BodyTextBlock stylePreset="structuredListTextItemInteractive">
+              [Cell 2]
             </BodyTextBlock>
           </StructuredListCell>
         </StructuredListItem>
       </StructuredList>
-    </ThemeProvider>
-  </>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryStructuredListWithOverrides.storyName = 'structured-list-with-overrides';
+StoryStructuredListStylingOverrides.storyName = 'Styling overrides';
 
-export const StoryStructuredListAlignment = () => (
-  <StructuredList ariaLabel="list" divider>
-    <StructuredListItem href="/" linkIconAlign="center">
-      <StructuredListCell align="end">Label</StructuredListCell>
-      <StructuredListCell>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-        lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
-      </StructuredListCell>
-    </StructuredListItem>
-    <StructuredListItem href="/" linkIconAlign="center">
-      <StructuredListCell>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-        lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
-      </StructuredListCell>
-    </StructuredListItem>
-    <StructuredListItem>
-      <StructuredListCell align="end">Label</StructuredListCell>
-      <StructuredListCell>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-        lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
-      </StructuredListCell>
-      <StructuredListCell align="end">{arrowIcon}</StructuredListCell>
-    </StructuredListItem>
-  </StructuredList>
-);
-StoryStructuredListAlignment.storyName = 'structured-list-alignment';
-
-export const StoryStructuredListLogicalProps = () => (
-  <>
-    <StorybookHeading>StructuredList</StorybookHeading>
-    <StorybookSubHeading>padding logical props</StorybookSubHeading>
-    <StructuredList
-      ariaLabel="list"
-      overrides={{paddingInline: '50px', paddingBlock: '25px', width: 'unset'}}
-    >
-      {listItemWithThreeCells}
-      {listItemWithThreeCells}
-      {listItemWithThreeCells}
-    </StructuredList>
-    <StorybookSubHeading>margin logical props</StorybookSubHeading>
-    <StructuredList
-      ariaLabel="list"
-      overrides={{marginInline: '50px', marginBlock: '25px', width: 'unset'}}
-    >
-      {listItemWithThreeCells}
-      {listItemWithThreeCells}
-      {listItemWithThreeCells}
-    </StructuredList>
-  </>
-);
-StoryStructuredListLogicalProps.storyName = 'structured-list-logical-props';
+export default {
+  title: 'Components/Structured list',
+  component: StructuredList,
+  parameters: {
+    nkDocs: {
+      title: 'Structured list',
+      url: 'https://www.newskit.co.uk/components/structured-list',
+      description:
+        'The structured list is a layout component that groups similar or related content.',
+    },
+  },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          structuredListCustomTheme,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};
