@@ -1,11 +1,10 @@
 import React from 'react';
-
+import {ThemeProvider} from 'newskit';
 import Layout from '../../components/layout';
 import {PageTemplate} from '../page-template';
 import {guidesThemeLight, guidesThemeDark} from '../../theme/doc-theme';
 import {OnwardJourneySectionProps} from '../template-sections';
 import {GuidePageTemplateProps} from './types';
-import {ThemeProviderSite} from '../../components/theme-provider-site';
 
 export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
   title: 'Need Help?',
@@ -26,7 +25,8 @@ export const GuidePageTemplate: React.FC<GuidePageTemplateProps> = ({
   <Layout {...layoutProps} newPage>
     {({themeMode}) => (
       <>
-        <ThemeProviderSite
+        <ThemeProvider
+          exposeCssVariables
           theme={themeMode === 'light' ? guidesThemeLight : guidesThemeDark}
         >
           <PageTemplate
@@ -46,7 +46,7 @@ export const GuidePageTemplate: React.FC<GuidePageTemplateProps> = ({
           >
             {children}
           </PageTemplate>
-        </ThemeProviderSite>
+        </ThemeProvider>
       </>
     )}
   </Layout>

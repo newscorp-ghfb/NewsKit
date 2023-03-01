@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid} from 'newskit';
+import {Grid, ThemeProvider} from 'newskit';
 import {
   ContentPrimary,
   ContentSection,
@@ -15,7 +15,6 @@ import {
 } from '../../components/illustrations/illustration-loader';
 import {Item} from '../../components/sidebar/types';
 import {HeadNextSeo} from '../../components/head-next-seo';
-import {ThemeProviderSite} from '../../components/theme-provider-site';
 import {
   foundationsThemeLight,
   foundationsThemeDark,
@@ -61,7 +60,8 @@ enabling brands to retain a unique identity while building consistent, accessibl
 const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     {({themeMode}) => (
-      <ThemeProviderSite
+      <ThemeProvider
+        exposeCssVariables
         theme={
           themeMode === 'light' ? foundationsThemeLight : foundationsThemeDark
         }
@@ -118,7 +118,7 @@ const Overview = (layoutProps: LayoutProps) => (
             </ContentSection>
           </ComponentPageCell>
         </Grid>
-      </ThemeProviderSite>
+      </ThemeProvider>
     )}
   </Layout>
 );
