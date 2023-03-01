@@ -9,7 +9,6 @@ import {Block} from '../../../block';
 import {CreateThemeArgs, ThemeProvider} from '../../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
 import {Flag} from '../../../flag';
-// import {useThemeMode} from '../../../../../helpers/use-theme-mode';
 import {
   StorybookCase,
   StorybookPage,
@@ -669,23 +668,23 @@ export const StoryLayout = () => (
     <StorybookCase title="Horizontal">
       <Card
         overrides={{
-          paddingBlock: 'space040',
-          maxWidth: '972px',
+          maxWidth: '600px',
+          marginBlockStart: 'space020',
         }}
+        columns="50% 50%"
         areas={`
-        media content
-        media actions
-    
+          media content
+          media actions
         `}
       >
         <CardMedia src="/placeholder-3x2.png" />
         <CardContent
-          overrides={{paddingBlock: 'space040', paddingInline: 'space040'}}
+          overrides={{paddingBlock: 'space000', paddingInline: 'space040'}}
         >
           <div>
             <Flag>Flag</Flag>
           </div>
-          <H />
+          <H overrides={{paddingBlock: 'space030'}} />
           <Block marginBlock="space020 ">
             <P overrides={{marginBlockStart: 'space020'}} />
           </Block>
@@ -697,7 +696,11 @@ export const StoryLayout = () => (
     </StorybookCase>
     <StorybookCase title="Horizontal-inverse">
       <Card
-        overrides={{paddingBlock: 'space040', maxWidth: '972px'}}
+        overrides={{
+          maxWidth: '600px',
+          marginBlockStart: 'space020',
+        }}
+        columns="50% 50%"
         areas={`
         content media
         actions media
@@ -705,14 +708,12 @@ export const StoryLayout = () => (
         `}
       >
         <CardMedia src="/placeholder-3x2.png" />
-        <CardContent
-          overrides={{paddingBlock: 'space040', paddingInline: 'space040'}}
-        >
+        <CardContent overrides={{paddingInline: 'space040'}}>
           <div>
             <Flag>Flag</Flag>
           </div>
 
-          <H />
+          <H overrides={{paddingBlock: 'space030'}} />
 
           <Block marginBlock="space020 ">
             <P overrides={{marginBlockStart: 'space020'}} />
