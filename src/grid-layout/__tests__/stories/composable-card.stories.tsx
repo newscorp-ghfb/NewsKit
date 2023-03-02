@@ -767,7 +767,7 @@ StoryOrder.storyName = 'Order';
 
 export const StoryResponsiveCard = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Typography preset - headline">
+    <StorybookCase title="Different layouts/font sizes for different breakpoints">
       <Card
         overrides={{
           maxWidth: {xl: '600px', md: '372px'},
@@ -792,6 +792,22 @@ export const StoryResponsiveCard = () => (
           <Block marginBlock="space020">
             <P />
           </Block>
+          <UnorderedList
+            overrides={{
+              content: {
+                typographyPreset: {
+                  xl: 'editorialParagraph030',
+                  md: 'editorialParagraph020',
+                  xs: 'editorialParagraph010',
+                },
+                stylePreset: 'inkBase',
+              },
+            }}
+          >
+            <span>Unordered list item</span>
+            <span>Unordered list item</span>
+            <span>Unordered list item</span>
+          </UnorderedList>
         </CardContent>
         <CardMedia src="/placeholder-3x2.png" />
       </Card>
