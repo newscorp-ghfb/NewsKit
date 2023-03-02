@@ -1,4 +1,5 @@
 import React from 'react';
+import {LinkInline, Paragraph} from 'newskit*';
 import {LayoutProps} from '../../../components/layout';
 import {PatternPageTemplate} from '../../../templates/pattern-page-template/pattern-page-template';
 import {
@@ -35,7 +36,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
           description={
             <>
               NewsKit Help Hub is a themable help solution that allows customers
-              that surface information through an intuitive search.
+              to surface information through an intuitive search.
               <br />
               <br />
               This Solution is built to reduce user churn and reliance on
@@ -45,48 +46,58 @@ const BestPractice = (layoutProps: LayoutProps) => (
               results instantly appear as users type.
             </>
           }
-        >
-          <ContentSecondary headline="Features">
-            <MediaList
-              layout="1-span"
-              cardsLayout="horizontal"
-              cards={[
-                {
-                  title: 'Most read articles',
-                  description:
-                    'Display frequently read or recommended articles on the landing page.',
-                  media: getIllustrationComponent(
-                    'patterns/solutions/help-hub/02-most-read',
-                  ),
-                },
-                {
-                  title: 'Search analytics',
-                  description:
-                    'Optimise the user experience with tracking to find the most common search terms. Get user feedback on how useful customers find each article.',
-                  media: getIllustrationComponent(
-                    'patterns/solutions/help-hub/03-search',
-                  ),
-                },
-                {
-                  title: 'Apply your branding',
-                  description:
-                    'Use your existing NewsKit theme to align Help Hub to your brand.',
-                  media: getIllustrationComponent(
-                    'patterns/solutions/help-hub/04-branding',
-                  ),
-                },
-                {
-                  title: 'Powered by Algolia search',
-                  description:
-                    'Full-text, numerical, and faceted search using Algolia search-as-you-type.',
-                  media: getIllustrationComponent(
-                    'patterns/solutions/help-hub/05-algolia',
-                  ),
-                },
-              ]}
-            />
-          </ContentSecondary>
-        </ContentPrimary>
+        />
+        <ContentSecondary headline="Features">
+          <MediaList
+            layout="1-span"
+            cardsLayout="horizontal"
+            cards={[
+              {
+                title: 'Most read articles',
+                description:
+                  'Display frequently read or recommended articles on the landing page.',
+                media: getIllustrationComponent(
+                  'patterns/solutions/help-hub/02-most-read',
+                ),
+              },
+              {
+                title: 'Search analytics',
+                description:
+                  'Optimise the user experience with tracking to find the most common search terms. Get user feedback on how useful customers find each article.',
+                media: getIllustrationComponent(
+                  'patterns/solutions/help-hub/03-search',
+                ),
+              },
+              {
+                title: 'Apply your branding',
+                description:
+                  'Use your existing NewsKit theme to align Help Hub to your brand.',
+                media: getIllustrationComponent(
+                  'patterns/solutions/help-hub/04-branding',
+                ),
+              },
+              {
+                title: 'Powered by Algolia search',
+                description:
+                  'Full-text, numerical, and faceted search using Algolia search-as-you-type.',
+                media: getIllustrationComponent(
+                  'patterns/solutions/help-hub/05-algolia',
+                ),
+              },
+            ]}
+          />
+        </ContentSecondary>
+        <ContentSecondary>
+          <Paragraph overrides={{typographyPreset: 'editorialParagraph030'}}>
+            <LinkInline
+              external={false}
+              href="https://www.newskit.co.uk/about/contact-us/"
+            >
+              Contact the NewsKit team
+            </LinkInline>
+            &nbsp;to discuss using NewsKit Help Hub.
+          </Paragraph>
+        </ContentSecondary>
       </ContentSection>
     </ComponentPageCell>
   </PatternPageTemplate>
