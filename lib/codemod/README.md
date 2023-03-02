@@ -139,7 +139,6 @@ Run this codemod if you would like to apply logical props instead.
 + <Block stylePreset="inkContrast" paddingBlock="space020" paddingInline="space020">Block</Block>
 ```
 
-
 ## Development
 
 ### Setup

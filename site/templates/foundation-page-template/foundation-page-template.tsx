@@ -1,4 +1,5 @@
 import React from 'react';
+import {ThemeProvider} from 'newskit';
 import Layout from '../../components/layout';
 import {PageTemplate} from '../page-template';
 import {
@@ -8,7 +9,6 @@ import {
 import {OnwardJourneySectionProps} from '../template-sections';
 import {FoundationPageTemplateProps} from './types';
 import {useGetFeatureCard} from '../../utils/get-feature-card';
-import {ThemeProviderSite} from '../../components/theme-provider-site';
 
 export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
   buttonLabel: 'Read more',
@@ -28,7 +28,8 @@ export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
     <Layout {...layoutProps} newPage>
       {({themeMode}) => (
         <>
-          <ThemeProviderSite
+          <ThemeProvider
+            exposeCssVariables
             theme={
               themeMode === 'light'
                 ? foundationsThemeLight
@@ -53,7 +54,7 @@ export const FoundationPageTemplate: React.FC<FoundationPageTemplateProps> = ({
             >
               {children}
             </PageTemplate>
-          </ThemeProviderSite>
+          </ThemeProvider>
         </>
       )}
     </Layout>
