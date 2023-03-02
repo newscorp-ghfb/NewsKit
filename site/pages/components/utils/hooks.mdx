@@ -1,7 +1,9 @@
 import Layout from '../../../components/layout';
 import {Code, CodeFromFile} from '../../../components/code';
 import {LegacyBlock} from '../../../components/legacy-block';
+import {InlineCode} from '../../../components/markdown-elements';
 import Prop from '../../../components/prop';
+import {InlineMessage} from 'newskit';
 
 export default Layout;
 
@@ -14,7 +16,20 @@ This hooks also responds to the window resizing and returns the appropriate valu
 
 `useMediaQueryObject` returns the value for the current breakpoint from the provided media query object ( `MQ<T>` )
 
-Note: The hook needs `<MediaQueryProvider>` to be added to an ancestor of the component in which it's used.
+<InlineMessage aria-label="Requirements">
+  Media Query hooks require <strong>NewsKitProvider</strong> or{' '}
+  <strong>MediaQueryProvider</strong> as an ancestor of the component in which
+  are used.
+</InlineMessage>
+
+<InlineMessage
+  overrides={{marginBlockStart: 'space030'}}
+  aria-label="Client Side Only"
+>
+  Media Query hooks work only on client side code ( Browser ).
+  <br />
+  During server side rendering hooks will always return <strong>XS</strong>.
+</InlineMessage>
 
 ### Example
 
