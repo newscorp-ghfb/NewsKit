@@ -65,6 +65,13 @@ const cardCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkInverse}}',
         },
       },
+      flagCustom2: {
+        base: {
+          backgroundColor: '{{colors.amber040}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+      },
       firstSplitBarCustom: {
         base: {
           backgroundColor: '{{colors.interactivePrimary010}}',
@@ -77,7 +84,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
       },
       tagCustom: {
         base: {
-          backgroundColor: '{{colors.socialGoogleYellow}}',
+          backgroundColor: '{{colors.amber030}}',
         },
       },
       headlineLink: {
@@ -101,6 +108,12 @@ const cardCustomThemeObject: CreateThemeArgs = {
       headlineWithHoverFromParent: {
         base: {
           color: 'currentColor',
+        },
+      },
+      headlineCustom: {
+        base: {
+          color: '{{colors.amber070}}',
+          textDecoration: 'underline',
         },
       },
       cardLabel: labelDefault,
@@ -155,11 +168,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
         },
       },
       cardContainerMockNoHover: {
-        base: {
-          backgroundColor: '{{colors.amber020}}',
-          boxShadow: '{{shadows.shadow030}}',
-          color: '{{colors.amber070}}',
-        },
+        base: {},
       },
       cardContainerMediaMock: {
         base: {
@@ -179,43 +188,72 @@ const cardCustomThemeObject: CreateThemeArgs = {
       },
       cardContainerActionsMock: {
         base: {
-          backgroundColor: '{{colors.green020}}',
-        },
-      },
-      headlineKickerInteractiveMock: {
-        base: {
-          color: '{{colors.interactiveNegative050}}',
-          textDecoration: 'underline',
-        },
-        hover: {
-          color: '{{colors.interactiveNegative050}}',
-          textDecoration: 'underline',
-        },
-        active: {
-          color: '{{colors.interactiveNegative050}}',
-          textDecoration: 'none',
-        },
-        visited: {
-          color: '{{colors.interactiveVisited010}}',
-        },
-      },
-      headlineHeadingInteractiveMock: {
-        base: {
-          color: '{{colors.green090}}',
-          textDecoration: 'underline',
-        },
-        hover: {
-          color: '{{colors.interactivePositive040}}',
-          textDecoration: 'none',
-        },
-        active: {
-          color: '{{colors.interactivePositive050}}',
-          textDecoration: 'underline',
+          backgroundColor: '{{colors.amber010}}',
         },
       },
     },
   },
 };
+
+const cardCustomDarkThemeObject: CreateThemeArgs = {
+  name: 'card-custom-theme',
+  overrides: {
+    stylePresets: {
+      ...cardCustomThemeObject.overrides?.stylePresets,
+      flagCustom: {
+        base: {
+          backgroundColor: '{{colors.amber010}}',
+          color: '{{colors.inkInverse}}',
+        },
+      },
+      flagCustom2: {
+        base: {
+          backgroundColor: '{{colors.amber090}}',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+      },
+      tagCustom: {
+        base: {
+          backgroundColor: '{{colors.amber080}}',
+          color: '{{colors.inkBase}}',
+        },
+      },
+      headlineCustom: {
+        base: {
+          color: '{{colors.white000}}',
+          textDecoration: 'underline',
+        },
+      },
+      cardContainerWithHover: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.purple020}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          backgroundColor: '{{colors.amber060}}',
+          color: '{{colors.amber010}}',
+        },
+        hover: {
+          boxShadow: '{{shadows.shadow030}}',
+          backgroundColor: '{{colors.blue080}}',
+          color: '{{colors.inkContrast}}',
+        },
+      },
+      cardContainerMockNoHover: {
+        base: {
+          backgroundColor: '{{colors.amber060}}',
+          color: '{{colors.amber010}}',
+        },
+      },
+      cardContainerActionsMock: {
+        base: {
+          backgroundColor: '{{colors.amber070}}',
+        },
+      },
+    },
+  },
+};
+
 const storyAreasDesktop = `story1 story2
                            story3  story4`;
 
@@ -883,7 +921,7 @@ StoryLogicalProps.storyName = 'Logical props';
 export const StoryOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <Grid>
-      <StorybookGridCase title="Style preset - Card and Flag colours">
+      <StorybookGridCase title="Style preset - card and flag colours">
         <Card
           overrides={{
             maxWidth: '250px',
@@ -915,9 +953,12 @@ export const StoryOverrides = () => (
           </CardActions>
         </Card>
       </StorybookGridCase>
-      <StorybookGridCase title="Style preset - Headline, Paragraph, CardActions and Tag colours">
+      <StorybookGridCase title="Style preset - headline, paragraph, card actions and tag colours">
         <Card
-          overrides={{maxWidth: '250px'}}
+          overrides={{
+            maxWidth: '250px',
+            stylePreset: 'cardContainerMockNoHover',
+          }}
           areas={`
             media
             content
@@ -930,19 +971,18 @@ export const StoryOverrides = () => (
             rowGap="space030"
           >
             <div>
-              <Flag>Flag</Flag>
+              <Flag overrides={{stylePreset: 'flagCustom2'}}>Flag</Flag>
             </div>
             <H
               overrides={{
                 marginBlockStart: 'space020',
-                // Specialised stylePreset override for Heading
-                heading: {stylePreset: 'headlineHeadingInteractiveMock'},
+                heading: {stylePreset: 'headlineCustom'},
               }}
             />
             <P
               overrides={{
                 marginBlockStart: 'space020',
-                stylePreset: 'cardContainerMock',
+                stylePreset: 'cardContainerActionsMock',
               }}
             />
           </CardContent>
@@ -1002,8 +1042,12 @@ export default {
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
-          context?.globals?.backgrounds?.value,
-          cardCustomThemeObject,
+          console.log('context', context) ||
+            context?.globals?.backgrounds?.value,
+          context?.globals?.backgrounds?.value === '#ffffff'
+            ? cardCustomThemeObject
+            : cardCustomDarkThemeObject,
+          // 'Styling overrides',
         )}
       >
         <Story />
