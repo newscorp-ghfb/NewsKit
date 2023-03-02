@@ -20,7 +20,7 @@ const unlimitedScenarios = [
   'Accordion',
   'Grid',
   'Paragraph',
-  'stack',
+  'Stack',
   'card',
   'drawer',
   'modal',
