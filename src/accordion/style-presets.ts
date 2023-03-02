@@ -3,19 +3,22 @@ import {StylePreset} from '../theme/types';
 export default {
   accordionHeader: {
     base: {
-      backgroundColor: '{{colors.interface010}}',
+      backgroundColor: '{{colors.interfaceBackground}}',
       color: '{{colors.inkBase}}',
       borderStyle: 'none none solid none',
       borderColor: '{{colors.interface050}}',
       borderWidth: '{{borders.borderWidth010}}',
+      iconColor: '{{colors.inkBase}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInput010}}',
       color: '{{colors.interactiveInput040}}',
+      iconColor: '{{colors.interactiveInput040}}',
     },
     disabled: {
       backgroundColor: '{{colors.interactiveDisabled010}}',
       color: '{{colors.inkNonEssential}}',
+      iconColor: '{{colors.inkNonEssential}}',
     },
     'focus-visible': {
       outlineColor: '{{outlines.outlineColorDefault}}',

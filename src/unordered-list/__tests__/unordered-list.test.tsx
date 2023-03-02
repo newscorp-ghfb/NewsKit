@@ -2,7 +2,7 @@ import React from 'react';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 import {UnorderedList, UnorderedListProps} from '..';
 import {IconFilledMood} from '../../icons';
-import {Link} from '../../link/link';
+import {LinkInline} from '../../link';
 import {StyledUl} from '../styled';
 
 const renderUnorderedListWithItems = (props: UnorderedListProps) => (
@@ -99,9 +99,9 @@ describe('UnorderedList', () => {
         'String node',
         null,
         100,
-        <Link key="uniqueLinkKey" href="http://localhost:6006">
+        <LinkInline key="uniqueLinkKey" href="http://localhost:6006">
           Link component
-        </Link>,
+        </LinkInline>,
       ],
     };
     const fragment = renderToFragmentWithTheme(UnorderedList, props);

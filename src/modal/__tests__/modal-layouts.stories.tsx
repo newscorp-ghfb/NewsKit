@@ -2,7 +2,7 @@ import React from 'react';
 import {Modal} from '..';
 import {createTheme, ThemeProvider} from '../../theme';
 import {StorybookHeading, StorybookParah} from '../../test/storybook-comps';
-import {LinkStandalone, Link} from '../../link';
+import {LinkStandalone, LinkInline} from '../../link';
 import {Button} from '../../button';
 import {Stack} from '../../stack';
 import {H1, P} from '../../typography';
@@ -21,7 +21,7 @@ const modalContent = (
     </StorybookParah>
     <Button>Register for a free account</Button>
     <P>Already have an account?</P>
-    <Link href="/">Sign in here</Link>
+    <LinkInline href="/">Sign in here</LinkInline>
   </Stack>
 );
 
@@ -129,7 +129,9 @@ export const StoryNoHeaderContent = () =>
         aria-label="Default with no header"
         open
         onDismiss={() => {}}
-        overrides={{header: {spaceInset: 'space000'}}}
+        overrides={{
+          header: {paddingInline: 'space000', paddingBlock: 'space000'},
+        }}
       >
         {modalContent}
       </Modal>
@@ -205,15 +207,18 @@ export const StoryWithOverrides = () =>
               },
             },
             header: {
-              spaceInset: 'spaceInset000',
+              paddingInline: 'space000',
+              paddingBlock: 'space000',
               stylePreset: 'modalHeaderCustom',
             },
             content: {
-              spaceInset: 'spaceInset060',
+              paddingInline: 'space060',
+              paddingBlock: 'space060',
             },
             closeButton: {
               stylePreset: 'modalCloseButtonCustom',
-              spaceInset: 'spaceInset000',
+              paddingInline: 'space000',
+              paddingBlock: 'space000',
             },
           }}
         >

@@ -168,11 +168,13 @@ describe('Drawer', () => {
             minSize: '200px',
           },
           header: {
-            spaceInset: 'spaceInset000',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
             stylePreset: 'drawerHeaderCustom',
           },
           content: {
-            spaceInset: 'spaceInset060',
+            paddingInline: 'space060',
+            paddingBlock: 'space060',
           },
           closeButton: {
             stylePreset: 'drawerCloseButtonCustom',
@@ -529,10 +531,9 @@ describe('Drawer focus management when focus trap is disabled', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('render inline-drawer with logical props overrides', () => {
+  test('render drawer with logical props overrides', () => {
     const fragment = renderToFragmentInBody(Drawer, {
       open: true,
-      inline: true,
       onDismiss: () => {},
       header: drawerHeader,
       children: drawerBody,
@@ -541,20 +542,14 @@ describe('Drawer focus management when focus trap is disabled', () => {
           paddingInline: '30px',
           marginBlock: '20px',
         },
-      },
-    });
-    expect(fragment).toMatchSnapshot();
-  });
-
-  test('render drawer with logical padding overrides', () => {
-    const fragment = renderToFragmentInBody(Drawer, {
-      open: true,
-      onDismiss: () => {},
-      header: drawerHeader,
-      children: drawerBody,
-      overrides: {
-        panel: {
-          paddingInline: '30px',
+        header: {
+          paddingInline: '10px',
+        },
+        content: {
+          paddingInline: '10px',
+        },
+        closeButton: {
+          paddingInline: '10px',
         },
       },
     });

@@ -6,7 +6,6 @@ const theme = createTheme({
     fonts: {
       fontFamily010: {
         fontFamily: '"Times New Roman", Times, serif',
-        // fontMetrics approach
         fontMetrics: {
           fontWeight010: {
             capHeight: 1434,
@@ -22,19 +21,6 @@ const theme = createTheme({
             lineGap: 0,
             unitsPerEm: 2148,
           },
-          //
-
-          // cropConfig Approach
-          cropConfig: {
-            top: 8,
-            bottom: 10,
-          },
-          cropAdjustments: {
-            '{{fonts.fontSize020}}': {
-              top: 1.2,
-            },
-          },
-          //
         },
       },
     },

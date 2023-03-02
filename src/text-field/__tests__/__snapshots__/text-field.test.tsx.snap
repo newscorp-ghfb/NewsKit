@@ -154,12 +154,13 @@ exports[`TextField renders TextField Correctly 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -365,12 +366,11 @@ Object {
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
   padding-inline: 8px;
   padding-block: 16px;
 }
@@ -665,12 +665,11 @@ Object {
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
   padding-inline: 8px;
   padding-block: 16px;
 }
@@ -953,7 +952,8 @@ exports[`TextField renders TextField with overrides 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-4::before {
@@ -1231,12 +1231,13 @@ exports[`TextField renders TextField, AssistiveText and Label 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -1501,12 +1502,13 @@ exports[`TextField renders disabled text field 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-4::before {
@@ -1756,7 +1758,8 @@ exports[`TextField renders large TextField 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1::before {
@@ -1914,12 +1917,13 @@ exports[`TextField renders medium TextField 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-1::before {
@@ -1979,7 +1983,7 @@ exports[`TextField renders small TextField 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  min-height: 32px;
+  min-height: 40px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -2082,7 +2086,8 @@ exports[`TextField renders small TextField 1`] = `
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-1::before {
@@ -2285,12 +2290,13 @@ exports[`TextField renders text field with leading and trailing icon 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-4::before {
@@ -2579,12 +2585,13 @@ exports[`TextField should render custom placeholder 1`] = `
   align-self: stretch;
   color: currentColor;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0;
   padding: 0.5px 0px;
-  padding: 12px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-4::before {

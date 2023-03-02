@@ -21,8 +21,9 @@ exports[`Tag href renders as an anchor 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -53,11 +54,11 @@ exports[`Tag href renders as an anchor 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -149,8 +150,9 @@ exports[`Tag href renders as an anchor and user can pass anchor attributes 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -181,11 +183,11 @@ exports[`Tag href renders as an anchor and user can pass anchor attributes 1`] =
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -278,8 +280,9 @@ exports[`Tag href renders in disable state as a div 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -309,11 +312,11 @@ exports[`Tag href renders in disable state as a div 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -405,8 +408,9 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -436,11 +440,11 @@ exports[`Tag renders a tag with a custom stylePreset 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -531,8 +535,9 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -562,11 +567,11 @@ exports[`Tag renders a tag with a custom typographyPreset 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -657,8 +662,9 @@ exports[`Tag renders a tag with an icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -688,11 +694,11 @@ exports[`Tag renders a tag with an icon 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -829,8 +835,9 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -860,11 +867,11 @@ exports[`Tag renders a tag with an icon and custom iconSize 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1001,8 +1008,9 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1032,11 +1040,11 @@ exports[`Tag renders a tag with an icon and custom spacing between elements 1`] 
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1173,9 +1181,10 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 100px;
   min-height: 100px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1206,11 +1215,11 @@ exports[`Tag renders a tag with fixed for minWidth and minHeight 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1301,10 +1310,11 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   width: 100px;
   height: 100px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1334,11 +1344,11 @@ exports[`Tag renders a tag with fixed for width and height 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1429,7 +1439,6 @@ exports[`Tag renders a tag with logical props overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
   margin-inline: 48px;
   margin-block: 32px;
@@ -1464,11 +1473,11 @@ exports[`Tag renders a tag with logical props overrides 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1605,8 +1614,9 @@ exports[`Tag renders a tag with no paddings 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0;
   min-height: 32px;
+  padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1636,11 +1646,11 @@ exports[`Tag renders a tag with no paddings 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1731,9 +1741,10 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 100%;
   min-height: 100%;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1764,11 +1775,11 @@ exports[`Tag renders a tag with percentage for minWidth and minHeight 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1859,10 +1870,11 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   width: 100%;
   height: 100%;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1892,11 +1904,11 @@ exports[`Tag renders a tag with percentage for width and height 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -1987,9 +1999,10 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 160px;
   min-height: 160px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2020,11 +2033,11 @@ exports[`Tag renders a tag with token set for minWidth and minHeight 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2115,10 +2128,11 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   width: 160px;
   height: 160px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2148,11 +2162,11 @@ exports[`Tag renders a tag with token set for width and height 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2243,8 +2257,9 @@ exports[`Tag renders in disabled state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2274,11 +2289,11 @@ exports[`Tag renders in disabled state 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2370,8 +2385,9 @@ exports[`Tag renders large Tag 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 40px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2401,11 +2417,11 @@ exports[`Tag renders large Tag 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2496,8 +2512,9 @@ exports[`Tag renders medium Tag 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2527,11 +2544,11 @@ exports[`Tag renders medium Tag 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2622,8 +2639,9 @@ exports[`Tag renders small Tag 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2653,11 +2671,11 @@ exports[`Tag renders small Tag 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2748,8 +2766,9 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2779,11 +2798,11 @@ exports[`Tag renders with default stylePreset if supplied with invalid value 1`]
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {
@@ -2874,8 +2893,9 @@ exports[`Tag renders with default styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2905,11 +2925,11 @@ exports[`Tag renders with default styles 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-0:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-0:focus-visible:not(:disabled) {

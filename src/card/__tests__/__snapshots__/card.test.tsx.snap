@@ -51,7 +51,8 @@ exports[`Card renders MQ layout 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 @media screen and (max-width: 479px) {
@@ -140,7 +141,8 @@ exports[`Card renders actions section with given component 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -200,7 +202,8 @@ exports[`Card renders actions section with given component 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -244,8 +247,9 @@ exports[`Card renders actions section with given component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -275,11 +279,11 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -355,9 +359,10 @@ exports[`Card renders actions section with given component 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -390,7 +395,7 @@ exports[`Card renders actions section with given component 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:disabled {
@@ -509,7 +514,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -569,7 +575,8 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
   min-height: 64px;
   position: relative;
   z-index: 2;
@@ -613,8 +620,9 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -644,11 +652,11 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -724,9 +732,10 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -759,7 +768,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:disabled {
@@ -855,7 +864,7 @@ exports[`Card renders actions section with overrides for minHeight 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Card renders actions section with overrides for spaceInset 1`] = `
+exports[`Card renders actions section with overrides for padding 1`] = `
 <DocumentFragment>
   .emotion-0 {
   box-sizing: border-box;
@@ -878,7 +887,8 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -938,7 +948,8 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  padding: 12px 16px;
+  padding-inline: 16px;
+  padding-block: 12px;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -982,8 +993,9 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1013,11 +1025,11 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-7:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-7:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -1093,9 +1105,10 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1128,7 +1141,7 @@ exports[`Card renders actions section with overrides for spaceInset 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:disabled {
@@ -1249,8 +1262,8 @@ exports[`Card renders card with logical props overrides 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
   padding-inline: 30px;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -1333,7 +1346,8 @@ exports[`Card renders card with overrides 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   background-color: #FDDCC6;
-  padding: 4px 8px;
+  padding-inline: 8px;
+  padding-block: 4px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -1414,7 +1428,8 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -1660,7 +1675,8 @@ exports[`Card renders media section if the media data is provided 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -1837,7 +1853,8 @@ exports[`Card renders media section with a custom component 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2014,7 +2031,8 @@ exports[`Card renders media section with a custom component using overrides 1`] 
 
 .emotion-6 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2191,7 +2209,8 @@ exports[`Card renders media section with custom loadingAspectRatio if the media 
 
 .emotion-6 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2369,7 +2388,8 @@ exports[`Card renders media section with overrides 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2546,7 +2566,8 @@ exports[`Card renders with card items 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -2606,7 +2627,8 @@ exports[`Card renders with card items 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -2650,8 +2672,9 @@ exports[`Card renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2681,11 +2704,11 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -2761,9 +2784,10 @@ exports[`Card renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2796,7 +2820,7 @@ exports[`Card renders with card items 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-13:disabled {
@@ -3011,7 +3035,8 @@ exports[`Card renders with custom html attributes and onClick event 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3235,7 +3260,8 @@ exports[`Card with horizontal layout does not apply flex on the sections if inva
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3421,7 +3447,8 @@ exports[`Card with horizontal layout doesnt apply the flex property if none is p
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3613,7 +3640,8 @@ exports[`Card with horizontal layout falls back to default horizontalRatio if a 
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3805,7 +3833,8 @@ exports[`Card with horizontal layout renders correctly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -3997,7 +4026,8 @@ exports[`Card with horizontal layout renders correctly with custom horizontalRat
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -4189,7 +4219,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -4381,7 +4412,8 @@ exports[`Card with horizontal layout renders correctly with horizontal-reverse l
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -4478,7 +4510,8 @@ exports[`Card with href renders correctly with actions 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -4503,7 +4536,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -4513,7 +4546,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -4523,7 +4556,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -4595,7 +4628,8 @@ exports[`Card with href renders correctly with actions 1`] = `
   justify-content: flex-start;
   height: auto;
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
   min-height: 48px;
   position: relative;
   z-index: 2;
@@ -4639,8 +4673,9 @@ exports[`Card with href renders correctly with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4670,11 +4705,11 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
@@ -4750,9 +4785,10 @@ exports[`Card with href renders correctly with actions 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4785,7 +4821,7 @@ exports[`Card with href renders correctly with actions 1`] = `
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-10:disabled {
@@ -4990,7 +5026,8 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 
 .emotion-6 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-6 a:not(.nk-card-link) {
@@ -5015,7 +5052,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5025,7 +5062,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-7:hover:not(:disabled) .nk-headline-heading {
@@ -5035,7 +5072,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 }
 
 .emotion-7:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5149,7 +5186,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -5178,7 +5216,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5373,7 +5411,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -5402,7 +5441,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5412,7 +5451,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
@@ -5422,7 +5461,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5538,7 +5577,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -5548,7 +5587,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5615,7 +5654,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -5644,7 +5684,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5654,7 +5694,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-heading {
@@ -5664,7 +5704,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5780,7 +5820,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   display: inline;
   font: inherit;
   margin: 0;
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-6:hover:not(:disabled) {
@@ -5790,7 +5830,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5855,7 +5895,8 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -5880,7 +5921,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5890,7 +5931,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -5900,7 +5941,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6000,7 +6041,8 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -6025,7 +6067,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6035,7 +6077,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3 .nk-headline-heading {
-  color: #3B3B3B;
+  color: #111111;
 }
 
 .emotion-3:hover:not(:disabled) .nk-headline-heading {
@@ -6045,7 +6087,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 }
 
 .emotion-3:active:not(:disabled) .nk-headline-heading {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6149,25 +6191,29 @@ exports[`CardInset renders card with overrides 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-2 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-2 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -6310,25 +6356,29 @@ exports[`CardInset renders with card items 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-6 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-6 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-6 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-6 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
@@ -6396,25 +6446,29 @@ exports[`CardInset renders with card items 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-9 {
-    padding: 12px 16px;
+    padding-inline: 16px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-9 {
-    padding: 12px 16px;
+    padding-inline: 16px;
+    padding-block: 12px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-9 {
-    padding: 16px 24px;
+    padding-inline: 24px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-9 {
-    padding: 16px 24px;
+    padding-inline: 24px;
+    padding-block: 16px;
   }
 }
 
@@ -6456,8 +6510,9 @@ exports[`CardInset renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6487,11 +6542,11 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  background-color: #E2E2E2;
+  background-color: #F1F1F1;
 }
 
 .emotion-11:active:not(:disabled) {
-  border-width: 1px;
+  background-color: #E2E2E2;
 }
 
 .emotion-11:focus-visible:not(:disabled) {
@@ -6567,9 +6622,10 @@ exports[`CardInset renders with card items 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6602,7 +6658,7 @@ exports[`CardInset renders with card items 1`] = `
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-13:disabled {

@@ -4,7 +4,8 @@ export default {
       controls: {
         button: {
           stylePreset: 'iconButtonSolidPrimary',
-          spaceInset: 'spaceInset000',
+          paddingInline: 'space000',
+          paddingBlock: 'space000',
         },
         offset: 'space040',
       },
@@ -17,7 +18,8 @@ export default {
       controls: {
         button: {
           stylePreset: 'iconButtonSolidPrimary',
-          spaceInset: 'spaceInset000',
+          paddingInline: 'space000',
+          paddingBlock: 'space000',
         },
         offset: 'space040',
       },

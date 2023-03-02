@@ -9,7 +9,7 @@ export default {
   },
   headlineHeadingInteractive: {
     base: {
-      color: '{{colors.inkBase}}',
+      color: '{{colors.inkContrast}}',
     },
     hover: {
       color: '{{colors.interactivePrimary040}}',

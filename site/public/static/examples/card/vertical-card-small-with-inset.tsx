@@ -1,4 +1,3 @@
-
 const myCustomCardTheme = createTheme({
   name: 'my-custom-card-theme',
   overrides: {
@@ -42,7 +41,8 @@ export const CardVerticalSmallWithInset = () => (
           <Block spaceStack="space020">
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingInline: 'space000',
+                paddingBlock: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: 'utilityLabel010',
               }}
