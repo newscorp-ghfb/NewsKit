@@ -14,12 +14,12 @@ import {
   StorybookPage,
   StorybookSubHeading,
 } from '../../../test/storybook-comps';
-import {LinkStandalone} from '../../../link';
 import {Button} from '../../../button';
 import {Cell} from '../../../grid/cell';
 import {Grid} from '../../../grid';
 import {UnorderedList} from '../../../unordered-list';
 import {getStylePresetFromTheme} from '../../../utils';
+import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 
 const StorybookGridCase = ({title, children}) => (
   <Cell xs={12} sm={6}>
@@ -96,10 +96,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
         visited: {
           color: '{{colors.interactiveVisited010}}',
         },
-        // 'focus-visible': {
-        //   ...defaultFocusVisible,
-        //   safariOutlineOffset: '-7px',
-        // },
+        'focus-visible': defaultFocusVisible,
       },
       headlineWithHoverFromParent: {
         base: {
@@ -240,51 +237,6 @@ export const StoryDefault = () => (
           </Block>
         </CardContent>
         <CardMedia src="/placeholder-3x2.png" />
-      </Card>
-    </StorybookCase>
-    <StorybookCase title="with link">
-      <Card
-        overrides={{maxWidth: '250px', stylePreset: 'cardComposableLink'}}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent overrides={{paddingBlock: 'space040'}}>
-          <CardLink href={window.location.href} expand>
-            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
-          </CardLink>
-          <P overrides={{marginBlockStart: 'space020'}} />
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardActions marginBlock="space040">
-          <Tag href="/news">Tag</Tag>
-        </CardActions>
-      </Card>
-    </StorybookCase>
-    <StorybookCase title="With link in action container">
-      <Card
-        overrides={{maxWidth: '250px'}}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent overrides={{paddingBlock: 'space040'}}>
-          <div>
-            <Flag>Flag</Flag>
-          </div>
-          <H overrides={{marginBlockStart: 'space020'}} />
-          <P overrides={{marginBlockStart: 'space020'}} />
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-        <CardActions marginBlock="space040">
-          <LinkStandalone href={window.location.href}>
-            Standalone Link
-          </LinkStandalone>
-        </CardActions>
       </Card>
     </StorybookCase>
   </StorybookPage>
