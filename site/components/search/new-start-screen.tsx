@@ -1,14 +1,8 @@
 import React from 'react';
-import NextLink from 'next/link';
-import {
-  Cell,
-  Grid,
-  TextBlock,
-  LinkStandalone,
-  Stack,
-  toNewsKitIcon,
-} from 'newskit';
+import {Cell, Grid, TextBlock, Stack, toNewsKitIcon} from 'newskit';
+
 import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
+import {Link} from '../link';
 
 const IconFilledChevronRight = toNewsKitIcon(FilledChevronRight);
 
@@ -95,15 +89,15 @@ export const NewStartScreen = () => (
             marginBlockEnd="space080"
           >
             {items.map(({name, href}) => (
-              <NextLink legacyBehavior href={href} passHref key={name}>
-                <LinkStandalone
-                  href={href}
-                  overrides={{typographyPreset: 'utilityLink020'}}
-                >
-                  {name}
-                  <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
-                </LinkStandalone>
-              </NextLink>
+              <Link
+                type="standalone"
+                href={href}
+                key={name}
+                overrides={{typographyPreset: 'utilityLink020'}}
+              >
+                {name}
+                <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
+              </Link>
             ))}
           </Stack>
         </Cell>
