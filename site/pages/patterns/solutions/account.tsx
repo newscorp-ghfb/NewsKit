@@ -72,7 +72,7 @@ const BestPractice = (layoutProps: LayoutProps) => (
                 description:
                   'Manage your subscription and delivery details, including payment info and transactions.',
                 media: getIllustrationComponent(
-                  'patterns/solutions/account/01-subs-billing',
+                  'patterns/solutions/account/03-subs-billing',
                 ),
               },
               {
