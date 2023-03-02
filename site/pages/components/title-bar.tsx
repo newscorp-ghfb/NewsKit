@@ -6,6 +6,8 @@ import {LayoutProps} from '../../components/layout';
 import {MetaStatus} from '../../components/meta';
 import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
+import {commonLogicalProps} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const PlaygroundContainer = styled.div`
   width: 100%;
@@ -362,12 +364,7 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the style preset applied to the title bar heading.',
             },
-            {
-              attribute: 'logicalProps',
-              type: 'MQ<string>',
-              description:
-                "Logical props can define either padding or margins, depending on the element's writing mode, directionality, or text orientation.",
-            },
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
       ],
