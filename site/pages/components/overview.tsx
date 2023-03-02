@@ -2,44 +2,80 @@
 import React from 'react';
 import {
   Block,
-  Cell,
   Grid,
   StructuredList,
   StructuredListCell,
   StructuredListItem,
   TextBlock,
 } from 'newskit';
+import {
+  ContentPrimary,
+  ContentSection,
+} from '../../components/content-structure';
+import Layout, {LayoutProps} from '../../components/layout';
+import {MediaItem, MediaList} from '../../components/media-list';
+import {HeaderIndex} from '../../components/header-index';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {Separator} from '../../components/separator';
+import {routes} from '../../routes';
 import {
   getIllustrationComponent,
   Illustration,
 } from '../../components/illustrations/illustration-loader';
-import Layout, {LayoutProps} from '../../components/layout';
-import {SectionIntroduction} from '../../components/section-introduction';
-import {MediaList} from '../../components/media-list';
-import {HeaderIndex} from '../../components/header-index';
-import {routes} from '../../routes';
+import {Item} from '../../components/sidebar/types';
 import {HeadNextSeo} from '../../components/head-next-seo';
 
 const HeaderImage = () => (
   <Illustration path="components/header-image" viewBox="0 0 1572 997" />
 );
 
-const componentsSubNav: any[] | undefined = routes.find(
-  r => r.title === 'Components',
-)?.subNav;
-const componentCategories =
-  componentsSubNav
-    ?.slice(1)
-    .filter(e => e.id !== '/utils' && e.id !== '/deprecated') || [];
+const componentsRouteList: Item[] =
+  routes.filter(route => route.title === 'Components')[0].subNav || [];
 
-const utilities = componentsSubNav?.find(e => e.id === '/utils');
-const deprecated = componentsSubNav?.find(e => e.id === '/deprecated');
+const componentCategories = componentsRouteList?.slice(1);
+const UtilityCategories =
+  componentsRouteList.filter(route => route.id === '/utils')[0].subNav || [];
+
+const UtilitiesList = () => (
+  <Block stylePreset="componentsUtilitiesStructuredList">
+    <StructuredList divider>
+      {UtilityCategories.map(({title, id, description}: any) => (
+        <StructuredListItem key={id} href={id} ariaLabel={title}>
+          <StructuredListCell>
+            <TextBlock
+              stylePreset="inkContrast"
+              typographyPreset="utilityHeading010"
+            >
+              {title}
+            </TextBlock>
+            <TextBlock
+              marginBlockStart="space030"
+              stylePreset="inkContrast"
+              typographyPreset="utilityBody020"
+            >
+              {description}
+            </TextBlock>
+          </StructuredListCell>
+        </StructuredListItem>
+      ))}
+    </StructuredList>
+  </Block>
+);
+const getCardList = (routeList: Item[]) =>
+  routeList
+    .filter(route => route.page && route?.illustration)
+    .map(({title, description, id, illustration}) => ({
+      media: illustration?.endsWith('.svg')
+        ? {src: illustration, alt: ''}
+        : getIllustrationComponent(illustration as string),
+
+      title,
+      href: id,
+      description,
+    })) as MediaItem[];
 
 const pageDescription = `Components are key building blocks of the NewsKit design system.`;
 
-const OverviewComponent = (layoutProps: LayoutProps) => (
+const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     <HeadNextSeo
       title="Components overview"
@@ -49,135 +85,30 @@ const OverviewComponent = (layoutProps: LayoutProps) => (
         alt: 'Components overview',
       }}
     />
+
     <HeaderIndex title="Components" media={HeaderImage}>
       {pageDescription}
     </HeaderIndex>
     <Grid lgMargin="sizing000" xsRowGutter="sizing000">
-      {componentCategories.map(
-        ({title, description, subNav}: any, i: number) => (
-          <React.Fragment key={title}>
-            {i === 0 ? (
-              <Cell xs={12}>
-                <SectionIntroduction
-                  title={title}
-                  cellProps={{lg: 8, mdOffset: i === 0 ? 1 : undefined}}
-                  subHeadingSpaceStack="space000"
-                >
-                  {description}
-                </SectionIntroduction>
-              </Cell>
-            ) : (
-              <Cell xs={12}>
-                <SectionIntroduction
-                  subHeadingSpaceStack="space080"
-                  title={title}
-                  cellProps={{lg: 8}}
-                >
-                  {description}
-                </SectionIntroduction>
-              </Cell>
-            )}
-            <ComponentPageCell>
-              <MediaList
-                cards={subNav.map((comp: any) => ({
-                  media: comp.illustration
-                    ? getIllustrationComponent(comp.illustration)
-                    : {
-                        src: comp.media,
-                        alt: '',
-                      },
-                  title: comp.title,
-                  href: comp.id,
-                  description: comp.description,
-                }))}
-                gridProps={{xsRowGutter: 'space050'}}
-              />
-            </ComponentPageCell>
-            <ComponentPageCell>
-              <Separator />
-            </ComponentPageCell>
-          </React.Fragment>
-        ),
-      )}
-      <Cell xs={12}>
-        <SectionIntroduction
-          subHeadingSpaceStack="space080"
-          title={utilities.title}
-          cellProps={{lg: 8}}
-        >
-          {utilities.description}
-        </SectionIntroduction>
-        <ComponentPageCell>
-          <Block stylePreset="componentsUtilitiesStructuredList">
-            <StructuredList divider>
-              {utilities?.subNav?.map(
-                (util: {
-                  title: string;
-                  page: boolean;
-                  id: string;
-                  description: string;
-                }) => (
-                  <StructuredListItem
-                    key={util.id}
-                    href={util.id}
-                    ariaLabel={util.title}
-                  >
-                    <StructuredListCell>
-                      <TextBlock
-                        stylePreset="inkContrast"
-                        typographyPreset="utilityHeading010"
-                      >
-                        {util.title}
-                      </TextBlock>
-                      <TextBlock
-                        marginBlockStart="space030"
-                        stylePreset="inkContrast"
-                        typographyPreset="utilityBody020"
-                      >
-                        {util.description}
-                      </TextBlock>
-                    </StructuredListCell>
-                  </StructuredListItem>
-                ),
-              )}
-            </StructuredList>
-          </Block>
-        </ComponentPageCell>
-      </Cell>
       <ComponentPageCell>
-        <Separator />
+        {componentCategories.map(({title, description, subNav = []}) => (
+          <ContentSection sectionName={title as string}>
+            <ContentPrimary
+              headline={title as string}
+              description={description}
+            >
+              {(title === 'Utilities' && <UtilitiesList />) || (
+                <MediaList
+                  cards={getCardList(subNav)}
+                  gridProps={{xsRowGutter: 'space050'}}
+                />
+              )}
+            </ContentPrimary>
+          </ContentSection>
+        ))}
       </ComponentPageCell>
-      <React.Fragment key={deprecated.title}>
-        <Cell xs={12}>
-          <SectionIntroduction
-            subHeadingSpaceStack="space080"
-            title={deprecated.title}
-            cellProps={{lg: 8}}
-          >
-            {deprecated.description}
-          </SectionIntroduction>
-        </Cell>
-        <ComponentPageCell>
-          <MediaList
-            cards={deprecated?.subNav?.map((comp: any) => ({
-              media: comp.illustration
-                ? getIllustrationComponent(comp.illustration)
-                : {
-                    src: comp.media,
-                    alt: '',
-                  },
-              title: comp.title,
-              href: comp.id,
-              description: comp.description,
-            }))}
-            gridProps={{xsRowGutter: 'space050'}}
-          />
-        </ComponentPageCell>
-      </React.Fragment>
     </Grid>
-
-    <Block spaceStack="space070" />
   </Layout>
 );
 
-export default OverviewComponent;
+export default Overview;
