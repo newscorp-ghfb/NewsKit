@@ -1,7 +1,7 @@
 export default {
   audioPlayerVolumeControl: {
     transitionPreset: 'widthChange',
-    spaceBetween: 'space030',
+    spaceBetween: 'space010',
     slider: {
       track: {
         stylePreset: 'audioPlayerVolumeControlTrack',
@@ -23,7 +23,7 @@ export default {
       stylePreset: 'iconButtonMinimalPrimary',
     },
     popover: {
-      distance: 'space030',
+      offset: 'space030',
       stylePreset: 'audioPlayerVolumeControlPopover',
       content: {
         paddingBlock: 'space030',

@@ -63,7 +63,8 @@ export const CardHorizontalMediumWithoutInset = () => (
           <Block spaceStack="space020">
             <Flag
               overrides={{
-                spaceInset: 'spaceInsetSquish000',
+                paddingInline: 'space000',
+                paddingBlock: 'space000',
                 stylePreset: 'cardLabel',
                 typographyPreset: 'utilityLabel010',
               }}

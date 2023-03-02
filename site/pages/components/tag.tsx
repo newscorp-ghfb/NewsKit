@@ -8,6 +8,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {UsageKind} from '../../components/usage-card';
 import {LayoutProps} from '../../components/layout';
 import {IconFilledCircle} from '../../components/icons';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -120,17 +121,10 @@ const commonOverridesRows = [
     default: ['backgroundColorChange'],
     description: 'If provided, overrides the transitionPreset of the tag.',
   },
-  {
-    attribute: 'spaceInset',
-    type: 'MQ<string>',
-    default: [
-      'small = spaceInsetSquish010',
-      'medium = spaceInsetSquish020',
-      'large = spaceInsetSquish020',
-    ],
-    description:
-      "If provided, overrides the padding of the tag. Otherwise, use spaceInsetSquish010 or spaceInsetSquish020, depending on the 'size' prop.",
-  },
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space010', 'medium: space020', 'large: space020'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space030'],
+  }),
   {
     attribute: 'spaceInline',
     type: 'MQ<string>',

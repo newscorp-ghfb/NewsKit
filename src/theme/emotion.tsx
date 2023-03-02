@@ -6,6 +6,7 @@ import {
 } from '@emotion/react';
 import {Theme, UncompiledTheme} from './types';
 import {compileTheme} from './compiler';
+import {themeDiff, CssVariablesContainer, ThemeDiff} from './css-variables';
 
 export const withTheme = (_withTheme as unknown) as <P>(
   comp: React.ComponentType<P & {theme: Theme}>,
@@ -16,13 +17,33 @@ export const useTheme = (_useTheme as unknown) as () => Theme;
 export interface ThemeProviderProps {
   theme: UncompiledTheme | Theme | ((outerTheme: Theme) => Theme);
   children: React.ReactNode;
+  exposeCssVariables?: boolean;
 }
+
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   theme,
+  exposeCssVariables = false,
+  children,
   ...props
-}) => (
-  <EmotionThemeProvider
-    {...props}
-    theme={typeof theme === 'function' ? theme : compileTheme(theme)}
-  />
-);
+}) => {
+  const parentTheme = useTheme();
+  const localTheme =
+    typeof theme === 'function' ? theme(parentTheme) : compileTheme(theme);
+
+  const diff: ThemeDiff = exposeCssVariables
+    ? themeDiff(parentTheme, localTheme)
+    : {};
+
+  const doNotAddCssVariables =
+    !exposeCssVariables || Object.keys(diff).length === 0;
+
+  return (
+    <EmotionThemeProvider {...props} theme={localTheme}>
+      {doNotAddCssVariables ? (
+        children
+      ) : (
+        <CssVariablesContainer diff={diff}>{children}</CssVariablesContainer>
+      )}
+    </EmotionThemeProvider>
+  );
+};

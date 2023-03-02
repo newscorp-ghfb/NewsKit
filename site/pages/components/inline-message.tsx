@@ -14,10 +14,7 @@ import {Mono} from '../../components/flags';
 import {UsageKind} from '../../components/usage-card';
 
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-} from '../../components/component-api/common-logical-props';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -329,13 +326,6 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
               ),
             },
             {
-              attribute: 'spaceInset(deprecated)',
-              type: 'MQ<string>',
-              default: 'spaceInset030',
-              description:
-                'This property is deprecated. Use paddingInline and paddingBlock instead.',
-            },
-            {
               attribute: 'content.title.stylePreset',
               type: 'MQ<string>',
               default: 'inkContrast',
@@ -371,8 +361,10 @@ const InlineMessageComponent = (layoutProps: LayoutProps) => (
               default: 'space030',
               description: 'Overrides the spaceInline of the icon.',
             },
-            ...logicalMarginOverrideProps,
-            ...logicalPaddingOverrideProps,
+            ...getLogicalPropsTable(undefined, '', {
+              paddingInline: 'space030',
+              paddingBlock: 'space030',
+            }),
           ],
         },
       ],

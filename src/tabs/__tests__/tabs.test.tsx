@@ -637,8 +637,8 @@ test('with logical props overrides', () => {
   const props: TabsProps = {
     children: tabsWithLabelAndIcons,
     overrides: {
-      paddingInline: 'space020',
-      paddingBlock: 'space040',
+      paddingInline: 'space050',
+      paddingBlock: 'space060',
       marginBlock: 'space060',
       marginInline: 'space080',
     },

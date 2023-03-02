@@ -49,7 +49,7 @@ export const GridCard = ({title = '', teaser = '', image = '', href = ''}) => {
           <Areas.Thumb alignSelf="end" style={{zIndex: 2, paddingLeft: '12px'}}>
             <Flag>Flag</Flag>
           </Areas.Thumb>
-          <Areas.Content spaceInset="spaceInset030">
+          <Areas.Content paddingBlock="space030" paddingInline="space030">
             <Block spaceStack="space030">
               <Headline
                 kickerText="KICKER"
@@ -124,7 +124,8 @@ export const GridTeaser = ({
             <Image src={image} />
           </Areas.Thumb>
           <Areas.Thumb
-            spaceInset="spaceInset030"
+            paddingBlock="space030"
+            paddingInline="space030"
             alignSelf="end"
             style={{
               zIndex: 2,

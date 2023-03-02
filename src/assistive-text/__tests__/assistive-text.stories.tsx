@@ -121,7 +121,13 @@ export const StoryAssistiveTextLogicalProps = () => (
   <StorybookPage columns="1fr">
     <StorybookCase title="Logical paddings and margins">
       <Block stylePreset="assistiveTextBorderWrapper" marginBlockEnd="space070">
-        <AssistiveText overrides={{paddingBlock: 'space080'}}>
+        <AssistiveText
+          startEnhancer={ENHANCER}
+          endEnhancer={ENHANCER}
+          overrides={{
+            paddingInline: 'space080',
+          }}
+        >
           {LONG_TEXT}
         </AssistiveText>
       </Block>
@@ -131,7 +137,7 @@ export const StoryAssistiveTextLogicalProps = () => (
         <AssistiveText
           startEnhancer={ENHANCER}
           endEnhancer={ENHANCER}
-          overrides={{paddingBlock: 'space080'}}
+          overrides={{marginBlock: 'space080'}}
         >
           {LONG_TEXT}
         </AssistiveText>

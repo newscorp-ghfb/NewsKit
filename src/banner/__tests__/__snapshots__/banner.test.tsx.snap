@@ -35,8 +35,9 @@ exports[`Banner renders with content as react element 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -68,31 +69,31 @@ exports[`Banner renders with content as react element 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -107,19 +108,10 @@ exports[`Banner renders with content as react element 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -300,8 +292,9 @@ exports[`Banner renders with content as react element 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -333,31 +326,31 @@ exports[`Banner renders with content as react element 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -372,19 +365,10 @@ exports[`Banner renders with content as react element 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -567,8 +551,9 @@ exports[`Banner renders with content as string and link 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -600,31 +585,31 @@ exports[`Banner renders with content as string and link 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -639,19 +624,10 @@ exports[`Banner renders with content as string and link 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -790,13 +766,13 @@ exports[`Banner renders with content as string and link 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-9:visited:not(:disabled) {
@@ -945,8 +921,9 @@ exports[`Banner renders with content as string and link 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -978,31 +955,31 @@ exports[`Banner renders with content as string and link 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -1017,19 +994,10 @@ exports[`Banner renders with content as string and link 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -1165,13 +1133,13 @@ exports[`Banner renders with content as string and link 1`] = `
 }
 
 .emotion-9:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-9:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-9:visited:not(:disabled) {
@@ -1325,8 +1293,9 @@ exports[`Banner renders with default props 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -1358,31 +1327,31 @@ exports[`Banner renders with default props 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -1397,19 +1366,10 @@ exports[`Banner renders with default props 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -1582,8 +1542,9 @@ exports[`Banner renders with default props 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -1615,31 +1576,31 @@ exports[`Banner renders with default props 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -1654,19 +1615,10 @@ exports[`Banner renders with default props 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -1841,8 +1793,9 @@ exports[`Banner renders with icon 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -1874,31 +1827,31 @@ exports[`Banner renders with icon 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -1913,19 +1866,10 @@ exports[`Banner renders with icon 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -2175,8 +2119,9 @@ exports[`Banner renders with icon 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -2208,31 +2153,31 @@ exports[`Banner renders with icon 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -2247,19 +2192,10 @@ exports[`Banner renders with icon 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -2481,8 +2417,9 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   .emotion-0 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -2514,31 +2451,31 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 
 @media screen {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -2553,19 +2490,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 
 @media screen {
   .emotion-3 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -2714,9 +2642,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2749,7 +2678,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-10:disabled {
@@ -2892,8 +2821,9 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   .emotion-0 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -2925,31 +2855,31 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 
 @media screen {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -2964,19 +2894,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 
 @media screen {
   .emotion-3 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -3128,9 +3049,10 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3163,7 +3085,7 @@ exports[`Banner renders with multiple action buttons and overridden spaceInline 
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-10:disabled {
@@ -3306,8 +3228,9 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -3339,31 +3262,31 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 
 @media screen {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -3378,19 +3301,10 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 
 @media screen {
   .emotion-3 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -3543,9 +3457,10 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3578,7 +3493,7 @@ exports[`Banner renders with single action button on horizontal layout 1`] = `
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-10:disabled {
@@ -3706,8 +3621,9 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -3739,31 +3655,31 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 
 @media screen {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -3778,19 +3694,10 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 
 @media screen {
   .emotion-3 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -3908,8 +3815,8 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin-top: calc(-24px/2);
-  margin-bottom: calc(-24px/2);
+  margin-top: calc(-16px/2);
+  margin-bottom: calc(-16px/2);
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -3920,8 +3827,8 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: calc(24px/2);
-  margin-bottom: calc(24px/2);
+  margin-top: calc(16px/2);
+  margin-bottom: calc(16px/2);
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -3946,9 +3853,10 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3981,7 +3889,7 @@ exports[`Banner renders with single action button on vertical layout 1`] = `
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-10:disabled {
@@ -4139,8 +4047,9 @@ exports[`Banner renders with title 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -4172,31 +4081,31 @@ exports[`Banner renders with title 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -4211,19 +4120,10 @@ exports[`Banner renders with title 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -4430,8 +4330,9 @@ exports[`Banner renders with title 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -4463,31 +4364,31 @@ exports[`Banner renders with title 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -4502,19 +4403,10 @@ exports[`Banner renders with title 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -4693,8 +4585,9 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   .emotion-0 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -4726,31 +4619,31 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 
 @media screen {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -4765,19 +4658,10 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 
 @media screen {
   .emotion-3 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -4930,9 +4814,10 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4965,7 +4850,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-10:disabled {
@@ -5059,11 +4944,12 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5109,7 +4995,7 @@ exports[`Banner with action and close buttons renders correctly on horizontal la
 }
 
 .emotion-13:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -5253,8 +5139,9 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   .emotion-0 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -5286,31 +5173,31 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 
 @media screen {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -5325,19 +5212,10 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 
 @media screen {
   .emotion-3 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -5455,8 +5333,8 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin-top: calc(-24px/2);
-  margin-bottom: calc(-24px/2);
+  margin-top: calc(-16px/2);
+  margin-bottom: calc(-16px/2);
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -5467,8 +5345,8 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: calc(24px/2);
-  margin-bottom: calc(24px/2);
+  margin-top: calc(16px/2);
+  margin-bottom: calc(16px/2);
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -5493,10 +5371,11 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5547,7 +5426,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -5619,9 +5498,10 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5654,7 +5534,7 @@ exports[`Banner with action and close buttons renders correctly on vertical layo
 }
 
 .emotion-13:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-13:disabled {
@@ -5774,8 +5654,9 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -5807,31 +5688,31 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 
 @media screen {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -5846,19 +5727,10 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 
 @media screen {
   .emotion-3 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -6008,11 +5880,12 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6058,7 +5931,7 @@ exports[`Banner with close button renders correctly on horizontal layout 1`] = `
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6187,8 +6060,9 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   .emotion-0 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-0 svg {
@@ -6220,31 +6094,31 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 
 @media screen {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -6259,19 +6133,10 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 
 @media screen {
   .emotion-3 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-3 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -6389,8 +6254,8 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin-top: calc(-24px/2);
-  margin-bottom: calc(-24px/2);
+  margin-top: calc(-16px/2);
+  margin-bottom: calc(-16px/2);
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -6401,8 +6266,8 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: calc(24px/2);
-  margin-bottom: calc(24px/2);
+  margin-top: calc(16px/2);
+  margin-bottom: calc(16px/2);
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -6427,10 +6292,11 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 100%;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6481,7 +6347,7 @@ exports[`Banner with close button renders correctly on vertical layout 1`] = `
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #FFFFFF;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6626,8 +6492,9 @@ exports[`renders grid and cell overrides on banner 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -6659,31 +6526,31 @@ exports[`renders grid and cell overrides on banner 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 4px 0 4px;
+    margin: -0px 12px 0 12px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 4px 0 4px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 16px 0 16px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 24px 0 24px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -6698,8 +6565,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -6714,13 +6579,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -6838,8 +6696,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  margin-top: calc(-24px/2);
-  margin-bottom: calc(-24px/2);
+  margin-top: calc(-16px/2);
+  margin-bottom: calc(-16px/2);
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -6850,8 +6708,8 @@ exports[`renders grid and cell overrides on banner 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: calc(24px/2);
-  margin-bottom: calc(24px/2);
+  margin-top: calc(16px/2);
+  margin-bottom: calc(16px/2);
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -6876,9 +6734,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6911,7 +6770,7 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-11:disabled {
@@ -7083,8 +6942,9 @@ exports[`renders grid and cell overrides on banner 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-1 svg {
@@ -7116,31 +6976,31 @@ exports[`renders grid and cell overrides on banner 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 4px 0 4px;
+    margin: -0px 12px 0 12px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 4px 0 4px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 16px 0 16px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 24px 0 24px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -7155,8 +7015,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -7171,13 +7029,6 @@ exports[`renders grid and cell overrides on banner 1`] = `
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
     max-width: 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -7330,9 +7181,10 @@ exports[`renders grid and cell overrides on banner 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7365,7 +7217,7 @@ exports[`renders grid and cell overrides on banner 1`] = `
 }
 
 .emotion-11:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-11:disabled {
@@ -7542,9 +7394,9 @@ exports[`renders with logical props overrides 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
   margin-block: 30px;
+  padding-inline: 16px;
   padding-block: 30px;
 }
 
@@ -7577,31 +7429,31 @@ exports[`renders with logical props overrides 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -7616,19 +7468,10 @@ exports[`renders with logical props overrides 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 
@@ -7801,9 +7644,9 @@ exports[`renders with logical props overrides 1`] = `
 .emotion-1 {
   box-sizing: border-box;
   background-color: #017582;
-  padding: 20px;
   min-height: 64px;
   margin-block: 30px;
+  padding-inline: 16px;
   padding-block: 30px;
 }
 
@@ -7836,31 +7679,31 @@ exports[`renders with logical props overrides 1`] = `
 
 @media screen {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-3 {
-    margin: -16px 8px 0 8px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    margin: -24px 12px 0 12px;
+    margin: -0px 0px 0 0px;
   }
 }
 
@@ -7875,19 +7718,10 @@ exports[`renders with logical props overrides 1`] = `
 
 @media screen {
   .emotion-4 {
-    padding: 0 8px;
-    margin-top: 16px;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-4 {
-    padding: 0 12px;
-    margin-top: 24px;
   }
 }
 

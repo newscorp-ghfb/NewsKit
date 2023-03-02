@@ -1,5 +1,6 @@
 import {StylePreset} from '../theme/types';
 import {defaultFocusVisible} from '../utils/default-focus-visible';
+import {inverseFocusVisible} from '../utils/inverse-focus-visible';
 
 export default {
   tagPrimary: {
@@ -13,10 +14,10 @@ export default {
       borderRadius: '{{borders.borderRadiusSharp}}',
     },
     hover: {
-      backgroundColor: '{{colors.interactiveSecondary020}}',
+      backgroundColor: '{{colors.interactiveSecondary010}}',
     },
     active: {
-      borderWidth: '{{borders.borderWidth010}}',
+      backgroundColor: '{{colors.interactiveSecondary020}}',
     },
     'focus-visible': defaultFocusVisible,
   },
@@ -36,6 +37,6 @@ export default {
     active: {
       backgroundColor: '{{colors.interactiveInverse020}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 } as Record<string, StylePreset>;
