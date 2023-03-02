@@ -6,8 +6,7 @@ import {UsageKind} from '../../components/usage-card';
 import {InlineCode} from '../../components/markdown-elements';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
-import {commonLogicalProps} from '../../components/component-api/common-logical-props';
-import {OverridesRowsProps} from '../../components/component-api';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 
@@ -476,25 +475,19 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
                 'Takes one space token to specify the logical block start and end size of the container. Can be used on breakpoints',
             },
             {
-              attribute: 'input.InlineSize',
+              attribute: 'input.inlineSize',
               type: 'MQ<string>',
               default: ['Small = 44px', 'Medium = 60px', 'Large = 76px'],
               description:
                 'Takes one space token to specify the logical inline start and end size of the container. Can be used on breakpoints',
             },
-            {
-              attribute: 'input.paddingInline',
-              type: 'MQ<string>',
-              default: 'space010',
-              description:
-                'Takes one space token to specify the logical inline start and end margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'input.margin and padding',
-              type: 'MQ<string>',
-              description:
-                'Takes one space token to specify the logical inline start and end margin of the container. Can be used on breakpoints',
-            },
+            ...getLogicalPropsTable(undefined, 'input', {
+              paddingInline: [
+                'small: space010',
+                'medium: space010',
+                'large: space010',
+              ],
+            }),
             {
               attribute: 'input.spaceInline',
               type: 'MQ<string>',
@@ -523,18 +516,18 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the stylePreset of the switch',
             },
-            {
-              attribute: 'thumb.paddingInline',
-              type: 'MQ<string>',
-              default: 'space010',
-              description: '',
-            },
-            {
-              attribute: 'thumb.paddingBlock',
-              type: 'MQ<string>',
-              default: 'space010',
-              description: '',
-            },
+            ...getLogicalPropsTable(undefined, 'thumb', {
+              paddingBlock: [
+                'small: space010',
+                'medium: space010',
+                'large: space010',
+              ],
+              paddingInline: [
+                'small: space010',
+                'medium: space010',
+                'large: space010',
+              ],
+            }),
             {
               attribute: 'thumb.transitionPreset',
               type: 'MQ<string>',
@@ -607,7 +600,6 @@ const SwitchComponent = (layoutProps: LayoutProps) => (
               type: 'Override<BaseSwitchIconProps>',
               description: 'If provided, overrides the thumb icon',
             },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
       ],

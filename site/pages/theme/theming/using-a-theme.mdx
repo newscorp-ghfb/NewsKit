@@ -15,7 +15,7 @@ To render NewsKit components you must have a theme available for them to utilise
 
 ### NewsKitProvider & ThemeProvider components
 
-NewsKitProvider provides a single wrapper to configure your application which includes ThemeProvider, <Link href="/components/utils/hooks/#usemediaqueryobject">MediaQueryProvider</Link>, <Link href="/getting-started/code/instrumentation/">InstrumentationProvider</Link> and LayerOrganizer.
+NewsKitProvider provides a single wrapper to configure your application which includes ThemeProvider, <Link href="/components/utils/hooks/#usemediaqueryobject">MediaQueryProvider</Link>, <Link href="/getting-started/code/instrumentation/">InstrumentationProvider</Link> and <Link href="/components/layer/">LayerOrganizer</Link>.
 
 A ThemeProvider utilises a React Context to provide a theme to all NewsKit components descended under it. You pass your theme (or a NewsKit default) to the `theme` prop. This will typically be an uncompiled theme, but you can pass a pre-compiled theme if you wish.
 
@@ -54,3 +54,28 @@ By wrapping your component in `withTheme`, the theme object will be passed into 
 The `useTheme` hook also allows you to access the theme, but helps avoid the extra "wrapper hell" that higher-order components bring.
 
 <CodeFromFile path="examples/theming/use-theme.tsx" />
+
+## Using CSS custom properties (variables)
+
+NewsKit provides a way to expose the following tokens as CSS variables: `borders`, `colors`, `overlays`, `motions`, `shadows`, `sizing`, `spacePresets` and `fonts`.
+
+Color tokens have prefix of `color` for example `inkBase` is `--color-inkBase`, the rest of the tokens are keeping their names like `sizing020` is `--sizing020`.
+
+In order to enable that functionality to your project, you need to add a prop `exposeCssVariables` to ThemeProvider, or pass it as themeOptions to NewsKitProvider as the example bellow:
+
+<Code>
+{`<NewsKitProvider theme={yourTheme} themeOptions={{exposeCssVariables: true}}>
+  Main theme context
+
+  <ThemeProvider theme={yourSubTheme} exposeCssVariables>Sub-theme context</ThemeProvider>
+</NewsKitProvider>`}
+</Code>
+
+<InlineMessage
+  overrides={{marginBlockStart: 'space030'}}
+  role="region"
+  aria-label="css variables"
+>
+  Exposing CSS variables will add aditional <strong>div</strong> element to your
+  HTML
+</InlineMessage>

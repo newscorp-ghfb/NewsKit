@@ -81,7 +81,7 @@ describe('scroll', () => {
   });
 
   it('vertical flow', () => {
-    const defaultStepDistance = 160;
+    const defaultStepDistance = 114;
     cy.visit('?name=scroll');
 
     cy.get('[data-testid="vertical-scroll-component"]').within(() => {

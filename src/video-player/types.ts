@@ -37,14 +37,12 @@ type VideoPlayerOverrides = {
     };
     currentDuration?: {
       stylePreset?: MQ<string>;
-      spaceInset?: MQ<string>;
       typographyPreset?: MQ<string>;
-    };
+    } & LogicalProps;
     seekPosition?: {
       stylePreset?: MQ<string>;
-      spaceInset?: MQ<string>;
       typographyPreset?: MQ<string>;
-    };
+    } & LogicalProps;
   };
   controlBar?: {
     stylePreset?: MQ<string>;
@@ -76,7 +74,6 @@ type VideoPlayerOverrides = {
   };
   dockText?: {
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
     title?: {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
@@ -86,10 +83,9 @@ type VideoPlayerOverrides = {
       stylePreset?: MQ<string>;
       typographyPreset?: MQ<string>;
     };
-  };
+  } & LogicalProps;
   miniCardOverlay?: {
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
     countdown?: {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
@@ -99,10 +95,8 @@ type VideoPlayerOverrides = {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
     };
-    closeButton?: {
-      spaceInset?: MQ<string>;
-    };
-  };
+    closeButton?: LogicalProps;
+  } & LogicalProps;
 } & LogicalProps;
 
 export interface VideoPlayerProps {

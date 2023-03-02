@@ -3,9 +3,10 @@ export default {
     small: {
       button: {
         stylePreset: 'inputField',
-        minHeight: 'sizing060',
+        minHeight: 'sizing070',
         width: '100%',
-        spaceInset: 'spaceInset020',
+        paddingInline: 'space020',
+        paddingBlock: 'space020',
         spaceStack: 'space020',
         spaceInline: 'space020',
         typographyPreset: 'utilityBody020',
@@ -30,7 +31,7 @@ export default {
         spaceStack: 'space010',
         stylePreset: 'selectPanel',
         maxHeight: '184px',
-        spaceInset: 'spaceInset020',
+        paddingBlock: 'space020',
         zIndex: 'layer',
       },
       modal: {
@@ -44,10 +45,11 @@ export default {
         stylePreset: 'inputField',
         minHeight: 'sizing080',
         width: '100%',
-        spaceInset: 'spaceInset020',
+        paddingInline: 'space030',
+        paddingBlock: 'space030',
         spaceStack: 'space020',
         spaceInline: 'space020',
-        typographyPreset: 'utilityBody020',
+        typographyPreset: 'utilityBody030',
         // @deprecated This property is deprecated and will be removed in the next major release. Use `indicatorIcon.size` instead.
         iconSize: 'iconSize020',
         indicatorIcon: {
@@ -69,7 +71,7 @@ export default {
         spaceStack: 'space010',
         stylePreset: 'selectPanel',
         maxHeight: '272px',
-        spaceInset: 'spaceInset020',
+        paddingBlock: 'space020',
         zIndex: 'layer',
       },
       modal: {
@@ -83,7 +85,8 @@ export default {
         stylePreset: 'inputField',
         minHeight: 'sizing090',
         width: '100%',
-        spaceInset: 'spaceInset030',
+        paddingInline: 'space040',
+        paddingBlock: 'space040',
         spaceStack: 'space020',
         spaceInline: 'space020',
         typographyPreset: 'utilityBody030',
@@ -108,7 +111,7 @@ export default {
         spaceStack: 'space010',
         stylePreset: 'selectPanel',
         maxHeight: '360px',
-        spaceInset: 'spaceInset020',
+        paddingBlock: 'space020',
         zIndex: 'layer',
       },
       modal: {
@@ -122,7 +125,8 @@ export default {
     small: {
       minHeight: 'sizing060',
       spaceInline: 'space020',
-      spaceInset: 'spaceInsetSquish010',
+      paddingInline: 'space020',
+      paddingBlock: 'space010',
       stylePreset: 'selectOptionItem',
       typographyPreset: 'utilityBody020',
       icon: {
@@ -131,9 +135,10 @@ export default {
       },
     },
     medium: {
-      minHeight: 'sizing080',
+      minHeight: 'sizing070',
       spaceInline: 'space020',
-      spaceInset: 'spaceInset020',
+      paddingInline: 'space030',
+      paddingBlock: 'space020',
       stylePreset: 'selectOptionItem',
       typographyPreset: 'utilityBody020',
       icon: {
@@ -142,9 +147,10 @@ export default {
       },
     },
     large: {
-      minHeight: 'sizing090',
+      minHeight: 'sizing080',
       spaceInline: 'space020',
-      spaceInset: 'spaceInsetStretch030',
+      paddingInline: 'space040',
+      paddingBlock: 'space030',
       stylePreset: 'selectOptionItem',
       typographyPreset: 'utilityBody030',
       icon: {

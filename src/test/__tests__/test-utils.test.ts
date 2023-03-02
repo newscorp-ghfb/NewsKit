@@ -1,7 +1,7 @@
 import React from 'react';
 import {fireEvent} from '@testing-library/react';
 import {renderWithImplementation, renderWithThemeInBody} from '../test-utils';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {LinkProps} from '../../link/types';
 
 const ThemedLink: React.FC = () =>
@@ -10,7 +10,7 @@ const ThemedLink: React.FC = () =>
 describe('Test utils', () => {
   test('renderWithImplementation works correctly if fireEvent not provided as param', async () => {
     const onClickHandler = jest.fn();
-    const {findByText} = renderWithImplementation(Link, {
+    const {findByText} = renderWithImplementation(LinkInline, {
       href: 'example.com',
       children: 'test link text',
       onClick: onClickHandler,

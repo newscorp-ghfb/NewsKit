@@ -188,7 +188,8 @@ describe('BreadcrumbItem', () => {
         minWidth: '10px',
         minHeight: '11px',
         spaceInline: 'space030',
-        spaceInset: 'space030',
+        paddingBlock: 'space030',
+        paddingInline: 'space030',
         iconSize: 'iconSize030',
       },
     };

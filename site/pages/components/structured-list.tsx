@@ -17,6 +17,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
@@ -480,29 +481,27 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               description: `If provided, overrides the stylePreset applied to the structuredListItem's outer container. Can be used to override the background colour of the structuredListItem`,
             },
             {
-              attribute: 'Label',
+              attribute: 'minHeight',
               type: 'MQ<string>',
               default: 'sizing100',
               description: `If provided, overrides the minHeight applied to the structuredListItem's outermost container`,
             },
             {
-              attribute: 'Label',
-              type: 'MQ<string>',
-              default: 'spaceInsetStretch040',
-              description: `If provided, overrides the spaceInset applied to the structuredListItem's outermost container`,
-            },
-            {
-              attribute: 'Label',
+              attribute: 'icon.size',
               type: 'string',
               default: 'iconSize010',
               description: `If provided with a sizing token, this will override the size of StructuredListItem's default icon.`,
             },
             {
-              attribute: 'Label',
+              attribute: 'icon.stylePreset',
               type: 'MQ<string>',
               default: 'inkContrast',
               description: `If provided, this overrides the stylePreset applied to the StructuredListItem's default icon`,
             },
+            ...getLogicalPropsTable(logicalPaddingOverrideProps, undefined, {
+              paddingBlock: 'space050',
+              paddingInline: 'space040',
+            }),
           ],
         },
         {

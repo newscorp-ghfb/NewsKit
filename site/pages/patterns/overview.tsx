@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid} from 'newskit';
+import {Grid, ThemeProvider} from 'newskit';
 import {routes} from '../../routes';
 import Layout, {LayoutProps} from '../../components/layout';
 import {Item} from '../../components/sidebar/types';
@@ -16,7 +16,6 @@ import {
   ContentPrimary,
   ContentSection,
 } from '../../components/content-structure';
-import {ThemeProviderSite} from '../../components/theme-provider-site';
 
 const patternsRouteList: Item[] =
   routes.filter(route => route.title === 'Patterns')[0].subNav || [];
@@ -62,7 +61,8 @@ const HeaderImage = () => (
 const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     {({themeMode}) => (
-      <ThemeProviderSite
+      <ThemeProvider
+        exposeCssVariables
         theme={themeMode === 'light' ? patternsThemeLight : patternsThemeDark}
       >
         <HeadNextSeo
@@ -114,7 +114,7 @@ const Overview = (layoutProps: LayoutProps) => (
             </ContentSection>
           </ComponentPageCell>
         </Grid>
-      </ThemeProviderSite>
+      </ThemeProvider>
     )}
   </Layout>
 );

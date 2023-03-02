@@ -256,7 +256,7 @@ exports[`Block with simple style props renders a styled div 1`] = `
 <DocumentFragment>
   .emotion-0 {
   color: #09111C;
-  background-color: #14328D;
+  background-color: #12387A;
   font-family: "DM Sans",sans-serif;
   font-weight: 400;
   font-size: 14px;

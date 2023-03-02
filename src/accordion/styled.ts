@@ -63,3 +63,9 @@ export const StyledPanel = styled.div<
   ${getStylePreset('accordion.panel', 'panel')};
   ${logicalProps('accordion.panel', 'panel')}
 `;
+
+export const StyledAccordionWrapper = styled.div<
+  Pick<AccordionProps, 'overrides' | 'expanded'>
+>`
+  ${logicalProps('accordion')}
+`;

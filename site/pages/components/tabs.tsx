@@ -8,6 +8,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
@@ -373,18 +374,18 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the selection indicator typography of the text label in the tab',
             },
-            {
-              attribute: 'spaceInset',
-              type: 'MQ<string>',
-
-              default: [
-                'Small = spaceInsetSquish020',
-                'Medium = spaceInsetSquish030',
-                'Large = spaceInsetSquish030',
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingBlock: [
+                'small: space020',
+                'medium: space030',
+                'large: space040',
               ],
-              description:
-                'If provided, overrides the inset space within the tab',
-            },
+              paddingInline: [
+                'small: space030',
+                'medium: space040',
+                'large: space050',
+              ],
+            }),
             {
               attribute: 'spaceInline',
               type: 'MQ<string>',

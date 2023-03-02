@@ -92,6 +92,47 @@ describe('Video Player', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test(`renders video player with logical props component defauts`, () => {
+    const {asFragment} = renderWithTheme(
+      VideoPlayer,
+      {
+        config: DEFATULT_VIDEO_PLAYER_CONFIG,
+        overrides: {
+          seekBar: {
+            currentDuration: {
+              paddingBlock: 'space030',
+              paddingInline: 'space040',
+            },
+            seekPosition: {
+              paddingBlock: 'space030',
+              paddingInline: 'space040',
+            },
+          },
+          dockText: {
+            paddingInline: {
+              xs: 'space030',
+              md: 'space040',
+            },
+            paddingBlock: {
+              xs: 'space030',
+              md: 'space040',
+            },
+          },
+          miniCardOverlay: {
+            paddingBlock: 'space030',
+            paddingInline: 'space040',
+            closeButton: {
+              paddingBlock: 'space020',
+              paddingInline: 'space020',
+            },
+          },
+        },
+      },
+      myCustomTheme,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   test(`renders video player with logical props`, () => {
     const {asFragment} = renderWithTheme(
       VideoPlayer,
