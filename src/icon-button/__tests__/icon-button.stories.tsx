@@ -19,7 +19,7 @@ const InverseContainer = styled.div`
 export const StoryIconButtonDefault = () => (
   <StorybookPage>
     <StorybookCase>
-      <IconButton>
+      <IconButton aria-label="icon button">
         <IconFilledAddCircle />
       </IconButton>
     </StorybookCase>
@@ -30,17 +30,17 @@ StoryIconButtonDefault.storyName = 'Default';
 export const StoryIconButtonSize = () => (
   <StorybookPage columns="1fr 1fr 1fr">
     <StorybookCase title="Small">
-      <IconButton size="small">
+      <IconButton size="small" aria-label="small icon button">
         <IconFilledAddCircle />
       </IconButton>
     </StorybookCase>
     <StorybookCase title="Medium">
-      <IconButton size="medium">
+      <IconButton size="medium" aria-label="medium icon button">
         <IconFilledAddCircle />
       </IconButton>
     </StorybookCase>
     <StorybookCase title="Large">
-      <IconButton size="large">
+      <IconButton size="large" aria-label="large icon button">
         <IconFilledAddCircle />
       </IconButton>
     </StorybookCase>
@@ -69,23 +69,34 @@ export const StoryIconButtonPrimary = () => {
               columns={DEFAULT_BUTTON_COLS}
             >
               <StorybookCase title="Default">
-                <IconButton overrides={{stylePreset}}>
+                <IconButton
+                  overrides={{stylePreset}}
+                  aria-label="default icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Focus">
-                <IconButton overrides={{stylePreset}} autoFocus>
+                <IconButton
+                  overrides={{stylePreset}}
+                  autoFocus
+                  aria-label="focus icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Disabled">
-                <IconButton overrides={{stylePreset}} disabled>
+                <IconButton
+                  overrides={{stylePreset}}
+                  disabled
+                  aria-label="disabled icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Loading">
                 <IconButton
-                  aria-label="Loading"
+                  aria-label="loading icon button"
                   overrides={{
                     stylePreset,
                     loadingIndicator: {
@@ -127,23 +138,34 @@ export const StoryIconButtonSecondary = () => {
               columns={DEFAULT_BUTTON_COLS}
             >
               <StorybookCase title="Default">
-                <IconButton overrides={{stylePreset}}>
+                <IconButton
+                  overrides={{stylePreset}}
+                  aria-label="default icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Focus">
-                <IconButton overrides={{stylePreset}} autoFocus>
+                <IconButton
+                  overrides={{stylePreset}}
+                  autoFocus
+                  aria-label="focus icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Disabled">
-                <IconButton overrides={{stylePreset}} disabled>
+                <IconButton
+                  overrides={{stylePreset}}
+                  disabled
+                  aria-label="disabled icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Loading">
                 <IconButton
-                  aria-label="Loading"
+                  aria-label="loading icon button"
                   overrides={{
                     stylePreset,
                     loadingIndicator: {
@@ -185,23 +207,34 @@ export const StoryIconButtonNegative = () => {
               columns={DEFAULT_BUTTON_COLS}
             >
               <StorybookCase title="Default">
-                <IconButton overrides={{stylePreset}}>
+                <IconButton
+                  overrides={{stylePreset}}
+                  aria-label="default icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Focus">
-                <IconButton overrides={{stylePreset}} autoFocus>
+                <IconButton
+                  overrides={{stylePreset}}
+                  autoFocus
+                  aria-label="focus icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Disabled">
-                <IconButton overrides={{stylePreset}} disabled>
+                <IconButton
+                  overrides={{stylePreset}}
+                  disabled
+                  aria-label="disabled icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Loading">
                 <IconButton
-                  aria-label="Loading"
+                  aria-label="loading icon button"
                   overrides={{
                     stylePreset,
                     loadingIndicator: {
@@ -243,23 +276,34 @@ export const StoryIconButtonPositive = () => {
               columns={DEFAULT_BUTTON_COLS}
             >
               <StorybookCase title="Default">
-                <IconButton overrides={{stylePreset}}>
+                <IconButton
+                  overrides={{stylePreset}}
+                  aria-label="default icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Focus">
-                <IconButton overrides={{stylePreset}} autoFocus>
+                <IconButton
+                  overrides={{stylePreset}}
+                  autoFocus
+                  aria-label="focus icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Disabled">
-                <IconButton overrides={{stylePreset}} disabled>
+                <IconButton
+                  overrides={{stylePreset}}
+                  disabled
+                  aria-label="disabled icon button"
+                >
                   <IconFilledAddCircle />
                 </IconButton>
               </StorybookCase>
               <StorybookCase title="Loading">
                 <IconButton
-                  aria-label="Loading"
+                  aria-label="loading icon button"
                   overrides={{
                     stylePreset,
                     loadingIndicator: {
@@ -309,23 +353,34 @@ export const StoryIconButtonInverse = () => {
                 columns={DEFAULT_BUTTON_COLS}
               >
                 <StorybookCase inverse title="Default">
-                  <IconButton overrides={{stylePreset}}>
+                  <IconButton
+                    overrides={{stylePreset}}
+                    aria-label="default icon button"
+                  >
                     <IconFilledAddCircle />
                   </IconButton>
                 </StorybookCase>
                 <StorybookCase inverse title="Focus">
-                  <IconButton overrides={{stylePreset}} autoFocus>
+                  <IconButton
+                    overrides={{stylePreset}}
+                    autoFocus
+                    aria-label="focus icon button"
+                  >
                     <IconFilledAddCircle />
                   </IconButton>
                 </StorybookCase>
                 <StorybookCase inverse title="Disabled">
-                  <IconButton overrides={{stylePreset}} disabled>
+                  <IconButton
+                    overrides={{stylePreset}}
+                    disabled
+                    aria-label="disabled icon button"
+                  >
                     <IconFilledAddCircle />
                   </IconButton>
                 </StorybookCase>
                 <StorybookCase inverse title="Loading">
                   <IconButton
-                    aria-label="Loading"
+                    aria-label="loading icon button"
                     overrides={{
                       stylePreset,
                       loadingIndicator: {
@@ -356,7 +411,7 @@ export const StoryIconButtonTooltip = () => (
         placement="right"
         trigger={['focus', 'hover']}
       >
-        <IconButton>
+        <IconButton aria-label="tooltip icon button">
           <IconFilledLaunch />
         </IconButton>
       </Tooltip>
@@ -369,7 +424,7 @@ export const StoryIconButtonAsLink = () => (
   <StorybookPage>
     <StorybookCase>
       <IconButton
-        aria-label="Link icon"
+        aria-label="link icon button"
         target="_blank"
         href="https://www.newskit.co.uk/"
       >
@@ -383,7 +438,10 @@ StoryIconButtonAsLink.storyName = 'As a link';
 export const StoryIconButtonStylingOverrides = () => (
   <StorybookPage>
     <StorybookCase>
-      <IconButton overrides={{stylePreset: 'stylingOverrides'}}>
+      <IconButton
+        overrides={{stylePreset: 'stylingOverrides'}}
+        aria-label="styling overrides icon button"
+      >
         <IconFilledAddCircle />
       </IconButton>
     </StorybookCase>
@@ -400,12 +458,16 @@ export const StoryIconButtonOverrides = () => (
           paddingInline: 'space060',
           paddingBlock: 'space050',
         }}
+        aria-label="logical props icon button"
       >
         <IconFilledAddCircle />
       </IconButton>
     </StorybookCase>
     <StorybookCase title="Custom outline">
-      <IconButton overrides={{stylePreset: 'customOutlineStyle'}}>
+      <IconButton
+        overrides={{stylePreset: 'customOutlineStyle'}}
+        aria-label="custom outline icon button"
+      >
         <IconFilledAddCircle />
       </IconButton>
     </StorybookCase>
