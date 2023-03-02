@@ -5,6 +5,7 @@ import {Block} from '../../../block';
 import {
   getStylePreset,
   getTransitionPresetFromTheme,
+  getStylePresetFromTheme,
   styled,
 } from '../../../utils/style';
 import {Button} from '../../../button';
@@ -278,6 +279,7 @@ export const CardActions = ({
 };
 
 const StyledCardLink = styled(GridLayout)<{expand?: boolean}>`
+  ${getStylePresetFromTheme('headlineLink')};
   text-decoration: none;
   ${props =>
     props.expand &&
