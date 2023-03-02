@@ -1,8 +1,8 @@
 export const overlays = {
   overlayGradientInverseVertical:
-    'linear-gradient(180deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)',
+    'linear-gradient(0deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)',
   overlayGradientBaseVertical:
-    'linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)',
+    'linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)',
 
   overlayGradientInverseHorizontal:
     'linear-gradient(-90deg, rgba(17,17,17,0.00) 0%, rgba(17,17,17,1.00) 100%)',
