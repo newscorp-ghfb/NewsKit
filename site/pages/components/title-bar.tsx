@@ -1,5 +1,5 @@
 import React from 'react';
-import {TitleBar, styled, Link, LinkInline, Paragraph, Button} from 'newskit';
+import {TitleBar, styled, LinkInline, Paragraph, Button} from 'newskit';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {LayoutProps} from '../../components/layout';
@@ -119,7 +119,7 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
               },
               {
                 label: 'Link',
-                value: () => <Link href="/">Link</Link>,
+                value: () => <LinkInline href="/">Link</LinkInline>,
                 isDefault: true,
               },
               {
