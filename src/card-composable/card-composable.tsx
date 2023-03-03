@@ -52,7 +52,13 @@ const StyledCardMedia = styled(GridLayout)<{useAreas: boolean}>`
   ${prop => prop.useAreas && `grid-area: media;`}
 `;
 
-export const CardMedia = ({src, loadingAspectRatio = '3:2'}) => {
+export const CardMedia = ({
+  src,
+  loadingAspectRatio = '3:2',
+}: {
+  src: string;
+  loadingAspectRatio?: string;
+}) => {
   const {useAreas} = useCardContext();
   return (
     <StyledCardMedia useAreas={useAreas}>
