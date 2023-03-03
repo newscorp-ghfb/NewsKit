@@ -279,11 +279,15 @@ export const StoryDefault = () => (
         actions
       `}
     >
+      <CardActions>
+        <Tag href="/news">Tag</Tag>
+      </CardActions>
       <CardContent overrides={{paddingBlock: 'space040'}}>
-        <H />
-        <Block marginBlock="space020">
-          <P />
-        </Block>
+        <div>
+          <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
+        </div>
+        <H overrides={{marginBlockStart: 'space020'}} />
+        <P overrides={{marginBlockStart: 'space020'}} />
       </CardContent>
       <CardMedia src="/placeholder-3x2.png" />
     </Card>
