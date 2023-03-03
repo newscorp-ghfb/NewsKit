@@ -77,12 +77,12 @@ export const AudioPlayerComposable = ({
     // On render onTimeUpdate will be fired and initialTime will be set as a value for currentTime state.
     // I can't set this one to the setCurrentTime state directly as the audioElement time
     // will still be 0, currentTime will be overridden to 0 and the audio will start from 0
-    if (audioRef && audioRef.current) {
+    if (audioRef && audioRef.current && duration) {
       audioRef.current.currentTime = initialTime;
     }
     setCurrentTime(0);
     setDisplayDuration(0);
-  }, [src, initialTime]);
+  }, [src, initialTime, duration]);
 
   const {
     audioEvents,
