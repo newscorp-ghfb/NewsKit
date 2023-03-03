@@ -86,16 +86,6 @@ executors:
       - image: newsuk/terraform:1.2.1
     resource_class: large
 
-  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
-  terraform:
-    docker:
-      - image: hashicorp/terraform:0.12.28
-
-  # Deprecated by aws-cli-and-terraform. Remove when no longer referenced anywhere
-  python:
-    docker:
-      - image: cimg/python:3.10.2
-
   node:
     docker:
       - image: cimg/node:16.13.2-browsers
@@ -681,21 +671,11 @@ jobs:
       job_type:
         type: string
         default: 'default'
-    executor: python
+    executor: aws-cli-and-terraform
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
-      - run:
-          name: Install python and pip
-          command: |
-            sudo apt-get update
-            sudo apt-get install python3-pip python-dev
-      - run:
-          name: Install aws cli
-          command: sudo pip install awscli
-      - aws_assume_role:
-          job_type: << parameters.job_type >>
       - slack/notify:
           <<: *slack_notify
 
@@ -741,53 +721,6 @@ jobs:
           steps:
             - terraform_apply_oidc:
                 package: << parameters.package >>
-
-  # Deprecated by deploy_terraform_oidc
-  deploy_terraform:
-    parameters:
-      package:
-        type: string
-      apply:
-        type: boolean
-        default: true
-      tf_env:
-        type: boolean
-        default: true
-      environment:
-        type: string
-        default: ''
-    executor: terraform
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run_only_on_folder_change:
-          folder: ./terraform/<< parameters.package >>
-      - aws_assume_role_file
-      - when:
-          condition: << parameters.tf_env >>
-          steps:
-            - terraform_init:
-                package: << parameters.package >>
-                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
-            - terraform_plan:
-                package: << parameters.package >>
-                terraform_arg: -var-file=<< parameters.environment >>.tfvars
-      - unless:
-          condition: << parameters.tf_env >>
-          steps:
-            - terraform_init:
-                package: << parameters.package >>
-                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
-            - terraform_plan:
-                package: << parameters.package >>
-      - when:
-          condition: << parameters.apply >>
-          steps:
-            - terraform_apply:
-                package: << parameters.package >>
-      - slack/notify:
-          <<: *slack_notify
 
   test_visual_comps_percy:
     executor: node-large
@@ -965,77 +898,6 @@ jobs:
             - run:
                 name: Publish components to NPM
                 command: make publish_npm
-      - slack/notify:
-          <<: *slack_notify
-
-  build_push_docker_ecr:
-    parameters:
-      aws_region:
-        description: AWS Region
-        type: string
-        default: '${AWS_DEFAULT_REGION}'
-      aws_access_key_id:
-        description: AWS Access Key Id
-        type: string
-        default: '${AWS_ACCESS_KEY_ID}'
-      aws_secret_key:
-        description: AWS Secret Key
-        type: string
-        default: '${AWS_SECRET_ACCESS_KEY}'
-      aws_ecr_url:
-        description: AWS Account URL
-        type: string
-        default: '${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com'
-      aws_assume_role_arn:
-        description: AWS ARN For Assume Role
-        type: string
-        default: '${AWS_ASSUME_ROLE_ARN}'
-      ecr_repo:
-        description: ECR REPO
-        type: string
-        default: '${AWS_RESOURCE_NAME_PREFIX}'
-      docker_version:
-        description: Docker Image Tag
-        type: string
-        default: 'dev'
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - setup_remote_docker:
-          version: 20.10.7
-      - run:
-          name: Install python and pip
-          command: |
-            sudo apt-get update
-            sudo apt-get install python3-pip python-dev
-      - run:
-          name: Install awscli
-          command: sudo pip install awscli
-      - run:
-          name: Assume role and build docker images
-          command: |
-            if [ << parameters.docker_version >> = release ]; then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-release
-            elif [ << parameters.docker_version >> = prod ]; then
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-prod-$CIRCLE_SHA1
-            else
-              export DOCKER_TAG=$(node -p "require('./package.json').version")-dev-$CIRCLE_SHA1
-            fi
-            export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
-            export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
-            export DOCKER_REGISTRY_URL=<< parameters.aws_ecr_url >>
-            export DOCKER_REPO=<< parameters.ecr_repo >>
-            export temp_role=$(aws sts assume-role \
-                    --role-arn "<< parameters.aws_assume_role_arn >>" \
-                    --role-session-name "circle-ci-assume")
-            export AWS_ACCESS_KEY_ID=$(echo $temp_role | jq .Credentials.AccessKeyId | xargs)
-            export AWS_SECRET_ACCESS_KEY=$(echo $temp_role | jq .Credentials.SecretAccessKey | xargs)
-            export AWS_SESSION_TOKEN=$(echo $temp_role | jq .Credentials.SessionToken | xargs)
-            aws ecr get-login --no-include-email --region << parameters.aws_region >> | /bin/bash
-            make build_docker
-            make push_docker
       - slack/notify:
           <<: *slack_notify
 
@@ -1475,14 +1337,6 @@ workflows:
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
-      - deploy_terraform:
-          name: deploy_terraform_ecr_pr
-          package: ecr
-          context: ncu-product-platforms-context
-          apply: false
-          tf_env: false
-          requires:
-            - init_aws
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_pr
           package: s3/dev-newskit
@@ -1606,20 +1460,6 @@ workflows:
     jobs:
       - init_aws:
           context: ncu-product-platforms-context
-      - deploy_terraform:
-          name: deploy_terraform_dns_dev
-          package: dns
-          context: ncu-product-platforms-context
-          environment: dev
-          requires:
-            - init_aws
-      - deploy_terraform:
-          name: deploy_terraform_ecr_dev
-          package: ecr
-          context: ncu-product-platforms-context
-          tf_env: false
-          requires:
-            - init_aws
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_dev
           package: s3/dev-newskit
@@ -1832,14 +1672,6 @@ workflows:
       - init_aws:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
-      - deploy_terraform:
-          <<: *only_on_version_tag
-          name: deploy_terraform_dns_staging
-          package: dns
-          context: ncu-product-platforms-context
-          environment: staging
-          requires:
-            - init_aws
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_staging
           package: s3/prod-newskit
@@ -1926,18 +1758,6 @@ workflows:
             - build_docs_versioned
             - install_cypress
             - build_storybook
-      - build_push_docker_ecr:
-          <<: *only_on_version_tag
-          name: build_push_docker_ecr_release
-          context: ncu-product-platforms-context
-          docker_version: release
-          requires:
-            - build_storybook
-            - lint
-            - test_unit_comps
-            - test_unit_docs
-            - test_e2e_comps
-            - test_e2e_docs_prod
       - test_newskit_in_nextjs_app:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -1962,7 +1782,6 @@ workflows:
           requires:
             - build_icons
             - publish_npm
-            - build_push_docker_ecr_release
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
           context: ncu-newskit-site-stage

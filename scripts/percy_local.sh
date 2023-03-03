@@ -14,11 +14,13 @@ if [[ $BRANCH_NAME == "main" ]]; then
     exit 1
   fi
   echo "Running on main, so baseline images will be updated"
+  read -p "Are you sure you want to update the baselines? (y/n)" updateBaselinesRes
+  if [[ "$updateBaselinesRes" != "y" ]]; then
+    exit 1
+  fi
 else
   export PERCY_BRANCH="local run by ${USERNAME}"
 fi
-
-echo "PERCY_BRANCH=$PERCY_BRANCH"
 
 # ask the user to input their API key
 read -p "Enter the API key for the 'newskit-$1' project (you can find this in the Percy UI): " apiKey
