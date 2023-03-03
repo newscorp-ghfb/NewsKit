@@ -1,4 +1,3 @@
-import {defaultFocusVisible} from '../../utils/default-focus-visible';
 import {StylePreset} from './types';
 
 export const stylePresets: Record<string, StylePreset> = {};
@@ -176,12 +175,8 @@ stylePresets.selectOptionItemIcon = {
   },
 };
 
-stylePresets.cardComposable = {
-  'focus-visible': {
-    ...defaultFocusVisible,
-    safariOutlineOffset: '-7px',
-  },
-};
+// stylePresets.cardComposable = {
+// };
 
 stylePresets.cardComposableLink = {
   __extends: '{{stylePresets.cardComposable}}',
