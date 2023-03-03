@@ -357,10 +357,8 @@ export const StoryCardAreas = () => (
           <div>
             <Flag>Flag</Flag>
           </div>
-          <CardLink
-            href={window.location.href}
-            overrides={{paddingBlock: 'space020'}}
-          >
+          <Block paddingBlock="space040" />
+          <CardLink href={window.location.href}>
             <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
           </CardLink>
           <Block marginBlock="space020">
@@ -739,10 +737,10 @@ export const StorySpan = () => (
         <StorybookCase title="1:1 horizontal ratio">
           <SplitCard columns="50% 50%" />
         </StorybookCase>
-        <StorybookCase title="2:1 horizontal ratio">
+        <StorybookCase title="1:2 horizontal ratio">
           <SplitCard columns="40% 60%" />
         </StorybookCase>
-        <StorybookCase title="1:2 horizontal ratio">
+        <StorybookCase title="2:1 horizontal ratio">
           <SplitCard columns="60% 40%" />
         </StorybookCase>
       </Container>
