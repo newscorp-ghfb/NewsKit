@@ -221,7 +221,7 @@ const cardCustomDarkThemeObject: CreateThemeArgs = {
       },
       headlineCustom: {
         base: {
-          color: '{{colors.white000}}',
+          color: '{{colors.amber020}}',
           textDecoration: 'underline',
         },
       },
@@ -259,24 +259,22 @@ const storyAreasDesktop = `story1 story2
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
-    <StorybookCase title="Basic">
-      <Card
-        overrides={{maxWidth: '372px'}}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent overrides={{paddingBlock: 'space040'}}>
-          <H />
-          <Block marginBlock="space020">
-            <P />
-          </Block>
-        </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-      </Card>
-    </StorybookCase>
+    <Card
+      overrides={{maxWidth: '372px'}}
+      areas={`
+        media
+        content
+        actions
+      `}
+    >
+      <CardContent overrides={{paddingBlock: 'space040'}}>
+        <H />
+        <Block marginBlock="space020">
+          <P />
+        </Block>
+      </CardContent>
+      <CardMedia src="/placeholder-3x2.png" />
+    </Card>
   </StorybookPage>
 );
 StoryDefault.storyName = 'Default';
@@ -769,7 +767,7 @@ StoryOrder.storyName = 'Order';
 
 export const StoryResponsiveCard = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Typography preset - headline">
+    <StorybookCase title="Different layouts/font sizes for different breakpoints">
       <Card
         overrides={{
           maxWidth: {xl: '600px', md: '372px'},
@@ -794,6 +792,22 @@ export const StoryResponsiveCard = () => (
           <Block marginBlock="space020">
             <P />
           </Block>
+          <UnorderedList
+            overrides={{
+              content: {
+                typographyPreset: {
+                  xl: 'editorialParagraph030',
+                  md: 'editorialParagraph020',
+                  xs: 'editorialParagraph010',
+                },
+                stylePreset: 'inkBase',
+              },
+            }}
+          >
+            <span>Unordered list item</span>
+            <span>Unordered list item</span>
+            <span>Unordered list item</span>
+          </UnorderedList>
         </CardContent>
         <CardMedia src="/placeholder-3x2.png" />
       </Card>
@@ -1039,19 +1053,20 @@ export default {
   title: 'Components/composable-card',
   component: () => 'None',
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
-      <ThemeProvider
-        theme={createCustomThemeWithBaseThemeSwitch(
-          console.log('context', context) ||
-            context?.globals?.backgrounds?.value,
-          context?.globals?.backgrounds?.value === '#ffffff'
-            ? cardCustomThemeObject
-            : cardCustomDarkThemeObject,
-          // 'Styling overrides',
-        )}
-      >
-        <Story />
-      </ThemeProvider>
-    ),
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => {
+      const backgroundValue = context?.globals?.backgrounds?.value;
+      return (
+        <ThemeProvider
+          theme={createCustomThemeWithBaseThemeSwitch(
+            backgroundValue,
+            !backgroundValue || backgroundValue === '#ffffff'
+              ? cardCustomThemeObject
+              : cardCustomDarkThemeObject,
+          )}
+        >
+          <Story />
+        </ThemeProvider>
+      );
+    },
   ],
 };

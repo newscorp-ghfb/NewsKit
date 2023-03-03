@@ -412,15 +412,23 @@ Object {
   },
   "stylePresets": Object {
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "#FFFFFF",
-        "boxShadow": "0 2px 4px 0 rgba(10,10,10,0.08)",
+      "focus-visible": Object {
+        "outlineColor": "#3768FB",
+        "outlineOffset": "2px",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "auto",
       },
     },
     "cardComposableLink": Object {
-      "base": Object {
-        "backgroundColor": "#FFFFFF",
-        "boxShadow": "0 2px 4px 0 rgba(10,10,10,0.08)",
+      "focus-visible": Object {
+        "outlineColor": "#3768FB",
+        "outlineOffset": "2px",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "auto",
       },
       "hover": Object {
         "backgroundColor": "#F1F1F1",
