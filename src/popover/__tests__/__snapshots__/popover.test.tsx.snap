@@ -3309,9 +3309,7 @@ exports[`Popover header applies typography preset overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Popover offset should be applied with pointer and px distance override 1`] = `<DocumentFragment />`;
-
-exports[`Popover offset should be applied with pointer and px distance override 2`] = `
+exports[`Popover offset should be applied with pointer and px distance override 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
@@ -6884,9 +6882,7 @@ exports[`Popover should render correct styles: with overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Popover should render correct styles: with pointer 1`] = `<DocumentFragment />`;
-
-exports[`Popover should render correct styles: with pointer 2`] = `
+exports[`Popover should render correct styles: with pointer 1`] = `
 <DocumentFragment>
   <button
     aria-controls="floating-MOCK-ID"
