@@ -1,7 +1,13 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react/dist/ts3.9/client/preview/types-6-0';
 import styled from '@emotion/styled';
-import {Card, CardActions, CardContent, CardLink, CardMedia} from './grid-card';
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardLink,
+  CardMedia,
+} from '../../card-composable';
 import {Headline, HeadlineProps} from '../../../headline';
 import {Paragraph, ParagraphProps} from '../../../typography';
 import {Tag} from '../../../tag';
@@ -26,7 +32,7 @@ const StorybookGridCase = ({
   title,
 }: {
   children: React.ReactNode;
-  title?: string;
+  title: string;
 }) => (
   <Cell xs={12} sm={6}>
     <StorybookSubHeading>{title}</StorybookSubHeading>

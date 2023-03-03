@@ -30,7 +30,7 @@ const unlimitedScenarios = [
   'audio-player-composable',
   'text-area',
   'useIntersection',
-  'composable-card',
+  'card-composable',
 ];
 
 const BackgroundColor = styled.div`
