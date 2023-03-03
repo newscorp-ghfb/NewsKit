@@ -842,9 +842,13 @@ Object {
       },
     },
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "boxShadow": "{{shadows.shadow020}}",
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "cardComposableLink": Object {
@@ -3602,9 +3606,13 @@ Object {
       },
     },
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "boxShadow": "{{shadows.shadow020}}",
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "cardComposableLink": Object {
@@ -6365,9 +6373,13 @@ Object {
       },
     },
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "boxShadow": "{{shadows.shadow020}}",
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "cardComposableLink": Object {
@@ -9125,9 +9137,13 @@ Object {
       },
     },
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "boxShadow": "{{shadows.shadow020}}",
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "cardComposableLink": Object {
@@ -11888,9 +11904,13 @@ Object {
       },
     },
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "boxShadow": "{{shadows.shadow020}}",
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "cardComposableLink": Object {
@@ -14648,9 +14668,13 @@ Object {
       },
     },
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "boxShadow": "{{shadows.shadow020}}",
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "cardComposableLink": Object {
@@ -17411,9 +17435,13 @@ Object {
       },
     },
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "boxShadow": "{{shadows.shadow020}}",
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "cardComposableLink": Object {
@@ -20171,9 +20199,13 @@ Object {
       },
     },
     "cardComposable": Object {
-      "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "boxShadow": "{{shadows.shadow020}}",
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineOffset": "-7px",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
     },
     "cardComposableLink": Object {
