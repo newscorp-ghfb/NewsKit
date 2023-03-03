@@ -308,7 +308,7 @@ export const StoryCardAreas = () => (
       >
         <CardContent overrides={{paddingBlock: 'space040'}}>
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
           <H overrides={{marginBlockStart: 'space020'}} />
           <Block marginBlock="space020">
@@ -962,7 +962,11 @@ export const StoryOverrides = () => (
             rowGap="space030"
           >
             <div>
-              <Flag overrides={{stylePreset: 'flagCustom'}}>Flag</Flag>
+              <Flag
+                overrides={{stylePreset: 'flagCustom', marginBlock: 'space020'}}
+              >
+                Flag
+              </Flag>
             </div>
             {/* Unfortunately in NewsKit there is not a way for parent hover to trigger the children one
             the easiest way to do that is using CSS currentColor */}
@@ -999,7 +1003,14 @@ export const StoryOverrides = () => (
             rowGap="space030"
           >
             <div>
-              <Flag overrides={{stylePreset: 'flagCustom2'}}>Flag</Flag>
+              <Flag
+                overrides={{
+                  stylePreset: 'flagCustom2',
+                  marginBlock: 'space020',
+                }}
+              >
+                Flag
+              </Flag>
             </div>
             <H
               overrides={{
