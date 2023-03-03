@@ -111,7 +111,8 @@ export const StoryAppendLayerToCustomParentStory = () => {
     </>
   );
 };
-StoryAppendLayerToCustomParentStory.storyName = 'Append-layer-to-custom-parent';
+StoryAppendLayerToCustomParentStory.storyName =
+  'Append layers to custom parent';
 StoryAppendLayerToCustomParentStory.parameters = {
   previewTabs: {
     'storybook/canvas/panel': {index: -1},
@@ -150,7 +151,7 @@ export const StoryAppendNestedLayerToCustomParentStory = () => {
   );
 };
 StoryAppendNestedLayerToCustomParentStory.storyName =
-  'Append-nested-layers-to-custom-parent';
+  'Append nested layers to custom parent';
 StoryAppendNestedLayerToCustomParentStory.parameters = {
   previewTabs: {
     'storybook/canvas/panel': {index: -1},
@@ -186,7 +187,7 @@ export const StoryMultipleLayers = () => {
     </>
   );
 };
-StoryMultipleLayers.storyName = 'Multiple-layers';
+StoryMultipleLayers.storyName = 'Multiple layers';
 StoryMultipleLayers.parameters = {
   previewTabs: {
     'storybook/canvas/panel': {index: -1},
@@ -275,7 +276,7 @@ export const StoryBasicLayerOrganizerZindex = () => (
     </Layer>
   </>
 );
-StoryBasicLayerOrganizerZindex.storyName = 'Basic layer organizer zindex';
+StoryBasicLayerOrganizerZindex.storyName = 'Basic layer organizer z-index';
 StoryBasicLayerOrganizerZindex.parameters = {
   previewTabs: {
     'storybook/canvas/panel': {index: -1},
@@ -320,7 +321,7 @@ export const StoryNestedLayerOrganizerZindex = () => (
     </Layer>
   </>
 );
-StoryNestedLayerOrganizerZindex.storyName = 'Nested layer organizer zindex';
+StoryNestedLayerOrganizerZindex.storyName = 'Nested layer organizer z-index';
 StoryNestedLayerOrganizerZindex.parameters = {
   previewTabs: {
     'storybook/canvas/panel': {index: -1},
