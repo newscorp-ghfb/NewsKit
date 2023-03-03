@@ -1,14 +1,18 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {IconFilledInfo} from '../../icons';
+import {IconFilledInfo, IconOutlinedStarOutline} from '../../icons';
 import {InlineMessage} from '..';
 import {LinkInline} from '../../link';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+
+const twoFlagCols = {
+  xs: 'repeat(1, minmax(150px, max-content))',
+  sm: 'repeat(2, minmax(150px, max-content))',
+};
+
+const CONTENT = 'A short line describing the message.';
 
 const inlineMessageCustomThemeObject: CreateThemeArgs = {
   name: 'inline-message-custom-theme',
@@ -16,19 +20,23 @@ const inlineMessageCustomThemeObject: CreateThemeArgs = {
     stylePresets: {
       customInlineMessage: {
         base: {
-          backgroundColor: '#a05a64',
-          borderWidth: '1px 4px',
-          borderColor: 'deeppink',
+          backgroundColor: '#FDDCC6',
+          borderWidth: '0px 0px 0px 4px',
+          borderColor: '#804200',
           borderStyle: 'solid',
-          borderRadius: '3px',
-          iconColor: 'deeppink',
+          borderRadius: '4px',
+          iconColor: '#804200',
+        },
+      },
+      inlineMessageStylingOverrides: {
+        base: {
+          color: '#804200',
         },
       },
     },
   },
 };
 
-const link = <LinkInline href="/">link</LinkInline>;
 const icon = (
   <IconFilledInfo
     overrides={{
@@ -37,145 +45,201 @@ const icon = (
   />
 );
 
-export const StoryInlineMessageDefault = () => (
-  <>
-    <StorybookHeading>Inline message</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <InlineMessage>Short text</InlineMessage>
-    <StorybookSubHeading>with long text</StorybookSubHeading>
-    <InlineMessage aria-label="short text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </InlineMessage>
-    <StorybookSubHeading>with Icon</StorybookSubHeading>
-    <InlineMessage icon={icon} aria-label="short text and icon">
-      Short text
-    </InlineMessage>
-    <StorybookSubHeading>with Icon and long text</StorybookSubHeading>
-    <InlineMessage icon={icon} aria-label="icon and long text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </InlineMessage>
-    <StorybookSubHeading>with link</StorybookSubHeading>
-    <InlineMessage icon={icon} aria-label="icon and link">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt {link} ut labore et dolore magna aliqua.
-    </InlineMessage>
-    <StorybookSubHeading>with title</StorybookSubHeading>
-    <InlineMessage title="Your title here" aria-label="title">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </InlineMessage>
-    <StorybookSubHeading>with title and icon</StorybookSubHeading>
-    <InlineMessage
-      title="Your title here"
-      icon={icon}
-      aria-label="title and icon"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </InlineMessage>
-  </>
+const staricon = (
+  <IconOutlinedStarOutline
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
 );
-StoryInlineMessageDefault.storyName = 'inline-message-default';
 
-export const StoryOverrides = () => (
-  <>
-    <StorybookHeading>
-      Inline message with custom theme and overrides
-    </StorybookHeading>
-    <InlineMessage
-      title="Your title here"
-      icon={icon}
-      aria-label="overrides"
-      overrides={{
-        stylePreset: 'customInlineMessage',
-        paddingBlock: 'space050',
-        paddingInline: 'space050',
-        icon: {
-          spaceInline: 'space050',
-        },
-        content: {
-          message: {
-            typographyPreset: 'utilityBody020',
-            stylePreset: 'inkInverse',
-          },
-          title: {
-            spaceStack: 'space050',
-            typographyPreset: 'utilityHeading020',
-            stylePreset: 'inkInverse',
-          },
-        },
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+export const StoryInlineMessageDefault = () => (
+  <StorybookPage>
+    <InlineMessage title="Inline message title" icon={icon}>
+      {CONTENT}
     </InlineMessage>
-  </>
+  </StorybookPage>
 );
-StoryOverrides.storyName = 'inline-message-with-overrides';
+StoryInlineMessageDefault.storyName = 'Default';
 
 export const StoryStylePresets = () => (
-  <>
-    <StorybookHeading>
-      Inline message with different style presets
-    </StorybookHeading>
-    <br />
-    <StorybookSubHeading>inlineMessageInformative</StorybookSubHeading>
-    <InlineMessage
-      title="Your title here"
-      icon={icon}
-      aria-label="with inlineMessageInformative"
-      overrides={{
-        stylePreset: 'inlineMessageInformative',
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </InlineMessage>
-    <StorybookSubHeading>inlineMessageNegative</StorybookSubHeading>
-    <InlineMessage
-      title="Your title here"
-      icon={icon}
-      aria-label="with inlineMessageNegative"
-      overrides={{
-        stylePreset: 'inlineMessageNegative',
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </InlineMessage>
-  </>
+  <StorybookPage columns={twoFlagCols}>
+    <StorybookCase title="Informative">
+      <InlineMessage
+        title="Inline message title"
+        icon={icon}
+        aria-label="informative"
+        overrides={{
+          marginInlineEnd: '100px',
+          stylePreset: 'inlineMessageInformative',
+        }}
+      >
+        A short line describing the message.
+      </InlineMessage>
+    </StorybookCase>
+    <StorybookCase title="Negative">
+      <InlineMessage
+        icon={icon}
+        title="Inline message title"
+        aria-label="negative"
+        overrides={{
+          marginInlineEnd: '100px',
+          stylePreset: 'inlineMessageNegative',
+        }}
+      >
+        A short line describing the message.
+      </InlineMessage>
+    </StorybookCase>
+  </StorybookPage>
 );
 
-StoryStylePresets.storyName = 'inline-message-intents';
+StoryStylePresets.storyName = 'Intents';
+
+export const StoryVariations = () => (
+  <StorybookPage columns={twoFlagCols}>
+    <StorybookCase title="Short text">
+      <InlineMessage
+        aria-label="short text"
+        overrides={{
+          marginInlineEnd: '80px',
+          marginBlockEnd: '30px',
+        }}
+      >
+        {CONTENT}
+      </InlineMessage>
+    </StorybookCase>
+    <StorybookCase title="Long text and link">
+      <InlineMessage
+        aria-label="long text and link"
+        overrides={{
+          marginInlineEnd: '80px',
+          marginBlockEnd: '30px',
+        }}
+      >
+        A longer line describing the message. A longer line describing the
+        message <LinkInline href="">with a link</LinkInline>
+      </InlineMessage>
+    </StorybookCase>
+    <StorybookCase title="Icon and short text">
+      <InlineMessage
+        icon={icon}
+        aria-label="short text"
+        overrides={{
+          marginInlineEnd: '80px',
+          marginBlockEnd: '30px',
+        }}
+      >
+        {CONTENT}
+      </InlineMessage>
+    </StorybookCase>
+    <StorybookCase title="Icon and long text">
+      <InlineMessage
+        icon={icon}
+        aria-label="long text and link"
+        overrides={{
+          marginInlineEnd: '80px',
+          marginBlockEnd: '30px',
+        }}
+      >
+        A longer line describing the message. A longer line describing the
+        message.
+      </InlineMessage>
+    </StorybookCase>
+    <StorybookCase title="Title">
+      <InlineMessage
+        title="Inline message title"
+        aria-label="short text"
+        overrides={{
+          marginInlineEnd: '80px',
+        }}
+      >
+        {CONTENT}
+      </InlineMessage>
+    </StorybookCase>
+    <StorybookCase title="Icon and title">
+      <InlineMessage
+        title="Inline message title"
+        icon={icon}
+        aria-label="long text and link"
+        overrides={{
+          marginInlineEnd: '80px',
+        }}
+      >
+        {CONTENT}
+      </InlineMessage>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryVariations.storyName = 'Variations';
 
 export const StoryLogicalProps = () => (
-  <>
-    <StorybookHeading>Inline message</StorybookHeading>
-    <StorybookSubHeading>With logical padding props</StorybookSubHeading>
-    <InlineMessage
-      aria-label="with logical padding overrides"
-      overrides={{paddingInline: '50px'}}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </InlineMessage>
-    <StorybookSubHeading>With logical margin props</StorybookSubHeading>
-    <InlineMessage
-      aria-label="with logical margin overrides"
-      overrides={{marginInline: '50px'}}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </InlineMessage>
-  </>
+  <StorybookPage columns={twoFlagCols}>
+    <StorybookCase title="Logical padding props">
+      <InlineMessage
+        aria-label="with logical padding overrides"
+        overrides={{
+          paddingInline: '50px',
+          marginInlineEnd: '80px',
+        }}
+      >
+        {CONTENT}
+      </InlineMessage>
+    </StorybookCase>
+    <StorybookCase title="Logical margin props">
+      <InlineMessage
+        aria-label="with logical margin overrides"
+        overrides={{
+          paddingInline: '50px',
+          marginInlineEnd: '80px',
+        }}
+      >
+        {CONTENT}
+      </InlineMessage>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryLogicalProps.storyName = 'inline-message-logical-props';
+StoryLogicalProps.storyName = 'Logical props';
+
+export const StoryOverrides = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <InlineMessage
+        title="Inline message title"
+        icon={staricon}
+        aria-label="overrides"
+        overrides={{
+          stylePreset: 'customInlineMessage',
+          content: {
+            message: {
+              typographyPreset: 'utilityBody020',
+              stylePreset: 'inlineMessageStylingOverrides',
+            },
+            title: {
+              spaceStack: 'space030',
+              typographyPreset: 'utilityHeading020',
+              stylePreset: 'inlineMessageStylingOverrides',
+            },
+          },
+        }}
+      >
+        {CONTENT}
+      </InlineMessage>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryOverrides.storyName = 'Styling overrides';
 
 export default {
-  title: 'Components/inline-message',
-  component: () => 'None',
+  title: 'Components/Inline message',
+  component: () => InlineMessage,
+  parameters: {
+    nkDocs: {
+      title: 'Inline Message',
+      url: 'https://newskit.co.uk/components/inline-message/',
+      description:
+        'An inline message communicates contextual information. They are positioned inline, in close proximity to the element they are adding context to.',
+    },
+  },
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
