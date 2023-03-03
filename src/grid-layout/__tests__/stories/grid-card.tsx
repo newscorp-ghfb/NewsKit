@@ -269,7 +269,7 @@ const StyledCardActions = styled(Block)<{useAreas: boolean} & LogicalProps>`
 export const CardActions = ({
   children,
   ...rest
-}: {children: React.ReactNode} & LogicalProps) => {
+}: {children: React.ReactNode; stylePreset?: string} & LogicalProps) => {
   const {useAreas} = useCardContext();
   return (
     <StyledCardActions useAreas={useAreas} {...rest}>
