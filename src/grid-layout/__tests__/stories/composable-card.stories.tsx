@@ -21,7 +21,13 @@ import {UnorderedList} from '../../../unordered-list';
 import {getStylePresetFromTheme} from '../../../utils';
 import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 
-const StorybookGridCase = ({title, children}) => (
+const StorybookGridCase = ({
+  children,
+  title,
+}: {
+  children: React.ReactNode;
+  title?: string;
+}) => (
   <Cell xs={12} sm={6}>
     <StorybookSubHeading>{title}</StorybookSubHeading>
     {children}
