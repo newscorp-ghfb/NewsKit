@@ -43,6 +43,7 @@ export interface PaginationProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   size?: PaginationSize;
   pageSize: number;
+  page?: number;
   defaultPage: number;
   totalItems: number;
   buildHref?: (pageNumber: number) => string;

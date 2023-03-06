@@ -1,4 +1,4 @@
-import React, {useCallback, useMemo, useState} from 'react';
+import React, {useCallback, useMemo} from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {StyledNav, StyledUnorderedList} from './styled';
 import defaults from './defaults';
@@ -11,6 +11,7 @@ import {PaginationFirstItemProps} from './components/first-item';
 import {PaginationLastItemProps} from './components/last-item';
 import {PaginationPrevItemProps} from './components/prev-item';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
+import {useControlled} from '../utils';
 
 const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
   (
@@ -18,6 +19,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
       children,
       size = 'medium',
       pageSize = 10,
+      page: pageProp, // undefined if uncontrolled externally
       defaultPage = 1,
       totalItems = 0,
       buildHref,
@@ -26,7 +28,10 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     },
     ref,
   ) => {
-    const [page, setPage] = useState(defaultPage);
+    const [page, setPage] = useControlled({
+      defaultValue: defaultPage,
+      controlledValue: pageProp,
+    });
     const lastPage = Math.ceil(totalItems / pageSize);
 
     const changePage = useCallback(
