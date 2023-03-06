@@ -11,24 +11,26 @@ export default Layout;
 
 ## useMediaQueryObject
 
-`useMediaQueryObject` hook handles scenarios in which you want to render component based on media query breakpoints.
-This hooks also responds to the window resizing and returns the appropriate value for the new window size.
+The `userMediaQueryObject` hook handles scenarios where you want to render components based on media query breakpoints. This hook also responds to viewport resizing and returns the appropriate breakpoint for the viewport.
 
-`useMediaQueryObject` returns the value for the current breakpoint from the provided media query object ( `MQ<T>` )
+`useMediaQueryObject` returns the value for the current breakpoint from the provided media query object. `MQ<T>`
 
 <InlineMessage aria-label="Requirements">
-  Media Query hooks require <strong>NewsKitProvider</strong> or{' '}
+  Media Query hooks require a <strong>NewsKitProvider</strong> or{' '}
   <strong>MediaQueryProvider</strong> as an ancestor of the component in which
-  are used.
+  they are used.
 </InlineMessage>
 
 <InlineMessage
   overrides={{marginBlockStart: 'space030'}}
   aria-label="Client Side Only"
 >
-  Media Query hooks work only on client side code ( Browser ).
+  Media Query hooks work only on client-side code in the browser.
   <br />
-  During server side rendering hooks will always return <strong>XS</strong>.
+  During server-side rendering, hooks will always return the <strong>
+    XS
+  </strong>{' '}
+  breakpoint.
 </InlineMessage>
 
 ### Example
