@@ -2,7 +2,11 @@ import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {IconFilledInfo, IconOutlinedStarOutline} from '../../icons';
+import {
+  IconFilledInfo,
+  IconOutlinedStarOutline,
+  IconFilledError,
+} from '../../icons';
 import {InlineMessage} from '..';
 import {LinkInline} from '../../link';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
@@ -53,6 +57,14 @@ const staricon = (
   />
 );
 
+const erroricon = (
+  <IconFilledError
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
+
 export const StoryInlineMessageDefault = () => (
   <StorybookPage>
     <InlineMessage title="Inline message title" icon={icon}>
@@ -70,7 +82,7 @@ export const StoryStylePresets = () => (
         icon={icon}
         aria-label="informative"
         overrides={{
-          marginInlineEnd: '100px',
+          marginInlineEnd: '70px',
           stylePreset: 'inlineMessageInformative',
         }}
       >
@@ -79,11 +91,11 @@ export const StoryStylePresets = () => (
     </StorybookCase>
     <StorybookCase title="Negative">
       <InlineMessage
-        icon={icon}
+        icon={erroricon}
         title="Inline message title"
         aria-label="negative"
         overrides={{
-          marginInlineEnd: '100px',
+          marginInlineEnd: '70px',
           stylePreset: 'inlineMessageNegative',
         }}
       >
@@ -179,7 +191,7 @@ export const StoryLogicalProps = () => (
         aria-label="with logical padding overrides"
         overrides={{
           paddingInline: '50px',
-          marginInlineEnd: '80px',
+          marginInlineEnd: '40px',
         }}
       >
         {CONTENT}
@@ -190,7 +202,7 @@ export const StoryLogicalProps = () => (
         aria-label="with logical margin overrides"
         overrides={{
           paddingInline: '50px',
-          marginInlineEnd: '80px',
+          marginInlineEnd: '40px',
         }}
       >
         {CONTENT}
