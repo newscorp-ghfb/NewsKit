@@ -2348,18 +2348,13 @@ Object {
     "transitionPreset": "fade",
   },
   "pagination": Object {
-    "large": Object {
-      "paddingInline": "space000",
-    },
-    "medium": Object {
-      "paddingInline": "space000",
-    },
-    "small": Object {
-      "paddingInline": "space000",
-    },
+    "large": Object {},
+    "medium": Object {},
+    "small": Object {},
   },
   "paginationItem": Object {
     "large": Object {
+      "marginInline": "space010",
       "minHeight": "sizing070",
       "minWidth": "sizing070",
       "paddingBlock": "space000",
@@ -2368,6 +2363,7 @@ Object {
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
+      "marginInline": "space010",
       "minHeight": "sizing060",
       "minWidth": "sizing060",
       "paddingBlock": "space000",
@@ -2376,6 +2372,7 @@ Object {
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
+      "marginInline": "space010",
       "minHeight": "sizing050",
       "minWidth": "sizing050",
       "paddingBlock": "space000",
@@ -2386,20 +2383,17 @@ Object {
   },
   "paginationItemFirst": Object {
     "large": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
     },
     "medium": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "stylePreset": "paginationItem",
       "width": "sizing060",
     },
     "small": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize010",
       "stylePreset": "paginationItem",
       "width": "sizing050",
@@ -2407,21 +2401,18 @@ Object {
   },
   "paginationItemLast": Object {
     "large": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
     },
     "medium": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing060",
     },
     "small": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize010",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
@@ -2430,21 +2421,18 @@ Object {
   },
   "paginationItemNext": Object {
     "large": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
     },
     "medium": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing060",
     },
     "small": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize010",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
@@ -2453,21 +2441,18 @@ Object {
   },
   "paginationItemPrev": Object {
     "large": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
     },
     "medium": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing060",
     },
     "small": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize010",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
@@ -2476,21 +2461,18 @@ Object {
   },
   "paginationItemTruncation": Object {
     "large": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
-      "marginInline": "space020",
+      "marginInline": "space000",
       "stylePreset": "paginationItemTruncation",
       "width": "sizing070",
     },
     "medium": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItemTruncation",
       "width": "sizing060",
     },
     "small": Object {
-      "color": "inkNonEssential",
       "iconSize": "iconSize010",
       "marginInline": "space000",
       "stylePreset": "paginationItemTruncation",

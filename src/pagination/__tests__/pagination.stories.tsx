@@ -207,7 +207,11 @@ export const StoryVariationsInInput = () => (
           boundaries={0}
           overrides={{
             itemButton: ({pageNumber, lastPage}) => (
-              <TextBlock paddingInline="space020" stylePreset="inkSubtle">
+              <TextBlock
+                paddingInline="space020"
+                typographyPreset="utilityButton020"
+                stylePreset="inkSubtle"
+              >
                 Page {pageNumber} of {lastPage}
               </TextBlock>
             ),
@@ -238,7 +242,7 @@ export const StoryLogicalProps = () => (
         <PaginationPrevItem />
         <PaginationItems
           {...defaultItemsProps}
-          overrides={{paddingInline: 'space020'}}
+          overrides={{paddingInline: 'space040'}}
         />
         <PaginationNextItem />
       </Pagination>

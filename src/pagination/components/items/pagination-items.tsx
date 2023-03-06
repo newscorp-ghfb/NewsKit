@@ -3,6 +3,7 @@ import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {
   PaginationItemProps,
   PaginationItemsProps,
+  PaginationItemType,
   PaginationLayoutItem,
 } from '../../types';
 import {useTheme} from '../../../theme';
@@ -13,7 +14,7 @@ import {PaginationItem} from '../item/pagination-item';
 import {usePaginationContext} from '../../context';
 import {getItemsLayout} from '../../utils';
 
-const paginationItemTruncation = 'paginationItemTruncation' as const;
+const paginationItemTruncation = 'paginationItemTruncation' as PaginationItemType;
 
 const DefaultIcon = (props: NewsKitIconProps) => (
   <IconFilledMoreHoriz {...props} />
