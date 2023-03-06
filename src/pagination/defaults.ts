@@ -29,7 +29,7 @@ export default {
       minWidth: 'sizing060',
     },
     large: {
-      typographyPreset: 'utilityButton050',
+      typographyPreset: 'utilityButton030',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
@@ -51,7 +51,7 @@ export default {
       width: 'sizing060',
     },
     large: {
-      iconSize: 'iconSize030',
+      iconSize: 'iconSize020',
       stylePreset: 'paginationItem',
       marginInline: 'space000',
       color: 'inkNonEssential',
@@ -74,7 +74,7 @@ export default {
       width: 'sizing060',
     },
     large: {
-      iconSize: 'iconSize030',
+      iconSize: 'iconSize020',
       stylePreset: 'paginationItem',
       marginInline: 'space000',
       color: 'inkNonEssential',
@@ -97,7 +97,7 @@ export default {
       width: 'sizing060',
     },
     large: {
-      iconSize: 'iconSize030',
+      iconSize: 'iconSize020',
       stylePreset: 'paginationItem',
       marginInline: 'space000',
       color: 'inkNonEssential',
@@ -120,7 +120,7 @@ export default {
       width: 'sizing060',
     },
     large: {
-      iconSize: 'iconSize030',
+      iconSize: 'iconSize020',
       stylePreset: 'paginationItem',
       marginInline: 'space000',
       color: 'inkNonEssential',
@@ -143,7 +143,7 @@ export default {
       width: 'sizing060',
     },
     large: {
-      iconSize: 'iconSize030',
+      iconSize: 'iconSize020',
       stylePreset: 'paginationItemTruncation',
       marginInline: 'space020',
       color: 'inkNonEssential',

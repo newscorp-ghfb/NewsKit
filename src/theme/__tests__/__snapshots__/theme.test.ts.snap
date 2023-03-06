@@ -1132,13 +1132,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityHeading010": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
@@ -1191,13 +1184,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
@@ -2379,7 +2365,7 @@ Object {
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
-      "typographyPreset": "utilityButton050",
+      "typographyPreset": "utilityButton030",
     },
     "medium": Object {
       "minHeight": "sizing060",
@@ -2401,7 +2387,7 @@ Object {
   "paginationItemFirst": Object {
     "large": Object {
       "color": "inkNonEssential",
-      "iconSize": "iconSize030",
+      "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
@@ -2422,7 +2408,7 @@ Object {
   "paginationItemLast": Object {
     "large": Object {
       "color": "inkNonEssential",
-      "iconSize": "iconSize030",
+      "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
@@ -2445,7 +2431,7 @@ Object {
   "paginationItemNext": Object {
     "large": Object {
       "color": "inkNonEssential",
-      "iconSize": "iconSize030",
+      "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
@@ -2468,7 +2454,7 @@ Object {
   "paginationItemPrev": Object {
     "large": Object {
       "color": "inkNonEssential",
-      "iconSize": "iconSize030",
+      "iconSize": "iconSize020",
       "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
@@ -2491,7 +2477,7 @@ Object {
   "paginationItemTruncation": Object {
     "large": Object {
       "color": "inkNonEssential",
-      "iconSize": "iconSize030",
+      "iconSize": "iconSize020",
       "marginInline": "space020",
       "stylePreset": "paginationItemTruncation",
       "width": "sizing070",
@@ -5662,15 +5648,6 @@ Object {
     "selected:hover": Object {
       "color": "{{colors.inkBase}}",
       "textDecoration": "none",
-    },
-  },
-  "paginationItemBlock": Object {
-    "base": Object {
-      "alignSelf": "center",
-      "display": "flex",
-      "justifyContent": "center",
-      "margin": "{{space050}}",
-      "paddingBlock": "space040",
     },
   },
   "paginationItemTruncation": Object {

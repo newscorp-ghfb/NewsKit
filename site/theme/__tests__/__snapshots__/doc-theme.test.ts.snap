@@ -2607,13 +2607,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityCode010": Object {
       "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -2684,13 +2677,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
@@ -5373,13 +5359,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityCode010": Object {
       "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -5450,13 +5429,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
@@ -8142,13 +8114,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityCode010": Object {
       "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -8219,13 +8184,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
@@ -10908,13 +10866,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityCode010": Object {
       "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -10985,13 +10936,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
@@ -13677,13 +13621,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityCode010": Object {
       "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -13754,13 +13691,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
@@ -16443,13 +16373,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityCode010": Object {
       "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -16520,13 +16443,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
@@ -19212,13 +19128,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityCode010": Object {
       "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -19289,13 +19198,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
@@ -21978,13 +21880,6 @@ Object {
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",
     },
-    "utilityButton050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
     "utilityCode010": Object {
       "fontFamily": "{{fonts.fontFamily040.fontFamily}}",
       "fontSize": "{{fonts.fontSize010}}",
@@ -22055,13 +21950,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
       "fontSize": "{{fonts.fontSize030}}",
-      "fontWeight": "{{fonts.fontWeight020}}",
-      "letterSpacing": "{{fonts.fontLetterSpacing030}}",
-      "lineHeight": "{{fonts.fontLineHeight040}}",
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
-      "fontSize": "{{fonts.fontSize050}}",
       "fontWeight": "{{fonts.fontWeight020}}",
       "letterSpacing": "{{fonts.fontLetterSpacing030}}",
       "lineHeight": "{{fonts.fontLineHeight040}}",

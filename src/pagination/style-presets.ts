@@ -3,15 +3,6 @@ import {StylePreset} from '../theme/types';
 // The paginationItem style preset is based on the buttonMinimalPrimary style preset
 // but using link colours
 export default {
-  paginationItemBlock: {
-    base: {
-      margin: '{{space050}}',
-      paddingBlock: 'space040',
-      display: 'flex',
-      justifyContent: 'center',
-      alignSelf: 'center',
-    },
-  },
   paginationItem: {
     base: {
       backgroundColor: '{{colors.transparent}}',

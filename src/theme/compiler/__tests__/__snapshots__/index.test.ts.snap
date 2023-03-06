@@ -1297,13 +1297,6 @@ Object {
       "letterSpacing": "0",
       "lineHeight": 1.5,
     },
-    "utilityButton050": Object {
-      "fontFamily": "\\"Poppins\\", sans-serif",
-      "fontSize": "20px",
-      "fontWeight": 500,
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
     "utilityHeading010": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "16px",
@@ -1356,13 +1349,6 @@ Object {
     "utilityLabel030": Object {
       "fontFamily": "\\"Poppins\\", sans-serif",
       "fontSize": "16px",
-      "fontWeight": 500,
-      "letterSpacing": "0",
-      "lineHeight": 1.5,
-    },
-    "utilityLabel050": Object {
-      "fontFamily": "\\"Poppins\\", sans-serif",
-      "fontSize": "20px",
       "fontWeight": 500,
       "letterSpacing": "0",
       "lineHeight": 1.5,
