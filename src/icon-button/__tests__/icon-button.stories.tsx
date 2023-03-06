@@ -463,6 +463,14 @@ export const StoryIconButtonOverrides = () => (
         <IconFilledAddCircle />
       </IconButton>
     </StorybookCase>
+    <StorybookCase title="Icon size">
+      <IconButton
+        overrides={{iconSize: 'iconSize020'}}
+        aria-label="logical props icon button"
+      >
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
     <StorybookCase title="Custom outline">
       <IconButton
         overrides={{stylePreset: 'customOutlineStyle'}}
