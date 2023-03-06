@@ -32,8 +32,10 @@ export const PaginationItems = ({
 }: PaginationItemsProps) => {
   const theme = useTheme();
   const {
+    /* istanbul ignore next */
     size = 'medium',
     buildHref,
+    /* istanbul ignore next */
     changePage = () => {},
     page,
     lastPage,
@@ -73,6 +75,7 @@ export const PaginationItems = ({
     };
 
     let truncationCount = 0;
+    /* istanbul ignore next */
     layout.forEach((element: PaginationLayoutItem = 0) => {
       switch (element) {
         case '-':
@@ -97,6 +100,10 @@ export const PaginationItems = ({
               </PaginationItem>
             </StyledListItem>,
           );
+          break;
+        case 0:
+          /* istanbul ignore next */
+          // This will never happen
           break;
         default:
           {

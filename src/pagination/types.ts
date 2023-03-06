@@ -44,7 +44,7 @@ export interface PaginationProps extends React.AriaAttributes {
   size?: PaginationSize;
   pageSize: number;
   page?: number;
-  defaultPage: number;
+  defaultPage?: number;
   totalItems: number;
   buildHref?: (pageNumber: number) => string;
   onPageChange?: (pageNumber: number) => void;

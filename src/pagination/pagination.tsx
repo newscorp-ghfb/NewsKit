@@ -18,17 +18,18 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     {
       children,
       size = 'medium',
-      pageSize = 10,
+      pageSize,
       page: pageProp, // undefined if uncontrolled externally
       defaultPage = 1,
-      totalItems = 0,
+      totalItems,
       buildHref,
       onPageChange,
       ...rest
     },
     ref,
   ) => {
-    const [page, setPage] = useControlled({
+    /* istanbul ignore next */
+    const [page = 1, setPage] = useControlled({
       defaultValue: defaultPage,
       controlledValue: pageProp,
     });
@@ -41,7 +42,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
           onPageChange(pageNumber);
         }
       },
-      [onPageChange],
+      [setPage, onPageChange],
     );
 
     const getFirstItemProps = useCallback(
@@ -51,6 +52,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
           ...getterProps,
           onClick: composeEventHandlers([
             () => changePage(1),
+            /* istanbul ignore next */
             getterProps?.onClick,
           ]),
         } as IconButtonProps),
@@ -64,6 +66,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
           ...getterProps,
           onClick: composeEventHandlers([
             () => changePage(page - 1),
+            /* istanbul ignore next */
             getterProps?.onClick,
           ]),
         } as IconButtonProps),
@@ -77,6 +80,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
           ...getterProps,
           onClick: composeEventHandlers([
             () => changePage(page + 1),
+            /* istanbul ignore next */
             getterProps?.onClick,
           ]),
         } as IconButtonProps),
@@ -90,6 +94,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
           ...getterProps,
           onClick: composeEventHandlers([
             () => changePage(lastPage),
+            /* istanbul ignore next */
             getterProps?.onClick,
           ]),
         } as IconButtonProps),

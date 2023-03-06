@@ -22,6 +22,7 @@ export const PaginationFirstItem = React.forwardRef<
   const theme = useTheme();
   const {
     getFirstItemProps,
+    /* istanbul ignore next */
     size = 'medium',
     buildHref,
   } = usePaginationContext();

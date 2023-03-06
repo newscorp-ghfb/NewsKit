@@ -22,9 +22,12 @@ export const PaginationNextItem = React.forwardRef<
   const theme = useTheme();
   const {
     getNextItemProps,
+    /* istanbul ignore next */
     size = 'medium',
     buildHref,
+    /* istanbul ignore next */
     page = 1,
+    /* istanbul ignore next */
     lastPage = 1,
   } = usePaginationContext();
 

@@ -12,7 +12,6 @@ import {
   IconOutlinedArrowBack,
   IconOutlinedArrowForward,
   IconOutlinedTrendingFlat,
-  NewsKitIconProps,
 } from '../../icons';
 import {TextBlock} from '../../text-block';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
@@ -373,30 +372,6 @@ export const StoryNumberOverrides = () => (
               <StyledButton {...props}>
                 <IconFilledCircle />
               </StyledButton>
-            ),
-          }}
-        />
-        <PaginationNextItem />
-      </Pagination>
-    </StorybookCase>
-    <StorybookCase title="Items as clickable icons (using overrides.itemButton)">
-      <Pagination
-        {...defaultProps}
-        aria-label="items as clickable icons (using overrides.itemButton)"
-      >
-        <PaginationPrevItem />
-        <PaginationItems
-          truncation={false}
-          overrides={{
-            itemButton: props => (
-              <IconFilledCircle
-                {...(props as NewsKitIconProps)}
-                overrides={{
-                  size: 'iconSize020',
-                  paddingInline: 'space020',
-                  stylePreset: 'paginationItem',
-                }}
-              />
             ),
           }}
         />

@@ -10,10 +10,22 @@ import {
   PaginationSize,
 } from '../types';
 import {Pagination} from '../pagination';
-import {PaginationFirstItem} from '../components/first-item';
-import {PaginationLastItem} from '../components/last-item';
-import {PaginationPrevItem} from '../components/prev-item';
-import {PaginationNextItem} from '../components/next-item';
+import {
+  PaginationFirstItem,
+  PaginationFirstItemProps,
+} from '../components/first-item';
+import {
+  PaginationLastItem,
+  PaginationLastItemProps,
+} from '../components/last-item';
+import {
+  PaginationPrevItem,
+  PaginationPrevItemProps,
+} from '../components/prev-item';
+import {
+  PaginationNextItem,
+  PaginationNextItemProps,
+} from '../components/next-item';
 import {PaginationItem} from '../components/item/pagination-item';
 import {PaginationItems} from '../components/items/pagination-items';
 import {
@@ -50,6 +62,21 @@ const defaultProps = {
 // defaults to truncation: true, siblings: 3, boundaries: 1
 const defaultItemsProps = {truncation: false, siblings: 3, boundaries: 1};
 
+const PaginationWithNavItems = (
+  navItemProps:
+    | PaginationFirstItemProps
+    | PaginationPrevItemProps
+    | PaginationNextItemProps
+    | PaginationLastItemProps,
+) => (
+  <Pagination {...defaultProps} size="small">
+    <PaginationFirstItem key="1" {...navItemProps} onClick={onClick} />
+    <PaginationPrevItem key="2" {...navItemProps} onClick={onClick} />
+    <PaginationNextItem key="4" {...navItemProps} onClick={onClick} />
+    <PaginationLastItem key="5" {...navItemProps} onClick={onClick} />
+  </Pagination>
+);
+
 const PaginationWithItems = (props: PaginationItemsProps) => (
   <Pagination {...defaultProps}>
     <PaginationFirstItem key="1" {...props} onClick={onClick} />
@@ -60,9 +87,9 @@ const PaginationWithItems = (props: PaginationItemsProps) => (
   </Pagination>
 );
 
-const PaginationWithItem = (props: PaginationItemProps) => (
+const PaginationWithItem = (itemProps: PaginationItemProps) => (
   <Pagination {...defaultProps}>
-    <PaginationItem size="small" key="1" {...props} />
+    <PaginationItem size="small" key="1" {...itemProps} />
   </Pagination>
 );
 
@@ -77,6 +104,10 @@ const defaultPaginationIconsAndItems = [
   <PaginationNextItem key="4" />,
   <PaginationLastItem key="5" />,
 ];
+
+const iconOverrides = {
+  icon: () => <div data-testid="custom-icon" />,
+};
 
 const PaginationSizeArray = ['small', 'medium', 'large'];
 
@@ -156,13 +187,38 @@ describe('Pagination and PaginationItems only', () => {
 });
 
 describe('Pagination, navigation icons and PaginationItems', () => {
-  it('renders with default props', () => {
+  it('renders with uncontrolled props', () => {
     const props = {
       ...defaultProps,
       children: defaultPaginationIconsAndItems,
     };
     const fragment = renderToFragmentWithTheme(Pagination, props);
     expect(fragment).toMatchSnapshot();
+  });
+
+  it('renders with controlled props', () => {
+    const props = {
+      pageSize: 1,
+      totalItems: 1,
+      page: 1,
+      buildHref,
+      children: defaultPaginationIconsAndItems,
+    };
+    const fragment = renderToFragmentWithTheme(Pagination, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
+  it('renders with overridden navigation icons', () => {
+    const props = {
+      overrides: iconOverrides,
+    };
+    const {getAllByTestId} = renderWithImplementation(
+      PaginationWithNavItems,
+      props,
+    );
+
+    const paginationItems = getAllByTestId('custom-icon');
+    expect(paginationItems).toHaveLength(4);
   });
 
   test('fire tracking event on normal item near the start', async () => {
