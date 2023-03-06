@@ -135,7 +135,7 @@ export const StoryVariations = () => (
     <StorybookCase title="Icon and short text">
       <InlineMessage
         icon={icon}
-        aria-label="short text"
+        aria-label="Icon and short text"
         overrides={{
           marginInlineEnd: '80px',
           marginBlockEnd: '30px',
@@ -147,7 +147,7 @@ export const StoryVariations = () => (
     <StorybookCase title="Icon and long text">
       <InlineMessage
         icon={icon}
-        aria-label="long text and link"
+        aria-label="long text with icon"
         overrides={{
           marginInlineEnd: '80px',
           marginBlockEnd: '30px',
@@ -160,7 +160,7 @@ export const StoryVariations = () => (
     <StorybookCase title="Title">
       <InlineMessage
         title="Inline message title"
-        aria-label="short text"
+        aria-label="title"
         overrides={{
           marginInlineEnd: '80px',
         }}
@@ -172,7 +172,7 @@ export const StoryVariations = () => (
       <InlineMessage
         title="Inline message title"
         icon={icon}
-        aria-label="long text and link"
+        aria-label="icon and title"
         overrides={{
           marginInlineEnd: '80px',
         }}
