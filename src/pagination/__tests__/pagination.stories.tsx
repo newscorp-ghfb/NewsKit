@@ -258,7 +258,7 @@ export const StoryLogicalProps = () => (
 );
 StoryLogicalProps.storyName = 'Logical props';
 
-export const StoryOverrides = () => (
+export const StoryStyleOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Custom colour">
       <Pagination {...defaultProps} aria-label="custom colour">
@@ -342,6 +342,12 @@ export const StoryOverrides = () => (
         <PaginationNextItem />
       </Pagination>
     </StorybookCase>
+  </StorybookPage>
+);
+StoryStyleOverrides.storyName = 'Style overrides';
+
+export const StoryNumberOverrides = () => (
+  <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Items as clickable icon buttons (using children)">
       <Pagination
         {...defaultProps}
@@ -422,7 +428,7 @@ export const StoryOverrides = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryOverrides.storyName = 'Overrides';
+StoryNumberOverrides.storyName = 'Number overrides';
 
 export default {
   title: 'Components/pagination',
