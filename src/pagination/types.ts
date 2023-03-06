@@ -68,6 +68,8 @@ export interface PaginationItemsProps extends ButtonProps, EventData {
     itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
     minWidth?: MQ<string>;
     minHeight?: MQ<string>;
+    width?: MQ<string>;
+    height?: MQ<string>;
   } & LogicalProps;
 }
 
@@ -87,6 +89,8 @@ export interface PaginationItemProps extends ButtonProps, EventData {
     itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
     minWidth?: MQ<string>;
     minHeight?: MQ<string>;
+    width?: MQ<string>;
+    height?: MQ<string>;
   } & LogicalProps;
 }
 

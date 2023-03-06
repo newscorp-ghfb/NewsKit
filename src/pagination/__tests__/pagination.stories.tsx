@@ -229,7 +229,7 @@ export const StoryLogicalProps = () => (
         <PaginationPrevItem />
         <PaginationItems
           {...defaultItemsProps}
-          overrides={{minWidth: '27px', height: '27px'}}
+          overrides={{minWidth: '27px', minHeight: '27px'}}
         />
         <PaginationNextItem />
       </Pagination>
