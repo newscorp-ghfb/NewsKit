@@ -43,7 +43,7 @@ const lastPage = 24;
 const defaultProps = {
   totalItems: 232,
   pageSize: 10,
-  currentPage: 4,
+  defaultPage: 4,
   buildHref,
   onPageChange,
 };

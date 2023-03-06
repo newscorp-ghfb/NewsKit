@@ -9,7 +9,7 @@ import {PaginationItemType} from '../../types';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
 
-const itemType = PaginationItemType.paginationItemFirst as const;
+const itemType = 'paginationItemFirst' as PaginationItemType;
 
 const DefaultIcon = (props: NewsKitIconProps) => (
   <IconFilledFirstPage {...props} />
@@ -39,8 +39,7 @@ export const PaginationFirstItem = React.forwardRef<
 
   const propsFromContext = getFirstItemProps! && getFirstItemProps(props);
 
-  const page = 1;
-  const href = buildHref! && buildHref(page);
+  const href = buildHref! && buildHref(1);
   return (
     <StyledListItem key="first">
       <PaginationItem

@@ -2363,36 +2363,36 @@ Object {
   },
   "pagination": Object {
     "large": Object {
-      "paddingInline": "space010",
+      "paddingInline": "space000",
     },
     "medium": Object {
-      "paddingInline": "space010",
+      "paddingInline": "space000",
     },
     "small": Object {
-      "paddingInline": "space040",
+      "paddingInline": "space000",
     },
   },
   "paginationItem": Object {
     "large": Object {
-      "color": "interactiveLink010",
-      "height": "sizing070",
+      "minHeight": "sizing070",
       "minWidth": "sizing070",
+      "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "typographyPreset": "utilityButton050",
     },
     "medium": Object {
-      "color": "interactiveLink010",
-      "height": "sizing060",
+      "minHeight": "sizing060",
       "minWidth": "sizing060",
+      "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
-      "color": "interactiveLink010",
-      "height": "sizing050",
+      "minHeight": "sizing050",
       "minWidth": "sizing050",
+      "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "typographyPreset": "utilityButton010",
@@ -5634,7 +5634,7 @@ Object {
       "backgroundColor": "{{colors.transparent}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
       "color": "{{colors.interactiveLink010}}",
-      "iconColor": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
       "marginInline": "space000",
     },
     "disabled": Object {
@@ -5650,6 +5650,7 @@ Object {
     },
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary010}}",
+      "color": "{{colors.interactiveLink020}}",
     },
     "loading": Object {
       "backgroundColor": "{{colors.interactivePrimary020}}",
@@ -5661,6 +5662,15 @@ Object {
     "selected:hover": Object {
       "color": "{{colors.inkBase}}",
       "textDecoration": "none",
+    },
+  },
+  "paginationItemBlock": Object {
+    "base": Object {
+      "alignSelf": "center",
+      "display": "flex",
+      "justifyContent": "center",
+      "margin": "{{space050}}",
+      "paddingBlock": "space040",
     },
   },
   "paginationItemTruncation": Object {

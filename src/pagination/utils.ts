@@ -115,7 +115,9 @@ export const getItemAria = ({
           ? `current page, page ${pageNumber}`
           : `go to page ${pageNumber}`;
       }
-      ariaProps['aria-current'] = selected && 'page';
+      if (selected) {
+        ariaProps['aria-current'] = 'page';
+      }
       break;
   }
 

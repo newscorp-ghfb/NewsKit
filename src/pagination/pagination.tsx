@@ -10,6 +10,7 @@ import {IconButtonProps} from '../icon-button/types';
 import {PaginationFirstItemProps} from './components/first-item';
 import {PaginationLastItemProps} from './components/last-item';
 import {PaginationPrevItemProps} from './components/prev-item';
+import {composeEventHandlers} from '../utils/compose-event-handlers';
 
 const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
   (
@@ -17,7 +18,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
       children,
       size = 'medium',
       pageSize = 10,
-      currentPage = 1,
+      defaultPage = 1,
       totalItems = 0,
       buildHref,
       onPageChange,
@@ -25,77 +26,69 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     },
     ref,
   ) => {
-    const [changedPage, setChangedPage] = useState(currentPage);
+    const [page, setPage] = useState(defaultPage);
     const lastPage = Math.ceil(totalItems / pageSize);
 
     const changePage = useCallback(
-      (page: number) => {
-        setChangedPage(page);
+      (pageNumber: number) => {
+        setPage(pageNumber);
         if (onPageChange) {
-          onPageChange(page);
+          onPageChange(pageNumber);
         }
       },
-      [currentPage, changedPage],
+      [onPageChange],
     );
 
     const getFirstItemProps = useCallback(
       ({...getterProps}: PaginationFirstItemProps): IconButtonProps =>
         ({
-          disabled: changedPage < 2,
+          disabled: page < 2,
           ...getterProps,
-          onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-            changePage(1);
-            if (getterProps.onClick) {
-              getterProps.onClick!(event);
-            }
-          },
+          onClick: composeEventHandlers([
+            () => changePage(1),
+            getterProps?.onClick,
+          ]),
         } as IconButtonProps),
-      [currentPage, changedPage],
+      [page, changePage],
     );
 
     const getPrevItemProps = useCallback(
       ({...getterProps}: PaginationPrevItemProps): IconButtonProps =>
         ({
-          disabled: changedPage < 2,
+          disabled: page < 2,
           ...getterProps,
-          onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-            changePage(changedPage - 1);
-            if (getterProps.onClick) {
-              getterProps.onClick!(event);
-            }
-          },
+          onClick: composeEventHandlers([
+            () => changePage(page - 1),
+            getterProps?.onClick,
+          ]),
         } as IconButtonProps),
-      [currentPage, changedPage],
+      [page, changePage],
     );
 
     const getNextItemProps = useCallback(
       ({...getterProps}: PaginationNextItemProps): IconButtonProps =>
         ({
-          disabled: changedPage >= lastPage,
+          disabled: page >= lastPage,
           ...getterProps,
-          onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-            changePage(changedPage + 1);
-            if (getterProps.onClick) {
-              getterProps.onClick!(event);
-            }
-          },
+          onClick: composeEventHandlers([
+            () => changePage(page + 1),
+            getterProps?.onClick,
+          ]),
         } as IconButtonProps),
-      [currentPage, changedPage],
+      [page, changePage, lastPage],
     );
 
     const getLastItemProps = useCallback(
       ({...getterProps}: PaginationLastItemProps): IconButtonProps =>
         ({
-          disabled: changedPage >= lastPage,
+          disabled: page >= lastPage,
           ...getterProps,
-          onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-            changePage(lastPage);
-            if (getterProps.onClick) {
-              getterProps.onClick!(event);
-            }
-          },
+          onClick: composeEventHandlers([
+            () => changePage(lastPage),
+            getterProps?.onClick,
+          ]),
         } as IconButtonProps),
-      [currentPage, changedPage],
+      [page, changePage, lastPage],
     );
 
     const value = useMemo(
@@ -103,8 +96,8 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
         size,
         pageSize,
         totalItems,
-        currentPage,
-        changedPage,
+        defaultPage,
+        page,
         lastPage,
         changePage,
         buildHref,
@@ -117,8 +110,8 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
         size,
         pageSize,
         totalItems,
-        currentPage,
-        changedPage,
+        defaultPage,
+        page,
         lastPage,
         changePage,
         buildHref,
@@ -132,7 +125,6 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     return (
       <PaginationProvider value={value}>
         <StyledNav
-          role="navigation"
           aria-label="pagination"
           data-testid="pagination-container"
           ref={ref}

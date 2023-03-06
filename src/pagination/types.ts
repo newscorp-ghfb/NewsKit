@@ -14,14 +14,13 @@ import {PaginationPrevItemProps} from './components/prev-item/types';
 
 export type PaginationSize = 'small' | 'medium' | 'large';
 
-export enum PaginationItemType {
-  paginationItem = 'paginationItem',
-  paginationItemTruncation = 'paginationItemTruncation',
-  paginationItemFirst = 'paginationItemFirst',
-  paginationItemPrev = 'paginationItemPrev',
-  paginationItemNext = 'paginationItemNext',
-  paginationItemLast = 'paginationItemLast',
-}
+export type PaginationItemType =
+  | 'paginationItem'
+  | 'paginationItemTruncation'
+  | 'paginationItemFirst'
+  | 'paginationItemPrev'
+  | 'paginationItemNext'
+  | 'paginationItemLast';
 
 export type PaginationLayoutItem = number | '-';
 
@@ -44,25 +43,17 @@ export interface PaginationProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
   size?: PaginationSize;
   pageSize: number;
-  currentPage: number;
+  defaultPage: number;
   totalItems: number;
   buildHref?: (pageNumber: number) => string;
   onPageChange?: (pageNumber: number) => void;
   overrides?: {
     stylePreset?: MQ<string>;
-    marginInline?: MQ<string>;
-    marginInlineStart?: MQ<string>;
-    marginInlineEnd?: MQ<string>;
-    marginBlock?: MQ<string>;
-    marginBlockStart?: MQ<string>;
-    marginBlockEnd?: MQ<string>;
-    paddingInline?: MQ<string>;
-    paddingInlineStart?: MQ<string>;
-    paddingInlineEnd?: MQ<string>;
-    paddingBlock?: MQ<string>;
-    paddingBlockStart?: MQ<string>;
-    paddingBlockEnd?: MQ<string>;
   } & LogicalProps;
+}
+
+export interface ComponentSizeProps extends React.AriaAttributes {
+  size?: PaginationSize;
 }
 
 export interface PaginationItemsProps extends ButtonProps, EventData {
@@ -76,19 +67,7 @@ export interface PaginationItemsProps extends ButtonProps, EventData {
     icon?: Override<NewsKitIconProps>;
     itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
     minWidth?: MQ<string>;
-    height?: MQ<string>;
-    marginInline?: MQ<string>;
-    marginInlineStart?: MQ<string>;
-    marginInlineEnd?: MQ<string>;
-    marginBlock?: MQ<string>;
-    marginBlockStart?: MQ<string>;
-    marginBlockEnd?: MQ<string>;
-    paddingInline?: MQ<string>;
-    paddingInlineStart?: MQ<string>;
-    paddingInlineEnd?: MQ<string>;
-    paddingBlock?: MQ<string>;
-    paddingBlockStart?: MQ<string>;
-    paddingBlockEnd?: MQ<string>;
+    minHeight?: MQ<string>;
   } & LogicalProps;
 }
 
@@ -100,26 +79,14 @@ export interface PaginationItemProps extends ButtonProps, EventData {
   pageNumber?: number;
   pageSize?: number;
   totalItems?: number;
-  href: string;
+  href?: string;
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>;
     icon?: Override<NewsKitIconProps>;
     itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
     minWidth?: MQ<string>;
-    height?: MQ<string>;
-    marginInline?: MQ<string>;
-    marginInlineStart?: MQ<string>;
-    marginInlineEnd?: MQ<string>;
-    marginBlock?: MQ<string>;
-    marginBlockStart?: MQ<string>;
-    marginBlockEnd?: MQ<string>;
-    paddingInline?: MQ<string>;
-    paddingInlineStart?: MQ<string>;
-    paddingInlineEnd?: MQ<string>;
-    paddingBlock?: MQ<string>;
-    paddingBlockStart?: MQ<string>;
-    paddingBlockEnd?: MQ<string>;
+    minHeight?: MQ<string>;
   } & LogicalProps;
 }
 
@@ -128,9 +95,9 @@ export interface PaginationProviderContext {
   pageSize: number;
   currentPage: number;
   totalItems: number;
-  buildHref?: (page: number) => string;
-  changePage: (page: number) => void;
-  changedPage: number;
+  buildHref?: (pageNumber: number) => string;
+  changePage: (pageNumber: number) => void;
+  page: number;
   lastPage: number;
 
   // Getter functions

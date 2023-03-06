@@ -9,7 +9,7 @@ import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
 import {PaginationItemType} from '../../types';
 
-const itemType = PaginationItemType.paginationItemPrev as const;
+const itemType = 'paginationItemPrev' as PaginationItemType;
 
 const DefaultIcon = (props: NewsKitIconProps) => (
   <IconFilledChevronLeft {...props} />
@@ -24,7 +24,7 @@ export const PaginationPrevItem = React.forwardRef<
     getPrevItemProps,
     size = 'medium',
     buildHref,
-    changedPage = 1,
+    page = 1,
   } = usePaginationContext();
 
   const [PaginationIcon] = getComponentOverrides(
@@ -40,8 +40,8 @@ export const PaginationPrevItem = React.forwardRef<
 
   const propsFromContext = getPrevItemProps! && getPrevItemProps(props);
 
-  const page = Math.max(changedPage - 1, 1);
-  const href = buildHref! && buildHref(page);
+  const prevPage = Math.max(page - 1, 1);
+  const href = buildHref! && buildHref(prevPage);
   return (
     <StyledListItem key="prev">
       <PaginationItem

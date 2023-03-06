@@ -3,7 +3,6 @@ import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {
   PaginationItemProps,
   PaginationItemsProps,
-  PaginationItemType,
   PaginationLayoutItem,
 } from '../../types';
 import {useTheme} from '../../../theme';
@@ -14,7 +13,7 @@ import {PaginationItem} from '../item/pagination-item';
 import {usePaginationContext} from '../../context';
 import {getItemsLayout} from '../../utils';
 
-const paginationItemTruncation = PaginationItemType.paginationItemTruncation as const;
+const paginationItemTruncation = 'paginationItemTruncation' as const;
 
 const DefaultIcon = (props: NewsKitIconProps) => (
   <IconFilledMoreHoriz {...props} />
@@ -36,7 +35,7 @@ export const PaginationItems = ({
     size = 'medium',
     buildHref,
     changePage = () => {},
-    changedPage,
+    page,
     lastPage,
     pageSize,
     totalItems,
@@ -54,9 +53,9 @@ export const PaginationItems = ({
   );
 
   const paginationElements = [] as React.ReactElement<PaginationItemProps>[];
-  if (changedPage && lastPage) {
+  if (page && lastPage) {
     const layout: [PaginationLayoutItem?] = getItemsLayout({
-      currentPage: changedPage,
+      currentPage: page,
       lastPage,
       truncation,
       siblings,
@@ -79,9 +78,12 @@ export const PaginationItems = ({
         case '-':
           truncationCount += 1;
           paginationElements.push(
-            <StyledListItem key={`trunc${truncationCount}`} aria-hidden="true">
+            <StyledListItem
+              key={`trunc${truncationCount}`}
+              aria-hidden="true"
+              size={size}
+            >
               <PaginationItem
-                href=""
                 itemType={paginationItemTruncation}
                 datatest-id={`pagination-item-truncation${truncationCount}`}
                 size={size}
@@ -98,21 +100,21 @@ export const PaginationItems = ({
           break;
         default:
           {
-            const page: number = element;
-            const href = buildHref! && buildHref(page);
+            const pageNumber: number = element;
+            const href = buildHref! && buildHref(pageNumber);
             paginationElements.push(
-              <StyledListItem key={`page${page}`}>
+              <StyledListItem key={`page${pageNumber}`} size={size}>
                 <PaginationItem
                   href={href}
-                  onClick={() => changePage(page)}
-                  selected={page === changedPage}
+                  onClick={() => changePage(pageNumber)}
+                  selected={pageNumber === page}
                   eventContext={eventContext}
                   size={size}
                   overrides={overrides}
-                  pageNumber={page}
+                  pageNumber={pageNumber}
                   {...staticProps}
                 >
-                  {children || page}
+                  {children || pageNumber}
                 </PaginationItem>
               </StyledListItem>,
             );

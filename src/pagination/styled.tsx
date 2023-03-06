@@ -1,11 +1,11 @@
-import {styled, getStylePreset} from '../utils/style';
-import {PaginationItemProps} from './types';
+import {styled, getStylePreset, getSpacingCssFromTheme} from '../utils/style';
+import {ComponentSizeProps, PaginationItemProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 import {Button} from '../button';
 
-export const StyledNav = styled.nav`
+export const StyledNav = styled.nav<ComponentSizeProps>`
   ${logicalProps()}
-  ${getStylePreset('')};
+  ${({size}) => getStylePreset(`pagination.${size}`, '')};
 `;
 
 export const StyledUnorderedList = styled.ul`
@@ -15,10 +15,11 @@ export const StyledUnorderedList = styled.ul`
   padding: 0px;
 `;
 
-export const StyledListItem = styled.li`
+export const StyledListItem = styled.li<ComponentSizeProps>`
   display: flex;
   justify-content: center;
   align-self: center;
+  ${getSpacingCssFromTheme('margin', 'space010')};
 `;
 
 export const StyledButton = styled(Button)<PaginationItemProps>`

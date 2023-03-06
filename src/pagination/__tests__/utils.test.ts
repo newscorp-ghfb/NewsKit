@@ -195,7 +195,6 @@ describe('getItemAria', () => {
     };
     const ariaProps = getItemAria(values);
     expect(ariaProps).toEqual({
-      'aria-current': false,
       'aria-label': 'go to page 2',
     });
   });
@@ -223,7 +222,6 @@ describe('getItemAria', () => {
     };
     const ariaProps = getItemAria(values);
     expect(ariaProps).toEqual({
-      'aria-current': false,
       'aria-disabled': 'true',
       'aria-label': 'go to page 2',
     });

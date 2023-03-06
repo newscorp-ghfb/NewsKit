@@ -141,10 +141,9 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -330,10 +329,9 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -469,10 +467,9 @@ exports[`BreadcrumbItem renders with overrides 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -694,11 +691,10 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -992,11 +988,10 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -1290,11 +1285,10 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -1588,10 +1582,9 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -1890,10 +1883,9 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -2187,10 +2179,9 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -2440,10 +2431,9 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
-    role="navigation"
   >
     <ol
       class="emotion-1"
@@ -2715,10 +2705,9 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 <nav
-    aria-label="pagination"
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
-    role="navigation"
   >
     <ol
       class="emotion-1"

@@ -1,13 +1,14 @@
 export default {
+  // Can be used to set padding around the entire component
   pagination: {
     small: {
-      paddingInline: 'space040',
+      paddingInline: 'space000',
     },
     medium: {
-      paddingInline: 'space010',
+      paddingInline: 'space000',
     },
     large: {
-      paddingInline: 'space010',
+      paddingInline: 'space000',
     },
   },
   paginationItem: {
@@ -15,25 +16,25 @@ export default {
       typographyPreset: 'utilityButton010',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
-      height: 'sizing050',
+      paddingBlock: 'space000',
+      minHeight: 'sizing050',
       minWidth: 'sizing050',
-      color: 'interactiveLink010',
     },
     medium: {
       typographyPreset: 'utilityButton020',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
-      height: 'sizing060',
+      paddingBlock: 'space000',
+      minHeight: 'sizing060',
       minWidth: 'sizing060',
-      color: 'interactiveLink010',
     },
     large: {
       typographyPreset: 'utilityButton050',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
-      height: 'sizing070',
+      paddingBlock: 'space000',
+      minHeight: 'sizing070',
       minWidth: 'sizing070',
-      color: 'interactiveLink010',
     },
   },
   paginationItemFirst: {

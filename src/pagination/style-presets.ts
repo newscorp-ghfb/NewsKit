@@ -3,52 +3,25 @@ import {StylePreset} from '../theme/types';
 // The paginationItem style preset is based on the buttonMinimalPrimary style preset
 // but using link colours
 export default {
-  /* paginationItem0: {
+  paginationItemBlock: {
     base: {
-      backgroundColor: '{{colors.transparent}}',
-      color: '{{colors.interactiveLink010}}',
+      margin: '{{space050}}',
+      paddingBlock: 'space040',
+      display: 'flex',
+      justifyContent: 'center',
+      alignSelf: 'center',
     },
-    hover: {
-      color: '{{colors.interactivePrimary010}}', // {{colors.interactiveLink020}}',
-      textDecoration: 'none',
-    },
-    selected: {
-      color: '{{colors.interactiveLink030}}',
-      textDecoration: 'none',
-      backgroundColor: '{{colors.interactivePrimary020}}',
-      borderRadius: '{{borders.borderRadiusDefault}}',
-    },
-    'selected:hover': {
-      color: '{{colors.inkBase}}',
-      textDecoration: 'none',
-    },
-    active: {
-      color: '{{colors.interactivePrimary020}}', // '{{colors.interactiveLink030}}',
-      textDecoration: 'none',
-    },
-    disabled: {
-      // backgroundColor: '{{colors.interactiveDisabled010}}',
-      backgroundColor: '{{colors.transparent}}',
-      color: '{{colors.inkNonEssential}}',
-      iconColor: '{{colors.inkNonEssential}}',
-    },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineOffset: '{{outlines.outlineOffsetDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
-  }, */
+  },
   paginationItem: {
     base: {
       backgroundColor: '{{colors.transparent}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
       color: '{{colors.interactiveLink010}}',
-      iconColor: '{{colors.inkBrand010}}',
+      iconColor: '{{colors.interactiveLink010}}',
       marginInline: 'space000',
     },
     hover: {
+      color: '{{colors.interactiveLink020}}',
       backgroundColor: '{{colors.interactivePrimary010}}',
     },
     active: {
@@ -78,12 +51,6 @@ export default {
       textDecoration: 'none',
     },
   },
-  /* paginationicon: {
-    base: {
-      backgroundColor: '{{colors.transparent}}',
-      color: '{{colors.inkSubtle}}',
-    },
-  }, */
   paginationItemTruncation: {
     base: {
       backgroundColor: '{{colors.transparent}}',

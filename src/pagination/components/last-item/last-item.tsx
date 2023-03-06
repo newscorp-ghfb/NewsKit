@@ -9,7 +9,7 @@ import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
 import {PaginationItemType} from '../../types';
 
-const itemType = PaginationItemType.paginationItemLast as const;
+const itemType = 'paginationItemLast' as PaginationItemType;
 
 const DefaultIcon = (props: NewsKitIconProps) => (
   <IconFilledLastPage {...props} />
@@ -40,8 +40,7 @@ export const PaginationLastItem = React.forwardRef<
 
   const propsFromContext = getLastItemProps! && getLastItemProps(props);
 
-  const page = lastPage;
-  const href = buildHref! && buildHref(page);
+  const href = buildHref! && buildHref(lastPage);
   return (
     <StyledListItem key="last">
       <PaginationItem
