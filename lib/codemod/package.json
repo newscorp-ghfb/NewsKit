@@ -1,6 +1,6 @@
 {
   "name": "@newskit/codemod",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "You can use this CLI tool to run various scripts (codemods) that will help update NewsKit APIs",
   "keywords": [
     "react",
