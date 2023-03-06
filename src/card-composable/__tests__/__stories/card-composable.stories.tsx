@@ -355,11 +355,17 @@ export const StoryCardAreas = () => (
         <CardMedia src="/placeholder-3x2.png" />
         <CardContent overrides={{paddingBlock: 'space040'}}>
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
-          <Block paddingBlock="space040" />
           <CardLink href={window.location.href}>
-            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
+            <H
+              overrides={{
+                marginBlockStart: 'space020',
+                heading: {
+                  stylePreset: 'headlineLink',
+                },
+              }}
+            />
           </CardLink>
           <Block marginBlock="space020">
             <P overrides={{marginBlockStart: 'space020'}} />
@@ -426,7 +432,12 @@ export const StoryVariations = () => (
             href={window.location.href}
             overrides={{paddingBlock: 'space020'}}
           >
-            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
+            <H
+              overrides={{
+                marginBlockStart: 'space020',
+                heading: {stylePreset: 'headlineLink'},
+              }}
+            />
           </CardLink>
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
@@ -452,10 +463,10 @@ export const StoryVariations = () => (
           }}
         >
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
 
-          <H overrides={{paddingBlockStart: 'space020'}} />
+          <H overrides={{marginBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
         <CardActions marginBlock="space020" paddingInline="space020">
@@ -480,10 +491,10 @@ export const StoryVariations = () => (
           }}
         >
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
 
-          <H overrides={{paddingBlockStart: 'space020'}} />
+          <H overrides={{marginBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
         <CardActions marginBlock="space020" paddingInline="space020">
@@ -525,10 +536,10 @@ export const StoryVariations = () => (
           }}
         >
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
 
-          <H overrides={{paddingBlockStart: 'space020'}} />
+          <H overrides={{marginBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
         <CardActions marginBlock="space040" paddingInline="space020">
@@ -562,10 +573,10 @@ export const StoryInsetCard = () => (
           }}
         >
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
 
-          <H overrides={{paddingBlockStart: 'space020'}} />
+          <H overrides={{marginBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
         <CardActions marginBlock="space040" paddingInline="space020">
@@ -762,7 +773,7 @@ export const StoryOrder = () => (
       >
         <CardContent overrides={{paddingBlock: 'space040'}}>
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
           <H overrides={{marginBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
@@ -843,7 +854,7 @@ export const StoryOnClick = () => (
       >
         <CardContent overrides={{paddingBlock: 'space040'}}>
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
           <H overrides={{marginBlockStart: 'space020'}} />
           <P overrides={{marginBlockStart: 'space020'}} />
@@ -877,7 +888,7 @@ export const StoryLogicalProps = () => (
         >
           <CardContent overrides={{paddingBlock: 'space040'}}>
             <div>
-              <Flag>Flag</Flag>
+              <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
             </div>
             <H overrides={{marginBlockStart: 'space020'}} />
             <P overrides={{marginBlockStart: 'space020'}} />
@@ -902,9 +913,9 @@ export const StoryLogicalProps = () => (
             actions
           `}
         >
-          <CardContent overrides={{paddingBlock: 'space020'}}>
+          <CardContent overrides={{paddingBlock: 'space040'}}>
             <div>
-              <Flag>Flag</Flag>
+              <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
             </div>
             <H overrides={{marginBlockStart: 'space020'}} />
             <P overrides={{marginBlockStart: 'space020'}} />
@@ -926,9 +937,9 @@ export const StoryLogicalProps = () => (
             actions
           `}
         >
-          <CardContent overrides={{paddingBlock: 'space060'}}>
+          <CardContent overrides={{paddingBlock: 'space040'}}>
             <div>
-              <Flag>Flag</Flag>
+              <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
             </div>
             <H overrides={{marginBlockStart: 'space020'}} />
             <P overrides={{marginBlockStart: 'space020'}} />
@@ -1051,7 +1062,7 @@ export const StoryOverrides = () => (
         >
           <CardContent overrides={{paddingBlock: 'space040'}}>
             <div>
-              <Flag>Flag</Flag>
+              <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
             </div>
             <H
               overrides={{
