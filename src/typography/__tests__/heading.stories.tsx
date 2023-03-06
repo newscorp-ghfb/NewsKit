@@ -140,14 +140,14 @@ export const StoryHeadingLogicalPropstest = () => {
 };
 StoryHeadingLogicalPropstest.storyName = 'Logical Props';
 
-export const StoryHeadingOverrides = () => (
+export const StoryHeadingStylingOverrides = () => (
   <StorybookPage columns="1fr 1fr 1fr">
     <ThemeProvider theme={myCustomTheme}>
       <StorybookCase title="UtilityHeadline60">
         <H6
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialParagraph030',
+            typographyPreset: 'editorialHeadline060',
           }}
         >
           {BODY}
@@ -157,7 +157,7 @@ export const StoryHeadingOverrides = () => (
         <H5
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialParagraph020',
+            typographyPreset: 'editorialHeadline050',
           }}
         >
           {BODY}
@@ -167,7 +167,7 @@ export const StoryHeadingOverrides = () => (
         <H4
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialParagraph010',
+            typographyPreset: 'editorialHeadline040',
           }}
         >
           {BODY}
@@ -177,7 +177,7 @@ export const StoryHeadingOverrides = () => (
         <H3
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialParagraph030',
+            typographyPreset: 'editorialHeadline030',
           }}
         >
           {BODY}
@@ -187,7 +187,7 @@ export const StoryHeadingOverrides = () => (
         <H2
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialParagraph020',
+            typographyPreset: 'editorialHeadline020',
           }}
         >
           {BODY}
@@ -197,7 +197,7 @@ export const StoryHeadingOverrides = () => (
         <H1
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialParagraph010',
+            typographyPreset: 'editorialHeadline010',
           }}
         >
           {BODY}
@@ -264,4 +264,20 @@ export const StoryHeadingOverrides = () => (
   //   </ThemeProvider>
   // </>
 );
-StoryHeadingOverrides.storyName = 'Styling Overrides';
+StoryHeadingStylingOverrides.storyName = 'Styling Overrides';
+
+export const StoryHeadingOverrides = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase title="H-tag override (to h2)">
+      <H1
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'editorialHeadline080',
+        }}
+      >
+        {BODY}
+      </H1>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryHeadingOverrides.storyName = 'Overrides';
