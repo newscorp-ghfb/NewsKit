@@ -69,7 +69,7 @@ const PaginationWithNavItems = (
     | PaginationNextItemProps
     | PaginationLastItemProps,
 ) => (
-  <Pagination {...defaultProps} size="small">
+  <Pagination {...defaultProps} path="pagination" size="small">
     <PaginationFirstItem key="1" {...navItemProps} onClick={onClick} />
     <PaginationPrevItem key="2" {...navItemProps} onClick={onClick} />
     <PaginationNextItem key="4" {...navItemProps} onClick={onClick} />

@@ -4,9 +4,10 @@ import {logicalProps} from '../utils/logical-properties';
 import {Button} from '../button';
 
 export const StyledNav = styled.nav<ComponentSizeProps>`
-  ${({size}) => getStylePreset(`pagination.${size}`, '')};
-  ${({size}) => getTypographyPreset(`pagination.${size}`, '')};
-  ${({size}) => logicalProps(`pagination.${size}`, '')};
+  ${({path = 'pagination', size}) => getStylePreset(`${path}.${size}`, '')};
+  ${({path = 'pagination', size}) =>
+    getTypographyPreset(`${path}.${size}`, '')};
+  ${({path = 'pagination', size}) => logicalProps(`${path}.${size}`, '')};
 `;
 
 export const StyledUnorderedList = styled.ul`

@@ -17,6 +17,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
   (
     {
       children,
+      path,
       size = 'medium',
       pageSize,
       page: pageProp, // undefined if uncontrolled externally
@@ -135,6 +136,8 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     return (
       <PaginationProvider value={value}>
         <StyledNav
+          path={path}
+          size={size}
           aria-label="pagination"
           data-testid="pagination-container"
           ref={ref}

@@ -237,8 +237,8 @@ export const StoryLogicalProps = () => (
         <PaginationNextItem />
       </Pagination>
     </StorybookCase>
-    <StorybookCase title="Logical props - padding">
-      <Pagination {...defaultProps} aria-label="padding-overrides">
+    <StorybookCase title="Logical props - items padding">
+      <Pagination {...defaultProps} aria-label="items padding overrides">
         <PaginationPrevItem />
         <PaginationItems
           {...defaultItemsProps}
@@ -247,13 +247,24 @@ export const StoryLogicalProps = () => (
         <PaginationNextItem />
       </Pagination>
     </StorybookCase>
-    <StorybookCase title="Logical props - margin">
-      <Pagination {...defaultProps} aria-label="margin-overrides">
+    <StorybookCase title="Logical props - items margin">
+      <Pagination {...defaultProps} aria-label="items margin overrides">
         <PaginationPrevItem />
         <PaginationItems
           {...defaultItemsProps}
           overrides={{marginInline: 'space020'}}
         />
+        <PaginationNextItem />
+      </Pagination>
+    </StorybookCase>
+    <StorybookCase title="Logical props - component margin">
+      <Pagination
+        {...defaultProps}
+        aria-label="component margin overrides"
+        overrides={{marginInline: 'space060'}}
+      >
+        <PaginationPrevItem />
+        <PaginationItems {...defaultItemsProps} />
         <PaginationNextItem />
       </Pagination>
     </StorybookCase>

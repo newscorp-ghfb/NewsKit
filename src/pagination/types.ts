@@ -41,6 +41,7 @@ export interface PaginationItemAriaInput {
 
 export interface PaginationProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
+  path?: string;
   size?: PaginationSize;
   pageSize: number;
   page?: number;
@@ -54,6 +55,7 @@ export interface PaginationProps extends React.AriaAttributes {
 }
 
 export interface ComponentSizeProps extends React.AriaAttributes {
+  path?: string;
   size?: PaginationSize;
 }
 
@@ -62,16 +64,10 @@ export interface PaginationItemsProps extends ButtonProps, EventData {
   truncation?: boolean;
   siblings?: number;
   boundaries?: number;
-  overrides?: {
-    stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
+  overrides?: ButtonProps['overrides'] & {
     icon?: Override<NewsKitIconProps>;
     itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
-    minWidth?: MQ<string>;
-    minHeight?: MQ<string>;
-    width?: MQ<string>;
-    height?: MQ<string>;
-  } & LogicalProps;
+  };
 }
 
 export interface PaginationItemProps extends ButtonProps, EventData {
@@ -83,16 +79,10 @@ export interface PaginationItemProps extends ButtonProps, EventData {
   pageSize?: number;
   totalItems?: number;
   href?: string;
-  overrides?: {
-    stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
+  overrides?: ButtonProps['overrides'] & {
     icon?: Override<NewsKitIconProps>;
     itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
-    minWidth?: MQ<string>;
-    minHeight?: MQ<string>;
-    width?: MQ<string>;
-    height?: MQ<string>;
-  } & LogicalProps;
+  };
 }
 
 export interface PaginationProviderContext {
