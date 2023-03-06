@@ -33,6 +33,24 @@ const ColorBlock = styled.div<{
   padding: 20px;
 `;
 
+const Wrapper = styled.div<{
+  color?: string;
+  leftOffset?: string;
+  topOffset?: string;
+}>`
+  box-sizing: border-box;
+  position: fixed;
+  top: ${({topOffset}) => topOffset || '0%'};
+  left: ${({leftOffset}) => leftOffset || '0%'};
+  width: 50%;
+  height: 100px;
+  padding: 20px;
+  ${({color}) =>
+    getColorCssFromTheme('backgroundColor', color || 'transparent')}
+  display: flex;
+  border: solid 1px;
+  ${getColorCssFromTheme('borderColor', 'interfaceBrand010')};
+`;
 export const StoryLayerDefault = () => (
   <>
     <Box>
@@ -59,7 +77,7 @@ export const StoryNestedLayer = () => (
   <>
     <Box>
       <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
-        Nested Layer
+        Nested layer
       </TextBlock>
     </Box>
     <Layer>
@@ -178,9 +196,9 @@ export const StoryMultipleLayers = () => {
       </Box>
       <Layer appendToRef={ref}>
         <ColorBlock color="blue010">
-          Parent Layer
+          Parent layer
           <Layer>
-            <ColorBlock>Child Layer</ColorBlock>
+            <ColorBlock>Child layer</ColorBlock>
           </Layer>
         </ColorBlock>
       </Layer>
@@ -198,27 +216,6 @@ StoryMultipleLayers.parameters = {
     page: null,
   },
 };
-
-const Wrapper = styled.div<{
-  width?: string;
-  height?: string;
-  border?: string;
-  color?: string;
-  offset?: string;
-}>`
-  box-sizing: border-box;
-  position: fixed;
-  top: ${({offset}) => offset || '0%'};
-  left: ${({offset}) => offset || '0%'};
-  width: 300px;
-  heigh: 200px;
-  padding: 20px;
-  ${({color = 'transparent', ...props}) =>
-    getColorCssFromTheme('background', color)(props)};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 export const StoryBasicLayerOrganizer = () => (
   <>
@@ -247,30 +244,32 @@ StoryBasicLayerOrganizer.parameters = {
 
 export const StoryBasicLayerOrganizerZindex = () => (
   <>
-    <Box height="350px">
+    <Box height="250px">
       <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
         Basic layer content
       </TextBlock>
     </Box>
     <Layer>
-      <Wrapper offset="20%" color="amber040">
+      <Wrapper topOffset="20%" leftOffset="3%" color="amber010">
         A
       </Wrapper>
     </Layer>
     <LayerOrganizer zIndex={100}>
       <Layer>
-        <Wrapper offset="22%" color="red040">
+        <Wrapper topOffset="22%" leftOffset="4%" color="blue010">
           B1
         </Wrapper>
       </Layer>
       <Layer>
-        <Wrapper offset="24%" color="teal040">
-          B2 should be on top
+        <Wrapper topOffset="24%" leftOffset="5%" color="teal010">
+          <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+            B2 should be on the top
+          </TextBlock>
         </Wrapper>
       </Layer>
     </LayerOrganizer>
     <Layer>
-      <Wrapper offset="26%" color="green040">
+      <Wrapper topOffset="26%" leftOffset="6%" color="red010">
         C
       </Wrapper>
     </Layer>
@@ -290,32 +289,34 @@ StoryBasicLayerOrganizerZindex.parameters = {
 
 export const StoryNestedLayerOrganizerZindex = () => (
   <>
-    <Box height="350px">
+    <Box height="250px">
       <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
         Basic layer content
       </TextBlock>
     </Box>
     <Layer>
-      <Wrapper offset="20%" color="amber040">
+      <Wrapper topOffset="20%" leftOffset="3%" color="amber010">
         A
       </Wrapper>
     </Layer>
     <LayerOrganizer zIndex={1}>
       <LayerOrganizer zIndex={1}>
         <Layer>
-          <Wrapper offset="22%" color="red040">
-            B1 should be on top
+          <Wrapper topOffset="22%" leftOffset="4%" color="blue010">
+            <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+              B1 should be on the top
+            </TextBlock>
           </Wrapper>
         </Layer>
       </LayerOrganizer>
       <Layer>
-        <Wrapper offset="24%" color="teal040">
+        <Wrapper topOffset="24%" leftOffset="5%" color="teal010">
           B2
         </Wrapper>
       </Layer>
     </LayerOrganizer>
     <Layer>
-      <Wrapper offset="26%" color="green040">
+      <Wrapper topOffset="26%" leftOffset="6%" color="red010">
         C
       </Wrapper>
     </Layer>
