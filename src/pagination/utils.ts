@@ -9,8 +9,8 @@ const appendSiblings = (
   fromSibling: number,
   toSibling: number,
 ) => {
-  for (let page = fromSibling; page <= toSibling; page++) {
-    layout.push(page);
+  for (let pageNumber = fromSibling; pageNumber <= toSibling; pageNumber++) {
+    layout.push(pageNumber);
   }
 };
 
@@ -20,11 +20,14 @@ const appendBoundariesAtStart = (
   fromSibling: number,
 ) => {
   if (boundaries && fromSibling > 1) {
-    const toBoundaryAtStart = Math.min(boundaries, fromSibling - 1);
-    for (let page = 1; page <= toBoundaryAtStart; page++) {
-      layout.push(page);
+    const extreme = fromSibling - 1;
+    const toBoundaryAtStart = Math.min(boundaries, extreme);
+    for (let pageNumber = 1; pageNumber <= toBoundaryAtStart; pageNumber++) {
+      layout.push(pageNumber);
     }
-    layout.push('-');
+    if (toBoundaryAtStart < extreme) {
+      layout.push('-');
+    }
   }
 };
 
@@ -35,11 +38,11 @@ const appendBoundariesAtEnd = (
   lastPage: number,
 ) => {
   if (boundaries && toSibling < lastPage) {
-    const fromBoundaryAtEnd = Math.max(
-      lastPage - boundaries + 1,
-      toSibling + 1,
-    );
-    layout.push('-');
+    const extreme = toSibling + 1;
+    const fromBoundaryAtEnd = Math.max(lastPage - boundaries + 1, extreme);
+    if (fromBoundaryAtEnd > extreme) {
+      layout.push('-');
+    }
     for (let page = fromBoundaryAtEnd; page <= lastPage; page++) {
       layout.push(page);
     }
@@ -47,20 +50,20 @@ const appendBoundariesAtEnd = (
 };
 
 export const getItemsLayout = ({
-  currentPage,
+  page,
   lastPage,
   truncation,
   siblings,
   boundaries,
 }: PaginationItemsLayoutInput): [PaginationLayoutItem?] => {
   const layout: [PaginationLayoutItem?] = [];
-  if (currentPage < 1 || lastPage < 1) {
+  if (page < 1 || lastPage < 1) {
     return layout;
   }
   if (truncation) {
     if (siblings >= 0) {
-      const fromSibling = Math.max(1, currentPage - siblings);
-      const toSibling = Math.min(currentPage + siblings, lastPage);
+      const fromSibling = Math.max(1, page - siblings);
+      const toSibling = Math.min(page + siblings, lastPage);
 
       appendBoundariesAtStart(layout, boundaries, fromSibling);
 
@@ -69,8 +72,8 @@ export const getItemsLayout = ({
       appendBoundariesAtEnd(layout, boundaries, toSibling, lastPage);
     }
   } else {
-    for (let page = 1; page <= lastPage; page++) {
-      layout.push(page);
+    for (let pageNumber = 1; pageNumber <= lastPage; pageNumber++) {
+      layout.push(pageNumber);
     }
   }
   return layout;

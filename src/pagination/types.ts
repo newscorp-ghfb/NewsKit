@@ -25,7 +25,7 @@ export type PaginationItemType =
 export type PaginationLayoutItem = number | '-';
 
 export interface PaginationItemsLayoutInput {
-  currentPage: number;
+  page: number;
   lastPage: number;
   truncation: boolean;
   siblings: number;
@@ -87,7 +87,7 @@ export interface PaginationItemProps extends ButtonProps, EventData {
 export interface PaginationProviderContext {
   size: PaginationSize;
   pageSize: number;
-  currentPage: number;
+  page: number;
   totalItems: number;
   buildHref?: (pageNumber: number) => string;
   changePage: (pageNumber: number) => void;

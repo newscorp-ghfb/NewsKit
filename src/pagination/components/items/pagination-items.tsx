@@ -58,7 +58,7 @@ export const PaginationItems = ({
   const paginationElements = [] as React.ReactElement<PaginationItemProps>[];
   if (page && lastPage) {
     const layout: [PaginationLayoutItem?] = getItemsLayout({
-      currentPage: page,
+      page,
       lastPage,
       truncation,
       siblings,

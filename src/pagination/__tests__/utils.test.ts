@@ -4,7 +4,7 @@ import {getItemsLayout, getItemAria} from '../utils';
 describe('getItemsLayout', () => {
   it('should return empty array if no pages', () => {
     const values = {
-      currentPage: 0,
+      page: 0,
       lastPage: 0,
       truncation: false,
       siblings: 3,
@@ -14,9 +14,9 @@ describe('getItemsLayout', () => {
     expect(layout).toEqual([]);
   });
 
-  it('should return empty array if currentPage or lastPage < 1', () => {
+  it('should return empty array if page or lastPage < 1', () => {
     const values = {
-      currentPage: 0,
+      page: 0,
       lastPage: 0,
       truncation: true,
       siblings: 3,
@@ -28,7 +28,7 @@ describe('getItemsLayout', () => {
 
   it('should return empty array if truncation and less than zero siblings', () => {
     const values = {
-      currentPage: 2,
+      page: 2,
       lastPage: 20,
       truncation: true,
       siblings: -1,
@@ -40,7 +40,7 @@ describe('getItemsLayout', () => {
 
   it('should return array containing only current page when zero siblings', () => {
     const values = {
-      currentPage: 2,
+      page: 2,
       lastPage: 20,
       truncation: true,
       siblings: 0,
@@ -52,19 +52,31 @@ describe('getItemsLayout', () => {
 
   it('should return array containing first and last items when zero siblings and 1 boundary', () => {
     const values = {
-      currentPage: 2,
+      page: 2,
       lastPage: 20,
       truncation: true,
       siblings: 0,
       boundaries: 1,
     };
     const layout = getItemsLayout(values);
-    expect(layout.join(' ')).toEqual('1 - 2 - 20');
+    expect(layout.join(' ')).toEqual('1 2 - 20'); // Not '1 - 2 - 20'
+  });
+
+  it('should return array containing 2 truncations when zero siblings and 1 boundary', () => {
+    const values = {
+      page: 3,
+      lastPage: 20,
+      truncation: true,
+      siblings: 0,
+      boundaries: 1,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 - 3 - 20');
   });
 
   it('should return all pages when no truncation', () => {
     const values = {
-      currentPage: 10,
+      page: 10,
       lastPage: 20,
       truncation: false,
       siblings: 3,
@@ -78,7 +90,7 @@ describe('getItemsLayout', () => {
 
   it('should return 3 consecutive pages when 1 sibling', () => {
     const values = {
-      currentPage: 10,
+      page: 10,
       lastPage: 20,
       truncation: true,
       siblings: 1,
@@ -90,7 +102,7 @@ describe('getItemsLayout', () => {
 
   it('should return 5 consecutive pages when 2 siblings', () => {
     const values = {
-      currentPage: 10,
+      page: 10,
       lastPage: 20,
       truncation: true,
       siblings: 2,
@@ -102,7 +114,7 @@ describe('getItemsLayout', () => {
 
   it('should return 7 consecutive pages when 3 siblings', () => {
     const values = {
-      currentPage: 10,
+      page: 10,
       lastPage: 20,
       truncation: true,
       siblings: 3,
@@ -114,7 +126,7 @@ describe('getItemsLayout', () => {
 
   it('should return 1 boundary, a truncation, siblings, a truncation and 1 boundary', () => {
     const values = {
-      currentPage: 10,
+      page: 10,
       lastPage: 20,
       truncation: true,
       siblings: 1,
@@ -126,7 +138,7 @@ describe('getItemsLayout', () => {
 
   it('should return 2 boundaries, a truncation, siblings, a truncation and 2 boundaries', () => {
     const values = {
-      currentPage: 10,
+      page: 10,
       lastPage: 20,
       truncation: true,
       siblings: 1,
@@ -138,7 +150,7 @@ describe('getItemsLayout', () => {
 
   it('should return 3 boundaries, a truncation, siblings, a truncation and 3 boundaries', () => {
     const values = {
-      currentPage: 10,
+      page: 10,
       lastPage: 20,
       truncation: true,
       siblings: 1,
@@ -148,33 +160,57 @@ describe('getItemsLayout', () => {
     expect(layout.join(' ')).toEqual('1 2 3 - 9 10 11 - 18 19 20');
   });
 
-  it('should return 2 boundaries, a truncation, siblings, a truncation and 3 boundaries when there is overlap with siblings', () => {
+  it('should return 2 boundaries, no truncations, siblings, a truncation and 3 boundaries when there is overlap with siblings', () => {
     const values = {
-      currentPage: 5,
+      page: 5,
       lastPage: 10,
       truncation: true,
       siblings: 2,
       boundaries: 3,
     };
     const layout = getItemsLayout(values);
-    expect(layout.join(' ')).toEqual('1 2 - 3 4 5 6 7 - 8 9 10');
+    expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 10'); // Not '1 2 - 3 4 5 6 7 - 8 9 10'
+  });
+
+  it('should return 2 boundaries, 2 truncations, siblings, a truncation and 3 boundaries when there is no overlap with siblings', () => {
+    const values = {
+      page: 10,
+      lastPage: 20,
+      truncation: true,
+      siblings: 2,
+      boundaries: 3,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 2 3 - 8 9 10 11 12 - 18 19 20');
+  });
+
+  it('should return 1 truncation when there is partial overlap with siblings', () => {
+    const values = {
+      page: 5,
+      lastPage: 20,
+      truncation: true,
+      siblings: 2,
+      boundaries: 3,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 - 18 19 20');
   });
 
   it('should return no boundary or truncation, siblings, a truncation and 1 boundary when there is more overlap with siblings', () => {
     const values = {
-      currentPage: 5,
+      page: 5,
       lastPage: 10,
       truncation: true,
       siblings: 4,
       boundaries: 3,
     };
     const layout = getItemsLayout(values);
-    expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 - 10');
+    expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 10'); // Not '1 2 3 4 5 6 7 8 9 - 10'
   });
 
   it('should return no boundary or truncation, siblings, no truncation or boundary when there is total overlap with siblings', () => {
     const values = {
-      currentPage: 5,
+      page: 5,
       lastPage: 10,
       truncation: true,
       siblings: 5,
@@ -182,6 +218,18 @@ describe('getItemsLayout', () => {
     };
     const layout = getItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 10');
+  });
+
+  it('should return no truncation, when there is total boundary numbers are consecutive with the siblings', () => {
+    const values = {
+      page: 3,
+      lastPage: 5,
+      truncation: true,
+      siblings: 0,
+      boundaries: 2,
+    };
+    const layout = getItemsLayout(values);
+    expect(layout.join(' ')).toEqual('1 2 3 4 5'); // Not '1 2 - 3 - 4 5'
   });
 });
 
