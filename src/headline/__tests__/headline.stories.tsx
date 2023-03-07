@@ -85,32 +85,72 @@ export const StoryHeadingVariations = () => (
       <H6>{HeadlineText}</H6>
     </StorybookCase>
     <StorybookCase title="Render Kicker as span (default)">
-      <Headline kickerText="Kicker" headingAs="span" kickerAs="span">
+      <Headline
+        kickerText="Kicker"
+        headingAs="span"
+        kickerAs="span"
+        overrides={{typographyPreset: 'editorialHeadline010'}}
+      >
         {HeadlineText}
       </Headline>
     </StorybookCase>
     <StorybookCase title="Render Kicker as h1">
-      <Headline kickerText="Kicker" headingAs="h1" kickerAs="h1">
+      <Headline
+        kickerText="Kicker"
+        headingAs="h1"
+        kickerAs="h1"
+        overrides={{
+          typographyPreset: 'editorialHeadline070',
+        }}
+      >
         {HeadlineText}
       </Headline>
     </StorybookCase>
     <StorybookCase title="Render Kicker as h2">
-      <Headline kickerText="Kicker" headingAs="h2" kickerAs="h2">
+      <Headline
+        kickerText="Kicker"
+        headingAs="h2"
+        kickerAs="h2"
+        overrides={{
+          typographyPreset: 'editorialHeadline050',
+        }}
+      >
         {HeadlineText}
       </Headline>
     </StorybookCase>
     <StorybookCase title="Render Kicker as h3">
-      <Headline kickerText="Kicker" headingAs="h3" kickerAs="h3">
+      <Headline
+        kickerText="Kicker"
+        headingAs="h3"
+        kickerAs="h3"
+        overrides={{
+          typographyPreset: 'editorialHeadline040',
+        }}
+      >
         {HeadlineText}
       </Headline>
     </StorybookCase>
     <StorybookCase title="Render Kicker as h4">
-      <Headline kickerText="Kicker" headingAs="h4" kickerAs="h4">
+      <Headline
+        kickerText="Kicker"
+        headingAs="h4"
+        kickerAs="h4"
+        overrides={{
+          typographyPreset: 'editorialHeadline030',
+        }}
+      >
         {HeadlineText}
       </Headline>
     </StorybookCase>
     <StorybookCase title="Render Kicker as h5">
-      <Headline kickerText="Kicker" headingAs="h5" kickerAs="h5">
+      <Headline
+        kickerText="Kicker"
+        headingAs="h5"
+        kickerAs="h5"
+        overrides={{
+          typographyPreset: 'editorialHeadline020',
+        }}
+      >
         {HeadlineText}
       </Headline>
     </StorybookCase>
@@ -118,7 +158,7 @@ export const StoryHeadingVariations = () => (
 );
 StoryHeadingVariations.storyName = 'Variations';
 
-export const StoryHeadingLogicalPropstest = () => {
+export const StoryHeadingLogicalProps = () => {
   const logicalPropsOverrides = {
     marginBlock: 'space030',
     marginInline: 'space030',
@@ -161,7 +201,7 @@ export const StoryHeadingLogicalPropstest = () => {
     </StorybookPage>
   );
 };
-StoryHeadingLogicalPropstest.storyName = 'Logical Props';
+StoryHeadingLogicalProps.storyName = 'Logical Props';
 
 export const StoryHeadingStylingOverrides = () => (
   <StorybookPage columns="1fr 1fr 1fr">
@@ -170,7 +210,7 @@ export const StoryHeadingStylingOverrides = () => (
         <H6
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline060',
+            typographyPreset: 'utilityHeading050',
           }}
         >
           {BODY}
@@ -180,7 +220,7 @@ export const StoryHeadingStylingOverrides = () => (
         <H5
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline050',
+            typographyPreset: 'utilityHeading050',
           }}
         >
           {BODY}
@@ -190,7 +230,7 @@ export const StoryHeadingStylingOverrides = () => (
         <H4
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline040',
+            typographyPreset: 'utilityHeading040',
           }}
         >
           {BODY}
@@ -200,7 +240,7 @@ export const StoryHeadingStylingOverrides = () => (
         <H3
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline030',
+            typographyPreset: 'utilityHeading030',
           }}
         >
           {BODY}
@@ -210,7 +250,7 @@ export const StoryHeadingStylingOverrides = () => (
         <H2
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline020',
+            typographyPreset: 'utilityHeading020',
           }}
         >
           {BODY}
@@ -220,7 +260,7 @@ export const StoryHeadingStylingOverrides = () => (
         <H1
           overrides={{
             stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline010',
+            typographyPreset: 'utilityHeading010',
           }}
         >
           {BODY}
@@ -237,7 +277,7 @@ export const StoryHeadingOverrides = () => (
       <H1
         overrides={{
           stylePreset: 'headingCustom',
-          typographyPreset: 'editorialHeadline080',
+          typographyPreset: 'editorialHeadline070',
         }}
       >
         {BODY}
