@@ -1,33 +1,500 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {IconButton} from '..';
 import {styled, getColorCssFromTheme} from '../../utils/style';
-import {StorybookSubHeading, StorybookH3} from '../../test/storybook-comps';
-import {Block, Cell, Grid, Stack, ButtonOverrides} from '../..';
-import {IconFilledEmail, IconFilledLink, IconFilledPause} from '../../icons';
-import {ThemeProvider, createTheme} from '../../theme';
+import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
+import {Tooltip, GridLayoutItem, TextBlock, GridLayout} from '../..';
+import {IconFilledAddCircle, IconFilledLaunch} from '../../icons';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-text-input-theme',
+const DEFAULT_BUTTON_COLS = 'repeat(auto-fill, minmax(100px, 1fr))';
+const APPEARANCES = ['Solid', 'Outlined', 'Minimal'];
+
+const InverseContainer = styled.div`
+  margin: -16px;
+  ${getColorCssFromTheme('backgroundColor', 'inkContrast')};
+  ${getColorCssFromTheme('color', 'inkInverse')};
+`;
+
+export const StoryIconButtonDefault = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <IconButton aria-label="icon button">
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryIconButtonDefault.storyName = 'Default';
+
+export const StoryIconButtonSize = () => (
+  <StorybookPage columns="1fr 1fr 1fr">
+    <StorybookCase title="Small">
+      <IconButton size="small" aria-label="small icon button">
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
+    <StorybookCase title="Medium">
+      <IconButton size="medium" aria-label="medium icon button">
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
+    <StorybookCase title="Large">
+      <IconButton size="large" aria-label="large icon button">
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryIconButtonSize.storyName = 'Size';
+
+export const StoryIconButtonPrimary = () => {
+  const intent = 'Primary';
+  return (
+    <StorybookPage rowGap="space090">
+      {APPEARANCES.map(appearance => {
+        const stylePreset = `iconButton${appearance}${intent}`;
+        return (
+          <GridLayoutItem key={appearance + intent} column="1/-1">
+            <TextBlock
+              typographyPreset="utilityBody030"
+              marginBlockEnd="space070"
+            >
+              {appearance}
+            </TextBlock>
+            <GridLayout
+              rowGap="space080"
+              columnGap="space080"
+              columns={DEFAULT_BUTTON_COLS}
+            >
+              <StorybookCase title="Default">
+                <IconButton
+                  overrides={{stylePreset}}
+                  aria-label="default icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Focus">
+                <IconButton
+                  overrides={{stylePreset}}
+                  autoFocus
+                  aria-label="focus icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Disabled">
+                <IconButton
+                  overrides={{stylePreset}}
+                  disabled
+                  aria-label="disabled icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Loading">
+                <IconButton
+                  aria-label="loading icon button"
+                  overrides={{
+                    stylePreset,
+                    loadingIndicator: {
+                      stylePreset: `indeterminateProgressIndicator${intent}`,
+                    },
+                  }}
+                  loading
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+            </GridLayout>
+          </GridLayoutItem>
+        );
+      })}
+    </StorybookPage>
+  );
+};
+StoryIconButtonPrimary.storyName = 'Primary';
+
+export const StoryIconButtonSecondary = () => {
+  const intent = 'Secondary';
+  return (
+    <StorybookPage rowGap="space090">
+      {APPEARANCES.map(appearance => {
+        const stylePreset = `iconButton${appearance}${intent}`;
+        return (
+          <GridLayoutItem key={appearance + intent} column="1/-1">
+            <TextBlock
+              typographyPreset="utilityBody030"
+              marginBlockEnd="space070"
+            >
+              {appearance}
+            </TextBlock>
+            <GridLayout
+              rowGap="space080"
+              columnGap="space080"
+              columns={DEFAULT_BUTTON_COLS}
+            >
+              <StorybookCase title="Default">
+                <IconButton
+                  overrides={{stylePreset}}
+                  aria-label="default icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Focus">
+                <IconButton
+                  overrides={{stylePreset}}
+                  autoFocus
+                  aria-label="focus icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Disabled">
+                <IconButton
+                  overrides={{stylePreset}}
+                  disabled
+                  aria-label="disabled icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Loading">
+                <IconButton
+                  aria-label="loading icon button"
+                  overrides={{
+                    stylePreset,
+                    loadingIndicator: {
+                      stylePreset: `indeterminateProgressIndicator${intent}`,
+                    },
+                  }}
+                  loading
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+            </GridLayout>
+          </GridLayoutItem>
+        );
+      })}
+    </StorybookPage>
+  );
+};
+StoryIconButtonSecondary.storyName = 'Secondary';
+
+export const StoryIconButtonNegative = () => {
+  const intent = 'Negative';
+  return (
+    <StorybookPage rowGap="space090">
+      {APPEARANCES.map(appearance => {
+        const stylePreset = `iconButton${appearance}${intent}`;
+        return (
+          <GridLayoutItem key={appearance + intent} column="1/-1">
+            <TextBlock
+              typographyPreset="utilityBody030"
+              marginBlockEnd="space070"
+            >
+              {appearance}
+            </TextBlock>
+            <GridLayout
+              rowGap="space080"
+              columnGap="space080"
+              columns={DEFAULT_BUTTON_COLS}
+            >
+              <StorybookCase title="Default">
+                <IconButton
+                  overrides={{stylePreset}}
+                  aria-label="default icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Focus">
+                <IconButton
+                  overrides={{stylePreset}}
+                  autoFocus
+                  aria-label="focus icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Disabled">
+                <IconButton
+                  overrides={{stylePreset}}
+                  disabled
+                  aria-label="disabled icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Loading">
+                <IconButton
+                  aria-label="loading icon button"
+                  overrides={{
+                    stylePreset,
+                    loadingIndicator: {
+                      stylePreset: `indeterminateProgressIndicator${intent}`,
+                    },
+                  }}
+                  loading
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+            </GridLayout>
+          </GridLayoutItem>
+        );
+      })}
+    </StorybookPage>
+  );
+};
+StoryIconButtonNegative.storyName = 'Negative';
+
+export const StoryIconButtonPositive = () => {
+  const intent = 'Positive';
+  return (
+    <StorybookPage rowGap="space090">
+      {APPEARANCES.map(appearance => {
+        const stylePreset = `iconButton${appearance}${intent}`;
+        return (
+          <GridLayoutItem key={appearance + intent} column="1/-1">
+            <TextBlock
+              typographyPreset="utilityBody030"
+              marginBlockEnd="space070"
+            >
+              {appearance}
+            </TextBlock>
+            <GridLayout
+              rowGap="space080"
+              columnGap="space080"
+              columns={DEFAULT_BUTTON_COLS}
+            >
+              <StorybookCase title="Default">
+                <IconButton
+                  overrides={{stylePreset}}
+                  aria-label="default icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Focus">
+                <IconButton
+                  overrides={{stylePreset}}
+                  autoFocus
+                  aria-label="focus icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Disabled">
+                <IconButton
+                  overrides={{stylePreset}}
+                  disabled
+                  aria-label="disabled icon button"
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+              <StorybookCase title="Loading">
+                <IconButton
+                  aria-label="loading icon button"
+                  overrides={{
+                    stylePreset,
+                    loadingIndicator: {
+                      stylePreset: `indeterminateProgressIndicator${intent}`,
+                    },
+                  }}
+                  loading
+                >
+                  <IconFilledAddCircle />
+                </IconButton>
+              </StorybookCase>
+            </GridLayout>
+          </GridLayoutItem>
+        );
+      })}
+    </StorybookPage>
+  );
+};
+StoryIconButtonPositive.storyName = 'Positive';
+
+export const StoryIconButtonInverse = () => {
+  const intent = 'Inverse';
+  return (
+    <InverseContainer>
+      <StorybookPage
+        overrides={{
+          paddingBlock: 'space070',
+          marginInline: 'space020',
+          paddingInline: 'space050',
+        }}
+        rowGap="space090"
+      >
+        {APPEARANCES.map(appearance => {
+          const stylePreset = `iconButton${appearance}${intent}`;
+          return (
+            <GridLayoutItem key={appearance + intent} column="1/-1">
+              <TextBlock
+                typographyPreset="utilityBody030"
+                marginBlockEnd="space070"
+              >
+                {appearance}
+              </TextBlock>
+              <GridLayout
+                rowGap="space080"
+                columnGap="space080"
+                columns={DEFAULT_BUTTON_COLS}
+              >
+                <StorybookCase inverse title="Default">
+                  <IconButton
+                    overrides={{stylePreset}}
+                    aria-label="default icon button"
+                  >
+                    <IconFilledAddCircle />
+                  </IconButton>
+                </StorybookCase>
+                <StorybookCase inverse title="Focus">
+                  <IconButton
+                    overrides={{stylePreset}}
+                    autoFocus
+                    aria-label="focus icon button"
+                  >
+                    <IconFilledAddCircle />
+                  </IconButton>
+                </StorybookCase>
+                <StorybookCase inverse title="Disabled">
+                  <IconButton
+                    overrides={{stylePreset}}
+                    disabled
+                    aria-label="disabled icon button"
+                  >
+                    <IconFilledAddCircle />
+                  </IconButton>
+                </StorybookCase>
+                <StorybookCase inverse title="Loading">
+                  <IconButton
+                    aria-label="loading icon button"
+                    overrides={{
+                      stylePreset,
+                      loadingIndicator: {
+                        stylePreset: `indeterminateProgressIndicator${intent}`,
+                      },
+                    }}
+                    loading
+                  >
+                    <IconFilledAddCircle />
+                  </IconButton>
+                </StorybookCase>
+              </GridLayout>
+            </GridLayoutItem>
+          );
+        })}
+      </StorybookPage>
+    </InverseContainer>
+  );
+};
+StoryIconButtonInverse.storyName = 'Inverse';
+
+export const StoryIconButtonTooltip = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <Tooltip
+        content="External link"
+        asLabel
+        placement="right"
+        trigger={['focus', 'hover']}
+      >
+        <IconButton aria-label="tooltip icon button">
+          <IconFilledLaunch />
+        </IconButton>
+      </Tooltip>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryIconButtonTooltip.storyName = 'Tooltip';
+
+export const StoryIconButtonAsLink = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <IconButton
+        aria-label="link icon button"
+        target="_blank"
+        href="https://www.newskit.co.uk/"
+      >
+        <IconFilledLaunch />
+      </IconButton>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryIconButtonAsLink.storyName = 'As a link';
+
+export const StoryIconButtonStylingOverrides = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <IconButton
+        overrides={{stylePreset: 'stylingOverrides'}}
+        aria-label="styling overrides icon button"
+      >
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryIconButtonStylingOverrides.storyName = 'Styling overrides';
+
+export const StoryIconButtonOverrides = () => (
+  <StorybookPage>
+    <StorybookCase title="Logical props">
+      <IconButton
+        overrides={{
+          stylePreset: 'customLogicalPropsStyle',
+          paddingInline: 'space060',
+          paddingBlock: 'space050',
+        }}
+        aria-label="logical props icon button"
+      >
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
+    <StorybookCase title="Icon size">
+      <IconButton
+        overrides={{iconSize: 'iconSize020'}}
+        aria-label="logical props icon button"
+      >
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
+    <StorybookCase title="Custom outline">
+      <IconButton
+        overrides={{stylePreset: 'customOutlineStyle'}}
+        aria-label="custom outline icon button"
+      >
+        <IconFilledAddCircle />
+      </IconButton>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryIconButtonOverrides.storyName = 'Overrides';
+
+const iconButtonCustomThemeObject: CreateThemeArgs = {
+  name: 'icon-button-custom-theme',
   overrides: {
     stylePresets: {
-      customOutlineColor: {
+      customLogicalPropsStyle: {
         base: {
           backgroundColor: '{{colors.interactivePrimary030}}',
-          borderRadius: '{{borders.borderRadiusCircle}}',
+          borderRadius: '{{borders.borderRadiusRounded050}}',
           color: '{{colors.inkInverse}}',
           iconColor: '{{colors.inkInverse}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
         },
       },
       customOutlineStyle: {
         base: {
           backgroundColor: '{{colors.interactivePrimary030}}',
-          borderRadius: '{{borders.borderRadiusCircle}}',
+          borderRadius: '{{borders.borderRadiusRounded050}}',
           color: '{{colors.inkInverse}}',
           iconColor: '{{colors.inkInverse}}',
         },
@@ -35,352 +502,46 @@ const myCustomTheme = createTheme({
           outlineColor: 'red',
           outlineStyle: 'dotted',
           outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          outlineOffset: '10px',
         },
       },
-      customOutlineWidth: {
+      stylingOverrides: {
         base: {
-          backgroundColor: '{{colors.interactivePrimary030}}',
+          backgroundColor: '{{colors.inkBrand010}}',
           borderRadius: '{{borders.borderRadiusCircle}}',
           color: '{{colors.inkInverse}}',
-          iconColor: '{{colors.inkInverse}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineOffset: {
-        base: {
-          backgroundColor: '{{colors.interactivePrimary030}}',
-          borderRadius: '{{borders.borderRadiusCircle}}',
-          color: '{{colors.inkInverse}}',
-          iconColor: '{{colors.inkInverse}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '5px',
+          iconColor: '{{colors.interfaceInformative020}}',
         },
       },
     },
   },
-});
-
-const Container = styled.div`
-  margin: 24px;
-`;
-
-const states = ['Default', 'Focused', 'Disabled', 'Loading'];
-
-interface IntentKindStylePreset {
-  kind: string;
-  stylePreset: string;
-}
-
-const Label = styled.div<{hasBackground?: boolean}>`
-  height: 20px;
-  padding: 8px 12px;
-  margin: 12px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  ${({hasBackground}) =>
-    getColorCssFromTheme('color', hasBackground ? 'inkInverse' : 'inkBase')};
-`;
-
-const Background = styled.div<{hasBackground?: boolean}>`
-  margin-top: 24px;
-  ${({hasBackground}) =>
-    hasBackground && getColorCssFromTheme('background', 'inkBase')};
-`;
-
-const IconButtonIntentKindsScenario: React.FC<{
-  hasBackground?: boolean;
-  name: string;
-  buttonKinds: IntentKindStylePreset[];
-  overrides: ButtonOverrides;
-}> = ({hasBackground = false, name, buttonKinds, overrides}) => (
-  <Background hasBackground={hasBackground}>
-    <StorybookSubHeading stylePreset={hasBackground ? 'inkInverse' : undefined}>
-      {name}
-    </StorybookSubHeading>
-    <Grid>
-      <Cell xsHidden sm={3}>
-        <Stack>
-          <StorybookH3 stylePreset={hasBackground ? 'inkInverse' : undefined}>
-            State
-          </StorybookH3>
-          {states.map(state => (
-            <Label hasBackground={hasBackground}>{state}</Label>
-          ))}
-        </Stack>
-      </Cell>
-      {buttonKinds.map(({kind, stylePreset}) => {
-        const kindOverrides = {...overrides, stylePreset};
-        return (
-          <Cell xs={4} sm={3}>
-            <Stack spaceInline="space020" stackDistribution="space-evenly">
-              <StorybookH3
-                stylePreset={hasBackground ? 'inkInverse' : undefined}
-              >
-                {kind}
-              </StorybookH3>
-              <Block data-state="Default">
-                <IconButton
-                  aria-label="Pause icon"
-                  overrides={kindOverrides}
-                  size="medium"
-                >
-                  <IconFilledPause />
-                </IconButton>
-              </Block>
-
-              <Block data-state="Focused">
-                <IconButton
-                  aria-label="Link icon"
-                  autoFocus
-                  overrides={kindOverrides}
-                  size="medium"
-                >
-                  <IconFilledLink />
-                </IconButton>
-              </Block>
-
-              <Block data-state="Disabled">
-                <IconButton
-                  aria-label="Email icon"
-                  disabled
-                  overrides={kindOverrides}
-                  size="medium"
-                >
-                  <IconFilledEmail />
-                </IconButton>
-              </Block>
-
-              <Block data-state="Loading">
-                <IconButton
-                  aria-label="Loading indicator"
-                  overrides={kindOverrides}
-                  size="medium"
-                  loading
-                />
-              </Block>
-            </Stack>
-          </Cell>
-        );
-      })}
-    </Grid>
-  </Background>
-);
-
-export default {
-  title: 'Components/icon-button',
-  component: () => 'None',
 };
 
-export const StoryIconButtonSizes = () => (
-  <>
-    <StorybookSubHeading>Icon Button Size</StorybookSubHeading>
-    <Container>
-      <Stack
-        flow="horizontal-center"
-        spaceStack="space070"
-        spaceInline="space070"
-        wrap="wrap"
+export default {
+  title: 'Components/Icon button',
+  component: IconButton,
+  parameters: {
+    nkDocs: {
+      title: 'Icon button',
+      url: 'https://newskit.co.uk/components/button',
+      description:
+        'Icon buttons allow users to make choices, take actions, and help guide around an interface with a single tap.',
+    },
+  },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          iconButtonCustomThemeObject,
+          context?.name,
+        )}
       >
-        <IconButton aria-label="Email icon" size="small">
-          <IconFilledEmail />
-        </IconButton>
-        <IconButton aria-label="Email icon" size="medium">
-          <IconFilledEmail />
-        </IconButton>
-        <IconButton aria-label="Email icon" size="large">
-          <IconFilledEmail />
-        </IconButton>
-      </Stack>
-    </Container>
-  </>
-);
-StoryIconButtonSizes.storyName = 'icon-button-sizes';
-
-export const StoryIconButtonIntentPrimary = () => (
-  <IconButtonIntentKindsScenario
-    name="Icon Button Intent Primary"
-    buttonKinds={[
-      {kind: 'Solid', stylePreset: 'iconButtonSolidPrimary'},
-      {kind: 'Outlined', stylePreset: 'iconButtonOutlinedPrimary'},
-      {kind: 'Minimal', stylePreset: 'iconButtonMinimalPrimary'},
-    ]}
-    overrides={{
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorPrimary',
-      },
-    }}
-  />
-);
-StoryIconButtonIntentPrimary.storyName = 'icon-button-intent-primary';
-
-export const StoryIconButtonIntentSecondary = () => (
-  <IconButtonIntentKindsScenario
-    name="Icon Button Intent Secondary"
-    buttonKinds={[
-      {kind: 'Solid', stylePreset: 'iconButtonSolidSecondary'},
-      {kind: 'Outlined', stylePreset: 'iconButtonOutlinedSecondary'},
-      {kind: 'Minimal', stylePreset: 'iconButtonMinimalSecondary'},
-    ]}
-    overrides={{
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorSecondary',
-      },
-    }}
-  />
-);
-StoryIconButtonIntentSecondary.storyName = 'icon-button-intent-secondary';
-
-export const StoryIconButtonIntentNegative = () => (
-  <IconButtonIntentKindsScenario
-    name="Icon Button Intent Negative"
-    buttonKinds={[
-      {kind: 'Solid', stylePreset: 'iconButtonSolidNegative'},
-      {kind: 'Outlined', stylePreset: 'iconButtonOutlinedNegative'},
-      {kind: 'Minimal', stylePreset: 'iconButtonMinimalNegative'},
-    ]}
-    overrides={{
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorNegative',
-      },
-    }}
-  />
-);
-StoryIconButtonIntentNegative.storyName = 'icon-button-intent-negative';
-
-export const StoryIconButtonIntentPositive = () => (
-  <IconButtonIntentKindsScenario
-    name="Icon Button Intent Positive"
-    buttonKinds={[
-      {kind: 'Solid', stylePreset: 'iconButtonSolidPositive'},
-      {kind: 'Outlined', stylePreset: 'iconButtonOutlinedPositive'},
-      {kind: 'Minimal', stylePreset: 'iconButtonMinimalPositive'},
-    ]}
-    overrides={{
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorPositive',
-      },
-    }}
-  />
-);
-StoryIconButtonIntentPositive.storyName = 'icon-button-intent-positive';
-
-export const StoryIconButtonInverse = () => (
-  <IconButtonIntentKindsScenario
-    hasBackground
-    name="Icon Button Inverse"
-    buttonKinds={[
-      {kind: 'Solid', stylePreset: 'iconButtonSolidInverse'},
-      {kind: 'Outlined', stylePreset: 'iconButtonOutlinedInverse'},
-      {kind: 'Minimal', stylePreset: 'iconButtonMinimalInverse'},
-    ]}
-    overrides={{
-      loadingIndicator: {
-        stylePreset: 'indeterminateProgressIndicatorInverse',
-      },
-    }}
-  />
-);
-StoryIconButtonInverse.storyName = 'icon-button-inverse';
-
-export const StoryIconButtonLink = () => (
-  <>
-    <StorybookSubHeading>Icon button link</StorybookSubHeading>
-    <Container>
-      <IconButton aria-label="Link icon" href="https://www.newskit.co.uk/">
-        <IconFilledLink />
-      </IconButton>
-    </Container>
-    <StorybookSubHeading>Icon button link with overrides</StorybookSubHeading>
-    <Container>
-      <IconButton
-        aria-label="Link icon"
-        href="https://www.newskit.co.uk/"
-        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-      >
-        <IconFilledLink />
-      </IconButton>
-    </Container>
-  </>
-);
-StoryIconButtonLink.storyName = 'icon-button-link';
-
-export const StoryIconButtonOverrides = () => (
-  <>
-    <StorybookSubHeading>Icon button overrides</StorybookSubHeading>
-    <Container>
-      <IconButton
-        aria-label="Email icon"
-        overrides={{
-          paddingInline: '50px',
-          paddingBlock: '30px',
-          marginInline: '50px',
-          marginBlock: '30px',
-        }}
-      >
-        <IconFilledEmail />
-      </IconButton>
-    </Container>
-  </>
-);
-StoryIconButtonOverrides.storyName = 'icon-button-overrides';
-
-export const StoryIconButtonWithOutlineOverride = () => (
-  <>
-    <StorybookSubHeading>Icon Button with custom outline</StorybookSubHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookSubHeading>Custom Color</StorybookSubHeading>
-      <Container>
-        <IconButton
-          aria-label="Link icon"
-          href="https://www.newskit.co.uk/"
-          overrides={{stylePreset: 'customOutlineColor'}}
-        >
-          <IconFilledLink />
-        </IconButton>
-      </Container>
-      <StorybookSubHeading>Custom Style</StorybookSubHeading>
-      <Container>
-        <IconButton
-          aria-label="Link icon"
-          href="https://www.newskit.co.uk/"
-          overrides={{stylePreset: 'customOutlineStyle'}}
-        >
-          <IconFilledLink />
-        </IconButton>
-      </Container>
-      <StorybookSubHeading>Custom Width</StorybookSubHeading>
-      <Container>
-        <IconButton
-          aria-label="Link icon"
-          href="https://www.newskit.co.uk/"
-          overrides={{stylePreset: 'customOutlineWidth'}}
-        >
-          <IconFilledLink />
-        </IconButton>
-      </Container>
-      <StorybookSubHeading>Custom Offset</StorybookSubHeading>
-      <Container>
-        <IconButton
-          aria-label="Link icon"
-          href="https://www.newskit.co.uk/"
-          overrides={{stylePreset: 'customOutlineOffset'}}
-        >
-          <IconFilledLink />
-        </IconButton>
-      </Container>
-    </ThemeProvider>
-  </>
-);
-StoryIconButtonWithOutlineOverride.storyName =
-  'icon-button-with-outline-overrides';
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+};
