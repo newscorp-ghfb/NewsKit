@@ -59,6 +59,9 @@ export default {
             lg: 'space030',
           },
         },
+        link: {
+          stylePreset: 'headlineHeadingLink',
+        },
       },
     },
   },

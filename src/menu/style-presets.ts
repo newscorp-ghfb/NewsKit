@@ -38,7 +38,10 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': {
+      ...defaultFocusVisible,
+      outlineOffset: '-2px',
+    },
   },
   menuItemHorizontal: {
     base: {
@@ -74,7 +77,10 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': {
+      ...defaultFocusVisible,
+      outlineOffset: '-2px',
+    },
   },
   menuItemHorizontalInverse: {
     base: {
@@ -110,7 +116,10 @@ export default {
       color: '{{colors.interactiveInverse020}}',
       iconColor: '{{colors.interactiveInverse020}}',
     },
-    'focus-visible': inverseFocusVisible,
+    'focus-visible': {
+      ...inverseFocusVisible,
+      outlineOffset: '-2px',
+    },
   },
   menuSubItemVertical: {
     base: {
@@ -147,7 +156,10 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': {
+      ...defaultFocusVisible,
+      outlineOffset: '-2px',
+    },
   },
   menuSubItemHorizontal: {
     base: {
@@ -183,7 +195,10 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': {
+      ...defaultFocusVisible,
+      outlineOffset: '-2px',
+    },
   },
   menuSub: {
     base: {

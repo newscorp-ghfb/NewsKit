@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   popover: {
@@ -18,6 +19,7 @@ export default {
       borderRadius: '{{borders.borderRadiusDefault}}',
       backgroundColor: '{{colors.interface010}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   popoverHeader: {
     base: {
