@@ -41,7 +41,6 @@ export interface PaginationItemAriaInput {
 
 export interface PaginationProps extends React.AriaAttributes {
   children: Exclude<React.ReactNode, 'undefined'>;
-  path?: string;
   size?: PaginationSize;
   pageSize: number;
   page?: number;
