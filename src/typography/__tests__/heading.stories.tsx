@@ -1,13 +1,12 @@
 import * as React from 'react';
 import {createTheme, ThemeProvider} from '../../theme';
+import {
+  StorybookHeading,
+  StorybookSubHeading,
+} from '../../test/storybook-comps';
 import {H6, H5, H4, H3, H2, H1} from '..';
-import {getColorCssFromTheme, styled} from '../../utils/style';
-import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
-import {Headline} from '../../headline';
-
-const BODY = 'The quick brown box';
-
-const HeadlineText = 'Heading';
+import {TextBlock} from '../../text-block';
+import {Grid, Cell} from '../../grid';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-heading-theme',
@@ -15,17 +14,14 @@ const myCustomTheme = createTheme({
     stylePresets: {
       headingCustom: {
         base: {
-          color: '{{colors.amber070}}',
+          color: '{{colors.blue060}}',
         },
       },
     },
   },
 });
 
-const MarginOverridesWrapper = styled.div`
-  border: 1px dashed;
-  ${getColorCssFromTheme('borderColor', 'red060')}
-`;
+const title = 'We tell the stories that matter.';
 
 export default {
   title: 'Components/typography/heading',
@@ -33,251 +29,227 @@ export default {
 };
 
 export const StoryHeadingDefault = () => (
-  <StorybookPage columns="1fr">
-    <StorybookCase title="Render as h1 (Default)">
-      <H1>Heading</H1>
-    </StorybookCase>
-  </StorybookPage>
+  <>
+    <StorybookHeading>Heading - default</StorybookHeading>
+    <br />
+    <H1>Default H1 - {title}</H1>
+    <br />
+    <H2>Default H2 - {title}</H2>
+    <br />
+    <H3>Default H3 - {title}</H3>
+    <br />
+    <H4>Default H4 - {title}</H4>
+    <br />
+    <H5>Default H5 - {title}</H5>
+    <br />
+    <H6>Default H6 - {title}</H6>
+  </>
 );
-StoryHeadingDefault.storyName = 'Default';
+StoryHeadingDefault.storyName = 'heading-default';
 
-export const StoryHeadingVariations = () => (
-  <StorybookPage columns="1fr 1fr">
-    <StorybookCase title="Render heading as h1 (default)">
-      <H1>{HeadlineText}</H1>
-    </StorybookCase>
-    <StorybookCase title="Render heading as h2">
-      <H2>{HeadlineText}</H2>
-    </StorybookCase>
-    <StorybookCase title="Render heading as h3">
-      <H3>{HeadlineText}</H3>
-    </StorybookCase>
-    <StorybookCase title="Render heading as h4">
-      <H4>{HeadlineText}</H4>
-    </StorybookCase>
-    <StorybookCase title="Render heading as h5">
-      <H5>{HeadlineText}</H5>
-    </StorybookCase>
-    <StorybookCase title="Render heading as span (default)">
-      <H6>{HeadlineText}</H6>
-    </StorybookCase>
-    <StorybookCase title="Render Kicker as span (default)">
-      <Headline kickerText="Kicker" headingAs="span" kickerAs="span">
-        {HeadlineText}
-      </Headline>
-    </StorybookCase>
-    <StorybookCase title="Render Kicker as h1">
-      <Headline kickerText="Kicker" headingAs="h1" kickerAs="h1">
-        {HeadlineText}
-      </Headline>
-    </StorybookCase>
-    <StorybookCase title="Render Kicker as h2">
-      <Headline kickerText="Kicker" headingAs="h2" kickerAs="h2">
-        {HeadlineText}
-      </Headline>
-    </StorybookCase>
-    <StorybookCase title="Render Kicker as h3">
-      <Headline kickerText="Kicker" headingAs="h3" kickerAs="h3">
-        {HeadlineText}
-      </Headline>
-    </StorybookCase>
-    <StorybookCase title="Render Kicker as h4">
-      <Headline kickerText="Kicker" headingAs="h4" kickerAs="h4">
-        {HeadlineText}
-      </Headline>
-    </StorybookCase>
-    <StorybookCase title="Render Kicker as h5">
-      <Headline kickerText="Kicker" headingAs="h5" kickerAs="h5">
-        {HeadlineText}
-      </Headline>
-    </StorybookCase>
-  </StorybookPage>
+export const StoryCropVsNoCrop = () => (
+  <>
+    <Grid>
+      <Cell xs={6}>
+        <StorybookSubHeading>cropped</StorybookSubHeading>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline010"
+        >
+          editorialHeadline010
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline020"
+        >
+          editorialHeadline020
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline030"
+        >
+          editorialHeadline030
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline040"
+        >
+          editorialHeadline040
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline050"
+        >
+          editorialHeadline050
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline060"
+        >
+          editorialHeadline060
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline070"
+        >
+          editorialHeadline070
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline080"
+        >
+          editorialHeadline080
+        </TextBlock>
+      </Cell>
+      <Cell xs={6}>
+        <StorybookSubHeading>not cropped</StorybookSubHeading>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline010"
+          noCrop
+        >
+          editorialHeadline010
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline020"
+          noCrop
+        >
+          editorialHeadline020
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline030"
+          noCrop
+        >
+          editorialHeadline030
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline040"
+          noCrop
+        >
+          editorialHeadline040
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline050"
+          noCrop
+        >
+          editorialHeadline050
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline060"
+          noCrop
+        >
+          editorialHeadline060
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline070"
+          noCrop
+        >
+          editorialHeadline070
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkContrast"
+          typographyPreset="editorialHeadline080"
+          noCrop
+        >
+          editorialHeadline080
+        </TextBlock>
+      </Cell>
+    </Grid>
+  </>
 );
-StoryHeadingVariations.storyName = 'Variations';
-
-export const StoryHeadingLogicalPropstest = () => {
-  const logicalPropsOverrides = {
-    marginBlock: 'space030',
-    marginInline: 'space030',
-    paddingBlock: 'space030',
-    paddingInline: 'space030',
-  };
-
-  return (
-    <StorybookPage columns="1fr 1fr">
-      <StorybookCase title="EditorialHeadline060">
-        <MarginOverridesWrapper>
-          <H1 overrides={logicalPropsOverrides}>{BODY}</H1>
-        </MarginOverridesWrapper>
-      </StorybookCase>
-      <StorybookCase title="EditorialHeadline050">
-        <MarginOverridesWrapper>
-          <H2 overrides={logicalPropsOverrides}>{BODY}</H2>
-        </MarginOverridesWrapper>
-      </StorybookCase>
-      <StorybookCase title="EditorialHeadline040">
-        <MarginOverridesWrapper>
-          <H3 overrides={logicalPropsOverrides}>{BODY}</H3>
-        </MarginOverridesWrapper>
-      </StorybookCase>
-      <StorybookCase title="EditorialHeadline030">
-        <MarginOverridesWrapper>
-          <H4 overrides={logicalPropsOverrides}>{BODY}</H4>
-        </MarginOverridesWrapper>
-      </StorybookCase>
-      <StorybookCase title="EditorialHeadline020">
-        <MarginOverridesWrapper>
-          <H5 overrides={logicalPropsOverrides}>{BODY}</H5>
-        </MarginOverridesWrapper>
-      </StorybookCase>
-      <StorybookCase title="EditorialHeadline010">
-        <MarginOverridesWrapper>
-          <H6 overrides={logicalPropsOverrides}>{BODY}</H6>
-        </MarginOverridesWrapper>
-      </StorybookCase>
-    </StorybookPage>
-  );
-};
-StoryHeadingLogicalPropstest.storyName = 'Logical Props';
-
-export const StoryHeadingStylingOverrides = () => (
-  <StorybookPage columns="1fr 1fr 1fr">
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookCase title="UtilityHeadline60">
-        <H6
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline060',
-          }}
-        >
-          {BODY}
-        </H6>
-      </StorybookCase>
-      <StorybookCase title="UtilityHeadline50">
-        <H5
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline050',
-          }}
-        >
-          {BODY}
-        </H5>
-      </StorybookCase>
-      <StorybookCase title="UtilityHeadline40">
-        <H4
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline040',
-          }}
-        >
-          {BODY}
-        </H4>
-      </StorybookCase>
-      <StorybookCase title="UtilityHeadline30">
-        <H3
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline030',
-          }}
-        >
-          {BODY}
-        </H3>
-      </StorybookCase>
-      <StorybookCase title="UtilityHeadline20">
-        <H2
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline020',
-          }}
-        >
-          {BODY}
-        </H2>
-      </StorybookCase>
-      <StorybookCase title="UtilityHeadline10">
-        <H1
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'editorialHeadline010',
-          }}
-        >
-          {BODY}
-        </H1>
-      </StorybookCase>
-    </ThemeProvider>
-  </StorybookPage>
-  // <>
-  //   <StorybookHeading>Heading with overrides</StorybookHeading>
-  //   <ThemeProvider theme={myCustomTheme}>
-  //     <H1
-  //       overrides={{
-  //         stylePreset: 'headingCustom',
-  //         typographyPreset: 'editorialParagraph010',
-  //       }}
-  //     >
-  //       H1 with override
-  //     </H1>
-  //     <br />
-  //     <H2
-  //       overrides={{
-  //         stylePreset: 'headingCustom',
-  //         typographyPreset: 'editorialParagraph020',
-  //       }}
-  //     >
-  //       H2 with override
-  //     </H2>
-  //     <br />
-  //     <H3
-  //       overrides={{
-  //         stylePreset: 'headingCustom',
-  //         typographyPreset: 'editorialParagraph030',
-  //       }}
-  //     >
-  //       H3 with override
-  //     </H3>
-  //     <br />
-  //     <H4
-  //       overrides={{
-  //         stylePreset: 'headingCustom',
-  //         typographyPreset: 'editorialParagraph010',
-  //       }}
-  //     >
-  //       H4 with override
-  //     </H4>
-  //     <br />
-  //     <H5
-  //       overrides={{
-  //         stylePreset: 'headingCustom',
-  //         typographyPreset: 'editorialParagraph020',
-  //       }}
-  //     >
-  //       H5 with override
-  //     </H5>
-  //     <br />
-  //     <H6
-  //       overrides={{
-  //         stylePreset: 'headingCustom',
-  //         typographyPreset: 'editorialParagraph030',
-  //       }}
-  //     >
-  //       H6 with override
-  //     </H6>
-  //   </ThemeProvider>
-  // </>
-);
-StoryHeadingStylingOverrides.storyName = 'Styling Overrides';
+StoryCropVsNoCrop.storyName = 'crop vs no crop';
 
 export const StoryHeadingOverrides = () => (
-  <StorybookPage columns="1fr">
-    <StorybookCase title="H-tag override (to h2)">
+  <>
+    <StorybookHeading>Heading with overrides</StorybookHeading>
+    <ThemeProvider theme={myCustomTheme}>
       <H1
         overrides={{
           stylePreset: 'headingCustom',
-          typographyPreset: 'editorialHeadline080',
+          typographyPreset: 'editorialParagraph010',
         }}
       >
-        {BODY}
+        H1 with override
       </H1>
-    </StorybookCase>
-  </StorybookPage>
+      <br />
+      <H2
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'editorialParagraph020',
+        }}
+      >
+        H2 with override
+      </H2>
+      <br />
+      <H3
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'editorialParagraph030',
+        }}
+      >
+        H3 with override
+      </H3>
+      <br />
+      <H4
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'editorialParagraph010',
+        }}
+      >
+        H4 with override
+      </H4>
+      <br />
+      <H5
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'editorialParagraph020',
+        }}
+      >
+        H5 with override
+      </H5>
+      <br />
+      <H6
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'editorialParagraph030',
+        }}
+      >
+        H6 with override
+      </H6>
+    </ThemeProvider>
+  </>
 );
-StoryHeadingOverrides.storyName = 'Overrides';
+StoryHeadingOverrides.storyName = 'heading-overrides';
+
+export const StoryHeadingLogicalProps = () => {
+  const logicalPropsOverrides = {
+    marginBlock: 'space030',
+    marginInline: 'space050',
+    paddingBlock: 'space030',
+    paddingInline: 'space050',
+  };
+  return (
+    <>
+      <StorybookHeading>Heading with logical props</StorybookHeading>
+
+      <H1 overrides={logicalPropsOverrides}>H1 with logical props</H1>
+      <br />
+      <H2 overrides={logicalPropsOverrides}>H2 with logical props</H2>
+      <br />
+      <H3 overrides={logicalPropsOverrides}>H3 with logical props</H3>
+      <br />
+      <H4 overrides={logicalPropsOverrides}>H4 with logical props</H4>
+      <br />
+      <H5 overrides={logicalPropsOverrides}>H5 with logical props</H5>
+      <br />
+      <H6 overrides={logicalPropsOverrides}>H6 with logical props</H6>
+    </>
+  );
+};
+StoryHeadingLogicalProps.storyName = 'heading-logical-props';
