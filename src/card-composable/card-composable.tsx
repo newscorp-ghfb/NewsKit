@@ -32,18 +32,7 @@ export const Card = ({
 
   return (
     <CardContext.Provider value={{useAreas: Boolean(areas)}}>
-      <StyledCard {...props}>
-        {children}
-
-        {/* {href && (
-        // Cover link is not tabbable or read by screen-reader
-        <CardCoverLink
-          href={href}
-          tabIndex={hasTouchLinkInChildren ? -1 : undefined}
-          aria-hidden={hasTouchLinkInChildren ? 'true' : undefined}
-        />
-      )} */}
-      </StyledCard>
+      <StyledCard {...props}>{children}</StyledCard>
     </CardContext.Provider>
   );
 };
