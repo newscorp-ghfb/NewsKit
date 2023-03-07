@@ -1,4 +1,4 @@
-import React, {ReactElement} from 'react';
+import React from 'react';
 import {fireEvent} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
@@ -72,24 +72,47 @@ const iconOverrides = {
 
 const PaginationSizeArray = ['small', 'medium', 'large'];
 
+type PaginationWithItemsProps = {
+  props: PaginationProps;
+  navProps?:
+    | PaginationFirstItemProps
+    | PaginationPrevItemProps
+    | PaginationNextItemProps
+    | PaginationLastItemProps;
+  itemsProps?: PaginationItemsProps;
+};
+
+const PaginationWithItems = ({
+  props,
+  navProps,
+  itemsProps,
+}: PaginationWithItemsProps) => (
+  <Pagination {...props}>
+    <PaginationFirstItem key="1" {...navProps} />
+    <PaginationPrevItem key="2" {...navProps} />
+    <PaginationItems key="3" {...itemsProps} />
+    <PaginationNextItem key="4" {...navProps} />
+    <PaginationLastItem key="5" {...navProps} />
+  </Pagination>
+);
+
+type PaginationWithItemProps = {
+  props: PaginationProps;
+  itemProps: PaginationItemProps;
+};
+
+const PaginationWithItem = ({props, itemProps}: PaginationWithItemProps) => (
+  <Pagination {...props}>
+    <PaginationItem size="small" key="1" {...itemProps} />
+  </Pagination>
+);
+
 describe('Pagination and PaginationItems only', () => {
   let buildHref: (pageNumber: number) => string;
   let onClick: () => void;
   let onPageChange: (pageNumber: number) => void;
   let defaultProps: PaginationProps;
   let controlledProps: PaginationProps;
-  let PaginationWithNavItems: (
-    navItemProps:
-      | PaginationFirstItemProps
-      | PaginationPrevItemProps
-      | PaginationNextItemProps
-      | PaginationLastItemProps,
-  ) => ReactElement;
-  let PaginationWithItems: (itemProps: PaginationItemsProps) => ReactElement;
-  let PaginationWithControlledItems: (
-    itemProps: PaginationItemsProps,
-  ) => ReactElement;
-  let PaginationWithItem: (itemProps: PaginationItemProps) => ReactElement;
 
   beforeEach(() => {
     jest.resetAllMocks();
@@ -109,47 +132,6 @@ describe('Pagination and PaginationItems only', () => {
       defaultPage: 4,
       onPageChange,
     };
-
-    PaginationWithNavItems = (
-      navItemProps:
-        | PaginationFirstItemProps
-        | PaginationPrevItemProps
-        | PaginationNextItemProps
-        | PaginationLastItemProps,
-    ) => (
-      <Pagination {...defaultProps} size="small">
-        <PaginationFirstItem key="1" {...navItemProps} onClick={onClick} />
-        <PaginationPrevItem key="2" {...navItemProps} onClick={onClick} />
-        <PaginationNextItem key="4" {...navItemProps} onClick={onClick} />
-        <PaginationLastItem key="5" {...navItemProps} onClick={onClick} />
-      </Pagination>
-    );
-
-    PaginationWithItems = (itemProps: PaginationItemsProps) => (
-      <Pagination {...defaultProps}>
-        <PaginationFirstItem key="1" {...itemProps} onClick={onClick} />
-        <PaginationPrevItem key="2" {...itemProps} onClick={onClick} />
-        <PaginationItems key="3" {...itemProps} />
-        <PaginationNextItem key="4" {...itemProps} onClick={onClick} />
-        <PaginationLastItem key="5" {...itemProps} onClick={onClick} />
-      </Pagination>
-    );
-
-    PaginationWithControlledItems = (itemProps: PaginationItemsProps) => (
-      <Pagination {...controlledProps}>
-        <PaginationFirstItem key="1" {...itemProps} onClick={onClick} />
-        <PaginationPrevItem key="2" {...itemProps} onClick={onClick} />
-        <PaginationItems key="3" {...itemProps} />
-        <PaginationNextItem key="4" {...itemProps} onClick={onClick} />
-        <PaginationLastItem key="5" {...itemProps} onClick={onClick} />
-      </Pagination>
-    );
-
-    PaginationWithItem = (itemProps: PaginationItemProps) => (
-      <Pagination {...controlledProps}>
-        <PaginationItem size="small" key="1" {...itemProps} />
-      </Pagination>
-    );
   });
 
   describe('Pagination and PaginationItems only', () => {
@@ -282,13 +264,13 @@ describe('Pagination and PaginationItems only', () => {
     });
 
     it('renders with overridden navigation icons', () => {
-      const props = {
+      const navProps = {
         overrides: iconOverrides,
       };
-      const {getAllByTestId} = renderWithImplementation(
-        PaginationWithNavItems,
-        props,
-      );
+      const {getAllByTestId} = renderWithImplementation(PaginationWithItems, {
+        props: defaultProps,
+        navProps,
+      });
 
       const paginationItems = getAllByTestId('custom-icon');
       expect(paginationItems).toHaveLength(4);
@@ -296,14 +278,15 @@ describe('Pagination and PaginationItems only', () => {
 
     test('fire tracking event on First item', async () => {
       const mockFireEvent = jest.fn();
-      const props = {
+      const navProps = {
         eventContext: {
           event: 'event data',
         },
+        onClick,
       };
       const {getByTestId} = renderWithImplementation(
         PaginationWithItems,
-        props,
+        {props: defaultProps, navProps},
         mockFireEvent,
       );
       const paginationItemButton = getByTestId('pagination-first-item');
@@ -322,14 +305,15 @@ describe('Pagination and PaginationItems only', () => {
 
     test('fire tracking event on Prev item', async () => {
       const mockFireEvent = jest.fn();
-      const props = {
+      const navProps = {
         eventContext: {
           event: 'event data',
         },
+        onClick,
       };
       const {getByTestId} = renderWithImplementation(
         PaginationWithItems,
-        props,
+        {props: defaultProps, navProps},
         mockFireEvent,
       );
       const paginationItemButton = getByTestId('pagination-prev-item');
@@ -348,14 +332,15 @@ describe('Pagination and PaginationItems only', () => {
 
     test('fire tracking event on Next item', async () => {
       const mockFireEvent = jest.fn();
-      const props = {
+      const navProps = {
         eventContext: {
           event: 'event data',
         },
+        onClick,
       };
       const {getByTestId} = renderWithImplementation(
         PaginationWithItems,
-        props,
+        {props: defaultProps, navProps},
         mockFireEvent,
       );
       const paginationItemButton = getByTestId('pagination-next-item');
@@ -374,14 +359,15 @@ describe('Pagination and PaginationItems only', () => {
 
     test('fire tracking event on Last item', async () => {
       const mockFireEvent = jest.fn();
-      const props = {
+      const navProps = {
         eventContext: {
           event: 'event data',
         },
+        onClick,
       };
       const {getByTestId} = renderWithImplementation(
         PaginationWithItems,
-        props,
+        {props: defaultProps, navProps},
         mockFireEvent,
       );
       const paginationItemButton = getByTestId('pagination-last-item');
@@ -400,14 +386,15 @@ describe('Pagination and PaginationItems only', () => {
 
     test('fire tracking event on normal item when onPageChange not set', async () => {
       const mockFireEvent = jest.fn();
-      const props = {
+      const itemsProps = {
         eventContext: {
           event: 'event data',
         },
+        onClick,
       };
       const {getAllByTestId} = renderWithImplementation(
         PaginationWithItems,
-        props,
+        {props: defaultProps, itemsProps},
         mockFireEvent,
       );
 
@@ -428,14 +415,15 @@ describe('Pagination and PaginationItems only', () => {
 
     test('fire tracking event on normal item when onPageChange set', async () => {
       const mockFireEvent = jest.fn();
-      const props = {
+      const itemsProps = {
         eventContext: {
           event: 'event data',
         },
+        onClick,
       };
       const {getAllByTestId} = renderWithImplementation(
-        PaginationWithControlledItems,
-        props,
+        PaginationWithItems,
+        {props: controlledProps, itemsProps},
         mockFireEvent,
       );
 
@@ -457,17 +445,20 @@ describe('Pagination and PaginationItems only', () => {
 
   describe('PaginationItem', () => {
     it('renders with default props', () => {
-      const props = {
+      const itemProps = {
         size: 'medium' as PaginationSize,
         children: paginationItemContent,
         ...pageItemProps,
       } as PaginationItemProps;
-      const fragment = renderToFragmentWithTheme(PaginationWithItem, props);
+      const fragment = renderToFragmentWithTheme(PaginationWithItem, {
+        props: defaultProps,
+        itemProps,
+      });
       expect(fragment).toMatchSnapshot();
     });
 
     it('renders with overrides.itemButton', () => {
-      const props = {
+      const itemProps = {
         size: 'medium' as PaginationSize,
         children: paginationItemContent,
         ...pageItemProps,
@@ -484,13 +475,16 @@ describe('Pagination and PaginationItems only', () => {
           ),
         },
       } as PaginationItemProps;
-      const fragment = renderToFragmentWithTheme(PaginationWithItem, props);
+      const fragment = renderToFragmentWithTheme(PaginationWithItem, {
+        props: defaultProps,
+        itemProps,
+      });
       expect(fragment).toMatchSnapshot();
     });
 
     test('fire tracking event on normal item with href set and onPageChange unset', async () => {
       const mockFireEvent = jest.fn();
-      const props = {
+      const itemProps = {
         ...pageItemProps,
         lastPage,
         children: paginationItemContent,
@@ -503,7 +497,7 @@ describe('Pagination and PaginationItems only', () => {
 
       const {getByTestId} = renderWithImplementation(
         PaginationWithItem,
-        props,
+        {props: defaultProps, itemProps},
         mockFireEvent,
       );
       const paginationItemButton = getByTestId('pagination-item');
@@ -522,7 +516,7 @@ describe('Pagination and PaginationItems only', () => {
     test('fire tracking event on normal item with href unset and onPageChange set', async () => {
       jest.spyOn(console, 'warn').mockImplementation();
       const mockFireEvent = jest.fn();
-      const props = {
+      const itemProps = {
         selected,
         pageNumber,
         onClick: () => onPageChange(pageNumber),
@@ -537,7 +531,7 @@ describe('Pagination and PaginationItems only', () => {
 
       const {getByTestId} = renderWithImplementation(
         PaginationWithItem,
-        props,
+        {props: controlledProps, itemProps},
         mockFireEvent,
       );
       const paginationItemButton = getByTestId('pagination-item');
@@ -554,13 +548,16 @@ describe('Pagination and PaginationItems only', () => {
     });
 
     it('renders selected pagination item with aria attributes', () => {
-      const props = {
+      const itemProps = {
         ...pageItemProps,
         lastPage,
         children: [<IconFilledAddCircleOutline key="i" />],
         selected: true,
       };
-      const fragment = renderToFragmentWithTheme(PaginationWithItem, props);
+      const fragment = renderToFragmentWithTheme(PaginationWithItem, {
+        props: defaultProps,
+        itemProps,
+      });
       expect(fragment).toMatchSnapshot();
     });
 
@@ -580,7 +577,7 @@ describe('Pagination and PaginationItems only', () => {
           },
         }),
       );
-      const props = {
+      const itemProps = {
         ...pageItemProps,
         lastPage,
         children: paginationItemContent,
@@ -596,7 +593,7 @@ describe('Pagination and PaginationItems only', () => {
       };
       const fragment = renderToFragmentWithTheme(
         PaginationWithItem,
-        props,
+        {props: defaultProps, itemProps},
         myCustomTheme,
       );
       expect(fragment).toMatchSnapshot();

@@ -87,7 +87,6 @@ export interface PaginationItemProps extends ButtonProps, EventData {
 export interface PaginationProviderContext {
   size: PaginationSize;
   pageSize: number;
-  page: number;
   totalItems: number;
   buildHref?: (pageNumber: number) => string;
   changePage: (pageNumber: number) => void;
