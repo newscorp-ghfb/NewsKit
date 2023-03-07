@@ -1010,6 +1010,8 @@ export const routes = [
       {
         title: 'Solutions',
         id: '/patterns/solutions',
+        description:
+          'Solutions are multi-tenant products that are designed, developed and ready for your team to use.',
         subNav: [
           {
             title: 'NewsKit Account',
@@ -1032,6 +1034,8 @@ export const routes = [
       {
         title: 'Onboarding',
         id: '/patterns/onboarding',
+        description:
+          'Practical guidance for onboarding users onto your product or service.',
         subNav: [
           {
             title: 'Overview',
@@ -1065,6 +1069,7 @@ export const routes = [
       {
         title: 'Forms',
         id: '/patterns/forms',
+        description: 'Best practices to follow when creating form patterns.',
         subNav: [
           {
             title: 'Overview',

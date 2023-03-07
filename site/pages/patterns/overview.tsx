@@ -17,20 +17,6 @@ import {
   ContentSection,
 } from '../../components/content-structure';
 
-const patternsRouteList: Item[] =
-  routes.filter(route => route.title === 'Patterns')[0].subNav || [];
-
-const patternsFormRouteList: Item[] =
-  patternsRouteList.filter(route => route.title === 'Forms')[0].subNav || [];
-
-const patternsOnboardingRouteList: Item[] =
-  patternsRouteList.filter(route => route.title === 'Onboarding')[0].subNav ||
-  [];
-
-const patternsSolutionsRouteList: Item[] =
-  patternsRouteList.filter(route => route.title === 'Solutions')[0].subNav ||
-  [];
-
 const getPatternsCardList = (routeList: Item[]) =>
   routeList
     .filter(route => route.page && route?.illustration)
@@ -43,14 +29,6 @@ const getPatternsCardList = (routeList: Item[]) =>
       href: id,
       description,
     })) as MediaItem[];
-
-const patternsIndexRouteListCards = getPatternsCardList(patternsFormRouteList);
-const patternsIndexOnboardingRouteListCards = getPatternsCardList(
-  patternsOnboardingRouteList,
-);
-const patternsIndexSolutionsRouteListCards = getPatternsCardList(
-  patternsSolutionsRouteList,
-);
 
 const pageDescription = `Design patterns provide a framework for solving a particular user problem in a consistent, considered way.`;
 
@@ -79,39 +57,22 @@ const Overview = (layoutProps: LayoutProps) => (
 
         <Grid lgMargin="sizing000" xsRowGutter="sizing000">
           <ComponentPageCell>
-            <ContentSection sectionName="solutions">
-              <ContentPrimary
-                headline="Solutions"
-                description="Solutions are multi-tenant products that are designed, developed and ready for your team to use."
-              >
-                <MediaList
-                  cards={patternsIndexSolutionsRouteListCards}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ContentPrimary>
-            </ContentSection>
-            <ContentSection sectionName="onboarding">
-              <ContentPrimary
-                headline="Onboarding"
-                description="Practical guidance for onboarding users onto your product or service."
-              >
-                <MediaList
-                  cards={patternsIndexOnboardingRouteListCards}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ContentPrimary>
-            </ContentSection>
-            <ContentSection sectionName="forms">
-              <ContentPrimary
-                headline="Forms"
-                description="Best practices to follow when creating form patterns."
-              >
-                <MediaList
-                  cards={patternsIndexRouteListCards}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ContentPrimary>
-            </ContentSection>
+            {(routes as Item[])
+              .find(({title}) => title === 'Patterns')!
+              .subNav!.slice(1)
+              .map(({title, description, subNav}) => (
+                <ContentSection sectionName={title as string}>
+                  <ContentPrimary
+                    headline={title as string}
+                    description={description}
+                  >
+                    <MediaList
+                      cards={getPatternsCardList(subNav || [])}
+                      gridProps={{xsRowGutter: 'space050'}}
+                    />
+                  </ContentPrimary>
+                </ContentSection>
+              ))}
           </ComponentPageCell>
         </Grid>
       </ThemeProvider>
