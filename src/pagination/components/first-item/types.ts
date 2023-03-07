@@ -1,4 +1,5 @@
-import {MQ, NewsKitIconProps} from '../../..';
+import {NewsKitIconProps} from '../../../icons';
+import {MQ} from '../../../utils';
 import {Override} from '../../../utils/overrides';
 import {PaginationIconButtonWithoutClickProps} from '../types';
 
