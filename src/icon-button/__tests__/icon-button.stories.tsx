@@ -9,6 +9,7 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const DEFAULT_BUTTON_COLS = 'repeat(auto-fill, minmax(100px, 1fr))';
+const APPEARANCES = ['Solid', 'Outlined', 'Minimal'];
 
 const InverseContainer = styled.div`
   margin: -16px;
@@ -49,11 +50,10 @@ export const StoryIconButtonSize = () => (
 StoryIconButtonSize.storyName = 'Size';
 
 export const StoryIconButtonPrimary = () => {
-  const appearances = ['Solid', 'Outlined', 'Minimal'];
   const intent = 'Primary';
   return (
     <StorybookPage rowGap="space090">
-      {appearances.map(appearance => {
+      {APPEARANCES.map(appearance => {
         const stylePreset = `iconButton${appearance}${intent}`;
         return (
           <GridLayoutItem key={appearance + intent} column="1/-1">
@@ -118,11 +118,10 @@ export const StoryIconButtonPrimary = () => {
 StoryIconButtonPrimary.storyName = 'Primary';
 
 export const StoryIconButtonSecondary = () => {
-  const appearances = ['Solid', 'Outlined', 'Minimal'];
   const intent = 'Secondary';
   return (
     <StorybookPage rowGap="space090">
-      {appearances.map(appearance => {
+      {APPEARANCES.map(appearance => {
         const stylePreset = `iconButton${appearance}${intent}`;
         return (
           <GridLayoutItem key={appearance + intent} column="1/-1">
@@ -187,11 +186,10 @@ export const StoryIconButtonSecondary = () => {
 StoryIconButtonSecondary.storyName = 'Secondary';
 
 export const StoryIconButtonNegative = () => {
-  const appearances = ['Solid', 'Outlined', 'Minimal'];
   const intent = 'Negative';
   return (
     <StorybookPage rowGap="space090">
-      {appearances.map(appearance => {
+      {APPEARANCES.map(appearance => {
         const stylePreset = `iconButton${appearance}${intent}`;
         return (
           <GridLayoutItem key={appearance + intent} column="1/-1">
@@ -256,11 +254,10 @@ export const StoryIconButtonNegative = () => {
 StoryIconButtonNegative.storyName = 'Negative';
 
 export const StoryIconButtonPositive = () => {
-  const appearances = ['Solid', 'Outlined', 'Minimal'];
   const intent = 'Positive';
   return (
     <StorybookPage rowGap="space090">
-      {appearances.map(appearance => {
+      {APPEARANCES.map(appearance => {
         const stylePreset = `iconButton${appearance}${intent}`;
         return (
           <GridLayoutItem key={appearance + intent} column="1/-1">
@@ -325,7 +322,6 @@ export const StoryIconButtonPositive = () => {
 StoryIconButtonPositive.storyName = 'Positive';
 
 export const StoryIconButtonInverse = () => {
-  const appearances = ['Solid', 'Outlined', 'Minimal'];
   const intent = 'Inverse';
   return (
     <InverseContainer>
@@ -337,7 +333,7 @@ export const StoryIconButtonInverse = () => {
         }}
         rowGap="space090"
       >
-        {appearances.map(appearance => {
+        {APPEARANCES.map(appearance => {
           const stylePreset = `iconButton${appearance}${intent}`;
           return (
             <GridLayoutItem key={appearance + intent} column="1/-1">
