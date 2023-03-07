@@ -57,10 +57,13 @@ export const PaginationItem = React.forwardRef<
       disabled: buttonProps.disabled,
     });
 
+    const combinedEventContext = href
+      ? {...eventContext, href}
+      : {...eventContext, page: pageNumber};
     const combinedProps = {
       ...buttonProps,
       ...ariaProps,
-      eventContext: {href, ...eventContext},
+      eventContext: combinedEventContext,
       eventOriginator,
       overrides: buttonSettings,
       ref,

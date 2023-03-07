@@ -1,4 +1,4 @@
-import React, {useCallback, useMemo} from 'react';
+import React, {useCallback, useEffect, useMemo} from 'react';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {StyledNav, StyledUnorderedList} from './styled';
 import defaults from './defaults';
@@ -28,6 +28,15 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     },
     ref,
   ) => {
+    // Only warn once (on component mount)
+    useEffect(() => {
+      if (Boolean(buildHref) === Boolean(onPageChange)) {
+        console.warn(
+          'Pagination must have either buildHref OR onPageChange set.',
+        );
+      }
+    }, []);
+
     /* istanbul ignore next */
     const [page = 1, setPage] = useControlled({
       defaultValue: defaultPage,

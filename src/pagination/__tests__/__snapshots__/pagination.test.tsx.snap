@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in large pageSize 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -45,7 +45,6 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   min-width: 40px;
   min-height: 40px;
   margin-inline: 4px;
@@ -90,7 +89,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -150,7 +149,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -226,7 +225,6 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   min-width: 40px;
   min-height: 40px;
   margin-inline: 4px;
@@ -273,7 +271,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -732,7 +730,7 @@ exports[`Pagination and PaginationItems only renders in large pageSize 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in medium pageSize 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -777,7 +775,6 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -822,7 +819,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -882,7 +879,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -958,7 +955,6 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -1005,7 +1001,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1464,7 +1460,7 @@ exports[`Pagination and PaginationItems only renders in medium pageSize 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in small pageSize 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -1509,7 +1505,6 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 24px;
   min-height: 24px;
   margin-inline: 4px;
@@ -1554,7 +1549,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1614,7 +1609,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1690,7 +1685,6 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 24px;
   min-height: 24px;
   margin-inline: 4px;
@@ -1737,7 +1731,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2196,7 +2190,7 @@ exports[`Pagination and PaginationItems only renders in small pageSize 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Pagination and PaginationItems only renders with logical prop overrides 1`] = `
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with logical prop overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin-block: 20px;
@@ -2246,7 +2240,6 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -2291,7 +2284,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2351,7 +2344,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2427,7 +2420,6 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -2474,7 +2466,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2932,7 +2924,7 @@ exports[`Pagination and PaginationItems only renders with logical prop overrides
 </DocumentFragment>
 `;
 
-exports[`Pagination and PaginationItems only renders with mandatory props set 1`] = `
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with mandatory props set 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -2977,7 +2969,6 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -3022,7 +3013,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -3082,7 +3073,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -3158,7 +3149,6 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -3205,7 +3195,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -3663,7 +3653,7 @@ exports[`Pagination and PaginationItems only renders with mandatory props set 1`
 </DocumentFragment>
 `;
 
-exports[`Pagination and PaginationItems only renders with truncation icon as overrides 1`] = `
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with truncation icon as overrides 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -3708,7 +3698,6 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -3753,7 +3742,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -3813,7 +3802,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -3889,7 +3878,6 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -3936,7 +3924,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -4394,7 +4382,7 @@ exports[`Pagination and PaginationItems only renders with truncation icon as ove
 </DocumentFragment>
 `;
 
-exports[`Pagination and PaginationItems only renders with truncation overrides with TextBlock component 1`] = `
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with truncation overrides with TextBlock component 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -4439,7 +4427,6 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -4484,7 +4471,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -4544,7 +4531,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -4620,7 +4607,6 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -4667,7 +4653,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5125,7 +5111,7 @@ exports[`Pagination and PaginationItems only renders with truncation overrides w
 </DocumentFragment>
 `;
 
-exports[`Pagination, navigation icons and PaginationItems renders with controlled props 1`] = `
+exports[`Pagination and PaginationItems only Pagination, navigation icons and PaginationItems renders with controlled props 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -5170,7 +5156,6 @@ exports[`Pagination, navigation icons and PaginationItems renders with controlle
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 32px;
   min-width: 32px;
   min-height: 32px;
@@ -5235,7 +5220,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with controlle
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5313,7 +5298,6 @@ exports[`Pagination, navigation icons and PaginationItems renders with controlle
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 32px;
   min-width: 32px;
   min-height: 32px;
@@ -5378,7 +5362,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with controlle
 }
 
 .emotion-7:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5431,7 +5415,6 @@ exports[`Pagination, navigation icons and PaginationItems renders with controlle
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -5478,7 +5461,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with controlle
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5699,7 +5682,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with controlle
 </DocumentFragment>
 `;
 
-exports[`Pagination, navigation icons and PaginationItems renders with uncontrolled props 1`] = `
+exports[`Pagination and PaginationItems only Pagination, navigation icons and PaginationItems renders with uncontrolled props 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -5744,7 +5727,6 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 32px;
   min-width: 32px;
   min-height: 32px;
@@ -5790,7 +5772,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5850,7 +5832,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -5928,7 +5910,6 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: 32px;
   min-width: 32px;
   min-height: 32px;
@@ -5974,7 +5955,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
 }
 
 .emotion-7:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6034,7 +6015,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
 }
 
 .emotion-7:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6087,7 +6068,6 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -6132,7 +6112,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6192,7 +6172,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6268,7 +6248,6 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -6315,7 +6294,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
 }
 
 .emotion-20:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -6881,7 +6860,7 @@ exports[`Pagination, navigation icons and PaginationItems renders with uncontrol
 </DocumentFragment>
 `;
 
-exports[`PaginationItem renders selected pagination item with aria attributes 1`] = `
+exports[`Pagination and PaginationItems only PaginationItem renders selected pagination item with aria attributes 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -6912,7 +6891,6 @@ exports[`PaginationItem renders selected pagination item with aria attributes 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 24px;
   min-height: 24px;
   margin-inline: 4px;
@@ -6959,7 +6937,7 @@ exports[`PaginationItem renders selected pagination item with aria attributes 1`
 }
 
 .emotion-2:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -7081,7 +7059,7 @@ exports[`PaginationItem renders selected pagination item with aria attributes 1`
 </DocumentFragment>
 `;
 
-exports[`PaginationItem renders with default props 1`] = `
+exports[`Pagination and PaginationItems only PaginationItem renders with default props 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -7112,7 +7090,6 @@ exports[`PaginationItem renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 32px;
   min-height: 32px;
   margin-inline: 4px;
@@ -7157,7 +7134,7 @@ exports[`PaginationItem renders with default props 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -7217,7 +7194,7 @@ exports[`PaginationItem renders with default props 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -7299,7 +7276,7 @@ exports[`PaginationItem renders with default props 1`] = `
 </DocumentFragment>
 `;
 
-exports[`PaginationItem renders with overrides 1`] = `
+exports[`Pagination and PaginationItems only PaginationItem renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -7330,7 +7307,6 @@ exports[`PaginationItem renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   min-width: 27px;
   min-height: 24px;
   margin-inline: 4px;
@@ -7421,7 +7397,7 @@ exports[`PaginationItem renders with overrides 1`] = `
 </DocumentFragment>
 `;
 
-exports[`PaginationItem renders with overrides.itemButton 1`] = `
+exports[`Pagination and PaginationItems only PaginationItem renders with overrides.itemButton 1`] = `
 <DocumentFragment>
   .emotion-1 {
   list-style: none;
@@ -7453,7 +7429,7 @@ exports[`PaginationItem renders with overrides.itemButton 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -7516,7 +7492,7 @@ exports[`PaginationItem renders with overrides.itemButton 1`] = `
 }
 
 .emotion-2.emotion-2:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

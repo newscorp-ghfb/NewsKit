@@ -1,8 +1,8 @@
 import {MQ, NewsKitIconProps} from '../../..';
 import {Override} from '../../../utils/overrides';
-import {PaginationIconButtonProps2} from '../types';
+import {PaginationIconButtonWithoutClickProps} from '../types';
 
-export type PaginationFirstItemProps = PaginationIconButtonProps2 & {
+export type PaginationFirstItemProps = PaginationIconButtonWithoutClickProps & {
   children?: Exclude<React.ReactNode, 'undefined'>;
   overrides?: {
     stylePreset?: MQ<string>;

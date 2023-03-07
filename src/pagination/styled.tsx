@@ -3,11 +3,11 @@ import {ComponentSizeProps, PaginationItemProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 import {Button} from '../button';
 
+// The path will most likely always be 'pagination'
 export const StyledNav = styled.nav<ComponentSizeProps>`
-  ${({path = 'pagination', size}) => getStylePreset(`${path}.${size}`, '')};
-  ${({path = 'pagination', size}) =>
-    getTypographyPreset(`${path}.${size}`, '')};
-  ${({path = 'pagination', size}) => logicalProps(`${path}.${size}`, '')};
+  ${({path, size}) => getStylePreset(`${path}.${size}`, '')};
+  ${({path, size}) => getTypographyPreset(`${path}.${size}`, '')};
+  ${({path, size}) => logicalProps(`${path}.${size}`, '')};
 `;
 
 export const StyledUnorderedList = styled.ul`

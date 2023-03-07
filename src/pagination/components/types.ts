@@ -4,7 +4,7 @@ import {Optional} from '../../utils/types';
 
 export type PaginationIconButtonProps = Optional<IconButtonProps, 'aria-label'>;
 
-export type PaginationIconButtonProps2 = Omit<
+export type PaginationIconButtonWithoutClickProps = Omit<
   PaginationIconButtonProps,
   'onClick'
 > & {
