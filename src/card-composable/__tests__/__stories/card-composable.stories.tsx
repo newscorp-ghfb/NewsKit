@@ -360,14 +360,14 @@ export const StoryCardAreas = () => (
           <CardLink href={window.location.href}>
             <H
               overrides={{
-                marginBlockStart: 'space020',
+                marginBlock: 'space020',
                 heading: {
                   stylePreset: 'headlineLink',
                 },
               }}
             />
           </CardLink>
-          <Block marginBlock="space020">
+          <Block>
             <P overrides={{marginBlockStart: 'space020'}} />
           </Block>
         </CardContent>
@@ -392,9 +392,7 @@ export const StoryVariations = () => (
         `}
       >
         <CardMedia src="/placeholder-3x2.png" />
-        <CardContent
-          overrides={{paddingBlock: 'space040', paddingInline: 'space020'}}
-        >
+        <CardContent overrides={{paddingBlock: 'space040'}}>
           <CardLink
             href={window.location.href}
             overrides={{paddingBlock: 'space020'}}
@@ -415,9 +413,9 @@ export const StoryVariations = () => (
           content
           actions
         `}
-        rowGap="space040"
+        rowGap="space010"
       >
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia src="/placeholder-4x5.png" loadingAspectRatio="4:5" />
         <CardContent
           overrides={{
             paddingBlock: 'space040',
@@ -425,19 +423,15 @@ export const StoryVariations = () => (
           }}
         >
           <div>
-            <Flag>Flag</Flag>
+            <Flag overrides={{marginBlock: 'space020'}}>Flag</Flag>
           </div>
+
           <CardLink
             expand
             href={window.location.href}
             overrides={{paddingBlock: 'space020'}}
           >
-            <H
-              overrides={{
-                marginBlockStart: 'space020',
-                heading: {stylePreset: 'headlineLink'},
-              }}
-            />
+            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
           </CardLink>
           <P overrides={{marginBlockStart: 'space020'}} />
         </CardContent>
@@ -458,7 +452,7 @@ export const StoryVariations = () => (
         <CardMedia src="/placeholder-3x2.png" />
         <CardContent
           overrides={{
-            paddingBlock: 'space040',
+            paddingBlock: 'space020',
             paddingInline: 'space020',
           }}
         >
