@@ -30,7 +30,10 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
   ) => {
     // Only warn once (on component mount)
     useEffect(() => {
-      if (Boolean(buildHref) === Boolean(onPageChange)) {
+      if (
+        process.env.NODE_ENV !== 'production' &&
+        Boolean(buildHref) === Boolean(onPageChange)
+      ) {
         console.warn(
           'Pagination must have either buildHref OR onPageChange set.',
         );
