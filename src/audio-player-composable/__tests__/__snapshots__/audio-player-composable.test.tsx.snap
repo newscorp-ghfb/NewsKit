@@ -728,6 +728,21 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   border-color: #3358CC;
 }
 
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-7:active:not(:disabled) {
   background-color: #ECF1FF;
 }
@@ -1385,6 +1400,21 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   overflow: hidden;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-5 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -1461,6 +1491,21 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 .emotion-9:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-9:active:not(:disabled) {
@@ -1860,6 +1905,21 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   overflow: hidden;
 }
 
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -1936,6 +1996,21 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 .emotion-6:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-6:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-6:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-6:active:not(:disabled) {
@@ -2404,6 +2479,21 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   overflow: hidden;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-5 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -2480,6 +2570,21 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 .emotion-9:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-9:active:not(:disabled) {
