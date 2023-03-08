@@ -19,7 +19,10 @@ export default {
       borderRadius: '{{borders.borderRadiusDefault}}',
       backgroundColor: '{{colors.interface010}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': {
+      ...defaultFocusVisible,
+      outlineOffset: '0px',
+    },
   },
   popoverHeader: {
     base: {
