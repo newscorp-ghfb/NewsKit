@@ -522,6 +522,13 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
               default: 'false',
             },
             {
+              name: 'fullWidthSingleCell',
+              type: 'boolean',
+              description:
+                "If set to 'full-width' the cell will span all 12 columns and breakout across the margin of the grid. It will still be confined by the grid's max-width.",
+              default: 'false',
+            },
+            {
               name: 'align',
               type: `'start' | 'center' | 'end'`,
               default: 'start',
