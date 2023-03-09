@@ -1,10 +1,8 @@
 import React from 'react';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../../test/storybook-comps';
+import {StorybookCase} from '../../../test/storybook-comps';
 
 import {Button} from '../../../button';
+import {InlineMessage} from '../../..';
 import {compileTheme, createTheme, ThemeProvider} from '../..';
 
 const myCustomTheme = compileTheme(
@@ -148,21 +146,33 @@ export default {
 
 export const StoryOutlineDefault = () => (
   <>
-    <StorybookHeading>Outline and Safari</StorybookHeading>
-    <StorybookSubHeading>Button with default Outline</StorybookSubHeading>
-    <p>
+    <InlineMessage overrides={{stylePreset: 'inlineMessageInformative'}}>
       Default outline-style is solid, but auto for Safari this ensures rounded
       edges
-    </p>
+    </InlineMessage>
+    <br />
+    <br />
+    <br />
     <Button>Button</Button>
-    <StorybookSubHeading>
-      Button without Safari outline override
-    </StorybookSubHeading>
-    <p>
-      Not setting safariOutlineStyle in a custom style preset will result in
-      sqaure outline
-    </p>
+  </>
+);
+
+StoryOutlineDefault.storyName = 'Default';
+StoryOutlineDefault.parameters = {
+  percy: {skip: true},
+};
+
+export const StoryOutlineOverrides = () => (
+  <>
     <ThemeProvider theme={myCustomTheme}>
+      <InlineMessage overrides={{stylePreset: 'inlineMessageInformative'}}>
+        Not setting //safariOutlineStyle// in a custom style preset will result
+        in a sharp border radius outline. View in Safari to see this applied.
+      </InlineMessage>
+      <br />
+      <br />
+      <br />
+      <StorybookCase title="Without Safari outline" />
       <Button
         overrides={{
           stylePreset: 'buttonWithoutSafari',
@@ -170,24 +180,18 @@ export const StoryOutlineDefault = () => (
       >
         Button
       </Button>
+      <br />
+      <br />
+      <br />
     </ThemeProvider>
-    <StorybookSubHeading>
-      Button with default Safari but color change
-    </StorybookSubHeading>
-    <p>Safari default is auto so you don&apos;t get to control color</p>
-    <ThemeProvider theme={myCustomTheme}>
-      <Button
-        overrides={{
-          stylePreset: 'outlineColorChange',
-        }}
-      >
-        Button
-      </Button>
-    </ThemeProvider>
-    <StorybookSubHeading>
-      Button with color change and Safari outline-style set to dotted
-    </StorybookSubHeading>
-    <p>A none auto outline style will allow color to change in Safari</p>
+    <InlineMessage overrides={{stylePreset: 'inlineMessageInformative'}}>
+      The Safari default is //auto//, so the colour is not controllable unless
+      using //nonOutlineStyle// which will allow the colour to change in Safari.
+    </InlineMessage>
+    <br />
+    <br />
+    <br />
+    <StorybookCase title="Style" />
     <ThemeProvider theme={myCustomTheme}>
       <Button
         overrides={{
@@ -196,13 +200,19 @@ export const StoryOutlineDefault = () => (
       >
         Button
       </Button>
+      <br />
+      <br />
+      <br />
     </ThemeProvider>
-    <StorybookSubHeading>
-      The outline-offset may apear different in Safrai so you can change that
-      too
-    </StorybookSubHeading>
-    <p>outlineOffset is set to 2px. safariOutlineOffset is set to 5px</p>
+    <InlineMessage overrides={{stylePreset: 'inlineMessageInformative'}}>
+      The outline offset may also appear different in Safari when compared to
+      other browsers. This can be configured by using //safariOutlineOffset//.
+    </InlineMessage>
+    <br />
+    <br />
+    <br />
     <ThemeProvider theme={myCustomTheme}>
+      <StorybookCase title="outlineOffset is set to 2px, safariOutlineOffset is set to 5px" />
       <Button
         overrides={{
           stylePreset: 'outlineoffsetChange',
@@ -214,7 +224,7 @@ export const StoryOutlineDefault = () => (
   </>
 );
 
-StoryOutlineDefault.storyName = 'outline';
-StoryOutlineDefault.parameters = {
+StoryOutlineOverrides.storyName = 'Overrides';
+StoryOutlineOverrides.parameters = {
   percy: {skip: true},
 };
