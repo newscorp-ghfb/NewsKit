@@ -30,11 +30,6 @@ const GridLayoutStepByStep = (layoutProps: LayoutProps) => (
       },
       introduction: `The grid layout component is a wrapper around CSS grid that maps all CSS grid properties to React props. `,
     }}
-    featureCard={{
-      title: 'Need help?',
-      description: 'Can’t find what you’re looking for?',
-      href: 'about/contact-us/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="guide">

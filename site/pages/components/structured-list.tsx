@@ -1,4 +1,5 @@
 import React from 'react';
+import NextLink from 'next/link';
 import {
   InlineMessage,
   Stack,
@@ -64,24 +65,26 @@ const StructuredListComponent = (layoutProps: LayoutProps) => (
         componentName: 'StructuredList',
         component: state => (
           <StructuredList divider {...state} ariaLabel="list">
-            <StructuredListItem href="/" ariaLabel="interactive list item">
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkContrast"
-                  typographyPreset="utilityHeading010"
-                >
-                  Label
-                </TextBlock>
-              </StructuredListCell>
-              <StructuredListCell>
-                <TextBlock
-                  stylePreset="inkSubtle"
-                  typographyPreset="utilityBody020"
-                >
-                  A short description of the label
-                </TextBlock>
-              </StructuredListCell>
-            </StructuredListItem>
+            <NextLink legacyBehavior href="/" passHref>
+              <StructuredListItem href="/" ariaLabel="interactive list item">
+                <StructuredListCell>
+                  <TextBlock
+                    stylePreset="inkContrast"
+                    typographyPreset="utilityHeading010"
+                  >
+                    Label
+                  </TextBlock>
+                </StructuredListCell>
+                <StructuredListCell>
+                  <TextBlock
+                    stylePreset="inkSubtle"
+                    typographyPreset="utilityBody020"
+                  >
+                    A short description of the label
+                  </TextBlock>
+                </StructuredListCell>
+              </StructuredListItem>
+            </NextLink>
             <StructuredListItem ariaLabel="list item 1">
               <StructuredListCell>
                 <TextBlock
