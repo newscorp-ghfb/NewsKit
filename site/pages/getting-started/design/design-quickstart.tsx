@@ -86,11 +86,6 @@ const DesignQuickstart = (layoutProps: LayoutProps) => (
       },
       introduction: `This page describes how to get started designing a digital product with NewsKit.`,
     }}
-    featureCard={{
-      title: 'Need help?',
-      description: 'Can’t find what you’re looking for?',
-      href: 'about/contact-us/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="introduction description">
