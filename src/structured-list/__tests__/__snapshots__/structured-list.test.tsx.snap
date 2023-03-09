@@ -6685,6 +6685,227 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
 </DocumentFragment>
 `;
 
+exports[`StructuredList without-href renders with one cell full width 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.emotion-1 {
+  list-style: none;
+  width: 100%;
+}
+
+.emotion-2 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-inline: 16px;
+  padding-block: 24px;
+  min-height: 80px;
+}
+
+@media screen {
+  .emotion-3 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .emotion-3 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-3 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-3 {
+    margin: -0px 0px 0 0px;
+  }
+}
+
+.emotion-3:disabled {
+  background-color: transparent;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+@media screen {
+  .emotion-4 {
+    padding: 0 8px;
+    -webkit-flex-basis: calc(100% + 16px);
+    -ms-flex-preferred-size: calc(100% + 16px);
+    flex-basis: calc(100% + 16px);
+    max-width: calc(100% + 16px);
+    margin-left: -8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-4 {
+    padding: 0 12px;
+    -webkit-flex-basis: calc(100% + 24px);
+    -ms-flex-preferred-size: calc(100% + 24px);
+    flex-basis: calc(100% + 24px);
+    max-width: calc(100% + 24px);
+    margin-left: -12px;
+  }
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  margin: 0;
+  color: #111111;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+}
+
+.emotion-6 svg {
+  fill: #111111;
+}
+
+.emotion-6::before {
+  content: '';
+  margin-bottom: -0.2155em;
+  display: block;
+}
+
+.emotion-6::after {
+  content: '';
+  margin-top: -0.2125em;
+  display: block;
+}
+
+.emotion-7 {
+  border-style: solid;
+  border-color: #C6C6C6;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+<ul
+    aria-label="list"
+    class="emotion-0"
+  >
+    <li
+      aria-label="list item"
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <p
+                class="emotion-6"
+              >
+                Label
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <hr
+      aria-hidden="true"
+      class="emotion-7"
+      data-testid="divider"
+    />
+    <li
+      aria-label="list item"
+      class="emotion-1"
+    >
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-3"
+        >
+          <div
+            class="emotion-4"
+          >
+            <div
+              class="emotion-5"
+            >
+              <p
+                class="emotion-6"
+              >
+                Label
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
 exports[`StructuredList without-href renders with overrides 1`] = `
 <DocumentFragment>
   .emotion-0 {
