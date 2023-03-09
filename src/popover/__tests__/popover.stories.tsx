@@ -3,13 +3,14 @@ import {useRef, useState} from 'react';
 import {Placement} from '@floating-ui/react-dom-interactions';
 import {Story as StoryType} from '@storybook/react';
 import {Button, ButtonOverrides} from '../../button';
-import {styled} from '../../utils';
+import {getColorCssFromTheme, styled} from '../../utils';
 import {Popover as P} from '../popover';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {PopoverProps as PProps} from '../types';
-import {isVisualTest} from '../../test/test-utils';
-import {CreateThemeArgs, ThemeProvider} from '../../theme';
+import {isCypressTest, isVisualTest} from '../../test/test-utils';
+import {CreateThemeArgs, StylePreset, ThemeProvider} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -64,14 +65,16 @@ const StyledPage = styled.div`
 
 const StyledContainer = styled.div<{height?: number}>`
   border: 1px solid #3358cc;
-  background-color: #f7f7f7;
   ${({height = 399}) => ({height: `${height}px`})}
   padding: 16px;
   display: flex;
   display: -webkit-flex;
+  ${getColorCssFromTheme('background', 'interface020')}
 `;
 
-const btnOverrides: ButtonOverrides = {stylePreset: 'buttonOutlinedPrimary'};
+const btnOverrides: ButtonOverrides = {
+  stylePreset: 'customButtonOutlinedPrimary',
+};
 
 const GridPage = ({children}: {children: React.ReactNode}) => (
   <StyledPage>
@@ -103,9 +106,10 @@ const Popover = ({
   ...rest
 }: PopoverProps) => (
   <P
-    open={isVisualTest || undefined || true}
+    open={isVisualTest || isCypressTest || undefined}
     header={header}
     closePosition={closePosition}
+    aria-label="popover"
     content={
       <div
         style={{
@@ -395,6 +399,35 @@ const popoverCustomThemeObject: CreateThemeArgs = {
           borderWidth: '{{borders.borderWidth010}}',
         },
       },
+      customButtonOutlinedPrimary: {
+        base: {
+          backgroundColor: '{{colors.interfaceBackground}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.interactivePrimary030}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.interactivePrimary010}}',
+          borderColor: '{{colors.interactivePrimary040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+          borderColor: '{{colors.interactivePrimary050}}',
+        },
+        disabled: {
+          borderColor: '{{colors.interactiveDisabled010}}',
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+          borderStyle: 'none',
+        },
+        'focus-visible': defaultFocusVisible,
+      } as StylePreset,
     },
   },
 };
