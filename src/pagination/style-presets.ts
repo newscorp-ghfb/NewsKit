@@ -47,8 +47,8 @@ export default {
   paginationItemNonInteractive: {
     base: {
       backgroundColor: '{{colors.transparent}}',
-      color: '{{colors.interactiveLink010}}',
-      cursor: 'pointer',
+      color: '{{colors.inkBase}}',
+      cursor: 'default',
     },
     disabled: {
       color: '{{colors.inkNonEssential}}',
