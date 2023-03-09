@@ -1,9 +1,19 @@
 import React from 'react';
+import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {StorybookCase} from '../../../test/storybook-comps';
-
 import {Button} from '../../../button';
-import {InlineMessage} from '../../..';
+import {InlineMessage, toNewsKitIcon} from '../../..';
 import {compileTheme, createTheme, ThemeProvider} from '../..';
+
+const IconFilledInfo = toNewsKitIcon(FilledInfo);
+
+const infoIcon = (
+  <IconFilledInfo
+    overrides={{
+      size: 'iconSize020',
+    }}
+  />
+);
 
 const myCustomTheme = compileTheme(
   createTheme({
@@ -146,7 +156,10 @@ export default {
 
 export const StoryOutlineDefault = () => (
   <>
-    <InlineMessage overrides={{stylePreset: 'inlineMessageInformative'}}>
+    <InlineMessage
+      overrides={{stylePreset: 'inlineMessageInformative'}}
+      icon={infoIcon}
+    >
       Default outline-style is solid, but auto for Safari this ensures rounded
       edges
     </InlineMessage>
@@ -165,7 +178,10 @@ StoryOutlineDefault.parameters = {
 export const StoryOutlineOverrides = () => (
   <>
     <ThemeProvider theme={myCustomTheme}>
-      <InlineMessage overrides={{stylePreset: 'inlineMessageInformative'}}>
+      <InlineMessage
+        overrides={{stylePreset: 'inlineMessageInformative'}}
+        icon={infoIcon}
+      >
         Not setting //safariOutlineStyle// in a custom style preset will result
         in a sharp border radius outline. View in Safari to see this applied.
       </InlineMessage>
@@ -184,15 +200,19 @@ export const StoryOutlineOverrides = () => (
       <br />
       <br />
     </ThemeProvider>
-    <InlineMessage overrides={{stylePreset: 'inlineMessageInformative'}}>
-      The Safari default is //auto//, so the colour is not controllable unless
-      using //nonOutlineStyle// which will allow the colour to change in Safari.
-    </InlineMessage>
-    <br />
-    <br />
-    <br />
-    <StorybookCase title="Style" />
     <ThemeProvider theme={myCustomTheme}>
+      <InlineMessage
+        overrides={{stylePreset: 'inlineMessageInformative'}}
+        icon={infoIcon}
+      >
+        The Safari default is //auto//, so the colour is not controllable unless
+        using //nonOutlineStyle// which will allow the colour to change in
+        Safari.
+      </InlineMessage>
+      <br />
+      <br />
+      <br />
+      <StorybookCase title="Style" />
       <Button
         overrides={{
           stylePreset: 'outlineSafariChange',
@@ -204,14 +224,17 @@ export const StoryOutlineOverrides = () => (
       <br />
       <br />
     </ThemeProvider>
-    <InlineMessage overrides={{stylePreset: 'inlineMessageInformative'}}>
-      The outline offset may also appear different in Safari when compared to
-      other browsers. This can be configured by using //safariOutlineOffset//.
-    </InlineMessage>
-    <br />
-    <br />
-    <br />
     <ThemeProvider theme={myCustomTheme}>
+      <InlineMessage
+        overrides={{stylePreset: 'inlineMessageInformative'}}
+        icon={infoIcon}
+      >
+        The outline offset may also appear different in Safari when compared to
+        other browsers. This can be configured by using //safariOutlineOffset//.
+      </InlineMessage>
+      <br />
+      <br />
+      <br />
       <StorybookCase title="outlineOffset is set to 2px, safariOutlineOffset is set to 5px" />
       <Button
         overrides={{
