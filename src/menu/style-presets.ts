@@ -40,7 +40,7 @@ export default {
     },
     'focus-visible': {
       ...defaultFocusVisible,
-      outlineOffset: '-2px',
+      outlineOffset: '-{{outlines.outlineOffsetDefault}}',
     },
   },
   menuItemHorizontal: {
@@ -79,7 +79,7 @@ export default {
     },
     'focus-visible': {
       ...defaultFocusVisible,
-      outlineOffset: '-2px',
+      outlineOffset: '-{{outlines.outlineOffsetDefault}}',
     },
   },
   menuItemHorizontalInverse: {
@@ -118,7 +118,7 @@ export default {
     },
     'focus-visible': {
       ...inverseFocusVisible,
-      outlineOffset: '-2px',
+      outlineOffset: '-{{outlines.outlineOffsetDefault}}',
     },
   },
   menuSubItemVertical: {
@@ -158,7 +158,7 @@ export default {
     },
     'focus-visible': {
       ...defaultFocusVisible,
-      outlineOffset: '-2px',
+      outlineOffset: '-{{outlines.outlineOffsetDefault}}',
     },
   },
   menuSubItemHorizontal: {
@@ -197,7 +197,7 @@ export default {
     },
     'focus-visible': {
       ...defaultFocusVisible,
-      outlineOffset: '-2px',
+      outlineOffset: '-{{outlines.outlineOffsetDefault}}',
     },
   },
   menuSub: {

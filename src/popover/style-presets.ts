@@ -21,7 +21,7 @@ export default {
     },
     'focus-visible': {
       ...defaultFocusVisible,
-      outlineOffset: '0px',
+      outlineOffset: '{{borders.borderWidth000}}',
     },
   },
   popoverHeader: {

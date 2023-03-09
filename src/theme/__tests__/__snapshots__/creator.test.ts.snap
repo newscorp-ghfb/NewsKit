@@ -536,7 +536,7 @@ Object {
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
-        "outlineOffset": "-2px",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
         "outlineStyle": "{{outlines.outlineStyleDefault}}",
         "outlineWidth": "{{outlines.outlineWidthDefault}}",
         "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",

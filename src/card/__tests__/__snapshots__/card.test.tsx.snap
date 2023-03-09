@@ -5235,7 +5235,8 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
-  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-4 .nk-headline-kicker {
@@ -5260,40 +5261,6 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-4 .nk-headline-heading {
   color: #3B3B3B;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-4:hover:not(:disabled) .nk-headline-heading {
-  color: #111111;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4:focus-visible:not(:disabled) .nk-card-headline {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) .nk-card-headline {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-4:before {
-  content: '';
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
 }
 
 @media screen and (max-width: 479px) {
@@ -5393,14 +5360,6 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   font: inherit;
   margin: 0;
   color: #3B3B3B;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-6:hover:not(:disabled) {
-  color: #111111;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
 }
 
 <div

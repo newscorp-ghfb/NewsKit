@@ -1404,7 +1404,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 0px;
+  outline-offset: 0;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1909,7 +1909,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 0px;
+  outline-offset: 0;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2483,7 +2483,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 0px;
+  outline-offset: 0;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {

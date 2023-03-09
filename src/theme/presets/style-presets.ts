@@ -131,7 +131,7 @@ stylePresets.selectOptionItem = {
   },
   'focus-visible': {
     ...defaultFocusVisible,
-    outlineOffset: '-2px',
+    outlineOffset: '-{{outlines.outlineOffsetDefault}}',
   },
   active: {
     backgroundColor: '{{colors.interactiveInput030}}',
