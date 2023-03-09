@@ -2457,6 +2457,20 @@ Object {
       "width": "sizing050",
     },
   },
+  "paginationItemNonInteractive": Object {
+    "large": Object {
+      "iconSize": "iconSize020",
+      "stylePreset": "paginationItemNonInteractive",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "stylePreset": "paginationItemNonInteractive",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "stylePreset": "paginationItemNonInteractive",
+    },
+  },
   "paginationItemPrev": Object {
     "large": Object {
       "iconSize": "iconSize020",
@@ -2487,19 +2501,19 @@ Object {
     "large": Object {
       "iconSize": "iconSize020",
       "marginInline": "space000",
-      "stylePreset": "paginationItemTruncation",
+      "stylePreset": "paginationItemNonInteractive",
       "width": "sizing070",
     },
     "medium": Object {
       "iconSize": "iconSize020",
       "marginInline": "space000",
-      "stylePreset": "paginationItemTruncation",
+      "stylePreset": "paginationItemNonInteractive",
       "width": "sizing060",
     },
     "small": Object {
       "iconSize": "iconSize010",
       "marginInline": "space000",
-      "stylePreset": "paginationItemTruncation",
+      "stylePreset": "paginationItemNonInteractive",
       "width": "sizing050",
     },
   },
@@ -5658,10 +5672,15 @@ Object {
       "textDecoration": "none",
     },
   },
-  "paginationItemTruncation": Object {
+  "paginationItemNonInteractive": Object {
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.interactiveLink010}}",
+      "cursor": "pointer",
+    },
+    "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
     },
   },
   "popover": Object {

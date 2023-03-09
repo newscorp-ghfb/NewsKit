@@ -44,10 +44,15 @@ export default {
       textDecoration: 'none',
     },
   },
-  paginationItemTruncation: {
+  paginationItemNonInteractive: {
     base: {
       backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.interactiveLink010}}',
+      cursor: 'pointer',
+    },
+    disabled: {
       color: '{{colors.inkNonEssential}}',
+      iconColor: '{{colors.inkNonEssential}}',
     },
   },
 } as Record<string, StylePreset>;

@@ -63,6 +63,7 @@ export const PaginationItem = React.forwardRef<
     const combinedProps = {
       ...buttonProps,
       ...ariaProps,
+      itemType,
       eventContext: combinedEventContext,
       eventOriginator,
       overrides: buttonSettings,

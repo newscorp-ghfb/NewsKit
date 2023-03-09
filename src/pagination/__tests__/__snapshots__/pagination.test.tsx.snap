@@ -69,7 +69,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-3 svg {
@@ -265,7 +264,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -819,7 +817,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-3 svg {
@@ -1015,7 +1012,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -1569,7 +1565,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-3 svg {
@@ -1765,7 +1760,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -2324,7 +2318,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-3 svg {
@@ -2520,7 +2513,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -3073,7 +3065,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-3 svg {
@@ -3269,7 +3260,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -3822,7 +3812,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-3 svg {
@@ -4018,7 +4007,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -4571,7 +4559,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-3 svg {
@@ -4767,7 +4754,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -5320,7 +5306,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: not-allowed;
 }
 
 .emotion-3 svg {
@@ -5470,7 +5455,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-11 svg {
@@ -5594,6 +5578,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           aria-disabled="true"
           class="emotion-3"
           data-testid="pagination-first-item"
+          itemtype="paginationItemFirst"
           role="link"
         >
           <svg
@@ -5621,6 +5606,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           aria-disabled="true"
           class="emotion-3"
           data-testid="pagination-prev-item"
+          itemtype="paginationItemPrev"
           role="link"
         >
           <svg
@@ -5665,6 +5651,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           aria-disabled="true"
           class="emotion-3"
           data-testid="pagination-next-item"
+          itemtype="paginationItemNext"
           role="link"
         >
           <svg
@@ -5692,6 +5679,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           aria-disabled="true"
           class="emotion-3"
           data-testid="pagination-last-item"
+          itemtype="paginationItemLast"
           role="link"
         >
           <svg
@@ -5787,7 +5775,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-3 svg {
@@ -5983,7 +5970,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-11 svg {
@@ -6179,7 +6165,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-20 svg {
@@ -6281,6 +6266,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           class="emotion-3"
           data-testid="pagination-first-item"
           href="https://paginationitem.test/1"
+          itemtype="paginationItemFirst"
         >
           <svg
             aria-hidden="true"
@@ -6308,6 +6294,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           class="emotion-3"
           data-testid="pagination-prev-item"
           href="https://paginationitem.test/3"
+          itemtype="paginationItemPrev"
         >
           <svg
             aria-hidden="true"
@@ -6720,6 +6707,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           class="emotion-3"
           data-testid="pagination-next-item"
           href="https://paginationitem.test/5"
+          itemtype="paginationItemNext"
         >
           <svg
             aria-hidden="true"
@@ -6747,6 +6735,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           class="emotion-3"
           data-testid="pagination-last-item"
           href="https://paginationitem.test/24"
+          itemtype="paginationItemLast"
         >
           <svg
             aria-hidden="true"
@@ -6828,7 +6817,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .emotion-2 svg {
@@ -7031,7 +7019,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  cursor: pointer;
 }
 
 .emotion-2 svg {
@@ -7255,7 +7242,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  cursor: pointer;
   cursor: pointer;
 }
 

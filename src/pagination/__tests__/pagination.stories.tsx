@@ -210,7 +210,7 @@ export const StoryVariationsInInput = () => (
               <TextBlock
                 paddingInline="space020"
                 typographyPreset="utilityButton020"
-                stylePreset="inkSubtle"
+                stylePreset="paginationItemNonInteractive"
               >
                 Page {pageNumber} of {lastPage}
               </TextBlock>

@@ -26,6 +26,4 @@ export const StyledListItem = styled.li<ComponentSizeProps>`
 export const StyledButton = styled(Button)<PaginationItemProps>`
   ${({size, selected}) =>
     getStylePreset(`paginationItem.${size}`, '', {isSelected: selected})};
-
-  cursor: ${({disabled}) => (disabled ? 'not-allowed' : 'pointer')};
 `;

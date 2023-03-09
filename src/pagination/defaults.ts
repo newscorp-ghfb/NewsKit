@@ -139,21 +139,35 @@ export default {
   paginationItemTruncation: {
     small: {
       iconSize: 'iconSize010',
-      stylePreset: 'paginationItemTruncation',
+      stylePreset: 'paginationItemNonInteractive',
       marginInline: 'space000',
       width: 'sizing050',
     },
     medium: {
       iconSize: 'iconSize020',
-      stylePreset: 'paginationItemTruncation',
+      stylePreset: 'paginationItemNonInteractive',
       marginInline: 'space000',
       width: 'sizing060',
     },
     large: {
       iconSize: 'iconSize020',
-      stylePreset: 'paginationItemTruncation',
+      stylePreset: 'paginationItemNonInteractive',
       marginInline: 'space000',
       width: 'sizing070',
+    },
+  },
+  paginationItemNonInteractive: {
+    small: {
+      iconSize: 'iconSize010',
+      stylePreset: 'paginationItemNonInteractive',
+    },
+    medium: {
+      iconSize: 'iconSize020',
+      stylePreset: 'paginationItemNonInteractive',
+    },
+    large: {
+      iconSize: 'iconSize020',
+      stylePreset: 'paginationItemNonInteractive',
     },
   },
 };
