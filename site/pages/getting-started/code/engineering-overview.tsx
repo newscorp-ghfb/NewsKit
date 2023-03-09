@@ -163,11 +163,6 @@ const EngineeringOverview = (layoutProps: LayoutProps) => (
       },
       introduction: `The NewsKit design system provides an npm package that exports a library of reusable React components and utilities that can be used as building blocks to compose web applications.`,
     }}
-    featureCard={{
-      title: 'Need help?',
-      description: 'Can’t find what you’re looking for?',
-      href: 'about/contact-us/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="why?">

@@ -7,7 +7,6 @@ import {
   TextBlock,
   useTheme,
   toNewsKitIcon,
-  LinkStandalone,
   Flag,
 } from 'newskit';
 import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
@@ -24,6 +23,7 @@ import {
   StyledFeatureCardVerticalMedia,
   StyledCardLink,
 } from './styled';
+import {Link} from '../link';
 
 const IconFilledChevronRight = toNewsKitIcon(FilledChevronRight);
 
@@ -62,13 +62,14 @@ const ArrowLink: React.FC<ArrowLinkProps> = ({
   return (
     <div data-testid={dataTestId}>
       {!href && (
-        <LinkStandalone
+        <Link
+          type="standalone"
           href={buttonHref as string}
           overrides={combinedOverrides}
         >
           {label}
           {icon || <IconFilledChevronRight overrides={{size: 'iconSize020'}} />}
-        </LinkStandalone>
+        </Link>
       )}
       {href && (
         <TextBlock

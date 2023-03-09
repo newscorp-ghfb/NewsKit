@@ -45,11 +45,6 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
       },
       introduction: `Start building digital products with NewsKit.`,
     }}
-    featureCard={{
-      title: 'Need help?',
-      description: 'Can’t find what you’re looking for?',
-      href: 'about/contact-us/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="Requirements">
