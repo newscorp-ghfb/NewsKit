@@ -361,22 +361,31 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               required: true,
             },
             {
-              name: 'lastPage',
-              type: 'number',
-              description:
-                'Use to validate that an input page number is within the range',
-              required: true,
-            },
-            {
-              name: 'hrefTemplate buildHref',
+              name: 'buildHref',
               type: '(number) ⇒ string',
               description: (
                 <>
-                  Template to build href for every link{' '}
+                  Normally required but not if onPageChange is set.Template to
+                  build href for every link{' '}
                   <InlineCode>(number) ⇒ string</InlineCode>
                 </>
               ),
-              required: true,
+              required: false,
+            },
+            {
+              name: 'onPageChange',
+              type: '(number) => void',
+              default: 'void',
+              description:
+                'Action that occurs after a pagination item is clicked on to change page',
+              required: false,
+            },
+            {
+              name: 'size',
+              type: ['small', 'medium', 'large'],
+              default: 'medium',
+              description: 'Defines the size of the pagination item',
+              required: false,
             },
           ],
           propsFooter: (
@@ -426,13 +435,6 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               required: true,
             },
             {
-              name: 'size',
-              type: ['small', 'medium', 'large'],
-              default: 'medium',
-              description: 'Defines the size of the pagination item',
-              required: false,
-            },
-            {
               name: 'truncation',
               type: 'boolean',
               default: 'true',
@@ -452,29 +454,6 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               type: 'number',
               default: '1',
               description: 'Number of elements on left/right edges',
-              required: false,
-            },
-            {
-              name: 'selected',
-              type: 'boolean',
-              default: 'false',
-              description:
-                'Sets the pagination item to the selected state (current).',
-              required: false,
-            },
-            {
-              name: 'href',
-              type: 'string',
-              description:
-                'If provided, will render the pagination item as a link.',
-              required: false,
-            },
-            {
-              name: 'onClick',
-              type: 'function',
-              default: 'void',
-              description:
-                'Action that occurs on clicking the pagination item?',
               required: false,
             },
             {
