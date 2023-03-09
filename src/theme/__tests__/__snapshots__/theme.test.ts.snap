@@ -2384,17 +2384,25 @@ Object {
   "paginationItemFirst": Object {
     "large": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing070",
     },
     "medium": Object {
       "iconSize": "iconSize020",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing060",
     },
     "small": Object {
       "iconSize": "iconSize010",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing050",
     },
@@ -2402,19 +2410,25 @@ Object {
   "paginationItemLast": Object {
     "large": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing070",
     },
     "medium": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing060",
     },
     "small": Object {
       "iconSize": "iconSize010",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing050",
     },
@@ -2428,13 +2442,17 @@ Object {
     },
     "medium": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing060",
     },
     "small": Object {
       "iconSize": "iconSize010",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing050",
     },
@@ -2442,19 +2460,25 @@ Object {
   "paginationItemPrev": Object {
     "large": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing070",
     },
     "medium": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing060",
     },
     "small": Object {
       "iconSize": "iconSize010",
-      "marginInline": "space000",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
       "stylePreset": "paginationItem",
       "width": "sizing050",
     },
@@ -5596,14 +5620,14 @@ Object {
   "paginationItem": Object {
     "active": Object {
       "color": "{{colors.interactiveLink030}}",
-      "textDecoration": "underline",
+      "iconColor": "{{colors.interactiveLink030}}",
+      "textDecoration": "none",
     },
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
       "borderRadius": "{{borders.borderRadiusDefault}}",
       "color": "{{colors.interactiveLink010}}",
       "iconColor": "{{colors.interactiveLink010}}",
-      "marginInline": "space000",
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
@@ -5619,16 +5643,18 @@ Object {
     "hover": Object {
       "backgroundColor": "{{colors.interactivePrimary010}}",
       "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
     },
     "loading": Object {
       "backgroundColor": "{{colors.interactivePrimary020}}",
     },
     "selected": Object {
       "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.interactiveLink030}}",
       "textDecoration": "none",
     },
     "selected:hover": Object {
-      "color": "{{colors.inkBase}}",
+      "color": "{{colors.interactiveLink030}}",
       "textDecoration": "none",
     },
   },
@@ -5636,7 +5662,6 @@ Object {
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
       "color": "{{colors.inkNonEssential}}",
-      "marginInline": "space000",
     },
   },
   "popover": Object {

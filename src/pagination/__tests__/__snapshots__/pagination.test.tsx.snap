@@ -65,12 +65,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -88,10 +86,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -118,7 +124,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -148,10 +154,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -178,7 +192,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -245,15 +259,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -270,10 +282,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-12:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-12:disabled {
@@ -300,7 +320,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -326,7 +346,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -795,12 +815,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -818,10 +836,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -848,7 +874,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -878,10 +904,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -908,7 +942,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -975,15 +1009,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -1000,10 +1032,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-12:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-12:disabled {
@@ -1030,7 +1070,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1056,7 +1096,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1525,12 +1565,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -1548,10 +1586,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -1578,7 +1624,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1608,10 +1654,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -1638,7 +1692,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1705,15 +1759,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -1730,10 +1782,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-12:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-12:disabled {
@@ -1760,7 +1820,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1786,7 +1846,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2260,12 +2320,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -2283,10 +2341,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -2313,7 +2379,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2343,10 +2409,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -2373,7 +2447,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2440,15 +2514,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -2465,10 +2537,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-12:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-12:disabled {
@@ -2495,7 +2575,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2521,7 +2601,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2989,12 +3069,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -3012,10 +3090,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -3042,7 +3128,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3072,10 +3158,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -3102,7 +3196,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3169,15 +3263,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -3194,10 +3286,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-12:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-12:disabled {
@@ -3224,7 +3324,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3250,7 +3350,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3718,12 +3818,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -3741,10 +3839,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -3771,7 +3877,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3801,10 +3907,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -3831,7 +3945,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3898,15 +4012,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -3923,10 +4035,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-12:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-12:disabled {
@@ -3953,7 +4073,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3979,7 +4099,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -4447,12 +4567,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -4470,10 +4588,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -4500,7 +4626,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -4530,10 +4656,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -4560,7 +4694,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -4627,15 +4761,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-12 svg {
@@ -4652,10 +4784,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   background-color: #ECF1FF;
 }
 
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-12:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-12:disabled {
@@ -4682,7 +4822,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -4708,7 +4848,7 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-12:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -5177,11 +5317,9 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: transparent;
   border-radius: 8px;
   color: #ABABAB;
-  margin-inline: space000;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: not-allowed;
 }
 
@@ -5219,10 +5357,18 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -5249,7 +5395,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -5277,123 +5423,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 32px;
-  min-width: 32px;
-  min-height: 32px;
-  margin-inline: 0;
-  padding-inline: 8px;
-  padding-block: 0;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 32px;
-  min-width: auto;
-  cursor: not-allowed;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 8px;
-  color: #ABABAB;
-  margin-inline: space000;
-  background-color: transparent;
-  border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
-  cursor: not-allowed;
-}
-
-.emotion-7 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-7 svg {
-  fill: #ABABAB;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7 svg {
-  fill: #3358CC;
-}
-
-.emotion-7:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #ECF1FF;
-}
-
-.emotion-7:active:not(:disabled) {
-  color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-7:disabled {
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-offset: 2px;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  color: #3B3B3B;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-11 {
@@ -5435,15 +5464,13 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-11 svg {
@@ -5460,10 +5487,18 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: #ECF1FF;
 }
 
+.emotion-11:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-11:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-11:disabled {
@@ -5490,7 +5525,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-11:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -5516,7 +5551,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -5584,7 +5619,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
       >
         <a
           aria-disabled="true"
-          class="emotion-7"
+          class="emotion-3"
           data-testid="pagination-prev-item"
           role="link"
         >
@@ -5628,7 +5663,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
       >
         <a
           aria-disabled="true"
-          class="emotion-7"
+          class="emotion-3"
           data-testid="pagination-next-item"
           role="link"
         >
@@ -5655,7 +5690,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
       >
         <a
           aria-disabled="true"
-          class="emotion-7"
+          class="emotion-3"
           data-testid="pagination-last-item"
           role="link"
         >
@@ -5748,12 +5783,10 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -5771,10 +5804,18 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -5801,7 +5842,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -5831,10 +5872,18 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: #ECF1FF;
 }
 
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-3:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-3:disabled {
@@ -5861,7 +5910,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-3:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -5889,164 +5938,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
-}
-
-.emotion-7 {
-  margin: 0;
-  padding: 0;
-  display: inline-grid;
-  -webkit-column-gap: 8px;
-  column-gap: 8px;
-  grid-template-columns: repeat(1, auto);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  justify-items: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 32px;
-  min-width: 32px;
-  min-height: 32px;
-  margin-inline: 0;
-  padding-inline: 8px;
-  padding-block: 0;
-  box-sizing: border-box;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  min-height: 32px;
-  min-width: auto;
-  cursor: default;
-  overflow: hidden;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
-  cursor: pointer;
-  background-color: transparent;
-  border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
-  cursor: pointer;
-}
-
-.emotion-7 svg {
-  width: 24px;
-  height: 24px;
-}
-
-.emotion-7 svg {
-  fill: #3358CC;
-}
-
-.emotion-7:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #ECF1FF;
-}
-
-.emotion-7:active:not(:disabled) {
-  color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-7:disabled {
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-offset: 2px;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  color: #3B3B3B;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .emotion-7 {
-    transition-property: background-color;
-    transition-duration: 0ms;
-    transition-timing-function: cubic-bezier(0, 0, .5, 1);
-  }
-}
-
-.emotion-7 svg {
-  fill: #3358CC;
-}
-
-.emotion-7:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #ECF1FF;
-}
-
-.emotion-7:active:not(:disabled) {
-  color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-7:disabled {
-  color: #ABABAB;
-}
-
-.emotion-7:disabled svg {
-  fill: #ABABAB;
-}
-
-.emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-offset: 2px;
-  outline-style: solid;
-  outline-width: 2px;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-7:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
-.emotion-7:selected:hover:not(:disabled) {
-  color: #3B3B3B;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .emotion-11 {
@@ -6088,12 +5979,10 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -6111,10 +6000,18 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: #ECF1FF;
 }
 
+.emotion-11:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-11:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-11:disabled {
@@ -6141,7 +6038,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-11:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6171,10 +6068,18 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: #ECF1FF;
 }
 
+.emotion-11:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-11:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-11:disabled {
@@ -6201,7 +6106,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-11:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6268,15 +6173,13 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-20 svg {
@@ -6293,10 +6196,18 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   background-color: #ECF1FF;
 }
 
+.emotion-20:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-20:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-20:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-20:disabled {
@@ -6323,7 +6234,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-20:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6349,7 +6260,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 .emotion-20:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6394,7 +6305,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
       >
         <a
           aria-label="go to previous page"
-          class="emotion-7"
+          class="emotion-3"
           data-testid="pagination-prev-item"
           href="https://paginationitem.test/3"
         >
@@ -6806,7 +6717,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
       >
         <a
           aria-label="go to next page"
-          class="emotion-7"
+          class="emotion-3"
           data-testid="pagination-next-item"
           href="https://paginationitem.test/5"
         >
@@ -6833,7 +6744,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
       >
         <a
           aria-label="go to last page"
-          class="emotion-7"
+          class="emotion-3"
           data-testid="pagination-last-item"
           href="https://paginationitem.test/24"
         >
@@ -6911,15 +6822,13 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: #D5E0FC;
   border-radius: 8px;
-  color: #3358CC;
-  margin-inline: space000;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
 }
 
 .emotion-2 svg {
@@ -6936,10 +6845,18 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   background-color: #ECF1FF;
 }
 
+.emotion-2:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-2:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-2:disabled {
@@ -6966,7 +6883,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 }
 
 .emotion-2:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6992,7 +6909,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 }
 
 .emotion-2:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -7110,12 +7027,10 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   cursor: pointer;
 }
 
@@ -7133,10 +7048,18 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   background-color: #ECF1FF;
 }
 
+.emotion-2:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-2:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-2:disabled {
@@ -7163,7 +7086,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 }
 
 .emotion-2:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -7193,10 +7116,18 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   background-color: #ECF1FF;
 }
 
+.emotion-2:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
 .emotion-2:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
 .emotion-2:disabled {
@@ -7223,7 +7154,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 }
 
 .emotion-2:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -7416,7 +7347,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   fill: #3358CC;
   vertical-align: unset;
   display: inline-block;
@@ -7426,12 +7356,14 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 .emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
+  fill: #254CAC;
 }
 
 .emotion-2:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  fill: #12387A;
 }
 
 .emotion-2:disabled {
@@ -7455,7 +7387,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 }
 
 .emotion-2:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -7482,19 +7414,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   background-color: transparent;
   border-radius: 8px;
   color: #3358CC;
-  margin-inline: space000;
   fill: #3358CC;
 }
 
 .emotion-2.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
+  fill: #254CAC;
 }
 
 .emotion-2.emotion-2:active:not(:disabled) {
   color: #12387A;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  fill: #12387A;
 }
 
 .emotion-2.emotion-2:disabled {
@@ -7518,7 +7451,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 }
 
 .emotion-2.emotion-2:selected:hover:not(:disabled) {
-  color: #3B3B3B;
+  color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

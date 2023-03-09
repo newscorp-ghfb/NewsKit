@@ -40,7 +40,7 @@ export default {
       backgroundColor: '{{colors.interactivePrimary020}}',
     },
     'selected:hover': {
-      color: '{{colors.inkBase}}',
+      color: '{{colors.interactiveLink030}}',
       textDecoration: 'none',
     },
   },
