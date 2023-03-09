@@ -355,10 +355,18 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               required: true,
             },
             {
-              name: 'currentPage',
+              name: 'page',
               type: 'number',
-              description: 'Current selected page',
-              required: true,
+              description:
+                'Latest selected page if wishing to control that state externally. If omitted, we will keep track of that for you',
+              required: false,
+            },
+            {
+              name: 'defaultPage',
+              type: 'number',
+              default: '1',
+              description: 'Initial selected page (static value)',
+              required: false,
             },
             {
               name: 'buildHref',
