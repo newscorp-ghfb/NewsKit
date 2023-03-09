@@ -5675,8 +5675,8 @@ Object {
   "paginationItemNonInteractive": Object {
     "base": Object {
       "backgroundColor": "{{colors.transparent}}",
-      "color": "{{colors.interactiveLink010}}",
-      "cursor": "pointer",
+      "color": "{{colors.inkBase}}",
+      "cursor": "default",
     },
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
