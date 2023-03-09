@@ -21,11 +21,18 @@ export const ComponentPageBasicTemplate = <T extends GenericComponent>({
   children,
   layoutProps,
   featureCard,
+  headTags,
   ...rest
 }: ComponentPageTemplateProps<T>) => (
   <Layout {...layoutProps} newPage>
     <PageTemplate
       {...rest}
+      headTags={{
+        imageUrl: 'social/components.png',
+        alt: 'components',
+        title: headTags.title,
+        description: headTags.description,
+      }}
       featureCard={
         {
           ...defaultFeatureCard,

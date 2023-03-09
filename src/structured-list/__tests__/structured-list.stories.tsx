@@ -168,11 +168,28 @@ StoryStructuredListPullRight.storyName = 'Pull right';
 
 export const StoryStructuredListOneCell = () => (
   <StorybookPage columns={STRUCTURED_LIST_GRID_COLUMNS}>
-    <StorybookCase>
+    <StorybookCase title="One cell">
       <StructuredList divider ariaLabel="list">
         {[1, 2, 3].map(item => (
           <StructuredListItem key={item} ariaLabel="list item">
             <StructuredListCell>
+              <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
+            </StructuredListCell>
+          </StructuredListItem>
+        ))}
+      </StructuredList>
+    </StorybookCase>
+    <StorybookCase title="One cell full width">
+      <StructuredList divider ariaLabel="list">
+        {[1, 2, 3].map(item => (
+          <StructuredListItem
+            key={item}
+            ariaLabel="list item"
+            overrides={{
+              paddingInline: 'space000',
+            }}
+          >
+            <StructuredListCell fullWidthSingleCell>
               <HeadingTextBlock>[Cell 1]</HeadingTextBlock>
             </StructuredListCell>
           </StructuredListItem>
