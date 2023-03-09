@@ -613,6 +613,13 @@ Object {
         "backgroundColor": "#F1F1F1",
         "borderColor": "#3358CC",
       },
+      "focus-visible": Object {
+        "outlineColor": "#3768FB",
+        "outlineOffset": "-2px",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineStyle": "auto",
+      },
       "hover": Object {
         "backgroundColor": "#F1F1F1",
       },

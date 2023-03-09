@@ -1557,7 +1557,7 @@ exports[`Card renders correctly with Headline component in cardBody 1`] = `
           class="emotion-3"
         >
           <section
-            class="emotion-4"
+            class="nk-card-headline emotion-4"
           >
             <h1
               class="nk-headline-heading emotion-5"
@@ -4523,6 +4523,7 @@ exports[`Card with href renders correctly with actions 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-3 .nk-headline-kicker {
@@ -4563,6 +4564,21 @@ exports[`Card with href renders correctly with actions 1`] = `
 
 .emotion-3:visited:not(:disabled) .nk-headline-heading {
   color: #6454E3;
+}
+
+.emotion-3:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-3:before {
@@ -5039,6 +5055,7 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-7 .nk-headline-kicker {
@@ -5079,6 +5096,21 @@ exports[`Card with href renders correctly with mediaInteractive set to true 1`] 
 
 .emotion-7:visited:not(:disabled) .nk-headline-heading {
   color: #6454E3;
+}
+
+.emotion-7:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-7:before {
@@ -5203,6 +5235,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-4 .nk-headline-kicker {
@@ -5235,6 +5268,21 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   color: #111111;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4:before {
@@ -5372,7 +5420,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
             href="https://newskit.co.uk/"
           >
             <section
-              class="emotion-5"
+              class="nk-card-headline emotion-5"
             >
               <h1
                 class="nk-headline-heading emotion-6"
@@ -5428,6 +5476,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-4 .nk-headline-kicker {
@@ -5468,6 +5517,21 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-4:visited:not(:disabled) .nk-headline-heading {
   color: #6454E3;
+}
+
+.emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4:before {
@@ -5615,7 +5679,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
             type="preload"
           >
             <section
-              class="emotion-5"
+              class="nk-card-headline emotion-5"
             >
               <h1
                 class="nk-headline-heading emotion-6"
@@ -5671,6 +5735,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-4 .nk-headline-kicker {
@@ -5711,6 +5776,21 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
 
 .emotion-4:visited:not(:disabled) .nk-headline-heading {
   color: #6454E3;
+}
+
+.emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4:before {
@@ -5856,7 +5936,7 @@ exports[`Card with href wraps the Headline component from cardBody with a link a
             href="https://newskit.co.uk/"
           >
             <section
-              class="emotion-5"
+              class="nk-card-headline emotion-5"
             >
               <h1
                 class="nk-headline-heading emotion-6"
@@ -5908,6 +5988,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-3 .nk-headline-kicker {
@@ -5948,6 +6029,21 @@ exports[`Card with href wraps the children of cardBody with a link provided as o
 
 .emotion-3:visited:not(:disabled) .nk-headline-heading {
   color: #6454E3;
+}
+
+.emotion-3:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-3:before {
@@ -6054,6 +6150,7 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-3 .nk-headline-kicker {
@@ -6094,6 +6191,21 @@ exports[`Card with href wraps the children of cardBody with a link provided as s
 
 .emotion-3:visited:not(:disabled) .nk-headline-heading {
   color: #6454E3;
+}
+
+.emotion-3:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-3:before {
