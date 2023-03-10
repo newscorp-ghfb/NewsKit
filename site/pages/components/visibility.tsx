@@ -105,6 +105,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.2.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/blob/main/src/grid/visibility.tsx',
+      storybookId: 'components-visibility--story-visibility-component',
     }}
   >
     <CommonSection
