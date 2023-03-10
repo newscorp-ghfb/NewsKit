@@ -215,6 +215,7 @@ const variations: Array<
     closePosition: 'none',
     header: undefined,
     enableDismiss: true,
+    height: '274px',
   },
   {
     children: 'Show popover - no pointer (default offset)',
@@ -433,7 +434,7 @@ const popoverCustomThemeObject: CreateThemeArgs = {
 };
 
 export default {
-  title: 'Components/popover',
+  title: 'Components/Popover',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (

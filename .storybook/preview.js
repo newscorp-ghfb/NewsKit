@@ -27,7 +27,7 @@ const unlimitedScenarios = [
   'Image',
   'image-e2e',
   'grid-layout',
-  'popover',
+  'Popover',
   'audio-player-composable',
   'text-area',
   'useIntersection',
