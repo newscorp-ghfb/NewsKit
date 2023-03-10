@@ -14,15 +14,10 @@ import {getSSRId} from '../../utils/get-ssr-id';
 import {MenuGroupProps, MenuItemProps} from '../types';
 import {TextBlock} from '../../text-block';
 import {Block} from '../../block';
-import {
-  IconFilledAddCircle,
-  IconFilledClose,
-  IconFilledInfo,
-} from '../../icons';
+import {IconFilledAddCircle, IconFilledInfo} from '../../icons';
 import {getColorCssFromTheme, styled, useMediaQueryObject} from '../../utils';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {IconButton} from '../../icon-button';
 import {InlineMessage} from '../../inline-message';
 
 const menuCustomThemeObject: CreateThemeArgs = {
@@ -614,33 +609,6 @@ export const StoryMenuItemsNoSpace = () => (
   </>
 );
 StoryMenuItemsNoSpace.storyName = 'Items no space';
-
-export const StoryMenuCloseIcon = () => (
-  <Box>
-    <Menu overrides={{spaceInline: 'space000'}}>
-      {Array.from(Array(4).keys()).map(i => (
-        <MenuGroup>
-          <MenuItem overrides={{stylePreset: 'menuItemWithCloseButton'}}>
-            Menu item {i + 1}
-          </MenuItem>
-          <MenuItem overrides={{stylePreset: 'menuItemWithCloseButton'}}>
-            <IconButton
-              size="small"
-              overrides={{
-                stylePreset: 'menuItemCloseIcon',
-                height: '24px',
-                width: '24px',
-              }}
-            >
-              <IconFilledClose />
-            </IconButton>
-          </MenuItem>
-        </MenuGroup>
-      ))}
-    </Menu>
-  </Box>
-);
-StoryMenuCloseIcon.storyName = 'Close icon buttons';
 
 const routes = [
   {
