@@ -152,6 +152,14 @@ const myCustomTheme = compileTheme(
 export default {
   title: 'Components/outline',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Outline',
+      url: 'https://www.newskit.co.uk/theme/foundation/outlines/',
+      description:
+        'Outlines provide visual cues about the focus or active states of elements',
+    },
+  },
 };
 
 export const StoryOutlineDefault = () => (
@@ -160,8 +168,8 @@ export const StoryOutlineDefault = () => (
       overrides={{stylePreset: 'inlineMessageInformative'}}
       icon={infoIcon}
     >
-      Default outline-style is solid, but auto for Safari this ensures rounded
-      edges
+      The default outline style is solid, with the exception of Safari that uses
+      auto, which ensures the border radius matches the element.
     </InlineMessage>
     <br />
     <br />
