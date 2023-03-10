@@ -29,7 +29,7 @@ export const generateCodeHighlighterTheme = (
     ...coy['code[class*="language-"]'],
     color: colors.inkSubtle,
   },
-  ...multiPropSameColor(['cdata', 'comment'], colors.inkNonEssential),
+  ...multiPropSameColor(['cdata', 'comment'], colors.inkSubtle),
   punctuation: {
     color: colors.inkSubtle,
   },
