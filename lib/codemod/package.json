@@ -22,7 +22,7 @@
     "glob": "^8.0.3",
     "jscodeshift": "^0.13.1",
     "jscodeshift-add-imports": "^1.0.10",
-    "yargs": "^17.5.1"
+    "yargs": "^17.7.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
