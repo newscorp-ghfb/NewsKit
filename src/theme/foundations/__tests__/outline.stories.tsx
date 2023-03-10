@@ -169,7 +169,7 @@ export const StoryOutlineDefault = () => (
       icon={infoIcon}
     >
       The default outline style is solid, with the exception of Safari that uses
-      auto, which ensures the border radius matches the element.
+      <code> auto</code>, which ensures the border radius matches the element.
     </InlineMessage>
     <br />
     <br />
