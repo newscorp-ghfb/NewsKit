@@ -43,6 +43,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v5.6.0',
+      storybookId: 'components-pagination--story-default',
       codeUrl: '',
       figmaUrl:
         'https://www.figma.com/file/MkU4xtY2yPcCpfhzQCuSnK/v5.0-%F0%9F%9F%A2-NewsKit-component-library?node-id=13255%3A179266&t=YHF77CaB2nhMe5VH-0',
@@ -54,7 +55,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Pagination',
           description: 'Combines pagination items',
-          component: ['UnorderedList'],
+          component: ['Unordered List'],
         },
         {
           name: 'FirstItem',
@@ -247,7 +248,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
         </>
       ),
       focusOrder: {
-        title: 'Focus Order',
+        title: 'Focus order',
         tableRows: [
           {
             order: 1,
@@ -262,7 +263,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
         ],
       },
       interaction: {
-        title: 'Keyboard Interactions',
+        title: 'Keyboard interactions',
         tableRows: [
           {
             command: ['Tab'],
@@ -270,7 +271,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               'When focus is outside the pagination, moves focus to the first pagination item. If focus is on a pagination item, moves focus to the next item',
           },
           {
-            command: ['Space'],
+            command: ['Space or Enter'],
             description: 'Activates the pagination item',
           },
         ],
@@ -305,7 +306,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
           {
             element: 'link',
             attribute: 'aria-label',
-            value: 'goto previous / next page',
+            value: 'go to previous / next page',
             description: (
               <>
                 Used to inform the assistive technology user what has been
@@ -317,7 +318,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
           {
             element: 'link',
             attribute: 'aria-label',
-            value: 'goto page [number]',
+            value: 'go to page [number]',
             description: 'Indicates the link points to a page number',
           },
           {
@@ -339,8 +340,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
       components: [
         {
           title: 'Pagination',
-          summary:
-            'Pagination has a range of props that can be used to define an appropriate experience for different use cases.',
+          summary: 'Container component, holds React content for its children',
           propsRows: [
             {
               name: 'totalItems',
@@ -417,8 +417,14 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               lastPage. This is something we do in the PaginationProviderContext
               that child components of Pagination can access. If using a custom
               input component, lastPage can be used to validate that an input
-              page number is within a valid range. See Storybook examples link
-              tbc for how to use the usePaginationContext hook in your custom
+              page number is within a valid range.{' '}
+              <Link
+                href="https://storybook.newskit.co.uk/?path=/docs/components-pagination--story-default"
+                target="_blank"
+              >
+                See Storybook examples
+              </Link>{' '}
+              for how to use the usePaginationContext hook in your custom
               components.
             </InlineMessage>
           ),
@@ -433,7 +439,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
           ],
         },
         {
-          title: 'Pagination Items',
+          title: 'Pagination items',
           summary: 'Show pagination item links with numbers.',
           propsRows: [
             {
