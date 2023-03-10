@@ -665,7 +665,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                   <code>
                     <span
                       class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 199, 204);"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(90, 106, 121);"
                     >
                       1
                     </span>
@@ -728,7 +728,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                   <code>
                     <span
                       class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 199, 204);"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(90, 106, 121);"
                     >
                       1
                     </span>
@@ -794,7 +794,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
                   <code>
                     <span
                       class="linenumber react-syntax-highlighter-line-number"
-                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(192, 199, 204);"
+                      style="display: inline-block; min-width: 1em; padding-right: 1em; text-align: right; user-select: none; color: rgb(90, 106, 121);"
                     >
                       1
                     </span>

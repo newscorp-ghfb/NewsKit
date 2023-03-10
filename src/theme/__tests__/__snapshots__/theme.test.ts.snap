@@ -2347,6 +2347,176 @@ Object {
     "stylePreset": "overlay",
     "transitionPreset": "fade",
   },
+  "pagination": Object {
+    "large": Object {},
+    "medium": Object {},
+    "small": Object {},
+  },
+  "paginationItem": Object {
+    "large": Object {
+      "marginInline": "space010",
+      "minHeight": "sizing070",
+      "minWidth": "sizing070",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "typographyPreset": "utilityButton030",
+    },
+    "medium": Object {
+      "marginInline": "space010",
+      "minHeight": "sizing060",
+      "minWidth": "sizing060",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "typographyPreset": "utilityButton020",
+    },
+    "small": Object {
+      "marginInline": "space010",
+      "minHeight": "sizing050",
+      "minWidth": "sizing050",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "typographyPreset": "utilityButton010",
+    },
+  },
+  "paginationItemFirst": Object {
+    "large": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing070",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing060",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing050",
+    },
+  },
+  "paginationItemLast": Object {
+    "large": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing070",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing060",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing050",
+    },
+  },
+  "paginationItemNext": Object {
+    "large": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space000",
+      "stylePreset": "paginationItem",
+      "width": "sizing070",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing060",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing050",
+    },
+  },
+  "paginationItemNonInteractive": Object {
+    "large": Object {
+      "iconSize": "iconSize020",
+      "stylePreset": "paginationItemNonInteractive",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "stylePreset": "paginationItemNonInteractive",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "stylePreset": "paginationItemNonInteractive",
+    },
+  },
+  "paginationItemPrev": Object {
+    "large": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing070",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing060",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "marginInline": "space010",
+      "paddingBlock": "space000",
+      "paddingInline": "space020",
+      "stylePreset": "paginationItem",
+      "width": "sizing050",
+    },
+  },
+  "paginationItemTruncation": Object {
+    "large": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space000",
+      "stylePreset": "paginationItemNonInteractive",
+      "width": "sizing070",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "marginInline": "space000",
+      "stylePreset": "paginationItemNonInteractive",
+      "width": "sizing060",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "marginInline": "space000",
+      "stylePreset": "paginationItemNonInteractive",
+      "width": "sizing050",
+    },
+  },
   "paragraph": Object {
     "dropCap": Object {
       "paddingBlockEnd": Object {
@@ -5459,6 +5629,58 @@ Object {
   "overlay": Object {
     "base": Object {
       "backgroundColor": "{{overlays.overlayTintBase040}}",
+    },
+  },
+  "paginationItem": Object {
+    "active": Object {
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
+      "textDecoration": "none",
+    },
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
+    },
+    "disabled": Object {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+    },
+    "hover": Object {
+      "backgroundColor": "{{colors.interactivePrimary010}}",
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
+    },
+    "loading": Object {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+    },
+    "selected": Object {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.interactiveLink030}}",
+      "textDecoration": "none",
+    },
+    "selected:hover": Object {
+      "color": "{{colors.interactiveLink030}}",
+      "textDecoration": "none",
+    },
+  },
+  "paginationItemNonInteractive": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}",
+      "cursor": "default",
+    },
+    "disabled": Object {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
     },
   },
   "popover": Object {
