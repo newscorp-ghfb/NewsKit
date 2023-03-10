@@ -428,9 +428,7 @@ export const StoryVariations = () => (
           <P />
         </CardContent>
         <CardActions>
-          <Button size="small" href="/news">
-            Button
-          </Button>
+          <Button href="/news">Button</Button>
         </CardActions>
       </Card>
     </StorybookCase>
