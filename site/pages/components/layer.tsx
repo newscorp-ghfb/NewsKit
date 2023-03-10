@@ -177,7 +177,7 @@ const LayerComponent = (layoutProps: LayoutProps) => (
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v6.0.0',
-      storybookId: 'components-layer--story-basic-layer',
+      storybookId: 'components-layer--story-layer-default',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/layer',
     }}
   >
