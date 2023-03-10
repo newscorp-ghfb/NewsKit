@@ -20,6 +20,9 @@ const getCellAlign = (child: React.ReactNode): StructuredListCellAlign =>
 const getPullRight = (child: React.ReactNode): boolean =>
   React.isValidElement(child) && child.props.pullRight;
 
+const getCellFullWidth = (child: React.ReactNode): StructuredListCellAlign =>
+  React.isValidElement(child) && child.props.fullWidthSingleCell;
+
 const ThemelessStructuredListItem = React.forwardRef<
   HTMLAnchorElement,
   StructuredListItemProps
@@ -128,6 +131,7 @@ const ThemelessStructuredListItem = React.forwardRef<
         );
       }
       if (childrenArray.length === 1) {
+        const fullWidth = getCellFullWidth(childrenArray[0]);
         return (
           <StyledGrid
             xsRowGutter="space000"
@@ -136,7 +140,7 @@ const ThemelessStructuredListItem = React.forwardRef<
             overrides={overrides}
             hasHref={hasHref}
           >
-            <StyledCell xs={12} align={alignCell1}>
+            <StyledCell xs={fullWidth ? 'full-width' : 12} align={alignCell1}>
               {childrenArray[0]}
             </StyledCell>
           </StyledGrid>
