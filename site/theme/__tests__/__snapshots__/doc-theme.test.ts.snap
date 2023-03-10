@@ -1801,6 +1801,13 @@ Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
       },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
       },
@@ -4552,6 +4559,13 @@ Object {
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -7308,6 +7322,13 @@ Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
       },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
       },
@@ -10059,6 +10080,13 @@ Object {
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -12815,6 +12843,13 @@ Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
       },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
       },
@@ -15566,6 +15601,13 @@ Object {
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
@@ -18322,6 +18364,13 @@ Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
       },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
       },
@@ -21073,6 +21122,13 @@ Object {
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
