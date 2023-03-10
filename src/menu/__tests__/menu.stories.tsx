@@ -275,13 +275,6 @@ export const StoryMenuInverse = () => {
 };
 StoryMenuInverse.storyName = 'Inverse';
 
-export const StoryMenuHorizontal = () => (
-  <Box>
-    <Menu>{buildMenuItems(4)}</Menu>
-  </Box>
-);
-StoryMenuHorizontal.storyName = 'Horizontal';
-
 const horizontalAlignmentStoryMenus: Array<MenuProps> = [
   {
     align: 'start',
@@ -542,30 +535,6 @@ export const StoryMenuGroupsNested = () => (
   </Box>
 );
 StoryMenuGroupsNested.storyName = 'Nested groups';
-
-const itemsOnlyStoryMenus: Array<
-  Omit<MenuProps, 'children'> & {label?: string}
-> = [
-  {
-    label: 'Items only - horizontal',
-    vertical: false,
-  },
-  {
-    label: 'Items only - vertical',
-    vertical: true,
-  },
-];
-
-export const StoryMenuItemsOnly = () => (
-  <>
-    {itemsOnlyStoryMenus.map(({label, ...props}) => (
-      <Box key={label} label={label}>
-        <Menu {...props}>{buildMenuItems(6)}</Menu>
-      </Box>
-    ))}
-  </>
-);
-StoryMenuItemsOnly.storyName = 'Items only';
 
 const itemsAndGroupsStoryMenus: Array<
   Omit<MenuProps, 'children'> & {label?: string}
