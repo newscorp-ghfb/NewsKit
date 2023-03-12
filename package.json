@@ -231,7 +231,7 @@
     "jszip": "^3.7.1",
     "next-seo": "^4.28.1",
     "react-focus-lock": "^2.5.0",
-    "react-hook-form": "^7.5.3",
+    "react-hook-form": "^7.43.1",
     "react-hot-toast": "^1.0.2",
     "react-range": "^1.8.12",
     "react-transition-group": "^4.4.1",
