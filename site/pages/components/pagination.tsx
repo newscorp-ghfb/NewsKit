@@ -279,7 +279,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
         tableRows: [
           {
             element: 'pagination',
-            attribute: 'role',
+            attribute: 'nav',
             value: 'navigation',
             description: (
               <>
@@ -322,13 +322,13 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
           {
             element: 'link',
             attribute: 'aria-current',
-            value: 'current',
+            value: 'page',
             description: 'Indicates the current page',
           },
           {
             element: 'link',
             attribute: 'aria-disabled',
-            value: 'false',
+            value: 'true',
             description: 'Indicates a disabled link',
           },
         ],
@@ -440,12 +440,6 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
           title: 'Pagination items',
           summary: 'Show pagination item links with numbers.',
           propsRows: [
-            {
-              name: 'children',
-              type: ['Exclude', '<React.ReactNode>', 'undefined'],
-              description: 'Label and icon of the pagination item',
-              required: true,
-            },
             {
               name: 'truncation',
               type: 'boolean',
