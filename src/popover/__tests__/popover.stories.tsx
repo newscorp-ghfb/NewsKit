@@ -2,7 +2,7 @@ import * as React from 'react';
 import {useRef, useState} from 'react';
 import {Placement} from '@floating-ui/react-dom-interactions';
 import {Story as StoryType} from '@storybook/react';
-import {Button, ButtonOverrides} from '../../button';
+import {Button as Btn, ButtonOverrides, ButtonProps} from '../../button';
 import {getColorCssFromTheme, styled} from '../../utils';
 import {Popover as P} from '../popover';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
@@ -11,6 +11,10 @@ import {isCypressTest, isVisualTest} from '../../test/test-utils';
 import {CreateThemeArgs, StylePreset, ThemeProvider} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {defaultFocusVisible} from '../../utils/default-focus-visible';
+
+const Button = (props: ButtonProps) => (
+  <Btn {...props} style={{display: 'flex', flexWrap: 'wrap', rowGap: '8px'}} />
+);
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -436,6 +440,14 @@ const popoverCustomThemeObject: CreateThemeArgs = {
 export default {
   title: 'Components/Popover',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Popover',
+      url: 'https://newskit.co.uk/components/popover',
+      description:
+        'Popovers (also known as poppers) display non-critical information when a user clicks or taps on a UI element.',
+    },
+  },
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
