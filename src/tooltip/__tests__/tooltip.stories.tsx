@@ -4,11 +4,13 @@ import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {StorybookSubHeading} from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
-import {Tooltip} from '../tooltip';
+import {Tooltip as T} from '../tooltip';
 import {IconFilledTwitter} from '../../icons';
 import {IconButton} from '../../icon-button';
 import {Stack} from '../../stack';
 import {LinkInline, LinkStandalone} from '../../link';
+import {TooltipProps} from '../types';
+import {isVisualTest} from '../../test/test-utils';
 
 export default {
   title: 'Components/tooltip',
@@ -24,6 +26,10 @@ const Container = styled.div`
   max-width: 600px;
   margin: 50px auto;
 `;
+
+const Tooltip = (props: TooltipProps) => (
+  <T open={isVisualTest || undefined} {...props} />
+);
 
 const myCustomTheme = createTheme({
   name: 'my-custom-modal-theme',
@@ -340,7 +346,7 @@ export const StoryTooltipPlacements = () => (
 );
 StoryTooltipPlacements.storyName = 'tooltip-placements';
 StoryTooltipPlacements.parameters = {
-  percy: {skip: true},
+  percy: {enableJavaScript: true},
 };
 
 export const StoryTooltipTriggers = () => (
@@ -397,7 +403,6 @@ export const StoryTooltipOverrides = () => (
     <ThemeProvider theme={myCustomTheme}>
       <Tooltip
         content="Tooltip content"
-        open
         placement="right"
         overrides={{
           minWidth: '50px',
@@ -431,194 +436,6 @@ export const StoryTooltipOverrides = () => (
 );
 StoryTooltipOverrides.storyName = 'tooltip-overrides';
 StoryTooltipOverrides.parameters = {
-  percy: {enableJavaScript: true},
-};
-
-export const StoryTooltipPlacementsVisualTest = () => (
-  <>
-    <StorybookSubHeading>Tooltip Visual</StorybookSubHeading>
-    <Container>
-      <GridLayout
-        columns="repeat(3, 1fr)"
-        rows="repeat(4, 1fr)"
-        columnGap="10px"
-      >
-        <GridLayoutItem
-          column="1"
-          row="2/4"
-          justifySelf="center"
-          alignSelf="center"
-        >
-          <Stack spaceInline="space050">
-            <Tooltip content="Tooltip content" placement="left-start" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  height: '50px',
-                }}
-              >
-                left-start
-              </Button>
-            </Tooltip>
-
-            <Tooltip content="Tooltip content" placement="left" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  height: '50px',
-                }}
-              >
-                left
-              </Button>
-            </Tooltip>
-
-            <Tooltip content="Tooltip content" placement="left-end" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  height: '50px',
-                }}
-              >
-                left-end
-              </Button>
-            </Tooltip>
-          </Stack>
-        </GridLayoutItem>
-        <GridLayoutItem
-          column="3"
-          row="2/4"
-          justifySelf="center"
-          alignSelf="center"
-        >
-          <Stack spaceInline="space050">
-            <Tooltip content="Tooltip content" placement="right-start" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  height: '50px',
-                }}
-              >
-                right-start
-              </Button>
-            </Tooltip>
-            <Tooltip content="Tooltip content" placement="right" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  height: '50px',
-                }}
-              >
-                right
-              </Button>
-            </Tooltip>
-            <Tooltip content="Tooltip content" placement="right-end" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  height: '50px',
-                }}
-              >
-                right-end
-              </Button>
-            </Tooltip>
-          </Stack>
-        </GridLayoutItem>
-        <GridLayoutItem
-          column="2"
-          row="1/2"
-          justifySelf="center"
-          alignSelf="center"
-        >
-          <Stack spaceInline="space050" flow="horizontal-top">
-            <Tooltip content="Tooltip content" placement="top-start" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  width: '150px',
-                }}
-              >
-                top-start
-              </Button>
-            </Tooltip>
-            <Tooltip content="Tooltip content" placement="top" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  width: '150px',
-                }}
-              >
-                top
-              </Button>
-            </Tooltip>
-            <Tooltip content="Tooltip content" placement="top-end" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  width: '150px',
-                }}
-              >
-                top-end
-              </Button>
-            </Tooltip>
-          </Stack>
-        </GridLayoutItem>
-        <GridLayoutItem
-          column="2/3"
-          row="4/5"
-          justifySelf="center"
-          alignSelf="center"
-        >
-          <Stack spaceInline="space050" flow="horizontal-top">
-            <Tooltip content="Tooltip content" placement="bottom-start" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  width: '150px',
-                }}
-              >
-                bottom-start
-              </Button>
-            </Tooltip>
-            <Tooltip content="Tooltip content" placement="bottom" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  width: '150px',
-                }}
-              >
-                bottom
-              </Button>
-            </Tooltip>
-            <Tooltip content="Tooltip content" placement="bottom-end" open>
-              <Button
-                size="small"
-                overrides={{
-                  stylePreset: 'buttonOutlinedPrimary',
-                  width: '150px',
-                }}
-              >
-                bottom-end
-              </Button>
-            </Tooltip>
-          </Stack>
-        </GridLayoutItem>
-      </GridLayout>
-    </Container>
-  </>
-);
-StoryTooltipPlacementsVisualTest.storyName = 'tooltip-placements-visual-test';
-StoryTooltipPlacementsVisualTest.parameters = {
   percy: {enableJavaScript: true},
 };
 
