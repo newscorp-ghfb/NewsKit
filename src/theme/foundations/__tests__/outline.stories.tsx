@@ -1,9 +1,11 @@
 import React from 'react';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {Story as StoryType} from '@storybook/react';
 import {StorybookCase} from '../../../test/storybook-comps';
 import {Button} from '../../../button';
 import {InlineMessage, toNewsKitIcon} from '../../..';
-import {compileTheme, createTheme, ThemeProvider} from '../..';
+import {ThemeProvider} from '../..';
+import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -15,139 +17,137 @@ const infoIcon = (
   />
 );
 
-const myCustomTheme = compileTheme(
-  createTheme({
-    name: 'outline-theme',
-    overrides: {
-      stylePresets: {
-        buttonWithoutSafari: {
-          base: {
-            backgroundColor: '{{colors.interactivePrimary030}}',
-            borderRadius: '{{borders.borderRadiusDefault}}',
-            color: '{{colors.inkInverse}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.interactivePrimary040}}',
-          },
-          active: {
-            backgroundColor: '{{colors.interactivePrimary050}}',
-          },
-          disabled: {
-            backgroundColor: '{{colors.interactiveDisabled010}}',
-            color: '{{colors.inkNonEssential}}',
-            iconColor: '{{colors.inkNonEssential}}',
-          },
-          loading: {
-            backgroundColor: '{{colors.interactivePrimary020}}',
-            color: '{{colors.inkBrand010}}',
-            iconColor: '{{colors.inkBrand010}}',
-          },
-          'focus-visible': {
-            outlineColor: '{{outlines.outlineColorDefault}}',
-            outlineStyle: '{{outlines.outlineStyleDefault}}',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-          },
+const myCustomTheme = {
+  name: 'outline-theme',
+  overrides: {
+    stylePresets: {
+      buttonWithoutSafari: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
         },
-        outlineColorChange: {
-          base: {
-            backgroundColor: '{{colors.interactivePrimary030}}',
-            borderRadius: '{{borders.borderRadiusDefault}}',
-            color: '{{colors.inkInverse}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.interactivePrimary040}}',
-          },
-          active: {
-            backgroundColor: '{{colors.interactivePrimary050}}',
-          },
-          disabled: {
-            backgroundColor: '{{colors.interactiveDisabled010}}',
-            color: '{{colors.inkNonEssential}}',
-            iconColor: '{{colors.inkNonEssential}}',
-          },
-          loading: {
-            backgroundColor: '{{colors.interactivePrimary020}}',
-            color: '{{colors.inkBrand010}}',
-            iconColor: '{{colors.inkBrand010}}',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: '{{outlines.outlineStyleDefault}}',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-            safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-          },
+        hover: {
+          backgroundColor: '{{colors.interactivePrimary040}}',
         },
-        outlineSafariChange: {
-          base: {
-            backgroundColor: '{{colors.interactivePrimary030}}',
-            borderRadius: '{{borders.borderRadiusDefault}}',
-            color: '{{colors.inkInverse}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.interactivePrimary040}}',
-          },
-          active: {
-            backgroundColor: '{{colors.interactivePrimary050}}',
-          },
-          disabled: {
-            backgroundColor: '{{colors.interactiveDisabled010}}',
-            color: '{{colors.inkNonEssential}}',
-            iconColor: '{{colors.inkNonEssential}}',
-          },
-          loading: {
-            backgroundColor: '{{colors.interactivePrimary020}}',
-            color: '{{colors.inkBrand010}}',
-            iconColor: '{{colors.inkBrand010}}',
-          },
-          'focus-visible': {
-            outlineColor: 'red',
-            outlineStyle: '{{outlines.outlineStyleDefault}}',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-            safariOutlineStyle: 'dotted',
-          },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
         },
-        outlineoffsetChange: {
-          base: {
-            backgroundColor: '{{colors.interactivePrimary030}}',
-            borderRadius: '{{borders.borderRadiusDefault}}',
-            color: '{{colors.inkInverse}}',
-            iconColor: '{{colors.inkInverse}}',
-          },
-          hover: {
-            backgroundColor: '{{colors.interactivePrimary040}}',
-          },
-          active: {
-            backgroundColor: '{{colors.interactivePrimary050}}',
-          },
-          disabled: {
-            backgroundColor: '{{colors.interactiveDisabled010}}',
-            color: '{{colors.inkNonEssential}}',
-            iconColor: '{{colors.inkNonEssential}}',
-          },
-          loading: {
-            backgroundColor: '{{colors.interactivePrimary020}}',
-            color: '{{colors.inkBrand010}}',
-            iconColor: '{{colors.inkBrand010}}',
-          },
-          'focus-visible': {
-            outlineColor: '{{outlines.outlineColorDefault}}',
-            outlineStyle: '{{outlines.outlineStyleDefault}}',
-            outlineWidth: '{{outlines.outlineWidthDefault}}',
-            outlineOffset: '{{outlines.outlineOffsetDefault}}',
-            safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-            safariOutlineOffset: '5px',
-          },
+        disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+        'focus-visible': {
+          outlineColor: '{{outlines.outlineColorDefault}}',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        },
+      },
+      outlineColorChange: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.interactivePrimary040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
+        },
+        disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+        },
+      },
+      outlineSafariChange: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.interactivePrimary040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
+        },
+        disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          safariOutlineStyle: 'dotted',
+        },
+      },
+      outlineoffsetChange: {
+        base: {
+          backgroundColor: '{{colors.interactivePrimary030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.interactivePrimary040}}',
+        },
+        active: {
+          backgroundColor: '{{colors.interactivePrimary050}}',
+        },
+        disabled: {
+          backgroundColor: '{{colors.interactiveDisabled010}}',
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        loading: {
+          backgroundColor: '{{colors.interactivePrimary020}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+        'focus-visible': {
+          outlineColor: '{{outlines.outlineColorDefault}}',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+          safariOutlineOffset: '5px',
         },
       },
     },
-  }),
-);
+  },
+};
 
 export default {
   title: 'Components/outline',
@@ -160,6 +160,22 @@ export default {
         'Outlines provide visual cues about the focus or active states of elements',
     },
   },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          myCustomTheme,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryOutlineDefault = () => (
@@ -185,73 +201,69 @@ StoryOutlineDefault.parameters = {
 
 export const StoryOutlineOverrides = () => (
   <>
-    <ThemeProvider theme={myCustomTheme}>
-      <InlineMessage
-        overrides={{stylePreset: 'inlineMessageInformative'}}
-        icon={infoIcon}
-      >
-        Not setting //safariOutlineStyle// in a custom style preset will result
-        in a sharp border radius outline. View in Safari to see this applied.
-      </InlineMessage>
-      <br />
-      <br />
-      <br />
-      <StorybookCase title="Without Safari outline" />
-      <Button
-        overrides={{
-          stylePreset: 'buttonWithoutSafari',
-        }}
-      >
-        Button
-      </Button>
-      <br />
-      <br />
-      <br />
-    </ThemeProvider>
-    <ThemeProvider theme={myCustomTheme}>
-      <InlineMessage
-        overrides={{stylePreset: 'inlineMessageInformative'}}
-        icon={infoIcon}
-      >
-        The Safari default is //auto//, so the colour is not controllable unless
-        using //nonOutlineStyle// which will allow the colour to change in
-        Safari.
-      </InlineMessage>
-      <br />
-      <br />
-      <br />
-      <StorybookCase title="Style" />
-      <Button
-        overrides={{
-          stylePreset: 'outlineSafariChange',
-        }}
-      >
-        Button
-      </Button>
-      <br />
-      <br />
-      <br />
-    </ThemeProvider>
-    <ThemeProvider theme={myCustomTheme}>
-      <InlineMessage
-        overrides={{stylePreset: 'inlineMessageInformative'}}
-        icon={infoIcon}
-      >
-        The outline offset may also appear different in Safari when compared to
-        other browsers. This can be configured by using //safariOutlineOffset//.
-      </InlineMessage>
-      <br />
-      <br />
-      <br />
-      <StorybookCase title="outlineOffset is set to 2px, safariOutlineOffset is set to 5px" />
-      <Button
-        overrides={{
-          stylePreset: 'outlineoffsetChange',
-        }}
-      >
-        Button
-      </Button>
-    </ThemeProvider>
+    <InlineMessage
+      overrides={{stylePreset: 'inlineMessageInformative'}}
+      icon={infoIcon}
+    >
+      Not setting <code> safariOutlineStyle</code> in a custom style preset will
+      result in a sharp border radius outline. View in Safari to see this
+      applied.
+    </InlineMessage>
+    <br />
+    <br />
+    <br />
+    <StorybookCase title="Without Safari outline" />
+    <Button
+      overrides={{
+        stylePreset: 'buttonWithoutSafari',
+      }}
+    >
+      Button
+    </Button>
+    <br />
+    <br />
+    <br />
+    <InlineMessage
+      overrides={{stylePreset: 'inlineMessageInformative'}}
+      icon={infoIcon}
+    >
+      The Safari default is <code>auto</code>, so the colour is not controllable
+      unless using <code>nonOutlineStyle </code> which will allow the colour to
+      change in Safari.
+    </InlineMessage>
+    <br />
+    <br />
+    <br />
+    <StorybookCase title="Style" />
+    <Button
+      overrides={{
+        stylePreset: 'outlineSafariChange',
+      }}
+    >
+      Button
+    </Button>
+    <br />
+    <br />
+    <br />
+    <InlineMessage
+      overrides={{stylePreset: 'inlineMessageInformative'}}
+      icon={infoIcon}
+    >
+      The outline offset may also appear different in Safari when compared to
+      other browsers. This can be configured by using{' '}
+      <code> safariOutlineOffset</code>.
+    </InlineMessage>
+    <br />
+    <br />
+    <br />
+    <StorybookCase title="outlineOffset is set to 2px, safariOutlineOffset is set to 5px" />
+    <Button
+      overrides={{
+        stylePreset: 'outlineoffsetChange',
+      }}
+    >
+      Button
+    </Button>
   </>
 );
 
