@@ -314,7 +314,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/getting-started/design/design-overview/"
+                href="/getting-started/design/design-overview"
               >
                 <span
                   class="emotion-7"
@@ -356,7 +356,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/getting-started/code/engineering-overview/"
+                href="/getting-started/code/engineering-overview"
               >
                 <span
                   class="emotion-7"
@@ -398,7 +398,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/getting-started/code/instrumentation/"
+                href="/getting-started/code/instrumentation"
               >
                 <span
                   class="emotion-7"
@@ -453,7 +453,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/components/overview/"
+                href="/components/overview"
               >
                 <span
                   class="emotion-7"
@@ -495,7 +495,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/overview/"
+                href="/theme/overview"
               >
                 <span
                   class="emotion-7"
@@ -537,7 +537,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/components/button/"
+                href="/components/button"
               >
                 <span
                   class="emotion-7"
@@ -592,7 +592,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/presets/style-presets/"
+                href="/theme/presets/style-presets"
               >
                 <span
                   class="emotion-7"
@@ -634,7 +634,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/presets/transition-presets/"
+                href="/theme/presets/transition-presets"
               >
                 <span
                   class="emotion-7"
@@ -676,7 +676,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/presets/typography-presets/"
+                href="/theme/presets/typography-presets"
               >
                 <span
                   class="emotion-7"
@@ -731,7 +731,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/foundation/design-tokens/"
+                href="/theme/foundation/design-tokens"
               >
                 <span
                   class="emotion-7"
@@ -773,7 +773,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/foundation/colours/"
+                href="/theme/foundation/colours"
               >
                 <span
                   class="emotion-7"
@@ -815,7 +815,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/foundation/fonts/"
+                href="/theme/foundation/fonts"
               >
                 <span
                   class="emotion-7"
