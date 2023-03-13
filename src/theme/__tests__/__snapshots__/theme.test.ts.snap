@@ -308,6 +308,7 @@ Object {
     "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
+    "outlineWidth000": "{{borders.borderWidth000}}",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
     "safariOutlineOffsetDefault": "{{borders.borderWidth020}}",
     "safariOutlineStyleDefault": "auto",
@@ -5515,7 +5516,7 @@ Object {
     },
     "focus-visible": Object {
       "outlineColor": "{{outlines.outlineColorDefault}}",
-      "outlineOffset": "{{borders.borderWidth000}}",
+      "outlineOffset": "{{outlines.outlineWidth000}}",
       "outlineStyle": "{{outlines.outlineStyleDefault}}",
       "outlineWidth": "{{outlines.outlineWidthDefault}}",
       "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",

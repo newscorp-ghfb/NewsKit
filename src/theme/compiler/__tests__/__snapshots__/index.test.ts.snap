@@ -306,6 +306,7 @@ Object {
     "outlineColorInverse": "#FFFFFF",
     "outlineOffsetDefault": "2px",
     "outlineStyleDefault": "solid",
+    "outlineWidth000": "0",
     "outlineWidthDefault": "2px",
     "safariOutlineOffsetDefault": "2px",
     "safariOutlineStyleDefault": "auto",
