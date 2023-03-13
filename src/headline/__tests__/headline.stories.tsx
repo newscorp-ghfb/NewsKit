@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Headline} from '..';
-import {ThemeProvider, CreateThemeArgs, createTheme} from '../../theme';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {H6, H5, H4, H3, H2, H1} from '../..';
 import {getColorCssFromTheme, styled} from '../../utils/style';
@@ -22,6 +22,7 @@ const headlineCustomThemeObject: CreateThemeArgs = {
           borderRadius: '{{borders.borderRadiusSharp}}',
         },
       },
+      headingCustom: {base: {color: '{{colors.inkBrand010}}'}},
       linkInline: {
         base: {
           color: '{{colors.interactivePrimary030}}',
@@ -36,19 +37,6 @@ const headlineCustomThemeObject: CreateThemeArgs = {
 const BODY = 'The quick brown fox';
 
 const HeadlineText = 'Heading';
-
-const myCustomTheme = createTheme({
-  name: 'my-custom-heading-theme',
-  overrides: {
-    stylePresets: {
-      headingCustom: {
-        base: {
-          color: '{{colors.amber070}}',
-        },
-      },
-    },
-  },
-});
 
 const MarginOverridesWrapper = styled.div`
   border: 1px dashed;
@@ -86,7 +74,7 @@ export const StoryHeadingVariations = () => (
       <H5>{HeadlineText}</H5>
     </StorybookCase>
     <StorybookCase title="Render heading as span (default)">
-      <H6>{HeadlineText}</H6>
+      <span>{HeadlineText}</span>
     </StorybookCase>
     <StorybookCase title="Render kicker as span (default)">
       <Headline
@@ -275,58 +263,56 @@ StoryHeadingLogicalProps.storyName = 'Logical props';
 
 export const StoryHeadingStylingOverrides = () => (
   <StorybookPage columns="1fr 1fr 1fr">
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookCase title="utilityHeading50">
-        <H2
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'utilityHeading050',
-          }}
-        >
-          {BODY}
-        </H2>
-      </StorybookCase>
-      <StorybookCase title="utilityHeading40">
-        <H3
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'utilityHeading040',
-          }}
-        >
-          {BODY}
-        </H3>
-      </StorybookCase>
-      <StorybookCase title="utilityHeading30">
-        <H4
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'utilityHeading030',
-          }}
-        >
-          {BODY}
-        </H4>
-      </StorybookCase>
-      <StorybookCase title="utilityHeading20">
-        <H5
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'utilityHeading020',
-          }}
-        >
-          {BODY}
-        </H5>
-      </StorybookCase>
-      <StorybookCase title="utilityHeading10">
-        <H6
-          overrides={{
-            stylePreset: 'headingCustom',
-            typographyPreset: 'utilityHeading010',
-          }}
-        >
-          {BODY}
-        </H6>
-      </StorybookCase>
-    </ThemeProvider>
+    <StorybookCase title="utilityHeading50">
+      <H2
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'utilityHeading050',
+        }}
+      >
+        {BODY}
+      </H2>
+    </StorybookCase>
+    <StorybookCase title="utilityHeading40">
+      <H3
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'utilityHeading040',
+        }}
+      >
+        {BODY}
+      </H3>
+    </StorybookCase>
+    <StorybookCase title="utilityHeading30">
+      <H4
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'utilityHeading030',
+        }}
+      >
+        {BODY}
+      </H4>
+    </StorybookCase>
+    <StorybookCase title="utilityHeading20">
+      <H5
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'utilityHeading020',
+        }}
+      >
+        {BODY}
+      </H5>
+    </StorybookCase>
+    <StorybookCase title="utilityHeading10">
+      <H6
+        overrides={{
+          stylePreset: 'headingCustom',
+          typographyPreset: 'utilityHeading010',
+        }}
+      >
+        {BODY}
+      </H6>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryHeadingStylingOverrides.storyName = 'Styling overrides';
@@ -350,11 +336,15 @@ export default {
   title: 'Components/Headline',
   component: () => 'None',
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           headlineCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
