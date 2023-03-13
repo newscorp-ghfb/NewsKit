@@ -1,18 +1,16 @@
 import React from 'react';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
-import {LinkInline, toNewsKitIcon} from 'newskit';
+import {InlineMessage, LinkInline, UnorderedList, toNewsKitIcon} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {LayoutProps} from '../../components/layout';
 import {MetaStatus} from '../../components/meta/types';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {UsageKind} from '../../components/usage-card';
-import {UnorderedList} from '../../../src/unordered-list';
 import {IconFilledCircle} from '../../components/icons';
 import {Link} from '../../components/link';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {OverridesRowsProps} from '../../components/component-api';
-import {InlineMessage} from '../../../src/inline-message';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
