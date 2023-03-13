@@ -1,5 +1,5 @@
 import Layout from '../../../components/layout';
-import { Link } from 'newskit'
+import {Link} from '../../../components/link';
 
 export default Layout;
 
@@ -7,9 +7,9 @@ export default Layout;
 
 ## Unit Testing
 
-NewsKit uses Jest and React Testing Library for unit testing. 
+NewsKit uses Jest and React Testing Library for unit testing.
 
-There is an existing memory leak issue with Jest. See <Link href="https://github.com/facebook/jest/issues/7874">Memory Leak in Jest</Link>. If your tests are running slow using Jest, 
+There is an existing memory leak issue with Jest. See <Link href="https://github.com/facebook/jest/issues/7874">Memory Leak in Jest</Link>. If your tests are running slow using Jest,
 we recommended that you try the following arguments:
 
 `--expose-gc`
@@ -28,7 +28,8 @@ Currently, we set `maxWorkers` to `4` locally and `maxWorkers` to `2` in CI.
 `--forceExit`
 
 Force Jest to exit after all tests have completed running. This is useful when resources set up by test code cannot be adequately cleaned up.
-Jest suggested using `--detectOpenHandles` to help track down the external resources in use.  It is advised to tear down external resources after each test to make sure Jest can shut down cleanly.
+Jest suggested using `--detectOpenHandles` to help track down the external resources in use (it would require `--forceExit` to be omitted to work).
+It is advised to tear down external resources after each test to make sure Jest can shut down cleanly.
 
 ## Snapshot testing
 

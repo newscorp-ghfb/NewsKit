@@ -323,7 +323,7 @@ const spaceStack = {
 export const FormFieldCheckbox = () => (
   <Form onSubmit={onSubmit}>
     <StorybookSubHeading>Single checkbox validation</StorybookSubHeading>
-    <Block spaceInset="space050">
+    <Block paddingBlock="space050" paddingInline="space050">
       {['small', 'medium', 'large'].map(size => (
         <Block spaceStack="space050">
           <FormInput
@@ -359,7 +359,7 @@ export const FormFieldRadioButton = () => {
   };
 
   return (
-    <Block spaceInset="space050">
+    <Block paddingBlock="space050" paddingInline="space050">
       <Form onSubmit={onSubmit}>
         <StorybookHeading>RadioButton and RadioGroup</StorybookHeading>
         <Fieldset legend="Favorite activities">

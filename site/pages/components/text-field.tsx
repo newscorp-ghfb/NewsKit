@@ -8,10 +8,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
-import {
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-} from '../../components/component-api/common-logical-props';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -28,20 +25,20 @@ const commonPropsRows = [
     name: 'size',
     type: ['small', 'medium', 'large'],
     default: 'medium',
-    description: 'Defines the size of the FormInput TextField.',
+    description: 'Defines the size of the formInput textField.',
   },
   {
     name: 'state',
     type: ['valid', 'invalid', 'disabled'],
     description:
-      'If provided, renders the FormInput TextField in a valid, invalid, or disabled state. It can be submitted within a form.',
+      'If provided, renders the formInput textField in a valid, invalid or disabled state. Can be submitted within a form.',
   },
   {
     name: 'readOnly',
     default: 'false',
     type: 'boolean',
     description:
-      'If true, renders the FormInput TextField in a read-only state. It can be selected but not changed by the user.',
+      'If true, renders the formInput textField in a read-only state. Can be selected but not changed by the user.',
   },
   {
     name: 'pattern',
@@ -53,7 +50,7 @@ const commonPropsRows = [
           href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefpattern"
           target="_blank"
         >
-          Regex pattern
+          regex pattern
         </LinkInline>{' '}
         that the value of the input must match to be valid.
       </>
@@ -78,12 +75,12 @@ const commonPropsRows = [
   {
     name: 'eventOriginator',
     type: 'string',
-    description: `This prop allows users to add event originator custom name.`,
+    description: `Allows users to add event originator custom name.`,
   },
   {
     name: 'eventContext',
     type: 'object',
-    description: `This prop allows users to add extra event data to focus events.`,
+    description: `Allows users to add extra event data to focus events.`,
   },
 ];
 
@@ -92,19 +89,19 @@ const commonOverridesRows = [
     attribute: 'width',
     type: 'MQ<string>',
     default: '100%',
-    description: `If provided, this overrides the minWidth of the Text Field.`,
+    description: `If provided, overrides the minWidth of the text field.`,
   },
   {
     attribute: 'minHeight',
     type: 'MQ<string>',
     default: ['small = sizing060', 'medium = sizing080', 'large = sizing090'],
-    description: 'If provided, this overrides the minHeight of the Text Field.',
+    description: 'If provided, overrides the minHeight of the text field.',
   },
   {
     attribute: 'stylePreset',
     type: 'MQ<string>',
     default: 'inputField',
-    description: 'If provided, overrides the stylePreset of the Text Field.',
+    description: 'If provided, overrides the stylePreset of the text field.',
   },
   {
     attribute: 'typographyPreset',
@@ -114,48 +111,39 @@ const commonOverridesRows = [
       'medium = utilityBody020',
       'large = utilityBody030',
     ],
-    description: 'If provided, this overrides the input & placeholder text.',
-  },
-  {
-    attribute: 'spaceInset(deprecated)',
-    type: 'MQ<string>',
-    default: [
-      'small = spaceInset020',
-      'medium = spaceInset030',
-      'large = spaceInset030',
-    ],
-    description: `This property is deprecated. Use paddingInline and paddingBlock instead.`,
+    description: 'If provided, overrides the input & placeholder text.',
   },
   {
     attribute: 'startEnhancer.iconSize',
     type: 'MQ<string>',
     default: 'iconSize020',
     description:
-      'If provided, this overrides the component passed to the start enhancer.',
+      'If provided, overrides the component passed to the start enhancer.',
   },
   {
     attribute: 'startEnhancer.inlineSpace',
     type: 'MQ<string>',
     default: 'spaceInline: space020',
     description:
-      'If provided, this overrides the lnline space of the start enhancer.',
+      'If provided, overrides the inline space of the start enhancer.',
   },
   {
     attribute: 'endEnhancer.iconSize',
     type: 'MQ<string>',
     default: 'iconSize020',
     description:
-      'If provided, this overrides the component passed to the end enhancer. ',
+      'If provided, overrides the component passed to the end enhancer. ',
   },
   {
     attribute: 'endEnhancer.inlineSpace',
     type: 'MQ<string>',
     default: 'spaceInline: space020',
-    description:
-      'If provided, this overrides the lnline space of the end enhancer.',
+    description: 'If provided, overrides the inline space of the end enhancer.',
   },
-  ...logicalMarginOverrideProps,
-  ...logicalPaddingOverrideProps,
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space020', 'medium: space030', 'large: space040'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space040'],
+  }),
 ];
 
 const formInputPropsFooter = (
@@ -167,12 +155,10 @@ const formInputPropsFooter = (
       overrides={{marginBlockStart: 'space050'}}
     >
       The <InlineCode>name</InlineCode> & <InlineCode>rules</InlineCode> props
-      are set on the form input level. If you want to add validation rules or
-      set the name of this component,{' '}
-      <LinkInline href="/components/form">
-        please refer to the Form component
-      </LinkInline>
-      .
+      are set on the form input level. To add validation rules, or set the name,{' '}
+      <Link type="inline" href="/components/form">
+        see the form component
+      </Link>
     </InlineMessage>
     <InlineMessage
       icon={infoIcon}
@@ -180,31 +166,22 @@ const formInputPropsFooter = (
       aria-label="TextField component"
       overrides={{marginBlockStart: 'space030'}}
     >
-      The NewsKit FormInput TextField supports different native HTML attributes,
-      eg. defining the input type as password, or email etc.
-    </InlineMessage>
-    <InlineMessage
-      icon={infoIcon}
-      role="region"
-      aria-label="Engineer check"
-      overrides={{marginBlockStart: 'space030'}}
-    >
-      Engineer to check the validation related props at the time of
-      implementation.
+      The form input text field supports different native HTML attributes (e.g.
+      defining the input type as password or email).
     </InlineMessage>
   </>
 );
 
 const textFieldPropsFooter = (
   <InlineMessage icon={infoIcon} role="region" aria-label="Text Field supports">
-    The NewsKit Text Field supports different{' '}
+    The text field supports different{' '}
     <LinkInline
       href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types"
       target="_blank"
     >
       native HTML attributes
     </LinkInline>
-    , eg. defining the input type as password, or email etc.
+    (e.g. defining the input type as password or email).
   </InlineMessage>
 );
 
@@ -213,7 +190,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Text Field',
       description:
-        'Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.',
+        'Text fields let users enter and edit text. They typically appear in forms.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -222,7 +199,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/text-field/hero',
       },
-      introduction: `Text Fields allow users to enter and edit text content into a UI. They typically appear in forms.`,
+      introduction: `Text fields let users enter and edit text. They typically appear in forms.`,
     }}
     componentDefaultsKey="textField"
     meta={{
@@ -232,23 +209,23 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         'https://github.com/newscorp-ghfb/newskit/blob/develop/src/text-field/text-field.tsx',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=4897%3A131265',
-      storybookId: 'components-text-field--text-field-size-examples',
+      storybookId: 'components-text-field--story-text-field-default',
     }}
     anatomy={{
       introduction:
-        'Text Fields contain four required elements and two optional elements.',
+        'The text field component contains four required elements and two optional elements.',
       media: getIllustrationComponent('components/text-field/anatomy'),
       rows: [
         {
-          name: 'Input Container',
-          description: 'Interactive input area',
+          name: 'Input container',
+          description: 'Interactable input area',
           component: ['HTML Input', 'Block'],
           optional: undefined,
         },
         {
-          name: 'Start Enhancer',
+          name: 'Start enhancer',
           description:
-            'Used to add a component to the start of the input container. Eg. an Icon or Button',
+            'Adds a component to the start of the input container (e.g. icon or button)',
           component: 'React.ReactNode',
           optional: true,
         },
@@ -260,10 +237,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           optional: undefined,
         },
         {
-          name: 'Input & Placeholder Text',
+          name: 'Input & Placeholder text',
           description: (
             <>
-              Input text - a value the user has entered into an input.
+              Input text - a value the user has entered into an input
               <br />
               <br />
               Placeholder text - a short hint that describes the expected value
@@ -279,64 +256,42 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           name: 'Validation icon',
           description:
-            'An icon used to indicate if the input is required and in a valid or invalid state. Validation is set on the Form component',
+            'Indicates if the input is required and in a valid or invalid state. Use the form to set validation',
           component: 'Icon',
           optional: undefined,
         },
         {
-          name: 'End Enhancer',
+          name: 'End enhancer',
           description:
-            'Used to add a component to the end of the input container. Eg. an Icon or Button',
+            'Adds a component to the end of the input container (e.g. icon or button)',
           component: 'React.ReactNode',
           optional: true,
         },
       ],
     }}
     options={{
-      introduction:
-        'The Text Field has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The text field has options for different use cases:',
       cards: [
         {
           title: 'Size',
           description:
-            'There are three sizes of Text Field; small, medium, and large. The label, input container, placeholder/input text, start and end enhancers, and assistive text change size. Text Inputs match the same height as the Button, to align when used together.',
+            'The text field comes in small, medium and large. The label, input container, placeholder/input text, start/end enhancers and assistive text change size. Text inputs should match the height of the button when used together.',
           media: getIllustrationComponent('components/text-field/options/size'),
         },
         {
           title: 'Width',
           description:
-            'The width of a Text Field can be customised appropriately for its context, using full-width or a fixed-width value.',
+            'Customise the width of a text field using full-width or a fixed-width value.',
           media: getIllustrationComponent(
             'components/text-field/options/width',
-          ),
-        },
-        {
-          title: 'Character count',
-          description: (
-            <>
-              Text Fields can use{' '}
-              <Link
-                href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2470-character-count-documentation/components/character-count/"
-                target="_blank"
-              >
-                the character count component
-              </Link>{' '}
-              which lets users know how much text they can enter, displaying the
-              number of characters available as a user types. The character
-              limit is configurable.
-            </>
-          ),
-          media: getIllustrationComponent(
-            'components/text-field/options/character-count',
           ),
         },
         {
           title: 'Placeholder text',
           description: (
             <>
-              Placeholder text can be displayed to provide the user with a short
-              hint that describes the content that is expected to be inputted by
-              the user (e.g. a sample value or a short description of the
+              Use placeholder text to give the user a short hint about what they
+              need to input (e.g. a sample value or a short description of the
               expected format).
               <br />
               <br />
@@ -346,11 +301,10 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
                 icon={infoIcon}
                 role="region"
                 aria-label="Placeholder accessible"
-                title="Note"
                 overrides={{marginBlockStart: 'space030'}}
               >
-                Placeholder text is not accessible; use assistive text when
-                providing instructions on completing a Text Field for clarity.
+                Placeholder text is not accessible. Use assistive text to give
+                instructions to the user when they’ve completed a text field.
               </InlineMessage>
             </>
           ),
@@ -361,7 +315,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Start enhancer',
           description:
-            'The Text Field supports start enhancer property that allows for a component to be added to the start or end of the input container, for example, an icon.',
+            'Add a component to the start of the input container (e.g. an icon).',
           media: getIllustrationComponent(
             'components/text-field/options/start-enhancer',
           ),
@@ -369,7 +323,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'End enhancer',
           description:
-            'The Text Field supports end enhancer property that allows for a component to be added to the start or end of the input container, for example, a Button.',
+            'Add a component to the end of the input container (e.g. a button).',
           media: getIllustrationComponent(
             'components/text-field/options/end-enhancer',
           ),
@@ -378,14 +332,14 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Autocomplete',
           description: (
             <>
-              The Text Field supports native HTML autocomplete functionality
-              that provides a visual hint to users if enabled.{' '}
+              The text field supports native HTML autocomplete functionality
+              that provides a visual hint to users if enabled. <br />
+              <br />
               <Link
                 href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete"
                 target="_blank"
               >
-                For more information, please refer to the HTML autocomplete
-                attribute.
+                Learn more about HTML autocomplete at MDN Web Docs.
               </Link>
             </>
           ),
@@ -397,14 +351,15 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Max length',
           description: (
             <>
-              The Text Field supports native HTML max length value functionality
-              that sets a maximum length of the number of characters entered.{' '}
+              The text field supports native HTML max length value functionality
+              that sets a maximum length of the number of characters entered.
+              <br />
+              <br />
               <Link
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#maxlength"
                 target="_blank"
               >
-                For more information, please refer to the HTML input attribute
-                types.
+                Learn more about HTML input attribute types at MDN Web Docs.
               </Link>
             </>
           ),
@@ -416,14 +371,15 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Min length',
           description: (
             <>
-              The Text Field supports native HTML max length value functionality
-              that sets a minimum length of the number of characters entered.{' '}
+              The text field supports native HTML max length value functionality
+              that sets a minimum length of the number of characters entered.
+              <br />
+              <br />
               <Link
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#minlength"
                 target="_blank"
               >
-                For more information, please refer to the HTML input attribute
-                types.
+                Learn more about HTML input attribute types at MDN Web Docs.
               </Link>
             </>
           ),
@@ -435,14 +391,15 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Pattern',
           description: (
             <>
-              The Text Field supports native HTML regex pattern functionality
+              The text field supports native HTML regex pattern functionality
               that the value of the input must match to be valid.
+              <br />
+              <br />
               <Link
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#pattern"
                 target="_blank"
               >
-                For more information, please refer to the HTML input attribute
-                types.
+                Learn more about HTML input attribute types at MDN Web Docs.
               </Link>
             </>
           ),
@@ -454,16 +411,17 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Type',
           description: (
             <>
-              The Text Field supports type functionality that sets the type of
+              The text field supports type functionality that sets the type of
               text field to render to the user. The types supported include
-              &apos;text&apos; (default for the Text Field component),
-              &apos;email&apos;, &apos;password&apos;, &apos;tel&apos;, and
-              &apos;number&apos;.
+              &apos;text&apos; (default for the text field), &apos;email&apos;,
+              &apos;password&apos;, &apos;tel&apos; and &apos;number&apos;.
+              <br />
+              <br />
               <Link
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#type"
                 target="_blank"
               >
-                For more information, please refer to the HTML input types.
+                Learn more about HTML input types at MDN Web Docs.
               </Link>
             </>
           ),
@@ -473,17 +431,16 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Input mode',
           description: (
             <>
-              The Text Field supports input mode functionality that hints at the
+              The text field supports input mode functionality that hints at the
               type of data that might be entered by the user while editing the
-              element or its contents. The input modes supported include
-              &apos;text&apos;, &apos;email&apos;, &apos;tel&apos;, and
+              element or its contents. Supported input modes include
+              &apos;text&apos;, &apos;email&apos;, &apos;tel&apos; and
               &apos;numeric&apos;.
-              <Link
-                href=" https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute"
-                target="_blank"
-              >
-                For more information, please refer to the HTML inputmode
-                attribute types.
+              <br />
+              <br />
+              <Link href="https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute">
+                Learn more about HTML input mode attribute types at HTML Living
+                Standard.
               </Link>
             </>
           ),
@@ -492,24 +449,14 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Handling multiple Text Fields',
+          title: 'Handling multiple text fields',
           description: (
             <>
-              Selection controls (inputs), such as the Form Input TextField, can
-              be grouped together with other selection controls, Labels, and
-              Assistive Text together in a Fieldset. The Fieldset has a caption
-              that gives a title attributed to the elements that appear in the
-              Fieldset, called a Legend.
-              <br />
-              <br />
-              The Fieldset can also support other selection controls (inputs)
-              such as the{' '}
-              <Link href="/components/radio-button/">FormInput Radio</Link>,
-              FormInput Switch, and{' '}
-              <Link href="/components/checkbox/">FormInput Checkbox</Link>.
-              <br />
-              <br />
-              For more information, please refer to the Fieldset component.
+              You can group together selection controls (inputs), such as
+              formInput, radio button and checkbox, as well as labels and
+              assistive text, in a{' '}
+              <Link href="/components/fieldset/">fieldset</Link>. Add a title
+              caption to the grouped elements using the legend.
             </>
           ),
           media: getIllustrationComponent(
@@ -520,33 +467,33 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
     }}
     states={{
       introduction:
-        'The Text Field has the following states. They can be displayed with both placeholder content or user-inputted content:',
+        'The text field has the following states. They can be displayed with both placeholder content or user-inputted content:',
       layout: '3-span',
       cards: [
         {
           title: 'Base',
           description:
-            'Text Fields have a base state. This is the base style of the input before it has been interacted with by a user.',
+            'The default style before the user interacts with the text field.',
           media: getIllustrationComponent('components/text-field/states/base'),
         },
         {
           title: 'Hover',
           description:
-            'Text Fields have a hover state. The style of the input changes to visually communicate and provide feedback to the user that the Text Field is an interactive element.',
+            'The select changes style to let the user know it’s interactive.',
           media: getIllustrationComponent('components/text-field/states/hover'),
         },
         {
           title: 'Active',
           description:
-            'Text Fields have an active state. The style of the input changes to visually communicate and provide feedback to the user that the Text Field has been interacted with.',
+            'The text field changes style to let the user know they’ve interacted with it.',
           media: getIllustrationComponent(
             'components/text-field/states/active',
           ),
         },
         {
-          title: 'Selected (Focus)',
+          title: 'Selected (focus)',
           description:
-            'Text Fields have a selected state. The style of the input changes and a caret element in the input is also visible to visually communicate and provide feedback to the user that the Text Field has been selected and they can input content.',
+            'The text field changes style, and a caret element in the input is also visible, to let the user know the text field has been selected and they can input content.',
           media: getIllustrationComponent(
             'components/text-field/states/selected',
           ),
@@ -555,18 +502,16 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Valid',
           description: (
             <>
-              Text Fields in a valid state change style and can display a valid
-              icon when the inputted entry conforms to a specific format (e.g.,
-              email address, credit card number, password creation requirements,
-              etc.).
+              The text field changes style, and can display a valid icon, when
+              the inputted entry conforms to a specific format (e.g. email
+              address, credit card number, password requirements).
               <br />
               <br />
               The input style change and validation icon can appear as soon as a
               user types a valid entry in the input or on submit.
               <br />
               <br />
-              The <Link href="/components/form/">Form</Link> component is used
-              to define this validation behaviour.
+              Use the form for validation.
             </>
           ),
           media: getIllustrationComponent('components/text-field/states/valid'),
@@ -574,7 +519,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Valid focus',
           description:
-            'Text Fields in a valid focus state changes style when the inputted entry conforms to a specific condition or format, while focused.',
+            'The text field changes style when the inputted entry conforms to a specific condition or format, while focused.',
           media: getIllustrationComponent(
             'components/text-field/states/valid-focus',
           ),
@@ -582,7 +527,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Valid hover',
           description:
-            'Text Fields in a valid hover state changes style when the inputted entry conforms to a specific condition or format, while hovering.',
+            'The text field changes style when the inputted entry conforms to a specific condition or format, while hovering.',
           media: getIllustrationComponent(
             'components/text-field/states/valid-hover',
           ),
@@ -591,18 +536,16 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Invalid',
           description: (
             <>
-              Text Fields in an invalid state change style and can display an
-              invalid icon when the inputted entry doesn’t conform to a specific
-              format (e.g., email address, credit card number, password creation
-              requirements, etc.).
+              The text field changes style and can display an invalid icon when
+              the inputted entry doesn&apos;t conform to a specific format (e.g.
+              email address, credit card number, password requirements).
               <br />
               <br />
               The input style change and validation icon can appear as soon as a
               user types a valid entry in the input or on submit.
               <br />
               <br />
-              The <Link href="/components/form/">Form</Link> component is used
-              to define this validation behaviour.
+              Use the form for validation.
             </>
           ),
           media: getIllustrationComponent(
@@ -612,7 +555,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid focus',
           description:
-            'Text Fields in an invalid focus state changes style when the inputted entry doesn’t conform to a specific condition or format, while focused.',
+            'The text field changes style when the inputted entry doesn’t conform to a specific condition or format, while focused.',
           media: getIllustrationComponent(
             'components/text-field/states/invalid-focus',
           ),
@@ -620,7 +563,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Invalid hover',
           description:
-            'Text Fields in an invalid hover state changes style when the inputted entry doesn’t conform to a specific condition or format, while hovering.',
+            'The text field changes style when the inputted entry doesn’t conform to a specific condition or format, while hovering.',
           media: getIllustrationComponent(
             'components/text-field/states/invalid-hover',
           ),
@@ -629,19 +572,18 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Disabled',
           description: (
             <>
-              Text Fields in a disabled state show that an input exists, but is
-              not available to the user in that scenario. When a user’s cursor
-              hovers over a Text Fields in a disabled state the cursor shows as
-              not-allowed.
+              Communicates that a text field exists, but isn&apos;t available in
+              that scenario. When the user hovers over a text field in a
+              disabled state, the cursor shows as &apos;not allowed&apos;.
               <br />
               <br />
-              Disabled Text Fields are often used to maintain layout consistency
-              and communicate that an input may become available if another
-              condition has been met, e.g.selected a previous option in a form.
+              Disabled text fields maintain layout consistency and communicate
+              that an input may become available if another condition is met
+              (e.g. selecting a previous option in a form).
               <br />
               <br />
-              Content and data in a disabled Text Field can not be submitted in
-              a form.
+              You can’t submit content and data in a disabled text field in a
+              form.
             </>
           ),
           media: getIllustrationComponent(
@@ -652,18 +594,17 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Read-only',
           description: (
             <>
-              Text Fields in a read-only state communicate to the user that an
-              input exists, but cannot be modified in that scenario (however, a
-              user can tab to it, highlight it, and copy the text from it).
+              Communicates that an input exists, but cannot be modified in that
+              scenario (however, a user can tab to it, highlight it and copy the
+              text from it).
               <br />
               <br />
-              Read-only Text Fields are often used to maintain layout
-              consistency and communicate that an input may become available if
-              another condition has been met, e.g. selected a previous option in
-              a form.
+              Read-only text fields maintain layout consistency and communicate
+              that an input may become available if another condition is met
+              (e.g. selecting a previous option in a form).
               <br />
               <br />
-              Content and data in a read-only Text Field can be submitted in a
+              You can submit content and data in a read-only text field in a
               form.
             </>
           ),
@@ -674,14 +615,13 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction:
-        'The following guidance describes how the Text Field component behaves.',
+      introduction: 'Here’s how the text field behaves:',
       cards: [
         {
-          title: 'Input Text Overflow Truncationn',
+          title: 'Input text overflow truncation',
           description: (
             <>
-              When the Text Field text is too long for the available horizontal
+              When the text field text is too long for the available horizontal
               space, the text truncates when text is inputted.
               <br />
               <br />
@@ -698,22 +638,18 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Validation',
           description: (
             <>
-              The Text Field validation rules can be defined for onSubmit or
-              onBlur, for both the initial validation and re-validation using
-              the Form.
+              The text field validation rules can be defined for on submit or on
+              blur, for both the initial validation and re-validation using the
+              form.
               <br />
               <br />
-              <Link href="/components/form/">
-                For more information, please refer to the Form component.
-              </Link>
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="TextField validation"
-                title="Note"
                 overrides={{marginBlockStart: 'space050'}}
               >
-                Validation only works if the FormInput TextField uses the Form
+                Validation only works if the form input text field uses the form
                 component.
               </InlineMessage>
             </>
@@ -726,9 +662,8 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           title: 'Validation icon',
           description: (
             <>
-              An icon is used to indicate if the select is in a valid or invalid
-              state. Validation is set on the{' '}
-              <Link href="/components/form/">Form component</Link>.
+              Indicates if the text field is in a valid or invalid state. Use
+              the form to validate.
             </>
           ),
           media: getIllustrationComponent(
@@ -738,99 +673,64 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Select component.',
+      introduction: 'Here’s how and when to use the text field:',
       cards: [
         {
+          title: 'Do consider text field width',
           description: (
             <>
-              The width of the Text Field should be proportional to the expected
-              user input. For example, when capturing date of birth, the format
-              should be split up into day/month/year i.e DD - MM - YYYY using
-              multiple Text Fields, as this allows users to focus on inputting a
-              specific value, reducing cognitive load. Using identical input
-              widths for all Text Inputs in your forms will make them visually
-              pleasing, but will be harder for a user to complete.
-              <br />
-              <br />
-              Avoid using the Text Field if you need to let users enter longer
-              answers that might span multiple lines.{' '}
-              <Link
-                target="_blank"
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"
-              >
-                Consider using an alternative, such as Textarea.
-              </Link>
+              The width of the text field should be proportional to the expected
+              user input.
             </>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do1'),
+          media: getIllustrationComponent('components/text-field/usage/do-01'),
         },
         {
+          title: 'Don’t capture multiple pieces of information in one field',
           description:
-            'Avoid using Text Fields to capture multiple pieces of information from users, as this increases cognitive load. Instead, consider using multiple text fields in these cases.',
+            'Avoid using a single text field to capture multiple pieces of information from users, as this increases cognitive load. Use an individual text field for each input.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-field/usage/dont1'),
+          media: getIllustrationComponent(
+            'components/text-field/usage/dont-01',
+          ),
         },
         {
+          title: 'Do use an appropriate input type for the data you collect',
           description:
-            'Input labels and placeholder text should be in sentence case. This helps with scannability and legibility.',
+            'Use the appropriate input field to help users enter information in the right format and avoid mistakes (e.g. use a password input field for users to input their password).',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do2'),
+          media: getIllustrationComponent('components/text-field/usage/do-03'),
         },
         {
+          title: 'Don’t truncate or wrap input label text',
           description:
-            "Input label text shouldn't be truncated or wrap over two or more lines. Keep it short, clear, and fully visible.",
+            "Input label text shouldn't be truncated or wrap over two or more lines. Keep it short, clear and fully visible.",
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-field/usage/dont2'),
+          media: getIllustrationComponent(
+            'components/text-field/usage/dont-02',
+          ),
         },
         {
+          title: 'Do provide a label for context',
           description:
-            'Use an appropriate input type for the data you collect. Providing the right type of input field for requested data will help users enter information in the right format and avoid mistakes, making the process as easy and efficient as possible. e.g. use a Password Input Field for users to input their password.',
+            'Text fields should have a label associated to give users context of what the text area represents.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do3'),
+          media: getIllustrationComponent('components/text-field/usage/do-02'),
         },
         {
+          title: 'Don’t validate prematurely',
           description:
-            'Use an appropriate input type for the data you collect. Providing the right type of input field for requested data will help users enter information in the right format and avoid mistakes, making the process as easy and efficient as possible. e.g. use a Password Input Field for users to input their password.',
+            'Avoid prematurely validating the input (e.g. avoid setting the input to invalid before the user has finished typing).',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-field/usage/dont3'),
-        },
-        {
-          description:
-            'Swap Assistive Text with error text if the Text Field is invalid. Once the input is valid then the assistive is then shown again.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do4'),
-        },
-        {
-          description:
-            'Avoid prematurely validating the input e.g. avoid setting the input to invalid before the user has finished typing.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/text-field/usage/dont4'),
-        },
-        {
-          description:
-            'Where possible, use onBlur validation (when the user clicks out the input, the input is validated). When the user’s inputs are checked as the user progresses through the form, as opposed to checking all the inputs in one process on submitting the form. This way is an improved user experience and guides the user through the form completion.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do5'),
-        },
-        {
-          description:
-            'Write error text that communicates a solution. Error text should be written in no more than a few clear, concise and complete sentences.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do6'),
-        },
-        {
-          description:
-            'Write error messaging in a human-centered way by guiding a user and communicating a solution. For example, if a user didn’t complete a required Text Field that asks for their date of birth, write the error text like you’re offering a hint to help them to understand what needs to go in the missing Text Input e.g: “Enter your date of birth.”',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/text-field/usage/do7'),
+          media: getIllustrationComponent(
+            'components/text-field/usage/dont-03',
+          ),
         },
       ],
     }}
     accessibility={{
-      introduction:
-        'The Text Field has the following accessibility considerations:',
+      introduction: '',
       focusOrder: {
         title: 'Focus order',
         tableRows: [
@@ -838,7 +738,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             order: 1,
             element: 'Start enhancer',
             role:
-              'Focusses to the start enhancer (if provided, and interactive)',
+              'Focusses to the start enhancer (if provided and interactive)',
           },
           {
             order: 2,
@@ -848,8 +748,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           {
             order: 3,
             element: 'End enhancer',
-            role:
-              'Focusses to the end enhancer  (if provided, and interactive)',
+            role: 'Focusses to the end enhancer (if provided and interactive)',
           },
         ],
       },
@@ -859,7 +758,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
           {
             command: ['Tab'],
             description:
-              'When focus is outside of the Text Field, it moves focus to the input container. If focus is on the input container it moves focus to the end enhancer (if provided, and interactive).',
+              'When focus is outside the text field, moves focus to the input container. If focus is on the input container, moves focus to the end enhancer (if provided, and interactive).',
           },
         ],
       },
@@ -871,7 +770,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the Text Field.',
+              'Defines a string that labels the action that will be performed when the user interacts with the text field.',
             userSupplied: true,
           },
           {
@@ -879,7 +778,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-required',
             value: 'object',
             description:
-              'This attribute informs the user that a field is required. When set to true, screen readers notify users that the field is required.',
+              'Informs the user that an element is required. When set to ‘true’, screen readers notify users that the element is required.',
             userSupplied: true,
           },
           {
@@ -887,7 +786,7 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-required',
             value: 'object',
             description:
-              'This attribute informs the user when there is an error. By default it’s set to false. Values include true, spelling, and grammar. Screen readers will alert users when the field is set to any value other than false',
+              'Informs the user when there’s an error. Set to ‘false’ by default. Values include true, spelling and grammar. Screen readers alert users when the element is set to any value other than ‘false’',
             userSupplied: true,
           },
         ],
@@ -896,45 +795,30 @@ const TextFieldComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       introduction: (
         <>
-          The Text Field has a range of props that can be used to define an
-          appropriate experience for different use cases.
-          <InlineMessage
-            icon={infoIcon}
-            role="region"
-            aria-label="components exported"
-            overrides={{marginBlockStart: 'space080'}}
-          >
-            There are two components exported from the package, one for use
-            within the{' '}
-            <Link href="/components/form/">NewsKit Form component</Link>, and
-            one for use as a controlled component.
-          </InlineMessage>
+          This package exports two components: a form input text field for use
+          within the form component, and a text field for use as a controlled
+          component (e.g. where you have a custom validation mechanism).
+          <br />
+          <br />
+          Both have a range of props to define the experience in different use
+          cases.
         </>
       ),
       components: [
         {
-          title: 'FormInput TextField',
-          summary: (
-            <>
-              The FormInput TextField has a range of props that can be used to
-              define an appropriate experience for different use cases. Use this
-              component within the{' '}
-              <Link href="/components/form/">NewsKit Form component</Link>.
-            </>
-          ),
+          title: 'Form input text field',
           propsRows: commonPropsRows,
           propsFooter: formInputPropsFooter,
           overridesRows: commonOverridesRows,
         },
         {
-          title: 'TextField',
-          summary: `The TextField has a range of props that can be used to define an appropriate experience for different use cases. Use this component as a controlled component, for instance where you have a custom validation mechanism.`,
+          title: 'Text field',
           propsRows: [
             {
               name: 'name',
               type: 'string',
               description:
-                'If provided, defines name of the input element, used when submitting an HTML form.',
+                'If provided, defines name of the input element. Use when submitting an HTML form.',
             },
             ...commonPropsRows,
           ],

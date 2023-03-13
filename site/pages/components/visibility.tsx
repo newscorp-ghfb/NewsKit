@@ -73,7 +73,7 @@ const cards = [
     ),
     title: 'ScreenReaderOnly',
     description:
-      'Wraps an element making sure that it is not visible to the user, but still readable by a screen reader.',
+      'Wraps an element as the child of the component so it’s readable by a screen reader but not visible to the user (using the ID for reference).',
     stylePrefix: 'principleCard',
     overrides: {
       title,
@@ -87,7 +87,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Visible, Hidden & ScreenReaderOnly',
       description:
-        'The collection of these three components can be used to show and hide content at different breakpoints.',
+        'A collection of three components (visibility, hidden and screen reader only) to show and hide content at different breakpoints.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -97,7 +97,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
         illustration: 'components/visibility/visibility-illustration',
       },
       introduction:
-        'The collection of these three components can be used to show and hide content at different breakpoints.',
+        'A collection of three components (visibility, hidden and screen reader only) to show and hide content at different breakpoints.',
     }}
     componentDefaultsKey="visibility"
     meta={{
@@ -105,13 +105,14 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.2.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/blob/main/src/grid/visibility.tsx',
+      storybookId: 'components-visibility--story-visibility-component',
     }}
   >
     <CommonSection
       title="Components"
       id="components"
       toc="Components"
-      introduction="Visibility is comprised of three components."
+      introduction="Visibility comprises three components."
     >
       <ComponentPageCell>
         <MediaList cards={cards} />
@@ -124,7 +125,7 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
         </Block>
         <InlineMessage role="region" aria-label="demo-note" title="Note">
           You can toggle on the breakpoint indicator at the top of the screen
-          with the ~ key (above the Tab key).
+          with the ~ key.
         </InlineMessage>
       </CellWrapper>
     </CommonSection>
@@ -139,23 +140,15 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       </CellWrapper>
     </CommonSection>
     <UsageSection
-      introduction="The following guidance describes how and when to appropriately use Visible, Hidden, and ScreenReaderOnly."
+      introduction="Here’s how and when to use visible, hidden and screen reader only:"
       cards={[
         {
+          title: 'Don’t hide elements required across breakpoints',
           description:
-            'Use ‘Visible’ or ‘Hidden’ where SEO is a consideration, to avoid layout shift.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/visibility/visibility-do-01-illustration',
-            {viewBox: '0 0 1490 839'},
-          ),
-        },
-        {
-          description:
-            'Avoid hiding elements that are required by users across breakpoints. Have equivalent functionality for different breakpoints, eg a Drawer for top-level navigation items on xs or sm breakpoints where space is limited.',
+            'Have equivalent functionality for all breakpoints (e.g. a drawer for top-level navigation items on xs or sm breakpoints where space is limited).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
-            'components/visibility/visibility-dont-01-illustration',
+            'components/visibility/usage/dont-01',
             {viewBox: '0 0 1490 839'},
           ),
         },
@@ -170,28 +163,38 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
       }}
       aria={{
         title: 'WAI-ARIA',
-        description:
-          'When an id is provided, it can be used to reference this element, for example from an aria-describedby attribute.',
+        description: (
+          <>
+            You can provide context, purpose and additional information for
+            people who are using assistive tools. This benefits users who are
+            blind or low vision or have cognitive disabilities.
+            <br />
+            <br />
+            Apply an aria-labelledby or aria-describedby attribute to the
+            element you want to be described. Then pass the &apos;id&apos; for
+            the aria attribute value to screen reader only.
+          </>
+        ),
       }}
-      infoNoticeAria="Be careful to test at all breakpoints when using ‘Hidden’ or ‘Visible’."
+      infoNoticeAria="Test all breakpoints carefully when using hidden or visible."
     />
     <SEOSection
-      title="SEO Considerations"
-      introduction="Use ‘Visible’ or ‘Hidden’ where SEO is a consideration, to avoid layout shift."
+      title="SEO considerations"
+      introduction="Use visible or hidden where SEO is a consideration, to avoid layout shift."
     />
     <ComponentAPISection
-      introduction="'Visible', 'Hidden' and 'ScreenReaderOnly' have a range of props that can be used to define an appropriate experience for different use cases."
+      introduction="Visible, hidden and screen reader only have a range of props to define the experience in different use cases."
       components={[
         {
           title: 'Visible',
           summary:
-            '‘Visible’ has a range of props that can be used to define an appropriate experience for different use cases.',
+            'Visible, hidden and screen reader only have a range of props to define the experience in different use cases.',
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactNode',
               required: true,
-              description: 'Content of the visiblity container.',
+              description: 'Content of the visibility container',
             },
             {
               name: 'display',
@@ -201,10 +204,8 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
                   CSS attribute for display.
                   <br />
                   <br />
-                  For more information on the display CSS property, please refer
-                  to the documentation{' '}
                   <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">
-                    here
+                    Learn more about the display property at MDN Web Docs
                   </Link>
                 </>
               ),
@@ -261,10 +262,9 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
                   CSS attribute for display.
                   <br />
                   <br />
-                  For more information on the display CSS property, please refer
-                  to the documentation{' '}
                   <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">
-                    here
+                    Learn more about the display property at MDN Web Docs
+                    documentation
                   </Link>
                 </>
               ),
@@ -312,15 +312,15 @@ const VisibilityComponent = (layoutProps: LayoutProps) => (
               type: 'string',
               required: true,
               description:
-                'The description of an element is passed as the child of the component.',
+                'Passes the description of an element as the child of the component',
             },
             {
               name: 'id',
               type: 'string',
               description: (
                 <>
-                  If provided, the id can be used to reference this element, for
-                  example from an <Mono>aria-describedby</Mono> attribute.
+                  If provided, the ID can be used to reference this element
+                  (e.g. from an <Mono>aria-describedby</Mono> attribute.
                 </>
               ),
             },

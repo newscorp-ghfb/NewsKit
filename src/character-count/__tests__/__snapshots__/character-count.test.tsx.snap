@@ -137,8 +137,8 @@ exports[`CharacterCount applies overrides 1`] = `
   letter-spacing: 0;
   padding: 0.5px 0px;
   min-height: 80px;
-  margin-block-end: 8px;
   margin-block: 16px;
+  margin-block-end: 8px;
   padding-inline: 32px;
 }
 

@@ -7,7 +7,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {LayoutProps} from '../../components/layout';
 import {MetaStatus} from '../../components/meta/types';
 import {UsageKind} from '../../components/usage-card';
-import {LinkInline} from '../../../src/link';
+import {LinkInline, LinkStandalone} from '../../../src/link';
 import {Link} from '../../components/link';
 import {IconFilledCircle} from '../../components/icons';
 import {
@@ -49,7 +49,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.2.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/link',
-      storybookId: 'components-link--story-link',
+      storybookId: 'components-linkinline-linkstandalone--story-link',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=324%3A4',
     }}
@@ -57,8 +57,8 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       introduction:
         'This demo allows you to preview the inline and standalone links, their variations, and configuration options.',
       playground: {
-        componentName: 'link',
-        component: state => <Link href={' '} {...state} />,
+        componentName: 'LinkStandalone',
+        component: state => <LinkStandalone href={' '} {...state} />,
         knobs: [
           {
             name: 'content',
@@ -92,7 +92,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               {
                 label: 'Unset',
                 value: undefined,
-                isdefault: true,
+                isDefault: true,
               },
               {
                 label: 'true',
@@ -104,27 +104,7 @@ const LinkComponent = (layoutProps: LayoutProps) => (
               },
             ],
           },
-          {
-            name: 'textOnly',
-            propName: 'textOnly',
-            options: [
-              {
-                label: 'Unset',
-                value: undefined,
-                isdefault: true,
-              },
-              {
-                label: 'true',
-                value: true,
-              },
-              {
-                label: 'false',
-                value: false,
-              },
-            ],
-          },
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ] as any,
+        ],
       },
     }}
     anatomy={{
@@ -243,23 +223,25 @@ const LinkComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the link component.',
+      introduction: 'Here’s how and when to use the link:',
       layout: '2-span',
       cards: [
         {
+          title: 'Do use inline links within paragraphs',
           description:
             'Use inline links within paragraphs or sentences to link to content on the same page or other pages.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/link/usage/do-01'),
         },
         {
+          title: 'Do use standalone links within navigation components',
           description:
             'Use standalone links outside of body content, for example within navigational components such as menus, headers, and footers.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/link/usage/do-02'),
         },
         {
+          title: 'Do use icons for external links',
           description:
             'Use a trailing icon to indicate the link takes the user to an external site.',
           kind: UsageKind.DO,

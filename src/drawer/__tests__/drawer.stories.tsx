@@ -9,7 +9,7 @@ import {
   StorybookLabel,
 } from '../../test/storybook-comps';
 import {Button} from '../../button';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {TextInput} from '../../text-input';
 import {Block} from '../../block';
 import {Menu, MenuItem} from '../../menu';
@@ -63,31 +63,32 @@ const DrawerContent = () => (
     <StorybookParah>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lorem
       massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
-      Pellentesque eu odio <Link href="/">Test link 1</Link> sapien. Donec
-      finibus pellentesque est porta dictum. Suspendisse venenatis vitae augue
-      nec hendrerit. In ut quam tempus, feugiat risus quis, porta eros. Aliquam
-      ultricies ac orci viverra gravida. Ut sodales odio tempor sodales viverra.
-      In condimentum tincidunt fermentum. Nullam imperdiet est vel tincidunt
-      suscipit. Vestibulum vel pulvinar nibh, at molestie lectus. Curabitur
-      ultricies massa eu sem varius volutpat. Ut vitae purus et enim imperdiet
-      finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
-      interdum.
+      Pellentesque eu odio <LinkInline href="/">Test link 1</LinkInline> sapien.
+      Donec finibus pellentesque est porta dictum. Suspendisse venenatis vitae
+      augue nec hendrerit. In ut quam tempus, feugiat risus quis, porta eros.
+      Aliquam ultricies ac orci viverra gravida. Ut sodales odio tempor sodales
+      viverra. In condimentum tincidunt fermentum. Nullam imperdiet est vel
+      tincidunt suscipit. Vestibulum vel pulvinar nibh, at molestie lectus.
+      Curabitur ultricies massa eu sem varius volutpat. Ut vitae purus et enim
+      imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam
+      odio nunc, interdum.
     </StorybookParah>
     <TextInput label="First name" />
     <TextInput label="Last name" />
     <TextInput label="Phone number" />
     <div>
-      <Link href="/">For more information...</Link>{' '}
+      <LinkInline href="/">For more information...</LinkInline>{' '}
     </div>
     <StorybookParah>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
       scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
       vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
       Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac urna{' '}
-      <Link href="/">Test link 2</Link> rutrum aliquet eu mattis ligula. Sed
-      dapibus, enim sed tristique gravida, nisl dolor malesuada lacus, quis
-      auctor dui mauris eu odio. Vivamus eu augue et enim varius viverra.
-      Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere ipsum.
+      <LinkInline href="/">Test link 2</LinkInline> rutrum aliquet eu mattis
+      ligula. Sed dapibus, enim sed tristique gravida, nisl dolor malesuada
+      lacus, quis auctor dui mauris eu odio. Vivamus eu augue et enim varius
+      viverra. Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere
+      ipsum.
     </StorybookParah>
     <div>
       <Button onClick={onSubmit}>Remind me later</Button>
@@ -124,7 +125,12 @@ export const StoryDrawerDefault = () =>
         <Button onClick={open} data-testid="drawer-open-button">
           Open Drawer
         </Button>
-        <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+        <Block
+          as="span"
+          paddingInline="space030"
+          paddingBlock="space030"
+          onChange={onChangeValue}
+        >
           <StorybookLabel htmlFor="drawer_top">
             top:
             <input type="radio" value="top" id="drawer_top" name="placement" />
@@ -172,7 +178,17 @@ export const StoryDrawerDefault = () =>
     );
   });
 StoryDrawerDefault.storyName = 'default';
-StoryDrawerDefault.parameters = {percy: {skip: true}};
+StoryDrawerDefault.parameters = {
+  percy: {skip: true},
+  previewTabs: {
+    'storybook/canvas/panel': {index: -1},
+    'storybook/docs/panel': {hidden: true},
+  },
+  viewMode: 'story',
+  docs: {
+    page: null,
+  },
+};
 
 export const StoryInline = () =>
   React.createElement(() => {
@@ -188,7 +204,12 @@ export const StoryInline = () =>
         <Button onClick={toggle} data-testid="drawer-open-button">
           Open Drawer
         </Button>
-        <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+        <Block
+          as="span"
+          paddingInline="space030"
+          paddingBlock="space030"
+          onChange={onChangeValue}
+        >
           <StorybookLabel htmlFor="drawer-inline_top">
             top:
             <input
@@ -247,16 +268,16 @@ export const StoryInline = () =>
           <StorybookParah>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
-            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
-            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
-            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
-            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
-            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
-            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
-            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
-            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
-            interdum.
+            lacus. Pellentesque eu odio{' '}
+            <LinkInline href="/">Test link 1</LinkInline> sapien. Donec finibus
+            pellentesque est porta dictum. Suspendisse venenatis vitae augue nec
+            hendrerit. In ut quam tempus, feugiat risus quis, porta eros.
+            Aliquam ultricies ac orci viverra gravida. Ut sodales odio tempor
+            sodales viverra. In condimentum tincidunt fermentum. Nullam
+            imperdiet est vel tincidunt suscipit. Vestibulum vel pulvinar nibh,
+            at molestie lectus. Curabitur ultricies massa eu sem varius
+            volutpat. Ut vitae purus et enim imperdiet finibus. Quisque posuere
+            lacus a nunc tempor accumsan. Aliquam odio nunc, interdum.
           </StorybookParah>
         </DrawerContainer>
         <BoxWithContent open={open} />
@@ -264,7 +285,7 @@ export const StoryInline = () =>
     );
   });
 StoryInline.storyName = 'inline';
-StoryInline.parameters = {percy: {skip: true}};
+StoryInline.parameters = StoryDrawerDefault.parameters;
 
 // MENU + DRAWER EXAMPLE
 const Header = styled.div<{fixed: boolean}>`
@@ -367,11 +388,11 @@ export const StoryMenuAndInline = () =>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                     aliquet lorem massa, et lacinia ipsum tristique id.
                     Phasellus sed posuere lacus. Pellentesque eu odio{' '}
-                    <Link href="/">Test link 1</Link> sapien. Donec finibus
-                    pellentesque est porta dictum. Suspendisse venenatis vitae
-                    augue nec hendrerit. In ut quam tempus, feugiat risus quis,
-                    porta eros. Aliquam ultricies ac orci viverra gravida. Ut
-                    sodales odio tempor sodales viverra. In condimentum
+                    <LinkInline href="/">Test link 1</LinkInline> sapien. Donec
+                    finibus pellentesque est porta dictum. Suspendisse venenatis
+                    vitae augue nec hendrerit. In ut quam tempus, feugiat risus
+                    quis, porta eros. Aliquam ultricies ac orci viverra gravida.
+                    Ut sodales odio tempor sodales viverra. In condimentum
                     tincidunt fermentum. Nullam imperdiet est vel tincidunt
                     suscipit. Vestibulum vel pulvinar nibh, at molestie lectus.
                     Curabitur ultricies massa eu sem varius volutpat. Ut vitae
@@ -406,7 +427,7 @@ export const StoryMenuAndInline = () =>
     );
   });
 StoryMenuAndInline.storyName = 'menu+inline';
-StoryMenuAndInline.parameters = {percy: {skip: true}};
+StoryMenuAndInline.parameters = StoryDrawerDefault.parameters;
 
 export const StoryWithAriaAttributes = () =>
   React.createElement(() => {
@@ -430,9 +451,7 @@ export const StoryWithAriaAttributes = () =>
     );
   });
 StoryWithAriaAttributes.storyName = 'with aria attributes';
-StoryWithAriaAttributes.parameters = {
-  percy: {skip: true},
-};
+StoryWithAriaAttributes.parameters = StoryDrawerDefault.parameters;
 
 export const StoryWithRestoreFocusAndCustomAutofocus = () =>
   React.createElement(() => {
@@ -466,7 +485,7 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
           <TextInput label="Last name" />
           <TextInput label="Phone number" />
           <div>
-            <Link href="/">For more information...</Link>{' '}
+            <LinkInline href="/">For more information...</LinkInline>{' '}
           </div>
 
           <div>
@@ -479,9 +498,8 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
   });
 StoryWithRestoreFocusAndCustomAutofocus.storyName =
   'with restore focus and custom autofocus';
-StoryWithRestoreFocusAndCustomAutofocus.parameters = {
-  percy: {skip: true},
-};
+StoryWithRestoreFocusAndCustomAutofocus.parameters =
+  StoryDrawerDefault.parameters;
 
 export const StoryWithHiddenOverlay = () =>
   React.createElement(() => {
@@ -508,9 +526,7 @@ export const StoryWithHiddenOverlay = () =>
     );
   });
 StoryWithHiddenOverlay.storyName = 'hidden overlay';
-StoryWithHiddenOverlay.parameters = {
-  percy: {skip: true},
-};
+StoryWithHiddenOverlay.parameters = StoryDrawerDefault.parameters;
 
 export const StoryWithDisabledFocusTrap = () =>
   React.createElement(() => {
@@ -538,9 +554,7 @@ export const StoryWithDisabledFocusTrap = () =>
     );
   });
 StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
-StoryWithDisabledFocusTrap.parameters = {
-  percy: {skip: true},
-};
+StoryWithDisabledFocusTrap.parameters = StoryDrawerDefault.parameters;
 
 export const StoryModelessDrawer = () =>
   React.createElement(() => {
@@ -570,7 +584,7 @@ export const StoryModelessDrawer = () =>
     );
   });
 StoryModelessDrawer.storyName = 'modelss';
-StoryModelessDrawer.parameters = {percy: {skip: true}};
+StoryModelessDrawer.parameters = StoryDrawerDefault.parameters;
 
 export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
   React.createElement(() => {
@@ -605,7 +619,7 @@ export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
           <TextInput label="Last name" />
           <TextInput label="Phone number" />
           <div>
-            <Link href="/">For more information...</Link>{' '}
+            <LinkInline href="/">For more information...</LinkInline>{' '}
           </div>
 
           <div>
@@ -618,9 +632,8 @@ export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
   });
 StoryModelessWithRestoreFocusAndCustomAutofocus.storyName =
   'modeless with restore focus and custom autofocus';
-StoryModelessWithRestoreFocusAndCustomAutofocus.parameters = {
-  percy: {skip: true},
-};
+StoryModelessWithRestoreFocusAndCustomAutofocus.parameters =
+  StoryDrawerDefault.parameters;
 
 export const StoryOptionalHeaderClose = () =>
   React.createElement(() => {
@@ -671,9 +684,7 @@ export const StoryOptionalHeaderClose = () =>
     );
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
-StoryOptionalHeaderClose.parameters = {
-  percy: {skip: true},
-};
+StoryOptionalHeaderClose.parameters = StoryDrawerDefault.parameters;
 
 export const StoryDreawerTest = () =>
   React.createElement(() => {
@@ -713,7 +724,7 @@ export const StoryDreawerTest = () =>
     );
   });
 StoryDreawerTest.storyName = 'drawer-transitions-mq';
-StoryDreawerTest.parameters = {percy: {skip: true}};
+StoryDreawerTest.parameters = StoryDrawerDefault.parameters;
 
 export const StoryDrawerLogicalPaddingOnPanel = () =>
   React.createElement(() => {
@@ -732,7 +743,12 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
         <Button onClick={open} data-testid="drawer-open-button">
           Open Drawer
         </Button>
-        <Block as="span" spaceInset="space030" onChange={onChangeValue}>
+        <Block
+          as="span"
+          paddingInline="space030"
+          paddingBlock="space030"
+          onChange={onChangeValue}
+        >
           <StorybookLabel htmlFor="drawer_top_logical">
             top:
             <input
@@ -788,9 +804,7 @@ export const StoryDrawerLogicalPaddingOnPanel = () =>
     );
   });
 StoryDrawerLogicalPaddingOnPanel.storyName = 'logical padding on panel';
-StoryDrawerLogicalPaddingOnPanel.parameters = {
-  percy: {skip: true},
-};
+StoryDrawerLogicalPaddingOnPanel.parameters = StoryDrawerDefault.parameters;
 
 export const StoryInlineDrawerLogicalPropsOnPanel = () =>
   React.createElement(() => {
@@ -827,16 +841,16 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
           <StorybookParah>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
             lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-            lacus. Pellentesque eu odio <Link href="/">Test link 1</Link>{' '}
-            sapien. Donec finibus pellentesque est porta dictum. Suspendisse
-            venenatis vitae augue nec hendrerit. In ut quam tempus, feugiat
-            risus quis, porta eros. Aliquam ultricies ac orci viverra gravida.
-            Ut sodales odio tempor sodales viverra. In condimentum tincidunt
-            fermentum. Nullam imperdiet est vel tincidunt suscipit. Vestibulum
-            vel pulvinar nibh, at molestie lectus. Curabitur ultricies massa eu
-            sem varius volutpat. Ut vitae purus et enim imperdiet finibus.
-            Quisque posuere lacus a nunc tempor accumsan. Aliquam odio nunc,
-            interdum.
+            lacus. Pellentesque eu odio{' '}
+            <LinkInline href="/">Test link 1</LinkInline> sapien. Donec finibus
+            pellentesque est porta dictum. Suspendisse venenatis vitae augue nec
+            hendrerit. In ut quam tempus, feugiat risus quis, porta eros.
+            Aliquam ultricies ac orci viverra gravida. Ut sodales odio tempor
+            sodales viverra. In condimentum tincidunt fermentum. Nullam
+            imperdiet est vel tincidunt suscipit. Vestibulum vel pulvinar nibh,
+            at molestie lectus. Curabitur ultricies massa eu sem varius
+            volutpat. Ut vitae purus et enim imperdiet finibus. Quisque posuere
+            lacus a nunc tempor accumsan. Aliquam odio nunc, interdum.
           </StorybookParah>
         </DrawerContainer>
       </div>
@@ -844,9 +858,7 @@ export const StoryInlineDrawerLogicalPropsOnPanel = () =>
   });
 StoryInlineDrawerLogicalPropsOnPanel.storyName =
   'inline drawer with logical padding & margin';
-StoryInlineDrawerLogicalPropsOnPanel.parameters = {
-  percy: {skip: true},
-};
+StoryInlineDrawerLogicalPropsOnPanel.parameters = StoryDrawerDefault.parameters;
 
 export default {
   title: 'Components/drawer',

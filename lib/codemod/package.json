@@ -1,6 +1,6 @@
 {
   "name": "@newskit/codemod",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "You can use this CLI tool to run various scripts (codemods) that will help update NewsKit APIs",
   "keywords": [
     "react",
@@ -18,6 +18,7 @@
   "author": "newskit",
   "dependencies": {
     "chalk": "4.1.2",
+    "dedent-js": "^1.0.1",
     "glob": "^8.0.3",
     "jscodeshift": "^0.13.1",
     "jscodeshift-add-imports": "^1.0.10",

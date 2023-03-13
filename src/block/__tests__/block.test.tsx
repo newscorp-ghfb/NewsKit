@@ -39,14 +39,6 @@ describe('Block', () => {
       expect(fragment).toMatchSnapshot();
     });
 
-    test('renders with spaceInset020', () => {
-      const props: BlockProps = {
-        spaceInset: 'spaceInset020',
-      };
-      const fragment = renderToFragmentWithTheme(Block, props);
-      expect(fragment).toMatchSnapshot();
-    });
-
     test('renders with customBlock style preset', () => {
       const myCustomTheme = createTheme({
         name: 'my-custom-block-theme',

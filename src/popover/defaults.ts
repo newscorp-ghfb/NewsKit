@@ -2,7 +2,7 @@ export default {
   popover: {
     transitionPreset: 'fade',
     zIndex: 80,
-    distance: 'space050',
+    offset: 'space050',
     stylePreset: 'popover',
     pointer: {
       stylePreset: 'popoverPointer',

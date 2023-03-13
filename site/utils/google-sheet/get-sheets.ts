@@ -1,14 +1,10 @@
-/* eslint-disable no-console */
 import {google} from 'googleapis';
+import {CMSError} from './utils';
 
 require('dotenv').config();
 
 // Define the required scopes. In our case we only need read access.
 const SCOPE = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
-
-const handleError = (err: unknown) => {
-  console.error('>> ERROR: Cannot fetch data from googlesheet API.', err);
-};
 
 // Range is typically the sheet name
 export async function getSheets(range: string) {
@@ -22,9 +18,7 @@ export async function getSheets(range: string) {
     !GOOGLE_SHEETS_PRIVATE_KEY &&
     !SPREADSHEET_ID
   ) {
-    // Fail fast without a stacktrace
-    handleError('Have you added the .env file for local builds?');
-    return [];
+    throw new CMSError('Missing environment variables');
   }
 
   try {
@@ -46,8 +40,6 @@ export async function getSheets(range: string) {
     });
     return response.data.values;
   } catch (err: unknown) {
-    handleError(err);
+    throw new CMSError(err instanceof Error ? err.message : 'Unknown error');
   }
-
-  return [];
 }

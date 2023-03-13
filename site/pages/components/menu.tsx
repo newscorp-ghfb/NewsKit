@@ -468,62 +468,32 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the menu:',
       cards: [
         {
+          title: 'Do use sentence case for labels',
           description:
             'Write menu item labels in sentence case to help with scannability and legibility.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/menu/menu-do-03-illustration',
-          ),
-        },
-
-        {
-          description:
-            'Avoid long menu item labels. Keep them short, clear and fully visible.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/menu/menu-dont-03-illustration',
-          ),
+          media: getIllustrationComponent('components/menu/usage/do-01'),
         },
         {
+          title: 'Do use for top-level sections and subsections',
           description:
             'Use a menu for navigating to different top-level sections or subsections.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/menu/menu-do-01-illustration',
-          ),
+          media: getIllustrationComponent('components/menu/usage/do-02'),
         },
         {
-          description:
-            'Avoid using a menu to open content panes within a page. Menus are intended for navigation, and not supplementary content.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/menu/menu-dont-01-illustration',
-          ),
-        },
-        {
+          title: 'Do limit the number of items in a menu',
           description:
             'Think carefully about the number of items in a menu. Too many items can hurt readability and increase the user’s cognitive load.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/menu/menu-do-02-illustration',
-          ),
+          media: getIllustrationComponent('components/menu/usage/do-03'),
         },
         {
-          description: (
-            <>
-              Use a sub menu to display multiple levels of navigational items of
-              a website&apos;s sub-page hierarchy in a semantic way, using ul
-              and li, meeting the latest{' '}
-              <Link
-                href="https://www.w3.org/WAI/tutorials/menus/flyout/"
-                target="_blank"
-              >
-                WAI-ARIA standards.
-              </Link>
-            </>
-          ),
+          title: 'Do use sub menus for multi-level navigation',
+          description:
+            'Use a sub menu to display multiple levels of navigation items.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/menu/do-01'),
+          media: getIllustrationComponent('components/menu/usage/do-04'),
         },
       ],
     }}
@@ -727,6 +697,17 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
+              attribute: 'spaceInline',
+              type: 'MQ<string>',
+              default: 'space050',
+              description: `Defines the space between each menuGroup`,
+            },
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              description: `Overrides the stylePreset of the menuGroup`,
+            },
+            {
               attribute: 'title.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityHeading030',
@@ -744,23 +725,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               default: 'space050',
               description: `Overrides the space between the title and the first menu item`,
             },
-            {
-              attribute: 'title.spaceInset',
-              type: 'MQ<string>',
-              default: 'space050',
-              description: `Overrides the indentation of the title`,
-            },
-            {
-              attribute: 'spaceInline',
-              type: 'MQ<string>',
-              default: 'space050',
-              description: `Defines the space between each menuGroup`,
-            },
-            {
-              attribute: 'stylePreset',
-              type: 'MQ<string>',
-              description: `Overrides the stylePreset of the menuGroup`,
-            },
+            ...getLogicalPropsTable(undefined, 'title', {}),
           ],
         },
         {
@@ -849,13 +814,18 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               default: 'space020',
               description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
             },
-
-            {
-              attribute: 'spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInsetSquish030',
-              description: `Overrides the spaceInset of the Menu Item`,
-            },
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingBlock: [
+                'small = space020',
+                'medium = space020',
+                'large = space030',
+              ],
+              paddingInline: [
+                'small = space040',
+                'medium = space040',
+                'large = space050',
+              ],
+            }),
           ],
         },
         {
@@ -966,10 +936,26 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
             },
             {
-              attribute: 'spaceInset',
+              attribute: 'paddingInline',
               type: 'MQ<string>',
-              default: 'space000',
-              description: `Overrides the spaceInset of the Menu Item`,
+              default: [
+                'small = space040',
+                'medium = space040',
+                'large = space050',
+              ],
+              description:
+                'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingBlock',
+              type: 'MQ<string>',
+              default: [
+                'small = space020',
+                'medium = space020',
+                'large = space030',
+              ],
+              description:
+                'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'indicatorIcon',

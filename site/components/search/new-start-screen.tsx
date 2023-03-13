@@ -1,13 +1,8 @@
 import React from 'react';
-import {
-  Cell,
-  Grid,
-  TextBlock,
-  LinkStandalone,
-  Stack,
-  toNewsKitIcon,
-} from 'newskit';
+import {Cell, Grid, TextBlock, Stack, toNewsKitIcon} from 'newskit';
+
 import {ChevronRight as FilledChevronRight} from '@emotion-icons/material/ChevronRight';
+import {Link} from '../link';
 
 const IconFilledChevronRight = toNewsKitIcon(FilledChevronRight);
 
@@ -94,14 +89,15 @@ export const NewStartScreen = () => (
             marginBlockEnd="space080"
           >
             {items.map(({name, href}) => (
-              <LinkStandalone
-                key={name}
+              <Link
+                type="standalone"
                 href={href}
+                key={name}
                 overrides={{typographyPreset: 'utilityLink020'}}
               >
                 {name}
                 <IconFilledChevronRight overrides={{size: 'iconSize010'}} />
-              </LinkStandalone>
+              </Link>
             ))}
           </Stack>
         </Cell>

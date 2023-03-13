@@ -8,6 +8,7 @@ import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {Link} from '../../components/link';
 import {
+  getLogicalPropsTable,
   logicalMarginOverrideProps,
   logicalPaddingOverrideProps,
 } from '../../components/component-api/common-logical-props';
@@ -41,100 +42,74 @@ const TabsComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use tabs:',
       cards: [
         {
+          title: 'Do use tabs to switch between views',
           description:
             'Use tabs to let users alternate between views within the same context.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-do-01-illustration',
-          ),
+          media: getIllustrationComponent('components/tabs/usage/do-01'),
         },
         {
+          title: 'Don’t truncate tab labels',
           description:
-            'Avoid using tabs to navigate to different pages and anchoring to different sections on a page. Use a navigation component (e.g. link) instead.',
+            'Tab item labels shouldn’t be truncated. Keep them short, clear and fully visible.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-dont-01-illustration',
-          ),
+          media: getIllustrationComponent('components/tabs/usage/dont-03'),
         },
         {
+          title: 'Do use when there are two or more content views',
           description:
             'Use tabs when users have two or more content views to choose from.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-do-02-illustration',
-          ),
+          media: getIllustrationComponent('components/tabs/usage/do-02'),
         },
         {
-          description:
-            'Avoid using tabs when there are more than five or more content views to choose from. Consider an alternative component (e.g. select) to reduce the user’s cognitive load.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-dont-02-illustration',
-          ),
-        },
-        {
-          description:
-            'All tab items should be the same size (e.g. small, medium or large). This helps ensure they have equal importance.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-do-03-illustration',
-          ),
-        },
-        {
-          description:
-            'Avoid mixing tab items that include an icon with those that don’t include an icon. This helps ensure they have equal importance.',
-          kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-dont-03-illustration',
-          ),
-        },
-        {
-          description:
-            'Tab labels should be in sentence case. This helps with scannability and legibility.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-do-04-illustration',
-          ),
-        },
-        {
+          title: 'Don’t nest tabs',
           description:
             'Avoid nesting tabs as this can cause usability issues. Consider an alternative component (e.g. accordion) or rethink the page structure.',
           kind: UsageKind.DONT,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-do-06-illustration',
-          ),
+          media: getIllustrationComponent('components/tabs/usage/dont-04'),
         },
         {
+          title: 'Do use sentence case for labels',
           description:
             'Tab labels should be written in sentence case to help with scannability and legibility.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-dont-04-illustration',
-          ),
+          media: getIllustrationComponent('components/tabs/usage/do-03'),
         },
         {
+          title: 'Don’t use more than 5 tabs',
           description:
-            'Tabs should be in close proximity to the content they’re changing.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-dont-05-illustration',
-          ),
+            'Avoid using tabs when there are five or more content views. Consider an alternative component (e.g. select) to reduce the user’s cognitive load.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/tabs/usage/dont-02'),
         },
         {
+          title: 'Do keep tabs in view of the content',
           description:
-            'The tab should remain in view of the content. If the content is too large to display with the tabs in the same viewport, make the tabs fixed (sticky).',
+            'Tabs should remain in view of the content. If the content is too large to display with the tabs in the same viewport, make the tabs fixed (sticky).',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-do-07-illustration',
-          ),
+          media: getIllustrationComponent('components/tabs/usage/do-04'),
         },
         {
+          title: 'Don’t mix tabs with and without icons',
           description:
-            'Use tabs in the vertical orientation when horizontal space is less generous and when the list of sections is greater than can be presented to the user in a horizontal format (i.e. more than five).',
+            'Avoid mixing tab items that include an icon with those that don’t include an icon. This helps ensure they have equal importance.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/tabs/usage/dont-03'),
+        },
+        {
+          title: 'Do use vertical orientation when space is limited',
+          description:
+            'Use the vertical orientation when there are more than five tabs and horizontal space is limited.',
           kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/tabs/tabs-do-07-illustration',
-          ),
+          media: getIllustrationComponent('components/tabs/usage/do-05'),
+        },
+        {
+          title: 'Don’t use tabs to navigate to different pages',
+          description:
+            'Avoid using tabs to navigate to different pages and anchoring to different sections on a page. Use a navigation component (e.g. link) instead.',
+          kind: UsageKind.DONT,
+          media: getIllustrationComponent('components/tabs/usage/dont-01'),
         },
       ],
     }}
@@ -399,18 +374,18 @@ const TabsComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the selection indicator typography of the text label in the tab',
             },
-            {
-              attribute: 'spaceInset',
-              type: 'MQ<string>',
-
-              default: [
-                'Small = spaceInsetSquish020',
-                'Medium = spaceInsetSquish030',
-                'Large = spaceInsetSquish030',
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingBlock: [
+                'small: space020',
+                'medium: space030',
+                'large: space040',
               ],
-              description:
-                'If provided, overrides the inset space within the tab',
-            },
+              paddingInline: [
+                'small: space030',
+                'medium: space040',
+                'large: space050',
+              ],
+            }),
             {
               attribute: 'spaceInline',
               type: 'MQ<string>',

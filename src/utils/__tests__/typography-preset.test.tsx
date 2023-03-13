@@ -25,13 +25,6 @@ const myCustomTheme = createTheme({
           },
         },
       },
-      fontFamily200: {
-        fontFamily: '"Custom-FontName2", sans-serif',
-        cropConfig: {
-          top: 9,
-          bottom: 9,
-        },
-      },
     },
     typographyPresets: {
       editorialParagraph030: {
@@ -47,13 +40,6 @@ const myCustomTheme = createTheme({
       },
       editorialParagraph300: {
         fontFamily: '{{fonts.fontFamily100.fontFamily}}',
-        fontSize: '{{fonts.fontSize040}}',
-        lineHeight: '{{fonts.fontLineHeight040}}',
-        fontWeight: '{{fonts.fontWeight010}}',
-        letterSpacing: '{{fonts.fontLetterSpacing010}}',
-      },
-      editorialParagraph400: {
-        fontFamily: '{{fonts.fontFamily200.fontFamily}}',
         fontSize: '{{fonts.fontSize040}}',
         lineHeight: '{{fonts.fontLineHeight040}}',
         fontWeight: '{{fonts.fontWeight010}}',
@@ -182,23 +168,6 @@ describe('TypographyPreset', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('when withCrop is true cropping functions work with cropConfig', () => {
-    const TestText1 = styled.p<TestTextProp>`
-      ${getTypographyPresetFromTheme(
-        'editorialParagraph400',
-        'typographyPreset',
-        {withCrop: true},
-      )}
-    `;
-
-    const fragment = renderToFragmentWithTheme(
-      TestText1,
-      undefined,
-      myCustomTheme,
-    );
-    expect(fragment).toMatchSnapshot();
-  });
-
   test('returns typographyPreset with text crop CSS when fontMetrics exist for fontFamily/fontWeight', () => {
     const typographyPreset = getTypographyPresetFromTheme(
       'editorialParagraph030',
@@ -225,7 +194,8 @@ describe('TypographyPreset', () => {
           editorialParagraph030: {
             fontFamily: 'Font Family Name',
             fontWeight: 500,
-            fontSize: 12,
+            fontSize: '12px',
+            lineHeight: 1,
           },
         },
       } as unknown) as Theme,
@@ -234,15 +204,15 @@ describe('TypographyPreset', () => {
       fontFamily: 'Font Family Name',
       fontWeight: 500,
       fontSize: '12px',
-      lineHeight: 'normal',
+      lineHeight: '12px',
       '::before': {
         content: "''",
-        marginBottom: '-0.403em',
+        marginBottom: '-0.153em',
         display: 'block',
       },
       '::after': {
         content: "''",
-        marginTop: '-0.4em',
+        marginTop: '-0.15em',
         display: 'block',
       },
       padding: '0.5px 0px',
@@ -276,7 +246,8 @@ describe('TypographyPreset', () => {
           editorialParagraph030: {
             fontFamily: 'Font Family Name',
             fontWeight: 500,
-            fontSize: 12,
+            fontSize: '12px',
+            lineHeight: 1,
           },
         },
       } as unknown) as Theme,
@@ -285,15 +256,15 @@ describe('TypographyPreset', () => {
       fontFamily: 'Font Family Name',
       fontWeight: 500,
       fontSize: '12px',
-      lineHeight: 'normal',
+      lineHeight: '12px',
       '::before': {
         content: "''",
-        marginBottom: '-0.243em',
+        marginBottom: '-0.143em',
         display: 'block',
       },
       '::after': {
         content: "''",
-        marginTop: '-0.265em',
+        marginTop: '-0.165em',
         display: 'block',
       },
       padding: '0.5px 0px',
@@ -334,6 +305,41 @@ describe('TypographyPreset', () => {
     // eslint-disable-next-line no-console
     expect(console.warn).toHaveBeenCalledWith(
       "No default fontMetrics found for 'Font Family Name'.",
+    );
+  });
+
+  test('returns typographyPreset without text crop CSS and logs warning when cropConfig passed', () => {
+    jest.spyOn(console, 'warn').mockImplementation();
+    const typographyPreset = getTypographyPresetFromTheme(
+      'editorialParagraph030',
+      undefined,
+      {withCrop: true},
+    )({
+      theme: ({
+        fonts: {
+          fontWeight020: 500,
+          fontFamily010: {
+            fontFamily: 'Font Family Name',
+            cropConfig: {},
+          },
+        },
+        typographyPresets: {
+          editorialParagraph030: {
+            fontFamily: 'Font Family Name',
+            fontWeight: 500,
+            fontSize: 12,
+          },
+        },
+      } as unknown) as Theme,
+    });
+    expect(typographyPreset).toEqual({
+      fontFamily: 'Font Family Name',
+      fontWeight: 500,
+      fontSize: 12,
+    });
+    // eslint-disable-next-line no-console
+    expect(console.warn).toHaveBeenCalledWith(
+      'cropConfig and cropAdjustments are no longer supported; please use fontMetrics instead',
     );
   });
 });

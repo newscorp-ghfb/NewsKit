@@ -2,11 +2,18 @@ import React from 'react';
 import {InlineMessage, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {ComponentPageCell} from '../../components/layout-cells';
-import {MediaList, MediaListProps} from '../../components/media-list';
+import {
+  MediaItem,
+  MediaList,
+  MediaListProps,
+} from '../../components/media-list';
 import {IntroductionText} from './types';
 import {CommonSection} from './common-section';
 
-export type UsageSectionProps = MediaListProps & IntroductionText;
+export type UsageSectionProps = Omit<MediaListProps, 'cards'> &
+  IntroductionText & {
+    cards?: Array<MediaItem>;
+  };
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -21,19 +28,22 @@ const infoIcon = (
 export const UsageSection: React.FC<UsageSectionProps> = ({
   introduction,
   notice,
+  cards,
   ...usage
 }) => (
   <CommonSection title="Usage" id="usage" introduction={introduction}>
     <ComponentPageCell>
-      <MediaList
-        gridProps={{xsRowGutter: 'space050'}}
-        cardType="usage"
-        layout="2-span"
-        {...usage}
-      />
+      {cards && (
+        <MediaList
+          gridProps={{xsRowGutter: 'space050'}}
+          cardType="usage"
+          layout="2-span"
+          cards={cards}
+          {...usage}
+        />
+      )}
       {notice && (
         <InlineMessage
-          title="Note"
           icon={infoIcon}
           role="region"
           aria-label="usage notice"

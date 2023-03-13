@@ -70,6 +70,8 @@ jest.mock('react-range', () => {
 
 describe('Audio Player', () => {
   const mediaElement = (window as any).HTMLMediaElement.prototype;
+  let setTimeoutSpy: jest.SpyInstance;
+  let clearTimeoutSpy: jest.SpyInstance;
 
   beforeAll(() => {
     ['duration', 'seekable', 'buffered'].forEach(k => {
@@ -84,7 +86,9 @@ describe('Audio Player', () => {
       mediaElement[k] = jest.fn();
     });
     window.open = jest.fn();
-    jest.useFakeTimers('legacy');
+    jest.useFakeTimers();
+    setTimeoutSpy = jest.spyOn(global, 'setTimeout');
+    clearTimeoutSpy = jest.spyOn(global, 'clearTimeout');
   });
 
   test('live player renders as expected', () => {
@@ -135,15 +139,15 @@ describe('Audio Player', () => {
 
     fireEvent.canPlay(getByTestId('audio-element'));
 
-    expect(clearTimeout).toHaveBeenCalledTimes(1);
+    expect(clearTimeoutSpy).toHaveBeenCalledTimes(1);
 
     fireEvent.waiting(getByTestId('audio-element'));
 
     expect(jest.getTimerCount()).toEqual(1);
-    expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(clearTimeout).toHaveBeenCalledTimes(2);
+    expect(setTimeoutSpy).toHaveBeenCalledTimes(1);
+    expect(clearTimeoutSpy).toHaveBeenCalledTimes(2);
     unmount();
-    expect(clearTimeout).toHaveBeenCalledTimes(3);
+    expect(clearTimeoutSpy).toHaveBeenCalledTimes(3);
   });
 
   test('recorded player renders and behaves as expected', () => {

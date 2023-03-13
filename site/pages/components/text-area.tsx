@@ -9,6 +9,7 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -112,27 +113,11 @@ const commonOverridesRows = [
     ],
     description: 'If provided, this overrides the input & placeholder text.',
   },
-  {
-    attribute: 'marginBlockEnd',
-    type: 'MQ<string>',
-    default: ['small = space020', 'medium = space020', 'large = space020'],
-    description:
-      'It can take one space token to specify the logical block end margin of the container. This space token can also be used on breakpoints.',
-  },
-  {
-    attribute: 'paddingInline',
-    type: 'MQ<string>',
-    default: ['small = space020', 'medium = space030', 'large = space040'],
-    description:
-      'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
-  },
-  {
-    attribute: 'paddingBlock',
-    type: 'MQ<string>',
-    default: ['small = space020', 'medium = space030', 'large = space040'],
-    description:
-      'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
-  },
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space020', 'medium: space030', 'large: space040'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space040'],
+    marginBlockEnd: ['small: space020', 'medium: space020', 'large: space020'],
+  }),
 ];
 
 const TextAreaComponent = (layoutProps: LayoutProps) => (
@@ -370,7 +355,7 @@ const TextAreaComponent = (layoutProps: LayoutProps) => (
             <>
               Text Areas can use{' '}
               <Link
-                href="http://ncu-newskit-docs.s3-website-eu-west-1.amazonaws.com/ppdsc-2470-character-count-documentation/components/character-count/"
+                href="https://newskit.co.uk/components/character-count/"
                 target="_blank"
               >
                 the character count component

@@ -8,7 +8,7 @@ import {
   StorybookSubHeading,
 } from '../../test/storybook-comps';
 import {Button} from '../../button';
-import {Link} from '../../link';
+import {LinkInline} from '../../link';
 import {Stack} from '../../stack';
 import {H1, P} from '../../typography';
 import {useHasMounted} from '../../utils/hooks';
@@ -34,7 +34,7 @@ const modalContent = (
     </StorybookParah>
     <Button>Register for a free account</Button>
     <P>Already have an account?</P>
-    <Link href="/">Sign in here</Link>
+    <LinkInline href="/">Sign in here</LinkInline>
   </Stack>
 );
 
@@ -86,7 +86,17 @@ export const StoryModalDefault = () =>
     );
   });
 StoryModalDefault.storyName = 'default';
-StoryModalDefault.parameters = {percy: {skip: true}};
+StoryModalDefault.parameters = {
+  percy: {skip: true},
+  previewTabs: {
+    'storybook/canvas/panel': {index: -1},
+    'storybook/docs/panel': {hidden: true},
+  },
+  viewMode: 'story',
+  docs: {
+    page: null,
+  },
+};
 
 export const StoryOpenOnPageLoad = () =>
   React.createElement(() => {
@@ -120,14 +130,14 @@ export const StoryOpenOnPageLoad = () =>
             </StorybookParah>
             <Button>Register for a free account</Button>
             <P>Already have an account?</P>
-            <Link href="/">Sign in here</Link>
+            <LinkInline href="/">Sign in here</LinkInline>
           </Stack>
         </Modal>
       </>
     );
   });
 StoryOpenOnPageLoad.storyName = 'open on page load';
-StoryOpenOnPageLoad.parameters = {percy: {skip: true}};
+StoryOpenOnPageLoad.parameters = StoryModalDefault.parameters;
 
 const items = [
   'Neptunium',
@@ -179,9 +189,7 @@ export const StoryWithAriaAttributes = () =>
     );
   });
 StoryWithAriaAttributes.storyName = 'with aria attributes';
-StoryWithAriaAttributes.parameters = {
-  percy: {skip: true},
-};
+StoryWithAriaAttributes.parameters = StoryModalDefault.parameters;
 
 export const StoryWithCustomAutofocus = () =>
   React.createElement(() => {
@@ -223,9 +231,7 @@ export const StoryWithCustomAutofocus = () =>
     );
   });
 StoryWithCustomAutofocus.storyName = 'with custom autofocus';
-StoryWithCustomAutofocus.parameters = {
-  percy: {skip: true},
-};
+StoryWithCustomAutofocus.parameters = StoryModalDefault.parameters;
 
 export const StoryWithCustomRestoreFocus = () =>
   React.createElement(() => {
@@ -268,9 +274,7 @@ export const StoryWithCustomRestoreFocus = () =>
     );
   });
 StoryWithCustomRestoreFocus.storyName = 'with custom restore focus';
-StoryWithCustomRestoreFocus.parameters = {
-  percy: {skip: true},
-};
+StoryWithCustomRestoreFocus.parameters = StoryModalDefault.parameters;
 
 export const StoryWithHiddenOverlay = () =>
   React.createElement(() => {
@@ -305,9 +309,7 @@ export const StoryWithHiddenOverlay = () =>
     );
   });
 StoryWithHiddenOverlay.storyName = 'hidden overlay';
-StoryWithHiddenOverlay.parameters = {
-  percy: {skip: true},
-};
+StoryWithHiddenOverlay.parameters = StoryModalDefault.parameters;
 
 export const StoryWithDisabledFocusTrap = () =>
   React.createElement(() => {
@@ -342,9 +344,7 @@ export const StoryWithDisabledFocusTrap = () =>
     );
   });
 StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
-StoryWithDisabledFocusTrap.parameters = {
-  percy: {skip: true},
-};
+StoryWithDisabledFocusTrap.parameters = StoryModalDefault.parameters;
 
 export const StoryModelessModal = () =>
   React.createElement(() => {
@@ -380,7 +380,7 @@ export const StoryModelessModal = () =>
     );
   });
 StoryModelessModal.storyName = 'modelss';
-StoryModelessModal.parameters = {percy: {skip: true}};
+StoryModelessModal.parameters = StoryModalDefault.parameters;
 
 const ModalWrapper = styled.div`
   margin: 20px 0 20px 350px;
@@ -437,9 +437,7 @@ export const StoryModelessInlineModal = () =>
     );
   });
 StoryModelessInlineModal.storyName = 'modelss-inline';
-StoryModelessInlineModal.parameters = {
-  percy: {skip: true},
-};
+StoryModelessInlineModal.parameters = StoryModalDefault.parameters;
 
 export const StoryOptionalHeaderClose = () =>
   React.createElement(() => {
@@ -482,9 +480,7 @@ export const StoryOptionalHeaderClose = () =>
     );
   });
 StoryOptionalHeaderClose.storyName = 'optional header & close';
-StoryOptionalHeaderClose.parameters = {
-  percy: {skip: true},
-};
+StoryOptionalHeaderClose.parameters = StoryModalDefault.parameters;
 
 export const StoryLogicalProps = () =>
   React.createElement(() => {
@@ -514,6 +510,7 @@ export const StoryLogicalProps = () =>
     );
   });
 StoryLogicalProps.storyName = 'logical-props';
+StoryLogicalProps.parameters = StoryModalDefault.parameters;
 
 export const StoryNestedModals = () =>
   React.createElement(() => {
@@ -569,4 +566,4 @@ export const StoryNestedModals = () =>
     );
   });
 StoryNestedModals.storyName = 'nested-modals';
-StoryNestedModals.parameters = {percy: {skip: true}};
+StoryNestedModals.parameters = StoryModalDefault.parameters;

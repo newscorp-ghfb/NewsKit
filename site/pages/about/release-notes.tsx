@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Block,
-  Button,
+  LinkStandalone,
   StructuredList,
   StructuredListCell,
   StructuredListItem,
@@ -11,6 +11,7 @@ import {ComponentPageCell} from '../../components/layout-cells';
 import {LayoutProps} from '../../components/layout';
 import {
   ContentPrimary,
+  ContentSecondary,
   ContentSection,
 } from '../../components/content-structure';
 import ReleaseHeader from '../../components/release-notes/release-header';
@@ -22,7 +23,6 @@ import {
 } from '../../utils/release-notes/functions';
 import {ReleasesPageProps} from '../../utils/release-notes/types';
 import {GITHUB_URL, REPO} from '../../utils/release-notes/constants';
-import {IconFilledGitHub} from '../../components/icons/icon-filled-github';
 
 const pageName = 'Release notes';
 const pageDescription =
@@ -77,34 +77,51 @@ const ReleaseNotesPage = ({
           <ContentPrimary headline="Previous releases" showSeparator>
             <StructuredList divider>
               {previousReleases.map(
-                ({body, tag_name, published_at, change_level}) => (
-                  <StructuredListItem key={tag_name}>
+                ({tag_name, published_at, change_level}) => (
+                  <StructuredListItem
+                    overrides={{
+                      paddingBlock: 'space050',
+                      paddingInline: 'space000',
+                      minHeight: 'sizing050',
+                    }}
+                    key={tag_name}
+                  >
                     <StructuredListCell>
                       <ReleaseHeader
                         published_at={published_at}
                         change_level={change_level}
                         tag_name={tag_name}
                       />
-                      {change_level === 'major' && <ReleaseNotes body={body} />}
                     </StructuredListCell>
                   </StructuredListItem>
                 ),
               )}
             </StructuredList>
             <Block paddingBlockStart="space090">
-              <Button
-                size="small"
+              <LinkStandalone
                 overrides={{
-                  typographyPreset: 'utilityButton010',
-                  stylePreset: 'buttonOutlinedSecondary',
+                  typographyPreset: 'utilityButton030',
+                  paddingInlineStart: {xs: 'space020', lg: 'space030'},
                 }}
                 href={`${GITHUB_URL}/${REPO}/releases`}
                 target="_blank"
+                external
               >
-                <IconFilledGitHub /> View all previous releases
-              </Button>
+                View all previous releases
+              </LinkStandalone>
             </Block>
           </ContentPrimary>
+        </ContentSection>
+        <ContentSection id="release-cadence" toc="Release cadence">
+          <ContentPrimary
+            headline="Release cadence"
+            description="We typically release patch and minor releases fortnightly and major releases every 3-6 months, though we may release more frequently as needed. As the project has matured the frequency of major releases (breaking changes) has slowed."
+          />
+          <ContentSecondary
+            headline="Support policy"
+            description="The NewsKit team will actively support the latest major release."
+            showSeparator
+          />
         </ContentSection>
       </ComponentPageCell>
     </AboutPageTemplate>

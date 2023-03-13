@@ -54,9 +54,9 @@ Object {
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
-    "blue080": "#14328D",
-    "blue090": "#0C285F",
-    "blue100": "#071E3C",
+    "blue080": "#12387A",
+    "blue090": "#03264D",
+    "blue100": "#060F2C",
     "darkBlue010": "#F0F1F3",
     "darkBlue020": "#DEE2E5",
     "darkBlue030": "#C0C7CC",
@@ -76,9 +76,9 @@ Object {
     "green050": "#41A05B",
     "green060": "#007B22",
     "green070": "#00601A",
-    "green080": "#004914",
+    "green080": "#004514",
     "green090": "#002D0D",
-    "green100": "#001D08",
+    "green100": "#001506",
     "illustrationAnatomyBorder010": "{{colors.blue080}}",
     "illustrationAnatomyBorder020": "{{colors.blue040}}",
     "illustrationAnatomySubtle": "{{colors.blue040}}",
@@ -130,6 +130,7 @@ Object {
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue080}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.darkBlue090}}",
     "interactiveInput020": "{{colors.darkBlue060}}",
     "interactiveInput030": "{{colors.blue090}}",
@@ -217,9 +218,9 @@ Object {
     "red050": "#FB5959",
     "red060": "#D60000",
     "red070": "#A90000",
-    "red080": "#820000",
+    "red080": "#7D0000",
     "red090": "#550000",
-    "red100": "#3A0000",
+    "red100": "#2D0000",
     "socialApple": "#000000",
     "socialFacebook": "#1877F2",
     "socialGithub": "#000000",
@@ -415,12 +416,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -473,12 +476,14 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "width": "100%",
     },
     "tab": Object {
       "small": Object {
-        "spaceInset": "spaceInsetStretch040",
+        "paddingBlock": "space050",
+        "paddingInline": "space040",
       },
     },
     "tabs": Object {
@@ -532,11 +537,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -589,6 +599,7 @@ Object {
   },
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -1095,12 +1106,9 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidInformative": Object {
@@ -1110,22 +1118,16 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidNegative": Object {
@@ -1149,12 +1151,9 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidPositive": Object {
@@ -1433,6 +1432,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -2805,9 +2809,9 @@ Object {
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
-    "blue080": "#14328D",
-    "blue090": "#0C285F",
-    "blue100": "#071E3C",
+    "blue080": "#12387A",
+    "blue090": "#03264D",
+    "blue100": "#060F2C",
     "darkBlue010": "#F0F1F3",
     "darkBlue020": "#DEE2E5",
     "darkBlue030": "#C0C7CC",
@@ -2827,9 +2831,9 @@ Object {
     "green050": "#41A05B",
     "green060": "#007B22",
     "green070": "#00601A",
-    "green080": "#004914",
+    "green080": "#004514",
     "green090": "#002D0D",
-    "green100": "#001D08",
+    "green100": "#001506",
     "illustrationAnatomyBorder010": "{{colors.blue030}}",
     "illustrationAnatomyBorder020": "{{colors.blue070}}",
     "illustrationAnatomySubtle": "{{colors.blue030}}",
@@ -2881,6 +2885,7 @@ Object {
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue020}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.darkBlue010}}",
     "interactiveInput020": "{{colors.darkBlue050}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -2968,9 +2973,9 @@ Object {
     "red050": "#FB5959",
     "red060": "#D60000",
     "red070": "#A90000",
-    "red080": "#820000",
+    "red080": "#7D0000",
     "red090": "#550000",
-    "red100": "#3A0000",
+    "red100": "#2D0000",
     "socialApple": "#000000",
     "socialFacebook": "#1877F2",
     "socialGithub": "#000000",
@@ -3166,12 +3171,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -3224,12 +3231,14 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "width": "100%",
     },
     "tab": Object {
       "small": Object {
-        "spaceInset": "spaceInsetStretch040",
+        "paddingBlock": "space050",
+        "paddingInline": "space040",
       },
     },
     "tabs": Object {
@@ -3283,11 +3292,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -3337,6 +3351,7 @@ Object {
   "name": "docs-accessibility-light",
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -3355,8 +3370,8 @@ Object {
     "opacity080": "0.8",
     "opacity090": "0.9",
     "opacity100": "1",
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)",
     "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
@@ -3843,12 +3858,9 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidInformative": Object {
@@ -3858,22 +3870,16 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidNegative": Object {
@@ -3897,12 +3903,9 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidPositive": Object {
@@ -4181,6 +4184,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -5553,9 +5561,9 @@ Object {
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
-    "blue080": "#14328D",
-    "blue090": "#0C285F",
-    "blue100": "#071E3C",
+    "blue080": "#12387A",
+    "blue090": "#03264D",
+    "blue100": "#060F2C",
     "darkBlue010": "#F0F1F3",
     "darkBlue020": "#DEE2E5",
     "darkBlue030": "#C0C7CC",
@@ -5575,9 +5583,9 @@ Object {
     "green050": "#41A05B",
     "green060": "#007B22",
     "green070": "#00601A",
-    "green080": "#004914",
+    "green080": "#004514",
     "green090": "#002D0D",
-    "green100": "#001D08",
+    "green100": "#001506",
     "illustrationAnatomyBorder010": "{{colors.blue080}}",
     "illustrationAnatomyBorder020": "{{colors.blue040}}",
     "illustrationAnatomySubtle": "{{colors.blue040}}",
@@ -5629,6 +5637,7 @@ Object {
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue080}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.darkBlue090}}",
     "interactiveInput020": "{{colors.darkBlue060}}",
     "interactiveInput030": "{{colors.blue090}}",
@@ -5716,9 +5725,9 @@ Object {
     "red050": "#FB5959",
     "red060": "#D60000",
     "red070": "#A90000",
-    "red080": "#820000",
+    "red080": "#7D0000",
     "red090": "#550000",
-    "red100": "#3A0000",
+    "red100": "#2D0000",
     "socialApple": "#000000",
     "socialFacebook": "#1877F2",
     "socialGithub": "#000000",
@@ -5914,12 +5923,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -5972,12 +5983,14 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "width": "100%",
     },
     "tab": Object {
       "small": Object {
-        "spaceInset": "spaceInsetStretch040",
+        "paddingBlock": "space050",
+        "paddingInline": "space040",
       },
     },
     "tabs": Object {
@@ -6031,11 +6044,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -6088,6 +6106,7 @@ Object {
   },
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -6594,12 +6613,9 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidInformative": Object {
@@ -6609,22 +6625,16 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidNegative": Object {
@@ -6648,12 +6658,9 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidPositive": Object {
@@ -6932,6 +6939,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -8304,9 +8316,9 @@ Object {
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
-    "blue080": "#14328D",
-    "blue090": "#0C285F",
-    "blue100": "#071E3C",
+    "blue080": "#12387A",
+    "blue090": "#03264D",
+    "blue100": "#060F2C",
     "darkBlue010": "#F0F1F3",
     "darkBlue020": "#DEE2E5",
     "darkBlue030": "#C0C7CC",
@@ -8326,9 +8338,9 @@ Object {
     "green050": "#41A05B",
     "green060": "#007B22",
     "green070": "#00601A",
-    "green080": "#004914",
+    "green080": "#004514",
     "green090": "#002D0D",
-    "green100": "#001D08",
+    "green100": "#001506",
     "illustrationAnatomyBorder010": "{{colors.blue030}}",
     "illustrationAnatomyBorder020": "{{colors.blue070}}",
     "illustrationAnatomySubtle": "{{colors.blue030}}",
@@ -8380,6 +8392,7 @@ Object {
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue020}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.darkBlue010}}",
     "interactiveInput020": "{{colors.darkBlue050}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -8467,9 +8480,9 @@ Object {
     "red050": "#FB5959",
     "red060": "#D60000",
     "red070": "#A90000",
-    "red080": "#820000",
+    "red080": "#7D0000",
     "red090": "#550000",
-    "red100": "#3A0000",
+    "red100": "#2D0000",
     "socialApple": "#000000",
     "socialFacebook": "#1877F2",
     "socialGithub": "#000000",
@@ -8665,12 +8678,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -8723,12 +8738,14 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "width": "100%",
     },
     "tab": Object {
       "small": Object {
-        "spaceInset": "spaceInsetStretch040",
+        "paddingBlock": "space050",
+        "paddingInline": "space040",
       },
     },
     "tabs": Object {
@@ -8782,11 +8799,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -8836,6 +8858,7 @@ Object {
   "name": "docs-theme-light",
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -8854,8 +8877,8 @@ Object {
     "opacity080": "0.8",
     "opacity090": "0.9",
     "opacity100": "1",
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)",
     "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
@@ -9342,12 +9365,9 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidInformative": Object {
@@ -9357,22 +9377,16 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidNegative": Object {
@@ -9396,12 +9410,9 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidPositive": Object {
@@ -9680,6 +9691,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -11052,9 +11068,9 @@ Object {
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
-    "blue080": "#14328D",
-    "blue090": "#0C285F",
-    "blue100": "#071E3C",
+    "blue080": "#12387A",
+    "blue090": "#03264D",
+    "blue100": "#060F2C",
     "darkBlue010": "#F0F1F3",
     "darkBlue020": "#DEE2E5",
     "darkBlue030": "#C0C7CC",
@@ -11074,9 +11090,9 @@ Object {
     "green050": "#41A05B",
     "green060": "#007B22",
     "green070": "#00601A",
-    "green080": "#004914",
+    "green080": "#004514",
     "green090": "#002D0D",
-    "green100": "#001D08",
+    "green100": "#001506",
     "illustrationAnatomyBorder010": "{{colors.purple080}}",
     "illustrationAnatomyBorder020": "{{colors.purple040}}",
     "illustrationAnatomySubtle": "{{colors.purple040}}",
@@ -11128,6 +11144,7 @@ Object {
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue080}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.darkBlue090}}",
     "interactiveInput020": "{{colors.darkBlue060}}",
     "interactiveInput030": "{{colors.blue090}}",
@@ -11215,9 +11232,9 @@ Object {
     "red050": "#FB5959",
     "red060": "#D60000",
     "red070": "#A90000",
-    "red080": "#820000",
+    "red080": "#7D0000",
     "red090": "#550000",
-    "red100": "#3A0000",
+    "red100": "#2D0000",
     "socialApple": "#000000",
     "socialFacebook": "#1877F2",
     "socialGithub": "#000000",
@@ -11413,12 +11430,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -11471,12 +11490,14 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "width": "100%",
     },
     "tab": Object {
       "small": Object {
-        "spaceInset": "spaceInsetStretch040",
+        "paddingBlock": "space050",
+        "paddingInline": "space040",
       },
     },
     "tabs": Object {
@@ -11530,11 +11551,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -11587,6 +11613,7 @@ Object {
   },
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -12093,12 +12120,9 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidInformative": Object {
@@ -12108,22 +12132,16 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidNegative": Object {
@@ -12147,12 +12165,9 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidPositive": Object {
@@ -12431,6 +12446,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -13803,9 +13823,9 @@ Object {
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
-    "blue080": "#14328D",
-    "blue090": "#0C285F",
-    "blue100": "#071E3C",
+    "blue080": "#12387A",
+    "blue090": "#03264D",
+    "blue100": "#060F2C",
     "darkBlue010": "#F0F1F3",
     "darkBlue020": "#DEE2E5",
     "darkBlue030": "#C0C7CC",
@@ -13825,9 +13845,9 @@ Object {
     "green050": "#41A05B",
     "green060": "#007B22",
     "green070": "#00601A",
-    "green080": "#004914",
+    "green080": "#004514",
     "green090": "#002D0D",
-    "green100": "#001D08",
+    "green100": "#001506",
     "illustrationAnatomyBorder010": "{{colors.purple030}}",
     "illustrationAnatomyBorder020": "{{colors.purple070}}",
     "illustrationAnatomySubtle": "{{colors.purple030}}",
@@ -13879,6 +13899,7 @@ Object {
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue020}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.darkBlue010}}",
     "interactiveInput020": "{{colors.darkBlue050}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -13966,9 +13987,9 @@ Object {
     "red050": "#FB5959",
     "red060": "#D60000",
     "red070": "#A90000",
-    "red080": "#820000",
+    "red080": "#7D0000",
     "red090": "#550000",
-    "red100": "#3A0000",
+    "red100": "#2D0000",
     "socialApple": "#000000",
     "socialFacebook": "#1877F2",
     "socialGithub": "#000000",
@@ -14164,12 +14185,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -14222,12 +14245,14 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "width": "100%",
     },
     "tab": Object {
       "small": Object {
-        "spaceInset": "spaceInsetStretch040",
+        "paddingBlock": "space050",
+        "paddingInline": "space040",
       },
     },
     "tabs": Object {
@@ -14281,11 +14306,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -14335,6 +14365,7 @@ Object {
   "name": "docs-foundations-light",
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -14353,8 +14384,8 @@ Object {
     "opacity080": "0.8",
     "opacity090": "0.9",
     "opacity100": "1",
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)",
     "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
@@ -14841,12 +14872,9 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidInformative": Object {
@@ -14856,22 +14884,16 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidNegative": Object {
@@ -14895,12 +14917,9 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidPositive": Object {
@@ -15179,6 +15198,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -16551,9 +16575,9 @@ Object {
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
-    "blue080": "#14328D",
-    "blue090": "#0C285F",
-    "blue100": "#071E3C",
+    "blue080": "#12387A",
+    "blue090": "#03264D",
+    "blue100": "#060F2C",
     "darkBlue010": "#F0F1F3",
     "darkBlue020": "#DEE2E5",
     "darkBlue030": "#C0C7CC",
@@ -16573,9 +16597,9 @@ Object {
     "green050": "#41A05B",
     "green060": "#007B22",
     "green070": "#00601A",
-    "green080": "#004914",
+    "green080": "#004514",
     "green090": "#002D0D",
-    "green100": "#001D08",
+    "green100": "#001506",
     "illustrationAnatomyBorder010": "{{colors.teal080}}",
     "illustrationAnatomyBorder020": "{{colors.teal040}}",
     "illustrationAnatomySubtle": "{{colors.teal040}}",
@@ -16627,6 +16651,7 @@ Object {
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue080}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.darkBlue090}}",
     "interactiveInput020": "{{colors.darkBlue060}}",
     "interactiveInput030": "{{colors.blue090}}",
@@ -16714,9 +16739,9 @@ Object {
     "red050": "#FB5959",
     "red060": "#D60000",
     "red070": "#A90000",
-    "red080": "#820000",
+    "red080": "#7D0000",
     "red090": "#550000",
-    "red100": "#3A0000",
+    "red100": "#2D0000",
     "socialApple": "#000000",
     "socialFacebook": "#1877F2",
     "socialGithub": "#000000",
@@ -16912,12 +16937,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -16970,12 +16997,14 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "width": "100%",
     },
     "tab": Object {
       "small": Object {
-        "spaceInset": "spaceInsetStretch040",
+        "paddingBlock": "space050",
+        "paddingInline": "space040",
       },
     },
     "tabs": Object {
@@ -17029,11 +17058,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -17086,6 +17120,7 @@ Object {
   },
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -17592,12 +17627,9 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidInformative": Object {
@@ -17607,22 +17639,16 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidNegative": Object {
@@ -17646,12 +17672,9 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidPositive": Object {
@@ -17930,6 +17953,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {
@@ -19302,9 +19330,9 @@ Object {
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
-    "blue080": "#14328D",
-    "blue090": "#0C285F",
-    "blue100": "#071E3C",
+    "blue080": "#12387A",
+    "blue090": "#03264D",
+    "blue100": "#060F2C",
     "darkBlue010": "#F0F1F3",
     "darkBlue020": "#DEE2E5",
     "darkBlue030": "#C0C7CC",
@@ -19324,9 +19352,9 @@ Object {
     "green050": "#41A05B",
     "green060": "#007B22",
     "green070": "#00601A",
-    "green080": "#004914",
+    "green080": "#004514",
     "green090": "#002D0D",
-    "green100": "#001D08",
+    "green100": "#001506",
     "illustrationAnatomyBorder010": "{{colors.teal030}}",
     "illustrationAnatomyBorder020": "{{colors.teal070}}",
     "illustrationAnatomySubtle": "{{colors.teal030}}",
@@ -19378,6 +19406,7 @@ Object {
     "inkWhiteSubtle": "{{colors.whiteTint080}}",
     "interactiveDisabled010": "{{colors.darkBlue020}}",
     "interactiveFocus010": "{{colors.focus010}}",
+    "interactiveFocus020": "{{colors.white}}",
     "interactiveInput010": "{{colors.darkBlue010}}",
     "interactiveInput020": "{{colors.darkBlue050}}",
     "interactiveInput030": "{{colors.blue010}}",
@@ -19465,9 +19494,9 @@ Object {
     "red050": "#FB5959",
     "red060": "#D60000",
     "red070": "#A90000",
-    "red080": "#820000",
+    "red080": "#7D0000",
     "red090": "#550000",
-    "red100": "#3A0000",
+    "red100": "#2D0000",
     "socialApple": "#000000",
     "socialFacebook": "#1877F2",
     "socialGithub": "#000000",
@@ -19663,12 +19692,14 @@ Object {
     },
     "flag": Object {
       "large": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton030",
       },
       "medium": Object {
-        "spaceInset": "spaceInsetSquish010",
+        "paddingBlock": "space010",
+        "paddingInline": "space020",
         "stylePreset": "flagBrand",
         "typographyPreset": "utilityButton020",
       },
@@ -19721,12 +19752,14 @@ Object {
           "typographyPreset": "utilityMeta020",
         },
       },
-      "spaceInset": "spaceInset040",
+      "paddingBlock": "space040",
+      "paddingInline": "space040",
       "width": "100%",
     },
     "tab": Object {
       "small": Object {
-        "spaceInset": "spaceInsetStretch040",
+        "paddingBlock": "space050",
+        "paddingInline": "space040",
       },
     },
     "tabs": Object {
@@ -19780,11 +19813,16 @@ Object {
       },
     },
     "fontFamily040": Object {
-      "cropConfig": Object {
-        "bottom": 8,
-        "top": 10,
-      },
       "fontFamily": "'DM Mono', courier",
+      "fontMetrics": Object {
+        "fontWeight010": Object {
+          "ascent": 992,
+          "capHeight": 700,
+          "descent": -310,
+          "lineGap": 0,
+          "unitsPerEm": 1000,
+        },
+      },
     },
     "fontLetterSpacing010": "-0.5px",
     "fontLetterSpacing020": "-0.25px",
@@ -19834,6 +19872,7 @@ Object {
   "name": "docs-patterns-light",
   "outlines": Object {
     "outlineColorDefault": "{{colors.interactiveFocus010}}",
+    "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
@@ -19852,8 +19891,8 @@ Object {
     "opacity080": "0.8",
     "opacity090": "0.9",
     "opacity100": "1",
-    "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
-    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)",
+    "overlayGradientBaseHorizontal": "linear-gradient(-90deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)",
+    "overlayGradientBaseVertical": "linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,1.00) 100%)",
     "overlayGradientFromBottom": "linear-gradient(180deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomLeft": "linear-gradient(225deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
     "overlayGradientFromBottomRight": "linear-gradient(135deg, rgba(10,10,10,0.00) 0%, rgba(10,10,10,1.00) 100%)",
@@ -20340,12 +20379,9 @@ Object {
     },
     "flagSolidBreakingChange": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interfaceNegative020}}",
-        "borderColor": "{{colors.interfaceNegative010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceNegative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidInformative": Object {
@@ -20355,22 +20391,16 @@ Object {
     },
     "flagSolidMajor": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface010}}",
-        "borderColor": "{{colors.interfaceNeutral010}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interfaceInformative010}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkInverse}}",
       },
     },
     "flagSolidMinor": Object {
       "base": Object {
         "backgroundColor": "{{colors.interface020}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidNegative": Object {
@@ -20394,12 +20424,9 @@ Object {
     },
     "flagSolidPatch": Object {
       "base": Object {
-        "backgroundColor": "{{colors.interface030}}",
-        "borderColor": "{{colors.interfaceNeutral020}}",
-        "borderRadius": "{{borders.borderRadiusPill}}",
-        "borderStyle": "solid",
-        "borderWidth": "{{borders.borderWidth010}}",
-        "color": "{{colors.inkContrast}}",
+        "backgroundColor": "{{colors.interface020}}",
+        "borderRadius": "{{borders.borderRadiusRounded020}}",
+        "color": "{{colors.inkBase}}",
       },
     },
     "flagSolidPositive": Object {
@@ -20678,6 +20705,11 @@ Object {
         "backgroundPosition": "center left",
         "backgroundSize": "cover",
         "borderRadius": "{{borders.borderRadiusRounded030}}",
+      },
+    },
+    "layerPlaygroundText": Object {
+      "base": Object {
+        "color": "{{colors.neutral090}}",
       },
     },
     "linkFooter": Object {

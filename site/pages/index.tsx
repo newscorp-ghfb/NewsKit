@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {GridLayout} from 'newskit';
+import NextLink from 'next/link';
 import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
@@ -13,8 +14,8 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
-import {getSheets} from '../utils/google-sheet';
-import {formatSheetData} from '../utils/google-sheet/utils';
+import {getSheets, PageCMSRequiredProps} from '../utils/google-sheet';
+import {parseCMSResponse} from '../utils/google-sheet/utils';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -28,19 +29,14 @@ const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   },
 };
 
-interface HeroCardContent {
-  hero_card_title: string;
-  hero_card_description: string;
-  hero_card_link_text: string;
-  hero_card_link: string;
+enum RequiredKeys {
+  hero_card_title = 'hero_card_title',
+  hero_card_description = 'hero_card_description',
+  hero_card_link_text = 'hero_card_link_text',
+  hero_card_link = 'hero_card_link',
 }
-// Content if the CMS fails - default to this
-const heroCardFallbackContent: HeroCardContent = {
-  hero_card_title: `Latest blog`,
-  hero_card_description: `How an audio player component tells the story of NewsKit Design System's changing strategy.`,
-  hero_card_link_text: `Read on Medium`,
-  hero_card_link: `https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67`,
-};
+
+type HeroCardContent = PageCMSRequiredProps<RequiredKeys>;
 
 const Index = ({
   releases,
@@ -106,22 +102,24 @@ const Index = ({
             marginBlockEnd: {xs: 'space080', md: 'space000'},
           }}
         >
-          <FeatureCard
-            title="Contribute"
-            description="Join the community and help grow NewsKit for everyone."
-            stylePrefix="contributeCard"
-            layout="horizontal"
-            overrides={{
-              title: {typographyPreset: 'editorialHeadline060'},
-              description: {typographyPreset: 'editorialSubheadline010'},
-              button: {
-                paddingInline: 'space000',
-                stylePreset: 'linkStandaloneInversePersistent',
-              },
-            }}
-            buttonLabel="Start contributing"
-            buttonHref="/about/contribute"
-          />
+          <NextLink legacyBehavior href="/about/contribute" passHref>
+            <FeatureCard
+              title="Contribute"
+              description="Join the community and help grow NewsKit for everyone."
+              stylePrefix="contributeCard"
+              layout="horizontal"
+              overrides={{
+                title: {typographyPreset: 'editorialHeadline060'},
+                description: {typographyPreset: 'editorialSubheadline010'},
+                button: {
+                  paddingInline: 'space000',
+                  stylePreset: 'linkStandaloneInversePersistent',
+                },
+              }}
+              buttonLabel="Start contributing"
+              buttonHref="/about/contribute"
+            />
+          </NextLink>
         </GridLayout>
         <GridLayout
           overrides={{
@@ -159,6 +157,6 @@ export async function getStaticProps() {
     releases = releasesOrError;
   }
 
-  const content = {...heroCardFallbackContent, ...formatSheetData(data)};
+  const content = parseCMSResponse(data, {required: RequiredKeys});
   return {props: {releases, content}};
 }

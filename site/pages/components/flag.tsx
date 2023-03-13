@@ -14,6 +14,7 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -91,22 +92,6 @@ const FlagComponent = (layoutProps: LayoutProps) => (
               {
                 label: 'Large',
                 value: 'large',
-              },
-            ],
-          },
-          {
-            name: 'Spacing Preset',
-            propName: 'overrides',
-            options: [
-              {
-                label: 'Default',
-                isDefault: true,
-              },
-              {
-                label: 'spaceInsetSquish000',
-                value: {
-                  spaceInset: 'spaceInsetSquish000',
-                },
               },
             ],
           },
@@ -215,34 +200,36 @@ const FlagComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a flag component.',
+      introduction: 'Here’s how and when to use the flag:',
       cards: [
         {
+          title: 'Do use flags to draw attention',
           description:
             'Use flags to draw attention to a new feature, piece of content, or status change that may be of particular interest to a user.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/flag/usage/do-01'),
         },
         {
+          title: "Don't use flags for categorisation",
           description: (
             <>
               Avoid using flags for categorisation other than status. Consider
-              using a <Link href="/components/tag/">tag</Link> instead.
+              using a <Link href="/components/tag/">tag</Link> instead
             </>
           ),
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/flag/usage/dont-01'),
         },
         {
+          title: "Don't make flags interactive",
           description: 'Use flags as a non-interactive status indicator.',
-          kind: UsageKind.DO,
+          kind: UsageKind.DONT,
           media: getIllustrationComponent('components/flag/usage/do-02'),
         },
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <UnorderedList
           markerAlign="start"
@@ -303,21 +290,23 @@ const FlagComponent = (layoutProps: LayoutProps) => (
             },
           ],
           overridesRows: [
-            {
-              attribute: 'spaceInset',
-              type: 'MQ<string>',
-              default: [
-                'sm: spaceInsetSquish010',
-                'md: spaceInsetSquish020',
-                'lg: spaceInsetSquish020',
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingBlock: [
+                'small: space010',
+                'medium: space020',
+                'large: space020',
               ],
-              description: 'Overrides the spaceInset of the flag.',
-            },
+              paddingInline: [
+                'small: space020',
+                'medium: space030',
+                'large: space030',
+              ],
+            }),
             {
               attribute: 'stylePreset',
               type: 'MQ<string>',
               default: 'flagDefault',
-              description: 'Overrides the spaceInset of the flag.',
+              description: 'Overrides the stylePreset of the flag.',
             },
             {
               attribute: 'typographyPreset',

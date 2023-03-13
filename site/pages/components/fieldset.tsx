@@ -25,7 +25,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Fieldset',
       description:
-        'The Fieldset is used to provide contextual information around a group of form controls in a web form.',
+        'Fieldsets provide contextual information around a group of form controls in a web form.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -34,7 +34,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/fieldset/hero',
       },
-      introduction: `The Fieldset is used to provide contextual information around a group of form controls in a web form.`,
+      introduction: `Fieldsets provide contextual information around a group of form controls in a web form.`,
     }}
     componentDefaultsKey="fieldset"
     meta={{
@@ -45,57 +45,55 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'The Fieldset contains two required elements and one optional element.',
+        'The fieldset contains two required elements and one optional element.',
       media: getIllustrationComponent('components/fieldset/anatomy'),
       rows: [
         {
           name: 'Container',
-          description: 'The Fieldset container',
-          component: ['HTML Fieldset'],
+          description: 'The fieldset container',
+          component: ['HTML fieldset'],
           optional: undefined,
         },
         {
           name: 'Legend',
-          description: 'Provides a caption for the Fieldset',
-          component: 'HTML Legend',
+          description: 'Provides a caption for the fieldset',
+          component: 'HTML legend',
           optional: undefined,
         },
         {
           name: 'Children',
-          description: 'Provides a caption for the Fieldset',
-          component: 'Text Block',
+          description: 'Components passed into the fieldset',
+          component: 'Text block',
           optional: true,
         },
       ],
     }}
     options={{
-      introduction:
-        'The Fieldset has options that can be used to provide an appropriate experience for different use cases.',
+      introduction: 'The fieldset has options for different use cases:',
       cards: [
         {
           title: 'Legend',
           description:
-            'The Fieldset has a caption that gives a title attributed to the elements that appear in the Fieldset, called a Legend.',
+            'Title the group of elements in the fieldset with a caption.',
           media: getIllustrationComponent('components/fieldset/options/legend'),
         },
         {
           title: 'Size',
           description: (
             <>
-              There are three sizes of Fieldset Legend; small, medium, and
-              large.
+              The fieldset legend comes in small, medium and large. The default
+              is medium.
               <InlineMessage
                 icon={infoIcon}
                 role="region"
                 aria-label="Size"
-                title="Note"
                 overrides={{
                   marginBlockStart: 'space050',
                 }}
               >
-                The size of the Legend, and any{' '}
-                <Link href="/components/form/">Form</Link> selection controls,
-                Labels, and Assistive Text can also be customised as required.
+                You can customise the size of the legend, and any{' '}
+                <Link href="/components/form/">form</Link> selection controls,
+                labels and assistive text, as required.
               </InlineMessage>
             </>
           ),
@@ -104,18 +102,18 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     states={{
-      introduction: 'The Fieldset has the following states:',
+      introduction: 'The fieldset has the following states:',
       layout: '2-span',
       cards: [
         {
           title: 'Base',
-          description: 'The Fieldset has a base (default) state.',
+          description: 'The default state.',
           media: getIllustrationComponent('components/fieldset/states/base'),
         },
         {
           title: 'Disabled',
           description:
-            'The Fieldset in a disabled state communicates that the grouped form selection controls exist, but are not available to the user in that scenario. Disabled Fieldsets are often used to maintain layout consistency in a Form, and communicate that a form selection control may become available if another condition has been met. The style of the Legend (colour) also changes to indicate that the form selection controls grouped with the Fieldset are disabled.',
+            'Communicates that the grouped form selection controls exist, but aren’t available in that scenario. Disabled fieldsets maintain layout consistency in a form, and communicate that a form selection control may become available if another condition is met. The style of the legend (colour) changes to indicate that the form selection controls grouped with the fieldset are disabled.',
           media: getIllustrationComponent(
             'components/fieldset/states/disabled',
           ),
@@ -125,37 +123,22 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     commonSection={{
       id: 'formstructure',
       title: 'Form structure',
-      introduction: (
-        <>
-          The below diagram outlines how form controls are grouped together
-          using the Fieldset, and wrapped with the{' '}
-          <Link href="/components/form/">Form</Link> component that applies
-          validation:
-        </>
-      ),
+      introduction:
+        'The diagram below shows how to use the fieldset to group form controls and wrap them with the form to apply validation:',
       media: getIllustrationComponent('components/fieldset/form-structure'),
     }}
     accessibility={{
       introduction: (
         <>
-          The Fieldset has the following accessibility considerations:
+          The fieldset has the following accessibility considerations:
           <Block spaceStack="space100" />
           <ContentText title="Legend" titleAs="span">
-            The legend is a caption that provides a higher-level description of
-            the form controls in a group, which is important, particularly for
-            users with screen readers. Provide details for the function or
-            purpose of the form controls within a Fieldset using the legend.
+            The legend is a caption for a group of form controls. Use it to
+            explain the function or purpose of the form controls.
           </ContentText>
-          <InlineMessage
-            icon={infoIcon}
-            role="region"
-            aria-label="Fieldset"
-            overrides={{
-              marginBlockStart: 'space100',
-            }}
-          >
-            The legend will be repeated to users with screen readers for each
-            form control within a Fieldset.
+          <InlineMessage icon={infoIcon} role="region" aria-label="Fieldset">
+            Legends are important for users with screen readers. Screen readers
+            will repeat the legend for each form control within a fieldset.
           </InlineMessage>
         </>
       ),
@@ -166,7 +149,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
             order: 1,
             element: 'Children',
             role:
-              'Focusses on the children passed to in the Fieldset in the order they appear.',
+              'Focusses on the children passed to in the fieldset in the order they appear.',
           },
         ],
       },
@@ -178,7 +161,7 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
             attribute: 'ariaLabel',
             value: 'string',
             description:
-              'Aria-label attribute is used to define a string that labels the action that will be performed when the user interacts with the elements in the Fieldset. Should be used when a legend prop is not provided.',
+              'Defines a string that labels the action to be performed when the user interacts with the elements in the fieldset. Use when a legend prop isn’t provided',
             userSupplied: true,
           },
         ],
@@ -186,66 +169,48 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
     }}
     seo={{
       title: 'SEO',
-      introduction: (
-        <>
-          If another form of{' '}
-          <Link
-            href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
-            target="_blank"
-          >
-            phrasing content
-          </Link>{' '}
-          is used (eg. an image, or button), ensure that Alt Text is applied if
-          required.
-        </>
-      ),
+      introduction:
+        'If you’re including an image inside the fieldset, ensure alt text is applied.',
     }}
     componentAPI={{
       components: [
         {
           title: 'Fieldset',
           propsSummary:
-            'The Fieldset has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The fieldset has a range of props and overrides to define the experience in different use cases, and a range of predefined elements and attributes that you can override to define their appearance.',
           overridesSummary:
-            'The Fieldset has a range of predefined elements and attributes that can be overridden to define their appearance.',
+            'The fieldset has a range of props and overrides to define the experience in different use cases, and a range of predefined elements and attributes that you can override to define their appearance.',
           propsRows: [
             {
               name: 'legend',
               type: 'React.ReactNode',
               default: 'heading (text)',
-              description:
-                'Defines the Legend (caption displayed at the top of the Fieldset).',
+              description: 'Defines the legend',
             },
             {
               name: 'children',
               type: 'React.ReactNode',
               description:
-                'If provided, the form selection controls are passed as the children of the Fieldset component',
+                'If provided, passes the form selection controls as the children of the fieldset',
             },
             {
               name: 'size',
               type: ['small', 'medium', 'large'],
-              description: 'Defines the size of the Fieldset Legend.',
+              description: 'Defines the size of the fieldset Legend.',
             },
             {
               name: 'disabled',
               type: 'state',
               default: 'false',
-              description: 'If true, renders the Fieldset in a disabled state.',
+              description: 'If true, renders the fieldset in a disabled state.',
             },
           ],
           overridesRows: [
             {
-              attribute: 'spaceInset',
-              type: 'MQ<string>',
-              description:
-                'If provided, this overrides the inset space (padding) applied to the Fieldset.',
-            },
-            {
               attribute: 'stylePreset',
               type: 'MQ<string>',
               description:
-                'If provided, overrides the stylePreset of the Fieldset.',
+                'If provided, overrides the stylePreset of the fieldset',
             },
             {
               attribute: 'legend.typographyPreset',
@@ -256,21 +221,21 @@ const FieldsetComponent = (layoutProps: LayoutProps) => (
                 'Large = utilityLabel030',
               ],
               description:
-                'If provided, overrides the typographyPreset of the Legend.',
+                'If provided, overrides the typographyPreset of the legend',
             },
             {
               attribute: 'legend.stylePreset',
               type: 'MQ<string>',
               default: ['base = inkContrast', 'disabled = inkNonEssential'],
               description:
-                'If provided, overrides the stylePreset of the Legend.',
+                'If provided, overrides the stylePreset of the legend',
             },
             {
               attribute: 'legend.spaceStack',
               type: 'MQ<string>',
               default: ["spaceStack: 'space030'"],
               description:
-                'If provided, this overrides the stack space (margin) applied to the Legend.',
+                'If provided, overrides the stack space (margin) applied to the legend',
             },
             ...(commonLogicalProps() as OverridesRowsProps[]),
           ],

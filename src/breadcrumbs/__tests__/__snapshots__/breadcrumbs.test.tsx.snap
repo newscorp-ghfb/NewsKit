@@ -45,11 +45,11 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -88,7 +88,7 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -141,6 +141,7 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -224,11 +225,11 @@ exports[`BreadcrumbItem renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -265,7 +266,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -299,7 +300,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -328,6 +329,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -399,11 +401,11 @@ exports[`BreadcrumbItem renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: auto;
   min-width: 10px;
   min-height: 11px;
-  padding-inline: 0;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -465,6 +467,7 @@ exports[`BreadcrumbItem renders with overrides 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -536,11 +539,11 @@ exports[`Breadcrumbs renders in large size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   width: auto;
   min-width: 120px;
   min-height: 64px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -577,7 +580,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -611,7 +614,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -646,7 +649,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -688,6 +691,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
@@ -832,11 +836,11 @@ exports[`Breadcrumbs renders in medium size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -873,7 +877,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -907,7 +911,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -942,7 +946,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -984,6 +988,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
@@ -1128,11 +1133,11 @@ exports[`Breadcrumbs renders in small size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   width: auto;
   min-width: 64px;
   min-height: 32px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1169,7 +1174,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1203,7 +1208,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1238,7 +1243,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1280,6 +1285,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
@@ -1424,11 +1430,11 @@ exports[`Breadcrumbs renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1465,7 +1471,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1499,7 +1505,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1534,7 +1540,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1576,6 +1582,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -1724,11 +1731,11 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1765,7 +1772,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1799,7 +1806,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1834,7 +1841,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1876,6 +1883,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2019,11 +2027,11 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2060,7 +2068,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2094,7 +2102,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2171,6 +2179,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2314,11 +2323,11 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2355,7 +2364,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2389,7 +2398,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2422,6 +2431,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2543,11 +2553,11 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
   padding-inline: 0;
+  padding-block: 0;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2584,7 +2594,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2618,7 +2628,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -2653,7 +2663,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
   color: #6A6A6A;
   vertical-align: unset;
   display: inline-block;
-  padding-inline: 8px;
+  margin-inline: 8px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2695,6 +2705,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >

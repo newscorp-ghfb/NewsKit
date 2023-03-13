@@ -44,6 +44,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       eventContext = {},
       eventOriginator = 'select',
       onOpenChange,
+      // force select in controlled mode
+      controlled = false,
+      labelId,
       ...restProps
     } = props;
 
@@ -122,9 +125,28 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
     /* eslint-disable @typescript-eslint/no-explicit-any */
     // istanbul ignore next
-    const itemToString = (item: any) =>
-      item?.props?.['aria-label'] || item?.props?.value;
+    const itemToString = (item: any) => {
+      if (item?.props?.['aria-label']) {
+        return item?.props?.['aria-label'];
+      }
+      if (typeof item?.props?.children === 'string') {
+        return item?.props?.children;
+      }
+      return item?.props?.value;
+    };
     /* eslint-enable @typescript-eslint/no-explicit-any */
+
+    const getSelectedItem = () => {
+      if (programmaticallySelectedItem) {
+        return {selectedItem: programmaticallySelectedItem};
+      }
+
+      if (controlled) {
+        return {selectedItem: programmaticallySelectedItem || null};
+      }
+
+      return {};
+    };
 
     const {
       isOpen,
@@ -158,9 +180,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
 
         return changes;
       },
-      ...(programmaticallySelectedItem
-        ? {selectedItem: programmaticallySelectedItem}
-        : {}),
+      ...getSelectedItem(),
     });
 
     const {children: optionsAsChildren, scrollToIndex} = useVirtualizedList({
@@ -224,7 +244,10 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const {
       ref: downshiftMenuPropsRef,
       ...downshiftMenuPropsExceptRef
-    } = getMenuProps({ref: composeRefs(refs.floating, panelRef)});
+    } = getMenuProps({
+      ref: composeRefs(refs.floating, panelRef),
+      'aria-labelledby': labelId,
+    });
 
     // eslint-disable-next-line consistent-return
     React.useLayoutEffect(() => {

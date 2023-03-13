@@ -1,21 +1,22 @@
 import {StylePreset} from '../theme/types';
 import {defaultFocusVisible} from '../utils/default-focus-visible';
+import {inverseFocusVisible} from '../utils/inverse-focus-visible';
 
 export default {
   linkStandalone: {
     base: {
-      color: '{{colors.interactivePrimary030}}',
-      iconColor: '{{colors.interactivePrimary030}}',
+      color: '{{colors.interactiveLink010}}',
+      iconColor: '{{colors.interactiveLink010}}',
       textDecoration: 'none',
     },
     hover: {
-      color: '{{colors.interactivePrimary040}}',
-      iconColor: '{{colors.interactivePrimary040}}',
+      color: '{{colors.interactiveLink020}}',
+      iconColor: '{{colors.interactiveLink020}}',
       textDecoration: 'underline',
     },
     active: {
-      color: '{{colors.interactivePrimary050}}',
-      iconColor: '{{colors.interactivePrimary050}}',
+      color: '{{colors.interactiveLink030}}',
+      iconColor: '{{colors.interactiveLink030}}',
       textDecoration: 'underline',
     },
     'focus-visible': defaultFocusVisible,
@@ -36,23 +37,23 @@ export default {
       iconColor: '{{colors.interactiveInverse030}}',
       textDecoration: 'underline',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 
   linkInline: {
     base: {
-      color: '{{colors.interactivePrimary030}}',
-      iconColor: '{{colors.interactivePrimary030}}',
+      color: '{{colors.interactiveLink010}}',
+      iconColor: '{{colors.interactiveLink010}}',
       textDecoration: 'underline',
     },
     hover: {
-      color: '{{colors.interactivePrimary040}}',
-      iconColor: '{{colors.interactivePrimary040}}',
+      color: '{{colors.interactiveLink020}}',
+      iconColor: '{{colors.interactiveLink020}}',
       textDecoration: 'underline',
     },
     active: {
-      color: '{{colors.interactivePrimary050}}',
-      iconColor: '{{colors.interactivePrimary050}}',
+      color: '{{colors.interactiveLink030}}',
+      iconColor: '{{colors.interactiveLink030}}',
       textDecoration: 'underline',
     },
     visited: {
@@ -92,6 +93,6 @@ export default {
       color: '{{colors.interactiveInverse040}}',
       iconColor: '{{colors.interactiveInverse040}}',
     },
-    'focus-visible': defaultFocusVisible,
+    'focus-visible': inverseFocusVisible,
   },
 } as Record<string, StylePreset>;

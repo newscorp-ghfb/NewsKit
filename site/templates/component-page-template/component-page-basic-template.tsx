@@ -4,6 +4,7 @@ import Layout from '../../components/layout';
 import {PageTemplate} from '../page-template';
 import {OnwardJourneySectionProps} from '../template-sections';
 import {ComponentPageTemplateProps} from './types';
+import {GenericComponent} from '../../components/playground/types';
 
 const defaultFeatureCard: OnwardJourneySectionProps = {
   title: 'Need Help?',
@@ -16,15 +17,22 @@ const defaultFeatureCard: OnwardJourneySectionProps = {
 
 // Please only use ComponentPageBasicTemplate if there are bespoke/custom sections on your documentation page.
 // ComponentPageTemplate is the standard template to be used if there are no custom sections.
-export const ComponentPageBasicTemplate: React.FC<ComponentPageTemplateProps> = ({
+export const ComponentPageBasicTemplate = <T extends GenericComponent>({
   children,
   layoutProps,
   featureCard,
+  headTags,
   ...rest
-}: ComponentPageTemplateProps) => (
+}: ComponentPageTemplateProps<T>) => (
   <Layout {...layoutProps} newPage>
     <PageTemplate
       {...rest}
+      headTags={{
+        imageUrl: 'social/components.png',
+        alt: 'components',
+        title: headTags.title,
+        description: headTags.description,
+      }}
       featureCard={
         {
           ...defaultFeatureCard,

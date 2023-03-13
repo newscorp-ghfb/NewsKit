@@ -2,86 +2,87 @@
 
 exports[`Meta renders with mandatory props 1`] = `
 <DocumentFragment>
-  @media screen and (max-width: 767px) {
   .emotion-0 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-1 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-1 {
-    display: block;
-  }
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 24px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    grid-template-columns: 1fr;
+  }
 }
 
-.emotion-4 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    grid-template-areas: "intro" "divider" "buttons" "dividerEnd";
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    grid-template-areas: "intro" "buttons";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-areas: "intro buttons" "divider divider";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-block-end: 32px;
+  }
+}
+
+.emotion-1 {
+  grid-area: intro;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-column-gap: 32px;
+  column-gap: 32px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-2 {
+    grid-template-columns: 1fr min-content 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    grid-template-columns: min-content min-content min-content;
+  }
+}
+
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -102,7 +103,7 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(-16px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -111,7 +112,7 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(16px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -120,30 +121,30 @@ exports[`Meta renders with mandatory props 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #09111C;
 }
 
-.emotion-7 svg {
+.emotion-6 svg {
   fill: #09111C;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -162,8 +163,9 @@ exports[`Meta renders with mandatory props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -181,16 +183,17 @@ exports[`Meta renders with mandatory props 1`] = `
   background-color: #017582;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-10 {
-  padding: 4px;
+.emotion-9 {
+  padding-inline: 4px;
+  padding-block: 4px;
 }
 
-.emotion-11 {
+.emotion-10 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -200,35 +203,19 @@ exports[`Meta renders with mandatory props 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-13 {
-    margin-right: 32px;
-  }
-}
-
-.emotion-14 {
+.emotion-11 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -239,7 +226,7 @@ exports[`Meta renders with mandatory props 1`] = `
   height: 100%;
 }
 
-.emotion-16 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -260,7 +247,7 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-17 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -269,7 +256,7 @@ exports[`Meta renders with mandatory props 1`] = `
   margin-bottom: calc(24px/2);
 }
 
-.emotion-21 {
+.emotion-17 {
   margin: 0;
   color: #3358CC;
   font-family: "Poppins",sans-serif;
@@ -280,56 +267,82 @@ exports[`Meta renders with mandatory props 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-21 svg {
+.emotion-17 svg {
   fill: #3358CC;
 }
 
-.emotion-21::before {
+.emotion-17::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-21::after {
+.emotion-17::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
+.emotion-18 {
+  grid-area: divider;
+}
+
+.emotion-19 {
+  border-style: solid;
+  border-color: #DEE2E5;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+.emotion-20 {
+  grid-area: buttons;
+}
+
+.emotion-21 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: end;
+  justify-content: end;
+}
+
+@media screen {
+  .emotion-21 {
+    row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-21 {
+    -webkit-column-gap: 16px;
+    column-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-21 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-21 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-21 {
+    grid-template-columns: repeat(3, fit-content(100%));
+  }
+}
+
 .emotion-22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(-16px/2);
-  margin-right: calc(-16px/2);
-}
-
-.emotion-23 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(16px/2);
-  margin-right: calc(16px/2);
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.emotion-24 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -348,10 +361,11 @@ exports[`Meta renders with mandatory props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   width: 100%;
   min-width: 176px;
   min-height: 44px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -373,35 +387,35 @@ exports[`Meta renders with mandatory props 1`] = `
   cursor: pointer;
 }
 
-.emotion-24 svg {
+.emotion-22 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-24 svg {
+.emotion-22 svg {
   fill: #2E3F54;
 }
 
-.emotion-24:hover:not(:disabled) {
+.emotion-22:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-24:active:not(:disabled) {
+.emotion-22:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-24:disabled {
+.emotion-22:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-24:disabled svg {
+.emotion-22:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-24:focus-visible:not(:disabled) {
+.emotion-22:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -410,14 +424,14 @@ exports[`Meta renders with mandatory props 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-24:focus-visible:not(:disabled) {
+    .emotion-22:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
+  .emotion-22 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -425,21 +439,21 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
+  .emotion-22 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-25 {
+.emotion-23 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-25 {
+  .emotion-23 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -447,14 +461,14 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-25 {
+  .emotion-23 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-26 {
+.emotion-24 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -465,276 +479,20 @@ exports[`Meta renders with mandatory props 1`] = `
   display: inline-block;
 }
 
-.emotion-26::before {
+.emotion-24::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-26::after {
+.emotion-24::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-27 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(16px/2);
-  margin-right: calc(16px/2);
-}
-
-.emotion-29 {
-  margin-bottom: 24px;
-}
-
-.emotion-30 {
-  border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-@media screen {
-  .emotion-31 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-31 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-31 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-31 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-31 {
-    display: none;
-  }
-}
-
-.emotion-33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(24px/2);
-  margin-bottom: calc(24px/2);
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.emotion-54 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-54 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-54 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen {
-  .emotion-60 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-60 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-60 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-60 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-60 {
-    display: none;
-  }
-}
-
-.emotion-63 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-63 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-63 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-.emotion-75 {
-  margin-right: 32px;
-}
-
-.emotion-76 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-76:before,
-.emotion-76:after {
-  content: '';
-  display: block;
-}
-
-.emotion-84 {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.emotion-85 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@media screen {
-  .emotion-85 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-85 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-85 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-85 {
-    margin: -24px -12px 0 -12px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-85 {
-    margin: -24px -12px 0 -12px;
-  }
-}
-
-.emotion-86 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-86 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-86 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
+.emotion-25 {
+  grid-area: dividerEnd;
 }
 
 <div
@@ -752,518 +510,205 @@ exports[`Meta renders with mandatory props 1`] = `
           <div
             class="emotion-4"
           >
-            <div
+            <section
               class="emotion-5"
             >
-              <section
-                class="emotion-6"
+              <h1
+                class="nk-headline-heading emotion-6"
               >
-                <h1
-                  class="nk-headline-heading emotion-7"
-                >
-                  Status
-                </h1>
-              </section>
-            </div>
+                Status
+              </h1>
+            </section>
+          </div>
+          <div
+            class="emotion-4"
+          >
             <div
-              class="emotion-5"
+              class="emotion-8"
+              data-testid="flag"
             >
               <div
                 class="emotion-9"
-                data-testid="flag"
-              >
-                <div
-                  class="emotion-10"
-                >
-                  <p
-                    class="emotion-11"
-                  >
-                    Supported
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-12"
-          >
-            <div
-              class="emotion-13"
-            />
-            <hr
-              aria-hidden="true"
-              class="emotion-14"
-              data-testid="divider"
-            />
-            <div
-              class="emotion-13"
-            />
-          </div>
-          <div
-            class="emotion-16"
-          >
-            <div
-              class="emotion-17"
-            >
-              <section
-                class="emotion-6"
-              >
-                <h1
-                  class="nk-headline-heading emotion-7"
-                >
-                  Introduced
-                </h1>
-              </section>
-            </div>
-            <div
-              class="emotion-17"
-            >
-              <p
-                class="emotion-21"
-              >
-                v0.1
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-22"
-        >
-          <div
-            class="emotion-23"
-          >
-            <a
-              class="emotion-24"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-25"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                  fill-rule="nonzero"
-                />
-              </svg>
-              <span
-                class="emotion-26"
-              >
-                View code
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-27"
-          />
-          <div
-            class="emotion-27"
-          />
-        </div>
-      </div>
-      <div
-        class="emotion-29"
-      />
-      <hr
-        aria-hidden="true"
-        class="emotion-30"
-        data-testid="divider"
-      />
-    </div>
-    <div
-      class="emotion-31"
-    >
-      <div
-        class="emotion-16"
-      >
-        <div
-          class="emotion-33"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-5"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Status
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-9"
-                  data-testid="flag"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <p
-                      class="emotion-11"
-                    >
-                      Supported
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="emotion-12"
-            >
-              <div
-                class="emotion-13"
-              />
-              <hr
-                aria-hidden="true"
-                class="emotion-14"
-                data-testid="divider"
-              />
-              <div
-                class="emotion-13"
-              />
-            </div>
-            <div
-              class="emotion-16"
-            >
-              <div
-                class="emotion-17"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Introduced
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-17"
               >
                 <p
-                  class="emotion-21"
+                  class="emotion-10"
                 >
-                  v0.1
+                  Supported
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <hr
+          aria-hidden="true"
+          class="emotion-11"
+          data-testid="divider"
+        />
         <div
-          class="emotion-33"
+          class="emotion-12"
         >
           <div
-            class="emotion-54"
+            class="emotion-13"
           >
-            <a
-              class="emotion-24"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
+            <section
+              class="emotion-5"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-25"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <h1
+                class="nk-headline-heading emotion-6"
               >
-                <path
-                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                  fill-rule="nonzero"
-                />
-              </svg>
-              <span
-                class="emotion-26"
-              >
-                View code
-              </span>
-            </a>
+                Introduced
+              </h1>
+            </section>
           </div>
           <div
-            class="emotion-54"
-          />
-          <div
-            class="emotion-54"
-          />
+            class="emotion-13"
+          >
+            <p
+              class="emotion-17"
+            >
+              v0.1
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="emotion-60"
+      class="emotion-18"
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </div>
+    <div
+      class="emotion-20"
     >
       <div
-        class="emotion-16"
+        class="emotion-21"
       >
-        <div
-          class="emotion-33"
+        <a
+          class="emotion-22"
+          data-testid="buttonLink"
+          href="https://github.com/newscorp-ghfb/newskit"
+          target="_blank"
         >
-          <div
-            class="emotion-63"
+          <svg
+            aria-hidden="true"
+            class="emotion-23"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-5"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Status
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-9"
-                  data-testid="flag"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <p
-                      class="emotion-11"
-                    >
-                      Supported
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-63"
+            <path
+              d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+              fill-rule="nonzero"
+            />
+          </svg>
+          <span
+            class="emotion-24"
           >
-            <div
-              class="emotion-3"
-            >
-              <hr
-                aria-hidden="true"
-                class="emotion-14"
-                data-testid="divider"
-              />
-              <div
-                class="emotion-75"
-              />
-              <div
-                class="emotion-76"
-              />
-              <div
-                class="emotion-16"
-              >
-                <div
-                  class="emotion-17"
-                >
-                  <section
-                    class="emotion-6"
-                  >
-                    <h1
-                      class="nk-headline-heading emotion-7"
-                    >
-                      Introduced
-                    </h1>
-                  </section>
-                </div>
-                <div
-                  class="emotion-17"
-                >
-                  <p
-                    class="emotion-21"
-                  >
-                    v0.1
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-33"
-        >
-          <div
-            class="emotion-84"
-          >
-            <div
-              class="emotion-85"
-            >
-              <div
-                class="emotion-86"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="emotion-30"
-                  data-testid="divider"
-                />
-                <div
-                  class="emotion-29"
-                />
-                <a
-                  class="emotion-24"
-                  data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/newskit"
-                  target="_blank"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-25"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                  <span
-                    class="emotion-26"
-                  >
-                    View code
-                  </span>
-                </a>
-              </div>
-              <div
-                class="emotion-86"
-              />
-              <div
-                class="emotion-86"
-              >
-                <div
-                  class="emotion-29"
-                />
-                <hr
-                  aria-hidden="true"
-                  class="emotion-30"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+            View code
+          </span>
+        </a>
       </div>
     </div>
+    <div
+      class="emotion-25"
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </div>
   </div>
-  @media screen and (max-width: 767px) {
-  .emotion-0 {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 80px;
-  }
-}
-
-<div
-    class="emotion-0"
-  />
 </DocumentFragment>
 `;
 
 exports[`Meta renders with mandatory props and figma button 1`] = `
 <DocumentFragment>
-  @media screen and (max-width: 767px) {
   .emotion-0 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-1 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-1 {
-    display: block;
-  }
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 24px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    grid-template-columns: 1fr;
+  }
 }
 
-.emotion-4 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    grid-template-areas: "intro" "divider" "buttons" "dividerEnd";
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    grid-template-areas: "intro" "buttons";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-areas: "intro buttons" "divider divider";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-block-end: 32px;
+  }
+}
+
+.emotion-1 {
+  grid-area: intro;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-column-gap: 32px;
+  column-gap: 32px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-2 {
+    grid-template-columns: 1fr min-content 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    grid-template-columns: min-content min-content min-content;
+  }
+}
+
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1284,7 +729,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(-16px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1293,7 +738,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(16px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -1302,30 +747,30 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #09111C;
 }
 
-.emotion-7 svg {
+.emotion-6 svg {
   fill: #09111C;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -1344,8 +789,9 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1363,16 +809,17 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   background-color: #017582;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-10 {
-  padding: 4px;
+.emotion-9 {
+  padding-inline: 4px;
+  padding-block: 4px;
 }
 
-.emotion-11 {
+.emotion-10 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1382,35 +829,19 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-13 {
-    margin-right: 32px;
-  }
-}
-
-.emotion-14 {
+.emotion-11 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -1421,7 +852,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   height: 100%;
 }
 
-.emotion-16 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1442,7 +873,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-17 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1451,7 +882,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin-bottom: calc(24px/2);
 }
 
-.emotion-21 {
+.emotion-17 {
   margin: 0;
   color: #3358CC;
   font-family: "Poppins",sans-serif;
@@ -1462,56 +893,82 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-21 svg {
+.emotion-17 svg {
   fill: #3358CC;
 }
 
-.emotion-21::before {
+.emotion-17::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-21::after {
+.emotion-17::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
+.emotion-18 {
+  grid-area: divider;
+}
+
+.emotion-19 {
+  border-style: solid;
+  border-color: #DEE2E5;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+.emotion-20 {
+  grid-area: buttons;
+}
+
+.emotion-21 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: end;
+  justify-content: end;
+}
+
+@media screen {
+  .emotion-21 {
+    row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-21 {
+    -webkit-column-gap: 16px;
+    column-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-21 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-21 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-21 {
+    grid-template-columns: repeat(3, fit-content(100%));
+  }
+}
+
 .emotion-22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(-16px/2);
-  margin-right: calc(-16px/2);
-}
-
-.emotion-23 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(16px/2);
-  margin-right: calc(16px/2);
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.emotion-24 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -1530,10 +987,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   width: 100%;
   min-width: 176px;
   min-height: 44px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1555,35 +1013,35 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   cursor: pointer;
 }
 
-.emotion-24 svg {
+.emotion-22 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-24 svg {
+.emotion-22 svg {
   fill: #2E3F54;
 }
 
-.emotion-24:hover:not(:disabled) {
+.emotion-22:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-24:active:not(:disabled) {
+.emotion-22:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-24:disabled {
+.emotion-22:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-24:disabled svg {
+.emotion-22:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-24:focus-visible:not(:disabled) {
+.emotion-22:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -1592,14 +1050,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-24:focus-visible:not(:disabled) {
+    .emotion-22:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-24 {
+  .emotion-22 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1607,21 +1065,21 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-24 {
+  .emotion-22 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-25 {
+.emotion-23 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-25 {
+  .emotion-23 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1629,14 +1087,14 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-25 {
+  .emotion-23 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-26 {
+.emotion-24 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1647,276 +1105,20 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline-block;
 }
 
-.emotion-26::before {
+.emotion-24::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-26::after {
+.emotion-24::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-27 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(16px/2);
-  margin-right: calc(16px/2);
-}
-
-.emotion-32 {
-  margin-bottom: 24px;
-}
-
-.emotion-33 {
-  border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-@media screen {
-  .emotion-34 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-34 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-34 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-34 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-34 {
-    display: none;
-  }
-}
-
-.emotion-36 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(24px/2);
-  margin-bottom: calc(24px/2);
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.emotion-57 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-57 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-57 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen {
-  .emotion-66 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-66 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-66 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-66 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-66 {
-    display: none;
-  }
-}
-
-.emotion-69 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-69 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-69 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-.emotion-81 {
-  margin-right: 32px;
-}
-
-.emotion-82 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-82:before,
-.emotion-82:after {
-  content: '';
-  display: block;
-}
-
-.emotion-90 {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.emotion-91 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@media screen {
-  .emotion-91 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-91 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-91 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-91 {
-    margin: -24px -12px 0 -12px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-91 {
-    margin: -24px -12px 0 -12px;
-  }
-}
-
-.emotion-92 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-92 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-92 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
+.emotion-28 {
+  grid-area: dividerEnd;
 }
 
 <div
@@ -1934,640 +1136,245 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
           <div
             class="emotion-4"
           >
-            <div
+            <section
               class="emotion-5"
             >
-              <section
-                class="emotion-6"
+              <h1
+                class="nk-headline-heading emotion-6"
               >
-                <h1
-                  class="nk-headline-heading emotion-7"
-                >
-                  Status
-                </h1>
-              </section>
-            </div>
+                Status
+              </h1>
+            </section>
+          </div>
+          <div
+            class="emotion-4"
+          >
             <div
-              class="emotion-5"
+              class="emotion-8"
+              data-testid="flag"
             >
               <div
                 class="emotion-9"
-                data-testid="flag"
-              >
-                <div
-                  class="emotion-10"
-                >
-                  <p
-                    class="emotion-11"
-                  >
-                    Supported
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-12"
-          >
-            <div
-              class="emotion-13"
-            />
-            <hr
-              aria-hidden="true"
-              class="emotion-14"
-              data-testid="divider"
-            />
-            <div
-              class="emotion-13"
-            />
-          </div>
-          <div
-            class="emotion-16"
-          >
-            <div
-              class="emotion-17"
-            >
-              <section
-                class="emotion-6"
-              >
-                <h1
-                  class="nk-headline-heading emotion-7"
-                >
-                  Introduced
-                </h1>
-              </section>
-            </div>
-            <div
-              class="emotion-17"
-            >
-              <p
-                class="emotion-21"
-              >
-                v0.1
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-22"
-        >
-          <div
-            class="emotion-23"
-          >
-            <a
-              class="emotion-24"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-25"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                  fill-rule="nonzero"
-                />
-              </svg>
-              <span
-                class="emotion-26"
-              >
-                View code
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-27"
-          />
-          <div
-            class="emotion-27"
-          >
-            <a
-              class="emotion-24"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-25"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.3333 12C12.3333 11.0275 12.7196 10.0949 13.4073 9.40729C14.0949 8.71965 15.0275 8.33334 16 8.33334C16.9724 8.33334 17.9051 8.71965 18.5927 9.40729C19.2803 10.0949 19.6666 11.0275 19.6666 12C19.6666 12.9725 19.2803 13.9051 18.5927 14.5927C17.9051 15.2804 16.9724 15.6667 16 15.6667C15.0275 15.6667 14.0949 15.2804 13.4073 14.5927C12.7196 13.9051 12.3333 12.9725 12.3333 12V12Z"
-                  fill="#1ABCFE"
-                />
-                <path
-                  d="M5 19.3333C5 18.3609 5.38631 17.4282 6.07394 16.7406C6.76158 16.053 7.69421 15.6667 8.66667 15.6667H12.3333V19.3333C12.3333 20.3058 11.947 21.2384 11.2594 21.926C10.5718 22.6137 9.63913 23 8.66667 23C7.69421 23 6.76158 22.6137 6.07394 21.926C5.38631 21.2384 5 20.3058 5 19.3333V19.3333Z"
-                  fill="#0ACF83"
-                />
-                <path
-                  d="M12.3333 1V8.33333H16C16.9724 8.33333 17.9051 7.94703 18.5927 7.25939C19.2803 6.57176 19.6666 5.63913 19.6666 4.66667C19.6666 3.69421 19.2803 2.76158 18.5927 2.07394C17.9051 1.38631 16.9724 1 16 1L12.3333 1Z"
-                  fill="#FF7262"
-                />
-                <path
-                  d="M5 4.66667C5 5.63913 5.38631 6.57176 6.07394 7.25939C6.76158 7.94703 7.69421 8.33333 8.66667 8.33333H12.3333V1H8.66667C7.69421 1 6.76158 1.38631 6.07394 2.07394C5.38631 2.76158 5 3.69421 5 4.66667V4.66667Z"
-                  fill="#F24E1E"
-                />
-                <path
-                  d="M5 12C5 12.9725 5.38631 13.9051 6.07394 14.5927C6.76158 15.2804 7.69421 15.6667 8.66667 15.6667H12.3333V8.33334H8.66667C7.69421 8.33334 6.76158 8.71965 6.07394 9.40729C5.38631 10.0949 5 11.0275 5 12V12Z"
-                  fill="#A259FF"
-                />
-              </svg>
-              <span
-                class="emotion-26"
-              >
-                View Design
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="emotion-32"
-      />
-      <hr
-        aria-hidden="true"
-        class="emotion-33"
-        data-testid="divider"
-      />
-    </div>
-    <div
-      class="emotion-34"
-    >
-      <div
-        class="emotion-16"
-      >
-        <div
-          class="emotion-36"
-        >
-          <div
-            class="emotion-3"
-          >
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-5"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Status
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-9"
-                  data-testid="flag"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <p
-                      class="emotion-11"
-                    >
-                      Supported
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="emotion-12"
-            >
-              <div
-                class="emotion-13"
-              />
-              <hr
-                aria-hidden="true"
-                class="emotion-14"
-                data-testid="divider"
-              />
-              <div
-                class="emotion-13"
-              />
-            </div>
-            <div
-              class="emotion-16"
-            >
-              <div
-                class="emotion-17"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Introduced
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-17"
               >
                 <p
-                  class="emotion-21"
+                  class="emotion-10"
                 >
-                  v0.1
+                  Supported
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <hr
+          aria-hidden="true"
+          class="emotion-11"
+          data-testid="divider"
+        />
         <div
-          class="emotion-36"
+          class="emotion-12"
         >
           <div
-            class="emotion-57"
+            class="emotion-13"
           >
-            <a
-              class="emotion-24"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
+            <section
+              class="emotion-5"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-25"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <h1
+                class="nk-headline-heading emotion-6"
               >
-                <path
-                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                  fill-rule="nonzero"
-                />
-              </svg>
-              <span
-                class="emotion-26"
-              >
-                View code
-              </span>
-            </a>
+                Introduced
+              </h1>
+            </section>
           </div>
           <div
-            class="emotion-57"
-          />
-          <div
-            class="emotion-57"
+            class="emotion-13"
           >
-            <a
-              class="emotion-24"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
+            <p
+              class="emotion-17"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-25"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.3333 12C12.3333 11.0275 12.7196 10.0949 13.4073 9.40729C14.0949 8.71965 15.0275 8.33334 16 8.33334C16.9724 8.33334 17.9051 8.71965 18.5927 9.40729C19.2803 10.0949 19.6666 11.0275 19.6666 12C19.6666 12.9725 19.2803 13.9051 18.5927 14.5927C17.9051 15.2804 16.9724 15.6667 16 15.6667C15.0275 15.6667 14.0949 15.2804 13.4073 14.5927C12.7196 13.9051 12.3333 12.9725 12.3333 12V12Z"
-                  fill="#1ABCFE"
-                />
-                <path
-                  d="M5 19.3333C5 18.3609 5.38631 17.4282 6.07394 16.7406C6.76158 16.053 7.69421 15.6667 8.66667 15.6667H12.3333V19.3333C12.3333 20.3058 11.947 21.2384 11.2594 21.926C10.5718 22.6137 9.63913 23 8.66667 23C7.69421 23 6.76158 22.6137 6.07394 21.926C5.38631 21.2384 5 20.3058 5 19.3333V19.3333Z"
-                  fill="#0ACF83"
-                />
-                <path
-                  d="M12.3333 1V8.33333H16C16.9724 8.33333 17.9051 7.94703 18.5927 7.25939C19.2803 6.57176 19.6666 5.63913 19.6666 4.66667C19.6666 3.69421 19.2803 2.76158 18.5927 2.07394C17.9051 1.38631 16.9724 1 16 1L12.3333 1Z"
-                  fill="#FF7262"
-                />
-                <path
-                  d="M5 4.66667C5 5.63913 5.38631 6.57176 6.07394 7.25939C6.76158 7.94703 7.69421 8.33333 8.66667 8.33333H12.3333V1H8.66667C7.69421 1 6.76158 1.38631 6.07394 2.07394C5.38631 2.76158 5 3.69421 5 4.66667V4.66667Z"
-                  fill="#F24E1E"
-                />
-                <path
-                  d="M5 12C5 12.9725 5.38631 13.9051 6.07394 14.5927C6.76158 15.2804 7.69421 15.6667 8.66667 15.6667H12.3333V8.33334H8.66667C7.69421 8.33334 6.76158 8.71965 6.07394 9.40729C5.38631 10.0949 5 11.0275 5 12V12Z"
-                  fill="#A259FF"
-                />
-              </svg>
-              <span
-                class="emotion-26"
-              >
-                View Design
-              </span>
-            </a>
+              v0.1
+            </p>
           </div>
         </div>
       </div>
     </div>
     <div
-      class="emotion-66"
+      class="emotion-18"
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </div>
+    <div
+      class="emotion-20"
     >
       <div
-        class="emotion-16"
+        class="emotion-21"
       >
-        <div
-          class="emotion-36"
+        <a
+          class="emotion-22"
+          data-testid="buttonLink"
+          href="https://github.com/newscorp-ghfb/newskit"
+          target="_blank"
         >
-          <div
-            class="emotion-69"
+          <svg
+            aria-hidden="true"
+            class="emotion-23"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-5"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Status
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-9"
-                  data-testid="flag"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <p
-                      class="emotion-11"
-                    >
-                      Supported
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-69"
+            <path
+              d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+              fill-rule="nonzero"
+            />
+          </svg>
+          <span
+            class="emotion-24"
           >
-            <div
-              class="emotion-3"
-            >
-              <hr
-                aria-hidden="true"
-                class="emotion-14"
-                data-testid="divider"
-              />
-              <div
-                class="emotion-81"
-              />
-              <div
-                class="emotion-82"
-              />
-              <div
-                class="emotion-16"
-              >
-                <div
-                  class="emotion-17"
-                >
-                  <section
-                    class="emotion-6"
-                  >
-                    <h1
-                      class="nk-headline-heading emotion-7"
-                    >
-                      Introduced
-                    </h1>
-                  </section>
-                </div>
-                <div
-                  class="emotion-17"
-                >
-                  <p
-                    class="emotion-21"
-                  >
-                    v0.1
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-36"
+            View code
+          </span>
+        </a>
+        <a
+          class="emotion-22"
+          data-testid="buttonLink"
+          href="https://github.com/newscorp-ghfb/newskit"
+          target="_blank"
         >
-          <div
-            class="emotion-90"
+          <svg
+            aria-hidden="true"
+            class="emotion-23"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
-              class="emotion-91"
-            >
-              <div
-                class="emotion-92"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="emotion-33"
-                  data-testid="divider"
-                />
-                <div
-                  class="emotion-32"
-                />
-                <a
-                  class="emotion-24"
-                  data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/newskit"
-                  target="_blank"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-25"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                  <span
-                    class="emotion-26"
-                  >
-                    View code
-                  </span>
-                </a>
-              </div>
-              <div
-                class="emotion-92"
-              />
-              <div
-                class="emotion-92"
-              >
-                <a
-                  class="emotion-24"
-                  data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/newskit"
-                  target="_blank"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-25"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.3333 12C12.3333 11.0275 12.7196 10.0949 13.4073 9.40729C14.0949 8.71965 15.0275 8.33334 16 8.33334C16.9724 8.33334 17.9051 8.71965 18.5927 9.40729C19.2803 10.0949 19.6666 11.0275 19.6666 12C19.6666 12.9725 19.2803 13.9051 18.5927 14.5927C17.9051 15.2804 16.9724 15.6667 16 15.6667C15.0275 15.6667 14.0949 15.2804 13.4073 14.5927C12.7196 13.9051 12.3333 12.9725 12.3333 12V12Z"
-                      fill="#1ABCFE"
-                    />
-                    <path
-                      d="M5 19.3333C5 18.3609 5.38631 17.4282 6.07394 16.7406C6.76158 16.053 7.69421 15.6667 8.66667 15.6667H12.3333V19.3333C12.3333 20.3058 11.947 21.2384 11.2594 21.926C10.5718 22.6137 9.63913 23 8.66667 23C7.69421 23 6.76158 22.6137 6.07394 21.926C5.38631 21.2384 5 20.3058 5 19.3333V19.3333Z"
-                      fill="#0ACF83"
-                    />
-                    <path
-                      d="M12.3333 1V8.33333H16C16.9724 8.33333 17.9051 7.94703 18.5927 7.25939C19.2803 6.57176 19.6666 5.63913 19.6666 4.66667C19.6666 3.69421 19.2803 2.76158 18.5927 2.07394C17.9051 1.38631 16.9724 1 16 1L12.3333 1Z"
-                      fill="#FF7262"
-                    />
-                    <path
-                      d="M5 4.66667C5 5.63913 5.38631 6.57176 6.07394 7.25939C6.76158 7.94703 7.69421 8.33333 8.66667 8.33333H12.3333V1H8.66667C7.69421 1 6.76158 1.38631 6.07394 2.07394C5.38631 2.76158 5 3.69421 5 4.66667V4.66667Z"
-                      fill="#F24E1E"
-                    />
-                    <path
-                      d="M5 12C5 12.9725 5.38631 13.9051 6.07394 14.5927C6.76158 15.2804 7.69421 15.6667 8.66667 15.6667H12.3333V8.33334H8.66667C7.69421 8.33334 6.76158 8.71965 6.07394 9.40729C5.38631 10.0949 5 11.0275 5 12V12Z"
-                      fill="#A259FF"
-                    />
-                  </svg>
-                  <span
-                    class="emotion-26"
-                  >
-                    View Design
-                  </span>
-                </a>
-                <div
-                  class="emotion-32"
-                />
-                <hr
-                  aria-hidden="true"
-                  class="emotion-33"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+            <path
+              d="M12.3333 12C12.3333 11.0275 12.7196 10.0949 13.4073 9.40729C14.0949 8.71965 15.0275 8.33334 16 8.33334C16.9724 8.33334 17.9051 8.71965 18.5927 9.40729C19.2803 10.0949 19.6666 11.0275 19.6666 12C19.6666 12.9725 19.2803 13.9051 18.5927 14.5927C17.9051 15.2804 16.9724 15.6667 16 15.6667C15.0275 15.6667 14.0949 15.2804 13.4073 14.5927C12.7196 13.9051 12.3333 12.9725 12.3333 12V12Z"
+              fill="#1ABCFE"
+            />
+            <path
+              d="M5 19.3333C5 18.3609 5.38631 17.4282 6.07394 16.7406C6.76158 16.053 7.69421 15.6667 8.66667 15.6667H12.3333V19.3333C12.3333 20.3058 11.947 21.2384 11.2594 21.926C10.5718 22.6137 9.63913 23 8.66667 23C7.69421 23 6.76158 22.6137 6.07394 21.926C5.38631 21.2384 5 20.3058 5 19.3333V19.3333Z"
+              fill="#0ACF83"
+            />
+            <path
+              d="M12.3333 1V8.33333H16C16.9724 8.33333 17.9051 7.94703 18.5927 7.25939C19.2803 6.57176 19.6666 5.63913 19.6666 4.66667C19.6666 3.69421 19.2803 2.76158 18.5927 2.07394C17.9051 1.38631 16.9724 1 16 1L12.3333 1Z"
+              fill="#FF7262"
+            />
+            <path
+              d="M5 4.66667C5 5.63913 5.38631 6.57176 6.07394 7.25939C6.76158 7.94703 7.69421 8.33333 8.66667 8.33333H12.3333V1H8.66667C7.69421 1 6.76158 1.38631 6.07394 2.07394C5.38631 2.76158 5 3.69421 5 4.66667V4.66667Z"
+              fill="#F24E1E"
+            />
+            <path
+              d="M5 12C5 12.9725 5.38631 13.9051 6.07394 14.5927C6.76158 15.2804 7.69421 15.6667 8.66667 15.6667H12.3333V8.33334H8.66667C7.69421 8.33334 6.76158 8.71965 6.07394 9.40729C5.38631 10.0949 5 11.0275 5 12V12Z"
+              fill="#A259FF"
+            />
+          </svg>
+          <span
+            class="emotion-24"
+          >
+            View Design
+          </span>
+        </a>
       </div>
     </div>
+    <div
+      class="emotion-28"
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </div>
   </div>
-  @media screen and (max-width: 767px) {
-  .emotion-0 {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 80px;
-  }
-}
-
-<div
-    class="emotion-0"
-  />
 </DocumentFragment>
 `;
 
 exports[`Meta renders with mandatory props and version above v5 1`] = `
 <DocumentFragment>
-  @media screen and (max-width: 767px) {
   .emotion-0 {
-    margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-1 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-1 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-1 {
-    display: block;
-  }
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 24px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
+@media screen and (max-width: 1023px) {
+  .emotion-0 {
+    grid-template-columns: 1fr;
+  }
 }
 
-.emotion-4 {
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    grid-template-areas: "intro" "divider" "buttons" "dividerEnd";
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-0 {
+    grid-template-areas: "intro" "buttons";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-areas: "intro buttons" "divider divider";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-0 {
+    margin-block-end: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-0 {
+    margin-block-end: 32px;
+  }
+}
+
+.emotion-1 {
+  grid-area: intro;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-column-gap: 32px;
+  column-gap: 32px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-2 {
+    grid-template-columns: 1fr min-content 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-2 {
+    grid-template-columns: min-content min-content min-content;
+  }
+}
+
+.emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2588,7 +1395,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-bottom: calc(-16px/2);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2597,7 +1404,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-bottom: calc(16px/2);
 }
 
-.emotion-6 {
+.emotion-5 {
   font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -2606,30 +1413,30 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-6::before {
+.emotion-5::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-6::after {
+.emotion-5::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-7 {
+.emotion-6 {
   display: inline;
   font: inherit;
   margin: 0;
   color: #09111C;
 }
 
-.emotion-7 svg {
+.emotion-6 svg {
   fill: #09111C;
 }
 
-.emotion-9 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -2648,8 +1455,9 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2667,16 +1475,17 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   background-color: #017582;
 }
 
-.emotion-9 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-10 {
-  padding: 4px;
+.emotion-9 {
+  padding-inline: 4px;
+  padding-block: 4px;
 }
 
-.emotion-11 {
+.emotion-10 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -2686,35 +1495,19 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   padding: 0.5px 0px;
 }
 
-.emotion-11::before {
+.emotion-10::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-11::after {
+.emotion-10::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-13 {
-    margin-right: 32px;
-  }
-}
-
-.emotion-14 {
+.emotion-11 {
   border-style: solid;
   border-color: #DEE2E5;
   border-width: 1px;
@@ -2725,7 +1518,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   height: 100%;
 }
 
-.emotion-16 {
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2746,7 +1539,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-bottom: calc(-24px/2);
 }
 
-.emotion-17 {
+.emotion-13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2755,7 +1548,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-bottom: calc(24px/2);
 }
 
-.emotion-21 {
+.emotion-17 {
   display: inline-block;
   color: #3358CC;
   -webkit-text-decoration: underline;
@@ -2763,7 +1556,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-21 {
+  .emotion-17 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -2771,58 +1564,58 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-21 {
+  .emotion-17 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-21 svg {
+.emotion-17 svg {
   fill: #3358CC;
 }
 
-.emotion-21:hover:not(:disabled) {
+.emotion-17:hover:not(:disabled) {
   color: #254CAC;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-21:hover:not(:disabled) svg {
+.emotion-17:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-21:active:not(:disabled) {
-  color: #14328D;
+.emotion-17:active:not(:disabled) {
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-21:active:not(:disabled) svg {
-  fill: #14328D;
+.emotion-17:active:not(:disabled) svg {
+  fill: #12387A;
 }
 
-.emotion-21:visited:not(:disabled) {
+.emotion-17:visited:not(:disabled) {
   color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-21:visited:not(:disabled) svg {
+.emotion-17:visited:not(:disabled) svg {
   fill: #6454E3;
 }
 
-.emotion-21:visited:hover:not(:disabled) {
+.emotion-17:visited:hover:not(:disabled) {
   color: #6454E3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-21:visited:hover:not(:disabled) svg {
+.emotion-17:visited:hover:not(:disabled) svg {
   fill: #6454E3;
 }
 
-.emotion-21:focus-visible:not(:disabled) {
+.emotion-17:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -2831,13 +1624,13 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-21:focus-visible:not(:disabled) {
+    .emotion-17:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-22 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2858,7 +1651,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-right: calc(-4px/2);
 }
 
-.emotion-23 {
+.emotion-19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2867,7 +1660,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   margin-right: calc(4px/2);
 }
 
-.emotion-24 {
+.emotion-20 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -2877,7 +1670,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   display: block;
 }
 
-.emotion-26 {
+.emotion-22 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -2887,7 +1680,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-26 {
+  .emotion-22 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2895,52 +1688,78 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-26 {
+  .emotion-22 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-26.emotion-26 {
+.emotion-22.emotion-22 {
   width: 16px;
   height: 16px;
 }
 
+.emotion-24 {
+  grid-area: divider;
+}
+
+.emotion-25 {
+  border-style: solid;
+  border-color: #DEE2E5;
+  border-width: 1px;
+  border-width: 0px;
+  margin: 0;
+  border-top-width: 1px;
+  width: 100%;
+}
+
+.emotion-26 {
+  grid-area: buttons;
+}
+
+.emotion-27 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: end;
+  justify-content: end;
+}
+
+@media screen {
+  .emotion-27 {
+    row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emotion-27 {
+    -webkit-column-gap: 16px;
+    column-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emotion-27 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-27 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .emotion-27 {
+    grid-template-columns: repeat(3, fit-content(100%));
+  }
+}
+
 .emotion-28 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(-16px/2);
-  margin-right: calc(-16px/2);
-}
-
-.emotion-29 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(16px/2);
-  margin-right: calc(16px/2);
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.emotion-30 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -2959,10 +1778,11 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   width: 100%;
   min-width: 176px;
   min-height: 44px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2984,35 +1804,35 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   cursor: pointer;
 }
 
-.emotion-30 svg {
+.emotion-28 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-30 svg {
+.emotion-28 svg {
   fill: #2E3F54;
 }
 
-.emotion-30:hover:not(:disabled) {
+.emotion-28:hover:not(:disabled) {
   background-color: #F0F1F3;
   border-color: #15263E;
 }
 
-.emotion-30:active:not(:disabled) {
+.emotion-28:active:not(:disabled) {
   background-color: #DEE2E5;
   border-color: #09111C;
 }
 
-.emotion-30:disabled {
+.emotion-28:disabled {
   border-color: #DEE2E5;
   color: #C0C7CC;
 }
 
-.emotion-30:disabled svg {
+.emotion-28:disabled svg {
   fill: #C0C7CC;
 }
 
-.emotion-30:focus-visible:not(:disabled) {
+.emotion-28:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -3021,14 +1841,14 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-30:focus-visible:not(:disabled) {
+    .emotion-28:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-30 {
+  .emotion-28 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3036,21 +1856,21 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-30 {
+  .emotion-28 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-31 {
+.emotion-29 {
   fill: #2E3F54;
   vertical-align: unset;
   display: inline-block;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-31 {
+  .emotion-29 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3058,14 +1878,14 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-31 {
+  .emotion-29 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-32 {
+.emotion-30 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -3076,276 +1896,20 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   display: inline-block;
 }
 
-.emotion-32::before {
+.emotion-30::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-32::after {
+.emotion-30::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: calc(16px/2);
-  margin-right: calc(16px/2);
-}
-
-.emotion-35 {
-  margin-bottom: 24px;
-}
-
-.emotion-36 {
-  border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 1px;
-  border-width: 0px;
-  margin: 0;
-  border-top-width: 1px;
-  width: 100%;
-}
-
-@media screen {
-  .emotion-37 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-37 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-37 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-37 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-37 {
-    display: none;
-  }
-}
-
-.emotion-39 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: calc(24px/2);
-  margin-bottom: calc(24px/2);
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-}
-
-.emotion-66 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-66 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 33.333333333333336%;
-    -ms-flex-preferred-size: 33.333333333333336%;
-    flex-basis: 33.333333333333336%;
-    max-width: 33.333333333333336%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-66 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-@media screen {
-  .emotion-72 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-72 {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-72 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-72 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-72 {
-    display: none;
-  }
-}
-
-.emotion-75 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-75 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-75 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
-}
-
-.emotion-87 {
-  margin-right: 32px;
-}
-
-.emotion-88 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  margin-top: calc(-8px/2);
-  margin-bottom: calc(-8px/2);
-}
-
-.emotion-88:before,
-.emotion-88:after {
-  content: '';
-  display: block;
-}
-
-.emotion-102 {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.emotion-103 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-@media screen {
-  .emotion-103 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .emotion-103 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-103 {
-    margin: -16px -8px 0 -8px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-103 {
-    margin: -24px -12px 0 -12px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .emotion-103 {
-    margin: -24px -12px 0 -12px;
-  }
-}
-
-.emotion-104 {
-  box-sizing: border-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-}
-
-@media screen {
-  .emotion-104 {
-    padding: 0 8px;
-    margin-top: 16px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .emotion-104 {
-    padding: 0 12px;
-    margin-top: 24px;
-  }
+.emotion-31 {
+  grid-area: dividerEnd;
 }
 
 <div
@@ -3363,543 +1927,155 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
           <div
             class="emotion-4"
           >
-            <div
+            <section
               class="emotion-5"
             >
-              <section
-                class="emotion-6"
+              <h1
+                class="nk-headline-heading emotion-6"
               >
-                <h1
-                  class="nk-headline-heading emotion-7"
-                >
-                  Status
-                </h1>
-              </section>
-            </div>
+                Status
+              </h1>
+            </section>
+          </div>
+          <div
+            class="emotion-4"
+          >
             <div
-              class="emotion-5"
+              class="emotion-8"
+              data-testid="flag"
             >
               <div
                 class="emotion-9"
-                data-testid="flag"
               >
-                <div
+                <p
                   class="emotion-10"
                 >
-                  <p
-                    class="emotion-11"
-                  >
-                    Supported
-                  </p>
-                </div>
+                  Supported
+                </p>
               </div>
             </div>
           </div>
-          <div
-            class="emotion-12"
-          >
-            <div
-              class="emotion-13"
-            />
-            <hr
-              aria-hidden="true"
-              class="emotion-14"
-              data-testid="divider"
-            />
-            <div
-              class="emotion-13"
-            />
-          </div>
-          <div
-            class="emotion-16"
-          >
-            <div
-              class="emotion-17"
-            >
-              <section
-                class="emotion-6"
-              >
-                <h1
-                  class="nk-headline-heading emotion-7"
-                >
-                  Introduced
-                </h1>
-              </section>
-            </div>
-            <div
-              class="emotion-17"
-            >
-              <a
-                class="emotion-21"
-                href="https://github.com/newscorp-ghfb/newskit/releases/tag/v5.0.1"
-                target="_blank"
-              >
-                <span
-                  class="emotion-22"
-                >
-                  <span
-                    class="emotion-23"
-                  >
-                    <span
-                      class="emotion-24"
-                    >
-                      v5.0.1
-                    </span>
-                  </span>
-                  <span
-                    class="emotion-23"
-                  >
-                    <svg
-                      class="emotion-26 emotion-27"
-                      fill="currentColor"
-                      focusable="false"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>
-                        External link
-                      </title>
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                      />
-                    </svg>
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
         </div>
+        <hr
+          aria-hidden="true"
+          class="emotion-11"
+          data-testid="divider"
+        />
         <div
-          class="emotion-28"
+          class="emotion-12"
         >
           <div
-            class="emotion-29"
+            class="emotion-13"
+          >
+            <section
+              class="emotion-5"
+            >
+              <h1
+                class="nk-headline-heading emotion-6"
+              >
+                Introduced
+              </h1>
+            </section>
+          </div>
+          <div
+            class="emotion-13"
           >
             <a
-              class="emotion-30"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
+              class="emotion-17"
+              href="https://github.com/newscorp-ghfb/newskit/releases/tag/v5.0.1"
               target="_blank"
             >
-              <svg
-                aria-hidden="true"
-                class="emotion-31"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                  fill-rule="nonzero"
-                />
-              </svg>
               <span
-                class="emotion-32"
+                class="emotion-18"
               >
-                View code
+                <span
+                  class="emotion-19"
+                >
+                  <span
+                    class="emotion-20"
+                  >
+                    v5.0.1
+                  </span>
+                </span>
+                <span
+                  class="emotion-19"
+                >
+                  <svg
+                    class="emotion-22 emotion-23"
+                    fill="currentColor"
+                    focusable="false"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>
+                      External link
+                    </title>
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                    />
+                  </svg>
+                </span>
               </span>
             </a>
           </div>
-          <div
-            class="emotion-33"
-          />
-          <div
-            class="emotion-33"
-          />
         </div>
       </div>
-      <div
-        class="emotion-35"
-      />
+    </div>
+    <div
+      class="emotion-24"
+    >
       <hr
         aria-hidden="true"
-        class="emotion-36"
+        class="emotion-25"
         data-testid="divider"
       />
     </div>
     <div
-      class="emotion-37"
+      class="emotion-26"
     >
       <div
-        class="emotion-16"
+        class="emotion-27"
       >
-        <div
-          class="emotion-39"
+        <a
+          class="emotion-28"
+          data-testid="buttonLink"
+          href="https://github.com/newscorp-ghfb/newskit"
+          target="_blank"
         >
-          <div
-            class="emotion-3"
+          <svg
+            aria-hidden="true"
+            class="emotion-29"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-5"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Status
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-9"
-                  data-testid="flag"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <p
-                      class="emotion-11"
-                    >
-                      Supported
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="emotion-12"
-            >
-              <div
-                class="emotion-13"
-              />
-              <hr
-                aria-hidden="true"
-                class="emotion-14"
-                data-testid="divider"
-              />
-              <div
-                class="emotion-13"
-              />
-            </div>
-            <div
-              class="emotion-16"
-            >
-              <div
-                class="emotion-17"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Introduced
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-17"
-              >
-                <a
-                  class="emotion-21"
-                  href="https://github.com/newscorp-ghfb/newskit/releases/tag/v5.0.1"
-                  target="_blank"
-                >
-                  <span
-                    class="emotion-22"
-                  >
-                    <span
-                      class="emotion-23"
-                    >
-                      <span
-                        class="emotion-24"
-                      >
-                        v5.0.1
-                      </span>
-                    </span>
-                    <span
-                      class="emotion-23"
-                    >
-                      <svg
-                        class="emotion-26 emotion-27"
-                        fill="currentColor"
-                        focusable="false"
-                        role="img"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <title>
-                          External link
-                        </title>
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-39"
-        >
-          <div
-            class="emotion-66"
+            <path
+              d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
+              fill-rule="nonzero"
+            />
+          </svg>
+          <span
+            class="emotion-30"
           >
-            <a
-              class="emotion-30"
-              data-testid="buttonLink"
-              href="https://github.com/newscorp-ghfb/newskit"
-              target="_blank"
-            >
-              <svg
-                aria-hidden="true"
-                class="emotion-31"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                  fill-rule="nonzero"
-                />
-              </svg>
-              <span
-                class="emotion-32"
-              >
-                View code
-              </span>
-            </a>
-          </div>
-          <div
-            class="emotion-66"
-          />
-          <div
-            class="emotion-66"
-          />
-        </div>
+            View code
+          </span>
+        </a>
       </div>
     </div>
     <div
-      class="emotion-72"
+      class="emotion-31"
     >
-      <div
-        class="emotion-16"
-      >
-        <div
-          class="emotion-39"
-        >
-          <div
-            class="emotion-75"
-          >
-            <div
-              class="emotion-4"
-            >
-              <div
-                class="emotion-5"
-              >
-                <section
-                  class="emotion-6"
-                >
-                  <h1
-                    class="nk-headline-heading emotion-7"
-                  >
-                    Status
-                  </h1>
-                </section>
-              </div>
-              <div
-                class="emotion-5"
-              >
-                <div
-                  class="emotion-9"
-                  data-testid="flag"
-                >
-                  <div
-                    class="emotion-10"
-                  >
-                    <p
-                      class="emotion-11"
-                    >
-                      Supported
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="emotion-75"
-          >
-            <div
-              class="emotion-3"
-            >
-              <hr
-                aria-hidden="true"
-                class="emotion-14"
-                data-testid="divider"
-              />
-              <div
-                class="emotion-87"
-              />
-              <div
-                class="emotion-88"
-              />
-              <div
-                class="emotion-16"
-              >
-                <div
-                  class="emotion-17"
-                >
-                  <section
-                    class="emotion-6"
-                  >
-                    <h1
-                      class="nk-headline-heading emotion-7"
-                    >
-                      Introduced
-                    </h1>
-                  </section>
-                </div>
-                <div
-                  class="emotion-17"
-                >
-                  <a
-                    class="emotion-21"
-                    href="https://github.com/newscorp-ghfb/newskit/releases/tag/v5.0.1"
-                    target="_blank"
-                  >
-                    <span
-                      class="emotion-22"
-                    >
-                      <span
-                        class="emotion-23"
-                      >
-                        <span
-                          class="emotion-24"
-                        >
-                          v5.0.1
-                        </span>
-                      </span>
-                      <span
-                        class="emotion-23"
-                      >
-                        <svg
-                          class="emotion-26 emotion-27"
-                          fill="currentColor"
-                          focusable="false"
-                          role="img"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <title>
-                            External link
-                          </title>
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
-                          />
-                        </svg>
-                      </span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-39"
-        >
-          <div
-            class="emotion-102"
-          >
-            <div
-              class="emotion-103"
-            >
-              <div
-                class="emotion-104"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="emotion-36"
-                  data-testid="divider"
-                />
-                <div
-                  class="emotion-35"
-                />
-                <a
-                  class="emotion-30"
-                  data-testid="buttonLink"
-                  href="https://github.com/newscorp-ghfb/newskit"
-                  target="_blank"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="emotion-31"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.9990792,2 C6.47773105,2 2,6.47565999 2,11.9970521 C2,16.4137976 4.86503576,20.1603908 8.83876117,21.4822847 C9.33908346,21.5743385 9.5214095,21.2656512 9.5214095,21.000536 C9.5214095,20.7636506 9.512815,20.1346157 9.50790386,19.3006075 C6.72635747,19.904481 6.13947635,17.9603029 6.13947635,17.9603029 C5.68458209,16.8053335 5.02894503,16.4978735 5.02894503,16.4978735 C4.12099819,15.878044 5.09770097,15.8903179 5.09770097,15.8903179 C6.10141502,15.9608925 6.62936247,16.9207077 6.62936247,16.9207077 C7.52134811,18.4481885 8.97013414,18.0069436 9.53982627,17.7510338 C9.63068234,17.1054292 9.88913104,16.6647979 10.174591,16.415025 C7.95414224,16.1627974 5.6195095,15.3048551 5.6195095,11.4741861 C5.6195095,10.3830406 6.00933116,9.49011794 6.64900703,8.79173579 C6.54587311,8.53889444 6.20270727,7.52200584 6.74722981,6.14610707 C6.74722981,6.14610707 7.5864207,5.87730972 9.4968538,7.17097368 C10.2943,6.94881697 11.150066,6.8383523 12.0003069,6.83405645 C12.849934,6.8383523 13.7050861,6.94881697 14.5037601,7.17097368 C16.4129654,5.87730972 17.2509285,6.14610707 17.2509285,6.14610707 C17.7966788,7.52200584 17.453513,8.53889444 17.350993,8.79173579 C17.9918966,9.49011794 18.3786488,10.3830406 18.3786488,11.4741861 C18.3786488,15.3146742 16.0403327,16.1597289 13.8131312,16.407047 C14.1716443,16.7157344 14.4914822,17.3257448 14.4914822,18.2585575 C14.4914822,19.5945663 14.4792044,20.6728241 14.4792044,21.000536 C14.4792044,21.2681059 14.6596888,21.5792481 15.1667639,21.481671 C19.1374198,20.1567087 22,16.4125702 22,11.9970521 C22,6.47565999 17.5222689,2 11.9990792,2"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                  <span
-                    class="emotion-32"
-                  >
-                    View code
-                  </span>
-                </a>
-              </div>
-              <div
-                class="emotion-104"
-              />
-              <div
-                class="emotion-104"
-              >
-                <div
-                  class="emotion-35"
-                />
-                <hr
-                  aria-hidden="true"
-                  class="emotion-36"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <hr
+        aria-hidden="true"
+        class="emotion-25"
+        data-testid="divider"
+      />
     </div>
   </div>
-  @media screen and (max-width: 767px) {
-  .emotion-0 {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-0 {
-    margin-bottom: 80px;
-  }
-}
-
-<div
-    class="emotion-0"
-  />
 </DocumentFragment>
 `;

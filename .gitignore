@@ -2,6 +2,7 @@ node_modules
 .env
 .DS_STORE
 .eslintcache
+.env.local
 build
 *.log
 dist
@@ -28,6 +29,10 @@ site/public/static/fonts
 .webpack
 artifacts
 tfplan
+*.tfstate*
+*.hcl
+*.plan
+*.out
 *.todo
 *.history
 *.tgz

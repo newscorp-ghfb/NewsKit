@@ -6,6 +6,11 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
+import {
+  commonLogicalProps,
+  getLogicalPropsTable,
+} from '../../components/component-api/common-logical-props';
+import {OverridesRowsProps} from '../../components/component-api';
 
 const unorderedListOverrides = {
   spaceStack: 'space040',
@@ -182,22 +187,26 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       introduction: 'Here’s how and when to use the accordion:',
       cards: [
         {
+          title: 'Do use for supporting information',
           description: 'Use accordions to provide supporting information.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/accordion/usage/do01'),
         },
         {
+          title: 'Don’t use for important information',
           description: 'Avoid concealing crucial information in an accordion.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/accordion/usage/dont01'),
         },
         {
+          title: 'Do make headlines short and clear',
           description:
             'Give accordions short, meaningful headings that tell users what’s inside the panel. Group together related topics.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/accordion/usage/do02'),
         },
         {
+          title: 'Don’t nest accordions',
           description: 'Avoid nesting accordions within themselves.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/accordion/usage/dont02'),
@@ -313,7 +322,7 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: (
         <UnorderedList
           markerAlign="start"
@@ -474,7 +483,10 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the typographyPreset of the indicator label',
             },
-
+            ...getLogicalPropsTable(undefined, 'header', {
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }),
             {
               attribute: 'panel.stylePreset',
               type: 'MQ<string>',
@@ -482,18 +494,11 @@ const AccordionComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the stylePreset of the accordion panel',
             },
-            {
-              attribute: 'panel.paddingBlock',
-              type: 'MQ<string>',
-              default: 'spaceInset030',
-              description: '',
-            },
-            {
-              attribute: 'panel.paddingInline',
-              type: 'MQ<string>',
-              default: 'spaceInset030',
-              description: '',
-            },
+            ...getLogicalPropsTable(undefined, 'panel', {
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }),
+            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
         {

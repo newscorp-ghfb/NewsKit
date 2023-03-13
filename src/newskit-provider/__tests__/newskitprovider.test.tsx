@@ -10,4 +10,15 @@ describe('NewsKitProvider', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+  it('renders with css variables', () => {
+    const {asFragment} = render(
+      <NewsKitProvider
+        theme={newskitLightTheme}
+        themeOptions={{exposeCssVariables: true}}
+      >
+        app
+      </NewsKitProvider>,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

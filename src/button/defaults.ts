@@ -3,7 +3,8 @@ export default {
     small: {
       typographyPreset: 'utilityButton010',
       stylePreset: 'buttonSolidPrimary',
-      spaceInset: 'spaceInsetSquish020',
+      paddingInline: 'space030',
+      paddingBlock: 'space020',
       minWidth: 'sizing090',
       minHeight: 'sizing060',
       iconSize: 'iconSize010',
@@ -16,7 +17,8 @@ export default {
     medium: {
       typographyPreset: 'utilityButton020',
       stylePreset: 'buttonSolidPrimary',
-      spaceInset: 'spaceInsetSquish030',
+      paddingInline: 'space040',
+      paddingBlock: 'space030',
       minWidth: 'sizing100',
       minHeight: 'sizing080',
       iconSize: 'iconSize020',
@@ -29,7 +31,8 @@ export default {
     large: {
       typographyPreset: 'utilityButton030',
       stylePreset: 'buttonSolidPrimary',
-      spaceInset: 'spaceInsetSquish040',
+      paddingInline: 'space050',
+      paddingBlock: 'space040',
       minWidth: 'sizing110',
       minHeight: 'sizing090',
       iconSize: 'iconSize030',

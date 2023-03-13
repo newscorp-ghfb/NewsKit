@@ -1,21 +1,24 @@
 import {Block} from 'newskit';
 import React from 'react';
 import {Playground} from '../../components/playground';
-import {PlaygroundProps} from '../../components/playground/types';
+import {
+  GenericComponent,
+  PlaygroundProps,
+} from '../../components/playground/types';
 import {ComponentPageCell} from '../../components/layout-cells';
 import {CommonSection} from './common-section';
 
-export interface InteractiveDemoSectionProps {
+export interface InteractiveDemoSectionProps<T extends GenericComponent> {
   introduction: string | React.ReactElement;
-  playground?: PlaygroundProps;
+  playground?: PlaygroundProps<T>;
 }
 
-export const InteractiveDemoSection: React.FC<InteractiveDemoSectionProps> = ({
+export const InteractiveDemoSection = <T extends GenericComponent>({
   introduction,
   playground,
-}) => (
+}: InteractiveDemoSectionProps<T>) => (
   <CommonSection
-    title="Interactive Demo"
+    title="Interactive demo"
     id="interactive-demo"
     introduction={introduction}
   >

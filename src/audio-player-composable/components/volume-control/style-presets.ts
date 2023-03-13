@@ -13,7 +13,7 @@ export default {
       boxShadow: '{{shadows.shadow010}}',
       backgroundColor: '{{colors.interactivePrimary030}}',
       borderStyle: 'solid',
-      borderColor: '{{colors.interactivePrimary010}}',
+      borderColor: '{{colors.interfaceBackground}}',
       borderWidth: '{{borders.borderWidth010}}',
       borderRadius: '{{borders.borderRadiusCircle}}',
       iconColor: '{{colors.inkNonEssential}}',
@@ -31,6 +31,12 @@ export default {
       safariOutlineOffset: '-7px',
     },
   },
+  audioPlayerVolumeControlThumbOld: {
+    __extends: 'audioPlayerVolumeControlThumb',
+    base: {
+      borderColor: '{{colors.interactivePrimary010}}',
+    },
+  },
   audioPlayerVolumeControlTrack: {
     base: {
       backgroundColor: '{{colors.interface030}}',
@@ -39,9 +45,15 @@ export default {
   },
   audioPlayerVolumeControlPopover: {
     base: {
-      boxShadow: '{{shadows.shadow050}}',
+      boxShadow: '{{shadows.shadow060}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      backgroundColor: '{{colors.interfaceBackground}}',
+      backgroundColor: '{{colors.interface010}}',
+    },
+  },
+  audioPlayerVolumeControlPopoverOld: {
+    __extends: '{{stylePresets.audioPlayerVolumeControlPopover}}',
+    base: {
+      boxShadow: '{{shadows.shadow050}}',
     },
   },
 } as Record<string, StylePreset>;

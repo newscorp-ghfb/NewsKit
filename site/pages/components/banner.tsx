@@ -15,8 +15,7 @@ import {UsageKind} from '../../components/usage-card';
 import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
-import {commonLogicalProps} from '../../components/component-api/common-logical-props';
-import {OverridesRowsProps} from '../../components/component-api';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {Link} from '../../components/link';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
@@ -45,28 +44,29 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     headTags={{
       title: 'Banner',
       description:
-        'A Banner communicates essential information without blocking an experience. They are positioned at the top of the screen, so they are noticeable. They require user action to disappear.',
+        'Banners communicate essential information. They’re positioned at the top of the screen to be noticeable and require user action to disappear.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Components',
+      type: 'Feedback & Status',
       name: 'Banner',
       hero: {
         illustration: 'components/banner/banner-illustration',
       },
       introduction:
-        'A Banner communicates essential information without blocking an experience. They are positioned at the top of the screen, so they are noticeable. They require user action to disappear.',
+        'Banners communicate essential information. They’re positioned at the top of the screen to be noticeable and require user action to disappear.',
     }}
     componentDefaultsKey="banner"
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v3.0',
-      codeUrl: 'https://github.com/newscorp-ghfb/newskit',
-      figmaUrl: 'https://github.com/newscorp-ghfb/newskit',
+      codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/banner',
+      figmaUrl:
+        'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2163%3A45665&t=FbJDxZalohOA9JXM-0',
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Banner component, its variations, and configuration options.',
+        'This demo lets you preview the banner component, its variations and configuration options.',
       playground: {
         componentName: 'Banner',
         component: (state: BannerBaseProps) => {
@@ -178,14 +178,14 @@ const BannerComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'A Banner contains two required elements and three optional elements.',
+        'The banner component contains one required element and three optional elements.',
 
       rows: [
         {
           name: 'Icon',
           description: 'Indicates the status or intent.',
           component: ['Icon'],
-          optional: true,
+          optional: undefined,
         },
         {
           name: 'Title',
@@ -195,14 +195,13 @@ const BannerComponent = (layoutProps: LayoutProps) => (
         },
         {
           name: 'Message',
-          description: 'Communicates what is about to happen or has happened.',
+          description: 'Communicates what’s about to happen or has happened.',
           component: ['Text Block', 'Link'],
-          optional: undefined,
+          optional: true,
         },
         {
           name: 'Action(s)',
-          description:
-            'Enables a user to perform a relevant action such as Undo’.',
+          description: 'Lets a user perform a relevant action such as ‘undo’.',
           component: ['Button', 'Icon Button'],
           optional: true,
         },
@@ -213,19 +212,15 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     options={{
-      introduction:
-        'A Banner has the following options to provide an appropriate experience for different scenarios.',
+      introduction: 'The banner has options for different use cases:',
       cards: [
         {
           title: 'Orientation',
           description: (
             <>
-              A Banner can be displayed horizontally or vertically to
-              effectively and appropriately use the space available on a screen.
-              <br />
-              <br />
-              When vertical the content is stacked and the width of the buttons
-              are full-width.
+              Display banners horizontally or vertically to best use the space
+              available on a screen. When vertical, stack content and make
+              buttons full-width.
             </>
           ) as any,
           media: getIllustrationComponent(
@@ -235,7 +230,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Intent',
           description:
-            'A Banner has three intents: informative, notice and negative. Each intent is used to communicate a specific semantic tone of the Banner to the user.',
+            'A banner has three intents: informative, notice and negative. Each communicates a specific tone to the user.',
           media: getIllustrationComponent(
             'components/banner/banner-options-intent-illustration',
           ),
@@ -243,15 +238,14 @@ const BannerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Icon',
           description:
-            'An icon can be displayed in Banner to provide the user with a visual cue and to help those with colour blindness discern the message tone.',
+            'Display an icon as a visual cue and help users with colour blindness discern the message tone.',
           media: getIllustrationComponent(
             'components/banner/banner-options-icon-illustration',
           ),
         },
         {
           title: 'Title',
-          description:
-            'A title can be displayed in the Banner to provide the user with extra context to the Banner message.',
+          description: 'Give the banner a title to provide extra context.',
           media: getIllustrationComponent(
             'components/banner/banner-options-title-illustration',
           ),
@@ -259,15 +253,14 @@ const BannerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Actionable',
           description:
-            'A CTA button with a contextual message can be added to the Banner to provide the user with a starting point, for a particular flow.',
+            'Add a call-to-action (CTA) button with a contextual message as a starting point in a user journey.',
           media: getIllustrationComponent(
             'components/banner/banner-options-actionable-illustration',
           ),
         },
         {
           title: 'Dismissible',
-          description:
-            'A close button can be added to the banner to prove the user with a way to dismiss the banner.',
+          description: 'Add a close button to let users dismiss the banner.',
           media: getIllustrationComponent(
             'components/banner/banner-options-dismissable-illustration',
           ),
@@ -275,12 +268,12 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     behaviors={{
-      introduction: 'The following guidance describes how a Banner behaves.',
+      introduction: 'Here’s how the banner behaves:',
       cards: [
         {
-          title: 'Text Overflow Wrap',
+          title: 'Text overflow wrap',
           description:
-            'When the title and/or message in the Banner is too long for the available horizontal space, it wraps to form another line.',
+            'When the title and/or message in the banner is too long for the available horizontal space, it wraps to form another line.',
           media: getIllustrationComponent(
             'components/banner/banner-behaviours-text-overflow-illustration',
           ),
@@ -288,42 +281,45 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use a Banner component.',
+      introduction: 'Here’s how and when to use the banner:',
       cards: [
         {
+          title: 'Do use banners for essential, system-level information',
           description:
-            'Banners should be reserved only for essential system-level information, such as internet connection issues, expirations of subscriptions, payment failures or major product changes. For confirmations of actions or promotional messaging use another feedback component such as a Toast.',
+            'Examples include internet connection issues, expirations of subscriptions, payment failures or major product changes. For confirmations of actions or promotional messages, use another feedback component (e.g. toast) instead.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/banner/banner-do-1-illustration',
           ),
         },
         {
-          description:
-            'Never show multiple Banners at the same time. When multiple Banners are consecutively or simultaneously triggered, the Banner with more importance should replace an existing Banner of lesser importance until the higher priority one has been resolved.',
+          title: 'Don’t show multiple banners at the same time',
+          description: 'Banners should appear in order of importance.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/banner/banner-dont-1-illustration',
           ),
         },
         {
+          title: 'Do add an action to help users solve the issue',
           description:
-            'Whenever possible, add an action in the Banner for a user to quickly resolve the associated Banner message.',
+            'Whenever possible, add an action in the banner so the user can quickly resolve the issue.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/banner/banner-do-2-illustration',
           ),
         },
         {
+          title: 'Don’t have more than one action in a banner',
           description:
-            'Avoid using more than one action in a Banner. (excluding the dismiss button). Having more than one action to choose from can make it difficult for users to decide what action to do next.',
+            'Having more than one action to choose from can make it difficult for users to decide what to do next. This doesn’t include the close button.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/banner/banner-dont-2-illustration',
           ),
         },
         {
+          title: 'Do position below the navigation header',
           description:
             'Banners should be positioned at the top of a page, below the navigation header.',
           kind: UsageKind.DO,
@@ -332,45 +328,37 @@ const BannerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Don’t let banners time out',
           description:
-            'Never allow Banners to time out. They should only disappear on user interaction (either dismissing or completing a task) or when the information is no longer relevant, e.g. updating failed payment details.',
+            'Banners should only disappear on user interaction (dismissing or completing a task) or when the information is no longer relevant (e.g. updating failed payment details).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/banner/banner-dont-3-illustration',
           ),
         },
         {
+          title: 'Do convey tone with the right intent',
           description:
-            'Use the appropriate intent to convey the tone of the Banner message. If the tone is neutral use the informative intent Banner. ',
+            'Use the appropriate intent to convey the tone of the banner message. If the tone is neutral, use the informative intent banner.',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/banner/banner-do-4-illustration',
           ),
         },
         {
+          title: 'Do display again if unresolved',
           description:
-            'If a user dismisses a Banner without resolving the issue, it should be displayed again at the next possible occasion, without overwhelming the user e.g. the next time session.',
+            'If a user dismisses a banner without resolving the issue, display it again at the next possible occasion, without overwhelming the user (e.g. the next time session).',
           kind: UsageKind.DO,
           media: getIllustrationComponent(
             'components/banner/banner-dont-5-illustration',
-          ),
-        },
-        {
-          description:
-            "Keep a Banner's message clear and concise, describing what's happening, and what the user needs to know and do. ",
-          kind: UsageKind.DO,
-          media: getIllustrationComponent(
-            'components/banner/banner-do-6-illustration',
           ),
         },
       ],
     }}
     accessibility={{
       introduction: (
-        <>
-          A Banner implements the latest {/* TODO: find a link */}
-          <Link href="/">WAI-ARIA A Banner specifications.</Link>.
-        </>
+        <>The banner meets the latest WAI-ARIA banner specifications.</>
       ),
       focusOrder: {
         title: 'Focus order',
@@ -395,13 +383,13 @@ const BannerComponent = (layoutProps: LayoutProps) => (
             attribute: 'aria-role',
             value: 'region',
             description:
-              'The region landmark role is used to identify an area in the document that counted as significant. It is used to provide a generic landmark for people to be able to navigate to easily when none of the other landmark roles are appropriate.',
+              'Allows users of assistive technologies to identify the landmark as a banner. Landmarks allow users of assistive technologies to find and navigate to content quickly.',
           },
           {
             element: 'banner',
             attribute: 'aria-label',
             value: 'Banner',
-            description: 'Defines the Aria-label of the Banner.',
+            description: 'Defines the aria-label.',
             userSupplied: true,
           },
           {
@@ -411,15 +399,15 @@ const BannerComponent = (layoutProps: LayoutProps) => (
             // TODO: Mozilla docs - link (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions)
             description: (
               <>
-                This prop needs to be set when the Banner appears on the screen
-                at runtime. For more information check the description for aria
-                live at,{' '}
+                Needs to be set when the banner appears on the screen at
+                runtime.{' '}
                 <Link
+                  href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
                   target="_blank"
-                  href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions#live_regions"
                 >
-                  Mozilla docs.
+                  Learn more about aria-live at MDN Web Docs
                 </Link>
+                .
               </>
             ),
             userSupplied: true,
@@ -428,12 +416,12 @@ const BannerComponent = (layoutProps: LayoutProps) => (
       },
     }}
     seo={{
-      title: 'SEO Considerations',
-      introduction: 'There are no SEO considerations for this component.',
+      title: 'SEO considerations',
+      introduction: 'There are no SEO considerations for the banner.',
     }}
     componentAPI={{
       introduction:
-        'A Banner has a range of props that can be used to define an appropriate experience for different use cases.',
+        'The banner has a range of props to define the experience in different use cases.',
       components: [
         {
           title: 'Banner',
@@ -442,51 +430,47 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               name: 'children',
               type: "Exclude<React.ReactNode, 'undefined'>",
               required: true,
-              description: 'Sets the content of the Banner.',
+              description: 'Sets the content of the banner.',
             },
             {
               name: 'layout',
               type: "MQ<'horizontal' | 'vertical'>",
               default: ['xs: vertical', ' md:  horizontal'],
               description:
-                'If provided, defines the content of the title in the Banner.',
+                'If provided, sets the orientation of the banner to horizontal or vertical.',
             },
             {
               name: 'title',
               type: 'React.ReactNode',
               description:
-                'If provided, defines the content of the title in the Banner.',
+                'If provided, defines the content of the title in the banner.',
             },
             {
               name: 'icon',
               type: 'ReactElement<NewsKitIcon>',
-              description:
-                'Icon used to indicate the status or intent of the Banner.',
+              description: 'Indicates the status or intent of the banner.',
             },
             {
               name: 'actions',
               type: 'React.ComponentType[]',
               description:
-                'If provided, defines the action(s) that is/are displayed in the Banner.',
+                'If provided, defines the action to be displayed in the banner.',
             },
             {
               name: 'onClose',
               type: 'function',
               description:
-                'If you pass onClose callback function to the banner it will display a close button. The function can be used to manage the external (open/closed) state of the banner.',
+                'If you pass onClose callback function to the banner, it will display a close button. Use to manage the external (open/closed) state of the banner.',
             },
             {
               name: 'closeButtonLabel',
               type: 'string',
               description: (
                 <>
-                  If provided, overrides the close Button label for the vertical
-                  orientation of the Banner.
-                  <br />
-                  <br />
-                  NOTE - For horizontal orientation the Banner always displays a
-                  close Icon Button and uses this prop as aria-label for the
-                  icon-button.
+                  If provided, overrides the close button label for the vertical
+                  orientation of the banner. For horizontal orientation, the
+                  banner always displays a close icon button and uses this prop
+                  as aria-label for the icon button.
                 </>
               ) as any,
             },
@@ -497,21 +481,14 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'Banner',
               description:
-                'Overrides the stylePreset applied to the Banner container and the Icon color.',
-            },
-            {
-              attribute: 'spaceInset(deprecated)',
-              type: 'MQ<string>',
-              default: 'spaceInset045',
-              description:
-                'Use paddingInline & paddingBlock instead. Overrides the space inset applied to the Banner container. It can take four space tokens to specify the padding for each side of the Banner. These four space tokens can also be used on breakpoints.	',
+                'Overrides the stylePreset applied to the banner container and the icon colour.',
             },
             {
               attribute: 'minHeight',
               type: 'MQ<string>',
               default: 'sizing090',
               description:
-                'Overrides the minHeight applied to the Banner container.',
+                'Overrides the minHeight applied to the banner container.',
             },
             {
               attribute: 'grid.props',
@@ -519,10 +496,10 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               default: '',
               description: (
                 <>
-                  Overrides internal grid&apos;s properties. This grid is used
-                  to layout the content, see{' '}
-                  <Link href="/components/grid">grid documentation</Link> for a
-                  full list of props
+                  Overrides the internal grid&apos;s properties. This grid is
+                  used to lay out the content. See{' '}
+                  <Link href="/components/grid">grid and cell</Link> for a full
+                  list of props
                 </>
               ),
             },
@@ -530,7 +507,7 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               attribute: 'cell.props',
               type: '{props: CellProps;}',
               default: '{ xs: full-width }',
-              description: `Overrides the amount of columns for the Cell to span at a given breakpoint. If set to "full-width" the Cell will span all 12 columns and breakout across the margin of the Grid. It will still be confined by the Grid's max-width.`,
+              description: `Overrides the number of columns the cell spans at a given breakpoint. If set to "full-width", the cell spans all 12 columns and breaks out across the margin of the grid. It will still be confined by the grid's max-width.`,
             },
             {
               attribute: 'icon.spaceInline',
@@ -544,21 +521,21 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: ['horizontal: space030', 'vertical: space050'],
               description:
-                'Overrides the space between the banner content and the action/close buttons',
+                'Overrides the space between the banner content and the action/close buttons.',
             },
             {
               attribute: 'content.title.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityHeading010',
               description:
-                'Overrides the typography preset applied to the Banner title.',
+                'Overrides the typography preset applied to the banner title.',
             },
             {
               attribute: 'content.title.stylePreset',
               type: 'MQ<string>',
               default: 'inkInverse',
               description:
-                'Overrides the style preset applied to the Banner title.',
+                'Overrides the style preset applied to the banner title.',
             },
             {
               attribute: 'content.title.spaceStack',
@@ -572,14 +549,14 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'utilityBody010',
               description:
-                'Overrides the typographyPreset applied to the Banner content.',
+                'Overrides the typographyPreset applied to the banner content.',
             },
             {
               attribute: 'content.message.stylePreset',
               type: 'MQ<string>',
               default: 'inkInverse',
               description:
-                'Overrides the stylePreset applied to the Banner message.',
+                'Overrides the stylePreset applied to the banner message.',
             },
             {
               attribute: 'actions.spaceInline',
@@ -598,7 +575,10 @@ const BannerComponent = (layoutProps: LayoutProps) => (
               description:
                 'Overrides the spacing between the action buttons and the close button.',
             },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
+            ...getLogicalPropsTable(undefined, '', {
+              paddingBlock: ['horizontal: space040', 'vertical: space040'],
+              paddingInline: ['horizontal: space040', 'vertical: space040'],
+            }),
           ],
         },
       ],

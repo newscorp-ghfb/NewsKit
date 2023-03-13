@@ -23,9 +23,9 @@ const PlaygroundContainer = styled.div`
 const ShareBarComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
-      title: 'Share Bar',
+      title: 'Share bar',
       description:
-        'The Share Bar component allows users to share hyperlinks of content across their various social media and communication channels. It is usually embedded within article pages in order to increase the reach of a story.',
+        'Share bars lets users share content to social media and other channels. They’re typically embedded within article pages.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -35,7 +35,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
         illustration: 'components/share-bar/share-bar-illustration',
       },
       introduction:
-        'The Share Bar component allows users to share hyperlinks of content across their various social media and communication channels. It is usually embedded within article pages in order to increase the reach of a story. The Share Bar component is now deprecated and will be removed in the next major release.',
+        'Share bars lets users share content to social media and other channels. They’re typically embedded within article pages. This component is deprecated and will be removed in the next major release.',
     }}
     componentDefaultsKey="shareBar"
     meta={{
@@ -47,7 +47,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
     }}
     interactiveDemo={{
       introduction:
-        'This demo allows you to preview the Share Bar component, its variations, and configuration options.',
+        'This demo lets you preview the share bar component, its variations and configuration options.',
       playground: {
         componentName: 'ShareBar',
         component: state => (
@@ -94,25 +94,25 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
     }}
     anatomy={{
       introduction:
-        'Share Bars contain two required element(s) and one optional element.',
+        'The share bar component contains two required elements and one optional element.',
       rows: [
         {
           name: 'Label',
           description:
-            'Informs users what information belongs in a given Share Bar',
+            'Informs users what information belongs in a given share bar.',
           component: ['Text Block'],
           optional: true,
         },
         {
-          name: 'Action Item',
+          name: 'Action item',
           description:
             'Actions components can be passed into the list which, when clicked, take the user to the relevant social channel.',
           component: ['Button', 'Icon Button', 'Link'],
           optional: undefined,
         },
         {
-          name: 'Share Bar Container',
-          description: 'Contains the elements of the Share Bar.',
+          name: 'Share bar container',
+          description: 'Contains the elements of the share bar.',
           component: 'Block',
           optional: undefined,
         },
@@ -122,12 +122,11 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
       ),
     }}
     options={{
-      introduction: '',
+      introduction: 'The share bar has options for different use cases:',
       cards: [
         {
           title: 'Orientation',
-          description:
-            'The Share Bar can be displayed horizontally or vertically.',
+          description: 'Display the share bar horizontally or vertically.',
           media: getIllustrationComponent(
             'components/share-bar/share-options-orientation-illustration',
           ),
@@ -135,7 +134,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Label',
           description:
-            'The label on the Share Bar can be hidden. Hiding the label can reduce visual noise for users, but may give less context to the Share Bar.',
+            'Hide the label on the share bar. Hiding the label reduces visual noise, but may give less context.',
           media: getIllustrationComponent(
             'components/share-bar/share-options-label-illustration',
           ),
@@ -174,10 +173,10 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
     //   ],
     // }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the Share Bar component.',
+      introduction: 'Here’s how and when to use the share bar component:',
       cards: [
         {
+          title: 'Don’t use a share bar for more than five items',
           description:
             'The maximum number of items in a share bar should be kept to a minimum. It is not recommended to have more than 5 items.',
           kind: UsageKind.DONT,
@@ -186,8 +185,9 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Don’t add actions that are not relevant',
           description:
-            'Do not add actions that are not relevant to social sharing in the Share Bar items (saving, commenting etc). These should be added as a separate component e.g. a comment button with a share bar (due to the default behaviour on mobile where a single share button is displayed).',
+            'Do not add actions that are not relevant to social sharing in a share bar (saving, commenting etc).',
           kind: UsageKind.DONT,
           media: getIllustrationComponent(
             'components/share-bar/share-dont-1-illustration',
@@ -204,12 +204,12 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
             order: 1,
             element: 'Action item 1',
             role:
-              'Takes you to first action in the share bar (left if horizontal, top if vertical orientation).',
+              'Takes you to the first action in the share bar (left if horizontal, top if vertical orientation).',
           },
           {
             order: 2,
             element: 'Action item 2',
-            role: 'Takes you to second action in the share bar .',
+            role: 'Takes you to the second action in the share bar.',
           },
         ],
       },
@@ -226,21 +226,21 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
         ],
       },
       infoNoticeAria: [
-        'If you have more than one Share Bar on your page - all Share Bar components (or their containers) should have a role set to the region and also a unique aria-label.Keyboard Interactions.',
-        'When using an Icon Button in the Share Bar ensure an aria-label e.g. “share to FaceBook” is set on the Icon Button.',
+        'If you have more than one share bar on a page, all share bar components (or their containers) should have a role set to the region and a unique aria-label.',
+        'When using an icon button in the share bar, set an aria-label (e.g. “share to Facebook”) on the icon button.',
       ],
     }}
     seo={{
-      title: 'SEO Considerations',
+      title: 'SEO considerations',
       introduction: 'Ensure icons have Alt Text applied.',
     }}
     componentAPI={{
-      introduction: `Below are the properties for the Share Bar component:`,
+      introduction: `Here are the properties for the share bar component:`,
       components: [
         {
-          title: 'Share Bar',
+          title: 'Share bar',
           summary:
-            'Share bar has a range of props that can be used to define an appropriate experience for different use cases.',
+            'Share bar has a range of props to define the experience in different use cases.',
           propsRows: [
             {
               name: 'label',
@@ -254,7 +254,7 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
               type: 'boolean',
               default: 'false',
               description:
-                'If true, changes the orientation to vertical. Note that the "spaceInline" will still apply between the vertically orientated label and icons. ',
+                'If true, changes the orientation to vertical. Note that the "spaceInline" will still apply between the vertically orientated label and icons.',
             },
           ],
           overridesRows: [
@@ -263,41 +263,41 @@ const ShareBarComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               default: 'inkBase',
               description:
-                'If provided, this overrides the style preset applied to the passed label.',
+                'If provided, overrides the style preset applied to the passed label.',
             },
             {
               attribute: 'label.stylePreset',
               type: 'MQ<string>',
               default: 'inkBase',
               description:
-                'If provided, this overrides the style preset applied to the passed label.',
+                'If provided, overrides the style preset applied to the passed label.',
             },
             {
               attribute: 'label.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityLabel020',
               description:
-                'If provided, this overrides the typography preset applied to the passed label.',
+                'If provided, overrides the typography preset applied to the passed label.',
             },
             {
               attribute: 'label.spaceInset',
               type: 'MQ<string>',
               default: 'space040',
               description:
-                'If provided, this overrides the horizontal space between the items and label.',
+                'If provided, overrides the horizontal space between the items and label.',
             },
             {
               attribute: 'label.spaceInline',
               type: 'MQ<string>',
               default: 'space040',
               description:
-                'If provided, this overrides the horizontal space between the items and label. ',
+                'If provided, overrides the horizontal space between the items and label.',
             },
             {
               attribute: 'items.spaceInline',
               type: 'MQ<string>',
               default: 'space020',
-              description: 'If provided, this sets the space between the items',
+              description: 'If provided, sets the space between the items.',
             },
             ...(commonLogicalProps() as OverridesRowsProps[]),
           ],

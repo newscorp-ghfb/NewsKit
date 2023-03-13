@@ -18,12 +18,13 @@ import {
 
 const unlimitedScenarios = [
   'Accordion',
-  'grid',
-  'stack',
+  'Grid',
+  'Paragraph',
+  'Stack',
   'card',
   'drawer',
   'modal',
-  'image',
+  'Image',
   'image-e2e',
   'grid-layout',
   'popover',

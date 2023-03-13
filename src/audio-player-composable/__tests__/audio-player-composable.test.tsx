@@ -348,7 +348,7 @@ describe('Audio Player Composable', () => {
       mediaElement.volume = val;
     });
     window.open = jest.fn();
-    jest.useFakeTimers('legacy');
+    jest.useFakeTimers();
   });
 
   it('should render with no errors', () => {
@@ -1255,10 +1255,15 @@ describe('Audio Player Composable', () => {
         'audio-player-time-display',
       ) as HTMLParagraphElement;
 
+      fireEvent.durationChange(audioElement, {
+        target: {
+          duration: 60,
+        },
+      });
       const seekBar = getByTestId('audio-slider-track') as HTMLDivElement;
       fireEvent.timeUpdate(audioElement);
       expect(audioElement.currentTime).toEqual(50);
-      expect(audioTimeLabel.innerHTML).toEqual('00:50/00:00 ');
+      expect(audioTimeLabel.innerHTML).toEqual('00:50/01:00 ');
       expect(seekBar.getAttribute('values')).toEqual('50');
     });
   });

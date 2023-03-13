@@ -181,13 +181,13 @@ exports[`NewStartScreen renders correctly 1`] = `
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
@@ -314,7 +314,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/getting-started/design/design-overview/"
+                href="/getting-started/design/design-overview"
               >
                 <span
                   class="emotion-7"
@@ -356,7 +356,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/getting-started/code/engineering-overview/"
+                href="/getting-started/code/engineering-overview"
               >
                 <span
                   class="emotion-7"
@@ -398,7 +398,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/getting-started/code/instrumentation/"
+                href="/getting-started/code/instrumentation"
               >
                 <span
                   class="emotion-7"
@@ -453,7 +453,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/components/overview/"
+                href="/components/overview"
               >
                 <span
                   class="emotion-7"
@@ -495,7 +495,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/overview/"
+                href="/theme/overview"
               >
                 <span
                   class="emotion-7"
@@ -537,7 +537,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/components/button/"
+                href="/components/button"
               >
                 <span
                   class="emotion-7"
@@ -592,7 +592,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/presets/style-presets/"
+                href="/theme/presets/style-presets"
               >
                 <span
                   class="emotion-7"
@@ -634,7 +634,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/presets/transition-presets/"
+                href="/theme/presets/transition-presets"
               >
                 <span
                   class="emotion-7"
@@ -676,7 +676,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/presets/typography-presets/"
+                href="/theme/presets/typography-presets"
               >
                 <span
                   class="emotion-7"
@@ -731,7 +731,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/foundation/design-tokens/"
+                href="/theme/foundation/design-tokens"
               >
                 <span
                   class="emotion-7"
@@ -773,7 +773,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/foundation/colours/"
+                href="/theme/foundation/colours"
               >
                 <span
                   class="emotion-7"
@@ -815,7 +815,7 @@ exports[`NewStartScreen renders correctly 1`] = `
             >
               <a
                 class="emotion-6"
-                href="/theme/foundation/fonts/"
+                href="/theme/foundation/fonts"
               >
                 <span
                   class="emotion-7"

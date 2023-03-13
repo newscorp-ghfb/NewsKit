@@ -331,16 +331,17 @@ const ScrollComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the scroll component.',
+      introduction: 'Here’s how and when to use scroll:',
       cards: [
         {
+          title: 'Do hide scroll controls for mobile',
           description:
-            'Hide controls on mobile breakpoints to encourage a user to swipe with their finger, as this is common mobile device behaviour.',
+            'Hide controls on mobile breakpoints to encourage a user to swipe, as this is common mobile device behaviour.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/scroll/usage/do-01'),
         },
         {
+          title: 'Do use an appropriate step distance',
           description:
             'When using controls, use an appropriate step distance if all scrollable items have similar widths.',
           kind: UsageKind.DO,
@@ -465,7 +466,8 @@ const ScrollComponent = (layoutProps: LayoutProps) => (
               type: 'ButtonOverrides',
               default: [
                 'stylePreset: iconButtonSolidPrimary',
-                'spaceInset: spaceInset000',
+                'paddingInline: space000',
+                'paddingBlock: space000',
               ],
               description: (
                 <>

@@ -8,6 +8,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {UsageKind} from '../../components/usage-card';
 import {LayoutProps} from '../../components/layout';
 import {IconFilledCircle} from '../../components/icons';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
 
@@ -120,17 +121,10 @@ const commonOverridesRows = [
     default: ['backgroundColorChange'],
     description: 'If provided, overrides the transitionPreset of the tag.',
   },
-  {
-    attribute: 'spaceInset',
-    type: 'MQ<string>',
-    default: [
-      'small = spaceInsetSquish010',
-      'medium = spaceInsetSquish020',
-      'large = spaceInsetSquish020',
-    ],
-    description:
-      "If provided, overrides the padding of the tag. Otherwise, use spaceInsetSquish010 or spaceInsetSquish020, depending on the 'size' prop.",
-  },
+  ...getLogicalPropsTable(undefined, undefined, {
+    paddingBlock: ['small: space010', 'medium: space020', 'large: space020'],
+    paddingInline: ['small: space020', 'medium: space030', 'large: space030'],
+  }),
   {
     attribute: 'spaceInline',
     type: 'MQ<string>',
@@ -431,38 +425,35 @@ const TagComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     usage={{
-      introduction:
-        'The following guidance describes how and when to appropriately use the tag component.',
+      introduction: 'Here’s how and when to use tags:',
       cards: [
         {
+          title: 'Do make sure tags relate to the content',
           description:
-            'When adding an action next to a group of tags (e.g. ‘Clear all’), reveal the action only when there is more than one tag displayed.',
+            'Tags should always have a direct relationship to the content they represent.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/tag/usage/do-01'),
         },
         {
+          title: "Don't make tags too wide",
           description:
             'Avoid using full-width tags in wide containers. They are generally appropriate for small devices or contained components.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tag/usage/dont-01'),
         },
         {
+          title: 'Do make sure tags have sufficient clearance',
           description:
-            'Tags should always have a direct relationship to the content they represent.',
+            'Do allow a sufficient hit area when placing two or more tags inline make sure they are a sufficient size or have spacing between them to avoid users accidentally hitting the wrong tag.',
           kind: UsageKind.DO,
           media: getIllustrationComponent('components/tag/usage/do-02'),
         },
         {
+          title: "Don't have multiple words for labels",
           description:
             'Avoid having multiple words for tag labels. They should be short and clear.',
           kind: UsageKind.DONT,
           media: getIllustrationComponent('components/tag/usage/dont-02'),
-        },
-        {
-          description:
-            'When tags are to be placed inline, they should maintain at least an 8px gap between the two (or more) tags to allow for sufficient clearance around each tag.',
-          kind: UsageKind.DO,
-          media: getIllustrationComponent('components/tag/usage/do-03'),
         },
       ],
     }}

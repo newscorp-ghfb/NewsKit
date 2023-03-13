@@ -199,6 +199,8 @@ export const routes = [
       {
         title: 'Foundations',
         id: '/theme/foundation',
+        description:
+          'NewsKit foundations define the look and feel of digital products. Foundations include borders, breakpoints, colours, fonts, motion, shadows, sizing and space.',
         subNav: [
           {
             title: 'Borders',
@@ -327,6 +329,8 @@ export const routes = [
       {
         title: 'Presets',
         id: '/theme/presets',
+        description:
+          'A collection of related foundational design tokens combined into a preset to define reusable styles, typography or transitions. There are three categories of presets:',
         subNav: [
           {
             title: 'Style Presets',
@@ -361,6 +365,8 @@ export const routes = [
       {
         title: 'Creating and using themes',
         id: '/theme/theming',
+        description:
+          'Learn how to create NewsKit themes in Figma and code, and unlock the power of presets and component defaults to further customise NewsKit components.',
         subNav: [
           {
             title: 'Overview',
@@ -410,9 +416,9 @@ export const routes = [
       },
       {
         title: 'Actions & Inputs',
+        id: '/components/action-and-inputs',
         description:
           'Components that allow users to take action on a feature or enable users to input data.',
-        id: '/components/action-and-inputs',
         subNav: [
           {
             title: 'Button',
@@ -490,16 +496,16 @@ export const routes = [
       },
       {
         title: 'Feedback & Status',
+        id: '/components/feedback-and-status',
         description:
           'Components that provide users with system or user feedback & status.',
-        id: '/components/feedback-and-status',
         subNav: [
           {
             title: 'Banner',
             page: true,
             id: '/components/banner',
             description:
-              'Demonstrates the progress of a system action e.g. waiting for a page to load.',
+              'Communicates essential information without blocking an experience.',
             illustration: 'components/banner/banner-illustration',
           },
           {
@@ -555,9 +561,9 @@ export const routes = [
       },
       {
         title: 'Layout',
+        id: '/components/layout',
         description:
           'Components that help to define the fundamental spacial structure of a feature or page.',
-        id: '/components/layout',
         subNav: [
           {
             title: 'Block',
@@ -654,12 +660,20 @@ export const routes = [
               'A pair of components which can be used to show and hide content at different breakpoints.',
             illustration: 'components/visibility-illustration',
           },
+          {
+            title: 'Layer',
+            page: true,
+            id: '/components/layer',
+            description:
+              'Layers allow for the stacking of components and other elements, giving control over how they interact together and appear to users.',
+            illustration: 'components/layer-illustration',
+          },
         ],
       },
       {
         title: 'Media',
-        description: 'Components that provide or control rich media.',
         id: '/components/media',
+        description: 'Components that provide or control rich media.',
         subNav: [
           {
             title: 'Audio Player',
@@ -681,16 +695,25 @@ export const routes = [
             title: 'Image',
             page: true,
             id: '/components/image',
-            description: 'An element of media.',
+            description:
+              'Images are a type of visual media. They can appear at fixed sizes, percentages, and aspect ratios.',
             illustration: 'components/image-illustration',
+          },
+          {
+            title: 'Video Player',
+            page: true,
+            id: '/components/video-player',
+            description:
+              'The video player component allows a user to play and control video content.',
+            illustration: 'components/video-player/hero',
           },
         ],
       },
       {
         title: 'Navigation',
+        id: '/components/navigation',
         description:
           'Components that enable users to move between pages or content.',
-        id: '/components/navigation',
         subNav: [
           {
             title: 'Accordion',
@@ -705,6 +728,7 @@ export const routes = [
             page: true,
             id: '/components/breadcrumbs',
             description: 'Breadcrumbs are used for secondary navigation.',
+
             illustration: 'components/breadcrumbs/hero',
           },
           {
@@ -759,8 +783,8 @@ export const routes = [
       },
       {
         title: 'Text',
-        description: 'Components that display specific written content.',
         id: '/components/text',
+        description: 'Components that display specific written content.',
         subNav: [
           {
             title: 'Byline',
@@ -829,9 +853,32 @@ export const routes = [
         ],
       },
       {
-        title: 'Third Party Integrations',
+        title: 'Community',
         description: 'Components that interact with a third-party service.',
+        id: '/components/community',
+        subNav: [
+          {
+            title: 'How to contribute',
+            page: true,
+            id: '/components/community/how-to-contribute',
+            description:
+              'We welcome contributions of code, design and guidance.',
+            illustration: 'components/community/how-to-contribute',
+          },
+          {
+            title: 'Community index',
+            page: true,
+            id: '/components/community/community-index',
+            description:
+              'Contributions are shared and maintained by contributing teams.',
+            illustration: 'components/community/community-index',
+          },
+        ],
+      },
+      {
+        title: 'Third Party Integrations',
         id: '/components/third-party',
+        description: 'Components that interact with a third-party service.',
         subNav: [
           {
             title: 'Consent',
@@ -961,8 +1008,68 @@ export const routes = [
           'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
       },
       {
+        title: 'Solutions',
+        id: '/patterns/solutions',
+        description:
+          'Solutions are multi-tenant products that are designed, developed and ready for your team to use.',
+        subNav: [
+          {
+            title: 'NewsKit Account',
+            page: true,
+            id: '/patterns/solutions/account',
+            description:
+              'Complete account package with customer information and subscription management.',
+            illustration: 'patterns/solutions/account/01-hero',
+          },
+          {
+            title: 'NewsKit Help Hub',
+            page: true,
+            id: '/patterns/solutions/help-hub',
+            description:
+              'Help module that enables your customers to self-serve support.',
+            illustration: 'patterns/solutions/help-hub/01-hero',
+          },
+        ],
+      },
+      {
+        title: 'Onboarding',
+        id: '/patterns/onboarding',
+        description:
+          'Practical guidance for onboarding users onto your product or service.',
+        subNav: [
+          {
+            title: 'Overview',
+            page: true,
+            id: '/patterns/onboarding/overview',
+            description:
+              'Onboarding is the first impression a user has of a product or feature. It’s crucial to make it count.',
+            illustration: 'patterns/onboarding/overview/hero',
+            buttonLabel: 'Learn more about onboarding',
+          },
+          {
+            title: 'Best practice',
+            page: true,
+            id: '/patterns/onboarding/best-practice',
+            description:
+              'Create compelling onboarding experiences by following these industry best practices.',
+            illustration: 'patterns/onboarding/best-practice/hero',
+            buttonLabel: 'Learn more about onboarding best practice',
+          },
+          {
+            title: 'How to',
+            page: true,
+            id: '/patterns/onboarding/how-to',
+            description:
+              'This framework shows you how to onboard users with a simple three-step process.',
+            illustration: 'patterns/onboarding/how-to/hero',
+            buttonLabel: 'Learn more about onboarding',
+          },
+        ],
+      },
+      {
         title: 'Forms',
         id: '/patterns/forms',
+        description: 'Best practices to follow when creating form patterns.',
         subNav: [
           {
             title: 'Overview',

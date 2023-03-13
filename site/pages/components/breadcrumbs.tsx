@@ -17,12 +17,7 @@ import {InlineCode} from '../../components/markdown-elements';
 import {UsageKind} from '../../components/usage-card';
 import {IconFilledCircle} from '../../components/icons';
 import {Link} from '../../components/link';
-import {
-  logicalMarginOverrideProps,
-  logicalPaddingOverrideProps,
-  commonLogicalProps,
-} from '../../components/component-api/common-logical-props';
-import {OverridesRowsProps} from '../../components/component-api';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {IconFilledStarOutline} from '../../../src/icons';
 
 const IconFilledInfo = toNewsKitIcon(FilledInfo);
@@ -490,9 +485,9 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
     componentAPI={{
       components: [
         {
-          title: 'Breadcrumb Item',
+          title: 'Breadcrumb',
           summary:
-            'The breadcrumb item has a range of props that can be used to define an appropriate experience for different use cases.',
+            'The breadcrumb has a range of props that can be used to define an appropriate experience for different use cases.',
           propsRows: [
             {
               name: 'children',
@@ -542,7 +537,7 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
                 'If provided, overrides the stylePreset of the breadcrumb separators.',
             },
             {
-              attribute: 'separator.paddingInline',
+              attribute: 'separator.marginInline',
               type: 'MQ<string>',
               default: 'space020',
               description:
@@ -559,7 +554,13 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the breadcrumb separator icon size',
             },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
+            ...getLogicalPropsTable(undefined, undefined, {
+              marginInline: [
+                'small: space020',
+                'medium: space020',
+                'large: space020',
+              ],
+            }),
           ],
         },
         {
@@ -657,8 +658,18 @@ const BreadcrumbsComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the breadcrumb item typography preset.',
             },
-            ...logicalMarginOverrideProps,
-            ...logicalPaddingOverrideProps,
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingBlock: [
+                'small: space000',
+                'medium: space000',
+                'large: space000',
+              ],
+              paddingInline: [
+                'small: space000',
+                'medium: space000',
+                'large: space000',
+              ],
+            }),
           ],
         },
       ],
