@@ -2,7 +2,7 @@ import * as React from 'react';
 import {useRef, useState} from 'react';
 import {Placement} from '@floating-ui/react-dom-interactions';
 import {Story as StoryType} from '@storybook/react';
-import {Button as Btn, ButtonOverrides, ButtonProps} from '../../button';
+import {Button, ButtonOverrides} from '../../button';
 import {getColorCssFromTheme, styled} from '../../utils';
 import {Popover as P} from '../popover';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
@@ -11,10 +11,6 @@ import {isCypressTest, isVisualTest} from '../../test/test-utils';
 import {CreateThemeArgs, StylePreset, ThemeProvider} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {defaultFocusVisible} from '../../utils/default-focus-visible';
-
-const Button = (props: ButtonProps) => (
-  <Btn {...props} style={{display: 'flex', flexWrap: 'wrap', rowGap: '8px'}} />
-);
 
 const getPlacementStyling = (placement: Placement) => {
   const [side, alignment = 'center'] = placement.split('-');
@@ -163,6 +159,12 @@ StoryPopoverDefault.parameters = {
   percy: {enableJavaScript: true},
 };
 
+const WrapContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+`;
+
 export const StoryPopoverPlacements = () => (
   <GridPage>
     {placements.map(placement => (
@@ -171,7 +173,9 @@ export const StoryPopoverPlacements = () => (
         placement={placement}
         {...defaultContents}
       >
-        <Button overrides={btnOverrides}>Show {placement} popover</Button>
+        <Button overrides={btnOverrides}>
+          <WrapContainer>Show {placement} popover</WrapContainer>
+        </Button>
       </GridLayoutPopoverItem>
     ))}
   </GridPage>
