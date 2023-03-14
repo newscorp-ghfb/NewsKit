@@ -170,4 +170,24 @@ export default {
       stylePreset: 'paginationItemNonInteractive',
     },
   },
+  paginationItemInteractive: {
+    small: {
+      iconSize: 'iconSize010',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
+      stylePreset: 'paginationItemInteractive',
+    },
+    medium: {
+      iconSize: 'iconSize020',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
+      stylePreset: 'paginationItemInteractive',
+    },
+    large: {
+      iconSize: 'iconSize020',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
+      stylePreset: 'paginationItemInteractive',
+    },
+  },
 };

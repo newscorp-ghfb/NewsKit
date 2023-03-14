@@ -55,4 +55,16 @@ export default {
       iconColor: '{{colors.inkNonEssential}}',
     },
   },
+  paginationItemInteractive: {
+    base: {
+      backgroundColor: '{{colors.transparent}}',
+      color: '{{colors.interactiveLink010}}',
+      iconColor: '{{colors.interactiveLink010}}',
+      cursor: 'default',
+    },
+    disabled: {
+      color: '{{colors.inkNonEssential}}',
+      iconColor: '{{colors.inkNonEssential}}',
+    },
+  },
 } as Record<string, StylePreset>;

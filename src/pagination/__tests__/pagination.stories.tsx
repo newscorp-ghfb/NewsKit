@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Pagination} from '../pagination';
 import {PaginationFirstItem} from '../components/first-item/first-item';
@@ -11,12 +11,27 @@ import {
   IconFilledCircle,
   IconOutlinedArrowBack,
   IconOutlinedArrowForward,
+  IconOutlinedSearch,
   IconOutlinedTrendingFlat,
 } from '../../icons';
 import {TextBlock} from '../../text-block';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
-import {StyledButton} from '../styled';
+import {Select, SelectOption, SelectOptionProps} from '../../select';
+import {
+  PaginationItemProps,
+  PaginationItemsProps,
+  PaginationLayoutItem,
+} from '../types';
+import {getItemsLayout} from '../utils';
+import {usePaginationContext} from '../context';
+import {Form, FormInput} from '../../form';
+import {IconButton} from '../../icon-button';
+import {TextField} from '../../text-field';
+import {Stack} from '../../stack';
+import {PaginationListItem} from '../components/list-item';
+import {PaginationButton} from '../components/button';
+import {ButtonOrButtonLinkProps} from '../../button';
 
 const paginationItemCustomThemeObject: CreateThemeArgs = {
   name: 'pagination-static-theme',
@@ -32,12 +47,14 @@ const paginationItemCustomThemeObject: CreateThemeArgs = {
   },
 };
 
+// eslint-disable-next-line
+const onPageChange = (page: number) => console.log(`Page changed to ${page}`);
+
 const defaultProps = {
   totalItems: 80,
   pageSize: 10,
   defaultPage: 4,
-  // eslint-disable-next-line
-  onPageChange: (page: number) => console.log(`Page changed to ${page}`),
+  onPageChange,
 };
 // defaults to truncation: true, siblings: 3, boundaries: 1
 const defaultItemsProps = {truncation: false, siblings: 0, boundaries: 0};
@@ -190,41 +207,457 @@ export const StoryVariationsInTruncation = () => (
 );
 StoryVariationsInTruncation.storyName = 'Variations in truncation';
 
-export const StoryVariationsInInput = () => (
-  <StorybookPage columns={{md: 'auto'}}>
-    <StorybookCase title="Display only">
-      <Pagination
-        totalItems={232}
-        pageSize={10}
-        defaultPage={9}
-        aria-label="display only"
+export const StoryVariationsInInput = () => {
+  const CustomInputPaginationItemButton = ({
+    children,
+    pageNumber,
+    lastPage = 1,
+    changePage = () => {},
+  }: ButtonOrButtonLinkProps & PaginationItemProps) => {
+    const [valid, setValid] = useState(true);
+    const inputRef = useRef<HTMLElement>(null);
+    const validateAndChangePage = (newPage: number) => {
+      if (newPage >= 1 && newPage <= lastPage) {
+        setValid(true);
+        changePage(newPage);
+      } else {
+        setValid(false);
+      }
+      inputRef.current?.blur();
+    };
+
+    return (
+      <Form
+        onSubmit={values => validateAndChangePage(parseInt(values.newPage, 10))}
       >
-        <PaginationFirstItem />
-        <PaginationPrevItem />
-        <PaginationItems
-          truncation
-          siblings={0}
-          boundaries={0}
-          overrides={{
-            itemButton: ({pageNumber, lastPage}) => (
-              <TextBlock
-                paddingInline="space020"
-                typographyPreset="utilityButton020"
-                stylePreset="paginationItemNonInteractive"
+        <FormInput name="newPage">
+          {children && children !== pageNumber && {children}}
+          <TextField
+            ref={inputRef}
+            size="small"
+            defaultValue={pageNumber}
+            state={valid ? 'valid' : 'invalid'}
+            onBlur={props =>
+              validateAndChangePage(parseInt(props.target?.value, 10))
+            }
+            endEnhancer={
+              <IconButton
+                type="submit"
+                title="Change Page"
+                overrides={{
+                  stylePreset: 'paginationItemInteractive',
+                }}
               >
-                Page {pageNumber} of {lastPage}
-              </TextBlock>
-            ),
-          }}
-        />
-        <PaginationNextItem />
-        <PaginationLastItem />
-      </Pagination>
-    </StorybookCase>
-  </StorybookPage>
-);
+                <IconOutlinedSearch />
+              </IconButton>
+            }
+            overrides={{
+              marginInline: 'space010',
+              marginBlockEnd: 'space000',
+              width: '84px',
+              endEnhancer: {
+                spaceInline: 'space000',
+              },
+            }}
+          />
+        </FormInput>
+      </Form>
+    );
+  };
+
+  const CustomInputPaginationItem = React.forwardRef<
+    HTMLElement,
+    PaginationItemProps
+  >(({pageNumber, overrides = {}}, ref) => {
+    const paginationContext = usePaginationContext();
+    const {size, page, lastPage, ...rest} = paginationContext;
+    const {itemDescription: ItemDescription} = overrides;
+
+    return (
+      <PaginationListItem key="pages" size={size}>
+        <Stack
+          flow="horizontal-center"
+          spaceInline="space010"
+          paddingInlineStart="space050"
+        >
+          <CustomInputPaginationItemButton
+            ref={ref}
+            pageNumber={page}
+            selected
+            {...rest}
+          />
+          {ItemDescription && (
+            <ItemDescription
+              selected={pageNumber === page}
+              pageNumber={page}
+              lastPage={lastPage}
+            />
+          )}
+        </Stack>
+      </PaginationListItem>
+    );
+  });
+
+  return (
+    <>
+      <StorybookPage>
+        <StorybookCase title="Description only">
+          <Pagination
+            totalItems={232}
+            pageSize={10}
+            defaultPage={9}
+            onPageChange={onPageChange}
+            aria-label="description only"
+          >
+            <PaginationFirstItem />
+            <PaginationPrevItem />
+            <PaginationItems
+              truncation
+              siblings={0}
+              boundaries={0}
+              overrides={{
+                itemButton: () => null,
+                itemDescription: ({pageNumber, lastPage}) => (
+                  <TextBlock
+                    paddingInline="space020"
+                    typographyPreset="utilityButton020"
+                    stylePreset="paginationItemNonInteractive"
+                  >
+                    Page {pageNumber} of {lastPage}
+                  </TextBlock>
+                ),
+              }}
+            />
+            <PaginationNextItem />
+            <PaginationLastItem />
+          </Pagination>
+        </StorybookCase>
+        <StorybookCase title="Input only">
+          <Pagination
+            totalItems={232}
+            pageSize={10}
+            defaultPage={9}
+            onPageChange={onPageChange}
+            aria-label="input only"
+          >
+            <PaginationFirstItem />
+            <PaginationPrevItem />
+            <PaginationItems
+              truncation
+              siblings={0}
+              boundaries={0}
+              overrides={{
+                itemButton: props => (
+                  <CustomInputPaginationItemButton {...props} />
+                ),
+              }}
+            />
+            <PaginationNextItem />
+            <PaginationLastItem />
+          </Pagination>
+        </StorybookCase>
+        <StorybookCase title="Input and description">
+          <Pagination
+            totalItems={232}
+            pageSize={10}
+            defaultPage={9}
+            onPageChange={onPageChange}
+            aria-label="input and description"
+          >
+            <PaginationFirstItem />
+            <PaginationPrevItem />
+            <PaginationItems
+              truncation
+              siblings={0}
+              boundaries={0}
+              overrides={{
+                itemButton: props => (
+                  <CustomInputPaginationItemButton {...props} />
+                ),
+                itemDescription: props => (
+                  <TextBlock
+                    paddingInline="space020"
+                    typographyPreset="utilityButton020"
+                    stylePreset="paginationItemNonInteractive"
+                  >
+                    of {props.lastPage} pages
+                  </TextBlock>
+                ),
+              }}
+            />
+            <PaginationNextItem />
+            <PaginationLastItem />
+          </Pagination>
+        </StorybookCase>
+      </StorybookPage>
+      <StorybookPage columns="1fr">
+        <StorybookCase title="Buttons with Input at end">
+          <Pagination
+            totalItems={232}
+            pageSize={10}
+            defaultPage={9}
+            onPageChange={onPageChange}
+            aria-label="input at end"
+          >
+            <PaginationFirstItem />
+            <PaginationPrevItem />
+            <PaginationItems truncation siblings={3} boundaries={1} />
+            <PaginationNextItem />
+            <PaginationLastItem />
+            <CustomInputPaginationItem />
+          </Pagination>
+        </StorybookCase>
+        <StorybookCase title="Buttons with Input for selected item">
+          <Pagination
+            totalItems={232}
+            pageSize={10}
+            defaultPage={9}
+            onPageChange={onPageChange}
+            aria-label="input for selected item"
+          >
+            <PaginationFirstItem />
+            <PaginationPrevItem />
+            <PaginationItems
+              truncation
+              siblings={3}
+              boundaries={1}
+              overrides={{
+                itemButton: ({selected, ...rest}) => {
+                  if (selected) {
+                    return (
+                      <CustomInputPaginationItemButton
+                        selected={selected}
+                        {...rest}
+                      />
+                    );
+                  }
+
+                  return (
+                    <PaginationButton {...rest}>
+                      {rest.pageNumber}
+                    </PaginationButton>
+                  );
+                },
+              }}
+            />
+            <PaginationNextItem />
+            <PaginationLastItem />
+          </Pagination>
+        </StorybookCase>
+      </StorybookPage>
+    </>
+  );
+};
 StoryVariationsInInput.storyName = 'Variations in input';
 
+export const StoryVariationsInSelection = () => {
+  const CustomDropdownPaginationItems = ({
+    children,
+    overrides = {},
+    truncation = true,
+    siblings = 3,
+    boundaries = 1,
+    eventContext = {},
+    eventOriginator = 'pagination-dropdown',
+  }: PaginationItemsProps) => {
+    const {
+      size,
+      buildHref,
+      /* istanbul ignore next */
+      changePage = () => {},
+      page,
+      lastPage,
+    } = usePaginationContext();
+
+    const {itemDescription: ItemDescription, ...logicalOverrides} = overrides;
+
+    const paginationElements = [] as React.ReactElement<SelectOptionProps>[];
+    if (page && lastPage) {
+      const layout: [PaginationLayoutItem?] = getItemsLayout({
+        page,
+        lastPage,
+        truncation,
+        siblings,
+        boundaries,
+      });
+
+      let truncationCount = 0;
+      /* istanbul ignore next */
+      layout.forEach((element: PaginationLayoutItem = 1) => {
+        switch (element) {
+          case '-':
+            truncationCount += 1;
+            paginationElements.push(
+              <SelectOption
+                key={`trunc${truncationCount}`}
+                value=""
+                overrides={logicalOverrides}
+              >
+                ...
+              </SelectOption>,
+            );
+            break;
+          default:
+            {
+              const pageNumber: number = element;
+              paginationElements.push(
+                <SelectOption
+                  key={`page${pageNumber}`}
+                  value={pageNumber.toString()}
+                  selected={pageNumber === page}
+                  overrides={logicalOverrides}
+                >
+                  {children}
+                  {pageNumber}
+                </SelectOption>,
+              );
+            }
+            break;
+        }
+      });
+    }
+
+    return (
+      <PaginationListItem key="pages" size={size}>
+        <Stack
+          flow="horizontal-center"
+          spaceInline="space010"
+          marginInline="space010"
+          marginBlockEnd="space000"
+        >
+          <Select
+            size="small"
+            eventContext={eventContext}
+            eventOriginator={eventOriginator}
+            overrides={{
+              button: {
+                marginBlockEnd: 'space000',
+              },
+            }}
+            onChange={event => {
+              if (event.target.value) {
+                const pageNumber = Number(event.target.value);
+                changePage(pageNumber);
+                const href = buildHref! && buildHref(pageNumber);
+                if (href) {
+                  window.location.href = href;
+                }
+              }
+            }}
+          >
+            {paginationElements as []}
+          </Select>
+          {ItemDescription && (
+            <ItemDescription selected pageNumber={page} lastPage={lastPage} />
+          )}
+        </Stack>
+      </PaginationListItem>
+    );
+  };
+
+  return (
+    <StorybookPage>
+      <StorybookCase title="Dropdown (HREF-based)">
+        <Pagination
+          totalItems={232}
+          pageSize={10}
+          defaultPage={9}
+          buildHref={(page: number) => `page/${page}`}
+          aria-label="dropdown href based"
+        >
+          <PaginationFirstItem />
+          <PaginationPrevItem />
+          <CustomDropdownPaginationItems truncation siblings={3} boundaries={1}>
+            Page{' '}
+          </CustomDropdownPaginationItems>
+          <PaginationNextItem />
+          <PaginationLastItem />
+        </Pagination>
+      </StorybookCase>
+      <StorybookCase title="Dropdown (onclick-based)">
+        <Pagination
+          totalItems={232}
+          pageSize={10}
+          defaultPage={9}
+          onPageChange={onPageChange}
+          aria-label="dropdown onclick based"
+        >
+          <PaginationFirstItem />
+          <PaginationPrevItem />
+          <CustomDropdownPaginationItems truncation siblings={3} boundaries={1}>
+            Page{' '}
+          </CustomDropdownPaginationItems>
+          <PaginationNextItem />
+          <PaginationLastItem />
+        </Pagination>
+      </StorybookCase>
+      <StorybookCase title="Dropdown and short description">
+        <Pagination
+          totalItems={232}
+          pageSize={10}
+          defaultPage={9}
+          onPageChange={onPageChange}
+          aria-label="dropdown and short description"
+        >
+          <PaginationFirstItem />
+          <PaginationPrevItem />
+          <CustomDropdownPaginationItems
+            truncation
+            siblings={3}
+            boundaries={1}
+            overrides={{
+              itemDescription: ({lastPage}) => (
+                <TextBlock
+                  paddingInline="space020"
+                  typographyPreset="utilityButton020"
+                  stylePreset="paginationItemNonInteractive"
+                >
+                  of {lastPage}
+                </TextBlock>
+              ),
+            }}
+          >
+            Page{' '}
+          </CustomDropdownPaginationItems>
+          <PaginationNextItem />
+          <PaginationLastItem />
+        </Pagination>
+      </StorybookCase>
+      <StorybookCase title="Dropdown and long description">
+        <Pagination
+          totalItems={232}
+          pageSize={10}
+          defaultPage={9}
+          onPageChange={onPageChange}
+          aria-label="dropdown and long description"
+        >
+          <PaginationFirstItem />
+          <PaginationPrevItem />
+          <CustomDropdownPaginationItems
+            truncation
+            siblings={3}
+            boundaries={1}
+            overrides={{
+              itemDescription: ({lastPage}) => (
+                <TextBlock
+                  paddingInline="space020"
+                  typographyPreset="utilityButton020"
+                  stylePreset="paginationItemNonInteractive"
+                >
+                  of {lastPage} pages
+                </TextBlock>
+              ),
+            }}
+          />
+          <PaginationNextItem />
+          <PaginationLastItem />
+        </Pagination>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+
+StoryVariationsInSelection.storyName = 'Variations in selection';
 export const StoryLogicalProps = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Custom button size">
@@ -384,9 +817,9 @@ export const StoryNumberOverrides = () => (
           truncation={false}
           overrides={{
             itemButton: props => (
-              <StyledButton {...props}>
+              <PaginationButton {...props}>
                 <IconFilledCircle />
-              </StyledButton>
+              </PaginationButton>
             ),
           }}
         />

@@ -1,28 +1,33 @@
 import React, {ComponentType} from 'react';
-import {StyledButton} from '../../styled';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {PaginationItemProps} from '../../types';
 import {useTheme} from '../../../theme';
 import {getItemAria} from '../../utils';
 import {get} from '../../../utils/get';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
+import {ButtonOrButtonLinkProps} from '../../../button';
+import {Stack} from '../../../stack';
+import {PaginationButton} from '../button';
 
 export const PaginationItem = React.forwardRef<
-  HTMLButtonElement,
-  PaginationItemProps
+  HTMLElement,
+  ButtonOrButtonLinkProps & PaginationItemProps
 >(
   (
     {
       children,
       selected,
       pageNumber,
+      lastPage,
       href,
       onClick,
-      overrides,
-      itemType,
+      overrides = {},
+      itemType = 'paginationItem',
       /* istanbul ignore next */
       size = 'medium',
+      changePage,
       eventContext = {},
+      /* istanbul ignore next */
       eventOriginator = 'pagination-item',
       ...rest
     },
@@ -40,7 +45,7 @@ export const PaginationItem = React.forwardRef<
     const theme = useTheme();
 
     const itemTypeComponentDefaults =
-      itemType && itemType !== 'paginationItem'
+      itemType !== 'paginationItem'
         ? theme.componentDefaults[itemType][size]
         : undefined;
     const buttonSettings: typeof overrides = {
@@ -63,29 +68,46 @@ export const PaginationItem = React.forwardRef<
     const combinedProps = {
       ...buttonProps,
       ...ariaProps,
-      itemType,
       eventContext: combinedEventContext,
       eventOriginator,
       overrides: buttonSettings,
       ref,
     };
 
-    if (overrides?.itemButton) {
+    const {itemButton, itemDescription: ItemDescription} = overrides;
+
+    if (
+      itemType !== 'paginationItemTruncation' &&
+      (itemButton || ItemDescription)
+    ) {
       const [ItemButton, itemButtonProps] = getComponentOverrides(
-        overrides.itemButton as Override<PaginationItemProps>,
-        StyledButton as ComponentType<PaginationItemProps>,
+        itemButton as Override<ButtonOrButtonLinkProps & PaginationItemProps>,
+        PaginationButton as ComponentType<
+          ButtonOrButtonLinkProps & PaginationItemProps
+        >,
         {
-          ...rest,
+          lastPage,
+          changePage,
           ...combinedProps,
         },
       );
+
       return (
-        <ItemButton href={href} {...rest} {...itemButtonProps}>
-          {children}
-        </ItemButton>
+        <Stack flow="horizontal-center" spaceInline="space010">
+          <ItemButton {...itemButtonProps}>{children}</ItemButton>
+          {ItemDescription && (
+            // @ts-ignore
+            <ItemDescription
+              selected
+              pageNumber={pageNumber}
+              lastPage={lastPage}
+            />
+          )}
+        </Stack>
       );
     }
 
-    return <StyledButton {...combinedProps}>{children}</StyledButton>;
+    // @ts-ignore - href must be allowed to be undefined so that Button renders as a link when appropriate
+    return <PaginationButton {...combinedProps}>{children}</PaginationButton>;
   },
 );

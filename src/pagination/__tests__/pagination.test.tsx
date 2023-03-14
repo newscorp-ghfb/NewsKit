@@ -38,6 +38,7 @@ import {
 import {TextBlock} from '../../text-block';
 import {EventTrigger} from '../../instrumentation';
 import {compileTheme, createTheme} from '../../theme';
+import {PaginationListItem} from '../components/list-item';
 
 const paginationItemContent = 'Pagination Item';
 const textBlock = '...';
@@ -102,9 +103,11 @@ type PaginationWithItemProps = {
 };
 
 const PaginationWithItem = ({props, itemProps}: PaginationWithItemProps) => (
-  <Pagination {...props}>
-    <PaginationItem size="small" key="1" {...itemProps} />
-  </Pagination>
+  <PaginationListItem>
+    <Pagination {...props}>
+      <PaginationItem size="small" key="1" {...itemProps} />
+    </Pagination>
+  </PaginationListItem>
 );
 
 describe('Pagination and PaginationItems only', () => {
@@ -124,6 +127,7 @@ describe('Pagination and PaginationItems only', () => {
       pageSize: 10,
       defaultPage: 4,
       buildHref,
+      children: null,
     };
     controlledProps = {
       totalItems: 232,
@@ -131,6 +135,7 @@ describe('Pagination and PaginationItems only', () => {
       page: 4,
       defaultPage: 4,
       onPageChange,
+      children: null,
     };
   });
 
@@ -472,6 +477,27 @@ describe('Pagination and PaginationItems only', () => {
                 stylePreset: 'paginationItem',
               }}
             />
+          ),
+        },
+      } as PaginationItemProps;
+      const fragment = renderToFragmentWithTheme(PaginationWithItem, {
+        props: defaultProps,
+        itemProps,
+      });
+      expect(fragment).toMatchSnapshot();
+    });
+
+    it('renders with overrides.itemDescription', () => {
+      const itemProps = {
+        size: 'medium' as PaginationSize,
+        children: paginationItemContent,
+        ...pageItemProps,
+        overrides: {
+          itemButton: () => null,
+          itemDescription: props => (
+            <span>
+              Page {props.pageNumber} of {props.lastPage}
+            </span>
           ),
         },
       } as PaginationItemProps;

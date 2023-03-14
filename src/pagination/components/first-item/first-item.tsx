@@ -49,6 +49,7 @@ export const PaginationFirstItem = React.forwardRef<
         data-testid="pagination-first-item"
         eventOriginator="pagination-first-item"
         eventContext={eventContext}
+        pageNumber={1}
         {...propsFromContext}
         overrides={overrides}
         ref={ref}

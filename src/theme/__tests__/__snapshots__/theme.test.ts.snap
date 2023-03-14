@@ -2407,6 +2407,26 @@ Object {
       "width": "sizing050",
     },
   },
+  "paginationItemInteractive": Object {
+    "large": Object {
+      "iconSize": "iconSize020",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "stylePreset": "paginationItemInteractive",
+    },
+    "medium": Object {
+      "iconSize": "iconSize020",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "stylePreset": "paginationItemInteractive",
+    },
+    "small": Object {
+      "iconSize": "iconSize010",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "stylePreset": "paginationItemInteractive",
+    },
+  },
   "paginationItemLast": Object {
     "large": Object {
       "iconSize": "iconSize020",
@@ -5670,6 +5690,18 @@ Object {
     "selected:hover": Object {
       "color": "{{colors.interactiveLink030}}",
       "textDecoration": "none",
+    },
+  },
+  "paginationItemInteractive": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.interactiveLink010}}",
+      "cursor": "default",
+      "iconColor": "{{colors.interactiveLink010}}",
+    },
+    "disabled": Object {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}",
     },
   },
   "paginationItemNonInteractive": Object {

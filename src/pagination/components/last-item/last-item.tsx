@@ -51,6 +51,7 @@ export const PaginationLastItem = React.forwardRef<
         data-testid="pagination-last-item"
         eventOriginator="pagination-last-item"
         eventContext={eventContext}
+        pageNumber={lastPage}
         {...propsFromContext}
         overrides={overrides}
         ref={ref}

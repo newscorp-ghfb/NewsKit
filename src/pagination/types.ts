@@ -2,7 +2,7 @@ import {MQ} from '../utils';
 import {LogicalProps} from '../utils/logical-properties';
 
 import {EventData} from '../instrumentation';
-import {Override} from '../utils/overrides';
+import {ComponentOverrides, Override} from '../utils/overrides';
 import {NewsKitIconProps} from '../icons';
 import {ButtonOrButtonLinkProps, ButtonProps} from '../button/types';
 
@@ -11,6 +11,7 @@ import {PaginationFirstItemProps} from './components/first-item/types';
 import {PaginationLastItemProps} from './components/last-item/types';
 import {PaginationNextItemProps} from './components/next-item/types';
 import {PaginationPrevItemProps} from './components/prev-item/types';
+import {TextBlockProps} from '../text-block';
 
 export type PaginationSize = 'small' | 'medium' | 'large';
 
@@ -40,7 +41,7 @@ export interface PaginationItemAriaInput {
 }
 
 export interface PaginationProps extends React.AriaAttributes {
-  children?: Exclude<React.ReactNode, 'undefined'>;
+  children: Exclude<React.ReactNode, 'undefined'>;
   size?: PaginationSize;
   pageSize: number;
   page?: number;
@@ -50,12 +51,20 @@ export interface PaginationProps extends React.AriaAttributes {
   onPageChange?: (pageNumber: number) => void;
   overrides?: {
     stylePreset?: MQ<string>;
+    typographyPreset?: MQ<string>;
   } & LogicalProps;
 }
 
 export interface ComponentSizeProps extends React.AriaAttributes {
+  children?: Exclude<React.ReactNode, 'undefined'>;
   path?: string;
   size?: PaginationSize;
+}
+
+export interface PaginationItemDescriptionProps extends ComponentOverrides {
+  selected: boolean;
+  pageNumber: number;
+  lastPage: number;
 }
 
 export interface PaginationItemsProps extends ButtonProps, EventData {
@@ -66,24 +75,33 @@ export interface PaginationItemsProps extends ButtonProps, EventData {
   overrides?: ButtonProps['overrides'] & {
     icon?: Override<NewsKitIconProps>;
     itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
+    itemDescription?: Override<TextBlockProps & PaginationItemDescriptionProps>;
   };
 }
 
-export interface PaginationItemProps extends ButtonProps, EventData {
+export interface PaginationItemProps extends EventData {
   children?: Exclude<React.ReactNode, 'undefined'>;
+  ref?: React.RefObject<HTMLElement> | React.ForwardedRef<HTMLElement>;
   itemType?: PaginationItemType;
-  selected?: boolean;
-  lastPage: number;
   pageNumber?: number;
   pageSize?: number;
   totalItems?: number;
   href?: string;
+  // The below 4 are derived props
+  selected?: boolean;
+  lastPage?: number;
+  buildHref?: (pageNumber: number) => string;
+  changePage?: (pageNumber: number) => void;
+  // These render functions can be used to change the appearance of the
+  // truncation icon, the number button and the text description, respectively
   overrides?: ButtonProps['overrides'] & {
     icon?: Override<NewsKitIconProps>;
     itemButton?: Override<ButtonOrButtonLinkProps & PaginationItemProps>;
+    itemDescription?: Override<TextBlockProps & PaginationItemDescriptionProps>;
   };
 }
 
+// The usePaginationContext hook returns this data
 export interface PaginationProviderContext {
   size: PaginationSize;
   pageSize: number;

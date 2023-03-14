@@ -9,10 +9,10 @@ import {
 import {useTheme} from '../../../theme';
 import {IconFilledMoreHoriz, NewsKitIconProps} from '../../../icons';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
-import {StyledListItem} from '../../styled';
 import {PaginationItem} from '../item/pagination-item';
 import {usePaginationContext} from '../../context';
 import {getItemsLayout} from '../../utils';
+import {PaginationListItem} from '../list-item';
 
 const paginationItemTruncation = 'paginationItemTruncation' as PaginationItemType;
 
@@ -29,7 +29,9 @@ export const PaginationItems = ({
   truncation = true,
   siblings = 3,
   boundaries = 1,
-  eventContext,
+  eventContext = {},
+  /* istanbul ignore next */
+  eventOriginator = 'pagination-item',
 }: PaginationItemsProps) => {
   const theme = useTheme();
   const {
@@ -77,15 +79,14 @@ export const PaginationItems = ({
 
     let truncationCount = 0;
     /* istanbul ignore next */
-    layout.forEach((element: PaginationLayoutItem = 0) => {
+    layout.forEach((element: PaginationLayoutItem = 1) => {
       switch (element) {
         case '-':
           truncationCount += 1;
           paginationElements.push(
-            <StyledListItem
+            <PaginationListItem
               key={`trunc${truncationCount}`}
               aria-hidden="true"
-              size={size}
             >
               <PaginationItem
                 itemType={paginationItemTruncation}
@@ -95,28 +96,27 @@ export const PaginationItems = ({
                 overrides={overrides}
                 {...staticProps}
               >
+                [
                 <PaginationIcon
                   {...(paginationIconProps as NewsKitIconProps)}
                 />
+                ]
               </PaginationItem>
-            </StyledListItem>,
+            </PaginationListItem>,
           );
-          break;
-        case 0:
-          /* istanbul ignore next */
-          // This will never happen
           break;
         default:
           {
             const pageNumber: number = element;
             const href = buildHref! && buildHref(pageNumber);
             paginationElements.push(
-              <StyledListItem key={`page${pageNumber}`} size={size}>
+              <PaginationListItem key={`page${pageNumber}`}>
                 <PaginationItem
                   href={href}
                   onClick={() => changePage(pageNumber)}
                   selected={pageNumber === page}
                   eventContext={eventContext}
+                  eventOriginator={eventOriginator}
                   size={size}
                   overrides={overrides}
                   pageNumber={pageNumber}
@@ -124,7 +124,7 @@ export const PaginationItems = ({
                 >
                   {children || pageNumber}
                 </PaginationItem>
-              </StyledListItem>,
+              </PaginationListItem>,
             );
           }
           break;
