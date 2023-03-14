@@ -209,13 +209,12 @@ StoryVariationsInTruncation.storyName = 'Variations in truncation';
 
 export const StoryVariationsInInput = () => {
   const CustomInputPaginationItemButton = ({
-    children,
     pageNumber,
     lastPage = 1,
     changePage = () => {},
   }: ButtonOrButtonLinkProps & PaginationItemProps) => {
     const [valid, setValid] = useState(true);
-    const inputRef = useRef<HTMLElement>(null);
+    const inputRef = useRef<HTMLInputElement>(null);
     const validateAndChangePage = (newPage: number) => {
       if (newPage >= 1 && newPage <= lastPage) {
         setValid(true);
@@ -231,7 +230,6 @@ export const StoryVariationsInInput = () => {
         onSubmit={values => validateAndChangePage(parseInt(values.newPage, 10))}
       >
         <FormInput name="newPage">
-          {children && children !== pageNumber && {children}}
           <TextField
             ref={inputRef}
             size="small"
@@ -287,6 +285,7 @@ export const StoryVariationsInInput = () => {
             {...rest}
           />
           {ItemDescription && (
+            // @ts-ignore
             <ItemDescription
               selected={pageNumber === page}
               pageNumber={page}
@@ -548,6 +547,7 @@ export const StoryVariationsInSelection = () => {
             {paginationElements as []}
           </Select>
           {ItemDescription && (
+            // @ts-ignore
             <ItemDescription selected pageNumber={page} lastPage={lastPage} />
           )}
         </Stack>
