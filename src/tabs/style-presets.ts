@@ -35,7 +35,7 @@ export default {
       outlineColor: '{{outlines.outlineColorDefault}}',
       outlineStyle: '{{outlines.outlineStyleDefault}}',
       outlineWidth: '{{outlines.outlineWidthDefault}}',
-      outlineOffset: '-2px',
+      outlineOffset: '-{{outlines.outlineOffsetDefault}}',
       safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
     },
   },
