@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {GridLayout} from 'newskit';
+import NextLink from 'next/link';
 import {Release, ReleasesPageProps} from '../utils/release-notes/types';
 import {
   Explore,
@@ -101,22 +102,24 @@ const Index = ({
             marginBlockEnd: {xs: 'space080', md: 'space000'},
           }}
         >
-          <FeatureCard
-            title="Contribute"
-            description="Join the community and help grow NewsKit for everyone."
-            stylePrefix="contributeCard"
-            layout="horizontal"
-            overrides={{
-              title: {typographyPreset: 'editorialHeadline060'},
-              description: {typographyPreset: 'editorialSubheadline010'},
-              button: {
-                paddingInline: 'space000',
-                stylePreset: 'linkStandaloneInversePersistent',
-              },
-            }}
-            buttonLabel="Start contributing"
-            buttonHref="/about/contribute"
-          />
+          <NextLink legacyBehavior href="/about/contribute" passHref>
+            <FeatureCard
+              title="Contribute"
+              description="Join the community and help grow NewsKit for everyone."
+              stylePrefix="contributeCard"
+              layout="horizontal"
+              overrides={{
+                title: {typographyPreset: 'editorialHeadline060'},
+                description: {typographyPreset: 'editorialSubheadline010'},
+                button: {
+                  paddingInline: 'space000',
+                  stylePreset: 'linkStandaloneInversePersistent',
+                },
+              }}
+              buttonLabel="Start contributing"
+              buttonHref="/about/contribute"
+            />
+          </NextLink>
         </GridLayout>
         <GridLayout
           overrides={{

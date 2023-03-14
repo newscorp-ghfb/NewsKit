@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Headline, TextBlock, GridLayout, Card} from 'newskit';
+import NextLink from 'next/link';
 import {ContentPrimary} from '../../content-structure';
 import {Illustration} from '../../illustrations/illustration-loader';
 
@@ -49,31 +50,32 @@ export const Explore = () => (
       columnGap="space050"
     >
       {cardsContent.map(({media, title, href, description}) => (
-        <Card
-          key={href}
-          href={href}
-          media={() => media}
-          overrides={{
-            stylePreset: 'homepageCard',
-            marginBlockEnd: {xs: 'space080', md: 'space000'},
-          }}
-        >
-          <Headline
+        <NextLink legacyBehavior href={href} key={href} passHref>
+          <Card
+            href={href}
+            media={() => media}
             overrides={{
-              marginBlockEnd: 'space040',
-              typographyPreset: 'editorialHeadline020',
-              heading: {stylePreset: 'exploreCardLink'},
+              stylePreset: 'homepageCard',
+              marginBlockEnd: {xs: 'space080', md: 'space000'},
             }}
           >
-            {title}
-          </Headline>
-          <TextBlock
-            marginBlockEnd="space040"
-            typographyPreset="editorialParagraph020"
-          >
-            {description}
-          </TextBlock>
-        </Card>
+            <Headline
+              overrides={{
+                marginBlockEnd: 'space040',
+                typographyPreset: 'editorialHeadline020',
+                heading: {stylePreset: 'exploreCardLink'},
+              }}
+            >
+              {title}
+            </Headline>
+            <TextBlock
+              marginBlockEnd="space040"
+              typographyPreset="editorialParagraph020"
+            >
+              {description}
+            </TextBlock>
+          </Card>
+        </NextLink>
       ))}
     </GridLayout>
   </ContentPrimary>

@@ -44,4 +44,5 @@ export interface StructuredListCellProps extends CellProps {
   children: React.ReactNode;
   pullRight?: boolean;
   align?: StructuredListCellAlign;
+  fullWidthSingleCell?: boolean;
 }

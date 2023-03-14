@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
+import NextLink from 'next/link';
 import {
   Block,
   Grid,
@@ -39,23 +40,25 @@ const UtilitiesList = () => (
   <Block stylePreset="componentsUtilitiesStructuredList">
     <StructuredList divider>
       {UtilityCategories.map(({title, id, description}: any) => (
-        <StructuredListItem key={id} href={id} ariaLabel={title}>
-          <StructuredListCell>
-            <TextBlock
-              stylePreset="inkContrast"
-              typographyPreset="utilityHeading010"
-            >
-              {title}
-            </TextBlock>
-            <TextBlock
-              marginBlockStart="space030"
-              stylePreset="inkContrast"
-              typographyPreset="utilityBody020"
-            >
-              {description}
-            </TextBlock>
-          </StructuredListCell>
-        </StructuredListItem>
+        <NextLink key={id} legacyBehavior href={id} passHref>
+          <StructuredListItem href={id} ariaLabel={title}>
+            <StructuredListCell>
+              <TextBlock
+                stylePreset="inkContrast"
+                typographyPreset="utilityHeading010"
+              >
+                {title}
+              </TextBlock>
+              <TextBlock
+                marginBlockStart="space030"
+                stylePreset="inkContrast"
+                typographyPreset="utilityBody020"
+              >
+                {description}
+              </TextBlock>
+            </StructuredListCell>
+          </StructuredListItem>
+        </NextLink>
       ))}
     </StructuredList>
   </Block>
