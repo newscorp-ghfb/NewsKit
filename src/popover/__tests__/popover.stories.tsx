@@ -159,12 +159,6 @@ StoryPopoverDefault.parameters = {
   percy: {enableJavaScript: true},
 };
 
-const WrapContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 8px;
-`;
-
 export const StoryPopoverPlacements = () => (
   <GridPage>
     {placements.map(placement => (
@@ -173,8 +167,15 @@ export const StoryPopoverPlacements = () => (
         placement={placement}
         {...defaultContents}
       >
-        <Button overrides={btnOverrides}>
-          <WrapContainer>Show {placement} popover</WrapContainer>
+        <Button
+          overrides={btnOverrides}
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            rowGap: '8px',
+          }}
+        >
+          Show {placement} popover
         </Button>
       </GridLayoutPopoverItem>
     ))}
