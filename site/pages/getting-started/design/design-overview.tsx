@@ -79,11 +79,6 @@ const DesignOverview = (layoutProps: LayoutProps) => (
       },
       introduction: `NewsKit has everything you need to build scalable digital products, including Figma component libraries, theme libraries, plugins and guidance.`,
     }}
-    featureCard={{
-      title: 'Need help?',
-      description: 'Can’t find what you’re looking for?',
-      href: 'about/contact-us/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="why?">
