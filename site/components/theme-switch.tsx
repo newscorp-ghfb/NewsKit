@@ -20,10 +20,7 @@ export const ThemeSwitch: React.FC<
       }}
       eventOriginator="theme-switch-button"
       data-testid="theme-switch-button"
-      onClick={e => {
-        console.time('theme-switch');
-        toggle(e);
-      }}
+      onClick={toggle}
       title={`Enable ${isDark ? 'light' : 'dark'} mode`}
       aria-label={`Enable ${isDark ? 'light' : 'dark'} mode`}
       aria-pressed={isDark ? 'true' : 'false'}
