@@ -1,6 +1,8 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
+import {GridLayout} from '../../grid-layout';
 import {Headline} from '..';
+import {TextBlock} from '../../text-block';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {H6, H5, H4, H3, H2, H1} from '../..';
@@ -152,110 +154,145 @@ StoryHeadingVariations.storyName = 'Variations';
 
 export const StoryHeadingLogicalProps = () => (
   <StorybookPage columns="1fr 1fr">
-    <StorybookCase title="editorialHeadline070">
-      <MarginOverridesWrapper>
-        <H1
-          overrides={{
-            typographyPreset: 'editorialHeadline070',
-            marginBlock: 'space030',
-            marginInline: 'space030',
-            paddingBlock: 'space030',
-            paddingInline: 'space030',
-          }}
-        >
-          {BODY}
-        </H1>
-      </MarginOverridesWrapper>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          editorialHeadline070
+        </TextBlock>
+        <MarginOverridesWrapper>
+          <H1
+            overrides={{
+              typographyPreset: 'editorialHeadline070',
+              marginBlock: 'space030',
+              marginInline: 'space030',
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }}
+          >
+            {BODY}
+          </H1>
+        </MarginOverridesWrapper>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="editorialHeadline060">
-      <MarginOverridesWrapper>
-        <H1
-          overrides={{
-            typographyPreset: 'editorialHeadline060',
-            marginBlock: 'space030',
-            marginInline: 'space030',
-            paddingBlock: 'space030',
-            paddingInline: 'space030',
-          }}
-        >
-          {BODY}
-        </H1>
-      </MarginOverridesWrapper>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          editorialHeadline060
+        </TextBlock>
+        <MarginOverridesWrapper>
+          <H1
+            overrides={{
+              typographyPreset: 'editorialHeadline060',
+              marginBlock: 'space030',
+              marginInline: 'space030',
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }}
+          >
+            {BODY}
+          </H1>
+        </MarginOverridesWrapper>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="editorialHeadline050">
-      <MarginOverridesWrapper>
-        <H2
-          overrides={{
-            typographyPreset: 'editorialHeadline050',
-            marginBlock: 'space030',
-            marginInline: 'space030',
-            paddingBlock: 'space030',
-            paddingInline: 'space030',
-          }}
-        >
-          {BODY}
-        </H2>
-      </MarginOverridesWrapper>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          editorialHeadline050
+        </TextBlock>
+        <MarginOverridesWrapper>
+          <H2
+            overrides={{
+              typographyPreset: 'editorialHeadline050',
+              marginBlock: 'space030',
+              marginInline: 'space030',
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }}
+          >
+            {BODY}
+          </H2>
+        </MarginOverridesWrapper>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="editorialHeadline040">
-      <MarginOverridesWrapper>
-        <H3
-          overrides={{
-            typographyPreset: 'editorialHeadline040',
-            marginBlock: 'space030',
-            marginInline: 'space030',
-            paddingBlock: 'space030',
-            paddingInline: 'space030',
-          }}
-        >
-          {BODY}
-        </H3>
-      </MarginOverridesWrapper>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          editorialHeadline040
+        </TextBlock>
+        <MarginOverridesWrapper>
+          <H3
+            overrides={{
+              typographyPreset: 'editorialHeadline040',
+              marginBlock: 'space030',
+              marginInline: 'space030',
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }}
+          >
+            {BODY}
+          </H3>
+        </MarginOverridesWrapper>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="editorialHeadline030">
-      <MarginOverridesWrapper>
-        <H4
-          overrides={{
-            typographyPreset: 'editorialHeadline030',
-            marginBlock: 'space030',
-            marginInline: 'space030',
-            paddingBlock: 'space030',
-            paddingInline: 'space030',
-          }}
-        >
-          {BODY}
-        </H4>
-      </MarginOverridesWrapper>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          editorialHeadline030
+        </TextBlock>
+        <MarginOverridesWrapper>
+          <H4
+            overrides={{
+              typographyPreset: 'editorialHeadline030',
+              marginBlock: 'space030',
+              marginInline: 'space030',
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }}
+          >
+            {BODY}
+          </H4>
+        </MarginOverridesWrapper>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="editorialHeadline020">
-      <MarginOverridesWrapper>
-        <H5
-          overrides={{
-            typographyPreset: 'editorialHeadline020',
-            marginBlock: 'space030',
-            marginInline: 'space030',
-            paddingBlock: 'space030',
-            paddingInline: 'space030',
-          }}
-        >
-          {BODY}
-        </H5>
-      </MarginOverridesWrapper>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          editorialHeadline020
+        </TextBlock>
+        <MarginOverridesWrapper>
+          <H5
+            overrides={{
+              typographyPreset: 'editorialHeadline020',
+              marginBlock: 'space030',
+              marginInline: 'space030',
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }}
+          >
+            {BODY}
+          </H5>
+        </MarginOverridesWrapper>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="editorialHeadline010">
-      <MarginOverridesWrapper>
-        <H6
-          overrides={{
-            typographyPreset: 'editorialHeadline010',
-            marginBlock: 'space030',
-            marginInline: 'space030',
-            paddingBlock: 'space030',
-            paddingInline: 'space030',
-          }}
-        >
-          {BODY}
-        </H6>
-      </MarginOverridesWrapper>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          editorialHeadline010
+        </TextBlock>
+        <MarginOverridesWrapper>
+          <H6
+            overrides={{
+              typographyPreset: 'editorialHeadline010',
+              marginBlock: 'space030',
+              marginInline: 'space030',
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            }}
+          >
+            {BODY}
+          </H6>
+        </MarginOverridesWrapper>
+      </GridLayout>
     </StorybookCase>
   </StorybookPage>
 );
@@ -263,55 +300,80 @@ StoryHeadingLogicalProps.storyName = 'Logical props';
 
 export const StoryHeadingStylingOverrides = () => (
   <StorybookPage columns="1fr 1fr 1fr">
-    <StorybookCase title="utilityHeading50">
-      <H2
-        overrides={{
-          stylePreset: 'headingCustom',
-          typographyPreset: 'utilityHeading050',
-        }}
-      >
-        {BODY}
-      </H2>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          utilityHeading050
+        </TextBlock>
+        <H2
+          overrides={{
+            stylePreset: 'headingCustom',
+            typographyPreset: 'utilityHeading050',
+          }}
+        >
+          {BODY}
+        </H2>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="utilityHeading40">
-      <H3
-        overrides={{
-          stylePreset: 'headingCustom',
-          typographyPreset: 'utilityHeading040',
-        }}
-      >
-        {BODY}
-      </H3>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          utilityHeading040
+        </TextBlock>
+        <H3
+          overrides={{
+            stylePreset: 'headingCustom',
+            typographyPreset: 'utilityHeading040',
+          }}
+        >
+          {BODY}
+        </H3>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="utilityHeading30">
-      <H4
-        overrides={{
-          stylePreset: 'headingCustom',
-          typographyPreset: 'utilityHeading030',
-        }}
-      >
-        {BODY}
-      </H4>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          utilityHeading030
+        </TextBlock>
+        <H4
+          overrides={{
+            stylePreset: 'headingCustom',
+            typographyPreset: 'utilityHeading030',
+          }}
+        >
+          {BODY}
+        </H4>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="utilityHeading20">
-      <H5
-        overrides={{
-          stylePreset: 'headingCustom',
-          typographyPreset: 'utilityHeading020',
-        }}
-      >
-        {BODY}
-      </H5>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          utilityHeading040
+        </TextBlock>
+        <H5
+          overrides={{
+            stylePreset: 'headingCustom',
+            typographyPreset: 'utilityHeading020',
+          }}
+        >
+          {BODY}
+        </H5>
+      </GridLayout>
     </StorybookCase>
-    <StorybookCase title="utilityHeading10">
-      <H6
-        overrides={{
-          stylePreset: 'headingCustom',
-          typographyPreset: 'utilityHeading010',
-        }}
-      >
-        {BODY}
-      </H6>
+    <StorybookCase>
+      <GridLayout rowGap="space045">
+        <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
+          utilityHeading040
+        </TextBlock>
+        <H6
+          overrides={{
+            stylePreset: 'headingCustom',
+            typographyPreset: 'utilityHeading010',
+          }}
+        >
+          {BODY}
+        </H6>
+      </GridLayout>
     </StorybookCase>
   </StorybookPage>
 );
