@@ -32,6 +32,7 @@ import {Stack} from '../../stack';
 import {PaginationListItem} from '../components/list-item';
 import {PaginationButton} from '../components/button';
 import {ButtonOrButtonLinkProps} from '../../button';
+import {getSSRId} from '../..';
 
 const paginationItemCustomThemeObject: CreateThemeArgs = {
   name: 'pagination-static-theme',
@@ -225,12 +226,26 @@ export const StoryVariationsInInput = () => {
       inputRef.current?.blur();
     };
 
+    const ariaId = getSSRId();
+    const inputLabelId = `page-input-label${ariaId}`;
+    const inputId = `page-input${ariaId}`;
+
     return (
       <Form
         onSubmit={values => validateAndChangePage(parseInt(values.newPage, 10))}
       >
         <FormInput name="newPage">
+          <label
+            id={inputLabelId}
+            htmlFor={inputId}
+            aria-hidden
+            style={{display: 'none'}}
+          >
+            Enter page between 1 and {lastPage}
+          </label>
           <TextField
+            id={inputId}
+            aria-labelledby={inputLabelId}
             ref={inputRef}
             size="small"
             defaultValue={pageNumber}
