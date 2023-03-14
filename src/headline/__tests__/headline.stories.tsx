@@ -348,7 +348,7 @@ export const StoryHeadingStylingOverrides = () => (
     <StorybookCase>
       <GridLayout rowGap="space045">
         <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
-          utilityHeading040
+          utilityHeading020
         </TextBlock>
         <H5
           overrides={{
@@ -363,7 +363,7 @@ export const StoryHeadingStylingOverrides = () => (
     <StorybookCase>
       <GridLayout rowGap="space045">
         <TextBlock stylePreset="inkBase" typographyPreset="utilityBody020">
-          utilityHeading040
+          utilityHeading010
         </TextBlock>
         <H6
           overrides={{
@@ -397,6 +397,14 @@ StoryHeadingOverrides.storyName = 'Overrides';
 export default {
   title: 'Components/Headline',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Headline',
+      url: 'https://newskit.co.uk/components/headline/',
+      description:
+        'Headline is used to highlight the main point or category of the following text.',
+    },
+  },
   decorators: [
     (
       Story: StoryType,
