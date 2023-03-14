@@ -241,6 +241,14 @@ StoryOverriddenIcons.storyName = 'Overrides';
 export default {
   title: 'Components/Icons',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Icons',
+      url: 'https://www.newskit.co.uk/components/icons/',
+      description:
+        'Icons are small SVG shapes, ranging from basic UI shapes to brand logos.',
+    },
+  },
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider
