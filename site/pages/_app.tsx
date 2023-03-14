@@ -2,7 +2,6 @@ import * as React from 'react';
 import {
   createEventInstrumentation,
   instrumentationHandlers,
-  UncompiledTheme,
   NewsKitProvider,
   compileTheme,
   composeInstrumentationMiddleware,
@@ -27,7 +26,7 @@ interface Props {
 
 interface State {
   themeMode: string;
-  theme: UncompiledTheme;
+  // theme: UncompiledTheme;
 }
 
 const tealiumHandler = composeInstrumentationMiddleware(
@@ -52,7 +51,7 @@ export default class MyApp extends App<Props, State> {
 
     this.state = {
       themeMode: 'light',
-      theme: docsThemeLight,
+      // theme: docsThemeLight,
     } as State;
 
     this.mediaQueryListener = this.mediaQueryListener.bind(this);
@@ -123,9 +122,10 @@ export default class MyApp extends App<Props, State> {
       themeMode === 'dark' ? docsDarkThemeCompiled : docsLightThemeCompiled;
     this.setState({
       themeMode,
-      theme,
+      // theme,
     });
     document.body.style.backgroundColor = theme.colors.interfaceBackground;
+    console.timeEnd('theme-switch');
   };
 
   toggleTheme() {
@@ -139,7 +139,7 @@ export default class MyApp extends App<Props, State> {
 
   render() {
     const {Component, pageProps, path} = this.props;
-    const {theme, themeMode} = this.state as State;
+    const {themeMode} = this.state as State;
     const pathTokens = path.split('/').filter(Boolean);
 
     return (
@@ -154,7 +154,11 @@ export default class MyApp extends App<Props, State> {
         />
 
         <NewsKitProvider
-          theme={theme}
+          theme={
+            themeMode === 'dark'
+              ? docsDarkThemeCompiled
+              : docsLightThemeCompiled
+          }
           themeOptions={{exposeCssVariables: true}}
           layer={{zIndex: 1000}}
           instrumentation={createEventInstrumentation(handlers, {

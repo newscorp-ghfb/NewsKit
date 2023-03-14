@@ -1,12 +1,13 @@
 import React from 'react';
 import {
-  compileTheme,
+  // compileTheme,
   StylePreset,
   Theme,
   ThemeProvider,
   useTheme,
 } from '../theme';
 import {deepMerge} from './deep-merge';
+import {recurseUnknown} from './recurse-unknown';
 
 export type NewsKitReactComponents<T> = React.FC<T> & {
   stylePresets?: Record<string, StylePreset>;
@@ -17,13 +18,17 @@ const mergeTheme = (
   defaults: Record<string, Object>,
   stylePresets?: Record<string, StylePreset>,
 ): Theme => {
-  const newTheme = compileTheme({
+  const compiledStylePresets = recurseUnknown(
+    // @ts-ignore
+    theme,
+    stylePresets,
+    console.error.bind(console),
+  );
+  return {
     ...theme,
-    compiled: false,
     componentDefaults: deepMerge(defaults, theme.componentDefaults),
-    stylePresets: deepMerge(stylePresets, theme.stylePresets),
-  });
-  return newTheme;
+    stylePresets: deepMerge(compiledStylePresets, theme.stylePresets),
+  };
 };
 
 const objectIsEmpty = (obj: Object) => Object.keys(obj).length === 0;

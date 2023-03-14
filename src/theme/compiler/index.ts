@@ -8,6 +8,8 @@ export const compileTheme = (
   theme: UncompiledTheme | Theme,
   options: ThemeCompilerOptions = {},
 ): Theme => {
+  // console.time(`compile-${theme.name || 'unknown'}`);
+
   if (!theme || theme.compiled === true) {
     return theme;
   }
@@ -24,9 +26,11 @@ export const compileTheme = (
   };
 
   const {icons = {}, ...filteredTheme} = uncompiledTheme;
-  return {
+  const r = {
     ...(recurseUnknown(uncompiledTheme, filteredTheme, errorLogger) as any),
     icons,
     compiled: true,
   };
+  // console.timeEnd(`compile-${theme.name || 'unknown'}`);
+  return r;
 };
