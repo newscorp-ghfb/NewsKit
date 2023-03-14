@@ -207,7 +207,7 @@ const StackComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v0.7.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/stack',
-      storybookId: 'components-stack--story-stack-with-defaults-only',
+      storybookId: 'components-stack--story-stack-default',
     }}
   >
     <ComponentPageCell>

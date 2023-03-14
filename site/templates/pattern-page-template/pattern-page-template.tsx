@@ -34,7 +34,7 @@ export const PatternPageTemplate: React.FC<PatternPageTemplateProps> = ({
             <PageTemplate
               {...rest}
               headTags={{
-                imageUrl: 'social/pattern.png',
+                imageUrl: 'social/patterns.png',
                 alt: 'Pattern',
                 title: headTags.title,
                 description: headTags.description,

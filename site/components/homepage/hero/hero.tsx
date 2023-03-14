@@ -77,38 +77,50 @@ export const Hero = ({
             }}
           >
             <GridLayoutItem>
-              <NextLink
-                legacyBehavior
-                href="/getting-started/design/design-overview"
-                passHref
-              >
-                <>
-                  <Visible xs sm>
+              <>
+                <Visible xs sm>
+                  <NextLink
+                    legacyBehavior
+                    href={DESIGN_BUTTON_PROPS.href}
+                    passHref
+                  >
                     <Button {...DESIGN_BUTTON_PROPS}>Designing</Button>
-                  </Visible>
-                  <Visible md lg xl>
+                  </NextLink>
+                </Visible>
+                <Visible md lg xl>
+                  <NextLink
+                    legacyBehavior
+                    href={DESIGN_BUTTON_PROPS.href}
+                    passHref
+                  >
                     <Button {...DESIGN_BUTTON_PROPS}>Start designing</Button>
-                  </Visible>
-                </>
-              </NextLink>
+                  </NextLink>
+                </Visible>
+              </>
             </GridLayoutItem>
             <GridLayoutItem>
-              <NextLink
-                legacyBehavior
-                href="/getting-started/code/engineering-quickstart"
-                passHref
-              >
-                <>
-                  <Visible xs sm>
+              <>
+                <Visible xs sm>
+                  <NextLink
+                    legacyBehavior
+                    href={DEVELOPING_BUTTON_PROPS.href}
+                    passHref
+                  >
                     <Button {...DEVELOPING_BUTTON_PROPS}>Developing</Button>
-                  </Visible>
-                  <Visible md lg xl>
+                  </NextLink>
+                </Visible>
+                <Visible md lg xl>
+                  <NextLink
+                    legacyBehavior
+                    href={DEVELOPING_BUTTON_PROPS.href}
+                    passHref
+                  >
                     <Button {...DEVELOPING_BUTTON_PROPS}>
                       Start developing
                     </Button>
-                  </Visible>
-                </>
-              </NextLink>
+                  </NextLink>
+                </Visible>
+              </>
             </GridLayoutItem>
           </GridLayout>
         </GridLayoutItem>

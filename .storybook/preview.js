@@ -18,9 +18,9 @@ import {
 
 const unlimitedScenarios = [
   'Accordion',
+  'Grid',
   'Paragraph',
-  'grid',
-  'stack',
+  'Stack',
   'card',
   'drawer',
   'modal',

@@ -748,6 +748,14 @@ export const routes = [
             illustration: 'components/menu/menu-illustration',
           },
           {
+            title: 'Pagination',
+            page: true,
+            id: '/components/pagination',
+            description:
+              'Pagination lets users navigate through multiple pages.',
+            illustration: 'components/pagination/hero',
+          },
+          {
             title: 'Scroll',
             page: true,
             id: '/components/scroll',
@@ -1008,8 +1016,34 @@ export const routes = [
           'Design patterns provide a framework for solving a particular user problem in a consistent, considered way.',
       },
       {
+        title: 'Solutions',
+        id: '/patterns/solutions',
+        description:
+          'Solutions are multi-tenant products that are designed, developed and ready for your team to use.',
+        subNav: [
+          {
+            title: 'NewsKit Account',
+            page: true,
+            id: '/patterns/solutions/account',
+            description:
+              'Complete account package with customer information and subscription management.',
+            illustration: 'patterns/solutions/account/01-hero',
+          },
+          {
+            title: 'NewsKit Help Hub',
+            page: true,
+            id: '/patterns/solutions/help-hub',
+            description:
+              'Help module that enables your customers to self-serve support.',
+            illustration: 'patterns/solutions/help-hub/01-hero',
+          },
+        ],
+      },
+      {
         title: 'Onboarding',
         id: '/patterns/onboarding',
+        description:
+          'Practical guidance for onboarding users onto your product or service.',
         subNav: [
           {
             title: 'Overview',
@@ -1043,6 +1077,7 @@ export const routes = [
       {
         title: 'Forms',
         id: '/patterns/forms',
+        description: 'Best practices to follow when creating form patterns.',
         subNav: [
           {
             title: 'Overview',

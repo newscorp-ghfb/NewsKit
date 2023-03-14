@@ -71,11 +71,6 @@ const InstrumentationSetup = (layoutProps: LayoutProps) => (
       },
       introduction: `Set up instrumentation on NewsKit components.`,
     }}
-    featureCard={{
-      title: 'Need help?',
-      description: 'Can’t find what you’re looking for?',
-      href: 'about/contact-us/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="overview">
