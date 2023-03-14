@@ -40,7 +40,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
     componentDefaultsKey="pagination"
     meta={{
       status: MetaStatus.Supported,
-      introduced: 'v5.6.0',
+      introduced: 'v7.1.0',
       storybookId: 'components-pagination--story-default',
       codeUrl: '',
       figmaUrl:
@@ -278,23 +278,6 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
         title: 'WAI-ARIA',
         tableRows: [
           {
-            element: 'pagination',
-            attribute: 'nav',
-            value: 'navigation',
-            description: (
-              <>
-                Identifies major groups of links used for navigating through a
-                website or page content{' '}
-                <Link
-                  href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Navigation_Role"
-                  target="_blank"
-                >
-                  Learn more about the navigation role at MDN Web Docs
-                </Link>
-              </>
-            ),
-          },
-          {
             element: 'nav',
             attribute: 'aria-label',
             value: 'pagination',
@@ -368,7 +351,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
             },
             {
               name: 'buildHref',
-              type: '(number) ⇒ string',
+              type: '(number) => string',
               description: (
                 <>
                   Normally required but not if onPageChange is set.Template to
@@ -463,7 +446,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               required: false,
             },
             {
-              name: 'eventContext = {}',
+              name: 'eventContext',
               type: 'object',
               description:
                 'Allows users to add extra event data to click events.',
