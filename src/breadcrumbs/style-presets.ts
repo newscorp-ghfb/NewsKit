@@ -1,4 +1,5 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   breadcrumbItem: {
@@ -21,6 +22,7 @@ export default {
       color: '{{colors.interactiveLink030}}',
       textDecoration: 'underline',
     },
+    'focus-visible': defaultFocusVisible,
   },
   breadcrumbSeparator: {
     base: {color: '{{colors.inkSubtle}}'},

@@ -139,6 +139,12 @@ export const StyledCardLink = styled.a<HeadlineOverrides>`
     nestedCssSelector: '.nk-headline-heading',
   })}
 
+  ${getStylePreset('card.headline.interactive.link', 'link', {
+    nestedCssSelector: '.nk-card-headline',
+  })}
+  
+  outline: none;
+
   :before {
     content: '';
     top: 0;
