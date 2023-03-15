@@ -2360,7 +2360,7 @@ Object {
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
-      "typographyPreset": "utilityButton030",
+      "typographyPreset": "utilityBody030",
     },
     "medium": Object {
       "marginInline": "space010",
@@ -2369,7 +2369,7 @@ Object {
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
-      "typographyPreset": "utilityButton020",
+      "typographyPreset": "utilityBody020",
     },
     "small": Object {
       "marginInline": "space010",
@@ -2378,7 +2378,7 @@ Object {
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
-      "typographyPreset": "utilityButton010",
+      "typographyPreset": "utilityBody010",
     },
   },
   "paginationItemFirst": Object {
@@ -2413,18 +2413,21 @@ Object {
       "marginBlockEnd": "space000",
       "marginInline": "space010",
       "stylePreset": "paginationItemInteractive",
+      "typographyPreset": "utilityBody030",
     },
     "medium": Object {
       "iconSize": "iconSize020",
       "marginBlockEnd": "space000",
       "marginInline": "space010",
       "stylePreset": "paginationItemInteractive",
+      "typographyPreset": "utilityBody020",
     },
     "small": Object {
       "iconSize": "iconSize010",
       "marginBlockEnd": "space000",
       "marginInline": "space010",
       "stylePreset": "paginationItemInteractive",
+      "typographyPreset": "utilityBody010",
     },
   },
   "paginationItemLast": Object {
@@ -2481,14 +2484,17 @@ Object {
     "large": Object {
       "iconSize": "iconSize020",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody030",
     },
     "medium": Object {
       "iconSize": "iconSize020",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody020",
     },
     "small": Object {
       "iconSize": "iconSize010",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody010",
     },
   },
   "paginationItemPrev": Object {

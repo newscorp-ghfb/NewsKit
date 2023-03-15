@@ -62,9 +62,9 @@ export interface ComponentSizeProps extends React.AriaAttributes {
 }
 
 export interface PaginationItemDescriptionProps extends ComponentOverrides {
-  selected: boolean;
-  pageNumber: number;
-  lastPage: number;
+  selected?: boolean;
+  pageNumber?: number;
+  lastPage?: number;
 }
 
 export interface PaginationItemsProps extends ButtonProps, EventData {

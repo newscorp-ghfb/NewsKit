@@ -7,7 +7,7 @@ export default {
   },
   paginationItem: {
     small: {
-      typographyPreset: 'utilityButton010',
+      typographyPreset: 'utilityBody010',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
@@ -16,7 +16,7 @@ export default {
       minWidth: 'sizing050',
     },
     medium: {
-      typographyPreset: 'utilityButton020',
+      typographyPreset: 'utilityBody020',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
@@ -25,7 +25,7 @@ export default {
       minWidth: 'sizing060',
     },
     large: {
-      typographyPreset: 'utilityButton030',
+      typographyPreset: 'utilityBody030',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
@@ -158,36 +158,42 @@ export default {
   },
   paginationItemNonInteractive: {
     small: {
-      iconSize: 'iconSize010',
+      typographyPreset: 'utilityBody010',
       stylePreset: 'paginationItemNonInteractive',
+      iconSize: 'iconSize010',
     },
     medium: {
-      iconSize: 'iconSize020',
+      typographyPreset: 'utilityBody020',
       stylePreset: 'paginationItemNonInteractive',
+      iconSize: 'iconSize020',
     },
     large: {
-      iconSize: 'iconSize020',
+      typographyPreset: 'utilityBody030',
       stylePreset: 'paginationItemNonInteractive',
+      iconSize: 'iconSize020',
     },
   },
   paginationItemInteractive: {
     small: {
+      typographyPreset: 'utilityBody010',
+      stylePreset: 'paginationItemInteractive',
       iconSize: 'iconSize010',
       marginInline: 'space010',
       marginBlockEnd: 'space000',
-      stylePreset: 'paginationItemInteractive',
     },
     medium: {
+      typographyPreset: 'utilityBody020',
+      stylePreset: 'paginationItemInteractive',
       iconSize: 'iconSize020',
       marginInline: 'space010',
       marginBlockEnd: 'space000',
-      stylePreset: 'paginationItemInteractive',
     },
     large: {
+      typographyPreset: 'utilityBody030',
+      stylePreset: 'paginationItemInteractive',
       iconSize: 'iconSize020',
       marginInline: 'space010',
       marginBlockEnd: 'space000',
-      stylePreset: 'paginationItemInteractive',
     },
   },
 };
