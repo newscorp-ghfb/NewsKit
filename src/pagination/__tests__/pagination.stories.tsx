@@ -282,8 +282,7 @@ export const StoryVariationsInInput = () => {
     HTMLElement,
     PaginationItemProps
   >(({pageNumber, overrides = {}}, ref) => {
-    const paginationContext = usePaginationContext();
-    const {size, page, lastPage, ...rest} = paginationContext;
+    const {size, page, lastPage, ...rest} = usePaginationContext();
     const {itemDescription: ItemDescription} = overrides;
 
     return (

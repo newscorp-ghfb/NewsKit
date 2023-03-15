@@ -58,8 +58,8 @@ export const PaginationLastItem = React.forwardRef<
         href={href}
         size={size}
       >
-        <PaginationIcon />
         {children}
+        <PaginationIcon />
       </PaginationItem>
     </StyledListItem>
   );
