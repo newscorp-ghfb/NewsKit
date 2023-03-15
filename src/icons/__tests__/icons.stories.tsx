@@ -5,11 +5,7 @@ import {Story as StoryType} from '@storybook/react';
 import {createTheme, ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled, getColorCssFromTheme} from '../../utils/style';
 
-import {
-  StorybookSubHeading,
-  StorybookCase,
-  StorybookPage,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 import {
@@ -149,7 +145,7 @@ export const StoryMaterialIcons = () => (
     </StorybookCase>
     <GridLayoutItem column="1 / 3">
       <InlineMessage>
-        For the full libary of Material icons available, please refer to{' '}
+        For the full library of Material icons available, please refer to{' '}
         <LinkInline href="fonts.google.com/icons">
           fonts.google.com/icons
         </LinkInline>
@@ -201,18 +197,14 @@ export const StoryOverriddenIcons = () => {
 
   return (
     <StorybookPage>
-      <StorybookCase>
-        <StorybookSubHeading>icon-outlined-close default</StorybookSubHeading>
+      <StorybookCase title="IconOutlinedClose default">
         <IconOutlinedClose
           overrides={{
             size: 'iconSize050',
           }}
         />
       </StorybookCase>
-      <StorybookCase>
-        <StorybookSubHeading>
-          icon-outlined-close - overridden
-        </StorybookSubHeading>
+      <StorybookCase title="IconOutlinedClose overriden">
         <ThemeProvider theme={themeWithOverridenIcons}>
           <IconOutlinedClose
             overrides={{
@@ -221,8 +213,7 @@ export const StoryOverriddenIcons = () => {
           />
         </ThemeProvider>
       </StorybookCase>
-      <StorybookCase>
-        <StorybookSubHeading>Logical props</StorybookSubHeading>
+      <StorybookCase title="Logical props">
         <MarginOverridesWrapper>
           <IconFilledAddCircle
             overrides={{
