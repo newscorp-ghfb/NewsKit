@@ -185,6 +185,21 @@ exports[`SelectionList render should render SelectionList with a selected option
   border-color: #3358CC;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-4:active:not(:disabled) {
   background-color: #ECF1FF;
 }
@@ -327,6 +342,21 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
   border-color: #3358CC;
 }
 
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-1:active:not(:disabled) {
   background-color: #ECF1FF;
 }
@@ -453,6 +483,21 @@ exports[`SelectionList render should render SelectionList with non-string option
 .emotion-1:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-1:active:not(:disabled) {
@@ -965,6 +1010,21 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
   border-color: #3358CC;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-4:active:not(:disabled) {
   background-color: #ECF1FF;
 }
@@ -1221,6 +1281,21 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
   border-color: #3358CC;
 }
 
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-4:active:not(:disabled) {
   background-color: #ECF1FF;
 }
@@ -1357,6 +1432,21 @@ exports[`SelectionList render should render default SelectionList 1`] = `
 .emotion-1:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-1:active:not(:disabled) {
