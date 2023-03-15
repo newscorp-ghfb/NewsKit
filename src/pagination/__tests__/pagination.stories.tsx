@@ -290,10 +290,10 @@ export const StoryVariationsInInput = () => {
     HTMLElement,
     PaginationItemProps
   >(({pageNumber, overrides = {}}, ref) => {
-    const {size, page, lastPage, ...rest} = usePaginationContext();
+    const {size = 'medium', page, lastPage, ...rest} = usePaginationContext();
     const {itemDescription} = overrides;
     let ItemDescription = null;
-    let textblockSettings: typeof overrides;
+    let textblockSettings: typeof overrides = {};
     const theme = useTheme();
 
     if (itemDescription) {
@@ -318,6 +318,7 @@ export const StoryVariationsInInput = () => {
             {...rest}
           />
           {itemDescription && (
+            // @ts-ignore
             <ItemDescription
               {...textblockSettings}
               selected={pageNumber === page}
@@ -490,7 +491,7 @@ export const StoryVariationsInSelection = () => {
   }: PaginationItemsProps) => {
     const theme = useTheme();
     const {
-      size,
+      size = 'medium',
       buildHref,
       /* istanbul ignore next */
       changePage = () => {},
@@ -500,7 +501,7 @@ export const StoryVariationsInSelection = () => {
 
     const {itemDescription, ...logicalOverrides} = overrides;
     let ItemDescription = null;
-    let textblockSettings: typeof overrides;
+    let textblockSettings: typeof overrides = {};
 
     if (itemDescription) {
       ItemDescription = itemDescription;
@@ -588,6 +589,7 @@ export const StoryVariationsInSelection = () => {
             {paginationElements as []}
           </Select>
           {itemDescription && (
+            // @ts-ignore
             <ItemDescription
               {...textblockSettings}
               selected
