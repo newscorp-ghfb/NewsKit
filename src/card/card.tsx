@@ -122,6 +122,7 @@ const findAndDecorateCardHeadline = (
         {...restHeadlineProps}
         overrides={headlineOverrides}
         key={cardHeadlineKey}
+        className="nk-card-headline"
       />
     );
 
