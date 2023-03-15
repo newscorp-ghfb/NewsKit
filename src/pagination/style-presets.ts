@@ -66,5 +66,11 @@ export default {
       color: '{{colors.inkNonEssential}}',
       iconColor: '{{colors.inkNonEssential}}',
     },
+    'focus-visible': {
+      outlineColor: '{{outlines.outlineColorDefault}}',
+      outlineStyle: '{{outlines.outlineStyleDefault}}',
+      outlineWidth: '{{outlines.outlineWidthDefault}}',
+      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+    },
   },
 } as Record<string, StylePreset>;

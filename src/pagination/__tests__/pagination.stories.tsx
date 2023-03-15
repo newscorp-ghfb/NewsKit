@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import {useTheme} from '@emotion/react';
 import {Story as StoryType} from '@storybook/react';
 import {Pagination} from '../pagination';
@@ -225,14 +225,10 @@ export const StoryVariationsInInput = () => {
     lastPage = 1,
     changePage = () => {},
   }: ButtonOrButtonLinkProps & PaginationItemProps) => {
-    const [valid, setValid] = useState(true);
     const inputRef = useRef<HTMLInputElement>(null);
     const validateAndChangePage = (newPage: number) => {
       if (newPage >= 1 && newPage <= lastPage) {
-        setValid(true);
         changePage(newPage);
-      } else {
-        setValid(false);
       }
       inputRef.current?.blur();
     };
@@ -260,7 +256,6 @@ export const StoryVariationsInInput = () => {
             ref={inputRef}
             size="small"
             defaultValue={pageNumber}
-            state={valid ? 'valid' : 'invalid'}
             onBlur={props =>
               validateAndChangePage(parseInt(props.target?.value, 10))
             }
@@ -276,12 +271,13 @@ export const StoryVariationsInInput = () => {
               </IconButton>
             }
             overrides={{
+              // Cannot use a stylePreset on the TextField or it will lose the default border
+              paddingInline: 'space020',
               marginInline: 'space010',
               marginBlockEnd: 'space000',
               width: '84px',
               endEnhancer: {
-                spaceInline: 'space000',
-                marginBlockEnd: 'space010',
+                spaceInline: 'space010',
               },
             }}
           />
@@ -574,6 +570,7 @@ export const StoryVariationsInSelection = () => {
             eventOriginator={eventOriginator}
             overrides={{
               button: {
+                marginInline: 'space010',
                 marginBlockEnd: 'space000',
               },
             }}
@@ -655,9 +652,7 @@ export const StoryVariationsInSelection = () => {
             boundaries={1}
             overrides={{
               itemDescription: ({lastPage, ...textBlockStyles}) => (
-                <TextBlock {...textBlockStyles} paddingInline="space010">
-                  of {lastPage}
-                </TextBlock>
+                <TextBlock {...textBlockStyles}>of {lastPage}</TextBlock>
               ),
             }}
           >
@@ -683,9 +678,7 @@ export const StoryVariationsInSelection = () => {
             boundaries={1}
             overrides={{
               itemDescription: ({lastPage, ...textBlockStyles}) => (
-                <TextBlock {...textBlockStyles} paddingInline="space010">
-                  of {lastPage} pages
-                </TextBlock>
+                <TextBlock {...textBlockStyles}>of {lastPage} pages</TextBlock>
               ),
             }}
           />

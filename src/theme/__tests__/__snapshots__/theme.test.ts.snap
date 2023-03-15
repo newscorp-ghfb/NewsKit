@@ -2412,6 +2412,7 @@ Object {
       "iconSize": "iconSize020",
       "marginBlockEnd": "space000",
       "marginInline": "space010",
+      "paddingInline": "space020",
       "stylePreset": "paginationItemInteractive",
       "typographyPreset": "utilityBody030",
     },
@@ -2419,6 +2420,7 @@ Object {
       "iconSize": "iconSize020",
       "marginBlockEnd": "space000",
       "marginInline": "space010",
+      "paddingInline": "space020",
       "stylePreset": "paginationItemInteractive",
       "typographyPreset": "utilityBody020",
     },
@@ -2426,6 +2428,7 @@ Object {
       "iconSize": "iconSize010",
       "marginBlockEnd": "space000",
       "marginInline": "space010",
+      "paddingInline": "space020",
       "stylePreset": "paginationItemInteractive",
       "typographyPreset": "utilityBody010",
     },
@@ -2483,16 +2486,25 @@ Object {
   "paginationItemNonInteractive": Object {
     "large": Object {
       "iconSize": "iconSize020",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "typographyPreset": "utilityBody030",
     },
     "medium": Object {
       "iconSize": "iconSize020",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "typographyPreset": "utilityBody020",
     },
     "small": Object {
       "iconSize": "iconSize010",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "typographyPreset": "utilityBody010",
     },
@@ -5708,6 +5720,12 @@ Object {
     "disabled": Object {
       "color": "{{colors.inkNonEssential}}",
       "iconColor": "{{colors.inkNonEssential}}",
+    },
+    "focus-visible": Object {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
     },
   },
   "paginationItemNonInteractive": Object {
