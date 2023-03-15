@@ -37,10 +37,12 @@ const ThemelessStructuredList: React.FC<StructuredListProps> = ({
           acc.push(listItem);
           if (divider && index < array.length - 1) {
             acc.push(
-              <Divider
-                overrides={overrides.divider}
-                key={`divider-${index || listItem.key}`}
-              />,
+              <li aria-hidden="true">
+                <Divider
+                  overrides={overrides.divider}
+                  key={`divider-${index || listItem.key}`}
+                />
+              </li>,
             );
           }
           return acc;
