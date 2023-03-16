@@ -66,7 +66,7 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
           outlineStyle: 'dashed',
           outlineWidth: '1px',
           borderRadius: '2px',
-          outlineOffset: '10px',
+          outlineOffset: '6px',
           backgroundColor: '{{colors.interactiveInput040}}',
           borderColor: '{{colors.interactiveInput020}}',
           borderWidth: '{{borders.borderWidth020}}',
@@ -315,8 +315,9 @@ export const StoryCheckboxOverrides = () => (
           checked
           label={shortLabel}
           overrides={{
-            marginBlockEnd: 'space030',
+            marginBlockEnd: 'space060',
             paddingBlock: 'space030',
+            marginInlineEnd: 'space030',
             input: {
               stylePreset: 'customOutlineOverrides',
             },
