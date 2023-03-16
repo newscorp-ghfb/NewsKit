@@ -3,8 +3,8 @@ import {Story as StoryType} from '@storybook/react';
 import {Headline} from '..';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {H6, H5, H4, H3, H2, H1} from '../..';
 import {getColorCssFromTheme, styled} from '../../utils/style';
+import {H6, H5, H4, H3, H2, H1} from '../..';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 
 const headlineCustomThemeObject: CreateThemeArgs = {
