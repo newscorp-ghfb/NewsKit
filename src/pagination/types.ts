@@ -81,7 +81,7 @@ export interface PaginationItemsProps extends ButtonProps, EventData {
 
 export interface PaginationItemProps extends EventData {
   children?: React.ReactNode;
-  ref?: React.RefObject<HTMLElement>;
+  ref?: React.RefObject<HTMLElement> | React.ForwardedRef<HTMLElement>;
   itemType?: PaginationItemType;
   pageNumber?: number;
   pageSize?: number;
