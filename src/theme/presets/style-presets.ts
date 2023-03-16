@@ -1,6 +1,9 @@
 import {StylePreset} from './types';
+// import allStylePresets from '../all-style-presets.json';
 
-export const stylePresets: Record<string, StylePreset> = {};
+export const stylePresets: Record<string, StylePreset> = {
+  // ...allStylePresets,
+};
 
 //
 // Input Field

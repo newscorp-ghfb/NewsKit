@@ -1,3 +1,4 @@
+import fs from 'fs';
 import {compileTheme} from '../compiler';
 import {newskitLightTheme} from '../newskit-light';
 import {newskitDarkTheme, newskitDarkThemeOverrides} from '../newskit-dark';
@@ -24,6 +25,8 @@ describe('NewsKit Light theme', () => {
       ) => ({...combinedTheme, ...componentTheme}),
       {},
     );
+
+    // fs.writeFileSync('./src/theme/defaults.json', JSON.stringify(combineTheme));
 
     expect(combineTheme).toMatchSnapshot();
   });
@@ -65,6 +68,10 @@ describe('NewsKit Light theme', () => {
       {},
     );
 
+    // fs.writeFileSync(
+    //   './src/theme/all-style-presets.json',
+    //   JSON.stringify(combineTheme),
+    // );
     expect(combineTheme).toMatchSnapshot();
   });
 });

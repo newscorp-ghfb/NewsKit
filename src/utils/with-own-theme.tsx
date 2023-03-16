@@ -56,6 +56,7 @@ export const withOwnTheme = <P extends {}>(
       throw new Error(errorMessage);
     }
 
+    // return <BaseComponent ref={ref} {...props} />;
     return (
       <ThemeProvider theme={componentTheme}>
         <BaseComponent ref={ref} {...props} />

@@ -1,0 +1,2639 @@
+{
+  "accordionHeader": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceBackground}}",
+      "color": "{{colors.inkBase}}",
+      "borderStyle": "none none solid none",
+      "borderColor": "{{colors.interface050}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "color": "{{colors.interactiveInput040}}",
+      "iconColor": "{{colors.interactiveInput040}}"
+    },
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "accordionPanel": {
+    "base": {
+      "borderStyle": "none none solid none",
+      "borderColor": "{{colors.interface050}}",
+      "borderWidth": "{{borders.borderWidth010}}"
+    }
+  },
+  "assistiveText": {
+    "base": {"color": "{{colors.inkSubtle}}"},
+    "disabled": {"color": "{{colors.inkNonEssential}}"},
+    "invalid": {"color": "{{colors.inkNegative}}"},
+    "valid": {"color": "{{colors.inkSubtle}}"}
+  },
+  "audioPlayerSeekBarTrack": {
+    "base": {
+      "backgroundColor": "{{colors.interface020}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "audioPlayerSeekBarIndicator": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "audioPlayerSeekBarBuffering": {
+    "base": {
+      "backgroundColor": "{{colors.interface030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "audioPlayerThumb": {
+    "base": {
+      "boxShadow": "{{shadows.shadow010}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkNonEssential}}",
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderColor": "{{colors.interfaceBackground}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePrimary040}}"},
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary050}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    }
+  },
+  "audioPlayerLabels": {"base": {"color": "{{colors.inkBase}}"}},
+  "seekBarTrack": {
+    "base": {
+      "backgroundColor": "{{colors.interface020}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "seekBarIndicator": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "seekBarBuffering": {
+    "base": {
+      "backgroundColor": "{{colors.interface030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "seekBarThumb": {
+    "base": {
+      "boxShadow": "{{shadows.shadow010}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkNonEssential}}",
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderColor": "{{colors.interfaceBackground}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePrimary040}}"},
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary050}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "safariOutlineOffset": "-7px"
+    }
+  },
+  "timeDisplay": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}"
+    }
+  },
+  "audioPlayerVolumeControlIndicator": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "audioPlayerVolumeControlThumb": {
+    "base": {
+      "boxShadow": "{{shadows.shadow010}}",
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interfaceBackground}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePrimary040}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary050}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "safariOutlineOffset": "-7px"
+    }
+  },
+  "audioPlayerVolumeControlThumbOld": {
+    "__extends": "audioPlayerVolumeControlThumb",
+    "base": {"borderColor": "{{colors.interactivePrimary010}}"}
+  },
+  "audioPlayerVolumeControlTrack": {
+    "base": {
+      "backgroundColor": "{{colors.interface030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "audioPlayerVolumeControlPopover": {
+    "base": {
+      "boxShadow": "{{shadows.shadow060}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "backgroundColor": "{{colors.interface010}}"
+    }
+  },
+  "audioPlayerVolumeControlPopoverOld": {
+    "__extends": "{{stylePresets.audioPlayerVolumeControlPopover}}",
+    "base": {"boxShadow": "{{shadows.shadow050}}"}
+  },
+  "bannerInformative": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceInformative010}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "bannerNotice": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNotice010}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "bannerNegative": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNegative010}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "breadcrumbItem": {
+    "base": {"color": "{{colors.interactiveLink010}}"},
+    "hover": {
+      "color": "{{colors.interactiveLink020}}",
+      "textDecoration": "underline"
+    },
+    "selected": {"color": "{{colors.inkBase}}", "textDecoration": "none"},
+    "selected:hover": {"color": "{{colors.inkBase}}", "textDecoration": "none"},
+    "active": {
+      "color": "{{colors.interactiveLink030}}",
+      "textDecoration": "underline"
+    }
+  },
+  "breadcrumbSeparator": {"base": {"color": "{{colors.inkSubtle}}"}},
+  "buttonSolidPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePrimary040}}"},
+    "active": {"backgroundColor": "{{colors.interactivePrimary050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonSolidSecondary": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveSecondary030}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveSecondary040}}"},
+    "active": {"backgroundColor": "{{colors.interactiveSecondary050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonSolidNegative": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveNegative030}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveNegative040}}"},
+    "active": {"backgroundColor": "{{colors.interactiveNegative050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveNegative020}}",
+      "color": "{{colors.inkNegative}}",
+      "iconColor": "{{colors.inkNegative}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonSolidPositive": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePositive030}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePositive040}}"},
+    "active": {"backgroundColor": "{{colors.interactivePositive050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactivePositive020}}",
+      "color": "{{colors.inkPositive}}",
+      "iconColor": "{{colors.inkPositive}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonSolidInverse": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveInverse030}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveInverse040}}"},
+    "active": {"backgroundColor": "{{colors.interactiveInverse050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveInverse020}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonOutlinedPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePrimary010}}",
+      "borderColor": "{{colors.interactivePrimary040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "borderColor": "{{colors.interactivePrimary050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonOutlinedSecondary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactiveSecondary030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveSecondary010}}",
+      "borderColor": "{{colors.interactiveSecondary040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "borderColor": "{{colors.interactiveSecondary050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonOutlinedNegative": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactiveNegative030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkNegative}}",
+      "iconColor": "{{colors.inkNegative}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactiveNegative020}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveNegative020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonOutlinedPositive": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactivePositive030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkPositive}}",
+      "iconColor": "{{colors.inkPositive}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePositive020}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactivePositive020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonOutlinedInverse": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactiveInverse030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveInverse010}}",
+      "borderColor": "{{colors.interactiveInverse040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactiveInverse020}}",
+      "borderColor": "{{colors.interactiveInverse050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveInverse020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonMinimalPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePrimary010}}"},
+    "active": {"backgroundColor": "{{colors.interactivePrimary020}}"},
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactivePrimary020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonMinimalSecondary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveSecondary010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveSecondary020}}"},
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactiveSecondary020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonMinimalNegative": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkNegative}}",
+      "iconColor": "{{colors.inkNegative}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveNegative010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveNegative020}}"},
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactiveNegative020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonMinimalPositive": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkPositive}}",
+      "iconColor": "{{colors.inkPositive}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePositive010}}"},
+    "active": {"backgroundColor": "{{colors.interactivePositive020}}"},
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactivePositive020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "buttonMinimalInverse": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveInverse010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveInverse020}}"},
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactiveInverse020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "cardContainer": {
+    "base": {
+      "color": "{{colors.inkBase}}",
+      "backgroundColor": "{{colors.interface010}}"
+    }
+  },
+  "headlineHeadingInteractive": {
+    "base": {"color": "{{colors.inkContrast}}"},
+    "hover": {
+      "color": "{{colors.interactivePrimary040}}",
+      "textDecoration": "underline"
+    },
+    "active": {
+      "color": "{{colors.interactivePrimary050}}",
+      "textDecoration": "underline"
+    },
+    "visited": {"color": "{{colors.interactiveVisited010}}"}
+  },
+  "headlineKickerInteractive": {
+    "base": {"color": "{{colors.interactivePrimary030}}"},
+    "hover": {
+      "color": "{{colors.interactivePrimary040}}",
+      "textDecoration": "underline"
+    },
+    "active": {
+      "color": "{{colors.interactivePrimary050}}",
+      "textDecoration": "underline"
+    },
+    "visited": {"color": "{{colors.interactiveVisited010}}"}
+  },
+  "characterCount": {
+    "base": {"color": "{{colors.inkSubtle}}"},
+    "disabled": {"color": "{{colors.inkNonEssential}}"},
+    "invalid": {"color": "{{colors.inkNegative}}"},
+    "valid": {"color": "{{colors.inkSubtle}}"}
+  },
+  "checkboxInput": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveInput020}}",
+      "borderWidth": "{{borders.borderWidth020}}",
+      "borderRadius": "{{borders.borderRadiusRounded010}}",
+      "borderStyle": "solid",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput050}}"
+    },
+    "focus": {},
+    "focus:hover": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput050}}"
+    },
+    "checked": {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+      "borderColor": "{{colors.interactiveInput040}}"
+    },
+    "checked:hover": {
+      "backgroundColor": "{{colors.interactiveInput050}}",
+      "borderColor": "{{colors.interactiveInput050}}"
+    },
+    "checked:focus": {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+      "borderColor": "{{colors.interactiveInput040}}"
+    },
+    "checked:focus:hover": {
+      "backgroundColor": "{{colors.interactiveInput050}}",
+      "borderColor": "{{colors.interactiveInput050}}"
+    },
+    "invalid": {"borderColor": "{{colors.interactiveNegative040}}"},
+    "invalid:hover": {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "invalid:focus": {"borderColor": "{{colors.interactiveNegative040}}"},
+    "invalid:focus:hover": {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "checked:invalid": {
+      "backgroundColor": "{{colors.interactiveNegative040}}",
+      "borderColor": "{{colors.interactiveNegative040}}"
+    },
+    "checked:invalid:focus": {
+      "backgroundColor": "{{colors.interactiveNegative040}}",
+      "borderColor": "{{colors.interactiveNegative040}}"
+    },
+    "checked:invalid:hover": {
+      "backgroundColor": "{{colors.interactiveNegative050}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "checked:invalid:focus:hover": {
+      "backgroundColor": "{{colors.interactiveNegative050}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "valid": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "valid:hover": {
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "valid:focus": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "valid:focus:hover": {
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "checked:valid": {
+      "backgroundColor": "{{colors.interactivePositive040}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "checked:valid:focus": {
+      "backgroundColor": "{{colors.interactivePositive040}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "checked:valid:hover": {
+      "backgroundColor": "{{colors.interactivePositive050}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "checked:valid:focus:hover": {
+      "backgroundColor": "{{colors.interactivePositive050}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "disabled": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.interactiveDisabled010}}"
+    },
+    "checked:disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    },
+    "checked:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput040}}",
+      "borderColor": "{{colors.interactiveInput040}}"
+    },
+    "invalid:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "borderColor": "{{colors.interactiveNegative040}}"
+    },
+    "checked:invalid:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveNegative040}}",
+      "borderColor": "{{colors.interactiveNegative040}}"
+    },
+    "valid:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "checked:valid:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactivePositive040}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput050}}"
+    },
+    "checked:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput050}}",
+      "borderColor": "{{colors.interactiveInput050}}"
+    },
+    "invalid:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "checked:invalid:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveNegative050}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "valid:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "checked:valid:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactivePositive050}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    }
+  },
+  "divider": {
+    "base": {
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interface040}}",
+      "borderWidth": "{{borders.borderWidthDefault}}"
+    }
+  },
+  "dividerInverse": {
+    "base": {
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interface010}}",
+      "borderWidth": "{{borders.borderWidthDefault}}"
+    }
+  },
+  "drawerPanel": {
+    "base": {
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "backgroundColor": "{{colors.interface010}}",
+      "boxShadow": "{{shadows.shadow060}}"
+    }
+  },
+  "drawerHeader": {"base": {"color": "{{colors.inkBase}}"}},
+  "legend": {
+    "base": {"color": "{{colors.inkContrast}}"},
+    "disabled": {"color": "{{colors.inkNonEssential}}"}
+  },
+  "flagSolidPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceBrand010}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "flagSolidPositive": {
+    "base": {
+      "backgroundColor": "{{colors.interfacePositive010}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "flagSolidNegative": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNegative010}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "flagSolidNotice": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNotice010}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "flagSolidInformative": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceInformative010}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "flagSolidNeutral": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNeutral010}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "flagSolidInverse": {
+    "base": {
+      "backgroundColor": "{{colors.interface010}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}"
+    }
+  },
+  "flagMinimalPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    }
+  },
+  "flagMinimalPositive": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkPositive}}",
+      "iconColor": "{{colors.inkPositive}}"
+    }
+  },
+  "flagMinimalNegative": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkNegative}}",
+      "iconColor": "{{colors.inkNegative}}"
+    }
+  },
+  "flagMinimalNotice": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkNotice}}",
+      "iconColor": "{{colors.inkNotice}}"
+    }
+  },
+  "flagMinimalInformative": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInformative}}",
+      "iconColor": "{{colors.inkInformative}}"
+    }
+  },
+  "flagMinimalNeutral": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    }
+  },
+  "flagMinimalInverse": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "iconButtonSolidPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePrimary040}}"},
+    "active": {"backgroundColor": "{{colors.interactivePrimary050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonSolidSecondary": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveSecondary030}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveSecondary040}}"},
+    "active": {"backgroundColor": "{{colors.interactiveSecondary050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonSolidNegative": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveNegative030}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveNegative040}}"},
+    "active": {"backgroundColor": "{{colors.interactiveNegative050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveNegative020}}",
+      "color": "{{colors.inkNegative}}",
+      "iconColor": "{{colors.inkNegative}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonSolidPositive": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePositive030}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePositive040}}"},
+    "active": {"backgroundColor": "{{colors.interactivePositive050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactivePositive020}}",
+      "color": "{{colors.inkPositive}}",
+      "iconColor": "{{colors.inkPositive}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonSolidInverse": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveInverse030}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveInverse040}}"},
+    "active": {"backgroundColor": "{{colors.interactiveInverse050}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveInverse020}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonOutlinedPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePrimary010}}",
+      "borderColor": "{{colors.interactivePrimary040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "borderColor": "{{colors.interactivePrimary050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonOutlinedSecondary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactiveSecondary030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveSecondary010}}",
+      "borderColor": "{{colors.interactiveSecondary040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "borderColor": "{{colors.interactiveSecondary050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonOutlinedNegative": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactiveNegative030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkNegative}}",
+      "iconColor": "{{colors.inkNegative}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactiveNegative020}}",
+      "borderColor": "{{colors.interactiveNegative030}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveNegative020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonOutlinedPositive": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactivePositive030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkPositive}}",
+      "iconColor": "{{colors.inkPositive}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePositive020}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactivePositive020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonOutlinedInverse": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactiveInverse030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveInverse010}}",
+      "borderColor": "{{colors.interactiveInverse040}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactiveInverse020}}",
+      "borderColor": "{{colors.interactiveInverse050}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveInverse020}}",
+      "borderStyle": "none"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonMinimalPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePrimary010}}"},
+    "active": {"backgroundColor": "{{colors.interactivePrimary020}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactivePrimary020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonMinimalSecondary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveSecondary010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveSecondary020}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {
+      "backgroundColor": "{{colors.interactiveSecondary020}}",
+      "color": "{{colors.inkInverse}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonMinimalNegative": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkNegative}}",
+      "iconColor": "{{colors.inkNegative}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveNegative010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveNegative020}}"},
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactiveNegative020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonMinimalPositive": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkPositive}}",
+      "iconColor": "{{colors.inkPositive}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactivePositive010}}"},
+    "active": {"backgroundColor": "{{colors.interactivePositive020}}"},
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactivePositive020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconButtonMinimalInverse": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveInverse010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveInverse020}}"},
+    "disabled": {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactiveInverse020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "iconPositive": {"base": {"iconColor": "{{colors.inkPositive}}"}},
+  "iconNegative": {"base": {"iconColor": "{{colors.inkNegative}}"}},
+  "iconSocialTwitter": {"base": {"iconColor": "{{colors.socialTwitter}}"}},
+  "iconSocialGitHub": {"base": {"iconColor": "{{colors.socialGithub}}"}},
+  "iconSocialFacebook": {"base": {"iconColor": "{{colors.socialFacebook}}"}},
+  "iconSocialInstagram": {"base": {"iconColor": "{{colors.socialInstagram}}"}},
+  "iconSocialYoutube": {"base": {"iconColor": "{{colors.socialYoutube}}"}},
+  "iconSocialWhatsApp": {"base": {"iconColor": "{{colors.socialWhatsapp}}"}},
+  "iconSocialReddit": {"base": {"iconColor": "{{colors.socialReddit}}"}},
+  "iconDefault": {"base": {"iconColor": "{{colors.inkBase}}"}},
+  "indeterminateProgressIndicatorPrimary": {
+    "base": {"iconColor": "{{colors.inkBrand010}}"}
+  },
+  "indeterminateProgressIndicatorSecondary": {
+    "base": {"iconColor": "{{colors.inkBase}}"}
+  },
+  "indeterminateProgressIndicatorNegative": {
+    "base": {"iconColor": "{{colors.inkNegative}}"}
+  },
+  "indeterminateProgressIndicatorPositive": {
+    "base": {"iconColor": "{{colors.inkPositive}}"}
+  },
+  "indeterminateProgressIndicatorInverse": {
+    "base": {"iconColor": "{{colors.inkInverse}}"}
+  },
+  "imageSharp": {
+    "base": {"borderRadius": "{{borders.borderRadiusSharp}}"},
+    "loading": {
+      "backgroundColor": "{{colors.interfaceSkeleton010}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    }
+  },
+  "imageRoundedSmall": {
+    "base": {"borderRadius": "{{borders.borderRadiusRounded010}}"},
+    "loading": {
+      "backgroundColor": "{{colors.interfaceSkeleton010}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    }
+  },
+  "imageRoundedMedium": {
+    "base": {"borderRadius": "{{borders.borderRadiusRounded030}}"},
+    "loading": {
+      "backgroundColor": "{{colors.interfaceSkeleton010}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    }
+  },
+  "imageRoundedLarge": {
+    "base": {"borderRadius": "{{borders.borderRadiusRounded050}}"},
+    "loading": {
+      "backgroundColor": "{{colors.interfaceSkeleton010}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    }
+  },
+  "imageDefault": {
+    "base": {"borderRadius": "{{borders.borderRadiusDefault}}"},
+    "loading": {
+      "backgroundColor": "{{colors.interfaceSkeleton010}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    }
+  },
+  "imageCircle": {
+    "base": {"borderRadius": "{{borders.borderRadiusCircle}}"},
+    "loading": {
+      "backgroundColor": "{{colors.interfaceSkeleton010}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    }
+  },
+  "inlineMessageInformative": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceInformative020}}",
+      "borderColor": "{{colors.interfaceInformative010}}",
+      "borderStyle": "solid",
+      "borderRadius": "{{borders.borderRadiusRounded010}}",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+      "iconColor": "{{colors.inkInformative}}",
+      "color": "{{colors.inkInverse}}"
+    }
+  },
+  "inlineMessageNegative": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNegative020}}",
+      "borderColor": "{{colors.interfaceNegative010}}",
+      "borderStyle": "solid",
+      "borderRadius": "{{borders.borderRadiusRounded010}}",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth030}}",
+      "iconColor": "{{colors.inkNegative}}",
+      "color": "{{colors.inkBase}}"
+    }
+  },
+  "label": {
+    "base": {"color": "{{colors.inkContrast}}"},
+    "disabled": {"color": "{{colors.inkNonEssential}}"}
+  },
+  "linkStandalone": {
+    "base": {
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
+      "textDecoration": "none"
+    },
+    "hover": {
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
+      "textDecoration": "underline"
+    },
+    "active": {
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
+      "textDecoration": "underline"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "linkStandaloneInverse": {
+    "base": {
+      "color": "{{colors.interactiveInverse030}}",
+      "iconColor": "{{colors.interactiveInverse030}}",
+      "textDecoration": "none"
+    },
+    "hover": {
+      "color": "{{colors.interactiveInverse030}}",
+      "iconColor": "{{colors.interactiveInverse030}}",
+      "textDecoration": "underline"
+    },
+    "active": {
+      "color": "{{colors.interactiveInverse030}}",
+      "iconColor": "{{colors.interactiveInverse030}}",
+      "textDecoration": "underline"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "linkInline": {
+    "base": {
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}",
+      "textDecoration": "underline"
+    },
+    "hover": {
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
+      "textDecoration": "underline"
+    },
+    "active": {
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
+      "textDecoration": "underline"
+    },
+    "visited": {
+      "color": "{{colors.interactiveVisited010}}",
+      "iconColor": "{{colors.interactiveVisited010}}",
+      "textDecoration": "underline"
+    },
+    "visited:hover": {
+      "color": "{{colors.interactiveVisited010}}",
+      "iconColor": "{{colors.interactiveVisited010}}",
+      "textDecoration": "underline"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "linkInlineInverse": {
+    "base": {
+      "color": "{{colors.interactiveInverse030}}",
+      "iconColor": "{{colors.interactiveInverse030}}",
+      "textDecoration": "underline"
+    },
+    "hover": {
+      "color": "{{colors.interactiveInverse030}}",
+      "iconColor": "{{colors.interactiveInverse030}}",
+      "textDecoration": "underline"
+    },
+    "active": {
+      "color": "{{colors.interactiveInverse030}}",
+      "iconColor": "{{colors.interactiveInverse030}}",
+      "textDecoration": "underline"
+    },
+    "visited": {
+      "color": "{{colors.interactiveInverse040}}",
+      "iconColor": "{{colors.interactiveInverse040}}",
+      "textDecoration": "underline"
+    },
+    "visited:hover": {
+      "color": "{{colors.interactiveInverse040}}",
+      "iconColor": "{{colors.interactiveInverse040}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "menuItemVertical": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.transparent}}",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePrimary010}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "selected": {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "selected:hover": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "menuItemHorizontal": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.transparent}}",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    },
+    "hover": {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "active": {
+      "borderColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}"
+    },
+    "selected": {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "selected:hover": {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "menuItemHorizontalInverse": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.transparent}}",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {
+      "borderColor": "{{colors.interactiveInverse030}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "selected:hover": {
+      "borderColor": "{{colors.interactiveInverse030}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "active": {
+      "borderColor": "{{colors.interactiveInverse030}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "selected": {
+      "borderColor": "{{colors.interactiveInverse030}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "disabled": {
+      "color": "{{colors.interactiveInverse020}}",
+      "iconColor": "{{colors.interactiveInverse020}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "menuSubItemVertical": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.transparent}}",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePrimary010}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "selected": {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "selected:hover": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "menuSubItemHorizontal": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.transparent}}",
+      "borderWidth": "{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}",
+      "color": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    },
+    "hover": {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "active": {
+      "borderColor": "{{colors.interactivePrimary040}}",
+      "color": "{{colors.inkContrast}}",
+      "iconColor": "{{colors.inkContrast}}"
+    },
+    "selected": {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "selected:hover": {
+      "borderColor": "{{colors.interactivePrimary030}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "menuSub": {"base": {"backgroundColor": "{{colors.interface020}}"}},
+  "modalPanel": {
+    "base": {
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "backgroundColor": "{{colors.interfaceBackground}}",
+      "boxShadow": "{{shadows.shadow060}}"
+    }
+  },
+  "modalHeader": {"base": {"color": "{{colors.inkBase}}"}},
+  "overlay": {"base": {"backgroundColor": "{{overlays.overlayTintBase040}}"}},
+  "paginationItem": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.interactiveLink010}}",
+      "iconColor": "{{colors.interactiveLink010}}"
+    },
+    "hover": {
+      "color": "{{colors.interactiveLink020}}",
+      "iconColor": "{{colors.interactiveLink020}}",
+      "backgroundColor": "{{colors.interactivePrimary010}}"
+    },
+    "active": {
+      "color": "{{colors.interactiveLink030}}",
+      "iconColor": "{{colors.interactiveLink030}}",
+      "textDecoration": "none"
+    },
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"backgroundColor": "{{colors.interactivePrimary020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    },
+    "selected": {
+      "color": "{{colors.interactiveLink030}}",
+      "textDecoration": "none",
+      "backgroundColor": "{{colors.interactivePrimary020}}"
+    },
+    "selected:hover": {
+      "color": "{{colors.interactiveLink030}}",
+      "textDecoration": "none"
+    }
+  },
+  "paginationItemNonInteractive": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}",
+      "cursor": "default"
+    },
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    }
+  },
+  "popover": {
+    "base": {
+      "boxShadow": "{{shadows.shadow060}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}"
+    }
+  },
+  "popoverPointer": {"base": {"backgroundColor": "{{colors.interface010}}"}},
+  "popoverPanel": {
+    "base": {
+      "color": "{{colors.inkBase}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "backgroundColor": "{{colors.interface010}}"
+    }
+  },
+  "popoverHeader": {
+    "base": {
+      "borderColor": "{{colors.interface050}}",
+      "borderStyle": "none none solid none",
+      "borderWidth": "{{borders.borderWidth010}}"
+    }
+  },
+  "popoverCloseButtonContainer": {
+    "base": {
+      "borderColor": "{{colors.interface050}}",
+      "borderStyle": "none none solid none",
+      "borderWidth": "{{borders.borderWidth010}}"
+    }
+  },
+  "radioButtonInput": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveInput020}}",
+      "borderWidth": "{{borders.borderWidth020}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "borderStyle": "solid"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput050}}"
+    },
+    "focus": {},
+    "focus:hover": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput050}}"
+    },
+    "checked": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveInput040}}",
+      "iconColor": "{{colors.interactiveInput040}}"
+    },
+    "checked:hover": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput050}}",
+      "iconColor": "{{colors.interactiveInput050}}"
+    },
+    "checked:focus": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveInput040}}",
+      "iconColor": "{{colors.interactiveInput040}}"
+    },
+    "checked:focus:hover": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput050}}",
+      "iconColor": "{{colors.interactiveInput050}}"
+    },
+    "invalid": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveNegative040}}"
+    },
+    "invalid:focus": {"borderColor": "{{colors.interactiveNegative040}}"},
+    "invalid:hover": {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "invalid:focus:hover": {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}"
+    },
+    "checked:invalid": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveNegative040}}",
+      "iconColor": "{{colors.interactiveNegative040}}"
+    },
+    "checked:invalid:focus": {
+      "borderColor": "{{colors.interactiveNegative040}}",
+      "iconColor": "{{colors.interactiveNegative040}}"
+    },
+    "checked:invalid:hover": {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}",
+      "iconColor": "{{colors.interactiveNegative050}}"
+    },
+    "checked:invalid:focus:hover": {
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}",
+      "iconColor": "{{colors.interactiveNegative050}}"
+    },
+    "valid": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactivePositive040}}"
+    },
+    "valid:focus": {"borderColor": "{{colors.interactivePositive050}}"},
+    "valid:hover": {
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "valid:focus:hover": {
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive050}}"
+    },
+    "checked:valid": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactivePositive040}}",
+      "iconColor": "{{colors.interactivePositive040}}"
+    },
+    "checked:valid:focus": {
+      "borderColor": "{{colors.interactivePositive040}}",
+      "iconColor": "{{colors.interactivePositive040}}"
+    },
+    "checked:valid:hover": {
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive050}}",
+      "iconColor": "{{colors.interactivePositive050}}"
+    },
+    "checked:valid:focus:hover": {
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive050}}",
+      "iconColor": "{{colors.interactivePositive050}}"
+    },
+    "disabled": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.interactiveDisabled010}}"
+    },
+    "checked:disabled": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    },
+    "checked:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveInput040}}",
+      "iconColor": "{{colors.interactiveInput040}}"
+    },
+    "checked:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput050}}",
+      "iconColor": "{{colors.interactiveInput050}}"
+    },
+    "checked:valid:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactivePositive040}}",
+      "iconColor": "{{colors.interactivePositive040}}"
+    },
+    "checked:valid:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactivePositive010}}",
+      "borderColor": "{{colors.interactivePositive050}}",
+      "iconColor": "{{colors.interactivePositive050}}"
+    },
+    "checked:invalid:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveNegative040}}",
+      "iconColor": "{{colors.interactiveNegative040}}"
+    },
+    "checked:invalid:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveNegative010}}",
+      "borderColor": "{{colors.interactiveNegative050}}",
+      "iconColor": "{{colors.interactiveNegative050}}"
+    }
+  },
+  "scrollOverlaysHorizontal": {
+    "base": {"backgroundImage": "{{overlays.overlayGradientBaseHorizontal}}"}
+  },
+  "scrollOverlaysVertical": {
+    "base": {"backgroundImage": "{{overlays.overlayGradientBaseVertical}}"}
+  },
+  "selectPanel": {
+    "base": {
+      "backgroundColor": "{{colors.interface010}}",
+      "borderRadius": "{{borders.borderRadiusRounded010}}",
+      "boxShadow": "{{shadows.shadow050}}"
+    }
+  },
+  "sliderTrack": {
+    "base": {
+      "backgroundColor": "{{colors.interface030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    },
+    "disabled": {"backgroundColor": "{{colors.interactiveDisabled010}}"}
+  },
+  "sliderIndicator": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    },
+    "disabled": {"backgroundColor": "{{colors.interface040}}"}
+  },
+  "sliderThumb": {
+    "base": {
+      "boxShadow": "{{shadows.shadow010}}",
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactivePrimary010}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePrimary040}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary050}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    },
+    "disabled": {
+      "boxShadow": "none",
+      "backgroundColor": "{{colors.interface040}}",
+      "borderStyle": "none",
+      "borderColor": "none",
+      "borderWidth": "none",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "safariOutlineOffset": "-7px"
+    }
+  },
+  "sliderThumbLabel": {
+    "base": {
+      "color": "{{colors.inkBrand010}}",
+      "textAlign": "center",
+      "whiteSpace": "nowrap"
+    },
+    "disabled": {"color": "{{colors.inkNonEssential}}"}
+  },
+  "sliderLabels": {
+    "base": {"color": "{{colors.inkBase}}", "iconColor": "{{colors.inkBase}}"},
+    "disabled": {
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    }
+  },
+  "welcomeBanner": {
+    "base": {
+      "backgroundSize": "cover",
+      "backgroundRepeat": "no-repeat",
+      "backgroundImage": "url(./welcome-banner.svg)",
+      "borderRadius": "{{borders.borderRadiusRounded020}}"
+    }
+  },
+  "structuredListItem": {
+    "hover": {"backgroundColor": "{{colors.interactiveSecondary010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveSecondary020}}"},
+    "disabled": {"backgroundColor": "{{colors.transparent}}"}
+  },
+  "switchTrack": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveInput020}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    },
+    "checked": {"backgroundColor": "{{colors.interactiveInput040}}"},
+    "disabled": {"backgroundColor": "{{colors.interactiveDisabled010}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    },
+    "checked:focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput040}}"
+    },
+    "checked:focus-visible:hover": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "backgroundColor": "{{colors.interactiveInput040}}"
+    }
+  },
+  "switchTrackIcon": {
+    "base": {"iconColor": "{{colors.inkInverse}}"},
+    "disabled": {"iconColor": "{{colors.inkNonEssential}}"}
+  },
+  "switchThumb": {
+    "base": {
+      "backgroundColor": "{{colors.inkInverse}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkContrast}}"
+    }
+  },
+  "tab": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePrimary010}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary020}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "selected": {
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "selected:hover": {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBrand010}}",
+      "iconColor": "{{colors.inkBrand010}}"
+    },
+    "disabled": {
+      "backgroundColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "focus": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "-2px",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "tabsBarTrack": {"base": {"backgroundColor": "{{colors.interface040}}"}},
+  "tabsBarIndicator": {
+    "base": {"backgroundColor": "{{colors.interactivePrimary030}}"}
+  },
+  "tabPanel": {
+    "focus": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "-3px",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "tagPrimary": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactiveSecondary030}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "color": "{{colors.inkBase}}",
+      "iconColor": "{{colors.inkBase}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveSecondary010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveSecondary020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "tagPrimaryInverse": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interface010}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "color": "{{colors.inkInverse}}",
+      "iconColor": "{{colors.inkInverse}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveInverse010}}"},
+    "active": {"backgroundColor": "{{colors.interactiveInverse020}}"},
+    "focus-visible": {
+      "outlineColor": "{{outlines.outlineColorInverse}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "outlineOffset": "{{outlines.outlineOffsetDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}"
+    }
+  },
+  "textInput": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interface040}}",
+      "borderWidth": "{{borders.borderWidthDefault}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkBase}}",
+      "textOverflow": "ellipsis",
+      "placeholderColor": "{{colors.inkSubtle}}"
+    },
+    "focus": {
+      "backgroundColor": "{{colors.interface020}}",
+      "borderColor": "{{colors.interfaceBrand010}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interface020}}"},
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}"
+    },
+    "invalid": {
+      "caretColor": "{{colors.inkNegative}}",
+      "borderColor": "{{colors.interactiveNegative030}}"
+    },
+    "valid": {
+      "caretColor": "{{colors.inkPositive}}",
+      "borderColor": "{{colors.interactivePositive030}}"
+    }
+  },
+  "textInputLabel": {
+    "base": {"color": "{{colors.inkContrast}}"},
+    "disabled": {"color": "{{colors.inkNonEssential}}"}
+  },
+  "textInputAssistiveText": {
+    "base": {"color": "{{colors.inkSubtle}}"},
+    "disabled": {"color": "{{colors.inkNonEssential}}"},
+    "invalid": {"color": "{{colors.inkNegative}}"},
+    "valid": {"color": "{{colors.inkPositive}}"}
+  },
+  "inputField": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactiveInput020}}",
+      "borderWidth": "{{borders.borderWidthDefault}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "color": "{{colors.inkBase}}",
+      "textOverflow": "ellipsis",
+      "placeholderColor": "{{colors.inkSubtle}}",
+      "iconColor": "{{colors.inkBase}}"
+    },
+    "focus": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "borderColor": "{{colors.transparent}}",
+      "backgroundColor": "{{colors.interactiveInput010}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveInput010}}"},
+    "valid": {"borderColor": "{{colors.interactivePositive030}}"},
+    "valid:hover": {
+      "borderColor": "{{colors.interactivePositive030}}",
+      "backgroundColor": "{{colors.interactiveInput010}}"
+    },
+    "valid:focus": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "borderColor": "{{colors.transparent}}",
+      "backgroundColor": "{{colors.interactiveInput010}}"
+    },
+    "disabled": {
+      "borderColor": "{{colors.interactiveDisabled010}}",
+      "color": "{{colors.inkNonEssential}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "loading": {"iconColor": "{{colors.inkBrand010}}"},
+    "invalid": {"borderColor": "{{colors.interactiveNegative030}}"},
+    "invalid:focus": {
+      "outlineColor": "{{outlines.outlineColorDefault}}",
+      "outlineStyle": "{{outlines.outlineStyleDefault}}",
+      "outlineWidth": "{{outlines.outlineWidthDefault}}",
+      "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
+      "borderColor": "{{colors.transparent}}",
+      "backgroundColor": "{{colors.interactiveInput010}}"
+    },
+    "invalid:hover": {
+      "borderColor": "{{colors.interactiveNegative030}}",
+      "backgroundColor": "{{colors.interactiveInput010}}"
+    }
+  },
+  "controlLabel": {
+    "base": {"color": "{{colors.inkBase}}"},
+    "disabled": {"color": "{{colors.inkNonEssential}}"}
+  },
+  "feedback": {
+    "base": {
+      "backgroundColor": "{{colors.interactiveInput040}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "opacity": "{{overlays.opacity000}}"
+    },
+    "hover": {"opacity": "{{overlays.opacity020}}"},
+    "disabled": {"opacity": "{{overlays.opacity000}}"},
+    "hover:active": {"opacity": "{{overlays.opacity040}}"},
+    "valid:hover": {
+      "backgroundColor": "{{colors.interactivePositive040}}",
+      "opacity": "{{overlays.opacity020}}"
+    },
+    "valid:hover:active": {
+      "backgroundColor": "{{colors.interactivePositive040}}",
+      "opacity": "{{overlays.opacity040}}"
+    },
+    "invalid:hover": {
+      "backgroundColor": "{{colors.interactiveNegative040}}",
+      "opacity": "{{overlays.opacity020}}"
+    },
+    "invalid:hover:active": {
+      "backgroundColor": "{{colors.interactiveNegative040}}",
+      "opacity": "{{overlays.opacity040}}"
+    }
+  },
+  "selectOptionItem": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}",
+      "textOverflow": "ellipsis",
+      "borderRadius": "{{borders.borderRadiusSharp}}",
+      "borderStyle": "solid",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderColor": "{{colors.transparent}}"
+    },
+    "hover": {"backgroundColor": "{{colors.interactiveInput010}}"},
+    "focus": {
+      "backgroundColor": "{{colors.interactiveInput010}}",
+      "borderColor": "{{colors.interactiveInput040}}"
+    },
+    "active": {"backgroundColor": "{{colors.interactiveInput030}}"},
+    "disabled": {"color": "{{colors.inkNonEssential}}"},
+    "selected": {"backgroundColor": "{{colors.interactiveInput030}}"},
+    "selected:hover": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "color": "{{colors.inkContrast}}"
+    },
+    "selected:focus": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "borderColor": "{{colors.interactiveInput040}}"
+    },
+    "selected:active": {"backgroundColor": "{{colors.interactiveInput030}}"},
+    "selected:focus:active": {
+      "backgroundColor": "{{colors.interactiveInput030}}"
+    },
+    "selected:focus:hover": {
+      "backgroundColor": "{{colors.interactiveInput030}}",
+      "color": "{{colors.inkContrast}}"
+    }
+  },
+  "selectOptionItemIcon": {
+    "base": {"iconColor": "{{colors.interactiveInput040}}"},
+    "selected": {"iconColor": "{{colors.interactiveInput040}}"},
+    "selected:hover": {"iconColor": "{{colors.interactiveInput040}}"},
+    "selected:focus": {"iconColor": "{{colors.interactiveInput040}}"},
+    "selected:active": {"iconColor": "{{colors.interactiveInput040}}"}
+  },
+  "titleBar": {"base": {"backgroundColor": "{{colors.transparent}}"}},
+  "toastNeutral": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNeutral010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "toastInformative": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceInformative010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "toastNotice": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNotice010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "toastPositive": {
+    "base": {
+      "backgroundColor": "{{colors.interfacePositive010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "toastNegative": {
+    "base": {
+      "backgroundColor": "{{colors.interfaceNegative010}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "iconColor": "{{colors.inkInverse}}"
+    }
+  },
+  "tooltipPointer": {"base": {"backgroundColor": "{{colors.interface060}}"}},
+  "tooltipPanel": {
+    "base": {
+      "color": "{{colors.inkInverse}}",
+      "borderRadius": "{{borders.borderRadiusDefault}}",
+      "backgroundColor": "{{colors.interface060}}"
+    }
+  },
+  "videoPlayerPlayButton": {
+    "base": {
+      "backgroundColor": "{{colors.transparent}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.white}}",
+      "borderWidth": "{{borders.borderWidth020}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "color": "{{colors.white}}"
+    }
+  },
+  "videoPlayerSeekBarContainer": {
+    "base": {"backgroundColor": "{{colors.blackTint020}}"}
+  },
+  "videoPlayerLoadProgressBar": {
+    "base": {"backgroundColor": "{{colors.whiteTint050}}"}
+  },
+  "videoPlayerPlayProgressBar": {
+    "base": {"backgroundColor": "{{colors.interactivePrimary030}}"}
+  },
+  "videoPlayerSeekHandle": {
+    "base": {"backgroundColor": "{{colors.interactivePrimary030}}"}
+  },
+  "videoPlayerCurrentDuration": {
+    "base": {
+      "backgroundColor": "{{colors.inkInverse}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.inkInverse}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusRounded020}}",
+      "color": "{{colors.inkContrast}}"
+    }
+  },
+  "videoPlayerSeekPosition": {
+    "base": {
+      "backgroundColor": "{{colors.inkContrast}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.inkContrast}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusRounded020}}",
+      "color": "{{colors.inkInverse}}"
+    }
+  },
+  "videoPlayerControlBar": {
+    "base": {"backgroundColor": "{{colors.blackTint050}}"}
+  },
+  "videoPlayerVolumeBar": {
+    "base": {"backgroundColor": "{{colors.inkInverse}}"}
+  },
+  "videoPlayerVolumeLevel": {
+    "base": {"backgroundColor": "{{colors.interactivePrimary030}}"}
+  },
+  "videoPlayerDockText": {
+    "base": {"backgroundImage": "{{overlays.overlayGradientInverseVertical}}"}
+  },
+  "videoPlayerDockTextTitle": {"base": {"color": "{{colors.white}}"}},
+  "videoPlayerMiniCardOverlay": {
+    "base": {"backgroundColor": "{{colors.neutral090}}"}
+  },
+  "volumeControlIndicator": {
+    "base": {
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  },
+  "volumeControlThumb": {
+    "base": {
+      "boxShadow": "{{shadows.shadow010}}",
+      "backgroundColor": "{{colors.interactivePrimary030}}",
+      "borderStyle": "solid",
+      "borderColor": "{{colors.interactivePrimary010}}",
+      "borderWidth": "{{borders.borderWidth010}}",
+      "borderRadius": "{{borders.borderRadiusCircle}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "hover": {
+      "backgroundColor": "{{colors.interactivePrimary040}}",
+      "iconColor": "{{colors.inkNonEssential}}"
+    },
+    "active": {
+      "backgroundColor": "{{colors.interactivePrimary050}}",
+      "iconColor": "{{colors.inkSubtle}}"
+    }
+  },
+  "volumeControlTrack": {
+    "base": {
+      "backgroundColor": "{{colors.interface030}}",
+      "borderRadius": "{{borders.borderRadiusPill}}"
+    }
+  }
+}

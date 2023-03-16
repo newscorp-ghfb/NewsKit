@@ -11,6 +11,7 @@ import {
 
 import * as foundations from './foundations';
 import * as presets from './presets';
+import {componentDefaults} from './component-defaults';
 
 import {get} from '../utils/get';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
@@ -95,6 +96,7 @@ export const createTheme = ({
     {
       ...foundations,
       ...presets,
+      // componentDefaults,
       componentDefaults: {},
       icons: {},
     },
