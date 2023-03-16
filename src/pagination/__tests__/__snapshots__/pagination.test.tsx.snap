@@ -198,10 +198,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -209,13 +209,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -946,10 +946,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -957,13 +957,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -1694,10 +1694,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1705,13 +1705,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -2447,10 +2447,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -2458,13 +2458,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -3194,10 +3194,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -3205,13 +3205,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -3941,10 +3941,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -3952,13 +3952,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -4688,10 +4688,10 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -4699,13 +4699,13 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -5542,10 +5542,10 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 .emotion-12 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -5553,13 +5553,13 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 .emotion-12::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-12::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -6095,10 +6095,10 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 .emotion-12 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -6106,13 +6106,13 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 .emotion-12::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-12::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 
@@ -7172,10 +7172,10 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 
 .emotion-4 {
   margin: 0;
-  font-family: "DM Sans",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   padding: 0.5px 0px;
   display: inline-block;
@@ -7183,13 +7183,13 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.391em;
+  margin-bottom: -0.403em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.409em;
+  margin-top: -0.4em;
   display: block;
 }
 

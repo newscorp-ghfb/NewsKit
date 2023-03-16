@@ -2360,7 +2360,7 @@ Object {
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
-      "typographyPreset": "utilityBody030",
+      "typographyPreset": "utilityButton030",
     },
     "medium": Object {
       "marginInline": "space010",
@@ -2369,7 +2369,7 @@ Object {
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
-      "typographyPreset": "utilityBody020",
+      "typographyPreset": "utilityButton020",
     },
     "small": Object {
       "marginInline": "space010",
@@ -2378,7 +2378,7 @@ Object {
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
-      "typographyPreset": "utilityBody010",
+      "typographyPreset": "utilityButton010",
     },
   },
   "paginationItemFirst": Object {
@@ -2414,7 +2414,7 @@ Object {
       "marginInline": "space010",
       "paddingInline": "space020",
       "stylePreset": "paginationItemInteractive",
-      "typographyPreset": "utilityBody030",
+      "typographyPreset": "utilityButton030",
     },
     "medium": Object {
       "iconSize": "iconSize020",
@@ -2422,7 +2422,7 @@ Object {
       "marginInline": "space010",
       "paddingInline": "space020",
       "stylePreset": "paginationItemInteractive",
-      "typographyPreset": "utilityBody020",
+      "typographyPreset": "utilityButton020",
     },
     "small": Object {
       "iconSize": "iconSize010",
@@ -2430,7 +2430,7 @@ Object {
       "marginInline": "space010",
       "paddingInline": "space020",
       "stylePreset": "paginationItemInteractive",
-      "typographyPreset": "utilityBody010",
+      "typographyPreset": "utilityButton010",
     },
   },
   "paginationItemLast": Object {
