@@ -22,7 +22,7 @@ const headlineCustomThemeObject: CreateThemeArgs = {
           borderRadius: '{{borders.borderRadiusSharp}}',
         },
       },
-      headingCustom: {base: {color: '{{colors.inkBrand010}}'}},
+      headlineCustom: {base: {color: '{{colors.inkBrand010}}'}},
       linkInline: {
         base: {
           color: '{{colors.interactivePrimary030}}',
@@ -47,16 +47,16 @@ const MarginOverridesWrapper = styled.div`
   ${getColorCssFromTheme('borderColor', 'red060')}
 `;
 
-export const StoryHeadingDefault = () => (
+export const StoryHeadlineDefault = () => (
   <StorybookPage columns="1fr">
     <StorybookCase title="Render as h1 (default)">
       <H1>Heading</H1>
     </StorybookCase>
   </StorybookPage>
 );
-StoryHeadingDefault.storyName = 'Default';
+StoryHeadlineDefault.storyName = 'Default';
 
-export const StoryHeadingVariations = () => (
+export const StoryHeadlineVariations = () => (
   <StorybookPage columns="1fr 1fr">
     <StorybookCase title="Render heading as h1 (default)">
       <H1>{HeadlineText}</H1>
@@ -148,9 +148,9 @@ export const StoryHeadingVariations = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryHeadingVariations.storyName = 'Variations';
+StoryHeadlineVariations.storyName = 'Variations';
 
-export const StoryHeadingLogicalProps = () => (
+export const StoryHeadlineLogicalProps = () => (
   <StorybookPage columns="1fr 1fr">
     <StorybookCase title=" editorialHeadline050">
       <MarginOverridesWrapper>
@@ -259,14 +259,14 @@ export const StoryHeadingLogicalProps = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryHeadingLogicalProps.storyName = 'Logical props';
+StoryHeadlineLogicalProps.storyName = 'Logical props';
 
-export const StoryHeadingStylingOverrides = () => (
+export const StoryHeadlineStylingOverrides = () => (
   <StorybookPage columns="1fr 1fr 1fr">
     <StorybookCase title=" utilityHeading050">
       <H2
         overrides={{
-          stylePreset: 'headingCustom',
+          stylePreset: 'headlineCustom',
           typographyPreset: 'utilityHeading050',
         }}
       >
@@ -276,7 +276,7 @@ export const StoryHeadingStylingOverrides = () => (
     <StorybookCase title=" utilityHeading040">
       <H3
         overrides={{
-          stylePreset: 'headingCustom',
+          stylePreset: 'headlineCustom',
           typographyPreset: 'utilityHeading040',
         }}
       >
@@ -286,7 +286,7 @@ export const StoryHeadingStylingOverrides = () => (
     <StorybookCase title=" utilityHeading030">
       <H4
         overrides={{
-          stylePreset: 'headingCustom',
+          stylePreset: 'headlineCustom',
           typographyPreset: 'utilityHeading030',
         }}
       >
@@ -296,7 +296,7 @@ export const StoryHeadingStylingOverrides = () => (
     <StorybookCase title=" utilityHeading020">
       <H5
         overrides={{
-          stylePreset: 'headingCustom',
+          stylePreset: 'headlineCustom',
           typographyPreset: 'utilityHeading020',
         }}
       >
@@ -306,7 +306,7 @@ export const StoryHeadingStylingOverrides = () => (
     <StorybookCase title=" utilityHeading010">
       <H6
         overrides={{
-          stylePreset: 'headingCustom',
+          stylePreset: 'headlineCustom',
           typographyPreset: 'utilityHeading010',
         }}
       >
@@ -315,9 +315,9 @@ export const StoryHeadingStylingOverrides = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryHeadingStylingOverrides.storyName = 'Styling overrides';
+StoryHeadlineStylingOverrides.storyName = 'Styling overrides';
 
-export const StoryHeadingOverrides = () => (
+export const StoryHeadlineOverrides = () => (
   <StorybookPage columns="1fr">
     <StorybookCase title="H-tag override (to h2)">
       <H1
@@ -330,7 +330,7 @@ export const StoryHeadingOverrides = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryHeadingOverrides.storyName = 'Overrides';
+StoryHeadlineOverrides.storyName = 'Overrides';
 
 export default {
   title: 'Components/Headline',
