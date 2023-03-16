@@ -73,7 +73,6 @@ export const PaginationItems = ({
       lastPage,
       pageSize,
       totalItems,
-      buildHref,
       changePage,
     };
 

@@ -7,7 +7,7 @@ export default {
   },
   paginationItem: {
     small: {
-      typographyPreset: 'utilityBody010',
+      typographyPreset: 'utilityButton010',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
@@ -16,7 +16,7 @@ export default {
       minWidth: 'sizing050',
     },
     medium: {
-      typographyPreset: 'utilityBody020',
+      typographyPreset: 'utilityButton020',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
@@ -25,7 +25,7 @@ export default {
       minWidth: 'sizing060',
     },
     large: {
-      typographyPreset: 'utilityBody030',
+      typographyPreset: 'utilityButton030',
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
@@ -184,7 +184,7 @@ export default {
   },
   paginationItemInteractive: {
     small: {
-      typographyPreset: 'utilityBody010',
+      typographyPreset: 'utilityButton010',
       stylePreset: 'paginationItemInteractive',
       iconSize: 'iconSize010',
       paddingInline: 'space020',
@@ -192,7 +192,7 @@ export default {
       marginBlockEnd: 'space000',
     },
     medium: {
-      typographyPreset: 'utilityBody020',
+      typographyPreset: 'utilityButton020',
       stylePreset: 'paginationItemInteractive',
       iconSize: 'iconSize020',
       paddingInline: 'space020',
@@ -200,7 +200,7 @@ export default {
       marginBlockEnd: 'space000',
     },
     large: {
-      typographyPreset: 'utilityBody030',
+      typographyPreset: 'utilityButton030',
       stylePreset: 'paginationItemInteractive',
       iconSize: 'iconSize020',
       paddingInline: 'space020',

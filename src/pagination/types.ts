@@ -56,7 +56,7 @@ export interface PaginationProps extends React.AriaAttributes {
 }
 
 export interface ComponentSizeProps extends React.AriaAttributes {
-  children?: Exclude<React.ReactNode, 'undefined'>;
+  children?: React.ReactNode;
   path?: string;
   size?: PaginationSize;
 }
@@ -68,7 +68,7 @@ export interface PaginationItemDescriptionProps extends ComponentOverrides {
 }
 
 export interface PaginationItemsProps extends ButtonProps, EventData {
-  children?: Exclude<React.ReactNode, 'undefined'>;
+  children?: React.ReactNode;
   truncation?: boolean;
   siblings?: number;
   boundaries?: number;
@@ -80,17 +80,16 @@ export interface PaginationItemsProps extends ButtonProps, EventData {
 }
 
 export interface PaginationItemProps extends EventData {
-  children?: Exclude<React.ReactNode, 'undefined'>;
-  ref?: React.RefObject<HTMLElement> | React.ForwardedRef<HTMLElement>;
+  children?: React.ReactNode;
+  ref?: React.RefObject<HTMLElement>;
   itemType?: PaginationItemType;
   pageNumber?: number;
   pageSize?: number;
   totalItems?: number;
   href?: string;
-  // The below 4 are derived props
+  // The below 3 are derived props
   selected?: boolean;
   lastPage?: number;
-  buildHref?: (pageNumber: number) => string;
   changePage?: (pageNumber: number) => void;
   // These render functions can be used to change the appearance of the
   // truncation icon, the number button and the text description, respectively
