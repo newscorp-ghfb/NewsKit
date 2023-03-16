@@ -1,6 +1,13 @@
 import React from 'react';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
-import {InlineMessage, LinkInline, UnorderedList, toNewsKitIcon} from 'newskit';
+import {
+  InlineMessage,
+  LinkInline,
+  UnorderedList,
+  toNewsKitIcon,
+  TextBlock,
+} from 'newskit';
+import {Code} from '../../components/code';
 import {InlineCode} from '../../components/markdown-elements';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {LayoutProps} from '../../components/layout';
@@ -20,6 +27,16 @@ const infoIcon = (
       size: 'iconSize020',
     }}
   />
+);
+
+const CodeBlock: React.FC<{children: string}> = ({children}) => (
+  <TextBlock
+    as="div"
+    stylePreset="inkContrast"
+    typographyPreset="editorialLabel010"
+  >
+    <Code>{children}</Code>
+  </TextBlock>
 );
 
 const PaginationComponent = (layoutProps: LayoutProps) => (
@@ -321,8 +338,24 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
       components: [
         {
           title: 'Pagination',
-          summary: 'Container component, holds React content for its children',
+          summary:
+            'The Pagination container component holds React content for its children',
           propsRows: [
+            {
+              name: 'children',
+              type: 'ReactNode',
+              default: '',
+              description:
+                'Must use one or all of PaginationItemFirst, PaginationItemPrev, PaginationsItems, PaginationItemNext and PaginationItemLast',
+              required: true,
+            },
+            {
+              name: 'size',
+              type: ['small', 'medium', 'large'],
+              default: 'medium',
+              description: 'Defines the size of the pagination items',
+              required: false,
+            },
             {
               name: 'totalItems',
               type: 'number',
@@ -369,13 +402,6 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
                 'Action that occurs after a pagination item is clicked on to change page',
               required: false,
             },
-            {
-              name: 'size',
-              type: ['small', 'medium', 'large'],
-              default: 'medium',
-              description: 'Defines the size of the pagination item',
-              required: false,
-            },
           ],
           propsFooter: (
             <InlineMessage
@@ -386,27 +412,33 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
                 marginBlockStart: 'space030',
               }}
             >
-              Please refer to the{' '}
-              <LinkInline href="/components/button/#component-api">
-                IconButton
-              </LinkInline>{' '}
-              for props and overrides for PaginationFirstItem,
-              PaginationLastItem, PaginationNextItem and PaginationPreviousItem.
-              <br />
-              <br />
-              From the Pagination props, it is possible to calculate the
-              lastPage. This is something we do in the PaginationProviderContext
-              that child components of Pagination can access. If using a custom
-              input component, lastPage can be used to validate that an input
-              page number is within a valid range.{' '}
+              From the Pagination props, it is possible to derive lastPage and
+              selected props. This is something we do in the
+              PaginationProviderContext that child components of Pagination can
+              access. See{' '}
               <Link
                 href="https://storybook.newskit.co.uk/?path=/docs/components-pagination--story-default"
                 target="_blank"
               >
-                See Storybook examples
+                Storybook examples
               </Link>{' '}
               for how to use the usePaginationContext hook in your custom
-              components.
+              components. For reference, these are all the values it returns. In
+              practice, you would only need a few of them.
+              <br />
+              <InlineCode>
+                {`const { size, pageSize, totalItems, buildHref, changePage, page, lastPage } = usePaginationContext();`}
+              </InlineCode>
+              <br />
+              <br />
+              They are also passed, for convenience, in the itemButton and
+              itemDescription overrides that PaginationItems supports (to avoid
+              the need to call the hook).
+              <br />
+              <br />
+              If using a custom input component, lastPage can be used to
+              validate that an input page number is within a valid range and
+              selected can be used to just override the selected item button.
             </InlineMessage>
           ),
           overridesRows: [
@@ -421,8 +453,17 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'Pagination items',
-          summary: 'Show pagination item links with numbers.',
+          summary:
+            'The PaginationItems child component shows pagination item links with numbers. Override icon if you want to change the appearance of the truncation icon. Override itemButton/itemDescription if you want to change/extend the appearance of the generated buttons.',
           propsRows: [
+            {
+              name: 'children',
+              type: 'ReactNode',
+              default: '',
+              description:
+                'If specified, is passed on to each generated pagination item as children, instead of page number.',
+              required: false,
+            },
             {
               name: 'truncation',
               type: 'boolean',
@@ -446,18 +487,18 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               required: false,
             },
             {
+              name: 'eventOriginator',
+              type: 'string',
+              default: 'pagination-item',
+              description:
+                'Allows users to add an event originator custom name.',
+              required: false,
+            },
+            {
               name: 'eventContext',
               type: 'object',
               description:
                 'Allows users to add extra event data to click events.',
-              required: false,
-            },
-            {
-              name: 'eventOriginator',
-              type: 'string',
-              default: 'pagination-link',
-              description:
-                'Allows users to add an event originator custom name.	',
               required: false,
             },
           ],
@@ -470,7 +511,432 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, this overrides the pagination item styling.',
             },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
+            {
+              attribute: 'typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'small - utilityButton010',
+                'medium - utilityButton020',
+                'large - utilityButton030',
+              ],
+              description:
+                'If provided, this overrides the pagination item typography preset.',
+            },
+            ...(commonLogicalProps('overridesRow', {
+              paddingInline: 'space020',
+              paddingBlock: 'space000',
+              marginInline: 'space010',
+            }) as OverridesRowsProps[]),
+            {
+              attribute: 'minHeight',
+              type: 'MQ<string>',
+              default: [
+                'small - sizing050',
+                'medium - sizing060',
+                'large - sizing070',
+              ],
+              description:
+                'If provided, this overrides the min height of the pagination item',
+            },
+            {
+              attribute: 'minWidth',
+              type: 'MQ<string>',
+              default: [
+                'small - sizing050',
+                'medium - sizing060',
+                'large - sizing070',
+              ],
+              description:
+                'If provided, this overrides the min width of the pagination item',
+            },
+            {
+              attribute: 'icon',
+              type: 'Override <NewskitIconProps>',
+              default: 'IconFilledMoreHoriz',
+              description:
+                'If provided, overrides the default (ellipsis) truncation icon',
+            },
+            {
+              attribute: 'itemButton',
+              type: [
+                'Override<ButtonOrButtonLinkProps',
+                '& PaginationItemProps>',
+              ],
+              default: 'PaginationButton',
+              description:
+                'If provided, overrides the item button with a custom component. The Storybook pages shows input and dropdown examples.',
+            },
+            {
+              attribute: 'itemDescription',
+              type: [
+                'Override<TextBlockProps &',
+                'PaginationItemDescriptionProps>',
+              ],
+              default: '',
+              description:
+                'If a TextBlock-based component is provided, it displays a description after the item button; otherwise no text shows.',
+            },
+          ],
+        },
+        {
+          title: 'Pagination navigation items',
+          summary:
+            'The PaginationItemFirst, PaginationItemPrev, PaginationItemNext and PaginationItemLast child components all take no props and the same set of overrides. Override icon if you want to change the appearance of the navigation icon. The defaults for paginationfirstItem, paginationPrevItem, paginationNextItem and paginationLastItem all reference the paginationItem stylePreset.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'ReactNode',
+              default: '',
+              description:
+                'Can be optionally used to add text to the right (PaginationItemFirst, PaginationItemPrev) or the left (PaginationItemNext and PaginationItemLast) of the icon',
+              required: false,
+            },
+          ],
+
+          overridesFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="pagination info"
+              overrides={{
+                marginBlockStart: 'space030',
+              }}
+            >
+              Please refer to the{' '}
+              <LinkInline href="/components/button/#component-api">
+                Button
+              </LinkInline>{' '}
+              page for full set of props that can be used as overrides for
+              PaginationFirstItem, PaginationLastItem, PaginationNextItem and
+              PaginationPrevItem.
+            </InlineMessage>
+          ),
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              default: 'paginationItem',
+              description:
+                'If provided, this overrides the pagination item styling.',
+            },
+            {
+              attribute: 'typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'small - utilityButton010',
+                'medium - utilityButton020',
+                'large - utilityButton030',
+              ],
+              description:
+                'If provided, this overrides the pagination item typography preset.',
+            },
+            ...(commonLogicalProps('overridesRow', {
+              paddingInline: 'space020',
+              paddingBlock: 'space000',
+              marginInline: 'space010',
+            }) as OverridesRowsProps[]),
+            {
+              attribute: 'minHeight',
+              type: 'MQ<string>',
+              default: [
+                'small - sizing050',
+                'medium - sizing060',
+                'large - sizing070',
+              ],
+              description:
+                'If provided, this overrides the min height of the pagination item',
+            },
+            {
+              attribute: 'width',
+              type: 'MQ<string>',
+              default: [
+                'small - sizing050',
+                'medium - sizing060',
+                'large - sizing070',
+              ],
+              description:
+                'If provided, this overrides the width of the pagination item',
+            },
+            {
+              attribute: 'icon',
+              type: 'Override <NewskitIconProps>',
+              default: [
+                'first - IconFilledFirstPage',
+                'prev - IconFilledChevronLeft',
+                'next - IconFilledChevronRight',
+                'last - IconFilledLastPage',
+              ],
+              description:
+                'If provided, overrides the respective navigation icon',
+            },
+          ],
+        },
+        {
+          title: 'Pagination list item',
+          summary:
+            'The PaginationListItem is a styled LI element that should be used inside any custom Pagination components you write.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'ReactNode',
+              default: '',
+              description:
+                'Used to make the item button part of an unordered list (UL).',
+              required: true,
+            },
+            {
+              name: 'key',
+              type: 'string',
+              default: '',
+              description:
+                'Unique identifier required to make the ordereed list valid HTML.',
+              required: true,
+            },
+          ],
+        },
+        {
+          title: 'Pagination button',
+          summary:
+            'The PaginationButton is default item button implememtation. It is based on the Button component, as that supports a lot of styling options. These props do not need to be supplied manually, they will be provided in the props of the itemButton function. Overrides passed into PaginationItems get turned into standard Button props before being passed into this component.',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'ReactNode',
+              default: '',
+              description:
+                'If specified, this React component will be displayed instead of the page number. eg Can be used to show a circle icon',
+              required: true,
+            },
+            {
+              name: 'size',
+              type: ['small', 'medium', 'large'],
+              default: 'medium',
+              description: "Defines the button's size.",
+              required: false,
+            },
+            {
+              name: 'selected',
+              type: 'boolean',
+              default: '',
+              description: 'Whether this item is the selected page.',
+              required: true,
+            },
+            {
+              name: 'pageNumber',
+              type: 'number',
+              default: '',
+              description: 'The page number of the button to be rendered.',
+              required: true,
+            },
+            {
+              name: 'lastPage',
+              type: 'number',
+              default: '',
+              description: 'The page number of the button to be rendered.',
+              required: true,
+            },
+            {
+              name: 'href',
+              type: 'string',
+              default: '',
+              description:
+                'If provided, turns the button into an anchor element.',
+              required: false,
+            },
+            {
+              name: 'changePage',
+              type: '(number) => void',
+              default: '',
+              description:
+                'If href not provided, the changePage function will be called on button click.',
+              required: false,
+            },
+            {
+              name: 'onClick',
+              type: '(MouseEvent) => void',
+              default: '',
+              description:
+                'If href not provided, the callback function to be called after changePage is called.',
+              required: false,
+            },
+          ],
+          propsFooter: (
+            <InlineMessage
+              icon={infoIcon}
+              role="region"
+              aria-label="pagination info"
+              overrides={{
+                marginBlockStart: 'space030',
+              }}
+            >
+              Please refer to the{' '}
+              <LinkInline href="/components/button/#component-api">
+                Button
+              </LinkInline>{' '}
+              page for the other props.
+            </InlineMessage>
+          ),
+        },
+        {
+          title: 'Code example showing itemButton overriding PaginationButton',
+          summary:
+            'Here is an advanced customisation example. It uses the itemButton function to render a custom component for selected items only. The normal items use the default PaginationButton.',
+          propsRows: [],
+          propsFooter: (
+            <>
+              <InlineMessage
+                icon={infoIcon}
+                role="region"
+                aria-label="pagination info"
+                overrides={{
+                  marginBlockStart: 'space030',
+                }}
+              >
+                Go to{' '}
+                <Link
+                  href="https://storybook.newskit.co.uk/?path=/docs/components-pagination--story-default"
+                  target="_blank"
+                >
+                  Storybook examples
+                </Link>{' '}
+                to see it in action. It is the `Variations in input / Buttons
+                with Input for selected item` story.
+              </InlineMessage>
+              <br />
+              <br />
+              <CodeBlock>
+                {`<Pagination
+  totalItems={232}
+  pageSize={10}
+  defaultPage={9}
+  onPageChange={onPageChange}
+>
+  <PaginationFirstItem />
+  <PaginationPrevItem />
+  <PaginationItems
+    truncation
+    siblings={3}
+    boundaries={1}
+    overrides={{
+      itemButton: ({selected, ...rest}) => {
+        if (selected) {
+          return (
+            <CustomInputPaginationItemButton
+              selected={selected}
+              {...rest}
+            />
+          );
+        }
+
+        return (
+          <PaginationButton {...rest}>
+            {rest.pageNumber}
+          </PaginationButton>
+        );
+      },
+    }}
+  />
+  <PaginationNextItem />
+  <PaginationLastItem />
+</Pagination>`}
+              </CodeBlock>
+            </>
+          ),
+        },
+        {
+          title: 'Truncation icon defaults',
+          summary: 'Default overrides used by the truncation icon.',
+
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              default: 'paginationItemNonInteractive',
+              description:
+                'If provided, this overrides the truncation item styling.',
+            },
+            {
+              attribute: 'typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'small - utilityButton010',
+                'medium - utilityButton020',
+                'large - utilityButton030',
+              ],
+              description:
+                'If provided, this overrides the truncation item typography preset (in case using text instead of an icon).',
+            },
+            ...(commonLogicalProps(
+              'overridesRow',
+              {
+                marginInline: 'space000',
+              },
+              true,
+            ) as OverridesRowsProps[]),
+            {
+              attribute: 'iconSize',
+              type: 'MQ<string>',
+              default: [
+                'small - sizing050',
+                'medium - sizing060',
+                'large - sizing070',
+              ],
+              description:
+                'If provided, this overrides the icon size of the truncation item',
+            },
+            {
+              attribute: 'width',
+              type: 'MQ<string>',
+              default: [
+                'small - sizing050',
+                'medium - sizing060',
+                'large - sizing070',
+              ],
+              description:
+                'If provided, this overrides the width of the truncation item',
+            },
+          ],
+        },
+        {
+          title: 'Pagination item description defaults',
+          summary:
+            'Default overrides used by the TextBlock-based itemDescription override in PaginationItems. It uses utilityBody instead of utilityButton fonts, to match the lighter weight of text inside input/dropdown custom components.',
+
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              default: 'paginationItemNonInteractive',
+              description:
+                'If provided, this overrides the truncation item styling.',
+            },
+            {
+              attribute: 'typographyPreset',
+              type: 'MQ<string>',
+              default: [
+                'small - utilityBody010',
+                'medium - utilityBody020',
+                'large - utilityBody030',
+              ],
+              description:
+                'If provided, this overrides the pagination item display typography preset.',
+            },
+            ...(commonLogicalProps(
+              'overridesRow',
+              {
+                paddingInline: 'space020',
+                marginInline: 'space010',
+                marginBlockEnd: 'space000',
+              },
+              true,
+            ) as OverridesRowsProps[]),
+            {
+              attribute: 'iconSize',
+              type: 'MQ<string>',
+              default: 'iconSize010',
+              description:
+                'If provided, this overrides the icon size of the pagination item display component',
+            },
           ],
         },
       ],
