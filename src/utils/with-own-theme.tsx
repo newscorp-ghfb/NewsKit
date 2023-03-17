@@ -9,6 +9,21 @@ import {
 import {deepMerge} from './deep-merge';
 import {recurseUnknown} from './recurse-unknown';
 
+const themeCache = new Map();
+
+const resolveKey = (
+  theme: Theme,
+  defaults: Record<string, Object>,
+  stylePresets?: Record<string, StylePreset>,
+): string => {
+  const themeName = theme.name || 'no-theme-name';
+  const defaultsKey = Object.keys(defaults)[0] || 'no-defaults';
+  const stylePresetKey =
+    Object.keys(stylePresets || {})[0] || 'no-stylePresets';
+
+  return `${themeName}-${defaultsKey}-${stylePresetKey}`;
+};
+
 export type NewsKitReactComponents<T> = React.FC<T> & {
   stylePresets?: Record<string, StylePreset>;
 };
@@ -18,17 +33,28 @@ const mergeTheme = (
   defaults: Record<string, Object>,
   stylePresets?: Record<string, StylePreset>,
 ): Theme => {
+  const cacheKey = resolveKey(theme, defaults, stylePresets);
+
+  if (themeCache.has(cacheKey)) {
+    return themeCache.get(cacheKey);
+  }
+
   const compiledStylePresets = recurseUnknown(
     // @ts-ignore
     theme,
-    stylePresets,
+    stylePresets || {},
     console.error.bind(console),
   );
-  return {
+  const componentTheme = {
     ...theme,
+    name: cacheKey,
     componentDefaults: deepMerge(defaults, theme.componentDefaults),
     stylePresets: deepMerge(compiledStylePresets, theme.stylePresets),
   };
+
+  themeCache.set(cacheKey, componentTheme);
+
+  return componentTheme;
 };
 
 const objectIsEmpty = (obj: Object) => Object.keys(obj).length === 0;
