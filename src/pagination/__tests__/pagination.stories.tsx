@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
-import {useTheme} from '@emotion/react';
 import {Story as StoryType} from '@storybook/react';
+import {useTheme, CreateThemeArgs, ThemeProvider} from '../../theme';
 import {Pagination} from '../pagination';
 import {PaginationFirstItem} from '../components/first-item/first-item';
 import {PaginationPrevItem} from '../components/prev-item/prev-item';
@@ -17,7 +17,6 @@ import {
 } from '../../icons';
 import {TextBlock} from '../../text-block';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {Select, SelectOption, SelectOptionProps} from '../../select';
 import {
   PaginationItemProps,

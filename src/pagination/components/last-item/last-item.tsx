@@ -1,5 +1,5 @@
 import React from 'react';
-import {useTheme} from '@emotion/react';
+import {useTheme} from '../../../theme';
 import {IconFilledLastPage, NewsKitIconProps} from '../../../icons';
 import {usePaginationContext} from '../../context';
 import {PaginationListItem} from '../list-item';
