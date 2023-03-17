@@ -2,7 +2,7 @@ import React, {ComponentType} from 'react';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
 import {PaginationItemProps, PaginationItemDescriptionProps} from '../../types';
 import {useTheme} from '../../../theme';
-import {getItemAria} from '../../utils';
+import {getPaginationItemAria} from '../../utils';
 import {get} from '../../../utils/get';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
 import {ButtonOrButtonLinkProps} from '../../../button';
@@ -62,7 +62,7 @@ export const PaginationItem = React.forwardRef<
     };
 
     // Extract to utils
-    const ariaProps = getItemAria({
+    const ariaProps = getPaginationItemAria({
       itemType,
       pageNumber,
       selected,

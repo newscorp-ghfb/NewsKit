@@ -24,7 +24,7 @@ import {
   PaginationItemsProps,
   PaginationLayoutItem,
 } from '../types';
-import {getItemsLayout} from '../utils';
+import {getPaginationItemsLayout} from '../utils';
 import {usePaginationContext} from '../context';
 import {Form, FormInput} from '../../form';
 import {IconButton} from '../../icon-button';
@@ -513,7 +513,7 @@ export const StoryVariationsInSelection = () => {
 
     const paginationElements = [] as React.ReactElement<SelectOptionProps>[];
     if (page && lastPage) {
-      const layout: [PaginationLayoutItem?] = getItemsLayout({
+      const layout: [PaginationLayoutItem?] = getPaginationItemsLayout({
         page,
         lastPage,
         truncation,

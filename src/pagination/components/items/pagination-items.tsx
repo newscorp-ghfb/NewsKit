@@ -11,7 +11,7 @@ import {IconFilledMoreHoriz, NewsKitIconProps} from '../../../icons';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
 import {PaginationItem} from '../item/pagination-item';
 import {usePaginationContext} from '../../context';
-import {getItemsLayout} from '../../utils';
+import {getPaginationItemsLayout} from '../../utils';
 import {PaginationListItem} from '../list-item';
 
 const paginationItemTruncation = 'paginationItemTruncation' as PaginationItemType;
@@ -59,7 +59,7 @@ export const PaginationItems = ({
 
   const paginationElements = [] as React.ReactElement<PaginationItemProps>[];
   if (page && lastPage) {
-    const layout: [PaginationLayoutItem?] = getItemsLayout({
+    const layout: [PaginationLayoutItem?] = getPaginationItemsLayout({
       page,
       lastPage,
       truncation,
