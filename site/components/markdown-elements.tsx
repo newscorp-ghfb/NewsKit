@@ -130,9 +130,13 @@ const Paragraph: React.FC<TextProps> = ({children}) => (
 
 const UnorderedList = ({children}: TextProps) => <ul>{children}</ul>;
 
-export const InlineCode = styled.code`
+interface InlineCodeProps {
+  color?: string; // May sometimes need passing in as 'inkContrast' to avoid a11y contrast issue
+}
+
+export const InlineCode = styled.code<InlineCodeProps>`
   background-color: rgba(27, 31, 35, 0.05);
-  color: ${getColorFromTheme('inkSubtle')};
+  color: ${getColorFromTheme('inkSubtle', 'color')};
   border-radius: 3px;
   font-size: 85%;
   margin: 0;

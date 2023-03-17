@@ -423,20 +423,23 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
                 Storybook examples
               </Link>{' '}
               for how to use the usePaginationContext hook in your custom
-              components. For reference, these are all the values it returns. In
-              practice, you would only need a few of them.
+              components.
               <br />
-              <InlineCode>
-                {`const { size, pageSize, totalItems, buildHref, changePage, page, lastPage } = usePaginationContext();`}
+              <br />
+              For reference, these are all the values it returns. In practice,
+              you would only need a few of them:
+              <br />
+              <InlineCode color="inkContrast">
+                {`const { size, changePage, page, lastPage, pageSize, totalItems, buildHref } = usePaginationContext();`}
               </InlineCode>
               <br />
               <br />
-              They are also passed, for convenience, in the itemButton and
-              itemDescription overrides that PaginationItems supports (to avoid
-              the need to call the hook).
+              Most of these properties are also passed, for convenience, in the
+              itemButton and itemDescription overrides that PaginationItems
+              supports (to avoid the need to call the hook).
               <br />
               <br />
-              If using a custom input component, lastPage can be used to
+              If writing a custom input component, lastPage can be used to
               validate that an input page number is within a valid range and
               selected can be used to just override the selected item button.
             </InlineMessage>
