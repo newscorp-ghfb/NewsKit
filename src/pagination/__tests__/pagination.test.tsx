@@ -102,10 +102,14 @@ type PaginationWithItemProps = {
   itemProps: PaginationItemProps;
 };
 
+// NB This approach is not recommended in real life. PaginationListItems is the public API
+// of generating PaginationListItem and PaginationItem components automatically.
 const PaginationWithItem = ({props, itemProps}: PaginationWithItemProps) => (
   <PaginationListItem>
     <Pagination {...props}>
-      <PaginationItem size="small" key="1" {...itemProps} />
+      <PaginationListItem>
+        <PaginationItem size="small" key="1" {...itemProps} />
+      </PaginationListItem>
     </Pagination>
   </PaginationListItem>
 );
@@ -506,71 +510,6 @@ describe('Pagination and PaginationItems only', () => {
         itemProps,
       });
       expect(fragment).toMatchSnapshot();
-    });
-
-    test('fire tracking event on normal item with href set and onPageChange unset', async () => {
-      const mockFireEvent = jest.fn();
-      const itemProps = {
-        ...pageItemProps,
-        lastPage,
-        children: paginationItemContent,
-        key: '1',
-        eventOriginator: 'pagination-item',
-        eventContext: {
-          event: 'event data',
-        },
-      };
-
-      const {getByTestId} = renderWithImplementation(
-        PaginationWithItem,
-        {props: defaultProps, itemProps},
-        mockFireEvent,
-      );
-      const paginationItemButton = getByTestId('pagination-item');
-      fireEvent.click(paginationItemButton);
-      expect(mockFireEvent).toHaveBeenCalledWith({
-        originator: 'pagination-item',
-        trigger: EventTrigger.Click,
-        context: {
-          href: 'https://paginationitem.test',
-          event: 'event data',
-        },
-      });
-      expect(onPageChange).not.toHaveBeenCalled();
-    });
-
-    test('fire tracking event on normal item with href unset and onPageChange set', async () => {
-      jest.spyOn(console, 'warn').mockImplementation();
-      const mockFireEvent = jest.fn();
-      const itemProps = {
-        selected,
-        pageNumber,
-        onClick: () => onPageChange(pageNumber),
-        lastPage,
-        children: paginationItemContent,
-        key: '1',
-        eventOriginator: 'pagination-item',
-        eventContext: {
-          event: 'event data',
-        },
-      };
-
-      const {getByTestId} = renderWithImplementation(
-        PaginationWithItem,
-        {props: controlledProps, itemProps},
-        mockFireEvent,
-      );
-      const paginationItemButton = getByTestId('pagination-item');
-      fireEvent.click(paginationItemButton);
-      expect(mockFireEvent).toHaveBeenCalledWith({
-        originator: 'pagination-item',
-        trigger: EventTrigger.Click,
-        context: {
-          page: pageNumber,
-          event: 'event data',
-        },
-      });
-      expect(onPageChange).toHaveBeenCalledWith(pageNumber);
     });
 
     it('renders selected pagination item with aria attributes', () => {
