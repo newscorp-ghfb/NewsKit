@@ -2,7 +2,7 @@ import React from 'react';
 import {useTheme} from '@emotion/react';
 import {IconFilledFirstPage, NewsKitIconProps} from '../../../icons';
 import {usePaginationContext} from '../../context';
-import {StyledListItem} from '../../styled';
+import {PaginationListItem} from '../list-item';
 import {PaginationItem} from '../item/pagination-item';
 import {PaginationFirstItemProps} from './types';
 import {PaginationItemType} from '../../types';
@@ -42,7 +42,7 @@ export const PaginationFirstItem = React.forwardRef<
 
   const href = buildHref! && buildHref(1);
   return (
-    <StyledListItem key="first">
+    <PaginationListItem key="first">
       <PaginationItem
         // @ts-ignore
         itemType={itemType}
@@ -59,6 +59,6 @@ export const PaginationFirstItem = React.forwardRef<
         <PaginationIcon />
         {children}
       </PaginationItem>
-    </StyledListItem>
+    </PaginationListItem>
   );
 });

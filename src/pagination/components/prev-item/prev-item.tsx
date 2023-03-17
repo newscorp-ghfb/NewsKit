@@ -2,7 +2,7 @@ import React from 'react';
 import {useTheme} from '@emotion/react';
 import {IconFilledChevronLeft, NewsKitIconProps} from '../../../icons';
 import {usePaginationContext} from '../../context';
-import {StyledListItem} from '../../styled';
+import {PaginationListItem} from '../list-item';
 import {PaginationItem} from '../item/pagination-item';
 import {PaginationPrevItemProps} from './types';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
@@ -45,7 +45,7 @@ export const PaginationPrevItem = React.forwardRef<
   const prevPage = Math.max(page - 1, 1);
   const href = buildHref! && buildHref(prevPage);
   return (
-    <StyledListItem key="prev">
+    <PaginationListItem key="prev">
       <PaginationItem
         // @ts-ignore
         itemType={itemType}
@@ -62,6 +62,6 @@ export const PaginationPrevItem = React.forwardRef<
         <PaginationIcon />
         {children}
       </PaginationItem>
-    </StyledListItem>
+    </PaginationListItem>
   );
 });

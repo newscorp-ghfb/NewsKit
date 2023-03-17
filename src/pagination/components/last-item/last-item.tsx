@@ -2,7 +2,7 @@ import React from 'react';
 import {useTheme} from '@emotion/react';
 import {IconFilledLastPage, NewsKitIconProps} from '../../../icons';
 import {usePaginationContext} from '../../context';
-import {StyledListItem} from '../../styled';
+import {PaginationListItem} from '../list-item';
 import {PaginationItem} from '../item/pagination-item';
 import {PaginationLastItemProps} from './types';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
@@ -44,7 +44,7 @@ export const PaginationLastItem = React.forwardRef<
 
   const href = buildHref! && buildHref(lastPage);
   return (
-    <StyledListItem key="last">
+    <PaginationListItem key="last">
       <PaginationItem
         // @ts-ignore
         itemType={itemType}
@@ -61,6 +61,6 @@ export const PaginationLastItem = React.forwardRef<
         {children}
         <PaginationIcon />
       </PaginationItem>
-    </StyledListItem>
+    </PaginationListItem>
   );
 });
