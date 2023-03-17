@@ -28,7 +28,7 @@ import {usePaginationContext} from '../context';
 import {Form, FormInput} from '../../form';
 import {IconButton} from '../../icon-button';
 import {TextField} from '../../text-field';
-import {Stack} from '../../stack';
+import {GridLayout} from '../../grid-layout';
 import {PaginationListItem} from '../components/list-item';
 import {PaginationButton} from '../components/button';
 import {ButtonOrButtonLinkProps} from '../../button';
@@ -306,10 +306,12 @@ export const StoryVariationsInInput = () => {
 
     return (
       <PaginationListItem key="pages" size={size}>
-        <Stack
-          flow="horizontal-center"
-          spaceInline="space010"
-          paddingInlineStart="space050"
+        <GridLayout
+          columns="auto auto"
+          rows="1fr"
+          autoFlow="row"
+          alignItems="center"
+          columnGap="space010"
         >
           <CustomInputPaginationItemButton
             ref={ref}
@@ -326,7 +328,7 @@ export const StoryVariationsInInput = () => {
               lastPage={lastPage}
             />
           )}
-        </Stack>
+        </GridLayout>
       </PaginationListItem>
     );
   });
@@ -433,7 +435,7 @@ export const StoryVariationsInInput = () => {
             <PaginationItems truncation siblings={3} boundaries={1} />
             <PaginationNextItem />
             <PaginationLastItem />
-            <CustomInputPaginationItem />
+            <CustomInputPaginationItem overrides={{}} />
           </Pagination>
         </StorybookCase>
         <StorybookCase title="Buttons with Input for selected item">
@@ -559,11 +561,12 @@ export const StoryVariationsInSelection = () => {
 
     return (
       <PaginationListItem key="pages" size={size}>
-        <Stack
-          flow="horizontal-center"
-          spaceInline="space010"
-          marginInline="space010"
-          marginBlockEnd="space000"
+        <GridLayout
+          columns="auto auto"
+          rows="1fr"
+          autoFlow="row"
+          alignItems="center"
+          columnGap="space030"
         >
           <Select
             size="small"
@@ -597,7 +600,7 @@ export const StoryVariationsInSelection = () => {
               lastPage={lastPage}
             />
           )}
-        </Stack>
+        </GridLayout>
       </PaginationListItem>
     );
   };

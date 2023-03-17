@@ -6,7 +6,7 @@ import {getPaginationItemAria} from '../../utils';
 import {get} from '../../../utils/get';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
 import {ButtonOrButtonLinkProps} from '../../../button';
-import {Stack} from '../../../stack';
+import {GridLayout} from '../../../grid-layout';
 import {PaginationButton} from '../button';
 import {TextBlock, TextBlockProps} from '../../../text-block';
 
@@ -108,7 +108,13 @@ export const PaginationItem = React.forwardRef<
       );
 
       return (
-        <Stack flow="horizontal-center" spaceInline="space010">
+        <GridLayout
+          columns="auto auto"
+          rows="1fr"
+          autoFlow="row"
+          alignItems="center"
+          columnGap="space010"
+        >
           <ItemButton {...itemButtonProps}>{children}</ItemButton>
           {itemDescription && (
             <ItemDescription
@@ -118,7 +124,7 @@ export const PaginationItem = React.forwardRef<
               lastPage={lastPage}
             />
           )}
-        </Stack>
+        </GridLayout>
       );
     }
 
