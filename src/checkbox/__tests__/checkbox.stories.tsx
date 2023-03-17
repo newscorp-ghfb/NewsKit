@@ -49,7 +49,7 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
       },
       customCheckbox: {
         base: {
-          backgroundColor: '#804200',
+          backgroundColor: '{{colors.inkContrast}}',
           iconColor: '{{colors.amber020}}',
           borderRadius: '4px',
         },
@@ -96,9 +96,9 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
 };
 
 export const StoryCheckboxDefault = () => (
-  <>
-    <Checkbox label={shortLabel} checked />
-  </>
+  <StorybookPage>
+    <Checkbox label={shortLabel} defaultChecked />
+  </StorybookPage>
 );
 
 StoryCheckboxDefault.storyName = 'Default';
@@ -234,7 +234,7 @@ StoryCheckboxTransitions.storyName = 'Transitions';
 export const StoryCheckboxStylingOverrides = () => (
   <>
     <Checkbox
-      checked
+      defaultChecked
       label="Style overrides"
       overrides={{
         marginBlock: '15px',
@@ -257,7 +257,7 @@ export const StoryCheckboxOverrides = () => (
     <StorybookPage columns={twoFlagCols}>
       <StorybookCase title="Icon prop">
         <Checkbox
-          checked
+          defaultChecked
           label={shortLabel}
           overrides={{
             marginBlockEnd: 'space030',
@@ -274,7 +274,7 @@ export const StoryCheckboxOverrides = () => (
       </StorybookCase>
       <StorybookCase title="Icon component overriden">
         <Checkbox
-          checked
+          defaultChecked
           label={shortLabel}
           overrides={{
             icon: CustomCheck,
@@ -286,7 +286,7 @@ export const StoryCheckboxOverrides = () => (
 
       <StorybookCase title="Icon size">
         <Checkbox
-          checked
+          defaultChecked
           label={shortLabel}
           overrides={{
             icon: {
@@ -301,7 +301,7 @@ export const StoryCheckboxOverrides = () => (
 
       <StorybookCase title="Logical props">
         <Checkbox
-          checked
+          defaultChecked
           label={shortLabel}
           overrides={{
             marginBlockEnd: 'space030',
@@ -312,7 +312,7 @@ export const StoryCheckboxOverrides = () => (
 
       <StorybookCase title="Custom outline">
         <Checkbox
-          checked
+          defaultChecked
           label={shortLabel}
           overrides={{
             marginBlockEnd: 'space060',
