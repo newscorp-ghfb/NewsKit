@@ -33,8 +33,9 @@ import {Stack} from '../../stack';
 import {PaginationListItem} from '../components/list-item';
 import {PaginationButton} from '../components/button';
 import {ButtonOrButtonLinkProps} from '../../button';
-import {getSSRId} from '../..';
+import {useReactKeys} from '../../utils/hooks';
 import {filterOutFalsyProperties} from '../../utils/filter-object';
+import {ScreenReaderOnly} from '../../screen-reader-only/screen-reader-only';
 
 const paginationItemCustomThemeObject: CreateThemeArgs = {
   name: 'pagination-static-theme',
@@ -233,7 +234,7 @@ export const StoryVariationsInInput = () => {
       inputRef.current?.blur();
     };
 
-    const ariaId = getSSRId();
+    const ariaId = useReactKeys(1)[0];
     const inputLabelId = `page-input-label${ariaId}`;
     const inputId = `page-input${ariaId}`;
 
@@ -242,14 +243,14 @@ export const StoryVariationsInInput = () => {
         onSubmit={values => validateAndChangePage(parseInt(values.newPage, 10))}
       >
         <FormInput name="newPage">
-          <label
+          <ScreenReaderOnly
+            as="label"
             id={inputLabelId}
             htmlFor={inputId}
-            aria-hidden
-            style={{display: 'none'}}
+            aria-hidden="true"
           >
             Enter page between 1 and {lastPage}
-          </label>
+          </ScreenReaderOnly>
           <TextField
             id={inputId}
             aria-labelledby={inputLabelId}
