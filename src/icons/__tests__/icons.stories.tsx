@@ -167,6 +167,7 @@ export const StoryIconsTransition = () => (
     </StorybookCase>
   </StorybookPage>
 );
+
 StoryIconsTransition.storyName = 'Transitions';
 
 export const StoryOverriddenIcons = () => {
