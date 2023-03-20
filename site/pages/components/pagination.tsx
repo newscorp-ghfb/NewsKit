@@ -405,9 +405,10 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
           ],
           propsFooter: (
             <InlineMessage
+              id="pagination-info"
+              aria-label="pagination info"
               icon={infoIcon}
               role="region"
-              aria-label="pagination info"
               overrides={{
                 marginBlockStart: 'space030',
               }}
@@ -598,9 +599,10 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
 
           overridesFooter: (
             <InlineMessage
+              id="button-docs-link"
+              aria-label="button docs link"
               icon={infoIcon}
               role="region"
-              aria-label="pagination info"
               overrides={{
                 marginBlockStart: 'space030',
               }}
@@ -765,9 +767,10 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
           ],
           propsFooter: (
             <InlineMessage
+              id="button-docs-link-2"
+              aria-label="button docs link 2"
               icon={infoIcon}
               role="region"
-              aria-label="pagination info"
               overrides={{
                 marginBlockStart: 'space030',
               }}
@@ -788,9 +791,10 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
           propsFooter: (
             <>
               <InlineMessage
+                id="code-example"
+                aria-label="code example"
                 icon={infoIcon}
                 role="region"
-                aria-label="pagination info"
                 overrides={{
                   marginBlockStart: 'space030',
                 }}
