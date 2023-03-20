@@ -1,28 +1,34 @@
 import React, {ComponentType} from 'react';
-import {StyledButton} from '../../styled';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
-import {PaginationItemProps} from '../../types';
+import {PaginationItemProps, PaginationItemDescriptionProps} from '../../types';
 import {useTheme} from '../../../theme';
-import {getItemAria} from '../../utils';
+import {getPaginationItemAria} from '../../utils';
 import {get} from '../../../utils/get';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
+import {ButtonOrButtonLinkProps} from '../../../button';
+import {GridLayout} from '../../../grid-layout';
+import {PaginationButton} from '../button';
+import {TextBlock, TextBlockProps} from '../../../text-block';
 
 export const PaginationItem = React.forwardRef<
-  HTMLButtonElement,
-  PaginationItemProps
+  HTMLElement,
+  ButtonOrButtonLinkProps & PaginationItemProps
 >(
   (
     {
       children,
       selected,
       pageNumber,
+      lastPage,
       href,
       onClick,
-      overrides,
-      itemType,
+      overrides = {},
+      itemType = 'paginationItem',
       /* istanbul ignore next */
       size = 'medium',
+      changePage,
       eventContext = {},
+      /* istanbul ignore next */
       eventOriginator = 'pagination-item',
       ...rest
     },
@@ -37,10 +43,11 @@ export const PaginationItem = React.forwardRef<
       href,
       onClick,
     };
+    const {itemButton, itemDescription} = overrides;
     const theme = useTheme();
 
     const itemTypeComponentDefaults =
-      itemType && itemType !== 'paginationItem'
+      itemType !== 'paginationItem'
         ? theme.componentDefaults[itemType][size]
         : undefined;
     const buttonSettings: typeof overrides = {
@@ -49,8 +56,13 @@ export const PaginationItem = React.forwardRef<
       ...filterOutFalsyProperties(overrides),
     };
 
+    const textblockSettings: typeof overrides = {
+      ...theme.componentDefaults.paginationItemNonInteractive[size],
+      ...filterOutFalsyProperties(itemDescription),
+    };
+
     // Extract to utils
-    const ariaProps = getItemAria({
+    const ariaProps = getPaginationItemAria({
       itemType,
       pageNumber,
       selected,
@@ -63,29 +75,60 @@ export const PaginationItem = React.forwardRef<
     const combinedProps = {
       ...buttonProps,
       ...ariaProps,
-      itemType,
       eventContext: combinedEventContext,
       eventOriginator,
       overrides: buttonSettings,
       ref,
     };
 
-    if (overrides?.itemButton) {
+    if (
+      itemType !== 'paginationItemTruncation' &&
+      (itemButton || itemDescription)
+    ) {
       const [ItemButton, itemButtonProps] = getComponentOverrides(
-        overrides.itemButton as Override<PaginationItemProps>,
-        StyledButton as ComponentType<PaginationItemProps>,
+        itemButton as Override<ButtonOrButtonLinkProps & PaginationItemProps>,
+        PaginationButton as ComponentType<
+          ButtonOrButtonLinkProps & PaginationItemProps
+        >,
         {
-          ...rest,
           ...combinedProps,
+          lastPage,
+          changePage,
         },
       );
+
+      const [ItemDescription, itemDescriptionProps] = getComponentOverrides(
+        itemDescription as Override<
+          TextBlockProps & PaginationItemDescriptionProps
+        >,
+        TextBlock as ComponentType<
+          TextBlockProps & PaginationItemDescriptionProps
+        >,
+        textblockSettings,
+      );
+
       return (
-        <ItemButton href={href} {...rest} {...itemButtonProps}>
-          {children}
-        </ItemButton>
+        <GridLayout
+          columns="auto auto"
+          rows="1fr"
+          autoFlow="row"
+          alignItems="center"
+          columnGap="space010"
+        >
+          <ItemButton {...itemButtonProps}>{children}</ItemButton>
+          {itemDescription && (
+            <ItemDescription
+              {...itemDescriptionProps}
+              selected
+              pageNumber={pageNumber}
+              lastPage={lastPage}
+            />
+          )}
+        </GridLayout>
       );
     }
 
-    return <StyledButton {...combinedProps}>{children}</StyledButton>;
+    // @ts-ignore - href must be allowed to be undefined so that Button renders as a link when appropriate
+    return <PaginationButton {...combinedProps}>{children}</PaginationButton>;
   },
 );

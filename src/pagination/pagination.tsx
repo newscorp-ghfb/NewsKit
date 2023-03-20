@@ -34,11 +34,12 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
         process.env.NODE_ENV !== 'production' &&
         Boolean(buildHref) === Boolean(onPageChange)
       ) {
+        // eslint-disable-next-line no-console
         console.warn(
           'Pagination must have either buildHref OR onPageChange set.',
         );
       }
-    }, []);
+    });
 
     /* istanbul ignore next */
     const [page = 1, setPage] = useControlled({

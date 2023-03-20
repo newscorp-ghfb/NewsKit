@@ -158,16 +158,28 @@ export default {
   },
   paginationItemNonInteractive: {
     small: {
-      iconSize: 'iconSize010',
+      typographyPreset: 'utilityBody010',
       stylePreset: 'paginationItemNonInteractive',
+      iconSize: 'iconSize010',
+      paddingInline: 'space000',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
     },
     medium: {
-      iconSize: 'iconSize020',
+      typographyPreset: 'utilityBody020',
       stylePreset: 'paginationItemNonInteractive',
+      iconSize: 'iconSize020',
+      paddingInline: 'space000',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
     },
     large: {
-      iconSize: 'iconSize020',
+      typographyPreset: 'utilityBody030',
       stylePreset: 'paginationItemNonInteractive',
+      iconSize: 'iconSize020',
+      paddingInline: 'space000',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
     },
   },
 };
