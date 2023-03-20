@@ -36,7 +36,7 @@ import {useReactKeys} from '../../utils/hooks';
 import {filterOutFalsyProperties} from '../../utils/filter-object';
 import {ScreenReaderOnly} from '../../screen-reader-only/screen-reader-only';
 
-const paginationItemCustomThemeObject: CreateThemeArgs = {
+const paginationItemCustomThemeObject = {
   name: 'pagination-static-theme',
   overrides: {
     stylePresets: {
@@ -66,7 +66,7 @@ const paginationItemCustomThemeObject: CreateThemeArgs = {
       },
     },
   },
-};
+} as CreateThemeArgs;
 
 const customDefaults = {
   paginationItemInput: {
@@ -297,12 +297,7 @@ export const StoryVariationsInInput = () => {
         onSubmit={values => validateAndChangePage(parseInt(values.newPage, 10))}
       >
         <FormInput name="newPage">
-          <ScreenReaderOnly
-            as="label"
-            id={inputLabelId}
-            htmlFor={inputId}
-            aria-hidden="true"
-          >
+          <ScreenReaderOnly id={inputLabelId} aria-hidden="true">
             Enter page between 1 and {lastPage}
           </ScreenReaderOnly>
           <TextField
