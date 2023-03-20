@@ -44,11 +44,15 @@ exports[`StructuredList with href renders four cells with href 1`] = `
         href="http://apple.com"
       />
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-3"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-3"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -266,11 +270,15 @@ exports[`StructuredList with href renders one cell with disabled link and hidden
         </div>
       </span>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-8"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-8"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -509,11 +517,15 @@ exports[`StructuredList with href renders one cell with external link and hidden
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-8"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-8"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -893,11 +905,15 @@ exports[`StructuredList with href renders one cell with external link icon 1`] =
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-13"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-13"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -1162,11 +1178,15 @@ exports[`StructuredList with href renders one cell with internal link and hidden
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-8"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-8"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -1547,11 +1567,15 @@ exports[`StructuredList with href renders one cell with internal link icon 1`] =
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-13"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-13"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -2051,11 +2075,15 @@ exports[`StructuredList with href renders three cells with custom icon 1`] = `
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-18"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-18"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -2617,11 +2645,15 @@ exports[`StructuredList with href renders two cells with external link icon 1`] 
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-19"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -3188,11 +3220,15 @@ exports[`StructuredList with href renders two cells with internal link icon 1`] 
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-19"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -3570,11 +3606,15 @@ exports[`StructuredList with href renders two cells with pullRightOnSecond and h
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-11"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-11"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -4104,11 +4144,15 @@ exports[`StructuredList with href renders with alignment on icon center 1`] = `
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-19"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -4679,11 +4723,15 @@ exports[`StructuredList with href renders with alignment on icon end 1`] = `
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-19"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -5252,11 +5300,15 @@ exports[`StructuredList with href renders with anchor attributes 1`] = `
         </div>
       </a>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-19"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-19"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -5695,11 +5747,15 @@ exports[`StructuredList with href renders with disabled link 1`] = `
         </div>
       </span>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-13"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-13"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -6181,11 +6237,15 @@ exports[`StructuredList without-href renders with default style 1`] = `
         </div>
       </div>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-17"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-17"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -6398,11 +6458,15 @@ exports[`StructuredList without-href renders with logical prop overrides 1`] = `
         </div>
       </div>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-5"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-5"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -6457,11 +6521,15 @@ exports[`StructuredList without-href renders with more than 3 children 1`] = `
       aria-label="list item"
       class="emotion-1"
     />
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-2"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-2"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -6650,11 +6718,15 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
         </div>
       </div>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-7"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-7"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -6871,11 +6943,15 @@ exports[`StructuredList without-href renders with one cell full width 1`] = `
         </div>
       </div>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-7"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-7"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -7317,11 +7393,15 @@ exports[`StructuredList without-href renders with overrides 1`] = `
         </div>
       </div>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-17"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-17"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -7532,11 +7612,15 @@ exports[`StructuredList without-href renders with texts only and no cells 1`] = 
         </div>
       </div>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-5"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-5"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -7826,11 +7910,15 @@ exports[`StructuredList without-href renders with two cells default style 1`] = 
         </div>
       </div>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-10"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-10"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"
@@ -8141,11 +8229,15 @@ exports[`StructuredList without-href renders with two cells with pullRight on th
         </div>
       </div>
     </li>
-    <hr
+    <li
       aria-hidden="true"
-      class="emotion-10"
-      data-testid="divider"
-    />
+    >
+      <hr
+        aria-hidden="true"
+        class="emotion-10"
+        data-testid="divider"
+      />
+    </li>
     <li
       aria-label="list item"
       class="emotion-1"

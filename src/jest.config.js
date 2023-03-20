@@ -1,7 +1,6 @@
 module.exports = {
   name: 'comps',
   displayName: 'NewsKit Components',
-  bail: 1,
   rootDir: './',
   setupFilesAfterEnv: [
     '<rootDir>/test/test-framework-setup.ts',

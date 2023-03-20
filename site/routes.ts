@@ -748,6 +748,14 @@ export const routes = [
             illustration: 'components/menu/menu-illustration',
           },
           {
+            title: 'Pagination',
+            page: true,
+            id: '/components/pagination',
+            description:
+              'Pagination lets users navigate through multiple pages.',
+            illustration: 'components/pagination/hero',
+          },
+          {
             title: 'Scroll',
             page: true,
             id: '/components/scroll',
