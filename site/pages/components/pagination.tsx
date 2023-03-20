@@ -430,7 +430,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               For reference, these are all the values it returns. In practice,
               you would only need a few of them:
               <br />
-              <InlineCode color="inkContrast">
+              <InlineCode>
                 {`const { size, changePage, page, lastPage, pageSize, totalItems, buildHref } = usePaginationContext();`}
               </InlineCode>
               <br />
