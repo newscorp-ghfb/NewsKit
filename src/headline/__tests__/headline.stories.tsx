@@ -47,7 +47,7 @@ const MarginOverridesWrapper = styled.div`
 export const StoryHeadlineDefault = () => (
   <StorybookPage columns="1fr">
     <StorybookCase title="Render as h1 (default)">
-      <Headline>Heading</Headline>
+      <Headline headingAs="h1">Heading</Headline>
     </StorybookCase>
   </StorybookPage>
 );
@@ -234,6 +234,7 @@ export const StoryHeadlineOverrides = () => (
   <StorybookPage columns="1fr">
     <StorybookCase title="H-tag override (to h2)">
       <Headline
+        headingAs="h2"
         overrides={{
           typographyPreset: 'editorialHeadline070',
         }}
