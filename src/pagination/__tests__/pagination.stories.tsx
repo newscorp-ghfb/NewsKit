@@ -46,6 +46,53 @@ const paginationItemCustomThemeObject: CreateThemeArgs = {
           color: '{{colors.interfaceInformative010}}',
         },
       },
+      paginationItemInput: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.interactiveLink010}}',
+          iconColor: '{{colors.interactiveLink010}}',
+          cursor: 'default',
+        },
+        disabled: {
+          color: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkNonEssential}}',
+        },
+        'focus-visible': {
+          outlineColor: '{{outlines.outlineColorDefault}}',
+          outlineStyle: '{{outlines.outlineStyleDefault}}',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
+        },
+      },
+    },
+  },
+};
+
+const customDefaults = {
+  paginationItemInput: {
+    small: {
+      typographyPreset: 'utilityButton010',
+      stylePreset: 'paginationItemInput',
+      iconSize: 'iconSize010',
+      paddingInline: 'space020',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
+    },
+    medium: {
+      typographyPreset: 'utilityButton020',
+      stylePreset: 'paginationItemInput',
+      iconSize: 'iconSize020',
+      paddingInline: 'space020',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
+    },
+    large: {
+      typographyPreset: 'utilityButton030',
+      stylePreset: 'paginationItemInput',
+      iconSize: 'iconSize020',
+      paddingInline: 'space020',
+      marginInline: 'space010',
+      marginBlockEnd: 'space000',
     },
   },
 };
@@ -221,6 +268,7 @@ StoryVariationsInTruncation.storyName = 'Variations in truncation';
 
 export const StoryVariationsInInput = () => {
   const CustomInputPaginationItemButton = ({
+    size = 'medium',
     pageNumber,
     lastPage = 1,
     changePage = () => {},
@@ -236,6 +284,13 @@ export const StoryVariationsInInput = () => {
     const ariaId = useReactKeys(1)[0];
     const inputLabelId = `page-input-label${ariaId}`;
     const inputId = `page-input${ariaId}`;
+
+    // Cannot use a stylePreset (such as paginationItemInput) on the TextField or it will lose the default border
+    const {
+      paddingInline,
+      marginInline,
+      marginBlockEnd,
+    } = customDefaults.paginationItemInput[size];
 
     return (
       <Form
@@ -264,17 +319,16 @@ export const StoryVariationsInInput = () => {
                 type="submit"
                 title="Change Page"
                 overrides={{
-                  stylePreset: 'paginationItemInteractive',
+                  stylePreset: 'paginationItemInput',
                 }}
               >
                 <IconOutlinedSearch />
               </IconButton>
             }
             overrides={{
-              // Cannot use a stylePreset on the TextField or it will lose the default border
-              paddingInline: 'space020',
-              marginInline: 'space010',
-              marginBlockEnd: 'space000',
+              paddingInline,
+              marginInline,
+              marginBlockEnd,
               width: '84px',
               endEnhancer: {
                 spaceInline: 'space010',

@@ -182,30 +182,4 @@ export default {
       marginBlockEnd: 'space000',
     },
   },
-  paginationItemInteractive: {
-    small: {
-      typographyPreset: 'utilityButton010',
-      stylePreset: 'paginationItemInteractive',
-      iconSize: 'iconSize010',
-      paddingInline: 'space020',
-      marginInline: 'space010',
-      marginBlockEnd: 'space000',
-    },
-    medium: {
-      typographyPreset: 'utilityButton020',
-      stylePreset: 'paginationItemInteractive',
-      iconSize: 'iconSize020',
-      paddingInline: 'space020',
-      marginInline: 'space010',
-      marginBlockEnd: 'space000',
-    },
-    large: {
-      typographyPreset: 'utilityButton030',
-      stylePreset: 'paginationItemInteractive',
-      iconSize: 'iconSize020',
-      paddingInline: 'space020',
-      marginInline: 'space010',
-      marginBlockEnd: 'space000',
-    },
-  },
 };

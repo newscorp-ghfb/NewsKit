@@ -55,22 +55,4 @@ export default {
       iconColor: '{{colors.inkNonEssential}}',
     },
   },
-  paginationItemInteractive: {
-    base: {
-      backgroundColor: '{{colors.transparent}}',
-      color: '{{colors.interactiveLink010}}',
-      iconColor: '{{colors.interactiveLink010}}',
-      cursor: 'default',
-    },
-    disabled: {
-      color: '{{colors.inkNonEssential}}',
-      iconColor: '{{colors.inkNonEssential}}',
-    },
-    'focus-visible': {
-      outlineColor: '{{outlines.outlineColorDefault}}',
-      outlineStyle: '{{outlines.outlineStyleDefault}}',
-      outlineWidth: '{{outlines.outlineWidthDefault}}',
-      safariOutlineStyle: '{{outlines.safariOutlineStyleDefault}}',
-    },
-  },
 } as Record<string, StylePreset>;
