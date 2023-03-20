@@ -119,19 +119,17 @@ export const StorySizeIcons = () => (
 StorySizeIcons.storyName = 'Size';
 
 export const StoryCustomIcons = () => (
-  <>
-    <StorybookPage columns="repeat(5, 1fr)">
-      {Object.entries(remainingCustomIcons).map((entry: any) => {
-        const [iconName, Icon] = entry as [string, NewsKitIcon];
+  <StorybookPage columns="repeat(5, 1fr)">
+    {Object.entries(remainingCustomIcons).map((entry: any) => {
+      const [iconName, Icon] = entry as [string, NewsKitIcon];
 
-        return (
-          <StorybookCase title={iconName}>
-            <Icon overrides={{size: 'iconSize040'}} />
-          </StorybookCase>
-        );
-      })}
-    </StorybookPage>
-  </>
+      return (
+        <StorybookCase title={iconName}>
+          <Icon overrides={{size: 'iconSize040'}} />
+        </StorybookCase>
+      );
+    })}
+  </StorybookPage>
 );
 StoryCustomIcons.storyName = 'Custom icons';
 
