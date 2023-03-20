@@ -1658,6 +1658,21 @@ exports[`Select in Modal render Select 1`] = `
   border-color: #3358CC;
 }
 
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-7:active:not(:disabled) {
   background-color: #ECF1FF;
 }
@@ -2595,6 +2610,21 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   border-color: #3358CC;
 }
 
+.emotion-8:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-8:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
 .emotion-8:active:not(:disabled) {
   background-color: #ECF1FF;
 }
@@ -3340,6 +3370,21 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 .emotion-7:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-7:active:not(:disabled) {
@@ -9395,6 +9440,21 @@ exports[`Select virtualize long list 1`] = `
 .emotion-2:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:active:not(:disabled) {

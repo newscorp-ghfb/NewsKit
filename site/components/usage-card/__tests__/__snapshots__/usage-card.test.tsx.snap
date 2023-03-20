@@ -262,7 +262,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
               class="emotion-8"
             />
             <section
-              class="emotion-11"
+              class="nk-card-headline emotion-11"
             >
               <h1
                 class="nk-headline-heading emotion-12"
@@ -549,7 +549,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
               class="emotion-8"
             />
             <section
-              class="emotion-11"
+              class="nk-card-headline emotion-11"
             >
               <h1
                 class="nk-headline-heading emotion-12"

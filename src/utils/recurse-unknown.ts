@@ -34,6 +34,7 @@ const parseAndGet = (
 
   const tokens = parseTokens(value);
   if (tokens.length) {
+    // at this point, we know value is a string
     return tokens.reduce((result: any, tokenPath) => {
       let tokenValue = get(theme, tokenPath);
       if (typeof tokenValue === 'undefined') {
@@ -48,7 +49,9 @@ const parseAndGet = (
           ...stack,
         ]);
       }
-      return tokens.length > 1
+      // if the string contains more than just the token, substitute
+      // otherwise use recurseUnknown to parse the value
+      return value !== `{{${tokenPath}}}`
         ? result.replace(`{{${tokenPath}}}`, tokenValue as string)
         : // eslint-disable-next-line @typescript-eslint/no-use-before-define
           recurseUnknown(theme, tokenValue, errorLogger);
