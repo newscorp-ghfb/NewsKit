@@ -35,7 +35,7 @@ const headlineCustomThemeObject: CreateThemeArgs = {
 
 const BODY = 'The quick brown fox';
 
-const HeadlineText = 'Heading';
+const HeadlineText = 'Heading ';
 
 const MarginOverridesWrapper = styled.div`
   border: 1px dashed;
