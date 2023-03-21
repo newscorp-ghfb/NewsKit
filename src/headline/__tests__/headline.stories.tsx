@@ -39,10 +39,6 @@ const HeadlineText = 'Heading';
 
 const MarginOverridesWrapper = styled.div`
   border: 1px dashed;
-  marginblock: 'space030';
-  margininline: 'space030';
-  paddingblock: 'space030';
-  paddinginline: 'space030';
   ${getColorCssFromTheme('borderColor', 'red060')}
 `;
 
