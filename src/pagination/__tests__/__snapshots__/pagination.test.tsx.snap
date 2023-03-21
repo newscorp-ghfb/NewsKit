@@ -5578,7 +5578,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           aria-disabled="true"
           class="emotion-3"
           data-testid="pagination-first-item"
-          itemtype="paginationItemFirst"
           role="link"
         >
           <svg
@@ -5606,7 +5605,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           aria-disabled="true"
           class="emotion-3"
           data-testid="pagination-prev-item"
-          itemtype="paginationItemPrev"
           role="link"
         >
           <svg
@@ -5651,7 +5649,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           aria-disabled="true"
           class="emotion-3"
           data-testid="pagination-next-item"
-          itemtype="paginationItemNext"
           role="link"
         >
           <svg
@@ -5679,7 +5676,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           aria-disabled="true"
           class="emotion-3"
           data-testid="pagination-last-item"
-          itemtype="paginationItemLast"
           role="link"
         >
           <svg
@@ -6266,7 +6262,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           class="emotion-3"
           data-testid="pagination-first-item"
           href="https://paginationitem.test/1"
-          itemtype="paginationItemFirst"
         >
           <svg
             aria-hidden="true"
@@ -6294,7 +6289,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           class="emotion-3"
           data-testid="pagination-prev-item"
           href="https://paginationitem.test/3"
-          itemtype="paginationItemPrev"
         >
           <svg
             aria-hidden="true"
@@ -6707,7 +6701,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           class="emotion-3"
           data-testid="pagination-next-item"
           href="https://paginationitem.test/5"
-          itemtype="paginationItemNext"
         >
           <svg
             aria-hidden="true"
@@ -6735,7 +6728,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           class="emotion-3"
           data-testid="pagination-last-item"
           href="https://paginationitem.test/24"
-          itemtype="paginationItemLast"
         >
           <svg
             aria-hidden="true"
@@ -6762,7 +6754,21 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 exports[`Pagination and PaginationItems only PaginationItem renders selected pagination item with aria attributes 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
   list-style: none;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6772,7 +6778,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   padding: 0px;
 }
 
-.emotion-2 {
+.emotion-4 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -6819,43 +6825,43 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   text-decoration: none;
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   fill: #3358CC;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-4:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-4:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-2:disabled {
+.emotion-4:disabled {
   color: #ABABAB;
 }
 
-.emotion-2:disabled svg {
+.emotion-4:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-2:focus-visible:not(:disabled) {
+.emotion-4:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -6864,20 +6870,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2:focus-visible:not(:disabled) {
+    .emotion-4:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-2:selected:hover:not(:disabled) {
+.emotion-4:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-2 {
+  .emotion-4 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6885,24 +6891,24 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-2 {
+  .emotion-4 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   fill: #3358CC;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3 {
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6912,7 +6918,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6920,53 +6926,75 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-<nav
-    aria-label="pagination"
+<li
     class="emotion-0"
-    data-testid="pagination-container"
   >
-    <ul
+    <nav
+      aria-label="pagination"
       class="emotion-1"
+      data-testid="pagination-container"
     >
-      <a
-        aria-current="page"
-        aria-label="current page, page 3"
+      <ul
         class="emotion-2"
-        data-testid="pagination-item"
-        href="https://paginationitem.test"
       >
-        <svg
-          aria-hidden="true"
-          class="emotion-3 emotion-4"
-          fill="currentColor"
-          focusable="false"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+        <li
+          class="emotion-0"
         >
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-          />
-        </svg>
-      </a>
-    </ul>
-  </nav>
+          <a
+            aria-current="page"
+            aria-label="current page, page 3"
+            class="emotion-4"
+            data-testid="pagination-item"
+            href="https://paginationitem.test"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-5 emotion-6"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </li>
 </DocumentFragment>
 `;
 
 exports[`Pagination and PaginationItems only PaginationItem renders with default props 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
   list-style: none;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6976,7 +7004,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   padding: 0px;
 }
 
-.emotion-2 {
+.emotion-4 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -7021,43 +7049,43 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   color: #3358CC;
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   fill: #3358CC;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-4:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-4:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-2:disabled {
+.emotion-4:disabled {
   color: #ABABAB;
 }
 
-.emotion-2:disabled svg {
+.emotion-4:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-2:focus-visible:not(:disabled) {
+.emotion-4:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -7066,20 +7094,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2:focus-visible:not(:disabled) {
+    .emotion-4:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-2:selected:hover:not(:disabled) {
+.emotion-4:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-2 {
+  .emotion-4 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7087,45 +7115,45 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-2 {
+  .emotion-4 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   fill: #3358CC;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-4:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-2:hover:not(:disabled) svg {
+.emotion-4:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-4:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2:active:not(:disabled) svg {
+.emotion-4:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-2:disabled {
+.emotion-4:disabled {
   color: #ABABAB;
 }
 
-.emotion-2:disabled svg {
+.emotion-4:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-2:focus-visible:not(:disabled) {
+.emotion-4:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -7134,19 +7162,19 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2:focus-visible:not(:disabled) {
+    .emotion-4:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-2:selected:hover:not(:disabled) {
+.emotion-4:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3 {
+.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -7157,46 +7185,68 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-5::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-5::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-<nav
-    aria-label="pagination"
+<li
     class="emotion-0"
-    data-testid="pagination-container"
   >
-    <ul
+    <nav
+      aria-label="pagination"
       class="emotion-1"
+      data-testid="pagination-container"
     >
-      <a
-        aria-label="go to page 3"
+      <ul
         class="emotion-2"
-        data-testid="pagination-item"
-        href="https://paginationitem.test"
       >
-        <span
-          class="emotion-3"
+        <li
+          class="emotion-0"
         >
-          Pagination Item
-        </span>
-      </a>
-    </ul>
-  </nav>
+          <a
+            aria-label="go to page 3"
+            class="emotion-4"
+            data-testid="pagination-item"
+            href="https://paginationitem.test"
+          >
+            <span
+              class="emotion-5"
+            >
+              Pagination Item
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </li>
 </DocumentFragment>
 `;
 
 exports[`Pagination and PaginationItems only PaginationItem renders with overrides 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
   list-style: none;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7206,7 +7256,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   padding: 0px;
 }
 
-.emotion-2 {
+.emotion-4 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -7245,13 +7295,13 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   cursor: pointer;
 }
 
-.emotion-2 svg {
+.emotion-4 svg {
   width: 32px;
   height: 32px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-2 {
+  .emotion-4 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7259,14 +7309,14 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-2 {
+  .emotion-4 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 {
+.emotion-5 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -7277,46 +7327,68 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   display: inline-block;
 }
 
-.emotion-3::before {
+.emotion-5::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-3::after {
+.emotion-5::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-<nav
-    aria-label="pagination"
+<li
     class="emotion-0"
-    data-testid="pagination-container"
   >
-    <ul
+    <nav
+      aria-label="pagination"
       class="emotion-1"
+      data-testid="pagination-container"
     >
-      <a
-        aria-label="go to page 3"
+      <ul
         class="emotion-2"
-        data-testid="pagination-item"
-        href="https://paginationitem.test"
       >
-        <span
-          class="emotion-3"
+        <li
+          class="emotion-0"
         >
-          Pagination Item
-        </span>
-      </a>
-    </ul>
-  </nav>
+          <a
+            aria-label="go to page 3"
+            class="emotion-4"
+            data-testid="pagination-item"
+            href="https://paginationitem.test"
+          >
+            <span
+              class="emotion-5"
+            >
+              Pagination Item
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </li>
 </DocumentFragment>
 `;
 
 exports[`Pagination and PaginationItems only PaginationItem renders with overrides.itemButton 1`] = `
 <DocumentFragment>
-  .emotion-1 {
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
   list-style: none;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -7326,7 +7398,22 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   padding: 0px;
 }
 
-.emotion-2 {
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7339,25 +7426,25 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   padding-inline: 8px;
 }
 
-.emotion-2:hover:not(:disabled) {
+.emotion-5:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
   fill: #254CAC;
 }
 
-.emotion-2:active:not(:disabled) {
+.emotion-5:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
   fill: #12387A;
 }
 
-.emotion-2:disabled {
+.emotion-5:disabled {
   color: #ABABAB;
   fill: #ABABAB;
 }
 
-.emotion-2:focus-visible:not(:disabled) {
+.emotion-5:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -7366,20 +7453,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2:focus-visible:not(:disabled) {
+    .emotion-5:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-2:selected:hover:not(:disabled) {
+.emotion-5:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-2 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7387,14 +7474,14 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-2 {
+  .emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-2.emotion-2 {
+.emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
   background-color: transparent;
@@ -7403,25 +7490,25 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   fill: #3358CC;
 }
 
-.emotion-2.emotion-2:hover:not(:disabled) {
+.emotion-5.emotion-5:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
   fill: #254CAC;
 }
 
-.emotion-2.emotion-2:active:not(:disabled) {
+.emotion-5.emotion-5:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
   fill: #12387A;
 }
 
-.emotion-2.emotion-2:disabled {
+.emotion-5.emotion-5:disabled {
   color: #ABABAB;
   fill: #ABABAB;
 }
 
-.emotion-2.emotion-2:focus-visible:not(:disabled) {
+.emotion-5.emotion-5:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -7430,20 +7517,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-2.emotion-2:focus-visible:not(:disabled) {
+    .emotion-5.emotion-5:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-2.emotion-2:selected:hover:not(:disabled) {
+.emotion-5.emotion-5:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-2.emotion-2 {
+  .emotion-5.emotion-5 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7451,43 +7538,124 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-2.emotion-2 {
+  .emotion-5.emotion-5 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-<nav
-    aria-label="pagination"
+<li
     class="emotion-0"
-    data-testid="pagination-container"
   >
-    <ul
+    <nav
+      aria-label="pagination"
       class="emotion-1"
+      data-testid="pagination-container"
     >
-      <svg
-        aria-hidden="true"
-        aria-label="go to page 3"
-        class="emotion-2 emotion-3"
-        data-testid="pagination-item"
-        fill="currentColor"
-        focusable="false"
-        height="medium"
-        href="https://paginationitem.test"
-        viewBox="0 0 24 24"
-        width="medium"
-        xmlns="http://www.w3.org/2000/svg"
+      <ul
+        class="emotion-2"
       >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-        />
-      </svg>
-    </ul>
-  </nav>
+        <li
+          class="emotion-0"
+        >
+          <div
+            class="emotion-4"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="go to page 3"
+              class="emotion-5 emotion-6"
+              data-testid="pagination-item"
+              fill="currentColor"
+              focusable="false"
+              height="medium"
+              href="https://paginationitem.test"
+              viewBox="0 0 24 24"
+              width="medium"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+              />
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only PaginationItem renders with overrides.itemDescription 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<li
+    class="emotion-0"
+  >
+    <nav
+      aria-label="pagination"
+      class="emotion-1"
+      data-testid="pagination-container"
+    >
+      <ul
+        class="emotion-2"
+      >
+        <li
+          class="emotion-0"
+        >
+          <div
+            class="emotion-4"
+          >
+            <span>
+              Page 3 of 
+            </span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </li>
 </DocumentFragment>
 `;

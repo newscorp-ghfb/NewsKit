@@ -1,8 +1,8 @@
 import React from 'react';
-import {useTheme} from '@emotion/react';
+import {useTheme} from '../../../theme';
 import {IconFilledChevronRight, NewsKitIconProps} from '../../../icons';
 import {usePaginationContext} from '../../context';
-import {StyledListItem} from '../../styled';
+import {PaginationListItem} from '../list-item';
 import {PaginationItem} from '../item/pagination-item';
 import {PaginationNextItemProps} from './types';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
@@ -47,13 +47,14 @@ export const PaginationNextItem = React.forwardRef<
   const nextPage = Math.min(page + 1, lastPage);
   const href = buildHref! && buildHref(nextPage);
   return (
-    <StyledListItem key="next">
+    <PaginationListItem key="next">
       <PaginationItem
         // @ts-ignore
         itemType={itemType}
         data-testid="pagination-next-item"
         eventOriginator="pagination-next-item"
         eventContext={eventContext}
+        pageNumber={nextPage}
         {...propsFromContext}
         overrides={overrides}
         ref={ref}
@@ -63,6 +64,6 @@ export const PaginationNextItem = React.forwardRef<
         {children}
         <PaginationIcon />
       </PaginationItem>
-    </StyledListItem>
+    </PaginationListItem>
   );
 });

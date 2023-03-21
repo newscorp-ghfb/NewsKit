@@ -49,7 +49,7 @@ const appendBoundariesAtEnd = (
   }
 };
 
-export const getItemsLayout = ({
+export const getPaginationItemsLayout = ({
   page,
   lastPage,
   truncation,
@@ -79,7 +79,7 @@ export const getItemsLayout = ({
   return layout;
 };
 
-export const getItemAria = ({
+export const getPaginationItemAria = ({
   itemType,
   pageNumber,
   selected,
