@@ -78,6 +78,7 @@ const ThemelessBreadcrumbs = React.forwardRef<
 
     return (
       <StyledNav
+        aria-label="breadcrumbs"
         data-testid="breadcrumb-container"
         ref={ref}
         showTrailingSeparator={showTrailingSeparator}

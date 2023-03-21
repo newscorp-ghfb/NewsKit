@@ -7,10 +7,12 @@ import {OnwardJourneySectionProps} from '../template-sections';
 import {GuidePageTemplateProps} from './types';
 
 export const defaultFeatureCard: Partial<OnwardJourneySectionProps> = {
+  title: 'Need Help?',
+  description: 'Can’t find what you’re looking for?',
   buttonLabel: 'Get in touch',
   stylePrefix: 'needHelpCard',
   layout: 'horizontal',
-  href: 'components/overview',
+  href: '/about/contact-us/',
 };
 
 export const GuidePageTemplate: React.FC<GuidePageTemplateProps> = ({
@@ -36,11 +38,10 @@ export const GuidePageTemplate: React.FC<GuidePageTemplateProps> = ({
               description: headTags.description,
             }}
             featureCard={
-              featureCard &&
-              ({
+              {
                 ...defaultFeatureCard,
                 ...featureCard,
-              } as OnwardJourneySectionProps)
+              } as OnwardJourneySectionProps
             }
           >
             {children}

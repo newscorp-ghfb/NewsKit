@@ -45,6 +45,7 @@ export const BaseFloatingElement = React.forwardRef<
       disableFocusManagement = false,
       dismissOnBlur = false,
       boundary,
+      ...rest
     },
     ref,
   ) => {
@@ -226,6 +227,7 @@ export const BaseFloatingElement = React.forwardRef<
               role={role}
               {...floatingElAriaAttributes}
               path={path}
+              {...rest}
             >
               <StyledPanel
                 tabIndex={-1}

@@ -39,11 +39,6 @@ const FormStepByStep = (layoutProps: LayoutProps) => (
       },
       introduction: `Step-by-step guide for engineers to build a form using the form subcomponents.`,
     }}
-    featureCard={{
-      title: 'Need help?',
-      description: 'Can’t find what you’re looking for?',
-      href: 'about/contact-us/',
-    }}
   >
     <ComponentPageCell>
       <ContentSection sectionName="key benefits">
