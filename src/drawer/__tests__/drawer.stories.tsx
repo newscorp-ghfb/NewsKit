@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {Drawer} from '..';
+import {Drawer, DrawerProps} from '..';
 import {getColorCssFromTheme, styled} from '../../utils/style';
 import {Button} from '../../button';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
@@ -33,14 +33,16 @@ const useActiveState = (
   return [isActive, open, close, toggle];
 };
 
+type Placement = NonNullable<DrawerProps['placement']>;
+
 const DRAWER_HEDER = 'Drawer Title';
 const DRAWER_CONTENT = <TextBlock stylePreset="inkBase">Content</TextBlock>;
 
 export const StoryDrawerDefault = () => {
-  const [placement, setPlacement] = React.useState('left');
+  const [placement, setPlacement] = React.useState<Placement>('left');
   const [isActive, open, close] = useActiveState();
 
-  const handleOnClick = placementValue => {
+  const handleOnClick = (placementValue: Placement) => {
     setPlacement(placementValue);
     open();
   };
@@ -77,9 +79,9 @@ StoryDrawerDefault.parameters = {
 
 export const StoryInline = () => {
   const [isActive, open, close] = useActiveState(isVisualTest || false);
-  const [placement, setPlacement] = React.useState('left');
+  const [placement, setPlacement] = React.useState<Placement>('left');
 
-  const handleOnClick = placementValue => {
+  const handleOnClick = (placementValue: Placement) => {
     setPlacement(placementValue);
     open();
   };
@@ -106,7 +108,7 @@ export const StoryInline = () => {
           inline
           disableFocusTrap
           hideOverlay
-          placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+          placement={placement}
           header={DRAWER_HEDER}
           overrides={{
             panel: {minSize: '20vh', maxSize: '50%'},
@@ -460,7 +462,7 @@ export const StoryDrawerBrekpoints = () => {
       <Drawer
         open={isActive}
         onDismiss={close}
-        placement={placement as 'left' | 'right' | 'top' | 'bottom'}
+        placement={placement as Placement}
         header={DRAWER_HEDER}
         overrides={{
           panel: {
@@ -482,10 +484,10 @@ StoryDrawerBrekpoints.parameters = {
 };
 
 export const StoryDrawerLogicalProps = () => {
-  const [placement, setPlacement] = React.useState('left');
+  const [placement, setPlacement] = React.useState<Placement>('left');
   const [isActive, open, close] = useActiveState(isVisualTest);
 
-  const handleOnClick = placementValue => {
+  const handleOnClick = (placementValue: Placement) => {
     setPlacement(placementValue);
     open();
   };
@@ -507,7 +509,7 @@ export const StoryDrawerLogicalProps = () => {
       <Drawer
         open={isActive}
         onDismiss={close}
-        placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+        placement={placement}
         header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
         overrides={{
           panel: {paddingBlock: 'space010', paddingInline: 'space010'},
@@ -529,10 +531,10 @@ export const StoryDrawerLogicalProps = () => {
 StoryDrawerLogicalProps.storyName = 'Logical props Drawer';
 
 export const StoryInlineDrawerLogicalProps = () => {
-  const [placement, setPlacement] = React.useState('left');
+  const [placement, setPlacement] = React.useState<Placement>('left');
   const [isActive, open, close] = useActiveState(isVisualTest);
 
-  const handleOnClick = placementValue => {
+  const handleOnClick = (placementValue: Placement) => {
     setPlacement(placementValue);
     open();
   };
@@ -556,7 +558,7 @@ export const StoryInlineDrawerLogicalProps = () => {
         <Drawer
           open={isActive}
           onDismiss={close}
-          placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+          placement={placement}
           header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
           inline
           disableFocusTrap
