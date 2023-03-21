@@ -15,7 +15,6 @@ import {
 import {
   Block,
   Button,
-  createTheme,
   FieldsetProps,
   FormInputTextFieldProps,
   GridLayout,
@@ -471,7 +470,7 @@ export const StoryFormInputCharacterCount = () => (
         >
           <FormInputLabel>Surname</FormInputLabel>
           <FormInputTextField {...sharedProps} />
-          <FormInputCharacterCount />
+          <FormInputCharacterCount aria-disabled />
         </FormInput>
       </FormInputBlock>
       <Button type="submit">Submit</Button>
@@ -511,56 +510,13 @@ const ShowPasswordButton = ({
   </IconButton>
 );
 
-const formExampleTheme = createTheme({
-  name: 'my-form-theme',
-  overrides: {
-    componentDefaults: {
-      label: {
-        medium: {
-          spaceStack: 'space020',
-        },
-      },
-      textField: {
-        medium: {
-          spaceStack: 'space030',
-        },
-      },
-      radioButton: {
-        medium: {
-          spaceStack: 'space030',
-        },
-      },
-      checkbox: {
-        medium: {
-          spaceStack: 'space030',
-        },
-      },
-      assistiveText: {
-        medium: {
-          spaceStack: 'space060',
-        },
-      },
-      // Why we cant change this ?
-      fieldset: {
-        spaceStack: 'space040',
-      },
-      legend: {
-        medium: {
-          typographyPreset: 'utilityLabel030',
-          spaceStack: 'space050',
-        },
-      },
-    },
-  },
-});
-
 export const StoryFormComplete = () => {
   const [showPassword, toggleShowPassword] = React.useState(false);
   return (
-    <ThemeProvider theme={formExampleTheme}>
-      <FormContainer>
-        <Form onSubmit={console.log}>
-          <Fieldset legend="Personal">
+    <FormContainer>
+      <Form onSubmit={console.log}>
+        <Fieldset legend="Personal">
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
             <FormInput
               name="first-name"
               rules={{
@@ -577,7 +533,9 @@ export const StoryFormComplete = () => {
                 Enter your first name
               </FormInputAssistiveText>
             </FormInput>
+          </Block>
 
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
             <FormInput
               name="last-name"
               rules={{
@@ -594,7 +552,9 @@ export const StoryFormComplete = () => {
                 Enter your last name
               </FormInputAssistiveText>
             </FormInput>
+          </Block>
 
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
             <FormInput
               name="country"
               rules={{
@@ -612,9 +572,11 @@ export const StoryFormComplete = () => {
                 Enter your last name
               </FormInputAssistiveText>
             </FormInput>
-          </Fieldset>
+          </Block>
+        </Fieldset>
 
-          <Fieldset legend="Login information">
+        <Fieldset legend="Login information">
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
             <FormInput
               name="email"
               rules={{
@@ -626,7 +588,9 @@ export const StoryFormComplete = () => {
               <FormInputTextField type="email" />
               <FormInputAssistiveText>Enter your email</FormInputAssistiveText>
             </FormInput>
+          </Block>
 
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
             <FormInput
               name="password"
               rules={{
@@ -651,9 +615,11 @@ export const StoryFormComplete = () => {
                 Enter your password
               </FormInputAssistiveText>
             </FormInput>
-          </Fieldset>
+          </Block>
+        </Fieldset>
 
-          <Fieldset legend="Gender">
+        <Fieldset legend="Gender">
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
             <FormInput
               name="sex"
               rules={{
@@ -661,16 +627,38 @@ export const StoryFormComplete = () => {
               }}
             >
               <RadioGroup>
-                <FormInputRadioButton value="male" label="Male" />
-                <FormInputRadioButton value="female" label="Female" />
-                <FormInputRadioButton value="3rd" label="Third Gender" />
-                <FormInputRadioButton value="noSay" label="Not to say" />
+                <FormInputRadioButton
+                  id="gender-male"
+                  value="male"
+                  label="Male"
+                  overrides={{marginBlockEnd: 'space020'}}
+                />
+                <FormInputRadioButton
+                  id="gender-female"
+                  value="female"
+                  label="Female"
+                  overrides={{marginBlockEnd: 'space020'}}
+                />
+                <FormInputRadioButton
+                  id="gender-3rd"
+                  value="3rd"
+                  label="Third Gender"
+                  overrides={{marginBlockEnd: 'space020'}}
+                />
+                <FormInputRadioButton
+                  id="gender-noSay"
+                  value="noSay"
+                  label="Not to say"
+                  overrides={{marginBlockEnd: 'space020'}}
+                />
               </RadioGroup>
               <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
             </FormInput>
-          </Fieldset>
+          </Block>
+        </Fieldset>
 
-          <Fieldset legend="Interests">
+        <Fieldset legend="Interests">
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
             <FormInput
               name="interests"
               rules={{
@@ -684,20 +672,50 @@ export const StoryFormComplete = () => {
                 },
               }}
             >
-              <FormInputCheckbox value="politics" label="Politics" />
-              <FormInputCheckbox value="Business" label="Business" />
-              <FormInputCheckbox value="Society" label="Society" />
-              <FormInputCheckbox value="Technology" label="Technology" />
-              <FormInputCheckbox value="Sport" label="Sport" />
-              <FormInputCheckbox value="Science" label="Science" />
+              <FormInputCheckbox
+                id="interests-politics"
+                value="politics"
+                label="Politics"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-Business"
+                value="Business"
+                label="Business"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-Society"
+                value="Society"
+                label="Society"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-Technology"
+                value="Technology"
+                label="Technology"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-Sport"
+                value="Sport"
+                label="Sport"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-Science"
+                value="Science"
+                label="Science"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
               <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
             </FormInput>
-          </Fieldset>
+          </Block>
+        </Fieldset>
 
-          <Button type="submit">Register</Button>
-        </Form>
-      </FormContainer>
-    </ThemeProvider>
+        <Button type="submit">Register</Button>
+      </Form>
+    </FormContainer>
   );
 };
 StoryFormComplete.storyName = 'Form complete';
