@@ -35,6 +35,8 @@ const headlineCustomThemeObject: CreateThemeArgs = {
 
 const BODY = 'The quick brown fox';
 
+const HeadlineText = 'Headline';
+
 const MarginOverridesWrapper = styled.div`
   border: 1px dashed;
   marginblock: 'space030';
@@ -52,6 +54,24 @@ export const StoryHeadlineDefault = () => (
   </StorybookPage>
 );
 StoryHeadlineDefault.storyName = 'Default';
+
+export const StoryHeadlineKicker = () => (
+  <StorybookPage>
+    <StorybookCase title="With Kicker">
+      <Headline
+        kickerText="Kicker"
+        headingAs="h1"
+        kickerAs="h1"
+        overrides={{
+          typographyPreset: 'editorialHeadline070',
+        }}
+      >
+        {HeadlineText}
+      </Headline>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryHeadlineKicker.storyName = 'Kicker';
 
 export const StoryHeadlineLogicalProps = () => (
   <StorybookPage columns="1fr 1fr">
