@@ -190,7 +190,7 @@ export const StoryImagePlaceholderIcon = () => (
 );
 StoryImagePlaceholderIcon.storyName = 'Placeholder icon';
 
-export const StoryImageLazyLoading = () => {
+export const StoryImageLazyLoadingHidden = () => {
   const getImages = (num: number) => {
     const images: React.ReactNode[] = [];
     for (let i = 1; i <= num; i++) {
@@ -221,8 +221,8 @@ export const StoryImageLazyLoading = () => {
     </StorybookPage>
   );
 };
-StoryImageLazyLoading.storyName = 'Lazy loading';
-StoryImageLazyLoading.parameters = {percy: {skip: true}};
+StoryImageLazyLoadingHidden.storyName = 'Lazy loading';
+StoryImageLazyLoadingHidden.parameters = {percy: {skip: true}};
 
 export const StoryImageSourceUsingMediaQuery = () => {
   const sources = [
