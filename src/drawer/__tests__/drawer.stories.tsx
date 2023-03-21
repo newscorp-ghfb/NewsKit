@@ -1,101 +1,25 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, {MouseEvent} from 'react';
+import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Drawer} from '..';
-import {styled} from '../../utils/style';
-import {
-  StorybookHeading,
-  StorybookParah,
-  StorybookLabel,
-} from '../../test/storybook-comps';
+import {getColorCssFromTheme, styled} from '../../utils/style';
 import {Button} from '../../button';
-import {LinkInline} from '../../link';
-import {TextInput} from '../../text-input';
-import {Block} from '../../block';
-import {Menu, MenuItem} from '../../menu';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {Stack} from '../../stack';
 import {useMediaQueryObject} from '../../utils/hooks';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {GridLayout} from '../../grid-layout';
+import {TextBlock} from '../../text-block';
+import {isVisualTest} from '../../test/test-utils';
+import {IconFilledInfo} from '../../icons';
+import {InlineMessage} from '../../inline-message';
 
-const Box = styled.div`
-  width: 400px;
-`;
-
-const DrawerContainer = styled.div`
-  margin-left: 10vw;
-  margin-right: 10vw;
-  background: #f1f1f1;
+const InlineDrawerContainer = styled.div`
   position: relative;
-  border: 1px solid red;
-  width: 80vw;
-  height: 80vh;
+  border: 1px solid;
+  ${getColorCssFromTheme('border-color', 'interfaceBrand010')}
+  height: 70vh;
   overflow: hidden;
 `;
-
-const content =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra. Integer non velit vitae elit porta condimentum. Cras ultrices lectus eu porttitor volutpat. In hac habitasse platea dictumst. Integer maximus leo quis sapien aliquet finibus. Cras lobortis leo quis massa commodo ornare. Donec ac ligula sed mauris sodales pretium id eu nibh. Pellentesque et eros viverra, dignissim ante in, tincidunt eros. Curabitur mattis purus dolor, non aliquam sapien auctor quis. Morbi sit amet leo in urna dictum imperdiet vitae sed velit. In auctor nulla sed lectus ultricies dignissim. In mattis.';
-
-const BoxWithContent = ({open}: {open?: () => void}) => (
-  <>
-    <p>SCROLL DOWN </p>
-    <Box>
-      {Array.from({length: 5}, (_, i) => (
-        <>
-          {open && i === 3 && (
-            <Button onClick={open}>Another button to open the drawer</Button>
-          )}
-          <StorybookParah key={i}>{content}</StorybookParah>
-        </>
-      ))}
-    </Box>
-  </>
-);
-const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const onSubmit = async (data: any) => {
-  await sleep(2000);
-  // eslint-disable-next-line no-console
-  console.log('Submitted data:', data);
-};
-const DrawerContent = () => (
-  <>
-    <StorybookParah>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lorem
-      massa, et lacinia ipsum tristique id. Phasellus sed posuere lacus.
-      Pellentesque eu odio <LinkInline href="/">Test link 1</LinkInline> sapien.
-      Donec finibus pellentesque est porta dictum. Suspendisse venenatis vitae
-      augue nec hendrerit. In ut quam tempus, feugiat risus quis, porta eros.
-      Aliquam ultricies ac orci viverra gravida. Ut sodales odio tempor sodales
-      viverra. In condimentum tincidunt fermentum. Nullam imperdiet est vel
-      tincidunt suscipit. Vestibulum vel pulvinar nibh, at molestie lectus.
-      Curabitur ultricies massa eu sem varius volutpat. Ut vitae purus et enim
-      imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan. Aliquam
-      odio nunc, interdum.
-    </StorybookParah>
-    <TextInput label="First name" />
-    <TextInput label="Last name" />
-    <TextInput label="Phone number" />
-    <div>
-      <LinkInline href="/">For more information...</LinkInline>{' '}
-    </div>
-    <StorybookParah>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
-      scelerisque sapien. Praesent mollis vestibulum nunc at blandit. Donec
-      vitae venenatis mi. Aenean ut ornare diam, non facilisis diam.
-      Pellentesque consequat mi in imperdiet ultrices. Sed vitae erat ac urna{' '}
-      <LinkInline href="/">Test link 2</LinkInline> rutrum aliquet eu mattis
-      ligula. Sed dapibus, enim sed tristique gravida, nisl dolor malesuada
-      lacus, quis auctor dui mauris eu odio. Vivamus eu augue et enim varius
-      viverra. Vivamus ut tellus iaculis, ullamcorper ligula sit amet, posuere
-      ipsum.
-    </StorybookParah>
-    <div>
-      <Button onClick={onSubmit}>Remind me later</Button>
-      <Button>Ok</Button>
-    </div>
-  </>
-);
 
 const useActiveState = (
   initial = false,
@@ -108,350 +32,289 @@ const useActiveState = (
 
   return [isActive, open, close, toggle];
 };
-export const StoryDrawerDefault = () =>
-  React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-    const [placement, setPlacement] = React.useState('left');
 
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+const DRAWER_HEDER = 'Drawer Title';
+const DRAWER_CONTENT = <TextBlock stylePreset="inkBase">Content</TextBlock>;
 
-    const onChangeValue = (ev: React.ChangeEvent<HTMLDivElement>) =>
-      setPlacement((ev.target as HTMLInputElement).value);
+export const StoryDrawerDefault = () => {
+  const [placement, setPlacement] = React.useState('left');
+  const [isActive, open, close] = useActiveState();
 
-    return (
-      <div data-testid="scrollable-drawer">
-        <StorybookHeading>Default drawer</StorybookHeading>
-        <Button onClick={open} data-testid="drawer-open-button">
-          Open Drawer
-        </Button>
-        <Block
-          as="span"
-          paddingInline="space030"
-          paddingBlock="space030"
-          onChange={onChangeValue}
-        >
-          <StorybookLabel htmlFor="drawer_top">
-            top:
-            <input type="radio" value="top" id="drawer_top" name="placement" />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer_left">
-            left:
-            <input
-              type="radio"
-              value="left"
-              id="drawer_left"
-              name="placement"
-              defaultChecked
-            />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer_bottom">
-            bottom:
-            <input
-              type="radio"
-              value="bottom"
-              id="drawer_bottom"
-              name="placement"
-            />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer_right">
-            right:
-            <input
-              type="radio"
-              value="right"
-              id="drawer_right"
-              name="placement"
-            />
-          </StorybookLabel>
-        </Block>
+  const handleOnClick = placementValue => {
+    setPlacement(placementValue);
+    open();
+  };
 
-        <Drawer
-          aria-label="Drawer example"
-          open={isActive}
-          onDismiss={close}
-          placement={placement as 'top' | 'left' | 'right' | 'bottom'}
-          header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-        >
-          <DrawerContent />
-        </Drawer>
-      </div>
-    );
-  });
-StoryDrawerDefault.storyName = 'default';
+  return (
+    <>
+      <GridLayout
+        columnGap="space030"
+        autoColumns="auto"
+        autoFlow="column"
+        inline
+      >
+        <Button onClick={() => handleOnClick('top')}>Top</Button>
+        <Button onClick={() => handleOnClick('bottom')}>Bottom</Button>
+        <Button onClick={() => handleOnClick('left')}>Left</Button>
+        <Button onClick={() => handleOnClick('right')}>Right</Button>
+      </GridLayout>
+
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+        header={DRAWER_HEDER}
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerDefault.storyName = 'Default';
 StoryDrawerDefault.parameters = {
   percy: {skip: true},
-  previewTabs: {
-    'storybook/canvas/panel': {index: -1},
-    'storybook/docs/panel': {hidden: true},
-  },
-  viewMode: 'story',
-  docs: {
-    page: null,
-  },
 };
 
-export const StoryInline = () =>
-  React.createElement(() => {
-    const [isActive, open, close, toggle] = useActiveState();
-    const [placement, setPlacement] = React.useState('left');
+export const StoryInline = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest || false);
+  const [placement, setPlacement] = React.useState('left');
 
-    const onChangeValue = (ev: React.ChangeEvent<HTMLDivElement>) =>
-      setPlacement((ev.target as HTMLInputElement).value);
+  const handleOnClick = placementValue => {
+    setPlacement(placementValue);
+    open();
+  };
 
-    return (
-      <div data-testid="scrollable-drawer">
-        <StorybookHeading>Inline drawer</StorybookHeading>
-        <Button onClick={toggle} data-testid="drawer-open-button">
-          Open Drawer
-        </Button>
-        <Block
-          as="span"
-          paddingInline="space030"
-          paddingBlock="space030"
-          onChange={onChangeValue}
-        >
-          <StorybookLabel htmlFor="drawer-inline_top">
-            top:
-            <input
-              type="radio"
-              value="top"
-              id="drawer-inline_top"
-              name="placement"
-            />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer-inline_left">
-            left:
-            <input
-              type="radio"
-              value="left"
-              id="drawer-inline_left"
-              name="placement"
-              defaultChecked
-            />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer-inline_bottom">
-            bottom:
-            <input
-              type="radio"
-              value="bottom"
-              id="drawer-inline_bottom"
-              name="placement"
-            />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer-inline_right">
-            right:
-            <input
-              type="radio"
-              value="right"
-              id="drawer-inline_right"
-              name="placement"
-            />
-          </StorybookLabel>
-        </Block>
+  return (
+    <>
+      <GridLayout
+        columnGap="space030"
+        autoColumns="auto"
+        autoFlow="column"
+        inline
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        <Button onClick={() => handleOnClick('top')}>Top</Button>
+        <Button onClick={() => handleOnClick('bottom')}>Bottom</Button>
+        <Button onClick={() => handleOnClick('left')}>Left</Button>
+        <Button onClick={() => handleOnClick('right')}>Right</Button>
+      </GridLayout>
 
-        <DrawerContainer>
-          <Drawer
-            aria-label="Drawer example"
-            open={isActive}
-            onDismiss={close}
-            inline
-            disableFocusTrap
-            hideOverlay
-            placement={placement as 'top' | 'left' | 'right' | 'bottom'}
-            header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-            overrides={{
-              panel: {minSize: '20vh', maxSize: '50%'},
-            }}
-          >
-            <DrawerContent />
-          </Drawer>
-          <StorybookParah>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-            lacus. Pellentesque eu odio{' '}
-            <LinkInline href="/">Test link 1</LinkInline> sapien. Donec finibus
-            pellentesque est porta dictum. Suspendisse venenatis vitae augue nec
-            hendrerit. In ut quam tempus, feugiat risus quis, porta eros.
-            Aliquam ultricies ac orci viverra gravida. Ut sodales odio tempor
-            sodales viverra. In condimentum tincidunt fermentum. Nullam
-            imperdiet est vel tincidunt suscipit. Vestibulum vel pulvinar nibh,
-            at molestie lectus. Curabitur ultricies massa eu sem varius
-            volutpat. Ut vitae purus et enim imperdiet finibus. Quisque posuere
-            lacus a nunc tempor accumsan. Aliquam odio nunc, interdum.
-          </StorybookParah>
-        </DrawerContainer>
-        <BoxWithContent open={open} />
-      </div>
-    );
-  });
-StoryInline.storyName = 'inline';
-StoryInline.parameters = StoryDrawerDefault.parameters;
-
-// MENU + DRAWER EXAMPLE
-const Header = styled.div<{fixed: boolean}>`
-  width: 100%;
-  top: 0;
-  left: 0;
-  ${props => props.fixed && {position: 'fixed'}}
-`;
-
-const HeaderMenu = styled.div<{fixed: boolean}>`
-  position: relative;
-  z-index: 9999;
-  background: #fdf6e9;
-`;
-
-const HeaderDrawer = styled.div`
-  position: relative;
-`;
-
-const drawerCustomThemeObject: CreateThemeArgs = {
-  name: 'my-custom-drawer-theme',
-  overrides: {
-    transitionPresets: {
-      scaleUp: {
-        base: {
-          transform: 'scaleY(0)',
-          transformOrigin: 'top center',
-        },
-        appear: {},
-        appearActive: {},
-        appearDone: {},
-        enter: {
-          transform: 'scaleY(0)',
-        },
-        enterActive: {
-          transform: 'scaleY(1)',
-          transitionProperty: 'transform',
-          transitionDuration: '{{motions.motionDuration020}}',
-          transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
-        },
-        enterDone: {
-          transform: 'scaleY(1)',
-        },
-        exit: {
-          transform: 'scaleY(1)',
-        },
-        exitActive: {
-          transform: 'scaleY(0)',
-          transitionProperty: 'transform',
-          transitionDuration: '{{motions.motionDuration020}}',
-          transitionTimingFunction: '{{motions.motionTimingLinear}}',
-        },
-        exitDone: {
-          transform: 'scaleY(0)',
-        },
-      },
-    },
-  },
-};
-
-export const StoryMenuAndInline = () =>
-  React.createElement(() => {
-    const [selectedDrawer, setDrawer] = React.useState<number | null>(null);
-    const [isFixed, setFixed] = React.useState(false);
-
-    const openDrawer = (index: number) => setDrawer(index);
-    const closeDrawer = () => setDrawer(null);
-
-    return (
-      <>
-        <Header fixed={isFixed}>
-          <HeaderMenu fixed={isFixed}>
-            <Menu aria-label="Menu">
-              {Array.from({length: 5}).map((_, index) => (
-                <MenuItem
-                  href="/"
-                  onClick={(e: MouseEvent<HTMLElement>) => {
-                    e.preventDefault();
-                    openDrawer(index);
-                  }}
-                >
-                  Menu item {index}
-                </MenuItem>
-              ))}
-            </Menu>
-          </HeaderMenu>
-          <HeaderDrawer>
-            <Drawer
-              open={selectedDrawer !== null}
-              onDismiss={closeDrawer}
-              placement="top"
-              inline
-              disableFocusTrap
-              hideOverlay={!isFixed}
-              header={`Sub menu ${selectedDrawer}`}
-            >
-              {selectedDrawer !== null &&
-                Array.from({length: selectedDrawer + 1}).map(() => (
-                  <StorybookParah>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    aliquet lorem massa, et lacinia ipsum tristique id.
-                    Phasellus sed posuere lacus. Pellentesque eu odio{' '}
-                    <LinkInline href="/">Test link 1</LinkInline> sapien. Donec
-                    finibus pellentesque est porta dictum. Suspendisse venenatis
-                    vitae augue nec hendrerit. In ut quam tempus, feugiat risus
-                    quis, porta eros. Aliquam ultricies ac orci viverra gravida.
-                    Ut sodales odio tempor sodales viverra. In condimentum
-                    tincidunt fermentum. Nullam imperdiet est vel tincidunt
-                    suscipit. Vestibulum vel pulvinar nibh, at molestie lectus.
-                    Curabitur ultricies massa eu sem varius volutpat. Ut vitae
-                    purus et enim imperdiet finibus. Quisque posuere lacus a
-                    nunc tempor accumsan. Aliquam odio nunc, interdum.
-                  </StorybookParah>
-                ))}
-            </Drawer>
-          </HeaderDrawer>
-        </Header>
-        <div style={{marginTop: isFixed ? 50 : 0}}>
-          <Button onClick={() => setFixed(!isFixed)}>
-            Toggle Menu fixed: ( current {isFixed.toString()})
-          </Button>
-        </div>
-        <StorybookParah>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-          lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-          lacus. Pellentesque eu odio sapien. Donec finibus pellentesque est
-          porta dictum. Suspendisse venenatis vitae augue nec hendrerit. In ut
-          quam tempus, feugiat risus quis, porta eros. Aliquam ultricies ac orci
-          viverra gravida. Ut sodales odio tempor sodales viverra. In
-          condimentum tincidunt fermentum. Nullam imperdiet est vel tincidunt
-          suscipit. Vestibulum vel pulvinar nibh, at molestie lectus. Curabitur
-          ultricies massa eu sem varius volutpat. Ut vitae purus et enim
-          imperdiet finibus. Quisque posuere lacus a nunc tempor accumsan.
-          Aliquam odio nunc, interdum.
-        </StorybookParah>
-
-        <BoxWithContent />
-      </>
-    );
-  });
-StoryMenuAndInline.storyName = 'menu+inline';
-StoryMenuAndInline.parameters = StoryDrawerDefault.parameters;
-
-export const StoryWithAriaAttributes = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
-
-    return (
-      <>
-        <StorybookHeading>Drawer with aria attributes</StorybookHeading>
-        <Button onClick={open}>Open Drawer</Button>
+      <InlineDrawerContainer>
         <Drawer
           open={isActive}
           onDismiss={close}
-          ariaLabelledby="drawerHeader"
-          ariaDescribedby="description purpose"
-          header={<div id="drawerHeader">Overriden drawer header</div>}
+          inline
+          disableFocusTrap
+          hideOverlay
+          placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+          header={DRAWER_HEDER}
+          overrides={{
+            panel: {minSize: '20vh', maxSize: '50%'},
+          }}
         >
-          <div id="description">Overriden drawer components</div>
-          <div id="purpose">Showing different styles</div>
+          {DRAWER_CONTENT}
         </Drawer>
-      </>
-    );
-  });
-StoryWithAriaAttributes.storyName = 'with aria attributes';
-StoryWithAriaAttributes.parameters = StoryDrawerDefault.parameters;
+
+        <TextBlock
+          stylePreset="inkBase"
+          paddingBlock="space030"
+          paddingInline="space030"
+        >
+          Inline drawer opens here.
+        </TextBlock>
+      </InlineDrawerContainer>
+    </>
+  );
+};
+StoryInline.storyName = 'Inline';
+
+export const StoryDrawerTopPlacement = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        placement="top"
+        header={DRAWER_HEDER}
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerTopPlacement.storyName = 'Top placement';
+
+export const StoryDrawerBottomPlacement = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        placement="bottom"
+        header={DRAWER_HEDER}
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerBottomPlacement.storyName = 'Bottom placement';
+
+export const StoryDrawerLeftPlacement = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        placement="left"
+        header={DRAWER_HEDER}
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerLeftPlacement.storyName = 'Left placement';
+
+export const StoryDrawerRightPlacement = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        placement="right"
+        header={DRAWER_HEDER}
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerRightPlacement.storyName = 'Right placement';
+
+export const StoryDrawerRightPlacementCloseOnLeft = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        placement="right"
+        header={DRAWER_HEDER}
+        closePosition="left"
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerRightPlacementCloseOnLeft.storyName =
+  'Right placement with Close position seet to left';
+
+export const StoryDrawerNoHeaderContent = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer open={isActive} onDismiss={close}>
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerNoHeaderContent.storyName = 'No header content';
+
+export const StoryDrawerNoCloseButton = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        header={DRAWER_HEDER}
+        closePosition="none"
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerNoCloseButton.storyName = 'No close button';
+
+export const StoryDrawerNoHeader = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer open={isActive} onDismiss={close} closePosition="none">
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerNoHeader.storyName = 'No header';
+
+export const StoryDrawerNoOverlay = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        hideOverlay
+        header={DRAWER_HEDER}
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerNoOverlay.storyName = 'No overlay';
+
+export const StoryWithAriaAttributes = () => {
+  const [isActive, open, close] = useActiveState();
+
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        ariaLabelledby="drawerHeader"
+        ariaDescribedby="description purpose"
+        header={<div id="drawerHeader">Overriden drawer header</div>}
+      >
+        <div id="description">Overriden drawer components</div>
+        <div id="purpose">Showing different styles</div>
+      </Drawer>
+    </>
+  );
+};
+
+StoryWithAriaAttributes.storyName = 'Aria attributes';
+StoryWithAriaAttributes.parameters = {
+  percy: {skip: true},
+};
 
 export const StoryWithRestoreFocusAndCustomAutofocus = () =>
   React.createElement(() => {
@@ -462,413 +325,345 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
       | undefined;
 
     return (
-      <div>
-        <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
-        <StorybookParah>
-          Drawer with autofocus using data-autofocus attribute
-        </StorybookParah>
-        <Button onClick={open} data-testid="drawer-open-button">
-          Open Drawer
-        </Button>
+      <>
+        <Button onClick={open}>Open drawer</Button>
         <br />
         <br />
         <Button id="test-button">Takes refocus</Button>
 
         <Drawer
-          aria-label="Drawer example"
           open={isActive}
           onDismiss={close}
-          header="Header"
+          header={DRAWER_HEDER}
           restoreFocusTo={elementToRestoreFocusTo}
         >
-          <TextInput label="First name" />
-          <TextInput label="Last name" />
-          <TextInput label="Phone number" />
-          <div>
-            <LinkInline href="/">For more information...</LinkInline>{' '}
-          </div>
-
-          <div>
-            <Button>Remind me later</Button>
-            <Button data-autofocus>Ok</Button>
-          </div>
+          {DRAWER_CONTENT}
+          <Button>First focusale element</Button>
+          <Button data-autofocus>AutoFocus this one</Button>
         </Drawer>
-      </div>
+      </>
     );
   });
 StoryWithRestoreFocusAndCustomAutofocus.storyName =
-  'with restore focus and custom autofocus';
-StoryWithRestoreFocusAndCustomAutofocus.parameters =
-  StoryDrawerDefault.parameters;
+  'Custom autofocus and restore focus';
+StoryWithRestoreFocusAndCustomAutofocus.parameters = {
+  percy: {skip: true},
+};
 
-export const StoryWithHiddenOverlay = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
+export const StoryWithDisabledFocusTrap = () => {
+  const [isActive, open, close] = useActiveState();
 
-    return (
-      <div>
-        <StorybookHeading>Drawer with hidden overlay</StorybookHeading>
-        <Button onClick={open} data-testid="drawer-open-button">
-          Open Drawer
-        </Button>
-        <BoxWithContent open={open} />
-        <Drawer
-          aria-label="Drawer example"
-          open={isActive}
-          onDismiss={close}
-          placement="right"
-          header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-          hideOverlay
-        >
-          <DrawerContent />
-        </Drawer>
-      </div>
-    );
-  });
-StoryWithHiddenOverlay.storyName = 'hidden overlay';
-StoryWithHiddenOverlay.parameters = StoryDrawerDefault.parameters;
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        header={DRAWER_HEDER}
+        disableFocusTrap
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryWithDisabledFocusTrap.storyName = 'Focus trap disabled';
+StoryWithDisabledFocusTrap.parameters = {
+  percy: {skip: true},
+};
 
-export const StoryWithDisabledFocusTrap = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
+export const StoryModelessDrawer = () => {
+  const [isActive, open, close] = useActiveState();
 
-    return (
-      <div>
-        <StorybookHeading>Drawer with disabled focus trap</StorybookHeading>
-        <Button onClick={open} data-testid="drawer-open-button">
-          Open Drawer
-        </Button>
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
 
-        <BoxWithContent open={open} />
-        <Drawer
-          aria-label="Drawer example"
-          open={isActive}
-          onDismiss={close}
-          placement="right"
-          header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-          disableFocusTrap
-        >
-          <DrawerContent />
-        </Drawer>
-      </div>
-    );
-  });
-StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
-StoryWithDisabledFocusTrap.parameters = StoryDrawerDefault.parameters;
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        header={DRAWER_HEDER}
+        disableFocusTrap
+        hideOverlay
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryModelessDrawer.storyName = 'Modeless';
+StoryModelessDrawer.parameters = {
+  percy: {skip: true},
+};
 
-export const StoryModelessDrawer = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
+export const StoryModelessWithRestoreFocusAndCustomAutofocus = () => {
+  const [isActive, open, close] = useActiveState();
 
-    return (
-      <div>
-        <StorybookHeading>Modeless Drawer</StorybookHeading>
-        <Button onClick={open} data-testid="drawer-open-button">
-          Open Drawer
-        </Button>
+  const elementToRestoreFocusTo = document.getElementById(
+    'modeless-test-button',
+  ) as HTMLElement | undefined;
 
-        <Drawer
-          aria-label="Drawer example"
-          open={isActive}
-          onDismiss={close}
-          placement="right"
-          header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-          disableFocusTrap
-          hideOverlay
-        >
-          <DrawerContent />
-        </Drawer>
+  return (
+    <>
+      <Button onClick={open}>Open Darwer</Button>
+      <br />
+      <br />
+      <Button id="modeless-test-button">Takes refocus</Button>
 
-        <BoxWithContent open={open} />
-      </div>
-    );
-  });
-StoryModelessDrawer.storyName = 'modelss';
-StoryModelessDrawer.parameters = StoryDrawerDefault.parameters;
-
-export const StoryModelessWithRestoreFocusAndCustomAutofocus = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
-
-    const elementToRestoreFocusTo = document.getElementById(
-      'modeless-test-button',
-    ) as HTMLElement | undefined;
-
-    return (
-      <div>
-        <StorybookHeading>Drawer with custom auto-focus</StorybookHeading>
-        <StorybookParah>
-          Drawer with autofocus using data-autofocus attribute
-        </StorybookParah>
-        <Button onClick={open} data-testid="modeless-drawer-open-button">
-          Open Drawer
-        </Button>
-        <br />
-        <br />
-        <Button id="modeless-test-button">Takes refocus</Button>
-
-        <Drawer
-          aria-label="Drawer example"
-          open={isActive}
-          onDismiss={close}
-          header="Header"
-          restoreFocusTo={elementToRestoreFocusTo}
-          disableFocusTrap
-        >
-          <TextInput label="First name" />
-          <TextInput label="Last name" />
-          <TextInput label="Phone number" />
-          <div>
-            <LinkInline href="/">For more information...</LinkInline>{' '}
-          </div>
-
-          <div>
-            <Button>Remind me later</Button>
-            <Button data-autofocus>Ok</Button>
-          </div>
-        </Drawer>
-      </div>
-    );
-  });
+      <Drawer
+        aria-label="Drawer example"
+        open={isActive}
+        onDismiss={close}
+        header={DRAWER_HEDER}
+        restoreFocusTo={elementToRestoreFocusTo}
+        disableFocusTrap
+      >
+        {DRAWER_CONTENT}
+        <Button>First focusale element</Button>
+        <Button data-autofocus>AutoFocus this one</Button>
+      </Drawer>
+    </>
+  );
+};
 StoryModelessWithRestoreFocusAndCustomAutofocus.storyName =
-  'modeless with restore focus and custom autofocus';
-StoryModelessWithRestoreFocusAndCustomAutofocus.parameters =
-  StoryDrawerDefault.parameters;
+  'Modeless drawer with custom autofocus';
+StoryModelessWithRestoreFocusAndCustomAutofocus.parameters = {
+  percy: {skip: true},
+};
 
-export const StoryOptionalHeaderClose = () =>
-  React.createElement(() => {
-    const [isActiveBoth, openBoth, closeBoth] = useActiveState();
-    const [isActiveHeader, openHeader, closeHeader] = useActiveState();
-    const [isActiveButton, openButton, closeButton] = useActiveState();
+export const StoryDrawerBrekpoints = () => {
+  const [isActive, open, close] = useActiveState();
 
-    return (
-      <div>
-        <StorybookHeading>
-          Drawer with optional header & close button
-        </StorybookHeading>
+  const mqPlacement = {
+    xs: 'left',
+    md: 'right',
+  };
+  const placement = useMediaQueryObject(mqPlacement);
 
-        <Stack spaceInline="space030" flow="horizontal-center">
-          <Button onClick={openBoth}>
-            Open without header and close button
-          </Button>
-          <Button onClick={openHeader}>Open without header</Button>
-          <Button onClick={openButton}>Open without close button</Button>
-        </Stack>
+  return (
+    <>
+      <InlineMessage
+        icon={
+          <IconFilledInfo
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        Resize the browser window to change drawer positon
+      </InlineMessage>
 
-        <Drawer
-          open={isActiveBoth}
-          onDismiss={closeBoth}
-          placement="right"
-          closePosition="none"
-        >
-          <DrawerContent />
-        </Drawer>
-        <Drawer
-          open={isActiveHeader}
-          onDismiss={closeHeader}
-          placement="right"
-          closePosition="right"
-        >
-          <DrawerContent />
-        </Drawer>
-        <Drawer
-          open={isActiveButton}
-          onDismiss={closeButton}
-          placement="right"
-          header="This is a drawer header. Content is passed as string."
-          closePosition="none"
-        >
-          <DrawerContent />
-        </Drawer>
-      </div>
-    );
-  });
-StoryOptionalHeaderClose.storyName = 'optional header & close';
-StoryOptionalHeaderClose.parameters = StoryDrawerDefault.parameters;
+      <Button onClick={open}>Open Drawer from the {placement}</Button>
 
-export const StoryDreawerTest = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
-
-    const mqPlacement = {
-      xs: 'left',
-      md: 'right',
-    };
-    const placement = useMediaQueryObject(mqPlacement);
-
-    return (
-      <div data-testid="scrollable-drawer">
-        <StorybookHeading>Left/right drawer</StorybookHeading>
-        <Button onClick={open} data-testid="drawer-open-button">
-          Open Drawer from the {placement}
-        </Button>
-
-        <Drawer
-          aria-label="Drawer example"
-          open={isActive}
-          onDismiss={close}
-          placement={placement as 'left' | 'right' | 'top' | 'bottom'}
-          header="This is a drawer header."
-          overrides={{
-            panel: {
-              transitionPreset: {
-                xs: 'slideLeft',
-                md: 'slideRight',
-              },
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        placement={placement as 'left' | 'right' | 'top' | 'bottom'}
+        header={DRAWER_HEDER}
+        overrides={{
+          panel: {
+            transitionPreset: {
+              xs: 'slideLeft',
+              md: 'slideRight',
             },
-          }}
-        >
-          <DrawerContent />
-        </Drawer>
-      </div>
-    );
-  });
-StoryDreawerTest.storyName = 'drawer-transitions-mq';
-StoryDreawerTest.parameters = StoryDrawerDefault.parameters;
+          },
+        }}
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerBrekpoints.storyName = 'Breakpoints';
+StoryDrawerBrekpoints.parameters = {
+  percy: {skip: true},
+};
 
-export const StoryDrawerLogicalPaddingOnPanel = () =>
-  React.createElement(() => {
-    const [isActive, setIsActive] = React.useState(false);
-    const [placement, setPlacement] = React.useState('left');
+export const StoryDrawerLogicalProps = () => {
+  const [placement, setPlacement] = React.useState('left');
+  const [isActive, open, close] = useActiveState(isVisualTest);
 
-    const open = () => setIsActive(true);
-    const close = () => setIsActive(false);
+  const handleOnClick = placementValue => {
+    setPlacement(placementValue);
+    open();
+  };
 
-    const onChangeValue = (ev: React.ChangeEvent<HTMLDivElement>) =>
-      setPlacement((ev.target as HTMLInputElement).value);
+  return (
+    <>
+      <GridLayout
+        columnGap="space030"
+        autoColumns="auto"
+        autoFlow="column"
+        inline
+      >
+        <Button onClick={() => handleOnClick('top')}>Top</Button>
+        <Button onClick={() => handleOnClick('bottom')}>Bottom</Button>
+        <Button onClick={() => handleOnClick('left')}>Left</Button>
+        <Button onClick={() => handleOnClick('right')}>Right</Button>
+      </GridLayout>
 
-    return (
-      <div data-testid="drawer-with-logical-padding">
-        <StorybookHeading>Default drawer</StorybookHeading>
-        <Button onClick={open} data-testid="drawer-open-button">
-          Open Drawer
-        </Button>
-        <Block
-          as="span"
-          paddingInline="space030"
-          paddingBlock="space030"
-          onChange={onChangeValue}
-        >
-          <StorybookLabel htmlFor="drawer_top_logical">
-            top:
-            <input
-              type="radio"
-              value="top"
-              id="drawer_top_logical"
-              name="placement"
-            />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer_left_logical">
-            left:
-            <input
-              type="radio"
-              value="left"
-              id="drawer_left_logical"
-              name="placement"
-              defaultChecked
-            />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer_bottom_logical">
-            bottom:
-            <input
-              type="radio"
-              value="bottom"
-              id="drawer_bottom_logical"
-              name="placement"
-            />
-          </StorybookLabel>
-          <StorybookLabel htmlFor="drawer_right_logical">
-            right:
-            <input
-              type="radio"
-              value="right"
-              id="drawer_right_logical"
-              name="placement"
-            />
-          </StorybookLabel>
-        </Block>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        placement={placement as 'top' | 'left' | 'right' | 'bottom'}
+        header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+        overrides={{
+          panel: {paddingBlock: 'space010', paddingInline: 'space010'},
+          header: {
+            paddingBlock: 'space030',
+            paddingInline: 'space030',
+          },
+          content: {
+            paddingBlock: 'space030',
+            paddingInline: 'space030',
+          },
+        }}
+      >
+        {DRAWER_CONTENT}
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerLogicalProps.storyName = 'Logical props Drawer';
 
+export const StoryInlineDrawerLogicalProps = () => {
+  const [placement, setPlacement] = React.useState('left');
+  const [isActive, open, close] = useActiveState(isVisualTest);
+
+  const handleOnClick = placementValue => {
+    setPlacement(placementValue);
+    open();
+  };
+
+  return (
+    <>
+      <GridLayout
+        columnGap="space030"
+        autoColumns="auto"
+        autoFlow="column"
+        inline
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        <Button onClick={() => handleOnClick('top')}>Top</Button>
+        <Button onClick={() => handleOnClick('bottom')}>Bottom</Button>
+        <Button onClick={() => handleOnClick('left')}>Left</Button>
+        <Button onClick={() => handleOnClick('right')}>Right</Button>
+      </GridLayout>
+
+      <InlineDrawerContainer>
         <Drawer
-          aria-label="Drawer example"
           open={isActive}
           onDismiss={close}
           placement={placement as 'top' | 'left' | 'right' | 'bottom'}
           header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          inline
+          disableFocusTrap
+          hideOverlay
           overrides={{
-            panel: {paddingBlock: 'space050', paddingInline: 'space050'},
+            panel: {paddingBlock: 'space010', paddingInline: 'space010'},
+            header: {
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            },
+            content: {
+              paddingBlock: 'space030',
+              paddingInline: 'space030',
+            },
           }}
         >
-          <DrawerContent />
+          {DRAWER_CONTENT}
         </Drawer>
-      </div>
-    );
-  });
-StoryDrawerLogicalPaddingOnPanel.storyName = 'logical padding on panel';
-StoryDrawerLogicalPaddingOnPanel.parameters = StoryDrawerDefault.parameters;
+      </InlineDrawerContainer>
+    </>
+  );
+};
+StoryInlineDrawerLogicalProps.storyName = 'Logical props Inline Drawer';
 
-export const StoryInlineDrawerLogicalPropsOnPanel = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
+export const StoryDrawerStyleOverrides = () => {
+  const [isActive, open, close] = useActiveState(isVisualTest);
 
-    return (
-      <div data-testid="inline-drawer-with-logical-props">
-        <StorybookHeading>
-          Inline drawer with logical padding & margin
-        </StorybookHeading>
-        <Button onClick={open} data-testid="drawer-open-button">
-          Open Drawer
-        </Button>
-        <DrawerContainer>
-          <Drawer
-            aria-label="Drawer example one"
-            open={isActive}
-            onDismiss={close}
-            inline
-            disableFocusTrap
-            hideOverlay
-            placement="top"
-            header="This is a drawer header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-            overrides={{
-              panel: {
-                marginBlock: 'space090',
-                paddingBlock: 'space050',
-                maxSize: '50%',
-              },
-            }}
-          >
-            <DrawerContent />
-          </Drawer>
-          <StorybookParah>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet
-            lorem massa, et lacinia ipsum tristique id. Phasellus sed posuere
-            lacus. Pellentesque eu odio{' '}
-            <LinkInline href="/">Test link 1</LinkInline> sapien. Donec finibus
-            pellentesque est porta dictum. Suspendisse venenatis vitae augue nec
-            hendrerit. In ut quam tempus, feugiat risus quis, porta eros.
-            Aliquam ultricies ac orci viverra gravida. Ut sodales odio tempor
-            sodales viverra. In condimentum tincidunt fermentum. Nullam
-            imperdiet est vel tincidunt suscipit. Vestibulum vel pulvinar nibh,
-            at molestie lectus. Curabitur ultricies massa eu sem varius
-            volutpat. Ut vitae purus et enim imperdiet finibus. Quisque posuere
-            lacus a nunc tempor accumsan. Aliquam odio nunc, interdum.
-          </StorybookParah>
-        </DrawerContainer>
-      </div>
-    );
-  });
-StoryInlineDrawerLogicalPropsOnPanel.storyName =
-  'inline drawer with logical padding & margin';
-StoryInlineDrawerLogicalPropsOnPanel.parameters = StoryDrawerDefault.parameters;
+  return (
+    <>
+      <Button onClick={open}>Open drawer</Button>
+      <Drawer
+        open={isActive}
+        onDismiss={close}
+        header={DRAWER_HEDER}
+        overrides={{
+          panel: {
+            stylePreset: 'drawerPanelCustom',
+          },
+          header: {
+            stylePreset: 'drawerHeaderCustom',
+          },
+          closeButton: {
+            stylePreset: 'drawerCloseButton',
+          },
+        }}
+      >
+        <TextBlock stylePreset="inkBrand010">Content</TextBlock>
+      </Drawer>
+    </>
+  );
+};
+StoryDrawerStyleOverrides.storyName = 'Styling overrides';
+
+const drawerCustomThemeObject: CreateThemeArgs = {
+  name: 'drawer-theme',
+  overrides: {
+    stylePresets: {
+      drawerPanelCustom: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative020}}',
+          boxShadow: '{{shadows.shadow060}}',
+        },
+      },
+      drawerHeaderCustom: {
+        base: {
+          color: '{{colors.inkBrand010}}',
+          borderWidth: '0 0 {{borders.borderWidth010}} 0',
+          borderColor: '{{colors.inkBrand010}}',
+          borderStyle: 'solid',
+        },
+      },
+      drawerCloseButton: {
+        base: {
+          iconColor: '{{colors.inkBrand010}}',
+          backgroundColor: '{{colors.transparent}}',
+        },
+        hover: {
+          iconColor: '{{colors.inkBrand020}}',
+        },
+      },
+    },
+  },
+};
 
 export default {
-  title: 'Components/drawer',
+  title: 'Components/Drawer',
   component: () => 'None',
+  parameters: {
+    previewTabs: {
+      'storybook/canvas/panel': {index: -1},
+      'storybook/docs/panel': {hidden: true},
+    },
+    viewMode: 'story',
+    docs: {
+      page: null,
+    },
+  },
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           drawerCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
