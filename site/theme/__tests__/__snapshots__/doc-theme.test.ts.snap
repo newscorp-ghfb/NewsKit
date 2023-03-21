@@ -115,7 +115,7 @@ Object {
     "inkBase": "{{colors.darkBlue020}}",
     "inkBrand010": "{{colors.purple050}}",
     "inkBrand020": "{{colors.purple030}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "inkContrast": "{{colors.white}}",
     "inkDark010": "{{colors.darkBlue100}}",
     "inkInformative": "{{colors.teal050}}",
@@ -1652,19 +1652,19 @@ Object {
     "patternsCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -1680,8 +1680,8 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
     },
     "patternsCardContainerInteractive": Object {
@@ -1991,14 +1991,14 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
@@ -2870,7 +2870,7 @@ Object {
     "inkBase": "{{colors.darkBlue080}}",
     "inkBrand010": "{{colors.purple050}}",
     "inkBrand020": "{{colors.purple080}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "inkContrast": "{{colors.darkBlue100}}",
     "inkDark010": "{{colors.darkBlue100}}",
     "inkInformative": "{{colors.teal060}}",
@@ -4404,19 +4404,19 @@ Object {
     "patternsCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -4432,8 +4432,8 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
     },
     "patternsCardContainerInteractive": Object {
@@ -4743,14 +4743,14 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
@@ -5622,7 +5622,7 @@ Object {
     "inkBase": "{{colors.darkBlue020}}",
     "inkBrand010": "{{colors.blue030}}",
     "inkBrand020": "{{colors.blue050}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "inkContrast": "{{colors.white}}",
     "inkDark010": "{{colors.darkBlue100}}",
     "inkInformative": "{{colors.teal050}}",
@@ -7159,19 +7159,19 @@ Object {
     "patternsCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -7187,8 +7187,8 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
     },
     "patternsCardContainerInteractive": Object {
@@ -7498,14 +7498,14 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
@@ -8377,7 +8377,7 @@ Object {
     "inkBase": "{{colors.darkBlue080}}",
     "inkBrand010": "{{colors.blue060}}",
     "inkBrand020": "{{colors.blue080}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "inkContrast": "{{colors.darkBlue100}}",
     "inkDark010": "{{colors.darkBlue100}}",
     "inkInformative": "{{colors.teal060}}",
@@ -9911,19 +9911,19 @@ Object {
     "patternsCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -9939,8 +9939,8 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
     },
     "patternsCardContainerInteractive": Object {
@@ -10250,14 +10250,14 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
@@ -11129,7 +11129,7 @@ Object {
     "inkBase": "{{colors.darkBlue020}}",
     "inkBrand010": "{{colors.purple050}}",
     "inkBrand020": "{{colors.purple030}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "inkContrast": "{{colors.white}}",
     "inkDark010": "{{colors.darkBlue100}}",
     "inkInformative": "{{colors.teal050}}",
@@ -12666,19 +12666,19 @@ Object {
     "patternsCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -12694,8 +12694,8 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
     },
     "patternsCardContainerInteractive": Object {
@@ -13005,14 +13005,14 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
@@ -13884,7 +13884,7 @@ Object {
     "inkBase": "{{colors.darkBlue080}}",
     "inkBrand010": "{{colors.purple060}}",
     "inkBrand020": "{{colors.purple080}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "inkContrast": "{{colors.darkBlue100}}",
     "inkDark010": "{{colors.darkBlue100}}",
     "inkInformative": "{{colors.teal060}}",
@@ -15418,19 +15418,19 @@ Object {
     "patternsCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -15446,8 +15446,8 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
     },
     "patternsCardContainerInteractive": Object {
@@ -15757,14 +15757,14 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
@@ -16636,7 +16636,7 @@ Object {
     "inkBase": "{{colors.darkBlue020}}",
     "inkBrand010": "{{colors.teal050}}",
     "inkBrand020": "{{colors.teal030}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "inkContrast": "{{colors.white}}",
     "inkDark010": "{{colors.darkBlue100}}",
     "inkInformative": "{{colors.teal050}}",
@@ -18173,19 +18173,19 @@ Object {
     "patternsCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -18201,8 +18201,8 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
     },
     "patternsCardContainerInteractive": Object {
@@ -18512,14 +18512,14 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
@@ -19391,7 +19391,7 @@ Object {
     "inkBase": "{{colors.darkBlue080}}",
     "inkBrand010": "{{colors.teal060}}",
     "inkBrand020": "{{colors.teal080}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "inkContrast": "{{colors.darkBlue100}}",
     "inkDark010": "{{colors.darkBlue100}}",
     "inkInformative": "{{colors.teal060}}",
@@ -20925,19 +20925,19 @@ Object {
     "patternsCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "disabled": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "focus-visible": Object {
         "outlineColor": "{{outlines.outlineColorDefault}}",
@@ -20953,8 +20953,8 @@ Object {
       },
       "loading": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
     },
     "patternsCardContainerInteractive": Object {
@@ -21264,14 +21264,14 @@ Object {
     "whatsnewCardButton": Object {
       "active": Object {
         "backgroundColor": "{{colors.interactiveInverse050}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "base": Object {
         "backgroundColor": "{{colors.interactiveInverse030}}",
         "borderRadius": "{{borders.borderRadiusDefault}}",
-        "color": "{{colors.inkBrand030}}",
-        "iconColor": "{{colors.inkBrand030}}",
+        "color": "{{colors.teal060}}",
+        "iconColor": "{{colors.teal060}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",

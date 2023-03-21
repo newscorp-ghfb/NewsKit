@@ -590,8 +590,8 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.inkBrand030}}',
-      iconColor: '{{colors.inkBrand030}}',
+      color: '{{colors.teal060}}',
+      iconColor: '{{colors.teal060}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
@@ -600,18 +600,18 @@ export const stylePresets = {
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand030}}',
-      iconColor: '{{colors.inkBrand030}}',
+      color: '{{colors.teal060}}',
+      iconColor: '{{colors.teal060}}',
     },
     disabled: {
       backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkBrand030}}',
-      iconColor: '{{colors.inkBrand030}}',
+      color: '{{colors.teal060}}',
+      iconColor: '{{colors.teal060}}',
     },
     loading: {
       backgroundColor: '{{colors.interactiveInverse020}}',
-      color: '{{colors.inkBrand030}}',
-      iconColor: '{{colors.inkBrand030}}',
+      color: '{{colors.teal060}}',
+      iconColor: '{{colors.teal060}}',
     },
     'focus-visible': {
       outlineColor: '{{outlines.outlineColorDefault}}',
@@ -664,8 +664,8 @@ export const stylePresets = {
     base: {
       backgroundColor: '{{colors.interactiveInverse030}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
-      color: '{{colors.inkBrand030}}',
-      iconColor: '{{colors.inkBrand030}}',
+      color: '{{colors.teal060}}',
+      iconColor: '{{colors.teal060}}',
     },
     hover: {
       backgroundColor: '{{colors.interactiveInverse020}}',
@@ -674,8 +674,8 @@ export const stylePresets = {
     },
     active: {
       backgroundColor: '{{colors.interactiveInverse050}}',
-      color: '{{colors.inkBrand030}}',
-      iconColor: '{{colors.inkBrand030}}',
+      color: '{{colors.teal060}}',
+      iconColor: '{{colors.teal060}}',
     },
   },
 

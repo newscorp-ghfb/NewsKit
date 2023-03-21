@@ -31,7 +31,7 @@
     "inkInformative": "{{colors.teal060}}",
     "inkBrand010": "{{colors.blue060}}",
     "inkBrand020": "{{colors.blue080}}",
-    "inkBrand030": "{{colors.teal060}}",
+    "teal060": "{{colors.teal060}}",
     "interfaceBackground": "{{colors.white}}",
     "interface010": "{{colors.darkBlue010}}",
     "interface020": "{{colors.darkBlue010}}",
