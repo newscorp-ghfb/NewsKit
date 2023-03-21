@@ -282,7 +282,11 @@ export const FormInputWithSelect = () => (
             <FormInputLabel>Select Item</FormInputLabel>
           </Block>
           <Block spaceStack="space020">
-            <FormInputSelect {...sharedProps} placeholder="Select option">
+            <FormInputSelect
+              {...sharedProps}
+              placeholder="Select option"
+              endEnhancer={undefined}
+            >
               <SelectOption value="Option 1">Option 1</SelectOption>
               <SelectOption value="Option 2">Option 2</SelectOption>
             </FormInputSelect>
@@ -368,10 +372,10 @@ export const StoryFormFieldset = () => {
     'large',
   ];
   return (
-    <GridLayout columns="1fr 1fr 1fr">
+    <GridLayout columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}>
       {sizes.map(size => (
         <Container>
-          <Form onSubmit={onSubmit}>
+          <Form onSubmit={onSubmit} marginBlockEnd="space050">
             <Fieldset
               legend={`${size.slice(0, 1).toUpperCase()}${size.substring(1)}`}
               size={size}
