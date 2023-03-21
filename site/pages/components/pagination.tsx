@@ -1,13 +1,6 @@
 import React from 'react';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
-import {
-  InlineMessage,
-  LinkInline,
-  UnorderedList,
-  toNewsKitIcon,
-  TextBlock,
-} from 'newskit';
-import {Code} from '../../components/code';
+import {InlineMessage, LinkInline, UnorderedList, toNewsKitIcon} from 'newskit';
 import {InlineCode} from '../../components/markdown-elements';
 import {ComponentPageTemplate} from '../../templates/component-page-template';
 import {LayoutProps} from '../../components/layout';
@@ -27,16 +20,6 @@ const infoIcon = (
       size: 'iconSize020',
     }}
   />
-);
-
-const CodeBlock: React.FC<{children: string}> = ({children}) => (
-  <TextBlock
-    as="div"
-    stylePreset="inkContrast"
-    typographyPreset="editorialLabel010"
-  >
-    <Code>{children}</Code>
-  </TextBlock>
 );
 
 const PaginationComponent = (layoutProps: LayoutProps) => (
@@ -780,74 +763,23 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
                 Button
               </LinkInline>{' '}
               page for the other props.
-            </InlineMessage>
-          ),
-        },
-        {
-          title: 'Code example showing itemButton overriding PaginationButton',
-          summary:
-            'Here is an advanced customisation example. It uses the itemButton function to render a custom component for selected items only. The normal items use the default PaginationButton.',
-          propsRows: [],
-          propsFooter: (
-            <>
-              <InlineMessage
-                id="code-example"
-                aria-label="code example"
-                icon={infoIcon}
-                role="region"
-                overrides={{
-                  marginBlockStart: 'space030',
-                }}
+              <br />
+              <br />
+              The default PaginationButton can be overridden, or added to, by
+              using the itemButton render prop in PaginationItems&apos;
+              overrides. Go to{' '}
+              <Link
+                href="https://storybook.newskit.co.uk/?path=/docs/components-pagination--story-default"
+                target="_blank"
               >
-                Go to{' '}
-                <Link
-                  href="https://storybook.newskit.co.uk/?path=/docs/components-pagination--story-default"
-                  target="_blank"
-                >
-                  Storybook examples
-                </Link>{' '}
-                to see it in action. It is the `Variations in input / Buttons
-                with Input for selected item` story.
-              </InlineMessage>
-              <br />
-              <br />
-              <CodeBlock>
-                {`<Pagination
-  totalItems={232}
-  pageSize={10}
-  defaultPage={9}
-  onPageChange={onPageChange}
->
-  <PaginationFirstItem />
-  <PaginationPrevItem />
-  <PaginationItems
-    truncation
-    siblings={3}
-    boundaries={1}
-    overrides={{
-      itemButton: ({selected, ...rest}) => {
-        if (selected) {
-          return (
-            <CustomInputPaginationItemButton
-              selected={selected}
-              {...rest}
-            />
-          );
-        }
-
-        return (
-          <PaginationButton {...rest}>
-            {rest.pageNumber}
-          </PaginationButton>
-        );
-      },
-    }}
-  />
-  <PaginationNextItem />
-  <PaginationLastItem />
-</Pagination>`}
-              </CodeBlock>
-            </>
+                Storybook examples
+              </Link>{' '}
+              for code examples. The Variations in Input / Buttons with Input
+              for Selected Item story is an advanced customisation example. It
+              uses the itemButton function to render a custom component for
+              selected items only. The normal items use the default
+              PaginationButton.
+            </InlineMessage>
           ),
         },
         {
