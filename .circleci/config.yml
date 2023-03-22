@@ -1576,6 +1576,7 @@ workflows:
           name: destroy_tf_ecr_dev
           package: ecr
           context: ncu-product-platforms-context
+          apply: false
           tf_env: false
           requires:
             - init_aws
