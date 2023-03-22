@@ -87,24 +87,117 @@ export const parameters = {
         value: '#2E2E2E',
       },
       {
-        name: 'The Sun',
-        value: '#eb1801',
-      },
-      {
-        name: 'The Times',
+        name: 'The Times Light',
         value: '#006699',
       },
       {
-        name: 'Virgin',
-        value: '#e10a0a',
+        name: 'The Times Dark',
+        value: '#006691',
+      },
+
+      {
+        name: 'NK-TNL-Business Light',
+        value: 'NK-TNL-Business Light',
       },
       {
-        name: 'The Wall Street Journal',
-        value: '#0274B6',
+        name: 'NK-TNL-Business Dark',
+        value: 'NK-TNL-Business Dark',
       },
       {
-        name: 'MarketWatch',
-        value: '#367F2E',
+        name: 'NK-TNL-Comment Light',
+        value: 'NK-TNL-Comment Light',
+      },
+      {
+        name: 'NK-TNL-Comment Dark',
+        value: 'NK-TNL-Comment Dark',
+      },
+      {
+        name: 'NK-TNL-Culture Light',
+        value: 'NK-TNL-Culture Light',
+      },
+      {
+        name: 'NK-TNL-Culture Dark',
+        value: 'NK-TNL-Culture Dark',
+      },
+      {
+        name: 'NK-TNL-Home Light',
+        value: 'NK-TNL-Home Light',
+      },
+      {
+        name: 'NK-TNL-Home Dark',
+        value: 'NK-TNL-Home Dark',
+      },
+      {
+        name: 'NK-TNL-Money Light',
+        value: 'NK-TNL-Money Light',
+      },
+      {
+        name: 'NK-TNL-Money Dark',
+        value: 'NK-TNL-Money Dark',
+      },
+      {
+        name: 'NK-TNL-News Light',
+        value: 'NK-TNL-News Light',
+      },
+      {
+        name: 'NK-TNL-News Dark',
+        value: 'NK-TNL-News Dark',
+      },
+      {
+        name: 'NK-TNL-Puzzle Light',
+        value: 'NK-TNL-Puzzle Light',
+      },
+      {
+        name: 'NK-TNL-Puzzle Dark',
+        value: 'NK-TNL-Puzzle Dark',
+      },
+      {
+        name: 'NK-TNL-Register Light',
+        value: 'NK-TNL-Register Light',
+      },
+      {
+        name: 'NK-TNL-Register Dark',
+        value: 'NK-TNL-Register Dark',
+      },
+      {
+        name: 'NK-TNL-Sport Light',
+        value: 'NK-TNL-Sport Light',
+      },
+      {
+        name: 'NK-TNL-Sport Dark',
+        value: 'NK-TNL-Sport Dark',
+      },
+      {
+        name: 'NK-TNL-Times2 Light',
+        value: 'NK-TNL-Times2 Light',
+      },
+      {
+        name: 'NK-TNL-Times2 Dark',
+        value: 'NK-TNL-Times2 Dark',
+      },
+      {
+        name: 'NK-TNL-Travel Light',
+        value: 'NK-TNL-Travel Light',
+      },
+      {
+        name: 'NK-TNL-Travel Dark',
+        value: 'NK-TNL-Travel Dark',
+      },
+      {
+        name: 'NK-TNL-World Light',
+        value: 'NK-TNL-World Light',
+      },
+      {
+        name: 'NK-TNL-World Dark',
+        value: 'NK-TNL-World Dark',
+      },
+      {
+        name: 'NK-TNL-TimesPlus Light',
+        value: 'NK-TNL-TimesPlus Light',
+      },
+      {
+        name: 'NK-TNL-TimesPlus Dark',
+        value: 'NK-TNL-TimesPlus Dark',
       },
     ],
   },
