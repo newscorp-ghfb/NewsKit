@@ -1555,6 +1555,10 @@ workflows:
           requires:
             - init_aws
             - approve_destroy_tf_dns_staging
+      - approve_destroy_tf_dns_prod:
+          type: approval
+          requires:
+            - init_aws
       - destroy_terraform:
           name: destroy_tf_dns_prod
           package: dns
