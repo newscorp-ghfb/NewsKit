@@ -1529,32 +1529,41 @@ workflows:
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
-      - approve_destroy_terraform_dns_dev:
+      - approve_destroy_tf_dns_dev:
           type: approval
           requires:
             - init_aws
       - destroy_terraform:
-          name: destroy_terraform_dns_dev
+          name: destroy_tf_dns_dev
           package: dns
           context: ncu-product-platforms-context
           environment: dev
           apply: false
           requires:
             - init_aws
-            - approve_destroy_terraform_dns_dev
-      - approve_destroy_terraform_dns_staging:
+            - approve_destroy_tf_dns_dev
+      - approve_destroy_tf_dns_staging:
           type: approval
           requires:
             - init_aws
       - destroy_terraform:
-          name: destroy_terraform_dns_staging
+          name: destroy_tf_dns_staging
           package: dns
           context: ncu-product-platforms-context
           environment: staging
           apply: false
           requires:
             - init_aws
-            - approve_destroy_terraform_dns_staging
+            - approve_destroy_tf_dns_staging
+      - destroy_terraform:
+          name: destroy_tf_dns_prod
+          package: dns
+          context: ncu-product-platforms-context
+          environment: prod
+          apply: false
+          requires:
+            - init_aws
+            - approve_destroy_tf_dns_prod
       #- deploy_terraform:
       #    name: deploy_terraform_ecr_dev
       #    package: ecr
