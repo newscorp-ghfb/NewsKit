@@ -646,7 +646,7 @@ export const StoryFormComplete = () => {
                   overrides={{marginBlockEnd: 'space020'}}
                 />
                 <FormInputRadioButton
-                  id="gender-noSay"
+                  id="gender-no-say"
                   value="noSay"
                   label="Not to say"
                   overrides={{marginBlockEnd: 'space020'}}
@@ -679,31 +679,31 @@ export const StoryFormComplete = () => {
                 overrides={{marginBlockEnd: 'space020'}}
               />
               <FormInputCheckbox
-                id="interests-Business"
+                id="interests-business"
                 value="Business"
                 label="Business"
                 overrides={{marginBlockEnd: 'space020'}}
               />
               <FormInputCheckbox
-                id="interests-Society"
+                id="interests-society"
                 value="Society"
                 label="Society"
                 overrides={{marginBlockEnd: 'space020'}}
               />
               <FormInputCheckbox
-                id="interests-Technology"
+                id="interests-technology"
                 value="Technology"
                 label="Technology"
                 overrides={{marginBlockEnd: 'space020'}}
               />
               <FormInputCheckbox
-                id="interests-Sport"
+                id="interests-sport"
                 value="Sport"
                 label="Sport"
                 overrides={{marginBlockEnd: 'space020'}}
               />
               <FormInputCheckbox
-                id="interests-Science"
+                id="interests-science"
                 value="Science"
                 label="Science"
                 overrides={{marginBlockEnd: 'space020'}}
