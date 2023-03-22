@@ -293,6 +293,19 @@ commands:
             cd terraform/<< parameters.package >>
             terraform apply -auto-approve -lock=false -input=false tfplan
 
+  terraform_destroy:
+    description: Run Terraform Destroy
+    parameters:
+      package:
+        type: string
+    steps:
+      - run:
+          name: Terraform destroy
+          command: |
+            source $BASH_ENV
+            cd terraform/<< parameters.package >>
+            terraform destroy -auto-approve -lock=false -input=false
+
   aws_assume_role:
     description: Assume AWS role
     parameters:
@@ -787,6 +800,49 @@ jobs:
                 package: << parameters.package >>
       - slack/notify:
           <<: *slack_notify
+
+  destroy_terraform:
+    parameters:
+      package:
+        type: string
+      apply:
+        type: boolean
+        default: true
+      tf_env:
+        type: boolean
+        default: true
+      environment:
+        type: string
+        default: ''
+    executor: terraform
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - aws_assume_role_file
+      - when:
+          condition: << parameters.tf_env >>
+          steps:
+            - terraform_init:
+                package: << parameters.package >>
+                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
+            - terraform_plan:
+                package: << parameters.package >>
+                terraform_arg: -destroy -var-file=<< parameters.environment >>.tfvars
+      - unless:
+          condition: << parameters.tf_env >>
+          steps:
+            - terraform_init:
+                package: << parameters.package >>
+                terraform_arg: -backend-config="key=product-platforms/newskit/<< parameters.package >>/terraform.tfstate"
+            - terraform_plan:
+                package: << parameters.package >>
+                terraform_arg: -destroy
+      - when:
+          condition: << parameters.apply >>
+          steps:
+            - terraform_destroy:
+                package: << parameters.package >>
 
   test_visual_comps_percy:
     executor: node-large
@@ -1473,73 +1529,56 @@ workflows:
             - test_broken_links_docs_pr
       - init_aws:
           context: ncu-product-platforms-context
-      - deploy_terraform:
-          name: deploy_terraform_ecr_pr
-          package: ecr
-          context: ncu-product-platforms-context
-          apply: false
-          tf_env: false
+      - approve_destroy_terraform_dns_dev:
+          type: approval
           requires:
             - init_aws
-      - deploy_terraform:
-          name: deploy_terraform_s3_pr
-          package: s3
+      - destroy_terraform:
+          name: destroy_terraform_dns_dev
+          package: dns
           context: ncu-product-platforms-context
-          apply: false
-          tf_env: false
-          environment: pr
-          requires:
-            - init_aws
-      - deploy_terraform_oidc:
-          name: validate_deploy_terraform_s3_dev
-          package: s3/dev-newskit
-          context: ncu-newskit-site-dev
-          apply: false # Can set true while doing testing of CircleCI code
-          tf_env: true
           environment: dev
+          apply: false
           requires:
             - init_aws
-      - deploy_terraform_oidc:
-          name: validate_deploy_terraform_s3_staging
-          package: s3/prod-newskit
-          context: ncu-newskit-site-stage
-          apply: false # Can set true while doing testing of CircleCI code
-          tf_env: true
+            - approve_destroy_terraform_dns_dev
+      - approve_destroy_terraform_dns_staging:
+          type: approval
+          requires:
+            - init_aws
+      - destroy_terraform:
+          name: destroy_terraform_dns_staging
+          package: dns
+          context: ncu-product-platforms-context
           environment: staging
+          apply: false
           requires:
             - init_aws
-      - deploy_terraform_oidc:
-          name: validate_deploy_terraform_s3_prod
-          package: s3/prod-newskit
-          context: ncu-newskit-site-stage
-          apply: false # Can set true while doing testing of CircleCI code
-          tf_env: true
-          environment: prod
-          requires:
-            - init_aws
-      - build_docs:
-          name: build_docs_pr
-          context: ncu-newskit-site-pr
-          requires:
-            - build_icons
-      - push_s3_pr:
-          name: deploy_to_s3_pr
-          context: ncu-product-platforms-context
-          requires:
-            - deploy_terraform_s3_pr
-            - build_docs_pr
-            - build_storybook
-      - post_pr_env_url_to_github_pr:
-          name: pr_enviroment_link
-          context: ncu-product-platforms-context
-          requires:
-            - deploy_to_s3_pr
-      - validate_terraform:
-          name: validate_terraform
-          requires:
-            - validate_deploy_terraform_s3_dev
-            - validate_deploy_terraform_s3_staging
-            - validate_deploy_terraform_s3_prod
+            - approve_destroy_terraform_dns_staging
+      #- deploy_terraform:
+      #    name: deploy_terraform_ecr_dev
+      #    package: ecr
+      #    context: ncu-product-platforms-context
+      #    tf_env: false
+      #    requires:
+      #      - init_aws
+      #- deploy_terraform:
+      #    name: deploy_terraform_ecr_pr
+      #    package: ecr
+      #    context: ncu-product-platforms-context
+      #    apply: false
+      #    tf_env: false
+      #    requires:
+      #      - init_aws
+      #- deploy_terraform:
+      #    name: deploy_terraform_s3_pr
+      #    package: s3
+      #    context: ncu-product-platforms-context
+      #    apply: false
+      #    tf_env: false
+      #    environment: pr
+      #    requires:
+      #      - init_aws
       # Temporarily uncomment these steps if needing to test S3 deployments on push rather than on merge
       #- build_docs_with_no_base_url:
       #    name: build_docs_dev
