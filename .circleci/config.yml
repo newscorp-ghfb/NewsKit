@@ -1568,6 +1568,31 @@ workflows:
           requires:
             - init_aws
             - approve_destroy_tf_dns_prod
+      - approve_destroy_tf_ecr_dev:
+          type: approval
+          requires:
+            - init_aws
+      - destroy_terraform:
+          name: destroy_tf_ecr_dev
+          package: ecr
+          context: ncu-product-platforms-context
+          tf_env: false
+          requires:
+            - init_aws
+            - approve_destroy_tf_ecr_dev
+      - approve_destroy_tf_ecr_pr:
+          type: approval
+          requires:
+            - init_aws
+      - destroy_terraform:
+          name: destroy_tf_ecr_pr
+          package: ecr
+          context: ncu-product-platforms-context
+          apply: false
+          tf_env: false
+          requires:
+            - init_aws
+            - approve_destroy_tf_ecr_pr
       #- deploy_terraform:
       #    name: deploy_terraform_ecr_dev
       #    package: ecr
