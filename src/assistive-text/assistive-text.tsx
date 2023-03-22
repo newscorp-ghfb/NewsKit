@@ -28,6 +28,8 @@ const ThemelessAssistiveText = React.forwardRef<
   ) => {
     const enhancersOverrides = omitLogicalPaddingPropsFromOverrides(overrides);
     const textBlockOverrides = omitLogicalMarginPropsFromOverrides(overrides);
+    console.log(textBlockOverrides);
+    console.log(props);
 
     return (
       <WithEnhancers
@@ -47,7 +49,7 @@ const ThemelessAssistiveText = React.forwardRef<
             state={state}
             role={state === 'invalid' ? 'alert' : undefined}
             aria-live={state === 'invalid' ? 'polite' : undefined}
-            {...textBlockOverrides}
+            overrides={textBlockOverrides}
             {...props}
           >
             {children}
