@@ -225,7 +225,7 @@ export const StoryDrawerRightPlacementCloseOnLeft = () => {
   );
 };
 StoryDrawerRightPlacementCloseOnLeft.storyName =
-  'Right placement with Close position seet to left';
+  'Right placement with close position set to left';
 
 export const StoryDrawerNoHeaderContent = () => {
   const [isActive, open, close] = useActiveState(isVisualTest);
@@ -306,8 +306,16 @@ export const StoryWithAriaAttributes = () => {
         ariaDescribedby="description purpose"
         header={<div id="drawerHeader">Overriden drawer header</div>}
       >
-        <div id="description">Overriden drawer components</div>
-        <div id="purpose">Showing different styles</div>
+        <TextBlock stylePreset="inkBase" id="description">
+          Overriden drawer components
+        </TextBlock>
+        <TextBlock
+          stylePreset="inkBase"
+          id="purpose"
+          marginBlockStart="space040"
+        >
+          Showing different styles
+        </TextBlock>
       </Drawer>
     </>
   );
@@ -340,7 +348,9 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
           restoreFocusTo={elementToRestoreFocusTo}
         >
           {DRAWER_CONTENT}
-          <Button>First focusale element</Button>
+          <Button overrides={{marginBlock: 'space040'}}>
+            First focusable element
+          </Button>
           <Button data-autofocus>AutoFocus this one</Button>
         </Drawer>
       </>
@@ -407,7 +417,7 @@ export const StoryModelessWithRestoreFocusAndCustomAutofocus = () => {
 
   return (
     <>
-      <Button onClick={open}>Open Darwer</Button>
+      <Button onClick={open}>Open drawer</Button>
       <br />
       <br />
       <Button id="modeless-test-button">Takes refocus</Button>
@@ -421,7 +431,9 @@ export const StoryModelessWithRestoreFocusAndCustomAutofocus = () => {
         disableFocusTrap
       >
         {DRAWER_CONTENT}
-        <Button>First focusale element</Button>
+        <Button overrides={{marginBlock: 'space040'}}>
+          First focusable element
+        </Button>
         <Button data-autofocus>AutoFocus this one</Button>
       </Drawer>
     </>
@@ -457,7 +469,7 @@ export const StoryDrawerBrekpoints = () => {
         Resize the browser window to change drawer positon
       </InlineMessage>
 
-      <Button onClick={open}>Open Drawer from the {placement}</Button>
+      <Button onClick={open}>Open drawer from the {placement}</Button>
 
       <Drawer
         open={isActive}
@@ -528,7 +540,7 @@ export const StoryDrawerLogicalProps = () => {
     </>
   );
 };
-StoryDrawerLogicalProps.storyName = 'Logical props Drawer';
+StoryDrawerLogicalProps.storyName = 'Logical props drawer';
 
 export const StoryInlineDrawerLogicalProps = () => {
   const [placement, setPlacement] = React.useState<Placement>('left');
@@ -581,7 +593,7 @@ export const StoryInlineDrawerLogicalProps = () => {
     </>
   );
 };
-StoryInlineDrawerLogicalProps.storyName = 'Logical props Inline Drawer';
+StoryInlineDrawerLogicalProps.storyName = 'Logical props inline drawer';
 
 export const StoryDrawerStyleOverrides = () => {
   const [isActive, open, close] = useActiveState(isVisualTest);
