@@ -304,7 +304,7 @@ commands:
           command: |
             source $BASH_ENV
             cd terraform/<< parameters.package >>
-            terraform apply -destroy -auto-approve -lock=false -input=false tfplan
+            terraform apply -auto-approve -lock=false -input=false tfplan
 
   aws_assume_role:
     description: Assume AWS role
