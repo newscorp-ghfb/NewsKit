@@ -1538,7 +1538,7 @@ workflows:
           package: dns
           context: ncu-product-platforms-context
           environment: dev
-          apply: false
+          apply: true
           requires:
             - init_aws
             - approve_destroy_tf_dns_dev
@@ -1551,7 +1551,7 @@ workflows:
           package: dns
           context: ncu-product-platforms-context
           environment: staging
-          apply: false
+          apply: true
           requires:
             - init_aws
             - approve_destroy_tf_dns_staging
@@ -1564,7 +1564,7 @@ workflows:
           package: dns
           context: ncu-product-platforms-context
           environment: prod
-          apply: false
+          apply: true
           requires:
             - init_aws
             - approve_destroy_tf_dns_prod
@@ -1576,7 +1576,7 @@ workflows:
           name: destroy_tf_ecr_dev
           package: ecr
           context: ncu-product-platforms-context
-          apply: false
+          apply: true
           tf_env: false
           requires:
             - init_aws
@@ -1589,7 +1589,7 @@ workflows:
           name: destroy_tf_ecr_pr
           package: ecr
           context: ncu-product-platforms-context
-          apply: false
+          apply: true
           tf_env: false
           requires:
             - init_aws
