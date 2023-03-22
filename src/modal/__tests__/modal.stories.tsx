@@ -14,12 +14,9 @@ import {useHasMounted} from '../../utils/hooks';
 import {Select, SelectOption} from '../../select';
 import {createTheme, ThemeProvider} from '../../theme';
 
-const Box = styled.div`
-  width: 400px;
-`;
-
-const scrollContent =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra. Integer non velit vitae elit porta condimentum. Cras ultrices lectus eu porttitor volutpat. In hac habitasse platea dictumst. Integer maximus leo quis sapien aliquet finibus. Cras lobortis leo quis massa commodo ornare. Donec ac ligula sed mauris sodales pretium id eu nibh. Pellentesque et eros viverra, dignissim ante in, tincidunt eros. Curabitur mattis purus dolor, non aliquam sapien auctor quis. Morbi sit amet leo in urna dictum imperdiet vitae sed velit. In auctor nulla sed lectus ultricies dignissim. In mattis.';
+// const Box = styled.div`
+//   width: 400px;
+// `;
 
 const modalContent = (
   <Stack
@@ -122,7 +119,7 @@ export const StoryModalDefault = () =>
           onClick={open}
           data-testid="modal-open-button"
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
@@ -290,14 +287,14 @@ export const StoryWithHiddenOverlay = () =>
           onClick={open}
           data-testid="modal-open-button"
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
           Open Modal
         </Button>
         <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-        <Box>
+        {/* <Box>
           {Array.from({length: 5}, (_, i) => (
             <>
               {i === 3 && (
@@ -306,7 +303,7 @@ export const StoryWithHiddenOverlay = () =>
               <StorybookParah key={i}>{scrollContent}</StorybookParah>
             </>
           ))}
-        </Box>
+        </Box> */}
         <Modal
           open={isActive}
           onDismiss={close}
@@ -391,7 +388,7 @@ export const StoryWithAriaAttributes = () =>
         <Button
           onClick={open}
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
@@ -426,7 +423,7 @@ export const StoryWithCustomAutofocus = () =>
           onClick={open}
           data-testid="modal-open-button"
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
@@ -476,7 +473,7 @@ export const StoryWithCustomRestoreFocus = () =>
           onClick={open}
           data-testid="modal-open-button"
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
@@ -485,7 +482,7 @@ export const StoryWithCustomRestoreFocus = () =>
         <Button
           id="test-button"
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
@@ -530,7 +527,7 @@ export const StoryWithDisabledFocusTrap = () =>
           onClick={open}
           data-testid="modal-open-button"
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
@@ -572,7 +569,7 @@ export const StoryModelessModal = () =>
           onClick={open}
           data-testid="modal-open-button"
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
@@ -623,7 +620,7 @@ export const StoryModelessInlineModal = () =>
             onClick={open}
             data-testid="modal-open-button"
             overrides={{
-              typographyPreset: 'utilityButton010',
+              typographyPreset: 'utilityButton020',
               stylePreset: 'buttonOutlinedPrimary',
             }}
           >
@@ -682,7 +679,7 @@ export const StoryNestedModals = () =>
         <Button
           onClick={open}
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
@@ -702,7 +699,7 @@ export const StoryNestedModals = () =>
             <Button
               onClick={openNested}
               overrides={{
-                typographyPreset: 'utilityButton010',
+                typographyPreset: 'utilityButton020',
                 stylePreset: 'buttonOutlinedPrimary',
               }}
             >
@@ -732,7 +729,7 @@ export const StoryNestedModals = () =>
                 <Button
                   onClick={closeNested}
                   overrides={{
-                    typographyPreset: 'utilityButton010',
+                    typographyPreset: 'utilityButton020',
                     stylePreset: 'buttonOutlinedPrimary',
                   }}
                 >
@@ -802,7 +799,7 @@ export const StoryLogicalProps = () =>
           onClick={open}
           data-testid="modal-open-button"
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'utilityButton020',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
