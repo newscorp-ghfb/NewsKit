@@ -2471,15 +2471,27 @@ Object {
   "paginationItemNonInteractive": Object {
     "large": Object {
       "iconSize": "iconSize020",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody030",
     },
     "medium": Object {
       "iconSize": "iconSize020",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody020",
     },
     "small": Object {
       "iconSize": "iconSize010",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody010",
     },
   },
   "paginationItemPrev": Object {
