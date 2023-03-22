@@ -300,7 +300,7 @@ commands:
         type: string
     steps:
       - run:
-          name: Terraform destroy
+          name: Terraform destroy 
           command: |
             source $BASH_ENV
             cd terraform/<< parameters.package >>
