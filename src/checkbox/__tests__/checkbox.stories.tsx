@@ -49,11 +49,12 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
       },
       customCheckbox: {
         base: {
-          backgroundColor: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.inkBrand010}}',
           iconColor: '{{colors.amber020}}',
           borderRadius: '4px',
         },
       },
+      labelCustom: {base: {color: '{{colors.inkBrand010}}'}},
       customIconFilledCancel: {
         base: {
           backgroundColor: '{{colors.interfaceInformative010}}',
@@ -244,7 +245,7 @@ export const StoryCheckboxStylingOverrides = () => (
         },
         label: {
           typographyPreset: 'utilityBody020',
-          stylePreset: 'inkBrand010',
+          stylePreset: 'labelCustom',
         },
       }}
     />
@@ -342,11 +343,15 @@ export default {
   },
   disabledRules: [],
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           checkboxCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
