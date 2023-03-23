@@ -2,7 +2,6 @@ import * as React from 'react';
 import {
   Grid,
   Cell,
-  // ConsentSettingsLink,
   getColorCssFromTheme,
   getSizingCssFromTheme,
   getMediaQueryFromTheme,
@@ -96,14 +95,6 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
                 </Link>
               </FooterLink>
               <FooterLink>
-                {/* <ConsentSettingsLink
-                  privacyManagerId="407619"
-                  gdpr
-                  overrides={linkOverrides}
-                  eventContext={{value: 'Privacy policy'}}
-                >
-                  Privacy policy
-                </ConsentSettingsLink> */}
                 <Link
                   type="standalone"
                   href="/"
