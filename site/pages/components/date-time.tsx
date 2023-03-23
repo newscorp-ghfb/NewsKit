@@ -35,7 +35,7 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.18.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/date-time',
-      storybookId: 'components-date-time--story-date-time',
+      storybookId: 'components-date-time--story-date-time-default',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2057%3A5&t=iP77Jd8O6cCJYM4p-1',
     }}

@@ -68,20 +68,34 @@ export const logicalPaddingOverrideProps: OverridesRowsProps[] = [
   },
 ];
 
-export const commonLogicalProps = (type?: 'propsRow' | 'overridesRow') => {
+export const commonLogicalProps = (
+  type: 'propsRow' | 'overridesRow' = 'overridesRow',
+  defaultsMap?: Record<string, string | string[]>,
+  defaultsOnly?: boolean,
+) => {
   const logicalPropsOverrides = [
     ...logicalMarginOverrideProps,
     ...logicalPaddingOverrideProps,
   ];
 
-  const logicalProps = logicalPropsOverrides.map(
-    ({attribute: name, ...rest}) => ({
-      name,
-      ...rest,
-    }),
-  );
-
-  return type === 'propsRow' ? logicalProps : logicalPropsOverrides;
+  if (type === 'propsRow') {
+    return logicalPropsOverrides
+      .map(({attribute: name, ...rest}) => ({
+        name,
+        ...rest,
+        default: defaultsMap && defaultsMap[name],
+      }))
+      .filter(entry => !defaultsOnly || entry.default);
+  }
+  return defaultsMap
+    ? logicalPropsOverrides
+        .map(({attribute, ...rest}) => ({
+          attribute,
+          ...rest,
+          default: defaultsMap[attribute],
+        }))
+        .filter(entry => !defaultsOnly || entry.default)
+    : logicalPropsOverrides;
 };
 
 interface CommonLogicalPropsMDXProps {
