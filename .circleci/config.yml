@@ -178,6 +178,7 @@ commands:
           name: Terraform init
           command: |
             source $BASH_ENV
+            export AWS_SDK_LOAD_CONFIG=1
             cd terraform/<< parameters.package >>
             terraform init << parameters.terraform_arg >>
 
