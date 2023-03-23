@@ -736,4 +736,12 @@ export default {
       </ThemeProvider>
     ),
   ],
+  parameters: {
+    nkDocs: {
+      title: 'Form input',
+      url: 'https://newskit.co.uk/components/form',
+      description:
+        'The form component allows users to enter and edit information into a UI using form controls. Based on React Hook Form.',
+    },
+  },
 };
