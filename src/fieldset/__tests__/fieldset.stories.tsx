@@ -12,9 +12,17 @@ import {TextBlock} from '../../text-block';
 import {GridLayout} from '../../grid-layout';
 
 export default {
-  title: 'Components/fieldset',
+  title: 'Components/Fieldset',
   component: () => 'None',
   disabledRules: ['heading-order'],
+  parameters: {
+    nkDocs: {
+      title: 'Fieldset',
+      url: 'https://newskit.co.uk/components/fieldset/',
+      description:
+        'The fieldset is used to provide contextual information around a group of form controls in a web form.',
+    },
+  },
 };
 
 const StyledDiv = styled.div`
