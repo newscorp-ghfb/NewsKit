@@ -35,7 +35,7 @@ const useActiveState = (
 
 type Placement = NonNullable<DrawerProps['placement']>;
 
-const DRAWER_HEDER = 'Drawer Title';
+const DRAWER_HEADER = 'Drawer Title';
 const DRAWER_CONTENT = <TextBlock stylePreset="inkBase">Content</TextBlock>;
 
 export const StoryDrawerDefault = () => {
@@ -65,7 +65,7 @@ export const StoryDrawerDefault = () => {
         open={isActive}
         onDismiss={close}
         placement={placement as 'top' | 'left' | 'right' | 'bottom'}
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
       >
         {DRAWER_CONTENT}
       </Drawer>
@@ -109,7 +109,7 @@ export const StoryInline = () => {
           disableFocusTrap
           hideOverlay
           placement={placement}
-          header={DRAWER_HEDER}
+          header={DRAWER_HEADER}
           overrides={{
             panel: {minSize: '20vh', maxSize: '50%'},
           }}
@@ -140,7 +140,7 @@ export const StoryDrawerTopPlacement = () => {
         open={isActive}
         onDismiss={close}
         placement="top"
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
       >
         {DRAWER_CONTENT}
       </Drawer>
@@ -159,7 +159,7 @@ export const StoryDrawerBottomPlacement = () => {
         open={isActive}
         onDismiss={close}
         placement="bottom"
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
       >
         {DRAWER_CONTENT}
       </Drawer>
@@ -178,7 +178,7 @@ export const StoryDrawerLeftPlacement = () => {
         open={isActive}
         onDismiss={close}
         placement="left"
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
       >
         {DRAWER_CONTENT}
       </Drawer>
@@ -197,7 +197,7 @@ export const StoryDrawerRightPlacement = () => {
         open={isActive}
         onDismiss={close}
         placement="right"
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
       >
         {DRAWER_CONTENT}
       </Drawer>
@@ -216,7 +216,7 @@ export const StoryDrawerRightPlacementCloseOnLeft = () => {
         open={isActive}
         onDismiss={close}
         placement="right"
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
         closePosition="left"
       >
         {DRAWER_CONTENT}
@@ -250,7 +250,7 @@ export const StoryDrawerNoCloseButton = () => {
       <Drawer
         open={isActive}
         onDismiss={close}
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
         closePosition="none"
       >
         {DRAWER_CONTENT}
@@ -284,7 +284,7 @@ export const StoryDrawerNoOverlay = () => {
         open={isActive}
         onDismiss={close}
         hideOverlay
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
       >
         {DRAWER_CONTENT}
       </Drawer>
@@ -344,7 +344,7 @@ export const StoryWithRestoreFocusAndCustomAutofocus = () =>
         <Drawer
           open={isActive}
           onDismiss={close}
-          header={DRAWER_HEDER}
+          header={DRAWER_HEADER}
           restoreFocusTo={elementToRestoreFocusTo}
         >
           {DRAWER_CONTENT}
@@ -371,7 +371,7 @@ export const StoryWithDisabledFocusTrap = () => {
       <Drawer
         open={isActive}
         onDismiss={close}
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
         disableFocusTrap
       >
         {DRAWER_CONTENT}
@@ -394,7 +394,7 @@ export const StoryModelessDrawer = () => {
       <Drawer
         open={isActive}
         onDismiss={close}
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
         disableFocusTrap
         hideOverlay
       >
@@ -426,7 +426,7 @@ export const StoryModelessWithRestoreFocusAndCustomAutofocus = () => {
         aria-label="Drawer example"
         open={isActive}
         onDismiss={close}
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
         restoreFocusTo={elementToRestoreFocusTo}
         disableFocusTrap
       >
@@ -475,7 +475,7 @@ export const StoryDrawerBrekpoints = () => {
         open={isActive}
         onDismiss={close}
         placement={placement as Placement}
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
         overrides={{
           panel: {
             transitionPreset: {
@@ -604,7 +604,7 @@ export const StoryDrawerStyleOverrides = () => {
       <Drawer
         open={isActive}
         onDismiss={close}
-        header={DRAWER_HEDER}
+        header={DRAWER_HEADER}
         overrides={{
           panel: {
             stylePreset: 'drawerPanelCustom',
