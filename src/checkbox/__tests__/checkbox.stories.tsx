@@ -74,9 +74,10 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkInverse}}',
         },
       },
-      // @ts-ignore
+
       customOutline: deepMerge(
         {},
+        // @ts-ignore
         Checkbox.stylePresets.checkboxInput,
         customOutlinePreset,
       ),
