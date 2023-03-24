@@ -105,7 +105,11 @@ export const StoryFieldsetDefault = () => (
 StoryFieldsetDefault.storyName = 'Default';
 
 export const LegendSizing = () => (
-  <GridLayout columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}>
+  <GridLayout
+    columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
+    rowGap="space020"
+    columnGap="space020"
+  >
     <Block>
       <Header>Small</Header>
       <Fieldset legend="Legend" size="small">
@@ -144,7 +148,11 @@ export const LegendSizing = () => (
 LegendSizing.storyName = 'Size';
 
 export const LegendVariations = () => (
-  <GridLayout columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}>
+  <GridLayout
+    columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
+    rowGap="space020"
+    columnGap="space020"
+  >
     <Block>
       <Header>Heading</Header>
       <Fieldset legend={<Heading3>Legend</Heading3>}>
