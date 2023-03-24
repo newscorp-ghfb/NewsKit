@@ -6,7 +6,7 @@ import {
   StorybookPage,
   StorybookCase,
 } from '../../test/storybook-comps';
-import {Checkbox} from '..';
+import {Checkbox} from '../checkbox';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {IconFilledCancel, IconFilledStarOutline} from '../../icons';
 import {CheckboxIconProps} from '../types';
@@ -61,17 +61,14 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkInverse}}',
         },
       },
-      customOutlineOverrides: {
-        base: {
+      customOutline: {
+        // @ts-ignore
+        ...Checkbox.stylePresets.checkboxInput,
+        'focus-visible': {
           outlineColor: 'red',
           outlineStyle: 'dashed',
-          outlineWidth: '1px',
-          borderRadius: '2px',
-          outlineOffset: '6px',
-          backgroundColor: '{{colors.interactiveInput040}}',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidth020}}',
-          iconColor: '{{colors.inkInverse}}',
+          outlineWidth: '5px',
+          outlineOffset: '{{outlines.outlineOffsetDefault}}',
         },
       },
     },
@@ -320,7 +317,7 @@ export const StoryCheckboxOverrides = () => (
             paddingBlock: 'space030',
             marginInlineEnd: 'space030',
             input: {
-              stylePreset: 'customOutlineOverrides',
+              stylePreset: 'customOutline',
             },
           }}
         />
