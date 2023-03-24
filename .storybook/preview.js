@@ -23,6 +23,7 @@ const unlimitedScenarios = [
   'Stack',
   'card',
   'drawer',
+  'Form input',
   'modal',
   'Image',
   'image-e2e',
