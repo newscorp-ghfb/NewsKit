@@ -1,7 +1,7 @@
 import {styled, getStylePreset, getTypographyPreset} from '../utils/style';
 import {ComponentSizeProps, PaginationItemProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
-import {Button} from '../button';
+import {Button, ButtonOrButtonLinkProps} from '../button';
 
 // The path will most likely always be 'pagination'
 export const StyledNav = styled.nav<ComponentSizeProps>`
@@ -17,13 +17,15 @@ export const StyledUnorderedList = styled.ul`
   padding: 0px;
 `;
 
-export const StyledListItem = styled.li<ComponentSizeProps>`
+export const StyledListItem = styled.li`
   display: flex;
   justify-content: center;
   align-self: center;
 `;
 
-export const StyledButton = styled(Button)<PaginationItemProps>`
+export const StyledButton = styled(Button)<
+  ButtonOrButtonLinkProps & PaginationItemProps
+>`
   ${({size, selected}) =>
     getStylePreset(`paginationItem.${size}`, '', {isSelected: selected})};
 `;
