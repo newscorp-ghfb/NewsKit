@@ -64,4 +64,12 @@ describe('DateTime', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test('renders with children', () => {
+    const fragment = renderToFragmentWithTheme(DateTime, {
+      date,
+      children: '2 years ago',
+    });
+    expect(fragment).toMatchSnapshot();
+  });
 });
