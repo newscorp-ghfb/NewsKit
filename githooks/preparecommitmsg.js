@@ -107,8 +107,6 @@ if (msgFilePath) {
         .replace(`(${scope})`, '')
         .replace(/^:\s? /, '');
 
-      console.log(`commit lint, ${parsed.raw} ${type}, ${scope}, ${message}`);
-
       return {
         message,
         scope,
