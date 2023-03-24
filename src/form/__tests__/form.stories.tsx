@@ -133,23 +133,27 @@ export const StoryFormSubmitValidation = () => (
 StoryFormSubmitValidation.storyName = 'Submit validation';
 
 export const StoryFormYupResolver = () => (
-  <Container>
+  <Container data-testid="yup-resolver">
     <Form onSubmit={onSubmit} resolver={yupResolver(schema)}>
       <GridLayout rowGap="space050">
         <GridLayoutItem>
           <FormInput name="email">
             <FormInputLabel>Email</FormInputLabel>
-            <FormInputTextField />
+            <FormInputTextField data-testid="email-input" />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
           </FormInput>
         </GridLayoutItem>
         <GridLayoutItem>
           <FormInput name="username">
             <FormInputLabel>Username</FormInputLabel>
-            <FormInputTextField />
+            <FormInputTextField data-testid="username-input" />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
           </FormInput>
         </GridLayoutItem>
         <GridLayoutItem>
-          <Button type="submit">Submit</Button>
+          <Button type="submit" data-testid="submit-button">
+            Submit
+          </Button>
         </GridLayoutItem>
       </GridLayout>
     </Form>
