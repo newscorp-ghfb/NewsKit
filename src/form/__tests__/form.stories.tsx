@@ -219,7 +219,9 @@ const FormInputPhoneNumber = React.forwardRef<HTMLInputElement>(() => {
     id,
   } = useContext(FormInputContext);
 
-  const onChange = (value: string) => onChangeContext({target: {value}});
+  const onChange = (value: string) =>
+    onChangeContext &&
+    onChangeContext({target: {value}} as React.ChangeEvent<HTMLInputElement>);
 
   return (
     <StyledPhoneInput>
