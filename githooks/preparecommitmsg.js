@@ -40,12 +40,11 @@ const createPrompts = ({type, scope}) => {
           SEM_VER_COMMIT_TYPES[SEM_VER_COMMIT_TYPES.length - 1],
     },
     {
-      message: 'Enter the Jira ticket number for this commit',
+      message: 'Enter the github issue number for this commit',
       name: 'scope',
       transformer: input => input.toUpperCase(),
       type: 'input',
-      validate: input =>
-        SCOPE_REGEX.test(input.toUpperCase()) || 'e.g. PPDSC-1608',
+      validate: input => SCOPE_REGEX.test(input.toUpperCase()) || 'e.g. 1608',
       when: !scope,
     },
   ];
