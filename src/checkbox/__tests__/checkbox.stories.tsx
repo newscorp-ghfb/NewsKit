@@ -13,6 +13,7 @@ import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {defaultFocusVisible} from '../../utils/default-focus-visible';
+import {deepMerge} from '../../utils';
 
 const autoFlagCols = `repeat(auto-fill, minmax(150px, max-content))`;
 
@@ -28,6 +29,18 @@ const StyledDiv = styled.div`
   width: 200px;
   height: 100px;
 `;
+
+const customOutline = {
+  outlineColor: 'red',
+  outlineStyle: 'dashed',
+  outlineWidth: '1px',
+  outlineOffset: '8px',
+};
+
+const customOutlinePreset = {
+  'focus-visible': customOutline,
+  'checked:focus-visible': customOutline,
+};
 
 const checkboxCustomThemeObject: CreateThemeArgs = {
   name: 'checkbox-custom-theme',
@@ -61,16 +74,12 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkInverse}}',
         },
       },
-      customOutline: {
-        // @ts-ignore
-        ...Checkbox.stylePresets.checkboxInput,
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dashed',
-          outlineWidth: '5px',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
+      // @ts-ignore
+      customOutline: deepMerge(
+        {},
+        Checkbox.stylePresets.checkboxInput,
+        customOutlinePreset,
+      ),
     },
     transitionPresets: {
       customBackgroundColorChange: {
