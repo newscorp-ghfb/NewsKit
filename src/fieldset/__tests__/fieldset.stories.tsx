@@ -105,26 +105,38 @@ export const StoryFieldsetDefault = () => (
 StoryFieldsetDefault.storyName = 'Default';
 
 export const LegendSizing = () => (
-  <GridLayout columns="repeat(3, 1fr)">
+  <GridLayout columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}>
     <Block>
       <Header>Small</Header>
       <Fieldset legend="Legend" size="small">
-        <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
-        <AssistiveText>Assistive Text</AssistiveText>
+        <Checkbox
+          label="Label"
+          overrides={{spaceStack: 'space030'}}
+          size="small"
+        />
+        <AssistiveText size="small">Assistive Text</AssistiveText>
       </Fieldset>
     </Block>
     <Block>
       <Header>Medium</Header>
       <Fieldset legend="Legend" size="medium">
-        <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
-        <AssistiveText>Assistive Text</AssistiveText>
+        <Checkbox
+          label="Label"
+          overrides={{spaceStack: 'space030'}}
+          size="medium"
+        />
+        <AssistiveText size="medium">Assistive Text</AssistiveText>
       </Fieldset>
     </Block>
     <Block>
       <Header>Large</Header>
       <Fieldset legend="Legend" size="large">
-        <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
-        <AssistiveText>Assistive Text</AssistiveText>
+        <Checkbox
+          label="Label"
+          overrides={{spaceStack: 'space030'}}
+          size="large"
+        />
+        <AssistiveText size="large">Assistive Text</AssistiveText>
       </Fieldset>
     </Block>
   </GridLayout>
@@ -132,7 +144,7 @@ export const LegendSizing = () => (
 LegendSizing.storyName = 'Size';
 
 export const LegendVariations = () => (
-  <GridLayout columns="repeat(3, 1fr)">
+  <GridLayout columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}>
     <Block>
       <Header>Heading</Header>
       <Fieldset legend={<Heading3>Legend</Heading3>}>
