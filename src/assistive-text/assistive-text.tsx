@@ -28,8 +28,6 @@ const ThemelessAssistiveText = React.forwardRef<
   ) => {
     const enhancersOverrides = omitLogicalPaddingPropsFromOverrides(overrides);
     const textBlockOverrides = omitLogicalMarginPropsFromOverrides(overrides);
-    console.log(textBlockOverrides);
-    console.log(props);
 
     return (
       <WithEnhancers

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Fieldset} from '..';
 import {Block} from '../../block';
 import {Image} from '../../image';
@@ -6,10 +7,53 @@ import {Checkbox} from '../../checkbox';
 import {AssistiveText} from '../../assistive-text';
 import {Button} from '../../button';
 import {Heading3} from '../../typography';
-import {createTheme, ThemeProvider} from '../../theme';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {TextBlock} from '../../text-block';
 import {GridLayout} from '../../grid-layout';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+
+const myCustomTheme: CreateThemeArgs = {
+  name: 'my-custom-fieldset-theme',
+  overrides: {
+    stylePresets: {
+      legendCustom: {
+        base: {
+          color: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.interfaceBackground}}',
+        },
+      },
+      fieldsetCustom: {
+        base: {
+          backgroundColor: '{{colors.amber020}}',
+          borderColor: '{{colors.amber070}}',
+          borderWidth: '1px',
+          borderStyle: 'solid',
+        },
+      },
+      checkboxInputCustom: {
+        base: {
+          backgroundColor: '{{colors.amber020}}',
+          borderColor: '{{colors.amber070}}',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderRadius: '{{borders.borderRadiusRounded010}}',
+          borderStyle: 'solid',
+          iconColor: '{{colors.inkInverse}}',
+        },
+      },
+      checkboxLabelCustom: {
+        base: {
+          color: '{{colors.amber070}}',
+        },
+      },
+      assistiveTextCustom: {
+        base: {
+          color: '{{colors.amber070}}',
+        },
+      },
+    },
+  },
+};
 
 export default {
   title: 'Components/Fieldset',
@@ -23,6 +67,18 @@ export default {
         'The fieldset is used to provide contextual information around a group of form controls in a web form.',
     },
   },
+  decorators: [
+    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          myCustomTheme,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 const StyledDiv = styled.div`
@@ -157,76 +213,37 @@ export const FieldsetWithCustomLegend = () => (
 );
 FieldsetWithCustomLegend.storyName = 'Custom legend';
 
-const myCustomTheme = createTheme({
-  name: 'my-custom-select-theme',
-  overrides: {
-    stylePresets: {
-      fieldsetCustom: {
-        base: {
-          backgroundColor: '{{colors.amber020}}',
-          borderColor: '{{colors.amber070}}',
-          borderWidth: '1px',
-          borderStyle: 'solid',
-        },
-      },
-      checkboxInputCustom: {
-        base: {
-          backgroundColor: '{{colors.amber020}}',
-          borderColor: '{{colors.amber070}}',
-          borderWidth: '{{borders.borderWidth020}}',
-          borderRadius: '{{borders.borderRadiusRounded010}}',
-          borderStyle: 'solid',
-          iconColor: '{{colors.inkInverse}}',
-        },
-      },
-      checkboxLabelCustom: {
-        base: {
-          color: '{{colors.amber070}}',
-        },
-      },
-      assistiveTextCustom: {
-        base: {
-          color: '{{colors.amber070}}',
-        },
-      },
-    },
-  },
-});
-
 const StyledFieldsetWithClippedBG = styled(Fieldset)`
   background-clip: content-box;
 `;
 
 export const FieldsetWithOverrides = () => (
-  <>
-    <ThemeProvider theme={myCustomTheme}>
-      <StyledFieldsetWithClippedBG
-        legend="Legend margin reset to 0 when Fieldset has padding"
-        overrides={{
-          stylePreset: 'fieldsetCustom',
-          paddingBlock: 'space040',
-          paddingInline: 'space040',
-          legend: {
-            typographyPreset: 'utilityBody030',
-            spaceStack: 'space000',
-          },
-        }}
-      >
-        <Checkbox
-          label="Label"
-          overrides={{
-            spaceStack: 'space030',
-            marginBlockStart: '-6px',
-            input: {stylePreset: 'checkboxInputCustom'},
-            label: {stylePreset: 'checkboxLabelCustom'},
-          }}
-        />
-        <AssistiveText overrides={{stylePreset: 'assistiveTextCustom'}}>
-          Assistive Text
-        </AssistiveText>
-      </StyledFieldsetWithClippedBG>
-    </ThemeProvider>
-  </>
+  <StyledFieldsetWithClippedBG
+    legend="Legend margin reset to 0 when Fieldset has padding"
+    overrides={{
+      stylePreset: 'fieldsetCustom',
+      paddingBlock: 'space040',
+      paddingInline: 'space040',
+      legend: {
+        typographyPreset: 'utilityBody030',
+        spaceStack: 'space000',
+        stylePreset: 'legendCustom',
+      },
+    }}
+  >
+    <Checkbox
+      label="Label"
+      overrides={{
+        spaceStack: 'space030',
+        marginBlockStart: '-6px',
+        input: {stylePreset: 'checkboxInputCustom'},
+        label: {stylePreset: 'checkboxLabelCustom'},
+      }}
+    />
+    <AssistiveText overrides={{stylePreset: 'assistiveTextCustom'}}>
+      Assistive Text
+    </AssistiveText>
+  </StyledFieldsetWithClippedBG>
 );
 FieldsetWithOverrides.storyName = 'Styling overrides';
 
@@ -237,14 +254,8 @@ export const FieldsetWithLogicalPropsOverrides = () => (
       <Fieldset
         legend="Legend"
         overrides={{
-          stylePreset: 'fieldsetCustom',
           paddingBlock: 'space040',
-          marginInline: 'space040',
-          legend: {
-            stylePreset: 'legendCustom',
-            typographyPreset: 'utilityBody030',
-            spaceStack: 'space000',
-          },
+          paddingInline: 'space040',
         }}
       >
         <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
@@ -256,13 +267,8 @@ export const FieldsetWithLogicalPropsOverrides = () => (
       <Fieldset
         legend="Legend"
         overrides={{
-          stylePreset: 'fieldsetCustom',
           marginBlock: 'space040',
           marginInline: 'space040',
-          legend: {
-            stylePreset: 'legendCustom',
-            typographyPreset: 'utilityBody030',
-          },
         }}
       >
         <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
@@ -275,13 +281,8 @@ export const FieldsetWithLogicalPropsOverrides = () => (
         <Fieldset
           legend="Legend"
           overrides={{
-            stylePreset: 'fieldsetCustom',
             marginBlock: 'space040',
             marginInline: 'space040',
-            legend: {
-              stylePreset: 'legendCustom',
-              typographyPreset: 'utilityBody030',
-            },
           }}
         >
           <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
