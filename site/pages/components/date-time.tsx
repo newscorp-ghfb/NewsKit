@@ -328,6 +328,12 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
               required: true,
             },
             {
+              name: 'children',
+              type: 'string',
+              description:
+                'Provide this prop to display custom text inside the component',
+            },
+            {
               name: 'dateFormat',
               type: 'string',
               description: (
@@ -377,7 +383,7 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the style preset applied to the prefix',
             },
             {
-              attribute: 'prefix.stypographyPreset',
+              attribute: 'prefix.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityMeta020',
               description:
@@ -391,7 +397,7 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the style preset applied to the suffix',
             },
             {
-              attribute: 'suffix.stypographyPreset',
+              attribute: 'suffix.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityMeta020',
               description:
