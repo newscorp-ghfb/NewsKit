@@ -30,6 +30,17 @@ const StyledDiv = styled.div`
   height: 100px;
 `;
 
+const customStyle = {
+  backgroundColor: '{{colors.inkBrand010}}',
+  iconColor: '{{colors.amber020}}',
+  borderRadius: '4px',
+};
+
+const customCheckbox = {
+  'focus-visible': customStyle,
+  'checked:focus-visible': customStyle,
+};
+
 const customOutline = {
   outlineColor: 'red',
   outlineStyle: 'dashed',
@@ -60,13 +71,6 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
         },
         'focus-visible': defaultFocusVisible,
       },
-      customCheckbox: {
-        base: {
-          backgroundColor: '{{colors.inkBrand010}}',
-          iconColor: '{{colors.amber020}}',
-          borderRadius: '4px',
-        },
-      },
       labelCustom: {base: {color: '{{colors.inkBrand010}}'}},
       customIconFilledCancel: {
         base: {
@@ -74,12 +78,17 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkInverse}}',
         },
       },
-
       customOutline: deepMerge(
         {},
         // @ts-ignore
         Checkbox.stylePresets.checkboxInput,
         customOutlinePreset,
+      ),
+      customCheckbox: deepMerge(
+        // @ts-ignore
+        {},
+        Checkbox.stylePresets.checkboxInput,
+        customCheckbox,
       ),
     },
     transitionPresets: {
