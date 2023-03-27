@@ -1,6 +1,5 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import styled from '@emotion/styled';
 import {
   StorybookHeading,
   StorybookPage,
@@ -13,7 +12,7 @@ import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {defaultFocusVisible} from '../../utils/default-focus-visible';
-import {deepMerge} from '../../utils';
+import {deepMerge, styled} from '../../utils';
 
 const autoFlagCols = `repeat(auto-fill, minmax(150px, max-content))`;
 
