@@ -1,44 +1,36 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, {useEffect} from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Modal} from '..';
 import {styled} from '../../utils/style';
-import {
-  StorybookHeading,
-  StorybookParah,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {StorybookHeading} from '../../test/storybook-comps';
 import {Button} from '../../button';
-import {LinkStandalone} from '../../link';
 import {Stack} from '../../stack';
 import {useHasMounted} from '../../utils/hooks';
 import {Select, SelectOption} from '../../select';
-import {createTheme, ThemeProvider} from '../../theme';
-
-// const Box = styled.div`
-//   width: 400px;
-// `;
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {Label, Block, P} from '../..';
+import {AssistiveText} from '../../assistive-text';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const modalContent = (
-  <Stack
-    flow="vertical-center"
-    stackDistribution="center"
-    spaceInline="space020"
-  >
-    {/* <H1>You need an account</H1>
-    <StorybookParah>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. (Double click for more text :) )
-    </StorybookParah>
-    <Button>Register for a free account</Button>
-    <P>Already have an account?</P>
-    <LinkInline href="/">Sign in here</LinkInline> */}
+  <Stack>
+    <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
   </Stack>
 );
 
-const myCustomTheme = createTheme({
+const ModaleCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-modal-theme',
   overrides: {
     stylePresets: {
+      modalHeader: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderColor: '{{colors.interface050}}',
+        },
+      },
       overlayCustom: {
         base: {
           backgroundColor: '{{colors.amber010}}',
@@ -46,8 +38,7 @@ const myCustomTheme = createTheme({
       },
       modalPanelCustom: {
         base: {
-          backgroundColor: '{{colors.green010}}',
-          boxShadow: '0px 0px 16px 14px rgba(169,183,172,0.9)',
+          backgroundColor: '{{colors.interfaceInformative020}}',
         },
       },
       modalHeaderCustom: {
@@ -55,25 +46,19 @@ const myCustomTheme = createTheme({
           backgroundColor: '{{colors.transparent}}',
           borderStyle: 'none none solid none',
           borderWidth: '{{borders.borderWidth010}}',
-          borderColor: '{{colors.red060}}',
+          borderColor: '{{colors.inkBrand010}}',
         },
       },
       modalCloseButtonCustom: {
         base: {
           borderWidth: '{{borders.borderWidth010}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.teal030}}',
           backgroundColor: '{{colors.transparent}}',
-          borderRadius: '{{borders.borderRadiusCircle}}',
-          iconColor: '{{colors.teal070}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.teal050}}',
+          iconColor: '{{colors.inkBrand010}}',
         },
       },
     },
   },
-});
+};
 
 const useActiveState = (initial = false): [boolean, () => void, () => void] => {
   const [isActive, setIsActive] = React.useState(initial);
@@ -87,26 +72,37 @@ const useActiveState = (initial = false): [boolean, () => void, () => void] => {
 export default {
   title: 'Components/Modal',
   component: () => 'None',
-  disabledRules: ['tabindex'], // Because of scenario 'open on page load'
+  parameters: {
+    nkDocs: {
+      title: 'Headline',
+      url: 'https://newskit.co.uk/components/headline/',
+      description:
+        'Headline is used to highlight the main point or category of the following text.',
+    },
+  },
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          ModaleCustomThemeObject,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
-// export const StoryDefault = () =>
-//   React.createElement(() => (
-//     <>
-//       <StorybookHeading>Default modal</StorybookHeading>
-//       <Modal
-//         aria-label="Default modal"
-//         open
-//         onDismiss={() => {}}
-//         header={
-//           <LinkStandalone href="www.test.com">Link button</LinkStandalone>
-//         }
-//       >
-//         {modalContent}
-//       </Modal>
-//     </>
-//   ));
-// StoryDefault.storyName = 'Default';
+// export default {
+//   title: 'Components/Modal',
+//   component: () => 'None',
+//   disabledRules: ['tabindex'], // Because of scenario 'open on page load'
+// };
 
 export const StoryModalDefault = () =>
   React.createElement(() => {
@@ -125,22 +121,17 @@ export const StoryModalDefault = () =>
         >
           Open Modal
         </Button>
-        {/* <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading> */}
-        {/* <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>Another button to open the modal</Button>
-              )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
-            </>
-          ))}
-        </Box> */}
         <Modal
           aria-label="Default Modal"
           open={isActive}
           onDismiss={close}
-          // header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          overrides={{
+            header: {
+              stylePreset: 'modalHeader',
+              typographyPreset: 'utilityLabel030',
+            },
+          }}
+          header="Modal Title"
         >
           {modalContent}
         </Modal>
@@ -176,23 +167,12 @@ export const StoryOpenOnPageLoad = () =>
           open={isActive}
           onDismiss={close}
           aria-label="Open modal on page load"
-          // header="Modal header"
+          overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
+          }}
+          header="Modal Title"
         >
-          {/* <Stack
-            flow="vertical-center"
-            stackDistribution="center"
-            spaceInline="space020"
-          >
-            <H1>You need an account</H1>
-            <StorybookParah>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam. (Double
-              click for more text :) )
-            </StorybookParah>
-            <Button>Register for a free account</Button>
-            <P>Already have an account?</P>
-            <LinkInline href="/">Sign in here</LinkInline>
-          </Stack> */}
+          {modalContent}
         </Modal>
       </>
     );
@@ -210,9 +190,10 @@ export const StoryWithCloseButtonOnTheLeft = () =>
         aria-label="Modal: header close button on the left"
         open
         onDismiss={() => {}}
-        header={
-          <LinkStandalone href="www.test.com">Link button</LinkStandalone>
-        }
+        overrides={{
+          header: {typographyPreset: 'utilityLabel030'},
+        }}
+        header="Modal Title"
         closePosition="left"
       >
         {modalContent}
@@ -233,6 +214,7 @@ export const StoryNoHeaderContent = () =>
         overrides={{
           header: {paddingInline: 'space000', paddingBlock: 'space000'},
         }}
+        closePosition="left"
       >
         {modalContent}
       </Modal>
@@ -248,7 +230,10 @@ export const StoryNoClose = () =>
       <Modal
         aria-label="Default with no header"
         open
-        header="Header"
+        overrides={{
+          header: {typographyPreset: 'utilityLabel030'},
+        }}
+        header="Modal Title"
         closePosition="none"
         onDismiss={() => {}}
       >
@@ -269,7 +254,9 @@ export const StoryNoHeader = () =>
         closePosition="none"
         onDismiss={() => {}}
       >
-        {modalContent}
+        <Stack>
+          <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
+        </Stack>
       </Modal>
     </>
   ));
@@ -282,7 +269,6 @@ export const StoryWithHiddenOverlay = () =>
 
     return (
       <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with hidden overlay</StorybookHeading>
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -293,21 +279,13 @@ export const StoryWithHiddenOverlay = () =>
         >
           Open Modal
         </Button>
-        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-        {/* <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>Another button to open the modal</Button>
-              )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
-            </>
-          ))}
-        </Box> */}
         <Modal
           open={isActive}
           onDismiss={close}
-          // header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
+          }}
+          header="Modal Title"
           hideOverlay
         >
           {modalContent}
@@ -355,23 +333,36 @@ export const StoryWithSelect = () =>
         aria-label="Default modal"
         open
         onDismiss={() => {}}
-        header={
-          <LinkStandalone href="www.test.com">Link button</LinkStandalone>
-        }
+        overrides={{
+          header: {typographyPreset: 'utilityLabel030'},
+        }}
+        header="Modal Title"
       >
-        <div>Choose a planet</div>
-        <Select
-          aria-describedby="id-2-at"
-          id="id-2"
-          size="medium"
-          useModal={{xs: true, sm: true}}
-        >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
-        </Select>
+        {/* {modalContent} */}
+        <Block>
+          <Label
+            htmlFor="id-1"
+            size="small"
+            overrides={{
+              typographyPreset: 'utilityLabel020',
+            }}
+          >
+            Label
+          </Label>
+          <Select
+            aria-describedby="id-2-at"
+            id="id-2"
+            size="medium"
+            useModal={{xs: true, sm: true}}
+          >
+            {items.map(item => (
+              <SelectOption key={item} value={item}>
+                {item}
+              </SelectOption>
+            ))}
+          </Select>
+          <AssistiveText>Assistive Text</AssistiveText>
+        </Block>
       </Modal>
     </>
   ));
@@ -384,7 +375,6 @@ export const StoryWithAriaAttributes = () =>
 
     return (
       <>
-        <StorybookHeading>Modal with aria attributes</StorybookHeading>
         <Button
           onClick={open}
           overrides={{
@@ -399,7 +389,10 @@ export const StoryWithAriaAttributes = () =>
           onDismiss={close}
           ariaLabelledby="modalHeader"
           ariaDescribedby="description purpose"
-          header={<div id="modalHeader">Overriden modal header</div>}
+          overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
+          }}
+          header="Modal Title"
         >
           {modalContent}
         </Modal>
@@ -415,10 +408,6 @@ export const StoryWithCustomAutofocus = () =>
 
     return (
       <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with custom auto-focus</StorybookHeading>
-        <StorybookParah>
-          Modal with autofocus using data-autofocus attribute
-        </StorybookParah>
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -434,23 +423,12 @@ export const StoryWithCustomAutofocus = () =>
           onDismiss={close}
           ariaLabelledby="modalHeader"
           ariaDescribedby="description purpose"
-          // header={<div id="modalHeader">Overriden modal header</div>}
+          overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
+          }}
+          header="Modal Title"
         >
-          {/* <Stack
-            flow="vertical-center"
-            stackDistribution="center"
-            spaceInline="space020"
-          >
-            <H1>You need an account</H1>
-            <StorybookParah>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam. (Double
-              click for more text :) )
-            </StorybookParah>
-            <Button>Register for a free account</Button>
-            <Button data-autofocus>Middle Button with focus</Button>
-            <Button>Something else</Button>
-          </Stack> */}
+          {modalContent}
         </Modal>
       </div>
     );
@@ -467,8 +445,6 @@ export const StoryWithCustomRestoreFocus = () =>
 
     return (
       <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with custom auto-focus</StorybookHeading>
-        <p>Modal with autofocus using data-autofocus attribute</p>
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -479,6 +455,8 @@ export const StoryWithCustomRestoreFocus = () =>
         >
           Open modal
         </Button>
+        <br />
+        <br />
         <Button
           id="test-button"
           overrides={{
@@ -486,29 +464,20 @@ export const StoryWithCustomRestoreFocus = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Button to restore focus to
+          Takes refocus
         </Button>
         <Modal
           open={isActive}
           onDismiss={close}
           ariaLabelledby="modalHeader"
           ariaDescribedby="description purpose"
-          // header={<div id="modalHeader">Overriden modal header</div>}
           restoreFocusTo={elementToRestoreFocusTo}
+          overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
+          }}
+          header="Modal Title"
         >
-          {/* <Stack
-            flow="vertical-center"
-            stackDistribution="center"
-            spaceInline="space020"
-          >
-            <H1>You need an account</H1>
-            <StorybookParah>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam. (Double
-              click for more text :) )
-            </StorybookParah>
-            <Button>Register for a free account</Button>
-          </Stack> */}
+          {modalContent}
         </Modal>
       </div>
     );
@@ -522,7 +491,6 @@ export const StoryWithDisabledFocusTrap = () =>
 
     return (
       <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with disabled focus trap</StorybookHeading>
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -533,21 +501,13 @@ export const StoryWithDisabledFocusTrap = () =>
         >
           Open Modal
         </Button>
-        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-        {/* <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>Another button to open the modal</Button>
-              )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
-            </>
-          ))}
-        </Box> */}
         <Modal
           open={isActive}
           onDismiss={close}
-          // header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
+          }}
+          header="Modal Title"
           disableFocusTrap
         >
           {modalContent}
@@ -564,7 +524,6 @@ export const StoryModelessModal = () =>
 
     return (
       <div data-testid="scrollable-modal">
-        <StorybookHeading>Modeless Modal</StorybookHeading>
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -575,21 +534,13 @@ export const StoryModelessModal = () =>
         >
           Open Modal
         </Button>
-        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-        {/* <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>Another button to open the modal</Button>
-              )}
-              <p key={i}>{scrollContent}</p>
-            </>
-          ))}
-        </Box> */}
         <Modal
           open={isActive}
           onDismiss={close}
-          // header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
+          }}
+          header="Modal Title"
           hideOverlay
           disableFocusTrap
         >
@@ -614,7 +565,6 @@ export const StoryModelessInlineModal = () =>
 
     return (
       <div data-testid="scrollable-modal">
-        <StorybookHeading>Modeless Inline Modal</StorybookHeading>
         <ModalWrapper>
           <Button
             onClick={open}
@@ -626,25 +576,13 @@ export const StoryModelessInlineModal = () =>
           >
             Open Modal
           </Button>
-          <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-
-          {/* <Box>
-            {Array.from({length: 5}, (_, i) => (
-              <>
-                {i === 3 && (
-                  <Button onClick={open}>
-                    Another button to open the modal
-                  </Button>
-                )}
-                <p key={i}>{scrollContent}</p>
-              </>
-            ))}
-          </Box> */}
-
           <Modal
             open={isActive}
             onDismiss={close}
-            // header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+            overrides={{
+              header: {typographyPreset: 'utilityLabel030'},
+            }}
+            header="Modal Title"
             hideOverlay
             disableFocusTrap
             inline
@@ -675,7 +613,6 @@ export const StoryNestedModals = () =>
 
     return (
       <div>
-        <StorybookHeading>Default Modal</StorybookHeading>
         <Button
           onClick={open}
           overrides={{
@@ -689,8 +626,12 @@ export const StoryNestedModals = () =>
           aria-label="Default Modal"
           open={isActive}
           onDismiss={close}
-          // header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
+          }}
+          header="Modal Title"
         >
+          {modalContent}
           <Stack
             flow="vertical-center"
             stackDistribution="center"
@@ -717,15 +658,6 @@ export const StoryNestedModals = () =>
                 stackDistribution="center"
                 spaceInline="space020"
               >
-                <div>Ta da! You opened a nested modal</div>
-                <div>Now select something from the list below</div>
-                <Select aria-describedby="id-2-at" id="id-2" size="medium">
-                  {items.map(item => (
-                    <SelectOption key={item} value={item}>
-                      {item}
-                    </SelectOption>
-                  ))}
-                </Select>
                 <Button
                   onClick={closeNested}
                   overrides={{
@@ -745,56 +677,12 @@ export const StoryNestedModals = () =>
 StoryNestedModals.storyName = 'Nested modals';
 StoryNestedModals.parameters = StoryModalDefault.parameters;
 
-// export const StoryOptionalHeaderClose = () =>
-//   React.createElement(() => {
-//     const [isActiveBoth, openBoth, closeBoth] = useActiveState();
-//     const [isActiveHeader, openHeader, closeHeader] = useActiveState();
-//     const [isActiveButton, openButton, closeButton] = useActiveState();
-
-//     return (
-//       <div>
-//         <StorybookHeading>
-//           Modal with optional header & close button
-//         </StorybookHeading>
-//         <Stack spaceInline="space030" flow="horizontal-center">
-//           <Button onClick={openBoth}>
-//             Open without header and close button
-//           </Button>
-//           <Button onClick={openHeader}>Open without header</Button>
-//           <Button onClick={openButton}>Open without close button</Button>
-//         </Stack>
-
-//         <Modal open={isActiveBoth} onDismiss={closeBoth} closePosition="none">
-//           {modalContent}
-//         </Modal>
-//         <Modal
-//           open={isActiveHeader}
-//           onDismiss={closeHeader}
-//           closePosition="right"
-//         >
-//           {modalContent}
-//         </Modal>
-//         <Modal
-//           open={isActiveButton}
-//           onDismiss={closeButton}
-//           header="This is a modal header. Content is passed as string. Should be a long one"
-//           closePosition="none"
-//         >
-//           {modalContent}
-//         </Modal>
-//       </div>
-//     );
-//   });
-// StoryOptionalHeaderClose.storyName = 'optional header & close';
-// StoryOptionalHeaderClose.parameters = StoryModalDefault.parameters;
-
 export const StoryLogicalProps = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();
 
     return (
       <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with logical props</StorybookHeading>
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -809,8 +697,9 @@ export const StoryLogicalProps = () =>
           aria-label="Default Modal"
           open={isActive}
           onDismiss={close}
-          // header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
+          header="Modal Title"
           overrides={{
+            header: {typographyPreset: 'utilityLabel030'},
             panel: {
               paddingInline: '15px',
               paddingBlock: '30px',
@@ -828,53 +717,50 @@ StoryLogicalProps.parameters = StoryModalDefault.parameters;
 export const StoryWithOverrides = () =>
   React.createElement(() => (
     <>
-      <StorybookHeading>Default with overrides</StorybookHeading>
-      <ThemeProvider theme={myCustomTheme}>
-        <Modal
-          aria-label="Default with overrides"
-          open
-          onDismiss={() => {}}
-          header={
-            <LinkStandalone href="www.test.com">Link button</LinkStandalone>
-          }
-          overrides={{
-            overlay: {
-              zIndex: 60,
-              stylePreset: 'overlayCustom',
+      <Modal
+        aria-label="Default with overrides"
+        open
+        onDismiss={() => {}}
+        header="Modal Title"
+        overrides={{
+          overlay: {
+            zIndex: 60,
+            stylePreset: 'overlayTintBase040',
+          },
+          panel: {
+            stylePreset: 'modalPanelCustom',
+            borderRadius: '{{borders.borderRadiusDefault}}',
+            zIndex: 70,
+            topOffset: '15vh',
+            width: '348px',
+            height: '249px',
+            minWidth: '20vw',
+            maxWidth: '80vw',
+            minHeight: '20vh',
+            maxHeight: {
+              xs: '90vh',
+              md: '85vh',
             },
-            panel: {
-              stylePreset: 'modalPanelCustom',
-              zIndex: 70,
-              topOffset: '15vh',
-              width: '600px',
-              height: '500px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
-            },
-            header: {
-              paddingInline: 'space000',
-              paddingBlock: 'space000',
-              stylePreset: 'modalHeaderCustom',
-            },
-            content: {
-              paddingInline: 'space060',
-              paddingBlock: 'space060',
-            },
-            closeButton: {
-              stylePreset: 'modalCloseButtonCustom',
-              paddingInline: 'space000',
-              paddingBlock: 'space000',
-            },
-          }}
-        >
-          {modalContent}
-        </Modal>
-      </ThemeProvider>
+          },
+          header: {
+            stylePreset: 'modalHeaderCustom',
+            typographyPreset: 'utilityLabel030',
+          },
+          content: {
+            paddingInline: 'space060',
+            paddingBlock: 'space060',
+            typographyPreset: 'inkBrand010',
+          },
+          closeButton: {
+            stylePreset: 'modalCloseButtonCustom',
+            paddingInline: 'space000',
+            paddingBlock: 'space000',
+            typographyPreset: 'inkBrand010',
+          },
+        }}
+      >
+        {modalContent}
+      </Modal>
     </>
   ));
 StoryWithOverrides.storyName = 'Styling overrides';
