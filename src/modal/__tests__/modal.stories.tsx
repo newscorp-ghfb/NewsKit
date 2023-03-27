@@ -14,9 +14,9 @@ import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const modalContent = (
-  <Stack>
+  <>
     <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
-  </Stack>
+  </>
 );
 
 const ModaleCustomThemeObject: CreateThemeArgs = {
@@ -98,12 +98,6 @@ export default {
   ],
 };
 
-// export default {
-//   title: 'Components/Modal',
-//   component: () => 'None',
-//   disabledRules: ['tabindex'], // Because of scenario 'open on page load'
-// };
-
 export const StoryModalDefault = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();
@@ -183,9 +177,6 @@ StoryOpenOnPageLoad.parameters = StoryModalDefault.parameters;
 export const StoryWithCloseButtonOnTheLeft = () =>
   React.createElement(() => (
     <>
-      <StorybookHeading>
-        Modal: header close button on the left
-      </StorybookHeading>
       <Modal
         aria-label="Modal: header close button on the left"
         open
