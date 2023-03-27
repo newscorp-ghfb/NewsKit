@@ -380,7 +380,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
             {
               name: 'onPageChange',
               type: '(number) => void',
-              default: 'void',
+              default: '',
               description:
                 'Action that occurs after a pagination item is clicked on to change page',
               required: false,
@@ -537,6 +537,17 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the min width of the pagination item',
             },
             {
+              attribute: 'iconSize',
+              type: 'MQ<string>',
+              default: [
+                'small - iconSize10',
+                'medium - iconSize20',
+                'large - iconSize20',
+              ],
+              description:
+                'If provided, this overrides the size of the truncation icon',
+            },
+            {
               attribute: 'icon',
               type: 'Override <NewskitIconProps>',
               default: 'IconFilledMoreHoriz',
@@ -646,6 +657,17 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
                 'If provided, this overrides the width of the pagination item',
             },
             {
+              attribute: 'iconSize',
+              type: 'MQ<string>',
+              default: [
+                'small - iconSize10',
+                'medium - iconSize20',
+                'large - iconSize20',
+              ],
+              description:
+                'If provided, this overrides the size of the respective navigation icon',
+            },
+            {
               attribute: 'icon',
               type: 'Override <NewskitIconProps>',
               default: [
@@ -685,7 +707,7 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
         {
           title: 'Pagination button',
           summary:
-            'The PaginationButton is default item button implememtation. It is based on the Button component, as that supports a lot of styling options. These props do not need to be supplied manually, they will be provided in the props of the itemButton function. Overrides passed into PaginationItems get turned into standard Button props before being passed into this component.',
+            'The PaginationButton is default item button implementation. It is based on the Button component, as that supports a lot of styling options. These props do not need to be supplied manually, they will be provided in the props of the itemButton function. Overrides passed into PaginationItems get turned into standard Button props before being passed into this component.',
           propsRows: [
             {
               name: 'children',
@@ -720,7 +742,8 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               name: 'lastPage',
               type: 'number',
               default: '',
-              description: 'The page number of the button to be rendered.',
+              description:
+                'The last page (calculated from totalPages and pageSize).',
               required: true,
             },
             {
@@ -813,17 +836,6 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               true,
             ) as OverridesRowsProps[]),
             {
-              attribute: 'iconSize',
-              type: 'MQ<string>',
-              default: [
-                'small - sizing050',
-                'medium - sizing060',
-                'large - sizing070',
-              ],
-              description:
-                'If provided, this overrides the icon size of the truncation item',
-            },
-            {
               attribute: 'width',
               type: 'MQ<string>',
               default: [
@@ -833,6 +845,17 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               ],
               description:
                 'If provided, this overrides the width of the truncation item',
+            },
+            {
+              attribute: 'iconSize',
+              type: 'MQ<string>',
+              default: [
+                'small - iconSize10',
+                'medium - iconSize20',
+                'large - iconSize20',
+              ],
+              description:
+                'If provided, this overrides the icon size of the truncation item',
             },
           ],
         },
@@ -872,7 +895,11 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
             {
               attribute: 'iconSize',
               type: 'MQ<string>',
-              default: 'iconSize010',
+              default: [
+                'small - iconSize10',
+                'medium - iconSize20',
+                'large - iconSize20',
+              ],
               description:
                 'If provided, this overrides the icon size of the pagination item display component',
             },

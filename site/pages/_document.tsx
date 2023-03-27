@@ -5,7 +5,6 @@ import Document, {Head, Main, NextScript, Html} from 'next/document';
 import {
   Global,
   css,
-  Consent,
   Tealium,
   compileTheme,
   newskitLightTheme,
@@ -22,13 +21,12 @@ const baseHref =
 
 const Base = () => <base href={baseHref} />;
 
+const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
 export default class MyDocument extends Document {
   render() {
     const isSiteEnvProduction = process.env.SITE_ENV === 'production';
 
     const helmet = Helmet.rewind();
-
-    const compiledNewskitLightTheme = compileTheme(newskitLightTheme);
 
     return (
       <Html lang="en">
@@ -36,16 +34,6 @@ export default class MyDocument extends Document {
           <Base />
           {helmet.script.toComponent()}
           <HTMLMeta />
-          {isSiteEnvProduction && (
-            <Consent
-              sourcePointConfigUnified={{
-                accountId: 259,
-                propertyHref: 'https://newskit.co.uk',
-                gdpr: {},
-              }}
-              reactHelmet={Helmet}
-            />
-          )}
         </Head>
         <body>
           <Global
@@ -278,6 +266,7 @@ export default class MyDocument extends Document {
               reactHelmet={Helmet}
             />
           )}
+
           <Main />
           <NextScript />
         </body>
