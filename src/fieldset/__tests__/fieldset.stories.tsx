@@ -25,16 +25,16 @@ const myCustomTheme: CreateThemeArgs = {
       },
       fieldsetCustom: {
         base: {
-          backgroundColor: '{{colors.amber020}}',
-          borderColor: '{{colors.amber070}}',
+          backgroundColor: '{{colors.interfaceInformative020}}',
+          borderColor: '{{colors.inkBrand010}}',
           borderWidth: '1px',
           borderStyle: 'solid',
         },
       },
       checkboxInputCustom: {
         base: {
-          backgroundColor: '{{colors.amber020}}',
-          borderColor: '{{colors.amber070}}',
+          backgroundColor: '{{colors.interfaceInformative020}}',
+          borderColor: '{{colors.inkBrand010}}',
           borderWidth: '{{borders.borderWidth020}}',
           borderRadius: '{{borders.borderRadiusRounded010}}',
           borderStyle: 'solid',
@@ -43,12 +43,12 @@ const myCustomTheme: CreateThemeArgs = {
       },
       checkboxLabelCustom: {
         base: {
-          color: '{{colors.amber070}}',
+          color: '{{colors.inkBrand010}}',
         },
       },
       assistiveTextCustom: {
         base: {
-          color: '{{colors.amber070}}',
+          color: '{{colors.inkBrand010}}',
         },
       },
     },
