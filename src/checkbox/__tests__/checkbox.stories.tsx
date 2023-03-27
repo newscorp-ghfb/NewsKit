@@ -40,7 +40,6 @@ const checkedHover = {
 
 const customStyle = {
   backgroundColor: '{{colors.inkBrand010}}',
-  iconColor: '{{colors.amber020}}',
   borderRadius: '4px',
   borderColor: '{{colors.inkBrand010}}',
 };
@@ -72,7 +71,6 @@ const customCheckbox = {
     borderWidth: '{{borders.borderWidth020}}',
     borderRadius: '{{borders.borderRadiusRounded010}}',
     borderStyle: 'solid',
-    iconColor: '{{colors.inkInverse}}',
   },
   'checked:hover': customStyle,
   'checked:focus': customStyle,
