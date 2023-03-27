@@ -522,7 +522,7 @@ export const StoryModelessModal = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modal
+          Open Modeless modal
         </Button>
         <Modal
           open={isActive}
