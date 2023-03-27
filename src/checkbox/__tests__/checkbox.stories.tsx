@@ -85,8 +85,8 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
         customOutlinePreset,
       ),
       customCheckbox: deepMerge(
-        // @ts-ignore
         {},
+        // @ts-ignore
         Checkbox.stylePresets.checkboxInput,
         customCheckbox,
       ),
