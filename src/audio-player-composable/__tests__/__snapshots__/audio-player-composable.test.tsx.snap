@@ -21,11 +21,12 @@ exports[`Audio Player Composable Playback Speed should close modal on X click 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -217,11 +218,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -662,7 +664,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
 }
 
 .emotion-5 {
@@ -723,6 +726,21 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
 .emotion-7:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-7:active:not(:disabled) {
@@ -880,7 +898,8 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -903,11 +922,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in modal
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1188,11 +1208,12 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1294,7 +1315,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 }
 
 .emotion-3 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   min-width: 140px;
@@ -1373,10 +1394,25 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 
 .emotion-4 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
+}
+
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-5 {
@@ -1455,6 +1491,21 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 .emotion-9:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-9:active:not(:disabled) {
@@ -1769,7 +1820,7 @@ exports[`Audio Player Composable Playback Speed should render correctly in popov
 exports[`Audio Player Composable Playback Speed should render correctly with custom trigger 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   min-width: 140px;
@@ -1848,10 +1899,25 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 
 .emotion-1 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2 {
@@ -1930,6 +1996,21 @@ exports[`Audio Player Composable Playback Speed should render correctly with cus
 .emotion-6:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-6:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-6:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-6:active:not(:disabled) {
@@ -2245,11 +2326,12 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2312,7 +2394,7 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 }
 
 .emotion-3 {
-  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
   border-radius: 8px;
   z-index: 80;
   min-width: 140px;
@@ -2391,10 +2473,25 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 
 .emotion-4 {
   margin: 0;
-  color: #262626;
+  color: #3B3B3B;
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
+}
+
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-5 {
@@ -2473,6 +2570,21 @@ exports[`Audio Player Composable Playback Speed should render correctly with ove
 .emotion-9:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-9:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-9:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-9:active:not(:disabled) {
@@ -2797,8 +2909,8 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-1 {
@@ -2824,11 +2936,12 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2984,7 +3097,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -3014,7 +3127,7 @@ exports[`Audio Player Composable VolumeControl renders horizontal expanded by de
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -3216,8 +3329,8 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-1 {
@@ -3243,11 +3356,12 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3449,7 +3563,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -3479,7 +3593,7 @@ exports[`Audio Player Composable VolumeControl renders horizontally with layout 
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -3681,8 +3795,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-1 {
@@ -3708,11 +3822,12 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3913,7 +4028,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -3943,7 +4058,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -4146,8 +4261,8 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-1 {
@@ -4173,11 +4288,12 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4379,7 +4495,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -4409,7 +4525,7 @@ exports[`Audio Player Composable VolumeControl should hover on volume control: w
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -4611,8 +4727,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-1 {
@@ -4638,11 +4754,12 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4844,7 +4961,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -4874,7 +4991,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -5076,8 +5193,8 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-1 {
@@ -5103,11 +5220,12 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5308,7 +5426,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -5338,7 +5456,7 @@ exports[`Audio Player Composable VolumeControl should on Focus & onBlur on volum
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:active:not(:disabled) svg {
@@ -5541,8 +5659,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-1 {
@@ -5568,11 +5686,12 @@ exports[`Audio Player Composable VolumeControl should render correctly with coll
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -5756,11 +5875,12 @@ exports[`Audio Player Composable VolumeControl should render correctly with over
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6078,8 +6198,8 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-1 {
@@ -6105,11 +6225,12 @@ exports[`Audio Player Composable VolumeControl should render correctly with vert
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6273,11 +6394,12 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6297,8 +6419,8 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
 }
 
 .emotion-0 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-0 svg {
@@ -6322,8 +6444,8 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
 }
 
 .emotion-1 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   stroke: #3358CC;
 }
 
@@ -6351,7 +6473,7 @@ exports[`Audio Player Composable renders with TimeDisplay label overrides 1`] = 
   display: block;
   background-color: #3358CC;
   font-family: "Poppins",sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
@@ -6470,7 +6592,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -6588,11 +6710,12 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6612,8 +6735,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-5 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-5 svg {
@@ -6625,7 +6748,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-5:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-5:disabled {
@@ -6700,7 +6823,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   background-color: transparent;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
@@ -6725,9 +6848,10 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6760,7 +6884,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-9:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-9:disabled {
@@ -6837,8 +6961,8 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-12 {
@@ -6864,11 +6988,12 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6974,7 +7099,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -7004,7 +7129,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-20:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-20:active:not(:disabled) svg {
@@ -7338,7 +7463,7 @@ exports[`Audio Player Composable seekBar should renders and behaves as expected 
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:active:not(:disabled) svg {
@@ -7599,11 +7724,12 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7623,8 +7749,8 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
 }
 
 .emotion-5 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-5 svg {
@@ -7648,8 +7774,8 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
 }
 
 .emotion-6 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   stroke: #3358CC;
 }
 
@@ -7678,7 +7804,7 @@ exports[`Audio Player Composable seekBar should renders with overrides 1`] = `
   background-color: transparent;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
@@ -7783,11 +7909,12 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7807,8 +7934,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-0 svg {
@@ -7832,8 +7959,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-1 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   stroke: #3358CC;
 }
 
@@ -7899,11 +8026,12 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -7923,8 +8051,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-0 svg {
@@ -7936,7 +8064,7 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-0:disabled {
@@ -8050,11 +8178,12 @@ exports[`Audio Player Composable should phasing playPause button loading state a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8074,8 +8203,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-0 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-0 svg {
@@ -8099,8 +8228,8 @@ exports[`Audio Player Composable should phasing playPause button loading state a
 }
 
 .emotion-1 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   stroke: #3358CC;
 }
 
@@ -8217,7 +8346,7 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -8335,11 +8464,12 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8359,8 +8489,8 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-5 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-5 svg {
@@ -8384,8 +8514,8 @@ exports[`Audio Player Composable should render correctly when in autoplay 1`] = 
 }
 
 .emotion-6 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   stroke: #3358CC;
 }
 
@@ -8552,7 +8682,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -8670,11 +8800,12 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8694,8 +8825,8 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-5 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-5 svg {
@@ -8719,8 +8850,8 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-6 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   stroke: #3358CC;
 }
 
@@ -8749,7 +8880,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   background-color: transparent;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
@@ -8774,9 +8905,10 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -8809,7 +8941,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-8:disabled {
@@ -8886,8 +9018,8 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-11 {
@@ -8913,11 +9045,12 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9048,7 +9181,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -9078,7 +9211,7 @@ exports[`Audio Player Composable should render with native audio attributes 1`] 
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-19:active:not(:disabled) svg {
@@ -9450,7 +9583,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-2:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-2:active:not(:disabled) svg {
@@ -9568,11 +9701,12 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px;
-  width: 64px;
-  min-width: 120px;
-  height: 64px;
-  min-height: 64px;
+  width: 48px;
+  min-width: 80px;
+  height: 48px;
+  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9592,8 +9726,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-5 svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-5 svg {
@@ -9617,8 +9751,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-6 {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   stroke: #3358CC;
 }
 
@@ -9647,7 +9781,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   background-color: transparent;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
@@ -9672,9 +9806,10 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   min-width: 80px;
   min-height: 48px;
+  padding-inline: 16px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9707,7 +9842,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-8:disabled {
@@ -9784,8 +9919,8 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-column-gap: 12px;
-  column-gap: 12px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-11 {
@@ -9811,11 +9946,12 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -9946,7 +10082,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
   box-shadow: 0 0 2px 0 rgba(10,10,10,0.08);
   background-color: #3358CC;
   border-style: solid;
-  border-color: #ECF1FF;
+  border-color: #FFFFFF;
   border-width: 1px;
   border-radius: 50%;
   height: 16px;
@@ -9976,7 +10112,7 @@ exports[`Audio Player Composable should render with no errors 1`] = `
 }
 
 .emotion-19:active:not(:disabled) {
-  background-color: #14328D;
+  background-color: #12387A;
 }
 
 .emotion-19:active:not(:disabled) svg {

@@ -40,12 +40,11 @@ const createPrompts = ({type, scope}) => {
           SEM_VER_COMMIT_TYPES[SEM_VER_COMMIT_TYPES.length - 1],
     },
     {
-      message: 'Enter the Jira ticket number for this commit',
+      message: 'Enter the github issue number for this commit',
       name: 'scope',
       transformer: input => input.toUpperCase(),
       type: 'input',
-      validate: input =>
-        SCOPE_REGEX.test(input.toUpperCase()) || 'e.g. PPDSC-1608',
+      validate: input => SCOPE_REGEX.test(input.toUpperCase()) || 'e.g. 1608',
       when: !scope,
     },
   ];
@@ -69,7 +68,7 @@ const createPrompts = ({type, scope}) => {
 
 const getBranchData = ({type, scope}) =>
   new Promise((resolve, reject) => {
-    const branchNameRegex = /^(?:(\w*)\/)?([a-z]{2,5}-\d{1,5})?/i;
+    const branchNameRegex = /^(?:(\w*)\/)?([a-z]{2,5}-\d{1,5}|\d{1,5})?/i;
     exec('git rev-parse --abbrev-ref HEAD', (err, stdout, stderr) => {
       if (stdout && typeof stdout === 'string') {
         const matches = stdout.trim().match(branchNameRegex);
@@ -102,6 +101,7 @@ if (msgFilePath) {
     )
     .then(({scope, type, ...parsed}) => {
       // remove any already defined type and scope info
+
       const message = parsed.raw
         .replace(type, '')
         .replace(`(${scope})`, '')

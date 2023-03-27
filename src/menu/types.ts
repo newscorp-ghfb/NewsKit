@@ -29,8 +29,7 @@ export interface MenuGroupProps extends React.AriaAttributes {
       typographyPreset?: MQ<string>;
       stylePreset?: MQ<string>;
       spaceInline?: MQ<string>;
-      spaceInset?: MQ<string>;
-    };
+    } & LogicalProps;
   };
 }
 

@@ -185,13 +185,13 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-7:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
@@ -321,7 +321,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/getting-started/design/design-overview/"
+                  href="/getting-started/design/design-overview"
                 >
                   <span
                     class="emotion-8"
@@ -363,7 +363,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/getting-started/code/engineering-overview/"
+                  href="/getting-started/code/engineering-overview"
                 >
                   <span
                     class="emotion-8"
@@ -405,7 +405,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/getting-started/code/instrumentation/"
+                  href="/getting-started/code/instrumentation"
                 >
                   <span
                     class="emotion-8"
@@ -460,7 +460,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/components/overview/"
+                  href="/components/overview"
                 >
                   <span
                     class="emotion-8"
@@ -502,7 +502,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/theme/overview/"
+                  href="/theme/overview"
                 >
                   <span
                     class="emotion-8"
@@ -544,7 +544,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/components/button/"
+                  href="/components/button"
                 >
                   <span
                     class="emotion-8"
@@ -599,7 +599,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/theme/presets/style-presets/"
+                  href="/theme/presets/style-presets"
                 >
                   <span
                     class="emotion-8"
@@ -641,7 +641,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/theme/presets/transition-presets/"
+                  href="/theme/presets/transition-presets"
                 >
                   <span
                     class="emotion-8"
@@ -683,7 +683,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/theme/presets/typography-presets/"
+                  href="/theme/presets/typography-presets"
                 >
                   <span
                     class="emotion-8"
@@ -738,7 +738,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/theme/foundation/design-tokens/"
+                  href="/theme/foundation/design-tokens"
                 >
                   <span
                     class="emotion-8"
@@ -780,7 +780,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/theme/foundation/colours/"
+                  href="/theme/foundation/colours"
                 >
                   <span
                     class="emotion-8"
@@ -822,7 +822,7 @@ exports[`Search renders correctly 1`] = `
               >
                 <a
                   class="emotion-7"
-                  href="/theme/foundation/fonts/"
+                  href="/theme/foundation/fonts"
                 >
                   <span
                     class="emotion-8"
@@ -918,11 +918,12 @@ exports[`Search renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 32px;
   min-width: 64px;
   height: 32px;
   min-height: 32px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1115,10 +1116,11 @@ exports[`Search renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   min-width: 130px;
   height: 40px;
   min-height: 32px;
+  padding-inline: 12px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1263,8 +1265,9 @@ exports[`Search renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 4px 8px;
   min-height: 24px;
+  padding-inline: 8px;
+  padding-block: 4px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1299,25 +1302,21 @@ exports[`Search renders correctly 1`] = `
   font-family: 'DM Mono',courier;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.4285714285714286;
-  padding: 1px 0px;
+  line-height: 21px;
+  padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-5::before {
   content: '';
+  margin-bottom: -0.391em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-bottom: -0.4267857142857143em;
 }
 
 .emotion-5::after {
   content: '';
+  margin-top: -0.409em;
   display: block;
-  height: 0;
-  width: 0;
-  margin-top: -0.3642857142857143em;
 }
 
 <div

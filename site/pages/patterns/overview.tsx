@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid} from 'newskit';
+import {Grid, ThemeProvider} from 'newskit';
 import {routes} from '../../routes';
 import Layout, {LayoutProps} from '../../components/layout';
 import {Item} from '../../components/sidebar/types';
@@ -16,17 +16,6 @@ import {
   ContentPrimary,
   ContentSection,
 } from '../../components/content-structure';
-import {ThemeProviderSite} from '../../components/theme-provider-site';
-
-const patternsRouteList: Item[] =
-  routes.filter(route => route.title === 'Patterns')[0].subNav || [];
-
-const patternsFormRouteList: Item[] =
-  patternsRouteList.filter(route => route.title === 'Forms')[0].subNav || [];
-
-const patternsOnboardingRouteList: Item[] =
-  patternsRouteList.filter(route => route.title === 'Onboarding')[0].subNav ||
-  [];
 
 const getPatternsCardList = (routeList: Item[]) =>
   routeList
@@ -41,11 +30,6 @@ const getPatternsCardList = (routeList: Item[]) =>
       description,
     })) as MediaItem[];
 
-const patternsIndexRouteListCards = getPatternsCardList(patternsFormRouteList);
-const patternsIndexOnboardingRouteListCards = getPatternsCardList(
-  patternsOnboardingRouteList,
-);
-
 const pageDescription = `Design patterns provide a framework for solving a particular user problem in a consistent, considered way.`;
 
 const HeaderImage = () => (
@@ -55,7 +39,8 @@ const HeaderImage = () => (
 const Overview = (layoutProps: LayoutProps) => (
   <Layout {...layoutProps} newPage>
     {({themeMode}) => (
-      <ThemeProviderSite
+      <ThemeProvider
+        exposeCssVariables
         theme={themeMode === 'light' ? patternsThemeLight : patternsThemeDark}
       >
         <HeadNextSeo
@@ -72,25 +57,25 @@ const Overview = (layoutProps: LayoutProps) => (
 
         <Grid lgMargin="sizing000" xsRowGutter="sizing000">
           <ComponentPageCell>
-            <ContentSection sectionName="onboarding">
-              <ContentPrimary headline="Onboarding">
-                <MediaList
-                  cards={patternsIndexOnboardingRouteListCards}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ContentPrimary>
-            </ContentSection>
-            <ContentSection sectionName="forms">
-              <ContentPrimary headline="Forms">
-                <MediaList
-                  cards={patternsIndexRouteListCards}
-                  gridProps={{xsRowGutter: 'space050'}}
-                />
-              </ContentPrimary>
-            </ContentSection>
+            {(routes as Item[])
+              .find(({title}) => title === 'Patterns')!
+              .subNav!.slice(1)
+              .map(({title, description, subNav}) => (
+                <ContentSection sectionName={title as string}>
+                  <ContentPrimary
+                    headline={title as string}
+                    description={description}
+                  >
+                    <MediaList
+                      cards={getPatternsCardList(subNav || [])}
+                      gridProps={{xsRowGutter: 'space050'}}
+                    />
+                  </ContentPrimary>
+                </ContentSection>
+              ))}
           </ComponentPageCell>
         </Grid>
-      </ThemeProviderSite>
+      </ThemeProvider>
     )}
   </Layout>
 );

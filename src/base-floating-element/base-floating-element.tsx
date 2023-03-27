@@ -45,6 +45,7 @@ export const BaseFloatingElement = React.forwardRef<
       disableFocusManagement = false,
       dismissOnBlur = false,
       boundary,
+      ...rest
     },
     ref,
   ) => {
@@ -54,11 +55,11 @@ export const BaseFloatingElement = React.forwardRef<
     });
 
     const theme = useTheme();
-    const distance = getOverridePxValue(
+    const offsetValue = getOverridePxValue(
       path,
       {theme, overrides},
-      'distance',
-      'distance',
+      'offset',
+      'offset',
     );
 
     const pointerPadding = getOverridePxValue(
@@ -69,9 +70,9 @@ export const BaseFloatingElement = React.forwardRef<
     );
 
     useEffect(() => {
-      showOverridePxWarnings(distance, 'distance');
+      showOverridePxWarnings(offsetValue, 'offset');
       showOverridePxWarnings(pointerPadding, 'pointer.edgeOffset');
-    }, [distance, pointerPadding]);
+    }, [offsetValue, pointerPadding]);
 
     const cssTransitionNodeRef = React.useRef(null);
     const panelRef = useRef<HTMLDivElement>(null);
@@ -98,7 +99,7 @@ export const BaseFloatingElement = React.forwardRef<
       },
       whileElementsMounted: autoUpdate,
       middleware: [
-        ...(distance ? [offset(distance)] : []),
+        ...(offsetValue ? [offset(offsetValue)] : []),
         ...(fallbackBehaviour.includes('flip')
           ? [flip({boundary})]
           : /* istanbul ignore next */ []),
@@ -226,6 +227,7 @@ export const BaseFloatingElement = React.forwardRef<
               role={role}
               {...floatingElAriaAttributes}
               path={path}
+              {...rest}
             >
               <StyledPanel
                 tabIndex={-1}

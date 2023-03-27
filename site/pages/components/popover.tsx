@@ -1,6 +1,7 @@
 import React from 'react';
 import {InlineMessage, UnorderedList, toNewsKitIcon} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
+import {getLogicalPropsTable} from '../../components/component-api/common-logical-props';
 import {InlineCode} from '../../components/markdown-elements';
 import {Link} from '../../components/link';
 import {UsageKind} from '../../components/usage-card';
@@ -42,6 +43,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v5.6.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/popover',
+      storybookId: 'components-popover--story-popover-default',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=7296%3A137983',
     }}
@@ -115,12 +117,10 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
           media: getIllustrationComponent('components/popover/options/pointer'),
         },
         {
-          title: 'Distance',
+          title: 'Offset',
           description:
             'Change the space between the popover and the element with spacing tokens via overrides. By default, there’s 8px of space between the popover and the element, measured from the tip of the pointer or the near edge of the popover if no pointer is visible.',
-          media: getIllustrationComponent(
-            'components/popover/options/distance',
-          ),
+          media: getIllustrationComponent('components/popover/options/offset'),
         },
         {
           title: 'Close position',
@@ -612,11 +612,11 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               description: 'Overrides the zIndex of the popover.',
             },
             {
-              attribute: 'distance',
+              attribute: 'offset',
               type: 'MQ<string>',
               default: 'space050',
               description:
-                'Overrides the distance between the popover and the item it’s attributed to',
+                'Overrides the offset between the popover and the item it’s attributed to',
             },
             {
               attribute: 'stylePreset',
@@ -651,38 +651,10 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               description:
                 'Overrides the typographyPreset applied to the popover header.',
             },
-            {
-              attribute: 'header.paddingBlock',
-              type: 'MQ<string>',
-              default: 'space040',
-              description: '',
-            },
-            {
-              attribute: 'header.paddingInline',
-              type: 'MQ<string>',
-              default: 'space050',
-              description: '',
-            },
-            {
-              attribute: 'header.paddingBlockStart',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'header.paddingBlockEnd',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'header.paddingInlineStart',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'header.paddingInlineEnd',
-              type: 'MQ<string>',
-              description: '',
-            },
+            ...getLogicalPropsTable(undefined, 'header', {
+              paddingBlock: 'space040',
+              paddingInline: 'space050',
+            }),
             {
               attribute: 'content.stylePreset',
               type: 'MQ<string>',
@@ -693,36 +665,10 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
               type: 'MQ<string>',
               description: '',
             },
-            {
-              attribute: 'content.paddingBlock',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'content.paddingInline',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'content.paddingBlockStart',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'content.paddingBlockEnd',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'content.paddingInlineStart',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'content.paddingInlineEnd',
-              type: 'MQ<string>',
-              description: '',
-            },
+            ...getLogicalPropsTable(undefined, 'content', {
+              paddingBlock: 'space050',
+              paddingInline: 'space050',
+            }),
             {
               attribute: 'closeButton.stylePreset',
               type: 'MQ<string>',
@@ -731,43 +677,12 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
                 'Overrides the stylePreset applied to the popover close Icon Button.',
             },
             {
-              attribute: 'closeButtonContainer.stylePreset',
+              attribute: 'closeButton.stylePreset',
               type: 'MQ<string>',
               default: 'popoverCloseButtonContainer',
               description: '',
             },
-            {
-              attribute: 'closeButtonContainer.paddingBlock',
-              type: 'MQ<string>',
-              default: 'space020',
-              description: '',
-            },
-            {
-              attribute: 'closeButtonContainer.paddingInline',
-              type: 'MQ<string>',
-              default: 'space020',
-              description: '',
-            },
-            {
-              attribute: 'closeButtonContainer.paddingBlockStart',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'closeButtonContainer.paddingBlockEnd',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'closeButtonContainer.paddingInlineStart',
-              type: 'MQ<string>',
-              description: '',
-            },
-            {
-              attribute: 'closeButtonContainer.paddingInlineEnd',
-              type: 'MQ<string>',
-              description: '',
-            },
+            ...getLogicalPropsTable(undefined, 'closeButton', {}),
             {
               attribute: 'pointer.size',
               type: 'MQ<string>',

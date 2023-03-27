@@ -91,7 +91,8 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 
 .emotion-5 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 a:not(.nk-card-link) {
@@ -267,13 +268,13 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-12:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -398,7 +399,7 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
             class="emotion-6"
           >
             <section
-              class="emotion-7"
+              class="nk-card-headline emotion-7"
             >
               <h1
                 class="nk-headline-heading emotion-8"
@@ -565,25 +566,29 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -767,13 +772,13 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
 }
 
 .emotion-12:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-12:active:not(:disabled) svg {
-  fill: #14328D;
+  fill: #12387A;
 }
 
 .emotion-12:focus-visible:not(:disabled) {
@@ -901,7 +906,7 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
               class="emotion-7"
             >
               <section
-                class="emotion-8"
+                class="nk-card-headline emotion-8"
               >
                 <h1
                   class="nk-headline-heading emotion-9"
@@ -1060,7 +1065,8 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 .emotion-5 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 a:not(.nk-card-link) {
@@ -1367,7 +1373,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
             class="emotion-6"
           >
             <section
-              class="emotion-7"
+              class="nk-card-headline emotion-7"
             >
               <h1
                 class="nk-headline-heading emotion-8"
@@ -1534,25 +1540,29 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -1870,7 +1880,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
               class="emotion-7"
             >
               <section
-                class="emotion-8"
+                class="nk-card-headline emotion-8"
               >
                 <h1
                   class="nk-headline-heading emotion-9"
@@ -2074,7 +2084,8 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
 
 .emotion-7 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -2428,25 +2439,29 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
 
 @media screen and (max-width: 479px) {
   .emotion-24 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-24 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-24 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-24 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -2508,7 +2523,7 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
                 class="emotion-8"
               >
                 <section
-                  class="emotion-9"
+                  class="nk-card-headline emotion-9"
                 >
                   <h1
                     class="nk-headline-heading emotion-10"
@@ -2593,7 +2608,7 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
                   class="emotion-8"
                 >
                   <section
-                    class="emotion-9"
+                    class="nk-card-headline emotion-9"
                   >
                     <h1
                       class="nk-headline-heading emotion-10"
@@ -2790,7 +2805,8 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
 
 .emotion-7 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -3023,25 +3039,29 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
 
 @media screen and (max-width: 479px) {
   .emotion-18 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-18 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-18 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-18 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -3103,7 +3123,7 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
                 class="emotion-8"
               >
                 <section
-                  class="emotion-9"
+                  class="nk-card-headline emotion-9"
                 >
                   <h1
                     class="nk-headline-heading emotion-10"
@@ -3151,7 +3171,7 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
                   class="emotion-8"
                 >
                   <section
-                    class="emotion-9"
+                    class="nk-card-headline emotion-9"
                   >
                     <h1
                       class="nk-headline-heading emotion-10"
@@ -3249,7 +3269,8 @@ exports[`FeatureCard Renders interactive vertical card with link 1`] = `
 
 .emotion-4 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 a:not(.nk-card-link) {
@@ -3520,7 +3541,7 @@ exports[`FeatureCard Renders interactive vertical card with link 1`] = `
               class="emotion-5"
             >
               <section
-                class="emotion-6"
+                class="nk-card-headline emotion-6"
               >
                 <h3
                   class="nk-headline-heading emotion-7"
@@ -3649,7 +3670,8 @@ exports[`FeatureCard Renders interactive vertical card without link 1`] = `
 
 .emotion-4 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 a:not(.nk-card-link) {
@@ -3803,7 +3825,7 @@ exports[`FeatureCard Renders interactive vertical card without link 1`] = `
               class="emotion-5"
             >
               <section
-                class="emotion-6"
+                class="nk-card-headline emotion-6"
               >
                 <h3
                   class="nk-headline-heading emotion-7"
@@ -3920,7 +3942,8 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 .emotion-5 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 a:not(.nk-card-link) {
@@ -4077,7 +4100,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
             class="emotion-6"
           >
             <section
-              class="emotion-7"
+              class="nk-card-headline emotion-7"
             >
               <h1
                 class="nk-headline-heading emotion-8"
@@ -4198,25 +4221,29 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-5 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-5 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -4388,7 +4415,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
               class="emotion-7"
             >
               <section
-                class="emotion-8"
+                class="nk-card-headline emotion-8"
               >
                 <h1
                   class="nk-headline-heading emotion-9"
@@ -4439,7 +4466,8 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -4586,7 +4614,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
           class="emotion-3"
         >
           <section
-            class="emotion-4"
+            class="nk-card-headline emotion-4"
           >
             <h3
               class="nk-headline-heading emotion-5"
@@ -4746,7 +4774,8 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 
 .emotion-7 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -4926,25 +4955,29 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
 
 @media screen and (max-width: 479px) {
   .emotion-18 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .emotion-18 {
-    padding: 16px;
+    padding-inline: 16px;
+    padding-block: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-18 {
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-18 {
-    padding: 32px;
+    padding-inline: 32px;
+    padding-block: 32px;
   }
 }
 
@@ -5006,7 +5039,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
                 class="emotion-8"
               >
                 <section
-                  class="emotion-9"
+                  class="nk-card-headline emotion-9"
                 >
                   <h1
                     class="nk-headline-heading emotion-10"
@@ -5054,7 +5087,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
                   class="emotion-8"
                 >
                   <section
-                    class="emotion-9"
+                    class="nk-card-headline emotion-9"
                   >
                     <h1
                       class="nk-headline-heading emotion-10"
@@ -5107,7 +5140,8 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -5400,7 +5434,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
           class="emotion-3"
         >
           <section
-            class="emotion-4"
+            class="nk-card-headline emotion-4"
           >
             <h3
               class="nk-headline-heading emotion-5"

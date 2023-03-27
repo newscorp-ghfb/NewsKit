@@ -1,9 +1,10 @@
 import {StylePreset} from '../theme';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
   popover: {
     base: {
-      boxShadow: '{{shadows.shadow050}}',
+      boxShadow: '{{shadows.shadow060}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
     },
   },
@@ -14,21 +15,25 @@ export default {
   },
   popoverPanel: {
     base: {
-      color: '{{colors.neutral090}}',
+      color: '{{colors.inkBase}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
       backgroundColor: '{{colors.interface010}}',
+    },
+    'focus-visible': {
+      ...defaultFocusVisible,
+      outlineOffset: '{{outlines.outlineWidth000}}',
     },
   },
   popoverHeader: {
     base: {
-      borderColor: '{{colors.neutral040}}',
+      borderColor: '{{colors.interface050}}',
       borderStyle: 'none none solid none',
       borderWidth: '{{borders.borderWidth010}}',
     },
   },
   popoverCloseButtonContainer: {
     base: {
-      borderColor: '{{colors.neutral040}}',
+      borderColor: '{{colors.interface050}}',
       borderStyle: 'none none solid none',
       borderWidth: '{{borders.borderWidth010}}',
     },

@@ -45,7 +45,6 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
@@ -89,9 +88,24 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -142,6 +156,7 @@ exports[`BreadcrumbItem renders selected menu item with aria attributes 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -225,7 +240,6 @@ exports[`BreadcrumbItem renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
@@ -267,9 +281,24 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -301,9 +330,24 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -330,6 +374,7 @@ exports[`BreadcrumbItem renders with default props 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -401,12 +446,11 @@ exports[`BreadcrumbItem renders with overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px;
   width: auto;
   min-width: 10px;
   min-height: 11px;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 12px;
+  padding-block: 12px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -468,6 +512,7 @@ exports[`BreadcrumbItem renders with overrides 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -539,7 +584,6 @@ exports[`Breadcrumbs renders in large size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   width: auto;
   min-width: 120px;
   min-height: 64px;
@@ -581,9 +625,24 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -615,9 +674,24 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -692,6 +766,7 @@ exports[`Breadcrumbs renders in large size 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
@@ -836,7 +911,6 @@ exports[`Breadcrumbs renders in medium size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
@@ -878,9 +952,24 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -912,9 +1001,24 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -989,6 +1093,7 @@ exports[`Breadcrumbs renders in medium size 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
@@ -1133,7 +1238,6 @@ exports[`Breadcrumbs renders in small size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px 12px;
   width: auto;
   min-width: 64px;
   min-height: 32px;
@@ -1175,9 +1279,24 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1209,9 +1328,24 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -1286,6 +1420,7 @@ exports[`Breadcrumbs renders in small size 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
     href="http://"
@@ -1430,7 +1565,6 @@ exports[`Breadcrumbs renders with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
@@ -1472,9 +1606,24 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1506,9 +1655,24 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -1583,6 +1747,7 @@ exports[`Breadcrumbs renders with default props 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -1731,7 +1896,6 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
@@ -1773,9 +1937,24 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1807,9 +1986,24 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -1884,6 +2078,7 @@ exports[`Breadcrumbs renders with logical prop overrides 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2027,7 +2222,6 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
@@ -2069,9 +2263,24 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2103,9 +2312,24 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -2180,6 +2404,7 @@ exports[`Breadcrumbs renders with separator icon as overrides 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2323,7 +2548,6 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
@@ -2365,9 +2589,24 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2399,9 +2638,24 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -2432,6 +2686,7 @@ exports[`Breadcrumbs renders with separator overrides with TextBlock component 1
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >
@@ -2553,7 +2808,6 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 12px 16px;
   width: auto;
   min-width: 80px;
   min-height: 48px;
@@ -2595,9 +2849,24 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2629,9 +2898,24 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 .emotion-3:active:not(:disabled) {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4 {
@@ -2706,6 +2990,7 @@ exports[`Breadcrumbs renders with showTrailingSeparator 1`] = `
 }
 
 <nav
+    aria-label="breadcrumbs"
     class="emotion-0"
     data-testid="breadcrumb-container"
   >

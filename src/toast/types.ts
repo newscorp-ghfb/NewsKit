@@ -31,10 +31,6 @@ export type ToastAsFunction = (props: {
 
 export interface ToastOverrides extends LogicalProps {
   stylePreset?: MQ<string>;
-  /**
-   * @deprecated This property is deprecated and will be removed in the next major release. Use `PaddingInline` & `PaddingBlock` instead.
-   */
-  spaceInset?: MQ<string>;
   minHeight?: MQ<string>;
   maxWidth?: MQ<string>;
   minWidth?: MQ<string>;

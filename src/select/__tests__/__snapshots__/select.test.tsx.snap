@@ -73,7 +73,8 @@ exports[`Select force select to controlled tate 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -83,7 +84,7 @@ exports[`Select force select to controlled tate 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -382,7 +383,8 @@ exports[`Select icon component overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -392,7 +394,7 @@ exports[`Select icon component overrides 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -612,7 +614,8 @@ exports[`Select icon size overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -622,7 +625,7 @@ exports[`Select icon size overrides 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -887,7 +890,8 @@ exports[`Select icon theme size overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -897,7 +901,7 @@ exports[`Select icon theme size overrides 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -1162,7 +1166,8 @@ exports[`Select in Modal render Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -1172,7 +1177,7 @@ exports[`Select in Modal render Select 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -1579,7 +1584,8 @@ exports[`Select in Modal render Select 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -1632,8 +1638,9 @@ exports[`Select in Modal render Select 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 8px;
+  min-height: 40px;
 }
 
 .emotion-7 * {
@@ -1649,6 +1656,21 @@ exports[`Select in Modal render Select 1`] = `
 .emotion-7:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-7:active:not(:disabled) {
@@ -1688,7 +1710,8 @@ exports[`Select in Modal render Select 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -1711,11 +1734,12 @@ exports[`Select in Modal render Select 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2072,7 +2096,8 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -2082,7 +2107,7 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -2497,20 +2522,22 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 24px;
   color: #3B3B3B;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-5 {
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-6 {
@@ -2563,8 +2590,9 @@ exports[`Select in Modal render Select with overrides props 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 8px;
+  min-height: 40px;
 }
 
 .emotion-8 * {
@@ -2580,6 +2608,21 @@ exports[`Select in Modal render Select with overrides props 1`] = `
 .emotion-8:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-8:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-8:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-8:active:not(:disabled) {
@@ -2847,7 +2890,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -2857,7 +2901,7 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -3254,7 +3298,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-5 {
@@ -3307,8 +3352,9 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 8px;
+  min-height: 40px;
 }
 
 .emotion-7 * {
@@ -3324,6 +3370,21 @@ exports[`Select in Modal render Select with overrides style 1`] = `
 .emotion-7:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-7:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-7:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-7:active:not(:disabled) {
@@ -3363,7 +3424,8 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-left: 0;
 }
 
@@ -3386,11 +3448,12 @@ exports[`Select in Modal render Select with overrides style 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8px;
   width: 48px;
   min-width: 80px;
   height: 48px;
   min-height: 48px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3757,7 +3820,8 @@ exports[`Select open and scroll 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-5 {
@@ -3767,7 +3831,7 @@ exports[`Select open and scroll 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -4041,7 +4105,8 @@ exports[`Select renders Select with labelId prop 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -4051,7 +4116,7 @@ exports[`Select renders Select with labelId prop 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -4190,8 +4255,7 @@ exports[`Select renders Select with labelId prop 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4353,7 +4417,7 @@ exports[`Select renders Select with logical props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
   padding-block: 20px;
 }
 
@@ -4364,7 +4428,7 @@ exports[`Select renders Select with logical props 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -4582,7 +4646,8 @@ exports[`Select renders Select with overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -4591,7 +4656,7 @@ exports[`Select renders Select with overrides 1`] = `
   white-space: nowrap;
   text-overflow: ellipsis;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -4613,7 +4678,8 @@ exports[`Select renders Select with overrides 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-4 * {
@@ -4765,8 +4831,7 @@ exports[`Select renders Select with overrides 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -4926,7 +4991,8 @@ exports[`Select renders Select with zIndex overrides 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -4936,7 +5002,7 @@ exports[`Select renders Select with zIndex overrides 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -5041,8 +5107,7 @@ exports[`Select renders Select with zIndex overrides 1`] = `
   outline: none;
   z-index: 20;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5295,7 +5360,8 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-4 {
@@ -5305,7 +5371,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -5510,8 +5576,7 @@ exports[`Select renders Select, AssistiveText and Label 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -5671,7 +5736,8 @@ exports[`Select renders SelectOption with logical props 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -5681,7 +5747,7 @@ exports[`Select renders SelectOption with logical props 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -5911,7 +5977,8 @@ exports[`Select renders disabled select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: not-allowed;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -5921,7 +5988,7 @@ exports[`Select renders disabled select 1`] = `
   text-overflow: ellipsis;
   color: inherit;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -6063,8 +6130,7 @@ exports[`Select renders disabled select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6224,7 +6290,8 @@ exports[`Select renders large Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 12px;
+  padding-inline: 16px;
+  padding-block: 16px;
 }
 
 .emotion-3 {
@@ -6373,8 +6440,7 @@ exports[`Select renders large Select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6534,7 +6600,8 @@ exports[`Select renders loading select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: wait;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -6544,7 +6611,7 @@ exports[`Select renders loading select 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -6662,8 +6729,7 @@ exports[`Select renders loading select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -6823,7 +6889,8 @@ exports[`Select renders medium Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -6833,7 +6900,7 @@ exports[`Select renders medium Select 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -6972,8 +7039,7 @@ exports[`Select renders medium Select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7133,7 +7199,8 @@ exports[`Select renders select with a pre selected option 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -7143,7 +7210,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -7316,8 +7383,7 @@ exports[`Select renders select with a pre selected option 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7477,7 +7543,8 @@ exports[`Select renders select with a selected option 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -7487,7 +7554,7 @@ exports[`Select renders select with a selected option 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -7660,8 +7727,7 @@ exports[`Select renders select with a selected option 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -7866,7 +7932,8 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-6 {
@@ -7876,7 +7943,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -8028,8 +8095,7 @@ exports[`Select renders select with leading and trailing icon 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -8189,7 +8255,8 @@ exports[`Select renders select with non-string options 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -8199,7 +8266,7 @@ exports[`Select renders select with non-string options 1`] = `
   text-overflow: ellipsis;
   color: #3B3B3B;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -8374,8 +8441,7 @@ exports[`Select renders select with non-string options 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -8419,7 +8485,7 @@ exports[`Select renders small Select 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  min-height: 32px;
+  min-height: 40px;
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
@@ -8535,7 +8601,8 @@ exports[`Select renders small Select 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 8px;
+  padding-block: 8px;
 }
 
 .emotion-3 {
@@ -8684,8 +8751,7 @@ exports[`Select renders small Select 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -8845,7 +8911,8 @@ exports[`Select should render custom placeholder 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -8855,7 +8922,7 @@ exports[`Select should render custom placeholder 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -8994,8 +9061,7 @@ exports[`Select should render custom placeholder 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: none;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -9155,7 +9221,8 @@ exports[`Select virtualize long list 1`] = `
   justify-content: space-between;
   overflow: hidden;
   cursor: pointer;
-  padding: 8px;
+  padding-inline: 12px;
+  padding-block: 12px;
 }
 
 .emotion-3 {
@@ -9165,7 +9232,7 @@ exports[`Select virtualize long list 1`] = `
   text-overflow: ellipsis;
   color: #6A6A6A;
   font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
@@ -9317,8 +9384,7 @@ exports[`Select virtualize long list 1`] = `
   box-sizing: border-box;
   outline: none;
   margin-top: 4px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
   display: block;
   background-color: #FFFFFF;
   border-radius: 4px;
@@ -9356,8 +9422,9 @@ exports[`Select virtualize long list 1`] = `
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 8px;
-  min-height: 48px;
+  padding-inline: 12px;
+  padding-block: 8px;
+  min-height: 40px;
 }
 
 .emotion-2 * {
@@ -9373,6 +9440,21 @@ exports[`Select virtualize long list 1`] = `
 .emotion-2:focus:not(:disabled) {
   background-color: #F1F1F1;
   border-color: #3358CC;
+}
+
+.emotion-2:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-2:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-2:active:not(:disabled) {

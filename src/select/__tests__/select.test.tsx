@@ -439,7 +439,11 @@ describe('Select', () => {
       children: [
         <SelectOption
           defaultSelected
-          overrides={{spaceInset: 'space050', spaceInline: 'space020'}}
+          overrides={{
+            paddingBlock: 'space050',
+            paddingInline: 'space050',
+            spaceInline: 'space020',
+          }}
           selectedIcon="TEST"
           value="option 1"
           key="1"

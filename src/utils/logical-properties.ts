@@ -99,7 +99,7 @@ const generateLogicalProps = (
     overridesPath,
   ) as CSSObject;
 
-  return deepMerge(inlineStart, inlineEnd, inline, blockStart, blockEnd, block);
+  return deepMerge(inline, inlineStart, inlineEnd, block, blockStart, blockEnd);
 };
 
 export const logicalMargins = (

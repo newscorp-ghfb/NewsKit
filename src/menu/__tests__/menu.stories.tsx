@@ -1,25 +1,24 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable no-param-reassign */
-import React, {useState} from 'react';
+import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {
-  StorybookHeading,
-  StorybookSubHeading,
-  StorybookSpan,
-} from '../../test/storybook-comps';
-import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {
-  IconFilledAddCircleOutline,
-  IconFilledClose,
-  IconFilledInfo,
-} from '../../icons';
-import {Menu, MenuItem, MenuSub, MenuGroup, MenuDivider} from '..';
-import {styled, getColorCssFromTheme, useMediaQueryObject} from '../../utils';
+  Menu as M,
+  MenuDivider,
+  MenuGroup,
+  MenuItem as MI,
+  MenuProps as MP,
+  MenuSub,
+} from '..';
 import {getSSRId} from '../../utils/get-ssr-id';
+import {MenuGroupProps, MenuItemProps} from '../types';
+import {TextBlock} from '../../text-block';
+import {Block} from '../../block';
+import {IconFilledAddCircle, IconFilledInfo} from '../../icons';
+import {getColorCssFromTheme, styled, useMediaQueryObject} from '../../utils';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {InlineMessage} from '../../inline-message';
-
-// eslint-disable-next-line no-script-url
-const href = 'javascript:;';
 
 const menuCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-menu-theme',
@@ -41,61 +40,39 @@ const menuCustomThemeObject: CreateThemeArgs = {
       },
     },
     stylePresets: {
-      menuItemCustom: {
-        base: {
-          backgroundColor: '#ffe66b',
-          borderStyle: 'solid',
-          borderColor: '#222222',
-          borderWidth: '8px 0px 0px 0px',
-          color: '#222222',
-          iconColor: 'grey',
-        },
-      },
-      dividerPrimary: {
+      menuItemWithCloseButton: {
         base: {
           backgroundColor: '{{colors.transparent}}',
           borderStyle: 'solid',
-          borderColor: '{{colors.interactivePrimary030}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBrand010}}',
-          iconColor: '{{colors.inkBrand010}}',
+          borderColor: '{{colors.transparent}}',
+          borderWidth:
+            '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
+          color: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkSubtle}}',
         },
       },
-      menuGroupCustom: {
+      menuItemCloseIcon: {
         base: {
-          backgroundColor: '#2f1e9f',
+          backgroundColor: '{{colors.transparent}}',
           borderStyle: 'solid',
-          borderColor: '#8074eb',
-          borderWidth: '4px 4px 0px 4px',
-          color: '#dfd3d3',
-          iconColor: 'grey',
-          borderRadius: '10px 10px 0 0',
+          borderColor: '{{colors.interactiveSecondary030}}',
+          borderWidth: '{{borders.borderWidth020}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.inkSubtle}}',
+          iconColor: '{{colors.inkSubtle}}',
         },
         hover: {
-          backgroundColor: '#d8335c',
+          backgroundColor: '{{colors.interactiveSecondary010}}',
+          borderColor: '{{colors.interactiveSecondary040}}',
         },
       },
-      menuItemTwoCustom: {
+      menuItemCustomColourAndStyle: {
         base: {
-          backgroundColor: 'transparent',
-          color: 'inherit',
-        },
-      },
-      menuItemClose: {
-        base: {
-          backgroundColor: 'transparent',
+          backgroundColor: '{{colors.amber020}}',
+          color: '{{colors.teal070}}',
           borderStyle: 'solid',
-          borderColor: 'white',
-          borderWidth: '1px',
-          borderRadius: '50%',
-        },
-        focus: {
-          backgroundColor: 'rgba(0,0,0,0.3)',
-        },
-        hover: {
-          backgroundColor: 'rgba(0,0,0,0.3)',
-          iconColor: 'white',
+          borderColor: '{{colors.teal070}}',
+          borderWidth: '2px 0px 0px 0px',
         },
       },
       menuItemCustomTransition: {
@@ -120,1595 +97,557 @@ const menuCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkContrast}}',
         },
       },
-      menuItemVerticalTransition: {
+      customMenuGroup: {
         base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.transparent}}',
-          borderWidth:
-            '{{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
-          color: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkSubtle}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.amber020}}',
-          color: '{{colors.inkBrand010}}',
-          iconColor: '{{colors.inkBrand010}}',
-        },
-      },
-      customOutlineColor: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.transparent}}',
-          borderWidth:
-            '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
-          color: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkSubtle}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineStyle: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.transparent}}',
-          borderWidth:
-            '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
-          color: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkSubtle}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineWidth: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.transparent}}',
-          borderWidth:
-            '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
-          color: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkSubtle}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineOffset: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.transparent}}',
-          borderWidth:
-            '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth020}} {{borders.borderWidth000}}',
-          color: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkSubtle}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '5px',
+          color: '{{colors.inkContrast}}',
         },
       },
     },
   },
 };
 
-const MenuGroupTitle = () => (
-  <>
-    <IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} />
-    <StorybookSpan> Menu Group Title Custom Component </StorybookSpan>
-    <IconFilledAddCircleOutline overrides={{size: 'iconSize010'}} />
-  </>
+const href = (undefined as unknown) as string;
+
+type MenuProps = Omit<MP, 'aria-label'>;
+
+const Menu = (props: MenuProps) => (
+  <M {...props} aria-label={`Menu ${getSSRId()}`} />
 );
 
-export const StoryMenuItemsHorizontal = () => (
-  <>
-    <StorybookHeading>Menu items - horizontal</StorybookHeading>
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuItem href={href}>Menu item 4</MenuItem>
-      <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuItem href={href}>Menu item 6</MenuItem>
-    </Menu>
-  </>
+const MenuItem = (props: Omit<MenuItemProps, 'href'>) => (
+  <MI {...props} href={href} />
 );
-StoryMenuItemsHorizontal.storyName = 'menu items - horizontal';
 
-export const StoryMenuItemsVertical = () => (
-  <>
-    <StorybookHeading>Menu items - vertical</StorybookHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuItem href={href}>Menu item 4</MenuItem>
-      <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuItem href={href}>Menu item 6</MenuItem>
-    </Menu>
-  </>
-);
-StoryMenuItemsVertical.storyName = 'menu items - vertical';
-
-export const StoryMenuItemsStates = () => (
-  <>
-    <StorybookHeading>Menu items - states</StorybookHeading>
-    <StorybookSubHeading>Menu items horizontal</StorybookSubHeading>
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href} selected>
-        Menu item 2
-      </MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuItem href={href} disabled>
-        Menu item 4
-      </MenuItem>
-      <MenuItem href={href}>Menu item 5</MenuItem>
-    </Menu>
-    <br />
-    <br />
-    <StorybookSubHeading>Menu items vertical</StorybookSubHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href} selected>
-        Menu item 2
-      </MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuItem href={href} disabled>
-        Menu item 4
-      </MenuItem>
-    </Menu>
-  </>
-);
-StoryMenuItemsStates.storyName = 'menu items - states';
-
-export const StoryMenuItemsSizes = () => (
-  <>
-    <StorybookHeading>Menu items in different sizes</StorybookHeading>
-    <StorybookSubHeading>Small menu items</StorybookSubHeading>
-    <Menu size="small" aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 1
-        <IconFilledAddCircleOutline />
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline />
-        Menu item 2
-        <IconFilledAddCircleOutline />
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 3
-        <IconFilledAddCircleOutline />
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 4
-        <IconFilledAddCircleOutline />
-      </MenuItem>
-    </Menu>
-    <br />
-    <br />
-    <StorybookSubHeading>Medium menu items</StorybookSubHeading>
-    <Menu size="medium" aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 1
-        <IconFilledAddCircleOutline />
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline />
-        Menu item 2
-        <IconFilledAddCircleOutline />
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 3
-        <IconFilledAddCircleOutline />
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 4
-        <IconFilledAddCircleOutline />
-      </MenuItem>
-    </Menu>
-    <br />
-    <br />
-    <StorybookSubHeading>Large menu items</StorybookSubHeading>
-    <Menu size="large" aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 1
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline />
-        Menu item 2
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 3
-      </MenuItem>
-      <MenuItem href={href}>
-        <IconFilledAddCircleOutline /> Menu item 4
-      </MenuItem>
-    </Menu>
-  </>
-);
-StoryMenuItemsSizes.storyName = 'menu items - sizes';
-
-const Flex = styled.div`
-  display: flex;
-
-  & > div {
-    width: 500px;
-    border: 1px dashed lightgrey;
-  }
-`;
-export const StoryMenuItemsAlignment = () => (
-  <>
-    <StorybookHeading>Menu items with different alignment</StorybookHeading>
-    <Flex>
-      <div>
-        <StorybookSubHeading>Left</StorybookSubHeading>
-        <Menu vertical align="start" aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
-        </Menu>
-      </div>
-      <div>
-        <StorybookSubHeading>Center</StorybookSubHeading>
-        <Menu vertical align="center" aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
-        </Menu>
-      </div>
-      <div>
-        <StorybookSubHeading>Right</StorybookSubHeading>
-        <Menu vertical align="end" aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 4</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 5</MenuItem>
-          <MenuItem href={href}>Menu item knickknackatory 6</MenuItem>
-        </Menu>
-      </div>
-    </Flex>
-  </>
-);
-StoryMenuItemsAlignment.storyName = 'menu items - alignment';
-
-export const StoryMenuItemsHorizontalAlignment = () => {
-  const Container = styled.div`
-    & > div {
-      width: 480px;
-      border: 1px dashed lightgrey;
-    }
-  `;
-  return (
-    <>
-      <StorybookHeading>Menu items with different alignment</StorybookHeading>
-      <Container>
-        <div>
-          <StorybookSubHeading>Left</StorybookSubHeading>
-          <Menu align="start" aria-label={`Menu ${getSSRId()}`}>
-            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-          </Menu>
-        </div>
-        <div>
-          <StorybookSubHeading>Center</StorybookSubHeading>
-          <Menu align="center" aria-label={`Menu ${getSSRId()}`}>
-            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-          </Menu>
-        </div>
-        <div>
-          <StorybookSubHeading>Right</StorybookSubHeading>
-          <Menu align="end" aria-label={`Menu ${getSSRId()}`}>
-            <MenuItem href={href}>Menu item knickknackatory 1</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 2</MenuItem>
-            <MenuItem href={href}>Menu item knickknackatory 3</MenuItem>
-          </Menu>
-        </div>
-      </Container>
-    </>
-  );
-};
-StoryMenuItemsHorizontalAlignment.storyName =
-  'menu items - alignment (horizontal)';
-
-export const StoryMenuItemsOverrides = () => {
-  const menuItemOverrides = {
-    stylePreset: 'menuItemCustom',
-  };
-  return (
-    <>
-      <StorybookHeading>Menu items with overrides</StorybookHeading>
-      <Menu aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem href={href} overrides={menuItemOverrides}>
-          Menu item 1
-        </MenuItem>
-        <MenuItem href={href} overrides={menuItemOverrides}>
-          Menu item 2
-        </MenuItem>
-        <MenuItem href={href} overrides={menuItemOverrides}>
-          Menu item 3
-        </MenuItem>
-        <MenuItem href={href} overrides={menuItemOverrides}>
-          Menu item 4
-        </MenuItem>
-        <MenuItem href={href} overrides={menuItemOverrides}>
-          Menu item 5
-        </MenuItem>
-        <MenuItem href={href} overrides={menuItemOverrides}>
-          Menu item 6
-        </MenuItem>
-      </Menu>
-    </>
-  );
-};
-StoryMenuItemsOverrides.storyName = 'menu items - overrides';
-
-export const StoryMenuTransitionHorizontalOverrides = () => {
-  const Container = styled.div`
-    & > div {
-      width: 480px;
-      border: 1px dashed lightgrey;
-    }
-  `;
-  return (
-    <Container>
-      <StorybookHeading>Default Transition Preset horizontal</StorybookHeading>
-      <Menu aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem href={href}>Menu item 1</MenuItem>
-        <MenuItem href={href}>Menu item 2</MenuItem>
-      </Menu>
-      <StorybookSubHeading>
-        Menu items with Transition Preset overrides
-      </StorybookSubHeading>
-      <Menu aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemCustomTransition',
-            transitionPreset: 'customBackgroundColorChange',
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemCustomTransition',
-            transitionPreset: 'customBackgroundColorChange',
-          }}
-        >
-          Menu item 2
-        </MenuItem>
-      </Menu>
-      <StorybookSubHeading>
-        Menu item with two Transition Preset Overrides
-      </StorybookSubHeading>
-      <Menu aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemCustomTransition',
-            transitionPreset: [
-              'customBackgroundColorChange',
-              'customFontColourChange',
-            ],
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemCustomTransition',
-            transitionPreset: [
-              'customBackgroundColorChange',
-              'customFontColourChange',
-            ],
-          }}
-        >
-          Menu item 2
-        </MenuItem>
-      </Menu>
-      <StorybookSubHeading>
-        Menu item with overrides using extend on transitionDuration
-      </StorybookSubHeading>
-      <Menu aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemCustomTransition',
-            transitionPreset: {
-              extend: 'backgroundColorChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration050}}',
-              },
-            },
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-      </Menu>
-      <StorybookSubHeading>
-        Menu item with overrides on two presets using extend
-      </StorybookSubHeading>
-      <Menu aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemCustomTransition',
-            transitionPreset: [
-              {
-                extend: 'backgroundColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration030}}',
-                },
-              },
-              {
-                extend: 'customFontColourChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration050}}',
-                },
-              },
-            ],
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-      </Menu>
-    </Container>
-  );
-};
-StoryMenuTransitionHorizontalOverrides.storyName =
-  'menu items - transitions - horizontal';
-
-export const StoryMenuTransitionVerticalOverrides = () => {
-  const Container = styled.div`
-    & > div {
-      width: 480px;
-      border: 1px dashed lightgrey;
-    }
-  `;
-  return (
-    <Container>
-      <StorybookHeading>Default Transition Preset vertical</StorybookHeading>
-      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem href={href}>Menu item 1</MenuItem>
-        <MenuItem href={href}>Menu item 2</MenuItem>
-      </Menu>
-      <StorybookSubHeading>
-        Menu items with Transition Preset overrides
-      </StorybookSubHeading>
-      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemVerticalTransition',
-            transitionPreset: 'customBackgroundColorChange',
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemVerticalTransition',
-            transitionPreset: 'customBackgroundColorChange',
-          }}
-        >
-          Menu item 2
-        </MenuItem>
-      </Menu>
-      <StorybookSubHeading>
-        Menu item with two Transition Preset Overrides
-      </StorybookSubHeading>
-      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemVerticalTransition',
-            transitionPreset: [
-              'customBackgroundColorChange',
-              'customFontColourChange',
-            ],
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemVerticalTransition',
-            transitionPreset: [
-              'customBackgroundColorChange',
-              'customFontColourChange',
-            ],
-          }}
-        >
-          Menu item 2
-        </MenuItem>
-      </Menu>
-      <StorybookSubHeading>
-        Menu item with overrides using extend on transitionDuration
-      </StorybookSubHeading>
-      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemVerticalTransition',
-            transitionPreset: {
-              extend: 'backgroundColorChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration050}}',
-              },
-            },
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemVerticalTransition',
-            transitionPreset: {
-              extend: 'backgroundColorChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration050}}',
-              },
-            },
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-      </Menu>
-      <StorybookSubHeading>
-        Menu item with overrides on two presets using extend
-      </StorybookSubHeading>
-      <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemVerticalTransition',
-            transitionPreset: [
-              {
-                extend: 'backgroundColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration030}}',
-                },
-              },
-              {
-                extend: 'customFontColourChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration050}}',
-                },
-              },
-            ],
-          }}
-        >
-          Menu item 1
-        </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{
-            stylePreset: 'menuItemVerticalTransition',
-            transitionPreset: [
-              {
-                extend: 'backgroundColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration030}}',
-                },
-              },
-              {
-                extend: 'customFontColourChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration050}}',
-                },
-              },
-            ],
-          }}
-        >
-          Menu item 2
-        </MenuItem>
-      </Menu>
-    </Container>
-  );
-};
-StoryMenuTransitionVerticalOverrides.storyName =
-  'menu items - transitions - vertical';
-
-export const StoryMenuItemsInverse = () => {
-  const InverseContainer = styled.div`
-    ${getColorCssFromTheme('background', 'inkBase')}
-  `;
-
-  const inverseOverrides = {
-    stylePreset: 'menuItemHorizontalInverse',
-  };
-
-  return (
-    <>
-      <StorybookHeading>Menu items horizontal inverse</StorybookHeading>
-      <InverseContainer>
-        <Menu aria-label={`Menu ${getSSRId()}`}>
-          <MenuItem href={href} overrides={inverseOverrides}>
-            Menu item 1
-          </MenuItem>
-          <MenuItem href={href} overrides={inverseOverrides}>
-            Menu item 2
-          </MenuItem>
-          <MenuItem href={href} overrides={inverseOverrides}>
-            Menu item 3
-          </MenuItem>
-          <MenuItem href={href} overrides={inverseOverrides}>
-            Menu item 4
-          </MenuItem>
-          <MenuItem href={href} overrides={inverseOverrides}>
-            Menu item 5
-          </MenuItem>
-          <MenuItem href={href} overrides={inverseOverrides}>
-            Menu item 6
-          </MenuItem>
-        </Menu>
-      </InverseContainer>
-    </>
-  );
-};
-StoryMenuItemsInverse.storyName = 'menu items - inverse';
-
-export const StoryMenuGroupsVertical = () => (
-  <>
-    <StorybookHeading>Menu groups - vertical</StorybookHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1">
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-      </MenuGroup>
-
-      <MenuGroup title="Group 2">
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-        <MenuItem href={href}>Group 2-item 4</MenuItem>
-      </MenuGroup>
-
-      <MenuGroup
-        title={() => <MenuGroupTitle />}
-        aria-labelledby="custom-menu-title"
+const Box = ({
+  label,
+  children,
+}: {
+  label?: string;
+  children: React.ReactNode;
+}) => (
+  <Block marginBlockEnd="space040">
+    {label && (
+      <TextBlock
+        as="h2"
+        stylePreset="inkSubtle"
+        typographyPreset="utilityBody010"
+        paddingBlock="space040"
       >
-        <MenuItem href={href}>Group 3-item 1</MenuItem>
-        <MenuItem href={href}>Group 3-item 2</MenuItem>
-      </MenuGroup>
-    </Menu>
-  </>
-);
-StoryMenuGroupsVertical.storyName = 'menu groups - vertical';
-
-export const StoryMenuGroupsHorizontal = () => (
-  <>
-    <StorybookHeading>Menu groups - horizontal</StorybookHeading>
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1">
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-      </MenuGroup>
-
-      <MenuGroup title="Group 2">
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-        <MenuItem href={href}>Group 2-item 4</MenuItem>
-      </MenuGroup>
-
-      <MenuGroup title="Group 3">
-        <MenuItem href={href}>Group 3-item 1</MenuItem>
-        <MenuItem href={href}>Group 3-item 2</MenuItem>
-      </MenuGroup>
-    </Menu>
-  </>
-);
-StoryMenuGroupsHorizontal.storyName = 'menu groups - horizontal';
-
-export const StoryMenuGroupsNested = () => (
-  <>
-    <StorybookHeading>Menu groups - nested</StorybookHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1">
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-      </MenuGroup>
-
-      <MenuGroup title="Group 2">
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-
-        <MenuGroup title="Group 2 - Nested Group 1">
-          <MenuItem href={href}>Group 3-item 1</MenuItem>
-          <MenuItem href={href}>Group 3-item 2</MenuItem>
-        </MenuGroup>
-
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-        <MenuItem href={href}>Group 2-item 4</MenuItem>
-      </MenuGroup>
-    </Menu>
-  </>
-);
-StoryMenuGroupsNested.storyName = 'menu groups - nested';
-
-export const StoryMenuMenuItemsOnly = () => (
-  <>
-    <StorybookHeading>Menu - menu items only</StorybookHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 4</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 6</MenuItem>
-      <MenuDivider />
-    </Menu>
-  </>
-);
-StoryMenuMenuItemsOnly.storyName = 'menu - menu items only';
-
-export const StoryMenuMenuItemsOnlyhorizontal = () => (
-  <>
-    <StorybookHeading>Menu - menu items only (horizontal)</StorybookHeading>
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 4</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>Menu item 6</MenuItem>
-      <MenuDivider />
-    </Menu>
-  </>
-);
-StoryMenuMenuItemsOnlyhorizontal.storyName =
-  'menu - menu items only (horizontal)';
-
-export const StoryMenuMenuGroupsOnly = () => (
-  <>
-    <StorybookHeading>Menu - menu groups only</StorybookHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1">
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-      </MenuGroup>
-      <MenuDivider />
-      <MenuGroup title="Group 2">
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-      </MenuGroup>
-      <MenuDivider />
-    </Menu>
-  </>
-);
-StoryMenuMenuGroupsOnly.storyName = 'menu - menu groups only';
-
-export const StoryMenuMenuGroupsOnlyhorizontal = () => (
-  <>
-    <StorybookHeading>Menu - menu groups only (horizontal)</StorybookHeading>
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1">
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-      </MenuGroup>
-      <MenuDivider />
-      <MenuGroup title="Group 2">
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-      </MenuGroup>
-      <MenuDivider />
-    </Menu>
-  </>
-);
-StoryMenuMenuGroupsOnlyhorizontal.storyName =
-  'menu - menu groups only (horizontal)';
-
-export const StoryMenuMenuGroupsOnlydividersWithinGroups = () => (
-  <>
-    <StorybookHeading>
-      Menu - menu groups only (dividers within groups)
-    </StorybookHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1">
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-        <MenuDivider />
-      </MenuGroup>
-      <MenuGroup title="Group 2">
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-        <MenuDivider />
-      </MenuGroup>
-    </Menu>
-  </>
-);
-StoryMenuMenuGroupsOnlydividersWithinGroups.storyName =
-  'menu - menu groups only (dividers within groups)';
-
-export const StoryMenuMenuGroupsOnlyhorizontaldividersWithinGroups = () => (
-  <>
-    <StorybookHeading>
-      Menu - menu groups only (horizontal) (dividers within groups)
-    </StorybookHeading>
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1">
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-        <MenuDivider />
-      </MenuGroup>
-      <MenuGroup title="Group 2">
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-        <MenuDivider />
-      </MenuGroup>
-    </Menu>
-  </>
-);
-StoryMenuMenuGroupsOnlyhorizontaldividersWithinGroups.storyName =
-  'menu - menu groups only (horizontal) (dividers within groups)';
-
-export const StoryMenuItemsAndGroups = () => (
-  <>
-    <StorybookHeading>Menu - items and groups</StorybookHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>item 1</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>item 2</MenuItem>
-      <MenuDivider />
-
-      <MenuGroup title="Group 1" overrides={{spaceInline: 'space020'}}>
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuDivider />
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuDivider />
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-        {/* <MenuDivider /> */}
-      </MenuGroup>
-
-      <MenuDivider
-        overrides={{
-          spaceInline: 'space020',
-          stylePreset: 'dividerPrimary',
-        }}
-      />
-
-      <MenuItem href={href}>item 3</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>item 4</MenuItem>
-      <MenuDivider />
-
-      <MenuGroup title="Group 2" overrides={{spaceInline: 'space020'}}>
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuDivider />
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuDivider />
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-      </MenuGroup>
-
-      <MenuDivider
-        overrides={{
-          spaceInline: 'space020',
-          stylePreset: 'dividerPrimary',
-        }}
-      />
-
-      <MenuItem href={href}>item 5</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>item 6</MenuItem>
-      <MenuDivider />
-    </Menu>
-  </>
-);
-StoryMenuItemsAndGroups.storyName = 'menu - items and groups';
-
-export const StoryMenuItemsAndGroupshorizontal = () => (
-  <>
-    <StorybookHeading>Menu - items and groups (horizontal)</StorybookHeading>
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href}>item 1</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>item 2</MenuItem>
-      <MenuDivider />
-
-      <MenuGroup title="Group 1">
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuDivider />
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuDivider />
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-        <MenuDivider />
-      </MenuGroup>
-
-      {/* <MenuDivider /> */}
-
-      <MenuItem href={href}>item 3</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>item 4</MenuItem>
-      <MenuDivider />
-
-      <MenuGroup title="Group 2">
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuDivider />
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuDivider />
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-      </MenuGroup>
-
-      <MenuDivider />
-
-      <MenuItem href={href}>item 5</MenuItem>
-      <MenuDivider />
-      <MenuItem href={href}>item 6</MenuItem>
-      <MenuDivider />
-    </Menu>
-  </>
-);
-StoryMenuItemsAndGroupshorizontal.storyName =
-  'menu - items and groups (horizontal)';
-
-export const StoryMenuItemsHorizontalNoSpace = () => (
-  <>
-    <StorybookHeading>Menu items - horizontal</StorybookHeading>
-    <Menu
-      aria-label={`Menu ${getSSRId()}`}
-      overrides={{spaceInline: 'space000'}}
-    >
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuItem href={href}>Menu item 4</MenuItem>
-      <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuItem href={href}>Menu item 6</MenuItem>
-    </Menu>
-  </>
-);
-StoryMenuItemsHorizontalNoSpace.storyName = 'menu items - horizontal, no space';
-
-export const StoryMenuItemsVerticalNoSpace = () => (
-  <>
-    <StorybookHeading>Menu items - vertical</StorybookHeading>
-    <Menu
-      vertical
-      aria-label={`Menu ${getSSRId()}`}
-      overrides={{spaceInline: 'space000'}}
-    >
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuItem href={href}>Menu item 4</MenuItem>
-      <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuItem href={href}>Menu item 6</MenuItem>
-    </Menu>
-  </>
-);
-StoryMenuItemsVerticalNoSpace.storyName = 'menu items - vertical, no space';
-
-export const StoryMenuAlignedTitle = () => (
-  <>
-    <StorybookHeading>Menu - menu groups only</StorybookHeading>
-    <Menu vertical aria-label={`Menu ${getSSRId()}`}>
-      <MenuGroup title="Group 1" overrides={{title: {spaceInset: 'space040'}}}>
-        <MenuItem href={href}>Group 1-item 1</MenuItem>
-        <MenuItem href={href}>Group 1-item 2</MenuItem>
-        <MenuItem href={href}>Group 1-item 3</MenuItem>
-      </MenuGroup>
-      <MenuDivider />
-      <MenuGroup title="Group 2" overrides={{title: {spaceInset: 'space040'}}}>
-        <MenuItem href={href}>Group 2-item 1</MenuItem>
-        <MenuItem href={href}>Group 2-item 2</MenuItem>
-        <MenuItem href={href}>Group 2-item 3</MenuItem>
-      </MenuGroup>
-      <MenuGroup title="Group 3" overrides={{title: {spaceInset: 'space040'}}}>
-        <MenuItem href={href}>Group 3-item 1</MenuItem>
-      </MenuGroup>
-      <MenuDivider />
-    </Menu>
-  </>
-);
-StoryMenuAlignedTitle.storyName = 'menu - aligned title';
-
-export const StoryMenuWithCloseButtons = () => {
-  const menuItemOverrides = {
-    overrides: {
-      stylePreset: 'menuItemTwoCustom',
-    },
-  };
-  const menuItemCloseOverrides = {
-    overrides: {
-      stylePreset: 'menuItemClose',
-      maxHeight: '24px',
-      maxWidth: '24px',
-      minHeight: '24px',
-      minWidth: '24px',
-      spaceInset: '12px',
-    },
-  };
-
-  const CloseIcon = ({companyName}: {companyName: string}) => (
-    <IconFilledClose
-      title={`Remove ${companyName}`}
-      overrides={{size: 'iconSize010'}}
-    />
-  );
-
-  const MenuItemNoOutline = styled(MenuItem)`
-    outline: none;
-  `;
-  const MenuItemNoOutlineIcon = styled(MenuItem)`
-    outline: none;
-    margin-top: 10px;
-    margin-right: 16px;
-  `;
-
-  return (
-    <>
-      <StorybookHeading>Menu - menu with close buttons</StorybookHeading>
-      <Menu
-        aria-label={`Menu ${getSSRId()}`}
-        overrides={{spaceInline: 'space000'}}
-      >
-        <MenuGroup
-          aria-label="News Corp"
-          overrides={{
-            spaceInline: 'space000',
-            stylePreset: 'menuGroupCustom',
-          }}
-        >
-          <MenuItemNoOutline href={href} {...menuItemOverrides}>
-            News Corp
-          </MenuItemNoOutline>
-          <MenuItemNoOutlineIcon
-            aria-label="close button"
-            href={href}
-            {...menuItemCloseOverrides}
-          >
-            <CloseIcon companyName="News Corp" />
-          </MenuItemNoOutlineIcon>
-        </MenuGroup>
-        <MenuGroup
-          aria-label="GSK"
-          overrides={{
-            spaceInline: 'space000',
-            stylePreset: 'menuGroupCustom',
-          }}
-        >
-          <MenuItemNoOutline href={href} {...menuItemOverrides}>
-            GSK
-          </MenuItemNoOutline>
-          <MenuItemNoOutlineIcon
-            aria-label="close button"
-            href={href}
-            {...menuItemCloseOverrides}
-          >
-            <CloseIcon companyName="GSK" />
-          </MenuItemNoOutlineIcon>
-        </MenuGroup>
-        <MenuGroup
-          aria-label="Shell"
-          overrides={{
-            spaceInline: 'space000',
-            stylePreset: 'menuGroupCustom',
-          }}
-        >
-          <MenuItemNoOutline href={href} {...menuItemOverrides}>
-            Shell
-          </MenuItemNoOutline>
-          <MenuItemNoOutlineIcon
-            aria-label="close button"
-            href={href}
-            {...menuItemCloseOverrides}
-          >
-            <CloseIcon companyName="Shell" />
-          </MenuItemNoOutlineIcon>
-        </MenuGroup>
-      </Menu>
-    </>
-  );
-};
-StoryMenuWithCloseButtons.storyName = 'menu - menu with close buttons';
-
-export const StoryMenuLogicalProps = () => (
-  <>
-    <StorybookHeading>Menu with logical props</StorybookHeading>
-    <Menu
-      aria-label={`Menu ${getSSRId()}`}
-      overrides={{
-        paddingInline: '30px',
-        marginBlock: '30px',
-      }}
-    >
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuItem href={href}>Menu item 3</MenuItem>
-      <MenuItem href={href}>Menu item 4</MenuItem>
-      <MenuItem href={href}>Menu item 5</MenuItem>
-      <MenuItem href={href}>Menu item 6</MenuItem>
-    </Menu>
-    <StorybookHeading>MenuSub with logical props</StorybookHeading>
-    <Menu
-      size="medium"
-      aria-label="overrides-on-menu-sub"
-      overrides={{
-        paddingInline: '30px',
-        marginBlock: '30px',
-      }}
-    >
-      <MenuItem href={href}>Menu item 1</MenuItem>
-      <MenuItem href={href}>Menu item 2</MenuItem>
-      <MenuSub
-        title="Menu item 3"
-        expanded
-        overrides={{
-          paddingInlineStart: '16px',
-        }}
-      >
-        <MenuItem href={href}>Menu item 3.1</MenuItem>
-        <MenuItem href={href}>Menu item 3.2</MenuItem>
-      </MenuSub>
-    </Menu>
-  </>
-);
-StoryMenuLogicalProps.storyName = 'menu - logical props';
-
-export const StoryMenuItemsOutlineOverrides = () => (
-  <>
-    <StorybookHeading>Menu items with overrides</StorybookHeading>
-    <Menu aria-label={`Menu ${getSSRId()}`}>
-      <MenuItem href={href} overrides={{stylePreset: 'customOutlineColor'}}>
-        Custom Color
-      </MenuItem>
-      <MenuItem href={href} overrides={{stylePreset: 'customOutlineStyle'}}>
-        Custom Style
-      </MenuItem>
-      <MenuItem href={href} overrides={{stylePreset: 'customOutlineWidth'}}>
-        Custom Width
-      </MenuItem>
-      <MenuItem href={href} overrides={{stylePreset: 'customOutlineOffset'}}>
-        Custom Offset
-      </MenuItem>
-    </Menu>
-    <br />
-    <br />
-  </>
-);
-StoryMenuItemsOutlineOverrides.storyName = 'menu items - outline overrides';
-
-const HorizontalContainer = styled.div`
-  min-height: 200px;
-`;
-export const StorySubMenuHorizontal = () => {
-  const [guidesExpanded, setGuidesExpanded] = useState(false);
-  const [codeExpanded, setDesignExpanded] = useState(false);
-
-  return (
-    <HorizontalContainer>
-      <StorybookSubHeading>Sub menu - horizontal</StorybookSubHeading>
-      <Menu aria-label="menu-horizontal">
-        <MenuSub
-          title="Guides"
-          id="horizontal-guides"
-          selected={guidesExpanded}
-          expanded={guidesExpanded}
-          onClick={() => {
-            setGuidesExpanded(!guidesExpanded);
-          }}
-        >
-          <MenuItem href={href} id="horizontal-getting-started">
-            Getting started
-          </MenuItem>
-          <MenuItem href={href} id="horizontal-design-overview">
-            Design Overview
-          </MenuItem>
-          <MenuSub
-            title="Code"
-            id="horizontal-code"
-            expanded={codeExpanded}
-            selected={codeExpanded}
-            onClick={() => setDesignExpanded(!codeExpanded)}
-          >
-            <MenuItem href={href} id="horizontal-engineering-overview">
-              Engineering Overview
-            </MenuItem>
-          </MenuSub>
-        </MenuSub>
-      </Menu>
-    </HorizontalContainer>
-  );
-};
-StorySubMenuHorizontal.storyName = 'sub-menu-horizontal';
-
-const VerticalContainer = styled.div`
-  width: 300px;
-`;
-export const StorySubMenuVertical = () => {
-  const [guidesExpanded, setGuidesExpanded] = useState(false);
-  const [codeExpanded, setCodeExpanded] = useState(false);
-  const [themeExpanded, setThemeExpanded] = useState(false);
-  const [foundationsExpanded, setFoundationsExpanded] = useState(false);
-
-  return (
-    <>
-      <StorybookSubHeading>Sub menu - vertical</StorybookSubHeading>
-      <VerticalContainer>
-        <Menu aria-label="menu-vertical" vertical align="spaceBetween">
-          <MenuSub
-            title="Guides"
-            id="vertical-guides"
-            expanded={guidesExpanded}
-            onClick={() => setGuidesExpanded(!guidesExpanded)}
-            selected
-          >
-            <MenuItem href={href} id="vertical-getting-started">
-              Getting started
-            </MenuItem>
-            <MenuItem selected href={href} id="vertical-design-overview">
-              Design overview
-            </MenuItem>
-            <MenuSub
-              title="Code"
-              id="vertical-code"
-              expanded={codeExpanded}
-              onClick={() => setCodeExpanded(!codeExpanded)}
-            >
-              <MenuItem href={href} id="vertical-engineering-overview">
-                Engineering overview
-              </MenuItem>
-            </MenuSub>
-          </MenuSub>
-
-          <MenuSub
-            title="Theme"
-            id="vertical-theme"
-            expanded={themeExpanded}
-            onClick={() => setThemeExpanded(!themeExpanded)}
-          >
-            <MenuItem href={href} id="vertical-overview">
-              Overview
-            </MenuItem>
-            <MenuSub
-              title="Foundations"
-              id="vertical-foundations"
-              expanded={foundationsExpanded}
-              onClick={() => setFoundationsExpanded(!foundationsExpanded)}
-            >
-              <MenuItem href={href} id="vertical-borders">
-                Borders
-              </MenuItem>
-              <MenuItem href={href} id="vertical-breakpoints">
-                Breakpoints
-              </MenuItem>
-            </MenuSub>
-          </MenuSub>
-        </Menu>
-      </VerticalContainer>
-    </>
-  );
-};
-StorySubMenuVertical.storyName = 'sub-menu-vertical';
-
-const splitMenuItems = (arr: MenuElement[], n: number) => {
-  const visible = [...arr].splice(0, n);
-  const invisible = [...arr].splice(n);
-  return {visible, invisible};
-};
-
-type MenuElement = {
-  title: string;
-  items?: MenuElement[];
-};
-
-const createMenu = (items: MenuElement[]) =>
-  items.map(({title, items: subItems}) => {
-    if (subItems) {
-      return <MenuSub title={title}>{createMenu(subItems)}</MenuSub>;
-    }
-
-    return <MenuItem href={href}>{title}</MenuItem>;
-  });
-const createMoreMenu = (items: MenuElement[]) =>
-  items.map(({title, items: subItems}) => {
-    if (subItems) {
-      return (
-        <MenuSub title={title} data-testid="more-sub-menu">
-          {createMoreMenu(subItems)}
-        </MenuSub>
-      );
-    }
-
-    return <MenuItem href="/">{title}</MenuItem>;
-  });
-
-const MenuMore = ({children}: {children: React.ReactNode}) => (
-  <MenuSub title="More">{children}</MenuSub>
+        {label}
+      </TextBlock>
+    )}
+    {children}
+  </Block>
 );
 
-const items: MenuElement[] = [
-  {title: 'About'},
+const buildMenuItems = (
+  n: number,
+  prefix = 'Menu item ',
+  props?: Omit<MenuItemProps, 'children' | 'href'>,
+) =>
+  Array.from(Array(n).keys()).map(i => (
+    <MenuItem key={`${prefix}${i + 1}`} {...(props || {})}>
+      {`${prefix}${i + 1}`}
+    </MenuItem>
+  ));
+
+export const StoryMenuDefault = () => (
+  <Box>
+    <Menu>{buildMenuItems(4)}</Menu>
+  </Box>
+);
+StoryMenuDefault.storyName = 'Default';
+
+const sizeStoryMenus: Array<Omit<MenuProps, 'children'> & {label?: string}> = [
   {
-    title: 'Guides',
+    label: 'Small',
+    size: 'small',
   },
   {
-    title: 'Theme',
+    label: 'Medium',
+    size: 'medium',
   },
   {
-    title: 'Components',
-    items: [
-      {title: 'Overview'},
-      {
-        title: 'Actions & Inputs',
-        items: [{title: 'Button'}, {title: 'Checkbox'}, {title: 'Form'}],
-      },
-    ],
+    label: 'Large',
+    size: 'large',
   },
 ];
 
-const HorizontalContainerLarge = styled.div`
-  min-height: 300px;
+export const StoryMenuSize = () => (
+  <>
+    {sizeStoryMenus.map(({label, ...props}) => (
+      <Box key={label} label={label}>
+        <Menu {...props}>{buildMenuItems(4)}</Menu>
+      </Box>
+    ))}
+  </>
+);
+StoryMenuSize.storyName = 'Size';
+
+const stateStoryMenus: Array<Omit<MenuProps, 'children'> & {label?: string}> = [
+  {
+    label: 'States - horizontal',
+    vertical: false,
+  },
+  {
+    label: 'States - vertical',
+    vertical: true,
+  },
+];
+
+export const StoryMenuStates = () => (
+  <>
+    {stateStoryMenus.map(({label, ...props}) => (
+      <Box key={label} label={label}>
+        <div style={{maxWidth: props.vertical ? '200px' : '100%'}}>
+          <Menu {...props}>
+            <MenuItem>Menu item base</MenuItem>
+            <MenuItem selected>Menu item active</MenuItem>
+            <MenuItem disabled>Menu item disabled</MenuItem>
+          </Menu>
+        </div>
+      </Box>
+    ))}
+  </>
+);
+StoryMenuStates.storyName = 'States';
+
+const iconStoryMenus: Array<MenuProps & {label?: string}> = [
+  {
+    label: 'Leading icon',
+    children: (
+      <MenuItem>
+        <IconFilledAddCircle /> Menu item 1
+      </MenuItem>
+    ),
+  },
+  {
+    label: 'Trailing icon',
+    children: (
+      <MenuItem>
+        Menu item 1 <IconFilledAddCircle />
+      </MenuItem>
+    ),
+  },
+  {
+    label: 'Leading and trailing icon',
+    children: (
+      <MenuItem>
+        <IconFilledAddCircle /> Menu item 1 <IconFilledAddCircle />
+      </MenuItem>
+    ),
+  },
+];
+
+export const StoryMenuIcons = () => (
+  <>
+    {iconStoryMenus.map(({label, ...props}) => (
+      <Box key={label} label={label}>
+        <Menu {...props} />
+      </Box>
+    ))}
+  </>
+);
+StoryMenuIcons.storyName = 'Icon';
+
+export const StoryMenuInverse = () => {
+  const InverseContainer = styled.div`
+    ${getColorCssFromTheme('background', 'inkBase')}
+    margin: -16px;
+    padding: 16px;
+  `;
+  return (
+    <InverseContainer>
+      <Box>
+        <Menu>
+          {buildMenuItems(4, 'Menu item ', {
+            overrides: {stylePreset: 'menuItemHorizontalInverse'},
+          })}
+        </Menu>
+      </Box>
+    </InverseContainer>
+  );
+};
+StoryMenuInverse.storyName = 'Inverse';
+
+const horizontalAlignmentStoryMenus: Array<MenuProps> = [
+  {
+    align: 'start',
+    children: buildMenuItems(3, 'Left aligned menu item '),
+  },
+  {
+    align: 'center',
+    children: buildMenuItems(3, 'Center aligned menu item '),
+  },
+  {
+    align: 'end',
+    children: buildMenuItems(3, 'Right aligned menu item '),
+  },
+];
+
+const HorizontalContainer = styled.div`
+  & > div {
+    width: 480px;
+    border: 1px dashed #d60000;
+  }
 `;
 
-export const StoryMenuMultipleAuto = () => {
-  const splitNumber = useMediaQueryObject({
-    xs: 2,
-    sm: 3,
-    md: 4,
-    lg: 5,
-    xl: 5,
-  });
+export const StoryMenuHorizontalAlignment = () => (
+  <>
+    {horizontalAlignmentStoryMenus.map((props, i) => (
+      <HorizontalContainer key={i}>
+        <Box>
+          <Menu {...props} />
+        </Box>
+      </HorizontalContainer>
+    ))}
+  </>
+);
+StoryMenuHorizontalAlignment.storyName = 'Horizontal alignment';
 
-  const {visible, invisible} = splitMenuItems(items, splitNumber || 1000);
+const horizontalTransitionStoryMenus: Array<MenuProps & {label?: string}> = [
+  {
+    label: 'Default transition preset',
+    children: buildMenuItems(2),
+  },
+  {
+    label: 'Transition preset overrides',
+    children: buildMenuItems(2, 'Menu item ', {
+      overrides: {
+        stylePreset: 'menuItemCustomTransition',
+        transitionPreset: 'customBackgroundColorChange',
+      },
+    }),
+  },
+  {
+    label: 'Two transition preset overrides',
+    children: buildMenuItems(2, 'Menu item ', {
+      overrides: {
+        stylePreset: 'menuItemCustomTransition',
+        transitionPreset: [
+          'customBackgroundColorChange',
+          'customFontColourChange',
+        ],
+      },
+    }),
+  },
+  {
+    label: 'Overrides using extend on transitionDuration',
+    children: buildMenuItems(2, 'Menu item ', {
+      overrides: {
+        stylePreset: 'menuItemCustomTransition',
+        transitionPreset: {
+          extend: 'backgroundColorChange',
+          base: {
+            transitionDuration: '{{motions.motionDuration050}}',
+          },
+        },
+      },
+    }),
+  },
+  {
+    label: 'Overrides on two presets using extend',
+    children: buildMenuItems(2, 'Menu item ', {
+      overrides: {
+        stylePreset: 'menuItemCustomTransition',
+        transitionPreset: [
+          {
+            extend: 'backgroundColorChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration030}}',
+            },
+          },
+          {
+            extend: 'customFontColourChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration050}}',
+            },
+          },
+        ],
+      },
+    }),
+  },
+];
 
-  return (
-    <HorizontalContainerLarge>
-      <InlineMessage
-        icon={
-          <IconFilledInfo
-            overrides={{
-              size: 'iconSize020',
-            }}
-          />
-        }
-        overrides={{marginBlockEnd: 'space050'}}
-      >
-        Resize the browser window to see the menu items overflow.
-      </InlineMessage>
-      <Menu aria-label="menu-multiple-auto">
-        {createMenu(visible)}
-        {invisible.length > 0 && (
-          <MenuMore>{createMoreMenu(invisible)}</MenuMore>
-        )}
-      </Menu>
-    </HorizontalContainerLarge>
-  );
+export const StoryMenuHorizontalTransition = () => (
+  <>
+    {horizontalTransitionStoryMenus.map(({label, ...props}) => (
+      <Box key={label} label={label}>
+        <Menu {...props} />
+      </Box>
+    ))}
+  </>
+);
+StoryMenuHorizontalTransition.storyName = 'Horizontal transitions';
+
+export const StoryMenuHorizontalGroups = () => (
+  <Box>
+    <Menu>
+      <MenuGroup>
+        <MenuItem>Group item 1-1</MenuItem>
+        <MenuItem>Group item 1-2</MenuItem>
+      </MenuGroup>
+      <MenuGroup>
+        <MenuItem>Group item 2-1</MenuItem>
+        <MenuItem>Group item 2-2</MenuItem>
+      </MenuGroup>
+      <MenuGroup>
+        <MenuItem>Group item 3-1</MenuItem>
+        <MenuItem>Group item 3-2</MenuItem>
+      </MenuGroup>
+    </Menu>
+  </Box>
+);
+StoryMenuHorizontalGroups.storyName = 'Horizontal groups';
+
+export const StoryMenuVertical = () => (
+  <Box>
+    <Menu vertical>{buildMenuItems(4)}</Menu>
+  </Box>
+);
+StoryMenuVertical.storyName = 'Vertical';
+
+const verticalAlignmentStoryMenus = horizontalAlignmentStoryMenus.map(
+  props => ({vertical: true, ...props}),
+);
+
+const VerticalContainer = styled.div`
+  & > div {
+    border: 1px dashed #d60000;
+  }
+`;
+
+const Columns = styled.div<{columns: number}>`
+  display: grid;
+  gap: 24px;
+  ${({columns}) => ({
+    'grid-template-columns': `repeat(${columns}, minmax(0, 1fr))`,
+  })}
+`;
+
+export const StoryMenuVerticalAlignment = () => (
+  <Columns columns={3}>
+    {verticalAlignmentStoryMenus.map((props, i) => (
+      <VerticalContainer key={i}>
+        <Box>
+          <Menu {...props} />
+        </Box>
+      </VerticalContainer>
+    ))}
+  </Columns>
+);
+StoryMenuVerticalAlignment.storyName = 'Vertical alignment';
+
+const verticalTransitionStoryMenus = horizontalTransitionStoryMenus.map(
+  props => ({vertical: true, ...props}),
+);
+
+const Flex = styled.div`
+  display: flex;
+`;
+
+export const StoryMenuVerticalTransition = () => (
+  <Columns columns={2}>
+    {verticalTransitionStoryMenus
+      .map(({label, ...props}) => (
+        <Flex key={label}>
+          <Box label={label}>
+            <Menu {...props} />
+          </Box>
+        </Flex>
+      ))
+      .reduce(
+        (prev, next, i) => [
+          ...prev,
+          ...(i === 1 ? [<div key="empty" />] : []),
+          next,
+        ],
+        [] as React.ReactNode[],
+      )}
+  </Columns>
+);
+StoryMenuVerticalTransition.storyName = 'Vertical transition';
+
+const menuGroupOverrides: MenuGroupProps['overrides'] = {
+  title: {
+    typographyPreset: 'utilityHeading010',
+    stylePreset: 'customMenuGroup',
+    paddingInline: 'space040',
+  },
 };
-StoryMenuMultipleAuto.storyName = 'sub-menu-auto';
 
-export const StoryMenuSubOverrides = () => {
-  const [expanded, setExpanded] = useState(false);
-  const menuItemOverrides = {
-    stylePreset: 'menuItemCustom',
-  };
-  return (
-    <HorizontalContainer>
-      <StorybookHeading>Menu sub with overrides</StorybookHeading>
-      <Menu size="medium" aria-label="menu-sub-overrides">
-        <MenuItem
-          href={href}
-          overrides={{...menuItemOverrides, minHeight: '56px'}}
-        >
-          Menu item 1
-        </MenuItem>
-        <MenuItem
-          href={href}
-          overrides={{...menuItemOverrides, minHeight: '56px'}}
-        >
-          Menu item 2
-        </MenuItem>
-        <MenuSub
-          title="Menu item 3"
-          expanded={expanded}
-          onClick={() => {
-            setExpanded(!expanded);
-          }}
+export const StoryMenuVerticalGroups = () => (
+  <Box>
+    <Menu vertical>
+      <MenuGroup title="Group 1" overrides={menuGroupOverrides}>
+        <MenuItem>Group item 1-1</MenuItem>
+        <MenuItem>Group item 1-2</MenuItem>
+      </MenuGroup>
+      <MenuGroup title="Group 2" overrides={menuGroupOverrides}>
+        <MenuItem>Group item 2-1</MenuItem>
+        <MenuItem>Group item 2-2</MenuItem>
+      </MenuGroup>
+      <MenuGroup title="Group 3" overrides={menuGroupOverrides}>
+        <MenuItem>Group item 3-1</MenuItem>
+        <MenuItem>Group item 3-2</MenuItem>
+      </MenuGroup>
+    </Menu>
+  </Box>
+);
+StoryMenuVerticalGroups.storyName = 'Vertical groups';
+
+export const StoryMenuGroupsNested = () => (
+  <Box>
+    <Menu vertical>
+      <MenuGroup title="Group 1" overrides={menuGroupOverrides}>
+        <MenuItem>Group 1-item 1</MenuItem>
+        <MenuItem>Group 1-item 2</MenuItem>
+      </MenuGroup>
+
+      <MenuGroup title="Group 2" overrides={menuGroupOverrides}>
+        <MenuItem>Group 2-item 1</MenuItem>
+        <MenuItem>Group 2-item 2</MenuItem>
+        <MenuItem>Group 2-item 3</MenuItem>
+
+        <MenuGroup
+          title="Group 2 - nested group 1"
           overrides={{
-            ...menuItemOverrides,
-            minHeight: '56px',
-            list: {},
+            title: {
+              ...menuGroupOverrides.title,
+              marginBlockStart: 'space050',
+            },
+            spaceInline: 'space000',
           }}
         >
-          <MenuItem href={href}>Menu item 3.1</MenuItem>
-          <MenuItem href={href}>Menu item 3.2</MenuItem>
-        </MenuSub>
-      </Menu>
-    </HorizontalContainer>
-  );
-};
-StoryMenuSubOverrides.storyName = 'sub-menu-overrides';
+          <MenuItem>Group 3-item 1</MenuItem>
+          <MenuItem>Group 3-item 2</MenuItem>
+        </MenuGroup>
+
+        <MenuItem>Group 2-item 4</MenuItem>
+        <MenuItem>Group 2-item 5</MenuItem>
+      </MenuGroup>
+    </Menu>
+  </Box>
+);
+StoryMenuGroupsNested.storyName = 'Nested groups';
+
+const itemsAndGroupsStoryMenus: Array<
+  Omit<MenuProps, 'children'> & {label?: string}
+> = [
+  {
+    label: 'Items and groups - horizontal',
+    vertical: false,
+  },
+  {
+    label: 'Items and groups - vertical',
+    vertical: true,
+  },
+];
+
+export const StoryMenuItemsAndGroups = () => (
+  <>
+    {itemsAndGroupsStoryMenus.map(({label, ...props}) => (
+      <Box key={label} label={label}>
+        <div style={{maxWidth: props.vertical ? '200px' : '100%'}}>
+          <Menu {...props}>
+            <MenuGroup overrides={menuGroupOverrides}>
+              <MenuItem>Item 1</MenuItem>
+              <MenuDivider key="Item 1" />
+              <MenuItem>Item 2</MenuItem>
+              <MenuDivider key="Item 2" />
+            </MenuGroup>
+            <MenuGroup
+              title="Group 1"
+              overrides={{
+                title: menuGroupOverrides.title,
+                spaceInline: 'space000',
+              }}
+            >
+              <MenuItem>Group 1-item 1</MenuItem>
+              <MenuDivider key="Group 1-item 1" />
+              <MenuItem>Group 1-item 2</MenuItem>
+              <MenuDivider key="Group 1-item 2" />
+            </MenuGroup>
+            <MenuGroup overrides={menuGroupOverrides}>
+              <MenuItem>Item 3</MenuItem>
+              <MenuDivider key="Item 3" />
+            </MenuGroup>
+            <MenuGroup title="Group 2" overrides={menuGroupOverrides}>
+              <MenuItem>Group 2-item 1</MenuItem>
+              <MenuDivider key="Group 2-item 1" />
+            </MenuGroup>
+          </Menu>
+        </div>
+      </Box>
+    ))}
+  </>
+);
+StoryMenuItemsAndGroups.storyName = 'Items and groups';
+
+const noSpaceStoryMenus: Array<
+  Omit<MenuProps, 'children'> & {label?: string}
+> = [
+  {
+    label: 'Items only - horizontal',
+    vertical: false,
+    overrides: {spaceInline: 'space000'},
+  },
+  {
+    label: 'Items only - vertical',
+    vertical: true,
+    overrides: {spaceInline: 'space000'},
+  },
+];
+
+export const StoryMenuItemsNoSpace = () => (
+  <>
+    {noSpaceStoryMenus.map(({label, ...props}) => (
+      <Box key={label} label={label}>
+        <Menu {...props}>{buildMenuItems(6)}</Menu>
+      </Box>
+    ))}
+  </>
+);
+StoryMenuItemsNoSpace.storyName = 'Items no space';
 
 const routes = [
   {
-    title: 'Home',
-    id: '/home',
+    title: 'Menu item 1',
+    id: '/item-1',
   },
   {
-    title: 'About',
-    id: '/about',
+    title: 'Menu item 2',
+    id: '/item-2',
+  },
+  {
+    title: 'Menu item 3',
+    id: '/item-3',
+  },
+  {
+    title: 'Sub menu 1',
+    id: '/sub-menu-1',
     subNav: [
       {
-        title: 'Why use NewsKit',
-        id: '/about/why-use-newskit',
+        title: 'Sub menu 1 Item 1',
+        id: '/sub-1-item-1',
       },
       {
-        title: 'Release notes',
-        id: '/about/release-notes',
-      },
-      {
-        title: 'Roadmap',
-        id: '/about/roadmap',
-      },
-      {
-        title: 'Contribute',
-        id: '/about/contribute',
-      },
-      {
-        title: 'Contact us',
-        id: '/about/contact-us',
+        title: 'Sub menu 1 Item 2',
+        id: '/sub-1-item-2',
       },
     ],
   },
   {
-    title: 'Guides',
-    id: '/getting-started',
+    title: 'Sub menu 2',
+    id: '/sub-menu-2',
     subNav: [
       {
-        title: 'Getting started',
-        id: '/getting-started/overview',
+        title: 'Sub menu 2 Item 1',
+        id: '/sub-2-item-1',
       },
       {
-        title: 'Design',
-        id: '/getting-started/design',
-      },
-      {
-        title: 'Code',
-        id: '/getting-started/code',
-        subNav: [
-          {
-            title: 'Overview',
-            id: '/getting-started/code/engineering-overview',
-          },
-          {
-            title: 'Quickstart',
-            id: '/getting-started/code/engineering-quickstart',
-          },
-          {
-            title: 'Form step-by-step',
-            id: '/getting-started/code/form-step-by-step',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: 'Theme',
-    id: '/theme',
-    subNav: [
-      {
-        title: 'Overview',
-        id: '/theme/overview',
-      },
-      {
-        title: 'Foundations',
-        id: '/theme/foundation',
-        subNav: [
-          {
-            title: 'Borders',
-            id: '/theme/foundation/borders',
-          },
-          {
-            title: 'Breakpoints',
-            id: '/theme/foundation/breakpoints',
-          },
-          {
-            title: 'Colours',
-            id: '/theme/foundation/colours',
-          },
-          {
-            title: 'Design tokens',
-            id: '/theme/foundation/design-tokens',
-          },
-          {
-            title: 'Fonts',
-            id: '/theme/foundation/fonts',
-          },
-        ],
-      },
-      {
-        title: 'Presets',
-        id: '/theme/presets',
-        subNav: [
-          {
-            title: 'Style Presets',
-            id: '/theme/presets/style-presets',
-          },
-          {
-            title: 'Transition Presets',
-            id: '/theme/presets/transition-presets',
-          },
-          {
-            title: 'Typography Presets',
-            id: '/theme/presets/typography-presets',
-          },
-        ],
-      },
-      {
-        title: 'Creating and using themes',
-        id: '/theme/theming',
-        subNav: [
-          {
-            title: 'Overview',
-            id: '/theme/theming/overview',
-          },
-          {
-            title: 'Creating a theme in code',
-            id: '/theme/theming/creating-a-theme',
-          },
-          {
-            title: 'Using a theme in code',
-            id: '/theme/theming/using-a-theme',
-          },
-          {
-            title: 'Component defaults',
-            id: '/theme/theming/component-defaults',
-          },
-        ],
+        title: 'Sub menu 2 Item 2',
+        id: '/sub-2-item-2',
       },
     ],
   },
@@ -1741,11 +680,7 @@ const createNestedMenu = (
         </MenuSub>
       );
     }
-    return (
-      <MenuItem key={id} href={href}>
-        {title}
-      </MenuItem>
-    );
+    return <MenuItem key={id}>{title}</MenuItem>;
   });
 
 const expandMyParent = (menuItem: MenuNestedElement) => {
@@ -1787,7 +722,11 @@ const makeTree = (
 
 const treeMenu = makeTree(routes, null);
 
-export const StoryMenuFullDemo = () => {
+const SubMenuContainer = styled.div`
+  min-height: 150px;
+`;
+
+export const StorySubMenuControlled = () => {
   const [expandedId, setExpandedId] = React.useState('');
   const expandedRoutes = makeExpanded(expandedId, treeMenu);
 
@@ -1803,71 +742,172 @@ export const StoryMenuFullDemo = () => {
   );
 
   return (
-    <HorizontalContainer>
+    <SubMenuContainer>
       <Menu>{createNestedMenu(expandedRoutes, setExpanded)}</Menu>
-    </HorizontalContainer>
+    </SubMenuContainer>
   );
 };
-StoryMenuFullDemo.storyName = 'sub-menu-full-demo';
+StorySubMenuControlled.storyName = 'Sub menu controlled';
 
-const SubMenuNestedUncontrolledContainer = styled.div`
-  min-height: 300px;
-`;
-export const StorySubMenuNestedUncontrolled = () => (
-  <SubMenuNestedUncontrolledContainer>
-    <StorybookSubHeading>
-      Sub menu - uncontrolled behaviour example
-    </StorybookSubHeading>
-    <Menu aria-label="menu-nested-uncontrolled" align="start">
-      <MenuSub title="Item 1">
-        <MenuItem href={href}>Item 1.1</MenuItem>
-        <MenuItem href={href}>Item 1.2</MenuItem>
-        <MenuSub title="Item 1.3">
-          <MenuItem href={href}>Item 1.3.1</MenuItem>
-          <MenuSub title="Item 1.3.2" defaultExpanded>
-            <MenuItem href={href}>Item 1.3.2.1</MenuItem>
-          </MenuSub>
-        </MenuSub>
-        <MenuSub title="Item 1.4">
-          <MenuItem href={href}>Item 1.4.1</MenuItem>
-          <MenuSub title="Item 1.4.2">
-            <MenuItem href={href}>Item 1.4.2.1</MenuItem>
-          </MenuSub>
-        </MenuSub>
+export const StorySubMenuUnControlled = () => (
+  <SubMenuContainer>
+    <Menu>
+      <MenuItem>Menu item 1</MenuItem>
+      <MenuItem>Menu item 2</MenuItem>
+      <MenuItem>Menu item 43</MenuItem>
+      <MenuSub title="Sub menu 1">
+        <MenuItem>Sub menu 1 item 1</MenuItem>
+        <MenuItem>Sub menu 1 item 3</MenuItem>
+      </MenuSub>
+      <MenuSub title="Sub menu 2">
+        <MenuItem>Sub menu 2 item 1</MenuItem>
+        <MenuItem>Sub menu 2 item 3</MenuItem>
       </MenuSub>
     </Menu>
-  </SubMenuNestedUncontrolledContainer>
+  </SubMenuContainer>
 );
-StorySubMenuNestedUncontrolled.storyName = 'sub-menu-nested-uncontrolled';
-StorySubMenuNestedUncontrolled.parameters = {
-  percy: {skip: true},
+StorySubMenuUnControlled.storyName = 'Sub menu uncontrolled';
+
+const splitMenuItems = (arr: MenuElement[], n: number) => {
+  const visible = [...arr].splice(0, n);
+  const invisible = [...arr].splice(n);
+  return {visible, invisible};
 };
 
-const AlignmentExampleContainer = styled.div`
-  min-height: 400px;
-`;
-export const StorySubMenuAlignmentExample = () => (
-  <AlignmentExampleContainer>
-    <StorybookSubHeading>Sub menu alignment example</StorybookSubHeading>
-    <Menu aria-label="menu-alignment-example" align="start" vertical>
-      <MenuSub title="Start-aligned sub menu">
-        <MenuItem href={href}>Start-aligned menu item</MenuItem>
-        <MenuSub title="Center-aligned sub menu" align="center">
-          <MenuItem href={href}>Center-aligned menu item</MenuItem>
-          <MenuSub title="End-aligned sub menu" defaultExpanded align="end">
-            <MenuItem href={href}>End-aligned menu item</MenuItem>
-          </MenuSub>
+type MenuElement = {
+  title: string;
+  items?: MenuElement[];
+};
+
+const createMenu = (items: MenuElement[]) =>
+  items.map(({title, items: subItems}) => {
+    if (subItems) {
+      return <MenuSub title={title}>{createMenu(subItems)}</MenuSub>;
+    }
+
+    return <MenuItem>{title}</MenuItem>;
+  });
+const createMoreMenu = (items: MenuElement[]) =>
+  items.map(({title, items: subItems}) => {
+    if (subItems) {
+      return (
+        <MenuSub title={title} data-testid="more-sub-menu">
+          {createMoreMenu(subItems)}
         </MenuSub>
-      </MenuSub>
-    </Menu>
-  </AlignmentExampleContainer>
+      );
+    }
+
+    return <MenuItem>{title}</MenuItem>;
+  });
+
+const MenuMore = ({children}: {children: React.ReactNode}) => (
+  <MenuSub title="More">{children}</MenuSub>
 );
-StorySubMenuAlignmentExample.storyName = 'sub-menu-alignment-example';
+
+const items: MenuElement[] = [
+  {title: 'Menu item 1'},
+  {
+    title: 'Menu item 2',
+  },
+  {
+    title: 'Menu item 1',
+  },
+  {
+    title: 'Sub menu 1',
+    items: [{title: 'Sub menu 1 item 1'}, {title: 'Sub menu 1 item 2'}],
+  },
+  {
+    title: 'Sub menu 2',
+    items: [{title: 'Sub menu 2 item 1'}, {title: 'Sub menu 2 item 2'}],
+  },
+];
+
+export const StoryMenuMultipleAuto = () => {
+  const splitNumber = useMediaQueryObject({
+    xs: 1,
+    sm: 2,
+    md: 3,
+    lg: 4,
+    xl: 5,
+  });
+
+  const {visible, invisible} = splitMenuItems(items, splitNumber || 1000);
+
+  return (
+    <>
+      <InlineMessage
+        icon={
+          <IconFilledInfo
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        overrides={{marginBlockEnd: 'space050'}}
+      >
+        Resize the browser window to see the menu items overflow.
+      </InlineMessage>
+      <SubMenuContainer>
+        <Menu aria-label="menu-multiple-auto">
+          {createMenu(visible)}
+          {invisible.length > 0 && (
+            <MenuMore>{createMoreMenu(invisible)}</MenuMore>
+          )}
+        </Menu>
+      </SubMenuContainer>
+    </>
+  );
+};
+StoryMenuMultipleAuto.storyName = 'Sub menu auto';
+
+export const StoryMenuOverrides = () => (
+  <>
+    <Box label="Logical props">
+      <Menu
+        overrides={{
+          paddingInline: '30px',
+        }}
+      >
+        {buildMenuItems(4)}
+      </Menu>
+    </Box>
+    <Box label="Custom colour and style">
+      <Menu>
+        {buildMenuItems(4, 'Menu item ', {
+          overrides: {
+            stylePreset: 'menuItemCustomColourAndStyle',
+            typographyPreset: 'editorialSubheadline010',
+          },
+        })}
+      </Menu>
+    </Box>
+    <Box label="Custom width">
+      <Menu>
+        {buildMenuItems(4, 'Menu item ', {
+          overrides: {
+            minWidth: '200px',
+          },
+        })}
+      </Menu>
+    </Box>
+    <Box label="Custom offset">
+      <Menu overrides={{marginInline: '100px'}}>{buildMenuItems(4)}</Menu>
+    </Box>
+  </>
+);
+StoryMenuOverrides.storyName = 'Overrides';
 
 export default {
-  title: 'Components/menu',
+  title: 'Components/Menu',
   component: () => 'None',
-  disabledRules: [],
+  parameters: {
+    nkDocs: {
+      title: 'Menu',
+      url: 'https://newskit.co.uk/components/menu',
+      description:
+        'A Menu displays a list of navigational items. They are displayed either at the top of a screen, or at the side where space allows.',
+    },
+  },
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
       <ThemeProvider

@@ -25,7 +25,8 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 8px 4px;
+  padding-inline: 4px;
+  padding-block: 8px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -109,7 +110,7 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
           class="emotion-3"
         >
           <section
-            class="emotion-4"
+            class="nk-card-headline emotion-4"
           >
             <h3
               class="nk-headline-heading emotion-5"
@@ -174,7 +175,8 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -190,6 +192,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-4 .nk-headline-kicker {
@@ -203,7 +206,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -218,6 +221,21 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 
 .emotion-4 .nk-headline-heading svg {
   fill: #09111C;
+}
+
+.emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4:before {
@@ -307,7 +325,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
             href="newskit.com"
           >
             <section
-              class="emotion-5"
+              class="nk-card-headline emotion-5"
             >
               <h3
                 class="nk-headline-heading emotion-6"
@@ -366,7 +384,8 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 8px 4px;
+  padding-inline: 4px;
+  padding-block: 8px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -450,7 +469,7 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
           class="emotion-3"
         >
           <section
-            class="emotion-4"
+            class="nk-card-headline emotion-4"
           >
             <h3
               class="nk-headline-heading emotion-5"
@@ -502,7 +521,8 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 
 .emotion-2 {
   box-sizing: border-box;
-  padding: 24px;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-2 a:not(.nk-card-link) {
@@ -518,6 +538,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-4 .nk-headline-kicker {
@@ -531,7 +552,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #14328D;
+  color: #12387A;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -546,6 +567,21 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 
 .emotion-4 .nk-headline-heading svg {
   fill: #09111C;
+}
+
+.emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-4:before {
@@ -635,7 +671,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
             href="newskit.com"
           >
             <section
-              class="emotion-5"
+              class="nk-card-headline emotion-5"
             >
               <h3
                 class="nk-headline-heading emotion-6"

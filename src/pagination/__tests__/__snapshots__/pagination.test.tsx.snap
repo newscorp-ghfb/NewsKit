@@ -1,0 +1,7661 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in large pageSize 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 40px;
+  min-width: 40px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 40px;
+  min-width: 40px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 svg {
+  width: 32px;
+  height: 32px;
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-12:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-12:disabled {
+  color: #ABABAB;
+}
+
+.emotion-12:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-12:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+    href="https://paginationitem.test"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 1"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-4"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 2"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/2"
+        >
+          <span
+            class="emotion-4"
+          >
+            2
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 3"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/3"
+        >
+          <span
+            class="emotion-4"
+          >
+            3
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 4"
+          class="emotion-12"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/4"
+        >
+          <span
+            class="emotion-4"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 5"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/5"
+        >
+          <span
+            class="emotion-4"
+          >
+            5
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 6"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/6"
+        >
+          <span
+            class="emotion-4"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 7"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/7"
+        >
+          <span
+            class="emotion-4"
+          >
+            7
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 8"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/8"
+        >
+          <span
+            class="emotion-4"
+          >
+            8
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 9"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/9"
+        >
+          <span
+            class="emotion-4"
+          >
+            9
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 10"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/10"
+        >
+          <span
+            class="emotion-4"
+          >
+            10
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 11"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/11"
+        >
+          <span
+            class="emotion-4"
+          >
+            11
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 12"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/12"
+        >
+          <span
+            class="emotion-4"
+          >
+            12
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 13"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/13"
+        >
+          <span
+            class="emotion-4"
+          >
+            13
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 14"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/14"
+        >
+          <span
+            class="emotion-4"
+          >
+            14
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 15"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/15"
+        >
+          <span
+            class="emotion-4"
+          >
+            15
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 16"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/16"
+        >
+          <span
+            class="emotion-4"
+          >
+            16
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 17"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/17"
+        >
+          <span
+            class="emotion-4"
+          >
+            17
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 18"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/18"
+        >
+          <span
+            class="emotion-4"
+          >
+            18
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 19"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/19"
+        >
+          <span
+            class="emotion-4"
+          >
+            19
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 20"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/20"
+        >
+          <span
+            class="emotion-4"
+          >
+            20
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 21"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/21"
+        >
+          <span
+            class="emotion-4"
+          >
+            21
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 22"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/22"
+        >
+          <span
+            class="emotion-4"
+          >
+            22
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 23"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/23"
+        >
+          <span
+            class="emotion-4"
+          >
+            23
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 24"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/24"
+        >
+          <span
+            class="emotion-4"
+          >
+            24
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in medium pageSize 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-12:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-12:disabled {
+  color: #ABABAB;
+}
+
+.emotion-12:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-12:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+    href="https://paginationitem.test"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 1"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-4"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 2"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/2"
+        >
+          <span
+            class="emotion-4"
+          >
+            2
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 3"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/3"
+        >
+          <span
+            class="emotion-4"
+          >
+            3
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 4"
+          class="emotion-12"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/4"
+        >
+          <span
+            class="emotion-4"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 5"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/5"
+        >
+          <span
+            class="emotion-4"
+          >
+            5
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 6"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/6"
+        >
+          <span
+            class="emotion-4"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 7"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/7"
+        >
+          <span
+            class="emotion-4"
+          >
+            7
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 8"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/8"
+        >
+          <span
+            class="emotion-4"
+          >
+            8
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 9"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/9"
+        >
+          <span
+            class="emotion-4"
+          >
+            9
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 10"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/10"
+        >
+          <span
+            class="emotion-4"
+          >
+            10
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 11"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/11"
+        >
+          <span
+            class="emotion-4"
+          >
+            11
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 12"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/12"
+        >
+          <span
+            class="emotion-4"
+          >
+            12
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 13"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/13"
+        >
+          <span
+            class="emotion-4"
+          >
+            13
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 14"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/14"
+        >
+          <span
+            class="emotion-4"
+          >
+            14
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 15"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/15"
+        >
+          <span
+            class="emotion-4"
+          >
+            15
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 16"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/16"
+        >
+          <span
+            class="emotion-4"
+          >
+            16
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 17"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/17"
+        >
+          <span
+            class="emotion-4"
+          >
+            17
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 18"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/18"
+        >
+          <span
+            class="emotion-4"
+          >
+            18
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 19"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/19"
+        >
+          <span
+            class="emotion-4"
+          >
+            19
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 20"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/20"
+        >
+          <span
+            class="emotion-4"
+          >
+            20
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 21"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/21"
+        >
+          <span
+            class="emotion-4"
+          >
+            21
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 22"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/22"
+        >
+          <span
+            class="emotion-4"
+          >
+            22
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 23"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/23"
+        >
+          <span
+            class="emotion-4"
+          >
+            23
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 24"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/24"
+        >
+          <span
+            class="emotion-4"
+          >
+            24
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in small pageSize 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 24px;
+  min-width: 24px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 24px;
+  min-width: 24px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-12:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-12:disabled {
+  color: #ABABAB;
+}
+
+.emotion-12:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-12:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+    href="https://paginationitem.test"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 1"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-4"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 2"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/2"
+        >
+          <span
+            class="emotion-4"
+          >
+            2
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 3"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/3"
+        >
+          <span
+            class="emotion-4"
+          >
+            3
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 4"
+          class="emotion-12"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/4"
+        >
+          <span
+            class="emotion-4"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 5"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/5"
+        >
+          <span
+            class="emotion-4"
+          >
+            5
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 6"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/6"
+        >
+          <span
+            class="emotion-4"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 7"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/7"
+        >
+          <span
+            class="emotion-4"
+          >
+            7
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 8"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/8"
+        >
+          <span
+            class="emotion-4"
+          >
+            8
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 9"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/9"
+        >
+          <span
+            class="emotion-4"
+          >
+            9
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 10"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/10"
+        >
+          <span
+            class="emotion-4"
+          >
+            10
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 11"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/11"
+        >
+          <span
+            class="emotion-4"
+          >
+            11
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 12"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/12"
+        >
+          <span
+            class="emotion-4"
+          >
+            12
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 13"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/13"
+        >
+          <span
+            class="emotion-4"
+          >
+            13
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 14"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/14"
+        >
+          <span
+            class="emotion-4"
+          >
+            14
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 15"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/15"
+        >
+          <span
+            class="emotion-4"
+          >
+            15
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 16"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/16"
+        >
+          <span
+            class="emotion-4"
+          >
+            16
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 17"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/17"
+        >
+          <span
+            class="emotion-4"
+          >
+            17
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 18"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/18"
+        >
+          <span
+            class="emotion-4"
+          >
+            18
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 19"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/19"
+        >
+          <span
+            class="emotion-4"
+          >
+            19
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 20"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/20"
+        >
+          <span
+            class="emotion-4"
+          >
+            20
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 21"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/21"
+        >
+          <span
+            class="emotion-4"
+          >
+            21
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 22"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/22"
+        >
+          <span
+            class="emotion-4"
+          >
+            22
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 23"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/23"
+        >
+          <span
+            class="emotion-4"
+          >
+            23
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 24"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/24"
+        >
+          <span
+            class="emotion-4"
+          >
+            24
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with logical prop overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-block: 20px;
+  padding-inline: 30px;
+}
+
+.emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-12:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-12:disabled {
+  color: #ABABAB;
+}
+
+.emotion-12:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-12:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 1"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-4"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 2"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/2"
+        >
+          <span
+            class="emotion-4"
+          >
+            2
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 3"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/3"
+        >
+          <span
+            class="emotion-4"
+          >
+            3
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 4"
+          class="emotion-12"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/4"
+        >
+          <span
+            class="emotion-4"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 5"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/5"
+        >
+          <span
+            class="emotion-4"
+          >
+            5
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 6"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/6"
+        >
+          <span
+            class="emotion-4"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 7"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/7"
+        >
+          <span
+            class="emotion-4"
+          >
+            7
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 8"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/8"
+        >
+          <span
+            class="emotion-4"
+          >
+            8
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 9"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/9"
+        >
+          <span
+            class="emotion-4"
+          >
+            9
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 10"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/10"
+        >
+          <span
+            class="emotion-4"
+          >
+            10
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 11"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/11"
+        >
+          <span
+            class="emotion-4"
+          >
+            11
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 12"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/12"
+        >
+          <span
+            class="emotion-4"
+          >
+            12
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 13"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/13"
+        >
+          <span
+            class="emotion-4"
+          >
+            13
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 14"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/14"
+        >
+          <span
+            class="emotion-4"
+          >
+            14
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 15"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/15"
+        >
+          <span
+            class="emotion-4"
+          >
+            15
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 16"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/16"
+        >
+          <span
+            class="emotion-4"
+          >
+            16
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 17"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/17"
+        >
+          <span
+            class="emotion-4"
+          >
+            17
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 18"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/18"
+        >
+          <span
+            class="emotion-4"
+          >
+            18
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 19"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/19"
+        >
+          <span
+            class="emotion-4"
+          >
+            19
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 20"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/20"
+        >
+          <span
+            class="emotion-4"
+          >
+            20
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 21"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/21"
+        >
+          <span
+            class="emotion-4"
+          >
+            21
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 22"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/22"
+        >
+          <span
+            class="emotion-4"
+          >
+            22
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 23"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/23"
+        >
+          <span
+            class="emotion-4"
+          >
+            23
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 24"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/24"
+        >
+          <span
+            class="emotion-4"
+          >
+            24
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with mandatory props set 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-12:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-12:disabled {
+  color: #ABABAB;
+}
+
+.emotion-12:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-12:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 1"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-4"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 2"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/2"
+        >
+          <span
+            class="emotion-4"
+          >
+            2
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 3"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/3"
+        >
+          <span
+            class="emotion-4"
+          >
+            3
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 4"
+          class="emotion-12"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/4"
+        >
+          <span
+            class="emotion-4"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 5"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/5"
+        >
+          <span
+            class="emotion-4"
+          >
+            5
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 6"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/6"
+        >
+          <span
+            class="emotion-4"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 7"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/7"
+        >
+          <span
+            class="emotion-4"
+          >
+            7
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 8"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/8"
+        >
+          <span
+            class="emotion-4"
+          >
+            8
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 9"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/9"
+        >
+          <span
+            class="emotion-4"
+          >
+            9
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 10"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/10"
+        >
+          <span
+            class="emotion-4"
+          >
+            10
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 11"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/11"
+        >
+          <span
+            class="emotion-4"
+          >
+            11
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 12"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/12"
+        >
+          <span
+            class="emotion-4"
+          >
+            12
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 13"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/13"
+        >
+          <span
+            class="emotion-4"
+          >
+            13
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 14"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/14"
+        >
+          <span
+            class="emotion-4"
+          >
+            14
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 15"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/15"
+        >
+          <span
+            class="emotion-4"
+          >
+            15
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 16"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/16"
+        >
+          <span
+            class="emotion-4"
+          >
+            16
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 17"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/17"
+        >
+          <span
+            class="emotion-4"
+          >
+            17
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 18"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/18"
+        >
+          <span
+            class="emotion-4"
+          >
+            18
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 19"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/19"
+        >
+          <span
+            class="emotion-4"
+          >
+            19
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 20"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/20"
+        >
+          <span
+            class="emotion-4"
+          >
+            20
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 21"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/21"
+        >
+          <span
+            class="emotion-4"
+          >
+            21
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 22"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/22"
+        >
+          <span
+            class="emotion-4"
+          >
+            22
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 23"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/23"
+        >
+          <span
+            class="emotion-4"
+          >
+            23
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 24"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/24"
+        >
+          <span
+            class="emotion-4"
+          >
+            24
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with truncation icon as overrides 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-12:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-12:disabled {
+  color: #ABABAB;
+}
+
+.emotion-12:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-12:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 1"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-4"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 2"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/2"
+        >
+          <span
+            class="emotion-4"
+          >
+            2
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 3"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/3"
+        >
+          <span
+            class="emotion-4"
+          >
+            3
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 4"
+          class="emotion-12"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/4"
+        >
+          <span
+            class="emotion-4"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 5"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/5"
+        >
+          <span
+            class="emotion-4"
+          >
+            5
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 6"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/6"
+        >
+          <span
+            class="emotion-4"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 7"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/7"
+        >
+          <span
+            class="emotion-4"
+          >
+            7
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 8"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/8"
+        >
+          <span
+            class="emotion-4"
+          >
+            8
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 9"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/9"
+        >
+          <span
+            class="emotion-4"
+          >
+            9
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 10"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/10"
+        >
+          <span
+            class="emotion-4"
+          >
+            10
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 11"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/11"
+        >
+          <span
+            class="emotion-4"
+          >
+            11
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 12"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/12"
+        >
+          <span
+            class="emotion-4"
+          >
+            12
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 13"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/13"
+        >
+          <span
+            class="emotion-4"
+          >
+            13
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 14"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/14"
+        >
+          <span
+            class="emotion-4"
+          >
+            14
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 15"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/15"
+        >
+          <span
+            class="emotion-4"
+          >
+            15
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 16"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/16"
+        >
+          <span
+            class="emotion-4"
+          >
+            16
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 17"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/17"
+        >
+          <span
+            class="emotion-4"
+          >
+            17
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 18"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/18"
+        >
+          <span
+            class="emotion-4"
+          >
+            18
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 19"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/19"
+        >
+          <span
+            class="emotion-4"
+          >
+            19
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 20"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/20"
+        >
+          <span
+            class="emotion-4"
+          >
+            20
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 21"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/21"
+        >
+          <span
+            class="emotion-4"
+          >
+            21
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 22"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/22"
+        >
+          <span
+            class="emotion-4"
+          >
+            22
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 23"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/23"
+        >
+          <span
+            class="emotion-4"
+          >
+            23
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 24"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/24"
+        >
+          <span
+            class="emotion-4"
+          >
+            24
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with truncation overrides with TextBlock component 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-4::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-4::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-12 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-12:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-12:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-12:disabled {
+  color: #ABABAB;
+}
+
+.emotion-12:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-12:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-12:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-12:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-12 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-12 svg {
+  fill: #3358CC;
+}
+
+.emotion-12:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 1"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-4"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 2"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/2"
+        >
+          <span
+            class="emotion-4"
+          >
+            2
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 3"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/3"
+        >
+          <span
+            class="emotion-4"
+          >
+            3
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 4"
+          class="emotion-12"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/4"
+        >
+          <span
+            class="emotion-4"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 5"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/5"
+        >
+          <span
+            class="emotion-4"
+          >
+            5
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 6"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/6"
+        >
+          <span
+            class="emotion-4"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 7"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/7"
+        >
+          <span
+            class="emotion-4"
+          >
+            7
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 8"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/8"
+        >
+          <span
+            class="emotion-4"
+          >
+            8
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 9"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/9"
+        >
+          <span
+            class="emotion-4"
+          >
+            9
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 10"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/10"
+        >
+          <span
+            class="emotion-4"
+          >
+            10
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 11"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/11"
+        >
+          <span
+            class="emotion-4"
+          >
+            11
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 12"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/12"
+        >
+          <span
+            class="emotion-4"
+          >
+            12
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 13"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/13"
+        >
+          <span
+            class="emotion-4"
+          >
+            13
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 14"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/14"
+        >
+          <span
+            class="emotion-4"
+          >
+            14
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 15"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/15"
+        >
+          <span
+            class="emotion-4"
+          >
+            15
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 16"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/16"
+        >
+          <span
+            class="emotion-4"
+          >
+            16
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 17"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/17"
+        >
+          <span
+            class="emotion-4"
+          >
+            17
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 18"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/18"
+        >
+          <span
+            class="emotion-4"
+          >
+            18
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 19"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/19"
+        >
+          <span
+            class="emotion-4"
+          >
+            19
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 20"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/20"
+        >
+          <span
+            class="emotion-4"
+          >
+            20
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 21"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/21"
+        >
+          <span
+            class="emotion-4"
+          >
+            21
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 22"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/22"
+        >
+          <span
+            class="emotion-4"
+          >
+            22
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 23"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/23"
+        >
+          <span
+            class="emotion-4"
+          >
+            23
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 24"
+          class="emotion-3"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/24"
+        >
+          <span
+            class="emotion-4"
+          >
+            24
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only Pagination, navigation icons and PaginationItems renders with controlled props 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: auto;
+  cursor: not-allowed;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #ABABAB;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #ABABAB;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-11 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-11 svg {
+  fill: #3358CC;
+}
+
+.emotion-11:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-11:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-11:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-11:disabled {
+  color: #ABABAB;
+}
+
+.emotion-11:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-11:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-11:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 svg {
+  fill: #3358CC;
+}
+
+.emotion-11:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-12::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-12::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-disabled="true"
+          class="emotion-3"
+          data-testid="pagination-first-item"
+          role="link"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+            />
+            <path
+              d="M24 24H0V0h24v24z"
+              fill="none"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-disabled="true"
+          class="emotion-3"
+          data-testid="pagination-prev-item"
+          role="link"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 1"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-12"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-disabled="true"
+          class="emotion-3"
+          data-testid="pagination-next-item"
+          role="link"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-disabled="true"
+          class="emotion-3"
+          data-testid="pagination-last-item"
+          role="link"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only Pagination, navigation icons and PaginationItems renders with uncontrolled props 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: auto;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-3 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-3 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-3 svg {
+  fill: #3358CC;
+}
+
+.emotion-3:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-3:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-3:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-3:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-3:disabled {
+  color: #ABABAB;
+}
+
+.emotion-3:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-11 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-11 svg {
+  fill: #3358CC;
+}
+
+.emotion-11:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-11:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-11:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-11:disabled {
+  color: #ABABAB;
+}
+
+.emotion-11:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-11:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-11:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-11 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-11 svg {
+  fill: #3358CC;
+}
+
+.emotion-11:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-11:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-11:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-11:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-11:disabled {
+  color: #ABABAB;
+}
+
+.emotion-11:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-11:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-11:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-12 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-12::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-12::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+.emotion-20 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-20 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-20 svg {
+  fill: #3358CC;
+}
+
+.emotion-20:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-20:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-20:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-20:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-20:disabled {
+  color: #ABABAB;
+}
+
+.emotion-20:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-20:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-20:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-20:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-20 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-20 svg {
+  fill: #3358CC;
+}
+
+.emotion-20:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<nav
+    aria-label="pagination"
+    class="emotion-0"
+    data-testid="pagination-container"
+  >
+    <ul
+      class="emotion-1"
+    >
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to first page"
+          class="emotion-3"
+          data-testid="pagination-first-item"
+          href="https://paginationitem.test/1"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+            />
+            <path
+              d="M24 24H0V0h24v24z"
+              fill="none"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to previous page"
+          class="emotion-3"
+          data-testid="pagination-prev-item"
+          href="https://paginationitem.test/3"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 1"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/1"
+        >
+          <span
+            class="emotion-12"
+          >
+            1
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 2"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/2"
+        >
+          <span
+            class="emotion-12"
+          >
+            2
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 3"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/3"
+        >
+          <span
+            class="emotion-12"
+          >
+            3
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-current="page"
+          aria-label="current page, page 4"
+          class="emotion-20"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/4"
+        >
+          <span
+            class="emotion-12"
+          >
+            4
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 5"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/5"
+        >
+          <span
+            class="emotion-12"
+          >
+            5
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 6"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/6"
+        >
+          <span
+            class="emotion-12"
+          >
+            6
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 7"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/7"
+        >
+          <span
+            class="emotion-12"
+          >
+            7
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 8"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/8"
+        >
+          <span
+            class="emotion-12"
+          >
+            8
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 9"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/9"
+        >
+          <span
+            class="emotion-12"
+          >
+            9
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 10"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/10"
+        >
+          <span
+            class="emotion-12"
+          >
+            10
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 11"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/11"
+        >
+          <span
+            class="emotion-12"
+          >
+            11
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 12"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/12"
+        >
+          <span
+            class="emotion-12"
+          >
+            12
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 13"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/13"
+        >
+          <span
+            class="emotion-12"
+          >
+            13
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 14"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/14"
+        >
+          <span
+            class="emotion-12"
+          >
+            14
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 15"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/15"
+        >
+          <span
+            class="emotion-12"
+          >
+            15
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 16"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/16"
+        >
+          <span
+            class="emotion-12"
+          >
+            16
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 17"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/17"
+        >
+          <span
+            class="emotion-12"
+          >
+            17
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 18"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/18"
+        >
+          <span
+            class="emotion-12"
+          >
+            18
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 19"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/19"
+        >
+          <span
+            class="emotion-12"
+          >
+            19
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 20"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/20"
+        >
+          <span
+            class="emotion-12"
+          >
+            20
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 21"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/21"
+        >
+          <span
+            class="emotion-12"
+          >
+            21
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 22"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/22"
+        >
+          <span
+            class="emotion-12"
+          >
+            22
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 23"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/23"
+        >
+          <span
+            class="emotion-12"
+          >
+            23
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to page 24"
+          class="emotion-11"
+          data-testid="pagination-item"
+          href="https://paginationitem.test/24"
+        >
+          <span
+            class="emotion-12"
+          >
+            24
+          </span>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to next page"
+          class="emotion-3"
+          data-testid="pagination-next-item"
+          href="https://paginationitem.test/5"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li
+        class="emotion-2"
+      >
+        <a
+          aria-label="go to last page"
+          class="emotion-3"
+          data-testid="pagination-last-item"
+          href="https://paginationitem.test/24"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-4 emotion-5"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only PaginationItem renders selected pagination item with aria attributes 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 24px;
+  min-height: 24px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 24px;
+  min-width: 24px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: #D5E0FC;
+  border-radius: 8px;
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4 svg {
+  width: 16px;
+  height: 16px;
+}
+
+.emotion-4 svg {
+  fill: #3358CC;
+}
+
+.emotion-4:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-4:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-4:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-4:disabled {
+  color: #ABABAB;
+}
+
+.emotion-4:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-4:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4 svg {
+  fill: #3358CC;
+}
+
+.emotion-4:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-5 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #3B3B3B;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<li
+    class="emotion-0"
+  >
+    <nav
+      aria-label="pagination"
+      class="emotion-1"
+      data-testid="pagination-container"
+    >
+      <ul
+        class="emotion-2"
+      >
+        <li
+          class="emotion-0"
+        >
+          <a
+            aria-current="page"
+            aria-label="current page, page 3"
+            class="emotion-4"
+            data-testid="pagination-item"
+            href="https://paginationitem.test"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-5 emotion-6"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only PaginationItem renders with default props 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 32px;
+  min-width: 32px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+}
+
+.emotion-4 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-4 svg {
+  fill: #3358CC;
+}
+
+.emotion-4:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-4:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-4:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-4:disabled {
+  color: #ABABAB;
+}
+
+.emotion-4:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-4:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-4 svg {
+  fill: #3358CC;
+}
+
+.emotion-4:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+}
+
+.emotion-4:hover:not(:disabled) svg {
+  fill: #254CAC;
+}
+
+.emotion-4:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4:active:not(:disabled) svg {
+  fill: #12387A;
+}
+
+.emotion-4:disabled {
+  color: #ABABAB;
+}
+
+.emotion-4:disabled svg {
+  fill: #ABABAB;
+}
+
+.emotion-4:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-4:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-4:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-5 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<li
+    class="emotion-0"
+  >
+    <nav
+      aria-label="pagination"
+      class="emotion-1"
+      data-testid="pagination-container"
+    >
+      <ul
+        class="emotion-2"
+      >
+        <li
+          class="emotion-0"
+        >
+          <a
+            aria-label="go to page 3"
+            class="emotion-4"
+            data-testid="pagination-item"
+            href="https://paginationitem.test"
+          >
+            <span
+              class="emotion-5"
+            >
+              Pagination Item
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only PaginationItem renders with overrides 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
+  grid-template-columns: repeat(1, auto);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 27px;
+  min-height: 24px;
+  margin-inline: 4px;
+  padding-inline: 8px;
+  padding-block: 0;
+  box-sizing: border-box;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  min-height: 24px;
+  min-width: 27px;
+  cursor: default;
+  overflow: hidden;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.emotion-4 svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-4 {
+    transition-property: background-color;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5 {
+  margin: 0;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+}
+
+.emotion-5::before {
+  content: '';
+  margin-bottom: -0.403em;
+  display: block;
+}
+
+.emotion-5::after {
+  content: '';
+  margin-top: -0.4em;
+  display: block;
+}
+
+<li
+    class="emotion-0"
+  >
+    <nav
+      aria-label="pagination"
+      class="emotion-1"
+      data-testid="pagination-container"
+    >
+      <ul
+        class="emotion-2"
+      >
+        <li
+          class="emotion-0"
+        >
+          <a
+            aria-label="go to page 3"
+            class="emotion-4"
+            data-testid="pagination-item"
+            href="https://paginationitem.test"
+          >
+            <span
+              class="emotion-5"
+            >
+              Pagination Item
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only PaginationItem renders with overrides.itemButton 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  fill: #3358CC;
+  vertical-align: unset;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+.emotion-5:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+  fill: #254CAC;
+}
+
+.emotion-5:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  fill: #12387A;
+}
+
+.emotion-5:disabled {
+  color: #ABABAB;
+  fill: #ABABAB;
+}
+
+.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-5:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-5.emotion-5 {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border-radius: 8px;
+  color: #3358CC;
+  fill: #3358CC;
+}
+
+.emotion-5.emotion-5:hover:not(:disabled) {
+  color: #254CAC;
+  background-color: #ECF1FF;
+  fill: #254CAC;
+}
+
+.emotion-5.emotion-5:active:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  fill: #12387A;
+}
+
+.emotion-5.emotion-5:disabled {
+  color: #ABABAB;
+  fill: #ABABAB;
+}
+
+.emotion-5.emotion-5:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-5.emotion-5:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-5.emotion-5:selected:hover:not(:disabled) {
+  color: #12387A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-5.emotion-5 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-5.emotion-5 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<li
+    class="emotion-0"
+  >
+    <nav
+      aria-label="pagination"
+      class="emotion-1"
+      data-testid="pagination-container"
+    >
+      <ul
+        class="emotion-2"
+      >
+        <li
+          class="emotion-0"
+        >
+          <div
+            class="emotion-4"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="go to page 3"
+              class="emotion-5 emotion-6"
+              data-testid="pagination-item"
+              fill="currentColor"
+              focusable="false"
+              height="medium"
+              href="https://paginationitem.test"
+              viewBox="0 0 24 24"
+              width="medium"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+              />
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`Pagination and PaginationItems only PaginationItem renders with overrides.itemDescription 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.emotion-2 {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0px;
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<li
+    class="emotion-0"
+  >
+    <nav
+      aria-label="pagination"
+      class="emotion-1"
+      data-testid="pagination-container"
+    >
+      <ul
+        class="emotion-2"
+      >
+        <li
+          class="emotion-0"
+        >
+          <div
+            class="emotion-4"
+          >
+            <span>
+              Page 3 of 
+            </span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </li>
+</DocumentFragment>
+`;

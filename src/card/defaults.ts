@@ -11,11 +11,13 @@ export default {
       },
     },
     teaserContainer: {
-      spaceInset: 'spaceInsetSquish000',
+      paddingInline: 'space000',
+      paddingBlock: 'space000',
     },
     actionsContainer: {
       minHeight: 'sizing080',
-      spaceInset: 'spaceInsetSquish000',
+      paddingInline: 'space000',
+      paddingBlock: 'space000',
     },
     headline: {
       nonInteractive: {
@@ -57,6 +59,9 @@ export default {
             lg: 'space030',
           },
         },
+        link: {
+          stylePreset: 'headlineHeadingLink',
+        },
       },
     },
   },
@@ -67,20 +72,32 @@ export default {
       spaceInline: 'space000',
     },
     teaserContainer: {
-      spaceInset: {
-        xs: 'spaceInset040',
-        sm: 'spaceInset040',
-        md: 'spaceInset050',
-        lg: 'spaceInset050',
+      paddingInline: {
+        xs: 'space040',
+        sm: 'space040',
+        md: 'space050',
+        lg: 'space050',
+      },
+      paddingBlock: {
+        xs: 'space040',
+        sm: 'space040',
+        md: 'space050',
+        lg: 'space050',
       },
     },
     actionsContainer: {
       minHeight: 'sizing000',
-      spaceInset: {
-        xs: 'spaceInsetSquish030',
-        sm: 'spaceInsetSquish030',
-        md: 'spaceInsetSquish040',
-        lg: 'spaceInsetSquish040',
+      paddingInline: {
+        xs: 'space040',
+        sm: 'space040',
+        md: 'space050',
+        lg: 'space050',
+      },
+      paddingBlock: {
+        xs: 'space030',
+        sm: 'space030',
+        md: 'space040',
+        lg: 'space040',
       },
     },
   },

@@ -11,7 +11,7 @@ export default {
   dividerInverse: {
     base: {
       borderStyle: 'solid',
-      borderColor: '{{colors.inkInverse}}',
+      borderColor: '{{colors.interface010}}',
       borderWidth: '{{borders.borderWidthDefault}}',
     },
   },

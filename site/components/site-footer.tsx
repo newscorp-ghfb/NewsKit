@@ -2,7 +2,6 @@ import * as React from 'react';
 import {
   Grid,
   Cell,
-  ConsentSettingsLink,
   getColorCssFromTheme,
   getSizingCssFromTheme,
   getMediaQueryFromTheme,
@@ -75,6 +74,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
             <FooterMenu>
               <FooterLink>
                 <Link
+                  type="standalone"
                   href="https://www.newscareers.co.uk/"
                   target="_blank"
                   external
@@ -85,6 +85,7 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
               </FooterLink>
               <FooterLink>
                 <Link
+                  type="standalone"
                   href="https://medium.com/newskit-design-system"
                   target="_blank"
                   external
@@ -94,17 +95,18 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
                 </Link>
               </FooterLink>
               <FooterLink>
-                <ConsentSettingsLink
-                  privacyManagerId="407619"
-                  gdpr
+                <Link
+                  type="standalone"
+                  href="/"
                   overrides={linkOverrides}
                   eventContext={{value: 'Privacy policy'}}
                 >
                   Privacy policy
-                </ConsentSettingsLink>
+                </Link>
               </FooterLink>
               <FooterLink>
                 <Link
+                  type="standalone"
                   href="/help/terms-and-conditions"
                   overrides={linkOverrides}
                 >

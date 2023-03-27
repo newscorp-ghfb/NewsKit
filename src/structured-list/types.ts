@@ -3,7 +3,7 @@ import {DividerProps} from '../divider';
 import {CellProps} from '../grid';
 import {EventData} from '../instrumentation';
 import {MQ} from '../utils/style';
-import {LogicalProps} from '../utils/logical-properties';
+import {LogicalPaddingProps, LogicalProps} from '../utils/logical-properties';
 
 export interface StructuredListOverrides extends LogicalProps {
   divider?: DividerProps['overrides'];
@@ -32,17 +32,17 @@ export interface StructuredListItemProps
   linkIconAlign?: StructuredListCellAlign;
   overrides?: {
     stylePreset?: MQ<string>;
-    spaceInset?: MQ<string>;
     minHeight?: MQ<string>;
     icon?: {
       stylePreset?: MQ<string>;
       size?: string;
     };
-  };
+  } & LogicalPaddingProps;
 }
 
 export interface StructuredListCellProps extends CellProps {
   children: React.ReactNode;
   pullRight?: boolean;
   align?: StructuredListCellAlign;
+  fullWidthSingleCell?: boolean;
 }

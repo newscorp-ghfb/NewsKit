@@ -64,13 +64,7 @@ export const StyledMenuGroupTitle = styled.div<
     'title',
     'spaceInline',
   )}
-
-  ${getResponsiveSpace(
-    space => ({paddingLeft: space, paddingRight: space}),
-    'menuGroup.title',
-    'title',
-    'spaceInset',
-  )}
+  ${logicalProps('menuGroup.title', 'title')}
 `;
 
 export const StyledMenuItem = styled.li<
@@ -102,20 +96,26 @@ const menuItemTextAlign = {
 const getTextAlign = (align: MenuItemAlign) =>
   align === 'spaceBetween' ? menuItemTextAlign.start : menuItemTextAlign[align];
 
-export const StyledButton = styled(Button)<{
-  align?: MenuItemAlign | undefined;
-  selected?: boolean;
-}>`
+export const StyledButton = styled(Button)<
+  Pick<MenuProps, 'vertical' | 'size'> & {
+    align?: MenuItemAlign | undefined;
+    selected?: boolean;
+  }
+>`
   width: 100%;
-  ${({selected}) =>
-    selected && getStylePreset('menuItem', '', {isSelected: selected})}
+  ${({selected, vertical, size}) =>
+    selected &&
+    getStylePreset(
+      `menuItem.${vertical ? 'vertical' : 'horizontal'}.${size}`,
+      '',
+      {isSelected: selected},
+    )}
   ${({align}) =>
     align &&
     menuItemFlexAlign[align] && {
       justifyContent: menuItemFlexAlign[align],
     }}
-
-  text-align: ${({align}) => align && getTextAlign(align)}
+  text-align: ${({align}) => align && getTextAlign(align)};
 `;
 
 export const StyledMenuDivider = styled.li<
@@ -145,7 +145,8 @@ export const StyledMenuDivider = styled.li<
 `;
 
 export const StyledUl = styled.ul<
-  Pick<MenuProps, 'vertical'> & Pick<MenuSubProps, 'expanded' | 'overrides'>
+  Pick<MenuProps, 'vertical' | 'size'> &
+    Pick<MenuSubProps, 'expanded' | 'overrides'>
 >`
   display: ${({expanded}) => (expanded ? 'flex' : 'none')};
   flex-direction: ${({vertical}) => (vertical ? 'column' : 'row')};
@@ -154,15 +155,15 @@ export const StyledUl = styled.ul<
   margin: 0;
   padding: 0;
 
-  ${({vertical}) =>
+  ${({size, vertical}) =>
     getStylePreset(
-      `menuSubItem.${vertical ? 'vertical' : 'horizontal'}.list`,
+      `menuSubItem.${vertical ? 'vertical' : 'horizontal'}.${size}.list`,
       'list',
     )};
 
-  ${({vertical}) =>
+  ${({size, vertical}) =>
     logicalProps(
-      `menuSubItem.${vertical ? 'vertical' : 'horizontal'}.list`,
+      `menuSubItem.${vertical ? 'vertical' : 'horizontal'}.${size}.list`,
       'list',
     )};
 

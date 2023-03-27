@@ -101,7 +101,7 @@ describe('IconButton', () => {
     const props: IconButtonProps = {
       'aria-label': 'Test icon button',
       overrides: {
-        paddingInline: '20px',
+        paddingInline: '30px',
         marginBlock: '30px',
       },
     };

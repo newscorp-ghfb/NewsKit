@@ -6,7 +6,7 @@ import {
   RenderOptions,
   RenderResult,
 } from '@testing-library/react';
-import {newskitLightTheme, UncompiledTheme, Theme} from '../theme';
+import {newskitLightTheme, Theme, UncompiledTheme} from '../theme';
 import {InstrumentationEvent} from '../instrumentation';
 import {NewsKitProvider} from '../newskit-provider';
 import {RenderToFragmentFactory, RenderWithThemeFactory} from './types';
@@ -150,3 +150,6 @@ export const generateString = (length: number): string =>
     .join('');
 
 export const isVisualTest = process.env.STORYBOOK_IS_VISUAL_TEST === 'true';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const isCypressTest = !!(window as {Cypress?: any}).Cypress;

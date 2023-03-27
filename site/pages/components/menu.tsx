@@ -64,7 +64,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v3.3.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/menu',
-      storybookId: 'components-menu--story-menu-items-horizontal',
+      storybookId: 'components-menu--story-menu-default',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=2984%3A966&t=eurTjmEaa1UxGH2d-0',
     }}
@@ -697,6 +697,17 @@ const MenuComponent = (layoutProps: LayoutProps) => (
           ],
           overridesRows: [
             {
+              attribute: 'spaceInline',
+              type: 'MQ<string>',
+              default: 'space050',
+              description: `Defines the space between each menuGroup`,
+            },
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              description: `Overrides the stylePreset of the menuGroup`,
+            },
+            {
               attribute: 'title.typographyPreset',
               type: 'MQ<string>',
               default: 'utilityHeading030',
@@ -714,23 +725,7 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               default: 'space050',
               description: `Overrides the space between the title and the first menu item`,
             },
-            {
-              attribute: 'title.spaceInset',
-              type: 'MQ<string>',
-              default: 'space050',
-              description: `Overrides the indentation of the title`,
-            },
-            {
-              attribute: 'spaceInline',
-              type: 'MQ<string>',
-              default: 'space050',
-              description: `Defines the space between each menuGroup`,
-            },
-            {
-              attribute: 'stylePreset',
-              type: 'MQ<string>',
-              description: `Overrides the stylePreset of the menuGroup`,
-            },
+            ...getLogicalPropsTable(undefined, 'title', {}),
           ],
         },
         {
@@ -819,13 +814,18 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               default: 'space020',
               description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
             },
-
-            {
-              attribute: 'spaceInset',
-              type: 'MQ<string>',
-              default: 'spaceInsetSquish030',
-              description: `Overrides the spaceInset of the Menu Item`,
-            },
+            ...getLogicalPropsTable(undefined, undefined, {
+              paddingBlock: [
+                'small = space020',
+                'medium = space020',
+                'large = space030',
+              ],
+              paddingInline: [
+                'small = space040',
+                'medium = space040',
+                'large = space050',
+              ],
+            }),
           ],
         },
         {
@@ -936,10 +936,26 @@ const MenuComponent = (layoutProps: LayoutProps) => (
               description: `Overrides the space between the leading icon and the label, as well as the label and the trailing icon`,
             },
             {
-              attribute: 'spaceInset',
+              attribute: 'paddingInline',
               type: 'MQ<string>',
-              default: 'space000',
-              description: `Overrides the spaceInset of the Menu Item`,
+              default: [
+                'small = space040',
+                'medium = space040',
+                'large = space050',
+              ],
+              description:
+                'It can take one space token to specify the logical inline start and end padding of the container. This space token can also be used on breakpoints.',
+            },
+            {
+              attribute: 'paddingBlock',
+              type: 'MQ<string>',
+              default: [
+                'small = space020',
+                'medium = space020',
+                'large = space030',
+              ],
+              description:
+                'It can take one space token to specify the logical block start and end padding of the container. This space token can also be used on breakpoints.',
             },
             {
               attribute: 'indicatorIcon',

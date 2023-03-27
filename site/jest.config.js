@@ -7,7 +7,6 @@ const paths = pathsToModuleNameMapper(compilerOptions.paths, {
 
 module.exports = {
   displayName: 'Site',
-  bail: 1,
   rootDir: './',
   setupFilesAfterEnv: ['<rootDir>/../src/test/test-framework-setup.ts'],
   testEnvironment: 'jsdom',
