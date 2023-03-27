@@ -34,11 +34,16 @@ const customStyle = {
   backgroundColor: '{{colors.inkBrand010}}',
   iconColor: '{{colors.amber020}}',
   borderRadius: '4px',
+  borderColor: '{{colors.inkBrand010}}',
 };
 
 const customCheckbox = {
-  'focus-visible': customStyle,
-  'checked:focus-visible': customStyle,
+  'checked:hover': customStyle,
+  'checked:focus': customStyle,
+  'checked:focus:hover': customStyle,
+  checked: customStyle,
+  'focus-visible': defaultFocusVisible,
+  focus: {},
 };
 
 const customOutline = {
