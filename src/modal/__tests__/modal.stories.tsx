@@ -329,7 +329,6 @@ export const StoryWithSelect = () =>
         }}
         header="Modal Title"
       >
-        {/* {modalContent} */}
         <Block>
           <Label
             htmlFor="id-1"
@@ -540,14 +539,17 @@ export const StoryModelessModal = () =>
       </div>
     );
   });
-StoryModelessModal.storyName = 'Modelss model';
+StoryModelessModal.storyName = 'Modeless modal';
 StoryModelessModal.parameters = StoryModalDefault.parameters;
 
 const ModalWrapper = styled.div`
-  margin: 20px 0 20px 350px;
+  margin: 20px 0 0 0;
+  padding: 20px;
   position: relative;
-  border: 1px solid orange;
-  background: lightgray;
+  border: 1px solid #3358cc;
+  background: transparent;
+  width: 700px;
+  height: 500px;
 `;
 
 export const StoryModelessInlineModal = () =>
@@ -556,17 +558,20 @@ export const StoryModelessInlineModal = () =>
 
     return (
       <div data-testid="scrollable-modal">
+        <Button
+          onClick={open}
+          data-testid="modal-open-button"
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+          }}
+        >
+          Open Modal
+        </Button>
         <ModalWrapper>
-          <Button
-            onClick={open}
-            data-testid="modal-open-button"
-            overrides={{
-              typographyPreset: 'utilityButton020',
-              stylePreset: 'buttonOutlinedPrimary',
-            }}
-          >
-            Open Modal
-          </Button>
+          <P overrides={{typographyPreset: 'editorialParagraph010'}}>
+            Inline modal opens here.
+          </P>
           <Modal
             open={isActive}
             onDismiss={close}
@@ -578,20 +583,13 @@ export const StoryModelessInlineModal = () =>
             disableFocusTrap
             inline
           >
-            <Select aria-describedby="id-2-at" id="id-2" size="medium">
-              {items.map(item => (
-                <SelectOption key={item} value={item}>
-                  {item}
-                </SelectOption>
-              ))}
-            </Select>
             {modalContent}
           </Modal>
         </ModalWrapper>
       </div>
     );
   });
-StoryModelessInlineModal.storyName = 'Modelss inline model';
+StoryModelessInlineModal.storyName = 'Modeless inline modal';
 StoryModelessInlineModal.parameters = StoryModalDefault.parameters;
 
 export const StoryNestedModals = () =>
