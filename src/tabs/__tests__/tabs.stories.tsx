@@ -75,15 +75,15 @@ const tabsCustomThemeObject: CreateThemeArgs = {
       },
       scrollArrowsCustom: {
         base: {
-          backgroundColor: '{{colors.amber010}}',
-          color: '{{colors.purple050}}',
-          iconColor: '{{colors.purple050}}',
+          backgroundColor: '{{colors.teal060}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
         },
         hover: {
-          backgroundColor: '{{colors.amber020}}',
+          backgroundColor: '{{colors.teal040}}',
         },
         active: {
-          backgroundColor: '{{colors.amber060}}',
+          backgroundColor: '{{colors.teal020}}',
         },
         disabled: {
           color: '{{colors.inkNonEssential}}',
@@ -621,10 +621,12 @@ StoryTabsWithScroll.parameters = {
 
 export const StoryTabsWithOverflowAndScroll = () => (
   <MainContainer>
-    <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
+    <StorybookSubHeading>Scroll - horizontal</StorybookSubHeading>
     <Tabs>
       {Array.from(Array(15)).map((_, i) => (
-        <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
+        <Tab label={`Tab ${i + 1}`}>
+          <LoremIpsum textNumber={1 + (i % 3)} />
+        </Tab>
       ))}
     </Tabs>
 
@@ -633,18 +635,23 @@ export const StoryTabsWithOverflowAndScroll = () => (
     <Container>
       <Tabs>
         {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here  ${i}`}>Content {i}</Tab>
+          <Tab label={`Tab ${i + 1}`}>
+            <LoremIpsum textNumber={1 + (i % 3)} />
+          </Tab>
         ))}
       </Tabs>
     </Container>
 
     <hr />
-    <hr />
+    <Spacer />
+    <StorybookSubHeading>Scroll - vertical</StorybookSubHeading>
 
     <Container>
       <Tabs vertical>
         {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
+          <Tab label={`Tab ${i + 1}`}>
+            <LoremIpsum textNumber={1 + (i % 3)} />
+          </Tab>
         ))}
       </Tabs>
     </Container>
@@ -652,6 +659,82 @@ export const StoryTabsWithOverflowAndScroll = () => (
 );
 StoryTabsWithOverflowAndScroll.storyName = 'Overflow and scroll';
 StoryTabsWithOverflowAndScroll.parameters = {
+  percy: {skip: true},
+};
+
+export const StoryTabsWithScrollOverrides = () => {
+  const CustomScroll = styled.div`
+    max-width: 100%;
+    overflow: auto;
+    border: 2px solid #017582;
+  `;
+
+  return (
+    <MainContainer>
+      <StorybookSubHeading>
+        Scroll overrides via component - horizontal
+      </StorybookSubHeading>
+      <Tabs
+        overrides={{
+          scroll: ({children, vertical}) => (
+            <Scroll controls="hover" snapAlign="center" vertical={vertical}>
+              {children}
+            </Scroll>
+          ),
+        }}
+      >
+        {Array.from(Array(15)).map((_, i) => (
+          <Tab label={`Tab ${i + 1}`}>
+            <LoremIpsum textNumber={1 + (i % 3)} />
+          </Tab>
+        ))}
+      </Tabs>
+      <hr />
+      <Tabs
+        overrides={{
+          scroll: ({children}) => <CustomScroll>{children}</CustomScroll>,
+        }}
+      >
+        {Array.from(Array(15)).map((_, i) => (
+          <Tab label={`Tab ${i + 1}`}>
+            <LoremIpsum textNumber={1 + (i % 3)} />
+          </Tab>
+        ))}
+      </Tabs>
+      <Spacer />
+
+      <StorybookSubHeading>
+        Scroll overrides via props - horizontal
+      </StorybookSubHeading>
+      <Tabs
+        overrides={{
+          scroll: {
+            props: {
+              scrollBar: true,
+              controls: 'hover',
+              overrides: {
+                controls: {
+                  button: {
+                    stylePreset: 'scrollArrowsCustom',
+                  },
+                  offset: '0px',
+                },
+              },
+            },
+          },
+        }}
+      >
+        {Array.from(Array(15)).map((_, i) => (
+          <Tab label={`Tab ${i + 1}`}>
+            <LoremIpsum textNumber={1 + (i % 3)} />
+          </Tab>
+        ))}
+      </Tabs>
+    </MainContainer>
+  );
+};
+StoryTabsWithScrollOverrides.storyName = 'Scroll overrides';
+StoryTabsWithScrollOverrides.parameters = {
   percy: {skip: true},
 };
 
@@ -1163,117 +1246,6 @@ StoryTabsWithPresetsOverridesOnIndividualTab.parameters = {
     enableJavaScript: true,
   },
 };
-
-export const StoryTabsWithScrollOverrides = () => {
-  const CustomScroll = styled.div`
-    max-width: 100%;
-    overflow: auto;
-    border: 5px solid red;
-  `;
-
-  return (
-    <MainContainer>
-      <StorybookHeading>Tabs With Scroll Overrides</StorybookHeading>
-      <StorybookSubHeading>
-        Tabs Horizontal With Scroll Overridies via Component
-      </StorybookSubHeading>
-      <Tabs
-        overrides={{
-          scroll: ({children, vertical}) => (
-            <Scroll controls="hover" snapAlign="center" vertical={vertical}>
-              {children}
-            </Scroll>
-          ),
-        }}
-      >
-        {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here ${i}`}>
-            <LoremIpsum textNumber={1} />
-          </Tab>
-        ))}
-      </Tabs>
-      <hr />
-      <Tabs
-        overrides={{
-          scroll: ({children}) => <CustomScroll>{children}</CustomScroll>,
-        }}
-      >
-        {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here  ${i}`}>
-            <LoremIpsum textNumber={1} />
-          </Tab>
-        ))}
-      </Tabs>
-
-      <StorybookSubHeading>
-        Tabs Horizontal With Scroll Overridies via Props
-      </StorybookSubHeading>
-      <Tabs
-        overrides={{
-          scroll: {
-            props: {
-              scrollBar: true,
-              controls: 'hover',
-              overrides: {
-                controls: {
-                  button: {
-                    stylePreset: 'scrollArrowsCustom',
-                  },
-                  offset: '0px',
-                },
-              },
-            },
-          },
-        }}
-      >
-        {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here ${i}`}>
-            <LoremIpsum textNumber={1} />
-          </Tab>
-        ))}
-      </Tabs>
-    </MainContainer>
-  );
-};
-StoryTabsWithScrollOverrides.storyName = 'tabs-with-scroll-overrides';
-StoryTabsWithScrollOverrides.parameters = {
-  percy: {skip: true},
-};
-
-// const transitionTheme = createTheme({
-//   name: 'my-custom-tab-theme',
-//   overrides: {
-//     transitionPresets: {
-//       customBackgroundColorChange: {
-//         base: {
-//           transitionProperty: 'background-color',
-//           transitionDuration: '100ms',
-//           transitionDelay: '500ms',
-//           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-//         },
-//       },
-//       customFontColorChange: {
-//         base: {
-//           transitionProperty: 'color',
-//           transitionDuration: '100ms',
-//           transitionDelay: '500ms',
-//           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-//         },
-//       },
-//     },
-//     stylePresets: {
-//       tabCustomPreset: {
-//         base: {
-//           backgroundColor: '{{colors.transparent}}',
-//         },
-//         hover: {
-//           backgroundColor: '{{colors.amber070}}',
-//           color: '{{colors.green040}}',
-//         },
-//       },
-//     },
-//   },
-// });
 
 export const StoryTabsTransitions = () => (
   <>
