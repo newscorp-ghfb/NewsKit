@@ -19,12 +19,7 @@ import {Block} from '../../block';
 import {styled} from '../../utils';
 import {GridLayout, GridLayoutItem} from '../../grid-layout';
 import {FormInputContext} from '../context';
-import {InlineMessage} from '../../inline-message';
-import {
-  IconFilledInfo,
-  IconFilledRemoveRedEye,
-  IconFilledStop,
-} from '../../icons';
+import {IconFilledRemoveRedEye, IconFilledStop} from '../../icons';
 import {IconButton} from '../../icon-button';
 import {Fieldset} from '../../fieldset';
 import {SelectOption} from '../../select';
@@ -297,55 +292,6 @@ export const StoryFormEmailInputExample = () => (
   </Container>
 );
 StoryFormEmailInputExample.storyName = 'Email input example';
-
-export const StoryFormKeyboardTabbing = () => (
-  <Container>
-    <Block spaceStack="space050">
-      <InlineMessage
-        role="region"
-        icon={
-          <IconFilledInfo
-            overrides={{
-              size: 'iconSize020',
-            }}
-          />
-        }
-      >
-        Use tab key to move through the inputs.
-      </InlineMessage>
-    </Block>
-    <Form onSubmit={onSubmit}>
-      <GridLayout rowGap="space050">
-        <GridLayoutItem>
-          <FormInput name="email" rules={emailValidation}>
-            <FormInputLabel>Email</FormInputLabel>
-            <FormInputTextField />
-            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
-          </FormInput>
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <FormInput name="username" rules={usernameValidation}>
-            <FormInputLabel>Username</FormInputLabel>
-            <FormInputTextField />
-            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
-          </FormInput>
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <FormInput name="username" rules={usernameValidation}>
-            <FormInputCheckbox
-              label="I agree to the terms & conditions"
-              overrides={{marginBlockEnd: '7px'}}
-            />
-          </FormInput>
-        </GridLayoutItem>
-        <GridLayoutItem>
-          <Button type="submit">Submit</Button>
-        </GridLayoutItem>
-      </GridLayout>
-    </Form>
-  </Container>
-);
-StoryFormKeyboardTabbing.storyName = 'Keyboard tabbing';
 
 export const StoryFormLogicalProps = () => (
   <Container>
