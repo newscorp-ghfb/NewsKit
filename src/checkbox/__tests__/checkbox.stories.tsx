@@ -30,6 +30,15 @@ const StyledDiv = styled.div`
   height: 100px;
 `;
 
+const hover = {
+  backgroundColor: 'red',
+  borderColor: 'red',
+};
+const checkedHover = {
+  backgroundColor: '{{colors.interactiveInput050}}',
+  borderColor: '{{colors.inkBrand010}}',
+};
+
 const customStyle = {
   backgroundColor: '{{colors.inkBrand010}}',
   iconColor: '{{colors.amber020}}',
@@ -38,12 +47,40 @@ const customStyle = {
 };
 
 const customCheckbox = {
+  checkboxInput: {
+    hover,
+    focus: {},
+    'focus:hover': hover,
+    'checked:hover': checkedHover,
+    'checked:focus:hover': checkedHover,
+    'focus-visible': defaultFocusVisible,
+    'checked:focus-visible': {
+      ...defaultFocusVisible,
+    },
+
+    'focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...hover,
+    },
+    'checked:focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...checkedHover,
+    },
+  },
+  base: {
+    backgroundColor: '{{colors.interfaceInformative020}}',
+    borderColor: '{{colors.interfaceInformative030}}',
+    borderWidth: '{{borders.borderWidth020}}',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    borderStyle: 'solid',
+    iconColor: '{{colors.inkInverse}}',
+  },
   'checked:hover': customStyle,
   'checked:focus': customStyle,
   'checked:focus:hover': customStyle,
   checked: customStyle,
-  'focus-visible': defaultFocusVisible,
-  focus: {},
+  'focus-visible:hover': customStyle,
+  'checked:focus-visible:hover': customStyle,
 };
 
 const customOutline = {
@@ -76,7 +113,6 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
         },
         'focus-visible': defaultFocusVisible,
       },
-      labelCustom: {base: {color: '{{colors.inkBrand010}}'}},
       customIconFilledCancel: {
         base: {
           backgroundColor: '{{colors.interfaceInformative010}}',
@@ -266,7 +302,7 @@ export const StoryCheckboxStylingOverrides = () => (
         },
         label: {
           typographyPreset: 'utilityBody020',
-          stylePreset: 'labelCustom',
+          stylePreset: 'inkBrand010',
         },
       }}
     />
