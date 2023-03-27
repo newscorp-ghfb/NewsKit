@@ -46,7 +46,6 @@ const customStyle = {
 
 const customCheckbox = {
   checkboxInput: {
-    hover,
     focus: {},
     'focus:hover': hover,
     'checked:hover': checkedHover,
