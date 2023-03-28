@@ -29,6 +29,14 @@ describe('DateTime', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders with timestamp', () => {
+    const timestamp = 1679993908342;
+    const fragment = renderToFragmentWithTheme(DateTime, {
+      date: timestamp,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders with overrides', () => {
     const fragment = renderToFragmentWithTheme(DateTime, {
       date: '2017-01-01T04:32:00.000Z',
