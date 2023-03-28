@@ -210,10 +210,10 @@ export const StorySwitchFieldset = () => (
 
 StorySwitchFieldset.storyName = 'Switch in fieldset';
 
-export const StyledIconCheck = () => (
+const StyledIconCheck = () => (
   <IconFilledCheck overrides={{stylePreset: 'customTrackIcon'}} />
 );
-export const StyledIconClose = () => (
+const StyledIconClose = () => (
   <IconFilledClose overrides={{stylePreset: 'customTrackIcon'}} />
 );
 
