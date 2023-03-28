@@ -7432,7 +7432,7 @@ exports[`Switch render with size: small 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Switch render with state: base 1`] = `
+exports[`Switch render with state: Base 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -7764,7 +7764,7 @@ exports[`Switch render with state: base 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
-          id="base"
+          id="Base"
           role="switch"
           type="checkbox"
         />
@@ -7779,7 +7779,7 @@ exports[`Switch render with state: base 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Switch render with state: checked 1`] = `
+exports[`Switch render with state: Checked 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -8073,7 +8073,7 @@ exports[`Switch render with state: checked 1`] = `
           checked=""
           class="emotion-8"
           data-testid="checkbox-input"
-          id="checked"
+          id="Checked"
           role="switch"
           type="checkbox"
         />
@@ -8088,7 +8088,7 @@ exports[`Switch render with state: checked 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Switch render with state: checked-disabled 1`] = `
+exports[`Switch render with state: Checked disabled 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -8327,7 +8327,7 @@ exports[`Switch render with state: checked-disabled 1`] = `
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
-          id="checked-disabled"
+          id="Checked disabled"
           role="switch"
           type="checkbox"
         />
@@ -8342,7 +8342,7 @@ exports[`Switch render with state: checked-disabled 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Switch render with state: disabled 1`] = `
+exports[`Switch render with state: Disabled 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -8580,7 +8580,7 @@ exports[`Switch render with state: disabled 1`] = `
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
-          id="disabled"
+          id="Disabled"
           role="switch"
           type="checkbox"
         />
