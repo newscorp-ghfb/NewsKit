@@ -100,7 +100,6 @@ export const parameters = {
 };
 
 export const decorators = [
-  // Add wrapper around stories to limit their size
   Story => {
     return (
       <StoryWrapper>
