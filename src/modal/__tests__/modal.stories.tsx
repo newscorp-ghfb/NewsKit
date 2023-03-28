@@ -113,7 +113,7 @@ export const StoryModalDefault = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modal
+          Open modal
         </Button>
         <Modal
           aria-label="Default Modal"
@@ -268,7 +268,7 @@ export const StoryWithHiddenOverlay = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modal
+          Open modal
         </Button>
         <Modal
           open={isActive}
@@ -372,7 +372,7 @@ export const StoryWithAriaAttributes = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modal
+          Open modal
         </Button>
         <Modal
           open={isActive}
@@ -489,7 +489,7 @@ export const StoryWithDisabledFocusTrap = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modal
+          Open modal
         </Button>
         <Modal
           open={isActive}
@@ -566,7 +566,7 @@ export const StoryModelessInlineModal = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modal
+          Open modal
         </Button>
         <ModalWrapper>
           <P overrides={{typographyPreset: 'editorialParagraph010'}}>
@@ -609,7 +609,7 @@ export const StoryNestedModals = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modal
+          Open modal
         </Button>
         <Modal
           aria-label="Default Modal"
@@ -680,7 +680,7 @@ export const StoryLogicalProps = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modal
+          Open modal
         </Button>
         <Modal
           aria-label="Default Modal"
