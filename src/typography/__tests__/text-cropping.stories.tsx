@@ -18,7 +18,7 @@ export default {
 };
 
 const StyledTextBlock = styled(TextBlock)`
-  ${getColorCssFromTheme('backgroundColor', 'blue010')}
+  ${getColorCssFromTheme('backgroundColor', 'interactivePrimary010')}
 `;
 
 const renderTextBlockWithPreset = (
@@ -31,7 +31,7 @@ const renderTextBlockWithPreset = (
 
   return presetList.map((preset: string) => (
     <StorybookCase title={` ${preset}`}>
-      <StyledTextBlock typographyPreset={preset}>
+      <StyledTextBlock stylePreset="inkBase" typographyPreset={preset}>
         The quick brown fox
       </StyledTextBlock>
     </StorybookCase>
