@@ -47,6 +47,12 @@ const ModaleCustomThemeObject: CreateThemeArgs = {
           borderStyle: 'none none solid none',
           borderWidth: '{{borders.borderWidth010}}',
           borderColor: '{{colors.inkBrand010}}',
+          color: '{{colors.inkBrand010}}',
+        },
+      },
+      modalContentCustom: {
+        base: {
+          color: '{{colors.inkBrand010}}',
         },
       },
       modalCloseButtonCustom: {
@@ -104,7 +110,6 @@ export const StoryModalDefault = () =>
 
     return (
       <div data-testid="scrollable-modal">
-        {/* <StorybookHeading>Default Modal</StorybookHeading> */}
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -120,6 +125,17 @@ export const StoryModalDefault = () =>
           open={isActive}
           onDismiss={close}
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {
               stylePreset: 'modalHeader',
               typographyPreset: 'utilityLabel030',
@@ -155,13 +171,22 @@ export const StoryOpenOnPageLoad = () =>
 
     return (
       <>
-        {/* <StorybookHeading>Open modal on page load</StorybookHeading>
-        <StorybookParah>Refresh the page to open the modal</StorybookParah> */}
         <Modal
           open={isActive}
           onDismiss={close}
           aria-label="Open modal on page load"
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
@@ -182,6 +207,17 @@ export const StoryWithCloseButtonOnTheLeft = () =>
         open
         onDismiss={() => {}}
         overrides={{
+          panel: {
+            width: '348px',
+            height: '249px',
+            minWidth: '20vw',
+            maxWidth: '80vw',
+            minHeight: '20vh',
+            maxHeight: {
+              xs: '90vh',
+              md: '85vh',
+            },
+          },
           header: {typographyPreset: 'utilityLabel030'},
         }}
         header="Modal Title"
@@ -197,12 +233,22 @@ StoryWithCloseButtonOnTheLeft.parameters = StoryModalDefault.parameters;
 export const StoryNoHeaderContent = () =>
   React.createElement(() => (
     <>
-      <StorybookHeading>Default with no header</StorybookHeading>
       <Modal
         aria-label="Default with no header"
         open
         onDismiss={() => {}}
         overrides={{
+          panel: {
+            width: '348px',
+            height: '249px',
+            minWidth: '20vw',
+            maxWidth: '80vw',
+            minHeight: '20vh',
+            maxHeight: {
+              xs: '90vh',
+              md: '85vh',
+            },
+          },
           header: {paddingInline: 'space000', paddingBlock: 'space000'},
         }}
         closePosition="left"
@@ -222,6 +268,17 @@ export const StoryNoClose = () =>
         aria-label="Default with no header"
         open
         overrides={{
+          panel: {
+            width: '348px',
+            height: '249px',
+            minWidth: '20vw',
+            maxWidth: '80vw',
+            minHeight: '20vh',
+            maxHeight: {
+              xs: '90vh',
+              md: '85vh',
+            },
+          },
           header: {typographyPreset: 'utilityLabel030'},
         }}
         header="Modal Title"
@@ -274,6 +331,17 @@ export const StoryWithHiddenOverlay = () =>
           open={isActive}
           onDismiss={close}
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
@@ -325,10 +393,24 @@ export const StoryWithSelect = () =>
         open
         onDismiss={() => {}}
         overrides={{
+          panel: {
+            width: '348px',
+            height: '249px',
+            minWidth: '20vw',
+            maxWidth: '80vw',
+            minHeight: '20vh',
+            maxHeight: {
+              xs: '90vh',
+              md: '85vh',
+            },
+          },
           header: {typographyPreset: 'utilityLabel030'},
         }}
         header="Modal Title"
       >
+        {modalContent}
+        <br />
+        <br />
         <Block>
           <Label
             htmlFor="id-1"
@@ -380,6 +462,17 @@ export const StoryWithAriaAttributes = () =>
           ariaLabelledby="modalHeader"
           ariaDescribedby="description purpose"
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
@@ -414,6 +507,17 @@ export const StoryWithCustomAutofocus = () =>
           ariaLabelledby="modalHeader"
           ariaDescribedby="description purpose"
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
@@ -463,6 +567,17 @@ export const StoryWithCustomRestoreFocus = () =>
           ariaDescribedby="description purpose"
           restoreFocusTo={elementToRestoreFocusTo}
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
@@ -495,6 +610,17 @@ export const StoryWithDisabledFocusTrap = () =>
           open={isActive}
           onDismiss={close}
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
@@ -522,12 +648,23 @@ export const StoryModelessModal = () =>
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
-          Open Modeless modal
+          Open modeless modal
         </Button>
         <Modal
           open={isActive}
           onDismiss={close}
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
@@ -576,6 +713,17 @@ export const StoryModelessInlineModal = () =>
             open={isActive}
             onDismiss={close}
             overrides={{
+              panel: {
+                width: '348px',
+                height: '249px',
+                minWidth: '20vw',
+                maxWidth: '80vw',
+                minHeight: '20vh',
+                maxHeight: {
+                  xs: '90vh',
+                  md: '85vh',
+                },
+              },
               header: {typographyPreset: 'utilityLabel030'},
             }}
             header="Modal Title"
@@ -616,16 +764,25 @@ export const StoryNestedModals = () =>
           open={isActive}
           onDismiss={close}
           overrides={{
+            panel: {
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
             header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
         >
           {modalContent}
-          <Stack
-            flow="vertical-center"
-            stackDistribution="center"
-            spaceInline="space020"
-          >
+          <br />
+          <br />
+          <Stack>
             <Button
               onClick={openNested}
               overrides={{
@@ -633,20 +790,19 @@ export const StoryNestedModals = () =>
                 stylePreset: 'buttonOutlinedPrimary',
               }}
             >
-              Open nested Modal
+              Open nested modal
             </Button>
 
             <Modal
               aria-label="Nested Modal"
               open={isNestedActive}
               onDismiss={closeNested}
-              header="Nested Modal"
+              header="Nested modal"
             >
-              <Stack
-                flow="vertical-center"
-                stackDistribution="center"
-                spaceInline="space020"
-              >
+              {modalContent}
+              <br />
+              <br />
+              <Stack>
                 <Button
                   onClick={closeNested}
                   overrides={{
@@ -688,11 +844,18 @@ export const StoryLogicalProps = () =>
           onDismiss={close}
           header="Modal Title"
           overrides={{
-            header: {typographyPreset: 'utilityLabel030'},
             panel: {
-              paddingInline: '15px',
-              paddingBlock: '30px',
+              width: '348px',
+              height: '249px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
             },
+            header: {typographyPreset: 'utilityLabel030'},
           }}
         >
           {modalContent}
@@ -733,12 +896,11 @@ export const StoryWithOverrides = () =>
           },
           header: {
             stylePreset: 'modalHeaderCustom',
-            typographyPreset: 'utilityLabel030',
           },
           content: {
             paddingInline: 'space060',
             paddingBlock: 'space060',
-            typographyPreset: 'inkBrand010',
+            stylePreset: 'modalContentCustom',
           },
           closeButton: {
             stylePreset: 'modalCloseButtonCustom',
