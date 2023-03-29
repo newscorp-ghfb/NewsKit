@@ -58,9 +58,11 @@ export const icons: [
   ],
 ];
 
+/* istanbul ignore next */
 export const StyledIconCheck = () => (
   <IconFilledCheck overrides={{stylePreset: 'customTrackIcon', size: '15px'}} />
 );
+/* istanbul ignore next */
 export const StyledIconClose = () => (
   <IconFilledClose overrides={{stylePreset: 'customTrackIcon', size: '15px'}} />
 );
