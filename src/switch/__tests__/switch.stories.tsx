@@ -8,8 +8,6 @@ import {
   CreateThemeArgs,
   Fieldset,
   GridLayout,
-  GridLayoutItem,
-  TextBlock,
   ThemeProvider,
 } from '../..';
 import {IconFilledCheck, IconFilledClose} from '../../icons';
@@ -21,6 +19,7 @@ import {
   states,
 } from './helpers';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 
 const switchCustomThemeObject: CreateThemeArgs = {
   name: 'bordered-thumb-theme',
@@ -75,68 +74,54 @@ const switchCustomThemeObject: CreateThemeArgs = {
 const properCase = (s: string) =>
   `${s.slice(0, 1).toUpperCase()}${s.substring(1)}`;
 
-const Header = ({children}: {children: React.ReactNode}) => (
-  <TextBlock
-    as="h2"
-    stylePreset="inkSubtle"
-    typographyPreset="utilityBody010"
-    marginBlockEnd="space050"
-  >
-    {children}
-  </TextBlock>
-);
-
 export const StorySwitchDefault = () => <Switch label="Label" defaultChecked />;
 
 StorySwitchDefault.storyName = 'Default';
 
 export const StorySwitchSizes = () => (
-  <>
+  <StorybookPage>
     {[false, true].map(defaultChecked => (
-      <Block marginBlockEnd="space050">
-        <Header>{defaultChecked ? 'Checked' : 'Base'}</Header>
+      <StorybookCase title={defaultChecked ? 'Checked' : 'Base'}>
         <GridLayout
           columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
           rowGap="space020"
           columnGap="space020"
         >
           {sizes.map(size => (
-            <GridLayoutItem>
-              <Header>{properCase(size)}</Header>
+            <StorybookCase title={properCase(size)}>
               <Switch
                 label="Label"
                 defaultChecked={defaultChecked}
                 size={size}
               />
-            </GridLayoutItem>
+            </StorybookCase>
           ))}
         </GridLayout>
-      </Block>
+      </StorybookCase>
     ))}
-  </>
+  </StorybookPage>
 );
 
 StorySwitchSizes.storyName = 'Sizes';
 
 export const StorySwitchStates = () => (
-  <GridLayout
+  <StorybookPage
     columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr 1fr'}}
     rowGap="space050"
     columnGap="space020"
   >
     {states.map(([label, props]) => (
-      <GridLayoutItem>
-        <Header>{label}</Header>
+      <StorybookCase title={label}>
         <Switch label="Label" {...props} />
-      </GridLayoutItem>
+      </StorybookCase>
     ))}
-  </GridLayout>
+  </StorybookPage>
 );
 
 StorySwitchStates.storyName = 'States';
 
 export const StorySwitchThumbAndTrackIconOptions = () => (
-  <GridLayout
+  <StorybookPage
     columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
     rowGap="space050"
     columnGap="space020"
@@ -149,8 +134,7 @@ export const StorySwitchThumbAndTrackIconOptions = () => (
           defaultChecked,
         },
       ]) => (
-        <GridLayoutItem>
-          <Header>{label}</Header>
+        <StorybookCase title={label}>
           <Switch
             label="Label"
             defaultChecked={defaultChecked}
@@ -160,10 +144,10 @@ export const StorySwitchThumbAndTrackIconOptions = () => (
               offIcon,
             }}
           />
-        </GridLayoutItem>
+        </StorybookCase>
       ),
     )}
-  </GridLayout>
+  </StorybookPage>
 );
 
 StorySwitchThumbAndTrackIconOptions.storyName = 'Thumb and track icon options';
@@ -174,10 +158,9 @@ const HorizontalLine = styled.div`
 `;
 
 export const StorySwitchLabels = () => (
-  <GridLayout columns="250px 250px" rowGap="space020" columnGap="space020">
+  <StorybookPage columns="250px 250px" rowGap="space020" columnGap="space020">
     {labelPositions.map(labelPosition => (
-      <GridLayoutItem>
-        <Header>{properCase(labelPosition)}</Header>
+      <StorybookCase title={properCase(labelPosition)}>
         <Block marginBlockEnd="space050">
           <Switch labelPosition={labelPosition} label="Label" />
         </Block>
@@ -188,9 +171,9 @@ export const StorySwitchLabels = () => (
             label="This is a very long label to show how the label aligns to the switch"
           />
         </Block>
-      </GridLayoutItem>
+      </StorybookCase>
     ))}
-  </GridLayout>
+  </StorybookPage>
 );
 
 StorySwitchLabels.storyName = 'Label alignment';
@@ -237,18 +220,17 @@ export const StorySwitchStylingOverrides = () => (
 StorySwitchStylingOverrides.storyName = 'Styling overrides';
 
 export const StorySwitchOverrides = () => (
-  <GridLayout
+  <StorybookPage
     columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
     rowGap="space050"
     columnGap="space020"
   >
     {overrideScenarios.map(([label, overrides]) => (
-      <GridLayoutItem>
-        <Header>{label}</Header>
+      <StorybookCase title={label}>
         <Switch label="Label" defaultChecked overrides={overrides} />
-      </GridLayoutItem>
+      </StorybookCase>
     ))}
-  </GridLayout>
+  </StorybookPage>
 );
 
 StorySwitchOverrides.storyName = 'Overrides';
