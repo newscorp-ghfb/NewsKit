@@ -25,6 +25,19 @@ const switchCustomThemeObject: CreateThemeArgs = {
   name: 'bordered-thumb-theme',
   overrides: {
     stylePresets: {
+      customFeedback: {
+        base: {
+          backgroundColor: '{{colors.inkBrand010}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          opacity: '{{overlays.opacity000}}',
+        },
+        hover: {
+          opacity: '{{overlays.opacity020}}',
+        },
+        'hover:active': {
+          opacity: '{{overlays.opacity040}}',
+        },
+      },
       customThumb: {
         base: {
           backgroundColor: '{{colors.interfaceInformative020}}',
@@ -210,6 +223,9 @@ export const StorySwitchStylingOverrides = () => (
       },
       input: {
         stylePreset: 'customInput',
+      },
+      feedback: {
+        stylePreset: 'customFeedback',
       },
       onIcon: StyledIconCheck,
       offIcon: StyledIconClose,
