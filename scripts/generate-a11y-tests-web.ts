@@ -1,38 +1,39 @@
-import { routes } from './../site/routes';
 import fse from 'fs-extra';
-import fs from 'node:fs';
 
-const path = "cypress/site/functional/a11y/";
+import {routes as siteRoutes} from '../site/routes';
 
-interface route {
-    id: string;
-    subNav?: Array<route>;
+interface Route {
+  id: string;
+  subNav?: Array<Route>;
 }
 
-const flattenRoutes = (routes: route[]): Array<String> => routes
-    .map(r => r.subNav ? [r.id, ...flattenRoutes(r.subNav)] as Array<String> : [r.id])
+const flattenRoutes = (routes: Route[]): Array<String> =>
+  routes
+    .map(r =>
+      r.subNav ? ([r.id, ...flattenRoutes(r.subNav)] as Array<String>) : [r.id],
+    )
     .flat();
 
-const flatRoutes = flattenRoutes(routes);
-
-fse.emptyDirSync(path, { recursive: true });
-
-const fileForRoute = (route: String) =>
-    `// / <reference types="Cypress" />
-import {runA11yTestForRoute} from './../accessibility.common';
+const fileForRoute = (route: String) => {
+  const relativeImportDepth = route.split('').filter(f => f === '/').length;
+  const importPath = `${'../'.repeat(relativeImportDepth)}accessibility.common`;
+  return `// / <reference types="Cypress" />
+import {runA11yTestForRoute} from '${importPath}';
 
 runA11yTestForRoute('${route}');
 `;
+};
 
+const path = 'cypress/site/functional/a11y';
 const fileNameForRoute = (route: String) => `${path}${route}.cy.js`;
 
-flatRoutes.forEach(async fr => {
-    await fs.writeFile(fileNameForRoute(fr), fileForRoute(fr), (err) => {
-        if (err) throw 'failed to write file';
-    });
-});
+(async () => {
+  const flatRoutes = flattenRoutes(siteRoutes);
+  await fse.emptyDirSync(path);
+  // Special case as not included in routes object
+  await fse.outputFile(fileNameForRoute('/home'), fileForRoute('/'));
 
-
-console.log(flattenRoutes(routes).length);
-console.log(flattenRoutes(routes).join(','));
-
+  flatRoutes.forEach(async fr => {
+    await fse.outputFile(fileNameForRoute(fr), fileForRoute(fr));
+  });
+})();
