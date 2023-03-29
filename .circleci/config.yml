@@ -830,7 +830,7 @@ jobs:
       - run:
           name: Run Docs Site Functional Tests
           command: |
-            make e2e_test_docs
+            yarn e2e:docs:ci
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
