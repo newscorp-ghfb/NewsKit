@@ -1,7 +1,6 @@
 ---
 name: Technical Spike
 about: Details a piece of technical research or an investigation that needs to be conducted
-title: '(Spike) - '
 labels: ["spike", "triage"]
 assignees: ''
 

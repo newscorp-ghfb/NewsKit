@@ -1,7 +1,6 @@
 ---
 name: A11y Investigation
-about: Details an accessibility investigation that needs to be done 
-title: '(A11y) - '
+about: Details an accessibility investigation that needs to be done
 labels: ["a11y", "triage"]
 assignees: ''
 
