@@ -24,6 +24,7 @@ import {IconButton} from '../../icon-button';
 import {Fieldset} from '../../fieldset';
 import {SelectOption} from '../../select';
 import {RadioGroup} from '../../radio-button';
+import {StorybookPage} from '../../test/storybook-comps';
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -86,7 +87,7 @@ const Container = styled.div`
 `;
 
 export const StoryFormDefault = () => (
-  <Container>
+  <StorybookPage>
     <Form onSubmit={onSubmit}>
       <GridLayout rowGap="space050">
         <GridLayoutItem>
@@ -108,12 +109,12 @@ export const StoryFormDefault = () => (
         </GridLayoutItem>
       </GridLayout>
     </Form>
-  </Container>
+  </StorybookPage>
 );
 StoryFormDefault.storyName = 'Default';
 
 export const StoryFormSubmitValidation = () => (
-  <Container>
+  <StorybookPage>
     <Form onSubmit={onSubmit}>
       <GridLayout rowGap="space050">
         <GridLayoutItem>
@@ -133,12 +134,12 @@ export const StoryFormSubmitValidation = () => (
         </GridLayoutItem>
       </GridLayout>
     </Form>
-  </Container>
+  </StorybookPage>
 );
 StoryFormSubmitValidation.storyName = 'Submit validation';
 
 export const StoryFormYupResolver = () => (
-  <Container data-testid="yup-resolver">
+  <StorybookPage data-testid="yup-resolver">
     <Form onSubmit={onSubmit} resolver={yupResolver(schema)}>
       <GridLayout rowGap="space050">
         <GridLayoutItem>
@@ -162,12 +163,12 @@ export const StoryFormYupResolver = () => (
         </GridLayoutItem>
       </GridLayout>
     </Form>
-  </Container>
+  </StorybookPage>
 );
 StoryFormYupResolver.storyName = 'Yup schema validation';
 
 export const StoryFormValidationAndAssistiveText = () => (
-  <Container>
+  <StorybookPage>
     <Form onSubmit={onSubmit}>
       <GridLayout rowGap="space050">
         <GridLayoutItem>
@@ -189,7 +190,7 @@ export const StoryFormValidationAndAssistiveText = () => (
         </GridLayoutItem>
       </GridLayout>
     </Form>
-  </Container>
+  </StorybookPage>
 );
 StoryFormValidationAndAssistiveText.storyName = 'Validation and assistive text';
 
@@ -247,7 +248,7 @@ const FormInputPhoneNumber = React.forwardRef<HTMLInputElement>(() => {
 });
 
 export const StoryFormPhoneInputExample = () => (
-  <Container>
+  <StorybookPage>
     <Form onSubmit={onSubmit}>
       <GridLayout rowGap="space050">
         <GridLayoutItem>
@@ -269,7 +270,7 @@ export const StoryFormPhoneInputExample = () => (
         </GridLayoutItem>
       </GridLayout>
     </Form>
-  </Container>
+  </StorybookPage>
 );
 StoryFormPhoneInputExample.storyName = 'Phone input example';
 
@@ -294,7 +295,7 @@ export const StoryFormEmailInputExample = () => (
 StoryFormEmailInputExample.storyName = 'Email input example';
 
 export const StoryFormLogicalProps = () => (
-  <Container>
+  <StorybookPage>
     <Form onSubmit={onSubmit}>
       <GridLayout rowGap="space050">
         <GridLayoutItem>
@@ -311,19 +312,9 @@ export const StoryFormLogicalProps = () => (
         </GridLayoutItem>
       </GridLayout>
     </Form>
-  </Container>
+  </StorybookPage>
 );
 StoryFormLogicalProps.storyName = 'Logical props';
-
-const FormContainer = styled.div`
-  height: 700px;
-  overflow: auto;
-  max-width: 500px;
-  padding: 20px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-`;
 
 const ShowPasswordButton = ({
   onClick,
@@ -349,7 +340,7 @@ const ShowPasswordButton = ({
 export const StoryFormComplete = () => {
   const [showPassword, toggleShowPassword] = React.useState(false);
   return (
-    <FormContainer>
+    <StorybookPage>
       <Form onSubmit={console.log}>
         <Fieldset legend="Personal">
           <Block marginBlockStart="space020" marginBlockEnd="space050">
@@ -545,7 +536,7 @@ export const StoryFormComplete = () => {
 
         <Button type="submit">Register</Button>
       </Form>
-    </FormContainer>
+    </StorybookPage>
   );
 };
 StoryFormComplete.storyName = 'Form complete';
