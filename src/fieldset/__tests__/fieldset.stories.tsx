@@ -9,9 +9,8 @@ import {Button} from '../../button';
 import {Heading3} from '../../typography';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
-import {TextBlock} from '../../text-block';
-import {GridLayout} from '../../grid-layout';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 
 const myCustomTheme: CreateThemeArgs = {
   name: 'my-custom-fieldset-theme',
@@ -89,17 +88,6 @@ const StyledDiv = styled.div`
   border: 1px red dotted;
 `;
 
-const Header = ({children}: {children: React.ReactNode}) => (
-  <TextBlock
-    as="h2"
-    stylePreset="inkSubtle"
-    typographyPreset="utilityBody010"
-    marginBlockEnd="space050"
-  >
-    {children}
-  </TextBlock>
-);
-
 export const StoryFieldsetDefault = () => (
   <Fieldset legend="Legend">
     <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
@@ -109,13 +97,12 @@ export const StoryFieldsetDefault = () => (
 StoryFieldsetDefault.storyName = 'Default';
 
 export const LegendSizing = () => (
-  <GridLayout
+  <StorybookPage
     columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
     rowGap="space020"
     columnGap="space020"
   >
-    <Block>
-      <Header>Small</Header>
+    <StorybookCase title="Small">
       <Fieldset legend="Legend" size="small">
         <Checkbox
           label="Label"
@@ -124,9 +111,8 @@ export const LegendSizing = () => (
         />
         <AssistiveText size="small">Assistive Text</AssistiveText>
       </Fieldset>
-    </Block>
-    <Block>
-      <Header>Medium</Header>
+    </StorybookCase>
+    <StorybookCase title="Medium">
       <Fieldset legend="Legend" size="medium">
         <Checkbox
           label="Label"
@@ -135,9 +121,8 @@ export const LegendSizing = () => (
         />
         <AssistiveText size="medium">Assistive Text</AssistiveText>
       </Fieldset>
-    </Block>
-    <Block>
-      <Header>Large</Header>
+    </StorybookCase>
+    <StorybookCase title="Large">
       <Fieldset legend="Legend" size="large">
         <Checkbox
           label="Label"
@@ -146,33 +131,30 @@ export const LegendSizing = () => (
         />
         <AssistiveText size="large">Assistive Text</AssistiveText>
       </Fieldset>
-    </Block>
-  </GridLayout>
+    </StorybookCase>
+  </StorybookPage>
 );
 LegendSizing.storyName = 'Size';
 
 export const LegendVariations = () => (
-  <GridLayout
+  <StorybookPage
     columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
     rowGap="space020"
     columnGap="space020"
   >
-    <Block>
-      <Header>Heading</Header>
+    <StorybookCase title="Heading">
       <Fieldset legend={<Heading3>Legend</Heading3>}>
         <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
         <AssistiveText>Assistive Text</AssistiveText>
       </Fieldset>
-    </Block>
-    <Block>
-      <Header>Button</Header>
+    </StorybookCase>
+    <StorybookCase title="Button">
       <Fieldset legend={<Button>Legend</Button>}>
         <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
         <AssistiveText>Assistive Text</AssistiveText>
       </Fieldset>
-    </Block>
-    <Block>
-      <Header>Image</Header>
+    </StorybookCase>
+    <StorybookCase title="Image">
       <Fieldset
         legend={
           <Image
@@ -186,8 +168,8 @@ export const LegendVariations = () => (
         <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
         <AssistiveText>Assistive Text</AssistiveText>
       </Fieldset>
-    </Block>
-  </GridLayout>
+    </StorybookCase>
+  </StorybookPage>
 );
 LegendVariations.storyName = 'Different legends';
 
@@ -272,9 +254,8 @@ export const FieldsetWithOverrides = () => (
 FieldsetWithOverrides.storyName = 'Styling overrides';
 
 export const FieldsetWithLogicalPropsOverrides = () => (
-  <GridLayout rowGap="space020">
-    <div>
-      <Header>Padding overrides</Header>
+  <StorybookPage rowGap="space020">
+    <StorybookCase title="Padding overrides">
       <Fieldset
         legend="Legend"
         overrides={{
@@ -285,9 +266,8 @@ export const FieldsetWithLogicalPropsOverrides = () => (
         <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
         <AssistiveText>Assistive Text</AssistiveText>
       </Fieldset>
-    </div>
-    <div>
-      <Header>Margin overrides</Header>
+    </StorybookCase>
+    <StorybookCase title="Margin overrides">
       <Fieldset
         legend="Legend"
         overrides={{
@@ -298,9 +278,8 @@ export const FieldsetWithLogicalPropsOverrides = () => (
         <Checkbox label="Label" overrides={{spaceStack: 'space030'}} />
         <AssistiveText>Assistive Text</AssistiveText>
       </Fieldset>
-    </div>
-    <div>
-      <Header>Custom outline</Header>
+    </StorybookCase>
+    <StorybookCase title="Custom outline">
       <StyledDiv>
         <Fieldset
           legend="Legend"
@@ -313,7 +292,7 @@ export const FieldsetWithLogicalPropsOverrides = () => (
           <AssistiveText>Assistive Text</AssistiveText>
         </Fieldset>
       </StyledDiv>
-    </div>
-  </GridLayout>
+    </StorybookCase>
+  </StorybookPage>
 );
 FieldsetWithLogicalPropsOverrides.storyName = 'Overrides';
