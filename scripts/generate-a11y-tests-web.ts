@@ -5,13 +5,19 @@ import {routes as siteRoutes} from '../site/routes';
 interface Route {
   id: string;
   subNav?: Array<Route>;
+  page?: boolean;
 }
 
 const flattenRoutes = (routes: Route[]): Array<String> =>
   routes
-    .map(r =>
-      r.subNav ? ([r.id, ...flattenRoutes(r.subNav)] as Array<String>) : [r.id],
-    )
+    .map(r => {
+      if (r.page) {
+        return r.subNav
+          ? ([r.id, ...flattenRoutes(r.subNav)] as Array<String>)
+          : [r.id];
+      }
+      return r.subNav ? ([...flattenRoutes(r.subNav)] as Array<String>) : [];
+    })
     .flat();
 
 const fileForRoute = (route: String) => {
