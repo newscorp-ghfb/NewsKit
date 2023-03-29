@@ -315,14 +315,16 @@ const DateTimeComponent = (layoutProps: LayoutProps) => (
               type: 'string | number',
               description: (
                 <>
-                  Timestamp string of the date to be displayed. Provide this in
-                  the ISO8601 format that is understood by the native{' '}
+                  Provide this value in a format that is understood by the
+                  native{' '}
                   <Link
                     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date"
                     target="_blank"
                   >
-                    date object
+                    Date object
                   </Link>
+                  , for example, timestamp number or date string in ISO 8601
+                  format
                 </>
               ),
               required: true,
