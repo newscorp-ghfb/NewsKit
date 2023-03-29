@@ -55,6 +55,20 @@ const ModaleCustomThemeObject: CreateThemeArgs = {
           color: '{{colors.inkBrand010}}',
         },
       },
+      modalCustom: {
+        base: {
+          // @ts-ignore
+          width: '348px',
+          height: '249px',
+          minWidth: '20vw',
+          maxWidth: '80vw',
+          minHeight: '20vh',
+          maxHeight: {
+            xs: '90vh',
+            md: '85vh',
+          },
+        },
+      },
       modalCloseButtonCustom: {
         base: {
           borderWidth: '{{borders.borderWidth010}}',
@@ -125,17 +139,7 @@ export const StoryModalDefault = () =>
           open={isActive}
           onDismiss={close}
           overrides={{
-            panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
-            },
+            stylepreset: 'modalCustom',
             header: {
               stylePreset: 'modalHeader',
               typographyPreset: 'utilityLabel030',
