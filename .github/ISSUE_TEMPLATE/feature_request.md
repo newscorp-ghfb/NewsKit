@@ -1,7 +1,6 @@
 ---
 name: Feature request
 about: Suggest a feature/enhancement for NewsKit - External teams should use this instead of story,task,spike etc.
-title: ''
 labels: ["request", "triage"]
 assignees: ''
 

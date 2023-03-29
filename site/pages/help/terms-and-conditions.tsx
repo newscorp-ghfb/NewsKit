@@ -39,44 +39,51 @@ const Introduction = ({path, ...props}: LayoutProps) => (
       name="Website terms and conditions of use"
       introduction={
         <>
-          <P overrides={contentOverrides}>
-            Welcome to the Website Terms and Conditions of Use (<b>Terms</b>)
-            which apply to{' '}
-            <Link href="https://newskit.co.uk/" target="_blank">
-              https://newskit.co.uk/
-            </Link>{' '}
-            (the <b>Website</b>).
-            <br />
-            <br />
-            By using our Website you agree to be legally bound by these Terms.
-            If you do not agree to these Terms, you should not use our Website.
-            <br />
-            <br />
-            On this Website, we make available various software components,
-            features and tools (<b>Components</b>), including code which has
-            been developed by or on behalf of News UK to form the basis of
-            NewsKit (<b>NewsKit OSS</b>).
-            <br />
-            <br />
-            Separate terms may apply to your usage of NewsKit OSS and other
-            Components, including these{' '}
-            <Link
-              href="https://github.com/newscorp-ghfb/newskit/blob/main/LICENSE"
-              target="_blank"
-            >
-              Open Source Terms
-            </Link>
-            . You should ensure that you check, and comply with, the terms of
-            the licences for any such Components before using them.
-            <br />
-            <br />
-            In the event of a conflict between these Terms and the Open Source
-            Terms in any way, the Open Source Terms shall prevail in relation to
-            your usage of any Components (including NewsKit OSS).
-          </P>
+          Welcome to the Website Terms and Conditions of Use (<b>Terms</b>)
+          which apply to{' '}
+          <Link href="https://newskit.co.uk/" target="_blank">
+            https://newskit.co.uk/
+          </Link>{' '}
+          (the <b>Website</b>).
         </>
       }
     />
+    <ComponentPageCell>
+      <ContentSection>
+        <ContentSecondary
+          description={
+            <>
+              By using our Website you agree to be legally bound by these Terms.
+              If you do not agree to these Terms, you should not use our
+              Website.
+              <br />
+              <br />
+              On this Website, we make available various software components,
+              features and tools (<b>Components</b>), including code which has
+              been developed by or on behalf of News UK to form the basis of
+              NewsKit (<b>NewsKit OSS</b>).
+              <br />
+              <br />
+              Separate terms may apply to your usage of NewsKit OSS and other
+              Components, including these{' '}
+              <Link
+                href="https://github.com/newscorp-ghfb/newskit/blob/main/LICENSE"
+                target="_blank"
+              >
+                Open Source Terms
+              </Link>
+              . You should ensure that you check, and comply with, the terms of
+              the licences for any such Components before using them.
+              <br />
+              <br />
+              In the event of a conflict between these Terms and the Open Source
+              Terms in any way, the Open Source Terms shall prevail in relation
+              to your usage of any Components (including NewsKit OSS).
+            </>
+          }
+        />
+      </ContentSection>
+    </ComponentPageCell>
 
     <ComponentPageCell>
       <ContentSection sectionName="accessing and using our website">
