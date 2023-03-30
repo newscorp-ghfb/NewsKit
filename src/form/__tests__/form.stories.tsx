@@ -82,10 +82,6 @@ export default {
   },
 };
 
-const Container = styled.div`
-  max-width: 300px;
-`;
-
 export const StoryFormDefault = () => (
   <StorybookPage>
     <Form onSubmit={onSubmit}>
@@ -275,7 +271,7 @@ export const StoryFormPhoneInputExample = () => (
 StoryFormPhoneInputExample.storyName = 'Phone input example';
 
 export const StoryFormEmailInputExample = () => (
-  <Container>
+  <StorybookPage>
     <Form onSubmit={onSubmit}>
       <GridLayout rowGap="space050">
         <GridLayoutItem>
@@ -290,7 +286,7 @@ export const StoryFormEmailInputExample = () => (
         </GridLayoutItem>
       </GridLayout>
     </Form>
-  </Container>
+  </StorybookPage>
 );
 StoryFormEmailInputExample.storyName = 'Email input example';
 
