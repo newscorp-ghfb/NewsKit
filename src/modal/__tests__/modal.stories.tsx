@@ -22,19 +22,12 @@ const modalContent = (
 
 const modalPanel = {
   base: {
+    backgroundColor: '{{colors.interface020}}',
     borderRadius: '{{borders.borderRadiusDefault}}',
-    backgroundColor: '{{colors.white}}',
-    boxShadow: '{{shadows.shadow060}}',
   },
 };
 
-const modalcustomBg = {
-  base: {
-    backgroundColor: '{{colors.interfaceInformative020}}',
-  },
-};
-
-const customModal = {
+const modalPanelCustomHeightWidth = {
   base: {
     width: '348px',
     height: '249px',
@@ -48,24 +41,16 @@ const customModal = {
   },
 };
 
+const modalPanelCustomBg = {
+  base: {
+    backgroundColor: '{{colors.interfaceInformative020}}',
+  },
+};
+
 const ModaleCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-modal-theme',
   overrides: {
     stylePresets: {
-      customModal: {
-        base: {
-          // @ts-ignore
-          width: '348px',
-          height: '249px',
-          minWidth: '20vw',
-          maxWidth: '80vw',
-          minHeight: '20vh',
-          maxHeight: {
-            xs: '90vh',
-            md: '85vh',
-          },
-        },
-      },
       modalHeader: {
         base: {
           backgroundColor: '{{colors.transparent}}',
@@ -77,11 +62,7 @@ const ModaleCustomThemeObject: CreateThemeArgs = {
       overlayCustom: {
         base: {
           backgroundColor: '{{colors.overlayTintBase010}}',
-        },
-      },
-      modalPanelCustom: {
-        base: {
-          backgroundColor: '{{colors.interfaceInformative020}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
         },
       },
       modalHeaderCustom: {
@@ -98,20 +79,6 @@ const ModaleCustomThemeObject: CreateThemeArgs = {
           color: '{{colors.inkBrand010}}',
         },
       },
-      modalCustom: {
-        base: {
-          // @ts-ignore
-          width: '348px',
-          height: '249px',
-          minWidth: '20vw',
-          maxWidth: '80vw',
-          minHeight: '20vh',
-          maxHeight: {
-            xs: '90vh',
-            md: '85vh',
-          },
-        },
-      },
       modalCloseButtonCustom: {
         base: {
           borderWidth: '{{borders.borderWidth010}}',
@@ -120,9 +87,13 @@ const ModaleCustomThemeObject: CreateThemeArgs = {
         },
       },
 
-      modalcustomtest: deepMerge({}, modalcustomBg, customModal),
+      modalPanelCustom: deepMerge(
+        {},
+        modalPanelCustomBg,
+        modalPanelCustomHeightWidth,
+      ),
 
-      modelcustomdefault: deepMerge({}, modalPanel, customModal),
+      modalPanelDefault: deepMerge({}, modalPanel, modalPanelCustomHeightWidth),
     },
   },
 };
@@ -187,11 +158,10 @@ export const StoryModalDefault = () =>
           onDismiss={close}
           overrides={{
             panel: {
-              stylePreset: 'customModalJanani',
+              stylePreset: 'modalPanelDefault',
             },
-            header: {typographyPreset: 'utilityLabel030'},
           }}
-          header="Modal Title"
+          header="Modal Title test"
         >
           {modalContent}
         </Modal>
@@ -227,9 +197,9 @@ export const StoryOpenOnPageLoad = () =>
           aria-label="Open modal on page load"
           overrides={{
             panel: {
-              stylePreset: 'modelcustomdefault',
+              stylePreset: 'modalPanelDefault',
             },
-            header: {typographyPreset: 'utilityLabel030'},
+            // header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
         >
@@ -250,17 +220,9 @@ export const StoryWithCloseButtonOnTheLeft = () =>
         onDismiss={() => {}}
         overrides={{
           panel: {
-            width: '348px',
-            height: '249px',
-            minWidth: '20vw',
-            maxWidth: '80vw',
-            minHeight: '20vh',
-            maxHeight: {
-              xs: '90vh',
-              md: '85vh',
-            },
+            stylePreset: 'modalPanelDefault',
           },
-          header: {typographyPreset: 'utilityLabel030'},
+          // header: {typographyPreset: 'utilityLabel030'},
         }}
         header="Modal Title"
         closePosition="left"
@@ -281,15 +243,7 @@ export const StoryNoHeaderContent = () =>
         onDismiss={() => {}}
         overrides={{
           panel: {
-            width: '348px',
-            height: '249px',
-            minWidth: '20vw',
-            maxWidth: '80vw',
-            minHeight: '20vh',
-            maxHeight: {
-              xs: '90vh',
-              md: '85vh',
-            },
+            stylePreset: 'modalPanelDefault',
           },
           header: {paddingInline: 'space000', paddingBlock: 'space000'},
         }}
@@ -311,15 +265,7 @@ export const StoryNoClose = () =>
         open
         overrides={{
           panel: {
-            width: '348px',
-            height: '249px',
-            minWidth: '20vw',
-            maxWidth: '80vw',
-            minHeight: '20vh',
-            maxHeight: {
-              xs: '90vh',
-              md: '85vh',
-            },
+            stylePreset: 'modalPanelDefault',
           },
           header: {typographyPreset: 'utilityLabel030'},
         }}
@@ -374,15 +320,7 @@ export const StoryWithHiddenOverlay = () =>
           onDismiss={close}
           overrides={{
             panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+              stylePreset: 'modalPanelDefault',
             },
             header: {typographyPreset: 'utilityLabel030'},
           }}
@@ -435,15 +373,7 @@ export const StoryWithSelect = () =>
         onDismiss={() => {}}
         overrides={{
           panel: {
-            width: '348px',
-            height: '320px',
-            minWidth: '20vw',
-            maxWidth: '80vw',
-            minHeight: '20vh',
-            maxHeight: {
-              xs: '90vh',
-              md: '85vh',
-            },
+            stylePreset: 'modalPanelDefault',
           },
           header: {typographyPreset: 'utilityLabel030'},
         }}
@@ -511,15 +441,7 @@ export const StoryWithAriaAttributes = () =>
           ariaDescribedby="description purpose"
           overrides={{
             panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+              stylePreset: 'modalPanelDefault',
             },
             header: {typographyPreset: 'utilityLabel030'},
           }}
@@ -556,15 +478,7 @@ export const StoryWithCustomAutofocus = () =>
           ariaDescribedby="description purpose"
           overrides={{
             panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+              stylePreset: 'modalPanelDefault',
             },
             header: {typographyPreset: 'utilityLabel030'},
           }}
@@ -616,15 +530,7 @@ export const StoryWithCustomRestoreFocus = () =>
           restoreFocusTo={elementToRestoreFocusTo}
           overrides={{
             panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+              stylePreset: 'modalPanelDefault',
             },
             header: {typographyPreset: 'utilityLabel030'},
           }}
@@ -659,15 +565,7 @@ export const StoryWithDisabledFocusTrap = () =>
           onDismiss={close}
           overrides={{
             panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+              stylePreset: 'modalPanelDefault',
             },
             header: {typographyPreset: 'utilityLabel030'},
           }}
@@ -703,15 +601,7 @@ export const StoryModelessModal = () =>
           onDismiss={close}
           overrides={{
             panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+              stylePreset: 'modalPanelDefault',
             },
             header: {typographyPreset: 'utilityLabel030'},
           }}
@@ -762,17 +652,8 @@ export const StoryModelessInlineModal = () =>
             onDismiss={close}
             overrides={{
               panel: {
-                width: '348px',
-                height: '249px',
-                minWidth: '20vw',
-                maxWidth: '80vw',
-                minHeight: '20vh',
-                maxHeight: {
-                  xs: '90vh',
-                  md: '85vh',
-                },
+                stylePreset: 'modalPanelDefault',
               },
-              header: {typographyPreset: 'utilityLabel030'},
             }}
             header="Modal Title"
             hideOverlay
@@ -811,21 +692,12 @@ export const StoryNestedModals = () =>
           aria-label="Default Modal"
           open={isActive}
           onDismiss={close}
-          // overrides={{
-          //   panel: {
-          //     width: '348px',
-          //     height: '270px',
-          //     minWidth: '20vw',
-          //     maxWidth: '80vw',
-          //     minHeight: '20vh',
-          //     maxHeight: {
-          //       xs: '90vh',
-          //       md: '85vh',
-          //     },
-          //   },
-          //   header: {typographyPreset: 'utilityLabel030'},
-          // }}
           header="Modal Title"
+          overrides={{
+            panel: {
+              stylePreset: 'modalPanelDefault',
+            },
+          }}
         >
           {modalContent}
           <br />
@@ -888,17 +760,8 @@ export const StoryLogicalProps = () =>
           header="Modal Title"
           overrides={{
             panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+              stylePreset: 'modalPanelDefault',
             },
-            header: {typographyPreset: 'utilityLabel030'},
           }}
         >
           {modalContent}
@@ -923,19 +786,9 @@ export const StoryWithOverrides = () =>
             stylePreset: 'overlayCustom',
           },
           panel: {
-            stylePreset: 'modalcustomtest',
-            borderRadius: '{{borders.borderRadiusDefault}}',
+            stylePreset: 'modalPanelCustom',
             zIndex: 70,
             topOffset: '15vh',
-            // width: '348px',
-            // height: '249px',
-            // minWidth: '20vw',
-            // maxWidth: '80vw',
-            // minHeight: '20vh',
-            // maxHeight: {
-            //   xs: '90vh',
-            //   md: '85vh',
-            // },
           },
           header: {
             stylePreset: 'modalHeaderCustom',
