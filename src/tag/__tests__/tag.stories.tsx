@@ -123,6 +123,7 @@ const tagCustomThemeObject: CreateThemeArgs = {
           color: '{{colors.inkBase}}',
           iconColor: '{{colors.inkBase}}',
           borderRadius: '{{borders.borderRadiusSharp}}',
+          // @ts-ignore
           minWidth: '157px',
         },
         'focus-visible': {
