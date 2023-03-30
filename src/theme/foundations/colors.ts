@@ -4,7 +4,7 @@ export const palettes = {
   blue020: '#D5E0FC',
   blue030: '#AEBFFF',
   blue040: '#8BA6F6',
-  blue050: '#577FFB',
+  blue050: '#708DE9',
   blue060: '#3358CC',
   blue070: '#254CAC',
   blue080: '#12387A',
