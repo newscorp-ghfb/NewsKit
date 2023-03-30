@@ -9,16 +9,14 @@ interface Route {
 }
 
 const flattenRoutes = (routes: Route[]): Array<String> =>
-  routes
-    .map(r => {
-      if (r.page) {
-        return r.subNav
-          ? ([r.id, ...flattenRoutes(r.subNav)] as Array<String>)
-          : [r.id];
-      }
-      return r.subNav ? ([...flattenRoutes(r.subNav)] as Array<String>) : [];
-    })
-    .flat();
+  routes.flatMap(r => {
+    if (r.page) {
+      return r.subNav
+        ? ([r.id, ...flattenRoutes(r.subNav)] as Array<String>)
+        : [r.id];
+    }
+    return r.subNav ? ([...flattenRoutes(r.subNav)] as Array<String>) : [];
+  });
 
 const fileForRoute = (route: String) => {
   const relativeImportDepth = route.split('').filter(f => f === '/').length;
@@ -35,9 +33,10 @@ const fileNameForRoute = (route: String) => `${path}${route}.cy.js`;
 
 (async () => {
   const flatRoutes = flattenRoutes(siteRoutes);
-  await fse.emptyDirSync(path);
+  await fse.emptyDir(path);
   // Special case as not included in routes object
-  await fse.outputFile(fileNameForRoute('/home'), fileForRoute('/'));
+  // add home tests as part of https://github.com/newscorp-ghfb/NewsKit/issues/795
+  // await fse.outputFile(fileNameForRoute('/home'), fileForRoute('/'));
 
   flatRoutes.forEach(async fr => {
     await fse.outputFile(fileNameForRoute(fr), fileForRoute(fr));
