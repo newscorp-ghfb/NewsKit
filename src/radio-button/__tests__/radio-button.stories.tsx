@@ -4,14 +4,18 @@ import {Story as StoryType} from '@storybook/react';
 import {RadioButton} from '..';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {deepMerge} from '../../utils';
-import {Divider, GridLayout, TextBlock} from '../..';
+import {Divider, GridLayout} from '../..';
 import {IconFilledStarOutline} from '../../icons';
 import {states, sizes} from './helpers';
 import {RadioGroup} from '../radio-group';
 import {RadioButtonIconProps} from '../types';
 import {Fieldset} from '../../fieldset';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
+import {
+  StorybookPage,
+  StorybookCase,
+  StorybookHeading,
+} from '../../test/storybook-comps';
 
 const hoverAndFocus = {
   backgroundColor: '{{colors.interfaceInformative020}}',
@@ -76,7 +80,7 @@ StoryRadioButtonDefault.storyName = 'Default';
 
 export const StoryRadioButtonSize = () => (
   <>
-    <TextBlock>Base</TextBlock>
+    <StorybookHeading>Base</StorybookHeading>
     <StorybookPage columns={{md: 'repeat(auto-fill, 120px)'}}>
       {sizes.map(size => (
         <StorybookCase title={size}>
@@ -84,7 +88,7 @@ export const StoryRadioButtonSize = () => (
         </StorybookCase>
       ))}
     </StorybookPage>
-    <TextBlock>Checked</TextBlock>
+    <StorybookHeading>Checked</StorybookHeading>
     <StorybookPage columns={{md: 'repeat(auto-fill, 120px)'}}>
       {sizes.map(size => (
         <StorybookCase title={size}>
