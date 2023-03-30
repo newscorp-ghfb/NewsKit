@@ -4,7 +4,7 @@ import {Story as StoryType} from '@storybook/react';
 import {RadioButton} from '..';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {deepMerge} from '../../utils';
-import {Block, Divider, GridLayout, TextBlock} from '../..';
+import {Divider, GridLayout, TextBlock} from '../..';
 import {IconFilledStarOutline} from '../../icons';
 import {states, sizes} from './helpers';
 import {RadioGroup} from '../radio-group';
@@ -69,56 +69,30 @@ const radioButtonCustomThemeObject: CreateThemeArgs = {
 
 export const StoryRadioButtonDefault = () => (
   <StorybookPage>
-    <StorybookCase title=" ">
-      <RadioButton label="Label" checked />
-    </StorybookCase>
+    <RadioButton label="Label" checked />
   </StorybookPage>
 );
 StoryRadioButtonDefault.storyName = 'Default';
 
 export const StoryRadioButtonSize = () => (
-  <StorybookPage columns="auto">
-    <StorybookCase title="Base">
-      <GridLayout
-        columns={{md: 'repeat(3, min-content)'}}
-        columnGap="space090"
-        rowGap="space050"
-      >
-        {sizes.map(size => (
-          <Block key={size}>
-            <TextBlock
-              typographyPreset="utilityBody010"
-              stylePreset="inkBase"
-              marginBlockEnd="space040"
-            >
-              {size}
-            </TextBlock>
-            <RadioButton label="Label" size={size} />
-          </Block>
-        ))}
-      </GridLayout>
-    </StorybookCase>
-    <StorybookCase title="Checked">
-      <GridLayout
-        columns={{md: 'repeat(3, min-content)'}}
-        columnGap="space090"
-        rowGap="space050"
-      >
-        {sizes.map(size => (
-          <Block key={size}>
-            <TextBlock
-              typographyPreset="utilityBody010"
-              stylePreset="inkBase"
-              marginBlockEnd="space040"
-            >
-              {size}
-            </TextBlock>
-            <RadioButton label="Label" size={size} checked />
-          </Block>
-        ))}
-      </GridLayout>
-    </StorybookCase>
-  </StorybookPage>
+  <>
+    <TextBlock>Base</TextBlock>
+    <StorybookPage columns={{md: 'repeat(auto-fill, 120px)'}}>
+      {sizes.map(size => (
+        <StorybookCase title={size}>
+          <RadioButton label="Label" size={size} />
+        </StorybookCase>
+      ))}
+    </StorybookPage>
+    <TextBlock>Checked</TextBlock>
+    <StorybookPage columns={{md: 'repeat(auto-fill, 120px)'}}>
+      {sizes.map(size => (
+        <StorybookCase title={size}>
+          <RadioButton label="Label" size={size} checked />
+        </StorybookCase>
+      ))}
+    </StorybookPage>
+  </>
 );
 StoryRadioButtonSize.storyName = 'Size';
 
@@ -384,6 +358,14 @@ export default {
   title: 'Components/Radio button',
   component: () => 'None',
   disabledRules: [],
+  parameters: {
+    nkDocs: {
+      title: 'Radio button',
+      url: 'https://www.newskit.co.uk/components/radio-button/',
+      description:
+        'Radio buttons are selection controls that are typically used in forms.',
+    },
+  },
   decorators: [
     (
       Story: StoryType,
