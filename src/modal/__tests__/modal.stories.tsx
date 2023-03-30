@@ -12,6 +12,7 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Label, Block, P} from '../..';
 import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {deepMerge} from '../../utils';
 
 const modalContent = (
   <>
@@ -19,10 +20,52 @@ const modalContent = (
   </>
 );
 
+const modalPanel = {
+  base: {
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    backgroundColor: '{{colors.white}}',
+    boxShadow: '{{shadows.shadow060}}',
+  },
+};
+
+const modalcustomBg = {
+  base: {
+    backgroundColor: '{{colors.interfaceInformative020}}',
+  },
+};
+
+const customModal = {
+  base: {
+    width: '348px',
+    height: '249px',
+    minWidth: '20vw',
+    maxWidth: '80vw',
+    minHeight: '20vh',
+    maxHeight: {
+      xs: '90vh',
+      md: '85vh',
+    },
+  },
+};
+
 const ModaleCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-modal-theme',
   overrides: {
     stylePresets: {
+      customModal: {
+        base: {
+          // @ts-ignore
+          width: '348px',
+          height: '249px',
+          minWidth: '20vw',
+          maxWidth: '80vw',
+          minHeight: '20vh',
+          maxHeight: {
+            xs: '90vh',
+            md: '85vh',
+          },
+        },
+      },
       modalHeader: {
         base: {
           backgroundColor: '{{colors.transparent}}',
@@ -33,7 +76,7 @@ const ModaleCustomThemeObject: CreateThemeArgs = {
       },
       overlayCustom: {
         base: {
-          backgroundColor: '{{colors.amber010}}',
+          backgroundColor: '{{colors.overlayTintBase010}}',
         },
       },
       modalPanelCustom: {
@@ -76,6 +119,10 @@ const ModaleCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkBrand010}}',
         },
       },
+
+      modalcustomtest: deepMerge({}, modalcustomBg, customModal),
+
+      modelcustomdefault: deepMerge({}, modalPanel, customModal),
     },
   },
 };
@@ -139,11 +186,10 @@ export const StoryModalDefault = () =>
           open={isActive}
           onDismiss={close}
           overrides={{
-            stylepreset: 'modalCustom',
-            header: {
-              stylePreset: 'modalHeader',
-              typographyPreset: 'utilityLabel030',
+            panel: {
+              stylePreset: 'customModalJanani',
             },
+            header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
         >
@@ -181,15 +227,7 @@ export const StoryOpenOnPageLoad = () =>
           aria-label="Open modal on page load"
           overrides={{
             panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+              stylePreset: 'modelcustomdefault',
             },
             header: {typographyPreset: 'utilityLabel030'},
           }}
@@ -391,7 +429,6 @@ const items = [
 export const StoryWithSelect = () =>
   React.createElement(() => (
     <>
-      <StorybookHeading>Default modal</StorybookHeading>
       <Modal
         aria-label="Default modal"
         open
@@ -399,7 +436,7 @@ export const StoryWithSelect = () =>
         overrides={{
           panel: {
             width: '348px',
-            height: '249px',
+            height: '320px',
             minWidth: '20vw',
             maxWidth: '80vw',
             minHeight: '20vh',
@@ -421,6 +458,7 @@ export const StoryWithSelect = () =>
             size="small"
             overrides={{
               typographyPreset: 'utilityLabel020',
+              // paddingBlockEnd: 'space050',
             }}
           >
             Label
@@ -437,7 +475,13 @@ export const StoryWithSelect = () =>
               </SelectOption>
             ))}
           </Select>
-          <AssistiveText>Assistive Text</AssistiveText>
+          <AssistiveText
+            overrides={{
+              marginBlock: 'space050',
+            }}
+          >
+            Assistive Text
+          </AssistiveText>
         </Block>
       </Modal>
     </>
@@ -767,58 +811,53 @@ export const StoryNestedModals = () =>
           aria-label="Default Modal"
           open={isActive}
           onDismiss={close}
-          overrides={{
-            panel: {
-              width: '348px',
-              height: '249px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
-            },
-            header: {typographyPreset: 'utilityLabel030'},
-          }}
+          // overrides={{
+          //   panel: {
+          //     width: '348px',
+          //     height: '270px',
+          //     minWidth: '20vw',
+          //     maxWidth: '80vw',
+          //     minHeight: '20vh',
+          //     maxHeight: {
+          //       xs: '90vh',
+          //       md: '85vh',
+          //     },
+          //   },
+          //   header: {typographyPreset: 'utilityLabel030'},
+          // }}
           header="Modal Title"
         >
           {modalContent}
           <br />
           <br />
-          <Stack>
+          <Button
+            onClick={openNested}
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open nested modal
+          </Button>
+          <Modal
+            aria-label="Nested Modal"
+            open={isNestedActive}
+            onDismiss={closeNested}
+            header="Nested modal"
+          >
+            {modalContent}
+            <br />
+            <br />
             <Button
-              onClick={openNested}
+              onClick={closeNested}
               overrides={{
                 typographyPreset: 'utilityButton020',
                 stylePreset: 'buttonOutlinedPrimary',
               }}
             >
-              Open nested modal
+              Close nested modal
             </Button>
-
-            <Modal
-              aria-label="Nested Modal"
-              open={isNestedActive}
-              onDismiss={closeNested}
-              header="Nested modal"
-            >
-              {modalContent}
-              <br />
-              <br />
-              <Stack>
-                <Button
-                  onClick={closeNested}
-                  overrides={{
-                    typographyPreset: 'utilityButton020',
-                    stylePreset: 'buttonOutlinedPrimary',
-                  }}
-                >
-                  Close nested modal
-                </Button>
-              </Stack>
-            </Modal>
-          </Stack>
+          </Modal>
         </Modal>
       </div>
     );
@@ -881,22 +920,22 @@ export const StoryWithOverrides = () =>
         overrides={{
           overlay: {
             zIndex: 60,
-            stylePreset: 'overlayTintBase040',
+            stylePreset: 'overlayCustom',
           },
           panel: {
-            stylePreset: 'modalPanelCustom',
+            stylePreset: 'modalcustomtest',
             borderRadius: '{{borders.borderRadiusDefault}}',
             zIndex: 70,
             topOffset: '15vh',
-            width: '348px',
-            height: '249px',
-            minWidth: '20vw',
-            maxWidth: '80vw',
-            minHeight: '20vh',
-            maxHeight: {
-              xs: '90vh',
-              md: '85vh',
-            },
+            // width: '348px',
+            // height: '249px',
+            // minWidth: '20vw',
+            // maxWidth: '80vw',
+            // minHeight: '20vh',
+            // maxHeight: {
+            //   xs: '90vh',
+            //   md: '85vh',
+            // },
           },
           header: {
             stylePreset: 'modalHeaderCustom',
