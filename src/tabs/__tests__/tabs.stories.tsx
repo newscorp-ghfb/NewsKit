@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 
 import {styled, Scroll, TextBlock} from '../..';
