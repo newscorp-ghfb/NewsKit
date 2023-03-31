@@ -1,16 +1,21 @@
 import * as React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {LinkInline, LinkStandalone} from '..';
-import {getColorCssFromTheme, styled} from '../../utils/style';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-  StorybookParah,
-} from '../../test/storybook-comps';
-import {IconFilledEmail} from '../../icons';
-import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {LinkInline as LI, LinkProps, LinkStandalone as LS} from '..';
+import {CreateThemeArgs, StylePreset, ThemeProvider} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {TextBlock} from '../../text-block';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {IconOutlinedChevronRight, IconOutlinedStar} from '../../icons';
+import {getColorCssFromTheme, styled} from '../../utils';
+import {Paragraph} from '../../typography';
+
+const LinkInline = (props: Omit<LinkProps, 'href'> & {href?: string}) => (
+  // eslint-disable-next-line no-script-url
+  <LI href="javascript:void(0);" {...props} />
+);
+const LinkStandalone = (props: Omit<LinkProps, 'href'> & {href?: string}) => (
+  // eslint-disable-next-line no-script-url
+  <LS href="javascript:void(0);" {...props} />
+);
 
 const linkCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-link-theme',
@@ -31,645 +36,64 @@ const linkCustomThemeObject: CreateThemeArgs = {
         },
       },
     },
-    colors: {
-      inkLinkBase: '{{colors.red080}}',
-      inkLinkHover: '{{colors.green080}}',
-      inkLinkVisited: '{{colors.red090}}',
-      inkLinkActive: '{{colors.purpl020}}',
-    },
     stylePresets: {
       linkCustom: {
         base: {
-          color: '{{colors.inkLinkBase}}',
+          color: '{{colors.teal070}}',
+          iconColor: '{{colors.teal070}}',
+          textDecoration: 'underline',
         },
-        visited: {
-          color: '{{colors.inkLinkVisited}}',
-        },
-        hover: {
-          color: '{{colors.inkLinkHover}}',
-        },
-      },
-      linkCustomTwo: {
+      } as StylePreset,
+      linkCustom2: {
+        __extends: 'linkStandalone',
         base: {
           color: '{{colors.interactivePrimary030}}',
           iconColor: '{{colors.interactivePrimary030}}',
+          textDecoration: 'none',
+        },
+        hover: {
+          color: '{{colors.teal070}}',
+          iconColor: '{{colors.teal070}}',
+          textDecoration: 'underline',
         },
         active: {
-          color: '{{colors.inkLinkActive}}',
-          iconColor: '{{colors.inkLinkActive}}',
+          color: '{{colors.teal070}}',
+          iconColor: '{{colors.teal070}}',
+          textDecoration: 'underline',
         },
-        hover: {
-          color: '{{colors.inkLinkHover}}',
-          iconColor: '{{colors.inkLinkHover}}',
-        },
-      },
-      customOutlineColor: {
+      } as StylePreset,
+      linkCustom3: {
+        __extends: 'linkInline',
         base: {
-          color: '{{colors.interactivePrimary030}}',
-          iconColor: '{{colors.interactivePrimary030}}',
-          textDecoration: 'none',
+          color: '{{colors.interactivePrimary040}}',
+          iconColor: '{{colors.interactivePrimary040}}',
+          textDecoration: 'underline',
         },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineStyle: {
-        base: {
-          color: '{{colors.interactivePrimary030}}',
-          iconColor: '{{colors.interactivePrimary030}}',
-          textDecoration: 'none',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineWidth: {
-        base: {
-          color: '{{colors.interactivePrimary030}}',
-          iconColor: '{{colors.interactivePrimary030}}',
-          textDecoration: 'none',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineOffset: {
-        base: {
-          color: '{{colors.interactivePrimary030}}',
-          iconColor: '{{colors.interactivePrimary030}}',
-          textDecoration: 'none',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '5px',
-        },
-      },
+      } as StylePreset,
     },
   },
 };
 
-const StyledDiv = styled.div`
-  border: 1px red dotted;
-`;
-
-const Container = styled.div<{hasBackground?: boolean}>`
-  max-width: 600px;
-  margin: 0 auto;
-  ${({hasBackground}) =>
-    hasBackground && getColorCssFromTheme('background', 'inkBase')};
-`;
-
-const CustomPragraph = styled(StorybookParah)`
- margin 0;
-`;
-
-const LinkWithOverrides = ({children}: {children: React.ReactNode}) => (
-  <LinkInline
-    href="http://localhost:6006"
-    overrides={{
-      typographyPreset: 'utilityButton020',
-      stylePreset: 'linkCustom',
-    }}
-  >
-    {children}
-  </LinkInline>
-);
-
-const ExternalLinkWithOverrides = ({children}: {children: React.ReactNode}) => (
-  <LinkInline
-    href="http://apple.com"
-    overrides={{
-      typographyPreset: 'utilityButton020',
-      stylePreset: 'linkCustom',
-    }}
-  >
-    {children}
-  </LinkInline>
-);
-
-export const StoryLink = () => (
-  <Container>
-    {/* ------ Link inline -------- */}
-    <StorybookHeading>Link inline</StorybookHeading>
-    <LinkInline href="/">Inline link</LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="/"
-      overrides={{
-        typographyPreset: 'utilityButton020',
-        stylePreset: 'linkCustom',
-      }}
-    >
-      Inline link with style and type overrides
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline href="/">
-      <IconFilledEmail overrides={{size: 'iconSize010'}} />
-      Inline link with leading and trailing icons
-      <IconFilledEmail overrides={{size: 'iconSize010'}} />
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="/"
-      overrides={{
-        spaceInline: 'space030',
-      }}
-    >
-      <IconFilledEmail overrides={{size: 'iconSize010'}} />
-      Inline link with leading and trailing icons and custom space
-      <IconFilledEmail overrides={{size: 'iconSize010'}} />
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline href="mailto:###">Inline mail link</LinkInline>
-    <br />
-    <br />
-    <LinkInline href="tel:###">Inline telephone link</LinkInline>
-
-    {/* ------ Link external -------- */}
-    <StorybookHeading>Link external</StorybookHeading>
-    <LinkInline
-      href="http://newskit.staging-news.co.uk/"
-      overrides={{stylePreset: 'linkInline'}}
-    >
-      External link with external icon
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="http://newskit.staging-news.co.uk/"
-      overrides={{
-        stylePreset: 'linkInline',
-        externalIcon: {
-          size: 'iconSize030',
-        },
-      }}
-    >
-      External link with custom size for external icon
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="http://newskit.staging-news.co.uk/"
-      external={false}
-      overrides={{stylePreset: 'linkInline'}}
-    >
-      External link without external icon
-    </LinkInline>
-
-    {/* ------ Link standalone -------- */}
-    <StorybookHeading>Link standalone</StorybookHeading>
-    <LinkStandalone href="/">Standalone link</LinkStandalone>
-    <br />
-    <br />
-    <LinkStandalone href="https://google.com">
-      Standalone link external
-    </LinkStandalone>
-    <br />
-    <br />
-    <LinkStandalone
-      href="https://google.com"
-      overrides={{
-        typographyPreset: 'utilityButton020',
-        stylePreset: 'linkCustom',
-      }}
-    >
-      Link Standalone external with type and style Preset overrides
-    </LinkStandalone>
-
-    <StorybookHeading>Link with `textOnly`</StorybookHeading>
-    <TextBlock>
-      This is a long description with this and this and this and this and this
-      and{' '}
-      <LinkInline textOnly href="/">
-        long textOnly inline link inside{' '}
-      </LinkInline>{' '}
-      and this and that.
-    </TextBlock>
-    <br />
-    <TextBlock>
-      This is a great article about this and this and this and that and this and{' '}
-      <LinkInline textOnly href="http://newskit.staging-news.co.uk/">
-        external textOnly link with external icon
-      </LinkInline>{' '}
-      this and this and this and that.
-    </TextBlock>
-  </Container>
-);
-StoryLink.storyName = 'link';
-
-export const StoryLinkInverse = () => (
-  <Container hasBackground>
-    {/* ------ Link inline -------- */}
-    <StorybookHeading stylePreset="inkInverse">Link inline</StorybookHeading>
-    <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
-      Inline link
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
-      <IconFilledEmail overrides={{size: 'iconSize010'}} />
-      Inline link with leading and trailing icons
-      <IconFilledEmail overrides={{size: 'iconSize010'}} />
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="/"
-      overrides={{
-        stylePreset: 'linkInlineInverse',
-        spaceInline: 'space030',
-      }}
-    >
-      <IconFilledEmail overrides={{size: 'iconSize010'}} />
-      Inline link with leading and trailing icons and custom space
-      <IconFilledEmail overrides={{size: 'iconSize010'}} />
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="mailto:###"
-      overrides={{stylePreset: 'linkInlineInverse'}}
-    >
-      Inline mail link
-    </LinkInline>
-
-    {/* ------ Link external -------- */}
-    <StorybookHeading stylePreset="inkInverse">Link external</StorybookHeading>
-    <LinkInline
-      href="http://newskit.staging-news.co.uk/"
-      overrides={{stylePreset: 'linkInlineInverse'}}
-    >
-      External link with external icon
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="http://newskit.staging-news.co.uk/"
-      overrides={{
-        stylePreset: 'linkInlineInverse',
-        externalIcon: {
-          size: 'iconSize030',
-        },
-      }}
-    >
-      External link with custom size for external icon
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="http://newskit.staging-news.co.uk/"
-      external={false}
-      overrides={{stylePreset: 'linkInlineInverse'}}
-    >
-      External link without external icon
-    </LinkInline>
-
-    {/* ------ Link standalone -------- */}
-    <StorybookHeading stylePreset="inkInverse">
-      Link standalone
-    </StorybookHeading>
-    <LinkStandalone href="/" overrides={{stylePreset: 'linkStandaloneInverse'}}>
-      Standalone link
-    </LinkStandalone>
-    <br />
-    <br />
-    <LinkStandalone
-      href="https://google.com"
-      overrides={{stylePreset: 'linkStandaloneInverse'}}
-    >
-      Standalone link external
-    </LinkStandalone>
-  </Container>
-);
-StoryLinkInverse.storyName = 'link-inverse';
-
-export const StoryLinkWithinTextParagraph = () => (
-  <Container>
-    <StorybookHeading>Link in paragraph</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <CustomPragraph>
-      Officials said that the{' '}
-      <LinkInline
-        href="http://localhost:6006"
-        overrides={{
-          typographyPreset: 'editorialParagraph020',
-        }}
-      >
-        Apple-Google model
-      </LinkInline>{' '}
-      was unable to differentiate between a phone that was in someone’s hand
-      three metres away from a phone that was in someone’s pocket
-      <LinkInline
-        href="http://localhost:6006"
-        overrides={{
-          typographyPreset: 'editorialParagraph020',
-        }}
-      >
-        one metre away.
-      </LinkInline>{' '}
-      “That is a really important distinction if you’re going to use the app to
-      determine whether or not you spend 14 days at home,” one{' '}
-      <LinkInline
-        href="http://localhost:6006"
-        overrides={{
-          typographyPreset: 'editorialParagraph020',
-        }}
-      >
-        official
-      </LinkInline>{' '}
-      said.
-    </CustomPragraph>
-
-    <StorybookSubHeading>with overrides</StorybookSubHeading>
-    <CustomPragraph>
-      Officials said that the{' '}
-      <LinkWithOverrides>Apple-Google model</LinkWithOverrides> was unable to
-      differentiate between a phone that was in someone’s hand three metres away
-      from a phone that was in someone’s pocket
-      <LinkWithOverrides>one metre away.</LinkWithOverrides> “That is a really
-      important distinction if you’re going to use the app to determine whether
-      or not you spend 14 days at home,” one{' '}
-      <LinkWithOverrides>official</LinkWithOverrides> said.
-    </CustomPragraph>
-
-    <StorybookSubHeading>external default</StorybookSubHeading>
-    <CustomPragraph>
-      Officials said that the{' '}
-      <LinkInline
-        href="http://apple.com"
-        overrides={{
-          typographyPreset: 'editorialParagraph020',
-        }}
-      >
-        Apple-Google model
-      </LinkInline>{' '}
-      was unable to differentiate between a phone that was in{' '}
-      <LinkInline
-        href="http://apple.com"
-        overrides={{
-          typographyPreset: 'editorialParagraph020',
-        }}
-      >
-        someone’s hand
-      </LinkInline>{' '}
-      three metres away from a phone that was in someone’s pocket{' '}
-      <LinkInline
-        href="http://apple.com"
-        overrides={{
-          typographyPreset: 'editorialParagraph020',
-        }}
-      >
-        one metre
-      </LinkInline>{' '}
-      away.
-    </CustomPragraph>
-
-    <StorybookSubHeading>external with overrides</StorybookSubHeading>
-    <CustomPragraph>
-      Officials said that the{' '}
-      <ExternalLinkWithOverrides>Apple-Google model</ExternalLinkWithOverrides>{' '}
-      was unable to differentiate between a phone that was in{' '}
-      <ExternalLinkWithOverrides>someone’s</ExternalLinkWithOverrides> hand
-      three metres away from a phone that was in someone’s pocket one{' '}
-      <ExternalLinkWithOverrides>metre</ExternalLinkWithOverrides> away.
-    </CustomPragraph>
-  </Container>
-);
-StoryLinkWithinTextParagraph.storyName = 'link-within-text-paragraph';
-
-export const StoryLinkStandAloneTransition = () => (
-  <Container>
-    {/* ------ Link standalone -------- */}
-    <StorybookHeading>Default Transition Presets</StorybookHeading>
-    <LinkStandalone href="/">Standalone link</LinkStandalone>
-    <br />
-    <br />
-    <LinkInline href="/">LinkInline link</LinkInline>
-    <StorybookHeading>
-      Default Transition Presets with external icon
-    </StorybookHeading>
-    <LinkStandalone href="https://google.com">Standalone link</LinkStandalone>{' '}
-    <br />
-    <br />
-    <LinkInline href="https://google.com">LinkInline link</LinkInline>
-    <StorybookHeading>
-      Link with Transition Preset overrides no icon
-    </StorybookHeading>
-    <LinkStandalone
-      href="/"
-      overrides={{
-        stylePreset: 'linkCustomTwo',
-        transitionPreset: ['customFontColorChange', 'customIconChange'],
-      }}
-    >
-      Standalone link
-    </LinkStandalone>
-    <br />
-    <br />
-    <LinkInline
-      href="/"
-      overrides={{
-        stylePreset: 'linkCustomTwo',
-        transitionPreset: ['customFontColorChange', 'customIconChange'],
-      }}
-    >
-      Linkinline link
-    </LinkInline>
-    <StorybookHeading>
-      Link with Transition Preset overrides and external icon
-    </StorybookHeading>
-    <LinkStandalone
-      href="https://google.com"
-      overrides={{
-        stylePreset: 'linkCustomTwo',
-        transitionPreset: ['customFontColorChange', 'customIconChange'],
-      }}
-    >
-      Standalone link
-    </LinkStandalone>
-    <br />
-    <br />
-    <LinkInline
-      href="https://google.com"
-      overrides={{
-        stylePreset: 'linkCustomTwo',
-        transitionPreset: ['customFontColorChange', 'customIconChange'],
-      }}
-    >
-      Linkinline link
-    </LinkInline>
-    <StorybookHeading>
-      Link with overrides using extend on transitionDuration
-    </StorybookHeading>
-    <LinkStandalone
-      href="https://google.com"
-      overrides={{
-        stylePreset: 'linkCustomTwo',
-        transitionPreset: {
-          extend: 'customFontColorChange',
-          base: {
-            transitionDuration: '{{motions.motionDuration050}}',
-          },
-        },
-      }}
-    >
-      Standalone Link
-    </LinkStandalone>
-    <br />
-    <br />
-    <LinkInline
-      href="https://google.com"
-      overrides={{
-        stylePreset: 'linkCustomTwo',
-        transitionPreset: {
-          extend: 'customFontColorChange',
-          base: {
-            transitionDuration: '{{motions.motionDuration030}}',
-          },
-        },
-      }}
-    >
-      Inline Link
-    </LinkInline>
-  </Container>
-);
-StoryLinkStandAloneTransition.storyName = 'link-standalone-transition';
-export const StoryLinkWithLogicalPropsOverrides = () => (
-  <Container>
-    <StorybookHeading>Standalone link with logical padding</StorybookHeading>
-    <StyledDiv>
-      <LinkStandalone href="/" overrides={{paddingBlock: 'space030'}}>
-        Standalone link
-      </LinkStandalone>
-    </StyledDiv>
-    <br />
-    <br />
-    <StorybookHeading>Standalone link with logical margin</StorybookHeading>
-    <StyledDiv>
-      <LinkStandalone href="/" overrides={{marginBlock: 'space030'}}>
-        Standalone link
-      </LinkStandalone>
-    </StyledDiv>
-    <br />
-    <br />
-    <StorybookHeading>Inline link with logical padding</StorybookHeading>
-    <StyledDiv>
-      <LinkInline href="/" overrides={{paddingBlock: 'space030'}}>
-        Inline link
-      </LinkInline>
-    </StyledDiv>
-    <br />
-    <br />
-    <StorybookHeading>Inline link with logical margin</StorybookHeading>
-    <StyledDiv>
-      <LinkInline href="/" overrides={{marginBlock: 'space030'}}>
-        Inline link
-      </LinkInline>
-    </StyledDiv>
-    <StorybookHeading>
-      Inline link in a parapgraph with logical margin & padding
-    </StorybookHeading>
-    <CustomPragraph>
-      Officials said that the{' '}
-      <LinkInline
-        href="http://localhost:6006"
-        overrides={{
-          paddingInline: 'space030',
-        }}
-      >
-        Apple-Google model
-      </LinkInline>{' '}
-      was unable to differentiate between a phone that was in someone’s hand
-      three metres away from a phone that was in someone’s pocket
-    </CustomPragraph>
-    <CustomPragraph>
-      <LinkInline
-        href="http://localhost:6006"
-        overrides={{
-          marginInline: 'space030',
-        }}
-      >
-        one metre away.
-      </LinkInline>{' '}
-      “That is a really important distinction if you’re going to use the app to
-      determine whether or not you spend 14 days at home,” one said.
-    </CustomPragraph>
-  </Container>
-);
-StoryLinkWithLogicalPropsOverrides.storyName =
-  'link-with-logical-props-overrides';
-
-export const StoryLinkOutlineOverride = () => (
-  <Container>
-    <StorybookHeading>Outline overrides</StorybookHeading>
-    <LinkInline
-      href="/"
-      overrides={{
-        stylePreset: 'customOutlineColor',
-      }}
-    >
-      Custom Color
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="/"
-      overrides={{
-        stylePreset: 'customOutlineStyle',
-      }}
-    >
-      Custom Style
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="/"
-      overrides={{
-        stylePreset: 'customOutlineWidth',
-      }}
-    >
-      Custom Width
-    </LinkInline>
-    <br />
-    <br />
-    <LinkInline
-      href="/"
-      overrides={{
-        stylePreset: 'customOutlineOffset',
-      }}
-    >
-      Custom Offset
-    </LinkInline>
-    <br />
-    <br />
-  </Container>
-);
-StoryLinkOutlineOverride.storyName = 'link with outline override';
-
 export default {
-  title: 'Components/LinkInline\\LinkStandalone',
+  title: 'Components/Link',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Link',
+      url: 'https://apple.comcomponents/link',
+      description: 'A simple styled anchor element.',
+    },
+  },
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {globals: {backgrounds: {value: string}}; name: string},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           linkCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
@@ -677,3 +101,356 @@ export default {
     ),
   ],
 };
+
+export const StoryLinkDefault = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <LinkInline>Link</LinkInline>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkDefault.storyName = 'Default';
+
+export const StoryLinkInline = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <LinkInline>Inline link</LinkInline>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkInline href="mailto:###">Inline email link</LinkInline>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkInline href="tel:###">Inline telephone link</LinkInline>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkInline>
+        <IconOutlinedStar overrides={{size: 'iconSize020'}} />
+        Inline link with leading and trailing icons
+        <IconOutlinedChevronRight overrides={{size: 'iconSize020'}} />
+      </LinkInline>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkInline
+        overrides={{
+          spaceInline: 'space050',
+        }}
+      >
+        <IconOutlinedStar overrides={{size: 'iconSize020'}} />
+        Inline link with leading and trailing icons and custom space
+        <IconOutlinedChevronRight overrides={{size: 'iconSize020'}} />
+      </LinkInline>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkInline.storyName = 'Inline';
+
+export const StoryLinkExternal = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <LinkInline href="https://apple.com">
+        External link with external icon
+      </LinkInline>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkInline
+        href="https://apple.com"
+        overrides={{
+          externalIcon: {
+            size: 'iconSize020',
+          },
+        }}
+      >
+        External link with custom size for external icon
+      </LinkInline>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkExternal.storyName = 'External';
+
+export const StoryLinkStandalone = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <LinkStandalone>Standalone link</LinkStandalone>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkStandalone href="mailto:###">Standalone email link</LinkStandalone>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkStandalone href="tel:###">Standalone telephone link</LinkStandalone>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkStandalone>
+        <IconOutlinedStar overrides={{size: 'iconSize020'}} />
+        Standalone link with leading and trailing icons
+        <IconOutlinedChevronRight overrides={{size: 'iconSize020'}} />
+      </LinkStandalone>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkStandalone
+        overrides={{
+          spaceInline: 'space050',
+        }}
+      >
+        <IconOutlinedStar overrides={{size: 'iconSize020'}} />
+        Standalone link with leading and trailing icons and custom space
+        <IconOutlinedChevronRight overrides={{size: 'iconSize020'}} />
+      </LinkStandalone>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkStandalone.storyName = 'Standalone';
+
+const InverseContainer = styled.div`
+  margin: -16px;
+  ${getColorCssFromTheme('backgroundColor', 'inkContrast')};
+  ${getColorCssFromTheme('color', 'inkInverse')};
+`;
+
+export const StoryLinkInverse = () => (
+  <InverseContainer>
+    <StorybookPage
+      overrides={{
+        paddingBlock: 'space070',
+        marginInline: 'space020',
+        paddingInline: 'space050',
+      }}
+    >
+      <StorybookCase inverse>
+        <LinkStandalone overrides={{stylePreset: 'linkStandaloneInverse'}}>
+          Link
+          <IconOutlinedChevronRight overrides={{size: 'iconSize020'}} />
+        </LinkStandalone>
+      </StorybookCase>
+    </StorybookPage>
+  </InverseContainer>
+);
+StoryLinkInverse.storyName = 'Inverse';
+
+export const StoryLinkInParagraph = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase title="Inline link in paragraph">
+      <Paragraph>
+        NewsKit provides components, guidelines and standards to enable{' '}
+        <LinkInline
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+          }}
+        >
+          digital product teams
+        </LinkInline>{' '}
+        to create high-quality, consistent products quickly. NewsKit is built on{' '}
+        <LinkInline
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+          }}
+        >
+          modular design principles
+        </LinkInline>{' '}
+        and backed by best practice guidance for design and development.
+      </Paragraph>
+    </StorybookCase>
+    <StorybookCase title="Inline link in paragraph with overrides">
+      <Paragraph>
+        NewsKit provides components, guidelines and standards to enable{' '}
+        <LinkInline
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+            stylePreset: 'linkCustom',
+          }}
+        >
+          digital product teams
+        </LinkInline>{' '}
+        to create high-quality, consistent products quickly. NewsKit is built on{' '}
+        <LinkInline
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+            stylePreset: 'linkCustom',
+          }}
+        >
+          modular design principles
+        </LinkInline>{' '}
+        and backed by best practice guidance for design and development.
+      </Paragraph>
+    </StorybookCase>
+    <StorybookCase title="External link in paragraph">
+      <Paragraph>
+        NewsKit provides components, guidelines and standards to enable{' '}
+        <LinkInline
+          href="https://apple.com"
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+          }}
+        >
+          digital product teams
+        </LinkInline>{' '}
+        to create high-quality, consistent products quickly. NewsKit is built on{' '}
+        <LinkInline
+          href="https://apple.com"
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+          }}
+        >
+          modular design principles
+        </LinkInline>{' '}
+        and backed by best practice guidance for design and development.
+      </Paragraph>
+    </StorybookCase>
+    <StorybookCase title="External link in paragraph with overrides">
+      <Paragraph>
+        NewsKit provides components, guidelines and standards to enable{' '}
+        <LinkInline
+          href="https://apple.com"
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+            stylePreset: 'linkCustom',
+          }}
+        >
+          digital product teams
+        </LinkInline>{' '}
+        to create high-quality, consistent products quickly. NewsKit is built on{' '}
+        <LinkInline
+          href="http://apple.com"
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+            stylePreset: 'linkCustom',
+          }}
+        >
+          modular design principles
+        </LinkInline>{' '}
+        and backed by best practice guidance for design and development.
+      </Paragraph>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkInParagraph.storyName = 'Inline link in paragraph';
+
+export const StoryLinkTransitions = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <LinkStandalone
+        overrides={{
+          stylePreset: 'linkCustom2',
+          transitionPreset: ['customFontColorChange', 'customIconChange'],
+        }}
+      >
+        Standalone link with transition preset overrides
+      </LinkStandalone>
+    </StorybookCase>
+    <StorybookCase>
+      <LinkStandalone
+        href="http://apple.com"
+        overrides={{
+          stylePreset: 'linkCustom2',
+          transitionPreset: {
+            extend: 'customFontColorChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration050}}',
+            },
+          },
+        }}
+      >
+        Standalone link with overrides using extend on transitionDuration
+      </LinkStandalone>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkTransitions.storyName = 'Transitions';
+
+const OutlineContainer = styled.div`
+  border: 1px dotted red;
+`;
+
+export const StoryLinkLogicalProps = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <OutlineContainer>
+        <LinkInline overrides={{paddingBlock: 'space020'}}>
+          Inline link with logical padding
+        </LinkInline>
+      </OutlineContainer>
+    </StorybookCase>
+    <StorybookCase>
+      <OutlineContainer>
+        <LinkInline overrides={{marginBlock: 'space020'}}>
+          Inline link with logical margin
+        </LinkInline>
+      </OutlineContainer>
+    </StorybookCase>
+    <StorybookCase>
+      <OutlineContainer>
+        <LinkStandalone overrides={{paddingBlock: 'space020'}}>
+          Standalone link with logical padding
+          <IconOutlinedChevronRight overrides={{size: 'iconSize020'}} />
+        </LinkStandalone>
+      </OutlineContainer>
+    </StorybookCase>
+    <StorybookCase>
+      <OutlineContainer>
+        <LinkStandalone overrides={{marginBlock: 'space020'}}>
+          Standalone link with logical margin
+          <IconOutlinedChevronRight overrides={{size: 'iconSize020'}} />
+        </LinkStandalone>
+      </OutlineContainer>
+    </StorybookCase>
+    <StorybookCase title="Inline link with logical margin and padding in a paragraph">
+      <Paragraph>
+        NewsKit provides components, guidelines and standards to enable{' '}
+        <LinkInline
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+            paddingInline: 'space040',
+          }}
+        >
+          digital product teams
+        </LinkInline>{' '}
+        to create high-quality, consistent products quickly. NewsKit is built on{' '}
+        <LinkInline
+          overrides={{
+            typographyPreset: 'editorialParagraph020',
+            paddingInline: 'space040',
+          }}
+        >
+          modular design principles
+        </LinkInline>{' '}
+        and backed by best practice guidance for design and development.
+      </Paragraph>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkLogicalProps.storyName = 'Logical Props';
+
+export const StoryLinkStylingOverrides = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <LinkInline overrides={{stylePreset: 'linkCustom3'}}>
+        Inline link
+      </LinkInline>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkStylingOverrides.storyName = 'Styling overrides';
+
+const Width = styled.div`
+  max-width: 50px;
+`;
+
+export const StoryLinkOverrides = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase title="Custom style">
+      <LinkInline overrides={{stylePreset: 'linkCustom3'}}>
+        Inline link
+      </LinkInline>
+    </StorybookCase>
+    <StorybookCase title="Custom width">
+      <Width>
+        <LinkInline>Inline link</LinkInline>
+      </Width>
+    </StorybookCase>
+    <StorybookCase title="Custom offset">
+      <LinkInline overrides={{marginInlineStart: 'space050'}}>
+        Inline link
+      </LinkInline>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLinkOverrides.storyName = 'Overrides';
