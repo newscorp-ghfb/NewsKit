@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 const {resolve} = require('path');
 const {readdir} = require('fs').promises;
 const fs = require('fs');
