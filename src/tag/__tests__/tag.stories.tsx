@@ -134,6 +134,15 @@ const tagCustomThemeObject: CreateThemeArgs = {
   },
 };
 
+export const StoryTagDefault = () => (
+  <StorybookPage>
+    <StorybookCase>
+      <Tag href="http://example.com">Tag</Tag>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryTagDefault.storyName = 'Default';
+
 export const StoryTagSizes = () => (
   <StorybookPage columns="1fr 1fr 1fr 2fr" columnGap="space090">
     <StorybookCase title="Small">
