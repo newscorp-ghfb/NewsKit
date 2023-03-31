@@ -3,7 +3,6 @@ import React, {useEffect} from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {Modal} from '..';
 import {styled} from '../../utils/style';
-import {StorybookHeading} from '../../test/storybook-comps';
 import {Button} from '../../button';
 import {useHasMounted} from '../../utils/hooks';
 import {Select, SelectOption} from '../../select';
@@ -278,7 +277,6 @@ StoryNoClose.parameters = StoryModalDefault.parameters;
 export const StoryNoHeader = () =>
   React.createElement(() => (
     <>
-      <StorybookHeading>Default without header</StorybookHeading>
       <Modal
         aria-label="Default with no header"
         open
