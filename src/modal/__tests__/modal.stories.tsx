@@ -23,7 +23,7 @@ const modalPanel = {
 const modalPanelCustomHeightWidth = {
   base: {
     width: '348px',
-    height: '300px',
+    height: '268px',
     minWidth: '20vw',
     maxWidth: '80vw',
     minHeight: '20vh',
@@ -158,9 +158,6 @@ export const StoryModalDefault = () =>
           overrides={{
             panel: {
               stylePreset: 'modalPanelDefault',
-            },
-            header: {
-              color: '{{colors.red070}}',
             },
           }}
           header="Modal Title test"
@@ -368,12 +365,23 @@ export const StoryWithSelect = () =>
         onDismiss={() => {}}
         overrides={{
           panel: {
-            stylePreset: 'modalPanelDefault',
+            base: {
+              width: '348px',
+              height: '268px',
+              minWidth: '20vw',
+              maxWidth: '80vw',
+              minHeight: '20vh',
+              maxHeight: {
+                xs: '90vh',
+                md: '85vh',
+              },
+            },
           },
         }}
         header="Modal Title"
       >
         {modalContent}
+        <br />
         <br />
         <Block>
           <Label
