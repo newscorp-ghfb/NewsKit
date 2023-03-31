@@ -160,7 +160,7 @@ export const StoryModalDefault = () =>
               stylePreset: 'modalPanelDefault',
             },
           }}
-          header="Modal Title test"
+          header="Modal Title"
         >
           {modalContent}
         </Modal>
