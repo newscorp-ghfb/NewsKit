@@ -31,11 +31,14 @@ const tagCustomThemeObject: CreateThemeArgs = {
       tagCustomTeal: {
         base: {
           borderStyle: 'solid',
-          borderColor: '{{colors.teal060}}',
+          borderColor: '{{colors.interfaceBrand020}}',
           borderWidth: '{{borders.borderWidth010}}',
-          color: '{{colors.teal060}}',
+          color: '{{colors.interfaceBrand020}}',
           iconColor: '{{colors.inkInverse}}',
           backgroundColor: '{{colors.transparent}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.interface010}}',
         },
       },
       tagCustomBlueDashed: {
@@ -558,11 +561,15 @@ export default {
   },
   component: () => 'None',
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           tagCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
