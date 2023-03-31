@@ -108,14 +108,6 @@ const useActiveState = (initial = false): [boolean, () => void, () => void] => {
 export default {
   title: 'Components/Modal',
   component: () => 'None',
-  parameters: {
-    nkDocs: {
-      title: 'Headline',
-      url: 'https://newskit.co.uk/components/headline/',
-      description:
-        'Headline is used to highlight the main point or category of the following text.',
-    },
-  },
   decorators: [
     (
       Story: StoryType,
