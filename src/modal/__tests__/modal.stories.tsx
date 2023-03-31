@@ -5,7 +5,6 @@ import {Modal} from '..';
 import {styled} from '../../utils/style';
 import {StorybookHeading} from '../../test/storybook-comps';
 import {Button} from '../../button';
-import {Stack} from '../../stack';
 import {useHasMounted} from '../../utils/hooks';
 import {Select, SelectOption} from '../../select';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
@@ -13,12 +12,6 @@ import {Label, Block, P} from '../..';
 import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {deepMerge} from '../../utils';
-
-const modalContent = (
-  <>
-    <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
-  </>
-);
 
 const modalPanel = {
   base: {
@@ -30,7 +23,7 @@ const modalPanel = {
 const modalPanelCustomHeightWidth = {
   base: {
     width: '348px',
-    height: '249px',
+    height: '300px',
     minWidth: '20vw',
     maxWidth: '80vw',
     minHeight: '20vh',
@@ -46,6 +39,12 @@ const modalPanelCustomBg = {
     backgroundColor: '{{colors.interfaceInformative020}}',
   },
 };
+
+const modalContent = (
+  <>
+    <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
+  </>
+);
 
 const ModaleCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-modal-theme',
@@ -160,6 +159,9 @@ export const StoryModalDefault = () =>
             panel: {
               stylePreset: 'modalPanelDefault',
             },
+            header: {
+              color: '{{colors.red070}}',
+            },
           }}
           header="Modal Title test"
         >
@@ -199,7 +201,6 @@ export const StoryOpenOnPageLoad = () =>
             panel: {
               stylePreset: 'modalPanelDefault',
             },
-            // header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
         >
@@ -222,7 +223,6 @@ export const StoryWithCloseButtonOnTheLeft = () =>
           panel: {
             stylePreset: 'modalPanelDefault',
           },
-          // header: {typographyPreset: 'utilityLabel030'},
         }}
         header="Modal Title"
         closePosition="left"
@@ -259,7 +259,6 @@ StoryNoHeaderContent.parameters = StoryModalDefault.parameters;
 export const StoryNoClose = () =>
   React.createElement(() => (
     <>
-      <StorybookHeading>Default with no close button</StorybookHeading>
       <Modal
         aria-label="Default with no header"
         open
@@ -267,7 +266,6 @@ export const StoryNoClose = () =>
           panel: {
             stylePreset: 'modalPanelDefault',
           },
-          header: {typographyPreset: 'utilityLabel030'},
         }}
         header="Modal Title"
         closePosition="none"
@@ -290,9 +288,7 @@ export const StoryNoHeader = () =>
         closePosition="none"
         onDismiss={() => {}}
       >
-        <Stack>
-          <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
-        </Stack>
+        {modalContent}
       </Modal>
     </>
   ));
@@ -322,7 +318,6 @@ export const StoryWithHiddenOverlay = () =>
             panel: {
               stylePreset: 'modalPanelDefault',
             },
-            header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
           hideOverlay
@@ -375,12 +370,10 @@ export const StoryWithSelect = () =>
           panel: {
             stylePreset: 'modalPanelDefault',
           },
-          header: {typographyPreset: 'utilityLabel030'},
         }}
         header="Modal Title"
       >
         {modalContent}
-        <br />
         <br />
         <Block>
           <Label
@@ -388,7 +381,6 @@ export const StoryWithSelect = () =>
             size="small"
             overrides={{
               typographyPreset: 'utilityLabel020',
-              // paddingBlockEnd: 'space050',
             }}
           >
             Label
@@ -443,7 +435,6 @@ export const StoryWithAriaAttributes = () =>
             panel: {
               stylePreset: 'modalPanelDefault',
             },
-            header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
         >
@@ -480,7 +471,6 @@ export const StoryWithCustomAutofocus = () =>
             panel: {
               stylePreset: 'modalPanelDefault',
             },
-            header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
         >
@@ -532,7 +522,6 @@ export const StoryWithCustomRestoreFocus = () =>
             panel: {
               stylePreset: 'modalPanelDefault',
             },
-            header: {typographyPreset: 'utilityLabel030'},
           }}
           header="Modal Title"
         >
