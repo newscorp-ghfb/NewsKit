@@ -32,7 +32,7 @@ exports[`NewsKitProvider renders with css variables 1`] = `
   --color-blue020: #D5E0FC;
   --color-blue030: #AEBFFF;
   --color-blue040: #8BA6F6;
-  --color-blue050: #577FFB;
+  --color-blue050: #708DE9;
   --color-blue060: #3358CC;
   --color-blue070: #254CAC;
   --color-blue080: #12387A;
