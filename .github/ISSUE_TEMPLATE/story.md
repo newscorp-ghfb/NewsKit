@@ -1,7 +1,6 @@
 ---
 name: User Story
-about: Details a specific user facing feature 
-title: '(Story) - '
+about: Details a specific user facing feature
 labels: ["story", "triage"]
 assignees: ''
 

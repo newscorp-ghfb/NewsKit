@@ -2,19 +2,94 @@ import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
-  StorybookSubHeading,
-  StorybookLabel,
+  StorybookPage,
+  StorybookCase,
 } from '../../test/storybook-comps';
-
-import {Checkbox} from '..';
+import {Checkbox} from '../checkbox';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {styled} from '../../utils';
-import {Cell, Grid, GridLayout} from '../..';
 import {IconFilledCancel, IconFilledStarOutline} from '../../icons';
 import {CheckboxIconProps} from '../types';
 import {states, sizes} from './helpers';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {defaultFocusVisible} from '../../utils/default-focus-visible';
+import {deepMerge, styled} from '../../utils';
+
+const autoFlagCols = `repeat(auto-fill, minmax(150px, max-content))`;
+
+const twoFlagCols = {
+  xs: 'repeat(1, minmax(400px, max-content))',
+  sm: 'repeat(2, minmax(150px, max-content))',
+  lg: 'repeat(2, minmax(400px, max-content))',
+};
+
+const shortLabel = 'Label';
+
+const StyledDiv = styled.div`
+  width: 200px;
+  height: 100px;
+`;
+
+const hover = {
+  backgroundColor: 'red',
+  borderColor: 'red',
+};
+const checkedHover = {
+  backgroundColor: '{{colors.interactiveInput050}}',
+  borderColor: '{{colors.inkBrand010}}',
+};
+
+const customStyle = {
+  backgroundColor: '{{colors.inkBrand010}}',
+  borderRadius: '4px',
+  borderColor: '{{colors.inkBrand010}}',
+};
+
+const customCheckbox = {
+  checkboxInput: {
+    focus: {},
+    'focus:hover': hover,
+    'checked:hover': checkedHover,
+    'checked:focus:hover': checkedHover,
+    'focus-visible': defaultFocusVisible,
+    'checked:focus-visible': {
+      ...defaultFocusVisible,
+    },
+
+    'focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...hover,
+    },
+    'checked:focus-visible:hover': {
+      ...defaultFocusVisible,
+      ...checkedHover,
+    },
+  },
+  base: {
+    backgroundColor: '{{colors.interfaceInformative020}}',
+    borderColor: '{{colors.interfaceInformative030}}',
+    borderWidth: '{{borders.borderWidth020}}',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    borderStyle: 'solid',
+  },
+  'checked:hover': customStyle,
+  'checked:focus': customStyle,
+  'checked:focus:hover': customStyle,
+  checked: customStyle,
+  'focus-visible:hover': customStyle,
+  'checked:focus-visible:hover': customStyle,
+};
+
+const customOutline = {
+  outlineColor: 'red',
+  outlineStyle: 'dashed',
+  outlineWidth: '1px',
+  outlineOffset: '8px',
+};
+
+const customOutlinePreset = {
+  'focus-visible': customOutline,
+  'checked:focus-visible': customOutline,
+};
 
 const checkboxCustomThemeObject: CreateThemeArgs = {
   name: 'checkbox-custom-theme',
@@ -34,82 +109,24 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
         },
         'focus-visible': defaultFocusVisible,
       },
-      customCheckboxFeedback: {
-        base: {
-          backgroundColor: 'rgba(0,0,0,0.2)',
-          borderRadius: '50%',
-        },
-      },
       customIconFilledCancel: {
         base: {
           backgroundColor: '{{colors.interfaceInformative010}}',
           iconColor: '{{colors.inkInverse}}',
         },
       },
-      customOutlineColor: {
-        base: {
-          backgroundColor: '{{colors.interactiveInput010}}',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidth020}}',
-          borderRadius: '{{borders.borderRadiusRounded010}}',
-          borderStyle: 'solid',
-          iconColor: '{{colors.inkInverse}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineStyle: {
-        base: {
-          backgroundColor: '{{colors.interactiveInput010}}',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidth020}}',
-          borderRadius: '{{borders.borderRadiusRounded010}}',
-          borderStyle: 'solid',
-          iconColor: '{{colors.inkInverse}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineWidth: {
-        base: {
-          backgroundColor: '{{colors.interactiveInput010}}',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidth020}}',
-          borderRadius: '{{borders.borderRadiusRounded010}}',
-          borderStyle: 'solid',
-          iconColor: '{{colors.inkInverse}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineOffset: {
-        base: {
-          backgroundColor: '{{colors.interactiveInput010}}',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidth020}}',
-          borderRadius: '{{borders.borderRadiusRounded010}}',
-          borderStyle: 'solid',
-          iconColor: '{{colors.inkInverse}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '5px',
-        },
-      },
+      customOutline: deepMerge(
+        {},
+        // @ts-ignore
+        Checkbox.stylePresets.checkboxInput,
+        customOutlinePreset,
+      ),
+      customCheckbox: deepMerge(
+        {},
+        // @ts-ignore
+        Checkbox.stylePresets.checkboxInput,
+        customCheckbox,
+      ),
     },
     transitionPresets: {
       customBackgroundColorChange: {
@@ -132,85 +149,76 @@ const checkboxCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-const Container = styled.div`
-  margin: 10px;
-  display: flex;
-`;
-
 export const StoryCheckboxDefault = () => (
-  <>
-    <StorybookHeading>Checkbox</StorybookHeading>
-    <Grid>
-      <Cell xs={8} sm={4}>
-        <StorybookSubHeading>States</StorybookSubHeading>
-
-        {states.map(([id, {checked, ...props}]) => (
-          <Container>
-            <Checkbox {...props} defaultChecked={checked} label={id} />
-          </Container>
-        ))}
-      </Cell>
-      <Cell xs={8} md={4}>
-        <StorybookSubHeading>Sizes</StorybookSubHeading>
-
-        {sizes.map(size => (
-          <>
-            <Container>
-              <Checkbox size={size} label={size} />
-            </Container>
-            <Container>
-              <Checkbox size={size} label={`${size}-checked`} checked />
-            </Container>
-          </>
-        ))}
-      </Cell>
-    </Grid>
-  </>
+  <StorybookPage>
+    <Checkbox label={shortLabel} defaultChecked />
+  </StorybookPage>
 );
 
-StoryCheckboxDefault.storyName = 'checkbox-default';
+StoryCheckboxDefault.storyName = 'Default';
+
+export const StoryCheckboxSizes = () => (
+  <>
+    <StorybookHeading>Base</StorybookHeading>
+    <StorybookPage columns={autoFlagCols}>
+      {sizes.map(size => (
+        <>
+          <StorybookCase title={size}>
+            <Checkbox size={size} label={shortLabel} />
+          </StorybookCase>
+        </>
+      ))}
+    </StorybookPage>
+    <StorybookHeading>Checked</StorybookHeading>
+    <StorybookPage columns={autoFlagCols}>
+      {sizes.map(size => (
+        <>
+          <StorybookCase title={size}>
+            <Checkbox size={size} label={shortLabel} checked />
+          </StorybookCase>
+        </>
+      ))}
+    </StorybookPage>
+  </>
+);
+StoryCheckboxSizes.storyName = 'Size';
+
+export const StoryCheckboxStates = () => (
+  <>
+    <StorybookPage columns={autoFlagCols}>
+      {states.map(([id, {checked, ...props}]) => (
+        <>
+          <StorybookCase title={id}>
+            <Checkbox {...props} defaultChecked={checked} label={shortLabel} />
+          </StorybookCase>
+        </>
+      ))}
+    </StorybookPage>
+  </>
+);
+StoryCheckboxStates.storyName = 'States';
 
 export const StoryCheckboxLabel = () => {
-  const shortLabel = 'Short label';
   const longLabel =
-    'Very long label... The array of dependencies is not passed as arguments to the effect function.';
+    'This is a very long label to show how the label aligns to the checkbox.';
   return (
     <>
-      <StorybookHeading>Checkbox - Labels</StorybookHeading>
-      <Grid>
-        {sizes.map(size => (
-          <Cell xs={8} sm={4}>
-            <StorybookSubHeading>{`Size ${size}`}</StorybookSubHeading>
-            <Container>
-              <Checkbox label={shortLabel} size={size} />
-            </Container>
-            <hr />
-            <Container>
-              <Checkbox label={longLabel} size={size} />
-            </Container>
-            <hr />
-            <Container>
-              <Checkbox label={shortLabel} size={size} labelPosition="start" />
-            </Container>
-            <hr />
-            <Container>
-              <Checkbox label={longLabel} size={size} labelPosition="start" />
-            </Container>
-          </Cell>
-        ))}
-      </Grid>
-
-      <StorybookSubHeading>No label</StorybookSubHeading>
-      <Container>
-        <Checkbox id="custom-label" />
-        {}
-        <StorybookLabel htmlFor="custom-label"> Custom label</StorybookLabel>
-      </Container>
+      <StorybookPage columns={twoFlagCols}>
+        <StyledDiv>
+          <Checkbox label={shortLabel} size="medium" />
+          <hr />
+          <Checkbox label={longLabel} size="medium" />
+        </StyledDiv>
+        <StyledDiv>
+          <Checkbox label={shortLabel} size="medium" labelPosition="start" />
+          <hr />
+          <Checkbox label={longLabel} size="medium" labelPosition="start" />
+        </StyledDiv>
+      </StorybookPage>
     </>
   );
 };
-
-StoryCheckboxLabel.storyName = 'checkbox-label';
+StoryCheckboxLabel.storyName = 'Label alignment';
 
 const CustomCheck = ({checked}: CheckboxIconProps) =>
   checked ? (
@@ -220,90 +228,20 @@ const CustomCheck = ({checked}: CheckboxIconProps) =>
       overrides={{size: 'iconSize020', stylePreset: 'customIconFilledCancel'}}
     />
   );
-export const StoryCheckboxOverrides = () => (
-  <>
-    <StorybookHeading>Checkbox</StorybookHeading>
-    <StorybookSubHeading>Style overrides</StorybookSubHeading>
-    <Container>
-      <Checkbox
-        value="10"
-        label="Style overrides"
-        overrides={{
-          spaceStack: 'space060',
-          input: {
-            stylePreset: 'customCheckboxInput',
-            size: '100px',
-          },
-          feedback: {
-            size: '120px',
-            stylePreset: 'customCheckboxFeedback',
-          },
-          label: {
-            typographyPreset: 'utilityHeading010',
-            stylePreset: 'inkSubtle',
-          },
-          icon: {
-            size: 'iconSize050',
-          },
-        }}
-      />
-    </Container>
-    <StorybookSubHeading>Icon Prop override</StorybookSubHeading>
-    <Container>
-      <Checkbox
-        label="prop overrides"
-        overrides={{
-          icon: {
-            props: {
-              overrides: {
-                size: 'iconSize010',
-              },
-            },
-          },
-        }}
-      />
-    </Container>
-    <StorybookSubHeading>Icon Component override</StorybookSubHeading>
-    <Container>
-      <Checkbox
-        label="component overrides"
-        overrides={{
-          icon: CustomCheck,
-        }}
-      />
-    </Container>
-    <StorybookSubHeading>Icon Override</StorybookSubHeading>
-    <Container>
-      <Checkbox
-        label="overrides"
-        overrides={{
-          icon: {
-            stylePreset: 'bannerInformative',
-            size: 'iconSize030',
-          },
-        }}
-      />
-    </Container>
-    <StorybookSubHeading>Logical Overrides</StorybookSubHeading>
-    <Container>
-      <Checkbox
-        label="overrides"
-        overrides={{
-          marginBlockEnd: 'space030',
-          paddingBlock: 'space030',
-        }}
-      />
-    </Container>
-  </>
-);
-StoryCheckboxOverrides.storyName = 'checkbox-overrides';
 
 export const StoryCheckboxTransitions = () => (
   <>
-    <StorybookSubHeading>Checkbox with Transition Presets</StorybookSubHeading>
-    <Container>
-      <GridLayout rowGap="space040">
-        <Checkbox defaultChecked label="default transition" />
+    <StorybookPage columns={twoFlagCols}>
+      <StorybookCase title="Default transition preset">
+        <Checkbox
+          defaultChecked
+          label={shortLabel}
+          overrides={{
+            marginBlockEnd: '20px',
+          }}
+        />
+      </StorybookCase>
+      <StorybookCase title="Transition preset overrides">
         <Checkbox
           overrides={{
             input: {
@@ -312,10 +250,13 @@ export const StoryCheckboxTransitions = () => (
                 'customBorderColourChange',
               ],
             },
+            marginBlockEnd: '20px',
           }}
           defaultChecked
-          label="with overrides using custom transitions"
+          label={shortLabel}
         />
+      </StorybookCase>
+      <StorybookCase title="Extend on transitionDuration">
         <Checkbox
           overrides={{
             input: {
@@ -336,69 +277,134 @@ export const StoryCheckboxTransitions = () => (
             },
           }}
           defaultChecked
-          label="with overrides using extend on transitionDuration"
+          label={shortLabel}
         />
-      </GridLayout>
-    </Container>
+      </StorybookCase>
+    </StorybookPage>
   </>
 );
+StoryCheckboxTransitions.storyName = 'Transitions';
 
-StoryCheckboxTransitions.storyName = 'checkbox-transitions';
-
-export const StoryCheckboxOutlineOverride = () => (
+export const StoryCheckboxStylingOverrides = () => (
   <>
-    <StorybookSubHeading>Checkbox Outline override</StorybookSubHeading>
-    <Container>
-      <GridLayout rowGap="space040">
-        <Checkbox
-          overrides={{
-            input: {
-              stylePreset: 'customOutlineColor',
-            },
-          }}
-          label="Custom Color"
-        />
-        <Checkbox
-          overrides={{
-            input: {
-              stylePreset: 'customOutlineStyle',
-            },
-          }}
-          label="Custom Style"
-        />
-        <Checkbox
-          overrides={{
-            input: {
-              stylePreset: 'customOutlineWidth',
-            },
-          }}
-          label="Custom Width"
-        />
-        <Checkbox
-          overrides={{
-            input: {
-              stylePreset: 'customOutlineOffset',
-            },
-          }}
-          label="Custom Offset"
-        />
-      </GridLayout>
-    </Container>
+    <Checkbox
+      defaultChecked
+      label="Style overrides"
+      overrides={{
+        marginBlock: '15px',
+        marginInlineStart: '15px',
+        input: {
+          stylePreset: 'customCheckbox',
+        },
+        label: {
+          typographyPreset: 'utilityBody020',
+          stylePreset: 'inkBrand010',
+        },
+      }}
+    />
   </>
 );
+StoryCheckboxStylingOverrides.storyName = 'Styling overrides';
 
-StoryCheckboxOutlineOverride.storyName = 'checkbox-outline-override';
+export const StoryCheckboxOverrides = () => (
+  <>
+    <StorybookPage columns={twoFlagCols}>
+      <StorybookCase title="Icon prop">
+        <Checkbox
+          defaultChecked
+          label={shortLabel}
+          overrides={{
+            marginBlockEnd: 'space030',
+            paddingBlock: 'space030',
+            icon: {
+              props: {
+                overrides: {
+                  size: 'iconSize010',
+                },
+              },
+            },
+          }}
+        />
+      </StorybookCase>
+      <StorybookCase title="Icon component overriden">
+        <Checkbox
+          defaultChecked
+          label={shortLabel}
+          overrides={{
+            icon: CustomCheck,
+            marginBlockEnd: 'space030',
+            paddingBlock: 'space030',
+          }}
+        />
+      </StorybookCase>
+
+      <StorybookCase title="Icon size">
+        <Checkbox
+          defaultChecked
+          label={shortLabel}
+          overrides={{
+            icon: {
+              stylePreset: 'bannerInformative',
+              size: 'iconSize030',
+            },
+            marginBlockEnd: 'space030',
+            paddingBlock: 'space030',
+          }}
+        />
+      </StorybookCase>
+
+      <StorybookCase title="Logical props">
+        <Checkbox
+          defaultChecked
+          label={shortLabel}
+          overrides={{
+            marginBlockEnd: 'space030',
+            paddingBlock: 'space030',
+          }}
+        />
+      </StorybookCase>
+
+      <StorybookCase title="Custom outline">
+        <Checkbox
+          defaultChecked
+          label={shortLabel}
+          overrides={{
+            marginBlockEnd: 'space060',
+            paddingBlock: 'space030',
+            marginInlineEnd: 'space030',
+            input: {
+              stylePreset: 'customOutline',
+            },
+          }}
+        />
+      </StorybookCase>
+    </StorybookPage>
+  </>
+);
+StoryCheckboxOverrides.storyName = 'Overrides';
 
 export default {
-  title: 'Components/checkbox',
+  title: 'Components/Checkbox',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Checkbox',
+      url: 'https://www.newskit.co.uk/components/checkbox/',
+      description:
+        'Checkboxes are selection controls that allow users to select one or multiple items from a group of options. They typically appear in forms.',
+    },
+  },
   disabledRules: [],
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           checkboxCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
