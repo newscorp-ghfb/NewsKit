@@ -6,8 +6,7 @@ import {IconFilledEmail} from '../../icons';
 import {Stack, Block} from '../..';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-import {GridLayout, GridLayoutItem} from '../../grid-layout';
-import {StorybookCase} from '../../test/storybook-comps';
+import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 
 const Container = styled.div<{hasBlackBackground?: boolean}>`
   margin: 24px;
@@ -18,10 +17,6 @@ const Container = styled.div<{hasBlackBackground?: boolean}>`
 const DottedBlock = styled.div`
   border: 1px dashed #d60000;
   display: inline-block;
-`;
-
-const Spacer = styled.div`
-  margin-bottom: 2em;
 `;
 
 const tagCustomThemeObject: CreateThemeArgs = {
@@ -83,40 +78,6 @@ const tagCustomThemeObject: CreateThemeArgs = {
           borderColor: '{{colors.interactivePrimary030}}',
         },
       },
-      customOutlineColor: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveSecondary030}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          color: '{{colors.inkBase}}',
-          iconColor: '{{colors.inkBase}}',
-          borderRadius: '{{borders.borderRadiusSharp}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineStyle: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveSecondary030}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          color: '{{colors.inkBase}}',
-          iconColor: '{{colors.inkBase}}',
-          borderRadius: '{{borders.borderRadiusSharp}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
       customOutlineWidth: {
         base: {
           backgroundColor: '{{colors.transparent}}',
@@ -126,8 +87,6 @@ const tagCustomThemeObject: CreateThemeArgs = {
           color: '{{colors.inkBase}}',
           iconColor: '{{colors.inkBase}}',
           borderRadius: '{{borders.borderRadiusSharp}}',
-          // @ts-ignore
-          minWidth: '157px',
         },
         'focus-visible': {
           outlineColor: 'red',
@@ -176,99 +135,62 @@ const tagCustomThemeObject: CreateThemeArgs = {
 };
 
 export const StoryTagSizes = () => (
-  <Container>
-    <GridLayout
-      columns="auto auto auto 4fr"
-      rowGap="space020"
-      columnGap="space090"
-      autoFlow="row"
-    >
-      <GridLayoutItem>
-        <StorybookCase title="Small">
-          <Tag size="small" href="http://example.com">
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Medium">
-          <Tag size="medium" href="http://example.com">
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Large">
-          <Tag size="large" href="http://example.com">
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-    </GridLayout>
-  </Container>
+  <StorybookPage columns="1fr 1fr 1fr 2fr" columnGap="space090">
+    <StorybookCase title="Small">
+      <Tag size="small" href="http://example.com">
+        Tag
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Medium">
+      <Tag size="medium" href="http://example.com">
+        Tag
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Large">
+      <Tag size="large" href="http://example.com">
+        Tag
+      </Tag>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTagSizes.storyName = 'Sizes';
 
 export const StoryTagStates = () => (
-  <Container>
-    <GridLayout
-      columns="auto auto 5fr"
-      rowGap="space020"
-      columnGap="space090"
-      autoFlow="row"
-    >
-      <GridLayoutItem>
-        <StorybookCase title="Enabled">
-          <Tag href="http://example.com">Tag</Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Disabled">
-          <Tag href="http://example.com" disabled>
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-    </GridLayout>
-  </Container>
+  <StorybookPage columns="1fr 1fr 3fr" columnGap="space080">
+    <StorybookCase title="Enabled">
+      <Tag href="http://example.com">Tag</Tag>
+    </StorybookCase>
+    <StorybookCase title="Disabled">
+      <Tag href="http://example.com" disabled>
+        Tag
+      </Tag>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTagStates.storyName = 'States';
 
 export const StoryTagIcons = () => (
-  <Container>
-    <GridLayout
-      columns="auto auto auto 4fr"
-      rowGap="space020"
-      columnGap="space090"
-      autoFlow="row"
-    >
-      <GridLayoutItem>
-        <StorybookCase title="Leading icon">
-          <Tag size="medium" href="http://example.com">
-            <IconFilledEmail />
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Trailing icon">
-          <Tag size="medium" href="http://example.com">
-            Tag
-            <IconFilledEmail />
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Leading and trailing icon">
-          <Tag size="medium" href="http://example.com">
-            <IconFilledEmail />
-            Tag
-            <IconFilledEmail />
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-    </GridLayout>
-  </Container>
+  <StorybookPage columns="1fr 1fr 1fr 2fr" columnGap="space080">
+    <StorybookCase title="Leading icon">
+      <Tag size="medium" href="http://example.com">
+        <IconFilledEmail />
+        Tag
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Trailing icon">
+      <Tag size="medium" href="http://example.com">
+        Tag
+        <IconFilledEmail />
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Leading and trailing icon">
+      <Tag size="medium" href="http://example.com">
+        <IconFilledEmail />
+        Tag
+        <IconFilledEmail />
+      </Tag>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTagIcons.storyName = 'Icons';
 
@@ -292,111 +214,92 @@ export const StoryInverseTag = () => (
 StoryInverseTag.storyName = 'Inverse';
 
 export const StoryTagTransitions = () => (
-  <Container>
-    <GridLayout
-      columns="auto auto auto"
-      rowGap="space060"
-      columnGap="space090"
-      autoFlow="row"
-    >
-      <GridLayoutItem>
-        <StorybookCase title="Default">
-          <Tag href="http://example.com">Tag</Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Preset overrides background">
-          <Tag
-            href="http://example.com"
-            overrides={{
-              stylePreset: 'tagCustomBackground',
-              transitionPreset: 'customBackgroundColorChange',
-            }}
-          >
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Preset overrides border">
-          <Tag
-            href="http://example.com"
-            overrides={{
-              stylePreset: 'tagCustomBorder',
-              transitionPreset: 'customBorderColorChange',
-            }}
-          >
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Two transition preset overrides">
-          <Tag
-            href="http://example.com"
-            overrides={{
-              stylePreset: 'tagCustomBackgroundAndBorder',
-              transitionPreset: [
-                'customBackgroundColorChange',
-                'customBorderColorChange',
-              ],
-            }}
-          >
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Extend on transitionDuration">
-          <Tag
-            href="http://example.com"
-            overrides={{
-              stylePreset: 'tagCustomBackgroundAndBorder',
-              transitionPreset: {
-                extend: 'backgroundColorChange',
-                base: {
-                  transitionDuration: '{{motions.motionDuration050}}',
-                },
+  <StorybookPage columns="auto auto auto">
+    <StorybookCase title="Default">
+      <Tag href="http://example.com">Tag</Tag>
+    </StorybookCase>
+    <StorybookCase title="Preset overrides background">
+      <Tag
+        href="http://example.com"
+        overrides={{
+          stylePreset: 'tagCustomBackground',
+          transitionPreset: 'customBackgroundColorChange',
+        }}
+      >
+        Tag
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Preset overrides border">
+      <Tag
+        href="http://example.com"
+        overrides={{
+          stylePreset: 'tagCustomBorder',
+          transitionPreset: 'customBorderColorChange',
+        }}
+      >
+        Tag
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Two transition preset overrides">
+      <Tag
+        href="http://example.com"
+        overrides={{
+          stylePreset: 'tagCustomBackgroundAndBorder',
+          transitionPreset: [
+            'customBackgroundColorChange',
+            'customBorderColorChange',
+          ],
+        }}
+      >
+        Tag
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Extend on transitionDuration">
+      <Tag
+        href="http://example.com"
+        overrides={{
+          stylePreset: 'tagCustomBackgroundAndBorder',
+          transitionPreset: {
+            extend: 'backgroundColorChange',
+            base: {
+              transitionDuration: '{{motions.motionDuration050}}',
+            },
+          },
+        }}
+      >
+        Tag
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Two presets using extend">
+      <Tag
+        href="http://example.com"
+        overrides={{
+          stylePreset: 'tagCustomBackgroundAndBorder',
+          transitionPreset: [
+            {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration030}}',
               },
-            }}
-          >
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
-        <StorybookCase title="Two presets using extend">
-          <Tag
-            href="http://example.com"
-            overrides={{
-              stylePreset: 'tagCustomBackgroundAndBorder',
-              transitionPreset: [
-                {
-                  extend: 'backgroundColorChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration030}}',
-                  },
-                },
-                {
-                  extend: 'borderColorChange',
-                  base: {
-                    transitionDuration: '{{motions.motionDuration050}}',
-                  },
-                },
-              ],
-            }}
-          >
-            Tag
-          </Tag>
-        </StorybookCase>
-      </GridLayoutItem>
-    </GridLayout>
-  </Container>
+            },
+            {
+              extend: 'borderColorChange',
+              base: {
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          ],
+        }}
+      >
+        Tag
+      </Tag>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTagTransitions.storyName = 'Transitions';
 
 export const StoryTagLogicalProps = () => (
-  <Container>
+  <StorybookPage columns="1fr">
     <StorybookCase title="marginInline & marginBlock">
       <DottedBlock>
         <Tag
@@ -409,7 +312,6 @@ export const StoryTagLogicalProps = () => (
           Tag
         </Tag>
       </DottedBlock>
-      <Spacer />
     </StorybookCase>
     <StorybookCase title="paddingInline & paddingBlock">
       <Tag
@@ -421,7 +323,6 @@ export const StoryTagLogicalProps = () => (
       >
         Tag
       </Tag>
-      <Spacer />
     </StorybookCase>
     <StorybookCase title="marginInline & marginBlock & paddingInline & paddingBlock">
       <DottedBlock>
@@ -438,58 +339,45 @@ export const StoryTagLogicalProps = () => (
         </Tag>
       </DottedBlock>
     </StorybookCase>
-  </Container>
+  </StorybookPage>
 );
 StoryTagLogicalProps.storyName = 'Logical props';
 
 export const StoryTagStylingOverrides = () => (
-  <Container>
-    <GridLayout
-      columns="auto auto 5fr"
-      rowGap="space020"
-      columnGap="space090"
-      autoFlow="row"
-    >
-      <StorybookCase title="Style Preset overrides">
-        <Tag
-          href="http://example.com"
-          overrides={{stylePreset: 'tagCustomTeal'}}
-        >
-          Tag
-        </Tag>
-      </StorybookCase>
-      <StorybookCase title="Typography Preset overrides">
-        <Tag
-          href="http://example.com"
-          overrides={{typographyPreset: 'meta020'}}
-        >
-          Tag
-        </Tag>
-      </StorybookCase>
-    </GridLayout>
-  </Container>
+  <StorybookPage columns="1fr auto 3fr" columnGap="space080">
+    <StorybookCase title="Style Preset overrides">
+      <Tag href="http://example.com" overrides={{stylePreset: 'tagCustomTeal'}}>
+        Tag
+      </Tag>
+    </StorybookCase>
+    <StorybookCase title="Typography Preset overrides">
+      <Tag href="http://example.com" overrides={{typographyPreset: 'meta020'}}>
+        Tag
+      </Tag>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTagStylingOverrides.storyName = 'Styling overrides';
 
-export const StoryTagOverrides = () => (
-  <Container>
-    <GridLayout
-      columns="auto auto 5fr"
-      rowGap="space060"
-      columnGap="space090"
-      autoFlow="row"
-    >
-      <GridLayoutItem>
+export const StoryTagOverrides = () => {
+  const logicalPropsOverrides = {
+    minWidth: '157px',
+  };
+
+  return (
+    <>
+      <StorybookPage columns="1fr 1fr 3fr" columnGap="space080">
         <StorybookCase title="Custom width">
           <Tag
             href="http://example.com"
-            overrides={{stylePreset: 'customOutlineWidth'}}
+            overrides={{
+              stylePreset: 'customOutlineWidth',
+              ...logicalPropsOverrides,
+            }}
           >
             Tag
           </Tag>
         </StorybookCase>
-      </GridLayoutItem>
-      <GridLayoutItem>
         <StorybookCase title="Custom offset">
           <Tag
             href="http://example.com"
@@ -498,55 +386,51 @@ export const StoryTagOverrides = () => (
             Tag
           </Tag>
         </StorybookCase>
-      </GridLayoutItem>
-    </GridLayout>
-    <Spacer />
-    <StorybookCase title="Icon with inline overridden size">
-      <Stack
-        flow="horizontal-center"
-        spaceInline="space060"
-        spaceStack="space060"
-        wrap="wrap"
-      >
-        <Tag size="small">
-          <IconFilledEmail />
-          Tag
-          <IconFilledEmail overrides={{size: 'iconSize030'}} />
-        </Tag>
-        <Tag size="medium">
-          <IconFilledEmail />
-          Tag
-          <IconFilledEmail overrides={{size: 'iconSize040'}} />
-        </Tag>
-        <Tag size="large">
-          <IconFilledEmail />
-          Tag
-          <IconFilledEmail overrides={{size: 'iconSize050'}} />
-        </Tag>
-      </Stack>
-      <Spacer />
-    </StorybookCase>
-    <StorybookCase title="Icon with inline overridden size from overrides">
-      <Stack flow="horizontal-center" spaceInline="space060" wrap="wrap">
-        <Tag size="small" overrides={{iconSize: 'iconSize020'}}>
-          <IconFilledEmail />
-          Tag
-          <IconFilledEmail overrides={{size: 'iconSize030'}} />
-        </Tag>
-        <Tag size="medium" overrides={{iconSize: 'iconSize020'}}>
-          <IconFilledEmail />
-          Tag
-          <IconFilledEmail overrides={{size: 'iconSize040'}} />
-        </Tag>
-        <Tag size="large" overrides={{iconSize: 'iconSize020'}}>
-          <IconFilledEmail />
-          Tag
-          <IconFilledEmail overrides={{size: 'iconSize050'}} />
-        </Tag>
-      </Stack>
-    </StorybookCase>
-  </Container>
-);
+      </StorybookPage>
+      <br />
+      <StorybookPage columns="1fr">
+        <StorybookCase title="Icon with inline overridden size">
+          <Stack flow="horizontal-center" spaceInline="space060" wrap="wrap">
+            <Tag size="small">
+              <IconFilledEmail />
+              Tag
+              <IconFilledEmail overrides={{size: 'iconSize030'}} />
+            </Tag>
+            <Tag size="medium">
+              <IconFilledEmail />
+              Tag
+              <IconFilledEmail overrides={{size: 'iconSize040'}} />
+            </Tag>
+            <Tag size="large">
+              <IconFilledEmail />
+              Tag
+              <IconFilledEmail overrides={{size: 'iconSize050'}} />
+            </Tag>
+          </Stack>
+        </StorybookCase>
+        <StorybookCase title="Icon with inline overridden size from overrides">
+          <Stack flow="horizontal-center" spaceInline="space060" wrap="wrap">
+            <Tag size="small" overrides={{iconSize: 'iconSize020'}}>
+              <IconFilledEmail />
+              Tag
+              <IconFilledEmail overrides={{size: 'iconSize030'}} />
+            </Tag>
+            <Tag size="medium" overrides={{iconSize: 'iconSize020'}}>
+              <IconFilledEmail />
+              Tag
+              <IconFilledEmail overrides={{size: 'iconSize040'}} />
+            </Tag>
+            <Tag size="large" overrides={{iconSize: 'iconSize020'}}>
+              <IconFilledEmail />
+              Tag
+              <IconFilledEmail overrides={{size: 'iconSize050'}} />
+            </Tag>
+          </Stack>
+        </StorybookCase>
+      </StorybookPage>
+    </>
+  );
+};
 StoryTagOverrides.storyName = 'Overrides';
 
 export default {
