@@ -832,13 +832,13 @@ export const StoryLabelAndIconOnly = () => (
 
     <StorybookCase title="Icon only - horizontal">
       <Tabs align="end">
-        <Tab label={<IconOutlinedStar />}>
+        <Tab ariaLabel="tab 1" label={<IconOutlinedStar />}>
           <LoremIpsum textNumber={1} />
         </Tab>
-        <Tab label={<IconFilledStar />}>
+        <Tab ariaLabel="tab 2" label={<IconFilledStar />}>
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label={<IconOutlinedStarOutline />}>
+        <Tab ariaLabel="tab 3" label={<IconOutlinedStarOutline />}>
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
