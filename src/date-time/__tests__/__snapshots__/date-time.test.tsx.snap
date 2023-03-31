@@ -42,9 +42,9 @@ exports[`DateTime renders with additional HTML attributes 1`] = `
   >
     <time
       class="emotion-1"
-      datetime="Mock Date"
+      datetime="2019-01-25 03:32:00+00"
     >
-      Mock Date 
+      January 25 2019, 3:32pm 
     </time>
   </span>
 </DocumentFragment>
@@ -91,7 +91,7 @@ exports[`DateTime renders with children 1`] = `
   >
     <time
       class="emotion-1"
-      datetime="Mock Date"
+      datetime="2019-01-25 03:32:00+00"
     >
       2 years ago 
     </time>
@@ -140,9 +140,9 @@ exports[`DateTime renders with fallback formatting 1`] = `
   >
     <time
       class="emotion-1"
-      datetime="Mock Date"
+      datetime="2019-01-25 03:32:00+00"
     >
-      Mock Date 
+      January 25 2019, 3:32pm 
     </time>
   </span>
 </DocumentFragment>
@@ -199,9 +199,9 @@ exports[`DateTime renders with logical props overrides 1`] = `
     </span>
     <time
       class="emotion-1"
-      datetime="Mock Date"
+      datetime="2017-01-01 04:32:00+00"
     >
-      Mock Date, 
+      1 Jan 2017, 4:32, 
     </time>
     <span
       class="emotion-1"
@@ -282,9 +282,9 @@ exports[`DateTime renders with overrides 1`] = `
     </span>
     <time
       class="emotion-2"
-      datetime="Mock Date"
+      datetime="2017-01-01 04:32:00+00"
     >
-      Mock Date, 
+      1 Jan 2017, 4:32, 
     </time>
     <span
       class="emotion-1"
@@ -341,9 +341,9 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
     </span>
     <time
       class="emotion-1"
-      datetime="Mock Date"
+      datetime="2019-01-25 03:32:00+00"
     >
-      Mock Date, 
+      25 Jan 2019, 15:32, 
     </time>
     <span
       class="emotion-1"
@@ -395,9 +395,9 @@ exports[`DateTime renders with timestamp 1`] = `
   >
     <time
       class="emotion-1"
-      datetime="Mock Date"
+      datetime="2023-03-28 08:58:28+00"
     >
-      Mock Date 
+      March 28 2023, 8:58am 
     </time>
   </span>
 </DocumentFragment>
