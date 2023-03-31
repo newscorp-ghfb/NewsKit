@@ -18,17 +18,18 @@ function updateFile(filePath) {
   const regex = new RegExp('filter="url(.*)"', 'gi');
   const fileContent = fs.readFileSync(filePath, {encoding: 'utf8', flag: 'r'});
   const newContent = fileContent.replaceAll(regex, '');
-  const newPath = filePath.replace('.svg', '-new.svg');
+  const newPath = filePath.replace(
+    '/illustrations-original/',
+    '/illustrations/',
+  );
   fs.writeFileSync(newPath, newContent, {encoding: 'utf8'});
 }
 
 (async () => {
   for await (const filePath of getFiles(
     // './site/public/static/illustrations/about/',
-    './site/public/static/illustrations/landing-page/',
+    './site/public/static/illustrations-original/',
   )) {
-    if (!filePath.endsWith('-new.svg')) {
-      updateFile(filePath);
-    }
+    updateFile(filePath);
   }
 })();

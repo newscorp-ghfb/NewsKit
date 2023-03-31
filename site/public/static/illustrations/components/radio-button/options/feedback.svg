@@ -73,7 +73,7 @@
     style="fill: var(--color-illustrationPalette040)"
     d="M455 418.5C455 380.116 486.116 349 524.5 349C562.884 349 594 380.116 594 418.5C594 456.884 562.884 488 524.5 488C486.116 488 455 456.884 455 418.5Z"
   ></path>
-  <g filter="url(#nk-955)">
+  <g >
     <path
       style="fill: var(--color-white)"
       fill-rule="evenodd"

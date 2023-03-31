@@ -22,7 +22,7 @@
     style="fill: var(--color-darkBlue040)"
     d="M428.375 598.022L329.511 499.158L295.845 532.587L428.375 665.116L712.875 380.616L679.446 347.188L428.375 598.022Z"
   ></path>
-  <g filter="url(#nk-632)">
+  <g >
     <path
       style="fill: var(--color-black)"
       fill-rule="evenodd"
@@ -36,7 +36,7 @@
     clip-rule="evenodd"
     d="M725.092 641.41L635.424 677.825L581.016 756.798L536.417 556.527L725.092 641.41ZM628.2 668.831L697 640.89L552 575.656L586.295 729.656L628.2 668.831Z"
   ></path>
-  <g filter="url(#nk-633)">
+  <g >
     <path
       style="fill: var(--color-black)"
       fill-rule="evenodd"

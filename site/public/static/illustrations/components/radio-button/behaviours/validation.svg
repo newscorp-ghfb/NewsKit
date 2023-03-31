@@ -17,7 +17,7 @@
       style="fill: var(--color-illustrationHighlight010)"
       d="M799 573.333C799 569.836 801.836 567 805.333 567H995.005C998.503 567 1001.34 569.836 1001.34 573.333V656.667C1001.34 660.164 998.503 663 995.005 663H805.333C801.836 663 799 660.164 799 656.667V573.333Z"
     ></path>
-    <g filter="url(#nk-954)">
+    <g >
       <path
         style="fill: var(--color-white)"
         fill-rule="evenodd"

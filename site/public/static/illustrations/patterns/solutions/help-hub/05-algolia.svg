@@ -1,11 +1,11 @@
 <svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3025_124801)">
 <rect width="1490" height="838" fill="var(--color-illustrationBackground020)"/>
-<g filter="url(#filter0_d_3025_124801)">
+<g >
 <rect x="233" y="100" width="1024" height="759" rx="8" fill="var(--color-illustrationInterface010)"/>
 <rect x="226" y="93" width="1038" height="773" rx="15" stroke="#97D0D6" stroke-width="14"/>
 </g>
-<g filter="url(#filter1_d_3025_124801)">
+<g >
 <rect x="449" y="493" width="592" height="484" rx="8" fill="var(--color-illustrationInterface020)"/>
 <rect x="450" y="494" width="590" height="482" rx="7" stroke="#06808E" stroke-width="2"/>
 </g>

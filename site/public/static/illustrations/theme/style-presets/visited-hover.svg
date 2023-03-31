@@ -34,7 +34,7 @@
     style="fill: var(--color-illustrationPalette050)"
     d="M326 578.823H675V587.656H326V578.823Z"
   ></path>
-  <g filter="url(#nk-658)">
+  <g >
     <path
       style="fill: var(--color-white)"
       fill-rule="evenodd"

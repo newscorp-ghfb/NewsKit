@@ -53,13 +53,13 @@
       height="147"
       rx="22.6012"
     ></rect>
-    <g filter="url(#nk-773)">
+    <g >
       <path
         style="fill: var(--color-illustrationAnatomySubtle)"
         d="M459.72 626.279V638.564L469.373 632.422L459.72 626.279Z"
       ></path>
     </g>
-    <g filter="url(#nk-774)">
+    <g >
       <rect
         style="fill: var(--color-white)"
         x="495.091"

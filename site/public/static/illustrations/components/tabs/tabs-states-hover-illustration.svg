@@ -12,7 +12,7 @@
     style="fill: var(--color-illustrationBackground010)"
     d="M0 3.99999C0 1.79086 1.79085 0 3.99998 0H1486.71C1488.92 0 1490.71 1.79085 1490.71 3.99998V834C1490.71 836.209 1488.92 838 1486.71 838H4C1.79088 838 0 836.209 0 834V3.99999Z"
   ></path>
-  <g filter="url(#nk-510)">
+  <g >
     <g clip-path="url(#clip0)">
       <g clip-path="url(#clip1)">
         <rect
@@ -108,7 +108,7 @@
       </g>
     </g>
   </g>
-  <g filter="url(#nk-511)">
+  <g >
     <path
       style="fill: var(--color-white)"
       fill-rule="evenodd"

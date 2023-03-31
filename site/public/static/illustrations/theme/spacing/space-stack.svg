@@ -14,7 +14,7 @@
       width="1490"
       height="838"
     ></rect>
-    <g filter="url(#nk-636)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M489 136.181C489 125.588 497.588 117 508.181 117H981.609C992.202 117 1000.79 125.588 1000.79 136.181V647.029C1000.79 657.622 992.202 666.21 981.609 666.21H508.181C497.588 666.21 489 657.622 489 647.029V136.181Z"
@@ -422,7 +422,7 @@
       opacity="0.6"
       d="M526 456.88H961V487.88H526V456.88Z"
     ></path>
-    <g filter="url(#nk-637)">
+    <g >
       <path
         style="fill: var(--color-illustrationBorder020)"
         fill-rule="evenodd"

@@ -39,7 +39,7 @@
     rx="3.98985"
     transform="rotate(37.8744 1032.2 107.42)"
   ></rect>
-  <g filter="url(#nk-703)">
+  <g >
     <path
       style="fill: var(--color-illustrationInterface010)"
       d="M520 588C520 610.091 537.909 628 560 628L930 628C952.091 628 970 610.091 970 588L970 320L520 320L520 588Z"

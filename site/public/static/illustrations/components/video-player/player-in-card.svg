@@ -1,6 +1,6 @@
 <svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="1490" height="838" fill="var(--color-illustrationBackground010)"/>
-<g filter="url(#filter0_d_3328_105273)">
+<g >
 <path d="M291 276C291 271.582 294.582 268 299 268H1191C1195.42 268 1199 271.582 1199 276V562C1199 566.418 1195.42 570 1191 570H299C294.582 570 291 566.418 291 562V276Z" fill="white"/>
 <path d="M321 298H717V540H321V298Z" fill="#D5E0FC"/>
 <path d="M556 417.5C556 437.658 539.658 454 519.5 454C499.342 454 483 437.658 483 417.5C483 397.342 499.342 381 519.5 381C539.658 381 556 397.342 556 417.5Z" fill="#ECF1FF"/>

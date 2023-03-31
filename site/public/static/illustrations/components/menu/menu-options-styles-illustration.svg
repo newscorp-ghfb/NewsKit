@@ -13,7 +13,7 @@
       style="fill: var(--color-illustrationBackground020)"
       d="M0 0H1490V838H0V0Z"
     ></path>
-    <g filter="url(#nk-238)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M781 153.019C781 148.6 784.582 145.019 789 145.019H1145C1149.42 145.019 1153 148.6 1153 153.019V255.019C1153 259.437 1149.42 263.019 1145 263.019H789C784.582 263.019 781 259.437 781 255.019V153.019Z"
@@ -61,7 +61,7 @@
       style="fill: var(--color-illustrationHighlight010)"
       d="M1147.05 263.51V144.533H1153V263.51H1147.05Z"
     ></path>
-    <g filter="url(#nk-239)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M781 361.018C781 356.6 784.582 353.018 789 353.018H1145C1149.42 353.018 1153 356.6 1153 361.018V477.018H781V361.018Z"
@@ -111,7 +111,7 @@
       style="fill: var(--color-illustrationHighlight010)"
       d="M781 471.536H1153V477.485H781V471.536Z"
     ></path>
-    <g filter="url(#nk-240)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface060)"
         d="M781 576.018C781 571.6 784.582 568.018 789 568.018H1145C1149.42 568.018 1153 571.6 1153 576.018V692.018H781V576.018Z"

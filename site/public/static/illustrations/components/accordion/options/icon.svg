@@ -13,7 +13,7 @@
       style="fill: var(--color-illustrationBackground020)"
       d="M0 0H1490V838H0V0Z"
     ></path>
-    <g filter="url(#nk-846)">
+    <g >
       <g clip-path="url(#nk-845)">
         <rect
           style="fill: var(--color-illustrationInterface010)"

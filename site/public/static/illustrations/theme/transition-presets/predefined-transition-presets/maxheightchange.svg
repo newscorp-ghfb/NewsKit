@@ -14,7 +14,7 @@
     height="1000"
     rx="22"
   ></rect>
-  <g filter="url(#nk-1171)">
+  <g >
     <path
       style="fill: var(--color-illustrationPalette010)"
       d="M148 569C148 546.909 165.909 529 188 529H824C846.091 529 864 546.909 864 569V849C864 871.091 846.091 880 824 880H188C165.909 880 148 871.091 148 849V569Z"
@@ -40,7 +40,7 @@
     style="fill: var(--color-illustrationPalette030)"
     d="M779 585L770 594L779 603.5L803.605 628L813.105 619L779 585Z"
   ></path>
-  <g filter="url(#nk-1172)">
+  <g >
     <path
       style="fill: var(--color-illustrationPalette010)"
       d="M136 161C136 138.909 153.909 121 176 121H812C834.091 121 852 138.909 852 161V246C852 268.091 834.091 287 812 287H176C153.909 287 136 268.091 136 246V161Z"

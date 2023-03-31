@@ -1,15 +1,15 @@
 <svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_3025_125264)">
 <rect width="1490" height="838" fill="var(--color-illustrationBackground020)"/>
-<g filter="url(#filter0_d_3025_125264)">
+<g >
 <rect x="233" y="132" width="1024" height="739" rx="8" fill="var(--color-illustrationInterface010)"/>
 <rect x="226" y="125" width="1038" height="753" rx="15" stroke="#97D0D6" stroke-width="14"/>
 </g>
-<g filter="url(#filter1_d_3025_125264)">
+<g >
 <rect x="449" y="634" width="251" height="95" rx="8" fill="var(--color-illustrationInterface010)"/>
 <rect x="451" y="636" width="247" height="91" rx="6" stroke="#06808E" stroke-width="4"/>
 </g>
-<g filter="url(#filter2_d_3025_125264)">
+<g >
 <rect x="797" y="634" width="243" height="95" rx="8" fill="var(--color-illustrationInterface010)"/>
 <rect x="799" y="636" width="239" height="91" rx="6" stroke="#06808E" stroke-width="4"/>
 </g>

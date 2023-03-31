@@ -13,7 +13,7 @@
       style="fill: var(--color-illustrationBackground020)"
       d="M0 0H1490V838H0V0Z"
     ></path>
-    <g filter="url(#nk-834)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M457 113.434C457 101.044 467.044 91 479.434 91H1009.57C1021.96 91 1032 101.044 1032 113.434V241H457V113.434Z"
@@ -27,7 +27,7 @@
         d="M512 166C512 159.373 514.798 154 518.249 154H742.751C746.202 154 749 159.373 749 166C749 172.627 746.202 178 742.751 178H518.249C514.798 178 512 172.627 512 166Z"
       ></path>
     </g>
-    <g filter="url(#nk-835)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M457 242H1032V545H457V242Z"
@@ -37,7 +37,7 @@
         d="M512 242H977V482C977 486.418 973.418 490 969 490H520C515.582 490 512 486.418 512 482V242Z"
       ></path>
     </g>
-    <g filter="url(#nk-836)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M457 551H1032V701H457V551Z"
@@ -51,7 +51,7 @@
         d="M512 626C512 619.373 516.415 614 521.861 614H876.139C881.585 614 886 619.373 886 626C886 632.627 881.585 638 876.139 638H521.861C516.415 638 512 632.627 512 626Z"
       ></path>
     </g>
-    <g filter="url(#nk-837)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M457 707H1032V834.566C1032 846.956 1021.96 857 1009.57 857H479.434C467.044 857 457 846.956 457 834.566V707Z"

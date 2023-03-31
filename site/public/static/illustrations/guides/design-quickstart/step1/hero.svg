@@ -20,7 +20,7 @@
       width="1345"
       height="426"
     ></rect>
-    <g filter="url(#nk-1183)">
+    <g >
       <rect
         style="fill: var(--color-illustrationInterface050)"
         x="439"
@@ -30,7 +30,7 @@
         rx="80"
       ></rect>
     </g>
-    <g opacity="0.4" filter="url(#nk-1184)">
+    <g opacity="0.4" >
       <rect
         style="fill: var(--color-illustrationGradient010)"
         x="439"
@@ -40,7 +40,7 @@
         rx="80"
       ></rect>
     </g>
-    <g opacity="0.6" filter="url(#nk-1185)">
+    <g opacity="0.6" >
       <rect
         style="fill: var(--color-illustrationInterface030)"
         x="148"
@@ -50,7 +50,7 @@
         rx="60"
       ></rect>
     </g>
-    <g opacity="0.6" filter="url(#nk-1186)">
+    <g opacity="0.6" >
       <rect
         style="fill: var(--color-illustrationInterface030)"
         x="-132"
@@ -69,7 +69,7 @@
       height="228"
       rx="60"
     ></rect>
-    <g opacity="0.6" filter="url(#nk-1187)">
+    <g opacity="0.6" >
       <rect
         style="fill: var(--color-illustrationInterface030)"
         x="1249"
@@ -88,7 +88,7 @@
       height="228"
       rx="60"
     ></rect>
-    <g opacity="0.6" filter="url(#nk-1188)">
+    <g opacity="0.6" >
       <rect
         style="fill: var(--color-illustrationInterface030)"
         x="969"

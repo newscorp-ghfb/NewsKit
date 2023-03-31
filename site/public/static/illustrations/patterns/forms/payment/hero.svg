@@ -26,7 +26,7 @@
       style="fill: var(--color-illustrationInterface060)"
       d="M550.945 229.697C550.945 217.162 561.107 207 573.642 207H1025.3C1037.84 207 1048 217.162 1048 229.697V286.438H550.945V229.697Z"
     ></path>
-    <g filter="url(#nk-684)">
+    <g >
       <rect
         style="fill: var(--color-illustrationInterface010)"
         x="442"

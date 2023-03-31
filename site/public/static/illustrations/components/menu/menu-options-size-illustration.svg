@@ -13,7 +13,7 @@
       style="fill: var(--color-illustrationBackground020)"
       d="M0 0H1490V838H0V0Z"
     ></path>
-    <g filter="url(#nk-232)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M136 387.015C136 382.596 139.582 379.015 144 379.015H352C356.418 379.015 360 382.596 360 387.015V435.015C360 439.433 356.418 443.015 352 443.015H144C139.582 443.015 136 439.433 136 435.015V387.015Z"
@@ -61,7 +61,7 @@
       style="fill: var(--color-illustrationHighlight010)"
       d="M357.66 444.259V378.731H360V444.259H357.66Z"
     ></path>
-    <g filter="url(#nk-233)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M520 367.015C520 362.596 523.582 359.015 528 359.015H802C806.418 359.015 810 362.596 810 367.015V437.015C810 441.433 806.418 445.015 802 445.015H528C523.582 445.015 520 441.433 520 437.015V367.015Z"
@@ -109,7 +109,7 @@
       style="fill: var(--color-illustrationHighlight010)"
       d="M806.996 443.979V359.143H810.025V443.979H806.996Z"
     ></path>
-    <g filter="url(#nk-234)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M970 334.015C970 329.596 973.582 326.015 978 326.015H1347C1351.42 326.015 1355 329.596 1355 334.015V430.015C1355 434.433 1351.42 438.015 1347 438.015H978C973.582 438.015 970 434.433 970 430.015V334.015Z"

@@ -13,7 +13,7 @@
       style="fill: var(--color-illustrationBackground020)"
       d="M0 0H1490V838H0V0Z"
     ></path>
-    <g filter="url(#nk-219)">
+    <g >
       <rect
         style="fill: var(--color-illustrationInterface010)"
         width="443.751"
@@ -69,7 +69,7 @@
         d="M1081.66 242.63V149.018H1085V242.63H1081.66Z"
       ></path>
     </g>
-    <g filter="url(#nk-220)">
+    <g >
       <rect
         style="fill: var(--color-illustrationInterface010)"
         width="443.751"
@@ -127,7 +127,7 @@
         ></path>
       </g>
     </g>
-    <g filter="url(#nk-221)">
+    <g >
       <rect
         style="fill: var(--color-illustrationInterface010)"
         width="443.751"

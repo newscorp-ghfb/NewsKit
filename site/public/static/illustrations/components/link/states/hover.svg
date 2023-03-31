@@ -36,7 +36,7 @@
     style="fill: var(--color-illustrationInterface080)"
     d="M517 480.293H803.258V487.781H517V480.293Z"
   ></path>
-  <g filter="url(#nk-832)">
+  <g >
     <path
       style="fill: var(--color-white)"
       fill-rule="evenodd"

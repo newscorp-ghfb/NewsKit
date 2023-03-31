@@ -13,7 +13,7 @@
       style="fill: var(--color-illustrationBackground020)"
       d="M0 0H1490V838H0V0Z"
     ></path>
-    <g filter="url(#nk-223)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M535 83.0078C535 78.5895 538.582 75.0078 543 75.0078H949C953.418 75.0078 957 78.5895 957 83.0078V755.008C957 759.426 953.418 763.008 949 763.008H543C538.582 763.008 535 759.426 535 755.008V83.0078Z"

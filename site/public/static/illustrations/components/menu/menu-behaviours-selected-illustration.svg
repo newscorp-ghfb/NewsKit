@@ -13,7 +13,7 @@
       style="fill: var(--color-illustrationBackground020)"
       d="M0 0H1490V838H0V0Z"
     ></path>
-    <g filter="url(#nk-136)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M268 358C268 353.582 271.582 350 276 350H1203C1207.42 350 1211 353.582 1211 358V481C1211 485.418 1207.42 489 1203 489H276C271.582 489 268 485.418 268 481V358Z"
@@ -149,7 +149,7 @@
       style="fill: var(--color-illustrationInterface010)"
       d="M946.247 485.374H1143.23V488.758H946.247V485.374Z"
     ></path>
-    <g filter="url(#nk-137)">
+    <g >
       <path
         style="fill: var(--color-illustrationSubtle010)"
         fill-rule="evenodd"

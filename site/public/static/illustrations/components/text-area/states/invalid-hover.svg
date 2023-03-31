@@ -37,7 +37,7 @@
     stroke="#FE8888"
     stroke-width="5"
   ></rect>
-  <g filter="url(#nk-1101)">
+  <g >
     <path
       style="fill: var(--color-white)"
       fill-rule="evenodd"

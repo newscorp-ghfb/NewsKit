@@ -93,7 +93,7 @@
       stroke-linejoin="bevel"
       stroke-dasharray="5.55 11.1"
     ></rect>
-    <g filter="url(#nk-607)">
+    <g >
       <rect
         style="fill: var(--color-illustrationInterface010)"
         x="932.77"

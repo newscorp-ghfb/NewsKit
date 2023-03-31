@@ -73,7 +73,7 @@
     opacity="0.6"
     d="M1205 130L1253 130V708H1205V130Z"
   ></path>
-  <g filter="url(#nk-911)">
+  <g >
     <rect
       style="fill: var(--color-illustrationInterface010)"
       x="237"
@@ -131,7 +131,7 @@
       rx="4.78899"
     ></rect>
   </g>
-  <g filter="url(#nk-912)">
+  <g >
     <rect
       style="fill: var(--color-illustrationInterface010)"
       x="765"

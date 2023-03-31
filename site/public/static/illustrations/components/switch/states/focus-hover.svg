@@ -46,7 +46,7 @@
     stroke-width="16"
     stroke-dasharray="23 23"
   ></rect>
-  <g filter="url(#nk-993)">
+  <g >
     <path
       style="fill: var(--color-white)"
       fill-rule="evenodd"

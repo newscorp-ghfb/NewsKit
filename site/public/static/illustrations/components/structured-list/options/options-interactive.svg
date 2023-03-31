@@ -14,7 +14,7 @@
       width="1490"
       height="838"
     ></rect>
-    <g filter="url(#nk-1041)">
+    <g >
       <rect
         style="fill: var(--color-interface030)"
         width="1072.1"
@@ -91,7 +91,7 @@
       width="1072.1"
       height="2"
     ></rect>
-    <g filter="url(#nk-1042)">
+    <g >
       <path
         style="fill: var(--color-white)"
         fill-rule="evenodd"

@@ -36,7 +36,7 @@
     style="fill: var(--color-white)"
     d="M428.375 598.022L329.511 499.158L295.845 532.587L428.375 665.116L712.875 380.616L679.446 347.188L428.375 598.022Z"
   ></path>
-  <g filter="url(#nk-644)">
+  <g >
     <path
       style="fill: var(--color-white)"
       fill-rule="evenodd"

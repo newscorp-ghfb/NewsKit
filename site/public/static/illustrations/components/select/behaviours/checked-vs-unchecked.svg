@@ -197,7 +197,7 @@
     stroke="#254CAC"
     stroke-width="3"
   ></rect>
-  <g filter="url(#nk-985)">
+  <g >
     <g clip-path="url(#nk-984)">
       <rect
         style="fill: var(--color-illustrationInterface010)"

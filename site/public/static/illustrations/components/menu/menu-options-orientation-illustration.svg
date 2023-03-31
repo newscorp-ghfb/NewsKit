@@ -14,7 +14,7 @@
       width="1490"
       height="838"
     ></rect>
-    <g filter="url(#nk-229)">
+    <g >
       <g clip-path="url(#nk-228)">
         <path
           style="fill: var(--color-illustrationInterface010)"
@@ -184,7 +184,7 @@
         ></path>
       </g>
     </g>
-    <g filter="url(#nk-230)">
+    <g >
       <path
         style="fill: var(--color-illustrationInterface010)"
         d="M348 627.352C348 622.933 351.693 619.352 356.249 619.352H1133.75C1138.31 619.352 1142 622.933 1142 627.352V705.352C1142 709.77 1138.31 713.352 1133.75 713.352H356.249C351.693 713.352 348 709.77 348 705.352V627.352Z"

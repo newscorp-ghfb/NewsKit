@@ -27,7 +27,7 @@
         style="fill: var(--color-illustrationInterface010)"
         d="M924.913 237.796C924.913 231.87 929.716 227.066 935.642 227.066H1099.27C1105.2 227.066 1110 231.87 1110 237.796C1110 243.722 1105.2 248.526 1099.27 248.526H935.642C929.716 248.526 924.913 243.722 924.913 237.796Z"
       ></path>
-      <g clip-path="url(#nk-203)" filter="url(#nk-209)">
+      <g clip-path="url(#nk-203)" >
         <path
           style="fill: var(--color-illustrationInterface010)"
           d="M316 314.004H1174V498.004H316V314.004Z"

@@ -90,7 +90,7 @@
       stroke="#254CAC"
       stroke-width="2.5"
     ></rect>
-    <g filter="url(#nk-895)">
+    <g >
       <g clip-path="url(#nk-894)">
         <rect
           style="fill: var(--color-illustrationInterface010)"
@@ -386,7 +386,7 @@
           height="15.0937"
           fill="#46467F"
         ></rect>
-        <g filter="url(#nk-896)">
+        <g >
           <path
             style="fill: var(--color-white)"
             fill-rule="evenodd"

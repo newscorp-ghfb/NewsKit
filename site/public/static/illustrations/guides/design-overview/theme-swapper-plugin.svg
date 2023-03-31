@@ -29,7 +29,7 @@
     style="fill: var(--color-illustrationPalette040)"
     d="M681.231 599.903H841.042C848.212 599.903 854.024 605.716 854.024 612.885V612.885C854.024 620.055 848.212 625.867 841.042 625.867H681.231V599.903Z"
   ></path>
-  <g filter="url(#nk-692)">
+  <g >
     <rect
       style="fill: var(--color-illustrationPalette010)"
       x="363"
