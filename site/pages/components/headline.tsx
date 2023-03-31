@@ -43,7 +43,7 @@ const HeadlineComponent = (layoutProps: LayoutProps) => (
       introduced: 'v0.19.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/headline',
-      storybookId: 'components-headline--story-headline',
+      storybookId: 'components-headline--story-headline-default',
     }}
     interactiveDemo={{
       introduction:

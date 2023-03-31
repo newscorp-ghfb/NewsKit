@@ -1,7 +1,6 @@
 ---
 name: Task
 about: Details a task
-title: '(Task) - '
 labels: ["task", "triage"]
 assignees: ''
 

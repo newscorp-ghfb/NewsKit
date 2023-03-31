@@ -43,6 +43,7 @@ const PopoverComponent = (layoutProps: LayoutProps) => (
       status: MetaStatus.Supported,
       introduced: 'v5.6.0',
       codeUrl: 'https://github.com/newscorp-ghfb/newskit/tree/main/src/popover',
+      storybookId: 'components-popover--story-popover-default',
       figmaUrl:
         'https://www.figma.com/file/FSbCQa6SzVR3K48ZWLeD77/%F0%9F%9F%A2-NK-Web-Components?node-id=7296%3A137983',
     }}

@@ -8,7 +8,7 @@ orbs:
 
 slack_notify: &slack_notify
   event: 'fail'
-  channel: '#nuk-pp-newskit'
+  channel: '#newskit-all-team'
   mentions: '@newskitdevs'
   branch_pattern: 'main'
   # The following tag_pattern allows slack messages to be sent also when workflows are triggered by tags.

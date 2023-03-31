@@ -190,6 +190,7 @@ exports[`Media List renders with custom layout 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-11 .nk-headline-kicker {
@@ -230,6 +231,21 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-11:visited:not(:disabled) .nk-headline-heading {
   color: #6454E3;
+}
+
+.emotion-11:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-11:before {
@@ -441,7 +457,7 @@ exports[`Media List renders with custom layout 1`] = `
                   class="emotion-17"
                 >
                   <section
-                    class="emotion-18"
+                    class="nk-card-headline emotion-18"
                   >
                     <h3
                       class="nk-headline-heading emotion-19"
@@ -660,6 +676,7 @@ exports[`Media List renders with default layout 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border: none;
+  outline: none;
 }
 
 .emotion-11 .nk-headline-kicker {
@@ -700,6 +717,21 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-11:visited:not(:disabled) .nk-headline-heading {
   color: #6454E3;
+}
+
+.emotion-11:focus-visible:not(:disabled) .nk-card-headline {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-11:focus-visible:not(:disabled) .nk-card-headline {
+      outline-style: auto;
+    }
+  }
 }
 
 .emotion-11:before {
@@ -876,7 +908,7 @@ exports[`Media List renders with default layout 1`] = `
                   class="emotion-17"
                 >
                   <section
-                    class="emotion-18"
+                    class="nk-card-headline emotion-18"
                   >
                     <h3
                       class="nk-headline-heading emotion-19"
@@ -1624,7 +1656,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                         class="emotion-12"
                       >
                         <section
-                          class="emotion-13"
+                          class="nk-card-headline emotion-13"
                         >
                           <h1
                             class="nk-headline-heading emotion-14"
@@ -1709,7 +1741,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                           class="emotion-12"
                         >
                           <section
-                            class="emotion-13"
+                            class="nk-card-headline emotion-13"
                           >
                             <h1
                               class="nk-headline-heading emotion-14"
@@ -1791,7 +1823,7 @@ exports[`Media List renders with feature cardscards 1`] = `
                       class="emotion-12"
                     >
                       <section
-                        class="emotion-13"
+                        class="nk-card-headline emotion-13"
                       >
                         <h3
                           class="nk-headline-heading emotion-14"
