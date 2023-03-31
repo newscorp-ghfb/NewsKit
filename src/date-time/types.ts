@@ -3,6 +3,7 @@ import {MQ} from '../utils/style';
 
 export interface DateTimeProps extends React.TimeHTMLAttributes<HTMLElement> {
   date: string | number;
+  children?: string;
   dateFormat?: string;
   prefix?: string;
   suffix?: string;
