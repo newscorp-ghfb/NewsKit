@@ -13,6 +13,5 @@
     "commitlint.config.js",
     "webpack.e2e.config.js",
     "cypress.*.config.ts",
-    "currents.config.js",
   ]
 }
