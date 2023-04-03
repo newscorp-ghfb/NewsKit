@@ -7432,7 +7432,7 @@ exports[`Switch render with size: small 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Switch render with state: Base 1`] = `
+exports[`Switch render with state: base 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -7779,7 +7779,7 @@ exports[`Switch render with state: Base 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Switch render with state: Checked 1`] = `
+exports[`Switch render with state: checked 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -8088,7 +8088,7 @@ exports[`Switch render with state: Checked 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Switch render with state: Checked disabled 1`] = `
+exports[`Switch render with state: checked-disabled 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;
@@ -8342,7 +8342,7 @@ exports[`Switch render with state: Checked disabled 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Switch render with state: Disabled 1`] = `
+exports[`Switch render with state: disabled 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: -webkit-box;

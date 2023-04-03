@@ -19,13 +19,10 @@ import {EventTrigger} from '../../instrumentation';
 
 describe('Switch', () => {
   states.forEach(([id, props]) => {
-    test(`render with state: ${id}`, () => {
+    const formattedId = id.replace(' ', '-').toLowerCase();
+    test(`render with state: ${formattedId}`, () => {
       const fragment = renderToFragmentWithTheme(() => (
-        <Switch
-          label="label"
-          {...props}
-          id={id.replace(' ', '-').toLowerCase()}
-        />
+        <Switch label="label" {...props} id={formattedId} />
       ));
       expect(fragment).toMatchSnapshot();
     });
