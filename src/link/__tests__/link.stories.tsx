@@ -249,29 +249,6 @@ export const StoryLinkInParagraph = () => (
         and backed by best practice guidance for design and development.
       </Paragraph>
     </StorybookCase>
-    <StorybookCase title="Inline link in paragraph with overrides">
-      <Paragraph>
-        NewsKit provides components, guidelines and standards to enable{' '}
-        <LinkInline
-          overrides={{
-            typographyPreset: 'editorialParagraph020',
-            stylePreset: 'linkCustom',
-          }}
-        >
-          digital product teams
-        </LinkInline>{' '}
-        to create high-quality, consistent products quickly. NewsKit is built on{' '}
-        <LinkInline
-          overrides={{
-            typographyPreset: 'editorialParagraph020',
-            stylePreset: 'linkCustom',
-          }}
-        >
-          modular design principles
-        </LinkInline>{' '}
-        and backed by best practice guidance for design and development.
-      </Paragraph>
-    </StorybookCase>
     <StorybookCase title="External link in paragraph">
       <Paragraph>
         NewsKit provides components, guidelines and standards to enable{' '}
@@ -288,31 +265,6 @@ export const StoryLinkInParagraph = () => (
           href="https://apple.com"
           overrides={{
             typographyPreset: 'editorialParagraph020',
-          }}
-        >
-          modular design principles
-        </LinkInline>{' '}
-        and backed by best practice guidance for design and development.
-      </Paragraph>
-    </StorybookCase>
-    <StorybookCase title="External link in paragraph with overrides">
-      <Paragraph>
-        NewsKit provides components, guidelines and standards to enable{' '}
-        <LinkInline
-          href="https://apple.com"
-          overrides={{
-            typographyPreset: 'editorialParagraph020',
-            stylePreset: 'linkCustom',
-          }}
-        >
-          digital product teams
-        </LinkInline>{' '}
-        to create high-quality, consistent products quickly. NewsKit is built on{' '}
-        <LinkInline
-          href="http://apple.com"
-          overrides={{
-            typographyPreset: 'editorialParagraph020',
-            stylePreset: 'linkCustom',
           }}
         >
           modular design principles
