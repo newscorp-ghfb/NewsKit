@@ -33,6 +33,12 @@ export const StoryDateTimeVariations = () => (
     <StorybookCase title="Prefix and suffix">
       <DateTime date={date} prefix="Updated:" suffix="The Times" />
     </StorybookCase>
+    <StorybookCase title="Custom dateFormat">
+      <DateTime date={date} dateFormat="d MMM h:mm a" />
+    </StorybookCase>
+    <StorybookCase title="With children">
+      <DateTime date={date}>2 years ago</DateTime>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryDateTimeVariations.storyName = 'Variations';

@@ -19,19 +19,21 @@ const StyledDateText = styled(TextBlock)`
     white-space: normal;
   }
 `;
-const StyledTime = styled.time`
-  ${logicalProps('dateTime')}
+const StyledWrapper = styled.span`
+  ${logicalProps('dateTime')};
 `;
 
 const StyledPrefix = StyledDateText;
 const StyledSuffix = StyledDateText;
 
 const defaultDateFormat = "MMMM d yyyy, h:mmaaaaa'm'";
+const defaultDateFormatAttr = 'yyyy-MM-dd hh:mm:ssx';
 
-const ThemelessDateTime = React.forwardRef<HTMLTimeElement, DateTimeProps>(
+const ThemelessDateTime = React.forwardRef<HTMLSpanElement, DateTimeProps>(
   (
     {
-      date,
+      children,
+      date: dateProp,
       dateFormat = defaultDateFormat,
       prefix,
       suffix,
@@ -63,15 +65,24 @@ const ThemelessDateTime = React.forwardRef<HTMLTimeElement, DateTimeProps>(
 
     const logicalPropsOverrides = extractLogicalPropsFromOverrides(overrides);
 
+    const date = new Date(dateProp);
+    const dateTimeAttr = format(date, defaultDateFormatAttr);
+
     return (
-      <StyledTime {...logicalPropsOverrides} ref={ref} {...rest}>
+      <StyledWrapper {...logicalPropsOverrides} ref={ref} {...rest}>
         {prefix && (
           <StyledPrefix as="span" {...prefixPresets}>
             {`${prefix} `}
           </StyledPrefix>
         )}
-        <StyledDateText as="span" {...datePresets}>
-          {format(new Date(date), dateFormat)}
+
+        <StyledDateText
+          // @ts-ignore allow to render as time element only for this case
+          as="time"
+          dateTime={dateTimeAttr}
+          {...datePresets}
+        >
+          {children || format(date, dateFormat)}
           {suffix ? `, ` : ` `}
         </StyledDateText>
         {suffix && (
@@ -79,7 +90,7 @@ const ThemelessDateTime = React.forwardRef<HTMLTimeElement, DateTimeProps>(
             {suffix}
           </StyledSuffix>
         )}
-      </StyledTime>
+      </StyledWrapper>
     );
   },
 );
