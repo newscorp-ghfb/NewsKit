@@ -2,6 +2,7 @@
 /* eslint-env browser */
 
 import React from 'react';
+import {THEME_KEYS} from '../src/test/theme-select-object';
 
 interface StoryType {
   default: {
@@ -9,7 +10,7 @@ interface StoryType {
     decorators: Array<
       (
         Story: StoryType,
-        context: {globals: {backgrounds: {value: string}}},
+        context: {globals: {backgrounds: {value: string}}; name: string},
       ) => JSX.Element
     >;
   };
@@ -76,9 +77,13 @@ export default function showTestcase(theme: string | null) {
           .map(Story => (
             <>
               {story.default.decorators[0](Story, {
+                name: Story.storyName,
                 globals: {
                   backgrounds: {
-                    value: theme === 'dark' ? '#2E2E2E' : '#FFFFFF',
+                    value:
+                      theme === 'dark'
+                        ? THEME_KEYS.newskitDark
+                        : THEME_KEYS.newskitLight,
                   },
                 },
               })}
