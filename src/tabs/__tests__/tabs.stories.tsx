@@ -189,7 +189,7 @@ const MainContainer = styled.div`
   margin: 0 auto;
 `;
 
-const Container = styled(Block)<{width?: string; height?: string}>`
+const VerticalContainer = styled(Block)<{width?: string; height?: string}>`
   width: ${({width}) => width || '300px'};
   height: ${({height}) => height || '250px'};
   overflow: none;
@@ -668,7 +668,7 @@ export const StoryTabsWithOverflowAndScroll = () => (
     </StorybookCase>
 
     <StorybookCase title="Scroll - vertical">
-      <Container>
+      <VerticalContainer>
         <Tabs vertical>
           {Array.from(Array(15)).map((_, i) => (
             <Tab label={`Tab${i + 1}`}>
@@ -676,7 +676,7 @@ export const StoryTabsWithOverflowAndScroll = () => (
             </Tab>
           ))}
         </Tabs>
-      </Container>
+      </VerticalContainer>
     </StorybookCase>
   </StorybookPage>
 );
@@ -726,6 +726,8 @@ export const StoryTabsWithScrollOverrides = () => {
             ))}
           </Tabs>
         </StorybookCase>
+
+        <Spacer />
 
         <StorybookCase title="Scroll overrides via props - horizontal">
           <Tabs
@@ -1067,7 +1069,7 @@ StoryTabsWithFixedTabIndicatorSize.parameters = {
 
 export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
   <StorybookPage columns="auto">
-    <StorybookCase title="Tabs Horizontal">
+    <StorybookCase title="Horizontal">
       <Tabs overrides={{selectionIndicator: {indicator: {size: '75%'}}}}>
         <Tab label="Tab one">
           <LoremIpsum textNumber={1} />
@@ -1081,7 +1083,7 @@ export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
       </Tabs>
     </StorybookCase>
 
-    <StorybookCase title="Tabs Vertical">
+    <StorybookCase title="Vertical">
       <Tabs
         vertical
         overrides={{selectionIndicator: {indicator: {size: '75%'}}}}
@@ -1131,9 +1133,6 @@ export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
         <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
-        <Tab label="Tab Four">
-          <LoremIpsum textNumber={1} />
-        </Tab>
       </Tabs>
     </StorybookCase>
     <StorybookCase title="Vertical">
@@ -1158,9 +1157,6 @@ export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
         </Tab>
         <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
-        </Tab>
-        <Tab label="Tab Four">
-          <LoremIpsum textNumber={1} />
         </Tab>
       </Tabs>
     </StorybookCase>
@@ -1196,9 +1192,6 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
         <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
-        <Tab label="Tab Four">
-          <LoremIpsum textNumber={1} />
-        </Tab>
       </Tabs>
     </StorybookCase>
     <StorybookCase title="Vertical">
@@ -1222,9 +1215,6 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
         <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
-        <Tab label="Tab Four">
-          <LoremIpsum textNumber={1} />
-        </Tab>
       </Tabs>
     </StorybookCase>
   </StorybookPage>
@@ -1236,7 +1226,7 @@ StoryTabsWithCustomTabBarIndicatorAnimation.parameters = {
 };
 
 export const StoryTabsTransitions = () => (
-  <StorybookPage columns="auto" rowGap="space060">
+  <StorybookPage columns="auto">
     <StorybookCase title="Default transition preset">
       <Tabs>
         <Tab label="One transition preset">
