@@ -4,12 +4,7 @@ import {Story as StoryType} from '@storybook/react';
 import {styled, Scroll, TextBlock} from '../..';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {Tab, Tabs} from '..';
-import {
-  IconFilledEmail,
-  IconFilledStar,
-  IconOutlinedStar,
-  IconOutlinedStarOutline,
-} from '../../icons';
+import {IconFilledEmail, IconOutlinedStarOutline} from '../../icons';
 import {Block} from '../../block';
 import {Button} from '../../button';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
@@ -36,16 +31,6 @@ const tabsCustomThemeObject: CreateThemeArgs = {
   name: 'tab-custom-theme',
   overrides: {
     stylePresets: {
-      tabCustomPreset: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          color: '{{colors.inkContrast}}',
-        },
-        selected: {color: '{{colors.inkBase}}'},
-        'selected:hover': {
-          color: '{{colors.green060}}',
-        },
-      },
       tabsBarTrackCustomPreset: {
         base: {
           backgroundColor: '{{colors.amber020}}',
@@ -162,7 +147,7 @@ const tabsCustomThemeObject: CreateThemeArgs = {
       customBackgroundColorChange: {
         base: {
           transitionProperty: 'background-color',
-          transitionDuration: '100ms',
+          transitionDuration: '500ms',
           transitionDelay: '500ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
@@ -170,7 +155,7 @@ const tabsCustomThemeObject: CreateThemeArgs = {
       customFontColorChange: {
         base: {
           transitionProperty: 'color',
-          transitionDuration: '100ms',
+          transitionDuration: '1000ms',
           transitionDelay: '500ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
@@ -272,7 +257,7 @@ StoryTabsDefault.parameters = {
 export const StoryTabsHorizontal = () => (
   <StorybookPage columns="auto">
     <StorybookCase title="Small">
-      <Tabs size="small">
+      <Tabs>
         <Tab label="Tab one">
           <LoremIpsum textNumber={1} />
         </Tab>
@@ -326,7 +311,7 @@ StoryTabsHorizontal.parameters = {
 export const StoryTabsVertical = () => (
   <StorybookPage columns="auto">
     <StorybookCase title="Small">
-      <Tabs size="small" vertical>
+      <Tabs vertical>
         <Tab label="Tab one">
           <LoremIpsum textNumber={1} />
         </Tab>
@@ -378,7 +363,7 @@ StoryTabsVertical.parameters = {
 export const StoryTabsDistributionStart = () => (
   <StorybookPage columns="auto">
     <StorybookCase title="Horizontal">
-      <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
+      <Tabs distribution="start" divider initialSelectedIndex={10}>
         <Tab label="Tab one" key="tab-1">
           <LoremIpsum textNumber={1} />
         </Tab>
@@ -393,7 +378,7 @@ export const StoryTabsDistributionStart = () => (
     </StorybookCase>
 
     <StorybookCase title="Vertical">
-      <Tabs size="small" vertical divider distribution="start">
+      <Tabs vertical divider distribution="start">
         <Tab label="Tab one">
           <LoremIpsum textNumber={1} />
         </Tab>
@@ -417,7 +402,7 @@ StoryTabsDistributionStart.parameters = {
 export const StoryTabsDistributionGrow = () => (
   <StorybookPage columns="auto">
     <StorybookCase title="Horizontal">
-      <Tabs size="small" distribution="grow" divider>
+      <Tabs distribution="grow" divider>
         <Tab label="Tab one">
           <LoremIpsum textNumber={1} />
         </Tab>
@@ -432,7 +417,7 @@ export const StoryTabsDistributionGrow = () => (
     </StorybookCase>
 
     <StorybookCase title="Vertical">
-      <Tabs size="small" vertical divider distribution="grow">
+      <Tabs vertical divider distribution="grow">
         <Tab label="Tab one">
           <LoremIpsum textNumber={1} />
         </Tab>
@@ -456,7 +441,7 @@ StoryTabsDistributionGrow.parameters = {
 export const StoryTabsDistributionEqual = () => (
   <StorybookPage columns="auto">
     <StorybookCase title="Horizontal">
-      <Tabs size="small" divider distribution="equal">
+      <Tabs divider distribution="equal">
         <Tab label="Tab one">
           <LoremIpsum textNumber={1} />
         </Tab>
@@ -471,7 +456,7 @@ export const StoryTabsDistributionEqual = () => (
     </StorybookCase>
 
     <StorybookCase title="Vertical">
-      <Tabs size="small" vertical divider distribution="equal">
+      <Tabs vertical divider distribution="equal">
         <Tab label="Tab one">
           <LoremIpsum textNumber={1} />
         </Tab>
@@ -577,7 +562,6 @@ export const StoryControlledTabs = () => {
       <Spacer />
 
       <Tabs
-        size="small"
         distribution="start"
         divider
         selectedIndex={selectedIndex}
@@ -606,7 +590,7 @@ StoryControlledTabs.parameters = {
 export const StoryTabsWithScroll = () => (
   <StorybookPage columns="auto">
     <StorybookCase title="Horizontal">
-      <Tabs size="small" divider distribution="equal">
+      <Tabs divider distribution="equal">
         <Tab label="Tab one">
           <ScrollBox>
             <LoremIpsum text={LoremIpsumTextLong} textNumber={1} />
@@ -626,7 +610,7 @@ export const StoryTabsWithScroll = () => (
       <Spacer />
     </StorybookCase>
     <StorybookCase title="Vertical">
-      <Tabs size="small" vertical divider distribution="equal">
+      <Tabs vertical divider distribution="equal">
         <Tab label="Tab one">
           <ScrollBox>
             <LoremIpsum text={LoremIpsumTextLong} textNumber={1} />
@@ -685,80 +669,58 @@ StoryTabsWithOverflowAndScroll.parameters = {
   percy: {skip: true},
 };
 
-export const StoryTabsWithScrollOverrides = () => {
-  const CustomScroll = styled.div`
-    max-width: 100%;
-    overflow: auto;
-    border: 2px solid #017582;
-  `;
+export const StoryTabsWithScrollOverrides = () => (
+  <StorybookPage columns="auto">
+    <MainContainer>
+      <StorybookCase title="Scroll overrides via component - horizontal">
+        <Tabs
+          overrides={{
+            scroll: ({children, vertical}) => (
+              <Scroll controls="hover" snapAlign="center" vertical={vertical}>
+                {children}
+              </Scroll>
+            ),
+          }}
+        >
+          {Array.from(Array(15)).map((_, i) => (
+            <Tab label={`Tab ${i + 1}`}>
+              <LoremIpsum textNumber={1 + (i % 3)} />
+            </Tab>
+          ))}
+        </Tabs>
+      </StorybookCase>
 
-  return (
-    <StorybookPage columns="auto">
-      <MainContainer>
-        <StorybookCase title="Scroll overrides via component - horizontal">
-          <Tabs
-            overrides={{
-              scroll: ({children, vertical}) => (
-                <Scroll controls="hover" snapAlign="center" vertical={vertical}>
-                  {children}
-                </Scroll>
-              ),
-            }}
-          >
-            {Array.from(Array(15)).map((_, i) => (
-              <Tab label={`Tab ${i + 1}`}>
-                <LoremIpsum textNumber={1 + (i % 3)} />
-              </Tab>
-            ))}
-          </Tabs>
+      <Spacer />
 
-          <Spacer />
-
-          <Tabs
-            overrides={{
-              scroll: ({children}) => <CustomScroll>{children}</CustomScroll>,
-            }}
-          >
-            {Array.from(Array(15)).map((_, i) => (
-              <Tab label={`Tab ${i + 1}`}>
-                <LoremIpsum textNumber={1 + (i % 3)} />
-              </Tab>
-            ))}
-          </Tabs>
-        </StorybookCase>
-
-        <Spacer />
-
-        <StorybookCase title="Scroll overrides via props - horizontal">
-          <Tabs
-            overrides={{
-              scroll: {
-                props: {
-                  scrollBar: true,
-                  controls: 'hover',
-                  overrides: {
-                    controls: {
-                      button: {
-                        stylePreset: 'scrollArrowsCustom',
-                      },
-                      offset: '0px',
+      <StorybookCase title="Scroll overrides via props - horizontal">
+        <Tabs
+          overrides={{
+            scroll: {
+              props: {
+                scrollBar: true,
+                controls: 'hover',
+                overrides: {
+                  controls: {
+                    button: {
+                      stylePreset: 'scrollArrowsCustom',
                     },
+                    offset: '0px',
                   },
                 },
               },
-            }}
-          >
-            {Array.from(Array(15)).map((_, i) => (
-              <Tab label={`Tab ${i + 1}`}>
-                <LoremIpsum textNumber={1 + (i % 3)} />
-              </Tab>
-            ))}
-          </Tabs>
-        </StorybookCase>
-      </MainContainer>
-    </StorybookPage>
-  );
-};
+            },
+          }}
+        >
+          {Array.from(Array(15)).map((_, i) => (
+            <Tab label={`Tab ${i + 1}`}>
+              <LoremIpsum textNumber={1 + (i % 3)} />
+            </Tab>
+          ))}
+        </Tabs>
+      </StorybookCase>
+    </MainContainer>
+  </StorybookPage>
+);
 StoryTabsWithScrollOverrides.storyName = 'Scroll overrides';
 StoryTabsWithScrollOverrides.parameters = {
   percy: {skip: true},
@@ -834,10 +796,10 @@ export const StoryLabelAndIconOnly = () => (
 
     <StorybookCase title="Icon only - horizontal">
       <Tabs align="end">
-        <Tab ariaLabel="tab 1" label={<IconOutlinedStar />}>
+        <Tab ariaLabel="tab 1" label={<IconOutlinedStarOutline />}>
           <LoremIpsum textNumber={1} />
         </Tab>
-        <Tab ariaLabel="tab 2" label={<IconFilledStar />}>
+        <Tab ariaLabel="tab 2" label={<IconOutlinedStarOutline />}>
           <LoremIpsum textNumber={2} />
         </Tab>
         <Tab ariaLabel="tab 3" label={<IconOutlinedStarOutline />}>
@@ -862,10 +824,10 @@ export const StoryLabelAndIconOnly = () => (
 
     <StorybookCase title="Icon only - vertical">
       <Tabs align="end" distribution="grow" vertical>
-        <Tab ariaLabel="tab 1" label={<IconOutlinedStar />}>
+        <Tab ariaLabel="tab 1" label={<IconOutlinedStarOutline />}>
           <LoremIpsum textNumber={1} />
         </Tab>
-        <Tab ariaLabel="tab 2" label={<IconFilledStar />}>
+        <Tab ariaLabel="tab 2" label={<IconOutlinedStarOutline />}>
           <LoremIpsum textNumber={2} />
         </Tab>
         <Tab ariaLabel="tab 3" label={<IconOutlinedStarOutline />}>
@@ -1232,8 +1194,8 @@ export const StoryTabsTransitions = () => (
         <Tab label="One transition preset">
           <LoremIpsum textNumber={1} />
         </Tab>
-        <Tab label="two transition presets">
-          <LoremIpsum textNumber={1} />
+        <Tab label="Two transition presets">
+          <LoremIpsum textNumber={2} />
         </Tab>
       </Tabs>
     </StorybookCase>
@@ -1241,7 +1203,6 @@ export const StoryTabsTransitions = () => (
       <Tabs>
         <Tab
           overrides={{
-            stylePreset: 'tabCustomPreset',
             transitionPreset: 'customBackgroundColorChange',
           }}
           label="One transition preset"
@@ -1250,15 +1211,14 @@ export const StoryTabsTransitions = () => (
         </Tab>
         <Tab
           overrides={{
-            stylePreset: 'tabCustomPreset',
             transitionPreset: [
               'customBackgroundColorChange',
               'customFontColorChange',
             ],
           }}
-          label="two transition presets"
+          label="Two transition presets"
         >
-          <LoremIpsum textNumber={1} />
+          <LoremIpsum textNumber={2} />
         </Tab>
       </Tabs>
     </StorybookCase>
@@ -1267,10 +1227,10 @@ export const StoryTabsTransitions = () => (
         <Tab
           label="Using extend prop on one preset"
           overrides={{
-            stylePreset: 'tabCustomPreset',
             transitionPreset: {
               extend: 'backgroundColorChange',
               base: {
+                transitionDelay: '2000ms',
                 transitionDuration: '{{motions.motionDuration050}}',
               },
             },
@@ -1281,16 +1241,16 @@ export const StoryTabsTransitions = () => (
         <Tab
           label="Using extend prop on one preset"
           overrides={{
-            stylePreset: 'tabCustomPreset',
             transitionPreset: {
               extend: 'backgroundColorChange',
               base: {
+                transitionDelay: '2000ms',
                 transitionDuration: '{{motions.motionDuration050}}',
               },
             },
           }}
         >
-          <LoremIpsum textNumber={1} />
+          <LoremIpsum textNumber={2} />
         </Tab>
       </Tabs>
     </StorybookCase>
@@ -1299,17 +1259,18 @@ export const StoryTabsTransitions = () => (
         <Tab
           label="Using extend prop on two presets"
           overrides={{
-            stylePreset: 'tabCustomPreset',
             transitionPreset: [
               {
                 extend: 'backgroundColorChange',
                 base: {
+                  transitionDelay: '2000ms',
                   transitionDuration: '{{motions.motionDuration030}}',
                 },
               },
               {
-                extend: 'customFontColorChange',
+                extend: 'fontColorChange',
                 base: {
+                  transitionDelay: '1000ms',
                   transitionDuration: '{{motions.motionDuration050}}',
                 },
               },
@@ -1321,24 +1282,25 @@ export const StoryTabsTransitions = () => (
         <Tab
           label="Using extend prop on two presets"
           overrides={{
-            stylePreset: 'tabCustomPreset',
             transitionPreset: [
               {
                 extend: 'backgroundColorChange',
                 base: {
+                  transitionDelay: '2000ms',
                   transitionDuration: '{{motions.motionDuration030}}',
                 },
               },
               {
-                extend: 'customFontColorChange',
+                extend: 'fontColorChange',
                 base: {
+                  transitionDelay: '1000ms',
                   transitionDuration: '{{motions.motionDuration050}}',
                 },
               },
             ],
           }}
         >
-          <LoremIpsum textNumber={1} />
+          <LoremIpsum textNumber={2} />
         </Tab>
       </Tabs>
     </StorybookCase>
@@ -1418,12 +1380,7 @@ export const StoryTabsStylingOverrides = () => {
   return (
     <StorybookPage columns="auto">
       <StorybookCase title="Custom colours">
-        <Tabs
-          size="small"
-          distribution="start"
-          divider
-          initialSelectedIndex={10}
-        >
+        <Tabs distribution="start" divider initialSelectedIndex={10}>
           <Tab label="Tab one" key="tab-1" overrides={customColours}>
             <LoremIpsum textNumber={1} />
           </Tab>
@@ -1436,12 +1393,7 @@ export const StoryTabsStylingOverrides = () => {
         </Tabs>
       </StorybookCase>
       <StorybookCase title="Custom typography">
-        <Tabs
-          size="small"
-          distribution="start"
-          divider
-          initialSelectedIndex={10}
-        >
+        <Tabs distribution="start" divider initialSelectedIndex={10}>
           <Tab label="Tab one" key="tab-1" overrides={customTypography}>
             <LoremIpsum textNumber={1} />
           </Tab>
@@ -1477,12 +1429,7 @@ export const StoryTabsOverrides = () => {
   return (
     <StorybookPage columns="auto">
       <StorybookCase title="Custom outline">
-        <Tabs
-          size="small"
-          distribution="start"
-          divider
-          initialSelectedIndex={10}
-        >
+        <Tabs distribution="start" divider initialSelectedIndex={10}>
           <Tab label="Tab one" key="tab-1" overrides={customOutline}>
             <LoremIpsum textNumber={1} />
           </Tab>
@@ -1497,7 +1444,6 @@ export const StoryTabsOverrides = () => {
       <StorybookCase title="Custom width">
         <FixedWidthBlock>
           <Tabs
-            size="small"
             distribution="start"
             divider
             initialSelectedIndex={10}
@@ -1525,7 +1471,6 @@ export const StoryTabsOverrides = () => {
 
       <StorybookCase title="Custom offset">
         <Tabs
-          size="small"
           distribution="start"
           divider
           initialSelectedIndex={10}
