@@ -816,7 +816,7 @@ export const StoryLabelAndIconOnly = () => (
     </StorybookCase>
 
     <StorybookCase title="Icon only - vertical">
-      <Tabs align="end" distribution="grow" vertical>
+      <Tabs align="end" vertical>
         <Tab ariaLabel="tab 1" label={<IconOutlinedStarOutline />}>
           <LoremIpsum textNumber={1} />
         </Tab>
