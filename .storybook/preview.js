@@ -16,24 +16,6 @@ import {
   createEventInstrumentation,
 } from '../src/instrumentation';
 
-const unlimitedScenarios = [
-  'Accordion',
-  'Grid',
-  'Paragraph',
-  'Stack',
-  'card',
-  'drawer',
-  'Form input',
-  'modal',
-  'Image',
-  'image-e2e',
-  'grid-layout',
-  'Popover',
-  'audio-player-composable',
-  'text-area',
-  'useIntersection',
-];
-
 const BackgroundColor = styled.div`
   position: absolute;
   top: 0;
@@ -48,17 +30,9 @@ const StoryWrapper = styled.div`
   box-sizing: border-box;
 `;
 
-const Container = styled.div`
-  max-width: 1024px;
-  max-height: 768px;
-  overflow: hidden;
-`;
-
 const Background = ({children}) => (
   <BackgroundColor>{children}</BackgroundColor>
 );
-const LimitSizeDecorator = ({children}) => <Container>{children}</Container>;
-
 const NoDecorator = ({children}) => <>{children}</>;
 
 export const parameters = {
@@ -74,6 +48,7 @@ export const parameters = {
   },
   options: {
     storySort: {
+      method: 'alphabetical',
       order: ['Welcome', 'Components', 'Utilities', 'Deprecated', '*'],
     },
   },
@@ -125,21 +100,11 @@ export const parameters = {
 };
 
 export const decorators = [
-  // Add wrapper around stories to limit their size
-  (Story, context) => {
-    const kind = context.kind.split('/')[1];
-    const Decorator =
-      unlimitedScenarios.includes(kind) ||
-      context.componentId === 'welcome' ||
-      context.componentId === 'theme-checker'
-        ? NoDecorator
-        : LimitSizeDecorator;
+  Story => {
     return (
-      <Decorator>
-        <StoryWrapper>
-          <Story />
-        </StoryWrapper>
-      </Decorator>
+      <StoryWrapper>
+        <Story />
+      </StoryWrapper>
     );
   },
   (Story, context) => {
