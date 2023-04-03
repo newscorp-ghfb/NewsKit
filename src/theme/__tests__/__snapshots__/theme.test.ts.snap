@@ -418,6 +418,11 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -4171,6 +4176,11 @@ Object {
       "backgroundColor": "{{colors.interactiveSecondary020}}",
       "color": "{{colors.inkBase}}",
       "iconColor": "{{colors.inkBase}}",
+    },
+  },
+  "cardComposableLink": Object {
+    "hover": Object {
+      "backgroundColor": "{{colors.interface020}}",
     },
   },
   "cardContainer": Object {

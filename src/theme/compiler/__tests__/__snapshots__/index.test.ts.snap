@@ -414,6 +414,11 @@ Object {
     "spaceInsetStretch060": "48px 32px",
   },
   "stylePresets": Object {
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "#F1F1F1",
+      },
+    },
     "controlLabel": Object {
       "base": Object {
         "color": "#3B3B3B",

@@ -179,3 +179,12 @@ stylePresets.selectOptionItemIcon = {
     iconColor: '{{colors.interactiveInput040}}',
   },
 };
+
+// stylePresets.cardComposable = {
+// };
+
+stylePresets.cardComposableLink = {
+  hover: {
+    backgroundColor: '{{colors.interface020}}',
+  },
+} as StylePreset;

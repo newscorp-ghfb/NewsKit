@@ -175,3 +175,18 @@ export const GridTeaser = ({
     </StyledAdvancedCard>
   );
 };
+
+// const hasTouchLink = (children: any, href: string): boolean =>
+//   React.Children.toArray(children).some(child => {
+//     const componentName = getDisplayName(child);
+
+//     if (componentName === 'CardTouchArea' && child.props.href === href) {
+//       return true;
+//     }
+
+//     if (typeof child.type === 'function' && child.props.children) {
+//       return hasTouchLink(child.props.children, href);
+//     }
+
+//     return false;
+//   });

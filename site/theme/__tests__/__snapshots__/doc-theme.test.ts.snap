@@ -853,6 +853,11 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "cardContainer": Object {
       "base": Object {
         "borderRadius": false,
@@ -3611,6 +3616,11 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "cardContainer": Object {
@@ -6376,6 +6386,11 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "cardContainer": Object {
       "base": Object {
         "borderRadius": false,
@@ -9134,6 +9149,11 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "cardContainer": Object {
@@ -11899,6 +11919,11 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "cardContainer": Object {
       "base": Object {
         "borderRadius": false,
@@ -14657,6 +14682,11 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "cardContainer": Object {
@@ -17422,6 +17452,11 @@ Object {
         "iconColor": "{{colors.inkBrand010}}",
       },
     },
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
+      },
+    },
     "cardContainer": Object {
       "base": Object {
         "borderRadius": false,
@@ -20180,6 +20215,11 @@ Object {
         "backgroundColor": "{{colors.interactiveInverse020}}",
         "color": "{{colors.inkBrand010}}",
         "iconColor": "{{colors.inkBrand010}}",
+      },
+    },
+    "cardComposableLink": Object {
+      "hover": Object {
+        "backgroundColor": "{{colors.interface020}}",
       },
     },
     "cardContainer": Object {
