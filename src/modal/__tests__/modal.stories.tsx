@@ -11,7 +11,7 @@ import {Label, Block, P} from '../..';
 import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {deepMerge} from '../../utils';
-import {StorybookPage} from '../../test/storybook-comps';
+import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 
 const modalPanel = {
   base: {
@@ -131,29 +131,31 @@ export const StoryModalDefault = () =>
 
     return (
       <StorybookPage data-testid="scrollable-modal">
-        <Button
-          onClick={open}
-          data-testid="modal-open-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <Modal
-          aria-label="Default Modal"
-          open={isActive}
-          onDismiss={close}
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-          }}
-          header="Modal Title"
-        >
-          {modalContent}
-        </Modal>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            aria-label="Default Modal"
+            open={isActive}
+            onDismiss={close}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -179,21 +181,23 @@ export const StoryOpenOnPageLoad = () =>
     }, [hasMounted, open]);
 
     return (
-      <>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          aria-label="Open modal on page load"
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-          }}
-          header="Modal Title"
-        >
-          {modalContent}
-        </Modal>
-      </>
+      <StorybookPage>
+        <StorybookCase>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            aria-label="Open modal on page load"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
 StoryOpenOnPageLoad.storyName = 'Open on page load';
@@ -201,78 +205,90 @@ StoryOpenOnPageLoad.parameters = StoryModalDefault.parameters;
 
 export const StoryWithCloseButtonOnTheLeft = () =>
   React.createElement(() => (
-    <>
-      <Modal
-        aria-label="Modal: header close button on the left"
-        open
-        onDismiss={() => {}}
-        overrides={{
-          panel: {
-            stylePreset: 'modalPanelDefault',
-          },
-        }}
-        header="Modal Title"
-        closePosition="left"
-      >
-        {modalContent}
-      </Modal>
-    </>
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Modal: header close button on the left"
+          open
+          onDismiss={() => {}}
+          overrides={{
+            panel: {
+              stylePreset: 'modalPanelDefault',
+            },
+          }}
+          header="Modal Title"
+          closePosition="left"
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
   ));
 StoryWithCloseButtonOnTheLeft.storyName = 'Close position set to left';
 StoryWithCloseButtonOnTheLeft.parameters = StoryModalDefault.parameters;
 
 export const StoryNoHeaderContent = () =>
   React.createElement(() => (
-    <>
-      <Modal
-        aria-label="Default with no header"
-        open
-        onDismiss={() => {}}
-        overrides={{
-          panel: {
-            stylePreset: 'modalPanelDefault',
-          },
-          header: {paddingInline: 'space000', paddingBlock: 'space000'},
-        }}
-        closePosition="left"
-      >
-        {modalContent}
-      </Modal>
-    </>
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default with no header"
+          open
+          onDismiss={() => {}}
+          overrides={{
+            panel: {
+              stylePreset: 'modalPanelDefault',
+            },
+            header: {paddingInline: 'space000', paddingBlock: 'space000'},
+          }}
+          closePosition="left"
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
   ));
 StoryNoHeaderContent.storyName = 'No header content';
 StoryNoHeaderContent.parameters = StoryModalDefault.parameters;
 
 export const StoryNoClose = () =>
   React.createElement(() => (
-    <Modal
-      aria-label="Default with no header"
-      open
-      overrides={{
-        panel: {
-          stylePreset: 'modalPanelDefault',
-        },
-      }}
-      header="Modal Title"
-      closePosition="none"
-      onDismiss={() => {}}
-    >
-      {modalContent}
-    </Modal>
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default with no header"
+          open
+          overrides={{
+            panel: {
+              stylePreset: 'modalPanelDefault',
+            },
+          }}
+          header="Modal Title"
+          closePosition="none"
+          onDismiss={() => {}}
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
   ));
 StoryNoClose.storyName = 'No close button';
 StoryNoClose.parameters = StoryModalDefault.parameters;
 
 export const StoryNoHeader = () =>
   React.createElement(() => (
-    <Modal
-      aria-label="Default with no header"
-      open
-      closePosition="none"
-      onDismiss={() => {}}
-    >
-      {modalContent}
-    </Modal>
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default with no header"
+          open
+          closePosition="none"
+          onDismiss={() => {}}
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
   ));
 StoryNoHeader.storyName = 'No header';
 StoryNoHeader.parameters = StoryModalDefault.parameters;
@@ -282,30 +298,32 @@ export const StoryWithHiddenOverlay = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <StorybookPage data-testid="scrollable-modal">
-        <Button
-          onClick={open}
-          data-testid="modal-open-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-          }}
-          header="Modal Title"
-          hideOverlay
-        >
-          {modalContent}
-        </Modal>
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+            hideOverlay
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -343,61 +361,65 @@ const items = [
 
 export const StoryWithSelect = () =>
   React.createElement(() => (
-    <Modal
-      aria-label="Default modal"
-      open
-      onDismiss={() => {}}
-      overrides={{
-        panel: {
-          base: {
-            width: '348px',
-            height: '268px',
-            minWidth: '20vw',
-            maxWidth: '80vw',
-            minHeight: '20vh',
-            maxHeight: {
-              xs: '90vh',
-              md: '85vh',
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default modal"
+          open
+          onDismiss={() => {}}
+          overrides={{
+            panel: {
+              base: {
+                width: '348px',
+                height: '268px',
+                minWidth: '20vw',
+                maxWidth: '80vw',
+                minHeight: '20vh',
+                maxHeight: {
+                  xs: '90vh',
+                  md: '85vh',
+                },
+              },
             },
-          },
-        },
-      }}
-      header="Modal Title"
-    >
-      {modalContent}
-      <br />
-      <br />
-      <Block>
-        <Label
-          htmlFor="id-1"
-          size="small"
-          overrides={{
-            typographyPreset: 'utilityLabel020',
           }}
+          header="Modal Title"
         >
-          Label
-        </Label>
-        <Select
-          aria-describedby="id-2-at"
-          id="id-2"
-          size="medium"
-          useModal={{xs: true, sm: true}}
-        >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
-        </Select>
-        <AssistiveText
-          overrides={{
-            marginBlock: 'space050',
-          }}
-        >
-          Assistive Text
-        </AssistiveText>
-      </Block>
-    </Modal>
+          {modalContent}
+          <br />
+          <br />
+          <Block>
+            <Label
+              htmlFor="id-1"
+              size="small"
+              overrides={{
+                typographyPreset: 'utilityLabel020',
+              }}
+            >
+              Label
+            </Label>
+            <Select
+              aria-describedby="id-2-at"
+              id="id-2"
+              size="medium"
+              useModal={{xs: true, sm: true}}
+            >
+              {items.map(item => (
+                <SelectOption key={item} value={item}>
+                  {item}
+                </SelectOption>
+              ))}
+            </Select>
+            <AssistiveText
+              overrides={{
+                marginBlock: 'space050',
+              }}
+            >
+              Assistive Text
+            </AssistiveText>
+          </Block>
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
   ));
 StoryWithSelect.storyName = 'Select';
 StoryWithSelect.parameters = StoryModalDefault.parameters;
@@ -407,29 +429,31 @@ export const StoryWithAriaAttributes = () =>
     const [isActive, open, close] = useActiveState();
     return (
       <StorybookPage>
-        <Button
-          onClick={open}
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          ariaLabelledby="modalHeader"
-          ariaDescribedby="description purpose"
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-          }}
-          header="Modal Title"
-        >
-          {modalContent}
-        </Modal>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            ariaLabelledby="modalHeader"
+            ariaDescribedby="description purpose"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -442,30 +466,32 @@ export const StoryWithCustomAutofocus = () =>
 
     return (
       <StorybookPage data-testid="scrollable-modal">
-        <Button
-          onClick={open}
-          data-testid="modal-open-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          ariaLabelledby="modalHeader"
-          ariaDescribedby="description purpose"
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-          }}
-          header="Modal Title"
-        >
-          {modalContent}
-        </Modal>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            ariaLabelledby="modalHeader"
+            ariaDescribedby="description purpose"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -480,7 +506,7 @@ export const StoryWithCustomRestoreFocus = () =>
       | undefined;
 
     return (
-      <StorybookPage data-testid="scrollable-modal">
+      <StorybookPage>
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -528,31 +554,33 @@ export const StoryWithDisabledFocusTrap = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <StorybookPage data-testid="scrollable-modal">
-        <Button
-          onClick={open}
-          data-testid="modal-open-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-            header: {typographyPreset: 'utilityLabel030'},
-          }}
-          header="Modal Title"
-          disableFocusTrap
-        >
-          {modalContent}
-        </Modal>
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+              header: {typographyPreset: 'utilityLabel030'},
+            }}
+            header="Modal Title"
+            disableFocusTrap
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -564,32 +592,34 @@ export const StoryModelessModal = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <StorybookPage data-testid="scrollable-modal">
-        <Button
-          onClick={open}
-          data-testid="modal-open-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modeless modal
-        </Button>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-            header: {typographyPreset: 'utilityLabel030'},
-          }}
-          header="Modal Title"
-          hideOverlay
-          disableFocusTrap
-        >
-          {modalContent}
-        </Modal>
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modeless modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+              header: {typographyPreset: 'utilityLabel030'},
+            }}
+            header="Modal Title"
+            hideOverlay
+            disableFocusTrap
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -611,37 +641,39 @@ export const StoryModelessInlineModal = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <StorybookPage data-testid="scrollable-modal">
-        <Button
-          onClick={open}
-          data-testid="modal-open-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <ModalWrapper>
-          <P overrides={{typographyPreset: 'editorialParagraph010'}}>
-            Inline modal opens here.
-          </P>
-          <Modal
-            open={isActive}
-            onDismiss={close}
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
             overrides={{
-              panel: {
-                stylePreset: 'modalPanelDefault',
-              },
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
             }}
-            header="Modal Title"
-            hideOverlay
-            disableFocusTrap
-            inline
           >
-            {modalContent}
-          </Modal>
-        </ModalWrapper>
+            Open modal
+          </Button>
+          <ModalWrapper>
+            <P overrides={{typographyPreset: 'editorialParagraph010'}}>
+              Inline modal opens here.
+            </P>
+            <Modal
+              open={isActive}
+              onDismiss={close}
+              overrides={{
+                panel: {
+                  stylePreset: 'modalPanelDefault',
+                },
+              }}
+              header="Modal Title"
+              hideOverlay
+              disableFocusTrap
+              inline
+            >
+              {modalContent}
+            </Modal>
+          </ModalWrapper>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -658,58 +690,60 @@ export const StoryNestedModals = () =>
 
     return (
       <StorybookPage>
-        <Button
-          onClick={open}
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <Modal
-          aria-label="Default Modal"
-          open={isActive}
-          onDismiss={close}
-          header="Modal Title"
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-          }}
-        >
-          {modalContent}
-          <br />
-          <br />
+        <StorybookCase>
           <Button
-            onClick={openNested}
+            onClick={open}
             overrides={{
               typographyPreset: 'utilityButton020',
               stylePreset: 'buttonOutlinedPrimary',
             }}
           >
-            Open nested modal
+            Open modal
           </Button>
           <Modal
-            aria-label="Nested Modal"
-            open={isNestedActive}
-            onDismiss={closeNested}
-            header="Nested modal"
+            aria-label="Default Modal"
+            open={isActive}
+            onDismiss={close}
+            header="Modal Title"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
           >
             {modalContent}
             <br />
             <br />
             <Button
-              onClick={closeNested}
+              onClick={openNested}
               overrides={{
                 typographyPreset: 'utilityButton020',
                 stylePreset: 'buttonOutlinedPrimary',
               }}
             >
-              Close nested modal
+              Open nested modal
             </Button>
+            <Modal
+              aria-label="Nested Modal"
+              open={isNestedActive}
+              onDismiss={closeNested}
+              header="Nested modal"
+            >
+              {modalContent}
+              <br />
+              <br />
+              <Button
+                onClick={closeNested}
+                overrides={{
+                  typographyPreset: 'utilityButton020',
+                  stylePreset: 'buttonOutlinedPrimary',
+                }}
+              >
+                Close nested modal
+              </Button>
+            </Modal>
           </Modal>
-        </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -722,29 +756,31 @@ export const StoryLogicalProps = () =>
 
     return (
       <StorybookPage data-testid="scrollable-modal">
-        <Button
-          onClick={open}
-          data-testid="modal-open-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <Modal
-          aria-label="Default Modal"
-          open={isActive}
-          onDismiss={close}
-          header="Modal Title"
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-          }}
-        >
-          {modalContent}
-        </Modal>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            aria-label="Default Modal"
+            open={isActive}
+            onDismiss={close}
+            header="Modal Title"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
@@ -754,39 +790,41 @@ StoryLogicalProps.parameters = StoryModalDefault.parameters;
 export const StoryWithOverrides = () =>
   React.createElement(() => (
     <StorybookPage>
-      <Modal
-        aria-label="Default with overrides"
-        open
-        onDismiss={() => {}}
-        header="Modal Title"
-        overrides={{
-          overlay: {
-            zIndex: 60,
-            stylePreset: 'overlayCustom',
-          },
-          panel: {
-            stylePreset: 'modalPanelCustom',
-            zIndex: 70,
-            topOffset: '15vh',
-          },
-          header: {
-            stylePreset: 'modalHeaderCustom',
-          },
-          content: {
-            paddingInline: 'space060',
-            paddingBlock: 'space060',
-            stylePreset: 'modalContentCustom',
-          },
-          closeButton: {
-            stylePreset: 'modalCloseButtonCustom',
-            paddingInline: 'space000',
-            paddingBlock: 'space000',
-            typographyPreset: 'inkBrand010',
-          },
-        }}
-      >
-        {modalContent}
-      </Modal>
+      <StorybookCase>
+        <Modal
+          aria-label="Default with overrides"
+          open
+          onDismiss={() => {}}
+          header="Modal Title"
+          overrides={{
+            overlay: {
+              zIndex: 60,
+              stylePreset: 'overlayCustom',
+            },
+            panel: {
+              stylePreset: 'modalPanelCustom',
+              zIndex: 70,
+              topOffset: '15vh',
+            },
+            header: {
+              stylePreset: 'modalHeaderCustom',
+            },
+            content: {
+              paddingInline: 'space060',
+              paddingBlock: 'space060',
+              stylePreset: 'modalContentCustom',
+            },
+            closeButton: {
+              stylePreset: 'modalCloseButtonCustom',
+              paddingInline: 'space000',
+              paddingBlock: 'space000',
+              typographyPreset: 'inkBrand010',
+            },
+          }}
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
     </StorybookPage>
   ));
 StoryWithOverrides.storyName = 'Styling overrides';
