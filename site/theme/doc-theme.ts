@@ -92,7 +92,7 @@ export const accessibilityThemeLight = createTheme({
   overrides: {...documentationLightAccessibility, fonts},
 });
 
-export const accessibilitysThemeDark = createTheme({
+export const accessibilityThemeDark = createTheme({
   name: 'docs-accessibility-dark',
   baseTheme: docsThemeDark,
   overrides: {...documentationDarkAccessibility, fonts},
