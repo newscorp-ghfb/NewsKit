@@ -7764,7 +7764,7 @@ exports[`Switch render with state: Base 1`] = `
         <input
           class="emotion-8"
           data-testid="checkbox-input"
-          id="Base"
+          id="base"
           role="switch"
           type="checkbox"
         />
@@ -8073,7 +8073,7 @@ exports[`Switch render with state: Checked 1`] = `
           checked=""
           class="emotion-8"
           data-testid="checkbox-input"
-          id="Checked"
+          id="checked"
           role="switch"
           type="checkbox"
         />
@@ -8327,7 +8327,7 @@ exports[`Switch render with state: Checked disabled 1`] = `
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
-          id="Checked disabled"
+          id="checked-disabled"
           role="switch"
           type="checkbox"
         />
@@ -8580,7 +8580,7 @@ exports[`Switch render with state: Disabled 1`] = `
           class="emotion-8"
           data-testid="checkbox-input"
           disabled=""
-          id="Disabled"
+          id="disabled"
           role="switch"
           type="checkbox"
         />

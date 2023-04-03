@@ -21,7 +21,11 @@ describe('Switch', () => {
   states.forEach(([id, props]) => {
     test(`render with state: ${id}`, () => {
       const fragment = renderToFragmentWithTheme(() => (
-        <Switch label="label" {...props} id={id as string} />
+        <Switch
+          label="label"
+          {...props}
+          id={id.replace(' ', '-').toLowerCase()}
+        />
       ));
       expect(fragment).toMatchSnapshot();
     });
