@@ -126,7 +126,7 @@ exports[`Menu alignment renders with large size menu items horizontal 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -379,7 +379,7 @@ exports[`Menu alignment renders with large size menu items vertical 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -628,7 +628,7 @@ exports[`Menu alignment renders with medium size menu items horizontal 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -881,7 +881,7 @@ exports[`Menu alignment renders with medium size menu items vertical 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1130,7 +1130,7 @@ exports[`Menu alignment renders with menu items aligned at the center horizontal
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1383,7 +1383,7 @@ exports[`Menu alignment renders with menu items aligned at the center vertical 1
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1632,7 +1632,7 @@ exports[`Menu alignment renders with menu items aligned at the end horizontal 1`
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1885,7 +1885,7 @@ exports[`Menu alignment renders with menu items aligned at the end vertical 1`] 
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2133,7 +2133,7 @@ exports[`Menu alignment renders with menu items aligned at the spaceBetween hori
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2385,7 +2385,7 @@ exports[`Menu alignment renders with menu items aligned at the spaceBetween vert
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2634,7 +2634,7 @@ exports[`Menu alignment renders with menu items aligned at the start horizontal 
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2887,7 +2887,7 @@ exports[`Menu alignment renders with menu items aligned at the start vertical 1`
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -3136,7 +3136,7 @@ exports[`Menu alignment renders with small size menu items horizontal 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -3389,7 +3389,7 @@ exports[`Menu alignment renders with small size menu items vertical 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -3654,7 +3654,7 @@ exports[`Menu renders horizontally with menu dividers 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -3989,7 +3989,7 @@ exports[`Menu renders horizontally with menu group 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4250,7 +4250,7 @@ exports[`Menu renders horizontally with menu items 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4504,7 +4504,7 @@ exports[`Menu renders horizontally with selected menu items 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4664,7 +4664,7 @@ exports[`Menu renders horizontally with selected menu items 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4877,7 +4877,7 @@ exports[`Menu renders vertically with menu dividers 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5211,7 +5211,7 @@ exports[`Menu renders vertically with menu group 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5476,7 +5476,7 @@ exports[`Menu renders vertically with menu items 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5734,7 +5734,7 @@ exports[`Menu renders vertically with selected menu items 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -5896,7 +5896,7 @@ exports[`Menu renders vertically with selected menu items 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6093,7 +6093,7 @@ exports[`Menu renders with default props 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6344,7 +6344,7 @@ exports[`Menu renders with logical prop overrides 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -6872,7 +6872,7 @@ exports[`MenuGroup renders with overrides 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7190,7 +7190,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7534,7 +7534,7 @@ exports[`MenuGroup renders with title when vertical 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -7849,7 +7849,7 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8116,7 +8116,7 @@ exports[`MenuItem renders in large size 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8320,7 +8320,7 @@ exports[`MenuItem renders in medium size 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8524,7 +8524,7 @@ exports[`MenuItem renders in small size 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8728,7 +8728,7 @@ exports[`MenuItem renders menu item with anchor attributes 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -8938,7 +8938,7 @@ exports[`MenuItem renders selected menu item with aria attributes 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -9197,7 +9197,7 @@ exports[`MenuItem renders with default props 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -9401,7 +9401,7 @@ exports[`MenuItem renders with icon 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -9800,7 +9800,7 @@ exports[`MenuSub render defaultExpanded when uncontrolled 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -10128,7 +10128,7 @@ exports[`MenuSub render nested submenus 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -10484,7 +10484,7 @@ exports[`MenuSub renders expanded when horizontal 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -10816,7 +10816,7 @@ exports[`MenuSub renders expanded when vertical 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -11146,7 +11146,7 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -11328,7 +11328,7 @@ exports[`MenuSub renders selected menu sub with aria attributes 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -11608,7 +11608,7 @@ exports[`MenuSub renders with default props 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -11849,7 +11849,7 @@ exports[`MenuSub renders with logical props overrides 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -12297,7 +12297,7 @@ exports[`MenuSub renders with overrides 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -12577,7 +12577,7 @@ exports[`MenuSub renders with title 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -12769,7 +12769,7 @@ exports[`MenuSub renders with title 1`] = `
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -13031,7 +13031,7 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -13223,7 +13223,7 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -13347,7 +13347,7 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -13489,7 +13489,7 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -13613,7 +13613,7 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -13737,7 +13737,7 @@ exports[`Uncontrolled nested menu horizontal sets alignment for each sub menu 1`
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -14063,7 +14063,7 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -14253,7 +14253,7 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -14378,7 +14378,7 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -14518,7 +14518,7 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -14643,7 +14643,7 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -14768,7 +14768,7 @@ exports[`Uncontrolled nested menu vertical sets alignment for each sub menu 1`] 
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {

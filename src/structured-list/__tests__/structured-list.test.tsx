@@ -139,6 +139,14 @@ const OneCellDefault = [
   </StructuredListCell>,
 ];
 
+const OneCellFullWidth = [
+  <StructuredListCell fullWidthSingleCell>
+    <TextBlock stylePreset="inkContrast" typographyPreset="utilityHeading010">
+      Label
+    </TextBlock>
+  </StructuredListCell>,
+];
+
 const FourCells = [
   <StructuredListCell>
     <TextBlock stylePreset="inkContrast" typographyPreset="utilityHeading010">
@@ -198,6 +206,13 @@ describe('StructuredList', () => {
     test('renders with one cell default', () => {
       const props: StructuredListItemProps = {
         children: OneCellDefault,
+      };
+      const fragment = renderToFragmentWithTheme(renderDefault, props);
+      expect(fragment).toMatchSnapshot();
+    });
+    test('renders with one cell full width', () => {
+      const props: StructuredListItemProps = {
+        children: OneCellFullWidth,
       };
       const fragment = renderToFragmentWithTheme(renderDefault, props);
       expect(fragment).toMatchSnapshot();

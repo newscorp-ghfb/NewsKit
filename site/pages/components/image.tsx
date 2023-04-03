@@ -1,5 +1,11 @@
 import React from 'react';
-import {InlineMessage, toNewsKitIcon, UnorderedList, Image} from 'newskit';
+import {
+  InlineMessage,
+  toNewsKitIcon,
+  UnorderedList,
+  Image,
+  styled,
+} from 'newskit';
 import {Info as FilledInfo} from '@emotion-icons/material/Info';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
@@ -24,6 +30,12 @@ const infoIcon = (
     }}
   />
 );
+
+const PlaygroundContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 200px;
+`;
 
 const ImageComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate<typeof Image>
@@ -56,7 +68,11 @@ const ImageComponent = (layoutProps: LayoutProps) => (
         'This demo allows you to preview the image component, its variations, and configuration options.',
       playground: {
         componentName: 'Image',
-        component: props => <Image {...props} />,
+        component: props => (
+          <PlaygroundContainer>
+            <Image {...props} renderOnServer />
+          </PlaygroundContainer>
+        ),
         knobs: [
           {
             name: 'src',

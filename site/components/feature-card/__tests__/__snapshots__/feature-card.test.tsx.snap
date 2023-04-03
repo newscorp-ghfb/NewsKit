@@ -399,7 +399,7 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
             class="emotion-6"
           >
             <section
-              class="emotion-7"
+              class="nk-card-headline emotion-7"
             >
               <h1
                 class="nk-headline-heading emotion-8"
@@ -906,7 +906,7 @@ exports[`FeatureCard Renders horizontal card with clickable button and style ove
               class="emotion-7"
             >
               <section
-                class="emotion-8"
+                class="nk-card-headline emotion-8"
               >
                 <h1
                   class="nk-headline-heading emotion-9"
@@ -1373,7 +1373,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
             class="emotion-6"
           >
             <section
-              class="emotion-7"
+              class="nk-card-headline emotion-7"
             >
               <h1
                 class="nk-headline-heading emotion-8"
@@ -1880,7 +1880,7 @@ exports[`FeatureCard Renders horizontal card with clickable button only 1`] = `
               class="emotion-7"
             >
               <section
-                class="emotion-8"
+                class="nk-card-headline emotion-8"
               >
                 <h1
                   class="nk-headline-heading emotion-9"
@@ -2523,7 +2523,7 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
                 class="emotion-8"
               >
                 <section
-                  class="emotion-9"
+                  class="nk-card-headline emotion-9"
                 >
                   <h1
                     class="nk-headline-heading emotion-10"
@@ -2608,7 +2608,7 @@ exports[`FeatureCard Renders interactive horizontal card with text when no butto
                   class="emotion-8"
                 >
                   <section
-                    class="emotion-9"
+                    class="nk-card-headline emotion-9"
                   >
                     <h1
                       class="nk-headline-heading emotion-10"
@@ -3123,7 +3123,7 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
                 class="emotion-8"
               >
                 <section
-                  class="emotion-9"
+                  class="nk-card-headline emotion-9"
                 >
                   <h1
                     class="nk-headline-heading emotion-10"
@@ -3171,7 +3171,7 @@ exports[`FeatureCard Renders interactive horizontal card without link or link te
                   class="emotion-8"
                 >
                   <section
-                    class="emotion-9"
+                    class="nk-card-headline emotion-9"
                   >
                     <h1
                       class="nk-headline-heading emotion-10"
@@ -3541,7 +3541,7 @@ exports[`FeatureCard Renders interactive vertical card with link 1`] = `
               class="emotion-5"
             >
               <section
-                class="emotion-6"
+                class="nk-card-headline emotion-6"
               >
                 <h3
                   class="nk-headline-heading emotion-7"
@@ -3825,7 +3825,7 @@ exports[`FeatureCard Renders interactive vertical card without link 1`] = `
               class="emotion-5"
             >
               <section
-                class="emotion-6"
+                class="nk-card-headline emotion-6"
               >
                 <h3
                   class="nk-headline-heading emotion-7"
@@ -4100,7 +4100,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
             class="emotion-6"
           >
             <section
-              class="emotion-7"
+              class="nk-card-headline emotion-7"
             >
               <h1
                 class="nk-headline-heading emotion-8"
@@ -4415,7 +4415,7 @@ exports[`FeatureCard Renders non-interactive horizontal card 1`] = `
               class="emotion-7"
             >
               <section
-                class="emotion-8"
+                class="nk-card-headline emotion-8"
               >
                 <h1
                   class="nk-headline-heading emotion-9"
@@ -4614,7 +4614,7 @@ exports[`FeatureCard Renders non-interactive vertical card 1`] = `
           class="emotion-3"
         >
           <section
-            class="emotion-4"
+            class="nk-card-headline emotion-4"
           >
             <h3
               class="nk-headline-heading emotion-5"
@@ -5039,7 +5039,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
                 class="emotion-8"
               >
                 <section
-                  class="emotion-9"
+                  class="nk-card-headline emotion-9"
                 >
                   <h1
                     class="nk-headline-heading emotion-10"
@@ -5087,7 +5087,7 @@ exports[`FeatureCard Renders overrides when card is horizontal 1`] = `
                   class="emotion-8"
                 >
                   <section
-                    class="emotion-9"
+                    class="nk-card-headline emotion-9"
                   >
                     <h1
                       class="nk-headline-heading emotion-10"
@@ -5434,7 +5434,7 @@ exports[`FeatureCard Renders vertical card with clickable button only 1`] = `
           class="emotion-3"
         >
           <section
-            class="emotion-4"
+            class="nk-card-headline emotion-4"
           >
             <h3
               class="nk-headline-heading emotion-5"
