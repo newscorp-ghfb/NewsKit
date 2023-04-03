@@ -890,7 +890,7 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -904,7 +904,7 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -918,7 +918,7 @@ export const StoryTabsHorizontalIndicatorPositionVariants = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -943,7 +943,7 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -957,7 +957,7 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -971,7 +971,7 @@ export const StoryTabsVerticalIndicatorPositionVariants = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -996,7 +996,7 @@ export const StoryTabsWithDisabledTab = () => (
         <Tab label="Tab two" disabled>
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -1010,7 +1010,7 @@ export const StoryTabsWithDisabledTab = () => (
         <Tab label="Tab two" disabled>
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -1034,7 +1034,7 @@ export const StoryTabsWithFixedTabIndicatorSize = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -1051,7 +1051,7 @@ export const StoryTabsWithFixedTabIndicatorSize = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -1075,7 +1075,7 @@ export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -1092,7 +1092,7 @@ export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
       </Tabs>
@@ -1128,7 +1128,7 @@ export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
         <Tab label="Tab Four">
@@ -1156,7 +1156,7 @@ export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
         <Tab label="Tab Four">
@@ -1193,7 +1193,7 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
         <Tab label="Tab Four">
@@ -1219,7 +1219,7 @@ export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
         <Tab label="Tab two">
           <LoremIpsum textNumber={2} />
         </Tab>
-        <Tab label="Tab three is Long">
+        <Tab label="Tab three">
           <LoremIpsum textNumber={3} />
         </Tab>
         <Tab label="Tab Four">
