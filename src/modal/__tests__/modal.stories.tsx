@@ -11,6 +11,7 @@ import {Label, Block, P} from '../..';
 import {AssistiveText} from '../../assistive-text';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {deepMerge} from '../../utils';
+import {StorybookPage} from '../../test/storybook-comps';
 
 const modalPanel = {
   base: {
@@ -40,9 +41,7 @@ const modalPanelCustomBg = {
 };
 
 const modalContent = (
-  <>
-    <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
-  </>
+  <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
 );
 
 const ModaleCustomThemeObject: CreateThemeArgs = {
@@ -131,7 +130,7 @@ export const StoryModalDefault = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
+      <StorybookPage data-testid="scrollable-modal">
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -155,7 +154,7 @@ export const StoryModalDefault = () =>
         >
           {modalContent}
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
 StoryModalDefault.storyName = 'Default';
@@ -246,38 +245,34 @@ StoryNoHeaderContent.parameters = StoryModalDefault.parameters;
 
 export const StoryNoClose = () =>
   React.createElement(() => (
-    <>
-      <Modal
-        aria-label="Default with no header"
-        open
-        overrides={{
-          panel: {
-            stylePreset: 'modalPanelDefault',
-          },
-        }}
-        header="Modal Title"
-        closePosition="none"
-        onDismiss={() => {}}
-      >
-        {modalContent}
-      </Modal>
-    </>
+    <Modal
+      aria-label="Default with no header"
+      open
+      overrides={{
+        panel: {
+          stylePreset: 'modalPanelDefault',
+        },
+      }}
+      header="Modal Title"
+      closePosition="none"
+      onDismiss={() => {}}
+    >
+      {modalContent}
+    </Modal>
   ));
 StoryNoClose.storyName = 'No close button';
 StoryNoClose.parameters = StoryModalDefault.parameters;
 
 export const StoryNoHeader = () =>
   React.createElement(() => (
-    <>
-      <Modal
-        aria-label="Default with no header"
-        open
-        closePosition="none"
-        onDismiss={() => {}}
-      >
-        {modalContent}
-      </Modal>
-    </>
+    <Modal
+      aria-label="Default with no header"
+      open
+      closePosition="none"
+      onDismiss={() => {}}
+    >
+      {modalContent}
+    </Modal>
   ));
 StoryNoHeader.storyName = 'No header';
 StoryNoHeader.parameters = StoryModalDefault.parameters;
@@ -287,7 +282,7 @@ export const StoryWithHiddenOverlay = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
+      <StorybookPage data-testid="scrollable-modal">
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -311,7 +306,7 @@ export const StoryWithHiddenOverlay = () =>
         >
           {modalContent}
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
 StoryWithHiddenOverlay.storyName = 'No overlay';
@@ -348,63 +343,61 @@ const items = [
 
 export const StoryWithSelect = () =>
   React.createElement(() => (
-    <>
-      <Modal
-        aria-label="Default modal"
-        open
-        onDismiss={() => {}}
-        overrides={{
-          panel: {
-            base: {
-              width: '348px',
-              height: '268px',
-              minWidth: '20vw',
-              maxWidth: '80vw',
-              minHeight: '20vh',
-              maxHeight: {
-                xs: '90vh',
-                md: '85vh',
-              },
+    <Modal
+      aria-label="Default modal"
+      open
+      onDismiss={() => {}}
+      overrides={{
+        panel: {
+          base: {
+            width: '348px',
+            height: '268px',
+            minWidth: '20vw',
+            maxWidth: '80vw',
+            minHeight: '20vh',
+            maxHeight: {
+              xs: '90vh',
+              md: '85vh',
             },
           },
-        }}
-        header="Modal Title"
-      >
-        {modalContent}
-        <br />
-        <br />
-        <Block>
-          <Label
-            htmlFor="id-1"
-            size="small"
-            overrides={{
-              typographyPreset: 'utilityLabel020',
-            }}
-          >
-            Label
-          </Label>
-          <Select
-            aria-describedby="id-2-at"
-            id="id-2"
-            size="medium"
-            useModal={{xs: true, sm: true}}
-          >
-            {items.map(item => (
-              <SelectOption key={item} value={item}>
-                {item}
-              </SelectOption>
-            ))}
-          </Select>
-          <AssistiveText
-            overrides={{
-              marginBlock: 'space050',
-            }}
-          >
-            Assistive Text
-          </AssistiveText>
-        </Block>
-      </Modal>
-    </>
+        },
+      }}
+      header="Modal Title"
+    >
+      {modalContent}
+      <br />
+      <br />
+      <Block>
+        <Label
+          htmlFor="id-1"
+          size="small"
+          overrides={{
+            typographyPreset: 'utilityLabel020',
+          }}
+        >
+          Label
+        </Label>
+        <Select
+          aria-describedby="id-2-at"
+          id="id-2"
+          size="medium"
+          useModal={{xs: true, sm: true}}
+        >
+          {items.map(item => (
+            <SelectOption key={item} value={item}>
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <AssistiveText
+          overrides={{
+            marginBlock: 'space050',
+          }}
+        >
+          Assistive Text
+        </AssistiveText>
+      </Block>
+    </Modal>
   ));
 StoryWithSelect.storyName = 'Select';
 StoryWithSelect.parameters = StoryModalDefault.parameters;
@@ -412,9 +405,8 @@ StoryWithSelect.parameters = StoryModalDefault.parameters;
 export const StoryWithAriaAttributes = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();
-
     return (
-      <>
+      <StorybookPage>
         <Button
           onClick={open}
           overrides={{
@@ -438,7 +430,7 @@ export const StoryWithAriaAttributes = () =>
         >
           {modalContent}
         </Modal>
-      </>
+      </StorybookPage>
     );
   });
 StoryWithAriaAttributes.storyName = 'Aria attributes';
@@ -449,7 +441,7 @@ export const StoryWithCustomAutofocus = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
+      <StorybookPage data-testid="scrollable-modal">
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -474,7 +466,7 @@ export const StoryWithCustomAutofocus = () =>
         >
           {modalContent}
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
 StoryWithCustomAutofocus.storyName = 'Custom autofocus';
@@ -488,7 +480,7 @@ export const StoryWithCustomRestoreFocus = () =>
       | undefined;
 
     return (
-      <div data-testid="scrollable-modal">
+      <StorybookPage data-testid="scrollable-modal">
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -525,7 +517,7 @@ export const StoryWithCustomRestoreFocus = () =>
         >
           {modalContent}
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
 StoryWithCustomRestoreFocus.storyName = 'Custom restore focus';
@@ -536,7 +528,7 @@ export const StoryWithDisabledFocusTrap = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
+      <StorybookPage data-testid="scrollable-modal">
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -561,7 +553,7 @@ export const StoryWithDisabledFocusTrap = () =>
         >
           {modalContent}
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
 StoryWithDisabledFocusTrap.storyName = 'Focus trapping disabled';
@@ -572,7 +564,7 @@ export const StoryModelessModal = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
+      <StorybookPage data-testid="scrollable-modal">
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -598,7 +590,7 @@ export const StoryModelessModal = () =>
         >
           {modalContent}
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
 StoryModelessModal.storyName = 'Modeless modal';
@@ -619,7 +611,7 @@ export const StoryModelessInlineModal = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
+      <StorybookPage data-testid="scrollable-modal">
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -650,7 +642,7 @@ export const StoryModelessInlineModal = () =>
             {modalContent}
           </Modal>
         </ModalWrapper>
-      </div>
+      </StorybookPage>
     );
   });
 StoryModelessInlineModal.storyName = 'Modeless inline modal';
@@ -665,7 +657,7 @@ export const StoryNestedModals = () =>
     const closeNested = () => setIsNestedActive(false);
 
     return (
-      <div>
+      <StorybookPage>
         <Button
           onClick={open}
           overrides={{
@@ -718,7 +710,7 @@ export const StoryNestedModals = () =>
             </Button>
           </Modal>
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
 StoryNestedModals.storyName = 'Nested modals';
@@ -729,7 +721,7 @@ export const StoryLogicalProps = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
+      <StorybookPage data-testid="scrollable-modal">
         <Button
           onClick={open}
           data-testid="modal-open-button"
@@ -753,7 +745,7 @@ export const StoryLogicalProps = () =>
         >
           {modalContent}
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
 StoryLogicalProps.storyName = 'Logical props';
@@ -761,7 +753,7 @@ StoryLogicalProps.parameters = StoryModalDefault.parameters;
 
 export const StoryWithOverrides = () =>
   React.createElement(() => (
-    <>
+    <StorybookPage>
       <Modal
         aria-label="Default with overrides"
         open
@@ -795,7 +787,7 @@ export const StoryWithOverrides = () =>
       >
         {modalContent}
       </Modal>
-    </>
+    </StorybookPage>
   ));
 StoryWithOverrides.storyName = 'Styling overrides';
 StoryWithOverrides.parameters = StoryModalDefault.parameters;
