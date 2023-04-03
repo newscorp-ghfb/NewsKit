@@ -2,7 +2,7 @@ import React from 'react';
 import {Story as StoryType} from '@storybook/react/dist/ts3.9/client/preview/types-6-0';
 import styled from '@emotion/styled';
 import {
-  Card,
+  CardComposable,
   CardActions,
   CardContent,
   CardLink,
@@ -27,6 +27,46 @@ import {getStylePresetFromTheme} from '../../../utils';
 import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 import {TextBlock, TextBlockProps} from '../../../text-block';
 import {GridLayout} from '../../../grid-layout';
+
+const cardHref = '/card-link';
+
+export const CardComposableExample = () => (
+  <CardComposable
+    overrides={{
+      maxWidth: {xl: '600px', md: '420px'},
+      stylePreset: 'cardComposable',
+    }}
+    rowGap="space040"
+    columns={{xs: '200px 1fr', md: '1fr'}}
+    areas={{
+      xs: `
+        media content
+        media actions
+      `,
+      md: `
+        media
+        content
+        actions
+      `,
+    }}
+  >
+    <CardContent
+      rowGap="space040"
+      overrides={{paddingInline: 'space040', paddingBlockStart: 'space040'}}
+    >
+      <CardLink href={cardHref} expand>
+        <Headline kickerText="KICKER">Title of the card</Headline>
+      </CardLink>
+      <Paragraph>Some kind of intro</Paragraph>
+    </CardContent>
+
+    <CardMedia media={{src: '/placeholder-3x2.png'}} />
+
+    <CardActions>
+      <Tag href="/news">News</Tag>
+    </CardActions>
+  </CardComposable>
+);
 
 const StorybookGridCase = ({
   children,
@@ -273,7 +313,7 @@ const contentGap = 'space040';
 
 export const StoryDefault = () => (
   <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
-    <Card
+    <CardComposable
       overrides={{maxWidth: '372px'}}
       rowGap={areasGap}
       areas={`
@@ -288,12 +328,12 @@ export const StoryDefault = () => (
         <P />
       </CardContent>
 
-      <CardMedia src="/placeholder-3x2.png" />
+      <CardMedia media={{src: '/placeholder-3x2.png'}} />
 
       <CardActions>
         <Tag href="/news">Tag</Tag>
       </CardActions>
-    </Card>
+    </CardComposable>
   </StorybookPage>
 );
 StoryDefault.storyName = 'Default';
@@ -301,7 +341,7 @@ StoryDefault.storyName = 'Default';
 export const StoryCardAreas = () => (
   <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
     <StorybookCase title="Card Content">
-      <Card
+      <CardComposable
         overrides={{maxWidth: '372px'}}
         areas={`
           content
@@ -312,22 +352,22 @@ export const StoryCardAreas = () => (
           <H />
           <P />
         </CardContent>
-      </Card>
+      </CardComposable>
     </StorybookCase>
     <StorybookCase title="CardMedia">
-      <Card overrides={{maxWidth: '372px'}}>
-        <CardMedia src="/placeholder-3x2.png" />
-      </Card>
+      <CardComposable overrides={{maxWidth: '372px'}}>
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+      </CardComposable>
     </StorybookCase>
     <StorybookCase title="CardActions">
-      <Card overrides={{maxWidth: '372px'}}>
+      <CardComposable overrides={{maxWidth: '372px'}}>
         <CardActions>
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
     <StorybookCase title="CardLink applied to headline in CardContent area">
-      <Card
+      <CardComposable
         overrides={{maxWidth: '372px'}}
         rowGap={areasGap}
         areas={`
@@ -336,7 +376,7 @@ export const StoryCardAreas = () => (
           actions
         `}
       >
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
 
         <CardContent justifyItems="start" rowGap={contentGap}>
           <Flag>Flag</Flag>
@@ -354,7 +394,7 @@ export const StoryCardAreas = () => (
         <CardActions>
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
   </StorybookPage>
 );
@@ -363,7 +403,7 @@ StoryCardAreas.storyName = 'Card areas';
 export const StoryVariations = () => (
   <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
     <StorybookCase title="CardLink and CardMedia">
-      <Card
+      <CardComposable
         overrides={{maxWidth: '372px'}}
         rowGap={areasGap}
         areas={`
@@ -376,11 +416,11 @@ export const StoryVariations = () => (
             <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
           </CardLink>
         </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-      </Card>
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+      </CardComposable>
     </StorybookCase>
     <StorybookCase title="Whole card as a link by applying the 'expand' prop">
-      <Card
+      <CardComposable
         overrides={{
           maxWidth: '372px',
           stylePreset: 'cardContentSeparateColor',
@@ -405,14 +445,18 @@ export const StoryVariations = () => (
           </CardLink>
           <P />
         </CardContent>
-        <CardMedia src="/placeholder-4x5.png" loadingAspectRatio="4:5" />
-        <CardActions marginBlockEnd="space040" paddingInline="space040">
+        <CardMedia
+          media={{src: '/placeholder-4x5.png', loadingAspectRatio: '4:5'}}
+        />
+        <CardActions
+          overrides={{marginBlockEnd: 'space040', paddingInline: 'space040'}}
+        >
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
     <StorybookCase title="Button in CardActions area">
-      <Card
+      <CardComposable
         rowGap={areasGap}
         overrides={{maxWidth: '372px'}}
         areas={`
@@ -421,7 +465,7 @@ export const StoryVariations = () => (
           actions
         `}
       >
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardContent justifyItems="start" rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
@@ -430,10 +474,10 @@ export const StoryVariations = () => (
         <CardActions>
           <Button href="/news">Button</Button>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
     <StorybookCase title="Multiple in CardActions">
-      <Card
+      <CardComposable
         overrides={{maxWidth: '372px'}}
         rowGap={areasGap}
         areas={`
@@ -442,7 +486,7 @@ export const StoryVariations = () => (
           actions
         `}
       >
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardContent justifyItems="start" rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
@@ -468,10 +512,10 @@ export const StoryVariations = () => (
             Unordered list item
           </UnorderedList>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
     <StorybookCase title="Alternative images aspect ratio">
-      <Card
+      <CardComposable
         overrides={{maxWidth: '372px'}}
         rowGap={areasGap}
         areas={`
@@ -480,7 +524,9 @@ export const StoryVariations = () => (
           actions
         `}
       >
-        <CardMedia src="/placeholder-4x5.png" loadingAspectRatio="4:5" />
+        <CardMedia
+          media={{src: '/placeholder-4x5.png', loadingAspectRatio: '4:5'}}
+        />
         <CardContent justifyItems="start" rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
@@ -489,7 +535,7 @@ export const StoryVariations = () => (
         <CardActions>
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
   </StorybookPage>
 );
@@ -498,7 +544,7 @@ StoryVariations.storyName = 'Variations';
 export const StoryInsetCard = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Card Inset">
-      <Card
+      <CardComposable
         rowGap={areasGap}
         overrides={{
           maxWidth: '372px',
@@ -510,7 +556,7 @@ export const StoryInsetCard = () => (
           actions
         `}
       >
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardContent
           justifyItems="start"
           rowGap={contentGap}
@@ -522,10 +568,12 @@ export const StoryInsetCard = () => (
           <H />
           <P />
         </CardContent>
-        <CardActions marginBlockEnd="space040" paddingInline="space040">
+        <CardActions
+          overrides={{marginBlockEnd: 'space040', paddingInline: 'space040'}}
+        >
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
   </StorybookPage>
 );
@@ -534,7 +582,7 @@ StoryInsetCard.storyName = 'Inset card';
 export const StoryLayout = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Horizontal">
-      <Card
+      <CardComposable
         overrides={{
           maxWidth: '600px',
         }}
@@ -546,7 +594,7 @@ export const StoryLayout = () => (
           media actions
         `}
       >
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardContent rowGap={contentGap} justifyItems="start">
           <Flag>Flag</Flag>
           <H />
@@ -555,10 +603,10 @@ export const StoryLayout = () => (
         <CardActions>
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
     <StorybookCase title="Horizontal-inverse">
-      <Card
+      <CardComposable
         overrides={{
           maxWidth: '600px',
         }}
@@ -570,7 +618,7 @@ export const StoryLayout = () => (
         actions media
         `}
       >
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardContent rowGap={contentGap} justifyItems="start">
           <Flag>Flag</Flag>
           <H />
@@ -579,7 +627,7 @@ export const StoryLayout = () => (
         <CardActions>
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
   </StorybookPage>
 );
@@ -640,7 +688,7 @@ const SplitCard = ({columns}: {columns: string}) => {
   return (
     <div>
       <SplitBars columns={columns} maxWidth={maxWidth} />
-      <Card
+      <CardComposable
         overrides={{
           maxWidth,
           marginBlockStart: 'space020',
@@ -657,11 +705,11 @@ const SplitCard = ({columns}: {columns: string}) => {
           <H />
           <P />
         </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardActions>
           <Tag href="/news">Tag</Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </div>
   );
 };
@@ -688,7 +736,7 @@ StorySpan.storyName = 'Span';
 export const StoryOrder = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="CardContent and heading first">
-      <Card
+      <CardComposable
         overrides={{maxWidth: '250px'}}
         rowGap={areasGap}
         areas={`
@@ -702,13 +750,13 @@ export const StoryOrder = () => (
           <H />
           <P />
         </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardActions>
           <Tag onClick={() => alert('Tag clicked')} size="medium">
             Tag
           </Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
   </StorybookPage>
 );
@@ -717,7 +765,7 @@ StoryOrder.storyName = 'Order';
 export const StoryResponsiveCard = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="Different layouts/font sizes for different breakpoints">
-      <Card
+      <CardComposable
         overrides={{
           maxWidth: {xl: '600px', md: '372px'},
         }}
@@ -758,8 +806,8 @@ export const StoryResponsiveCard = () => (
             ]}
           </UnorderedList>
         </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
-      </Card>
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+      </CardComposable>
     </StorybookCase>
   </StorybookPage>
 );
@@ -768,7 +816,7 @@ StoryResponsiveCard.storyName = 'Responsive card';
 export const StoryOnClick = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <StorybookCase title="onClick handler on Tag">
-      <Card
+      <CardComposable
         overrides={{maxWidth: '250px'}}
         rowGap={areasGap}
         areas={`
@@ -782,13 +830,13 @@ export const StoryOnClick = () => (
           <H />
           <P />
         </CardContent>
-        <CardMedia src="/placeholder-3x2.png" />
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardActions>
           <Tag onClick={() => alert('Tag clicked')} size="medium">
             Tag
           </Tag>
         </CardActions>
-      </Card>
+      </CardComposable>
     </StorybookCase>
   </StorybookPage>
 );
@@ -798,7 +846,7 @@ export const StoryLogicalProps = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <Grid>
       <StorybookGridCase title="Margin overrides">
-        <Card
+        <CardComposable
           overrides={{
             marginInline: 'space060',
           }}
@@ -814,16 +862,16 @@ export const StoryLogicalProps = () => (
             <H />
             <P />
           </CardContent>
-          <CardMedia src="/placeholder-3x2.png" />
+          <CardMedia media={{src: '/placeholder-3x2.png'}} />
           <CardActions>
             <Tag href="http://example.com" size="medium">
               Tag
             </Tag>
           </CardActions>
-        </Card>
+        </CardComposable>
       </StorybookGridCase>
       <StorybookGridCase title="Padding overrides">
-        <Card
+        <CardComposable
           overrides={{
             maxWidth: '250px',
             stylePreset: 'cardInset',
@@ -843,16 +891,16 @@ export const StoryLogicalProps = () => (
             <H />
             <P />
           </CardContent>
-          <CardMedia src="/placeholder-3x2.png" />
+          <CardMedia media={{src: '/placeholder-3x2.png'}} />
           <CardActions>
             <Tag href="http://example.com" size="medium">
               Tag
             </Tag>
           </CardActions>
-        </Card>
+        </CardComposable>
       </StorybookGridCase>
       <StorybookGridCase title="Padding overrides CardContent area">
-        <Card
+        <CardComposable
           overrides={{maxWidth: '250px'}}
           rowGap={areasGap}
           areas={`
@@ -870,13 +918,13 @@ export const StoryLogicalProps = () => (
             <H />
             <P />
           </CardContent>
-          <CardMedia src="/placeholder-3x2.png" />
+          <CardMedia media={{src: '/placeholder-3x2.png'}} />
           <CardActions>
             <Tag href="http://example.com" size="medium">
               Tag
             </Tag>
           </CardActions>
-        </Card>
+        </CardComposable>
       </StorybookGridCase>
     </Grid>
   </StorybookPage>
@@ -887,14 +935,14 @@ export const StoryOverrides = () => (
   <StorybookPage columns={{md: 'auto'}}>
     <Grid>
       <StorybookGridCase title="Style preset - card and flag colours">
-        <Card
+        <CardComposable
           overrides={{
             maxWidth: '372px',
             stylePreset: 'cardContainerWithHover',
           }}
           rowGap={areasGap}
         >
-          <CardMedia src="/placeholder-3x2.png" />
+          <CardMedia media={{src: '/placeholder-3x2.png'}} />
           <CardContent
             overrides={{paddingInline: 'space040'}}
             justifyItems="start"
@@ -912,15 +960,17 @@ export const StoryOverrides = () => (
             <P />
           </CardContent>
           {/* CardActions might be better to be a Grid instead of Block so all sub-components are consistent? */}
-          <CardActions paddingBlockEnd="space040" paddingInline="space040">
+          <CardActions
+            overrides={{paddingBlockEnd: 'space040', paddingInline: 'space040'}}
+          >
             <Tag href="http://example.com" size="medium">
               Tag
             </Tag>
           </CardActions>
-        </Card>
+        </CardComposable>
       </StorybookGridCase>
       <StorybookGridCase title="Style preset - headline, paragraph, card actions and tag colours">
-        <Card
+        <CardComposable
           overrides={{
             maxWidth: '372px',
             stylePreset: 'cardContainerMockNoHover',
@@ -932,7 +982,7 @@ export const StoryOverrides = () => (
             actions
           `}
         >
-          <CardMedia src="/placeholder-3x2.png" />
+          <CardMedia media={{src: '/placeholder-3x2.png'}} />
           <CardContent
             overrides={{paddingInline: 'space040'}}
             justifyItems="start"
@@ -953,8 +1003,10 @@ export const StoryOverrides = () => (
             <P stylePreset="cardContainerActionsMock" />
           </CardContent>
           <CardActions
-            paddingInline="space040"
-            stylePreset="cardContainerActionsMock"
+            overrides={{
+              paddingInline: 'space040',
+              stylePreset: 'cardContainerActionsMock',
+            }}
           >
             <Tag
               href="http://example.com"
@@ -964,10 +1016,10 @@ export const StoryOverrides = () => (
               Tag
             </Tag>
           </CardActions>
-        </Card>
+        </CardComposable>
       </StorybookGridCase>
       <StorybookGridCase title="Typography preset - Headline">
-        <Card
+        <CardComposable
           overrides={{maxWidth: '372px'}}
           areas={`
             media
@@ -985,13 +1037,13 @@ export const StoryOverrides = () => (
             />
             <P />
           </CardContent>
-          <CardMedia src="/placeholder-3x2.png" />
+          <CardMedia media={{src: '/placeholder-3x2.png'}} />
           <CardActions>
             <Tag href="http://example.com" size="medium">
               Tag
             </Tag>
           </CardActions>
-        </Card>
+        </CardComposable>
       </StorybookGridCase>
     </Grid>
   </StorybookPage>
@@ -999,7 +1051,7 @@ export const StoryOverrides = () => (
 StoryOverrides.storyName = 'Overrides';
 
 export default {
-  title: 'Components/composable-card',
+  title: 'Components/CardComposable',
   component: () => 'None',
   decorators: [
     (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => {
