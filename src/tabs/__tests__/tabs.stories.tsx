@@ -4,7 +4,7 @@ import {Story as StoryType} from '@storybook/react';
 import {styled, Scroll, TextBlock} from '../..';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {Tab, Tabs} from '..';
-import {IconFilledEmail, IconOutlinedStarOutline} from '../../icons';
+import {IconOutlinedStarOutline} from '../../icons';
 import {Block} from '../../block';
 import {Button} from '../../button';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
@@ -206,29 +206,23 @@ const ScrollBox: React.FC<{children: React.ReactNode}> = ({children}) => (
   </FixedHeightBlock>
 );
 
-const titleCanHaveIcons = (
-  <>
-    Tab two <IconFilledEmail />
-  </>
-);
-
 const titleAndRightIcon = (
   <>
-    <IconFilledEmail /> Tab
+    <IconOutlinedStarOutline /> Tab
   </>
 );
 
 const titleAndLeftIcon = (
   <>
-    Tab <IconFilledEmail />
+    Tab <IconOutlinedStarOutline />
   </>
 );
 
 const titleBetweenIcons = (
   <>
-    <IconFilledEmail />
+    <IconOutlinedStarOutline />
     Tab
-    <IconFilledEmail />
+    <IconOutlinedStarOutline />
   </>
 );
 
@@ -570,7 +564,7 @@ export const StoryControlledTabs = () => {
         <Tab label="Tab one" key="tab-1">
           <LoremIpsum text={LoremIpsumTextLong} textNumber={1} />
         </Tab>
-        <Tab label={titleCanHaveIcons} key="tab-2">
+        <Tab label="Tab two" key="tab-2">
           <LoremIpsum text={LoremIpsumTextLong} textNumber={2} />
         </Tab>
         <Tab label="Tab three" key="tab-3">
@@ -697,7 +691,6 @@ export const StoryTabsWithScrollOverrides = () => (
           overrides={{
             scroll: {
               props: {
-                scrollBar: true,
                 controls: 'hover',
                 overrides: {
                   controls: {
