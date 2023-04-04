@@ -17,13 +17,6 @@ async function* getFiles(dir) {
 }
 
 function updateFile(filePath) {
-  // const regexFilter = new RegExp(' filter="url(.*)"', 'gi');
-  // const fileContent = fs.readFileSync(filePath, {encoding: 'utf8', flag: 'r'});
-  // const contentWithoutFilters = fileContent.replaceAll(regexFilter, '');
-
-  // const regexDefs = new RegExp(/<defs>.*<\/defs>/, 'gis');
-  // const contentWithoutDefs = contentWithoutFilters.replaceAll(regexDefs, '');
-
   const fileContent = fs.readFileSync(filePath, {encoding: 'utf8', flag: 'r'});
 
   const $ = cheerio.load(fileContent);
@@ -31,7 +24,7 @@ function updateFile(filePath) {
   // remove filter definitions
   $('filter').remove();
 
-  // remove filter with url
+  // remove filter attr with url
   $('[filter*="url"]').each((i, el) => {
     $(el).removeAttr('filter');
   });
@@ -46,13 +39,6 @@ function updateFile(filePath) {
 }
 
 (async () => {
-  // const file1 =
-  //   '/Users/sdelev/projects/newskit/newskit/site/public/static/illustrations-original/about/contact-us-hero-illustration.svg';
-  // updateFile(file1);
-  // const file2 =
-  //   '/Users/sdelev/projects/newskit/newskit/site/public/static/illustrations-original/about/why-use-newskit-hero-illustration.svg';
-  // updateFile(file2);
-
   for await (const filePath of getFiles(
     './site/public/static/illustrations-original/',
   )) {
