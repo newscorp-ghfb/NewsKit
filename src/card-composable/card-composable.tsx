@@ -53,7 +53,7 @@ const ThemelessCardComposable = React.forwardRef<
 
   return (
     <CardProvider value={{useAreas: Boolean(areas)}}>
-      <StyledCard areas={areas} {...props} overrides={overrides} ref={ref}>
+      <StyledCard ref={ref} areas={areas} {...props} overrides={overrides}>
         {children}
       </StyledCard>
     </CardProvider>
@@ -109,6 +109,7 @@ export const CardActions = React.forwardRef<HTMLDivElement, CardActionsProps>(
 );
 
 // TODO: use Link component or attach event data/context
-export const CardLink = React.forwardRef<HTMLDivElement, CardLinkProps>(
+export const CardLink = React.forwardRef<HTMLAnchorElement, CardLinkProps>(
+  // @ts-ignorew
   (props, ref) => <StyledLink as="a" ref={ref} {...props} />,
 );

@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardComposable renders defaults 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "media" "content" "actions";
+  color: #3B3B3B;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-items: start;
+  grid-area: content;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-area: media;
+}
+
+.emotion-4 {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-top: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 0;
+  background-color: #F1F1F1;
+}
+
+.emotion-4 svg {
+  fill: #ABABAB;
+}
+
+.emotion-5 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-6 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  grid-area: actions;
+  position: relative;
+  z-index: 2;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <a
+        class="emotion-2"
+      >
+        content
+      </a>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <picture
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        />
+        <img
+          alt="image"
+          class="emotion-6"
+          src="image/url.png"
+        />
+      </picture>
+    </div>
+    <div
+      class="emotion-7"
+    >
+      actions
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CardComposable renders without areas 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  color: #3B3B3B;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-items: start;
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.emotion-3 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.emotion-4 {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-top: 0;
+  height: 0;
+  width: 100%;
+  border-radius: 0;
+  background-color: #F1F1F1;
+}
+
+.emotion-4 svg {
+  fill: #ABABAB;
+}
+
+.emotion-5 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.emotion-6 {
+  opacity: 0;
+  display: block;
+  border-radius: inherit;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.emotion-7 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  position: relative;
+  z-index: 2;
+}
+
+<div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <a
+        class="emotion-2"
+      >
+        content
+      </a>
+    </div>
+    <div
+      class="emotion-3"
+    >
+      <picture
+        class="emotion-4"
+      >
+        <div
+          class="emotion-5"
+        />
+        <img
+          alt="image"
+          class="emotion-6"
+          src="image/url.png"
+        />
+      </picture>
+    </div>
+    <div
+      class="emotion-7"
+    >
+      actions
+    </div>
+  </div>
+</DocumentFragment>
+`;
