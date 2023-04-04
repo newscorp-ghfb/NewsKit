@@ -177,7 +177,9 @@ export const StoryDefault = () => (
         <P />
       </CardContent>
 
-      <CardMedia media={{src: '/placeholder-3x2.png'}} />
+      <CardMedia
+        media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+      />
 
       <CardActions>
         <Tag href="/news">Tag</Tag>
@@ -206,7 +208,9 @@ export const StoryCardAreas = () => (
 
     <StorybookCase title="CardMedia">
       <CardComposable overrides={{maxWidth: '372px'}}>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
       </CardComposable>
     </StorybookCase>
 
@@ -220,7 +224,9 @@ export const StoryCardAreas = () => (
 
     <StorybookCase title="CardLink applied to headline in CardContent area">
       <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <CardLink href={window.location.href}>
@@ -259,7 +265,9 @@ export const StoryVariations = () => (
             <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
           </CardLink>
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
       </CardComposable>
     </StorybookCase>
     <StorybookCase title="Whole card as a link by applying the 'expand' prop">
@@ -283,7 +291,10 @@ export const StoryVariations = () => (
           <P />
         </CardContent>
         <CardMedia
-          media={{src: '/placeholder-4x5.png', loadingAspectRatio: '4:5'}}
+          media={{
+            src: 'https://storybook.newskit.co.uk/placeholder-4x5.png',
+            loadingAspectRatio: '4:5',
+          }}
         />
         <CardActions
           overrides={{marginBlockEnd: 'space040', paddingInline: 'space040'}}
@@ -294,7 +305,9 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="Button in CardActions area">
       <CardComposable rowGap={areasGap} overrides={{maxWidth: '372px'}}>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
@@ -307,7 +320,9 @@ export const StoryVariations = () => (
     </StorybookCase>
     <StorybookCase title="Multiple in CardActions">
       <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
@@ -338,7 +353,10 @@ export const StoryVariations = () => (
     <StorybookCase title="Alternative images aspect ratio">
       <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
         <CardMedia
-          media={{src: '/placeholder-4x5.png', loadingAspectRatio: '4:5'}}
+          media={{
+            src: 'https://storybook.newskit.co.uk/placeholder-4x5.png',
+            loadingAspectRatio: '4:5',
+          }}
         />
         <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
@@ -379,7 +397,9 @@ export const StoryInsetCard = () => (
           stylePreset: 'cardInset',
         }}
       >
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent
           rowGap={contentGap}
           overrides={{
@@ -416,7 +436,9 @@ export const StoryLayout = () => (
           media actions
         `}
       >
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
@@ -440,7 +462,9 @@ export const StoryLayout = () => (
         actions media
         `}
       >
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
@@ -506,7 +530,9 @@ const SplitCard = ({columns}: {columns: string}) => {
           <H />
           <P />
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardActions>
           <Tag href="/news">Tag</Tag>
         </CardActions>
@@ -546,7 +572,9 @@ export const StoryOrder = () => (
           <H />
           <P />
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardActions>
           <Tag onClick={() => alert('Tag clicked')} size="medium">
             Tag
@@ -602,7 +630,9 @@ export const StoryResponsiveCard = () => (
             ]}
           </UnorderedList>
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
       </CardComposable>
     </StorybookCase>
   </StorybookPage>
@@ -618,7 +648,9 @@ export const StoryOnClick = () => (
           <H />
           <P />
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardActions>
           <Tag onClick={() => alert('Tag clicked')} size="medium">
             Tag
@@ -644,7 +676,9 @@ export const StoryLogicalProps = () => (
           <H />
           <P />
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardActions>
           <Tag href="http://example.com" size="medium">
             Tag
@@ -667,7 +701,9 @@ export const StoryLogicalProps = () => (
           <H />
           <P />
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardActions>
           <Tag href="http://example.com" size="medium">
             Tag
@@ -685,7 +721,9 @@ export const StoryLogicalProps = () => (
           <H />
           <P />
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardActions>
           <Tag href="http://example.com" size="medium">
             Tag
@@ -707,7 +745,9 @@ export const StoryOverrides = () => (
         }}
         rowGap={areasGap}
       >
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent
           overrides={{paddingInline: 'space040'}}
           rowGap={contentGap}
@@ -743,7 +783,9 @@ export const StoryOverrides = () => (
         }}
         rowGap={areasGap}
       >
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent
           overrides={{paddingInline: 'space040'}}
           rowGap={contentGap}
@@ -781,7 +823,9 @@ export const StoryOverrides = () => (
           />
           <P />
         </CardContent>
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardActions>
           <Tag href="http://example.com" size="medium">
             Tag
@@ -801,7 +845,9 @@ export const ComplexStory = () => (
         overrides={{maxWidth: '250px', stylePreset: 'cardBook'}}
         style={{overflow: 'hidden'}}
       >
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardMedia
+          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
+        />
         <CardContent
           rowGap="space020"
           overrides={{paddingBlock: 'space030', paddingInline: 'space030'}}
