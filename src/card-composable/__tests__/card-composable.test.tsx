@@ -14,7 +14,9 @@ describe('CardComposable', () => {
       children: (
         <>
           <CardContent>
-            <CardLink expand>content</CardLink>
+            <CardLink href="/" expand>
+              content
+            </CardLink>
           </CardContent>
           <CardMedia media={{src: 'image/url.png', alt: 'image'}} />
           <CardActions>actions</CardActions>
@@ -30,7 +32,7 @@ describe('CardComposable', () => {
       children: (
         <>
           <CardContent>
-            <CardLink expand>content</CardLink>
+            <CardLink href="/">content</CardLink>
           </CardContent>
           <CardMedia media={{src: 'image/url.png', alt: 'image'}} />
           <CardActions>actions</CardActions>

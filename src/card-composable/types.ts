@@ -2,6 +2,7 @@ import {ReactNode} from 'react';
 import {GridLayoutProps} from '../grid-layout/types';
 import {ImageProps} from '../image';
 import {MQ} from '../utils';
+import {LinkProps} from '../link';
 
 export type StylableGridLayout = GridLayoutProps & {
   overrides?: {
@@ -24,7 +25,6 @@ export type CardContentProps = StylableGridLayout;
 
 export type CardActionsProps = StylableGridLayout;
 
-export type CardLinkProps = StylableGridLayout & {
-  href?: string;
+export type CardLinkProps = LinkProps & {
   expand?: boolean;
 };

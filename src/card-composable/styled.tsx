@@ -2,6 +2,7 @@ import {getStylePreset, getTransitionPreset, styled} from '../utils/style';
 
 import {GridLayout} from '../grid-layout/grid-layout';
 import {CardLinkProps, StylableGridLayout} from './types';
+import {LinkStandalone} from '../link';
 
 type StyledGridLayoutProps = StylableGridLayout & {
   areaName?: string;
@@ -25,7 +26,7 @@ export const StyledActions = styled(StyledGrid)`
   z-index: 2;
 `;
 
-export const StyledLink = styled(StyledGrid)<CardLinkProps>`
+export const StyledLink = styled(LinkStandalone)<CardLinkProps>`
   text-decoration: none;
   ${({expand}) =>
     expand &&
