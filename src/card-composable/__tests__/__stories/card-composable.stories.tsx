@@ -76,6 +76,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
           textAlign: 'center',
         },
       },
+      // TODO: might need to move or move it to defaults
       headlineLink: {
         base: {
           color: '{{colors.inkContrast}}',
@@ -233,7 +234,7 @@ export const StoryCardAreas = () => (
             <H
               overrides={{
                 heading: {
-                  stylePreset: 'headlineLink',
+                  // stylePreset: 'headlineLink',
                 },
               }}
             />
@@ -262,7 +263,13 @@ export const StoryVariations = () => (
       >
         <CardContent rowGap={contentGap}>
           <CardLink href={window.location.href}>
-            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
+            <H
+              overrides={{
+                heading: {
+                  // stylePreset: 'headlineLink'
+                },
+              }}
+            />
           </CardLink>
         </CardContent>
         <CardMedia
@@ -286,7 +293,13 @@ export const StoryVariations = () => (
         >
           <Flag>Flag</Flag>
           <CardLink expand href={window.location.href}>
-            <H overrides={{heading: {stylePreset: 'headlineLink'}}} />
+            <H
+              overrides={{
+                heading: {
+                  // stylePreset: 'headlineLink'
+                },
+              }}
+            />
           </CardLink>
           <P />
         </CardContent>
