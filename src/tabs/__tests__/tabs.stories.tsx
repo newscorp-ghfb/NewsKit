@@ -1,61 +1,36 @@
-import * as React from 'react';
+import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 
-import {styled, Scroll, TextBlock, getColorCssFromTheme} from '../..';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {styled, Scroll, TextBlock} from '../..';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {Tab, Tabs} from '..';
-import {IconFilledEmail} from '../../icons';
+import {IconOutlinedStarOutline} from '../../icons';
 import {Block} from '../../block';
 import {Button} from '../../button';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
+const intro =
+  'NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development. NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development.';
+const benefits =
+  'Benefits of a design system include speed to market, shared knowledge, best practice, sustainability, flexibility, and consistency.';
+
 const LoremIpsumText = [
-  `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
-  `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque lauda
-ntium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae di
-rem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora in
-cidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercit
-ationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iu
-re reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugi
-at quo voluptas nulla pariatur?`,
-  `But I must explain to you how all this mistaken idea of denouncing plea
-sure and praising pain was born and I will give you a complete account of the system, and expound the actu
-al teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects
- nally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial exa
- mple, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
-  it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoy
-  ing consequences, or one who avoids a pain that produces no resultant pleasure?`,
+  `Firstly, NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles.`,
+  `Secondly, ${intro}`,
+  `Thirdly, ${intro}`,
 ];
 
-const LoremIpsumText2 = [
-  `First Content`,
-  `Other Content`,
-  `Again different Content`,
+const LoremIpsumTextLong = [
+  `Firstly, ${intro} ${benefits} ${intro} ${benefits}`,
+  `Secondly, ${intro} ${benefits} ${intro} ${benefits}`,
+  `Thirdly, ${intro} ${benefits} ${intro} ${benefits}`,
 ];
 
 const tabsCustomThemeObject: CreateThemeArgs = {
   name: 'tab-custom-theme',
   overrides: {
     stylePresets: {
-      tabCustomPreset: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          color: '{{colors.inkContrast}}',
-        },
-        selected: {color: '{{colors.inkBase}}'},
-        'selected:hover': {
-          color: '{{colors.green060}}',
-        },
-      },
       tabsBarTrackCustomPreset: {
         base: {
           backgroundColor: '{{colors.amber020}}',
@@ -75,15 +50,15 @@ const tabsCustomThemeObject: CreateThemeArgs = {
       },
       scrollArrowsCustom: {
         base: {
-          backgroundColor: '{{colors.amber010}}',
-          color: '{{colors.purple050}}',
-          iconColor: '{{colors.purple050}}',
+          backgroundColor: '{{colors.teal060}}',
+          color: '{{colors.inkInverse}}',
+          iconColor: '{{colors.inkInverse}}',
         },
         hover: {
-          backgroundColor: '{{colors.amber020}}',
+          backgroundColor: '{{colors.teal040}}',
         },
         active: {
-          backgroundColor: '{{colors.amber060}}',
+          backgroundColor: '{{colors.teal020}}',
         },
         disabled: {
           color: '{{colors.inkNonEssential}}',
@@ -103,6 +78,16 @@ const tabsCustomThemeObject: CreateThemeArgs = {
           borderWidth: '0 0 1px 0',
           borderColor: '#fff',
           borderStyle: 'solid',
+        },
+      },
+      customOutlineBrand: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.interfaceInformative020}}',
         },
       },
       customOutlineColor: {
@@ -162,7 +147,7 @@ const tabsCustomThemeObject: CreateThemeArgs = {
       customBackgroundColorChange: {
         base: {
           transitionProperty: 'background-color',
-          transitionDuration: '100ms',
+          transitionDuration: '500ms',
           transitionDelay: '500ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
@@ -170,7 +155,7 @@ const tabsCustomThemeObject: CreateThemeArgs = {
       customFontColorChange: {
         base: {
           transitionProperty: 'color',
-          transitionDuration: '100ms',
+          transitionDuration: '1000ms',
           transitionDelay: '500ms',
           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
         },
@@ -189,8 +174,7 @@ const MainContainer = styled.div`
   margin: 0 auto;
 `;
 
-const Container = styled(Block)<{width?: string; height?: string}>`
-  ${getColorCssFromTheme('backgroundColor', 'neutral020')};
+const VerticalContainer = styled(Block)<{width?: string; height?: string}>`
   width: ${({width}) => width || '300px'};
   height: ${({height}) => height || '250px'};
   overflow: none;
@@ -207,91 +191,347 @@ const LoremIpsum: React.FC<{textNumber: number; text?: Array<string>}> = ({
   </Block>
 );
 
-const StyledBlock = styled(Block)`
+const FixedHeightBlock = styled(Block)`
   height: 150px;
 `;
 
-const ScrollBox: React.FC<{children: React.ReactNode}> = ({children}) => (
-  <StyledBlock>
-    <Scroll>{children}</Scroll>
-  </StyledBlock>
-);
+const FixedWidthBlock = styled.div`
+  display: inline-block;
+  width: 500px;
+`;
 
-const titleCanHaveIcons = (
-  <>
-    can have Icons <IconFilledEmail />
-  </>
+const ScrollBox: React.FC<{children: React.ReactNode}> = ({children}) => (
+  <FixedHeightBlock>
+    <Scroll>{children}</Scroll>
+  </FixedHeightBlock>
 );
 
 const titleAndRightIcon = (
   <>
-    <IconFilledEmail /> Tab
+    <IconOutlinedStarOutline /> Tab
   </>
 );
 
 const titleAndLeftIcon = (
   <>
-    Tab <IconFilledEmail />
+    Tab <IconOutlinedStarOutline />
   </>
 );
 
 const titleBetweenIcons = (
   <>
-    <IconFilledEmail />
-    tab
-    <IconFilledEmail />
+    <IconOutlinedStarOutline />
+    Tab
+    <IconOutlinedStarOutline />
   </>
 );
+
+export const StoryTabsDefault = () => (
+  <StorybookPage columns="auto">
+    <Tabs>
+      <Tab label="Tab one" key="tab-1">
+        <LoremIpsum textNumber={1} />
+      </Tab>
+      <Tab label="Tab two" key="tab-2">
+        <LoremIpsum textNumber={2} />
+      </Tab>
+      <Tab label="Tab three" key="tab-3">
+        <LoremIpsum textNumber={3} />
+      </Tab>
+    </Tabs>
+  </StorybookPage>
+);
+StoryTabsDefault.storyName = 'Default';
+StoryTabsDefault.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
+
+export const StoryTabsHorizontal = () => (
+  <StorybookPage columns="auto">
+    <StorybookCase title="Small">
+      <Tabs>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+      <Spacer />
+    </StorybookCase>
+
+    <StorybookCase title="Medium (default)">
+      <Tabs size="medium">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+      <Spacer />
+    </StorybookCase>
+
+    <StorybookCase title="Large">
+      <Tabs size="large">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryTabsHorizontal.storyName = 'Size - horizontal';
+StoryTabsHorizontal.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
+
+export const StoryTabsVertical = () => (
+  <StorybookPage columns="auto">
+    <StorybookCase title="Small">
+      <Tabs vertical>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+      <Spacer />
+    </StorybookCase>
+    <StorybookCase title="Medium (default)">
+      <Tabs size="medium" vertical>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+      <Spacer />
+    </StorybookCase>
+    <StorybookCase title="Large">
+      <Tabs size="large" vertical>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryTabsVertical.storyName = 'Size - vertical';
+StoryTabsVertical.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
 export const StoryTabsDistributionStart = () => (
-  <>
-    <StorybookHeading>Tabs Distribution Start</StorybookHeading>
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs distribution="start" divider initialSelectedIndex={10}>
+        <Tab label="Tab one" key="tab-1">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two" key="tab-2">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three" key="tab-3">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+      <Spacer />
+    </StorybookCase>
 
-    <StorybookSubHeading>Horizontal</StorybookSubHeading>
-    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
-      <Tab label="H tab 1" key="tab-1">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label={titleCanHaveIcons} key="tab-2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="H tab 3, three" key="tab-3">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <Spacer />
-
-    <Tabs size="medium" divider>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-
-    <Spacer />
-
-    <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs size="small" vertical divider distribution="start">
-      <Tab label="V tab 1">
-        <LoremIpsum textNumber={1} text={LoremIpsumText2} />
-      </Tab>
-      <Tab label="V tab 2">
-        <LoremIpsum textNumber={2} />
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="V tab 3, three">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
+    <StorybookCase title="Vertical">
+      <Tabs vertical divider distribution="start">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryTabsDistributionStart.storyName = 'tabs-distribution-start';
+StoryTabsDistributionStart.storyName = 'Distribution start';
 StoryTabsDistributionStart.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
+
+export const StoryTabsDistributionGrow = () => (
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs distribution="grow" divider>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+      <Spacer />
+    </StorybookCase>
+
+    <StorybookCase title="Vertical">
+      <Tabs vertical divider distribution="grow">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryTabsDistributionGrow.storyName = 'Distribution grow';
+StoryTabsDistributionGrow.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
+
+export const StoryTabsDistributionEqual = () => (
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs divider distribution="equal">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+      <Spacer />
+    </StorybookCase>
+
+    <StorybookCase title="Vertical">
+      <Tabs vertical divider distribution="equal">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryTabsDistributionEqual.storyName = 'Distribution equal';
+StoryTabsDistributionEqual.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
+
+export const StoryTabsWithAlign = () => (
+  <StorybookPage columns="auto" rowGap="space060">
+    <StorybookCase title="Align left - horizontal">
+      <Tabs align="start" distribution="grow">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Align right - horizontal">
+      <Tabs align="end" distribution="grow">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Align left - vertical">
+      <Tabs align="start" distribution="grow" vertical>
+        <Tab label="Tab&nbsp;one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab&nbsp;two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab&nbsp;three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Align right - vertical">
+      <Tabs align="end" distribution="grow" vertical>
+        <Tab label="Tab&nbsp;one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab&nbsp;two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab&nbsp;three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryTabsWithAlign.storyName = 'Alignment';
+StoryTabsWithAlign.parameters = {
   percy: {
     enableJavaScript: true,
   },
@@ -300,563 +540,350 @@ StoryTabsDistributionStart.parameters = {
 export const StoryControlledTabs = () => {
   const [selectedIndex, setSelected] = React.useState(0);
   return (
-    <>
-      <StorybookHeading>Controlled Tabs Index selection</StorybookHeading>
-      <Block paddingBlock="space040" paddingInline="space040">
-        <Button onClick={() => setSelected(state => Math.min(2, state + 1))}>
-          +
-        </Button>
-        <Block paddingBlock="space040" paddingInline="space040" />
-        <Button onClick={() => setSelected(state => Math.max(0, state - 1))}>
-          -
-        </Button>
-      </Block>
+    <StorybookPage columns="auto auto auto auto" columnGap="space040">
+      <Button
+        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        onClick={() => setSelected(state => Math.max(0, state - 1))}
+      >
+        Previous tab
+      </Button>
+      <Button
+        overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+        onClick={() => setSelected(state => Math.min(2, state + 1))}
+      >
+        Next tab
+      </Button>
+      <Spacer />
+
       <Tabs
-        size="small"
         distribution="start"
         divider
         selectedIndex={selectedIndex}
         onChange={setSelected}
       >
-        <Tab label="H tab 1" key="tab-1">
-          <LoremIpsum textNumber={1} />
+        <Tab label="Tab one" key="tab-1">
+          <LoremIpsum text={LoremIpsumTextLong} textNumber={1} />
         </Tab>
-        <Tab label={titleCanHaveIcons} key="tab-2">
-          <LoremIpsum textNumber={2} />
+        <Tab label="Tab two" key="tab-2">
+          <LoremIpsum text={LoremIpsumTextLong} textNumber={2} />
         </Tab>
-        <Tab label="H tab 3, three" key="tab-3">
-          <LoremIpsum textNumber={3} />
+        <Tab label="Tab three" key="tab-3">
+          <LoremIpsum text={LoremIpsumTextLong} textNumber={3} />
         </Tab>
       </Tabs>
-    </>
+    </StorybookPage>
   );
 };
-StoryControlledTabs.storyName = 'tabs-controlled';
+StoryControlledTabs.storyName = 'Controlled index selection';
 StoryControlledTabs.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
-export const StoryTabsDistributionGrow = () => (
-  <>
-    <StorybookHeading>Tabs Distribution - Grow</StorybookHeading>
-
-    <StorybookSubHeading>Horizontal</StorybookSubHeading>
-    <Tabs size="small" distribution="grow" divider>
-      <Tab label="H tab 1">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="H tab 2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="H tab 3, three">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <Spacer />
-
-    <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs size="small" vertical divider distribution="grow">
-      <Tab label="V tab 1">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="V tab 2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="V tab 3, three">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsDistributionGrow.storyName = 'tabs-distribution-grow';
-StoryTabsDistributionGrow.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
-export const StoryTabsDistributionEqual = () => (
-  <>
-    <StorybookHeading>Tabs Distribution - Equal</StorybookHeading>
-
-    <StorybookSubHeading>Horizontal</StorybookSubHeading>
-    <Tabs size="small" divider distribution="equal">
-      <Tab label="H tab 1">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="H tab 2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="H tab 3, three">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <Spacer />
-
-    <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs size="small" vertical divider distribution="equal">
-      <Tab label="V tab 1">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="V tab 2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="V tab 3, three">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsDistributionEqual.storyName = 'tabs-distribution-equal';
-StoryTabsDistributionEqual.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
 export const StoryTabsWithScroll = () => (
-  <>
-    <StorybookHeading>
-      Tabs with fixed height in container and scroll
-    </StorybookHeading>
-
-    <StorybookSubHeading>Horizontal</StorybookSubHeading>
-    <Tabs size="small" divider distribution="equal">
-      <Tab label="H tab 1">
-        <ScrollBox>
-          <LoremIpsum textNumber={1} />
-        </ScrollBox>
-      </Tab>
-      <Tab label="H tab 2">
-        <ScrollBox>
-          <LoremIpsum textNumber={2} />
-        </ScrollBox>
-      </Tab>
-      <Tab label="H tab 3, three">
-        <ScrollBox>
-          <LoremIpsum textNumber={3} />
-        </ScrollBox>
-      </Tab>
-    </Tabs>
-    <Spacer />
-
-    <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs size="small" vertical divider distribution="equal">
-      <Tab label="V tab 1">
-        <ScrollBox>
-          <LoremIpsum textNumber={1} />
-        </ScrollBox>
-      </Tab>
-      <Tab label="V tab 2">
-        <ScrollBox>
-          <LoremIpsum textNumber={2} />
-        </ScrollBox>
-      </Tab>
-      <Tab label="V tab 3, three">
-        <ScrollBox>
-          <LoremIpsum textNumber={3} />
-        </ScrollBox>
-      </Tab>
-    </Tabs>
-  </>
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs divider distribution="equal">
+        <Tab label="Tab one">
+          <ScrollBox>
+            <LoremIpsum text={LoremIpsumTextLong} textNumber={1} />
+          </ScrollBox>
+        </Tab>
+        <Tab label="Tab two">
+          <ScrollBox>
+            <LoremIpsum text={LoremIpsumTextLong} textNumber={2} />
+          </ScrollBox>
+        </Tab>
+        <Tab label="Tab three">
+          <ScrollBox>
+            <LoremIpsum text={LoremIpsumTextLong} textNumber={3} />
+          </ScrollBox>
+        </Tab>
+      </Tabs>
+      <Spacer />
+    </StorybookCase>
+    <StorybookCase title="Vertical">
+      <Tabs vertical divider distribution="equal">
+        <Tab label="Tab one">
+          <ScrollBox>
+            <LoremIpsum text={LoremIpsumTextLong} textNumber={1} />
+          </ScrollBox>
+        </Tab>
+        <Tab label="Tab two">
+          <ScrollBox>
+            <LoremIpsum text={LoremIpsumTextLong} textNumber={2} />
+          </ScrollBox>
+        </Tab>
+        <Tab label="Tab three">
+          <ScrollBox>
+            <LoremIpsum text={LoremIpsumTextLong} textNumber={3} />
+          </ScrollBox>
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryTabsWithScroll.storyName = 'tabs-with-scroll';
+StoryTabsWithScroll.storyName = 'Scroll';
 StoryTabsWithScroll.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
-export const StoryTabsHorizontal = () => (
-  <>
-    <StorybookHeading>Tabs Horizontal</StorybookHeading>
-    <StorybookSubHeading>Small</StorybookSubHeading>
+export const StoryTabsWithOverflowAndScroll = () => (
+  <StorybookPage columns="auto">
+    <StorybookCase title="Scroll - horizontal">
+      <MainContainer>
+        <Tabs>
+          {Array.from(Array(15)).map((_, i) => (
+            <Tab label={`Tab ${i + 1}`}>
+              <LoremIpsum textNumber={1 + (i % 3)} />
+            </Tab>
+          ))}
+        </Tabs>
+      </MainContainer>
+    </StorybookCase>
 
-    <Tabs size="small">
-      <Tab label="Small tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Small tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Small tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-
-    <StorybookSubHeading>Medium</StorybookSubHeading>
-
-    <Tabs size="medium">
-      <Tab label="Medium tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Medium tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Medium tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-
-    <StorybookSubHeading>Large</StorybookSubHeading>
-
-    <Tabs size="large">
-      <Tab label="Large tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Large tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Large tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+    <StorybookCase title="Scroll - vertical">
+      <VerticalContainer>
+        <Tabs vertical>
+          {Array.from(Array(15)).map((_, i) => (
+            <Tab label={`Tab${i + 1}`}>
+              <LoremIpsum textNumber={1 + (i % 3)} />
+            </Tab>
+          ))}
+        </Tabs>
+      </VerticalContainer>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryTabsHorizontal.storyName = 'tabs-horizontal';
-StoryTabsHorizontal.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
+StoryTabsWithOverflowAndScroll.storyName = 'Overflow and scroll';
+StoryTabsWithOverflowAndScroll.parameters = {
+  percy: {skip: true},
 };
 
-export const StoryTabsHorizontalIconLabel = () => (
-  <>
-    <StorybookHeading>Tabs Horizontal Label / Icon</StorybookHeading>
-    <StorybookSubHeading>Label Only</StorybookSubHeading>
-    <Tabs size="medium" divider>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Icon Only</StorybookSubHeading>
-    <Tabs size="medium" divider>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsHorizontalIconLabel.storyName = 'tabs-horizontal-icon-label';
-StoryTabsHorizontalIconLabel.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
+export const StoryTabsWithScrollOverrides = () => (
+  <StorybookPage columns="auto">
+    <MainContainer>
+      <StorybookCase title="Scroll overrides via component - horizontal">
+        <Tabs
+          overrides={{
+            scroll: ({children, vertical}) => (
+              <Scroll controls="hover" snapAlign="center" vertical={vertical}>
+                {children}
+              </Scroll>
+            ),
+          }}
+        >
+          {Array.from(Array(15)).map((_, i) => (
+            <Tab label={`Tab ${i + 1}`}>
+              <LoremIpsum textNumber={1 + (i % 3)} />
+            </Tab>
+          ))}
+        </Tabs>
+      </StorybookCase>
 
-export const StoryTabsVerticalIconLabel = () => (
-  <>
-    <StorybookHeading>Tabs Vertical Label / Icon</StorybookHeading>
-    <StorybookSubHeading>Label Only</StorybookSubHeading>
-    <Tabs size="medium" divider vertical>
-      <Tab ariaLabel="tab label" label="Medium tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label="Medium tab" disabled>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab ariaLabel="tab label" label="Medium tab">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-      <Tab ariaLabel="tab label" label="Medium tab">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Icon Only</StorybookSubHeading>
-    <Tabs size="medium" divider vertical>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />} disabled>
-        <LoremIpsum textNumber={3} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={4} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsVerticalIconLabel.storyName = 'tabs-vertical-icon-label';
-StoryTabsVerticalIconLabel.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
+      <Spacer />
 
-export const StoryTabsHorizontalIconAndLabel = () => (
-  <>
-    <StorybookHeading>Tabs Horizontal Icon and Label</StorybookHeading>
-    <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
-    <Tabs size="small" divider>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>
-      Leading and Trailing Icon and Label
-    </StorybookSubHeading>
-    <Tabs size="medium" divider>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
+      <StorybookCase title="Scroll overrides via props - horizontal">
+        <Tabs
+          overrides={{
+            scroll: {
+              props: {
+                controls: 'hover',
+                overrides: {
+                  controls: {
+                    button: {
+                      stylePreset: 'scrollArrowsCustom',
+                    },
+                    offset: '0px',
+                  },
+                },
+              },
+            },
+          }}
+        >
+          {Array.from(Array(15)).map((_, i) => (
+            <Tab label={`Tab ${i + 1}`}>
+              <LoremIpsum textNumber={1 + (i % 3)} />
+            </Tab>
+          ))}
+        </Tabs>
+      </StorybookCase>
+    </MainContainer>
+  </StorybookPage>
 );
-StoryTabsHorizontalIconAndLabel.storyName = 'tabs-horizontal-icon-and-label';
-StoryTabsHorizontalIconAndLabel.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
-export const StoryTabsVerticalIconAndLabel = () => (
-  <>
-    <StorybookHeading>Tabs Vertical Icon and Label</StorybookHeading>
-    <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
-    <Tabs size="medium" divider vertical>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>
-      Leading and Trailing Icon and Label
-    </StorybookSubHeading>
-    <Tabs size="large" divider vertical>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsVerticalIconAndLabel.storyName = 'tabs-vertical-icon-and-label';
-StoryTabsVerticalIconAndLabel.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
-export const StoryTabsVertical = () => (
-  <>
-    <StorybookHeading>Tabs Vertical</StorybookHeading>
-    <StorybookSubHeading>Small</StorybookSubHeading>
-    <Tabs size="small" vertical>
-      <Tab label="Small tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Small tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Small tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Medium</StorybookSubHeading>
-    <Tabs size="medium" vertical>
-      <Tab label="Medium tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Medium tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Medium tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Large</StorybookSubHeading>
-    <Tabs size="large" vertical>
-      <Tab label="Large tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Large tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Large tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsVertical.storyName = 'tabs-vertical';
-StoryTabsVertical.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
-export const StoryTabsVerticalVariantsLabelOrIcon = () => (
-  <>
-    <StorybookHeading>Tabs Vertical Variants (Label or Icon)</StorybookHeading>
-    <StorybookSubHeading>Label Only</StorybookSubHeading>
-    <Tabs size="medium" vertical divider>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Icon Only</StorybookSubHeading>
-    <Tabs size="medium" vertical divider>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={<IconFilledEmail />}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsVerticalVariantsLabelOrIcon.storyName =
-  'tabs-vertical-variants-label-or-icon';
-StoryTabsVerticalVariantsLabelOrIcon.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
+StoryTabsWithScrollOverrides.storyName = 'Scroll overrides';
+StoryTabsWithScrollOverrides.parameters = {
+  percy: {skip: true},
 };
 
 export const StoryTabsVerticalVariantsIconPlacement = () => (
-  <>
-    <StorybookHeading>Tabs Vertical Variants (Icon Placement)</StorybookHeading>
-    <StorybookSubHeading>Leading Icon and Label</StorybookSubHeading>
-    <Tabs size="medium" vertical divider>
-      <Tab label={titleAndRightIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label={titleAndRightIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label={titleAndRightIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Trailing Icon and Label</StorybookSubHeading>
-    <Tabs size="medium" vertical divider>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleAndLeftIcon}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>
-      Leading and Trailing Icon and Label
-    </StorybookSubHeading>
-    <Tabs size="medium" vertical divider>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab ariaLabel="tab label" label={titleBetweenIcons}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+  <StorybookPage columns="auto">
+    <StorybookCase title="Leading icon">
+      <Tabs size="medium" divider>
+        <Tab label={titleAndRightIcon}>
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label={titleAndRightIcon}>
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label={titleAndRightIcon}>
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Trailing icon">
+      <Tabs size="medium" divider>
+        <Tab ariaLabel="tab 1" label={titleAndLeftIcon}>
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab ariaLabel="tab 2" label={titleAndLeftIcon}>
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab ariaLabel="tab 3" label={titleAndLeftIcon}>
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Leading and trailing icons">
+      <Tabs size="medium" divider>
+        <Tab ariaLabel="tab 1" label={titleBetweenIcons}>
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab ariaLabel="tab 2" label={titleBetweenIcons}>
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab ariaLabel="tab 3" label={titleBetweenIcons}>
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryTabsVerticalVariantsIconPlacement.storyName =
-  'tabs-vertical-variants-icon-placement';
+StoryTabsVerticalVariantsIconPlacement.storyName = 'Label and icons';
 StoryTabsVerticalVariantsIconPlacement.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
+export const StoryLabelAndIconOnly = () => (
+  <StorybookPage columns="auto auto">
+    <StorybookCase title="Label only - horizontal">
+      <Tabs align="start">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Icon only - horizontal">
+      <Tabs align="end">
+        <Tab ariaLabel="tab 1" label={<IconOutlinedStarOutline />}>
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab ariaLabel="tab 2" label={<IconOutlinedStarOutline />}>
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab ariaLabel="tab 3" label={<IconOutlinedStarOutline />}>
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Label only - vertical">
+      <Tabs align="start" vertical>
+        <Tab label="Tab&nbsp;one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab&nbsp;two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab&nbsp;three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Icon only - vertical">
+      <Tabs align="end" vertical>
+        <Tab ariaLabel="tab 1" label={<IconOutlinedStarOutline />}>
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab ariaLabel="tab 2" label={<IconOutlinedStarOutline />}>
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab ariaLabel="tab 3" label={<IconOutlinedStarOutline />}>
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryLabelAndIconOnly.storyName = 'Label only and icon only';
+StoryLabelAndIconOnly.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
+
 export const StoryTabsHorizontalIndicatorPositionVariants = () => (
-  <>
-    <StorybookHeading>
-      Tabs Horizontal Indicator Position Variants
-    </StorybookHeading>
-    <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
-    <Tabs size="medium" indicatorPosition="start">
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Indicator position End (default)</StorybookSubHeading>
-    <Tabs size="medium">
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Indicator position None</StorybookSubHeading>
-    <Tabs size="medium" indicatorPosition="none">
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+  <StorybookPage columns="auto">
+    <StorybookCase title="Indicator position start">
+      <Tabs size="medium" indicatorPosition="start">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Indicator position end (default)">
+      <Tabs size="medium">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Indicator position none">
+      <Tabs size="medium" indicatorPosition="none">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTabsHorizontalIndicatorPositionVariants.storyName =
-  'tabs-horizontal-indicator-position-variants';
+  'Indicator position options horizontal';
 StoryTabsHorizontalIndicatorPositionVariants.parameters = {
   percy: {
     enableJavaScript: true,
@@ -864,122 +891,90 @@ StoryTabsHorizontalIndicatorPositionVariants.parameters = {
 };
 
 export const StoryTabsVerticalIndicatorPositionVariants = () => (
-  <>
-    <StorybookHeading>
-      Tabs Vertical Indicator Position Variants
-    </StorybookHeading>
-    <StorybookSubHeading>Indicator position Start</StorybookSubHeading>
-    <Tabs size="medium" vertical indicatorPosition="start">
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Indicator position End (default)</StorybookSubHeading>
-    <Tabs size="medium" vertical>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Indicator position None</StorybookSubHeading>
-    <Tabs size="medium" vertical indicatorPosition="none">
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+  <StorybookPage columns="auto">
+    <StorybookCase title="Indicator position start">
+      <Tabs size="medium" vertical indicatorPosition="start">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Indicator position end (default)">
+      <Tabs size="medium" vertical>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Indicator position none">
+      <Tabs size="medium" vertical indicatorPosition="none">
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTabsVerticalIndicatorPositionVariants.storyName =
-  'tabs-vertical-indicator-position-variants';
+  'Indicator position options vertical';
 StoryTabsVerticalIndicatorPositionVariants.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
-export const StoryTabsContent = () => (
-  <>
-    <StorybookHeading>Tabs Content</StorybookHeading>
-    <StorybookSubHeading>Tab with content</StorybookSubHeading>
-    <Tabs size="medium" divider>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Tab vertical with content</StorybookSubHeading>
-    <Tabs size="medium" vertical divider>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsContent.storyName = 'tabs-content';
-StoryTabsContent.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
 export const StoryTabsWithDisabledTab = () => (
-  <>
-    <StorybookHeading>Tabs With Disabled Tab</StorybookHeading>
-    <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-    <Tabs>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two" disabled>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
-    <Tabs vertical>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two" disabled>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two" disabled>
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Vertical">
+      <Tabs vertical>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two" disabled>
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryTabsWithDisabledTab.storyName = 'tabs-with-disabled-tab';
+StoryTabsWithDisabledTab.storyName = 'Disabled';
 StoryTabsWithDisabledTab.parameters = {
   percy: {
     enableJavaScript: true,
@@ -987,39 +982,40 @@ StoryTabsWithDisabledTab.parameters = {
 };
 
 export const StoryTabsWithFixedTabIndicatorSize = () => (
-  <>
-    <StorybookHeading>Tabs With Fixed Tab Indicator Size</StorybookHeading>
-    <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-    <Tabs overrides={{selectionIndicator: {indicator: {size: 'sizing050'}}}}>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
-    <Tabs
-      vertical
-      overrides={{selectionIndicator: {indicator: {size: 'sizing030'}}}}
-    >
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs overrides={{selectionIndicator: {indicator: {size: 'sizing050'}}}}>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Vertical">
+      <Tabs
+        vertical
+        overrides={{selectionIndicator: {indicator: {size: 'sizing030'}}}}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryTabsWithFixedTabIndicatorSize.storyName =
-  'tabs-with-fixed-tab-indicator-size';
+StoryTabsWithFixedTabIndicatorSize.storyName = 'Fixed tab indicator size';
 StoryTabsWithFixedTabIndicatorSize.parameters = {
   percy: {
     enableJavaScript: true,
@@ -1027,149 +1023,102 @@ StoryTabsWithFixedTabIndicatorSize.parameters = {
 };
 
 export const StoryTabsWithFixedTabIndicatorPercentageSize = () => (
-  <>
-    <StorybookHeading>
-      Tabs With Fixed Tab Indicator Percentage Size
-    </StorybookHeading>
-    <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-    <Tabs overrides={{selectionIndicator: {indicator: {size: '75%'}}}}>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
-    <Tabs vertical overrides={{selectionIndicator: {indicator: {size: '75%'}}}}>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs overrides={{selectionIndicator: {indicator: {size: '75%'}}}}>
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+
+    <StorybookCase title="Vertical">
+      <Tabs
+        vertical
+        overrides={{selectionIndicator: {indicator: {size: '75%'}}}}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTabsWithFixedTabIndicatorPercentageSize.storyName =
-  'tabs-with-fixed-tab-indicator-percentage-size';
+  'Fixed tab indicator percentage size';
 StoryTabsWithFixedTabIndicatorPercentageSize.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
-export const StoryTabsWithFixedTabIndicatorPixelSize = () => (
-  <>
-    <StorybookHeading>
-      Tabs With Fixed Tab Indicator Pixel Size
-    </StorybookHeading>
-    <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-    <Tabs overrides={{selectionIndicator: {indicator: {size: '30px'}}}}>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
-    <Tabs
-      vertical
-      overrides={{selectionIndicator: {indicator: {size: '30px'}}}}
-    >
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsWithFixedTabIndicatorPixelSize.storyName =
-  'tabs-with-fixed-tab-indicator-pixel-size';
-StoryTabsWithFixedTabIndicatorPixelSize.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
 export const StoryTabsWithCustomTabBarTrackAndIndicatorWeight = () => (
-  <>
-    <StorybookHeading>
-      Tabs With Custom Tab Bar Track And Indicator Weight
-    </StorybookHeading>
-    <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-    <Tabs
-      overrides={{
-        selectionIndicator: {
-          track: {
-            weight: 'borderWidth030',
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs
+        overrides={{
+          selectionIndicator: {
+            track: {
+              weight: 'borderWidth030',
+            },
+            indicator: {
+              weight: 'borderWidth030',
+            },
           },
-          indicator: {
-            weight: 'borderWidth030',
+        }}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+    <StorybookCase title="Vertical">
+      <Tabs
+        vertical
+        overrides={{
+          selectionIndicator: {
+            track: {
+              weight: 'borderWidth030',
+            },
+            indicator: {
+              weight: 'borderWidth030',
+            },
           },
-        },
-      }}
-    >
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Four">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <div style={{height: '100px'}} />
-    <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
-    <Tabs
-      vertical
-      overrides={{
-        selectionIndicator: {
-          track: {
-            weight: 'borderWidth030',
-          },
-          indicator: {
-            weight: 'borderWidth030',
-          },
-        },
-      }}
-    >
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Four">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+        }}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTabsWithCustomTabBarTrackAndIndicatorWeight.storyName =
-  'tabs-with-custom-tab-bar-track-and-indicator-weight';
+  'Custom tab bar track and indicator weight';
 StoryTabsWithCustomTabBarTrackAndIndicatorWeight.parameters = {
   percy: {
     enableJavaScript: true,
@@ -1177,708 +1126,400 @@ StoryTabsWithCustomTabBarTrackAndIndicatorWeight.parameters = {
 };
 
 export const StoryTabsWithCustomTabBarIndicatorAnimation = () => (
-  <>
-    <StorybookHeading>
-      Tabs With Custom Tab Bar Indicator Animation
-    </StorybookHeading>
-    <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-    <Tabs
-      overrides={{
-        selectionIndicator: {
-          indicator: {
-            motionDuration: 'motionDuration040',
-            motionTiming: 'motionTimingEaseIn',
+  <StorybookPage columns="auto">
+    <StorybookCase title="Horizontal">
+      <Tabs
+        overrides={{
+          selectionIndicator: {
+            indicator: {
+              motionDuration: 'motionDuration040',
+              motionTiming: 'motionTimingEaseIn',
+            },
           },
-        },
-      }}
-    >
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Four">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <br />
-    <br />
-    <Spacer />
-    <StorybookSubHeading>Tabs Vertical</StorybookSubHeading>
-    <Tabs
-      vertical
-      overrides={{
-        selectionIndicator: {
-          indicator: {
-            motionDuration: 'motionDuration040',
-            motionTiming: 'motionTimingEaseIn',
+        }}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+    <StorybookCase title="Vertical">
+      <Tabs
+        vertical
+        overrides={{
+          selectionIndicator: {
+            indicator: {
+              motionDuration: 'motionDuration040',
+              motionTiming: 'motionTimingEaseIn',
+            },
           },
-        },
-      }}
-    >
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Four">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+        }}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+        <Tab label="Tab three">
+          <LoremIpsum textNumber={3} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTabsWithCustomTabBarIndicatorAnimation.storyName =
-  'tabs-with-custom-tab-bar-indicator-animation';
+  'Custom tab bar indicator transition';
 StoryTabsWithCustomTabBarIndicatorAnimation.parameters = {
   percy: {skip: true},
 };
 
-export const StoryTabsWithPresetsOverrides = () => (
-  <>
-    <StorybookHeading>Tabs with presets overides</StorybookHeading>
-    <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs
-      size="small"
-      overrides={{
-        spaceInline: {
-          xs: 'space010',
-          lg: 'space080',
-        },
-        tab: {
-          spaceInline: 'space020',
-        },
-        selectionIndicator: {
-          track: {
-            stylePreset: 'tabsBarTrackCustomPreset',
-            weight: 'borderWidth030',
-          },
-          indicator: {
-            stylePreset: 'tabsBarIndicatorCustomPreset',
-            weight: 'borderWidth030',
-          },
-        },
-        divider: {
-          stylePreset: 'dividerCustomPreset',
-        },
-      }}
-      vertical
-      divider
-      distribution="grow"
-    >
-      <Tab label="V tab 1">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="V tab 2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="V tab 3, three">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsWithPresetsOverrides.storyName = 'tabs-with-presets-overrides';
-StoryTabsWithPresetsOverrides.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
-export const StoryTabsWithPresetsOverridesShadows = () => {
-  const CustomScroll = styled.div`
-    max-width: 100%;
-  `;
-
-  const TabsContainer = styled.div`
-    padding: 30px;
-    background: #e9e9e9;
-  `;
-
-  const TabPaneCutter = styled.div`
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    position: relative;
-  `;
-
-  const TabPanel = styled.div`
-    box-shadow: 0px -1px 3px 1px #999999;
-    background: #fff;
-    margin-top: -1px;
-  `;
-
-  return (
-    <>
-      <StorybookHeading>Tabs with Box Shadow</StorybookHeading>
-      <TabsContainer>
-        <Tabs
-          size="medium"
+export const StoryTabsTransitions = () => (
+  <StorybookPage columns="auto">
+    <StorybookCase title="Default transition preset">
+      <Tabs>
+        <Tab label="One transition preset">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Two transition presets">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+    <StorybookCase title="Tab items with Transition Preset overrides">
+      <Tabs>
+        <Tab
           overrides={{
-            scroll: props => <CustomScroll {...props} />,
-            spaceInline: 'space000',
-            tab: {
-              spaceInline: '30px',
+            transitionPreset: 'customBackgroundColorChange',
+          }}
+          label="One transition preset"
+        >
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab
+          overrides={{
+            transitionPreset: [
+              'customBackgroundColorChange',
+              'customFontColorChange',
+            ],
+          }}
+          label="Two transition presets"
+        >
+          <LoremIpsum textNumber={2} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+    <StorybookCase title="Tab items with overrides using extend on transitionDuration">
+      <Tabs>
+        <Tab
+          label="Using extend prop on one preset"
+          overrides={{
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDelay: '2000ms',
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
             },
           }}
-          indicatorPosition="none"
         >
-          <Tab label="V tab 1" overrides={{stylePreset: 'shadowTab'}}>
-            <TabPanel>
-              <TabPaneCutter />
-              <LoremIpsum textNumber={1} />
-            </TabPanel>
-          </Tab>
-          <Tab label="V tab 2" overrides={{stylePreset: 'shadowTab'}}>
-            <TabPanel>
-              <TabPaneCutter />
-              <LoremIpsum textNumber={2} />
-            </TabPanel>
-          </Tab>
-          <Tab label="V tab 3, three" overrides={{stylePreset: 'shadowTab'}}>
-            <TabPanel>
-              <TabPaneCutter />
-              <LoremIpsum textNumber={3} />
-            </TabPanel>
-          </Tab>
-        </Tabs>
-      </TabsContainer>
-    </>
-  );
-};
-StoryTabsWithPresetsOverridesShadows.storyName = 'tabs-with-presets-shadows';
-StoryTabsWithPresetsOverridesShadows.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
-export const StoryTabsWithPresetsOverridesOnIndividualTab = () => (
-  <>
-    <StorybookHeading>
-      Tabs with presets overides on individual tab
-    </StorybookHeading>
-    <StorybookSubHeading>Vertical</StorybookSubHeading>
-    <Tabs size="small" vertical divider distribution="grow">
-      <Tab label="V tab 1" overrides={{stylePreset: 'tabCustomPreset'}}>
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="V tab 2" overrides={{stylePreset: 'tabCustomPreset'}}>
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="V tab 3, three" overrides={{stylePreset: 'tabCustomPreset'}}>
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsWithPresetsOverridesOnIndividualTab.storyName =
-  'tabs-with-presets-overrides-on-individual-tab';
-StoryTabsWithPresetsOverridesOnIndividualTab.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
-export const StoryTabsWithAlign = () => (
-  <>
-    <StorybookHeading>Tabs With Align</StorybookHeading>
-    <StorybookSubHeading>Tabs Horizontal Align Left</StorybookSubHeading>
-    <Tabs align="start" distribution="grow">
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-
-    <StorybookSubHeading>Tabs Horizontal Align Right</StorybookSubHeading>
-    <Tabs align="end" distribution="grow">
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-
-    <StorybookSubHeading>Tabs Vertical Align Left</StorybookSubHeading>
-    <Tabs align="start" distribution="grow" vertical>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>Tabs Vertical Align Right</StorybookSubHeading>
-    <Tabs align="end" distribution="grow" vertical>
-      <Tab label="Tab">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Two">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Tab Three is Long">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
-);
-StoryTabsWithAlign.storyName = 'tabs-with-align';
-StoryTabsWithAlign.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
-
-export const StoryTabsWithOverflowAndScroll = () => (
-  <MainContainer>
-    <StorybookHeading>Tabs With Overflow and Scroll</StorybookHeading>
-    <StorybookSubHeading>Tabs Horizontal</StorybookSubHeading>
-    <Tabs>
-      {Array.from(Array(15)).map((_, i) => (
-        <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
-      ))}
-    </Tabs>
-
-    <hr />
-
-    <Container>
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab
+          label="Using extend prop on one preset"
+          overrides={{
+            transitionPreset: {
+              extend: 'backgroundColorChange',
+              base: {
+                transitionDelay: '2000ms',
+                transitionDuration: '{{motions.motionDuration050}}',
+              },
+            },
+          }}
+        >
+          <LoremIpsum textNumber={2} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+    <StorybookCase title="Tab items with overrides on two presets using extend">
       <Tabs>
-        {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here  ${i}`}>Content {i}</Tab>
-        ))}
-      </Tabs>
-    </Container>
-
-    <hr />
-    <hr />
-
-    <Container>
-      <Tabs vertical>
-        {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here ${i}`}>Content {i}</Tab>
-        ))}
-      </Tabs>
-    </Container>
-  </MainContainer>
-);
-StoryTabsWithOverflowAndScroll.storyName = 'tabs-with-overflow-and-scroll';
-StoryTabsWithOverflowAndScroll.parameters = {
-  percy: {skip: true},
-};
-
-export const StoryTabsWithScrollOverrides = () => {
-  const CustomScroll = styled.div`
-    max-width: 100%;
-    overflow: auto;
-    border: 5px solid red;
-  `;
-
-  return (
-    <MainContainer>
-      <StorybookHeading>Tabs With Scroll Overrides</StorybookHeading>
-      <StorybookSubHeading>
-        Tabs Horizontal With Scroll Overridies via Component
-      </StorybookSubHeading>
-      <Tabs
-        overrides={{
-          scroll: ({children, vertical}) => (
-            <Scroll controls="hover" snapAlign="center" vertical={vertical}>
-              {children}
-            </Scroll>
-          ),
-        }}
-      >
-        {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here ${i}`}>
-            <LoremIpsum textNumber={1} />
-          </Tab>
-        ))}
-      </Tabs>
-      <hr />
-      <Tabs
-        overrides={{
-          scroll: ({children}) => <CustomScroll>{children}</CustomScroll>,
-        }}
-      >
-        {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here  ${i}`}>
-            <LoremIpsum textNumber={1} />
-          </Tab>
-        ))}
-      </Tabs>
-
-      <StorybookSubHeading>
-        Tabs Horizontal With Scroll Overridies via Props
-      </StorybookSubHeading>
-      <Tabs
-        overrides={{
-          scroll: {
-            props: {
-              scrollBar: true,
-              controls: 'hover',
-              overrides: {
-                controls: {
-                  button: {
-                    stylePreset: 'scrollArrowsCustom',
-                  },
-                  offset: '0px',
+        <Tab
+          label="Using extend prop on two presets"
+          overrides={{
+            transitionPreset: [
+              {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDelay: '2000ms',
+                  transitionDuration: '{{motions.motionDuration030}}',
                 },
               },
-            },
-          },
-        }}
-      >
-        {Array.from(Array(15)).map((_, i) => (
-          <Tab label={`Tab text here ${i}`}>
-            <LoremIpsum textNumber={1} />
-          </Tab>
-        ))}
+              {
+                extend: 'fontColorChange',
+                base: {
+                  transitionDelay: '1000ms',
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            ],
+          }}
+        >
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab
+          label="Using extend prop on two presets"
+          overrides={{
+            transitionPreset: [
+              {
+                extend: 'backgroundColorChange',
+                base: {
+                  transitionDelay: '2000ms',
+                  transitionDuration: '{{motions.motionDuration030}}',
+                },
+              },
+              {
+                extend: 'fontColorChange',
+                base: {
+                  transitionDelay: '1000ms',
+                  transitionDuration: '{{motions.motionDuration050}}',
+                },
+              },
+            ],
+          }}
+        >
+          <LoremIpsum textNumber={2} />
+        </Tab>
       </Tabs>
-    </MainContainer>
-  );
-};
-StoryTabsWithScrollOverrides.storyName = 'tabs-with-scroll-overrides';
-StoryTabsWithScrollOverrides.parameters = {
-  percy: {skip: true},
-};
-
-// const transitionTheme = createTheme({
-//   name: 'my-custom-tab-theme',
-//   overrides: {
-//     transitionPresets: {
-//       customBackgroundColorChange: {
-//         base: {
-//           transitionProperty: 'background-color',
-//           transitionDuration: '100ms',
-//           transitionDelay: '500ms',
-//           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-//         },
-//       },
-//       customFontColorChange: {
-//         base: {
-//           transitionProperty: 'color',
-//           transitionDuration: '100ms',
-//           transitionDelay: '500ms',
-//           transitionTimingFunction: '{{motions.motionTimingEaseOut}}',
-//         },
-//       },
-//     },
-//     stylePresets: {
-//       tabCustomPreset: {
-//         base: {
-//           backgroundColor: '{{colors.transparent}}',
-//         },
-//         hover: {
-//           backgroundColor: '{{colors.amber070}}',
-//           color: '{{colors.green040}}',
-//         },
-//       },
-//     },
-//   },
-// });
-
-export const StoryTabsTransitions = () => (
-  <>
-    <StorybookHeading>Tabs item with Transition Presets</StorybookHeading>
-    <StorybookSubHeading>Default Transition Preset</StorybookSubHeading>
-    <Tabs>
-      <Tab label="One transition preset">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Two transition presets">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>
-      Tab items with Transition Preset overrides
-    </StorybookSubHeading>
-    <Tabs>
-      <Tab
-        overrides={{
-          stylePreset: 'tabCustomPreset',
-          transitionPreset: 'customBackgroundColorChange',
-        }}
-        label="One transition preset"
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab
-        overrides={{
-          stylePreset: 'tabCustomPreset',
-          transitionPreset: [
-            'customBackgroundColorChange',
-            'customFontColorChange',
-          ],
-        }}
-        label="Two transition presets"
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>
-      Tab items with overrides using extend on transitionDuration
-    </StorybookSubHeading>
-    <Tabs>
-      <Tab
-        label="Using extend prop on one preset"
-        overrides={{
-          stylePreset: 'tabCustomPreset',
-          transitionPreset: {
-            extend: 'backgroundColorChange',
-            base: {
-              transitionDuration: '{{motions.motionDuration050}}',
-            },
-          },
-        }}
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab
-        label="Using extend prop on one preset"
-        overrides={{
-          stylePreset: 'tabCustomPreset',
-          transitionPreset: {
-            extend: 'backgroundColorChange',
-            base: {
-              transitionDuration: '{{motions.motionDuration050}}',
-            },
-          },
-        }}
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-    <StorybookSubHeading>
-      Tab items with overrides on two presets using extend
-    </StorybookSubHeading>
-    <Tabs>
-      <Tab
-        label="Using extend prop on two presets"
-        overrides={{
-          stylePreset: 'tabCustomPreset',
-          transitionPreset: [
-            {
-              extend: 'backgroundColorChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration030}}',
-              },
-            },
-            {
-              extend: 'customFontColorChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration050}}',
-              },
-            },
-          ],
-        }}
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab
-        label="Using extend prop on two presets"
-        overrides={{
-          stylePreset: 'tabCustomPreset',
-          transitionPreset: [
-            {
-              extend: 'backgroundColorChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration030}}',
-              },
-            },
-            {
-              extend: 'customFontColorChange',
-              base: {
-                transitionDuration: '{{motions.motionDuration050}}',
-              },
-            },
-          ],
-        }}
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryTabsTransitions.storyName = 'tabs-transitions';
+StoryTabsTransitions.storyName = 'Transitions';
 StoryTabsTransitions.parameters = {percy: {skip: true}};
 
 export const StoryTagLogicalProps = () => (
-  <>
-    <StorybookHeading>Tabs with Logical Props overrides</StorybookHeading>
+  <StorybookPage columns="auto" rowGap="space010">
+    <StorybookCase title="marginInline & marginBlock">
+      <Tabs
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+        }}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
 
-    <StorybookSubHeading>marginInline & marginBlock</StorybookSubHeading>
-    <Tabs
-      overrides={{
-        marginBlock: 'space060',
-        marginInline: 'space080',
-      }}
-    >
-      <Tab label="Content 1">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Content 2">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
+    <StorybookCase title="paddingInline & paddingBlock">
+      <Tabs
+        overrides={{
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
 
-    <br />
-
-    <StorybookSubHeading>paddingInline & paddingBlock</StorybookSubHeading>
-    <Tabs
-      overrides={{
-        paddingBlock: 'space060',
-        paddingInline: 'space080',
-      }}
-    >
-      <Tab label="Content 1">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="Content 2">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-
-    <br />
-    <StorybookSubHeading>
-      marginInline & marginBlock & paddingInline & paddingBlock
-    </StorybookSubHeading>
-    <Tabs
-      overrides={{
-        marginBlock: 'space060',
-        marginInline: 'space080',
-        paddingBlock: 'space060',
-        paddingInline: 'space080',
-      }}
-    >
-      <Tab label="<LoremIpsum textNumber={1} />">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label="<LoremIpsum textNumber={1} />">
-        <LoremIpsum textNumber={1} />
-      </Tab>
-    </Tabs>
-  </>
+    <StorybookCase title="marginInline & marginBlock & paddingInline & paddingBlock">
+      <Tabs
+        overrides={{
+          marginBlock: 'space060',
+          marginInline: 'space080',
+          paddingBlock: 'space060',
+          paddingInline: 'space080',
+        }}
+      >
+        <Tab label="Tab one">
+          <LoremIpsum textNumber={1} />
+        </Tab>
+        <Tab label="Tab two">
+          <LoremIpsum textNumber={2} />
+        </Tab>
+      </Tabs>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryTagLogicalProps.storyName = 'tabs-logical-props';
+StoryTagLogicalProps.storyName = 'Logical props';
 StoryTagLogicalProps.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
-export const StoryTabsOutlineOverride = () => (
-  <>
-    <StorybookHeading>Tabs Outline Overrides</StorybookHeading>
+export const StoryTabsStylingOverrides = () => {
+  const customColours = {
+    stylePreset: 'customOutlineBrand',
+  };
+  const customTypography = {
+    typographyPreset: 'editorialSubheadline010',
+  };
 
-    <StorybookSubHeading>Custom Color</StorybookSubHeading>
-    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
-      <Tab
-        label="H tab 1"
-        key="tab-1"
-        overrides={{stylePreset: 'customOutlineColor'}}
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label={titleCanHaveIcons} key="tab-2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="H tab 3, three" key="tab-3">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <Spacer />
+  return (
+    <StorybookPage columns="auto">
+      <StorybookCase title="Custom colours">
+        <Tabs distribution="start" divider initialSelectedIndex={10}>
+          <Tab label="Tab one" key="tab-1" overrides={customColours}>
+            <LoremIpsum textNumber={1} />
+          </Tab>
+          <Tab label="Tab two" key="tab-2" overrides={customColours}>
+            <LoremIpsum textNumber={2} />
+          </Tab>
+          <Tab label="Tab three" key="tab-3" overrides={customColours}>
+            <LoremIpsum textNumber={3} />
+          </Tab>
+        </Tabs>
+      </StorybookCase>
+      <StorybookCase title="Custom typography">
+        <Tabs distribution="start" divider initialSelectedIndex={10}>
+          <Tab label="Tab one" key="tab-1" overrides={customTypography}>
+            <LoremIpsum textNumber={1} />
+          </Tab>
+          <Tab label="Tab two" key="tab-2" overrides={customTypography}>
+            <LoremIpsum textNumber={2} />
+          </Tab>
+          <Tab label="Tab three" key="tab-3" overrides={customTypography}>
+            <LoremIpsum textNumber={3} />
+          </Tab>
+        </Tabs>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryTabsStylingOverrides.storyName = 'Styling overrides';
+StoryTabsStylingOverrides.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
 
-    <StorybookSubHeading>Custom Style</StorybookSubHeading>
-    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
-      <Tab
-        label="H tab 1"
-        key="tab-1"
-        overrides={{stylePreset: 'customOutlineStyle'}}
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label={titleCanHaveIcons} key="tab-2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="H tab 3, three" key="tab-3">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <Spacer />
+export const StoryTabsOverrides = () => {
+  const customOutline = {
+    stylePreset: 'customOutlineStyle',
+  };
+  const customOutlineWidthLogicalProps = {
+    maxWidth: '157px',
+  };
+  const customOutlineOffsetLogicalProps = {
+    paddingLeft: '48px',
+  };
 
-    <StorybookSubHeading>Custom Width</StorybookSubHeading>
-    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
-      <Tab
-        label="H tab 1"
-        key="tab-1"
-        overrides={{stylePreset: 'customOutlineWidth'}}
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label={titleCanHaveIcons} key="tab-2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="H tab 3, three" key="tab-3">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <Spacer />
+  return (
+    <StorybookPage columns="auto">
+      <StorybookCase title="Custom outline">
+        <Tabs distribution="start" divider initialSelectedIndex={10}>
+          <Tab label="Tab one" key="tab-1" overrides={customOutline}>
+            <LoremIpsum textNumber={1} />
+          </Tab>
+          <Tab label="Tab two" key="tab-2" overrides={customOutline}>
+            <LoremIpsum textNumber={2} />
+          </Tab>
+          <Tab label="Tab three" key="tab-3" overrides={customOutline}>
+            <LoremIpsum textNumber={3} />
+          </Tab>
+        </Tabs>
+      </StorybookCase>
+      <StorybookCase title="Custom width">
+        <FixedWidthBlock>
+          <Tabs
+            distribution="start"
+            divider
+            initialSelectedIndex={10}
+            overrides={{tab: {spaceInline: 'space020'}}}
+          >
+            <Tab label="Tab one" key="tab-1">
+              <LoremIpsum textNumber={1} />
+            </Tab>
+            <Tab
+              label="Tab two"
+              key="tab-2"
+              overrides={{
+                stylePreset: 'customOutlineWidth',
+                ...customOutlineWidthLogicalProps,
+              }}
+            >
+              <LoremIpsum textNumber={2} />
+            </Tab>
+            <Tab label="Tab three" key="tab-3">
+              <LoremIpsum textNumber={3} />
+            </Tab>
+          </Tabs>
+        </FixedWidthBlock>
+      </StorybookCase>
 
-    <StorybookSubHeading>Custom Offset</StorybookSubHeading>
-    <Tabs size="small" distribution="start" divider initialSelectedIndex={10}>
-      <Tab
-        label="H tab 1"
-        key="tab-1"
-        overrides={{stylePreset: 'customOutlineOffset'}}
-      >
-        <LoremIpsum textNumber={1} />
-      </Tab>
-      <Tab label={titleCanHaveIcons} key="tab-2">
-        <LoremIpsum textNumber={2} />
-      </Tab>
-      <Tab label="H tab 3, three" key="tab-3">
-        <LoremIpsum textNumber={3} />
-      </Tab>
-    </Tabs>
-    <Spacer />
-  </>
-);
-StoryTabsOutlineOverride.storyName = 'tabs-outline-overrides';
-StoryTabsOutlineOverride.parameters = {
+      <StorybookCase title="Custom offset">
+        <Tabs
+          distribution="start"
+          divider
+          initialSelectedIndex={10}
+          overrides={{
+            paddingInline: 'space080',
+          }}
+        >
+          <Tab
+            label="Tab one"
+            key="tab-1"
+            overrides={{
+              stylePreset: 'customOutlineOffset',
+              ...customOutlineOffsetLogicalProps,
+            }}
+          >
+            <LoremIpsum textNumber={1} />
+          </Tab>
+          <Tab label="Tab two" key="tab-2">
+            <LoremIpsum textNumber={2} />
+          </Tab>
+          <Tab label="Tab three" key="tab-3">
+            <LoremIpsum textNumber={3} />
+          </Tab>
+        </Tabs>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryTabsOverrides.storyName = 'Overrides';
+StoryTabsOverrides.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
 export default {
-  title: 'Components/tabs',
+  title: 'Components/Tabs',
+  parameters: {
+    nkDocs: {
+      title: 'Tabs',
+      url: 'https://newskit.co.uk/components/tabs',
+      description:
+        'Tabs let users switch between views within the same context.',
+    },
+  },
   component: () => 'None',
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           tabsCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
