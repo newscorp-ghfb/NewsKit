@@ -38,9 +38,17 @@ const useGetOverrides = <TCO extends ComponentOverrides>(
   };
 };
 
-export const CardComposable = ({children, ...props}: CardComposableProps) => {
-  const {areas} = props;
+const defaultAreas = `
+            media
+            content
+            actions
+          `;
 
+export const CardComposable = ({
+  children,
+  areas = defaultAreas,
+  ...props
+}: CardComposableProps) => {
   const overrides = useGetOverrides<CardComposableProps>(
     props,
     'cardComposable',
@@ -48,7 +56,7 @@ export const CardComposable = ({children, ...props}: CardComposableProps) => {
 
   return (
     <CardContext.Provider value={{useAreas: Boolean(areas)}}>
-      <StyledCard {...props} overrides={overrides}>
+      <StyledCard areas={areas} {...props} overrides={overrides}>
         {children}
       </StyledCard>
     </CardContext.Provider>
@@ -67,7 +75,11 @@ export const CardMedia = ({media, children, ...props}: CardMediaProps) => {
 export const CardContent = (props: CardContentProps) => {
   const {useAreas} = useCardContext();
   return (
-    <StyledContent areaName={useAreas ? 'content' : undefined} {...props} />
+    <StyledContent
+      areaName={useAreas ? 'content' : undefined}
+      justifyItems="start"
+      {...props}
+    />
   );
 };
 

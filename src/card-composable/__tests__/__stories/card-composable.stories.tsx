@@ -1,6 +1,5 @@
 import React from 'react';
-import {Story as StoryType} from '@storybook/react/dist/ts3.9/client/preview/types-6-0';
-import styled from '@emotion/styled';
+import {Story as StoryType} from '@storybook/react';
 import {
   CardComposable,
   CardActions,
@@ -9,77 +8,60 @@ import {
   CardMedia,
 } from '../../card-composable';
 import {Headline, HeadlineProps} from '../../../headline';
-import {Paragraph} from '../../../typography';
-import {Tag} from '../../../tag';
 import {CreateThemeArgs, ThemeProvider} from '../../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
 import {Flag} from '../../../flag';
-import {
-  StorybookCase,
-  StorybookPage,
-  StorybookSubHeading,
-} from '../../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../../test/storybook-comps';
 import {Button} from '../../../button';
-import {Cell} from '../../../grid/cell';
-import {Grid} from '../../../grid';
 import {UnorderedList} from '../../../unordered-list';
-import {getStylePresetFromTheme} from '../../../utils';
-import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 import {TextBlock, TextBlockProps} from '../../../text-block';
 import {GridLayout} from '../../../grid-layout';
+import {Divider} from '../../../divider';
+import {Block} from '../../../block';
+import {IconFilledCheckCircle} from '../../../icons';
+import {LinkInline} from '../../../link';
+import {defaultFocusVisible} from '../../../utils/default-focus-visible';
+import {Tag} from '../../../tag';
 
-const cardHref = '/card-link';
+// const cardHref = '/card-link';
 
-export const CardComposableExample = () => (
-  <CardComposable
-    overrides={{
-      maxWidth: {xl: '600px', md: '420px'},
-      stylePreset: 'cardComposable',
-    }}
-    rowGap="space040"
-    columns={{xs: '200px 1fr', md: '1fr'}}
-    areas={{
-      xs: `
-        media content
-        media actions
-      `,
-      md: `
-        media
-        content
-        actions
-      `,
-    }}
-  >
-    <CardContent
-      rowGap="space040"
-      overrides={{paddingInline: 'space040', paddingBlockStart: 'space040'}}
-    >
-      <CardLink href={cardHref} expand>
-        <Headline kickerText="KICKER">Title of the card</Headline>
-      </CardLink>
-      <Paragraph>Some kind of intro</Paragraph>
-    </CardContent>
+// export const CardComposableExample = () => (
+//   <CardComposable
+//     overrides={{
+//       maxWidth: {xl: '600px', md: '420px'},
+//       stylePreset: 'cardComposable',
+//     }}
+//     rowGap="space040"
+//     columns={{xs: '200px 1fr', md: '1fr'}}
+//     areas={{
+//       xs: `
+//         media content
+//         media actions
+//       `,
+//       md: `
+//         media
+//         content
+//         actions
+//       `,
+//     }}
+//   >
+//     <CardContent
+//       rowGap="space040"
+//       overrides={{paddingInline: 'space040', paddingBlockStart: 'space040'}}
+//     >
+//       <CardLink href={cardHref} expand>
+//         <Headline kickerText="KICKER">Title of the card</Headline>
+//       </CardLink>
+//       <Paragraph>Some kind of intro</Paragraph>
+//     </CardContent>
 
-    <CardMedia media={{src: '/placeholder-3x2.png'}} />
+//     <CardMedia media={{src: '/placeholder-3x2.png'}} />
 
-    <CardActions>
-      <Tag href="/news">News</Tag>
-    </CardActions>
-  </CardComposable>
-);
-
-const StorybookGridCase = ({
-  children,
-  title,
-}: {
-  children: React.ReactNode;
-  title: string;
-}) => (
-  <Cell xs={12} sm={6}>
-    <StorybookSubHeading>{title}</StorybookSubHeading>
-    {children}
-  </Cell>
-);
+//     <CardActions>
+//       <Tag href="/news">News</Tag>
+//     </CardActions>
+//   </CardComposable>
+// );
 
 const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
   <Headline
@@ -91,19 +73,10 @@ const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
 );
 
 const P = ({...props}: Omit<TextBlockProps, 'children'>) => (
-  // Probably we shoud use TextBlok here, since P does not have text-crop
   <TextBlock as="p" typographyPreset="editorialParagraph020" {...props}>
     Short paragraph description of the article, outlining main story and focus.
   </TextBlock>
 );
-
-// Style presets (Taken from style-presets.ts;)
-const labelDefault = {
-  base: {
-    color: '{{colors.inkSubtle}}',
-    iconColor: '{{colors.inkSubtle}}',
-  },
-};
 
 const cardCustomThemeObject: CreateThemeArgs = {
   name: 'card-custom-theme',
@@ -126,11 +99,13 @@ const cardCustomThemeObject: CreateThemeArgs = {
       firstSplitBarCustom: {
         base: {
           backgroundColor: '{{colors.interactivePrimary010}}',
+          textAlign: 'center',
         },
       },
       secondSplitBarCustom: {
         base: {
           backgroundColor: '{{colors.interactivePrimary020}}',
+          textAlign: 'center',
         },
       },
       tagCustom: {
@@ -167,12 +142,6 @@ const cardCustomThemeObject: CreateThemeArgs = {
           textDecoration: 'underline',
         },
       },
-      cardLabel: labelDefault,
-      cardTeaserLead: {
-        base: {
-          color: '{{colors.inkBase}}',
-        },
-      },
       // mocked card Containers
       cardContainerMock: {
         base: {
@@ -188,6 +157,23 @@ const cardCustomThemeObject: CreateThemeArgs = {
         active: {
           backgroundColor: '{{colors.blue060}}',
           boxShadow: '{{shadows.shadow050}}',
+        },
+      },
+      cardBook: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.purple020}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          boxShadow: '{{shadows.shadow030}}',
+          borderRadius: '{{borders.borderRadiusRounded030}}',
+        },
+      },
+      cardBookActions: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.purple020}}',
+          borderWidth:
+            '{{borders.borderWidth010}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
         },
       },
       cardContentSeparateColor: {
@@ -305,24 +291,13 @@ const cardCustomDarkThemeObject: CreateThemeArgs = {
   },
 };
 
-const storyAreasDesktop = `story1 story2
-                           story3  story4`;
-
 const areasGap = 'space050';
 const contentGap = 'space040';
 
 export const StoryDefault = () => (
-  <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
-    <CardComposable
-      overrides={{maxWidth: '372px'}}
-      rowGap={areasGap}
-      areas={`
-        media
-        content
-        actions
-      `}
-    >
-      <CardContent justifyItems="start" rowGap={contentGap}>
+  <StorybookPage>
+    <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
+      <CardContent rowGap={contentGap}>
         <Flag>Flag</Flag>
         <H />
         <P />
@@ -339,7 +314,7 @@ export const StoryDefault = () => (
 StoryDefault.storyName = 'Default';
 
 export const StoryCardAreas = () => (
-  <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
+  <StorybookPage>
     <StorybookCase title="Card Content">
       <CardComposable
         overrides={{maxWidth: '372px'}}
@@ -347,18 +322,20 @@ export const StoryCardAreas = () => (
           content
         `}
       >
-        <CardContent justifyItems="start" rowGap={contentGap}>
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
           <P />
         </CardContent>
       </CardComposable>
     </StorybookCase>
+
     <StorybookCase title="CardMedia">
       <CardComposable overrides={{maxWidth: '372px'}}>
         <CardMedia media={{src: '/placeholder-3x2.png'}} />
       </CardComposable>
     </StorybookCase>
+
     <StorybookCase title="CardActions">
       <CardComposable overrides={{maxWidth: '372px'}}>
         <CardActions>
@@ -366,19 +343,11 @@ export const StoryCardAreas = () => (
         </CardActions>
       </CardComposable>
     </StorybookCase>
-    <StorybookCase title="CardLink applied to headline in CardContent area">
-      <CardComposable
-        overrides={{maxWidth: '372px'}}
-        rowGap={areasGap}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardMedia media={{src: '/placeholder-3x2.png'}} />
 
-        <CardContent justifyItems="start" rowGap={contentGap}>
+    <StorybookCase title="CardLink applied to headline in CardContent area">
+      <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <CardLink href={window.location.href}>
             <H
@@ -401,7 +370,7 @@ export const StoryCardAreas = () => (
 StoryCardAreas.storyName = 'Card areas';
 
 export const StoryVariations = () => (
-  <StorybookPage columns={{md: 'auto'}} areas={{md: storyAreasDesktop}}>
+  <StorybookPage>
     <StorybookCase title="CardLink and CardMedia">
       <CardComposable
         overrides={{maxWidth: '372px'}}
@@ -425,16 +394,10 @@ export const StoryVariations = () => (
           maxWidth: '372px',
           stylePreset: 'cardContentSeparateColor',
         }}
-        areas={`
-          media
-          content
-          actions
-        `}
         rowGap={areasGap}
       >
         <CardContent
           rowGap={contentGap}
-          justifyItems="start"
           overrides={{
             paddingInline: 'space040',
           }}
@@ -456,17 +419,9 @@ export const StoryVariations = () => (
       </CardComposable>
     </StorybookCase>
     <StorybookCase title="Button in CardActions area">
-      <CardComposable
-        rowGap={areasGap}
-        overrides={{maxWidth: '372px'}}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
+      <CardComposable rowGap={areasGap} overrides={{maxWidth: '372px'}}>
         <CardMedia media={{src: '/placeholder-3x2.png'}} />
-        <CardContent justifyItems="start" rowGap={contentGap}>
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
           <P />
@@ -477,17 +432,9 @@ export const StoryVariations = () => (
       </CardComposable>
     </StorybookCase>
     <StorybookCase title="Multiple in CardActions">
-      <CardComposable
-        overrides={{maxWidth: '372px'}}
-        rowGap={areasGap}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
+      <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
         <CardMedia media={{src: '/placeholder-3x2.png'}} />
-        <CardContent justifyItems="start" rowGap={contentGap}>
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
           <P />
@@ -515,19 +462,11 @@ export const StoryVariations = () => (
       </CardComposable>
     </StorybookCase>
     <StorybookCase title="Alternative images aspect ratio">
-      <CardComposable
-        overrides={{maxWidth: '372px'}}
-        rowGap={areasGap}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
+      <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
         <CardMedia
           media={{src: '/placeholder-4x5.png', loadingAspectRatio: '4:5'}}
         />
-        <CardContent justifyItems="start" rowGap={contentGap}>
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
           <P />
@@ -542,7 +481,7 @@ export const StoryVariations = () => (
 StoryVariations.storyName = 'Variations';
 
 export const StoryInsetCard = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage>
     <StorybookCase title="Card Inset">
       <CardComposable
         rowGap={areasGap}
@@ -550,15 +489,9 @@ export const StoryInsetCard = () => (
           maxWidth: '372px',
           stylePreset: 'cardInset',
         }}
-        areas={`
-          media
-          content
-          actions
-        `}
       >
         <CardMedia media={{src: '/placeholder-3x2.png'}} />
         <CardContent
-          justifyItems="start"
           rowGap={contentGap}
           overrides={{
             paddingInline: 'space040',
@@ -580,7 +513,7 @@ export const StoryInsetCard = () => (
 StoryInsetCard.storyName = 'Inset card';
 
 export const StoryLayout = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage>
     <StorybookCase title="Horizontal">
       <CardComposable
         overrides={{
@@ -595,7 +528,7 @@ export const StoryLayout = () => (
         `}
       >
         <CardMedia media={{src: '/placeholder-3x2.png'}} />
-        <CardContent rowGap={contentGap} justifyItems="start">
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
           <P />
@@ -619,7 +552,7 @@ export const StoryLayout = () => (
         `}
       >
         <CardMedia media={{src: '/placeholder-3x2.png'}} />
-        <CardContent rowGap={contentGap} justifyItems="start">
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
           <P />
@@ -633,20 +566,6 @@ export const StoryLayout = () => (
 );
 StoryLayout.storyName = 'Layout';
 
-const Container = styled.div`
-  display: grid;
-  gap: 2rem;
-`;
-
-const SplitCardBar = styled.div<{
-  stylePreset: string;
-}>`
-  ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 const SplitBars = ({
   columns,
   maxWidth,
@@ -658,27 +577,20 @@ const SplitBars = ({
 
   return (
     <GridLayout columns={columns} columnGap={areasGap} overrides={{maxWidth}}>
-      <SplitCardBar stylePreset="firstSplitBarCustom">
-        <Paragraph
-          overrides={{
-            typographyPreset: 'editorialParagraph020',
-            paddingBlock: 'space020',
-          }}
-        >
-          {first}
-        </Paragraph>
-      </SplitCardBar>
-
-      <SplitCardBar stylePreset="secondSplitBarCustom">
-        <Paragraph
-          overrides={{
-            typographyPreset: 'editorialParagraph020',
-            paddingBlock: 'space020',
-          }}
-        >
-          {second}
-        </Paragraph>
-      </SplitCardBar>
+      <TextBlock
+        typographyPreset="editorialParagraph020"
+        paddingBlock="space020"
+        stylePreset="firstSplitBarCustom"
+      >
+        {first}
+      </TextBlock>
+      <TextBlock
+        typographyPreset="editorialParagraph020"
+        paddingBlock="space020"
+        stylePreset="secondSplitBarCustom"
+      >
+        {second}
+      </TextBlock>
     </GridLayout>
   );
 };
@@ -701,7 +613,7 @@ const SplitCard = ({columns}: {columns: string}) => {
           media actions
         `}
       >
-        <CardContent justifyItems="start" rowGap={contentGap}>
+        <CardContent rowGap={contentGap}>
           <H />
           <P />
         </CardContent>
@@ -716,25 +628,21 @@ const SplitCard = ({columns}: {columns: string}) => {
 
 export const StorySpan = () => (
   <StorybookPage columns={{md: 'auto'}}>
-    <StorybookPage columns={{md: 'auto'}}>
-      <Container>
-        <StorybookCase title="1:1 horizontal ratio">
-          <SplitCard columns="1fr 1fr" />
-        </StorybookCase>
-        <StorybookCase title="1:2 horizontal ratio">
-          <SplitCard columns="1fr 2fr" />
-        </StorybookCase>
-        <StorybookCase title="2:1 horizontal ratio">
-          <SplitCard columns="2fr 1fr" />
-        </StorybookCase>
-      </Container>
-    </StorybookPage>
+    <StorybookCase title="1:1 horizontal ratio">
+      <SplitCard columns="1fr 1fr" />
+    </StorybookCase>
+    <StorybookCase title="1:2 horizontal ratio">
+      <SplitCard columns="1fr 2fr" />
+    </StorybookCase>
+    <StorybookCase title="2:1 horizontal ratio">
+      <SplitCard columns="2fr 1fr" />
+    </StorybookCase>
   </StorybookPage>
 );
 StorySpan.storyName = 'Span';
 
 export const StoryOrder = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage>
     <StorybookCase title="CardContent and heading first">
       <CardComposable
         overrides={{maxWidth: '250px'}}
@@ -745,7 +653,7 @@ export const StoryOrder = () => (
           actions
         `}
       >
-        <CardContent justifyItems="start" rowGap={contentGap}>
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
           <P />
@@ -763,7 +671,7 @@ export const StoryOrder = () => (
 StoryOrder.storyName = 'Order';
 
 export const StoryResponsiveCard = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage>
     <StorybookCase title="Different layouts/font sizes for different breakpoints">
       <CardComposable
         overrides={{
@@ -784,7 +692,7 @@ export const StoryResponsiveCard = () => (
           `,
         }}
       >
-        <CardContent justifyItems="start" rowGap={contentGap}>
+        <CardContent rowGap={contentGap}>
           <H />
           <P />
           <UnorderedList
@@ -814,18 +722,10 @@ export const StoryResponsiveCard = () => (
 StoryResponsiveCard.storyName = 'Responsive card';
 
 export const StoryOnClick = () => (
-  <StorybookPage columns={{md: 'auto'}}>
+  <StorybookPage>
     <StorybookCase title="onClick handler on Tag">
-      <CardComposable
-        overrides={{maxWidth: '250px'}}
-        rowGap={areasGap}
-        areas={`
-          media
-          content
-          actions
-        `}
-      >
-        <CardContent justifyItems="start" rowGap={contentGap}>
+      <CardComposable overrides={{maxWidth: '250px'}} rowGap={areasGap}>
+        <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H />
           <P />
@@ -843,218 +743,286 @@ export const StoryOnClick = () => (
 StoryOnClick.storyName = 'On click';
 
 export const StoryLogicalProps = () => (
-  <StorybookPage columns={{md: 'auto'}}>
-    <Grid>
-      <StorybookGridCase title="Margin overrides">
-        <CardComposable
-          overrides={{
-            marginInline: 'space060',
-          }}
-          rowGap={areasGap}
-          areas={`
-            media
-            content
-            actions
-          `}
+  <StorybookPage>
+    <StorybookCase title="Margin overrides">
+      <CardComposable
+        overrides={{
+          marginInline: 'space060',
+        }}
+        rowGap={areasGap}
+      >
+        <CardContent rowGap={contentGap}>
+          <Flag>Flag</Flag>
+          <H />
+          <P />
+        </CardContent>
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardActions>
+          <Tag href="http://example.com" size="medium">
+            Tag
+          </Tag>
+        </CardActions>
+      </CardComposable>
+    </StorybookCase>
+    <StorybookCase title="Padding overrides">
+      <CardComposable
+        overrides={{
+          maxWidth: '250px',
+          stylePreset: 'cardInset',
+          paddingBlock: 'space060',
+          paddingInline: 'space060',
+        }}
+        rowGap={areasGap}
+      >
+        <CardContent rowGap={contentGap}>
+          <Flag>Flag</Flag>
+          <H />
+          <P />
+        </CardContent>
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardActions>
+          <Tag href="http://example.com" size="medium">
+            Tag
+          </Tag>
+        </CardActions>
+      </CardComposable>
+    </StorybookCase>
+    <StorybookCase title="Padding overrides CardContent area">
+      <CardComposable overrides={{maxWidth: '250px'}} rowGap={areasGap}>
+        <CardContent
+          rowGap={contentGap}
+          overrides={{paddingBlock: 'space040', paddingInline: 'space030'}}
         >
-          <CardContent justifyItems="start" rowGap={contentGap}>
-            <Flag>Flag</Flag>
-            <H />
-            <P />
-          </CardContent>
-          <CardMedia media={{src: '/placeholder-3x2.png'}} />
-          <CardActions>
-            <Tag href="http://example.com" size="medium">
-              Tag
-            </Tag>
-          </CardActions>
-        </CardComposable>
-      </StorybookGridCase>
-      <StorybookGridCase title="Padding overrides">
-        <CardComposable
-          overrides={{
-            maxWidth: '250px',
-            stylePreset: 'cardInset',
-            paddingBlock: 'space060',
-
-            paddingInline: 'space060',
-          }}
-          rowGap={areasGap}
-          areas={`
-            media
-            content
-            actions
-          `}
-        >
-          <CardContent justifyItems="start" rowGap={contentGap}>
-            <Flag>Flag</Flag>
-            <H />
-            <P />
-          </CardContent>
-          <CardMedia media={{src: '/placeholder-3x2.png'}} />
-          <CardActions>
-            <Tag href="http://example.com" size="medium">
-              Tag
-            </Tag>
-          </CardActions>
-        </CardComposable>
-      </StorybookGridCase>
-      <StorybookGridCase title="Padding overrides CardContent area">
-        <CardComposable
-          overrides={{maxWidth: '250px'}}
-          rowGap={areasGap}
-          areas={`
-            media
-            content
-            actions
-          `}
-        >
-          <CardContent
-            justifyItems="start"
-            rowGap={contentGap}
-            overrides={{paddingBlock: 'space040', paddingInline: 'space030'}}
-          >
-            <Flag>Flag</Flag>
-            <H />
-            <P />
-          </CardContent>
-          <CardMedia media={{src: '/placeholder-3x2.png'}} />
-          <CardActions>
-            <Tag href="http://example.com" size="medium">
-              Tag
-            </Tag>
-          </CardActions>
-        </CardComposable>
-      </StorybookGridCase>
-    </Grid>
+          <Flag>Flag</Flag>
+          <H />
+          <P />
+        </CardContent>
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardActions>
+          <Tag href="http://example.com" size="medium">
+            Tag
+          </Tag>
+        </CardActions>
+      </CardComposable>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryLogicalProps.storyName = 'Logical props';
 
 export const StoryOverrides = () => (
-  <StorybookPage columns={{md: 'auto'}}>
-    <Grid>
-      <StorybookGridCase title="Style preset - card and flag colours">
-        <CardComposable
-          overrides={{
-            maxWidth: '372px',
-            stylePreset: 'cardContainerWithHover',
-          }}
-          rowGap={areasGap}
+  <StorybookPage>
+    <StorybookCase title="Style preset - card and flag colours">
+      <CardComposable
+        overrides={{
+          maxWidth: '372px',
+          stylePreset: 'cardContainerWithHover',
+        }}
+        rowGap={areasGap}
+      >
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardContent
+          overrides={{paddingInline: 'space040'}}
+          rowGap={contentGap}
         >
-          <CardMedia media={{src: '/placeholder-3x2.png'}} />
-          <CardContent
-            overrides={{paddingInline: 'space040'}}
-            justifyItems="start"
-            rowGap={contentGap}
-          >
-            <Flag overrides={{stylePreset: 'flagCustom'}}>Flag</Flag>
+          <Flag>Flag</Flag>
 
-            {/* Unfortunately in NewsKit there is not a way for parent hover to trigger the children one
+          {/* Unfortunately in NewsKit there is not a way for parent hover to trigger the children one
             the easiest way to do that is using CSS currentColor */}
-            <H
-              overrides={{
-                heading: {stylePreset: 'headlineWithHoverFromParent'},
-              }}
-            />
-            <P />
-          </CardContent>
-          {/* CardActions might be better to be a Grid instead of Block so all sub-components are consistent? */}
-          <CardActions
-            overrides={{paddingBlockEnd: 'space040', paddingInline: 'space040'}}
-          >
-            <Tag href="http://example.com" size="medium">
-              Tag
-            </Tag>
-          </CardActions>
-        </CardComposable>
-      </StorybookGridCase>
-      <StorybookGridCase title="Style preset - headline, paragraph, card actions and tag colours">
-        <CardComposable
-          overrides={{
-            maxWidth: '372px',
-            stylePreset: 'cardContainerMockNoHover',
-          }}
-          rowGap={areasGap}
-          areas={`
-            media
-            content
-            actions
-          `}
-        >
-          <CardMedia media={{src: '/placeholder-3x2.png'}} />
-          <CardContent
-            overrides={{paddingInline: 'space040'}}
-            justifyItems="start"
-            rowGap={contentGap}
-          >
-            <Flag
-              overrides={{
-                stylePreset: 'flagCustom2',
-              }}
-            >
-              Flag
-            </Flag>
-            <H
-              overrides={{
-                heading: {stylePreset: 'headlineCustom'},
-              }}
-            />
-            <P stylePreset="cardContainerActionsMock" />
-          </CardContent>
-          <CardActions
+          <H
             overrides={{
-              paddingInline: 'space040',
-              stylePreset: 'cardContainerActionsMock',
+              heading: {
+                stylePreset: 'headlineWithHoverFromParent',
+              },
             }}
-          >
-            <Tag
-              href="http://example.com"
-              size="medium"
-              overrides={{stylePreset: 'tagCustom'}}
-            >
-              Tag
-            </Tag>
-          </CardActions>
-        </CardComposable>
-      </StorybookGridCase>
-      <StorybookGridCase title="Typography preset - Headline">
-        <CardComposable
-          overrides={{maxWidth: '372px'}}
-          areas={`
-            media
-            content
-            actions
-          `}
-          rowGap={areasGap}
+          />
+          <P />
+        </CardContent>
+        {/* CardActions might be better to be a Grid instead of Block so all sub-components are consistent? */}
+        <CardActions
+          overrides={{paddingBlockEnd: 'space040', paddingInline: 'space040'}}
         >
-          <CardContent rowGap={contentGap} justifyItems="start">
-            <Flag>Flag</Flag>
-            <H
-              overrides={{
-                typographyPreset: 'editorialHeadline070',
-              }}
-            />
-            <P />
-          </CardContent>
-          <CardMedia media={{src: '/placeholder-3x2.png'}} />
-          <CardActions>
-            <Tag href="http://example.com" size="medium">
-              Tag
-            </Tag>
-          </CardActions>
-        </CardComposable>
-      </StorybookGridCase>
-    </Grid>
+          <Tag href="http://example.com" size="medium">
+            Tag
+          </Tag>
+        </CardActions>
+      </CardComposable>
+    </StorybookCase>
+
+    <StorybookCase title="Style preset - headline, paragraph, card actions and tag colours">
+      <CardComposable
+        overrides={{
+          maxWidth: '372px',
+          stylePreset: 'cardContainerMockNoHover',
+        }}
+        rowGap={areasGap}
+      >
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardContent
+          overrides={{paddingInline: 'space040'}}
+          rowGap={contentGap}
+        >
+          <Flag>Flag</Flag>
+          <H
+            overrides={{
+              heading: {
+                // stylePreset: 'headlineCustom'
+                stylePreset: 'inkBrand010',
+              },
+            }}
+          />
+          <P stylePreset="cardContainerActionsMock" />
+        </CardContent>
+        <CardActions
+          overrides={{
+            paddingInline: 'space040',
+            stylePreset: 'cardContainerActionsMock',
+          }}
+        >
+          <Tag
+            href="http://example.com"
+            size="medium"
+            overrides={
+              {
+                // stylePreset: 'tagCustom'
+              }
+            }
+          >
+            Tag
+          </Tag>
+        </CardActions>
+      </CardComposable>
+    </StorybookCase>
+    <StorybookCase title="Typography preset - Headline">
+      <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
+        <CardContent rowGap={contentGap}>
+          <Flag>Flag</Flag>
+          <H
+            overrides={{
+              typographyPreset: 'editorialHeadline070',
+            }}
+          />
+          <P />
+        </CardContent>
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardActions>
+          <Tag href="http://example.com" size="medium">
+            Tag
+          </Tag>
+        </CardActions>
+      </CardComposable>
+    </StorybookCase>
   </StorybookPage>
 );
-StoryOverrides.storyName = 'Overrides';
+StoryOverrides.storyName = 'Styling overrides';
+
+// https://www.linkedin.com/search/results/content/?keywords=design&origin=FACETED_SEARCH&postedBy=%5B%22first%22%2C%22following%22%5D&sid=xxV&sortBy=%22relevance%22
+export const ComplexStory = () => (
+  <StorybookPage>
+    <StorybookCase title="Style preset - card and flag colours">
+      <CardComposable
+        overrides={{maxWidth: '250px', stylePreset: 'cardBook'}}
+        style={{overflow: 'hidden'}}
+      >
+        <CardMedia media={{src: '/placeholder-3x2.png'}} />
+        <CardContent
+          rowGap="space020"
+          overrides={{paddingBlock: 'space030', paddingInline: 'space030'}}
+        >
+          <TextBlock
+            typographyPreset="editorialHeadline010"
+            marginBlockEnd="space010"
+          >
+            Mountain retreat
+          </TextBlock>
+          <TextBlock typographyPreset="utilityBody020">
+            Snowy Peaks, Austria
+          </TextBlock>
+
+          <GridLayout
+            columns="auto auto auto auto auto 1fr"
+            alignItems="center"
+          >
+            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
+            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
+            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
+            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
+            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
+
+            <TextBlock
+              typographyPreset="utilityBody020"
+              marginInlineStart="space020"
+            >
+              5.0 (<LinkInline href="/">38 reviews</LinkInline>)
+            </TextBlock>
+          </GridLayout>
+
+          <Divider overrides={{marginBlockStart: 'space010'}} />
+
+          <GridLayout
+            columns="auto auto auto auto"
+            justifyContent="space-between"
+            overrides={{width: '100%'}}
+          >
+            <Block>
+              <IconFilledCheckCircle overrides={{size: 'iconSize040'}} />
+              <TextBlock typographyPreset="utilityBody010">Feat 1</TextBlock>
+            </Block>
+            <Block>
+              <IconFilledCheckCircle overrides={{size: 'iconSize040'}} />
+              <TextBlock typographyPreset="utilityBody010">Feat 1</TextBlock>
+            </Block>
+            <Block>
+              <IconFilledCheckCircle overrides={{size: 'iconSize040'}} />
+              <TextBlock typographyPreset="utilityBody010">Feat 1</TextBlock>
+            </Block>
+            <Block>
+              <IconFilledCheckCircle overrides={{size: 'iconSize040'}} />
+              <TextBlock typographyPreset="utilityBody010">Feat 1</TextBlock>
+            </Block>
+          </GridLayout>
+          <Divider overrides={{marginBlockEnd: 'space010'}} />
+          <TextBlock typographyPreset="utilityBody020">
+            Featuring free WiFi, Palacio de Rojas is located 350 m from the
+            Lonja Silk Exchange and Valencia’s Central Market. It offers
+            air-conditioned apartments with city views. Private parking is
+            offered upon request.
+          </TextBlock>
+        </CardContent>
+        <CardActions
+          columns="auto auto"
+          alignItems="center"
+          justifyContent="space-between"
+          overrides={{
+            stylePreset: 'cardBookActions',
+            paddingBlock: 'space030',
+            paddingInline: 'space030',
+          }}
+        >
+          <Button size="small">Book now</Button>
+          <Block>
+            <TextBlock as="span" typographyPreset="utilitySubheading040">
+              $299
+            </TextBlock>
+            <TextBlock as="span" typographyPreset="utilityBody020">
+              /night
+            </TextBlock>
+          </Block>
+        </CardActions>
+      </CardComposable>
+    </StorybookCase>
+  </StorybookPage>
+);
+
+ComplexStory.storyName = 'Other story';
 
 export default {
   title: 'Components/CardComposable',
   component: () => 'None',
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => {
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => {
       const backgroundValue = context?.globals?.backgrounds?.value;
       return (
         <ThemeProvider
@@ -1063,6 +1031,7 @@ export default {
             !backgroundValue || backgroundValue === '#ffffff'
               ? cardCustomThemeObject
               : cardCustomDarkThemeObject,
+            context?.name,
           )}
         >
           <Story />

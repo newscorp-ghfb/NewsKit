@@ -1,8 +1,4 @@
-import {
-  getStylePreset,
-  getTransitionPresetFromTheme,
-  styled,
-} from '../utils/style';
+import {getStylePreset, getTransitionPreset, styled} from '../utils/style';
 
 import {GridLayout} from '../grid-layout/grid-layout';
 import {CardLinkProps, StylableGridLayout} from './types';
@@ -13,13 +9,12 @@ type StyledGridLayoutProps = StylableGridLayout & {
 
 const StyledGrid = styled(GridLayout)<StyledGridLayoutProps>`
   ${getStylePreset('', '')};
+  ${getTransitionPreset('', '')};
   ${({areaName}) => areaName && `grid-area: ${areaName};`}
 `;
 
 export const StyledCard = styled(StyledGrid)`
   position: relative;
-  // TODO: move to defaults
-  ${getTransitionPresetFromTheme('backgroundColorChange')}
 `;
 
 export const StyledMedia = styled(StyledGrid)``;
