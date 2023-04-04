@@ -29,46 +29,8 @@ import {
 import {LinkInline} from '../../../link';
 import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 import {Tag} from '../../../tag';
-
-// const cardHref = '/card-link';
-
-// export const CardComposableExample = () => (
-//   <CardComposable
-//     overrides={{
-//       maxWidth: {xl: '600px', md: '420px'},
-//       stylePreset: 'cardComposable',
-//     }}
-//     rowGap="space040"
-//     columns={{xs: '200px 1fr', md: '1fr'}}
-//     areas={{
-//       xs: `
-//         media content
-//         media actions
-//       `,
-//       md: `
-//         media
-//         content
-//         actions
-//       `,
-//     }}
-//   >
-//     <CardContent
-//       rowGap="space040"
-//       overrides={{paddingInline: 'space040', paddingBlockStart: 'space040'}}
-//     >
-//       <CardLink href={cardHref} expand>
-//         <Headline kickerText="KICKER">Title of the card</Headline>
-//       </CardLink>
-//       <Paragraph>Some kind of intro</Paragraph>
-//     </CardContent>
-
-//     <CardMedia media={{src: '/placeholder-3x2.png'}} />
-
-//     <CardActions>
-//       <Tag href="/news">News</Tag>
-//     </CardActions>
-//   </CardComposable>
-// );
+import {VideoPlayer} from '../../../video-player';
+import {DEFATULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/config';
 
 const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
   <Headline
@@ -80,7 +42,12 @@ const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
 );
 
 const P = ({...props}: Omit<TextBlockProps, 'children'>) => (
-  <TextBlock as="p" typographyPreset="editorialParagraph020" {...props}>
+  <TextBlock
+    as="p"
+    typographyPreset="editorialParagraph020"
+    stylePreset="inkBase"
+    {...props}
+  >
     Short paragraph description of the article, outlining main story and focus.
   </TextBlock>
 );
@@ -95,35 +62,18 @@ const cardCustomThemeObject: CreateThemeArgs = {
           textAlign: 'center',
         },
       },
-      flagCustom: {
-        base: {
-          backgroundColor: '{{colors.amber080}}',
-          color: '{{colors.inkInverse}}',
-          iconColor: '{{colors.inkInverse}}',
-        },
-      },
-      flagCustom2: {
-        base: {
-          backgroundColor: '{{colors.amber040}}',
-          color: '{{colors.inkBase}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-      },
       firstSplitBarCustom: {
         base: {
+          color: '{{colors.inkBase}}',
           backgroundColor: '{{colors.interactivePrimary010}}',
           textAlign: 'center',
         },
       },
       secondSplitBarCustom: {
         base: {
+          color: '{{colors.inkBase}}',
           backgroundColor: '{{colors.interactivePrimary020}}',
           textAlign: 'center',
-        },
-      },
-      tagCustom: {
-        base: {
-          backgroundColor: '{{colors.amber030}}',
         },
       },
       headlineLink: {
@@ -149,51 +99,32 @@ const cardCustomThemeObject: CreateThemeArgs = {
           color: 'currentColor',
         },
       },
-      headlineCustom: {
-        base: {
-          color: '{{colors.amber070}}',
-          textDecoration: 'underline',
-        },
-      },
-      // mocked card Containers
-      cardContainerMock: {
-        base: {
-          borderStyle: 'solid',
-          borderColor: '{{colors.purple020}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          backgroundColor: '{{colors.blue020}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.blue040}}',
-          boxShadow: '{{shadows.shadow030}}',
-        },
-        active: {
-          backgroundColor: '{{colors.blue060}}',
-          boxShadow: '{{shadows.shadow050}}',
-        },
-      },
+      // Other stories
       cardBook: {
         base: {
           borderStyle: 'solid',
-          borderColor: '{{colors.blue020}}',
+          borderColor: '{{colors.interface020}}',
           borderWidth: '{{borders.borderWidth010}}',
           boxShadow: '{{shadows.shadow030}}',
           borderRadius: '{{borders.borderRadiusRounded030}}',
-          backgroundColor: '{{colors.white}}',
+          backgroundColor: '{{colors.interfaceBackground}}',
         },
         hover: {
           boxShadow: '{{shadows.shadow060}}',
-          backgroundColor: '#f6f8fc',
+          backgroundColor: '{{colors.interface020}}',
+          borderColor: '{{colors.interface030}}',
         },
       },
+      // Other stories
       cardBookActions: {
         base: {
           borderStyle: 'solid',
-          borderColor: '{{colors.purple020}}',
+          borderColor: '{{colors.interface020}}',
           borderWidth:
             '{{borders.borderWidth010}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
         },
       },
+      // cardContentSeparateColor
       cardContentSeparateColor: {
         base: {
           boxShadow: '{{shadows.shadow020}}',
@@ -203,106 +134,31 @@ const cardCustomThemeObject: CreateThemeArgs = {
           backgroundColor: '{{colors.interface020}}',
         },
       },
+      // CardInset & Padding overrides
       cardInset: {
         base: {
           backgroundColor: '{{colors.interface020}}',
         },
       },
+      // Style preset - card and flag colours
       cardContainerWithHover: {
         base: {
           borderStyle: 'solid',
-          borderColor: '{{colors.purple020}}',
+          borderColor: '{{colors.inkBrand010}}',
           borderWidth: '{{borders.borderWidth010}}',
-          backgroundColor: '{{colors.amber020}}',
-          color: '{{colors.amber070}}',
+          backgroundColor: '{{colors.interface010}}',
+          color: '{{colors.inkBrand010}}',
         },
         hover: {
           boxShadow: '{{shadows.shadow030}}',
-          backgroundColor: '{{colors.blue020}}',
+          backgroundColor: '{{colors.interface020}}',
           color: '{{colors.inkContrast}}',
         },
       },
-      cardContainerMockNoHover: {
-        base: {},
-      },
-      cardContainerMediaMock: {
-        base: {
-          backgroundColor: '{{colors.red020}}',
-        },
-      },
-      cardContainerTeaserMock: {
-        base: {
-          backgroundColor: '{{colors.neutral010}}',
-        },
-        hover: {
-          backgroundColor: '{{colors.amber010}}',
-        },
-        active: {
-          backgroundColor: '{{colors.amber020}}',
-        },
-      },
+      // Style preset - headline, paragraph, card actions and tag colours
       cardContainerActionsMock: {
         base: {
           backgroundColor: '{{colors.amber010}}',
-        },
-      },
-    },
-  },
-};
-
-const cardCustomDarkThemeObject: CreateThemeArgs = {
-  name: 'card-custom-theme',
-  overrides: {
-    stylePresets: {
-      ...cardCustomThemeObject.overrides?.stylePresets,
-      flagCustom: {
-        base: {
-          backgroundColor: '{{colors.amber010}}',
-          color: '{{colors.inkInverse}}',
-        },
-      },
-      flagCustom2: {
-        base: {
-          backgroundColor: '{{colors.amber090}}',
-          color: '{{colors.inkBase}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-      },
-      tagCustom: {
-        base: {
-          backgroundColor: '{{colors.amber080}}',
-          color: '{{colors.inkBase}}',
-        },
-      },
-      headlineCustom: {
-        base: {
-          color: '{{colors.amber020}}',
-          textDecoration: 'underline',
-        },
-      },
-      cardContainerWithHover: {
-        base: {
-          borderStyle: 'solid',
-          borderColor: '{{colors.purple020}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          backgroundColor: '{{colors.amber060}}',
-          color: '{{colors.amber010}}',
-        },
-        hover: {
-          boxShadow: '{{shadows.shadow030}}',
-          backgroundColor: '{{colors.blue080}}',
-          color: '{{colors.inkContrast}}',
-        },
-      },
-      cardContainerMockNoHover: {
-        base: {
-          backgroundColor: '{{colors.amber060}}',
-          color: '{{colors.amber010}}',
-        },
-      },
-      cardContainerActionsMock: {
-        base: {
-          backgroundColor: '{{colors.amber070}}',
         },
       },
     },
@@ -494,6 +350,21 @@ export const StoryVariations = () => (
         </CardActions>
       </CardComposable>
     </StorybookCase>
+    <StorybookCase title="Video passed to CardMedia">
+      <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
+        <CardContent rowGap={contentGap}>
+          <Flag>Flag</Flag>
+          <H />
+          <P />
+        </CardContent>
+        <CardMedia>
+          <VideoPlayer config={DEFATULT_VIDEO_PLAYER_CONFIG} />
+        </CardMedia>
+        <CardActions>
+          <Tag href="/news">Tag</Tag>
+        </CardActions>
+      </CardComposable>
+    </StorybookCase>
   </StorybookPage>
 );
 StoryVariations.storyName = 'Variations';
@@ -531,7 +402,7 @@ export const StoryInsetCard = () => (
 StoryInsetCard.storyName = 'Inset card';
 
 export const StoryLayout = () => (
-  <StorybookPage>
+  <StorybookPage columns="1fr">
     <StorybookCase title="Horizontal">
       <CardComposable
         overrides={{
@@ -672,7 +543,6 @@ export const StoryOrder = () => (
         `}
       >
         <CardContent rowGap={contentGap}>
-          <Flag>Flag</Flag>
           <H />
           <P />
         </CardContent>
@@ -870,7 +740,6 @@ export const StoryOverrides = () => (
       <CardComposable
         overrides={{
           maxWidth: '372px',
-          stylePreset: 'cardContainerMockNoHover',
         }}
         rowGap={areasGap}
       >
@@ -883,7 +752,6 @@ export const StoryOverrides = () => (
           <H
             overrides={{
               heading: {
-                // stylePreset: 'headlineCustom'
                 stylePreset: 'inkBrand010',
               },
             }}
@@ -896,15 +764,7 @@ export const StoryOverrides = () => (
             stylePreset: 'cardContainerActionsMock',
           }}
         >
-          <Tag
-            href="http://example.com"
-            size="medium"
-            overrides={
-              {
-                // stylePreset: 'tagCustom'
-              }
-            }
-          >
+          <Tag href="http://example.com" size="medium">
             Tag
           </Tag>
         </CardActions>
@@ -949,10 +809,11 @@ export const ComplexStory = () => (
           <TextBlock
             typographyPreset="editorialHeadline010"
             marginBlockEnd="space010"
+            stylePreset="inkBase"
           >
             Mountain retreat
           </TextBlock>
-          <TextBlock typographyPreset="utilityBody020">
+          <TextBlock typographyPreset="utilityBody020" stylePreset="inkBase">
             Snowy Peaks, Austria
           </TextBlock>
 
@@ -976,6 +837,7 @@ export const ComplexStory = () => (
             <TextBlock
               typographyPreset="utilityBody020"
               marginInlineStart="space020"
+              stylePreset="inkBase"
             >
               4.1 (<LinkInline href="/">38 reviews</LinkInline>)
             </TextBlock>
@@ -995,7 +857,12 @@ export const ComplexStory = () => (
                   stylePreset: 'inkSubtle',
                 }}
               />
-              <TextBlock typographyPreset="utilityBody010">Wi-Fi</TextBlock>
+              <TextBlock
+                typographyPreset="utilityBody010"
+                stylePreset="inkBase"
+              >
+                Wi-Fi
+              </TextBlock>
             </Block>
             <Block stylePreset="centered">
               <IconFilledAccountBalance
@@ -1004,7 +871,12 @@ export const ComplexStory = () => (
                   stylePreset: 'inkSubtle',
                 }}
               />
-              <TextBlock typographyPreset="utilityBody010">SPA</TextBlock>
+              <TextBlock
+                typographyPreset="utilityBody010"
+                stylePreset="inkBase"
+              >
+                SPA
+              </TextBlock>
             </Block>
             <Block stylePreset="centered">
               <IconFilledAccountTree
@@ -1013,7 +885,12 @@ export const ComplexStory = () => (
                   stylePreset: 'inkSubtle',
                 }}
               />
-              <TextBlock typographyPreset="utilityBody010">Air-co</TextBlock>
+              <TextBlock
+                typographyPreset="utilityBody010"
+                stylePreset="inkBase"
+              >
+                Air-co
+              </TextBlock>
             </Block>
             <Block stylePreset="centered">
               <IconFilledBookmarkBorder
@@ -1022,7 +899,12 @@ export const ComplexStory = () => (
                   stylePreset: 'inkSubtle',
                 }}
               />
-              <TextBlock typographyPreset="utilityBody010">24/7</TextBlock>
+              <TextBlock
+                typographyPreset="utilityBody010"
+                stylePreset="inkBase"
+              >
+                24/7
+              </TextBlock>
             </Block>
           </GridLayout>
           <Divider
@@ -1031,7 +913,7 @@ export const ComplexStory = () => (
               stylePreset: 'inkNonEssential',
             }}
           />
-          <TextBlock typographyPreset="utilityBody020">
+          <TextBlock typographyPreset="utilityBody020" stylePreset="inkBase">
             Featuring free WiFi, Palacio de Rojas is located 350 m from the
             Lonja Silk Exchange and Valencia’s Central Market. It offers
             air-conditioned apartments with city views. Private parking is
@@ -1049,7 +931,7 @@ export const ComplexStory = () => (
           }}
         >
           <Button size="small">Book now</Button>
-          <Block>
+          <Block stylePreset="inkBase">
             <TextBlock as="span" typographyPreset="utilitySubheading040">
               $299
             </TextBlock>
@@ -1072,21 +954,16 @@ export default {
     (
       Story: StoryType,
       context: {name: string; globals: {backgrounds: {value: string}}},
-    ) => {
-      const backgroundValue = context?.globals?.backgrounds?.value;
-      return (
-        <ThemeProvider
-          theme={createCustomThemeWithBaseThemeSwitch(
-            backgroundValue,
-            !backgroundValue || backgroundValue === '#ffffff'
-              ? cardCustomThemeObject
-              : cardCustomDarkThemeObject,
-            context?.name,
-          )}
-        >
-          <Story />
-        </ThemeProvider>
-      );
-    },
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          cardCustomThemeObject,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
   ],
 };
