@@ -1,10 +1,73 @@
-<svg id="nksvg" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0">
-  <rect style="fill: var(--color-illustrationBackground020)" width="1490" height="838"></rect>
-  <rect style="fill: var(--color-illustrationPalette060)" x="356" y="439.823" width="256.824" height="427.576" rx="8" transform="rotate(-90 356 439.823)"></rect>
-  <rect style="fill: var(--color-illustrationPalette050)" x="356" y="484.247" width="191.576" height="169.365" rx="8"></rect>
-  <rect style="fill: var(--color-illustrationPalette050)" x="592" y="484.247" width="191.576" height="169.365" rx="8"></rect>
-  <rect style="fill: var(--color-illustrationPalette070)" x="828" y="183" width="306.8" height="84.6824" rx="8"></rect>
-  <rect style="fill: var(--color-illustrationPalette070)" x="828" y="312.106" width="306.8" height="84.6824" rx="8"></rect>
-  <rect style="fill: var(--color-illustrationPalette070)" x="828" y="441.212" width="306.8" height="84.6824" rx="8"></rect>
-  <rect style="fill: var(--color-illustrationPalette070)" x="828" y="570.318" width="306.8" height="84.6824" rx="8"></rect>
+<svg
+  id="nksvg"
+  style="width: 100%; height: 100%"
+  width="1490"
+  height="838"
+  viewBox="0 0 1490 838"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="css-0"
+>
+  <rect
+    style="fill: var(--color-illustrationBackground020)"
+    width="1490"
+    height="838"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette060)"
+    x="356"
+    y="439.823"
+    width="256.824"
+    height="427.576"
+    rx="8"
+    transform="rotate(-90 356 439.823)"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette050)"
+    x="356"
+    y="484.247"
+    width="191.576"
+    height="169.365"
+    rx="8"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette050)"
+    x="592"
+    y="484.247"
+    width="191.576"
+    height="169.365"
+    rx="8"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette070)"
+    x="828"
+    y="183"
+    width="306.8"
+    height="84.6824"
+    rx="8"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette070)"
+    x="828"
+    y="312.106"
+    width="306.8"
+    height="84.6824"
+    rx="8"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette070)"
+    x="828"
+    y="441.212"
+    width="306.8"
+    height="84.6824"
+    rx="8"
+  ></rect>
+  <rect
+    style="fill: var(--color-illustrationPalette070)"
+    x="828"
+    y="570.318"
+    width="306.8"
+    height="84.6824"
+    rx="8"
+  ></rect>
 </svg>

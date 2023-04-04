@@ -1,12 +1,52 @@
-<svg id="nksvg" style="width: 100%; height: 100%" width="1490" height="600" viewBox="0 0 1490 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0">
+<svg
+  id="nksvg"
+  style="width: 100%; height: 100%"
+  width="1490"
+  height="600"
+  viewBox="0 0 1490 600"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="css-0"
+>
   <g clip-path="url(#nk-81)">
-    <path style="fill: var(--color-illustrationBackground020)" d="M0 2.86396C0 1.28224 1.7912 0 4.00075 0H1487C1489.21 0 1491 1.28223 1491 2.86395V597.136C1491 598.718 1489.21 600 1487 600H4.00077C1.79122 600 0 598.718 0 597.136V2.86396Z"></path>
-    <path style="fill: var(--color-illustrationHighlight010)" d="M740 398L740 204L752 204L752 398L740 398Z"></path>
-    <path style="fill: var(--color-illustrationInterface020)" d="M694.648 300.324C694.648 337.506 664.506 367.648 627.324 367.648C590.142 367.648 560 337.506 560 300.324C560 263.142 590.142 233 627.324 233C664.506 233 694.648 263.142 694.648 300.324Z"></path>
-    <path style="fill: var(--color-illustrationInterface020)" d="M931.648 301.324C931.648 338.506 901.506 368.648 864.324 368.648C827.142 368.648 797 338.506 797 301.324C797 264.142 827.142 234 864.324 234C901.506 234 931.648 264.142 931.648 301.324Z"></path>
-    <path style="fill: var(--color-red020)" opacity="0.4" d="M703 204H732V398H703V204Z"></path>
-    <path style="fill: var(--color-red020)" opacity="0.4" d="M760 204H789V398H760V204Z"></path>
-    <rect x="536" y="185" width="418" height="230" rx="12" stroke="#2B4AAB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 16"></rect>
+    <path
+      style="fill: var(--color-illustrationBackground020)"
+      d="M0 2.86396C0 1.28224 1.7912 0 4.00075 0H1487C1489.21 0 1491 1.28223 1491 2.86395V597.136C1491 598.718 1489.21 600 1487 600H4.00077C1.79122 600 0 598.718 0 597.136V2.86396Z"
+    ></path>
+    <path
+      style="fill: var(--color-illustrationHighlight010)"
+      d="M740 398L740 204L752 204L752 398L740 398Z"
+    ></path>
+    <path
+      style="fill: var(--color-illustrationInterface020)"
+      d="M694.648 300.324C694.648 337.506 664.506 367.648 627.324 367.648C590.142 367.648 560 337.506 560 300.324C560 263.142 590.142 233 627.324 233C664.506 233 694.648 263.142 694.648 300.324Z"
+    ></path>
+    <path
+      style="fill: var(--color-illustrationInterface020)"
+      d="M931.648 301.324C931.648 338.506 901.506 368.648 864.324 368.648C827.142 368.648 797 338.506 797 301.324C797 264.142 827.142 234 864.324 234C901.506 234 931.648 264.142 931.648 301.324Z"
+    ></path>
+    <path
+      style="fill: var(--color-red020)"
+      opacity="0.4"
+      d="M703 204H732V398H703V204Z"
+    ></path>
+    <path
+      style="fill: var(--color-red020)"
+      opacity="0.4"
+      d="M760 204H789V398H760V204Z"
+    ></path>
+    <rect
+      x="536"
+      y="185"
+      width="418"
+      height="230"
+      rx="12"
+      stroke="#2B4AAB"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-dasharray="16 16"
+    ></rect>
   </g>
   <defs>
     <clipPath id="nk-81">

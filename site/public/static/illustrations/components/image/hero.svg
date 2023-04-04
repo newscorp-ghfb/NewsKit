@@ -1,13 +1,13 @@
 <svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1490" height="838" fill="var(--color-illustrationBackground020)"></rect>
-<rect x="445" y="181" width="600" height="413.725" rx="36" fill="var(--color-illustrationPalette050)"></rect>
+<rect width="1490" height="838" fill="var(--color-illustrationBackground020)"/>
+<rect x="445" y="181" width="600" height="413.725" rx="36" fill="var(--color-illustrationPalette050)"/>
 <mask id="mask0_1003_33807" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="479" y="213" width="532" height="342">
-<rect x="479.814" y="213.774" width="530.373" height="340.176" rx="11.5" fill="var(--color-illustrationPalette050)" stroke="#446BE4"></rect>
+<rect x="479.814" y="213.774" width="530.373" height="340.176" rx="11.5" fill="var(--color-illustrationPalette050)" stroke="#446BE4"/>
 </mask>
 <g mask="url(#mask0_1003_33807)">
-<rect x="479.314" y="213.274" width="531.373" height="341.176" rx="12" fill="var(--color-illustrationPalette040)"></rect>
-<circle cx="574.902" cy="308.863" r="54.4118" fill="var(--color-illustrationPalette010)"></circle>
-<path d="M578.165 428.839L479.389 554.391C470.615 565.543 478.56 581.902 492.75 581.902H999.994C1013.67 581.902 1021.75 566.573 1014.02 555.291L854.097 321.962C847.534 312.386 833.516 312.06 826.515 321.32L705.653 481.173C700.049 488.584 689.534 490.124 682.041 484.631L601.577 425.64C594.186 420.222 583.831 421.637 578.165 428.839Z" fill="var(--color-illustrationPalette030)"></path>
+<rect x="479.314" y="213.274" width="531.373" height="341.176" rx="12" fill="var(--color-illustrationPalette040)"/>
+<circle cx="574.902" cy="308.863" r="54.4118" fill="var(--color-illustrationPalette010)"/>
+<path d="M578.165 428.839L479.389 554.391C470.615 565.543 478.56 581.902 492.75 581.902H999.994C1013.67 581.902 1021.75 566.573 1014.02 555.291L854.097 321.962C847.534 312.386 833.516 312.06 826.515 321.32L705.653 481.173C700.049 488.584 689.534 490.124 682.041 484.631L601.577 425.64C594.186 420.222 583.831 421.637 578.165 428.839Z" fill="var(--color-illustrationPalette030)"/>
 </g>
-<ellipse cx="745.5" cy="688.5" rx="205.5" ry="9.5" fill="var(--color-illustrationShadow010)"></ellipse>
+<ellipse cx="745.5" cy="688.5" rx="205.5" ry="9.5" fill="var(--color-illustrationShadow010)"/>
 </svg>
