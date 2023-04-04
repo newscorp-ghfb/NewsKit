@@ -2,8 +2,8 @@
 process.env.TZ = 'GMT';
 
 module.exports = {
-  name: 'comps',
-  displayName: 'NewsKit Components',
+  displayName: 'Components',
+  bail: 1,
   rootDir: './',
   setupFilesAfterEnv: [
     '<rootDir>/test/test-framework-setup.ts',

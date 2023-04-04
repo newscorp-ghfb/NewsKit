@@ -33,12 +33,14 @@ module.exports = withMDX({
     config.plugins = [
       ...config.plugins,
 
-      new CopyPlugin([
-        {
-          from: resolve(__dirname, '../fonts'),
-          to: resolve(__dirname, 'public/static/fonts'),
-        },
-      ]),
+      new CopyPlugin({
+        patterns: [
+          {
+            from: resolve(__dirname, '../fonts'),
+            to: resolve(__dirname, 'public/static/fonts'),
+          },
+        ],
+      }),
     ];
 
     return config;
