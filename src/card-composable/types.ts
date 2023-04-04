@@ -9,6 +9,10 @@ export type StylableGridLayout = GridLayoutProps & {
   };
 };
 
+export type ComponentWithOverrides = {
+  overrides?: object;
+};
+
 export type CardComposableProps = StylableGridLayout;
 
 export type CardMediaProps = {

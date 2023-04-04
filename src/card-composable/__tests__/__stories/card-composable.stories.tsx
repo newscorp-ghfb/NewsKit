@@ -18,7 +18,14 @@ import {TextBlock, TextBlockProps} from '../../../text-block';
 import {GridLayout} from '../../../grid-layout';
 import {Divider} from '../../../divider';
 import {Block} from '../../../block';
-import {IconFilledCheckCircle} from '../../../icons';
+import {
+  IconFilledStarOutline,
+  IconFilledStar,
+  IconFilledFigma,
+  IconFilledAccountBalance,
+  IconFilledAccountTree,
+  IconFilledBookmarkBorder,
+} from '../../../icons';
 import {LinkInline} from '../../../link';
 import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 import {Tag} from '../../../tag';
@@ -78,10 +85,16 @@ const P = ({...props}: Omit<TextBlockProps, 'children'>) => (
   </TextBlock>
 );
 
+// TODO: check this themes overrides
 const cardCustomThemeObject: CreateThemeArgs = {
   name: 'card-custom-theme',
   overrides: {
     stylePresets: {
+      centered: {
+        base: {
+          textAlign: 'center',
+        },
+      },
       flagCustom: {
         base: {
           backgroundColor: '{{colors.amber080}}',
@@ -162,10 +175,15 @@ const cardCustomThemeObject: CreateThemeArgs = {
       cardBook: {
         base: {
           borderStyle: 'solid',
-          borderColor: '{{colors.purple020}}',
+          borderColor: '{{colors.blue020}}',
           borderWidth: '{{borders.borderWidth010}}',
           boxShadow: '{{shadows.shadow030}}',
           borderRadius: '{{borders.borderRadiusRounded030}}',
+          backgroundColor: '{{colors.white}}',
+        },
+        hover: {
+          boxShadow: '{{shadows.shadow060}}',
+          backgroundColor: '#f6f8fc',
         },
       },
       cardBookActions: {
@@ -918,7 +936,7 @@ StoryOverrides.storyName = 'Styling overrides';
 // https://www.linkedin.com/search/results/content/?keywords=design&origin=FACETED_SEARCH&postedBy=%5B%22first%22%2C%22following%22%5D&sid=xxV&sortBy=%22relevance%22
 export const ComplexStory = () => (
   <StorybookPage>
-    <StorybookCase title="Style preset - card and flag colours">
+    <StorybookCase title="Random card">
       <CardComposable
         overrides={{maxWidth: '250px', stylePreset: 'cardBook'}}
         style={{overflow: 'hidden'}}
@@ -942,17 +960,24 @@ export const ComplexStory = () => (
             columns="auto auto auto auto auto 1fr"
             alignItems="center"
           >
-            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
-            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
-            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
-            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
-            <IconFilledCheckCircle overrides={{size: 'iconSize010'}} />
-
+            <IconFilledStar
+              overrides={{size: 'iconSize010', stylePreset: 'inkBrand010'}}
+            />
+            <IconFilledStar
+              overrides={{size: 'iconSize010', stylePreset: 'inkBrand010'}}
+            />
+            <IconFilledStar
+              overrides={{size: 'iconSize010', stylePreset: 'inkBrand010'}}
+            />
+            <IconFilledStar
+              overrides={{size: 'iconSize010', stylePreset: 'inkBrand010'}}
+            />
+            <IconFilledStarOutline overrides={{size: 'iconSize010'}} />
             <TextBlock
               typographyPreset="utilityBody020"
               marginInlineStart="space020"
             >
-              5.0 (<LinkInline href="/">38 reviews</LinkInline>)
+              4.1 (<LinkInline href="/">38 reviews</LinkInline>)
             </TextBlock>
           </GridLayout>
 
@@ -963,24 +988,49 @@ export const ComplexStory = () => (
             justifyContent="space-between"
             overrides={{width: '100%'}}
           >
-            <Block>
-              <IconFilledCheckCircle overrides={{size: 'iconSize040'}} />
-              <TextBlock typographyPreset="utilityBody010">Feat 1</TextBlock>
+            <Block stylePreset="centered">
+              <IconFilledFigma
+                overrides={{
+                  size: 'iconSize030',
+                  stylePreset: 'inkSubtle',
+                }}
+              />
+              <TextBlock typographyPreset="utilityBody010">Wi-Fi</TextBlock>
             </Block>
-            <Block>
-              <IconFilledCheckCircle overrides={{size: 'iconSize040'}} />
-              <TextBlock typographyPreset="utilityBody010">Feat 1</TextBlock>
+            <Block stylePreset="centered">
+              <IconFilledAccountBalance
+                overrides={{
+                  size: 'iconSize030',
+                  stylePreset: 'inkSubtle',
+                }}
+              />
+              <TextBlock typographyPreset="utilityBody010">SPA</TextBlock>
             </Block>
-            <Block>
-              <IconFilledCheckCircle overrides={{size: 'iconSize040'}} />
-              <TextBlock typographyPreset="utilityBody010">Feat 1</TextBlock>
+            <Block stylePreset="centered">
+              <IconFilledAccountTree
+                overrides={{
+                  size: 'iconSize030',
+                  stylePreset: 'inkSubtle',
+                }}
+              />
+              <TextBlock typographyPreset="utilityBody010">Air-co</TextBlock>
             </Block>
-            <Block>
-              <IconFilledCheckCircle overrides={{size: 'iconSize040'}} />
-              <TextBlock typographyPreset="utilityBody010">Feat 1</TextBlock>
+            <Block stylePreset="centered">
+              <IconFilledBookmarkBorder
+                overrides={{
+                  size: 'iconSize030',
+                  stylePreset: 'inkSubtle',
+                }}
+              />
+              <TextBlock typographyPreset="utilityBody010">24/7</TextBlock>
             </Block>
           </GridLayout>
-          <Divider overrides={{marginBlockEnd: 'space010'}} />
+          <Divider
+            overrides={{
+              marginBlockEnd: 'space010',
+              stylePreset: 'inkNonEssential',
+            }}
+          />
           <TextBlock typographyPreset="utilityBody020">
             Featuring free WiFi, Palacio de Rojas is located 350 m from the
             Lonja Silk Exchange and Valencia’s Central Market. It offers

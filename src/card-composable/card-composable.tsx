@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {Image} from '../image';
 
-// remove above ones
 import {
   StyledActions,
   StyledCard,
@@ -9,24 +8,23 @@ import {
   StyledLink,
   StyledMedia,
 } from './styled';
+
 import {
   CardComposableProps,
   CardMediaProps,
   CardContentProps,
   CardActionsProps,
   CardLinkProps,
+  ComponentWithOverrides,
 } from './types';
 import {useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
+import {withOwnTheme} from '../utils/with-own-theme';
+import defaults from './defaults';
+import stylePresets from './style-presets';
+import {CardProvider, useCardContext} from './context';
 
-const CardContext = React.createContext({useAreas: false});
-const useCardContext = () => React.useContext(CardContext);
-
-export type ComponentOverrides = {
-  overrides?: object;
-};
-
-const useGetOverrides = <TCO extends ComponentOverrides>(
+const useGetOverrides = <TCO extends ComponentWithOverrides>(
   {overrides}: TCO,
   componentName: string,
 ) => {
@@ -44,56 +42,73 @@ const defaultAreas = `
             actions
           `;
 
-export const CardComposable = ({
-  children,
-  areas = defaultAreas,
-  ...props
-}: CardComposableProps) => {
+const ThemelessCardComposable = React.forwardRef<
+  HTMLDivElement,
+  CardComposableProps
+>(({children, areas = defaultAreas, ...props}, ref) => {
   const overrides = useGetOverrides<CardComposableProps>(
     props,
     'cardComposable',
   );
 
   return (
-    <CardContext.Provider value={{useAreas: Boolean(areas)}}>
-      <StyledCard areas={areas} {...props} overrides={overrides}>
+    <CardProvider value={{useAreas: Boolean(areas)}}>
+      <StyledCard areas={areas} {...props} overrides={overrides} ref={ref}>
         {children}
       </StyledCard>
-    </CardContext.Provider>
+    </CardProvider>
   );
-};
+});
 
-export const CardMedia = ({media, children, ...props}: CardMediaProps) => {
-  const {useAreas} = useCardContext();
-  return (
-    <StyledMedia areaName={useAreas ? 'media' : undefined} {...props}>
-      {children || <Image {...media} />}
-    </StyledMedia>
-  );
-};
+export const CardComposable = withOwnTheme(ThemelessCardComposable)({
+  defaults,
+  stylePresets,
+});
 
-export const CardContent = (props: CardContentProps) => {
-  const {useAreas} = useCardContext();
-  return (
-    <StyledContent
-      areaName={useAreas ? 'content' : undefined}
-      justifyItems="start"
-      {...props}
-    />
-  );
-};
+export const CardMedia = React.forwardRef<HTMLDivElement, CardMediaProps>(
+  ({media, children, ...props}, ref) => {
+    const {useAreas} = useCardContext();
+    return (
+      <StyledMedia
+        ref={ref}
+        areaName={useAreas ? 'media' : undefined}
+        {...props}
+      >
+        {children || <Image {...media} />}
+      </StyledMedia>
+    );
+  },
+);
 
-export const CardActions = (props: CardActionsProps) => {
-  const {useAreas} = useCardContext();
-  return (
-    <StyledActions
-      areaName={useAreas ? 'actions' : undefined}
-      justifyContent="start"
-      {...props}
-    />
-  );
-};
+export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
+  (props, ref) => {
+    const {useAreas} = useCardContext();
+    return (
+      <StyledContent
+        ref={ref}
+        areaName={useAreas ? 'content' : undefined}
+        justifyItems="start"
+        {...props}
+      />
+    );
+  },
+);
 
-export const CardLink = (props: CardLinkProps) => (
-  <StyledLink as="a" {...props} />
+export const CardActions = React.forwardRef<HTMLDivElement, CardActionsProps>(
+  (props, ref) => {
+    const {useAreas} = useCardContext();
+    return (
+      <StyledActions
+        ref={ref}
+        areaName={useAreas ? 'actions' : undefined}
+        justifyContent="start"
+        {...props}
+      />
+    );
+  },
+);
+
+// TODO: use Link component or attach event data/context
+export const CardLink = React.forwardRef<HTMLDivElement, CardLinkProps>(
+  (props, ref) => <StyledLink as="a" ref={ref} {...props} />,
 );
