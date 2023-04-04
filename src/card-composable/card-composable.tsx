@@ -74,7 +74,7 @@ export const CardMedia = React.forwardRef<HTMLDivElement, CardMediaProps>(
         areaName={useAreas ? 'media' : undefined}
         {...props}
       >
-        {children || <Image {...media} />}
+        {children || <Image alt="" {...media} />}
       </StyledMedia>
     );
   },
