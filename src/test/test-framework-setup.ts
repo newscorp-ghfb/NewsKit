@@ -39,5 +39,3 @@ expect.extend(matchers);
 jest.mock('../utils/get-ssr-id', () => ({
   getSSRId: () => `mock-nk-1`,
 }));
-
-jest.mock('date-fns/format', () => () => 'Mock Date');
