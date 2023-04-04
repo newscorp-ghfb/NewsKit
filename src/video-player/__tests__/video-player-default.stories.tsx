@@ -30,6 +30,8 @@ export const StoryDefaultVideoPlayer = () => {
   const play = () => {
     const player = videoRef.current;
     if (player) {
+      // See https://github.com/storybookjs/eslint-plugin-storybook/issues/67
+      // eslint-disable-next-line storybook/context-in-play-function
       player.play();
     }
   };
@@ -59,6 +61,8 @@ export const StoryPlaylistsVideoPlayer = () => {
   const play = () => {
     const player = videoRef.current;
     if (player) {
+      // See https://github.com/storybookjs/eslint-plugin-storybook/issues/67
+      // eslint-disable-next-line storybook/context-in-play-function
       player.play();
     }
   };

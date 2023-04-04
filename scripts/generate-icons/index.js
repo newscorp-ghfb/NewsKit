@@ -31,7 +31,7 @@ const toExportStatement = file =>
   `export {${file.componentName}} from './${file.fileName}';`;
 
 const wipeFolder = iconSubfolder => {
-  fse.emptyDirSync(`./src/icons/${iconSubfolder}`, {recursive: true});
+  fse.emptyDirSync(`./src/icons/${iconSubfolder}`);
 };
 
 const generateIconFiles = (filesData, iconSubfolder) => {

@@ -8,7 +8,6 @@ const paths = pathsToModuleNameMapper(compilerOptions.paths, {
   prefix: '<rootDir>/',
 });
 module.exports = {
-  name: 'site',
   displayName: 'Site',
   rootDir: './',
   setupFilesAfterEnv: ['<rootDir>/../src/test/test-framework-setup.ts'],
