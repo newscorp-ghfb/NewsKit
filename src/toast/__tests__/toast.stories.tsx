@@ -2,7 +2,8 @@ import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {
   StorybookHeading,
-  StorybookSubHeading,
+  StorybookPage,
+  StorybookCase,
 } from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {styled, withDefaultProps} from '../../utils';
@@ -92,6 +93,8 @@ const ToastNegative = withDefaultProps(Toast, {
   overrides: {stylePreset: 'toastNegative'},
 });
 
+const BODY = 'A Short line describing the toast';
+
 const toastLink = (
   <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
     with link
@@ -100,10 +103,8 @@ const toastLink = (
 
 export const StoryToastDefault = () => (
   <>
-    <StorybookHeading>Toast</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <Toast>Short text</Toast>
-    <StorybookSubHeading>with long text</StorybookSubHeading>
+    <Toast> {BODY} </Toast>
+    {/* <StorybookSubHeading>with long text</StorybookSubHeading>
     <Toast>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
@@ -145,10 +146,129 @@ export const StoryToastDefault = () => (
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt {toastLink} ut labore et dolore magna aliqua.
-    </Toast>
+    </Toast> */}
   </>
 );
-StoryToastDefault.storyName = 'toast-default';
+StoryToastDefault.storyName = 'Default';
+
+export const StoryToastIntents = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title=" Default">
+      <Toast> {BODY} </Toast>
+    </StorybookCase>
+    <StorybookCase title="Informative">
+      <ToastInformative> {BODY} </ToastInformative>
+    </StorybookCase>
+    <StorybookCase title="Notice">
+      <ToastNotice> {BODY} </ToastNotice>
+    </StorybookCase>
+    <StorybookCase title="Positive">
+      <ToastPositive> {BODY} </ToastPositive>
+    </StorybookCase>
+    <StorybookCase title="Negative">
+      <ToastNegative> {BODY} </ToastNegative>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryToastIntents.storyName = 'Intents';
+
+export const StoryToastVariations = () => (
+  <>
+    <StorybookPage columns="1fr 1fr">
+      <StorybookCase title="Short text">
+        <Toast> {BODY} </Toast>
+      </StorybookCase>
+      <StorybookCase title="Long text and link">
+        <ToastInformative> {BODY} </ToastInformative>
+      </StorybookCase>
+      <StorybookCase title="Icon and short text">
+        <Toast
+          icon={
+            <IconFilledError
+              overrides={{
+                size: 'iconSize020',
+              }}
+            />
+          }
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt {toastLink} ut labore et dolore magna
+          aliqua.
+        </Toast>
+      </StorybookCase>
+      <StorybookCase title="Icon and long text">
+        <Toast
+          icon={
+            <IconFilledError
+              overrides={{
+                size: 'iconSize020',
+              }}
+            />
+          }
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </Toast>
+      </StorybookCase>
+      <StorybookCase title="Title">
+        <ToastNegative> {BODY} </ToastNegative>
+      </StorybookCase>
+      <StorybookCase title="Icon and title">
+        <ToastNegative> {BODY} </ToastNegative>
+      </StorybookCase>
+      <StorybookCase title="Action">
+        <ToastNegative> {BODY} </ToastNegative>
+      </StorybookCase>
+      <StorybookCase title="Two action">
+        <ToastNegative> {BODY} </ToastNegative>
+      </StorybookCase>
+    </StorybookPage>
+    {/* <StorybookSubHeading>with long text</StorybookSubHeading>
+    <Toast>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </Toast>
+    <StorybookSubHeading>with Icon</StorybookSubHeading>
+    <Toast
+      icon={
+        <IconFilledError
+          overrides={{
+            size: 'iconSize020',
+          }}
+        />
+      }
+    >
+      Short text
+    </Toast>
+    <StorybookSubHeading>with Icon and long text</StorybookSubHeading>
+    <Toast
+      icon={
+        <IconFilledError
+          overrides={{
+            size: 'iconSize020',
+          }}
+        />
+      }
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </Toast>
+    <StorybookSubHeading>with link</StorybookSubHeading>
+    <Toast
+      icon={
+        <IconFilledError
+          overrides={{
+            size: 'iconSize020',
+          }}
+        />
+      }
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt {toastLink} ut labore et dolore magna aliqua.
+    </Toast> */}
+  </>
+);
+StoryToastVariations.storyName = 'Variations';
 
 export const StoryToastTitle = () => (
   <>
@@ -252,27 +372,6 @@ export const StoryToastActions = () => (
   </>
 );
 StoryToastActions.storyName = 'toast-actions';
-
-export const StoryToastIntents = () => (
-  <>
-    <StorybookHeading>Toast with Intents</StorybookHeading>
-    <StorybookSubHeading>Neutral ( default )</StorybookSubHeading>
-    <Toast>Neutral message {toastLink}</Toast>
-
-    <StorybookSubHeading>Informative</StorybookSubHeading>
-    <ToastInformative>Informative message {toastLink}</ToastInformative>
-
-    <StorybookSubHeading>Notice</StorybookSubHeading>
-    <ToastNotice>Notice message {toastLink}</ToastNotice>
-
-    <StorybookSubHeading>Positive</StorybookSubHeading>
-    <ToastPositive>Positive Message {toastLink}</ToastPositive>
-
-    <StorybookSubHeading>Negative</StorybookSubHeading>
-    <ToastNegative>Negative message {toastLink}</ToastNegative>
-  </>
-);
-StoryToastIntents.storyName = 'toast-intents';
 
 export const StoryToastOverrides = () => (
   <>
@@ -456,7 +555,7 @@ StoryToastApi.parameters = {
 };
 
 export default {
-  title: 'Components/toast',
+  title: 'Components/Toast',
   component: () => 'None',
   disabledRules: [],
   decorators: [
