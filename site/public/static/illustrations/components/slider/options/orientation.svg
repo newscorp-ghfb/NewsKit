@@ -1,9 +1,9 @@
 <svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground020)"/>
-<rect x="1017.54" y="636.879" width="441.043" height="46.9275" rx="23.4638" transform="rotate(-90 1017.54 636.879)" fill="var(--color-illustrationInterface030)"/>
-<rect x="1017.54" y="648.16" width="253.275" height="46.9275" rx="23.4638" transform="rotate(-90 1017.54 648.16)" fill="var(--color-illustrationHighlight010)"/>
-<circle cx="1042.5" cy="417.5" r="55.5" fill="var(--color-illustrationPalette060)"/>
-<rect x="368.17" y="395.871" width="441.043" height="46.9275" rx="23.4638" transform="rotate(-0.0476256 368.17 395.871)" fill="var(--color-illustrationInterface030)"/>
-<rect x="356.89" y="395.881" width="253.275" height="46.9275" rx="23.4638" transform="rotate(-0.0476256 356.89 395.881)" fill="var(--color-illustrationHighlight010)"/>
-<circle cx="587.547" cy="420.411" r="55.3694" transform="rotate(89.9524 587.547 420.411)" fill="var(--color-illustrationPalette060)"/>
+<path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground020)"></path>
+<rect x="1017.54" y="636.879" width="441.043" height="46.9275" rx="23.4638" transform="rotate(-90 1017.54 636.879)" fill="var(--color-illustrationInterface030)"></rect>
+<rect x="1017.54" y="648.16" width="253.275" height="46.9275" rx="23.4638" transform="rotate(-90 1017.54 648.16)" fill="var(--color-illustrationHighlight010)"></rect>
+<circle cx="1042.5" cy="417.5" r="55.5" fill="var(--color-illustrationPalette060)"></circle>
+<rect x="368.17" y="395.871" width="441.043" height="46.9275" rx="23.4638" transform="rotate(-0.0476256 368.17 395.871)" fill="var(--color-illustrationInterface030)"></rect>
+<rect x="356.89" y="395.881" width="253.275" height="46.9275" rx="23.4638" transform="rotate(-0.0476256 356.89 395.881)" fill="var(--color-illustrationHighlight010)"></rect>
+<circle cx="587.547" cy="420.411" r="55.3694" transform="rotate(89.9524 587.547 420.411)" fill="var(--color-illustrationPalette060)"></circle>
 </svg>

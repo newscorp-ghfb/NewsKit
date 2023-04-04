@@ -1,69 +1,10 @@
-<svg
-  id="nksvg"
-  style="width: 100%; height: 100%"
-  width="1490"
-  height="838"
-  viewBox="0 0 1490 838"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="css-0"
->
-  <rect
-    style="fill: var(--color-illustrationBackground020)"
-    width="1490"
-    height="838"
-  ></rect>
-  <rect
-    style="fill: var(--color-illustrationPalette060)"
-    width="197.143"
-    height="175.238"
-    rx="17.5238"
-    transform="matrix(-1 0 0 1 1136 336)"
-  ></rect>
-  <rect
-    style="fill: var(--color-illustrationPalette050)"
-    x="-1.09524"
-    y="1.09524"
-    width="194.952"
-    height="173.048"
-    rx="16.4286"
-    transform="matrix(-1 0 0 1 981.466 336)"
-    stroke="#446BE4"
-    stroke-width="2.19048"
-  ></rect>
-  <rect
-    style="fill: var(--color-illustrationPalette050)"
-    x="-1.09524"
-    y="1.09524"
-    width="194.952"
-    height="173.048"
-    rx="16.4286"
-    transform="matrix(-1 0 0 1 548.953 336)"
-    stroke="#446BE4"
-    stroke-width="2.19048"
-  ></rect>
-  <path
-    style="fill: var(--color-illustrationPalette040)"
-    d="M814.905 335.524C814.905 326.451 807.549 319.095 798.476 319.095H535.524C526.451 319.095 519.095 326.451 519.095 335.524V509.905H814.905V335.524Z"
-    stroke="#577FFB"
-    stroke-width="2.19048"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette020)"
-    d="M816.192 502.477H518.287V511.238C518.287 516.078 522.21 520 527.049 520H807.43C812.269 520 816.192 516.078 816.192 511.238V502.477Z"
-  ></path>
-  <rect
-    style="fill: var(--color-illustrationPalette010)"
-    width="194"
-    height="18"
-    rx="9"
-    transform="matrix(-1 0 0 1 764 376)"
-  ></rect>
-  <rect
-    style="fill: var(--color-illustrationPalette010)"
-    width="98"
-    height="18"
-    rx="9"
-    transform="matrix(-1 0 0 1 716 424)"
-  ></rect>
+<svg id="nksvg" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0">
+  <rect style="fill: var(--color-illustrationBackground020)" width="1490" height="838"></rect>
+  <rect style="fill: var(--color-illustrationPalette060)" width="197.143" height="175.238" rx="17.5238" transform="matrix(-1 0 0 1 1136 336)"></rect>
+  <rect style="fill: var(--color-illustrationPalette050)" x="-1.09524" y="1.09524" width="194.952" height="173.048" rx="16.4286" transform="matrix(-1 0 0 1 981.466 336)" stroke="#446BE4" stroke-width="2.19048"></rect>
+  <rect style="fill: var(--color-illustrationPalette050)" x="-1.09524" y="1.09524" width="194.952" height="173.048" rx="16.4286" transform="matrix(-1 0 0 1 548.953 336)" stroke="#446BE4" stroke-width="2.19048"></rect>
+  <path style="fill: var(--color-illustrationPalette040)" d="M814.905 335.524C814.905 326.451 807.549 319.095 798.476 319.095H535.524C526.451 319.095 519.095 326.451 519.095 335.524V509.905H814.905V335.524Z" stroke="#577FFB" stroke-width="2.19048"></path>
+  <path style="fill: var(--color-illustrationPalette020)" d="M816.192 502.477H518.287V511.238C518.287 516.078 522.21 520 527.049 520H807.43C812.269 520 816.192 516.078 816.192 511.238V502.477Z"></path>
+  <rect style="fill: var(--color-illustrationPalette010)" width="194" height="18" rx="9" transform="matrix(-1 0 0 1 764 376)"></rect>
+  <rect style="fill: var(--color-illustrationPalette010)" width="98" height="18" rx="9" transform="matrix(-1 0 0 1 716 424)"></rect>
 </svg>

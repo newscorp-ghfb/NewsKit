@@ -1,20 +1,16 @@
 <svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g clip-path="url(#clip0_3105_108274)">
-    <path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground010)" />
-    <path opacity="0.3"
-      d="M93 122C93 102.118 110.45 86 131.976 86H1154.02C1175.55 86 1193 102.118 1193 122V717C1193 736.882 1175.55 753 1154.02 753H131.976C110.45 753 93 736.882 93 717V122Z"
-      fill="var(--color-illustrationPalette030)" />
-    <path opacity="0.3"
-      d="M334.355 451.094L118.626 725.493C109.857 736.647 117.802 753 131.99 753H1153.75C1167.43 753 1175.5 737.676 1167.78 726.394L836.349 242.49C829.786 232.908 815.761 232.582 808.759 241.848L557.871 573.905C552.268 581.321 541.746 582.862 534.252 577.363L357.775 447.894C350.383 442.471 340.022 443.886 334.355 451.094Z"
-      fill="var(--color-illustrationPalette030)" />
-    <circle opacity="0.6" cx="270.5" cy="259.5" r="99.5" fill="var(--color-illustrationPalette020)" />
-    <rect opacity="0.6" x="133" y="625" width="695" height="24" rx="12" fill="var(--color-illustrationPalette030)" />
-    <rect x="133" y="680" width="380" height="24" rx="12" fill="var(--color-illustrationPalette020)" />
-    <rect opacity="0.6" x="133" y="570" width="1020" height="24" rx="12" fill="var(--color-illustrationPalette030)" />
+    <path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground010)"></path>
+    <path opacity="0.3" d="M93 122C93 102.118 110.45 86 131.976 86H1154.02C1175.55 86 1193 102.118 1193 122V717C1193 736.882 1175.55 753 1154.02 753H131.976C110.45 753 93 736.882 93 717V122Z" fill="var(--color-illustrationPalette030)"></path>
+    <path opacity="0.3" d="M334.355 451.094L118.626 725.493C109.857 736.647 117.802 753 131.99 753H1153.75C1167.43 753 1175.5 737.676 1167.78 726.394L836.349 242.49C829.786 232.908 815.761 232.582 808.759 241.848L557.871 573.905C552.268 581.321 541.746 582.862 534.252 577.363L357.775 447.894C350.383 442.471 340.022 443.886 334.355 451.094Z" fill="var(--color-illustrationPalette030)"></path>
+    <circle opacity="0.6" cx="270.5" cy="259.5" r="99.5" fill="var(--color-illustrationPalette020)"></circle>
+    <rect opacity="0.6" x="133" y="625" width="695" height="24" rx="12" fill="var(--color-illustrationPalette030)"></rect>
+    <rect x="133" y="680" width="380" height="24" rx="12" fill="var(--color-illustrationPalette020)"></rect>
+    <rect opacity="0.6" x="133" y="570" width="1020" height="24" rx="12" fill="var(--color-illustrationPalette030)"></rect>
   </g>
   <defs>
     <clipPath id="clip0_3105_108274">
-      <rect width="1490" height="838" fill="white" />
+      <rect width="1490" height="838" fill="white"></rect>
     </clipPath>
   </defs>
 </svg>

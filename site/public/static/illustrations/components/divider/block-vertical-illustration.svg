@@ -1,81 +1,15 @@
-<svg
-  id="nksvg"
-  style="width: 100%; height: 100%"
-  width="1490"
-  height="600"
-  viewBox="0 0 1490 600"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="css-0"
->
+<svg id="nksvg" style="width: 100%; height: 100%" width="1490" height="600" viewBox="0 0 1490 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0">
   <g clip-path="url(#nk-78)">
-    <path
-      style="fill: var(--color-illustrationBackground020)"
-      d="M0 2.86396C0 1.28224 1.7912 0 4.00075 0H1487C1489.21 0 1491 1.28223 1491 2.86395V597.136C1491 598.718 1489.21 600 1487 600H4.00077C1.79122 600 0 598.718 0 597.136V2.86396Z"
-    ></path>
-    <path
-      style="fill: var(--color-illustrationInterface020)"
-      d="M618.648 301.324C618.648 338.506 588.506 368.648 551.324 368.648C514.142 368.648 484 338.506 484 301.324C484 264.142 514.142 234 551.324 234C588.506 234 618.648 264.142 618.648 301.324Z"
-    ></path>
-    <path
-      style="fill: var(--color-red020)"
-      opacity="0.4"
-      d="M626.648 204H655.648V398H626.648V204Z"
-    ></path>
-    <rect
-      x="467"
-      y="185"
-      width="205"
-      height="230"
-      rx="12"
-      stroke="#2B4AAB"
-      stroke-width="6"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-dasharray="16 16"
-    ></rect>
-    <path
-      style="fill: var(--color-illustrationInterface020)"
-      d="M969.648 301.324C969.648 338.506 939.506 368.648 902.324 368.648C865.142 368.648 835 338.506 835 301.324C835 264.142 865.142 234 902.324 234C939.506 234 969.648 264.142 969.648 301.324Z"
-    ></path>
-    <path
-      style="fill: var(--color-red020)"
-      opacity="0.4"
-      d="M977.648 204H1006.65V398H977.648V204Z"
-    ></path>
-    <rect
-      x="818"
-      y="185"
-      width="205"
-      height="230"
-      rx="12"
-      stroke="#2B4AAB"
-      stroke-width="6"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-dasharray="16 16"
-    ></rect>
-    <path
-      style="fill: var(--color-illustrationHighlight010)"
-      d="M720 398L720 204L732 204L732 398L720 398Z"
-    ></path>
-    <path
-      style="fill: var(--color-red020)"
-      opacity="0.4"
-      d="M740 204H769V398H740V204Z"
-    ></path>
-    <rect
-      x="704"
-      y="185"
-      width="82"
-      height="230"
-      rx="12"
-      stroke="#2B4AAB"
-      stroke-width="6"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-dasharray="16 16"
-    ></rect>
+    <path style="fill: var(--color-illustrationBackground020)" d="M0 2.86396C0 1.28224 1.7912 0 4.00075 0H1487C1489.21 0 1491 1.28223 1491 2.86395V597.136C1491 598.718 1489.21 600 1487 600H4.00077C1.79122 600 0 598.718 0 597.136V2.86396Z"></path>
+    <path style="fill: var(--color-illustrationInterface020)" d="M618.648 301.324C618.648 338.506 588.506 368.648 551.324 368.648C514.142 368.648 484 338.506 484 301.324C484 264.142 514.142 234 551.324 234C588.506 234 618.648 264.142 618.648 301.324Z"></path>
+    <path style="fill: var(--color-red020)" opacity="0.4" d="M626.648 204H655.648V398H626.648V204Z"></path>
+    <rect x="467" y="185" width="205" height="230" rx="12" stroke="#2B4AAB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 16"></rect>
+    <path style="fill: var(--color-illustrationInterface020)" d="M969.648 301.324C969.648 338.506 939.506 368.648 902.324 368.648C865.142 368.648 835 338.506 835 301.324C835 264.142 865.142 234 902.324 234C939.506 234 969.648 264.142 969.648 301.324Z"></path>
+    <path style="fill: var(--color-red020)" opacity="0.4" d="M977.648 204H1006.65V398H977.648V204Z"></path>
+    <rect x="818" y="185" width="205" height="230" rx="12" stroke="#2B4AAB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 16"></rect>
+    <path style="fill: var(--color-illustrationHighlight010)" d="M720 398L720 204L732 204L732 398L720 398Z"></path>
+    <path style="fill: var(--color-red020)" opacity="0.4" d="M740 204H769V398H740V204Z"></path>
+    <rect x="704" y="185" width="82" height="230" rx="12" stroke="#2B4AAB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 16"></rect>
   </g>
   <defs>
     <clipPath id="nk-78">

@@ -1,58 +1,12 @@
-<svg
-  id="nksvg"
-  style="width: 100%; height: 100%"
-  width="1490"
-  height="838"
-  viewBox="0 0 1490 838"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="css-0"
->
-  <rect
-    style="fill: var(--color-illustrationBackground020)"
-    width="1490"
-    height="838"
-  ></rect>
-  <path
-    style="fill: var(--color-illustrationPalette050)"
-    d="M881.084 198L745 261.405V419L881.084 355.857V198Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette050)"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M881.084 198V355.857L745 419V261.405L881.084 198ZM879.996 199.708V355.162L746.089 417.295V262.098L879.996 199.708Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette050)"
-    d="M745 419L610.005 482.405V640L745 576.595V419Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette050)"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M745 419V576.595L610.005 640V482.405L745 419ZM743.912 420.714V575.904L611.094 638.286V483.096L743.912 420.714Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette050)"
-    d="M1017.17 419L879.996 482.405V640L1017.17 576.595V419Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette050)"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M1017.17 419V576.595L879.996 640V482.405L1017.17 419ZM1016.08 420.703V575.899L881.084 638.297V483.101L1016.08 420.703Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette070)"
-    d="M610.005 198L745 261.405V419L610.005 355.595V198Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette070)"
-    d="M472.833 419L610.005 482.405V640L472.833 576.595V419Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette070)"
-    d="M745 419L881.084 482.405V640L745 576.595V419Z"
-  ></path>
+<svg id="nksvg" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0">
+  <rect style="fill: var(--color-illustrationBackground020)" width="1490" height="838"></rect>
+  <path style="fill: var(--color-illustrationPalette050)" d="M881.084 198L745 261.405V419L881.084 355.857V198Z"></path>
+  <path style="fill: var(--color-illustrationPalette050)" fill-rule="evenodd" clip-rule="evenodd" d="M881.084 198V355.857L745 419V261.405L881.084 198ZM879.996 199.708V355.162L746.089 417.295V262.098L879.996 199.708Z"></path>
+  <path style="fill: var(--color-illustrationPalette050)" d="M745 419L610.005 482.405V640L745 576.595V419Z"></path>
+  <path style="fill: var(--color-illustrationPalette050)" fill-rule="evenodd" clip-rule="evenodd" d="M745 419V576.595L610.005 640V482.405L745 419ZM743.912 420.714V575.904L611.094 638.286V483.096L743.912 420.714Z"></path>
+  <path style="fill: var(--color-illustrationPalette050)" d="M1017.17 419L879.996 482.405V640L1017.17 576.595V419Z"></path>
+  <path style="fill: var(--color-illustrationPalette050)" fill-rule="evenodd" clip-rule="evenodd" d="M1017.17 419V576.595L879.996 640V482.405L1017.17 419ZM1016.08 420.703V575.899L881.084 638.297V483.101L1016.08 420.703Z"></path>
+  <path style="fill: var(--color-illustrationPalette070)" d="M610.005 198L745 261.405V419L610.005 355.595V198Z"></path>
+  <path style="fill: var(--color-illustrationPalette070)" d="M472.833 419L610.005 482.405V640L472.833 576.595V419Z"></path>
+  <path style="fill: var(--color-illustrationPalette070)" d="M745 419L881.084 482.405V640L745 576.595V419Z"></path>
 </svg>

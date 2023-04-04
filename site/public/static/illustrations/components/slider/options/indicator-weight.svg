@@ -1,7 +1,7 @@
 <svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground020)"/>
-<rect width="1032.89" height="59.5387" rx="29.7693" transform="matrix(1 -0.000450317 0.00153432 0.999999 241.417 534.797)" fill="var(--color-illustrationInterface030)"/>
-<rect width="593.149" height="59.5387" rx="29.7693" transform="matrix(1 -0.000409999 0.0016852 0.999999 215 534.809)" fill="var(--color-illustrationInterface060)"/>
-<rect width="1032.89" height="15.5437" rx="7.77185" transform="matrix(1 -0.000117562 0.00587708 0.999983 241.417 265.121)" fill="var(--color-illustrationInterface030)"/>
-<rect width="593.149" height="15.5438" rx="7.77188" transform="matrix(1 -0.000107036 0.00645498 0.999979 215 265.124)" fill="var(--color-illustrationInterface060)"/>
+<path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground020)"></path>
+<rect width="1032.89" height="59.5387" rx="29.7693" transform="matrix(1 -0.000450317 0.00153432 0.999999 241.417 534.797)" fill="var(--color-illustrationInterface030)"></rect>
+<rect width="593.149" height="59.5387" rx="29.7693" transform="matrix(1 -0.000409999 0.0016852 0.999999 215 534.809)" fill="var(--color-illustrationInterface060)"></rect>
+<rect width="1032.89" height="15.5437" rx="7.77185" transform="matrix(1 -0.000117562 0.00587708 0.999983 241.417 265.121)" fill="var(--color-illustrationInterface030)"></rect>
+<rect width="593.149" height="15.5438" rx="7.77188" transform="matrix(1 -0.000107036 0.00645498 0.999979 215 265.124)" fill="var(--color-illustrationInterface060)"></rect>
 </svg>

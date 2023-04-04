@@ -1,44 +1,8 @@
-<svg
-  id="nksvg"
-  style="width: 100%; height: 100%"
-  width="1490"
-  height="838"
-  viewBox="0 0 1490 838"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="css-0"
->
-  <rect
-    style="fill: var(--color-illustrationBackground020)"
-    width="1490"
-    height="838"
-  ></rect>
-  <rect
-    style="fill: var(--color-illustrationPalette040)"
-    x="234.332"
-    y="400.054"
-    width="38.5134"
-    height="38.5134"
-    rx="19.2567"
-  ></rect>
-  <path
-    style="fill: var(--color-white)"
-    d="M250 413.722V411H255.086V426.385H252.047V413.722H250Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette040)"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M273 418H400V420H273V418Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette040)"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M400 418.811C400 415.819 402.425 413.394 405.417 413.394H412.838V415.228H405.417C403.438 415.228 401.834 416.832 401.834 418.811C401.834 420.789 403.438 422.394 405.417 422.394H412.838V424.228H405.417C402.425 424.228 400 421.802 400 418.811Z"
-  ></path>
-  <path
-    style="fill: var(--color-illustrationPalette040)"
-    d="M450 414H1256V424H450V414Z"
-  ></path>
+<svg id="nksvg" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0">
+  <rect style="fill: var(--color-illustrationBackground020)" width="1490" height="838"></rect>
+  <rect style="fill: var(--color-illustrationPalette040)" x="234.332" y="400.054" width="38.5134" height="38.5134" rx="19.2567"></rect>
+  <path style="fill: var(--color-white)" d="M250 413.722V411H255.086V426.385H252.047V413.722H250Z"></path>
+  <path style="fill: var(--color-illustrationPalette040)" fill-rule="evenodd" clip-rule="evenodd" d="M273 418H400V420H273V418Z"></path>
+  <path style="fill: var(--color-illustrationPalette040)" fill-rule="evenodd" clip-rule="evenodd" d="M400 418.811C400 415.819 402.425 413.394 405.417 413.394H412.838V415.228H405.417C403.438 415.228 401.834 416.832 401.834 418.811C401.834 420.789 403.438 422.394 405.417 422.394H412.838V424.228H405.417C402.425 424.228 400 421.802 400 418.811Z"></path>
+  <path style="fill: var(--color-illustrationPalette040)" d="M450 414H1256V424H450V414Z"></path>
 </svg>
