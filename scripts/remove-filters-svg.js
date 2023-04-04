@@ -18,11 +18,6 @@ async function* getFiles(dir) {
 
 function updateFile(filePath) {
   const regexFilter = new RegExp('filter="url(.*)"');
-  // const fileContent = fs.readFileSync(filePath, {encoding: 'utf8', flag: 'r'});
-  // const contentWithoutFilters = fileContent.replaceAll(regexFilter, '');
-
-  // const regexDefs = new RegExp(/<defs>.*<\/defs>/, 'gis');
-  // const contentWithoutDefs = contentWithoutFilters.replaceAll(regexDefs, '');
 
   const newPath = filePath.replace(
     '/illustrations-original/',
@@ -31,7 +26,6 @@ function updateFile(filePath) {
 
   const fileContent = fs.readFileSync(filePath, {encoding: 'utf8', flag: 'r'});
 
-  // console.log(!regexFilter.test(fileContent), filePath);
   if (!regexFilter.test(fileContent)) {
     fs.writeFileSync(newPath, fileContent, {encoding: 'utf8'});
     return;
@@ -53,13 +47,6 @@ function updateFile(filePath) {
 }
 
 (async () => {
-  // const file1 =
-  //   '/Users/sdelev/projects/newskit/newskit/site/public/static/illustrations-original/about/contact-us-hero-illustration.svg';
-  // updateFile(file1);
-  // const file2 =
-  //   '/Users/sdelev/projects/newskit/newskit/site/public/static/illustrations-original/about/why-use-newskit-hero-illustration.svg';
-  // updateFile(file2);
-
   for await (const filePath of getFiles(
     './site/public/static/illustrations-original/',
   )) {
