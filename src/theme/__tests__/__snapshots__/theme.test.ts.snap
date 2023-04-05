@@ -1719,7 +1719,7 @@ Object {
   "cardActions": Object {},
   "cardComposable": Object {
     "stylePreset": "cardContainer",
-    "transitionPresets": "backgroundColorChange",
+    "transitionPreset": "backgroundColorChange",
   },
   "cardContent": Object {},
   "cardInset": Object {

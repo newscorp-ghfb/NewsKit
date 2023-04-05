@@ -51,6 +51,8 @@ const ThemelessCardComposable = React.forwardRef<
     'cardComposable',
   );
 
+  console.log({overrides});
+
   return (
     <CardProvider value={{useAreas: Boolean(areas)}}>
       <StyledCard ref={ref} areas={areas} {...props} overrides={overrides}>

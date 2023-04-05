@@ -1,7 +1,7 @@
 export default {
   cardComposable: {
     stylePreset: 'cardContainer',
-    transitionPresets: 'backgroundColorChange',
+    transitionPreset: 'backgroundColorChange',
   },
   cardMedia: {},
   cardContent: {},
