@@ -103,6 +103,10 @@ const selectCustomThemeObject: CreateThemeArgs = {
           borderWidth: '{{borders.borderWidthDefault}}',
           borderRadius: '{{borders.borderRadiusDefault}}',
         },
+        hover: {
+          backgroundColor: '{{colors.interactivePrimary010}}',
+          borderColor: '{{colors.interactivePrimary030}}',
+        },
       },
       selectPanelCustom2: {
         base: {
@@ -424,14 +428,10 @@ export const StorySelectVariations = () => (
         aria-describedby="id-var-6-at"
         id="id-6"
         startEnhancer={
-          <IconFilledControlPoint
-            overrides={{stylePreset: 'inkPositive', size: 'iconSize020'}}
-          />
+          <IconFilledControlPoint overrides={{size: 'iconSize020'}} />
         }
         endEnhancer={
-          <IconFilledControlPoint
-            overrides={{stylePreset: 'inkPositive', size: 'iconSize020'}}
-          />
+          <IconFilledControlPoint overrides={{size: 'iconSize020'}} />
         }
       >
         <SelectOption value="Option 1">Option 1</SelectOption>
@@ -862,7 +862,7 @@ export const StorySelectControlled = () => {
           overrides={{stylePreset: 'buttonOutlinedPrimary'}}
           onClick={() => setSelectedValue('Fermium')}
         >
-          Make &apos;Option 2&apos; the selected value
+          Make &apos;Option 8&apos; the selected value
         </Button>
       </StorybookCase>
     </StorybookPage>
