@@ -18,7 +18,7 @@
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
     "dev:docs": "yarn build:icons && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
     "dev:storybook": "yarn build:icons && start-storybook --ci -p 6006",
-    "percy:run": "percy storybook http://localhost:6006",
+    "percy:run": "percy storybook http://localhost:6006 --config=percy.config.js",
     "fetch-external-storybook-fonts": "node ./.storybook/fetch-external-fonts.js",
     "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
     "lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",
