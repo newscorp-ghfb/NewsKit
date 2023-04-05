@@ -27,7 +27,6 @@ import {
   IconFilledBookmarkBorder,
 } from '../../../icons';
 import {LinkInline} from '../../../link';
-import {defaultFocusVisible} from '../../../utils/default-focus-visible';
 import {Tag} from '../../../tag';
 import {VideoPlayer} from '../../../video-player';
 import {DEFATULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/config';
@@ -57,11 +56,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
   name: 'card-custom-theme',
   overrides: {
     stylePresets: {
-      centered: {
-        base: {
-          textAlign: 'center',
-        },
-      },
+      // split stories
       firstSplitBarCustom: {
         base: {
           color: '{{colors.inkBase}}',
@@ -74,30 +69,6 @@ const cardCustomThemeObject: CreateThemeArgs = {
           color: '{{colors.inkBase}}',
           backgroundColor: '{{colors.interactivePrimary020}}',
           textAlign: 'center',
-        },
-      },
-      // TODO: might need to move or move it to defaults
-      headlineLink: {
-        base: {
-          color: '{{colors.inkContrast}}',
-          textDecoration: 'none',
-        },
-        hover: {
-          color: '{{colors.interactivePrimary040}}',
-          textDecoration: 'none',
-        },
-        active: {
-          color: '{{colors.interactivePrimary050}}',
-          textDecoration: 'none',
-        },
-        visited: {
-          color: '{{colors.interactiveVisited010}}',
-        },
-        'focus-visible': defaultFocusVisible,
-      },
-      headlineWithHoverFromParent: {
-        base: {
-          color: 'currentColor',
         },
       },
       // Other stories
@@ -125,7 +96,13 @@ const cardCustomThemeObject: CreateThemeArgs = {
             '{{borders.borderWidth010}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}}',
         },
       },
-      // cardContentSeparateColor
+      // Other stories
+      centered: {
+        base: {
+          textAlign: 'center',
+        },
+      },
+      // Whole card as a link by applying the 'expand' prop
       cardContentSeparateColor: {
         base: {
           boxShadow: '{{shadows.shadow020}}',
@@ -144,22 +121,26 @@ const cardCustomThemeObject: CreateThemeArgs = {
       // Style preset - card and flag colours
       cardContainerWithHover: {
         base: {
-          borderStyle: 'solid',
-          borderColor: '{{colors.inkBrand010}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          backgroundColor: '{{colors.interface010}}',
+          backgroundColor: '{{colors.interfaceInformative020}}',
           color: '{{colors.inkBrand010}}',
         },
         hover: {
           boxShadow: '{{shadows.shadow030}}',
-          backgroundColor: '{{colors.interface020}}',
-          color: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.interfaceInformative010}}',
+          color: '{{colors.inkInverse}}',
         },
       },
-      // Style preset - headline, paragraph, card actions and tag colours
-      cardContainerActionsMock: {
+      currentColor: {
         base: {
-          backgroundColor: '{{colors.amber010}}',
+          color: 'currentColor',
+        },
+      },
+      currentColorTag: {
+        base: {
+          color: 'currentColor',
+          borderStyle: 'solid',
+          borderColor: 'currentColor',
+          borderWidth: '{{borders.borderWidth010}}',
         },
       },
     },
@@ -263,13 +244,7 @@ export const StoryVariations = () => (
       >
         <CardContent rowGap={contentGap}>
           <CardLink href={window.location.href}>
-            <H
-              overrides={{
-                heading: {
-                  // stylePreset: 'headlineLink'
-                },
-              }}
-            />
+            <H />
           </CardLink>
         </CardContent>
         <CardMedia
@@ -293,13 +268,7 @@ export const StoryVariations = () => (
         >
           <Flag>Flag</Flag>
           <CardLink expand href={window.location.href}>
-            <H
-              overrides={{
-                heading: {
-                  // stylePreset: 'headlineLink'
-                },
-              }}
-            />
+            <H />
           </CardLink>
           <P />
         </CardContent>
@@ -546,7 +515,7 @@ const SplitCard = ({columns}: {columns: string}) => {
         <CardMedia
           media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
         />
-        <CardActions>
+        <CardActions alignItems="start">
           <Tag href="/news">Tag</Tag>
         </CardActions>
       </CardComposable>
@@ -589,9 +558,7 @@ export const StoryOrder = () => (
           media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
         />
         <CardActions>
-          <Tag onClick={() => alert('Tag clicked')} size="medium">
-            Tag
-          </Tag>
+          <Tag size="medium">Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -651,29 +618,6 @@ export const StoryResponsiveCard = () => (
   </StorybookPage>
 );
 StoryResponsiveCard.storyName = 'Responsive card';
-
-export const StoryOnClick = () => (
-  <StorybookPage>
-    <StorybookCase title="onClick handler on Tag">
-      <CardComposable overrides={{maxWidth: '250px'}} rowGap={areasGap}>
-        <CardContent rowGap={contentGap}>
-          <Flag>Flag</Flag>
-          <H />
-          <P />
-        </CardContent>
-        <CardMedia
-          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
-        />
-        <CardActions>
-          <Tag onClick={() => alert('Tag clicked')} size="medium">
-            Tag
-          </Tag>
-        </CardActions>
-      </CardComposable>
-    </StorybookCase>
-  </StorybookPage>
-);
-StoryOnClick.storyName = 'On click';
 
 export const StoryLogicalProps = () => (
   <StorybookPage>
@@ -772,61 +716,31 @@ export const StoryOverrides = () => (
           <H
             overrides={{
               heading: {
-                stylePreset: 'headlineWithHoverFromParent',
+                stylePreset: 'currentColor',
               },
             }}
           />
-          <P />
+          <P stylePreset="currentColor" />
         </CardContent>
-        {/* CardActions might be better to be a Grid instead of Block so all sub-components are consistent? */}
         <CardActions
           overrides={{paddingBlockEnd: 'space040', paddingInline: 'space040'}}
         >
-          <Tag href="http://example.com" size="medium">
+          <Tag
+            href="http://example.com"
+            size="medium"
+            overrides={{stylePreset: 'currentColorTag'}}
+          >
             Tag
           </Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
 
-    <StorybookCase title="Style preset - headline, paragraph, card actions and tag colours">
+    <StorybookCase title="Typography preset - Headline">
       <CardComposable
-        overrides={{
-          maxWidth: '372px',
-        }}
+        overrides={{maxWidth: '372px', stylePreset: 'no'}}
         rowGap={areasGap}
       >
-        <CardMedia
-          media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
-        />
-        <CardContent
-          overrides={{paddingInline: 'space040'}}
-          rowGap={contentGap}
-        >
-          <Flag>Flag</Flag>
-          <H
-            overrides={{
-              heading: {
-                stylePreset: 'inkBrand010',
-              },
-            }}
-          />
-          <P stylePreset="cardContainerActionsMock" />
-        </CardContent>
-        <CardActions
-          overrides={{
-            paddingInline: 'space040',
-            stylePreset: 'cardContainerActionsMock',
-          }}
-        >
-          <Tag href="http://example.com" size="medium">
-            Tag
-          </Tag>
-        </CardActions>
-      </CardComposable>
-    </StorybookCase>
-    <StorybookCase title="Typography preset - Headline">
-      <CardComposable overrides={{maxWidth: '372px'}} rowGap={areasGap}>
         <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
           <H
@@ -853,7 +767,7 @@ StoryOverrides.storyName = 'Styling overrides';
 // https://www.linkedin.com/search/results/content/?keywords=design&origin=FACETED_SEARCH&postedBy=%5B%22first%22%2C%22following%22%5D&sid=xxV&sortBy=%22relevance%22
 export const ComplexStory = () => (
   <StorybookPage>
-    <StorybookCase title="Random card">
+    <StorybookCase title="Other card">
       <CardComposable
         overrides={{maxWidth: '250px', stylePreset: 'cardBook'}}
         style={{overflow: 'hidden'}}
@@ -973,10 +887,8 @@ export const ComplexStory = () => (
             }}
           />
           <TextBlock typographyPreset="utilityBody020" stylePreset="inkBase">
-            Featuring free WiFi, Palacio de Rojas is located 350 m from the
-            Lonja Silk Exchange and Valencia’s Central Market. It offers
-            air-conditioned apartments with city views. Private parking is
-            offered upon request.
+            Short paragraph description of the article, outlining main story and
+            focus.
           </TextBlock>
         </CardContent>
         <CardActions
