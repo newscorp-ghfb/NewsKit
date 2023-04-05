@@ -123,5 +123,8 @@ export const CardActions = React.forwardRef<HTMLDivElement, CardActionsProps>(
 );
 
 export const CardLink = React.forwardRef<HTMLAnchorElement, CardLinkProps>(
-  (props, ref) => <StyledLink ref={ref} {...props} />,
+  (props, ref) => {
+    const overrides = useGetOverrides<CardLinkProps>(props, 'cardLink');
+    return <StyledLink ref={ref} overrides={overrides} {...props} />;
+  },
 );

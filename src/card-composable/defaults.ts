@@ -6,4 +6,5 @@ export default {
   cardMedia: {},
   cardContent: {},
   cardActions: {},
+  cardLink: {},
 };
