@@ -94,6 +94,7 @@ export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
         ref={ref}
         areaName={useAreas ? 'content' : undefined}
         justifyItems="start"
+        alignItems="start"
         overrides={overrides}
         {...props}
       />
@@ -113,6 +114,7 @@ export const CardActions = React.forwardRef<HTMLDivElement, CardActionsProps>(
         ref={ref}
         areaName={useAreas ? 'actions' : undefined}
         justifyContent="start"
+        alignItems="start"
         overrides={overrides}
         {...props}
       />

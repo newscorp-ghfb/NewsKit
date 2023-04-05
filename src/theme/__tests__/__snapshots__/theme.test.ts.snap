@@ -1716,9 +1716,7 @@ Object {
       "paddingInline": "space000",
     },
   },
-  "cardActions": Object {
-    "minHeight": "sizing080",
-  },
+  "cardActions": Object {},
   "cardComposable": Object {
     "stylePreset": "cardContainer",
     "transitionPresets": "backgroundColorChange",

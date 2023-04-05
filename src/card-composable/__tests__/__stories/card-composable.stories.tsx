@@ -78,7 +78,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
           borderColor: '{{colors.interface020}}',
           borderWidth: '{{borders.borderWidth010}}',
           boxShadow: '{{shadows.shadow030}}',
-          borderRadius: '{{borders.borderRadiusRounded030}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
           backgroundColor: '{{colors.interfaceBackground}}',
         },
         hover: {
@@ -274,8 +274,8 @@ export const StoryVariations = () => (
         </CardContent>
         <CardMedia
           media={{
-            src: 'https://storybook.newskit.co.uk/placeholder-4x5.png',
-            loadingAspectRatio: '4:5',
+            src: 'https://storybook.newskit.co.uk/placeholder-3x2.png',
+            loadingAspectRatio: '3:2',
           }}
         />
         <CardActions
@@ -515,7 +515,7 @@ const SplitCard = ({columns}: {columns: string}) => {
         <CardMedia
           media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
         />
-        <CardActions alignItems="start">
+        <CardActions>
           <Tag href="/news">Tag</Tag>
         </CardActions>
       </CardComposable>
@@ -589,15 +589,22 @@ export const StoryResponsiveCard = () => (
         }}
       >
         <CardContent rowGap={contentGap}>
-          <H />
+          <H
+            overrides={{
+              typographyPreset: {
+                xl: 'editorialHeadline060',
+                md: 'editorialHeadline050',
+                xs: 'editorialHeadline030',
+              },
+            }}
+          />
           <P />
           <UnorderedList
             overrides={{
               content: {
                 typographyPreset: {
-                  xl: 'editorialParagraph030',
-                  md: 'editorialParagraph020',
                   xs: 'editorialParagraph010',
+                  md: 'editorialParagraph020',
                 },
                 stylePreset: 'inkBase',
               },

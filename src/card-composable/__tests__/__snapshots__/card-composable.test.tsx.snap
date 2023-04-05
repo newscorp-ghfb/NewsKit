@@ -17,6 +17,10 @@ exports[`CardComposable renders defaults 1`] = `
   padding: 0;
   display: grid;
   justify-items: start;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
   grid-area: content;
 }
 
@@ -195,7 +199,10 @@ exports[`CardComposable renders defaults 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: start;
   justify-content: start;
-  min-height: 48px;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
   grid-area: actions;
   position: relative;
   z-index: 2;
@@ -263,6 +270,10 @@ exports[`CardComposable renders without areas 1`] = `
   padding: 0;
   display: grid;
   justify-items: start;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
 .emotion-2 {
@@ -432,7 +443,10 @@ exports[`CardComposable renders without areas 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: start;
   justify-content: start;
-  min-height: 48px;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
   position: relative;
   z-index: 2;
 }

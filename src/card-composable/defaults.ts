@@ -5,7 +5,5 @@ export default {
   },
   cardMedia: {},
   cardContent: {},
-  cardActions: {
-    minHeight: 'sizing080',
-  },
+  cardActions: {},
 };
