@@ -226,51 +226,51 @@ export const StorySelectSize = () => (
   <StorybookPage columns="1fr 1fr 1fr">
     <StorybookCase title="Small">
       <Block>
-        <Label htmlFor="id-1" size="small">
+        <Label htmlFor="id-size-1" size="small">
           Label
         </Label>
-        <Select aria-describedby="id-1-at" id="id-1" size="small">
+        <Select aria-describedby="id-size-1-at" id="id-size-1" size="small">
           {items.map(item => (
             <SelectOption key={item} value={item}>
               {item}
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-1-at" size="small">
+        <AssistiveText id="id-size-1-at" size="small">
           Assistive Text
         </AssistiveText>
       </Block>
     </StorybookCase>
     <StorybookCase title="Medium">
       <Block>
-        <Label htmlFor="id-2" size="medium">
+        <Label htmlFor="id-size-2" size="medium">
           Label
         </Label>
-        <Select aria-describedby="id-2-at" id="id-2" size="medium">
+        <Select aria-describedby="id-size-2-at" id="id-size-2" size="medium">
           {items.map(item => (
             <SelectOption key={item} value={item}>
               {item}
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-2-at" size="medium">
+        <AssistiveText id="id-size-2-at" size="medium">
           Assistive Text
         </AssistiveText>
       </Block>
     </StorybookCase>
     <StorybookCase title="Large">
       <Block>
-        <Label htmlFor="id-3" size="large">
+        <Label htmlFor="id-size-3" size="large">
           Label
         </Label>
-        <Select aria-describedby="id-3-at" id="id-3" size="large">
+        <Select aria-describedby="id-size-3-at" id="id-size-3" size="large">
           {items.map(item => (
             <SelectOption key={item} value={item}>
               {item}
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-3-at" size="large">
+        <AssistiveText id="id-size-3-at" size="large">
           Assistive Text
         </AssistiveText>
       </Block>
@@ -339,10 +339,10 @@ StorySelectHeight.storyName = 'Height';
 export const StorySelectVariations = () => (
   <StorybookPage columns="1fr 1fr 1fr">
     <StorybookCase title="Custom placeholder">
-      <Label htmlFor="id-1">Label</Label>
+      <Label htmlFor="id-var-1">Label</Label>
       <Select
-        aria-describedby="id-1-at"
-        id="id-1"
+        aria-describedby="id-var-1-at"
+        id="id-var-1"
         placeholder="A custom placeholder"
       >
         {items.map(item => (
@@ -351,13 +351,13 @@ export const StorySelectVariations = () => (
           </SelectOption>
         ))}
       </Select>
-      <AssistiveText id="id-1-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-var-1-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="Disabled">
-      <Label htmlFor="id-2">Label</Label>
+      <Label htmlFor="id-var-2">Label</Label>
       <Select
-        aria-describedby="id-2-at"
-        id="id-2"
+        aria-describedby="id-var-2-at"
+        id="id-var-2"
         state="disabled"
         placeholder="Disabled"
       >
@@ -367,13 +367,13 @@ export const StorySelectVariations = () => (
           </SelectOption>
         ))}
       </Select>
-      <AssistiveText id="id-2-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-var-2-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="Loading">
-      <Label htmlFor="id-3">Label</Label>
+      <Label htmlFor="id-var-3">Label</Label>
       <Select
-        aria-describedby="id-3-at"
-        id="id-3"
+        aria-describedby="id-var-3-at"
+        id="id-var-3"
         loading
         placeholder="Loading"
       >
@@ -383,11 +383,11 @@ export const StorySelectVariations = () => (
           </SelectOption>
         ))}
       </Select>
-      <AssistiveText id="id-3-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-var-3-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="Custom selected display">
-      <Label htmlFor="id-4">Label</Label>
-      <Select aria-describedby="id-4-at" id="id-4">
+      <Label htmlFor="id-var-4">Label</Label>
+      <Select aria-describedby="id-var-4-at" id="id-var-4">
         <SelectOption
           selectedIcon={
             <IconFilledCheckCircle overrides={{size: 'iconSize020'}} />
@@ -406,22 +406,22 @@ export const StorySelectVariations = () => (
           Custom Display
         </SelectOption>
       </Select>
-      <AssistiveText id="id-4-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-var-4-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="Pre-selected option">
-      <Label htmlFor="id-5">Label</Label>
-      <Select aria-describedby="id-5-at" id="id-5">
+      <Label htmlFor="id-var-5">Label</Label>
+      <Select aria-describedby="id-var-5-at" id="id-var-5">
         <SelectOption value="Option 1">Option 1</SelectOption>
         <SelectOption defaultSelected value="Option 2">
           Option 2
         </SelectOption>
       </Select>
-      <AssistiveText id="id-5-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-var-5-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="Start and end enhancers">
-      <Label htmlFor="id-6">Label</Label>
+      <Label htmlFor="id-var-6">Label</Label>
       <Select
-        aria-describedby="id-6-at"
+        aria-describedby="id-var-6-at"
         id="id-6"
         startEnhancer={
           <IconFilledControlPoint
@@ -437,7 +437,7 @@ export const StorySelectVariations = () => (
         <SelectOption value="Option 1">Option 1</SelectOption>
         <SelectOption value="Option 2">Option 2</SelectOption>
       </Select>
-      <AssistiveText id="id-6-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-var-6-at">Assistive Text</AssistiveText>
     </StorybookCase>
   </StorybookPage>
 );
@@ -446,8 +446,8 @@ StorySelectVariations.storyName = 'Variations';
 export const StorySelectOptionsDisplay = () => (
   <StorybookPage>
     <StorybookCase title="Padding of options overridden">
-      <Label htmlFor="id-2">Label</Label>
-      <Select id="id-2" aria-describedby="id-2-at">
+      <Label htmlFor="id-opt-2">Label</Label>
+      <Select id="id-opt-2" aria-describedby="id-opt-2-at">
         {items.map(item => (
           <SelectOption
             key={item}
@@ -461,22 +461,22 @@ export const StorySelectOptionsDisplay = () => (
           </SelectOption>
         ))}
       </Select>
-      <AssistiveText id="id-2-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-opt-2-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="Rendering only option value, using selectedDisplay">
-      <Label htmlFor="id-3">Label</Label>
-      <Select id="id-3" aria-describedby="id-3-at">
+      <Label htmlFor="id-opt-3">Label</Label>
+      <Select id="id-opt-3" aria-describedby="id-opt-3-at">
         {items.map(item => (
           <SelectOption key={item} value={item} selectedDisplay={item}>
             {item}
           </SelectOption>
         ))}
       </Select>
-      <AssistiveText id="id-3-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-opt-3-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="minHeight of options overridden">
-      <Label htmlFor="id-4">Label</Label>
-      <Select id="id-4" aria-describedby="id-4-at">
+      <Label htmlFor="id-opt-4">Label</Label>
+      <Select id="id-opt-4" aria-describedby="id-opt-4-at">
         {items.map(item => (
           <SelectOption
             key={item}
@@ -489,7 +489,7 @@ export const StorySelectOptionsDisplay = () => (
           </SelectOption>
         ))}
       </Select>
-      <AssistiveText id="id-4-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-opt-4-at">Assistive Text</AssistiveText>
     </StorybookCase>
   </StorybookPage>
 );
@@ -498,13 +498,13 @@ StorySelectOptionsDisplay.storyName = 'Option display';
 export const StorySelectScreenReaderExample = () => (
   <StorybookPage>
     <StorybookCase title="With assistive text">
-      <Label htmlFor="id-11" id="id-11-label">
+      <Label htmlFor="id-srd-11" id="id-srd-11-label">
         Label
       </Label>
       <Select
-        id="id-11"
-        aria-labelledby="id-11-label id-11"
-        aria-describedby="id-11-at"
+        id="id-srd-11"
+        aria-labelledby="id-srd-11-label id-srd-11"
+        aria-describedby="id-srd-11-at"
       >
         {items.map(item => (
           <SelectOption
@@ -516,13 +516,13 @@ export const StorySelectScreenReaderExample = () => (
           </SelectOption>
         ))}
       </Select>
-      <AssistiveText id="id-11-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-srd-11-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="Without assistive text">
-      <Label htmlFor="id-12" id="id-12-label">
+      <Label htmlFor="id-srd-12" id="id-srd-12-label">
         Label
       </Label>
-      <Select id="id-12" aria-labelledby="id-12-label id-12">
+      <Select id="id-srd-12" aria-labelledby="id-srd-12-label id-srd-12">
         {items.map(item => (
           <SelectOption
             key={item}
@@ -906,7 +906,7 @@ export const StorySelectStylingOverrides = () => (
   <StorybookPage>
     <Block>
       <Label
-        htmlFor="id-1"
+        htmlFor="id-so-1"
         overrides={{
           stylePreset: 'selectOptionCustom2',
         }}
@@ -914,8 +914,8 @@ export const StorySelectStylingOverrides = () => (
         Label
       </Label>
       <Select
-        id="id-1"
-        aria-describedby="id-1-at"
+        id="id-so-1"
+        aria-describedby="id-so-1-at"
         overrides={{
           button: {
             stylePreset: 'selectContainerCustom2',
@@ -938,7 +938,7 @@ export const StorySelectStylingOverrides = () => (
         ))}
       </Select>
       <AssistiveText
-        id="id-1-at"
+        id="id-so-1-at"
         overrides={{
           stylePreset: 'selectOptionCustom2',
         }}
@@ -964,10 +964,10 @@ export const StoryOverrides = () => {
   return (
     <StorybookPage columns="auto auto">
       <StorybookCase title="Custom icon override">
-        <Label htmlFor="id-1">Label</Label>
+        <Label htmlFor="id-ov-1">Label</Label>
         <Select
-          id="id-1"
-          aria-describedby="id-1-at"
+          id="id-ov-1"
+          aria-describedby="id-ov-1-at"
           overrides={{
             button: {
               indicatorIcon: CustomIcon,
@@ -980,13 +980,13 @@ export const StoryOverrides = () => {
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-1-at">Assistive Text</AssistiveText>
+        <AssistiveText id="id-ov-1-at">Assistive Text</AssistiveText>
       </StorybookCase>
       <StorybookCase title="Custom outline & loading icon">
-        <Label htmlFor="id-2">Label</Label>
+        <Label htmlFor="id-ov-2">Label</Label>
         <Select
-          id="id-2"
-          aria-describedby="id-2-at"
+          id="id-ov-2"
+          aria-describedby="id-ov-2-at"
           loading
           overrides={{
             button: {
@@ -1007,13 +1007,13 @@ export const StoryOverrides = () => {
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-2-at">Assistive Text</AssistiveText>
+        <AssistiveText id="id-ov-2-at">Assistive Text</AssistiveText>
       </StorybookCase>
       <StorybookCase title="Padding of select container">
-        <Label htmlFor="id-3">Label</Label>
+        <Label htmlFor="id-ov-3">Label</Label>
         <Select
-          id="id-3"
-          aria-describedby="id-3-at"
+          id="id-ov-3"
+          aria-describedby="id-ov-3-at"
           startEnhancer={<span style={{width: '32px'}} />}
           endEnhancer={<span style={{width: '32px'}} />}
         >
@@ -1023,13 +1023,13 @@ export const StoryOverrides = () => {
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-3-at">Assistive Text</AssistiveText>
+        <AssistiveText id="id-ov-3-at">Assistive Text</AssistiveText>
       </StorybookCase>
       <StorybookCase title="Padding of select panel & button overridden">
-        <Label htmlFor="id-4">Label</Label>
+        <Label htmlFor="id-ov-4">Label</Label>
         <Select
-          id="id-4"
-          aria-describedby="id-4-at"
+          id="id-ov-4"
+          aria-describedby="id-ov-4-at"
           overrides={{
             button: {
               paddingInlineStart: 'space050',
@@ -1048,14 +1048,14 @@ export const StoryOverrides = () => {
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-4-at">Assistive Text</AssistiveText>
+        <AssistiveText id="id-ov-4-at">Assistive Text</AssistiveText>
       </StorybookCase>
       <StorybookCase title="Margin of select panel & button overridden">
-        <Label htmlFor="id-5">Label</Label>
+        <Label htmlFor="id-ov-5">Label</Label>
         <DottedBlock>
           <Select
-            id="id-5"
-            aria-describedby="id-5-at"
+            id="id-ov-5"
+            aria-describedby="id-ov-5-at"
             overrides={{
               button: {
                 marginInlineStart: 'space050',
@@ -1075,11 +1075,11 @@ export const StoryOverrides = () => {
             ))}
           </Select>
         </DottedBlock>
-        <AssistiveText id="id-5-at">Assistive Text</AssistiveText>
+        <AssistiveText id="id-ov-5-at">Assistive Text</AssistiveText>
       </StorybookCase>
       <StorybookCase title="Margin of options overridden">
-        <Label htmlFor="id-6">Label</Label>
-        <Select id="id-6" aria-describedby="id-6-at">
+        <Label htmlFor="id-ov-6">Label</Label>
+        <Select id="id-ov-6" aria-describedby="id-ov-6-at">
           {items.map(item => (
             <SelectOption
               key={item}
@@ -1093,7 +1093,7 @@ export const StoryOverrides = () => {
             </SelectOption>
           ))}
         </Select>
-        <AssistiveText id="id-6-at">Assistive Text</AssistiveText>
+        <AssistiveText id="id-ov-6-at">Assistive Text</AssistiveText>
       </StorybookCase>
     </StorybookPage>
   );
