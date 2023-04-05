@@ -68,10 +68,12 @@ export const CardComposable = withOwnTheme(ThemelessCardComposable)({
 export const CardMedia = React.forwardRef<HTMLDivElement, CardMediaProps>(
   ({media, children, ...props}, ref) => {
     const {useAreas} = useCardContext();
+    const overrides = useGetOverrides<CardComposableProps>(props, 'cardMedia');
     return (
       <StyledMedia
         ref={ref}
         areaName={useAreas ? 'media' : undefined}
+        overrides={overrides}
         {...props}
       >
         {children || <Image alt="" {...media} />}
@@ -83,11 +85,16 @@ export const CardMedia = React.forwardRef<HTMLDivElement, CardMediaProps>(
 export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
   (props, ref) => {
     const {useAreas} = useCardContext();
+    const overrides = useGetOverrides<CardComposableProps>(
+      props,
+      'cardContent',
+    );
     return (
       <StyledContent
         ref={ref}
         areaName={useAreas ? 'content' : undefined}
         justifyItems="start"
+        overrides={overrides}
         {...props}
       />
     );
@@ -97,11 +104,16 @@ export const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
 export const CardActions = React.forwardRef<HTMLDivElement, CardActionsProps>(
   (props, ref) => {
     const {useAreas} = useCardContext();
+    const overrides = useGetOverrides<CardComposableProps>(
+      props,
+      'cardActions',
+    );
     return (
       <StyledActions
         ref={ref}
         areaName={useAreas ? 'actions' : undefined}
         justifyContent="start"
+        overrides={overrides}
         {...props}
       />
     );

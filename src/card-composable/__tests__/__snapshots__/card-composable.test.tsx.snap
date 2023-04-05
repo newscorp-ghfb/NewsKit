@@ -195,6 +195,7 @@ exports[`CardComposable renders defaults 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: start;
   justify-content: start;
+  min-height: 48px;
   grid-area: actions;
   position: relative;
   z-index: 2;
@@ -431,6 +432,7 @@ exports[`CardComposable renders without areas 1`] = `
   -ms-flex-pack: start;
   -webkit-justify-content: start;
   justify-content: start;
+  min-height: 48px;
   position: relative;
   z-index: 2;
 }

@@ -18,8 +18,8 @@ export const StyledCard = styled(StyledGrid)`
   position: relative;
 `;
 
-export const StyledMedia = styled(StyledGrid)``;
-export const StyledContent = styled(StyledGrid)``;
+export const StyledMedia = StyledGrid;
+export const StyledContent = StyledGrid;
 
 export const StyledActions = styled(StyledGrid)`
   position: relative;

@@ -1723,6 +1723,7 @@ Object {
     "stylePreset": "cardContainer",
     "transitionPresets": "backgroundColorChange",
   },
+  "cardContent": Object {},
   "cardInset": Object {
     "actionsContainer": Object {
       "minHeight": "sizing000",
@@ -1759,6 +1760,7 @@ Object {
       },
     },
   },
+  "cardMedia": Object {},
   "characterCount": Object {
     "large": Object {
       "marginBlockEnd": "space020",

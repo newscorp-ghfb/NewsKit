@@ -3,10 +3,12 @@ import {GridLayoutProps} from '../grid-layout/types';
 import {ImageProps} from '../image';
 import {MQ} from '../utils';
 import {LinkProps} from '../link';
+import {TransitionToken} from '../theme';
 
 export type StylableGridLayout = GridLayoutProps & {
   overrides?: {
     stylePreset?: MQ<string>;
+    transitionPreset?: TransitionToken | TransitionToken[];
   };
 };
 
