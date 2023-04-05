@@ -2,6 +2,7 @@
 const {resolve} = require('path');
 const {readdir} = require('fs').promises;
 const fs = require('fs');
+// NOTE: this script needs cheerio is not part of deps, so install additionally if needed
 const cheerio = require('cheerio');
 
 async function* getFiles(dir) {
