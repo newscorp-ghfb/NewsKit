@@ -16,7 +16,7 @@ changelog:
         - fix
     - title: Documentation 📝
       labels:
-        - doc
+        - docs
     - title: Other Changes 🧱
       labels:
         - "*"

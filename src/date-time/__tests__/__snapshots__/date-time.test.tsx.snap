@@ -36,16 +36,66 @@ exports[`DateTime renders with additional HTML attributes 1`] = `
   white-space: normal;
 }
 
-<time
+<span
     class="emotion-0"
     id="date-time-id"
   >
-    <span
+    <time
       class="emotion-1"
+      datetime="2019-01-25 03:32:00+00"
     >
-      Mock Date 
-    </span>
-  </time>
+      January 25 2019, 3:32pm 
+    </time>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`DateTime renders with children 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin: 0;
+  color: #6A6A6A;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  white-space: pre;
+}
+
+.emotion-1 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-1:before,
+.emotion-1:after {
+  white-space: normal;
+}
+
+<span
+    class="emotion-0"
+  >
+    <time
+      class="emotion-1"
+      datetime="2019-01-25 03:32:00+00"
+    >
+      2 years ago 
+    </time>
+  </span>
 </DocumentFragment>
 `;
 
@@ -85,15 +135,16 @@ exports[`DateTime renders with fallback formatting 1`] = `
   white-space: normal;
 }
 
-<time
+<span
     class="emotion-0"
   >
-    <span
+    <time
       class="emotion-1"
+      datetime="2019-01-25 03:32:00+00"
     >
-      Mock Date 
-    </span>
-  </time>
+      January 25 2019, 3:32pm 
+    </time>
+  </span>
 </DocumentFragment>
 `;
 
@@ -138,7 +189,7 @@ exports[`DateTime renders with logical props overrides 1`] = `
   white-space: normal;
 }
 
-<time
+<span
     class="emotion-0"
   >
     <span
@@ -146,17 +197,18 @@ exports[`DateTime renders with logical props overrides 1`] = `
     >
       Updated: 
     </span>
-    <span
+    <time
       class="emotion-1"
+      datetime="2017-01-01 04:32:00+00"
     >
-      Mock Date, 
-    </span>
+      1 Jan 2017, 4:32, 
+    </time>
     <span
       class="emotion-1"
     >
       , The Times
     </span>
-  </time>
+  </span>
 </DocumentFragment>
 `;
 
@@ -220,7 +272,7 @@ exports[`DateTime renders with overrides 1`] = `
   white-space: normal;
 }
 
-<time
+<span
     class="emotion-0"
   >
     <span
@@ -228,17 +280,18 @@ exports[`DateTime renders with overrides 1`] = `
     >
       Updated: 
     </span>
-    <span
+    <time
       class="emotion-2"
+      datetime="2017-01-01 04:32:00+00"
     >
-      Mock Date, 
-    </span>
+      1 Jan 2017, 4:32, 
+    </time>
     <span
       class="emotion-1"
     >
       , The Times
     </span>
-  </time>
+  </span>
 </DocumentFragment>
 `;
 
@@ -278,7 +331,7 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
   white-space: normal;
 }
 
-<time
+<span
     class="emotion-0"
   >
     <span
@@ -286,16 +339,66 @@ exports[`DateTime renders with provided date, format, prefix and suffix 1`] = `
     >
       Updated:  
     </span>
-    <span
+    <time
       class="emotion-1"
+      datetime="2019-01-25 03:32:00+00"
     >
-      Mock Date, 
-    </span>
+      25 Jan 2019, 15:32, 
+    </time>
     <span
       class="emotion-1"
     >
       , The Times
     </span>
-  </time>
+  </span>
+</DocumentFragment>
+`;
+
+exports[`DateTime renders with timestamp 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin: 0;
+  color: #6A6A6A;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 0.5px 0px;
+  display: inline-block;
+  white-space: pre;
+}
+
+.emotion-1 svg {
+  fill: #6A6A6A;
+}
+
+.emotion-1::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-1::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-1:before,
+.emotion-1:after {
+  white-space: normal;
+}
+
+<span
+    class="emotion-0"
+  >
+    <time
+      class="emotion-1"
+      datetime="2023-03-28 08:58:28+00"
+    >
+      March 28 2023, 8:58am 
+    </time>
+  </span>
 </DocumentFragment>
 `;

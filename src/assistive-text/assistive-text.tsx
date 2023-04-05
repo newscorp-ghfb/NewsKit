@@ -47,7 +47,7 @@ const ThemelessAssistiveText = React.forwardRef<
             state={state}
             role={state === 'invalid' ? 'alert' : undefined}
             aria-live={state === 'invalid' ? 'polite' : undefined}
-            {...textBlockOverrides}
+            overrides={textBlockOverrides}
             {...props}
           >
             {children}
