@@ -1,42 +1,99 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, {useEffect} from 'react';
+import {Story as StoryType} from '@storybook/react';
 import {Modal} from '..';
 import {styled} from '../../utils/style';
-import {
-  StorybookHeading,
-  StorybookParah,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
 import {Button} from '../../button';
-import {LinkInline} from '../../link';
-import {Stack} from '../../stack';
-import {H1, P} from '../../typography';
 import {useHasMounted} from '../../utils/hooks';
 import {Select, SelectOption} from '../../select';
+import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {Label, Block, P} from '../..';
+import {AssistiveText} from '../../assistive-text';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {deepMerge} from '../../utils';
+import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 
-const Box = styled.div`
-  width: 400px;
-`;
+const modalPanel = {
+  base: {
+    backgroundColor: '{{colors.interface020}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+  },
+};
 
-const scrollContent =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum justo id rutrum consectetur. Cras ultrices diam id dapibus viverra. Integer non velit vitae elit porta condimentum. Cras ultrices lectus eu porttitor volutpat. In hac habitasse platea dictumst. Integer maximus leo quis sapien aliquet finibus. Cras lobortis leo quis massa commodo ornare. Donec ac ligula sed mauris sodales pretium id eu nibh. Pellentesque et eros viverra, dignissim ante in, tincidunt eros. Curabitur mattis purus dolor, non aliquam sapien auctor quis. Morbi sit amet leo in urna dictum imperdiet vitae sed velit. In auctor nulla sed lectus ultricies dignissim. In mattis.';
+const modalPanelCustomHeightWidth = {
+  base: {
+    width: '348px',
+    height: '268px',
+    minWidth: '20vw',
+    maxWidth: '80vw',
+    minHeight: '20vh',
+    maxHeight: {
+      xs: '90vh',
+      md: '85vh',
+    },
+  },
+};
+
+const modalPanelCustomBg = {
+  base: {
+    backgroundColor: '{{colors.interfaceInformative020}}',
+  },
+};
 
 const modalContent = (
-  <Stack
-    flow="vertical-center"
-    stackDistribution="center"
-    spaceInline="space020"
-  >
-    <H1>You need an account</H1>
-    <StorybookParah>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. (Double click for more text :) )
-    </StorybookParah>
-    <Button>Register for a free account</Button>
-    <P>Already have an account?</P>
-    <LinkInline href="/">Sign in here</LinkInline>
-  </Stack>
+  <P overrides={{typographyPreset: 'editorialParagraph010'}}>Content</P>
 );
+
+const ModaleCustomThemeObject: CreateThemeArgs = {
+  name: 'my-custom-modal-theme',
+  overrides: {
+    stylePresets: {
+      modalHeader: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderColor: '{{colors.interface050}}',
+        },
+      },
+      overlayCustom: {
+        base: {
+          backgroundColor: '{{colors.overlayTintBase010}}',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+        },
+      },
+      modalHeaderCustom: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+          borderStyle: 'none none solid none',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderColor: '{{colors.inkBrand010}}',
+          color: '{{colors.inkBrand010}}',
+        },
+      },
+      modalContentCustom: {
+        base: {
+          color: '{{colors.inkBrand010}}',
+        },
+      },
+      modalCloseButtonCustom: {
+        base: {
+          borderWidth: '{{borders.borderWidth010}}',
+          backgroundColor: '{{colors.transparent}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+      },
+
+      modalPanelCustom: deepMerge(
+        {},
+        modalPanelCustomBg,
+        modalPanelCustomHeightWidth,
+      ),
+
+      modalPanelDefault: deepMerge({}, modalPanel, modalPanelCustomHeightWidth),
+    },
+  },
+};
 
 const useActiveState = (initial = false): [boolean, () => void, () => void] => {
   const [isActive, setIsActive] = React.useState(initial);
@@ -48,9 +105,24 @@ const useActiveState = (initial = false): [boolean, () => void, () => void] => {
 };
 
 export default {
-  title: 'Components/modal',
+  title: 'Components/Modal',
   component: () => 'None',
-  disabledRules: ['tabindex'], // Because of scenario 'open on page load'
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          ModaleCustomThemeObject,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
 
 export const StoryModalDefault = () =>
@@ -58,34 +130,36 @@ export const StoryModalDefault = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
-        <StorybookHeading>Default Modal</StorybookHeading>
-        <Button onClick={open} data-testid="modal-open-button">
-          Open Modal
-        </Button>
-        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-        <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>Another button to open the modal</Button>
-              )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
-            </>
-          ))}
-        </Box>
-        <Modal
-          aria-label="Default Modal"
-          open={isActive}
-          onDismiss={close}
-          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-        >
-          {modalContent}
-        </Modal>
-      </div>
+      <StorybookPage data-testid="scrollable-modal">
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            aria-label="Default Modal"
+            open={isActive}
+            onDismiss={close}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
-StoryModalDefault.storyName = 'default';
+StoryModalDefault.storyName = 'Default';
 StoryModalDefault.parameters = {
   percy: {skip: true},
   previewTabs: {
@@ -97,7 +171,6 @@ StoryModalDefault.parameters = {
     page: null,
   },
 };
-
 export const StoryOpenOnPageLoad = () =>
   React.createElement(() => {
     const hasMounted = useHasMounted();
@@ -108,36 +181,154 @@ export const StoryOpenOnPageLoad = () =>
     }, [hasMounted, open]);
 
     return (
-      <>
-        <StorybookHeading>Open modal on page load</StorybookHeading>
-        <StorybookParah>Refresh the page to open the modal</StorybookParah>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          aria-label="Open modal on page load"
-          header="Modal header"
-        >
-          <Stack
-            flow="vertical-center"
-            stackDistribution="center"
-            spaceInline="space020"
+      <StorybookPage>
+        <StorybookCase>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            aria-label="Open modal on page load"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
           >
-            <H1>You need an account</H1>
-            <StorybookParah>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam. (Double
-              click for more text :) )
-            </StorybookParah>
-            <Button>Register for a free account</Button>
-            <P>Already have an account?</P>
-            <LinkInline href="/">Sign in here</LinkInline>
-          </Stack>
-        </Modal>
-      </>
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
-StoryOpenOnPageLoad.storyName = 'open on page load';
+StoryOpenOnPageLoad.storyName = 'Open on page load';
 StoryOpenOnPageLoad.parameters = StoryModalDefault.parameters;
+
+export const StoryWithCloseButtonOnTheLeft = () =>
+  React.createElement(() => (
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Modal: header close button on the left"
+          open
+          onDismiss={() => {}}
+          overrides={{
+            panel: {
+              stylePreset: 'modalPanelDefault',
+            },
+          }}
+          header="Modal Title"
+          closePosition="left"
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
+  ));
+StoryWithCloseButtonOnTheLeft.storyName = 'Close position set to left';
+StoryWithCloseButtonOnTheLeft.parameters = StoryModalDefault.parameters;
+
+export const StoryNoHeaderContent = () =>
+  React.createElement(() => (
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default with no header"
+          open
+          onDismiss={() => {}}
+          overrides={{
+            panel: {
+              stylePreset: 'modalPanelDefault',
+            },
+            header: {paddingInline: 'space000', paddingBlock: 'space000'},
+          }}
+          closePosition="left"
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
+  ));
+StoryNoHeaderContent.storyName = 'No header content';
+StoryNoHeaderContent.parameters = StoryModalDefault.parameters;
+
+export const StoryNoClose = () =>
+  React.createElement(() => (
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default with no header"
+          open
+          overrides={{
+            panel: {
+              stylePreset: 'modalPanelDefault',
+            },
+          }}
+          header="Modal Title"
+          closePosition="none"
+          onDismiss={() => {}}
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
+  ));
+StoryNoClose.storyName = 'No close button';
+StoryNoClose.parameters = StoryModalDefault.parameters;
+
+export const StoryNoHeader = () =>
+  React.createElement(() => (
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default with no header"
+          open
+          closePosition="none"
+          onDismiss={() => {}}
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
+  ));
+StoryNoHeader.storyName = 'No header';
+StoryNoHeader.parameters = StoryModalDefault.parameters;
+
+export const StoryWithHiddenOverlay = () =>
+  React.createElement(() => {
+    const [isActive, open, close] = useActiveState();
+
+    return (
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+            hideOverlay
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
+    );
+  });
+StoryWithHiddenOverlay.storyName = 'No overlay';
+StoryWithHiddenOverlay.parameters = StoryModalDefault.parameters;
 
 const items = [
   'Neptunium',
@@ -168,27 +359,105 @@ const items = [
   'Oganesson',
 ];
 
+export const StoryWithSelect = () =>
+  React.createElement(() => (
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default modal"
+          open
+          onDismiss={() => {}}
+          overrides={{
+            panel: {
+              base: {
+                width: '348px',
+                height: '268px',
+                minWidth: '20vw',
+                maxWidth: '80vw',
+                minHeight: '20vh',
+                maxHeight: {
+                  xs: '90vh',
+                  md: '85vh',
+                },
+              },
+            },
+          }}
+          header="Modal Title"
+        >
+          {modalContent}
+          <br />
+          <br />
+          <Block>
+            <Label
+              htmlFor="id-1"
+              size="small"
+              overrides={{
+                typographyPreset: 'utilityLabel020',
+              }}
+            >
+              Label
+            </Label>
+            <Select
+              aria-describedby="id-2-at"
+              id="id-2"
+              size="medium"
+              useModal={{xs: true, sm: true}}
+            >
+              {items.map(item => (
+                <SelectOption key={item} value={item}>
+                  {item}
+                </SelectOption>
+              ))}
+            </Select>
+            <AssistiveText
+              overrides={{
+                marginBlock: 'space050',
+              }}
+            >
+              Assistive Text
+            </AssistiveText>
+          </Block>
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
+  ));
+StoryWithSelect.storyName = 'Select';
+StoryWithSelect.parameters = StoryModalDefault.parameters;
+
 export const StoryWithAriaAttributes = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();
-
     return (
-      <>
-        <StorybookHeading>Modal with aria attributes</StorybookHeading>
-        <Button onClick={open}>Open Modal</Button>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          ariaLabelledby="modalHeader"
-          ariaDescribedby="description purpose"
-          header={<div id="modalHeader">Overriden modal header</div>}
-        >
-          {modalContent}
-        </Modal>
-      </>
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            ariaLabelledby="modalHeader"
+            ariaDescribedby="description purpose"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
-StoryWithAriaAttributes.storyName = 'with aria attributes';
+StoryWithAriaAttributes.storyName = 'Aria attributes';
 StoryWithAriaAttributes.parameters = StoryModalDefault.parameters;
 
 export const StoryWithCustomAutofocus = () =>
@@ -196,41 +465,37 @@ export const StoryWithCustomAutofocus = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with custom auto-focus</StorybookHeading>
-        <StorybookParah>
-          Modal with autofocus using data-autofocus attribute
-        </StorybookParah>
-        <Button onClick={open} data-testid="modal-open-button">
-          Open modal
-        </Button>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          ariaLabelledby="modalHeader"
-          ariaDescribedby="description purpose"
-          header={<div id="modalHeader">Overriden modal header</div>}
-        >
-          <Stack
-            flow="vertical-center"
-            stackDistribution="center"
-            spaceInline="space020"
+      <StorybookPage data-testid="scrollable-modal">
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
           >
-            <H1>You need an account</H1>
-            <StorybookParah>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam. (Double
-              click for more text :) )
-            </StorybookParah>
-            <Button>Register for a free account</Button>
-            <Button data-autofocus>Middle Button with focus</Button>
-            <Button>Something else</Button>
-          </Stack>
-        </Modal>
-      </div>
+            Open modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            ariaLabelledby="modalHeader"
+            ariaDescribedby="description purpose"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
-StoryWithCustomAutofocus.storyName = 'with custom autofocus';
+StoryWithCustomAutofocus.storyName = 'Custom autofocus';
 StoryWithCustomAutofocus.parameters = StoryModalDefault.parameters;
 
 export const StoryWithCustomRestoreFocus = () =>
@@ -241,109 +506,85 @@ export const StoryWithCustomRestoreFocus = () =>
       | undefined;
 
     return (
-      <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with custom auto-focus</StorybookHeading>
-        <p>Modal with autofocus using data-autofocus attribute</p>
-        <Button onClick={open} data-testid="modal-open-button">
+      <StorybookPage>
+        <Button
+          onClick={open}
+          data-testid="modal-open-button"
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+          }}
+        >
           Open modal
         </Button>
-        <Button id="test-button">Button to restore focus to</Button>
+        <br />
+        <br />
+        <Button
+          id="test-button"
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+          }}
+        >
+          Takes refocus
+        </Button>
         <Modal
           open={isActive}
           onDismiss={close}
           ariaLabelledby="modalHeader"
           ariaDescribedby="description purpose"
-          header={<div id="modalHeader">Overriden modal header</div>}
           restoreFocusTo={elementToRestoreFocusTo}
-        >
-          <Stack
-            flow="vertical-center"
-            stackDistribution="center"
-            spaceInline="space020"
-          >
-            <H1>You need an account</H1>
-            <StorybookParah>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam. (Double
-              click for more text :) )
-            </StorybookParah>
-            <Button>Register for a free account</Button>
-          </Stack>
-        </Modal>
-      </div>
-    );
-  });
-StoryWithCustomRestoreFocus.storyName = 'with custom restore focus';
-StoryWithCustomRestoreFocus.parameters = StoryModalDefault.parameters;
-
-export const StoryWithHiddenOverlay = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
-
-    return (
-      <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with hidden overlay</StorybookHeading>
-        <Button onClick={open} data-testid="modal-open-button">
-          Open Modal
-        </Button>
-        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-        <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>Another button to open the modal</Button>
-              )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
-            </>
-          ))}
-        </Box>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-          hideOverlay
+          overrides={{
+            panel: {
+              stylePreset: 'modalPanelDefault',
+            },
+          }}
+          header="Modal Title"
         >
           {modalContent}
         </Modal>
-      </div>
+      </StorybookPage>
     );
   });
-StoryWithHiddenOverlay.storyName = 'hidden overlay';
-StoryWithHiddenOverlay.parameters = StoryModalDefault.parameters;
+StoryWithCustomRestoreFocus.storyName = 'Custom restore focus';
+StoryWithCustomRestoreFocus.parameters = StoryModalDefault.parameters;
 
 export const StoryWithDisabledFocusTrap = () =>
   React.createElement(() => {
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with disabled focus trap</StorybookHeading>
-        <Button onClick={open} data-testid="modal-open-button">
-          Open Modal
-        </Button>
-        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-        <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>Another button to open the modal</Button>
-              )}
-              <StorybookParah key={i}>{scrollContent}</StorybookParah>
-            </>
-          ))}
-        </Box>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-          disableFocusTrap
-        >
-          {modalContent}
-        </Modal>
-      </div>
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+              header: {typographyPreset: 'utilityLabel030'},
+            }}
+            header="Modal Title"
+            disableFocusTrap
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
-StoryWithDisabledFocusTrap.storyName = 'disabled focus trap';
+StoryWithDisabledFocusTrap.storyName = 'Focus trapping disabled';
 StoryWithDisabledFocusTrap.parameters = StoryModalDefault.parameters;
 
 export const StoryModelessModal = () =>
@@ -351,42 +592,48 @@ export const StoryModelessModal = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
-        <StorybookHeading>Modeless Modal</StorybookHeading>
-        <Button onClick={open} data-testid="modal-open-button">
-          Open Modal
-        </Button>
-        <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-        <Box>
-          {Array.from({length: 5}, (_, i) => (
-            <>
-              {i === 3 && (
-                <Button onClick={open}>Another button to open the modal</Button>
-              )}
-              <p key={i}>{scrollContent}</p>
-            </>
-          ))}
-        </Box>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-          hideOverlay
-          disableFocusTrap
-        >
-          {modalContent}
-        </Modal>
-      </div>
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modeless modal
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+              header: {typographyPreset: 'utilityLabel030'},
+            }}
+            header="Modal Title"
+            hideOverlay
+            disableFocusTrap
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
-StoryModelessModal.storyName = 'modelss';
+StoryModelessModal.storyName = 'Modeless modal';
 StoryModelessModal.parameters = StoryModalDefault.parameters;
 
 const ModalWrapper = styled.div`
-  margin: 20px 0 20px 350px;
+  margin: 20px 0 0 0;
+  padding: 20px;
   position: relative;
-  border: 1px solid orange;
-  background: lightgray;
+  border: 1px solid #3358cc;
+  background: transparent;
+  width: 700px;
+  height: 500px;
 `;
 
 export const StoryModelessInlineModal = () =>
@@ -394,123 +641,44 @@ export const StoryModelessInlineModal = () =>
     const [isActive, open, close] = useActiveState();
 
     return (
-      <div data-testid="scrollable-modal">
-        <StorybookHeading>Modeless Inline Modal</StorybookHeading>
-        <ModalWrapper>
-          <Button onClick={open} data-testid="modal-open-button">
-            Open Modal
-          </Button>
-          <StorybookSubHeading>SCROLL DOWN </StorybookSubHeading>
-
-          <Box>
-            {Array.from({length: 5}, (_, i) => (
-              <>
-                {i === 3 && (
-                  <Button onClick={open}>
-                    Another button to open the modal
-                  </Button>
-                )}
-                <p key={i}>{scrollContent}</p>
-              </>
-            ))}
-          </Box>
-
-          <Modal
-            open={isActive}
-            onDismiss={close}
-            header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-            hideOverlay
-            disableFocusTrap
-            inline
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
           >
-            <Select aria-describedby="id-2-at" id="id-2" size="medium">
-              {items.map(item => (
-                <SelectOption key={item} value={item}>
-                  {item}
-                </SelectOption>
-              ))}
-            </Select>
-            {modalContent}
-          </Modal>
-        </ModalWrapper>
-      </div>
-    );
-  });
-StoryModelessInlineModal.storyName = 'modelss-inline';
-StoryModelessInlineModal.parameters = StoryModalDefault.parameters;
-
-export const StoryOptionalHeaderClose = () =>
-  React.createElement(() => {
-    const [isActiveBoth, openBoth, closeBoth] = useActiveState();
-    const [isActiveHeader, openHeader, closeHeader] = useActiveState();
-    const [isActiveButton, openButton, closeButton] = useActiveState();
-
-    return (
-      <div>
-        <StorybookHeading>
-          Modal with optional header & close button
-        </StorybookHeading>
-        <Stack spaceInline="space030" flow="horizontal-center">
-          <Button onClick={openBoth}>
-            Open without header and close button
+            Open modal
           </Button>
-          <Button onClick={openHeader}>Open without header</Button>
-          <Button onClick={openButton}>Open without close button</Button>
-        </Stack>
-
-        <Modal open={isActiveBoth} onDismiss={closeBoth} closePosition="none">
-          {modalContent}
-        </Modal>
-        <Modal
-          open={isActiveHeader}
-          onDismiss={closeHeader}
-          closePosition="right"
-        >
-          {modalContent}
-        </Modal>
-        <Modal
-          open={isActiveButton}
-          onDismiss={closeButton}
-          header="This is a modal header. Content is passed as string. Should be a long one"
-          closePosition="none"
-        >
-          {modalContent}
-        </Modal>
-      </div>
+          <ModalWrapper>
+            <P overrides={{typographyPreset: 'editorialParagraph010'}}>
+              Inline modal opens here.
+            </P>
+            <Modal
+              open={isActive}
+              onDismiss={close}
+              overrides={{
+                panel: {
+                  stylePreset: 'modalPanelDefault',
+                },
+              }}
+              header="Modal Title"
+              hideOverlay
+              disableFocusTrap
+              inline
+            >
+              {modalContent}
+            </Modal>
+          </ModalWrapper>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
-StoryOptionalHeaderClose.storyName = 'optional header & close';
-StoryOptionalHeaderClose.parameters = StoryModalDefault.parameters;
-
-export const StoryLogicalProps = () =>
-  React.createElement(() => {
-    const [isActive, open, close] = useActiveState();
-
-    return (
-      <div data-testid="scrollable-modal">
-        <StorybookHeading>Modal with logical props</StorybookHeading>
-        <Button onClick={open} data-testid="modal-open-button">
-          Open Modal
-        </Button>
-        <Modal
-          aria-label="Default Modal"
-          open={isActive}
-          onDismiss={close}
-          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-          overrides={{
-            panel: {
-              paddingInline: '15px',
-              paddingBlock: '30px',
-            },
-          }}
-        >
-          {modalContent}
-        </Modal>
-      </div>
-    );
-  });
-StoryLogicalProps.storyName = 'logical-props';
-StoryLogicalProps.parameters = StoryModalDefault.parameters;
+StoryModelessInlineModal.storyName = 'Modeless inline modal';
+StoryModelessInlineModal.parameters = StoryModalDefault.parameters;
 
 export const StoryNestedModals = () =>
   React.createElement(() => {
@@ -521,49 +689,143 @@ export const StoryNestedModals = () =>
     const closeNested = () => setIsNestedActive(false);
 
     return (
-      <div>
-        <StorybookHeading>Default Modal</StorybookHeading>
-        <Button onClick={open}>Open Modal</Button>
-        <Modal
-          aria-label="Default Modal"
-          open={isActive}
-          onDismiss={close}
-          header="This is a modal header. Content is passed as string. Should be a long one so that the icon button is vertically centered."
-        >
-          <Stack
-            flow="vertical-center"
-            stackDistribution="center"
-            spaceInline="space020"
+      <StorybookPage>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
           >
-            <Button onClick={openNested}>Open nested Modal</Button>
-
+            Open modal
+          </Button>
+          <Modal
+            aria-label="Default Modal"
+            open={isActive}
+            onDismiss={close}
+            header="Modal Title"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+          >
+            {modalContent}
+            <br />
+            <br />
+            <Button
+              onClick={openNested}
+              overrides={{
+                typographyPreset: 'utilityButton020',
+                stylePreset: 'buttonOutlinedPrimary',
+              }}
+            >
+              Open nested modal
+            </Button>
             <Modal
               aria-label="Nested Modal"
               open={isNestedActive}
               onDismiss={closeNested}
-              header="Nested Modal"
+              header="Nested modal"
             >
-              <Stack
-                flow="vertical-center"
-                stackDistribution="center"
-                spaceInline="space020"
+              {modalContent}
+              <br />
+              <br />
+              <Button
+                onClick={closeNested}
+                overrides={{
+                  typographyPreset: 'utilityButton020',
+                  stylePreset: 'buttonOutlinedPrimary',
+                }}
               >
-                <div>Ta da! You opened a nested modal</div>
-                <div>Now select something from the list below</div>
-                <Select aria-describedby="id-2-at" id="id-2" size="medium">
-                  {items.map(item => (
-                    <SelectOption key={item} value={item}>
-                      {item}
-                    </SelectOption>
-                  ))}
-                </Select>
-                <Button onClick={closeNested}>Close nested modal</Button>
-              </Stack>
+                Close nested modal
+              </Button>
             </Modal>
-          </Stack>
-        </Modal>
-      </div>
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
     );
   });
-StoryNestedModals.storyName = 'nested-modals';
+StoryNestedModals.storyName = 'Nested modals';
 StoryNestedModals.parameters = StoryModalDefault.parameters;
+
+export const StoryLogicalProps = () =>
+  React.createElement(() => {
+    const [isActive, open, close] = useActiveState();
+
+    return (
+      <StorybookPage data-testid="scrollable-modal">
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <Modal
+            aria-label="Default Modal"
+            open={isActive}
+            onDismiss={close}
+            header="Modal Title"
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
+      </StorybookPage>
+    );
+  });
+StoryLogicalProps.storyName = 'Logical props';
+StoryLogicalProps.parameters = StoryModalDefault.parameters;
+
+export const StoryWithOverrides = () =>
+  React.createElement(() => (
+    <StorybookPage>
+      <StorybookCase>
+        <Modal
+          aria-label="Default with overrides"
+          open
+          onDismiss={() => {}}
+          header="Modal Title"
+          overrides={{
+            overlay: {
+              zIndex: 60,
+              stylePreset: 'overlayCustom',
+            },
+            panel: {
+              stylePreset: 'modalPanelCustom',
+              zIndex: 70,
+              topOffset: '15vh',
+            },
+            header: {
+              stylePreset: 'modalHeaderCustom',
+            },
+            content: {
+              paddingInline: 'space060',
+              paddingBlock: 'space060',
+              stylePreset: 'modalContentCustom',
+            },
+            closeButton: {
+              stylePreset: 'modalCloseButtonCustom',
+              paddingInline: 'space000',
+              paddingBlock: 'space000',
+              typographyPreset: 'inkBrand010',
+            },
+          }}
+        >
+          {modalContent}
+        </Modal>
+      </StorybookCase>
+    </StorybookPage>
+  ));
+StoryWithOverrides.storyName = 'Styling overrides';
+StoryWithOverrides.parameters = StoryModalDefault.parameters;
