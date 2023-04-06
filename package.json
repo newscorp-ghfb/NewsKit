@@ -216,7 +216,7 @@
     "@emotion-icons/material-outlined": "3.8.0",
     "@floating-ui/react-dom-interactions": "^0.6.0",
     "@newskit-themes/newskit": "^1.2.0",
-    "@newskit-themes/newskit-website": "0.0.0-400efefe1",
+    "@newskit-themes/newskit-website": "0.0.0-a7b1b6d95",
     "@seznam/compose-react-refs": "^1.0.5",
     "@storybook/react": "^6.5.9",
     "aria-hidden": "^1.1.3",
