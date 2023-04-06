@@ -15,10 +15,10 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {
   IconFilledCheckCircle,
   IconFilledClose,
-  IconFilledKeyboardArrowUp,
-  IconFilledKeyboardArrowDown,
   IconFilledControlPoint,
   IconFilledInfo,
+  IconFilledArrowDropDown,
+  IconFilledArrowDropUp,
 } from '../../icons';
 import {Modal, ModalProps} from '../../modal';
 import {Button} from '../../button/button';
@@ -26,6 +26,7 @@ import {InlineMessage} from '../../inline-message';
 import {GridLayout} from '../../grid-layout';
 import {countries} from './phone-countries';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {TextBlock} from '../../text-block';
 
 const items = [
   'Neptunium',
@@ -111,6 +112,8 @@ const selectCustomThemeObject: CreateThemeArgs = {
       selectPanelCustom2: {
         base: {
           color: '{{colors.inkBrand010}}',
+          backgroundColor: '{{colors.interface010}}',
+          boxShadow: '{{shadows.shadow050}}',
           borderStyle: 'solid',
           borderWidth: '{{borders.borderWidthDefault}}',
           borderColor: '{{colors.teal040}}',
@@ -120,6 +123,9 @@ const selectCustomThemeObject: CreateThemeArgs = {
         base: {
           color: '{{colors.inkBrand010}}',
           backgroundColor: '{{colors.inkInverse}}',
+        },
+        hover: {
+          backgroundColor: '{{colors.interactiveInput010}}',
         },
       },
       labelOverrides: {
@@ -203,6 +209,12 @@ const selectCustomThemeObject: CreateThemeArgs = {
           outlineStyle: 'dotted',
           outlineWidth: '5px',
           outlineOffset: '5px',
+        },
+      },
+      divContainer: {
+        base: {
+          color: '{{colors.inkBase}}',
+          backgroundColor: '{{colors.interfaceNeutral020}}',
         },
       },
     },
@@ -882,11 +894,17 @@ export const StoryZindexTest = () => (
         </SelectOption>
       </Select>
       <Spacer />
-      <div style={{background: '#F1F1F1'}}>
+      <TextBlock
+        as="div"
+        typographyPreset="editorialParagraph010"
+        stylePreset="divContainer"
+        paddingBlock="space010"
+        paddingInline="space020"
+      >
         Div container with text sitting between
         <br />
         the select and tabs components{' '}
-      </div>
+      </TextBlock>
       <Spacer />
       <Tabs>
         <Tab label="Tab 1">&nbsp;</Tab>
@@ -953,12 +971,9 @@ StorySelectStylingOverrides.storyName = 'Styling overrides';
 export const StoryOverrides = () => {
   const CustomIcon = ({isOpen, ...props}: SelectButtonIcon) =>
     isOpen ? (
-      <IconFilledKeyboardArrowUp {...props} overrides={{size: 'iconSize030'}} />
+      <IconFilledArrowDropUp {...props} overrides={{size: 'iconSize030'}} />
     ) : (
-      <IconFilledKeyboardArrowDown
-        {...props}
-        overrides={{size: 'iconSize030'}}
-      />
+      <IconFilledArrowDropDown {...props} overrides={{size: 'iconSize030'}} />
     );
 
   return (
