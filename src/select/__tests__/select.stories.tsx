@@ -125,7 +125,7 @@ const selectCustomThemeObject: CreateThemeArgs = {
           backgroundColor: '{{colors.inkInverse}}',
         },
         hover: {
-          backgroundColor: '{{colors.interactiveInput010}}',
+          backgroundColor: '{{colors.interactiveInput030}}',
         },
       },
       labelOverrides: {
