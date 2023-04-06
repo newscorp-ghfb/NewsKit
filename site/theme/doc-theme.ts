@@ -9,6 +9,14 @@ import documentationDarkAccessibility from '@newskit-themes/newskit-website/Docu
 import documentationDarkFoundations from '@newskit-themes/newskit-website/Documentation-dark-foundations.json';
 import documentationDarkPatterns from '@newskit-themes/newskit-website/Documentation-dark-patterns.json';
 
+import documentationLightIllustrationBlue from '@newskit-themes/newskit-website/Documentation-light-IllustrationBlue.json';
+import documentationLightIllustrationPurple from '@newskit-themes/newskit-website/Documentation-light-IllustrationPurple.json';
+import documentationLightIllustrationTeal from '@newskit-themes/newskit-website/Documentation-light-IllustrationTeal.json';
+
+import documentationDarkIllustrationBlue from '@newskit-themes/newskit-website/Documentation-dark-IllustrationBlue.json';
+import documentationDarkIllustrationPurple from '@newskit-themes/newskit-website/Documentation-dark-IllustrationPurple.json';
+import documentationDarkIllustrationTeal from '@newskit-themes/newskit-website/Documentation-dark-IllustrationTeal.json';
+
 import {stylePresets} from './style-presets';
 import {componentDefaults} from './component-defaults';
 
@@ -51,11 +59,14 @@ Object.assign(fonts.fontFamily030, {
   },
 });
 
+// We only need to add fontMetrics into the light theme - all other themes come from this
+
 export const docsThemeLight = createTheme({
   name: 'docs-theme-light',
-  baseTheme: newskitLightTheme,
+  baseTheme: newskitLightTheme, // TODO: Use newsKitTheme from Publisher eventually
   overrides: {
     ...documentationLight,
+    ...documentationLightIllustrationBlue.colors,
     fonts,
     stylePresets,
     componentDefaults,
@@ -67,9 +78,9 @@ export const docsThemeDark = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationDark,
-    fonts,
+    ...documentationDarkIllustrationBlue.colors,
     outlines: {
-      safariOutlineStyleDeafult: 'solid',
+      safariOutlineStyleDefault: 'solid',
     },
   },
 });
@@ -77,40 +88,55 @@ export const docsThemeDark = createTheme({
 export const foundationsThemeLight = createTheme({
   name: 'docs-foundations-light',
   baseTheme: docsThemeLight,
-  overrides: {...documentationLightFoundations, fonts},
+  overrides: {
+    ...documentationLightFoundations,
+    ...documentationLightIllustrationPurple.colors,
+  },
 });
 
 export const foundationsThemeDark = createTheme({
   name: 'docs-foundations-dark',
   baseTheme: docsThemeDark,
-  overrides: {...documentationDarkFoundations, fonts},
+  overrides: {
+    ...documentationDarkFoundations,
+    ...documentationDarkIllustrationPurple.colors,
+  },
 });
 
 export const accessibilityThemeLight = createTheme({
-  name: 'docs-accessibilits-light',
+  name: 'docs-accessibility-light',
   baseTheme: docsThemeLight,
-  overrides: {...documentationLightAccessibility, fonts},
+  overrides: {
+    ...documentationLightAccessibility,
+    ...documentationLightIllustrationBlue.colors,
+  },
 });
 
 export const accessibilityThemeDark = createTheme({
   name: 'docs-accessibility-dark',
   baseTheme: docsThemeDark,
-  overrides: {...documentationDarkAccessibility, fonts},
+  overrides: {...documentationDarkAccessibility},
 });
 
 export const patternsThemeLight = createTheme({
   name: 'docs-patterns-light',
   baseTheme: docsThemeLight,
-  overrides: {...documentationLightPatterns, fonts},
+  overrides: {
+    ...documentationLightPatterns,
+    ...documentationLightIllustrationTeal.colors,
+  },
 });
 
 export const patternsThemeDark = createTheme({
   name: 'docs-patterns-dark',
   baseTheme: docsThemeDark,
-  overrides: {...documentationDarkPatterns, fonts},
+  overrides: {
+    ...documentationDarkPatterns,
+    ...documentationDarkIllustrationTeal.colors,
+  },
 });
 
-// These are used on guide pages – initally were going to be another colour
+// These are used on guide pages – initially were going to be another colour
 // Now they are the same as the default theme
 
 export const guidesThemeLight = createTheme({
