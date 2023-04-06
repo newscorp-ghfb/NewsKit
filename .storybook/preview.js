@@ -33,7 +33,8 @@ const StoryWrapper = styled.div`
 const Background = ({children}) => (
   <BackgroundColor>{children}</BackgroundColor>
 );
-const NoDecorator = ({children}) => <>{children}</>;
+
+const SKIP_GITHUB_CHECK = process.env.STORYBOOK_SKIP_PERCY_CHECK === 'true';
 
 export const parameters = {
   actions: {argTypesRegex: '^on[A-Z].*'},
@@ -97,6 +98,10 @@ export const parameters = {
     },
   },
   viewMode: 'docs',
+  percy: {
+    //include: 'skip-percy-tests',
+    ...(SKIP_GITHUB_CHECK ? {include: 'skip-percy-tests'} : {}),
+  },
 };
 
 export const decorators = [
