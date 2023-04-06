@@ -181,13 +181,6 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
       <LayoutWrapper>
         <ThemeModeContext.Provider value={themeMode}>
           {debugDropdownVisible && <DebugDropdown />}
-          <Sidebar
-            sidebarOpen={sidebarOpen}
-            handleSidebarClick={this.toggleSidebar}
-            hideSidebar={hideSidebar}
-            themeMode={themeMode}
-            toggleTheme={toggleTheme}
-          />
           <SiteHeader
             handleSidebarClick={this.toggleSidebar}
             toggleTheme={toggleTheme}
@@ -196,6 +189,13 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
             path={path}
             data-test-id="siteHeader"
             sidebarOpen={sidebarOpen}
+          />
+          <Sidebar
+            sidebarOpen={sidebarOpen}
+            handleSidebarClick={this.toggleSidebar}
+            hideSidebar={hideSidebar}
+            themeMode={themeMode}
+            toggleTheme={toggleTheme}
           />
           <Container hideSidebar={hideSidebar}>
             {/* This is a hack to fix stalling builds from NextJS trying to optimise the page, it won't render anything */}
