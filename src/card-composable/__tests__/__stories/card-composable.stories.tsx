@@ -1,3 +1,4 @@
+/* eslint-disable no-script-url */
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {
@@ -51,7 +52,6 @@ const P = ({...props}: Omit<TextBlockProps, 'children'>) => (
   </TextBlock>
 );
 
-// TODO: check this themes overrides
 const cardCustomThemeObject: CreateThemeArgs = {
   name: 'card-custom-theme',
   overrides: {
@@ -147,6 +147,7 @@ const cardCustomThemeObject: CreateThemeArgs = {
   },
 };
 
+const href = 'javascript:void(0);';
 const areasGap = 'space050';
 const contentGap = 'space040';
 
@@ -164,7 +165,7 @@ export const StoryDefault = () => (
       />
 
       <CardActions>
-        <Tag href="/news">Tag</Tag>
+        <Tag href={href}>Tag</Tag>
       </CardActions>
     </CardComposable>
   </StorybookPage>
@@ -199,7 +200,7 @@ export const StoryCardAreas = () => (
     <StorybookCase title="CardActions">
       <CardComposable overrides={{maxWidth: '372px'}}>
         <CardActions>
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -211,7 +212,7 @@ export const StoryCardAreas = () => (
         />
         <CardContent rowGap={contentGap}>
           <Flag>Flag</Flag>
-          <CardLink href={window.location.href}>
+          <CardLink href={href}>
             <H
               overrides={{
                 heading: {
@@ -223,7 +224,7 @@ export const StoryCardAreas = () => (
           <P />
         </CardContent>
         <CardActions>
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -243,7 +244,7 @@ export const StoryVariations = () => (
         `}
       >
         <CardContent rowGap={contentGap}>
-          <CardLink href={window.location.href}>
+          <CardLink href={href}>
             <H />
           </CardLink>
         </CardContent>
@@ -267,7 +268,7 @@ export const StoryVariations = () => (
           }}
         >
           <Flag>Flag</Flag>
-          <CardLink expand href={window.location.href}>
+          <CardLink expand href={href}>
             <H />
           </CardLink>
           <P />
@@ -281,7 +282,7 @@ export const StoryVariations = () => (
         <CardActions
           overrides={{marginBlockEnd: 'space040', paddingInline: 'space040'}}
         >
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -296,7 +297,7 @@ export const StoryVariations = () => (
           <P />
         </CardContent>
         <CardActions>
-          <Button href="/news">Button</Button>
+          <Button href={href}>Button</Button>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -346,7 +347,7 @@ export const StoryVariations = () => (
           <P />
         </CardContent>
         <CardActions>
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -361,7 +362,7 @@ export const StoryVariations = () => (
           <VideoPlayer config={DEFATULT_VIDEO_PLAYER_CONFIG} />
         </CardMedia>
         <CardActions>
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -395,7 +396,7 @@ export const StoryInsetCard = () => (
         <CardActions
           overrides={{marginBlockEnd: 'space040', paddingInline: 'space040'}}
         >
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -427,7 +428,7 @@ export const StoryLayout = () => (
           <P />
         </CardContent>
         <CardActions>
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -453,7 +454,7 @@ export const StoryLayout = () => (
           <P />
         </CardContent>
         <CardActions>
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </StorybookCase>
@@ -516,7 +517,7 @@ const SplitCard = ({columns}: {columns: string}) => {
           media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
         />
         <CardActions>
-          <Tag href="/news">Tag</Tag>
+          <Tag href={href}>Tag</Tag>
         </CardActions>
       </CardComposable>
     </div>
@@ -644,7 +645,7 @@ export const StoryLogicalProps = () => (
           media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
         />
         <CardActions>
-          <Tag href="http://example.com" size="medium">
+          <Tag href={href} size="medium">
             Tag
           </Tag>
         </CardActions>
@@ -669,7 +670,7 @@ export const StoryLogicalProps = () => (
           media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
         />
         <CardActions>
-          <Tag href="http://example.com" size="medium">
+          <Tag href={href} size="medium">
             Tag
           </Tag>
         </CardActions>
@@ -689,7 +690,7 @@ export const StoryLogicalProps = () => (
           media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
         />
         <CardActions>
-          <Tag href="http://example.com" size="medium">
+          <Tag href={href} size="medium">
             Tag
           </Tag>
         </CardActions>
@@ -733,7 +734,7 @@ export const StoryOverrides = () => (
           overrides={{paddingBlockEnd: 'space040', paddingInline: 'space040'}}
         >
           <Tag
-            href="http://example.com"
+            href={href}
             size="medium"
             overrides={{stylePreset: 'currentColorTag'}}
           >
@@ -761,7 +762,7 @@ export const StoryOverrides = () => (
           media={{src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'}}
         />
         <CardActions>
-          <Tag href="http://example.com" size="medium">
+          <Tag href={href} size="medium">
             Tag
           </Tag>
         </CardActions>
@@ -819,7 +820,7 @@ export const ComplexStory = () => (
               marginInlineStart="space020"
               stylePreset="inkBase"
             >
-              4.1 (<LinkInline href="/">38 reviews</LinkInline>)
+              4.1 (<LinkInline href={href}>38 reviews</LinkInline>)
             </TextBlock>
           </GridLayout>
 
