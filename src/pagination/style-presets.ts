@@ -6,6 +6,7 @@ export default {
   paginationItem: {
     base: {
       backgroundColor: '{{colors.transparent}}',
+      // backgroundColor: '{{colors.interactivePrimary010}}',
       borderRadius: '{{borders.borderRadiusDefault}}',
       color: '{{colors.interactiveLink010}}',
       iconColor: '{{colors.interactiveLink010}}',

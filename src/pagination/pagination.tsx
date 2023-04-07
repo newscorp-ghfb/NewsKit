@@ -12,6 +12,8 @@ import {PaginationLastItemProps} from './components/last-item';
 import {PaginationPrevItemProps} from './components/prev-item';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {useControlled} from '../utils';
+import {useTheme} from '../theme';
+import {getToken} from '../utils/get-token';
 
 const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
   (
@@ -24,6 +26,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
       totalItems,
       buildHref,
       onPageChange,
+      overrides,
       ...rest
     },
     ref,
@@ -114,6 +117,13 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
       [page, changePage, lastPage],
     );
 
+    const spaceBetweenToken = getToken(
+      {theme: useTheme(), overrides},
+      `pagination.${size}`,
+      '',
+      'space',
+    );
+
     const value = useMemo(
       () => ({
         size,
@@ -148,14 +158,25 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     return (
       <PaginationProvider value={value}>
         <StyledNav
-          path="pagination"
           size={size}
           aria-label="pagination"
           data-testid="pagination-container"
           ref={ref}
+          overrides={overrides}
           {...rest}
         >
-          <StyledUnorderedList>{children}</StyledUnorderedList>
+          <StyledUnorderedList
+            as="ul"
+            autoFlow="column"
+            autoColumns="auto"
+            columnGap={spaceBetweenToken}
+            columns="auto"
+            inline
+            justifyContent="start"
+            alignItems="center"
+          >
+            {children}
+          </StyledUnorderedList>
         </StyledNav>
       </PaginationProvider>
     );

@@ -51,15 +51,16 @@ export interface PaginationProps extends React.AriaAttributes {
   onPageChange?: (pageNumber: number) => void;
   overrides?: {
     stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
+    spaceBetween?: MQ<string>;
+    // typographyPreset?: MQ<string>;
   } & LogicalProps;
 }
 
-export interface ComponentSizeProps extends React.AriaAttributes {
-  children?: React.ReactNode;
-  path?: string;
-  size?: PaginationSize;
-}
+// export interface ComponentSizeProps extends React.AriaAttributes {
+//   children?: React.ReactNode;
+//   path?: string;
+//   size?: PaginationSize;
+// }
 
 export interface PaginationItemDescriptionProps extends ComponentOverrides {
   selected?: boolean;
