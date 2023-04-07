@@ -507,42 +507,44 @@ export const StoryWithCustomRestoreFocus = () =>
 
     return (
       <StorybookPage>
-        <Button
-          onClick={open}
-          data-testid="modal-open-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Open modal
-        </Button>
-        <br />
-        <br />
-        <Button
-          id="test-button"
-          overrides={{
-            typographyPreset: 'utilityButton020',
-            stylePreset: 'buttonOutlinedPrimary',
-          }}
-        >
-          Takes refocus
-        </Button>
-        <Modal
-          open={isActive}
-          onDismiss={close}
-          ariaLabelledby="modalHeader"
-          ariaDescribedby="description purpose"
-          restoreFocusTo={elementToRestoreFocusTo}
-          overrides={{
-            panel: {
-              stylePreset: 'modalPanelDefault',
-            },
-          }}
-          header="Modal Title"
-        >
-          {modalContent}
-        </Modal>
+        <StorybookCase>
+          <Button
+            onClick={open}
+            data-testid="modal-open-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Open modal
+          </Button>
+          <br />
+          <br />
+          <Button
+            id="test-button"
+            overrides={{
+              typographyPreset: 'utilityButton020',
+              stylePreset: 'buttonOutlinedPrimary',
+            }}
+          >
+            Takes refocus
+          </Button>
+          <Modal
+            open={isActive}
+            onDismiss={close}
+            ariaLabelledby="modalHeader"
+            ariaDescribedby="description purpose"
+            restoreFocusTo={elementToRestoreFocusTo}
+            overrides={{
+              panel: {
+                stylePreset: 'modalPanelDefault',
+              },
+            }}
+            header="Modal Title"
+          >
+            {modalContent}
+          </Modal>
+        </StorybookCase>
       </StorybookPage>
     );
   });
