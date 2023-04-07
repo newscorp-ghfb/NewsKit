@@ -121,7 +121,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
       {theme: useTheme(), overrides},
       `pagination.${size}`,
       '',
-      'space',
+      'spaceBetween',
     );
 
     const value = useMemo(
