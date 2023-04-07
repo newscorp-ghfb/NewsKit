@@ -50,7 +50,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446BE4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -2471,15 +2471,27 @@ Object {
   "paginationItemNonInteractive": Object {
     "large": Object {
       "iconSize": "iconSize020",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody030",
     },
     "medium": Object {
       "iconSize": "iconSize020",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody020",
     },
     "small": Object {
       "iconSize": "iconSize010",
+      "marginBlockEnd": "space000",
+      "marginInline": "space010",
+      "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
+      "typographyPreset": "utilityBody010",
     },
   },
   "paginationItemPrev": Object {
