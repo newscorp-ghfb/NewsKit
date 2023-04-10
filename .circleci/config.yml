@@ -1213,7 +1213,7 @@ workflows:
     when:
       matches:
         # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
-        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*'
+        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*|^snyk-upgrade\/.*'
         value: << pipeline.git.branch >>
     jobs:
       - install_deps
@@ -1418,7 +1418,7 @@ workflows:
     when:
       matches:
         # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
-        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*'
+        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*|^snyk-upgrade\/.*'
         value: << pipeline.git.branch >>
     jobs:
       - install_deps_codemod:
