@@ -55,21 +55,21 @@ const toastCustomThemeObject: CreateThemeArgs = {
         base: {
           backgroundColor: '{{colors.interfaceInformative010}}',
           borderRadius: '2px',
-          iconColor: 'white',
-          color: 'white',
+          iconColor: '{{colors.inkInverse}}',
+          color: '{{colors.inkInverse}}',
         },
       },
       customDivider: {
         base: {
           borderStyle: 'solid',
-          borderColor: 'white',
+          borderColor: '{{colors.inkInverse}}',
           borderWidth: '1px',
         },
       },
 
       customButton: {
         base: {
-          borderColor: 'white',
+          borderColor: '{{colors.inkInverse}}',
         },
       },
     },
@@ -146,15 +146,10 @@ export const StoryToastIntents = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
       >
-        {' '}
-        {BODY}{' '}
+        {BODY}
       </Toast>
     </StorybookCase>
     <StorybookCase title="Informative">
@@ -162,15 +157,10 @@ export const StoryToastIntents = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
       >
-        {' '}
-        {BODY}{' '}
+        {BODY}
       </ToastInformative>
     </StorybookCase>
     <StorybookCase title="Notice">
@@ -178,15 +168,10 @@ export const StoryToastIntents = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
       >
-        {' '}
-        {BODY}{' '}
+        {BODY}
       </ToastNotice>
     </StorybookCase>
     <StorybookCase title="Positive">
@@ -194,15 +179,10 @@ export const StoryToastIntents = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
       >
-        {' '}
-        {BODY}{' '}
+        {BODY}
       </ToastPositive>
     </StorybookCase>
     <StorybookCase title="Negative">
@@ -210,10 +190,6 @@ export const StoryToastIntents = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
       >
@@ -232,10 +208,6 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
       >
@@ -248,10 +220,6 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
       >
@@ -263,10 +231,6 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
         icon={
@@ -285,10 +249,6 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
         icon={
@@ -308,10 +268,6 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
       >
@@ -324,10 +280,6 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
         icon={
@@ -346,10 +298,6 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
         icon={
@@ -376,10 +324,6 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
         }}
         icon={
@@ -605,10 +549,6 @@ export const StoryToastOverrides = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
-            sm: '100%',
-            md: '100%',
-            lg: '100%',
-            xl: '100%',
           },
           paddingInline: '20px',
           paddingBlock: '20px',
