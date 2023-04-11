@@ -131,7 +131,7 @@ const toastLink = (
 );
 
 export const StoryToastDefault = () => (
-  <StorybookPage>
+  <StorybookPage columns="1fr">
     <StorybookCase>
       <Toast> {BODY} </Toast>
     </StorybookCase>
