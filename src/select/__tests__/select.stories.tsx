@@ -57,6 +57,12 @@ const items = [
   'Oganesson',
 ];
 
+const itemsAsSelectOptions = items.map(item => (
+  <SelectOption key={item} value={item}>
+    {item}
+  </SelectOption>
+));
+
 const Spacer = styled.div`
   margin-bottom: 20px;
 `;
@@ -223,105 +229,71 @@ const selectCustomThemeObject: CreateThemeArgs = {
 
 export const StorySelectDefault = () => (
   <StorybookPage>
-    <Block>
+    <StorybookCase>
       <Label htmlFor="id-default">Label</Label>
       <Select aria-describedby="id-default-at" id="id-default">
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
+        {itemsAsSelectOptions}
       </Select>
       <AssistiveText id="id-default-at">Assistive Text</AssistiveText>
-    </Block>
+    </StorybookCase>
   </StorybookPage>
 );
 StorySelectDefault.storyName = 'Default';
 
 export const StorySelectSize = () => (
-  <StorybookPage columns="1fr 1fr 1fr">
+  <StorybookPage>
     <StorybookCase title="Small">
-      <Block>
-        <Label htmlFor="id-size-1" size="small">
-          Label
-        </Label>
-        <Select aria-describedby="id-size-1-at" id="id-size-1" size="small">
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
-        </Select>
-        <AssistiveText id="id-size-1-at" size="small">
-          Assistive Text
-        </AssistiveText>
-      </Block>
+      <Label htmlFor="id-size-1" size="small">
+        Label
+      </Label>
+      <Select aria-describedby="id-size-1-at" id="id-size-1" size="small">
+        {itemsAsSelectOptions}
+      </Select>
+      <AssistiveText id="id-size-1-at" size="small">
+        Assistive Text
+      </AssistiveText>
     </StorybookCase>
     <StorybookCase title="Medium">
-      <Block>
-        <Label htmlFor="id-size-2" size="medium">
-          Label
-        </Label>
-        <Select aria-describedby="id-size-2-at" id="id-size-2" size="medium">
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
-        </Select>
-        <AssistiveText id="id-size-2-at" size="medium">
-          Assistive Text
-        </AssistiveText>
-      </Block>
+      <Label htmlFor="id-size-2" size="medium">
+        Label
+      </Label>
+      <Select aria-describedby="id-size-2-at" id="id-size-2" size="medium">
+        {itemsAsSelectOptions}
+      </Select>
+      <AssistiveText id="id-size-2-at" size="medium">
+        Assistive Text
+      </AssistiveText>
     </StorybookCase>
     <StorybookCase title="Large">
-      <Block>
-        <Label htmlFor="id-size-3" size="large">
-          Label
-        </Label>
-        <Select aria-describedby="id-size-3-at" id="id-size-3" size="large">
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
-        </Select>
-        <AssistiveText id="id-size-3-at" size="large">
-          Assistive Text
-        </AssistiveText>
-      </Block>
+      <Label htmlFor="id-size-3" size="large">
+        Label
+      </Label>
+      <Select aria-describedby="id-size-3-at" id="id-size-3" size="large">
+        {itemsAsSelectOptions}
+      </Select>
+      <AssistiveText id="id-size-3-at" size="large">
+        Assistive Text
+      </AssistiveText>
     </StorybookCase>
   </StorybookPage>
 );
 StorySelectSize.storyName = 'Select sizes';
 
 export const StorySelectWidth = () => (
-  <StorybookPage columns="auto auto">
+  <StorybookPage>
     <StorybookCase title="Default (100%)">
       <Select overrides={{button: {width: '100%'}}}>
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
+        {itemsAsSelectOptions}
       </Select>
     </StorybookCase>
     <StorybookCase title="Fixed width">
       <Select overrides={{button: {width: '200px'}}}>
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
+        {itemsAsSelectOptions}
       </Select>
     </StorybookCase>
     <StorybookCase title="Max width">
       <Select overrides={{button: {maxWidth: '300px'}}}>
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
+        {itemsAsSelectOptions}
       </Select>
     </StorybookCase>
   </StorybookPage>
@@ -331,21 +303,11 @@ StorySelectWidth.storyName = 'Width';
 export const StorySelectHeight = () => (
   <StorybookPage columns="auto auto auto">
     <StorybookCase title="Default">
-      <Select>
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
-      </Select>
+      <Select>{itemsAsSelectOptions}</Select>
     </StorybookCase>
     <StorybookCase title="Min height">
       <Select overrides={{button: {minHeight: '100px'}}}>
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
+        {itemsAsSelectOptions}
       </Select>
     </StorybookCase>
   </StorybookPage>
@@ -361,11 +323,7 @@ export const StorySelectVariations = () => (
         id="id-var-1"
         placeholder="A custom placeholder"
       >
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
+        {itemsAsSelectOptions}
       </Select>
       <AssistiveText id="id-var-1-at">Assistive Text</AssistiveText>
     </StorybookCase>
@@ -377,11 +335,7 @@ export const StorySelectVariations = () => (
         state="disabled"
         placeholder="Disabled"
       >
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
+        {itemsAsSelectOptions}
       </Select>
       <AssistiveText id="id-var-2-at">Assistive Text</AssistiveText>
     </StorybookCase>
@@ -393,11 +347,7 @@ export const StorySelectVariations = () => (
         loading
         placeholder="Loading"
       >
-        {items.map(item => (
-          <SelectOption key={item} value={item}>
-            {item}
-          </SelectOption>
-        ))}
+        {itemsAsSelectOptions}
       </Select>
       <AssistiveText id="id-var-3-at">Assistive Text</AssistiveText>
     </StorybookCase>
@@ -607,12 +557,6 @@ export const StorySelectInModal = () => {
     },
   ];
 
-  const selectOptions = items.map(item => (
-    <SelectOption key={item} value={item}>
-      {item}
-    </SelectOption>
-  ));
-
   return (
     <>
       <div>
@@ -645,7 +589,7 @@ export const StorySelectInModal = () => {
               useModal={{xs: true, sm: true}}
               {...props}
             >
-              {selectOptions}
+              {itemsAsSelectOptions}
             </Select>
             <AssistiveText id={`id-modal-${indx}-at`} size="small">
               Assistive Text
@@ -989,11 +933,7 @@ export const StoryOverrides = () => {
             },
           }}
         >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
+          {itemsAsSelectOptions}
         </Select>
         <AssistiveText id="id-ov-1-at">Assistive Text</AssistiveText>
       </StorybookCase>
@@ -1016,11 +956,7 @@ export const StoryOverrides = () => {
             },
           }}
         >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
+          {itemsAsSelectOptions}
         </Select>
         <AssistiveText id="id-ov-2-at">Assistive Text</AssistiveText>
       </StorybookCase>
@@ -1032,11 +968,7 @@ export const StoryOverrides = () => {
           startEnhancer={<span style={{width: '32px'}} />}
           endEnhancer={<span style={{width: '32px'}} />}
         >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
+          {itemsAsSelectOptions}
         </Select>
         <AssistiveText id="id-ov-3-at">Assistive Text</AssistiveText>
       </StorybookCase>
@@ -1057,11 +989,7 @@ export const StoryOverrides = () => {
             },
           }}
         >
-          {items.map(item => (
-            <SelectOption key={item} value={item}>
-              {item}
-            </SelectOption>
-          ))}
+          {itemsAsSelectOptions}
         </Select>
         <AssistiveText id="id-ov-4-at">Assistive Text</AssistiveText>
       </StorybookCase>
@@ -1083,11 +1011,7 @@ export const StoryOverrides = () => {
               },
             }}
           >
-            {items.map(item => (
-              <SelectOption key={item} value={item}>
-                {item}
-              </SelectOption>
-            ))}
+            {itemsAsSelectOptions}
           </Select>
         </DottedBlock>
         <AssistiveText id="id-ov-5-at">Assistive Text</AssistiveText>
