@@ -1,18 +1,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
   #storybook-explorer-tree a.sidebar-item svg {
-      /* Targets the individual story icons on the left navbar */
-      /* inkBase in light mode (neutral080) */
-      color: #3B3B3B;
+    /* Targets the individual story icons on the left navbar */
+    /* inkBase in light mode (neutral080) */
+    color: #3b3b3b;
   }
 </style>
 <style>
-    /* hide the empty story used to skip the Percy Github check */
-    #hide-from-sidebar{
-        display: none !important
-    }
-    /* hide the image-e2e story used only for cypress tests */
-    #components-image-e2e {
-        display: none !important
-    }
+  /* hide the empty story used to skip the Percy Github check */
+  /* hide all e2e stories */
+  [id$='hidden'] {
+    display: none !important;
+    /* border: 1px solid red !important; */
+  }
 </style>
