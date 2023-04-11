@@ -13,11 +13,10 @@ module.exports.branchNameToUrl = branchName => {
 
   const removeNonAz09Dash = /[^a-zA-Z0-9 -]/;
 
-  const sitePath = branchName
-    .split('/')[1]
-    .toLowerCase()
-    .trim()
-    .replace(removeNonAz09Dash);
+  const branchNameParts = branchName.split('/');
+  const branchBase = branchNameParts[1] || branchNameParts[0];
+
+  const sitePath = branchBase.toLowerCase().trim().replace(removeNonAz09Dash);
 
   if (!sitePath) {
     process.stderr.write(`Could not parse branch:${branchName}`);
