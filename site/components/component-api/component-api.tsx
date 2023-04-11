@@ -32,25 +32,35 @@ export const ComponentAPI: React.FC<ComponentAPIProps> = ({components}) => (
         }[] = [];
 
         if (propsRows) {
-          tabs.push({
-            label: 'Props',
-            tabSummary: propsSummary,
-            content: (
-              <>
-                <Table
-                  columns={[
-                    'Name',
-                    'Type',
-                    'Default',
-                    'Description',
-                    'Required',
-                  ]}
-                  rows={propsRows}
-                />
-                {propsFooter}
-              </>
-            ),
-          });
+          if (propsRows.length) {
+            tabs.push({
+              label: 'Props',
+              tabSummary: propsSummary,
+              content: (
+                <>
+                  {propsRows.length && (
+                    <Table
+                      columns={[
+                        'Name',
+                        'Type',
+                        'Default',
+                        'Description',
+                        'Required',
+                      ]}
+                      rows={propsRows}
+                    />
+                  )}
+                  {propsFooter}
+                </>
+              ),
+            });
+          } else if (propsFooter) {
+            tabs.push({
+              label: 'Props',
+              tabSummary: propsSummary,
+              content: <>{propsFooter}</>,
+            });
+          }
         }
 
         if (argsRows) {

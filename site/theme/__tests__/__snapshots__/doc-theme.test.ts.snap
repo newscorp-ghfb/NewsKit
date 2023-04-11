@@ -50,7 +50,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -855,7 +855,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -2813,7 +2815,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -3615,7 +3617,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -5573,7 +5577,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -6378,7 +6382,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -8336,7 +8342,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -9138,7 +9144,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -11096,7 +11104,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -11901,7 +11909,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -13859,7 +13869,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -14661,7 +14671,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -16619,7 +16631,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -17424,7 +17436,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -19382,7 +19396,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446be4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -20184,7 +20198,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {

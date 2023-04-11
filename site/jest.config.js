@@ -1,12 +1,13 @@
+// Sets default timezone so test returns same one across different locations ( UK, BG and CI)
+process.env.TZ = 'GMT';
+
 const {pathsToModuleNameMapper} = require('ts-jest');
 const {compilerOptions} = require('./tsconfig.jest.json');
 
 const paths = pathsToModuleNameMapper(compilerOptions.paths, {
   prefix: '<rootDir>/',
 });
-
 module.exports = {
-  name: 'site',
   displayName: 'Site',
   rootDir: './',
   setupFilesAfterEnv: ['<rootDir>/../src/test/test-framework-setup.ts'],

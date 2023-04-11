@@ -14,7 +14,7 @@ import {marketWatchTheme} from '../theme-checker/themes/market-watch-theme/marke
 import {wsjTheme} from '../theme-checker/themes/wsj-theme/wsj-theme';
 
 const STYLING_OVERRIDES = 'Styling overrides';
-const THEME_KEYS = {
+export const THEME_KEYS = {
   transparent: 'transparent',
   storybookLight: 'storybookOverridesLight',
   storybookDark: 'storybookOverridesDark',
