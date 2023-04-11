@@ -1,336 +1,278 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
 import {Switch} from '..';
-import {styled} from '../../utils';
-import {Cell, Fieldset, Grid, ThemeProvider, CreateThemeArgs} from '../..';
+import {getColorCssFromTheme, styled} from '../../utils';
 import {
-  IconFilledCheck,
-  IconFilledClose,
-  IconFilledDragHandle,
-} from '../../icons';
-import {icons, labels, sizeOverrides, sizes, states} from './helpers';
+  AssistiveText,
+  Block,
+  CreateThemeArgs,
+  Fieldset,
+  GridLayout,
+  ThemeProvider,
+} from '../..';
+import {IconFilledCheck, IconFilledClose} from '../../icons';
+import {
+  icons,
+  labelPositions,
+  overrideScenarios,
+  sizes,
+  states,
+} from './helpers';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 
 const switchCustomThemeObject: CreateThemeArgs = {
   name: 'bordered-thumb-theme',
   overrides: {
     stylePresets: {
+      customFeedback: {
+        base: {
+          backgroundColor: '{{colors.inkBrand010}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          opacity: '{{overlays.opacity000}}',
+        },
+        hover: {
+          opacity: '{{overlays.opacity020}}',
+        },
+        'hover:active': {
+          opacity: '{{overlays.opacity040}}',
+        },
+      },
+      customThumb: {
+        base: {
+          backgroundColor: '{{colors.interfaceInformative020}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+        },
+      },
       borderedThumb: {
         base: {
           backgroundColor: '{{colors.inkInverse}}',
           borderRadius: '{{borders.borderRadiusCircle}}',
-          iconColor: '{{colors.inkContrast}}',
-          borderColor: '{{colors.interactiveInput040}}',
           borderStyle: 'solid',
+          borderColor: '{{colors.interactiveInput040}}',
           borderWidth: '{{borders.borderWidth010}}',
         },
       },
-      controlLabel: {
+      customInput: {
         base: {
-          color: '{{colors.inkContrast}}',
+          backgroundColor: '{{colors.inkBrand010}}',
+          borderRadius: '{{borders.borderRadiusPill}}',
         },
-        disabled: {
-          color: '{{colors.inkNonEssential}}',
+        checked: {
+          backgroundColor: '{{colors.inkBrand010}}',
         },
       },
-      customOutlineColor: {
+      outlinedInput: {
         base: {
           backgroundColor: '{{colors.interactiveInput020}}',
           borderRadius: '{{borders.borderRadiusPill}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
-        },
-      },
-      customOutlineStyle: {
-        base: {
-          backgroundColor: '{{colors.interactiveInput020}}',
-          borderRadius: '{{borders.borderRadiusPill}}',
-        },
-        'focus-visible': {
           outlineColor: 'red',
           outlineStyle: 'dotted',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineWidth: '1px',
           outlineOffset: '{{outlines.outlineOffsetDefault}}',
         },
-      },
-      customOutlineWidth: {
-        base: {
-          backgroundColor: '{{colors.interactiveInput020}}',
-          borderRadius: '{{borders.borderRadiusPill}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '{{outlines.outlineOffsetDefault}}',
+        checked: {
+          backgroundColor: '{{colors.interactiveInput040}}',
         },
       },
-      customOutlineOffset: {
+      customTrackIcon: {
         base: {
-          backgroundColor: '{{colors.interactiveInput020}}',
-          borderRadius: '{{borders.borderRadiusPill}}',
-        },
-        'focus-visible': {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '5px',
+          iconColor: '{{colors.interfaceInformative020}}',
         },
       },
     },
   },
 };
 
-const Container = styled.div`
-  margin: 20px;
-  display: flex;
+const properCase = (s: string) =>
+  `${s.slice(0, 1).toUpperCase()}${s.substring(1)}`;
+
+export const StorySwitchDefault = () => <Switch label="Label" defaultChecked />;
+
+StorySwitchDefault.storyName = 'Default';
+
+export const StorySwitchSizes = () => (
+  <StorybookPage>
+    {[false, true].map(defaultChecked => (
+      <StorybookCase title={defaultChecked ? 'Checked' : 'Base'}>
+        <GridLayout
+          columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
+          rowGap="space020"
+          columnGap="space020"
+        >
+          {sizes.map(size => (
+            <StorybookCase title={properCase(size)}>
+              <Switch
+                label="Label"
+                defaultChecked={defaultChecked}
+                size={size}
+              />
+            </StorybookCase>
+          ))}
+        </GridLayout>
+      </StorybookCase>
+    ))}
+  </StorybookPage>
+);
+
+StorySwitchSizes.storyName = 'Sizes';
+
+export const StorySwitchStates = () => (
+  <StorybookPage
+    columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr 1fr'}}
+    rowGap="space050"
+    columnGap="space020"
+  >
+    {states.map(([label, props]) => (
+      <StorybookCase title={label}>
+        <Switch label="Label" {...props} />
+      </StorybookCase>
+    ))}
+  </StorybookPage>
+);
+
+StorySwitchStates.storyName = 'States';
+
+export const StorySwitchThumbAndTrackIconOptions = () => (
+  <StorybookPage
+    columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
+    rowGap="space050"
+    columnGap="space020"
+  >
+    {icons.map(
+      ([
+        label,
+        {
+          overrides: {thumbIcon, onIcon, offIcon},
+          defaultChecked,
+        },
+      ]) => (
+        <StorybookCase title={label}>
+          <Switch
+            label="Label"
+            defaultChecked={defaultChecked}
+            overrides={{
+              thumbIcon,
+              onIcon,
+              offIcon,
+            }}
+          />
+        </StorybookCase>
+      ),
+    )}
+  </StorybookPage>
+);
+
+StorySwitchThumbAndTrackIconOptions.storyName = 'Thumb and track icon options';
+
+const HorizontalLine = styled.div`
+  border-bottom: 1px solid;
+  ${() => getColorCssFromTheme('borderColor', 'interface050')};
 `;
 
-export const StorySwitchDefault = () => (
-  <>
-    <StorybookHeading>Switch</StorybookHeading>
-    <Grid>
-      <Cell xs={8} sm={4}>
-        <StorybookSubHeading>States</StorybookSubHeading>
-
-        {states.map(([id, {checked, ...props}]) => (
-          <Container key={id}>
-            <Switch {...props} defaultChecked={checked} label={id} />
-          </Container>
-        ))}
-      </Cell>
-      <Cell xs={8} md={4}>
-        <StorybookSubHeading>Sizes</StorybookSubHeading>
-
-        {sizes.map(size => (
-          <React.Fragment key={size}>
-            <Container>
-              <Switch size={size} label={size} />
-            </Container>
-            <Container>
-              <Switch size={size} label={`${size}-checked`} defaultChecked />
-            </Container>
-          </React.Fragment>
-        ))}
-      </Cell>
-    </Grid>
-  </>
-);
-
-StorySwitchDefault.storyName = 'switch-default';
-
-export const StorySwitchIcons = () => (
-  <>
-    <StorybookHeading>Switch</StorybookHeading>
-    <Grid>
-      <Cell xs={8} md={4}>
-        <StorybookSubHeading>Icons</StorybookSubHeading>
-
-        {icons.map(([id, {thumbIcon, onIcon, offIcon, ...props}]) => (
-          <Container key={id}>
-            <Switch
-              defaultChecked
-              label={id}
-              overrides={{
-                thumbIcon,
-                onIcon,
-                offIcon,
-              }}
-              {...props}
-            />
-          </Container>
-        ))}
-      </Cell>
-    </Grid>
-  </>
-);
-
-StorySwitchIcons.storyName = 'switch-icons';
-
-export const StorySwitchOverrides = () => (
-  <>
-    <StorybookHeading>Switch</StorybookHeading>
-    <Grid>
-      <Cell xs={8} md={4}>
-        <StorybookSubHeading>Size / spacing overrides</StorybookSubHeading>
-        {sizeOverrides.map(([id, overrides, ...props]) => (
-          <Container key={id}>
-            <Switch
-              defaultChecked
-              label={id}
-              overrides={overrides}
-              {...props}
-            />
-          </Container>
-        ))}
-      </Cell>
-    </Grid>
-  </>
-);
-
-StorySwitchOverrides.storyName = 'switch-overrides';
-
 export const StorySwitchLabels = () => (
-  <>
-    <StorybookHeading>Switch</StorybookHeading>
-    <Grid>
-      <Cell xs={8} md={4}>
-        <StorybookSubHeading>Labels</StorybookSubHeading>
-        {labels.map(([id, {label, labelPosition, ...props}]) => (
-          <Container key={id}>
-            <Switch
-              defaultChecked
-              label={label}
-              labelPosition={labelPosition}
-              {...props}
-            />
-          </Container>
-        ))}
-      </Cell>
-    </Grid>
-  </>
+  <StorybookPage columns="250px 250px" rowGap="space020" columnGap="space020">
+    {labelPositions.map(labelPosition => (
+      <StorybookCase title={properCase(labelPosition)}>
+        <Block marginBlockEnd="space050">
+          <Switch labelPosition={labelPosition} label="Label" />
+        </Block>
+        <HorizontalLine />
+        <Block marginBlockStart="space050">
+          <Switch
+            labelPosition={labelPosition}
+            label="This is a very long label to show how the label aligns to the switch"
+          />
+        </Block>
+      </StorybookCase>
+    ))}
+  </StorybookPage>
 );
 
-StorySwitchLabels.storyName = 'switch-labels';
-
-export const StorySwitchFieldset = () => (
-  <>
-    <StorybookHeading>Switch</StorybookHeading>
-    <Grid>
-      <Cell xs={8} md={4}>
-        <StorybookSubHeading>Fieldset</StorybookSubHeading>
-
-        <Container>
-          <Fieldset legend="Fieldset label">
-            <Switch
-              label="Switch label"
-              defaultChecked
-              overrides={{
-                thumbIcon: IconFilledDragHandle,
-                onIcon: IconFilledCheck,
-                offIcon: IconFilledClose,
-              }}
-            />
-          </Fieldset>
-        </Container>
-      </Cell>
-    </Grid>
-  </>
-);
-
-StorySwitchFieldset.storyName = 'switch-fieldset';
+StorySwitchLabels.storyName = 'Label alignment';
 
 export const StorySwitchHideFeedback = () => (
-  <>
-    <StorybookHeading>Switch</StorybookHeading>
-    <Grid>
-      <Cell xs={8} md={4}>
-        <StorybookSubHeading>Hide feedback</StorybookSubHeading>
-
-        <Container>
-          <Switch label="Feedback hidden" defaultChecked hideFeedback />
-        </Container>
-      </Cell>
-    </Grid>
-  </>
+  <Switch label="Label" defaultChecked hideFeedback />
 );
 
-StorySwitchHideFeedback.storyName = 'hide-feedback';
+StorySwitchHideFeedback.storyName = 'Feedback element hidden';
 
-export const StorySwitchLogicalProps = () => (
-  <>
-    <StorybookHeading>Switch</StorybookHeading>
-    <Grid>
-      <Cell xs={8}>
-        <StorybookSubHeading>Logical props</StorybookSubHeading>
-
-        <Container>
-          <Switch
-            defaultChecked
-            label="Margin and padding"
-            overrides={{
-              marginBlock: '50px',
-              paddingInline: '100px',
-            }}
-          />
-        </Container>
-      </Cell>
-    </Grid>
-  </>
+export const StorySwitchFieldset = () => (
+  <Fieldset legend="Legend">
+    <Switch label="Label" overrides={{marginBlockEnd: 'space020'}} />
+    <AssistiveText>Assistive text</AssistiveText>
+  </Fieldset>
 );
 
-StorySwitchLogicalProps.storyName = 'switch-logical-props';
+StorySwitchFieldset.storyName = 'Switch in fieldset';
 
-export const StorySwitchOutlineOverrides = () => (
-  <>
-    <StorybookHeading>Outline overrides</StorybookHeading>
-    <Grid>
-      <Cell xs={8} md={4}>
-        <Container key="Custom Color">
-          <Switch
-            label="Custom Color"
-            overrides={{
-              input: {
-                stylePreset: 'customOutlineColor',
-              },
-            }}
-          />
-        </Container>
-        <Container key="Custom Style">
-          <Switch
-            label="Custom Style"
-            overrides={{
-              input: {
-                stylePreset: 'customOutlineStyle',
-              },
-            }}
-          />
-        </Container>
-        <Container key="Custom Width">
-          <Switch
-            label="Custom Width"
-            overrides={{
-              input: {
-                stylePreset: 'customOutlineWidth',
-              },
-            }}
-          />
-        </Container>
-        <Container key="Custom Offset">
-          <Switch
-            label="Custom Offset"
-            overrides={{
-              input: {
-                stylePreset: 'customOutlineOffset',
-              },
-            }}
-          />
-        </Container>
-      </Cell>
-    </Grid>
-  </>
+const StyledIconCheck = () => (
+  <IconFilledCheck overrides={{stylePreset: 'customTrackIcon'}} />
+);
+const StyledIconClose = () => (
+  <IconFilledClose overrides={{stylePreset: 'customTrackIcon'}} />
 );
 
-StorySwitchOutlineOverrides.storyName = 'switch-outline-overrides';
+export const StorySwitchStylingOverrides = () => (
+  <Switch
+    label="Label"
+    defaultChecked
+    overrides={{
+      thumb: {
+        stylePreset: 'customThumb',
+      },
+      input: {
+        stylePreset: 'customInput',
+      },
+      feedback: {
+        stylePreset: 'customFeedback',
+      },
+      onIcon: StyledIconCheck,
+      offIcon: StyledIconClose,
+    }}
+  />
+);
+
+StorySwitchStylingOverrides.storyName = 'Styling overrides';
+
+export const StorySwitchOverrides = () => (
+  <StorybookPage
+    columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
+    rowGap="space050"
+    columnGap="space020"
+  >
+    {overrideScenarios.map(([label, overrides]) => (
+      <StorybookCase title={label}>
+        <Switch label="Label" defaultChecked overrides={overrides} />
+      </StorybookCase>
+    ))}
+  </StorybookPage>
+);
+
+StorySwitchOverrides.storyName = 'Overrides';
 
 export default {
-  title: 'Components/switch',
+  title: 'Components/Switch',
   component: () => 'None',
   disabledRules: [],
+  parameters: {
+    nkDocs: {
+      title: 'Switch',
+      url: 'https://newskit.co.uk/components/switch',
+      description:
+        'A switch is a selection control (toggle) that allows users to turn a setting on or off.',
+    },
+  },
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {globals: {backgrounds: {value: string}}; name: string},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           switchCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
