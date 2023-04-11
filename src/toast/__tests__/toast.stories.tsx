@@ -610,7 +610,7 @@ export const StoryToastOverrides = () => (
         <Button
           size="small"
           overrides={{
-            typographyPreset: 'utilityButton020',
+            typographyPreset: 'utilityButton010',
             stylePreset: 'buttonOutlinedPrimary',
           }}
         >
