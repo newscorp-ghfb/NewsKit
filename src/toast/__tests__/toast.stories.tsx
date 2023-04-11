@@ -563,7 +563,7 @@ StoryToastApi.parameters = {
 };
 
 export const StoryToastLogicalProps = () => (
-  <StorybookPage>
+  <StorybookPage columns="1fr">
     <StorybookCase>
       <Toast
         overrides={{
