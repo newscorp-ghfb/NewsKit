@@ -27,6 +27,23 @@ const toastCustomThemeObject: CreateThemeArgs = {
   name: 'toast-intents-theme',
   overrides: {
     stylePresets: {
+      customOutlineStyle: {
+        base: {
+          backgroundColor: 'transparent',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          borderColor: '{{colors.inkInverse}}',
+          borderStyle: 'solid',
+          borderWidth: '1px',
+          color: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '10px',
+        },
+      },
+
       dividerInverse: {
         base: {
           borderStyle: 'solid',
@@ -611,7 +628,7 @@ export const StoryToastOverrides = () => (
           size="small"
           overrides={{
             typographyPreset: 'utilityButton010',
-            stylePreset: 'buttonOutlinedPrimary',
+            stylePreset: 'customOutlineStyle',
           }}
         >
           Action
@@ -655,77 +672,6 @@ export const StoryToastOverrides = () => (
   </StorybookPage>
 );
 StoryToastOverrides.storyName = 'Styling overrides';
-
-// export const StoryToastTitle = () => (
-//   <>
-//     <hr />
-
-//     <hr />
-
-//   </>
-// );
-// StoryToastTitle.storyName = 'toast-title';
-
-// export const StoryToastActions = () => (
-//   <>
-//     <Toast
-//       actions={() => (
-//         <Button size="small" overrides={{stylePreset: 'buttonMinimalInverse'}}>
-//           undo
-//         </Button>
-//       )}
-//     >
-//       Lorem ipsum dolor sit amet
-//     </Toast>
-//     <hr />
-//     <Toast
-//       icon={
-//         <IconFilledError
-//           overrides={{
-//             size: 'iconSize020',
-//           }}
-//         />
-//       }
-//       actions={() => (
-//         <Button size="small" overrides={{stylePreset: 'buttonMinimalInverse'}}>
-//           undo
-//         </Button>
-//       )}
-//     >
-//       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-//       tempor incididunt ut labore et dolore magna aliqua.
-//     </Toast>
-//     <hr />
-//     <Toast
-//       icon={
-//         <IconFilledError
-//           overrides={{
-//             size: 'iconSize020',
-//           }}
-//         />
-//       }
-//       actions={() => (
-//         <>
-//           <Button
-//             size="small"
-//             overrides={{stylePreset: 'buttonMinimalInverse'}}
-//           >
-//             undo
-//           </Button>
-//           <Button
-//             size="small"
-//             overrides={{stylePreset: 'buttonMinimalInverse'}}
-//           >
-//             redo
-//           </Button>
-//         </>
-//       )}
-//     >
-//       Lorem ipsum
-//     </Toast>
-//   </>
-// );
-// StoryToastActions.storyName = 'toast-actions';
 
 export default {
   title: 'Components/Toast',
