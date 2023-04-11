@@ -9,14 +9,6 @@ import documentationDarkAccessibility from '@newskit-themes/newskit-website/Docu
 import documentationDarkFoundations from '@newskit-themes/newskit-website/Documentation-dark-foundations.json';
 import documentationDarkPatterns from '@newskit-themes/newskit-website/Documentation-dark-patterns.json';
 
-import documentationLightIllustrationBlue from '@newskit-themes/newskit-website/Documentation-light-IllustrationBlue.json';
-import documentationLightIllustrationPurple from '@newskit-themes/newskit-website/Documentation-light-IllustrationPurple.json';
-import documentationLightIllustrationTeal from '@newskit-themes/newskit-website/Documentation-light-IllustrationTeal.json';
-
-import documentationDarkIllustrationBlue from '@newskit-themes/newskit-website/Documentation-dark-IllustrationBlue.json';
-import documentationDarkIllustrationPurple from '@newskit-themes/newskit-website/Documentation-dark-IllustrationPurple.json';
-import documentationDarkIllustrationTeal from '@newskit-themes/newskit-website/Documentation-dark-IllustrationTeal.json';
-
 import {stylePresets} from './style-presets';
 import {componentDefaults} from './component-defaults';
 
@@ -66,7 +58,6 @@ export const docsThemeLight = createTheme({
   baseTheme: newskitLightTheme, // TODO: Use newsKitTheme from Publisher eventually
   overrides: {
     ...documentationLight,
-    ...documentationLightIllustrationBlue.colors,
     fonts,
     stylePresets,
     componentDefaults,
@@ -78,7 +69,6 @@ export const docsThemeDark = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationDark,
-    ...documentationDarkIllustrationBlue.colors,
     outlines: {
       safariOutlineStyleDefault: 'solid',
     },
@@ -90,7 +80,6 @@ export const foundationsThemeLight = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationLightFoundations,
-    ...documentationLightIllustrationPurple.colors,
   },
 });
 
@@ -99,7 +88,6 @@ export const foundationsThemeDark = createTheme({
   baseTheme: docsThemeDark,
   overrides: {
     ...documentationDarkFoundations,
-    ...documentationDarkIllustrationPurple.colors,
   },
 });
 
@@ -108,7 +96,6 @@ export const accessibilityThemeLight = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationLightAccessibility,
-    ...documentationLightIllustrationBlue.colors,
   },
 });
 
@@ -123,7 +110,6 @@ export const patternsThemeLight = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationLightPatterns,
-    ...documentationLightIllustrationTeal.colors,
   },
 });
 
@@ -132,7 +118,6 @@ export const patternsThemeDark = createTheme({
   baseTheme: docsThemeDark,
   overrides: {
     ...documentationDarkPatterns,
-    ...documentationDarkIllustrationTeal.colors,
   },
 });
 
