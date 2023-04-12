@@ -72,7 +72,6 @@ export const stylePresets = {
   sideBarNavigation: {
     base: {
       textDecoration: 'none',
-      backgrond: '{{colors.interface020}}',
       borderColor: '{{colors.transparent}}',
       borderWidth: '4px',
       borderStyle: 'solid',
@@ -944,7 +943,7 @@ export const stylePresets = {
   },
   sidebar: {
     base: {
-      backgroundColor: '{{colors.interface010}}',
+      backgroundColor: '{{colors.interface020}}',
       borderStyle: 'solid',
       borderColor: '{{colors.interface040}}',
       borderWidth:
