@@ -80,6 +80,7 @@ export const foundationsThemeLight = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationLightFoundations,
+    fonts,
   },
 });
 
@@ -88,6 +89,7 @@ export const foundationsThemeDark = createTheme({
   baseTheme: docsThemeDark,
   overrides: {
     ...documentationDarkFoundations,
+    fonts,
   },
 });
 
@@ -96,13 +98,14 @@ export const accessibilityThemeLight = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationLightAccessibility,
+    fonts,
   },
 });
 
 export const accessibilityThemeDark = createTheme({
   name: 'docs-accessibility-dark',
   baseTheme: docsThemeDark,
-  overrides: {...documentationDarkAccessibility},
+  overrides: {...documentationDarkAccessibility, fonts},
 });
 
 export const patternsThemeLight = createTheme({
@@ -110,6 +113,7 @@ export const patternsThemeLight = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationLightPatterns,
+    fonts,
   },
 });
 
@@ -118,6 +122,7 @@ export const patternsThemeDark = createTheme({
   baseTheme: docsThemeDark,
   overrides: {
     ...documentationDarkPatterns,
+    fonts,
   },
 });
 
