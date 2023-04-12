@@ -50,7 +50,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446BE4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -413,6 +413,12 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
+    "cardContainer": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",

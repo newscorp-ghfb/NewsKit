@@ -1,7 +1,7 @@
 import {PaginationItemType} from '../types';
-import {getItemsLayout, getItemAria} from '../utils';
+import {getPaginationItemsLayout, getPaginationItemAria} from '../utils';
 
-describe('getItemsLayout', () => {
+describe('getPaginationItemsLayout', () => {
   it('should return empty array if no pages', () => {
     const values = {
       page: 0,
@@ -10,7 +10,7 @@ describe('getItemsLayout', () => {
       siblings: 3,
       boundaries: 1,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout).toEqual([]);
   });
 
@@ -22,7 +22,7 @@ describe('getItemsLayout', () => {
       siblings: 3,
       boundaries: 1,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout).toEqual([]);
   });
 
@@ -34,7 +34,7 @@ describe('getItemsLayout', () => {
       siblings: -1,
       boundaries: 1,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout).toEqual([]);
   });
 
@@ -46,7 +46,7 @@ describe('getItemsLayout', () => {
       siblings: 0,
       boundaries: 0,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout).toEqual([2]);
   });
 
@@ -58,7 +58,7 @@ describe('getItemsLayout', () => {
       siblings: 0,
       boundaries: 1,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 - 20'); // Not '1 - 2 - 20'
   });
 
@@ -70,7 +70,7 @@ describe('getItemsLayout', () => {
       siblings: 0,
       boundaries: 1,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 - 3 - 20');
   });
 
@@ -82,7 +82,7 @@ describe('getItemsLayout', () => {
       siblings: 3,
       boundaries: 1,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual(
       '1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20',
     );
@@ -96,7 +96,7 @@ describe('getItemsLayout', () => {
       siblings: 1,
       boundaries: 0,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('9 10 11');
   });
 
@@ -108,7 +108,7 @@ describe('getItemsLayout', () => {
       siblings: 2,
       boundaries: 0,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('8 9 10 11 12');
   });
 
@@ -120,7 +120,7 @@ describe('getItemsLayout', () => {
       siblings: 3,
       boundaries: 0,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('7 8 9 10 11 12 13');
   });
 
@@ -132,7 +132,7 @@ describe('getItemsLayout', () => {
       siblings: 1,
       boundaries: 1,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 - 9 10 11 - 20');
   });
 
@@ -144,7 +144,7 @@ describe('getItemsLayout', () => {
       siblings: 1,
       boundaries: 2,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 - 9 10 11 - 19 20');
   });
 
@@ -156,7 +156,7 @@ describe('getItemsLayout', () => {
       siblings: 1,
       boundaries: 3,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 3 - 9 10 11 - 18 19 20');
   });
 
@@ -168,7 +168,7 @@ describe('getItemsLayout', () => {
       siblings: 2,
       boundaries: 3,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 10'); // Not '1 2 - 3 4 5 6 7 - 8 9 10'
   });
 
@@ -180,7 +180,7 @@ describe('getItemsLayout', () => {
       siblings: 2,
       boundaries: 3,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 3 - 8 9 10 11 12 - 18 19 20');
   });
 
@@ -192,7 +192,7 @@ describe('getItemsLayout', () => {
       siblings: 2,
       boundaries: 3,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 - 18 19 20');
   });
 
@@ -204,7 +204,7 @@ describe('getItemsLayout', () => {
       siblings: 4,
       boundaries: 3,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 10'); // Not '1 2 3 4 5 6 7 8 9 - 10'
   });
 
@@ -216,7 +216,7 @@ describe('getItemsLayout', () => {
       siblings: 5,
       boundaries: 3,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 3 4 5 6 7 8 9 10');
   });
 
@@ -228,12 +228,12 @@ describe('getItemsLayout', () => {
       siblings: 0,
       boundaries: 2,
     };
-    const layout = getItemsLayout(values);
+    const layout = getPaginationItemsLayout(values);
     expect(layout.join(' ')).toEqual('1 2 3 4 5'); // Not '1 2 - 3 - 4 5'
   });
 });
 
-describe('getItemAria', () => {
+describe('getPaginationItemAria', () => {
   it('should return properties for normal item', () => {
     const values = {
       itemType: 'paginationItem' as PaginationItemType,
@@ -241,7 +241,7 @@ describe('getItemAria', () => {
       selected: false,
       disabled: false,
     };
-    const ariaProps = getItemAria(values);
+    const ariaProps = getPaginationItemAria(values);
     expect(ariaProps).toEqual({
       'aria-label': 'go to page 2',
     });
@@ -254,7 +254,7 @@ describe('getItemAria', () => {
       selected: true,
       disabled: false,
     };
-    const ariaProps = getItemAria(values);
+    const ariaProps = getPaginationItemAria(values);
     expect(ariaProps).toEqual({
       'aria-current': 'page',
       'aria-label': 'current page, page 2',
@@ -268,7 +268,7 @@ describe('getItemAria', () => {
       selected: false,
       disabled: true,
     };
-    const ariaProps = getItemAria(values);
+    const ariaProps = getPaginationItemAria(values);
     expect(ariaProps).toEqual({
       'aria-disabled': 'true',
       'aria-label': 'go to page 2',
@@ -282,7 +282,7 @@ describe('getItemAria', () => {
       selected: false,
       disabled: false,
     };
-    const ariaProps = getItemAria(values);
+    const ariaProps = getPaginationItemAria(values);
     expect(ariaProps).toEqual({
       'aria-label': 'dots',
     });
@@ -295,7 +295,7 @@ describe('getItemAria', () => {
       selected: false,
       disabled: false,
     };
-    const ariaProps = getItemAria(values);
+    const ariaProps = getPaginationItemAria(values);
     expect(ariaProps).toEqual({
       'aria-label': 'go to first page',
     });
@@ -308,7 +308,7 @@ describe('getItemAria', () => {
       selected: false,
       disabled: false,
     };
-    const ariaProps = getItemAria(values);
+    const ariaProps = getPaginationItemAria(values);
     expect(ariaProps).toEqual({
       'aria-label': 'go to last page',
     });
@@ -321,7 +321,7 @@ describe('getItemAria', () => {
       selected: false,
       disabled: false,
     };
-    const ariaProps = getItemAria(values);
+    const ariaProps = getPaginationItemAria(values);
     expect(ariaProps).toEqual({
       'aria-label': 'go to previous page',
     });
@@ -334,7 +334,7 @@ describe('getItemAria', () => {
       selected: false,
       disabled: false,
     };
-    const ariaProps = getItemAria(values);
+    const ariaProps = getPaginationItemAria(values);
     expect(ariaProps).toEqual({
       'aria-label': 'go to next page',
     });
