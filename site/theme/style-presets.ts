@@ -52,7 +52,7 @@ export const stylePresets = {
       borderStyle: 'solid',
     },
     hover: {
-      color: '{{colors.inkSubtle}}',
+      color: '{{colors.interactivePrimary030}}',
       textDecoration: 'none',
     },
     selected: {
