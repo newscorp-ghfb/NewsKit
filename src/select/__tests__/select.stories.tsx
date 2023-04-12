@@ -91,16 +91,6 @@ const selectCustomThemeObject: CreateThemeArgs = {
           placeholderColor: '{{colors.inkSubtle}}',
         },
       },
-      selectPanelCustom: {
-        base: {
-          backgroundColor: 'red',
-        },
-      },
-      selectOptionCustom: {
-        base: {
-          backgroundColor: 'yellow',
-        },
-      },
       selectContainerCustom2: {
         base: {
           color: '{{colors.inkBrand010}}',
@@ -132,89 +122,6 @@ const selectCustomThemeObject: CreateThemeArgs = {
         },
         hover: {
           backgroundColor: '{{colors.interactiveInput030}}',
-        },
-      },
-      labelOverrides: {
-        base: {
-          color: '#325C00',
-        },
-      },
-      assistiveTextOverrides: {
-        base: {
-          color: '#325C00',
-        },
-      },
-      customOutlineColor: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidthDefault}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBase}}',
-          textOverflow: 'ellipsis',
-          placeholderColor: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-        focus: {
-          outlineColor: 'red',
-          outlineStyle: '{{outlines.outlineStyleDefault}}',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-        },
-      },
-      customOutlineStyle: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidthDefault}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBase}}',
-          textOverflow: 'ellipsis',
-          placeholderColor: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-        focus: {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '{{outlines.outlineWidthDefault}}',
-        },
-      },
-      customOutlineWidth: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidthDefault}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBase}}',
-          textOverflow: 'ellipsis',
-          placeholderColor: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-        focus: {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-        },
-      },
-      customOutlineOffset: {
-        base: {
-          backgroundColor: '{{colors.transparent}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.interactiveInput020}}',
-          borderWidth: '{{borders.borderWidthDefault}}',
-          borderRadius: '{{borders.borderRadiusDefault}}',
-          color: '{{colors.inkBase}}',
-          textOverflow: 'ellipsis',
-          placeholderColor: '{{colors.inkSubtle}}',
-          iconColor: '{{colors.inkBase}}',
-        },
-        focus: {
-          outlineColor: 'red',
-          outlineStyle: 'dotted',
-          outlineWidth: '5px',
-          outlineOffset: '5px',
         },
       },
       divContainer: {
@@ -301,7 +208,7 @@ export const StorySelectWidth = () => (
 StorySelectWidth.storyName = 'Width';
 
 export const StorySelectHeight = () => (
-  <StorybookPage columns="auto auto auto">
+  <StorybookPage>
     <StorybookCase title="Default">
       <Select>{itemsAsSelectOptions}</Select>
     </StorybookCase>
@@ -315,7 +222,7 @@ export const StorySelectHeight = () => (
 StorySelectHeight.storyName = 'Height';
 
 export const StorySelectVariations = () => (
-  <StorybookPage columns="1fr 1fr 1fr">
+  <StorybookPage>
     <StorybookCase title="Custom placeholder">
       <Label htmlFor="id-var-1">Label</Label>
       <Select
@@ -921,7 +828,7 @@ export const StoryOverrides = () => {
     );
 
   return (
-    <StorybookPage columns="auto auto">
+    <StorybookPage>
       <StorybookCase title="Custom icon override">
         <Label htmlFor="id-ov-1">Label</Label>
         <Select
