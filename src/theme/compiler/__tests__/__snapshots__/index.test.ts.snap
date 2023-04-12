@@ -414,6 +414,12 @@ Object {
     "spaceInsetStretch060": "48px 32px",
   },
   "stylePresets": Object {
+    "cardContainer": Object {
+      "base": Object {
+        "backgroundColor": "#FFFFFF",
+        "color": "#3B3B3B",
+      },
+    },
     "controlLabel": Object {
       "base": Object {
         "color": "#3B3B3B",

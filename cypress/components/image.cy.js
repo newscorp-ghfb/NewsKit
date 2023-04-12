@@ -1,6 +1,6 @@
 describe('Image component', () => {
   beforeEach(() => {
-    cy.visit('?name=image-e2e');
+    cy.visit('?name=image-e2e-hidden');
   });
 
   it('lazy-load images', () => {

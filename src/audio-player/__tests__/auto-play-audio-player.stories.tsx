@@ -10,7 +10,7 @@ const AudioPlayerContainer = styled.div`
 `;
 
 export default {
-  title: 'Components/auto-play-audio-player',
+  title: 'Components/auto-play-audio-player-hidden',
   component: () => 'None',
 };
 

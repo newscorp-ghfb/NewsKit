@@ -13,23 +13,16 @@ module.exports.branchNameToUrl = branchName => {
 
   const removeNonAz09Dash = /[^a-zA-Z0-9 -]/;
 
-  const sitePath = () => {
-    if (branchName.includes('snyk-upgrade')) {
-      return branchName;
-    }
-    return branchName
-      .split('/')[1]
-      .toLowerCase()
-      .trim()
-      .replace(removeNonAz09Dash);
-  };
-  const sitePathValue = sitePath();
+  const branchNameParts = branchName.split('/');
+  const branchBase = branchNameParts[1] || branchNameParts[0];
 
-  if (!sitePathValue) {
+  const sitePath = branchBase.toLowerCase().trim().replace(removeNonAz09Dash);
+
+  if (!sitePath) {
     process.stderr.write(`Could not parse branch:${branchName}`);
     process.exitCode = 1;
     return '';
   }
 
-  return sitePathValue;
+  return sitePath;
 };
