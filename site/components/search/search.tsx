@@ -184,7 +184,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
               '--docsearch-logo-color': theme.colors.inkNonEssential,
 
               // modal
-              '--docsearch-modal-background': theme.colors.interfaceBackground,
+              '--docsearch-modal-background': theme.colors.interface010,
               '--docsearch-modal-width': '720px',
               '--docsearch-modal-height': '850px',
               '--docsearch-modal-shadow': theme.shadows.shadow060,
