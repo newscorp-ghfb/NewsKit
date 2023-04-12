@@ -1,6 +1,6 @@
 describe('drawer', () => {
   beforeEach(() => {
-    cy.visit('?name=drawer-e2e');
+    cy.visit('?name=drawer-e2e-hidden');
   });
 
   it('page cant scroll when drawer panel is open', () => {

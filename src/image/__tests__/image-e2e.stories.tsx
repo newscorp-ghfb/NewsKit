@@ -7,7 +7,7 @@ const ImageContainer = styled.div`
 `;
 
 export default {
-  title: 'Components/image-e2e',
+  title: 'Components/image-e2e-hidden',
   component: () => 'None',
 };
 
