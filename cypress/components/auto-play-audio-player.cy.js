@@ -4,7 +4,7 @@ const waitForLoaded = () => {
 
 describe('auto play audio player', () => {
   beforeEach(() => {
-    cy.visit('?name=auto-play-audio-player');
+    cy.visit('?name=auto-play-audio-player-hidden');
     cy.get('[data-testid="audio-slider"] [data-testid="max-label"]').as(
       'sliderLabel',
     );
