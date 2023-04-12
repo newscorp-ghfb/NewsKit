@@ -3,11 +3,7 @@ import {Story as StoryType} from '@storybook/react';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {Button} from '../../button';
 import {GridLayoutItem} from '../../grid-layout';
-import {
-  StorybookCase,
-  StorybookPage,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {styled} from '../../utils';
 import {Tooltip} from '../tooltip';
@@ -432,7 +428,7 @@ export const StoryTooltipTriggers = () => (
   <StorybookPage>
     <StorybookCase title="Triggered by focus">
       <Tooltip content="Tooltip content" placement="right" trigger="focus">
-        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+        <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
           Show tooltip
         </Button>
       </Tooltip>
@@ -443,7 +439,7 @@ export const StoryTooltipTriggers = () => (
         placement="right"
         trigger={['focus', 'hover']}
       >
-        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+        <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
           Show tooltip
         </Button>
       </Tooltip>
@@ -464,11 +460,8 @@ export const StoryTooltipVariations = () => (
           placement="right"
           trigger={['focus', 'hover']}
         >
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-          >
-            Button
+          <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+            Show tooltip
           </Button>
         </Tooltip>
       </StorybookCase>
@@ -479,10 +472,7 @@ export const StoryTooltipVariations = () => (
           placement="right"
           trigger={['focus', 'hover']}
         >
-          <IconButton
-            size="small"
-            overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}
-          >
+          <IconButton overrides={{stylePreset: 'iconButtonOutlinedPrimary'}}>
             <IconFilledTwitter />
           </IconButton>
         </Tooltip>
@@ -494,12 +484,8 @@ export const StoryTooltipVariations = () => (
           trigger={['focus', 'hover']}
         >
           <span>
-            <Button
-              size="small"
-              disabled
-              overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-            >
-              Button
+            <Button disabled overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+              Show tooltip
             </Button>
           </span>
         </Tooltip>
@@ -513,7 +499,7 @@ export const StoryTooltipVariations = () => (
           placement="right"
           trigger={['focus', 'hover']}
         >
-          <LinkInline href="/">Inline link</LinkInline>
+          <LinkInline href="/">Show tooltip</LinkInline>
         </Tooltip>
       </StorybookCase>
       <StorybookCase title="Standalone link">
@@ -522,7 +508,7 @@ export const StoryTooltipVariations = () => (
           placement="right"
           trigger={['focus', 'hover']}
         >
-          <LinkStandalone href="/">Standalone link</LinkStandalone>
+          <LinkStandalone href="/">Show tooltip</LinkStandalone>
         </Tooltip>
       </StorybookCase>
     </StorybookPage>
@@ -530,25 +516,19 @@ export const StoryTooltipVariations = () => (
     <StorybookPage rowGap="space050">
       <StorybookCase title="Content is empty">
         <Tooltip content="" placement="right" trigger={['focus', 'hover']}>
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-          >
-            Button
+          <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+            Show tooltip
           </Button>
         </Tooltip>
       </StorybookCase>
-      <StorybookCase title="When content is not a string">
+      <StorybookCase title="Content is not a string">
         <Tooltip
           content={<div>Lorem ipsum dolor sit amet</div>}
           placement="right"
           trigger={['focus', 'hover']}
         >
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-          >
-            Button
+          <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+            Show tooltip
           </Button>
         </Tooltip>
       </StorybookCase>
@@ -557,11 +537,8 @@ export const StoryTooltipVariations = () => (
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           trigger={['focus', 'hover']}
         >
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-          >
-            Button
+          <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+            Show tooltip
           </Button>
         </Tooltip>
       </StorybookCase>
@@ -571,11 +548,8 @@ export const StoryTooltipVariations = () => (
           trigger={['focus', 'hover']}
           overrides={{maxWidth: '100px'}}
         >
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonOutlinedPrimary'}}
-          >
-            Button
+          <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+            Show tooltip
           </Button>
         </Tooltip>
       </StorybookCase>
@@ -591,8 +565,8 @@ export const StoryTooltipNoPointer = () => (
   <StorybookPage>
     <StorybookCase title="No pointer (default)">
       <Tooltip content="Tooltip content" placement="right" hidePointer>
-        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
-          Button
+        <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+          Show tooltip
         </Button>
       </Tooltip>
     </StorybookCase>
@@ -603,8 +577,8 @@ export const StoryTooltipNoPointer = () => (
         hidePointer
         overrides={{offset: 'space080'}}
       >
-        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
-          Button
+        <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+          Show tooltip
         </Button>
       </Tooltip>
     </StorybookCase>
@@ -615,8 +589,8 @@ export const StoryTooltipNoPointer = () => (
         hidePointer
         overrides={{offset: 'space000'}}
       >
-        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
-          Button
+        <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+          Show tooltip
         </Button>
       </Tooltip>
     </StorybookCase>
@@ -631,17 +605,21 @@ export const StoryTooltipControlled = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <StorybookPage>
-      <StorybookSubHeading>
-        Click &apos;Toggle tooltip&apos; to show/hide the main button&apos;s
-        tooltip
-      </StorybookSubHeading>
-      <Tooltip content="Tooltip content" placement="right" open={open}>
-        <Button size="small" overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
-          Button
+      <StorybookCase>
+        <Button
+          overrides={{stylePreset: 'buttonOutlinedPrimary'}}
+          onClick={() => setOpen(!open)}
+        >
+          Click to toggle tooltip
         </Button>
-      </Tooltip>
-      <Spacer />
-      <Button onClick={() => setOpen(!open)}>Toggle tooltip</Button>
+      </StorybookCase>
+      <StorybookCase>
+        <Tooltip content="Tooltip content" placement="right" open={open}>
+          <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+            Show tooltip
+          </Button>
+        </Tooltip>
+      </StorybookCase>
     </StorybookPage>
   );
 };
@@ -674,7 +652,9 @@ export const StoryTooltipStylingOverrides = () => (
           },
         }}
       >
-        <Button size="small">Button</Button>
+        <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
+          Show tooltip
+        </Button>
       </Tooltip>
     </StorybookCase>
   </StorybookPage>
