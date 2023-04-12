@@ -418,6 +418,12 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
+    "cardContainer": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -1710,6 +1716,12 @@ Object {
       "paddingInline": "space000",
     },
   },
+  "cardActions": Object {},
+  "cardComposable": Object {
+    "stylePreset": "cardContainer",
+    "transitionPreset": "backgroundColorChange",
+  },
+  "cardContent": Object {},
   "cardInset": Object {
     "actionsContainer": Object {
       "minHeight": "sizing000",
@@ -1746,6 +1758,8 @@ Object {
       },
     },
   },
+  "cardLink": Object {},
+  "cardMedia": Object {},
   "characterCount": Object {
     "large": Object {
       "marginBlockEnd": "space020",
