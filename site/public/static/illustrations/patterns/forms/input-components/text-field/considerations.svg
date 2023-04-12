@@ -1,101 +1,14 @@
-<svg
-  id="nksvg"
-  style="width: 100%; height: 100%"
-  width="1490"
-  height="838"
-  viewBox="0 0 1490 838"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  class="css-0"
->
-  <path
-    style="fill: var(--color-illustrationInterface020)"
-    d="M0 0H1490V838H0V0Z"
-  ></path>
-  <g filter="url(#nk-1246)">
-    <rect
-      style="fill: var(--color-illustrationInterface060)"
-      x="387.504"
-      y="309"
-      width="351.552"
-      height="22.3715"
-      rx="11.1857"
-    ></rect>
-    <rect
-      style="fill: var(--color-illustrationInterface010)"
-      x="385"
-      y="362"
-      width="728"
-      height="124"
-      rx="19.1756"
-    ></rect>
-    <rect
-      style="fill: var(--color-illustrationInterface060)"
-      x="427.012"
-      y="417.732"
-      width="199.745"
-      height="11.1857"
-      rx="5.59287"
-    ></rect>
-    <rect
-      style="fill: var(--color-illustrationInterface060)"
-      x="385"
-      y="516.739"
-      width="127.646"
-      height="11.2629"
-      rx="5.63143"
-    ></rect>
-    <rect
-      style="fill: var(--color-illustrationInterface060)"
-      x="640.715"
-      y="417.732"
-      width="199.745"
-      height="11.1857"
-      rx="5.59287"
-    ></rect>
-    <rect
-      style="fill: var(--color-illustrationInterface060)"
-      x="535.172"
-      y="516.739"
-      width="305.349"
-      height="11.2629"
-      rx="5.63143"
-    ></rect>
+<svg id="nksvg" style="width: 100%; height: 100%" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-0">
+  <path style="fill: var(--color-illustrationInterface020)" d="M0 0H1490V838H0V0Z"></path>
+  <g>
+    <rect style="fill: var(--color-illustrationInterface060)" x="387.504" y="309" width="351.552" height="22.3715" rx="11.1857"></rect>
+    <rect style="fill: var(--color-illustrationInterface010)" x="385" y="362" width="728" height="124" rx="19.1756"></rect>
+    <rect style="fill: var(--color-illustrationInterface060)" x="427.012" y="417.732" width="199.745" height="11.1857" rx="5.59287"></rect>
+    <rect style="fill: var(--color-illustrationInterface060)" x="385" y="516.739" width="127.646" height="11.2629" rx="5.63143"></rect>
+    <rect style="fill: var(--color-illustrationInterface060)" x="640.715" y="417.732" width="199.745" height="11.1857" rx="5.59287"></rect>
+    <rect style="fill: var(--color-illustrationInterface060)" x="535.172" y="516.739" width="305.349" height="11.2629" rx="5.63143"></rect>
   </g>
   <defs>
-    <filter
-      id="nk-1246"
-      x="379.994"
-      y="306.497"
-      width="738.011"
-      height="229.013"
-      filterUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
-    >
-      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-      <feColorMatrix
-        in="SourceAlpha"
-        type="matrix"
-        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        result="hardAlpha"
-      ></feColorMatrix>
-      <feOffset dy="2.50286"></feOffset>
-      <feGaussianBlur stdDeviation="2.50286"></feGaussianBlur>
-      <feColorMatrix
-        type="matrix"
-        values="0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0 0.0392157 0 0 0 0.08 0"
-      ></feColorMatrix>
-      <feBlend
-        mode="normal"
-        in2="BackgroundImageFix"
-        result="effect1_dropShadow_1437_28944"
-      ></feBlend>
-      <feBlend
-        mode="normal"
-        in="SourceGraphic"
-        in2="effect1_dropShadow_1437_28944"
-        result="shape"
-      ></feBlend>
-    </filter>
+    
   </defs>
 </svg>
