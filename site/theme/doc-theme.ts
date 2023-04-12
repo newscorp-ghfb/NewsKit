@@ -69,6 +69,7 @@ export const docsThemeDark = createTheme({
   baseTheme: docsThemeLight,
   overrides: {
     ...documentationDark,
+    fonts,
     outlines: {
       safariOutlineStyleDefault: 'solid',
     },
