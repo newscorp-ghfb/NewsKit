@@ -14,6 +14,8 @@ import {LinkInline, LinkStandalone} from '../../link';
 
 const Spacer = styled.div`
   margin-bottom: 20px;
+  min-height: 5px;
+  min-width: 5px;
 `;
 
 const tooltipCustomThemeObject: CreateThemeArgs = {
@@ -40,12 +42,7 @@ export const StoryTooltipDefault = () => (
   <StorybookPage columnGap="space050" rowGap="space050">
     <StorybookCase>
       <Spacer />
-      <Tooltip
-        content="Tooltip content"
-        asLabel
-        placement="top"
-        trigger={['focus', 'hover']}
-      >
+      <Tooltip content="Tooltip content" asLabel trigger={['focus', 'hover']}>
         <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
           Show tooltip
         </Button>
@@ -77,6 +74,7 @@ export const StoryTooltipPlacements = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              maxWidth: '75px',
             }}
           >
             left-start
@@ -89,6 +87,7 @@ export const StoryTooltipPlacements = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              minWidth: '75px',
             }}
           >
             left
@@ -101,6 +100,7 @@ export const StoryTooltipPlacements = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              maxWidth: '75px',
             }}
           >
             left-end
@@ -121,6 +121,7 @@ export const StoryTooltipPlacements = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              maxWidth: '75px',
             }}
           >
             right-start
@@ -132,6 +133,7 @@ export const StoryTooltipPlacements = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              minWidth: '75px',
             }}
           >
             right
@@ -143,6 +145,7 @@ export const StoryTooltipPlacements = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              maxWidth: '75px',
             }}
           >
             right-end
@@ -241,7 +244,7 @@ StoryTooltipPlacements.parameters = {
   percy: {skip: true},
 };
 
-export const StoryTooltipPlacementsVisualTestHidden = () => (
+export const StoryTooltipPlacementsTestHidden = () => (
   <StorybookPage
     columns="repeat(3, 1fr)"
     rows="repeat(4, 1fr)"
@@ -260,6 +263,7 @@ export const StoryTooltipPlacementsVisualTestHidden = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              maxWidth: '75px',
             }}
           >
             left-start
@@ -272,6 +276,7 @@ export const StoryTooltipPlacementsVisualTestHidden = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              minWidth: '75px',
             }}
           >
             left
@@ -284,6 +289,7 @@ export const StoryTooltipPlacementsVisualTestHidden = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              maxWidth: '75px',
             }}
           >
             left-end
@@ -304,6 +310,7 @@ export const StoryTooltipPlacementsVisualTestHidden = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              maxWidth: '75px',
             }}
           >
             right-start
@@ -315,6 +322,7 @@ export const StoryTooltipPlacementsVisualTestHidden = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              minWidth: '75px',
             }}
           >
             right
@@ -326,6 +334,7 @@ export const StoryTooltipPlacementsVisualTestHidden = () => (
             overrides={{
               stylePreset: 'buttonOutlinedPrimary',
               height: '50px',
+              maxWidth: '75px',
             }}
           >
             right-end
@@ -419,13 +428,13 @@ export const StoryTooltipPlacementsVisualTestHidden = () => (
     </GridLayoutItem>
   </StorybookPage>
 );
-StoryTooltipPlacementsVisualTestHidden.storyName = 'Placements visual test';
-StoryTooltipPlacementsVisualTestHidden.parameters = {
+StoryTooltipPlacementsTestHidden.storyName = 'Placements visual test';
+StoryTooltipPlacementsTestHidden.parameters = {
   percy: {enableJavaScript: true},
 };
 
 export const StoryTooltipTriggers = () => (
-  <StorybookPage>
+  <StorybookPage columns="repeat(auto-fill, minmax(180px, 1fr))">
     <StorybookCase title="Triggered by focus">
       <Tooltip content="Tooltip content" placement="right" trigger="focus">
         <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
@@ -453,10 +462,13 @@ StoryTooltipTriggers.parameters = {
 
 export const StoryTooltipVariations = () => (
   <>
-    <StorybookPage rowGap="space050">
+    <StorybookPage
+      columns="repeat(auto-fill, minmax(180px, 1fr))"
+      rowGap="space050"
+    >
       <StorybookCase title="Button">
         <Tooltip
-          content="Lorem ipsum dolor sit amet"
+          content="Tooltip content"
           placement="right"
           trigger={['focus', 'hover']}
         >
@@ -479,7 +491,7 @@ export const StoryTooltipVariations = () => (
       </StorybookCase>
       <StorybookCase title="Disabled button">
         <Tooltip
-          content="Action unavailable"
+          content="Tooltip content"
           placement="right"
           trigger={['focus', 'hover']}
         >
@@ -492,10 +504,13 @@ export const StoryTooltipVariations = () => (
       </StorybookCase>
     </StorybookPage>
     <Spacer />
-    <StorybookPage rowGap="space050">
+    <StorybookPage
+      columns="repeat(auto-fill, minmax(180px, 1fr))"
+      rowGap="space050"
+    >
       <StorybookCase title="Inline link">
         <Tooltip
-          content="Lorem ipsum dolor sit amet"
+          content="Tooltip content"
           placement="right"
           trigger={['focus', 'hover']}
         >
@@ -504,7 +519,7 @@ export const StoryTooltipVariations = () => (
       </StorybookCase>
       <StorybookCase title="Standalone link">
         <Tooltip
-          content="Lorem ipsum dolor sit amet"
+          content="Tooltip content"
           placement="right"
           trigger={['focus', 'hover']}
         >
@@ -513,7 +528,10 @@ export const StoryTooltipVariations = () => (
       </StorybookCase>
     </StorybookPage>
     <Spacer />
-    <StorybookPage rowGap="space050">
+    <StorybookPage
+      columns="repeat(auto-fill, minmax(180px, 1fr))"
+      rowGap="space050"
+    >
       <StorybookCase title="Content is empty">
         <Tooltip content="" placement="right" trigger={['focus', 'hover']}>
           <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
@@ -562,7 +580,7 @@ StoryTooltipVariations.parameters = {
 };
 
 export const StoryTooltipNoPointer = () => (
-  <StorybookPage>
+  <StorybookPage columns="repeat(auto-fill, minmax(180px, 1fr))">
     <StorybookCase title="No pointer (default)">
       <Tooltip content="Tooltip content" placement="right" hidePointer>
         <Button overrides={{stylePreset: 'buttonOutlinedPrimary'}}>
@@ -604,7 +622,7 @@ StoryTooltipNoPointer.parameters = {
 export const StoryTooltipControlled = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    <StorybookPage>
+    <StorybookPage columns="repeat(auto-fill, minmax(180px, 1fr))">
       <StorybookCase>
         <Button
           overrides={{stylePreset: 'buttonOutlinedPrimary'}}
@@ -633,12 +651,10 @@ export const StoryTooltipStylingOverrides = () => (
     <StorybookCase>
       <Tooltip
         content="Tooltip content"
-        open
         placement="right"
         overrides={{
           minWidth: '50px',
           maxWidth: '150px',
-          zIndex: 70,
           offset: 'space080',
           panel: {
             paddingBlock: 'space040',
