@@ -72,6 +72,7 @@ export const stylePresets = {
   sideBarNavigation: {
     base: {
       textDecoration: 'none',
+      backgrond: '{{colors.interface020}}',
       borderColor: '{{colors.transparent}}',
       borderWidth: '4px',
       borderStyle: 'solid',

@@ -199,7 +199,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
               '--docsearch-hit-shadow': 0,
               '--docsearch-hit-color': theme.colors.inkContrast,
               '--docsearch-hit-active-color': theme.colors.inkContrast,
-              '--docsearch-hit-background': theme.colors.interface010,
+              '--docsearch-hit-background': theme.colors.interface020,
               '--docsearch-hit-height': '70px',
 
               // key
