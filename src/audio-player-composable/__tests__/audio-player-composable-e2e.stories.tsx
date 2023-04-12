@@ -16,7 +16,7 @@ import {
 import {calculateTime} from '../components/time-display/utils';
 
 export default {
-  title: 'Components/audio-player-composable-e2e',
+  title: 'Components/audio-player-composable-e2e-hidden',
   component: () => 'None',
 };
 
