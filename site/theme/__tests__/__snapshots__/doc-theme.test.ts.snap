@@ -855,7 +855,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -3615,7 +3617,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -6378,7 +6382,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -9138,7 +9144,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -11901,7 +11909,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -14661,7 +14671,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -17424,7 +17436,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
@@ -20184,7 +20198,9 @@ Object {
     },
     "cardContainer": Object {
       "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
         "borderRadius": false,
+        "color": "{{colors.inkBase}}",
       },
     },
     "cardContainerActions": Object {
