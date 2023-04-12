@@ -93,7 +93,7 @@ export const NewStartScreen = () => (
                 type="standalone"
                 href={href}
                 key={name}
-                overrides={{typographyPreset: 'utilityLink020'}}
+                overrides={{typographyPreset: 'utilityButton020'}}
               >
                 {name}
                 <IconFilledChevronRight overrides={{size: 'iconSize010'}} />

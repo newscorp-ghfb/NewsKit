@@ -777,7 +777,7 @@ export const stylePresets = {
 
   latestReleaseCardContainerInteractive: {
     base: {
-      backgroundColor: '{{colors.interactivePrimary010}}',
+      backgroundColor: '{{colors.illustrationBackground010}}',
       borderRadius: '{{borders.borderRadiusRounded030}}',
       color: '{{colors.inkContrast}}',
     },
