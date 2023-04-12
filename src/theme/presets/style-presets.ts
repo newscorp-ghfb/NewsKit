@@ -1,4 +1,5 @@
 import {StylePreset} from './types';
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 
 export const stylePresets: Record<string, StylePreset> = {};
 
@@ -128,6 +129,10 @@ stylePresets.selectOptionItem = {
     backgroundColor: '{{colors.interactiveInput010}}',
     borderColor: '{{colors.interactiveInput040}}',
   },
+  'focus-visible': {
+    ...defaultFocusVisible,
+    outlineOffset: '-{{outlines.outlineOffsetDefault}}',
+  },
   active: {
     backgroundColor: '{{colors.interactiveInput030}}',
   },
@@ -172,5 +177,12 @@ stylePresets.selectOptionItemIcon = {
   },
   'selected:active': {
     iconColor: '{{colors.interactiveInput040}}',
+  },
+};
+
+stylePresets.cardContainer = {
+  base: {
+    color: '{{colors.inkBase}}',
+    backgroundColor: '{{colors.interface010}}',
   },
 };

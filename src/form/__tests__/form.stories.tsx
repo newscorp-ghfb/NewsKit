@@ -1,21 +1,30 @@
 import * as React from 'react';
+import {useContext} from 'react';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
-import {Form, FormInput, FormInputCheckbox, FormRef} from '..';
+import PhoneInput, {isValidPhoneNumber} from 'react-phone-number-input';
 import {
-  StorybookHeading,
-  StorybookSubHeading,
-  StorybookLabel,
-} from '../../test/storybook-comps';
+  Form,
+  FormInput,
+  FormInputAssistiveText,
+  FormInputCheckbox,
+  FormInputLabel,
+  FormInputRadioButton,
+  FormInputSelect,
+  FormInputTextField,
+} from '..';
 import {Button} from '../../button';
-import {TextInput} from '../../text-input';
 import {Block} from '../../block';
-import {Stack} from '../../stack';
 import {styled} from '../../utils';
-
-const PhoneInputWithCountry = require('react-phone-number-input/react-hook-form')
-  .default;
+import {GridLayout, GridLayoutItem} from '../../grid-layout';
+import {FormInputContext} from '../context';
+import {IconFilledRemoveRedEye, IconFilledStop} from '../../icons';
+import {IconButton} from '../../icon-button';
+import {Fieldset} from '../../fieldset';
+import {SelectOption} from '../../select';
+import {RadioGroup} from '../../radio-button';
+import {StorybookPage} from '../../test/storybook-comps';
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -31,436 +40,499 @@ const validateUserName = async (value: string) => {
   return value !== 'newskit' || 'This username is already taken';
 };
 
+const emailValidation = {
+  required: 'Required field',
+  pattern: {
+    // eslint-disable-next-line no-useless-escape
+    value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+    message: 'Please provide a valid email',
+  },
+};
+
+const usernameValidation = {
+  required: 'Required field',
+  minLength: {
+    value: 5,
+    message: 'Usernames must be at least 5 characters long',
+  },
+  validate: validateUserName,
+};
+
+const phoneNumberValidation = {
+  required: 'Required field',
+  validate: (v: string) =>
+    isValidPhoneNumber(v) || 'Please provide a valid phone number.',
+};
+
 const schema = yup.object().shape({
   email: yup.string().email().required(),
   username: yup.string().required(),
 });
 
-const StyledDiv = styled.div`
-  border: 1px solid red;
-`;
-
 export default {
-  title: 'Components/form',
+  title: 'Components/Form',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Form',
+      url: 'https://newskit.co.uk/components/form',
+      description:
+        'The form component allows users to enter and edit information into a UI using form controls. Based on React Hook Form.',
+    },
+  },
 };
 
-export const StoryFormWithSubmitValidation = () => (
-  <>
-    <StorybookHeading>Form</StorybookHeading>
-    <Block>
-      <StorybookSubHeading>Input validation mode: onSubmit</StorybookSubHeading>
-      <Form onSubmit={onSubmit}>
-        <Block spaceStack="space050">
-          <TextInput
-            label="Email"
-            name="email"
-            rules={{
-              required: 'Required field',
-              pattern: {
-                // eslint-disable-next-line no-useless-escape
-                value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                message: 'Please provide a valid email',
-              },
-            }}
-          />
-        </Block>
-        <Block spaceStack="space050">
-          <TextInput
-            label="Username"
-            name="username"
-            rules={{
-              required: 'Required field',
-              minLength: {
-                value: 5,
-                message: 'Usernames must be at least 5 characters long',
-              },
-              validate: validateUserName,
-            }}
-          />
-        </Block>
-        <Button type="submit">Submit</Button>
-      </Form>
-    </Block>
-  </>
+export const StoryFormDefault = () => (
+  <StorybookPage>
+    <Form onSubmit={onSubmit}>
+      <GridLayout rowGap="space050">
+        <GridLayoutItem>
+          <FormInput name="email">
+            <FormInputLabel>Email</FormInputLabel>
+            <FormInputTextField />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <FormInput name="username">
+            <FormInputLabel>Username</FormInputLabel>
+            <FormInputTextField />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <Button type="submit">Submit</Button>
+        </GridLayoutItem>
+      </GridLayout>
+    </Form>
+  </StorybookPage>
 );
-StoryFormWithSubmitValidation.storyName = 'form-with-submit-validation';
+StoryFormDefault.storyName = 'Default';
 
-export const StoryFormWithResolver = () => (
-  <>
-    <div data-testid="yup-resolver">
-      <StorybookHeading>Form</StorybookHeading>
-      <Block>
-        <StorybookSubHeading>Yup Schema Validation</StorybookSubHeading>
-        <Form onSubmit={onSubmit} resolver={yupResolver(schema)}>
-          <Block spaceStack="space050">
-            <TextInput label="Email" name="email" data-testid="email-input" />
-          </Block>
-          <Block spaceStack="space050">
-            <TextInput
-              label="Username"
-              name="username"
-              data-testid="username-input"
-            />
-          </Block>
+export const StoryFormSubmitValidation = () => (
+  <StorybookPage>
+    <Form onSubmit={onSubmit}>
+      <GridLayout rowGap="space050">
+        <GridLayoutItem>
+          <FormInput name="email" rules={emailValidation}>
+            <FormInputLabel>Email</FormInputLabel>
+            <FormInputTextField />
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <FormInput name="username" rules={usernameValidation}>
+            <FormInputLabel>Username</FormInputLabel>
+            <FormInputTextField />
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <Button type="submit">Submit</Button>
+        </GridLayoutItem>
+      </GridLayout>
+    </Form>
+  </StorybookPage>
+);
+StoryFormSubmitValidation.storyName = 'Submit validation';
+
+export const StoryFormYupResolver = () => (
+  <StorybookPage data-testid="yup-resolver">
+    <Form onSubmit={onSubmit} resolver={yupResolver(schema)}>
+      <GridLayout rowGap="space050">
+        <GridLayoutItem>
+          <FormInput name="email">
+            <FormInputLabel>Email</FormInputLabel>
+            <FormInputTextField data-testid="email-input" />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <FormInput name="username">
+            <FormInputLabel>Username</FormInputLabel>
+            <FormInputTextField data-testid="username-input" />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
           <Button type="submit" data-testid="submit-button">
             Submit
           </Button>
-        </Form>
-      </Block>
-    </div>
-  </>
-);
-StoryFormWithResolver.storyName = 'form-with-resolver';
-
-export const StoryFormWithSubmitValidationAndAssistiveText = () => (
-  <>
-    <StorybookHeading>Form</StorybookHeading>
-    <Block>
-      <StorybookSubHeading>
-        onSubmit validation and assistive text
-      </StorybookSubHeading>
-      <Form onSubmit={onSubmit}>
-        <Block spaceStack="space050">
-          <TextInput
-            label="Email"
-            name="email"
-            assistiveText="Your email"
-            rules={{
-              required: 'Required field',
-              pattern: {
-                // eslint-disable-next-line no-useless-escape
-                value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                message: 'Please provide a valid email',
-              },
-            }}
-          />
-        </Block>
-        <Block spaceStack="space050">
-          <TextInput
-            label="Username"
-            name="username"
-            assistiveText="Your username"
-            rules={{
-              required: 'Required field',
-              minLength: {
-                value: 5,
-                message: 'Usernames must be at least 5 characters long',
-              },
-              validate: validateUserName,
-            }}
-          />
-        </Block>
-        <Button type="submit">Submit</Button>
-      </Form>
-    </Block>
-  </>
-);
-StoryFormWithSubmitValidationAndAssistiveText.storyName =
-  'form-with-submit-validation-and-assistive-text';
-
-export const StoryFormSizes = () => (
-  <>
-    <StorybookHeading>Form with</StorybookHeading>
-    <Block>
-      <Stack
-        flow="horizontal-center"
-        stackDistribution="space-between"
-        spaceInline="space030"
-      >
-        <Form onSubmit={onSubmit} validationMode="onBlur">
-          <StorybookSubHeading>large text input</StorybookSubHeading>
-          <Block spaceStack="space050">
-            <TextInput
-              size="large"
-              label="Email"
-              name="email"
-              assistiveText="Your email"
-              rules={{
-                required: 'Required field',
-                pattern: {
-                  // eslint-disable-next-line no-useless-escape
-                  value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                  message: 'Please provide a valid email',
-                },
-              }}
-            />
-          </Block>
-          <Block spaceStack="space050">
-            <TextInput
-              size="large"
-              label="Username"
-              name="username"
-              assistiveText="Your username"
-              rules={{
-                required: 'Required field',
-                minLength: {
-                  value: 5,
-                  message: 'Usernames must be at least 5 characters long',
-                },
-                validate: validateUserName,
-              }}
-            />
-          </Block>
-          <Button type="submit">Submit</Button>
-        </Form>
-        <Form onSubmit={onSubmit} validationMode="onBlur">
-          <StorybookSubHeading>medium text input</StorybookSubHeading>
-          <Block spaceStack="space050">
-            <TextInput
-              size="medium"
-              label="Email"
-              name="email"
-              assistiveText="Your email"
-              rules={{
-                required: 'Required field',
-                pattern: {
-                  // eslint-disable-next-line no-useless-escape
-                  value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                  message: 'Please provide a valid email',
-                },
-              }}
-            />
-          </Block>
-          <Block spaceStack="space050">
-            <TextInput
-              size="medium"
-              label="Username"
-              name="username"
-              assistiveText="Your username"
-              rules={{
-                required: 'Required field',
-                minLength: {
-                  value: 5,
-                  message: 'Usernames must be at least 5 characters long',
-                },
-                validate: validateUserName,
-              }}
-            />
-          </Block>
-          <Button type="submit">Submit</Button>
-        </Form>
-        <Form onSubmit={onSubmit} validationMode="onBlur">
-          <StorybookSubHeading>small text input</StorybookSubHeading>
-          <Block spaceStack="space050">
-            <TextInput
-              size="small"
-              label="Email"
-              name="email"
-              assistiveText="Your email"
-              rules={{
-                required: 'Required field',
-                pattern: {
-                  // eslint-disable-next-line no-useless-escape
-                  value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                  message: 'Please provide a valid email',
-                },
-              }}
-            />
-          </Block>
-          <Block spaceStack="space050">
-            <TextInput
-              size="small"
-              label="Username"
-              name="username"
-              assistiveText="Your username"
-              rules={{
-                required: 'Required field',
-                minLength: {
-                  value: 5,
-                  message: 'Usernames must be at least 5 characters long',
-                },
-                validate: validateUserName,
-              }}
-            />
-          </Block>
-          <Button type="submit">Submit</Button>
-        </Form>
-      </Stack>
-    </Block>
-  </>
-);
-StoryFormSizes.storyName = 'form-sizes';
-
-export const StoryFormWithPhoneInput = () => {
-  const FormWithPhoneInput: React.FC = () => {
-    const formRef = React.useRef<FormRef>(null);
-    const [value, setValue] = React.useState();
-    return (
-      <Block>
-        <Stack
-          flow="horizontal-center"
-          stackDistribution="space-between"
-          spaceInline="space030"
-        >
-          <Form ref={formRef} onSubmit={onSubmit} validationMode="onBlur">
-            <Block spaceStack="space050">
-              <TextInput
-                size="small"
-                label="Username"
-                name="username"
-                assistiveText="Your username"
-                rules={{
-                  required: 'Required field',
-                  minLength: {
-                    value: 5,
-                    message: 'Usernames must be at least 5 characters long',
-                  },
-                  validate: validateUserName,
-                }}
-              />
-            </Block>
-            <Block>
-              {}
-              <StorybookLabel htmlFor="phone-number">
-                Phone number
-              </StorybookLabel>
-              <PhoneInputWithCountry
-                placeholder="Enter phone number"
-                name="phonenumber"
-                control={formRef.current?.control}
-                value={value}
-                onChange={setValue}
-                id="phone-number"
-              />
-            </Block>
-            <Button type="submit">Submit</Button>
-          </Form>
-        </Stack>
-      </Block>
-    );
-  };
-  return (
-    <>
-      <StorybookHeading>Form with Telephone number</StorybookHeading>
-      <FormWithPhoneInput />
-    </>
-  );
-};
-StoryFormWithPhoneInput.storyName = 'form-with-phone-input';
-StoryFormWithPhoneInput.parameters = {
-  percy: {skip: true},
-};
-
-export const StoryFormWithCustomStyles = () => {
-  const StyledForm = styled(Form)`
-    background: #fcf7de;
-    width: 100%;
-    border: 1px dashed;
-  `;
-  return (
-    <>
-      <StorybookHeading>Form with custom styles</StorybookHeading>
-      <Block>
-        <StyledForm onSubmit={onSubmit}>
-          <Block spaceStack="space050">
-            <TextInput
-              label="Email"
-              name="email"
-              rules={{
-                required: 'Required field',
-                pattern: {
-                  // eslint-disable-next-line no-useless-escape
-                  value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                  message: 'Please provide a valid email',
-                },
-              }}
-            />
-          </Block>
-          <Button type="submit">Submit</Button>
-        </StyledForm>
-      </Block>
-    </>
-  );
-};
-StoryFormWithCustomStyles.storyName = 'form-with-custom-styles';
-
-export const StoryFormWithTextInputAndFormInput = () => (
-  <>
-    <StorybookHeading>Use Tab to move through the inputs</StorybookHeading>
-    <Block spaceStack="space050" />
-    <Form onSubmit={onSubmit} validationMode="onBlur" reValidationMode="onBlur">
-      <Block spaceStack="space050">
-        <TextInput
-          label="Username"
-          name="username"
-          data-testid="username-input"
-          rules={{
-            required: 'Required field',
-          }}
-        />
-      </Block>
-      <Block spaceStack="space050">
-        <TextInput label="FAQ" name="faq" data-testid="faq-input" />
-      </Block>
-      <FormInput
-        name="small-checkbox"
-        rules={{
-          required: 'Required field',
-        }}
-      >
-        <FormInputCheckbox
-          label="I agree to the terms & conditions"
-          value="tc"
-          overrides={{spaceStack: 'space020'}}
-        />
-      </FormInput>
-      <Button type="submit" data-testid="submit-button">
-        Submit
-      </Button>
+        </GridLayoutItem>
+      </GridLayout>
     </Form>
-  </>
+  </StorybookPage>
 );
-StoryFormWithTextInputAndFormInput.storyName =
-  'form-with-text-input-and-form-input';
+StoryFormYupResolver.storyName = 'Yup schema validation';
 
-export const StoryFormWithLogicalProps = () => (
-  <>
-    <StorybookHeading>Form with logical properties</StorybookHeading>
-    <StorybookSubHeading>Logical padding </StorybookSubHeading>
-    <StyledDiv>
-      <Form
-        onSubmit={onSubmit}
-        paddingBlock="space050"
-        paddingInline="space030"
-      >
-        <Block spaceStack="space050">
-          <TextInput
-            label="Email"
-            name="email"
-            rules={{
-              required: 'Required field',
-              pattern: {
-                // eslint-disable-next-line no-useless-escape
-                value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                message: 'Please provide a valid email',
-              },
-            }}
-          />
-        </Block>
-        <Button type="submit">Submit</Button>
-      </Form>
-    </StyledDiv>
-    <StorybookSubHeading>Logical margin </StorybookSubHeading>
-    <StyledDiv>
-      <Form onSubmit={onSubmit} marginBlock="space050" marginInline="space030">
-        <Block spaceStack="space050">
-          <TextInput
-            label="Email"
-            name="email"
-            rules={{
-              required: 'Required field',
-              pattern: {
-                // eslint-disable-next-line no-useless-escape
-                value: /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                message: 'Please provide a valid email',
-              },
-            }}
-          />
-        </Block>
-        <Button type="submit">Submit</Button>
-      </Form>
-    </StyledDiv>
-  </>
+export const StoryFormValidationAndAssistiveText = () => (
+  <StorybookPage>
+    <Form onSubmit={onSubmit}>
+      <GridLayout rowGap="space050">
+        <GridLayoutItem>
+          <FormInput name="email" rules={emailValidation}>
+            <FormInputLabel>Email</FormInputLabel>
+            <FormInputTextField />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <FormInput name="username" rules={usernameValidation}>
+            <FormInputLabel>Username</FormInputLabel>
+            <FormInputTextField />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <Button type="submit">Submit</Button>
+        </GridLayoutItem>
+      </GridLayout>
+    </Form>
+  </StorybookPage>
 );
-StoryFormWithLogicalProps.storyName = 'form-with-logical-props';
+StoryFormValidationAndAssistiveText.storyName = 'Validation and assistive text';
+
+const StyledPhoneInput = styled.div`
+  input {
+    border: none;
+    color: rgb(59, 59, 59);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .PhoneInput {
+    border: 1px solid #919191;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  .PhoneInput:has(input:focus) {
+    outline: 2px solid #3768fb;
+  }
+`;
+
+const FormInputPhoneNumber = React.forwardRef<HTMLInputElement>(() => {
+  const {
+    name,
+    onChange: onChangeContext,
+    onBlur: onBlurContext,
+    ref,
+    id,
+  } = useContext(FormInputContext);
+
+  const onChange = (value: string) =>
+    onChangeContext &&
+    onChangeContext({target: {value}} as React.ChangeEvent<HTMLInputElement>);
+
+  return (
+    <StyledPhoneInput>
+      <PhoneInput
+        defaultCountry="GB"
+        name={name}
+        onChange={onChange}
+        onBlur={onBlurContext}
+        ref={ref}
+        id={id}
+      />
+    </StyledPhoneInput>
+  );
+});
+
+export const StoryFormPhoneInputExample = () => (
+  <StorybookPage>
+    <Form onSubmit={onSubmit}>
+      <GridLayout rowGap="space050">
+        <GridLayoutItem>
+          <FormInput name="email" rules={emailValidation}>
+            <FormInputLabel>Email</FormInputLabel>
+            <FormInputTextField />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <FormInput name="phoneNumber" rules={phoneNumberValidation}>
+            <FormInputLabel>Phone number</FormInputLabel>
+            <FormInputPhoneNumber />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <Button type="submit">Submit</Button>
+        </GridLayoutItem>
+      </GridLayout>
+    </Form>
+  </StorybookPage>
+);
+StoryFormPhoneInputExample.storyName = 'Phone input example';
+
+export const StoryFormEmailInputExample = () => (
+  <StorybookPage>
+    <Form onSubmit={onSubmit}>
+      <GridLayout rowGap="space050">
+        <GridLayoutItem>
+          <FormInput name="email" rules={emailValidation}>
+            <FormInputLabel>Email</FormInputLabel>
+            <FormInputTextField />
+            <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <Button type="submit">Submit</Button>
+        </GridLayoutItem>
+      </GridLayout>
+    </Form>
+  </StorybookPage>
+);
+StoryFormEmailInputExample.storyName = 'Email input example';
+
+export const StoryFormLogicalProps = () => (
+  <StorybookPage>
+    <Form onSubmit={onSubmit}>
+      <GridLayout rowGap="space050">
+        <GridLayoutItem>
+          <FormInput name="email" rules={emailValidation}>
+            <FormInputLabel>Email</FormInputLabel>
+            <FormInputTextField overrides={{paddingBlock: 'space030'}} />
+            <FormInputAssistiveText overrides={{marginBlockEnd: 'space050'}}>
+              Assistive Text
+            </FormInputAssistiveText>
+          </FormInput>
+        </GridLayoutItem>
+        <GridLayoutItem>
+          <Button type="submit">Submit</Button>
+        </GridLayoutItem>
+      </GridLayout>
+    </Form>
+  </StorybookPage>
+);
+StoryFormLogicalProps.storyName = 'Logical props';
+
+const ShowPasswordButton = ({
+  onClick,
+  isVisible,
+}: {
+  onClick: () => void;
+  isVisible: boolean;
+}) => (
+  <IconButton
+    aria-label="toggle password"
+    onClick={onClick}
+    size="small"
+    overrides={{stylePreset: 'iconButtonMinimalPrimary'}}
+  >
+    {isVisible ? (
+      <IconFilledStop overrides={{size: 'iconSize010'}} />
+    ) : (
+      <IconFilledRemoveRedEye overrides={{size: 'iconSize010'}} />
+    )}
+  </IconButton>
+);
+
+export const StoryFormComplete = () => {
+  const [showPassword, toggleShowPassword] = React.useState(false);
+  return (
+    <StorybookPage>
+      <Form onSubmit={console.log}>
+        <Fieldset legend="Personal">
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
+            <FormInput
+              name="first-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters long',
+                },
+              }}
+            >
+              <FormInputLabel>First name</FormInputLabel>
+              <FormInputTextField />
+              <FormInputAssistiveText>
+                Enter your first name
+              </FormInputAssistiveText>
+            </FormInput>
+          </Block>
+
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
+            <FormInput
+              name="last-name"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 2,
+                  message: 'Name must be at least 2 characters long',
+                },
+              }}
+            >
+              <FormInputLabel>Last name</FormInputLabel>
+              <FormInputTextField />
+              <FormInputAssistiveText>
+                Enter your last name
+              </FormInputAssistiveText>
+            </FormInput>
+          </Block>
+
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
+            <FormInput
+              name="country"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <FormInputLabel>Country</FormInputLabel>
+              <FormInputSelect>
+                <SelectOption value="BG">Bulgaria</SelectOption>
+                <SelectOption value="UK">United Kingdom</SelectOption>
+                <SelectOption value="NL">The Netherlands</SelectOption>
+                <SelectOption value="DE">Germany</SelectOption>
+              </FormInputSelect>
+              <FormInputAssistiveText>
+                Enter your last name
+              </FormInputAssistiveText>
+            </FormInput>
+          </Block>
+        </Fieldset>
+
+        <Fieldset legend="Login information">
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
+            <FormInput
+              name="email"
+              rules={{
+                required: 'Required field',
+                pattern: /^\S+@\S+$/i,
+              }}
+            >
+              <FormInputLabel>Email</FormInputLabel>
+              <FormInputTextField type="email" />
+              <FormInputAssistiveText>Enter your email</FormInputAssistiveText>
+            </FormInput>
+          </Block>
+
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
+            <FormInput
+              name="password"
+              rules={{
+                required: 'Required field',
+                minLength: {
+                  value: 8,
+                  message: 'Name must be at least 8 characters long',
+                },
+              }}
+            >
+              <FormInputLabel>Password</FormInputLabel>
+              <FormInputTextField
+                type={showPassword ? 'text' : 'password'}
+                endEnhancer={
+                  <ShowPasswordButton
+                    onClick={() => toggleShowPassword(!showPassword)}
+                    isVisible={showPassword}
+                  />
+                }
+              />
+              <FormInputAssistiveText>
+                Enter your password
+              </FormInputAssistiveText>
+            </FormInput>
+          </Block>
+        </Fieldset>
+
+        <Fieldset legend="Subscription type">
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
+            <FormInput
+              name="subscription"
+              rules={{
+                required: 'Required field',
+              }}
+            >
+              <RadioGroup>
+                <FormInputRadioButton
+                  id="subscription-online"
+                  value="online"
+                  label="Online"
+                  overrides={{marginBlockEnd: 'space020'}}
+                />
+                <FormInputRadioButton
+                  id="subscription-print"
+                  value="print"
+                  label="Print"
+                  overrides={{marginBlockEnd: 'space020'}}
+                />
+                <FormInputRadioButton
+                  id="subscription-both"
+                  value="both"
+                  label="Online and print"
+                  overrides={{marginBlockEnd: 'space020'}}
+                />
+              </RadioGroup>
+              <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
+            </FormInput>
+          </Block>
+        </Fieldset>
+
+        <Fieldset legend="Interests">
+          <Block marginBlockStart="space020" marginBlockEnd="space050">
+            <FormInput
+              name="interests"
+              rules={{
+                required: 'Required field',
+                validate: (value: string[]) => {
+                  if (value.length < 3) {
+                    return 'Select at least 3 interests';
+                  }
+
+                  return true;
+                },
+              }}
+            >
+              <FormInputCheckbox
+                id="interests-politics"
+                value="politics"
+                label="Politics"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-business"
+                value="Business"
+                label="Business"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-society"
+                value="Society"
+                label="Society"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-technology"
+                value="Technology"
+                label="Technology"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-sport"
+                value="Sport"
+                label="Sport"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputCheckbox
+                id="interests-science"
+                value="Science"
+                label="Science"
+                overrides={{marginBlockEnd: 'space020'}}
+              />
+              <FormInputAssistiveText>Make your choice</FormInputAssistiveText>
+            </FormInput>
+          </Block>
+        </Fieldset>
+
+        <Button type="submit">Register</Button>
+      </Form>
+    </StorybookPage>
+  );
+};
+StoryFormComplete.storyName = 'Form complete';

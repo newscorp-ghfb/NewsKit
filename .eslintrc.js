@@ -5,6 +5,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
     'plugin:@next/next/recommended',
+    'plugin:storybook/recommended',
   ],
   settings: {
     next: {
@@ -39,13 +40,21 @@ module.exports = {
     // This rule has been disabled in individual files instead
     'import/no-extraneous-dependencies': [
       'error',
-      {optionalDependencies: false, devDependencies: true},
+      {
+        optionalDependencies: false,
+        devDependencies: true,
+      },
     ],
     'import/prefer-default-export': 'off',
     'arrow-body-style': ['error', 'as-needed'],
     'react/jsx-one-expression-per-line': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
-    'import/no-unresolved': ['error', {ignore: ['csstype']}],
+    'import/no-unresolved': [
+      'error',
+      {
+        ignore: ['csstype'],
+      },
+    ],
     'prettier/prettier': [
       'error',
       {
@@ -55,7 +64,12 @@ module.exports = {
         arrowParens: 'avoid',
       },
     ],
-    'no-plusplus': ['error', {allowForLoopAfterthoughts: true}],
+    'no-plusplus': [
+      'error',
+      {
+        allowForLoopAfterthoughts: true,
+      },
+    ],
   },
   overrides: [
     {
@@ -81,7 +95,10 @@ module.exports = {
       rules: {
         'import/no-extraneous-dependencies': [
           'error',
-          {optionalDependencies: false, devDependencies: false},
+          {
+            optionalDependencies: false,
+            devDependencies: false,
+          },
         ],
       },
     },
@@ -91,7 +108,9 @@ module.exports = {
         'react/display-name': 'off',
         'import/no-unresolved': [
           'error',
-          {ignore: ['newskit', 'csstype', '@components/page-title']},
+          {
+            ignore: ['newskit', 'csstype', '@components/page-title'],
+          },
         ],
       },
     },

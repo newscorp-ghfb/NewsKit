@@ -1,7 +1,5 @@
 const path = require('path');
-
 const toPath = _path => path.join(process.cwd(), _path);
-
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
   addons: [
@@ -23,7 +21,10 @@ module.exports = {
         },
         loaderOptions: {
           parser: 'typescript', //This might not be needed
-          prettierConfig: {printWidth: 80, singleQuote: false},
+          prettierConfig: {
+            printWidth: 80,
+            singleQuote: false,
+          },
         },
       },
     },
@@ -46,7 +47,6 @@ module.exports = {
     // These dependencies are not transpiled so they do not work on IE11
     // that's why we need to exclude them  (include in transpilation)
     config.module.rules[0].exclude = /node_modules\/(?!(yup|react-hook-form|goober)\/).*/;
-
     return {
       ...config,
       module: {
@@ -68,8 +68,14 @@ module.exports = {
   typescript: {
     reactDocgen: false, // added to negate https://github.com/styleguidist/react-docgen-typescript/issues/356
   },
+
   staticDirs: ['../fonts', '../static', 'private-fonts'],
   // we need the stories.json file to be generated so that we can check that all
   // Storybook urls in the doc site build are valid
-  features: {buildStoriesJson: true,}
+  features: {
+    buildStoriesJson: true,
+  },
+  core: {
+    builder: 'webpack5',
+  },
 };

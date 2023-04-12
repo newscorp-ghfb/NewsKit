@@ -1,12 +1,7 @@
 import {StylePreset} from '../theme/types';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 export default {
-  cardContainer: {
-    base: {
-      color: '{{colors.inkBase}}',
-      backgroundColor: '{{colors.interface010}}',
-    },
-  },
   headlineHeadingInteractive: {
     base: {
       color: '{{colors.inkContrast}}',
@@ -38,5 +33,8 @@ export default {
     visited: {
       color: '{{colors.interactiveVisited010}}',
     },
+  },
+  headlineHeadingLink: {
+    'focus-visible': defaultFocusVisible,
   },
 } as Record<string, StylePreset>;

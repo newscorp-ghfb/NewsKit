@@ -50,7 +50,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446BE4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -305,6 +305,7 @@ Object {
     "outlineColorInverse": "{{colors.interactiveFocus020}}",
     "outlineOffsetDefault": "{{borders.borderWidth020}}",
     "outlineStyleDefault": "solid",
+    "outlineWidth000": "{{borders.borderWidth000}}",
     "outlineWidthDefault": "{{borders.borderWidth020}}",
     "safariOutlineOffsetDefault": "{{borders.borderWidth020}}",
     "safariOutlineStyleDefault": "auto",
@@ -412,6 +413,12 @@ Object {
     "spaceInsetStretch060": "{{sizing.sizing080}} {{sizing.sizing060}}",
   },
   "stylePresets": Object {
+    "cardContainer": Object {
+      "base": Object {
+        "backgroundColor": "{{colors.interface010}}",
+        "color": "{{colors.inkBase}}",
+      },
+    },
     "controlLabel": Object {
       "base": Object {
         "color": "{{colors.inkBase}}",
@@ -533,6 +540,13 @@ Object {
       "focus": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",
         "borderColor": "{{colors.interactiveInput040}}",
+      },
+      "focus-visible": Object {
+        "outlineColor": "{{outlines.outlineColorDefault}}",
+        "outlineOffset": "-{{outlines.outlineOffsetDefault}}",
+        "outlineStyle": "{{outlines.outlineStyleDefault}}",
+        "outlineWidth": "{{outlines.outlineWidthDefault}}",
+        "safariOutlineStyle": "{{outlines.safariOutlineStyleDefault}}",
       },
       "hover": Object {
         "backgroundColor": "{{colors.interactiveInput010}}",

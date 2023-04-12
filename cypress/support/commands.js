@@ -67,19 +67,3 @@ Cypress.Commands.add('setCookieConsent', () => {
   cy.setCookie('euconsent-v2', 'testCookieValue');
   cy.setCookie('consentUUID', 'testCookieValue');
 });
-
-export const flatRoutes = (routes, routeKey) =>
-  routes.reduce((acc, route) => {
-    if (route.page) {
-      acc.push(route[routeKey]);
-      return acc;
-    }
-
-    if (route.subNav) {
-      return acc.concat(flatRoutes(route.subNav, routeKey));
-    }
-
-    throw new Error(
-      `Route object has no page or subNav property! ${JSON.stringify(route)}`,
-    );
-  }, []);
