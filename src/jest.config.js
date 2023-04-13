@@ -1,6 +1,8 @@
+// Sets default timezone so test returns same one across different locations ( UK, BG and CI)
+process.env.TZ = 'GMT';
+
 module.exports = {
-  name: 'comps',
-  displayName: 'NewsKit Components',
+  displayName: 'Components',
   bail: 1,
   rootDir: './',
   setupFilesAfterEnv: [

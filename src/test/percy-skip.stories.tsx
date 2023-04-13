@@ -5,5 +5,5 @@ EmptyStory.storyName = 'skip-percy-tests';
 
 // styling in .storybook/manager-head.html hides this from Storybook sidebar
 export default {
-  title: 'hide-from-sidebar',
+  title: 'percy-hidden',
 };

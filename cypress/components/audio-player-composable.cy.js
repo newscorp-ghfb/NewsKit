@@ -79,7 +79,7 @@ describe('audio player composable', () => {
   const parentTestIDSelector = '[data-testid="audio-player-inline"]';
 
   beforeEach(() => {
-    cy.visit('?name=audio-player-composable-e2e');
+    cy.visit('?name=audio-player-composable-e2e-hidden');
 
     cy.get(`${parentTestIDSelector}`).as('container');
 

@@ -10,6 +10,7 @@ export * from './button';
 export * from './byline';
 export * from './caption';
 export * from './card';
+export * from './card-composable';
 export * from './character-count';
 export * from './checkbox';
 export * from './consent';

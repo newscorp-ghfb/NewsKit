@@ -1,8 +1,8 @@
 import React from 'react';
-import {useTheme} from '@emotion/react';
+import {useTheme} from '../../../theme';
 import {IconFilledLastPage, NewsKitIconProps} from '../../../icons';
 import {usePaginationContext} from '../../context';
-import {StyledListItem} from '../../styled';
+import {PaginationListItem} from '../list-item';
 import {PaginationItem} from '../item/pagination-item';
 import {PaginationLastItemProps} from './types';
 import {filterOutFalsyProperties} from '../../../utils/filter-object';
@@ -44,22 +44,23 @@ export const PaginationLastItem = React.forwardRef<
 
   const href = buildHref! && buildHref(lastPage);
   return (
-    <StyledListItem key="last">
+    <PaginationListItem key="last">
       <PaginationItem
         // @ts-ignore
         itemType={itemType}
         data-testid="pagination-last-item"
         eventOriginator="pagination-last-item"
         eventContext={eventContext}
+        pageNumber={lastPage}
         {...propsFromContext}
         overrides={overrides}
         ref={ref}
         href={href}
         size={size}
       >
-        <PaginationIcon />
         {children}
+        <PaginationIcon />
       </PaginationItem>
-    </StyledListItem>
+    </PaginationListItem>
   );
 });

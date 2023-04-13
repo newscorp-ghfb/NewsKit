@@ -50,7 +50,7 @@ Object {
     "blue020": "#D5E0FC",
     "blue030": "#AEBFFF",
     "blue040": "#8BA6F6",
-    "blue050": "#577FFB",
+    "blue050": "#708DE9",
     "blue055": "#446BE4",
     "blue060": "#3358CC",
     "blue070": "#254CAC",
@@ -306,6 +306,7 @@ Object {
     "outlineColorInverse": "#FFFFFF",
     "outlineOffsetDefault": "2px",
     "outlineStyleDefault": "solid",
+    "outlineWidth000": "0",
     "outlineWidthDefault": "2px",
     "safariOutlineOffsetDefault": "2px",
     "safariOutlineStyleDefault": "auto",
@@ -413,6 +414,12 @@ Object {
     "spaceInsetStretch060": "48px 32px",
   },
   "stylePresets": Object {
+    "cardContainer": Object {
+      "base": Object {
+        "backgroundColor": "#FFFFFF",
+        "color": "#3B3B3B",
+      },
+    },
     "controlLabel": Object {
       "base": Object {
         "color": "#3B3B3B",
@@ -612,6 +619,13 @@ Object {
       "focus": Object {
         "backgroundColor": "#F1F1F1",
         "borderColor": "#3358CC",
+      },
+      "focus-visible": Object {
+        "outlineColor": "#3768FB",
+        "outlineOffset": "-2px",
+        "outlineStyle": "solid",
+        "outlineWidth": "2px",
+        "safariOutlineStyle": "auto",
       },
       "hover": Object {
         "backgroundColor": "#F1F1F1",

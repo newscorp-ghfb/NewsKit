@@ -107,7 +107,7 @@ executors:
   cypress:
     docker:
       - image: cypress/browsers:node16.13.0-chrome95-ff94
-    resource_class: large
+    resource_class: xlarge
 
   java:
     docker:
@@ -594,7 +594,7 @@ jobs:
           at: ~/project
       - run:
           name: Build E2E Tests
-          command: make e2e_test_build
+          command: yarn e2e:build
       - persist_to_workspace:
           root: ./
           paths:
@@ -812,7 +812,7 @@ jobs:
           at: ~/project
       - run:
           name: Run Component Tests
-          command: make e2e_test_comps
+          command: yarn e2e:comps:ci
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
@@ -830,7 +830,7 @@ jobs:
       - run:
           name: Run Docs Site Functional Tests
           command: |
-            make e2e_test_docs
+            yarn e2e:docs:ci
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
@@ -1213,7 +1213,7 @@ workflows:
     when:
       matches:
         # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
-        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*'
+        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*|^snyk-upgrade.*'
         value: << pipeline.git.branch >>
     jobs:
       - install_deps
@@ -1418,7 +1418,7 @@ workflows:
     when:
       matches:
         # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
-        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*'
+        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*|^snyk-upgrade.*'
         value: << pipeline.git.branch >>
     jobs:
       - install_deps_codemod:

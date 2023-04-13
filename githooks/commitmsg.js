@@ -6,7 +6,7 @@ const read = require('@commitlint/read');
 
 const customMessages = {
   'scope-enum': {
-    level2: 'The scope should be a Jira ticket number',
+    level2: 'The scope should be a GitHub issue number',
   },
 };
 
