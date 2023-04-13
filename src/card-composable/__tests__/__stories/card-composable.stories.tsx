@@ -30,7 +30,7 @@ import {
 import {LinkInline} from '../../../link';
 import {Tag} from '../../../tag';
 import {VideoPlayer} from '../../../video-player';
-import {DEFATULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/config';
+import {DEFAULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/config';
 
 const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
   <Headline
@@ -359,7 +359,7 @@ export const StoryVariations = () => (
           <P />
         </CardContent>
         <CardMedia>
-          <VideoPlayer config={DEFATULT_VIDEO_PLAYER_CONFIG} />
+          <VideoPlayer config={DEFAULT_VIDEO_PLAYER_CONFIG} />
         </CardMedia>
         <CardActions>
           <Tag href={href}>Tag</Tag>
