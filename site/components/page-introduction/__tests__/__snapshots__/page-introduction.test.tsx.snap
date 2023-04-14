@@ -62,55 +62,55 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #3358CC;
+  color: #3358cc;
 }
 
 .emotion-2 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Poppins",sans-serif;
-    font-size: 18px;
-    line-height: 20.25px;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    line-height: 1.265625rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-2::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    line-height: 1.6875rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-2::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -129,78 +129,78 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 .emotion-4 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-4 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-4 {
-    font-family: "Poppins",sans-serif;
-    font-size: 36px;
-    line-height: 40.5px;
+    font-family: Poppins;
+    font-size: 2.25rem;
+    line-height: 2.53125rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-4::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
-    font-family: "Poppins",sans-serif;
-    font-size: 40px;
-    line-height: 45px;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    line-height: 2.8125rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-4::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    font-family: "Poppins",sans-serif;
-    font-size: 48px;
-    line-height: 54px;
+    font-family: Poppins;
+    font-size: 3rem;
+    line-height: 3.375rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-4::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -291,55 +291,55 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-2 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Poppins",sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: Poppins;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
-    margin-bottom: -0.403em;
+    margin-bottom: -0.391em;
     display: block;
   }
 
   .emotion-2::after {
     content: '';
-    margin-top: -0.4em;
+    margin-top: -0.409em;
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    font-family: "Poppins",sans-serif;
-    font-size: 20px;
-    line-height: 30px;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
     font-weight: 500;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
-    margin-bottom: -0.403em;
+    margin-bottom: -0.391em;
     display: block;
   }
 
   .emotion-2::after {
     content: '';
-    margin-top: -0.4em;
+    margin-top: -0.409em;
     display: block;
   }
 }
@@ -410,7 +410,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-1 {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 }
 
@@ -434,11 +434,11 @@ exports[`Page Introduction renders with mandatory props 1`] = `
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-2 svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-3 {

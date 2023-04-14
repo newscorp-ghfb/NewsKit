@@ -47,101 +47,101 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-2 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-2 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    line-height: 1.6875rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-2::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    line-height: 1.6875rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-2::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
-    font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    line-height: 1.6875rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-2::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    font-family: "Poppins",sans-serif;
-    font-size: 24px;
-    line-height: 27px;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    line-height: 1.6875rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-2::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-2::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -184,20 +184,20 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-4 {
   margin: 0;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-4 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-4 {
-    font-family: "DM Sans",sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: DM Sans;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -216,11 +216,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
-    font-family: "DM Sans",sans-serif;
-    font-size: 18px;
-    line-height: 27px;
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -239,11 +239,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-4 {
-    font-family: "DM Sans",sans-serif;
-    font-size: 18px;
-    line-height: 27px;
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -262,11 +262,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    font-family: "DM Sans",sans-serif;
-    font-size: 18px;
-    line-height: 27px;
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -427,12 +427,12 @@ exports[`TabsWithTable renders with default data 1`] = `
   appearance: none;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #09111C;
-  border-color: #3358CC;
+  color: #09111c;
+  border-color: #3358cc;
 }
 
 .emotion-13 svg {
@@ -441,11 +441,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-13:hover:not(:disabled) {
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-13:active:not(:disabled) {
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -466,24 +466,24 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-14 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-14::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-14::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -529,7 +529,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   appearance: none;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
 }
 
@@ -539,11 +539,11 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-17:hover:not(:disabled) {
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-17:active:not(:disabled) {
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -563,7 +563,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-19 {
-  background-color: #3358CC;
+  background-color: #3358cc;
   position: absolute;
   z-index: 2;
   bottom: 0px;
@@ -571,7 +571,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-20 {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
   display: block;
   position: absolute;
   z-index: 1;
@@ -587,7 +587,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 }
 
 .emotion-21:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: -3px;
@@ -613,14 +613,14 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-28 {
   border-style: solid;
-  border-color: #C0C7CC;
-  border-width: 0 0 1px 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
+  border-color: #c0c7cc;
+  border-width: 0px 0px 1px 0px;
+  color: #09111c;
+  font-family: Poppins;
+  font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -632,32 +632,32 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-30 {
   border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 0 0 1px 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  border-color: #dee2e5;
+  border-width: 0px 0px 1px 0px;
+  color: #2e3f54;
+  font-family: DM Sans;
+  font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-31 {
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 0px;
   text-align: left;
   vertical-align: top;
 }
 
 .emotion-33 {
   border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 0 0 1px 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
-  font-size: 14px;
+  border-color: #dee2e5;
+  border-width: 0px 0px 1px 0px;
+  color: #2e3f54;
+  font-family: DM Sans;
+  font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   border-width: 0;
 }
 

@@ -4,7 +4,7 @@ exports[`HeaderIndex renders without crashing 1`] = `
 <DocumentFragment>
   .emotion-0 {
   border-bottom: 1px solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
 }
 
 @media screen and (max-width: 767px) {
@@ -145,11 +145,11 @@ exports[`HeaderIndex renders without crashing 1`] = `
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-4 svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-5 {
@@ -237,55 +237,55 @@ exports[`HeaderIndex renders without crashing 1`] = `
 
 .emotion-9 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-9 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-9 {
-    font-family: "Poppins",sans-serif;
-    font-size: 36px;
-    line-height: 40.5px;
+    font-family: Poppins;
+    font-size: 2.25rem;
+    line-height: 2.53125rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-9::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-9::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-9 {
-    font-family: "Poppins",sans-serif;
-    font-size: 48px;
-    line-height: 54px;
+    font-family: Poppins;
+    font-size: 3rem;
+    line-height: 3.375rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-9::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-9::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -298,34 +298,34 @@ exports[`HeaderIndex renders without crashing 1`] = `
 
 @media screen and (min-width: 1024px) {
   .emotion-10 {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 }
 
 .emotion-11 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  color: #2e3f54;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-11 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-11::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-11::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 

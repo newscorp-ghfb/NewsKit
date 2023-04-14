@@ -35,8 +35,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   width: 32px;
   height: 32px;
   min-height: 32px;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -49,8 +49,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #D60000;
-  background-color: #FEECEC;
+  border-color: #d60000;
+  background-color: #feecec;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -61,14 +61,14 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #D60000;
+  fill: #d60000;
 }
 
 .emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D60000;
+  fill: #d60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -92,7 +92,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 .emotion-3.emotion-3 {
   width: 24px;
   height: 24px;
-  fill: #D60000;
+  fill: #d60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -130,8 +130,8 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 .emotion-7 {
   box-sizing: border-box;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -145,7 +145,7 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 
 .emotion-9 {
   border-style: solid;
-  border-color: #D60000;
+  border-color: #d60000;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -155,23 +155,23 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
 }
 
 .emotion-11 {
-  font-family: "Poppins",sans-serif;
-  font-size: 20px;
-  line-height: 22.5px;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  line-height: 1.40625rem;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-11::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-11::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -179,26 +179,26 @@ exports[`UsageCard Renders Dont UsageCard when kind=dont 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #D60000;
+  color: #d60000;
 }
 
 .emotion-12 svg {
-  fill: #D60000;
+  fill: #d60000;
 }
 
 .emotion-14 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  color: #2e3f54;
+  font-family: DM Sans;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-14 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-14::before {
@@ -322,8 +322,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   width: 32px;
   height: 32px;
   min-height: 32px;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -336,8 +336,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #007B22;
-  background-color: #E5F4EA;
+  border-color: #007b22;
+  background-color: #e5f4ea;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -348,14 +348,14 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 .emotion-2 svg {
-  fill: #007B22;
+  fill: #007b22;
 }
 
 .emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #007B22;
+  fill: #007b22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -379,7 +379,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 .emotion-3.emotion-3 {
   width: 24px;
   height: 24px;
-  fill: #007B22;
+  fill: #007b22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -417,8 +417,8 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 
 .emotion-7 {
   box-sizing: border-box;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
 }
 
 .emotion-7 a:not(.nk-card-link) {
@@ -432,7 +432,7 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 
 .emotion-9 {
   border-style: solid;
-  border-color: #007B22;
+  border-color: #007b22;
   border-width: 4px;
   border-radius: 4px;
   border-width: 0px;
@@ -442,23 +442,23 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
 }
 
 .emotion-11 {
-  font-family: "Poppins",sans-serif;
-  font-size: 20px;
-  line-height: 22.5px;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  line-height: 1.40625rem;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-11::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-11::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -466,26 +466,26 @@ exports[`UsageCard Renders default (Do) UsageCard 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #007B22;
+  color: #007b22;
 }
 
 .emotion-12 svg {
-  fill: #007B22;
+  fill: #007b22;
 }
 
 .emotion-14 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  color: #2e3f54;
+  font-family: DM Sans;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-14 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-14::before {

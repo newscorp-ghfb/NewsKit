@@ -10,15 +10,15 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   z-index: 4;
   height: 48px;
   border-bottom-width: 1px;
-  border-bottom-color: #DEE2E5;
-  background-color: #FFFFFF;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
+  border-bottom-color: #dee2e5;
+  background-color: #ffffff;
+  font-family: Poppins;
+  font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  letter-spacing: 0em;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -119,7 +119,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
 }
 
@@ -129,28 +129,28 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-4 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-4:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-4:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -184,8 +184,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -209,8 +209,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -231,7 +231,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-7 {
   display: inline-block;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -251,7 +251,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-8 {
@@ -301,8 +301,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-11 {
-  fill: #09111C;
-  color: #09111C;
+  fill: #09111c;
+  color: #09111c;
 }
 
 .emotion-12 {
@@ -391,30 +391,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-16 {
   margin: 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  color: #09111c;
+  font-family: Poppins;
+  font-size: 1rem;
+  line-height: 1.125rem;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-block-start: 4px;
   margin-block-end: 24px;
 }
 
 .emotion-16 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-16::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-16::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -452,7 +452,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-19 {
   display: inline-block;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -474,31 +474,31 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-19 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-19:hover:not(:disabled) {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:hover:not(:disabled) svg {
-  fill: #254CAC;
+  fill: #254cac;
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #12387A;
+  fill: #14328d;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -544,11 +544,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-22 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 500;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -556,13 +556,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-22::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-22::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -570,7 +570,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -631,8 +631,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-125 {
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -656,8 +656,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-125.emotion-125 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -744,10 +744,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -757,30 +757,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-127 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-127:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-127:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-127:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-127:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-127:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -811,7 +811,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-128 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -834,24 +834,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-129 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 18px;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-129::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-129::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -888,9 +888,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 8px;
-  color: #5A6A79;
+  color: #5a6a79;
 }
 
 .emotion-130 svg {
@@ -899,19 +899,20 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-130 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-130:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-131 {
   margin: 0;
-  font-family: 'DM Mono',courier;
-  font-size: 14px;
+  font-family: DM Mono;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.3125rem;
+  font-size: 0.875rem;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -1029,7 +1030,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  color: #5A6A79;
+  color: #5a6a79;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-color: transparent;
@@ -1037,10 +1038,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-style: solid;
   cursor: pointer;
   width: 100%;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border-color: transparent transparent #3358CC transparent;
+  border-color: transparent transparent #3358cc transparent;
   border-width: 4px;
   border-style: solid;
   -webkit-box-pack: center;
@@ -1069,13 +1070,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-143:hover:not(:disabled) {
-  color: #5A6A79;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-143:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1107,24 +1108,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-144 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-144::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-144::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -1162,7 +1163,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  color: #5A6A79;
+  color: #5a6a79;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-color: transparent;
@@ -1196,13 +1197,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-146:hover:not(:disabled) {
-  color: #5A6A79;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-146:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1278,10 +1279,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -1291,30 +1292,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-279 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-279:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-279:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-279:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-279:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-279:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1385,7 +1386,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1396,15 +1397,15 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-283:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
 }
 
 .emotion-283:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
 }
 
 .emotion-283:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1435,7 +1436,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 }
 
 .emotion-284 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3066,15 +3067,15 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   z-index: 4;
   height: 48px;
   border-bottom-width: 1px;
-  border-bottom-color: #DEE2E5;
-  background-color: #FFFFFF;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
+  border-bottom-color: #dee2e5;
+  background-color: #ffffff;
+  font-family: Poppins;
+  font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  letter-spacing: 0em;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -3175,7 +3176,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
 }
 
@@ -3185,28 +3186,28 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-4 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-4:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-4:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -3240,8 +3241,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3265,8 +3266,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3287,7 +3288,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-7 {
   display: inline-block;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3307,7 +3308,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-8 {
@@ -3357,8 +3358,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-11 {
-  fill: #09111C;
-  color: #09111C;
+  fill: #09111c;
+  color: #09111c;
 }
 
 .emotion-12 {
@@ -3447,30 +3448,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-16 {
   margin: 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  color: #09111c;
+  font-family: Poppins;
+  font-size: 1rem;
+  line-height: 1.125rem;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-block-start: 4px;
   margin-block-end: 24px;
 }
 
 .emotion-16 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-16::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-16::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -3508,7 +3509,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-19 {
   display: inline-block;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -3530,31 +3531,31 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-19 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-19:hover:not(:disabled) {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:hover:not(:disabled) svg {
-  fill: #254CAC;
+  fill: #254cac;
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #12387A;
+  fill: #14328d;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -3600,11 +3601,11 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-22 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 500;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -3612,13 +3613,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-22::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-22::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -3626,7 +3627,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3687,8 +3688,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-125 {
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3712,8 +3713,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-125.emotion-125 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3800,10 +3801,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -3813,30 +3814,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-127 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-127:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-127:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-127:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-127:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-127:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -3867,7 +3868,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-128 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3890,24 +3891,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-129 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 18px;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-129::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-129::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -3944,9 +3945,9 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 8px;
-  color: #5A6A79;
+  color: #5a6a79;
 }
 
 .emotion-130 svg {
@@ -3955,19 +3956,20 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-130 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-130:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-131 {
   margin: 0;
-  font-family: 'DM Mono',courier;
-  font-size: 14px;
+  font-family: DM Mono;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.3125rem;
+  font-size: 0.875rem;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -4085,7 +4087,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  color: #5A6A79;
+  color: #5a6a79;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-color: transparent;
@@ -4093,10 +4095,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-style: solid;
   cursor: pointer;
   width: 100%;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border-color: transparent transparent #3358CC transparent;
+  border-color: transparent transparent #3358cc transparent;
   border-width: 4px;
   border-style: solid;
   -webkit-box-pack: center;
@@ -4125,13 +4127,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-143:hover:not(:disabled) {
-  color: #5A6A79;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-143:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -4163,24 +4165,24 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-144 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-144::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-144::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -4218,7 +4220,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  color: #5A6A79;
+  color: #5a6a79;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-color: transparent;
@@ -4252,13 +4254,13 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-146:hover:not(:disabled) {
-  color: #5A6A79;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-146:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -4334,10 +4336,10 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -4347,30 +4349,30 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-279 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-279:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-279:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-279:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-279:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-279:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -4441,7 +4443,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -4452,15 +4454,15 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-283:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
 }
 
 .emotion-283:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
 }
 
 .emotion-283:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -4491,7 +4493,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 }
 
 .emotion-284 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6122,15 +6124,15 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   z-index: 4;
   height: 48px;
   border-bottom-width: 1px;
-  border-bottom-color: #DEE2E5;
-  background-color: #FFFFFF;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
+  border-bottom-color: #dee2e5;
+  background-color: #ffffff;
+  font-family: Poppins;
+  font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  letter-spacing: 0em;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -6231,7 +6233,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
 }
 
@@ -6241,28 +6243,28 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-4:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-4:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-4:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-4:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6296,8 +6298,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6321,8 +6323,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-5.emotion-5 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6343,7 +6345,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-7 {
   display: inline-block;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6363,7 +6365,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-8 {
@@ -6413,8 +6415,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-11 {
-  fill: #09111C;
-  color: #09111C;
+  fill: #09111c;
+  color: #09111c;
 }
 
 .emotion-12 {
@@ -6503,30 +6505,30 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-16 {
   margin: 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  color: #09111c;
+  font-family: Poppins;
+  font-size: 1rem;
+  line-height: 1.125rem;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-block-start: 4px;
   margin-block-end: 24px;
 }
 
 .emotion-16 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-16::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-16::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -6564,7 +6566,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-19 {
   display: inline-block;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -6586,31 +6588,31 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-19 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-19:hover:not(:disabled) {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:hover:not(:disabled) svg {
-  fill: #254CAC;
+  fill: #254cac;
 }
 
 .emotion-19:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-19:active:not(:disabled) svg {
-  fill: #12387A;
+  fill: #14328d;
 }
 
 .emotion-19:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6656,11 +6658,11 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-22 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 500;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -6668,13 +6670,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-22::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-22::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -6682,7 +6684,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6743,8 +6745,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-125 {
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6768,8 +6770,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-125.emotion-125 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -6856,10 +6858,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -6869,30 +6871,30 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-127 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-127:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-127:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-127:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-127:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-127:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -6923,7 +6925,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-128 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -6946,24 +6948,24 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-129 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 12px;
-  line-height: 18px;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-129::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-129::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -7000,9 +7002,9 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 8px;
-  color: #5A6A79;
+  color: #5a6a79;
 }
 
 .emotion-130 svg {
@@ -7011,19 +7013,20 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-130 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-130:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-131 {
   margin: 0;
-  font-family: 'DM Mono',courier;
-  font-size: 14px;
+  font-family: DM Mono;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.3125rem;
+  font-size: 0.875rem;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -7141,7 +7144,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  color: #5A6A79;
+  color: #5a6a79;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-color: transparent;
@@ -7175,13 +7178,13 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-143:hover:not(:disabled) {
-  color: #5A6A79;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-143:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -7213,24 +7216,24 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-144 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-144::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-144::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -7280,10 +7283,10 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -7293,30 +7296,30 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-279 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-279:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-279:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-279:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-279:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-279:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -7387,7 +7390,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -7398,15 +7401,15 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-283:hover:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
 }
 
 .emotion-283:active:not(:disabled) {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
 }
 
 .emotion-283:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -7437,7 +7440,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 }
 
 .emotion-284 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }

@@ -80,10 +80,10 @@ exports[`SectionIntroduction renders with all props 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding-inline: 0;
-  padding-block: 0;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-inline: 0px;
+  padding-block: 0px;
   background-color: transparent;
 }
 
@@ -96,46 +96,46 @@ exports[`SectionIntroduction renders with all props 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-4 {
-    font-family: "Poppins",sans-serif;
-    font-size: 28px;
-    line-height: 31.5px;
+    font-family: Poppins;
+    font-size: 1.75rem;
+    line-height: 1.96875rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-4::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    font-family: "Poppins",sans-serif;
-    font-size: 32px;
-    line-height: 36px;
+    font-family: Poppins;
+    font-size: 2rem;
+    line-height: 2.25rem;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-4::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-4::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -144,11 +144,11 @@ exports[`SectionIntroduction renders with all props 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-5 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 767px) {
@@ -171,28 +171,28 @@ exports[`SectionIntroduction renders with all props 1`] = `
 
 .emotion-7 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  color: #2e3f54;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-7::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-7::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 

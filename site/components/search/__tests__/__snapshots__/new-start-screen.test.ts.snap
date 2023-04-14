@@ -84,30 +84,30 @@ exports[`NewStartScreen renders correctly 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  color: #09111c;
+  font-family: Poppins;
+  font-size: 1rem;
+  line-height: 1.125rem;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-block-start: 4px;
   margin-block-end: 24px;
 }
 
 .emotion-3 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-3::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-3::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -145,7 +145,7 @@ exports[`NewStartScreen renders correctly 1`] = `
 
 .emotion-6 {
   display: inline-block;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -167,31 +167,31 @@ exports[`NewStartScreen renders correctly 1`] = `
 }
 
 .emotion-6 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-6:hover:not(:disabled) {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:hover:not(:disabled) svg {
-  fill: #254CAC;
+  fill: #254cac;
 }
 
 .emotion-6:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-6:active:not(:disabled) svg {
-  fill: #12387A;
+  fill: #14328d;
 }
 
 .emotion-6:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -237,11 +237,11 @@ exports[`NewStartScreen renders correctly 1`] = `
 
 .emotion-9 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 500;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -249,13 +249,13 @@ exports[`NewStartScreen renders correctly 1`] = `
 
 .emotion-9::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-9::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -263,7 +263,7 @@ exports[`NewStartScreen renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
