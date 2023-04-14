@@ -51,7 +51,7 @@ exports[`OptionsSection renders section as expected 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-4 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.75rem;
     line-height: 1.96875rem;
     font-weight: 700;
@@ -74,7 +74,7 @@ exports[`OptionsSection renders section as expected 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-4 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 2rem;
     line-height: 2.25rem;
     font-weight: 700;
@@ -121,7 +121,7 @@ exports[`OptionsSection renders section as expected 1`] = `
 .emotion-7 {
   margin: 0;
   color: #2e3f54;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-weight: 500;

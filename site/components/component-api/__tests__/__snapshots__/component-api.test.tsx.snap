@@ -64,7 +64,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 @media screen and (max-width: 1439px) {
   .emotion-3 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.25rem;
     line-height: 1.40625rem;
     font-weight: 700;
@@ -87,7 +87,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -123,7 +123,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   border-color: #c0c7cc;
   border-width: 0px 0px 1px 0px;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 500;
@@ -142,7 +142,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   border-color: #c0c7cc;
   border-width: 0px 0px 1px 0px;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 500;
@@ -161,7 +161,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   border-color: #c0c7cc;
   border-width: 0px 0px 1px 0px;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 500;
@@ -180,7 +180,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   border-color: #dee2e5;
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;
@@ -251,7 +251,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-15 {
   margin: 0;
-  font-family: DM Mono;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 1.3125rem;
   font-size: 0.875rem;
@@ -567,7 +567,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 @media screen and (max-width: 1439px) {
   .emotion-3 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.25rem;
     line-height: 1.40625rem;
     font-weight: 700;
@@ -590,7 +590,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -626,7 +626,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 @media screen and (max-width: 1439px) {
   .emotion-5 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
@@ -649,7 +649,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-5 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1.125rem;
     line-height: 1.6875rem;
     font-weight: 400;
@@ -685,7 +685,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   border-color: #c0c7cc;
   border-width: 0px 0px 1px 0px;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 500;
@@ -704,7 +704,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   border-color: #c0c7cc;
   border-width: 0px 0px 1px 0px;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 500;
@@ -723,7 +723,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   border-color: #c0c7cc;
   border-width: 0px 0px 1px 0px;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 500;
@@ -742,7 +742,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   border-color: #dee2e5;
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;
@@ -813,7 +813,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-17 {
   margin: 0;
-  font-family: DM Mono;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 1.3125rem;
   font-size: 0.875rem;
@@ -1109,7 +1109,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-37 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;

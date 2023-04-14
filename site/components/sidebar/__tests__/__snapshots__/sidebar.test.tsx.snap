@@ -154,7 +154,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-8 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1.125rem;
   line-height: 1.265625rem;
   font-weight: 700;
@@ -418,7 +418,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-14 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -542,7 +542,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin: 0;
   background-color: transparent;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -3475,7 +3475,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-6 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1.125rem;
   line-height: 1.265625rem;
   font-weight: 700;
@@ -3739,7 +3739,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-12 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -3863,7 +3863,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   margin: 0;
   background-color: transparent;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -3955,7 +3955,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-474 {
   margin: 0;
   color: #2e3f54;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
@@ -4006,7 +4006,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-479 {
   display: block;
   color: #2e3f54;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
@@ -4309,7 +4309,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-489 {
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 400;
@@ -7353,7 +7353,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-8 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1.125rem;
   line-height: 1.265625rem;
   font-weight: 700;
@@ -7617,7 +7617,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-14 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -7741,7 +7741,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin: 0;
   background-color: transparent;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -10677,7 +10677,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-6 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1.125rem;
   line-height: 1.265625rem;
   font-weight: 700;
@@ -10941,7 +10941,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-12 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -11065,7 +11065,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   margin: 0;
   background-color: transparent;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -11157,7 +11157,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-474 {
   margin: 0;
   color: #2e3f54;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
@@ -11208,7 +11208,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-479 {
   display: block;
   color: #2e3f54;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
@@ -11511,7 +11511,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-489 {
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 400;

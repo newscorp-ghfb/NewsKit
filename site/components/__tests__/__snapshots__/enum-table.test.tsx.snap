@@ -9,7 +9,7 @@ exports[`EnumTable renders enum as expected 1`] = `
 }
 
 .emotion-1 {
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;

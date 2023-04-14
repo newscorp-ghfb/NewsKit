@@ -90,7 +90,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-4 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1.125rem;
   line-height: 1.265625rem;
   font-weight: 700;
@@ -360,7 +360,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-10 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -403,7 +403,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
   margin: 0;
   background-color: transparent;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -896,7 +896,7 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
 
 .emotion-4 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -1053,7 +1053,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-4 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1.125rem;
   line-height: 1.265625rem;
   font-weight: 700;
@@ -1317,7 +1317,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
 
 .emotion-10 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -1360,7 +1360,7 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
   margin: 0;
   background-color: transparent;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -1793,7 +1793,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-4 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1.125rem;
   line-height: 1.265625rem;
   font-weight: 700;
@@ -2057,7 +2057,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-10 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -2100,7 +2100,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
   margin: 0;
   background-color: transparent;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -2507,7 +2507,7 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
 
 .emotion-4 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;

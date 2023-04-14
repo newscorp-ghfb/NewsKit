@@ -89,7 +89,7 @@ exports[`Search renders correctly 1`] = `
 .emotion-4 {
   margin: 0;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -241,7 +241,7 @@ exports[`Search renders correctly 1`] = `
 
 .emotion-10 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 500;
@@ -1225,7 +1225,7 @@ exports[`Search renders correctly 1`] = `
 
 .emotion-3 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.125rem;
   font-weight: 600;
@@ -1299,7 +1299,7 @@ exports[`Search renders correctly 1`] = `
 
 .emotion-5 {
   margin: 0;
-  font-family: DM Mono;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 1.3125rem;
   font-size: 0.875rem;

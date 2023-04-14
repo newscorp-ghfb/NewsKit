@@ -56,7 +56,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -79,7 +79,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-2 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -102,7 +102,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-2 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -125,7 +125,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-2 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -193,7 +193,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-4 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
@@ -216,7 +216,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1.125rem;
     line-height: 1.6875rem;
     font-weight: 400;
@@ -239,7 +239,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .emotion-4 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1.125rem;
     line-height: 1.6875rem;
     font-weight: 400;
@@ -262,7 +262,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-4 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1.125rem;
     line-height: 1.6875rem;
     font-weight: 400;
@@ -466,7 +466,7 @@ exports[`TabsWithTable renders with default data 1`] = `
 
 .emotion-14 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -616,7 +616,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   border-color: #c0c7cc;
   border-width: 0px 0px 1px 0px;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 500;
@@ -635,7 +635,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   border-color: #dee2e5;
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;
@@ -653,7 +653,7 @@ exports[`TabsWithTable renders with default data 1`] = `
   border-color: #dee2e5;
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 400;

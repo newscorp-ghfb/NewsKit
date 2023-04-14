@@ -91,7 +91,7 @@ exports[`TableOfContent should render with no errors 1`] = `
 
 .emotion-4 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.5;
   font-weight: 600;

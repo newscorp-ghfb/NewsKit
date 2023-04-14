@@ -71,7 +71,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.125rem;
     line-height: 1.265625rem;
     font-weight: 700;
@@ -94,7 +94,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -138,7 +138,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-4 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 2.25rem;
     line-height: 2.53125rem;
     font-weight: 700;
@@ -161,7 +161,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .emotion-4 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 2.5rem;
     line-height: 2.8125rem;
     font-weight: 700;
@@ -184,7 +184,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 3rem;
     line-height: 3.375rem;
     font-weight: 700;
@@ -300,7 +300,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-2 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 500;
@@ -323,7 +323,7 @@ exports[`Page Introduction renders with mandatory props 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-2 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.25rem;
     line-height: 1.875rem;
     font-weight: 500;

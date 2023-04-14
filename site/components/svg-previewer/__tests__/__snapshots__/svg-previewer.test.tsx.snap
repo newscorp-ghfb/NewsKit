@@ -139,7 +139,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -498,7 +498,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 .emotion-27 {
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 400;
@@ -646,7 +646,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #5a6a79;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -753,7 +753,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 .emotion-40 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -923,7 +923,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 .emotion-48 {
   margin: 0;
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -1531,7 +1531,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   white-space: nowrap;
   text-overflow: ellipsis;
   color: inherit;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -1866,7 +1866,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 
 .emotion-26 {
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 400;
@@ -2007,7 +2007,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 
 .emotion-29 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -2506,7 +2506,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #5a6a79;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -2841,7 +2841,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 .emotion-26 {
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 400;
@@ -3083,7 +3083,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 .emotion-39 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -3253,7 +3253,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 .emotion-47 {
   margin: 0;
   color: #2e3f54;
-  font-family: DM Sans;
+  font-family: DM Sans,sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;

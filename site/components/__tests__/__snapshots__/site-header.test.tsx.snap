@@ -12,7 +12,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-bottom-width: 1px;
   border-bottom-color: #dee2e5;
   background-color: #ffffff;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 500;
@@ -392,7 +392,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-16 {
   margin: 0;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -544,7 +544,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-22 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 500;
@@ -834,7 +834,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-129 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.125rem;
   font-weight: 600;
@@ -908,7 +908,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-131 {
   margin: 0;
-  font-family: DM Mono;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 1.3125rem;
   font-size: 0.875rem;
@@ -1108,7 +1108,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 
 .emotion-144 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -3069,7 +3069,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-bottom-width: 1px;
   border-bottom-color: #dee2e5;
   background-color: #ffffff;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 500;
@@ -3449,7 +3449,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-16 {
   margin: 0;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -3601,7 +3601,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-22 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 500;
@@ -3891,7 +3891,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-129 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.125rem;
   font-weight: 600;
@@ -3965,7 +3965,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-131 {
   margin: 0;
-  font-family: DM Mono;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 1.3125rem;
   font-size: 0.875rem;
@@ -4165,7 +4165,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 
 .emotion-144 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;
@@ -6126,7 +6126,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-bottom-width: 1px;
   border-bottom-color: #dee2e5;
   background-color: #ffffff;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.5;
   font-weight: 500;
@@ -6506,7 +6506,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-16 {
   margin: 0;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -6658,7 +6658,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-22 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 500;
@@ -6948,7 +6948,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-129 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.75rem;
   line-height: 1.125rem;
   font-weight: 600;
@@ -7022,7 +7022,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-131 {
   margin: 0;
-  font-family: DM Mono;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 1.3125rem;
   font-size: 0.875rem;
@@ -7216,7 +7216,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 
 .emotion-144 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 600;

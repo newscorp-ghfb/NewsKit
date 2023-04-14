@@ -85,7 +85,7 @@ exports[`NewStartScreen renders correctly 1`] = `
 .emotion-3 {
   margin: 0;
   color: #09111c;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
@@ -237,7 +237,7 @@ exports[`NewStartScreen renders correctly 1`] = `
 
 .emotion-9 {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   font-weight: 500;

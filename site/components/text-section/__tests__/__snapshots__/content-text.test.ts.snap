@@ -17,7 +17,7 @@ exports[`ContentText renders with only the description 1`] = `
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
@@ -40,7 +40,7 @@ exports[`ContentText renders with only the description 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1.125rem;
     line-height: 1.6875rem;
     font-weight: 400;
@@ -90,7 +90,7 @@ exports[`ContentText renders with only the title 1`] = `
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.25rem;
     line-height: 1.40625rem;
     font-weight: 700;
@@ -113,7 +113,7 @@ exports[`ContentText renders with only the title 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -171,7 +171,7 @@ exports[`ContentText renders with title and description 1`] = `
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.25rem;
     line-height: 1.40625rem;
     font-weight: 700;
@@ -194,7 +194,7 @@ exports[`ContentText renders with title and description 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: Poppins;
+    font-family: Poppins,sans-serif;
     font-size: 1.5rem;
     line-height: 1.6875rem;
     font-weight: 700;
@@ -239,7 +239,7 @@ exports[`ContentText renders with title and description 1`] = `
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
@@ -262,7 +262,7 @@ exports[`ContentText renders with title and description 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: DM Sans;
+    font-family: DM Sans,sans-serif;
     font-size: 1.125rem;
     line-height: 1.6875rem;
     font-weight: 400;
