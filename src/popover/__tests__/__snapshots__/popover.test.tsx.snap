@@ -95,21 +95,6 @@ exports[`Popover close button applies logical prop overrides 1`] = `
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -439,21 +424,6 @@ exports[`Popover close button applies stylePreset overrides 1`] = `
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -761,21 +731,6 @@ exports[`Popover close button should show left-aligned 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -1089,21 +1044,6 @@ exports[`Popover close button should show right-aligned 1`] = `
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -1413,21 +1353,6 @@ exports[`Popover content applies logical prop overrides 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -1757,21 +1682,6 @@ exports[`Popover content applies stylePreset overrides 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -2116,21 +2026,6 @@ exports[`Popover content applies typography preset overrides 1`] = `
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -2458,21 +2353,6 @@ exports[`Popover header applies logical prop overrides 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -2834,21 +2714,6 @@ exports[`Popover header applies stylePreset overrides 1`] = `
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -3187,21 +3052,6 @@ exports[`Popover header applies typography preset overrides 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -3564,21 +3414,6 @@ exports[`Popover offset should be applied with pointer and px offset override 1`
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -3907,21 +3742,6 @@ exports[`Popover offset should be applied with pointer and token offset override
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -4254,21 +4074,6 @@ exports[`Popover offset should not be applied with pointer and invalid token off
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -4597,21 +4402,6 @@ exports[`Popover offset should not be applied with pointer and non-px offset ove
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -4944,21 +4734,6 @@ exports[`Popover offset should not be applied with with no pointer 1`] = `
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -5268,21 +5043,6 @@ exports[`Popover pointer padding should be applied with px offset override 1`] =
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -5615,21 +5375,6 @@ exports[`Popover pointer padding should be applied with token offset override 1`
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -5958,21 +5703,6 @@ exports[`Popover pointer padding should not be applied with invalid token offset
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -6305,21 +6035,6 @@ exports[`Popover pointer padding should not be applied with non-px offset overri
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -6648,21 +6363,6 @@ exports[`Popover should render correct styles: default 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -7298,21 +6998,6 @@ exports[`Popover should render correct styles: with pointer 1`] = `
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -7641,21 +7326,6 @@ exports[`Popover should render correct styles: with pointer size overrides 1`] =
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
@@ -7988,21 +7658,6 @@ exports[`Popover should render correct styles: with pointer stylePreset override
   overflow: hidden;
 }
 
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
-}
-
 .emotion-2 {
   display: grid;
   grid-template-areas: 'header close' 'content content';
@@ -8331,21 +7986,6 @@ exports[`Popover should render correct styles: with pointer y coordinate 1`] = `
   border-radius: 8px;
   background-color: #FFFFFF;
   overflow: hidden;
-}
-
-.emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-offset: 0;
-}
-
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-1:focus-visible:not(:disabled) {
-      outline-style: auto;
-    }
-  }
 }
 
 .emotion-2 {
