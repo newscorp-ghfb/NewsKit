@@ -2,7 +2,7 @@ import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {styled, withDefaultProps} from '../../utils';
+import {withDefaultProps} from '../../utils';
 import {
   IconFilledInfo,
   IconFilledWarning,
@@ -14,14 +14,6 @@ import {toast, ToastProvider, Toast} from '..';
 import {LinkInline} from '../../link';
 import {Button} from '../../button';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
-
-const CustomToast = styled.div`
-  padding: 1em;
-  border: 1px solid currentColor;
-  background: #fff;
-  box-sizing: border-box;
-  color: red;
-`;
 
 const toastCustomThemeObject: CreateThemeArgs = {
   name: 'toast-intents-theme',
@@ -133,7 +125,7 @@ const toastLink = (
 export const StoryToastDefault = () => (
   <StorybookPage columns="1fr">
     <StorybookCase>
-      <Toast> {BODY} </Toast>
+      <Toast overrides={{paddingBlock: 'space040'}}> {BODY} </Toast>
     </StorybookCase>
   </StorybookPage>
 );
@@ -144,6 +136,7 @@ export const StoryToastIntents = () => (
     <StorybookCase title="Default">
       <Toast
         overrides={{
+          paddingBlock: 'space040',
           maxWidth: {
             xs: '100%',
           },
@@ -193,8 +186,7 @@ export const StoryToastIntents = () => (
           },
         }}
       >
-        {' '}
-        {BODY}{' '}
+        {BODY}
       </ToastNegative>
     </StorybookCase>
   </StorybookPage>
@@ -211,8 +203,7 @@ export const StoryToastVariations = () => (
           },
         }}
       >
-        {' '}
-        Short line{' '}
+        Short line
       </Toast>
     </StorybookCase>
     <StorybookCase title="Long text and link">
@@ -362,38 +353,34 @@ export const StoryToastApi = () => {
     const [state, setState] = React.useState(false);
     const onClick = () => setState(true);
     return (
-      <StorybookPage>
-        <StorybookCase>
-          <Toast
-            role="alert"
+      <Toast
+        role="alert"
+        overrides={{
+          stylePreset: !state ? 'toastNotice' : 'toastPositive',
+        }}
+        icon={
+          <IconFilledCheckCircle
             overrides={{
-              stylePreset: !state ? 'toastNotice' : 'toastPositive',
+              size: 'iconSize020',
             }}
-            icon={
-              <IconFilledCheckCircle
-                overrides={{
-                  size: 'iconSize020',
-                }}
-              />
-            }
-            actions={
-              !state
-                ? () => (
-                    <Button
-                      size="small"
-                      overrides={{stylePreset: 'buttonMinimalInverse'}}
-                      onClick={onClick}
-                    >
-                      undo
-                    </Button>
-                  )
-                : undefined
-            }
-          >
-            {!state ? 'Your account has been updated' : 'Action reversed'}
-          </Toast>
-        </StorybookCase>
-      </StorybookPage>
+          />
+        }
+        actions={
+          !state
+            ? () => (
+                <Button
+                  size="small"
+                  overrides={{stylePreset: 'buttonMinimalInverse'}}
+                  onClick={onClick}
+                >
+                  undo
+                </Button>
+              )
+            : undefined
+        }
+      >
+        {!state ? 'Your account has been updated' : 'Action reversed'}
+      </Toast>
     );
   };
 
@@ -433,14 +420,9 @@ export const StoryToastApi = () => {
       </ToastPositive>,
     );
   const notifyError = () =>
-    toast(({onClose}) => (
-      <CustomToast data-testid="alert-error">
-        Error message{' '}
-        <button type="button" data-testid="close" onClick={() => onClose()}>
-          X
-        </button>
-      </CustomToast>
-    ));
+    toast(
+      <ToastNegative data-testid="alert-error">Error message</ToastNegative>,
+    );
 
   return (
     <StorybookPage columns="1fr">
