@@ -53,8 +53,7 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
       introduced: 'v5.0.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/newskit/tree/main/src/video-player',
-      storybookId:
-        'components-video-player-default--story-default-video-player',
+      storybookId: 'components-video-player--story-video-player-default',
     }}
   >
     <ComponentPageCell>
@@ -168,7 +167,7 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
             that can be assembled using the various available subcomponents of
             the Brightcove player.{' '}
             <Link
-              href="https://storybook.newskit.co.uk/?path=/docs/components-video-player-default--story-default-video-player"
+              href="https://storybook.newskit.co.uk/?path=/docs/components-video-player--story-video-player-default"
               target="_blank"
             >
               View the example in Storybook
@@ -195,7 +194,7 @@ const VideoPlayerComponent = (layoutProps: LayoutProps) => (
             </Link>{' '}
             to give context to the video being played.{' '}
             <Link
-              href="https://storybook.newskit.co.uk/?path=/docs/components-video-player-default--story-default-video-player"
+              href="https://storybook.newskit.co.uk/?path=/docs/components-video-player--story-video-player-default"
               target="_blank"
             >
               View the examples in Storybook

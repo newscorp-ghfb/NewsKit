@@ -27,10 +27,9 @@ const videoPlayerCustomThemeObject: CreateThemeArgs = {
           borderStyle: 'solid',
           borderWidth: '2px',
           borderRadius: '50%',
-          borderColor: '#A75500',
-          // Using hex value as '{{colors.interactiveSecondary030}}' is returning a dark grey
-          backgroundColor: '#A75500',
-          color: '{{colors.inkInverse}}',
+          borderColor: '{{colors.amber060}}',
+          backgroundColor: '{{colors.amber060}}',
+          color: '{{colors.white}}',
         },
       },
       customSeekBarContainer: {
@@ -45,37 +44,47 @@ const videoPlayerCustomThemeObject: CreateThemeArgs = {
       },
       customPlayProgressBar: {
         base: {
-          backgroundColor: '{{colors.purple050}}',
+          backgroundColor: '{{colors.amber060}}',
         },
       },
       customSeekHandle: {
         base: {
-          backgroundColor: '{{colors.red050}}',
+          backgroundColor: '{{colors.amber020}}',
         },
       },
       customCurrentDuration: {
         base: {
-          backgroundColor: '{{colors.blue050}}',
+          backgroundColor: '{{colors.amber060}}',
           borderStyle: 'solid',
-          borderColor: '{{colors.blue050}}',
+          borderColor: '{{colors.amber020}}',
           borderWidth: '{{borders.borderWidth010}}',
           borderRadius: '{{borders.borderRadiusCircle}}',
-          color: '{{colors.red050}}',
+          color: '{{colors.amber020}}',
         },
       },
       customSeekPosition: {
         base: {
-          backgroundColor: '{{colors.red050}}',
+          backgroundColor: '{{colors.amber020}}',
           borderStyle: 'solid',
-          borderColor: '{{colors.red050}}',
+          borderColor: '{{colors.amber060}}',
           borderWidth: '{{borders.borderWidth010}}',
           borderRadius: '{{borders.borderRadiusCircle}}',
-          color: '{{colors.blue050}}',
+          color: '{{colors.amber060}}',
         },
       },
       customControlBar: {
         base: {
-          backgroundColor: '{{colors.interfaceInformative020}}',
+          backgroundColor: '{{colors.amber020}}',
+        },
+      },
+      customIconToggle: {
+        base: {
+          color: '{{colors.amber070}}',
+        },
+      },
+      customTimeDisplay: {
+        base: {
+          color: '{{colors.amber070}}',
         },
       },
       customVolumeBar: {
@@ -193,15 +202,13 @@ export const StoryVideoPlayerOverrides = () => (
               md: 'sizing090',
             },
             timeDisplay: {
-              recorded: {
-                typographyPreset: 'utilityMeta020',
-                stylePreset: 'inkContrast',
-                currentTime: {
-                  spaceInline: 'space020',
-                },
-                divider: {
-                  spaceInline: 'space020',
-                },
+              typographyPreset: 'utilityMeta020',
+              stylePreset: 'customTimeDisplay',
+              currentTime: {
+                spaceInline: 'space020',
+              },
+              divider: {
+                spaceInline: 'space020',
               },
             },
             volumeControl: {
@@ -213,7 +220,7 @@ export const StoryVideoPlayerOverrides = () => (
               },
             },
             iconToggle: {
-              stylePreset: 'inkContrast',
+              stylePreset: 'customIconToggle',
             },
           },
         }}
@@ -258,7 +265,7 @@ StoryVideoPlayerOverrides.parameters = {percy: {waitForSelector}};
 
 export default {
   title: 'Components/Video Player',
-  component: () => 'None',
+  component: VideoPlayer,
   disabledRules: [
     'landmark-unique',
     'duplicate-id-aria',
