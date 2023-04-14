@@ -49,3 +49,5 @@ cypress/config/a11y-components.json
 lib/codemod/.eslintcache
 /site/public/static/illustrations-original
 /cypress/site/functional/a11y/
+runner-results
+
