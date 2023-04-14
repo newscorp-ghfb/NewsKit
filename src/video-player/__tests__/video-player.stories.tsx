@@ -34,7 +34,7 @@ const videoPlayerCustomThemeObject: CreateThemeArgs = {
       },
       customSeekBarContainer: {
         base: {
-          backgroundColor: '{{colors.amber050}}',
+          backgroundColor: '{{colors.blue050}}',
         },
       },
       customLoadProgressBar: {
@@ -54,22 +54,22 @@ const videoPlayerCustomThemeObject: CreateThemeArgs = {
       },
       customCurrentDuration: {
         base: {
-          backgroundColor: '{{colors.amber060}}',
-          borderStyle: 'solid',
-          borderColor: '{{colors.amber020}}',
-          borderWidth: '{{borders.borderWidth010}}',
-          borderRadius: '{{borders.borderRadiusCircle}}',
-          color: '{{colors.amber020}}',
-        },
-      },
-      customSeekPosition: {
-        base: {
           backgroundColor: '{{colors.amber020}}',
           borderStyle: 'solid',
           borderColor: '{{colors.amber060}}',
           borderWidth: '{{borders.borderWidth010}}',
           borderRadius: '{{borders.borderRadiusCircle}}',
           color: '{{colors.amber060}}',
+        },
+      },
+      customSeekPosition: {
+        base: {
+          backgroundColor: '{{colors.amber060}}',
+          borderStyle: 'solid',
+          borderColor: '{{colors.amber020}}',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderRadius: '{{borders.borderRadiusCircle}}',
+          color: '{{colors.amber020}}',
         },
       },
       customControlBar: {
