@@ -24,12 +24,13 @@ const videoPlayerCustomThemeObject: CreateThemeArgs = {
     stylePresets: {
       customPlaybutton: {
         base: {
-          borderColor: 'red',
           borderStyle: 'solid',
           borderWidth: '2px',
           borderRadius: '50%',
-          backgroundColor: 'orange',
-          color: 'red',
+          borderColor: '#A75500',
+          // Using hex value as '{{colors.interactiveSecondary030}}' is returning a dark grey
+          backgroundColor: '#A75500',
+          color: '{{colors.inkInverse}}',
         },
       },
       customSeekBarContainer: {

@@ -177,7 +177,7 @@ export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
           typographyPreset="utilityBody030"
           stylePreset="inkBase"
         >
-          <div dangerouslySetInnerHTML={{__html: sanitize(description)}} />
+          <span dangerouslySetInnerHTML={{__html: sanitize(description)}} />
         </TextBlock>
       )}
       <Divider />
