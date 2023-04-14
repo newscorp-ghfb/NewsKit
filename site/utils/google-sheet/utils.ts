@@ -28,8 +28,7 @@ export const parseCMSResponse = <T extends CMSProps>(
   },
 ): T => {
   if (!cmsResponse) {
-    // throw new CMSError('No CMS data found');
-    return [];
+    throw new CMSError('No CMS data found');
   }
   const content = formatSheetData<T>(cmsResponse);
 
@@ -53,7 +52,7 @@ export const parseCMSResponse = <T extends CMSProps>(
   }
 
   if (err.length) {
-    // throw new CMSError(err);
+    throw new CMSError(err);
   }
 
   return content;
