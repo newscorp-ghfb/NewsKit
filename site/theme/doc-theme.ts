@@ -126,16 +126,3 @@ export const patternsThemeDark = createTheme({
     fonts,
   },
 });
-
-// These are used on guide pages – initially were going to be another colour
-// Now they are the same as the default theme
-
-export const guidesThemeLight = createTheme({
-  name: 'docs-guides-light',
-  baseTheme: docsThemeLight,
-});
-
-export const guidesThemeDark = createTheme({
-  name: 'docs-guides-dark',
-  baseTheme: docsThemeDark,
-});
