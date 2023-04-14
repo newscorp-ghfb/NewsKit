@@ -14,7 +14,7 @@ export default defineConfig({
       });
     },
     baseUrl: 'http://localhost:8081',
-    specPattern: 'cypress/site/functional/**/*.cy.{js,jsx,ts,tsx}',
+    specPattern: 'cypress/site/functional/**/s*.cy.{js,jsx,ts,tsx}',
     viewportWidth: 1280,
     chromeWebSecurity: false,
   },

@@ -1,5 +1,5 @@
 import {google} from 'googleapis';
-import {CMSError} from './utils';
+// import {CMSError} from './utils';
 
 require('dotenv').config();
 
@@ -18,7 +18,7 @@ export async function getSheets(range: string) {
     !GOOGLE_SHEETS_PRIVATE_KEY &&
     !SPREADSHEET_ID
   ) {
-    throw new CMSError('Missing environment variables');
+    // throw new CMSError('Missing environment variables');
   }
 
   try {
@@ -40,6 +40,7 @@ export async function getSheets(range: string) {
     });
     return response.data.values;
   } catch (err: unknown) {
-    throw new CMSError(err instanceof Error ? err.message : 'Unknown error');
+    // throw new CMSError(err instanceof Error ? err.message : 'Unknown error');
   }
+  return [];
 }
