@@ -1,7 +1,0 @@
-
-{
-  "overlayGradientInverseHorizontal": "linear-gradient(-90deg, rgba(22,255,255,0.00) 0%,rgba(255,255,255,1.00)  100%)",
-  "overlayGradientInverseVertical": "linear-gradient(180deg, rgba(255,255,255,0.00) 0%,rgba(255,255,255,1.00) 100%)",
-  "overlayGradientBaseHorizontal": "linear-gradient(270deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00) 100%)",
-  "overlayGradientBaseVertical": "linear-gradient(180deg, rgba(22,39,64,0.00) 0%,rgba(22,39,64,1.00)100%)"
-}
