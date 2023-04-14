@@ -9,6 +9,15 @@ import {
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
+// To prevent title staying white when dark theme selected
+const defaultOverrides = {
+  dockText: {
+    title: {
+      stylePreset: 'inkInverse',
+    },
+  },
+};
+
 const videoPlayerCustomThemeObject: CreateThemeArgs = {
   name: 'video-player-theme',
   overrides: {
@@ -65,7 +74,7 @@ const videoPlayerCustomThemeObject: CreateThemeArgs = {
       },
       customControlBar: {
         base: {
-          backgroundColor: '{{colors.whiteTint050}}',
+          backgroundColor: '{{colors.interfaceInformative020}}',
         },
       },
       customVolumeBar: {
@@ -109,7 +118,11 @@ export const StoryVideoPlayerPlaylist = () => {
   return (
     <StorybookPage columns="auto">
       <StorybookCase>
-        <VideoPlayer ref={videoRef} config={PLAYLISTS_VIDEO_PLAYER_CONFIG} />
+        <VideoPlayer
+          ref={videoRef}
+          config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
+          overrides={defaultOverrides}
+        />
       </StorybookCase>
     </StorybookPage>
   );
@@ -123,6 +136,7 @@ export const StoryVideoPlayerOverrides = () => (
       <VideoPlayer
         config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
         overrides={{
+          ...defaultOverrides,
           playButton: {
             stylePreset: 'customPlaybutton',
           },
@@ -133,6 +147,7 @@ export const StoryVideoPlayerOverrides = () => (
       <VideoPlayer
         config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
         overrides={{
+          ...defaultOverrides,
           seekBar: {
             stylePreset: 'customSeekBarContainer',
             loadingProgressBar: {
@@ -165,6 +180,7 @@ export const StoryVideoPlayerOverrides = () => (
       <VideoPlayer
         config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
         overrides={{
+          ...defaultOverrides,
           controlBar: {
             stylePreset: 'customControlBar',
             typographyPreset: {
@@ -202,7 +218,7 @@ export const StoryVideoPlayerOverrides = () => (
         }}
       />
     </StorybookCase>
-    <StorybookCase title="Style - doc text and overlay">
+    <StorybookCase title="Style - dock text and overlay">
       <VideoPlayer
         config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
         overrides={{
@@ -252,7 +268,7 @@ export default {
       title: 'Video Player',
       url: 'https://newskit.co.uk/components/video-player',
       description:
-        'The video player component wraps the Brightcove player in NewsKit themes.',
+        'The video player component wraps the <a href="https://player.support.brightcove.com/getting-started/index.html">Brightcove player</a> in NewsKit themes.',
     },
   },
   decorators: [
