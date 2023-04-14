@@ -310,7 +310,7 @@ export const StoryToastVariations = () => (
         {BODY}
       </Toast>
     </StorybookCase>
-    <StorybookCase title="Two action">
+    <StorybookCase title="Two actions">
       <Toast
         overrides={{
           maxWidth: {
@@ -398,14 +398,6 @@ export const StoryToastApi = () => {
             }}
           />
         }
-        actions={() => (
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonMinimalInverse'}}
-          >
-            undo
-          </Button>
-        )}
       >
         Your account has been updated
       </Toast>,
