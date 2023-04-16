@@ -470,6 +470,7 @@ export const StoryToastApi = () => {
           verticalOffset="10px"
           horizontalOffset="10px"
           position="bottom-center"
+          zIndex={1}
         />
       </StorybookCase>
     </StorybookPage>

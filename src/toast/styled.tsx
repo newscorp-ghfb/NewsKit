@@ -4,6 +4,7 @@ import {
   getSpacingCssFromTheme,
   getMotionCssFromTheme,
   styled,
+  css,
   MQ,
   getStylePreset,
   getResponsiveSize,
@@ -50,6 +51,11 @@ export const StyledToastProvider = styled.div<
       }),
       props.verticalOffset as MQ<string>,
     )(props)}
+    ${({zIndex}: {zIndex?: number}) =>
+    zIndex &&
+    css`
+      z-index: ${zIndex};
+    `}
 `;
 
 export const StyledToastBar = styled.div<{

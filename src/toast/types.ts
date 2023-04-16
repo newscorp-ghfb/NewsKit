@@ -18,6 +18,7 @@ export type ToastProviderProps = {
   horizontalOffset?: MQ<string>;
   verticalOffset?: MQ<string>;
   position?: ToastPosition;
+  zIndex?: number;
 };
 
 export type ToastOptions = Pick<ToastProviderProps, 'autoHideDuration'>;
