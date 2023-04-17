@@ -61,10 +61,11 @@ NewsKit provides a way to expose the following tokens as CSS variables: `borders
 
 Color tokens have prefix of `color` for example `inkBase` is `--color-inkBase`, the rest of the tokens are keeping their names like `sizing020` is `--sizing020`.
 
-In order to enable that functionality to your project, you need to add a prop `exposeCssVariables` to ThemeProvider, or pass it as themeOptions to NewsKitProvider as the example bellow:
+In order to enable that functionality to your project, you need to add a prop `exposeCssVariables` to ThemeProvider, or pass it as themeOptions to NewsKitProvider as the example below.
+NewsKitProvider themeOptions is the best option for globally turning on options. It can also be used to turn on useThemeCache, which is recommended as it significantly speeds up component rendering.
 
 <Code>
-{`<NewsKitProvider theme={yourTheme} themeOptions={{exposeCssVariables: true}}>
+{`<NewsKitProvider theme={yourTheme} themeOptions={{exposeCssVariables: true, useThemeCache: true}}>
   Main theme context
 
   <ThemeProvider theme={yourSubTheme} exposeCssVariables>Sub-theme context</ThemeProvider>
