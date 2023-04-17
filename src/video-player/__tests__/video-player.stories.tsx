@@ -13,7 +13,10 @@ import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-obje
 const defaultOverrides = {
   dockText: {
     title: {
-      stylePreset: 'inkInverse',
+      stylePreset: 'inkLight010',
+    },
+    description: {
+      stylePreset: 'inkLight010',
     },
   },
 };
@@ -243,8 +246,8 @@ export const StoryVideoPlayerOverrides = () => (
             title: {
               stylePreset: 'inkContrast',
               typographyPreset: {
-                xs: 'utilityMeta010',
-                md: 'utilityMeta020',
+                xs: 'editorialSubheadline020',
+                md: 'editorialSubheadline020',
               },
             },
             description: {
