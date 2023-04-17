@@ -125,7 +125,7 @@ const toastLink = (
 export const StoryToastDefault = () => (
   <StorybookPage columns="1fr">
     <StorybookCase>
-      <Toast overrides={{paddingBlock: 'space040'}}> {BODY} </Toast>
+      <Toast> {BODY} </Toast>
     </StorybookCase>
   </StorybookPage>
 );
@@ -136,7 +136,6 @@ export const StoryToastIntents = () => (
     <StorybookCase title="Default">
       <Toast
         overrides={{
-          paddingBlock: 'space040',
           maxWidth: {
             xs: '100%',
           },
@@ -260,6 +259,11 @@ export const StoryToastVariations = () => (
           maxWidth: {
             xs: '100%',
           },
+          content: {
+            title: {
+              spaceStack: 'space030',
+            },
+          },
         }}
       >
         {BODY}
@@ -271,6 +275,11 @@ export const StoryToastVariations = () => (
         overrides={{
           maxWidth: {
             xs: '100%',
+          },
+          content: {
+            title: {
+              spaceStack: 'space030',
+            },
           },
         }}
         icon={
