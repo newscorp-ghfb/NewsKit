@@ -1,6 +1,8 @@
 /* eslint-disable no-script-url */
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
+import {Videocam as FilledVideocam} from '@emotion-icons/material/Videocam';
+import {Share as FilledShare} from '@emotion-icons/material/Share';
 import {
   CardComposable,
   CardActions,
@@ -9,6 +11,7 @@ import {
   CardMedia,
 } from '../../card-composable';
 import {Headline, HeadlineProps} from '../../../headline';
+import {Image} from '../../../image';
 import {CreateThemeArgs, ThemeProvider} from '../../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
 import {Flag} from '../../../flag';
@@ -26,11 +29,13 @@ import {
   IconFilledAccountBalance,
   IconFilledAccountTree,
   IconFilledBookmarkBorder,
+  toNewsKitIcon,
 } from '../../../icons';
 import {LinkInline} from '../../../link';
 import {Tag} from '../../../tag';
 import {VideoPlayer} from '../../../video-player';
 import {DEFATULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/config';
+import {styled} from '../../../utils';
 
 const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
   <Headline
@@ -143,6 +148,26 @@ const cardCustomThemeObject: CreateThemeArgs = {
           borderWidth: '{{borders.borderWidth010}}',
         },
       },
+      // the sun
+      linkTheSun: {
+        hover: {
+          textDecoration: 'none',
+        },
+      },
+      cameraTag: {
+        base: {
+          borderStyle: 'none',
+          color: '{{colors.inkBrand010}}',
+          iconColor: '{{colors.inkBrand010}}',
+        },
+      },
+      shareTag: {
+        base: {
+          borderStyle: 'none',
+          color: '{{colors.inkBase}}',
+          iconColor: '{{colors.inkBase}}',
+        },
+      },
     },
   },
 };
@@ -150,6 +175,221 @@ const cardCustomThemeObject: CreateThemeArgs = {
 const href = 'javascript:void(0);';
 const areasGap = 'space050';
 const contentGap = 'space040';
+
+// The Sun --- starts here
+const StyledCardMedia = styled(CardMedia)`
+  position: relative;
+`;
+
+const StyledFlag = styled(Flag)<{leftOffset?: boolean}>`
+  position: absolute;
+  bottom: 0;
+  left: ${({leftOffset}) => leftOffset && '16px'};
+`;
+
+const IconFilledVideoCam = toNewsKitIcon(FilledVideocam);
+const IconFilledShare = toNewsKitIcon(FilledShare);
+
+export interface MediaContextActionProps {
+  size?: 'small' | 'medium' | 'large';
+  area?: string;
+}
+
+const map = {
+  small: '375px',
+  medium: '640px',
+  large: '920px',
+};
+
+const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
+  size = 'medium',
+}) => (
+  <CardComposable
+    overrides={{width: map[size]}}
+    style={{
+      overflow: 'hidden',
+      borderBottom: '1px solid #eaeeef',
+      borderLeft: '1px solid #eaeeef',
+      borderRight: '1px solid #eaeeef',
+    }}
+  >
+    <StyledCardMedia data-testid="card-media">
+      <Image
+        src={
+          size === 'small'
+            ? 'https://storybook.newskit.co.uk/placeholder-1x1.png'
+            : 'https://storybook.newskit.co.uk/placeholder-3x2.png'
+        }
+        alt="card-media-image"
+        loadingAspectRatio={size === 'small' ? '1:1' : '3:2'}
+      />
+      <StyledFlag
+        size="medium"
+        leftOffset
+        overrides={{typographyPreset: 'editorialLabel020'}}
+      >
+        EXCLUSIVE
+      </StyledFlag>
+    </StyledCardMedia>
+    <CardContent
+      data-testid="card-content"
+      rowGap="space045"
+      overrides={{
+        paddingInline: 'space040',
+        paddingBlock: 'space040',
+      }}
+    >
+      <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
+        <Headline
+          overrides={{
+            typographyPreset: 'editorialHeadline030',
+          }}
+        >
+          LOREM IPSUM Dolor sit amet, consectetur adipiscing elit, proin
+          molestie sem at consectetur euismod maecenas ut
+        </Headline>
+      </CardLink>
+      <TextBlock
+        as="p"
+        typographyPreset="editorialParagraph020"
+        stylePreset="inkBase"
+      >
+        When asked about his trips as a royal around the Commonwealth, Harry
+        told the Armchair Expert podcast: &quot;It’s the job right? Grin and
+        bear it, get on with it.&quot;
+      </TextBlock>
+    </CardContent>
+    <CardActions
+      data-testid="card-actions"
+      columns="auto auto"
+      alignItems="center"
+      justifyContent="space-between"
+      overrides={{
+        paddingBlock: 'space050',
+        paddingInline: 'space040',
+      }}
+    >
+      <Tag
+        href={href}
+        overrides={{
+          stylePreset: 'cameraTag',
+          typographyPreset: 'utilityButton020',
+          paddingInline: 'space000',
+          spaceInline: 'space020',
+        }}
+      >
+        Category
+        <IconFilledVideoCam />
+      </Tag>
+      <Tag
+        href={href}
+        overrides={{
+          stylePreset: 'shareTag',
+          typographyPreset: 'utilityButton010',
+          paddingInline: 'space000',
+          spaceInline: 'space020',
+        }}
+      >
+        <IconFilledShare />
+        Share
+      </Tag>
+    </CardActions>
+  </CardComposable>
+);
+
+const CardHorizontalTheSun: React.FC<MediaContextActionProps> = ({
+  size = 'medium',
+  area,
+}) => (
+  <CardComposable
+    overrides={{width: map[size]}}
+    style={{
+      overflow: 'hidden',
+      borderBottom: '1px solid #eaeeef',
+    }}
+    columns={size === 'small' ? '1fr 1fr' : '1.5fr 1fr'}
+    columnGap="space040"
+    rowGap="space045"
+    areas={area}
+  >
+    <StyledCardMedia data-testid="card-media">
+      <Image
+        src="https://storybook.newskit.co.uk/placeholder-3x2.png"
+        alt="card-media-image"
+        loadingAspectRatio="3:2"
+      />
+      <StyledFlag
+        size="small"
+        overrides={{
+          typographyPreset: 'editorialLabel010',
+        }}
+      >
+        EXCLUSIVE
+      </StyledFlag>
+    </StyledCardMedia>
+    <CardContent
+      rowGap="space030"
+      data-testid="card-content"
+      rows="min-content"
+    >
+      <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
+        <Headline
+          overrides={{
+            typographyPreset:
+              size === 'small'
+                ? 'editorialHeadline010'
+                : 'editorialHeadline030',
+          }}
+        >
+          Short title of the card describing the main content
+        </Headline>
+      </CardLink>
+      {!(size === 'small') && (
+        <TextBlock
+          as="p"
+          typographyPreset="editorialParagraph010"
+          stylePreset="inkBase"
+        >
+          When asked about his trips as a royal around the Commonwealth, Harry
+          told the Armchair Expert podcast: &quot;It’s the job right? Grin and
+          bear it, get on with it.&quot;
+        </TextBlock>
+      )}
+    </CardContent>
+    <CardActions
+      data-testid="card-actions"
+      columns="auto auto"
+      alignItems="center"
+      justifyContent="space-between"
+    >
+      <Tag
+        href={href}
+        overrides={{
+          stylePreset: 'cameraTag',
+          typographyPreset: 'utilityButton020',
+          paddingInline: 'space000',
+          spaceInline: 'space020',
+        }}
+      >
+        Category
+        <IconFilledVideoCam />
+      </Tag>
+      <Tag
+        href={href}
+        overrides={{
+          stylePreset: 'shareTag',
+          typographyPreset: 'utilityButton010',
+          paddingInline: 'space000',
+          spaceInline: 'space020',
+        }}
+      >
+        <IconFilledShare />
+        Share
+      </Tag>
+    </CardActions>
+  </CardComposable>
+);
+// The Sun --- ends here
 
 export const StoryDefault = () => (
   <StorybookPage>
@@ -925,6 +1165,48 @@ export const ComplexStory = () => (
 );
 
 ComplexStory.storyName = 'Other story';
+
+export const TheSunStory = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase title="Vertical - large">
+      <CardVerticalTheSun size="large" />
+    </StorybookCase>
+    <StorybookCase title="Vertical - medium">
+      <CardVerticalTheSun size="medium" />
+    </StorybookCase>
+    <StorybookCase title="Vertical - small">
+      <CardVerticalTheSun size="small" />
+    </StorybookCase>
+    <StorybookCase title="Horizontal - medium">
+      <CardHorizontalTheSun
+        area={`
+      media content
+      actions actions
+    `}
+      />
+    </StorybookCase>
+    <StorybookCase title="Horizontal - small">
+      <CardHorizontalTheSun
+        size="small"
+        area={`
+      media content
+      actions actions
+    `}
+      />
+    </StorybookCase>
+    <StorybookCase title="Horizontal - reverse - small">
+      <CardHorizontalTheSun
+        size="small"
+        area={`
+          content media
+          actions actions
+        `}
+      />
+    </StorybookCase>
+  </StorybookPage>
+);
+
+TheSunStory.storyName = 'The Sun';
 
 export default {
   title: 'Components/CardComposable',
