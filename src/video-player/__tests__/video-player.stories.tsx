@@ -13,10 +13,10 @@ import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-obje
 const defaultOverrides = {
   dockText: {
     title: {
-      stylePreset: 'inkLight010',
+      stylePreset: 'inkInverse',
     },
     description: {
-      stylePreset: 'inkLight010',
+      stylePreset: 'inkInverse',
     },
   },
 };
@@ -103,6 +103,7 @@ const videoPlayerCustomThemeObject: CreateThemeArgs = {
       customDockText: {
         base: {
           backgroundImage: '{{overlays.overlayGradientBaseVertical}}',
+          backgroundColor: '{{colors.inkContrast}}',
         },
       },
     },
@@ -244,14 +245,14 @@ export const StoryVideoPlayerOverrides = () => (
               md: 'space040',
             },
             title: {
-              stylePreset: 'inkLight010',
+              stylePreset: 'inkContrast',
               typographyPreset: {
                 xs: 'editorialSubheadline020',
                 md: 'editorialSubheadline020',
               },
             },
             description: {
-              stylePreset: 'inkLight010',
+              stylePreset: 'inkContrast',
               typographyPreset: {
                 xs: 'utilityMeta010',
                 md: 'utilityMeta020',
