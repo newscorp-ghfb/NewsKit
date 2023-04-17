@@ -194,7 +194,7 @@ describe('Toast', () => {
             providerProps: {
               position,
               horizontalOffset: '10px',
-              verticalOffset: '20px',
+              verticalOffset: '30px',
               autoHideDuration: 4000,
               zIndex: 1,
             },
