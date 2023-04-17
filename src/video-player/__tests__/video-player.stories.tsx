@@ -10,7 +10,7 @@ import {CreateThemeArgs, ThemeProvider} from '../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 // To prevent title staying white when dark theme selected
-const defaultOverrides = {
+const commonStoryOverrides = {
   dockText: {
     title: {
       stylePreset: 'inkInverse',
@@ -103,7 +103,6 @@ const videoPlayerCustomThemeObject: CreateThemeArgs = {
       customDockText: {
         base: {
           backgroundImage: '{{overlays.overlayGradientBaseVertical}}',
-          backgroundColor: '{{colors.inkContrast}}',
         },
       },
     },
@@ -118,7 +117,11 @@ export const StoryVideoPlayerDefault = () => {
   return (
     <StorybookPage columns="auto">
       <StorybookCase>
-        <VideoPlayer ref={videoRef} config={DEFAULT_VIDEO_PLAYER_CONFIG} />
+        <VideoPlayer
+          ref={videoRef}
+          config={DEFAULT_VIDEO_PLAYER_CONFIG}
+          overrides={commonStoryOverrides}
+        />
       </StorybookCase>
     </StorybookPage>
   );
@@ -135,7 +138,7 @@ export const StoryVideoPlayerPlaylist = () => {
         <VideoPlayer
           ref={videoRef}
           config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
-          overrides={defaultOverrides}
+          overrides={commonStoryOverrides}
         />
       </StorybookCase>
     </StorybookPage>
@@ -150,7 +153,7 @@ export const StoryVideoPlayerOverrides = () => (
       <VideoPlayer
         config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
         overrides={{
-          ...defaultOverrides,
+          ...commonStoryOverrides,
           playButton: {
             stylePreset: 'customPlaybutton',
           },
@@ -161,7 +164,7 @@ export const StoryVideoPlayerOverrides = () => (
       <VideoPlayer
         config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
         overrides={{
-          ...defaultOverrides,
+          ...commonStoryOverrides,
           seekBar: {
             stylePreset: 'customSeekBarContainer',
             loadingProgressBar: {
@@ -194,7 +197,7 @@ export const StoryVideoPlayerOverrides = () => (
       <VideoPlayer
         config={PLAYLISTS_VIDEO_PLAYER_CONFIG}
         overrides={{
-          ...defaultOverrides,
+          ...commonStoryOverrides,
           controlBar: {
             stylePreset: 'customControlBar',
             typographyPreset: {
