@@ -3,6 +3,7 @@ import {Story as StoryType} from '@storybook/react';
 import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {withDefaultProps} from '../../utils';
+import {toast, ToastProvider, Toast} from '..';
 import {
   IconFilledInfo,
   IconFilledWarning,
@@ -10,7 +11,6 @@ import {
   IconFilledCheckCircle,
   IconFilledStarOutline,
 } from '../../icons';
-import {toast, ToastProvider, Toast} from '..';
 import {LinkInline} from '../../link';
 import {Button} from '../../button';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
