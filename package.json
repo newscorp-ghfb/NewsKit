@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "7.1.0",
+  "version": "7.2.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -222,7 +222,7 @@
     "yup": "^0.32.9"
   },
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.11.2",
+    "@babel/runtime-corejs3": "^7.20.13",
     "@capsizecss/core": "^3.0.0",
     "@emotion-icons/emotion-icon": "4.1.0",
     "@emotion-icons/material": "3.9.0",
@@ -244,7 +244,7 @@
     "jszip": "^3.7.1",
     "next-seo": "^4.28.1",
     "react-focus-lock": "^2.5.0",
-    "react-hook-form": "^7.5.3",
+    "react-hook-form": "^7.43.1",
     "react-hot-toast": "^1.0.2",
     "react-range": "^1.8.12",
     "react-transition-group": "^4.4.1",

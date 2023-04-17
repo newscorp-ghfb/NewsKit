@@ -954,11 +954,15 @@ export default {
     },
   },
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           paginationItemCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
