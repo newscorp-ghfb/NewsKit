@@ -244,14 +244,14 @@ export const StoryVideoPlayerOverrides = () => (
               md: 'space040',
             },
             title: {
-              stylePreset: 'inkContrast',
+              stylePreset: 'inkLight010',
               typographyPreset: {
                 xs: 'editorialSubheadline020',
                 md: 'editorialSubheadline020',
               },
             },
             description: {
-              stylePreset: 'inkContrast',
+              stylePreset: 'inkLight010',
               typographyPreset: {
                 xs: 'utilityMeta010',
                 md: 'utilityMeta020',
