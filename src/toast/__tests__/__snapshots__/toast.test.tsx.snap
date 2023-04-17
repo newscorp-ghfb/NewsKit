@@ -85,7 +85,7 @@ exports[`Toast API render toast at bottom-center position 1`] = `
   pointer-events: none;
   left: 10px;
   right: 10px;
-  bottom: 30px;
+  bottom: 20px;
   z-index: 1;
 }
 
@@ -327,7 +327,7 @@ exports[`Toast API render toast at bottom-left position 1`] = `
   pointer-events: none;
   left: 10px;
   right: 10px;
-  bottom: 30px;
+  bottom: 20px;
   z-index: 1;
 }
 
@@ -505,7 +505,7 @@ exports[`Toast API render toast at bottom-right position 1`] = `
   pointer-events: none;
   left: 10px;
   right: 10px;
-  bottom: 30px;
+  bottom: 20px;
   z-index: 1;
 }
 
@@ -685,7 +685,7 @@ exports[`Toast API render toast at top-center position 1`] = `
   pointer-events: none;
   left: 10px;
   right: 10px;
-  top: 30px;
+  top: 20px;
   z-index: 1;
 }
 
@@ -885,7 +885,7 @@ exports[`Toast API render toast at top-left position 1`] = `
   pointer-events: none;
   left: 10px;
   right: 10px;
-  top: 30px;
+  top: 20px;
   z-index: 1;
 }
 
@@ -1021,7 +1021,7 @@ exports[`Toast API render toast at top-right position 1`] = `
   pointer-events: none;
   left: 10px;
   right: 10px;
-  top: 30px;
+  top: 20px;
   z-index: 1;
 }
 
