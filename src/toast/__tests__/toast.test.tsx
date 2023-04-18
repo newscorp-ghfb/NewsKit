@@ -196,7 +196,6 @@ describe('Toast', () => {
               horizontalOffset: '10px',
               verticalOffset: '20px',
               autoHideDuration: 4000,
-              zIndex: 1,
             },
             action,
           },
