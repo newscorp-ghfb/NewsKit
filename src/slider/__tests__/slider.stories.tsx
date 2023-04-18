@@ -6,6 +6,8 @@ import {ThumbLabelProps, SliderProps} from '../types';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookCase,
+  StorybookPage,
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
 import {IconOutlinedImage} from '../../icons';
@@ -250,6 +252,21 @@ const CustomThumbLabel: React.FC<ThumbLabelProps> = ({children, ...props}) => (
 export default {
   title: 'Components/slider',
   component: () => 'None',
+};
+export const StorySliderDefault = () => (
+  <>
+    <StorybookPage columns="1fr">
+      <StorybookCase title="Render as h1 (default)">
+        <StatefulSlider values={[50]} max={185} min={0} />
+      </StorybookCase>
+    </StorybookPage>
+  </>
+);
+StorySliderDefault.storyName = 'Default';
+StorySliderDefault.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
 };
 
 export const StorySlider1And2Thumbs = () => (
