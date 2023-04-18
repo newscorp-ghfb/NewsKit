@@ -83,7 +83,10 @@ export const StoryInline = () => {
 
   const handleOnClick = (placementValue: Placement) => {
     setPlacement(placementValue);
-    open();
+    // add a timeout so the placement is updated before the animation starts
+    setTimeout(() => {
+      open();
+    });
   };
 
   return (
