@@ -212,7 +212,6 @@ const FlexContainer = styled.div`
 `;
 
 const ContainerWithBorder = styled.div`
-  border: solid 1px red;
   margin: 48px 0;
   display: flex;
 `;
@@ -223,12 +222,11 @@ type FlexContainerWithBorderType = {
 };
 
 const FlexContainerWithBorder = styled.div<FlexContainerWithBorderType>`
-  border: solid 1px red;
   display: inline-flex;
-  height: 300px;
+  height: 124px;
   margin: 0 24px;
   ${({direction}) =>
-    direction === 'vertical' ? 'height: 300px' : 'width: 300px'}}
+    direction === 'vertical' ? 'height: 124px' : 'width: 185px'}}
 `;
 
 const VerticalContainerWithBorder = (props: FlexContainerWithBorderType) => (
@@ -250,17 +248,15 @@ const CustomThumbLabel: React.FC<ThumbLabelProps> = ({children, ...props}) => (
 );
 
 export default {
-  title: 'Components/slider',
+  title: 'Components/Slider',
   component: () => 'None',
 };
 export const StorySliderDefault = () => (
-  <>
-    <StorybookPage columns="1fr">
-      <StorybookCase title="Render as h1 (default)">
-        <StatefulSlider values={[50]} max={185} min={0} />
-      </StorybookCase>
-    </StorybookPage>
-  </>
+  <StorybookPage columns="1fr 1fr 1fr">
+    <StorybookCase>
+      <StatefulSlider values={[50]} max={100} min={0} />
+    </StorybookCase>
+  </StorybookPage>
 );
 StorySliderDefault.storyName = 'Default';
 StorySliderDefault.parameters = {
@@ -271,23 +267,29 @@ StorySliderDefault.parameters = {
 
 export const StorySlider1And2Thumbs = () => (
   <>
-    <StorybookHeading>1 thumb slider</StorybookHeading>
-    <ContainerWithBorder>
-      <StatefulSlider values={[50]} max={100} min={0} />
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <StatefulSlider disabled values={[50]} max={100} min={0} />
-    </ContainerWithBorder>
-    <StorybookHeading>2 thumb slider</StorybookHeading>
-    <ContainerWithBorder>
-      <StatefulSlider values={[30, 60]} max={100} min={0} />
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <StatefulSlider values={[0, 100]} max={100} min={0} />
-    </ContainerWithBorder>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase title="Single thumb">
+        <StatefulSlider values={[50]} max={100} min={0} />
+      </StorybookCase>
+      <StorybookCase title="Two thumb">
+        <StatefulSlider values={[30, 60]} max={100} min={0} />
+      </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase title="Single thumb">
+        <VerticalContainerWithBorder>
+          <StatefulSlider values={[20]} max={50} min={0} vertical />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Two thumb">
+        <VerticalContainerWithBorder>
+          <StatefulSlider values={[0, 50]} max={50} min={0} vertical />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+    </StorybookPage>
   </>
 );
-StorySlider1And2Thumbs.storyName = 'slider-1-and-2-thumbs';
+StorySlider1And2Thumbs.storyName = 'Multiple thumbs';
 StorySlider1And2Thumbs.parameters = {
   percy: {
     enableJavaScript: true,
@@ -296,50 +298,147 @@ StorySlider1And2Thumbs.parameters = {
 
 export const StorySliderWithTextLabels = () => (
   <>
-    <StorybookHeading>Slider with text labels</StorybookHeading>
-    <ContainerWithBorder>
-      <StatefulSlider values={[2.5]} max={10} min={0} step={0.5} thumbLabel />
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <StatefulSlider values={[10]} max={20} min={0} minLabel="0" />
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <StatefulSlider values={[20]} max={30} min={0} maxLabel="30" />
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <StatefulSlider
-        values={[30]}
-        max={40}
-        min={0}
-        minLabel="0"
-        maxLabel="40"
-        thumbLabel
-      />
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <StatefulSlider
-        values={[150]}
-        max={200}
-        min={100}
-        minLabel="100"
-        maxLabel="200"
-        labelPosition="before"
-      />
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <StatefulSlider
-        values={[150]}
-        max={200}
-        min={100}
-        minLabel="100"
-        maxLabel="200"
-        labelPosition="after"
-      />
-    </ContainerWithBorder>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase title="Two thumb">
+        <StatefulSlider values={[10]} max={20} min={0} minLabel="0" />
+      </StorybookCase>
+      <StorybookCase title="Two thumb">
+        <StatefulSlider values={[10]} max={20} min={0} maxLabel="100%" />
+      </StorybookCase>
+      <StorybookCase title="Two thumb">
+        <StatefulSlider
+          values={[10]}
+          max={20}
+          min={0}
+          minLabel="0"
+          maxLabel="100%"
+        />
+      </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase title="Label posotion above thumb">
+        <StatefulSlider
+          values={[30]}
+          max={40}
+          min={0}
+          minLabel="0"
+          maxLabel="40"
+          thumbLabel
+        />
+      </StorybookCase>
+      <StorybookCase title="Label posotion before">
+        <StatefulSlider
+          values={[150]}
+          max={200}
+          min={100}
+          minLabel="100"
+          maxLabel="200"
+          labelPosition="before"
+        />
+      </StorybookCase>
+      <StorybookCase title="Label posotion after">
+        <StatefulSlider
+          values={[150]}
+          max={200}
+          min={100}
+          minLabel="100"
+          maxLabel="200"
+          labelPosition="after"
+        />
+      </StorybookCase>
+    </StorybookPage>
   </>
 );
-StorySliderWithTextLabels.storyName = 'slider-with-text-labels';
+StorySliderWithTextLabels.storyName = 'Horizontal slider with labels';
 StorySliderWithTextLabels.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
+
+export const StorySliderWithVerticalTextLabels = () => (
+  <>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase title="Two thumb">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[10]}
+            max={20}
+            min={0}
+            minLabel="0"
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Two thumb">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[10]}
+            max={20}
+            min={0}
+            maxLabel="100%"
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Two thumb">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[10]}
+            max={20}
+            min={0}
+            minLabel="0"
+            maxLabel="100%"
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase title="Label posotion above thumb">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[30]}
+            max={40}
+            min={0}
+            minLabel="0"
+            maxLabel="40"
+            thumbLabel
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Label posotion before">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[150]}
+            max={200}
+            min={100}
+            minLabel="100"
+            maxLabel="200"
+            labelPosition="before"
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Label posotion after">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[150]}
+            max={200}
+            min={100}
+            minLabel="100"
+            maxLabel="200"
+            labelPosition="after"
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+    </StorybookPage>
+  </>
+);
+StorySliderWithVerticalTextLabels.storyName = 'Vertical slider with labels';
+StorySliderWithVerticalTextLabels.parameters = {
   percy: {
     enableJavaScript: true,
   },
