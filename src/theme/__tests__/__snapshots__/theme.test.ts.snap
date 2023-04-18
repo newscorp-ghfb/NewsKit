@@ -3391,7 +3391,7 @@ Object {
   "videoPlayer": Object {
     "controlBar": Object {
       "iconToggle": Object {
-        "stylePreset": "inkInverse",
+        "stylePreset": "inkLight010",
       },
       "maxHeight": Object {
         "md": "sizing080",
@@ -3405,7 +3405,7 @@ Object {
         "divider": Object {
           "spaceInline": "space010",
         },
-        "stylePreset": "inkInverse",
+        "stylePreset": "inkLight010",
         "typographyPreset": "utilityMeta010",
       },
       "typographyPreset": Object {
