@@ -155,7 +155,7 @@ export default class MyApp extends App<Props, State> {
 
         <NewsKitProvider
           theme={theme}
-          themeOptions={{exposeCssVariables: true}}
+          themeOptions={{exposeCssVariables: true, useThemeCache: true}}
           layer={{zIndex: 1000}}
           instrumentation={createEventInstrumentation(handlers, {
             ...pageProps,
