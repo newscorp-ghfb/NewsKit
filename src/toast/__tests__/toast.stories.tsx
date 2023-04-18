@@ -16,6 +16,7 @@ import {Button} from '../../button';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Container = styled.div`
+  position: relative;
   z-index: 1;
 `;
 
