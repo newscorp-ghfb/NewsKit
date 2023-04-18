@@ -16,7 +16,7 @@ import {Button} from '../../button';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
 const Container = styled.div`
-  z-inde: 1;
+  z-index: 1;
 `;
 
 const toastCustomThemeObject: CreateThemeArgs = {
