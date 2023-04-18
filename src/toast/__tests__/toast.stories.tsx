@@ -2,7 +2,7 @@ import React from 'react';
 import {Story as StoryType} from '@storybook/react';
 import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
-import {withDefaultProps} from '../../utils';
+import {withDefaultProps, styled} from '../../utils';
 import {toast, ToastProvider, Toast} from '..';
 import {
   IconFilledInfo,
@@ -14,6 +14,10 @@ import {
 import {LinkInline} from '../../link';
 import {Button} from '../../button';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+
+const Container = styled.div`
+  z-inde: 1;
+`;
 
 const toastCustomThemeObject: CreateThemeArgs = {
   name: 'toast-intents-theme',
@@ -474,13 +478,14 @@ export const StoryToastApi = () => {
         >
           Action
         </Button>
-        <ToastProvider
-          autoHideDuration={1000}
-          verticalOffset="10px"
-          horizontalOffset="10px"
-          position="bottom-center"
-          zIndex={1}
-        />
+        <Container>
+          <ToastProvider
+            autoHideDuration={1000}
+            verticalOffset="10px"
+            horizontalOffset="10px"
+            position="bottom-center"
+          />
+        </Container>
       </StorybookCase>
     </StorybookPage>
   );

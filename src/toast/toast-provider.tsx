@@ -18,7 +18,6 @@ export const ToastProvider = ({
   autoHideDuration = 6000,
   horizontalOffset = 'space040',
   verticalOffset = 'space040',
-  zIndex = 1,
 }: ToastProviderProps) => {
   const {toasts, handlers} = useToaster({duration: autoHideDuration});
   const {startPause, endPause, calculateOffset, updateHeight} = handlers;
@@ -52,7 +51,6 @@ export const ToastProvider = ({
       position={position}
       onMouseEnter={startPause}
       onMouseLeave={endPause}
-      zIndex={zIndex}
     >
       {toasts.map(toast => {
         const offset = calculateOffset(toast.id, {
