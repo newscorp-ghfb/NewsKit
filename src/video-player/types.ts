@@ -49,15 +49,13 @@ type VideoPlayerOverrides = {
     typographyPreset?: MQ<string>;
     maxHeight?: MQ<string>;
     timeDisplay?: {
-      recorded?: {
-        typographyPreset?: MQ<string>;
-        stylePreset?: MQ<string>;
-        currentTime?: {
-          spaceInline?: MQ<string>;
-        };
-        divider?: {
-          spaceInline?: MQ<string>;
-        };
+      typographyPreset?: MQ<string>;
+      stylePreset?: MQ<string>;
+      currentTime?: {
+        spaceInline?: MQ<string>;
+      };
+      divider?: {
+        spaceInline?: MQ<string>;
       };
     };
     volumeControl?: {
