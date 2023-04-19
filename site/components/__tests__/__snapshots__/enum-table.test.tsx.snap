@@ -9,21 +9,21 @@ exports[`EnumTable renders enum as expected 1`] = `
 }
 
 .emotion-1 {
-  font-family: "DM Sans",sans-serif;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
-  background-color: #F0F1F3;
-  box-shadow: 0 3px 4px 2px #F0F1F3;
+  letter-spacing: 0em;
+  background-color: #ffffff;
+  box-shadow: 0 3px 4px 2px #ffffff;
 }
 
 .emotion-1,
 .emotion-1 td,
 .emotion-1 th {
-  color: #09111C;
+  color: #09111c;
   border-spacing: 0;
-  border: solid 1px #DEE2E5;
+  border: solid 1px #dee2e5;
 }
 
 .emotion-1 td,

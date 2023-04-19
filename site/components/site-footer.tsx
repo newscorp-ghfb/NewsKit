@@ -14,7 +14,7 @@ import {
 import {Link} from './link';
 
 const Footer = styled.footer`
-  ${getColorCssFromTheme('background', 'interface010')}
+  ${getColorCssFromTheme('background', 'interface020')}
   ${getSizingCssFromTheme('paddingTop', {
     xs: 'sizing070',
     md: 'sizing080',

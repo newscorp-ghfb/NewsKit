@@ -88,30 +88,30 @@ exports[`Search renders correctly 1`] = `
 
 .emotion-4 {
   margin: 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-block-start: 4px;
   margin-block-end: 24px;
 }
 
 .emotion-4 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -149,7 +149,7 @@ exports[`Search renders correctly 1`] = `
 
 .emotion-7 {
   display: inline-block;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -171,31 +171,31 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-7 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-7:hover:not(:disabled) {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:hover:not(:disabled) svg {
-  fill: #254CAC;
+  fill: #254cac;
 }
 
 .emotion-7:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-7:active:not(:disabled) svg {
-  fill: #12387A;
+  fill: #14328d;
 }
 
 .emotion-7:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -241,11 +241,11 @@ exports[`Search renders correctly 1`] = `
 
 .emotion-10 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
-  letter-spacing: 0;
+  font-weight: 500;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
   display: block;
@@ -253,13 +253,13 @@ exports[`Search renders correctly 1`] = `
 
 .emotion-10::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-10::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -267,7 +267,7 @@ exports[`Search renders correctly 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -938,7 +938,7 @@ exports[`Search renders correctly 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
 }
 
@@ -948,28 +948,28 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-1:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-1:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1000,8 +1000,8 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-2 {
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1025,8 +1025,8 @@ exports[`Search renders correctly 1`] = `
 .emotion-2.emotion-2 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1135,10 +1135,10 @@ exports[`Search renders correctly 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -1148,30 +1148,30 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-1:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-1:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-1:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-1:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1202,7 +1202,7 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-2 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1225,24 +1225,24 @@ exports[`Search renders correctly 1`] = `
 
 .emotion-3 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-3::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-3::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -1279,9 +1279,9 @@ exports[`Search renders correctly 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 8px;
-  color: #5A6A79;
+  color: #5a6a79;
 }
 
 .emotion-4 svg {
@@ -1290,19 +1290,20 @@ exports[`Search renders correctly 1`] = `
 }
 
 .emotion-4 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-4:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-5 {
   margin: 0;
-  font-family: 'DM Mono',courier;
-  font-size: 14px;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 21px;
+  font-size: 14px;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }

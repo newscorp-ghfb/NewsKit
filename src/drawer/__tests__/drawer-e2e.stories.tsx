@@ -46,7 +46,7 @@ const DrawerContent = () => (
 );
 
 export default {
-  title: 'Components/drawer-e2e',
+  title: 'Components/drawer-e2e-hidden',
   component: () => 'None',
 };
 

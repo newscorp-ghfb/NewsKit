@@ -26,8 +26,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   position: fixed;
   top: var(--headerSize);
   margin-top: -12px;
-  background: #F0F1F3;
-  border-bottom-color: #DEE2E5;
+  background: #f0f1f3;
+  border-bottom-color: #dee2e5;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   z-index: 1000;
@@ -74,21 +74,21 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   max-width: 196px;
   min-height: 48px;
   margin-bottom: 8px;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-style: solid;
   border-color: transparent;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E3F54;
+  color: #2e3f54;
   text-overflow: ellipsis;
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   margin-block: 0px;
 }
 
 .emotion-3 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -138,12 +138,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-7 {
@@ -210,7 +210,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -270,7 +270,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   position: absolute;
   top: 50%;
   left: calc(100% - (24px / 2) - 4px);
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 50%;
   opacity: 0;
   width: 1px;
@@ -290,22 +290,22 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-16:valid:hover:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.2;
 }
 
 .emotion-16:valid:hover:active:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.4;
 }
 
 .emotion-16:invalid:hover:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.2;
 }
 
 .emotion-16:invalid:hover:active:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.4;
 }
 
@@ -343,17 +343,17 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 20rem;
   padding-inline: 4px;
 }
 
 .emotion-17:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -386,11 +386,11 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-19 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-19:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-19 svg {
@@ -404,7 +404,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -438,11 +438,11 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-22 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-22:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-22 svg {
@@ -453,7 +453,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-25 {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -467,7 +467,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-25 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -497,17 +497,17 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-27 {
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-27:disabled {
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-27::before {
@@ -558,23 +558,23 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #85939C;
+  border-color: #85939c;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E3F54;
+  color: #2e3f54;
   text-overflow: ellipsis;
 }
 
 .emotion-29 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-29:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -586,20 +586,20 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-29:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-29:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F0F1F3;
+  border-color: #007b22;
+  background-color: #f0f1f3;
 }
 
 .emotion-29:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -611,20 +611,20 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-29:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-29:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-29:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -636,8 +636,8 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-29:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F0F1F3;
+  border-color: #d60000;
+  background-color: #f0f1f3;
 }
 
 .emotion-32 {
@@ -645,12 +645,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #5A6A79;
-  font-family: "DM Sans",sans-serif;
+  color: #5a6a79;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-39 {
@@ -690,7 +690,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   appearance: none;
   background-color: transparent;
   border-radius: 8px;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
   margin-right: 20px;
 }
@@ -701,27 +701,27 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-39 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-39:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-39:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-39:disabled {
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-39:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-39:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -753,24 +753,24 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 .emotion-40 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-40::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-40::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -809,9 +809,9 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -821,28 +821,28 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 }
 
 .emotion-41 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-41:hover:not(:disabled) {
-  background-color: #254CAC;
+  background-color: #254cac;
 }
 
 .emotion-41:active:not(:disabled) {
-  background-color: #12387A;
+  background-color: #14328d;
 }
 
 .emotion-41:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-41:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-41:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -922,16 +922,16 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
 .emotion-48 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-48 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 <div
@@ -1214,7 +1214,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
                     
 
                     <rect
-                      fill="#F0F1F3"
+                      fill="#f1f1f1"
                       height="838"
                       width="1490"
                     />
@@ -1222,12 +1222,12 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
                     <path
                       d="M685.587 299.513C689.197 307.576 692.723 315.549 695.65 323.674L663.363 323.671C661.691 319.697 660.197 315.723 658.405 311.812L658.139 311.219C652.102 297.754 645.877 283.87 642.905 268.713L641.233 261.187C636.811 242.343 633.556 225.734 638.426 213.64C647.439 191.171 671.949 189.274 686.62 188.138L686.66 188.135L692.879 187.567C711.217 185.537 732.837 181.953 753.686 170.901C807.711 142.291 814.464 47.8493 813 -4H842.5C844.292 59.264 833.695 162.337 767.69 197.28C742.362 210.686 717.337 214.899 696.159 217.259L688.993 217.884C677.222 218.779 668.081 219.858 666.113 224.753C664.506 229.672 668.698 247.544 670.287 254.319L670.295 254.352C671.04 257.607 671.727 260.566 672.175 262.925C674.528 274.899 679.878 286.807 685.536 299.4L685.587 299.513Z"
-                      fill="#5EB8C0"
+                      fill="#5eb8c0"
                     />
                     
 
                     <rect
-                      fill="#C7E7EA"
+                      fill="#c7e7ea"
                       height="311"
                       rx="37"
                       width="729"
@@ -1248,121 +1248,121 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
 
                     <path
                       d="M840.06 365H821.474C817.056 365 813.474 368.582 813.474 373V391.597C813.474 396.015 817.056 399.597 821.474 399.597H840.06C844.478 399.597 848.06 396.015 848.06 391.597V373C848.06 368.582 844.478 365 840.06 365Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M770.881 365H752.295C747.877 365 744.295 368.582 744.295 373V391.597C744.295 396.015 747.877 399.597 752.295 399.597H770.881C775.299 399.597 778.881 396.015 778.881 391.597V373C778.881 368.582 775.299 365 770.881 365Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M813.474 460.798V442.202C813.474 437.783 809.892 434.202 805.474 434.202H786.888C782.47 434.202 778.888 437.783 778.888 442.202V460.798C778.888 465.217 782.47 468.798 786.888 468.798H805.474C809.892 468.798 813.474 465.217 813.474 460.798Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M744.295 460.798V442.202C744.295 437.783 740.713 434.202 736.295 434.202H717.71C713.291 434.202 709.71 437.783 709.71 442.202V460.798C709.71 465.217 713.291 468.798 717.71 468.798H736.295C740.713 468.798 744.295 465.217 744.295 460.798Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M701.702 365H683.116C678.698 365 675.116 368.582 675.116 373V391.597C675.116 396.015 678.698 399.597 683.116 399.597H701.702C706.12 399.597 709.702 396.015 709.702 391.597V373C709.702 368.582 706.12 365 701.702 365Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M563.35 365H544.765C540.346 365 536.765 368.582 536.765 373V391.597C536.765 396.015 540.346 399.597 544.765 399.597H563.35C567.768 399.597 571.35 396.015 571.35 391.597V373C571.35 368.582 567.768 365 563.35 365Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M494.179 365H441C436.582 365 433 368.582 433 373V391.597C433 396.015 436.582 399.597 441 399.597H494.179C498.597 399.597 502.179 396.015 502.179 391.597V373C502.179 368.582 498.597 365 494.179 365Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M528.765 434.202H441C436.582 434.202 433 437.783 433 442.202V460.798C433 465.217 436.582 468.798 441 468.798H528.765C533.183 468.798 536.765 465.217 536.765 460.798V442.202C536.765 437.783 533.183 434.202 528.765 434.202Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M458.216 538H476.801C481.219 538 484.801 534.418 484.801 530V511.403C484.801 506.985 481.219 503.403 476.801 503.403H458.216C453.797 503.403 450.216 506.985 450.216 511.403V530C450.216 534.418 453.797 538 458.216 538Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M527.395 538H545.98C550.398 538 553.98 534.418 553.98 530V511.403C553.98 506.985 550.398 503.403 545.98 503.403H527.395C522.976 503.403 519.395 506.985 519.395 511.403V530C519.395 534.418 522.976 538 527.395 538Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M579.352 468.798H597.942C602.361 468.798 605.943 465.216 605.942 460.797L605.939 442.2C605.938 437.782 602.356 434.202 597.939 434.202H579.352C574.933 434.202 571.352 437.783 571.352 442.202V460.798C571.352 465.217 574.933 468.798 579.352 468.798Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M632.529 365H613.943C609.525 365 605.943 368.582 605.943 373V391.597C605.943 396.015 609.525 399.597 613.943 399.597H632.529C636.947 399.597 640.529 396.015 640.529 391.597V373C640.529 368.582 636.947 365 632.529 365Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M675.116 460.798V442.202C675.116 437.783 671.534 434.202 667.116 434.202H648.531C644.112 434.202 640.531 437.783 640.531 442.202V460.798C640.531 465.217 644.112 468.798 648.531 468.798H667.116C671.534 468.798 675.116 465.217 675.116 460.798Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M596.413 538H857.277C861.695 538 865.277 534.418 865.277 530V511.403C865.277 506.985 861.695 503.403 857.277 503.403H596.413C591.995 503.403 588.413 506.985 588.413 511.403V530C588.413 534.418 591.995 538 596.413 538Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M856.063 468.798H874.648C879.067 468.798 882.648 465.217 882.648 460.798V442.202C882.648 437.783 879.067 434.202 874.648 434.202H856.063C851.644 434.202 848.063 437.783 848.063 442.202V460.798C848.063 465.217 851.644 468.798 856.063 468.798Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M909.234 365H890.648C886.23 365 882.648 368.582 882.648 373V391.597C882.648 396.015 886.23 399.597 890.648 399.597H909.234C913.652 399.597 917.234 396.015 917.234 391.597V373C917.234 368.582 913.652 365 909.234 365Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M907.87 538H926.456C930.874 538 934.456 534.418 934.456 530V511.403C934.456 506.985 930.874 503.403 926.456 503.403H907.87C903.452 503.403 899.87 506.985 899.87 511.403V530C899.87 534.418 903.452 538 907.87 538Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M977.043 538H995.628C1000.05 538 1003.63 534.418 1003.63 530V511.403C1003.63 506.985 1000.05 503.403 995.628 503.403H977.043C972.625 503.403 969.043 506.985 969.043 511.403V530C969.043 534.418 972.625 538 977.043 538Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M925.235 468.798H1013C1017.42 468.798 1021 465.217 1021 460.798V442.202C1021 437.783 1017.42 434.202 1013 434.202H925.235C920.817 434.202 917.235 437.783 917.235 442.202V460.798C917.235 465.217 920.817 468.798 925.235 468.798Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
                     <path
                       d="M959.821 399.597H1013C1017.42 399.597 1021 396.015 1021 391.597V373C1021 368.582 1017.42 365 1013 365H959.821C955.403 365 951.821 368.582 951.821 373V391.597C951.821 396.015 955.403 399.597 959.821 399.597Z"
-                      fill="#E6F4F6"
+                      fill="#e6f4f6"
                     />
                     
 
@@ -1429,8 +1429,8 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   position: fixed;
   top: var(--headerSize);
   margin-top: -12px;
-  background: #F0F1F3;
-  border-bottom-color: #DEE2E5;
+  background: #f0f1f3;
+  border-bottom-color: #dee2e5;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   z-index: 1000;
@@ -1479,16 +1479,16 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-radius: 8px;
-  color: #C0C7CC;
+  color: #a1acb4;
   text-overflow: ellipsis;
   margin-block: 0px;
 }
 
 .emotion-3 svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-4 {
@@ -1531,11 +1531,11 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   white-space: nowrap;
   text-overflow: ellipsis;
   color: inherit;
-  font-family: "DM Sans",sans-serif;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-7 {
@@ -1578,7 +1578,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1638,7 +1638,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   position: absolute;
   top: 50%;
   left: calc(100% - (24px / 2) - 4px);
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 50%;
   opacity: 0;
   width: 1px;
@@ -1658,22 +1658,22 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-15:valid:hover:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.2;
 }
 
 .emotion-15:valid:hover:active:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.4;
 }
 
 .emotion-15:invalid:hover:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.2;
 }
 
 .emotion-15:invalid:hover:active:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.4;
 }
 
@@ -1711,17 +1711,17 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 20rem;
   padding-inline: 4px;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -1754,11 +1754,11 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-18 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-18 svg {
@@ -1772,7 +1772,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1806,11 +1806,11 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-21 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-21:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-21 svg {
@@ -1821,7 +1821,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-24 {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -1835,7 +1835,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-24 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1865,17 +1865,17 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-26 {
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-26::before {
@@ -1944,7 +1944,7 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   appearance: none;
   background-color: transparent;
   border-radius: 8px;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
   margin-right: 20px;
 }
@@ -1955,27 +1955,27 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-28 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-28:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-28:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-28:disabled {
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-28:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-28:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -2007,24 +2007,24 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 
 .emotion-29 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-29::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-29::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -2063,9 +2063,9 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -2075,28 +2075,28 @@ exports[`SvgPreviewer should render correctly when not receiving any data 1`] = 
 }
 
 .emotion-30 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-30:hover:not(:disabled) {
-  background-color: #254CAC;
+  background-color: #254cac;
 }
 
 .emotion-30:active:not(:disabled) {
-  background-color: #12387A;
+  background-color: #14328d;
 }
 
 .emotion-30:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-30:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-30:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -2333,8 +2333,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   position: fixed;
   top: var(--headerSize);
   margin-top: -12px;
-  background: #F0F1F3;
-  border-bottom-color: #DEE2E5;
+  background: #f0f1f3;
+  border-bottom-color: #dee2e5;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   z-index: 1000;
@@ -2383,24 +2383,24 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #85939C;
+  border-color: #85939c;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E3F54;
+  color: #2e3f54;
   text-overflow: ellipsis;
   margin-block: 0px;
 }
 
 .emotion-3 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-3:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2412,20 +2412,20 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-3:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-3:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F0F1F3;
+  border-color: #007b22;
+  background-color: #f0f1f3;
 }
 
 .emotion-3:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2437,20 +2437,20 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-3:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-3:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-3:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2462,8 +2462,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-3:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F0F1F3;
+  border-color: #d60000;
+  background-color: #f0f1f3;
 }
 
 .emotion-4 {
@@ -2505,12 +2505,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #5A6A79;
-  font-family: "DM Sans",sans-serif;
+  color: #5a6a79;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-7 {
@@ -2553,7 +2553,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2613,7 +2613,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   position: absolute;
   top: 50%;
   left: calc(100% - (24px / 2) - 4px);
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 50%;
   opacity: 0;
   width: 1px;
@@ -2633,22 +2633,22 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-15:valid:hover:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.2;
 }
 
 .emotion-15:valid:hover:active:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.4;
 }
 
 .emotion-15:invalid:hover:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.2;
 }
 
 .emotion-15:invalid:hover:active:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.4;
 }
 
@@ -2686,17 +2686,17 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 20rem;
   padding-inline: 4px;
 }
 
 .emotion-16:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2729,11 +2729,11 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-18 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-18:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-18 svg {
@@ -2747,7 +2747,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -2781,11 +2781,11 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-21 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-21:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-21 svg {
@@ -2796,7 +2796,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-24 {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -2810,7 +2810,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-24 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -2840,17 +2840,17 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-26 {
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-26:disabled {
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-26::before {
@@ -2901,23 +2901,23 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   margin-bottom: 8px;
   background-color: transparent;
   border-style: solid;
-  border-color: #85939C;
+  border-color: #85939c;
   border-width: 1px;
   border-radius: 8px;
-  color: #2E3F54;
+  color: #2e3f54;
   text-overflow: ellipsis;
 }
 
 .emotion-28 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-28:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2929,20 +2929,20 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-28:hover:not(:disabled) {
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-28:valid:hover:not(:disabled) {
-  border-color: #007B22;
-  background-color: #F0F1F3;
+  border-color: #007b22;
+  background-color: #f0f1f3;
 }
 
 .emotion-28:valid:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2954,20 +2954,20 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-28:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-28:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-28:invalid:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   border-color: transparent;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -2979,8 +2979,8 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-28:invalid:hover:not(:disabled) {
-  border-color: #D60000;
-  background-color: #F0F1F3;
+  border-color: #d60000;
+  background-color: #f0f1f3;
 }
 
 .emotion-38 {
@@ -3020,7 +3020,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   appearance: none;
   background-color: transparent;
   border-radius: 8px;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
   margin-right: 20px;
 }
@@ -3031,27 +3031,27 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-38 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-38:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-38:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-38:disabled {
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-38:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-38:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -3083,24 +3083,24 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 .emotion-39 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-39::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-39::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -3139,9 +3139,9 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -3151,28 +3151,28 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 }
 
 .emotion-40 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-40:hover:not(:disabled) {
-  background-color: #254CAC;
+  background-color: #254cac;
 }
 
 .emotion-40:active:not(:disabled) {
-  background-color: #12387A;
+  background-color: #14328d;
 }
 
 .emotion-40:disabled {
-  background-color: #DEE2E5;
-  color: #C0C7CC;
+  background-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-40:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-40:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -3252,16 +3252,16 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
 .emotion-47 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-47 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 <div
@@ -3535,7 +3535,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
                     
 
                     <rect
-                      fill="#F0F1F3"
+                      fill="#f0f1f3"
                       height="838"
                       width="1490"
                     />
@@ -3543,12 +3543,12 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
                     <path
                       d="M685.587 299.513C689.197 307.576 692.723 315.549 695.65 323.674L663.363 323.671C661.691 319.697 660.197 315.723 658.405 311.812L658.139 311.219C652.102 297.754 645.877 283.87 642.905 268.713L641.233 261.187C636.811 242.343 633.556 225.734 638.426 213.64C647.439 191.171 671.949 189.274 686.62 188.138L686.66 188.135L692.879 187.567C711.217 185.537 732.837 181.953 753.686 170.901C807.711 142.291 814.464 47.8493 813 -4H842.5C844.292 59.264 833.695 162.337 767.69 197.28C742.362 210.686 717.337 214.899 696.159 217.259L688.993 217.884C677.222 218.779 668.081 219.858 666.113 224.753C664.506 229.672 668.698 247.544 670.287 254.319L670.295 254.352C671.04 257.607 671.727 260.566 672.175 262.925C674.528 274.899 679.878 286.807 685.536 299.4L685.587 299.513Z"
-                      fill="#708DE9"
+                      fill="#708de9"
                     />
                     
 
                     <rect
-                      fill="#AEBFFF"
+                      fill="#aebfff"
                       height="311"
                       rx="37"
                       width="729"
@@ -3558,7 +3558,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
                     
 
                     <rect
-                      fill="#3358CC"
+                      fill="#3358cc"
                       height="311"
                       rx="20"
                       width="729"
@@ -3569,121 +3569,121 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
 
                     <path
                       d="M840.06 365H821.474C817.056 365 813.474 368.582 813.474 373V391.597C813.474 396.015 817.056 399.597 821.474 399.597H840.06C844.478 399.597 848.06 396.015 848.06 391.597V373C848.06 368.582 844.478 365 840.06 365Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M770.881 365H752.295C747.877 365 744.295 368.582 744.295 373V391.597C744.295 396.015 747.877 399.597 752.295 399.597H770.881C775.299 399.597 778.881 396.015 778.881 391.597V373C778.881 368.582 775.299 365 770.881 365Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M813.474 460.798V442.202C813.474 437.783 809.892 434.202 805.474 434.202H786.888C782.47 434.202 778.888 437.783 778.888 442.202V460.798C778.888 465.217 782.47 468.798 786.888 468.798H805.474C809.892 468.798 813.474 465.217 813.474 460.798Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M744.295 460.798V442.202C744.295 437.783 740.713 434.202 736.295 434.202H717.71C713.291 434.202 709.71 437.783 709.71 442.202V460.798C709.71 465.217 713.291 468.798 717.71 468.798H736.295C740.713 468.798 744.295 465.217 744.295 460.798Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M701.702 365H683.116C678.698 365 675.116 368.582 675.116 373V391.597C675.116 396.015 678.698 399.597 683.116 399.597H701.702C706.12 399.597 709.702 396.015 709.702 391.597V373C709.702 368.582 706.12 365 701.702 365Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M563.35 365H544.765C540.346 365 536.765 368.582 536.765 373V391.597C536.765 396.015 540.346 399.597 544.765 399.597H563.35C567.768 399.597 571.35 396.015 571.35 391.597V373C571.35 368.582 567.768 365 563.35 365Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M494.179 365H441C436.582 365 433 368.582 433 373V391.597C433 396.015 436.582 399.597 441 399.597H494.179C498.597 399.597 502.179 396.015 502.179 391.597V373C502.179 368.582 498.597 365 494.179 365Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M528.765 434.202H441C436.582 434.202 433 437.783 433 442.202V460.798C433 465.217 436.582 468.798 441 468.798H528.765C533.183 468.798 536.765 465.217 536.765 460.798V442.202C536.765 437.783 533.183 434.202 528.765 434.202Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M458.216 538H476.801C481.219 538 484.801 534.418 484.801 530V511.403C484.801 506.985 481.219 503.403 476.801 503.403H458.216C453.797 503.403 450.216 506.985 450.216 511.403V530C450.216 534.418 453.797 538 458.216 538Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M527.395 538H545.98C550.398 538 553.98 534.418 553.98 530V511.403C553.98 506.985 550.398 503.403 545.98 503.403H527.395C522.976 503.403 519.395 506.985 519.395 511.403V530C519.395 534.418 522.976 538 527.395 538Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M579.352 468.798H597.942C602.361 468.798 605.943 465.216 605.942 460.797L605.939 442.2C605.938 437.782 602.356 434.202 597.939 434.202H579.352C574.933 434.202 571.352 437.783 571.352 442.202V460.798C571.352 465.217 574.933 468.798 579.352 468.798Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M632.529 365H613.943C609.525 365 605.943 368.582 605.943 373V391.597C605.943 396.015 609.525 399.597 613.943 399.597H632.529C636.947 399.597 640.529 396.015 640.529 391.597V373C640.529 368.582 636.947 365 632.529 365Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M675.116 460.798V442.202C675.116 437.783 671.534 434.202 667.116 434.202H648.531C644.112 434.202 640.531 437.783 640.531 442.202V460.798C640.531 465.217 644.112 468.798 648.531 468.798H667.116C671.534 468.798 675.116 465.217 675.116 460.798Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M596.413 538H857.277C861.695 538 865.277 534.418 865.277 530V511.403C865.277 506.985 861.695 503.403 857.277 503.403H596.413C591.995 503.403 588.413 506.985 588.413 511.403V530C588.413 534.418 591.995 538 596.413 538Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M856.063 468.798H874.648C879.067 468.798 882.648 465.217 882.648 460.798V442.202C882.648 437.783 879.067 434.202 874.648 434.202H856.063C851.644 434.202 848.063 437.783 848.063 442.202V460.798C848.063 465.217 851.644 468.798 856.063 468.798Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M909.234 365H890.648C886.23 365 882.648 368.582 882.648 373V391.597C882.648 396.015 886.23 399.597 890.648 399.597H909.234C913.652 399.597 917.234 396.015 917.234 391.597V373C917.234 368.582 913.652 365 909.234 365Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M907.87 538H926.456C930.874 538 934.456 534.418 934.456 530V511.403C934.456 506.985 930.874 503.403 926.456 503.403H907.87C903.452 503.403 899.87 506.985 899.87 511.403V530C899.87 534.418 903.452 538 907.87 538Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M977.043 538H995.628C1000.05 538 1003.63 534.418 1003.63 530V511.403C1003.63 506.985 1000.05 503.403 995.628 503.403H977.043C972.625 503.403 969.043 506.985 969.043 511.403V530C969.043 534.418 972.625 538 977.043 538Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M925.235 468.798H1013C1017.42 468.798 1021 465.217 1021 460.798V442.202C1021 437.783 1017.42 434.202 1013 434.202H925.235C920.817 434.202 917.235 437.783 917.235 442.202V460.798C917.235 465.217 920.817 468.798 925.235 468.798Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
                     <path
                       d="M959.821 399.597H1013C1017.42 399.597 1021 396.015 1021 391.597V373C1021 368.582 1017.42 365 1013 365H959.821C955.403 365 951.821 368.582 951.821 373V391.597C951.821 396.015 955.403 399.597 959.821 399.597Z"
-                      fill="#ECF1FF"
+                      fill="#ecf1ff"
                     />
                     
 
