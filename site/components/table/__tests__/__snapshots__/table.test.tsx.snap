@@ -18,7 +18,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -37,7 +37,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -56,7 +56,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -178,7 +178,7 @@ exports[`Table renders IconFilledCheckCircle if we pass true for a \`Required\` 
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -335,7 +335,7 @@ exports[`Table renders links correctly 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -354,7 +354,7 @@ exports[`Table renders links correctly 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -452,8 +452,8 @@ exports[`Table renders links correctly 1`] = `
 .emotion-7 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -479,7 +479,7 @@ exports[`Table renders links correctly 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -559,7 +559,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -578,7 +578,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -597,7 +597,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -664,8 +664,8 @@ exports[`Table renders number values automatically if undefined 1`] = `
 .emotion-8 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -697,7 +697,7 @@ exports[`Table renders number values automatically if undefined 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -865,7 +865,7 @@ exports[`Table renders with default styles 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -884,7 +884,7 @@ exports[`Table renders with default styles 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -902,7 +902,7 @@ exports[`Table renders with default styles 1`] = `
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -982,7 +982,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -1001,7 +1001,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -1020,7 +1020,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1091,8 +1091,8 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin: 0;
   font-family: DM Mono,courier,monospace;
   font-weight: 400;
-  line-height: 1.3125rem;
-  font-size: 0.875rem;
+  line-height: 21px;
+  font-size: 14px;
   letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1116,7 +1116,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1247,7 +1247,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -1266,7 +1266,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-width: 0px 0px 1px 0px;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -1285,7 +1285,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;
@@ -1356,8 +1356,8 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   margin: 0;
   font-family: DM Mono,courier,monospace;
   font-weight: 400;
-  line-height: 1.3125rem;
-  font-size: 0.875rem;
+  line-height: 21px;
+  font-size: 14px;
   letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1381,7 +1381,7 @@ exports[`Table wraps content with styledFlag if the column is either Name, Type 
   border-width: 0px 0px 1px 0px;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0em;

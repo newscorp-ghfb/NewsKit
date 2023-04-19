@@ -52,8 +52,8 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-4 {
     font-family: Poppins,sans-serif;
-    font-size: 1.75rem;
-    line-height: 1.96875rem;
+    font-size: 28px;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -75,8 +75,8 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-4 {
     font-family: Poppins,sans-serif;
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 700;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -122,8 +122,8 @@ exports[`AccessibilitySection renders section as expected 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -174,8 +174,8 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (max-width: 1439px) {
   .emotion-10 {
     font-family: Poppins,sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.40625rem;
+    font-size: 20px;
+    line-height: 22.5px;
     font-weight: 700;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -197,8 +197,8 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-10 {
     font-family: Poppins,sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.6875rem;
+    font-size: 24px;
+    line-height: 27px;
     font-weight: 700;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -229,8 +229,8 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (max-width: 1439px) {
   .emotion-12 {
     font-family: DM Sans,sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 400;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -252,8 +252,8 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 @media screen and (min-width: 1440px) {
   .emotion-12 {
     font-family: DM Sans,sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
+    font-size: 18px;
+    line-height: 27px;
     font-weight: 400;
     letter-spacing: 0em;
     padding: 0.5px 0px;

@@ -263,8 +263,8 @@ exports[`Media List renders with custom layout 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -360,8 +360,8 @@ exports[`Media List renders with custom layout 1`] = `
 
 .emotion-18 {
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.40625rem;
+  font-size: 20px;
+  line-height: 22.5px;
   font-weight: 700;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -749,8 +749,8 @@ exports[`Media List renders with default layout 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -811,8 +811,8 @@ exports[`Media List renders with default layout 1`] = `
 
 .emotion-18 {
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.40625rem;
+  font-size: 20px;
+  line-height: 22.5px;
   font-weight: 700;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -1192,8 +1192,8 @@ exports[`Media List renders with feature cardscards 1`] = `
 @media screen and (max-width: 1023px) {
   .emotion-13 {
     font-family: Poppins,sans-serif;
-    font-size: 1.75rem;
-    line-height: 1.96875rem;
+    font-size: 28px;
+    line-height: 31.5px;
     font-weight: 700;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -1215,8 +1215,8 @@ exports[`Media List renders with feature cardscards 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-13 {
     font-family: Poppins,sans-serif;
-    font-size: 2.25rem;
-    line-height: 2.53125rem;
+    font-size: 36px;
+    line-height: 40.5px;
     font-weight: 700;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -1270,8 +1270,8 @@ exports[`Media List renders with feature cardscards 1`] = `
 @media screen and (max-width: 1023px) {
   .emotion-16 {
     font-family: Poppins,sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 500;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -1293,8 +1293,8 @@ exports[`Media List renders with feature cardscards 1`] = `
 @media screen and (min-width: 1024px) {
   .emotion-16 {
     font-family: Poppins,sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 500;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -1323,8 +1323,8 @@ exports[`Media List renders with feature cardscards 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -1384,8 +1384,8 @@ exports[`Media List renders with feature cardscards 1`] = `
 .emotion-20 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -2132,8 +2132,8 @@ exports[`Media List renders with usage cards 1`] = `
   margin: 0;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.40625rem;
+  font-size: 20px;
+  line-height: 22.5px;
   font-weight: 700;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -2159,8 +2159,8 @@ exports[`Media List renders with usage cards 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0em;
   padding: 0.5px 0px;

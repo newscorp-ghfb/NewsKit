@@ -114,8 +114,8 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-5 {
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -196,8 +196,8 @@ exports[`Meta renders with mandatory props 1`] = `
 .emotion-10 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -260,8 +260,8 @@ exports[`Meta renders with mandatory props 1`] = `
   margin: 0;
   color: #3358cc;
   font-family: Poppins,sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -471,8 +471,8 @@ exports[`Meta renders with mandatory props 1`] = `
 .emotion-24 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -740,8 +740,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-5 {
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -822,8 +822,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 .emotion-10 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -886,8 +886,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   margin: 0;
   color: #3358cc;
   font-family: Poppins,sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -1097,8 +1097,8 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 .emotion-24 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -1406,8 +1406,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-5 {
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -1488,8 +1488,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 .emotion-10 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -1663,7 +1663,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 .emotion-20 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
   letter-spacing: 0em;
@@ -1888,8 +1888,8 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 .emotion-30 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;

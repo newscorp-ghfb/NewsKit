@@ -20,8 +20,8 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -140,8 +140,8 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: DM Sans,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -274,8 +274,8 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -311,8 +311,8 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -484,8 +484,8 @@ exports[`UnpackContent renders simple text 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;

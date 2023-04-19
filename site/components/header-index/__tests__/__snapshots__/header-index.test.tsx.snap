@@ -247,8 +247,8 @@ exports[`HeaderIndex renders without crashing 1`] = `
 @media screen and (max-width: 767px) {
   .emotion-9 {
     font-family: Poppins,sans-serif;
-    font-size: 2.25rem;
-    line-height: 2.53125rem;
+    font-size: 36px;
+    line-height: 40.5px;
     font-weight: 700;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -270,8 +270,8 @@ exports[`HeaderIndex renders without crashing 1`] = `
 @media screen and (min-width: 768px) {
   .emotion-9 {
     font-family: Poppins,sans-serif;
-    font-size: 3rem;
-    line-height: 3.375rem;
+    font-size: 48px;
+    line-height: 54px;
     font-weight: 700;
     letter-spacing: 0em;
     padding: 0.5px 0px;
@@ -306,8 +306,8 @@ exports[`HeaderIndex renders without crashing 1`] = `
   margin: 0;
   color: #2e3f54;
   font-family: Poppins,sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;

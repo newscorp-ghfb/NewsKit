@@ -2557,10 +2557,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@newskit-themes/newskit-website@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@newskit-themes/newskit-website/-/newskit-website-1.0.1.tgz#967c1c20dd5cdcf117c6e123bafbdc34239a039c"
-  integrity sha512-BbxJ++CS2a3puBDe16e6arBFM3RlAHPFBhs2FZF3jbbL73jU+XBMG0Cng/m8MBa0l+HymXkfT83+ngQSegmzgQ==
+"@newskit-themes/newskit-website@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/newskit-website/-/newskit-website-1.0.2.tgz#010214a9d05f89e78a6651aefee4136985119b72"
+  integrity sha512-DQHBfVmCeOjJc0A9aXYVdQmnpBUdXSseSYJ7yATiO4snFFqjsVQlLhHsEThkmUrO0ArDmMelPtQAGket8XLXdw==
 
 "@next/env@13.1.0":
   version "13.1.0"

@@ -13,7 +13,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   border-bottom-color: #dee2e5;
   background-color: #ffffff;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -393,8 +393,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin: 0;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 1rem;
-  line-height: 1.125rem;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -545,8 +545,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-22 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -835,8 +835,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-129 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -910,8 +910,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
   margin: 0;
   font-family: DM Mono,courier,monospace;
   font-weight: 400;
-  line-height: 1.3125rem;
-  font-size: 0.875rem;
+  line-height: 21px;
+  font-size: 14px;
   letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
@@ -1109,8 +1109,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on a section wi
 .emotion-144 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -3070,7 +3070,7 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   border-bottom-color: #dee2e5;
   background-color: #ffffff;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -3450,8 +3450,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin: 0;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 1rem;
-  line-height: 1.125rem;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -3602,8 +3602,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-22 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -3892,8 +3892,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-129 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -3967,8 +3967,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
   margin: 0;
   font-family: DM Mono,courier,monospace;
   font-weight: 400;
-  line-height: 1.3125rem;
-  font-size: 0.875rem;
+  line-height: 21px;
+  font-size: 14px;
   letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
@@ -4166,8 +4166,8 @@ exports[`SiteHeader has first item highlighted (About) if we are on the /about s
 .emotion-144 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -6127,7 +6127,7 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   border-bottom-color: #dee2e5;
   background-color: #ffffff;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0em;
@@ -6507,8 +6507,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin: 0;
   color: #09111c;
   font-family: Poppins,sans-serif;
-  font-size: 1rem;
-  line-height: 1.125rem;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 700;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -6659,8 +6659,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-22 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -6949,8 +6949,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-129 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.125rem;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;
@@ -7024,8 +7024,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
   margin: 0;
   font-family: DM Mono,courier,monospace;
   font-weight: 400;
-  line-height: 1.3125rem;
-  font-size: 0.875rem;
+  line-height: 21px;
+  font-size: 14px;
   letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
@@ -7217,8 +7217,8 @@ exports[`SiteHeader has no highlighted items if we are on the homepage 1`] = `
 .emotion-144 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 600;
   letter-spacing: 0em;
   padding: 0.5px 0px;

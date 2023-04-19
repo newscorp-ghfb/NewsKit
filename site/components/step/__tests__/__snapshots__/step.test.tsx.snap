@@ -83,8 +83,8 @@ exports[`Step renders with props 1`] = `
 .emotion-2 {
   margin: 0;
   font-family: Poppins,sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 0.5px 0px;
