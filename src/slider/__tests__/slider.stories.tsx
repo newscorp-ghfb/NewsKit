@@ -249,6 +249,120 @@ StorySliderDefault.parameters = {
   },
 };
 
+export const StorySliderWithStates = () => (
+  <>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase title="Base">
+        <StatefulSlider values={[10]} max={20} min={0} minLabel="0" />
+      </StorybookCase>
+      <StorybookCase title="Hover">
+        <StatefulSlider values={[10]} max={20} min={0} maxLabel="100%" />
+      </StorybookCase>
+      <StorybookCase title="Active">
+        <StatefulSlider
+          values={[10]}
+          max={20}
+          min={0}
+          minLabel="0"
+          maxLabel="100%"
+        />
+      </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase title="Focus">
+        <StatefulSlider
+          values={[30]}
+          max={40}
+          min={0}
+          minLabel="0"
+          maxLabel="40"
+          thumbLabel
+        />
+      </StorybookCase>
+      <StorybookCase title="Disabled">
+        <StatefulSlider
+          values={[150]}
+          max={200}
+          min={100}
+          minLabel="100"
+          maxLabel="200"
+          labelPosition="before"
+          disabled
+        />
+      </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr 1fr 1fr">
+      <StorybookCase title="Base">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[10]}
+            max={20}
+            min={0}
+            minLabel="0"
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Hover">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[10]}
+            max={20}
+            min={0}
+            maxLabel="100%"
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Active">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[10]}
+            max={20}
+            min={0}
+            minLabel="0"
+            maxLabel="100%"
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Focus">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[30]}
+            max={40}
+            min={0}
+            minLabel="0"
+            maxLabel="40"
+            thumbLabel
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+      <StorybookCase title="Disabled">
+        <VerticalContainerWithBorder>
+          <StatefulSlider
+            values={[150]}
+            max={200}
+            min={100}
+            minLabel="100"
+            maxLabel="200"
+            labelPosition="before"
+            disabled
+            vertical
+          />
+        </VerticalContainerWithBorder>
+      </StorybookCase>
+    </StorybookPage>
+  </>
+);
+StorySliderWithStates.storyName = 'States';
+StorySliderWithStates.parameters = {
+  percy: {
+    enableJavaScript: true,
+  },
+};
+
 export const StorySlider1And2Thumbs = () => (
   <>
     <StorybookPage columns="1fr 1fr 1fr">
