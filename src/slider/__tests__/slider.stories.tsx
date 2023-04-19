@@ -1,18 +1,20 @@
 import React from 'react';
 
+import {Story as StoryType} from '@storybook/react';
 import {StatefulSlider} from '..';
 import {styled} from '../../utils/style';
 import {ThumbLabelProps, SliderProps} from '../types';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {
   StorybookHeading,
   StorybookSubHeading,
   StorybookCase,
   StorybookPage,
 } from '../../test/storybook-comps';
-import {createTheme, ThemeProvider} from '../../theme';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
 // import {IconOutlinedImage} from '../../icons';
 
-const myCustomTheme = createTheme({
+const sliderCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-slider-theme',
   overrides: {
     stylePresets: {
@@ -137,7 +139,7 @@ const myCustomTheme = createTheme({
       },
     },
   },
-});
+};
 
 const CustomTrack = styled.div`
   width: 100%;
@@ -240,10 +242,10 @@ const CustomThumbLabel: React.FC<ThumbLabelProps> = ({children, ...props}) => (
   <StyledCustomThumbLabel {...props}>{`${children}%`}</StyledCustomThumbLabel>
 );
 
-export default {
-  title: 'Components/Slider',
-  component: () => 'None',
-};
+// export default {
+//   title: 'Components/Slider',
+//   component: () => 'None',
+// };
 export const StorySliderDefault = () => (
   <StorybookPage columns="1fr 1fr 1fr">
     <StorybookCase>
@@ -489,43 +491,41 @@ export const StorySliderWithStylingOverrides = () => (
   <>
     <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase>
-        <ThemeProvider theme={myCustomTheme}>
-          <StatefulSlider
-            values={[50]}
-            max={100}
-            min={0}
-            minLabel="Label"
-            maxLabel="Label"
-            labelPosition="before"
-            overrides={{
-              track: {
-                stylePreset: 'customTrackStylePreset',
-                size: 'sizing020',
-              },
-              indicator: {
-                stylePreset: 'customIndicatorStylePreset',
-              },
-              thumb: {
-                stylePreset: 'customThumbStylePreset',
-                size: 'sizing060',
-              },
-              thumbLabel: {
-                stylePreset: 'customThumbLabelStylePreset',
-                typographyPreset: 'utilityLabel020',
-                space: 'space060',
-              },
-              labels: {
-                stylePreset: 'customLabelStylePreset',
-                typographyPreset: 'utilityLabel030',
-                space: 'space040',
-              },
-              feedback: {
-                size: 'sizing090',
-                stylePreset: 'customFeedback',
-              },
-            }}
-          />
-        </ThemeProvider>
+        <StatefulSlider
+          values={[50]}
+          max={100}
+          min={0}
+          minLabel="Label"
+          maxLabel="Label"
+          labelPosition="before"
+          overrides={{
+            track: {
+              stylePreset: 'customTrackStylePreset',
+              size: 'sizing020',
+            },
+            indicator: {
+              stylePreset: 'customIndicatorStylePreset',
+            },
+            thumb: {
+              stylePreset: 'customThumbStylePreset',
+              size: 'sizing060',
+            },
+            thumbLabel: {
+              stylePreset: 'customThumbLabelStylePreset',
+              typographyPreset: 'utilityLabel020',
+              space: 'space060',
+            },
+            labels: {
+              stylePreset: 'customLabelStylePreset',
+              typographyPreset: 'utilityLabel030',
+              space: 'space040',
+            },
+            feedback: {
+              size: 'sizing090',
+              stylePreset: 'customFeedback',
+            },
+          }}
+        />
       </StorybookCase>
     </StorybookPage>
   </>
@@ -542,14 +542,12 @@ export const StorySliderWithOverrides = () => (
     <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase>
         <ContainerWithBorder>
-          <ThemeProvider theme={myCustomTheme}>
-            <StatefulSlider
-              values={[40]}
-              max={100}
-              min={0}
-              renderTrack={renderCustomTrack}
-            />
-          </ThemeProvider>
+          <StatefulSlider
+            values={[40]}
+            max={100}
+            min={0}
+            renderTrack={renderCustomTrack}
+          />
         </ContainerWithBorder>
       </StorybookCase>
     </StorybookPage>
@@ -764,72 +762,70 @@ StorySliderLogicalProps.parameters = {
 export const StorySliderWithOutlineOverride = () => (
   <>
     <StorybookHeading>Slider with custom outline override</StorybookHeading>
-    <ThemeProvider theme={myCustomTheme}>
-      <StorybookSubHeading>Custom Color</StorybookSubHeading>
-      <ContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0"
-          maxLabel="100%"
-          thumbLabel
-          overrides={{
-            thumb: {
-              stylePreset: 'customOutlineColor',
-            },
-          }}
-        />
-      </ContainerWithBorder>
-      <StorybookSubHeading>Custom Style</StorybookSubHeading>
-      <ContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0"
-          maxLabel="100%"
-          thumbLabel
-          overrides={{
-            thumb: {
-              stylePreset: 'customOutlineStyle',
-            },
-          }}
-        />
-      </ContainerWithBorder>
-      <StorybookSubHeading>Custom Width</StorybookSubHeading>
-      <ContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0"
-          maxLabel="100%"
-          thumbLabel
-          overrides={{
-            thumb: {
-              stylePreset: 'customOutlineWidth',
-            },
-          }}
-        />
-      </ContainerWithBorder>
-      <StorybookSubHeading>Custom Offset</StorybookSubHeading>
-      <ContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0"
-          maxLabel="100%"
-          thumbLabel
-          overrides={{
-            thumb: {
-              stylePreset: 'customOutlineOffset',
-            },
-          }}
-        />
-      </ContainerWithBorder>
-    </ThemeProvider>
+    <StorybookSubHeading>Custom Color</StorybookSubHeading>
+    <ContainerWithBorder>
+      <StatefulSlider
+        values={[50]}
+        max={100}
+        min={0}
+        minLabel="0"
+        maxLabel="100%"
+        thumbLabel
+        overrides={{
+          thumb: {
+            stylePreset: 'customOutlineColor',
+          },
+        }}
+      />
+    </ContainerWithBorder>
+    <StorybookSubHeading>Custom Style</StorybookSubHeading>
+    <ContainerWithBorder>
+      <StatefulSlider
+        values={[50]}
+        max={100}
+        min={0}
+        minLabel="0"
+        maxLabel="100%"
+        thumbLabel
+        overrides={{
+          thumb: {
+            stylePreset: 'customOutlineStyle',
+          },
+        }}
+      />
+    </ContainerWithBorder>
+    <StorybookSubHeading>Custom Width</StorybookSubHeading>
+    <ContainerWithBorder>
+      <StatefulSlider
+        values={[50]}
+        max={100}
+        min={0}
+        minLabel="0"
+        maxLabel="100%"
+        thumbLabel
+        overrides={{
+          thumb: {
+            stylePreset: 'customOutlineWidth',
+          },
+        }}
+      />
+    </ContainerWithBorder>
+    <StorybookSubHeading>Custom Offset</StorybookSubHeading>
+    <ContainerWithBorder>
+      <StatefulSlider
+        values={[50]}
+        max={100}
+        min={0}
+        minLabel="0"
+        maxLabel="100%"
+        thumbLabel
+        overrides={{
+          thumb: {
+            stylePreset: 'customOutlineOffset',
+          },
+        }}
+      />
+    </ContainerWithBorder>
   </>
 );
 StorySliderWithOutlineOverride.storyName = 'slider-with-custom-outline';
@@ -837,4 +833,25 @@ StorySliderWithOutlineOverride.parameters = {
   percy: {
     enableJavaScript: true,
   },
+};
+
+export default {
+  title: 'Components/Slider',
+  component: () => 'None',
+  decorators: [
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
+      <ThemeProvider
+        theme={createCustomThemeWithBaseThemeSwitch(
+          context?.globals?.backgrounds?.value,
+          sliderCustomThemeObject,
+          context?.name,
+        )}
+      >
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };
