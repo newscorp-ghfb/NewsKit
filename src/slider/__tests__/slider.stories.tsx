@@ -10,8 +10,7 @@ import {
   StorybookPage,
 } from '../../test/storybook-comps';
 import {createTheme, ThemeProvider} from '../../theme';
-import {IconOutlinedImage} from '../../icons';
-import {withDefaultProps} from '../../utils/with-default-props';
+// import {IconOutlinedImage} from '../../icons';
 
 const myCustomTheme = createTheme({
   name: 'my-custom-slider-theme',
@@ -19,22 +18,21 @@ const myCustomTheme = createTheme({
     stylePresets: {
       customTrackStylePreset: {
         base: {
-          backgroundColor: 'red',
-          borderColor: 'blue',
-          borderWidth: '5px',
-          borderStyle: 'solid',
+          backgroundColor: '{{colors.interfaceInformative020}}',
+          borderRadius: '999px',
         },
       },
       customIndicatorStylePreset: {
         base: {
-          backgroundColor: 'yellow',
+          backgroundColor: '{{colors.inkBrand010}}',
         },
       },
       customThumbStylePreset: {
         base: {
-          backgroundColor: 'green',
-          borderColor: 'black',
-          borderWidth: '5px',
+          backgroundColor: '{{colors.inkBrand010}}',
+          borderRadius: '999px',
+          borderColor: '{{colors.interface010}}',
+          borderWidth: '1px',
           borderStyle: 'solid',
         },
       },
@@ -51,11 +49,7 @@ const myCustomTheme = createTheme({
       },
       customLabelStylePreset: {
         base: {
-          borderColor: 'purple',
-          borderWidth: '2px',
-          borderRadius: '999px',
-          borderStyle: 'dashed',
-          color: 'purple',
+          color: '{{colors.utilityLabel020}}',
         },
       },
       customFeedback: {
@@ -147,28 +141,27 @@ const myCustomTheme = createTheme({
 
 const CustomTrack = styled.div`
   width: 100%;
-  height: 32px;
-  background-image: linear-gradient(red, yellow);
+  height: 8px;
 `;
 const renderCustomTrack: SliderProps['renderTrack'] = ({props, children}) => (
   <CustomTrack {...props}>{children}</CustomTrack>
 );
 
-const CustomThumb = styled.div`
-  height: 40px;
-  padding: 4px;
-  border-radius: 50% 0 50% 0;
-  background: black;
-  border: dashed 2px yellow;
-`;
+// const CustomThumb = styled.div`
+//   height: 8px;
+//   padding: 4px;
+//   border-radius: 50% 0 50% 0;
+//   background: black;
+//   border: dashed 2px yellow;
+// `;
 
-const renderCustomThumb: SliderProps['renderThumb'] = ({props}) => (
-  <CustomThumb {...props} aria-label="custom slider thumb">
-    <IconOutlinedImage
-      overrides={{size: 'iconSize030', stylePreset: 'customPlaceholderIcon'}}
-    />
-  </CustomThumb>
-);
+// const renderCustomThumb: SliderProps['renderThumb'] = ({props}) => (
+//   <CustomThumb {...props} aria-label="custom slider thumb">
+//     <IconOutlinedImage
+//       overrides={{size: 'iconSize030', stylePreset: 'customPlaceholderIcon'}}
+//     />
+//   </CustomThumb>
+// );
 
 const Svg = styled.svg`
   width: ${({width}) => width}px;
@@ -205,11 +198,11 @@ class CustomMaxLabel extends React.Component {
   }
 }
 
-const FlexContainer = styled.div`
-  margin: 48px 0;
-  display: flex;
-  flex-wrap: wrap;
-`;
+// const FlexContainer = styled.div`
+//   margin: 48px 0;
+//   display: flex;
+//   flex-wrap: wrap;
+// `;
 
 const ContainerWithBorder = styled.div`
   margin: 48px 0;
@@ -232,9 +225,9 @@ const FlexContainerWithBorder = styled.div<FlexContainerWithBorderType>`
 const VerticalContainerWithBorder = (props: FlexContainerWithBorderType) => (
   <FlexContainerWithBorder direction="vertical" {...props} />
 );
-const HorizontalContainerWithBorder = (props: FlexContainerWithBorderType) => (
-  <FlexContainerWithBorder direction="horizontal" {...props} />
-);
+// const HorizontalContainerWithBorder = (props: FlexContainerWithBorderType) => (
+//   <FlexContainerWithBorder direction="horizontal" {...props} />
+// );
 
 const StyledCustomThumbLabel = styled.h1`
   margin: 0;
@@ -492,226 +485,252 @@ StorySliderWithCustomLabels.parameters = {
   },
 };
 
-export const StorySliderWithCustomStylePreset = () => (
+export const StorySliderWithStylingOverrides = () => (
   <>
-    <StorybookHeading>Slider with custom style presets</StorybookHeading>
-    <ContainerWithBorder>
-      <ThemeProvider theme={myCustomTheme}>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0"
-          maxLabel="100%"
-          thumbLabel
-          overrides={{
-            track: {
-              stylePreset: 'customTrackStylePreset',
-              size: 'sizing050',
-            },
-            indicator: {
-              stylePreset: 'customIndicatorStylePreset',
-            },
-            thumb: {
-              stylePreset: 'customThumbStylePreset',
-              size: 'sizing070',
-            },
-            thumbLabel: {
-              stylePreset: 'customThumbLabelStylePreset',
-              typographyPreset: 'utilityLabel020',
-              space: 'space060',
-            },
-            labels: {
-              stylePreset: 'customLabelStylePreset',
-              typographyPreset: 'utilityLabel030',
-              space: 'space040',
-            },
-            feedback: {
-              size: 'sizing090',
-              stylePreset: 'customFeedback',
-            },
-          }}
-        />
-      </ThemeProvider>
-    </ContainerWithBorder>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase>
+        <ThemeProvider theme={myCustomTheme}>
+          <StatefulSlider
+            values={[50]}
+            max={100}
+            min={0}
+            minLabel="Label"
+            maxLabel="Label"
+            labelPosition="before"
+            overrides={{
+              track: {
+                stylePreset: 'customTrackStylePreset',
+                size: 'sizing020',
+              },
+              indicator: {
+                stylePreset: 'customIndicatorStylePreset',
+              },
+              thumb: {
+                stylePreset: 'customThumbStylePreset',
+                size: 'sizing060',
+              },
+              thumbLabel: {
+                stylePreset: 'customThumbLabelStylePreset',
+                typographyPreset: 'utilityLabel020',
+                space: 'space060',
+              },
+              labels: {
+                stylePreset: 'customLabelStylePreset',
+                typographyPreset: 'utilityLabel030',
+                space: 'space040',
+              },
+              feedback: {
+                size: 'sizing090',
+                stylePreset: 'customFeedback',
+              },
+            }}
+          />
+        </ThemeProvider>
+      </StorybookCase>
+    </StorybookPage>
   </>
 );
-StorySliderWithCustomStylePreset.storyName = 'slider-with-custom-style-preset';
-StorySliderWithCustomStylePreset.parameters = {
+StorySliderWithStylingOverrides.storyName = 'Styling overrides';
+StorySliderWithStylingOverrides.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
-export const StorySliderWithCustomRenders = () => (
+export const StorySliderWithOverrides = () => (
   <>
-    <StorybookHeading>Slider with custom renderers</StorybookHeading>
-    <ContainerWithBorder>
-      <ThemeProvider theme={myCustomTheme}>
-        <StatefulSlider
-          values={[40]}
-          max={100}
-          min={0}
-          renderTrack={renderCustomTrack}
-        />
-      </ThemeProvider>
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <ThemeProvider theme={myCustomTheme}>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          renderThumb={renderCustomThumb}
-        />
-      </ThemeProvider>
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <ThemeProvider theme={myCustomTheme}>
-        <StatefulSlider
-          values={[60]}
-          max={100}
-          min={0}
-          renderTrack={renderCustomTrack}
-          renderThumb={renderCustomThumb}
-        />
-      </ThemeProvider>
-    </ContainerWithBorder>
-    <ContainerWithBorder>
-      <ThemeProvider theme={myCustomTheme}>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          thumbIcon={withDefaultProps(IconOutlinedImage, {
-            overrides: {size: 'iconSize030'},
-          })}
-        />
-      </ThemeProvider>
-    </ContainerWithBorder>
+    <StorybookPage columns="1fr 1fr 1fr">
+      <StorybookCase>
+        <ContainerWithBorder>
+          <ThemeProvider theme={myCustomTheme}>
+            <StatefulSlider
+              values={[40]}
+              max={100}
+              min={0}
+              renderTrack={renderCustomTrack}
+            />
+          </ThemeProvider>
+        </ContainerWithBorder>
+      </StorybookCase>
+    </StorybookPage>
   </>
 );
-StorySliderWithCustomRenders.storyName = 'slider-with-custom-renders';
-StorySliderWithCustomRenders.parameters = {
+StorySliderWithOverrides.storyName = 'Overrides';
+StorySliderWithOverrides.parameters = {
   percy: {
     enableJavaScript: true,
   },
 };
 
-export const StorySliderRendersVertical = () => (
-  <>
-    <StorybookHeading>Vertical Slider examples</StorybookHeading>
-    <FlexContainer>
-      <VerticalContainerWithBorder>
-        <StatefulSlider values={[20]} max={50} min={0} vertical />
-      </VerticalContainerWithBorder>
-      <VerticalContainerWithBorder>
-        <StatefulSlider values={[0, 50]} max={50} min={0} vertical />
-      </VerticalContainerWithBorder>
-      <VerticalContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0"
-          maxLabel="%"
-          vertical
-          thumbLabel
-        />
-      </VerticalContainerWithBorder>
-      <VerticalContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0%"
-          maxLabel="100%"
-          vertical
-          thumbLabel
-        />
-      </VerticalContainerWithBorder>
-      <VerticalContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel={CustomMinLabel}
-          maxLabel={CustomMaxLabel}
-          vertical
-        />
-      </VerticalContainerWithBorder>
-      <VerticalContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel={CustomMinLabel}
-          maxLabel={CustomMaxLabel}
-          thumbLabel={CustomThumbLabel}
-          vertical
-        />
-      </VerticalContainerWithBorder>
-    </FlexContainer>
-  </>
-);
-StorySliderRendersVertical.storyName = 'slider-renders-vertical';
-StorySliderRendersVertical.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
+// export const StorySliderWithCustomRenders = () => (
+//   <>
+//     <StorybookHeading>Slider with custom renderers</StorybookHeading>
+//     <ContainerWithBorder>
+//       <ThemeProvider theme={myCustomTheme}>
+//         <StatefulSlider
+//           values={[40]}
+//           max={100}
+//           min={0}
+//           renderTrack={renderCustomTrack}
+//         />
+//       </ThemeProvider>
+//     </ContainerWithBorder>
+//     <ContainerWithBorder>
+//       <ThemeProvider theme={myCustomTheme}>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           renderThumb={renderCustomThumb}
+//         />
+//       </ThemeProvider>
+//     </ContainerWithBorder>
+//     <ContainerWithBorder>
+//       <ThemeProvider theme={myCustomTheme}>
+//         <StatefulSlider
+//           values={[60]}
+//           max={100}
+//           min={0}
+//           renderTrack={renderCustomTrack}
+//           renderThumb={renderCustomThumb}
+//         />
+//       </ThemeProvider>
+//     </ContainerWithBorder>
+//     <ContainerWithBorder>
+//       <ThemeProvider theme={myCustomTheme}>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           thumbIcon={withDefaultProps(IconOutlinedImage, {
+//             overrides: {size: 'iconSize030'},
+//           })}
+//         />
+//       </ThemeProvider>
+//     </ContainerWithBorder>
+//   </>
+// );
+// StorySliderWithCustomRenders.storyName = 'slider-with-custom-renders';
+// StorySliderWithCustomRenders.parameters = {
+//   percy: {
+//     enableJavaScript: true,
+//   },
+// };
 
-export const StorySliderWithLabelsBeforeAndAfter = () => (
-  <>
-    <StorybookHeading>
-      Vertical Slider with labels before and after
-    </StorybookHeading>
-    <FlexContainer>
-      <VerticalContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0%"
-          maxLabel="100%"
-          vertical
-          thumbLabel
-          labelPosition="before"
-        />
-      </VerticalContainerWithBorder>
-      <VerticalContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0%"
-          maxLabel="100%"
-          vertical
-          thumbLabel
-          labelPosition="after"
-        />
-      </VerticalContainerWithBorder>
-      <HorizontalContainerWithBorder>
-        <StatefulSlider
-          values={[50]}
-          max={100}
-          min={0}
-          minLabel="0%"
-          maxLabel="100%"
-          thumbLabel
-          labelPosition="after"
-        />
-      </HorizontalContainerWithBorder>
-    </FlexContainer>
-  </>
-);
-StorySliderWithLabelsBeforeAndAfter.storyName =
-  'slider-with-labels-before-and-after';
-StorySliderWithLabelsBeforeAndAfter.parameters = {
-  percy: {
-    enableJavaScript: true,
-  },
-};
+// export const StorySliderRendersVertical = () => (
+//   <>
+//     <StorybookHeading>Vertical Slider examples</StorybookHeading>
+//     <FlexContainer>
+//       <VerticalContainerWithBorder>
+//         <StatefulSlider values={[20]} max={50} min={0} vertical />
+//       </VerticalContainerWithBorder>
+//       <VerticalContainerWithBorder>
+//         <StatefulSlider values={[0, 50]} max={50} min={0} vertical />
+//       </VerticalContainerWithBorder>
+//       <VerticalContainerWithBorder>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           minLabel="0"
+//           maxLabel="%"
+//           vertical
+//           thumbLabel
+//         />
+//       </VerticalContainerWithBorder>
+//       <VerticalContainerWithBorder>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           minLabel="0%"
+//           maxLabel="100%"
+//           vertical
+//           thumbLabel
+//         />
+//       </VerticalContainerWithBorder>
+//       <VerticalContainerWithBorder>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           minLabel={CustomMinLabel}
+//           maxLabel={CustomMaxLabel}
+//           vertical
+//         />
+//       </VerticalContainerWithBorder>
+//       <VerticalContainerWithBorder>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           minLabel={CustomMinLabel}
+//           maxLabel={CustomMaxLabel}
+//           thumbLabel={CustomThumbLabel}
+//           vertical
+//         />
+//       </VerticalContainerWithBorder>
+//     </FlexContainer>
+//   </>
+// );
+// StorySliderRendersVertical.storyName = 'slider-renders-vertical';
+// StorySliderRendersVertical.parameters = {
+//   percy: {
+//     enableJavaScript: true,
+//   },
+// };
+
+// export const StorySliderWithLabelsBeforeAndAfter = () => (
+//   <>
+//     <StorybookHeading>
+//       Vertical Slider with labels before and after
+//     </StorybookHeading>
+//     <FlexContainer>
+//       <VerticalContainerWithBorder>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           minLabel="0%"
+//           maxLabel="100%"
+//           vertical
+//           thumbLabel
+//           labelPosition="before"
+//         />
+//       </VerticalContainerWithBorder>
+//       <VerticalContainerWithBorder>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           minLabel="0%"
+//           maxLabel="100%"
+//           vertical
+//           thumbLabel
+//           labelPosition="after"
+//         />
+//       </VerticalContainerWithBorder>
+//       <HorizontalContainerWithBorder>
+//         <StatefulSlider
+//           values={[50]}
+//           max={100}
+//           min={0}
+//           minLabel="0%"
+//           maxLabel="100%"
+//           thumbLabel
+//           labelPosition="after"
+//         />
+//       </HorizontalContainerWithBorder>
+//     </FlexContainer>
+//   </>
+// );
+// StorySliderWithLabelsBeforeAndAfter.storyName =
+//   'slider-with-labels-before-and-after';
+// StorySliderWithLabelsBeforeAndAfter.parameters = {
+//   percy: {
+//     enableJavaScript: true,
+//   },
+// };
 
 export const StorySliderLogicalProps = () => (
   <>
