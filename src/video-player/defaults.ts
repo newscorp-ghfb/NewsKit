@@ -40,7 +40,7 @@ export default {
       },
       timeDisplay: {
         typographyPreset: 'utilityMeta010',
-        stylePreset: 'inkInverse',
+        stylePreset: 'inkLight010',
         currentTime: {
           spaceInline: 'space010',
         },
@@ -57,7 +57,7 @@ export default {
         },
       },
       iconToggle: {
-        stylePreset: 'inkInverse',
+        stylePreset: 'inkLight010',
       },
     },
     dockText: {

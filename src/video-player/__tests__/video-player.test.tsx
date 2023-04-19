@@ -2,13 +2,13 @@ import {renderWithTheme} from '../../test/test-utils';
 import {VideoPlayer} from '../video-player';
 import {VideoPlayerProps} from '../types';
 import {
-  DEFATULT_VIDEO_PLAYER_CONFIG,
+  DEFAULT_VIDEO_PLAYER_CONFIG,
   PLAYLISTS_VIDEO_PLAYER_CONFIG,
 } from './config';
 import {createTheme} from '../../theme';
 
 const DefaultVideoPlayerProps: VideoPlayerProps = {
-  config: DEFATULT_VIDEO_PLAYER_CONFIG,
+  config: DEFAULT_VIDEO_PLAYER_CONFIG,
 };
 
 const PlaylistVideoPlayerProps: VideoPlayerProps = {
@@ -37,18 +37,18 @@ describe('Video Player', () => {
     const {getByTestId} = renderWithTheme(VideoPlayer, DefaultVideoPlayerProps);
     expect(getByTestId('bc-video-player')).toHaveAttribute(
       'data-account',
-      DEFATULT_VIDEO_PLAYER_CONFIG['data-account'],
+      DEFAULT_VIDEO_PLAYER_CONFIG['data-account'],
     );
     expect(getByTestId('bc-video-player')).toHaveAttribute(
       'data-video-id',
-      DEFATULT_VIDEO_PLAYER_CONFIG['data-video-id'],
+      DEFAULT_VIDEO_PLAYER_CONFIG['data-video-id'],
     );
     expect(getByTestId('bc-video-player')).toHaveAttribute(
       'data-player',
-      DEFATULT_VIDEO_PLAYER_CONFIG['data-player'],
+      DEFAULT_VIDEO_PLAYER_CONFIG['data-player'],
     );
     expect(getByTestId('bc-video-player').getAttribute('id')).toContain(
-      DEFATULT_VIDEO_PLAYER_CONFIG['data-video-id'],
+      DEFAULT_VIDEO_PLAYER_CONFIG['data-video-id'],
     );
     expect(getByTestId('bc-video-player')).toMatchSnapshot();
   });
@@ -80,7 +80,7 @@ describe('Video Player', () => {
     const {asFragment} = renderWithTheme(
       VideoPlayer,
       {
-        config: DEFATULT_VIDEO_PLAYER_CONFIG,
+        config: DEFAULT_VIDEO_PLAYER_CONFIG,
         overrides: {
           playButton: {
             stylePreset: 'customPlaybutton',
@@ -96,7 +96,7 @@ describe('Video Player', () => {
     const {asFragment} = renderWithTheme(
       VideoPlayer,
       {
-        config: DEFATULT_VIDEO_PLAYER_CONFIG,
+        config: DEFAULT_VIDEO_PLAYER_CONFIG,
         overrides: {
           seekBar: {
             currentDuration: {
@@ -137,7 +137,7 @@ describe('Video Player', () => {
     const {asFragment} = renderWithTheme(
       VideoPlayer,
       {
-        config: DEFATULT_VIDEO_PLAYER_CONFIG,
+        config: DEFAULT_VIDEO_PLAYER_CONFIG,
         overrides: {
           paddingInline: 'space020',
           paddingBlock: 'space040',

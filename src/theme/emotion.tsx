@@ -18,7 +18,6 @@ export interface ThemeProviderProps {
   theme: UncompiledTheme | Theme | ((outerTheme: Theme) => Theme);
   children: React.ReactNode;
   exposeCssVariables?: boolean;
-  useThemeCache?: boolean;
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({

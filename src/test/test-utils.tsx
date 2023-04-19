@@ -136,7 +136,6 @@ export const renderToFragmentInBody = <T extends {}>(
   const fragment = asFragment();
   return fragment;
 };
-
 // The @floating-ui lib's inset styling is applied asynchronously. To make
 // assertions on the top / left attribute values, we need to flush the queue to
 // ensure that the element has been positioned before making assertions on
