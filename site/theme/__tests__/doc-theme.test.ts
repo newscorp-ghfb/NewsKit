@@ -1,48 +1,28 @@
-import {
-  compileTheme,
-  createTheme,
-  ThemeOverrides,
-  UncompiledTheme,
-} from 'newskit';
+import {compileTheme, UncompiledTheme} from 'newskit';
 import {
   docsThemeLight,
   docsThemeDark,
-  darkOverrides,
   foundationsThemeLight,
   foundationsThemeDark,
   patternsThemeLight,
   patternsThemeDark,
   accessibilityThemeLight,
   accessibilityThemeDark,
-  foundationsLightOverrides,
-  patternsDarkOverrides,
-  accessibilityLightOverrides,
-  foundationsDarkOverrides,
-  patternsLightOverrides,
-  accessibilityDarkOverrides,
 } from '../doc-theme';
 
-type Test = [string, UncompiledTheme, ThemeOverrides];
+type Test = [string, UncompiledTheme];
 
 describe('Docs theme', () => {
   ([
-    ['docsThemeLight', docsThemeLight, undefined],
-    ['docsThemeDark', docsThemeDark, darkOverrides],
-    ['foundationsThemeLight', foundationsThemeLight, foundationsLightOverrides],
-    ['foundationsThemeDark', foundationsThemeDark, foundationsDarkOverrides],
-    ['patternsThemeLight', patternsThemeLight, patternsLightOverrides],
-    ['patternsThemeDark', patternsThemeDark, patternsDarkOverrides],
-    [
-      'accessibilityThemeLight',
-      accessibilityThemeLight,
-      accessibilityLightOverrides,
-    ],
-    [
-      'accessibilityThemeDark',
-      accessibilityThemeDark,
-      accessibilityDarkOverrides,
-    ],
-  ] as Test[]).forEach(([themeName, theme, themeOverrides]) => {
+    ['docsThemeLight', docsThemeLight],
+    ['docsThemeDark', docsThemeDark],
+    ['foundationsThemeLight', foundationsThemeLight],
+    ['foundationsThemeDark', foundationsThemeDark],
+    ['patternsThemeLight', patternsThemeLight],
+    ['patternsThemeDark', patternsThemeDark],
+    ['accessibilityThemeLight', accessibilityThemeLight],
+    ['accessibilityThemeDark', accessibilityThemeDark],
+  ] as Test[]).forEach(([themeName, theme]) => {
     it(`should match expected snapshot for ${themeName}`, () => {
       expect(theme).toMatchSnapshot();
     });
@@ -52,16 +32,6 @@ describe('Docs theme', () => {
       compileTheme(theme, {errorLogger});
 
       expect(errorLogger).not.toHaveBeenCalled();
-    });
-
-    it(`should not override ${themeName} uneccessarily`, () => {
-      const warningLogger = jest.fn();
-      createTheme({
-        overrides: themeOverrides,
-        checkOverrides: true,
-        warningLogger,
-      });
-      expect(warningLogger).not.toHaveBeenCalled();
     });
   });
 });

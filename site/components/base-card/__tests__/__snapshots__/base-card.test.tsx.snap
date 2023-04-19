@@ -39,23 +39,23 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -63,26 +63,26 @@ exports[`BaseCard Renders default (vertical) non-interactive card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-5 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-6 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-6 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-6::before {
@@ -138,7 +138,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -153,7 +153,7 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
+  box-shadow: 0px 8px 16px 0px #00000014;
 }
 
 .emotion-1 {
@@ -196,35 +196,35 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #3358CC;
+  color: #3358cc;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #6454E3;
+  color: #6454e3;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-4 .nk-headline-heading svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-4:focus-visible:not(:disabled) .nk-card-headline {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -250,23 +250,23 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-5::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -274,26 +274,26 @@ exports[`BaseCard Renders horizontal interactive card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-6 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-7 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-7::before {
@@ -398,23 +398,23 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
 }
 
 .emotion-4 {
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-4::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-4::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -422,26 +422,26 @@ exports[`BaseCard Renders horizontal non-interactive card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-5 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-6 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-6 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-6::before {
@@ -497,7 +497,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   border-style: solid;
   border-radius: 12px;
   border-width: 1px;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -512,7 +512,7 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-0:hover:not(:disabled) {
-  box-shadow: 0 8px 16px 0 rgba(10,10,10,0.08);
+  box-shadow: 0px 8px 16px 0px #00000014;
 }
 
 .emotion-1 {
@@ -542,35 +542,35 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-4 .nk-headline-kicker {
-  color: #3358CC;
+  color: #3358cc;
 }
 
 .emotion-4:hover:not(:disabled) .nk-headline-kicker {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:active:not(:disabled) .nk-headline-kicker {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-4:visited:not(:disabled) .nk-headline-kicker {
-  color: #6454E3;
+  color: #6454e3;
 }
 
 .emotion-4 .nk-headline-heading {
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-4 .nk-headline-heading svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-4:focus-visible:not(:disabled) .nk-card-headline {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -596,23 +596,23 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 22.5px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-5::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -620,26 +620,26 @@ exports[`BaseCard Renders vertical interactive card 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-6 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-7 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-7 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-7::before {
