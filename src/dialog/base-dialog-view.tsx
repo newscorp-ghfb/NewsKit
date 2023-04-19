@@ -34,6 +34,7 @@ export const BaseDialogView = React.forwardRef<
       children,
       open,
       disableFocusTrap,
+      transitionInProgress,
       inline = false,
       ...props
     },
@@ -53,7 +54,7 @@ export const BaseDialogView = React.forwardRef<
     };
 
     const MoveFocusInsideWhenFocusTrapDisabled =
-      disableFocusTrap && open
+      disableFocusTrap && open && !transitionInProgress
         ? ({children: focusChildren}: {children: React.ReactNode}) => (
             <StyledMoveFocusInside closePosition={closePosition}>
               {focusChildren}

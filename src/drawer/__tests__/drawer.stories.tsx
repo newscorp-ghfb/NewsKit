@@ -36,7 +36,12 @@ const useActiveState = (
 type Placement = NonNullable<DrawerProps['placement']>;
 
 const DRAWER_HEADER = 'Drawer Title';
-const DRAWER_CONTENT = <TextBlock stylePreset="inkBase">Content</TextBlock>;
+const DRAWER_CONTENT = (
+  <div>
+    <TextBlock stylePreset="inkBase">Content</TextBlock>
+    <input placeholder="This input should be focused on open" />
+  </div>
+);
 
 export const StoryDrawerDefault = () => {
   const [placement, setPlacement] = React.useState<Placement>('left');
@@ -84,9 +89,7 @@ export const StoryInline = () => {
   const handleOnClick = (placementValue: Placement) => {
     setPlacement(placementValue);
     // add a timeout so the placement is updated before the animation starts
-    setTimeout(() => {
-      open();
-    });
+    setTimeout(open);
   };
 
   return (

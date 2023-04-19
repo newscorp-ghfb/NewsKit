@@ -1,4 +1,4 @@
-import {AutoFocusInside} from 'react-focus-lock';
+import {MoveFocusInside} from 'react-focus-lock';
 import {logicalProps} from '../utils/logical-properties';
 import {
   styled,
@@ -43,11 +43,11 @@ export const StyledDialogPanel = styled.div<BaseDialogViewOverridesAndPathProps>
   ${({$open}) => ({
     pointerEvents: $open ? undefined : 'none',
   })}
-  ${({closePosition}) => createCssGrid({closePosition})}  
+  ${({closePosition}) => createCssGrid({closePosition})}
   overflow: hidden;
 `;
 
-export const StyledMoveFocusInside = styled(AutoFocusInside)<
+export const StyledMoveFocusInside = styled(MoveFocusInside)<
   Pick<BaseDialogViewProps, 'closePosition'>
 >`
   height: 100%;

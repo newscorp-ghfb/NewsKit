@@ -166,7 +166,7 @@ transitionPresets.slideRight = {
   enterActive: {
     transform: 'translateX(0)',
     transitionProperty: 'transform',
-    transitionDuration: '{{motions.motionDuration020}}',
+    transitionDuration: '2000ms',
     transitionTimingFunction: '{{motions.motionTimingEaseIn}}',
   },
   enterDone: {
