@@ -426,9 +426,19 @@ export const StoryToastApi = () => {
       </ToastPositive>,
     );
   const notifyError = () =>
-    toast(
-      <ToastNegative data-testid="alert-error">Error message</ToastNegative>,
-    );
+    toast(({onClose}) => (
+      <ToastNegative data-testid="alert-error">
+        Error message{' '}
+        <button
+          type="button"
+          data-testid="close"
+          onClick={() => onClose()}
+          hidden
+        >
+          X
+        </button>{' '}
+      </ToastNegative>
+    ));
 
   return (
     <StorybookPage columns="1fr">
