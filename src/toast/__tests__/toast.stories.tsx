@@ -1,7 +1,7 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 import {styled, withDefaultProps} from '../../utils';
 import {
   IconFilledInfo,
