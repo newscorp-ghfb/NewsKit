@@ -806,7 +806,7 @@ jobs:
   test_e2e_comps:
     <<: *cypress_defaults
     executor: cypress
-    parallelism: 16
+    parallelism: 10
     steps:
       - checkout
       - attach_workspace:
