@@ -43,7 +43,7 @@ export const StyledDialogPanel = styled.div<BaseDialogViewOverridesAndPathProps>
   ${({$open}) => ({
     pointerEvents: $open ? undefined : 'none',
   })}
-  ${({closePosition}) => createCssGrid({closePosition})}
+  ${({closePosition}) => createCssGrid({closePosition})}  
   overflow: hidden;
 `;
 
