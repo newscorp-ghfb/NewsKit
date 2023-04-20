@@ -252,5 +252,19 @@ describe('Toast', () => {
       await waitForElementToBeRemoved(() => getByText(messageText));
       unmount();
     });
+
+    test('toast without close button', async () => {
+      const messageText = 'test message';
+      const action = () => toast(<div>{messageText}</div>);
+      const {getByTestId, getByText, unmount} = renderWithTheme(ToastExample, {
+        action,
+      });
+
+      const actionBtn = getByTestId('action');
+      fireEvent.click(actionBtn);
+      const toastMessage = getByText(messageText);
+      expect(toastMessage).toBeDefined();
+      unmount();
+    });
   });
 });
