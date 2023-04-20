@@ -7,7 +7,7 @@ jest.mock('react-transition-group', () => ({
   ...jest.requireActual('react-transition-group'),
 }));
 
-describe('Drawer transitions', () => {
+describe('Focus behaviour', () => {
   afterEach(() => {
     cleanup();
   });
@@ -34,7 +34,7 @@ describe('Drawer transitions', () => {
     );
   };
 
-  test('should focus on first interactive element', async () => {
+  test('should be enabled when the transition has completed', async () => {
     const {findByTestId, getByTestId} = renderWithThemeInBody(DrawerPage);
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
