@@ -426,18 +426,8 @@ export const StoryToastApi = () => {
       </ToastPositive>,
     );
   const notifyError = () =>
-    toast(({onClose}) => (
-      <ToastNegative data-testid="alert-error">
-        Error message{' '}
-        <button
-          type="button"
-          data-testid="close"
-          onClick={() => onClose()}
-          hidden
-        >
-          X
-        </button>{' '}
-      </ToastNegative>
+    toast(() => (
+      <ToastNegative data-testid="alert-error">Error message</ToastNegative>
     ));
 
   return (
