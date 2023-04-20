@@ -823,6 +823,7 @@ jobs:
   test_e2e_docs:
     <<: *cypress_defaults
     executor: cypress
+    parallelism: 10
     steps:
       - checkout
       - attach_workspace:
@@ -830,6 +831,7 @@ jobs:
       - run:
           name: Run Docs Site Functional Tests
           command: |
+            TESTS=$(circleci tests glob "cypress/e2e/**/*" | circleci tests split | paste -sd ',')
             yarn e2e:docs:ci
       - store_artifacts:
           path: cypress/screenshots
