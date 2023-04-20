@@ -107,7 +107,7 @@ executors:
   cypress:
     docker:
       - image: cypress/browsers:node16.13.0-chrome95-ff94
-    resource_class: xlarge
+    resource_class: medium
 
   java:
     docker:
@@ -806,6 +806,7 @@ jobs:
   test_e2e_comps:
     <<: *cypress_defaults
     executor: cypress
+    parallelism: 16
     steps:
       - checkout
       - attach_workspace:
@@ -823,7 +824,7 @@ jobs:
   test_e2e_docs:
     <<: *cypress_defaults
     executor: cypress
-    parallelism: 10
+    parallelism: 16
     steps:
       - checkout
       - attach_workspace:
