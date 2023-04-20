@@ -441,7 +441,9 @@ exports[`Drawer focus management when focus trap is disabled render drawer with 
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -2440,7 +2442,9 @@ exports[`Drawer renders default 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -2896,7 +2900,9 @@ exports[`Drawer renders drawer with overrides 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -3985,7 +3991,9 @@ exports[`Drawer renders with aria-ariaLabelledby attribute 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -4485,7 +4493,9 @@ exports[`Drawer renders with aria-describedby attribute 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -5013,7 +5023,9 @@ exports[`Drawer renders with left placement and right closePosition 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -5544,7 +5556,9 @@ exports[`Drawer renders with menu items aligned at the bottom 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -6075,7 +6089,9 @@ exports[`Drawer renders with menu items aligned at the right 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -6606,7 +6622,9 @@ exports[`Drawer renders with menu items aligned at the top 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -7001,7 +7019,9 @@ exports[`Drawer renders without close button 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -7483,7 +7503,9 @@ exports[`Drawer renders without header 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -7840,7 +7862,9 @@ exports[`Drawer renders without header and close 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -8253,7 +8277,9 @@ exports[`Drawer renders without overlay 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
@@ -8760,7 +8786,9 @@ exports[`Drawer toggle aria-hidden to content outside dialog 1`] = `
 }
 
 <div
+    aria-hidden="true"
     class="nk-layer-organizer"
+    data-aria-hidden="true"
   >
     <div
       class="nk-layer"
