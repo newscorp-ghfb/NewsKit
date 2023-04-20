@@ -1,5 +1,5 @@
 import React from 'react';
-import {fireEvent} from '@testing-library/react';
+import {fireEvent, waitForElementToBeRemoved} from '@testing-library/react';
 import hotToast from 'react-hot-toast';
 import {
   ToastProvider,
@@ -218,6 +218,38 @@ describe('Toast', () => {
       fireEvent.click(actionBtn);
       const toastMessage = getByText(messageText);
       expect(toastMessage).toBeDefined();
+      unmount();
+    });
+
+    test('toast can be removed from DOM via button', async () => {
+      const messageText = 'test message with button';
+      const action = () =>
+        toast(
+          ({onClose}) => (
+            <div>
+              {messageText}
+              <button
+                type="button"
+                data-testid="close"
+                onClick={() => onClose()}
+              >
+                close
+              </button>
+            </div>
+          ),
+          {autoHideDuration: 1500},
+        );
+      const {getByTestId, getByText, unmount} = renderWithTheme(ToastExample, {
+        action,
+      });
+
+      const actionBtn = getByTestId('action');
+      fireEvent.click(actionBtn);
+      const closeBtn = getByTestId('close');
+      expect(closeBtn).toBeDefined();
+      fireEvent.click(closeBtn);
+
+      await waitForElementToBeRemoved(() => getByText(messageText));
       unmount();
     });
   });
