@@ -6,6 +6,11 @@ const useRouter = jest.spyOn(require('next/router'), 'useRouter');
 
 useRouter.mockImplementation(() => ({pathname: '/'}));
 
+jest.mock('react-transition-group', () => ({
+  ...jest.requireActual('react-transition-group'),
+  config: {disabled: true},
+}));
+
 describe('Sidebar', () => {
   describe('renders correctly', () => {
     test('when open', () => {
