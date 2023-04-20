@@ -3,36 +3,40 @@
 exports[`Foundation Page Template renders with feature card 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  --color-inkBrand010: #6454E3;
-  --color-inkBrand020: #37239C;
-  --color-interfaceBrand010: #6454E3;
-  --color-interfaceBrand020: #37239C;
-  --color-interfaceBrand030: #6454E3;
-  --color-interfaceBrand040: #6454E3;
-  --color-interfaceBrand050: #37239C;
-  --color-illustrationPalette010: #EFF0FF;
-  --color-illustrationPalette020: #C0C2FC;
-  --color-illustrationPalette030: #A3A3FB;
-  --color-illustrationPalette040: #8883F6;
+  --color-inkBrand010: #6454e3;
+  --color-inkBrand020: #37239c;
+  --color-interfaceBrand010: #6454e3;
+  --color-interfaceBrand020: #37239c;
+  --color-illustrationPalette010: #eff0ff;
+  --color-illustrationPalette020: #c0c2fc;
+  --color-illustrationPalette030: #a3a3fb;
+  --color-illustrationPalette040: #8883f6;
   --color-illustrationPalette050: #6e61e4;
-  --color-illustrationPalette060: #6454E3;
-  --color-illustrationPalette070: #4C33CC;
-  --color-illustrationPalette080: #37239C;
+  --color-illustrationPalette060: #6454e3;
+  --color-illustrationPalette070: #4c33cc;
+  --color-illustrationPalette080: #37239c;
   --color-illustrationPalette090: #231668;
-  --color-illustrationPalette100: #0F0936;
-  --color-illustrationHighlight010: #8883F6;
-  --color-illustrationInterface020: #DFE0FE;
-  --color-illustrationInterface030: #C0C2FC;
-  --color-illustrationInterface040: #A3A3FB;
-  --color-illustrationInterface050: #8883F6;
+  --color-illustrationPalette100: #0f0936;
+  --color-illustrationHighlight010: #8883f6;
+  --color-illustrationBackground020: #f1f1f1;
+  --color-illustrationBorder010: #e2e2e2;
+  --color-illustrationBorder020: #c6c6c6;
+  --color-illustrationDisabled: #e2e2e2;
+  --color-illustrationInterface020: #dfe0fe;
+  --color-illustrationInterface030: #c0c2fc;
+  --color-illustrationInterface040: #a3a3fb;
+  --color-illustrationInterface050: #8883f6;
   --color-illustrationInterface060: #6e61e4;
-  --color-illustrationInterface070: #6454E3;
-  --color-illustrationInterface080: #4C33CC;
-  --color-illustrationInterface090: #37239C;
+  --color-illustrationInterface070: #6454e3;
+  --color-illustrationInterface080: #4c33cc;
+  --color-illustrationInterface090: #37239c;
   --color-illustrationInterface100: #231668;
-  --color-illustrationAnatomySubtle: #C0C2FC;
-  --color-illustrationAnatomyBorder010: #C0C2FC;
-  --color-illustrationAnatomyBorder020: #4C33CC;
+  --color-illustrationAnatomySubtle: #c0c2fc;
+  --color-illustrationAnatomyBorder010: #c0c2fc;
+  --color-illustrationAnatomyBorder020: #4c33cc;
+  --color-interfaceBrand050: #37239c;
+  --color-interfaceBrand040: #6454e3;
+  --color-interfaceBrand030: #6454e3;
 }
 
 .emotion-1 {
@@ -161,36 +165,40 @@ exports[`Foundation Page Template renders with feature card 1`] = `
 exports[`Foundation Page Template renders with mandatory props only 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  --color-inkBrand010: #6454E3;
-  --color-inkBrand020: #37239C;
-  --color-interfaceBrand010: #6454E3;
-  --color-interfaceBrand020: #37239C;
-  --color-interfaceBrand030: #6454E3;
-  --color-interfaceBrand040: #6454E3;
-  --color-interfaceBrand050: #37239C;
-  --color-illustrationPalette010: #EFF0FF;
-  --color-illustrationPalette020: #C0C2FC;
-  --color-illustrationPalette030: #A3A3FB;
-  --color-illustrationPalette040: #8883F6;
+  --color-inkBrand010: #6454e3;
+  --color-inkBrand020: #37239c;
+  --color-interfaceBrand010: #6454e3;
+  --color-interfaceBrand020: #37239c;
+  --color-illustrationPalette010: #eff0ff;
+  --color-illustrationPalette020: #c0c2fc;
+  --color-illustrationPalette030: #a3a3fb;
+  --color-illustrationPalette040: #8883f6;
   --color-illustrationPalette050: #6e61e4;
-  --color-illustrationPalette060: #6454E3;
-  --color-illustrationPalette070: #4C33CC;
-  --color-illustrationPalette080: #37239C;
+  --color-illustrationPalette060: #6454e3;
+  --color-illustrationPalette070: #4c33cc;
+  --color-illustrationPalette080: #37239c;
   --color-illustrationPalette090: #231668;
-  --color-illustrationPalette100: #0F0936;
-  --color-illustrationHighlight010: #8883F6;
-  --color-illustrationInterface020: #DFE0FE;
-  --color-illustrationInterface030: #C0C2FC;
-  --color-illustrationInterface040: #A3A3FB;
-  --color-illustrationInterface050: #8883F6;
+  --color-illustrationPalette100: #0f0936;
+  --color-illustrationHighlight010: #8883f6;
+  --color-illustrationBackground020: #f1f1f1;
+  --color-illustrationBorder010: #e2e2e2;
+  --color-illustrationBorder020: #c6c6c6;
+  --color-illustrationDisabled: #e2e2e2;
+  --color-illustrationInterface020: #dfe0fe;
+  --color-illustrationInterface030: #c0c2fc;
+  --color-illustrationInterface040: #a3a3fb;
+  --color-illustrationInterface050: #8883f6;
   --color-illustrationInterface060: #6e61e4;
-  --color-illustrationInterface070: #6454E3;
-  --color-illustrationInterface080: #4C33CC;
-  --color-illustrationInterface090: #37239C;
+  --color-illustrationInterface070: #6454e3;
+  --color-illustrationInterface080: #4c33cc;
+  --color-illustrationInterface090: #37239c;
   --color-illustrationInterface100: #231668;
-  --color-illustrationAnatomySubtle: #C0C2FC;
-  --color-illustrationAnatomyBorder010: #C0C2FC;
-  --color-illustrationAnatomyBorder020: #4C33CC;
+  --color-illustrationAnatomySubtle: #c0c2fc;
+  --color-illustrationAnatomyBorder010: #c0c2fc;
+  --color-illustrationAnatomyBorder020: #4c33cc;
+  --color-interfaceBrand050: #37239c;
+  --color-interfaceBrand040: #6454e3;
+  --color-interfaceBrand030: #6454e3;
 }
 
 .emotion-1 {

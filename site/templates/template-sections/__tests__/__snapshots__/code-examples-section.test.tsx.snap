@@ -163,10 +163,10 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding-inline: 0;
-  padding-block: 0;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
+  padding-inline: 0px;
+  padding-block: 0px;
   background-color: transparent;
 }
 
@@ -179,46 +179,46 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 @media screen and (max-width: 767px) {
   .emotion-8 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-8::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-8::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-8 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-8::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-8::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -227,11 +227,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-9 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 1023px) {
@@ -248,28 +248,28 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-11 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-11 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-11::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-11::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -323,55 +323,55 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-15 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-15 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 767px) {
   .emotion-15 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 28px;
     line-height: 31.5px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-15::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-15::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
   .emotion-15 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 32px;
     line-height: 36px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-15::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-15::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -382,20 +382,20 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-17 {
   margin: 0;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-17 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-17 {
-    font-family: "DM Sans",sans-serif;
+    font-family: DM Sans,sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -414,11 +414,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-17 {
-    font-family: "DM Sans",sans-serif;
+    font-family: DM Sans,sans-serif;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -449,11 +449,11 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
   height: 0;
   width: 100%;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 .emotion-19 svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-20 {
@@ -493,9 +493,9 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-23 {
   border: solid 1px;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-radius: 8px;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
 }
 
 @media screen and (max-width: 767px) {
@@ -512,55 +512,55 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-25 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-25 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-25 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-25::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-25::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-25 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-25::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-25::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -888,7 +888,7 @@ exports[`CodeExamplesSection renders section as expected 1`] = `
 
 .emotion-2 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;

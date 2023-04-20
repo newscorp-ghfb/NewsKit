@@ -18,28 +18,28 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-0::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-0::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -72,14 +72,14 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
 
 .emotion-3 {
   margin-right: 8px;
-  color: #2E3F54;
+  color: #2e3f54;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
 .emotion-3 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-3 svg,
@@ -91,8 +91,8 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #2E3F54;
-  fill: #2E3F54;
+  color: #2e3f54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -116,8 +116,8 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
 .emotion-4.emotion-4 {
   width: 8px;
   height: 8px;
-  color: #2E3F54;
-  fill: #2E3F54;
+  color: #2e3f54;
+  fill: #2e3f54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -138,17 +138,17 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
 
 .emotion-6 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-6 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-6::before {
@@ -272,28 +272,28 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
   </ul>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-0::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-0::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -309,34 +309,34 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-0::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-0::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
 .emotion-1 {
   display: inline-block;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -358,51 +358,51 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
 }
 
 .emotion-1 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-1:hover:not(:disabled) {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-1:hover:not(:disabled) svg {
-  fill: #254CAC;
+  fill: #254cac;
 }
 
 .emotion-1:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-1:active:not(:disabled) svg {
-  fill: #12387A;
+  fill: #14328d;
 }
 
 .emotion-1:visited:not(:disabled) {
-  color: #6454E3;
+  color: #6454e3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-1:visited:not(:disabled) svg {
-  fill: #6454E3;
+  fill: #6454e3;
 }
 
 .emotion-1:visited:hover:not(:disabled) {
-  color: #6454E3;
+  color: #6454e3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-1:visited:hover:not(:disabled) svg {
-  fill: #6454E3;
+  fill: #6454e3;
 }
 
 .emotion-1:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -442,7 +442,7 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
 
 .emotion-4 {
   background-color: rgba(27, 31, 35, 0.05);
-  color: #5A6A79;
+  color: #5a6a79;
   border-radius: 3px;
   font-size: 85%;
   margin: 0;
@@ -482,28 +482,28 @@ exports[`UnpackContent renders simple text 1`] = `
 <DocumentFragment>
   .emotion-0 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-0 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-0::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-0::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 

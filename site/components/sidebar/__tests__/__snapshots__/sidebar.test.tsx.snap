@@ -71,13 +71,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
   z-index: 3;
   padding-top: 16px;
   margin-top: 48px;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 0 1px 0 0;
+  border-color: #dee2e5;
+  border-width: 0px 1px 0px 0px;
   width: 276px;
   margin-top: 80px;
-  padding-top: 0;
+  padding-top: 0px;
   overflow: hidden;
 }
 
@@ -129,9 +129,9 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-7 {
   background-color: transparent;
-  color: #09111C;
+  color: #09111c;
   margin-top: 16px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .emotion-7.collapsed>li {
@@ -139,7 +139,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   max-height: 0px;
   -webkit-transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
   transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   visibility: hidden;
 }
 
@@ -154,11 +154,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-8 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-inline: 32px;
   margin-block: 4px;
@@ -166,13 +166,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-8::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-8::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -224,7 +224,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
 }
 
@@ -234,28 +234,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -286,8 +286,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-11 {
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -311,8 +311,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-11.emotion-11 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -333,7 +333,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-12 {
   box-sizing: border-box;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .emotion-13 {
@@ -376,7 +376,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   width: 100%;
   -webkit-box-pack: start;
@@ -392,12 +392,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-13:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #D5E0FC;
+  color: #254cac;
+  background-color: #d5e0fc;
 }
 
 .emotion-13:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -418,24 +418,24 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-14 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-14::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-14::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -480,7 +480,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   width: 100%;
   -webkit-box-pack: start;
@@ -496,12 +496,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-37:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #D5E0FC;
+  color: #254cac;
+  background-color: #d5e0fc;
 }
 
 .emotion-37:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -541,24 +541,24 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-41 {
   margin: 0;
   background-color: transparent;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-41::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-41::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -572,7 +572,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-469 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -3214,10 +3214,10 @@ exports[`Sidebar renders correctly when closed 1`] = `
   max-width: 100%;
   min-width: 100%;
   height: 100%;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 0 1px 0 0;
+  border-color: #dee2e5;
+  border-width: 0px 1px 0px 0px;
   margin-block-start: 48px;
 }
 
@@ -3383,8 +3383,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
 }
 
 @media screen {
@@ -3450,9 +3450,9 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-5 {
   background-color: transparent;
-  color: #09111C;
+  color: #09111c;
   margin-top: 16px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .emotion-5.collapsed>li {
@@ -3460,7 +3460,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   max-height: 0px;
   -webkit-transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
   transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   visibility: hidden;
 }
 
@@ -3475,11 +3475,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-6 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-inline: 32px;
   margin-block: 4px;
@@ -3487,13 +3487,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-6::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-6::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -3545,7 +3545,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
 }
 
@@ -3555,28 +3555,28 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -3607,8 +3607,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-9 {
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -3632,8 +3632,8 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3654,7 +3654,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .emotion-11 {
@@ -3697,7 +3697,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   width: 100%;
   -webkit-box-pack: start;
@@ -3713,12 +3713,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #D5E0FC;
+  color: #254cac;
+  background-color: #d5e0fc;
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3739,24 +3739,24 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-12 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-12::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-12::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -3801,7 +3801,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   width: 100%;
   -webkit-box-pack: start;
@@ -3817,12 +3817,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-35:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #D5E0FC;
+  color: #254cac;
+  background-color: #d5e0fc;
 }
 
 .emotion-35:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3862,24 +3862,24 @@ exports[`Sidebar renders correctly when closed 1`] = `
 .emotion-39 {
   margin: 0;
   background-color: transparent;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-39::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-39::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -3893,7 +3893,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-467 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -3954,23 +3954,23 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-474 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-474 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-475 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -4005,12 +4005,12 @@ exports[`Sidebar renders correctly when closed 1`] = `
 
 .emotion-479 {
   display: block;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -4018,18 +4018,18 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-479 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-479::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-479::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -4067,7 +4067,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
   position: absolute;
   top: 50%;
   left: calc((16px / 2) + 4px);
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 50%;
   opacity: 0;
   width: 1px;
@@ -4087,22 +4087,22 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-482:valid:hover:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.2;
 }
 
 .emotion-482:valid:hover:active:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.4;
 }
 
 .emotion-482:invalid:hover:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.2;
 }
 
 .emotion-482:invalid:hover:active:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.4;
 }
 
@@ -4140,21 +4140,21 @@ exports[`Sidebar renders correctly when closed 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #85939C;
+  background-color: #85939c;
   border-radius: 20rem;
   padding-inline: 4px;
 }
 
 .emotion-483:checked:not(:disabled) {
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 .emotion-483:disabled {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
 }
 
 .emotion-483:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -4169,11 +4169,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-483:checked:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4185,11 +4185,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-483:checked:focus-visible:hover:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -4222,11 +4222,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-485 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-485:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-485 svg {
@@ -4249,11 +4249,11 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-486 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-486:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-486 svg {
@@ -4264,7 +4264,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-487 {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   width: 16px;
   height: 16px;
@@ -4278,7 +4278,7 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-487 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -4308,17 +4308,17 @@ exports[`Sidebar renders correctly when closed 1`] = `
 }
 
 .emotion-489 {
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-489:disabled {
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-489::before {
@@ -7270,13 +7270,13 @@ exports[`Sidebar renders correctly when open 1`] = `
   z-index: 3;
   padding-top: 16px;
   margin-top: 48px;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 0 1px 0 0;
+  border-color: #dee2e5;
+  border-width: 0px 1px 0px 0px;
   width: 276px;
   margin-top: 80px;
-  padding-top: 0;
+  padding-top: 0px;
   overflow: hidden;
 }
 
@@ -7328,9 +7328,9 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-7 {
   background-color: transparent;
-  color: #09111C;
+  color: #09111c;
   margin-top: 16px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .emotion-7.collapsed>li {
@@ -7338,7 +7338,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   max-height: 0px;
   -webkit-transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
   transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   visibility: hidden;
 }
 
@@ -7353,11 +7353,11 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-8 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-inline: 32px;
   margin-block: 4px;
@@ -7365,13 +7365,13 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-8::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-8::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -7423,7 +7423,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
 }
 
@@ -7433,28 +7433,28 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-10 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-10:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-10:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-10:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-10:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-10:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -7485,8 +7485,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-11 {
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -7510,8 +7510,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-11.emotion-11 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7532,7 +7532,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-12 {
   box-sizing: border-box;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .emotion-13 {
@@ -7575,7 +7575,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   width: 100%;
   -webkit-box-pack: start;
@@ -7591,12 +7591,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-13:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #D5E0FC;
+  color: #254cac;
+  background-color: #d5e0fc;
 }
 
 .emotion-13:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7617,24 +7617,24 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-14 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-14::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-14::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -7679,7 +7679,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   width: 100%;
   -webkit-box-pack: start;
@@ -7695,12 +7695,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-37:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #D5E0FC;
+  color: #254cac;
+  background-color: #d5e0fc;
 }
 
 .emotion-37:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -7740,24 +7740,24 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-41 {
   margin: 0;
   background-color: transparent;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-41::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-41::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -7771,7 +7771,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-469 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -10416,10 +10416,10 @@ exports[`Sidebar renders correctly when open 1`] = `
   max-width: 100%;
   min-width: 100%;
   height: 100%;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 0 1px 0 0;
+  border-color: #dee2e5;
+  border-width: 0px 1px 0px 0px;
   margin-block-start: 48px;
 }
 
@@ -10585,8 +10585,8 @@ exports[`Sidebar renders correctly when open 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
 }
 
 @media screen {
@@ -10652,9 +10652,9 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-5 {
   background-color: transparent;
-  color: #09111C;
+  color: #09111c;
   margin-top: 16px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .emotion-5.collapsed>li {
@@ -10662,7 +10662,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   max-height: 0px;
   -webkit-transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
   transition: max-height 0.8s cubic-bezier(0, 1, 0, 1) -0.1s;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   visibility: hidden;
 }
 
@@ -10677,11 +10677,11 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-6 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 18px;
   line-height: 20.25px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-inline: 32px;
   margin-block: 4px;
@@ -10689,13 +10689,13 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-6::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-6::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -10747,7 +10747,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   appearance: none;
   background-color: transparent;
   border-radius: 50%;
-  color: #3358CC;
+  color: #3358cc;
   cursor: pointer;
 }
 
@@ -10757,28 +10757,28 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #ECF1FF;
+  background-color: #ecf1ff;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #D5E0FC;
+  background-color: #d5e0fc;
 }
 
 .emotion-8:disabled {
   background-color: transparent;
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-8:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-8:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -10809,8 +10809,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-9 {
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
   vertical-align: unset;
   display: inline-block;
 }
@@ -10834,8 +10834,8 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-9.emotion-9 {
   width: 24px;
   height: 24px;
-  color: #09111C;
-  fill: #09111C;
+  color: #09111c;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10856,7 +10856,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-10 {
   box-sizing: border-box;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .emotion-11 {
@@ -10899,7 +10899,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   width: 100%;
   -webkit-box-pack: start;
@@ -10915,12 +10915,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-11:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #D5E0FC;
+  color: #254cac;
+  background-color: #d5e0fc;
 }
 
 .emotion-11:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -10941,24 +10941,24 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-12 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-12::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-12::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -11003,7 +11003,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   border-color: transparent;
   border-width: 4px;
   border-style: solid;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   width: 100%;
   -webkit-box-pack: start;
@@ -11019,12 +11019,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-35:hover:not(:disabled) {
-  color: #254CAC;
-  background-color: #D5E0FC;
+  color: #254cac;
+  background-color: #d5e0fc;
 }
 
 .emotion-35:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -11064,24 +11064,24 @@ exports[`Sidebar renders correctly when open 1`] = `
 .emotion-39 {
   margin: 0;
   background-color: transparent;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-39::before {
   content: '';
-  margin-bottom: -0.2155em;
+  margin-bottom: -0.2035em;
   display: block;
 }
 
 .emotion-39::after {
   content: '';
-  margin-top: -0.2125em;
+  margin-top: -0.2215em;
   display: block;
 }
 
@@ -11095,7 +11095,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-467 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -11156,23 +11156,23 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-474 {
   margin: 0;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
 }
 
 .emotion-474 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-475 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -11207,12 +11207,12 @@ exports[`Sidebar renders correctly when open 1`] = `
 
 .emotion-479 {
   display: block;
-  color: #2E3F54;
-  font-family: "Poppins",sans-serif;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   margin-bottom: 16px;
   margin-right: 4px;
@@ -11220,18 +11220,18 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-479 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-479::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-479::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -11269,7 +11269,7 @@ exports[`Sidebar renders correctly when open 1`] = `
   position: absolute;
   top: 50%;
   left: calc((16px / 2) + 4px);
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 50%;
   opacity: 0;
   width: 1px;
@@ -11289,22 +11289,22 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-482:valid:hover:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.2;
 }
 
 .emotion-482:valid:hover:active:not(:disabled) {
-  background-color: #00601A;
+  background-color: #00601a;
   opacity: 0.4;
 }
 
 .emotion-482:invalid:hover:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.2;
 }
 
 .emotion-482:invalid:hover:active:not(:disabled) {
-  background-color: #A90000;
+  background-color: #a90000;
   opacity: 0.4;
 }
 
@@ -11342,21 +11342,21 @@ exports[`Sidebar renders correctly when open 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #85939C;
+  background-color: #85939c;
   border-radius: 20rem;
   padding-inline: 4px;
 }
 
 .emotion-483:checked:not(:disabled) {
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 .emotion-483:disabled {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
 }
 
 .emotion-483:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -11371,11 +11371,11 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-483:checked:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -11387,11 +11387,11 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-483:checked:focus-visible:hover:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  background-color: #3358CC;
+  background-color: #3358cc;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
@@ -11424,11 +11424,11 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-485 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-485:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-485 svg {
@@ -11451,11 +11451,11 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-486 svg {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .emotion-486:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-486 svg {
@@ -11466,7 +11466,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-487 {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   width: 16px;
   height: 16px;
@@ -11480,7 +11480,7 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-487 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -11510,17 +11510,17 @@ exports[`Sidebar renders correctly when open 1`] = `
 }
 
 .emotion-489 {
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-489:disabled {
-  color: #C0C7CC;
+  color: #a1acb4;
 }
 
 .emotion-489::before {

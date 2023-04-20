@@ -36,7 +36,7 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -66,8 +66,8 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -91,8 +91,8 @@ exports[`MonoKeyboard with multiple keys should render as expected 1`] = `
 .emotion-6.emotion-6 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -256,8 +256,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardArro
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -281,8 +281,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardArro
 .emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -370,8 +370,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardArro
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -395,8 +395,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardArro
 .emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -484,8 +484,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardArro
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -509,8 +509,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardArro
 .emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -598,8 +598,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardArro
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -623,8 +623,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardArro
 .emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -712,8 +712,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardBack
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -737,8 +737,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardBack
 .emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -826,8 +826,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardRetu
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -851,8 +851,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardRetu
 .emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -940,8 +940,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardTab 
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -965,8 +965,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedKeyboardTab 
 .emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1054,8 +1054,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedSpaceBar for
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1079,8 +1079,8 @@ exports[`MonoKeyboard with single key should render the IconOutlinedSpaceBar for
 .emotion-2.emotion-2 {
   width: 16px;
   height: 16px;
-  color: #3358CC;
-  fill: #3358CC;
+  color: #3358cc;
+  fill: #3358cc;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
