@@ -1,19 +1,11 @@
 import {cleanup, fireEvent, waitFor} from '@testing-library/react';
 import React, {useState} from 'react';
-import {CSSTransitionProps} from 'react-transition-group/CSSTransition';
-import {Drawer} from '..';
-import {renderWithThemeInBody} from '../../test/test-utils';
+import {Drawer} from '../..';
+import {renderWithThemeInBody} from '../../../test/test-utils';
 
-jest.mock('react-transition-group', () => {
-  const Actual = jest.requireActual('react-transition-group').CSSTransition;
-  const Mock = ({onEntered, ...rest}: CSSTransitionProps) => (
-    <Actual {...rest} />
-  );
-  return {
-    ...jest.requireActual('react-transition-group'),
-    CSSTransition: Mock,
-  };
-});
+jest.mock('react-transition-group', () => ({
+  ...jest.requireActual('react-transition-group'),
+}));
 
 describe('Drawer transitions', () => {
   afterEach(() => {
@@ -42,7 +34,7 @@ describe('Drawer transitions', () => {
     );
   };
 
-  test.only('should not focus on first interactive element', async () => {
+  test('should focus on first interactive element', async () => {
     const {findByTestId, getByTestId} = renderWithThemeInBody(DrawerPage);
     const toggleButton = getByTestId('toggle');
     toggleButton.focus();
@@ -53,9 +45,12 @@ describe('Drawer transitions', () => {
       expect(element).toHaveClass('nk-drawer-enter-done');
     });
 
-    // CSSTransition has been mocked so that onEntered is not called. This
-    // should mean that the FocusLock is not enabled.
+    // CSSTransition has _NOT_ been intercepted above so onEntered _IS_ called,
+    // this means that:
+    // - The component finishes transitioning.
+    // - FocusLock is enabled.
+    // - The interactive element is focused.
     const element = await findByTestId('interactive-element');
-    expect(element).not.toHaveFocus();
+    expect(element).toHaveFocus();
   });
 });
