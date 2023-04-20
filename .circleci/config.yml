@@ -831,7 +831,7 @@ jobs:
       - run:
           name: Run Docs Site Functional Tests
           command: |
-            export TESTS=$(circleci tests glob "cypress/e2e/**/*" | circleci tests split | paste -sd ',')
+            export TESTS=$(circleci tests glob "cypress/site/functional/**/*" | circleci tests split | paste -sd ',')
             yarn e2e:docs:ci
       - store_artifacts:
           path: cypress/screenshots
