@@ -59,7 +59,7 @@
     "e2e:comps:parallel": "cypress-parallel -s e2e:comps:run -t 4 -d cypress/components/**/*.cy.{js,jsx,ts,tsx}",
     "e2e:docs:run": "cypress run --config-file cypress.docs.config.ts",
     "e2e:docs:open": "cypress open --config-file cypress.docs.config.ts",
-    "e2e:docs:parallel": "yarn e2e:docs:run --spec $TESTS",
+    "e2e:docs:parallel": "yarn e2e:docs:run --spec $(circleci tests glob \"cypress/site/functional/**/*.cy.{js,jsx,ts,tsx}\" | circleci tests split | paste -sd ',')",
     "e2e:comps:ci": "start-server-and-test e2e:serve 8080 'TZ=UTC yarn e2e:comps:parallel'",
     "e2e:docs:ci": "yarn e2e:generate:a11ytests:web && start-server-and-test serve:docs 8081 'TZ=UTC && yarn e2e:docs:parallel'",
     "e2e:visual:docs:ci:percy": "start-server-and-test serve:docs 8081 'TZ=UTC percy exec -- cypress run --config-file cypress.docs.percy.config.ts'",
