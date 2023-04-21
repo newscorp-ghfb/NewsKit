@@ -1,0 +1,22 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "lint:code:base",
+          "lint:code",
+          "lint:markdown",
+          "lint:next",
+          "test:unit:run:local",
+          "test:unit:run",
+          "test:unit:dev",
+          "test:unit:ci",
+          "test:unit:comps",
+          "test:unit:site"
+        ]
+      }
+    }
+  },
+  "defaultBase": "main"
+}

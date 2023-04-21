@@ -20,20 +20,20 @@
     "dev:storybook": "yarn build:icons && start-storybook --ci -p 6006",
     "percy:run": "percy storybook http://localhost:6006 --config=percy.config.js",
     "fetch-external-storybook-fonts": "node ./.storybook/fetch-external-fonts.js",
-    "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
-    "lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",
+    "lint:code:base": "nx exec -- eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
+    "lint:code": "nx exec -- yarn _lint:code ",
     "lint:code:fix": "yarn lint:code --fix",
-    "lint:markdown": "markdownlint -c ./.markdownlint.json *.md **/*.md",
-    "lint:next": "next lint site",
+    "lint:markdown": "nx exec -- markdownlint -c ./.markdownlint.json *.md **/*.md",
+    "lint:next": "nx exec -- next lint site",
     "lint": "concurrently --names \"code,markdown,next\" \"yarn lint:code\" \"yarn lint:markdown\" \"yarn lint:next\"",
     "test": "yarn lint && yarn test:unit:dev",
-    "test:unit:run:local": "yarn test:unit:run --maxWorkers=50%",
-    "test:unit:run": "node --max-old-space-size=8192 --expose-gc ./node_modules/.bin/jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:run:local": "nx exec -- yarn test:unit:run --maxWorkers=50%",
+    "test:unit:run": "nx exec -- node --max-old-space-size=8192 --expose-gc ./node_modules/.bin/jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
     "test:unit:watch": "yarn test:unit:run:local --watch",
-    "test:unit:dev": "yarn build:icons && yarn test:unit:run:local --coveragePathIgnorePatterns=/src/icons/",
-    "test:unit:ci": "yarn test:unit:run --maxWorkers=4 --ci --reporters=default --reporters=jest-junit",
-    "test:unit:comps": "yarn test:unit:run:local --projects=src",
-    "test:unit:site": "yarn test:unit:run:local --projects=site",
+    "test:unit:dev": "nx exec -- yarn _test:unit:dev ",
+    "test:unit:ci": "nx exec -- yarn test:unit:run --maxWorkers=4 --ci --reporters=default --reporters=jest-junit",
+    "test:unit:comps": "nx exec -- yarn test:unit:run:local --projects=src",
+    "test:unit:site": "nx exec -- yarn test:unit:run:local --projects=site",
     "test:comp-statuses": "node scripts/component-status.js",
     "test:visual:comps:ci:percy": "STORYBOOK_IS_VISUAL_TEST=true start-server-and-test dev:storybook 6006 'percy:run'",
     "test:visual:comps:ci:percy:skip": "PERCY_PARTIAL_BUILD=1 STORYBOOK_SKIP_PERCY_CHECK=true start-server-and-test dev:storybook 6006 percy:run",
@@ -74,7 +74,9 @@
     "serve:docs": "http-server public -p 8081 -c300",
     "serve:storybook": "http-server dist-storybook -p 6006",
     "dependencies:check": "package-change-checker --install-cmd=\"yarn install --pure-lockfile\" HEAD@{1} HEAD",
-    "storybook": "start-storybook -c .storybook -p 6006 "
+    "storybook": "start-storybook -c .storybook -p 6006 ",
+    "_lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",
+    "_test:unit:dev": "yarn build:icons && yarn test:unit:run:local --coveragePathIgnorePatterns=/src/icons/"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
@@ -218,7 +220,8 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "yo": "^3.1.1",
-    "yup": "^0.32.9"
+    "yup": "^0.32.9",
+    "nx": "15.9.2"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.20.13",
@@ -277,5 +280,59 @@
       "yarn lint:code:base --fix",
       "git add"
     ]
+  },
+  "nx": {
+    "targets": {
+      "lint:code:base": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "lint:code": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "lint:markdown": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "lint:next": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:run:local": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:run": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:dev": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:ci": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:comps": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:site": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      }
+    }
   }
 }
