@@ -63,6 +63,7 @@ For detailed information on how to run the automated tests, please visit [Testin
 * Have a question? [Contact the NewsKit team via the contact form](https://newskit.co.uk/about/contact-us/).
 
 ## Styleguides
+
 ### Commit Messages
 
 Please follow this format for commit messages and PR titles:
