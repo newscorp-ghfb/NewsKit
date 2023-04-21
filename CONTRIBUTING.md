@@ -142,7 +142,7 @@ When you're finished with the changes, create a pull request, also known as a PR
 
 ### Merging a Pull Request and Releasing it
 
-Merging and releasing will need to be done by a member of the project team. Once your PR is merged, your contributions will be publicly visible, as NewsKit is open source. You will not be able to use the change in your team's project until a NewsKit release has taken place though. Let the project team know how soon you need the change; otherwise you may be waiting 1-14 days for a routine release to take place.
+Merging to `main` branch and releasing will need to be done by a member of the project team. Once your PR is merged, your contributions will be publicly visible, as NewsKit is open source. You will not be able to use the change in your team's project until a NewsKit release has taken place though. Let the project team know how soon you need the change; otherwise you may be waiting 1-14 days for a routine release to take place.
 
 ## The Project Team
 
