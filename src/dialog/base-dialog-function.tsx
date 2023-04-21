@@ -19,6 +19,7 @@ export const BaseDialogFunction = React.forwardRef<
       renderOverlay,
       hideOverlay,
       disableFocusTrap,
+      transitionInProgress,
     },
     ref,
   ) => {
@@ -92,7 +93,7 @@ export const BaseDialogFunction = React.forwardRef<
       <div ref={composeRefs(baseDialogFunctionRef, ref)}>
         {!hideOverlay && renderOverlay(handleOverlayClick)}
         <FocusLock
-          disabled={!open || disableFocusTrap}
+          disabled={!open || disableFocusTrap || transitionInProgress}
           onActivation={handleOnLockActivation}
           onDeactivation={handleOnLockDeactivation}
         >
