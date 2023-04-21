@@ -172,6 +172,6 @@ StoryToastE2Etest.parameters = {
 };
 
 export default {
-  title: 'Components/toast-e2e-hidden',
+  title: 'Components/toast-e2e',
   component: () => 'None',
 };
