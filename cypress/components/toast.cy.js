@@ -17,7 +17,7 @@ describe('Toast', () => {
 
   /* Suppressing this test as close button no longer visible in Storybook
    (to mirror realistic use as self-closing).
-   TODO reimplement this test as a unit test in a future PR */
+   TODO reimplement this test as a unit test in a future PR 
   it('toast is persisted when in focus', () => {
     // Find open button and open Toast
     cy.get('[data-testid="action-error"]').as('btn');
@@ -38,5 +38,5 @@ describe('Toast', () => {
     // When focus is moved out of the Toast it should disappear
     cy.get('@btn').focus();
     cy.get('@alert').should('not.exist');
-  });
+  }); */
 });
