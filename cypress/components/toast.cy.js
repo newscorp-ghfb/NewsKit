@@ -1,11 +1,6 @@
 describe('Toast', () => {
   beforeEach(() => {
     cy.visit('?name=toast-e2e-hidden');
-    cy.visit(
-      '?name=toast',
-      // TODO: reverse to original URL
-      // 'http://localhost:6006/iframe.html?id=newskit-light-toast--toast-api&args=&viewMode=story',
-    );
   });
 
   it('toast is removed after n seconds', () => {

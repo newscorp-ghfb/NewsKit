@@ -171,7 +171,7 @@ export const StoryToastE2Etest = () => {
     </StorybookPage>
   );
 };
-StoryToastE2Etest.storyName = 'toast-e2e-hidden';
+StoryToastE2Etest.storyName = 'toast-e2e-test';
 StoryToastE2Etest.parameters = {
   percy: {skip: true},
 };
