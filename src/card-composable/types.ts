@@ -18,7 +18,7 @@ export type ComponentWithOverrides = {
 
 export type CardComposableProps = StylableGridLayout;
 
-export type CardMediaProps = {
+export type CardMediaProps = GridLayoutProps & {
   media?: ImageProps;
   children?: ReactNode;
 };

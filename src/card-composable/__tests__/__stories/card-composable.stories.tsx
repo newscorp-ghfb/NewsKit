@@ -19,7 +19,7 @@ import {StorybookCase, StorybookPage} from '../../../test/storybook-comps';
 import {Button} from '../../../button';
 import {UnorderedList} from '../../../unordered-list';
 import {TextBlock, TextBlockProps} from '../../../text-block';
-import {GridLayout} from '../../../grid-layout';
+import {GridLayout, GridLayoutItem} from '../../../grid-layout';
 import {Divider} from '../../../divider';
 import {Block} from '../../../block';
 import {
@@ -35,7 +35,6 @@ import {LinkInline} from '../../../link';
 import {Tag} from '../../../tag';
 import {VideoPlayer} from '../../../video-player';
 import {DEFATULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/config';
-import {styled} from '../../../utils';
 
 const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
   <Headline
@@ -177,16 +176,6 @@ const areasGap = 'space050';
 const contentGap = 'space040';
 
 // The Sun --- starts here
-const StyledCardMedia = styled(CardMedia)`
-  position: relative;
-`;
-
-const StyledFlag = styled(Flag)<{leftOffset?: boolean}>`
-  position: absolute;
-  bottom: 0;
-  left: ${({leftOffset}) => leftOffset && '16px'};
-`;
-
 const IconFilledVideoCam = toNewsKitIcon(FilledVideocam);
 const IconFilledShare = toNewsKitIcon(FilledShare);
 
@@ -200,6 +189,7 @@ const map = {
   medium: '640px',
   large: '920px',
 };
+// The Sun --- ends here
 
 const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
   size = 'medium',
@@ -213,24 +203,31 @@ const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
       borderRight: '1px solid #eaeeef',
     }}
   >
-    <StyledCardMedia data-testid="card-media">
-      <Image
-        src={
-          size === 'small'
-            ? 'https://storybook.newskit.co.uk/placeholder-1x1.png'
-            : 'https://storybook.newskit.co.uk/placeholder-3x2.png'
-        }
-        alt="card-media-image"
-        loadingAspectRatio={size === 'small' ? '1:1' : '3:2'}
-      />
-      <StyledFlag
-        size="medium"
-        leftOffset
-        overrides={{typographyPreset: 'editorialLabel020'}}
+    <CardMedia columns="1fr" rows="1fr">
+      <GridLayoutItem column="1 / 2" row="1 / 2">
+        <Image
+          src={
+            size === 'small'
+              ? 'https://storybook.newskit.co.uk/placeholder-1x1.png'
+              : 'https://storybook.newskit.co.uk/placeholder-3x2.png'
+          }
+          alt="card-media-image"
+          loadingAspectRatio={size === 'small' ? '1:1' : '3:2'}
+        />
+      </GridLayoutItem>
+      <GridLayoutItem
+        column="1 / 2"
+        row="1 / 2"
+        alignSelf="end"
+        justifySelf="start"
+        style={{zIndex: 2}}
+        marginInlineStart="space040"
       >
-        EXCLUSIVE
-      </StyledFlag>
-    </StyledCardMedia>
+        <Flag overrides={{typographyPreset: 'editorialLabel020'}}>
+          EXCLUSIVE
+        </Flag>
+      </GridLayoutItem>
+    </CardMedia>
     <CardContent
       data-testid="card-content"
       rowGap="space045"
@@ -312,21 +309,31 @@ const CardHorizontalTheSun: React.FC<MediaContextActionProps> = ({
     rowGap="space045"
     areas={area}
   >
-    <StyledCardMedia data-testid="card-media">
-      <Image
-        src="https://storybook.newskit.co.uk/placeholder-3x2.png"
-        alt="card-media-image"
-        loadingAspectRatio="3:2"
-      />
-      <StyledFlag
-        size="small"
-        overrides={{
-          typographyPreset: 'editorialLabel010',
-        }}
+    <CardMedia columns="1fr" rows="1fr">
+      <GridLayoutItem column="1 / 2" row="1 / 2">
+        <Image
+          src="https://storybook.newskit.co.uk/placeholder-3x2.png"
+          alt="card-media-image"
+          loadingAspectRatio="3:2"
+        />
+      </GridLayoutItem>
+      <GridLayoutItem
+        column="1 / 2"
+        row="1 / 2"
+        alignSelf="end"
+        justifySelf="start"
+        style={{zIndex: 2}}
       >
-        EXCLUSIVE
-      </StyledFlag>
-    </StyledCardMedia>
+        <Flag
+          size="small"
+          overrides={{
+            typographyPreset: 'editorialLabel010',
+          }}
+        >
+          EXCLUSIVE
+        </Flag>
+      </GridLayoutItem>
+    </CardMedia>
     <CardContent
       rowGap="space030"
       data-testid="card-content"
@@ -389,7 +396,6 @@ const CardHorizontalTheSun: React.FC<MediaContextActionProps> = ({
     </CardActions>
   </CardComposable>
 );
-// The Sun --- ends here
 
 export const StoryDefault = () => (
   <StorybookPage>
