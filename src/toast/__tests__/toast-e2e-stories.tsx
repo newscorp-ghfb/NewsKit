@@ -1,7 +1,7 @@
 import React from 'react';
 import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 import {styled, withDefaultProps} from '../../utils';
-import {IconFilledError} from '../../icons';
+import {IconFilledError, IconFilledCheckCircle} from '../../icons';
 import {toast, ToastProvider, Toast} from '..';
 import {Button} from '../../button';
 
@@ -9,6 +9,17 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
 `;
+
+const ToastPositive = withDefaultProps(Toast, {
+  icon: (
+    <IconFilledCheckCircle
+      overrides={{
+        size: 'iconSize020',
+      }}
+    />
+  ),
+  overrides: {stylePreset: 'toastPositive'},
+});
 
 const ToastNegative = withDefaultProps(Toast, {
   icon: (
@@ -21,7 +32,69 @@ const ToastNegative = withDefaultProps(Toast, {
   overrides: {stylePreset: 'toastNegative'},
 });
 
-export const StoryToaste2eApi = () => {
+export const StoryToastApi = () => {
+  const ToastWithState = () => {
+    const [state, setState] = React.useState(false);
+    const onClick = () => setState(true);
+    return (
+      <Toast
+        role="alert"
+        overrides={{
+          stylePreset: !state ? 'toastNotice' : 'toastPositive',
+        }}
+        icon={
+          <IconFilledCheckCircle
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        actions={
+          !state
+            ? () => (
+                <Button
+                  size="small"
+                  overrides={{stylePreset: 'buttonMinimalInverse'}}
+                  onClick={onClick}
+                >
+                  undo
+                </Button>
+              )
+            : undefined
+        }
+      >
+        {!state ? 'Your account has been updated' : 'Action reversed'}
+      </Toast>
+    );
+  };
+
+  const notifyWithToggle = () =>
+    toast(<ToastWithState />, {autoHideDuration: 5000});
+
+  const notifyNeutral = () =>
+    toast(
+      <Toast
+        role="alert"
+        icon={
+          <IconFilledCheckCircle
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+      >
+        Your account has been updated
+      </Toast>,
+      {
+        autoHideDuration: 10000,
+      },
+    );
+  const notifySuccess = () =>
+    toast(
+      <ToastPositive data-testid="alert-success">
+        Password successfully updated
+      </ToastPositive>,
+    );
   const notifyError = () =>
     toast(({onClose}) => (
       <ToastNegative data-testid="alert-error">
@@ -42,6 +115,29 @@ export const StoryToaste2eApi = () => {
       <StorybookCase>
         <Button
           type="button"
+          onClick={notifyNeutral}
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+            marginInlineEnd: 'space080',
+          }}
+        >
+          Neutral
+        </Button>
+        <Button
+          type="button"
+          data-testid="action-success"
+          onClick={notifySuccess}
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+            marginInlineEnd: 'space080',
+          }}
+        >
+          Success
+        </Button>
+        <Button
+          type="button"
           data-testid="action-error"
           onClick={notifyError}
           overrides={{
@@ -51,6 +147,17 @@ export const StoryToaste2eApi = () => {
           }}
         >
           Error with duration
+        </Button>
+        <Button
+          onClick={notifyWithToggle}
+          type="button"
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+            marginInlineEnd: 'space080',
+          }}
+        >
+          Action
         </Button>
         <Container>
           <ToastProvider
@@ -64,12 +171,12 @@ export const StoryToaste2eApi = () => {
     </StorybookPage>
   );
 };
-StoryToaste2eApi.storyName = 'Toast api examples';
-StoryToaste2eApi.parameters = {
+StoryToastApi.storyName = 'toast e2e hidden';
+StoryToastApi.parameters = {
   percy: {skip: true},
 };
 
 export default {
-  title: 'Components/toast-e2e-hidden',
+  title: 'Components/toast e2e hidden',
   component: () => 'None',
 };
