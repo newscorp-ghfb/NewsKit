@@ -99,12 +99,7 @@ export const StoryToastE2Etest = () => {
     toast(({onClose}) => (
       <ToastNegative data-testid="alert-error">
         Error message{' '}
-        <button
-          type="button"
-          data-testid="close"
-          onClick={() => onClose()}
-          hidden
-        >
+        <button type="button" data-testid="close" onClick={() => onClose()}>
           X
         </button>{' '}
       </ToastNegative>
