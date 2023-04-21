@@ -1,5 +1,6 @@
 describe('Toast', () => {
   beforeEach(() => {
+    cy.visit('?name=toast e2e hidden');
     cy.visit(
       '?name=toast',
       // TODO: reverse to original URL
