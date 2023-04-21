@@ -39,7 +39,7 @@ to james.spencer@news.co.uk.
 
 > If you want to ask a question, we assume that you have read the available [Documentation](https://www.newskit.co.uk/).
 
-Before you ask a question, it is best to search for existing [Issues](https://github.com/newscorp-ghfb/NewsKit/issues) and [Discussions](https://github.com/newscorp-ghfb/NewsKit/discussions) that might help you. In case you have found a suitable ticket and still need clarification, you can write your question in it. It is also advisable to search News UK Slack (eg #newskit channel) to see if the issue has be raised before. If a question does evolve, and manifest as a bug/feature request, it can be moved to issues.
+Before you ask a question, it is best to search for existing [Issues](https://github.com/newscorp-ghfb/NewsKit/issues) and [Discussions](https://github.com/newscorp-ghfb/NewsKit/discussions) that might help you. In case you have found a suitable ticket and still need clarification, you can write your question in it. It is also advisable to search News Corp Slack (eg #newskit channel) to see if the issue has be raised before. If a question does evolve, and manifest as a bug/feature request, it can be moved to issues.
 
 If you then still feel the need to ask a question and need clarification, we recommend you:
 
@@ -71,14 +71,16 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 * Make sure that you are using the latest version.
 * Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the [documentation](https://www.newskit.co.uk/). If you are looking for support, you might want to check [this section](#i-have-a-question)).
 * To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/newscorp-ghfb/NewsKit/issues?q=label%3Abug).
-* Also make sure to search News UK Slack (eg #newskit channel) to see if other teams have reported similar issues
+* Also make sure to search News Corp Slack (eg #newskit channel) to see if other teams have reported similar issues
 * Collect information about the bug:
 * Console errors or stack trace
 * OS, Platform and Version (Windows, Linux, macOS, x86, ARM) you are using
 * Type and version of the browser
 * Possibly your input and the output
 * Can you reliably reproduce the issue? Does it affect all browsers?
-* If you can provide a link to your site, or a code sandbox, to demonstrate the issue, then that is a big help. Here is a [newskit template for code sandbox](https://codesandbox.io/s/newskit-v6-template-v4cov2).
+* If you can provide a link to your site, or a code sandbox, to demonstrate the issue, then that is a big help.
+* If you are using NewsKit 7, you can use this [NewsKit 7 template for code sandbox](https://codesandbox.io/s/newskit-v7-template-w90oq3)
+* If you are using NewsKit 6, you can use this [NewsKit 6 template for code sandbox](https://codesandbox.io/s/newskit-v6-template-v4cov2)
 
 #### How to Submit a Good Bug Report
 
@@ -94,13 +96,13 @@ We use GitHub issues to track bugs and errors. If you run into an issue with the
 
 Once it's filed:
 
-* The project team will triage and label the issue accordingly.
-* A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
-* If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags, and the issue will be analysed, estimated and then implemented.
+* By default, issues will have the `triage` which alerts the project team that there is a new issue that needs analysis.
+* A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and label the issue as `needs additional info`. Bugs marked `needs additional info` will not be addressed until they are reproduced.
+* If the issue is accepted, the `triage` label will be removed and the issues will be prioritised accordingly.
 
 ### Your First Code Contribution
 
-* Look out for issues labelled "Good First Issue" as these have been pre-approved by the project team and represent an opportunity to increase your contribution experience.
+* Look out for issues labelled `good first issue` as these have been pre-approved by the project team and represent an opportunity to increase your contribution experience.
 * Read through the `Pre-requisites`, `Getting Started` and `Styleguides` sections in the [README](/README.md).
 
 ### Improving The Documentation
