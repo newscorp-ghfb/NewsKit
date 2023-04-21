@@ -14,12 +14,12 @@ And if you like the project, but just don't have time to contribute, that's fine
 ## Table of Contents
 
 * [Code of Conduct](#code-of-conduct)
-* [I Have a Question](#i-have-a-question)
-* [I Want To Contribute](#i-want-to-contribute)
-* [Reporting Bugs](#reporting-bugs)
+* [I Have a Question or Enhancement Idea](#i-have-a-question-or-enhancement-idea)
 * [Suggesting Enhancements](#suggesting-enhancements)
+* [Reporting Bugs](#reporting-bugs)
 * [Your First Code Contribution](#your-first-code-contribution)
 * [Improving The Documentation](#improving-the-documentation)
+* [Submitting a Contribution](#submitting-a-contribution)
 * [The Project Team](#the-project-team)
 
 ## Code of Conduct
@@ -29,27 +29,38 @@ This project and everyone participating in it is governed by the
 By participating, you are expected to uphold this code. Please report unacceptable behaviour
 to james.spencer@news.co.uk.
 
-## I Have a Question
-
-> If you want to ask a question, we assume that you have read the available [Documentation](https://www.newskit.co.uk/).
-
-Before you ask a question, it is best to search for existing [Issues](https://github.com/newscorp-ghfb/NewsKit/issues) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
-
-If you then still feel the need to ask a question and need clarification, we recommend the following:
-
-* Open an [Issue](https://github.com/newscorp-ghfb/NewsKit/issues/new/choose) if it is clear what the issue is; otherwise create a new [Discussion](https://github.com/newscorp-ghfb/NewsKit/discussions).
-* Provide as much context as you can about what you're running into.
-* Provid the name of your team/title.
-* Provide the browser versions used.
-* If you can provide a link to your site, or a code sandbox, to demonstrate the issue, then that is a big help. Here is a [newskit template for code sandbox](https://codesandbox.io/s/newskit-v6-template-v4cov2).
-
-We will then investigate the issue and get back to you.
-
-## I Want To Contribute
-
 > ### Legal Notice
 >
 > When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
+
+## Types of Contribution
+
+### I Have a Question or Enhancement Idea
+
+> If you want to ask a question, we assume that you have read the available [Documentation](https://www.newskit.co.uk/).
+
+Before you ask a question, it is best to search for existing [Issues](https://github.com/newscorp-ghfb/NewsKit/issues) and [Discussions](https://github.com/newscorp-ghfb/NewsKit/discussions) that might help you. In case you have found a suitable ticket and still need clarification, you can write your question in it. It is also advisable to search News UK Slack (eg #newskit channel) to see if the issue has be raised before. If a question does evolve, and manifest as a bug/feature request, it can be moved to issues.
+
+If you then still feel the need to ask a question and need clarification, we recommend you:
+
+* Go to the [Discussion page](https://github.com/newscorp-ghfb/NewsKit/discussions/new/choose)
+* Select `General` for general questions or `Ideas` for enhancement ideas (but for Support, it is better to open an issue, see [Reporting Bugs](#reporting-bugs))
+* Provide as much context as you can.
+* Provide the name of your team/brand.
+
+#### Suggesting Enhancements
+
+Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, adding the component to your team's library might be better.
+
+From the [Discussion](https://github.com/newscorp-ghfb/NewsKit/discussions/new/choose) page, click Getting Started against `Ideas`.
+
+* Use a **clear and descriptive title** for the issue to identify the suggestion.
+* Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
+* **Describe the current behavior** and **explain which behavior you expected to see instead** and why. At this point you can also tell which alternatives do not work for you.
+* You may want to **include screenshots/recordings/animated GIFs** which help you demonstrate the steps or point out the part which the suggestion is related to. You can use [this tool](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
+* **Explain why this enhancement would be useful** to most CONTRIBUTING.md users. You may also want to point out the other projects that solved it better and which could serve as inspiration.
+
+We will then investigate the issue and get back to you.
 
 ### Reporting Bugs
 
@@ -60,13 +71,14 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 * Make sure that you are using the latest version.
 * Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the [documentation](https://www.newskit.co.uk/). If you are looking for support, you might want to check [this section](#i-have-a-question)).
 * To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/newscorp-ghfb/NewsKit/issues?q=label%3Abug).
-* Also make sure to search News UK Slack to see if other teams have reported similar issues
+* Also make sure to search News UK Slack (eg #newskit channel) to see if other teams have reported similar issues
 * Collect information about the bug:
 * Console errors or stack trace
 * OS, Platform and Version (Windows, Linux, macOS, x86, ARM) you are using
 * Type and version of the browser
 * Possibly your input and the output
 * Can you reliably reproduce the issue? Does it affect all browsers?
+* If you can provide a link to your site, or a code sandbox, to demonstrate the issue, then that is a big help. Here is a [newskit template for code sandbox](https://codesandbox.io/s/newskit-v6-template-v4cov2).
 
 #### How to Submit a Good Bug Report
 
@@ -78,33 +90,13 @@ We use GitHub issues to track bugs and errors. If you run into an issue with the
 * Explain the behavior you would expect and the actual behavior.
 * Please provide as much context as possible and describe the *reproduction steps* that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
 * Provide the information you collected in the previous section.
+* Provide the name of your team/brand.
 
 Once it's filed:
 
 * The project team will triage and label the issue accordingly.
 * A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
 * If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags, and the issue will be analysed, estimated and then implemented.
-
-### Suggesting Enhancements
-
-This section guides you through submitting an enhancement suggestion for CONTRIBUTING.md, **including completely new features and minor improvements to existing functionality**. Following these guidelines will help maintainers and the community to understand your suggestion and find related suggestions.
-
-#### Before Submitting an Enhancement
-
-* Make sure that you are using the latest version.
-* Read the [documentation](https://www.newskit.co.uk/) carefully and find out if the functionality is already covered, maybe by an individual configuration.
-* Perform a [search](/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
-* Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, adding the component to your team's library might be better.
-
-#### How to Submit a Good Enhancement Suggestion
-
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/newscorp-ghfb/NewsKit/issues).
-
-* Use a **clear and descriptive title** for the issue to identify the suggestion.
-* Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
-* **Describe the current behavior** and **explain which behavior you expected to see instead** and why. At this point you can also tell which alternatives do not work for you.
-* You may want to **include screenshots/recordings/animated GIFs** which help you demonstrate the steps or point out the part which the suggestion is related to. You can use [this tool](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
-* **Explain why this enhancement would be useful** to most CONTRIBUTING.md users. You may also want to point out the other projects that solved it better and which could serve as inspiration.
 
 ### Your First Code Contribution
 
@@ -114,6 +106,8 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/newsco
 ### Improving The Documentation
 
 * There is always scope for adding team-specific examples to [Storybook](https://storybook.newskit.co.uk/) or the Next.js-based [docs site](https://www.newskit.co.uk/), to help your team members see how to apply NewsKit in your projects. Remember that the Storybook Theme Dropdown can be used to better preview how the components will look on your site.
+
+## Submitting a Contribution
 
 ### Opening a Pull Request
 
