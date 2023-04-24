@@ -1,5 +1,6 @@
 import {Breakpoints, BreakpointKeys, Theme} from '../theme';
 import {hasOwnProperty} from './has-own-property';
+import {isValidCSSSizeUnit} from './style/utils';
 
 interface ThemeProp {
   theme: Theme;
@@ -50,4 +51,19 @@ export const isResponsive = (
 ): prop is Record<keyof Breakpoints, unknown> =>
   !!prop &&
   typeof prop === 'object' &&
-  Object.keys(breakpoints).some(bp => prop && hasOwnProperty(prop, bp));
+  (Object.keys(breakpoints).some(bp => prop && hasOwnProperty(prop, bp)) ||
+    Object.keys(prop).some(p => isValidCSSSizeUnit(p)));
+
+export const getContainerQuery = (
+  minWidth: string,
+  maxWidth?: string,
+): string => {
+  const queries = [];
+  if (minWidth) {
+    queries.push(`(min-width: ${minWidth})`);
+  }
+  if (maxWidth) {
+    queries.push(`(max-width: ${maxWidth})`);
+  }
+  return `@container ${queries.join(' AND ')}`;
+};

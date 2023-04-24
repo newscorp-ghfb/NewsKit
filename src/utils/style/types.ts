@@ -6,4 +6,4 @@ export type MQPartial<T> = Partial<{
   xl: T;
 }>;
 
-export type MQ<T> = T | MQPartial<T>;
+export type MQ<T> = T | MQPartial<T> | {[minWidth: string]: T};

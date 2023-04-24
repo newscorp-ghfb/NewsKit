@@ -58,7 +58,38 @@ describe('getXFromTheme', () => {
       '@media screen and (min-width: 768px)': {width: '12px'},
     });
   });
-
+  test('getXFromTheme with CQ value', () => {
+    const result = getXFromTheme('sizing')('width', {
+      '300px': 'sizing010',
+      '500px': 'sizing020',
+      '800px': 'sizing030',
+    })({theme});
+    expect(result).toEqual({
+      '@container (min-width: 300px)': {width: '4px'},
+      '@container (min-width: 500px)': {width: '8px'},
+      '@container (min-width: 800px)': {width: '12px'},
+    });
+  });
+  test('getXFromTheme with CQ & MQ value', () => {
+    const result = getXFromTheme('sizing')('width', {
+      xs: 'sizing010',
+      sm: 'sizing020',
+      '300px': 'sizing010',
+      '500px': 'sizing020',
+      '800px': 'sizing030',
+    })({theme});
+    expect(result).toEqual({
+      '@container (min-width: 300px)': {width: '4px'},
+      '@container (min-width: 500px)': {width: '8px'},
+      '@container (min-width: 800px)': {width: '12px'},
+      '@media screen and (max-width: 479px)': {
+        width: '4px',
+      },
+      '@media screen and (min-width: 480px)': {
+        width: '8px',
+      },
+    });
+  });
   test('getXFromTheme with non MQ and callback', () => {
     const cb = (value: string) => ({padding: `${value} 0`, width: value});
     const result = getXFromTheme('sizing')(cb, 'sizing050')({theme});

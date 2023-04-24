@@ -32,6 +32,12 @@ export const CSSUnits = [
   'vmin',
   'vmax',
   '%',
+  'cqw',
+  'cqh',
+  'cqi',
+  'cqb',
+  'cqmin',
+  'cqmax',
 ];
 
 export const CSSColorNames = [
@@ -217,6 +223,11 @@ export const isValidUnit = (themeKey: string, value: any) => {
     !Number.isNaN(value) &&
     !Array.isArray(value)
   );
+};
+
+export const isValidCSSSizeUnit = (value: string) => {
+  const regex = new RegExp(`^\\d+(\\.\\d+)?(${CSSUnits.join('|')})$`);
+  return regex.test(value);
 };
 
 export const isArrayLikeObject = (value: string | object) =>
