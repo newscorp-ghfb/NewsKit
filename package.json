@@ -302,6 +302,13 @@
         },
         "configurations": {}
       },
+      "lint": {
+        "executor": "@nrwl/linter:eslint",
+        "outputs": ["{options.outputFile}"],
+        "options": {
+          "lintFilePatterns": ["./src/**/*.{ts,tsx,js,jsx}"]
+        }
+      },
       "lint:code:base": {
         "outputs": [
           "{projectRoot}/dist"
