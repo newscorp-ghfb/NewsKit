@@ -34,6 +34,7 @@ export interface BaseDialogViewProps extends HTMLAttributes<HTMLDivElement> {
   ariaLabelledby?: string;
   overrides?: BaseDialogOverridesProps;
   disableFocusTrap?: boolean;
+  transitionInProgress?: boolean;
   open?: boolean;
   inline?: boolean;
 }
@@ -45,6 +46,7 @@ export interface BaseDialogFunctionProps {
   onDismiss: () => void;
   restoreFocusTo?: HTMLElement;
   disableFocusTrap?: boolean;
+  transitionInProgress?: boolean;
   hideOverlay?: boolean;
   inline?: boolean;
 }

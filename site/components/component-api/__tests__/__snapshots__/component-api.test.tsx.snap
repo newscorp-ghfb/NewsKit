@@ -54,56 +54,56 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
   display: inline-block;
 }
 
 .emotion-3 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-3 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-3::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-3::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-3::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-3::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -120,14 +120,14 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-6 {
   border-style: solid;
-  border-color: #C0C7CC;
-  border-width: 0 0 1px 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  border-color: #c0c7cc;
+  border-width: 0px 0px 1px 0px;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -139,14 +139,14 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-7 {
   border-style: solid;
-  border-color: #C0C7CC;
-  border-width: 0 0 1px 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  border-color: #c0c7cc;
+  border-width: 0px 0px 1px 0px;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -158,14 +158,14 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-10 {
   border-style: solid;
-  border-color: #C0C7CC;
-  border-width: 0 0 1px 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  border-color: #c0c7cc;
+  border-width: 0px 0px 1px 0px;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -177,25 +177,25 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 
 .emotion-11 {
   border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 0 0 1px 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  border-color: #dee2e5;
+  border-width: 0px 0px 1px 0px;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   border-width: 0;
 }
 
 .emotion-12 {
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 0px;
   text-align: left;
   vertical-align: top;
 }
 
 .emotion-13 {
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 0px;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
@@ -234,9 +234,9 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 4px;
-  color: #2E3F54;
+  color: #2e3f54;
   white-space: nowrap;
 }
 
@@ -246,15 +246,16 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 .emotion-14 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-15 {
   margin: 0;
-  font-family: 'DM Mono',courier;
-  font-size: 14px;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 21px;
+  font-size: 14px;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -272,7 +273,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 .emotion-18 {
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 0px;
   max-width: 100px;
   text-align: left;
   vertical-align: top;
@@ -301,8 +302,8 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   width: 24px;
   height: 24px;
   min-height: 32px;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -315,8 +316,8 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #007B22;
-  background-color: #E5F4EA;
+  border-color: #007b22;
+  background-color: #e5f4ea;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -327,14 +328,14 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 .emotion-19 svg {
-  fill: #007B22;
+  fill: #007b22;
 }
 
 .emotion-20 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #007B22;
+  fill: #007b22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -356,7 +357,7 @@ exports[`ComponentAPI renders with mandatory props for one component 1`] = `
 }
 
 .emotion-20.emotion-20 {
-  fill: #007B22;
+  fill: #007b22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -556,56 +557,56 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-3 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
   display: inline-block;
 }
 
 .emotion-3 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-3 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-3::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-3::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-3 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-3::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-3::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -616,20 +617,20 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-5 {
   margin: 0;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-5 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-5 {
-    font-family: "DM Sans",sans-serif;
+    font-family: DM Sans,sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -648,11 +649,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-5 {
-    font-family: "DM Sans",sans-serif;
+    font-family: DM Sans,sans-serif;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -681,14 +682,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-8 {
   border-style: solid;
-  border-color: #C0C7CC;
-  border-width: 0 0 1px 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  border-color: #c0c7cc;
+  border-width: 0px 0px 1px 0px;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -700,14 +701,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-9 {
   border-style: solid;
-  border-color: #C0C7CC;
-  border-width: 0 0 1px 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  border-color: #c0c7cc;
+  border-width: 0px 0px 1px 0px;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -719,14 +720,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-12 {
   border-style: solid;
-  border-color: #C0C7CC;
-  border-width: 0 0 1px 0;
-  color: #09111C;
-  font-family: "Poppins",sans-serif;
+  border-color: #c0c7cc;
+  border-width: 0px 0px 1px 0px;
+  color: #09111c;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 1.5;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   margin-bottom: 16px;
   height: 40px;
   text-align: left;
@@ -738,25 +739,25 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-13 {
   border-style: solid;
-  border-color: #DEE2E5;
-  border-width: 0 0 1px 0;
-  color: #2E3F54;
-  font-family: "DM Sans",sans-serif;
+  border-color: #dee2e5;
+  border-width: 0px 0px 1px 0px;
+  color: #2e3f54;
+  font-family: DM Sans,sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   border-width: 0;
 }
 
 .emotion-14 {
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 0px;
   text-align: left;
   vertical-align: top;
 }
 
 .emotion-15 {
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 0px;
   min-width: 100px;
   text-align: left;
   vertical-align: top;
@@ -795,9 +796,9 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #F0F1F3;
+  background-color: #f0f1f3;
   border-radius: 4px;
-  color: #2E3F54;
+  color: #2e3f54;
   white-space: nowrap;
 }
 
@@ -807,15 +808,16 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-16 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-17 {
   margin: 0;
-  font-family: 'DM Mono',courier;
-  font-size: 14px;
+  font-family: DM Mono,courier,monospace;
   font-weight: 400;
   line-height: 21px;
+  font-size: 14px;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
@@ -833,7 +835,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-20 {
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 0px;
   max-width: 100px;
   text-align: left;
   vertical-align: top;
@@ -862,8 +864,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   width: 24px;
   height: 24px;
   min-height: 32px;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -876,8 +878,8 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #007B22;
-  background-color: #E5F4EA;
+  border-color: #007b22;
+  background-color: #e5f4ea;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -888,14 +890,14 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-21 svg {
-  fill: #007B22;
+  fill: #007b22;
 }
 
 .emotion-22 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #007B22;
+  fill: #007b22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -917,7 +919,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-22.emotion-22 {
-  fill: #007B22;
+  fill: #007b22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1068,12 +1070,12 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   appearance: none;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #09111C;
-  border-color: #3358CC;
+  color: #09111c;
+  border-color: #3358cc;
 }
 
 .emotion-36 svg {
@@ -1082,11 +1084,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-36:hover:not(:disabled) {
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-36:active:not(:disabled) {
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1107,24 +1109,24 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 
 .emotion-37 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-37::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-37::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -1170,7 +1172,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
   appearance: none;
   border-radius: borderRadiusSharp;
   background-color: transparent;
-  color: #5A6A79;
+  color: #5a6a79;
   cursor: pointer;
 }
 
@@ -1180,11 +1182,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-40:hover:not(:disabled) {
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-40:active:not(:disabled) {
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -1204,7 +1206,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-42 {
-  background-color: #3358CC;
+  background-color: #3358cc;
   position: absolute;
   z-index: 2;
   bottom: 0px;
@@ -1212,7 +1214,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-43 {
-  background-color: #DEE2E5;
+  background-color: #dee2e5;
   display: block;
   position: absolute;
   z-index: 1;
@@ -1228,7 +1230,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
 }
 
 .emotion-44:focus:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: -3px;

@@ -29,9 +29,9 @@ export const NewsKitProvider = ({
   instrumentation: instrumentationProps = {},
   themeOptions = {},
 }: NewsKitProviderProps) => {
-  const NKContext = useNewsKitContext();
+  const {initialized} = useNewsKitContext();
   /* istanbul ignore if */
-  if (process.env.NODE_ENV !== 'production' && NKContext.initialized) {
+  if (process.env.NODE_ENV !== 'production' && initialized) {
     console.warn(
       'You are using NewsKitProvider inside NewsKitProvider, this might cause unexpected behavior',
     );

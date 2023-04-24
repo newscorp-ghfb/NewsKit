@@ -1,7 +1,12 @@
 import React from 'react';
-import {StylePreset, Theme, ThemeProvider, useTheme} from '../theme';
+import {
+  compileTheme,
+  StylePreset,
+  Theme,
+  ThemeProvider,
+  useTheme,
+} from '../theme';
 import {deepMerge} from './deep-merge';
-import {recurseUnknown} from './recurse-unknown';
 import {useNewsKitContext} from '../newskit-provider/context';
 
 const themeCache = new Map();
@@ -36,19 +41,13 @@ const mergeTheme = (
     return themeCache.get(cacheKey);
   }
 
-  const compiledStylePresets = recurseUnknown(
-    // @ts-ignore
-    theme,
-    stylePresets || {},
-    // warn, not error, so that theme compilation messages do not fail the test run
-    console.warn.bind(console),
-  );
-  const componentTheme = {
+  const componentTheme = compileTheme({
     ...theme,
     name: cacheKey,
+    compiled: false,
     componentDefaults: deepMerge(defaults, theme.componentDefaults),
-    stylePresets: deepMerge(compiledStylePresets, theme.stylePresets),
-  };
+    stylePresets: deepMerge(stylePresets, theme.stylePresets),
+  });
 
   themeCache.set(cacheKey, componentTheme);
 

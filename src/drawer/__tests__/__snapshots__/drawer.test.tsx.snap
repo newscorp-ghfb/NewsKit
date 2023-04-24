@@ -627,10 +627,173 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   top: 0;
   left: 0;
   max-width: auto;
+  min-width: 20px;
   height: 100%;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-1 {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-1 {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    width: 354px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-1.nk-drawer-enter {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-1.nk-drawer-enter-active {
+    opacity: 1;
+    transition-property: opacity,transform;
+    transition-duration: 200ms,200ms;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-1.nk-drawer-enter-done {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-1.nk-drawer-exit {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-1.nk-drawer-exit-active {
+    opacity: 0;
+    transition-property: opacity,transform;
+    transition-duration: 200ms,200ms;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-1.nk-drawer-exit-done {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-1.nk-drawer-enter {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-1.nk-drawer-enter-active {
+    opacity: 1;
+    transition-property: opacity,transform;
+    transition-duration: 0ms;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-1.nk-drawer-enter-done {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-1.nk-drawer-exit {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-1.nk-drawer-exit-active {
+    opacity: 0;
+    transition-property: opacity,transform;
+    transition-duration: 0ms;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-1.nk-drawer-exit-done {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
 
 .emotion-2 {
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -648,6 +811,14 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #3B3B3B;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -658,6 +829,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -666,6 +839,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -692,8 +867,8 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -706,9 +881,9 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: transparent;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #3B3B3B;
   cursor: pointer;
 }
 
@@ -718,19 +893,19 @@ exports[`Drawer focus management when focus trap is disabled render inline-drawe
 }
 
 .emotion-8 svg {
-  fill: #FFFFFF;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #254CAC;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #12387A;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
-  background-color: #E2E2E2;
+  background-color: transparent;
   color: #ABABAB;
 }
 
@@ -978,10 +1153,173 @@ exports[`Drawer render inline-drawer 1`] = `
   top: 0;
   left: 0;
   max-width: auto;
+  min-width: 20px;
   height: 100%;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 32px 0 rgba(10,10,10,0.08);
+}
+
+@media screen and (max-width: 479px) {
+  .emotion-1 {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emotion-1 {
+    width: 309px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .emotion-1 {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .emotion-1 {
+    width: 333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .emotion-1 {
+    width: 354px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-1 {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-1.nk-drawer-enter {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-1.nk-drawer-enter-active {
+    opacity: 1;
+    transition-property: opacity,transform;
+    transition-duration: 200ms,200ms;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-1.nk-drawer-enter-done {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-1.nk-drawer-exit {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-1.nk-drawer-exit-active {
+    opacity: 0;
+    transition-property: opacity,transform;
+    transition-duration: 200ms,200ms;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-1.nk-drawer-exit-done {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-1 {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-1.nk-drawer-enter {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  .emotion-1.nk-drawer-enter-active {
+    opacity: 1;
+    transition-property: opacity,transform;
+    transition-duration: 0ms;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(.5, 0, 1, 1);
+  }
+
+  .emotion-1.nk-drawer-enter-done {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-1.nk-drawer-exit {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .emotion-1.nk-drawer-exit-active {
+    opacity: 0;
+    transition-property: opacity,transform;
+    transition-duration: 0ms;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+
+  .emotion-1.nk-drawer-exit-done {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
 
 .emotion-2 {
+  color: #3B3B3B;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -999,6 +1337,14 @@ exports[`Drawer render inline-drawer 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: #3B3B3B;
+  font-family: "Poppins",sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding-inline: 24px;
+  padding-block: 16px;
 }
 
 .emotion-4 {
@@ -1009,6 +1355,8 @@ exports[`Drawer render inline-drawer 1`] = `
   box-sizing: border-box;
   grid-area: content;
   overflow: hidden auto;
+  padding-inline: 24px;
+  padding-block: 24px;
 }
 
 .emotion-7 {
@@ -1017,6 +1365,8 @@ exports[`Drawer render inline-drawer 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  padding-inline: 8px;
+  padding-block: 8px;
   padding-right: 0;
 }
 
@@ -1043,8 +1393,8 @@ exports[`Drawer render inline-drawer 1`] = `
   min-width: 80px;
   height: 48px;
   min-height: 48px;
-  padding-inline: 12px;
-  padding-block: 12px;
+  padding-inline: 8px;
+  padding-block: 8px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1057,9 +1407,9 @@ exports[`Drawer render inline-drawer 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: transparent;
   border-radius: 50%;
-  color: #FFFFFF;
+  color: #3B3B3B;
   cursor: pointer;
 }
 
@@ -1069,19 +1419,19 @@ exports[`Drawer render inline-drawer 1`] = `
 }
 
 .emotion-8 svg {
-  fill: #FFFFFF;
+  fill: #3B3B3B;
 }
 
 .emotion-8:hover:not(:disabled) {
-  background-color: #254CAC;
+  background-color: #F1F1F1;
 }
 
 .emotion-8:active:not(:disabled) {
-  background-color: #12387A;
+  background-color: #E2E2E2;
 }
 
 .emotion-8:disabled {
-  background-color: #E2E2E2;
+  background-color: transparent;
   color: #ABABAB;
 }
 

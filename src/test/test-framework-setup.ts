@@ -8,8 +8,6 @@ global.TextEncoder = TextEncoder;
 global.TextDecoder = TextDecoder;
 
 failOnConsole({
-  // eg Warning, "Theme token "stylePresets.audioPlayerVolumeControlPopover" was not found when compiling theme!"
-  shouldFailOnWarn: false,
   silenceMessage: errorMessage => {
     if (
       errorMessage.includes(

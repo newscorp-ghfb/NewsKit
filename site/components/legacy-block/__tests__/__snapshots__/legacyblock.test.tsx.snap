@@ -63,9 +63,9 @@ exports[`Block with overflow set to scrollY renders no overflow prop 1`] = `
 exports[`Block with responsive style props renders a responsive styled div 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #09111C;
-  background-color: #F0F1F3;
-  font-family: "DM Sans",sans-serif;
+  color: #09111c;
+  background-color: #ffffff;
+  font-family: DM Sans,sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -126,9 +126,9 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 
 @media screen and (min-width: 0px) {
   .emotion-0 {
-    color: #2E3F54;
-    background-color: #F0F1F3;
-    font-family: "DM Sans",sans-serif;
+    color: #2e3f54;
+    background-color: #f0f1f3;
+    font-family: DM Sans,sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -185,9 +185,9 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 
 @media screen and (min-width: 480px) {
   .emotion-0 {
-    color: #5A6A79;
-    background-color: #DEE2E5;
-    font-family: "DM Sans",sans-serif;
+    color: #5a6a79;
+    background-color: #dee2e5;
+    font-family: DM Sans,sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
@@ -255,9 +255,9 @@ exports[`Block with responsive style props renders a responsive styled div 1`] =
 exports[`Block with simple style props renders a styled div 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  color: #09111C;
-  background-color: #12387A;
-  font-family: "DM Sans",sans-serif;
+  color: #09111c;
+  background-color: #14328d;
+  font-family: DM Sans,sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
