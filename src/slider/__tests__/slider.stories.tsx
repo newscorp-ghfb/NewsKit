@@ -387,6 +387,8 @@ export const StorySliderWithTextLabels = () => (
       <StorybookCase title="Inline min label positioned after">
         <StatefulSlider values={[10]} max={20} min={0} maxLabel="100%" />
       </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Both min and max labels">
         <StatefulSlider
           values={[10]}
@@ -396,11 +398,11 @@ export const StorySliderWithTextLabels = () => (
           maxLabel="100%"
         />
       </StorybookCase>
-    </StorybookPage>
-    <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Label posotion above thumb">
         <StatefulSlider values={[30]} max={40} min={0} thumbLabel />
       </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Label posotion before">
         <StatefulSlider
           values={[150]}
@@ -456,6 +458,8 @@ export const StorySliderWithVerticalTextLabels = () => (
           />
         </VerticalContainerWithBorder>
       </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Both min and max labels">
         <VerticalContainerWithBorder>
           <StatefulSlider
@@ -468,13 +472,13 @@ export const StorySliderWithVerticalTextLabels = () => (
           />
         </VerticalContainerWithBorder>
       </StorybookCase>
-    </StorybookPage>
-    <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Label posotion right of thumb">
         <VerticalContainerWithBorder>
           <StatefulSlider values={[30]} max={40} min={0} thumbLabel vertical />
         </VerticalContainerWithBorder>
       </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Label posotion before">
         <VerticalContainerWithBorder>
           <StatefulSlider
