@@ -1,6 +1,6 @@
 describe('Toast', () => {
   beforeEach(() => {
-    cy.visit('?name=toast-e2e-hidden');
+    cy.visit('?name=toast-e2e');
   });
 
   it('toast is removed after n seconds', () => {
