@@ -32,7 +32,7 @@ const ToastNegative = withDefaultProps(Toast, {
   overrides: {stylePreset: 'toastNegative'},
 });
 
-export const StoryToastE2EtestHidden = () => {
+export const StoryToastE2EHidden = () => {
   const ToastWithState = () => {
     const [state, setState] = React.useState(false);
     const onClick = () => setState(true);
@@ -166,8 +166,8 @@ export const StoryToastE2EtestHidden = () => {
     </StorybookPage>
   );
 };
-StoryToastE2EtestHidden.storyName = 'Default';
-StoryToastE2EtestHidden.parameters = {
+StoryToastE2EHidden.storyName = 'Default';
+StoryToastE2EHidden.parameters = {
   percy: {skip: true},
 };
 
