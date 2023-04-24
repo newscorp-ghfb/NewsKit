@@ -278,7 +278,7 @@ export const StorySliderWithStates = () => (
       </StorybookCase>
     </StorybookPage>
     <StorybookHeading>Vertical</StorybookHeading>
-    <StorybookPage columns="1fr 1fr 1fr 1fr 1fr">
+    <StorybookPage columns="1fr 1fr 1fr 1fr">
       <StorybookCase title="Base">
         <VerticalContainerWithBorder>
           <StatefulSlider values={[10]} max={20} min={0} vertical />
@@ -319,6 +319,8 @@ export const StorySliderWithStates = () => (
           <StatefulSlider values={[10]} max={20} min={0} vertical />
         </VerticalContainerWithBorder>
       </StorybookCase>
+    </StorybookPage>
+    <StorybookPage columns="1fr">
       <StorybookCase title="Disabled">
         <VerticalContainerWithBorder>
           <StatefulSlider
