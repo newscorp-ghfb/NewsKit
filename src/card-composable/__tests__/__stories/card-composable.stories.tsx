@@ -191,6 +191,12 @@ const map = {
 };
 // The Sun --- ends here
 
+const typographyPresetMap = {
+  small: 'editorialDisplay003',
+  medium: 'editorialDisplay004',
+  large: 'editorialDisplay005',
+};
+
 const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
   size = 'medium',
 }) => (
@@ -239,7 +245,7 @@ const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
       <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
         <Headline
           overrides={{
-            typographyPreset: 'editorialHeadline030',
+            typographyPreset: typographyPresetMap[size],
           }}
         >
           LOREM IPSUM Dolor sit amet, consectetur adipiscing elit, proin
@@ -342,10 +348,7 @@ const CardHorizontalTheSun: React.FC<MediaContextActionProps> = ({
       <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
         <Headline
           overrides={{
-            typographyPreset:
-              size === 'small'
-                ? 'editorialHeadline010'
-                : 'editorialHeadline030',
+            typographyPreset: typographyPresetMap[size],
           }}
         >
           Short title of the card describing the main content
