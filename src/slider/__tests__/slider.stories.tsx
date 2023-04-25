@@ -30,7 +30,7 @@ const sliderCustomThemeObject: CreateThemeArgs = {
       customThumbStylePreset: {
         base: {
           backgroundColor: '{{colors.inkBrand010}}',
-          borderRadius: '999px',
+          borderRadius: '{{borders.borderRadiusCircle}}',
           borderColor: '{{colors.interface010}}',
           borderWidth: '1px',
           borderStyle: 'solid',
@@ -40,7 +40,7 @@ const sliderCustomThemeObject: CreateThemeArgs = {
         base: {
           borderColor: 'black',
           borderWidth: '1px',
-          borderRadius: '999px',
+          borderRadius: '{{borders.borderRadiusCircle}}',
           borderStyle: 'dashed',
           color: 'green',
           textAlign: 'center',
@@ -64,7 +64,7 @@ const sliderCustomThemeObject: CreateThemeArgs = {
       },
       customPlaceholderIcon: {
         base: {
-          iconColor: '{{colors.inkNonEssential}}',
+          iconColor: '{{colors.inkBase}}',
         },
       },
       customOutlineColor: {
@@ -168,11 +168,7 @@ const MarginOverridesWrapper = styled.div`
 
 const CustomMinLabel: React.FC = () => (
   <IconFilledRemove
-    overrides={{
-      size: '16px',
-      stylePreset: '{{colors.inkBase}}',
-      marginInlineEnd: '8px',
-    }}
+    overrides={{size: 'iconSize020', stylePreset: 'customPlaceholderIcon'}}
   />
 );
 
@@ -181,11 +177,7 @@ class CustomMaxLabel extends React.Component {
   render() {
     return (
       <IconFilledAddCircleOutline
-        overrides={{
-          size: '16px',
-          stylePreset: '{{colors.inkBase}}',
-          marginInlineEnd: '8px',
-        }}
+        overrides={{size: 'iconSize020', stylePreset: 'customPlaceholderIcon'}}
       />
     );
   }
@@ -382,7 +374,7 @@ export const StorySliderWithTextLabels = () => (
   <>
     <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Inline min label positioned before">
-        <StatefulSlider values={[10]} max={20} min={0} minLabel="0" />
+        <StatefulSlider values={[10]} max={20} min={0} minLabel="0%" />
       </StorybookCase>
       <StorybookCase title="Inline min label positioned after">
         <StatefulSlider values={[10]} max={20} min={0} maxLabel="100%" />
@@ -394,12 +386,23 @@ export const StorySliderWithTextLabels = () => (
           values={[10]}
           max={20}
           min={0}
-          minLabel="0"
+          minLabel="0%"
           maxLabel="100%"
         />
       </StorybookCase>
       <StorybookCase title="Label posotion above thumb">
-        <StatefulSlider values={[30]} max={40} min={0} thumbLabel />
+        <StatefulSlider
+          values={[30]}
+          max={40}
+          min={0}
+          thumbLabel
+          overrides={{
+            marginBlock: 'space020',
+            thumbLabel: {
+              space: 'space050',
+            },
+          }}
+        />
       </StorybookCase>
     </StorybookPage>
     <StorybookPage columns="1fr 1fr 1fr">
@@ -472,7 +475,7 @@ export const StorySliderWithVerticalTextLabels = () => (
           />
         </VerticalContainerWithBorder>
       </StorybookCase>
-      <StorybookCase title="Label posotion right of thumb">
+      <StorybookCase title="Label position right of thumb">
         <VerticalContainerWithBorder>
           <StatefulSlider values={[30]} max={40} min={0} thumbLabel vertical />
         </VerticalContainerWithBorder>
