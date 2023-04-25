@@ -49,12 +49,12 @@ const sliderCustomThemeObject: CreateThemeArgs = {
       },
       customLabelStylePreset: {
         base: {
-          color: '{{colors.utilityLabel020}}',
+          color: '{{colors.inkBrand010}}',
         },
       },
       customFeedback: {
         base: {
-          backgroundColor: '{{colors.red060}}',
+          backgroundColor: '{{colors.interactiveSecondary030}}',
           borderRadius: '{{borders.borderRadiusCircle}}',
           opacity: '{{overlays.opacity000}}',
         },
@@ -229,7 +229,7 @@ StorySliderDefault.parameters = {
 
 export const StorySliderWithStates = () => (
   <>
-    <StorybookHeading>Horizontal test</StorybookHeading>
+    <StorybookHeading>Horizontal</StorybookHeading>
     <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Base">
         <StatefulSlider values={[10]} max={20} min={0} />
@@ -261,7 +261,7 @@ export const StorySliderWithStates = () => (
     </StorybookPage>
     <StorybookPage columns="1fr 1fr 1fr">
       <StorybookCase title="Focus">
-        <StatefulSlider values={[30]} max={40} min={0} thumbLabel />
+        <StatefulSlider values={[30]} max={40} min={0} />
       </StorybookCase>
       <StorybookCase title="Disabled">
         <StatefulSlider
@@ -389,7 +389,7 @@ export const StorySliderWithTextLabels = () => (
       </StorybookCase>
     </StorybookPage>
     <StorybookPage columns="1fr 1fr 1fr">
-      <StorybookCase title="Both min and max labels">
+      <StorybookCase title="Min and max labels">
         <StatefulSlider
           values={[10]}
           max={20}
@@ -580,7 +580,7 @@ export const StorySliderWithOverrides = () => (
           />
         </ContainerWithBorder>
       </StorybookCase>
-      <StorybookCase title="Thumb border radius">
+      <StorybookCase title="Custom outline">
         <ContainerWithBorder>
           <StatefulSlider
             values={[40]}
@@ -610,12 +610,29 @@ export const StorySliderWithOverrides = () => (
       </StorybookCase>
       <StorybookCase title="Track size">
         <ContainerWithBorder>
-          <StatefulSlider values={[40]} max={50} min={0} />
+          <StatefulSlider
+            values={[40]}
+            max={50}
+            min={0}
+            overrides={{
+              track: {
+                size: 'sizing060',
+              },
+            }}
+          />
         </ContainerWithBorder>
       </StorybookCase>
       <StorybookCase title="Label size">
         <VerticalContainerWithBorder>
-          <StatefulSlider values={[50]} max={50} min={0} vertical />
+          <StatefulSlider
+            values={[50]}
+            max={50}
+            min={0}
+            vertical
+            minLabel="Label"
+            maxLabel="Label"
+            labelPosition="after"
+          />
         </VerticalContainerWithBorder>
       </StorybookCase>
       <StorybookCase title="Logical props">
@@ -643,6 +660,14 @@ StorySliderWithOverrides.parameters = {
 export default {
   title: 'Components/Slider',
   component: () => 'None',
+  parameters: {
+    nkDocs: {
+      title: 'Slider',
+      url: 'https://newskit.co.uk/components/slider/',
+      description:
+        'Sliders allow users to choose a single value or range between min and max values by sliding a thumb.',
+    },
+  },
   decorators: [
     (
       Story: StoryType,
