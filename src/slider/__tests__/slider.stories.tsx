@@ -373,15 +373,15 @@ StorySlider1And2Thumbs.parameters = {
 export const StorySliderWithTextLabels = () => (
   <>
     <StorybookPage columns="1fr 1fr 1fr">
-      <StorybookCase title="Inline min label positioned before">
+      <StorybookCase title="Inline min labels positioned before">
         <StatefulSlider values={[10]} max={20} min={0} minLabel="0%" />
       </StorybookCase>
-      <StorybookCase title="Inline min label positioned after">
+      <StorybookCase title="Inline min labels positioned after">
         <StatefulSlider values={[10]} max={20} min={0} maxLabel="100%" />
       </StorybookCase>
     </StorybookPage>
     <StorybookPage columns="1fr 1fr 1fr">
-      <StorybookCase title="Min and max labels">
+      <StorybookCase title="Both min and max inline labels">
         <StatefulSlider
           values={[10]}
           max={20}
@@ -439,7 +439,7 @@ StorySliderWithTextLabels.parameters = {
 export const StorySliderWithVerticalTextLabels = () => (
   <>
     <StorybookPage columns="1fr 1fr 1fr">
-      <StorybookCase title="Inline min label positioned before">
+      <StorybookCase title="Inline min labels positioned before">
         <VerticalContainerWithBorder>
           <StatefulSlider
             values={[10]}
@@ -463,7 +463,7 @@ export const StorySliderWithVerticalTextLabels = () => (
       </StorybookCase>
     </StorybookPage>
     <StorybookPage columns="1fr 1fr 1fr">
-      <StorybookCase title="Both min and max labels">
+      <StorybookCase title="Both min and max inline labels">
         <VerticalContainerWithBorder>
           <StatefulSlider
             values={[10]}
@@ -477,7 +477,14 @@ export const StorySliderWithVerticalTextLabels = () => (
       </StorybookCase>
       <StorybookCase title="Label position right of thumb">
         <VerticalContainerWithBorder>
-          <StatefulSlider values={[30]} max={40} min={0} thumbLabel vertical />
+          <StatefulSlider
+            values={[30]}
+            max={40}
+            min={0}
+            thumbLabel
+            vertical
+            overrides={{thumbLabel: {}}}
+          />
         </VerticalContainerWithBorder>
       </StorybookCase>
     </StorybookPage>
