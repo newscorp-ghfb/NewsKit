@@ -2,9 +2,9 @@ import React, {ReactNode} from 'react';
 import {Box, Stack} from '@chakra-ui/react';
 import {styled} from 'newskit';
 import MetricsPreview from './components/metrics-preview';
-import CapSizeSelector from './components/capsize-selector';
 import FontSelector from './components/font-selector';
 import OutputCSS from './components/output-css';
+import EditMetrics from './components/edit-metrics';
 
 const Heading = styled.div<{size: string}>``;
 
@@ -64,11 +64,14 @@ const TextCropCalculator = () => (
       </Box>
 
       <Box>
-        <Step number={2} title="Adjust size & spacing">
+        <Step
+          number={2}
+          title="Adjust metrics (optional - e.g. if using a custom font)"
+        >
           <Stack spacing={10}>
             <Box>
               <ContentBlock>
-                <CapSizeSelector />
+                <EditMetrics />
               </ContentBlock>
             </Box>
             <Box>{/* <Preview /> */}</Box>
@@ -77,7 +80,7 @@ const TextCropCalculator = () => (
       </Box>
 
       <Box>
-        <Step number={3} title="Apply the styles">
+        <Step number={3} title="Copy the font metrics into your theme">
           <ContentBlock>
             <OutputCSS />
           </ContentBlock>

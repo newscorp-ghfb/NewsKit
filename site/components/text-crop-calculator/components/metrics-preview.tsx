@@ -1,5 +1,5 @@
-import React, {ChangeEvent, useEffect, useState} from 'react';
-import {Box, FormLabel, IconButton, Input, Text} from '@chakra-ui/react';
+import React, {useEffect, useState} from 'react';
+import {Box, Text} from '@chakra-ui/react';
 import {useAppState} from '../app-state-context';
 
 const Metric = ({
@@ -104,7 +104,6 @@ const MetricsPreview = () => {
 
   const {metrics, selectedFont} = state;
   const [customMetrics, setCustomMetrics] = useState(metrics);
-  const [editMetrics, setEditMetrics] = useState(false);
 
   useEffect(() => {
     dispatch({type: 'UPDATE_METRICS', metrics: customMetrics});
@@ -112,7 +111,6 @@ const MetricsPreview = () => {
 
   useEffect(() => {
     setCustomMetrics(metrics);
-    setEditMetrics(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedFont]);
 
@@ -135,24 +133,8 @@ const MetricsPreview = () => {
       justifyContent="center"
       alignItems="center"
       pos="relative"
-      paddingBottom={!editMetrics ? [16, 16, 0] : undefined}
+      paddingBottom={[16, 16, 0]}
     >
-      {!editMetrics && (
-        <IconButton
-          aria-label="Customise font metrics"
-          title="Customise font metrics"
-          variant="outline"
-          borderRadius={20}
-          _hover={{color: 'pink.500', background: 'transparent'}}
-          _focus={{boxShadow: 'outline', borderColor: 'transparent'}}
-          _active={{transform: 'scale(.9)'}}
-          onClick={() => setEditMetrics(true)}
-          color="gray.600"
-          pos="absolute"
-          bottom={0}
-          right={0}
-        />
-      )}
       <Box maxWidth="100%" display="flex" justifyContent="center">
         <Box
           fontSize={previewFontSize}
@@ -226,106 +208,6 @@ const MetricsPreview = () => {
           </Box>
         </Box>
       </Box>
-      {editMetrics && (
-        <Box
-          paddingTop={8}
-          paddingRight={4}
-          display="flex"
-          flexDirection={['column', 'column', 'row']}
-        >
-          <Box
-            display="flex"
-            alignItems="center"
-            paddingBottom={[2, 2, 0]}
-            paddingX={[0, 6]}
-          >
-            <FormLabel
-              htmlFor="customAscent"
-              whiteSpace="nowrap"
-              fontSize={['md', 'lg']}
-              color="gray.500"
-              flexGrow={1}
-            >
-              Ascender
-            </FormLabel>
-            <Input
-              id="customAscent"
-              value={customMetrics.ascent}
-              autoFocus
-              type="number"
-              onChange={(ev: ChangeEvent<HTMLInputElement>) => {
-                setCustomMetrics({
-                  ...customMetrics,
-                  ascent: parseInt(ev.currentTarget.value, 10),
-                });
-              }}
-              borderRadius={12}
-              _focus={{boxShadow: 'outline', borderColor: 'transparent'}}
-              w={80}
-            />
-          </Box>
-          <Box
-            display="flex"
-            alignItems="center"
-            paddingBottom={[2, 2, 0]}
-            paddingX={[0, 6]}
-          >
-            <FormLabel
-              htmlFor="customCapHeight"
-              whiteSpace="nowrap"
-              fontSize={['md', 'lg']}
-              color="gray.500"
-              flexGrow={1}
-            >
-              Cap Height
-            </FormLabel>
-            <Input
-              id="customCapHeight"
-              value={customMetrics.capHeight}
-              type="number"
-              onChange={(ev: ChangeEvent<HTMLInputElement>) => {
-                setCustomMetrics({
-                  ...customMetrics,
-                  capHeight: parseInt(ev.currentTarget.value, 10),
-                });
-              }}
-              borderRadius={12}
-              _focus={{boxShadow: 'outline', borderColor: 'transparent'}}
-              w={80}
-            />
-          </Box>
-          <Box
-            display="flex"
-            alignItems="center"
-            paddingBottom={[2, 2, 0]}
-            paddingX={[0, 6]}
-          >
-            <FormLabel
-              htmlFor="customDescent"
-              whiteSpace="nowrap"
-              fontSize={['md', 'lg']}
-              color="gray.500"
-              flexGrow={1}
-            >
-              Descender
-            </FormLabel>
-            <Input
-              id="customDescent"
-              value={customMetrics.descent}
-              type="number"
-              onChange={(ev: ChangeEvent<HTMLInputElement>) => {
-                setCustomMetrics({
-                  ...customMetrics,
-                  descent: parseInt(ev.currentTarget.value, 10),
-                });
-              }}
-              borderRadius={12}
-              _focus={{boxShadow: 'outline', borderColor: 'transparent'}}
-              w={80}
-            />
-          </Box>
-        </Box>
-      )}
     </Box>
   );
 };
