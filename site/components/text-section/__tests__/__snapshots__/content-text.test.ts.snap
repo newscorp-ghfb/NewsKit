@@ -8,20 +8,20 @@ exports[`ContentText renders with only the description 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-1 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: "DM Sans",sans-serif;
+    font-family: DM Sans,sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -40,11 +40,11 @@ exports[`ContentText renders with only the description 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: "DM Sans",sans-serif;
+    font-family: DM Sans,sans-serif;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -81,55 +81,55 @@ exports[`ContentText renders with only the title 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-1 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-1::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-1::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-1::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-1::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -162,55 +162,55 @@ exports[`ContentText renders with title and description 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-1 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 20px;
     line-height: 22.5px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-1::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-1::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: "Poppins",sans-serif;
+    font-family: Poppins,sans-serif;
     font-size: 24px;
     line-height: 27px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
   .emotion-1::before {
     content: '';
-    margin-bottom: -0.2155em;
+    margin-bottom: -0.2035em;
     display: block;
   }
 
   .emotion-1::after {
     content: '';
-    margin-top: -0.2125em;
+    margin-top: -0.2215em;
     display: block;
   }
 }
@@ -230,20 +230,20 @@ exports[`ContentText renders with title and description 1`] = `
 
 .emotion-1 {
   margin: 0;
-  color: #2E3F54;
+  color: #2e3f54;
 }
 
 .emotion-1 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 @media screen and (max-width: 1439px) {
   .emotion-1 {
-    font-family: "DM Sans",sans-serif;
+    font-family: DM Sans,sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 
@@ -262,11 +262,11 @@ exports[`ContentText renders with title and description 1`] = `
 
 @media screen and (min-width: 1440px) {
   .emotion-1 {
-    font-family: "DM Sans",sans-serif;
+    font-family: DM Sans,sans-serif;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0em;
     padding: 0.5px 0px;
   }
 

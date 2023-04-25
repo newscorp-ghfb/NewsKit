@@ -113,23 +113,23 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-5::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -137,11 +137,11 @@ exports[`Meta renders with mandatory props 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-6 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-8 {
@@ -179,7 +179,7 @@ exports[`Meta renders with mandatory props 1`] = `
   appearance: none;
   border-radius: 8px;
   border-color: #017582;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #017582;
 }
 
@@ -195,29 +195,29 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-10 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-10::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-10::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
 .emotion-11 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -258,28 +258,28 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-17 {
   margin: 0;
-  color: #3358CC;
-  font-family: "Poppins",sans-serif;
+  color: #3358cc;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-17 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-17::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-17::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -289,7 +289,7 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-19 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -380,10 +380,10 @@ exports[`Meta renders with mandatory props 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -393,30 +393,30 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-22 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-22:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-22:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-22:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-22:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-22:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -447,7 +447,7 @@ exports[`Meta renders with mandatory props 1`] = `
 }
 
 .emotion-23 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -470,24 +470,24 @@ exports[`Meta renders with mandatory props 1`] = `
 
 .emotion-24 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-24::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-24::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -739,23 +739,23 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-5::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -763,11 +763,11 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-6 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-8 {
@@ -805,7 +805,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   appearance: none;
   border-radius: 8px;
   border-color: #017582;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #017582;
 }
 
@@ -821,29 +821,29 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-10 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-10::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-10::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
 .emotion-11 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -884,28 +884,28 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-17 {
   margin: 0;
-  color: #3358CC;
-  font-family: "Poppins",sans-serif;
+  color: #3358cc;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-17 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-17::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-17::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -915,7 +915,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-19 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1006,10 +1006,10 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -1019,30 +1019,30 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-22 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-22:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-22:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-22:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-22:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-22:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1073,7 +1073,7 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 }
 
 .emotion-23 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1096,24 +1096,24 @@ exports[`Meta renders with mandatory props and figma button 1`] = `
 
 .emotion-24 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-24::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-24::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -1405,23 +1405,23 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-5 {
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-5::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-5::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -1429,11 +1429,11 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   display: inline;
   font: inherit;
   margin: 0;
-  color: #09111C;
+  color: #09111c;
 }
 
 .emotion-6 svg {
-  fill: #09111C;
+  fill: #09111c;
 }
 
 .emotion-8 {
@@ -1471,7 +1471,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   appearance: none;
   border-radius: 8px;
   border-color: #017582;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #017582;
 }
 
@@ -1487,29 +1487,29 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-10 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
 }
 
 .emotion-10::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-10::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
 .emotion-11 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1550,7 +1550,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-17 {
   display: inline-block;
-  color: #3358CC;
+  color: #3358cc;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1572,51 +1572,51 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-17 svg {
-  fill: #3358CC;
+  fill: #3358cc;
 }
 
 .emotion-17:hover:not(:disabled) {
-  color: #254CAC;
+  color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-17:hover:not(:disabled) svg {
-  fill: #254CAC;
+  fill: #254cac;
 }
 
 .emotion-17:active:not(:disabled) {
-  color: #12387A;
+  color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-17:active:not(:disabled) svg {
-  fill: #12387A;
+  fill: #14328d;
 }
 
 .emotion-17:visited:not(:disabled) {
-  color: #6454E3;
+  color: #6454e3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-17:visited:not(:disabled) svg {
-  fill: #6454E3;
+  fill: #6454e3;
 }
 
 .emotion-17:visited:hover:not(:disabled) {
-  color: #6454E3;
+  color: #6454e3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 .emotion-17:visited:hover:not(:disabled) svg {
-  fill: #6454E3;
+  fill: #6454e3;
 }
 
 .emotion-17:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1662,11 +1662,11 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-20 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   display: block;
 }
 
@@ -1674,7 +1674,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1706,7 +1706,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-25 {
   border-style: solid;
-  border-color: #DEE2E5;
+  border-color: #dee2e5;
   border-width: 1px;
   border-width: 0px;
   margin: 0;
@@ -1797,10 +1797,10 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
   appearance: none;
   background-color: transparent;
   border-style: solid;
-  border-color: #2E3F54;
+  border-color: #2e3f54;
   border-width: 1px;
   border-radius: 24px;
-  color: #2E3F54;
+  color: #2e3f54;
   cursor: pointer;
 }
 
@@ -1810,30 +1810,30 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-28 svg {
-  fill: #2E3F54;
+  fill: #2e3f54;
 }
 
 .emotion-28:hover:not(:disabled) {
-  background-color: #F0F1F3;
-  border-color: #15263E;
+  background-color: #f0f1f3;
+  border-color: #15263e;
 }
 
 .emotion-28:active:not(:disabled) {
-  background-color: #DEE2E5;
-  border-color: #09111C;
+  background-color: #dee2e5;
+  border-color: #09111c;
 }
 
 .emotion-28:disabled {
-  border-color: #DEE2E5;
-  color: #C0C7CC;
+  border-color: #dee2e5;
+  color: #a1acb4;
 }
 
 .emotion-28:disabled svg {
-  fill: #C0C7CC;
+  fill: #a1acb4;
 }
 
 .emotion-28:focus-visible:not(:disabled) {
-  outline-color: #3768FB;
+  outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
@@ -1864,7 +1864,7 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 }
 
 .emotion-29 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -1887,24 +1887,24 @@ exports[`Meta renders with mandatory props and version above v5 1`] = `
 
 .emotion-30 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 600;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-30::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-30::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 

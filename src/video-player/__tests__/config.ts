@@ -6,7 +6,7 @@ export const PLAYLISTS_VIDEO_PLAYER_CONFIG = {
   controls: true,
 };
 
-export const DEFATULT_VIDEO_PLAYER_CONFIG = {
+export const DEFAULT_VIDEO_PLAYER_CONFIG = {
   'data-video-id': '5290445795001',
   'data-account': '1752604059001',
   'data-player': 'default',

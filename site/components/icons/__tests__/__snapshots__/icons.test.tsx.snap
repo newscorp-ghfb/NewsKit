@@ -3,7 +3,7 @@
 exports[`Icons IconExpandLess icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -47,7 +47,7 @@ exports[`Icons IconExpandLess icon renders as expected 1`] = `
 exports[`Icons IconExpandMore icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -92,7 +92,7 @@ exports[`Icons IconExpandMore icon renders as expected 1`] = `
 exports[`Icons IconFilledAA icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -132,7 +132,7 @@ exports[`Icons IconFilledAA icon renders as expected 1`] = `
 exports[`Icons IconFilledAAA icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -193,8 +193,8 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   width: 32px;
   height: 32px;
   min-height: 32px;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -207,8 +207,8 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #007B22;
-  background-color: #E5F4EA;
+  border-color: #007b22;
+  background-color: #e5f4ea;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -219,14 +219,14 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #007B22;
+  fill: #007b22;
 }
 
 .emotion-1 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #007B22;
+  fill: #007b22;
   vertical-align: unset;
   display: inline-block;
 }
@@ -250,7 +250,7 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
 .emotion-1.emotion-1 {
   width: 24px;
   height: 24px;
-  fill: #007B22;
+  fill: #007b22;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -296,7 +296,7 @@ exports[`Icons IconFilledCheckCircle icon renders as expected 1`] = `
 exports[`Icons IconFilledChrome icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -343,7 +343,7 @@ exports[`Icons IconFilledChrome icon renders as expected 1`] = `
 exports[`Icons IconFilledCircle icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -404,8 +404,8 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   width: 32px;
   height: 32px;
   min-height: 32px;
-  padding-inline: 0;
-  padding-block: 0;
+  padding-inline: 0px;
+  padding-block: 0px;
   box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -418,8 +418,8 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
   -ms-appearance: none;
   appearance: none;
   border-style: solid;
-  border-color: #D60000;
-  background-color: #FEECEC;
+  border-color: #d60000;
+  background-color: #feecec;
   border-radius: 50%;
   border-width: 1px;
 }
@@ -430,14 +430,14 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
 }
 
 .emotion-0 svg {
-  fill: #D60000;
+  fill: #d60000;
 }
 
 .emotion-1 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  fill: #D60000;
+  fill: #d60000;
   vertical-align: unset;
   display: inline-block;
 }
@@ -461,7 +461,7 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
 .emotion-1.emotion-1 {
   width: 24px;
   height: 24px;
-  fill: #D60000;
+  fill: #d60000;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -507,7 +507,7 @@ exports[`Icons IconFilledCrossCircle icon renders as expected 1`] = `
 exports[`Icons IconFilledDark icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -556,7 +556,7 @@ exports[`Icons IconFilledDark icon renders as expected 1`] = `
 exports[`Icons IconFilledEdge icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -594,7 +594,7 @@ exports[`Icons IconFilledEdge icon renders as expected 1`] = `
 exports[`Icons IconFilledFirefox icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -632,7 +632,7 @@ exports[`Icons IconFilledFirefox icon renders as expected 1`] = `
 exports[`Icons IconFilledGitHub icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -671,7 +671,7 @@ exports[`Icons IconFilledGitHub icon renders as expected 1`] = `
 exports[`Icons IconFilledLight icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -720,7 +720,7 @@ exports[`Icons IconFilledLight icon renders as expected 1`] = `
 exports[`Icons IconFilledNpm icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -760,7 +760,7 @@ exports[`Icons IconFilledNpm icon renders as expected 1`] = `
 exports[`Icons IconFilledNullDot icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #DEE2E5;
+  fill: #dee2e5;
   vertical-align: unset;
   display: inline-block;
   margin: 0 6px;
@@ -785,7 +785,7 @@ exports[`Icons IconFilledNullDot icon renders as expected 1`] = `
 .emotion-0.emotion-0 {
   width: 12px;
   height: 12px;
-  fill: #DEE2E5;
+  fill: #dee2e5;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -823,7 +823,7 @@ exports[`Icons IconFilledNullDot icon renders as expected 1`] = `
 exports[`Icons IconFilledSafari icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -861,7 +861,7 @@ exports[`Icons IconFilledSafari icon renders as expected 1`] = `
 exports[`Icons IconFilledSearch icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }
@@ -899,7 +899,7 @@ exports[`Icons IconFilledSearch icon renders as expected 1`] = `
 exports[`Icons IconFilledTimer icon renders as expected 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }

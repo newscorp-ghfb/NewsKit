@@ -1,5 +1,5 @@
 <!-- Replace #000 with github issue number e.g #1234 -->
-#000
+closes #000
 
 **What**
 

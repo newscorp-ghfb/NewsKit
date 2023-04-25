@@ -71,7 +71,7 @@ const EngineeringQuickstart = (layoutProps: LayoutProps) => (
               <Link href="https://nodejs.org/en/download/" target="_blank">
                 Node.js
               </Link>{' '}
-              v14 or newer.
+              v16 or newer (eg 16.10.0 gives good performance).
             </>
             <>
               A project to install NewsKit into. If you need to create a new one

@@ -29,19 +29,16 @@ export const NewsKitProvider = ({
   instrumentation: instrumentationProps = {},
   themeOptions = {},
 }: NewsKitProviderProps) => {
-  const NKContext = useNewsKitContext();
+  const {initialized} = useNewsKitContext();
   /* istanbul ignore if */
-  if (
-    process.env.NODE_ENV !== 'production' &&
-    Object.keys(NKContext).length > 0
-  ) {
+  if (process.env.NODE_ENV !== 'production' && initialized) {
     console.warn(
       'You are using NewsKitProvider inside NewsKitProvider, this might cause unexpected behavior',
     );
   }
 
   return (
-    <NewsKitInternalContext.Provider value={{initialized: true}}>
+    <NewsKitInternalContext.Provider value={{initialized: true, themeOptions}}>
       <ThemeProvider theme={theme} {...themeOptions}>
         <InstrumentationProvider {...instrumentationProps}>
           <MediaQueryProvider>
