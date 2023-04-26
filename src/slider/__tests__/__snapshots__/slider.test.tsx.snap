@@ -2080,6 +2080,7 @@ exports[`slider react-range Range function props renderThumb should render verti
   text-align: center;
   white-space: nowrap;
   right: -32px;
+  top: 8px;
   position: absolute;
   background-color: transparent;
   width: 100%;
