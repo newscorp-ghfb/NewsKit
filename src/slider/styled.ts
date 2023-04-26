@@ -192,7 +192,7 @@ export const StyledThumbValue = styled.div<StyledThumbValueProps>`
       ...rest,
     });
     return vertical
-      ? `right: -${thumbLabelSpace};`
+      ? `right: -${thumbLabelSpace}; top: 8px;`
       : `top: -${thumbLabelSpace};`;
   }}
 
