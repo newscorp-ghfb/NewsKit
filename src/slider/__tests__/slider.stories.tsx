@@ -5,8 +5,8 @@ import {StatefulSlider} from '..';
 import {getColorCssFromTheme, styled} from '../../utils/style';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {
-  StorybookCase,
   StorybookPage,
+  StorybookCase,
   StorybookHeading,
 } from '../../test/storybook-comps';
 import {CreateThemeArgs, ThemeProvider} from '../../theme';
