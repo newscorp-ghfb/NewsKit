@@ -1,0 +1,94 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@nrwl/nx"],
+  "settings": {
+    "next": {
+      "rootDir": "site/"
+    }
+  },
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "page": true,
+    "browser": true,
+    "context": true,
+    "cy": true,
+    "Cypress": true,
+    "window": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": "off",
+        "eslint-comments/no-unused-disable": "off"
+      }
+    },
+    {
+      "files": ["*.tsx"],
+      "extends": ["plugin:@next/next/recommended"],
+      "rules": {
+        "react/prop-types": "off",
+        "react/forbid-prop-types": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-props-no-spreading": "off",
+        "react/require-default-props": "off",
+    
+        "react/jsx-no-useless-fragment": "off",
+        "react-hooks/rules-of-hooks": "warn",
+        "react/display-name": "off",
+        "react/jsx-key": "off"
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript", "plugin:prettier/recommended", "prettier"],
+      "rules": {
+        "no-undef": "off",
+        "no-var": "off",
+        "no-console": "warn",
+        "func-names": "warn",
+
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-this-alias": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-unused-expressions": "warn",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-var-require": "off",
+        "@typescript-eslint/no-var-requires": "off",
+
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true,
+            "trailingComma": "all",
+            "bracketSpacing": false,
+            "arrowParens": "avoid"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {
+        "no-undef": "off"
+      }
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx", "*.test.js", "*.test.jsx"],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "no-var": "off"
+      }
+    }
+  ]
+}

@@ -35,7 +35,7 @@ Scripts should be named using the following naming convention:
 
 * `test:unit:comps` -> runs the unit tests on the src folder.
 
-* `test:unit:site` -> runs the unit tests on the site folder.
+* `test:unit:docs` -> runs the unit tests on the site folder.
 
 * `test:visual:comps:ci:percy` -> starts the local storybook and runs the percy storybook tests afterwards.
 

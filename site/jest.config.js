@@ -7,6 +7,7 @@ const {compilerOptions} = require('./tsconfig.jest.json');
 const paths = pathsToModuleNameMapper(compilerOptions.paths, {
   prefix: '<rootDir>/',
 });
+
 module.exports = {
   displayName: 'Site',
   rootDir: './',
@@ -31,7 +32,6 @@ module.exports = {
     '.+\\.(css|styl|less|sass|scss)$': '<rootDir>/jest-config/style-mock',
     ...paths,
   },
-  globals: {},
   reporters: [
     [
       'jest-slow-test-reporter',
