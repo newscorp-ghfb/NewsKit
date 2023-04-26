@@ -1,14 +1,6 @@
-import React, {useState, useEffect, useRef} from 'react';
-import {
-  Box,
-  VisuallyHidden,
-  FormLabel,
-  Select,
-  Icon,
-  Text,
-} from '@chakra-ui/react';
+import React, {useEffect, useRef, useState} from 'react';
 import {detectFont} from 'detect-font';
-
+import {Select, SelectOption} from 'newskit';
 import {useAppState} from '../../app-state-context';
 import fontData from '../../json/systemFonts.json';
 
@@ -45,18 +37,12 @@ export default function SystemFontSelector() {
   }, [state.selectedFont.name]);
 
   return (
-    <Box>
-      <VisuallyHidden>
-        <FormLabel>System font name</FormLabel>
-      </VisuallyHidden>
-
+    <div>
       <Select
-        borderRadius={16}
-        size="lg"
-        _focus={{boxShadow: 'outline', borderColor: 'transparent'}}
+        id="select-system-font"
         value={value}
         onChange={ev => {
-          const newValue = ev.currentTarget.value;
+          const newValue = ev.target.value;
 
           setValue(newValue);
 
@@ -77,28 +63,12 @@ export default function SystemFontSelector() {
         aria-describedby={message ? 'systemFontErrorMessage' : undefined}
         placeholder="Choose a system font"
       >
-        {fontData.map(s => (
-          <option key={s.familyName}>{s.familyName}</option>
+        {fontData.map(({familyName}) => (
+          <SelectOption key={familyName} value={familyName}>
+            {familyName}
+          </SelectOption>
         ))}
       </Select>
-      {message && value ? (
-        <Text
-          id="systemFontErrorMessage"
-          paddingTop={2}
-          paddingX={4}
-          color="gray.500"
-          display="flex"
-          alignItems="center"
-        >
-          <Icon name="infooutline" marginRight={2} /> {message}
-        </Text>
-      ) : null}
-
-      <VisuallyHidden>
-        <Box ref={testRef} style={{fontFamily: state.selectedFont.name}}>
-          TEST
-        </Box>
-      </VisuallyHidden>
-    </Box>
+    </div>
   );
 }

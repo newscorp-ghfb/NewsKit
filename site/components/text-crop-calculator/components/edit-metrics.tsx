@@ -1,6 +1,5 @@
 import React, {ChangeEvent, useEffect, useState} from 'react';
-import {Box, FormLabel, Input} from '@chakra-ui/react';
-import {GridLayout} from 'newskit*';
+import {GridLayout, GridLayoutItem, TextField, Label} from 'newskit';
 import {useAppState} from '../app-state-context';
 
 const EditMetrics = () => {
@@ -15,25 +14,16 @@ const EditMetrics = () => {
 
   return (
     <GridLayout
-      columns={{sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr'}}
-      rowGap="space020"
+      columns={{sm: '1fr', md: '1fr 1fr', xl: '1fr 1fr 1fr'}}
+      rowGap="space040"
+      columnGap="space040"
+      overrides={{
+        paddingBlock: 'space030',
+      }}
     >
-      <Box
-        display="flex"
-        alignItems="center"
-        paddingBottom={[2, 2, 0]}
-        paddingX={[0, 6]}
-      >
-        <FormLabel
-          htmlFor="customAscent"
-          whiteSpace="nowrap"
-          fontSize={['md', 'lg']}
-          color="gray.500"
-          flexGrow={1}
-        >
-          Ascender
-        </FormLabel>
-        <Input
+      <GridLayoutItem>
+        <Label htmlFor="customAscent">Ascender</Label>
+        <TextField
           id="customAscent"
           value={customMetrics.ascent}
           autoFocus
@@ -44,27 +34,11 @@ const EditMetrics = () => {
               ascent: parseInt(ev.currentTarget.value, 10),
             });
           }}
-          borderRadius={12}
-          _focus={{boxShadow: 'outline', borderColor: 'transparent'}}
-          w={80}
         />
-      </Box>
-      <Box
-        display="flex"
-        alignItems="center"
-        paddingBottom={[2, 2, 0]}
-        paddingX={[0, 6]}
-      >
-        <FormLabel
-          htmlFor="customCapHeight"
-          whiteSpace="nowrap"
-          fontSize={['md', 'lg']}
-          color="gray.500"
-          flexGrow={1}
-        >
-          Cap Height
-        </FormLabel>
-        <Input
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <Label htmlFor="customCapHeight">Cap Height</Label>
+        <TextField
           id="customCapHeight"
           value={customMetrics.capHeight}
           type="number"
@@ -74,27 +48,11 @@ const EditMetrics = () => {
               capHeight: parseInt(ev.currentTarget.value, 10),
             });
           }}
-          borderRadius={12}
-          _focus={{boxShadow: 'outline', borderColor: 'transparent'}}
-          w={80}
         />
-      </Box>
-      <Box
-        display="flex"
-        alignItems="center"
-        paddingBottom={[2, 2, 0]}
-        paddingX={[0, 6]}
-      >
-        <FormLabel
-          htmlFor="customDescent"
-          whiteSpace="nowrap"
-          fontSize={['md', 'lg']}
-          color="gray.500"
-          flexGrow={1}
-        >
-          Descender
-        </FormLabel>
-        <Input
+      </GridLayoutItem>
+      <GridLayoutItem>
+        <Label htmlFor="customDescent">Descender</Label>
+        <TextField
           id="customDescent"
           value={customMetrics.descent}
           type="number"
@@ -104,11 +62,8 @@ const EditMetrics = () => {
               descent: parseInt(ev.currentTarget.value, 10),
             });
           }}
-          borderRadius={12}
-          _focus={{boxShadow: 'outline', borderColor: 'transparent'}}
-          w={80}
         />
-      </Box>
+      </GridLayoutItem>
     </GridLayout>
   );
 };

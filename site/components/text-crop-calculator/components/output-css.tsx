@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box} from '@chakra-ui/react';
+import {Block} from 'newskit';
 
 import {useAppState} from '../app-state-context';
 import {Code} from '../../code';
@@ -13,7 +13,7 @@ const OutputCSS = () => {
   } = state;
 
   return (
-    <Box paddingY={4} paddingX={2} paddingTop={8} overflow="auto">
+    <Block>
       <Code>
         {JSON.stringify(
           {
@@ -33,7 +33,7 @@ const OutputCSS = () => {
           2,
         )}
       </Code>
-    </Box>
+    </Block>
   );
 };
 

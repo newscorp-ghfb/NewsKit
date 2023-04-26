@@ -12,7 +12,7 @@ export const ArrowContainer = styled.div`
 
 export const Label = styled(TextBlock)<{align?: 'left' | 'right'}>`
   ${({align}) => ({
-    'text-align': align,
+    textAlign: align,
     width: labelWidth,
   })}
 `;
@@ -79,4 +79,8 @@ export const ExampleText = styled.div<{fontSize: number}>`
   z-index: 1;
   color: green;
   ${({fontSize}) => ({fontSize: `${fontSize}px`})}
+`;
+
+export const HiddenInput = styled.input`
+  display: none;
 `;

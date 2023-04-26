@@ -1,54 +1,28 @@
-import React, {Fragment} from 'react';
-import {Tabs, TabList, Tab, TabPanels, TabPanel, Box} from '@chakra-ui/react';
-import GoogleFontSelector from './GoogleFontSelector';
+import React from 'react';
+import {Tab, Tabs} from 'newskit';
+import GoogleFontSelector from './google-font-selector';
 import SystemFontSelector from './SystemFontSelector';
 import UrlFontSelector from './UrlFontSelector';
 import FileUploadSelector from './FileUploadSelector';
 import FontInjector from './FontInjector';
-import tabStyles from '../../tabStyles';
 
 const FontSelector = () => (
   <>
-    <FontInjector />
-    <Tabs {...tabStyles.tabs}>
-      <TabList
-        padding={2}
-        margin={-2}
-        paddingRight={0}
-        marginRight={0}
-        overflow="auto"
-      >
-        <Tab {...tabStyles.tab}>
-          <Box whiteSpace="nowrap">Google Fonts</Box>
-        </Tab>
-        <Tab {...tabStyles.tab}>System</Tab>
-        <Tab {...tabStyles.tab}>Url</Tab>
-        <Tab {...tabStyles.tab}>Upload</Tab>
-      </TabList>
-
-      <TabPanels>
-        <TabPanel>
-          <Box paddingY={4}>
-            <GoogleFontSelector />
-          </Box>
-        </TabPanel>
-        <TabPanel>
-          <Box paddingY={4}>
-            <SystemFontSelector />
-          </Box>
-        </TabPanel>
-        <TabPanel>
-          <Box paddingY={4}>
-            <UrlFontSelector />
-          </Box>
-        </TabPanel>
-        <TabPanel>
-          <Box paddingY={4}>
-            <FileUploadSelector />
-          </Box>
-        </TabPanel>
-      </TabPanels>
+    <Tabs>
+      <Tab label="Google Fonts" key="google-fonts">
+        <GoogleFontSelector />
+      </Tab>
+      <Tab label="System" key="system">
+        <SystemFontSelector />
+      </Tab>
+      <Tab label="Url" key="url">
+        <UrlFontSelector />
+      </Tab>
+      <Tab label="Upload" key="upload">
+        <FileUploadSelector />
+      </Tab>
     </Tabs>
+    <FontInjector />
   </>
 );
 

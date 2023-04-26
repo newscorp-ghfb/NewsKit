@@ -1,5 +1,4 @@
 import React from 'react';
-import {ChakraProvider} from '@chakra-ui/react';
 import {AppStateProvider} from '../../../components/text-crop-calculator/app-state-context';
 import TextCropCalculator from '../../../components/text-crop-calculator/text-crop-calculator';
 import {LayoutProps} from '../../../components/layout';
@@ -26,9 +25,7 @@ const FontMetrics = (layoutProps: LayoutProps) => (
     <ComponentPageCell>
       <ContentSection sectionName="overview">
         <AppStateProvider>
-          <ChakraProvider>
-            <TextCropCalculator />
-          </ChakraProvider>
+          <TextCropCalculator />
         </AppStateProvider>
       </ContentSection>
     </ComponentPageCell>

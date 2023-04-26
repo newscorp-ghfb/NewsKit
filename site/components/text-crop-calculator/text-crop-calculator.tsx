@@ -14,7 +14,7 @@ const Step = ({
   title?: string;
   children: ReactNode;
 }) => (
-  <Block>
+  <Block marginBlockEnd="space080">
     {title && (
       <TextBlock
         stylePreset="inkBrand010"
@@ -22,6 +22,7 @@ const Step = ({
           xs: 'editorialHeadline010',
           md: 'editorialHeadline030',
         }}
+        marginBlockEnd="space040"
       >
         {number}. {title}
       </TextBlock>
@@ -33,16 +34,15 @@ const Step = ({
 const TextCropCalculator = () => (
   <Block>
     <Step number={1} title="Choose a font">
-      <FontSelector />
+      <Block marginBlockEnd="space050">
+        <FontSelector />
+      </Block>
       <MetricsPreview />
     </Step>
-    <Step
-      number={2}
-      title="Adjust metrics (optional - e.g. if using a custom font)"
-    >
+    <Step number={2} title="Adjust metrics">
       <EditMetrics />
     </Step>
-    <Step number={3} title="Copy the font metrics into your theme">
+    <Step number={3} title="Add to theme">
       <OutputCSS />
     </Step>
   </Block>

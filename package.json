@@ -225,8 +225,6 @@
     "@babel/runtime-corejs3": "^7.11.2",
     "@capsizecss/core": "^3.0.0",
     "@capsizecss/metrics": "^1.1.1",
-    "@chakra-ui/core": "^0.8.0",
-    "@chakra-ui/react": "^2.5.5",
     "@emotion-icons/emotion-icon": "4.1.0",
     "@emotion-icons/material": "3.9.0",
     "@emotion-icons/material-outlined": "3.8.0",

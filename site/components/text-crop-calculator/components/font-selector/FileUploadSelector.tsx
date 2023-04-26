@@ -1,17 +1,9 @@
 import React, {ChangeEvent, useEffect, useRef, useState} from 'react';
-import {
-  Box,
-  Button,
-  FormLabel,
-  Input,
-  InputGroup,
-  InputRightElement,
-  Text,
-  VisuallyHidden,
-} from '@chakra-ui/react';
+import {TextField, Button} from 'newskit';
 import {fromBlob} from '../../unpack';
 
 import {useAppState} from '../../app-state-context';
+import {HiddenInput} from '../styled';
 
 export default function FileUploadSelector() {
   const {dispatch, state} = useAppState();
@@ -27,12 +19,9 @@ export default function FileUploadSelector() {
   }, [state.selectedFont.source]);
 
   return (
-    <Box>
-      <VisuallyHidden>
-        <FormLabel htmlFor="fileUpload">Font file</FormLabel>
-      </VisuallyHidden>
-      <InputGroup size="lg">
-        <Input
+    <div>
+      <div>
+        <TextField
           aria-hidden="true"
           tabIndex={-1}
           placeholder="Upload a file"
@@ -46,31 +35,25 @@ export default function FileUploadSelector() {
               fileInputRef.current.click();
             }
           }}
-          borderRadius={16}
-          paddingRight={20}
-          isInvalid={Boolean(message)}
-          _focus={{boxShadow: 'outline'}}
+          endEnhancer={
+            <Button
+              size="small"
+              aria-label="Upload a file"
+              onClick={() => {
+                if (message) {
+                  setMessage('');
+                }
+                if (fileInputRef.current) {
+                  fileInputRef.current.click();
+                }
+              }}
+            >
+              Browse
+            </Button>
+          }
         />
-        <InputRightElement width="85px">
-          <Button
-            size="sm"
-            borderRadius={12}
-            color="gray.600"
-            aria-label="Upload a file"
-            onClick={() => {
-              if (message) {
-                setMessage('');
-              }
-              if (fileInputRef.current) {
-                fileInputRef.current.click();
-              }
-            }}
-          >
-            Browse
-          </Button>
-        </InputRightElement>
-      </InputGroup>
-      <Input
+      </div>
+      <HiddenInput
         id="fileUpload"
         type="file"
         ref={fileInputRef}
@@ -123,22 +106,7 @@ export default function FileUploadSelector() {
           }
         }}
         accept=".ttf, .otf, .woff, .woff2"
-        pos="absolute"
-        top={0}
-        opacity={0}
-        width={0}
       />
-      {message ? (
-        <Text
-          id="fileUploadErrorMessage"
-          pos="absolute"
-          paddingY={2}
-          paddingX={4}
-          color="red.500"
-        >
-          {message}
-        </Text>
-      ) : null}
-    </Box>
+    </div>
   );
 }
