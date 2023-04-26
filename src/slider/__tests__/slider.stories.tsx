@@ -406,7 +406,7 @@ export const StorySliderWithTextLabels = () => (
       </StorybookCase>
     </StorybookPage>
     <StorybookPage columns="1fr 1fr 1fr">
-      <StorybookCase title="Label posotion before">
+      <StorybookCase title="Label position before">
         <StatefulSlider
           values={[150]}
           max={200}
@@ -416,7 +416,7 @@ export const StorySliderWithTextLabels = () => (
           labelPosition="before"
         />
       </StorybookCase>
-      <StorybookCase title="Label posotion after">
+      <StorybookCase title="Label position after">
         <StatefulSlider
           values={[150]}
           max={200}
@@ -489,7 +489,7 @@ export const StorySliderWithVerticalTextLabels = () => (
       </StorybookCase>
     </StorybookPage>
     <StorybookPage columns="1fr 1fr 1fr">
-      <StorybookCase title="Label posotion before">
+      <StorybookCase title="Label position before">
         <VerticalContainerWithBorder>
           <StatefulSlider
             values={[150]}
@@ -502,7 +502,7 @@ export const StorySliderWithVerticalTextLabels = () => (
           />
         </VerticalContainerWithBorder>
       </StorybookCase>
-      <StorybookCase title="Label posotion after">
+      <StorybookCase title="Label position after">
         <VerticalContainerWithBorder>
           <StatefulSlider
             values={[150]}
