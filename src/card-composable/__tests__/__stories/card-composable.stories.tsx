@@ -11,7 +11,6 @@ import {
   CardMedia,
 } from '../../card-composable';
 import {Headline, HeadlineProps} from '../../../headline';
-import {Image} from '../../../image';
 import {CreateThemeArgs, ThemeProvider} from '../../../theme';
 import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
 import {Flag} from '../../../flag';
@@ -167,6 +166,20 @@ const cardCustomThemeObject: CreateThemeArgs = {
           iconColor: '{{colors.inkBase}}',
         },
       },
+      cardComposableVertical: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '#eaeeef',
+          borderWidth: `borderWidth: '{{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth010}} {{borders.borderWidth010}}'`,
+        },
+      },
+      cardComposableHorizontal: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '#eaeeef',
+          borderWidth: `borderWidth: '{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}'`,
+        },
+      },
     },
   },
 };
@@ -201,39 +214,30 @@ const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
   size = 'medium',
 }) => (
   <CardComposable
-    overrides={{width: map[size]}}
+    overrides={{width: map[size], stylePreset: 'cardComposableVertical'}}
     style={{
       overflow: 'hidden',
-      borderBottom: '1px solid #eaeeef',
-      borderLeft: '1px solid #eaeeef',
-      borderRight: '1px solid #eaeeef',
     }}
   >
-    <CardMedia columns="1fr" rows="1fr">
-      <GridLayoutItem column="1 / 2" row="1 / 2">
-        <Image
-          src={
-            size === 'small'
-              ? 'https://storybook.newskit.co.uk/placeholder-1x1.png'
-              : 'https://storybook.newskit.co.uk/placeholder-3x2.png'
-          }
-          alt="card-media-image"
-          loadingAspectRatio={size === 'small' ? '1:1' : '3:2'}
-        />
-      </GridLayoutItem>
-      <GridLayoutItem
-        column="1 / 2"
-        row="1 / 2"
-        alignSelf="end"
-        justifySelf="start"
-        style={{zIndex: 2}}
-        marginInlineStart="space040"
-      >
-        <Flag overrides={{typographyPreset: 'editorialLabel020'}}>
-          EXCLUSIVE
-        </Flag>
-      </GridLayoutItem>
-    </CardMedia>
+    <CardMedia
+      media={{
+        src:
+          size === 'small'
+            ? 'https://storybook.newskit.co.uk/placeholder-1x1.png'
+            : 'https://storybook.newskit.co.uk/placeholder-3x2.png',
+        alt: 'card-media-image',
+        loadingAspectRatio: size === 'small' ? '1:1' : '3:2',
+      }}
+    />
+    <GridLayoutItem
+      area="media"
+      alignSelf="end"
+      justifySelf="start"
+      style={{zIndex: 2}}
+      marginInlineStart="space040"
+    >
+      <Flag overrides={{typographyPreset: 'editorialLabel020'}}>EXCLUSIVE</Flag>
+    </GridLayoutItem>
     <CardContent
       data-testid="card-content"
       rowGap="space045"
@@ -302,44 +306,44 @@ const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
 
 const CardHorizontalTheSun: React.FC<MediaContextActionProps> = ({
   size = 'medium',
-  area,
+  area = `
+  media content
+  actions actions
+`,
 }) => (
   <CardComposable
-    overrides={{width: map[size]}}
+    overrides={{width: map[size], stylePreset: 'cardComposableHorizontal'}}
     style={{
       overflow: 'hidden',
-      borderBottom: '1px solid #eaeeef',
     }}
     columns={size === 'small' ? '1fr 1fr' : '1.5fr 1fr'}
     columnGap="space040"
     rowGap="space045"
     areas={area}
   >
-    <CardMedia columns="1fr" rows="1fr">
-      <GridLayoutItem column="1 / 2" row="1 / 2">
-        <Image
-          src="https://storybook.newskit.co.uk/placeholder-3x2.png"
-          alt="card-media-image"
-          loadingAspectRatio="3:2"
-        />
-      </GridLayoutItem>
-      <GridLayoutItem
-        column="1 / 2"
-        row="1 / 2"
-        alignSelf="end"
-        justifySelf="start"
-        style={{zIndex: 2}}
+    <CardMedia
+      media={{
+        src: 'https://storybook.newskit.co.uk/placeholder-3x2.png',
+        alt: 'card-media-image',
+        loadingAspectRatio: '3:2',
+      }}
+    />
+
+    <GridLayoutItem
+      area="media"
+      alignSelf="end"
+      justifySelf="start"
+      style={{zIndex: 2}}
+    >
+      <Flag
+        size="small"
+        overrides={{
+          typographyPreset: 'editorialLabel010',
+        }}
       >
-        <Flag
-          size="small"
-          overrides={{
-            typographyPreset: 'editorialLabel010',
-          }}
-        >
-          EXCLUSIVE
-        </Flag>
-      </GridLayoutItem>
-    </CardMedia>
+        EXCLUSIVE
+      </Flag>
+    </GridLayoutItem>
     <CardContent
       rowGap="space030"
       data-testid="card-content"
@@ -1187,21 +1191,10 @@ export const TheSunStory = () => (
       <CardVerticalTheSun size="small" />
     </StorybookCase>
     <StorybookCase title="Horizontal - medium">
-      <CardHorizontalTheSun
-        area={`
-      media content
-      actions actions
-    `}
-      />
+      <CardHorizontalTheSun />
     </StorybookCase>
     <StorybookCase title="Horizontal - small">
-      <CardHorizontalTheSun
-        size="small"
-        area={`
-      media content
-      actions actions
-    `}
-      />
+      <CardHorizontalTheSun size="small" />
     </StorybookCase>
     <StorybookCase title="Horizontal - reverse - small">
       <CardHorizontalTheSun
