@@ -2,7 +2,7 @@ import React, {useCallback, ChangeEvent} from 'react';
 import {useCombobox} from 'downshift';
 import debounce from 'debounce';
 import {FormLabel, Box, Input, VisuallyHidden, Text} from '@chakra-ui/react';
-import ContentBlock from './content-block';
+import {Block} from 'newskit';
 
 interface AutosuggestProps<Value> {
   value: Value;
@@ -102,7 +102,7 @@ export default function Autosuggest<Value>({
         bg="white"
         marginTop={1}
       >
-        <ContentBlock>
+        <Block>
           <Box as="ul" {...getMenuProps()} paddingY={4}>
             {isOpen &&
               suggestions.map((item, index) => (
@@ -134,7 +134,7 @@ export default function Autosuggest<Value>({
                 </Box>
               ))}
           </Box>
-        </ContentBlock>
+        </Block>
       </Box>
     </Box>
   );
