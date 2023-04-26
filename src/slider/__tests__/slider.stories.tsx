@@ -390,7 +390,7 @@ export const StorySliderWithTextLabels = () => (
           maxLabel="100%"
         />
       </StorybookCase>
-      <StorybookCase title="Label posotion above thumb">
+      <StorybookCase title="Label position above thumb">
         <StatefulSlider
           values={[30]}
           max={40}
@@ -578,7 +578,7 @@ StorySliderWithStylingOverrides.parameters = {
 export const StorySliderWithOverrides = () => (
   <>
     <StorybookPage columns="1fr 1fr 1fr">
-      <StorybookCase title="Icon compoenent">
+      <StorybookCase title="Icon component">
         <ContainerWithBorder>
           <StatefulSlider
             values={[40]}
