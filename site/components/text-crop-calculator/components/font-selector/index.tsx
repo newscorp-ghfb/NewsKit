@@ -1,10 +1,10 @@
 import React from 'react';
 import {Tab, Tabs} from 'newskit';
 import GoogleFontSelector from './google-font-selector';
-import SystemFontSelector from './SystemFontSelector';
-import UrlFontSelector from './UrlFontSelector';
-import FileUploadSelector from './FileUploadSelector';
-import FontInjector from './FontInjector';
+import SystemFontSelector from './system-font-selector';
+import UrlFontSelector from './url-font-selector';
+import FileUploadSelector from './file-upload-selector';
+import FontInjector from './font-injector';
 
 const FontSelector = () => (
   <>
