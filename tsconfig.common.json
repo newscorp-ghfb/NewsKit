@@ -1,19 +1,31 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
     "target": "es5",
     "module": "commonjs",
+    "lib": ["DOM", "ES2019"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@newskit/newskit/ui": ["src/index.ts"]
+    },
     "jsx": "react",
-    "sourceMap": true,
     "strict": true,
     "strictNullChecks": true,
-    "moduleResolution": "node",
     "esModuleInterop": true,
     "preserveSymlinks": true,
     "noImplicitAny": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "lib": ["DOM", "ES2019"]
-  }
+    "isolatedModules": true
+  },
+  "exclude": ["node_modules", "tmp"]
 }

@@ -2,7 +2,7 @@
 process.env.TZ = 'GMT';
 
 const {pathsToModuleNameMapper} = require('ts-jest');
-const {compilerOptions} = require('./tsconfig.jest.json');
+const {compilerOptions} = require('./tsconfig.spec.json');
 
 const paths = pathsToModuleNameMapper(compilerOptions.paths, {
   prefix: '<rootDir>/',
@@ -24,7 +24,7 @@ module.exports = {
       'ts-jest',
       {
         diagnostics: true,
-        tsconfig: '<rootDir>/tsconfig.jest.json',
+        tsconfig: '<rootDir>/tsconfig.spec.json',
       },
     ],
   },

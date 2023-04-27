@@ -629,7 +629,7 @@ jobs:
           at: ~/project
       - run:
           name: Unit Testing
-          command: yarn test:unit:comps2
+          command: yarn test:unit:comps:experimental
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
@@ -648,6 +648,27 @@ jobs:
       - run:
           name: Unit Testing
           command: yarn test:unit:docs:ci
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - run:
+          name: Check component statuses match code tags
+          command: yarn test:comp-statuses
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
+      - slack/notify:
+          <<: *slack_notify
+
+  test_unit_docs2:
+    executor: node-xlarge
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Unit Testing
+          command: yarn test:unit:docs:experimental
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - run:
@@ -1252,10 +1273,13 @@ workflows:
       - lint:
           requires:
             - build_icons
-      - test_unit_comps:
+      - test_unit_comps2:
           requires:
             - build_icons
-      - test_unit_comps2:
+      - test_unit_docs2:
+          requires:
+            - build_icons
+      - test_unit_comps:
           requires:
             - build_icons
       - test_unit_docs:

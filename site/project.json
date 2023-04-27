@@ -49,6 +49,16 @@
       "options": {
         "lintFilePatterns": ["site/**/*.{ts,tsx,js,jsx}"]
       }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectName}"],
+      "options": {
+        "jestConfig": "site/jest.config.js",
+        "passWithNoTests": true
+      },
+      "configurations": {
+      }
     }
   },
   "tags": []

@@ -20,10 +20,6 @@
         "passWithNoTests": true
       },
       "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
       }
     }
   }
