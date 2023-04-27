@@ -789,6 +789,9 @@ export const StoryContainerQueries = () => {
           <CardWithQueries />
         </QueryContainerLarge>
       </StorybookCase>
+      <StorybookCase title="No container">
+        <CardWithQueries />
+      </StorybookCase>
     </StorybookPage>
   );
 };

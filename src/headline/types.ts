@@ -1,8 +1,8 @@
-import {MQ, CQ} from '../utils/style';
+import {MQ} from '../utils/style';
 import {LogicalProps} from '../utils/logical-properties';
 
 export interface HeadlineOverrides extends LogicalProps {
-  typographyPreset?: MQ<string> & CQ; // < --- I don't like doing this, we could probably just allow it on MQ 🤔
+  typographyPreset?: MQ<string>;
   kicker?: {
     stylePreset?: MQ<string>;
     spaceInline?: MQ<string>;
