@@ -1,4 +1,4 @@
-import {CSSObject, getTypographyPreset, getXFromTheme, MQ} from './style';
+import {CSSObject, getTypographyPreset, getXFromTheme, MQ, CQ} from './style';
 import {ThemeProp} from './style-types';
 import {deepMerge} from './deep-merge';
 import {get} from './get';
@@ -14,12 +14,12 @@ export interface LogicalMarginProps {
 }
 
 export interface LogicalPaddingProps {
-  paddingInlineStart?: MQ<string>;
-  paddingInlineEnd?: MQ<string>;
-  paddingInline?: MQ<string>;
-  paddingBlockStart?: MQ<string>;
-  paddingBlockEnd?: MQ<string>;
-  paddingBlock?: MQ<string>;
+  paddingInlineStart?: MQ<string> & CQ;
+  paddingInlineEnd?: MQ<string> & CQ;
+  paddingInline?: MQ<string> & CQ;
+  paddingBlockStart?: MQ<string & CQ>;
+  paddingBlockEnd?: MQ<string> & CQ;
+  paddingBlock?: MQ<string> & CQ;
 }
 
 export interface LogicalProps extends LogicalMarginProps, LogicalPaddingProps {}

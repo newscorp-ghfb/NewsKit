@@ -1,6 +1,7 @@
 /* eslint-disable no-script-url */
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
+import {styled} from '../../../utils';
 import {
   CardComposable,
   CardActions,
@@ -31,6 +32,15 @@ import {LinkInline} from '../../../link';
 import {Tag} from '../../../tag';
 import {VideoPlayer} from '../../../video-player';
 import {DEFAULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/config';
+
+const QueryContainerSmall = styled.div`
+  container-type: inline-size;
+  width: 200px;
+`;
+const QueryContainerLarge = styled.div`
+  container-type: inline-size;
+  width: 400px;
+`;
 
 const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
   <Headline
@@ -699,6 +709,90 @@ export const StoryLogicalProps = () => (
   </StorybookPage>
 );
 StoryLogicalProps.storyName = 'Logical props';
+
+export const StoryContainerQueries = () => {
+  const CardWithQueries = () => (
+    <CardComposable
+      overrides={{
+        stylePreset: 'cardInset',
+        paddingBlock: {
+          rules: [
+            {
+              rule: '@container (width < 300px)',
+              value: 'space010',
+            },
+            {
+              rule: '@container (width > 300px)',
+              value: 'space060',
+            },
+          ],
+        },
+        paddingInline: {
+          rules: [
+            {
+              rule: '@container (width < 300px)',
+              value: 'space010',
+            },
+            {
+              rule: '@container (width > 300px)',
+              value: 'space060',
+            },
+          ],
+        },
+      }}
+      rowGap={areasGap}
+    >
+      <CardContent rowGap={contentGap}>
+        <Flag>Flag</Flag>
+        <Headline
+          overrides={{
+            typographyPreset: {
+              rules: [
+                {
+                  rule: '@container (width < 300px)',
+                  value: 'editorialHeadline020',
+                },
+                {
+                  rule: '@container (width > 300px)',
+                  value: 'editorialHeadline050',
+                },
+              ],
+            },
+          }}
+        >
+          This headlines typographyPreset changes depending on its container
+          size
+        </Headline>
+        <P />
+      </CardContent>
+      <CardMedia
+        media={{
+          src: 'https://storybook.newskit.co.uk/placeholder-3x2.png',
+        }}
+      />
+      <CardActions>
+        <Tag href={href} size="medium">
+          Tag
+        </Tag>
+      </CardActions>
+    </CardComposable>
+  );
+  return (
+    <StorybookPage>
+      <StorybookCase title="Small container">
+        <QueryContainerSmall>
+          <CardWithQueries />
+        </QueryContainerSmall>
+      </StorybookCase>
+      <StorybookCase title="Large container">
+        <QueryContainerLarge>
+          <CardWithQueries />
+        </QueryContainerLarge>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryContainerQueries.storyName = 'Container Queries';
 
 export const StoryOverrides = () => (
   <StorybookPage>

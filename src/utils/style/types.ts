@@ -7,3 +7,12 @@ export type MQPartial<T> = Partial<{
 }>;
 
 export type MQ<T> = T | MQPartial<T> | {[minWidth: string]: T};
+
+export type CSSQuery = {
+  rule: `@media ${string}` | `@container ${string}`;
+  value: string;
+};
+
+export type CQ = {
+  rules?: CSSQuery[];
+};

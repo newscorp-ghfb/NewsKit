@@ -1,6 +1,5 @@
 import {Breakpoints, BreakpointKeys, Theme} from '../theme';
 import {hasOwnProperty} from './has-own-property';
-import {isValidCSSSizeUnit} from './style/utils';
 
 interface ThemeProp {
   theme: Theme;
@@ -48,22 +47,22 @@ export const getMediaQueryFromTheme = (
 export const isResponsive = (
   prop: unknown,
   breakpoints: Breakpoints,
-): prop is Record<keyof Breakpoints, unknown> =>
+): prop is Record<keyof Breakpoints | 'rules', unknown> =>
   !!prop &&
   typeof prop === 'object' &&
   (Object.keys(breakpoints).some(bp => prop && hasOwnProperty(prop, bp)) ||
-    Object.keys(prop).some(p => isValidCSSSizeUnit(p)));
+    hasOwnProperty(prop, 'rules'));
 
-export const getContainerQuery = (
-  minWidth: string,
-  maxWidth?: string,
-): string => {
-  const queries = [];
-  if (minWidth) {
-    queries.push(`(min-width: ${minWidth})`);
-  }
-  if (maxWidth) {
-    queries.push(`(max-width: ${maxWidth})`);
-  }
-  return `@container ${queries.join(' AND ')}`;
-};
+// export const getContainerQuery = (
+//   minWidth?: string,
+//   maxWidth?: string,
+// ): string => {
+//   const queries = [];
+//   if (minWidth) {
+//     queries.push(`(min-width: ${minWidth})`);
+//   }
+//   if (maxWidth) {
+//     queries.push(`(max-width: ${maxWidth})`);
+//   }
+//   return `@container ${queries.join(' AND ')}`;
+// };

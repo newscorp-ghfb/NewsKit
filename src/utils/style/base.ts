@@ -1,13 +1,9 @@
 import {Theme, BreakpointKeys} from '../../theme';
-import {
-  isResponsive,
-  getMediaQueryFromTheme,
-  getContainerQuery,
-} from '../responsive-helpers';
-import {filterObject, rejectObject} from '../filter-object';
+import {isResponsive, getMediaQueryFromTheme} from '../responsive-helpers';
+import {filterObject} from '../filter-object';
 import {getToken} from '../get-token';
 import {ThemeProp} from '../style-types';
-import {MQ} from './types';
+import {CSSQuery, MQ} from './types';
 import {isNonThemeValueAllowed, isValidUnit} from './utils';
 import {CSSObject} from './emotion';
 
@@ -118,32 +114,25 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
         return acc;
       }, {} as Record<string, unknown>);
 
-    // get container queries
-    const containerKeys: [string, ThemeToken][] = Object.entries(
-      rejectObject(propKeys, mq),
-    ) as any; // eslint-disable-line @typescript-eslint/no-explicit-any
+    const containerKeys = (propKeys.rules || []) as CSSQuery[];
 
-    const cssContainerQueryObject = containerKeys.reduce(
-      (acc, [minWidth, presetKey]) => {
+    const cssContainerQueryObject =
+      containerKeys &&
+      containerKeys.reduce((acc, query) => {
+        const {rule, value} = query;
         let preset = '' as Record<ThemeToken, unknown>[ThemeToken];
         const MQtokens =
-          typeof presetKey === 'string' && (presetKey as string).split(' ');
+          typeof value === 'string' && (value as string).split(' ');
         if (themeKey === 'spacePresets' && isMQTokenArray(MQtokens)) {
           preset = mapTokensArray(MQtokens);
         } else {
           preset =
-            section[presetKey] ||
-            (canHaveNonThemeValue &&
-              isValidUnit(themeKey, presetKey) &&
-              presetKey);
+            section[value] ||
+            (canHaveNonThemeValue && isValidUnit(themeKey, value) && value);
         }
-
-        const mediaQuery = getContainerQuery(minWidth);
-        acc[mediaQuery] = preset;
+        acc[rule] = preset;
         return acc;
-      },
-      {} as Record<string, unknown>,
-    );
+      }, {} as Record<string, unknown>);
 
     return Object.entries({...cssMediaQueryObject, ...cssContainerQueryObject});
   }
