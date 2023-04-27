@@ -4,6 +4,7 @@ import MetricsPreview from './components/metrics-preview';
 import FontSelector from './components/font-selector';
 import OutputCSS from './components/output-css';
 import EditMetrics from './components/edit-metrics';
+import {AppStateProvider} from './app-state-context';
 
 const Step = ({
   number,
@@ -32,19 +33,21 @@ const Step = ({
 );
 
 const TextCropCalculator = () => (
-  <Block>
-    <Step number={1} title="Choose a font">
-      <Block marginBlockEnd="space050">
-        <FontSelector />
-      </Block>
-      <MetricsPreview />
-    </Step>
-    <Step number={2} title="Adjust metrics">
-      <EditMetrics />
-    </Step>
-    <Step number={3} title="Add to theme">
-      <OutputCSS />
-    </Step>
-  </Block>
+  <AppStateProvider>
+    <Block>
+      <Step number={1} title="Choose a font">
+        <Block marginBlockEnd="space050">
+          <FontSelector />
+        </Block>
+        <MetricsPreview />
+      </Step>
+      <Step number={2} title="Adjust metrics">
+        <EditMetrics />
+      </Step>
+      <Step number={3} title="Add to theme">
+        <OutputCSS />
+      </Step>
+    </Block>
+  </AppStateProvider>
 );
 export default TextCropCalculator;
