@@ -36,7 +36,7 @@
     "test:unit:run": "NODE_OPTIONS=\"--max-old-space-size=8192\" nx exec -- jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
     "test:unit:run:local": "yarn test:unit:run --maxWorkers=50% --coveragePathIgnorePatterns=/src/icons/",
     "test:unit:dev": "yarn build:icons && concurrently --names \"docs,comps\" \"yarn test:unit:docs\" \"yarn test:unit:comps\"",
-    "test:unit:ci": "yarn test:unit:run --maxWorkers=1 --ci --reporters=default --reporters=jest-junit",
+    "test:unit:ci": "yarn test:unit:node --maxWorkers=1 --ci --reporters=default --reporters=jest-junit",
     "test:unit:comps": "yarn test:unit:run:local --maxWorkers=50% --projects=src",
     "test:unit:docs": "yarn test:unit:run:local --maxWorkers=50% --projects=site",
     "test:comp-statuses": "node scripts/component-status.js",
