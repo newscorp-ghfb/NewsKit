@@ -1,7 +1,7 @@
 import 'cross-fetch/polyfill';
 
 import blobToBuffer from 'blob-to-buffer';
-import {create, open, Font as FontKitFont} from 'fontkit';
+import {create, Font as FontKitFont} from 'fontkit';
 
 // Ref: https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_other_languages
 const weightings = {
@@ -83,9 +83,6 @@ const unpackMetricsFromFont = (font: FontKitFont) => {
 };
 
 export type Font = ReturnType<typeof unpackMetricsFromFont>;
-
-export const fromFile = (path: string): Promise<Font> =>
-  open(path).then(unpackMetricsFromFont);
 
 export const fromBlob = async (blob: Blob): Promise<Font> =>
   new Promise((resolve, reject) => {
