@@ -31,8 +31,6 @@ Scripts should be named using the following naming convention:
 
 * `test:unit:run` -> used by other commands to call jest with correct base arguments. Use to generate snapshots for ci-only tests.
 
-* `test:unit:ci` -> runs all the unit tests with CircleCI optimised config.
-
 * `test:unit:comps` -> runs the unit tests on the src folder.
 
 * `test:unit:docs` -> runs the unit tests on the site folder.

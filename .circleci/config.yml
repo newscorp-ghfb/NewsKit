@@ -604,14 +604,14 @@ jobs:
           <<: *slack_notify
 
   test_unit_comps:
-    executor: node-large
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
       - run:
           name: Unit Testing
-          command: make unit_test_comps
+          command: yarn test:unit:comps:ci
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
@@ -629,7 +629,7 @@ jobs:
           at: ~/project
       - run:
           name: Unit Testing
-          command: make unit_test_docs
+          command: yarn test:unit:docs:ci
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - run:
