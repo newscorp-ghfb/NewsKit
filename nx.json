@@ -9,9 +9,7 @@
           "lint:code",
           "lint:markdown",
           "lint:next",
-          "test:unit:run:local",
           "test:unit:run",
-          "test:unit:ci",
           "test:unit:comps",
           "test:unit:docs"
         ]

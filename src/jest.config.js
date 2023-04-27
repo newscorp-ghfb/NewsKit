@@ -3,7 +3,6 @@ process.env.TZ = 'GMT';
 
 module.exports = {
   displayName: 'Components',
-  bail: 1,
   rootDir: './',
   setupFilesAfterEnv: [
     '<rootDir>/test/test-framework-setup.ts',
@@ -24,7 +23,6 @@ module.exports = {
     '/src/icons/filled/',
     '/src/icons/outlined/',
   ],
-  coverageDirectory: './coverage',
   coverageThreshold: {
     'src/**': {
       branches: 100,

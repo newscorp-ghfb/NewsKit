@@ -16,7 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@rspack-nx-newskit/newskit/ui": ["src/index.ts"]
+      "@newskit/newskit/ui": ["src/index.ts"]
     },
     "jsx": "react",
     "strict": true,
