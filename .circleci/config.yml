@@ -629,7 +629,7 @@ jobs:
           at: ~/project
       - run:
           name: Unit Testing
-          command: yarn test:unit:comps
+          command: yarn test:unit:comps2
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:

@@ -38,6 +38,7 @@
     "test:unit:dev": "yarn build:icons && concurrently --names \"docs,comps\" \"yarn test:unit:docs\" \"yarn test:unit:comps\"",
     "test:unit:ci": "yarn test:unit:node --maxWorkers=2 --ci --reporters=default --reporters=jest-junit",
     "test:unit:comps": "yarn test:unit:run:local --maxWorkers=50% --projects=src",
+    "test:unit:comps2": "npx nx test newskit-ui --codeCoverage --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
     "test:unit:docs": "yarn test:unit:run:local --maxWorkers=50% --projects=site",
     "test:unit:comps:ci": "yarn test:unit:node --maxWorkers=4 --projects=src --ci --reporters=default --reporters=jest-junit",
     "test:unit:docs:ci": "yarn test:unit:node --maxWorkers=3 --projects=site --ci --reporters=default --reporters=jest-junit",
