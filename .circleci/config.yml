@@ -621,6 +621,24 @@ jobs:
       - slack/notify:
           <<: *slack_notify
 
+  test_unit_comps2:
+    executor: node-xlarge
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: Unit Testing
+          command: yarn test:unit:comps
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
+      - slack/notify:
+          <<: *slack_notify
+
   test_unit_docs:
     executor: node-xlarge
     steps:
@@ -1235,6 +1253,9 @@ workflows:
           requires:
             - build_icons
       - test_unit_comps:
+          requires:
+            - build_icons
+      - test_unit_comps2:
           requires:
             - build_icons
       - test_unit_docs:
