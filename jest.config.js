@@ -13,7 +13,7 @@ module.exports = {
     '^.+\\.[tj]sx?$': ['babel-jest', {presets: ['@nrwl/react/babel']}],
   },
   setupFilesAfterEnv: [
-    '<rootDir>/test/test-framework-setup.ts',
+    '<rootDir>/src/test/test-framework-setup.ts',
     '@testing-library/jest-dom/extend-expect',
   ],
   testEnvironment: 'jsdom',
