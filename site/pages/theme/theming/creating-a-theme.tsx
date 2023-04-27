@@ -13,6 +13,8 @@ import {Table} from '../../../components/table';
 import {IconFilledCircle} from '../../../../src/icons';
 import {Code, CodeFromFile} from '../../../components/code';
 import {InlineCode} from '../../../components/markdown-elements';
+import {Link} from '../../../components/link';
+import TextCropCalculator from '../../../components/text-crop-calculator/text-crop-calculator';
 
 const functionProps = [
   {
@@ -80,11 +82,13 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               NewsKit&apos;s theme creator provides sensible defaults so the
               consumer can override as much or as little as they wish. Currently
               the NewsKit component library houses 2 themes:
+              <br />
+              <br />
               <UnorderedList
                 markerAlign="start"
                 listItemMarker={IconFilledCircle}
                 overrides={{
-                  spaceStack: 'space040',
+                  spaceStack: 'space050',
                   content: {
                     typographyPreset: {
                       xs: 'editorialParagraph020',
@@ -98,8 +102,8 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               </UnorderedList>
               You can switch between these two themes on this documentation site
               by clicking the button in the top right. Details on how to use a
-              theme in your project can be found
-              [here](/theme/theming/using-a-theme/).
+              theme in your project can be found{' '}
+              <Link href="/theme/theming/using-a-theme/">here</Link>.
             </>
           }
           childrenColSpan={ContentColSpan.TEXT}
@@ -114,25 +118,29 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
           headline="createTheme Function"
           description={
             <>
-              To create a theme you use the `createTheme` function exported from
-              NewsKit.
+              To create a theme you use the <InlineCode>createTheme</InlineCode>{' '}
+              function exported from NewsKit.
               <br />
               <br />
-              The createTheme function returns an `UncompiledTheme` object which
-              can be passed to the `NewsKitProvider` or `ThemeProvider`
-              component. When the provider is passed an uncompiled theme object,
-              it will compile it automatically. If you wish to pre-compile your
-              theme, you can do this by passing your theme to the `compileTheme`
-              function exported from NewsKit. It is recommended you let the
-              provider compile your theme automatically - you should not need to
-              compile your theme yourself. More information on theme compilation
-              is below.
+              The createTheme function returns an{' '}
+              <InlineCode>UncompiledTheme</InlineCode> object which can be
+              passed to the <InlineCode>NewsKitProvider</InlineCode> or{' '}
+              <InlineCode>ThemeProvider</InlineCode> component. When the
+              provider is passed an uncompiled theme object, it will compile it
+              automatically. If you wish to pre-compile your theme, you can do
+              this by passing your theme to the{' '}
+              <InlineCode>compileTheme</InlineCode> function exported from
+              NewsKit. It is recommended you let the provider compile your theme
+              automatically - you should not need to compile your theme
+              yourself. More information on theme compilation is below.
               <br />
               <br />
-              `createTheme` takes one argument - an object - with the following
-              properties:
+              <InlineCode>createTheme</InlineCode> takes one argument - an
+              object - with the following properties:
+              <br />
+              <br />
               <Table
-                columns={['Property', 'Type', 'Default', 'Description']}
+                columns={['Name', 'Type', 'Default', 'Description']}
                 rows={functionProps}
               />
             </>
@@ -152,17 +160,17 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               website. For example, your website might contain a sports section
               which uses the same theme, except the brand and interface colours
               change from blue to green. Creating sub-themes is simple. You use
-              the `createTheme` function as you would normally except you also
-              pass a base theme. Your base theme would be your main theme (e.g.
-              the one with blue interface colours), and the overrides you
-              provide would then change the elements where appropriate (e.g.
-              changing those interface colours to green). This allows you to
-              take advantage of the existing main theme - keeping things
-              consistent - while still maintaining the ability to tweak elements
-              for specific branding identities. You can use a sub-theme the same
-              as any other regular theme. Sub-themes can even be used as base
-              themes if desired - there is no limit to the depth of nesting
-              themes and sub-themes.
+              the <InlineCode>createTheme</InlineCode> function as you would
+              normally except you also pass a base theme. Your base theme would
+              be your main theme (e.g. the one with blue interface colours), and
+              the overrides you provide would then change the elements where
+              appropriate (e.g. changing those interface colours to green). This
+              allows you to take advantage of the existing main theme - keeping
+              things consistent - while still maintaining the ability to tweak
+              elements for specific branding identities. You can use a sub-theme
+              the same as any other regular theme. Sub-themes can even be used
+              as base themes if desired - there is no limit to the depth of
+              nesting themes and sub-themes.
               <br />
               <br />
               Note that base themes passed to the theme creation function must
@@ -192,8 +200,9 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               colour palettes to foundations to style presets, to be overridden
               and customised as desired. For example, when passing overrides to
               the theme creator to override some colours, you could override a
-              palette colour - say `red070` to a new hex value. This would
-              change all uses of the `red070` token to your new value, whether
+              palette colour - say <InlineCode>red070</InlineCode> to a new hex
+              value. This would change all uses of the{' '}
+              <InlineCode>red070</InlineCode> token to your new value, whether
               used by an existing token in NewsKit light, or your own base
               theme. It does not matter in what theme or where it is used in a
               theme, the change would be reflected in all references to that
@@ -209,16 +218,16 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               is how the spacing presets are created for example -
               <InlineCode>
                 {
-                  "spaceInsetSquish030: '{{ sizing.sizing030 }} {{ sizing.sizing040 }}',"
+                  "spaceInsetSquish030: '{{ sizing.sizing030 }} {{ sizing.sizing040 }}'"
                 }
               </InlineCode>
-              `
+              .
               <br />
               <br />
               To make this system as flexible as reasonably possible the
               compilation lookup process is recursive. This is utilised in
               NewsKit for example by a button style preset
-              `buttonOutlinedNegative` using{' '}
+              <InlineCode>buttonOutlinedNegative</InlineCode> using{' '}
               <InlineCode>{'{{ colors.inkNegative }}'}</InlineCode> which in
               turn uses <InlineCode>{'{{ colors.red070 }}'}</InlineCode> which
               evaluates to a hex code colour. A recursion depth limit of 5 is in
@@ -230,11 +239,12 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               As well as recursion protection the compiler will also log
               warnings when you reference tokens which it cannot find. This
               logging behaviour is overridable by passing your own logger
-              function to the `errorLogger` property inside the options (2nd)
-              argument. One useful reason to do this is to unit test your theme.
-              By replacing the logger with an error throwing function or mock,
-              you can ensure your theme is valid as part of your development
-              lifecycle. There is an example of this below.
+              function to the <InlineCode>errorLogger</InlineCode> property
+              inside the options (2nd) argument. One useful reason to do this is
+              to unit test your theme. By replacing the logger with an error
+              throwing function or mock, you can ensure your theme is valid as
+              part of your development lifecycle. There is an example of this
+              below.
             </>
           }
           childrenColSpan={ContentColSpan.TEXT}
@@ -284,27 +294,13 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               replace the hover state:
               <br />
               <br />
-              <Code>
-                {`export const stylePresets = {
-                  buttonSolidPrimary: Button.stylePresets.buttonSolidPrimary;
-                  buttonLightDarkToggle: {
-                    __extends: '{{stylePresets.buttonSolidPrimary}}',
-                    hover: {color: '{{colors.red010}}'},
-                }
-                `}
-              </Code>
-              <br />
+              <CodeFromFile path="examples/theming/__extends_1.tsx" />
               <br />
               Alternatively, you can also do this:
-              <Code>
-                {`export const stylePresets = {
-                buttonLightDarkToggle: {
-                  ...Button.stylePresets.buttonSolidPrimary,
-                  hover: {color: '{{colors.red010}}'},
-                },
-              }
-               `}
-              </Code>
+              <br />
+              <br />
+              <CodeFromFile path="examples/theming/__extends_1.tsx" />
+              <br />
               As well as a single token string, the{' '}
               <InlineCode>__extends</InlineCode> also supports an array of token
               strings. This can be used to merge multiple objects together. The
@@ -315,7 +311,7 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
         />
 
         <ContentSecondary
-          headline="_deepExtends"
+          headline="__deepExtends"
           description={
             <>
               This keyword is similar to the above{' '}
@@ -337,6 +333,7 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
                   2,
                 )}
               </Code>
+              <br />
               Note that only the items specified under the{' '}
               <InlineCode>__deepExtends</InlineCode> keyword will be deeply
               merged. In the example above, if you were to specify a `base`
@@ -427,6 +424,7 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
                   2,
                 )}
               </Code>
+              <br />
               This would be equivalent to the following (where the keys using
               the <InlineCode>__delete</InlineCode> keyword exist in the base
               theme):
@@ -451,14 +449,15 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
                   2,
                 )}
               </Code>
+              <br />
               The benefit of using the <InlineCode>__shallow</InlineCode>{' '}
               keyword is that should any new keys be added to the base object,
               you do not need to update your theme to delete them. This{' '}
               <InlineCode>__shallow</InlineCode> keyword is unique compared to
               the others as it is functionality of the underlying{' '}
-              <InlineCode>deepMerge</InlineCode>
-              function used as part of the theme creator. You can use this
-              utility by importing `deepMerge` from NewsKit.
+              <InlineCode>deepMerge</InlineCode> function used as part of the
+              theme creator. You can use this utility by importing `deepMerge`
+              from NewsKit.
             </>
           }
         />
@@ -546,9 +545,13 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               <br />
               You can calculate font metrics for a font by following these steps
               (based on the{' '}
-              <a href="https://seek-oss.github.io/capsize/">Capsize docs</a>).
+              <Link href="https://seek-oss.github.io/capsize/" target="_blank">
+                Capsize docs
+              </Link>
+              ):
               <br />
               <br />
+              <TextCropCalculator />
               Generally, adding the fontMetrics in your theme for a weight of
               400 is enough for the majority of our users. However, if in your
               case you see the need to use more precise metrics for different
@@ -599,16 +602,18 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
           description={
             <>
               NewsKit comes with{' '}
-              <a href="https://material.io/resources/icons/?style=baseline">
+              <Link href="https://material.io/resources/icons/?style=baseline">
                 Material Design&apos;s Icon
-              </a>{' '}
+              </Link>{' '}
               filled and outline sets included. In some cases, it might be
               desirable to replace the default icon with a user defined one, for
               instance if we want to use our own close icon across the system.
               <br />
               <br />
-              Check out the <a href="/components/icons">Icons page</a> for
+              Check out the <Link href="/components/icons">Icons page</Link> for
               detailed explanation on how to create custom NewsKit icon.
+              <br />
+              <br />
               <CodeFromFile path="examples/theming/override-icons.tsx" />
             </>
           }

@@ -18,11 +18,8 @@ const Step = ({
   <Block marginBlockEnd="space080">
     {title && (
       <TextBlock
-        stylePreset="inkBrand010"
-        typographyPreset={{
-          xs: 'editorialHeadline010',
-          md: 'editorialHeadline030',
-        }}
+        stylePreset="inkContrast"
+        typographyPreset="editorialHeadline020"
         marginBlockEnd="space040"
       >
         {number}. {title}
