@@ -32,6 +32,18 @@ const dependenciesNotToBeIncluded = [
   'googleapis',
   'glob',
   'globby',
+  '@capsizecss/metrics',
+  '@emotion/core',
+  '@types/blob-to-buffer',
+  '@types/fontkit',
+  '@types/match-sorter',
+  'blob-to-buffer',
+  'cross-fetch',
+  'detect-font',
+  'emotion-theming',
+  'fontkit',
+  'framer-motion',
+  'match-sorter',
 ];
 
 const filterPackageJson = () => {

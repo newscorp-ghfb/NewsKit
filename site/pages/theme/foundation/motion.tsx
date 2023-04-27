@@ -144,7 +144,7 @@ const Motion = (layoutProps: LayoutProps) => (
             aria-label="Default Motion in the foundations can be overridden."
           >
             You can override default motion in the foundations.{' '}
-            <Link href="/theme/theming/font-metrics.tsx">Learn more here.</Link>
+            <Link href="/theme/theming/creating-a-theme">Learn more here.</Link>
           </InlineMessage>
         </ContentSecondary>
       </ContentSection>
