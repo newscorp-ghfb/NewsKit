@@ -28,9 +28,9 @@ const ComponentDefaults = (layoutProps: LayoutProps) => (
           },
         }}
       >
-        <SelectOption value={1}>1</SelectOption>
-        <SelectOption value={1}>2</SelectOption>
-        <SelectOption value={1}>3</SelectOption>
+        <SelectOption value="1">1</SelectOption>
+        <SelectOption value="1">2</SelectOption>
+        <SelectOption value="1">3</SelectOption>
       </Select>
     </div>
   </FoundationPageTemplate>
