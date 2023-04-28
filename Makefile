@@ -34,12 +34,6 @@ build_docs:
 build_docs_with_no_base_url:
 	SITE_ENV=${SITE_ENV} yarn build:docs && yarn postbuild:docs
 
-unit_test_docs:
-	yarn test:unit:ci --projects=site
-
-unit_test_comps:
-	yarn test:unit:ci --projects=src
-
 lint:
 	yarn lint
 
