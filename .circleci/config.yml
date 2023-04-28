@@ -1041,7 +1041,7 @@ jobs:
             yarn add react-dom@18.2
             yarn add @emotion/react
             yarn add @emotion/styled
-            yarn add -D cypress@12.10.0
+            yarn add -D cypress@12.11.0
       - run:
           name: Serve and test app with Cypress
           command: |
