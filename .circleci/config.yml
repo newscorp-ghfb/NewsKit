@@ -1021,7 +1021,7 @@ jobs:
             cd dist
             yalc publish
             cd ..
-            npx create-next-app@13.3.1 newskit-integration-test
+            npx create-next-app@13.3.1 newskit-integration-test --no-eslint
       - run:
           name: Prepare the NextJs app
           command: |
