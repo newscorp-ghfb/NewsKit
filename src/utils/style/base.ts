@@ -3,7 +3,7 @@ import {isResponsive, getMediaQueryFromTheme} from '../responsive-helpers';
 import {filterObject} from '../filter-object';
 import {getToken} from '../get-token';
 import {ThemeProp} from '../style-types';
-import {CSSQuery, MQ} from './types';
+import {CSSQuery, MQ, ResponsiveValue} from './types';
 import {isNonThemeValueAllowed, isValidUnit} from './utils';
 import {CSSObject} from './emotion';
 
@@ -51,7 +51,7 @@ export const getValueFromTheme = <ThemeToken extends string>(
 export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
 ) => <Props extends ThemeProp>(
-  defaultToken?: MQ<ThemeToken>,
+  defaultToken?: ResponsiveValue<ThemeToken>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => ({theme, ...props}: Props) => {
   const section = theme[themeKey] as Record<ThemeToken, unknown>;
@@ -162,7 +162,7 @@ export const getXFromTheme = (themeKey: keyof Theme) => <
   Props extends ThemeProp
 >(
   cssProperty: string | FromThemeCallback,
-  defaultToken: MQ<string>,
+  defaultToken: ResponsiveValue<string>,
 ) => (props: Props) => {
   const value = getResponsiveValueFromTheme(themeKey)(defaultToken)(
     props,
