@@ -53,7 +53,7 @@ We use the following libraries for our automated tests:
 * Jest and React Testing Library for unit testing
 * Cypress for component and E2E testing
 * cypress-axe for automated accessibility testing
-* Applitools for cross browser visual testing
+* Percy for cross browser visual testing
 
 For detailed information on how to run the automated tests, please visit [Testing](./docs/testing.md)
 
@@ -62,8 +62,29 @@ For detailed information on how to run the automated tests, please visit [Testin
 * To start engineering with NewsKit, follow the steps in the [quickstart guide](https://newskit.co.uk/getting-started/code/engineering-quickstart/).
 * Have a question? [Contact the NewsKit team via the contact form](https://newskit.co.uk/about/contact-us/).
 
+## Styleguides
+
+### Commit Messages
+
+Please follow this format for commit messages and PR titles:
+
+[fix|feat|docs|chore|ci]([github issue number]): [description]
+
+eg
+`fix(999): menu z-order affects focus`
+
+### Branch Names
+
+The branch naming convention is
+
+[fix|feat|docs|chore|ci]/[github issue number]-[short desscription]
+
+eg
+`git checkout -b fix/999-menu-z-order`
+
 ## 🔗 Key Links
 
+* [Contributing to NewsKit](/CONTRIBUTING.md)
 * [NewsKit Documentation](https://www.newskit.co.uk/)
 * [View NewsKit Design System npm package](https://www.npmjs.com/package/newskit)
 * [Github repository](https://github.com/newscorp-ghfb/newskit)

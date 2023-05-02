@@ -65,8 +65,7 @@ const Tool = () => {
   });
 
   return (
-    <>
-      <NewsKitProvider theme={newskitLightTheme}>
+    <NewsKitProvider theme={newskitLightTheme}>
         <ConsentSettingsLink
           privacyManagerId={CONFIG.privacyManagerId}
           gdpr
@@ -87,7 +86,6 @@ const Tool = () => {
           </span>
         </Tooltip>
       </NewsKitProvider>
-    </>
   );
 };
 

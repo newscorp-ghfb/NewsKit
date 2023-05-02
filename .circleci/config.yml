@@ -107,7 +107,7 @@ executors:
   cypress:
     docker:
       - image: cypress/browsers:node16.13.0-chrome95-ff94
-    resource_class: xlarge
+    resource_class: medium
 
   java:
     docker:
@@ -604,14 +604,14 @@ jobs:
           <<: *slack_notify
 
   test_unit_comps:
-    executor: node-large
+    executor: node-xlarge
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
       - run:
           name: Unit Testing
-          command: make unit_test_comps
+          command: yarn test:unit:comps:ci
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
@@ -629,7 +629,7 @@ jobs:
           at: ~/project
       - run:
           name: Unit Testing
-          command: make unit_test_docs
+          command: yarn test:unit:docs:ci
           environment:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - run:
@@ -806,6 +806,7 @@ jobs:
   test_e2e_comps:
     <<: *cypress_defaults
     executor: cypress
+    parallelism: 10
     steps:
       - checkout
       - attach_workspace:
@@ -823,14 +824,14 @@ jobs:
   test_e2e_docs:
     <<: *cypress_defaults
     executor: cypress
+    parallelism: 16
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
       - run:
           name: Run Docs Site Functional Tests
-          command: |
-            yarn e2e:docs:ci
+          command: yarn e2e:docs:ci
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
@@ -1040,7 +1041,7 @@ jobs:
             yarn add react-dom@18.2
             yarn add @emotion/react
             yarn add @emotion/styled
-            yarn add -D cypress@12.3.0
+            yarn add -D cypress@12.11.0
       - run:
           name: Serve and test app with Cypress
           command: |

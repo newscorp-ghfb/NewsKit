@@ -8,10 +8,12 @@
     "scripts/",
     "githooks/",
     "jest.config.js",
+    "jest.preset.js",
     ".eslintrc.js",
     "percy.config.js",
     "commitlint.config.js",
     "webpack.e2e.config.js",
     "cypress.*.config.ts",
+    "rspack.config.js",
   ]
 }
