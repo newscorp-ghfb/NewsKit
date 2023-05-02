@@ -1,25 +1,30 @@
-import {CSSObject, getTypographyPreset, getXFromTheme, MQ} from './style';
+import {
+  CSSObject,
+  getTypographyPreset,
+  getXFromTheme,
+  ResponsiveValue,
+} from './style';
 import {ThemeProp} from './style-types';
 import {deepMerge} from './deep-merge';
 import {get} from './get';
 import {filterObject, rejectObject} from './filter-object';
 
 export interface LogicalMarginProps {
-  marginInlineStart?: MQ<string>;
-  marginInlineEnd?: MQ<string>;
-  marginInline?: MQ<string>;
-  marginBlockStart?: MQ<string>;
-  marginBlockEnd?: MQ<string>;
-  marginBlock?: MQ<string>;
+  marginInlineStart?: ResponsiveValue<string>;
+  marginInlineEnd?: ResponsiveValue<string>;
+  marginInline?: ResponsiveValue<string>;
+  marginBlockStart?: ResponsiveValue<string>;
+  marginBlockEnd?: ResponsiveValue<string>;
+  marginBlock?: ResponsiveValue<string>;
 }
 
 export interface LogicalPaddingProps {
-  paddingInlineStart?: MQ<string>;
-  paddingInlineEnd?: MQ<string>;
-  paddingInline?: MQ<string>;
-  paddingBlockStart?: MQ<string>;
-  paddingBlockEnd?: MQ<string>;
-  paddingBlock?: MQ<string>;
+  paddingInlineStart?: ResponsiveValue<string>;
+  paddingInlineEnd?: ResponsiveValue<string>;
+  paddingInline?: ResponsiveValue<string>;
+  paddingBlockStart?: ResponsiveValue<string>;
+  paddingBlockEnd?: ResponsiveValue<string>;
+  paddingBlock?: ResponsiveValue<string>;
 }
 
 export interface LogicalProps extends LogicalMarginProps, LogicalPaddingProps {}

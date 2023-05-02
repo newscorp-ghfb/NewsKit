@@ -71,6 +71,77 @@ export const StoryTextBlockLogicalProps = () => (
 );
 StoryTextBlockLogicalProps.storyName = 'Logical props';
 
+export const StoryTextBlockContainerQueries = () => {
+  const QueryContainerSmall = styled.div`
+    container-type: inline-size;
+    width: 300px;
+    border: 1px dashed;
+    ${getColorCssFromTheme('borderColor', 'blue060')}
+  `;
+  const QueryContainerLarge = styled.div`
+    container-type: inline-size;
+    width: 600px;
+    border: 1px dashed;
+    ${getColorCssFromTheme('borderColor', 'blue060')}
+  `;
+
+  return (
+    <StorybookPage columns={TEXT_BLOCK_COLUMNS}>
+      <StorybookCase title="Small Container">
+        <QueryContainerSmall>
+          <TextBlock
+            typographyPreset={{
+              rules: [
+                {
+                  rule: '@container (width <= 300px)',
+                  value: 'editorialParagraph010',
+                },
+                {
+                  rule: '@container (width > 300px)',
+                  value: 'editorialParagraph030',
+                },
+              ],
+            }}
+            stylePreset="inkContrast"
+            marginBlock="space040"
+            paddingBlock="space040"
+            marginInline="space040"
+            paddingInline="space040"
+          >
+            {BODY}
+          </TextBlock>
+        </QueryContainerSmall>
+      </StorybookCase>
+      <StorybookCase title="Large Container">
+        <QueryContainerLarge>
+          <TextBlock
+            typographyPreset={{
+              rules: [
+                {
+                  rule: '@container (width <= 300px)',
+                  value: 'editorialParagraph010',
+                },
+                {
+                  rule: '@container (width > 300px)',
+                  value: 'editorialParagraph030',
+                },
+              ],
+            }}
+            stylePreset="inkContrast"
+            marginBlock="space040"
+            paddingBlock="space040"
+            marginInline="space040"
+            paddingInline="space040"
+          >
+            {BODY}
+          </TextBlock>
+        </QueryContainerLarge>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryTextBlockContainerQueries.storyName = 'Container Queries';
+
 export const StoryTextBlockStylingOverrides = () => (
   <StorybookPage columns={TEXT_BLOCK_COLUMNS}>
     <StorybookCase>

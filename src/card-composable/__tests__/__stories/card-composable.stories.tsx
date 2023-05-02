@@ -35,7 +35,7 @@ import {DEFAULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/confi
 
 const QueryContainerSmall = styled.div`
   container-type: inline-size;
-  width: 200px;
+  width: 300px;
 `;
 const QueryContainerLarge = styled.div`
   container-type: inline-size;
@@ -718,8 +718,8 @@ export const StoryContainerQueries = () => {
         paddingBlock: {
           rules: [
             {
-              rule: '@container (width < 300px)',
-              value: 'space010',
+              rule: '@container (width <= 300px)',
+              value: 'space020',
             },
             {
               rule: '@container (width > 300px)',
@@ -730,8 +730,8 @@ export const StoryContainerQueries = () => {
         paddingInline: {
           rules: [
             {
-              rule: '@container (width < 300px)',
-              value: 'space010',
+              rule: '@container (width <= 300px)',
+              value: 'space020',
             },
             {
               rule: '@container (width > 300px)',
@@ -741,6 +741,7 @@ export const StoryContainerQueries = () => {
         },
       }}
       rowGap={areasGap}
+      containerType="inline-size"
     >
       <CardContent rowGap={contentGap}>
         <Flag>Flag</Flag>
@@ -749,19 +750,19 @@ export const StoryContainerQueries = () => {
             typographyPreset: {
               rules: [
                 {
-                  rule: '@container (width < 300px)',
+                  rule: '@container (width <= 300px)',
                   value: 'editorialHeadline020',
                 },
                 {
                   rule: '@container (width > 300px)',
-                  value: 'editorialHeadline050',
+                  value: 'editorialHeadline040',
                 },
               ],
             },
           }}
         >
-          This headlines typographyPreset changes depending on its container
-          size
+          This headline&apos;s typographyPreset changes depending on its
+          container size
         </Headline>
         <P />
       </CardContent>
@@ -788,9 +789,6 @@ export const StoryContainerQueries = () => {
         <QueryContainerLarge>
           <CardWithQueries />
         </QueryContainerLarge>
-      </StorybookCase>
-      <StorybookCase title="No container">
-        <CardWithQueries />
       </StorybookCase>
     </StorybookPage>
   );

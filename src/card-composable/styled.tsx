@@ -12,6 +12,8 @@ const StyledGrid = styled(GridLayout)<StyledGridLayoutProps>`
   ${getStylePreset('', '')};
   ${getTransitionPreset('', '')};
   ${({areaName}) => areaName && `grid-area: ${areaName};`}
+  ${({containerName}) => containerName && `container-name: ${containerName};`}
+  ${({containerType}) => containerType && `container-type: ${containerType};`}
 `;
 
 export const StyledCard = styled(StyledGrid)`

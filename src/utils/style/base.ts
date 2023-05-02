@@ -114,7 +114,7 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
         return acc;
       }, {} as Record<string, unknown>);
 
-    const containerKeys = (propKeys.rules || []) as CSSQuery[];
+    const containerKeys = (propKeys.rules || []) as CSSQuery<ThemeToken>[];
 
     const cssContainerQueryObject =
       containerKeys &&

@@ -6,13 +6,20 @@ export type MQPartial<T> = Partial<{
   xl: T;
 }>;
 
-export type MQ<T> = (T | MQPartial<T>) & CQ;
+export type MQ<T> = T | MQPartial<T>;
 
-export type CSSQuery = {
+export type ResponsiveValue<T> = MQ<T> | CSSQueryRules<T>;
+
+export type CSSQuery<T> = {
   rule: `@media ${string}` | `@container ${string}`;
-  value: string;
+  value: T;
 };
 
-export type CQ = {
-  rules?: CSSQuery[];
+export type CSSQueryRules<T> = {
+  rules?: CSSQuery<T>[];
+};
+
+export type ContainerQueryProps = {
+  containerType?: 'normal' | 'inline-size' | 'size';
+  containerName?: string;
 };

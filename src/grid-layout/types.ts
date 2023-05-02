@@ -1,5 +1,5 @@
 import React from 'react';
-import {MQ} from '../utils/style';
+import {ContainerQueryProps, MQ, ResponsiveValue} from '../utils/style';
 
 import {BlockProps} from '../block';
 import {LogicalProps} from '../utils/logical-properties';
@@ -11,7 +11,8 @@ export type GridLayoutItemProps = BlockProps & {
   alignSelf?: MQ<string>;
   column?: MQ<string>;
   row?: MQ<string>;
-} & React.HTMLAttributes<HTMLElement>;
+} & ContainerQueryProps &
+  React.HTMLAttributes<HTMLElement>;
 
 export type AreasMap = {
   [componentName: string]: React.FC<GridLayoutItemProps>;
@@ -20,28 +21,29 @@ export type AreasMap = {
 export type GridLayoutRenderProps = (areas: AreasMap) => React.ReactNode;
 
 export type GridLayoutProps = {
-  rowGap?: MQ<string>;
-  columnGap?: MQ<string>;
-  rows?: MQ<string>;
-  columns?: MQ<string>;
-  justifyContent?: MQ<string>;
-  alignContent?: MQ<string>;
-  justifyItems?: MQ<string>;
-  alignItems?: MQ<string>;
-  areas?: MQ<string>;
-  inline?: MQ<boolean>;
-  autoColumns?: MQ<string>;
-  autoRows?: MQ<string>;
-  autoFlow?: MQ<string>;
+  rowGap?: ResponsiveValue<string>;
+  columnGap?: ResponsiveValue<string>;
+  rows?: ResponsiveValue<string>;
+  columns?: ResponsiveValue<string>;
+  justifyContent?: ResponsiveValue<string>;
+  alignContent?: ResponsiveValue<string>;
+  justifyItems?: ResponsiveValue<string>;
+  alignItems?: ResponsiveValue<string>;
+  areas?: ResponsiveValue<string>;
+  inline?: ResponsiveValue<boolean>;
+  autoColumns?: ResponsiveValue<string>;
+  autoRows?: ResponsiveValue<string>;
+  autoFlow?: ResponsiveValue<string>;
   children?: React.ReactNode | GridLayoutRenderProps;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   as?: React.ElementType<any>;
   overrides?: {
-    width?: MQ<string>;
-    minWidth?: MQ<string>;
-    maxWidth?: MQ<string>;
-    height?: MQ<string>;
-    minHeight?: MQ<string>;
-    maxHeight?: MQ<string>;
+    width?: ResponsiveValue<string>;
+    minWidth?: ResponsiveValue<string>;
+    maxWidth?: ResponsiveValue<string>;
+    height?: ResponsiveValue<string>;
+    minHeight?: ResponsiveValue<string>;
+    maxHeight?: ResponsiveValue<string>;
   } & LogicalProps;
-} & Omit<React.HTMLAttributes<HTMLDivElement>, 'children'>;
+} & ContainerQueryProps &
+  Omit<React.HTMLAttributes<HTMLDivElement>, 'children'>;

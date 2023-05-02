@@ -6,12 +6,14 @@ import {
   MQ,
   getSpacingFromTheme,
   getStylePresetFromTheme,
+  ContainerQueryProps,
 } from '../utils/style';
 import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
 
 export interface BlockProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    LogicalProps {
+    LogicalProps,
+    ContainerQueryProps {
   as?: keyof JSX.IntrinsicElements;
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
@@ -26,6 +28,8 @@ export interface BlockProps
 }
 
 const StyledDiv = styled.div<BlockProps>`
+  ${({containerType}) => containerType && `container-type: ${containerType}`}
+  ${({containerName}) => containerName && `container-name: ${containerName}`}
   ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)}
   ${({spaceInline}) =>
     spaceInline && getSpacingFromTheme(spaceInline, undefined, 'marginRight')}
