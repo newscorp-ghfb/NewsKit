@@ -276,7 +276,9 @@
   "resolutions": {
     "@types/react": "18",
     "minimist": "^0.2.1",
-    "kind-of": "^6.0.3"
+    "kind-of": "^6.0.3",
+    "execa": "5.1.1",
+    "cross-spawn": "6.0.5"
   },
   "peerDependencies": {
     "@emotion/react": ">= 11.1.5 <= 11.9.3",
