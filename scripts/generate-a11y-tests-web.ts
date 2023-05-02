@@ -35,8 +35,7 @@ const fileNameForRoute = (route: String) => `${path}${route}.cy.js`;
   const flatRoutes = flattenRoutes(siteRoutes);
   await fse.emptyDir(path);
   // Special case as not included in routes object
-  // add home tests as part of https://github.com/newscorp-ghfb/NewsKit/issues/795
-  // await fse.outputFile(fileNameForRoute('/home'), fileForRoute('/'));
+  await fse.outputFile(fileNameForRoute('/home'), fileForRoute('/'));
 
   flatRoutes.forEach(async fr => {
     await fse.outputFile(fileNameForRoute(fr), fileForRoute(fr));
