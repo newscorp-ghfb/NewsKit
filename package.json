@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "7.2.0",
+  "version": "7.3.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -311,9 +311,13 @@
       },
       "lint": {
         "executor": "@nrwl/linter:eslint",
-        "outputs": ["{options.outputFile}"],
+        "outputs": [
+          "{options.outputFile}"
+        ],
         "options": {
-          "lintFilePatterns": ["./src/**/*.{ts,tsx,js,jsx}"]
+          "lintFilePatterns": [
+            "./src/**/*.{ts,tsx,js,jsx}"
+          ]
         }
       },
       "lint:code:comps": {
