@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Select, SelectOption} from 'newskit';
 import {useAppState} from '../../app-state-context';
-import googleFonts from '../../json/googleFontsApi.json';
+import googleFonts from '../../json/google-font-api.json';
 import {fromUrl} from '../../unpack';
 
 const {items: fontData} = googleFonts;

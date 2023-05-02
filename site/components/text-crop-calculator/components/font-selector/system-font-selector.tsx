@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import {detectFont} from 'detect-font';
 import {Select, SelectOption} from 'newskit';
 import {useAppState} from '../../app-state-context';
-import fontData from '../../json/systemFonts.json';
+import fontData from '../../json/system-fonts.json';
 
 export default function SystemFontSelector() {
   const {dispatch, state} = useAppState();
