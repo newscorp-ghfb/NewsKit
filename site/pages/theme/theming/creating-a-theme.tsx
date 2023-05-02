@@ -56,7 +56,8 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
   <FoundationPageTemplate
     headTags={{
       title: 'Creating a theme',
-      description: 'TODO',
+      description:
+        'Create your own theme, or use one of the two NewsKit defaults.',
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
@@ -65,7 +66,8 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'components/hero-component-defaults-illustration',
       },
-      introduction: `TODO`,
+      introduction:
+        'Create your own theme, or use one of the two NewsKit defaults.',
     }}
   >
     <ComponentPageCell>

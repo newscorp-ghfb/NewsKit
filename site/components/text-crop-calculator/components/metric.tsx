@@ -1,4 +1,4 @@
-import {styled} from 'newskit*';
+import {getColorCssFromTheme, styled} from 'newskit*';
 import React from 'react';
 import {ArrowContainer, Label, MetricContainer} from './styled';
 import {labelWidth, arrowSize} from './config';
@@ -24,7 +24,7 @@ export const Metric = ({
     position: absolute;
     opacity: 0.6;
     height: 1px;
-    background: red;
+    ${getColorCssFromTheme('background', 'interfaceNegative010')};
     ${({location}) => ({
       left: `${align === 'left' ? 0 : labelWidth - hoffset}px`,
       right: `${align === 'right' ? 0 : labelWidth - hoffset}px`,

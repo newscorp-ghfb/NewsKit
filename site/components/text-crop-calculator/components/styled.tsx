@@ -1,9 +1,9 @@
-import {styled, TextBlock} from 'newskit*';
+import {getColorCssFromTheme, styled, TextBlock} from 'newskit*';
 import {FlexDirectionProperty} from 'csstype';
 import {labelWidth} from './config';
 
 export const ArrowContainer = styled.div`
-  color: blue;
+  ${getColorCssFromTheme('color', 'interfaceBrand010')};
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@ export const ArrowContainer = styled.div`
 `;
 
 export const Label = styled(TextBlock)<{align?: 'left' | 'right'}>`
+  ${getColorCssFromTheme('color', 'inkBase')};
   ${({align}) => ({
     textAlign: align,
     width: labelWidth,
@@ -71,13 +72,13 @@ export const Background = styled.div`
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: red;
+  ${getColorCssFromTheme('background', 'illustrationInterface020')};
   opacity: 0.3;
 `;
 
 export const ExampleText = styled.div<{fontSize: number}>`
   z-index: 1;
-  color: green;
+  ${getColorCssFromTheme('color', 'inkContrast')};
   ${({fontSize}) => ({fontSize: `${fontSize}px`})}
 `;
 

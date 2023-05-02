@@ -31,7 +31,7 @@ const Step = ({
 
 const TextCropCalculator = () => (
   <AppStateProvider>
-    <Block>
+    <Block paddingBlockStart="space080">
       <Step number={1} title="Choose a font">
         <Block marginBlockEnd="space050">
           <FontSelector />

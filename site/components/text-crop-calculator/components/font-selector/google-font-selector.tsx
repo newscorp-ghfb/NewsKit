@@ -62,7 +62,7 @@ export default function GoogleFontSelector() {
           }
         }}
         aria-describedby={message ? 'googleFontErrorMessage' : undefined}
-        placeholder="Choose a google font"
+        placeholder="Choose a Google font"
       >
         {fontData.map(({family: familyName}) => (
           <SelectOption key={familyName} value={familyName}>
