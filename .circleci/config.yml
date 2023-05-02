@@ -1031,6 +1031,7 @@ jobs:
             cp ./scripts/templates-integration-test/cypress.config.js ./newskit-integration-test/
             cp ./scripts/templates-integration-test/next.config.js ./newskit-integration-test/
             cp -R ./scripts/templates-integration-test/cypress ./newskit-integration-test
+            cp ./yarn.lock ./newskit-integration-test
 
             echo "Installing needed packages into the NextJS app"
 

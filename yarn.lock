@@ -9858,7 +9858,7 @@ cypress-multi-reporters@^1.6.3:
     debug "^4.3.4"
     lodash "^4.17.21"
 
-cypress@^12.11.0:
+cypress@^12.10.0:
   version "12.11.0"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-12.11.0.tgz#b46dc6a1d0387f59a4b5c6a18cc03884fd61876e"
   integrity sha512-TJE+CCWI26Hwr5Msb9GpQhFLubdYooW0fmlPwTsfiyxmngqc7+SZGLPeIkj2dTSSZSEtpQVzOzvcnzH0o8G7Vw==

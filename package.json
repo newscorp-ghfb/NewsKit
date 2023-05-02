@@ -173,7 +173,7 @@
     "concurrently": "^4.1.1",
     "copy-webpack-plugin": "^11.0.0",
     "csstype": "2",
-    "cypress": "^12.11.0",
+    "cypress": "^12.10.0",
     "cypress-axe": "^1.2.0",
     "cypress-multi-reporters": "^1.6.3",
     "eslint": "^8.3.0",
