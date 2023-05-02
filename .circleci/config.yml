@@ -1678,11 +1678,6 @@ workflows:
       - install_cypress:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
-      - install_deps:
-          <<: *only_on_version_tag
-          context: ncu-product-platforms-context
-          requires:
-            - install_deps
       - build_components:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
