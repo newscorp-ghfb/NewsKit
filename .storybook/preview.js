@@ -88,6 +88,7 @@ export const parameters = {
   docs: {
     // We create a custom Docs page, using of our components for the header
     page: () => {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
       const docsContext = React.useContext(DocsContext);
       return (
         <ThemeProvider theme={newskitLightTheme}>

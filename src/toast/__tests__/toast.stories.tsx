@@ -1,47 +1,72 @@
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
-import {
-  StorybookHeading,
-  StorybookSubHeading,
-} from '../../test/storybook-comps';
 import {ThemeProvider, CreateThemeArgs} from '../../theme';
+import {StorybookPage, StorybookCase} from '../../test/storybook-comps';
 import {styled, withDefaultProps} from '../../utils';
 import {
   IconFilledInfo,
   IconFilledWarning,
   IconFilledError,
   IconFilledCheckCircle,
+  IconFilledStarOutline,
 } from '../../icons';
 import {toast, ToastProvider, Toast} from '..';
 import {LinkInline} from '../../link';
 import {Button} from '../../button';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 
-const CustomToast = styled.div`
-  padding: 1em;
-  border: 1px solid currentColor;
-  max-width: 240px;
-  background: #fff;
-  box-sizing: border-box;
-  color: red;
+const Container = styled.div`
+  position: relative;
+  z-index: 1;
 `;
 
 const toastCustomThemeObject: CreateThemeArgs = {
   name: 'toast-intents-theme',
   overrides: {
     stylePresets: {
+      customOutlineStyle: {
+        base: {
+          backgroundColor: 'transparent',
+          borderRadius: '{{borders.borderRadiusDefault}}',
+          borderColor: '{{colors.inkInverse}}',
+          borderStyle: 'solid',
+          borderWidth: '1px',
+          color: '{{colors.inkInverse}}',
+        },
+        'focus-visible': {
+          outlineColor: 'red',
+          outlineStyle: 'dotted',
+          outlineWidth: '{{outlines.outlineWidthDefault}}',
+          outlineOffset: '10px',
+        },
+      },
+
+      dividerInverse: {
+        base: {
+          borderStyle: 'solid',
+          borderColor: '{{colors.interface010}}',
+          borderWidth: '{{borders.borderWidthDefault}}',
+        },
+      },
       toastWithOverrides: {
         base: {
-          backgroundColor: '#fdda9b',
+          backgroundColor: '{{colors.interfaceInformative010}}',
           borderRadius: '2px',
-          iconColor: 'red',
+          iconColor: '{{colors.inkInverse}}',
+          color: '{{colors.inkInverse}}',
         },
       },
       customDivider: {
         base: {
-          borderStyle: 'dotted',
-          borderColor: 'red',
-          borderWidth: '3px',
+          borderStyle: 'solid',
+          borderColor: '{{colors.inkInverse}}',
+          borderWidth: '1px',
+        },
+      },
+
+      customButton: {
+        base: {
+          borderColor: '{{colors.inkInverse}}',
         },
       },
     },
@@ -92,253 +117,250 @@ const ToastNegative = withDefaultProps(Toast, {
   overrides: {stylePreset: 'toastNegative'},
 });
 
+const BODY = 'A short line describing the toast';
+
+const longerContent = 'A longer line describing the toast';
+
 const toastLink = (
   <LinkInline href="/" overrides={{stylePreset: 'linkInlineInverse'}}>
-    with link
+    with a link
   </LinkInline>
 );
 
 export const StoryToastDefault = () => (
-  <>
-    <StorybookHeading>Toast</StorybookHeading>
-    <StorybookSubHeading>default</StorybookSubHeading>
-    <Toast>Short text</Toast>
-    <StorybookSubHeading>with long text</StorybookSubHeading>
-    <Toast>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </Toast>
-    <StorybookSubHeading>with Icon</StorybookSubHeading>
-    <Toast
-      icon={
-        <IconFilledError
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      }
-    >
-      Short text
-    </Toast>
-    <StorybookSubHeading>with Icon and long text</StorybookSubHeading>
-    <Toast
-      icon={
-        <IconFilledError
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      }
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </Toast>
-    <StorybookSubHeading>with link</StorybookSubHeading>
-    <Toast
-      icon={
-        <IconFilledError
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      }
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt {toastLink} ut labore et dolore magna aliqua.
-    </Toast>
-  </>
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <Toast> {BODY} </Toast>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryToastDefault.storyName = 'toast-default';
-
-export const StoryToastTitle = () => (
-  <>
-    <StorybookHeading>Toast with title</StorybookHeading>
-    <Toast title="Title">
-      Lorem ipsum dolor sit amet, consectetur adipiscing
-    </Toast>
-    <hr />
-    <Toast
-      title="Title"
-      icon={
-        <IconFilledError
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      }
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing
-    </Toast>
-    <hr />
-    <Toast
-      title="Title"
-      icon={
-        <IconFilledError
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      }
-      actions={() => (
-        <Button size="small" overrides={{stylePreset: 'buttonMinimalInverse'}}>
-          undo
-        </Button>
-      )}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing
-    </Toast>
-  </>
-);
-StoryToastTitle.storyName = 'toast-title';
-
-export const StoryToastActions = () => (
-  <>
-    <StorybookHeading>Toast with actions</StorybookHeading>
-    <Toast
-      actions={() => (
-        <Button size="small" overrides={{stylePreset: 'buttonMinimalInverse'}}>
-          undo
-        </Button>
-      )}
-    >
-      Lorem ipsum dolor sit amet
-    </Toast>
-    <hr />
-    <Toast
-      icon={
-        <IconFilledError
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      }
-      actions={() => (
-        <Button size="small" overrides={{stylePreset: 'buttonMinimalInverse'}}>
-          undo
-        </Button>
-      )}
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </Toast>
-    <hr />
-    <Toast
-      icon={
-        <IconFilledError
-          overrides={{
-            size: 'iconSize020',
-          }}
-        />
-      }
-      actions={() => (
-        <>
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonMinimalInverse'}}
-          >
-            undo
-          </Button>
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonMinimalInverse'}}
-          >
-            redo
-          </Button>
-        </>
-      )}
-    >
-      Lorem ipsum
-    </Toast>
-  </>
-);
-StoryToastActions.storyName = 'toast-actions';
+StoryToastDefault.storyName = 'Default';
 
 export const StoryToastIntents = () => (
-  <>
-    <StorybookHeading>Toast with Intents</StorybookHeading>
-    <StorybookSubHeading>Neutral ( default )</StorybookSubHeading>
-    <Toast>Neutral message {toastLink}</Toast>
-
-    <StorybookSubHeading>Informative</StorybookSubHeading>
-    <ToastInformative>Informative message {toastLink}</ToastInformative>
-
-    <StorybookSubHeading>Notice</StorybookSubHeading>
-    <ToastNotice>Notice message {toastLink}</ToastNotice>
-
-    <StorybookSubHeading>Positive</StorybookSubHeading>
-    <ToastPositive>Positive Message {toastLink}</ToastPositive>
-
-    <StorybookSubHeading>Negative</StorybookSubHeading>
-    <ToastNegative>Negative message {toastLink}</ToastNegative>
-  </>
-);
-StoryToastIntents.storyName = 'toast-intents';
-
-export const StoryToastOverrides = () => (
-  <>
-    <StorybookHeading>Toast with overrides</StorybookHeading>
-    <Toast
-      role="alert"
-      aria-live="assertive"
-      icon={
-        <IconFilledError
-          overrides={{
-            size: 'iconSize030',
-          }}
-        />
-      }
-      title="Title"
-      actions={() => (
-        <Button size="small" overrides={{stylePreset: 'buttonMinimal'}}>
-          undo
-        </Button>
-      )}
-      overrides={{
-        paddingInline: '20px',
-        paddingBlock: '20px',
-        stylePreset: 'toastWithOverrides',
-        icon: {
-          spaceInline: 'space040',
-        },
-        content: {
-          title: {
-            spaceStack: '5px',
-            typographyPreset: 'utilityBody030',
-            stylePreset: 'ink',
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title="Default">
+      <Toast
+        overrides={{
+          maxWidth: {
+            xs: '100%',
           },
-          message: {
-            typographyPreset: 'utilityBody020',
-            stylePreset: 'ink',
+        }}
+      >
+        {BODY}
+      </Toast>
+    </StorybookCase>
+    <StorybookCase title="Informative">
+      <ToastInformative
+        overrides={{
+          maxWidth: {
+            xs: '100%',
           },
-        },
-        divider: {
-          stylePreset: 'customDivider',
-        },
-        contentAndActions: {
-          spaceInline: 'space040',
-        },
-      }}
-    >
-      Short text
-    </Toast>
-  </>
+        }}
+      >
+        {BODY}
+      </ToastInformative>
+    </StorybookCase>
+    <StorybookCase title="Notice">
+      <ToastNotice
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+      >
+        {BODY}
+      </ToastNotice>
+    </StorybookCase>
+    <StorybookCase title="Positive">
+      <ToastPositive
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+      >
+        {BODY}
+      </ToastPositive>
+    </StorybookCase>
+    <StorybookCase title="Negative">
+      <ToastNegative
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+      >
+        {BODY}
+      </ToastNegative>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryToastOverrides.storyName = 'toast-overrides';
+StoryToastIntents.storyName = 'Intents';
 
-export const StoryToastLogicalProps = () => (
-  <>
-    <StorybookHeading>Toast with logical props</StorybookHeading>
-    <Toast
-      overrides={{
-        paddingInline: '50px',
-        paddingBlock: '25px',
-      }}
-    >
-      Uses logical padding props
-    </Toast>
-  </>
+export const StoryToastVariations = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase title="Short text">
+      <Toast
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+      >
+        Short line
+      </Toast>
+    </StorybookCase>
+    <StorybookCase title="Long text and link">
+      <Toast
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+      >
+        {longerContent} {longerContent} {longerContent} {toastLink}
+      </Toast>
+    </StorybookCase>
+    <StorybookCase title="Icon and short text">
+      <Toast
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+        icon={
+          <IconFilledError
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+      >
+        {BODY}
+      </Toast>
+    </StorybookCase>
+    <StorybookCase title="Icon and long text">
+      <Toast
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+        icon={
+          <IconFilledError
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+      >
+        {longerContent} {longerContent} {longerContent}
+      </Toast>
+    </StorybookCase>
+    <StorybookCase title="Title">
+      <Toast
+        title="Toast title"
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+          content: {
+            title: {
+              spaceStack: 'space030',
+            },
+          },
+        }}
+      >
+        {BODY}
+      </Toast>
+    </StorybookCase>
+    <StorybookCase title="Icon and title">
+      <Toast
+        title="Toast title"
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+          content: {
+            title: {
+              spaceStack: 'space030',
+            },
+          },
+        }}
+        icon={
+          <IconFilledError
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+      >
+        {longerContent} {longerContent}
+      </Toast>
+    </StorybookCase>
+    <StorybookCase title="Action">
+      <Toast
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+        icon={
+          <IconFilledError
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        actions={() => (
+          <Button
+            size="small"
+            overrides={{stylePreset: 'buttonMinimalInverse'}}
+          >
+            Action
+          </Button>
+        )}
+      >
+        {BODY}
+      </Toast>
+    </StorybookCase>
+    <StorybookCase title="Two actions">
+      <Toast
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+        }}
+        icon={
+          <IconFilledError
+            overrides={{
+              size: 'iconSize020',
+            }}
+          />
+        }
+        actions={() => (
+          <>
+            <Button
+              size="small"
+              overrides={{stylePreset: 'buttonMinimalInverse'}}
+            >
+              Action 1
+            </Button>
+            <Button
+              size="small"
+              overrides={{stylePreset: 'buttonMinimalInverse'}}
+            >
+              Action 2
+            </Button>
+          </>
+        )}
+      >
+        {BODY}
+      </Toast>
+    </StorybookCase>
+  </StorybookPage>
 );
-StoryToastLogicalProps.storyName = 'toast-logical-props';
+StoryToastVariations.storyName = 'Variations';
 
 export const StoryToastApi = () => {
   const ToastWithState = () => {
@@ -390,14 +412,6 @@ export const StoryToastApi = () => {
             }}
           />
         }
-        actions={() => (
-          <Button
-            size="small"
-            overrides={{stylePreset: 'buttonMinimalInverse'}}
-          >
-            undo
-          </Button>
-        )}
       >
         Your account has been updated
       </Toast>,
@@ -413,58 +427,175 @@ export const StoryToastApi = () => {
     );
   const notifyError = () =>
     toast(({onClose}) => (
-      <CustomToast data-testid="alert-error">
+      <ToastNegative data-testid="alert-error">
         Error message{' '}
-        <button type="button" data-testid="close" onClick={() => onClose()}>
+        <button
+          type="button"
+          data-testid="close"
+          onClick={() => onClose()}
+          hidden
+        >
           X
-        </button>
-      </CustomToast>
+        </button>{' '}
+      </ToastNegative>
     ));
 
   return (
-    <>
-      <StorybookHeading>Toast API</StorybookHeading>
-      <button type="button" onClick={notifyNeutral}>
-        Neutral
-      </button>
-      <button
-        type="button"
-        data-testid="action-success"
-        onClick={notifySuccess}
-      >
-        Success
-      </button>
-      <button type="button" data-testid="action-error" onClick={notifyError}>
-        Error with duration
-      </button>
-      <button onClick={notifyWithToggle} type="button">
-        with toggle
-      </button>
-
-      <ToastProvider
-        autoHideDuration={1000}
-        verticalOffset="10px"
-        horizontalOffset="10px"
-        position="bottom-center"
-      />
-    </>
+    <StorybookPage columns="1fr">
+      <StorybookCase>
+        <Button
+          type="button"
+          onClick={notifyNeutral}
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+            marginInlineEnd: 'space080',
+          }}
+        >
+          Neutral
+        </Button>
+        <Button
+          type="button"
+          data-testid="action-success"
+          onClick={notifySuccess}
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+            marginInlineEnd: 'space080',
+          }}
+        >
+          Success
+        </Button>
+        <Button
+          type="button"
+          data-testid="action-error"
+          onClick={notifyError}
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+            marginInlineEnd: 'space080',
+          }}
+        >
+          Error with duration
+        </Button>
+        <Button
+          onClick={notifyWithToggle}
+          type="button"
+          overrides={{
+            typographyPreset: 'utilityButton020',
+            stylePreset: 'buttonOutlinedPrimary',
+            marginInlineEnd: 'space080',
+          }}
+        >
+          Action
+        </Button>
+        <Container>
+          <ToastProvider
+            autoHideDuration={1000}
+            verticalOffset="10px"
+            horizontalOffset="10px"
+            position="bottom-center"
+          />
+        </Container>
+      </StorybookCase>
+    </StorybookPage>
   );
 };
-StoryToastApi.storyName = 'toast-api';
+StoryToastApi.storyName = 'Toast api examples';
 StoryToastApi.parameters = {
   percy: {skip: true},
 };
 
+export const StoryToastLogicalProps = () => (
+  <StorybookPage columns="1fr">
+    <StorybookCase>
+      <Toast
+        overrides={{
+          paddingInline: '24px',
+          paddingBlock: '24px',
+        }}
+      >
+        Uses logical padding props
+      </Toast>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryToastLogicalProps.storyName = 'Logical props';
+
+export const StoryToastOverrides = () => (
+  <StorybookPage columns="1fr 1fr">
+    <StorybookCase>
+      <Toast
+        role="alert"
+        aria-live="assertive"
+        icon={
+          <IconFilledStarOutline
+            overrides={{
+              size: 'iconSize030',
+            }}
+          />
+        }
+        actions={() => (
+          <Button
+            size="small"
+            overrides={{
+              typographyPreset: 'utilityButton010',
+              stylePreset: 'customOutlineStyle',
+            }}
+          >
+            Action
+          </Button>
+        )}
+        overrides={{
+          maxWidth: {
+            xs: '100%',
+          },
+          paddingInline: '20px',
+          paddingBlock: '20px',
+          stylePreset: 'toastWithOverrides',
+          icon: {
+            spaceInline: 'space040',
+          },
+          content: {
+            title: {
+              spaceStack: '5px',
+              typographyPreset: 'utilityBody030',
+              stylePreset: 'ink',
+            },
+            message: {
+              typographyPreset: 'utilityBody020',
+              stylePreset: 'ink',
+            },
+          },
+          divider: {
+            stylePreset: 'customDivider',
+          },
+          contentAndActions: {
+            spaceInline: 'space040',
+          },
+        }}
+      >
+        {BODY}
+      </Toast>
+    </StorybookCase>
+  </StorybookPage>
+);
+StoryToastOverrides.storyName = 'Styling overrides';
+
 export default {
-  title: 'Components/toast',
+  title: 'Components/Toast',
   component: () => 'None',
   disabledRules: [],
   decorators: [
-    (Story: StoryType, context: {globals: {backgrounds: {value: string}}}) => (
+    (
+      Story: StoryType,
+      context: {name: string; globals: {backgrounds: {value: string}}},
+    ) => (
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
           toastCustomThemeObject,
+          context?.name,
         )}
       >
         <Story />
