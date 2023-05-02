@@ -1,6 +1,14 @@
 import React from 'react';
 import {fireEvent} from '@testing-library/react';
-import {renderWithImplementation, renderWithThemeInBody} from '../test-utils';
+import {
+  renderWithImplementation,
+  renderWithThemeInBody,
+  renderToFragmentInBody,
+  renderInBody,
+  generateString,
+  isVisualTest,
+  isCypressTest,
+} from '../test-utils';
 import {LinkInline} from '../../link';
 import {LinkProps} from '../../link/types';
 
@@ -22,11 +30,40 @@ describe('Test utils', () => {
     expect(onClickHandler).toHaveBeenCalled();
   });
 
+  test('renderInBody renders correctly', async () => {
+    const {findByText, asFragment} = renderInBody(ThemedLink, {});
+
+    await findByText('test link text');
+    expect(asFragment).toBeDefined();
+    expect(asFragment().getElementById('a11y-status-message')).toBeNull();
+  });
+
   test('renderWithThemeInBody renders correctly', async () => {
     const {findByText, asFragment} = renderWithThemeInBody(ThemedLink, {});
 
     await findByText('test link text');
     expect(asFragment).toBeDefined();
     expect(asFragment().getElementById('a11y-status-message')).toBeNull();
+  });
+
+  test('renderToFragmentInBody renders correctly', async () => {
+    const fragment = renderToFragmentInBody(ThemedLink, {});
+
+    expect(fragment).toBeDefined();
+    expect(fragment.getElementById('a11y-status-message')).toBeNull();
+  });
+
+  test('generateString matches length', async () => {
+    const response = generateString(4);
+
+    expect(response).toEqual('****');
+  });
+
+  test('isVisualTest returns a boolean', async () => {
+    expect(typeof isVisualTest).toBe('boolean');
+  });
+
+  test('isCypressTest returns a boolean', async () => {
+    expect(typeof isCypressTest).toBe('boolean');
   });
 });

@@ -1,10 +1,6 @@
 describe('Toast', () => {
   beforeEach(() => {
-    cy.visit(
-      '?name=toast',
-      // TODO: reverse to original URL
-      // 'http://localhost:6006/iframe.html?id=newskit-light-toast--toast-api&args=&viewMode=story',
-    );
+    cy.visit('?name=toast-e2e');
   });
 
   it('toast is removed after n seconds', () => {
@@ -19,6 +15,8 @@ describe('Toast', () => {
     cy.get('@alert').should('not.exist');
   });
 
+  /* Suppressing this test as close button no longer visible in Storybook
+   (to mirror realistic use as self-closing). */
   it('toast is persisted when in focus', () => {
     // Find open button and open Toast
     cy.get('[data-testid="action-error"]').as('btn');

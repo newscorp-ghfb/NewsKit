@@ -1,4 +1,5 @@
 import React from 'react';
+import {sanitize} from 'isomorphic-dompurify';
 import {
   DocsStoryProps,
   DocsContextProps,
@@ -176,7 +177,7 @@ export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
           typographyPreset="utilityBody030"
           stylePreset="inkBase"
         >
-          {description}
+          <span dangerouslySetInnerHTML={{__html: sanitize(description)}} />
         </TextBlock>
       )}
       <Divider />

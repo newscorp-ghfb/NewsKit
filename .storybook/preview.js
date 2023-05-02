@@ -33,7 +33,8 @@ const StoryWrapper = styled.div`
 const Background = ({children}) => (
   <BackgroundColor>{children}</BackgroundColor>
 );
-const NoDecorator = ({children}) => <>{children}</>;
+
+const SKIP_GITHUB_CHECK = process.env.STORYBOOK_SKIP_PERCY_CHECK === 'true';
 
 export const parameters = {
   actions: {argTypesRegex: '^on[A-Z].*'},
@@ -87,6 +88,7 @@ export const parameters = {
   docs: {
     // We create a custom Docs page, using of our components for the header
     page: () => {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
       const docsContext = React.useContext(DocsContext);
       return (
         <ThemeProvider theme={newskitLightTheme}>
@@ -97,6 +99,10 @@ export const parameters = {
     },
   },
   viewMode: 'docs',
+  percy: {
+    //include: 'skip-percy-tests',
+    ...(SKIP_GITHUB_CHECK ? {include: 'skip-percy-tests'} : {}),
+  },
 };
 
 export const decorators = [

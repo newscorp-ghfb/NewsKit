@@ -70,9 +70,9 @@ exports[`Step renders with props 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #3358CC;
+  background-color: #3358cc;
   border-radius: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .emotion-1 svg {
@@ -82,24 +82,24 @@ exports[`Step renders with props 1`] = `
 
 .emotion-2 {
   margin: 0;
-  font-family: "Poppins",sans-serif;
+  font-family: Poppins,sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0em;
   padding: 0.5px 0px;
   display: inline-block;
 }
 
 .emotion-2::before {
   content: '';
-  margin-bottom: -0.403em;
+  margin-bottom: -0.391em;
   display: block;
 }
 
 .emotion-2::after {
   content: '';
-  margin-top: -0.4em;
+  margin-top: -0.409em;
   display: block;
 }
 
@@ -136,9 +136,9 @@ exports[`Step renders with props 1`] = `
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background-color: #C6C6C6;
+  background-color: #c6c6c6;
   border-radius: 24px;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .emotion-3 svg {
@@ -151,7 +151,7 @@ exports[`Step renders with props 1`] = `
 }
 
 .emotion-4 {
-  fill: #2E3F54;
+  fill: #2e3f54;
   vertical-align: unset;
   display: inline-block;
 }

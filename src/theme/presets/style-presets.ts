@@ -179,3 +179,10 @@ stylePresets.selectOptionItemIcon = {
     iconColor: '{{colors.interactiveInput040}}',
   },
 };
+
+stylePresets.cardContainer = {
+  base: {
+    color: '{{colors.inkBase}}',
+    backgroundColor: '{{colors.interface010}}',
+  },
+};

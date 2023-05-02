@@ -66,7 +66,7 @@ export const SelectionListOption = React.forwardRef<
       <StyledSelectionListOption
         ref={forwardRef}
         role="menuitemradio"
-        aria-checked={selected}
+        aria-checked={!!selected}
         selected={selected}
         overrides={overrides}
         tabIndex={selected ? 0 : -1}
