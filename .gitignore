@@ -9,7 +9,6 @@ dist
 stats.html
 storybook-static
 .storybook/private-fonts
-site/public/static/private-fonts
 coverage
 /e2e/dist/index.js
 .vscode

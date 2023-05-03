@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
-// import { tomorrow, coy } from 'react-syntax-highlighter/styles/prism';
 import {useTheme} from 'newskit';
 
 export const Code = ({
@@ -16,7 +15,6 @@ export const Code = ({
       <SyntaxHighlighter
         tabIndex={0}
         language={language}
-        // style={coy}
         customStyle={{
           overflow: 'auto',
           padding: '1em',

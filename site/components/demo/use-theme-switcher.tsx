@@ -68,9 +68,6 @@ const themes: UncompiledTheme[] = themeSettings.map(
       baseTheme,
       overrides: createOverrides(overrides),
     });
-    // TODO: chekc if that is still a bug?
-    // Bug in this NewsKit version keeps the name from base theme, so overwrite it here
-    // theme.name = name;
     return theme;
   },
 );

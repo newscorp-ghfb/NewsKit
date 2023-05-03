@@ -39,7 +39,7 @@ const cards = [
 
 const PublicationName = () => {
   const theme = useTheme();
-  return theme.componentDefaults.publicationName || 'The NewsKit Daily';
+  return theme.name ? `${theme.name} Daily` : 'The NewsKit Daily';
 };
 
 const AudioPlayerInline = () => {
@@ -89,9 +89,6 @@ const Content = () => (
     {Area => (
       <>
         <Area.Podcast paddingInline="space040">
-          <TextBlock typographyPreset="editorialDisplay001">
-            editorialDisplay001
-          </TextBlock>
           <Block>
             <TitleBar>
               <PublicationName /> Podcasts
