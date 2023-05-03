@@ -52,7 +52,7 @@ export interface PaginationProps extends React.AriaAttributes {
   overrides?: {
     stylePreset?: MQ<string>;
     typographyPreset?: MQ<string>; // todo: reconcile with PaginationItemProps.overrides.typographyPreset
-    spaceBetween?: MQ<string>;
+    gap?: MQ<string>;
   } & LogicalProps;
 }
 

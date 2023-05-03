@@ -2,13 +2,13 @@ export default {
   // Can be used to set padding around the entire component (eg paddingInline: 'space020')
   pagination: {
     small: {
-      spaceBetween: 'space010',
+      gap: 'space010',
     },
     medium: {
-      spaceBetween: 'space010',
+      gap: 'space010',
     },
     large: {
-      spaceBetween: 'space010',
+      gap: 'space010',
     },
   },
   paginationItem: {

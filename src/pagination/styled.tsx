@@ -1,9 +1,4 @@
-import {
-  styled,
-  getStylePreset,
-  getTypographyPreset,
-  getResponsiveSpace,
-} from '../utils/style';
+import {styled, getStylePreset, getTypographyPreset} from '../utils/style';
 import {PaginationItemProps, PaginationProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 import {Button, ButtonOrButtonLinkProps} from '../button';
@@ -17,15 +12,10 @@ export const StyledNav = styled.nav<
   ${({size}) => logicalProps(`pagination.${size}`, '')};
 `;
 
-export const StyledUnorderedList = styled(GridLayout)<
-  Pick<PaginationProps, 'size' | 'overrides'>
->`
+export const StyledUnorderedList = styled(GridLayout)`
   list-style: none;
   margin: 0;
   padding: 0;
-
-  ${({size}) =>
-    getResponsiveSpace('columnGap', `pagination.${size}`, '', 'spaceBetween')}
 `;
 
 export const StyledButton = styled(Button)<

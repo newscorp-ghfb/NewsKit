@@ -436,10 +436,10 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
                 'If provided, overrides the stylePreset of the pagination',
             },
             {
-              attribute: 'spaceBetween',
+              attribute: 'gap',
               type: 'MQ<string>',
               description:
-                'If provided, this overrides the space applied between pagination items.',
+                'If provided, this overrides the gap applied between pagination items.',
             },
             ...(commonLogicalProps() as OverridesRowsProps[]),
           ],

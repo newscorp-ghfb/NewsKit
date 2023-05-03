@@ -12,6 +12,8 @@ import {PaginationLastItemProps} from './components/last-item';
 import {PaginationPrevItemProps} from './components/prev-item';
 import {composeEventHandlers} from '../utils/compose-event-handlers';
 import {useControlled} from '../utils';
+import {getToken} from '../utils/get-token';
+import {useTheme} from '../theme';
 
 const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
   (
@@ -146,6 +148,13 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
       ],
     );
 
+    const gapToken = getToken(
+      {theme: useTheme(), overrides},
+      `pagination.${size}`,
+      '',
+      'gap',
+    );
+
     return (
       <PaginationProvider value={value}>
         <StyledNav
@@ -164,8 +173,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
             inline
             justifyContent="start"
             alignItems="center"
-            size={size}
-            overrides={overrides}
+            columnGap={gapToken}
           >
             {children}
           </StyledUnorderedList>
