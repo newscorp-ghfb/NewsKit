@@ -368,7 +368,6 @@ commands:
               echo "Terraform << parameters.folder >> changed"
             else
               echo "Skipping as there are no changes to << parameters.folder >>"
-              circleci-agent step halt
             fi
 
   checkout_and_attach_workspace:
