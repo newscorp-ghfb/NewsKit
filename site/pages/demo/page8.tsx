@@ -39,7 +39,7 @@ const cards = [
 
 const PublicationName = () => {
   const theme = useTheme();
-  return theme.name ? `${theme.name} Daily` : 'The NewsKit Daily';
+  return <>{theme.name ? `${theme.name} Daily` : 'The NewsKit Daily'}</>;
 };
 
 const AudioPlayerInline = () => {
