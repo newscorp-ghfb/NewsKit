@@ -32,6 +32,10 @@ const dependenciesNotToBeIncluded = [
   'googleapis',
   'glob',
   'globby',
+  '@newskit-themes/the-times',
+  '@newskit-themes/the-sun',
+  '@newskit-themes/newskit-website',
+  '@newskit-themes/dow-jones',
 ];
 
 const filterPackageJson = () => {

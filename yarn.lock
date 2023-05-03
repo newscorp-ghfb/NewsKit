@@ -3696,10 +3696,25 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@newskit-themes/dow-jones@^0.0.0-1c3e3b051":
+  version "0.0.0-1c3e3b051"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/dow-jones/-/dow-jones-0.0.0-1c3e3b051.tgz#e8f6d98366c43d0ed187f092556cdb8263116e7c"
+  integrity sha512-fSpzl37lx19/ADT+0O5jBOtFvESkM6JHAaj42J1zliJnbtnwd5akAUVTiIse2lp3aUPhOvWFMPlCI6VljNeZtA==
+
 "@newskit-themes/newskit-website@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@newskit-themes/newskit-website/-/newskit-website-1.0.2.tgz#010214a9d05f89e78a6651aefee4136985119b72"
   integrity sha512-DQHBfVmCeOjJc0A9aXYVdQmnpBUdXSseSYJ7yATiO4snFFqjsVQlLhHsEThkmUrO0ArDmMelPtQAGket8XLXdw==
+
+"@newskit-themes/the-sun@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/the-sun/-/the-sun-0.2.0.tgz#741b6095492100ef0815392a8659a9238f270daf"
+  integrity sha512-8ia8oqb+Xc9qo/4nMpNyv6eHXIlhCx5s9v3qcwBEMzeCDCaiP5u69WymcN9aryZ6WImjRP0Hpk9CLuhl3dMlQg==
+
+"@newskit-themes/the-times@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-0.1.1.tgz#1e2d2ac1f21016eb1600669eb9f4043d84755818"
+  integrity sha512-OZ1eg8jMuTXAkFVc0TCvWf5YlC6hL9KA7IddQ0VmBaxA4RaR702GZFrdeqd1mu5QILAoagq3reJ1U3KNG5/Scg==
 
 "@next/env@13.1.0":
   version "13.1.0"

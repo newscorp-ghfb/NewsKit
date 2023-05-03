@@ -1,4 +1,4 @@
-import { createTheme, deepMerge, Button } from 'newskit';
+import {createTheme, deepMerge, Button} from 'newskit';
 
 export default createTheme({
   name: 'page6-theme',
@@ -12,12 +12,12 @@ export default createTheme({
       },
       buttonMinimalPrimaryNoWrap: deepMerge(
         {},
-        Button.stylePresets.buttonMinimalPrimary,
+        Button?.stylePresets?.buttonMinimalPrimary,
         {
           base: {
             whiteSpace: 'nowrap',
           },
-        }
+        },
       ),
     },
   },

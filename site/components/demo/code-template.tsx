@@ -13,6 +13,7 @@ import {
 } from 'newskit';
 import LinkNext from 'next/link';
 import useThemeSwitcher from './use-theme-switcher';
+
 const Container = styled(GridLayout)`
   ${getBorderCssFromTheme('borderRadius', 'borderRadiusRounded010')};
   overflow: hidden;
@@ -68,8 +69,11 @@ export default function CodeTemplate({
   return (
     <Template title={title}>
       <GridLayout
-        columns={showThemeSwitcher ? 'auto auto auto' : 'auto auto'}
-        justifyContent="space-between"
+        columns={{
+          xs: 'auto',
+          md: showThemeSwitcher ? 'auto auto auto' : 'auto auto',
+        }}
+        justifyContent={{xs: 'center', md: 'space-between'}}
         alignItems="center"
         overrides={{
           paddingBlock: 'space030',

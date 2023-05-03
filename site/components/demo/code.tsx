@@ -3,7 +3,13 @@ import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 // import { tomorrow, coy } from 'react-syntax-highlighter/styles/prism';
 import {useTheme} from 'newskit';
 
-export const Code = ({language = 'jsx', children}) => {
+export const Code = ({
+  language = 'jsx',
+  children,
+}: {
+  language?: string;
+  children?: React.ReactNode;
+}) => {
   const theme = useTheme();
   return (
     <div>

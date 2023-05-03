@@ -7,7 +7,7 @@ import {
   useTheme,
   toNewsKitIcon,
 } from 'newskit';
-import { ExpandMore } from '@emotion-icons/material';
+import {ExpandMore} from '@emotion-icons/material';
 
 const IconFilledExpandMore = toNewsKitIcon(ExpandMore);
 
@@ -56,14 +56,12 @@ export default () => (
     >
       a month, monthly rolling contract.
     </TextBlock>
-    <GridLayout columns="1fr 1fr">
-      <Button
-        overrides={{ width: '100%', stylePreset: 'buttonOutlinedPrimary' }}
-      >
+    <GridLayout columns="1fr 1fr" columnGap="space010">
+      <Button overrides={{width: '100%', stylePreset: 'buttonOutlinedPrimary'}}>
         Subscribe
       </Button>
       <Button
-        overrides={{ width: '100%', stylePreset: 'buttonMinimalPrimaryNoWrap' }}
+        overrides={{width: '100%', stylePreset: 'buttonMinimalPrimaryNoWrap'}}
       >
         View Benefits <IconFilledExpandMore />
       </Button>

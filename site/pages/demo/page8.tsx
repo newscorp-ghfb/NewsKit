@@ -16,6 +16,7 @@ import {
   AudioPlayerTimeDisplay,
   AudioPlayerSeekBar,
   AudioPlayerPlaybackSpeedControl,
+  TextBlock,
 } from 'newskit';
 import CodeTemplate from '../../components/demo/code-template';
 import Page7 from '../../public/static/demo/page7';
@@ -77,6 +78,7 @@ const areas = {
 const Content = () => (
   <GridLayout
     columns={{xs: '1fr', md: '1fr auto'}}
+    rowGap="space050"
     areas={areas}
     overrides={{
       width: {md: '67%'},
@@ -87,6 +89,9 @@ const Content = () => (
     {Area => (
       <>
         <Area.Podcast paddingInline="space040">
+          <TextBlock typographyPreset="editorialDisplay001">
+            editorialDisplay001
+          </TextBlock>
           <Block>
             <TitleBar>
               <PublicationName /> Podcasts
@@ -101,6 +106,7 @@ const Content = () => (
               marginBlockEnd: 'space020',
             }}
             columnGap="space050"
+            rowGap="space050"
             areas={{
               xs: `media 
               content`,
@@ -136,18 +142,18 @@ const Content = () => (
           {/* Podcast AudioPlayer */}
           <AudioPlayerInline />
         </Area.Podcast>
-        <Area.Pricing>
+        <Area.Pricing justifySelf="center">
           {/* Page7 is our Pricing Card Component */}
           <Page7 />
         </Area.Pricing>
         <Area.List>
-          <Block marginBlockEnd="space040" marginBlockStart="space080">
+          <Block marginBlockEnd="space040" marginBlockStart="space030">
             <TitleBar
               overrides={{
                 heading: {
                   typographyPreset: {
-                    xs: 'heading020',
-                    md: 'heading030',
+                    xs: 'utilityHeading030',
+                    md: 'utilityHeading040',
                     lg: 'utilityHeading050',
                   },
                 },

@@ -1,10 +1,8 @@
 import {useState, useCallback} from 'react';
 import {
   createTheme,
-  NewsKitProvider,
   newskitDarkTheme,
   styled,
-  getColorCssFromTheme,
   ThemeOverrides,
   UncompiledTheme,
   Select,
@@ -13,9 +11,9 @@ import {
   Button,
 } from 'newskit';
 
-// import timesThemeOverrides from '../themes/times-theme-overrides';
-// import sunThemeOverrides from '../themes/sun-theme-overrides';
-// import virginThemeOverrides from '../themes/virgin-theme-overrides';
+import theSunTheme from '@newskit-themes/the-sun/TheSun-light.json';
+import theTimesTheme from '@newskit-themes/the-times/TheTimes-light.json';
+import dowJonesTheme from '@newskit-themes/dow-jones/DowJones-light.json';
 
 const createOverrides = (customOverrides: ThemeOverrides = {}) => {
   return {
@@ -37,6 +35,7 @@ const createOverrides = (customOverrides: ThemeOverrides = {}) => {
       },
       buttonMinimalPrimaryNoWrap: deepMerge(
         {},
+        // @ts-ignore
         Button.stylePresets.buttonMinimalPrimary,
         {
           base: {
@@ -57,9 +56,9 @@ type ThemeSettings = [
 const themeSettings: ThemeSettings[] = [
   [undefined, 'NewsKit Light', {}],
   [newskitDarkTheme, 'NewsKit Dark', {}],
-  // [undefined, 'The Times Theme', timesThemeOverrides],
-  // [undefined, 'The Sun Theme', sunThemeOverrides],
-  // [undefined, 'Virgin Radio Theme', virginThemeOverrides],
+  [undefined, 'The Times', theTimesTheme],
+  [undefined, 'The Sun', theSunTheme],
+  [undefined, 'Dow Jones', dowJonesTheme],
 ];
 
 const themes: UncompiledTheme[] = themeSettings.map(
