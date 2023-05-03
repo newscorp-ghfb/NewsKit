@@ -234,7 +234,7 @@ const download = (source, dest) =>
       }),
   );
 
-mkdirp(fontDirStorybook).then(() =>
+Promise.all([mkdirp(fontDirStorybook), mkdirp(fontDirSite)]).then(() =>
   Promise.all(
     ...fonts.map(({sources, fileName}) =>
       sources.map(source => {
