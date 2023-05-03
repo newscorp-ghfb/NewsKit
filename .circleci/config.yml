@@ -1369,7 +1369,7 @@ workflows:
       - deploy_terraform_oidc:
           name: validate_deploy_terraform_s3_prod
           package: s3/prod-newskit
-          context: ncu-newskit-site-stage
+          context: ncu-newskit-site-prod
           apply: false # Can set true while doing testing of CircleCI code
           tf_env: true
           environment: prod
