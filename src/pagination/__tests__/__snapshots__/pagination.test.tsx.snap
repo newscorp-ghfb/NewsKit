@@ -3,30 +3,28 @@
 exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in large pageSize 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -47,7 +45,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 40px;
   min-height: 40px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -71,43 +68,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -116,20 +113,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -137,45 +134,45 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -184,19 +181,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -207,19 +204,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   display: inline-block;
 }
 
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -240,7 +237,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 40px;
   min-height: 40px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -266,43 +262,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   text-decoration: none;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-12:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-12:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -311,20 +307,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-12:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -332,18 +328,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -358,386 +354,338 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 1"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 2"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             2
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 3"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             3
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 4"
-          class="emotion-12"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             4
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 5"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             5
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 6"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             6
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 7"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             7
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 8"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             8
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 9"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             9
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 10"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             10
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 11"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             11
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 12"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             12
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 13"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             13
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 14"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             14
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 15"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             15
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 16"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             16
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 17"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             17
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 18"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             18
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 19"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             19
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 20"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             20
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 21"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             21
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 22"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             22
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 23"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             23
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 24"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             24
           </span>
@@ -751,30 +699,28 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in medium pageSize 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -795,7 +741,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -819,43 +764,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -864,20 +809,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -885,45 +830,45 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -932,19 +877,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -955,19 +900,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   display: inline-block;
 }
 
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -988,7 +933,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -1014,43 +958,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   text-decoration: none;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-12:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-12:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -1059,20 +1003,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-12:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1080,18 +1024,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1106,386 +1050,338 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 1"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 2"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             2
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 3"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             3
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 4"
-          class="emotion-12"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             4
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 5"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             5
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 6"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             6
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 7"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             7
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 8"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             8
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 9"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             9
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 10"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             10
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 11"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             11
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 12"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             12
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 13"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             13
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 14"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             14
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 15"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             15
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 16"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             16
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 17"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             17
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 18"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             18
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 19"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             19
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 20"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             20
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 21"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             21
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 22"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             22
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 23"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             23
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 24"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             24
           </span>
@@ -1499,30 +1395,28 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders in small pageSize 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -1543,7 +1437,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 24px;
   min-height: 24px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -1567,43 +1460,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -1612,20 +1505,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1633,45 +1526,45 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -1680,19 +1573,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
@@ -1703,19 +1596,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   display: inline-block;
 }
 
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -1736,7 +1629,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 24px;
   min-height: 24px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -1762,43 +1654,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   text-decoration: none;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-12:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-12:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -1807,20 +1699,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-12:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -1828,18 +1720,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1854,386 +1746,338 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 1"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 2"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             2
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 3"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             3
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 4"
-          class="emotion-12"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             4
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 5"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             5
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 6"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             6
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 7"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             7
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 8"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             8
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 9"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             9
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 10"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             10
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 11"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             11
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 12"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             12
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 13"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             13
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 14"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             14
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 15"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             15
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 16"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             16
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 17"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             17
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 18"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             18
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 19"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             19
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 20"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             20
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 21"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             21
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 22"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             22
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 23"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             23
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 24"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             24
           </span>
@@ -2252,30 +2096,30 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-block: 20px;
+  padding-inline: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -2296,7 +2140,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -2320,43 +2163,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -2365,20 +2208,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2386,45 +2229,45 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -2433,19 +2276,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -2456,19 +2299,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   display: inline-block;
 }
 
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -2489,7 +2332,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -2515,43 +2357,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   text-decoration: none;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-12:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-12:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -2560,20 +2402,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-12:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -2581,18 +2423,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2606,386 +2448,338 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 1"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 2"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             2
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 3"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             3
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 4"
-          class="emotion-12"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             4
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 5"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             5
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 6"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             6
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 7"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             7
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 8"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             8
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 9"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             9
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 10"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             10
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 11"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             11
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 12"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             12
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 13"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             13
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 14"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             14
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 15"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             15
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 16"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             16
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 17"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             17
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 18"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             18
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 19"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             19
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 20"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             20
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 21"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             21
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 22"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             22
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 23"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             23
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 24"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             24
           </span>
@@ -2999,30 +2793,28 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with mandatory props set 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -3043,7 +2835,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -3067,43 +2858,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -3112,20 +2903,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3133,45 +2924,45 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -3180,19 +2971,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3203,19 +2994,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   display: inline-block;
 }
 
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -3236,7 +3027,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -3262,43 +3052,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   text-decoration: none;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-12:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-12:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -3307,20 +3097,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-12:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3328,18 +3118,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3353,386 +3143,338 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 1"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 2"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             2
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 3"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             3
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 4"
-          class="emotion-12"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             4
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 5"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             5
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 6"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             6
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 7"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             7
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 8"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             8
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 9"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             9
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 10"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             10
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 11"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             11
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 12"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             12
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 13"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             13
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 14"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             14
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 15"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             15
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 16"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             16
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 17"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             17
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 18"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             18
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 19"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             19
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 20"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             20
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 21"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             21
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 22"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             22
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 23"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             23
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 24"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             24
           </span>
@@ -3746,30 +3488,28 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with truncation icon as overrides 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -3790,7 +3530,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -3814,43 +3553,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -3859,20 +3598,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -3880,45 +3619,45 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -3927,19 +3666,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -3950,19 +3689,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   display: inline-block;
 }
 
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -3983,7 +3722,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -4009,43 +3747,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   text-decoration: none;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-12:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-12:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -4054,20 +3792,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-12:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4075,18 +3813,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4100,386 +3838,338 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 1"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 2"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             2
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 3"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             3
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 4"
-          class="emotion-12"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             4
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 5"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             5
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 6"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             6
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 7"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             7
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 8"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             8
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 9"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             9
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 10"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             10
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 11"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             11
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 12"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             12
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 13"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             13
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 14"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             14
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 15"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             15
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 16"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             16
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 17"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             17
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 18"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             18
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 19"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             19
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 20"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             20
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 21"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             21
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 22"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             22
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 23"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             23
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 24"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             24
           </span>
@@ -4493,30 +4183,28 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 exports[`Pagination and PaginationItems only Pagination and PaginationItems only renders with truncation overrides with TextBlock component 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -4537,7 +4225,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -4561,43 +4248,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -4606,20 +4293,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4627,45 +4314,45 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -4674,19 +4361,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -4697,19 +4384,19 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   display: inline-block;
 }
 
-.emotion-4::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-4::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-12 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -4730,7 +4417,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -4756,43 +4442,43 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   text-decoration: none;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-12:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-12:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-12:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -4801,20 +4487,20 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-12:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -4822,18 +4508,18 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-12 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4847,386 +4533,338 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 1"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 2"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             2
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 3"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             3
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 4"
-          class="emotion-12"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             4
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 5"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             5
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 6"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             6
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 7"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             7
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 8"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             8
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 9"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             9
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 10"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             10
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 11"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             11
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 12"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             12
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 13"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             13
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 14"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             14
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 15"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             15
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 16"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             16
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 17"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             17
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 18"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             18
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 19"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             19
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 20"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             20
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 21"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             21
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 22"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             22
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 23"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             23
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 24"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
         >
           <span
-            class="emotion-4"
+            class="emotion-3"
           >
             24
           </span>
@@ -5240,30 +4878,28 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
 exports[`Pagination and PaginationItems only Pagination, navigation icons and PaginationItems renders with controlled props 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -5285,7 +4921,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   width: 32px;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -5308,17 +4943,17 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #ABABAB;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5326,45 +4961,45 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -5373,19 +5008,19 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5395,7 +5030,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5403,14 +5038,14 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-11 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -5431,7 +5066,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -5457,43 +5091,43 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   text-decoration: none;
 }
 
-.emotion-11 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-11 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-11:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-11:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-11:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-11:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-11:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-11:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -5502,20 +5136,20 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-11:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5523,24 +5157,24 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-11 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12 {
+.emotion-9 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -5551,13 +5185,13 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   display: inline-block;
 }
 
-.emotion-12::before {
+.emotion-9::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-12::after {
+.emotion-9::after {
   content: '';
   margin-top: -0.4em;
   display: block;
@@ -5571,18 +5205,16 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-disabled="true"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-first-item"
           role="link"
         >
           <svg
             aria-hidden="true"
-            class="emotion-4 emotion-5"
+            class="emotion-3 emotion-4"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -5598,18 +5230,16 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           </svg>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-disabled="true"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-prev-item"
           role="link"
         >
           <svg
             aria-hidden="true"
-            class="emotion-4 emotion-5"
+            class="emotion-3 emotion-4"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -5625,35 +5255,31 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           </svg>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 1"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-disabled="true"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-next-item"
           role="link"
         >
           <svg
             aria-hidden="true"
-            class="emotion-4 emotion-5"
+            class="emotion-3 emotion-4"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -5669,18 +5295,16 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           </svg>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-disabled="true"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-last-item"
           role="link"
         >
           <svg
             aria-hidden="true"
-            class="emotion-4 emotion-5"
+            class="emotion-3 emotion-4"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -5704,30 +5328,28 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 exports[`Pagination and PaginationItems only Pagination, navigation icons and PaginationItems renders with uncontrolled props 1`] = `
 <DocumentFragment>
   .emotion-1 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.emotion-3 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -5749,7 +5371,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   width: 32px;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -5773,43 +5394,43 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   color: #3358CC;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -5818,20 +5439,20 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5839,45 +5460,45 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-3 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-3 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-3:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-3:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-3:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-3:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-3:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -5886,19 +5507,19 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-3:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -5908,7 +5529,7 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -5916,14 +5537,14 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-11 {
+.emotion-8 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -5944,7 +5565,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -5968,43 +5588,43 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   color: #3358CC;
 }
 
-.emotion-11 svg {
+.emotion-8 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-11 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-11:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-11:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-11:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-11:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-11:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-11:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -6013,20 +5633,20 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-11:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-11 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6034,45 +5654,45 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-11 {
+  .emotion-8 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-11 svg {
+.emotion-8 svg {
   fill: #3358CC;
 }
 
-.emotion-11:hover:not(:disabled) {
+.emotion-8:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-11:hover:not(:disabled) svg {
+.emotion-8:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-11:active:not(:disabled) {
+.emotion-8:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-11:active:not(:disabled) svg {
+.emotion-8:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-11:disabled {
+.emotion-8:disabled {
   color: #ABABAB;
 }
 
-.emotion-11:disabled svg {
+.emotion-8:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-11:focus-visible:not(:disabled) {
+.emotion-8:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -6081,19 +5701,19 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-11:focus-visible:not(:disabled) {
+    .emotion-8:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-11:selected:hover:not(:disabled) {
+.emotion-8:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-12 {
+.emotion-9 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -6104,19 +5724,19 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   display: inline-block;
 }
 
-.emotion-12::before {
+.emotion-9::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-12::after {
+.emotion-9::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-.emotion-20 {
+.emotion-14 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -6137,7 +5757,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -6163,43 +5782,43 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   text-decoration: none;
 }
 
-.emotion-20 svg {
+.emotion-14 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-20 svg {
+.emotion-14 svg {
   fill: #3358CC;
 }
 
-.emotion-20:hover:not(:disabled) {
+.emotion-14:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-20:hover:not(:disabled) svg {
+.emotion-14:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-20:active:not(:disabled) {
+.emotion-14:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-20:active:not(:disabled) svg {
+.emotion-14:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-20:disabled {
+.emotion-14:disabled {
   color: #ABABAB;
 }
 
-.emotion-20:disabled svg {
+.emotion-14:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-20:focus-visible:not(:disabled) {
+.emotion-14:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -6208,20 +5827,20 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-20:focus-visible:not(:disabled) {
+    .emotion-14:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-20:selected:hover:not(:disabled) {
+.emotion-14:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-20 {
+  .emotion-14 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6229,18 +5848,18 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-20 {
+  .emotion-14 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 svg {
+.emotion-14 svg {
   fill: #3358CC;
 }
 
-.emotion-20:hover:not(:disabled) {
+.emotion-14:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -6254,18 +5873,16 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
     <ul
       class="emotion-1"
     >
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to first page"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-first-item"
           href="https://paginationitem.test/1"
         >
           <svg
             aria-hidden="true"
-            class="emotion-4 emotion-5"
+            class="emotion-3 emotion-4"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -6281,18 +5898,16 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           </svg>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to previous page"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-prev-item"
           href="https://paginationitem.test/3"
         >
           <svg
             aria-hidden="true"
-            class="emotion-4 emotion-5"
+            class="emotion-3 emotion-4"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -6308,403 +5923,353 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           </svg>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 1"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/1"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             1
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 2"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/2"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             2
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 3"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/3"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             3
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-current="page"
           aria-label="current page, page 4"
-          class="emotion-20"
+          class="emotion-14"
           data-testid="pagination-item"
           href="https://paginationitem.test/4"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             4
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 5"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/5"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             5
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 6"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/6"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             6
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 7"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/7"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             7
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 8"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/8"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             8
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 9"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/9"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             9
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 10"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/10"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             10
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 11"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/11"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             11
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 12"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/12"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             12
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 13"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/13"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             13
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 14"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/14"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             14
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 15"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/15"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             15
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 16"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/16"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             16
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 17"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/17"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             17
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 18"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/18"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             18
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 19"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/19"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             19
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 20"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/20"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             20
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 21"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/21"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             21
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 22"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/22"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             22
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 23"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/23"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             23
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to page 24"
-          class="emotion-11"
+          class="emotion-8"
           data-testid="pagination-item"
           href="https://paginationitem.test/24"
         >
           <span
-            class="emotion-12"
+            class="emotion-9"
           >
             24
           </span>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to next page"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-next-item"
           href="https://paginationitem.test/5"
         >
           <svg
             aria-hidden="true"
-            class="emotion-4 emotion-5"
+            class="emotion-3 emotion-4"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -6720,18 +6285,16 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
           </svg>
         </a>
       </li>
-      <li
-        class="emotion-2"
-      >
+      <li>
         <a
           aria-label="go to last page"
-          class="emotion-3"
+          class="emotion-2"
           data-testid="pagination-last-item"
           href="https://paginationitem.test/24"
         >
           <svg
             aria-hidden="true"
-            class="emotion-4 emotion-5"
+            class="emotion-3 emotion-4"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -6754,31 +6317,29 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
 
 exports[`Pagination and PaginationItems only PaginationItem renders selected pagination item with aria attributes 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  .emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0px;
-}
-
-.emotion-4 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -6799,7 +6360,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   align-items: center;
   min-width: 24px;
   min-height: 24px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -6825,43 +6385,43 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   text-decoration: none;
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   width: 16px;
   height: 16px;
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-4:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-4:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -6870,20 +6430,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-4:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6891,24 +6451,24 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-5 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -6918,7 +6478,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -6926,37 +6486,33 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-<li
-    class="emotion-0"
-  >
+<li>
     <nav
       aria-label="pagination"
-      class="emotion-1"
+      class="emotion-0"
       data-testid="pagination-container"
     >
       <ul
-        class="emotion-2"
+        class="emotion-1"
       >
-        <li
-          class="emotion-0"
-        >
+        <li>
           <a
             aria-current="page"
             aria-label="current page, page 3"
-            class="emotion-4"
+            class="emotion-2"
             data-testid="pagination-item"
             href="https://paginationitem.test"
           >
             <svg
               aria-hidden="true"
-              class="emotion-5 emotion-6"
+              class="emotion-3 emotion-4"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -6980,31 +6536,29 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
 
 exports[`Pagination and PaginationItems only PaginationItem renders with default props 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  .emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0px;
-}
-
-.emotion-4 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -7025,7 +6579,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -7049,43 +6602,43 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   color: #3358CC;
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-4:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-4:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -7094,20 +6647,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-4:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7115,45 +6668,45 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   fill: #3358CC;
 }
 
-.emotion-4:hover:not(:disabled) {
+.emotion-2:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
 }
 
-.emotion-4:hover:not(:disabled) svg {
+.emotion-2:hover:not(:disabled) svg {
   fill: #254CAC;
 }
 
-.emotion-4:active:not(:disabled) {
+.emotion-2:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4:active:not(:disabled) svg {
+.emotion-2:active:not(:disabled) svg {
   fill: #12387A;
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   color: #ABABAB;
 }
 
-.emotion-4:disabled svg {
+.emotion-2:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-4:focus-visible:not(:disabled) {
+.emotion-2:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -7162,19 +6715,19 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-4:focus-visible:not(:disabled) {
+    .emotion-2:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-4:selected:hover:not(:disabled) {
+.emotion-2:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-5 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 14px;
@@ -7185,40 +6738,36 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-<li
-    class="emotion-0"
-  >
+<li>
     <nav
       aria-label="pagination"
-      class="emotion-1"
+      class="emotion-0"
       data-testid="pagination-container"
     >
       <ul
-        class="emotion-2"
+        class="emotion-1"
       >
-        <li
-          class="emotion-0"
-        >
+        <li>
           <a
             aria-label="go to page 3"
-            class="emotion-4"
+            class="emotion-2"
             data-testid="pagination-item"
             href="https://paginationitem.test"
           >
             <span
-              class="emotion-5"
+              class="emotion-3"
             >
               Pagination Item
             </span>
@@ -7232,31 +6781,29 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
 
 exports[`Pagination and PaginationItems only PaginationItem renders with overrides 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  .emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0px;
-}
-
-.emotion-4 {
   margin: 0;
   padding: 0;
   display: inline-grid;
@@ -7277,7 +6824,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   align-items: center;
   min-width: 27px;
   min-height: 24px;
-  margin-inline: 4px;
   padding-inline: 8px;
   padding-block: 0;
   box-sizing: border-box;
@@ -7295,13 +6841,13 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   cursor: pointer;
 }
 
-.emotion-4 svg {
+.emotion-2 svg {
   width: 32px;
   height: 32px;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7309,14 +6855,14 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-4 {
+  .emotion-2 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-5 {
+.emotion-3 {
   margin: 0;
   font-family: "Poppins",sans-serif;
   font-size: 16px;
@@ -7327,40 +6873,36 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   display: inline-block;
 }
 
-.emotion-5::before {
+.emotion-3::before {
   content: '';
   margin-bottom: -0.403em;
   display: block;
 }
 
-.emotion-5::after {
+.emotion-3::after {
   content: '';
   margin-top: -0.4em;
   display: block;
 }
 
-<li
-    class="emotion-0"
-  >
+<li>
     <nav
       aria-label="pagination"
-      class="emotion-1"
+      class="emotion-0"
       data-testid="pagination-container"
     >
       <ul
-        class="emotion-2"
+        class="emotion-1"
       >
-        <li
-          class="emotion-0"
-        >
+        <li>
           <a
             aria-label="go to page 3"
-            class="emotion-4"
+            class="emotion-2"
             data-testid="pagination-item"
             href="https://paginationitem.test"
           >
             <span
-              class="emotion-5"
+              class="emotion-3"
             >
               Pagination Item
             </span>
@@ -7374,31 +6916,29 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 
 exports[`Pagination and PaginationItems only PaginationItem renders with overrides.itemButton 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  .emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0px;
-}
-
-.emotion-4 {
   margin: 0;
   padding: 0;
   display: grid;
@@ -7413,7 +6953,7 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   align-items: center;
 }
 
-.emotion-5 {
+.emotion-3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -7426,25 +6966,25 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   padding-inline: 8px;
 }
 
-.emotion-5:hover:not(:disabled) {
+.emotion-3:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
   fill: #254CAC;
 }
 
-.emotion-5:active:not(:disabled) {
+.emotion-3:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
   fill: #12387A;
 }
 
-.emotion-5:disabled {
+.emotion-3:disabled {
   color: #ABABAB;
   fill: #ABABAB;
 }
 
-.emotion-5:focus-visible:not(:disabled) {
+.emotion-3:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -7453,20 +6993,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5:focus-visible:not(:disabled) {
+    .emotion-3:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-5:selected:hover:not(:disabled) {
+.emotion-3:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7474,14 +7014,14 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5 {
+  .emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-5.emotion-5 {
+.emotion-3.emotion-3 {
   width: 24px;
   height: 24px;
   background-color: transparent;
@@ -7490,25 +7030,25 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   fill: #3358CC;
 }
 
-.emotion-5.emotion-5:hover:not(:disabled) {
+.emotion-3.emotion-3:hover:not(:disabled) {
   color: #254CAC;
   background-color: #ECF1FF;
   fill: #254CAC;
 }
 
-.emotion-5.emotion-5:active:not(:disabled) {
+.emotion-3.emotion-3:active:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
   fill: #12387A;
 }
 
-.emotion-5.emotion-5:disabled {
+.emotion-3.emotion-3:disabled {
   color: #ABABAB;
   fill: #ABABAB;
 }
 
-.emotion-5.emotion-5:focus-visible:not(:disabled) {
+.emotion-3.emotion-3:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-offset: 2px;
   outline-style: solid;
@@ -7517,20 +7057,20 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-5.emotion-5:focus-visible:not(:disabled) {
+    .emotion-3.emotion-3:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-5.emotion-5:selected:hover:not(:disabled) {
+.emotion-3.emotion-3:selected:hover:not(:disabled) {
   color: #12387A;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-5.emotion-5 {
+  .emotion-3.emotion-3 {
     transition-property: fill;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -7538,34 +7078,30 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-5.emotion-5 {
+  .emotion-3.emotion-3 {
     transition-property: fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-<li
-    class="emotion-0"
-  >
+<li>
     <nav
       aria-label="pagination"
-      class="emotion-1"
+      class="emotion-0"
       data-testid="pagination-container"
     >
       <ul
-        class="emotion-2"
+        class="emotion-1"
       >
-        <li
-          class="emotion-0"
-        >
+        <li>
           <div
-            class="emotion-4"
+            class="emotion-2"
           >
             <svg
               aria-hidden="true"
               aria-label="go to page 3"
-              class="emotion-5 emotion-6"
+              class="emotion-3 emotion-4"
               data-testid="pagination-item"
               fill="currentColor"
               focusable="false"
@@ -7593,31 +7129,29 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
 
 exports[`Pagination and PaginationItems only PaginationItem renders with overrides.itemDescription 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+  .emotion-1 {
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  grid-template-columns: auto;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
 }
 
 .emotion-2 {
-  list-style: none;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0px;
-}
-
-.emotion-4 {
   margin: 0;
   padding: 0;
   display: grid;
@@ -7632,22 +7166,18 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   align-items: center;
 }
 
-<li
-    class="emotion-0"
-  >
+<li>
     <nav
       aria-label="pagination"
-      class="emotion-1"
+      class="emotion-0"
       data-testid="pagination-container"
     >
       <ul
-        class="emotion-2"
+        class="emotion-1"
       >
-        <li
-          class="emotion-0"
-        >
+        <li>
           <div
-            class="emotion-4"
+            class="emotion-2"
           >
             <span>
               Page 3 of 

@@ -24,6 +24,7 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
       totalItems,
       buildHref,
       onPageChange,
+      overrides,
       ...rest
     },
     ref,
@@ -148,14 +149,26 @@ const ThemelessPagination = React.forwardRef<HTMLOListElement, PaginationProps>(
     return (
       <PaginationProvider value={value}>
         <StyledNav
-          path="pagination"
           size={size}
           aria-label="pagination"
           data-testid="pagination-container"
           ref={ref}
+          overrides={overrides}
           {...rest}
         >
-          <StyledUnorderedList>{children}</StyledUnorderedList>
+          <StyledUnorderedList
+            as="ul"
+            autoFlow="column"
+            autoColumns="auto"
+            columns="auto"
+            inline
+            justifyContent="start"
+            alignItems="center"
+            size={size}
+            overrides={overrides}
+          >
+            {children}
+          </StyledUnorderedList>
         </StyledNav>
       </PaginationProvider>
     );

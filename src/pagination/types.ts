@@ -4,13 +4,13 @@ import {LogicalProps} from '../utils/logical-properties';
 import {EventData} from '../instrumentation';
 import {ComponentOverrides, Override} from '../utils/overrides';
 import {NewsKitIconProps} from '../icons';
-import {ButtonOrButtonLinkProps, ButtonProps} from '../button/types';
+import {ButtonOrButtonLinkProps, ButtonProps} from '../button';
 
 import {IconButtonProps} from '../icon-button/types';
-import {PaginationFirstItemProps} from './components/first-item/types';
-import {PaginationLastItemProps} from './components/last-item/types';
-import {PaginationNextItemProps} from './components/next-item/types';
-import {PaginationPrevItemProps} from './components/prev-item/types';
+import {PaginationFirstItemProps} from './components/first-item';
+import {PaginationLastItemProps} from './components/last-item';
+import {PaginationNextItemProps} from './components/next-item';
+import {PaginationPrevItemProps} from './components/prev-item';
 import {TextBlockProps} from '../text-block';
 
 export type PaginationSize = 'small' | 'medium' | 'large';
@@ -51,14 +51,9 @@ export interface PaginationProps extends React.AriaAttributes {
   onPageChange?: (pageNumber: number) => void;
   overrides?: {
     stylePreset?: MQ<string>;
-    typographyPreset?: MQ<string>;
+    typographyPreset?: MQ<string>; // todo: reconcile with PaginationItemProps.overrides.typographyPreset
+    spaceBetween?: MQ<string>;
   } & LogicalProps;
-}
-
-export interface ComponentSizeProps extends React.AriaAttributes {
-  children?: React.ReactNode;
-  path?: string;
-  size?: PaginationSize;
 }
 
 export interface PaginationItemDescriptionProps extends ComponentOverrides {

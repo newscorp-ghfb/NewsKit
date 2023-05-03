@@ -1,26 +1,31 @@
-import {styled, getStylePreset, getTypographyPreset} from '../utils/style';
-import {ComponentSizeProps, PaginationItemProps} from './types';
+import {
+  styled,
+  getStylePreset,
+  getTypographyPreset,
+  getResponsiveSpace,
+} from '../utils/style';
+import {PaginationItemProps, PaginationProps} from './types';
 import {logicalProps} from '../utils/logical-properties';
 import {Button, ButtonOrButtonLinkProps} from '../button';
+import {GridLayout} from '../grid-layout';
 
-// The path will most likely always be 'pagination'
-export const StyledNav = styled.nav<ComponentSizeProps>`
-  ${({path, size}) => getStylePreset(`${path}.${size}`, '')};
-  ${({path, size}) => getTypographyPreset(`${path}.${size}`, '')};
-  ${({path, size}) => logicalProps(`${path}.${size}`, '')};
+export const StyledNav = styled.nav<
+  Pick<PaginationProps, 'size' | 'overrides'>
+>`
+  ${({size}) => getStylePreset(`pagination.${size}`, '')};
+  ${({size}) => getTypographyPreset(`pagination.${size}`, '')};
+  ${({size}) => logicalProps(`pagination.${size}`, '')};
 `;
 
-export const StyledUnorderedList = styled.ul`
+export const StyledUnorderedList = styled(GridLayout)<
+  Pick<PaginationProps, 'size' | 'overrides'>
+>`
   list-style: none;
-  display: inline-flex;
   margin: 0;
-  padding: 0px;
-`;
+  padding: 0;
 
-export const StyledListItem = styled.li`
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  ${({size}) =>
+    getResponsiveSpace('columnGap', `pagination.${size}`, '', 'spaceBetween')}
 `;
 
 export const StyledButton = styled(Button)<
