@@ -444,6 +444,9 @@ jobs:
       - run:
           name: Dependencies Install
           command: make install
+      - run:
+          name: Build icons
+          command: make build_icons
       - save_cache:
           key: yarn-build-v1-{{ checksum "yarn.lock" }}
           paths:
@@ -454,6 +457,7 @@ jobs:
             - node_modules/*
             - .storybook/private-fonts
             - src/version-number.json
+            - src/icons/*
       - slack/notify:
           <<: *slack_notify
 
@@ -479,22 +483,6 @@ jobs:
           paths:
             - .cache
             - cypress/*
-      - slack/notify:
-          <<: *slack_notify
-
-  build_icons:
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Build
-          command: make build_icons
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - src/icons/*
       - slack/notify:
           <<: *slack_notify
 
@@ -1014,14 +1002,14 @@ jobs:
       - run:
           name: Install yalc and create-next-app
           command: |
-            yarn global add yalc
+            yarn global add yalc && yarn add create-next-app@13.3.1
       - run:
           name: Yalc publish and run create-nextjs-app
           command: |
             cd dist
             yalc publish
             cd ..
-            yarn create next-app newskit-integration-test
+            npx create-next-app@13.3.1 newskit-integration-test --no-eslint
       - run:
           name: Prepare the NextJs app
           command: |
@@ -1219,27 +1207,24 @@ workflows:
     jobs:
       - install_deps
       - install_cypress
-      - build_icons:
-          requires:
-            - install_deps
       - build_components:
           requires:
-            - build_icons
+            - install_deps
       - build_storybook:
           requires:
-            - build_icons
+            - install_deps
       - build_test_e2e:
           requires:
-            - build_icons
+            - install_deps
       - lint:
           requires:
-            - build_icons
+            - install_deps
       - test_unit_comps:
           requires:
-            - build_icons
+            - install_deps
       - test_unit_docs:
           requires:
-            - build_icons
+            - install_deps
       - test_newskit_in_nextjs_app:
           requires:
             - build_components
@@ -1251,7 +1236,7 @@ workflows:
       - build_docs_pr_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_broken_links_docs:
           name: test_broken_links_docs_pr
           context: ncu-product-platforms-context
@@ -1378,7 +1363,7 @@ workflows:
           name: build_docs_pr
           context: ncu-newskit-site-pr
           requires:
-            - build_icons
+            - install_deps
       - push_s3_pr_oidc:
           name: deploy_to_s3_pr
           context: ncu-newskit-site-pr
@@ -1403,7 +1388,7 @@ workflows:
       #    name: build_docs_dev
       #    context: ncu-newskit-site-dev
       #    requires:
-      #      - build_icons
+      #      - install_deps
       #      - deploy_to_s3_pr
       #- push_s3_general_oidc:
       #    name: deploy_to_s3_dev
@@ -1492,34 +1477,30 @@ workflows:
           context: ncu-product-platforms-context
       - install_cypress:
           context: ncu-product-platforms-context
-      - build_icons:
-          context: ncu-product-platforms-context
-          requires:
-            - install_deps
       - build_components:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - build_storybook:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - build_test_e2e:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - lint:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_unit_comps:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_unit_docs:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_e2e_comps:
           context: ncu-product-platforms-context
           requires:
@@ -1529,7 +1510,7 @@ workflows:
           name: build_docs_dev
           context: ncu-newskit-site-dev
           requires:
-            - build_icons
+            - install_deps
       - test_broken_links_docs:
           name: test_broken_links_docs_dev
           context: ncu-product-platforms-context
@@ -1697,41 +1678,36 @@ workflows:
       - install_cypress:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
-      - build_icons:
-          <<: *only_on_version_tag
-          context: ncu-product-platforms-context
-          requires:
-            - install_deps
       - build_components:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - build_storybook:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - build_test_e2e:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - lint:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_unit_comps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_unit_docs:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_e2e_comps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -1743,7 +1719,7 @@ workflows:
           name: build_docs_versioned
           context: ncu-newskit-site-prod
           requires:
-            - build_icons
+            - install_deps
             - delete_trigger_release_tag
       - test_broken_links_docs:
           <<: *only_on_version_tag
@@ -1781,7 +1757,7 @@ workflows:
           name: build_docs_staging
           context: ncu-newskit-site-stage
           requires:
-            - build_icons
+            - install_deps
             - publish_npm
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
@@ -1797,7 +1773,7 @@ workflows:
           name: build_docs_prod
           context: ncu-newskit-site-prod
           requires:
-            - build_icons
+            - install_deps
             - deploy_to_s3_staging
       - push_s3_general_oidc:
           name: deploy_to_s3_prod
