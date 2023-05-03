@@ -37,11 +37,6 @@ const cards = [
     'In this podcast we lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 }));
 
-const PublicationName = () => {
-  const theme = useTheme();
-  return <>{theme.name ? `${theme.name} Daily` : 'The NewsKit Daily'}</>;
-};
-
 const AudioPlayerInline = () => {
   const breakpointKey = useBreakpointKey();
   return (
@@ -90,9 +85,7 @@ const Content = () => (
       <>
         <Area.Podcast paddingInline="space040">
           <Block>
-            <TitleBar>
-              <PublicationName /> Podcasts
-            </TitleBar>
+            <TitleBar>The NewsKit Daily Podcasts</TitleBar>
           </Block>
 
           {/* Podcast Card */}
