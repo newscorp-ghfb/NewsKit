@@ -2,7 +2,7 @@ import {handleResponsiveProp} from '../style/getters';
 import {createTheme} from '../../theme';
 
 describe('handleResponsiveProp', () => {
-  type DisplayObj = {display: string};
+  type DisplayObj = {display: string | undefined};
 
   const theme: any = createTheme({});
   const handler = ({display}: DisplayObj) => ({display});
@@ -45,6 +45,21 @@ describe('handleResponsiveProp', () => {
       },
       '@media screen and (min-width: 480px)': {
         display: 'block',
+      },
+    });
+  });
+
+  it.only('using CQ rules value', () => {
+    const props = {
+      display: {
+        rules: [{rule: '@container (width > 200px)', value: 'inline'}],
+      },
+      theme,
+    };
+    const result = handleResponsiveProp({display: undefined}, handler)(props);
+    expect(result).toEqual({
+      '@container (width > 200px)': {
+        display: 'inline',
       },
     });
   });

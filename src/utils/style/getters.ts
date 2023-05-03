@@ -246,7 +246,6 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
   ) => string | CSSObject,
 ) => (props: Props): string | CSSObject => {
   const {breakpoints} = props.theme;
-
   const propNames = Object.keys(propObject);
 
   // get only props that we will use
@@ -288,6 +287,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
     .flatMap(
       (propValue: MQ<T[keyof T]>) => Object.keys(propValue) as BreakpointKeys[],
     )
+    .filter((item: BreakpointKeys | 'rules') => item !== 'rules')
     .filter(
       (item: BreakpointKeys, index: number, ar: BreakpointKeys[]) =>
         ar.indexOf(item) === index,
@@ -353,32 +353,50 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
     ? commonMQKeys
     : ['xs', ...commonMQKeys];
 
-  const cssMediaQueryObject = usedMQKeys.reduce((acc, mqKey, index) => {
-    const fromMqKey = mqKey;
-    const toMqKey = usedMQKeys[index + 1] ? usedMQKeys[index + 1] : undefined;
+  let cssMediaQueryObject = {};
+  if (commonMQKeys.length > 0) {
+    cssMediaQueryObject = usedMQKeys.reduce((acc, mqKey, index) => {
+      const fromMqKey = mqKey;
+      const toMqKey = usedMQKeys[index + 1] ? usedMQKeys[index + 1] : undefined;
 
-    const mediaQuery = getMediaQueryFromTheme(fromMqKey, toMqKey)(props);
-    const values = propNames.reduce((valAcc, propName) => {
-      // TS needs checking if prop is part of the object otherwise throw error
-      /* istanbul ignore else */
-      if (hasOwnProperty(filledPropValues, propName)) {
-        const mqValue = filledPropValues[propName as keyof T];
+      const mediaQuery = getMediaQueryFromTheme(fromMqKey, toMqKey)(props);
+      const values = propNames.reduce((valAcc, propName) => {
+        // TS needs checking if prop is part of the object otherwise throw error
         /* istanbul ignore else */
-        if (hasOwnProperty(mqValue, fromMqKey)) {
-          return {
-            ...valAcc,
-            [propName]: mqValue[fromMqKey],
-          };
+        if (hasOwnProperty(filledPropValues, propName)) {
+          const mqValue = filledPropValues[propName as keyof T];
+          /* istanbul ignore else */
+          if (hasOwnProperty(mqValue, fromMqKey)) {
+            return {
+              ...valAcc,
+              [propName]: mqValue[fromMqKey],
+            };
+          }
         }
+        /* istanbul ignore next */
+        return valAcc;
+      }, {}) as {[Key in keyof T]: T[Key]};
+      acc[mediaQuery] = propHandler(values, props, fromMqKey);
+      return acc;
+    }, {} as Record<string, unknown>) as CSSObject;
+  }
+  /*
+  If they've defined container queries using the 'rules'
+*/
+
+  const cssContainerQueryObject = Object.values(usedProps).reduce(
+    (acc, prop, index) => {
+      const values: Record<string, string> = {};
+      if (prop.rules) {
+        prop.rules.forEach(rule => {
+          values[`${Object.keys(usedProps)[index]}`] = rule.value;
+          acc[rule.rule] = propHandler(values, props, undefined);
+        });
       }
-      /* istanbul ignore next */
-      return valAcc;
-    }, {}) as {[Key in keyof T]: T[Key]};
-    acc[mediaQuery] = propHandler(values, props, fromMqKey);
-    return acc;
-  }, {} as Record<string, unknown>) as CSSObject;
+      return acc;
+    },
+    ({} as Record<string, unknown>) as CSSObject,
+  );
 
-  const cssContentQueryObject = {};
-
-  return {...cssMediaQueryObject, ...cssContentQueryObject};
+  return {...cssMediaQueryObject, ...cssContainerQueryObject};
 };

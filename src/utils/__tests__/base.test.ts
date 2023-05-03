@@ -73,13 +73,13 @@ describe('getXFromTheme', () => {
       rules: [{rule: '@container (min-width: 300px)', value: '4px'}],
     })({theme});
     expect(result).toEqual({
-      '@container (min-width: 300px)': {width: '4px'},
       '@media screen and (max-width: 479px)': {
         width: '4px',
       },
       '@media screen and (min-width: 480px)': {
         width: '8px',
       },
+      '@container (min-width: 300px)': {width: '4px'},
     });
   });
   test('getXFromTheme with non MQ and callback', () => {

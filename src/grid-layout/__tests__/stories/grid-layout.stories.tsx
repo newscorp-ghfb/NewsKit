@@ -17,6 +17,12 @@ const BigRedBlock = styled(Block)`
   background: red;
 `;
 
+const QueryContainerLarge = styled(Block)`
+  width: 200px;
+  container-type: inline-size;
+  container-name: grid-container;
+`;
+
 export const StoryResponsiveExample = () => (
   <>
     <StorybookSubHeading>Responsive grid with mixed sizing</StorybookSubHeading>
@@ -162,6 +168,58 @@ export const StoryResponsiveExample = () => (
   </>
 );
 StoryResponsiveExample.storyName = 'responsive';
+
+export const StoryContainerQueryExample = () => (
+  <>
+    <StorybookSubHeading>Responsive grid with mixed sizing</StorybookSubHeading>
+    <QueryContainerLarge>
+      <GridLayout
+        rows={{
+          rules: [
+            {
+              rule: '@container grid-container (width <= 200px)',
+              value: '1fr 1fr',
+            },
+            {
+              rule: '@container grid-container (width > 200px)',
+              value: '1fr 1fr 1fr 1fr',
+            },
+          ],
+        }}
+        columns={{
+          rules: [
+            {
+              rule: '@container grid-container (width <= 200px)',
+              value: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr',
+            },
+            {
+              rule: '@container grid-container (width > 200px)',
+              value: '1fr 1fr',
+            },
+          ],
+        }}
+      >
+        <GridBox>1</GridBox>
+        <GridBox>2</GridBox>
+        <GridBox>3</GridBox>
+        <GridBox>4</GridBox>
+        <GridBox>5</GridBox>
+        <GridBox>6</GridBox>
+        <GridBox>7</GridBox>
+        <GridBox>8</GridBox>
+        <GridBox>9</GridBox>
+        <GridBox>10</GridBox>
+        <GridBox>11</GridBox>
+        <GridBox>12</GridBox>
+        <GridBox>13</GridBox>
+        <GridBox>14</GridBox>
+        <GridBox>15</GridBox>
+        <GridBox>16</GridBox>
+      </GridLayout>
+    </QueryContainerLarge>
+  </>
+);
+StoryContainerQueryExample.storyName = 'Container Queries';
 
 export const StoryMinMaxRepeat = () => {
   const boxes = Array.from(Array(20)).map((_, i) => <GridBox>{i} box</GridBox>);
