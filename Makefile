@@ -17,7 +17,7 @@ install:
 
 # When changing the version, make sure it matches the one used in the `test_newskit_in_nextjs_app` CircleCI's job.
 install_cypress:
-	yarn add -D cypress@12.3.0;
+	yarn add -D cypress@12.11.0;
 
 build_icons:
 	yarn build:icons
@@ -33,12 +33,6 @@ build_docs:
 
 build_docs_with_no_base_url:
 	SITE_ENV=${SITE_ENV} yarn build:docs && yarn postbuild:docs
-
-unit_test_docs:
-	yarn test:unit:ci --projects=site
-
-unit_test_comps:
-	yarn test:unit:ci --projects=src
 
 lint:
 	yarn lint

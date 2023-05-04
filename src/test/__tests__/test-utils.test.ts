@@ -5,7 +5,6 @@ import {
   renderWithThemeInBody,
   renderToFragmentInBody,
   renderInBody,
-  applyAsyncStyling,
   generateString,
   isVisualTest,
   isCypressTest,
@@ -52,12 +51,6 @@ describe('Test utils', () => {
 
     expect(fragment).toBeDefined();
     expect(fragment.getElementById('a11y-status-message')).toBeNull();
-  });
-
-  test('renderToFragmentInBody renders correctly', async () => {
-    const response = await applyAsyncStyling();
-
-    expect(response).toBeUndefined();
   });
 
   test('generateString matches length', async () => {

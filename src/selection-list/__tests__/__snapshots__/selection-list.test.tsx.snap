@@ -261,6 +261,7 @@ exports[`SelectionList render should render SelectionList with a selected option
       </svg>
     </button>
     <button
+      aria-checked="false"
       class="emotion-4"
       role="menuitemradio"
       tabindex="-1"
@@ -394,6 +395,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
     role="menu"
   >
     <button
+      aria-checked="false"
       class="emotion-1"
       role="menuitemradio"
       tabindex="-1"
@@ -401,6 +403,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
       Option 1
     </button>
     <button
+      aria-checked="false"
       class="emotion-1"
       role="menuitemradio"
       tabindex="-1"
@@ -408,6 +411,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
       Option 2
     </button>
     <button
+      aria-checked="false"
       class="emotion-1"
       role="menuitemradio"
       tabindex="-1"
@@ -655,6 +659,7 @@ exports[`SelectionList render should render SelectionList with non-string option
     role="menu"
   >
     <button
+      aria-checked="false"
       class="emotion-1"
       role="menuitemradio"
       tabindex="-1"
@@ -1086,6 +1091,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
       </svg>
     </button>
     <button
+      aria-checked="false"
       class="emotion-4"
       role="menuitemradio"
       tabindex="-1"
@@ -1357,6 +1363,7 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
       </svg>
     </button>
     <button
+      aria-checked="false"
       class="emotion-4"
       role="menuitemradio"
       tabindex="-1"
@@ -1486,6 +1493,7 @@ exports[`SelectionList render should render default SelectionList 1`] = `
     role="menu"
   >
     <button
+      aria-checked="false"
       class="emotion-1"
       role="menuitemradio"
       tabindex="-1"
@@ -1493,6 +1501,7 @@ exports[`SelectionList render should render default SelectionList 1`] = `
       Option 1
     </button>
     <button
+      aria-checked="false"
       class="emotion-1"
       role="menuitemradio"
       tabindex="-1"
@@ -1500,6 +1509,7 @@ exports[`SelectionList render should render default SelectionList 1`] = `
       Option 2
     </button>
     <button
+      aria-checked="false"
       class="emotion-1"
       role="menuitemradio"
       tabindex="-1"
