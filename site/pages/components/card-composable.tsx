@@ -147,11 +147,11 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           ),
           kind: UsageKind.DO,
           media: getIllustrationComponent(
-            'components/card-composable/usage/do-1',
+            'components/card-composable/usage/do-3',
           ),
         },
         {
-          title: 'Don&apos;t use excessive content',
+          title: 'Don’t use excessive content',
           description: (
             <>
               Avoid including lots of information in a card, so users are not
@@ -200,7 +200,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           ),
           kind: UsageKind.DO,
           media: getIllustrationComponent(
-            'components/card-composable/usage/dont-2',
+            'components/card-composable/usage/do-1',
           ),
         },
       ],
@@ -209,73 +209,58 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       introduction: (
         <>
           The card has the following accessibility considerations:
-          {/* <UnorderedList
-          markerAlign="start"
-          overrides={{
-            marginBlockStart: 'space030',
-            spaceStack: 'space050',
-            content: {
-              typographyPreset: 'editorialParagraph020',
-            },
-            marker: {
-              spaceInline: 'space030',
-            },
-          }}
-        >
-          <>
-          Use list markup to group your cards
-          </>
-          <>
-Each Card has a Heading level of the same level because they belong to a flat list hierarchy.
-          </>
-          <>
-When grouping the cards in a List, add an appropriate heading for the Group or aria-label that describes the group
-          </><>
-Update the heading level based on the content of the page to make sure card headings are in the correct, logical order.
-          </><>
-          Avoid having 2 links to the same URL (in the same Card) like one for the Title and another for the Read More link (in that way we reduce the tab stops)
-          </><>
-When creating a tab order for the different parts of the card, remember to put the headline before the image or media so that screen-reader users get the context before the image alt tag.
-          </><>
-A video: If a video is provided, ensure the following
-<UnorderedList markerAlign="start"
-          overrides={{
-            marginBlockStart: 'space030',
-            spaceStack: 'space050',
-            content: {
-              typographyPreset: 'editorialParagraph020',
-            },
-            marker: {
-              spaceInline: 'space030',
-            },
-          }}>
-  <>The video does not auto-play</>
-  <>The video player's controls are accessible by a screen reader and 'ard</>
-  <>Dialogue in the video is accompanied by closed captions</>
-  </UnorderedList>
-  </><>
-          It's not recommended to nest interactive elements like a button inside a link, or a link inside a button and so on.
-
-          </><>
-          Don’t wrap the whole card in a Link, use //expand//prop to make it look like it.
-          </>
-        </UnorderedList> */}
+          <UnorderedList
+            markerAlign="start"
+            overrides={{
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+              marginBlockStart: 'space050',
+              marginBlockEnd: 'space090',
+            }}
+          >
+            <>Use list markup to group your cards</>
+            <>
+              Each Card has a Heading level of the same level because they
+              belong to a flat list hierarchy.
+            </>
+            <>
+              When grouping the cards in a List, add an appropriate heading for
+              the Group or aria-label that describes the group
+            </>
+            <>
+              Update the heading level based on the content of the page to make
+              sure card headings are in the correct, logical order.
+            </>
+            <>
+              Avoid having 2 links to the same URL (in the same Card) like one
+              for the Title and another for the Read More link (in that way we
+              reduce the tab stops)
+            </>
+            <>
+              When creating a tab order for the different parts of the card,
+              remember to put the headline before the image or media so that
+              screen-reader users get the context before the image alt tag.
+            </>
+            <>A video: If a video is provided, ensure the following</>
+            <>
+              It&apos;s not recommended to nest interactive elements like a
+              button inside a link, or a link inside a button and so on.
+            </>
+            <>
+              Don&apos;t wrap the whole card in a Link, use //expand//prop to
+              make it look like it.
+            </>
+          </UnorderedList>
         </>
       ),
       focusOrder: {
         title: 'Focus order',
-        description: (
-          <>
-            Position the close button on the right (default) or left of the
-            modal header.
-            {/* <InlineMessage role="region"
-            // icon={infoIcon}
-                overrides={{
-                  marginBlockStart: 'space030',
-                }}>Focus order depends on how the card areas are assembled and ordered in the DOM. The first interactive element of the card will be the first focusable item.</InlineMessage> */}
-          </>
-        ),
       },
+      infoNoticeFocus: [
+        'Focus order depends on how the card areas are assembled and ordered in the DOM. The first interactive element of the card will be the first focusable item.',
+      ],
+
       interaction: {
         title: 'Keyboard Interactions',
         tableRows: [
