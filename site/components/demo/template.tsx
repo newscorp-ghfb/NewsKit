@@ -1,6 +1,32 @@
 import React from 'react';
 import Head from 'next/head';
-import {Global, css, Block} from 'newskit';
+import {
+  Global,
+  css,
+  Block,
+  newskitLightTheme,
+  ThemeProvider,
+  createTheme,
+  styled,
+} from 'newskit';
+
+const demoTheme = createTheme({
+  baseTheme: newskitLightTheme,
+  name: 'demo-theme',
+  overrides: {
+    stylePresets: {
+      interfaceBackground: {
+        base: {
+          backgroundColor: '{{colors.interfaceBackground}}',
+        },
+      },
+    },
+  },
+});
+
+const Container = styled(Block)`
+  min-height: 100vh;
+`;
 
 export default function Template({
   title = 'NewsKit Demo',
@@ -16,6 +42,36 @@ export default function Template({
       </Head>
       <Global
         styles={css`
+          /* NewsKit */
+          @font-face {
+            font-family: 'Bitter';
+            src: url('static/fonts/bitter-regular.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 400;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Bitter';
+            src: url('static/fonts/bitter-medium.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 500;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Bitter';
+            src: url('static/fonts/bitter-mediumitalic.woff2') format('woff2');
+            font-style: italic;
+            font-weight: 500;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Bitter';
+            src: url('static/fonts/bitter-semibold.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 600;
+            font-display: block;
+          }
+
           /* The Sun */
           @font-face {
             font-family: 'The Sun';
@@ -95,9 +151,15 @@ export default function Template({
           */
         `}
       />
-      <Block paddingBlock="space030" paddingInline="space030">
-        {children}
-      </Block>
+      <ThemeProvider theme={demoTheme}>
+        <Container
+          paddingBlock="space030"
+          paddingInline="space030"
+          stylePreset="interfaceBackground"
+        >
+          {children}
+        </Container>
+      </ThemeProvider>
     </>
   );
 }
