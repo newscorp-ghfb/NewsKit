@@ -7,6 +7,7 @@ import {getIllustrationComponent} from '../../components/illustrations/illustrat
 import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {UnorderedList} from 'newskit';
+import {Link} from '../../components/link';
 
 const DividerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -17,7 +18,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
     }}
     layoutProps={layoutProps}
     pageIntroduction={{
-      type: 'Components',
+      type: 'Layout',
       name: 'Card Composable',
       hero: {
         illustration: 'components/card-composable/hero',
@@ -40,34 +41,34 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         {
           name: 'CardComposable',
           description: 'Wrapper for the areas of the card',
-          component: ['Grid layout'],
+          component: ['Grid Layout'],
           optional: undefined,
         },
         {
           name: 'CardLink',
           description:
             'Wrapper for links passed to the card, such as a headline. This can be used multiple times to create multiple links inside the card.',
-          component: ['LinkStandalone'],
+          component: ['Link Standalone'],
           optional: true,
         },
         {
           name: 'CardContent',
           description:
             'Area for content, such as a headline, paragraph text, or flags',
-          component: ['Grid layout'],
+          component: ['Grid Layout'],
           optional: true,
         },
         {
           name: 'CardMedia',
           description: 'Area for media, such as image',
-          component: ['Image', 'Grid layout'],
+          component: ['Image', 'Grid Layout'],
           optional: true,
         },
         {
           name: 'CardActions',
           description:
             'Area for additional interactive components, such as links or tags',
-          component: ['Grid layout'],
+          component: ['Grid Layout'],
           optional: true,
         },
       ],
@@ -85,6 +86,14 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
+          title: 'Order',
+          description:
+            'The order in which the card areas appear can be changed at different breakpoints.',
+          media: getIllustrationComponent(
+            'components/card-composable/options/order',
+          ),
+        },
+        {
           title: 'Span',
           description:
             'Card areas can be set to span any number of columns in the grid, or set to a percentage, allowing for custom layout ratios.',
@@ -93,17 +102,14 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           ),
         },
         {
-          title: 'Card as a link',
-          description:
-            'A part or the whole card can be a link by using the //expand// prop.',
-          media: getIllustrationComponent(
-            'components/card-composable/options/order',
-          ),
-        },
-        {
           title: 'Inset',
-          description:
-            'Card areas can have inset space applied by using logical props to set the desired spacing.',
+          description: (
+            <>
+              Card areas can have inset space applied by using{' '}
+              <Link href="/theme/foundation/spacing/">logical props</Link> to
+              set the desired spacing.
+            </>
+          ),
           media: getIllustrationComponent(
             'components/card-composable/options/inset',
           ),
