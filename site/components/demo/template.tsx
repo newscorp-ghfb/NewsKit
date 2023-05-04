@@ -1,10 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import {createTheme, ThemeProvider, Global, css, Block} from 'newskit';
-
-const theme = createTheme({
-  overrides: {},
-});
+import {Global, css, Block} from 'newskit';
 
 export default function Template({
   title = 'NewsKit Demo',
@@ -17,7 +13,6 @@ export default function Template({
     <>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Global
         styles={css`
@@ -100,11 +95,9 @@ export default function Template({
           */
         `}
       />
-      <ThemeProvider theme={theme}>
-        <Block paddingBlock="space030" paddingInline="space030">
-          {children}
-        </Block>
-      </ThemeProvider>
+      <Block paddingBlock="space030" paddingInline="space030">
+        {children}
+      </Block>
     </>
   );
 }

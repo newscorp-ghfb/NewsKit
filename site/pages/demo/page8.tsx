@@ -14,7 +14,6 @@ import {
   AudioPlayerTimeDisplay,
   AudioPlayerSeekBar,
   AudioPlayerPlaybackSpeedControl,
-  TextBlock,
 } from 'newskit';
 import CodeTemplate from '../../components/demo/code-template';
 import Page7 from '../../public/static/demo/page7';

@@ -1,5 +1,5 @@
-import { Button, TextBlock, toNewsKitIcon } from 'newskit';
-import { ExpandMore } from '@emotion-icons/material';
+import {Button, TextBlock, toNewsKitIcon} from 'newskit';
+import {ExpandMore} from '@emotion-icons/material';
 
 const IconFilledExpandMore = toNewsKitIcon(ExpandMore);
 

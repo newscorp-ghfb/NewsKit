@@ -1,7 +1,7 @@
 import CodeTemplate from '../../components/demo/code-template';
 import Page3 from '../../public/static/demo/page3';
 
-export const pageTitle = 'Step 3: Setting Type Presets';
+export const pageTitle = 'Step 3: Setting Type and Style Presets';
 
 export default function DemoPage3() {
   return (

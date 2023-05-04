@@ -1,4 +1,4 @@
-import {CodeFromFile} from './code';
+import {CodeFromFile} from '../code';
 import Template from './template';
 import {
   Block,
@@ -59,7 +59,9 @@ export default function CodeTemplate({
             rowGap="space030"
           >
             {codePaths &&
-              codePaths.map((path, i) => <CodeFromFile key={i} path={path} />)}
+              codePaths.map((path, i) => (
+                <CodeFromFile key={path} path={`demo/${path}`} />
+              ))}
           </Container>
         )}
       </GridLayout>
