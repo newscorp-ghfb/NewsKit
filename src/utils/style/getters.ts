@@ -3,7 +3,7 @@ import {getFontSizing} from '../font-sizing';
 import {BreakpointKeys, TypographyPreset} from '../../theme';
 import {isFontConfigObject} from '../guards';
 import {ThemeProp} from '../style-types';
-import {MQ, MQPartial} from './types';
+import {CSSQuery, CSSQueryRules, MQ, MQPartial, ResponsiveValue} from './types';
 import {
   getResponsiveValueFromTheme,
   getValueFromTheme,
@@ -254,7 +254,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
       return {...acc, [propName]: props[propName]};
     }
     return acc;
-  }, {}) as {[Key in keyof T]: MQ<T[Key]>};
+  }, {}) as {[Key in keyof T]: ResponsiveValue<T[Key]>};
 
   const propsValues = Object.values(usedProps) as MQ<T[keyof T]>[];
 
@@ -354,7 +354,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
     : ['xs', ...commonMQKeys];
 
   let cssMediaQueryObject = {};
-  if (commonMQKeys.length > 0) {
+  if (usedMQKeys.length > 0) {
     cssMediaQueryObject = usedMQKeys.reduce((acc, mqKey, index) => {
       const fromMqKey = mqKey;
       const toMqKey = usedMQKeys[index + 1] ? usedMQKeys[index + 1] : undefined;
@@ -380,22 +380,44 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
       return acc;
     }, {} as Record<string, unknown>) as CSSObject;
   }
+
   /*
   If they've defined container queries using the 'rules'
-*/
+  */
 
-  const cssContainerQueryObject = Object.values(usedProps).reduce(
-    (acc, prop, index) => {
-      const values: Record<string, string> = {};
+  // let containerRules = Object.entries(usedProps).filter(entry => typeof entry[1] === 'object' && hasOwnProperty(entry[1], 'rules'));
+
+  const usedValues = Object.entries(usedProps).filter(usedProp => {
+    const propValue = usedProp[1];
+    return (
+      propValue &&
+      typeof propValue === 'object' &&
+      hasOwnProperty(propValue, 'rules') &&
+      Array.isArray(propValue.rules) &&
+      propValue.rules.length > 0
+    );
+  }) as CSSQueryRules<T[keyof T]>[];
+
+  const cssContainerQueryObject: Record<
+    CSSQuery<T>['rule'],
+    string | CSSObject
+  > = usedValues.reduce(
+    (
+      acc: Record<CSSQuery<T>['rule'], string | CSSObject>,
+      prop,
+      index: number,
+    ) => {
+      const values = {} as {[Key in keyof T]: T[Key]};
       if (prop.rules) {
         prop.rules.forEach(rule => {
-          values[`${Object.keys(usedProps)[index]}`] = rule.value;
+          const key = `${Object.keys(usedValues)[index]}` as keyof T;
+          values[key] = rule.value;
           acc[rule.rule] = propHandler(values, props, undefined);
         });
       }
       return acc;
     },
-    ({} as Record<string, unknown>) as CSSObject,
+    {},
   );
 
   return {...cssMediaQueryObject, ...cssContainerQueryObject};

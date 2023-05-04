@@ -187,6 +187,8 @@ export const StoryContainerQueryExample = () => (
           ],
         }}
         columns={{
+          xs: '1fr',
+          md: '2fr',
           rules: [
             {
               rule: '@container grid-container (width <= 200px)',
