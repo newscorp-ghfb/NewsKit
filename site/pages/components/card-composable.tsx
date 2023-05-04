@@ -8,6 +8,7 @@ import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {UnorderedList} from 'newskit';
 import {Link} from '../../components/link';
+import {InlineCode} from '../../components/markdown-elements';
 
 const DividerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -449,114 +450,75 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'CardContent',
+          summary:
+            'Props and Overrides same as GridLayout + can have stylePreset and transitionPreset as an override',
           propsRows: [
             {
               name: 'children',
               type: 'React.ReactNode',
               required: true,
-              description:
-                'The card requires to have at least a heading provided.',
+              description: 'The card content…',
             },
           ],
-          overridesRows: [
+        },
+        {
+          title: 'CardMedia',
+          summary:
+            'Props and Overrides same as GridLayout + can have stylePreset and transitionPreset as an override',
+          propsRows: [
             {
-              attribute: 'stylePreset',
-              type: 'MQ<String>',
-              default: 'cardContainer',
+              name: 'children',
+              type: 'React.ReactNode',
+              required: undefined,
               description:
-                'If provided, overrides the stylePreset of the card.',
+                'The card media can have children in that case it will replace the default Image component.',
             },
             {
-              attribute: 'transitionPreset',
-              type: 'String | String[]',
-              default: 'backgroundColorChange',
-              description: '',
-            },
-            {
-              attribute: 'marginInline',
-              type: 'MQ<string>',
-              default: '',
+              name: 'media',
+              type: 'ImageProps',
+              required: undefined,
               description:
-                'Takes one space token to specify the logical inline start and end margin of the container. Can be used on breakpoints',
+                'If this parameter is provided as ImageProps object (see Image documentation), it will render the media as an image.',
+            },
+          ],
+        },
+        {
+          title: 'CardActions',
+          summary:
+            'Props and Overrides same as GridLayout + can have stylePreset and transitionPreset as an override',
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              required: true,
+              description: 'The card actions children…',
+            },
+          ],
+        },
+        {
+          title: 'CardLink',
+          summary: 'Props & Overrides same as StandaloneLink',
+          propsRows: [
+            {
+              name: 'expand',
+              type: 'boolean',
+              required: undefined,
+              default: 'false',
+              description: (
+                <>
+                  Makes part of the card, or the whole card a link (CardLink).
+                  <br /> <br />
+                  It can be used multiple times, e.g. one for the headline and
+                  another for the image, text, any actions etc.
+                </>
+              ),
             },
             {
-              attribute: 'marginInlineStart',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline start margin of the container. Can be used on breakpoints',
+              name: 'children',
+              type: 'React.ReactNode',
+              required: true,
+              description: 'The card content…',
             },
-            {
-              attribute: 'marginInlineEnd',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline end margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'marginBlock',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block start and end margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'marginBlockStart',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block start margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'marginBlockEnd',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block end margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingInline',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline start and end padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingInlineStart',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline start padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingInlineEnd',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline end padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingBlock',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block start and end padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingBlockStart',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block start padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingBlockEnd',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block end padding of the container. Can be used on breakpoints',
-            },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },
       ],
