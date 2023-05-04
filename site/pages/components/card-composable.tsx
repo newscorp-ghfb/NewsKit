@@ -20,7 +20,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       type: 'Components',
       name: 'Card Composable',
       hero: {
-        illustration: 'components/divider-illustration',
+        illustration: 'components/card-composable/hero',
       },
       introduction: `Cards contain preview content and actions relating to a specific subject.`,
     }}
@@ -71,9 +71,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           optional: true,
         },
       ],
-      media: getIllustrationComponent(
-        'components/divider/anatomy-illustration',
-      ),
+      media: getIllustrationComponent('components/card-composable/anatomy'),
     }}
     options={{
       introduction: 'The card has options for different use cases:',
@@ -83,7 +81,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           description:
             'A part or the whole card can be a link by using the //expand// prop.',
           media: getIllustrationComponent(
-            'components/divider/orientation-illustration',
+            'components/card-composable/options/expand',
           ),
         },
         {
@@ -91,7 +89,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           description:
             'Card areas can be set to span any number of columns in the grid, or set to a percentage, allowing for custom layout ratios.',
           media: getIllustrationComponent(
-            'components/divider/orientation-illustration',
+            'components/card-composable/options/span',
           ),
         },
         {
@@ -99,7 +97,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           description:
             'A part or the whole card can be a link by using the //expand// prop.',
           media: getIllustrationComponent(
-            'components/divider/orientation-illustration',
+            'components/card-composable/options/order',
           ),
         },
         {
@@ -107,7 +105,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           description:
             'Card areas can have inset space applied by using logical props to set the desired spacing.',
           media: getIllustrationComponent(
-            'components/divider/orientation-illustration',
+            'components/card-composable/options/inset',
           ),
         },
       ],
@@ -120,7 +118,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           description:
             'The card uses the grid layout component to give layout control across breakpoints and any elements passed to the areas of the card.',
           media: getIllustrationComponent(
-            'components/banner/banner-behaviours-text-overflow-illustration',
+            'components/card-composable/behaviours/grid-layout',
           ),
         },
         {
@@ -128,7 +126,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           description:
             'If CardLink is not provided, the card will omit all interactive states from the style presets applied to the card, appearing static.',
           media: getIllustrationComponent(
-            'components/banner/banner-behaviours-text-overflow-illustration',
+            'components/card-composable/behaviours/static',
           ),
         },
       ],
@@ -142,7 +140,9 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             <>Headings should be concise and briefly explain the content.</>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/divider/do-01'),
+          media: getIllustrationComponent(
+            'components/card-composable/usage/do-1',
+          ),
         },
         {
           title: 'Don&apos;t use excessive content',
@@ -155,7 +155,9 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/divider/do-01'),
+          media: getIllustrationComponent(
+            'components/card-composable/usage/dont-1',
+          ),
         },
         {
           title: 'Do use consistent elements when arranged in groups.',
@@ -163,7 +165,9 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             <>Aim for consistency in cards that are part of a related group.</>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/divider/do-01'),
+          media: getIllustrationComponent(
+            'components/card-composable/usage/do-2',
+          ),
         },
         {
           title: 'Don’t use varying heights in a group of cards',
@@ -176,7 +180,9 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DONT,
-          media: getIllustrationComponent('components/divider/do-01'),
+          media: getIllustrationComponent(
+            'components/card-composable/usage/dont-2',
+          ),
         },
         {
           title: 'Do ensure the content in the card represents its destination',
@@ -187,7 +193,9 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             </>
           ),
           kind: UsageKind.DO,
-          media: getIllustrationComponent('components/divider/do-01'),
+          media: getIllustrationComponent(
+            'components/card-composable/usage/dont-2',
+          ),
         },
       ],
     }}

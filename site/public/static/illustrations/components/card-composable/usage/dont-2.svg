@@ -1,0 +1,35 @@
+<svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3522_113612)">
+<path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground010)"/>
+<rect x="95" y="121" width="400" height="508" rx="12" fill="var(--color-illustrationInterface010)"/>
+<rect x="127.227" y="508.482" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="127.227" y="536.508" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="127.227" y="480.453" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="127.227" y="564.533" width="168.704" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<path d="M127.514 394.564C127.514 388.944 132.096 384.389 137.749 384.389H450.739C456.391 384.389 460.973 388.944 460.973 394.564C460.973 400.183 456.391 404.739 450.739 404.739H137.749C132.096 404.739 127.514 400.183 127.514 394.564Z" fill="var(--color-illustrationInterface060)"/>
+<path d="M127.514 438.279C127.514 432.659 132.087 428.104 137.728 428.104H335.826C341.467 428.104 346.04 432.659 346.04 438.279C346.04 443.898 341.467 448.454 335.826 448.454H137.728C132.087 448.454 127.514 443.898 127.514 438.279Z" fill="var(--color-illustrationInterface060)"/>
+<path d="M95 133C95 126.373 100.373 121 107 121H482.584C489.211 121 494.584 126.373 494.584 133V334.832H95V133Z" fill="var(--color-illustrationInterface030)"/>
+<rect x="545" y="121" width="400" height="596" rx="12" fill="var(--color-illustrationInterface010)"/>
+<rect x="577.227" y="523.439" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="577.227" y="551.451" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="577.227" y="579.463" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="577.227" y="607.475" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="577.227" y="635.486" width="168.704" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<path d="M577.514 394.564C577.514 388.944 582.096 384.389 587.749 384.389H900.739C906.391 384.389 910.973 388.944 910.973 394.564C910.973 400.183 906.391 404.739 900.739 404.739H587.749C582.096 404.739 577.514 400.183 577.514 394.564Z" fill="var(--color-illustrationInterface060)"/>
+<path d="M577.514 437.913C577.514 432.294 582.096 427.738 587.749 427.738H900.739C906.391 427.738 910.973 432.294 910.973 437.913C910.973 443.533 906.391 448.088 900.739 448.088H587.749C582.096 448.088 577.514 443.533 577.514 437.913Z" fill="var(--color-illustrationInterface060)"/>
+<path d="M577.514 481.265C577.514 475.645 582.087 471.09 587.728 471.09H785.826C791.467 471.09 796.04 475.645 796.04 481.265C796.04 486.884 791.467 491.44 785.826 491.44H587.728C582.087 491.44 577.514 486.884 577.514 481.265Z" fill="var(--color-illustrationInterface060)"/>
+<path d="M545 133C545 126.373 550.373 121 557 121H932.584C939.211 121 944.584 126.373 944.584 133V334.832H545V133Z" fill="var(--color-illustrationInterface030)"/>
+<rect x="995" y="121" width="400" height="472" rx="12" fill="var(--color-illustrationInterface010)"/>
+<rect x="1027.23" y="464.768" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="1027.23" y="492.793" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="1027.23" y="436.738" width="333.391" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<rect x="1027.23" y="520.818" width="168.704" height="12.0115" rx="6.00574" fill="var(--color-illustrationInterface030)"/>
+<path d="M1027.51 394.564C1027.51 388.944 1032.1 384.389 1037.75 384.389H1350.74C1356.39 384.389 1360.97 388.944 1360.97 394.564C1360.97 400.183 1356.39 404.739 1350.74 404.739H1037.75C1032.1 404.739 1027.51 400.183 1027.51 394.564Z" fill="var(--color-illustrationInterface060)"/>
+<path d="M995 133C995 126.373 1000.37 121 1007 121H1382.58C1389.21 121 1394.58 126.373 1394.58 133V334.832H995V133Z" fill="var(--color-illustrationInterface030)"/>
+</g>
+<defs>
+<clipPath id="clip0_3522_113612">
+<rect width="1490" height="838" fill="white"/>
+</clipPath>
+</defs>
+</svg>
