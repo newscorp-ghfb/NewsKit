@@ -68,7 +68,7 @@ export const CodeFromFile: React.FC<CodeFromFileProps> = ({language, path}) => {
   useEffect(() => {
     const controller = new AbortController();
     (async () => {
-      const sourcePath = `/static/${path}`;
+      const sourcePath = `static/${path}`;
       try {
         const res = await fetch(sourcePath, {
           signal: controller.signal,
