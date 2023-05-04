@@ -241,14 +241,14 @@ Promise.all([mkdirp(fontDirStorybook), mkdirp(fontDirSite)]).then(() =>
         const extension = path.extname(source);
         const dest = `${fontDirStorybook}/${fileName}${extension}`;
 
-        if (!fs.existsSync(dest)) {
-          return download(source, dest).then(() => {
-            const copyDest = `${fontDirSite}/${fileName}${extension}`;
-            fs.copyFileSync(dest, copyDest);
-            return Promise.resolve();
-          });
-        }
-        return Promise.resolve();
+        // if (!fs.existsSync(dest)) {
+        return download(source, dest).then(() => {
+          const copyDest = `${fontDirSite}/${fileName}${extension}`;
+          fs.copyFileSync(dest, copyDest);
+          return Promise.resolve();
+        });
+        // }
+        // return Promise.resolve();
       }),
     ),
   ),
