@@ -58,7 +58,7 @@ const HeroInteractiveElements = ({
   themeMode,
   toggleTheme,
 }: HeroInteractiveElementsProps) => (
-  <HeroInteractiveContainer>
+  <HeroInteractiveContainer aria-hidden>
     <InteractiveElementContainer top={65} left={34}>
       <Button
         overrides={{
