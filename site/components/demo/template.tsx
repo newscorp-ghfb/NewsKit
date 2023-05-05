@@ -75,7 +75,8 @@ export default function Template({
           /* The Sun */
           @font-face {
             font-family: 'The Sun';
-            src: url('static/fonts/TheSun-Regular.woff2') format('woff2');
+            src: url('static/fonts/private-fonts/TheSun-Regular.woff2')
+              format('woff2');
             font-style: normal;
             font-weight: 400;
             font-display: block;
@@ -83,7 +84,8 @@ export default function Template({
 
           @font-face {
             font-family: 'The Sun';
-            src: url('static/fonts/TheSun-HeavyNarrow.woff2') format('woff2');
+            src: url('static/fonts/private-fonts/TheSun-HeavyNarrow.woff2')
+              format('woff2');
             font-style: normal;
             font-weight: 700;
             font-stretch: condensed;
@@ -92,7 +94,8 @@ export default function Template({
 
           @font-face {
             font-family: 'The Sun';
-            src: url('static/fonts/TheSun-Bold.woff2') format('woff2');
+            src: url('static/fonts/private-fonts/TheSun-Bold.woff2')
+              format('woff2');
             font-style: normal;
             font-weight: 700;
             font-display: block;
@@ -100,7 +103,8 @@ export default function Template({
 
           @font-face {
             font-family: 'The Sun';
-            src: url('static/fonts/TheSun-Medium.woff2') format('woff2');
+            src: url('static/fonts/private-fonts/TheSun-Medium.woff2')
+              format('woff2');
             font-style: normal;
             font-weight: 500;
             font-display: block;
@@ -109,13 +113,15 @@ export default function Template({
           /* The Times */
           @font-face {
             font-family: 'Times Modern';
-            src: url('static/fonts/TimesModern-Regular.woff2') format('woff2');
+            src: url('static/fonts/private-fonts/TimesModern-Regular.woff2')
+              format('woff2');
             font-weight: 400;
             font-style: normal;
           }
           @font-face {
             font-family: 'Times Modern';
-            src: url('static/fonts/TimesModern-Bold.woff2') format('woff2');
+            src: url('static/fonts/private-fonts/TimesModern-Bold.woff2')
+              format('woff2');
             font-weight: 700;
             font-style: normal;
           }
@@ -128,7 +134,7 @@ export default function Template({
 
           @font-face {
             font-family: 'Times Digital W04 Regular';
-            src: url('static/fonts/TimesDigitalW04-Regular.woff2')
+            src: url('static/fonts/private-fonts/TimesDigitalW04-Regular.woff2')
               format('woff2');
             font-weight: 400;
             font-style: normal;
@@ -136,7 +142,8 @@ export default function Template({
 
           @font-face {
             font-family: 'Roboto';
-            src: url('static/fonts/Roboto-Medium.woff2') format('woff2');
+            src: url('static/fonts/private-fonts/Roboto-Medium.woff2')
+              format('woff2');
             font-weight: 400;
             font-style: normal;
           }

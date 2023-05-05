@@ -7,8 +7,7 @@ const fetch = require('node-fetch');
 const fontCdnTheSun = 'https://www.thesun.co.uk/assets/fonts/the-sun';
 const fontCdnTheTimes = 'https://www.thetimes.co.uk/d/fonts';
 const fontCdnWSJ = 'https://www.wsj.com/fonts';
-const fontDirStorybook = `${process.cwd()}/.storybook/private-fonts`;
-const fontDirSite = `${process.cwd()}/site/public/static/fonts`;
+const fontDir = `${process.cwd()}/fonts/private-fonts`;
 
 const fonts = [
   {
@@ -234,22 +233,15 @@ const download = (source, dest) =>
       }),
   );
 
-Promise.all([mkdirp(fontDirStorybook), mkdirp(fontDirSite)]).then(() =>
+mkdirp(fontDir).then(() =>
   Promise.all(
     ...fonts.map(({sources, fileName}) =>
       sources.map(source => {
         const extension = path.extname(source);
-        const storybookDest = `${fontDirStorybook}/${fileName}${extension}`;
-        const siteDest = `${fontDirSite}/${fileName}${extension}`;
+        const dest = `${fontDir}/${fileName}${extension}`;
 
-        if (!fs.existsSync(storybookDest)) {
-          return download(source, storybookDest).then(() => {
-            fs.copyFileSync(storybookDest, siteDest);
-            return Promise.resolve();
-          });
-        } else if (!fs.existsSync(siteDest)) {
-          fs.copyFileSync(storybookDest, siteDest);
-          return Promise.resolve();
+        if (!fs.existsSync(dest)) {
+          return download(source, dest);
         }
         return Promise.resolve();
       }),
