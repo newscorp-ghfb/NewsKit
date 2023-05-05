@@ -140,7 +140,7 @@ export const StoryContainerQueries = () => {
 
   const QueryBlock = () => (
     <Block
-      // stylePreset="blockDefault"
+      stylePreset="blockDefault"
       paddingInline={{
         rules: [
           {
