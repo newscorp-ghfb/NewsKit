@@ -49,17 +49,23 @@ describe('handleResponsiveProp', () => {
     });
   });
 
-  it.only('using CQ rules value', () => {
+  it('using CQ rules value', () => {
     const props = {
       display: {
-        rules: [{rule: '@container (width > 200px)', value: 'inline'}],
+        rules: [
+          {rule: '@container (width < 200px)', value: 'inline'},
+          {rule: '@container (width >= 200px)', value: 'block'},
+        ],
       },
       theme,
     };
     const result = handleResponsiveProp({display: undefined}, handler)(props);
     expect(result).toEqual({
-      '@container (width > 200px)': {
+      '@container (width < 200px)': {
         display: 'inline',
+      },
+      '@container (width >= 200px)': {
+        display: 'block',
       },
     });
   });

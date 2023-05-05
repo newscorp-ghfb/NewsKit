@@ -354,7 +354,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
     : ['xs', ...commonMQKeys];
 
   let cssMediaQueryObject = {};
-  if (usedMQKeys.length > 0) {
+  if (commonMQKeys.length > 0) {
     cssMediaQueryObject = usedMQKeys.reduce((acc, mqKey, index) => {
       const fromMqKey = mqKey;
       const toMqKey = usedMQKeys[index + 1] ? usedMQKeys[index + 1] : undefined;
@@ -385,8 +385,6 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
   If they've defined container queries using the 'rules'
   */
 
-  // let containerRules = Object.entries(usedProps).filter(entry => typeof entry[1] === 'object' && hasOwnProperty(entry[1], 'rules'));
-
   const usedValues = Object.entries(usedProps).filter(usedProp => {
     const propValue = usedProp[1];
     return (
@@ -396,21 +394,17 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
       Array.isArray(propValue.rules) &&
       propValue.rules.length > 0
     );
-  }) as CSSQueryRules<T[keyof T]>[];
+  }) as [string, CSSQueryRules<T[keyof T]>][];
 
   const cssContainerQueryObject: Record<
     CSSQuery<T>['rule'],
     string | CSSObject
   > = usedValues.reduce(
-    (
-      acc: Record<CSSQuery<T>['rule'], string | CSSObject>,
-      prop,
-      index: number,
-    ) => {
+    (acc: Record<CSSQuery<T>['rule'], string | CSSObject>, prop) => {
       const values = {} as {[Key in keyof T]: T[Key]};
-      if (prop.rules) {
-        prop.rules.forEach(rule => {
-          const key = `${Object.keys(usedValues)[index]}` as keyof T;
+      if (prop[1].rules) {
+        prop[1].rules.forEach(rule => {
+          const key = `${prop[0]}` as keyof T;
           values[key] = rule.value;
           acc[rule.rule] = propHandler(values, props, undefined);
         });
