@@ -44,7 +44,7 @@ const Introduction = ({path, ...props}: LayoutProps) => (
           Welcome to the Website Terms and Conditions of Use (<b>Terms</b>)
           which apply to{' '}
           <Link href="https://newskit.co.uk" external={false}>
-            https://newskit.co.uk
+            newskit.co.uk
           </Link>{' '}
           (the <b>Website</b>).
         </>

@@ -29,7 +29,7 @@ const Accessibility = ({path, ...props}: LayoutProps) => (
         <>
           This accessibility statement applies to the website{' '}
           <Link href="https://newskit.co.uk" external={false}>
-            https://newskit.co.uk
+            newskit.co.uk
           </Link>
           {', '}
           which is run by the NewsKit Design System at News UK.
