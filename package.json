@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "7.2.0",
+  "version": "7.3.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -15,25 +15,37 @@
     "node": ">=16.10.0"
   },
   "scripts": {
+    "clear:cache": "nx reset",
     "dev": "concurrently --names \"src,storybook,docs\" \"yarn build:ts --watch\" \"yarn dev:storybook\" \"next site -p 8081\"",
-    "dev:docs": "yarn build:icons && concurrently --names \"src,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
+    "dev:docs": "yarn build:icons && concurrently --names \"comps,docs\" \"yarn build:ts --watch\" \"next site -p 8081\"",
     "dev:storybook": "yarn build:icons && start-storybook --ci -p 6006",
     "percy:run": "percy storybook http://localhost:6006 --config=percy.config.js",
     "fetch-external-storybook-fonts": "node ./.storybook/fetch-external-fonts.js",
-    "lint:code:base": "eslint --report-unused-disable-directives --ext=.js,.ts,.jsx,.tsx --cache",
-    "lint:code": "scripts/assert-files-and-folders.js && yarn lint:code:base .",
-    "lint:code:fix": "yarn lint:code --fix",
-    "lint:markdown": "markdownlint -c ./.markdownlint.json *.md **/*.md",
-    "lint:next": "next lint site",
-    "lint": "concurrently --names \"code,markdown,next\" \"yarn lint:code\" \"yarn lint:markdown\" \"yarn lint:next\"",
-    "test": "yarn lint && yarn test:unit:dev",
-    "test:unit:run:local": "yarn test:unit:run --maxWorkers=50%",
-    "test:unit:run": "node --max-old-space-size=8192 --expose-gc ./node_modules/.bin/jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
-    "test:unit:watch": "yarn test:unit:run:local --watch",
-    "test:unit:dev": "yarn build:icons && yarn test:unit:run:local --coveragePathIgnorePatterns=/src/icons/",
-    "test:unit:ci": "yarn test:unit:run --maxWorkers=4 --ci --reporters=default --reporters=jest-junit",
-    "test:unit:comps": "yarn test:unit:run:local --projects=src",
-    "test:unit:site": "yarn test:unit:run:local --projects=site",
+    "lint:code:base": "eslint --ext=.js,.ts,.jsx,.tsx --cache",
+    "lint:code:comps": "npx nx lint newskit-ui --ext=.js,.ts,.jsx,.tsx --cache",
+    "lint:code:docs": "npx nx lint site --ext=.js,.ts,.jsx,.tsx --cache",
+    "lint:code": "scripts/assert-files-and-folders.js && concurrently --names \"comps,docs\" \"yarn lint:code:comps\" \"yarn lint:code:docs\"",
+    "lint:code:fix": "scripts/assert-files-and-folders.js && concurrently --names \"comps,docs\" \"yarn lint:code:comps --fix\" \"yarn lint:code:docs --fix\"",
+    "lint:markdown": "nx exec -- markdownlint -c ./.markdownlint.json *.md **/*.md",
+    "lint:next": "nx exec -- next lint site",
+    "lint:packages": "npx nx report",
+    "lint:legacy": "concurrently --names \"code,markdown,next\" \"scripts/assert-files-and-folders.js && yarn lint:code:base .\" \"yarn markdownlint -c ./.markdownlint.json *.md **/*.md\" \"yarn next lint site\"",
+    "lint": "scripts/assert-files-and-folders.js && concurrently --names \"markdown,next,comps,docs\" \"yarn lint:markdown\" \"yarn lint:next\" \"yarn lint:code:comps\" \"yarn lint:code:docs\"",
+    "test": "yarn lint && yarn test:unit:dev --forceExit",
+    "test:legacy": "yarn lint:legacy && yarn test:unit:dev:legacy",
+    "test:unit:node": "node --max-old-space-size=8192 --expose-gc ./node_modules/.bin/jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:watch": "yarn test:unit:node --maxWorkers=50% --watch",
+    "test:unit:run": "NODE_OPTIONS=\"--max-old-space-size=8192\" nx exec -- jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:run:local": "yarn test:unit:run --maxWorkers=50% --coveragePathIgnorePatterns=/src/icons/",
+    "test:unit:dev": "yarn build:icons && concurrently --names \"docs,comps\" \"yarn test:unit:docs\" \"yarn test:unit:comps\"",
+    "test:unit:dev:legacy": "yarn build:icons && yarn test:unit:node --maxWorkers=50% --coveragePathIgnorePatterns=/src/icons/",
+    "test:unit:ci": "yarn test:unit:node --maxWorkers=2 --ci --reporters=default --reporters=jest-junit",
+    "test:unit:comps": "yarn test:unit:run:local --maxWorkers=50% --projects=src",
+    "test:unit:comps:experimental": "NODE_OPTIONS=\"--max-old-space-size=8192\" npx nx test newskit-ui --codeCoverage --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:docs": "yarn test:unit:run:local --maxWorkers=50% --projects=site",
+    "test:unit:docs:experimental": "NODE_OPTIONS=\"--max-old-space-size=8192\" npx nx test site --codeCoverage --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:comps:ci": "yarn test:unit:node --forceExit --maxWorkers=4 --projects=src --ci --reporters=default --reporters=jest-junit",
+    "test:unit:docs:ci": "yarn test:unit:node --forceExit --maxWorkers=3 --projects=site --ci --reporters=default --reporters=jest-junit",
     "test:comp-statuses": "node scripts/component-status.js",
     "test:visual:comps:ci:percy": "STORYBOOK_IS_VISUAL_TEST=true start-server-and-test dev:storybook 6006 'percy:run'",
     "test:visual:comps:ci:percy:skip": "PERCY_PARTIAL_BUILD=1 STORYBOOK_SKIP_PERCY_CHECK=true start-server-and-test dev:storybook 6006 percy:run",
@@ -96,9 +108,19 @@
     "@mdx-js/loader": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
     "@next/mdx": "^13.0.7",
+    "@nrwl/eslint-plugin-nx": "15.9.2",
+    "@nrwl/jest": "15.9.2",
+    "@nrwl/js": "15.9.2",
+    "@nrwl/linter": "15.9.2",
+    "@nrwl/next": "^15.9.2",
+    "@nrwl/react": "15.9.2",
+    "@nrwl/rspack": "^15.9.6",
     "@percy/cli": "1.10.2",
     "@percy/cypress": "3.1.2",
     "@percy/storybook": "4.3.3",
+    "@rspack/core": "~0.1.0",
+    "@rspack/dev-server": "~0.1.0",
+    "@rspack/plugin-minify": "~0.1.0",
     "@storybook/addon-a11y": "^6.5.16",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-docs": "^6.5.16",
@@ -145,15 +167,15 @@
     "@types/webpack": "^5.28.1",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
-    "axe-core": "^4.4.1",
+    "axe-core": "^4.7.0",
     "babel-loader": "^8.0.6",
     "chalk": "2.4.1",
     "concurrently": "^4.1.1",
     "copy-webpack-plugin": "^11.0.0",
     "csstype": "2",
-    "cypress": "^12.3.0",
+    "cypress": "^12.11.0",
     "cypress-axe": "^1.2.0",
-    "cypress-multi-reporters": "^1.6.2",
+    "cypress-multi-reporters": "^1.6.3",
     "eslint": "^8.3.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-next": "^13.0.7",
@@ -165,7 +187,6 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.6.10",
     "fast-glob": "^3.2.5",
     "fs-extra": "^9.0.1",
@@ -193,6 +214,7 @@
     "next": "^13.0.7",
     "next-router-mock": "^0.8.0",
     "npm-run-all": "^4.1.5",
+    "nx": "15.9.2",
     "package-change-checker": "^1.2.4",
     "prettier": "2.2.1",
     "pretty-proptypes": "^0.6.0",
@@ -227,6 +249,7 @@
     "@emotion-icons/material": "3.9.0",
     "@emotion-icons/material-outlined": "3.8.0",
     "@floating-ui/react-dom-interactions": "^0.6.0",
+    "@newskit-themes/the-sun": "^0.1.0",
     "@newskit-themes/newskit-website": "1.0.2",
     "@seznam/compose-react-refs": "^1.0.5",
     "@storybook/react": "^6.5.16",
@@ -274,8 +297,70 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "yarn lint:code:base --fix",
+      "yarn lint:code:base . --fix",
       "git add"
     ]
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nrwl/rspack:rspack",
+        "options": {
+          "rspackConfig": "rspack.config.js"
+        },
+        "configurations": {}
+      },
+      "lint": {
+        "executor": "@nrwl/linter:eslint",
+        "outputs": [
+          "{options.outputFile}"
+        ],
+        "options": {
+          "lintFilePatterns": [
+            "./src/**/*.{ts,tsx,js,jsx}"
+          ]
+        }
+      },
+      "lint:code:comps": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "lint:code:docs": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "lint:code": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "lint:markdown": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "lint:next": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:run": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:comps": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      },
+      "test:unit:docs": {
+        "outputs": [
+          "{projectRoot}/dist"
+        ]
+      }
+    }
   }
 }

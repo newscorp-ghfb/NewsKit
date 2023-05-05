@@ -1,0 +1,65 @@
+{
+  "name": "site",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "site",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "site",
+        "outputPath": "dist/site"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "site"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "site:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "site:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "site:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "site:build:production"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["site/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectName}"],
+      "options": {
+        "jestConfig": "site/jest.config.js",
+        "passWithNoTests": true
+      },
+      "configurations": {
+      }
+    }
+  },
+  "tags": []
+}

@@ -11,7 +11,7 @@ export const WhatsNew = ({releases = []}: WhatsNewProps) => {
 
   return (
     <FeatureCard
-      id="latest-release-card"
+      data-testid="latest-release-card"
       flagLabel="Latest release"
       title={`NewsKit ${latestRelease.tag_name}`}
       description="This latest release includes new features, bug fixes and other changes."
