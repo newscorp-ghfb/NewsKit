@@ -1033,12 +1033,12 @@ export const StoryContainerQueries = () => {
   );
   return (
     <StorybookPage>
-      <StorybookCase title="Small container">
+      <StorybookCase title="Container Query < 300px">
         <QueryContainerSmall>
           <CardWithQueries />
         </QueryContainerSmall>
       </StorybookCase>
-      <StorybookCase title="Large container">
+      <StorybookCase title="Container Query > 300px">
         <QueryContainerLarge>
           <CardWithQueries />
         </QueryContainerLarge>

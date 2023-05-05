@@ -85,56 +85,36 @@ export const StoryTextBlockContainerQueries = () => {
     ${getColorCssFromTheme('borderColor', 'blue060')}
   `;
 
+  const QueryTextBlock = () => (
+    <TextBlock
+      typographyPreset={{
+        rules: [
+          {
+            rule: '@container (width <= 300px)',
+            value: 'editorialParagraph010',
+          },
+          {
+            rule: '@container (width > 300px)',
+            value: 'editorialParagraph030',
+          },
+        ],
+      }}
+      stylePreset="inkContrast"
+    >
+      {BODY}
+    </TextBlock>
+  );
+
   return (
     <StorybookPage columns={TEXT_BLOCK_COLUMNS}>
-      <StorybookCase title="Small Container">
+      <StorybookCase title="Container query < 300px">
         <QueryContainerSmall>
-          <TextBlock
-            typographyPreset={{
-              rules: [
-                {
-                  rule: '@container (width <= 300px)',
-                  value: 'editorialParagraph010',
-                },
-                {
-                  rule: '@container (width > 300px)',
-                  value: 'editorialParagraph030',
-                },
-              ],
-            }}
-            stylePreset="inkContrast"
-            marginBlock="space040"
-            paddingBlock="space040"
-            marginInline="space040"
-            paddingInline="space040"
-          >
-            {BODY}
-          </TextBlock>
+          <QueryTextBlock />
         </QueryContainerSmall>
       </StorybookCase>
-      <StorybookCase title="Large Container">
+      <StorybookCase title="Container query > 300px">
         <QueryContainerLarge>
-          <TextBlock
-            typographyPreset={{
-              rules: [
-                {
-                  rule: '@container (width <= 300px)',
-                  value: 'editorialParagraph010',
-                },
-                {
-                  rule: '@container (width > 300px)',
-                  value: 'editorialParagraph030',
-                },
-              ],
-            }}
-            stylePreset="inkContrast"
-            marginBlock="space040"
-            paddingBlock="space040"
-            marginInline="space040"
-            paddingInline="space040"
-          >
-            {BODY}
-          </TextBlock>
+          <QueryTextBlock />
         </QueryContainerLarge>
       </StorybookCase>
     </StorybookPage>
