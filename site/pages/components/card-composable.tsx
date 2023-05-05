@@ -8,7 +8,6 @@ import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {UnorderedList} from 'newskit';
 import {Link} from '../../components/link';
-import {InlineCode} from '../../components/markdown-elements';
 
 const DividerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -26,12 +25,13 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       },
       introduction: `Cards contain preview content and actions relating to a specific subject.`,
     }}
-    componentDefaultsKey="divider"
+    componentDefaultsKey="card-composable"
     meta={{
       status: MetaStatus.Supported,
       introduced: 'v7.2.0',
       codeUrl:
         'https://github.com/newscorp-ghfb/NewsKit/tree/main/src/card-composable',
+      storybookId: 'components-cardcomposable--story-default',
       figmaUrl:
         'https://www.figma.com/file/MkU4xtY2yPcCpfhzQCuSnK/v5.3-%F0%9F%9F%A2-NewsKit-component-library?node-id=15173-225586&t=jmEqNiut63zVBEtL-0',
     }}
