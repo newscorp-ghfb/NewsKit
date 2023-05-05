@@ -15,7 +15,7 @@ import {FontConfig} from '../../theme/foundations/fonts';
 import {textCrop} from '../text-crop';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<string>,
+  defaultToken?: ResponsiveValue<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: {withCrop: boolean},
 ) => (props: Props) => {
