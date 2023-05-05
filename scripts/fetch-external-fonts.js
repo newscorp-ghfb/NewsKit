@@ -239,16 +239,19 @@ Promise.all([mkdirp(fontDirStorybook), mkdirp(fontDirSite)]).then(() =>
     ...fonts.map(({sources, fileName}) =>
       sources.map(source => {
         const extension = path.extname(source);
-        const dest = `${fontDirStorybook}/${fileName}${extension}`;
+        const storybookDest = `${fontDirStorybook}/${fileName}${extension}`;
+        const siteDest = `${fontDirSite}/${fileName}${extension}`;
 
-        // if (!fs.existsSync(dest)) {
-        return download(source, dest).then(() => {
-          const copyDest = `${fontDirSite}/${fileName}${extension}`;
-          fs.copyFileSync(dest, copyDest);
+        if (!fs.existsSync(storybookDest)) {
+          return download(source, storybookDest).then(() => {
+            fs.copyFileSync(storybookDest, siteDest);
+            return Promise.resolve();
+          });
+        } else if (!fs.existsSync(siteDest)) {
+          fs.copyFileSync(storybookDest, siteDest);
           return Promise.resolve();
-        });
-        // }
-        // return Promise.resolve();
+        }
+        return Promise.resolve();
       }),
     ),
   ),
