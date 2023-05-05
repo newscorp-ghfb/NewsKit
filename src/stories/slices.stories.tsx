@@ -39,25 +39,24 @@ export const TheSunStory = () => {
           maxWidth: {xs: '340px', md: '620px', lg: '940px'},
           marginInline: 'auto',
         }}
-        columns={{xs: '1fr', md: '1fr 1fr', lg: '2fr 1fr'}}
-        rowGap={{xs: 'space050'}}
-        columnGap={{xs: 'space040'}}
+        columns={{xs: '1fr', lg: '2fr 1fr'}}
+        columnGap="space040"
+        rowGap="space050"
       >
-        <GridLayoutItem row={{lg: '1 / 5'}} column={{md: '1 / 3', lg: '1 / 2'}}>
+        <GridLayoutItem>
           <CardVerticalResponsive />
         </GridLayoutItem>
-        <GridLayoutItem>
+        <GridLayout
+          columns={{xs: '1fr', md: '1fr 1fr', lg: '1fr'}}
+          columnGap="space040"
+          rowGap="space050"
+          alignContent="space-between"
+        >
           <CardHorizontalResponsive />
-        </GridLayoutItem>
-        <GridLayoutItem>
           <CardHorizontalResponsive />
-        </GridLayoutItem>
-        <GridLayoutItem>
           <CardHorizontalResponsive />
-        </GridLayoutItem>
-        <GridLayoutItem>
           <CardHorizontalResponsive />
-        </GridLayoutItem>
+        </GridLayout>
       </GridLayout>
     </ThemeProvider>
   );

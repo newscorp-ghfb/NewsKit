@@ -131,6 +131,7 @@ export const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
     </CardActions>
   </CardComposable>
 );
+
 export const CardVerticalResponsive = () => (
   <CardComposable
     overrides={{stylePreset: 'cardComposableVertical', minHeight: '100%'}}
@@ -337,7 +338,8 @@ export const CardHorizontalResponsive = () => (
       overflow: 'hidden',
     }}
     columnGap="space040"
-    rowGap="space045"
+    rowGap={{xs: 'space045', md: 'space000'}}
+    alignItems="space-around"
     areas={`
       media content
       actions actions
