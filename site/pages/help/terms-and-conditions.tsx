@@ -36,6 +36,8 @@ const Introduction = ({path, ...props}: LayoutProps) => (
       }}
     />
     <PageIntroduction
+      nameAs="h1"
+      introductionAs="h2"
       name="Website terms and conditions of use"
       introduction={
         <>
