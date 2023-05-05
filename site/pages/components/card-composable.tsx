@@ -245,6 +245,17 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             </>
             <>A video: If a video is provided, ensure the following</>
             <>
+              The video{' '}
+              <Link href="https://bbc.github.io/gel/components/cards/#fn3">
+                does not auto-play
+              </Link>
+            </>
+            <>
+              The video player&apos;s controls are accessible by a screen reader
+              and keyboard
+            </>
+            <>Dialogue in the video is accompanied by closed captions</>
+            <>
               It&apos;s not recommended to nest interactive elements like a
               button inside a link, or a link inside a button and so on.
             </>
