@@ -6,6 +6,8 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -20,8 +22,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -702,6 +702,8 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -716,8 +718,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -1398,6 +1398,8 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -1412,8 +1414,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -2099,6 +2099,8 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -2110,13 +2112,9 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-block: 20px;
-  padding-inline: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -2796,6 +2794,8 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -2810,8 +2810,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -3491,6 +3489,8 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -3505,8 +3505,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -4186,6 +4184,8 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -4200,8 +4200,6 @@ exports[`Pagination and PaginationItems only Pagination and PaginationItems only
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -4881,6 +4879,8 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -4895,8 +4895,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -5331,6 +5329,8 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -5345,8 +5345,6 @@ exports[`Pagination and PaginationItems only Pagination, navigation icons and Pa
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -6321,6 +6319,8 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -6335,8 +6335,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders selected pag
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -6540,6 +6538,8 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -6554,8 +6554,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with default
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -6785,6 +6783,8 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -6799,8 +6799,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -6920,6 +6918,8 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -6934,8 +6934,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
@@ -7133,6 +7131,8 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   margin: 0;
   padding: 0;
   display: inline-grid;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
   grid-template-columns: auto;
   grid-auto-flow: column;
   grid-auto-columns: auto;
@@ -7147,8 +7147,6 @@ exports[`Pagination and PaginationItems only PaginationItem renders with overrid
   list-style: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 4px;
-  column-gap: 4px;
 }
 
 .emotion-2 {
