@@ -254,8 +254,6 @@ interface StateProviderProps {
 export function AppStateProvider({children}: StateProviderProps) {
   const [state, dispatch] = useReducer(reducer, intialState);
 
-  // console.log(state);
-
   return (
     <AppStateContext.Provider value={{state, dispatch}}>
       {children}

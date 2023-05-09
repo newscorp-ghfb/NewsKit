@@ -216,14 +216,7 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               <br />
               <br />
               Tokens can also be used as object keys as well as values. As well
-              as this, multiple tokens can be specified in a single field, this
-              is how the spacing presets are created for example -
-              <InlineCode>
-                {
-                  "spaceInsetSquish030: '{{ sizing.sizing030 }} {{ sizing.sizing040 }}'"
-                }
-              </InlineCode>
-              .
+              as this, multiple tokens can be specified in a single field.
               <br />
               <br />
               To make this system as flexible as reasonably possible the
@@ -301,7 +294,7 @@ const CreatingATheme = (layoutProps: LayoutProps) => (
               Alternatively, you can also do this:
               <br />
               <br />
-              <CodeFromFile path="examples/theming/__extends_1.tsx" />
+              <CodeFromFile path="examples/theming/__extends_2.tsx" />
               <br />
               As well as a single token string, the{' '}
               <InlineCode>__extends</InlineCode> also supports an array of token
