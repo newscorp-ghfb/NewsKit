@@ -64,6 +64,16 @@ describe('GridLayout', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders GridLayout with container name and type', () => {
+    const props: GridLayoutProps = {
+      containerName: 'test-container',
+      containerType: 'inline-size',
+    };
+
+    const fragment = renderToFragmentWithTheme(GridLayout, props);
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders GridLayout with different areas for different breakpoints', () => {
     const props: GridLayoutProps = {
       areas: {

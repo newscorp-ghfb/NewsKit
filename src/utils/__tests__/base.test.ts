@@ -1,6 +1,9 @@
 import {createTheme, compileTheme} from '../../theme';
-import {getSizingCssFromTheme} from '../style/getters';
-import {getXFromTheme} from '../style/base';
+import {
+  getSizingCssFromTheme,
+  getTypographyPresetFromTheme,
+} from '../style/getters';
+import {getXFromTheme, getDefaultedValue} from '../style/base';
 import {
   getResponsiveSize,
   getResponsiveSpace,
@@ -40,6 +43,19 @@ describe('getXFromTheme', () => {
     }),
   );
 
+  test('should not use overridePath when it is false', () => {
+    const presetType = 'typographyPreset';
+    const defaultPath = 'md';
+    const overridePath = false;
+    const expectedValue = '16px';
+    const props = {theme: theme};
+    const result = getDefaultedValue(getTypographyPresetFromTheme, presetType)(
+      defaultPath,
+      overridePath,
+    )(props);
+    expect(result).toEqual(expectedValue);
+  });
+
   test('getXFromTheme with non MQ value', () => {
     const result = getXFromTheme('sizing')('width', 'sizing050')({theme});
     expect(result).toEqual({width: '24px'});
@@ -64,6 +80,14 @@ describe('getXFromTheme', () => {
     })({theme});
     expect(result).toEqual({
       '@container (min-width: 300px)': {width: '4px'},
+    });
+  });
+  test('getXFromTheme – spacePreset with Container Query value', () => {
+    const result = getXFromTheme('spacePresets')('padding', {
+      rules: [{rule: '@container (min-width: 300px)', value: 'space010'}],
+    })({theme});
+    expect(result).toEqual({
+      '@container (min-width: 300px)': {padding: '4px'},
     });
   });
   test('getXFromTheme with CQ & MQ value', () => {

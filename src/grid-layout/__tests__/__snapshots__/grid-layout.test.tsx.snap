@@ -205,6 +205,22 @@ exports[`GridLayout renders GridLayout with colum/row prop 1`] = `
 </DocumentFragment>
 `;
 
+exports[`GridLayout renders GridLayout with container name and type 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin: 0;
+  padding: 0;
+  container-type:inline-size;
+  container-name:test-container;
+  display: grid;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
 exports[`GridLayout renders GridLayout with different areas for different breakpoints 1`] = `
 <DocumentFragment>
   .emotion-0 {

@@ -29,6 +29,10 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
   margin: 0;
   padding: 0;
 
+  /* container query props */
+  ${({containerType}) => containerType && `container-type: ${containerType}`};
+  ${({containerName}) => containerName && `container-name: ${containerName}`};
+
   ${handleResponsiveProp({inline: GRID_DEFAULT_PROPS.inline}, ({inline}) => ({
     display: inline ? 'inline-grid' : 'grid',
   }))}
