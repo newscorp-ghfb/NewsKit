@@ -163,30 +163,24 @@ export default function Template({
             font-style: normal;
           }
 
-          /* DJ 
-          
-            "fontFamily": "Roboto"
+          /* 
+           -------------------------------
+            DJ 
             "fontFamily": "Simplon Norm"
+            
+            defined but not used, so not imported
           */
 
           /* 
             -------------------------------
             MarketWatch
-            {fontFamily: 'Mulish'}
-            {fontFamily: 'Lato'}
-
+            
             via link from Google Fonts
           */
 
           /*  
             -------------------------------
             WSJ
-            {fontFamily: 'Escrow Condensed'}
-            {fontFamily: 'Exchange'}
-            {fontFamily: 'Retina'}
-            {fontFamily: 'Retina Narrow'}
-            {fontFamily: 'Georgia'}
-            {fontFamily: 'Arial'}
           */
 
           @font-face {
