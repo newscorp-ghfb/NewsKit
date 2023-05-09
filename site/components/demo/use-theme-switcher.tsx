@@ -14,6 +14,8 @@ import {
 import theSunTheme from '@newskit-themes/the-sun/TheSun-light.json';
 import theTimesTheme from '@newskit-themes/the-times/TheTimes-light.json';
 import dowJonesTheme from '@newskit-themes/dow-jones/DowJones-light.json';
+import marketWatch from '@newskit-themes/market-watch/MarketWatch-light.json';
+import wsj from '@newskit-themes/wall-street-journal/WallStreetJournal-light.json';
 
 const createOverrides = (customOverrides: ThemeOverrides = {}) => {
   return {
@@ -59,6 +61,8 @@ const themeSettings: ThemeSettings[] = [
   [undefined, 'The Times', theTimesTheme],
   [undefined, 'The Sun', theSunTheme],
   [undefined, 'Dow Jones', dowJonesTheme],
+  [undefined, 'Market Watch', marketWatch],
+  [undefined, 'Wall Street Journal', wsj],
 ];
 
 const themes: UncompiledTheme[] = themeSettings.map(

@@ -39,10 +39,21 @@ export default function Template({
     <>
       <Head>
         <title>{title}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Global
         styles={css`
-          /* NewsKit */
+          /* ------------------------------------------------------
+          NewsKit
+          */
           @font-face {
             font-family: 'Bitter';
             src: url('static/fonts/bitter-regular.woff2') format('woff2');
@@ -72,7 +83,9 @@ export default function Template({
             font-display: block;
           }
 
-          /* The Sun */
+          /*
+          ------------------------------------------------------
+          The Sun */
           @font-face {
             font-family: 'The Sun';
             src: url('static/fonts/private-fonts/TheSun-Regular.woff2')
@@ -110,7 +123,9 @@ export default function Template({
             font-display: block;
           }
 
-          /* The Times */
+          /*
+          ------------------------------------------------------
+          The Times */
           @font-face {
             font-family: 'Times Modern';
             src: url('static/fonts/private-fonts/TimesModern-Regular.woff2')
@@ -149,13 +164,228 @@ export default function Template({
           }
 
           /* DJ 
-            "fontFamily010": {
-              "fontFamily": "Roboto"
-            },
-            "fontFamily020": {
-              "fontFamily": "Simplon Norm"
-            }
+          
+            "fontFamily": "Roboto"
+            "fontFamily": "Simplon Norm"
           */
+
+          /* 
+            -------------------------------
+            MarketWatch
+            {fontFamily: 'Mulish'}
+            {fontFamily: 'Lato'}
+
+            via link from Google Fonts
+          */
+
+          /*  
+            -------------------------------
+            WSJ
+            {fontFamily: 'Escrow Condensed'}
+            {fontFamily: 'Exchange'}
+            {fontFamily: 'Retina'}
+            {fontFamily: 'Retina Narrow'}
+            {fontFamily: 'Georgia'}
+            {fontFamily: 'Arial'}
+          */
+
+          @font-face {
+            font-family: 'Retina';
+            src: url('static/fonts/private-fonts/Retina-Book.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 400;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina';
+            src: url('static/fonts/private-fonts/Retina-BookItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 400;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina';
+            src: url('static/fonts/private-fonts/Retina-Light.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 300;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina';
+            src: url('static/fonts/private-fonts/Retina-LightItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 300;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina';
+            src: url('static/fonts/private-fonts/Retina-Medium.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 500;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina';
+            src: url('static/fonts/private-fonts/Retina-MediumItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 500;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina Narrow';
+            src: url('static/fonts/private-fonts/RetinaNarr-Light.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 300;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina Narrow';
+            src: url('static/fonts/private-fonts/RetinaNarr-LightItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 300;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina Narrow';
+            src: url('static/fonts/private-fonts/RetinaNarr-Book.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 400;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina Narrow';
+            src: url('static/fonts/private-fonts/RetinaNarr-BookItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 400;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina Narrow';
+            src: url('static/fonts/private-fonts/RetinaNarr-Medium.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 500;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina Narrow';
+            src: url('static/fonts/private-fonts/RetinaNarr-MediumItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 500;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina Narrow';
+            src: url('static/fonts/private-fonts/RetinaNarr-Bold.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 700;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Retina Narrow';
+            src: url('static/fonts/private-fonts/RetinaNarr-BoldItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 700;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Escrow Condensed';
+            src: url('static/fonts/private-fonts/Escrow+Display+Condensed+Bold.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 700;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Escrow Condensed';
+            src: url('static/fonts/private-fonts/Escrow+Display+Condensed+Bold+Italic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 700;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Escrow Condensed';
+            src: url('static/fonts/private-fonts/Escrow+Display+Condensed+Roman.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 400;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Escrow Condensed';
+            src: url('static/fonts/private-fonts/Escrow+Display+Condensed+Italic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 400;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Exchange';
+            src: url('static/fonts/private-fonts/Exchange-Book.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 400;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Exchange';
+            src: url('static/fonts/private-fonts/Exchange-BookItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 400;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Exchange';
+            src: url('static/fonts/private-fonts/Exchange-Medium.woff2')
+              format('woff2');
+            font-style: normal;
+            font-weight: 500;
+            font-display: optional;
+          }
+
+          @font-face {
+            font-family: 'Exchange';
+            src: url('static/fonts/private-fonts/Exchange-MediumItalic.woff2')
+              format('woff2');
+            font-style: italic;
+            font-weight: 500;
+            font-display: optional;
+          }
         `}
       />
       <ThemeProvider theme={demoTheme}>

@@ -36,6 +36,8 @@ const dependenciesNotToBeIncluded = [
   '@newskit-themes/the-sun',
   '@newskit-themes/newskit-website',
   '@newskit-themes/dow-jones',
+  '@newskit-themes/market-watch',
+  '@newskit-themes/wall-street-journal',
 ];
 
 const filterPackageJson = () => {
