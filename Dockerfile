@@ -1,12 +1,12 @@
-# slim image used simply to reduce build download time, if problems arise just use non-slim variant.
-FROM node:16.11-bullseye-slim
+FROM python:3.8.5-slim-buster
 
 WORKDIR /app
 
-RUN yarn add http-server
+RUN mkdir parser
+RUN mkdir .circleci
 
-COPY package.json ./
-COPY dist-storybook ./dist-storybook
-COPY public ./public
+COPY ./parser ./parser
+COPY ./.circleci ./.circleci
 
-EXPOSE 6006 8081
+RUN pip install --upgrade pip
+RUN pip install pyyaml

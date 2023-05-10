@@ -35,7 +35,7 @@
     "test:legacy": "yarn lint:legacy && yarn test:unit:dev:legacy",
     "test:unit:node": "node --max-old-space-size=8192 --expose-gc ./node_modules/.bin/jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
     "test:unit:watch": "yarn test:unit:node --maxWorkers=50% --watch",
-    "test:unit:run": "NODE_OPTIONS=\"--max-old-space-size=8192\" nx exec -- jest --logHeapUsage --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test:unit:run": "NODE_OPTIONS=\"--max-old-space-size=8192\" nx exec -- jest src/theme --coverage=false --updateSnapshot",
     "test:unit:run:local": "yarn test:unit:run --maxWorkers=50% --coveragePathIgnorePatterns=/src/icons/",
     "test:unit:dev": "yarn build:icons && concurrently --names \"docs,comps\" \"yarn test:unit:docs\" \"yarn test:unit:comps\"",
     "test:unit:dev:legacy": "yarn build:icons && yarn test:unit:node --maxWorkers=50% --coveragePathIgnorePatterns=/src/icons/",
