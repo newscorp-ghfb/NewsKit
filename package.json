@@ -86,7 +86,7 @@
     "serve:docs": "http-server public -p 8081 -c300",
     "serve:storybook": "http-server dist-storybook -p 6006",
     "dependencies:check": "package-change-checker --install-cmd=\"yarn install --pure-lockfile\" HEAD@{1} HEAD",
-    "storybook": "start-storybook -c .storybook -p 6006 "
+    "storybook": "start-storybook -c .storybook -p 6006"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
