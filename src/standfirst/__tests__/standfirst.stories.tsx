@@ -15,14 +15,6 @@ const CONTENT = (
     for design and development.
   </TextBlock>
 );
-const standfirstCustomThemeObject: CreateThemeArgs = {
-  name: 'my-custom-standfirst-theme',
-  overrides: {
-    stylePresets: {
-      standfirstCustom: {base: {color: '{{colors.inkBrand010}}'}},
-    },
-  },
-};
 
 export const StoryDefault = () => (
   <StorybookPage columns="1fr">
@@ -124,7 +116,7 @@ export default {
       <ThemeProvider
         theme={createCustomThemeWithBaseThemeSwitch(
           context?.globals?.backgrounds?.value,
-          standfirstCustomThemeObject,
+          {},
           context?.name,
         )}
       >
