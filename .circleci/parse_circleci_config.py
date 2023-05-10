@@ -67,7 +67,7 @@ def iterate_keys(obj, path='', usages=None):
 
 
 def run():
-  config = read_config('config.yml')
+  config = read_config('.circleci/config.yml')
   usages = iterate_keys(config)
   print(json.dumps(usages, indent=4))
 

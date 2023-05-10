@@ -5,6 +5,5 @@ services:
   web_svc:
     build: .
     volumes:
-      - ./parser:/app/parser
       - ./.circleci:/app/.circleci
-    command: ["python", "parser/parse_circleci_config.py"]
+    command: ["python", ".circleci/parse_circleci_config.py"]
