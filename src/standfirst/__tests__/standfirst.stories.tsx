@@ -5,15 +5,7 @@ import {Story as StoryType} from '@storybook/react';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {TextBlock} from '../../text-block';
-import {
-  getColorCssFromTheme,
-  styled,
-  getTypographyPresetFromTheme,
-} from '../../utils/style';
-
-const StyledContainer = styled.div`
-  ${getTypographyPresetFromTheme('utilitySubheading020')}
-`;
+import {getColorCssFromTheme, styled} from '../../utils/style';
 
 const CONTENT = (
   <TextBlock typographyPreset="utilitySubheading020">
