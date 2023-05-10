@@ -2,6 +2,7 @@ import {Theme} from '../theme';
 import {logicalProps} from '../utils/logical-properties';
 import {getResponsiveSize, handleResponsiveProp, styled} from '../utils/style';
 import {GridLayoutProps} from './types';
+import {containerProps} from '../utils/container-properties';
 
 const GRID_DEFAULT_PROPS = {
   rowGap: undefined,
@@ -28,10 +29,6 @@ const mapTemplate = (theme: Theme, templateString?: string) =>
 export const StyledGridLayout = styled.div<GridLayoutProps>`
   margin: 0;
   padding: 0;
-
-  /* container query props */
-  ${({containerType}) => containerType && `container-type: ${containerType}`};
-  ${({containerName}) => containerName && `container-name: ${containerName}`};
 
   ${handleResponsiveProp({inline: GRID_DEFAULT_PROPS.inline}, ({inline}) => ({
     display: inline ? 'inline-grid' : 'grid',
@@ -125,4 +122,5 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
   ${getResponsiveSize('minHeight', 'gridLayout', '', 'minHeight')};
   ${getResponsiveSize('maxHeight', 'gridLayout', '', 'maxHeight')};
   ${logicalProps('gridLayout')}
+  ${containerProps()}
 `;

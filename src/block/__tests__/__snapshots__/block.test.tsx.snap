@@ -11,7 +11,8 @@ exports[`Block with no props renders an unstyled div 1`] = `
 exports[`Block with props renders GridLayout with container name and type 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  container-type:inline-size container-name: test-container;
+  container-type: inline-size;
+  container-name: test-container;
 }
 
 <div

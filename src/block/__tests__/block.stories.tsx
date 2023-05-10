@@ -29,6 +29,13 @@ const blockCustomThemeObject: CreateThemeArgs = {
           borderColor: '{{colors.red060}}',
         },
       },
+      blockContainerQueryWrapper: {
+        base: {
+          borderStyle: 'dashed',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderColor: '{{colors.blue060}}',
+        },
+      },
       blockTransition: {
         base: {
           color: '{{colors.inkBase}}',
@@ -132,7 +139,6 @@ export const StoryContainerQueries = () => {
     ${getColorCssFromTheme('borderColor', 'blue060')}
   `;
   const QueryContainerLarge = styled.div`
-    container-type: inline-size;
     width: 600px;
     border: 1px dashed;
     ${getColorCssFromTheme('borderColor', 'blue060')}
@@ -173,14 +179,24 @@ export const StoryContainerQueries = () => {
   return (
     <StorybookPage columns={blockGridCols}>
       <StorybookCase title="Container query < 300px">
-        <QueryContainerSmall>
+        <Block
+          containerName="container-small"
+          containerType="inline-size"
+          stylePreset="blockContainerQueryWrapper"
+          style={{width: '200px'}}
+        >
           <QueryBlock />
-        </QueryContainerSmall>
+        </Block>
       </StorybookCase>
       <StorybookCase title="Container query > 300px">
-        <QueryContainerLarge>
+        <Block
+          containerName="container-small"
+          containerType="inline-size"
+          stylePreset="blockContainerQueryWrapper"
+          style={{width: '500px'}}
+        >
           <QueryBlock />
-        </QueryContainerLarge>
+        </Block>
       </StorybookCase>
     </StorybookPage>
   );

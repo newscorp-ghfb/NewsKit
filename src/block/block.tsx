@@ -9,6 +9,7 @@ import {
   ContainerQueryProps,
 } from '../utils/style';
 import {getTransitionPresetFromTheme} from '../utils/style/transition-preset';
+import {containerProps} from '../utils/container-properties';
 
 export interface BlockProps
   extends React.HTMLAttributes<HTMLDivElement>,
@@ -28,14 +29,13 @@ export interface BlockProps
 }
 
 const StyledDiv = styled.div<BlockProps>`
-  ${({containerType}) => containerType && `container-type: ${containerType}`}
-  ${({containerName}) => containerName && `container-name: ${containerName}`}
   ${({stylePreset}) => stylePreset && getStylePresetFromTheme(stylePreset)}
   ${({spaceInline}) =>
     spaceInline && getSpacingFromTheme(spaceInline, undefined, 'marginRight')}
   ${({spaceStack}) =>
     spaceStack && getSpacingFromTheme(spaceStack, undefined, 'marginBottom')}
   ${logicalProps()}
+  ${containerProps()}
   ${({transitionPreset}) =>
     transitionPreset && getTransitionPresetFromTheme(transitionPreset)};
 `;
