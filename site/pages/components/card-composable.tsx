@@ -183,7 +183,10 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               Avoid varying heights of cards when placed next to each other in a
               rail. Cards should all match the height of the largest card,
               taking up the available space i.e. not having different height
-              cards. Reference: Card - CSS: Cascading Style Sheets | MDN
+              cards.{' '}
+              <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Card">
+                Reference: Card - CSS: Cascading Style Sheets | MDN
+              </Link>
             </>
           ),
           kind: UsageKind.DONT,
@@ -223,7 +226,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             <>Use list markup to group your cards</>
             <>
               Each Card has a Heading level of the same level because they
-              belong to a flat list hierarchy.
+              belong to a flat list hierarchy
             </>
             <>
               When grouping the cards in a List, add an appropriate heading for
@@ -231,7 +234,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             </>
             <>
               Update the heading level based on the content of the page to make
-              sure card headings are in the correct, logical order.
+              sure card headings are in the correct, logical order
             </>
             <>
               Avoid having 2 links to the same URL (in the same Card) like one
@@ -241,7 +244,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             <>
               When creating a tab order for the different parts of the card,
               remember to put the headline before the image or media so that
-              screen-reader users get the context before the image alt tag.
+              screen-reader users get the context before the image alt tag
             </>
             <>A video: If a video is provided, ensure the following</>
             <>
@@ -257,11 +260,11 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             <>Dialogue in the video is accompanied by closed captions</>
             <>
               It&apos;s not recommended to nest interactive elements like a
-              button inside a link, or a link inside a button and so on.
+              button inside a link, or a link inside a button and so on
             </>
             <>
               Don&apos;t wrap the whole card in a Link, use //expand//prop to
-              make it look like it.
+              make it look like it
             </>
           </UnorderedList>
         </>
@@ -295,7 +298,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             attribute: 'alt',
             value: 'string',
             description:
-              'Alt of the image when the image is not decorative, it needs to be different from card title.',
+              'Image alt text, if the image is not decorative. Alt text needs to be different from the card title.',
             userSupplied: true,
           },
         ],
@@ -320,19 +323,19 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           >
             <>
               Ensure all text, icons, and images are visible in the card so
-              information can be crawled and indexed by search engines.
+              information can be crawled and indexed by search engines
             </>
 
             <>Allow all text to use schema markup (h tag or span).</>
-            <>Ensure any media used has alt text applied.</>
+            <>Ensure any media used has alt text applied</>
             <>
               When nesting other components in the card actions area make sure
-              to follow those components SEO guidelines.
+              to follow those components SEO guidelines
             </>
             <>
               The content shown on-load should be optimised and labeled
               accordingly as standard. Should conform to best practice SEO
-              techniques.
+              techniques
             </>
           </UnorderedList>
         </>
