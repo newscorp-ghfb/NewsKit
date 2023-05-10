@@ -13,8 +13,7 @@ import {containerProps} from '../utils/container-properties';
 
 export interface BlockProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    LogicalProps,
-    ContainerQueryProps {
+    LogicalProps {
   as?: keyof JSX.IntrinsicElements;
   stylePreset?: MQ<string>;
   transitionPreset?: TransitionToken | TransitionToken[];
@@ -26,6 +25,7 @@ export interface BlockProps
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlockEnd` instead.
    */
   spaceStack?: MQ<string>;
+  overrides?: ContainerQueryProps;
 }
 
 const StyledDiv = styled.div<BlockProps>`

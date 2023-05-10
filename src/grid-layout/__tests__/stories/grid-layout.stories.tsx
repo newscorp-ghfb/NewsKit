@@ -10,6 +10,7 @@ import {
   StorybookHeading,
   StorybookSubHeading,
   StorybookCase,
+  StorybookPage,
 } from '../../../test/storybook-comps';
 
 const BigRedBlock = styled(Block)`
@@ -182,11 +183,11 @@ export const StoryContainerQueryExample = () => {
       rows={{
         rules: [
           {
-            rule: '@container grid-container (width <= 200px)',
+            rule: '@container (width <= 200px)',
             value: '1fr 1fr',
           },
           {
-            rule: '@container grid-container (width > 200px)',
+            rule: '@container (width > 200px)',
             value: '1fr',
           },
         ],
@@ -194,12 +195,12 @@ export const StoryContainerQueryExample = () => {
       columns={{
         rules: [
           {
-            rule: '@container grid-container (width <= 200px)',
-            value: '1fr 1fr',
+            rule: '@container (width <= 200px)',
+            value: '1fr',
           },
           {
-            rule: '@container grid-container (width > 200px)',
-            value: '1fr',
+            rule: '@container (width > 200px)',
+            value: '1fr 1fr',
           },
         ],
       }}
@@ -210,18 +211,24 @@ export const StoryContainerQueryExample = () => {
   );
 
   return (
-    <>
-      <StorybookCase title="Container query < 200px">
-        <QueryContainerSmall>
+    <StorybookPage>
+      <StorybookCase title="Container <= 200px">
+        <Block
+          overrides={{containerType: 'inline-size'}}
+          style={{width: '200px'}}
+        >
           <QueryGridLayout />
-        </QueryContainerSmall>
+        </Block>
       </StorybookCase>
-      <StorybookCase title="Container query > 200px">
-        <QueryContainerLarge>
+      <StorybookCase title="Container > 200px">
+        <Block
+          overrides={{containerType: 'inline-size'}}
+          style={{width: '400px'}}
+        >
           <QueryGridLayout />
-        </QueryContainerLarge>
+        </Block>
       </StorybookCase>
-    </>
+    </StorybookPage>
   );
 };
 StoryContainerQueryExample.storyName = 'Container Queries';

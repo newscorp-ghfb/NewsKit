@@ -44,6 +44,6 @@ export type GridLayoutProps = {
     height?: ResponsiveValue<string>;
     minHeight?: ResponsiveValue<string>;
     maxHeight?: ResponsiveValue<string>;
-  } & LogicalProps;
-} & ContainerQueryProps &
-  Omit<React.HTMLAttributes<HTMLDivElement>, 'children'>;
+  } & LogicalProps &
+    ContainerQueryProps;
+} & Omit<React.HTMLAttributes<HTMLDivElement>, 'children'>;

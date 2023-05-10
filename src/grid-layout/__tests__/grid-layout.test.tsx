@@ -55,7 +55,7 @@ describe('GridLayout', () => {
     const props: GridLayoutProps = {
       areas: `
         "A A"
-        "B C"
+      "B C"
         "D E"`,
       children: areasChildren,
     };
@@ -66,8 +66,10 @@ describe('GridLayout', () => {
 
   test('renders GridLayout with container name and type', () => {
     const props: GridLayoutProps = {
-      containerName: 'test-container',
-      containerType: 'inline-size',
+      overrides: {
+        containerName: 'test-container',
+        containerType: 'inline-size',
+      },
     };
 
     const fragment = renderToFragmentWithTheme(GridLayout, props);

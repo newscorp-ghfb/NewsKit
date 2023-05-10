@@ -132,18 +132,6 @@ export const StoryBreakpoint = () => (
 StoryBreakpoint.storyName = 'Breakpoint';
 
 export const StoryContainerQueries = () => {
-  const QueryContainerSmall = styled.div`
-    container-type: inline-size;
-    width: 300px;
-    border: 1px dashed;
-    ${getColorCssFromTheme('borderColor', 'blue060')}
-  `;
-  const QueryContainerLarge = styled.div`
-    width: 600px;
-    border: 1px dashed;
-    ${getColorCssFromTheme('borderColor', 'blue060')}
-  `;
-
   const QueryBlock = () => (
     <Block
       stylePreset="blockDefault"
@@ -178,20 +166,24 @@ export const StoryContainerQueries = () => {
 
   return (
     <StorybookPage columns={blockGridCols}>
-      <StorybookCase title="Container query < 300px">
+      <StorybookCase title="Container < 300px">
         <Block
-          containerName="container-small"
-          containerType="inline-size"
+          overrides={{
+            containerName: 'container-small',
+            containerType: 'inline-size',
+          }}
           stylePreset="blockContainerQueryWrapper"
           style={{width: '200px'}}
         >
           <QueryBlock />
         </Block>
       </StorybookCase>
-      <StorybookCase title="Container query > 300px">
+      <StorybookCase title="Container > 300px">
         <Block
-          containerName="container-small"
-          containerType="inline-size"
+          overrides={{
+            containerName: 'container-large',
+            containerType: 'inline-size',
+          }}
           stylePreset="blockContainerQueryWrapper"
           style={{width: '500px'}}
         >
