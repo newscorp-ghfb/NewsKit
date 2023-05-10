@@ -136,9 +136,6 @@ export const CardVerticalResponsive = () => (
   <CardComposable
     overrides={{stylePreset: 'cardComposableVertical', minHeight: '100%'}}
     rows="auto 1fr auto"
-    style={{
-      overflow: 'hidden',
-    }}
   >
     <CardMedia
       media={{
@@ -166,6 +163,7 @@ export const CardVerticalResponsive = () => (
     >
       <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
         <Headline
+          headingAs="h2"
           overrides={{
             kicker: {
               stylePreset: 'inkBrand020',
@@ -175,10 +173,9 @@ export const CardVerticalResponsive = () => (
               md: 'editorialHeadline040',
             },
           }}
-          kickerText="LOREM IPSUM"
+          kickerText="KICKER"
         >
-          Dolor sit amet, consectetur adipiscing elit, proin molestie sem at
-          consectetur euismod maecenas ut
+          Short title of the card describing the main content
         </Headline>
       </CardLink>
       <TextBlock
@@ -189,9 +186,8 @@ export const CardVerticalResponsive = () => (
         }}
         stylePreset="inkBase"
       >
-        When asked about his trips as a royal around the Commonwealth, Harry
-        told the Armchair Expert podcast: &quot;It’s the job right? Grin and
-        bear it, get on with it.&quot;
+        Short paragraph description of the article, outlining main story and
+        focus.
       </TextBlock>
     </CardContent>
     <CardActions
@@ -334,9 +330,6 @@ export const CardHorizontalTheSun: React.FC<MediaContextActionProps> = ({
 export const CardHorizontalResponsive = () => (
   <CardComposable
     overrides={{stylePreset: 'cardComposableHorizontal'}}
-    style={{
-      overflow: 'hidden',
-    }}
     columnGap="space040"
     rowGap={{xs: 'space045', md: 'space000'}}
     alignItems="space-around"
