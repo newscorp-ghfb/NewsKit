@@ -71,10 +71,10 @@ export const INTERFACE_DESCRIPTION = {
     'Interface colour complimentary to interfaceInformative010',
   interfaceNotice010: 'Background for notice or warning messages',
   interfaceNotice020: 'Interface colour complimentary to interfaceNotice010',
-  interfaceNegative010: 'Background for success messages',
+  interfaceNegative010: 'Background for error messages',
   interfaceNegative020:
     'Interface colour complimentary to interfaceNegative010',
-  interfacePositive010: 'Background for error messages',
+  interfacePositive010: 'Background for success messages',
   interfacePositive020:
     'Interface colour complimentary to interfacePositive010',
   interfaceSkeleton010:
