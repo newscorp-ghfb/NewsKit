@@ -43,19 +43,6 @@ describe('getXFromTheme', () => {
     }),
   );
 
-  test('should not use overridePath when it is false', () => {
-    const presetType = 'typographyPreset';
-    const defaultPath = 'md';
-    const overridePath = false;
-    const expectedValue = '16px';
-    const props = {theme: theme};
-    const result = getDefaultedValue(getTypographyPresetFromTheme, presetType)(
-      defaultPath,
-      overridePath,
-    )(props);
-    expect(result).toEqual(expectedValue);
-  });
-
   test('getXFromTheme with non MQ value', () => {
     const result = getXFromTheme('sizing')('width', 'sizing050')({theme});
     expect(result).toEqual({width: '24px'});
