@@ -21,6 +21,7 @@ import {
   SecondLevelCard as TheTimesSecondLevelCard,
   ThirdLevelCard as TheTimesThirdLevelCard,
 } from '../card-composable/__tests__/the-times-cards';
+import {defaultFocusVisible} from '../utils/default-focus-visible';
 
 const themeOverrides = {
   overrides: {
@@ -45,6 +46,7 @@ const themeOverrides = {
         hover: {
           color: '{{colors.interactiveLink020}}',
         },
+        'focus-visible': defaultFocusVisible,
       },
       ...stylePresetsTheSun,
     },
