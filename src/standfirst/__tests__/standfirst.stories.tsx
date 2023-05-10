@@ -4,8 +4,25 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Story as StoryType} from '@storybook/react';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
-import {getColorCssFromTheme, styled} from '../../utils/style';
+import {TextBlock} from '../../text-block';
+import {
+  getColorCssFromTheme,
+  styled,
+  getTypographyPresetFromTheme,
+} from '../../utils/style';
 
+const StyledContainer = styled.div`
+  ${getTypographyPresetFromTheme('utilitySubheading020')}
+`;
+
+const CONTENT = (
+  <TextBlock typographyPreset="utilitySubheading020">
+    NewsKit provides components, guidelines and standards to enable digital
+    product teams to create high-quality, consistent products quickly. NewsKit
+    is built on modular design principles and backed by best practice guidance
+    for design and development.
+  </TextBlock>
+);
 const standfirstCustomThemeObject: CreateThemeArgs = {
   name: 'my-custom-standfirst-theme',
   overrides: {
@@ -15,22 +32,10 @@ const standfirstCustomThemeObject: CreateThemeArgs = {
   },
 };
 
-const bodyString =
-  'NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development.';
-
 export const StoryDefault = () => (
   <StorybookPage columns="1fr">
     <StorybookCase>
-      <Standfirst
-        as="h2"
-        overrides={{
-          styledText: {
-            typographyPreset: 'utilitySubheading020',
-          },
-        }}
-      >
-        {bodyString}
-      </Standfirst>
+      <Standfirst as="h2">{CONTENT}</Standfirst>
     </StorybookCase>
   </StorybookPage>
 );
@@ -39,16 +44,7 @@ StoryDefault.storyName = 'Default';
 export const StoryWithAsSpan = () => (
   <StorybookPage columns="1fr">
     <StorybookCase>
-      <Standfirst
-        as="span"
-        overrides={{
-          styledText: {
-            typographyPreset: 'utilitySubheading020',
-          },
-        }}
-      >
-        {bodyString}
-      </Standfirst>
+      <Standfirst as="span">{CONTENT}</Standfirst>
     </StorybookCase>
   </StorybookPage>
 );
@@ -60,16 +56,14 @@ export const StoryLogicalProps = () => (
       <StorybookCase>
         <MarginOverridesWrapper>
           <Standfirst
-            as="span"
             overrides={{
               styledText: {
-                typographyPreset: 'utilitySubheading020',
                 paddingInline: '20px',
                 paddingBlock: '10px',
               },
             }}
           >
-            {bodyString}
+            {CONTENT}
           </Standfirst>
         </MarginOverridesWrapper>
       </StorybookCase>
@@ -83,15 +77,13 @@ export const StoryWithStylingOverrides = () => (
     <StorybookPage columns="1fr">
       <StorybookCase>
         <Standfirst
-          as="span"
           overrides={{
             styledText: {
-              typographyPreset: 'utilitySubheading020',
-              stylePreset: 'standfirstCustom',
+              stylePreset: 'inkBrand010',
             },
           }}
         >
-          {bodyString}
+          {CONTENT}
         </Standfirst>
       </StorybookCase>
     </StorybookPage>
@@ -111,7 +103,10 @@ export const StoryWithOverrides = () => (
             },
           }}
         >
-          {bodyString}
+          NewsKit provides components, guidelines and standards to enable
+          digital product teams to create high-quality, consistent products
+          quickly. NewsKit is built on modular design principles and backed by
+          best practice guidance for design and development.
         </Standfirst>
       </StorybookCase>
     </StorybookPage>
