@@ -76,6 +76,7 @@ export const CardVerticalTheSun: React.FC<MediaContextActionProps> = ({
     >
       <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
         <Headline
+          headingAs="h3"
           overrides={{
             typographyPreset: typographyPresetMap[size],
           }}
@@ -163,7 +164,7 @@ export const CardVerticalResponsive = () => (
     >
       <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
         <Headline
-          headingAs="h2"
+          headingAs="h3"
           overrides={{
             kicker: {
               stylePreset: 'inkBrand020',
@@ -275,6 +276,7 @@ export const CardHorizontalTheSun: React.FC<MediaContextActionProps> = ({
     >
       <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
         <Headline
+          headingAs="h3"
           overrides={{
             typographyPreset: typographyPresetMap[size],
           }}
@@ -374,6 +376,7 @@ export const CardHorizontalResponsive = () => (
     >
       <CardLink expand href={href} overrides={{stylePreset: 'linkTheSun'}}>
         <Headline
+          headingAs="h3"
           overrides={{
             typographyPreset: {
               xs: 'editorialHeadline020',

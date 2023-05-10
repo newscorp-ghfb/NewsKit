@@ -34,11 +34,15 @@ export const LeadCard = () => (
       overrides={{paddingBlockEnd: 'space020'}}
     >
       <Visible md lg xl>
-        <Divider />
+        <Divider overrides={{marginBlockEnd: 'space020'}} />
       </Visible>
       <CardLink expand href="/">
         <Headline
+          headingAs="h3"
           overrides={{
+            heading: {
+              stylePreset: 'cardHeadline',
+            },
             typographyPreset: 'editorialHeadline040',
           }}
         >
@@ -75,15 +79,23 @@ export const LeadCard = () => (
 
 export const SecondLevelCard = () => (
   <CardComposable
-    rowGap="space040"
+    rowGap={{xs: 'space040', lg: 'space000', xl: 'space040'}}
+    areas={`
+      media
+      content
+    `}
     overrides={{
       paddingBlockEnd: {xs: 'space020', lg: 'space000', xl: 'space020'},
     }}
   >
-    <CardContent rowGap="space040" alignContent="start">
+    <CardContent alignContent="start" rowGap="space040">
       <CardLink expand href="/">
         <Headline
+          headingAs="h3"
           overrides={{
+            heading: {
+              stylePreset: 'cardHeadline',
+            },
             typographyPreset: {
               xs: 'editorialHeadline010',
               md: 'editorialHeadline020',
@@ -115,7 +127,11 @@ export const ThirdLevelCard = () => (
     <CardContent rowGap="space040" alignContent="start" justifyItems="stretch">
       <CardLink expand href="/">
         <Headline
+          headingAs="h3"
           overrides={{
+            heading: {
+              stylePreset: 'cardHeadline',
+            },
             typographyPreset: {
               xs: 'editorialHeadline010',
               sm: 'editorialHeadline020',

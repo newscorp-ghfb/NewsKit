@@ -32,7 +32,26 @@ const themeOverrides = {
           borderWidth: '{{borders.borderWidthDefault}}',
         },
       },
+      cardHeadline: {
+        base: {
+          color: 'currentColor',
+        },
+      },
+      cardLink: {
+        base: {
+          textDecoration: 'none',
+          color: '{{colors.inkContrast}}',
+        },
+        hover: {
+          color: '{{colors.interactiveLink020}}',
+        },
+      },
       ...stylePresetsTheSun,
+    },
+    componentDefaults: {
+      cardLink: {
+        stylePreset: 'cardLink',
+      },
     },
   },
 };
@@ -202,6 +221,7 @@ export const TheTimesStory = () => {
       rowGap="space040"
     >
       <TitleBar
+        headingAs="h2"
         actionItem={button}
         overrides={{
           paddingInline: 'space000',
