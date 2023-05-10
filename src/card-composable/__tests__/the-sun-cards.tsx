@@ -1,6 +1,6 @@
 import React from 'react';
-import {toNewsKitIcon} from '../../../icons';
-import {GridLayout, GridLayoutItem} from '../../../grid-layout';
+import {toNewsKitIcon} from '../../icons';
+import {GridLayoutItem} from '../../grid-layout';
 import {Videocam as FilledVideocam} from '@emotion-icons/material/Videocam';
 import {Share as FilledShare} from '@emotion-icons/material/Share';
 import {
@@ -9,11 +9,11 @@ import {
   CardContent,
   CardLink,
   CardMedia,
-} from '../../card-composable';
-import {Flag} from '../../../flag';
-import {Headline} from '../../../headline';
-import {TextBlock} from '../../../text-block';
-import {Tag} from '../../../tag';
+} from '../card-composable';
+import {Flag} from '../../flag';
+import {Headline} from '../../headline';
+import {TextBlock} from '../../text-block';
+import {Tag} from '../../tag';
 // The Sun --- starts here
 const IconFilledVideoCam = toNewsKitIcon(FilledVideocam);
 const IconFilledShare = toNewsKitIcon(FilledShare);

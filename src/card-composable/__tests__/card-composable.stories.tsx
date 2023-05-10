@@ -8,18 +8,18 @@ import {
   CardContent,
   CardLink,
   CardMedia,
-} from '../../card-composable';
-import {Headline, HeadlineProps} from '../../../headline';
-import {CreateThemeArgs, ThemeProvider} from '../../../theme';
-import {createCustomThemeWithBaseThemeSwitch} from '../../../test/theme-select-object';
-import {Flag} from '../../../flag';
-import {StorybookCase, StorybookPage} from '../../../test/storybook-comps';
-import {Button} from '../../../button';
-import {UnorderedList} from '../../../unordered-list';
-import {TextBlock, TextBlockProps} from '../../../text-block';
-import {GridLayout} from '../../../grid-layout';
-import {Divider} from '../../../divider';
-import {Block} from '../../../block';
+} from '../card-composable';
+import {Headline, HeadlineProps} from '../../headline';
+import {CreateThemeArgs, ThemeProvider} from '../../theme';
+import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {Flag} from '../../flag';
+import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
+import {Button} from '../../button';
+import {UnorderedList} from '../../unordered-list';
+import {TextBlock, TextBlockProps} from '../../text-block';
+import {GridLayout} from '../../grid-layout';
+import {Divider} from '../../divider';
+import {Block} from '../../block';
 import {
   IconFilledStarOutline,
   IconFilledStar,
@@ -27,11 +27,11 @@ import {
   IconFilledAccountBalance,
   IconFilledAccountTree,
   IconFilledBookmarkBorder,
-} from '../../../icons';
-import {LinkInline} from '../../../link';
-import {Tag} from '../../../tag';
-import {VideoPlayer} from '../../../video-player';
-import {DEFAULT_VIDEO_PLAYER_CONFIG} from '../../../video-player/__tests__/config';
+} from '../../icons';
+import {LinkInline} from '../../link';
+import {Tag} from '../../tag';
+import {VideoPlayer} from '../../video-player';
+import {DEFAULT_VIDEO_PLAYER_CONFIG} from '../../video-player/__tests__/config';
 import {
   CardVerticalTheSun,
   CardHorizontalTheSun,
