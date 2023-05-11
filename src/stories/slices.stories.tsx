@@ -33,6 +33,11 @@ const themeOverrides = {
           borderWidth: '{{borders.borderWidthDefault}}',
         },
       },
+      cardContainer: {
+        base: {
+          backgroundColor: '{{colors.transparent}}',
+        },
+      },
       cardHeadline: {
         base: {
           color: 'currentColor',

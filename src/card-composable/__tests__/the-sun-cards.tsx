@@ -14,7 +14,7 @@ import {Flag} from '../../flag';
 import {Headline} from '../../headline';
 import {TextBlock} from '../../text-block';
 import {Tag} from '../../tag';
-// The Sun --- starts here
+import {defaultFocusVisible} from '../../utils/default-focus-visible';
 const IconFilledVideoCam = toNewsKitIcon(FilledVideocam);
 const IconFilledShare = toNewsKitIcon(FilledShare);
 
@@ -427,6 +427,7 @@ export const stylePresets = {
     hover: {
       textDecoration: 'none',
     },
+    'focus-visible': defaultFocusVisible,
   },
   cameraTag: {
     base: {
@@ -434,6 +435,7 @@ export const stylePresets = {
       color: '{{colors.inkBrand010}}',
       iconColor: '{{colors.inkBrand010}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   shareTag: {
     base: {
@@ -441,18 +443,19 @@ export const stylePresets = {
       color: '{{colors.inkBase}}',
       iconColor: '{{colors.inkBase}}',
     },
+    'focus-visible': defaultFocusVisible,
   },
   cardComposableVertical: {
     base: {
       borderStyle: 'solid',
-      borderColor: '#eaeeef',
+      borderColor: '{{colors.interface030}}',
       borderWidth: `{{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth010}} {{borders.borderWidth010}}`,
     },
   },
   cardComposableHorizontal: {
     base: {
       borderStyle: 'solid',
-      borderColor: '#eaeeef',
+      borderColor: '{{colors.interface030}}',
       borderWidth: `{{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth010}} {{borders.borderWidth000}}`,
     },
   },
