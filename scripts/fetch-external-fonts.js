@@ -7,6 +7,8 @@ const fetch = require('node-fetch');
 const fontCdnTheSun = 'https://www.thesun.co.uk/assets/fonts/the-sun';
 const fontCdnTheTimes = 'https://www.thetimes.co.uk/d/fonts';
 const fontCdnWSJ = 'https://www.wsj.com/fonts';
+const fontCdnDowJones =
+  'https://www.dowjones.com/wp-content/themes/dow-jones/assets/dist/fonts/';
 const fontDir = `${process.cwd()}/fonts/private-fonts`;
 
 const fonts = [
@@ -217,6 +219,30 @@ const fonts = [
     fileName: 'Exchange-MediumItalic',
     fontFamily: 'Exchange',
     sources: [`${fontCdnWSJ}/exchange/Exchange-MediumItalic.woff2`],
+  },
+  {
+    fontName: 'SimplonNorm-Regular',
+    fileName: 'SimplonNorm-Regular',
+    fontFamily: 'SimplonNorm',
+    sources: [`${fontCdnDowJones}/SimplonNorm-Regular.woff`],
+  },
+  {
+    fontName: 'SimplonNorm-Medium',
+    fileName: 'SimplonNorm-Medium',
+    fontFamily: 'SimplonNorm',
+    sources: [`${fontCdnDowJones}/SimplonNorm-Medium.woff`],
+  },
+  {
+    fontName: 'SimplonNorm-Light',
+    fileName: 'SimplonNorm-Light',
+    fontFamily: 'SimplonNorm',
+    sources: [`${fontCdnDowJones}/SimplonNorm-Light.woff`],
+  },
+  {
+    fontName: 'SimplonNorm-Bold',
+    fileName: 'SimplonNorm-Bold',
+    fontFamily: 'SimplonNorm',
+    sources: [`${fontCdnDowJones}/SimplonNorm-Bold.woff`],
   },
 ];
 

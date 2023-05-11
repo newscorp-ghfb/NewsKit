@@ -166,10 +166,36 @@ export default function Template({
           /* 
            -------------------------------
             DJ 
-            "fontFamily": "Simplon Norm"
-            
-            defined but not used, so not imported
           */
+
+          @font-face {
+            font-family: 'Simplon Norm';
+            src: url('static/fonts/private-fonts/SimplonNorm-Regular.woff'),
+            font-weight: normal;
+            font-style: normal;
+          }
+
+
+          @font-face {
+            font-family: 'Simplon Norm';
+            src: url('static/fonts/private-fonts/SimplonNorm-Light.woff');
+            font-style: normal;
+            font-weight: 300;
+          }
+
+          @font-face {
+            font-family: 'Simplon Norm';
+            src: url('static/fonts/private-fonts/SimplonNorm-Medium.woff');
+            font-style: normal;
+            font-weight: 500;
+          }
+
+          @font-face {
+            font-family: 'Simplon Norm';
+            src: url('static/fonts/private-fonts/SimplonNorm-Bold.woff');
+            font-weight: 700;
+            font-style: normal;
+          }
 
           /* 
             -------------------------------
