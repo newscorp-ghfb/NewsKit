@@ -215,7 +215,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 400;
-            font-display: optional;
           }
 
           @font-face {
@@ -224,7 +223,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 400;
-            font-display: optional;
           }
 
           @font-face {
@@ -233,7 +231,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 300;
-            font-display: optional;
           }
 
           @font-face {
@@ -242,7 +239,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 300;
-            font-display: optional;
           }
 
           @font-face {
@@ -251,7 +247,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 500;
-            font-display: optional;
           }
 
           @font-face {
@@ -260,7 +255,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 500;
-            font-display: optional;
           }
 
           @font-face {
@@ -269,7 +263,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 300;
-            font-display: optional;
           }
 
           @font-face {
@@ -278,7 +271,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 300;
-            font-display: optional;
           }
 
           @font-face {
@@ -287,7 +279,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 400;
-            font-display: optional;
           }
 
           @font-face {
@@ -296,7 +287,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 400;
-            font-display: optional;
           }
 
           @font-face {
@@ -305,7 +295,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 500;
-            font-display: optional;
           }
 
           @font-face {
@@ -314,7 +303,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 500;
-            font-display: optional;
           }
 
           @font-face {
@@ -323,7 +311,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 700;
-            font-display: optional;
           }
 
           @font-face {
@@ -332,7 +319,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 700;
-            font-display: optional;
           }
 
           @font-face {
@@ -341,7 +327,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 700;
-            font-display: optional;
           }
 
           @font-face {
@@ -350,7 +335,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 700;
-            font-display: optional;
           }
 
           @font-face {
@@ -359,7 +343,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 400;
-            font-display: optional;
           }
 
           @font-face {
@@ -368,7 +351,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 400;
-            font-display: optional;
           }
 
           @font-face {
@@ -377,7 +359,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 400;
-            font-display: optional;
           }
 
           @font-face {
@@ -386,7 +367,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 400;
-            font-display: optional;
           }
 
           @font-face {
@@ -395,7 +375,6 @@ export default function Template({
               format('woff2');
             font-style: normal;
             font-weight: 500;
-            font-display: optional;
           }
 
           @font-face {
@@ -404,7 +383,6 @@ export default function Template({
               format('woff2');
             font-style: italic;
             font-weight: 500;
-            font-display: optional;
           }
         `}
       />
