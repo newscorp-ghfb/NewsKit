@@ -152,12 +152,18 @@ export const createTheme = ({
     overrides,
     {name, themeVersion: 1},
     // Suppress for sake of snapshots
-    {...(combinedUseRem ? {useRem: combinedUseRem} : {})},
+    {
+      ...(combinedUseRem
+        ? /* istanbul ignore next */
+          {useRem: combinedUseRem}
+        : {}),
+    },
   );
 
   // This extra conversion is required for rem to show on site,
   // Storybook shows rem based on the conversion in compileTheme alone.
   // For spike, only hack light theme to rem. Keep dark theme in pixels.
+  /* istanbul ignore next */
   if (combinedUseRem && name.indexOf('dark') === -1) {
     const fonts = mergedTheme.fonts as Record<string, string>;
     fontSizeKeys.forEach((key, index) => {

@@ -29,7 +29,6 @@ export const compileTheme = (
     icons,
     compiled: true,
     // Suppress for sake of snapshots
-    /* istanbul ignore next */
-    ...(theme.useRem ? {useRem: theme.useRem} : {}),
+    ...(theme.useRem ? /* istanbul ignore next */ {useRem: theme.useRem} : {}),
   };
 };
