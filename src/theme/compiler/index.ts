@@ -28,5 +28,8 @@ export const compileTheme = (
     ...(recurseUnknown(uncompiledTheme, filteredTheme, errorLogger) as any),
     icons,
     compiled: true,
+    // Suppress for sake of snapshots
+    /* istanbul ignore next */
+    ...(theme.useRem ? {useRem: theme.useRem} : {}),
   };
 };

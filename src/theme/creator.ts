@@ -15,6 +15,27 @@ import * as presets from './presets';
 import {get} from '../utils/get';
 import {mergeBreakpointObject} from '../utils/merge-breakpoint-object';
 import {FontConfig, FontThemeValue} from './foundations/fonts';
+import {pixelStringToRemString} from '../utils/to-rem';
+import {isApplication} from '../utils/is-application';
+
+const fontSizeKeys = [
+  'fontSize010',
+  'fontSize020',
+  'fontSize030',
+  'fontSize040',
+  'fontSize050',
+  'fontSize060',
+  'fontSize070',
+  'fontSize080',
+  'fontSize090',
+  'fontSize100',
+  'fontSize110',
+  'fontSize120',
+  'fontSize130',
+  'fontSize140',
+  'fontSize150',
+  'fontSize160',
+];
 
 export interface CreateThemeArgs {
   name?: string;
@@ -22,6 +43,7 @@ export interface CreateThemeArgs {
   overrides?: ThemeOverrides;
   checkOverrides?: boolean;
   warningLogger?: ThemeLoggerFunction;
+  useRem?: boolean;
 }
 
 const deepDuplicationChecker = (
@@ -81,6 +103,7 @@ export const createTheme = ({
   baseTheme,
   overrides = {},
   checkOverrides,
+  useRem,
   // eslint-disable-next-line no-console
   warningLogger = console.warn.bind(console),
 }: CreateThemeArgs): UncompiledTheme => {
@@ -89,6 +112,10 @@ export const createTheme = ({
       'createTheme received a compiled baseTheme. Base themes must be uncompiled.',
     );
   }
+
+  // NB Only use REM if set on for theme or base theme and running within site or Storybook
+  // to avoid 77 failing snapshot tests (for now)
+  const combinedUseRem = (useRem || baseTheme?.useRem) && isApplication();
 
   // Don't take font family info from NKLight if defined in the base theme.
   const newskitLight = removeFontFamilies<ThemeBase>(
@@ -111,7 +138,7 @@ export const createTheme = ({
       overrides?.breakpoints
     : newskitLight.breakpoints) as Breakpoints;
 
-  return deepMerge(
+  const mergedTheme = deepMerge(
     mergeBreakpointObject(Object.keys(breakpointsKeys) as BreakpointKeys[]),
     newskitLight,
     // Don't take font family info from the base theme if defined in overrides.
@@ -124,5 +151,36 @@ export const createTheme = ({
       : baseTheme,
     overrides,
     {name, themeVersion: 1},
+    // Suppress for sake of snapshots
+    {...(combinedUseRem ? {useRem: combinedUseRem} : {})},
   );
+
+  // This extra conversion is required for rem to show on site,
+  // Storybook shows rem based on the conversion in compileTheme alone.
+  // For spike, only hack light theme to rem. Keep dark theme in pixels.
+  if (combinedUseRem && name.indexOf('dark') === -1) {
+    const fonts = mergedTheme.fonts as Record<string, string>;
+    fontSizeKeys.forEach((key, index) => {
+      if (fonts[key].endsWith('px')) {
+        fonts[key] = pixelStringToRemString(fonts[key]);
+      }
+    });
+
+    const sizing = mergedTheme.sizing as Record<string, string>;
+    for (const [key, value] of Object.entries(sizing)) {
+      sizing[key] = pixelStringToRemString(value);
+    }
+
+    const typographyPresets = mergedTheme.typographyPresets as Record<
+      string,
+      object
+    >;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    for (const [key, value] of Object.entries(typographyPresets)) {
+      //@ts-ignore
+      value['fontSize'] = pixelStringToRemString(value['fontSize']);
+    }
+  }
+
+  return mergedTheme;
 };

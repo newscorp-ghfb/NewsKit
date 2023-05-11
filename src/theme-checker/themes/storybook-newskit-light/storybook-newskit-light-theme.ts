@@ -6,4 +6,5 @@ export const storybookNewskitLightTheme = createTheme({
   name: 'storybook-newskit-light',
   baseTheme: newskitLightTheme,
   overrides: {colors},
+  useRem: true,
 });

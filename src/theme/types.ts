@@ -41,10 +41,12 @@ interface ThemeIdentifier {
 
 export interface UncompiledTheme extends ThemeBase, ThemeIdentifier {
   compiled?: false;
+  useRem?: boolean;
 }
 
 export interface Theme extends ThemeBase, ThemeIdentifier {
   compiled: true;
+  useRem?: boolean;
 }
 
 export type ThemeLoggerFunction = (message: string) => void;

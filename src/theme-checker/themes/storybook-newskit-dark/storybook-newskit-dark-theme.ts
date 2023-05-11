@@ -6,4 +6,5 @@ export const storybookNewskitDarkTheme = createTheme({
   name: 'storybook-newskit-dark',
   baseTheme: newskitDarkTheme,
   overrides: {colors},
+  useRem: false,
 });

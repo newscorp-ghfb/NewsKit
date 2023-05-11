@@ -51,6 +51,8 @@ Object.assign(fonts.fontFamily030, {
   },
 });
 
+// NB For the purposes of this spike, setting useRem to true for light themes and false for dark themes.
+
 // We only need to add fontMetrics into the light theme - all other themes come from this
 
 export const docsThemeLight = createTheme({
@@ -62,6 +64,7 @@ export const docsThemeLight = createTheme({
     stylePresets,
     componentDefaults,
   },
+  useRem: true,
 });
 
 export const docsThemeDark = createTheme({
@@ -74,6 +77,7 @@ export const docsThemeDark = createTheme({
       safariOutlineStyleDefault: 'solid',
     },
   },
+  useRem: false,
 });
 
 export const foundationsThemeLight = createTheme({
@@ -83,6 +87,7 @@ export const foundationsThemeLight = createTheme({
     ...documentationLightFoundations,
     fonts,
   },
+  useRem: true,
 });
 
 export const foundationsThemeDark = createTheme({
@@ -92,6 +97,7 @@ export const foundationsThemeDark = createTheme({
     ...documentationDarkFoundations,
     fonts,
   },
+  useRem: false,
 });
 
 export const accessibilityThemeLight = createTheme({
@@ -101,12 +107,14 @@ export const accessibilityThemeLight = createTheme({
     ...documentationLightAccessibility,
     fonts,
   },
+  useRem: true,
 });
 
 export const accessibilityThemeDark = createTheme({
   name: 'docs-accessibility-dark',
   baseTheme: docsThemeDark,
   overrides: {...documentationDarkAccessibility, fonts},
+  useRem: false,
 });
 
 export const patternsThemeLight = createTheme({
@@ -116,6 +124,7 @@ export const patternsThemeLight = createTheme({
     ...documentationLightPatterns,
     fonts,
   },
+  useRem: true,
 });
 
 export const patternsThemeDark = createTheme({
@@ -125,4 +134,5 @@ export const patternsThemeDark = createTheme({
     ...documentationDarkPatterns,
     fonts,
   },
+  useRem: false,
 });

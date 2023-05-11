@@ -101,4 +101,5 @@ export const newskitDarkThemeOverrides = {
 export const newskitDarkTheme = createTheme({
   name: 'newskit-dark',
   overrides: newskitDarkThemeOverrides,
+  useRem: false,
 });
