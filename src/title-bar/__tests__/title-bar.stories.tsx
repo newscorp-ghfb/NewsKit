@@ -1,10 +1,8 @@
 import * as React from 'react';
-import {createTheme, ThemeProvider} from '../../theme';
+import {ThemeProvider} from '../../theme';
 import {TitleBar} from '..';
 import {Button} from '../../button';
 import {LinkStandalone} from '../../link';
-import {Divider} from '../../divider';
-import {Stack} from '../../stack';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {IconFilledStarOutline} from '../../icons';
 import {getColorCssFromTheme, styled} from '../../utils/style';
