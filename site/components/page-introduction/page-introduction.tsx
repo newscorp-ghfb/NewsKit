@@ -10,6 +10,8 @@ const heroIsImage = (hero: PageIntroductionProps['hero']): hero is ImageProps =>
   Boolean(hero && (hero as any).src);
 
 export const PageIntroduction: React.FC<PageIntroductionProps> = ({
+  nameAs = 'h1',
+  introductionAs, // eg 'h2'
   type,
   name,
   introduction,
@@ -31,7 +33,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
       </Block>
       <Block spaceStack={{xs: 'space050', md: 'space070'}}>
         <TextBlock
-          as="h1"
+          as={nameAs}
           stylePreset="inkContrast"
           typographyPreset={{
             xs: 'editorialHeadline060',
@@ -46,6 +48,7 @@ export const PageIntroduction: React.FC<PageIntroductionProps> = ({
     <ComponentPageCellCompact>
       <Block spaceStack={{xs: 'space070', md: 'space080'}}>
         <TextBlock
+          as={introductionAs}
           stylePreset="inkBase"
           typographyPreset={{
             xs: 'editorialSubheadline010',
