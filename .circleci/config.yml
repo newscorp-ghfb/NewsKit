@@ -1075,8 +1075,8 @@ workflows:
   pull_request:
     when:
       matches:
-        # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
-        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*|^snyk-upgrade.*'
+        # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, spike, etc.
+        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|spike\/.*|^dependabot\/.*|^snyk-upgrade.*'
         value: << pipeline.git.branch >>
     jobs:
       - install_deps
@@ -1277,8 +1277,8 @@ workflows:
   pull_request_codemod:
     when:
       matches:
-        # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, etc.
-        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|^dependabot\/.*|^snyk-upgrade.*'
+        # Supporting Pr branches starting with feat/, docs/, fix/, chore/, style/, refactor/, perf/, test/, spike/, etc.
+        pattern: '^build\/.*|chore\/.*|ci\/.*|docs\/.*|feat\/.*|fix\/.*|improvement\/.*|perf\/.*|refactor\/.*|revert.*\/.*|style\/.*|test\/.*|spike\/.*|^dependabot\/.*|^snyk-upgrade.*'
         value: << pipeline.git.branch >>
     jobs:
       - install_deps_codemod:
