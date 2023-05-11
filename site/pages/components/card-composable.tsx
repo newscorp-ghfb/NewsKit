@@ -6,7 +6,7 @@ import {ComponentPageTemplate} from '../../templates/component-page-template/com
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
 import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
-import {UnorderedList} from 'newskit';
+import {UnorderedList, InlineMessage, LinkInline} from 'newskit';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
 
@@ -225,7 +225,6 @@ const DividerComponent = (layoutProps: LayoutProps) => (
                 typographyPreset: 'editorialParagraph030',
               },
               marginBlockStart: 'space050',
-              marginBlockEnd: 'space090',
             }}
           >
             <>Use list markup to group your cards</>
@@ -252,6 +251,16 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               screen-reader users get the context before the image alt tag
             </>
             <>A video: If a video is provided, ensure the following</>
+          </UnorderedList>
+          <UnorderedList
+            markerAlign="start"
+            overrides={{
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+              marginInlineStart: 'space050',
+            }}
+          >
             <>
               The video{' '}
               <Link href="https://bbc.github.io/gel/components/cards/#fn3">
@@ -263,6 +272,15 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               and keyboard
             </>
             <>Dialogue in the video is accompanied by closed captions</>
+          </UnorderedList>
+          <UnorderedList
+            markerAlign="start"
+            overrides={{
+              content: {
+                typographyPreset: 'editorialParagraph030',
+              },
+            }}
+          >
             <>
               It&apos;s not recommended to nest interactive elements like a
               button inside a link, or a link inside a button and so on
@@ -466,6 +484,23 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             },
             ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
+          propsFooter: (
+            <>
+              <InlineMessage
+                role="region"
+                aria-label="LinkStandalone info"
+                overrides={{
+                  marginBlockStart: 'space030',
+                }}
+              >
+                Please refer to the component,{' '}
+                <Link href="https://www.newskit.co.uk/components/grid-layout/">
+                  grid layout
+                </Link>{' '}
+                and any elements passed to the zones of the card.
+              </InlineMessage>
+            </>
+          ),
         },
         {
           title: 'CardContent',
