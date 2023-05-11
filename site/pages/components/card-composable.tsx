@@ -8,6 +8,7 @@ import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {UnorderedList} from 'newskit';
 import {Link} from '../../components/link';
+import {InlineCode} from '../../components/markdown-elements';
 
 const DividerComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
@@ -49,7 +50,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           name: 'CardLink',
           description:
             'Wrapper for links passed to the card, such as a headline. This can be used multiple times to create multiple links inside the card.',
-          component: ['Link Standalone'],
+          component: ['Link'],
           optional: true,
         },
         {
@@ -80,8 +81,12 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       cards: [
         {
           title: 'Card as a link',
-          description:
-            'A part or the whole card can be a link by using the //expand// prop.',
+          description: (
+            <>
+              A part or the whole card can be a link by using the{' '}
+              <InlineCode>expand</InlineCode>.
+            </>
+          ),
           media: getIllustrationComponent(
             'components/card-composable/options/expand',
           ),
@@ -263,8 +268,8 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               button inside a link, or a link inside a button and so on
             </>
             <>
-              Don&apos;t wrap the whole card in a Link, use //expand//prop to
-              make it look like it
+              Don&apos;t wrap the whole card in a Link, use the{' '}
+              <InlineCode>expand</InlineCode> to make it interactive
             </>
           </UnorderedList>
         </>
@@ -298,7 +303,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             attribute: 'alt',
             value: 'string',
             description:
-              'Image alt text, if the image is not decorative. Alt text needs to be different from the card title.',
+              'Image alt text, if the image is not decorative. Alt text needs to be different from the card title',
             userSupplied: true,
           },
         ],
