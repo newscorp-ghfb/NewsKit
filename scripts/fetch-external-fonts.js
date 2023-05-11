@@ -174,51 +174,55 @@ const fonts = [
     fontName: 'Escrow+Display+Condensed+Bold',
     fileName: 'Escrow+Display+Condensed+Bold',
     fontFamily: 'Escrow Condensed',
-    sources: [`${fontCdnWSJ}/escrow/Escrow+Display+Condensed+Bold.woff2`],
+    sources: [`${fontCdnWSJ}/woffs/escrow/Escrow+Display+Condensed+Bold.woff2`],
   },
   {
     fontName: 'Escrow+Display+Condensed+Bold+Italic',
     fileName: 'Escrow+Display+Condensed+Bold+Italic',
     fontFamily: 'Escrow Condensed',
     sources: [
-      `${fontCdnWSJ}/escrow/Escrow+Display+Condensed+Bold+Italic.woff2`,
+      `${fontCdnWSJ}/woffs/escrow/Escrow+Display+Condensed+Bold+Italic.woff2`,
     ],
   },
   {
     fontName: 'Escrow+Display+Condensed+Roman',
     fileName: 'Escrow+Display+Condensed+Roman',
     fontFamily: 'Escrow Condensed',
-    sources: [`${fontCdnWSJ}/escrow/Escrow+Display+Condensed+Roman.woff2`],
+    sources: [
+      `${fontCdnWSJ}/woffs/escrow/Escrow+Display+Condensed+Roman.woff2`,
+    ],
   },
   {
     fontName: 'Escrow+Display+Condensed+Italic',
     fileName: 'Escrow+Display+Condensed+Italic',
     fontFamily: 'Escrow Condensed',
-    sources: [`${fontCdnWSJ}/escrow/Escrow+Display+Condensed+Italic.woff2`],
+    sources: [
+      `${fontCdnWSJ}/woffs/escrow/Escrow+Display+Condensed+Italic.woff2`,
+    ],
   },
   {
     fontName: 'Exchange-Book',
     fileName: 'Exchange-Book',
     fontFamily: 'Exchange',
-    sources: [`${fontCdnWSJ}/exchange/Exchange-Book.woff2`],
+    sources: [`${fontCdnWSJ}/woffs/exchange/Exchange-Book.woff2`],
   },
   {
     fontName: 'Exchange-BookItalic',
     fileName: 'Exchange-BookItalic',
     fontFamily: 'Exchange',
-    sources: [`${fontCdnWSJ}/exchange/Exchange-BookItalic.woff2`],
+    sources: [`${fontCdnWSJ}/woffs/exchange/Exchange-BookItalic.woff2`],
   },
   {
     fontName: 'Exchange-Medium',
     fileName: 'Exchange-Medium',
     fontFamily: 'Exchange',
-    sources: [`${fontCdnWSJ}/exchange/Exchange-Medium.woff2`],
+    sources: [`${fontCdnWSJ}/woffs/exchange/Exchange-Medium.woff2`],
   },
   {
     fontName: 'Exchange-MediumItalic',
     fileName: 'Exchange-MediumItalic',
     fontFamily: 'Exchange',
-    sources: [`${fontCdnWSJ}/exchange/Exchange-MediumItalic.woff2`],
+    sources: [`${fontCdnWSJ}/woffs/exchange/Exchange-MediumItalic.woff2`],
   },
   {
     fontName: 'SimplonNorm-Regular',
@@ -263,13 +267,14 @@ mkdirp(fontDir).then(() =>
   Promise.all(
     ...fonts.map(({sources, fileName}) =>
       sources.map(source => {
+        console.log(source);
         const extension = path.extname(source);
         const dest = `${fontDir}/${fileName}${extension}`;
 
-        if (!fs.existsSync(dest)) {
-          return download(source, dest);
-        }
-        return Promise.resolve();
+        //if (!fs.existsSync(dest)) {
+        return download(source, dest);
+        //}
+        //return Promise.resolve();
       }),
     ),
   ),
