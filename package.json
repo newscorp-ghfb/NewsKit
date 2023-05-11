@@ -249,7 +249,7 @@
     "@emotion-icons/material": "3.9.0",
     "@emotion-icons/material-outlined": "3.8.0",
     "@floating-ui/react-dom-interactions": "^0.6.0",
-    "@newskit-themes/dow-jones": "^0.0.0-1c3e3b051",
+    "@newskit-themes/dow-jones": "0.0.0-b863651f4",
     "@newskit-themes/market-watch": "^0.0.0",
     "@newskit-themes/newskit-website": "1.0.2",
     "@newskit-themes/the-sun": "^0.2.0",
