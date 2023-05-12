@@ -43,21 +43,21 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         {
           name: 'CardComposable',
           description: 'Wrapper for the areas of the card',
-          component: ['Grid Layout'],
+          component: 'Grid Layout',
           optional: undefined,
         },
         {
           name: 'CardLink',
           description:
             'Wrapper for links passed to the card, such as a headline. This can be used multiple times to create multiple links inside the card.',
-          component: ['Link'],
+          component: 'Link',
           optional: true,
         },
         {
           name: 'CardContent',
           description:
             'Area for content, such as a headline, paragraph text, or flags',
-          component: ['Grid Layout'],
+          component: 'Grid Layout',
           optional: true,
         },
         {
@@ -70,7 +70,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           name: 'CardActions',
           description:
             'Area for additional interactive components, such as links or tags',
-          component: ['Grid Layout'],
+          component: 'Grid Layout',
           optional: true,
         },
       ],
@@ -494,10 +494,8 @@ const DividerComponent = (layoutProps: LayoutProps) => (
                 }}
               >
                 Please refer to the component,{' '}
-                <Link href="https://www.newskit.co.uk/components/grid-layout/">
-                  grid layout
-                </Link>{' '}
-                and any elements passed to the zones of the card.
+                <Link href="grid-layout/">grid layout</Link> and any elements
+                passed to the zones of the card.
               </InlineMessage>
             </>
           ),
