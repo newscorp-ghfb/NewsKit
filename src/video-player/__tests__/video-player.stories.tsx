@@ -127,7 +127,6 @@ export const StoryVideoPlayerDefault = () => {
   );
 };
 StoryVideoPlayerDefault.storyName = 'Default';
-StoryVideoPlayerDefault.parameters = {percy: {waitForSelector}};
 
 export const StoryVideoPlayerPlaylist = () => {
   const videoRef = React.useRef<HTMLVideoElement>(null);
@@ -145,7 +144,6 @@ export const StoryVideoPlayerPlaylist = () => {
   );
 };
 StoryVideoPlayerPlaylist.storyName = 'Playlist';
-StoryVideoPlayerPlaylist.parameters = {percy: {waitForSelector}};
 
 export const StoryVideoPlayerOverrides = () => (
   <StorybookPage>
@@ -268,7 +266,6 @@ export const StoryVideoPlayerOverrides = () => (
   </StorybookPage>
 );
 StoryVideoPlayerOverrides.storyName = 'Overrides';
-StoryVideoPlayerOverrides.parameters = {percy: {waitForSelector}};
 
 export default {
   title: 'Components/Video Player',
@@ -284,6 +281,9 @@ export default {
       url: 'https://newskit.co.uk/components/video-player',
       description:
         'The video player component wraps the <a href="https://player.support.brightcove.com/getting-started/index.html">Brightcove player</a> in NewsKit themes.',
+    },
+    percy: {
+      waitForSelector: '.vjs-poster img',
     },
   },
   decorators: [

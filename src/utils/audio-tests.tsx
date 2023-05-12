@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 
 import * as React from 'react';
-import {ComponentType, useEffect, useState} from 'react';
+import {ComponentType, useEffect, useCallback, useState} from 'react';
 import {AudioPlayerComposableProps} from '../audio-player-composable/types';
 import {AudioPlayerProps} from '../audio-player';
 import {isVisualTest} from '../test/test-utils';
@@ -21,7 +21,11 @@ type Component =
 // of players in a story, and conditionally render the element when all are loaded.
 export const useAllPlayersCanPlayCheck = (nbPlayers: number) => {
   const [nbLoaded, setNbLoaded] = useState<number>(0);
-  const onCanPlay = () => setNbLoaded(latest => latest + 1);
+  //const [allPlayersCanPlay, allPlayersCanPlay] => useState<boolean>(false);
+
+  const onCanPlay = useCallback(() => setNbLoaded(latest => latest + 1), [
+    setNbLoaded,
+  ]);
   return {
     allPlayersCanPlay: nbLoaded >= nbPlayers || !isVisualTest,
     onCanPlay,
