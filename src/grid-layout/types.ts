@@ -11,8 +11,7 @@ export type GridLayoutItemProps = BlockProps & {
   alignSelf?: MQ<string>;
   column?: MQ<string>;
   row?: MQ<string>;
-} & ContainerQueryProps &
-  React.HTMLAttributes<HTMLElement>;
+} & React.HTMLAttributes<HTMLElement>;
 
 export type AreasMap = {
   [componentName: string]: React.FC<GridLayoutItemProps>;

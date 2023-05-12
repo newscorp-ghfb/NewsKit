@@ -225,11 +225,6 @@ export const isValidUnit = (themeKey: string, value: any) => {
   );
 };
 
-export const isValidCSSSizeUnit = (value: string) => {
-  const regex = new RegExp(`^\\d+(\\.\\d+)?(${CSSUnits.join('|')})$`);
-  return regex.test(value);
-};
-
 export const isArrayLikeObject = (value: string | object) =>
   typeof value === 'object' && '0' in value;
 

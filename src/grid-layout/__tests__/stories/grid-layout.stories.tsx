@@ -19,18 +19,6 @@ const BigRedBlock = styled(Block)`
   background: red;
 `;
 
-const QueryContainerSmall = styled(Block)`
-  width: 200px;
-  container-type: inline-size;
-  container-name: grid-container;
-`;
-
-const QueryContainerLarge = styled(Block)`
-  width: 400px;
-  container-type: inline-size;
-  container-name: grid-container;
-`;
-
 export const StoryResponsiveExample = () => (
   <>
     <StorybookSubHeading>Responsive grid with mixed sizing</StorybookSubHeading>

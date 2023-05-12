@@ -52,17 +52,3 @@ export const isResponsive = (
   typeof prop === 'object' &&
   (Object.keys(breakpoints).some(bp => prop && hasOwnProperty(prop, bp)) ||
     hasOwnProperty(prop, 'rules'));
-
-// export const getContainerQuery = (
-//   minWidth?: string,
-//   maxWidth?: string,
-// ): string => {
-//   const queries = [];
-//   if (minWidth) {
-//     queries.push(`(min-width: ${minWidth})`);
-//   }
-//   if (maxWidth) {
-//     queries.push(`(max-width: ${maxWidth})`);
-//   }
-//   return `@container ${queries.join(' AND ')}`;
-// };
