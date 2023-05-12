@@ -62,12 +62,14 @@ export const StoryTitleBarLink = () => (
         <TitleBar actionItem={button}>{STRING}</TitleBar>
       </StorybookCase>
       <StorybookCase title="Icon">
-        <IconContainer>
-          <TitleBar>{STRING}</TitleBar>
-          <IconFilledStarOutline
-            overrides={{size: 'iconSize020', marginInlineEnd: 'space030'}}
-          />
-        </IconContainer>
+        <TitleBar>
+          <IconContainer>
+            {STRING}
+            <IconFilledStarOutline
+              overrides={{size: 'iconSize020', marginInlineStart: 'space030'}}
+            />
+          </IconContainer>
+        </TitleBar>
       </StorybookCase>
       <StorybookCase title="Action hidden in SM and MD">
         <TitleBar hideActionItemOn={{sm: true, md: true}} actionItem={button}>
