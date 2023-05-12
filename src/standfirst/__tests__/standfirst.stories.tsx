@@ -19,7 +19,7 @@ const CONTENT = (
 export const StoryDefault = () => (
   <StorybookPage columns="1fr">
     <StorybookCase>
-      <Standfirst as="h2">{CONTENT}</Standfirst>
+      <Standfirst>{CONTENT}</Standfirst>
     </StorybookCase>
   </StorybookPage>
 );
