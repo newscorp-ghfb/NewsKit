@@ -12,6 +12,10 @@ import {TextBlock} from '../../text-block';
 
 const link = () => <LinkStandalone href="/">Link</LinkStandalone>;
 const button = () => <Button>Default button</Button>;
+const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 const STRING = (
   <TextBlock typographyPreset="editorialHeadline050">Title content</TextBlock>
@@ -58,10 +62,12 @@ export const StoryTitleBarLink = () => (
         <TitleBar actionItem={button}>{STRING}</TitleBar>
       </StorybookCase>
       <StorybookCase title="Icon">
-        <TitleBar>
-          {STRING}
-          <IconFilledStarOutline height="30px" />
-        </TitleBar>
+        <IconContainer>
+          <TitleBar>{STRING}</TitleBar>
+          <IconFilledStarOutline
+            overrides={{size: 'iconSize020', marginInlineEnd: 'space030'}}
+          />
+        </IconContainer>
       </StorybookCase>
       <StorybookCase title="Action hidden in SM and MD">
         <TitleBar hideActionItemOn={{sm: true, md: true}} actionItem={button}>
