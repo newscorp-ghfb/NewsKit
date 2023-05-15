@@ -30,6 +30,14 @@ const dependenciesNotToBeIncluded = [
   'globby',
   '@newskit-themes/newskit-website',
   '@newskit-themes/the-sun',
+  '@capsizecss/metrics',
+  '@types/blob-to-buffer',
+  '@types/fontkit',
+  'blob-to-buffer',
+  'cross-fetch',
+  'detect-font',
+  'fontkit',
+  'match-sorter',
 ];
 
 const filterPackageJson = () => {
