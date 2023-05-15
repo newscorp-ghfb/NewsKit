@@ -7,14 +7,8 @@ import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {TextBlock} from '../../text-block';
 import {getColorCssFromTheme, styled} from '../../utils/style';
 
-const CONTENT = (
-  <TextBlock typographyPreset="utilitySubheading020">
-    NewsKit provides components, guidelines and standards to enable digital
-    product teams to create high-quality, consistent products quickly. NewsKit
-    is built on modular design principles and backed by best practice guidance
-    for design and development.
-  </TextBlock>
-);
+const CONTENT =
+  'NewsKit provides components, guidelines and standards to enable digital product teams to create high-quality, consistent products quickly. NewsKit is built on modular design principles and backed by best practice guidance for design and development.';
 
 export const StoryDefault = () => (
   <StorybookPage columns="1fr">
