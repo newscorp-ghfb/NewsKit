@@ -154,24 +154,6 @@ commands:
             export TF_LOG_PATH="./terraform-debug.log"
             terraform init << parameters.terraform_arg >>
 
-  # Deprecated by terraform_init_oidc
-  terraform_init:
-    description: Run Terraform Init
-    parameters:
-      package:
-        type: string
-      terraform_arg:
-        description: provide terraform arguments
-        type: string
-        default: ''
-    steps:
-      - run:
-          name: Terraform init
-          command: |
-            source $BASH_ENV
-            cd terraform/<< parameters.package >>
-            terraform init << parameters.terraform_arg >>
-
   terraform_plan_oidc:
     description: Run Terraform Plan
     parameters:
@@ -210,24 +192,6 @@ commands:
             cd terraform/<< parameters.package >>
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
-            terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
-
-  # Deprecated by terraform_plan_oidc
-  terraform_plan:
-    description: Run Terraform Plan
-    parameters:
-      package:
-        type: string
-      terraform_arg:
-        description: provide terraform arguments
-        type: string
-        default: ''
-    steps:
-      - run:
-          name: Terraform plan
-          command: |
-            source $BASH_ENV
-            cd terraform/<< parameters.package >>
             terraform plan -out=tfplan -input=false << parameters.terraform_arg >>
 
   terraform_apply_oidc:
@@ -269,77 +233,6 @@ commands:
             export TF_LOG="TRACE"
             export TF_LOG_PATH="./terraform-debug.log"
             terraform apply -lock=false -input=false tfplan
-
-  # Deprecated by terraform_apply_oidc
-  terraform_apply:
-    description: Run Terraform Apply
-    parameters:
-      package:
-        type: string
-    steps:
-      - run:
-          name: Terraform apply
-          command: |
-            source $BASH_ENV
-            cd terraform/<< parameters.package >>
-            terraform apply -auto-approve -lock=false -input=false tfplan
-
-  aws_assume_role:
-    description: Assume AWS role
-    parameters:
-      aws_access_key_id:
-        description: AWS Access Key Id
-        type: string
-        default: '${AWS_ACCESS_KEY_ID}'
-      aws_secret_key:
-        description: AWS Secret Key
-        type: string
-        default: '${AWS_SECRET_ACCESS_KEY}'
-      aws_assume_role_arn:
-        description: AWS ARN For Assume Role
-        type: string
-        default: '${AWS_ASSUME_ROLE_ARN}'
-      job_type:
-        description: The job type to be used
-        type: string
-        default: 'default'
-    steps:
-      - run:
-          name: Assume role
-          command: |
-            export AWS_ACCESS_KEY_ID=<< parameters.aws_access_key_id >>
-            export AWS_SECRET_ACCESS_KEY=<< parameters.aws_secret_key >>
-            export temp_role=$(aws sts assume-role \
-                    --role-arn "<< parameters.aws_assume_role_arn >>" \
-                    --role-session-name "circle-ci-assume")
-            export AWS_ACCESS_KEY_ID_TEMP=$(echo $temp_role | jq .Credentials.AccessKeyId | xargs)
-            export AWS_SECRET_ACCESS_KEY_TEMP=$(echo $temp_role | jq .Credentials.SecretAccessKey | xargs)
-            export AWS_SESSION_TOKEN_TEMP=$(echo $temp_role | jq .Credentials.SessionToken | xargs)
-            echo "export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID_TEMP" >> $BASH_ENV
-            echo "export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY_TEMP" >> $BASH_ENV
-            echo "export AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN_TEMP" >> $BASH_ENV
-            source $BASH_ENV
-            cat $BASH_ENV | grep AWS_ACCESS_KEY_ID >> assume_role_creds_<< parameters.job_type >>.txt
-            cat $BASH_ENV | grep AWS_SECRET_ACCESS_KEY >> assume_role_creds_<< parameters.job_type >>.txt
-            cat $BASH_ENV | grep AWS_SESSION_TOKEN >> assume_role_creds_<< parameters.job_type >>.txt
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - assume_role_creds_<< parameters.job_type >>.txt
-
-  aws_assume_role_file:
-    description: Assume AWS role from the workspace file
-    parameters:
-      job_type:
-        description: The job type to be used
-        type: string
-        default: 'default'
-    steps:
-      - run:
-          name: Assume role file
-          command: |
-            cat assume_role_creds_<< parameters.job_type >>.txt >> $BASH_ENV
-            source $BASH_ENV
 
   # Best to remove "circleci-agent step halt" line while doing testing of CircleCI code
   # to ensure that Terraform is validated at the pull_request stage
@@ -444,6 +337,9 @@ jobs:
       - run:
           name: Dependencies Install
           command: make install
+      - run:
+          name: Build icons
+          command: make build_icons
       - save_cache:
           key: yarn-build-v1-{{ checksum "yarn.lock" }}
           paths:
@@ -454,6 +350,7 @@ jobs:
             - node_modules/*
             - .storybook/private-fonts
             - src/version-number.json
+            - src/icons/*
       - slack/notify:
           <<: *slack_notify
 
@@ -479,22 +376,6 @@ jobs:
           paths:
             - .cache
             - cypress/*
-      - slack/notify:
-          <<: *slack_notify
-
-  build_icons:
-    executor: node
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Build
-          command: make build_icons
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - src/icons/*
       - slack/notify:
           <<: *slack_notify
 
@@ -542,25 +423,6 @@ jobs:
             export SITE_ENV=${SITE_ENV}
             export SITE_BASE_URL=${SITE_BASE_URL}
             make build_docs
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - public/*
-      - slack/notify:
-          <<: *slack_notify
-
-  # Deprecated by build_docs_with_no_base_url
-  build_docs_pr_with_no_base_url:
-    executor: node-xlarge
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Build
-          command: |
-            export SITE_ENV=${SITE_ENV}
-            make build_docs_with_no_base_url
       - persist_to_workspace:
           root: ./
           paths:
@@ -1219,27 +1081,24 @@ workflows:
     jobs:
       - install_deps
       - install_cypress
-      - build_icons:
-          requires:
-            - install_deps
       - build_components:
           requires:
-            - build_icons
+            - install_deps
       - build_storybook:
           requires:
-            - build_icons
+            - install_deps
       - build_test_e2e:
           requires:
-            - build_icons
+            - install_deps
       - lint:
           requires:
-            - build_icons
+            - install_deps
       - test_unit_comps:
           requires:
-            - build_icons
+            - install_deps
       - test_unit_docs:
           requires:
-            - build_icons
+            - install_deps
       - test_newskit_in_nextjs_app:
           requires:
             - build_components
@@ -1248,20 +1107,20 @@ workflows:
           requires:
             - build_test_e2e
             - install_cypress
-      - build_docs_pr_with_no_base_url:
+      - build_docs_with_no_base_url:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_broken_links_docs:
           name: test_broken_links_docs_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr_with_no_base_url
+            - build_docs_with_no_base_url
       - test_e2e_docs:
           name: test_e2e_docs_pr
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr_with_no_base_url
+            - build_docs_with_no_base_url
             - install_cypress
             - build_storybook
       - no_visual_changes:
@@ -1313,13 +1172,13 @@ workflows:
       - test_visual_docs_percy:
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr_with_no_base_url
+            - build_docs_with_no_base_url
             - install_cypress
-            - test_visual_comps_percy
+            - docs_and_comps_visual_changes
       - test_visual_docs_percy_2:
           context: ncu-product-platforms-context
           requires:
-            - build_docs_pr_with_no_base_url
+            - build_docs_with_no_base_url
             - install_cypress
             - docs_visual_changes
       - skip_percy_comps_check_2:
@@ -1368,7 +1227,7 @@ workflows:
       - deploy_terraform_oidc:
           name: validate_deploy_terraform_s3_prod
           package: s3/prod-newskit
-          context: ncu-newskit-site-stage
+          context: ncu-newskit-site-prod
           apply: false # Can set true while doing testing of CircleCI code
           tf_env: true
           environment: prod
@@ -1378,7 +1237,7 @@ workflows:
           name: build_docs_pr
           context: ncu-newskit-site-pr
           requires:
-            - build_icons
+            - install_deps
       - push_s3_pr_oidc:
           name: deploy_to_s3_pr
           context: ncu-newskit-site-pr
@@ -1403,7 +1262,7 @@ workflows:
       #    name: build_docs_dev
       #    context: ncu-newskit-site-dev
       #    requires:
-      #      - build_icons
+      #      - install_deps
       #      - deploy_to_s3_pr
       #- push_s3_general_oidc:
       #    name: deploy_to_s3_dev
@@ -1492,34 +1351,30 @@ workflows:
           context: ncu-product-platforms-context
       - install_cypress:
           context: ncu-product-platforms-context
-      - build_icons:
-          context: ncu-product-platforms-context
-          requires:
-            - install_deps
       - build_components:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - build_storybook:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - build_test_e2e:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - lint:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_unit_comps:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_unit_docs:
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_e2e_comps:
           context: ncu-product-platforms-context
           requires:
@@ -1529,7 +1384,7 @@ workflows:
           name: build_docs_dev
           context: ncu-newskit-site-dev
           requires:
-            - build_icons
+            - install_deps
       - test_broken_links_docs:
           name: test_broken_links_docs_dev
           context: ncu-product-platforms-context
@@ -1697,41 +1552,36 @@ workflows:
       - install_cypress:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
-      - build_icons:
-          <<: *only_on_version_tag
-          context: ncu-product-platforms-context
-          requires:
-            - install_deps
       - build_components:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - build_storybook:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - build_test_e2e:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - lint:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_unit_comps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_unit_docs:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
           requires:
-            - build_icons
+            - install_deps
       - test_e2e_comps:
           <<: *only_on_version_tag
           context: ncu-product-platforms-context
@@ -1743,7 +1593,7 @@ workflows:
           name: build_docs_versioned
           context: ncu-newskit-site-prod
           requires:
-            - build_icons
+            - install_deps
             - delete_trigger_release_tag
       - test_broken_links_docs:
           <<: *only_on_version_tag
@@ -1781,7 +1631,7 @@ workflows:
           name: build_docs_staging
           context: ncu-newskit-site-stage
           requires:
-            - build_icons
+            - install_deps
             - publish_npm
       - push_s3_general_oidc:
           name: deploy_to_s3_staging
@@ -1797,7 +1647,7 @@ workflows:
           name: build_docs_prod
           context: ncu-newskit-site-prod
           requires:
-            - build_icons
+            - install_deps
             - deploy_to_s3_staging
       - push_s3_general_oidc:
           name: deploy_to_s3_prod
