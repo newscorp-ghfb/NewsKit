@@ -84,7 +84,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           description: (
             <>
               A part or the whole card can be a link by using the{' '}
-              <InlineCode>expand</InlineCode>.
+              <InlineCode>expand</InlineCode> prop.
             </>
           ),
           media: getIllustrationComponent(
@@ -287,7 +287,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
             </>
             <>
               Don&apos;t wrap the whole card in a Link, use the{' '}
-              <InlineCode>expand</InlineCode> to make it interactive
+              <InlineCode>expand</InlineCode> prop to make it interactive
             </>
           </UnorderedList>
         </>
@@ -576,7 +576,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
       ],
     }}
     related={{
-      related: ['Block', 'Drawer', 'Modal', 'Structured List'],
+      related: ['Grid Layout'],
     }}
   />
 );
