@@ -86,7 +86,7 @@
     "serve:docs": "http-server public -p 8081 -c300",
     "serve:storybook": "http-server dist-storybook -p 6006",
     "dependencies:check": "package-change-checker --install-cmd=\"yarn install --pure-lockfile\" HEAD@{1} HEAD",
-    "storybook": "start-storybook -c .storybook -p 6006 "
+    "storybook": "start-storybook -c .storybook -p 6006"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
@@ -249,6 +249,7 @@
     "@emotion-icons/material": "3.9.0",
     "@emotion-icons/material-outlined": "3.8.0",
     "@floating-ui/react-dom-interactions": "^0.6.0",
+    "@newskit-themes/the-sun": "^0.1.0",
     "@newskit-themes/newskit-website": "1.0.2",
     "@seznam/compose-react-refs": "^1.0.5",
     "@storybook/react": "^6.5.16",

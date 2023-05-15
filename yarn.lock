@@ -3696,6 +3696,11 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@newskit-themes/the-sun@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/the-sun/-/the-sun-0.1.0.tgz#bd3f12d80fefe22eb2d75ffa75ff1630964deccb"
+  integrity sha512-oWXJ3gd+qKl+7tP8kxKEgPRm/EzHZAR5Hp2XGLUf0OxLfLXACUbKtbW6diOaToUrUD1xqfol1wJQh8VpR533QA==
+
 "@newskit-themes/newskit-website@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@newskit-themes/newskit-website/-/newskit-website-1.0.2.tgz#010214a9d05f89e78a6651aefee4136985119b72"
