@@ -2373,13 +2373,18 @@ Object {
     "transitionPreset": "fade",
   },
   "pagination": Object {
-    "large": Object {},
-    "medium": Object {},
-    "small": Object {},
+    "large": Object {
+      "gap": "space010",
+    },
+    "medium": Object {
+      "gap": "space010",
+    },
+    "small": Object {
+      "gap": "space010",
+    },
   },
   "paginationItem": Object {
     "large": Object {
-      "marginInline": "space010",
       "minHeight": "sizing070",
       "minWidth": "sizing070",
       "paddingBlock": "space000",
@@ -2388,7 +2393,6 @@ Object {
       "typographyPreset": "utilityButton030",
     },
     "medium": Object {
-      "marginInline": "space010",
       "minHeight": "sizing060",
       "minWidth": "sizing060",
       "paddingBlock": "space000",
@@ -2397,7 +2401,6 @@ Object {
       "typographyPreset": "utilityButton020",
     },
     "small": Object {
-      "marginInline": "space010",
       "minHeight": "sizing050",
       "minWidth": "sizing050",
       "paddingBlock": "space000",
@@ -2409,7 +2412,6 @@ Object {
   "paginationItemFirst": Object {
     "large": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2417,7 +2419,6 @@ Object {
     },
     "medium": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2425,7 +2426,6 @@ Object {
     },
     "small": Object {
       "iconSize": "iconSize010",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2435,7 +2435,6 @@ Object {
   "paginationItemLast": Object {
     "large": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2443,7 +2442,6 @@ Object {
     },
     "medium": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2451,7 +2449,6 @@ Object {
     },
     "small": Object {
       "iconSize": "iconSize010",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2461,13 +2458,11 @@ Object {
   "paginationItemNext": Object {
     "large": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
       "stylePreset": "paginationItem",
       "width": "sizing070",
     },
     "medium": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2475,7 +2470,6 @@ Object {
     },
     "small": Object {
       "iconSize": "iconSize010",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2486,7 +2480,6 @@ Object {
     "large": Object {
       "iconSize": "iconSize020",
       "marginBlockEnd": "space000",
-      "marginInline": "space010",
       "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "typographyPreset": "utilityBody030",
@@ -2494,7 +2487,6 @@ Object {
     "medium": Object {
       "iconSize": "iconSize020",
       "marginBlockEnd": "space000",
-      "marginInline": "space010",
       "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "typographyPreset": "utilityBody020",
@@ -2502,7 +2494,6 @@ Object {
     "small": Object {
       "iconSize": "iconSize010",
       "marginBlockEnd": "space000",
-      "marginInline": "space010",
       "paddingInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "typographyPreset": "utilityBody010",
@@ -2511,7 +2502,6 @@ Object {
   "paginationItemPrev": Object {
     "large": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2519,7 +2509,6 @@ Object {
     },
     "medium": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2527,7 +2516,6 @@ Object {
     },
     "small": Object {
       "iconSize": "iconSize010",
-      "marginInline": "space010",
       "paddingBlock": "space000",
       "paddingInline": "space020",
       "stylePreset": "paginationItem",
@@ -2537,19 +2525,16 @@ Object {
   "paginationItemTruncation": Object {
     "large": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "width": "sizing070",
     },
     "medium": Object {
       "iconSize": "iconSize020",
-      "marginInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "width": "sizing060",
     },
     "small": Object {
       "iconSize": "iconSize010",
-      "marginInline": "space000",
       "stylePreset": "paginationItemNonInteractive",
       "width": "sizing050",
     },
