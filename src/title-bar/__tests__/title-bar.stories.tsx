@@ -209,7 +209,7 @@ export const StoryTitleBarLogicalProps = () => (
     </StorybookCase>
   </StorybookPage>
 );
-StoryTitleBarLogicalProps.storyName = 'Logical Props';
+StoryTitleBarLogicalProps.storyName = 'Logical props';
 
 export const StoryTitleBarStylingOverrides = () => (
   <StorybookPage columns="1fr">
