@@ -1,8 +1,6 @@
 import {ContainerQueryProps, CSSObject} from './style';
 
-export const containerProps = () => (props: {
-  overrides?: ContainerQueryProps;
-}) => {
-  const {containerType, containerName} = props.overrides || {};
+export const containerProps = () => (props: ContainerQueryProps) => {
+  const {containerType, containerName} = props || {};
   return {containerType, containerName} as CSSObject;
 };

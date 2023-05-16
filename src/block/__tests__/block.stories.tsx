@@ -168,10 +168,8 @@ export const StoryContainerQueries = () => {
     <StorybookPage columns={blockGridCols}>
       <StorybookCase title="Container < 300px">
         <Block
-          overrides={{
-            containerName: 'container-small',
-            containerType: 'inline-size',
-          }}
+          containerName="container-small"
+          containerType="inline-size"
           stylePreset="blockContainerQueryWrapper"
           style={{width: '200px'}}
         >
@@ -180,10 +178,8 @@ export const StoryContainerQueries = () => {
       </StorybookCase>
       <StorybookCase title="Container > 300px">
         <Block
-          overrides={{
-            containerName: 'container-large',
-            containerType: 'inline-size',
-          }}
+          containerName="container-large"
+          containerType="inline-size"
           stylePreset="blockContainerQueryWrapper"
           style={{width: '500px'}}
         >

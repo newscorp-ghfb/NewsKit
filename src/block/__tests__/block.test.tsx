@@ -102,10 +102,8 @@ describe('Block', () => {
 
     test('renders GridLayout with container name and type', () => {
       const props: BlockProps = {
-        overrides: {
-          containerName: 'test-container',
-          containerType: 'inline-size',
-        },
+        containerName: 'test-container',
+        containerType: 'inline-size',
       };
 
       const fragment = renderToFragmentWithTheme(Block, props);

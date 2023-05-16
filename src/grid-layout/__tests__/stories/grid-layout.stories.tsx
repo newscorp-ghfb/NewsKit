@@ -201,18 +201,12 @@ export const StoryContainerQueryExample = () => {
   return (
     <StorybookPage>
       <StorybookCase title="Container <= 200px">
-        <Block
-          overrides={{containerType: 'inline-size'}}
-          style={{width: '200px'}}
-        >
+        <Block containerType="inline-size" style={{width: '200px'}}>
           <QueryGridLayout />
         </Block>
       </StorybookCase>
       <StorybookCase title="Container > 200px">
-        <Block
-          overrides={{containerType: 'inline-size'}}
-          style={{width: '400px'}}
-        >
+        <Block containerType="inline-size" style={{width: '400px'}}>
           <QueryGridLayout />
         </Block>
       </StorybookCase>

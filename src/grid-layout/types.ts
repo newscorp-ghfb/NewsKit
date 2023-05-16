@@ -19,7 +19,7 @@ export type AreasMap = {
 
 export type GridLayoutRenderProps = (areas: AreasMap) => React.ReactNode;
 
-export type GridLayoutProps = {
+export type GridLayoutProps = ContainerQueryProps & {
   rowGap?: ResponsiveValue<string>;
   columnGap?: ResponsiveValue<string>;
   rows?: ResponsiveValue<string>;
@@ -43,6 +43,5 @@ export type GridLayoutProps = {
     height?: ResponsiveValue<string>;
     minHeight?: ResponsiveValue<string>;
     maxHeight?: ResponsiveValue<string>;
-  } & LogicalProps &
-    ContainerQueryProps;
+  } & LogicalProps;
 } & Omit<React.HTMLAttributes<HTMLDivElement>, 'children'>;
