@@ -17,9 +17,7 @@ const IconContainer = styled.div`
   align-items: center;
 `;
 
-const STRING = (
-  <TextBlock typographyPreset="editorialHeadline050">Title content</TextBlock>
-);
+const STRING = 'Title content';
 
 export default {
   title: 'Components/Title-bar',
