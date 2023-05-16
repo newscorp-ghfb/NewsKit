@@ -435,6 +435,12 @@ const PaginationComponent = (layoutProps: LayoutProps) => (
               description:
                 'If provided, overrides the stylePreset of the pagination',
             },
+            {
+              attribute: 'gap',
+              type: 'MQ<string>',
+              description:
+                'If provided, this overrides the gap applied between pagination items.',
+            },
             ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
         },

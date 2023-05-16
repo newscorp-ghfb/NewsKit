@@ -1,9 +1,15 @@
 export default {
   // Can be used to set padding around the entire component (eg paddingInline: 'space020')
   pagination: {
-    small: {},
-    medium: {},
-    large: {},
+    small: {
+      gap: 'space010',
+    },
+    medium: {
+      gap: 'space010',
+    },
+    large: {
+      gap: 'space010',
+    },
   },
   paginationItem: {
     small: {
@@ -11,7 +17,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       minHeight: 'sizing050',
       minWidth: 'sizing050',
     },
@@ -20,7 +25,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       minHeight: 'sizing060',
       minWidth: 'sizing060',
     },
@@ -29,7 +33,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       minHeight: 'sizing070',
       minWidth: 'sizing070',
     },
@@ -40,7 +43,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing050',
     },
     medium: {
@@ -48,7 +50,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing060',
     },
     large: {
@@ -56,7 +57,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing070',
     },
   },
@@ -66,7 +66,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing050',
     },
     medium: {
@@ -74,7 +73,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing060',
     },
     large: {
@@ -82,7 +80,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing070',
     },
   },
@@ -92,7 +89,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing050',
     },
     medium: {
@@ -100,13 +96,11 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing060',
     },
     large: {
       iconSize: 'iconSize020',
       stylePreset: 'paginationItem',
-      marginInline: 'space000',
       width: 'sizing070',
     },
   },
@@ -116,7 +110,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing050',
     },
     medium: {
@@ -124,7 +117,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing060',
     },
     large: {
@@ -132,7 +124,6 @@ export default {
       stylePreset: 'paginationItem',
       paddingInline: 'space020',
       paddingBlock: 'space000',
-      marginInline: 'space010',
       width: 'sizing070',
     },
   },
@@ -140,19 +131,16 @@ export default {
     small: {
       iconSize: 'iconSize010',
       stylePreset: 'paginationItemNonInteractive',
-      marginInline: 'space000',
       width: 'sizing050',
     },
     medium: {
       iconSize: 'iconSize020',
       stylePreset: 'paginationItemNonInteractive',
-      marginInline: 'space000',
       width: 'sizing060',
     },
     large: {
       iconSize: 'iconSize020',
       stylePreset: 'paginationItemNonInteractive',
-      marginInline: 'space000',
       width: 'sizing070',
     },
   },
@@ -162,7 +150,6 @@ export default {
       stylePreset: 'paginationItemNonInteractive',
       iconSize: 'iconSize010',
       paddingInline: 'space000',
-      marginInline: 'space010',
       marginBlockEnd: 'space000',
     },
     medium: {
@@ -170,7 +157,6 @@ export default {
       stylePreset: 'paginationItemNonInteractive',
       iconSize: 'iconSize020',
       paddingInline: 'space000',
-      marginInline: 'space010',
       marginBlockEnd: 'space000',
     },
     large: {
@@ -178,7 +164,6 @@ export default {
       stylePreset: 'paginationItemNonInteractive',
       iconSize: 'iconSize020',
       paddingInline: 'space000',
-      marginInline: 'space010',
       marginBlockEnd: 'space000',
     },
   },

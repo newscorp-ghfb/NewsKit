@@ -9,7 +9,7 @@ import {
 import {useTheme} from '../../../theme';
 import {IconFilledMoreHoriz, NewsKitIconProps} from '../../../icons';
 import {getComponentOverrides, Override} from '../../../utils/overrides';
-import {PaginationItem} from '../item/pagination-item';
+import {PaginationItem} from '../item';
 import {usePaginationContext} from '../../context';
 import {getPaginationItemsLayout} from '../../utils';
 import {PaginationListItem} from '../list-item';
