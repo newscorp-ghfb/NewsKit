@@ -25,6 +25,14 @@ export default {
   title: 'Components/Title-bar',
   component: () => 'None',
   disabledRules: ['heading-order'],
+  parameters: {
+    nkDocs: {
+      title: 'Block',
+      url: 'https://www.newskit.co.uk/components/title-bar/#anatomy',
+      description:
+        'The title bar provides context and actions related to a particular section of content that follows below on the screen.',
+    },
+  },
   decorators: [
     (
       Story: StoryType,
