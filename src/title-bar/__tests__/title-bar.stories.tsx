@@ -24,7 +24,7 @@ export default {
   component: () => 'None',
   parameters: {
     nkDocs: {
-      title: 'Block',
+      title: 'Title bar',
       url: 'https://www.newskit.co.uk/components/title-bar/#anatomy',
       description:
         'The title bar provides context and actions related to a particular section of content that follows below on the screen.',
