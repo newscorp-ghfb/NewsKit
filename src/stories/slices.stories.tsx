@@ -202,7 +202,7 @@ const ThirdLevelArticlesGroup = () => (
 
 export const TheTimesStory = () => {
   const button = () => (
-    <IconButton href="/" size="medium">
+    <IconButton href="/" size="medium" title="more articles">
       <IconFilledChevronRight />
     </IconButton>
   );

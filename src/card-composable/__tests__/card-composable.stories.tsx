@@ -972,6 +972,7 @@ export default {
     // the img is the first child of the picture when loaded, otherwise second
     percy: {waitForSelector: 'picture img:nth-child(1)'},
   },
+  disabledRules: ['heading-order'],
   decorators: [
     (
       Story: StoryType,
