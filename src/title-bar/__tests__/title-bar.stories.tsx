@@ -49,14 +49,14 @@ export default {
   ],
 };
 
-export const StoryTitleBarDefault = () => (
+export const StoryTitleBar = () => (
   <StorybookPage columns="1fr">
     <StorybookCase>
       <TitleBar>{STRING}</TitleBar>
     </StorybookCase>
   </StorybookPage>
 );
-StoryTitleBarDefault.storyName = 'Default';
+StoryTitleBar.storyName = 'Default';
 
 export const StoryTitleBarLink = () => (
   <>
