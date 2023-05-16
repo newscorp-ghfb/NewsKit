@@ -30,6 +30,10 @@ const dependenciesNotToBeIncluded = [
   'globby',
   '@newskit-themes/newskit-website',
   '@newskit-themes/the-sun',
+  '@newskit-themes/the-times',
+  '@newskit-themes/dow-jones',
+  '@newskit-themes/market-watch',
+  '@newskit-themes/wall-street-journal',
 ];
 
 const filterPackageJson = () => {
@@ -57,7 +61,7 @@ const newPackageJson = () => {
     main: 'cjs/index.js',
     types: 'cjs/index.d.ts',
     module: 'esm/index.js',
-  }
+  };
 };
 
 module.exports = {filterPackageJson, newPackageJson};

@@ -8,7 +8,6 @@ build
 dist
 stats.html
 storybook-static
-.storybook/private-fonts
 coverage
 /e2e/dist/index.js
 .vscode
@@ -23,6 +22,8 @@ vrt/diff
 site/.next
 site/posts.js
 site/public/static/fonts
+fonts/private-fonts
+.storybook/private-fonts
 /public
 .*code
 .terraform
