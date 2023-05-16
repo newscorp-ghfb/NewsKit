@@ -113,6 +113,15 @@ const SiteFooter: React.FC<FooterProps> = ({cellProps = {xs: 12}}) => (
                   Terms & conditions
                 </Link>
               </FooterLink>
+              <FooterLink>
+                <Link
+                  type="standalone"
+                  href="/help/accessibility-statement"
+                  overrides={linkOverrides}
+                >
+                  Accessibility
+                </Link>
+              </FooterLink>
             </FooterMenu>
           </InstrumentationProvider>
         </Cell>

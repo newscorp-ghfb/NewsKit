@@ -36,13 +36,15 @@ const Introduction = ({path, ...props}: LayoutProps) => (
       }}
     />
     <PageIntroduction
+      nameAs="h1"
+      introductionAs="h2"
       name="Website terms and conditions of use"
       introduction={
         <>
           Welcome to the Website Terms and Conditions of Use (<b>Terms</b>)
           which apply to{' '}
-          <Link href="https://newskit.co.uk/" target="_blank">
-            https://newskit.co.uk/
+          <Link href="https://newskit.co.uk" external={false}>
+            newskit.co.uk
           </Link>{' '}
           (the <b>Website</b>).
         </>
