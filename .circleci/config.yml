@@ -348,7 +348,7 @@ jobs:
           root: ./
           paths:
             - node_modules/*
-            - .storybook/private-fonts
+            - fonts/private-fonts
             - src/version-number.json
             - src/icons/*
       - slack/notify:

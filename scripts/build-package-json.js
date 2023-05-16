@@ -3,7 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { newPackageJson } = require('./build-package-json-support');
+const {newPackageJson} = require('./build-package-json-support');
 
 const toAbsolutePath = relative => path.join(__dirname, relative);
 

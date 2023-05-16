@@ -187,6 +187,9 @@ const CustomMuteButtonIcon = ({volume}: MuteButtonIconProps) =>
 export default {
   title: 'Components/audio-player-composable',
   component: () => 'None',
+  parameters: {
+    percy: {waitForSelector: '.ready'},
+  },
 };
 
 const fullAudioPlayerAreasDesktop = `
@@ -526,7 +529,7 @@ export const StoryAudioPlayer = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(4);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="storyAudioPlayerReady" />}
+      {allPlayersCanPlay && <div className="ready" />}
       <StorybookSubHeading>Audio Player - full recorded</StorybookSubHeading>
       <AudioPlayerFullRecorded
         ariaLandmark="audio player full recorded"
@@ -558,17 +561,12 @@ export const StoryAudioPlayer = () => {
   );
 };
 StoryAudioPlayer.storyName = 'audio-player';
-StoryAudioPlayer.parameters = {
-  percy: {
-    waitForSelector: '#storyAudioPlayerReady',
-  },
-};
 
 export const StoryAudioSubComponents = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="storyAudioSubComponentsReady" />}
+      {allPlayersCanPlay && <div className="ready" />}
       <StorybookHeading>Audio Player - subcomponents</StorybookHeading>
 
       <AudioPlayerComposable
@@ -691,16 +689,13 @@ export const StoryAudioSubComponents = () => {
   );
 };
 StoryAudioSubComponents.storyName = 'audio-player-sub-components';
-StoryAudioSubComponents.parameters = {
-  percy: {waitForSelector: '#storyAudioSubComponentsReady'},
-};
 
 export const StoryAudioPlayerWithInitialProps = () => {
   const breakpointKey = useBreakpointKey();
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="storyAudioPlayerWithInitialPropsReady" />}
+      {allPlayersCanPlay && <div className="ready" />}
       <StorybookHeading>Audio Player - initial prop</StorybookHeading>
       <AudioPlayerComposable
         src={AUDIO_SRC}
@@ -759,15 +754,13 @@ export const StoryAudioPlayerWithInitialProps = () => {
   );
 };
 StoryAudioPlayerWithInitialProps.storyName = 'audio-player-with-initial-props';
-StoryAudioPlayerWithInitialProps.parameters = {
-  percy: {waitForSelector: '#storyAudioPlayerWithInitialPropsReady'},
-};
+
 export const StoryAudioPlayerOverrides = () => {
   const breakpointKey = useBreakpointKey();
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(5);
   return (
     <StyledPage>
-      {allPlayersCanPlay && <div id="storyAudioPlayerOverridesReady" />}
+      {allPlayersCanPlay && <div className="ready" />}
       <StorybookSubHeading>Audio player with overrides</StorybookSubHeading>
 
       <ThemeProvider theme={myCustomTheme}>
@@ -1085,9 +1078,6 @@ export const StoryAudioPlayerOverrides = () => {
   );
 };
 StoryAudioPlayerOverrides.storyName = 'audio-player-overrides';
-StoryAudioPlayerOverrides.parameters = {
-  percy: {waitForSelector: '#storyAudioPlayerOverridesReady'},
-};
 
 export const StoryAudioPlayerAutoplay = () => (
   <StyledPage>
@@ -1104,9 +1094,7 @@ export const StoryAudioPlayerPlaybackSpeedTriggerButton = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(2);
   return (
     <StyledPage>
-      {allPlayersCanPlay && (
-        <div id="storyAudioPlayerPlaybackSpeedTriggerButtonReady" />
-      )}
+      {allPlayersCanPlay && <div className="ready" />}
       <StorybookHeading>
         Audio Player - playback speed control trigger overrides
       </StorybookHeading>
@@ -1139,11 +1127,6 @@ export const StoryAudioPlayerPlaybackSpeedTriggerButton = () => {
 };
 StoryAudioPlayerPlaybackSpeedTriggerButton.storyName =
   'audio-player-playback-speed-trigger-button';
-StoryAudioPlayerPlaybackSpeedTriggerButton.parameters = {
-  percy: {
-    waitForSelector: '#storyAudioPlayerPlaybackSpeedTriggerButtonReady',
-  },
-};
 
 export const StoryAudioPlayerKeyboard = () => (
   <StyledPage>
@@ -1351,9 +1334,7 @@ export const StoryAudioPlayerVolumeControlLayout = () => {
   const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
   return (
     <StyledPage>
-      {allPlayersCanPlay && (
-        <div id="storyAudioPlayerVolumeControlLayoutReady" />
-      )}
+      {allPlayersCanPlay && <div className="ready" />}
       <StorybookSubHeading>Volume control horizontal</StorybookSubHeading>
       <AudioPlayerComposable
         src={AUDIO_SRC}
@@ -1395,13 +1376,11 @@ export const StoryAudioPlayerVolumeControlLayout = () => {
 
 StoryAudioPlayerVolumeControlLayout.storyName =
   'audio-player-volume-control-layout';
-StoryAudioPlayerVolumeControlLayout.parameters = {
-  percy: {waitForSelector: '#storyAudioPlayerVolumeControlLayoutReady'},
-};
 
 export const StoryAudioPlayerLoadingState = () => (
   <StyledPage>
     <StorybookSubHeading>Loading state</StorybookSubHeading>
+    <div className="ready" />
     <AudioPlayerFullRecorded ariaLandmark="audio player loading state" src="" />
   </StyledPage>
 );
