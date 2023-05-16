@@ -22,7 +22,6 @@ const STRING = 'Title content';
 export default {
   title: 'Components/Title-bar',
   component: () => 'None',
-  disabledRules: ['heading-order'],
   parameters: {
     nkDocs: {
       title: 'Block',
