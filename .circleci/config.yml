@@ -348,7 +348,7 @@ jobs:
           root: ./
           paths:
             - node_modules/*
-            - .storybook/private-fonts
+            - fonts/private-fonts
             - src/version-number.json
             - src/icons/*
       - slack/notify:
@@ -1174,7 +1174,7 @@ workflows:
           requires:
             - build_docs_with_no_base_url
             - install_cypress
-            - test_visual_comps_percy
+            - docs_and_comps_visual_changes
       - test_visual_docs_percy_2:
           context: ncu-product-platforms-context
           requires:
