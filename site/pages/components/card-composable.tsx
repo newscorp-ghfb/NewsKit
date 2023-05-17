@@ -398,90 +398,6 @@ const DividerComponent = (layoutProps: LayoutProps) => (
               default: 'backgroundColorChange',
               description: '',
             },
-            {
-              attribute: 'marginInline',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline start and end margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'marginInlineStart',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline start margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'marginInlineEnd',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline end margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'marginBlock',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block start and end margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'marginBlockStart',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block start margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'marginBlockEnd',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block end margin of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingInline',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline start and end padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingInlineStart',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline start padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingInlineEnd',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical inline end padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingBlock',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block start and end padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingBlockStart',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block start padding of the container. Can be used on breakpoints',
-            },
-            {
-              attribute: 'paddingBlockEnd',
-              type: 'MQ<string>',
-              default: '',
-              description:
-                'Takes one space token to specify the logical block end padding of the container. Can be used on breakpoints',
-            },
             ...(commonLogicalProps() as OverridesRowsProps[]),
           ],
           propsFooter: (
@@ -503,7 +419,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'CardContent',
           summary:
-            'Props and Overrides same as GridLayout + can have stylePreset and transitionPreset as an override',
+            'Props and Overrides same as CardComposable + can have stylePreset and transitionPreset as an override',
           propsRows: [
             {
               name: 'children',
