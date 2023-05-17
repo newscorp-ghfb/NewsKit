@@ -211,19 +211,15 @@ export const StoryTitleBarLogicalProps = () => (
 StoryTitleBarLogicalProps.storyName = 'Logical props';
 
 export const StoryTitleBarStylingOverrides = () => (
-  <StorybookPage columns="1fr">
-    <StorybookCase>
-      <TitleBar
-        overrides={{
-          heading: {
-            stylePreset: 'inkBrand010',
-          },
-        }}
-      >
-        {STRING}
-      </TitleBar>
-    </StorybookCase>
-  </StorybookPage>
+  <TitleBar
+    overrides={{
+      heading: {
+        stylePreset: 'inkBrand010',
+      },
+    }}
+  >
+    {STRING}
+  </TitleBar>
 );
 StoryTitleBarStylingOverrides.storyName = 'Styling overrides';
 
