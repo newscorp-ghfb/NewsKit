@@ -10,7 +10,188 @@ import {UnorderedList, InlineMessage, LinkInline} from 'newskit';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
 
-const DividerComponent = (layoutProps: LayoutProps) => (
+export const commonOverridesRows = [
+  {
+    attribute: 'width',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the width of the grid',
+  },
+  {
+    attribute: 'minWidth',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the minWidth of the grid',
+  },
+  {
+    attribute: 'maxWidth',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the maxWidth of the grid',
+  },
+  {
+    attribute: 'height',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the height of the grid',
+  },
+  {
+    attribute: 'minHeight',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the minHeight of the grid',
+  },
+  {
+    attribute: 'maxHeight',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the maxHeight of the grid',
+  },
+  ...(commonLogicalProps() as OverridesRowsProps[]),
+];
+
+const commonPropsRows = [
+  {
+    name: 'rowGap',
+    type: 'MQ<string>',
+    description: 'If provided, applies rowGap to the grid',
+    required: null,
+  },
+  {
+    name: 'columnGap',
+    type: 'MQ<string>',
+    description: 'If provided, applies columnGap to the grid',
+    required: null,
+  },
+  {
+    name: 'rows',
+    type: 'MQ<string>',
+    description: (
+      <>
+        Defines the line names and track sizing functions of the grid rows,
+        using the <InlineCode>grid-template-rows</InlineCode>{' '}
+        <Link
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows"
+          target="_blank"
+        >
+          css property.
+        </Link>
+      </>
+    ),
+    required: null,
+  },
+  {
+    name: 'columns',
+    type: 'MQ<string>',
+    description: (
+      <>
+        Defines the line names and track sizing functions of the grid columns,
+        using the <InlineCode>grid-template-columns</InlineCode>{' '}
+        <Link
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"
+          target="_blank"
+        >
+          css property.
+        </Link>
+      </>
+    ),
+    required: null,
+  },
+  {
+    name: 'autoFlow',
+    type: 'MQ<string>',
+    description: (
+      <>
+        Controls how the auto-placement algorithm works, specifying exactly how
+        auto-placed items get flowed into the grid, using the{' '}
+        <InlineCode>grid-auto-flow</InlineCode>{' '}
+        <Link
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow"
+          target="_blank"
+        >
+          css property.
+        </Link>
+      </>
+    ),
+    required: null,
+  },
+  {
+    name: 'autoRows',
+    type: 'MQ<string>',
+    description: (
+      <>
+        Specifies the size of an implicitly-created grid row track or pattern of
+        tracks, using the <InlineCode>grid-auto-rows</InlineCode>{' '}
+        <Link
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows"
+          target="_blank"
+        >
+          css property.
+        </Link>
+      </>
+    ),
+    required: null,
+  },
+  {
+    name: 'autoColumns',
+    type: 'MQ<string>',
+    description: (
+      <>
+        Specifies the size of an implicitly-created grid column track or pattern
+        of tracks, using the <InlineCode>grid-auto-columns</InlineCode>{' '}
+        <Link
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns"
+          target="_blank"
+        >
+          css property.
+        </Link>
+      </>
+    ),
+    required: null,
+  },
+  {
+    name: 'justifyContent',
+    type: 'MQ<string>',
+    description:
+      'If parent container has remaining space, aligns the grid along the inline axis',
+    required: null,
+  },
+  {
+    name: 'alignContent',
+    type: 'MQ<string>',
+    description:
+      'If parent container has remaining space, aligns the grid along the block axis',
+    required: null,
+  },
+  {
+    name: 'justifyItems',
+    type: 'MQ<string>',
+    description: 'Aligns the grid items along the inline axis',
+    required: null,
+  },
+  {
+    name: 'alignItems',
+    type: 'MQ<string>',
+    description: 'Aligns the grid items along the block axis',
+    required: null,
+  },
+  {
+    name: 'areas',
+    type: 'MQ<string>',
+    description:
+      'Specifies named grid areas, establishing the cells in the grid and assigning them names. Visually represents the layout of the grid',
+    required: null,
+  },
+  {
+    name: 'inline',
+    type: 'MQ<boolean>',
+    default: 'false',
+    description: 'Specifies whether the grid should be displayed inline',
+    required: null,
+  },
+];
+
+const CardComposableComponent = (layoutProps: LayoutProps) => (
   <ComponentPageTemplate
     headTags={{
       title: 'Card Composable',
@@ -418,588 +599,18 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'CardContent',
-          propsRows: [
-            {
-              name: 'children',
-              type: 'React.ReactNode',
-              required: true,
-              description: 'The card content…',
-            },
-            {
-              name: 'media',
-              type: 'ImageProps',
-              required: undefined,
-              description:
-                'If this parameter is provided as ImageProps object (see Image documentation), it will render the media as an image.',
-            },
-            {
-              name: 'rowGap',
-              type: 'MQ<string>',
-              description: 'If provided, applies rowGap to the grid',
-              required: null,
-            },
-            {
-              name: 'columnGap',
-              type: 'MQ<string>',
-              description: 'If provided, applies columnGap to the grid',
-              required: null,
-            },
-            {
-              name: 'rows',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Defines the line names and track sizing functions of the grid
-                  rows, using the <InlineCode>grid-template-rows</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'columns',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Defines the line names and track sizing functions of the grid
-                  columns, using the{' '}
-                  <InlineCode>grid-template-columns</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoFlow',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Controls how the auto-placement algorithm works, specifying
-                  exactly how auto-placed items get flowed into the grid, using
-                  the <InlineCode>grid-auto-flow</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoRows',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Specifies the size of an implicitly-created grid row track or
-                  pattern of tracks, using the{' '}
-                  <InlineCode>grid-auto-rows</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoColumns',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Specifies the size of an implicitly-created grid column track
-                  or pattern of tracks, using the{' '}
-                  <InlineCode>grid-auto-columns</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'justifyContent',
-              type: 'MQ<string>',
-              description:
-                'If parent container has remaining space, aligns the grid along the inline axis',
-              required: null,
-            },
-            {
-              name: 'alignContent',
-              type: 'MQ<string>',
-              description:
-                'If parent container has remaining space, aligns the grid along the block axis',
-              required: null,
-            },
-            {
-              name: 'justifyItems',
-              type: 'MQ<string>',
-              description: 'Aligns the grid items along the inline axis',
-              required: null,
-            },
-            {
-              name: 'alignItems',
-              type: 'MQ<string>',
-              description: 'Aligns the grid items along the block axis',
-              required: null,
-            },
-            {
-              name: 'areas',
-              type: 'MQ<string>',
-              description:
-                'Specifies named grid areas, establishing the cells in the grid and assigning them names. Visually represents the layout of the grid',
-              required: null,
-            },
-            {
-              name: 'inline',
-              type: 'MQ<boolean>',
-              default: 'false',
-              description:
-                'Specifies whether the grid should be displayed inline',
-              required: null,
-            },
-          ],
-          overridesRows: [
-            {
-              attribute: 'width',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the width of the grid',
-            },
-            {
-              attribute: 'minWidth',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the minWidth of the grid',
-            },
-            {
-              attribute: 'maxWidth',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the maxWidth of the grid',
-            },
-            {
-              attribute: 'height',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the height of the grid',
-            },
-            {
-              attribute: 'minHeight',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the minHeight of the grid',
-            },
-            {
-              attribute: 'maxHeight',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the maxHeight of the grid',
-            },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
-          ],
+          propsRows: commonPropsRows,
+          overridesRows: commonOverridesRows,
         },
         {
           title: 'CardMedia',
-          propsRows: [
-            {
-              name: 'children',
-              type: 'React.ReactNode',
-              required: undefined,
-              description:
-                'The card media can have children in that case it will replace the default Image component.',
-            },
-            {
-              name: 'media',
-              type: 'ImageProps',
-              required: undefined,
-              description:
-                'If this parameter is provided as ImageProps object (see Image documentation), it will render the media as an image.',
-            },
-            {
-              name: 'rowGap',
-              type: 'MQ<string>',
-              description: 'If provided, applies rowGap to the grid',
-              required: null,
-            },
-            {
-              name: 'columnGap',
-              type: 'MQ<string>',
-              description: 'If provided, applies columnGap to the grid',
-              required: null,
-            },
-            {
-              name: 'rows',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Defines the line names and track sizing functions of the grid
-                  rows, using the <InlineCode>grid-template-rows</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'columns',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Defines the line names and track sizing functions of the grid
-                  columns, using the{' '}
-                  <InlineCode>grid-template-columns</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoFlow',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Controls how the auto-placement algorithm works, specifying
-                  exactly how auto-placed items get flowed into the grid, using
-                  the <InlineCode>grid-auto-flow</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoRows',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Specifies the size of an implicitly-created grid row track or
-                  pattern of tracks, using the{' '}
-                  <InlineCode>grid-auto-rows</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoColumns',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Specifies the size of an implicitly-created grid column track
-                  or pattern of tracks, using the{' '}
-                  <InlineCode>grid-auto-columns</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'justifyContent',
-              type: 'MQ<string>',
-              description:
-                'If parent container has remaining space, aligns the grid along the inline axis',
-              required: null,
-            },
-            {
-              name: 'alignContent',
-              type: 'MQ<string>',
-              description:
-                'If parent container has remaining space, aligns the grid along the block axis',
-              required: null,
-            },
-            {
-              name: 'justifyItems',
-              type: 'MQ<string>',
-              description: 'Aligns the grid items along the inline axis',
-              required: null,
-            },
-            {
-              name: 'alignItems',
-              type: 'MQ<string>',
-              description: 'Aligns the grid items along the block axis',
-              required: null,
-            },
-            {
-              name: 'areas',
-              type: 'MQ<string>',
-              description:
-                'Specifies named grid areas, establishing the cells in the grid and assigning them names. Visually represents the layout of the grid',
-              required: null,
-            },
-            {
-              name: 'inline',
-              type: 'MQ<boolean>',
-              default: 'false',
-              description:
-                'Specifies whether the grid should be displayed inline',
-              required: null,
-            },
-          ],
-          overridesRows: [
-            {
-              attribute: 'width',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the width of the grid',
-            },
-            {
-              attribute: 'minWidth',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the minWidth of the grid',
-            },
-            {
-              attribute: 'maxWidth',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the maxWidth of the grid',
-            },
-            {
-              attribute: 'height',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the height of the grid',
-            },
-            {
-              attribute: 'minHeight',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the minHeight of the grid',
-            },
-            {
-              attribute: 'maxHeight',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the maxHeight of the grid',
-            },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
-          ],
+          propsRows: commonPropsRows,
+          overridesRows: commonOverridesRows,
         },
         {
           title: 'CardActions',
-          propsRows: [
-            {
-              name: 'rowGap',
-              type: 'MQ<string>',
-              description: 'If provided, applies rowGap to the grid',
-              required: null,
-            },
-            {
-              name: 'columnGap',
-              type: 'MQ<string>',
-              description: 'If provided, applies columnGap to the grid',
-              required: null,
-            },
-            {
-              name: 'rows',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Defines the line names and track sizing functions of the grid
-                  rows, using the <InlineCode>grid-template-rows</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'columns',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Defines the line names and track sizing functions of the grid
-                  columns, using the{' '}
-                  <InlineCode>grid-template-columns</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoFlow',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Controls how the auto-placement algorithm works, specifying
-                  exactly how auto-placed items get flowed into the grid, using
-                  the <InlineCode>grid-auto-flow</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoRows',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Specifies the size of an implicitly-created grid row track or
-                  pattern of tracks, using the{' '}
-                  <InlineCode>grid-auto-rows</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'autoColumns',
-              type: 'MQ<string>',
-              description: (
-                <>
-                  Specifies the size of an implicitly-created grid column track
-                  or pattern of tracks, using the{' '}
-                  <InlineCode>grid-auto-columns</InlineCode>{' '}
-                  <Link
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns"
-                    target="_blank"
-                  >
-                    css property.
-                  </Link>
-                </>
-              ),
-              required: null,
-            },
-            {
-              name: 'justifyContent',
-              type: 'MQ<string>',
-              description:
-                'If parent container has remaining space, aligns the grid along the inline axis',
-              required: null,
-            },
-            {
-              name: 'alignContent',
-              type: 'MQ<string>',
-              description:
-                'If parent container has remaining space, aligns the grid along the block axis',
-              required: null,
-            },
-            {
-              name: 'justifyItems',
-              type: 'MQ<string>',
-              description: 'Aligns the grid items along the inline axis',
-              required: null,
-            },
-            {
-              name: 'alignItems',
-              type: 'MQ<string>',
-              description: 'Aligns the grid items along the block axis',
-              required: null,
-            },
-            {
-              name: 'areas',
-              type: 'MQ<string>',
-              description:
-                'Specifies named grid areas, establishing the cells in the grid and assigning them names. Visually represents the layout of the grid',
-              required: null,
-            },
-            {
-              name: 'inline',
-              type: 'MQ<boolean>',
-              default: 'false',
-              description:
-                'Specifies whether the grid should be displayed inline',
-              required: null,
-            },
-          ],
-          overridesRows: [
-            {
-              attribute: 'width',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the width of the grid',
-            },
-            {
-              attribute: 'minWidth',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the minWidth of the grid',
-            },
-            {
-              attribute: 'maxWidth',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the maxWidth of the grid',
-            },
-            {
-              attribute: 'height',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the height of the grid',
-            },
-            {
-              attribute: 'minHeight',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the minHeight of the grid',
-            },
-            {
-              attribute: 'maxHeight',
-              type: 'MQ<string>',
-              default: '',
-              description: 'If provided, overrides the maxHeight of the grid',
-            },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
-          ],
+          propsRows: commonPropsRows,
+          overridesRows: commonOverridesRows,
         },
         {
           title: 'CardLink',
@@ -1142,4 +753,4 @@ const DividerComponent = (layoutProps: LayoutProps) => (
   />
 );
 
-export default DividerComponent;
+export default CardComposableComponent;
