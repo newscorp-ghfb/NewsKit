@@ -418,8 +418,6 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'CardContent',
-          summary:
-            'Props and Overrides same as CardComposable + can have stylePreset and transitionPreset as an override',
           propsRows: [
             {
               name: 'children',
@@ -464,24 +462,131 @@ const DividerComponent = (layoutProps: LayoutProps) => (
           summary: 'Props & Overrides same as StandaloneLink',
           propsRows: [
             {
-              name: 'expand',
-              type: 'boolean',
-              required: undefined,
-              default: 'false',
+              name: 'children',
+              type: 'string',
+              description:
+                'The content of the LinkStandalone is passed as the child of the component.',
+              required: true,
+            },
+            {
+              name: 'href',
+              type: 'string',
               description: (
                 <>
-                  Makes part of the card, or the whole card a link (CardLink).
-                  <br /> <br />
-                  It can be used multiple times, e.g. one for the headline and
-                  another for the image, text, any actions etc.
+                  If provided, the undefined link component turns into an anchor
+                  element. The provided URL or fragment identifier will be
+                  loaded when the link is clicked.
+                  <br />
+                  <br />
+                  Note - a link requires a href property to be passed in.
+                </>
+              ),
+              required: true,
+            },
+            {
+              name: 'noCrop',
+              type: 'boolean',
+              description:
+                'If true, the cropping applied to the LinkStandalone is removed.',
+              default: 'false',
+            },
+            {
+              name: 'eventContext',
+              type: 'object',
+              description: (
+                <>
+                  Allows users to add extra event data to a LinkStandalone&#39;s
+                  click events.
                 </>
               ),
             },
             {
-              name: 'children',
-              type: 'React.ReactNode',
-              required: true,
-              description: 'The card content…',
+              name: 'eventOriginator',
+              type: 'string',
+              description: (
+                <>
+                  Allows users to add event originator custom name e.g.
+                  &#39;newskit-standalone-link&#39;.
+                </>
+              ),
+              default: 'link',
+            },
+            {
+              name: 'external',
+              type: 'boolean',
+              description: (
+                <>
+                  If true, renders the &apos;external&apos; icon next to the
+                  LinkStandalone body content.
+                  <br />
+                  <br />
+                  Note - when a LinkStandalone renders, it automatically checks
+                  if the passed href is external or internal to the website
+                  where the link is used. If the href is external, an icon
+                  indicating this will be rendered after (trailing) the label.
+                </>
+              ),
+            },
+            {
+              name: 'textOnly',
+              type: 'boolean',
+              description: (
+                <>
+                  Allows the link to break into multiple lines.
+                  <br />
+                  <br />
+                  Note - when this is true custom icons can&apos;t be passed as
+                  children to the LinkStandalone component. Custom icons can
+                  still be added before or after the LinkStandalone component.
+                </>
+              ),
+            },
+          ],
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<string>',
+              default: 'linkInline',
+              description:
+                'If provided, overrides the stylePresets of the LinkStandalone.',
+            },
+            {
+              attribute: 'typographyPreset',
+              type: 'MQ<string>',
+              default: 'utilityLabel020',
+              description:
+                'If provided, overrides the typographyPreset of the LinkStandalone.',
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'MQ<string>',
+              default: ['fontColorChange', 'iconColorChange'],
+              description:
+                'If provided, overrides the transitionPresets of the LinkStandalone.',
+            },
+            {
+              attribute: 'spaceInline',
+              type: 'MQ<string>',
+              default: 'space010',
+              description:
+                'If provided overrides the gap between each element in the LinkStandalone. e.g. icon and text.',
+            },
+            {
+              attribute: 'externalIcon.size',
+              type: 'MQ<string>',
+              default: 'iconSize010',
+              description: (
+                <>
+                  If provided, overrides the size of the external icon, that
+                  appears after (trailing) the label of the LinkStandalone.
+                  <br />
+                  <br />
+                  Note - it is also possible to set the icon size by passing it
+                  directly as a size prop to the icon. However, by doing this
+                  you will override the <InlineCode>iconSize</InlineCode> passed
+                  from overrides.
+                </>
+              ),
             },
           ],
         },
