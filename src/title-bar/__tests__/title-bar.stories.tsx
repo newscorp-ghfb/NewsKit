@@ -52,31 +52,29 @@ export const StoryTitleBar = () => <TitleBar>{STRING}</TitleBar>;
 StoryTitleBar.storyName = 'Default';
 
 export const StoryTitleBarLink = () => (
-  <>
-    <StorybookPage columns=".5fr">
-      <StorybookCase title="Link">
-        <TitleBar actionItem={link}>{STRING}</TitleBar>
-      </StorybookCase>
-      <StorybookCase title="Button">
-        <TitleBar actionItem={button}>{STRING}</TitleBar>
-      </StorybookCase>
-      <StorybookCase title="Icon">
-        <TitleBar>
-          <IconContainer>
-            {STRING}
-            <IconFilledStarOutline
-              overrides={{size: 'iconSize020', marginInlineStart: 'space030'}}
-            />
-          </IconContainer>
-        </TitleBar>
-      </StorybookCase>
-      <StorybookCase title="Action hidden in SM and MD">
-        <TitleBar hideActionItemOn={{sm: true, md: true}} actionItem={button}>
+  <StorybookPage columns=".5fr">
+    <StorybookCase title="Link">
+      <TitleBar actionItem={link}>{STRING}</TitleBar>
+    </StorybookCase>
+    <StorybookCase title="Button">
+      <TitleBar actionItem={button}>{STRING}</TitleBar>
+    </StorybookCase>
+    <StorybookCase title="Icon">
+      <TitleBar>
+        <IconContainer>
           {STRING}
-        </TitleBar>
-      </StorybookCase>
-    </StorybookPage>
-  </>
+          <IconFilledStarOutline
+            overrides={{size: 'iconSize020', marginInlineStart: 'space030'}}
+          />
+        </IconContainer>
+      </TitleBar>
+    </StorybookCase>
+    <StorybookCase title="Action hidden in SM and MD">
+      <TitleBar hideActionItemOn={{sm: true, md: true}} actionItem={button}>
+        {STRING}
+      </TitleBar>
+    </StorybookCase>
+  </StorybookPage>
 );
 StoryTitleBarLink.storyName = 'Variations';
 
