@@ -100,7 +100,6 @@ export const parameters = {
   },
   viewMode: 'docs',
   percy: {
-    //include: 'skip-percy-tests',
     ...(SKIP_GITHUB_CHECK ? {include: 'skip-percy-tests'} : {}),
   },
 };
