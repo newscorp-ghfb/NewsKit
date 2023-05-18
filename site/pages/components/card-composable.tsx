@@ -4,10 +4,7 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {
-  OverridesRowsProps,
-  PropsRowsProps,
-} from '../../components/component-api';
+import {OverridesRowsProps} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {UnorderedList, InlineMessage, LinkInline} from 'newskit';
 import {Link} from '../../components/link';
