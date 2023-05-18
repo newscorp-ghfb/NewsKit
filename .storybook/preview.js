@@ -108,27 +108,6 @@ export const parameters = {
   viewMode: 'docs',
   percy: {
     ...(SKIP_GITHUB_CHECK ? {include: 'skip-percy-tests'} : {}),
-    include: [
-      // 'Components/Video Player: Overrides',
-      // 'Components/Video Player: Playlist',
-      // 'Components/Video Player: Default',
-      // 'Components/CardComposable: Default',
-      // 'Components/CardComposable: Card areas',
-      // 'Components/CardComposable: Variations',
-      // 'Components/CardComposable: Inset card',
-      // 'Components/CardComposable: Layout',
-      // 'Components/CardComposable: Span',
-      // 'Components/CardComposable: Order',
-      // 'Components/CardComposable: Responsive card',
-      // 'Components/CardComposable: Logical props',
-      // 'Components/CardComposable: Styling overrides',
-      // 'Components/CardComposable: Other story',
-      // 'Components/audio-player-composable: audio-player',
-      // 'Components/audio-player-composable: audio-player-sub-components',
-      // 'Components/audio-player-composable: audio-player-with-initial-props',
-      // 'Components/audio-player-composable: audio-player-overrides',
-      // 'Components/audio-player-composable: audio-player-loading-state',
-    ],
   },
 };
 
