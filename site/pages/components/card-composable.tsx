@@ -4,51 +4,14 @@ import {MetaStatus} from '../../components/meta/types';
 import {LayoutProps} from '../../components/layout';
 import {ComponentPageTemplate} from '../../templates/component-page-template/component-page-template';
 import {getIllustrationComponent} from '../../components/illustrations/illustration-loader';
-import {OverridesRowsProps} from '../../components/component-api';
+import {
+  OverridesRowsProps,
+  PropsRowsProps,
+} from '../../components/component-api';
 import {commonLogicalProps} from '../../components/component-api/common-logical-props';
 import {UnorderedList, InlineMessage, LinkInline} from 'newskit';
 import {Link} from '../../components/link';
 import {InlineCode} from '../../components/markdown-elements';
-
-export const commonOverridesRows = [
-  {
-    attribute: 'width',
-    type: 'MQ<string>',
-    default: '',
-    description: 'If provided, overrides the width of the grid',
-  },
-  {
-    attribute: 'minWidth',
-    type: 'MQ<string>',
-    default: '',
-    description: 'If provided, overrides the minWidth of the grid',
-  },
-  {
-    attribute: 'maxWidth',
-    type: 'MQ<string>',
-    default: '',
-    description: 'If provided, overrides the maxWidth of the grid',
-  },
-  {
-    attribute: 'height',
-    type: 'MQ<string>',
-    default: '',
-    description: 'If provided, overrides the height of the grid',
-  },
-  {
-    attribute: 'minHeight',
-    type: 'MQ<string>',
-    default: '',
-    description: 'If provided, overrides the minHeight of the grid',
-  },
-  {
-    attribute: 'maxHeight',
-    type: 'MQ<string>',
-    default: '',
-    description: 'If provided, overrides the maxHeight of the grid',
-  },
-  ...(commonLogicalProps() as OverridesRowsProps[]),
-];
 
 const commonPropsRows = [
   {
@@ -189,6 +152,46 @@ const commonPropsRows = [
     description: 'Specifies whether the grid should be displayed inline',
     required: null,
   },
+];
+
+const commonOverridesRows = [
+  {
+    attribute: 'width',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the width of the grid',
+  },
+  {
+    attribute: 'minWidth',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the minWidth of the grid',
+  },
+  {
+    attribute: 'maxWidth',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the maxWidth of the grid',
+  },
+  {
+    attribute: 'height',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the height of the grid',
+  },
+  {
+    attribute: 'minHeight',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the minHeight of the grid',
+  },
+  {
+    attribute: 'maxHeight',
+    type: 'MQ<string>',
+    default: '',
+    description: 'If provided, overrides the maxHeight of the grid',
+  },
+  ...(commonLogicalProps() as OverridesRowsProps[]),
 ];
 
 const CardComposableComponent = (layoutProps: LayoutProps) => (
@@ -564,6 +567,7 @@ const CardComposableComponent = (layoutProps: LayoutProps) => (
               description:
                 'The card requires to have at least a heading provided.',
             },
+            ...commonPropsRows,
           ],
           overridesRows: [
             {
@@ -579,7 +583,7 @@ const CardComposableComponent = (layoutProps: LayoutProps) => (
               default: 'backgroundColorChange',
               description: '',
             },
-            ...(commonLogicalProps() as OverridesRowsProps[]),
+            ...commonOverridesRows,
           ],
           propsFooter: (
             <>
@@ -599,18 +603,95 @@ const CardComposableComponent = (layoutProps: LayoutProps) => (
         },
         {
           title: 'CardContent',
-          propsRows: commonPropsRows,
-          overridesRows: commonOverridesRows,
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              required: true,
+              description: 'The card content….',
+            },
+            ...commonPropsRows,
+          ],
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<String>',
+              default: 'cardContainer',
+              description:
+                'If provided, overrides the stylePreset of the card.',
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'String | String[]',
+              default: 'backgroundColorChange',
+              description: '',
+            },
+            ...commonOverridesRows,
+          ],
         },
         {
           title: 'CardMedia',
-          propsRows: commonPropsRows,
-          overridesRows: commonOverridesRows,
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              required: undefined,
+              description:
+                'The card media can have children in that case it will replace the default Image component.',
+            },
+            {
+              name: 'media',
+              type: 'ImageProps',
+              required: undefined,
+              description:
+                'If this parameter is provided as ImageProps object (see Image documentation), it will render the media as an image.',
+            },
+            ...commonPropsRows,
+          ],
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<String>',
+              default: 'cardContainer',
+              description:
+                'If provided, overrides the stylePreset of the card.',
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'String | String[]',
+              default: 'backgroundColorChange',
+              description: '',
+            },
+            ...commonOverridesRows,
+          ],
         },
         {
           title: 'CardActions',
-          propsRows: commonPropsRows,
-          overridesRows: commonOverridesRows,
+          propsRows: [
+            {
+              name: 'children',
+              type: 'React.ReactNode',
+              required: true,
+              description: 'The card actions children…',
+            },
+            ...commonPropsRows,
+          ],
+          overridesRows: [
+            {
+              attribute: 'stylePreset',
+              type: 'MQ<String>',
+              default: 'cardContainer',
+              description:
+                'If provided, overrides the stylePreset of the card.',
+            },
+            {
+              attribute: 'transitionPreset',
+              type: 'String | String[]',
+              default: 'backgroundColorChange',
+              description: '',
+            },
+            ...commonOverridesRows,
+          ],
         },
         {
           title: 'CardLink',
