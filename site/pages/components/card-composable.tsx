@@ -432,7 +432,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'CardMedia',
           summary:
-            'Props and Overrides same as GridLayout + can have stylePreset and transitionPreset as an override',
+            'Props and Overrides same as CardComposable component + can have stylePreset and transitionPreset as an override',
           propsRows: [
             {
               name: 'children',
@@ -453,7 +453,7 @@ const DividerComponent = (layoutProps: LayoutProps) => (
         {
           title: 'CardActions',
           summary:
-            'Props and Overrides same as GridLayout + can have stylePreset and transitionPreset as an override',
+            'Props and Overrides same as CardComposable component + can have stylePreset and transitionPreset as an override',
           propsRows: [
             {
               name: 'children',
