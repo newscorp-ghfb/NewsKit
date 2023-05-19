@@ -50,7 +50,14 @@ export const parameters = {
   options: {
     storySort: {
       method: 'alphabetical',
-      order: ['Welcome', 'Components', 'Utilities', 'Deprecated', '*'],
+      order: [
+        'Welcome',
+        'Components',
+        'Utilities',
+        'Composed',
+        'Deprecated',
+        '*',
+      ],
     },
   },
   backgrounds: {
