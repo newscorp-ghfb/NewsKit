@@ -1,0 +1,22 @@
+<svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3517_104362)">
+<path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground020)"/>
+<rect x="472" y="70" width="547" height="697" rx="12" fill="var(--color-illustrationInterface010)"/>
+<path d="M505 609.397C505 604.875 508.673 601.209 513.204 601.209H978.796C983.327 601.209 987 604.875 987 609.397C987 613.919 983.327 617.584 978.796 617.584H513.204C508.673 617.584 505 613.919 505 609.397Z" fill="var(--color-illustrationInterface030)"/>
+<path d="M505 647.604C505 643.082 508.673 639.417 513.204 639.417H978.796C983.327 639.417 987 643.082 987 647.604C987 652.126 983.327 655.792 978.796 655.792H513.204C508.673 655.792 505 652.126 505 647.604Z" fill="var(--color-illustrationInterface030)"/>
+<path d="M505 571.187C505 566.666 508.673 563 513.204 563H978.796C983.327 563 987 566.666 987 571.187C987 575.709 983.327 579.375 978.796 579.375H513.204C508.673 579.375 505 575.709 505 571.187Z" fill="var(--color-illustrationInterface030)"/>
+<path d="M505 685.813C505 681.291 508.673 677.625 513.204 677.625H726.487C731.017 677.625 734.69 681.291 734.69 685.813C734.69 690.334 731.017 694 726.487 694H513.204C508.673 694 505 690.334 505 685.813Z" fill="var(--color-illustrationInterface030)"/>
+<path d="M505 449.5C505 442.044 511.252 436 518.965 436H973.035C980.748 436 987 442.044 987 449.5C987 456.956 980.748 463 973.035 463H518.965C511.252 463 505 456.956 505 449.5Z" fill="var(--color-illustrationInterface070)"/>
+<path d="M505 510C505 502.268 511.236 496 518.929 496H789.071C796.764 496 803 502.268 803 510C803 517.732 796.764 524 789.071 524H518.929C511.236 524 505 517.732 505 510Z" fill="var(--color-illustrationInterface070)"/>
+<path d="M472 82C472 75.3726 477.373 70 484 70H1007C1013.63 70 1019 75.3726 1019 82V363H472V82Z" fill="var(--color-illustrationInterface030)"/>
+<rect x="472" y="363" width="547" height="67" fill="var(--color-green030)"/>
+<rect x="472" y="700" width="270" height="32" transform="rotate(-90 472 700)" fill="var(--color-green030)"/>
+<rect x="987" y="700" width="270" height="32" transform="rotate(-90 987 700)" fill="var(--color-green030)"/>
+<path d="M472 700H1019V755C1019 761.627 1013.63 767 1007 767H484C477.373 767 472 761.627 472 755V700Z" fill="var(--color-green030)"/>
+</g>
+<defs>
+<clipPath id="clip0_3517_104362">
+<rect width="1490" height="838" fill="white"/>
+</clipPath>
+</defs>
+</svg>
