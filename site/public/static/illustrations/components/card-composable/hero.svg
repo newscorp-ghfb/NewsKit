@@ -1,0 +1,11 @@
+<svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1490" height="838" fill="var(--color-illustrationBackground020)"/>
+<rect x="550.131" y="171.036" width="390.869" height="497.893" rx="12" fill="var(--color-illustrationPalette040)"/>
+<path d="M550 181C550 174.373 555.373 169 562 169H929C935.627 169 941 174.373 941 181V379H550V181Z" fill="var(--color-illustrationPalette060)"/>
+<rect x="581.535" y="410.495" width="325.822" height="20" rx="10" fill="var(--color-white)"/>
+<rect x="581.535" y="453.676" width="213.943" height="20" rx="10" fill="var(--color-white)"/>
+<rect x="581.535" y="536.114" width="325.822" height="11.7767" rx="5.88835" fill="var(--color-illustrationPalette010)"/>
+<rect x="581.535" y="563.592" width="325.822" height="11.7767" rx="5.88835" fill="var(--color-illustrationPalette010)"/>
+<rect x="581.535" y="508.633" width="325.822" height="11.7767" rx="5.88835" fill="var(--color-illustrationPalette010)"/>
+<rect x="581.535" y="591.071" width="164.874" height="11.7767" rx="5.88835" fill="var(--color-illustrationPalette010)"/>
+</svg>
