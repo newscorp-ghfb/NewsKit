@@ -27,6 +27,14 @@ export type CSSQueryRules<T> = {
 };
 
 export type ContainerQueryProps = {
-  containerType?: 'normal' | 'inline-size' | 'size';
+  containerType?:
+    | `normal`
+    | `inline-size`
+    | `size`
+    | `inherit`
+    | `initial`
+    | `unset`
+    | `revert`
+    | `revert-layer`;
   containerName?: string;
 };

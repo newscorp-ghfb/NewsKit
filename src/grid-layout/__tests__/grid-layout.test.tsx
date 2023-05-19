@@ -55,7 +55,7 @@ describe('GridLayout', () => {
     const props: GridLayoutProps = {
       areas: `
         "A A"
-      "B C"
+        "B C"
         "D E"`,
       children: areasChildren,
     };
