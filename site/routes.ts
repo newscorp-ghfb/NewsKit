@@ -582,6 +582,14 @@ export const routes = [
             illustration: 'components/hero-card-illustration',
           },
           {
+            title: 'Card Composable',
+            page: true,
+            id: '/components/card-composable',
+            description:
+              'Cards contain preview content and actions relating to a specific subject.',
+            illustration: 'components/hero-card-illustration',
+          },
+          {
             title: 'Divider',
             page: true,
             id: '/components/divider',

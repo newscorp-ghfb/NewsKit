@@ -1,0 +1,21 @@
+<svg id="nksvg" width="1490" height="838" viewBox="0 0 1490 838" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3517_104801)">
+<path d="M0 0H1490V838H0V0Z" fill="var(--color-illustrationBackground020)"/>
+<rect x="337" y="443" width="240" height="240" rx="20" fill="var(--color-illustrationInterface060)"/>
+<rect x="337" y="155" width="240" height="240" rx="20" fill="var(--color-illustrationInterface060)"/>
+<rect x="625" y="442" width="240" height="240" rx="20" fill="var(--color-illustrationInterface060)"/>
+<rect x="913" y="442" width="240" height="240" rx="20" fill="var(--color-illustrationInterface060)"/>
+<rect x="625" y="155" width="240" height="240" rx="20" fill="var(--color-illustrationInterface060)"/>
+<rect x="913" y="155" width="240" height="240" rx="20" fill="var(--color-illustrationInterface060)"/>
+<path d="M337 433L337 405L1153 405L1153 433L337 433Z" fill="var(--color-green030)"/>
+<path opacity="0.8" d="M587 155H615V395H587V155Z" fill="var(--color-red030)"/>
+<path opacity="0.8" d="M875 155H903V395H875V155Z" fill="var(--color-red030)"/>
+<path opacity="0.8" d="M587 443H615V683H587V443Z" fill="var(--color-red030)"/>
+<path opacity="0.8" d="M875 443H903V683H875V443Z" fill="var(--color-red030)"/>
+</g>
+<defs>
+<clipPath id="clip0_3517_104801">
+<rect width="1490" height="838" fill="white"/>
+</clipPath>
+</defs>
+</svg>
