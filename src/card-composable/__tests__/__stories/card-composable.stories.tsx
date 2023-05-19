@@ -1308,6 +1308,11 @@ TheSunStory.storyName = 'The Sun';
 export default {
   title: 'Components/CardComposable',
   component: () => 'None',
+  // shared Percy config params to ensure image has loaded before snapshot taken
+  parameters: {
+    // the img is the first child of the picture when loaded, otherwise second
+    percy: {waitForSelector: 'picture img:nth-child(1)'},
+  },
   decorators: [
     (
       Story: StoryType,
