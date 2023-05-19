@@ -625,8 +625,13 @@ const CardComposableComponent = (layoutProps: LayoutProps) => (
               name: 'media',
               type: 'ImageProps',
               required: undefined,
-              description:
-                'If this parameter is provided as ImageProps object (see Image documentation), it will render the media as an image.',
+              description: (
+                <>
+                  If this parameter is provided as{' '}
+                  <InlineCode>ImageProps</InlineCode> object (see Image
+                  documentation), it will render the media as an image.
+                </>
+              ),
             },
             ...commonPropsRows,
           ],
@@ -643,22 +648,7 @@ const CardComposableComponent = (layoutProps: LayoutProps) => (
             },
             ...commonPropsRows,
           ],
-          overridesRows: [
-            {
-              attribute: 'stylePreset',
-              type: 'MQ<String>',
-              default: 'cardContainer',
-              description:
-                'If provided, overrides the stylePreset of the card.',
-            },
-            {
-              attribute: 'transitionPreset',
-              type: 'String | String[]',
-              default: 'backgroundColorChange',
-              description: '',
-            },
-            ...commonOverridesRows,
-          ],
+          overridesRows: [...commonOverridesRows],
         },
         {
           title: 'CardLink',
