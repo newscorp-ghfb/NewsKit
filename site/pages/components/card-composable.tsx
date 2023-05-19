@@ -609,22 +609,7 @@ const CardComposableComponent = (layoutProps: LayoutProps) => (
             },
             ...commonPropsRows,
           ],
-          overridesRows: [
-            {
-              attribute: 'stylePreset',
-              type: 'MQ<String>',
-              default: 'cardContainer',
-              description:
-                'If provided, overrides the stylePreset of the card.',
-            },
-            {
-              attribute: 'transitionPreset',
-              type: 'String | String[]',
-              default: 'backgroundColorChange',
-              description: '',
-            },
-            ...commonOverridesRows,
-          ],
+          overridesRows: [...commonOverridesRows],
         },
         {
           title: 'CardMedia',
@@ -645,22 +630,7 @@ const CardComposableComponent = (layoutProps: LayoutProps) => (
             },
             ...commonPropsRows,
           ],
-          overridesRows: [
-            {
-              attribute: 'stylePreset',
-              type: 'MQ<String>',
-              default: 'cardContainer',
-              description:
-                'If provided, overrides the stylePreset of the card.',
-            },
-            {
-              attribute: 'transitionPreset',
-              type: 'String | String[]',
-              default: 'backgroundColorChange',
-              description: '',
-            },
-            ...commonOverridesRows,
-          ],
+          overridesRows: [...commonOverridesRows],
         },
         {
           title: 'CardActions',
@@ -695,10 +665,24 @@ const CardComposableComponent = (layoutProps: LayoutProps) => (
           summary: 'Props & Overrides same as StandaloneLink',
           propsRows: [
             {
+              name: 'expand',
+              type: 'boolean',
+              default: 'false',
+              description: (
+                <>
+                  Makes part of the card, or the whole card a link (CardLink).
+                  <br />
+                  <br />
+                  It can be used multiple times, e.g. one for the headline and
+                  another for the image, text, any actions etc.
+                </>
+              ),
+              required: undefined,
+            },
+            {
               name: 'children',
               type: 'string',
-              description:
-                'The content of the LinkStandalone is passed as the child of the component.',
+              description: 'The card content…',
               required: true,
             },
             {
