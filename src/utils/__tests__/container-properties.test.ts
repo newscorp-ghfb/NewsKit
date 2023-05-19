@@ -21,7 +21,7 @@ describe('containerProps', () => {
 
     expect(result).toEqual(expected);
   });
-  test('should return default values when props is undefined', () => {
+  test('should return undefined values when props is undefined', () => {
     const props = undefined;
 
     // @ts-ignore next-line
