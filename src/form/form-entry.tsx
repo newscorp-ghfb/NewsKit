@@ -1,10 +1,12 @@
-import React, {useContext, useEffect, useRef} from 'react';
+import React, {useContext, useEffect, useRef, useState} from 'react';
 import {useFormContext} from 'react-hook-form';
 import {FormValidationContext} from './context';
 import {FieldsHadErrorObject, FormInputState} from './types';
 import {FormEntryProps} from '../text-field/types';
 
 export const FormEntry = ({name, rules, children}: FormEntryProps) => {
+  const [hasContent, setHasContent] = useState<boolean>(false);
+
   const {validationMode, setFieldsHadError, fieldsHadError} = useContext(
     FormValidationContext,
   );
@@ -71,6 +73,12 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
   };
 
   const eventHandlerOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.value !== '') {
+      setHasContent(true);
+    } else if (hasContent) {
+      setHasContent(false);
+    }
+
     if (onChange) {
       onChange(e);
     }
@@ -91,5 +99,6 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
     ref: updateRef,
     error: errorText as string | undefined,
     refObject,
+    hasContent,
   });
 };

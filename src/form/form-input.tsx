@@ -34,6 +34,15 @@ import {CharacterCountProps, CharacterCount} from '../character-count';
 
 const useFormFieldContext = () => useContext(FormInputContext);
 
+const setState = (
+  state: FormInputState,
+  isRequired: boolean | undefined,
+  hasContent: boolean,
+) => {
+  if (!isRequired && !hasContent) return undefined;
+  return state;
+};
+
 export type FormInputProps = {
   state?: FormInputState;
   size?: TextFieldSize;
@@ -68,13 +77,21 @@ const ThemelessFormInput = ({
 
   return (
     <FormEntry name={name} rules={rules}>
-      {({ref, state: stateContext, onChange, onBlur, error, refObject}) => {
-        const state = stateProp || stateContext;
+      {({
+        ref,
+        state: stateContext,
+        onChange,
+        onBlur,
+        error,
+        refObject,
+        hasContent,
+      }) => {
+        const isRequired = rules && rules.required !== undefined;
+        const state =
+          stateProp || setState(stateContext, isRequired, hasContent);
         const labelId = `${currentID}-label`;
 
         const statusIcon = getStatusIcon({state, iconSize: validationIconSize});
-
-        const isRequired = rules && rules.required !== undefined;
 
         const inputFieldContext = {
           name,
