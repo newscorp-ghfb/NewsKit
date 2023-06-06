@@ -89,6 +89,13 @@ const ThemelessFormInput = ({
         const isRequired = rules && rules.required !== undefined;
         const state =
           stateProp || setState(stateContext, isRequired, hasContent);
+        /* istanbul ignore next */
+        if (name === 'line1' || name === 'line2') {
+          console.log('🔥 👉 form-input', name);
+          console.log('🔥 stateProp', stateProp);
+          console.log('🔥 stateContext', stateContext, isRequired, hasContent);
+          console.log('🔥 state', state);
+        }
         const labelId = `${currentID}-label`;
 
         const statusIcon = getStatusIcon({state, iconSize: validationIconSize});

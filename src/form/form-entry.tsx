@@ -48,6 +48,13 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
   } else if (valid) {
     state = 'valid';
   }
+  /* istanbul ignore next */
+  if (name === 'line1' || name === 'line2') {
+    console.log('🔥 👉', name);
+    console.log('🔥 valid', valid);
+    console.log('🔥 invalid', invalid);
+    console.log('🔥 state', state);
+  }
 
   const eventHandlerOnBlur = (e: React.FocusEvent<HTMLInputElement>) => {
     // RHF's onBlur function
