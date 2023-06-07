@@ -38,21 +38,8 @@ const setState = (
   state: FormInputState,
   isRequired: boolean | undefined,
   hasContent: boolean,
-  name: string | undefined,
 ) => {
-  /* istanbul ignore next */
-  if (name === 'line1') {
-    console.log('🔥🔥 state', state);
-    console.log('🔥🔥 isRequired', isRequired);
-    console.log('🔥🔥 hasContent', hasContent);
-  }
-  if (!isRequired && !hasContent && state === 'valid') {
-    /* istanbul ignore next */
-    if (name === 'line1') console.log('🔥🔥 returns undefined');
-    return undefined;
-  }
-  /* istanbul ignore next */
-  if (name === 'line1') console.log('🔥🔥 returns un altered state', state);
+  if (!isRequired && !hasContent && state === 'valid') return undefined;
   return state;
 };
 
@@ -101,7 +88,7 @@ const ThemelessFormInput = ({
       }) => {
         const isRequired = rules && rules.required !== undefined;
         const state =
-          stateProp || setState(stateContext, isRequired, hasContent, name);
+          stateProp || setState(stateContext, isRequired, hasContent);
         const labelId = `${currentID}-label`;
 
         const statusIcon = getStatusIcon({state, iconSize: validationIconSize});

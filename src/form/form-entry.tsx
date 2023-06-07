@@ -16,13 +16,20 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
     register: nameField => ({nameField}),
   };
 
-  const {errors, isSubmitSuccessful} = formState || {};
+  const {errors, isSubmitSuccessful, defaultValues} = formState || {};
   const {ref: inputRef, onBlur, onChange} = register(name!, rules);
   const refObject = useRef<HTMLInputElement | null>(null);
 
   const hadError = name ? fieldsHadError[name]?.hadError : undefined;
 
   const errorText = name && errors?.[name]?.message;
+
+  useEffect(() => {
+    if (defaultValues && name) {
+      setHasContent(defaultValues[name] ? true : false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     if (!hadError && errorText && name) {
@@ -47,13 +54,6 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
     state = 'invalid';
   } else if (valid) {
     state = 'valid';
-  }
-  /* istanbul ignore next */
-  if (name === 'line1') {
-    console.log('🔥 👉', name);
-    console.log('🔥 valid', valid);
-    console.log('🔥 invalid', invalid);
-    console.log('🔥 state', state);
   }
 
   const eventHandlerOnBlur = (e: React.FocusEvent<HTMLInputElement>) => {
