@@ -479,7 +479,7 @@ describe('Form', () => {
     expect(fragment).toMatchSnapshot();
   });
 
-  test('render optional textfield correctly', async () => {
+  test('render optional textfield correctly with and without validation icon', async () => {
     const mockOnSubmit = jest.fn();
     const props = {
       onSubmit: mockOnSubmit,
@@ -518,7 +518,7 @@ describe('Form', () => {
     expect(queryByTestId('tick-icon')).toBe(null);
   });
 
-  test('render optional textfield with default correctly', async () => {
+  test('render optional textfield with default value correctly', async () => {
     const mockOnSubmit = jest.fn();
     const props = {
       onSubmit: mockOnSubmit,

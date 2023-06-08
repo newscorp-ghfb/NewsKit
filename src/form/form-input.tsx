@@ -39,7 +39,8 @@ const setState = (
   isRequired: boolean | undefined,
   hasContent: boolean,
 ) => {
-  if (!isRequired && !hasContent && state === 'valid') return undefined;
+  const isOptionalAndEmpty = !isRequired && !hasContent && state === 'valid';
+  if (isOptionalAndEmpty) return undefined;
   return state;
 };
 
