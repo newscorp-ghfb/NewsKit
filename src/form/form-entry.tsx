@@ -16,20 +16,13 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
     register: nameField => ({nameField}),
   };
 
-  const {errors, isSubmitSuccessful, defaultValues} = formState || {};
+  const {errors, isSubmitSuccessful} = formState || {};
   const {ref: inputRef, onBlur, onChange} = register(name!, rules);
   const refObject = useRef<HTMLInputElement | null>(null);
 
   const hadError = name ? fieldsHadError[name]?.hadError : undefined;
 
   const errorText = name && errors?.[name]?.message;
-
-  useEffect(() => {
-    if (defaultValues && name) {
-      setHasContent(defaultValues[name] ? true : false);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   useEffect(() => {
     if (!hadError && errorText && name) {
@@ -93,6 +86,9 @@ export const FormEntry = ({name, rules, children}: FormEntryProps) => {
 
   // See https://react-hook-form.com/faqs#Howtosharerefusage
   const updateRef = (instance: HTMLInputElement) => {
+    if (instance?.name === name && instance?.value) {
+      setHasContent(true);
+    }
     if (inputRef) {
       inputRef(instance);
     }
