@@ -478,6 +478,75 @@ describe('Form', () => {
     });
     expect(fragment).toMatchSnapshot();
   });
+
+  test('render optional textfield correctly with and without validation icon', async () => {
+    const mockOnSubmit = jest.fn();
+    const props = {
+      onSubmit: mockOnSubmit,
+    };
+    const body = (
+      <>
+        <FormInput name="email">
+          <FormInputLabel>Email</FormInputLabel>
+          <FormInputTextField data-testid="email-input" />
+          <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+        </FormInput>
+        <Button data-testid="submit" type="submit">
+          Submit
+        </Button>
+      </>
+    );
+    const {getByTestId, findByTestId, queryByTestId} = renderWithImplementation(
+      Form,
+      {
+        ...props,
+        children: (body as unknown) as Array<React.ReactElement>,
+      },
+    );
+    fireEvent.change(getByTestId('email-input'), {
+      target: {value: 'some@email.com'},
+    });
+    fireEvent.click(getByTestId('submit'));
+    await waitFor(() => expect(mockOnSubmit).toBeCalledTimes(1));
+    expect(await findByTestId('tick-icon')).not.toBeNull();
+
+    fireEvent.change(getByTestId('email-input'), {
+      target: {value: ''},
+    });
+    fireEvent.click(getByTestId('submit'));
+    await waitFor(() => expect(mockOnSubmit).toBeCalledTimes(2));
+    expect(queryByTestId('tick-icon')).toBe(null);
+  });
+
+  test('render optional textfield with default value correctly', async () => {
+    const mockOnSubmit = jest.fn();
+    const props = {
+      onSubmit: mockOnSubmit,
+      defaultValues: {
+        email: 'some@email.com',
+      },
+    };
+    const body = (
+      <>
+        <FormInput name="email">
+          <FormInputLabel>Email</FormInputLabel>
+          <FormInputTextField data-testid="email-input" />
+          <FormInputAssistiveText>Assistive Text</FormInputAssistiveText>
+        </FormInput>
+        <Button data-testid="submit" type="submit">
+          Submit
+        </Button>
+      </>
+    );
+    const {getByTestId, findByTestId} = renderWithImplementation(Form, {
+      ...props,
+      children: (body as unknown) as Array<React.ReactElement>,
+    });
+
+    fireEvent.click(getByTestId('submit'));
+    await waitFor(() => expect(mockOnSubmit).toBeCalledTimes(1));
+    expect(await findByTestId('tick-icon')).not.toBeNull();
+  });
 });
 
 describe('FormInput', () => {

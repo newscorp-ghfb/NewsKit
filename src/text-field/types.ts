@@ -35,6 +35,7 @@ type FormEntryChildrenProps = {
   ref: UseFormRegisterReturn['ref'];
   refObject: React.RefObject<HTMLInputElement>;
   error?: string;
+  hasContent: boolean;
 };
 
 type FormValidationRules = Record<string, string | object>;
