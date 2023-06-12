@@ -47,6 +47,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       // force select in controlled mode
       controlled = false,
       labelId,
+      panelPosition = 'bottom',
       ...restProps
     } = props;
 
@@ -211,10 +212,11 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [allowBlur, onBlur],
     );
 
+    // TODO: x and y
     const {x, y, reference, strategy, update, refs} = useFloating({
       strategy: 'absolute',
       open: isOpen,
-      placement: 'bottom-start',
+      placement: panelPosition ? `${panelPosition}-start` : 'bottom-start',
       middleware: [
         offset(0),
         shift(),
@@ -297,6 +299,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
           isOpen={isOpen}
           {...downshiftButtonPropsExceptRef}
           {...restProps}
+          style={{border: '1px solid red'}}
         />
         <LayerElement>
           <SelectPanel

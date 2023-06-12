@@ -57,6 +57,7 @@ export interface SelectProps extends CommonInputProps, EventData {
   // force select in controlled mode
   controlled?: boolean;
   labelId?: string;
+  panelPosition?: 'bottom' | 'top';
 }
 
 export interface SelectOptionProps {
