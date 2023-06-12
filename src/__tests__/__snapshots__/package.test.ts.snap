@@ -45,6 +45,5 @@ Object {
   },
   "sideEffects": false,
   "types": "cjs/index.d.ts",
-  "version": "7.3.0",
 }
 `;
