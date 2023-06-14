@@ -230,7 +230,7 @@ const ItalicTextBlock = styled(TextBlock)\`
 font-style:italic;
 \`;
 
-<ItalicTextBlock stylePreset="editorialParagraph010"> This Text is italic</ItalicTextBlock>`}
+<ItalicTextBlock typographyPreset="editorialParagraph010"> This Text is italic</ItalicTextBlock>`}
           </Code>
         </ContentSecondary>
       </ContentSection>
