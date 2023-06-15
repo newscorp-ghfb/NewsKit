@@ -3,7 +3,8 @@ const {newPackageJson} = require('../../scripts/build-package-json-support');
 describe('package.json updated', () => {
   test('remind developer that dependenciesNotToBeIncluded array may need updating', () => {
     const packageJson = newPackageJson();
-    expect(packageJson).toMatchSnapshot();
+    const {version, ...restOfPackage} = packageJson;
+    expect(restOfPackage).toMatchSnapshot();
   });
 });
 
