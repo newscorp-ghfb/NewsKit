@@ -8,6 +8,7 @@ import {
   offset,
   size as floatingSize,
   autoPlacement,
+  flip,
 } from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
@@ -218,9 +219,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       middleware: [
         offset(0),
         shift(),
-        autoPlacement({
-          allowedPlacements: ['top-start', 'bottom-start'],
-        }),
+        flip(),
         floatingSize({
           apply({rects, elements}) {
             Object.assign(elements.floating.style, {
