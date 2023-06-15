@@ -212,29 +212,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [allowBlur, onBlur],
     );
 
-    // const flipIfNoPanelPosition = (panelPosition: string | undefined) => ({
-    //   name: 'flipIfNoPanelPosition',
-    //   fn: ({x, y}) =>
-    //     panelPosition ? {x, y} : flip({fallbackPlacements: ['top']}),
-    // });
-
-    // const middlewares: Middleware[] = [
-    //   offset(0),
-    //   shift(),
-    //   flipIfNoPanelPosition(panelPosition),
-    //   floatingSize({
-    //     apply({rects, elements}) {
-    //       Object.assign(elements.floating.style, {
-    //         // when the panel is inside a modal we want to be 100%
-    //         width: elements.floating.classList.contains('modal-panel')
-    //           ? /* istanbul ignore next */
-    //             '100%'
-    //           : `${rects.reference.width}px`,
-    //       });
-    //     },
-    //   }),
-    // ];
-
+    /* istanbul ignore next */
     const noFlip = () => ({
       name: 'noFlip',
       fn({x, y}: {x: number; y: number}) {
