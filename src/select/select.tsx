@@ -7,7 +7,6 @@ import {
   shift,
   offset,
   size as floatingSize,
-  autoPlacement,
   flip,
 } from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
