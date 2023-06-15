@@ -32,6 +32,8 @@ export interface SelectButtonOverrides extends EnhancerOverrides {
 
 export interface SelectPanelOverrides extends LogicalProps {
   maxHeight?: MQ<string>;
+  minWidth?: MQ<string>;
+  maxWidth?: MQ<string>;
   stylePreset?: MQ<string>;
   /**
    * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.

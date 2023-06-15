@@ -941,6 +941,22 @@ export const StoryOverrides = () => {
         </Select>
         <AssistiveText id="id-ov-6-at">Assistive Text</AssistiveText>
       </StorybookCase>
+
+      <StorybookCase title="Min and Max width overrides">
+        <Label htmlFor="id-ov-7">Label</Label>
+        <Select
+          id="id-ov-7"
+          aria-describedby="id-ov-7-at"
+          overrides={{button: {width: '200px'}, panel: {minWidth: '300px'}}}
+        >
+          {items.map(item => (
+            <SelectOption key={item} value={item}>
+              {item}
+            </SelectOption>
+          ))}
+        </Select>
+        <AssistiveText id="id-ov-7-at">Assistive Text</AssistiveText>
+      </StorybookCase>
     </StorybookPage>
   );
 };
