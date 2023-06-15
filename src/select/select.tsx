@@ -47,6 +47,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       // force select in controlled mode
       controlled = false,
       labelId,
+      panelPosition,
       ...restProps
     } = props;
 
@@ -211,14 +212,46 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       [allowBlur, onBlur],
     );
 
+    // const flipIfNoPanelPosition = (panelPosition: string | undefined) => ({
+    //   name: 'flipIfNoPanelPosition',
+    //   fn: ({x, y}) =>
+    //     panelPosition ? {x, y} : flip({fallbackPlacements: ['top']}),
+    // });
+
+    // const middlewares: Middleware[] = [
+    //   offset(0),
+    //   shift(),
+    //   flipIfNoPanelPosition(panelPosition),
+    //   floatingSize({
+    //     apply({rects, elements}) {
+    //       Object.assign(elements.floating.style, {
+    //         // when the panel is inside a modal we want to be 100%
+    //         width: elements.floating.classList.contains('modal-panel')
+    //           ? /* istanbul ignore next */
+    //             '100%'
+    //           : `${rects.reference.width}px`,
+    //       });
+    //     },
+    //   }),
+    // ];
+
+    const noFlip = () => ({
+      name: 'noFlip',
+      fn({x, y}: {x: number; y: number}) {
+        return {x, y};
+      },
+    });
+
     const {x, y, reference, strategy, update, refs} = useFloating({
       strategy: 'absolute',
       open: isOpen,
-      placement: 'bottom-start',
+      placement: panelPosition ? `${panelPosition}-start` : 'bottom-start',
       middleware: [
         offset(0),
         shift(),
-        flip(),
+        {
+          ...(panelPosition ? noFlip() : flip()),
+        },
         floatingSize({
           apply({rects, elements}) {
             Object.assign(elements.floating.style, {
