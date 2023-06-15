@@ -367,26 +367,28 @@ StorySelectOptionsDisplay.storyName = 'Option display';
 export const StorySelectPanelPosition = () => (
   <StorybookPage>
     <StorybookCase title="Top">
-      <Label htmlFor="id-default">Label</Label>
+      <Label htmlFor="id-panelposition-1">Label</Label>
       <Select
-        aria-describedby="id-default-at"
-        id="id-default"
+        aria-describedby="id-panelposition-top-ad"
+        id="id-panelposition-1"
         panelPosition="top"
       >
         {itemsAsSelectOptions}
       </Select>
-      <AssistiveText id="id-default-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-panelposition-top-at">Assistive Text</AssistiveText>
     </StorybookCase>
     <StorybookCase title="Left">
-      <Label htmlFor="id-default">Label</Label>
+      <Label htmlFor="id-panelposition-2">Label</Label>
       <Select
-        aria-describedby="id-default-at"
-        id="id-default"
+        aria-describedby="id-panelposition-left-ad"
+        id="id-panelposition-2"
         panelPosition="left"
       >
         {itemsAsSelectOptions}
       </Select>
-      <AssistiveText id="id-default-at">Assistive Text</AssistiveText>
+      <AssistiveText id="id-panelposition-left-at">
+        Assistive Text
+      </AssistiveText>
     </StorybookCase>
   </StorybookPage>
 );
