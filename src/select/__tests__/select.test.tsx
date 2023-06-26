@@ -118,6 +118,23 @@ describe('Select', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('should render fixed panel position', async () => {
+    const props: SelectProps = {
+      children: defaultSelectOptions,
+      panelPosition: 'top',
+    };
+
+    const {getByTestId} = renderWithThemeInBody(Select, props);
+
+    await waitFor(() => {
+      fireEvent.click(getByTestId('select-button'));
+    });
+
+    const menuElement = getByTestId('select-panel') as any;
+
+    expect(menuElement).toMatchSnapshot();
+  });
+
   test('focus can be triggered with ref', async () => {
     const inputRef = createRef<HTMLInputElement>();
 

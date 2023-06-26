@@ -6,6 +6,7 @@ import {Override} from '../utils/overrides';
 import {ModalProps} from '../modal';
 import {EventData} from '../instrumentation';
 import {NewsKitIconProps} from '../icons';
+import {Side} from '@floating-ui/react-dom-interactions/';
 
 export type ButtonSelectSize = 'small' | 'medium' | 'large';
 
@@ -57,6 +58,7 @@ export interface SelectProps extends CommonInputProps, EventData {
   // force select in controlled mode
   controlled?: boolean;
   labelId?: string;
+  panelPosition?: Side;
 }
 
 export interface SelectOptionProps {

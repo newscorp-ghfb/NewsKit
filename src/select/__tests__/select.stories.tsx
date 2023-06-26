@@ -364,6 +364,36 @@ export const StorySelectOptionsDisplay = () => (
 );
 StorySelectOptionsDisplay.storyName = 'Option display';
 
+export const StorySelectPanelPosition = () => (
+  <StorybookPage>
+    <StorybookCase title="Top">
+      <Label htmlFor="id-panelposition-1">Label</Label>
+      <Select
+        aria-describedby="id-panelposition-top-ad"
+        id="id-panelposition-1"
+        panelPosition="top"
+      >
+        {itemsAsSelectOptions}
+      </Select>
+      <AssistiveText id="id-panelposition-top-at">Assistive Text</AssistiveText>
+    </StorybookCase>
+    <StorybookCase title="Left">
+      <Label htmlFor="id-panelposition-2">Label</Label>
+      <Select
+        aria-describedby="id-panelposition-left-ad"
+        id="id-panelposition-2"
+        panelPosition="left"
+      >
+        {itemsAsSelectOptions}
+      </Select>
+      <AssistiveText id="id-panelposition-left-at">
+        Assistive Text
+      </AssistiveText>
+    </StorybookCase>
+  </StorybookPage>
+);
+StorySelectPanelPosition.storyName = 'Panel position';
+
 export const StorySelectScreenReaderExample = () => (
   <StorybookPage>
     <StorybookCase title="With assistive text">
