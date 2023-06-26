@@ -24,6 +24,14 @@ import {Layer} from '../layer';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
 
+/* istanbul ignore next */
+const noFlip = () => ({
+  name: 'noFlip',
+  fn({x, y}: {x: number; y: number}) {
+    return {x, y};
+  },
+});
+
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
     const {
@@ -211,14 +219,6 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       },
       [allowBlur, onBlur],
     );
-
-    /* istanbul ignore next */
-    const noFlip = () => ({
-      name: 'noFlip',
-      fn({x, y}: {x: number; y: number}) {
-        return {x, y};
-      },
-    });
 
     const {x, y, reference, strategy, update, refs} = useFloating({
       strategy: 'absolute',
