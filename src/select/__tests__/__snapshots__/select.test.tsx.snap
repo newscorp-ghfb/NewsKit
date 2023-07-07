@@ -9088,6 +9088,153 @@ exports[`Select should render custom placeholder 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Select should render fixed panel position 1`] = `
+.emotion-0 {
+  position: absolute;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 4px;
+  padding-block: 8px;
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 16px 24px 0 rgba(10,10,10,0.08);
+  max-height: 272px;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  background-color: transparent;
+  color: #3B3B3B;
+  text-overflow: ellipsis;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  font-family: "DM Sans",sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding-inline: 12px;
+  padding-block: 8px;
+  min-height: 40px;
+}
+
+.emotion-1 * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-1:hover:not(:disabled) {
+  background-color: #F1F1F1;
+}
+
+.emotion-1:focus:not(:disabled) {
+  background-color: #F1F1F1;
+  border-color: #3358CC;
+}
+
+.emotion-1:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-1:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-1:active:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-1:disabled {
+  color: #ABABAB;
+}
+
+.emotion-1:selected:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #111111;
+}
+
+.emotion-1:selected:focus:not(:disabled) {
+  background-color: #ECF1FF;
+  border-color: #3358CC;
+}
+
+.emotion-1:selected:active:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-1:selected:focus:active:not(:disabled) {
+  background-color: #ECF1FF;
+}
+
+.emotion-1:selected:focus:hover:not(:disabled) {
+  background-color: #ECF1FF;
+  color: #111111;
+}
+
+<div
+  aria-describedby="mock-nk-1"
+  class="emotion-0"
+  data-testid="select-panel"
+  id="downshift-0-menu"
+  role="listbox"
+  style="top: 0px; left: 0px; position: absolute;"
+  tabindex="-1"
+>
+  <div
+    aria-selected="false"
+    class="emotion-1"
+    id="downshift-0-item-0"
+    role="option"
+    value="option 1"
+  >
+    <div>
+      option 1
+    </div>
+  </div>
+  <div
+    aria-selected="false"
+    class="emotion-1"
+    id="downshift-0-item-1"
+    role="option"
+    value="option 2"
+  >
+    <div>
+      option 2
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Select virtualize long list 1`] = `
 <DocumentFragment>
   .emotion-0 {

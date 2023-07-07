@@ -7,7 +7,7 @@ import {
   shift,
   offset,
   size as floatingSize,
-  autoPlacement,
+  flip,
 } from '@floating-ui/react-dom-interactions';
 import {SelectProps, SelectOptionProps} from './types';
 import {SelectPanel} from './select-panel';
@@ -23,6 +23,14 @@ import {get} from '../utils/get';
 import {Layer} from '../layer';
 import {getToken} from '../utils/get-token';
 import {useTheme} from '../theme';
+
+/* istanbul ignore next */
+const noFlip = () => ({
+  name: 'noFlip',
+  fn({x, y}: {x: number; y: number}) {
+    return {x, y};
+  },
+});
 
 const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
   (props, inputRef) => {
@@ -47,6 +55,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       // force select in controlled mode
       controlled = false,
       labelId,
+      panelPosition,
       ...restProps
     } = props;
 
@@ -214,13 +223,13 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
     const {x, y, reference, strategy, update, refs} = useFloating({
       strategy: 'absolute',
       open: isOpen,
-      placement: 'bottom-start',
+      placement: panelPosition ? `${panelPosition}-start` : 'bottom-start',
       middleware: [
         offset(0),
         shift(),
-        autoPlacement({
-          allowedPlacements: ['top-start', 'bottom-start'],
-        }),
+        {
+          ...(panelPosition ? noFlip() : flip()),
+        },
         floatingSize({
           apply({rects, elements}) {
             Object.assign(elements.floating.style, {
