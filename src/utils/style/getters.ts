@@ -13,14 +13,28 @@ import {getMediaQueryFromTheme, isResponsive} from '../responsive-helpers';
 import {hasOwnProperty} from '../has-own-property';
 import {FontConfig} from '../../theme/foundations/fonts';
 import {textCrop} from '../text-crop';
+import {getFontMetrics} from './helpers/getter-helper';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: {withCrop: boolean},
 ) => (props: Props) => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const applyCrop = (typographyPreset: any) => {
+    const {fontSize, lineHeight} = typographyPreset;
+    const themeFonts = props.theme.fonts;
+
+    const fontMetrics = getFontMetrics(typographyPreset, themeFonts);
+    const cropData = fontMetrics
+      ? textCrop({fontSize, lineHeight, fontMetrics})
+      : undefined;
+
+    return cropData ? {...typographyPreset, ...cropData} : typographyPreset;
+  };
+
+  // Will be removed on next push...
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const deprecatedApplyCrop = (typographyPreset: any) => {
     // This function finds the fontMetrics defined in the theme for the fontFamily/fontWeight
     // combination specified in the typographyPreset, and uses them to calculate
     // the required cropping CSS.

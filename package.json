@@ -50,6 +50,7 @@
     "test:visual:comps:ci:percy": "STORYBOOK_IS_VISUAL_TEST=true start-server-and-test dev:storybook 6006 'percy:run'",
     "test:visual:comps:ci:percy:skip": "PERCY_PARTIAL_BUILD=1 STORYBOOK_SKIP_PERCY_CHECK=true start-server-and-test dev:storybook 6006 percy:run",
     "test:visual:comps:local:percy": "sh ./scripts/percy_local.sh comps",
+    "test:get-font-metrics": "jest src/utils/__tests__/get-font-metrics.test.ts",
     "prepublish": "yarn build:sync-version-number",
     "build:clean": "rm -rf dist && rm -rf dist-storybook && rm -rf public",
     "build:ts:cjs": "NODE_ENV=production tsc --outDir dist/cjs",
