@@ -82,6 +82,7 @@ const isValidFontConfig = (
   fontFamilyObject: FontConfig | undefined,
 ): boolean => {
   return fontFamilyObject ? validateFontConfig() : false;
+
   function validateFontConfig() {
     const cropConfig = Object.getOwnPropertyDescriptor(
       fontFamilyObject,
@@ -105,14 +106,7 @@ const isValidFontMetrics = (
   fontMetrics: FontMetrics,
   fontFamily: string,
 ): boolean => {
-  return fontMetrics ? validateFontMetrics() : invalidFontMetrics();
-
-  function validateFontMetrics() {
-    return isFontMetricsObject(fontMetrics) ? true : invalidFontMetrics();
-  }
-
-  function invalidFontMetrics() {
-    console.warn(`No default fontMetrics found for '${fontFamily}'.`);
-    return false;
-  }
+  if (fontMetrics && isFontMetricsObject(fontMetrics)) return true;
+  console.warn(`No default fontMetrics found for '${fontFamily}'.`);
+  return false;
 };
