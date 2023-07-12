@@ -29,7 +29,17 @@ export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
       ? textCrop({fontSize, lineHeight, fontMetrics})
       : undefined;
 
-    return cropData ? {...typographyPreset, ...cropData} : typographyPreset;
+    return scrubFontMetricsFromData(typographyPreset, cropData);
+  };
+
+  const scrubFontMetricsFromData = (typographyPreset: any, cropData: any) => {
+    // Remove fontMetrics if present in typographyPreset because it has been
+    // processed into the CSS cropData and no longer needed.
+    const result = cropData
+      ? {...typographyPreset, ...cropData}
+      : typographyPreset;
+    delete result.fontMetrics;
+    return result;
   };
 
   const {withCrop = false} = options || {};
