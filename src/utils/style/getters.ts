@@ -11,7 +11,6 @@ import {
 } from './base';
 import {getMediaQueryFromTheme, isResponsive} from '../responsive-helpers';
 import {hasOwnProperty} from '../has-own-property';
-import {FontConfig} from '../../theme/foundations/fonts';
 import {textCrop} from '../text-crop';
 import {getFontMetrics} from './helpers/getter-helper';
 

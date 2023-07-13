@@ -1,5 +1,5 @@
 import {FontConfig} from '../../../theme/foundations/fonts';
-import {FontMetrics} from 'src/utils/text-crop';
+import {FontMetrics} from '../../text-crop';
 import {isFontConfigObject, isFontMetricsObject} from '../../guards';
 
 /**
