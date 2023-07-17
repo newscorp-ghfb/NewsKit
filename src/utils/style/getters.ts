@@ -11,79 +11,34 @@ import {
 } from './base';
 import {getMediaQueryFromTheme, isResponsive} from '../responsive-helpers';
 import {hasOwnProperty} from '../has-own-property';
-import {FontConfig} from '../../theme/foundations/fonts';
 import {textCrop} from '../text-crop';
+import {getFontMetrics} from './helpers/getter-helper';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
   defaultToken?: MQ<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: {withCrop: boolean},
 ) => (props: Props) => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const applyCrop = (typographyPreset: any) => {
-    // This function finds the fontMetrics defined in the theme for the fontFamily/fontWeight
-    // combination specified in the typographyPreset, and uses them to calculate
-    // the required cropping CSS.
+    const {fontSize, lineHeight} = typographyPreset;
+    const themeFonts = props.theme.fonts;
 
-    // Steps:
-    // 1. Lookup the fontFamilyObject in the theme for the typographyPreset's fontFamily.
-    // 2. Lookup the token for the fontWeight specified in the typographyPreset.
-    // 3. Lookup the fontMetrics in the fontFamilyObject for the fontWeight token.
-    // 4. Use the fontMetrics to calculate the cropping CSS.
+    const fontMetrics = getFontMetrics(typographyPreset, themeFonts);
+    const cropData = fontMetrics
+      ? textCrop({fontSize, lineHeight, fontMetrics})
+      : undefined;
 
-    const {fontSize, lineHeight, fontFamily, fontWeight} = typographyPreset;
+    return scrubFontMetricsFromData(typographyPreset, cropData);
+  };
 
-    const [fontStackPeek] = fontFamily.split(',');
-    const fontFamilyObject: FontConfig | undefined = Object.values(
-      props.theme.fonts,
-    ).find(
-      (fontEl): fontEl is FontConfig =>
-        isFontConfigObject(fontEl) &&
-        (fontEl as FontConfig).fontFamily.split(',')[0] === fontStackPeek,
-    );
-
-    if (!fontFamilyObject) return typographyPreset;
-
-    if (
-      Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropConfig') ||
-      Object.getOwnPropertyDescriptor(fontFamilyObject, 'cropAdjustments')
-    ) {
-      // eslint-disable-next-line no-console
-      console.warn(
-        'cropConfig and cropAdjustments are no longer supported; please use fontMetrics instead',
-      );
-      return typographyPreset;
-    }
-
-    const themeFontsProperties = Object.entries(props.theme.fonts);
-
-    const weightTokenArray = themeFontsProperties.find(element =>
-      element.includes(fontWeight),
-    );
-    const weightToken = weightTokenArray && weightTokenArray[0];
-
-    const fontMetrics =
-      (weightToken && fontFamilyObject.fontMetrics![weightToken!]) ||
-      fontFamilyObject.fontMetrics!.fontWeight010;
-
-    if (!fontMetrics) {
-      // eslint-disable-next-line no-console
-      console.warn(`No default fontMetrics found for '${fontFamily}'.`);
-      return typographyPreset;
-    }
-
-    const cropData = {
-      fontSize,
-      lineHeight,
-      fontMetrics,
-    };
-
-    const cropProps = textCrop(cropData);
-
-    return {
-      ...typographyPreset,
-      ...cropProps,
-    };
+  const scrubFontMetricsFromData = (typographyPreset: any, cropData: any) => {
+    // Remove fontMetrics if present in typographyPreset because it has been
+    // processed into the CSS cropData and no longer needed.
+    const result = cropData
+      ? {...typographyPreset, ...cropData}
+      : typographyPreset;
+    delete result.fontMetrics;
+    return result;
   };
 
   const {withCrop = false} = options || {};
