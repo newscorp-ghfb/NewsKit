@@ -5,13 +5,15 @@ type FontUnit = 'px' | 'rem';
 export type TextCropProps = {
   fontSize: `${number}${FontUnit}`;
   lineHeight: number | string;
-  fontMetrics: {
-    capHeight: number;
-    ascent: number;
-    descent: number;
-    lineGap: number;
-    unitsPerEm: number;
-  };
+  fontMetrics: FontMetrics;
+};
+
+export type FontMetrics = {
+  capHeight: number;
+  ascent: number;
+  descent: number;
+  lineGap: number;
+  unitsPerEm: number;
 };
 
 export type StyleObject = Omit<

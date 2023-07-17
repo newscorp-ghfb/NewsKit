@@ -342,4 +342,94 @@ describe('TypographyPreset', () => {
       'cropConfig and cropAdjustments are no longer supported; please use fontMetrics instead',
     );
   });
+
+  test('returns typographyPreset with text crop CSS when fontMetrics exist within typographyPreset', () => {
+    const typographyPreset = getTypographyPresetFromTheme(
+      'editorialParagraph030',
+      undefined,
+      {withCrop: true},
+    )({
+      theme: ({
+        typographyPresets: {
+          editorialParagraph030: {
+            fontFamily: 'Font Family Name',
+            fontWeight: 500,
+            fontSize: '12px',
+            lineHeight: 1,
+            fontMetrics: {
+              capHeight: 697,
+              ascent: 1050,
+              descent: -350,
+              lineGap: 100,
+              unitsPerEm: 1000,
+            },
+          },
+        },
+      } as unknown) as Theme,
+    });
+    const expected = {
+      fontFamily: 'Font Family Name',
+      fontWeight: 500,
+      fontSize: '12px',
+      lineHeight: '12px',
+      '::before': {
+        content: "''",
+        marginBottom: '-0.153em',
+        display: 'block',
+      },
+      '::after': {
+        content: "''",
+        marginTop: '-0.15em',
+        display: 'block',
+      },
+      padding: '0.5px 0px',
+    };
+    expect(typographyPreset).toEqual(expected);
+  });
+
+  test('returns typographyPreset with text crop CSS when fontMetrics exist within typographyPreset and defines fontWeight010', () => {
+    const typographyPreset = getTypographyPresetFromTheme(
+      'editorialHeadline060',
+      undefined,
+      {withCrop: true},
+    )({
+      theme: ({
+        typographyPresets: {
+          editorialHeadline060: {
+            fontFamily: 'Escrow Condensed, Georgia, serif',
+            fontWeight: 700,
+            fontMetrics: {
+              fontWeight010: {
+                capHeight: 689,
+                ascent: 960,
+                descent: -240,
+                lineGap: 0,
+                unitsPerEm: 1000,
+              },
+            },
+            fontSize: '36px',
+            lineHeight: 1.111,
+            letterSpacing: '0%',
+            fontStretch: 'normal',
+            textTransform: 'none',
+            fontStyle: 'normal',
+          },
+        },
+      } as unknown) as Theme,
+    });
+    const expected = {
+      fontFamily: 'Escrow Condensed, Georgia, serif',
+      fontWeight: 700,
+      fontSize: '36px',
+      lineHeight: '39.996px',
+      letterSpacing: '0%',
+      fontStretch: 'normal',
+      textTransform: 'none',
+      fontStyle: 'normal',
+      '::before': {content: "''", marginBottom: '-0.2265em', display: 'block'},
+      '::after': {content: "''", marginTop: '-0.1955em', display: 'block'},
+      padding: '0.5px 0px',
+    };
+    expect(typographyPreset).toEqual(expected);
+  });
 });
