@@ -30,9 +30,9 @@ const PRINCIPLE_CARDS = [
         path="guides/design-overview/design-made-easy"
       />
     ),
-    title: 'Easy',
+    title: 'Simple',
     description:
-      'NewsKit makes it simple to design beautiful, responsive, accessible experiences that align to the components in code - so you can concentrate on your users.',
+      'NewsKit makes it simple to design responsive, accessible experiences that align to the components in code. You can concentrate on solving problems for your users.',
     stylePrefix: 'featureCard',
     overrides: featureCardOverrides,
   },
@@ -46,7 +46,7 @@ const PRINCIPLE_CARDS = [
     title: 'Flexible',
     description: (
       <>
-        NewsKit is fully customisable, with a powerful{' '}
+        NewsKit is fully customisable. Our powerful{' '}
         <Link
           overrides={{stylePreset: 'inkWhiteContrast'}}
           href="https://www.figma.com/file/oSjjLxC27fa6Jh6AHM7ja9/NK-NewsKit-Theme?node-id=1%3A393"
@@ -54,8 +54,8 @@ const PRINCIPLE_CARDS = [
         >
           theming system
         </Link>
-        that gives you the flexibility to apply a single brand or sub-brand, and
-        Figma components that have variants and layer options.
+        that gives you the flexibility to apply a single brand or sub-brand and
+        our Figma components are highly configurable.
       </>
     ),
     stylePrefix: 'featureCard',
@@ -77,7 +77,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
       hero: {
         illustration: 'guides/design-overview/hero',
       },
-      introduction: `NewsKit has everything you need to build scalable digital products, including Figma component libraries, theme libraries, plugins and guidance.`,
+      introduction: `NewsKit has everything you need to build scalable digital products.`,
     }}
   >
     <ComponentPageCell>
@@ -101,7 +101,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="whats-included"
           toc="What’s included?"
           headline="What’s included?"
-          description="NewsKit provides shared Figma libraries to help your product design process, including:"
+          description="NewsKit provides Figma libraries to speed up your product design process. Our component library and theme is open-sourced on the Figma community."
           showSeparator
         >
           <MediaList
@@ -112,16 +112,16 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'Theme library',
                 description: (
                   <>
-                    A powerful theming system containing brand styles that you
-                    can use and sync across files, including palettes and
-                    colours, typography, shadows and grids.
+                    A powerful theming system containing brand styles that sync
+                    across files, including palettes and colours, typography,
+                    shadows and grids.
                     <br />
                     <Link
                       href="https://www.figma.com/file/3l0UDvk1l2vsXpbtWlYWoP/%F0%9F%9F%A2-NK-NewsKit-Theme"
                       target="_blank"
                       overrides={{marginBlockStart: 'space050'}}
                     >
-                      View theme library (internal only)
+                      Theme library (internal)
                     </Link>
                   </>
                 ),
@@ -141,7 +141,14 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       target="_blank"
                       overrides={{marginBlockStart: 'space050'}}
                     >
-                      View web components library (internal only)
+                      Web components library (internal)
+                    </Link>
+                    <Link
+                      href="https://www.figma.com/community/file/1225806088244139801"
+                      target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
+                    >
+                      Web components library and theme (Figma community)
                     </Link>
                   </>
                 ),
@@ -158,15 +165,15 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                     <Link href="https://fonts.google.com/icons" target="_blank">
                       Material icons
                     </Link>
-                    containing both filled and outlined styles, that you can
-                    customise or add to as required.
+                    containing filled and outlined styles. You can customise or
+                    add icons as required.
                     <br />
                     <Link
                       href="https://www.figma.com/file/jHs7EB68a57xVA3NKmMbgy/NK-Icons?node-id=1%3A12626"
                       target="_blank"
                       overrides={{marginBlockStart: 'space050'}}
                     >
-                      View icon library (internal only)
+                      Icon library (internal)
                     </Link>
                   </>
                 ),
@@ -179,16 +186,15 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'Utilities library',
                 description: (
                   <>
-                    A host of utility components to improve your workflow and
-                    make delivery fast and consistent. Includes annotations,
-                    cursors, device mockups and accessibility labels.
+                    Includes annotations, cursors, device mockups and
+                    accessibility labels.
                     <br />
                     <Link
                       href="https://www.figma.com/file/Q3OTJ4RZWJGTCaWuS8sWsL/NK-Utilities?node-id=0%3A1"
                       target="_blank"
                       overrides={{marginBlockStart: 'space050'}}
                     >
-                      View utilities library (internal only)
+                      Utilities library (internal)
                     </Link>
                   </>
                 ),
@@ -206,8 +212,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
           id="architecture"
           toc="Architecture"
           headline="NewsKit Figma library architecture"
-          description="Receive updates, contribute to the community and get the best out of NewsKit
-          by linking your Figma libraries like this:"
+          description="Get the best out of NewsKit by theming your Figma libraries with Tokens Studio plugin:"
           showSeparator
         >
           <Illustration
@@ -220,8 +225,8 @@ const DesignOverview = (layoutProps: LayoutProps) => (
         <ContentPrimary
           id="plugins"
           toc="Plugins"
-          headline="Custom Figma plugins"
-          description="We've developed a range of custom Figma plugins to help improve your workflow, including:"
+          headline="Figma plugin"
+          description=""
           showSeparator
         >
           <MediaList
@@ -229,123 +234,40 @@ const DesignOverview = (layoutProps: LayoutProps) => (
             cardsLayout="horizontal"
             cards={[
               {
-                title: 'Theme swapper plugin',
+                title: 'Tokens Studio plugin',
                 description: (
                   <>
-                    Change themes across UI components and elements (e.g.
-                    switching between light and dark themes, sub-themes or
-                    different visual fidelities).
+                    NewsKit uses Tokens Studio plugin to create, manage and
+                    theme components. Tokens Studio connects to GitHub to sync
+                    to a repository within our publisher tool. This allows
+                    GitHub to be in sync with the theme in Figma and allows
+                    designers to have access to the latest theme from within the
+                    plugin.
                     <Link
-                      href="https://www.figma.com/community/plugin/968555028114672265/NK---Theme-Swapper"
+                      href="https://tokens.studio/"
                       target="_blank"
                       overrides={{marginBlockStart: 'space050'}}
                     >
-                      View theme swapper plugin (internal only)
+                      Tokens Studio plugin
+                    </Link>
+                    <Link
+                      href="https://docs.tokens.studio/"
+                      target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
+                    >
+                      Tokens Studio documentation
+                    </Link>
+                    <Link
+                      href="https://www.figma.com/file/A8kKCGhZ5wFi78l3DOlPUQ/v5.0-%F0%9F%9F%A2-NewsKit-theme?node-id=574%3A7406&t=fMjmVd7ulhTXIsYO-1"
+                      target="_blank"
+                      overrides={{marginBlockStart: 'space050'}}
+                    >
+                      Editing Newskit styles in Tokens Studio (internal)
                     </Link>
                   </>
                 ),
                 media: getIllustrationComponent(
-                  'guides/design-overview/theme-swapper-plugin',
-                  {viewBox: '0 0 1344 759'},
-                ),
-              },
-              {
-                title: 'Text crop plugin',
-                description: (
-                  <>
-                    Remove unwanted whitespace around text boxes.
-                    <br />
-                    <Link
-                      href="https://www.figma.com/community/plugin/951930713294228024/Text-Crop"
-                      target="_blank"
-                      overrides={{marginBlockStart: 'space050'}}
-                    >
-                      View text crop plugin
-                    </Link>
-                  </>
-                ),
-                media: getIllustrationComponent(
-                  'guides/design-overview/text-crop-plugin',
-                  {viewBox: '0 0 1344 759'},
-                ),
-              },
-              {
-                title: 'Theme exporter plugin',
-                description: (
-                  <>
-                    Export NewsKit design tokens in JSON format from Figma
-                    styles to use with the NewsKit codebase.
-                    <br />
-                    <Link
-                      href="https://www.figma.com/community/plugin/934126878505200119/NK---Theme-Exporter"
-                      target="_blank"
-                      overrides={{marginBlockStart: 'space050'}}
-                    >
-                      View theme exporter plugin (internal only)
-                    </Link>
-                  </>
-                ),
-                media: getIllustrationComponent(
-                  'guides/design-overview/theme-exporter-plugin',
-                  {viewBox: '0 0 1344 759'},
-                ),
-              },
-            ]}
-          />
-        </ContentPrimary>
-      </ContentSection>
-      <ContentSection sectionName="templates">
-        <ContentPrimary
-          id="templates"
-          toc="Templates"
-          headline="Project template files"
-          description="Kickstart your design process, and develop a consistent workflow, with NewsKit's
-          template Figma files:"
-          showSeparator
-        >
-          <MediaList
-            layout="1-span"
-            cardsLayout="horizontal"
-            cards={[
-              {
-                title: 'UX project template file',
-                description: (
-                  <>
-                    A template structure for UX-focussed projects. Includes
-                    personas, user journeys and competitor analysis.
-                    <br />
-                    <Link
-                      href="https://www.figma.com/file/uMSITiPijbFBVQl09zzVHm/%5BProduct%2FBrand-Name%5D-UX-project-template?node-id=0%3A1"
-                      target="_blank"
-                      overrides={{marginBlockStart: 'space050'}}
-                    >
-                      View UX project template file (internal only)
-                    </Link>
-                  </>
-                ),
-                media: getIllustrationComponent(
-                  'guides/design-overview/ux-template',
-                  {viewBox: '0 0 1344 759'},
-                ),
-              },
-              {
-                title: 'UI project template file',
-                description: (
-                  <>
-                    A template structure for UI-focussed projects. Includes a
-                    playground, prototype and handoff.
-                    <br />
-                    <Link
-                      href="https://www.figma.com/file/BcPZjnYcouOOAdDVrt6H95/%5BProduct%2FBrand-Name%5D-UI-project-template?node-id=0%3A1"
-                      target="_blank"
-                      overrides={{marginBlockStart: 'space050'}}
-                    >
-                      View UI project template file (internal only)
-                    </Link>
-                  </>
-                ),
-                media: getIllustrationComponent(
-                  'guides/design-overview/ui-template',
+                  'guides/design-overview/tokens-studio-plugin',
                   {viewBox: '0 0 1344 759'},
                 ),
               },
@@ -378,7 +300,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       target="_blank"
                       overrides={{marginBlockStart: 'space050'}}
                     >
-                      View components guidance{' '}
+                      Components guidance{' '}
                     </Link>
                   </>
                 ),
@@ -391,15 +313,15 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                 title: 'Patterns guidance',
                 description: (
                   <>
-                    Guidance for solving common problems (e.g. onboarding users
-                    to a product or feature).
+                    Guidance for solving common problems, like onboarding users
+                    to a product or feature.
                     <br />
                     <Link
                       href="https://www.newskit.co.uk/patterns/overview/"
                       target="_blank"
                       overrides={{marginBlockStart: 'space050'}}
                     >
-                      View patterns guidance
+                      Patterns guidance
                     </Link>
                   </>
                 ),
@@ -428,7 +350,7 @@ const DesignOverview = (layoutProps: LayoutProps) => (
                       target="_blank"
                       overrides={{marginBlockStart: 'space050'}}
                     >
-                      View handoff guidance (internal only)
+                      Handoff guidance (internal)
                     </Link>
                   </>
                 ),
