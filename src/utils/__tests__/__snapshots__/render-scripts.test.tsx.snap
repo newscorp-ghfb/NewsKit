@@ -83,3 +83,23 @@ exports[`RenderScripts renders scripts and correctly parses objects with events 
   </div>
 </DocumentFragment>
 `;
+
+exports[`RenderScripts renders with nonce 1`] = `
+<DocumentFragment>
+  <script
+    nonce="we32s235"
+    type="text/javascript"
+  >
+    {
+            "onMessageReady":  () =&gt; {
+            console.log('onMessageReady');
+          },
+            "onConsentReady": function onConsentReady(consentUUID, euconsent) {
+            console.log('onConsentReady');
+            }
+          }
+        }
+      }
+  </script>
+</DocumentFragment>
+`;
