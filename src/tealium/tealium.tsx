@@ -15,8 +15,10 @@ export const Tealium: React.FC<TealiumProps> = ({
   profileId,
   env,
   reactHelmet,
+  nonce,
 }) => (
   <RenderScripts
+    nonce={nonce}
     reactHelmet={reactHelmet}
     scripts={[
       {

@@ -25,6 +25,7 @@ const isExternalScriptData = (
 export interface RenderScriptsReactHelmetProp {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   reactHelmet?: React.ComponentType<{script?: Array<any>}>;
+  nonce?: string;
 }
 
 export interface RenderScriptsProps extends RenderScriptsReactHelmetProp {
@@ -45,6 +46,7 @@ const parseContent = (content: string) =>
 export const RenderScripts: React.FC<RenderScriptsProps> = ({
   scripts,
   reactHelmet: ReactHelmet,
+  nonce,
 }) => {
   if (ReactHelmet) {
     return (
@@ -83,7 +85,7 @@ export const RenderScripts: React.FC<RenderScriptsProps> = ({
                 __html: parseContent(scriptData.content),
               },
             };
-        return <script type="text/javascript" {...scriptProps} />;
+        return <script type="text/javascript" {...scriptProps} nonce={nonce} />;
       })}
     </>
   );

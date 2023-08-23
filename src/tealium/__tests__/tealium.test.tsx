@@ -19,4 +19,16 @@ describe('Tealium', () => {
       expect(fragment).toMatchSnapshot();
     });
   });
+
+  test('renders scripts with nonce', () => {
+    const fragment = renderToFragment(
+      <Tealium
+        accountId="the-account-id"
+        profileId="the-profile-id"
+        env="the-env-id"
+        nonce="12345abc"
+      />,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
 });
