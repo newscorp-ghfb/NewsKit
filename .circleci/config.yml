@@ -106,7 +106,8 @@ executors:
 
   cypress:
     docker:
-      - image: cypress/browsers:node16.16.0-chrome107-ff107-edge
+      #- image: cypress/browsers:node16.13.0-chrome95-ff94
+      - image: cypress/browsers:node-20.6.1-chrome-116.0.5845.187-1-ff-117.0-edge-116.0.1938.76-1
     resource_class: medium
 
   java:
@@ -364,6 +365,9 @@ jobs:
             - v1-cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
+      - run:
+          name: Install make
+          command: apt-get update && apt-get install -y make
       - run:
           name: install cypress
           command: make install_cypress
