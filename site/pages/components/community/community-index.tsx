@@ -9,16 +9,6 @@ import {
   GridLayoutItem,
 } from 'newskit';
 import {Link} from '../../../components/link';
-
-import {
-  getSheets,
-  PageCMSPrefixedProps,
-  PageCMSRequiredProps,
-} from '../../../utils/google-sheet';
-import {
-  getCMSPropsWithPrefix,
-  parseCMSResponse,
-} from '../../../utils/google-sheet/utils';
 import {AboutPageTemplate} from '../../../templates/about-page-template';
 import {LayoutProps} from '../../../components/layout';
 import {ContentPrimary} from '../../../components/content-structure';
@@ -27,24 +17,6 @@ import {IconFilledGitHub} from '../../../components/icons';
 import {IconFilledStorybook} from '../../../components/icons/icon-filled-storybook';
 import {IconFilledFigma} from '../../../components/icons/icon-filled-figma';
 
-enum RequiredKeys {
-  intro_name = 'intro_name',
-  intro_description = 'intro_description',
-  intro_hero_illustration = 'intro_hero_illustration',
-}
-
-enum DynamicKeyPrefixes {
-  team_name_ = 'team_name_',
-  component_title_ = 'component_title_',
-  component_description_ = 'component_description_',
-  status_ = 'status_',
-  github_url_ = 'github_url_',
-  storybook_url_ = 'storybook_url_',
-  figma_url_ = 'figma_url_',
-  link_url_ = 'link_url_',
-  link_text_ = 'link_text_',
-}
-
 const buttonOverrides = {
   typographyPreset: 'utilityButton010',
   stylePreset: 'buttonOutlinedSecondary',
@@ -52,9 +24,6 @@ const buttonOverrides = {
   minWidth: '176px',
   minHeight: '44px',
 };
-
-type CommunityIndexContent = PageCMSRequiredProps<RequiredKeys> &
-  PageCMSPrefixedProps<DynamicKeyPrefixes>;
 
 interface CommunityListingProps {
   description: {
@@ -72,38 +41,48 @@ interface CommunityListingProps {
   };
 }
 
-const CommunityIndex = ({
-  content,
-  ...layoutProps
-}: LayoutProps & {content: CommunityIndexContent}) => {
-  const pageName = content.intro_name;
-  const pageDescription = content.intro_description;
-
-  // Every component should have a title
-  const listings = getCMSPropsWithPrefix<typeof DynamicKeyPrefixes>(
-    content,
-    'component_title_',
-  ).map(([k]) => {
-    const index: number = Number(k.split('_')[k.split('_').length - 1]);
-    // Get all values for the component_title with the same number
-    const obj: CommunityListingProps = {
+const CommunityIndex = (layoutProps: LayoutProps) => {
+  const pageName = 'Community index';
+  const pageDescription =
+    'NewsKit is open source and anyone can contribute to the community index.';
+  const listings: CommunityListingProps[] = [
+    {
       description: {
-        componentTitle: content[`component_title_${index}`],
-        componentDescription: content[`component_description_${index}`],
-        teamName: content[`team_name_${index}`],
+        componentTitle: 'Table',
+        componentDescription: 'Table variants used on newskit.co.uk',
+        teamName: 'NewsKit',
       },
       meta: {
-        status: content[`status_${index}`],
-        githubUrl: content[`github_url_${index}`],
-        storybookUrl: content[`storybook_url_${index}`],
-        figmaUrl: content[`figma_url_${index}`],
-        linkUrl: content[`link_url_${index}`],
-        linkText: content[`link_text_${index}`],
+        status: 'internal',
+        githubUrl:
+          'https://github.com/newscorp-ghfb/newskit/tree/42dd2f5b7b1055583b4260d852c35d9d15b627aa/site/components/table',
+        figmaUrl:
+          'https://www.figma.com/file/C8IafaRcuIlO5qoAbnDm95/Community-Component---Table?node-id=0%3A1&t=jiIQCYRRDkvaO1LO-1',
+        linkUrl: 'https://www.newskit.co.uk/table-variants/',
+        linkText: 'Examples',
       },
-    };
+    },
+    {
+      description: {
+        componentTitle: 'Calendar',
+        componentDescription:
+          'Date picker library used in the News UK Account solution.',
+        teamName: 'The Times Retention',
+      },
+      meta: {
+        status: 'internal',
+        githubUrl:
+          'https://github.com/newscorp-ghfb/ncu-newskit-render/tree/master/packages/shared-components/src/Calendar',
+        storybookUrl: '',
+        figmaUrl:
+          'https://www.figma.com/file/WwEBUr5beQrSzMSTDP3p9B/Community-Component---Date-picker?node-id=0%3A1&t=3AxXNELFGZzN9U6N-1',
+        linkUrl:
+          'https://codesandbox.io/s/calendar-component-jjsozp?file=/src/App.tsx',
+        linkText: 'CodeSandbox',
+      },
+    },
+  ];
 
-    return obj;
-  });
   return (
     <AboutPageTemplate
       headTags={{
@@ -122,7 +101,7 @@ const CommunityIndex = ({
         name: pageName,
         introduction: pageDescription,
         hero: {
-          illustration: content.intro_hero_illustration,
+          illustration: 'components/community/community-index',
           illustrationProps: {viewBox: '0 0 1344 759'},
         },
         showSeparator: false,
@@ -252,12 +231,3 @@ const CommunityIndex = ({
   );
 };
 export default CommunityIndex;
-
-export async function getStaticProps() {
-  const cmsData = await getSheets('Community');
-  const content = parseCMSResponse(cmsData, {
-    required: RequiredKeys,
-    dynamic: DynamicKeyPrefixes,
-  });
-  return {props: {content}};
-}
