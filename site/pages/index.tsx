@@ -14,8 +14,7 @@ import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
 import {GridLayoutProps} from '../../src/grid-layout/types';
 import {fetchGitHubReleases} from '../utils/release-notes/functions';
-import {getSheets, PageCMSRequiredProps} from '../utils/google-sheet';
-import {parseCMSResponse} from '../utils/google-sheet/utils';
+import {PageCMSRequiredProps} from '../utils/google-sheet';
 
 const GRID_SECTION_OVERRIDES: GridLayoutProps['overrides'] = {
   maxWidth: '1150px',
@@ -38,12 +37,18 @@ enum RequiredKeys {
 
 type HeroCardContent = PageCMSRequiredProps<RequiredKeys>;
 
-const Index = ({
-  releases,
-  content,
-  ...layoutProps
-}: LayoutProps & ReleasesPageProps & {content: HeroCardContent}) => {
+const content: HeroCardContent = {
+  hero_card_title: 'Latest blog',
+  hero_card_description:
+    "How an audio player component tells the story of NewsKit Design System's changing strategy",
+  hero_card_link_text: 'Read on Medium',
+  hero_card_link:
+    'https://medium.com/newskit-design-system/how-an-audio-player-component-tells-the-story-of-newskit-design-systems-changing-strategy-8dc99d37ed67',
+};
+
+const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
   const {themeMode, toggleTheme} = layoutProps;
+
   return (
     <Layout {...layoutProps} newPage hideSidebar path="/index-new">
       <GridLayout
@@ -143,10 +148,8 @@ export default Index;
 // component as props.
 export async function getStaticProps() {
   let releases: Release[] = [];
-  const [releasesOrError, data] = await Promise.all([
-    fetchGitHubReleases(1),
-    getSheets('Homepage'),
-  ]);
+  const releasesOrError = await fetchGitHubReleases(1);
+
   // Can return a rate limiting error object from github immediately after a load test
   if (!releasesOrError.length) {
     console.error(
@@ -157,6 +160,5 @@ export async function getStaticProps() {
     releases = releasesOrError;
   }
 
-  const content = parseCMSResponse(data, {required: RequiredKeys});
-  return {props: {releases, content}};
+  return {props: {releases}};
 }
