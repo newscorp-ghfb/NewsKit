@@ -106,7 +106,6 @@ executors:
 
   cypress:
     docker:
-      #- image: cypress/browsers:node16.13.0-chrome95-ff94
       - image: cypress/browsers:node-20.6.1-chrome-116.0.5845.187-1-ff-117.0-edge-116.0.1938.76-1
     resource_class: medium
 
@@ -275,6 +274,9 @@ commands:
   run_test_visual_docs_percy:
     description: 'Run the Percy tests for docs visual changes'
     steps:
+      - run:
+          name: Install make
+          command: apt-get update && apt-get install -y make
       - run:
           name: Set percy/newskit-docsite token
           command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
