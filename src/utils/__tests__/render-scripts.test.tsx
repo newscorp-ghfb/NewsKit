@@ -43,6 +43,13 @@ describe('RenderScripts', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders with nonce', () => {
+    const fragment = renderToFragment(
+      <RenderScripts scripts={scriptsWithFunctions} nonce="we32s235" />,
+    );
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders inline and external scripts via ReactHelmet', () => {
     const MockReactHelmet: React.FC = props => (
       <div>MockReactHelmet props: {JSON.stringify(props, null, 2)}</div>
