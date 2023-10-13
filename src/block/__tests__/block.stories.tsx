@@ -6,7 +6,7 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {Visible} from '../../grid/visibility';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
 import {TextBlock} from '../../text-block';
-import {MQ} from '../../utils';
+import {MQ, styled, getColorCssFromTheme} from '../../utils';
 
 // The style presets are added for easier visualization of the spacings around the Block component
 const blockCustomThemeObject: CreateThemeArgs = {
@@ -27,6 +27,13 @@ const blockCustomThemeObject: CreateThemeArgs = {
           borderWidth: '{{borders.borderWidth010}}',
           borderStyle: 'dashed',
           borderColor: '{{colors.red060}}',
+        },
+      },
+      blockContainerQueryWrapper: {
+        base: {
+          borderStyle: 'dashed',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderColor: '{{colors.blue060}}',
         },
       },
       blockTransition: {
@@ -123,6 +130,66 @@ export const StoryBreakpoint = () => (
   </StorybookPage>
 );
 StoryBreakpoint.storyName = 'Breakpoint';
+
+export const StoryContainerQueries = () => {
+  const QueryBlock = () => (
+    <Block
+      stylePreset="blockDefault"
+      paddingInline={{
+        rules: [
+          {
+            rule: '@container (width <= 300px)',
+            value: 'space010',
+          },
+          {
+            rule: '@container (width > 300px)',
+            value: 'space040',
+          },
+        ],
+      }}
+      paddingBlock={{
+        rules: [
+          {
+            rule: '@container (width <= 300px)',
+            value: 'space010',
+          },
+          {
+            rule: '@container (width > 300px)',
+            value: 'space040',
+          },
+        ],
+      }}
+    >
+      <Text>This block changes padding depending on its container size</Text>
+    </Block>
+  );
+
+  return (
+    <StorybookPage columns={blockGridCols}>
+      <StorybookCase title="Container < 300px">
+        <Block
+          containerName="container-small"
+          containerType="inline-size"
+          stylePreset="blockContainerQueryWrapper"
+          style={{width: '200px'}}
+        >
+          <QueryBlock />
+        </Block>
+      </StorybookCase>
+      <StorybookCase title="Container > 300px">
+        <Block
+          containerName="container-large"
+          containerType="inline-size"
+          stylePreset="blockContainerQueryWrapper"
+          style={{width: '500px'}}
+        >
+          <QueryBlock />
+        </Block>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryContainerQueries.storyName = 'Container Queries';
 
 export const StoryTransitions = () => (
   <StorybookPage columns={blockGridCols}>

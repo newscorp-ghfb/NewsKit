@@ -9,6 +9,8 @@ import {Label} from '../../..';
 import {
   StorybookHeading,
   StorybookSubHeading,
+  StorybookCase,
+  StorybookPage,
 } from '../../../test/storybook-comps';
 
 const BigRedBlock = styled(Block)`
@@ -162,6 +164,56 @@ export const StoryResponsiveExample = () => (
   </>
 );
 StoryResponsiveExample.storyName = 'responsive';
+
+export const StoryContainerQueryExample = () => {
+  const QueryGridLayout = () => (
+    <GridLayout
+      rows={{
+        rules: [
+          {
+            rule: '@container (width <= 200px)',
+            value: '1fr 1fr',
+          },
+          {
+            rule: '@container (width > 200px)',
+            value: '1fr',
+          },
+        ],
+      }}
+      columns={{
+        rules: [
+          {
+            rule: '@container (width <= 200px)',
+            value: '1fr',
+          },
+          {
+            rule: '@container (width > 200px)',
+            value: '1fr 1fr',
+          },
+        ],
+      }}
+    >
+      <GridBox>1</GridBox>
+      <GridBox>2</GridBox>
+    </GridLayout>
+  );
+
+  return (
+    <StorybookPage>
+      <StorybookCase title="Container <= 200px">
+        <Block containerType="inline-size" style={{width: '200px'}}>
+          <QueryGridLayout />
+        </Block>
+      </StorybookCase>
+      <StorybookCase title="Container > 200px">
+        <Block containerType="inline-size" style={{width: '400px'}}>
+          <QueryGridLayout />
+        </Block>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryContainerQueryExample.storyName = 'Container Queries';
 
 export const StoryMinMaxRepeat = () => {
   const boxes = Array.from(Array(20)).map((_, i) => <GridBox>{i} box</GridBox>);

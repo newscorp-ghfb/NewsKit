@@ -1,4 +1,4 @@
-import {MQ} from '../utils/style';
+import {ResponsiveValue} from '../utils/style';
 import {uniq} from '../utils/uniq';
 
 export const capitalize = (s: string) =>
@@ -15,7 +15,7 @@ export const extractAreas = (areaString: string) =>
 export const filterInvalidAreas = (areaName: string): boolean =>
   areaName !== '.' && Boolean(areaName);
 
-export const getAreasList = (areas: MQ<string>): string[] => {
+export const getAreasList = (areas: ResponsiveValue<string>): string[] => {
   if (typeof areas === 'string') {
     return uniq(extractAreas(areas));
   }

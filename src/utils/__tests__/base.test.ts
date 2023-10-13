@@ -1,6 +1,9 @@
 import {createTheme, compileTheme} from '../../theme';
-import {getSizingCssFromTheme} from '../style/getters';
-import {getXFromTheme} from '../style/base';
+import {
+  getSizingCssFromTheme,
+  getTypographyPresetFromTheme,
+} from '../style/getters';
+import {getXFromTheme, getDefaultedValue} from '../style/base';
 import {
   getResponsiveSize,
   getResponsiveSpace,
@@ -58,7 +61,38 @@ describe('getXFromTheme', () => {
       '@media screen and (min-width: 768px)': {width: '12px'},
     });
   });
-
+  test('getXFromTheme with Container Query value', () => {
+    const result = getXFromTheme('sizing')('width', {
+      rules: [{rule: '@container (min-width: 300px)', value: '4px'}],
+    })({theme});
+    expect(result).toEqual({
+      '@container (min-width: 300px)': {width: '4px'},
+    });
+  });
+  test('getXFromTheme – spacePreset with Container Query value', () => {
+    const result = getXFromTheme('spacePresets')('padding', {
+      rules: [{rule: '@container (min-width: 300px)', value: 'space010'}],
+    })({theme});
+    expect(result).toEqual({
+      '@container (min-width: 300px)': {padding: '4px'},
+    });
+  });
+  test('getXFromTheme with CQ & MQ value', () => {
+    const result = getXFromTheme('sizing')('width', {
+      xs: 'sizing010',
+      sm: 'sizing020',
+      rules: [{rule: '@container (min-width: 300px)', value: '4px'}],
+    })({theme});
+    expect(result).toEqual({
+      '@media screen and (max-width: 479px)': {
+        width: '4px',
+      },
+      '@media screen and (min-width: 480px)': {
+        width: '8px',
+      },
+      '@container (min-width: 300px)': {width: '4px'},
+    });
+  });
   test('getXFromTheme with non MQ and callback', () => {
     const cb = (value: string) => ({padding: `${value} 0`, width: value});
     const result = getXFromTheme('sizing')(cb, 'sizing050')({theme});

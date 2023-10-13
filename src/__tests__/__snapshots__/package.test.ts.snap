@@ -31,8 +31,8 @@ Object {
   "module": "esm/index.js",
   "name": "newskit",
   "peerDependencies": Object {
-    "@emotion/react": ">= 11.1.5 <= 11.9.3",
-    "@emotion/styled": ">= 11.1.5 <= 11.9.3",
+    "@emotion/react": ">= 11.10.4 <= 12",
+    "@emotion/styled": ">= 11.10.4 <= 12",
     "react": ">= 16.8.0 <= 18",
     "react-dom": ">= 16.8.0 <= 18",
     "react-is": ">= 16.8.0 <= 18",

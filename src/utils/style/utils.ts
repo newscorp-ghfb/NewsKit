@@ -32,6 +32,12 @@ export const CSSUnits = [
   'vmin',
   'vmax',
   '%',
+  'cqw',
+  'cqh',
+  'cqi',
+  'cqb',
+  'cqmin',
+  'cqmax',
 ];
 
 export const CSSColorNames = [
