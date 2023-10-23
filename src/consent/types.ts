@@ -52,6 +52,7 @@ export interface SourcePointConfigUnified {
     alwaysDisplayDNS?: boolean;
     groupPmId?: number;
     targetingParams?: object;
+    includeGppApi?: boolean | MSPATransactions;
   };
 }
 
@@ -87,3 +88,9 @@ export type ConsentProps =
   | ConsentPropsTCFV2
   | ConsentPropsNonTCFV1
   | ConsentPropsUnified;
+
+export interface MSPATransactions {
+  MspaCoveredTransaction: string;
+  MspaOptOutOptionMode: string;
+  MspaServiceProviderMode: string;
+}

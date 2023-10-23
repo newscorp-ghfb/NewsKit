@@ -15,6 +15,7 @@ Unless you are utilising React Helmet, it must be placed inside the body of the 
 
 At the moment this component is supporting three versions of the Sourcepoint config. Versions GDPR TCF V2 and GDPR Non-TCF, these are both legacy implementations (SourcePoint clients implemented before May 5th, 2021 will used these and should be migrated to the Unified Script). 
 The most upto date version is the Unified Script.
+In addition to GDPR and CCPP the Unified Script has been updated to support MSPA as well.
 
 ## Prerequisites
 
@@ -38,6 +39,7 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     <br/>
     <br/>
     In order to add Sourcepoint script for GDPR or CCPA you must add at least an empty gdpr or ccpa object (see below).
+    To enable default MSPA configuration ccpa object should contain 'includeGppApi' parameter set to 'true'. Instructions and additional MSPS settings can be found in [this Sourcepoint guide](https://docs.sourcepoint.com/hc/en-us/articles/18007731422099-Enable-GPP-Multi-State-Privacy-String-MSPS-with-U-S-Privacy-CCPA-solution). 
     <Prop name="accountId" type="number" required>
       The accountId value associates the property with your organization's
       Sourcepoint account. Your organization's accountId can be retrieved by
@@ -116,6 +118,7 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     </Prop>
     <Prop name="ccpa" type="object">
       In order to surface a CCPA message to your clients, you will need to include the ccpa:{ } object in your client configuration script regardless of whether you configure any optional parameters.
+      To enable default MSPS the 'ccpa: { includeGppApi: true }' object should be used.
       <Prop name="alwaysDisplayDNS" type="boolean">
         Setting this parameter to true enables use cases where a Sourcepoint Do Not Sell (my data) notification is hardcoded.
       </Prop>
