@@ -39,7 +39,7 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     <br/>
     <br/>
     In order to add Sourcepoint script for GDPR or CCPA you must add at least an empty gdpr or ccpa object (see below).
-    To enable default MSPA configuration ccpa object should contain 'includeGppApi' parameter set to 'true'. Instructions and additional MSPS settings can be found in [this Sourcepoint guide](https://docs.sourcepoint.com/hc/en-us/articles/18007731422099-Enable-GPP-Multi-State-Privacy-String-MSPS-with-U-S-Privacy-CCPA-solution). 
+    To enable default MSPA configuration the gpp flag should be added (gpp: true) and ccpa object should contain 'includeGppApi' parameter set to 'true'. Instructions and additional MSPS settings can be found in [this Sourcepoint guide](https://docs.sourcepoint.com/hc/en-us/articles/18007731422099-Enable-GPP-Multi-State-Privacy-String-MSPS-with-U-S-Privacy-CCPA-solution). 
     <Prop name="accountId" type="number" required>
       The accountId value associates the property with your organization's
       Sourcepoint account. Your organization's accountId can be retrieved by
@@ -118,7 +118,6 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     </Prop>
     <Prop name="ccpa" type="object">
       In order to surface a CCPA message to your clients, you will need to include the ccpa:{ } object in your client configuration script regardless of whether you configure any optional parameters.
-      To enable default MSPS the 'ccpa: { includeGppApi: true }' object should be used.
       <Prop name="alwaysDisplayDNS" type="boolean">
         Setting this parameter to true enables use cases where a Sourcepoint Do Not Sell (my data) notification is hardcoded.
       </Prop>
@@ -133,6 +132,19 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
         <br/>
         targetingParams set within the gdpr object will override overall targetingParams
       </Prop>
+      <Prop name="includeGppApi" type="boolean">
+        Allows your organization to use the Multi-State Privacy String (MSPS). It is a signal that notifies downstream partners that participating publishers have provided end-users with specific notice and choice over data processing activities on their properties.
+        In order to set the default settings on the MSPS, set the includeGppApi parameter to true.
+      </Prop>
+      <Prop name="includeGppApi" type="object">
+        For transactions covered by the MSPA, signatories can choose to operate in Opt-Out Option Mode or Service Provider Mode. In order to set the appropriate fields in the MSPS, the organization will need to set the following flags in the includeGppApi object:
+         - MspaCoveredTransaction
+         - MspaOptOutOptionMode
+         - MspaServiceProviderMode
+      </Prop>
+    </Prop>
+    <Prop name="gpp" type="boolean">
+      Includes GPP stub file to enable MSPS usage.    
     </Prop>
   </Prop>
   <Prop name="reactHelmet" type="react-helmet Helmet Component">

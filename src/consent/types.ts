@@ -54,6 +54,7 @@ export interface SourcePointConfigUnified {
     targetingParams?: object;
     includeGppApi?: boolean | MSPATransactions;
   };
+  gpp?: boolean;
 }
 
 export interface SourcePointConfigNonTCFV1 {
