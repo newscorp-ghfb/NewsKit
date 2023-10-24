@@ -30,6 +30,9 @@ describe('ConsentSettingsLink', () => {
           ccpa: {
             loadPrivacyManagerModal: expectedFunction,
           },
+          ggp: {
+            loadPrivacyManagerModal: expectedFunction,
+          },
         };
         (global as any).window._sp_ = sp;
       });
@@ -65,6 +68,16 @@ describe('ConsentSettingsLink', () => {
         const link = await renderWithTheme(ConsentSettingsLink, {
           privacyManagerId,
           ccpa: true,
+        }).findByRole('button');
+        fireEvent.click(link);
+
+        expect(expectedFunction).toHaveBeenCalledWith(privacyManagerId);
+      });
+
+      test('call unified ggp SourcePoint function', async () => {
+        const link = await renderWithTheme(ConsentSettingsLink, {
+          privacyManagerId,
+          ggp: true,
         }).findByRole('button');
         fireEvent.click(link);
 

@@ -99,7 +99,6 @@ describe('Consent', () => {
               sourcePointConfigUnified={{
                 accountId: 259,
                 propertyHref: 'https://newskit.dev-news.co.uk',
-                gdpr: {},
                 ccpa: {
                   includeGppApi: true,
                 },
