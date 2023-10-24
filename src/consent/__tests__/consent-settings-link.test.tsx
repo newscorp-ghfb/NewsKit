@@ -30,7 +30,7 @@ describe('ConsentSettingsLink', () => {
           ccpa: {
             loadPrivacyManagerModal: expectedFunction,
           },
-          ggp: {
+          gpp: {
             loadPrivacyManagerModal: expectedFunction,
           },
         };
@@ -74,10 +74,10 @@ describe('ConsentSettingsLink', () => {
         expect(expectedFunction).toHaveBeenCalledWith(privacyManagerId);
       });
 
-      test('call unified ggp SourcePoint function', async () => {
+      test('call unified gpp SourcePoint function', async () => {
         const link = await renderWithTheme(ConsentSettingsLink, {
           privacyManagerId,
-          ggp: true,
+          gpp: true,
         }).findByRole('button');
         fireEvent.click(link);
 
