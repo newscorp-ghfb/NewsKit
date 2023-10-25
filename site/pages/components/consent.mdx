@@ -132,9 +132,10 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
         <br/>
         targetingParams set within the gdpr object will override overall targetingParams
       </Prop>
-      <Prop name="includeGppApi" type="boolean">
+      <Prop name="includeGppApi" type="boolean | MSPATransactions">
         Allows your organization to use the Multi-State Privacy String (MSPS). It is a signal that notifies downstream partners that participating publishers have provided end-users with specific notice and choice over data processing activities on their properties.
         In order to set the default settings on the MSPS, set the includeGppApi parameter to true.
+        MSPS settings could be customized by passing configuration object to the includeGppApi as [shown here](https://docs.sourcepoint.com/hc/en-us/articles/18007731422099-Enable-GPP-Multi-State-Privacy-String-MSPS-with-U-S-Privacy-CCPA-solution).
       </Prop>
     </Prop>
   </Prop>
