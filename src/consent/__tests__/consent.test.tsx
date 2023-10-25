@@ -102,7 +102,6 @@ describe('Consent', () => {
                 ccpa: {
                   includeGppApi: true,
                 },
-                gpp: true,
               }}
               reactHelmet={helmet}
             />,

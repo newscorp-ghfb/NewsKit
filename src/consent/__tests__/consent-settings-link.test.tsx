@@ -30,9 +30,6 @@ describe('ConsentSettingsLink', () => {
           ccpa: {
             loadPrivacyManagerModal: expectedFunction,
           },
-          gpp: {
-            loadPrivacyManagerModal: expectedFunction,
-          },
         };
         (global as any).window._sp_ = sp;
       });
@@ -68,16 +65,6 @@ describe('ConsentSettingsLink', () => {
         const link = await renderWithTheme(ConsentSettingsLink, {
           privacyManagerId,
           ccpa: true,
-        }).findByRole('button');
-        fireEvent.click(link);
-
-        expect(expectedFunction).toHaveBeenCalledWith(privacyManagerId);
-      });
-
-      test('call unified gpp SourcePoint function', async () => {
-        const link = await renderWithTheme(ConsentSettingsLink, {
-          privacyManagerId,
-          gpp: true,
         }).findByRole('button');
         fireEvent.click(link);
 
