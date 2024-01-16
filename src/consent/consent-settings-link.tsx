@@ -10,11 +10,9 @@ type SPWindowUnifiedGDPR = Window & {
   };
 };
 
-type SPWindowUnifiedCCPA = Window & {
-  _sp_?: {
-    ccpa?: {
-      loadPrivacyManagerModal: (managerId: string) => void;
-    };
+type SPWindowUnifiedUSNAT = Window & {
+  _sp_usnat?: {
+    loadPrivacyManagerModal: (managerId: string) => void;
   };
 };
 
@@ -29,7 +27,7 @@ export interface ConsentSettingsLinkProps extends Omit<LinkProps, 'href'> {
   privacyManagerId: string;
   children?: string;
   gdpr?: boolean;
-  ccpa?: boolean;
+  usnat?: boolean;
   tabToOpen?:
     | 'purposes'
     | 'vendors'
@@ -42,7 +40,7 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
   siteId,
   privacyManagerId,
   gdpr,
-  ccpa,
+  usnat,
   tabToOpen,
   children = 'Manage Consent',
   ...props
@@ -60,9 +58,9 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
             privacyManagerId,
             tabToOpen,
           );
-        } else if (ccpa) {
+        } else if (usnat) {
           // eslint-disable-next-line no-underscore-dangle
-          (window as SPWindowUnifiedCCPA)._sp_!.ccpa!.loadPrivacyManagerModal(
+          (window as SPWindowUnifiedUSNAT)._sp_usnat!.loadPrivacyManagerModal(
             privacyManagerId,
           );
         } else {

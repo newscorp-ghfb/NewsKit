@@ -38,8 +38,8 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     for a full reference.
     <br/>
     <br/>
-    In order to add Sourcepoint script for GDPR or CCPA you must add at least an empty gdpr or ccpa object (see below).
-    To enable default MSPA configuration ccpa object should contain 'includeGppApi' parameter set to 'true'. Instructions and additional MSPS settings can be found in <a href="https://docs.sourcepoint.com/hc/en-us/articles/18007731422099-Enable-GPP-Multi-State-Privacy-String-MSPS-with-U-S-Privacy-CCPA-solution" target="_blank">this Sourcepoint guide</a>. 
+    In order to add Sourcepoint script for GDPR or USNAT you must add at least an empty gdpr or usnat object (see below).
+    The usnat object should contain 'includeUspApi' parameter set to 'true'. This enables both the older ccpa type string as well as the gpp string (part of the MSPS signal). Instructions and additional MSPS settings can be found in <a href="https://docs.sourcepoint.com/hc/en-us/articles/21455316499731#h_01HC0NYD93FV6MBBH6Y1NPCRMX" target="_blank">this Sourcepoint guide</a>. 
     <Prop name="accountId" type="number" required>
       The accountId value associates the property with your organization's
       Sourcepoint account. Your organization's accountId can be retrieved by
@@ -48,7 +48,7 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     </Prop>
     <Prop name="baseEndpoint" type="string">
       A single server endpoint that serves the messaging experience.
-      For GDPR TCF, CCPA, GDPR Standard, and Custom Messaging, the baseEndpoint is https://cdn.privacy-mgmt.com.
+      For GDPR TCF, USNAT, GDPR Standard, and Custom Messaging, the baseEndpoint is https://cdn.privacy-mgmt.com.
     </Prop>
     <Prop name="isSPA" type="boolean">
       When set to true, will confirm the implementation for a single page
@@ -116,8 +116,8 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
         targetingParams set within the gdpr object will override overall targetingParams
       </Prop>
     </Prop>
-    <Prop name="ccpa" type="object">
-      In order to surface a CCPA message to your clients, you will need to include the ccpa:{ } object in your client configuration script regardless of whether you configure any optional parameters.
+    <Prop name="usnat" type="object">
+      In order to surface a USNAT message to your clients, you will need to include the usnat:{ } object in your client configuration script regardless of whether you configure any optional parameters.
       <Prop name="alwaysDisplayDNS" type="boolean">
         Setting this parameter to true enables use cases where a Sourcepoint Do Not Sell (my data) notification is hardcoded.
       </Prop>
@@ -132,11 +132,10 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
         <br/>
         targetingParams set within the gdpr object will override overall targetingParams
       </Prop>
-      <Prop name="includeGppApi" type="boolean | MSPATransactions">
-        Allows your organization to use the Multi-State Privacy String (MSPS). It is a signal that notifies downstream partners that participating publishers have provided end-users with specific notice and choice over data processing activities on their properties.
-        In order to set the default settings on the MSPS, set the includeGppApi parameter to true.
+      <Prop name="includeUspApi" type="boolean | MSPATransactions">
+        Including this flag as 'true' enables support for the existing (Legacy) USP string, part of CCPA.&nbsp;
         MSPS settings could be customized by passing configuration object to the includeGppApi as&nbsp;
-        <a href="https://docs.sourcepoint.com/hc/en-us/articles/18007731422099-Enable-GPP-Multi-State-Privacy-String-MSPS-with-U-S-Privacy-CCPA-solution" target="_blank">shown here</a>.
+        <a href="https://docs.sourcepoint.com/hc/en-us/articles/21455316499731-GPP-Multi-State-Privacy-String-MSPS-Transition-readiness-web-and-app-" target="_blank">shown here</a>.
       </Prop>
     </Prop>
   </Prop>

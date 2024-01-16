@@ -48,11 +48,11 @@ export interface SourcePointConfigUnified {
     groupPmId?: number;
     targetingParams?: object;
   };
-  ccpa?: {
+  usnat?: {
     alwaysDisplayDNS?: boolean;
     groupPmId?: number;
     targetingParams?: object;
-    includeGppApi?: boolean | MSPATransactions;
+    includeUspApi?: boolean;
   };
 }
 
