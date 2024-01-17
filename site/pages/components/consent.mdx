@@ -38,7 +38,7 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     for a full reference.
     <br/>
     <br/>
-    In order to add Sourcepoint script for GDPR or USNAT you must add at least an empty gdpr or usnat object (see below).
+    In order to add Sourcepoint script for GDPR, CCPA or USNAT you must add at least an empty gdpr, ccpa or usnat object (see below).
     The usnat object should contain 'includeUspApi' parameter set to 'true'. This enables both the older ccpa type string as well as the gpp string (part of the MSPS signal). Instructions and additional MSPS settings can be found in <a href="https://docs.sourcepoint.com/hc/en-us/articles/21455316499731#h_01HC0NYD93FV6MBBH6Y1NPCRMX" target="_blank">this Sourcepoint guide</a>. 
     <Prop name="accountId" type="number" required>
       The accountId value associates the property with your organization's
@@ -48,7 +48,7 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     </Prop>
     <Prop name="baseEndpoint" type="string">
       A single server endpoint that serves the messaging experience.
-      For GDPR TCF, USNAT, GDPR Standard, and Custom Messaging, the baseEndpoint is https://cdn.privacy-mgmt.com.
+      For GDPR TCF, CCPA, USNAT, GDPR Standard, and Custom Messaging, the baseEndpoint is https://cdn.privacy-mgmt.com.
     </Prop>
     <Prop name="isSPA" type="boolean">
       When set to true, will confirm the implementation for a single page
@@ -106,6 +106,23 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
       </Prop>
       <Prop name="groupPmId" type="number">
         Allows your organization to use the privacy manager ID for the property group's privacy manager.
+      </Prop>
+      <Prop name="targetingParams" type="object">
+        Targeting params allow a developer to set arbitrary key/value pairs. These
+        key/value pairs are sent to Sourcepoint servers where they can be used to
+        take a decision within the scenario builder.
+        <br/>
+        <br/>
+        targetingParams set within the gdpr object will override overall targetingParams
+      </Prop>
+    </Prop>
+    <Prop name="ccpa" type="object">
+      In order to surface a CCPA message to your clients, you will need to include the ccpa:{ } object in your client configuration script regardless of whether you configure any optional parameters.
+      <Prop name="alwaysDisplayDNS" type="boolean">
+        Setting this parameter to true enables use cases where a Sourcepoint Do Not Sell (my data) notification is hardcoded.
+      </Prop>
+      <Prop name="groupPmId" type="number">
+        Allows your organization to use the Privacy Manager ID for the property group's Privacy Manager ID.
       </Prop>
       <Prop name="targetingParams" type="object">
         Targeting params allow a developer to set arbitrary key/value pairs. These
