@@ -49,8 +49,7 @@ const StyledPage = styled.div`
   padding-right: 20px;
 `;
 
-const AUDIO_SRC =
-  'https://newskit.co.uk/static/sample.mp3';
+const AUDIO_SRC = 'https://newskit.co.uk/static/sample.mp3';
 const LIVE_AUDIO_SRC = 'https://radio.talkradio.co.uk/stream';
 
 const myCustomTheme = createTheme({
