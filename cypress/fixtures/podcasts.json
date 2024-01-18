@@ -9,7 +9,7 @@
     "captionSrc": "captions.vtt"
   },
   {
-    "src": "https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3",
+    "src": "https://newskit.co.uk/static/sample.mp3",
     "imgAlt": "test image 2",
     "title": "title 2",
     "live": false,
@@ -17,7 +17,7 @@
     "captionSrc": "captions.vtt"
   },
   {
-    "src": "https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_2.mp3",
+    "src": "https://newskit.co.uk/static/sample2.mp3",
     "imgAlt": "test image 3",
     "title": "title 3",
     "live": false,
