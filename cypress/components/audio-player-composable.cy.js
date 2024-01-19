@@ -59,7 +59,7 @@ const checkTime = expectedValue => {
 };
 
 const TEST_DATA = {
-  durationInSeconds: 898,
+  durationInSeconds: 78,
 };
 
 /*
@@ -136,17 +136,18 @@ describe('audio player composable', () => {
     cy.get('@audioSliderTrack').click('left');
     checkTime(0);
 
-    // move to 4th minute
-    cy.get('@audioSliderTrack').click(129, 4);
-    checkTime(2 * 60);
+    // move to 12th second
+    cy.get('@audioSliderTrack').click(150, 4);
+    checkTime(12);
   });
 
   it('pause when end', () => {
     // start playing
     cy.get('@togglePlay').click();
     // move to the end
-    cy.get('@audioSliderTrack').click(1000, 4, {force: true});
-    checkTime(TEST_DATA.durationInSeconds);
+    cy.get('@audioSliderTrack').click(965, 4, { force: true });
+    cy.get('@audioSliderTrack').click(965, 4, { force: true });
+    checkTime(TEST_DATA.durationInSeconds - 1);
     isPaused();
   });
 
@@ -185,43 +186,43 @@ describe('audio player composable', () => {
   // Keyboard related tests
   it('keyboard: toggle when press K key', () => {
     cy.get('@togglePlay').focus();
-    triggerKeyEvent('@togglePlay', {key: 'k'});
+    triggerKeyEvent('@togglePlay', { key: 'k' });
     isPlaying();
 
-    triggerKeyEvent('@togglePlay', {key: 'k'});
+    triggerKeyEvent('@togglePlay', { key: 'k' });
     isPaused();
   });
 
   it('keyboard: toggle when press M key', () => {
     cy.get('@muteButton').focus();
-    triggerKeyEvent('@muteButton', {key: 'm'});
+    triggerKeyEvent('@muteButton', { key: 'm' });
     isVolumeVal(0);
 
-    triggerKeyEvent('@muteButton', {key: 'm', force: true});
+    triggerKeyEvent('@muteButton', { key: 'm', force: true });
     isVolumeVal(0.7);
   });
 
   it('keyboard: toggle when press Space key', () => {
     cy.get('@audioSliderThumb').focus();
-    triggerKeyEvent('@audioSliderThumb', {key: ' '});
+    triggerKeyEvent('@audioSliderThumb', { key: ' ' });
     isPlaying();
 
-    triggerKeyEvent('@audioSliderThumb', {key: ' '});
+    triggerKeyEvent('@audioSliderThumb', { key: ' ' });
     isPaused();
   });
 
   it('keyboard: move track using 0, Start and End key', () => {
     cy.get('@togglePlay').focus();
-    triggerKeyEvent('@togglePlay', {key: 'End'});
-    checkTime(TEST_DATA.durationInSeconds);
+    triggerKeyEvent('@togglePlay', { key: 'End' });
+    checkTime(TEST_DATA.durationInSeconds - 1);
 
-    triggerKeyEvent('@togglePlay', {key: 'Home'});
+    triggerKeyEvent('@togglePlay', { key: 'Home' });
     checkTime(0);
 
-    triggerKeyEvent('@togglePlay', {key: 'End'});
+    triggerKeyEvent('@togglePlay', { key: 'End' });
     checkTime(TEST_DATA.durationInSeconds);
 
-    triggerKeyEvent('@togglePlay', {key: '0'});
+    triggerKeyEvent('@togglePlay', { key: '0' });
     checkTime(0);
   });
 
@@ -238,26 +239,26 @@ describe('audio player composable', () => {
   });
 
   it('keyboard: shift + p trigger previous', () => {
-    triggerKeyEvent('@togglePlay', [{key: 'Shift'}, {key: 'p'}]);
+    triggerKeyEvent('@togglePlay', [{ key: 'Shift' }, { key: 'p' }]);
     cy.get(`${parentTestIDSelector} [data-testid="event"]`).as('eventLog');
     cy.get('@eventLog').should('have.text', 'skip-previous');
   });
 
   it('keyboard: shift + n trigger next', () => {
-    triggerKeyEvent('@togglePlay', [{key: 'Shift'}, {key: 'n'}]);
+    triggerKeyEvent('@togglePlay', [{ key: 'Shift' }, { key: 'n' }]);
     cy.get(`${parentTestIDSelector} [data-testid="event"]`).as('eventLog');
     cy.get('@eventLog').should('have.text', 'skip-next');
   });
 
   it('keyboard: l trigger forwards', () => {
-    triggerKeyEvent('@forwardButton', {key: 'l'});
+    triggerKeyEvent('@forwardButton', { key: 'l' });
     checkTime(10);
   });
 
   it('keyboard: j trigger playback', () => {
-    triggerKeyEvent('@forwardButton', {key: 'l'});
-    triggerKeyEvent('@forwardButton', {key: 'l'});
-    triggerKeyEvent('@forwardButton', {key: 'j'});
+    triggerKeyEvent('@forwardButton', { key: 'l' });
+    triggerKeyEvent('@forwardButton', { key: 'l' });
+    triggerKeyEvent('@forwardButton', { key: 'j' });
     checkTime(10);
   });
 });
