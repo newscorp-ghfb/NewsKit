@@ -25,8 +25,7 @@ const liveAudioProps = {
 };
 
 const recordedAudioProps = {
-  src:
-    'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3',
+  src: 'https://newskit.co.uk/static/sample.mp3',
   title: 'The Breakfast Show with Giles Coren',
   captionSrc: 'captions.vtt',
 };

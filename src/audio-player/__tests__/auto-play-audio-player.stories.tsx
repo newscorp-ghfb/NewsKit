@@ -17,7 +17,7 @@ export default {
 export const StoryAutoPlayAudioPlayer = () => (
   <AudioPlayerContainer>
     <AudioPlayer
-      src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+      src="https://newskit.co.uk/static/sample.mp3"
       title="Auto Play Test"
       captionSrc="captions.vtt"
       ariaLandmark="audio player with autoplay"

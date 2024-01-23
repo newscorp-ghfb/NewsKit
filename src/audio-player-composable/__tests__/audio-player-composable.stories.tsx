@@ -49,8 +49,7 @@ const StyledPage = styled.div`
   padding-right: 20px;
 `;
 
-const AUDIO_SRC =
-  'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3';
+const AUDIO_SRC = 'https://newskit.co.uk/static/sample.mp3';
 const LIVE_AUDIO_SRC = 'https://radio.talkradio.co.uk/stream';
 
 const myCustomTheme = createTheme({
