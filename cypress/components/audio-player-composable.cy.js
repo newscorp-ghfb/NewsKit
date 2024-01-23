@@ -59,7 +59,7 @@ const checkTime = expectedValue => {
 };
 
 const TEST_DATA = {
-  durationInSeconds: 78,
+  durationInSeconds: 33,
 };
 
 /*
@@ -136,9 +136,9 @@ describe('audio player composable', () => {
     cy.get('@audioSliderTrack').click('left');
     checkTime(0);
 
-    // move to 12th second
+    // move to 5th second
     cy.get('@audioSliderTrack').click(150, 4);
-    checkTime(12);
+    checkTime(5);
   });
 
   it('pause when end', () => {
@@ -147,7 +147,7 @@ describe('audio player composable', () => {
     // move to the end
     cy.get('@audioSliderTrack').click(965, 4, { force: true });
     cy.get('@audioSliderTrack').click(965, 4, { force: true });
-    checkTime(TEST_DATA.durationInSeconds - 1);
+    checkTime(TEST_DATA.durationInSeconds);
     isPaused();
   });
 
@@ -214,7 +214,7 @@ describe('audio player composable', () => {
   it('keyboard: move track using 0, Start and End key', () => {
     cy.get('@togglePlay').focus();
     triggerKeyEvent('@togglePlay', { key: 'End' });
-    checkTime(TEST_DATA.durationInSeconds - 1);
+    checkTime(TEST_DATA.durationInSeconds);
 
     triggerKeyEvent('@togglePlay', { key: 'Home' });
     checkTime(0);
