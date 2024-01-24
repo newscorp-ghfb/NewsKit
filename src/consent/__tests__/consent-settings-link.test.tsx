@@ -30,11 +30,11 @@ describe('ConsentSettingsLink', () => {
           ccpa: {
             loadPrivacyManagerModal: expectedFunction,
           },
+          usnat: {
+            loadPrivacyManagerModal: expectedFunction,
+          },
         };
         (global as any).window._sp_ = sp;
-        (global as any).window._sp_usnat = {
-          loadPrivacyManagerModal: expectedFunction,
-        };
       });
 
       afterEach(() => {

@@ -19,8 +19,10 @@ type SPWindowUnifiedCCPA = Window & {
 };
 
 type SPWindowUnifiedUSNAT = Window & {
-  _sp_usnat?: {
-    loadPrivacyManagerModal: (managerId: string) => void;
+  _sp_?: {
+    usnat?: {
+      loadPrivacyManagerModal: (managerId: string) => void;
+    };
   };
 };
 
@@ -75,7 +77,7 @@ export const ConsentSettingsLink: React.FC<ConsentSettingsLinkProps> = ({
           );
         } else if (usnat) {
           // eslint-disable-next-line no-underscore-dangle
-          (window as SPWindowUnifiedUSNAT)._sp_usnat!.loadPrivacyManagerModal(
+          (window as SPWindowUnifiedUSNAT)._sp_!.usnat!.loadPrivacyManagerModal(
             privacyManagerId,
           );
         } else {
