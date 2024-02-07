@@ -94,6 +94,18 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
         setCanScrollEnd(
           scrollWidth - clientWidth - scrollLeft > SCROLL_THRESHOLD,
         );
+        console.log('scrollLeft', scrollLeft);
+        console.log('client WIdth', clientWidth);
+        console.log('scroll Width', scrollWidth);
+        if (scrollWidth > clientWidth * 2) {
+          if (scrollLeft + clientWidth >= scrollWidth - 1) {
+            scrollContainerRef.current.scrollLeft =
+              scrollWidth / 2 - clientWidth;
+          }
+          if (scrollLeft === 0) {
+            scrollContainerRef.current.scrollLeft = scrollWidth / 2;
+          }
+        }
       }
     };
 
@@ -130,10 +142,16 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
         >
           {snapAlign ? (
             <ScrollSnapAlignmentContextProvider value={snapAlign}>
-              {children}
+              <div style={{display: 'flex'}}>
+                {children}
+                {children}
+              </div>
             </ScrollSnapAlignmentContextProvider>
           ) : (
-            children
+            <div style={{display: 'flex'}}>
+              {children}
+              {children}
+            </div>
           )}
         </StyledScrollContainer>
 

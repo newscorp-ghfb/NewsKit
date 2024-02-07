@@ -122,7 +122,7 @@ export const StyledScrollContainer = styled.div<
 
   overflow-x: auto;
   overflow-y: auto;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 
   ${({vertical, snapAlign}) =>
     snapAlign && `scroll-snap-type: ${vertical ? 'y' : 'x'} mandatory;`};
