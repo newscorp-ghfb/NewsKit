@@ -33,6 +33,14 @@ const getPseudoStyles = (props: ScrollProps & ThemeProp) => {
   `;
 };
 
+export const StyledItemsContainer = styled.div<
+  Omit<ScrollProps, 'overrides'> & {
+    vertical?: boolean;
+  }
+>`
+  ${({vertical}) => (!vertical ? 'display: flex' : 'display: block')};
+`;
+
 export const StyledScrollNav = styled.div<
   Pick<ScrollProps, 'vertical' | 'overrides'> & {
     showStartShadow?: boolean;
@@ -115,6 +123,7 @@ export const StyledScrollNav = styled.div<
 export const StyledScrollContainer = styled.div<
   Omit<ScrollProps, 'overrides'> & {
     controlsEnabled?: boolean;
+    infinite?: boolean;
   }
 >`
   box-sizing: border-box;
@@ -122,7 +131,8 @@ export const StyledScrollContainer = styled.div<
 
   overflow-x: auto;
   overflow-y: auto;
-  scroll-behavior: auto;
+  ${({infinite}) =>
+    infinite ? 'scroll-behavior: auto' : 'scroll-behavior: smooth'};
 
   ${({vertical, snapAlign}) =>
     snapAlign && `scroll-snap-type: ${vertical ? 'y' : 'x'} mandatory;`};

@@ -7,6 +7,7 @@ import {
   StyledScrollContainer,
   StyledScrollButtonContainer,
   StyledScrollNav,
+  StyledItemsContainer,
 } from './styled';
 import {ScrollSnapAlignmentContextProvider} from './context';
 import {filterOutFalsyProperties} from '../utils/filter-object';
@@ -30,10 +31,16 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
       scrollBar = false,
       children,
       overrides = {},
+      infinite,
       ...props
     },
     ref,
   ) => {
+    // We don't want to allow the option for infinite scroll if the scroll bar prop is true since it doesn't make sense to
+    // const isInfiniteAvailable = infinite && !scrollBar;
+    if (infinite && scrollBar) {
+      scrollBar = false;
+    }
     const theme = useTheme();
     const buttonComponentDefault = get(
       theme,
@@ -72,7 +79,15 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
           scrollHeight,
           clientHeight,
         } = scrollContainerRef.current;
-
+        if (infinite && scrollHeight >= clientHeight * 2) {
+          if (scrollTop + clientHeight >= scrollHeight - 1) {
+            scrollContainerRef.current.scrollTop =
+              scrollHeight / 2 - clientHeight;
+          }
+          if (scrollTop === 0) {
+            scrollContainerRef.current.scrollTop = scrollHeight / 2;
+          }
+        }
         setCanScrollStart(scrollTop > 0);
         // In cases when browser is zoomed the scrollTop is decimal value instead of int
         // that brakes the following condition: scrollTop !== scrollHeight - clientHeight
@@ -94,10 +109,7 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
         setCanScrollEnd(
           scrollWidth - clientWidth - scrollLeft > SCROLL_THRESHOLD,
         );
-        console.log('scrollLeft', scrollLeft);
-        console.log('client WIdth', clientWidth);
-        console.log('scroll Width', scrollWidth);
-        if (scrollWidth > clientWidth * 2) {
+        if (infinite && scrollWidth >= clientWidth * 2) {
           if (scrollLeft + clientWidth >= scrollWidth - 1) {
             scrollContainerRef.current.scrollLeft =
               scrollWidth / 2 - clientWidth;
@@ -108,7 +120,23 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
         }
       }
     };
+    const showDuplicateChildren = () => {
+      const container = scrollContainerRef.current;
+      if (!container || !infinite) return;
 
+      const isOverflowing = vertical
+        ? container.scrollHeight > container.clientHeight
+        : container.scrollWidth > container.clientWidth;
+
+      return (
+        isOverflowing &&
+        React.Children.map(children, child =>
+          React.isValidElement(child)
+            ? React.cloneElement(child, {key: `${child.key}-second`})
+            : child,
+        )
+      );
+    };
     const debounceCheckForScrollPosition = debounce(
       checkForScrollPosition,
       100,
@@ -137,21 +165,26 @@ const ThemelessScroll = React.forwardRef<HTMLDivElement, ScrollProps>(
           scrollBar={scrollBar}
           ref={composeRefs(scrollContainerRef, ref)}
           data-testid="scroll-container"
-          onScroll={debounceCheckForScrollPosition}
+          infinite={infinite}
+          onScroll={() =>
+            infinite
+              ? checkForScrollPosition()
+              : debounceCheckForScrollPosition()
+          }
           controlsEnabled={controlsEnabled}
         >
           {snapAlign ? (
             <ScrollSnapAlignmentContextProvider value={snapAlign}>
-              <div style={{display: 'flex'}}>
+              <StyledItemsContainer vertical={vertical}>
                 {children}
-                {children}
-              </div>
+                {showDuplicateChildren()}
+              </StyledItemsContainer>
             </ScrollSnapAlignmentContextProvider>
           ) : (
-            <div style={{display: 'flex'}}>
+            <StyledItemsContainer vertical={vertical}>
               {children}
-              {children}
-            </div>
+              {showDuplicateChildren()}
+            </StyledItemsContainer>
           )}
         </StyledScrollContainer>
 
