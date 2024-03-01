@@ -40,7 +40,8 @@ const parseContent = (content: string) =>
           /\"*__FUNC__\"*/g,
           '',
         )
-        .replace(/\\n*/g, String.fromCharCode(10))
+        .replace(/\\n+/g, String.fromCharCode(10))
+        .replace(/\\+/g, '')
     : content;
 
 export const RenderScripts: React.FC<RenderScriptsProps> = ({

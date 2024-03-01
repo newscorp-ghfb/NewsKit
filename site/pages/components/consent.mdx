@@ -15,6 +15,7 @@ Unless you are utilising React Helmet, it must be placed inside the body of the 
 
 At the moment this component is supporting three versions of the Sourcepoint config. Versions GDPR TCF V2 and GDPR Non-TCF, these are both legacy implementations (SourcePoint clients implemented before May 5th, 2021 will used these and should be migrated to the Unified Script). 
 The most upto date version is the Unified Script.
+In addition to GDPR and CCPP the Unified Script has been updated to support MSPA as well.
 
 ## Prerequisites
 
@@ -37,7 +38,8 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     for a full reference.
     <br/>
     <br/>
-    In order to add Sourcepoint script for GDPR or CCPA you must add at least an empty gdpr or ccpa object (see below).
+    In order to add Sourcepoint script for GDPR, CCPA or USNAT you must add at least an empty gdpr, ccpa or usnat object (see below).
+    The 'usnat' object should contain 'includeUspApi' parameter set to 'true'. This enables both the older ccpa type string as well as the gpp string (part of the MSPS signal). Instructions and additional MSPS settings can be found in <a href="https://docs.sourcepoint.com/hc/en-us/articles/21455316499731#h_01HC0NYD93FV6MBBH6Y1NPCRMX" target="_blank">this Sourcepoint guide</a>. 
     <Prop name="accountId" type="number" required>
       The accountId value associates the property with your organization's
       Sourcepoint account. Your organization's accountId can be retrieved by
@@ -46,7 +48,7 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     </Prop>
     <Prop name="baseEndpoint" type="string">
       A single server endpoint that serves the messaging experience.
-      For GDPR TCF, CCPA, GDPR Standard, and Custom Messaging, the baseEndpoint is https://cdn.privacy-mgmt.com.
+      For GDPR TCF, CCPA, USNAT, GDPR Standard, and Custom Messaging, the baseEndpoint is https://cdn.privacy-mgmt.com.
     </Prop>
     <Prop name="isSPA" type="boolean">
       When set to true, will confirm the implementation for a single page
@@ -129,6 +131,28 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
         <br/>
         <br/>
         targetingParams set within the gdpr object will override overall targetingParams
+      </Prop>
+    </Prop>
+    <Prop name="usnat" type="object">
+      In order to surface a USNAT message to your clients, you will need to include the usnat:{ } object in your client configuration script regardless of whether you configure any optional parameters.
+      <Prop name="alwaysDisplayDNS" type="boolean">
+        Setting this parameter to true enables use cases where a Sourcepoint Do Not Sell (my data) notification is hardcoded.
+      </Prop>
+      <Prop name="groupPmId" type="number">
+        Allows your organization to use the Privacy Manager ID for the property group's Privacy Manager ID.
+      </Prop>
+      <Prop name="targetingParams" type="object">
+        Targeting params allow a developer to set arbitrary key/value pairs. These
+        key/value pairs are sent to Sourcepoint servers where they can be used to
+        take a decision within the scenario builder.
+        <br/>
+        <br/>
+        targetingParams set within the gdpr object will override overall targetingParams
+      </Prop>
+      <Prop name="includeUspApi" type="boolean">
+        Including this flag as 'true' enables support for the existing (Legacy) USP string, part of CCPA.&nbsp;
+        MSPS settings could be customized by passing configuration object to the includeGppApi as&nbsp;
+        <a href="https://docs.sourcepoint.com/hc/en-us/articles/21455316499731-GPP-Multi-State-Privacy-String-MSPS-Transition-readiness-web-and-app-" target="_blank">shown here</a>.
       </Prop>
     </Prop>
   </Prop>
