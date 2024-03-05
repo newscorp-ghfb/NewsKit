@@ -8,6 +8,7 @@ export interface ScrollProps extends React.HTMLAttributes<HTMLDivElement> {
   stepDistance?: number;
   snapAlign?: 'start' | 'center' | 'end';
   scrollBar?: boolean;
+  infinite?: boolean;
   overrides?: {
     controls?: {
       offset?: MQ<string>;
