@@ -82,7 +82,7 @@ export const AudioPlayerComposable = ({
     }
     setCurrentTime(0);
     setDisplayDuration(0);
-  }, [src, initialTime, duration]);
+  }, []);
 
   const {
     audioEvents,
