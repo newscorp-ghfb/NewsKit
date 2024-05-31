@@ -30,6 +30,9 @@ describe('ConsentSettingsLink', () => {
           ccpa: {
             loadPrivacyManagerModal: expectedFunction,
           },
+          usnat: {
+            loadPrivacyManagerModal: expectedFunction,
+          },
         };
         (global as any).window._sp_ = sp;
       });
@@ -65,6 +68,16 @@ describe('ConsentSettingsLink', () => {
         const link = await renderWithTheme(ConsentSettingsLink, {
           privacyManagerId,
           ccpa: true,
+        }).findByRole('button');
+        fireEvent.click(link);
+
+        expect(expectedFunction).toHaveBeenCalledWith(privacyManagerId);
+      });
+
+      test('call unified usnat SourcePoint function', async () => {
+        const link = await renderWithTheme(ConsentSettingsLink, {
+          privacyManagerId,
+          usnat: true,
         }).findByRole('button');
         fireEvent.click(link);
 

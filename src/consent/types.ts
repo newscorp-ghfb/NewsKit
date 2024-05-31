@@ -53,6 +53,12 @@ export interface SourcePointConfigUnified {
     groupPmId?: number;
     targetingParams?: object;
   };
+  usnat?: {
+    alwaysDisplayDNS?: boolean;
+    groupPmId?: number;
+    targetingParams?: object;
+    includeUspApi?: boolean;
+  };
 }
 
 export interface SourcePointConfigNonTCFV1 {
