@@ -15,7 +15,7 @@ export const StoryE2eTest = () => (
   <ImageContainer>
     <p>Scroll down</p>
     <Image
-      src="http://placekitten.com/200/300"
+      src="https://placekitten.com/200/300"
       overrides={{width: '200px', height: '300px'}}
       loadingAspectRatio="2:3"
       loading="lazy"
