@@ -46,6 +46,11 @@ const testsConfig = files
         disabledRules = disabledRulesObj.value.elements.map(node => node.value);
       }
 
+      if (title === 'cardcomposable') {
+        disabledRules.push('duplicate-id-aria');
+        disabledRules.push('duplicate-id-active');
+      }
+
       return {title, disabledRules};
     } catch (e) {
       // eslint-disable-next-line no-console

@@ -1,5 +1,5 @@
 import React from 'react';
-import {EmotionIconProps} from '@emotion-icons/emotion-icon';
+import {EmotionIconProps, EmotionIcon} from '@emotion-icons/emotion-icon';
 import {withTheme} from '../theme';
 import {NewsKitIconProps, NewsKitIcon, SvgProps} from './types';
 import {getSizingCssFromTheme, getStylePreset, styled} from '../utils/style';
@@ -55,7 +55,8 @@ const StyledIcon = styled.svg<NewsKitIconProps>`
 export const toNewsKitIcon = (
   PassedIcon:
     | React.ComponentType<EmotionIconProps>
-    | React.ComponentType<SvgProps>,
+    | React.ComponentType<SvgProps>
+    | EmotionIcon,
 ): NewsKitIcon =>
   withOwnTheme(
     withTheme<NewsKitIconProps>(
