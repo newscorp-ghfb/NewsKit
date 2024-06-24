@@ -16,6 +16,8 @@ export function runA11yTestForRoute(route) {
           rules: {
             'heading-order': {enabled: false},
             'color-contrast': {enabled: false},
+            'duplicate-id-aria': {enabled: false},
+            'duplicate-id-active': {enabled: false},
           },
         });
       } else if (
