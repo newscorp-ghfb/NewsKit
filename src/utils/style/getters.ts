@@ -3,7 +3,7 @@ import {getFontSizing} from '../font-sizing';
 import {BreakpointKeys, TypographyPreset} from '../../theme';
 import {isFontConfigObject} from '../guards';
 import {ThemeProp} from '../style-types';
-import {MQ, MQPartial} from './types';
+import {CSSQuery, CSSQueryRules, MQ, MQPartial, ResponsiveValue} from './types';
 import {
   getResponsiveValueFromTheme,
   getValueFromTheme,
@@ -15,7 +15,7 @@ import {textCrop} from '../text-crop';
 import {getFontMetrics} from './helpers/getter-helper';
 
 export const getTypographyPresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<string>,
+  defaultToken?: ResponsiveValue<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: {withCrop: boolean},
 ) => (props: Props) => {
@@ -201,7 +201,6 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
   ) => string | CSSObject,
 ) => (props: Props): string | CSSObject => {
   const {breakpoints} = props.theme;
-
   const propNames = Object.keys(propObject);
 
   // get only props that we will use
@@ -210,7 +209,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
       return {...acc, [propName]: props[propName]};
     }
     return acc;
-  }, {}) as {[Key in keyof T]: MQ<T[Key]>};
+  }, {}) as {[Key in keyof T]: ResponsiveValue<T[Key]>};
 
   const propsValues = Object.values(usedProps) as MQ<T[keyof T]>[];
 
@@ -243,6 +242,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
     .flatMap(
       (propValue: MQ<T[keyof T]>) => Object.keys(propValue) as BreakpointKeys[],
     )
+    .filter((item: BreakpointKeys | 'rules') => item !== 'rules')
     .filter(
       (item: BreakpointKeys, index: number, ar: BreakpointKeys[]) =>
         ar.indexOf(item) === index,
@@ -308,30 +308,66 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
     ? commonMQKeys
     : ['xs', ...commonMQKeys];
 
-  const cssObject = usedMQKeys.reduce((acc, mqKey, index) => {
-    const fromMqKey = mqKey;
-    const toMqKey = usedMQKeys[index + 1] ? usedMQKeys[index + 1] : undefined;
+  let cssMediaQueryObject = {};
+  if (commonMQKeys.length > 0) {
+    cssMediaQueryObject = usedMQKeys.reduce((acc, mqKey, index) => {
+      const fromMqKey = mqKey;
+      const toMqKey = usedMQKeys[index + 1] ? usedMQKeys[index + 1] : undefined;
 
-    const mediaQuery = getMediaQueryFromTheme(fromMqKey, toMqKey)(props);
-    const values = propNames.reduce((valAcc, propName) => {
-      // TS needs checking if prop is part of the object otherwise throw error
-      /* istanbul ignore else */
-      if (hasOwnProperty(filledPropValues, propName)) {
-        const mqValue = filledPropValues[propName as keyof T];
+      const mediaQuery = getMediaQueryFromTheme(fromMqKey, toMqKey)(props);
+      const values = propNames.reduce((valAcc, propName) => {
+        // TS needs checking if prop is part of the object otherwise throw error
         /* istanbul ignore else */
-        if (hasOwnProperty(mqValue, fromMqKey)) {
-          return {
-            ...valAcc,
-            [propName]: mqValue[fromMqKey],
-          };
+        if (hasOwnProperty(filledPropValues, propName)) {
+          const mqValue = filledPropValues[propName as keyof T];
+          /* istanbul ignore else */
+          if (hasOwnProperty(mqValue, fromMqKey)) {
+            return {
+              ...valAcc,
+              [propName]: mqValue[fromMqKey],
+            };
+          }
         }
-      }
-      /* istanbul ignore next */
-      return valAcc;
-    }, {}) as {[Key in keyof T]: T[Key]};
-    acc[mediaQuery] = propHandler(values, props, fromMqKey);
-    return acc;
-  }, {} as Record<string, unknown>) as CSSObject;
+        /* istanbul ignore next */
+        return valAcc;
+      }, {}) as {[Key in keyof T]: T[Key]};
+      acc[mediaQuery] = propHandler(values, props, fromMqKey);
+      return acc;
+    }, {} as Record<string, unknown>) as CSSObject;
+  }
 
-  return cssObject;
+  /*
+  If they've defined container queries using the 'rules'
+  */
+
+  const usedValues = Object.entries(usedProps).filter(usedProp => {
+    const propValue = usedProp[1];
+    return (
+      propValue &&
+      typeof propValue === 'object' &&
+      hasOwnProperty(propValue, 'rules') &&
+      Array.isArray(propValue.rules) &&
+      propValue.rules.length > 0
+    );
+  }) as [string, CSSQueryRules<T[keyof T]>][];
+
+  const cssContainerQueryObject: Record<
+    CSSQuery<T>['rule'],
+    string | CSSObject
+  > = usedValues.reduce(
+    (acc: Record<CSSQuery<T>['rule'], string | CSSObject>, prop) => {
+      const values = {} as {[Key in keyof T]: T[Key]};
+      if (prop[1].rules) {
+        prop[1].rules.forEach(rule => {
+          const key = `${prop[0]}` as keyof T;
+          values[key] = rule.value;
+          acc[rule.rule] = propHandler(values, props, undefined);
+        });
+      }
+      return acc;
+    },
+    {},
+  );
+
+  return {...cssMediaQueryObject, ...cssContainerQueryObject};
 };

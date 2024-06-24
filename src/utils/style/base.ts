@@ -3,7 +3,7 @@ import {isResponsive, getMediaQueryFromTheme} from '../responsive-helpers';
 import {filterObject} from '../filter-object';
 import {getToken} from '../get-token';
 import {ThemeProp} from '../style-types';
-import {MQ} from './types';
+import {CSSQuery, MQ, ResponsiveValue} from './types';
 import {isNonThemeValueAllowed, isValidUnit} from './utils';
 import {CSSObject} from './emotion';
 
@@ -51,7 +51,7 @@ export const getValueFromTheme = <ThemeToken extends string>(
 export const getResponsiveValueFromTheme = <ThemeToken extends string>(
   themeKey: keyof Theme,
 ) => <Props extends ThemeProp>(
-  defaultToken?: MQ<ThemeToken>,
+  defaultToken?: ResponsiveValue<ThemeToken>,
   customProp?: Exclude<keyof Props, 'theme'>,
 ) => ({theme, ...props}: Props) => {
   const section = theme[themeKey] as Record<ThemeToken, unknown>;
@@ -76,7 +76,7 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
       ([a], [b]) =>
         mq.indexOf(a as BreakpointKeys) - mq.indexOf(b as BreakpointKeys),
     ) as any; // eslint-disable-line @typescript-eslint/no-explicit-any
-    const cssObject = presetKeys
+    const cssMediaQueryObject = presetKeys
       .filter(
         // Exclude invalid breakpoints and theme section keys
         ([breakpointKey, presetKey]) =>
@@ -114,7 +114,27 @@ export const getResponsiveValueFromTheme = <ThemeToken extends string>(
         return acc;
       }, {} as Record<string, unknown>);
 
-    return Object.entries(cssObject);
+    const containerKeys = (propKeys.rules || []) as CSSQuery<ThemeToken>[];
+
+    const cssContainerQueryObject =
+      containerKeys &&
+      containerKeys.reduce((acc, query) => {
+        const {rule, value} = query;
+        let preset = '' as Record<ThemeToken, unknown>[ThemeToken];
+        const MQtokens =
+          typeof value === 'string' && (value as string).split(' ');
+        if (themeKey === 'spacePresets' && isMQTokenArray(MQtokens)) {
+          preset = mapTokensArray(MQtokens);
+        } else {
+          preset =
+            section[value] ||
+            (canHaveNonThemeValue && isValidUnit(themeKey, value) && value);
+        }
+        acc[rule] = preset;
+        return acc;
+      }, {} as Record<string, unknown>);
+
+    return Object.entries({...cssMediaQueryObject, ...cssContainerQueryObject});
   }
 
   const noMQtokens =
@@ -142,7 +162,7 @@ export const getXFromTheme = (themeKey: keyof Theme) => <
   Props extends ThemeProp
 >(
   cssProperty: string | FromThemeCallback,
-  defaultToken: MQ<string>,
+  defaultToken: ResponsiveValue<string>,
 ) => (props: Props) => {
   const value = getResponsiveValueFromTheme(themeKey)(defaultToken)(
     props,

@@ -9,7 +9,7 @@ import {filterObject, rejectObject} from '../filter-object';
 import {ThemeProp} from '../style-types';
 import {getDefaultedValue, getResponsiveValueFromTheme} from './base';
 import {CSSObject} from './emotion';
-import {MQ} from './types';
+import {ResponsiveValue} from './types';
 
 export interface GetStylePresetFromThemeOptions {
   nestedCssSelector?: string;
@@ -241,7 +241,7 @@ const getStylePresetValueFromTheme = (
   );
 
 export const getStylePresetFromTheme = <Props extends ThemeProp>(
-  defaultToken?: MQ<string>,
+  defaultToken?: ResponsiveValue<string>,
   customProp?: Exclude<keyof Props, 'theme'>,
   options?: GetStylePresetFromThemeOptions,
 ) => (props: Props) => {
