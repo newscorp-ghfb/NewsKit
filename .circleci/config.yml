@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  slack: circleci/slack@4.10.1
+  slack: circleci/slack@4.13.3
   aws-cli: circleci/aws-cli@3.1
   github-cli: circleci/github-cli@1.0.4
   node: circleci/node@5.1.0
@@ -369,7 +369,7 @@ jobs:
           at: ~/project
       - run:
           name: Install make
-          command: apt-get update && apt-get install -y make
+          command: apt-get update && apt-get install -y make curl
       - run:
           name: install cypress
           command: make install_cypress
