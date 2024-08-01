@@ -5,12 +5,20 @@ import {ThemeProvider, CreateThemeArgs} from '../../theme';
 import {StorybookCase, StorybookPage} from '../../test/storybook-comps';
 import {getColorCssFromTheme, styled} from '../../utils';
 import {createCustomThemeWithBaseThemeSwitch} from '../../test/theme-select-object';
+import {Block} from '../../block';
 
 const textBlockCustomThemeObject: CreateThemeArgs = {
   name: 'textblock-custom-theme',
   overrides: {
     stylePresets: {
       textBlockCustom: {base: {color: '{{colors.inkBrand010}}'}},
+      blockContainerQueryWrapper: {
+        base: {
+          borderStyle: 'dashed',
+          borderWidth: '{{borders.borderWidth010}}',
+          borderColor: '{{colors.blue060}}',
+        },
+      },
     },
     typographyPresets: {
       textBlockCustom: {fontFamily: '{{fonts.fontFamily020.fontFamily}}'},
@@ -70,6 +78,58 @@ export const StoryTextBlockLogicalProps = () => (
   </StorybookPage>
 );
 StoryTextBlockLogicalProps.storyName = 'Logical props';
+
+export const StoryTextBlockContainerQueries = () => {
+  const QueryTextBlock = () => (
+    <TextBlock
+      typographyPreset={{
+        rules: [
+          {
+            rule: '@container (width <= 300px)',
+            value: 'editorialParagraph010',
+          },
+          {
+            rule: '@container (width > 300px)',
+            value: 'editorialParagraph030',
+          },
+        ],
+      }}
+      stylePreset="inkContrast"
+    >
+      {BODY}
+    </TextBlock>
+  );
+
+  return (
+    <StorybookPage>
+      <StorybookCase title="Container < 300px">
+        <Block
+          overrides={{
+            containerName: 'container-small',
+            containerType: 'inline-size',
+          }}
+          stylePreset="blockContainerQueryWrapper"
+          style={{width: '200px'}}
+        >
+          <QueryTextBlock />
+        </Block>
+      </StorybookCase>
+      <StorybookCase title="Container > 300px">
+        <Block
+          overrides={{
+            containerName: 'container-small',
+            containerType: 'inline-size',
+          }}
+          stylePreset="blockContainerQueryWrapper"
+          style={{width: '400px'}}
+        >
+          <QueryTextBlock />
+        </Block>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryTextBlockContainerQueries.storyName = 'Container Queries';
 
 export const StoryTextBlockStylingOverrides = () => (
   <StorybookPage columns={TEXT_BLOCK_COLUMNS}>
