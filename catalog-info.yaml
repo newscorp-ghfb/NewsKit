@@ -1,0 +1,35 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: newskit
+  description: >
+    NewsKit is News UK’s design system. It provides interactive building blocks and guidelines for crafting cohesive digital product interfaces and accelerating development. Build better products faster.
+  annotations:
+    circleci.com/project-slug: newscorp-ghfb/newskit
+    backstage.io/source-location: url:https://github.com/newscorp-ghfb/newskit
+    github.com/team-slug: newscorp-ghfb/newskit-council
+  tags:
+    - design-system
+    - ui
+    - bu:newsuk
+  links:
+    - name: NewsKit Documentation
+      url: https://www.newskit.co.uk/
+    - name: View NewsKit Design System npm package
+      url: https://www.npmjs.com/package/newskit
+    - name: Medium
+      url: https://medium.com/newskit-design-system
+    - name: Storybook
+      url: https://storybook.newskit.co.uk/
+    - name: Dev Environment
+      url: https://www.newskit.dev-news.co.uk/
+    - name: Dev Storybook
+      url: https://storybook.newskit.dev-news.co.uk/
+    - name: Prod Environment
+      url: https://www.newskit.co.uk/
+    - name: Prod Storybook
+      url: https://storybook.newskit.co.uk/
+spec:
+  type: library
+  lifecycle: production
+  owner: newskit-council
