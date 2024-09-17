@@ -47,7 +47,8 @@ export const getMediaQueryFromTheme = (
 export const isResponsive = (
   prop: unknown,
   breakpoints: Breakpoints,
-): prop is Record<keyof Breakpoints, unknown> =>
+): prop is Record<keyof Breakpoints | 'rules', unknown> =>
   !!prop &&
   typeof prop === 'object' &&
-  Object.keys(breakpoints).some(bp => prop && hasOwnProperty(prop, bp));
+  (Object.keys(breakpoints).some(bp => prop && hasOwnProperty(prop, bp)) ||
+    hasOwnProperty(prop, 'rules'));

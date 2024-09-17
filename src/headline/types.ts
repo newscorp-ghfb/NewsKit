@@ -1,14 +1,14 @@
-import {MQ} from '../utils/style';
+import {ResponsiveValue} from '../utils/style';
 import {LogicalProps} from '../utils/logical-properties';
 
 export interface HeadlineOverrides extends LogicalProps {
-  typographyPreset?: MQ<string>;
+  typographyPreset?: ResponsiveValue<string>;
   kicker?: {
-    stylePreset?: MQ<string>;
-    spaceInline?: MQ<string>;
+    stylePreset?: ResponsiveValue<string>;
+    spaceInline?: ResponsiveValue<string>;
   };
   heading?: {
-    stylePreset?: MQ<string>;
+    stylePreset?: ResponsiveValue<string>;
   };
 }
 

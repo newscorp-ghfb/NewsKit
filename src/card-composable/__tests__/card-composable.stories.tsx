@@ -1,6 +1,7 @@
 /* eslint-disable no-script-url */
 import React from 'react';
 import {Story as StoryType} from '@storybook/react';
+import {styled} from '../../utils';
 
 import {
   CardComposable,
@@ -37,6 +38,15 @@ import {
   CardHorizontalTheSun,
   stylePresets as stylePresetsTheSun,
 } from './the-sun-cards';
+
+const QueryContainerSmall = styled.div`
+  container-type: inline-size;
+  width: 300px;
+`;
+const QueryContainerLarge = styled.div`
+  container-type: inline-size;
+  width: 400px;
+`;
 
 const H = ({overrides, ...props}: Omit<HeadlineProps, 'children'>) => (
   <Headline
@@ -707,6 +717,91 @@ export const StoryLogicalProps = () => (
 );
 StoryLogicalProps.storyName = 'Logical props';
 
+export const StoryContainerQueries = () => {
+  const CardWithQueries = () => (
+    <CardComposable
+      overrides={{
+        stylePreset: 'cardInset',
+        paddingBlock: {
+          rules: [
+            {
+              rule: '@container (width <= 300px)',
+              value: 'space020',
+            },
+            {
+              rule: '@container (width > 300px)',
+              value: 'space060',
+            },
+          ],
+        },
+        paddingInline: {
+          rules: [
+            {
+              rule: '@container (width <= 300px)',
+              value: 'space020',
+            },
+            {
+              rule: '@container (width > 300px)',
+              value: 'space060',
+            },
+          ],
+        },
+      }}
+      rowGap={areasGap}
+      containerType="inline-size"
+    >
+      <CardContent rowGap={contentGap}>
+        <Flag>Flag</Flag>
+        <Headline
+          overrides={{
+            typographyPreset: {
+              rules: [
+                {
+                  rule: '@container (width <= 300px)',
+                  value: 'editorialHeadline020',
+                },
+                {
+                  rule: '@container (width > 300px)',
+                  value: 'editorialHeadline040',
+                },
+              ],
+            },
+          }}
+        >
+          This headline&apos;s typographyPreset changes depending on its
+          container size
+        </Headline>
+        <P />
+      </CardContent>
+      <CardMedia
+        media={{
+          src: 'https://storybook.newskit.co.uk/placeholder-3x2.png',
+        }}
+      />
+      <CardActions>
+        <Tag href={href} size="medium">
+          Tag
+        </Tag>
+      </CardActions>
+    </CardComposable>
+  );
+  return (
+    <StorybookPage>
+      <StorybookCase title="Container Query < 300px">
+        <QueryContainerSmall>
+          <CardWithQueries />
+        </QueryContainerSmall>
+      </StorybookCase>
+      <StorybookCase title="Container Query > 300px">
+        <QueryContainerLarge>
+          <CardWithQueries />
+        </QueryContainerLarge>
+      </StorybookCase>
+    </StorybookPage>
+  );
+};
+StoryContainerQueries.storyName = 'Container Queries';
+
 export const StoryOverrides = () => (
   <StorybookPage>
     <StorybookCase title="Style preset - card and flag colours">
@@ -779,7 +874,6 @@ export const StoryOverrides = () => (
 );
 StoryOverrides.storyName = 'Styling overrides';
 
-// https://www.linkedin.com/search/results/content/?keywords=design&origin=FACETED_SEARCH&postedBy=%5B%22first%22%2C%22following%22%5D&sid=xxV&sortBy=%22relevance%22
 export const ComplexStory = () => (
   <StorybookPage>
     <StorybookCase title="Other card">

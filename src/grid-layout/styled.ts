@@ -2,6 +2,7 @@ import {Theme} from '../theme';
 import {logicalProps} from '../utils/logical-properties';
 import {getResponsiveSize, handleResponsiveProp, styled} from '../utils/style';
 import {GridLayoutProps} from './types';
+import {containerProps} from '../utils/container-properties';
 
 const GRID_DEFAULT_PROPS = {
   rowGap: undefined,
@@ -121,4 +122,5 @@ export const StyledGridLayout = styled.div<GridLayoutProps>`
   ${getResponsiveSize('minHeight', 'gridLayout', '', 'minHeight')};
   ${getResponsiveSize('maxHeight', 'gridLayout', '', 'maxHeight')};
   ${logicalProps('gridLayout')}
+  ${containerProps()}
 `;
