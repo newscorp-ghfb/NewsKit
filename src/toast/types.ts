@@ -1,4 +1,4 @@
-import { ReactElement, type JSX } from 'react';
+import {ReactElement, JSX} from 'react';
 import {NewsKitIcon} from '../icons';
 import {MQ} from '../utils';
 import {LogicalProps} from '../utils/logical-properties';

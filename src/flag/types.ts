@@ -2,7 +2,7 @@ import {LogicalProps} from '../utils/logical-properties';
 import {TransitionToken} from '../theme/types';
 import {MQ} from '../utils/style';
 
-import type { JSX } from "react";
+import type {JSX} from 'react';
 
 export type FlagSize = 'small' | 'medium' | 'large';
 export interface BaseFlagOverrides extends LogicalProps {

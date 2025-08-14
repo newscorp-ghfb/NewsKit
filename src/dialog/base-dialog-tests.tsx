@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 // eslint-disable-next-line
 import {fireEvent, waitFor} from '@testing-library/react';
-import React, { type JSX } from 'react';
+import React, {JSX} from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import userEvent from '@testing-library/user-event';
 import {

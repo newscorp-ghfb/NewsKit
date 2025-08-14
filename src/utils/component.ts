@@ -1,4 +1,4 @@
-import React, { type JSX } from 'react';
+import React, {JSX} from 'react';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 // Needed because the as supplied by emotion has incompatible types and were causing TS errors.

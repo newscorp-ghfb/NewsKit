@@ -1,5 +1,5 @@
 /* istanbul ignore file */
-import React, { useState, type JSX } from 'react';
+import React, {useState, JSX} from 'react';
 import {FormInputState} from '../form/types';
 import {
   AudioPlayerContainer,
