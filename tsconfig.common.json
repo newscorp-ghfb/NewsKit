@@ -18,7 +18,7 @@
     "paths": {
       "@newskit/newskit/ui": ["src/index.ts"]
     },
-    "jsx": "react",
+    "jsx": "react-jsx",
     "strict": true,
     "strictNullChecks": true,
     "esModuleInterop": true,

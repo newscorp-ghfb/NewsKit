@@ -1,6 +1,6 @@
 {
   "name": "newskit",
-  "version": "7.7.3",
+  "version": "8.0.0",
   "description": "A React Component library implementing the News design language",
   "keywords": [
     "react",
@@ -133,7 +133,7 @@
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/theming": "^6.5.16",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
+    "@testing-library/react": "^16.3.0",
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/user-event": "14.3.0",
     "@types/card-validator": "^4.1.0",
@@ -152,8 +152,8 @@
     "@types/node": "16.11.7",
     "@types/popper.js": "^1.11.0",
     "@types/prettier": "^1.16.4",
-    "@types/react": "18",
-    "@types/react-dom": "18",
+    "@types/react": "19",
+    "@types/react-dom": "19",
     "@types/react-dropzone": "^4.2.2",
     "@types/react-helmet": "^5.0.15",
     "@types/react-input-mask": "^2.0.1",
@@ -220,14 +220,14 @@
     "pretty-proptypes": "^0.6.0",
     "process": "^0.11.10",
     "raw-loader": "^4.0.2",
-    "react": "18",
+    "react": "19",
     "react-codesandboxer": "^3.1.1",
-    "react-dom": "18",
+    "react-dom": "19",
     "react-helmet": "^5.2.1",
     "react-markdown": "^6.0.0",
     "react-phone-number-input": "^3.2.19",
     "react-syntax-highlighter": "^13.0.0",
-    "react-test-renderer": "18",
+    "react-test-renderer": "19",
     "start-server-and-test": "^1.14.0",
     "storybook-addon-performance": "0.16.1",
     "tar": "^4.4.8",
@@ -287,16 +287,16 @@
     "semver": "^7.3.7"
   },
   "resolutions": {
-    "@types/react": "18",
+    "@types/react": "19",
     "minimist": "^0.2.1",
     "kind-of": "^6.0.3"
   },
   "peerDependencies": {
     "@emotion/react": ">= 11.1.5 <= 11.9.3",
     "@emotion/styled": ">= 11.1.5 <= 11.9.3",
-    "react": ">= 16.8.0 <= 18",
-    "react-dom": ">= 16.8.0 <= 18",
-    "react-is": ">= 16.8.0 <= 18"
+    "react": ">= 16.8.0 <= 19",
+    "react-dom": ">= 16.8.0 <= 19",
+    "react-is": ">= 16.8.0 <= 19"
   },
   "husky": {
     "hooks": {
