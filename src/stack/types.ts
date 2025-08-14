@@ -1,6 +1,8 @@
 import {MQ} from '../utils/style/types';
 import {LogicalProps} from '../utils/logical-properties';
 
+import type { JSX } from "react";
+
 export type FlexWrap = boolean | 'wrap' | 'nowrap' | 'wrap-reverse';
 
 export type Flow =

@@ -2,7 +2,7 @@
 import React from 'react';
 
 export const useResizeObserver = (
-  ref: React.RefObject<HTMLElement>,
+  ref: React.RefObject<HTMLElement | null>,
   callback?: (entry: DOMRectReadOnly) => void,
 ) => {
   const [width, setWidth] = React.useState(0);

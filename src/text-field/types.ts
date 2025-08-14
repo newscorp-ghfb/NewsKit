@@ -33,7 +33,7 @@ type FormEntryChildrenProps = {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   state?: FormInputState;
   ref: UseFormRegisterReturn['ref'];
-  refObject: React.RefObject<HTMLInputElement>;
+  refObject: React.RefObject<HTMLInputElement | null>;
   error?: string;
   hasContent: boolean;
 };

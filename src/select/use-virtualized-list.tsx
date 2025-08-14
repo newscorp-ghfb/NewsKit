@@ -17,7 +17,7 @@ export const useVirtualizedList = ({
   isOpen,
 }: {
   items: React.ReactElement<SelectOptionProps>[];
-  listRef: React.RefObject<HTMLDivElement>;
+  listRef: React.RefObject<HTMLDivElement | null>;
   getItemProps: Function;
   limit: number;
   highlightedIndex?: number | null;

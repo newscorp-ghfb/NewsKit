@@ -288,7 +288,7 @@ describe('Image', () => {
       renderHook(() =>
         useClientSide(
           mockOnLoadHandler,
-          imageRef as RefObject<HTMLImageElement>,
+          imageRef as RefObject<HTMLImageElement | null>,
         ),
       );
       expect(mockOnLoadHandler).toHaveBeenCalled();
@@ -304,7 +304,7 @@ describe('Image', () => {
       renderHook(() =>
         useClientSide(
           mockOnLoadHandler,
-          imageRef as RefObject<HTMLImageElement>,
+          imageRef as RefObject<HTMLImageElement | null>,
         ),
       );
       expect(mockOnLoadHandler).toHaveBeenCalledTimes(0);

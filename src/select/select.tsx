@@ -59,9 +59,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
       ...restProps
     } = props;
 
-    const selectRef: React.RefObject<HTMLDivElement> = useRef(null);
-    const localInputRef: React.RefObject<HTMLInputElement> = useRef(null);
-    const panelRef: React.RefObject<HTMLDivElement> = useRef(null);
+    const selectRef: React.RefObject<HTMLDivElement | null> = useRef(null);
+    const localInputRef: React.RefObject<HTMLInputElement | null> = useRef(null);
+    const panelRef: React.RefObject<HTMLDivElement | null> = useRef(null);
 
     const renderInModal = checkBreakpointProp(useModal, useBreakpointKey());
 

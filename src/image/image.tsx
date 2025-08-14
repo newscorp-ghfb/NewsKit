@@ -33,7 +33,7 @@ const ImageComponent = React.forwardRef<HTMLImageElement, ImageProps>(
     },
     ref,
   ) => {
-    const imageRef: React.RefObject<HTMLImageElement> = useRef(null);
+    const imageRef: React.RefObject<HTMLImageElement | null> = useRef(null);
     const [isLoading, setIsLoading] = useState(!renderOnServer);
     const [hasError, setError] = useState(false);
     const onLoad = useCallback(() => isLoading && setIsLoading(false), [

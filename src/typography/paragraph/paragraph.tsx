@@ -50,28 +50,28 @@ export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
 });
 
 const getFirstLetter = (
-  children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
+  children: React.ReactNode[],
 ): string => {
   const [firstChild] = children;
   if (typeof firstChild === 'string') {
     return firstChild.charAt(0);
   }
   if (isFragment(firstChild)) {
-    return getFirstLetter(React.Children.toArray(firstChild.props.children));
+    return getFirstLetter(React.Children.toArray((firstChild as any).props.children));
   }
   return '';
 };
 
 const removeFirstLetter = (
-  children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
-): (React.ReactChild | React.ReactFragment | React.ReactPortal)[] => {
+  children: React.ReactNode[],
+): React.ReactNode[] => {
   const [firstChild, ...rest] = children;
   if (typeof firstChild === 'string') {
     return [firstChild.substring(1), ...rest];
   }
   if (isFragment(firstChild)) {
     return [
-      removeFirstLetter(React.Children.toArray(firstChild.props.children)),
+      removeFirstLetter(React.Children.toArray((firstChild as any).props.children)),
       ...rest,
     ];
   }

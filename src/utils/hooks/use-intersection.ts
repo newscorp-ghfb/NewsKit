@@ -78,7 +78,7 @@ export function useIntersection<T extends Element>({
   const hasIntersectionObserver = typeof IntersectionObserver !== 'undefined';
   const isDisabled: boolean = disabled || !hasIntersectionObserver;
 
-  const unobserve = useRef<Function>();
+  const unobserve = useRef<Function | undefined>(undefined);
   const [visible, setVisible] = useState(false);
 
   const setRef = useCallback(

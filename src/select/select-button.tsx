@@ -51,7 +51,7 @@ interface SelectButtonProps {
   openMenu: Function;
   itemToString: Function;
   isOpen: boolean;
-  selectRef: React.RefObject<HTMLDivElement>;
+  selectRef: React.RefObject<HTMLDivElement | null>;
 }
 
 export const SelectButton = React.forwardRef<

@@ -29,7 +29,7 @@ const tabbableElements = [
 // This function aims to fix this issue in the drawer.
 export const setDrawerElementFocusability = (
   open: boolean,
-  ref: React.RefObject<HTMLDivElement>,
+  ref: React.RefObject<HTMLDivElement | null>,
 ) => {
   /* istanbul ignore next */
   if (!ref || !ref.current) return;

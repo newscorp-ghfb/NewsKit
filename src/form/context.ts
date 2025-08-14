@@ -29,7 +29,7 @@ export const FormInputContext = createContext<{
   state?: FormInputState;
   error?: string;
   ref?: UseFormRegisterReturn['ref']; // this is the react-form callback that we need to pass to the input element
-  refObject?: React.RefObject<HTMLInputElement>; // this is a ref to the input element itself
+  refObject?: React.RefObject<HTMLInputElement | null>; // this is a ref to the input element itself
   id?: string;
   labelId?: string;
   assistiveTextId?: string;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type JSX } from 'react';
 import {styled, getStylePreset, MQ, getResponsiveSpace} from '../utils/style';
 import {LinkInline} from '../link';
 import {Stack} from '../stack';

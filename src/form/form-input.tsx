@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, { useContext, useEffect, useState, type JSX } from 'react';
 import composeRefs from '@seznam/compose-react-refs';
 import {
   RegisterOptions,

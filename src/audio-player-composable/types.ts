@@ -27,7 +27,7 @@ export interface AudioFunctionDependencies {
 
   showLoaderTimeoutRef: React.MutableRefObject<number>;
   currentTimeRef: React.MutableRefObject<number>;
-  audioRef: React.RefObject<HTMLAudioElement>;
+  audioRef: React.RefObject<HTMLAudioElement | null>;
 
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setCurrentTime: React.Dispatch<React.SetStateAction<number>>;
@@ -44,8 +44,8 @@ export interface AudioPlayerProviderContext {
   playing: boolean;
   canPause: boolean;
   loading: boolean;
-  audioRef: React.RefObject<HTMLAudioElement>;
-  audioSectionRef: React.RefObject<HTMLDivElement>;
+  audioRef: React.RefObject<HTMLAudioElement | null>;
+  audioSectionRef: React.RefObject<HTMLDivElement | null>;
   togglePlay: () => void;
 
   // Getter functions
@@ -102,7 +102,7 @@ export interface AudioPlayerProviderContext {
 
 export interface AudioElementProps
   extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
-  audioRef?: React.RefObject<HTMLAudioElement>;
+  audioRef?: React.RefObject<HTMLAudioElement | null>;
 }
 
 export interface AudioPlayerComposableProps

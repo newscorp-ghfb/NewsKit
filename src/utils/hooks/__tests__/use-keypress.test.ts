@@ -79,7 +79,7 @@ describe('use keypress hook', () => {
     const newDiv = document.createElement('div');
     const refMock = {
       current: newDiv,
-    } as RefObject<HTMLElement>;
+    } as RefObject<HTMLElement | null>;
 
     renderHook(() => useKeypress('Escape', callbackMock, {target: refMock}));
 
