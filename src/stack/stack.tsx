@@ -90,17 +90,17 @@ const wrapChild = (
   // If child is a StackChild component
 
   if (hasMatchingDisplayNameWith(child, StackChild)) {
-    if (child.props.order) {
+    if (child.props?.order) {
       childProps.$order = child.props.order;
     }
 
-    if (child.props.alignSelf) {
+    if (child.props?.alignSelf) {
       childProps.$alignSelf = child.props.alignSelf;
     }
 
     return (
       <ChildContainer {...renderAs} {...childProps}>
-        {child.props.children}
+        {child.props?.children}
       </ChildContainer>
     );
   }
@@ -164,7 +164,7 @@ export const Stack = React.forwardRef<HTMLDivElement, StackProps>(
       >
         {children &&
           React.Children.map(
-            children,
+            children as React.ReactNode[],
             wrapChild(spaceStack, spaceInline, flow, wrap, list, inline, as),
           )}
       </MasterContainer>

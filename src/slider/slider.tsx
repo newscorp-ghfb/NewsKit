@@ -108,7 +108,7 @@ const ThemelessSlider = React.forwardRef<HTMLDivElement, SliderProps>(
           data-testid={`${dataTestId}-track`}
           onMouseDown={p.onMouseDown}
           onTouchStart={p.onTouchStart}
-          onKeyDown={e => {
+          onKeyDown={(e: React.KeyboardEvent<HTMLDivElement>) => {
             const spaceKeyCode = 32;
             if (e.keyCode === spaceKeyCode) e.preventDefault();
             return onKeyDown && onKeyDown(e);

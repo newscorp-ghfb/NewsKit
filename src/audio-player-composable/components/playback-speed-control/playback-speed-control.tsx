@@ -73,11 +73,14 @@ const ThemelessAudioPlayerPlaybackSpeedControl = React.forwardRef<
             onClick: () => {
               toggleOpen();
               /* istanbul ignore next */
-              if (props.children?.props?.onClick) {
-                props.children.props.onClick();
+              const childProps = props.children?.props as {
+                onClick?: () => void;
+              };
+              if (childProps?.onClick) {
+                childProps.onClick();
               }
             },
-          })
+          } as Partial<React.HTMLAttributes<HTMLElement>>)
         ) : (
           <IconButton
             aria-label="playback speed"

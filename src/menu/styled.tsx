@@ -85,16 +85,20 @@ const menuItemFlexAlign = {
   center: 'center',
   end: 'flex-end',
   spaceBetween: 'space-between',
-};
+} as const;
 
 const menuItemTextAlign = {
   start: 'left',
   center: 'center',
   end: 'right',
-};
+} as const;
+
+type AlignKey = keyof typeof menuItemFlexAlign;
 
 const getTextAlign = (align: MenuItemAlign) =>
-  align === 'spaceBetween' ? menuItemTextAlign.start : menuItemTextAlign[align];
+  align === 'spaceBetween'
+    ? menuItemTextAlign.start
+    : menuItemTextAlign[align as keyof typeof menuItemTextAlign];
 
 export const StyledButton = styled(Button)<
   Pick<MenuProps, 'vertical' | 'size'> & {
@@ -112,8 +116,9 @@ export const StyledButton = styled(Button)<
     )}
   ${({align}) =>
     align &&
-    menuItemFlexAlign[align] && {
-      justifyContent: menuItemFlexAlign[align],
+    align in menuItemFlexAlign && {
+      justifyContent:
+        menuItemFlexAlign[align as keyof typeof menuItemFlexAlign],
     }}
   text-align: ${({align}) => align && getTextAlign(align)};
 `;

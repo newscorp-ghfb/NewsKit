@@ -58,12 +58,16 @@ export const StyledPointer = styled.div<
   ${({placement, $x, $y, path}) =>
     getResponsiveSize(
       size => {
-        const staticSide: string = {
+        const staticSideMap = {
           top: 'bottom',
           right: 'left',
           bottom: 'top',
           left: 'right',
-        }[placement.split('-')[0]]!;
+        } as const;
+        const placementKey = placement.split(
+          '-',
+        )[0] as keyof typeof staticSideMap;
+        const staticSide: string = staticSideMap[placementKey];
         return {
           width: size,
           height: size,
