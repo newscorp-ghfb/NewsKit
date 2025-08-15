@@ -81,8 +81,14 @@ export const SelectButton = React.forwardRef<
     ...restProps
   } = props;
 
-  const selectedItemDisplay = (selectedItem as React.ReactElement)?.props
-    ?.selectedDisplay;
+  const selectedItemDisplay =
+    React.isValidElement(selectedItem) &&
+    typeof selectedItem.props === 'object' &&
+    selectedItem.props !== null &&
+    'selectedDisplay' in selectedItem.props
+      ? (selectedItem.props as {selectedDisplay?: React.ReactNode})
+          .selectedDisplay
+      : undefined;
 
   const theme = useTheme();
 

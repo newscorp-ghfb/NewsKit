@@ -31,15 +31,31 @@ const ThemelessTooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
     const contentIsString = typeof content === 'string';
 
     const showDisabledWarning = (): void => {
-      if (process.env.NODE_ENV !== 'production' && children.props.disabled) {
+      if (
+        process.env.NODE_ENV !== 'production' &&
+        React.isValidElement(children) &&
+        typeof children.props === 'object' &&
+        children.props !== null &&
+        'disabled' in children.props &&
+        (children.props as {disabled?: boolean}).disabled
+      ) {
         // eslint-disable-next-line no-console
         console.warn(
           `When passing a component with disabled prop to Tooltip please remember to use a wrapper element, such as a span.`,
         );
       }
     };
+
+    const isChildrenDisabled =
+      React.isValidElement(children) &&
+      typeof children.props === 'object' &&
+      children.props !== null &&
+      'disabled' in children.props
+        ? (children.props as {disabled?: boolean}).disabled || false
+        : false;
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    useEffect(() => showDisabledWarning(), [children.props.disabled]);
+    useEffect(() => showDisabledWarning(), [isChildrenDisabled]);
 
     const buildContextAriaAttributes: BuildAriaAttributesFn = ({
       floating: {id, open},

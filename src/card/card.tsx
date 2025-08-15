@@ -14,7 +14,7 @@ import {
   hasMatchingDisplayNameWith,
 } from '../utils/component';
 import {deepMap} from '../utils/react-children-utilities';
-import {Headline} from '../headline';
+import {Headline, HeadlineProps} from '../headline';
 import {BaseLinkProps} from '../link';
 import {BreakpointKeys, Theme, useTheme} from '../theme';
 import {filterOutFalsyProperties} from '../utils/filter-object';
@@ -61,7 +61,7 @@ const getCardHeadlineOverrides = (
   const {
     overrides: userHeadlineOverrides,
     ...restHeadlineProps
-  } = (headline as React.ReactElement).props;
+  } = (headline as React.ReactElement<HeadlineProps>).props;
 
   const headlineOverrides = {
     ...deepMerge(

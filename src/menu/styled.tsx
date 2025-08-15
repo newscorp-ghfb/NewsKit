@@ -93,8 +93,6 @@ const menuItemTextAlign = {
   end: 'right',
 } as const;
 
-type AlignKey = keyof typeof menuItemFlexAlign;
-
 const getTextAlign = (align: MenuItemAlign) =>
   align === 'spaceBetween'
     ? menuItemTextAlign.start

@@ -44,7 +44,23 @@ const ThemelessPopover = React.forwardRef<HTMLDivElement, PopoverProps>(
     const buildContextAriaAttributes: BuildAriaAttributesFn = ({
       floating: {id, open},
     }) => ({
-      'aria-haspopup': children.props['aria-haspopup'] || 'dialog',
+      'aria-haspopup':
+        React.isValidElement(children) &&
+        typeof children.props === 'object' &&
+        children.props !== null &&
+        'aria-haspopup' in children.props
+          ? (children.props as {
+              'aria-haspopup'?:
+                | boolean
+                | 'dialog'
+                | 'menu'
+                | 'grid'
+                | 'true'
+                | 'false'
+                | 'listbox'
+                | 'tree';
+            })['aria-haspopup'] || 'dialog'
+          : 'dialog',
       'aria-controls': open ? id : undefined,
     });
     const theme = useTheme();

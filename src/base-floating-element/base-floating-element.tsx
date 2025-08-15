@@ -114,9 +114,12 @@ export const BaseFloatingElement = React.forwardRef<
 
     const defaultRefId = `ref-${useId()}`;
     const floatingId = `floating-${useId()}`;
+    const childProps = React.isValidElement(children)
+      ? (children.props as React.ComponentProps<React.ElementType>)
+      : {};
     const ariaArgs = {
       floating: {id: floatingId, open},
-      ref: {id: children.props.id || defaultRefId},
+      ref: {id: (childProps as {id?: string}).id || defaultRefId},
     };
     const refElAriaAttributes = buildRefElAriaAttributes(ariaArgs);
     const floatingElAriaAttributes = buildFloatingElAriaAttributes(ariaArgs);
@@ -180,23 +183,37 @@ export const BaseFloatingElement = React.forwardRef<
 
     const baseTransitionClassname = `nk-${path}`;
 
+    // Create a type-safe way to handle the child element props
+    const enhancedProps = {
+      ref: composeRefs<Element>(
+        reference,
+        React.isValidElement(children) ? children.ref : undefined,
+      ),
+      ...refElAriaAttributes,
+      id:
+        floatingElAriaAttributes['aria-labelledby'] &&
+        !(childProps as {id?: string}).id
+          ? defaultRefId
+          : undefined,
+      ...referenceProps,
+      // Overriding the referenceProps events and with the user's provided (if any) events.
+      onClick:
+        (childProps as {onClick?: React.MouseEventHandler}).onClick ||
+        referenceProps.onClick,
+      onKeyDown:
+        (childProps as {onKeyDown?: React.KeyboardEventHandler}).onKeyDown ||
+        referenceProps.onKeyDown,
+      onKeyUp:
+        (childProps as {onKeyUp?: React.KeyboardEventHandler}).onKeyUp ||
+        referenceProps.onKeyUp,
+      onPointerDown:
+        (childProps as {onPointerDown?: React.PointerEventHandler})
+          .onPointerDown || referenceProps.onPointerDown,
+    };
+
     return (
       <>
-        {React.cloneElement(children, {
-          ref: composeRefs<Element>(reference, children.ref),
-          ...refElAriaAttributes,
-          id:
-            floatingElAriaAttributes['aria-labelledby'] && !children.props.id
-              ? defaultRefId
-              : undefined,
-          ...referenceProps,
-          // Overriding the referenceProps events and with the user's provided (if any) events.
-          onClick: children.props.onClick || referenceProps.onClick,
-          onKeyDown: children.props.onKeyDown || referenceProps.onKeyDown,
-          onKeyUp: children.props.onKeyUp || referenceProps.onKeyUp,
-          onPointerDown:
-            children.props.onPointerDown || referenceProps.onPointerDown,
-        })}
+        {React.cloneElement(children, enhancedProps)}
         <CSSTransition
           nodeRef={cssTransitionNodeRef}
           in={open}

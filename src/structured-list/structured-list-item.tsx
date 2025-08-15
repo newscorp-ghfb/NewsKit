@@ -15,13 +15,29 @@ import {withOwnTheme} from '../utils/with-own-theme';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 
 const getCellAlign = (child: React.ReactNode): StructuredListCellAlign =>
-  React.isValidElement(child) && child.props.align;
+  React.isValidElement(child) &&
+  typeof child.props === 'object' &&
+  child.props !== null &&
+  'align' in child.props
+    ? (child.props as {align?: StructuredListCellAlign}).align || 'start'
+    : 'start';
 
 const getPullRight = (child: React.ReactNode): boolean =>
-  React.isValidElement(child) && child.props.pullRight;
+  React.isValidElement(child) &&
+  typeof child.props === 'object' &&
+  child.props !== null &&
+  'pullRight' in child.props
+    ? (child.props as {pullRight?: boolean}).pullRight || false
+    : false;
 
 const getCellFullWidth = (child: React.ReactNode): StructuredListCellAlign =>
-  React.isValidElement(child) && child.props.fullWidthSingleCell;
+  React.isValidElement(child) &&
+  typeof child.props === 'object' &&
+  child.props !== null &&
+  'fullWidthSingleCell' in child.props
+    ? (child.props as {fullWidthSingleCell?: StructuredListCellAlign})
+        .fullWidthSingleCell || 'start'
+    : 'start';
 
 const ThemelessStructuredListItem = React.forwardRef<
   HTMLAnchorElement,
