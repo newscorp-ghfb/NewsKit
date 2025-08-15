@@ -7,7 +7,7 @@ import {Link} from '../components/link';
 import {getTokenType} from '../utils/get-token-type';
 import {INK_DESCRIPTION} from '../utils/colors-token-description';
 
-const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
+const TOKENS_DESCRIPTION: {[key: string]: string | React.JSX.Element} = {
   shadow010: (
     <>
       <Link href="/components/card">Card</Link>

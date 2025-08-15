@@ -14,8 +14,8 @@ import {BaseDialogProps} from './types';
 
 export const sharedDialogTests = (
   Dialog: React.FC<BaseDialogProps>,
-  header: JSX.Element,
-  body: JSX.Element,
+  header: React.JSX.Element,
+  body: React.JSX.Element,
 ) => {
   test('renders default', () => {
     const fragment = renderToFragmentInBody(Dialog, {

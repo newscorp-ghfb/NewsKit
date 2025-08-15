@@ -101,7 +101,11 @@ export const UnpackContent = ({
   }
 
   if (firstChild && isFragment(firstChild)) {
-    return <>{fragmentToOutput(firstChild.props.children, textBlockProps)}</>;
+    return (
+      <>
+        {fragmentToOutput((firstChild as any).props.children, textBlockProps)}
+      </>
+    );
   }
 
   // There are cases in which children is undefined and nextjs complains, so we return null;

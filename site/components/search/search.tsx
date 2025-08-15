@@ -33,7 +33,7 @@ const HiddenDiv = styled.div`
 `;
 
 export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
-  const searchButtonRef = React.useRef(null);
+  const searchButtonRef = React.useRef<HTMLButtonElement>(null);
   const [isOpen, setIsOpen] = React.useState(false);
   const [initialQuery, setInitialQuery] = React.useState<string | undefined>(
     undefined,
@@ -103,7 +103,7 @@ export const Search: React.FC<SearchProps> = ({sidebarOpen}) => {
     onOpen,
     onClose,
     onInput,
-    searchButtonRef,
+    searchButtonRef: searchButtonRef as React.RefObject<HTMLButtonElement>,
   });
 
   return (

@@ -125,7 +125,10 @@ const ThemelessByline = React.forwardRef<HTMLDivElement, BylineProps>(
     );
 
     interface BylineItemProps {
-      children?: Array<JSX.Element | string | undefined> | JSX.Element | string;
+      children?:
+        | Array<React.JSX.Element | string | undefined>
+        | React.JSX.Element
+        | string;
       lastItem: boolean;
     }
 

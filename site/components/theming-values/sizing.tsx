@@ -22,7 +22,7 @@ const StyledSizeBox = styled.div<{
   ${({size}) => size && `width: ${size};`}
 `;
 
-function SizePreview({name, size}: SizePreviewProps): JSX.Element {
+function SizePreview({name, size}: SizePreviewProps): React.JSX.Element {
   return (
     <LegacyBlock width="250px">
       <LegacyBlock font="utilityBody030">
@@ -33,7 +33,7 @@ function SizePreview({name, size}: SizePreviewProps): JSX.Element {
   );
 }
 
-function Sizing(): JSX.Element {
+function Sizing(): React.JSX.Element {
   const sizingMap = {
     sizing010: newskitLightTheme.sizing.sizing010,
     sizing020: newskitLightTheme.sizing.sizing020,

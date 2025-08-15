@@ -14,15 +14,15 @@ const tabOverrides = {
 
 type AnatomyRowsProps = {
   name: string;
-  description: string | JSX.Element;
+  description: string | React.JSX.Element;
   component?: string | string[];
   optional?: boolean;
 };
 
 export interface SingleComponentAnatomyProps {
   title: string;
-  summary: string | JSX.Element;
-  media?: ImageProps | JSX.Element | React.ComponentType;
+  summary: string | React.JSX.Element;
+  media?: ImageProps | React.JSX.Element | React.ComponentType;
   rows: AnatomyRowsProps[];
 }
 
@@ -31,10 +31,10 @@ export interface AnatomyProps {
   tabs?: {
     title: string;
     summary: string;
-    media: ImageProps | JSX.Element | React.ComponentType;
+    media: ImageProps | React.JSX.Element | React.ComponentType;
     rows: AnatomyRowsProps[];
   }[];
-  media?: ImageProps | JSX.Element | React.ComponentType;
+  media?: ImageProps | React.JSX.Element | React.ComponentType;
   rows: AnatomyRowsProps[];
 }
 
@@ -48,7 +48,7 @@ export const AnatomySection: React.FC<AnatomySectionProps> = ({
   components,
 }) => {
   const renderAnatomy = (
-    tabMedia: ImageProps | JSX.Element | React.ComponentType | undefined,
+    tabMedia: ImageProps | React.JSX.Element | React.ComponentType | undefined,
     tabRows: AnatomyRowsProps[],
   ) => (
     <>

@@ -141,7 +141,7 @@ export const radioButtonStates: [
 
 interface ComponentData {
   name: string;
-  component: ({stylePreset}: {stylePreset?: MQ<string>}) => JSX.Element;
+  component: ({stylePreset}: {stylePreset?: MQ<string>}) => React.JSX.Element;
 }
 
 const listData = [`alpha`, `bravo`, `charlie`, `delta`, `echo`, `foxtrot`];

@@ -12,7 +12,7 @@ import {
   ContentSecondary,
 } from '../../../components/content-structure';
 
-const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
+const TOKENS_DESCRIPTION: {[key: string]: string | React.JSX.Element} = {
   shadow010: (
     <>
       <Link href="/components/card">Card</Link>

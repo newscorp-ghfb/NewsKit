@@ -830,7 +830,7 @@ const schema = yup.object().shape({
             },
             {
               name: 'children',
-              type: 'Type JSX.Element  | JSX.Element []',
+              type: 'Type React.JSX.Element  | React.JSX.Element []',
               description: (
                 <>
                   <InlineCode>FormInput</InlineCode> requires children to be

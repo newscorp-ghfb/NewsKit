@@ -47,7 +47,7 @@ const setState = (
 export type FormInputProps = {
   state?: FormInputState;
   size?: TextFieldSize;
-  children?: JSX.Element | JSX.Element[];
+  children?: React.JSX.Element | React.JSX.Element[];
   id?: string;
 } & Omit<FormEntryProps, 'children'>;
 

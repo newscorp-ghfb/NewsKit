@@ -56,7 +56,7 @@ export type TableRowValue =
   | boolean
   | null
   | undefined
-  | JSX.Element
+  | React.JSX.Element
   | CellWithOverrides;
 
 export type TableRow = Record<string, TableRowValue>;

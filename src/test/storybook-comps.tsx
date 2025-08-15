@@ -19,7 +19,7 @@ import {Divider} from '../divider';
 import {GridLayoutProps} from '../grid-layout/types';
 
 interface StoriesProps {
-  title?: JSX.Element | string;
+  title?: React.JSX.Element | string;
   includePrimary?: boolean;
   context: DocsContextProps;
 }

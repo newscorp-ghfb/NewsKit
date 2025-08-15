@@ -86,7 +86,7 @@ export const InputKnob: React.FC<InputKnobProps> = ({
         name={label}
         value={v}
         data-testid={`${TEST_ID_PREFIX}-${lowercaseLabel}`}
-        onBlur={({target}) => {
+        onBlur={({target}: React.FocusEvent<HTMLInputElement>) => {
           fireEvent({
             trigger: EventTrigger.Change,
             originator: 'input-knob',
@@ -96,7 +96,7 @@ export const InputKnob: React.FC<InputKnobProps> = ({
             },
           });
         }}
-        onChange={({target}) => {
+        onChange={({target}: React.ChangeEvent<HTMLInputElement>) => {
           onChange(inputType === 'number' ? +target.value : target.value);
         }}
       />

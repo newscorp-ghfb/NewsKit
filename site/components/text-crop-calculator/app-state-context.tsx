@@ -1,10 +1,4 @@
-import React, {
-  useReducer,
-  ReactNode,
-  Dispatch,
-  ReducerAction,
-  useContext,
-} from 'react';
+import React, {useReducer, ReactNode, Dispatch, useContext} from 'react';
 import {FontMetrics} from '@capsizecss/core';
 import robotoMetrics from '@capsizecss/metrics/roboto';
 
@@ -224,7 +218,7 @@ function reducer(state: AppState, action: Action): AppState {
 
 type AppStateContextValue =
   | {
-      dispatch: Dispatch<ReducerAction<typeof reducer>>;
+      dispatch: Dispatch<Action>;
       state: AppState;
     }
   | undefined;

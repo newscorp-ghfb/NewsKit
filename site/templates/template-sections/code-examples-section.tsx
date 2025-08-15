@@ -11,14 +11,14 @@ export interface CodeExamplesProps {
   children?: React.ReactNode;
   example: {
     title?: string;
-    description?: string | JSX.Element;
-    media?: ImageProps | JSX.Element | React.ComponentType;
+    description?: string | React.JSX.Element;
+    media?: ImageProps | React.JSX.Element | React.ComponentType;
     code?: string;
     codeUrl?: string;
     sections?: {
       title: string;
-      description: string | JSX.Element;
-      media?: ImageProps | JSX.Element | React.ComponentType;
+      description: string | React.JSX.Element;
+      media?: ImageProps | React.JSX.Element | React.ComponentType;
       code?: string;
       codeUrl?: string;
     }[];

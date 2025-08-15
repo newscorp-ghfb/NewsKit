@@ -88,7 +88,9 @@ const DefaultValue: React.FC<DefaultValueProps> = ({value, type, enumObj}) => {
   return <span> = {prefixedValue}</span>;
 };
 
-const wrapChild = (child: React.ReactNode & {props?: PropProps}) => {
+const wrapChild = (
+  child: React.ReactNode & {props?: PropProps & {mdxType?: string}},
+) => {
   // eslint-disable-next-line @typescript-eslint/no-use-before-define
   if (child.props && child.props.mdxType === Prop.displayName) {
     // eslint-disable-next-line @typescript-eslint/no-use-before-define
@@ -116,7 +118,8 @@ export const Prop: React.FC<PropProps> = ({
       )}
       {required && <PropRequiredFlag />}
     </PropsRow>
-    {children && React.Children.map(children, wrapChild)}
+    {children &&
+      React.Children.map(children as React.ReactElement[], wrapChild)}
   </StyledContainer>
 );
 

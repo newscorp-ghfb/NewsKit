@@ -78,9 +78,9 @@ const WrapperWithPadding = styled.div`
 `;
 
 class Layout extends React.Component<LayoutProps, LayoutState> {
-  private headerRef: React.RefObject<HTMLElement>;
+  private headerRef: React.RefObject<HTMLElement | null>;
 
-  private sectionNavRef: React.RefObject<HTMLElement>;
+  private sectionNavRef: React.RefObject<HTMLElement | null>;
 
   constructor(props: LayoutProps) {
     super(props);

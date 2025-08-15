@@ -74,7 +74,9 @@ export const Selector: React.FC<SelectorProps> = ({
         <StyledSelect
           id={id}
           name={id}
-          onChange={({target: {value}}) => {
+          onChange={({
+            target: {value},
+          }: React.ChangeEvent<HTMLSelectElement>) => {
             onChange(options[parseInt(value, 10)][1]);
           }}
         >

@@ -6,7 +6,7 @@ export interface ComponentAPIProps {
 
 export interface SingleComponentAPIProps {
   title: string; // title needs to be manadatory and unique for event tracking purposes
-  summary?: string | JSX.Element;
+  summary?: string | React.JSX.Element;
   propsSummary?: string;
   argsSummary?: string;
   overridesSummary?: string;
@@ -20,7 +20,7 @@ export interface SingleComponentAPIProps {
 
 interface CommonProps extends TableRow {
   type: string | string[];
-  description: string | JSX.Element;
+  description: string | React.JSX.Element;
   default?: string | string[];
   required?: boolean | null;
 }

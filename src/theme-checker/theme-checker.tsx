@@ -14,7 +14,7 @@ const StylePresetsLoader = ({
   children,
 }: {
   name: string;
-  children: ({stylePreset}: {stylePreset?: MQ<string>}) => JSX.Element;
+  children: ({stylePreset}: {stylePreset?: MQ<string>}) => React.JSX.Element;
 }) => {
   const [stylePresets, setStylePresets] = useState([] as string[]);
 
@@ -45,7 +45,7 @@ const ThemeCheckerScenario = ({
   children,
   name,
 }: {
-  children: ({stylePreset}: {stylePreset?: MQ<string>}) => JSX.Element;
+  children: ({stylePreset}: {stylePreset?: MQ<string>}) => React.JSX.Element;
   name: string;
 }) => (
   <>
