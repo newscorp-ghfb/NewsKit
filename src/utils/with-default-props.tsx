@@ -18,7 +18,7 @@ export const withDefaultProps = <P extends {}>(
     React.forwardRef<unknown, P>((props, ref) => {
       const dProps =
         typeof defaultProps === 'function'
-          ? (defaultProps as PropsEvalFunction<P>)(props)
+          ? (defaultProps as PropsEvalFunction<P>)(props as P)
           : defaultProps || {};
       const theme = useTheme();
 

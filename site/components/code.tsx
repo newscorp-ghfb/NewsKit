@@ -34,8 +34,11 @@ const StyledDiv = styled.div`
 `;
 
 export const Code: React.FC<CodeProps> = ({language = 'jsx', children}) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const tabIndex = useTabIndexWhenScroll(containerRef, {firstChild: true});
+  const containerRef = React.useRef<HTMLDivElement | null>(null);
+  const tabIndex = useTabIndexWhenScroll(
+    containerRef as React.RefObject<HTMLElement>,
+    {firstChild: true},
+  );
 
   const {colors} = useTheme();
   const highlighterTheme = generateCodeHighlighterTheme(colors);

@@ -88,7 +88,7 @@ export const withOwnTheme = <P extends {}>(
 
     return (
       <ThemeProvider theme={componentTheme} {...themeOptions}>
-        <BaseComponent ref={ref} {...props} />
+        <BaseComponent {...(props as P)} ref={ref} />
       </ThemeProvider>
     );
   });
