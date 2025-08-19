@@ -193,7 +193,7 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
           {...trackProps}
           values={trackPositionArr}
           dragged={isDragged}
-          onKeyDown={e => {
+          onKeyDown={(e: React.KeyboardEvent) => {
             const spaceKeyCode = 32;
             /* istanbul ignore next */
             if (e.keyCode === spaceKeyCode) e.preventDefault();

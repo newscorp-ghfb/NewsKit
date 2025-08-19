@@ -97,7 +97,7 @@ export const toast = (
     duration: toastOptions?.autoHideDuration,
   };
 
-  return hotToast(e => {
+  return hotToast((e: any) => {
     const onClose = () => hotToast.dismiss(e.id);
 
     if (typeof component === 'function') {

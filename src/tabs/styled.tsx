@@ -157,12 +157,12 @@ export const StyledTabsBarTrack = styled.div<
 const tabFlexAlign = {
   start: 'flex-start',
   end: 'flex-end',
-};
+} as const;
 
 const tabTextAlign = {
   start: 'left',
   end: 'right',
-};
+} as const;
 
 export const StyledTabButton = styled(Button)<
   Omit<ButtonProps, 'loading'> & TabButtonProps
@@ -173,8 +173,10 @@ export const StyledTabButton = styled(Button)<
   ${({align}) =>
     align &&
     align !== 'center' && {
-      justifyContent: tabFlexAlign[align],
-      textAlign: tabTextAlign[align] as TextAlignProperty,
+      justifyContent: tabFlexAlign[align as keyof typeof tabFlexAlign],
+      textAlign: tabTextAlign[
+        align as keyof typeof tabTextAlign
+      ] as TextAlignProperty,
     }}
 `;
 

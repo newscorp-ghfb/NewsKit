@@ -83,7 +83,7 @@ const ThemelessSeekBar = React.forwardRef<
           {...trackProps}
           values={[currentTime]}
           dragged={isDragged}
-          onKeyDown={e => {
+          onKeyDown={(e: React.KeyboardEvent) => {
             const spaceKeyCode = 32;
             /* istanbul ignore next */
             if (e.keyCode === spaceKeyCode) e.preventDefault();

@@ -52,7 +52,10 @@ const getPlacementSize = ({
 export const StyledDrawer = styled(BaseDialogView)<
   BaseDialogViewProps & DrawerPanelProps
 >`
-  ${({placement}) => placementOptions[placement!]};
+  ${({placement}) =>
+    placement
+      ? placementOptions[placement as keyof typeof placementOptions]
+      : {}};
   ${props => getPlacementSize(props)}
 
   ${({path}) => getStylePreset(`${path}.panel`, 'panel')};
