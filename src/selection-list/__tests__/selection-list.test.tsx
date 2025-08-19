@@ -1,6 +1,6 @@
 import {fireEvent, waitFor} from '@testing-library/react';
 import React from 'react';
-import {act} from 'react-dom/test-utils';
+import {act} from 'react';
 import {IconFilledAdd} from '../../icons';
 import {EventTrigger} from '../../instrumentation';
 import {
