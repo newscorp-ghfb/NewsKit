@@ -8,7 +8,7 @@ import {TextArea} from '../../text-area';
 const InputWithCharacterCount = ({
   children,
 }: {
-  children: (ref: RefObject<any>) => ReactElement;
+  children: (ref: RefObject<any>) => ReactElement<any>;
 }) => {
   const ref = useRef<HTMLTextAreaElement>(null);
   return children(ref);

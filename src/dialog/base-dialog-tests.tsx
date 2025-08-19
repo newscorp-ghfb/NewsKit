@@ -2,6 +2,7 @@
 // eslint-disable-next-line
 import {fireEvent, waitFor} from '@testing-library/react';
 import React from 'react';
+import type {JSX} from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import userEvent from '@testing-library/user-event';
 import {

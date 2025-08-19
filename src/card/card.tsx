@@ -61,7 +61,7 @@ const getCardHeadlineOverrides = (
   const {
     overrides: userHeadlineOverrides,
     ...restHeadlineProps
-  } = (headline as React.ReactElement).props;
+  } = (headline as React.ReactElement<any>).props;
 
   const headlineOverrides = {
     ...deepMerge(

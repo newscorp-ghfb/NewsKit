@@ -1,4 +1,5 @@
 import React from 'react';
+import type {JSX} from 'react';
 import {LogicalProps, logicalProps} from '../utils/logical-properties';
 import {TransitionToken} from '../theme/types';
 import {

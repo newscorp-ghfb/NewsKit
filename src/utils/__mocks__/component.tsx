@@ -36,4 +36,6 @@ export const StyledComponentMock = styled.div`
 export const FunctionalComponentMock: React.ComponentType = () => (
   <StyledComponentMock />
 );
-export const ReactElementMock: React.ReactElement = <StyledComponentMock />;
+export const ReactElementMock: React.ReactElement<any> = (
+  <StyledComponentMock />
+);

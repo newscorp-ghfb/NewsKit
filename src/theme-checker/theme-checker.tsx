@@ -1,5 +1,6 @@
 /* istanbul ignore file */
 import React, {useEffect, useState} from 'react';
+import type {JSX} from 'react';
 import {Block} from '../block';
 import {Stack} from '../stack';
 import {TextBlock} from '../text-block';

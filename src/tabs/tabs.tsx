@@ -327,7 +327,7 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
 
         return acc;
       },
-      [] as React.ReactElement[],
+      [] as React.ReactElement<any>[],
     );
 
     return (

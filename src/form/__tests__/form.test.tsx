@@ -113,14 +113,14 @@ describe('Form', () => {
   beforeEach(() => {
     props = {
       onSubmit: () => {},
-      children: (nestedFormBody as unknown) as Array<React.ReactElement>,
+      children: (nestedFormBody as unknown) as Array<React.ReactElement<any>>,
     };
   });
 
   test('renders with inputs', () => {
     const fragment = renderToFragmentWithTheme(Form, {
       ...props,
-      children: (formBody as unknown) as Array<React.ReactElement>,
+      children: (formBody as unknown) as Array<React.ReactElement<any>>,
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -474,7 +474,7 @@ describe('Form', () => {
       ...props,
       marginInline: '30px',
       paddingInline: '30px',
-      children: (formBody as unknown) as Array<React.ReactElement>,
+      children: (formBody as unknown) as Array<React.ReactElement<any>>,
     });
     expect(fragment).toMatchSnapshot();
   });
@@ -500,7 +500,7 @@ describe('Form', () => {
       Form,
       {
         ...props,
-        children: (body as unknown) as Array<React.ReactElement>,
+        children: (body as unknown) as Array<React.ReactElement<any>>,
       },
     );
     fireEvent.change(getByTestId('email-input'), {
@@ -540,7 +540,7 @@ describe('Form', () => {
     );
     const {getByTestId, findByTestId} = renderWithImplementation(Form, {
       ...props,
-      children: (body as unknown) as Array<React.ReactElement>,
+      children: (body as unknown) as Array<React.ReactElement<any>>,
     });
 
     fireEvent.click(getByTestId('submit'));
@@ -651,7 +651,9 @@ describe('FormInput', () => {
   beforeAll(() => {
     props = {
       onSubmit: () => {},
-      children: (formBodyFormInputInvalid as unknown) as Array<React.ReactElement>,
+      children: (formBodyFormInputInvalid as unknown) as Array<
+        React.ReactElement<any>
+      >,
     };
   });
 
@@ -674,7 +676,7 @@ describe('FormInput', () => {
       },
       size: 'medium' as TextFieldSize,
 
-      children: (formInputBody as unknown) as Array<React.ReactElement>,
+      children: (formInputBody as unknown) as Array<React.ReactElement<any>>,
     };
     const fragment = renderToFragmentWithTheme(FormInput, prop);
 
@@ -690,7 +692,9 @@ describe('FormInput', () => {
   test('fireEvent with onBlur valid state', async () => {
     const {getByTestId, asFragment} = renderWithImplementation(Form, {
       ...props,
-      children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
+      children: (formBodyFormInput as unknown) as Array<
+        React.ReactElement<any>
+      >,
     });
     fireEvent.blur(getByTestId('text-field-email'), {
       target: {value: 'test@news.co.uk'},
@@ -715,7 +719,9 @@ describe('FormInput', () => {
     const {getByTestId, asFragment} = renderWithImplementation(Form, {
       ...props,
 
-      children: (formBodyFormInput as unknown) as Array<React.ReactElement>,
+      children: (formBodyFormInput as unknown) as Array<
+        React.ReactElement<any>
+      >,
     });
     fireEvent.change(getByTestId('text-field-email'), {
       target: {value: 'test@news.co.uk'},

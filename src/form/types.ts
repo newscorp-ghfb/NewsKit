@@ -12,7 +12,7 @@ export interface FormError extends Object {
   type: string;
   types: string;
   message: string;
-  ref: React.RefObject<HTMLInputElement>;
+  ref: React.RefObject<HTMLInputElement | null>;
 }
 
 export interface FormProps

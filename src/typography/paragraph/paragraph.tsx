@@ -50,7 +50,13 @@ export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
 });
 
 const getFirstLetter = (
-  children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
+  children: (
+    | React.ReactElement<any>
+    | number
+    | string
+    | Iterable<React.ReactNode>
+    | React.ReactPortal
+  )[],
 ): string => {
   const [firstChild] = children;
   if (typeof firstChild === 'string') {
@@ -63,8 +69,20 @@ const getFirstLetter = (
 };
 
 const removeFirstLetter = (
-  children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
-): (React.ReactChild | React.ReactFragment | React.ReactPortal)[] => {
+  children: (
+    | React.ReactElement<any>
+    | number
+    | string
+    | Iterable<React.ReactNode>
+    | React.ReactPortal
+  )[],
+): (
+  | React.ReactElement<any>
+  | number
+  | string
+  | Iterable<React.ReactNode>
+  | React.ReactPortal
+)[] => {
   const [firstChild, ...rest] = children;
   if (typeof firstChild === 'string') {
     return [firstChild.substring(1), ...rest];

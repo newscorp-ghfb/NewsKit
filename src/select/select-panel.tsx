@@ -32,7 +32,7 @@ interface SelectPanelProps {
   };
   children: React.ReactElement<SelectOptionProps>[];
   renderInModal: boolean;
-  buttonRef: React.RefObject<HTMLButtonElement>;
+  buttonRef: React.RefObject<HTMLButtonElement | null>;
   closeMenu: Function;
   strategy: 'fixed' | 'absolute';
   zIndex: string; // layer or zIndex as string

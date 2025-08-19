@@ -55,7 +55,7 @@ export const getResponsiveAspectRatioFromProps = (
 
 export const useClientSide = (
   callback: () => boolean | void,
-  imgRef: React.RefObject<HTMLImageElement>,
+  imgRef: React.RefObject<HTMLImageElement | null>,
 ) => {
   useEffect(() => {
     const imageElement = imgRef.current!;

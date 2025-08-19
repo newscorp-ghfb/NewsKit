@@ -4,7 +4,7 @@ import {composeEventHandlers} from '../compose-event-handlers';
 interface Options {
   enabled?: boolean;
   eventType?: 'keydown' | 'keyup';
-  target?: RefObject<HTMLElement>;
+  target?: RefObject<HTMLElement | null>;
   preventDefault?: boolean;
 }
 
