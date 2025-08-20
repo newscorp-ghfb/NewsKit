@@ -30,7 +30,10 @@ export interface ReferenceProps extends Record<string, unknown> {
 }
 
 export interface FloatingElementProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title' | 'defaultValue'> {
+  extends Omit<
+    React.HTMLAttributes<HTMLDivElement>,
+    'title' | 'defaultValue' | 'content'
+  > {
   children: React.ReactElement<any> & {
     ref?: React.Ref<HTMLElement>;
   };

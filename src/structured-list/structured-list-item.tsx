@@ -14,14 +14,42 @@ import stylePresets from './style-presets';
 import {withOwnTheme} from '../utils/with-own-theme';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 
-const getCellAlign = (child: React.ReactNode): StructuredListCellAlign =>
-  React.isValidElement(child) && child.props.align;
+const getCellAlign = (child: React.ReactNode): StructuredListCellAlign => {
+  if (
+    React.isValidElement(child) &&
+    child.props &&
+    typeof child.props === 'object' &&
+    'align' in child.props
+  ) {
+    return (child.props as {align: StructuredListCellAlign}).align;
+  }
+  return 'start'; // default value
+};
 
-const getPullRight = (child: React.ReactNode): boolean =>
-  React.isValidElement(child) && child.props.pullRight;
+const getPullRight = (child: React.ReactNode): boolean => {
+  if (
+    React.isValidElement(child) &&
+    child.props &&
+    typeof child.props === 'object' &&
+    'pullRight' in child.props
+  ) {
+    return (child.props as {pullRight: boolean}).pullRight;
+  }
+  return false; // default value
+};
 
-const getCellFullWidth = (child: React.ReactNode): StructuredListCellAlign =>
-  React.isValidElement(child) && child.props.fullWidthSingleCell;
+const getCellFullWidth = (child: React.ReactNode): StructuredListCellAlign => {
+  if (
+    React.isValidElement(child) &&
+    child.props &&
+    typeof child.props === 'object' &&
+    'fullWidthSingleCell' in child.props
+  ) {
+    return (child.props as {fullWidthSingleCell: StructuredListCellAlign})
+      .fullWidthSingleCell;
+  }
+  return 'start'; // default value
+};
 
 const ThemelessStructuredListItem = React.forwardRef<
   HTMLAnchorElement,

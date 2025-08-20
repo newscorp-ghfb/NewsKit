@@ -7,7 +7,7 @@ export interface ComponentTabsWithTableProps {
 
 export interface TabsWithTableProps {
   title?: string;
-  summary?: string | JSX.Element;
+  summary?: string | React.ReactElement;
   description?: string;
   tabs: {
     header: string;

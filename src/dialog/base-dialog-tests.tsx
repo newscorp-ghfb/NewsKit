@@ -2,7 +2,6 @@
 // eslint-disable-next-line
 import {fireEvent, waitFor} from '@testing-library/react';
 import React from 'react';
-import type {JSX} from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import userEvent from '@testing-library/user-event';
 import {
@@ -15,8 +14,8 @@ import {BaseDialogProps} from './types';
 
 export const sharedDialogTests = (
   Dialog: React.FC<BaseDialogProps>,
-  header: JSX.Element,
-  body: JSX.Element,
+  header: React.ReactElement,
+  body: React.ReactElement,
 ) => {
   test('renders default', () => {
     const fragment = renderToFragmentInBody(Dialog, {

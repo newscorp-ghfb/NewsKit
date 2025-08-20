@@ -1,5 +1,4 @@
 import React from 'react';
-import type {JSX} from 'react';
 import {sanitize} from 'isomorphic-dompurify';
 import {
   DocsStoryProps,
@@ -20,7 +19,7 @@ import {Divider} from '../divider';
 import {GridLayoutProps} from '../grid-layout/types';
 
 interface StoriesProps {
-  title?: JSX.Element | string;
+  title?: React.ReactElement | string;
   includePrimary?: boolean;
   context: DocsContextProps;
 }

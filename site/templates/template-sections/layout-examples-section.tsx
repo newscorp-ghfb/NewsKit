@@ -20,8 +20,8 @@ const infoIcon = (
 export interface LayoutExamplesProps {
   components: {
     title: string;
-    summary: string | JSX.Element;
-    media: ImageProps | JSX.Element | React.ComponentType;
+    summary: string | React.ReactElement;
+    media: ImageProps | React.ReactElement | React.ComponentType;
   }[];
   notice?: string | React.ReactNode;
 }

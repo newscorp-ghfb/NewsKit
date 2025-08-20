@@ -10,6 +10,7 @@ const releaseBadgePresets: {[key in ReleaseBadge]: string} = {
   major: 'flagSolidMajor',
   premajor: 'flagSolidMajor',
   prerelease: 'flagSolidPatch',
+  release: 'flagSolidPatch',
   'breaking change': 'flagSolidBreakingChange',
 };
 

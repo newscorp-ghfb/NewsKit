@@ -32,7 +32,7 @@ export const getIllustrationComponent = (
   props?: React.SVGProps<SVGSVGElement>,
 ) => {
   const Component = () => {
-    const [safariSVG, setSafariSVG] = useState<JSX.Element | null>(null);
+    const [safariSVG, setSafariSVG] = useState<React.ReactElement | null>(null);
     const [opacity, setOpacity] = useState(0);
 
     useEffect(() => {

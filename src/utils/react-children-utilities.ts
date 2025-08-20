@@ -57,7 +57,12 @@ export const childIsString = (child: React.ReactNode): boolean => {
     return true;
   }
   // unpack fragment
-  if (isFragment(child) && typeof child.props.children === 'string') {
+  if (
+    isFragment(child) &&
+    React.isValidElement(child) &&
+    child.props &&
+    typeof (child.props as {children: unknown}).children === 'string'
+  ) {
     return true;
   }
   return false;

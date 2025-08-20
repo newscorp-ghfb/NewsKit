@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const HTMLMeta = (): JSX.Element => (
+export const HTMLMeta = (): React.ReactElement => (
   <>
     <meta
       name="viewport"

@@ -16,7 +16,7 @@ import {TableRow} from '../../../components/table';
 import {TabsWithTable} from '../../../components/tabs-with-table';
 
 const usageString = 'Creative use case';
-const TOKENS_DESCRIPTION: {[key: string]: string | JSX.Element} = {
+const TOKENS_DESCRIPTION: {[key: string]: string | React.ReactElement} = {
   overlayTintBase010: usageString,
   overlayTintBase020: usageString,
   overlayTintBase030: usageString,

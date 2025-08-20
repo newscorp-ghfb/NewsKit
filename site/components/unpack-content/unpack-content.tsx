@@ -100,8 +100,13 @@ export const UnpackContent = ({
     return <TextBlock {...textBlockProps}>{children}</TextBlock>;
   }
 
-  if (firstChild && isFragment(firstChild)) {
-    return <>{fragmentToOutput(firstChild.props.children, textBlockProps)}</>;
+  if (
+    firstChild &&
+    isFragment(firstChild) &&
+    React.isValidElement(firstChild)
+  ) {
+    const fragmentProps = firstChild.props as {children: React.ReactNode};
+    return <>{fragmentToOutput(fragmentProps.children, textBlockProps)}</>;
   }
 
   // There are cases in which children is undefined and nextjs complains, so we return null;

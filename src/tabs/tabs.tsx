@@ -262,9 +262,10 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
     const getChildren = (
       tab: string | React.ReactNode,
     ): string | React.ReactNode => {
-      if (isFragment(tab)) {
+      if (isFragment(tab) && React.isValidElement(tab) && tab.props) {
         // un-wrap the fragment from Tab.label prop
-        return tab.props.children;
+        const element = tab as React.ReactElement<{children: React.ReactNode}>;
+        return element.props.children;
       }
       return tab;
     };

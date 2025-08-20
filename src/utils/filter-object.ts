@@ -1,4 +1,4 @@
-const filter = <T>(
+const filter = <T extends Record<string, unknown>>(
   target: T,
   predicate: (x: [keyof T, T[keyof T]]) => boolean,
 ) =>
@@ -10,13 +10,15 @@ const filter = <T>(
     return acc;
   }, {} as Partial<T>);
 
-export const filterObject = <T>(
+export const filterObject = <T extends Record<string, unknown>>(
   target: T,
   filterKeys: Array<keyof T> = [],
 ): Partial<T> =>
-  filterKeys.length ? filter(target, ([key]) => filterKeys.includes(key)) : {};
+  filterKeys.length
+    ? filter(target, ([key]) => filterKeys.includes(key))
+    : ({} as Partial<T>);
 
-export const rejectObject = <T>(
+export const rejectObject = <T extends Record<string, unknown>>(
   target: T,
   rejectKeys: Array<keyof T> = [],
 ): Partial<T> =>
@@ -24,5 +26,10 @@ export const rejectObject = <T>(
     ? filter(target, ([key]) => !rejectKeys.includes(key))
     : target;
 
-export const filterOutFalsyProperties = <T>(target: T) =>
-  target ? filter(target, ([, entry]) => !!entry) : {};
+export const filterOutFalsyProperties = <T>(target: T): Partial<T> =>
+  target && typeof target === 'object'
+    ? (filter(
+        target as T & Record<string, unknown>,
+        ([, entry]) => !!entry,
+      ) as Partial<T>)
+    : ({} as Partial<T>);

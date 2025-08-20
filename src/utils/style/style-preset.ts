@@ -49,12 +49,12 @@ export const getPresetStyles = (
 ) => {
   const {filterStyles = null, omitStyles = [], isSvg = false} = options || {};
   const {iconColor, placeholderColor, ...cssObject} = filterStyles
-    ? filterObject(presetStyles, filterStyles)
-    : rejectObject(presetStyles, omitStyles);
+    ? filterObject(presetStyles as Record<string, unknown>, filterStyles)
+    : rejectObject(presetStyles as Record<string, unknown>, omitStyles);
   if (iconColor) {
     return {
       ...cssObject,
-      ...getCssSvgFillObject(iconColor, isSvg),
+      ...getCssSvgFillObject(iconColor as string, isSvg),
     } as CSSObject;
   }
 
@@ -90,8 +90,8 @@ const getPresetStates = (
   } = options || {};
   const {selected, loading, invalid, valid, ...presetStates} =
     filterStates && filterStates.length
-      ? filterObject(stylePreset, filterStates)
-      : rejectObject(stylePreset, omitStates);
+      ? filterObject(stylePreset as Record<string, unknown>, filterStates)
+      : rejectObject(stylePreset as Record<string, unknown>, omitStates);
   const stateOverrides =
     (isDisabled && presetStates.disabled) ||
     (isLoading && loading) ||
@@ -155,7 +155,7 @@ const getPresetStates = (
     if (forcedStates.length > 0) {
       const path = forcedStates.join(':') as keyof typeof presetStates;
       pseudoOverrides = presetStates[path] || {};
-      currentSubState = path;
+      currentSubState = String(path);
     }
 
     const pseudoPresets = {} as {[key: string]: StylePresetStyles | undefined};
@@ -170,9 +170,24 @@ const getPresetStates = (
     }
 
     const {base = {}} = presetStates;
+    const filteredPseudoPresets = Object.fromEntries(
+      Object.entries(pseudoPresets).filter(([, value]) => value !== undefined),
+    ) as Record<string, StylePresetStyles>;
+
+    const baseStyles =
+      base && typeof base === 'object' ? (base as Record<string, unknown>) : {};
+    const stateOverridesObj =
+      stateOverrides && typeof stateOverrides === 'object'
+        ? (stateOverrides as Record<string, unknown>)
+        : {};
+    const pseudoOverridesObj =
+      pseudoOverrides && typeof pseudoOverrides === 'object'
+        ? (pseudoOverrides as Record<string, unknown>)
+        : {};
+
     return {
-      base: {...base, ...stateOverrides, ...pseudoOverrides},
-      ...pseudoPresets,
+      base: {...baseStyles, ...stateOverridesObj, ...pseudoOverridesObj},
+      ...filteredPseudoPresets,
     };
   }
 
@@ -231,7 +246,7 @@ const getStylePresetValueFromTheme = (
             acc[nestedCssSelector] = styles;
             return acc;
           }
-          return {...acc, ...styles};
+          return Object.assign({}, acc, styles);
         }
         acc[selector] = styles;
       }

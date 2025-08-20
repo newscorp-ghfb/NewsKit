@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react';
 import ReactDOMServer from 'react-dom/server';
-import {DocSearchModal, useDocSearchKeyboardEvents} from '@docsearch/react';
+import {
+  DocSearchModal,
+  useDocSearchKeyboardEvents,
+  DocSearchHit,
+} from '@docsearch/react';
 
 import {
   Global,
@@ -13,7 +17,6 @@ import {
   useTheme,
 } from 'newskit';
 import {createPortal} from 'react-dom';
-import {DocSearchHit} from '@docsearch/react/dist/esm/types';
 import {IconFilledSearch} from '../icons';
 import {Mono} from '../flags';
 import {SearchProps} from './types';

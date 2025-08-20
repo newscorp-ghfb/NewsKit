@@ -88,7 +88,7 @@ export default {
           context?.name,
         )}
       >
-        <Story />
+        {React.createElement(Story as React.ComponentType, {})}
       </ThemeProvider>
     ),
   ],

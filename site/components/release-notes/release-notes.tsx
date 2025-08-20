@@ -48,7 +48,7 @@ const ReleaseNotes = ({body}: Pick<FullRelease, 'body'>) => (
                 marginBlockEnd: 'space080',
               }}
             >
-              {children.filter(e => e !== '\n')}
+              {children.filter((e: React.ReactNode) => e !== '\n')}
             </UnorderedList>
           ),
           h3: ({children}) => (

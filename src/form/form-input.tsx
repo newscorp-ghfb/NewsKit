@@ -1,5 +1,4 @@
 import React, {useContext, useEffect, useState} from 'react';
-import type {JSX} from 'react';
 import composeRefs from '@seznam/compose-react-refs';
 import {
   RegisterOptions,
@@ -48,7 +47,7 @@ const setState = (
 export type FormInputProps = {
   state?: FormInputState;
   size?: TextFieldSize;
-  children?: JSX.Element | JSX.Element[];
+  children?: React.ReactElement | React.ReactElement[];
   id?: string;
 } & Omit<FormEntryProps, 'children'>;
 

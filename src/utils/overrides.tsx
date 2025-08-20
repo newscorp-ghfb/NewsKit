@@ -24,7 +24,10 @@ export const getComponentOverrides = <TCO extends ComponentOverrides>(
     typeof OverridesValue === 'object' &&
     hasOwnProperty(OverridesValue, 'props')
   ) {
-    return [DefaultComponent, {...componentProps, ...OverridesValue.props}];
+    return [
+      DefaultComponent,
+      {...componentProps, ...(OverridesValue as {props: object}).props},
+    ];
   }
   // styleOverride:
   return [DefaultComponent, {overrides: OverridesValue, ...componentProps}];

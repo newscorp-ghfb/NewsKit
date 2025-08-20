@@ -1,7 +1,4 @@
-import {
-  InternalDocSearchHit,
-  StoredDocSearchHit,
-} from '@docsearch/react/dist/esm/types';
+import {InternalDocSearchHit, StoredDocSearchHit} from '@docsearch/react';
 
 export interface SearchProps {
   sidebarOpen?: boolean;

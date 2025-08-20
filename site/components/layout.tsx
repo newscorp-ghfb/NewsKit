@@ -78,9 +78,9 @@ const WrapperWithPadding = styled.div`
 `;
 
 class Layout extends React.Component<LayoutProps, LayoutState> {
-  private headerRef: React.RefObject<HTMLElement>;
+  private headerRef: React.RefObject<HTMLElement | null>;
 
-  private sectionNavRef: React.RefObject<HTMLElement>;
+  private sectionNavRef: React.RefObject<HTMLElement | null>;
 
   constructor(props: LayoutProps) {
     super(props);
@@ -91,8 +91,8 @@ class Layout extends React.Component<LayoutProps, LayoutState> {
       debugDropdownVisible: false,
     };
 
-    this.headerRef = React.createRef<HTMLElement>();
-    this.sectionNavRef = React.createRef<HTMLElement>();
+    this.headerRef = React.createRef<HTMLElement | null>();
+    this.sectionNavRef = React.createRef<HTMLElement | null>();
   }
 
   componentDidMount() {

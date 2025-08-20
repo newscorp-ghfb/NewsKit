@@ -49,47 +49,39 @@ export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
   defaults,
 });
 
-const getFirstLetter = (
-  children: (
-    | React.ReactElement<any>
-    | number
-    | string
-    | Iterable<React.ReactNode>
-    | React.ReactPortal
-  )[],
-): string => {
+const getFirstLetter = (children: React.ReactNode[]): string => {
   const [firstChild] = children;
   if (typeof firstChild === 'string') {
     return firstChild.charAt(0);
   }
-  if (isFragment(firstChild)) {
-    return getFirstLetter(React.Children.toArray(firstChild.props.children));
+  if (
+    isFragment(firstChild) &&
+    React.isValidElement(firstChild) &&
+    firstChild.props
+  ) {
+    const element = firstChild as React.ReactElement<{
+      children: React.ReactNode;
+    }>;
+    return getFirstLetter(React.Children.toArray(element.props.children));
   }
   return '';
 };
 
-const removeFirstLetter = (
-  children: (
-    | React.ReactElement<any>
-    | number
-    | string
-    | Iterable<React.ReactNode>
-    | React.ReactPortal
-  )[],
-): (
-  | React.ReactElement<any>
-  | number
-  | string
-  | Iterable<React.ReactNode>
-  | React.ReactPortal
-)[] => {
+const removeFirstLetter = (children: React.ReactNode[]): React.ReactNode => {
   const [firstChild, ...rest] = children;
   if (typeof firstChild === 'string') {
     return [firstChild.substring(1), ...rest];
   }
-  if (isFragment(firstChild)) {
+  if (
+    isFragment(firstChild) &&
+    React.isValidElement(firstChild) &&
+    firstChild.props
+  ) {
+    const element = firstChild as React.ReactElement<{
+      children: React.ReactNode;
+    }>;
     return [
-      removeFirstLetter(React.Children.toArray(firstChild.props.children)),
+      removeFirstLetter(React.Children.toArray(element.props.children)),
       ...rest,
     ];
   }
