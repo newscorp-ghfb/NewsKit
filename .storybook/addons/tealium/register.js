@@ -1,5 +1,5 @@
 import React from 'react';
-import {addons, types} from '@storybook/addons';
+import {addons, types} from '@storybook/manager-api';
 import {STORY_CHANGED, STORY_SPECIFIED} from '@storybook/core-events';
 import Helmet from 'react-helmet';
 import {IconButton, Icons} from '@storybook/components';

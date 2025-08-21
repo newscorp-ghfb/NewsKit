@@ -7,7 +7,7 @@ import {
   Anchor,
   Canvas,
   Story,
-} from '@storybook/addon-docs';
+} from '@storybook/addon-docs/blocks';
 import {GridLayout} from '../grid-layout';
 import {TextBlock} from '../text-block';
 import {Block} from '../block';
@@ -144,7 +144,8 @@ export const StorybookCase = ({
 );
 
 export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
-  const autoTitle = get(context, 'title').split('/').at(-1);
+  const autoTitle = get(context, 'primaryStory.title').split('/').at(-1);
+
   const title = get(context, 'parameters.nkDocs.title') || autoTitle;
   const description = get(context, 'parameters.nkDocs.description');
   const url = get(context, 'parameters.nkDocs.url');
@@ -188,6 +189,7 @@ export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
 const StyledCanvas = styled(Canvas)`
   & > div > div {
     padding: 0;
+    min-height: 400px;
   }
 `;
 
