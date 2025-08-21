@@ -34,7 +34,6 @@ module.exports = {
         },
       },
     },
-    'storybook-addon-performance/register',
     './addons/tealium/preset.js',
     {
       name: '@storybook/addon-docs',
@@ -62,15 +61,31 @@ module.exports = {
       use: {
         loader: 'babel-loader',
         options: {
-          // Use the existing .babelrc in src directory but add presets for Storybook
-          babelrc: true,
+          // Use only Storybook-specific Babel config, ignore external configs
+          babelrc: false,
           configFile: false,
           presets: [
+            [
+              '@babel/preset-env',
+              {
+                targets: {
+                  browsers: ['last 2 versions', 'ie >= 11'],
+                },
+                useBuiltIns: 'entry',
+                corejs: 3,
+                loose: true,
+              },
+            ],
             ['@babel/preset-react', { runtime: 'automatic' }],
             ['@babel/preset-typescript', { 
               isTSX: true, 
               allExtensions: true 
             }]
+          ],
+          plugins: [
+            ['@babel/plugin-transform-class-properties', { loose: true }],
+            ['@babel/plugin-transform-private-methods', { loose: true }],
+            ['@babel/plugin-transform-private-property-in-object', { loose: true }],
           ],
         },
       },

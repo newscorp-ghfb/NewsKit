@@ -164,7 +164,9 @@ const getPresetStates = (
       pseudoStates.forEach(pseudo => {
         const subStatePseudoClass = `${currentSubState}:${pseudo}` as keyof typeof presetStates;
         if (presetStates[subStatePseudoClass]) {
-          pseudoPresets[pseudo] = presetStates[subStatePseudoClass];
+          pseudoPresets[pseudo] = presetStates[
+            subStatePseudoClass
+          ] as StylePresetStyles;
         }
       });
     }
