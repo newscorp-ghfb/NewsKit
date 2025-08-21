@@ -2,7 +2,7 @@ const path = require('path');
 const toPath = _path => path.join(process.cwd(), _path);
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
-  
+
   framework: {
     name: '@storybook/react-webpack5',
     options: {},
@@ -34,6 +34,7 @@ module.exports = {
         },
       },
     },
+    'storybook-addon-performance/register',
     './addons/tealium/preset.js',
     {
       name: '@storybook/addon-docs',
@@ -42,8 +43,6 @@ module.exports = {
         babelOptions: {},
         sourceLoaderOptions: null,
         transcludeMarkdown: true,
-        // Enable automatic docs generation for Storybook 8.x compatibility
-        autodocs: true,
       },
     },
     '@storybook/addon-a11y',
@@ -56,21 +55,26 @@ module.exports = {
     // that's why we need to exclude them  (include in transpilation)
     config.module.rules[0].exclude = /node_modules\/(?!(yup|react-hook-form|goober)\/).*/;
     
-    // Add Babel loader for JSX/TSX files
+    // Add Babel loader for TypeScript/JSX files using existing .babelrc config
     config.module.rules.push({
       test: /\.(js|jsx|ts|tsx)$/,
       exclude: /node_modules/,
       use: {
         loader: 'babel-loader',
         options: {
+          // Use the existing .babelrc in src directory but add presets for Storybook
+          babelrc: true,
+          configFile: false,
           presets: [
             ['@babel/preset-react', { runtime: 'automatic' }],
-            '@babel/preset-typescript'
+            ['@babel/preset-typescript', { 
+              isTSX: true, 
+              allExtensions: true 
+            }]
           ],
         },
       },
     });
-    
     return {
       ...config,
       module: {
@@ -85,18 +89,7 @@ module.exports = {
           '@emotion/core': toPath('node_modules/@emotion/react'),
           'emotion-theming': toPath('node_modules/@emotion/react'),
           'babel-plugin-emotion': toPath('node_modules/@emotion/babel-plugin'),
-          // React 19 compatibility fixes
-          'react': toPath('node_modules/react'),
-          'react-dom': toPath('node_modules/react-dom'),
         },
-      },
-      // React 19 compatibility settings
-      experiments: {
-        ...config.experiments,
-      },
-      optimization: {
-        ...config.optimization,
-        sideEffects: false,
       },
     };
   },
@@ -119,5 +112,5 @@ module.exports = {
 
   docs: {
     autodocs: true
-  },
+  }
 };
