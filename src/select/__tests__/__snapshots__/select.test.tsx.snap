@@ -1880,12 +1880,12 @@ exports[`Select in Modal render Select 1`] = `
                 >
                   <span
                     class="emotion-5"
-                    id="mock-nk-1"
+                    id="mock-nk-35"
                   >
                     Press down arrow key to navigate to the first item
                   </span>
                   <div
-                    aria-describedby="mock-nk-1"
+                    aria-describedby="mock-nk-35"
                     class="modal-panel emotion-6"
                     data-testid="select-panel"
                     id="downshift-0-menu"
@@ -2696,12 +2696,12 @@ exports[`Select in Modal render Select with overrides props 1`] = `
                 >
                   <span
                     class="emotion-6"
-                    id="mock-nk-1"
+                    id="mock-nk-37"
                   >
                     Press down arrow key to navigate to the first item
                   </span>
                   <div
-                    aria-describedby="mock-nk-1"
+                    aria-describedby="mock-nk-37"
                     class="modal-panel emotion-7"
                     data-testid="select-panel"
                     id="downshift-0-menu"
@@ -3584,12 +3584,12 @@ exports[`Select in Modal render Select with overrides style 1`] = `
                 >
                   <span
                     class="emotion-5"
-                    id="mock-nk-1"
+                    id="mock-nk-39"
                   >
                     Press down arrow key to navigate to the first item
                   </span>
                   <div
-                    aria-describedby="mock-nk-1"
+                    aria-describedby="mock-nk-39"
                     class="modal-panel emotion-6"
                     data-testid="select-panel"
                     id="downshift-0-menu"
@@ -9187,7 +9187,7 @@ exports[`Select should render fixed panel position 1`] = `
 }
 
 <div
-  aria-describedby="mock-nk-1"
+  aria-describedby="mock-nk-6"
   class="emotion-0"
   data-testid="select-panel"
   id="downshift-0-menu"
@@ -9628,12 +9628,12 @@ exports[`Select virtualize long list 1`] = `
     >
       <span
         class="emotion-0"
-        id="mock-nk-1"
+        id="mock-nk-25"
       >
         Press down arrow key to navigate to the first item
       </span>
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-25"
         class="emotion-1"
         data-testid="select-panel"
         id="downshift-0-menu"

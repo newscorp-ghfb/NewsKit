@@ -2206,7 +2206,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
                   class="emotion-9"
                 >
                   <button
-                    aria-describedby="mock-nk-1"
+                    aria-describedby="mock-nk-6"
                     aria-label="close"
                     class="emotion-10"
                     data-testid="button"
@@ -2232,7 +2232,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
                 </div>
                 <span
                   class="emotion-13"
-                  id="mock-nk-1"
+                  id="mock-nk-6"
                 >
                   With the next tab you will be leaving the dialog window.
                 </span>

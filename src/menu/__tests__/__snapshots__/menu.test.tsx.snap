@@ -6938,13 +6938,13 @@ exports[`MenuGroup renders with overrides 1`] = `
         >
           <h2
             class="emotion-3"
-            id="mock-nk-1"
+            id="mock-nk-4"
           >
             Menu Group Title
           </h2>
         </div>
         <ul
-          aria-labelledby="mock-nk-1"
+          aria-labelledby="mock-nk-4"
         >
           <li
             class="nk-menu-item emotion-4"
@@ -7291,7 +7291,7 @@ exports[`MenuGroup renders with title as a component 1`] = `
           </svg>
         </div>
         <ul
-          aria-labelledby="mock-nk-1"
+          aria-labelledby="mock-nk-3"
         >
           <li
             class="nk-menu-item emotion-7"
@@ -7915,13 +7915,13 @@ exports[`MenuGroup renders without title when horizontal 1`] = `
         >
           <h2
             class="emotion-3"
-            id="mock-nk-1"
+            id="mock-nk-2"
           >
             Menu Group Title
           </h2>
         </div>
         <ul
-          aria-labelledby="mock-nk-1"
+          aria-labelledby="mock-nk-2"
         >
           <li
             class="nk-menu-item emotion-4"

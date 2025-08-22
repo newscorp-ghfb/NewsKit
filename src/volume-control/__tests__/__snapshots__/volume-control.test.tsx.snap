@@ -356,7 +356,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
       values="0"
     >
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-4"
         aria-label="Volume Control"
         aria-orientation="horizontal"
         aria-valuemax="1"
@@ -423,7 +423,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after muting 1`] = 
 <span
     aria-hidden="true"
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-4"
   >
     Use the arrow keys to adjust volume
   </span>
@@ -786,7 +786,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
       values="0.8"
     >
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-4"
         aria-label="Volume Control"
         aria-orientation="horizontal"
         aria-valuemax="1"
@@ -853,7 +853,7 @@ exports[`VolumeControl mute button mutes and unmutes volume: after unmuting 1`] 
 <span
     aria-hidden="true"
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-4"
   >
     Use the arrow keys to adjust volume
   </span>
@@ -1645,7 +1645,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
       values="1"
     >
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-2"
         aria-label="Volume Control"
         aria-orientation="vertical"
         aria-valuemax="1"
@@ -1712,7 +1712,7 @@ exports[`VolumeControl renders vertical volume control by default 1`] = `
 <span
     aria-hidden="true"
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-2"
   >
     Use the arrow keys to adjust volume
   </span>
@@ -2075,7 +2075,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       values="0"
     >
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-7"
         aria-label="Volume Control"
         aria-orientation="horizontal"
         aria-valuemax="1"
@@ -2142,7 +2142,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 <span
     aria-hidden="true"
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-7"
   >
     Use the arrow keys to adjust volume
   </span>
@@ -2505,7 +2505,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
       values="0.7"
     >
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-7"
         aria-label="Volume Control"
         aria-orientation="horizontal"
         aria-valuemax="1"
@@ -2572,7 +2572,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if enter key
 <span
     aria-hidden="true"
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-7"
   >
     Use the arrow keys to adjust volume
   </span>
@@ -2935,7 +2935,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       values="0"
     >
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-8"
         aria-label="Volume Control"
         aria-orientation="horizontal"
         aria-valuemax="1"
@@ -3002,7 +3002,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 <span
     aria-hidden="true"
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-8"
   >
     Use the arrow keys to adjust volume
   </span>
@@ -3365,7 +3365,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
       values="0.7"
     >
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-8"
         aria-label="Volume Control"
         aria-orientation="horizontal"
         aria-valuemax="1"
@@ -3432,7 +3432,7 @@ exports[`VolumeControl volume should toggle between mute and unmute if space key
 <span
     aria-hidden="true"
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-8"
   >
     Use the arrow keys to adjust volume
   </span>
@@ -3795,7 +3795,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
       values="1"
     >
       <div
-        aria-describedby="mock-nk-1"
+        aria-describedby="mock-nk-6"
         aria-label="Volume Control"
         aria-orientation="horizontal"
         aria-valuemax="1"
@@ -3862,7 +3862,7 @@ exports[`VolumeControl volumeup button increases volume to 1: volume at 100% 1`]
 <span
     aria-hidden="true"
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-6"
   >
     Use the arrow keys to adjust volume
   </span>
