@@ -3782,16 +3782,60 @@ exports[`Switch onBlur and onFocus: with focus 1`] = `
   align-items: center;
   background-color: #919191;
   border-radius: 20rem;
+  z-index: 2;
+  padding-inline: 4px;
+}
+
+.emotion-3:checked:not(:disabled) {
+  background-color: #3358CC;
+}
+
+.emotion-3:disabled {
+  background-color: #E2E2E2;
+}
+
+.emotion-3:focus-visible:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
   outline-offset: 2px;
-  padding-inline: 4px;
 }
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-3 {
+    .emotion-3:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:focus-visible:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:focus-visible:not(:disabled) {
+      outline-style: auto;
+    }
+  }
+}
+
+.emotion-3:checked:focus-visible:hover:not(:disabled) {
+  outline-color: #3768FB;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  background-color: #3358CC;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .emotion-3:checked:focus-visible:hover:not(:disabled) {
       outline-style: auto;
     }
   }

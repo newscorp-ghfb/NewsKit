@@ -295,6 +295,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
         <div
           data-comp="NewsKit Cell"
           data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 8,
   \\"lg\\": 10,
@@ -362,6 +363,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
             <div
               data-comp="NewsKit Cell"
               data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,
@@ -408,7 +410,6 @@ exports[`AccessibilitySection renders section as expected 1`] = `
       "element": {
         "type": "span",
         "key": null,
-        "ref": null,
         "props": {
           "children": "element 2"
         },
@@ -463,7 +464,6 @@ exports[`AccessibilitySection renders section as expected 1`] = `
       "description": {
         "type": "p",
         "key": null,
-        "ref": null,
         "props": {
           "children": "description ctrl + space"
         },
@@ -519,7 +519,6 @@ exports[`AccessibilitySection renders section as expected 1`] = `
       "description": {
         "type": "span",
         "key": null,
-        "ref": null,
         "props": {
           "children": "description 2 text here"
         },
@@ -574,6 +573,7 @@ exports[`AccessibilitySection renders section as expected 1`] = `
 <div
     data-comp="NewsKit Cell"
     data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,

@@ -168,6 +168,7 @@ exports[`StatesSection renders section as expected 1`] = `
         <div
           data-comp="NewsKit Cell"
           data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 8,
   \\"lg\\": 10,
@@ -220,6 +221,7 @@ exports[`StatesSection renders section as expected 1`] = `
         <div
           data-comp="NewsKit Cell"
           data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,
@@ -291,6 +293,7 @@ exports[`StatesSection renders section as expected 1`] = `
 <div
     data-comp="NewsKit Cell"
     data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,

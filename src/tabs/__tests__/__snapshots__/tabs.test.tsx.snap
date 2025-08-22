@@ -11829,7 +11829,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -11980,40 +11980,17 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -12048,52 +12025,52 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -12102,14 +12079,14 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -12117,18 +12094,18 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -12136,7 +12113,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -12147,12 +12124,12 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -12161,7 +12138,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -12220,16 +12197,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -12238,12 +12206,12 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -12266,16 +12234,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -12284,12 +12243,12 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -12312,22 +12271,13 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 4px; transform: translateX(0px);"
@@ -12336,7 +12286,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -12344,7 +12294,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -12354,7 +12304,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -12365,7 +12315,7 @@ exports[`Tabs renders with custom tab bar track and indicator weight 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -13642,7 +13592,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -13793,40 +13743,17 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -13861,52 +13788,52 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -13915,14 +13842,14 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -13930,18 +13857,18 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -13949,7 +13876,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -13960,12 +13887,12 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -13974,7 +13901,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -14033,16 +13960,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -14051,12 +13969,12 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -14079,16 +13997,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -14097,12 +14006,12 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -14125,22 +14034,13 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -14149,7 +14049,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -14157,7 +14057,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -14167,7 +14067,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -14178,7 +14078,7 @@ exports[`Tabs renders with fixed tab indicator percentage size 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -14292,7 +14192,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -14443,40 +14343,17 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -14511,52 +14388,52 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -14565,14 +14442,14 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -14580,18 +14457,18 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -14599,7 +14476,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -14610,12 +14487,12 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -14624,7 +14501,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -14683,16 +14560,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -14701,12 +14569,12 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -14729,16 +14597,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -14747,12 +14606,12 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -14775,22 +14634,13 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -14799,7 +14649,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -14807,7 +14657,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -14817,7 +14667,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -14828,7 +14678,7 @@ exports[`Tabs renders with fixed tab indicator size 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -14942,7 +14792,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -15093,40 +14943,17 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -15161,52 +14988,52 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -15215,14 +15042,14 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -15230,18 +15057,18 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -15249,7 +15076,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -15260,12 +15087,12 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -15274,7 +15101,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -15333,16 +15160,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -15351,12 +15169,12 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -15379,16 +15197,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -15397,12 +15206,12 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -15425,22 +15234,13 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -15449,7 +15249,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -15457,7 +15257,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -15467,7 +15267,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -15478,7 +15278,7 @@ exports[`Tabs renders with fixed tab indicator size which is larger than default
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -15592,7 +15392,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -15743,40 +15543,17 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -15811,52 +15588,52 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -15865,14 +15642,14 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -15880,18 +15657,18 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -15899,7 +15676,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -15910,12 +15687,12 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -15924,7 +15701,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -15983,16 +15760,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -16001,12 +15769,12 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -16029,16 +15797,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -16047,12 +15806,12 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -16075,22 +15834,13 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -16099,7 +15849,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -16107,7 +15857,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -16117,7 +15867,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -16128,7 +15878,7 @@ exports[`Tabs renders with icons and label for tabs 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -16842,7 +16592,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -16999,40 +16749,17 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -17073,52 +16800,52 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   text-align: left;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -17127,14 +16854,14 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -17142,18 +16869,18 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -17161,7 +16888,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   right: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -17172,12 +16899,12 @@ exports[`Tabs renders with left/right aligned text 1`] = `
   right: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -17186,7 +16913,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -17245,16 +16972,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -17263,12 +16981,12 @@ exports[`Tabs renders with left/right aligned text 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -17291,16 +17009,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -17309,12 +17018,12 @@ exports[`Tabs renders with left/right aligned text 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -17337,22 +17046,13 @@ exports[`Tabs renders with left/right aligned text 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -17361,7 +17061,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -17369,7 +17069,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -17379,7 +17079,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -17390,7 +17090,7 @@ exports[`Tabs renders with left/right aligned text 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -17507,7 +17207,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -17664,40 +17364,17 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -17738,52 +17415,52 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   text-align: right;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -17792,14 +17469,14 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -17807,18 +17484,18 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -17826,7 +17503,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   right: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -17837,12 +17514,12 @@ exports[`Tabs renders with left/right aligned text 2`] = `
   right: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -17851,7 +17528,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -17910,16 +17587,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -17928,12 +17596,12 @@ exports[`Tabs renders with left/right aligned text 2`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -17956,16 +17624,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -17974,12 +17633,12 @@ exports[`Tabs renders with left/right aligned text 2`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -18002,22 +17661,13 @@ exports[`Tabs renders with left/right aligned text 2`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -18026,7 +17676,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -18034,7 +17684,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -18044,7 +17694,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -18055,7 +17705,7 @@ exports[`Tabs renders with left/right aligned text 2`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -18732,7 +18382,7 @@ exports[`Tabs renders with overrides 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -18883,40 +18533,17 @@ exports[`Tabs renders with overrides 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -18951,52 +18578,52 @@ exports[`Tabs renders with overrides 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -19005,14 +18632,14 @@ exports[`Tabs renders with overrides 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -19020,14 +18647,14 @@ exports[`Tabs renders with overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-19 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19042,7 +18669,7 @@ exports[`Tabs renders with overrides 1`] = `
   margin-right: 0;
 }
 
-.emotion-19>*:not(style) {
+.emotion-15>*:not(style) {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -19050,11 +18677,11 @@ exports[`Tabs renders with overrides 1`] = `
   display: flex;
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -19062,7 +18689,7 @@ exports[`Tabs renders with overrides 1`] = `
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -19073,12 +18700,12 @@ exports[`Tabs renders with overrides 1`] = `
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -19087,7 +18714,7 @@ exports[`Tabs renders with overrides 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -19146,16 +18773,7 @@ exports[`Tabs renders with overrides 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -19164,12 +18782,12 @@ exports[`Tabs renders with overrides 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -19192,30 +18810,21 @@ exports[`Tabs renders with overrides 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
             <div
-              class="emotion-19"
+              class="emotion-15"
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -19238,22 +18847,13 @@ exports[`Tabs renders with overrides 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -19262,7 +18862,7 @@ exports[`Tabs renders with overrides 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -19270,7 +18870,7 @@ exports[`Tabs renders with overrides 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -19280,7 +18880,7 @@ exports[`Tabs renders with overrides 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -19291,7 +18891,7 @@ exports[`Tabs renders with overrides 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -19885,7 +19485,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -20042,40 +19642,17 @@ exports[`Tabs renders with overrides vertical 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -20116,52 +19693,52 @@ exports[`Tabs renders with overrides vertical 1`] = `
   text-align: left;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 32px;
   height: 32px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -20170,14 +19747,14 @@ exports[`Tabs renders with overrides vertical 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -20185,14 +19762,14 @@ exports[`Tabs renders with overrides vertical 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-19 {
+.emotion-15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20208,7 +19785,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   margin-bottom: 0;
 }
 
-.emotion-19>*:not(style) {
+.emotion-15>*:not(style) {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -20216,11 +19793,11 @@ exports[`Tabs renders with overrides vertical 1`] = `
   display: flex;
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -20228,7 +19805,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
   right: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -20239,12 +19816,12 @@ exports[`Tabs renders with overrides vertical 1`] = `
   right: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -20253,7 +19830,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -20312,16 +19889,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -20330,12 +19898,12 @@ exports[`Tabs renders with overrides vertical 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -20358,30 +19926,21 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
             <div
-              class="emotion-19"
+              class="emotion-15"
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -20404,22 +19963,13 @@ exports[`Tabs renders with overrides vertical 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -20428,7 +19978,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -20436,7 +19986,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -20446,7 +19996,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -20457,7 +20007,7 @@ exports[`Tabs renders with overrides vertical 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -24480,7 +24030,7 @@ exports[`Tabs with custom scroll component 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -24631,40 +24181,17 @@ exports[`Tabs with custom scroll component 1`] = `
   }
 }
 
-.emotion-8 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-8::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-8::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-11 {
+.emotion-9 {
   scroll-snap-align: center;
 }
 
-.emotion-12 {
+.emotion-10 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -24699,52 +24226,52 @@ exports[`Tabs with custom scroll component 1`] = `
   cursor: pointer;
 }
 
-.emotion-12 svg {
+.emotion-10 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-12 svg {
+.emotion-10 svg {
   fill: #3B3B3B;
 }
 
-.emotion-12:hover:not(:disabled) {
+.emotion-10:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-12:hover:not(:disabled) svg {
+.emotion-10:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-12:active:not(:disabled) {
+.emotion-10:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-12:active:not(:disabled) svg {
+.emotion-10:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-12:selected:hover:not(:disabled) {
+.emotion-10:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-12:selected:hover:not(:disabled) svg {
+.emotion-10:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-12:disabled {
+.emotion-10:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-12:disabled svg {
+.emotion-10:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-12:focus:not(:disabled) {
+.emotion-10:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -24753,14 +24280,14 @@ exports[`Tabs with custom scroll component 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-12:focus:not(:disabled) {
+    .emotion-10:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-12 {
+  .emotion-10 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -24768,18 +24295,18 @@ exports[`Tabs with custom scroll component 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-12 {
+  .emotion-10 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-18 {
+.emotion-14 {
   scroll-snap-align: end;
 }
 
-.emotion-24 {
+.emotion-18 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -24787,7 +24314,7 @@ exports[`Tabs with custom scroll component 1`] = `
   left: 0px;
 }
 
-.emotion-25 {
+.emotion-19 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -24798,12 +24325,12 @@ exports[`Tabs with custom scroll component 1`] = `
   left: 0px;
 }
 
-.emotion-26 {
+.emotion-20 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-26:focus:not(:disabled) {
+.emotion-20:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -24812,7 +24339,7 @@ exports[`Tabs with custom scroll component 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-26:focus:not(:disabled) {
+    .emotion-20:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -24867,16 +24394,7 @@ exports[`Tabs with custom scroll component 1`] = `
                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                   />
                 </svg>
-                <span
-                  class="emotion-8"
-                >
-                  First
-                </span>
-                <span
-                  class="emotion-8"
-                >
-                   tab
-                </span>
+                First tab
               </button>
             </div>
           </div>
@@ -24885,12 +24403,12 @@ exports[`Tabs with custom scroll component 1`] = `
             data-testid="distribution-wrapper"
           >
             <div
-              class="emotion-11"
+              class="emotion-9"
             >
               <button
                 aria-controls="mock-nk-1"
                 aria-selected="false"
-                class="emotion-12"
+                class="emotion-10"
                 data-testid="tab"
                 id="mock-nk-1"
                 role="tab"
@@ -24913,16 +24431,7 @@ exports[`Tabs with custom scroll component 1`] = `
                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                   />
                 </svg>
-                <span
-                  class="emotion-8"
-                >
-                  Second
-                </span>
-                <span
-                  class="emotion-8"
-                >
-                   tab
-                </span>
+                Second tab
               </button>
             </div>
           </div>
@@ -24931,12 +24440,12 @@ exports[`Tabs with custom scroll component 1`] = `
             data-testid="distribution-wrapper"
           >
             <div
-              class="emotion-18"
+              class="emotion-14"
             >
               <button
                 aria-controls="mock-nk-1"
                 aria-selected="false"
-                class="emotion-12"
+                class="emotion-10"
                 data-testid="tab"
                 id="mock-nk-1"
                 role="tab"
@@ -24959,22 +24468,13 @@ exports[`Tabs with custom scroll component 1`] = `
                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                   />
                 </svg>
-                <span
-                  class="emotion-8"
-                >
-                  Third
-                </span>
-                <span
-                  class="emotion-8"
-                >
-                   tab
-                </span>
+                Third tab
               </button>
             </div>
           </div>
           <div
             aria-hidden="true"
-            class="emotion-24"
+            class="emotion-18"
             data-testid="tab-bar-indicator"
             role="presentation"
             style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -24982,7 +24482,7 @@ exports[`Tabs with custom scroll component 1`] = `
         </div>
       </div>
       <div
-        class="emotion-25"
+        class="emotion-19"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -24990,7 +24490,7 @@ exports[`Tabs with custom scroll component 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-26"
+      class="emotion-20"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -25000,7 +24500,7 @@ exports[`Tabs with custom scroll component 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-26"
+      class="emotion-20"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -25011,7 +24511,7 @@ exports[`Tabs with custom scroll component 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-26"
+      class="emotion-20"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -25134,7 +24634,7 @@ exports[`Tabs with custom scroll props 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -25285,40 +24785,17 @@ exports[`Tabs with custom scroll props 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -25353,52 +24830,52 @@ exports[`Tabs with custom scroll props 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -25407,14 +24884,14 @@ exports[`Tabs with custom scroll props 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -25422,18 +24899,18 @@ exports[`Tabs with custom scroll props 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -25441,7 +24918,7 @@ exports[`Tabs with custom scroll props 1`] = `
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -25452,12 +24929,12 @@ exports[`Tabs with custom scroll props 1`] = `
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -25466,7 +24943,7 @@ exports[`Tabs with custom scroll props 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -25525,16 +25002,7 @@ exports[`Tabs with custom scroll props 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -25543,12 +25011,12 @@ exports[`Tabs with custom scroll props 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -25571,16 +25039,7 @@ exports[`Tabs with custom scroll props 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -25589,12 +25048,12 @@ exports[`Tabs with custom scroll props 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -25617,22 +25076,13 @@ exports[`Tabs with custom scroll props 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -25641,7 +25091,7 @@ exports[`Tabs with custom scroll props 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -25649,7 +25099,7 @@ exports[`Tabs with custom scroll props 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -25659,7 +25109,7 @@ exports[`Tabs with custom scroll props 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -25670,7 +25120,7 @@ exports[`Tabs with custom scroll props 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -25784,7 +25234,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -25935,40 +25385,17 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -26003,52 +25430,52 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -26057,14 +25484,14 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -26072,25 +25499,25 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
   display: none;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -26100,12 +25527,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
   display: none;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -26114,7 +25541,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -26173,16 +25600,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -26191,12 +25609,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -26219,16 +25637,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -26237,12 +25646,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -26265,22 +25674,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -26289,7 +25689,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -26297,7 +25697,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -26307,7 +25707,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -26318,7 +25718,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with no selection indica
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -26432,7 +25832,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -26583,40 +25983,17 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -26651,52 +26028,52 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -26705,14 +26082,14 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -26720,18 +26097,18 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -26739,7 +26116,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -26750,12 +26127,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -26764,7 +26141,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -26823,16 +26200,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -26841,12 +26209,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -26869,16 +26237,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -26887,12 +26246,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -26915,22 +26274,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -26939,7 +26289,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -26947,7 +26297,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -26957,7 +26307,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -26968,7 +26318,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -27082,7 +26432,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -27233,40 +26583,17 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -27301,52 +26628,52 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -27355,14 +26682,14 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -27370,18 +26697,18 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -27389,7 +26716,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -27400,12 +26727,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -27414,7 +26741,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -27473,16 +26800,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -27491,12 +26809,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -27519,16 +26837,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -27537,12 +26846,12 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -27565,22 +26874,13 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -27589,7 +26889,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -27597,7 +26897,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -27607,7 +26907,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -27618,7 +26918,7 @@ exports[`tabs indicatorPosition renders horizontal tabs with the selection indic
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -27735,7 +27035,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -27892,40 +27192,17 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -27966,52 +27243,52 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   text-align: left;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -28020,14 +27297,14 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -28035,25 +27312,25 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
   display: none;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -28063,12 +27340,12 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
   display: none;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -28077,7 +27354,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -28136,16 +27413,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -28154,12 +27422,12 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -28182,16 +27450,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -28200,12 +27459,12 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -28228,22 +27487,13 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -28252,7 +27502,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -28260,7 +27510,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -28270,7 +27520,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -28281,7 +27531,7 @@ exports[`tabs indicatorPosition renders vertical tabs with no selection indicato
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -28398,7 +27648,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -28555,40 +27805,17 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -28629,52 +27856,52 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   text-align: left;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -28683,14 +27910,14 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -28698,18 +27925,18 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -28717,7 +27944,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   right: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -28728,12 +27955,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   right: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -28742,7 +27969,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -28801,16 +28028,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -28819,12 +28037,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -28847,16 +28065,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -28865,12 +28074,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -28893,22 +28102,13 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -28917,7 +28117,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -28925,7 +28125,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -28935,7 +28135,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -28946,7 +28146,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -29063,7 +28263,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -29220,40 +28420,17 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -29294,52 +28471,52 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   text-align: left;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -29348,14 +28525,14 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -29363,18 +28540,18 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -29382,7 +28559,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -29393,12 +28570,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -29407,7 +28584,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -29466,16 +28643,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -29484,12 +28652,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -29512,16 +28680,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -29530,12 +28689,12 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -29558,22 +28717,13 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 2px; height: 0px; transform: translateY(0px);"
@@ -29582,7 +28732,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -29590,7 +28740,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -29600,7 +28750,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -29611,7 +28761,7 @@ exports[`tabs indicatorPosition renders vertical tabs with the selection indicat
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -29729,7 +28879,7 @@ exports[`with logical props overrides 1`] = `
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -29880,40 +29030,17 @@ exports[`with logical props overrides 1`] = `
   }
 }
 
-.emotion-10 {
-  margin: 0;
-  font-family: "Poppins",sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.5px 0px;
-  display: inline-block;
-}
-
-.emotion-10::before {
-  content: '';
-  margin-bottom: -0.403em;
-  display: block;
-}
-
-.emotion-10::after {
-  content: '';
-  margin-top: -0.4em;
-  display: block;
-}
-
-.emotion-13 {
+.emotion-11 {
   scroll-snap-align: center;
 }
 
-.emotion-14 {
+.emotion-12 {
   margin: 0;
   padding: 0;
   display: inline-grid;
   -webkit-column-gap: 8px;
   column-gap: 8px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(1, auto);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -29948,52 +29075,52 @@ exports[`with logical props overrides 1`] = `
   cursor: pointer;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-14 svg {
+.emotion-12 svg {
   fill: #3B3B3B;
 }
 
-.emotion-14:hover:not(:disabled) {
+.emotion-12:hover:not(:disabled) {
   background-color: #ECF1FF;
   color: #3358CC;
 }
 
-.emotion-14:hover:not(:disabled) svg {
+.emotion-12:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) {
+.emotion-12:active:not(:disabled) {
   background-color: #D5E0FC;
   color: #3358CC;
 }
 
-.emotion-14:active:not(:disabled) svg {
+.emotion-12:active:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) {
+.emotion-12:selected:hover:not(:disabled) {
   background-color: transparent;
   color: #3358CC;
 }
 
-.emotion-14:selected:hover:not(:disabled) svg {
+.emotion-12:selected:hover:not(:disabled) svg {
   fill: #3358CC;
 }
 
-.emotion-14:disabled {
+.emotion-12:disabled {
   background-color: #E2E2E2;
   color: #ABABAB;
 }
 
-.emotion-14:disabled svg {
+.emotion-12:disabled svg {
   fill: #ABABAB;
 }
 
-.emotion-14:focus:not(:disabled) {
+.emotion-12:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -30002,14 +29129,14 @@ exports[`with logical props overrides 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-14:focus:not(:disabled) {
+    .emotion-12:focus:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
@@ -30017,18 +29144,18 @@ exports[`with logical props overrides 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-14 {
+  .emotion-12 {
     transition-property: background-color;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-20 {
+.emotion-16 {
   scroll-snap-align: end;
 }
 
-.emotion-26 {
+.emotion-20 {
   background-color: #3358CC;
   position: absolute;
   z-index: 2;
@@ -30036,7 +29163,7 @@ exports[`with logical props overrides 1`] = `
   left: 0px;
 }
 
-.emotion-27 {
+.emotion-21 {
   background-color: #C6C6C6;
   display: block;
   position: absolute;
@@ -30047,12 +29174,12 @@ exports[`with logical props overrides 1`] = `
   left: 0px;
 }
 
-.emotion-28 {
+.emotion-22 {
   margin: 0;
   width: 100%;
 }
 
-.emotion-28:focus:not(:disabled) {
+.emotion-22:focus:not(:disabled) {
   outline-color: #3768FB;
   outline-style: solid;
   outline-width: 2px;
@@ -30061,7 +29188,7 @@ exports[`with logical props overrides 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-28:focus:not(:disabled) {
+    .emotion-22:focus:not(:disabled) {
       outline-style: auto;
     }
   }
@@ -30120,16 +29247,7 @@ exports[`with logical props overrides 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    First
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  First tab
                 </button>
               </div>
             </div>
@@ -30138,12 +29256,12 @@ exports[`with logical props overrides 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-13"
+                class="emotion-11"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -30166,16 +29284,7 @@ exports[`with logical props overrides 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Second
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Second tab
                 </button>
               </div>
             </div>
@@ -30184,12 +29293,12 @@ exports[`with logical props overrides 1`] = `
               data-testid="distribution-wrapper"
             >
               <div
-                class="emotion-20"
+                class="emotion-16"
               >
                 <button
                   aria-controls="mock-nk-1"
                   aria-selected="false"
-                  class="emotion-14"
+                  class="emotion-12"
                   data-testid="tab"
                   id="mock-nk-1"
                   role="tab"
@@ -30212,22 +29321,13 @@ exports[`with logical props overrides 1`] = `
                       d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
                     />
                   </svg>
-                  <span
-                    class="emotion-10"
-                  >
-                    Third
-                  </span>
-                  <span
-                    class="emotion-10"
-                  >
-                     tab
-                  </span>
+                  Third tab
                 </button>
               </div>
             </div>
             <div
               aria-hidden="true"
-              class="emotion-26"
+              class="emotion-20"
               data-testid="tab-bar-indicator"
               role="presentation"
               style="width: 0px; height: 2px; transform: translateX(0px);"
@@ -30236,7 +29336,7 @@ exports[`with logical props overrides 1`] = `
         </div>
       </div>
       <div
-        class="emotion-27"
+        class="emotion-21"
         data-testid="tab-bar-track"
         role="presentation"
       />
@@ -30244,7 +29344,7 @@ exports[`with logical props overrides 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       role="tabpanel"
       tabindex="0"
@@ -30254,7 +29354,7 @@ exports[`with logical props overrides 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"
@@ -30265,7 +29365,7 @@ exports[`with logical props overrides 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="mock-nk-1"
-      class="emotion-28"
+      class="emotion-22"
       data-testid="tab-panel"
       hidden=""
       role="tabpanel"

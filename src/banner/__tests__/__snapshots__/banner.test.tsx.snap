@@ -860,7 +860,7 @@ exports[`Banner renders with content as string and link 1`] = `
                 <div
                   class="emotion-7"
                 >
-                  <p
+                  <div
                     class="emotion-8"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -879,7 +879,7 @@ exports[`Banner renders with content as string and link 1`] = `
                       </span>
                     </a>
                     ut labore et dolore magna aliqua.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1227,7 +1227,7 @@ exports[`Banner renders with content as string and link 1`] = `
                 <div
                   class="emotion-7"
                 >
-                  <p
+                  <div
                     class="emotion-8"
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -1246,7 +1246,7 @@ exports[`Banner renders with content as string and link 1`] = `
                       </span>
                     </a>
                     ut labore et dolore magna aliqua.
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>

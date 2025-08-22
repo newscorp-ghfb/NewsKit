@@ -956,7 +956,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-27-toggle-button"
+            id="downshift-19-toggle-button"
             type="button"
             value="Patterns Theme"
           >
@@ -1104,7 +1104,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-33-toggle-button"
+            id="downshift-23-toggle-button"
             type="button"
             value="0"
           >
@@ -3284,7 +3284,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-5-toggle-button"
+            id="downshift-3-toggle-button"
             type="button"
             value="Docs Theme"
           >
@@ -3425,7 +3425,7 @@ exports[`SvgPreviewer should render correctly when receiving one svg data 1`] = 
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-11-toggle-button"
+            id="downshift-7-toggle-button"
             type="button"
             value="0"
           >
