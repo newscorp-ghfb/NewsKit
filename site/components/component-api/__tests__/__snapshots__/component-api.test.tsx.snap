@@ -1417,11 +1417,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                     class="emotion-35"
                   >
                     <button
-                      aria-controls="mock-nk-1"
+                      aria-controls="mock-nk-10"
                       aria-selected="true"
                       class="emotion-36"
                       data-testid="tab"
-                      id="mock-nk-1"
+                      id="mock-nk-10"
                       role="tab"
                       tabindex="0"
                       type="button"
@@ -1442,11 +1442,11 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
                     class="emotion-39"
                   >
                     <button
-                      aria-controls="mock-nk-1"
+                      aria-controls="mock-nk-11"
                       aria-selected="false"
                       class="emotion-40"
                       data-testid="tab"
-                      id="mock-nk-1"
+                      id="mock-nk-11"
                       role="tab"
                       tabindex="-1"
                       type="button"
@@ -1477,7 +1477,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         </div>
         <div
           aria-hidden="false"
-          aria-labelledby="mock-nk-1"
+          aria-labelledby="mock-nk-10"
           class="emotion-44"
           data-testid="tab-panel"
           role="tabpanel"
@@ -1581,7 +1581,7 @@ exports[`ComponentAPI renders with props for multiple components 1`] = `
         </div>
         <div
           aria-hidden="true"
-          aria-labelledby="mock-nk-1"
+          aria-labelledby="mock-nk-11"
           class="emotion-44"
           data-testid="tab-panel"
           hidden=""

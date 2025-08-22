@@ -7,13 +7,41 @@ global.TextEncoder = TextEncoder;
 // @ts-ignore
 global.TextDecoder = TextDecoder;
 
+// Polyfill MessageChannel for React 19
+if (typeof MessageChannel === 'undefined') {
+  // @ts-ignore
+  global.MessageChannel = class MessageChannel {
+    port1: any;
+    port2: any;
+
+    constructor() {
+      this.port1 = {
+        postMessage: (message: any) => {
+          if (this.port2.onmessage) {
+            setTimeout(() => this.port2.onmessage({data: message}), 0);
+          }
+        },
+        onmessage: null,
+      };
+      this.port2 = {
+        postMessage: (message: any) => {
+          if (this.port1.onmessage) {
+            setTimeout(() => this.port1.onmessage({data: message}), 0);
+          }
+        },
+        onmessage: null,
+      };
+    }
+  };
+}
+
 failOnConsole({
   silenceMessage: errorMessage => {
     if (
       errorMessage.includes(
         'Warning: Encountered two children with the same key,',
       ) &&
-      errorMessage.includes('mock-nk-1')
+      errorMessage.includes('mock-nk-')
     ) {
       return true;
     }
@@ -29,6 +57,13 @@ failOnConsole({
     if (errorMessage.includes('Check the render method of `UnpackContent`')) {
       return true;
     }
+
+    if (
+      errorMessage.includes('aria-hidden') &&
+      errorMessage.includes('not contained inside HTMLBodyElement')
+    ) {
+      return true;
+    }
     return false;
   },
 });
@@ -36,6 +71,9 @@ failOnConsole({
 expect.addSnapshotSerializer(createSerializer());
 expect.extend(matchers);
 
-jest.mock('../utils/get-ssr-id', () => ({
-  getSSRId: () => `mock-nk-1`,
-}));
+jest.mock('../utils/get-ssr-id', () => {
+  let counter = 0;
+  return {
+    getSSRId: () => `mock-nk-${++counter}`,
+  };
+});

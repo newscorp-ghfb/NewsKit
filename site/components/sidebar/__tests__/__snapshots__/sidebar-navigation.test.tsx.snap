@@ -640,13 +640,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               >
                 <h2
                   class="emotion-19"
-                  id="mock-nk-1"
+                  id="mock-nk-5"
                 >
                   Group 2 Page 1
                 </h2>
               </div>
               <ul
-                aria-labelledby="mock-nk-1"
+                aria-labelledby="mock-nk-5"
               >
                 <li
                   class="nk-menu-item emotion-8"
@@ -690,13 +690,13 @@ exports[`Sidebar navigation should match snapshot with active link 1`] = `
               >
                 <h2
                   class="emotion-19"
-                  id="mock-nk-1"
+                  id="mock-nk-6"
                 >
                   Group 2 Page 2
                 </h2>
               </div>
               <ul
-                aria-labelledby="mock-nk-1"
+                aria-labelledby="mock-nk-6"
               >
                 <li
                   class="nk-menu-item emotion-8"
@@ -1568,13 +1568,13 @@ exports[`Sidebar navigation should match snapshot with no active link 1`] = `
               >
                 <h2
                   class="emotion-19"
-                  id="mock-nk-1"
+                  id="mock-nk-2"
                 >
                   Group 2 Page 2
                 </h2>
               </div>
               <ul
-                aria-labelledby="mock-nk-1"
+                aria-labelledby="mock-nk-2"
               >
                 <li
                   class="nk-menu-item emotion-8"
@@ -2257,13 +2257,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               >
                 <h2
                   class="emotion-19"
-                  id="mock-nk-1"
+                  id="mock-nk-3"
                 >
                   Group 2 Page 1
                 </h2>
               </div>
               <ul
-                aria-labelledby="mock-nk-1"
+                aria-labelledby="mock-nk-3"
               >
                 <li
                   class="nk-menu-item emotion-8"
@@ -2307,13 +2307,13 @@ exports[`Sidebar navigation should render only routes under current section 1`] 
               >
                 <h2
                   class="emotion-19"
-                  id="mock-nk-1"
+                  id="mock-nk-4"
                 >
                   Group 2 Page 2
                 </h2>
               </div>
               <ul
-                aria-labelledby="mock-nk-1"
+                aria-labelledby="mock-nk-4"
               >
                 <li
                   class="nk-menu-item emotion-8"

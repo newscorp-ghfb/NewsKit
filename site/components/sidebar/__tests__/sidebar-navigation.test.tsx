@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import {useRouter} from 'next/router';
 import mockRouter from 'next-router-mock';
-import {renderHook} from '@testing-library/react-hooks';
+import {renderHook} from '@testing-library/react';
 import {
   renderToFragmentWithTheme,
   renderWithTheme,
