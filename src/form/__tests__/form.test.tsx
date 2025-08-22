@@ -789,12 +789,11 @@ describe('FormInput', () => {
     });
 
     await waitFor(() => screen.getAllByText(/required field/i));
-    await waitFor(() =>
-      expect(getByTestId('text-field-email')).toHaveAttribute(
-        'aria-describedby',
-        'mock-nk-1-error-text',
-      ),
-    );
+    await waitFor(() => {
+      const emailField = getByTestId('text-field-email');
+      const ariaDescribedBy = emailField.getAttribute('aria-describedby');
+      expect(ariaDescribedBy).toMatch(/mock-nk-\d+-error-text/);
+    });
 
     expect(asFragment()).toMatchSnapshot();
   });

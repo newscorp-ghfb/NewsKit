@@ -9062,8 +9062,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
-      id="mock-nk-1-label"
+      for="mock-nk-51"
+      id="mock-nk-51-label"
     >
       E-mail
     </label>
@@ -9071,12 +9071,12 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-error-text"
+        aria-describedby="mock-nk-51-error-text"
         aria-invalid="true"
         aria-required="true"
         class="emotion-3"
         data-testid="text-field-email"
-        id="mock-nk-1"
+        id="mock-nk-51"
         name="email"
         type="text"
       />
@@ -9155,7 +9155,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       <p
         aria-live="polite"
         class="emotion-11"
-        id="mock-nk-1-error-text"
+        id="mock-nk-51-error-text"
         role="alert"
       >
         Required field
@@ -9163,8 +9163,8 @@ exports[`FormInput renders with error and with submit validation and revalidatio
     </div>
     <label
       class="emotion-1"
-      for="mock-nk-1"
-      id="mock-nk-1-label"
+      for="mock-nk-52"
+      id="mock-nk-52-label"
     >
       Username
     </label>
@@ -9172,12 +9172,12 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       class="emotion-13"
     >
       <input
-        aria-describedby="mock-nk-1-error-text"
+        aria-describedby="mock-nk-52-error-text"
         aria-invalid="true"
         aria-required="true"
         class="emotion-3"
         data-testid="text-field-username"
-        id="mock-nk-1"
+        id="mock-nk-52"
         name="username"
         type="text"
       />
@@ -9209,7 +9209,7 @@ exports[`FormInput renders with error and with submit validation and revalidatio
       <p
         aria-live="polite"
         class="emotion-11"
-        id="mock-nk-1-error-text"
+        id="mock-nk-52-error-text"
         role="alert"
       >
         Required field

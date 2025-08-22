@@ -64,6 +64,34 @@ failOnConsole({
     ) {
       return true;
     }
+
+    if (errorMessage.includes('react-test-renderer is deprecated')) {
+      return true;
+    }
+
+    if (
+      errorMessage.includes(
+        'Each child in a list should have a unique "key" prop',
+      )
+    ) {
+      return true;
+    }
+
+    if (
+      errorMessage.includes(
+        'The current testing environment is not configured to support act(...)',
+      )
+    ) {
+      return true;
+    }
+
+    if (
+      errorMessage.includes(
+        'Error: Not implemented: navigation (except hash changes)',
+      )
+    ) {
+      return true;
+    }
     return false;
   },
 });

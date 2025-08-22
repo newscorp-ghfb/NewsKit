@@ -1,5 +1,5 @@
 import {fireEvent} from '@testing-library/react';
-import {renderHook} from '@testing-library/react-hooks';
+import {renderHook} from '@testing-library/react';
 import React, {RefObject} from 'react';
 import {ObjectFitProperty} from 'csstype';
 import {

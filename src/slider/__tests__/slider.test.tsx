@@ -394,7 +394,7 @@ describe('slider', () => {
               values: [10, 20, 30],
               vertical: undefined,
             },
-            {},
+            undefined,
           );
         });
       });
