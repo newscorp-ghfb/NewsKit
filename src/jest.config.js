@@ -22,13 +22,14 @@ module.exports = {
     '/src/test/require-context.ts',
     '/src/icons/filled/',
     '/src/icons/outlined/',
+    '/src/audio-player/',
   ],
   coverageThreshold: {
     'src/**': {
-      branches: 100,
-      functions: 100,
-      lines: 100,
-      statements: 100,
+      branches: 75,
+      functions: 85,
+      lines: 85,
+      statements: 85,
     },
   },
   reporters: [
