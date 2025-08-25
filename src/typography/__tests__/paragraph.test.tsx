@@ -7,6 +7,8 @@ import {
   Superscript,
   Sup,
   ParagraphProps,
+  getFirstLetter,
+  removeFirstLetter,
 } from '../paragraph';
 import {renderToFragmentWithTheme} from '../../test/test-utils';
 
@@ -260,5 +262,99 @@ describe('Superscript', () => {
 
   test('Sup alias for Superscript', () => {
     expect(Sup).toEqual(Superscript);
+  });
+});
+
+describe('getFirstLetter', () => {
+  test('returns first letter of simple string', () => {
+    expect(getFirstLetter(['hello'])).toBe('h');
+  });
+
+  test('returns empty string for non-string, non-fragment', () => {
+    expect(getFirstLetter([123])).toBe('');
+  });
+
+  test('recurses into single-level fragment', () => {
+    const frag = React.createElement(React.Fragment, null, 'world');
+    expect(getFirstLetter([frag])).toBe('w');
+  });
+
+  test('recurses into nested fragments', () => {
+    const inner = React.createElement(React.Fragment, null, 'nested');
+    const outer = React.createElement(React.Fragment, null, inner);
+    expect(getFirstLetter([outer])).toBe('n');
+  });
+
+  test('handles fragment with multiple children', () => {
+    const frag = React.createElement(React.Fragment, null, 'first', 'second');
+    expect(getFirstLetter([frag])).toBe('f');
+  });
+
+  test('handles fragment with invalid props (no children)', () => {
+    const invalidFrag = React.createElement(React.Fragment, {});
+    expect(getFirstLetter([invalidFrag])).toBe('');
+  });
+
+  test('handles deeply nested fragments with mixed content', () => {
+    const deepInner = React.createElement(React.Fragment, null, 'deep');
+    const mid = React.createElement(
+      React.Fragment,
+      null,
+      deepInner,
+      <span>mid</span>,
+    );
+    const outer = React.createElement(React.Fragment, null, mid);
+    expect(getFirstLetter([outer])).toBe('d');
+  });
+});
+
+describe('removeFirstLetter', () => {
+  test('removes first letter from simple string', () => {
+    const result = removeFirstLetter(['hello']);
+    expect(result).toEqual(['ello']);
+  });
+
+  test('returns original for non-string, non-fragment', () => {
+    const input = [123, 'text'];
+    const result = removeFirstLetter(input);
+    expect(result).toEqual(input);
+  });
+
+  test('recurses into single-level fragment', () => {
+    const frag = React.createElement(React.Fragment, null, 'world');
+    const result = removeFirstLetter([frag]);
+    expect(result).toEqual([['orld']]);
+  });
+
+  test('recurses into nested fragments', () => {
+    const inner = React.createElement(React.Fragment, null, 'nested');
+    const outer = React.createElement(React.Fragment, null, inner);
+    const result = removeFirstLetter([outer]);
+    expect(result).toEqual([[['ested']]]);
+  });
+
+  test('handles fragment with multiple children', () => {
+    const frag = React.createElement(React.Fragment, null, 'first', 'second');
+    const result = removeFirstLetter([frag]);
+    expect(result).toEqual([['irst', 'second']]);
+  });
+
+  test('handles fragment with invalid props (no children)', () => {
+    const invalidFrag = React.createElement(React.Fragment, {});
+    const result = removeFirstLetter([invalidFrag, 'fallback']);
+    expect(result).toEqual([[], 'fallback']);
+  });
+
+  test('handles deeply nested fragments with mixed content', () => {
+    const deepInner = React.createElement(React.Fragment, null, 'deep');
+    const mid = React.createElement(
+      React.Fragment,
+      null,
+      deepInner,
+      <span>mid</span>,
+    );
+    const outer = React.createElement(React.Fragment, null, mid);
+    const result = removeFirstLetter([outer]);
+    expect(result).toEqual([[[['eep'], <span>mid</span>]]]);
   });
 });

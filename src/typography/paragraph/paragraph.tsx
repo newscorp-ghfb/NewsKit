@@ -49,14 +49,15 @@ export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
   defaults,
 });
 
-const getFirstLetter = (children: React.ReactNode[]): string => {
+export const getFirstLetter = (children: React.ReactNode[]): string => {
   const [firstChild] = children;
   if (typeof firstChild === 'string') {
     return firstChild.charAt(0);
   }
   if (
-    isFragment(firstChild) &&
+    firstChild &&
     React.isValidElement(firstChild) &&
+    firstChild.type === React.Fragment &&
     firstChild.props
   ) {
     const element = firstChild as React.ReactElement<{
@@ -67,23 +68,35 @@ const getFirstLetter = (children: React.ReactNode[]): string => {
   return '';
 };
 
-const removeFirstLetter = (children: React.ReactNode[]): React.ReactNode => {
+export const removeFirstLetter = (
+  children: React.ReactNode[],
+): React.ReactNode => {
   const [firstChild, ...rest] = children;
   if (typeof firstChild === 'string') {
     return [firstChild.substring(1), ...rest];
   }
   if (
-    isFragment(firstChild) &&
+    firstChild &&
     React.isValidElement(firstChild) &&
+    firstChild.type === React.Fragment &&
     firstChild.props
   ) {
     const element = firstChild as React.ReactElement<{
       children: React.ReactNode;
     }>;
-    return [
-      removeFirstLetter(React.Children.toArray(element.props.children)),
-      ...rest,
-    ];
+
+    const fragmentChildren = element.props.children;
+
+    let childrenArray: React.ReactNode[];
+    if (fragmentChildren == null) {
+      childrenArray = [];
+    } else if (Array.isArray(fragmentChildren)) {
+      childrenArray = fragmentChildren;
+    } else {
+      childrenArray = [fragmentChildren];
+    }
+
+    return [removeFirstLetter(childrenArray), ...rest];
   }
 
   /* istanbul ignore next */
