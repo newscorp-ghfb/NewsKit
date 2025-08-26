@@ -79,7 +79,7 @@
     "e2e:visual:docs:local:percy": "sh ./scripts/percy_local.sh docsite",
     "e2e:generate:a11ytests:comps": "node scripts/generate-a11y-tests-comps.js",
     "e2e:generate:a11ytests:web": "ts-node ./scripts/generate-a11y-tests-web.ts",
-    "e2e:findbrokenlinks": "linkinator http://localhost:8081 --recurse --skip '^(?!http://localhost:8081)'",
+    "e2e:findbrokenlinks": "linkinator http://127.0.0.1:8081 --recurse --skip '^(?!http://127.0.0.1:8081)'",
     "e2e:findbrokenlinks:ci": "start-server-and-test serve:docs 8081 e2e:findbrokenlinks",
     "postinstall": "yarn fetch-external-fonts",
     "prepare": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn\")'",
