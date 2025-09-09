@@ -243,11 +243,11 @@ const ThemelessAudioPlayer: React.FC<AudioPlayerProps> = props => {
         xsRowGutter="space000"
       >
         <audio
+          {...restProps}
           ref={audioRef}
           src={src}
           autoPlay={autoPlay}
           data-testid="audio-element"
-          {...restProps}
           // override callback handlers
           onCanPlay={eventHandler(AudioEvents.CanPlay)}
           onWaiting={eventHandler(AudioEvents.Waiting)}
