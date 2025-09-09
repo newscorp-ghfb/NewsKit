@@ -150,7 +150,7 @@ describe('Audio Player', () => {
     expect(clearTimeoutSpy).toHaveBeenCalledTimes(3);
   });
 
-  test.skip('recorded player renders and behaves as expected (React 19 incompatibility)', () => {
+  test('recorded player renders and behaves as expected', () => {
     const onNextTrack = jest.fn();
     const onPreviousTrack = jest.fn();
     const onPlay = jest.fn();
@@ -332,7 +332,7 @@ describe('Audio Player', () => {
     fireEvent.click(getByTestId('audio-player-skip-previous'));
     expect(onPreviousTrack).not.toHaveBeenCalled();
   });
-  test.skip('hides previousTrack as expected (snapshot ID changes)', () => {
+  test('hides previousTrack as expected', () => {
     const props = {
       ...recordedAudioProps,
       hidePreviousTrack: true,
@@ -356,7 +356,7 @@ describe('Audio Player', () => {
     const {asFragment} = renderWithTheme(AudioPlayer, props);
     expect(asFragment()).toMatchSnapshot();
   });
-  test.skip('changing src maintains expected playback state (React 19 incompatibility)', () => {
+  test('changing src maintains expected playback state', () => {
     const {getByTestId, rerender} = renderWithTheme(
       AudioPlayer,
       recordedAudioProps,
@@ -586,7 +586,7 @@ describe('Audio Player', () => {
   });
 
   describe('Instrumentation tests should', () => {
-    test.skip('raise event when paused (React 19 incompatibility)', () => {
+    test('raise event when paused', () => {
       const fireEventSpy = jest.fn();
       const {getByTestId} = renderWithImplementation(
         AudioPlayer,
@@ -664,7 +664,7 @@ describe('Audio Player', () => {
       expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
     });
 
-    test.skip('raise event when paused and live is true (React 19 incompatibility)', () => {
+    test('raise event when paused and live is true', () => {
       const fireEventSpy = jest.fn();
       const {getByTestId} = renderWithImplementation(
         AudioPlayer,
@@ -805,7 +805,7 @@ describe('Audio Player', () => {
       expect(fireEventSpy).toHaveBeenCalledWith(expectedObject);
     });
 
-    test.skip('should not raise play event if play called twice (React 19 incompatibility)', () => {
+    test('should not raise play event if play called twice', () => {
       const fireEventSpy = jest.fn();
       const {getByTestId} = renderWithImplementation(
         AudioPlayer,
@@ -822,7 +822,7 @@ describe('Audio Player', () => {
       expect(fireEventSpy).toHaveBeenCalledTimes(1);
     });
 
-    test.skip('should not raise pause event if pause called twice (React 19 incompatibility)', () => {
+    test('should not raise pause event if play called twice', () => {
       const fireEventSpy = jest.fn();
       const {getByTestId} = renderWithImplementation(
         AudioPlayer,

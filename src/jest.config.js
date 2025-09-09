@@ -21,8 +21,7 @@ module.exports = {
     '/node_modules/',
     '/src/test/require-context.ts',
     '/src/icons/filled/',
-    '/src/icons/outlined/',
-    '/src/audio-player/',
+    '/src/icons/outlined/'
   ],
   coverageThreshold: {
     'src/**': {
