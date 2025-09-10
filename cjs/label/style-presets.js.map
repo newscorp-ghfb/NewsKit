@@ -1,0 +1,1 @@
+{"version":3,"file":"style-presets.js","sourceRoot":"","sources":["../../../src/label/style-presets.ts"],"names":[],"mappings":";;AAEA,kBAAe;IACb,KAAK,EAAE;QACL,IAAI,EAAE;YACJ,KAAK,EAAE,wBAAwB;SAChC;QACD,QAAQ,EAAE;YACR,KAAK,EAAE,4BAA4B;SACpC;KACF;CAC6B,CAAC"}

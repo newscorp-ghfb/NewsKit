@@ -1,0 +1,1 @@
+{"version":3,"file":"style-presets.js","sourceRoot":"","sources":["../../../src/divider/style-presets.ts"],"names":[],"mappings":"AAEA,eAAe;IACb,OAAO,EAAE;QACP,IAAI,EAAE;YACJ,WAAW,EAAE,OAAO;YACpB,WAAW,EAAE,yBAAyB;YACtC,WAAW,EAAE,gCAAgC;SAC9C;KACF;IACD,cAAc,EAAE;QACd,IAAI,EAAE;YACJ,WAAW,EAAE,OAAO;YACpB,WAAW,EAAE,yBAAyB;YACtC,WAAW,EAAE,gCAAgC;SAC9C;KACF;CAC6B,CAAC"}

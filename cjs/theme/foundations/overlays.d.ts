@@ -1,0 +1,34 @@
+export declare const overlays: {
+    overlayGradientInverseVertical: string;
+    overlayGradientBaseVertical: string;
+    overlayGradientInverseHorizontal: string;
+    overlayGradientBaseHorizontal: string;
+    overlayGradientFromBottom: string;
+    overlayGradientFromBottomLeft: string;
+    overlayGradientFromBottomRight: string;
+    overlayGradientFromLeft: string;
+    overlayGradientFromRight: string;
+    overlayGradientFromTop: string;
+    overlayGradientFromTopLeft: string;
+    overlayGradientFromTopRight: string;
+    overlayTintInverse010: string;
+    overlayTintInverse020: string;
+    overlayTintInverse030: string;
+    overlayTintInverse040: string;
+    overlayTintBase010: string;
+    overlayTintBase020: string;
+    overlayTintBase030: string;
+    overlayTintBase040: string;
+    opacity000: string;
+    opacity010: string;
+    opacity020: string;
+    opacity030: string;
+    opacity040: string;
+    opacity050: string;
+    opacity060: string;
+    opacity070: string;
+    opacity080: string;
+    opacity090: string;
+    opacity100: string;
+};
+//# sourceMappingURL=overlays.d.ts.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"utils.d.ts","sourceRoot":"","sources":["../../../src/base-floating-element/utils.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,SAAS,EAAC,MAAM,UAAU,CAAC;AAWnC,eAAO,MAAM,kBAAkB,SACvB,MAAM,SACL,SAAS,GAAG;IAAC,SAAS,CAAC,EAAE,OAAO,CAAA;CAAC,gBAC1B,MAAM,qBACD,MAAM,KACxB,MAAM,GAAG,SAOX,CAAC;AAEF,eAAO,MAAM,sBAAsB,gBACpB,MAAM,GAAG,SAAS,gBACjB,MAAM,KACnB,IAOF,CAAC"}

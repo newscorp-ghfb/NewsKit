@@ -1,0 +1,1 @@
+{"version":3,"file":"style-presets.js","sourceRoot":"","sources":["../../../src/drawer/style-presets.ts"],"names":[],"mappings":";;AAEA,kBAAe;IACb,WAAW,EAAE;QACX,IAAI,EAAE;YACJ,YAAY,EAAE,+BAA+B;YAC7C,eAAe,EAAE,yBAAyB;YAC1C,SAAS,EAAE,uBAAuB;SACnC;KACF;IACD,YAAY,EAAE;QACZ,IAAI,EAAE;YACJ,KAAK,EAAE,oBAAoB;SAC5B;KACF;CAC6B,CAAC"}

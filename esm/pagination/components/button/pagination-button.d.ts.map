@@ -1,0 +1,1 @@
+{"version":3,"file":"pagination-button.d.ts","sourceRoot":"","sources":["../../../../../src/pagination/components/button/pagination-button.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAC1B,OAAO,EAAC,uBAAuB,EAAC,MAAM,iBAAiB,CAAC;AAExD,OAAO,EAAC,mBAAmB,EAAC,MAAM,aAAa,CAAC;AAEhD,eAAO,MAAM,gBAAgB,UACpB,uBAAuB,GAAG,mBAAmB,sBAIrD,CAAC"}

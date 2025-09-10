@@ -1,0 +1,1 @@
+{"version":3,"file":"types.d.ts","sourceRoot":"","sources":["../../../../../src/utils/hooks/use-media-query/types.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAC,cAAc,EAAC,MAAM,sBAAsB,CAAC;AAEpD,MAAM,MAAM,eAAe,GAAG;KAC3B,GAAG,IAAI,cAAc,GAAG,OAAO;CACjC,CAAC;AACF,MAAM,MAAM,YAAY,GAAG;KACxB,GAAG,IAAI,cAAc,GAAG,MAAM;CAChC,CAAC"}

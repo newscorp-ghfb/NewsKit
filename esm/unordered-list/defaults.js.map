@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.js","sourceRoot":"","sources":["../../../src/unordered-list/defaults.ts"],"names":[],"mappings":"AAAA,eAAe;IACb,aAAa,EAAE;QACb,UAAU,EAAE,UAAU;QACtB,OAAO,EAAE;YACP,WAAW,EAAE,SAAS;YACtB,gBAAgB,EAAE,uBAAuB;SAC1C;QACD,MAAM,EAAE;YACN,WAAW,EAAE,SAAS;YACtB,WAAW,EAAE,UAAU;YACvB,IAAI,EAAE,aAAa;SACpB;KACF;CACF,CAAC"}

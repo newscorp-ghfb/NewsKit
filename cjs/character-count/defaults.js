@@ -1,0 +1,25 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
+    characterCount: {
+        small: {
+            stylePreset: 'characterCount',
+            typographyPreset: 'utilityBody010',
+            minHeight: 'sizing030',
+            marginBlockEnd: 'space020',
+        },
+        medium: {
+            stylePreset: 'characterCount',
+            typographyPreset: 'utilityBody020',
+            minHeight: 'sizing030',
+            marginBlockEnd: 'space020',
+        },
+        large: {
+            stylePreset: 'characterCount',
+            typographyPreset: 'utilityBody030',
+            minHeight: 'sizing030',
+            marginBlockEnd: 'space020',
+        },
+    },
+};
+//# sourceMappingURL=defaults.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"context.d.ts","sourceRoot":"","sources":["../../../src/layer/context.tsx"],"names":[],"mappings":";AAEA,KAAK,yBAAyB,GAAG;IAC/B,IAAI,EAAE,cAAc,GAAG,IAAI,CAAC;CAC7B,CAAC;AAIF,eAAO,MAAM,iBAAiB,iCAA0C,CAAC;AACzE,eAAO,MAAM,6BAA6B,qDAAiC,CAAC;AAE5E,KAAK,gBAAgB,GAAG,cAAc,GAAG,IAAI,CAAC;AAE9C,eAAO,MAAM,QAAQ,wBAAiC,CAAC;AACvD,eAAO,MAAM,oBAAoB,4CAAwB,CAAC"}

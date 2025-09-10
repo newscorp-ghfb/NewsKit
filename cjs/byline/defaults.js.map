@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.js","sourceRoot":"","sources":["../../../src/byline/defaults.ts"],"names":[],"mappings":";;AAAA,kBAAe;IACb,MAAM,EAAE;QACN,WAAW,EAAE,WAAW;QACxB,gBAAgB,EAAE,gBAAgB;QAClC,UAAU,EAAE,UAAU;QACtB,IAAI,EAAE;YACJ,WAAW,EAAE,YAAY;YACzB,gBAAgB,EAAE,gBAAgB;SACnC;QACD,OAAO,EAAE;YACP,WAAW,EAAE,iBAAiB;YAC9B,WAAW,EAAE,UAAU;SACxB;KACF;CACF,CAAC"}

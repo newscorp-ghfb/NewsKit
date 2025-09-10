@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.js","sourceRoot":"","sources":["../../../src/ordered-list/defaults.ts"],"names":[],"mappings":";;AAAA,kBAAe;IACb,WAAW,EAAE;QACX,WAAW,EAAE,UAAU;QACvB,OAAO,EAAE;YACP,WAAW,EAAE,SAAS;YACtB,gBAAgB,EAAE,uBAAuB;SAC1C;QACD,OAAO,EAAE;YACP,WAAW,EAAE,SAAS;YACtB,gBAAgB,EAAE,uBAAuB;YACzC,QAAQ,EAAE,WAAW;SACtB;KACF;CACF,CAAC"}

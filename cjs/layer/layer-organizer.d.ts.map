@@ -1,0 +1,1 @@
+{"version":3,"file":"layer-organizer.d.ts","sourceRoot":"","sources":["../../../src/layer/layer-organizer.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAiB,MAAM,OAAO,CAAC;AAItC,MAAM,WAAW,mBAAmB;IAClC,QAAQ,CAAC,EAAE,KAAK,CAAC,SAAS,CAAC;IAC3B,MAAM,CAAC,EAAE,MAAM,CAAC;CACjB;AAID,eAAO,MAAM,cAAc,EAAE,KAAK,CAAC,EAAE,CAAC,mBAAmB,CAwDxD,CAAC"}

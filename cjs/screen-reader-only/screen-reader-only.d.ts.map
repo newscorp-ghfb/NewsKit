@@ -1,0 +1,1 @@
+{"version":3,"file":"screen-reader-only.d.ts","sourceRoot":"","sources":["../../../src/screen-reader-only/screen-reader-only.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAmB/B,MAAM,WAAW,KAAK;IACpB,EAAE,CAAC,EAAE,MAAM,CAAC;IACZ,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAC;CAC3B;AACD,eAAO,MAAM,gBAAgB,EAAE,KAAK,CAAC,EAAE,CAAC,KAAK,CAE5C,CAAC"}

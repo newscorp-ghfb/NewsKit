@@ -1,0 +1,602 @@
+export declare const virginOverrides: {
+    typographyPresets: {
+        editorialHeadline010: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeadline020: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeadline030: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeadline040: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeadline050: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeadline060: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeadline070: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeadline080: {
+            fontFamily: string;
+            fontSize: string;
+            fontWeight: string;
+            letterSpacing: string;
+            lineHeight: string;
+        };
+        editorialHeading010: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeading020: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeading030: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeading040: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeading050: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeading060: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialHeading070: {
+            fontSize: string;
+            lineHeight: string;
+            letterSpacing: string;
+            fontFamily: string;
+            fontWeight: string;
+        };
+        editorialHeading080: {
+            fontFamily: string;
+            fontSize: string;
+            fontWeight: string;
+            letterSpacing: string;
+            lineHeight: string;
+        };
+        editorialSubheading010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialSubheading020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialSubheading030: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialSubheading040: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialSubheading050: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialQuote010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialQuote020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialParagraph010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialParagraph020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        editorialParagraph030: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityHeading010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityHeading020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityHeading030: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityHeading040: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityHeading050: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilitySubheading010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilitySubheading020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilitySubheading030: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilitySubheading040: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilitySubheading050: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityBody010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityBody020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityBody030: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityLabel010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityLabel020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityLabel030: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityButton010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityButton020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityButton030: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityMeta010: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        utilityMeta020: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+        regButtonTypographyPreset: {
+            fontSize: string;
+            lineHeight: string;
+            fontFamily: string;
+            fontWeight: string;
+            letterSpacing: string;
+        };
+    };
+    fonts: {
+        fontFamily010: {
+            fontFamily: string;
+            fontMetrics: {
+                fontWeight010: {
+                    capHeight: number;
+                    ascent: number;
+                    descent: number;
+                    lineGap: number;
+                    unitsPerEm: number;
+                };
+            };
+        };
+        fontWeight010: number;
+        fontWeight020: number;
+        fontWeight030: number;
+        fontWeight040: number;
+        fontSize010: string;
+        fontSize020: string;
+        fontSize030: string;
+        fontSize040: string;
+        fontSize050: string;
+        fontSize060: string;
+        fontSize070: string;
+        fontSize080: string;
+        fontSize090: string;
+        fontSize100: string;
+        fontSize110: string;
+        fontLineHeight010: number;
+        fontLineHeight020: number;
+        fontLineHeight030: number;
+        fontLineHeight040: number;
+        fontLineHeight050: number;
+        fontLineHeight060: number;
+        fontLineHeight070: number;
+        fontLetterSpacing010: number;
+        fontLetterSpacing020: number;
+        fontLetterSpacing030: number;
+        fontLetterSpacing040: number;
+        fontLetterSpacing050: number;
+        fontLetterSpacing060: number;
+        fontLetterSpacing070: number;
+    };
+    overlays: {
+        overlayGradientInverseVertical: string;
+        overlayGradientBaseVertical: string;
+        overlayGradientBaseVerticalBottom: string;
+        overlayGradientInverseHorizontal: string;
+        overlayGradientBaseHorizontal: string;
+        overlayTintInverse010: string;
+        overlayTintInverse020: string;
+        overlayTintInverse030: string;
+        overlayTintInverse040: string;
+        overlayTintBase010: string;
+        overlayTintBase020: string;
+        overlayTintBase030: string;
+        overlayTintBase040: string;
+        overlayDark010: string;
+        overlayDark020: string;
+        overlayDark030: string;
+        overlayDark040: string;
+        overlayDarkGradient010: string;
+        overlayLightGradient010: string;
+        overlayLight010: string;
+        overlayLight020: string;
+        overlayLight030: string;
+        overlayLight040: string;
+    };
+    colors: {
+        accessible010: string;
+        accessible020: string;
+        amber010: string;
+        amber020: string;
+        amber030: string;
+        amber040: string;
+        amber050: string;
+        amber060: string;
+        amber070: string;
+        amber080: string;
+        amber090: string;
+        amber100: string;
+        black: string;
+        blackTint10: string;
+        blackTint20: string;
+        blackTint30: string;
+        blackTint40: string;
+        blackTint50: string;
+        blackTint60: string;
+        blackTint70: string;
+        blackTint80: string;
+        blackTint90: string;
+        white: string;
+        whiteTint10: string;
+        whiteTint20: string;
+        whiteTint30: string;
+        whiteTint40: string;
+        whiteTint50: string;
+        whiteTint60: string;
+        whiteTint70: string;
+        whiteTint80: string;
+        whiteTint90: string;
+        blue010: string;
+        blue020: string;
+        blue030: string;
+        blue040: string;
+        blue050: string;
+        blue060: string;
+        blue070: string;
+        blue080: string;
+        blue090: string;
+        blue100: string;
+        brown010: string;
+        brown020: string;
+        brown030: string;
+        brown040: string;
+        brown050: string;
+        brown060: string;
+        brown070: string;
+        brown080: string;
+        brown090: string;
+        brown100: string;
+        green010: string;
+        green020: string;
+        green030: string;
+        green040: string;
+        green050: string;
+        green060: string;
+        green070: string;
+        green080: string;
+        green090: string;
+        green100: string;
+        neutral010: string;
+        neutral020: string;
+        neutral030: string;
+        neutral040: string;
+        neutral050: string;
+        neutral060: string;
+        neutral070: string;
+        neutral080: string;
+        neutral090: string;
+        neutral100: string;
+        purple010: string;
+        purple020: string;
+        purple030: string;
+        purple040: string;
+        purple050: string;
+        purple060: string;
+        purple070: string;
+        purple080: string;
+        purple090: string;
+        purple100: string;
+        red010: string;
+        red020: string;
+        red030: string;
+        red040: string;
+        red050: string;
+        red060: string;
+        red070: string;
+        red080: string;
+        red090: string;
+        red100: string;
+        virginRed010: string;
+        virginRed020: string;
+        virginRed030: string;
+        virginRed040: string;
+        virginRed050: string;
+        virginRed060: string;
+        virginRed070: string;
+        virginRed080: string;
+        virginRed090: string;
+        virginRed100: string;
+        virginGardient: string;
+        socialFacebook: string;
+        socialInstagram: string;
+        socialReddit: string;
+        socialTwitter: string;
+        socialWhatsapp: string;
+        socialYoutube: string;
+        teal010: string;
+        teal020: string;
+        teal030: string;
+        teal040: string;
+        teal050: string;
+        teal060: string;
+        teal070: string;
+        teal080: string;
+        teal090: string;
+        teal100: string;
+        inkAccessible010: string;
+        inkAccessible020: string;
+        inkBase: string;
+        inkBrand010: string;
+        inkBrand020: string;
+        inkContrast: string;
+        inkInformative: string;
+        inkInverse: string;
+        inkNegative: string;
+        inkNonEssential: string;
+        inkNotice: string;
+        inkPositive: string;
+        inkSubtle: string;
+        InterfaceInformative010: string;
+        InterfaceInformative020: string;
+        interface010: string;
+        interface020: string;
+        interface030: string;
+        interface040: string;
+        interface050: string;
+        interface060: string;
+        interfaceBackground: string;
+        interfaceBrand010: string;
+        interfaceBrand020: string;
+        interfaceDisabled: string;
+        interfaceNegative010: string;
+        interfaceNegative020: string;
+        interfaceNeutral010: string;
+        interfaceNeutral020: string;
+        interfaceNotice010: string;
+        interfaceNotice020: string;
+        interfacePositive010: string;
+        interfacePositive020: string;
+        interfaceSkeleton010: string;
+        interfaceSkeleton020: string;
+        transparent: string;
+        interactiveDisabled010: string;
+        interactiveNegative010: string;
+        interactiveNegative020: string;
+        interactiveNegative030: string;
+        interactiveNegative040: string;
+        interactiveNegative050: string;
+        interactivePositive010: string;
+        interactivePositive020: string;
+        interactivePositive030: string;
+        interactivePositive040: string;
+        interactivePositive050: string;
+        interactivePrimary010: string;
+        interactivePrimary020: string;
+        interactivePrimary030: string;
+        interactivePrimary040: string;
+        interactivePrimary050: string;
+        interactiveSecondary010: string;
+        interactiveSecondary020: string;
+        interactiveSecondary030: string;
+        interactiveSecondary040: string;
+        interactiveSecondary050: string;
+        interactiveVisited010: string;
+        tabBorderColor: string;
+    };
+    shadows: {
+        shadow010: string;
+        shadow020: string;
+        shadow030: string;
+        shadow040: string;
+        shadow050: string;
+        shadow060: string;
+        headerShadow: string;
+    };
+    borders: {
+        borderRadiusPill: string;
+    };
+};
+export declare const virginTheme: import("../../../theme").UncompiledTheme;
+//# sourceMappingURL=virgin-theme.d.ts.map

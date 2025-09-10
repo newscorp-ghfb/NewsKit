@@ -1,0 +1,72 @@
+import React from 'react';
+import { EnhancerOverrides, CommonInputProps } from '../form/types';
+import { LogicalProps } from '../utils/logical-properties';
+import { MQ } from '../utils/style';
+import { Override } from '../utils/overrides';
+import { ModalProps } from '../modal';
+import { EventData } from '../instrumentation';
+import { NewsKitIconProps } from '../icons';
+import { Side } from '@floating-ui/react-dom-interactions/';
+export type ButtonSelectSize = 'small' | 'medium' | 'large';
+export type SelectButtonIcon = NewsKitIconProps & {
+    isOpen: boolean;
+};
+export interface SelectButtonOverrides extends EnhancerOverrides {
+    width?: MQ<string>;
+    height?: MQ<string>;
+    minWidth?: MQ<string>;
+    minHeight?: MQ<string>;
+    maxWidth?: MQ<string>;
+    stylePreset?: MQ<string>;
+    /**
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
+     */
+    spaceStack?: MQ<string>;
+    spaceInline?: MQ<string>;
+    typographyPreset?: MQ<string>;
+    loadingIndicator?: {
+        stylePreset?: MQ<string>;
+    };
+    indicatorIcon?: Override<SelectButtonIcon>;
+}
+export interface SelectPanelOverrides extends LogicalProps {
+    maxHeight?: MQ<string>;
+    stylePreset?: MQ<string>;
+    /**
+     * @deprecated This property is deprecated and will be removed in the next major release. Use `marginBlock` instead.
+     */
+    spaceStack?: MQ<string>;
+    zIndex?: 'layer' | string;
+}
+export type SelectPropsOverrides = {
+    button?: SelectButtonOverrides;
+    panel?: SelectPanelOverrides;
+    modal?: Override<ModalProps>;
+};
+export interface SelectProps extends CommonInputProps, EventData {
+    loading?: boolean;
+    children: Array<React.ReactElement<SelectOptionProps>>;
+    validationIcon?: React.ReactNode;
+    useModal?: MQ<boolean>;
+    overrides?: SelectPropsOverrides;
+    virtualized?: number;
+    onOpenChange?: (value: boolean) => void;
+    controlled?: boolean;
+    labelId?: string;
+    panelPosition?: Side;
+}
+export interface SelectOptionProps {
+    value: string;
+    children: React.ReactNode;
+    selected?: boolean;
+    defaultSelected?: boolean;
+    selectedIcon?: React.ReactNode;
+    selectedDisplay?: React.ReactNode;
+    overrides?: {
+        minHeight?: MQ<string>;
+        stylePreset?: MQ<string>;
+        typographyPreset?: MQ<string>;
+        spaceInline?: MQ<string>;
+    } & LogicalProps;
+}
+//# sourceMappingURL=types.d.ts.map

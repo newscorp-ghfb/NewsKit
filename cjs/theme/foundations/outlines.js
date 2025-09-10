@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.outlines = void 0;
+exports.outlines = {
+    outlineColorDefault: '{{colors.interactiveFocus010}}',
+    outlineColorInverse: '{{colors.interactiveFocus020}}',
+    outlineStyleDefault: 'solid',
+    outlineWidth000: '{{borders.borderWidth000}}',
+    outlineWidthDefault: '{{borders.borderWidth020}}',
+    outlineOffsetDefault: '{{borders.borderWidth020}}',
+    safariOutlineOffsetDefault: '{{borders.borderWidth020}}',
+    safariOutlineStyleDefault: 'auto',
+};
+//# sourceMappingURL=outlines.js.map

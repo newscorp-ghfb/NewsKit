@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.js","sourceRoot":"","sources":["../../../src/share-bar/defaults.ts"],"names":[],"mappings":"AAAA,eAAe;IACb,QAAQ,EAAE;QACR,KAAK,EAAE;YACL,gBAAgB,EAAE,iBAAiB;YACnC,WAAW,EAAE,UAAU;SACxB;QACD,KAAK,EAAE;YACL,WAAW,EAAE,UAAU;SACxB;KACF;CACF,CAAC"}

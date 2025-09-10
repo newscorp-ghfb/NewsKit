@@ -1,0 +1,1 @@
+{"version":3,"file":"style-presets.js","sourceRoot":"","sources":["../../../src/character-count/style-presets.ts"],"names":[],"mappings":";;AAEA,kBAAe;IACb,cAAc,EAAE;QACd,IAAI,EAAE;YACJ,KAAK,EAAE,sBAAsB;SAC9B;QACD,QAAQ,EAAE;YACR,KAAK,EAAE,4BAA4B;SACpC;QACD,OAAO,EAAE;YACP,KAAK,EAAE,wBAAwB;SAChC;QACD,KAAK,EAAE;YACL,KAAK,EAAE,sBAAsB;SAC9B;KACF;CAC6B,CAAC"}

@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
+    volumeControl: {
+        slider: {
+            track: {
+                stylePreset: 'volumeControlTrack',
+            },
+            indicator: {
+                stylePreset: 'volumeControlIndicator',
+            },
+            thumb: {
+                stylePreset: 'volumeControlThumb',
+            },
+        },
+        button: {
+            stylePreset: 'iconButtonMinimalPrimary',
+            iconSize: 'iconSize020',
+            size: 'small',
+        },
+    },
+};
+//# sourceMappingURL=defaults.js.map
