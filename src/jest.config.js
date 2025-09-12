@@ -21,14 +21,16 @@ module.exports = {
     '/node_modules/',
     '/src/test/require-context.ts',
     '/src/icons/filled/',
-    '/src/icons/outlined/'
+    '/src/icons/outlined/',
+    '/src/utils/react-children-utilities.ts',
+    '/styled\\.tsx?$'
   ],
   coverageThreshold: {
     'src/**': {
-      branches: 75,
-      functions: 85,
-      lines: 85,
-      statements: 85,
+      branches: 95,
+      functions: 95,
+      lines: 95,
+      statements: 95,
     },
   },
   reporters: [
