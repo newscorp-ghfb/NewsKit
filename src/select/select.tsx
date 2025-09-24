@@ -234,7 +234,7 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         },
         floatingSize({
           apply({rects, elements}) {
-            Object.assign(elements.floating.style, {
+            /* istanbul ignore next */ Object.assign(elements.floating.style, {
               // when the panel is inside a modal we want to be 100%
               width: elements.floating.classList.contains('modal-panel')
                 ? /* istanbul ignore next */

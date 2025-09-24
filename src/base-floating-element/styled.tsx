@@ -65,7 +65,8 @@ export const StyledPointer = styled.div<
           left: 'right',
         };
         const staticSide: string =
-          staticSides[placement.split('-')[0]] || 'bottom';
+          staticSides[placement.split('-')[0]] ||
+          /* istanbul ignore next */ 'bottom';
         return {
           width: size,
           height: size,

@@ -111,6 +111,17 @@ describe('Drawer', () => {
     expect(fragment).toMatchSnapshot();
   });
 
+  test('renders drawer with explicitly null placement', () => {
+    const fragment = renderToFragmentInBody(Drawer, {
+      open: true,
+      onDismiss: () => {},
+      placement: null as any,
+      header: drawerHeader,
+      children: drawerBody,
+    });
+    expect(fragment).toMatchSnapshot();
+  });
+
   test('renders closed drawer visually hidden but remains in the DOM tree', () => {
     const {asFragment, getByTestId} = renderWithThemeInBody(Drawer, {
       open: false,
