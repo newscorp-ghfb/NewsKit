@@ -365,23 +365,28 @@ jobs:
       - restore_cache:
           keys:
             - v1-cypress-{{ checksum "yarn.lock" }}
+            - v1-cypress-
       - attach_workspace:
           at: ~/project
       - run:
           name: Install make
           command: |
-            # Install gnupg first, then fix Google Chrome repository GPG key issue
-            apt-get update --allow-releaseinfo-change || true
-            apt-get install -y gnupg
+            # Install gnupg to fix Chrome repository GPG key issue
+            apt-get update --allow-releaseinfo-change || apt-get update --allow-unauthenticated --allow-releaseinfo-change
+            apt-get install -y gnupg wget
             wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
             apt-get update && apt-get install -y make curl
       - run:
           name: install cypress
-          command: make install_cypress
+          command: |
+            make install_cypress
+            # Verify Cypress binary is installed
+            npx cypress verify
       - save_cache:
           key: v1-cypress-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache
+            - ~/project/.cache
       - persist_to_workspace:
           root: ~/project
           paths:
