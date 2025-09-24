@@ -16,7 +16,38 @@ exports[`UnpackContent renders component 1`] = `
 
 exports[`UnpackContent renders fragment with text and block components 1`] = `
 <DocumentFragment>
-  text here
+  .emotion-0 {
+  margin: 0;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  padding: 0.5px 0px;
+}
+
+.emotion-0 svg {
+  fill: #2e3f54;
+}
+
+.emotion-0::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-0::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<p
+    class="emotion-0"
+  >
+    text here
+  </p>
   .emotion-0 {
   margin: 0;
   padding: 0;
@@ -239,14 +270,71 @@ exports[`UnpackContent renders fragment with text and block components 1`] = `
       </div>
     </li>
   </ul>
-  more text
+  .emotion-0 {
+  margin: 0;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  padding: 0.5px 0px;
+}
+
+.emotion-0 svg {
+  fill: #2e3f54;
+}
+
+.emotion-0::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-0::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+<p
+    class="emotion-0"
+  >
+    more text
+  </p>
 </DocumentFragment>
 `;
 
 exports[`UnpackContent renders fragment with text and inline components 1`] = `
 <DocumentFragment>
-  text 
   .emotion-0 {
+  margin: 0;
+  color: #2e3f54;
+  font-family: Poppins,sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  padding: 0.5px 0px;
+}
+
+.emotion-0 svg {
+  fill: #2e3f54;
+}
+
+.emotion-0::before {
+  content: '';
+  margin-bottom: -0.391em;
+  display: block;
+}
+
+.emotion-0::after {
+  content: '';
+  margin-top: -0.409em;
+  display: block;
+}
+
+.emotion-1 {
   display: inline-block;
   color: #3358cc;
   -webkit-text-decoration: underline;
@@ -254,7 +342,7 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .emotion-0 {
+  .emotion-1 {
     transition-property: color,fill;
     transition-duration: 200ms,200ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
@@ -262,58 +350,58 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .emotion-0 {
+  .emotion-1 {
     transition-property: color,fill;
     transition-duration: 0ms;
     transition-timing-function: cubic-bezier(0, 0, .5, 1),cubic-bezier(0, 0, .5, 1);
   }
 }
 
-.emotion-0 svg {
+.emotion-1 svg {
   fill: #3358cc;
 }
 
-.emotion-0:hover:not(:disabled) {
+.emotion-1:hover:not(:disabled) {
   color: #254cac;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-0:hover:not(:disabled) svg {
+.emotion-1:hover:not(:disabled) svg {
   fill: #254cac;
 }
 
-.emotion-0:active:not(:disabled) {
+.emotion-1:active:not(:disabled) {
   color: #14328d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-0:active:not(:disabled) svg {
+.emotion-1:active:not(:disabled) svg {
   fill: #14328d;
 }
 
-.emotion-0:visited:not(:disabled) {
+.emotion-1:visited:not(:disabled) {
   color: #6454e3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-0:visited:not(:disabled) svg {
+.emotion-1:visited:not(:disabled) svg {
   fill: #6454e3;
 }
 
-.emotion-0:visited:hover:not(:disabled) {
+.emotion-1:visited:hover:not(:disabled) {
   color: #6454e3;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-0:visited:hover:not(:disabled) svg {
+.emotion-1:visited:hover:not(:disabled) svg {
   fill: #6454e3;
 }
 
-.emotion-0:focus-visible:not(:disabled) {
+.emotion-1:focus-visible:not(:disabled) {
   outline-color: #3768fb;
   outline-style: solid;
   outline-width: 2px;
@@ -322,13 +410,13 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    .emotion-0:focus-visible:not(:disabled) {
+    .emotion-1:focus-visible:not(:disabled) {
       outline-style: auto;
     }
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -347,27 +435,12 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
   justify-content: flex-start;
 }
 
-.emotion-2 {
+.emotion-3 {
   margin: 0;
   display: block;
 }
 
-<a
-    class="emotion-0"
-    href="/"
-  >
-    <span
-      class="emotion-1"
-    >
-      <span
-        class="emotion-2"
-      >
-        link
-      </span>
-    </span>
-  </a>
-   another text 
-  .emotion-0 {
+.emotion-4 {
   background-color: rgba(27, 31, 35, 0.05);
   color: #5a6a79;
   border-radius: 3px;
@@ -377,11 +450,31 @@ exports[`UnpackContent renders fragment with text and inline components 1`] = `
   font-family: monospace;
 }
 
-<code
+<p
     class="emotion-0"
   >
-    code
-  </code>
+    text 
+    <a
+      class="emotion-1"
+      href="/"
+    >
+      <span
+        class="emotion-2"
+      >
+        <span
+          class="emotion-3"
+        >
+          link
+        </span>
+      </span>
+    </a>
+     another text 
+    <code
+      class="emotion-4"
+    >
+      code
+    </code>
+  </p>
 </DocumentFragment>
 `;
 

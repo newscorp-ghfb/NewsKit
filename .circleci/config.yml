@@ -371,9 +371,9 @@ jobs:
       - run:
           name: Install make
           command: |
-            # Install gnupg to fix Chrome repository GPG key issue
-            apt-get update --allow-releaseinfo-change || apt-get update --allow-unauthenticated --allow-releaseinfo-change
-            apt-get install -y gnupg wget
+            # Install gnupg first, then fix Google Chrome repository GPG key issue
+            apt-get update --allow-releaseinfo-change || true
+            apt-get install -y gnupg
             wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
             apt-get update && apt-get install -y make curl
       - run:

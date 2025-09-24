@@ -23,6 +23,7 @@ module.exports = {
     '/src/icons/filled/',
     '/src/icons/outlined/',
     '/src/select/select\\.tsx$',
+    '.*\\.styled\\.tsx?$',
   ],
   coverageThreshold: {
     'src/**': {
