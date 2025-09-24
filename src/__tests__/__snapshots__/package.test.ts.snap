@@ -7,6 +7,7 @@ Object {
     "@emotion-icons/emotion-icon": "4.1.0",
     "@emotion-icons/material": "3.9.0",
     "@emotion-icons/material-outlined": "3.8.0",
+    "@floating-ui/react": "^0.27.16",
     "@floating-ui/react-dom-interactions": "^0.6.0",
     "@seznam/compose-react-refs": "^1.0.5",
     "@types/minimatch": "^5.1.2",
