@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import React, {ChangeEvent, useEffect, useRef} from 'react';
 import {useSelect, UseSelectStateChange} from 'downshift';
 import composeRefs from '@seznam/compose-react-refs';
