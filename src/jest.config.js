@@ -22,8 +22,6 @@ module.exports = {
     '/src/test/require-context.ts',
     '/src/icons/filled/',
     '/src/icons/outlined/',
-    '/src/select/select\\.tsx$',
-    '.*\\.styled\\.tsx?$',
   ],
   coverageThreshold: {
     'src/**': {
