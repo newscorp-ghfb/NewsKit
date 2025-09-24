@@ -1,5 +1,4 @@
 import React from 'react';
-import {isFragment} from 'react-is';
 import {TextBlock, TextBlockProps} from 'newskit';
 import {childIsString} from '../../../src/utils/react-children-utilities';
 import {getDisplayName} from '../../../src/utils/component';
@@ -102,7 +101,8 @@ export const UnpackContent = ({
 
   if (
     firstChild &&
-    isFragment(firstChild) &&
+    React.isValidElement(firstChild) &&
+    firstChild.type === React.Fragment &&
     React.isValidElement(firstChild)
   ) {
     const fragmentProps = firstChild.props as {children: React.ReactNode};

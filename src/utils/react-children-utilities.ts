@@ -1,5 +1,4 @@
 import React from 'react';
-import {isFragment} from 'react-is';
 
 // these utility function are copied from https://github.com/fernandopasik/react-children-utilities
 // the library will be added as a dependency with PPDSC-1432 - Add react-children-utilities as dependency
@@ -58,8 +57,8 @@ export const childIsString = (child: React.ReactNode): boolean => {
   }
   // unpack fragment
   if (
-    isFragment(child) &&
     React.isValidElement(child) &&
+    child.type === React.Fragment &&
     child.props &&
     typeof (child.props as {children: unknown}).children === 'string'
   ) {

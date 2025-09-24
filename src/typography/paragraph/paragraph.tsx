@@ -1,5 +1,4 @@
 import React from 'react';
-import {isFragment} from 'react-is';
 import {
   styled,
   getTypographyPreset,

@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import {isFragment} from 'react-is';
 import {TabProps, TabsProps, TabAlign, TabPanelProps} from './types';
 import {
   StyledTabsBar,
@@ -262,7 +261,11 @@ const ThemelessTabs = React.forwardRef<HTMLDivElement, TabsProps>(
     const getChildren = (
       tab: string | React.ReactNode,
     ): string | React.ReactNode => {
-      if (isFragment(tab) && React.isValidElement(tab) && tab.props) {
+      if (
+        React.isValidElement(tab) &&
+        tab.type === React.Fragment &&
+        tab.props
+      ) {
         // un-wrap the fragment from Tab.label prop
         const element = tab as React.ReactElement<{children: React.ReactNode}>;
         return element.props.children;

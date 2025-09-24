@@ -22,11 +22,7 @@ module.exports = {
     '/src/test/require-context.ts',
     '/src/icons/filled/',
     '/src/icons/outlined/',
-    '/src/utils/react-children-utilities.ts',
-    '/styled\\.tsx?$',
-    // Exclude problematic files from coverage thresholds - threshold covered for both is >90%
-    '/src/select/select\\.tsx$', // Lower threshold for this file due to floating-ui internals
-    '/src/tabs/tabs\\.tsx$' // Lower threshold for this file due to fragment edge case
+    '/src/select/select\\.tsx$',
   ],
   coverageThreshold: {
     'src/**': {
