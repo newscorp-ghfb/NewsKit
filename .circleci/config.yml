@@ -369,7 +369,10 @@ jobs:
           at: ~/project
       - run:
           name: Install make
-          command: apt-get update && apt-get install -y make curl
+          command: |
+            # Fix Google Chrome repository GPG key issue
+            wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+            apt-get update && apt-get install -y make curl
       - run:
           name: install cypress
           command: make install_cypress
