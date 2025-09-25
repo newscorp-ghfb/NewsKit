@@ -396,8 +396,6 @@ jobs:
           root: ~/project
           paths:
             - .cache/Cypress
-            - cypress/*
-            - node_modules
       - slack/notify:
           <<: *slack_notify
 
