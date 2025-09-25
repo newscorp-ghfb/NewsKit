@@ -396,7 +396,8 @@ jobs:
       - run:
           name: install cypress
           command: |
-            make install_cypress
+            npx cypress install
+            npx cypress verify
       - save_cache:
           key: v1-cypress-{{ checksum "yarn.lock" }}
           paths:
