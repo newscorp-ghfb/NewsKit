@@ -377,16 +377,27 @@ jobs:
             apt-get install -y make curl
       - run:
           name: install cypress
-          command: make install_cypress
+          command: |
+            make install_cypress
+            # Ensure Cypress binary is installed and verify it works
+            npx cypress install
+            npx cypress verify
       - save_cache:
           key: v1-cypress-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache
+      - run:
+          name: Copy Cypress cache to workspace
+          command: |
+            # Create the cache directory in the workspace so it can be persisted
+            mkdir -p ~/project/.cache
+            cp -r /root/.cache/Cypress ~/project/.cache/ || echo "No Cypress cache to copy"
       - persist_to_workspace:
           root: ~/project
           paths:
-            - .cache
+            - .cache/Cypress
             - cypress/*
+            - node_modules
       - slack/notify:
           <<: *slack_notify
 
@@ -685,6 +696,20 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
+          name: Restore Cypress cache
+          command: |
+            if [ -d ~/project/.cache/Cypress ]; then
+              echo "Restoring Cypress cache from workspace..."
+              mkdir -p /root/.cache
+              cp -r ~/project/.cache/Cypress /root/.cache/
+            else
+              echo "No Cypress cache found, installing..."
+              npx cypress install
+            fi
+      - run:
+          name: Verify Cypress installation
+          command: npx cypress verify
+      - run:
           name: Run Component Tests
           command: yarn e2e:comps:ci
       - store_artifacts:
@@ -702,6 +727,20 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - run:
+          name: Restore Cypress cache
+          command: |
+            if [ -d ~/project/.cache/Cypress ]; then
+              echo "Restoring Cypress cache from workspace..."
+              mkdir -p /root/.cache
+              cp -r ~/project/.cache/Cypress /root/.cache/
+            else
+              echo "No Cypress cache found, installing..."
+              npx cypress install
+            fi
+      - run:
+          name: Verify Cypress installation
+          command: npx cypress verify
       - run:
           name: Run Docs Site Functional Tests
           command: yarn e2e:docs:ci
