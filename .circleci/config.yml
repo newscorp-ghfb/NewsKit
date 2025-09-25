@@ -324,6 +324,24 @@ commands:
           name: 'Skip the required Percy check for the newskit-docsite project'
           command: yarn e2e:visual:docs:ci:percy:skip
 
+  setup_cypress:
+    description: Restore and verify Cypress installation
+    steps:
+      - run:
+          name: Restore Cypress cache
+          command: |
+            if [ -d ~/project/.cache/Cypress ]; then
+              echo "Restoring Cypress cache from workspace..."
+              mkdir -p /root/.cache
+              cp -r ~/project/.cache/Cypress /root/.cache/
+            else
+              echo "No Cypress cache found, installing..."
+              npx cypress install
+            fi
+      - run:
+          name: Verify Cypress installation
+          command: npx cypress verify
+
 jobs:
   can_i_merge_checker:
     executor: node
@@ -690,23 +708,8 @@ jobs:
     executor: cypress
     parallelism: 10
     steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Restore Cypress cache
-          command: |
-            if [ -d ~/project/.cache/Cypress ]; then
-              echo "Restoring Cypress cache from workspace..."
-              mkdir -p /root/.cache
-              cp -r ~/project/.cache/Cypress /root/.cache/
-            else
-              echo "No Cypress cache found, installing..."
-              npx cypress install
-            fi
-      - run:
-          name: Verify Cypress installation
-          command: npx cypress verify
+      - checkout_and_attach_workspace
+      - setup_cypress
       - run:
           name: Run Component Tests
           command: yarn e2e:comps:ci
@@ -722,23 +725,8 @@ jobs:
     executor: cypress
     parallelism: 16
     steps:
-      - checkout
-      - attach_workspace:
-          at: ~/project
-      - run:
-          name: Restore Cypress cache
-          command: |
-            if [ -d ~/project/.cache/Cypress ]; then
-              echo "Restoring Cypress cache from workspace..."
-              mkdir -p /root/.cache
-              cp -r ~/project/.cache/Cypress /root/.cache/
-            else
-              echo "No Cypress cache found, installing..."
-              npx cypress install
-            fi
-      - run:
-          name: Verify Cypress installation
-          command: npx cypress verify
+      - checkout_and_attach_workspace
+      - setup_cypress
       - run:
           name: Run Docs Site Functional Tests
           command: yarn e2e:docs:ci
