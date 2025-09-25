@@ -274,9 +274,7 @@ commands:
   run_test_visual_docs_percy:
     description: 'Run the Percy tests for docs visual changes'
     steps:
-      - run:
-          name: Install make
-          command: apt-get update && apt-get install -y make
+      # Note: make is already available in the cypress/browsers image
       - run:
           name: Set percy/newskit-docsite token
           command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
@@ -367,9 +365,7 @@ jobs:
             - v1-cypress-{{ checksum "yarn.lock" }}
       - attach_workspace:
           at: ~/project
-      - run:
-          name: Install make
-          command: apt-get update && apt-get install -y make curl
+      # Note: make and curl are already available in the cypress/browsers image
       - run:
           name: install cypress
           command: make install_cypress
