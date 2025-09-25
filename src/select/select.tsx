@@ -28,6 +28,7 @@ import {useTheme} from '../theme';
 const noFlip = () => ({
   name: 'noFlip',
   fn({x, y}: {x: number; y: number}) {
+    console.log('hi');
     return {x, y};
   },
 });
