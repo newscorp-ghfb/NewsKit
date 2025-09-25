@@ -276,7 +276,9 @@ commands:
     steps:
       - run:
           name: Install make
-          command: apt-get update && apt-get install -y make
+          command: |
+            apt-get update --allow-releaseinfo-change -o Acquire::AllowInsecureRepositories=true || true
+            apt-get install -y make
       - run:
           name: Set percy/newskit-docsite token
           command: echo "export PERCY_TOKEN=${PERCY_DOCSITE_TOKEN}" >> $BASH_ENV
