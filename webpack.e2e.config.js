@@ -24,15 +24,27 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        loader: 'ts-loader',
-        options: {
-          configFile: 'e2e/tsconfig.json',
-          transpileOnly: true,
+        test: /\.(js|jsx|ts|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            babelrc: false,
+            configFile: false,
+            presets: [
+              ['@babel/preset-react', { runtime: 'automatic' }],
+              ['@babel/preset-typescript', { 
+                isTSX: true, 
+                allExtensions: true 
+              }]
+            ],
+            plugins: [
+              ['@babel/plugin-transform-class-properties', { loose: true }],
+              ['@babel/plugin-transform-private-methods', { loose: true }],
+              ['@babel/plugin-transform-private-property-in-object', { loose: true }],
+            ],
+          },
         },
-        exclude: [
-          /src\/icons\/(filled|outlined)\/(material|material-outlined)\/\.*/,
-        ],
       },
       {
         test: /\.js$/,
