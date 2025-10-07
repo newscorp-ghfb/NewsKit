@@ -7,6 +7,34 @@ global.TextEncoder = TextEncoder;
 // @ts-ignore
 global.TextDecoder = TextDecoder;
 
+// https://github.com/jsdom/jsdom/issues/2448
+if (typeof MessageChannel === 'undefined') {
+  // @ts-ignore
+  global.MessageChannel = class MessageChannel {
+    port1: any;
+    port2: any;
+
+    constructor() {
+      this.port1 = {
+        postMessage: (message: any) => {
+          if (this.port2.onmessage) {
+            setTimeout(() => this.port2.onmessage({data: message}), 0);
+          }
+        },
+        onmessage: null,
+      };
+      this.port2 = {
+        postMessage: (message: any) => {
+          if (this.port1.onmessage) {
+            setTimeout(() => this.port1.onmessage({data: message}), 0);
+          }
+        },
+        onmessage: null,
+      };
+    }
+  };
+}
+
 failOnConsole({
   silenceMessage: errorMessage => {
     if (
