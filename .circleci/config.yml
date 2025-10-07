@@ -390,10 +390,10 @@ jobs:
           at: ~/project
       - run:
           name: Install make
+          user: root
           command: |
-            # Skip problematic repositories and install only what we need
-            sudo apt-get update
-            sudo apt-get install -y make curl
+            apt-get update
+            apt-get install -y make
       - run:
           name: install cypress
           command: |
@@ -1494,7 +1494,6 @@ workflows:
           name: build_docs_prod
           context: ncu-newskit-site-prod
           requires:
-            - install_deps
             - deploy_to_s3_staging
       - push_s3_general_oidc:
           name: deploy_to_s3_prod
@@ -1537,3 +1536,191 @@ workflows:
           publish_dev: true
           requires:
             - approve_publish_npm_pr_codemod
+
+  on_trigger_release_tag:
+    jobs:
+      - bump_version:
+          <<: *only_on_trigger_release_tag
+          context: ncu-product-platforms-context
+          version: $(echo << pipeline.git.tag >> | cut -f2 -d "@")
+
+  on_trigger_release_tag_codemod:
+    jobs:
+      - bump_version_codemod:
+          <<: *only_on_trigger_release_tag_codemod
+          context: ncu-product-platforms-context
+          version: $(echo << pipeline.git.tag >> | cut -f2 -d "@")
+
+  on_release_version_tag:
+    # Workflow's jobs triggered by the bump_version make script, which creates and pushes a new version tag e.g: "v5.0.1".
+    jobs:
+      - delete_trigger_release_tag:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          version: $(echo << pipeline.git.tag >> | cut -f2 -d "v")
+
+      - init_aws:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_staging
+          package: s3/prod-newskit
+          context: ncu-newskit-site-stage
+          apply: true
+          tf_env: true
+          environment: staging
+          requires:
+            - init_aws
+      - deploy_terraform_oidc:
+          name: deploy_terraform_s3_prod
+          package: s3/prod-newskit
+          context: ncu-newskit-site-prod
+          apply: true
+          tf_env: true
+          environment: prod
+          requires:
+            - init_aws
+      - install_deps:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+      - install_cypress:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+      - build_components:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - install_deps
+      - build_storybook:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - install_deps
+      - build_test_e2e:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - install_deps
+      - lint:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - install_deps
+      - test_unit_comps:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - install_deps
+      - test_unit_docs:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - install_deps
+      - test_e2e_comps:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - build_test_e2e
+            - install_cypress
+      - build_docs_with_no_base_url:
+          <<: *only_on_version_tag
+          name: build_docs_versioned
+          context: ncu-newskit-site-prod
+          requires:
+            - install_deps
+            - delete_trigger_release_tag
+      - test_broken_links_docs:
+          <<: *only_on_version_tag
+          name: test_broken_links_docs_prod
+          context: ncu-product-platforms-context
+          requires:
+            - build_docs_versioned
+      - test_e2e_docs:
+          <<: *only_on_version_tag
+          name: test_e2e_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - build_docs_versioned
+            - install_cypress
+            - build_storybook
+      - test_newskit_in_nextjs_app:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - build_components
+
+      - publish_npm:
+          <<: *only_on_version_tag
+          context: ncu-product-platforms-context
+          requires:
+            - lint
+            - test_unit_comps
+            - test_unit_docs
+            - test_e2e_comps
+            - test_e2e_docs_prod
+            - test_newskit_in_nextjs_app
+
+      # Deploying newskit.co.uk and storybook to Staging then to Prod environment.
+      - build_docs_with_no_base_url:
+          name: build_docs_staging
+          context: ncu-newskit-site-stage
+          requires:
+            - install_deps
+            - publish_npm
+      - push_s3_general_oidc:
+          name: deploy_to_s3_staging
+          context: ncu-newskit-site-stage
+          s3Path_docs: s3://ncu-newskit-docs-staging/
+          s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
+          requires:
+            - deploy_terraform_s3_staging
+            - build_docs_staging
+            - build_storybook
+
+      - build_docs_with_no_base_url:
+          name: build_docs_prod
+          context: ncu-newskit-site-prod
+          requires:
+            - install_deps
+            - deploy_to_s3_staging
+      - push_s3_general_oidc:
+          name: deploy_to_s3_prod
+          context: ncu-newskit-site-prod
+          s3Path_docs: s3://ncu-newskit-docs-prod/
+          s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
+          requires:
+            - deploy_terraform_s3_prod
+            - build_docs_prod
+            - build_storybook
+
+  on_release_version_tag_codemod:
+    # Workflow's jobs triggered by the bump_version_codemod make script, which creates and pushes a new version tag e.g: "codemod-v5.0.1".
+    jobs:
+      - delete_trigger_release_tag_codemod:
+          <<: *only_on_version_tag_codemod
+          context: ncu-product-platforms-context
+          version: $(echo << pipeline.git.tag >> | cut -f2 -d "v")
+
+      - install_deps_codemod:
+          <<: *only_on_version_tag_codemod
+          context: ncu-product-platforms-context
+
+      - test_unit_codemod:
+          <<: *only_on_version_tag_codemod
+          context: ncu-product-platforms-context
+          requires:
+            - install_deps_codemod
+
+      - lint_codemod:
+          <<: *only_on_version_tag_codemod
+          context: ncu-product-platforms-context
+          requires:
+            - install_deps_codemod
+
+      - publish_npm_codemod:
+          <<: *only_on_version_tag_codemod
+          context: ncu-product-platforms-context
+          publish_dev: false
+          requires:
+            - test_unit_codemod
+            - lint_codemod
