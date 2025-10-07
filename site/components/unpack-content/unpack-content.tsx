@@ -102,8 +102,7 @@ export const UnpackContent = ({
   if (
     firstChild &&
     React.isValidElement(firstChild) &&
-    firstChild.type === React.Fragment &&
-    React.isValidElement(firstChild)
+    firstChild.type === React.Fragment
   ) {
     const fragmentProps = firstChild.props as {children: React.ReactNode};
     return <>{fragmentToOutput(fragmentProps.children, textBlockProps)}</>;
