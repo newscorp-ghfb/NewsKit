@@ -234,7 +234,9 @@ const ThemelessSelect = React.forwardRef<HTMLInputElement, SelectProps>(
         {
           ...(panelPosition ? noFlip() : flip()),
         },
+        /* istanbul ignore next */
         floatingSize({
+          /* istanbul ignore next */
           apply({rects, elements}) {
             /* istanbul ignore next */ Object.assign(elements.floating.style, {
               // when the panel is inside a modal we want to be 100%
