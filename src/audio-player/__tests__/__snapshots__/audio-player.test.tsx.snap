@@ -1242,7 +1242,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                     values="0.1"
                   >
                     <div
-                      aria-describedby="mock-nk-1"
+                      aria-describedby="mock-nk-15"
                       aria-label="Volume Control"
                       aria-orientation="horizontal"
                       aria-valuemax="1"
@@ -1296,7 +1296,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
                 <span
                   aria-hidden="true"
                   class="emotion-40"
-                  id="mock-nk-1"
+                  id="mock-nk-15"
                 >
                   Use the arrow keys to adjust volume
                 </span>
@@ -1329,7 +1329,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-nk-1"
+                aria-describedby="mock-nk-16"
                 aria-label="seek bar"
                 aria-orientation="horizontal"
                 aria-valuemax="1"
@@ -1368,7 +1368,7 @@ exports[`Audio Player hides previousTrack as expected 1`] = `
           <span
             aria-hidden="true"
             class="emotion-40"
-            id="mock-nk-1"
+            id="mock-nk-16"
           >
             Use the arrow keys to fast forward or rewind
           </span>
@@ -2524,7 +2524,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                     values="0.1"
                   >
                     <div
-                      aria-describedby="mock-nk-1"
+                      aria-describedby="mock-nk-18"
                       aria-label="Volume Control"
                       aria-orientation="horizontal"
                       aria-valuemax="1"
@@ -2578,7 +2578,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
                 <span
                   aria-hidden="true"
                   class="emotion-36"
-                  id="mock-nk-1"
+                  id="mock-nk-18"
                 >
                   Use the arrow keys to adjust volume
                 </span>
@@ -2611,7 +2611,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-nk-1"
+                aria-describedby="mock-nk-19"
                 aria-label="seek bar"
                 aria-orientation="horizontal"
                 aria-valuemax="1"
@@ -2650,7 +2650,7 @@ exports[`Audio Player hides seek buttons as expected 1`] = `
           <span
             aria-hidden="true"
             class="emotion-36"
-            id="mock-nk-1"
+            id="mock-nk-19"
           >
             Use the arrow keys to fast forward or rewind
           </span>
@@ -3772,7 +3772,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-nk-1"
+                aria-describedby="mock-nk-17"
                 aria-label="seek bar"
                 aria-orientation="horizontal"
                 aria-valuemax="1"
@@ -3811,7 +3811,7 @@ exports[`Audio Player hides volume control as expected 1`] = `
           <span
             aria-hidden="true"
             class="emotion-39"
-            id="mock-nk-1"
+            id="mock-nk-17"
           >
             Use the arrow keys to fast forward or rewind
           </span>
@@ -6567,7 +6567,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                     values="0.1"
                   >
                     <div
-                      aria-describedby="mock-nk-1"
+                      aria-describedby="mock-nk-11"
                       aria-label="Volume Control"
                       aria-orientation="horizontal"
                       aria-valuemax="1"
@@ -6621,7 +6621,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
                 <span
                   aria-hidden="true"
                   class="emotion-41"
-                  id="mock-nk-1"
+                  id="mock-nk-11"
                 >
                   Use the arrow keys to adjust volume
                 </span>
@@ -6654,7 +6654,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
               values="10"
             >
               <div
-                aria-describedby="mock-nk-1"
+                aria-describedby="mock-nk-12"
                 aria-label="seek bar"
                 aria-orientation="horizontal"
                 aria-valuemax="6610"
@@ -6699,7 +6699,7 @@ exports[`Audio Player recorded player renders and behaves as expected 1`] = `
           <span
             aria-hidden="true"
             class="emotion-41"
-            id="mock-nk-1"
+            id="mock-nk-12"
           >
             Use the arrow keys to fast forward or rewind
           </span>
@@ -6813,7 +6813,7 @@ exports[`Audio Player recorded player renders and behaves as expected 2`] = `
 }
 
 <div
-  aria-describedby="mock-nk-1"
+  aria-describedby="mock-nk-12"
   aria-label="seek bar"
   aria-orientation="horizontal"
   aria-valuemax="6610"
@@ -8144,7 +8144,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                     values="0.7"
                   >
                     <div
-                      aria-describedby="mock-nk-1"
+                      aria-describedby="mock-nk-3"
                       aria-label="Volume Control"
                       aria-orientation="horizontal"
                       aria-valuemax="1"
@@ -8198,7 +8198,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
                 <span
                   aria-hidden="true"
                   class="emotion-40"
-                  id="mock-nk-1"
+                  id="mock-nk-3"
                 >
                   Use the arrow keys to adjust volume
                 </span>
@@ -8231,7 +8231,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-nk-1"
+                aria-describedby="mock-nk-4"
                 aria-label="seek bar"
                 aria-orientation="horizontal"
                 aria-valuemax="1"
@@ -8270,7 +8270,7 @@ exports[`Audio Player recorded player renders as expected 1`] = `
           <span
             aria-hidden="true"
             class="emotion-40"
-            id="mock-nk-1"
+            id="mock-nk-4"
           >
             Use the arrow keys to fast forward or rewind
           </span>
@@ -9590,7 +9590,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                     values="0.7"
                   >
                     <div
-                      aria-describedby="mock-nk-1"
+                      aria-describedby="mock-nk-5"
                       aria-label="Volume Control"
                       aria-orientation="horizontal"
                       aria-valuemax="1"
@@ -9644,7 +9644,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
                 <span
                   aria-hidden="true"
                   class="emotion-40"
-                  id="mock-nk-1"
+                  id="mock-nk-5"
                 >
                   Use the arrow keys to adjust volume
                 </span>
@@ -9677,7 +9677,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-nk-1"
+                aria-describedby="mock-nk-6"
                 aria-label="seek bar"
                 aria-orientation="horizontal"
                 aria-valuemax="1"
@@ -9716,7 +9716,7 @@ exports[`Audio Player recorded player renders with custom ariaLandmark 1`] = `
           <span
             aria-hidden="true"
             class="emotion-40"
-            id="mock-nk-1"
+            id="mock-nk-6"
           >
             Use the arrow keys to fast forward or rewind
           </span>
@@ -11038,7 +11038,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                     values="0.1"
                   >
                     <div
-                      aria-describedby="mock-nk-1"
+                      aria-describedby="mock-nk-24"
                       aria-label="Volume Control"
                       aria-orientation="horizontal"
                       aria-valuemax="1"
@@ -11092,7 +11092,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
                 <span
                   aria-hidden="true"
                   class="emotion-40"
-                  id="mock-nk-1"
+                  id="mock-nk-24"
                 >
                   Use the arrow keys to adjust volume
                 </span>
@@ -11125,7 +11125,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
               values="0"
             >
               <div
-                aria-describedby="mock-nk-1"
+                aria-describedby="mock-nk-25"
                 aria-label="seek bar"
                 aria-orientation="horizontal"
                 aria-valuemax="1"
@@ -11164,7 +11164,7 @@ exports[`Audio Player recorded player renders with logical props overrides 1`] =
           <span
             aria-hidden="true"
             class="emotion-40"
-            id="mock-nk-1"
+            id="mock-nk-25"
           >
             Use the arrow keys to fast forward or rewind
           </span>
@@ -12424,7 +12424,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                     values="0.1"
                   >
                     <div
-                      aria-describedby="mock-nk-1"
+                      aria-describedby="mock-nk-22"
                       aria-label="Volume Control"
                       aria-orientation="horizontal"
                       aria-valuemax="1"
@@ -12478,7 +12478,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
                 <span
                   aria-hidden="true"
                   class="emotion-40"
-                  id="mock-nk-1"
+                  id="mock-nk-22"
                 >
                   Use the arrow keys to adjust volume
                 </span>
@@ -12511,7 +12511,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
               values="0"
             >
               <div
-                aria-describedby="mock-nk-1"
+                aria-describedby="mock-nk-23"
                 aria-label="seek bar"
                 aria-orientation="horizontal"
                 aria-valuemax="1"
@@ -12550,7 +12550,7 @@ exports[`Audio Player recorded player renders with overrides 1`] = `
           <span
             aria-hidden="true"
             class="emotion-40"
-            id="mock-nk-1"
+            id="mock-nk-23"
           >
             Use the arrow keys to fast forward or rewind
           </span>

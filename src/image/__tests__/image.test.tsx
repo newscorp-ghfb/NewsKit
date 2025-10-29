@@ -1,5 +1,5 @@
 import {fireEvent} from '@testing-library/react';
-import {renderHook} from '@testing-library/react-hooks';
+import {renderHook} from '@testing-library/react';
 import React, {RefObject} from 'react';
 import {ObjectFitProperty} from 'csstype';
 import {
@@ -288,7 +288,7 @@ describe('Image', () => {
       renderHook(() =>
         useClientSide(
           mockOnLoadHandler,
-          imageRef as RefObject<HTMLImageElement>,
+          imageRef as RefObject<HTMLImageElement | null>,
         ),
       );
       expect(mockOnLoadHandler).toHaveBeenCalled();
@@ -304,7 +304,7 @@ describe('Image', () => {
       renderHook(() =>
         useClientSide(
           mockOnLoadHandler,
-          imageRef as RefObject<HTMLImageElement>,
+          imageRef as RefObject<HTMLImageElement | null>,
         ),
       );
       expect(mockOnLoadHandler).toHaveBeenCalledTimes(0);

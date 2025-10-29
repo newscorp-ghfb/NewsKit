@@ -39,6 +39,7 @@ exports[`IntroductionSection renders section as expected 1`] = `
         <div
           data-comp="NewsKit Cell"
           data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,

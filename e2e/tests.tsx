@@ -11,7 +11,7 @@ interface StoryType {
       (
         Story: StoryType,
         context: {globals: {backgrounds: {value: string}}; name: string},
-      ) => JSX.Element
+      ) => React.ReactElement
     >;
   };
 }

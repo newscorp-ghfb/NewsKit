@@ -741,11 +741,11 @@ exports[`TabsWithTable renders with default data 1`] = `
                     class="emotion-12"
                   >
                     <button
-                      aria-controls="mock-nk-1"
+                      aria-controls="mock-nk-5"
                       aria-selected="true"
                       class="emotion-13"
                       data-testid="tab"
-                      id="mock-nk-1"
+                      id="mock-nk-5"
                       role="tab"
                       tabindex="0"
                       type="button"
@@ -766,11 +766,11 @@ exports[`TabsWithTable renders with default data 1`] = `
                     class="emotion-16"
                   >
                     <button
-                      aria-controls="mock-nk-1"
+                      aria-controls="mock-nk-6"
                       aria-selected="false"
                       class="emotion-17"
                       data-testid="tab"
-                      id="mock-nk-1"
+                      id="mock-nk-6"
                       role="tab"
                       tabindex="-1"
                       type="button"
@@ -801,7 +801,7 @@ exports[`TabsWithTable renders with default data 1`] = `
         </div>
         <div
           aria-hidden="false"
-          aria-labelledby="mock-nk-1"
+          aria-labelledby="mock-nk-5"
           class="emotion-21"
           data-testid="tab-panel"
           role="tabpanel"
@@ -879,7 +879,7 @@ exports[`TabsWithTable renders with default data 1`] = `
         </div>
         <div
           aria-hidden="true"
-          aria-labelledby="mock-nk-1"
+          aria-labelledby="mock-nk-6"
           class="emotion-21"
           data-testid="tab-panel"
           hidden=""

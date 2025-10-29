@@ -15,16 +15,17 @@ export const withDefaultProps = <P extends {}>(
   enhanceOverrides?: object,
 ): React.FC<P> => {
   const WrappedComponent = React.memo(
-    React.forwardRef<unknown, P>((props, ref) => {
+    React.forwardRef<unknown, React.PropsWithoutRef<P>>((props, ref) => {
       const dProps =
         typeof defaultProps === 'function'
-          ? (defaultProps as PropsEvalFunction<P>)(props)
+          ? (defaultProps as PropsEvalFunction<P>)(props as P)
           : defaultProps || {};
       const theme = useTheme();
 
       const overrides = getToken({theme}, defaultPresetsPath);
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const {children, ...propsWithoutChildren} = props as any;
+      const {children, ...propsWithoutChildren} = props as P & {
+        children?: React.ReactNode;
+      };
       const enhancedOverrides = deepMerge(overrides, enhanceOverrides);
 
       return (
@@ -39,8 +40,7 @@ export const withDefaultProps = <P extends {}>(
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
             } as any,
             dProps,
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            propsWithoutChildren as any,
+            propsWithoutChildren as Partial<P>,
           )}
         >
           {children}

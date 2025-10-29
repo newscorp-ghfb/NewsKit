@@ -176,6 +176,7 @@ exports[`AnatomySection renders section as expected 1`] = `
         <div
           data-comp="NewsKit Cell"
           data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 8,
   \\"lg\\": 10,
@@ -228,6 +229,7 @@ exports[`AnatomySection renders section as expected 1`] = `
         <div
           data-comp="NewsKit Cell"
           data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,
@@ -266,7 +268,6 @@ exports[`AnatomySection renders section as expected 1`] = `
       "description": {
         "type": "span",
         "key": null,
-        "ref": null,
         "props": {
           "children": "description 2"
         },
@@ -320,6 +321,7 @@ exports[`AnatomySection renders section as expected 1`] = `
 <div
     data-comp="NewsKit Cell"
     data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,

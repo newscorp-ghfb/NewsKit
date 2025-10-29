@@ -239,9 +239,10 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
 
   // Find common MQ keys form all responsive props
   const commonMQKeys: BreakpointKeys[] = propsValues
-    .filter(propValue => typeof propValue === 'object')
+    .filter(propValue => typeof propValue === 'object' && propValue !== null)
     .flatMap(
-      (propValue: MQ<T[keyof T]>) => Object.keys(propValue) as BreakpointKeys[],
+      (propValue: MQ<T[keyof T]>) =>
+        Object.keys(propValue as Record<string, unknown>) as BreakpointKeys[],
     )
     .filter(
       (item: BreakpointKeys, index: number, ar: BreakpointKeys[]) =>
@@ -285,7 +286,7 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
       }
       baseValue = (propValue as MQPartial<T[keyof T]>)[bp];
       return result;
-    }, propValue);
+    }, propValue as MQPartial<T[keyof T]>);
   };
 
   /*
@@ -319,7 +320,11 @@ export const handleResponsiveProp = <Props extends ThemeProp, T>(
       if (hasOwnProperty(filledPropValues, propName)) {
         const mqValue = filledPropValues[propName as keyof T];
         /* istanbul ignore else */
-        if (hasOwnProperty(mqValue, fromMqKey)) {
+        if (
+          typeof mqValue === 'object' &&
+          mqValue !== null &&
+          hasOwnProperty(mqValue, fromMqKey)
+        ) {
           return {
             ...valAcc,
             [propName]: mqValue[fromMqKey],

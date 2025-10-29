@@ -30,8 +30,11 @@ export interface ReferenceProps extends Record<string, unknown> {
 }
 
 export interface FloatingElementProps
-  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title' | 'defaultValue'> {
-  children: React.ReactElement & {
+  extends Omit<
+    React.HTMLAttributes<HTMLDivElement>,
+    'title' | 'defaultValue' | 'content'
+  > {
+  children: React.ReactElement<any> & {
     ref?: React.Ref<HTMLElement>;
   };
   trigger?: TriggerType | TriggerType[];
@@ -66,7 +69,7 @@ export interface FloatingElementProps
   boundary?: Boundary;
   hidePointer?: boolean;
   restoreFocusTo?: HTMLElement;
-  focusElementRef?: React.RefObject<HTMLElement>;
+  focusElementRef?: React.RefObject<HTMLElement | null>;
   disableFocusManagement?: boolean;
   dismissOnBlur?: boolean;
 }

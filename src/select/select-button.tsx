@@ -51,7 +51,7 @@ interface SelectButtonProps {
   openMenu: Function;
   itemToString: Function;
   isOpen: boolean;
-  selectRef: React.RefObject<HTMLDivElement>;
+  selectRef: React.RefObject<HTMLDivElement | null>;
 }
 
 export const SelectButton = React.forwardRef<
@@ -81,7 +81,7 @@ export const SelectButton = React.forwardRef<
     ...restProps
   } = props;
 
-  const selectedItemDisplay = (selectedItem as React.ReactElement)?.props
+  const selectedItemDisplay = (selectedItem as React.ReactElement<any>)?.props
     ?.selectedDisplay;
 
   const theme = useTheme();

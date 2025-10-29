@@ -88,11 +88,11 @@ const DefaultValue: React.FC<DefaultValueProps> = ({value, type, enumObj}) => {
   return <span> = {prefixedValue}</span>;
 };
 
-const wrapChild = (child: React.ReactNode & {props?: PropProps}) => {
+const wrapChild = (child: React.ReactNode): React.ReactNode => {
   // eslint-disable-next-line @typescript-eslint/no-use-before-define
-  if (child.props && child.props.mdxType === Prop.displayName) {
+  if (React.isValidElement(child) && child.type === Prop && child.props) {
     // eslint-disable-next-line @typescript-eslint/no-use-before-define
-    return <Prop nested {...child.props} />;
+    return <Prop nested {...(child.props as PropProps)} />;
   }
   return child;
 };

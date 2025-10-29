@@ -493,11 +493,6 @@ exports[`Modal renders default 1`] = `
           tabindex="0"
         />
         <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
           data-focus-lock-disabled="false"
         >
           <div
@@ -1054,11 +1049,6 @@ exports[`Modal renders inline 1`] = `
         tabindex="0"
       />
       <div
-        data-focus-guard="true"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-        tabindex="1"
-      />
-      <div
         data-focus-lock-disabled="false"
       >
         <div
@@ -1558,11 +1548,6 @@ exports[`Modal renders modal with overrides 1`] = `
           tabindex="0"
         />
         <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
           data-focus-lock-disabled="false"
         >
           <div
@@ -1638,11 +1623,6 @@ exports[`Modal renders nothing if modal is closed 1`] = `
       class="nk-layer"
     >
       <div>
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="-1"
-        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
@@ -2185,11 +2165,6 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
           tabindex="-1"
         />
         <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="-1"
-        />
-        <div
           data-focus-lock-disabled="disabled"
         >
           <div
@@ -2231,7 +2206,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
                   class="emotion-9"
                 >
                   <button
-                    aria-describedby="mock-nk-1"
+                    aria-describedby="mock-nk-6"
                     aria-label="close"
                     class="emotion-10"
                     data-testid="button"
@@ -2257,7 +2232,7 @@ exports[`Modal renders screen reader message when focus trapping disabled 1`] = 
                 </div>
                 <span
                   class="emotion-13"
-                  id="mock-nk-1"
+                  id="mock-nk-6"
                 >
                   With the next tab you will be leaving the dialog window.
                 </span>
@@ -2763,11 +2738,6 @@ exports[`Modal renders with aria-ariaLabelledby attribute 1`] = `
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
           tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
         />
         <div
           data-focus-lock-disabled="false"
@@ -3304,11 +3274,6 @@ exports[`Modal renders with aria-describedby attribute 1`] = `
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
           tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
         />
         <div
           data-focus-lock-disabled="false"
@@ -3873,11 +3838,6 @@ exports[`Modal renders with different closePosition 1`] = `
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
           tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
         />
         <div
           data-focus-lock-disabled="false"
@@ -4448,11 +4408,6 @@ exports[`Modal renders with logical props 1`] = `
           tabindex="0"
         />
         <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
           data-focus-lock-disabled="false"
         >
           <div
@@ -4882,11 +4837,6 @@ exports[`Modal renders without close button 1`] = `
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
           tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
         />
         <div
           data-focus-lock-disabled="false"
@@ -5407,11 +5357,6 @@ exports[`Modal renders without header 1`] = `
           tabindex="0"
         />
         <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
           data-focus-lock-disabled="false"
         >
           <div
@@ -5803,11 +5748,6 @@ exports[`Modal renders without header and close 1`] = `
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
           tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
         />
         <div
           data-focus-lock-disabled="false"
@@ -6247,11 +6187,6 @@ exports[`Modal renders without overlay 1`] = `
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
           tabindex="0"
-        />
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
         />
         <div
           data-focus-lock-disabled="false"
@@ -6801,11 +6736,6 @@ exports[`Modal toggle aria-hidden to content outside dialog 1`] = `
           tabindex="0"
         />
         <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
           data-focus-lock-disabled="false"
         >
           <div
@@ -6883,11 +6813,6 @@ exports[`Modal toggle aria-hidden to content outside dialog 2`] = `
       class="nk-layer"
     >
       <div>
-        <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="-1"
-        />
         <div
           data-focus-guard="true"
           style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"

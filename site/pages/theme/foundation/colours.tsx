@@ -27,7 +27,7 @@ import {
 
 const themeColorRows = (
   type: string,
-  data: Record<string, string | JSX.Element>,
+  data: Record<string, string | React.ReactElement>,
   tokenTypes: string[],
 ) => {
   const tokens = getTokenType(newskitLightTheme.colors, type);

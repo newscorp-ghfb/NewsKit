@@ -21,7 +21,7 @@ const MockMediaQueryProvider = ({
   children,
 }: {
   mq?: BreakpointKeys;
-  children: React.ReactElement;
+  children: React.ReactElement<any>;
 }) => {
   const state = {
     xs: false,
@@ -162,7 +162,7 @@ describe('MediaQueryProvider', () => {
     matchMedia.clear();
   });
 
-  const Component = ({children}: {children: React.ReactElement}) => (
+  const Component = ({children}: {children: React.ReactElement<any>}) => (
     <MediaQueryProvider>{children}</MediaQueryProvider>
   );
 

@@ -2,6 +2,12 @@ const path = require('path');
 const toPath = _path => path.join(process.cwd(), _path);
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
+
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
+
   addons: [
     '@storybook/addon-links',
     {
@@ -28,7 +34,6 @@ module.exports = {
         },
       },
     },
-    'storybook-addon-performance/register',
     './addons/tealium/preset.js',
     {
       name: '@storybook/addon-docs',
@@ -41,12 +46,50 @@ module.exports = {
     },
     '@storybook/addon-a11y',
   ],
+
   // https://github.com/storybookjs/storybook/issues/13277
   // Remove Emotion aliases once the issue above is resolved
   webpackFinal: async config => {
     // These dependencies are not transpiled so they do not work on IE11
     // that's why we need to exclude them  (include in transpilation)
     config.module.rules[0].exclude = /node_modules\/(?!(yup|react-hook-form|goober)\/).*/;
+    
+    // Add Babel loader for TypeScript/JSX files using existing .babelrc config
+    config.module.rules.push({
+      test: /\.(js|jsx|ts|tsx)$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          // Use only Storybook-specific Babel config, ignore external configs
+          babelrc: false,
+          configFile: false,
+          presets: [
+            [
+              '@babel/preset-env',
+              {
+                targets: {
+                  browsers: ['last 2 versions', 'ie >= 11'],
+                },
+                useBuiltIns: 'entry',
+                corejs: 3,
+                loose: true,
+              },
+            ],
+            ['@babel/preset-react', { runtime: 'automatic' }],
+            ['@babel/preset-typescript', { 
+              isTSX: true, 
+              allExtensions: true 
+            }]
+          ],
+          plugins: [
+            ['@babel/plugin-transform-class-properties', { loose: true }],
+            ['@babel/plugin-transform-private-methods', { loose: true }],
+            ['@babel/plugin-transform-private-property-in-object', { loose: true }],
+          ],
+        },
+      },
+    });
     return {
       ...config,
       module: {
@@ -65,17 +108,24 @@ module.exports = {
       },
     };
   },
+
   typescript: {
     reactDocgen: false, // added to negate https://github.com/styleguidist/react-docgen-typescript/issues/356
   },
 
   staticDirs: ['../fonts', '../static'],
+
   // we need the stories.json file to be generated so that we can check that all
   // Storybook urls in the doc site build are valid
   features: {
     buildStoriesJson: true,
   },
+
   core: {
     builder: 'webpack5',
   },
+
+  docs: {
+    autodocs: true
+  }
 };

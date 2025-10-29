@@ -90,12 +90,12 @@ export function MediaQueryProvider({children}: {children: React.ReactNode}) {
   );
 }
 
-export const withMediaQueryProvider = <P extends {}>(
+export const withMediaQueryProvider = <P extends Record<string, unknown>>(
   BaseComponent: React.ComponentType<P>,
 ) => {
   const WrappedComponent = React.forwardRef<unknown, P>((props, ref) => (
     <MediaQueryProvider>
-      <BaseComponent ref={ref} {...props} />
+      <BaseComponent {...(props as P)} ref={ref} />
     </MediaQueryProvider>
   ));
 

@@ -33,7 +33,7 @@ const ThemelessStructuredList: React.FC<StructuredListProps> = ({
   return (
     <StyledListWrapper overrides={overrides} aria-label={ariaLabel} {...props}>
       {structuredListChildren.reduce(
-        (acc: React.ReactElement[], listItem, index, array) => {
+        (acc: React.ReactElement<any>[], listItem, index, array) => {
           acc.push(listItem);
           if (divider && index < array.length - 1) {
             acc.push(

@@ -112,8 +112,9 @@ export const StyledButton = styled(Button)<
     )}
   ${({align}) =>
     align &&
-    menuItemFlexAlign[align] && {
-      justifyContent: menuItemFlexAlign[align],
+    menuItemFlexAlign[align as keyof typeof menuItemFlexAlign] && {
+      justifyContent:
+        menuItemFlexAlign[align as keyof typeof menuItemFlexAlign],
     }}
   text-align: ${({align}) => align && getTextAlign(align)};
 `;

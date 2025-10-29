@@ -24,7 +24,7 @@ const StyledBorderBox = styled.div<StyledBorderBoxProps>`
   ${({borderStyle}) => borderStyle && `border-style: ${borderStyle};`}
 `;
 
-function BorderPreview({name, border}: BorderPreviewProps): JSX.Element {
+function BorderPreview({name, border}: BorderPreviewProps): React.ReactElement {
   return (
     <LegacyBlock width="250px" margin="sizing070">
       <LegacyBlock font="utilityBody030">
@@ -35,7 +35,7 @@ function BorderPreview({name, border}: BorderPreviewProps): JSX.Element {
   );
 }
 
-function Borders(): JSX.Element {
+function Borders(): React.ReactElement {
   const borders = {
     border100: newskitLightTheme.borders.borderWidth010,
     border200: newskitLightTheme.borders.borderWidth020,

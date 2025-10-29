@@ -1,5 +1,5 @@
 import React from 'react';
-import {Story as StoryType} from '@storybook/react';
+import {StoryFn as StoryType} from '@storybook/react';
 import {newskitLightTheme, ThemeProvider} from '../theme';
 import {Welcome as WelcomeComponent} from './welcome';
 
@@ -25,7 +25,7 @@ export default {
   decorators: [
     (Story: StoryType) => (
       <ThemeProvider theme={newskitLightTheme}>
-        <Story />
+        {React.createElement(Story as React.ComponentType)}
       </ThemeProvider>
     ),
   ],

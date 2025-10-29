@@ -3,6 +3,16 @@ import 'cross-fetch/polyfill';
 import blobToBuffer from 'blob-to-buffer';
 import {create, Font as FontKitFont} from 'fontkit';
 
+// Helper function to extract a Font from Font | FontCollection
+const extractFont = (fontOrCollection: FontKitFont | any): FontKitFont => {
+  // If it's a collection, get the first font
+  if (fontOrCollection && typeof fontOrCollection.getFont === 'function') {
+    return fontOrCollection.getFont(0);
+  }
+  // Otherwise, it's already a Font
+  return fontOrCollection;
+};
+
 // Ref: https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_other_languages
 const weightings = {
   a: 0.0668,
@@ -93,7 +103,7 @@ export const fromBlob = async (blob: Blob): Promise<Font> =>
       }
 
       try {
-        resolve(unpackMetricsFromFont(create(buffer)));
+        resolve(unpackMetricsFromFont(extractFont(create(buffer))));
       } catch (e) {
         reject(e);
       }
@@ -106,7 +116,7 @@ export const fromUrl = async (url: string): Promise<Font> => {
   if (typeof window === 'undefined') {
     const data = await response.arrayBuffer();
 
-    return unpackMetricsFromFont(create(Buffer.from(data)));
+    return unpackMetricsFromFont(extractFont(create(Buffer.from(data))));
   }
 
   const blob = await response.blob();

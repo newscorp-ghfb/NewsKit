@@ -58,12 +58,15 @@ export const StyledPointer = styled.div<
   ${({placement, $x, $y, path}) =>
     getResponsiveSize(
       size => {
-        const staticSide: string = {
+        const staticSides: Record<string, string> = {
           top: 'bottom',
           right: 'left',
           bottom: 'top',
           left: 'right',
-        }[placement.split('-')[0]]!;
+        };
+        const staticSide: string =
+          staticSides[placement.split('-')[0]] ||
+          /* istanbul ignore next */ 'bottom';
         return {
           width: size,
           height: size,

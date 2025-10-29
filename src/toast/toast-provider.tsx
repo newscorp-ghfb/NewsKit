@@ -1,4 +1,5 @@
 import hotToast, {useToaster} from 'react-hot-toast';
+import {Toast} from 'react-hot-toast/dist/core/types';
 import React, {useEffect, useRef} from 'react';
 
 import {
@@ -97,7 +98,7 @@ export const toast = (
     duration: toastOptions?.autoHideDuration,
   };
 
-  return hotToast(e => {
+  return hotToast((e: Toast) => {
     const onClose = () => hotToast.dismiss(e.id);
 
     if (typeof component === 'function') {

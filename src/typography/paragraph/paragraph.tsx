@@ -1,5 +1,4 @@
 import React from 'react';
-import {isFragment} from 'react-is';
 import {
   styled,
   getTypographyPreset,
@@ -49,31 +48,54 @@ export const ParagraphDropCap = withOwnTheme(ThemelessParagraphDropCap)({
   defaults,
 });
 
-const getFirstLetter = (
-  children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
-): string => {
+export const getFirstLetter = (children: React.ReactNode[]): string => {
   const [firstChild] = children;
   if (typeof firstChild === 'string') {
     return firstChild.charAt(0);
   }
-  if (isFragment(firstChild)) {
-    return getFirstLetter(React.Children.toArray(firstChild.props.children));
+  if (
+    firstChild &&
+    React.isValidElement(firstChild) &&
+    firstChild.type === React.Fragment &&
+    firstChild.props
+  ) {
+    const element = firstChild as React.ReactElement<{
+      children: React.ReactNode;
+    }>;
+    return getFirstLetter(React.Children.toArray(element.props.children));
   }
   return '';
 };
 
-const removeFirstLetter = (
-  children: (React.ReactChild | React.ReactFragment | React.ReactPortal)[],
-): (React.ReactChild | React.ReactFragment | React.ReactPortal)[] => {
+export const removeFirstLetter = (
+  children: React.ReactNode[],
+): React.ReactNode => {
   const [firstChild, ...rest] = children;
   if (typeof firstChild === 'string') {
     return [firstChild.substring(1), ...rest];
   }
-  if (isFragment(firstChild)) {
-    return [
-      removeFirstLetter(React.Children.toArray(firstChild.props.children)),
-      ...rest,
-    ];
+  if (
+    firstChild &&
+    React.isValidElement(firstChild) &&
+    firstChild.type === React.Fragment &&
+    firstChild.props
+  ) {
+    const element = firstChild as React.ReactElement<{
+      children: React.ReactNode;
+    }>;
+
+    const fragmentChildren = element.props.children;
+
+    let childrenArray: React.ReactNode[];
+    if (fragmentChildren == null) {
+      childrenArray = [];
+    } else if (Array.isArray(fragmentChildren)) {
+      childrenArray = fragmentChildren;
+    } else {
+      childrenArray = [fragmentChildren];
+    }
+
+    return [removeFirstLetter(childrenArray), ...rest];
   }
 
   /* istanbul ignore next */

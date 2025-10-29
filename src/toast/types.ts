@@ -22,7 +22,7 @@ export type ToastProviderProps = {
 
 export type ToastOptions = Pick<ToastProviderProps, 'autoHideDuration'>;
 
-export type Renderable = JSX.Element | string | number | null;
+export type Renderable = React.ReactElement | string | number | null;
 
 export type ToastAsFunction = (props: {
   onClose: Function;

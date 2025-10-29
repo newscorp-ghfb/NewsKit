@@ -168,16 +168,22 @@ exports[`StructuredList with href renders one cell with disabled link and hidden
 @media screen {
   .emotion-5 {
     padding: 0 8px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -webkit-flex-basis: calc(100% + 16px);
+    -ms-flex-preferred-size: calc(100% + 16px);
+    flex-basis: calc(100% + 16px);
+    max-width: calc(100% + 16px);
+    margin-left: -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
     padding: 0 12px;
+    -webkit-flex-basis: calc(100% + 24px);
+    -ms-flex-preferred-size: calc(100% + 24px);
+    flex-basis: calc(100% + 24px);
+    max-width: calc(100% + 24px);
+    margin-left: -12px;
   }
 }
 
@@ -417,16 +423,22 @@ exports[`StructuredList with href renders one cell with external link and hidden
 @media screen {
   .emotion-5 {
     padding: 0 8px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -webkit-flex-basis: calc(100% + 16px);
+    -ms-flex-preferred-size: calc(100% + 16px);
+    flex-basis: calc(100% + 16px);
+    max-width: calc(100% + 16px);
+    margin-left: -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
     padding: 0 12px;
+    -webkit-flex-basis: calc(100% + 24px);
+    -ms-flex-preferred-size: calc(100% + 24px);
+    flex-basis: calc(100% + 24px);
+    max-width: calc(100% + 24px);
+    margin-left: -12px;
   }
 }
 
@@ -1078,16 +1090,22 @@ exports[`StructuredList with href renders one cell with internal link and hidden
 @media screen {
   .emotion-5 {
     padding: 0 8px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -webkit-flex-basis: calc(100% + 16px);
+    -ms-flex-preferred-size: calc(100% + 16px);
+    flex-basis: calc(100% + 16px);
+    max-width: calc(100% + 16px);
+    margin-left: -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-5 {
     padding: 0 12px;
+    -webkit-flex-basis: calc(100% + 24px);
+    -ms-flex-preferred-size: calc(100% + 24px);
+    flex-basis: calc(100% + 24px);
+    max-width: calc(100% + 24px);
+    margin-left: -12px;
   }
 }
 
@@ -6413,16 +6431,22 @@ exports[`StructuredList without-href renders with logical prop overrides 1`] = `
 @media screen {
   .emotion-4 {
     padding: 0 8px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -webkit-flex-basis: calc(100% + 16px);
+    -ms-flex-preferred-size: calc(100% + 16px);
+    flex-basis: calc(100% + 16px);
+    max-width: calc(100% + 16px);
+    margin-left: -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
     padding: 0 12px;
+    -webkit-flex-basis: calc(100% + 24px);
+    -ms-flex-preferred-size: calc(100% + 24px);
+    flex-basis: calc(100% + 24px);
+    max-width: calc(100% + 24px);
+    margin-left: -12px;
   }
 }
 
@@ -6624,16 +6648,22 @@ exports[`StructuredList without-href renders with one cell default 1`] = `
 @media screen {
   .emotion-4 {
     padding: 0 8px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -webkit-flex-basis: calc(100% + 16px);
+    -ms-flex-preferred-size: calc(100% + 16px);
+    flex-basis: calc(100% + 16px);
+    max-width: calc(100% + 16px);
+    margin-left: -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
     padding: 0 12px;
+    -webkit-flex-basis: calc(100% + 24px);
+    -ms-flex-preferred-size: calc(100% + 24px);
+    flex-basis: calc(100% + 24px);
+    max-width: calc(100% + 24px);
+    margin-left: -12px;
   }
 }
 
@@ -7567,16 +7597,22 @@ exports[`StructuredList without-href renders with texts only and no cells 1`] = 
 @media screen {
   .emotion-4 {
     padding: 0 8px;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+    -webkit-flex-basis: calc(100% + 16px);
+    -ms-flex-preferred-size: calc(100% + 16px);
+    flex-basis: calc(100% + 16px);
+    max-width: calc(100% + 16px);
+    margin-left: -8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .emotion-4 {
     padding: 0 12px;
+    -webkit-flex-basis: calc(100% + 24px);
+    -ms-flex-preferred-size: calc(100% + 24px);
+    flex-basis: calc(100% + 24px);
+    max-width: calc(100% + 24px);
+    margin-left: -12px;
   }
 }
 

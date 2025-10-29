@@ -1,5 +1,4 @@
 import React from 'react';
-import {isFragment} from 'react-is';
 import {TextBlock, TextBlockProps} from 'newskit';
 import {childIsString} from '../../../src/utils/react-children-utilities';
 import {getDisplayName} from '../../../src/utils/component';
@@ -100,8 +99,13 @@ export const UnpackContent = ({
     return <TextBlock {...textBlockProps}>{children}</TextBlock>;
   }
 
-  if (firstChild && isFragment(firstChild)) {
-    return <>{fragmentToOutput(firstChild.props.children, textBlockProps)}</>;
+  if (
+    firstChild &&
+    React.isValidElement(firstChild) &&
+    firstChild.type === React.Fragment
+  ) {
+    const fragmentProps = firstChild.props as {children: React.ReactNode};
+    return <>{fragmentToOutput(fragmentProps.children, textBlockProps)}</>;
   }
 
   // There are cases in which children is undefined and nextjs complains, so we return null;

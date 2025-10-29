@@ -4,6 +4,7 @@ exports[`withDefaultProps will return a component with merged props taking a fun
 <DocumentFragment>
   <div>
     {
+  "ref": null,
   "overrides": {
     "stylePreset": "linkStandalone",
     "typographyPreset": "utilityLabel020"
@@ -19,6 +20,7 @@ exports[`withDefaultProps will return a component with merged props taking an ob
 <DocumentFragment>
   <div>
     {
+  "ref": null,
   "overrides": {
     "stylePreset": "linkStandalone",
     "typographyPreset": "utilityLabel020"
@@ -33,6 +35,7 @@ exports[`withDefaultProps will return a component with merged props taking undef
 <DocumentFragment>
   <div>
     {
+  "ref": null,
   "overrides": {
     "stylePreset": "linkStandalone",
     "typographyPreset": "utilityLabel020"

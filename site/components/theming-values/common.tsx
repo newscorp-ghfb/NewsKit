@@ -6,7 +6,9 @@ type Props = {
   children: string;
 };
 
-export const Header = ({children}: Props): JSX.Element => <H2>{children}</H2>;
+export const Header = ({children}: Props): React.ReactElement => (
+  <H2>{children}</H2>
+);
 
 export const ExampleWrapper = styled.div`
   display: flex;

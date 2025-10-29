@@ -275,11 +275,11 @@ exports[`Accordion renders as a h4 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-10-content"
         aria-expanded="true"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-10-control"
       >
         <div
           class="emotion-3"
@@ -364,10 +364,10 @@ exports[`Accordion renders as a h4 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-10-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-10-content"
         role="region"
       >
         <p
@@ -656,11 +656,11 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-6-content"
         aria-expanded="false"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-6-control"
       >
         <div
           class="emotion-3"
@@ -745,10 +745,10 @@ exports[`Accordion renders with collapsed state and icon 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-6-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-6-content"
         role="region"
       >
         <p
@@ -1037,10 +1037,10 @@ exports[`Accordion renders with default props 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-3-content"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-3-control"
       >
         <div
           class="emotion-3"
@@ -1125,10 +1125,10 @@ exports[`Accordion renders with default props 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-3-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-3-content"
         role="region"
       >
         <p
@@ -1385,11 +1385,11 @@ exports[`Accordion renders with disabled state 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-7-content"
         class="emotion-2"
         data-testid="accordion-control"
         disabled=""
-        id="mock-nk-1-control"
+        id="mock-nk-7-control"
       >
         <div
           class="emotion-3"
@@ -1474,10 +1474,10 @@ exports[`Accordion renders with disabled state 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-7-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-7-content"
         role="region"
       >
         <p
@@ -1766,11 +1766,11 @@ exports[`Accordion renders with expanded state and icon 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-5-content"
         aria-expanded="true"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-5-control"
       >
         <div
           class="emotion-3"
@@ -1855,10 +1855,10 @@ exports[`Accordion renders with expanded state and icon 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-5-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-5-content"
         role="region"
       >
         <p
@@ -2147,11 +2147,11 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-14-content"
         aria-expanded="true"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-14-control"
       >
         <div
           class="emotion-3"
@@ -2232,10 +2232,10 @@ exports[`Accordion renders with indicatorIcon component overrides 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-14-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-14-content"
         role="region"
       >
         <p
@@ -2543,11 +2543,11 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-15-content"
         aria-expanded="true"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-15-control"
       >
         <div
           class="emotion-3"
@@ -2632,10 +2632,10 @@ exports[`Accordion renders with indicatorIcon prop overrides 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-15-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-15-content"
         role="region"
       >
         <p
@@ -2879,10 +2879,10 @@ exports[`Accordion renders with no header 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-9-content"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-9-control"
       >
         <div
           class="emotion-3"
@@ -2920,10 +2920,10 @@ exports[`Accordion renders with no header 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-9-control"
         class="emotion-9"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-9-content"
         role="region"
       >
         <p
@@ -3204,10 +3204,10 @@ exports[`Accordion renders with no label 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-8-content"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-8-control"
       >
         <div
           class="emotion-3"
@@ -3287,10 +3287,10 @@ exports[`Accordion renders with no label 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-8-control"
         class="emotion-11"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-8-content"
         role="region"
       >
         <p
@@ -3650,11 +3650,11 @@ exports[`Accordion renders with style overrides 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-13-content"
         aria-expanded="true"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-13-control"
       >
         <div
           class="emotion-3"
@@ -3739,10 +3739,10 @@ exports[`Accordion renders with style overrides 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-13-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-13-content"
         role="region"
       >
         <p
@@ -3986,10 +3986,10 @@ exports[`Accordion renders without leading icon 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-4-content"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-4-control"
       >
         <div
           class="emotion-3"
@@ -4029,10 +4029,10 @@ exports[`Accordion renders without leading icon 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-4-control"
         class="emotion-9"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-4-content"
         role="region"
       >
         <p
@@ -4708,11 +4708,11 @@ exports[`Accordion should render with logical props overrides 1`] = `
       class="emotion-1"
     >
       <button
-        aria-controls="mock-nk-1-content"
+        aria-controls="mock-nk-17-content"
         aria-expanded="true"
         class="emotion-2"
         data-testid="accordion-control"
-        id="mock-nk-1-control"
+        id="mock-nk-17-control"
       >
         <div
           class="emotion-3"
@@ -4797,10 +4797,10 @@ exports[`Accordion should render with logical props overrides 1`] = `
       style="max-height: 0px;"
     >
       <div
-        aria-labelledby="mock-nk-1-control"
+        aria-labelledby="mock-nk-17-control"
         class="emotion-12"
         data-testid="accordion-content"
-        id="mock-nk-1-content"
+        id="mock-nk-17-content"
         role="region"
       >
         <p
@@ -5037,11 +5037,11 @@ exports[`AccordionGroup different type of children 1`] = `
         class="emotion-1"
       >
         <button
-          aria-controls="mock-nk-1-content"
+          aria-controls="mock-nk-36-content"
           aria-expanded="true"
           class="emotion-2"
           data-testid="accordion-control"
-          id="mock-nk-1-control"
+          id="mock-nk-36-control"
         >
           <div
             class="emotion-3"
@@ -5076,10 +5076,10 @@ exports[`AccordionGroup different type of children 1`] = `
         style="max-height: 0px;"
       >
         <div
-          aria-labelledby="mock-nk-1-control"
+          aria-labelledby="mock-nk-36-control"
           class="emotion-8"
           data-testid="accordion-content"
-          id="mock-nk-1-content"
+          id="mock-nk-36-content"
           role="region"
         >
           Content 1
@@ -5093,11 +5093,11 @@ exports[`AccordionGroup different type of children 1`] = `
         class="emotion-1"
       >
         <button
-          aria-controls="mock-nk-1-content"
+          aria-controls="mock-nk-37-content"
           aria-expanded="true"
           class="emotion-2"
           data-testid="accordion-control"
-          id="mock-nk-1-control"
+          id="mock-nk-37-control"
         >
           <div
             class="emotion-3"
@@ -5132,10 +5132,10 @@ exports[`AccordionGroup different type of children 1`] = `
         style="max-height: 0px;"
       >
         <div
-          aria-labelledby="mock-nk-1-control"
+          aria-labelledby="mock-nk-37-control"
           class="emotion-8"
           data-testid="accordion-content"
-          id="mock-nk-1-content"
+          id="mock-nk-37-content"
           role="region"
         >
           Content 2

@@ -1,6 +1,5 @@
 import React from 'react';
 import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
-import {withPerformance} from 'storybook-addon-performance';
 import {DocsContext} from '@storybook/addon-docs';
 import {
   NewsKitProvider,
@@ -133,5 +132,4 @@ export const decorators = [
       </NewsKitProvider>
     );
   },
-  withPerformance,
 ];

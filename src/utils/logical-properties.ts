@@ -160,19 +160,34 @@ const logicalPropsArray = [
 ];
 
 export const omitLogicalPropsFromOverrides = (overrides: object | undefined) =>
-  rejectObject(overrides || {}, logicalPropsArray as keyof object);
+  rejectObject(
+    (overrides || {}) as Record<string, unknown>,
+    logicalPropsArray as keyof object,
+  );
 
 export const omitLogicalMarginPropsFromOverrides = (
   overrides: object | undefined,
-) => rejectObject(overrides || {}, logicalMarginPropsArray as keyof object);
+) =>
+  rejectObject(
+    (overrides || {}) as Record<string, unknown>,
+    logicalMarginPropsArray as keyof object,
+  );
 
 export const omitLogicalPaddingPropsFromOverrides = (
   overrides: object | undefined,
-) => rejectObject(overrides || {}, logicalPaddingPropsArray as keyof object);
+) =>
+  rejectObject(
+    (overrides || {}) as Record<string, unknown>,
+    logicalPaddingPropsArray as keyof object,
+  );
 
 export const extractLogicalPropsFromOverrides = (
   overrides: object | undefined,
-) => filterObject(overrides || {}, logicalPropsArray as keyof object);
+) =>
+  filterObject(
+    (overrides || {}) as Record<string, unknown>,
+    logicalPropsArray as keyof object,
+  );
 
 // TypographyPreset and spacing logical props can both set padding. This is a
 // helper function that takes the TypographyPreset padding value unless there is

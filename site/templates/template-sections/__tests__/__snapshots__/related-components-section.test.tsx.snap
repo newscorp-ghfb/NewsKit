@@ -168,6 +168,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
         <div
           data-comp="NewsKit Cell"
           data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 8,
   \\"lg\\": 10,
@@ -220,6 +221,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
         <div
           data-comp="NewsKit Cell"
           data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,
@@ -280,6 +282,7 @@ exports[`RelatedComponentsSection renders a RelatedComp with its data coming fro
 <div
     data-comp="NewsKit Cell"
     data-props="{
+  \\"ref\\": null,
   \\"xs\\": 12,
   \\"md\\": 10,
   \\"xl\\": 8,

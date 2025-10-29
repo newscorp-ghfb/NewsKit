@@ -78,7 +78,7 @@ export const ColorFoundations = ({
   isOverlay,
 }: {
   isOverlay: boolean;
-}): JSX.Element => {
+}): React.ReactElement => {
   const theme = useTheme();
   const colorFoundations = Object.entries(theme.colors).reduce(
     (acc, [key, value]) => {

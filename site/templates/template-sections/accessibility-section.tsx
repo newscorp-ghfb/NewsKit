@@ -27,19 +27,19 @@ interface A11ySubSection<RowType> {
 export interface AccessibilityTablesProps {
   focusOrder?: A11ySubSection<{
     order: string | number;
-    element: string | JSX.Element;
+    element: string | React.ReactElement;
     role?: string;
   }>;
   aria?: A11ySubSection<{
     element: string;
     attribute: string | string[];
-    value: string | string[] | JSX.Element;
-    description: string | JSX.Element;
+    value: string | string[] | React.ReactElement;
+    description: string | React.ReactElement;
     userSupplied?: true;
   }>;
   interaction?: A11ySubSection<{
     command: string[];
-    description: string | JSX.Element;
+    description: string | React.ReactElement;
   }>;
   infoNoticeFocus?: React.ReactNode | React.ReactNode[];
   infoNoticeAria?: React.ReactNode | React.ReactNode[];

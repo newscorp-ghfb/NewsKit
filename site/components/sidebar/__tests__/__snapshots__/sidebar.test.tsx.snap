@@ -815,13 +815,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-60"
                       >
                         Design
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-60"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -849,13 +849,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-61"
                       >
                         Code
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-61"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -963,13 +963,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-62"
                       >
                         Accessibility
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-62"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -1120,13 +1120,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-63"
                       >
                         Foundations
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-63"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -1362,13 +1362,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-64"
                       >
                         Presets
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-64"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -1428,13 +1428,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-65"
                       >
                         Creating and using themes
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-65"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -1569,13 +1569,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-66"
                       >
                         Actions & Inputs
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-66"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -1731,13 +1731,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-67"
                       >
                         Feedback & Status
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-67"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -1861,13 +1861,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-68"
                       >
                         Layout
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-68"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2103,13 +2103,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-69"
                       >
                         Media
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-69"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2185,13 +2185,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-70"
                       >
                         Navigation
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-70"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2347,13 +2347,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-71"
                       >
                         Text
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-71"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2493,13 +2493,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-72"
                       >
                         Community
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-72"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2543,13 +2543,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-73"
                       >
                         Third Party Integrations
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-73"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2625,13 +2625,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-74"
                       >
                         Utilities
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-74"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2723,13 +2723,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-75"
                       >
                         Deprecated
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-75"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2864,13 +2864,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-76"
                       >
                         Solutions
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-76"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2914,13 +2914,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-77"
                       >
                         Onboarding
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-77"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -2980,13 +2980,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-78"
                       >
                         Forms
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-78"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -4362,11 +4362,6 @@ exports[`Sidebar renders correctly when closed 1`] = `
           tabindex="-1"
         />
         <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="-1"
-        />
-        <div
           data-focus-lock-disabled="disabled"
         >
           <div
@@ -4606,13 +4601,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-40"
                             >
                               Design
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-40"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -4641,13 +4636,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-41"
                             >
                               Code
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-41"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -4761,13 +4756,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-42"
                             >
                               Accessibility
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-42"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -4925,13 +4920,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-43"
                             >
                               Foundations
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-43"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -5181,13 +5176,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-44"
                             >
                               Presets
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-44"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -5250,13 +5245,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-45"
                             >
                               Creating and using themes
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-45"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -5397,13 +5392,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-46"
                             >
                               Actions & Inputs
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-46"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -5568,13 +5563,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-47"
                             >
                               Feedback & Status
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-47"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -5705,13 +5700,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-48"
                             >
                               Layout
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-48"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -5961,13 +5956,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-49"
                             >
                               Media
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-49"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6047,13 +6042,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-50"
                             >
                               Navigation
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-50"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6218,13 +6213,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-51"
                             >
                               Text
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-51"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6372,13 +6367,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-52"
                             >
                               Community
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-52"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6424,13 +6419,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-53"
                             >
                               Third Party Integrations
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-53"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6510,13 +6505,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-54"
                             >
                               Utilities
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-54"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6613,13 +6608,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-55"
                             >
                               Deprecated
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-55"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6760,13 +6755,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-56"
                             >
                               Solutions
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-56"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6812,13 +6807,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-57"
                             >
                               Onboarding
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-57"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -6881,13 +6876,13 @@ exports[`Sidebar renders correctly when closed 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-58"
                             >
                               Forms
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-58"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -8051,13 +8046,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-21"
                       >
                         Design
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-21"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -8085,13 +8080,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-22"
                       >
                         Code
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-22"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -8199,13 +8194,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-23"
                       >
                         Accessibility
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-23"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -8356,13 +8351,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-24"
                       >
                         Foundations
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-24"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -8598,13 +8593,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-25"
                       >
                         Presets
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-25"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -8664,13 +8659,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-26"
                       >
                         Creating and using themes
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-26"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -8805,13 +8800,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-27"
                       >
                         Actions & Inputs
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-27"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -8967,13 +8962,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-28"
                       >
                         Feedback & Status
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-28"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -9097,13 +9092,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-29"
                       >
                         Layout
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-29"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -9339,13 +9334,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-30"
                       >
                         Media
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-30"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -9421,13 +9416,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-31"
                       >
                         Navigation
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-31"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -9583,13 +9578,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-32"
                       >
                         Text
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-32"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -9729,13 +9724,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-33"
                       >
                         Community
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-33"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -9779,13 +9774,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-34"
                       >
                         Third Party Integrations
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-34"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -9861,13 +9856,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-35"
                       >
                         Utilities
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-35"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -9959,13 +9954,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-36"
                       >
                         Deprecated
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-36"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -10100,13 +10095,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-37"
                       >
                         Solutions
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-37"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -10150,13 +10145,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-38"
                       >
                         Onboarding
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-38"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -10216,13 +10211,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                     >
                       <h2
                         class="emotion-41"
-                        id="mock-nk-1"
+                        id="mock-nk-39"
                       >
                         Forms
                       </h2>
                     </div>
                     <ul
-                      aria-labelledby="mock-nk-1"
+                      aria-labelledby="mock-nk-39"
                     >
                       <li
                         class="nk-menu-item emotion-12"
@@ -11599,11 +11594,6 @@ exports[`Sidebar renders correctly when open 1`] = `
           tabindex="0"
         />
         <div
-          data-focus-guard="true"
-          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"
-          tabindex="1"
-        />
-        <div
           data-focus-lock-disabled="false"
         >
           <div
@@ -11868,13 +11858,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-2"
                             >
                               Code
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-2"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -11982,13 +11972,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-3"
                             >
                               Accessibility
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-3"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -12139,13 +12129,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-4"
                             >
                               Foundations
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-4"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -12381,13 +12371,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-5"
                             >
                               Presets
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-5"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -12447,13 +12437,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-6"
                             >
                               Creating and using themes
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-6"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -12588,13 +12578,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-7"
                             >
                               Actions & Inputs
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-7"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -12750,13 +12740,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-8"
                             >
                               Feedback & Status
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-8"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -12880,13 +12870,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-9"
                             >
                               Layout
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-9"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13122,13 +13112,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-10"
                             >
                               Media
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-10"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13204,13 +13194,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-11"
                             >
                               Navigation
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-11"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13366,13 +13356,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-12"
                             >
                               Text
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-12"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13512,13 +13502,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-13"
                             >
                               Community
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-13"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13562,13 +13552,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-14"
                             >
                               Third Party Integrations
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-14"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13644,13 +13634,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-15"
                             >
                               Utilities
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-15"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13742,13 +13732,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-16"
                             >
                               Deprecated
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-16"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13883,13 +13873,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-17"
                             >
                               Solutions
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-17"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13933,13 +13923,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-18"
                             >
                               Onboarding
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-18"
                           >
                             <li
                               class="nk-menu-item emotion-10"
@@ -13999,13 +13989,13 @@ exports[`Sidebar renders correctly when open 1`] = `
                           >
                             <h2
                               class="emotion-39"
-                              id="mock-nk-1"
+                              id="mock-nk-19"
                             >
                               Forms
                             </h2>
                           </div>
                           <ul
-                            aria-labelledby="mock-nk-1"
+                            aria-labelledby="mock-nk-19"
                           >
                             <li
                               class="nk-menu-item emotion-10"

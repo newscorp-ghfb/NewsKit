@@ -17,7 +17,7 @@ exports[`SelectionList render should render SelectionList with a selected option
 
 <span
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-5"
   >
     Press down arrow key to navigate to the first item
   </span>
@@ -232,7 +232,7 @@ exports[`SelectionList render should render SelectionList with a selected option
 }
 
 <div
-    aria-describedby="mock-nk-1"
+    aria-describedby="mock-nk-5"
     class="emotion-0"
     role="menu"
   >
@@ -289,7 +289,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
 
 <span
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-2"
   >
     Press down arrow key to navigate to the first item
   </span>
@@ -390,7 +390,7 @@ exports[`SelectionList render should render SelectionList with logical props 1`]
 }
 
 <div
-    aria-describedby="mock-nk-1"
+    aria-describedby="mock-nk-2"
     class="emotion-0"
     role="menu"
   >
@@ -439,7 +439,7 @@ exports[`SelectionList render should render SelectionList with non-string option
 
 <span
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-7"
   >
     Press down arrow key to navigate to the first item
   </span>
@@ -654,7 +654,7 @@ exports[`SelectionList render should render SelectionList with non-string option
 }
 
 <div
-    aria-describedby="mock-nk-1"
+    aria-describedby="mock-nk-7"
     class="emotion-0"
     role="menu"
   >
@@ -713,7 +713,7 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
 
 <span
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-6"
   >
     Press down arrow key to navigate to the first item
   </span>
@@ -794,7 +794,7 @@ exports[`SelectionList render should render SelectionList with updated icon 1`] 
 }
 
 <div
-    aria-describedby="mock-nk-1"
+    aria-describedby="mock-nk-6"
     class="emotion-0"
     role="menu"
   >
@@ -843,7 +843,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
 
 <span
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-3"
   >
     Press down arrow key to navigate to the first item
   </span>
@@ -1062,7 +1062,7 @@ exports[`SelectionList render should render SelectionListOptions with logical pr
 }
 
 <div
-    aria-describedby="mock-nk-1"
+    aria-describedby="mock-nk-3"
     class="emotion-0"
     role="menu"
   >
@@ -1119,7 +1119,7 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
 
 <span
     class="emotion-0"
-    id="mock-nk-1"
+    id="mock-nk-4"
   >
     Press down arrow key to navigate to the first item
   </span>
@@ -1334,7 +1334,7 @@ exports[`SelectionList render should render SelectionListOptions with overrides 
 }
 
 <div
-    aria-describedby="mock-nk-1"
+    aria-describedby="mock-nk-4"
     class="emotion-0"
     role="menu"
   >

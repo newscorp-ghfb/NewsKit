@@ -28,7 +28,7 @@ const RANGE_DESCRIPTION: {[key: string]: string} = {
   xl: '1440>',
 };
 
-const USAGE_DESCRIPTION: {[key: string]: string | JSX.Element} = {
+const USAGE_DESCRIPTION: {[key: string]: string | React.ReactElement} = {
   xs: 'Portrait - small handset >  large handset',
   sm: (
     <>

@@ -93,7 +93,7 @@ export const Heading = ({
 }: {
   element: React.ElementType;
   fontType: string;
-  children?: React.ReactChild;
+  children?: React.ReactNode;
   weight?: number;
   size?: string;
   border?: boolean;

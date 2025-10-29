@@ -22,7 +22,7 @@ export interface AudioFunctionDependencies {
 
   showLoaderTimeoutRef: React.MutableRefObject<number>;
   trackPositionRef: React.MutableRefObject<number>;
-  audioRef: React.RefObject<HTMLAudioElement>;
+  audioRef: React.RefObject<HTMLAudioElement | null>;
 
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setTrackPosition: React.Dispatch<React.SetStateAction<number[]>>;

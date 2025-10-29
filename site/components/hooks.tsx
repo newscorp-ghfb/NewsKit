@@ -31,7 +31,7 @@ type TabIndexWhenScrollOptions = {
 };
 
 export const useTabIndexWhenScroll = (
-  ref: React.RefObject<HTMLElement>,
+  ref: React.RefObject<HTMLElement | null>,
   {firstChild}: TabIndexWhenScrollOptions = {},
 ) => {
   const [hasScroll, setHasScroll] = useState(false);

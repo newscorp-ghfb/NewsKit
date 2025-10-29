@@ -75,25 +75,28 @@ export const CodeExample: React.FC<CodeExampleProps> = ({
           <Code>{source}</Code>
         </LegacyBlock>
       )}
-      <CodeSandboxer
-        examplePath="/"
-        example={source}
-        name={componentName}
-        dependencies={peerDependenciesObject}
-        providedFiles={{'index.js': {content: index}}}
-        template="create-react-app"
-      >
-        {() => (
-          <LegacyBlock alignSelf="flex-end" padding="sizing060">
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <Button size="medium" data-testid="code-sandbox">
-                Edit on CodeSandbox
-              </Button>
-            </a>
-          </LegacyBlock>
-        )}
-      </CodeSandboxer>
+      {/* Temporarily disable CodeSandboxer due to React 19 compatibility issues */}
+      {false && (
+        <CodeSandboxer
+          examplePath="/"
+          example={source}
+          name={componentName}
+          dependencies={peerDependenciesObject}
+          providedFiles={{'index.js': {content: index}}}
+          template="create-react-app"
+        >
+          {() => (
+            <LegacyBlock alignSelf="flex-end" padding="sizing060">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a>
+                <Button size="medium" data-testid="code-sandbox">
+                  Edit on CodeSandbox
+                </Button>
+              </a>
+            </LegacyBlock>
+          )}
+        </CodeSandboxer>
+      )}
     </LegacyBlock>
   );
 };

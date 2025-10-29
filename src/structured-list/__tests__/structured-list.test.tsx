@@ -409,5 +409,29 @@ describe('StructuredList', () => {
         },
       });
     });
+
+    test('renders with falsy fullWidthSingleCell property', () => {
+      const testCases = [
+        <StructuredListCell fullWidthSingleCell={false}>
+          <TextBlock>Test with false</TextBlock>
+        </StructuredListCell>,
+
+        <StructuredListCell fullWidthSingleCell={('' as unknown) as boolean}>
+          <TextBlock>Test with empty string</TextBlock>
+        </StructuredListCell>,
+
+        <StructuredListCell fullWidthSingleCell={(null as unknown) as boolean}>
+          <TextBlock>Test with null</TextBlock>
+        </StructuredListCell>,
+      ];
+
+      testCases.forEach((testCase, index) => {
+        const props: StructuredListItemProps = {
+          children: [testCase],
+        };
+        const fragment = renderToFragmentWithTheme(renderDefault, props);
+        expect(fragment).toBeDefined();
+      });
+    });
   });
 });

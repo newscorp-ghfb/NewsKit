@@ -12,7 +12,7 @@ import {NewsKitProvider} from '../newskit-provider';
 import {RenderToFragmentFactory, RenderWithThemeFactory} from './types';
 
 export const renderToFragment: (
-  ui: React.ReactElement,
+  ui: React.ReactElement<any>,
   options?: RenderOptions,
 ) => DocumentFragment = (ui, options) => renderer(ui, options).asFragment();
 

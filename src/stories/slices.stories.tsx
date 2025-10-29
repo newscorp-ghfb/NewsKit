@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Story as StoryType} from '@storybook/react';
+import {StoryFn as StoryType} from '@storybook/react';
 import {
   Divider,
   GridLayout,
@@ -88,7 +88,7 @@ export default {
           context?.name,
         )}
       >
-        <Story />
+        {React.createElement(Story as React.ComponentType, {})}
       </ThemeProvider>
     ),
   ],

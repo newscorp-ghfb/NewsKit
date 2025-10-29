@@ -33,7 +33,7 @@ type FormEntryChildrenProps = {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   state?: FormInputState;
   ref: UseFormRegisterReturn['ref'];
-  refObject: React.RefObject<HTMLInputElement>;
+  refObject: React.RefObject<HTMLInputElement | null>;
   error?: string;
   hasContent: boolean;
 };
@@ -43,5 +43,5 @@ type FormValidationRules = Record<string, string | object>;
 export type FormEntryProps = {
   rules?: FormValidationRules;
   name?: string;
-  children: (props: FormEntryChildrenProps) => React.ReactElement;
+  children: (props: FormEntryChildrenProps) => React.ReactElement<any>;
 };

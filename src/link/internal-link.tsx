@@ -80,7 +80,7 @@ export const InternalLink = React.forwardRef<
     <StyledLink
       ref={ref}
       {...props}
-      onClick={(...args) => {
+      onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
         fireEvent({
           originator: eventOriginator,
           trigger: EventTrigger.Click,
@@ -90,7 +90,7 @@ export const InternalLink = React.forwardRef<
           },
         });
         if (props.onClick) {
-          props.onClick(...args);
+          props.onClick(event);
         }
       }}
     >

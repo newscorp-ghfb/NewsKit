@@ -274,12 +274,12 @@ exports[`TextInput renders correctly with label hidden 1`] = `
       class="emotion-1"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-3-assistive-text"
         aria-invalid="false"
         aria-label="label"
         class="emotion-2"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-3"
         spellcheck="false"
         type="text"
       />
@@ -289,7 +289,7 @@ exports[`TextInput renders correctly with label hidden 1`] = `
     >
       <p
         class="emotion-4"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-3-assistive-text"
       >
         Assistive Text
       </p>
@@ -406,7 +406,7 @@ exports[`TextInput renders correctly without asistive text 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-2"
     >
       label
     </label>
@@ -416,7 +416,7 @@ exports[`TextInput renders correctly without asistive text 1`] = `
       <input
         aria-invalid="false"
         class="emotion-3"
-        id="mock-nk-1"
+        id="mock-nk-2"
         spellcheck="true"
         type="text"
       />
@@ -542,7 +542,7 @@ exports[`TextInput renders disabled text input 1`] = `
     <label
       class="emotion-1"
       disabled=""
-      for="mock-nk-1"
+      for="mock-nk-6"
     >
       label
     </label>
@@ -550,12 +550,12 @@ exports[`TextInput renders disabled text input 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-6-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
         disabled=""
-        id="mock-nk-1"
+        id="mock-nk-6"
         spellcheck="false"
         type="text"
       />
@@ -566,7 +566,7 @@ exports[`TextInput renders disabled text input 1`] = `
       <p
         class="emotion-5"
         disabled=""
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-6-assistive-text"
       >
         Assistive Text
       </p>
@@ -710,7 +710,7 @@ exports[`TextInput renders large text input 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-5"
     >
       label
     </label>
@@ -718,11 +718,11 @@ exports[`TextInput renders large text input 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-5-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-5"
         spellcheck="false"
         type="text"
       />
@@ -732,7 +732,7 @@ exports[`TextInput renders large text input 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-5-assistive-text"
       >
         Assistive Text
       </p>
@@ -876,7 +876,7 @@ exports[`TextInput renders readonly text input 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-7"
     >
       label
     </label>
@@ -884,11 +884,11 @@ exports[`TextInput renders readonly text input 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-7-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-7"
         readonly=""
         spellcheck="false"
         type="text"
@@ -899,7 +899,7 @@ exports[`TextInput renders readonly text input 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-7-assistive-text"
       >
         Assistive Text
       </p>
@@ -1043,7 +1043,7 @@ exports[`TextInput renders small text input 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-4"
     >
       label
     </label>
@@ -1051,11 +1051,11 @@ exports[`TextInput renders small text input 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-4-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-4"
         spellcheck="false"
         type="text"
       />
@@ -1065,7 +1065,7 @@ exports[`TextInput renders small text input 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-4-assistive-text"
       >
         Assistive Text
       </p>
@@ -1277,7 +1277,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-17"
     >
       label
     </label>
@@ -1305,11 +1305,11 @@ exports[`TextInput renders text input with leading icon 1`] = `
         </svg>
       </span>
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-17-assistive-text"
         aria-invalid="false"
         class="emotion-6"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-17"
         spellcheck="false"
         type="text"
       />
@@ -1319,7 +1319,7 @@ exports[`TextInput renders text input with leading icon 1`] = `
     >
       <p
         class="emotion-8"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-17-assistive-text"
       >
         Assistive Text
       </p>
@@ -1419,7 +1419,7 @@ exports[`TextInput renders text input with overrides 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-13"
     >
       label
     </label>
@@ -1427,11 +1427,11 @@ exports[`TextInput renders text input with overrides 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-13-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-13"
         spellcheck="false"
         type="text"
       />
@@ -1441,7 +1441,7 @@ exports[`TextInput renders text input with overrides 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-13-assistive-text"
       >
         Assistive Text
       </p>
@@ -1653,7 +1653,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-18"
     >
       label
     </label>
@@ -1681,11 +1681,11 @@ exports[`TextInput renders text input with overrides for leading and validation 
         </svg>
       </span>
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-18-assistive-text"
         aria-invalid="false"
         class="emotion-6"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-18"
         spellcheck="false"
         type="text"
       />
@@ -1695,7 +1695,7 @@ exports[`TextInput renders text input with overrides for leading and validation 
     >
       <p
         class="emotion-8"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-18-assistive-text"
       >
         Assistive Text
       </p>
@@ -1839,7 +1839,7 @@ exports[`TextInput renders with different minHeight 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-8"
     >
       label
     </label>
@@ -1847,11 +1847,11 @@ exports[`TextInput renders with different minHeight 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-8-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-8"
         spellcheck="false"
         type="text"
       />
@@ -1861,7 +1861,7 @@ exports[`TextInput renders with different minHeight 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-8-assistive-text"
       >
         Assistive Text
       </p>
@@ -2009,7 +2009,7 @@ exports[`TextInput renders with fixed width 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-9"
     >
       label
     </label>
@@ -2017,11 +2017,11 @@ exports[`TextInput renders with fixed width 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-9-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-9"
         spellcheck="false"
         type="text"
       />
@@ -2031,7 +2031,7 @@ exports[`TextInput renders with fixed width 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-9-assistive-text"
       >
         Assistive Text
       </p>
@@ -2179,7 +2179,7 @@ exports[`TextInput renders with full width 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-10"
     >
       label
     </label>
@@ -2187,11 +2187,11 @@ exports[`TextInput renders with full width 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-10-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-10"
         spellcheck="false"
         type="text"
       />
@@ -2201,7 +2201,7 @@ exports[`TextInput renders with full width 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-10-assistive-text"
       >
         Assistive Text
       </p>
@@ -2345,7 +2345,7 @@ exports[`TextInput should render custom aria-label 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-11"
     >
       label
     </label>
@@ -2353,12 +2353,12 @@ exports[`TextInput should render custom aria-label 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-11-assistive-text"
         aria-invalid="false"
         aria-label="my custom aria label"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-11"
         spellcheck="false"
         type="text"
       />
@@ -2368,7 +2368,7 @@ exports[`TextInput should render custom aria-label 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-11-assistive-text"
       >
         Assistive Text
       </p>
@@ -2512,7 +2512,7 @@ exports[`TextInput should render custom placeholder 1`] = `
   >
     <label
       class="emotion-1"
-      for="mock-nk-1"
+      for="mock-nk-12"
     >
       label
     </label>
@@ -2520,11 +2520,11 @@ exports[`TextInput should render custom placeholder 1`] = `
       class="emotion-2"
     >
       <input
-        aria-describedby="mock-nk-1-assistive-text"
+        aria-describedby="mock-nk-12-assistive-text"
         aria-invalid="false"
         class="emotion-3"
         data-testid="text-input-email"
-        id="mock-nk-1"
+        id="mock-nk-12"
         placeholder="This is some text"
         spellcheck="false"
         type="text"
@@ -2535,7 +2535,7 @@ exports[`TextInput should render custom placeholder 1`] = `
     >
       <p
         class="emotion-5"
-        id="mock-nk-1-assistive-text"
+        id="mock-nk-12-assistive-text"
       >
         Assistive Text
       </p>

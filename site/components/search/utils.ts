@@ -1,4 +1,4 @@
-import {DocSearchHit} from '@docsearch/react/dist/esm/types';
+import {DocSearchHit} from '@docsearch/react';
 import {DocSearchHitExtended} from './types';
 
 export const ignoreFilter = (item: DocSearchHit): boolean => {

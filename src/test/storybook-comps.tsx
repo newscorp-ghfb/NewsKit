@@ -1,13 +1,12 @@
 import React from 'react';
 import {sanitize} from 'isomorphic-dompurify';
 import {
-  DocsStoryProps,
   DocsContextProps,
   Description,
   Anchor,
   Canvas,
   Story,
-} from '@storybook/addon-docs';
+} from '@storybook/addon-docs/blocks';
 import {GridLayout} from '../grid-layout';
 import {TextBlock} from '../text-block';
 import {Block} from '../block';
@@ -18,8 +17,17 @@ import {TitleBar} from '../title-bar';
 import {Divider} from '../divider';
 import {GridLayoutProps} from '../grid-layout/types';
 
+// Custom interface to replace removed DocsStoryProps in Storybook v8
+interface DocsStoryProps {
+  id: string;
+  name?: string;
+  expanded?: boolean;
+  withToolbar?: boolean;
+  parameters?: Record<string, any>;
+}
+
 interface StoriesProps {
-  title?: JSX.Element | string;
+  title?: React.ReactElement | string;
   includePrimary?: boolean;
   context: DocsContextProps;
 }
@@ -144,7 +152,8 @@ export const StorybookCase = ({
 );
 
 export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
-  const autoTitle = get(context, 'title').split('/').at(-1);
+  const autoTitle = get(context, 'primaryStory.title').split('/').at(-1);
+
   const title = get(context, 'parameters.nkDocs.title') || autoTitle;
   const description = get(context, 'parameters.nkDocs.description');
   const url = get(context, 'parameters.nkDocs.url');
@@ -188,6 +197,7 @@ export const StoryDocsHeader = ({context}: {context: DocsContextProps}) => {
 const StyledCanvas = styled(Canvas)`
   & > div > div {
     padding: 0;
+    min-height: 400px;
   }
 `;
 
@@ -222,11 +232,18 @@ export const DocsStory = ({
           {subheading}
         </TextBlock>
       )}
-      {description && <Description markdown={description} />}
+      {description && (
+        <TextBlock
+          typographyPreset="utilityBody020"
+          stylePreset="inkBase"
+          as="div"
+          dangerouslySetInnerHTML={{__html: sanitize(description)}}
+        />
+      )}
       {/* Have to ignore because the library typings are missing `children` prop. */}
       {/* @ts-ignore */}
       <StyledCanvas withToolbar={withToolbar}>
-        <Story id={id} parameters={parameters} />
+        <Story of={id} />
       </StyledCanvas>
     </Anchor>
   );
@@ -238,8 +255,8 @@ export const Stories = ({
   includePrimary = false,
 }: StoriesProps) => {
   const {componentStories} = context;
-  let stories: DocsStoryProps[] = componentStories().filter(
-    story => !story.parameters?.docs?.disable,
+  let stories: any[] = componentStories().filter(
+    (story: any) => !story.parameters?.docs?.disable,
   );
   if (!includePrimary) stories = stories.slice(1);
   if (!stories || stories.length === 0) return null;
@@ -255,7 +272,16 @@ export const Stories = ({
         {title}
       </TextBlock>
       {stories.map(
-        story => story && <DocsStory key={story.id} {...story} expanded />,
+        (story: any) =>
+          story && (
+            <DocsStory
+              key={story.id}
+              id={story.id}
+              name={story.name}
+              parameters={story.parameters}
+              expanded
+            />
+          ),
       )}
     </>
   );
