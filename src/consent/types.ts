@@ -52,7 +52,6 @@ export interface SourcePointConfigUnified {
     alwaysDisplayDNS?: boolean;
     groupPmId?: number;
     targetingParams?: object;
-    includeUspApi?: boolean;
   };
 }
 

@@ -38,8 +38,8 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
     for a full reference.
     <br/>
     <br/>
-    In order to add Sourcepoint script for GDPR or USNAT you must add at least an empty gdpr or usnat object (see below).
-    The 'usnat' object should contain 'includeUspApi' parameter set to 'true'. This enables the gpp string (part of the MSPS signal). Instructions and additional MSPS settings can be found in <a href="https://docs.sourcepoint.com/hc/en-us/articles/21455316499731#h_01HC0NYD93FV6MBBH6Y1NPCRMX" target="_blank">this Sourcepoint guide</a>. 
+    In order to add Sourcepoint script for GDPR or USNAT you must add at least an empty gdpr or usnat object.
+    Instructions and additional MSPS settings can be found in <a href="https://docs.sourcepoint.com/hc/en-us/articles/21455316499731#h_01HC0NYD93FV6MBBH6Y1NPCRMX" target="_blank">this Sourcepoint guide</a>. 
     <Prop name="accountId" type="number" required>
       The accountId value associates the property with your organization's
       Sourcepoint account. Your organization's accountId can be retrieved by
@@ -131,11 +131,6 @@ please see Sourcepoint [Unified Script or Web Implementation](https://docs.sourc
         <br/>
         <br/>
         targetingParams set within the gdpr object will override overall targetingParams
-      </Prop>
-      <Prop name="includeUspApi" type="boolean">
-        Including this flag as 'true' enables support for the existing (Legacy) USP string.&nbsp;
-        MSPS settings could be customized by passing configuration object to the includeGppApi as&nbsp;
-        <a href="https://docs.sourcepoint.com/hc/en-us/articles/21455316499731-GPP-Multi-State-Privacy-String-MSPS-Transition-readiness-web-and-app-" target="_blank">shown here</a>.
       </Prop>
     </Prop>
   </Prop>

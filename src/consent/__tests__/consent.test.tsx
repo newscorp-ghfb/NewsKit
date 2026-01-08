@@ -98,9 +98,7 @@ describe('Consent', () => {
               sourcePointConfigUnified={{
                 accountId: 259,
                 propertyHref: 'https://newskit.dev-news.co.uk',
-                usnat: {
-                  includeUspApi: true,
-                },
+                usnat: {},
               }}
               reactHelmet={helmet}
             />,
