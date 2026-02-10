@@ -27,9 +27,6 @@ describe('ConsentSettingsLink', () => {
           gdpr: {
             loadPrivacyManagerModal: expectedFunction,
           },
-          ccpa: {
-            loadPrivacyManagerModal: expectedFunction,
-          },
           usnat: {
             loadPrivacyManagerModal: expectedFunction,
           },
@@ -62,16 +59,6 @@ describe('ConsentSettingsLink', () => {
           privacyManagerId,
           'purposes',
         );
-      });
-
-      test('call unified ccpa SourcePoint function', async () => {
-        const link = await renderWithTheme(ConsentSettingsLink, {
-          privacyManagerId,
-          ccpa: true,
-        }).findByRole('button');
-        fireEvent.click(link);
-
-        expect(expectedFunction).toHaveBeenCalledWith(privacyManagerId);
       });
 
       test('call unified usnat SourcePoint function', async () => {

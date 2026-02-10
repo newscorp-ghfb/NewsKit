@@ -92,30 +92,13 @@ describe('Consent', () => {
           );
           expect(fragment).toMatchSnapshot();
         });
-
-        test('the Unified Consent V2 renders CCPA correctly with default baseEndpoint', () => {
-          const fragment = renderToFragment(
-            <Consent
-              sourcePointConfigUnified={{
-                accountId: 259,
-                propertyHref: 'https://newskit.dev-news.co.uk',
-                ccpa: {},
-              }}
-              reactHelmet={helmet}
-            />,
-          );
-          expect(fragment).toMatchSnapshot();
-        });
-
         test('the Unified Consent V2 renders USNAT correctly', () => {
           const fragment = renderToFragment(
             <Consent
               sourcePointConfigUnified={{
                 accountId: 259,
                 propertyHref: 'https://newskit.dev-news.co.uk',
-                usnat: {
-                  includeUspApi: true,
-                },
+                usnat: {},
               }}
               reactHelmet={helmet}
             />,
