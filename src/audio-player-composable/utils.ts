@@ -66,3 +66,25 @@ export const useButtonOverrides = (
     ...filterOutFalsyProperties(overrides),
   };
 };
+
+export const isSafari = (): boolean => {
+  const hasSafariSpecificAPI =
+    'safari' in window && 'pushNotification' in (window as any).safari;
+
+  if (hasSafariSpecificAPI) return true;
+
+  const ua = navigator.userAgent.toLowerCase();
+  const isDesktopSafari =
+    ua.includes('safari') &&
+    !ua.includes('chrome') &&
+    !ua.includes('chromium') &&
+    !ua.includes('crios') &&
+    !ua.includes('fxios') &&
+    !ua.includes('edgios');
+  const isIosSafari =
+    /iphone|ipad|ipod/.test(ua) &&
+    /safari/.test(ua) &&
+    !/crios|fxios|edgios/.test(ua);
+
+  return isDesktopSafari || isIosSafari;
+};
