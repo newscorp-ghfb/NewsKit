@@ -248,6 +248,7 @@ Array [
   "useClientSide",
   "useControlled",
   "useFormContext",
+  "useHlsStream",
   "useInstrumentation",
   "useIntersection",
   "useKeypress",
