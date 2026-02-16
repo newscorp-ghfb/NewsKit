@@ -164,8 +164,6 @@ export const useHlsStream = ({
     const {hls, handlePause, originalPlay, originalLoad} = setupHls(audio, src);
     hlsRef.current = hls;
 
-    console.log('HERE', hlsRef.current);
-
     return () => {
       audio.removeEventListener('pause', handlePause);
       audio.play = originalPlay;
