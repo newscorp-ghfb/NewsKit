@@ -78,6 +78,12 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   ),
 };
 
+const hlsAudioProps = {
+  src:
+    'https://hls-onic.dublin.live.stream.broadcasting.news/stream-innovation-hls/playlist.m3u8',
+  children: <AudioPlayerPlayPauseButton />,
+};
+
 const AudioPropsAndVolumeControlCollapsed: AudioPlayerComposableProps = {
   src: '/audio_file_1.mp3',
   initialVolume: 0.2,
@@ -319,6 +325,10 @@ jest.mock('react-range', () => {
     getTrackBackground: mockGetTrackBackground,
   };
 });
+
+jest.mock('../use-hls-stream', () => ({
+  useHlsStream: jest.fn(() => ({isHlsStream: false})),
+}));
 
 describe('Audio Player Composable', () => {
   const mediaElement = (window as any).HTMLMediaElement.prototype;
@@ -1505,6 +1515,34 @@ describe('Audio Player Composable', () => {
       fireEvent.pause(audioElement);
 
       expect(fireEventSpy).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe('HLS Streaming Support', () => {
+    it('should not set src attribute for HLS streams', () => {
+      const {useHlsStream} = require('../use-hls-stream');
+      (useHlsStream as jest.Mock).mockReturnValue({isHlsStream: true});
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        hlsAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      expect(audioElement).not.toHaveAttribute('src');
+    });
+
+    it('should set src attribute for non-HLS streams', () => {
+      const {useHlsStream} = require('../use-hls-stream');
+      (useHlsStream as jest.Mock).mockReturnValue({isHlsStream: false});
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        liveAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      expect(audioElement).toHaveAttribute('src');
     });
   });
 });
