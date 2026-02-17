@@ -3,6 +3,7 @@ import React from 'react';
 import {AudioElementProps} from '../types';
 
 export const AudioElement: React.FC<AudioElementProps> = ({
+  isHlsStream,
   src,
   audioRef,
   autoPlay,
@@ -21,7 +22,7 @@ export const AudioElement: React.FC<AudioElementProps> = ({
     ref={audioRef}
     autoPlay={autoPlay}
     data-testid="audio-element"
-    src={src}
+    {...(!isHlsStream && {src})} // Only set src for non-HLS streams, as HLS is handled separately by the hls.js library
     onCanPlay={onCanPlay}
     onWaiting={onWaiting}
     onPlay={onPlay}

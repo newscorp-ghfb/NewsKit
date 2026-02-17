@@ -103,6 +103,7 @@ export interface AudioPlayerProviderContext {
 export interface AudioElementProps
   extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
   audioRef?: React.RefObject<HTMLAudioElement | null>;
+  isHlsStream?: boolean;
 }
 
 export interface AudioPlayerComposableProps
