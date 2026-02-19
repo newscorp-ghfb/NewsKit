@@ -10,6 +10,7 @@ type useHlsPlayerOptions = {
 
 type useHlsPlayerReturn = {
   isHlsStream: boolean;
+  hlsInstance: RefObject<Hls | null>;
 };
 
 const isHlsUrl = (url: string): boolean => {
@@ -115,35 +116,6 @@ export const useHlsStream = ({
       hls.attachMedia(el);
       hls.loadSource(audioSrc);
 
-      const handlePause = () => {
-        hls.stopLoad();
-      };
-
-      const originalPlay = el.play.bind(el);
-      const originalLoad = el.load.bind(el);
-
-      // No-op: prevent NewsKit's load() from destroying HLS.js MediaSource
-      el.load = function () {};
-
-      el.play = async function () {
-        const liveSyncPosition = hls.liveSyncPosition;
-        // Reset MediaSource if more than 2 seconds behind live edge
-        if (
-          liveSyncPosition !== null &&
-          Math.abs(el.currentTime - liveSyncPosition) > 2
-        ) {
-          hls.detachMedia();
-          hls.attachMedia(el);
-          await new Promise<void>(resolve => {
-            hls.once(Hls.Events.MEDIA_ATTACHED, () => resolve());
-          });
-        }
-        hls.startLoad();
-        return originalPlay();
-      };
-
-      el.addEventListener('pause', handlePause);
-
       hls.on(Hls.Events.ERROR, (_e, data) => {
         if (!data.fatal) return;
         switch (data.type) {
@@ -158,20 +130,18 @@ export const useHlsStream = ({
         }
       });
 
-      return {hls, handlePause, originalPlay, originalLoad};
+      return {hls};
     };
 
-    const {hls, handlePause, originalPlay, originalLoad} = setupHls(audio, src);
+    const {hls} = setupHls(audio, src);
+
     hlsRef.current = hls;
 
     return () => {
-      audio.removeEventListener('pause', handlePause);
-      audio.play = originalPlay;
-      audio.load = originalLoad;
       hlsRef.current?.destroy();
       hlsRef.current = null;
     };
   }, [src, isHls, audioRef, live]);
 
-  return {isHlsStream: isHls};
+  return {isHlsStream: isHls, hlsInstance: hlsRef};
 };
