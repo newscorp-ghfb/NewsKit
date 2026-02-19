@@ -164,6 +164,7 @@ describe('useHlsStream', () => {
     );
 
     expect(Hls).toHaveBeenCalled();
+    expect(Hls).toHaveBeenCalledTimes(1);
   });
 
   it('should use HLS.js on non-Safari browsers', () => {
@@ -177,6 +178,7 @@ describe('useHlsStream', () => {
       }),
     );
     expect(Hls).toHaveBeenCalled();
+    expect(Hls).toHaveBeenCalledTimes(1);
   });
 
   it('should use native HLS on Safari if supported', () => {
@@ -191,6 +193,7 @@ describe('useHlsStream', () => {
         live: true,
       }),
     );
+
     expect(Hls).not.toHaveBeenCalled();
     expect(mockAudio.canPlayType).toHaveBeenCalledWith(
       'application/vnd.apple.mpegurl',
