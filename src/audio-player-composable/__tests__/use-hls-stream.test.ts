@@ -2,6 +2,7 @@ import {renderHook} from '@testing-library/react';
 import {useHlsStream} from '../use-hls-stream';
 import {isSafari} from '../utils';
 import Hls from 'hls.js';
+import {error} from 'console';
 
 jest.mock('hls.js', () => {
   const MockHls = jest.fn().mockImplementation(() => ({
@@ -13,6 +14,7 @@ jest.mock('hls.js', () => {
     detachMedia: jest.fn(),
     on: jest.fn(),
     once: jest.fn(),
+    recoverMediaError: jest.fn(),
   }));
 
   (MockHls as any).isSupported = jest.fn().mockReturnValue(true);
@@ -211,5 +213,118 @@ describe('useHlsStream', () => {
 
     expect(Hls).not.toHaveBeenCalled();
     expect(consoleErrorSpy).toHaveBeenCalledWith('HLS.js not supported');
+    consoleErrorSpy.mockRestore();
+  });
+
+  describe('HLS error handling', () => {
+    it('should handle network errors gracefully', () => {
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+        }),
+      );
+
+      const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+
+      const registeredErrorCallback = createdHlsInstance.on.mock.calls.find(
+        (call: any) => call[0] === 'hlsError',
+      )?.[1];
+
+      const fatalNetworkErrorData = {
+        fatal: true,
+        type: 'networkError',
+      };
+
+      registeredErrorCallback(null, fatalNetworkErrorData);
+
+      expect(createdHlsInstance.startLoad).toHaveBeenCalled();
+    });
+
+    it('should handle media errors gracefully', () => {
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+        }),
+      );
+
+      const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+
+      const registeredErrorCallback = createdHlsInstance.on.mock.calls.find(
+        (call: any) => call[0] === 'hlsError',
+      )?.[1];
+
+      const fatalMediaErrorData = {
+        fatal: true,
+        type: 'mediaError',
+      };
+
+      registeredErrorCallback(null, fatalMediaErrorData);
+
+      expect(createdHlsInstance.recoverMediaError).toHaveBeenCalled();
+    });
+
+    it('should ignore non-fatal errors', () => {
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+        }),
+      );
+
+      const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+
+      const registeredErrorCallback = createdHlsInstance.on.mock.calls.find(
+        (call: any) => call[0] === 'hlsError',
+      )?.[1];
+
+      const nonFatalErrorData = {
+        fatal: false,
+        type: 'networkError',
+      };
+
+      registeredErrorCallback(null, nonFatalErrorData);
+
+      expect(createdHlsInstance.startLoad).not.toHaveBeenCalled();
+      expect(createdHlsInstance.recoverMediaError).not.toHaveBeenCalled();
+      expect(createdHlsInstance.destroy).not.toHaveBeenCalled();
+    });
+
+    it('should handle other types of fatal errors', () => {
+      const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
+
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+        }),
+      );
+
+      const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+
+      const registeredErrorCallback = createdHlsInstance.on.mock.calls.find(
+        (call: any) => call[0] === 'hlsError',
+      )?.[1];
+
+      const fatalUnknownErrorData = {
+        fatal: true,
+        type: 'unknownError',
+      };
+
+      registeredErrorCallback(null, fatalUnknownErrorData);
+
+      expect(consoleErrorSpy).toHaveBeenCalledWith(
+        'Fatal HLS error',
+        fatalUnknownErrorData,
+      );
+
+      expect(createdHlsInstance.destroy).toHaveBeenCalled();
+      consoleErrorSpy.mockRestore();
+    });
   });
 });
