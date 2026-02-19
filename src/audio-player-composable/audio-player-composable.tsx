@@ -70,7 +70,7 @@ export const AudioPlayerComposable = ({
 
   const [buffered, setBuffered] = useState<TimeRanges>();
 
-  const {isHlsStream} = useHlsStream({src, audioRef, live});
+  const {isHlsStream, hlsInstance} = useHlsStream({src, audioRef, live});
 
   useEffect(() => {
     currentTimeRef.current = currentTime;
@@ -115,6 +115,8 @@ export const AudioPlayerComposable = ({
     setPlaybackSpeed,
     src,
     live,
+    isHlsStream,
+    hlsInstance,
   } as AudioFunctionDependencies);
 
   const getPlayPauseButtonProps = useCallback(

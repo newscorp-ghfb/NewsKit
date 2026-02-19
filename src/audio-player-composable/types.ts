@@ -25,6 +25,9 @@ export interface AudioFunctionDependencies {
   duration: number;
   playing: boolean;
 
+  isHlsStream: boolean;
+  hlsInstance: React.RefObject<any>;
+
   showLoaderTimeoutRef: React.MutableRefObject<number>;
   currentTimeRef: React.MutableRefObject<number>;
   audioRef: React.RefObject<HTMLAudioElement | null>;
