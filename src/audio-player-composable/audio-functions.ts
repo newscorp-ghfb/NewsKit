@@ -17,6 +17,8 @@ export const useAudioFunctions = ({
   showLoaderTimeoutRef,
   currentTimeRef,
   audioRef,
+  isHlsStream,
+  hlsInstance,
   setLoading,
   setCurrentTime,
   setPlayState,
@@ -184,9 +186,15 @@ export const useAudioFunctions = ({
   const play = useCallback(() => {
     ifPlayer(player => {
       setPlayState(true);
+      if (isHlsStream && hlsInstance.current) {
+        if (hlsInstance.current.liveSyncPosition !== null) {
+          player.currentTime = hlsInstance.current.liveSyncPosition;
+        }
+        hlsInstance.current.resumeBuffering();
+      }
       player.play();
     });
-  }, [ifPlayer, setPlayState]);
+  }, [ifPlayer, setPlayState, isHlsStream, hlsInstance]);
 
   const onPlay = useCallback(() => {
     if (autoPlay) {
@@ -207,9 +215,12 @@ export const useAudioFunctions = ({
   const pause = useCallback(() => {
     ifPlayer(player => {
       setPlayState(false);
+      if (isHlsStream && hlsInstance.current) {
+        hlsInstance.current.pauseBuffering();
+      }
       player.pause();
     });
-  }, [ifPlayer, setPlayState]);
+  }, [ifPlayer, setPlayState, isHlsStream, hlsInstance]);
 
   const onPause = useCallback(() => {
     if (playing) {
