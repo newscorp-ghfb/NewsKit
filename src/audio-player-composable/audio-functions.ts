@@ -187,9 +187,6 @@ export const useAudioFunctions = ({
     ifPlayer(player => {
       setPlayState(true);
       if (isHlsStream && hlsInstance.current) {
-        if (hlsInstance.current.liveSyncPosition !== null) {
-          player.currentTime = hlsInstance.current.liveSyncPosition;
-        }
         hlsInstance.current.resumeBuffering();
       }
       player.play();
