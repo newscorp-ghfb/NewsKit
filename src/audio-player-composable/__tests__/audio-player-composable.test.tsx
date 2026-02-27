@@ -1565,10 +1565,9 @@ describe('Audio Player Composable', () => {
       expect(audioElement).toHaveAttribute('src');
     });
 
-    it('should call resumeBuffering and set currentTime to liveSyncPosition when playing HLS stream', () => {
+    it('should call resumeBuffering when playing HLS stream', () => {
       const mockHlsInstance = {
         current: {
-          liveSyncPosition: 10.5,
           resumeBuffering: mockResumeBuffering,
         },
       };
@@ -1589,14 +1588,13 @@ describe('Audio Player Composable', () => {
       fireEvent.canPlay(audioElement);
       fireEvent.click(playButton);
 
-      expect(audioElement.currentTime).toBe(10.5);
       expect(mockResumeBuffering).toHaveBeenCalled();
+      expect(audioElement.paused).toBe(false);
     });
 
-    it('should call resumeBuffering without setting currentTime when liveSyncPosition is null', () => {
+    it('should resume from current position when playing HLS stream', () => {
       const mockHlsInstance = {
         current: {
-          liveSyncPosition: null,
           resumeBuffering: mockResumeBuffering,
         },
       };
@@ -1614,18 +1612,18 @@ describe('Audio Player Composable', () => {
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
       const playButton = getByTestId('audio-player-play-pause-button');
 
+      audioElement.currentTime = 15.5;
+
       fireEvent.canPlay(audioElement);
-      const initialTime = audioElement.currentTime;
       fireEvent.click(playButton);
 
-      expect(audioElement.currentTime).toBe(initialTime);
+      expect(audioElement.currentTime).toBe(15.5);
       expect(mockResumeBuffering).toHaveBeenCalled();
     });
 
     it('should call pauseBuffering when pausing HLS stream', () => {
       const mockHlsInstance = {
         current: {
-          liveSyncPosition: 10.5,
           resumeBuffering: mockResumeBuffering,
           pauseBuffering: mockPauseBuffering,
         },
@@ -1651,7 +1649,7 @@ describe('Audio Player Composable', () => {
       expect(mockPauseBuffering).toHaveBeenCalled();
     });
 
-    it('should not call HLS methods when hlsInstance.current is null', () => {
+    it('should not call HLS methods and should not throw error when hlsInstance.current is null', () => {
       const mockHlsInstance = {
         current: null,
       };
@@ -1670,7 +1668,7 @@ describe('Audio Player Composable', () => {
       const playButton = getByTestId('audio-player-play-pause-button');
 
       fireEvent.canPlay(audioElement);
-      // Should not throw error when hlsInstance.current is null
+
       expect(() => fireEvent.click(playButton)).not.toThrow();
       expect(audioElement.paused).toBe(false);
     });
@@ -1678,7 +1676,6 @@ describe('Audio Player Composable', () => {
     it('should not call HLS methods for non-HLS streams', () => {
       const mockHlsInstance = {
         current: {
-          liveSyncPosition: 10.5,
           resumeBuffering: mockResumeBuffering,
         },
       };
