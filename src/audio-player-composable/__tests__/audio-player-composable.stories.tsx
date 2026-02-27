@@ -64,6 +64,12 @@ const HLS_VIRGIN_80S_STREAM =
 const HLS_VIRGIN_80S_MOBILE_STREAM =
   'https://hls-virgin.live.stream.broadcasting.news/stream-80s-mobile-hls/playlist.m3u8';
 
+// Times HLS streams - have rewind functionality
+const HLS_TIMES_STREAM =
+  'https://hls-times.live.stream.broadcasting.news/stream-hls/playlist.m3u8';
+const HLS_TIMES_MOBILE_STREAM =
+  'https://hls-times.live.stream.broadcasting.news/stream-mobile-hls/playlist.m3u8';
+
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
   overrides: {
