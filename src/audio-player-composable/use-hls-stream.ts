@@ -32,8 +32,6 @@ export const useHlsStream = ({
   useLayoutEffect(() => {
     if (!live || !src || !isHls || !audioRef?.current) return;
 
-    hlsRef.current?.destroy();
-    hlsRef.current = null;
     const audio = audioRef.current;
 
     const shouldUseNativeHls =
