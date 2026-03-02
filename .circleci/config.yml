@@ -394,7 +394,7 @@ jobs:
             # https://support.google.com/chrome/thread/409314457/linux-repo-error?hl=en
             export GKEY=/tmp/google.pub
             wget -q -O $GKEY https://dl.google.com/linux/linux_signing_key.pub
-            cat <<+EOF >/etc/apt/sources.list.d/google-chrome.sources
+            cat \<<+EOF >/etc/apt/sources.list.d/google-chrome.sources
             Types: deb
             URIs: https://dl.google.com/linux/chrome/deb/
             Suites: stable
