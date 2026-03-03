@@ -1,8 +1,7 @@
-import {renderHook} from '@testing-library/react';
+import {renderHook, waitFor} from '@testing-library/react';
 import {useHlsStream} from '../use-hls-stream';
 import {isSafari} from '../utils';
 import Hls from 'hls.js';
-import {error} from 'console';
 
 jest.mock('hls.js', () => {
   const MockHls = jest.fn().mockImplementation(() => ({
@@ -69,13 +68,15 @@ describe('useHlsStream', () => {
     ${'https://hls-onic.dublin.live.stream.broadcasting.news/stream-innovation-mobile-hls/playlist.m3u8'}
     ${'https://hls-virgin.live.stream.broadcasting.news/stream-80s-hls/playlist.m3u8'}
     ${'https://hls-virgin.live.stream.broadcasting.news/stream-80s-mobile-hls/playlist.m3u8'}
-  `('should detect HLS streams and initialize HLS.js', ({url}) => {
+  `('should detect HLS streams and initialize HLS.js', async ({url}) => {
     const {result} = renderHook(() =>
       useHlsStream({src: url, audioRef: createAudioRef(), live: true}),
     );
 
     expect(result.current.isHlsStream).toBe(true);
-    expect(Hls).toHaveBeenCalled();
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+    });
   });
 
   it.each`
@@ -100,13 +101,15 @@ describe('useHlsStream', () => {
     ${'https://hls-onic.dublin.live.stream.broadcasting.news/stream-innovation-mobile-hls/playlist.m3U8'} | ${true}
   `(
     'should recognize HLS streams regardless of case for $url',
-    ({url, expectedResult}) => {
+    async ({url, expectedResult}) => {
       const {result} = renderHook(() =>
         useHlsStream({src: url, audioRef: createAudioRef(), live: true}),
       );
 
       expect(result.current.isHlsStream).toBe(expectedResult);
-      expect(Hls).toHaveBeenCalled();
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalled();
+      });
     },
   );
 
@@ -154,7 +157,7 @@ describe('useHlsStream', () => {
     expect(Hls).not.toHaveBeenCalled();
   });
 
-  it('should initialize HLS when all conditions are met', () => {
+  it('should initialize HLS when all conditions are met', async () => {
     renderHook(() =>
       useHlsStream({
         src: 'https://example.com/stream.m3u8',
@@ -163,11 +166,13 @@ describe('useHlsStream', () => {
       }),
     );
 
-    expect(Hls).toHaveBeenCalled();
-    expect(Hls).toHaveBeenCalledTimes(1);
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+      expect(Hls).toHaveBeenCalledTimes(1);
+    });
   });
 
-  it('should use HLS.js on non-Safari browsers', () => {
+  it('should use HLS.js on non-Safari browsers', async () => {
     (isSafari as jest.Mock).mockReturnValue(false);
 
     renderHook(() =>
@@ -177,8 +182,11 @@ describe('useHlsStream', () => {
         live: true,
       }),
     );
-    expect(Hls).toHaveBeenCalled();
-    expect(Hls).toHaveBeenCalledTimes(1);
+
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+      expect(Hls).toHaveBeenCalledTimes(1);
+    });
   });
 
   it('should use native HLS on Safari if supported', () => {
@@ -201,7 +209,7 @@ describe('useHlsStream', () => {
     expect(mockAudio.src).toBe('https://example.com/stream.m3u8');
   });
 
-  it('should not initialize HLS.js when HLS is not supported and log error', () => {
+  it('should not initialize HLS.js when HLS is not supported and log error', async () => {
     const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
     (isSafari as jest.Mock).mockReturnValue(false);
     (Hls.isSupported as jest.Mock).mockReturnValueOnce(false);
@@ -215,12 +223,14 @@ describe('useHlsStream', () => {
     );
 
     expect(Hls).not.toHaveBeenCalled();
-    expect(consoleErrorSpy).toHaveBeenCalledWith('HLS.js not supported');
+    await waitFor(() => {
+      expect(consoleErrorSpy).toHaveBeenCalledWith('HLS.js not supported');
+    });
     consoleErrorSpy.mockRestore();
   });
 
   describe('HLS error handling', () => {
-    it('should handle network errors gracefully', () => {
+    it('should handle network errors gracefully', async () => {
       renderHook(() =>
         useHlsStream({
           src: 'https://example.com/stream.m3u8',
@@ -228,6 +238,10 @@ describe('useHlsStream', () => {
           live: true,
         }),
       );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalled();
+      });
 
       const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
 
@@ -245,7 +259,7 @@ describe('useHlsStream', () => {
       expect(createdHlsInstance.startLoad).toHaveBeenCalled();
     });
 
-    it('should handle media errors gracefully', () => {
+    it('should handle media errors gracefully', async () => {
       renderHook(() =>
         useHlsStream({
           src: 'https://example.com/stream.m3u8',
@@ -253,6 +267,10 @@ describe('useHlsStream', () => {
           live: true,
         }),
       );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalled();
+      });
 
       const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
 
@@ -270,7 +288,7 @@ describe('useHlsStream', () => {
       expect(createdHlsInstance.recoverMediaError).toHaveBeenCalled();
     });
 
-    it('should ignore non-fatal errors', () => {
+    it('should ignore non-fatal errors', async () => {
       renderHook(() =>
         useHlsStream({
           src: 'https://example.com/stream.m3u8',
@@ -278,6 +296,10 @@ describe('useHlsStream', () => {
           live: true,
         }),
       );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalled();
+      });
 
       const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
 
@@ -297,7 +319,7 @@ describe('useHlsStream', () => {
       expect(createdHlsInstance.destroy).not.toHaveBeenCalled();
     });
 
-    it('should handle other types of fatal errors', () => {
+    it('should handle other types of fatal errors', async () => {
       const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
 
       renderHook(() =>
@@ -307,6 +329,10 @@ describe('useHlsStream', () => {
           live: true,
         }),
       );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalled();
+      });
 
       const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
 
