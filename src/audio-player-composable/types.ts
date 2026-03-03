@@ -16,6 +16,12 @@ import {
 import {MQ} from '../utils';
 import {ButtonSize} from '../button/types';
 
+export interface HlsInstance {
+  resumeBuffering: () => void;
+  pauseBuffering: () => void;
+  destroy: () => void;
+}
+
 export interface AudioFunctionDependencies {
   autoPlay: boolean;
   src: string;
@@ -26,7 +32,7 @@ export interface AudioFunctionDependencies {
   playing: boolean;
 
   isHlsStream: boolean;
-  hlsInstance: React.RefObject<any>;
+  hlsInstance: React.RefObject<HlsInstance | null>;
 
   showLoaderTimeoutRef: React.MutableRefObject<number>;
   currentTimeRef: React.MutableRefObject<number>;
