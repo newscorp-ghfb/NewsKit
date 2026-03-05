@@ -164,53 +164,22 @@ describe('isSafari', () => {
     expect(isSafari()).toBe(true);
   });
 
-  it('should return true for desktop Safari user agent', () => {
-    jest
-      .spyOn(navigator, 'userAgent', 'get')
-      .mockReturnValue(
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15',
-      );
-
+  it.each`
+    browser             | userAgent
+    ${'desktop Safari'} | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'}
+    ${'iOS Safari'}     | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'}
+  `('should return true for $browser user agent', ({userAgent}) => {
+    jest.spyOn(navigator, 'userAgent', 'get').mockReturnValue(userAgent);
     expect(isSafari()).toBe(true);
   });
 
-  it('should return true for iOS Safari user agent', () => {
-    jest
-      .spyOn(navigator, 'userAgent', 'get')
-      .mockReturnValue(
-        'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
-      );
-
-    expect(isSafari()).toBe(true);
-  });
-
-  it('should return false for Chrome user agent', () => {
-    jest
-      .spyOn(navigator, 'userAgent', 'get')
-      .mockReturnValue(
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36',
-      );
-
-    expect(isSafari()).toBe(false);
-  });
-
-  it('should return false for Chrome on iOS', () => {
-    jest
-      .spyOn(navigator, 'userAgent', 'get')
-      .mockReturnValue(
-        'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/142.0.0.0 Mobile/15E148 Safari/604.1',
-      );
-
-    expect(isSafari()).toBe(false);
-  });
-
-  it('should return false for Firefox', () => {
-    jest
-      .spyOn(navigator, 'userAgent', 'get')
-      .mockReturnValue(
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0',
-      );
-
+  it.each`
+    browser            | userAgent
+    ${'Chrome'}        | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'}
+    ${'Chrome on iOS'} | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/142.0.0.0 Mobile/15E148 Safari/604.1'}
+    ${'Firefox'}       | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0'}
+  `('should return false for $browser user agent', ({userAgent}) => {
+    jest.spyOn(navigator, 'userAgent', 'get').mockReturnValue(userAgent);
     expect(isSafari()).toBe(false);
   });
 });
