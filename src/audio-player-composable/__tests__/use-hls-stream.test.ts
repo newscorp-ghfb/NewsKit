@@ -209,7 +209,7 @@ describe('useHlsStream', () => {
     expect(mockAudio.src).toBe('https://example.com/stream.m3u8');
   });
 
-  it('should not initialize HLS.js when HLS is not supported and log error', async () => {
+  it('should not initialize HLS.js when HLS is not supported and log error message', async () => {
     const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
     (isSafari as jest.Mock).mockReturnValue(false);
     (Hls.isSupported as jest.Mock).mockReturnValueOnce(false);
