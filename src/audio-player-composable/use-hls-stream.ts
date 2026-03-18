@@ -1,6 +1,7 @@
 import {RefObject, useEffect, useRef} from 'react';
 import {isSafari} from './utils';
 import {HlsInstance} from './types';
+import Hls from 'hls.js';
 
 type useHlsPlayerOptions = {
   src: string;
@@ -29,106 +30,99 @@ export const useHlsStream = ({
   const hlsRef = useRef<HlsInstance | null>(null);
   const isHls = isHlsUrl(src);
 
-  const initializeHls = async (audio: HTMLAudioElement, src: string) => {
-    try {
-      const {default: Hls} = await import('hls.js');
-
-      if (!Hls.isSupported()) {
-        console.error('HLS.js not supported');
-        return;
-      }
-
-      const setupHls = (el: HTMLAudioElement, audioSrc: string) => {
-        const hls = new Hls({
-          enableWorker: true,
-          liveSyncDurationCount: 3,
-          liveMaxLatencyDurationCount: 6,
-          liveDurationInfinity: true,
-          maxLiveSyncPlaybackRate: 1,
-          maxBufferLength: 30,
-          maxBufferSize: 5 * 1000 * 1000,
-          maxBufferHole: 0.5,
-          highBufferWatchdogPeriod: 3,
-          nudgeOffset: 0.1,
-          nudgeMaxRetry: 3,
-          lowLatencyMode: false,
-          manifestLoadPolicy: {
-            default: {
-              maxTimeToFirstByteMs: 10000,
-              maxLoadTimeMs: 20000,
-              timeoutRetry: {
-                maxNumRetry: 2,
-                retryDelayMs: 0,
-                maxRetryDelayMs: 0,
-              },
-              errorRetry: {
-                maxNumRetry: 3,
-                retryDelayMs: 1000,
-                maxRetryDelayMs: 8000,
-              },
-            },
-          },
-          playlistLoadPolicy: {
-            default: {
-              maxTimeToFirstByteMs: 8000,
-              maxLoadTimeMs: 20000,
-              timeoutRetry: {
-                maxNumRetry: 2,
-                retryDelayMs: 0,
-                maxRetryDelayMs: 0,
-              },
-              errorRetry: {
-                maxNumRetry: 4,
-                retryDelayMs: 500,
-                maxRetryDelayMs: 4000,
-              },
-            },
-          },
-          fragLoadPolicy: {
-            default: {
-              maxTimeToFirstByteMs: 8000,
-              maxLoadTimeMs: 60000,
-              timeoutRetry: {
-                maxNumRetry: 4,
-                retryDelayMs: 0,
-                maxRetryDelayMs: 0,
-              },
-              errorRetry: {
-                maxNumRetry: 6,
-                retryDelayMs: 500,
-                maxRetryDelayMs: 4000,
-              },
-            },
-          },
-        });
-
-        hls.attachMedia(el);
-        hls.loadSource(audioSrc);
-
-        hls.on(Hls.Events.ERROR, (_e, data) => {
-          if (!data.fatal) return;
-          switch (data.type) {
-            case Hls.ErrorTypes.NETWORK_ERROR:
-              return hls.startLoad();
-            case Hls.ErrorTypes.MEDIA_ERROR:
-              return hls.recoverMediaError();
-            default:
-              console.error('Fatal HLS error', data);
-              hls.destroy();
-              hlsRef.current = null;
-          }
-        });
-
-        return {hls};
-      };
-
-      const {hls} = setupHls(audio, src);
-
-      hlsRef.current = hls;
-      return hls;
-    } catch (error) {
-      console.error('Failed to load HLS.js', error);
+  const initializeHls = (audio: HTMLAudioElement, src: string) => {
+    if (!Hls.isSupported()) {
+      console.error('HLS.js not supported');
+      return;
     }
+
+    const setupHls = (el: HTMLAudioElement, audioSrc: string) => {
+      const hls = new Hls({
+        enableWorker: true,
+        liveSyncDurationCount: 3,
+        liveMaxLatencyDurationCount: 6,
+        liveDurationInfinity: true,
+        maxLiveSyncPlaybackRate: 1,
+        maxBufferLength: 30,
+        maxBufferSize: 5 * 1000 * 1000,
+        maxBufferHole: 0.5,
+        highBufferWatchdogPeriod: 3,
+        nudgeOffset: 0.1,
+        nudgeMaxRetry: 3,
+        lowLatencyMode: false,
+        manifestLoadPolicy: {
+          default: {
+            maxTimeToFirstByteMs: 10000,
+            maxLoadTimeMs: 20000,
+            timeoutRetry: {
+              maxNumRetry: 2,
+              retryDelayMs: 0,
+              maxRetryDelayMs: 0,
+            },
+            errorRetry: {
+              maxNumRetry: 3,
+              retryDelayMs: 1000,
+              maxRetryDelayMs: 8000,
+            },
+          },
+        },
+        playlistLoadPolicy: {
+          default: {
+            maxTimeToFirstByteMs: 8000,
+            maxLoadTimeMs: 20000,
+            timeoutRetry: {
+              maxNumRetry: 2,
+              retryDelayMs: 0,
+              maxRetryDelayMs: 0,
+            },
+            errorRetry: {
+              maxNumRetry: 4,
+              retryDelayMs: 500,
+              maxRetryDelayMs: 4000,
+            },
+          },
+        },
+        fragLoadPolicy: {
+          default: {
+            maxTimeToFirstByteMs: 8000,
+            maxLoadTimeMs: 60000,
+            timeoutRetry: {
+              maxNumRetry: 4,
+              retryDelayMs: 0,
+              maxRetryDelayMs: 0,
+            },
+            errorRetry: {
+              maxNumRetry: 6,
+              retryDelayMs: 500,
+              maxRetryDelayMs: 4000,
+            },
+          },
+        },
+      });
+
+      hls.attachMedia(el);
+      hls.loadSource(audioSrc);
+
+      hls.on(Hls.Events.ERROR, (_e, data) => {
+        if (!data.fatal) return;
+        switch (data.type) {
+          case Hls.ErrorTypes.NETWORK_ERROR:
+            return hls.startLoad();
+          case Hls.ErrorTypes.MEDIA_ERROR:
+            return hls.recoverMediaError();
+          default:
+            console.error('Fatal HLS error', data);
+            hls.destroy();
+            hlsRef.current = null;
+        }
+      });
+
+      return {hls};
+    };
+
+    const {hls} = setupHls(audio, src);
+
+    hlsRef.current = hls;
   };
 
   useEffect(() => {
@@ -147,15 +141,13 @@ export const useHlsStream = ({
       };
     }
 
-    const hlsInitialization = initializeHls(audio, src);
+    initializeHls(audio, src);
 
     return () => {
-      hlsInitialization.then(hls => {
-        hls?.stopLoad();
-        hls?.detachMedia();
-        hls?.destroy();
-        hlsRef.current = null;
-      });
+      hlsRef.current?.stopLoad();
+      hlsRef.current?.detachMedia();
+      hlsRef.current?.destroy();
+      hlsRef.current = null;
     };
   }, [src, isHls, audioRef, live]);
 

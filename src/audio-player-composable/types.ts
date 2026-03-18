@@ -20,6 +20,8 @@ export interface HlsInstance {
   resumeBuffering: () => void;
   pauseBuffering: () => void;
   destroy: () => void;
+  stopLoad: () => void;
+  detachMedia: () => void;
 }
 
 export interface AudioFunctionDependencies {
