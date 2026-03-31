@@ -390,6 +390,21 @@ jobs:
       - run:
           name: Install make
           command: |
+            # Google have updated their key, so we need to add it in order to install
+            # https://support.google.com/chrome/thread/409314457/linux-repo-error?hl=en
+            export GKEY=/tmp/google.pub
+            wget -q -O $GKEY https://dl.google.com/linux/linux_signing_key.pub
+            cat \<<+EOF >/etc/apt/sources.list.d/google-chrome.sources
+            Types: deb
+            URIs: https://dl.google.com/linux/chrome/deb/
+            Suites: stable
+            Components: main
+            Architectures: amd64
+            Enabled: yes
+            Signed-By:
+            $(sed -e 's/^/ /' $GKEY)
+            +EOF
+            rm -f $GKEY
             apt-get update
             apt-get install -y make
       - run:
@@ -930,7 +945,7 @@ jobs:
 
             cd newskit-integration-test
             yalc add newskit
-            yarn add start-server-and-test
+            yarn add start-server-and-test@2.1.5 
             yarn add react@18.2
             yarn add react-dom@18.2
             yarn add @emotion/react

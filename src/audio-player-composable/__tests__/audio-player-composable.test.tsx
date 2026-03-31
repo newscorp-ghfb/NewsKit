@@ -78,6 +78,12 @@ const recordedAudioProps: AudioPlayerComposableProps = {
   ),
 };
 
+const hlsAudioProps = {
+  src:
+    'https://hls-onic.dublin.live.stream.broadcasting.news/stream-innovation-hls/playlist.m3u8',
+  children: <AudioPlayerPlayPauseButton />,
+};
+
 const AudioPropsAndVolumeControlCollapsed: AudioPlayerComposableProps = {
   src: '/audio_file_1.mp3',
   initialVolume: 0.2,
@@ -319,6 +325,13 @@ jest.mock('react-range', () => {
     getTrackBackground: mockGetTrackBackground,
   };
 });
+
+jest.mock('../use-hls-stream', () => ({
+  useHlsStream: jest.fn(() => ({
+    isHlsStream: false,
+    hlsInstance: {current: null},
+  })),
+}));
 
 describe('Audio Player Composable', () => {
   const mediaElement = (window as any).HTMLMediaElement.prototype;
@@ -1505,6 +1518,186 @@ describe('Audio Player Composable', () => {
       fireEvent.pause(audioElement);
 
       expect(fireEventSpy).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe('HLS Streaming Support', () => {
+    let mockUseHlsStream: jest.Mock;
+    let mockResumeBuffering: jest.Mock;
+    let mockPauseBuffering: jest.Mock;
+
+    beforeEach(() => {
+      const {useHlsStream} = require('../use-hls-stream');
+      mockUseHlsStream = useHlsStream as jest.Mock;
+
+      mockUseHlsStream.mockReturnValue({
+        isHlsStream: false,
+        hlsInstance: {current: null},
+      });
+
+      mockResumeBuffering = jest.fn();
+      mockPauseBuffering = jest.fn();
+    });
+
+    it('should not set src attribute for HLS streams', () => {
+      const {useHlsStream} = require('../use-hls-stream');
+      (useHlsStream as jest.Mock).mockReturnValue({isHlsStream: true});
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        hlsAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      expect(audioElement).not.toHaveAttribute('src');
+    });
+
+    it('should set src attribute for non-HLS streams', () => {
+      const {useHlsStream} = require('../use-hls-stream');
+      (useHlsStream as jest.Mock).mockReturnValue({isHlsStream: false});
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        liveAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      expect(audioElement).toHaveAttribute('src');
+    });
+
+    it('should call resumeBuffering when playing HLS stream', () => {
+      const mockHlsInstance = {
+        current: {
+          resumeBuffering: mockResumeBuffering,
+        },
+      };
+
+      mockUseHlsStream.mockReturnValue({
+        isHlsStream: true,
+        hlsInstance: mockHlsInstance,
+      });
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        hlsAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playButton = getByTestId('audio-player-play-pause-button');
+
+      fireEvent.canPlay(audioElement);
+      fireEvent.click(playButton);
+
+      expect(mockResumeBuffering).toHaveBeenCalled();
+      expect(audioElement.paused).toBe(false);
+    });
+
+    it('should resume from current position when playing HLS stream', () => {
+      const mockHlsInstance = {
+        current: {
+          resumeBuffering: mockResumeBuffering,
+        },
+      };
+
+      mockUseHlsStream.mockReturnValue({
+        isHlsStream: true,
+        hlsInstance: mockHlsInstance,
+      });
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        hlsAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playButton = getByTestId('audio-player-play-pause-button');
+
+      audioElement.currentTime = 15.5;
+
+      fireEvent.canPlay(audioElement);
+      fireEvent.click(playButton);
+
+      expect(audioElement.currentTime).toBe(15.5);
+      expect(mockResumeBuffering).toHaveBeenCalled();
+    });
+
+    it('should call pauseBuffering when pausing HLS stream', () => {
+      const mockHlsInstance = {
+        current: {
+          resumeBuffering: mockResumeBuffering,
+          pauseBuffering: mockPauseBuffering,
+        },
+      };
+
+      mockUseHlsStream.mockReturnValue({
+        isHlsStream: true,
+        hlsInstance: mockHlsInstance,
+      });
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        hlsAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playButton = getByTestId('audio-player-play-pause-button');
+
+      fireEvent.canPlay(audioElement);
+      fireEvent.click(playButton);
+      fireEvent.click(playButton);
+
+      expect(mockPauseBuffering).toHaveBeenCalled();
+    });
+
+    it('should not call HLS methods and should not throw error when hlsInstance.current is null', () => {
+      const mockHlsInstance = {
+        current: null,
+      };
+
+      mockUseHlsStream.mockReturnValue({
+        isHlsStream: true,
+        hlsInstance: mockHlsInstance,
+      });
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        hlsAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playButton = getByTestId('audio-player-play-pause-button');
+
+      fireEvent.canPlay(audioElement);
+
+      expect(() => fireEvent.click(playButton)).not.toThrow();
+      expect(audioElement.paused).toBe(false);
+    });
+
+    it('should not call HLS methods for non-HLS streams', () => {
+      const mockHlsInstance = {
+        current: {
+          resumeBuffering: mockResumeBuffering,
+        },
+      };
+
+      mockUseHlsStream.mockReturnValue({
+        isHlsStream: false,
+        hlsInstance: mockHlsInstance,
+      });
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        recordedAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playButton = getByTestId('audio-player-play-pause-button');
+
+      fireEvent.canPlay(audioElement);
+      fireEvent.click(playButton);
+
+      expect(mockResumeBuffering).not.toHaveBeenCalled();
+      expect(audioElement.paused).toBe(false);
     });
   });
 });

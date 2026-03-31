@@ -2,6 +2,7 @@
 export {calculateTime} from './components/time-display/utils';
 export {AudioPlayerComposable} from './audio-player-composable';
 export {useAudioPlayerContext} from './context';
+export {useHlsStream} from './use-hls-stream';
 export * from './components/time-display';
 export * from './components/seek-bar';
 export * from './components/play-pause-button';

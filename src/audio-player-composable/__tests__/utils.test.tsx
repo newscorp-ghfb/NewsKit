@@ -3,7 +3,12 @@ import {
   formatTrackData,
   seekBarAriaValueText,
 } from '../components/seek-bar/utils';
-import {formatTrackTime, formatDuration, getMediaSegment} from '../utils';
+import {
+  formatTrackTime,
+  formatDuration,
+  getMediaSegment,
+  isSafari,
+} from '../utils';
 
 test('formatTrackTime', () => {
   const oneMinute = 60;
@@ -139,4 +144,38 @@ describe('seekBarAriaValueText()', () => {
       '2 hours 2 minutes 15 seconds',
     );
   });
+});
+
+describe('isSafari', () => {
+  afterEach(() => {
+    delete (window as any).safari;
+    jest.restoreAllMocks();
+  });
+
+  it('should return true when Safari-specific API is present', () => {
+    Object.defineProperty(window, 'safari', {
+      value: {
+        pushNotification: {},
+      },
+      writable: true,
+      configurable: true,
+    });
+
+    expect(isSafari()).toBe(true);
+  });
+
+  it.each`
+    browser             | userAgent                                                                                                                                       | expected
+    ${'desktop Safari'} | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'}                      | ${true}
+    ${'iOS Safari'}     | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'}    | ${true}
+    ${'Chrome'}         | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'}                      | ${false}
+    ${'Chrome on iOS'}  | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/142.0.0.0 Mobile/15E148 Safari/604.1'} | ${false}
+    ${'Firefox'}        | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0'}                                                       | ${false}
+  `(
+    'should return $expected for $browser user agent',
+    ({userAgent, expected}) => {
+      jest.spyOn(navigator, 'userAgent', 'get').mockReturnValue(userAgent);
+      expect(isSafari()).toBe(expected);
+    },
+  );
 });

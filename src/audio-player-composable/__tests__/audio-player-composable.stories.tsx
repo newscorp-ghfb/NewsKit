@@ -52,6 +52,24 @@ const StyledPage = styled.div`
 const AUDIO_SRC = 'https://newskit.co.uk/static/sample.mp3';
 const LIVE_AUDIO_SRC = 'https://radio.talkradio.co.uk/stream';
 
+// Onic HLS streams
+const HLS_ONIC_STREAM =
+  'https://hls-onic.dublin.live.stream.broadcasting.news/stream-innovation-hls/playlist.m3u8';
+const HLS_ONIC_MOBILE_STREAM =
+  'https://hls-onic.dublin.live.stream.broadcasting.news/stream-innovation-mobile-hls/playlist.m3u8';
+
+// Virgin HLS streams
+const HLS_VIRGIN_80S_STREAM =
+  'https://hls-virgin.live.stream.broadcasting.news/stream-80s-hls/playlist.m3u8';
+const HLS_VIRGIN_80S_MOBILE_STREAM =
+  'https://hls-virgin.live.stream.broadcasting.news/stream-80s-mobile-hls/playlist.m3u8';
+
+// Times HLS streams - should have rewind functionality
+const HLS_TIMES_STREAM =
+  'https://hls-times.live.stream.broadcasting.news/stream-hls/playlist.m3u8';
+const HLS_TIMES_MOBILE_STREAM =
+  'https://hls-times.live.stream.broadcasting.news/stream-mobile-hls/playlist.m3u8';
+
 const myCustomTheme = createTheme({
   name: 'my-custom-audio-player-theme',
   overrides: {
@@ -1385,3 +1403,46 @@ export const StoryAudioPlayerLoadingState = () => (
 );
 
 StoryAudioPlayerLoadingState.storyName = 'audio-player-loading-state';
+
+export const StoryAudioPlayerWithHls = () => {
+  const {allPlayersCanPlay, onCanPlay} = useAllPlayersCanPlayCheck(1);
+  return (
+    <StyledPage>
+      {allPlayersCanPlay && <div className="ready" />}
+      <StorybookHeading>Audio Player with HLS Streaming</StorybookHeading>
+
+      <AudioPlayerComposable
+        src={HLS_ONIC_STREAM}
+        live
+        ariaLandmark="Onic HLS audio player"
+        onCanPlay={onCanPlay}
+      >
+        <GridLayout
+          columns="1fr 1fr 1fr"
+          rows="1fr 1fr 1fr 1fr"
+          rowGap="16px"
+          columnGap="20px"
+        >
+          <GridLayoutItem>
+            <StorybookSubHeading>live</StorybookSubHeading>
+            <Flag overrides={{stylePreset: `flagMinimalInformative`}}>
+              <IconFilledGraphicEq />
+              Live
+            </Flag>
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Play/Pause</StorybookSubHeading>
+            <AudioPlayerPlayPauseButton
+              onClick={() => console.log('customer click function')}
+            />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Expanded Volume Control</StorybookSubHeading>
+            <AudioPlayerVolumeControl layout="horizontal-expanded" />
+          </GridLayoutItem>
+        </GridLayout>
+      </AudioPlayerComposable>
+    </StyledPage>
+  );
+};
+StoryAudioPlayerWithHls.storyName = 'audio-player-with-hls';

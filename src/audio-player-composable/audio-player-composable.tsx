@@ -34,6 +34,7 @@ import {AudioPlayerSkipNextButtonProps} from './components/skip-next-button/type
 import {AudioPlayerSkipPreviousButtonProps} from './components/skip-previous-button/types';
 import {AudioPlayerVolumeControlProps} from './components/volume-control/types';
 import {AudioPlayerPlaybackSpeedControlProps} from './components/playback-speed-control';
+import {useHlsStream} from './use-hls-stream';
 
 const defaultKeyboardShortcuts = {
   jumpToStart: ['0', 'Home'],
@@ -68,6 +69,8 @@ export const AudioPlayerComposable = ({
   const [displayDuration, setDisplayDuration] = useState(0);
 
   const [buffered, setBuffered] = useState<TimeRanges>();
+
+  const {isHlsStream, hlsInstance} = useHlsStream({src, audioRef, live});
 
   useEffect(() => {
     currentTimeRef.current = currentTime;
@@ -112,6 +115,8 @@ export const AudioPlayerComposable = ({
     setPlaybackSpeed,
     src,
     live,
+    isHlsStream,
+    hlsInstance,
   } as AudioFunctionDependencies);
 
   const getPlayPauseButtonProps = useCallback(
@@ -354,6 +359,7 @@ export const AudioPlayerComposable = ({
       <AudioPlayerProvider value={value}>
         <AudioElement
           audioRef={audioRef}
+          isHlsStream={isHlsStream}
           src={src}
           autoPlay={autoPlay}
           {...props}
