@@ -945,7 +945,7 @@ jobs:
 
             cd newskit-integration-test
             yalc add newskit
-            yarn add start-server-and-test
+            yarn add start-server-and-test@2.1.5 
             yarn add react@18.2
             yarn add react-dom@18.2
             yarn add @emotion/react
