@@ -7,6 +7,22 @@ export enum Devices {
   iPadPro = 'iPad Pro',
 }
 
+export interface PartialFontFace {
+  fontFamily: string;
+  fontWeight: string | number;
+  fontStyle?: 'normal' | 'italic' | 'oblique';
+  fontStretch?:
+    | 'ultra-condensed'
+    | 'extra-condensed'
+    | 'condensed'
+    | 'semi-condensed'
+    | 'normal'
+    | 'semi-expanded'
+    | 'expanded'
+    | 'extra-expanded'
+    | 'ultra-expanded';
+}
+
 export interface ThemeBase {
   // foundations
   motions: Record<string, string>;
@@ -16,6 +32,7 @@ export interface ThemeBase {
   colors: Record<string, string>;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   fonts: Record<string, any>;
+  fontFaces?: Record<string, PartialFontFace>;
   overlays: Record<string, string>;
   shadows: Record<string, string>;
   sizing: Record<string, string>;
