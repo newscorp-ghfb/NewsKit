@@ -2,13 +2,7 @@ import * as React from 'react';
 import {GridLayout} from 'newskit';
 import NextLink from 'next/link';
 import {Release, ReleasesPageProps} from '../utils/release-notes/types';
-import {
-  Explore,
-  Hero,
-  KeepInTouch,
-  SupportedBrands,
-  WhatsNew,
-} from '../components/homepage';
+import {Explore, Hero, KeepInTouch, WhatsNew} from '../components/homepage';
 import {FeatureCard} from '../components/feature-card';
 import Layout, {LayoutProps} from '../components/layout';
 import {IconFilledLaunch} from '../../src/icons';
@@ -133,9 +127,6 @@ const Index = ({releases, ...layoutProps}: LayoutProps & ReleasesPageProps) => {
           }}
         >
           <KeepInTouch />
-        </GridLayout>
-        <GridLayout overrides={GRID_SECTION_OVERRIDES}>
-          <SupportedBrands />
         </GridLayout>
       </GridLayout>
     </Layout>
