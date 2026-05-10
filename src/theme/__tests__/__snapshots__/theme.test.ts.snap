@@ -1395,6 +1395,9 @@ Object {
   "audioPlayerDvrRewindButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
+  "audioPlayerDvrStartButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
   "audioPlayerForwardButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },

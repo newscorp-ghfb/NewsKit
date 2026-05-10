@@ -11,6 +11,7 @@ Array [
   "AudioPlayerComposable",
   "AudioPlayerDvrForwardButton",
   "AudioPlayerDvrRewindButton",
+  "AudioPlayerDvrStartButton",
   "AudioPlayerForwardButton",
   "AudioPlayerPlayPauseButton",
   "AudioPlayerPlaybackSpeedControl",
