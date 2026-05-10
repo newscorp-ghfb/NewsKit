@@ -13,6 +13,8 @@ import {
   MuteButtonIconProps,
   AudioPlayerPlaybackSpeedControl,
   useAudioPlayerContext,
+  AudioPlayerDvrRewindButton,
+  AudioPlayerDvrForwardButton,
 } from '..';
 import {
   StorybookHeading,
@@ -1446,3 +1448,123 @@ export const StoryAudioPlayerWithHls = () => {
   );
 };
 StoryAudioPlayerWithHls.storyName = 'audio-player-with-hls';
+
+export const StoryAudioPlayerDvrControls = () => {
+  const seekStep = 10000;
+  const DVR_WINDOW_MS = 5 * 60 * 1000 + 5000;
+  const liveEdge = DVR_WINDOW_MS;
+  const rangeStart = 0;
+  const [currentPosition, setCurrentPosition] = React.useState(
+    DVR_WINDOW_MS - 60000,
+  );
+  const [isLive, setIsLive] = React.useState(false);
+
+  const handleSeek = (timestamp: number) => {
+    console.log('DVR seek to position:', timestamp);
+    setCurrentPosition(timestamp);
+    setIsLive(timestamp >= liveEdge);
+  };
+
+  const elapsedSec = Math.floor((currentPosition - rangeStart) / 1000);
+  const totalSec = Math.floor((liveEdge - rangeStart) / 1000);
+
+  return (
+    <StyledPage>
+      <div className="ready" />
+      <StorybookHeading>Audio Player - DVR Controls</StorybookHeading>
+
+      <AudioPlayerComposable
+        src={HLS_TIMES_STREAM}
+        live
+        ariaLandmark="DVR HLS audio player"
+      >
+        <GridLayout
+          columns="1fr 1fr 1fr"
+          rows="auto auto auto"
+          rowGap="16px"
+          columnGap="20px"
+        >
+          <GridLayoutItem>
+            <StorybookSubHeading>Play/Pause</StorybookSubHeading>
+            <AudioPlayerPlayPauseButton />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Volume</StorybookSubHeading>
+            <AudioPlayerVolumeControl layout="horizontal-expanded" />
+          </GridLayoutItem>
+          <GridLayoutItem>
+            <StorybookSubHeading>Live indicator</StorybookSubHeading>
+            <Flag
+              overrides={{
+                stylePreset: isLive
+                  ? 'flagMinimalInformative'
+                  : 'flagMinimalNegative',
+              }}
+            >
+              <IconFilledGraphicEq />
+              {isLive ? 'LIVE' : 'DVR'}
+            </Flag>
+          </GridLayoutItem>
+          <GridLayoutItem column="1/-1">
+            <StorybookSubHeading>
+              DVR Rewind / Forward buttons
+            </StorybookSubHeading>
+            <GridLayout
+              columns="auto auto"
+              columnGap="space040"
+              alignItems="center"
+              justifyContent="flex-start"
+            >
+              <AudioPlayerDvrRewindButton
+                onSeek={handleSeek}
+                currentPosition={currentPosition}
+                rangeStart={rangeStart}
+                liveEdge={liveEdge}
+                seekStep={seekStep}
+              />
+              <AudioPlayerDvrForwardButton
+                onSeek={handleSeek}
+                currentPosition={currentPosition}
+                rangeStart={rangeStart}
+                liveEdge={liveEdge}
+                seekStep={seekStep}
+                isLive={isLive}
+              />
+            </GridLayout>
+          </GridLayoutItem>
+        </GridLayout>
+      </AudioPlayerComposable>
+
+      <Block marginBlockEnd="space040" />
+      <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
+        <dt>
+          <StorybookSpan>Current Position</StorybookSpan>
+        </dt>
+        <dd>
+          <StorybookSpan>
+            {calculateTime(elapsedSec)} / {calculateTime(totalSec)}
+          </StorybookSpan>
+        </dd>
+        <dt>
+          <StorybookSpan>Is Live</StorybookSpan>
+        </dt>
+        <dd>
+          <StorybookSpan>{isLive ? 'Yes' : 'No'}</StorybookSpan>
+        </dd>
+        <dt>
+          <StorybookSpan>Range</StorybookSpan>
+        </dt>
+        <dd>
+          <StorybookSpan>
+            {new Date(rangeStart).toLocaleTimeString()} →{' '}
+            {new Date(liveEdge).toLocaleTimeString()}
+          </StorybookSpan>
+        </dd>
+      </GridLayout>
+    </StyledPage>
+  );
+};
+StoryAudioPlayerDvrControls.storyName = 'audio-player-dvr-controls';
+StoryAudioPlayerDvrControls.parameters = {
+  percy: {skip: true},
+};

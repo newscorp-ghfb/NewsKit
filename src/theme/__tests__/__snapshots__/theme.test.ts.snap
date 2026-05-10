@@ -1389,6 +1389,12 @@ Object {
       },
     },
   },
+  "audioPlayerDvrForwardButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerDvrRewindButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
   "audioPlayerForwardButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
