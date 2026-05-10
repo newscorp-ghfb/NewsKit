@@ -4,6 +4,7 @@ import {renderWithTheme} from '../../../../test/test-utils';
 import {AudioPlayerComposable} from '../../../audio-player-composable';
 import {AudioPlayerDvrRewindButton} from '../dvr-rewind-button';
 import {AudioPlayerDvrForwardButton} from '../dvr-forward-button';
+import {AudioPlayerDvrStartButton} from '../dvr-start-button';
 import {AudioPlayerDvrSeekButtonProps} from '../types';
 
 jest.mock('../../../use-hls-stream', () => ({
@@ -32,6 +33,13 @@ const defaultForwardProps: AudioPlayerDvrSeekButtonProps = {
   seekStep: 10000,
 };
 
+const defaultStartProps: AudioPlayerDvrSeekButtonProps = {
+  onSeek: jest.fn(),
+  currentPosition: NOW,
+  rangeStart: NOW - 60000,
+  liveEdge: NOW + 30000,
+};
+
 const renderRewindButton = (props: AudioPlayerDvrSeekButtonProps) =>
   renderWithTheme(AudioPlayerComposable, {
     src: AUDIO_SRC,
@@ -42,6 +50,12 @@ const renderForwardButton = (props: AudioPlayerDvrSeekButtonProps) =>
   renderWithTheme(AudioPlayerComposable, {
     src: AUDIO_SRC,
     children: <AudioPlayerDvrForwardButton {...props} />,
+  });
+
+const renderStartButton = (props: AudioPlayerDvrSeekButtonProps) =>
+  renderWithTheme(AudioPlayerComposable, {
+    src: AUDIO_SRC,
+    children: <AudioPlayerDvrStartButton {...props} />,
   });
 
 describe('AudioPlayerDvrRewindButton', () => {
@@ -210,5 +224,57 @@ describe('AudioPlayerDvrForwardButton', () => {
     expect(onSeek).toHaveBeenCalledWith(
       defaultForwardProps.currentPosition + 10000,
     );
+  });
+});
+
+describe('AudioPlayerDvrStartButton', () => {
+  const mediaElement = (window as any).HTMLMediaElement.prototype;
+
+  beforeAll(() => {
+    ['duration', 'seekable', 'buffered', 'paused', 'volume'].forEach(k => {
+      Object.defineProperty(mediaElement, k, {
+        writable: true,
+      });
+    });
+  });
+
+  beforeEach(() => {
+    mediaElement.load = jest.fn();
+    mediaElement.play = jest.fn();
+    mediaElement.pause = jest.fn();
+    jest.clearAllMocks();
+  });
+
+  it('renders correctly', () => {
+    const {getByTestId} = renderStartButton(defaultStartProps);
+    expect(getByTestId('audio-player-dvr-start-button')).toBeInTheDocument();
+  });
+
+  it('has correct aria-label', () => {
+    const {getByTestId} = renderStartButton(defaultStartProps);
+    expect(getByTestId('audio-player-dvr-start-button')).toHaveAttribute(
+      'aria-label',
+      'Go to start',
+    );
+  });
+
+  it('calls onSeek with rangeStart on click', () => {
+    const onSeek = jest.fn();
+    const {getByTestId} = renderStartButton({
+      ...defaultStartProps,
+      onSeek,
+    });
+
+    fireEvent.click(getByTestId('audio-player-dvr-start-button'));
+    expect(onSeek).toHaveBeenCalledWith(defaultStartProps.rangeStart);
+  });
+
+  it('is disabled when already at rangeStart', () => {
+    const {getByTestId} = renderStartButton({
+      ...defaultStartProps,
+      currentPosition: defaultStartProps.rangeStart,
+    });
+
+    expect(getByTestId('audio-player-dvr-start-button')).toBeDisabled();
   });
 });

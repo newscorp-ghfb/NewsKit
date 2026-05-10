@@ -15,6 +15,7 @@ import {
   useAudioPlayerContext,
   AudioPlayerDvrRewindButton,
   AudioPlayerDvrForwardButton,
+  AudioPlayerDvrStartButton,
 } from '..';
 import {
   StorybookHeading,
@@ -1507,14 +1508,20 @@ export const StoryAudioPlayerDvrControls = () => {
           </GridLayoutItem>
           <GridLayoutItem column="1/-1">
             <StorybookSubHeading>
-              DVR Rewind / Forward buttons
+              DVR Start / Rewind / Forward buttons
             </StorybookSubHeading>
             <GridLayout
-              columns="auto auto"
+              columns="auto auto auto"
               columnGap="space040"
               alignItems="center"
               justifyContent="flex-start"
             >
+              <AudioPlayerDvrStartButton
+                onSeek={handleSeek}
+                currentPosition={currentPosition}
+                rangeStart={rangeStart}
+                liveEdge={liveEdge}
+              />
               <AudioPlayerDvrRewindButton
                 onSeek={handleSeek}
                 currentPosition={currentPosition}
