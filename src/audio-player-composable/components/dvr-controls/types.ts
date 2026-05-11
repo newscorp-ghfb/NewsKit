@@ -20,3 +20,14 @@ export type AudioPlayerDvrSeekButtonProps = {
     stylePreset?: MQ<string>;
   };
 };
+
+export type AudioPlayerDvrLiveButtonProps = {
+  /** Callback to return to live edge */
+  onGoLive: () => void;
+  /** Whether playback is at the live edge */
+  isLive?: boolean;
+  /** Override styling */
+  overrides?: {
+    stylePreset?: MQ<string>;
+  };
+};

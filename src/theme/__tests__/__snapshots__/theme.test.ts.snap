@@ -1392,6 +1392,9 @@ Object {
   "audioPlayerDvrForwardButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
+  "audioPlayerDvrLiveButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
   "audioPlayerDvrRewindButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },

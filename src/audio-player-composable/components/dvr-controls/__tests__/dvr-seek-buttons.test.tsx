@@ -5,7 +5,11 @@ import {AudioPlayerComposable} from '../../../audio-player-composable';
 import {AudioPlayerDvrRewindButton} from '../dvr-rewind-button';
 import {AudioPlayerDvrForwardButton} from '../dvr-forward-button';
 import {AudioPlayerDvrStartButton} from '../dvr-start-button';
-import {AudioPlayerDvrSeekButtonProps} from '../types';
+import {AudioPlayerDvrLiveButton} from '../dvr-live-button';
+import {
+  AudioPlayerDvrSeekButtonProps,
+  AudioPlayerDvrLiveButtonProps,
+} from '../types';
 
 jest.mock('../../../use-hls-stream', () => ({
   useHlsStream: jest.fn(() => ({
@@ -56,6 +60,17 @@ const renderStartButton = (props: AudioPlayerDvrSeekButtonProps) =>
   renderWithTheme(AudioPlayerComposable, {
     src: AUDIO_SRC,
     children: <AudioPlayerDvrStartButton {...props} />,
+  });
+
+const defaultLiveProps: AudioPlayerDvrLiveButtonProps = {
+  onGoLive: jest.fn(),
+  isLive: false,
+};
+
+const renderLiveButton = (props: AudioPlayerDvrLiveButtonProps) =>
+  renderWithTheme(AudioPlayerComposable, {
+    src: AUDIO_SRC,
+    children: <AudioPlayerDvrLiveButton {...props} />,
   });
 
 describe('AudioPlayerDvrRewindButton', () => {
@@ -276,5 +291,66 @@ describe('AudioPlayerDvrStartButton', () => {
     });
 
     expect(getByTestId('audio-player-dvr-start-button')).toBeDisabled();
+  });
+});
+
+describe('AudioPlayerDvrLiveButton', () => {
+  const mediaElement = (window as any).HTMLMediaElement.prototype;
+
+  beforeAll(() => {
+    ['duration', 'seekable', 'buffered', 'paused', 'volume'].forEach(k => {
+      Object.defineProperty(mediaElement, k, {
+        writable: true,
+      });
+    });
+  });
+
+  beforeEach(() => {
+    mediaElement.load = jest.fn();
+    mediaElement.play = jest.fn();
+    mediaElement.pause = jest.fn();
+    jest.clearAllMocks();
+  });
+
+  it('renders correctly', () => {
+    const {getByTestId} = renderLiveButton(defaultLiveProps);
+    expect(getByTestId('audio-player-dvr-live-button')).toBeInTheDocument();
+  });
+
+  it('has correct aria-label', () => {
+    const {getByTestId} = renderLiveButton(defaultLiveProps);
+    expect(getByTestId('audio-player-dvr-live-button')).toHaveAttribute(
+      'aria-label',
+      'Go to live',
+    );
+  });
+
+  it('calls onGoLive on click', () => {
+    const onGoLive = jest.fn();
+    const {getByTestId} = renderLiveButton({
+      ...defaultLiveProps,
+      onGoLive,
+    });
+
+    fireEvent.click(getByTestId('audio-player-dvr-live-button'));
+    expect(onGoLive).toHaveBeenCalledTimes(1);
+  });
+
+  it('is disabled when isLive is true', () => {
+    const {getByTestId} = renderLiveButton({
+      ...defaultLiveProps,
+      isLive: true,
+    });
+
+    expect(getByTestId('audio-player-dvr-live-button')).toBeDisabled();
+  });
+
+  it('is not disabled when isLive is false', () => {
+    const {getByTestId} = renderLiveButton({
+      ...defaultLiveProps,
+      isLive: false,
+    });
+
+    expect(getByTestId('audio-player-dvr-live-button')).not.toBeDisabled();
   });
 });
