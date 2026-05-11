@@ -16,6 +16,7 @@ import {
   AudioPlayerDvrRewindButton,
   AudioPlayerDvrForwardButton,
   AudioPlayerDvrStartButton,
+  AudioPlayerDvrLiveButton,
 } from '..';
 import {
   StorybookHeading,
@@ -1508,10 +1509,10 @@ export const StoryAudioPlayerDvrControls = () => {
           </GridLayoutItem>
           <GridLayoutItem column="1/-1">
             <StorybookSubHeading>
-              DVR Start / Rewind / Forward buttons
+              DVR Start / Rewind / Forward / Live buttons
             </StorybookSubHeading>
             <GridLayout
-              columns="auto auto auto"
+              columns="auto auto auto auto"
               columnGap="space040"
               alignItems="center"
               justifyContent="flex-start"
@@ -1535,6 +1536,14 @@ export const StoryAudioPlayerDvrControls = () => {
                 rangeStart={rangeStart}
                 liveEdge={liveEdge}
                 seekStep={seekStep}
+                isLive={isLive}
+              />
+              <AudioPlayerDvrLiveButton
+                onGoLive={() => {
+                  console.log('Go to live');
+                  setCurrentPosition(liveEdge);
+                  setIsLive(true);
+                }}
                 isLive={isLive}
               />
             </GridLayout>
