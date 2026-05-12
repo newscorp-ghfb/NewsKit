@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconButton} from '../../../../icon-button';
-import {IconFilledForward10} from '../../../../icons';
+import {IconFilledDvrForward} from '../../../../icons';
 import {withOwnTheme} from '../../../../utils/with-own-theme';
 import {useButtonOverrides} from '../../../utils';
 import {useAudioPlayerContext} from '../../../context';
@@ -43,7 +43,7 @@ const ThemelessAudioPlayerDvrForwardButton = ({
       overrides={buttonOverrides}
       {...rest}
     >
-      <IconFilledForward10 />
+      <IconFilledDvrForward overrides={{size: 'iconSize030'}} />
     </IconButton>
   );
 };
