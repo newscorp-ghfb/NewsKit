@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconButton} from '../../../../icon-button';
-import {IconFilledSkipNext} from '../../../../icons';
+import {IconFilledDvrLive} from '../../../../icons';
 import {withOwnTheme} from '../../../../utils/with-own-theme';
 import {useButtonOverrides} from '../../../utils';
 import {useAudioPlayerContext} from '../../../context';
@@ -35,7 +35,7 @@ const ThemelessAudioPlayerDvrLiveButton = ({
       overrides={buttonOverrides}
       {...rest}
     >
-      <IconFilledSkipNext />
+      <IconFilledDvrLive overrides={{size: 'iconSize030'}} />
     </IconButton>
   );
 };
