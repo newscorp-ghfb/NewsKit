@@ -1398,6 +1398,24 @@ Object {
   "audioPlayerDvrRewindButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
+  "audioPlayerDvrSeekBar": Object {
+    "slider": Object {
+      "feedback": Object {
+        "size": "sizing060",
+      },
+      "indicator": Object {
+        "stylePreset": "seekBarIndicator",
+      },
+      "thumb": Object {
+        "size": "sizing040",
+        "stylePreset": "seekBarThumb",
+      },
+      "track": Object {
+        "size": "sizing020",
+        "stylePreset": "seekBarTrack",
+      },
+    },
+  },
   "audioPlayerDvrStartButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },

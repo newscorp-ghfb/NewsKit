@@ -17,6 +17,7 @@ import {
   AudioPlayerDvrForwardButton,
   AudioPlayerDvrStartButton,
   AudioPlayerDvrLiveButton,
+  AudioPlayerDvrSeekBar,
 } from '..';
 import {
   StorybookHeading,
@@ -1506,6 +1507,16 @@ export const StoryAudioPlayerDvrControls = () => {
               <IconFilledGraphicEq />
               {isLive ? 'LIVE' : 'DVR'}
             </Flag>
+          </GridLayoutItem>
+          <GridLayoutItem column="1/-1">
+            <StorybookSubHeading>DVR Seekbar</StorybookSubHeading>
+            <AudioPlayerDvrSeekBar
+              onSeek={handleSeek}
+              currentPosition={currentPosition}
+              rangeStart={rangeStart}
+              liveEdge={liveEdge}
+              seekStep={seekStep}
+            />
           </GridLayoutItem>
           <GridLayoutItem column="1/-1">
             <StorybookSubHeading>
