@@ -47,3 +47,15 @@ export type AudioPlayerDvrSeekBarProps = {
     slider?: SliderOverrideProps;
   };
 };
+
+export type AudioPlayerDvrTimeDisplayProps = {
+  /** Time value in milliseconds to display */
+  time: number;
+  /** Custom format function. Receives seconds, returns formatted string. Default: MM:SS or H:MM:SS */
+  format?: (seconds: number) => string;
+  /** Override styling */
+  overrides?: {
+    typographyPreset?: MQ<string>;
+    stylePreset?: MQ<string>;
+  };
+};

@@ -1419,6 +1419,10 @@ Object {
   "audioPlayerDvrStartButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
+  "audioPlayerDvrTimeDisplay": Object {
+    "stylePreset": "dvrTimeDisplay",
+    "typographyPreset": "utilityLabel020",
+  },
   "audioPlayerForwardButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
@@ -4465,6 +4469,12 @@ Object {
       "backgroundColor": "{{colors.interface010}}",
       "borderRadius": "{{borders.borderRadiusSharp}}",
       "boxShadow": "{{shadows.shadow060}}",
+    },
+  },
+  "dvrTimeDisplay": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}",
     },
   },
   "feedback": Object {
