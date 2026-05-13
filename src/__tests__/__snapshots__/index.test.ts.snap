@@ -12,6 +12,7 @@ Array [
   "AudioPlayerDvrForwardButton",
   "AudioPlayerDvrLiveButton",
   "AudioPlayerDvrRewindButton",
+  "AudioPlayerDvrSeekBar",
   "AudioPlayerDvrStartButton",
   "AudioPlayerForwardButton",
   "AudioPlayerPlayPauseButton",
