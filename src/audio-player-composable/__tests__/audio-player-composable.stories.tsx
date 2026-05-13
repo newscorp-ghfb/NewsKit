@@ -18,6 +18,7 @@ import {
   AudioPlayerDvrStartButton,
   AudioPlayerDvrLiveButton,
   AudioPlayerDvrSeekBar,
+  AudioPlayerDvrTimeDisplay,
 } from '..';
 import {
   StorybookHeading,
@@ -1515,8 +1516,19 @@ export const StoryAudioPlayerDvrControls = () => {
               currentPosition={currentPosition}
               rangeStart={rangeStart}
               liveEdge={liveEdge}
-              seekStep={seekStep}
             />
+          </GridLayoutItem>
+          <GridLayoutItem column="1/-1">
+            <GridLayout
+              columns="1fr 1fr"
+              columnGap="space020"
+              style={{paddingInline: '8px'}}
+            >
+              <AudioPlayerDvrTimeDisplay time={currentPosition - rangeStart} />
+              <GridLayoutItem justifySelf="end">
+                <AudioPlayerDvrTimeDisplay time={liveEdge - rangeStart} />
+              </GridLayoutItem>
+            </GridLayout>
           </GridLayoutItem>
           <GridLayoutItem column="1/-1">
             <StorybookSubHeading>
