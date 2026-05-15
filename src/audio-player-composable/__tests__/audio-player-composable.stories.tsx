@@ -1454,6 +1454,7 @@ export const StoryAudioPlayerWithHls = () => {
 StoryAudioPlayerWithHls.storyName = 'audio-player-with-hls';
 
 export const StoryAudioPlayerDvrControls = () => {
+  const breakpointKey = useBreakpointKey();
   const seekStep = 10000;
   const DVR_WINDOW_MS = 5 * 60 * 1000 + 5000;
   const liveEdge = DVR_WINDOW_MS;
@@ -1482,43 +1483,15 @@ export const StoryAudioPlayerDvrControls = () => {
         live
         ariaLandmark="DVR HLS audio player"
       >
-        <GridLayout
-          columns="1fr 1fr 1fr"
-          rows="auto auto auto"
-          rowGap="16px"
-          columnGap="20px"
-        >
-          <GridLayoutItem>
-            <StorybookSubHeading>Play/Pause</StorybookSubHeading>
-            <AudioPlayerPlayPauseButton />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Volume</StorybookSubHeading>
-            <AudioPlayerVolumeControl layout="horizontal-expanded" />
-          </GridLayoutItem>
-          <GridLayoutItem>
-            <StorybookSubHeading>Live indicator</StorybookSubHeading>
-            <Flag
-              overrides={{
-                stylePreset: isLive
-                  ? 'flagMinimalInformative'
-                  : 'flagMinimalNegative',
-              }}
-            >
-              <IconFilledGraphicEq />
-              {isLive ? 'LIVE' : 'DVR'}
-            </Flag>
-          </GridLayoutItem>
-          <GridLayoutItem column="1/-1">
-            <StorybookSubHeading>DVR Seekbar</StorybookSubHeading>
+        <GridLayout columns="1fr" rowGap="space020">
+          {/* Row 1: Seekbar + Time labels */}
+          <GridLayout columns="1fr" rowGap="space010">
             <AudioPlayerDvrSeekBar
               onSeek={handleSeek}
               currentPosition={currentPosition}
               rangeStart={rangeStart}
               liveEdge={liveEdge}
             />
-          </GridLayoutItem>
-          <GridLayoutItem column="1/-1">
             <GridLayout
               columns="1fr 1fr"
               columnGap="space020"
@@ -1529,16 +1502,26 @@ export const StoryAudioPlayerDvrControls = () => {
                 <AudioPlayerDvrTimeDisplay time={liveEdge - rangeStart} />
               </GridLayoutItem>
             </GridLayout>
-          </GridLayoutItem>
-          <GridLayoutItem column="1/-1">
-            <StorybookSubHeading>
-              DVR Start / Rewind / Forward / Live buttons
-            </StorybookSubHeading>
+          </GridLayout>
+          {/* Row 2: Controls row */}
+          <GridLayout
+            columns={{
+              xs: '1fr',
+              md: '1fr auto 1fr',
+            }}
+            columnGap="space040"
+            alignItems="center"
+          >
+            {breakpointKey !== 'xs' && breakpointKey !== 'sm' && (
+              <GridLayoutItem justifySelf="start">
+                <AudioPlayerVolumeControl layout="horizontal-expanded" />
+              </GridLayoutItem>
+            )}
             <GridLayout
-              columns="auto auto auto auto"
+              columns="auto auto auto auto auto"
               columnGap="space040"
               alignItems="center"
-              justifyContent="flex-start"
+              justifyContent="center"
             >
               <AudioPlayerDvrStartButton
                 onSeek={handleSeek}
@@ -1553,6 +1536,7 @@ export const StoryAudioPlayerDvrControls = () => {
                 liveEdge={liveEdge}
                 seekStep={seekStep}
               />
+              <AudioPlayerPlayPauseButton />
               <AudioPlayerDvrForwardButton
                 onSeek={handleSeek}
                 currentPosition={currentPosition}
@@ -1570,7 +1554,21 @@ export const StoryAudioPlayerDvrControls = () => {
                 isLive={isLive}
               />
             </GridLayout>
-          </GridLayoutItem>
+            {breakpointKey !== 'xs' && breakpointKey !== 'sm' && (
+              <GridLayoutItem justifySelf="end">
+                <Flag
+                  overrides={{
+                    stylePreset: isLive
+                      ? 'flagMinimalInformative'
+                      : 'flagMinimalNegative',
+                  }}
+                >
+                  <IconFilledGraphicEq />
+                  {isLive ? 'LIVE' : 'DVR'}
+                </Flag>
+              </GridLayoutItem>
+            )}
+          </GridLayout>
         </GridLayout>
       </AudioPlayerComposable>
 
