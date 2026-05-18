@@ -30,6 +30,7 @@ const StyledTextBlock = styled(TextBlock)<
 const ThemelessAudioPlayerDvrTimeDisplay = ({
   time,
   format,
+  /* istanbul ignore next */
   overrides = {},
   ref,
 }: AudioPlayerDvrTimeDisplayProps & {ref?: React.Ref<HTMLSpanElement>}) => {

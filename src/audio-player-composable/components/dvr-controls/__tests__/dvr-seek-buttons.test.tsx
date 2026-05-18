@@ -19,7 +19,7 @@ jest.mock('../../../use-hls-stream', () => ({
 }));
 
 const NOW = 1700000000000;
-const AUDIO_SRC = '/audio_file_1.mp3';
+const AUDIO_SRC = '/live-stream.m3u8';
 
 const defaultRewindProps: AudioPlayerDvrSeekButtonProps = {
   onSeek: jest.fn(),

@@ -11,7 +11,7 @@ jest.mock('../../../use-hls-stream', () => ({
   })),
 }));
 
-const AUDIO_SRC = '/audio_file_1.mp3';
+const AUDIO_SRC = '/live-stream.m3u8';
 
 const defaultProps: AudioPlayerDvrTimeDisplayProps = {
   time: 125000, // 2 minutes 5 seconds
@@ -86,7 +86,7 @@ describe('AudioPlayerDvrTimeDisplay', () => {
   });
 
   it('floors partial seconds', () => {
-    const {getByTestId} = renderTimeDisplay({time: 61999}); // 61.999s
+    const {getByTestId} = renderTimeDisplay({time: 61999});
     expect(getByTestId('audio-player-dvr-time-display')).toHaveTextContent(
       '1:01',
     );
