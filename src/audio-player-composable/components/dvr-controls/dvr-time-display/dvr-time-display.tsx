@@ -19,7 +19,9 @@ const formatDvrTime = (seconds: number): string => {
   return `${m}:${String(s).padStart(2, '0')}`;
 };
 
-const StyledTextBlock = styled(TextBlock)<AudioPlayerDvrTimeDisplayProps>`
+const StyledTextBlock = styled(TextBlock)<
+  Pick<AudioPlayerDvrTimeDisplayProps, 'overrides'>
+>`
   display: block;
   ${getStylePreset('audioPlayerDvrTimeDisplay', '')}
   ${getTypographyPreset('audioPlayerDvrTimeDisplay', '')};
@@ -38,7 +40,7 @@ const ThemelessAudioPlayerDvrTimeDisplay = ({
 
   return (
     <StyledTextBlock
-      ref={ref}
+      ref={ref as React.Ref<HTMLParagraphElement>}
       as="span"
       overrides={overrides}
       data-testid="audio-player-dvr-time-display"
