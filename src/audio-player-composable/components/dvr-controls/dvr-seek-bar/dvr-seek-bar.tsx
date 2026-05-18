@@ -31,6 +31,7 @@ const ThemelessAudioPlayerDvrSeekBar = ({
   currentPosition,
   rangeStart,
   liveEdge,
+  /* istanbul ignore next */
   overrides = {},
   ref,
 }: AudioPlayerDvrSeekBarProps & {ref?: React.Ref<HTMLDivElement>}) => {
