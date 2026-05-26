@@ -1456,11 +1456,10 @@ StoryAudioPlayerWithHls.storyName = 'audio-player-with-hls';
 export const StoryAudioPlayerDvrControls = () => {
   const breakpointKey = useBreakpointKey();
   const seekStep = 10000;
-  const DVR_WINDOW_MS = 5 * 60 * 1000 + 5000;
-  const liveEdge = DVR_WINDOW_MS;
+  const liveEdge = 5 * 60 * 1000 + 5000;
   const rangeStart = 0;
   const [currentPosition, setCurrentPosition] = React.useState(
-    DVR_WINDOW_MS - 60000,
+    liveEdge - 60000,
   );
   const [isLive, setIsLive] = React.useState(false);
 
