@@ -115,9 +115,8 @@ const ThemelessAudioPlayerDvrSeekBar = ({
           values={[displayValue]}
           dragged={isDragged}
           onKeyDown={(e: React.KeyboardEvent) => {
-            const spaceKeyCode = 32;
             /* istanbul ignore next */
-            if (e.keyCode === spaceKeyCode) e.preventDefault();
+            if (e.keyCode === 32) e.preventDefault();
           }}
           style={{
             background: getTrackBackground({
