@@ -1399,6 +1399,9 @@ Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
   "audioPlayerDvrSeekBar": Object {
+    "buffering": Object {
+      "stylePreset": "seekBarBuffering",
+    },
     "slider": Object {
       "feedback": Object {
         "size": "sizing060",
