@@ -1,5 +1,4 @@
 import React, {useCallback, useState} from 'react';
-import {getTrackBackground} from 'react-range';
 import {useAudioPlayerContext} from '../../../context';
 import {Slider, SliderProps, RenderTrackFunction} from '../../../../slider';
 import {StyledTrack} from '../../../../slider/styled';
@@ -10,7 +9,7 @@ import {getToken} from '../../../../utils/get-token';
 import {getSingleStylePreset} from '../../../../utils';
 import {withOwnTheme} from '../../../../utils/with-own-theme';
 import {useTheme} from '../../../../theme';
-import {AudioPlayerDvrSeekBarProps} from '../types';
+import {AudioPlayerDvrSeekBarProps, DEFAULT_DVR_SEEK_STEP} from '../types';
 import defaults from './defaults';
 import seekBarStylePresets from '../../seek-bar/style-presets';
 
@@ -30,7 +29,9 @@ const ThemelessAudioPlayerDvrSeekBar = ({
   onSeek,
   currentPosition,
   rangeStart,
+  rangeEnd,
   liveEdge,
+  seekStep = DEFAULT_DVR_SEEK_STEP,
   /* istanbul ignore next */
   overrides = {},
   ref,
@@ -48,35 +49,39 @@ const ThemelessAudioPlayerDvrSeekBar = ({
 
   const [srOnlyHint] = useReactKeys(1);
 
-  const durationMs = Math.max(liveEdge - rangeStart, 0);
-  const durationSeconds = Math.floor(durationMs / 1000);
-  const maxValue = durationSeconds || 1;
+  const totalDurationMs = Math.max(rangeEnd - rangeStart, 0);
+  const totalDurationSeconds = Math.floor(totalDurationMs / 1000);
+  const maxValue = totalDurationSeconds || 1;
+
+  const liveEdgeMs = Math.max(liveEdge - rangeStart, 0);
+  const liveEdgeSeconds = Math.min(Math.floor(liveEdgeMs / 1000), maxValue);
 
   const currentRelativeMs = Math.max(
     0,
-    Math.min(currentPosition - rangeStart, durationMs),
+    Math.min(currentPosition - rangeStart, liveEdgeMs),
   );
   const currentSeconds = Math.floor(currentRelativeMs / 1000);
 
   const displayValue = isDragging ? dragValue : currentSeconds;
 
-  const handleChange = useCallback(([value]: number[]) => {
-    setIsDragging(true);
-    setDragValue(value);
-  }, []);
+  const handleChange = useCallback(
+    ([value]: number[]) => {
+      setIsDragging(true);
+      setDragValue(Math.min(value, liveEdgeSeconds));
+    },
+    [liveEdgeSeconds],
+  );
 
   const handleFinalChange = useCallback(
     ([value]: number[]) => {
       setIsDragging(false);
-      const clampedSeconds = Math.min(value, durationSeconds);
+      const clampedSeconds = Math.min(value, liveEdgeSeconds);
 
       if (clampedSeconds === currentSeconds) return;
 
-      const targetTimestamp = rangeStart + clampedSeconds * 1000;
-
-      onSeek(targetTimestamp);
+      onSeek(rangeStart + clampedSeconds * 1000);
     },
-    [rangeStart, onSeek, durationSeconds, currentSeconds],
+    [rangeStart, onSeek, liveEdgeSeconds, currentSeconds],
   );
 
   const renderTrack: SliderProps['renderTrack'] = useCallback<RenderTrackFunction>(
@@ -95,11 +100,11 @@ const ThemelessAudioPlayerDvrSeekBar = ({
         'stylePreset',
       );
 
-      const trackColor = getSingleStylePreset(
-        theme,
-        'base',
-        'backgroundColor',
-        trackStylePreset,
+      const bufferingStylePreset = getToken(
+        {theme, overrides},
+        'audioPlayerDvrSeekBar.buffering',
+        'buffering',
+        'stylePreset',
       );
 
       const indicatorColor = getSingleStylePreset(
@@ -108,6 +113,32 @@ const ThemelessAudioPlayerDvrSeekBar = ({
         'backgroundColor',
         indicatorStylePreset,
       );
+
+      const bufferingColor = getSingleStylePreset(
+        theme,
+        'base',
+        'backgroundColor',
+        bufferingStylePreset,
+      );
+
+      const trackColor = getSingleStylePreset(
+        theme,
+        'base',
+        'backgroundColor',
+        trackStylePreset,
+      );
+
+      const playedPct = (displayValue / maxValue) * 100;
+      const liveEdgePct = (liveEdgeSeconds / maxValue) * 100;
+
+      const gradient = [
+        `${indicatorColor}  0%`,
+        `${indicatorColor}  ${playedPct}%`,
+        `${bufferingColor}  ${playedPct}%`,
+        `${bufferingColor}  ${liveEdgePct}%`,
+        `${trackColor}      ${liveEdgePct}%`,
+        `${trackColor}      100%`,
+      ].join(', ');
 
       return (
         <StyledTrack
@@ -118,14 +149,7 @@ const ThemelessAudioPlayerDvrSeekBar = ({
             /* istanbul ignore next */
             if (e.keyCode === 32) e.preventDefault();
           }}
-          style={{
-            background: getTrackBackground({
-              values: [displayValue],
-              colors: [indicatorColor, trackColor],
-              min: 0,
-              max: maxValue,
-            }),
-          }}
+          style={{background: `linear-gradient(to right, ${gradient})`}}
           data-testid="dvr-seek-bar-track"
           overrides={{
             ...sliderDefaults,
@@ -136,11 +160,19 @@ const ThemelessAudioPlayerDvrSeekBar = ({
         </StyledTrack>
       );
     },
-    [theme, overrides, sliderDefaults, sliderOverrides, displayValue, maxValue],
+    [
+      theme,
+      overrides,
+      sliderDefaults,
+      sliderOverrides,
+      displayValue,
+      maxValue,
+      liveEdgeSeconds,
+    ],
   );
 
   const elapsedText = formatDvrAriaValueText(displayValue);
-  const totalText = formatDvrAriaValueText(durationSeconds);
+  const totalText = formatDvrAriaValueText(liveEdgeSeconds);
 
   return (
     <>
@@ -149,7 +181,7 @@ const ThemelessAudioPlayerDvrSeekBar = ({
         min={0}
         max={maxValue}
         values={[displayValue]}
-        step={1}
+        step={seekStep / 1000}
         ariaLabel="DVR seek bar"
         ariaValueText={`Playback position: ${elapsedText} of ${totalText}`}
         onChange={handleChange}

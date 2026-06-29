@@ -1458,6 +1458,7 @@ export const StoryAudioPlayerDvrControls = () => {
   const seekStep = 10000;
   const liveEdge = 5 * 60 * 1000 + 5000;
   const rangeStart = 0;
+  const rangeEnd = 10 * 60 * 1000;
   const [currentPosition, setCurrentPosition] = React.useState(
     liveEdge - 60000,
   );
@@ -1470,13 +1471,12 @@ export const StoryAudioPlayerDvrControls = () => {
   };
 
   const elapsedSec = Math.floor((currentPosition - rangeStart) / 1000);
-  const totalSec = Math.floor((liveEdge - rangeStart) / 1000);
+  const totalSec = Math.floor(rangeEnd / 1000);
 
   return (
     <StyledPage>
       <div className="ready" />
       <StorybookHeading>Audio Player - DVR Controls</StorybookHeading>
-
       <AudioPlayerComposable
         src={HLS_TIMES_STREAM}
         live
@@ -1490,6 +1490,7 @@ export const StoryAudioPlayerDvrControls = () => {
               currentPosition={currentPosition}
               rangeStart={rangeStart}
               liveEdge={liveEdge}
+              rangeEnd={rangeEnd}
             />
             <GridLayout
               columns="1fr 1fr"
@@ -1498,7 +1499,7 @@ export const StoryAudioPlayerDvrControls = () => {
             >
               <AudioPlayerDvrTimeDisplay time={currentPosition - rangeStart} />
               <GridLayoutItem justifySelf="end">
-                <AudioPlayerDvrTimeDisplay time={liveEdge - rangeStart} />
+                <AudioPlayerDvrTimeDisplay time={rangeEnd} />
               </GridLayoutItem>
             </GridLayout>
           </GridLayout>
@@ -1593,7 +1594,7 @@ export const StoryAudioPlayerDvrControls = () => {
         <dd>
           <StorybookSpan>
             {new Date(rangeStart).toLocaleTimeString()} →{' '}
-            {new Date(liveEdge).toLocaleTimeString()}
+            {new Date(rangeEnd).toLocaleTimeString()}
           </StorybookSpan>
         </dd>
       </GridLayout>
