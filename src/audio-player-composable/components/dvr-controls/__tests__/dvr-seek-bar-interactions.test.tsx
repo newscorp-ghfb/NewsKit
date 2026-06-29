@@ -38,6 +38,7 @@ const defaultProps: AudioPlayerDvrSeekBarProps = {
   onSeek: jest.fn(),
   currentPosition: NOW - 30000,
   rangeStart: NOW - 300000,
+  rangeEnd: NOW + 300000,
   liveEdge: NOW,
 };
 

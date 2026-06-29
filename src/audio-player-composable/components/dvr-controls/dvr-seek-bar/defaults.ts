@@ -16,5 +16,8 @@ export default {
         size: 'sizing060',
       },
     },
+    buffering: {
+      stylePreset: 'seekBarBuffering',
+    },
   },
 };

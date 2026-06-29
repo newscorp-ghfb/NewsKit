@@ -18,7 +18,9 @@ const defaultProps: AudioPlayerDvrSeekBarProps = {
   onSeek: jest.fn(),
   currentPosition: NOW - 30000,
   rangeStart: NOW - 300000,
+  rangeEnd: NOW + 300000,
   liveEdge: NOW,
+  seekStep: 10000,
 };
 
 const renderSeekBar = (props: AudioPlayerDvrSeekBarProps) =>
@@ -65,7 +67,7 @@ describe('AudioPlayerDvrSeekBar', () => {
     const {getByRole} = renderSeekBar(defaultProps);
     const slider = getByRole('slider');
     expect(slider).toHaveAttribute('aria-valuemin', '0');
-    expect(slider).toHaveAttribute('aria-valuemax', '300');
+    expect(slider).toHaveAttribute('aria-valuemax', '600');
   });
 
   it('has correct aria-valuenow based on currentPosition', () => {
@@ -111,6 +113,7 @@ describe('AudioPlayerDvrSeekBar', () => {
     const {getByRole} = renderSeekBar({
       ...defaultProps,
       rangeStart: NOW,
+      rangeEnd: NOW,
       liveEdge: NOW,
       currentPosition: NOW,
     });
@@ -123,6 +126,8 @@ describe('AudioPlayerDvrSeekBar', () => {
       onSeek: jest.fn(),
       currentPosition: NOW - 7200000 + 3661000,
       rangeStart: NOW - 7200000,
+      rangeEnd: NOW + 7200000,
+      seekStep: 1000,
       liveEdge: NOW,
     });
     const slider = getByRole('slider');

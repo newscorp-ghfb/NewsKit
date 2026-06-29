@@ -40,11 +40,17 @@ export type AudioPlayerDvrSeekBarProps = {
   currentPosition: number;
   /** Start of the rewindable range as a ms epoch timestamp */
   rangeStart: number;
+  /** End of the rewindable range as a ms epoch timestamp */
+  rangeEnd: number;
   /** Current live edge as a ms epoch timestamp */
   liveEdge: number;
-  /** Override styling */
+  /** Seek step in ms. Default: 10000 (10s) */
+  seekStep?: number;
   overrides?: {
     slider?: SliderOverrideProps;
+    buffering?: {
+      stylePreset?: string;
+    };
   };
 };
 
