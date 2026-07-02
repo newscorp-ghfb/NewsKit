@@ -70,7 +70,17 @@ export const AudioPlayerComposable = ({
 
   const [buffered, setBuffered] = useState<TimeRanges>();
 
-  const {isHlsStream, hlsInstance} = useHlsStream({src, audioRef, live});
+  const playingRef = useRef(playing);
+  useEffect(() => {
+    playingRef.current = playing;
+  }, [playing]);
+
+  const {isHlsStream, hlsInstance} = useHlsStream({
+    src,
+    audioRef,
+    live,
+    playingRef,
+  });
 
   useEffect(() => {
     currentTimeRef.current = currentTime;
