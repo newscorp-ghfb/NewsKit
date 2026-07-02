@@ -1,5 +1,5 @@
 import {RefObject, useEffect, useRef} from 'react';
-import {isSafari} from './utils';
+import {isSafari, safePlay} from './utils';
 import {HlsInstance} from './types';
 import Hls from 'hls.js';
 
@@ -7,6 +7,7 @@ type useHlsPlayerOptions = {
   src: string;
   audioRef?: RefObject<HTMLAudioElement | null>;
   live?: boolean;
+  playingRef?: RefObject<boolean>;
 };
 
 type useHlsPlayerReturn = {
@@ -26,9 +27,16 @@ export const useHlsStream = ({
   src,
   audioRef,
   live,
+  playingRef,
 }: useHlsPlayerOptions): useHlsPlayerReturn => {
   const hlsRef = useRef<HlsInstance | null>(null);
   const isHls = isHlsUrl(src);
+
+  const resumePlayIfNeeded = (audio: HTMLAudioElement) => {
+    if (playingRef?.current) {
+      safePlay(audio);
+    }
+  };
 
   const initializeHls = (audio: HTMLAudioElement, src: string) => {
     if (!Hls.isSupported()) {
@@ -103,6 +111,10 @@ export const useHlsStream = ({
       hls.attachMedia(el);
       hls.loadSource(audioSrc);
 
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        resumePlayIfNeeded(el);
+      });
+
       hls.on(Hls.Events.ERROR, (_e, data) => {
         if (!data.fatal) return;
         switch (data.type) {
@@ -135,7 +147,16 @@ export const useHlsStream = ({
 
     if (shouldUseNativeHls) {
       audio.src = src;
+
+      const onCanPlay = () => {
+        resumePlayIfNeeded(audio);
+        audio.removeEventListener('canplay', onCanPlay);
+      };
+      audio.addEventListener('canplay', onCanPlay);
+
       return () => {
+        audio.pause();
+        audio.removeEventListener('canplay', onCanPlay);
         audio.src = '';
         audio.load();
       };
@@ -144,6 +165,7 @@ export const useHlsStream = ({
     initializeHls(audio, src);
 
     return () => {
+      audio.pause();
       hlsRef.current?.stopLoad();
       hlsRef.current?.detachMedia();
       hlsRef.current?.destroy();
