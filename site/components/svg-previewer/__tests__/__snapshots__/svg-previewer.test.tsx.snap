@@ -956,7 +956,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-theme-element"
-            id="downshift-17-toggle-button"
+            id="downshift-19-toggle-button"
             type="button"
             value="Patterns Theme"
           >
@@ -1104,7 +1104,7 @@ exports[`SvgPreviewer should change theme colors correctly when selecting a diff
             aria-haspopup="listbox"
             class="emotion-5"
             data-testid="select-button"
-            id="downshift-21-toggle-button"
+            id="downshift-23-toggle-button"
             type="button"
             value="0"
           >
