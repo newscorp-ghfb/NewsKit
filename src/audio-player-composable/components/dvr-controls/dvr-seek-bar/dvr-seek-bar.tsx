@@ -60,7 +60,10 @@ const ThemelessAudioPlayerDvrSeekBar = ({
     0,
     Math.min(currentPosition - rangeStart, liveEdgeMs),
   );
-  const currentSeconds = Math.floor(currentRelativeMs / 1000);
+  const currentSeconds = Math.min(
+    Math.floor(currentRelativeMs / 1000),
+    liveEdgeSeconds,
+  );
 
   const displayValue = isDragging ? dragValue : currentSeconds;
 
