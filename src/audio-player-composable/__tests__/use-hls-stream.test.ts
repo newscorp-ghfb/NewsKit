@@ -35,9 +35,13 @@ jest.mock('hls.js', () => {
   };
 });
 
-jest.mock('../utils', () => ({
-  isSafari: jest.fn(),
-}));
+jest.mock('../utils', () => {
+  const originalModule = jest.requireActual('../utils');
+  return {
+    ...originalModule,
+    isSafari: jest.fn(),
+  };
+});
 
 const createMockAudioElement = () => {
   const mockAudioElement = ({

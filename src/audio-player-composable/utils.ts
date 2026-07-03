@@ -90,9 +90,12 @@ export const isSafari = (): boolean => {
 };
 
 export const safePlay = (audio: HTMLAudioElement): void => {
-  void audio.play().catch(err => {
-    if (err.name !== 'AbortError') {
-      console.error(err);
-    }
-  });
+  const playPromise = audio.play();
+  if (playPromise !== undefined) {
+    void playPromise.catch(err => {
+      if (err.name !== 'AbortError') {
+        console.error(err);
+      }
+    });
+  }
 };

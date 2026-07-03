@@ -350,6 +350,7 @@ describe('Audio Player Composable', () => {
     });
     mediaElement.play = jest.fn(() => {
       mediaElement.paused = false;
+      return Promise.resolve();
     });
     mediaElement.pause = jest.fn(() => {
       mediaElement.paused = true;
