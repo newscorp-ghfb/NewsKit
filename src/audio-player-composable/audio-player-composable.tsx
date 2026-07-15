@@ -46,6 +46,7 @@ export const AudioPlayerComposable = ({
   src,
   autoPlay = false,
   live = false,
+  livePause = false,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
   initialVolume = 0.7,
@@ -79,6 +80,7 @@ export const AudioPlayerComposable = ({
     src,
     audioRef,
     live,
+    livePause,
     playingRef,
   });
 
@@ -125,6 +127,7 @@ export const AudioPlayerComposable = ({
     setPlaybackSpeed,
     src,
     live,
+    canPause: !live || livePause,
     isHlsStream,
     hlsInstance,
   } as AudioFunctionDependencies);
@@ -141,7 +144,7 @@ export const AudioPlayerComposable = ({
       let playStateIcon = <IconFilledPlayArrow />;
       let ariaLabel = 'Play';
       let ariaPressed = false;
-      const canPause = !live;
+      const canPause = !live || livePause;
 
       if (playing) {
         ariaPressed = true;
@@ -172,7 +175,7 @@ export const AudioPlayerComposable = ({
         canPause: boolean;
       };
     },
-    [live, loading, playing, togglePlay],
+    [live, livePause, loading, playing, togglePlay],
   );
 
   const getForwardButtonProps = useCallback(

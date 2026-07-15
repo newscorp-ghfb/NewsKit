@@ -1480,6 +1480,7 @@ export const StoryAudioPlayerDvrControls = () => {
       <AudioPlayerComposable
         src={HLS_TIMES_STREAM}
         live
+        livePause={true}
         ariaLandmark="DVR HLS audio player"
       >
         <GridLayout columns="1fr" rowGap="space020">
