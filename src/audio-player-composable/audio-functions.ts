@@ -11,6 +11,7 @@ export const useAudioFunctions = ({
   autoPlay,
   src,
   live,
+  canPause,
   duration,
   loading,
   playing,
@@ -225,12 +226,12 @@ export const useAudioFunctions = ({
 
       fireEvent(
         getTrackingInformation(
-          live ? 'audio-player-stop-button' : 'audio-player-pause-button',
+          canPause ? 'audio-player-pause-button' : 'audio-player-stop-button',
           EventTrigger.Click,
         ),
       );
     }
-  }, [playing, pause, fireEvent, live, getTrackingInformation]);
+  }, [playing, pause, fireEvent, canPause, getTrackingInformation]);
 
   const togglePlay = useCallback(() => {
     if (loading) {

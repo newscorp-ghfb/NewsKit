@@ -7,6 +7,7 @@ type useHlsPlayerOptions = {
   src: string;
   audioRef?: RefObject<HTMLAudioElement | null>;
   live?: boolean;
+  livePause?: boolean;
   playingRef?: RefObject<boolean>;
 };
 
@@ -27,6 +28,7 @@ export const useHlsStream = ({
   src,
   audioRef,
   live,
+  livePause,
   playingRef,
 }: useHlsPlayerOptions): useHlsPlayerReturn => {
   const hlsRef = useRef<HlsInstance | null>(null);
@@ -37,6 +39,8 @@ export const useHlsStream = ({
       safePlay(audio);
     }
   };
+
+  const dvrConfig = livePause ? {liveMaxLatencyDurationCount: Infinity} : {};
 
   const initializeHls = (audio: HTMLAudioElement, src: string) => {
     if (!Hls.isSupported()) {
@@ -49,10 +53,10 @@ export const useHlsStream = ({
         enableWorker: true,
         liveSyncDurationCount: 3,
         liveMaxLatencyDurationCount: 6,
+        ...dvrConfig,
         liveDurationInfinity: true,
         maxLiveSyncPlaybackRate: 1,
-        maxBufferLength: 30,
-        maxBufferSize: 5 * 1000 * 1000,
+        maxBufferLength: 120,
         maxBufferHole: 0.5,
         highBufferWatchdogPeriod: 3,
         nudgeOffset: 0.1,
