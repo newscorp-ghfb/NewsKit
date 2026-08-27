@@ -8,8 +8,7 @@ orbs:
 
 slack_notify: &slack_notify
   event: 'fail'
-  channel: '#newskit-all-team'
-  mentions: '@newskitdevs'
+  channel: '#newskit'
   branch_pattern: 'main'
   # The following tag_pattern allows slack messages to be sent also when workflows are triggered by tags.
   # Such as in the release process. The tags MUST mirror the one used by release workflows filters.
@@ -46,11 +45,94 @@ slack_notify: &slack_notify
           ]
         },
         {
+          "type": "actions",
+          "elements": [
+            {
+              "type": "button",
+              "text": {
+                "type": "plain_text",
+                "text": "View Job"
+              },
+              "url": "${CIRCLE_BUILD_URL}"
+            }
+          ]
+        }
+      ]
+    }
+
+# Release publish notification. Posts to #newskit on a version tag build.
+slack_publish_notify: &slack_publish_notify
+  event: 'pass'
+  channel: '#newskit'
+  tag_pattern: 'v([0-9]+)(\.([0-9]+)){2}'
+  custom: |
+    {
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": ":large_green_circle: *${CIRCLE_PROJECT_REPONAME}* has been published from the *${CIRCLE_JOB}* job."
+          }
+        },
+        {
           "type": "section",
           "fields": [
             {
               "type": "mrkdwn",
-              "text": "*Mentions*: $SLACK_PARAM_MENTIONS"
+              "text": "*Branch*: $CIRCLE_BRANCH"
+            },
+            {
+              "type": "mrkdwn",
+              "text": "*Tag*: $CIRCLE_TAG"
+            }
+          ]
+        },
+        {
+          "type": "actions",
+          "elements": [
+            {
+              "type": "button",
+              "text": {
+                "type": "plain_text",
+                "text": "View Job"
+              },
+              "url": "${CIRCLE_BUILD_URL}"
+            }
+          ]
+        }
+      ]
+    }
+
+# Unstable/dev publish notification. Posts to #newskit on a main branch build.
+slack_publish_dev_notify: &slack_publish_dev_notify
+  event: 'pass'
+  channel: '#newskit'
+  branch_pattern: 'main'
+  custom: |
+    {
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": ":test_tube: *${CIRCLE_PROJECT_REPONAME}* unstable build published to npm (dist-tag `unstable`) from the *${CIRCLE_JOB}* job."
+          }
+        },
+        {
+          "type": "section",
+          "fields": [
+            {
+              "type": "mrkdwn",
+              "text": "*Branch*: $CIRCLE_BRANCH"
+            },
+            {
+              "type": "mrkdwn",
+              "text": "*Version*: `newskit@${UNSTABLE_VERSION}`"
+            },
+            {
+              "type": "mrkdwn",
+              "text": "*Commit*: <https://github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/commit/${CIRCLE_SHA1}|${SHORT_SHA}>"
             }
           ]
         },
@@ -122,13 +204,58 @@ executors:
       - image: cimg/openjdk:8u252-jdk-buster
 
 commands:
+  load_ci_secrets:
+    description: 'Load CI credentials from AWS Secrets Manager into $BASH_ENV via OIDC'
+    steps:
+      - run:
+          name: 'Set AWS region for OIDC assume + Secrets Manager read'
+          command: echo 'export AWS_DEFAULT_REGION=eu-west-1' >> "$BASH_ENV"
+      - aws-cli/setup:
+          profile-name: cci-sm
+          role-arn: *docs_prod_role
+          role-session-name: cci-newskit-ci-sm
+      - run:
+          name: 'Load CI credentials from Secrets Manager'
+          command: |
+            SECRET_JSON=$(aws secretsmanager get-secret-value \
+              --secret-id newskit/ci-credentials \
+              --region eu-west-1 \
+              --query SecretString --output text \
+              --profile cci-sm)
+            # Prefer jq (present on cimg images); fall back to python3 for images
+            # that don't ship jq (e.g. cypress/browsers, newsuk/terraform).
+            if command -v jq >/dev/null 2>&1; then
+              echo "$SECRET_JSON" | jq -r '
+                to_entries[]
+                | select(.key | test("^[A-Za-z_][A-Za-z0-9_]*$"))
+                | "export \(.key)=\(.value | tostring | @sh)"
+              ' >> "$BASH_ENV"
+            elif command -v python3 >/dev/null 2>&1; then
+              echo "$SECRET_JSON" | python3 -c "import json,sys,re,shlex; [print('export %s=%s'%(k,shlex.quote(str(v)))) for k,v in json.load(sys.stdin).items() if re.match(r'^[A-Za-z_][A-Za-z0-9_]*\$',k)]" >> "$BASH_ENV"
+            else
+              echo "ERROR: neither jq nor python3 available to parse secrets" >&2
+              exit 1
+            fi
+            # Diagnostic only: log the NAMES of the keys loaded (never values),
+            # and warn about any keys skipped for not being valid shell identifiers.
+            if command -v jq >/dev/null 2>&1; then
+              LOADED=$(echo "$SECRET_JSON" | jq -r '[to_entries[] | select(.key | test("^[A-Za-z_][A-Za-z0-9_]*$")) | .key] | sort | join(", ")')
+              SKIPPED=$(echo "$SECRET_JSON" | jq -r '[to_entries[] | select(.key | test("^[A-Za-z_][A-Za-z0-9_]*$") | not) | .key] | sort | join(", ")')
+            else
+              LOADED=$(echo "$SECRET_JSON" | python3 -c "import json,sys,re; print(', '.join(sorted(k for k in json.load(sys.stdin) if re.match(r'^[A-Za-z_][A-Za-z0-9_]*\$',k))))")
+              SKIPPED=$(echo "$SECRET_JSON" | python3 -c "import json,sys,re; print(', '.join(sorted(k for k in json.load(sys.stdin) if not re.match(r'^[A-Za-z_][A-Za-z0-9_]*\$',k))))")
+            fi
+            echo "Loaded CI credential keys: ${LOADED:-<none>}"
+            if [ -n "$SKIPPED" ]; then
+              echo "WARNING: skipped secret keys (not valid shell identifiers): $SKIPPED" >&2
+            fi
   terraform_init_oidc:
     description: Run Terraform Init
     parameters:
       aws_region:
         description: AWS Region
         type: string
-        default: '${AWS_DEFAULT_REGION}'
+        default: 'eu-west-1'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
@@ -168,7 +295,7 @@ commands:
       aws_region:
         description: AWS Region
         type: string
-        default: '${AWS_DEFAULT_REGION}'
+        default: 'eu-west-1'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
@@ -208,7 +335,7 @@ commands:
       aws_region:
         description: AWS Region
         type: string
-        default: '${AWS_DEFAULT_REGION}'
+        default: 'eu-west-1'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
@@ -382,8 +509,6 @@ jobs:
             - fonts/private-fonts
             - src/version-number.json
             - src/icons/*
-      - slack/notify:
-          <<: *slack_notify
 
   install_cypress:
     <<: *cypress_defaults
@@ -433,8 +558,6 @@ jobs:
           root: ~/project
           paths:
             - .cache/Cypress
-      - slack/notify:
-          <<: *slack_notify
 
   build_components:
     executor: node-large
@@ -449,8 +572,6 @@ jobs:
           root: ./
           paths:
             - dist/*
-      - slack/notify:
-          <<: *slack_notify
 
   build_storybook:
     executor: node
@@ -465,8 +586,6 @@ jobs:
           root: ./
           paths:
             - dist-storybook/*
-      - slack/notify:
-          <<: *slack_notify
 
   build_docs:
     executor: node-xlarge
@@ -484,8 +603,6 @@ jobs:
           root: ./
           paths:
             - public/*
-      - slack/notify:
-          <<: *slack_notify
 
   build_docs_with_no_base_url:
     executor: node-xlarge
@@ -502,8 +619,6 @@ jobs:
           root: ./
           paths:
             - public/*
-      - slack/notify:
-          <<: *slack_notify
 
   build_test_e2e:
     executor: node-xlarge
@@ -519,8 +634,6 @@ jobs:
           paths:
             - e2e/dist/*
             - cypress/config/a11y-components.json
-      - slack/notify:
-          <<: *slack_notify
 
   test_unit_comps:
     executor: node-xlarge
@@ -537,8 +650,6 @@ jobs:
           path: ./reports/junit/
       - store_artifacts:
           path: ./reports/junit
-      - slack/notify:
-          <<: *slack_notify
 
   test_unit_docs:
     executor: node-xlarge
@@ -558,8 +669,6 @@ jobs:
           path: ./reports/junit/
       - store_artifacts:
           path: ./reports/junit
-      - slack/notify:
-          <<: *slack_notify
 
   lint:
     executor: node
@@ -570,8 +679,6 @@ jobs:
       - run:
           name: Lint
           command: make lint
-      - slack/notify:
-          <<: *slack_notify
 
   test_broken_links_docs:
     executor: node
@@ -582,8 +689,6 @@ jobs:
       - run:
           name: Broken Links
           command: make check_broken_links_docs
-      - slack/notify:
-          <<: *slack_notify
 
   init_aws:
     parameters:
@@ -595,8 +700,6 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
-      - slack/notify:
-          <<: *slack_notify
 
   deploy_terraform_oidc:
     parameters:
@@ -645,6 +748,7 @@ jobs:
     executor: node-large
     steps:
       - checkout_and_attach_workspace
+      - load_ci_secrets
       - run_test_visual_comps_percy
 
   comps_tests_conditional_run_to_update_baselines:
@@ -652,6 +756,7 @@ jobs:
     executor: node-large
     steps:
       - checkout_and_attach_workspace
+      - load_ci_secrets
       - github-cli/setup
       - run:
           name: 'Check if updates required'
@@ -666,8 +771,6 @@ jobs:
                 echo "Baseline updates required; continuing job."
             }
       - run_test_visual_comps_percy
-      - slack/notify:
-          <<: *slack_notify
 
   docsite_tests_conditional_run_to_update_baselines:
     # if there are any visual diffs we need to run the Percy docsite tests to update the baselines
@@ -675,6 +778,7 @@ jobs:
     executor: cypress
     steps:
       - checkout_and_attach_workspace
+      - load_ci_secrets
       - github-cli/setup
       - run:
           name: 'Check if updates required'
@@ -689,23 +793,24 @@ jobs:
                 echo "Baseline updates required; continuing job."
             }
       - run_test_visual_docs_percy
-      - slack/notify:
-          <<: *slack_notify
 
   skip_percy_comps_check:
     executor: node
     steps:
+      - load_ci_secrets
       - skip_test_visual_comps_percy
 
   skip_percy_comps_check_2:
     executor: node
     steps:
+      - load_ci_secrets
       - skip_test_visual_comps_percy
 
   skip_percy_docsite_check:
     <<: *cypress_defaults
     executor: cypress
     steps:
+      - load_ci_secrets
       - skip_test_visual_docs_percy
 
   test_visual_docs_percy:
@@ -713,6 +818,7 @@ jobs:
     executor: cypress
     steps:
       - checkout_and_attach_workspace
+      - load_ci_secrets
       - run_test_visual_docs_percy
 
   test_visual_docs_percy_2:
@@ -720,6 +826,7 @@ jobs:
     executor: cypress
     steps:
       - checkout_and_attach_workspace
+      - load_ci_secrets
       - run_test_visual_docs_percy
 
   test_e2e_comps:
@@ -736,8 +843,6 @@ jobs:
           path: cypress/screenshots
       - store_artifacts:
           path: cypress/videos
-      - slack/notify:
-          <<: *slack_notify
 
   test_e2e_docs:
     <<: *cypress_defaults
@@ -753,8 +858,6 @@ jobs:
           path: cypress/screenshots
       - store_artifacts:
           path: cypress/videos
-      - slack/notify:
-          <<: *slack_notify
 
   bump_version:
     executor: node
@@ -763,6 +866,7 @@ jobs:
         type: string
     steps:
       - checkout
+      - load_ci_secrets
       - run:
           name: Set github identity
           command: make set_git_identity
@@ -785,8 +889,6 @@ jobs:
       - run:
           name: Delete trigger-release@ tag
           command: make delete_trigger_release_tag VERSION=<< parameters.version >>
-      - slack/notify:
-          <<: *slack_notify
 
   publish_npm:
     parameters:
@@ -798,6 +900,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - load_ci_secrets
       - run:
           name: Ensure npm supports OIDC trusted publishing
           command: |
@@ -820,6 +923,25 @@ jobs:
                 command: make publish_npm
       - slack/notify:
           <<: *slack_notify
+      - when:
+          condition: << parameters.publish_dev >>
+          steps:
+            - run:
+                name: Expose unstable version + commit for the Slack notification
+                command: |
+                  # Mirror the version computed by `make publish_npm_dev`
+                  # (0.0.0-<first 9 chars of the commit SHA>) so the notification
+                  # reports the exact published package version and commit.
+                  SHORT_SHA=$(echo "${CIRCLE_SHA1}" | cut -c -9)
+                  echo "export SHORT_SHA=${SHORT_SHA}" >> "$BASH_ENV"
+                  echo "export UNSTABLE_VERSION=0.0.0-${SHORT_SHA}" >> "$BASH_ENV"
+            - slack/notify:
+                <<: *slack_publish_dev_notify
+      - unless:
+          condition: << parameters.publish_dev >>
+          steps:
+            - slack/notify:
+                <<: *slack_publish_notify
 
   # Paths are passed in, so covers both subfolders for PR env and root for other envs
   push_s3_general_oidc:
@@ -827,7 +949,7 @@ jobs:
       aws_region:
         description: AWS Region
         type: string
-        default: '${AWS_DEFAULT_REGION}'
+        default: 'eu-west-1'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
@@ -841,6 +963,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/project
+      - load_ci_secrets
       - aws-cli/setup:
           role-arn: << parameters.aws_assume_role_arn >>
           profile-name: 'NEWSKIT-OIDC-PROFILE'
@@ -865,7 +988,7 @@ jobs:
       aws_region:
         description: AWS Region
         type: string
-        default: '${AWS_DEFAULT_REGION}'
+        default: 'eu-west-1'
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
@@ -894,13 +1017,12 @@ jobs:
             echo $s3Path_storybook
             aws s3 cp dist-storybook $s3Path_storybook --recursive
             aws s3 cp timestamp.html $s3Path_storybook
-      - slack/notify:
-          <<: *slack_notify
 
   post_pr_env_url_to_github_pr:
     executor: node
     steps:
       - checkout
+      - load_ci_secrets
       - github-cli/setup
       - run:
           name: Doc site link
@@ -913,8 +1035,6 @@ jobs:
               Documentation Site: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs-pr.s3-website-eu-west-1.amazonaws.com/' 'docs')
               Storybook: $(node scripts/pr_comment_link.js ${CIRCLE_BRANCH} 'http://ncu-newskit-docs-pr.s3-website-eu-west-1.amazonaws.com/' 'storybook')"
             fi
-      - slack/notify:
-          <<: *slack_notify
 
   validate_terraform:
     executor: node
@@ -967,8 +1087,6 @@ jobs:
             cd newskit-integration-test
             yarn build
             yarn start-test start 3000 'yarn cypress run'
-      - slack/notify:
-          <<: *slack_notify
 
 # ========== FILTERS START    ==========
 
@@ -1022,22 +1140,22 @@ workflows:
           requires:
             - build_components
       - test_e2e_comps:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_test_e2e
             - install_cypress
       - build_docs_with_no_base_url:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - test_broken_links_docs:
           name: test_broken_links_docs_pr
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_with_no_base_url
       - test_e2e_docs:
           name: test_e2e_docs_pr
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_with_no_base_url
             - install_cypress
@@ -1070,42 +1188,42 @@ workflows:
             - test_e2e_docs_pr
       - publish_npm:
           name: publish_npm_pr
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           publish_dev: true
           requires:
             - approve_publish_npm_pr
       # End jobs for releasing unstable NPM version
 
       - skip_percy_comps_check:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - no_visual_changes
       - skip_percy_docsite_check:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - no_visual_changes
       - test_visual_comps_percy:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - docs_and_comps_visual_changes
       - test_visual_docs_percy:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_with_no_base_url
             - install_cypress
             - docs_and_comps_visual_changes
       - test_visual_docs_percy_2:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_with_no_base_url
             - install_cypress
             - docs_visual_changes
       - skip_percy_comps_check_2:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - docs_visual_changes
       - can_i_merge_checker:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - test_newskit_in_nextjs_app
             - lint
@@ -1115,7 +1233,7 @@ workflows:
             - test_e2e_docs_pr
             - test_broken_links_docs_pr
       - init_aws:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_pr
           package: s3/dev-newskit
@@ -1166,7 +1284,7 @@ workflows:
             - build_storybook
       - post_pr_env_url_to_github_pr:
           name: pr_enviroment_link
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - deploy_to_s3_pr
       - validate_terraform:
@@ -1198,7 +1316,7 @@ workflows:
       equal: [main, << pipeline.git.branch >>]
     jobs:
       - init_aws:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_dev
           package: s3/dev-newskit
@@ -1227,35 +1345,35 @@ workflows:
           requires:
             - init_aws
       - install_deps:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
       - install_cypress:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
       - build_components:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - build_storybook:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - build_test_e2e:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - lint:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - test_unit_comps:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - test_unit_docs:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - test_e2e_comps:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_test_e2e
             - install_cypress
@@ -1266,7 +1384,7 @@ workflows:
             - install_deps
       - test_broken_links_docs:
           name: test_broken_links_docs_dev
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_dev
       - test_e2e_docs:
@@ -1277,17 +1395,17 @@ workflows:
             - install_cypress
             - build_storybook
       - test_newskit_in_nextjs_app:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_components
 
       # Jobs for updating Percy baselines after PRs are merged
       - comps_tests_conditional_run_to_update_baselines:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_storybook
       - docsite_tests_conditional_run_to_update_baselines:
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_dev
             - install_cypress
@@ -1304,7 +1422,7 @@ workflows:
             - test_e2e_docs_dev
       - publish_npm:
           name: publish_npm_dev
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           publish_dev: true
           requires:
             - approve_publish_npm_dev
@@ -1355,7 +1473,7 @@ workflows:
     jobs:
       - bump_version:
           <<: *only_on_trigger_release_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           version: $(echo << pipeline.git.tag >> | cut -f2 -d "@")
 
   on_release_version_tag:
@@ -1363,12 +1481,12 @@ workflows:
     jobs:
       - delete_trigger_release_tag:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           version: $(echo << pipeline.git.tag >> | cut -f2 -d "v")
 
       - init_aws:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
       - deploy_terraform_oidc:
           name: deploy_terraform_s3_staging
           package: s3/prod-newskit
@@ -1389,43 +1507,43 @@ workflows:
             - init_aws
       - install_deps:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
       - install_cypress:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
       - build_components:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - build_storybook:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - build_test_e2e:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - lint:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - test_unit_comps:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - test_unit_docs:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - test_e2e_comps:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_test_e2e
             - install_cypress
@@ -1439,7 +1557,7 @@ workflows:
       - test_broken_links_docs:
           <<: *only_on_version_tag
           name: test_broken_links_docs_prod
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_versioned
       - test_e2e_docs:
@@ -1452,13 +1570,13 @@ workflows:
             - build_storybook
       - test_newskit_in_nextjs_app:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_components
 
       - publish_npm:
           <<: *only_on_version_tag
-          context: ncu-product-platforms-context
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - lint
             - test_unit_comps
