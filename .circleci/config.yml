@@ -152,6 +152,11 @@ slack_publish_dev_notify: &slack_publish_dev_notify
       ]
     }
 
+# S3 deploy role ARNs for the docs-site build/deploy jobs.
+newskit_docs_dev_role_arn: &docs_dev_role 'arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume'
+newskit_docs_pr_role_arn: &docs_pr_role 'arn:aws:iam::696065950852:role/circleci-aws-nuk-newskit-docs-dev-assume-temp'
+newskit_docs_prod_role_arn: &docs_prod_role 'arn:aws:iam::005057636819:role/circleci-aws-nuk-newskit-docs-prod-assume'
+
 cypress_defaults: &cypress_defaults
   environment:
     CYPRESS_CACHE_FOLDER: '~/project/.cache/Cypress'
@@ -259,7 +264,6 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       session_context:
@@ -299,7 +303,6 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       session_context:
@@ -339,7 +342,6 @@ commands:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: '${S3_AWS_ASSUME_ROLE_ARN}'
       package:
         type: string
       session_context:
@@ -588,6 +590,13 @@ jobs:
             - dist-storybook/*
 
   build_docs:
+    parameters:
+      site_env:
+        type: string
+        default: ''
+      site_base_url:
+        type: string
+        default: ''
     executor: node-xlarge
     steps:
       - checkout
@@ -596,8 +605,8 @@ jobs:
       - run:
           name: Build
           command: |
-            export SITE_ENV=${SITE_ENV}
-            export SITE_BASE_URL=${SITE_BASE_URL}
+            export SITE_ENV=<< parameters.site_env >>
+            export SITE_BASE_URL=<< parameters.site_base_url >>
             make build_docs
       - persist_to_workspace:
           root: ./
@@ -605,6 +614,10 @@ jobs:
             - public/*
 
   build_docs_with_no_base_url:
+    parameters:
+      site_env:
+        type: string
+        default: ''
     executor: node-xlarge
     steps:
       - checkout
@@ -613,7 +626,7 @@ jobs:
       - run:
           name: Build
           command: |
-            export SITE_ENV=${SITE_ENV}
+            export SITE_ENV=<< parameters.site_env >>
             make build_docs_with_no_base_url
       - persist_to_workspace:
           root: ./
@@ -714,6 +727,9 @@ jobs:
       environment:
         type: string
         default: ''
+      aws_assume_role_arn:
+        description: AWS ARN for the S3 deploy assume-role (per environment)
+        type: string
     executor: aws-cli-and-terraform
     steps:
       - checkout
@@ -726,23 +742,28 @@ jobs:
           steps:
             - terraform_init_oidc:
                 package: << parameters.package >>
+                aws_assume_role_arn: << parameters.aws_assume_role_arn >>
                 terraform_arg: -backend-config="key=newskit/<< parameters.package >>/<< parameters.environment >>/terraform.tfstate"
             - terraform_plan_oidc:
                 package: << parameters.package >>
+                aws_assume_role_arn: << parameters.aws_assume_role_arn >>
                 terraform_arg: -var-file=<< parameters.environment >>.tfvars
       - unless:
           condition: << parameters.tf_env >>
           steps:
             - terraform_init_oidc:
                 package: << parameters.package >>
+                aws_assume_role_arn: << parameters.aws_assume_role_arn >>
                 terraform_arg: -backend-config="key=newskit/<< parameters.package >>/terraform.tfstate"
             - terraform_plan_oidc:
                 package: << parameters.package >>
+                aws_assume_role_arn: << parameters.aws_assume_role_arn >>
       - when:
           condition: << parameters.apply >>
           steps:
             - terraform_apply_oidc:
                 package: << parameters.package >>
+                aws_assume_role_arn: << parameters.aws_assume_role_arn >>
 
   test_visual_comps_percy:
     executor: node-large
@@ -953,7 +974,10 @@ jobs:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: '${S3_AWS_ASSUME_ROLE_ARN}'
+      site_env:
+        description: Environment label written into the deploy timestamp
+        type: string
+        default: ''
       s3Path_docs:
         type: string
       s3Path_storybook:
@@ -975,7 +999,7 @@ jobs:
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=<< parameters.s3Path_docs >>
             export s3Path_storybook=<< parameters.s3Path_storybook >>
-            echo "${SITE_ENV} $(date)" > timestamp.html
+            echo "<< parameters.site_env >> $(date)" > timestamp.html
             aws s3 cp public $s3Path_docs --recursive
             aws s3 cp timestamp.html $s3Path_docs
             aws s3 cp dist-storybook $s3Path_storybook --recursive
@@ -992,7 +1016,10 @@ jobs:
       aws_assume_role_arn:
         description: AWS ARN For Assume Role
         type: string
-        default: '${S3_AWS_ASSUME_ROLE_ARN}'
+      site_env:
+        description: Environment label written into the deploy timestamp
+        type: string
+        default: ''
     executor: aws-cli-and-terraform
     steps:
       - checkout
@@ -1010,7 +1037,7 @@ jobs:
           command: |
             export AWS_DEFAULT_REGION=<< parameters.aws_region >>
             export s3Path_docs=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/')
-            echo "${SITE_ENV} $(date)" > timestamp.html
+            echo "<< parameters.site_env >> $(date)" > timestamp.html
             aws s3 cp public $s3Path_docs --recursive
             aws s3 cp timestamp.html $s3Path_docs
             export s3Path_storybook=$(node scripts/s3-pr-branch-naming.js ${CIRCLE_BRANCH} 's3://ncu-newskit-docs-pr/' 'storybook/')
@@ -1235,49 +1262,57 @@ workflows:
       - init_aws:
           context: null-prereq-context-required-for-cci-oidc-token-issuance
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_pr_role
           name: deploy_terraform_s3_pr
           package: s3/dev-newskit
-          context: ncu-newskit-site-pr
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: true
           tf_env: false
           environment: pr
           requires:
             - init_aws
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_dev_role
           name: validate_deploy_terraform_s3_dev
           package: s3/dev-newskit
-          context: ncu-newskit-site-dev
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: false # Can set true while doing testing of CircleCI code
           tf_env: true
           environment: dev
           requires:
             - init_aws
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_prod_role
           name: validate_deploy_terraform_s3_staging
           package: s3/prod-newskit
-          context: ncu-newskit-site-stage
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: false # Can set true while doing testing of CircleCI code
           tf_env: true
           environment: staging
           requires:
             - init_aws
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_prod_role
           name: validate_deploy_terraform_s3_prod
           package: s3/prod-newskit
-          context: ncu-newskit-site-prod
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: false # Can set true while doing testing of CircleCI code
           tf_env: true
           environment: prod
           requires:
             - init_aws
       - build_docs:
+          site_env: 'pr'
+          site_base_url: 'http://ncu-newskit-docs-pr.s3-website-eu-west-1.amazonaws.com/'
           name: build_docs_pr
-          context: ncu-newskit-site-pr
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - push_s3_pr_oidc:
+          aws_assume_role_arn: *docs_pr_role
+          site_env: 'pr'
           name: deploy_to_s3_pr
-          context: ncu-newskit-site-pr
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - deploy_terraform_s3_pr
             - build_docs_pr
@@ -1297,13 +1332,16 @@ workflows:
       # Temporarily uncomment these steps if needing to test S3 deployments on push rather than on merge
       #- build_docs_with_no_base_url:
       #    name: build_docs_dev
-      #    context: ncu-newskit-site-dev
+      #    site_env: 'dev'
+      #    context: null-prereq-context-required-for-cci-oidc-token-issuance
       #    requires:
       #      - install_deps
       #      - deploy_to_s3_pr
       #- push_s3_general_oidc:
       #    name: deploy_to_s3_dev
-      #    context: ncu-newskit-site-dev
+      #    aws_assume_role_arn: *docs_dev_role
+      #    site_env: 'dev'
+      #    context: null-prereq-context-required-for-cci-oidc-token-issuance
       #    s3Path_docs: s3://ncu-newskit-docs-dev/
       #    s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
       #    requires:
@@ -1318,27 +1356,30 @@ workflows:
       - init_aws:
           context: null-prereq-context-required-for-cci-oidc-token-issuance
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_dev_role
           name: deploy_terraform_s3_dev
           package: s3/dev-newskit
-          context: ncu-newskit-site-dev
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: true
           tf_env: true
           environment: dev
           requires:
             - init_aws
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_prod_role
           name: deploy_terraform_s3_staging
           package: s3/prod-newskit
-          context: ncu-newskit-site-stage
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: true
           tf_env: true
           environment: staging
           requires:
             - init_aws
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_prod_role
           name: deploy_terraform_s3_prod
           package: s3/prod-newskit
-          context: ncu-newskit-site-prod
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: true
           tf_env: true
           environment: prod
@@ -1378,8 +1419,9 @@ workflows:
             - build_test_e2e
             - install_cypress
       - build_docs_with_no_base_url:
+          site_env: 'dev'
           name: build_docs_dev
-          context: ncu-newskit-site-dev
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
       - test_broken_links_docs:
@@ -1389,7 +1431,7 @@ workflows:
             - build_docs_dev
       - test_e2e_docs:
           name: test_e2e_docs_dev
-          context: ncu-newskit-site-dev
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_dev
             - install_cypress
@@ -1429,8 +1471,10 @@ workflows:
         # end
 
       - push_s3_general_oidc:
+          aws_assume_role_arn: *docs_dev_role
+          site_env: 'dev'
           name: deploy_to_s3_dev
-          context: ncu-newskit-site-dev
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           s3Path_docs: s3://ncu-newskit-docs-dev/
           s3Path_storybook: s3://ncu-newskit-docs-dev/storybook/
           requires:
@@ -1444,8 +1488,10 @@ workflows:
             - test_e2e_docs_dev
 
       - push_s3_general_oidc:
+          aws_assume_role_arn: *docs_prod_role
+          site_env: 'staging'
           name: deploy_to_s3_staging
-          context: ncu-newskit-site-stage
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           s3Path_docs: s3://ncu-newskit-docs-staging/
           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
@@ -1454,13 +1500,16 @@ workflows:
             - build_storybook
 
       - build_docs_with_no_base_url:
+          site_env: 'production'
           name: build_docs_prod
-          context: ncu-newskit-site-prod
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - deploy_to_s3_staging
       - push_s3_general_oidc:
+          aws_assume_role_arn: *docs_prod_role
+          site_env: 'staging'
           name: deploy_to_s3_prod
-          context: ncu-newskit-site-stage
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           s3Path_docs: s3://ncu-newskit-docs-prod/
           s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
           requires:
@@ -1488,18 +1537,20 @@ workflows:
           <<: *only_on_version_tag
           context: null-prereq-context-required-for-cci-oidc-token-issuance
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_prod_role
           name: deploy_terraform_s3_staging
           package: s3/prod-newskit
-          context: ncu-newskit-site-stage
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: true
           tf_env: true
           environment: staging
           requires:
             - init_aws
       - deploy_terraform_oidc:
+          aws_assume_role_arn: *docs_prod_role
           name: deploy_terraform_s3_prod
           package: s3/prod-newskit
-          context: ncu-newskit-site-prod
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           apply: true
           tf_env: true
           environment: prod
@@ -1548,9 +1599,10 @@ workflows:
             - build_test_e2e
             - install_cypress
       - build_docs_with_no_base_url:
+          site_env: 'production'
           <<: *only_on_version_tag
           name: build_docs_versioned
-          context: ncu-newskit-site-prod
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
             - delete_trigger_release_tag
@@ -1563,7 +1615,7 @@ workflows:
       - test_e2e_docs:
           <<: *only_on_version_tag
           name: test_e2e_docs_prod
-          context: ncu-newskit-site-prod
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - build_docs_versioned
             - install_cypress
@@ -1587,14 +1639,17 @@ workflows:
 
       # Deploying newskit.co.uk and storybook to Staging then to Prod environment.
       - build_docs_with_no_base_url:
+          site_env: 'staging'
           name: build_docs_staging
-          context: ncu-newskit-site-stage
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
             - publish_npm
       - push_s3_general_oidc:
+          aws_assume_role_arn: *docs_prod_role
+          site_env: 'staging'
           name: deploy_to_s3_staging
-          context: ncu-newskit-site-stage
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           s3Path_docs: s3://ncu-newskit-docs-staging/
           s3Path_storybook: s3://ncu-newskit-docs-staging/storybook/
           requires:
@@ -1603,14 +1658,17 @@ workflows:
             - build_storybook
 
       - build_docs_with_no_base_url:
+          site_env: 'production'
           name: build_docs_prod
-          context: ncu-newskit-site-prod
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           requires:
             - install_deps
             - deploy_to_s3_staging
       - push_s3_general_oidc:
+          aws_assume_role_arn: *docs_prod_role
+          site_env: 'production'
           name: deploy_to_s3_prod
-          context: ncu-newskit-site-prod
+          context: null-prereq-context-required-for-cci-oidc-token-issuance
           s3Path_docs: s3://ncu-newskit-docs-prod/
           s3Path_storybook: s3://ncu-newskit-docs-prod/storybook/
           requires:
