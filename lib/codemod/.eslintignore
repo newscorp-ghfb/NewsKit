@@ -1,7 +1,0 @@
-node_modules
-build
-lcov-report
-
-src/v*/__tests__/**/actual*.js
-src/v*/__tests__/**/expected*.js
-
