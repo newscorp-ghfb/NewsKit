@@ -90,6 +90,14 @@ executors:
     docker:
       - image: cimg/node:20.7.0-browsers
 
+  # Dedicated publish executor. npm OIDC trusted publishing requires Node >= 22.14.0
+  # and npm >= 11.5.1; the publish job upgrades npm in-job to guarantee the minimum.
+  # Kept separate from the shared `node` executor so the rest of the pipeline is
+  # unaffected by the version bump.
+  node-publish:
+    docker:
+      - image: cimg/node:22.14.0
+
   node-large:
     docker:
       - image: cimg/node:20.7.0-browsers
@@ -785,14 +793,16 @@ jobs:
       publish_dev:
         type: boolean
         default: false
-    executor: node
+    executor: node-publish
     steps:
       - checkout
       - attach_workspace:
           at: ~/project
       - run:
-          name: Add NPM login credentionals
-          command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          name: Ensure npm supports OIDC trusted publishing
+          command: |
+            npm install -g npm@^11.5.1
+            node --version && npm --version
       - run:
           name: Set github identity
           command: make set_git_identity
