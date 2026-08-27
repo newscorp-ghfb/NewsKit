@@ -1507,7 +1507,7 @@ workflows:
             - deploy_to_s3_staging
       - push_s3_general_oidc:
           aws_assume_role_arn: *docs_prod_role
-          site_env: 'staging'
+          site_env: 'production'
           name: deploy_to_s3_prod
           context: null-prereq-context-required-for-cci-oidc-token-issuance
           s3Path_docs: s3://ncu-newskit-docs-prod/
