@@ -222,8 +222,13 @@ commands:
             # executor images (e.g. cypress/browsers) do not ship them, so install
             # them on demand. This is a no-op on cimg images that already have them.
             if ! command -v curl >/dev/null 2>&1 || ! command -v unzip >/dev/null 2>&1; then
-              (apt-get update && apt-get install -y curl unzip) \
-                || (sudo apt-get update && sudo apt-get install -y curl unzip)
+              # cypress/browsers runs as root (no sudo); other images may need it.
+              if command -v sudo >/dev/null 2>&1; then SUDO=sudo; else SUDO=; fi
+              # Tolerate a non-zero `apt-get update` caused by unrelated broken
+              # third-party repos (e.g. the Google Chrome repo's missing GPG key);
+              # the Debian main list we need still refreshes and install works.
+              $SUDO apt-get update || true
+              $SUDO apt-get install -y curl unzip
             fi
       - aws-cli/setup:
           profile-name: cci-sm
