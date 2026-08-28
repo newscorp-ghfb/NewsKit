@@ -215,6 +215,16 @@ commands:
       - run:
           name: 'Set AWS region for OIDC assume + Secrets Manager read'
           command: echo 'export AWS_DEFAULT_REGION=eu-west-1' >> "$BASH_ENV"
+      - run:
+          name: 'Ensure curl and unzip are available for the AWS CLI installer'
+          command: |
+            # The AWS CLI installer (aws-cli/setup) needs curl and unzip. Some
+            # executor images (e.g. cypress/browsers) do not ship them, so install
+            # them on demand. This is a no-op on cimg images that already have them.
+            if ! command -v curl >/dev/null 2>&1 || ! command -v unzip >/dev/null 2>&1; then
+              (apt-get update && apt-get install -y curl unzip) \
+                || (sudo apt-get update && sudo apt-get install -y curl unzip)
+            fi
       - aws-cli/setup:
           profile-name: cci-sm
           role-arn: *docs_prod_role
