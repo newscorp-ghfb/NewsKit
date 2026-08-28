@@ -104,11 +104,11 @@ slack_publish_notify: &slack_publish_notify
       ]
     }
 
-# Unstable/dev publish notification. Posts to #newskit on a main branch build.
+# Unstable/dev publish notification. Posts to #newskit whenever an unstable
+# build is published (dev publishes are manual-approval PR builds).
 slack_publish_dev_notify: &slack_publish_dev_notify
   event: 'pass'
   channel: '#newskit'
-  branch_pattern: 'main'
   custom: |
     {
       "blocks": [
