@@ -945,13 +945,27 @@ jobs:
           steps:
             - run:
                 name: Publish components to NPM
-                command: make publish_npm_dev
+                command: |
+                  export NPM_ID_TOKEN="$(circleci run oidc get --claims '{"aud": "npm:registry.npmjs.org"}' || true)"
+                  if [ -z "$NPM_ID_TOKEN" ]; then
+                    echo "ERROR: NPM_ID_TOKEN is empty - CircleCI did not issue an npm OIDC token."
+                    echo "Check that this job runs with the context required by the npm trusted publisher and that 'circleci run oidc get' is available in this executor."
+                    exit 1
+                  fi
+                  make publish_npm_dev
       - unless:
           condition: << parameters.publish_dev >>
           steps:
             - run:
                 name: Publish components to NPM
-                command: make publish_npm
+                command: |
+                  export NPM_ID_TOKEN="$(circleci run oidc get --claims '{"aud": "npm:registry.npmjs.org"}' || true)"
+                  if [ -z "$NPM_ID_TOKEN" ]; then
+                    echo "ERROR: NPM_ID_TOKEN is empty - CircleCI did not issue an npm OIDC token."
+                    echo "Check that this job runs with the context required by the npm trusted publisher and that 'circleci run oidc get' is available in this executor."
+                    exit 1
+                  fi
+                  make publish_npm
       - slack/notify:
           <<: *slack_notify
       - when:

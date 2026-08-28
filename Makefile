@@ -59,16 +59,16 @@ skip_e2e_visual_test_docs_percy:
 	yarn e2e:visual:docs:ci:percy:skip;
 
 # Uses `npm publish` (not `yarn publish`): OIDC trusted publishing is only supported by the npm CLI.
+# NPM_ID_TOKEN (the CircleCI OIDC token for npm) is supplied by the calling CI job, not fetched here.
 publish_npm_dev:
 	cd dist; \
 	npm version 0.0.0-${SHORT_GIT_HASH} --no-git-tag-version --allow-same-version; \
-	export NPM_ID_TOKEN=$$(circleci run oidc get --claims '{"aud":"npm:registry.npmjs.org"}'); \
 	npm publish --tag unstable
 
 # Uses `npm publish` (not `yarn publish`): OIDC trusted publishing is only supported by the npm CLI.
+# NPM_ID_TOKEN (the CircleCI OIDC token for npm) is supplied by the calling CI job, not fetched here.
 publish_npm:
 	cd dist; \
-	export NPM_ID_TOKEN=$$(circleci run oidc get --claims '{"aud":"npm:registry.npmjs.org"}'); \
 	npm publish
 
 build_docker:
