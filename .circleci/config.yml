@@ -995,11 +995,13 @@ jobs:
                 name: Expose unstable version + commit for the Slack notification
                 command: |
                   # Mirror the version computed by `make publish_npm_dev`
-                  # (0.0.0-<first 9 chars of the commit SHA>) so the notification
-                  # reports the exact published package version and commit.
+                  # (0.0.0-<first 9 chars of the commit SHA>.<CircleCI build number>)
+                  # so the notification reports the exact published package version
+                  # and commit. The build number keeps reruns of the same commit
+                  # unique so they publish a fresh version instead of colliding.
                   SHORT_SHA=$(echo "${CIRCLE_SHA1}" | cut -c -9)
                   echo "export SHORT_SHA=${SHORT_SHA}" >> "$BASH_ENV"
-                  echo "export UNSTABLE_VERSION=0.0.0-${SHORT_SHA}" >> "$BASH_ENV"
+                  echo "export UNSTABLE_VERSION=0.0.0-${SHORT_SHA}.${CIRCLE_BUILD_NUM}" >> "$BASH_ENV"
             - slack/notify:
                 <<: *slack_publish_dev_notify
       - unless:
