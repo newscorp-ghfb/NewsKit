@@ -3,6 +3,9 @@ DOCKER_REPO ?= design-system-site
 DOCKER_TAG ?= latest
 CIRCLE_SHA1 ?= 0000000000
 SHORT_GIT_HASH := $(shell echo ${CIRCLE_SHA1} | cut -c -9)
+# CircleCI build number, used to keep unstable versions unique across reruns of
+# the same commit (so a rerun publishes a fresh version instead of a 409/E403).
+CIRCLE_BUILD_NUM ?= 0
 
 # CURRENT BRANCH CHECKED OUT
 CURRENT_BRANCH = $(shell git symbolic-ref --short -q HEAD)
@@ -58,11 +61,18 @@ e2e_visual_test_docs_percy:
 skip_e2e_visual_test_docs_percy:
 	yarn e2e:visual:docs:ci:percy:skip;
 
+# Uses `npm publish` (not `yarn publish`): OIDC trusted publishing is only supported by the npm CLI.
+# NPM_ID_TOKEN (the CircleCI OIDC token for npm) is supplied by the calling CI job, not fetched here.
 publish_npm_dev:
-	cd dist; yarn publish --no-git-tag-version --new-version 0.0.0-${SHORT_GIT_HASH} --tag unstable;
+	cd dist; \
+	npm version 0.0.0-${SHORT_GIT_HASH}.${CIRCLE_BUILD_NUM} --no-git-tag-version --allow-same-version; \
+	npm publish --tag unstable
 
+# Uses `npm publish` (not `yarn publish`): OIDC trusted publishing is only supported by the npm CLI.
+# NPM_ID_TOKEN (the CircleCI OIDC token for npm) is supplied by the calling CI job, not fetched here.
 publish_npm:
-	cd dist; yarn publish --no-git-tag-version;
+	cd dist; \
+	npm publish
 
 build_docker:
 	docker build -t ncu-newskit .
