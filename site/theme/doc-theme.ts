@@ -17,6 +17,41 @@ import {componentDefaults} from './component-defaults';
 // Docs site uses the same fonts for each theme - so we just use the same from Light theme as the 'default'
 const {fonts} = documentationLight;
 
+//This will be exported by default through the publisher,
+// added in as an example for spike purposes
+Object.assign(documentationLight, {
+  fontFaces: {
+    'Poppins-Bold': {
+      fontFamily: 'Poppins',
+      fontWeight: 700,
+    },
+    'Poppins-Medium': {
+      fontFamily: 'Poppins',
+      fontWeight: 500,
+    },
+    'DM Sans-Regular': {
+      fontFamily: 'DM Sans',
+      fontWeight: 400,
+    },
+    'Poppins-Italic': {
+      fontFamily: 'Poppins',
+      fontWeight: 'italic',
+    },
+    'DM Sans-Medium': {
+      fontFamily: 'DM Sans',
+      fontWeight: 500,
+    },
+    'Poppins-SemiBold': {
+      fontFamily: 'Poppins',
+      fontWeight: 600,
+    },
+    'DM Mono-Regular': {
+      fontFamily: 'DM Mono',
+      fontWeight: 400,
+    },
+  },
+});
+
 Object.assign(fonts.fontFamily010, {
   fontMetrics: {
     fontWeight010: {
@@ -126,3 +161,73 @@ export const patternsThemeDark = createTheme({
     fonts,
   },
 });
+
+// These are all the fonts we currently use in the docs site
+export const fontPaths = {
+  'DM Sans': `url('static/fonts/dmsans-regular-webfont.woff2') format('woff2'),
+   url('static/fonts/dmsans-regular-webfont.woff') format('woff')`,
+  'DM Sans-Italic': `url('static/fonts/dmsans-italic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/dmsans-italic-webfont.woff') format('woff');`,
+  'DM Sans-Medium': `url('static/fonts/dmsans-medium-webfont.woff2')
+  format('woff2'),
+url('static/fonts/dmsans-medium-webfont.woff') format('woff');`,
+  'DM Sans-MediumItalic': `url('static/fonts/dmsans-mediumitalic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/dmsans-mediumitalic-webfont.woff')
+  format('woff');`,
+  'DM Sans-Bold': `url('static/fonts/dmsans-bold-webfont.woff2')
+  format('woff2'),
+url('static/fonts/dmsans-bold-webfont.woff') format('woff');`,
+  'DM Sans-BoldItalic': `url('static/fonts/dmsans-bolditalic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/dmsans-bolditalic-webfont.woff')
+  format('woff');`,
+  'Poppins-Bold': `url('static/fonts/poppins-bold-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-bold-webfont.woff') format('woff');`,
+  'Poppins-BoldItalic': `url('static/fonts/poppins-bolditalic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-bolditalic-webfont.woff')
+  format('woff');`,
+  'Poppins-ExtraBold': `url('static/fonts/poppins-extrabold-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-extrabold-webfont.woff')
+  format('woff');`,
+  'Poppins-ExtraBoldItalic': `url('static/fonts/poppins-extrabolditalic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-extrabolditalic-webfont.woff')
+  format('woff');`,
+  'Poppins-italic': `url('static/fonts/poppins-italic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-italic-webfont.woff') format('woff');`,
+  'Poppins-Light': `url('static/fonts/poppins-light-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-light-webfont.woff') format('woff');`,
+  'Poppins-LightItalic': `url('static/fonts/poppins-lightitalic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-lightitalic-webfont.woff')
+  format('woff');`,
+  'Poppins-Medium': `url('static/fonts/poppins-medium-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-medium-webfont.woff') format('woff');`,
+  'Poppins-MediumItalic': `url('static/fonts/poppins-mediumitalic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-mediumitalic-webfont.woff')
+  format('woff');`,
+  'Poppins-Regular': `url('static/fonts/poppins-regular-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-regular-webfont.woff')
+  format('woff');`,
+  'Poppins-SemiBold': `url('static/fonts/poppins-semibold-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-semibold-webfont.woff')
+  format('woff');`,
+  'Poppins-SemiBoldItalic': `url('static/fonts/poppins-semibolditalic-webfont.woff2')
+  format('woff2'),
+url('static/fonts/poppins-semibolditalic-webfont.woff')
+  format('woff');`,
+  'DM Mono': `url('static/fonts/dmmono-medium.woff2') format('woff2'),
+url('static/fonts/dmmono-medium.woff') format('woff');,
+`,
+};
