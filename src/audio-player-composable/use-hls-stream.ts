@@ -40,8 +40,6 @@ export const useHlsStream = ({
     }
   };
 
-  const dvrConfig = livePause ? {liveMaxLatencyDurationCount: Infinity} : {};
-
   const initializeHls = (audio: HTMLAudioElement, src: string) => {
     if (!Hls.isSupported()) {
       console.error('HLS.js not supported');
@@ -52,11 +50,13 @@ export const useHlsStream = ({
       const hls = new Hls({
         enableWorker: true,
         liveSyncDurationCount: 3,
-        liveMaxLatencyDurationCount: 6,
-        ...dvrConfig,
+        liveMaxLatencyDurationCount: livePause ? Infinity : 6,
+        liveSyncMode: livePause ? 'buffered' : 'edge',
         liveDurationInfinity: true,
         maxLiveSyncPlaybackRate: 1,
-        maxBufferLength: 120,
+        // While paused on a live stream the player keeps buffering ahead, so the
+        // forward buffer size is what limits how long a user can stay paused.
+        maxBufferLength: livePause ? 600 : 30,
         maxBufferHole: 0.5,
         highBufferWatchdogPeriod: 3,
         nudgeOffset: 0.1,
@@ -175,7 +175,7 @@ export const useHlsStream = ({
       hlsRef.current?.destroy();
       hlsRef.current = null;
     };
-  }, [src, isHls, audioRef, live]);
+  }, [src, isHls, audioRef, live, livePause]);
 
   return {isHlsStream: isHls && !!live, hlsInstance: hlsRef};
 };

@@ -193,6 +193,72 @@ describe('useHlsStream', () => {
     });
   });
 
+  describe('livePause config', () => {
+    it('should configure HLS for pausing behind the live edge when livePause is true', async () => {
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+          livePause: true,
+        }),
+      );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalledWith(
+          expect.objectContaining({
+            liveMaxLatencyDurationCount: Infinity,
+            liveSyncMode: 'buffered',
+            maxBufferLength: 600,
+          }),
+        );
+      });
+    });
+
+    it('should keep the player at the live edge when livePause is false', async () => {
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+        }),
+      );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalledWith(
+          expect.objectContaining({
+            liveMaxLatencyDurationCount: 6,
+            liveSyncMode: 'edge',
+            maxBufferLength: 30,
+          }),
+        );
+      });
+    });
+
+    it('should re-initialize HLS when livePause changes', async () => {
+      const audioRef = createAudioRef();
+      const {rerender} = renderHook(
+        ({livePause}: {livePause: boolean}) =>
+          useHlsStream({
+            src: 'https://example.com/stream.m3u8',
+            audioRef,
+            live: true,
+            livePause,
+          }),
+        {initialProps: {livePause: false}},
+      );
+
+      await waitFor(() => expect(Hls).toHaveBeenCalledTimes(1));
+
+      rerender({livePause: true});
+
+      await waitFor(() => expect(Hls).toHaveBeenCalledTimes(2));
+      expect(Hls).toHaveBeenLastCalledWith(
+        expect.objectContaining({liveSyncMode: 'buffered'}),
+      );
+    });
+  });
+
   it('should use HLS.js on non-Safari browsers', async () => {
     jest.spyOn(utils, 'isSafari').mockReturnValue(false);
 
