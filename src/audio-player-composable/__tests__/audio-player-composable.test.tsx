@@ -84,6 +84,17 @@ const hlsAudioProps = {
   children: <AudioPlayerPlayPauseButton />,
 };
 
+const hlsLiveAudioProps: AudioPlayerComposableProps = {
+  ...hlsAudioProps,
+  live: true,
+};
+
+const hlsLivePauseAudioProps: AudioPlayerComposableProps = {
+  ...hlsAudioProps,
+  live: true,
+  livePause: true,
+};
+
 const AudioPropsAndVolumeControlCollapsed: AudioPlayerComposableProps = {
   src: '/audio_file_1.mp3',
   initialVolume: 0.2,
@@ -417,6 +428,21 @@ describe('Audio Player Composable', () => {
     fireEvent.canPlay(getByTestId('audio-element'));
     fireEvent.click(playPauseButton);
     expect(playPauseButton.getAttribute('aria-label')).toBe('Stop');
+    fireEvent.click(playPauseButton);
+    expect(playPauseButton.getAttribute('aria-label')).toBe('Play');
+  });
+
+  it('should have play or pause label when live and livePause is enabled', () => {
+    const {getByTestId} = renderWithTheme(AudioPlayerComposable, {
+      ...liveAudioProps,
+      livePause: true,
+    } as AudioPlayerComposableProps);
+
+    const playPauseButton = getByTestId('audio-player-play-pause-button');
+
+    fireEvent.canPlay(getByTestId('audio-element'));
+    fireEvent.click(playPauseButton);
+    expect(playPauseButton.getAttribute('aria-label')).toBe('Pause');
     fireEvent.click(playPauseButton);
     expect(playPauseButton.getAttribute('aria-label')).toBe('Play');
   });
@@ -1366,6 +1392,27 @@ describe('Audio Player Composable', () => {
       expect(fireEventSpy).toHaveBeenLastCalledWith(expectedObject);
     });
 
+    test('should raise "click" event with pause originator when live is paused with livePause', () => {
+      const fireEventSpy = jest.fn();
+      const {getByTestId} = renderWithImplementation(
+        AudioPlayerComposable,
+        {...liveAudioProps, livePause: true} as AudioPlayerComposableProps,
+        fireEventSpy,
+      );
+      const expectedObject = {
+        ...liveTrackingOutputObject,
+        originator: 'audio-player-pause-button',
+        trigger: 'click',
+      };
+
+      const playPause = getByTestId('audio-player-play-pause-button');
+      fireEvent.canPlay(getByTestId('audio-element'));
+      fireEvent.click(playPause);
+      fireEvent.click(playPause);
+
+      expect(fireEventSpy).toHaveBeenLastCalledWith(expectedObject);
+    });
+
     test('should raise "click" event when live is played', () => {
       const fireEventSpy = jest.fn();
       const {getByTestId} = renderWithImplementation(
@@ -1622,7 +1669,7 @@ describe('Audio Player Composable', () => {
       expect(mockResumeBuffering).toHaveBeenCalled();
     });
 
-    it('should call pauseBuffering when pausing HLS stream', () => {
+    it('should call pauseBuffering when pausing a live HLS stream without livePause', () => {
       const mockHlsInstance = {
         current: {
           resumeBuffering: mockResumeBuffering,
@@ -1637,7 +1684,7 @@ describe('Audio Player Composable', () => {
 
       const {getByTestId} = renderWithTheme(
         AudioPlayerComposable,
-        hlsAudioProps,
+        hlsLiveAudioProps,
       );
 
       const audioElement = getByTestId('audio-element') as HTMLAudioElement;
@@ -1648,6 +1695,35 @@ describe('Audio Player Composable', () => {
       fireEvent.click(playButton);
 
       expect(mockPauseBuffering).toHaveBeenCalled();
+    });
+
+    it('should keep buffering when pausing a live HLS stream with livePause', () => {
+      const mockHlsInstance = {
+        current: {
+          resumeBuffering: mockResumeBuffering,
+          pauseBuffering: mockPauseBuffering,
+        },
+      };
+
+      mockUseHlsStream.mockReturnValue({
+        isHlsStream: true,
+        hlsInstance: mockHlsInstance,
+      });
+
+      const {getByTestId} = renderWithTheme(
+        AudioPlayerComposable,
+        hlsLivePauseAudioProps,
+      );
+
+      const audioElement = getByTestId('audio-element') as HTMLAudioElement;
+      const playButton = getByTestId('audio-player-play-pause-button');
+
+      fireEvent.canPlay(audioElement);
+      fireEvent.click(playButton);
+      fireEvent.click(playButton);
+
+      expect(mockPauseBuffering).not.toHaveBeenCalled();
+      expect(audioElement.paused).toBe(true);
     });
 
     it('should not call HLS methods and should not throw error when hlsInstance.current is null', () => {

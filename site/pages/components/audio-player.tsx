@@ -977,10 +977,18 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
               required: true,
             },
             {
-              name: 'isLive',
+              name: 'live',
               type: 'boolean',
+              default: 'false',
               description:
                 'If true, will display the controls for the live player, and the duration text block is replaced with a live indicator flag.',
+            },
+            {
+              name: 'livePause',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'Only applies when the player is live. If true, the play pause button pauses the stream instead of stopping it, and playback resumes from the paused point behind the live edge.',
             },
             {
               name: 'autoPlay',

@@ -213,12 +213,12 @@ export const useAudioFunctions = ({
   const pause = useCallback(() => {
     ifPlayer(player => {
       setPlayState(false);
-      if (isHlsStream && hlsInstance.current) {
+      if (isHlsStream && hlsInstance.current && !canPause) {
         hlsInstance.current.pauseBuffering();
       }
       player.pause();
     });
-  }, [ifPlayer, setPlayState, isHlsStream, hlsInstance]);
+  }, [ifPlayer, setPlayState, isHlsStream, hlsInstance, canPause]);
 
   const onPause = useCallback(() => {
     if (playing) {
