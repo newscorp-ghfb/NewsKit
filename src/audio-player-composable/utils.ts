@@ -88,3 +88,14 @@ export const isSafari = (): boolean => {
 
   return isDesktopSafari || isIosSafari;
 };
+
+export const safePlay = (audio: HTMLAudioElement): void => {
+  const playPromise = audio.play();
+  if (playPromise !== undefined) {
+    void playPromise.catch(err => {
+      if (err.name !== 'AbortError') {
+        console.error(err);
+      }
+    });
+  }
+};

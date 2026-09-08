@@ -2,7 +2,7 @@
 import {useCallback, SyntheticEvent, useEffect} from 'react';
 import {EventTrigger, useInstrumentation} from '../instrumentation';
 import {AudioEvents, AudioFunctionDependencies} from './types';
-import {formatTrackTime, getMediaSegment} from './utils';
+import {formatTrackTime, getMediaSegment, safePlay} from './utils';
 import calculateStringPercentage from '../utils/calculate-string-percentage';
 import {getValueInRange} from '../utils/value-in-range';
 import versionNumber from '../version-number.json';
@@ -11,6 +11,7 @@ export const useAudioFunctions = ({
   autoPlay,
   src,
   live,
+  canPause,
   duration,
   loading,
   playing,
@@ -189,7 +190,7 @@ export const useAudioFunctions = ({
       if (isHlsStream && hlsInstance.current) {
         hlsInstance.current.resumeBuffering();
       }
-      player.play();
+      safePlay(player);
     });
   }, [ifPlayer, setPlayState, isHlsStream, hlsInstance]);
 
@@ -212,12 +213,12 @@ export const useAudioFunctions = ({
   const pause = useCallback(() => {
     ifPlayer(player => {
       setPlayState(false);
-      if (isHlsStream && hlsInstance.current) {
+      if (isHlsStream && hlsInstance.current && !canPause) {
         hlsInstance.current.pauseBuffering();
       }
       player.pause();
     });
-  }, [ifPlayer, setPlayState, isHlsStream, hlsInstance]);
+  }, [ifPlayer, setPlayState, isHlsStream, hlsInstance, canPause]);
 
   const onPause = useCallback(() => {
     if (playing) {
@@ -225,12 +226,12 @@ export const useAudioFunctions = ({
 
       fireEvent(
         getTrackingInformation(
-          live ? 'audio-player-stop-button' : 'audio-player-pause-button',
+          canPause ? 'audio-player-pause-button' : 'audio-player-stop-button',
           EventTrigger.Click,
         ),
       );
     }
-  }, [playing, pause, fireEvent, live, getTrackingInformation]);
+  }, [playing, pause, fireEvent, canPause, getTrackingInformation]);
 
   const togglePlay = useCallback(() => {
     if (loading) {
@@ -313,11 +314,19 @@ export const useAudioFunctions = ({
   // Preserve audioplayer play state on src change
   useEffect(() => {
     ifPlayer(player => {
-      player.load();
       onWaiting();
+
+      if (isHlsStream) {
+        if (!playing) {
+          player.pause();
+        }
+        return;
+      }
+
+      player.load();
       if (!autoPlay) {
         if (playing) {
-          player.play();
+          safePlay(player);
         } else {
           player.pause();
         }

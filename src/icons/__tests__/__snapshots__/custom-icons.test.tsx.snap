@@ -1,5 +1,615 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`IconFilledDvrForward renders the IconFilledDvrForward icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrForward renders the IconFilledDvrForward icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0.emotion-0 {
+  width: 64px;
+  height: 64px;
+  fill: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M24.0007 18.667C24.0007 23.0803 20.414 26.667 16.0007 26.667C11.5873 26.667 8.00065 23.0803 8.00065 18.667C8.00065 14.2537 11.5873 10.667 16.0007 10.667V16.0003L22.6673 9.33366L16.0007 2.66699V8.00033C10.1073 8.00033 5.33398 12.7737 5.33398 18.667C5.33398 24.5603 10.1073 29.3337 16.0007 29.3337C21.894 29.3337 26.6673 24.5603 26.6673 18.667H24.0007Z"
+    />
+    <path
+      d="M14.534 22.667V16.9737H14.414L12.054 17.8137V18.7337L13.4007 18.3203V22.667H14.534Z"
+    />
+    <path
+      d="M19.094 17.0403C18.854 16.947 18.6007 16.907 18.3073 16.907C18.014 16.907 17.7607 16.947 17.5207 17.0403C17.2807 17.1337 17.0807 17.2803 16.9207 17.4803C16.7607 17.6803 16.614 17.9337 16.534 18.2403C16.454 18.547 16.4007 18.907 16.4007 19.3337V20.3203C16.4007 20.747 16.454 21.1203 16.5473 21.4137C16.6407 21.707 16.774 21.9737 16.9473 22.1737C17.1207 22.3737 17.3207 22.5203 17.5607 22.6137C17.8007 22.707 18.054 22.747 18.3473 22.747C18.6407 22.747 18.894 22.707 19.134 22.6137C19.374 22.5203 19.574 22.3737 19.734 22.1737C19.894 21.9737 20.0273 21.7203 20.1207 21.4137C20.214 21.107 20.254 20.747 20.254 20.3203V19.3337C20.254 18.907 20.2007 18.5337 20.1073 18.2403C20.014 17.947 19.8807 17.6803 19.7073 17.4803C19.534 17.2803 19.3207 17.1337 19.094 17.0403ZM19.1073 20.467C19.1073 20.7203 19.094 20.9337 19.054 21.107C19.014 21.2803 18.974 21.427 18.9073 21.5337C18.8407 21.6403 18.7607 21.7203 18.654 21.7603C18.5473 21.8003 18.4407 21.827 18.3207 21.827C18.2007 21.827 18.0807 21.8003 17.9873 21.7603C17.894 21.7203 17.8007 21.6403 17.734 21.5337C17.6673 21.427 17.614 21.2803 17.574 21.107C17.534 20.9337 17.5207 20.7203 17.5207 20.467V19.1737C17.5207 18.9203 17.534 18.707 17.574 18.5337C17.614 18.3603 17.654 18.227 17.734 18.1203C17.814 18.0137 17.8807 17.9337 17.9873 17.8937C18.094 17.8537 18.2007 17.827 18.3207 17.827C18.4407 17.827 18.5607 17.8537 18.654 17.8937C18.7473 17.9337 18.8407 18.0137 18.9073 18.1203C18.974 18.227 19.0273 18.3603 19.0673 18.5337C19.1073 18.707 19.1207 18.9203 19.1207 19.1737V20.467H19.1073Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrForward renders the IconFilledDvrForward icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0.emotion-0 {
+  width: 64px;
+  height: 64px;
+  fill: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    class="emotion-0"
+    fill="currentColor"
+    role="img"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      override title value
+    </title>
+    <path
+      d="M24.0007 18.667C24.0007 23.0803 20.414 26.667 16.0007 26.667C11.5873 26.667 8.00065 23.0803 8.00065 18.667C8.00065 14.2537 11.5873 10.667 16.0007 10.667V16.0003L22.6673 9.33366L16.0007 2.66699V8.00033C10.1073 8.00033 5.33398 12.7737 5.33398 18.667C5.33398 24.5603 10.1073 29.3337 16.0007 29.3337C21.894 29.3337 26.6673 24.5603 26.6673 18.667H24.0007Z"
+    />
+    <path
+      d="M14.534 22.667V16.9737H14.414L12.054 17.8137V18.7337L13.4007 18.3203V22.667H14.534Z"
+    />
+    <path
+      d="M19.094 17.0403C18.854 16.947 18.6007 16.907 18.3073 16.907C18.014 16.907 17.7607 16.947 17.5207 17.0403C17.2807 17.1337 17.0807 17.2803 16.9207 17.4803C16.7607 17.6803 16.614 17.9337 16.534 18.2403C16.454 18.547 16.4007 18.907 16.4007 19.3337V20.3203C16.4007 20.747 16.454 21.1203 16.5473 21.4137C16.6407 21.707 16.774 21.9737 16.9473 22.1737C17.1207 22.3737 17.3207 22.5203 17.5607 22.6137C17.8007 22.707 18.054 22.747 18.3473 22.747C18.6407 22.747 18.894 22.707 19.134 22.6137C19.374 22.5203 19.574 22.3737 19.734 22.1737C19.894 21.9737 20.0273 21.7203 20.1207 21.4137C20.214 21.107 20.254 20.747 20.254 20.3203V19.3337C20.254 18.907 20.2007 18.5337 20.1073 18.2403C20.014 17.947 19.8807 17.6803 19.7073 17.4803C19.534 17.2803 19.3207 17.1337 19.094 17.0403ZM19.1073 20.467C19.1073 20.7203 19.094 20.9337 19.054 21.107C19.014 21.2803 18.974 21.427 18.9073 21.5337C18.8407 21.6403 18.7607 21.7203 18.654 21.7603C18.5473 21.8003 18.4407 21.827 18.3207 21.827C18.2007 21.827 18.0807 21.8003 17.9873 21.7603C17.894 21.7203 17.8007 21.6403 17.734 21.5337C17.6673 21.427 17.614 21.2803 17.574 21.107C17.534 20.9337 17.5207 20.7203 17.5207 20.467V19.1737C17.5207 18.9203 17.534 18.707 17.574 18.5337C17.614 18.3603 17.654 18.227 17.734 18.1203C17.814 18.0137 17.8807 17.9337 17.9873 17.8937C18.094 17.8537 18.2007 17.827 18.3207 17.827C18.4407 17.827 18.5607 17.8537 18.654 17.8937C18.7473 17.9337 18.8407 18.0137 18.9073 18.1203C18.974 18.227 19.0273 18.3603 19.0673 18.5337C19.1073 18.707 19.1207 18.9203 19.1207 19.1737V20.467H19.1073Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrLive renders the IconFilledDvrLive icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrLive renders the IconFilledDvrLive icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0.emotion-0 {
+  width: 64px;
+  height: 64px;
+  fill: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.09245 18.667C6.09245 23.0803 9.67911 26.667 14.0924 26.667C15.833 26.667 17.445 26.1091 18.759 25.1626L20.314 27.3337C18.563 28.5925 16.4146 29.3337 14.0924 29.3337C8.19911 29.3337 3.42578 24.5603 3.42578 18.667C3.42578 12.7737 8.19911 8.00033 14.0924 8.00033V2.66699L20.759 9.33366L14.0924 16.0003V10.667C9.67911 10.667 6.09245 14.2537 6.09245 18.667Z"
+    />
+    <path
+      d="M23.4245 9.33366L16.7578 16.0003V14.667L22.0911 9.33366L16.7578 4.00033V2.66699L23.4245 9.33366Z"
+    />
+    <path
+      d="M28.5715 18.0664V18.8203H26.1575V19.9675H28.2149V20.6979H26.1575V21.9831H28.5755V22.7331H25.0859V18.0664H28.5715Z"
+    />
+    <path
+      d="M22.2279 21.6185L23.4076 18.0664H24.6003L22.7891 22.7331H21.668L19.8672 18.0664H21.0535L22.2279 21.6185Z"
+    />
+    <path
+      d="M19.3042 18.0664V22.7328H18.2363V18.0664H19.3042Z"
+    />
+    <path
+      d="M15.2786 21.9831H17.5494V22.7331H14.207V18.0664H15.2786V21.9831Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrLive renders the IconFilledDvrLive icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0.emotion-0 {
+  width: 64px;
+  height: 64px;
+  fill: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    class="emotion-0"
+    fill="currentColor"
+    role="img"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      override title value
+    </title>
+    <path
+      d="M6.09245 18.667C6.09245 23.0803 9.67911 26.667 14.0924 26.667C15.833 26.667 17.445 26.1091 18.759 25.1626L20.314 27.3337C18.563 28.5925 16.4146 29.3337 14.0924 29.3337C8.19911 29.3337 3.42578 24.5603 3.42578 18.667C3.42578 12.7737 8.19911 8.00033 14.0924 8.00033V2.66699L20.759 9.33366L14.0924 16.0003V10.667C9.67911 10.667 6.09245 14.2537 6.09245 18.667Z"
+    />
+    <path
+      d="M23.4245 9.33366L16.7578 16.0003V14.667L22.0911 9.33366L16.7578 4.00033V2.66699L23.4245 9.33366Z"
+    />
+    <path
+      d="M28.5715 18.0664V18.8203H26.1575V19.9675H28.2149V20.6979H26.1575V21.9831H28.5755V22.7331H25.0859V18.0664H28.5715Z"
+    />
+    <path
+      d="M22.2279 21.6185L23.4076 18.0664H24.6003L22.7891 22.7331H21.668L19.8672 18.0664H21.0535L22.2279 21.6185Z"
+    />
+    <path
+      d="M19.3042 18.0664V22.7328H18.2363V18.0664H19.3042Z"
+    />
+    <path
+      d="M15.2786 21.9831H17.5494V22.7331H14.207V18.0664H15.2786V21.9831Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrRewind renders the IconFilledDvrRewind icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrRewind renders the IconFilledDvrRewind icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0.emotion-0 {
+  width: 64px;
+  height: 64px;
+  fill: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M16.0007 8.00033V2.66699L9.33398 9.33366L16.0007 16.0003V10.667C20.414 10.667 24.0007 14.2537 24.0007 18.667C24.0007 23.0803 20.414 26.667 16.0007 26.667C11.5873 26.667 8.00065 23.0803 8.00065 18.667H5.33398C5.33398 24.5603 10.1073 29.3337 16.0007 29.3337C21.894 29.3337 26.6673 24.5603 26.6673 18.667C26.6673 12.7737 21.894 8.00033 16.0007 8.00033ZM14.534 22.667H13.4007V18.3203L12.054 18.7337V17.8137L14.414 16.9737H14.534V22.667ZM20.2407 20.3203C20.2407 20.747 20.2007 21.1203 20.1073 21.4137C20.014 21.707 19.8807 21.9737 19.7207 22.1737C19.5607 22.3737 19.3473 22.5203 19.1207 22.6137C18.894 22.707 18.6273 22.747 18.334 22.747C18.0407 22.747 17.7873 22.707 17.5473 22.6137C17.3073 22.5203 17.1073 22.3737 16.934 22.1737C16.7607 21.9737 16.6273 21.7203 16.534 21.4137C16.4407 21.107 16.3873 20.747 16.3873 20.3203V19.3337C16.3873 18.907 16.4273 18.5337 16.5207 18.2403C16.614 17.947 16.7473 17.6803 16.9073 17.4803C17.0673 17.2803 17.2807 17.1337 17.5073 17.0403C17.734 16.947 18.0007 16.907 18.294 16.907C18.5873 16.907 18.8407 16.947 19.0807 17.0403C19.3207 17.1337 19.5207 17.2803 19.694 17.4803C19.8673 17.6803 20.0007 17.9337 20.094 18.2403C20.1873 18.547 20.2407 18.907 20.2407 19.3337V20.3203ZM19.1073 19.1737C19.1073 18.9203 19.094 18.707 19.054 18.5337C19.014 18.3603 18.9607 18.227 18.894 18.1203C18.8273 18.0137 18.7473 17.9337 18.6407 17.8937C18.534 17.8537 18.4273 17.827 18.3073 17.827C18.1873 17.827 18.0673 17.8537 17.974 17.8937C17.8807 17.9337 17.7873 18.0137 17.7207 18.1203C17.654 18.227 17.6007 18.3603 17.5607 18.5337C17.5207 18.707 17.5073 18.9203 17.5073 19.1737V20.467C17.5073 20.7203 17.5207 20.9337 17.5607 21.107C17.6007 21.2803 17.654 21.427 17.7207 21.5337C17.7873 21.6403 17.8673 21.7203 17.974 21.7603C18.0807 21.8003 18.1873 21.827 18.3073 21.827C18.4273 21.827 18.5473 21.8003 18.6407 21.7603C18.734 21.7203 18.8273 21.6403 18.894 21.5337C18.9607 21.427 19.014 21.2803 19.0407 21.107C19.0673 20.9337 19.094 20.7203 19.094 20.467V19.1737H19.1073Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrRewind renders the IconFilledDvrRewind icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0.emotion-0 {
+  width: 64px;
+  height: 64px;
+  fill: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    class="emotion-0"
+    fill="currentColor"
+    role="img"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      override title value
+    </title>
+    <path
+      d="M16.0007 8.00033V2.66699L9.33398 9.33366L16.0007 16.0003V10.667C20.414 10.667 24.0007 14.2537 24.0007 18.667C24.0007 23.0803 20.414 26.667 16.0007 26.667C11.5873 26.667 8.00065 23.0803 8.00065 18.667H5.33398C5.33398 24.5603 10.1073 29.3337 16.0007 29.3337C21.894 29.3337 26.6673 24.5603 26.6673 18.667C26.6673 12.7737 21.894 8.00033 16.0007 8.00033ZM14.534 22.667H13.4007V18.3203L12.054 18.7337V17.8137L14.414 16.9737H14.534V22.667ZM20.2407 20.3203C20.2407 20.747 20.2007 21.1203 20.1073 21.4137C20.014 21.707 19.8807 21.9737 19.7207 22.1737C19.5607 22.3737 19.3473 22.5203 19.1207 22.6137C18.894 22.707 18.6273 22.747 18.334 22.747C18.0407 22.747 17.7873 22.707 17.5473 22.6137C17.3073 22.5203 17.1073 22.3737 16.934 22.1737C16.7607 21.9737 16.6273 21.7203 16.534 21.4137C16.4407 21.107 16.3873 20.747 16.3873 20.3203V19.3337C16.3873 18.907 16.4273 18.5337 16.5207 18.2403C16.614 17.947 16.7473 17.6803 16.9073 17.4803C17.0673 17.2803 17.2807 17.1337 17.5073 17.0403C17.734 16.947 18.0007 16.907 18.294 16.907C18.5873 16.907 18.8407 16.947 19.0807 17.0403C19.3207 17.1337 19.5207 17.2803 19.694 17.4803C19.8673 17.6803 20.0007 17.9337 20.094 18.2403C20.1873 18.547 20.2407 18.907 20.2407 19.3337V20.3203ZM19.1073 19.1737C19.1073 18.9203 19.094 18.707 19.054 18.5337C19.014 18.3603 18.9607 18.227 18.894 18.1203C18.8273 18.0137 18.7473 17.9337 18.6407 17.8937C18.534 17.8537 18.4273 17.827 18.3073 17.827C18.1873 17.827 18.0673 17.8537 17.974 17.8937C17.8807 17.9337 17.7873 18.0137 17.7207 18.1203C17.654 18.227 17.6007 18.3603 17.5607 18.5337C17.5207 18.707 17.5073 18.9203 17.5073 19.1737V20.467C17.5073 20.7203 17.5207 20.9337 17.5607 21.107C17.6007 21.2803 17.654 21.427 17.7207 21.5337C17.7873 21.6403 17.8673 21.7203 17.974 21.7603C18.0807 21.8003 18.1873 21.827 18.3073 21.827C18.4273 21.827 18.5473 21.8003 18.6407 21.7603C18.734 21.7203 18.8273 21.6403 18.894 21.5337C18.9607 21.427 19.014 21.2803 19.0407 21.107C19.0673 20.9337 19.094 20.7203 19.094 20.467V19.1737H19.1073Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrStart renders the IconFilledDvrStart icon from theme override 1`] = `
+<DocumentFragment>
+  <svg>
+    <path>
+      a different icon
+    </path>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrStart renders the IconFilledDvrStart icon with specified style 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0.emotion-0 {
+  width: 64px;
+  height: 64px;
+  fill: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    aria-hidden="true"
+    class="emotion-0"
+    fill="currentColor"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M26.6667 18.667C26.6667 23.0803 23.08 26.667 18.6667 26.667C16.9261 26.667 15.3141 26.1091 14 25.1626L12.4451 27.3337C14.196 28.5925 16.3444 29.3337 18.6667 29.3337C24.56 29.3337 29.3333 24.5603 29.3333 18.667C29.3333 12.7737 24.56 8.00033 18.6667 8.00033V2.66699L12 9.33366L18.6667 16.0003V10.667C23.08 10.667 26.6667 14.2537 26.6667 18.667Z"
+    />
+    <path
+      d="M9.33398 9.33366L16.0007 16.0003V14.667L10.6673 9.33366L16.0007 4.00033V2.66699L9.33398 9.33366Z"
+    />
+    <path
+      d="M21.1615 18.0645V22.7361H20.2022V18.0645H21.1615ZM22.599 18.0645V18.8185H18.7871V18.0645H22.599Z"
+    />
+    <path
+      d="M15.0547 18.0645H16.797C17.1542 18.0645 17.4611 18.1179 17.7178 18.2249C17.9766 18.3318 18.1755 18.4901 18.3146 18.6998C18.4536 18.9094 18.5231 19.1671 18.5231 19.473C18.5231 19.7233 18.4804 19.9382 18.3948 20.1179C18.3114 20.2954 18.1927 20.4441 18.0387 20.5639C17.8868 20.6815 17.7082 20.7757 17.5028 20.8462L17.198 21.0067H15.6836L15.6771 20.2559H16.8034C16.9723 20.2559 17.1124 20.2259 17.2236 20.1661C17.335 20.1062 17.4183 20.0227 17.4739 19.9158C17.5318 19.8089 17.5606 19.6847 17.5606 19.5435C17.5606 19.3938 17.5328 19.2645 17.4771 19.1554C17.4215 19.0462 17.3371 18.9629 17.2236 18.9051C17.1103 18.8473 16.968 18.8185 16.797 18.8185H16.0172V22.7361H15.0547V18.0645ZM17.6664 22.7361L16.6012 20.6538L17.6183 20.6473L18.6964 22.6911V22.7361H17.6664Z"
+    />
+    <path
+      d="M12.5402 18.8634L11.2696 22.7361H10.2461L11.9819 18.0645H12.6333L12.5402 18.8634ZM13.5958 22.7361L12.322 18.8634L12.2193 18.0645H12.8771L14.6226 22.7361H13.5958ZM13.538 20.997V21.7511H11.0707V20.997H13.538Z"
+    />
+    <path
+      d="M9.00129 18.0645V22.7361H8.04193V18.0645H9.00129ZM10.4387 18.0645V18.8185H6.62695V18.0645H10.4387Z"
+    />
+    <path
+      d="M5.29382 21.5133C5.29382 21.43 5.28099 21.3551 5.25532 21.2888C5.23179 21.2203 5.18687 21.1583 5.12056 21.1027C5.05426 21.0449 4.9612 20.9883 4.84142 20.9327C4.72163 20.8769 4.56655 20.8192 4.37618 20.7593C4.16442 20.6909 3.96334 20.6139 3.77296 20.5283C3.58474 20.4428 3.41788 20.3433 3.27243 20.23C3.12912 20.1144 3.01575 19.9808 2.93232 19.8288C2.85104 19.6769 2.8104 19.5005 2.8104 19.2995C2.8104 19.1048 2.85318 18.9283 2.93875 18.77C3.02431 18.6096 3.1441 18.4727 3.2981 18.3593C3.45211 18.2439 3.63394 18.1551 3.84355 18.0931C4.05532 18.0311 4.2874 18 4.53982 18C4.8842 18 5.18474 18.062 5.44142 18.1861C5.6981 18.3101 5.89703 18.4803 6.0382 18.6963C6.18152 18.9123 6.25318 19.1593 6.25318 19.4375H5.29703C5.29703 19.3005 5.26815 19.1808 5.2104 19.078C5.15479 18.9732 5.06923 18.8909 4.95371 18.8311C4.84035 18.7711 4.69703 18.7412 4.52376 18.7412C4.35692 18.7412 4.21788 18.7668 4.10666 18.8181C3.99543 18.8673 3.912 18.9348 3.85639 19.0203C3.80078 19.1037 3.77296 19.1979 3.77296 19.3027C3.77296 19.3819 3.79222 19.4535 3.83072 19.5176C3.87136 19.5819 3.93126 19.6417 4.0104 19.6973C4.08955 19.7529 4.18687 19.8053 4.30238 19.8545C4.41788 19.9037 4.55158 19.9519 4.70344 19.9989C4.95799 20.0759 5.18152 20.1625 5.37404 20.2588C5.56868 20.3551 5.73126 20.4631 5.86174 20.5829C5.99222 20.7027 6.09062 20.8385 6.15692 20.9904C6.22323 21.1423 6.25639 21.3144 6.25639 21.5069C6.25639 21.7101 6.21682 21.892 6.13767 22.0524C6.05852 22.2128 5.9441 22.3487 5.79436 22.4599C5.64463 22.5711 5.46602 22.6556 5.25852 22.7133C5.05104 22.7711 4.81896 22.8 4.56227 22.8C4.33126 22.8 4.10344 22.77 3.87886 22.7101C3.65426 22.6481 3.44998 22.5551 3.26602 22.4311C3.0842 22.3069 2.93875 22.1487 2.82966 21.9561C2.72056 21.7636 2.66602 21.5359 2.66602 21.2727H3.63179C3.63179 21.4181 3.65426 21.5412 3.69918 21.6417C3.7441 21.7423 3.80719 21.8235 3.88847 21.8856C3.9719 21.9476 4.0703 21.9925 4.18366 22.0203C4.29918 22.0481 4.42538 22.062 4.56227 22.062C4.72912 22.062 4.86602 22.0385 4.97296 21.9915C5.08206 21.9444 5.16227 21.8792 5.2136 21.7957C5.26708 21.7123 5.29382 21.6181 5.29382 21.5133Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`IconFilledDvrStart renders the IconFilledDvrStart icon with title override 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  fill: #6A6A6A;
+  vertical-align: unset;
+  display: inline-block;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+.emotion-0.emotion-0 {
+  width: 64px;
+  height: 64px;
+  fill: #6A6A6A;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .emotion-0.emotion-0 {
+    transition-property: fill;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0, 0, .5, 1);
+  }
+}
+
+<svg
+    class="emotion-0"
+    fill="currentColor"
+    role="img"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>
+      override title value
+    </title>
+    <path
+      d="M26.6667 18.667C26.6667 23.0803 23.08 26.667 18.6667 26.667C16.9261 26.667 15.3141 26.1091 14 25.1626L12.4451 27.3337C14.196 28.5925 16.3444 29.3337 18.6667 29.3337C24.56 29.3337 29.3333 24.5603 29.3333 18.667C29.3333 12.7737 24.56 8.00033 18.6667 8.00033V2.66699L12 9.33366L18.6667 16.0003V10.667C23.08 10.667 26.6667 14.2537 26.6667 18.667Z"
+    />
+    <path
+      d="M9.33398 9.33366L16.0007 16.0003V14.667L10.6673 9.33366L16.0007 4.00033V2.66699L9.33398 9.33366Z"
+    />
+    <path
+      d="M21.1615 18.0645V22.7361H20.2022V18.0645H21.1615ZM22.599 18.0645V18.8185H18.7871V18.0645H22.599Z"
+    />
+    <path
+      d="M15.0547 18.0645H16.797C17.1542 18.0645 17.4611 18.1179 17.7178 18.2249C17.9766 18.3318 18.1755 18.4901 18.3146 18.6998C18.4536 18.9094 18.5231 19.1671 18.5231 19.473C18.5231 19.7233 18.4804 19.9382 18.3948 20.1179C18.3114 20.2954 18.1927 20.4441 18.0387 20.5639C17.8868 20.6815 17.7082 20.7757 17.5028 20.8462L17.198 21.0067H15.6836L15.6771 20.2559H16.8034C16.9723 20.2559 17.1124 20.2259 17.2236 20.1661C17.335 20.1062 17.4183 20.0227 17.4739 19.9158C17.5318 19.8089 17.5606 19.6847 17.5606 19.5435C17.5606 19.3938 17.5328 19.2645 17.4771 19.1554C17.4215 19.0462 17.3371 18.9629 17.2236 18.9051C17.1103 18.8473 16.968 18.8185 16.797 18.8185H16.0172V22.7361H15.0547V18.0645ZM17.6664 22.7361L16.6012 20.6538L17.6183 20.6473L18.6964 22.6911V22.7361H17.6664Z"
+    />
+    <path
+      d="M12.5402 18.8634L11.2696 22.7361H10.2461L11.9819 18.0645H12.6333L12.5402 18.8634ZM13.5958 22.7361L12.322 18.8634L12.2193 18.0645H12.8771L14.6226 22.7361H13.5958ZM13.538 20.997V21.7511H11.0707V20.997H13.538Z"
+    />
+    <path
+      d="M9.00129 18.0645V22.7361H8.04193V18.0645H9.00129ZM10.4387 18.0645V18.8185H6.62695V18.0645H10.4387Z"
+    />
+    <path
+      d="M5.29382 21.5133C5.29382 21.43 5.28099 21.3551 5.25532 21.2888C5.23179 21.2203 5.18687 21.1583 5.12056 21.1027C5.05426 21.0449 4.9612 20.9883 4.84142 20.9327C4.72163 20.8769 4.56655 20.8192 4.37618 20.7593C4.16442 20.6909 3.96334 20.6139 3.77296 20.5283C3.58474 20.4428 3.41788 20.3433 3.27243 20.23C3.12912 20.1144 3.01575 19.9808 2.93232 19.8288C2.85104 19.6769 2.8104 19.5005 2.8104 19.2995C2.8104 19.1048 2.85318 18.9283 2.93875 18.77C3.02431 18.6096 3.1441 18.4727 3.2981 18.3593C3.45211 18.2439 3.63394 18.1551 3.84355 18.0931C4.05532 18.0311 4.2874 18 4.53982 18C4.8842 18 5.18474 18.062 5.44142 18.1861C5.6981 18.3101 5.89703 18.4803 6.0382 18.6963C6.18152 18.9123 6.25318 19.1593 6.25318 19.4375H5.29703C5.29703 19.3005 5.26815 19.1808 5.2104 19.078C5.15479 18.9732 5.06923 18.8909 4.95371 18.8311C4.84035 18.7711 4.69703 18.7412 4.52376 18.7412C4.35692 18.7412 4.21788 18.7668 4.10666 18.8181C3.99543 18.8673 3.912 18.9348 3.85639 19.0203C3.80078 19.1037 3.77296 19.1979 3.77296 19.3027C3.77296 19.3819 3.79222 19.4535 3.83072 19.5176C3.87136 19.5819 3.93126 19.6417 4.0104 19.6973C4.08955 19.7529 4.18687 19.8053 4.30238 19.8545C4.41788 19.9037 4.55158 19.9519 4.70344 19.9989C4.95799 20.0759 5.18152 20.1625 5.37404 20.2588C5.56868 20.3551 5.73126 20.4631 5.86174 20.5829C5.99222 20.7027 6.09062 20.8385 6.15692 20.9904C6.22323 21.1423 6.25639 21.3144 6.25639 21.5069C6.25639 21.7101 6.21682 21.892 6.13767 22.0524C6.05852 22.2128 5.9441 22.3487 5.79436 22.4599C5.64463 22.5711 5.46602 22.6556 5.25852 22.7133C5.05104 22.7711 4.81896 22.8 4.56227 22.8C4.33126 22.8 4.10344 22.77 3.87886 22.7101C3.65426 22.6481 3.44998 22.5551 3.26602 22.4311C3.0842 22.3069 2.93875 22.1487 2.82966 21.9561C2.72056 21.7636 2.66602 21.5359 2.66602 21.2727H3.63179C3.63179 21.4181 3.65426 21.5412 3.69918 21.6417C3.7441 21.7423 3.80719 21.8235 3.88847 21.8856C3.9719 21.9476 4.0703 21.9925 4.18366 22.0203C4.29918 22.0481 4.42538 22.062 4.56227 22.062C4.72912 22.062 4.86602 22.0385 4.97296 21.9915C5.08206 21.9444 5.16227 21.8792 5.2136 21.7957C5.26708 21.7123 5.29382 21.6181 5.29382 21.5133Z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`IconFilledFacebook renders the IconFilledFacebook icon from theme override 1`] = `
 <DocumentFragment>
   <svg>

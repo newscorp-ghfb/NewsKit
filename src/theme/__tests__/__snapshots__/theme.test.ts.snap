@@ -1389,6 +1389,43 @@ Object {
       },
     },
   },
+  "audioPlayerDvrForwardButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerDvrLiveButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerDvrRewindButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerDvrSeekBar": Object {
+    "buffering": Object {
+      "stylePreset": "seekBarBuffering",
+    },
+    "slider": Object {
+      "feedback": Object {
+        "size": "sizing060",
+      },
+      "indicator": Object {
+        "stylePreset": "seekBarIndicator",
+      },
+      "thumb": Object {
+        "size": "sizing040",
+        "stylePreset": "seekBarThumb",
+      },
+      "track": Object {
+        "size": "sizing020",
+        "stylePreset": "seekBarTrack",
+      },
+    },
+  },
+  "audioPlayerDvrStartButton": Object {
+    "stylePreset": "iconButtonMinimalPrimary",
+  },
+  "audioPlayerDvrTimeDisplay": Object {
+    "stylePreset": "dvrTimeDisplay",
+    "typographyPreset": "utilityLabel020",
+  },
   "audioPlayerForwardButton": Object {
     "stylePreset": "iconButtonMinimalPrimary",
   },
@@ -4435,6 +4472,12 @@ Object {
       "backgroundColor": "{{colors.interface010}}",
       "borderRadius": "{{borders.borderRadiusSharp}}",
       "boxShadow": "{{shadows.shadow060}}",
+    },
+  },
+  "dvrTimeDisplay": Object {
+    "base": Object {
+      "backgroundColor": "{{colors.transparent}}",
+      "color": "{{colors.inkBase}}",
     },
   },
   "feedback": Object {

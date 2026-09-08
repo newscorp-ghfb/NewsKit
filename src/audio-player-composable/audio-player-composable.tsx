@@ -46,6 +46,7 @@ export const AudioPlayerComposable = ({
   src,
   autoPlay = false,
   live = false,
+  livePause = false,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
   initialVolume = 0.7,
@@ -70,7 +71,18 @@ export const AudioPlayerComposable = ({
 
   const [buffered, setBuffered] = useState<TimeRanges>();
 
-  const {isHlsStream, hlsInstance} = useHlsStream({src, audioRef, live});
+  const playingRef = useRef(playing);
+  useEffect(() => {
+    playingRef.current = playing;
+  }, [playing]);
+
+  const {isHlsStream, hlsInstance} = useHlsStream({
+    src,
+    audioRef,
+    live,
+    livePause,
+    playingRef,
+  });
 
   useEffect(() => {
     currentTimeRef.current = currentTime;
@@ -81,13 +93,13 @@ export const AudioPlayerComposable = ({
     // I can't set this one to the setCurrentTime state directly as the audioElement time
     // will still be 0, currentTime will be overridden to 0 and the audio will start from 0
 
-    if (audioRef && audioRef.current) {
+    if (audioRef && audioRef.current && (!live || initialTime > 0)) {
       audioRef.current.currentTime = initialTime;
     }
 
     setCurrentTime(0);
     setDisplayDuration(0);
-  }, [src, initialTime]);
+  }, [src, initialTime, live]);
 
   const {
     audioEvents,
@@ -115,6 +127,7 @@ export const AudioPlayerComposable = ({
     setPlaybackSpeed,
     src,
     live,
+    canPause: !live || livePause,
     isHlsStream,
     hlsInstance,
   } as AudioFunctionDependencies);
@@ -131,7 +144,7 @@ export const AudioPlayerComposable = ({
       let playStateIcon = <IconFilledPlayArrow />;
       let ariaLabel = 'Play';
       let ariaPressed = false;
-      const canPause = !live;
+      const canPause = !live || livePause;
 
       if (playing) {
         ariaPressed = true;
@@ -162,7 +175,7 @@ export const AudioPlayerComposable = ({
         canPause: boolean;
       };
     },
-    [live, loading, playing, togglePlay],
+    [live, livePause, loading, playing, togglePlay],
   );
 
   const getForwardButtonProps = useCallback(
