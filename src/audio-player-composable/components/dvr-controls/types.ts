@@ -3,6 +3,10 @@ import {MQ} from '../../../utils';
 
 export const DEFAULT_DVR_SEEK_STEP = 10000;
 
+export const DEFAULT_DVR_SEEK_ICON_VARIANT = '10';
+
+export type AudioPlayerDvrSeekIconVariant = '5' | '10';
+
 export type AudioPlayerDvrSeekButtonProps = {
   /** Callback when user seeks - passes the target timestamp (ms epoch) */
   onSeek: (timestamp: number) => void;
@@ -14,6 +18,12 @@ export type AudioPlayerDvrSeekButtonProps = {
   liveEdge: number;
   /** Seek step in ms. Default: 10000 (10s) */
   seekStep?: number;
+  /**
+   * Which icon glyph to display, independent of the numeric seekStep value
+   * (e.g. a 5-minute seekStep can still use the "5" icon).
+   * Default: '10'
+   */
+  iconVariant?: AudioPlayerDvrSeekIconVariant;
   /** Whether playback is at the live edge */
   isLive?: boolean;
   /** Override styling */

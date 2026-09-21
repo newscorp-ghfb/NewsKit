@@ -1,10 +1,14 @@
 import React from 'react';
 import {IconButton} from '../../../../icon-button';
-import {IconFilledDvrRewind} from '../../../../icons';
+import {IconFilledDvrRewind, IconFilledDvrRewind5} from '../../../../icons';
 import {withOwnTheme} from '../../../../utils/with-own-theme';
 import {useButtonOverrides} from '../../../utils';
 import {useAudioPlayerContext} from '../../../context';
-import {AudioPlayerDvrSeekButtonProps, DEFAULT_DVR_SEEK_STEP} from '../types';
+import {
+  AudioPlayerDvrSeekButtonProps,
+  DEFAULT_DVR_SEEK_ICON_VARIANT,
+  DEFAULT_DVR_SEEK_STEP,
+} from '../types';
 import defaults from './defaults';
 
 const ThemelessAudioPlayerDvrRewindButton = ({
@@ -13,6 +17,7 @@ const ThemelessAudioPlayerDvrRewindButton = ({
   rangeStart,
   liveEdge: _liveEdge,
   seekStep = DEFAULT_DVR_SEEK_STEP,
+  iconVariant = DEFAULT_DVR_SEEK_ICON_VARIANT,
   isLive: _isLive,
   overrides,
   ref,
@@ -32,6 +37,9 @@ const ThemelessAudioPlayerDvrRewindButton = ({
     onSeek(clampedPosition);
   };
 
+  const RewindIcon =
+    iconVariant === '5' ? IconFilledDvrRewind5 : IconFilledDvrRewind;
+
   return (
     <IconButton
       ref={ref}
@@ -43,7 +51,10 @@ const ThemelessAudioPlayerDvrRewindButton = ({
       overrides={buttonOverrides}
       {...rest}
     >
-      <IconFilledDvrRewind overrides={{size: 'iconSize030'}} />
+      <RewindIcon
+        data-testid={`audio-player-dvr-rewind-icon-${iconVariant}`}
+        overrides={{size: 'iconSize030'}}
+      />
     </IconButton>
   );
 };

@@ -149,6 +149,19 @@ describe('AudioPlayerDvrRewindButton', () => {
     fireEvent.click(getByTestId('audio-player-dvr-rewind-button'));
     expect(onSeek).toHaveBeenCalledWith(NOW - 10000);
   });
+
+  it('renders the 10s icon by default', () => {
+    const {getByTestId} = renderRewindButton(defaultRewindProps);
+    expect(getByTestId('audio-player-dvr-rewind-icon-10')).toBeInTheDocument();
+  });
+
+  it('renders the 5s icon when iconVariant is "5"', () => {
+    const {getByTestId} = renderRewindButton({
+      ...defaultRewindProps,
+      iconVariant: '5',
+    });
+    expect(getByTestId('audio-player-dvr-rewind-icon-5')).toBeInTheDocument();
+  });
 });
 
 describe('AudioPlayerDvrForwardButton', () => {
@@ -239,6 +252,19 @@ describe('AudioPlayerDvrForwardButton', () => {
     expect(onSeek).toHaveBeenCalledWith(
       defaultForwardProps.currentPosition + 10000,
     );
+  });
+
+  it('renders the 10s icon by default', () => {
+    const {getByTestId} = renderForwardButton(defaultForwardProps);
+    expect(getByTestId('audio-player-dvr-forward-icon-10')).toBeInTheDocument();
+  });
+
+  it('renders the 5s icon when iconVariant is "5"', () => {
+    const {getByTestId} = renderForwardButton({
+      ...defaultForwardProps,
+      iconVariant: '5',
+    });
+    expect(getByTestId('audio-player-dvr-forward-icon-5')).toBeInTheDocument();
   });
 });
 

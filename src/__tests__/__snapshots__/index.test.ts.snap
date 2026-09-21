@@ -45,6 +45,7 @@ Array [
   "Consent",
   "ConsentSettingsLink",
   "ControlPanel",
+  "DEFAULT_DVR_SEEK_ICON_VARIANT",
   "DEFAULT_DVR_SEEK_STEP",
   "DateTime",
   "Devices",
