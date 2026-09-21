@@ -28,6 +28,7 @@ export interface AudioFunctionDependencies {
   autoPlay: boolean;
   src: string;
   live: NonNullable<boolean>;
+  canPause: boolean;
 
   loading: boolean;
   duration: number;
@@ -121,6 +122,7 @@ export interface AudioPlayerComposableProps
   extends Omit<React.AudioHTMLAttributes<HTMLAudioElement>, 'controls'> {
   children: React.ReactNode;
   live?: boolean;
+  livePause?: boolean;
   autoPlay?: boolean;
   src: string;
   ariaLandmark?: string;

@@ -1,6 +1,6 @@
 import {renderHook, waitFor} from '@testing-library/react';
 import {useHlsStream} from '../use-hls-stream';
-import {isSafari} from '../utils';
+import * as utils from '../utils';
 import Hls from 'hls.js';
 
 jest.mock('hls.js', () => {
@@ -21,6 +21,7 @@ jest.mock('hls.js', () => {
   (MockHls as any).Events = {
     ERROR: 'hlsError',
     MEDIA_ATTACHED: 'hlsMediaAttached',
+    MANIFEST_PARSED: 'hlsManifestParsed',
   };
 
   (MockHls as any).ErrorTypes = {
@@ -34,10 +35,6 @@ jest.mock('hls.js', () => {
   };
 });
 
-jest.mock('../utils', () => ({
-  isSafari: jest.fn(),
-}));
-
 const createMockAudioElement = () => {
   const mockAudioElement = ({
     play: jest.fn().mockResolvedValue(undefined),
@@ -46,7 +43,27 @@ const createMockAudioElement = () => {
     canPlayType: jest.fn().mockReturnValue(''),
     addEventListener: jest.fn(),
     removeEventListener: jest.fn(),
+    src: '',
   } as unknown) as HTMLAudioElement;
+  return mockAudioElement;
+};
+
+const createMockAudioElementWithEventCapture = () => {
+  const listeners: Record<string, EventListener> = {};
+  const mockAudioElement = ({
+    play: jest.fn().mockResolvedValue(undefined),
+    load: jest.fn(),
+    pause: jest.fn(),
+    canPlayType: jest.fn().mockReturnValue(''),
+    addEventListener: jest.fn((event: string, handler: EventListener) => {
+      listeners[event] = handler;
+    }),
+    removeEventListener: jest.fn((event: string) => {
+      delete listeners[event];
+    }),
+    dispatchCanPlay: () => listeners.canplay?.(new Event('canplay')),
+    src: '',
+  } as unknown) as HTMLAudioElement & {dispatchCanPlay: () => void};
   return mockAudioElement;
 };
 
@@ -59,7 +76,11 @@ const createAudioRef = (
 describe('useHlsStream', () => {
   beforeEach(() => {
     jest.clearAllMocks();
-    (isSafari as jest.Mock).mockReturnValue(false);
+    jest.spyOn(utils, 'isSafari').mockReturnValue(false);
+  });
+
+  afterEach(() => {
+    jest.restoreAllMocks();
   });
 
   it.each`
@@ -172,8 +193,74 @@ describe('useHlsStream', () => {
     });
   });
 
+  describe('livePause config', () => {
+    it('should configure HLS for pausing behind the live edge when livePause is true', async () => {
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+          livePause: true,
+        }),
+      );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalledWith(
+          expect.objectContaining({
+            liveMaxLatencyDurationCount: Infinity,
+            liveSyncMode: 'buffered',
+            maxBufferLength: 600,
+          }),
+        );
+      });
+    });
+
+    it('should keep the player at the live edge when livePause is false', async () => {
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+        }),
+      );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalledWith(
+          expect.objectContaining({
+            liveMaxLatencyDurationCount: 6,
+            liveSyncMode: 'edge',
+            maxBufferLength: 30,
+          }),
+        );
+      });
+    });
+
+    it('should re-initialize HLS when livePause changes', async () => {
+      const audioRef = createAudioRef();
+      const {rerender} = renderHook(
+        ({livePause}: {livePause: boolean}) =>
+          useHlsStream({
+            src: 'https://example.com/stream.m3u8',
+            audioRef,
+            live: true,
+            livePause,
+          }),
+        {initialProps: {livePause: false}},
+      );
+
+      await waitFor(() => expect(Hls).toHaveBeenCalledTimes(1));
+
+      rerender({livePause: true});
+
+      await waitFor(() => expect(Hls).toHaveBeenCalledTimes(2));
+      expect(Hls).toHaveBeenLastCalledWith(
+        expect.objectContaining({liveSyncMode: 'buffered'}),
+      );
+    });
+  });
+
   it('should use HLS.js on non-Safari browsers', async () => {
-    (isSafari as jest.Mock).mockReturnValue(false);
+    jest.spyOn(utils, 'isSafari').mockReturnValue(false);
 
     renderHook(() =>
       useHlsStream({
@@ -190,7 +277,7 @@ describe('useHlsStream', () => {
   });
 
   it('should use native HLS on Safari if supported', () => {
-    (isSafari as jest.Mock).mockReturnValue(true);
+    jest.spyOn(utils, 'isSafari').mockReturnValue(true);
     const mockAudio = createMockAudioElement();
     mockAudio.canPlayType = jest.fn().mockReturnValue('probably');
 
@@ -209,9 +296,108 @@ describe('useHlsStream', () => {
     expect(mockAudio.src).toBe('https://example.com/stream.m3u8');
   });
 
+  it('should resume playback on native Safari canplay when playingRef is true', () => {
+    jest.spyOn(utils, 'isSafari').mockReturnValue(true);
+    const mockAudio = createMockAudioElementWithEventCapture();
+    mockAudio.canPlayType = jest.fn().mockReturnValue('probably');
+    const playingRef = {current: true};
+
+    renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: createAudioRef(mockAudio),
+        live: true,
+        playingRef,
+      }),
+    );
+
+    mockAudio.dispatchCanPlay();
+
+    expect(mockAudio.play).toHaveBeenCalled();
+    expect(mockAudio.removeEventListener).toHaveBeenCalledWith(
+      'canplay',
+      expect.any(Function),
+    );
+  });
+
+  it('should not resume playback on native Safari canplay when playingRef is false', () => {
+    jest.spyOn(utils, 'isSafari').mockReturnValue(true);
+    const mockAudio = createMockAudioElementWithEventCapture();
+    mockAudio.canPlayType = jest.fn().mockReturnValue('probably');
+    const playingRef = {current: false};
+
+    renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: createAudioRef(mockAudio),
+        live: true,
+        playingRef,
+      }),
+    );
+
+    mockAudio.dispatchCanPlay();
+
+    expect(mockAudio.play).not.toHaveBeenCalled();
+  });
+
+  it('should clean up native Safari HLS on unmount', () => {
+    jest.spyOn(utils, 'isSafari').mockReturnValue(true);
+    const mockAudio = createMockAudioElementWithEventCapture();
+    mockAudio.canPlayType = jest.fn().mockReturnValue('probably');
+
+    const {unmount} = renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: createAudioRef(mockAudio),
+        live: true,
+      }),
+    );
+
+    unmount();
+
+    expect(mockAudio.pause).toHaveBeenCalled();
+    expect(mockAudio.removeEventListener).toHaveBeenCalledWith(
+      'canplay',
+      expect.any(Function),
+    );
+    expect(mockAudio.src).toBe('');
+    expect(mockAudio.load).toHaveBeenCalled();
+  });
+
+  it('should fall back to HLS.js on Safari when native HLS is not supported', async () => {
+    jest.spyOn(utils, 'isSafari').mockReturnValue(true);
+    const mockAudio = createMockAudioElement();
+    mockAudio.canPlayType = jest.fn().mockReturnValue('');
+
+    renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: createAudioRef(mockAudio),
+        live: true,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+    });
+    expect(mockAudio.src).toBe('');
+  });
+
+  it('should not initialize HLS when audioRef.current is null', () => {
+    renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: {current: null},
+        live: true,
+      }),
+    );
+
+    expect(Hls).not.toHaveBeenCalled();
+  });
+
   it('should not initialize HLS.js when HLS is not supported and log error message', async () => {
     const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
-    (isSafari as jest.Mock).mockReturnValue(false);
+    jest.spyOn(utils, 'isSafari').mockReturnValue(false);
     (Hls.isSupported as jest.Mock).mockReturnValueOnce(false);
 
     renderHook(() =>
@@ -355,5 +541,130 @@ describe('useHlsStream', () => {
       expect(createdHlsInstance.destroy).toHaveBeenCalled();
       consoleErrorSpy.mockRestore();
     });
+  });
+
+  it('should pause audio before detaching HLS on cleanup', async () => {
+    const mockAudio = createMockAudioElement();
+    const audioRef = createAudioRef(mockAudio);
+
+    const {unmount} = renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef,
+        live: true,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+    });
+
+    unmount();
+
+    expect(mockAudio.pause).toHaveBeenCalled();
+    const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+    expect(createdHlsInstance.stopLoad).toHaveBeenCalled();
+    expect(createdHlsInstance.detachMedia).toHaveBeenCalled();
+    expect(createdHlsInstance.destroy).toHaveBeenCalled();
+  });
+
+  it('should attach media and load source when initializing HLS.js', async () => {
+    const mockAudio = createMockAudioElement();
+    const src = 'https://example.com/stream.m3u8';
+
+    renderHook(() =>
+      useHlsStream({
+        src,
+        audioRef: createAudioRef(mockAudio),
+        live: true,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+    });
+
+    const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+    expect(createdHlsInstance.attachMedia).toHaveBeenCalledWith(mockAudio);
+    expect(createdHlsInstance.loadSource).toHaveBeenCalledWith(src);
+  });
+
+  it('should resume playback on MANIFEST_PARSED when playingRef is true', async () => {
+    const mockAudio = createMockAudioElement();
+    const playingRef = {current: true};
+
+    renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: createAudioRef(mockAudio),
+        live: true,
+        playingRef,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+    });
+
+    const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+    const manifestParsedCallback = createdHlsInstance.on.mock.calls.find(
+      (call: [string, () => void]) => call[0] === 'hlsManifestParsed',
+    )?.[1];
+
+    manifestParsedCallback?.();
+
+    expect(mockAudio.play).toHaveBeenCalled();
+  });
+
+  it('should not resume playback on MANIFEST_PARSED when playingRef is false', async () => {
+    const mockAudio = createMockAudioElement();
+    const playingRef = {current: false};
+
+    renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: createAudioRef(mockAudio),
+        live: true,
+        playingRef,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+    });
+
+    const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+    const manifestParsedCallback = createdHlsInstance.on.mock.calls.find(
+      (call: [string, () => void]) => call[0] === 'hlsManifestParsed',
+    )?.[1];
+
+    manifestParsedCallback?.();
+
+    expect(mockAudio.play).not.toHaveBeenCalled();
+  });
+
+  it('should not resume playback on MANIFEST_PARSED when playingRef is not provided', async () => {
+    const mockAudio = createMockAudioElement();
+
+    renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: createAudioRef(mockAudio),
+        live: true,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(Hls).toHaveBeenCalled();
+    });
+
+    const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+    const manifestParsedCallback = createdHlsInstance.on.mock.calls.find(
+      (call: [string, () => void]) => call[0] === 'hlsManifestParsed',
+    )?.[1];
+
+    manifestParsedCallback?.();
+
+    expect(mockAudio.play).not.toHaveBeenCalled();
   });
 });

@@ -13,6 +13,12 @@ import {
   MuteButtonIconProps,
   AudioPlayerPlaybackSpeedControl,
   useAudioPlayerContext,
+  AudioPlayerDvrRewindButton,
+  AudioPlayerDvrForwardButton,
+  AudioPlayerDvrStartButton,
+  AudioPlayerDvrLiveButton,
+  AudioPlayerDvrSeekBar,
+  AudioPlayerDvrTimeDisplay,
 } from '..';
 import {
   StorybookHeading,
@@ -1446,3 +1452,157 @@ export const StoryAudioPlayerWithHls = () => {
   );
 };
 StoryAudioPlayerWithHls.storyName = 'audio-player-with-hls';
+
+export const StoryAudioPlayerDvrControls = () => {
+  const breakpointKey = useBreakpointKey();
+  const seekStep = 10000;
+  const liveEdge = 5 * 60 * 1000 + 5000;
+  const rangeStart = 0;
+  const rangeEnd = 10 * 60 * 1000;
+  const [currentPosition, setCurrentPosition] = React.useState(
+    liveEdge - 60000,
+  );
+  const [isLive, setIsLive] = React.useState(false);
+
+  const handleSeek = (timestamp: number) => {
+    console.log('DVR seek to position:', timestamp);
+    setCurrentPosition(timestamp);
+    setIsLive(timestamp >= liveEdge);
+  };
+
+  const elapsedSec = Math.floor((currentPosition - rangeStart) / 1000);
+  const totalSec = Math.floor(rangeEnd / 1000);
+
+  return (
+    <StyledPage>
+      <div className="ready" />
+      <StorybookHeading>Audio Player - DVR Controls</StorybookHeading>
+      <AudioPlayerComposable
+        src={HLS_TIMES_STREAM}
+        live
+        livePause={true}
+        ariaLandmark="DVR HLS audio player"
+      >
+        <GridLayout columns="1fr" rowGap="space020">
+          {/* Row 1: Seekbar + Time labels */}
+          <GridLayout columns="1fr" rowGap="space010">
+            <AudioPlayerDvrSeekBar
+              onSeek={handleSeek}
+              currentPosition={currentPosition}
+              rangeStart={rangeStart}
+              liveEdge={liveEdge}
+              rangeEnd={rangeEnd}
+            />
+            <GridLayout
+              columns="1fr 1fr"
+              columnGap="space020"
+              style={{paddingInline: '8px'}}
+            >
+              <AudioPlayerDvrTimeDisplay time={currentPosition - rangeStart} />
+              <GridLayoutItem justifySelf="end">
+                <AudioPlayerDvrTimeDisplay time={rangeEnd} />
+              </GridLayoutItem>
+            </GridLayout>
+          </GridLayout>
+          {/* Row 2: Controls row */}
+          <GridLayout
+            columns={{
+              xs: '1fr',
+              md: '1fr auto 1fr',
+            }}
+            columnGap="space040"
+            alignItems="center"
+          >
+            {breakpointKey !== 'xs' && breakpointKey !== 'sm' && (
+              <GridLayoutItem justifySelf="start">
+                <AudioPlayerVolumeControl layout="horizontal-expanded" />
+              </GridLayoutItem>
+            )}
+            <GridLayout
+              columns="auto auto auto auto auto"
+              columnGap="space040"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <AudioPlayerDvrStartButton
+                onSeek={handleSeek}
+                currentPosition={currentPosition}
+                rangeStart={rangeStart}
+                liveEdge={liveEdge}
+              />
+              <AudioPlayerDvrRewindButton
+                onSeek={handleSeek}
+                currentPosition={currentPosition}
+                rangeStart={rangeStart}
+                liveEdge={liveEdge}
+                seekStep={seekStep}
+              />
+              <AudioPlayerPlayPauseButton />
+              <AudioPlayerDvrForwardButton
+                onSeek={handleSeek}
+                currentPosition={currentPosition}
+                rangeStart={rangeStart}
+                liveEdge={liveEdge}
+                seekStep={seekStep}
+                isLive={isLive}
+              />
+              <AudioPlayerDvrLiveButton
+                onGoLive={() => {
+                  console.log('Go to live');
+                  setCurrentPosition(liveEdge);
+                  setIsLive(true);
+                }}
+                isLive={isLive}
+              />
+            </GridLayout>
+            {breakpointKey !== 'xs' && breakpointKey !== 'sm' && (
+              <GridLayoutItem justifySelf="end">
+                <Flag
+                  overrides={{
+                    stylePreset: isLive
+                      ? 'flagMinimalInformative'
+                      : 'flagMinimalNegative',
+                  }}
+                >
+                  <IconFilledGraphicEq />
+                  {isLive ? 'LIVE' : 'DVR'}
+                </Flag>
+              </GridLayoutItem>
+            )}
+          </GridLayout>
+        </GridLayout>
+      </AudioPlayerComposable>
+
+      <Block marginBlockEnd="space040" />
+      <GridLayout columns="auto 1fr" rowGap="space020" as="dl">
+        <dt>
+          <StorybookSpan>Current Position</StorybookSpan>
+        </dt>
+        <dd>
+          <StorybookSpan>
+            {calculateTime(elapsedSec)} / {calculateTime(totalSec)}
+          </StorybookSpan>
+        </dd>
+        <dt>
+          <StorybookSpan>Is Live</StorybookSpan>
+        </dt>
+        <dd>
+          <StorybookSpan>{isLive ? 'Yes' : 'No'}</StorybookSpan>
+        </dd>
+        <dt>
+          <StorybookSpan>Range</StorybookSpan>
+        </dt>
+        <dd>
+          <StorybookSpan>
+            {new Date(rangeStart).toLocaleTimeString()} →{' '}
+            {new Date(rangeEnd).toLocaleTimeString()}
+          </StorybookSpan>
+        </dd>
+      </GridLayout>
+    </StyledPage>
+  );
+};
+StoryAudioPlayerDvrControls.storyName = 'audio-player-dvr-controls';
+StoryAudioPlayerDvrControls.parameters = {
+  percy: {skip: true},
+};
