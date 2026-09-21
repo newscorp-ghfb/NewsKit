@@ -1,10 +1,14 @@
 import React from 'react';
 import {IconButton} from '../../../../icon-button';
-import {IconFilledDvrForward} from '../../../../icons';
+import {IconFilledDvrForward, IconFilledDvrForward5} from '../../../../icons';
 import {withOwnTheme} from '../../../../utils/with-own-theme';
 import {useButtonOverrides} from '../../../utils';
 import {useAudioPlayerContext} from '../../../context';
-import {AudioPlayerDvrSeekButtonProps, DEFAULT_DVR_SEEK_STEP} from '../types';
+import {
+  AudioPlayerDvrSeekButtonProps,
+  DEFAULT_DVR_SEEK_ICON_VARIANT,
+  DEFAULT_DVR_SEEK_STEP,
+} from '../types';
 import defaults from './defaults';
 
 const ThemelessAudioPlayerDvrForwardButton = ({
@@ -13,6 +17,7 @@ const ThemelessAudioPlayerDvrForwardButton = ({
   rangeStart: _rangeStart,
   liveEdge,
   seekStep = DEFAULT_DVR_SEEK_STEP,
+  iconVariant = DEFAULT_DVR_SEEK_ICON_VARIANT,
   isLive = false,
   overrides,
   ref,
@@ -32,6 +37,9 @@ const ThemelessAudioPlayerDvrForwardButton = ({
     onSeek(clampedPosition);
   };
 
+  const ForwardIcon =
+    iconVariant === '5' ? IconFilledDvrForward5 : IconFilledDvrForward;
+
   return (
     <IconButton
       ref={ref}
@@ -43,7 +51,10 @@ const ThemelessAudioPlayerDvrForwardButton = ({
       overrides={buttonOverrides}
       {...rest}
     >
-      <IconFilledDvrForward overrides={{size: 'iconSize030'}} />
+      <ForwardIcon
+        data-testid={`audio-player-dvr-forward-icon-${iconVariant}`}
+        overrides={{size: 'iconSize030'}}
+      />
     </IconButton>
   );
 };
