@@ -22,6 +22,7 @@ jest.mock('hls.js', () => {
     ERROR: 'hlsError',
     MEDIA_ATTACHED: 'hlsMediaAttached',
     MANIFEST_PARSED: 'hlsManifestParsed',
+    FRAG_CHANGED: 'hlsFragChanged',
   };
 
   (MockHls as any).ErrorTypes = {
@@ -256,6 +257,60 @@ describe('useHlsStream', () => {
       expect(Hls).toHaveBeenLastCalledWith(
         expect.objectContaining({liveSyncMode: 'buffered'}),
       );
+    });
+  });
+
+  it.each`
+    liveStartAtPlaylistStart | startPosition
+    ${undefined}             | ${-1}
+    ${true}                  | ${0}
+  `(
+    'should set startPosition to $startPosition when liveStartAtPlaylistStart is $liveStartAtPlaylistStart',
+    async ({liveStartAtPlaylistStart, startPosition}) => {
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+          liveStartAtPlaylistStart,
+        }),
+      );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalledWith(
+          expect.objectContaining({startPosition}),
+        );
+      });
+    },
+  );
+
+  it('should report the playing fragment on FRAG_CHANGED', async () => {
+    const onHlsFragmentChange = jest.fn();
+
+    renderHook(() =>
+      useHlsStream({
+        src: 'https://example.com/stream.m3u8',
+        audioRef: createAudioRef(),
+        live: true,
+        onHlsFragmentChange,
+      }),
+    );
+
+    await waitFor(() => expect(Hls).toHaveBeenCalled());
+
+    const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+    const fragChangedCallback = createdHlsInstance.on.mock.calls.find(
+      (call: [string]) => call[0] === 'hlsFragChanged',
+    )?.[1];
+
+    fragChangedCallback?.('hlsFragChanged', {
+      frag: {url: 'https://example.com/a-1-5000.aac', start: 10, duration: 5},
+    });
+
+    expect(onHlsFragmentChange).toHaveBeenCalledWith({
+      url: 'https://example.com/a-1-5000.aac',
+      start: 10,
+      duration: 5,
     });
   });
 
