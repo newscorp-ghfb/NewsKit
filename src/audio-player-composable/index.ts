@@ -12,3 +12,4 @@ export * from './components/skip-next-button';
 export * from './components/skip-previous-button';
 export * from './components/volume-control';
 export * from './components/playback-speed-control';
+export * from './components/dvr-controls';
