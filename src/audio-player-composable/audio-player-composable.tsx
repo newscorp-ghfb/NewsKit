@@ -47,6 +47,8 @@ export const AudioPlayerComposable = ({
   autoPlay = false,
   live = false,
   livePause = false,
+  liveStartAtPlaylistStart = false,
+  onHlsFragmentChange,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
   initialVolume = 0.7,
@@ -81,6 +83,8 @@ export const AudioPlayerComposable = ({
     audioRef,
     live,
     livePause,
+    liveStartAtPlaylistStart,
+    onHlsFragmentChange,
     playingRef,
   });
 
@@ -313,6 +317,7 @@ export const AudioPlayerComposable = ({
       audioRef,
       audioSectionRef,
       playbackSpeed,
+      playing,
       togglePlay,
       // Props function getter
       getPlayPauseButtonProps,
@@ -327,6 +332,7 @@ export const AudioPlayerComposable = ({
     }),
     [
       playbackSpeed,
+      playing,
       togglePlay,
       getPlayPauseButtonProps,
       getTimeDisplayProps,

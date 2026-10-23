@@ -123,6 +123,12 @@ export interface AudioPlayerComposableProps
   children: React.ReactNode;
   live?: boolean;
   livePause?: boolean;
+  liveStartAtPlaylistStart?: boolean;
+  onHlsFragmentChange?: (fragment: {
+    url: string;
+    start: number;
+    duration: number;
+  }) => void;
   autoPlay?: boolean;
   src: string;
   ariaLandmark?: string;

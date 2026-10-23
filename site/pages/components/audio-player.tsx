@@ -991,6 +991,20 @@ const AudioPlayerComponent = (layoutProps: LayoutProps) => (
                 'Only applies when the player is live. If true, the play pause button pauses the stream instead of stopping it, and playback resumes from the paused point behind the live edge.',
             },
             {
+              name: 'liveStartAtPlaylistStart',
+              type: 'boolean',
+              default: 'false',
+              description:
+                'Only applies when the player is live with an HLS stream. If true, playback starts at the first segment of the playlist instead of near the live edge, e.g. after seeking a DVR stream.',
+            },
+            {
+              name: 'onHlsFragmentChange',
+              type:
+                '(fragment: {url: string; start: number; duration: number}) => void',
+              description:
+                'Only applies when the player is live with an HLS stream played through hls.js. Called when the fragment under the play head changes, with its URL and its start and duration on the media timeline (seconds).',
+            },
+            {
               name: 'autoPlay',
               type: 'boolean',
               default: 'false',

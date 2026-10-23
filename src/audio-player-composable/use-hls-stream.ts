@@ -1,6 +1,6 @@
 import {RefObject, useEffect, useRef} from 'react';
 import {isSafari, safePlay} from './utils';
-import {HlsInstance} from './types';
+import {AudioPlayerComposableProps, HlsInstance} from './types';
 import Hls from 'hls.js';
 
 type useHlsPlayerOptions = {
@@ -8,6 +8,8 @@ type useHlsPlayerOptions = {
   audioRef?: RefObject<HTMLAudioElement | null>;
   live?: boolean;
   livePause?: boolean;
+  liveStartAtPlaylistStart?: boolean;
+  onHlsFragmentChange?: AudioPlayerComposableProps['onHlsFragmentChange'];
   playingRef?: RefObject<boolean>;
 };
 
@@ -29,10 +31,21 @@ export const useHlsStream = ({
   audioRef,
   live,
   livePause,
+  liveStartAtPlaylistStart,
+  onHlsFragmentChange,
   playingRef,
 }: useHlsPlayerOptions): useHlsPlayerReturn => {
   const hlsRef = useRef<HlsInstance | null>(null);
   const isHls = isHlsUrl(src);
+
+  // Changes together with src, so it is read from a ref instead of re-running
+  // the effect on its own.
+  const liveStartAtPlaylistStartRef = useRef(liveStartAtPlaylistStart);
+  liveStartAtPlaylistStartRef.current = liveStartAtPlaylistStart;
+
+  // Keep the latest callback without re-creating the hls.js instance.
+  const onHlsFragmentChangeRef = useRef(onHlsFragmentChange);
+  onHlsFragmentChangeRef.current = onHlsFragmentChange;
 
   const resumePlayIfNeeded = (audio: HTMLAudioElement) => {
     if (playingRef?.current) {
@@ -49,6 +62,9 @@ export const useHlsStream = ({
     const setupHls = (el: HTMLAudioElement, audioSrc: string) => {
       const hls = new Hls({
         enableWorker: true,
+        // -1 starts near the live edge; 0 starts at the first playlist segment,
+        // e.g. the target of a DVR seek.
+        startPosition: liveStartAtPlaylistStartRef.current ? 0 : -1,
         liveSyncDurationCount: 3,
         liveMaxLatencyDurationCount: livePause ? Infinity : 6,
         liveSyncMode: livePause ? 'buffered' : 'edge',
@@ -117,6 +133,14 @@ export const useHlsStream = ({
 
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         resumePlayIfNeeded(el);
+      });
+
+      hls.on(Hls.Events.FRAG_CHANGED, (_e, {frag}) => {
+        onHlsFragmentChangeRef.current?.({
+          url: frag.url,
+          start: frag.start,
+          duration: frag.duration,
+        });
       });
 
       hls.on(Hls.Events.ERROR, (_e, data) => {
