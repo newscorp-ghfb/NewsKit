@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useRef, useState} from 'react';
 import {useAudioPlayerContext} from '../../../context';
 import {Slider, SliderProps, RenderTrackFunction} from '../../../../slider';
 import {StyledTrack} from '../../../../slider/styled';
@@ -25,6 +25,34 @@ const formatDvrAriaValueText = (seconds: number) => {
   return parts.join(' ');
 };
 
+const KEYBOARD_STEP_KEYS = [
+  'ArrowRight',
+  'ArrowUp',
+  'k',
+  'PageUp',
+  'ArrowLeft',
+  'ArrowDown',
+  'j',
+  'PageDown',
+];
+
+// Snaps to `anchor ± n * step` (like repeated rewind/forward presses) rather
+// than to absolute multiples of `step`, keeping 0 and `max` reachable since the
+// buttons clamp to them too.
+const snapToAnchoredStep = (
+  value: number,
+  anchor: number,
+  step: number,
+  max: number,
+) => {
+  const stepped = anchor + Math.round((value - anchor) / step) * step;
+  const clamped = Math.min(Math.max(stepped, 0), max);
+  const distance = Math.abs(value - clamped);
+  if (value < distance) return 0;
+  if (max - value < distance) return max;
+  return clamped;
+};
+
 const ThemelessAudioPlayerDvrSeekBar = ({
   onSeek,
   currentPosition,
@@ -46,6 +74,8 @@ const ThemelessAudioPlayerDvrSeekBar = ({
 
   const [isDragging, setIsDragging] = useState(false);
   const [dragValue, setDragValue] = useState(0);
+  const dragAnchorRef = useRef<number | null>(null);
+  const isKeyboardStepRef = useRef(false);
 
   const [srOnlyHint] = useReactKeys(1);
 
@@ -67,17 +97,44 @@ const ThemelessAudioPlayerDvrSeekBar = ({
 
   const displayValue = isDragging ? dragValue : currentSeconds;
 
+  const stepSeconds = seekStep / 1000;
+  // The slider moves in 1s increments; stepping is applied in handleChange so
+  // it is relative to the playhead instead of the start of the range.
+  const sliderStep = Math.min(stepSeconds, 1);
+
   const handleChange = useCallback(
     ([value]: number[]) => {
       setIsDragging(true);
-      setDragValue(Math.min(value, liveEdgeSeconds));
+
+      if (isKeyboardStepRef.current) {
+        isKeyboardStepRef.current = false;
+        // react-range moved by ±sliderStep (×10 for PageUp/PageDown).
+        const keyboardSteps = (value - displayValue) / sliderStep;
+        const target = displayValue + keyboardSteps * stepSeconds;
+        setDragValue(Math.min(Math.max(target, 0), liveEdgeSeconds));
+        return;
+      }
+
+      if (dragAnchorRef.current === null) {
+        dragAnchorRef.current = currentSeconds;
+      }
+      setDragValue(
+        snapToAnchoredStep(
+          value,
+          dragAnchorRef.current,
+          stepSeconds,
+          liveEdgeSeconds,
+        ),
+      );
     },
-    [liveEdgeSeconds],
+    [liveEdgeSeconds, currentSeconds, displayValue, stepSeconds, sliderStep],
   );
 
   const handleFinalChange = useCallback(
     ([value]: number[]) => {
       setIsDragging(false);
+      dragAnchorRef.current = null;
+      isKeyboardStepRef.current = false;
       const clampedSeconds = Math.min(value, liveEdgeSeconds);
 
       if (clampedSeconds === currentSeconds) return;
@@ -152,6 +209,11 @@ const ThemelessAudioPlayerDvrSeekBar = ({
             /* istanbul ignore next */
             if (e.keyCode === 32) e.preventDefault();
           }}
+          onKeyDownCapture={(e: React.KeyboardEvent) => {
+            if (KEYBOARD_STEP_KEYS.includes(e.key)) {
+              isKeyboardStepRef.current = true;
+            }
+          }}
           style={{background: `linear-gradient(to right, ${gradient})`}}
           data-testid="dvr-seek-bar-track"
           overrides={{
@@ -184,7 +246,7 @@ const ThemelessAudioPlayerDvrSeekBar = ({
         min={0}
         max={maxValue}
         values={[displayValue]}
-        step={seekStep / 1000}
+        step={sliderStep}
         ariaLabel="DVR seek bar"
         ariaValueText={`Playback position: ${elapsedText} of ${totalText}`}
         onChange={handleChange}
