@@ -8,7 +8,21 @@ import {
   formatDuration,
   getMediaSegment,
   isSafari,
+  safePlay,
+  useKeyboardShortcutsOnButton,
 } from '../utils';
+import {renderHook} from '../../test/test-utils';
+import {act} from '@testing-library/react';
+import {useKeypress} from '../../utils/hooks';
+import {useAudioPlayerContext} from '../context';
+
+jest.mock('../../utils/hooks', () => ({
+  useKeypress: jest.fn(),
+}));
+
+jest.mock('../context', () => ({
+  useAudioPlayerContext: jest.fn(),
+}));
 
 test('formatTrackTime', () => {
   const oneMinute = 60;
@@ -118,6 +132,9 @@ describe('getmediaSegment()', () => {
   test('should return a segment of 51-75', () => {
     expect(getMediaSegment(1000, 700)).toEqual('51-75');
   });
+  test('should return a segment of 76-100 when position is zero', () => {
+    expect(getMediaSegment(1000, 0)).toEqual('76-100');
+  });
 });
 
 describe('seekBarAriaValueText()', () => {
@@ -165,12 +182,15 @@ describe('isSafari', () => {
   });
 
   it.each`
-    browser             | userAgent                                                                                                                                       | expected
-    ${'desktop Safari'} | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'}                      | ${true}
-    ${'iOS Safari'}     | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'}    | ${true}
-    ${'Chrome'}         | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'}                      | ${false}
-    ${'Chrome on iOS'}  | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/142.0.0.0 Mobile/15E148 Safari/604.1'} | ${false}
-    ${'Firefox'}        | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0'}                                                       | ${false}
+    browser             | userAgent                                                                                                                                           | expected
+    ${'desktop Safari'} | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'}                          | ${true}
+    ${'iOS Safari'}     | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'}        | ${true}
+    ${'Chrome'}         | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'}                          | ${false}
+    ${'Chrome on iOS'}  | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/142.0.0.0 Mobile/15E148 Safari/604.1'}     | ${false}
+    ${'Firefox'}        | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0'}                                                           | ${false}
+    ${'Chromium'}       | ${'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chromium/142.0.0.0 Safari/537.36'}                        | ${false}
+    ${'Firefox iOS'}    | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/119.0 Mobile/15E148 Safari/605.1.15'}      | ${false}
+    ${'Edge iOS'}       | ${'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/142.0.0.0 Mobile/15E148 Safari/605.1.15'} | ${false}
   `(
     'should return $expected for $browser user agent',
     ({userAgent, expected}) => {
@@ -178,4 +198,109 @@ describe('isSafari', () => {
       expect(isSafari()).toBe(expected);
     },
   );
+});
+
+describe('safePlay', () => {
+  afterEach(() => {
+    jest.restoreAllMocks();
+  });
+
+  it('should log non-AbortError rejections', async () => {
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
+    const audio = ({
+      play: jest
+        .fn()
+        .mockRejectedValue(new DOMException('failed', 'NotAllowedError')),
+    } as unknown) as HTMLAudioElement;
+
+    safePlay(audio);
+
+    await act(async () => {
+      await Promise.resolve();
+    });
+    expect(consoleErrorSpy).toHaveBeenCalled();
+  });
+
+  it('should ignore AbortError rejections', async () => {
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
+    const audio = ({
+      play: jest
+        .fn()
+        .mockRejectedValue(new DOMException('aborted', 'AbortError')),
+    } as unknown) as HTMLAudioElement;
+
+    safePlay(audio);
+
+    await act(async () => {
+      await Promise.resolve();
+    });
+    expect(consoleErrorSpy).not.toHaveBeenCalled();
+  });
+
+  it('should handle play returning undefined', () => {
+    const audio = ({
+      play: jest.fn().mockReturnValue(undefined),
+    } as unknown) as HTMLAudioElement;
+
+    expect(() => safePlay(audio)).not.toThrow();
+  });
+});
+
+describe('useKeyboardShortcutsOnButton', () => {
+  const audioSectionRef = {current: document.createElement('div')};
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+    (useAudioPlayerContext as jest.Mock).mockReturnValue({audioSectionRef});
+  });
+
+  it('should register default keyboard shortcuts with onClick callback', () => {
+    const onClick = jest.fn();
+
+    renderHook(() =>
+      useKeyboardShortcutsOnButton({
+        props: {onClick},
+        defaults: 'k',
+      }),
+    );
+
+    expect(useKeypress).toHaveBeenCalledWith('k', onClick, {
+      target: audioSectionRef,
+      preventDefault: false,
+    });
+  });
+
+  it('should use custom keyboard shortcuts from props', () => {
+    const onClick = jest.fn();
+
+    renderHook(() =>
+      useKeyboardShortcutsOnButton({
+        props: {onClick, keyboardShortcuts: 'p'},
+        defaults: 'k',
+      }),
+    );
+
+    expect(useKeypress).toHaveBeenCalledWith('p', onClick, {
+      target: audioSectionRef,
+      preventDefault: false,
+    });
+  });
+
+  it('should use action callback when provided', () => {
+    const onClick = jest.fn();
+    const action = jest.fn();
+
+    renderHook(() =>
+      useKeyboardShortcutsOnButton({
+        props: {onClick},
+        defaults: 'k',
+        action,
+      }),
+    );
+
+    expect(useKeypress).toHaveBeenCalledWith('k', action, {
+      target: audioSectionRef,
+      preventDefault: false,
+    });
+  });
 });
