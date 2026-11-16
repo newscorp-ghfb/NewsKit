@@ -1,4 +1,5 @@
 import React from 'react';
+import {fireEvent} from '@testing-library/react';
 import {renderWithTheme} from '../../../../test/test-utils';
 import {AudioPlayerComposable} from '../../../audio-player-composable';
 import {AudioPlayerDvrSeekBar} from '../dvr-seek-bar';
@@ -138,5 +139,49 @@ describe('AudioPlayerDvrSeekBar', () => {
     expect(valueText).toContain('2 hours');
     expect(valueText).toContain('0 minutes');
     expect(valueText).toContain('0 seconds');
+  });
+
+  it.each([
+    ['ArrowLeft', 450000],
+    ['ArrowRight', 1050000],
+  ])(
+    'steps by seekStep from the current position on %s',
+    (key, expectedOffset) => {
+      const onSeek = jest.fn();
+      const rangeStart = NOW - 3600000;
+      const {getByRole} = renderSeekBar({
+        onSeek,
+        rangeStart,
+        rangeEnd: NOW,
+        liveEdge: NOW,
+        currentPosition: rangeStart + 750000,
+        seekStep: 300000,
+      });
+
+      const slider = getByRole('slider');
+      fireEvent.keyDown(slider, {key});
+      fireEvent.keyUp(slider, {key});
+
+      expect(onSeek).toHaveBeenCalledWith(rangeStart + expectedOffset);
+    },
+  );
+
+  it('clamps keyboard steps to the range start', () => {
+    const onSeek = jest.fn();
+    const rangeStart = NOW - 3600000;
+    const {getByRole} = renderSeekBar({
+      onSeek,
+      rangeStart,
+      rangeEnd: NOW,
+      liveEdge: NOW,
+      currentPosition: rangeStart + 150000,
+      seekStep: 300000,
+    });
+
+    const slider = getByRole('slider');
+    fireEvent.keyDown(slider, {key: 'ArrowLeft'});
+    fireEvent.keyUp(slider, {key: 'ArrowLeft'});
+
+    expect(onSeek).toHaveBeenCalledWith(rangeStart);
   });
 });
