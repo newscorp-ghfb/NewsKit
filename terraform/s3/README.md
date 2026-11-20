@@ -82,6 +82,14 @@ terraform apply backend.plan
 The Terraform directly under the dev-newskit and prod-newskit folders should NOT be run manually but via CircleCI. See the deploy_to_s3_dev/deploy_to_s3_staging/deploy_to_s3_prod steps in `.circleci/config.yaml`.
 
 
+### Serving the docs buckets through CloudFront only
+
+The dev, staging and prod buckets are read through CloudFront (origin access control, defined in the internal CDN repository) rather than directly. This is controlled per environment by `lock_public_access` in the `*.tfvars` files.
+
+- The allowed distributions are supplied as a comma-separated list of ARNs through `TF_VAR_cloudfront_distribution_arns`. The deploy job maps the `NEWSKIT_DOCS_CF_ARNS_DEV`, `NEWSKIT_DOCS_CF_ARNS_STAGING` and `NEWSKIT_DOCS_CF_ARNS_PROD` keys of the `newskit/ci-credentials` secret to it (see `load_ci_secrets` in `.circleci/config.yml`).
+- Terraform refuses to lock a bucket while that list is empty.
+- The PR bucket keeps the defaults (`lock_public_access = false`) as PR previews are still read directly from it.
+
 ## 3. (Deprecated) AUTOMATED TERRAFORM SETUP FOR NGN DEV ACCOUNT
 
 The Terraform directly under the s3 folders should NOT be run manually but via CircleCI. See the deploy_to_s3_pr step in `.circleci/config.yaml`.

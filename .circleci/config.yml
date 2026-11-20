@@ -767,6 +767,17 @@ jobs:
           at: ~/project
       - run_only_on_folder_change:
           folder: ./terraform/<< parameters.package >>
+      - load_ci_secrets
+      - run:
+          name: Select CloudFront origin access ARNs for this environment
+          command: |
+            case "<< parameters.environment >>" in
+              dev) ARNS="${NEWSKIT_DOCS_CF_ARNS_DEV:-}" ;;
+              staging) ARNS="${NEWSKIT_DOCS_CF_ARNS_STAGING:-}" ;;
+              prod) ARNS="${NEWSKIT_DOCS_CF_ARNS_PROD:-}" ;;
+              *) ARNS="" ;;
+            esac
+            echo "export TF_VAR_cloudfront_distribution_arns='${ARNS}'" >> "$BASH_ENV"
       - when:
           condition: << parameters.tf_env >>
           steps:
@@ -1421,6 +1432,7 @@ workflows:
           environment: staging
           requires:
             - init_aws
+            - deploy_terraform_s3_dev
       - deploy_terraform_oidc:
           aws_assume_role_arn: *docs_prod_role
           name: deploy_terraform_s3_prod
@@ -1431,6 +1443,7 @@ workflows:
           environment: prod
           requires:
             - init_aws
+            - deploy_terraform_s3_staging
       - install_deps:
           context: null-prereq-context-required-for-cci-oidc-token-issuance
       - install_cypress:
@@ -1602,6 +1615,7 @@ workflows:
           environment: prod
           requires:
             - init_aws
+            - deploy_terraform_s3_staging
       - install_deps:
           <<: *only_on_version_tag
           context: null-prereq-context-required-for-cci-oidc-token-issuance
