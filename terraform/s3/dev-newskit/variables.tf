@@ -19,3 +19,16 @@ variable "docs_bucket" {
   description = "First bucket name per account for the documentation site"
   default     = "ncu-newskit-docs-pr"
 }
+
+variable "cloudfront_distribution_arns" {
+  type        = string
+  sensitive   = true
+  default     = ""
+  description = "Comma-separated CloudFront distribution ARNs allowed to read the bucket (supplied via TF_VAR_cloudfront_distribution_arns)"
+}
+
+variable "lock_public_access" {
+  type        = bool
+  default     = false
+  description = "Serve the bucket only through CloudFront and block all public access"
+}
