@@ -22,3 +22,11 @@ export * from './icon-filled-youtube';
 
 // Other custom icons
 export * from './indeterminate-progress-indicator';
+
+// DVR custom icons
+export * from './icon-filled-dvr-rewind';
+export * from './icon-filled-dvr-forward';
+export * from './icon-filled-dvr-rewind-5';
+export * from './icon-filled-dvr-forward-5';
+export * from './icon-filled-dvr-start';
+export * from './icon-filled-dvr-live';

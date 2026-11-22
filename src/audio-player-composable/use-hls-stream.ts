@@ -1,12 +1,17 @@
 import {RefObject, useEffect, useRef} from 'react';
-import {isSafari} from './utils';
-import {HlsInstance} from './types';
+import {isSafari, safePlay} from './utils';
+import {AudioPlayerComposableProps, HlsInstance} from './types';
 import Hls from 'hls.js';
 
 type useHlsPlayerOptions = {
   src: string;
   audioRef?: RefObject<HTMLAudioElement | null>;
   live?: boolean;
+  livePause?: boolean;
+  liveStartAtPlaylistStart?: boolean;
+  onHlsFragmentChange?: AudioPlayerComposableProps['onHlsFragmentChange'];
+  onHlsError?: AudioPlayerComposableProps['onHlsError'];
+  playingRef?: RefObject<boolean>;
 };
 
 type useHlsPlayerReturn = {
@@ -26,9 +31,31 @@ export const useHlsStream = ({
   src,
   audioRef,
   live,
+  livePause,
+  liveStartAtPlaylistStart,
+  onHlsFragmentChange,
+  onHlsError,
+  playingRef,
 }: useHlsPlayerOptions): useHlsPlayerReturn => {
   const hlsRef = useRef<HlsInstance | null>(null);
   const isHls = isHlsUrl(src);
+
+  // Changes together with src, so it is read from a ref instead of re-running
+  // the effect on its own.
+  const liveStartAtPlaylistStartRef = useRef(liveStartAtPlaylistStart);
+  liveStartAtPlaylistStartRef.current = liveStartAtPlaylistStart;
+
+  // Keep the latest callback without re-creating the hls.js instance.
+  const onHlsFragmentChangeRef = useRef(onHlsFragmentChange);
+  onHlsFragmentChangeRef.current = onHlsFragmentChange;
+  const onHlsErrorRef = useRef(onHlsError);
+  onHlsErrorRef.current = onHlsError;
+
+  const resumePlayIfNeeded = (audio: HTMLAudioElement) => {
+    if (playingRef?.current) {
+      safePlay(audio);
+    }
+  };
 
   const initializeHls = (audio: HTMLAudioElement, src: string) => {
     if (!Hls.isSupported()) {
@@ -39,12 +66,17 @@ export const useHlsStream = ({
     const setupHls = (el: HTMLAudioElement, audioSrc: string) => {
       const hls = new Hls({
         enableWorker: true,
+        // -1 starts near the live edge; 0 starts at the first playlist segment,
+        // e.g. the target of a DVR seek.
+        startPosition: liveStartAtPlaylistStartRef.current ? 0 : -1,
         liveSyncDurationCount: 3,
-        liveMaxLatencyDurationCount: 6,
+        liveMaxLatencyDurationCount: livePause ? Infinity : 6,
+        liveSyncMode: livePause ? 'buffered' : 'edge',
         liveDurationInfinity: true,
         maxLiveSyncPlaybackRate: 1,
-        maxBufferLength: 30,
-        maxBufferSize: 5 * 1000 * 1000,
+        // While paused on a live stream the player keeps buffering ahead, so the
+        // forward buffer size is what limits how long a user can stay paused.
+        maxBufferLength: livePause ? 600 : 30,
         maxBufferHole: 0.5,
         highBufferWatchdogPeriod: 3,
         nudgeOffset: 0.1,
@@ -103,7 +135,25 @@ export const useHlsStream = ({
       hls.attachMedia(el);
       hls.loadSource(audioSrc);
 
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        resumePlayIfNeeded(el);
+      });
+
+      hls.on(Hls.Events.FRAG_CHANGED, (_e, {frag}) => {
+        onHlsFragmentChangeRef.current?.({
+          url: frag.url,
+          start: frag.start,
+          duration: frag.duration,
+        });
+      });
+
       hls.on(Hls.Events.ERROR, (_e, data) => {
+        onHlsErrorRef.current?.({
+          type: data.type,
+          details: data.details,
+          fatal: data.fatal,
+          responseCode: data.response?.code,
+        });
         if (!data.fatal) return;
         switch (data.type) {
           case Hls.ErrorTypes.NETWORK_ERROR:
@@ -135,7 +185,16 @@ export const useHlsStream = ({
 
     if (shouldUseNativeHls) {
       audio.src = src;
+
+      const onCanPlay = () => {
+        resumePlayIfNeeded(audio);
+        audio.removeEventListener('canplay', onCanPlay);
+      };
+      audio.addEventListener('canplay', onCanPlay);
+
       return () => {
+        audio.pause();
+        audio.removeEventListener('canplay', onCanPlay);
         audio.src = '';
         audio.load();
       };
@@ -144,12 +203,13 @@ export const useHlsStream = ({
     initializeHls(audio, src);
 
     return () => {
+      audio.pause();
       hlsRef.current?.stopLoad();
       hlsRef.current?.detachMedia();
       hlsRef.current?.destroy();
       hlsRef.current = null;
     };
-  }, [src, isHls, audioRef, live]);
+  }, [src, isHls, audioRef, live, livePause]);
 
   return {isHlsStream: isHls && !!live, hlsInstance: hlsRef};
 };
