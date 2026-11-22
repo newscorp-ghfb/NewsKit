@@ -49,6 +49,7 @@ export const AudioPlayerComposable = ({
   livePause = false,
   liveStartAtPlaylistStart = false,
   onHlsFragmentChange,
+  onHlsError,
   ariaLandmark,
   keyboardShortcuts: keyboardShortcutsProp,
   initialVolume = 0.7,
@@ -85,6 +86,7 @@ export const AudioPlayerComposable = ({
     livePause,
     liveStartAtPlaylistStart,
     onHlsFragmentChange,
+    onHlsError,
     playingRef,
   });
 

@@ -129,6 +129,17 @@ export interface AudioPlayerComposableProps
     start: number;
     duration: number;
   }) => void;
+  /**
+   * Called on every hls.js error, before the player handles it. Non-fatal
+   * errors are reported too, e.g. live fragment 404s, which hls.js skips as
+   * gaps without ever escalating to fatal.
+   */
+  onHlsError?: (error: {
+    type: string;
+    details: string;
+    fatal: boolean;
+    responseCode?: number;
+  }) => void;
   autoPlay?: boolean;
   src: string;
   ariaLandmark?: string;

@@ -500,6 +500,57 @@ describe('useHlsStream', () => {
       expect(createdHlsInstance.startLoad).toHaveBeenCalled();
     });
 
+    it('should report errors to onHlsError, non-fatal included', async () => {
+      const onHlsError = jest.fn();
+      renderHook(() =>
+        useHlsStream({
+          src: 'https://example.com/stream.m3u8',
+          audioRef: createAudioRef(),
+          live: true,
+          onHlsError,
+        }),
+      );
+
+      await waitFor(() => {
+        expect(Hls).toHaveBeenCalled();
+      });
+
+      const createdHlsInstance = jest.mocked(Hls).mock.results[0].value;
+
+      const registeredErrorCallback = createdHlsInstance.on.mock.calls.find(
+        (call: any) => call[0] === 'hlsError',
+      )?.[1];
+
+      registeredErrorCallback(null, {
+        fatal: false,
+        type: 'networkError',
+        details: 'fragLoadError',
+        response: {code: 404},
+      });
+
+      expect(onHlsError).toHaveBeenCalledWith({
+        type: 'networkError',
+        details: 'fragLoadError',
+        fatal: false,
+        responseCode: 404,
+      });
+      expect(createdHlsInstance.startLoad).not.toHaveBeenCalled();
+
+      registeredErrorCallback(null, {
+        fatal: true,
+        type: 'networkError',
+        details: 'manifestLoadError',
+      });
+
+      expect(onHlsError).toHaveBeenLastCalledWith({
+        type: 'networkError',
+        details: 'manifestLoadError',
+        fatal: true,
+        responseCode: undefined,
+      });
+      expect(createdHlsInstance.startLoad).toHaveBeenCalled();
+    });
+
     it('should handle media errors gracefully', async () => {
       renderHook(() =>
         useHlsStream({

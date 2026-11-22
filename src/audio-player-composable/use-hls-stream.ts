@@ -10,6 +10,7 @@ type useHlsPlayerOptions = {
   livePause?: boolean;
   liveStartAtPlaylistStart?: boolean;
   onHlsFragmentChange?: AudioPlayerComposableProps['onHlsFragmentChange'];
+  onHlsError?: AudioPlayerComposableProps['onHlsError'];
   playingRef?: RefObject<boolean>;
 };
 
@@ -33,6 +34,7 @@ export const useHlsStream = ({
   livePause,
   liveStartAtPlaylistStart,
   onHlsFragmentChange,
+  onHlsError,
   playingRef,
 }: useHlsPlayerOptions): useHlsPlayerReturn => {
   const hlsRef = useRef<HlsInstance | null>(null);
@@ -46,6 +48,8 @@ export const useHlsStream = ({
   // Keep the latest callback without re-creating the hls.js instance.
   const onHlsFragmentChangeRef = useRef(onHlsFragmentChange);
   onHlsFragmentChangeRef.current = onHlsFragmentChange;
+  const onHlsErrorRef = useRef(onHlsError);
+  onHlsErrorRef.current = onHlsError;
 
   const resumePlayIfNeeded = (audio: HTMLAudioElement) => {
     if (playingRef?.current) {
@@ -144,6 +148,12 @@ export const useHlsStream = ({
       });
 
       hls.on(Hls.Events.ERROR, (_e, data) => {
+        onHlsErrorRef.current?.({
+          type: data.type,
+          details: data.details,
+          fatal: data.fatal,
+          responseCode: data.response?.code,
+        });
         if (!data.fatal) return;
         switch (data.type) {
           case Hls.ErrorTypes.NETWORK_ERROR:
