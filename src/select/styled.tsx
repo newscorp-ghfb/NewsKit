@@ -126,6 +126,10 @@ export const StyledSelectPanel = styled.div<{
 
   ${({$size}) =>
     getResponsiveSize('maxHeight', `select.${$size}.panel`, '', 'maxHeight')};
+  ${({$size}) =>
+    getResponsiveSize('minWidth', `select.${$size}.panel`, '', 'minWidth')};
+  ${({$size}) =>
+    getResponsiveSize('maxWidth', `select.${$size}.panel`, '', 'maxWidth')};
 `;
 
 export const StyledModalPanel = styled.div`
