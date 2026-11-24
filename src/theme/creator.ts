@@ -126,3 +126,37 @@ export const createTheme = ({
     {name, themeVersion: 1},
   );
 };
+
+type FontPaths = {
+  [key: string]: string;
+};
+export const createFontFacesForTheme = (
+  theme: UncompiledTheme,
+  fontPaths: FontPaths,
+) => {
+  const {fontFaces} = theme;
+
+  let fontFaceDefinitions = '';
+
+  fontFaces &&
+    Object.keys(fontFaces).forEach(fontFace => {
+      const {fontFamily, fontWeight, fontStyle, fontStretch} = fontFaces[
+        fontFace
+      ];
+
+      const src = fontPaths[fontFace];
+
+      const properties = [`src: ${src}`, `font-display: swap`];
+      fontWeight && properties.push(`font-weight: ${fontWeight}`);
+      fontStyle && properties.push(`font-style: ${fontStyle}`);
+      fontStretch && properties.push(`font-stretch: ${fontStretch}`);
+
+      const fontFaceString = `@font-face {
+      font-family: ${fontFamily};
+      ${properties.join(';\n')}
+    }`;
+
+      fontFaceDefinitions = fontFaceDefinitions + fontFaceString + '\n';
+    });
+  return fontFaceDefinitions.trim();
+};
