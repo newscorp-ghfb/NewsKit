@@ -44,7 +44,7 @@ const StyledIcon = styled.svg<NewsKitIconProps>`
     ${props =>
       props.overrides?.size &&
       getSizingCssFromTheme('height', props.overrides.size)}
-      
+
       // If overridden, render SP CSS here instead - this ensures we override fill color from parent SP.
       ${renderIconStylePreset(true)}
   }
@@ -56,7 +56,8 @@ export const toNewsKitIcon = (
   PassedIcon:
     | React.ComponentType<EmotionIconProps>
     | React.ComponentType<SvgProps>
-    | EmotionIcon,
+    | EmotionIcon
+    | React.ComponentType<any>, // allow icons from other libraries
 ): NewsKitIcon =>
   withOwnTheme(
     withTheme<NewsKitIconProps>(
